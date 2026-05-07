@@ -48,7 +48,7 @@
 <section style="padding: 50px 0; max-width: 1160px; margin: 0 auto; padding-left: 20px; padding-right: 20px;">
   <h4 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 28px; color: var(--card-text-color-main);">Reviews</h4>
   
-  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+  <div class="review-grid" style="gap: 28px">
     {{ range $i, $review := $reviews.ByDate.Reverse }}
     <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1); transition: transform 0.2s, box-shadow 0.2s;">
       <a href="{{ $review.RelPermalink }}" style="text-decoration: none; color: inherit;">

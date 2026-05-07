@@ -3,7 +3,7 @@
   <h1 style="font-size: 2.2rem; font-weight: 700; color: var(--card-text-color-main);">{{ .Title }}</h1>
 </header>
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+<div class="review-grid" style="gap: 28px">
   {{ range .Pages.ByDate.Reverse }}
   <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1);">
     <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
