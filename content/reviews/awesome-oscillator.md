@@ -1,6 +1,6 @@
 ---
 title: "Awesome Oscillator — Review"
-date: 2026-05-07
+date: 2026-05-06
 draft: false
 type: reviews
 tags:
