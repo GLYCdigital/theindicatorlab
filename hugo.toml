@@ -69,6 +69,11 @@ defaultContentLanguageInSubdir = false
     url = "/about/"
     weight = 30
 
+  [[menu.main]]
+    identifier = "disclaimer"
+    name = "Disclaimer"
+    url = "/disclaimer/"
+    weight = 40
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
