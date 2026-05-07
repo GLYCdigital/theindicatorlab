@@ -60,7 +60,7 @@ defaultContentLanguage = "en"
       enabled = true
 
   [params.opengraph.twitter]
-    site = "@IndicatorLabs"
+    site = "IndicatorLabs"
     card = "summary_large_image"
 
 [menu]
