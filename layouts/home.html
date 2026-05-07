@@ -1,31 +1,130 @@
 {{ define "main" }}
-{{- $paginator := partial "helper/paginator.html" . -}}
+{{- $reviews := where .Site.RegularPages "Section" "reviews" -}}
 
-<div class="home-hero">
-  <h1><span class="emoji">🔬</span> The Indicator Lab</h1>
-  <p>Honest, in-depth reviews of TradingView indicators. Each review covers features, pros & cons, who it's for, and how to use it. Updated daily.</p>
-  <div class="hero-stats">
-    <div class="stat">
-      <div class="number">{{ len (where .Site.RegularPages "Section" "reviews") }}</div>
-      <div class="label">Indicators Reviewed</div>
-    </div>
-    <div class="stat">
-      <div class="number">3</div>
-      <div class="label">Reviews Daily</div>
+{{/* ── TOP SECTION: Hero (latest review) ── */}}
+{{ if $reviews }}
+{{ $hero := index ($reviews.ByDate.Reverse) 0 }}
+
+<section class="rs-blog-main-section">
+  <div style="max-width: 1160px; margin: 0 auto; padding: 0 20px;">
+    <div style="display: flex; gap: 30px; align-items: stretch;">
+
+      {{/* Hero Card — latest review */}}
+      <div style="flex: 1; min-width: 0;">
+        <article class="rs-blog-main">
+          <a href="{{ $hero.RelPermalink }}" class="rs-blog-image-link">
+            <div style="position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 16/10;">
+              {{ if $hero.Params.image }}
+              <img src="{{ $hero.Params.image }}" alt="{{ $hero.Title }}" loading="lazy" 
+                   style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              {{ else }}
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
+              {{ end }}
+              <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 50%);"></div>
+              <div style="position: absolute; bottom: 24px; left: 24px; right: 24px;">
+                {{ range $hero.Params.categories }}
+                <span class="rs-blog-cat-badge" style="display: inline-block; padding: 4px 14px; border-radius: 20px; background: var(--indicator-green); color: #fff; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+                  {{ . }}
+                </span>
+                {{ end }}
+                <h2 style="font-size: 1.6rem; font-weight: 700; color: #fff; margin: 8px 0 4px; line-height: 1.3;">
+                  <a href="{{ $hero.RelPermalink }}" style="color: #fff; text-decoration: none;">{{ $hero.Title }}</a>
+                </h2>
+                <div style="color: rgba(255,255,255,0.8); font-size: 0.95rem;">
+                  {{ $hero.Date.Format "Jan 2, 2006" }}
+                  {{ if $hero.Params.rating }}
+                  <span style="margin-left: 12px;">
+                    {{ $rating := $hero.Params.rating }}
+                    {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
+                  </span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      {{/* Right sidebar — secondary card */}}
+      <div style="width: 374px; flex-shrink: 0;">
+        {{ if ge (len $reviews) 2 }}
+        {{ $second := index ($reviews.ByDate.Reverse) 1 }}
+        <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1);">
+          <a href="{{ $second.RelPermalink }}" style="text-decoration: none; color: inherit;">
+            <div style="aspect-ratio: 16/9; overflow: hidden;">
+              {{ if $second.Params.image }}
+              <img src="{{ $second.Params.image }}" alt="{{ $second.Title }}" loading="lazy" 
+                   style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              {{ else }}
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
+              {{ end }}
+            </div>
+            <div style="padding: 16px 20px;">
+              {{ range $second.Params.categories }}
+              <span style="display: inline-block; padding: 3px 12px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+                {{ . }}
+              </span>
+              {{ end }}
+              <h3 style="font-size: 1.15rem; font-weight: 700; line-height: 1.35; margin: 0 0 6px; color: var(--card-text-color-main);">{{ $second.Title }}</h3>
+              <div style="font-size: 0.85rem; color: var(--card-text-color-tertiary);">
+                {{ $second.Date.Format "Jan 2, 2006" }}
+                {{ if $second.Params.rating }}
+                <span style="margin-left: 8px;">
+                  {{ $rating := $second.Params.rating }}
+                  {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
+                </span>
+                {{ end }}
+              </div>
+            </div>
+          </a>
+        </article>
+        {{ end }}
+      </div>
+
     </div>
   </div>
-</div>
+</section>
+{{ end }}
 
-<section class="article-list">
-  {{ range $index, $element := $paginator.Pages }}
-    {{ partial "article-list/default" . }}
-  {{ end }}
+{{/* ── BOTTOM SECTION: Reviews Grid (3 cols) ── */}}
+<section style="padding: 40px 0; max-width: 1160px; margin: 0 auto; padding-left: 20px; padding-right: 20px;">
+  <h4 style="font-size: 1.3rem; font-weight: 700; margin: 0 0 24px; color: var(--card-text-color-main);">Reviews</h4>
+  
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+    {{ range $i, $review := $reviews.ByDate.Reverse }}
+    <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1); transition: transform 0.2s, box-shadow 0.2s;">
+      <a href="{{ $review.RelPermalink }}" style="text-decoration: none; color: inherit;">
+        <div style="aspect-ratio: 16/9; overflow: hidden;">
+          {{ if $review.Params.image }}
+          <img src="{{ $review.Params.image }}" alt="{{ $review.Title }}" loading="lazy" 
+               style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+          {{ else }}
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
+          {{ end }}
+        </div>
+        <div style="padding: 16px 20px 20px;">
+          {{ range $review.Params.categories }}
+          <span style="display: inline-block; padding: 3px 12px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">
+            {{ . }}
+          </span>
+          {{ end }}
+          <h3 style="font-size: 1.15rem; font-weight: 700; line-height: 1.35; margin: 0 0 8px; color: var(--card-text-color-main);">{{ $review.Title }}</h3>
+          {{ if $review.Params.rating }}
+          <div style="margin-bottom: 8px; font-size: 0.95rem;">
+            {{ $rating := $review.Params.rating }}
+            {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
+          </div>
+          {{ end }}
+          <div style="font-size: 0.85rem; color: var(--card-text-color-tertiary);">
+            {{ $review.Date.Format "Jan 2, 2006" }}
+          </div>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
 </section>
 
-{{- partial "pagination.html" . -}}
-{{- partial "footer/footer" . -}}
 {{ end }}
 
-{{ define "right-sidebar" }}
-    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
-{{ end }}
+{{ define "right-sidebar" }}{{ end }}

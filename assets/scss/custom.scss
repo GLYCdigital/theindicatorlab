@@ -418,3 +418,92 @@
     margin-bottom: 6px;
   }
 }
+
+/* ── Riverside-style Homepage ────────────────── */
+
+/* Top section: hero */
+.rs-blog-main-section {
+  padding: 24px 0 0;
+
+  .rs-blog-main {
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--card-background);
+    box-shadow: var(--shadow-l2);
+    height: 100%;
+  }
+
+  .rs-blog-image-link {
+    display: block;
+    text-decoration: none;
+  }
+
+  .rs-blog-cat-badge:hover {
+    opacity: 0.9;
+  }
+
+  /* Hover effect on hero image */
+  .rs-blog-main:hover img {
+    transform: scale(1.03);
+  }
+
+  img {
+    transition: transform 0.4s ease;
+  }
+}
+
+/* Bottom grid: 3-column review cards */
+.rs-blog-post {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-l2);
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  img {
+    transition: transform 0.4s ease;
+  }
+}
+
+/* Keep article-list styles for other section pages (categories, tags) */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-separation);
+
+  article {
+    width: 100%;
+  }
+
+  .article-details {
+    padding: 24px 28px 28px;
+  }
+
+  .article-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .article-subtitle {
+    font-size: 0.95rem;
+    color: var(--card-text-color-secondary);
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+
+  .article-rating {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .article-meta {
+    margin-top: 12px;
+    font-size: 0.9rem;
+  }
+}
