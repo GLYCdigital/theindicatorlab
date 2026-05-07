@@ -81,36 +81,40 @@
   color: var(--indicator-green) !important;
 }
 
-/* ── Article Cards ─────────────────────────── */
-.article-list--tile {
-  .article-card {
-    border-radius: var(--card-border-radius);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background: var(--card-background);
-    box-shadow: var(--shadow-l1);
+/* ── Article List — Multi-column grid on desktop ── */
+.article-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--section-separation);
 
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-l2);
-    }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .article-details {
-      padding: 16px 20px 20px;
-    }
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .article-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 6px;
-    }
+  article {
+    margin: 0;
+    height: 100%;
+  }
 
-    .article-description {
-      font-size: 0.9rem;
-      color: var(--card-text-color-secondary);
-      line-height: 1.5;
-    }
+  .article-details {
+    padding: 20px 24px 24px;
+  }
+
+  .article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .article-subtitle {
+    font-size: 0.9rem;
+    color: var(--card-text-color-secondary);
+    line-height: 1.5;
+    margin-top: 6px;
   }
 }
 
