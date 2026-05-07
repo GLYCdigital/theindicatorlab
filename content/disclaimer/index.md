@@ -1,7 +1,7 @@
 ---
 title: "Disclaimer"
-date: 2026-05-07
 draft: false
+readingTime: false
 ---
 
 ## Risk Warning
@@ -38,6 +38,3 @@ We only recommend products and services we have tested and found useful. Affilia
 
 While we strive for accuracy, indicator features, pricing, and availability may change. Information on this site may become outdated. We are not obligated to update content.
 
----
-
-*Last updated: May 7, 2026*

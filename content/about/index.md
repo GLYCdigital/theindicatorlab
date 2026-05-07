@@ -1,7 +1,7 @@
 ---
 title: "About The Indicator Lab"
-date: 2026-05-07
 draft: false
+readingTime: false
 ---
 
 ## What Is This?
