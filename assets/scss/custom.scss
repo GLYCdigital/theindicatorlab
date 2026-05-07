@@ -76,9 +76,13 @@
 }
 
 .site-name {
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 800;
+  font-size: 1.5rem;
   color: var(--indicator-green) !important;
+
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 /* ── Article List — Multi-column grid on desktop ── */
@@ -187,44 +191,72 @@
 /* ── Homepage Hero (custom) ────────────────── */
 .home-hero {
   text-align: center;
-  padding: 48px 0 32px;
+  padding: 64px 0 40px;
+  border-bottom: 1px solid var(--card-separator-color);
+  margin-bottom: var(--section-separation);
 
   h1 {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 12px;
+    color: var(--card-text-color-main);
 
     .emoji {
       font-size: 2.8rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 3.2rem;
+
+      .emoji {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 3.8rem;
+
+      .emoji {
+        font-size: 4rem;
+      }
     }
   }
 
   p {
     font-size: 1.15rem;
     color: var(--card-text-color-secondary);
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     line-height: 1.6;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
   }
 
   .hero-stats {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 28px;
+    gap: 48px;
+    margin-top: 32px;
 
     .stat {
       text-align: center;
 
       .number {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 700;
         color: var(--indicator-green);
+
+        @media (min-width: 768px) {
+          font-size: 2.2rem;
+        }
       }
 
       .label {
         font-size: 0.85rem;
-        color: var(--card-text-color-tertiary);
+        color: var(--card-text-color-secondary);
+        margin-top: 2px;
       }
     }
   }
