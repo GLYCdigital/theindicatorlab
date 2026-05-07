@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{- $paginator := partial "helper/paginator.html" . -}}
+
 <div class="home-hero">
   <h1><span class="emoji">🔬</span> The Indicator Lab</h1>
   <p>Honest, in-depth reviews of TradingView indicators. Each review covers features, pros & cons, who it's for, and how to use it. Updated daily.</p>
@@ -14,40 +16,16 @@
   </div>
 </div>
 
-{{ $pages := where .Site.RegularPages "Section" "reviews" }}
-<div class="article-list--tile">
-  {{ range $pages.ByDate.Reverse }}
-  <article class="article-card">
-    <div class="article-details">
-      <h2 class="article-title">
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </h2>
-      <footer class="article-time">
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-          {{ .Date.Format "Jan 2, 2006" }}
-        </time>
-        {{ if .Params.rating }}
-        <span class="rating" style="margin-left: 8px;">
-          {{ $rating := .Params.rating }}
-          {{ range seq 5 }}
-            {{ if le . $rating }}⭐{{ else }}☆{{ end }}
-          {{ end }}
-          ({{ $rating }}/5)
-        </span>
-        {{ end }}
-      </footer>
-      {{ if .Description }}
-      <p class="article-description">{{ .Description }}</p>
-      {{ end }}
-      <div class="article-category" style="margin-top: 10px;">
-        {{ range .Params.categories }}
-        <span class="category-badge" style="background: var(--indicator-green-light); color: var(--indicator-green-dark);">
-          {{ . }}
-        </span>
-        {{ end }}
-      </div>
-    </div>
-  </article>
+<section class="article-list">
+  {{ range $index, $element := $paginator.Pages }}
+    {{ partial "article-list/default" . }}
   {{ end }}
-</div>
+</section>
+
+{{- partial "pagination.html" . -}}
+{{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
 {{ end }}
