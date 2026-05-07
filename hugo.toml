@@ -15,6 +15,7 @@ defaultContentLanguage = "en"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "JSON"]
 
 [taxonomies]
   category = "categories"
