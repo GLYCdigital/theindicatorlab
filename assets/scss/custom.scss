@@ -85,7 +85,7 @@
   }
 }
 
-/* ── Article List — Full-width cards for readability ── */
+/* ── Article List — Full-width cards, bigger text ── */
 .article-list {
   display: flex;
   flex-direction: column;
@@ -96,24 +96,34 @@
   }
 
   .article-details {
-    padding: 24px 28px 28px;
+    padding: 28px 32px 32px;
   }
 
   .article-title {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 700;
     line-height: 1.35;
+
+    @media (min-width: 768px) {
+      font-size: 1.45rem;
+    }
   }
 
   .article-subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--card-text-color-secondary);
-    line-height: 1.6;
-    margin-top: 8px;
+    line-height: 1.65;
+    margin-top: 10px;
   }
 
   .article-rating {
-    margin: 10px 0;
+    margin: 12px 0;
+    font-size: 1.15rem;
+  }
+
+  .article-meta {
+    margin-top: 12px;
+    font-size: 0.9rem;
   }
 }
 
@@ -315,20 +325,37 @@
 
 /* ── Article Content Typography ──────────────── */
 .article-content {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.8;
 
+  @media (min-width: 768px) {
+    font-size: 1.15rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 36px;
+    margin-top: 40px;
     padding-bottom: 8px;
     border-bottom: 2px solid var(--indicator-green-light);
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-top: 28px;
+    margin-top: 30px;
+  }
+
+  ul, ol {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  li {
+    margin-bottom: 6px;
   }
 }
