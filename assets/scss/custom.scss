@@ -85,40 +85,35 @@
   }
 }
 
-/* ── Article List — Multi-column grid on desktop ── */
+/* ── Article List — Full-width cards for readability ── */
 .article-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--section-separation);
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   article {
-    margin: 0;
-    height: 100%;
+    width: 100%;
   }
 
   .article-details {
-    padding: 20px 24px 24px;
+    padding: 24px 28px 28px;
   }
 
   .article-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.4;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.35;
   }
 
   .article-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--card-text-color-secondary);
-    line-height: 1.5;
-    margin-top: 6px;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+
+  .article-rating {
+    margin: 10px 0;
   }
 }
 
