@@ -59,21 +59,17 @@
               <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
               {{ end }}
             </div>
-            <div style="padding: 16px 20px;">
+            <div style="padding: 16px 20px 20px;">
               {{ range $second.Params.categories }}
-              <span style="display: inline-block; padding: 3px 12px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
-                {{ . }}
-              </span>
+              <span style="display: inline-block; padding: 3px 12px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{{ . }}</span>
               {{ end }}
               <h3 style="font-size: 1.15rem; font-weight: 700; line-height: 1.35; margin: 0 0 6px; color: var(--card-text-color-main);">{{ $second.Title }}</h3>
-              <div style="font-size: 0.85rem; color: var(--card-text-color-tertiary);">
+              {{ if $second.Params.description }}
+              <p style="font-size: 0.85rem; color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 10px;">{{ $second.Params.description }}</p>
+              {{ end }}
+              <div style="font-size: 0.8rem; color: var(--card-text-color-tertiary);">
                 {{ $second.Date.Format "Jan 2, 2006" }}
-                {{ if $second.Params.rating }}
-                <span style="margin-left: 8px;">
-                  {{ $rating := $second.Params.rating }}
-                  {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
-                </span>
-                {{ end }}
+                <span style="margin-left: 6px;">&middot; {{ $second.ReadingTime }} min read</span>
               </div>
             </div>
           </a>
@@ -104,19 +100,15 @@
         </div>
         <div style="padding: 16px 20px 20px;">
           {{ range $review.Params.categories }}
-          <span style="display: inline-block; padding: 3px 12px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">
-            {{ . }}
-          </span>
+          <span style="display: inline-block; padding: 3px 12px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{{ . }}</span>
           {{ end }}
-          <h3 style="font-size: 1.15rem; font-weight: 700; line-height: 1.35; margin: 0 0 8px; color: var(--card-text-color-main);">{{ $review.Title }}</h3>
-          {{ if $review.Params.rating }}
-          <div style="margin-bottom: 8px; font-size: 0.95rem;">
-            {{ $rating := $review.Params.rating }}
-            {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
-          </div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; line-height: 1.35; margin: 0 0 6px; color: var(--card-text-color-main);">{{ $review.Title }}</h3>
+          {{ if $review.Params.description }}
+          <p style="font-size: 0.85rem; color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 10px;">{{ $review.Params.description }}</p>
           {{ end }}
-          <div style="font-size: 0.85rem; color: var(--card-text-color-tertiary);">
+          <div style="font-size: 0.8rem; color: var(--card-text-color-tertiary);">
             {{ $review.Date.Format "Jan 2, 2006" }}
+            <span style="margin-left: 6px;">&middot; {{ $review.ReadingTime }} min read</span>
           </div>
         </div>
       </a>
