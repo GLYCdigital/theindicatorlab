@@ -1,0 +1,33 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div>{{ . }}</div>{{ end }}
+</header>
+
+<div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin-top: 24px;">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="review-card" style="background: var(--entry); border-radius: 12px; overflow: hidden; transition: transform 0.2s;">
+    <a href="{{ .RelPermalink }}" style="display: block; padding: 20px; text-decoration: none; color: inherit;">
+      <h2 style="font-size: 1.1em; margin: 0 0 8px 0;">{{ .Title }}</h2>
+      <div style="font-size: 0.95em; margin-bottom: 8px;">
+        {{ if .Params.rating }}
+          {{ $rating := .Params.rating }}
+          {{ range seq 5 }}
+            {{ if le . $rating }}⭐{{ else }}☆{{ end }}
+          {{ end }}
+          <span style="margin-left: 4px; font-size: 0.85em;">({{ $rating }}/5)</span>
+        {{ end }}
+      </div>
+      <p style="font-size: 0.9em; color: var(--secondary); margin: 0;">{{ .Description }}</p>
+      <div style="margin-top: 12px; font-size: 0.8em; color: var(--tertiary);">
+        {{ if .Params.categories }}
+          {{ range .Params.categories }}
+            <span style="background: var(--theme); padding: 2px 8px; border-radius: 4px; margin-right: 4px;">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+    </a>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
