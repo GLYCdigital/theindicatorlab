@@ -67,4 +67,4 @@ The Awesome Oscillator (AO) is a Bill Williams indicator that measures market mo
 
 Solid as a "first oscillator" to learn momentum concepts. But for actual trading, there are sharper tools. Keep it on your chart as a quick visual reference, but don't base entries on it alone.
 
-[Get it on TradingView →](https://www.tradingview.com/indicators/)
+[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
