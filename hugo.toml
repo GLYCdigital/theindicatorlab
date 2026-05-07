@@ -1,54 +1,66 @@
 baseURL = "https://theindicatorlab.com"
 locale = "en-US"
 title = "The Indicator Lab"
-theme = "PaperMod"
+theme = "stack"
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-
 enableEmoji = true
 pygmentsUseClasses = true
-mainsections = ["reviews"]
-
-[minify]
-  disableXML = true
-  minifyOutput = true
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
 [params]
-  env = "production"
-  title = "The Indicator Lab"
+  mainSections = ["reviews"]
   description = "Honest, in-depth TradingView indicator reviews. Find the best indicators for your trading strategy."
-  keywords = ["TradingView", "indicators", "trading", "technical analysis", "Pine Script"]
-  author = "Til"
-  defaultTheme = "dark"
-  disableThemeToggle = true
-  ShowShareButtons = true
-  ShowReadingTime = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowPostNavLinks = true
-  ShowToc = true
-  canonical = true
-  hidemeta = false
-  hideSummary = false
+  rssFullContent = true
+  SortBy = "default"
 
-  [params.homeInfoParams]
-    Title = "The Indicator Lab 🔬"
-    Content = "Honest, in-depth reviews of TradingView indicators. Each review covers features, pros & cons, who it's for, and how to use it. Updated daily."
+  [params.footer]
+    since = 2026
+    customText = ""
 
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/theindicatorlab"
+  [params.dateFormat]
+    published = "Jan 2, 2006"
+    lastUpdated = "Jan 2, 2006"
 
-  [params.schema]
-    type = "Review"
-    itemType = "https://schema.org/Review"
+  [params.sidebar]
+    compact = false
+    avatar = ""
+
+  [params.article]
+    headingAnchor = false
+    math = false
+    toc = true
+    readingTime = true
+
+    [params.article.list]
+      showTags = true
+
+  [params.colorScheme]
+    toggle = true
+    default = "light"
+
+  [params.imageProcessing]
+    [params.imageProcessing.content]
+      widths = [800, 1600, 2400]
+      enabled = true
+    [params.imageProcessing.thumbnail]
+      enabled = true
+
+  [params.opengraph.twitter]
+    site = "@theindicatorlab"
+    card = "summary_large_image"
 
 [menu]
   [[menu.main]]
@@ -74,6 +86,7 @@ defaultContentLanguageInSubdir = false
     name = "Disclaimer"
     url = "/disclaimer/"
     weight = 40
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -81,11 +94,3 @@ defaultContentLanguageInSubdir = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  type = "types"

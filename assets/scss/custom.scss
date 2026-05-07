@@ -1,0 +1,303 @@
+/* ============================================
+   The Indicator Lab — Custom Styles
+   Clean SaaS feel with trading green accents
+   Inspired by riverside.com/blog
+   ============================================ */
+
+/* ── Color Palette ─────────────────────────── */
+:root {
+  /* Green accent — fresh trading feel */
+  --indicator-green: #00b894;
+  --indicator-green-dark: #00a381;
+  --indicator-green-light: #e0f7f0;
+
+  /* Warm neutrals */
+  --warm-bg: #f8f9fb;
+  --warm-card: #ffffff;
+
+  /* Accent colors for categories */
+  --cat-free: #00b894;
+  --cat-trend: #0984e3;
+  --cat-momentum: #e17055;
+  --cat-volatility: #6c5ce7;
+  --cat-advanced: #fdcb6e;
+
+  /* Body background */
+  --body-background: var(--warm-bg);
+
+  /* Accent color overrides */
+  --accent-color: var(--indicator-green);
+  --accent-color-darker: var(--indicator-green-dark);
+  --accent-color-text: #fff;
+
+  /* Card refinements */
+  --card-border-radius: 12px;
+  --card-padding: 24px;
+
+  /* Shadows — softer, more modern */
+  --shadow-l1: 0px 1px 3px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.03);
+  --shadow-l2: 0px 4px 12px rgba(0, 0, 0, 0.06), 0px 0px 4px rgba(0, 0, 0, 0.04);
+}
+
+[data-scheme="dark"] {
+  --body-background: #1a1b2e;
+  --warm-bg: #1a1b2e;
+
+  /* Indicator green for dark mode */
+  --indicator-green: #00e6b0;
+  --indicator-green-dark: #00c49a;
+  --indicator-green-light: rgba(0, 230, 176, 0.1);
+
+  /* Override dark theme colors */
+  --card-background: #232544;
+  --card-background-selected: rgba(255, 255, 255, 0.08);
+  --card-text-color-main: rgba(255, 255, 255, 0.92);
+  --card-text-color-secondary: rgba(255, 255, 255, 0.65);
+  --card-text-color-tertiary: rgba(255, 255, 255, 0.45);
+  --card-separator-color: rgba(255, 255, 255, 0.08);
+
+  --shadow-l1: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.15);
+  --shadow-l2: 0px 4px 12px rgba(0, 0, 0, 0.3), 0px 0px 4px rgba(0, 0, 0, 0.2);
+
+  --accent-color: var(--indicator-green);
+  --accent-color-darker: var(--indicator-green-dark);
+}
+
+/* ── Header & Navigation ──────────────────── */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-scheme="dark"] .navbar {
+  background: rgba(26, 27, 46, 0.9) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--indicator-green) !important;
+}
+
+/* ── Article Cards ─────────────────────────── */
+.article-list--tile {
+  .article-card {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: var(--card-background);
+    box-shadow: var(--shadow-l1);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-l2);
+    }
+
+    .article-details {
+      padding: 16px 20px 20px;
+    }
+
+    .article-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .article-description {
+      font-size: 0.9rem;
+      color: var(--card-text-color-secondary);
+      line-height: 1.5;
+    }
+  }
+}
+
+/* ── Single Article Page ─────────────────────── */
+.article-page {
+  .article-header {
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .article-description {
+      font-size: 1.1rem;
+      color: var(--card-text-color-secondary);
+    }
+  }
+
+  /* Star rating styling */
+  .rating {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .rating-box {
+    background: linear-gradient(135deg, var(--indicator-green-light), transparent) !important;
+    border: 1px solid rgba(0, 184, 148, 0.2);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px 0;
+    text-align: center;
+
+    strong {
+      font-size: 1.2rem;
+      color: var(--card-text-color-main);
+    }
+  }
+
+  /* Risk warning */
+  .risk-warning {
+    background: rgba(255, 107, 107, 0.08) !important;
+    border: 1px solid rgba(255, 107, 107, 0.2) !important;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 24px 0;
+  }
+}
+
+/* ── Category Badges ─────────────────────────── */
+.category-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Sidebar ──────────────────────────────────── */
+.sidebar {
+  .widget {
+    border-radius: var(--card-border-radius);
+    background: var(--card-background);
+    box-shadow: var(--shadow-l1);
+    padding: 20px;
+  }
+}
+
+/* ── Homepage Hero (custom) ────────────────── */
+.home-hero {
+  text-align: center;
+  padding: 48px 0 32px;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+
+    .emoji {
+      font-size: 2.8rem;
+    }
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: var(--card-text-color-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 28px;
+
+    .stat {
+      text-align: center;
+
+      .number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--indicator-green);
+      }
+
+      .label {
+        font-size: 0.85rem;
+        color: var(--card-text-color-tertiary);
+      }
+    }
+  }
+}
+
+/* ── Footer ────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--card-separator-color);
+  margin-top: 48px;
+  padding: 24px 0;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* ── Tags ──────────────────────────────────────── */
+.tags-list {
+  a {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--indicator-green-light);
+    color: var(--indicator-green-dark) !important;
+    font-size: 0.8rem;
+    margin: 2px;
+    text-decoration: none;
+    transition: background 0.2s;
+
+    &:hover {
+      background: var(--indicator-green);
+      color: #fff !important;
+    }
+  }
+}
+
+[data-scheme="dark"] .tags-list a {
+  background: rgba(0, 230, 176, 0.15);
+  color: var(--indicator-green) !important;
+}
+
+/* ── Navigation CTA Button ────────────────── */
+.nav-cta {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 8px;
+  background: var(--indicator-green);
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+
+  &:hover {
+    background: var(--indicator-green-dark);
+  }
+}
+
+/* ── Article Content Typography ──────────────── */
+.article-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 36px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--indicator-green-light);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 28px;
+  }
+}
