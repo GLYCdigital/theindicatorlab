@@ -42,6 +42,7 @@
 [data-scheme="dark"] {
   --body-background: #1a1b2e;
   --warm-bg: #1a1b2e;
+  --body-text-color: rgba(255, 255, 255, 0.85);
 
   /* Indicator green for dark mode */
   --indicator-green: #00e6b0;
@@ -51,9 +52,9 @@
   /* Override dark theme colors */
   --card-background: #232544;
   --card-background-selected: rgba(255, 255, 255, 0.08);
-  --card-text-color-main: rgba(255, 255, 255, 0.92);
-  --card-text-color-secondary: rgba(255, 255, 255, 0.65);
-  --card-text-color-tertiary: rgba(255, 255, 255, 0.45);
+  --card-text-color-main: rgba(255, 255, 255, 0.95);
+  --card-text-color-secondary: rgba(255, 255, 255, 0.72);
+  --card-text-color-tertiary: rgba(255, 255, 255, 0.55);
   --card-separator-color: rgba(255, 255, 255, 0.08);
 
   --shadow-l1: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.15);
@@ -61,6 +62,9 @@
 
   --accent-color: var(--indicator-green);
   --accent-color-darker: var(--indicator-green-dark);
+
+  /* Article text colors */
+  --article-text-color: rgba(255, 255, 255, 0.92);
 }
 
 /* ── Header & Navigation ──────────────────── */
@@ -222,6 +226,15 @@
     }
   }
 
+  [data-scheme="dark"] .rating-box strong {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  /* Affiliate disclosure dark mode */
+  [data-scheme="dark"] .affiliate-disclosure {
+    color: rgba(255, 255, 255, 0.55) !important;
+  }
+
   /* Risk warning */
   .risk-warning {
     background: rgba(255, 107, 107, 0.08) !important;
@@ -229,6 +242,20 @@
     border-radius: 12px;
     padding: 20px;
     margin: 24px 0;
+    color: var(--card-text-color-main);
+
+    strong {
+      color: var(--card-text-color-main);
+    }
+
+    p {
+      color: var(--card-text-color-secondary);
+    }
+  }
+
+  [data-scheme="dark"] .risk-warning {
+    background: rgba(255, 107, 107, 0.12) !important;
+    border-color: rgba(255, 107, 107, 0.3) !important;
   }
 }
 
@@ -387,6 +414,7 @@
 .article-content {
   font-size: 1.4rem;
   line-height: 1.7;
+  color: var(--card-text-color-main);
 
   p {
     margin-bottom: 1.2rem;
@@ -502,5 +530,16 @@
   .article-meta {
     margin-top: 12px;
     font-size: 0.9rem;
+  }
+}
+
+/* Dark mode article header text */
+[data-scheme="dark"] .article-page .article-header {
+  .article-title, .article-meta, .article-description {
+    color: rgba(255, 255, 255, 0.92) !important;
+  }
+
+  .article-meta span, .article-meta div {
+    color: rgba(255, 255, 255, 0.7) !important;
   }
 }
