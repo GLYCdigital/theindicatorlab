@@ -11,7 +11,7 @@ categories:
   - Free
   - Volatility
 rating: 5
-image: ""
+image: "/screenshots/bollinger-bands.png"
 description: "John Bollinger's volatility bands — the single most useful indicator on TradingView. Simple concept, endless applications."
 ---
 

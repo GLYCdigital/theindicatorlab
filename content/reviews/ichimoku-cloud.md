@@ -12,7 +12,7 @@ categories:
   - Trend
   - Advanced
 rating: 3
-image: ""
+image: "/screenshots/ichimoku-cloud.png"
 description: "Ichimoku Cloud — the most information-dense indicator on TradingView. Powerful if you learn it. Overwhelming if you don't."
 ---
 

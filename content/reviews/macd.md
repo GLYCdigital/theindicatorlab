@@ -11,7 +11,7 @@ categories:
   - Free
   - Trend
 rating: 4
-image: ""
+image: "/screenshots/macd.png"
 description: "Moving Average Convergence Divergence — the trend-following heavyweight. Slower than RSI, more reliable in trends."
 ---
 

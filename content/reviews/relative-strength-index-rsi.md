@@ -11,7 +11,7 @@ categories:
   - Free
   - Momentum
 rating: 4
-image: ""
+image: "/screenshots/rsi.png"
 description: "The Relative Strength Index — the most popular oscillator on TradingView. Simple, reliable, but everyone uses it the same way."
 ---
 

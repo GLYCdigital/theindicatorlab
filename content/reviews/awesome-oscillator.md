@@ -11,7 +11,7 @@ categories:
   - Free
   - Momentum
 rating: 3
-image: ""
+image: "/screenshots/awesome-oscillator.png"
 description: "Bill Williams' classic momentum indicator. Simple, widely used — but is it actually useful for modern trading?"
 ---
 

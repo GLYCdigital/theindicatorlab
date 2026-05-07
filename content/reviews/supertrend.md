@@ -11,7 +11,7 @@ categories:
   - Free
   - Trend
 rating: 4
-image: ""
+image: "/screenshots/supertrend.png"
 description: "SuperTrend — the cleanest trend-following indicator on TradingView. One line, one signal, zero noise."
 ---
 
