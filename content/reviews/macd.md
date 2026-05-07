@@ -69,6 +69,3 @@ A must-have for trend traders. Slower than alternatives but more reliable in tre
 
 [Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
 
----
-
-*Disclaimer: Some links on this page are affiliate links. If you sign up for TradingView Pro through them, I earn a commission at no extra cost to you.*
