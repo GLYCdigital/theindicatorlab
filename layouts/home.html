@@ -67,9 +67,14 @@
               {{ if $second.Params.description }}
               <p style="font-size: 0.85rem; color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 10px;">{{ $second.Params.description }}</p>
               {{ end }}
-              <div style="font-size: 0.8rem; color: var(--card-text-color-tertiary);">
-                {{ $second.Date.Format "Jan 2, 2006" }}
-                <span style="margin-left: 6px;">&middot; {{ $second.ReadingTime }} min read</span>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--card-text-color-tertiary);">
+                <span>
+                  {{ if $second.Params.rating }}
+                    {{ $rating := $second.Params.rating }}
+                    {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
+                  {{ end }}
+                </span>
+                <span>{{ $second.Date.Format "Jan 2, 2006" }} &middot; {{ $second.ReadingTime }} min read</span>
               </div>
             </div>
           </a>
@@ -106,9 +111,14 @@
           {{ if $review.Params.description }}
           <p style="font-size: 0.85rem; color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 10px;">{{ $review.Params.description }}</p>
           {{ end }}
-          <div style="font-size: 0.8rem; color: var(--card-text-color-tertiary);">
-            {{ $review.Date.Format "Jan 2, 2006" }}
-            <span style="margin-left: 6px;">&middot; {{ $review.ReadingTime }} min read</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--card-text-color-tertiary);">
+            <span>
+              {{ if $review.Params.rating }}
+                {{ $rating := $review.Params.rating }}
+                {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
+              {{ end }}
+            </span>
+            <span>{{ $review.Date.Format "Jan 2, 2006" }} &middot; {{ $review.ReadingTime }} min read</span>
           </div>
         </div>
       </a>
