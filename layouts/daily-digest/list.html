@@ -7,8 +7,8 @@
   <div class="article-list" style="display: flex; flex-direction: column; gap: 8px;">
     {{ range .Pages }}
     <article class="article" style="padding: 12px 20px; margin: 0;">
-      <h2 style="margin: 0; font-size: 1.6rem;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p style="margin: 4px 0 0 0; font-size: 1.1rem;">{{ .Description }}</p>
+      <h2 style="margin: 0; font-size: 1.6rem;"><a href="{{ .RelPermalink }}" style="color: var(--card-text-color-main);">{{ .Title }}</a></h2>
+      <p style="margin: 4px 0 0 0; font-size: 1.1rem; color: var(--card-text-color-secondary);">{{ .Description }}</p>
     </article>
     {{ end }}
   </div>
