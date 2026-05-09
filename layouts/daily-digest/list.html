@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main list" role="main">
+  <header class="main-header">
+    <h1 class="main-title">{{ .Title }}</h1>
+    <p class="main-description">Daily market recap with technical screening signals.</p>
+  </header>
+  <div class="article-list">
+    {{ range .Pages }}
+    <article class="article">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Description }}</p>
+    </article>
+    {{ end }}
+  </div>
+</main>
+{{ end }}
