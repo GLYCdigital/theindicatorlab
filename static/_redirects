@@ -1,0 +1,5 @@
+# Affiliate click redirects — tracked via Cloudflare Pages logs
+/go/tradingview  https://www.tradingview.com/?aff_id=166324  301
+/go/okx          https://my.okx.com/join/89285202          301
+/go/moomoo       https://j.moomoo.com/0BpZwx             301
+/go/coinbase     https://coinbase.com/join/442UEXQ?src=referral-link 301

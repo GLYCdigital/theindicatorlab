@@ -93,6 +93,10 @@ defaultContentLanguage = "en"
     name = "Search"
     url = "/search/"
     weight = 50
+# Analytics (Umami Cloud — set website_id when email verified)
+[params.analytics]
+  umami = "aa453c18-3f28-466b-ac96-3dfe5dd99e53"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

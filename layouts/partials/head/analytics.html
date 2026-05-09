@@ -1,0 +1,4 @@
+{{/* Umami Analytics — set website_id in hugo.toml when verified */}}
+{{ if .Site.Params.analytics.umami }}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.analytics.umami }}"></script>
+{{ end }}
