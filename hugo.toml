@@ -104,3 +104,9 @@ defaultContentLanguage = "en"
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
+
+  [[menu.main]]
+    identifier = "daily-digest"
+    name = "Daily Digest"
+    url = "/daily-digest/"
+    weight = 25
