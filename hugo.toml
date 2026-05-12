@@ -95,7 +95,7 @@ defaultContentLanguage = "en"
     weight = 50
 # Analytics (Umami Cloud — set website_id when email verified)
 [params.analytics]
-  umami = "aa453c18-3f28-466b-ac96-3dfe5dd99e53"
+  umami = "fc79be2c-0e11-4fb3-98fc-00ffba8c0390"
 
 [markup]
   [markup.goldmark]
