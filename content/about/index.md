@@ -22,4 +22,4 @@ Some links on this site are affiliate links. If you sign up for TradingView Pro 
 
 ## Contact
 
-Questions, suggestions, or want to suggest an indicator for review? Reach out on Twitter [@IndicatorLabs](https://twitter.com/IndicatorLabs).
+Questions, suggestions, or want to suggest an indicator for review? Email **[contact@theindicatorlab.com](mailto:contact@theindicatorlab.com)** or reach out on Twitter [@IndicatorLabs](https://twitter.com/IndicatorLabs).
