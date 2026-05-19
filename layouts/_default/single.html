@@ -2,7 +2,7 @@
 <section class="page-hero">
   <div class="container">
     <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Description }}<p>{{ . | safeHTML }}</p>{{ end }}
   </div>
 </section>
 <article class="review-article">

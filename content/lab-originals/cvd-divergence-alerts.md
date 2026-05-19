@@ -6,20 +6,20 @@ type: lab-originals
 price: "$25"
 status: "Available on TradingView"
 image: "/screenshots/cvd-divergence-alerts.png"
-description: "The only CVD indicator on TradingView that watches the chart for you. 4 divergence types, phone alerts, zero repaint."
+description: "The only CVD indicator on TradingView that watches the chart for you.<br>4 divergence types, phone alerts, zero repaint."
 ---
 
 {{< rawhtml >}}
-<div style="background: #1a1b2e; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+<div style="background: var(--card-bg); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2rem; border: 2px solid var(--primary);">
   <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;">
     <div>
-      <h2 style="margin: 0 0 0.5rem; font-size: 1.5rem;">CVD Divergence Alerts</h2>
+      <h2 style="margin: 0 0 0.5rem; font-size: 2.2rem; color: var(--text);">CVD Divergence Alerts</h2>
       <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
-        <span style="background: #00bcd4; color: #000; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem; font-weight: bold;">VOLUME</span>
-        <span style="background: #4caf50; color: #fff; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;">$25 ONE-TIME</span>
-        <span style="background: #ff9800; color: #000; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;">PHONE ALERTS</span>
+        <span style="background: var(--primary); color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">VOLUME</span>
+        <span style="background: var(--accent); color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">$25 ONE-TIME</span>
+        <span style="background: var(--green); color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">PHONE ALERTS</span>
       </div>
-      <p style="margin: 0; color: #ccc; font-size: 0.95rem;">Cumulative Volume Delta + divergence detection + TradingView push notifications. The only CVD script that tells you when something happens instead of making you watch the histogram.</p>
+      <p style="margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6;">Cumulative Volume Delta + divergence detection + TradingView push notifications. The only CVD script that tells you when something happens instead of making you watch the histogram.</p>
     </div>
   </div>
 </div>
