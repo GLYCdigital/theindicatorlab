@@ -219,7 +219,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 {{< rawhtml >}}
 <div class="lr-faq">
   <h3>What assets are supported?</h3>
-  <p>BTC, ETH, SPY, QQQ, AAPL, TSLA, NVDA, MSFT, GOOGL, EURUSD, GBPUSD, and 10 more. Custom requests welcome.</p>
+  <p>BTC, ETH, SPY, QQQ, AAPL, TSLA, NVDA, MSFT, GOOGL, EURUSD, GBPUSD, and 10 more.<br>Custom requests welcome — we'll consider expanding the roster in the near future.</p>
 </div>
 <div class="lr-faq">
   <h3>What indicators are included?</h3>
@@ -231,7 +231,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>Can I choose which assets to follow?</h3>
-  <p>Yes. We monitor 20 major markets. You pick which ones you want alerts for. Switch them anytime via the bot.</p>
+  <p>Yes. We monitor 20 major markets. You pick 5 that you want alerts for. Switch them anytime via the bot.</p>
 </div>
 <div class="lr-faq">
   <h3>How do I cancel?</h3>
@@ -239,7 +239,9 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>What are Lab Originals?</h3>
-  <p>Invite-only TradingView indicators we build ourselves. CVD Divergence Alerts is our first — more coming. All subscribers get instant access to every Lab Original, free. Non-subscribers can purchase individual scripts from our <a href="/lab-originals/">Lab Originals</a> page.</p>
+  <p>Invite-only TradingView indicators we build ourselves. CVD Divergence Alerts is our first — more coming.</p>
+  <p>All subscribers get instant access to every Lab Original, free.</p>
+  <p>Non-subscribers can purchase individual scripts from our <a href="/lab-originals/">Lab Originals</a> page.</p>
 </div>
 <div class="lr-faq">
   <h3>What happens when the price increases?</h3>
