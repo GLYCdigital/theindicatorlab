@@ -14,7 +14,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-hero p { font-size: 1.8rem; color: var(--text-secondary); max-width: 680px; margin: 0 auto 2.5rem; line-height: 1.6; }
   .lr-cta { display: inline-block; background: var(--accent); color: #fff !important; font-weight: 700; padding: 18px 52px; border-radius: var(--radius); font-size: 1.6rem; text-decoration: none !important; transition: background 0.15s, transform 0.15s; box-shadow: 0 2px 8px rgba(232, 119, 34, 0.3); }
   .lr-cta:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(232, 119, 34, 0.4); }
-  .lr-cta-sub { margin-top: 1.2rem; font-size: 1.25rem; color: var(--text-muted); }
+  .lr-cta-sub { margin-top: 2.5rem; font-size: 1.25rem; color: var(--text-muted); }
   .lr-trust { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; padding: 1.5rem 1rem; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); max-width: 720px; margin: 0 auto 3rem; color: var(--text-muted); font-size: 1.3rem; }
   .lr-trust strong { color: var(--text); }
   .lr-section { max-width: 720px; margin: 0 auto; padding: 4rem 1rem; }
@@ -22,8 +22,9 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-section h3 { font-size: 1.7rem; font-weight: 600; margin: 0 0 0.5rem; }
   .lr-problem { background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.12); border-radius: var(--radius-lg); padding: 2rem; margin: 1.5rem 0; }
   .lr-problem p { margin: 0; font-size: 1.5rem; line-height: 1.6; }
-  .lr-step { display: flex; gap: 1.5rem; margin: 2rem 0; align-items: flex-start; }
+  .lr-step { display: flex; gap: 1.5rem; margin: 2rem 0; align-items: center; }
   .lr-step-num { background: var(--primary); color: #fff; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0; }
+  .lr-step h3 { margin: 0 0 0.3rem; font-size: 1.6rem; font-weight: 600; }
   .lr-step p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
   .lr-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
   .lr-benefit { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 1.5rem; }
@@ -55,11 +56,11 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   <h1>Multiple indicators.<br><span>One verdict.</span></h1>
   <p>Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
   <a href="#pricing" class="lr-cta">Start Free Trial →</a>
-  <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial · Backed by 85+ indicator reviews</p>
+  <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
 </div>
 
 <div class="lr-trust">
-  <span><strong>85+</strong> indicator reviews</span>
+  <span><strong>{{< review-count >}}+</strong> indicator reviews</span>
   <span><strong>30+</strong> indicators tracked</span>
   <span><strong>20</strong> markets covered</span>
   <span><strong>Every 15 min</strong> updates</span>
@@ -80,7 +81,7 @@ You have 20+ indicators on your chart. RSI says buy. MACD says sell. OBV says ho
 
 Traders who act on the consensus of multiple indicators consistently outperform those who pick signals from a single source. The data is clear: **diverse signal aggregation reduces false signals by 60-70%**. But no one has the time to check 20 indicators across 30 assets every 15 minutes.
 
-The Lab Report does that for you. Every 15 minutes, across 20 hand-picked markets. Pick the ones you want alerts for.
+The Lab Report does that for you. Every 15 minutes, across 20 hand-picked markets.<br>Pick the ones you want alerts for. **No noise from markets you don't care about.**
 
 ## How It Works
 
@@ -89,7 +90,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-step-num">1</div>
   <div>
     <h3>We analyze</h3>
-    <p>Every 15 minutes, our engine runs 30+ TradingView indicators — RSI, MACD, OBV, CVD, Bollinger Bands, and more — against 20 hand-picked markets across crypto, US equities, and forex.</p>
+    <p>We are the only systematic TradingView indicator review site on the internet. Our team runs our best-rated indicators out of {{< review-count >}} deep-dive reviews — RSI, MACD, OBV, CVD, Bollinger Bands, and more — against 20 hand-picked markets across crypto, US equities, and forex. In real time, round the clock.</p>
   </div>
 </div>
 <div class="lr-step">
@@ -103,7 +104,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-step-num">3</div>
   <div>
     <h3>You get the verdict</h3>
-    <p>A push notification hits your phone: "BTCUSD: 17 of 25 indicators bullish — strong buy consensus." <strong>You check the chart. You decide. You act.</strong></p>
+    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 17 of 25 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
   </div>
 </div>
 {{< /rawhtml >}}
