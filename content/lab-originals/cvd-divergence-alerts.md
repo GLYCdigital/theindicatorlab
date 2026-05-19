@@ -19,7 +19,7 @@ description: "The only CVD indicator on TradingView that watches the chart for y
         <span style="background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">$25 ONE-TIME</span>
         <span style="background: var(--green); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">PHONE ALERTS</span>
       </div>
-      <p style="margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6;">Cumulative Volume Delta + divergence detection + TradingView push notifications. The only CVD script that tells you when something happens instead of making you watch the histogram.</p>
+      <p style="margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6;">Cumulative Volume Delta + divergence detection + TradingView push notifications.<br>The only CVD script that tells you when something happens instead of making you watch the histogram.</p>
     </div>
   </div>
 </div>
