@@ -200,7 +200,9 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 
 <div style="text-align: center; padding: 2rem 1rem; max-width: 720px; margin: 0 auto;">
-  <p style="font-size: 1.3rem; color: var(--text-muted); margin: 0;">🛡️ <strong>We don't keep your records.</strong> Stripe handles billing. If you cancel, we forget who you are. Re-join at the current rate. Your privacy matters more than our CRM.</p>
+  <p style="font-size: 1.3rem; color: var(--text-muted); margin: 0 0 0.5rem;">🛡️ <strong>We don't keep your records.</strong></p>
+  <p style="font-size: 1.3rem; color: var(--text-muted); margin: 0 0 0.5rem;">Stripe handles billing. If you cancel, we forget who you are. Re-join at the current rate.</p>
+  <p style="font-size: 1.3rem; color: var(--text-muted); margin: 0;">Your privacy matters more than our CRM.</p>
 </div>
 {{< /rawhtml >}}
 
