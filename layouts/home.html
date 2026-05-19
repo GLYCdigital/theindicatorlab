@@ -23,9 +23,7 @@
           <h3>{{ .Title }}</h3>
           <div class="card-meta">
             <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-            {{ with .Params.rating }}
-            <span class="stars">{{ range seq 5 }}{{ if le . $.Params.rating }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>
-            {{ end }}
+            {{ with .Params.rating }}{{ $r := . }}<span class="stars">{{ range seq 5 }}{{ if le . $r }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>{{ end }}
           </div>
         </div>
       </article>
@@ -58,9 +56,7 @@
             {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
             <div class="card-meta">
               <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-              {{ with .Params.rating }}
-              <span class="stars">{{ range seq 5 }}{{ if le . $.Params.rating }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>
-              {{ end }}
+              {{ with .Params.rating }}{{ $r := . }}<span class="stars">{{ range seq 5 }}{{ if le . $r }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>{{ end }}
             </div>
           </div>
         </a>
