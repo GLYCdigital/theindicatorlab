@@ -15,9 +15,9 @@ description: "The only CVD indicator on TradingView that watches the chart for y
     <div>
       <h2 style="margin: 0 0 0.5rem; font-size: 2.2rem; color: var(--text);">CVD Divergence Alerts</h2>
       <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
-        <span style="background: var(--primary); color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">VOLUME</span>
-        <span style="background: var(--accent); color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">$25 ONE-TIME</span>
-        <span style="background: var(--green); color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">PHONE ALERTS</span>
+        <span style="background: var(--primary); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">VOLUME</span>
+        <span style="background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">$25 ONE-TIME</span>
+        <span style="background: var(--green); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">PHONE ALERTS</span>
       </div>
       <p style="margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6;">Cumulative Volume Delta + divergence detection + TradingView push notifications. The only CVD script that tells you when something happens instead of making you watch the histogram.</p>
     </div>
