@@ -1,10 +1,13 @@
 {{ define "main" }}
-<div class="container">
-  <div class="section-header">
-    <h2>{{ .Title }}</h2>
-    <a href="/">← Home</a>
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>Honest, in-depth TradingView indicator reviews — tested, rated, and explained</p>
   </div>
-  <div class="review-grid">
+</section>
+
+<div class="container">
+  <div class="review-grid" style="margin-top: -24px; padding-top: 48px;">
     {{ range .Pages.ByDate.Reverse }}
     <article class="review-card">
       <a href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit;">
