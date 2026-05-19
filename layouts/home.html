@@ -1,89 +1,72 @@
 {{ define "main" }}
 {{- $reviews := where .Site.RegularPages "Section" "reviews" -}}
+{{- $latest := index ($reviews.ByDate.Reverse) 0 -}}
 
-{{/* ── TOP SECTION: Hero (latest review) ── */}}
-{{ if $reviews }}
-{{ $hero := index ($reviews.ByDate.Reverse) 0 }}
-
-<section class="rs-blog-main-section">
-  <div style="max-width: 1160px; margin: 0 auto; padding: 0 20px;">
-    {{/* Hero Card — latest review, full width */}}
-    <article class="rs-blog-main">
-      <a href="{{ $hero.RelPermalink }}" class="rs-blog-image-link">
-        <div style="position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 21/9;">
-          {{ if $hero.Params.image }}
-          <img src="{{ $hero.Params.image }}" alt="{{ $hero.Title }}" loading="lazy" 
-               style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          {{ else }}
-          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
+{{/* ── Hero Section ── */}}
+<section class="home-hero">
+  <div class="container home-hero-inner">
+    <div class="home-hero-text">
+      <h1>Honest TradingView<br>Indicator Reviews</h1>
+      <p>Every indicator tested, rated, and explained — no hype, no affiliate bias. Find the right tools for your trading strategy.</p>
+      <a href="/reviews/" class="cta">Browse Reviews</a>
+    </div>
+    {{ with $latest }}
+    <a href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit;">
+      <article class="home-hero-card">
+        <div class="card-img">
+          {{ with .Params.image }}<img src="{{ . }}" alt="{{ $latest.Title }}" loading="lazy">{{ else }}
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           {{ end }}
-          <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 50%);"></div>
-          <div style="position: absolute; bottom: 32px; left: 32px; right: 32px;">
-            {{ range $hero.Params.categories }}
-            <span class="rs-blog-cat-badge" style="display: inline-block; padding: 6px 18px; border-radius: 20px; background: var(--indicator-green); color: #fff; font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">
-              {{ . }}
-            </span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Latest Review</span>
+          <h3>{{ .Title }}</h3>
+          <div class="card-meta">
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+            {{ with .Params.rating }}
+            <span class="stars">{{ range seq 5 }}{{ if le . $.Params.rating }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>
             {{ end }}
-            <h2 style="font-size: 2.7rem; font-weight: 700; color: #fff; margin: 10px 0 6px; line-height: 1.2;">
-              <a href="{{ $hero.RelPermalink }}" style="color: #fff; text-decoration: none;">{{ $hero.Title }}</a>
-            </h2>
-            <div style="color: rgba(255,255,255,0.85); font-size: 1.4rem;">
-              {{ $hero.Date.Format "Jan 2, 2006" }}
-              {{ if $hero.Params.rating }}
-              <span style="margin-left: 14px;">
-                {{ $rating := $hero.Params.rating }}
-                {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
-              </span>
-              {{ end }}
-            </div>
           </div>
         </div>
-      </a>
-    </article>
-  </div>
-</section>
-{{ end }}
-
-{{/* ── BOTTOM SECTION: Reviews Grid (3 cols) ── */}}
-<section style="padding: 50px 0; max-width: 1160px; margin: 0 auto; padding-left: 20px; padding-right: 20px;">
-  <h4 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 28px; color: var(--card-text-color-main);">Reviews</h4>
-  
-  <div class="review-grid" style="gap: 28px">
-    {{ range $i, $review := $reviews.ByDate.Reverse }}
-    <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1); transition: transform 0.2s, box-shadow 0.2s;">
-      <a href="{{ $review.RelPermalink }}" style="text-decoration: none; color: inherit;">
-        <div style="aspect-ratio: 16/9; overflow: hidden;">
-          {{ if $review.Params.image }}
-          <img src="{{ $review.Params.image }}" alt="{{ $review.Title }}" loading="lazy" 
-               style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
-          {{ else }}
-          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
-          {{ end }}
-        </div>
-        <div style="padding: 20px 24px 24px;">
-          {{ range $review.Params.categories }}
-          <span style="display: inline-block; padding: 5px 16px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">{{ . }}</span>
-          {{ end }}
-          <h3 style="font-size: 2rem; font-weight: 700; line-height: 1.3; margin: 0 0 8px; color: var(--card-text-color-main);">{{ $review.Title }}</h3>
-          {{ if $review.Params.description }}
-          <p style="font-size: 1.4rem; color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 14px;">{{ $review.Params.description }}</p>
-          {{ end }}
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.3rem; color: var(--card-text-color-tertiary);">
-            <span>
-              {{ if $review.Params.rating }}
-                {{ $rating := $review.Params.rating }}
-                {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
-              {{ end }}
-            </span>
-            <span>{{ $review.Date.Format "Jan 2, 2006" }} &middot; {{ $review.ReadingTime }} min read</span>
-          </div>
-        </div>
-      </a>
-    </article>
+      </article>
+    </a>
     {{ end }}
   </div>
 </section>
 
+{{/* ── Reviews Grid ── */}}
+<section style="padding: 0 0 64px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Reviews</h2>
+      <a href="/reviews/">View all →</a>
+    </div>
+    <div class="review-grid">
+      {{ range first 6 ($reviews.ByDate.Reverse) }}
+      <article class="review-card">
+        <a href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit;">
+          <div class="card-img">
+            {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">{{ else }}
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            {{ end }}
+          </div>
+          <div class="card-body">
+            {{ range .Params.categories }}
+            <span class="card-tag">{{ . }}</span>
+            {{ end }}
+            <h3>{{ .Title }}</h3>
+            {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+            <div class="card-meta">
+              <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+              {{ with .Params.rating }}
+              <span class="stars">{{ range seq 5 }}{{ if le . $.Params.rating }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>
+              {{ end }}
+            </div>
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
-
-{{ define "right-sidebar" }}{{ end }}

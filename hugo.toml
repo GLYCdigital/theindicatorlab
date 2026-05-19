@@ -89,6 +89,18 @@ defaultContentLanguage = "en"
     weight = 40
 
   [[menu.main]]
+    identifier = "lab-originals"
+    name = "Lab Originals"
+    url = "/lab-originals/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "lab-report"
+    name = "The Lab Report"
+    url = "/the-lab-report/"
+    weight = 8
+
+  [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"

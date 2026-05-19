@@ -1,110 +1,23 @@
 {{ define "main" }}
-<article class="article-page">
-  <header class="article-header">
-    <h1 class="article-title" style="font-size: 2rem; font-weight: 700; line-height: 1.3; color: var(--card-text-color-main);">{{ .Title }}</h1>
-    {{ if .Description }}
-    <p class="article-description" style="font-size: 1.4rem; color: var(--card-text-color-secondary); line-height: 1.5;">{{ .Description }}</p>
-    {{ end }}
-    
-    {{ if or .Date .Params.rating .Params.categories .Params.tags }}
-    <div class="article-meta">
-      {{ if .Date }}
-      <span style="font-size: 1.3rem;">Published: {{ .Date.Format "Jan 2, 2006" }}</span>
-      {{ end }}
-      {{ if .Params.rating }}
-      <span class="rating" style="margin-left: 12px; font-size: 1.5rem;">
-        {{ $rating := .Params.rating }}
-        {{ range seq 5 }}
-          {{ if le . $rating }}⭐{{ else }}☆{{ end }}
-        {{ end }}
-        <span style="font-size: 0.85rem; margin-left: 4px;">({{ $rating }}/5)</span>
-      </span>
-      {{ end }}
-      
-      <div style="margin-top: 12px;">
-        {{ if .Params.categories }}
-          {{ range .Params.categories }}
-            <span class="category-badge" style="background: var(--indicator-green-light); color: var(--indicator-green-dark); margin-right: 6px; font-size: 1.1rem; padding: 5px 16px;">{{ . }}</span>
-          {{ end }}
-        {{ end }}
-        {{ if .Params.tags }}
-          <span class="tags-list" style="display: inline;">
-            {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-          </span>
-        {{ end }}
-      </div>
-    </div>
-    {{ end }}
-  </header>
+<article class="review-article">
+  <nav class="breadcrumb">
+    <a href="/">Home</a> › <a href="/reviews/">Reviews</a> › <span>{{ .Title }}</span>
+  </nav>
 
-  {{ if .Params.image }}
-  <figure>
-    <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" style="border-radius: 12px; width: 100%; margin: 24px 0;">
-  </figure>
-  {{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
 
-  <div class="article-content">
+  <div class="meta-bar">
+    {{ with .Date }}<span>{{ .Format "Jan 2, 2006" }}</span>{{ end }}
+    {{ with .Params.rating }}
+    <span class="stars">{{ range seq 5 }}{{ if le . $.Params.rating }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>
+    <span>{{ . }}/5</span>
+    {{ end }}
+    {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+  </div>
+
+  <div class="content">
     {{ .Content }}
   </div>
-
-  <footer>
-    {{ if .Params.rating }}
-    <div class="rating-box" style="padding: 28px;">
-      <strong style="font-size: 2.1rem;">Overall Rating: {{ $rating := .Params.rating }}{{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }} ({{ $rating }}/5)</strong>
-    </div>
-    {{ end }}
-
-    <div class="risk-warning" style="background: rgba(255, 107, 107, 0.08); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 12px; padding: 20px; margin: 24px 0;">
-      <strong style="font-size: 1.5rem;">⚠️ Risk Warning</strong>
-      <p style="margin: 8px 0 0 0; font-size: 1.2rem;">Trading financial markets carries substantial risk. Past performance does not guarantee future results. The information on this site is for educational and informational purposes only and does not constitute financial advice. Always do your own research before trading.</p>
-    </div>
-
-    <div class="affiliate-disclosure" style="font-size: 1.1rem; color: var(--card-text-color-tertiary); padding: 16px 0; border-top: 1px solid var(--card-separator-color); margin-top: 24px;">
-      <p><em>Disclaimer: Some links on this page are affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. We only recommend tools we've actually tested and found useful.</em></p>
-    </div>
-  </footer>
 </article>
-
-{{ $related := where .Site.RegularPages "Section" "reviews" | first 3 }}
-{{ if $related }}
-<aside style="margin-top: 48px;">
-  <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: var(--card-text-color-main);">Related Reviews</h2>
-  <div class="review-grid" style="gap: 28px">
-    {{ range $related }}
-    <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1);">
-      <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
-        <div style="aspect-ratio: 16/9; overflow: hidden;">
-          {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" 
-               style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          {{ else }}
-          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--indicator-green), #0055ff);"></div>
-          {{ end }}
-        </div>
-        <div style="padding: 20px 24px 24px;">
-          {{ range .Params.categories }}
-          <span style="display: inline-block; padding: 5px 16px; border-radius: 20px; background: var(--indicator-green-light); color: var(--indicator-green-dark); font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">{{ . }}</span>
-          {{ end }}
-          <h3 style="font-size: 2rem; font-weight: 700; line-height: 1.3; margin: 0 0 8px; color: var(--card-text-color-main);">{{ .Title }}</h3>
-          {{ if .Description }}
-          <p style="font-size: 1.4rem; color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 14px;">{{ .Description }}</p>
-          {{ end }}
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.3rem; color: var(--card-text-color-tertiary);">
-            <span>
-              {{ if .Params.rating }}
-                {{ $rating := .Params.rating }}
-                {{ range seq 5 }}{{ if le . $rating }}⭐{{ else }}☆{{ end }}{{ end }}
-              {{ end }}
-            </span>
-            <span>{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} min read</span>
-          </div>
-        </div>
-      </a>
-    </article>
-    {{ end }}
-  </div>
-</aside>
-{{ end }}
 {{ end }}

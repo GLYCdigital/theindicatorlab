@@ -1,0 +1,50 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ if .Description }}
+  <p style="font-size: 1.1rem; color: var(--card-text-color-secondary); max-width: 650px; margin-top: 8px;">{{ .Description }}</p>
+  {{ end }}
+</header>
+
+<div class="article-list--two" style="gap: 28px;">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="rs-blog-post" style="border-radius: 12px; overflow: hidden; background: var(--card-background); box-shadow: var(--shadow-l1);">
+    <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+      <div style="aspect-ratio: 16/9; overflow: hidden;">
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" 
+             style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        {{ else }}
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #00bcd4, #4caf50);"></div>
+        {{ end }}
+      </div>
+      <div style="padding: 20px 24px 24px;">
+        <div style="display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap;">
+          {{ if .Params.price }}
+          <span style="display: inline-block; padding: 4px 12px; border-radius: 4px; background: #4caf50; color: #000; font-size: 0.85rem; font-weight: bold;">{{ .Params.price }}</span>
+          {{ end }}
+          {{ if .Params.status }}
+          <span style="display: inline-block; padding: 4px 12px; border-radius: 4px; background: #00bcd4; color: #000; font-size: 0.85rem;">{{ .Params.status }}</span>
+          {{ end }}
+        </div>
+        <h2 style="font-size: 1.5rem; font-weight: 700; line-height: 1.3; margin: 0 0 8px;">{{ .Title }}</h2>
+        {{ if .Description }}
+        <p style="color: var(--card-text-color-secondary); line-height: 1.5; margin: 0 0 14px;">{{ .Description }}</p>
+        {{ end }}
+        <div style="display: flex; gap: 8px; margin-top: 12px;">
+          <span style="display: inline-block; background: #4caf50; color: #000; padding: 8px 20px; border-radius: 6px; font-weight: bold; font-size: 0.9rem;">View Script →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+</div>
+
+{{ if not .Pages }}
+<div style="text-align: center; padding: 4rem 1rem; color: var(--card-text-color-secondary);">
+  <p style="font-size: 1.2rem;">More scripts coming soon.</p>
+  <p>Lab Originals is our line of custom-built TradingView indicators. Each one solves a problem that free scripts don't address. Built by traders, backed by 77+ indicator reviews of research.</p>
+  <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--card-text-color-tertiary);">Subscribe to the Lab Report for real-time consensus across all our indicators →</p>
+</div>
+{{ end }}
+{{ end }}

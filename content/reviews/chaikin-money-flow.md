@@ -68,3 +68,5 @@ Chaikin Money Flow (CMF) calculates the amount of money flowing into or out of a
 A cleaner, less noisy alternative to OBV. Better for trend confirmation than signal generation. If OBV feels too erratic, CMF smooths it out — but you'll get fewer trade opportunities.
 
 [Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+
+**💡 Pro Upgrade:** Want volume-based divergence alerts instead of passive money flow readings? [CVD Divergence Alerts](/reviews/cvd-divergence-alerts-pro/) automates divergence detection with phone notifications.

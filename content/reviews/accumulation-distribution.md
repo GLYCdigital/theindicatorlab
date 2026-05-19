@@ -68,3 +68,5 @@ Accumulation/Distribution Line is a technical analysis tool focused on volume fl
 Accumulation/Distribution Line is a capable tool for traders focused on volume flow and institutional activity. Not flashy, not a silver bullet — but reliable when used in the right context. Learn its quirks and it'll earn its place on your chart.
 
 [Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+
+**💡 Pro Upgrade:** Looking for automated divergence detection with volume confirmation? [CVD Divergence Alerts](/reviews/cvd-divergence-alerts-pro/) pushes phone notifications when CVD and price diverge.

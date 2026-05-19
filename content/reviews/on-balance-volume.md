@@ -68,3 +68,5 @@ On-Balance Volume (OBV) is a cumulative volume indicator that adds volume on up 
 The simplest volume indicator that actually works. OBV divergences catch reversals before price confirms them. Put it on your chart, look for divergences, and watch your timing improve.
 
 [Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+
+**💡 Pro Upgrade:** Tired of manually scanning OBV for divergences? [CVD Divergence Alerts](/reviews/cvd-divergence-alerts-pro/) watches the chart for you — 4 divergence types, phone alerts, zero manual scanning.
