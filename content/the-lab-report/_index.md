@@ -32,13 +32,14 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-benefit h4 { margin: 0 0 0.3rem; font-size: 1.4rem; font-weight: 600; color: var(--text); }
   .lr-benefit p { margin: 0; color: var(--text-secondary); font-size: 1.3rem; line-height: 1.5; }
   .lr-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 3rem 2rem; margin: 2rem 0; color: #fff; }
-  .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 1.8rem; color: rgba(255,255,255,0.9); }
-  .lr-price { font-size: 4rem; font-weight: 800; margin: 1rem 0; color: #fff; }
-  .lr-price span { font-size: 1.4rem; color: rgba(255,255,255,0.7); font-weight: 400; }
-  .lr-price-sub { color: rgba(255,255,255,0.7); margin: 0 0 2rem; font-size: 1.4rem; }
+  .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: rgba(255,255,255,0.9); }
+  .lr-pricing > p { font-size: 1.5rem; color: rgba(255,255,255,0.7); }
+  .lr-price { font-size: 5rem; font-weight: 800; margin: 1rem 0; color: #fff; }
+  .lr-price span { font-size: 1.6rem; color: rgba(255,255,255,0.7); font-weight: 400; }
+  .lr-price-sub { color: rgba(255,255,255,0.7); margin: 0 0 2rem; font-size: 1.5rem; }
   .lr-pricing .lr-cta { background: var(--accent); }
   .lr-pricing .lr-cta:hover { background: var(--accent-hover); }
-  .lr-early { margin-top: 1.5rem; font-size: 1.2rem; color: rgba(255,255,255,0.6); }
+  .lr-early { margin-top: 1.5rem; font-size: 1.35rem; color: rgba(255,255,255,0.6); }
   .lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
   .lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
@@ -47,7 +48,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-close p { font-size: 1.5rem; color: rgba(255,255,255,0.8); margin: 0 0 2rem; }
   @media (max-width: 600px) {
     .lr-hero h1 { font-size: 3rem; }
-    .lr-price { font-size: 2.6rem; }
+    .lr-price { font-size: 3rem; }
     .lr-benefits { grid-template-columns: 1fr; }
     .lr-pricing [style*="grid"] { grid-template-columns: 1fr 1fr !important; }
   }
@@ -162,29 +163,29 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   
   <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
     <div style="background: rgba(255,255,255,0.12); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
-      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Founding Member</div>
-      <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent);">$29<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">First 50 only</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Founding Member</div>
+      <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent);">$29<span style="font-size: 1rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">First 50 only</div>
     </div>
     <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
-      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">SuperFan</div>
-      <div style="font-size: 1.8rem; font-weight: 800;">$49<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">Up to 100 indicators</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">SuperFan</div>
+      <div style="font-size: 2.2rem; font-weight: 800;">$49<span style="font-size: 1rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">Up to 100 indicators</div>
     </div>
     <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
-      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Fan</div>
-      <div style="font-size: 1.8rem; font-weight: 800;">$69<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">100+ indicators</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Fan</div>
+      <div style="font-size: 2.2rem; font-weight: 800;">$69<span style="font-size: 1rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">100+ indicators</div>
     </div>
     <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
-      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Member</div>
-      <div style="font-size: 1.8rem; font-weight: 800;">$89<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">200+ indicators</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Member</div>
+      <div style="font-size: 2.2rem; font-weight: 800;">$89<span style="font-size: 1rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">200+ indicators</div>
     </div>
   </div>
 
   <div style="text-align: center; margin-bottom: 2rem;">
-    <div style="display: inline-block; background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 0.75rem 1.5rem; font-size: 1.2rem; color: rgba(255,255,255,0.8);">
+    <div style="display: inline-block; background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 0.75rem 1.5rem; font-size: 1.4rem; color: rgba(255,255,255,0.8);">
       🔒 <strong>Your price is locked forever.</strong> Subscribe today — we never raise it on you.
     </div>
   </div>
@@ -195,7 +196,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   <a href="#" class="lr-cta">Become a Founding Member →</a>
   
   <p class="lr-early">Only <strong>50 spots</strong> at this price. Lock in $29/month forever.</p>
-  <p style="margin-top: 1rem; font-size: 1.15rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
+  <p style="margin-top: 1rem; font-size: 1.25rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
 </div>
 
 <div style="text-align: center; padding: 2rem 1rem; max-width: 720px; margin: 0 auto;">
