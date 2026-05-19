@@ -49,14 +49,15 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
     .lr-hero h1 { font-size: 3rem; }
     .lr-price { font-size: 2.6rem; }
     .lr-benefits { grid-template-columns: 1fr; }
+    .lr-pricing [style*="grid"] { grid-template-columns: 1fr 1fr !important; }
   }
 </style>
 
 <div class="lr-hero">
   <h1>Multiple indicators.<br><span>One verdict.</span></h1>
   <p>Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
-  <a href="#pricing" class="lr-cta">Start Free Trial →</a>
-  <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
+  <a href="#pricing" class="lr-cta">Become a Founding Member →</a>
+  <p class="lr-cta-sub">$29/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
 </div>
 
 <div class="lr-trust">
@@ -116,7 +117,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-benefit">
     <div class="icon">📱</div>
     <h4>Phone Alerts</h4>
-    <p>Push notification every 15 minutes when consensus changes — no need to watch charts</p>
+    <p>Telegram push notification every 15 minutes when consensus changes — no need to watch charts</p>
   </div>
   <div class="lr-benefit">
     <div class="icon">📊</div>
@@ -126,12 +127,22 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-benefit">
     <div class="icon">⚙️</div>
     <h4>30+ Indicators</h4>
-    <p>Growing every week as we publish new reviews and add them to the roster</p>
+    <p>Growing weekly as we publish new reviews and add them to the roster</p>
   </div>
   <div class="lr-benefit">
     <div class="icon">📈</div>
     <h4>Daily Report</h4>
     <p>End-of-day consensus summary delivered to your inbox every evening</p>
+  </div>
+  <div class="lr-benefit">
+    <div class="icon">🔬</div>
+    <h4>All Lab Originals</h4>
+    <p>Every invite-only indicator script we build — CVD Divergence Alerts and more — included free</p>
+  </div>
+  <div class="lr-benefit">
+    <div class="icon">🔒</div>
+    <h4>Price Locked Forever</h4>
+    <p>Subscribe at today's price — your rate never increases. Even as we add 100+ more indicators.</p>
   </div>
 </div>
 {{< /rawhtml >}}
@@ -147,11 +158,48 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
   <h2>PRICING</h2>
-  <div class="lr-price">$49 <span>/month</span></div>
-  <p class="lr-price-sub">7-day free trial · Cancel anytime · No credit card required to start</p>
-  <a href="#" class="lr-cta">Start Free Trial →</a>
-  <p class="lr-early">🔒 First 50 subscribers lock in at <strong>$29/month</strong> — early adopter pricing</p>
-  <p style="margin-top: 1rem; font-size: 1.15rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one command.</p>
+  <p style="color: rgba(255,255,255,0.7); font-size: 1.3rem; margin: 0 0 2rem;">One subscription. Every feature. Price locked forever.</p>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
+    <div style="background: rgba(255,255,255,0.12); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
+      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Founding Member</div>
+      <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent);">$29<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">First 50 only</div>
+    </div>
+    <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
+      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">SuperFan</div>
+      <div style="font-size: 1.8rem; font-weight: 800;">$49<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">Up to 100 indicators</div>
+    </div>
+    <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
+      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Fan</div>
+      <div style="font-size: 1.8rem; font-weight: 800;">$69<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">100+ indicators</div>
+    </div>
+    <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.25rem 0.75rem;">
+      <div style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Member</div>
+      <div style="font-size: 1.8rem; font-weight: 800;">$89<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></div>
+      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 0.3rem;">200+ indicators</div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <div style="display: inline-block; background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 0.75rem 1.5rem; font-size: 1.2rem; color: rgba(255,255,255,0.8);">
+      🔒 <strong>Your price is locked forever.</strong> Subscribe today — we never raise it on you.
+    </div>
+  </div>
+
+  <div class="lr-price">$29 <span>/month</span></div>
+  <p class="lr-price-sub">Founding Member · 7-day free trial · Cancel anytime</p>
+  
+  <a href="#" class="lr-cta">Become a Founding Member →</a>
+  
+  <p class="lr-early">Only <strong>50 spots</strong> at this price. Lock in $29/month forever.</p>
+  <p style="margin-top: 1rem; font-size: 1.15rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
+</div>
+
+<div style="text-align: center; padding: 2rem 1rem; max-width: 720px; margin: 0 auto;">
+  <p style="font-size: 1.3rem; color: var(--text-muted); margin: 0;">🛡️ <strong>We don't keep your records.</strong> Stripe handles billing. If you cancel, we forget who you are. Re-join at the current rate. Your privacy matters more than our CRM.</p>
 </div>
 {{< /rawhtml >}}
 
@@ -185,8 +233,20 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   <p>One command: /unsubscribe in the Telegram bot. Your subscription stops immediately. No questions, no retention tactics.</p>
 </div>
 <div class="lr-faq">
+  <h3>What are Lab Originals?</h3>
+  <p>Invite-only TradingView indicators we build ourselves. CVD Divergence Alerts is our first — more coming. All subscribers get instant access to every Lab Original, free. Non-subscribers can purchase individual scripts from our <a href="/lab-originals/">Lab Originals</a> page.</p>
+</div>
+<div class="lr-faq">
+  <h3>What happens when the price increases?</h3>
+  <p>Nothing — for you. Your price is locked forever at whatever rate you subscribed at. Only new subscribers pay the higher rate. Cancel and re-join later? You pay the current rate at that time.</p>
+</div>
+<div class="lr-faq">
+  <h3>Is there an annual plan?</h3>
+  <p>Yes. Save ~20% with annual billing. Founding Member annual: $279/year. Email us after subscribing and we'll switch you to annual — your locked-in price still applies.</p>
+</div>
+<div class="lr-faq">
   <h3>Do I need TradingView?</h3>
-  <p>No. The Lab Report processes data independently. You receive alerts directly on Telegram. No TradingView account required.</p>
+  <p>No. The Lab Report processes data independently. You receive alerts directly on Telegram. No TradingView account required. (But if you have one, you get priority access to our invite-only scripts.)</p>
 </div>
 <div class="lr-faq">
   <h3>Is there a free trial?</h3>
@@ -198,6 +258,6 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 <div class="lr-close">
   <h2>Stop guessing. Start knowing.</h2>
   <p>30+ indicators. 20 markets. One verdict. Delivered to your phone every 15 minutes.</p>
-  <a href="#pricing" class="lr-cta">Try The Lab Report Free →</a>
+  <a href="#pricing" class="lr-cta">Become a Founding Member →</a>
 </div>
 {{< /rawhtml >}}
