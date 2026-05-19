@@ -8,13 +8,15 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 
 {{< rawhtml >}}
 <style>
-  .lr-hero { text-align: center; padding: 5rem 1rem 4rem; }
+  .lr-hero { text-align: center; padding: 5rem 1rem 3rem; }
   .lr-hero h1 { font-size: 5rem; line-height: 1.1; margin: 0 0 1.5rem; color: var(--text); letter-spacing: -1px; }
   .lr-hero h1 span { color: var(--accent); }
   .lr-hero p { font-size: 1.8rem; color: var(--text-secondary); max-width: 680px; margin: 0 auto 2.5rem; line-height: 1.6; }
-  .lr-cta { display: inline-block; background: var(--accent); color: #fff !important; font-weight: 700; padding: 16px 44px; border-radius: var(--radius); font-size: 1.5rem; text-decoration: none !important; transition: background 0.2s; }
-  .lr-cta:hover { background: var(--accent-hover); }
-  .lr-cta-sub { margin-top: 1rem; font-size: 1.25rem; color: var(--text-muted); }
+  .lr-cta { display: inline-block; background: var(--accent); color: #fff !important; font-weight: 700; padding: 18px 52px; border-radius: var(--radius); font-size: 1.6rem; text-decoration: none !important; transition: background 0.15s, transform 0.15s; box-shadow: 0 2px 8px rgba(232, 119, 34, 0.3); }
+  .lr-cta:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(232, 119, 34, 0.4); }
+  .lr-cta-sub { margin-top: 1.2rem; font-size: 1.25rem; color: var(--text-muted); }
+  .lr-trust { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; padding: 1.5rem 1rem; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); max-width: 720px; margin: 0 auto 3rem; color: var(--text-muted); font-size: 1.3rem; }
+  .lr-trust strong { color: var(--text); }
   .lr-section { max-width: 720px; margin: 0 auto; padding: 4rem 1rem; }
   .lr-section h2 { font-size: 2.2rem; font-weight: 700; margin: 0 0 1rem; color: var(--text); }
   .lr-section h3 { font-size: 1.7rem; font-weight: 600; margin: 0 0 0.5rem; }
@@ -39,9 +41,9 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
   .lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
-  .lr-close { text-align: center; padding: 4rem 1rem; }
-  .lr-close h2 { font-size: 2.8rem; margin: 0 0 1rem; font-weight: 700; }
-  .lr-close p { font-size: 1.5rem; color: var(--text-secondary); margin: 0 0 2rem; }
+  .lr-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff; }
+  .lr-close h2 { font-size: 2.8rem; margin: 0 0 1rem; font-weight: 700; color: #fff; }
+  .lr-close p { font-size: 1.5rem; color: rgba(255,255,255,0.8); margin: 0 0 2rem; }
   @media (max-width: 600px) {
     .lr-hero h1 { font-size: 3rem; }
     .lr-price { font-size: 2.6rem; }
@@ -54,6 +56,13 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   <p>Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
   <a href="#pricing" class="lr-cta">Start Free Trial →</a>
   <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial · Backed by 85+ indicator reviews</p>
+</div>
+
+<div class="lr-trust">
+  <span><strong>85+</strong> indicator reviews</span>
+  <span><strong>30+</strong> indicators tracked</span>
+  <span><strong>20</strong> markets covered</span>
+  <span><strong>Every 15 min</strong> updates</span>
 </div>
 {{< /rawhtml >}}
 
@@ -141,6 +150,13 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   <p class="lr-price-sub">7-day free trial · Cancel anytime · No credit card required to start</p>
   <a href="#" class="lr-cta">Start Free Trial →</a>
   <p class="lr-early">🔒 First 50 subscribers lock in at <strong>$29/month</strong> — early adopter pricing</p>
+  <p style="margin-top: 1rem; font-size: 1.15rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one command.</p>
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div style="text-align: center; padding: 1rem 0 0;">
+  <p style="font-size: 1.4rem; color: var(--text-muted);">Have questions? We have answers.</p>
 </div>
 {{< /rawhtml >}}
 
