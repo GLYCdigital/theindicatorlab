@@ -7,6 +7,12 @@
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
 
+  {{ with .Params.image }}
+  <div class="review-image-card" style="margin: 24px 0; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--card-border);">
+    <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; display: block;">
+  </div>
+  {{ end }}
+
   <div class="meta-bar">
     {{ with .Date }}<span>{{ .Format "Jan 2, 2006" }}</span>{{ end }}
     {{ with .Params.rating }}
