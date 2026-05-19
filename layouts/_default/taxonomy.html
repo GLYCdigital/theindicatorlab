@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ len .Pages }} reviews</p>
+  </div>
+</section>
+
+<section style="padding: 48px 0 64px;">
+  <div class="container" style="max-width: 800px;">
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      {{ range .Pages.ByDate.Reverse }}
+      <article style="padding: 16px 20px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius);">
+        <h2 style="margin: 0 0 4px; font-size: 1.6rem; font-weight: 600;">
+          <a href="{{ .RelPermalink }}" style="color: var(--text); text-decoration: none;">{{ .Title }}</a>
+        </h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-top: 6px; font-size: 1.25rem; color: var(--text-muted);">
+          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ with .Params.rating }}{{ $r := . }}<span class="stars">{{ range seq 5 }}{{ if le . $r }}★{{ else }}<span class="empty">★</span>{{ end }}{{ end }}</span>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

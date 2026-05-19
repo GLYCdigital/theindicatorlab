@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <h1>Categories</h1>
+    <p>Browse reviews by indicator type and category</p>
+  </div>
+</section>
+
+<section style="padding: 48px 0 64px;">
+  <div class="container" style="max-width: 800px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      {{ range .Pages.ByTitle }}
+      <article style="padding: 20px 24px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); transition: box-shadow 0.15s;">
+        <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+          <h2 style="margin: 0 0 4px; font-size: 1.7rem; font-weight: 600; color: var(--text);">{{ .Title }}</h2>
+          <p style="margin: 0; font-size: 1.3rem; color: var(--text-muted);">{{ len .Pages }} reviews</p>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
