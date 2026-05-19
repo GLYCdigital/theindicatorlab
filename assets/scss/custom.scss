@@ -422,6 +422,47 @@ img { max-width: 100%; height: auto; display: block; }
   padding-left: 24px;
 }
 
+/* ── Tables ── */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 1.45rem;
+}
+
+.content thead th {
+  background: var(--primary);
+  color: var(--text-on-dark);
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.content thead th:first-child {
+  border-radius: var(--radius) 0 0 0;
+}
+
+.content thead th:last-child {
+  border-radius: 0 var(--radius) 0 0;
+}
+
+.content tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--card-border);
+  vertical-align: top;
+}
+
+.content tbody tr:nth-child(even) {
+  background: rgba(14, 94, 94, 0.03);
+}
+
+.content tbody tr:hover {
+  background: rgba(14, 94, 94, 0.06);
+}
+
 /* ── Pros/Cons Box ── */
 .pros-cons {
   display: grid;
