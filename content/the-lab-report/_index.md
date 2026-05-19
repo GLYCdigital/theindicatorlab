@@ -193,11 +193,11 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   </div>
 
   <div class="lr-price">$29 <span>/month</span></div>
-  <p class="lr-price-sub">Founding Member · 7-day free trial · Cancel anytime</p>
+  <p class="lr-price-sub">or <strong>$279/year</strong> (save 20%) · Founding Member · 7-day free trial · Cancel anytime</p>
   
   <a href="#" class="lr-cta">Become a Founding Member →</a>
   
-  <p class="lr-early">Only <strong>50 Founding Member spots</strong> at this price. Lock in $29/month forever.</p>
+  <p class="lr-early">Only <strong>50 Founding Member spots</strong> at this price. Lock in $29/month or $279/year forever.</p>
   <p style="margin-top: 1rem; font-size: 1.25rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
 </div>
 
@@ -249,7 +249,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>Is there an annual plan?</h3>
-  <p>Yes. Save ~20% with annual billing. Founding Member annual: $279/year. Email us after subscribing and we'll switch you to annual — your locked-in price still applies.</p>
+  <p>Yes. Choose monthly or annual at checkout. Founding Member annual is $279/year — that's $23.25/month, saving you 20%. Your locked-in price applies to both. If you subscribe monthly first and want to switch to annual later, email us and we'll flip it instantly.</p>
 </div>
 <div class="lr-faq">
   <h3>Do I need TradingView?</h3>
