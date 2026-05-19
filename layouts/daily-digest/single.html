@@ -1,16 +1,14 @@
-{{ define "body-class" }}
-    article-page
-{{ end }}
-
 {{ define "main" }}
-<article class="main-article">
-    <div class="article-container" style="padding: var(--card-padding);">
-        <header class="article-header">
-            <h1 class="article-title">{{ .Title }}</h1>
-        </header>
-        <section class="article-content">
-            {{ .Content }}
-        </section>
-    </div>
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+  </div>
+</section>
+
+<article class="review-article">
+  <div class="content">
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}

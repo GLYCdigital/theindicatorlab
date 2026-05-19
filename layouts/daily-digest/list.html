@@ -1,16 +1,26 @@
 {{ define "main" }}
-<main class="main list" role="main">
-  <header class="main-header">
-    <h1 class="main-title">{{ .Title }}</h1>
-    <p style="font-size: 2.2rem; font-weight: 600; line-height: 1.5; color: var(--card-text-color-main);">Daily market recap with technical screening signals.</p>
-  </header>
-  <div class="article-list" style="display: flex; flex-direction: column; gap: 8px;">
-    {{ range .Pages }}
-    <article class="article" style="padding: 12px 20px; margin: 0;">
-      <h2 style="margin: 0; font-size: 1.6rem;"><a href="{{ .RelPermalink }}" style="color: var(--card-text-color-main);">{{ .Title }}</a></h2>
-      <p style="margin: 4px 0 0 0; font-size: 1.1rem; color: var(--card-text-color-secondary);">{{ .Description }}</p>
-    </article>
-    {{ end }}
+<section class="page-hero">
+  <div class="container">
+    <h1>Daily Market Recap</h1>
+    <p>with technical screening signals</p>
   </div>
-</main>
+</section>
+
+<section style="padding: 48px 0 64px;">
+  <div class="container" style="max-width: 800px;">
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      {{ range .Pages.ByDate.Reverse }}
+      <article style="padding: 16px 20px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius);">
+        <h2 style="margin: 0 0 4px; font-size: 1.6rem; font-weight: 600;">
+          <a href="{{ .RelPermalink }}" style="color: var(--text); text-decoration: none;">{{ .Title }}</a>
+        </h2>
+        {{ with .Description }}
+        <p style="margin: 0; font-size: 1.35rem; color: var(--text-secondary);">{{ . }}</p>
+        {{ end }}
+        <p style="margin: 6px 0 0; font-size: 1.2rem; color: var(--text-muted);">{{ .Date.Format "Jan 2, 2006" }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
