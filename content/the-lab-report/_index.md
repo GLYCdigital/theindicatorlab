@@ -142,7 +142,7 @@ The Lab Report reduces noise through **diverse signal aggregation**. Individual 
 
 When 17 of 25 indicators agree on direction, that's not a coincidence. That's a signal worth acting on.
 
-**The science:** Multi-indicator consensus reduces false signals by 60-70% compared to single-indicator strategies. Most profitable trading systems use 3+ indicators per decision. The Lab Report gives you 25+.
+**The science:** Multi-indicator consensus reduces false signals by 60-70% compared to single-indicator strategies. Most profitable trading systems use 3+ indicators per decision. The Lab Report gives you 30+ and counting, as we add them to the roster.
 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
