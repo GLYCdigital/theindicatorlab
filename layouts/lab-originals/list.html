@@ -2,7 +2,7 @@
 <section class="page-hero">
   <div class="container">
     <h1>{{ .Title }}</h1>
-    <p>Built by traders, for traders</p>
+    {{ with .Description }}<p>{{ replace . ". Built" ".<br>Built" | safeHTML }}</p>{{ end }}
   </div>
 </section>
 
