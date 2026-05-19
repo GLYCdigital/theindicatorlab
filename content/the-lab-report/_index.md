@@ -38,7 +38,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 </style>
 
 <div class="lr-hero">
-  <h1 style="font-size: 3.6rem; margin: 0 0 1rem; line-height: 1.15;">Multiple indicators. <span>One verdict.</span></h1>
+  <h1 style="font-size: 5rem; margin: 0 0 1rem; line-height: 1.1;">Multiple indicators. <span>One verdict.</span></h1>
   <p>Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
   <a href="#pricing" class="lr-cta">Start Free Trial →</a>
   <p style="margin-top: 1rem; font-size: 0.85rem; color: #666;">$49/month · Cancel anytime · 7-day free trial · 30+ indicators and growing</p>
