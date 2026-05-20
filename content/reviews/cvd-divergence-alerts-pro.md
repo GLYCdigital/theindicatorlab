@@ -124,4 +124,4 @@ CVD Divergence Alerts is the definitive CVD script on TradingView. Not because t
 
 If you're already using free CVD and manually scanning for divergences: this pays for itself in the first trade you catch that you would have missed. If you're not using CVD yet: this is the best entry point — learn volume analysis with an indicator that actually tells you when something happens.
 
-[Get CVD Divergence Alerts on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[Get CVD Divergence Alerts on TradingView →](https://www.tradingview.com/script/xgltMYnc-CVD-Divergence-Alerts-Smart-Money-Phone-Alerts/)

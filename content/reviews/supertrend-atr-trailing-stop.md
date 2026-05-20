@@ -131,4 +131,4 @@ SuperTrend + ATR Trailing Stop Combo solves the biggest weakness of SuperTrend: 
 
 At $15, this pays for itself the first time the trailing stop saves you from giving back a 3R winner. If you already use SuperTrend, this is a straight upgrade. If you don't use SuperTrend yet, this is the version to start with.
 
-[Get SuperTrend + ATR Trailing Stop on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[Get SuperTrend + ATR Trailing Stop on TradingView →](https://www.tradingview.com/script/dH3ujrk1-SuperTrend-ATR-Trailing-Stop-Entry-Exit-in-One-View/)

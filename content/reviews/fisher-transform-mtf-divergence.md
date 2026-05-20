@@ -138,4 +138,4 @@ Fisher Transform MTF Divergence turns the Fisher Transform from a niche academic
 
 If you're already using the standard Fisher Transform, this is a no-brainer upgrade. If you're new to Fisher, this is the definitive version to start with — it includes everything the free scripts don't: MTF context, divergence scanning, and alerts.
 
-[Get Fisher Transform MTF Divergence on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[Get Fisher Transform MTF Divergence on TradingView →](https://www.tradingview.com/script/xKB3ljO8-Fisher-Transform-MTF-Divergence-Multi-Timeframe-Reversal-Detec/)
