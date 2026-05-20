@@ -67,7 +67,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 <div class="lr-hero">
   <h1>Multiple indicators.<br><span>One verdict.</span></h1>
   <p>Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
-  <a href="#pricing" class="lr-cta">Become a Founding Member →</a>
+  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
   <p class="lr-cta-sub">$29/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
 </div>
 
@@ -205,7 +205,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   <div class="lr-price">$29 <span>/month</span></div>
   <p class="lr-price-sub">or <strong>$279/year</strong> (save 20%) · Founding Member · 7-day free trial · Cancel anytime</p>
   
-  <a href="#" class="lr-cta">Become a Founding Member →</a>
+  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
   
   <p class="lr-early">Only <strong>50 Founding Member spots</strong> at this price. Lock in $29/month or $279/year forever.</p>
   <p style="margin-top: 1rem; font-size: 1.25rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
@@ -275,6 +275,6 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
 <div class="lr-close">
   <h2>Stop guessing. Start knowing.</h2>
   <p>30+ indicators. 20 markets. One verdict. Delivered to your phone every 15 minutes.</p>
-  <a href="#pricing" class="lr-cta">Become a Founding Member →</a>
+  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
 </div>
 {{< /rawhtml >}}
