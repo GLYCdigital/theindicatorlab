@@ -70,3 +70,10 @@ This script fixes all three:
 3. Adjust OB/OS levels (±2.0 for crypto, ±1.5 for stocks/forex)
 4. Open Alert dialog (Alt+A) → "Fisher Bullish Crossover" / "Bullish Divergence" → Push notification → Create
 5. When both Fishers agree on direction + you get a divergence alert → high-conviction setup
+
+{{< rawhtml >}}
+<div style="text-align:center;padding:2rem 0 3rem;">
+  <a href="https://www.tradingview.com/script/xKB3ljO8-Fisher-Transform-MTF-Divergence-Multi-Timeframe-Reversal-Detec/" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get Fisher Transform MTF on TradingView — $20</a>
+  <p style="margin-top:1rem;font-size:1.25rem;color:var(--text-muted);">Invite-only access · Lifetime · One-time purchase</p>
+</div>
+{{< /rawhtml >}}
