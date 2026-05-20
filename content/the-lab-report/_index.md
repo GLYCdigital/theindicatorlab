@@ -46,6 +46,8 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff; }
   .lr-close h2 { font-size: 2.8rem; margin: 0 0 1rem; font-weight: 700; color: #fff; }
   .lr-close p { font-size: 1.5rem; color: rgba(255,255,255,0.8); margin: 0 0 2rem; }
+  .lr-promo { display: inline-block; background: var(--accent); color: #fff; border-radius: 6px; padding: 0.6rem 1.5rem; font-weight: 700; font-size: 1.35rem; letter-spacing: 0.3px; margin-top: 1rem; }
+  .lr-promo-inline { display: inline-block; background: rgba(232, 119, 34, 0.15); color: var(--accent); border: 1px solid rgba(232, 119, 34, 0.3); border-radius: 6px; padding: 0.4rem 1rem; font-weight: 600; font-size: 1.35rem; letter-spacing: 0.3px; }
   @media (max-width: 600px) {
     .lr-hero h1 { font-size: 3rem; }
     .lr-price { font-size: 3rem; }
@@ -69,6 +71,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   <p>Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
   <p class="lr-cta-sub">$29/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
+  <p class="lr-promo">Use code <strong>FOUNDING</strong> at checkout — first 50 only</p>
 </div>
 
 <div class="lr-trust">
@@ -207,6 +210,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
   
+  <p style="margin-top: 1.25rem; font-size: 1.4rem; color: rgba(255,255,255,0.9);"><span class="lr-promo-inline">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
   <p class="lr-early">Only <strong>50 Founding Member spots</strong> at this price. Lock in $29/month or $279/year forever.</p>
   <p style="margin-top: 1rem; font-size: 1.25rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
 </div>
@@ -276,5 +280,6 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   <h2>Stop guessing. Start knowing.</h2>
   <p>30+ indicators. 20 markets. One verdict. Delivered to your phone every 15 minutes.</p>
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
+  <p style="margin-top: 1.25rem;"><span class="lr-promo-inline" style="background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.2);">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
 </div>
 {{< /rawhtml >}}
