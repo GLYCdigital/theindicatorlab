@@ -89,6 +89,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 700;
   color: var(--text-on-dark);
   letter-spacing: -0.3px;
+  z-index: 101;
 }
 
 .site-logo:hover { color: var(--text-on-dark); opacity: 0.9; }
@@ -96,6 +97,43 @@ img { max-width: 100%; height: auto; display: block; }
 .site-logo .dot {
   color: var(--accent);
 }
+
+/* Hamburger toggle */
+.menu-toggle-input {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 101;
+  padding: 4px;
+}
+
+.menu-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-on-dark);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.menu-toggle-input:checked ~ .menu-toggle-label .menu-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle-input:checked ~ .menu-toggle-label .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle-input:checked ~ .menu-toggle-label .menu-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.site-nav { }
 
 .nav-links {
   display: flex;
@@ -585,11 +623,100 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ── Responsive ── */
+
+/* Tablet: collapse review grid to 2 cols */
+@media (max-width: 1024px) {
+  .review-grid { grid-template-columns: repeat(2, 1fr); }
+  .nav-links { gap: 18px; }
+  .nav-links a { font-size: 1.35rem; }
+}
+
+/* Mobile: hamburger nav, single-col grids */
 @media (max-width: 768px) {
   .home-hero-inner { grid-template-columns: 1fr; gap: 32px; }
   .home-hero-text h1 { font-size: 2.8rem; }
-  .review-grid { grid-template-columns: 1fr; }
+  .home-hero-text p { font-size: 1.5rem; max-width: 100%; }
+  .review-grid { grid-template-columns: 1fr; gap: 16px; }
   .pros-cons { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .nav-links { display: none; }
+  .page-hero { padding: 36px 0; }
+  .page-hero h1 { font-size: 2.4rem; }
+  .section-header { margin-top: 40px; flex-direction: column; gap: 8px; align-items: flex-start; }
+  .section-header h2 { font-size: 2rem; }
+
+  /* Hamburger menu */
+  .menu-toggle-label { display: flex; }
+  .site-nav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    background: var(--navy-bar);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  .menu-toggle-input:checked ~ .site-nav {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .nav-links a {
+    font-size: 1.8rem;
+    color: var(--text-on-dark-muted);
+  }
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--text-on-dark);
+  }
+
+  /* Tables: horizontal scroll */
+  .content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  /* Single review */
+  .review-article h1 { font-size: 2.4rem; }
+  .review-article .content h2 { font-size: 1.8rem; }
+
+  /* Affiliate CTA */
+  .affiliate-cta { padding: 20px 24px; }
+  .affiliate-cta h3 { font-size: 1.7rem; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .home-hero { padding: 40px 0 48px; }
+  .home-hero-text h1 { font-size: 2.4rem; }
+  .home-hero-text .cta { padding: 10px 22px; font-size: 1.4rem; }
+  .home-hero-card .card-body { padding: 14px 18px; }
+  .home-hero-card h3 { font-size: 1.6rem; }
+  .header-inner { height: 56px; }
+  .site-logo { font-size: 1.7rem; }
+  .review-card .card-body { padding: 14px 16px 18px; }
+  .review-card h3 { font-size: 1.5rem; }
+  .page-hero h1 { font-size: 2rem; }
+  .page-hero p { font-size: 1.35rem; }
+  .review-article h1 { font-size: 2rem; }
+  .review-article { padding: 0 16px; margin-top: 32px; }
+  .section-header { margin-top: 32px; }
+  .section-header h2 { font-size: 1.7rem; }
+  .footer-grid { gap: 20px; }
+  .site-footer { padding: 32px 0 24px; margin-top: 48px; }
+  .affiliate-cta { padding: 16px 20px; }
+  .affiliate-cta h3 { font-size: 1.5rem; }
+  .affiliate-cta .btn { padding: 10px 22px; font-size: 1.35rem; }
 }

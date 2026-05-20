@@ -50,7 +50,17 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
     .lr-hero h1 { font-size: 3rem; }
     .lr-price { font-size: 3rem; }
     .lr-benefits { grid-template-columns: 1fr; }
-    .lr-pricing [style*="grid"] { grid-template-columns: 1fr 1fr !important; }
+    .lr-pricing-ladder { grid-template-columns: 1fr 1fr !important; }
+    .lr-hero p { font-size: 1.5rem; }
+    .lr-cta { padding: 14px 36px; font-size: 1.5rem; }
+    .lr-step { flex-direction: column; align-items: flex-start; }
+    .lr-trust { gap: 1rem; font-size: 1.15rem; }
+    .lr-close h2 { font-size: 2rem; }
+    .lr-close { padding: 3rem 1.5rem; }
+  }
+  @media (max-width: 420px) {
+    .lr-hero h1 { font-size: 2.4rem; }
+    .lr-price { font-size: 2.4rem; }
   }
 </style>
 
@@ -162,7 +172,7 @@ When 17 of 25 indicators agree on direction, that's not a coincidence. That's a 
   <p style="color: rgba(255,255,255,0.7); font-size: 1.5rem; margin: 0 0 1.5rem;">One subscription. Every feature. Price locked forever.</p>
   <p style="color: rgba(255,255,255,0.7); font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
   
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
+  <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
     <div style="background: rgba(255,255,255,0.14); border-radius: var(--radius); padding: 1.5rem 0.75rem; border: 2px solid var(--accent);">
       <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin-bottom: 0.5rem; font-weight: 700;">Founding Member</div>
       <div style="font-size: 3rem; font-weight: 800;">$29<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
