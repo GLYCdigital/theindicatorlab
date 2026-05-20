@@ -75,7 +75,7 @@ Every free CVD on TradingView is a coloured histogram. To find divergences betwe
 
 {{< rawhtml >}}
 <div style="text-align:center;padding:2rem 0 3rem;">
-  <a href="https://www.tradingview.com/script/xgltMYnc-CVD-Divergence-Alerts-Smart-Money-Phone-Alerts/" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get CVD Divergence Alerts on TradingView — $25</a>
+  <a href="https://buy.stripe.com/fZu3cnauadSc1z8eH7aAw00" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get CVD Divergence Alerts — $25</a>
   <p style="margin-top:1rem;font-size:1.25rem;color:var(--text-muted);">Invite-only access · Lifetime · One-time purchase</p>
 </div>
 {{< /rawhtml >}}

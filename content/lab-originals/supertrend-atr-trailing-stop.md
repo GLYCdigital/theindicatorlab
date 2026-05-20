@@ -78,7 +78,7 @@ Independent ATR periods mean you can keep entries responsive while giving stops 
 
 {{< rawhtml >}}
 <div style="text-align:center;padding:2rem 0 3rem;">
-  <a href="https://www.tradingview.com/script/dH3ujrk1-SuperTrend-ATR-Trailing-Stop-Entry-Exit-in-One-View/" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get SuperTrend + ATR on TradingView — $15</a>
+  <a href="https://buy.stripe.com/dRmeV50TA15q0v4fLbaAw02" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get SuperTrend + ATR — $15</a>
   <p style="margin-top:1rem;font-size:1.25rem;color:var(--text-muted);">Invite-only access · Lifetime · One-time purchase</p>
 </div>
 {{< /rawhtml >}}
