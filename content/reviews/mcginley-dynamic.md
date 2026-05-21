@@ -99,7 +99,7 @@ The McGinley Dynamic is a unique trend-following indicator developed by John R. 
 
 - Exponential Moving Average (EMA): More widely used but has more lag and reacts slower to sudden moves
 - Hull Moving Average (HMA): Offers even less lag than McGinley Dynamic but can be noisier in choppy conditions
-- See our full review of [SuperTrend]({{< relref "supertrend" >}}}}): Combines ATR-based volatility bands with trend direction for clearer stop-loss levels
+- See our full review of [SuperTrend]({{< relref "supertrend" >}}): Combines ATR-based volatility bands with trend direction for clearer stop-loss levels
 
 ## Frequently Asked Questions
 

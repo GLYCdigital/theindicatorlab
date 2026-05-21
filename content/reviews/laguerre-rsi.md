@@ -98,8 +98,8 @@ The Laguerre RSI is a momentum indicator that applies a Laguerre polynomial-base
 ## Alternatives
 
 - Standard RSI: more widely used and understood, but noisier
-- See our full review of [Stochastic RSI]({{< relref "stochastic-rsi" >}}}}): combines stochastic and RSI for additional smoothing
-- See our full review of [Fisher Transform]({{< relref "fisher-transform" >}}}}): converts prices to Gaussian distribution for sharp turning points
+- See our full review of [Stochastic RSI]({{< relref "stochastic-rsi" >}}): combines stochastic and RSI for additional smoothing
+- See our full review of [Fisher Transform]({{< relref "fisher-transform" >}}): converts prices to Gaussian distribution for sharp turning points
 
 ## Frequently Asked Questions
 

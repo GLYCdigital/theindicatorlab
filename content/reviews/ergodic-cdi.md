@@ -97,8 +97,8 @@ The Ergodic Candlestick Dynamics Index (ECDI) is a unique momentum indicator tha
 
 ## Alternatives
 
-- See our full review of [MACD]({{< relref "macd" >}}}}): More widely used, but ECDI adapts better to volatility and reduces lag.
-- See our full review of [RSI]({{< relref "relative-strength-index-rsi" >}}}}): Simpler for overbought/oversold, but ECDI offers more nuanced momentum insights.
+- See our full review of [MACD]({{< relref "macd" >}}): More widely used, but ECDI adapts better to volatility and reduces lag.
+- See our full review of [RSI]({{< relref "relative-strength-index-rsi" >}}): Simpler for overbought/oversold, but ECDI offers more nuanced momentum insights.
 - Stochastic Oscillator: Good for range-bound markets, but ECDI excels in trending conditions.
 
 ## Frequently Asked Questions

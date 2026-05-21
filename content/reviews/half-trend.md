@@ -97,8 +97,8 @@ The HalfTrend indicator is a versatile trend-following tool designed to simplify
 
 ## Alternatives
 
-- See our full review of [Supertrend]({{< relref "supertrend" >}}}}): similar trend-following concept but uses ATR-based bands for volatility-based signals
-- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}}}): provides trailing stop levels and reversal dots, but less customizable than HalfTrend
+- See our full review of [Supertrend]({{< relref "supertrend" >}}): similar trend-following concept but uses ATR-based bands for volatility-based signals
+- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}): provides trailing stop levels and reversal dots, but less customizable than HalfTrend
 - Moving Average Crossover (e.g., 50/200 EMA): classic trend indicator with fewer false signals but slower response
 
 ## Frequently Asked Questions

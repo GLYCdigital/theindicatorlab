@@ -97,9 +97,9 @@ Elder's Thermometer is a momentum-based indicator developed by Dr. Alexander Eld
 
 ## Alternatives
 
-- See our full review of [Relative Strength Index (RSI)]({{< relref "relative-strength-index-rsi" >}}}}): Simpler, volume-independent momentum oscillator with overbought/oversold levels
+- See our full review of [Relative Strength Index (RSI)]({{< relref "relative-strength-index-rsi" >}}): Simpler, volume-independent momentum oscillator with overbought/oversold levels
 - On-Balance Volume (OBV): Pure volume-based momentum indicator without price smoothing
-- See our full review of [MACD]({{< relref "macd" >}}}}): Trend-following momentum indicator with signal line crossovers and histogram
+- See our full review of [MACD]({{< relref "macd" >}}): Trend-following momentum indicator with signal line crossovers and histogram
 
 ## Frequently Asked Questions
 

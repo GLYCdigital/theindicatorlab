@@ -97,9 +97,9 @@ SSL Hybrid is a trend-following indicator that merges the classic SSL (Smoothed 
 
 ## Alternatives
 
-- See our full review of [Supertrend]({{< relref "supertrend" >}}}}): More aggressive with faster signals but higher whipsaw risk
+- See our full review of [Supertrend]({{< relref "supertrend" >}}): More aggressive with faster signals but higher whipsaw risk
 - Moving Average (MA) Crossover: Classic trend tool with more lag but widely used
-- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}}}): Excellent for strong trends but less effective in ranging markets
+- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}): Excellent for strong trends but less effective in ranging markets
 
 ## Frequently Asked Questions
 

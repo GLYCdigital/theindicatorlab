@@ -98,7 +98,7 @@ The Zero Lag MACD is an enhanced version of the classic MACD indicator that aims
 ## Alternatives
 
 - Classic MACD: More reliable in ranging markets but slower signal generation
-- See our full review of [RSI]({{< relref "relative-strength-index-rsi" >}}}}): Better for overbought/oversold conditions, not trend direction
+- See our full review of [RSI]({{< relref "relative-strength-index-rsi" >}}): Better for overbought/oversold conditions, not trend direction
 - Moving Average Crossovers: Simpler but less sensitive to momentum shifts
 
 ## Frequently Asked Questions

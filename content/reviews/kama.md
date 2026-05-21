@@ -98,7 +98,7 @@ The Kaufman Adaptive Moving Average (KAMA) is a trend-following indicator that d
 ## Alternatives
 
 - Moving Average Convergence Divergence (MACD): Offers trend confirmation with momentum signals
-- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}}}): Excellent for setting trailing stops in strong trends
+- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}): Excellent for setting trailing stops in strong trends
 - Hull Moving Average (HMA): Reduces lag with a different smoothing method
 
 ## Frequently Asked Questions
