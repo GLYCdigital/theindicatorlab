@@ -1,3 +1,15 @@
 User-agent: *
 Allow: /
 Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
+# Block affiliate redirect pages from indexing
+Disallow: /go/
+
+# Block paginated thin pages
+Disallow: */page/
+
+# Block RSS/XML feeds from search results
+Disallow: *.xml
+
+# Block search pages (thin content)
+Disallow: /search/
