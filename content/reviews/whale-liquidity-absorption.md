@@ -154,7 +154,7 @@ Whale Liquidity / Absorption Profile is the most sophisticated Lab Original. It 
 
 At $35, it's priced for serious traders who already understand order flow. If that's you, this indicator will change how you read volume. If you're new to absorption concepts, start with CVD Divergence Alerts ($25) first and graduate to this.
 
-[Get Whale Liquidity / Absorption Profile on TradingView →](https://www.tradingview.com/script/ksAw7irF-Whale-Liquidity-Absorption-Profile-Institutional-Order-Flow/)
+[Get Whale Liquidity / Absorption Profile — $35 →](/lab-originals/whale-liquidity-absorption/)
 
 {{< rawhtml >}}
 <div style="margin-top:2rem;padding:1.5rem;background:var(--card-bg);border-radius:var(--radius-lg);text-align:center;font-size:1.15rem;color:var(--text-muted);">
