@@ -146,7 +146,7 @@ TTM Squeeze Pro transforms the classic squeeze concept into a professional-grade
 
 If you're already using a free TTM Squeeze, upgrade immediately — the MTF overlay and alerts will pay for this in one caught move. If you've never used a squeeze indicator, start here. It's the complete package.
 
-[Get TTM Squeeze Pro on TradingView →](https://www.tradingview.com/script/TBD-TTM-Squeeze-Pro/)
+[Get TTM Squeeze Pro on TradingView →](https://www.tradingview.com/script/fM2r5hCG-TTM-Squeeze-Pro-Multi-Timeframe-Squeeze-Divergence-Alerts/)
 
 {{< rawhtml >}}
 <div style="margin-top:2rem;padding:1.5rem;background:var(--card-bg);border-radius:var(--radius-lg);text-align:center;font-size:1.15rem;color:var(--text-muted);">
