@@ -258,7 +258,6 @@ When 25 of 44 indicators agree on direction, that's not a coincidence. That's a 
   <p><strong>1. Not enough signals.</strong> If fewer than 3 indicators produce a valid signal (low volume, data gaps), we'd rather not fluff you with our own guesses.</p>
   <p><strong>2. Dead split.</strong> When bulls and bears are too close (e.g., 16 vs 14), there's no real consensus — we don't force one.</p>
   <p><strong>3. Wrong watchlist.</strong> Use /watchlist in the bot to check which markets you're following. Only your 5 selected markets trigger notifications.</p>
-  <p>Still quiet? Message @TheLabReport_bot and we'll check your account.</p>
 </div>
 <div class="lr-faq">
   <h3>How do I cancel?</h3>
