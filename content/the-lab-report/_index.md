@@ -79,7 +79,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 
 <div class="lr-trust">
   <span><strong>{{< review-count >}}+</strong> indicator reviews</span>
-  <span><strong>30+</strong> indicators tracked</span>
+  <span><strong>44</strong> indicators tracked</span>
   <span><strong>20</strong> markets covered</span>
   <span><strong>Every 15 min</strong> updates</span>
 </div>
@@ -122,7 +122,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-step-num">3</div>
   <div>
     <h3>You get the verdict</h3>
-    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 17 of 25 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
+    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 25 of 44 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
   </div>
 </div>
 {{< /rawhtml >}}
@@ -143,7 +143,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   </div>
   <div class="lr-benefit">
     <div class="icon">⚙️</div>
-    <h4>30+ Indicators</h4>
+    <h4>44 Indicators</h4>
     <p>Growing weekly as we publish new reviews and add them to the roster</p>
   </div>
   <div class="lr-benefit">
@@ -168,7 +168,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
 
 The Lab Report reduces noise through **diverse signal aggregation**. Individual indicators have blind spots — MACD lags in range-bound markets, RSI whipsaws on trending days, Bollinger Bands miss breakouts.
 
-When 17 of 25 indicators agree on direction, that's not a coincidence. That's a signal worth acting on.
+When 25 of 44 indicators agree on direction, that's not a coincidence. That's a signal worth acting on.
 
 **The science:** Multi-indicator consensus reduces false signals by 60-70% compared to single-indicator strategies. Most profitable trading systems use 3+ indicators per decision. The Lab Report gives you 30+ and counting, as we add them to the roster.
 
