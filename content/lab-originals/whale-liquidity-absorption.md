@@ -25,6 +25,12 @@ description: "Detect institutional accumulation before price moves.<br>Absorptio
 </div>
 {{< /rawhtml >}}
 
+{{< rawhtml >}}
+<div style="margin: 2rem 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <img src="/screenshots/whale-liquidity-absorption.png" alt="Whale Liquidity chart screenshot" style="width:100%;display:block;">
+</div>
+{{< /rawhtml >}}
+
 ## What It Does
 
 Volume indicators tell you how much traded. They don't tell you *who* is trading or *what* they're doing. When institutions accumulate, price stays flat while volume spikes — that's absorption. Most traders miss it because no free indicator detects it. By the time price moves, the whales are already positioned.

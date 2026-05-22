@@ -25,6 +25,12 @@ description: "Multi-timeframe Fisher Transform + automated divergence scanning.<
 </div>
 {{< /rawhtml >}}
 
+{{< rawhtml >}}
+<div style="margin: 2rem 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <img src="/screenshots/fisher-transform-mtf-divergence.png" alt="Fisher Transform MTF Divergence chart screenshot" style="width:100%;display:block;">
+</div>
+{{< /rawhtml >}}
+
 ## What It Does
 
 The standard Fisher Transform on TradingView is single-timeframe with no divergence detection. You have to watch it. You have to scan for divergences manually. You have to switch timeframes for context.

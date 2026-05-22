@@ -25,6 +25,12 @@ description: "The only CVD indicator on TradingView that watches the chart for y
 </div>
 {{< /rawhtml >}}
 
+{{< rawhtml >}}
+<div style="margin: 2rem 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <img src="/screenshots/cvd-divergence-alerts.png" alt="CVD Divergence Alerts chart screenshot" style="width:100%;display:block;">
+</div>
+{{< /rawhtml >}}
+
 ## What It Does
 
 Every free CVD on TradingView is a coloured histogram. To find divergences between volume and price, you compare swing highs and lows manually — bar by bar, timeframe by timeframe. This script automates that entire process.

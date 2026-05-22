@@ -25,6 +25,12 @@ description: "John Carter's Squeeze on steroids.<br>Multi-timeframe detection, m
 </div>
 {{< /rawhtml >}}
 
+{{< rawhtml >}}
+<div style="margin: 2rem 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <img src="/screenshots/ttm-squeeze-pro.png" alt="TTM Squeeze Pro chart screenshot" style="width:100%;display:block;">
+</div>
+{{< /rawhtml >}}
+
 ## What It Does
 
 The TTM Squeeze tells you when volatility is coiling — Bollinger Bands contract inside Keltner Channels, energy builds, and price explodes when the squeeze "fires." Every free version stops there. Single timeframe, no alerts, no divergence.

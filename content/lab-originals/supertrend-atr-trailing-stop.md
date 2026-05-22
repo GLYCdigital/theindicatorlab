@@ -25,6 +25,12 @@ description: "SuperTrend entries plus independent ATR trailing stop.<br>Entry AN
 </div>
 {{< /rawhtml >}}
 
+{{< rawhtml >}}
+<div style="margin: 2rem 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <img src="/screenshots/supertrend-atr-trailing-stop.png" alt="SuperTrend + ATR Trailing Stop chart screenshot" style="width:100%;display:block;">
+</div>
+{{< /rawhtml >}}
+
 ## What It Does
 
 Standard SuperTrend gives you entries. Then it goes silent. You're left staring at the chart wondering where to place your stop, whether to trail manually, and when to exit.
