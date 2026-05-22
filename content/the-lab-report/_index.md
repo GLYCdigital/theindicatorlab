@@ -260,6 +260,11 @@ When 25 of 44 indicators agree on direction, that's not a coincidence. That's a 
   <p><strong>3. Wrong watchlist.</strong> Use /watchlist in the bot to check which markets you're following. Only your 5 selected markets trigger notifications.</p>
 </div>
 <div class="lr-faq">
+  <h3>I subscribed but still can't access your invite-only indicators yet</h3>
+  <p>Our consensus engine runs round the clock — you'll get alerts as soon as Stripe confirms your payment and you message @TheLabReport_bot.</p>
+  <p>Complimentary invite-only indicators are processed manually during business hours, Singapore Time (GMT+8). If you subscribed in the evening or on a weekend, your TradingView access will be added the next business day.</p>
+</div>
+<div class="lr-faq">
   <h3>How do I cancel?</h3>
   <p>One command: /unsubscribe in the Telegram bot. Your subscription stops immediately. No questions, no retention tactics.</p>
 </div>
