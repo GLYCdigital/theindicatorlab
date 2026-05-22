@@ -251,6 +251,15 @@ When 25 of 44 indicators agree on direction, that's not a coincidence. That's a 
   <p>Yes. We monitor 20 major markets. You pick 5 that you want alerts for. Switch them anytime via the bot.</p>
 </div>
 <div class="lr-faq">
+  <h3>Why am I not receiving a consensus notification for my chosen market?</h3>
+  <p>There are a few reasons this can happen:</p>
+  <p><strong>1. Consensus hasn't changed.</strong> We only alert you when the consensus shifts — not every 15 minutes. If the indicator vote stays the same (e.g., 18 of 30 bullish for the last hour), we stay quiet. No change = no noise.</p>
+  <p><strong>2. Not enough signals.</strong> If fewer than 3 indicators produce a valid signal for your market (e.g., during low-volume periods or data gaps), the bot skips the alert rather than guessing.</p>
+  <p><strong>3. Market is neutral.</strong> When bullish and bearish indicators are roughly split (e.g., 14 vs 16), there's no strong consensus. The bot only fires when the vote is clearly one-sided.</p>
+  <p><strong>4. Market not in your watchlist.</strong> Use /watchlist in the bot to confirm which markets you're subscribed to. Only your selected markets trigger notifications.</p>
+  <p>Still not getting alerts? Send a Telegram message to @TheLabReport_bot and we'll check your account.</p>
+</div>
+<div class="lr-faq">
   <h3>How do I cancel?</h3>
   <p>One command: /unsubscribe in the Telegram bot. Your subscription stops immediately. No questions, no retention tactics.</p>
 </div>
