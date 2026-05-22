@@ -251,13 +251,14 @@ When 25 of 44 indicators agree on direction, that's not a coincidence. That's a 
   <p>Yes. We monitor 20 major markets. You pick 5 that you want alerts for. Switch them anytime via the bot.</p>
 </div>
 <div class="lr-faq">
-  <h3>Why am I not receiving a consensus notification for my chosen market?</h3>
-  <p>There are a few reasons this can happen:</p>
-  <p><strong>1. Consensus hasn't changed.</strong> We only alert you when the consensus shifts — not every 15 minutes. If the indicator vote stays the same (e.g., 18 of 30 bullish for the last hour), we stay quiet. No change = no noise.</p>
-  <p><strong>2. Not enough signals.</strong> If fewer than 3 indicators produce a valid signal for your market (e.g., during low-volume periods or data gaps), the bot skips the alert rather than guessing.</p>
-  <p><strong>3. Market is neutral.</strong> When bullish and bearish indicators are roughly split (e.g., 14 vs 16), there's no strong consensus. The bot only fires when the vote is clearly one-sided.</p>
-  <p><strong>4. Market not in your watchlist.</strong> Use /watchlist in the bot to confirm which markets you're subscribed to. Only your selected markets trigger notifications.</p>
-  <p>Still not getting alerts? Send a Telegram message to @TheLabReport_bot and we'll check your account.</p>
+  <h3>Why am I not receiving a consensus notification every 15 min for my chosen market?</h3>
+  <p>Because we only message you when the consensus <strong>changes</strong> — not on a timer.</p>
+  <p>If the indicator vote stays the same (e.g., 19 of 30 bullish for the last three hours), we stay quiet. Sending "still bullish" every 15 minutes is noise. We only ping you when the vote flips — bullish to bearish, neutral to strong buy, and so on.</p>
+  <p>Other reasons you might not get an alert:</p>
+  <p><strong>1. Not enough signals.</strong> If fewer than 3 indicators produce a valid signal (low volume, data gaps), the bot skips rather than guessing.</p>
+  <p><strong>2. Dead split.</strong> When bulls and bears are too close (e.g., 16 vs 14), there's no real consensus — we don't force one.</p>
+  <p><strong>3. Wrong watchlist.</strong> Use /watchlist in the bot to check which markets you're following. Only your 5 selected markets trigger notifications.</p>
+  <p>Still quiet? Message @TheLabReport_bot and we'll check your account.</p>
 </div>
 <div class="lr-faq">
   <h3>How do I cancel?</h3>
