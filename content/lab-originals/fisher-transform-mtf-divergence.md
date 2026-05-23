@@ -5,6 +5,8 @@ draft: false
 type: lab-originals
 price: "$20"
 status: "Available on TradingView"
+categories: ["Momentum"]
+tags: ["fisher", "transform", "divergence", "momentum", "mtf", "reversal"]
 image: "/screenshots/fisher-transform-mtf-divergence.png"
 description: "Multi-timeframe Fisher Transform + automated divergence scanning.<br>The Fisher that actually finds reversals for you."
 ---

@@ -5,6 +5,8 @@ draft: false
 type: lab-originals
 price: "$35"
 status: "Available on TradingView"
+categories: ["Volume"]
+tags: ["whale", "liquidity", "absorption", "volume", "institutional", "order-flow"]
 image: "/screenshots/whale-liquidity-absorption.png"
 description: "Detect institutional accumulation before price moves.<br>Absorption signals, liquidity zones, Whale Activity Score, phone alerts."
 ---

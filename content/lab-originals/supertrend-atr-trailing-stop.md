@@ -5,6 +5,8 @@ draft: false
 type: lab-originals
 price: "$15"
 status: "Available on TradingView"
+categories: ["Trend"]
+tags: ["supertrend", "atr", "trailing-stop", "trend", "entry", "exit"]
 image: "/screenshots/supertrend-atr-trailing-stop.png"
 description: "SuperTrend entries plus independent ATR trailing stop.<br>Entry AND exit in one view. No more guessing stop placement."
 ---

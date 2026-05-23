@@ -5,6 +5,8 @@ draft: false
 type: lab-originals
 price: "$25"
 status: "Available on TradingView"
+categories: ["Volume"]
+tags: ["cvd", "divergence", "volume", "alerts", "smart-money"]
 image: "/screenshots/cvd-divergence-alerts.png"
 description: "The only CVD indicator on TradingView that watches the chart for you.<br>4 divergence types, phone alerts, zero repaint."
 ---

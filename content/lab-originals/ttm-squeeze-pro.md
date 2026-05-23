@@ -5,6 +5,8 @@ draft: false
 type: lab-originals
 price: "$25"
 status: "Available on TradingView"
+categories: ["Volatility"]
+tags: ["ttm", "squeeze", "volatility", "momentum", "mtf", "bollinger", "keltner"]
 image: "/screenshots/ttm-squeeze-pro.png"
 description: "John Carter's Squeeze on steroids.<br>Multi-timeframe detection, momentum oscillator, 4 divergence types, 7 phone alerts."
 ---
