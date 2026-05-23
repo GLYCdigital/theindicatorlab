@@ -73,3 +73,8 @@ While useful as a confirmation tool, EMV can produce false signals in choppy or 
 The Ease of Movement indicator is a solid volume-based tool for confirming trends and spotting divergences, but it works best in clear trending markets. It is not a standalone system and should be paired with other analysis to avoid false signals in choppy conditions.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

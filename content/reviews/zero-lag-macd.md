@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Zero Lag MACD is a solid upgrade for traders who find standard MACD too slow, especially in trending markets. However, it requires careful tuning and complementary analysis to avoid whipsaws in choppy conditions. It's a worthwhile addition to a momentum trader's toolkit, but not a magic bullet.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

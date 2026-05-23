@@ -69,3 +69,8 @@ MA Envelope is a volatility-based indicator that creates a channel around a movi
 MA Envelope is a reliable tool for traders who favor simplicity and trend-following strategies, but its static bandwidth can be a drawback in volatile markets. It pairs best with other indicators to filter signals and avoid false breakouts. Overall, it's a solid addition to any trader's toolkit, especially for those new to volatility-based analysis.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volatility creates opportunity — if you can read it.** [Open NVDA on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator. Spotting squeeze setups and expansion signals is easier with the full charting suite.

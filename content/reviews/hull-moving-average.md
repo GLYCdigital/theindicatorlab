@@ -69,3 +69,8 @@ Alan Hull created the HMA to eliminate lag in traditional moving averages. He us
 HMA is my pick for best all-round moving average. Fast enough for scalping, smooth enough for swing trading. Learn it, use it, profit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

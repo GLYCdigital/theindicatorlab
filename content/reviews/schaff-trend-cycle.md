@@ -73,3 +73,8 @@ The indicator outputs a single line that oscillates, with crossovers of the sign
 The Schaff Trend Cycle is a solid momentum indicator that improves on classic tools by reducing lag and noise. While not perfect in choppy conditions, it offers a reliable edge when combined with basic technical analysis. A worthwhile addition for traders seeking quicker trend confirmation.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

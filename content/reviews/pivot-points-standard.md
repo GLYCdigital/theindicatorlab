@@ -72,3 +72,8 @@ While simple and time-tested, the indicator can be less effective in strong tren
 Standard Pivot Points are a solid, time-honored baseline for support and resistance, especially for intraday traders. However, they are not a standalone solution and work best when combined with volume, momentum, or price action confirmation. A worthwhile addition to any trader's toolbox, but not a magic bullet.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

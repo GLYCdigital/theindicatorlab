@@ -73,3 +73,8 @@ The VFI is less common than the On-Balance Volume (OBV) or Money Flow Index (MFI
 The Volume Flow Indicator is a solid choice for traders who want a refined volume metric that cuts through market noise and highlights genuine buying and selling pressure. Its divergence signals are particularly powerful, but it is not a standalone tool and works best when combined with other analysis methods. It earns a 4 out of 5 for its effectiveness in trending markets and unique approach to volume flow.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

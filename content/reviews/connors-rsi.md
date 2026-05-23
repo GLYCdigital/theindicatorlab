@@ -73,3 +73,8 @@ CRSI values typically range from 0 to 100, with readings below 10 considered dee
 Connors RSI is a powerful tool for traders who understand mean-reversion, but it is not a magic bullet. It shines in choppy markets but falters in strong trends. New traders should paper trade extensively before using it live.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

@@ -73,3 +73,8 @@ While it offers improved signal clarity in many markets, the indicator still ben
 The Volume Weighted MACD is a solid enhancement for traders who already value volume in their analysis. It offers meaningful improvements over the standard MACD in filtering noise, but it is not a standalone solution and works best when paired with other confirming tools.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

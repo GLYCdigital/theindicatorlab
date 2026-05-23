@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The Ehlers Fisher Transform is a powerful momentum tool for traders who understand its strengths and weaknesses. It excels in trending markets but requires additional filters to avoid false signals in choppy conditions. For most traders, pairing it with a trend indicator and a proper risk management plan makes it a valuable addition to any toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

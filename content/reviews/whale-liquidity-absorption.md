@@ -161,3 +161,8 @@ At $35, it's priced for serious traders who already understand order flow. If th
   <strong>Want all Lab Originals?</strong> <a href="/the-lab-report/" style="color:var(--primary);">The Lab Report</a> gives you every script + consensus signals for one subscription.
 </div>
 {{< /rawhtml >}}
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

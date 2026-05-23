@@ -69,3 +69,8 @@ Vortex measures positive (+VI) and negative (-VI) directional movement to determ
 Vortex is a solid, no-nonsense trend indicator. Not fancy, not new — but reliable when markets have direction. If you're into trend trading, Vortex deserves a look.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

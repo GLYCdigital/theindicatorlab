@@ -73,3 +73,8 @@ While not a standalone trading system, Volume Ratio is a useful tool for traders
 Volume Ratio is a reliable, no-frills volume indicator that does exactly what it promises: normalizes volume for easy comparison. It shines as a confirmation tool but shouldn't be used in isolation. For traders who value simplicity and clarity, it's a worthwhile addition to the toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The McGinley Dynamic is a solid alternative to traditional moving averages for traders seeking to reduce lag without adding complexity. It excels in trending markets but still needs confirmation in sideways conditions. Overall, it's a worthwhile addition to any trend trader's toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

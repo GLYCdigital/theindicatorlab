@@ -69,3 +69,8 @@ Developed by Larry Williams, the Williams %R is a momentum indicator that oscill
 Williams %R is a solid momentum indicator for traders who understand its limitations in trending markets. It excels when combined with other tools, but relying solely on it can lead to losses. Best for range-bound conditions and as a confirmation signal.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

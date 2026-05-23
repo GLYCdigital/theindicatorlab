@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Breakout Scanner is a solid choice for traders who rely on trend breakouts and want to save time on analysis. It excels in trending markets but requires careful setting adjustments to avoid false signals in range-bound conditions. Overall, it's worth the investment for active traders who can pair it with volume confirmation.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

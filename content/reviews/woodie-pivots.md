@@ -72,3 +72,8 @@ While Woodie Pivots are effective for short-term trading, they can generate fals
 Woodie Pivots are a solid choice for intraday traders who want more dynamic support and resistance levels than standard pivots. However, they should not be used in isolation and perform best when combined with trend confirmation or volume filters to reduce false signals.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

@@ -73,3 +73,8 @@ While the BOP is not a standalone trading system, it excels at providing early w
 The Balance of Power indicator is a solid volume-based tool that adds depth to price analysis, especially when used for divergence spotting and trend confirmation. While not perfect in all market conditions, its simplicity and effectiveness make it a worthwhile addition to any trader's toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

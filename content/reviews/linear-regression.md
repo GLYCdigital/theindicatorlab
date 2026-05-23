@@ -73,3 +73,8 @@ Linear Regression differs from simple moving averages by fitting a line to all d
 Linear Regression is a solid trend indicator that excels in clear trending conditions but can be misleading in range-bound markets. It is a valuable addition to a trader's toolkit when paired with other confirmation tools, but not a standalone solution.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

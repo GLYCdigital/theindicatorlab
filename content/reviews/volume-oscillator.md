@@ -126,3 +126,8 @@ Pair it with a momentum oscillator (RSI, StochRSI) and a trend filter (SuperTren
   <strong>Want volume consensus in real time?</strong> <a href="/the-lab-report/" style="color:var(--primary);">The Lab Report</a> tracks 44 indicators including volume oscillators across 20 markets — alerts every 15 min when consensus changes.
 </div>
 {{< /rawhtml >}}
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

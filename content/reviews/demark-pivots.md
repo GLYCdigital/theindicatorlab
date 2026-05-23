@@ -72,3 +72,8 @@ Traders often combine DeMark Pivots with other technical tools like moving avera
 DeMark Pivots are a solid choice for traders seeking a more nuanced support and resistance indicator. They excel in identifying exhaustion points but require confirmation in strong trends. Overall, they are a valuable supplementary tool rather than a standalone system.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

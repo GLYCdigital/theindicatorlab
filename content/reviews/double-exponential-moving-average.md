@@ -73,3 +73,8 @@ While DEMA improves responsiveness, it does not eliminate false signals entirely
 DEMA is a solid choice for traders who want a faster-moving average without sacrificing too much smoothness. It excels in trending conditions but should be paired with other indicators to avoid false signals in choppy markets. Overall, it is a reliable trend tool for active traders.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

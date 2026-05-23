@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Acceleration/Deceleration is a solid momentum indicator for traders who understand its strengths and weaknesses. It shines as a confirmation tool in trending conditions but struggles in choppy price action. Combine it with the Alligator or Awesome Oscillator for best results, and always adapt periods to your timeframe.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

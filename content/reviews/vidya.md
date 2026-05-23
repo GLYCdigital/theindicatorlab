@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 VIDYA is a solid choice for trend traders who want an adaptive moving average that reduces lag without excessive noise. It's not a standalone holy grail, but when optimized and combined with other tools, it provides reliable trend signals. Best for traders who understand that no indicator works perfectly in all conditions.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

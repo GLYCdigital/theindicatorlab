@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 SSL Hybrid is a solid trend-following indicator that strikes a good balance between responsiveness and smoothness. It's not perfect in choppy conditions, but for trend traders who use proper confirmation, it's a reliable addition to any toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

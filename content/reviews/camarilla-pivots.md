@@ -72,3 +72,8 @@ Camarilla Pivots are particularly effective in liquid markets like forex, indice
 Camarilla Pivots are a reliable, no-nonsense tool for traders who want objective support and resistance levels without subjective drawing. They excel in intraday trading but should not be used in isolation, as market context and risk management are still critical for success.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

@@ -69,3 +69,8 @@ The Positive Volume Index (PVI) is a volume-based indicator that only updates on
 The Positive Volume Index is a niche tool that adds a unique behavioral layer to volume analysis, but it should not be used in isolation due to its reliance on a specific market psychology. When combined with other indicators, it can offer valuable contrarian signals, but traders should be wary of whipsaws in non-trending conditions.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

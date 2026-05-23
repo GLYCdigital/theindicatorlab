@@ -71,3 +71,8 @@ VIDYA effectively reduces lag common in standard moving averages while providing
 VIDYA is a solid choice for traders who want a dynamic moving average that adapts to volatility without excessive complexity. While it requires some tweaking and works best in trending markets, its ability to reduce lag makes it a valuable addition to a trend-following toolkit. I recommend it as a complement to other indicators, not a sole decision-maker.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

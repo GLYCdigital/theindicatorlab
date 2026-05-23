@@ -69,3 +69,8 @@ Created by Alexander Elder, the Force Index is an oscillator that uses volume to
 The Force Index is a solid volume-weighted momentum indicator that excels at confirming trends and identifying reversals through divergence. However, it performs best when paired with other tools like trendlines or moving averages to filter out noise. Not a standalone system, but a valuable addition to a disciplined trader's toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

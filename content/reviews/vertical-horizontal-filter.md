@@ -71,3 +71,8 @@ This indicator does not predict direction but instead serves as a filter to dete
 The VHF is a solid, underutilized tool for identifying market regimes, but it works best as a supporting indicator rather than a standalone system. It excels at keeping you out of trouble during sideways markets, though you'll need additional inputs for trade direction and timing.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

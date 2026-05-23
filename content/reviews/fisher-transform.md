@@ -69,3 +69,8 @@ The Fisher Transform indicator was developed by John F. Ehlers to convert price 
 The Fisher Transform is a powerful tool for traders who can tolerate some false signals in exchange for early reversal detection. It is best used as a supplementary indicator rather than a standalone system, especially when combined with trend confirmation or price action analysis.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

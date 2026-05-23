@@ -133,3 +133,8 @@ Pair it with RSI for divergence confirmation and volume for swing validation. Th
   <strong>Want more indicator reviews?</strong> Browse <a href="/reviews/" style="color:var(--primary);">90+ in-depth reviews</a> or see <a href="/lab-originals/" style="color:var(--primary);">our custom-built indicators</a>.
 </div>
 {{< /rawhtml >}}
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

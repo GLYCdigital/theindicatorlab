@@ -69,3 +69,8 @@ The Average True Range (ATR) is a technical analysis indicator developed by J. W
 ATR is a must-have for risk management but not a standalone trading signal. Its real strength lies in helping traders adapt to changing market conditions, though it should always be paired with trend or momentum indicators for entry and exit decisions.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volatility creates opportunity — if you can read it.** [Open NVDA on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator. Spotting squeeze setups and expansion signals is easier with the full charting suite.

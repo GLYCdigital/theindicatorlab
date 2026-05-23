@@ -69,3 +69,8 @@ Developed by Stephen Klinger, this indicator uses volume force (a measure of vol
 The Klinger Oscillator is a robust volume-based tool that excels in trending environments but struggles in sideways markets. Its divergence signals are valuable, though the lag may frustrate short-term traders. Best used as part of a broader strategy with price action confirmation.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

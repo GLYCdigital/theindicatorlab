@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The Gator Oscillator is a solid momentum indicator for traders who understand market cycles and want clear visual cues for trend strength. It shines in trending environments but requires caution in sideways markets. Best used as a confirmation tool alongside other indicators.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

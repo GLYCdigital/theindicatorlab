@@ -69,3 +69,8 @@ Developed by Bill Williams, the Market Facilitation Index is calculated by divid
 While the Market Facilitation Index offers a creative approach to volume analysis, its unreliable signals and subjectivity limit its practical use for most traders. It may add value as a secondary tool within a broader system, but as a standalone indicator it often frustrates with ambiguous readings.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

@@ -73,3 +73,8 @@ While it lags during sideways markets, the Price Channel remains a staple for tr
 Price Channel is a solid, straightforward trend indicator that excels in clear trends but struggles in sideways markets. It is best used as part of a broader strategy with confirmation tools to filter false signals.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

@@ -68,3 +68,8 @@ Murrey Math Lines (MML) is a proprietary trading system developed by T.H. Murrey
 Verdict for Murrey Math Lines.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

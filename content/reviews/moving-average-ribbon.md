@@ -71,3 +71,8 @@ It is particularly effective in trending markets but can generate false signals 
 The Moving Average Ribbon is a solid, versatile trend indicator that excels at showing trend strength and direction. However, it is not a magic bullet and works best when combined with other tools to filter out false signals. For traders who respect trends and use proper risk management, it is a valuable addition to their arsenal.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

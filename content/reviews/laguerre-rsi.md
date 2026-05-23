@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The Laguerre RSI is a solid upgrade to the classic RSI for traders tired of noise and false signals. It shines in ranging markets but requires careful gamma tuning to avoid lag in trends. Not a miracle tool, but a worthwhile addition to a momentum trader's toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

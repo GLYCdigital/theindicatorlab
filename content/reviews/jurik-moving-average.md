@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The Jurik Moving Average is a powerful tool for traders who prioritize low lag and smoothness in their trend analysis. It excels in trending markets and can improve entry timing, though it may require some adjustment in choppy conditions. Overall, it's a worthwhile addition to any serious trader's toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

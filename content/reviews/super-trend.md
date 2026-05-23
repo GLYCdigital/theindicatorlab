@@ -69,3 +69,8 @@ SuperTrend is a popular volatility-based indicator that plots a line above or be
 SuperTrend is a solid choice for traders who favor clear trend signals and trailing stops, but it requires careful setting adjustments to avoid false signals in non-trending conditions. It shines as part of a broader strategy rather than a standalone system.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

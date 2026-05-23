@@ -69,3 +69,8 @@ Developed by Marc Chaikin, this indicator compares the difference between high a
 The Chaikin Volatility indicator is a solid tool for gauging market activity, but it should not be used in isolation. It shines when combined with price action and trend confirmation, making it a useful addition to any trader's toolkit for timing entries and exits.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volatility creates opportunity — if you can read it.** [Open NVDA on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator. Spotting squeeze setups and expansion signals is easier with the full charting suite.

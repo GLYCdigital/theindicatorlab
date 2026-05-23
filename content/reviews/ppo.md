@@ -69,3 +69,8 @@ The Percentage Price Oscillator (PPO) calculates the percentage difference betwe
 The PPO is a solid momentum tool that improves upon the MACD by normalizing values, making it easier to compare across assets. It shines in trending conditions but requires careful use in ranging markets to avoid false signals. Overall, it is a worthwhile addition for traders who value clear divergence and momentum confirmation.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

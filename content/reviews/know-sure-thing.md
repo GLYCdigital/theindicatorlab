@@ -69,3 +69,8 @@ Developed by Martin Pring, the KST combines four different rate-of-change (ROC) 
 The KST is a robust indicator for traders who prioritize trend clarity over speed, but its complexity and lag make it less suitable for scalping or highly volatile assets. When paired with price action and volume analysis, it becomes a powerful tool for identifying sustainable moves.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

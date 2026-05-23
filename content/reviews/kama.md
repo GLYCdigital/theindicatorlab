@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 KAMA is a solid choice for traders who want a moving average that adapts to volatility without constant manual adjustments. It excels in trending markets but may struggle in extreme chop. For most traders, it's worth adding to your toolkit as a confirmation or trailing stop tool, but not as a standalone system.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

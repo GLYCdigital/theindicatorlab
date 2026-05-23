@@ -69,3 +69,8 @@ Waddah Attar is a three-in-one indicator: it shows trend direction (EMA), moment
 Waddah Attar is a fun, effective indicator for catch breakouts. Not every signal hits — but when it does, it's a beauty. For breakout hunters, this is a must-try.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

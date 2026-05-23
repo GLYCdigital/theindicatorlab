@@ -73,3 +73,8 @@ This indicator is often used in conjunction with other tools like RSI or MACD fo
 VWMA is a solid upgrade over standard moving averages for traders who value volume confirmation. It excels in trending markets with clear volume patterns but struggles in low-volume or choppy conditions. A reliable tool for trend traders, but not a standalone holy grail.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

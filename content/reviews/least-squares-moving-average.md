@@ -69,3 +69,8 @@ The Least Squares Moving Average (LSMA) is a linear regression-based indicator t
 LSMA is a solid choice for traders who want a faster, less laggy moving average without the complexity of adaptive indicators. However, it is not a silver bullet and works best when combined with other analysis tools, particularly in trending markets.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

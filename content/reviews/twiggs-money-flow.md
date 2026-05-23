@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Verdict for Twiggs Money Flow.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.

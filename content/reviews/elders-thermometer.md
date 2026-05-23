@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Elder's Thermometer is a solid momentum indicator for traders who value volume confirmation, though it's not a magic bullet. It excels in trending markets with consistent volume but struggles in choppy conditions. For best results, pair it with a trend filter and avoid using it as a standalone system.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

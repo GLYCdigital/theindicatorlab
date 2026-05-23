@@ -73,3 +73,8 @@ Overall, the Zero Lag EMA is a solid enhancement over standard EMAs for traders 
 The Zero Lag EMA is a worthwhile upgrade for traders who find standard EMAs too slow, especially in strong trends. However, it is not a magic bullet and should be part of a broader strategy to filter noise. Its effectiveness largely depends on market conditions and proper confirmation.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

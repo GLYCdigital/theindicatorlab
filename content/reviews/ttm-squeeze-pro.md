@@ -153,3 +153,8 @@ If you're already using a free TTM Squeeze, upgrade immediately — the MTF over
   <strong>Want all Lab Originals?</strong> <a href="/the-lab-report/" style="color:var(--primary);">The Lab Report</a> gives you every script + consensus signals for one subscription.
 </div>
 {{< /rawhtml >}}
+
+
+---
+
+**Volatility creates opportunity — if you can read it.** [Open NVDA on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator. Spotting squeeze setups and expansion signals is easier with the full charting suite.

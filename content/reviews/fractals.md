@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Fractals (Bill Williams) is a solid, time-tested indicator for trend identification, especially when paired with other tools. However, its lag and false signals limit its standalone use. Best for traders who want clear structural levels and are willing to wait for confirmations.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

@@ -69,3 +69,8 @@ The Chande Momentum Oscillator (CMO) was developed by Tushar Chande to measure t
 The Chande Momentum Oscillator is a solid choice for traders who want a cleaner momentum reading without the noise of raw indicators. It excels in trending conditions but requires confirmation in ranging markets. Overall, a reliable tool for those comfortable with its smoothing lag.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.

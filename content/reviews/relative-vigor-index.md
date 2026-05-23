@@ -73,3 +73,8 @@ Traders find the RVI useful for spotting trend strength and potential exhaustion
 The Relative Vigor Index is a solid momentum tool for traders who prefer smoother signals and trend confirmation, but it is not a standalone system. Its lagging nature and poor performance in choppy markets mean it should be paired with trend filters or other indicators for best results.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
