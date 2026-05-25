@@ -19,14 +19,6 @@
       {{ end }}
     </div>
 
-    <!-- Equity Curve Placeholder -->
-    {{ if .Params.equity_curve_url }}
-    <figure>
-      <img src="{{ .Params.equity_curve_url }}" alt="Equity curve for {{ .Title }}" loading="lazy">
-      <figcaption>{{ .Title }} — Equity Curve ({{ .Params.period }})</figcaption>
-    </figure>
-    {{ end }}
-
     {{ .Content }}
 
     <!-- Yearly Breakdown -->
