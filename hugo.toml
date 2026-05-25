@@ -106,12 +106,6 @@ defaultContentLanguage = "en"
     url = "/the-lab-report/"
     weight = 8
 
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 50
-
 # Analytics (Umami)
 [params.analytics]
   umami = "fc79be2c-0e11-4fb3-98fc-00ffba8c0390"
