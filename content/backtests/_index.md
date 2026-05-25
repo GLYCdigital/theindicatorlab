@@ -11,43 +11,43 @@ description: "Real backtest results for popular TradingView indicators. 5+ years
 <div class="lr-benefits">
       <div class="lr-benefit">
         <div class="icon">📉</div>
-        <h4><a href="/backtests/bollinger-band-squeeze-tsla/" style="text-decoration:none;color:var(--text)">BollingerBands</a></h4>
+        <h4><a href="/backtests/bollinger-band-squeeze/" style="text-decoration:none;color:var(--text)">BollingerBands</a></h4>
         <p>6 assets tested · Best: TSLA (+131.5%, Sharpe 0.53)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">📐</div>
-        <h4><a href="/backtests/donchian-channel-breakout-aapl/" style="text-decoration:none;color:var(--text)">Donchian</a></h4>
+        <h4><a href="/backtests/donchian-channel-breakout/" style="text-decoration:none;color:var(--text)">Donchian</a></h4>
         <p>7 assets tested · Best: AAPL (+0.0%, Sharpe 0.00)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">📈</div>
-        <h4><a href="/backtests/ema-ribbon-qqq/" style="text-decoration:none;color:var(--text)">EMA</a></h4>
+        <h4><a href="/backtests/ema-ribbon/" style="text-decoration:none;color:var(--text)">EMA</a></h4>
         <p>5 assets tested · Best: QQQ (+81.5%, Sharpe 0.67)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">☁️</div>
-        <h4><a href="/backtests/ichimoku-cloud-qqq/" style="text-decoration:none;color:var(--text)">Ichimoku</a></h4>
+        <h4><a href="/backtests/ichimoku-cloud/" style="text-decoration:none;color:var(--text)">Ichimoku</a></h4>
         <p>5 assets tested · Best: QQQ (+64.6%, Sharpe 0.54)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">📊</div>
-        <h4><a href="/backtests/macd-crossover-tsla/" style="text-decoration:none;color:var(--text)">MACD</a></h4>
+        <h4><a href="/backtests/macd-crossover/" style="text-decoration:none;color:var(--text)">MACD</a></h4>
         <p>8 assets tested · Best: TSLA (+334.6%, Sharpe 0.66)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">📈</div>
-        <h4><a href="/backtests/rsi-oversold-overbought-aapl/" style="text-decoration:none;color:var(--text)">RSI</a></h4>
+        <h4><a href="/backtests/rsi-oversold-overbought/" style="text-decoration:none;color:var(--text)">RSI</a></h4>
         <p>7 assets tested · Best: AAPL (+75.5%, Sharpe 0.52)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">📍</div>
-        <h4><a href="/backtests/parabolic-sar-aapl/" style="text-decoration:none;color:var(--text)">SAR</a></h4>
+        <h4><a href="/backtests/parabolic-sar/" style="text-decoration:none;color:var(--text)">SAR</a></h4>
         <p>6 assets tested · Best: AAPL (+43.1%, Sharpe 0.31)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">📊</div>
-        <h4><a href="/backtests/golden-cross-qqq/" style="text-decoration:none;color:var(--text)">SMA</a></h4>
+        <h4><a href="/backtests/golden-cross/" style="text-decoration:none;color:var(--text)">SMA</a></h4>
         <p>6 assets tested · Best: QQQ (+110.3%, Sharpe 0.80)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">🎯</div>
-        <h4><a href="/backtests/stochastic-crossover-btc-usd/" style="text-decoration:none;color:var(--text)">Stochastic</a></h4>
+        <h4><a href="/backtests/stochastic-crossover/" style="text-decoration:none;color:var(--text)">Stochastic</a></h4>
         <p>5 assets tested · Best: BTC (+22.4%, Sharpe 0.22)</p>
       </div>      <div class="lr-benefit">
         <div class="icon">🔊</div>
-        <h4><a href="/backtests/volume-spike-breakout-eth-usd/" style="text-decoration:none;color:var(--text)">Volume</a></h4>
+        <h4><a href="/backtests/volume-spike-breakout/" style="text-decoration:none;color:var(--text)">Volume</a></h4>
         <p>6 assets tested · Best: ETH (+50.3%, Sharpe 0.56)</p>
       </div>
 </div>
@@ -75,5 +75,5 @@ description: "Real backtest results for popular TradingView indicators. 5+ years
 
 <div class="lr-faq">
   <h3>What if an indicator shows 0 trades?</h3>
-  <p>Some indicators rarely fire on certain assets — they're designed for specific market conditions. A Donchian Channel might sit idle for months, then trigger during a breakout. Zero trades doesn't mean broken — it means selective.</p>
+  <p>Some indicators rarely fire on certain assets — they&rsquo;re designed for specific market conditions. A Donchian Channel might sit idle for months, then trigger during a breakout. Zero trades doesn&rsquo;t mean broken — it means selective.</p>
 </div>
