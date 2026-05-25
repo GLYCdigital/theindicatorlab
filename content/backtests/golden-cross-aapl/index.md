@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/golden-cross-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "Money Flow Index \u2014 Review",
+      "title": "money flow index \u2014 review",
       "url": "/reviews/money-flow-index/"
     },
     {
-      "title": "McGinley Dynamic Review: Settings, Strategy &amp; How to Use It",
+      "title": "mcginley dynamic review: settings, strategy &amp; how to use it",
       "url": "/reviews/mcginley-dynamic/"
     },
     {
-      "title": "Arnaud Legoux Moving Average \u2014 Review",
+      "title": "arnaud legoux moving average \u2014 review",
       "url": "/reviews/arnaud-legoux/"
     }
   ]

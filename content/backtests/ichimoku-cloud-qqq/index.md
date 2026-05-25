@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/ichimoku-cloud-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "EMA Crossover \u2014 Review",
+      "title": "ema crossover \u2014 review",
       "url": "/reviews/ema-crossover/"
     },
     {
-      "title": "Fibonacci Retracement \u2014 Review",
+      "title": "fibonacci retracement \u2014 review",
       "url": "/reviews/fibonacci-retracement/"
     },
     {
-      "title": "Ichimoku Cloud \u2014 Review",
+      "title": "ichimoku cloud \u2014 review",
       "url": "/reviews/ichimoku-cloud/"
     }
   ]

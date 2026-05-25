@@ -82,7 +82,20 @@
   "cta_label": "Open Moomoo Account",
   "cta_url": "https://j.moomoo.com/0BpZwx",
   "equity_curve_url": "/backtests/bollinger-band-squeeze-aapl-equity.png",
-  "crosslinks": []
+  "crosslinks": [
+    {
+      "title": "accumulation/distribution line \u2014 review",
+      "url": "/reviews/accumulation-distribution/"
+    },
+    {
+      "title": "ttm squeeze pro \u2014 pro review",
+      "url": "/reviews/ttm-squeeze-pro/"
+    },
+    {
+      "title": "detrended price oscillator (dpo) \u2014 review",
+      "url": "/reviews/detrended-price-oscillator/"
+    }
+  ]
 }
 ---
 

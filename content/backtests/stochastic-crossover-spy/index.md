@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/stochastic-crossover-spy-equity.png",
   "crosslinks": [
     {
-      "title": "RSI \u2014 Review",
+      "title": "rsi \u2014 review",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "Monte Carlo CT SS Review: Settings, Strategy &amp; How to Use It",
+      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     },
     {
-      "title": "Ultimate Oscillator \u2014 Review",
+      "title": "ultimate oscillator \u2014 review",
       "url": "/reviews/ultimate-oscillator/"
     }
   ]

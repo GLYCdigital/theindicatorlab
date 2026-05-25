@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/ema-ribbon-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "Ttm Squeeze \u2014 Indicator Review",
+      "title": "ttm squeeze \u2014 indicator review",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "Kaufman Adaptive Moving Average (KAMA) Review: Settings, Strategy &amp; How to Use It",
+      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
       "url": "/reviews/kama/"
     },
     {
-      "title": "Monte Carlo CT SS Review: Settings, Strategy &amp; How to Use It",
+      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     }
   ]

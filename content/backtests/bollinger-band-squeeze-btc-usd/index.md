@@ -82,7 +82,20 @@
   "cta_label": "Start Trading on OKX",
   "cta_url": "https://my.okx.com/join/89285202",
   "equity_curve_url": "/backtests/bollinger-band-squeeze-btc-usd-equity.png",
-  "crosslinks": []
+  "crosslinks": [
+    {
+      "title": "accumulation/distribution line \u2014 review",
+      "url": "/reviews/accumulation-distribution/"
+    },
+    {
+      "title": "ttm squeeze pro \u2014 pro review",
+      "url": "/reviews/ttm-squeeze-pro/"
+    },
+    {
+      "title": "detrended price oscillator (dpo) \u2014 review",
+      "url": "/reviews/detrended-price-oscillator/"
+    }
+  ]
 }
 ---
 

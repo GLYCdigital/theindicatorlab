@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/parabolic-sar-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "SuperTrend + ATR Trailing Stop \u2014 Pro Review",
+      "title": "supertrend + atr trailing stop \u2014 pro review",
       "url": "/reviews/supertrend-atr-trailing-stop/"
     },
     {
-      "title": "Kaufman Adaptive Moving Average (KAMA) Review: Settings, Strategy &amp; How to Use It",
+      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
       "url": "/reviews/kama/"
     },
     {
-      "title": "Monte Carlo CT SS Review: Settings, Strategy &amp; How to Use It",
+      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     }
   ]

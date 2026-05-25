@@ -47,15 +47,15 @@
   "equity_curve_url": "/backtests/donchian-channel-breakout-tsla-equity.png",
   "crosslinks": [
     {
-      "title": "Bollinger Bands \u2014 Review",
+      "title": "bollinger bands \u2014 review",
       "url": "/reviews/bollinger-bands/"
     },
     {
-      "title": "Keltner Channels \u2014 Review",
+      "title": "keltner channels \u2014 review",
       "url": "/reviews/keltner-channels/"
     },
     {
-      "title": "Price Channel \u2014 Review",
+      "title": "price channel \u2014 review",
       "url": "/reviews/price-channel/"
     }
   ]

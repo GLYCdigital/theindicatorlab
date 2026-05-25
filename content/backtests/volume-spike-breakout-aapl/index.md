@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/volume-spike-breakout-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "Ttm Squeeze \u2014 Indicator Review",
+      "title": "ttm squeeze \u2014 indicator review",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "Ease of Movement \u2014 Review",
+      "title": "ease of movement \u2014 review",
       "url": "/reviews/ease-of-movement/"
     },
     {
-      "title": "Monte Carlo CT SS Review: Settings, Strategy &amp; How to Use It",
+      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     }
   ]

@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/macd-crossover-tsla-equity.png",
   "crosslinks": [
     {
-      "title": "RSI \u2014 Review",
+      "title": "rsi \u2014 review",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "Kaufman Adaptive Moving Average (KAMA) Review: Settings, Strategy &amp; How to Use It",
+      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
       "url": "/reviews/kama/"
     },
     {
-      "title": "Monte Carlo CT SS Review: Settings, Strategy &amp; How to Use It",
+      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     }
   ]

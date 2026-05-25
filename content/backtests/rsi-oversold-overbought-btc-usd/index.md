@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "Ttm Squeeze \u2014 Indicator Review",
+      "title": "ttm squeeze \u2014 indicator review",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "RSI \u2014 Review",
+      "title": "rsi \u2014 review",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "SuperTrend + ATR Trailing Stop \u2014 Pro Review",
+      "title": "supertrend + atr trailing stop \u2014 pro review",
       "url": "/reviews/supertrend-atr-trailing-stop/"
     }
   ]
