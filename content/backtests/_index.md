@@ -7,7 +7,7 @@ layout: list
 description: "Real backtest results for popular TradingView indicators. 5+ years of historical data. No opinions — just numbers."
 ---
 
-<h2 id="indicators-tested">Indicators Tested</h2>
+<h2 id="indicators-tested" style="color:var(--accent)">Indicators Backtested</h2>
 <div class="lr-benefits">
       <div class="lr-benefit">
         <div class="icon">📉</div>
@@ -52,11 +52,11 @@ description: "Real backtest results for popular TradingView indicators. 5+ years
       </div>
 </div>
 
-<h2 id="methodology">Methodology</h2>
+<h2 id="methodology" style="margin-top:3rem;color:var(--accent);margin-bottom:1rem">Methodology</h2>
 <p style="font-size:1.3rem;color:var(--text-secondary);line-height:1.6">All backtests run on <strong>5 years of daily OHLCV data</strong> from Yahoo Finance using the <strong>backtrader</strong> engine. Starting capital: $10,000, 95% position sizing, 0.1% commission per trade. No curve-fitting, no cherry-picking.</p>
 <p style="font-size:1.3rem;color:var(--text-secondary);line-height:1.6">Updated every Saturday. 10 indicators across 8 assets and growing.</p>
 
-<h2 id="faq" style="margin-top:3rem">FAQ</h2>
+<h2 id="faq" style="margin-top:3rem;color:var(--accent)">FAQ</h2>
 
 <div class="lr-faq">
   <h3>Are these results real?</h3>
