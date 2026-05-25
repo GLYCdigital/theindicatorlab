@@ -64,6 +64,43 @@ This script fixes all three:
 | Markets | Stocks, crypto, forex, futures, indices |
 | Alerts | Push, email, SMS, or webhook (8 alert conditions) |
 
+## Backtest Results
+
+<p style="font-size:1.1rem;color:var(--text-secondary);margin-bottom:0.5rem">6 assets tested · 1673 total trades · 5-year data · Refreshed weekly</p>
+
+<article class="review-article">
+  <div class="content">
+
+<table>
+<thead>
+<tr>
+  <th>Asset</th>
+  <th>Return</th>
+  <th>Sharpe</th>
+  <th>Max DD</th>
+  <th>Win Rate</th>
+  <th>PF</th>
+  <th>Trades</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🟡 <a href="/backtests/fisher-transform-mtf-divergence-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+26.7%</td><td>0.22</td><td>49.5%</td><td>32.2%</td><td>1.05</td><td>342</td></tr>
+<tr><td>🟡 <a href="/backtests/fisher-transform-mtf-divergence-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+11.7%</td><td>0.09</td><td>38.6%</td><td>44.7%</td><td>1.05</td><td>219</td></tr>
+<tr><td>🔴 <a href="/backtests/fisher-transform-mtf-divergence-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-19.3%</td><td>-0.16</td><td>42.1%</td><td>43.9%</td><td>0.88</td><td>244</td></tr>
+<tr><td>🔴 <a href="/backtests/fisher-transform-mtf-divergence-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-26.0%</td><td>-0.60</td><td>35.6%</td><td>43.6%</td><td>0.79</td><td>243</td></tr>
+<tr><td>🔴 <a href="/backtests/fisher-transform-mtf-divergence-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-66.2%</td><td>-0.61</td><td>78.5%</td><td>34.6%</td><td>0.88</td><td>338</td></tr>
+<tr><td>🔴 <a href="/backtests/fisher-transform-mtf-divergence-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>-46.3%</td><td>-2.49</td><td>46.3%</td><td>34.1%</td><td>0.39</td><td>287</td></tr>
+</tbody>
+</table>
+
+<p style="margin-top:1rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
+
+<p style="margin-top:1rem"><a href="/backtests/fisher-transform-mtf-divergence/" style="color:var(--accent);font-weight:600">→ Full backtest details and charts</a></p>
+
+  </div>
+</article>
+
+
 ## Who This Is For
 
 - **Reversal traders** who want the sharpest turning-point detection available

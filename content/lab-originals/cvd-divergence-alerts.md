@@ -68,6 +68,42 @@ Every free CVD on TradingView is a coloured histogram. To find divergences betwe
 | Markets | Stocks, crypto, forex, futures, indices |
 | Alerts | Push, email, SMS, or webhook via TradingView |
 
+## Backtest Results
+
+<p style="font-size:1.1rem;color:var(--text-secondary);margin-bottom:0.5rem">5 assets tested · 373 total trades · 5-year data · Refreshed weekly</p>
+
+<article class="review-article">
+  <div class="content">
+
+<table>
+<thead>
+<tr>
+  <th>Asset</th>
+  <th>Return</th>
+  <th>Sharpe</th>
+  <th>Max DD</th>
+  <th>Win Rate</th>
+  <th>PF</th>
+  <th>Trades</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+56.7%</td><td>0.45</td><td>20.1%</td><td>32.3%</td><td>1.34</td><td>65</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+56.7%</td><td>0.41</td><td>26.4%</td><td>40.4%</td><td>1.32</td><td>52</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+51.5%</td><td>0.32</td><td>53.8%</td><td>23.8%</td><td>1.18</td><td>101</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+30.3%</td><td>0.22</td><td>44.0%</td><td>21.7%</td><td>1.08</td><td>92</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+19.4%</td><td>0.15</td><td>21.8%</td><td>39.7%</td><td>1.09</td><td>63</td></tr>
+</tbody>
+</table>
+
+<p style="margin-top:1rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
+
+<p style="margin-top:1rem"><a href="/backtests/cvd-divergence-alerts/" style="color:var(--accent);font-weight:600">→ Full backtest details and charts</a></p>
+
+  </div>
+</article>
+
+
 ## Who This Is For
 
 - **Active traders** who use volume analysis and want to stop staring at charts
