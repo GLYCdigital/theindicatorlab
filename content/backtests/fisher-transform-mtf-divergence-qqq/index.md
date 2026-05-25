@@ -1,0 +1,140 @@
+---
+{
+  "title": "Fisher \u2014 QQQ Backtest Results (5-Year)",
+  "date": "2026-05-25",
+  "draft": false,
+  "type": "backtests",
+  "period": "2021-05-26 \u2192 2026-05-22",
+  "metrics": [
+    {
+      "label": "Total Return",
+      "value": "-19.3%"
+    },
+    {
+      "label": "CAGR",
+      "value": "-4.2%"
+    },
+    {
+      "label": "Sharpe Ratio",
+      "value": "-0.16"
+    },
+    {
+      "label": "Max Drawdown",
+      "value": "42.1%"
+    },
+    {
+      "label": "Win Rate",
+      "value": "43.9%"
+    },
+    {
+      "label": "Profit Factor",
+      "value": "0.88"
+    },
+    {
+      "label": "Total Trades",
+      "value": "244"
+    },
+    {
+      "label": "Avg Trade",
+      "value": "4 days"
+    }
+  ],
+  "yearly": [
+    {
+      "year": "2021",
+      "return_pct": "+19.5%",
+      "trades": "30",
+      "win_rate_pct": "43.9%"
+    },
+    {
+      "year": "2022",
+      "return_pct": "-33.2%",
+      "trades": "52",
+      "win_rate_pct": "43.9%"
+    },
+    {
+      "year": "2023",
+      "return_pct": "+55.9%",
+      "trades": "47",
+      "win_rate_pct": "43.9%"
+    },
+    {
+      "year": "2024",
+      "return_pct": "+27.7%",
+      "trades": "47",
+      "win_rate_pct": "43.9%"
+    },
+    {
+      "year": "2025",
+      "return_pct": "+21.0%",
+      "trades": "48",
+      "win_rate_pct": "43.9%"
+    },
+    {
+      "year": "2026",
+      "return_pct": "+17.2%",
+      "trades": "20",
+      "win_rate_pct": "43.9%"
+    }
+  ],
+  "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
+  "cta_body": "Access US markets with zero commissions and professional-grade charting tools.",
+  "cta_label": "Open Moomoo Account",
+  "cta_url": "https://j.moomoo.com/0BpZwx",
+  "equity_curve_url": "/backtests/fisher-transform-mtf-divergence-qqq-equity.png",
+  "crosslinks": [
+    {
+      "title": "rsi \u2014 review",
+      "url": "/reviews/relative-strength-index-rsi/"
+    },
+    {
+      "title": "awesome oscillator \u2014 review",
+      "url": "/reviews/awesome-oscillator/"
+    },
+    {
+      "title": "ehlers fisher transform review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ehlers-fisher-transform/"
+    }
+  ]
+}
+---
+
+![Fisher Transform MTF Divergence — QQQ Equity Curve](/backtests/fisher-transform-mtf-divergence-qqq-equity.png)
+
+## How the Fisher Transform MTF Divergence Works
+
+The fisher transform mtf divergence is one of the most widely-used signals in trading. It's simple, mechanical, and removes emotional decision-making from your trading by generating clear entry and exit signals based on the Fisher indicator.
+
+On QQQ, the Fisher acts as a trend filter. It won't catch every exact bottom, but it reliably captures the meat of major moves while keeping you out of chop.
+
+## 5-Year Performance on QQQ
+
+Over five years (2021-05-26 → 2026-05-22), the Fisher Transform MTF Divergence delivered a **-19.3% total return** on QQQ, compounding at **-4.2% annually**. 
+
+At **-0.16**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+
+The catch? A **42.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 42% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+
+## Risk Assessment
+
+| Metric | Value | Verdict |
+|--------|-------|---------|
+| Sharpe Ratio | -0.16 | ❌ Weak |
+| Max Drawdown | 42.1% | ⚠️ Significant |
+| Win Rate | 43.9% | ⚠️ Below average |
+| Profit Factor | 0.88 | ❌ Unprofitable |
+| Trades/Year | ~244 total | Active |
+
+The **profit factor of 0.88** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 43.9% win rate, this requires careful position sizing to be profitable.
+
+## Does the Fisher Transform MTF Divergence Work on QQQ?
+
+The fisher transform mtf divergence struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.16 Sharpe ratio** and **0.88 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+
+This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
+
+Our take: skip it on QQQ unless you're combining it with other confirmations or using it on different timeframes.
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+![Fisher Transform MTF Divergence — Trade Signals on QQQ](/backtests/fisher-transform-mtf-divergence-qqq-trades.png)
