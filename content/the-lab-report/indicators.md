@@ -3,12 +3,12 @@ title: "All Indicators — The Lab Report"
 date: 2026-05-25
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 49 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 48 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **49 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** {{< param date >}} · **48 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
@@ -37,7 +37,7 @@ Indicators that measure the speed and strength of price movement.
 | Chande Momentum | [→ Full review](/reviews/chande-momentum/) |
 | Elder Ray | [→ Full review](/reviews/elder-ray-index/) |
 
-## Trend (14)
+## Trend (13)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -50,7 +50,6 @@ Indicators that identify direction and strength of the prevailing trend.
 | Ichimoku Cloud | [→ Full review](/reviews/ichimoku-cloud/) |
 | KAMA | [→ Full review](/reviews/kama/) |
 | Parabolic SAR | [→ Full review](/reviews/parabolic-sar/) |
-| Donchian Channels | [→ Full review](/reviews/donchian-channels/) |
 | Hull MA | [→ Full review](/reviews/hull-moving-average/) |
 | DEMA | [→ Full review](/reviews/double-exponential-moving-average/) |
 | TEMA | [→ Full review](/reviews/triple-ema/) |
