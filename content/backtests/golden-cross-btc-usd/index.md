@@ -135,6 +135,6 @@ The 75.0% win rate means you'll be wrong more than half the time. The profit fac
 
 Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. Commission: 0.1% modeled. This is not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

@@ -53,8 +53,9 @@ description: "Real backtest results for popular TradingView indicators. 5+ years
 </div>
 
 <h2 id="methodology" style="margin-top:3rem;color:var(--navy-bar);margin-bottom:1rem">Methodology</h2>
-<p style="font-size:1.3rem;color:var(--text-secondary);line-height:1.6">All backtests run on <strong>5 years of daily OHLCV data</strong> from Yahoo Finance using the <strong>backtrader</strong> engine. Starting capital: $10,000, 95% position sizing, 0.1% commission per trade. No curve-fitting, no cherry-picking.</p>
-<p style="font-size:1.3rem;color:var(--text-secondary);line-height:1.6">Updated every Saturday. 10 indicators across 8 assets and growing.</p>
+<p style="font-size:1.3rem;color:var(--text-secondary);line-height:1.6">All backtests run on <strong>5 years of daily OHLCV data</strong> from Yahoo Finance using the <strong>backtrader</strong> engine. Each trade uses <strong>95% of available capital</strong> with <strong>0.1% commission per trade</strong>. Returns are percentage-based, not dollar-denominated — this keeps results comparable across assets regardless of price level. No curve-fitting, no cherry-picking.</p>
+<p style="font-size:1.3rem;color:var(--text-secondary);line-height:1.6">Results are <strong>refreshed every Saturday</strong> with the latest market data. 10 indicators across 8 assets and growing.</p>
+<p style="font-size:1.1rem;color:var(--text-muted);margin-top:0.5rem">Last refreshed: {{< param date >}}</p>
 
 <h2 id="faq" style="margin-top:3rem;color:var(--navy-bar)">FAQ</h2>
 

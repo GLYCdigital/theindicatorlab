@@ -135,6 +135,6 @@ This doesn't mean the Donchian is useless — it may work better on different as
 
 Our take: skip it on AAPL unless you're combining it with other confirmations or using it on different timeframes.
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. Commission: 0.1% modeled. This is not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on AAPL](/backtests/donchian-channel-breakout-aapl-trades.png)
