@@ -1,7 +1,6 @@
 {{ define "main" }}
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/">Home</a> / <a href="/backtests/">Indicator Backtests</a></p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="page-subtitle">{{ . | safeHTML }}</p>{{ end }}
   </div>
@@ -120,18 +119,6 @@
 }
 .cta-button:hover {
   background: #ffc107;
-}
-.breadcrumb {
-  font-size: 0.85rem;
-  color: var(--text-secondary, #888);
-  margin-bottom: 0.5rem;
-}
-.breadcrumb a {
-  color: var(--text-secondary, #888);
-  text-decoration: none;
-}
-.breadcrumb a:hover {
-  text-decoration: underline;
 }
 .page-subtitle {
   font-size: 1.05rem;
