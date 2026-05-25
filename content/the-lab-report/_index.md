@@ -240,7 +240,7 @@ When 25 of 44 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>What indicators are included?</h3>
-  <p>RSI, MACD, OBV, CVD, Bollinger Bands, SuperTrend, Fisher Transform, ATR, KAMA, and 17 more — growing with every review we publish.</p>
+  <p><a href="/the-lab-report/indicators/" target="_blank" rel="noopener">→ See the current full list</a> — 44 indicators across momentum, volume, trend, and volatility. Updated weekly as we add new reviews.</p>
 </div>
 <div class="lr-faq">
   <h3>How do I receive alerts?</h3>

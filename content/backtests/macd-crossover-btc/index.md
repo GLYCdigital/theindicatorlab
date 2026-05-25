@@ -59,6 +59,8 @@ crosslinks:
     url: "/reviews/mcginley-dynamic/"
 ---
 
+![MACD Crossover — BTC-USD Equity Curve](/backtests/macd-crossover-btc-equity.png)
+
 ## How the MACD Crossover Strategy Works
 
 The MACD Crossover is one of the most widely-used trading strategies in existence — and for good reason. It's simple, mechanical, and removes emotional decision-making from your trading.
@@ -90,6 +92,8 @@ The **profit factor of 2.14** tells the real story: when this strategy wins, it 
 The risk comes from the **-28.5% drawdown** — likely from Bitcoin's infamous whipsaws during consolidation periods (summer 2021, late 2022). This is a trend-following strategy on a trending asset; when Bitcoin chops, the MACD Crossover chops with it.
 
 ## Should You Trade the MACD Crossover on Bitcoin?
+
+![MACD Crossover — Trade Signals on BTC-USD](/backtests/macd-crossover-btc-trades.png)
 
 If you're a swing trader or position trader who can hold through 30% drawdowns, this strategy has a real edge. The numbers don't lie — **1.82 Sharpe, 62% win rate, 2.14 profit factor** over 5 years and 47 trades is statistically meaningful.
 
