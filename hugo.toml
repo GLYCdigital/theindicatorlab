@@ -77,16 +77,22 @@ defaultContentLanguage = "en"
     weight = 20
 
   [[menu.main]]
+    identifier = "daily-digest"
+    name = "Daily Digest"
+    url = "/daily-digest/"
+    weight = 25
+
+  [[menu.main]]
+    identifier = "backtests"
+    name = "Backtests"
+    url = "/backtests/"
+    weight = 28
+
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 30
-
-  [[menu.main]]
-    identifier = "disclaimer"
-    name = "Disclaimer"
-    url = "/disclaimer/"
-    weight = 40
 
   [[menu.main]]
     identifier = "lab-originals"
@@ -105,7 +111,8 @@ defaultContentLanguage = "en"
     name = "Search"
     url = "/search/"
     weight = 50
-# Analytics (Umami Cloud — set website_id when email verified)
+
+# Analytics (Umami)
 [params.analytics]
   umami = "fc79be2c-0e11-4fb3-98fc-00ffba8c0390"
 
@@ -116,9 +123,3 @@ defaultContentLanguage = "en"
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
-
-  [[menu.main]]
-    identifier = "daily-digest"
-    name = "Daily Digest"
-    url = "/daily-digest/"
-    weight = 25

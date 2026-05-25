@@ -1,0 +1,4 @@
+[search]
+  title       = "Search"
+  placeholder = "Search reviews, indicators, backtests..."
+  resultTitle = "Found #PAGES_COUNT result(s) in #TIME_SECONDS seconds"
