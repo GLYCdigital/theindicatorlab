@@ -8,38 +8,75 @@
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+0.0%"
+      "value": "+16.7%"
     },
     {
       "label": "CAGR",
-      "value": "0.0%"
+      "value": "3.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.00"
+      "value": "0.11"
     },
     {
       "label": "Max Drawdown",
-      "value": "0.0%"
+      "value": "24.5%"
     },
     {
       "label": "Win Rate",
-      "value": "0.0%"
+      "value": "29.2%"
     },
     {
       "label": "Profit Factor",
-      "value": "999.00"
+      "value": "1.05"
     },
     {
       "label": "Total Trades",
-      "value": "0"
+      "value": "65"
     },
     {
       "label": "Avg Trade",
-      "value": "0 days"
+      "value": "19 days"
     }
   ],
-  "yearly": [],
+  "yearly": [
+    {
+      "year": "2021",
+      "return_pct": "+14.5%",
+      "trades": "8",
+      "win_rate_pct": "29.2%"
+    },
+    {
+      "year": "2022",
+      "return_pct": "-18.6%",
+      "trades": "15",
+      "win_rate_pct": "29.2%"
+    },
+    {
+      "year": "2023",
+      "return_pct": "+26.7%",
+      "trades": "13",
+      "win_rate_pct": "29.2%"
+    },
+    {
+      "year": "2024",
+      "return_pct": "+25.6%",
+      "trades": "10",
+      "win_rate_pct": "29.2%"
+    },
+    {
+      "year": "2025",
+      "return_pct": "+18.0%",
+      "trades": "13",
+      "win_rate_pct": "29.2%"
+    },
+    {
+      "year": "2026",
+      "return_pct": "+9.4%",
+      "trades": "6",
+      "win_rate_pct": "29.2%"
+    }
+  ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
   "cta_body": "Access US markets with zero commissions and professional-grade charting tools.",
   "cta_label": "Open Moomoo Account",
@@ -72,27 +109,27 @@ On SPY, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-05-26 → 2026-05-22), the Donchian Channel Breakout delivered a **+0.0% total return** on SPY, compounding at **0.0% annually**. 
+Over five years (2021-05-26 → 2026-05-22), the Donchian Channel Breakout delivered a **+16.7% total return** on SPY, compounding at **3.1% annually**. 
 
-At **0.00**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.11**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **0.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 0% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **24.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 24% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.00 | ❌ Weak |
-| Max Drawdown | 0.0% | ✅ Low |
-| Win Rate | 0.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 999.00 | ✅ Excellent |
-| Trades/Year | ~0 total | Selective — not overtrading |
+| Sharpe Ratio | 0.11 | ❌ Weak |
+| Max Drawdown | 24.5% | ⚠️ Moderate |
+| Win Rate | 29.2% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.05 | ⚠️ Marginal |
+| Trades/Year | ~65 total | Active |
 
-The **profit factor of 999.00** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 0.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.05** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 29.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on SPY?
 
-The donchian channel breakout struggled to generate meaningful edge on SPY over this 5-year period. With a **0.00 Sharpe ratio** and **999.00 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on SPY over this 5-year period. With a **0.11 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -100,4 +137,4 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 <small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. Commission: 0.1% modeled. This is not financial advice. Past performance does not guarantee future results.</small>
 
-
+![Donchian Channel Breakout — Trade Signals on SPY](/backtests/donchian-channel-breakout-spy-trades.png)

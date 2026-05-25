@@ -1,20 +1,15 @@
 ---
-title: "RSI — All Backtest Results"
+title: "RSI Backtest Results"
 date: 2026-05-25
 draft: false
 type: backtests
-description: "All 7 asset backtests for the RSI indicator. Compare performance across crypto, stocks, forex, and commodities."
+description: "All 7 asset backtests for the RSI indicator. Sorted by Sharpe ratio."
 ---
 
-<section class="page-hero">
-  <div class="container">
-    <h1>RSI Backtest Results</h1>
-    <p style="font-size:1.4rem;color:var(--text-muted)">7 assets tested · 5-year historical data · Sorted by Sharpe ratio</p>
-  </div>
-</section>
+<p style="font-size:1.4rem;color:var(--text-on-dark-muted);text-align:center;max-width:600px;margin:0 auto">7 assets tested · 5-year historical data · Sorted by Sharpe ratio</p>
 
-<section style="padding:48px 0">
-  <div class="container" style="max-width:900px">
+<div style="padding:32px 0">
+  <div style="max-width:900px;margin:0 auto;overflow-x:auto">
 
 | Asset | Return | CAGR | Sharpe | Max DD | Win Rate | PF | Trades |
 |-------|--------|------|--------|--------|----------|-----|--------|
@@ -28,7 +23,7 @@ description: "All 7 asset backtests for the RSI indicator. Compare performance a
 
 <p style="margin-top:2rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
-<p style="margin-top:2rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
+<p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
 
   </div>
-</section>
+</div>

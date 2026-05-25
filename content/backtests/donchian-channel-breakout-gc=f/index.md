@@ -8,38 +8,75 @@
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+0.0%"
+      "value": "+52.7%"
     },
     {
       "label": "CAGR",
-      "value": "0.0%"
+      "value": "8.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.00"
+      "value": "0.49"
     },
     {
       "label": "Max Drawdown",
-      "value": "0.0%"
+      "value": "20.0%"
     },
     {
       "label": "Win Rate",
-      "value": "0.0%"
+      "value": "38.8%"
     },
     {
       "label": "Profit Factor",
-      "value": "999.00"
+      "value": "1.86"
     },
     {
       "label": "Total Trades",
-      "value": "0"
+      "value": "67"
     },
     {
       "label": "Avg Trade",
-      "value": "0 days"
+      "value": "15 days"
     }
   ],
-  "yearly": [],
+  "yearly": [
+    {
+      "year": "2021",
+      "return_pct": "-3.9%",
+      "trades": "6",
+      "win_rate_pct": "38.8%"
+    },
+    {
+      "year": "2022",
+      "return_pct": "+1.1%",
+      "trades": "12",
+      "win_rate_pct": "38.8%"
+    },
+    {
+      "year": "2023",
+      "return_pct": "+12.1%",
+      "trades": "12",
+      "win_rate_pct": "38.8%"
+    },
+    {
+      "year": "2024",
+      "return_pct": "+27.4%",
+      "trades": "14",
+      "win_rate_pct": "38.8%"
+    },
+    {
+      "year": "2025",
+      "return_pct": "+62.7%",
+      "trades": "14",
+      "win_rate_pct": "38.8%"
+    },
+    {
+      "year": "2026",
+      "return_pct": "+4.8%",
+      "trades": "9",
+      "win_rate_pct": "38.8%"
+    }
+  ],
   "cta_headline": "Trade Commodities with TradingView Pro",
   "cta_body": "Professional charting with integrated broker connections for futures and commodities.",
   "cta_label": "Get TradingView Pro",
@@ -72,32 +109,32 @@ On GC=F, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-05-26 → 2026-05-24), the Donchian Channel Breakout delivered a **+0.0% total return** on GC=F, compounding at **0.0% annually**. 
+Over five years (2021-05-26 → 2026-05-24), the Donchian Channel Breakout delivered a **+52.7% total return** on GC=F, compounding at **8.8% annually**. 
 
-At **0.00**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.49**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **0.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 0% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **20.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 20% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.00 | ❌ Weak |
-| Max Drawdown | 0.0% | ✅ Low |
-| Win Rate | 0.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 999.00 | ✅ Excellent |
-| Trades/Year | ~0 total | Selective — not overtrading |
+| Sharpe Ratio | 0.49 | ❌ Weak |
+| Max Drawdown | 20.0% | ⚠️ Moderate |
+| Win Rate | 38.8% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.86 | ✅ Good |
+| Trades/Year | ~67 total | Active |
 
-The **profit factor of 999.00** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 0.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.86** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 38.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on GC=F?
 
-The donchian channel breakout struggled to generate meaningful edge on GC=F over this 5-year period. With a **0.00 Sharpe ratio** and **999.00 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout shows moderate edge on GC=F — **0.49 Sharpe, 1.86 profit factor** over 67 trades. It's not a home run, but it's also not random.
 
-This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on GC=F with default parameters over 5 years, it didn't produce a compelling standalone edge.
+The 38.8% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
-Our take: skip it on GC=F unless you're combining it with other confirmations or using it on different timeframes.
+Our take: usable as a confirmation tool, but not as a standalone system on GC=F. Combine with trend filters or volume confirmation for better results.
 
 <small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. Commission: 0.1% modeled. This is not financial advice. Past performance does not guarantee future results.</small>
 
-
+![Donchian Channel Breakout — Trade Signals on GC=F](/backtests/donchian-channel-breakout-gc=f-trades.png)
