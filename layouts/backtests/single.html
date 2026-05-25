@@ -1,0 +1,147 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Home</a> / <a href="/backtests/">Backtests</a> / {{ .Title }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . | safeHTML }}</p>{{ end }}
+  </div>
+</section>
+
+<article class="review-article">
+  <div class="content">
+
+    <!-- Metrics Card -->
+    <div class="backtest-metrics">
+      {{ range .Params.metrics }}
+      <div class="metric">
+        <span class="metric-value">{{ .value }}</span>
+        <span class="metric-label">{{ .label }}</span>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Equity Curve Placeholder -->
+    {{ if .Params.equity_curve_url }}
+    <figure>
+      <img src="{{ .Params.equity_curve_url }}" alt="Equity curve for {{ .Title }}" loading="lazy">
+      <figcaption>{{ .Title }} — Equity Curve ({{ .Params.period }})</figcaption>
+    </figure>
+    {{ end }}
+
+    {{ .Content }}
+
+    <!-- Yearly Breakdown -->
+    {{ if .Params.yearly }}
+    <h2>Year-by-Year Breakdown</h2>
+    <table>
+      <thead>
+        <tr><th>Year</th><th>Return</th><th>Trades</th><th>Win Rate</th></tr>
+      </thead>
+      <tbody>
+      {{ range .Params.yearly }}
+        <tr>
+          <td>{{ .year }}</td>
+          <td>{{ .return_pct }}</td>
+          <td>{{ .trades }}</td>
+          <td>{{ .win_rate_pct }}</td>
+        </tr>
+      {{ end }}
+      </tbody>
+    </table>
+    {{ end }}
+
+    <!-- Affiliate CTA -->
+    <div class="affiliate-cta-card">
+      <strong>{{ .Params.cta_headline }}</strong>
+      <p>{{ .Params.cta_body }}</p>
+      <a href="{{ .Params.cta_url }}" class="cta-button" target="_blank" rel="nofollow sponsored">{{ .Params.cta_label }} →</a>
+    </div>
+
+    {{ if .Params.crosslinks }}
+    <h2>Related Indicator Reviews</h2>
+    <ul class="related-list">
+    {{ range .Params.crosslinks }}
+      <li><a href="{{ .url }}">{{ .title }}</a></li>
+    {{ end }}
+    </ul>
+    {{ end }}
+
+  </div>
+</article>
+
+<style>
+.backtest-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.metric {
+  background: var(--card-background, #f6f8fa);
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+.metric-value {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent-color, #1a73e8);
+}
+.metric-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary, #666);
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.affiliate-cta-card {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.affiliate-cta-card p {
+  color: #aaa;
+  margin: 0.5rem 0 1.5rem;
+}
+.cta-button {
+  display: inline-block;
+  background: #f0b90b;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.cta-button:hover {
+  background: #ffc107;
+}
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #888);
+  margin-bottom: 0.5rem;
+}
+.breadcrumb a {
+  color: var(--text-secondary, #888);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.related-list {
+  list-style: none;
+  padding: 0;
+}
+.related-list li {
+  padding: 0.3rem 0;
+}
+.related-list li a {
+  color: var(--accent-color, #1a73e8);
+}
+</style>
+{{ end }}
