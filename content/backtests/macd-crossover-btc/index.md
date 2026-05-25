@@ -1,5 +1,6 @@
 ---
 title: "MACD — Bitcoin Backtest Results (5-Year)"
+description: "5-year backtest of the MACD crossover on BTC-USD: win rate, Sharpe ratio, max drawdown, and real trade signals."
 date: 2026-05-25
 draft: false
 type: backtests

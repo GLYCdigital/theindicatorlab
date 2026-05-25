@@ -1,9 +1,9 @@
 {{ define "main" }}
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/">Home</a> / <a href="/backtests/">Backtests</a> / {{ .Title }}</p>
+    <p class="breadcrumb"><a href="/">Home</a> / <a href="/backtests/">Indicator Backtests</a></p>
     <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p>{{ . | safeHTML }}</p>{{ end }}
+    {{ with .Description }}<p class="page-subtitle">{{ . | safeHTML }}</p>{{ end }}
   </div>
 </section>
 
@@ -132,6 +132,13 @@
 }
 .breadcrumb a:hover {
   text-decoration: underline;
+}
+.page-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary, #666);
+  margin-top: -0.3rem;
+  margin-bottom: 1rem;
+  max-width: 650px;
 }
 .related-list {
   list-style: none;
