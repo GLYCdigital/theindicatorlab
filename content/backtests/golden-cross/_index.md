@@ -8,21 +8,35 @@ description: "All 6 asset backtests for the SMA indicator. Sorted by Sharpe rati
 
 <p style="font-size:1.4rem;color:var(--text-on-dark-muted);text-align:center;max-width:600px;margin:0 auto">6 assets tested · 5-year historical data · Sorted by Sharpe ratio</p>
 
-<div style="padding:32px 0">
-  <div style="max-width:900px;margin:0 auto;overflow-x:auto">
+<article class="review-article">
+  <div class="content">
 
-| Asset | Return | CAGR | Sharpe | Max DD | Win Rate | PF | Trades |
-|-------|--------|------|--------|--------|----------|-----|--------|
-| 🟢 [QQQ](/backtests/golden-cross-qqq/) | +110.3% | 16.1% | 0.80 | 22.1% | 50.0% | 999.00 | 2 |
-| 🟢 [SPY](/backtests/golden-cross-spy/) | +60.2% | 9.9% | 0.69 | 18.1% | 50.0% | 999.00 | 2 |
-| 🟢 [GC=F](/backtests/golden-cross-gc=f/) | +107.2% | 15.7% | 0.56 | 17.4% | 0.0% | 0.00 | 2 |
-| 🟡 [BTC](/backtests/golden-cross-btc-usd/) | +81.8% | 12.7% | 0.37 | 36.0% | 75.0% | 3.54 | 4 |
-| 🟡 [AAPL](/backtests/golden-cross-aapl/) | +12.7% | 2.4% | 0.06 | 28.6% | 25.0% | 0.36 | 4 |
-| 🔴 [TSLA](/backtests/golden-cross-tsla/) | -32.9% | -7.7% | -0.32 | 56.3% | 25.0% | 0.14 | 4 |
+<table>
+<thead>
+<tr>
+  <th>Asset</th>
+  <th>Return</th>
+  <th>CAGR</th>
+  <th>Sharpe</th>
+  <th>Max DD</th>
+  <th>Win Rate</th>
+  <th>PF</th>
+  <th>Trades</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🟢 <a href="/backtests/golden-cross-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+110.3%</td><td>16.1%</td><td>0.80</td><td>22.1%</td><td>50.0%</td><td>999.00</td><td>2</td></tr>
+<tr><td>🟢 <a href="/backtests/golden-cross-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+60.2%</td><td>9.9%</td><td>0.69</td><td>18.1%</td><td>50.0%</td><td>999.00</td><td>2</td></tr>
+<tr><td>🟢 <a href="/backtests/golden-cross-gc=f/" style="color:var(--accent);text-decoration:none;font-weight:600">GC=F</a></td><td>+107.2%</td><td>15.7%</td><td>0.56</td><td>17.4%</td><td>0.0%</td><td>0.00</td><td>2</td></tr>
+<tr><td>🟡 <a href="/backtests/golden-cross-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+81.8%</td><td>12.7%</td><td>0.37</td><td>36.0%</td><td>75.0%</td><td>3.54</td><td>4</td></tr>
+<tr><td>🟡 <a href="/backtests/golden-cross-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+12.7%</td><td>2.4%</td><td>0.06</td><td>28.6%</td><td>25.0%</td><td>0.36</td><td>4</td></tr>
+<tr><td>🔴 <a href="/backtests/golden-cross-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>-32.9%</td><td>-7.7%</td><td>-0.32</td><td>56.3%</td><td>25.0%</td><td>0.14</td><td>4</td></tr>
+</tbody>
+</table>
 
-<p style="margin-top:2rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
+<p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
 
   </div>
-</div>
+</article>

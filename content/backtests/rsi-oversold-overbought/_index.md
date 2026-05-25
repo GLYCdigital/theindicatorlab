@@ -8,22 +8,36 @@ description: "All 7 asset backtests for the RSI indicator. Sorted by Sharpe rati
 
 <p style="font-size:1.4rem;color:var(--text-on-dark-muted);text-align:center;max-width:600px;margin:0 auto">7 assets tested · 5-year historical data · Sorted by Sharpe ratio</p>
 
-<div style="padding:32px 0">
-  <div style="max-width:900px;margin:0 auto;overflow-x:auto">
+<article class="review-article">
+  <div class="content">
 
-| Asset | Return | CAGR | Sharpe | Max DD | Win Rate | PF | Trades |
-|-------|--------|------|--------|--------|----------|-----|--------|
-| 🟢 [AAPL](/backtests/rsi-oversold-overbought-aapl/) | +75.5% | 11.9% | 0.52 | 32.7% | 33.3% | 1.85 | 12 |
-| 🟡 [SPY](/backtests/rsi-oversold-overbought-spy/) | +48.4% | 8.2% | 0.43 | 23.7% | 33.3% | 1.87 | 9 |
-| 🟡 [QQQ](/backtests/rsi-oversold-overbought-qqq/) | +63.2% | 10.3% | 0.38 | 37.1% | 33.3% | 1.79 | 9 |
-| 🟡 [BTC](/backtests/rsi-oversold-overbought-btc-usd/) | +20.0% | 3.7% | 0.32 | 72.0% | 25.0% | 1.08 | 20 |
-| 🔴 [ETH](/backtests/rsi-oversold-overbought-eth-usd/) | -46.0% | -11.6% | -0.02 | 68.0% | 15.0% | 0.66 | 20 |
-| 🔴 [TSLA](/backtests/rsi-oversold-overbought-tsla/) | -36.4% | -8.7% | -0.07 | 70.0% | 14.3% | 0.22 | 14 |
-| 🔴 [EURUSD](/backtests/rsi-oversold-overbought-eurusd/) | -14.3% | -3.1% | -0.58 | 23.6% | 16.7% | 0.51 | 24 |
+<table>
+<thead>
+<tr>
+  <th>Asset</th>
+  <th>Return</th>
+  <th>CAGR</th>
+  <th>Sharpe</th>
+  <th>Max DD</th>
+  <th>Win Rate</th>
+  <th>PF</th>
+  <th>Trades</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🟢 <a href="/backtests/rsi-oversold-overbought-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+75.5%</td><td>11.9%</td><td>0.52</td><td>32.7%</td><td>33.3%</td><td>1.85</td><td>12</td></tr>
+<tr><td>🟡 <a href="/backtests/rsi-oversold-overbought-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+48.4%</td><td>8.2%</td><td>0.43</td><td>23.7%</td><td>33.3%</td><td>1.87</td><td>9</td></tr>
+<tr><td>🟡 <a href="/backtests/rsi-oversold-overbought-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+63.2%</td><td>10.3%</td><td>0.38</td><td>37.1%</td><td>33.3%</td><td>1.79</td><td>9</td></tr>
+<tr><td>🟡 <a href="/backtests/rsi-oversold-overbought-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+20.0%</td><td>3.7%</td><td>0.32</td><td>72.0%</td><td>25.0%</td><td>1.08</td><td>20</td></tr>
+<tr><td>🔴 <a href="/backtests/rsi-oversold-overbought-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-46.0%</td><td>-11.6%</td><td>-0.02</td><td>68.0%</td><td>15.0%</td><td>0.66</td><td>20</td></tr>
+<tr><td>🔴 <a href="/backtests/rsi-oversold-overbought-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>-36.4%</td><td>-8.7%</td><td>-0.07</td><td>70.0%</td><td>14.3%</td><td>0.22</td><td>14</td></tr>
+<tr><td>🔴 <a href="/backtests/rsi-oversold-overbought-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>-14.3%</td><td>-3.1%</td><td>-0.58</td><td>23.6%</td><td>16.7%</td><td>0.51</td><td>24</td></tr>
+</tbody>
+</table>
 
-<p style="margin-top:2rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
+<p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
 
   </div>
-</div>
+</article>

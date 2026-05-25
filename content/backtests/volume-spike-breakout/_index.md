@@ -8,21 +8,35 @@ description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe r
 
 <p style="font-size:1.4rem;color:var(--text-on-dark-muted);text-align:center;max-width:600px;margin:0 auto">6 assets tested · 5-year historical data · Sorted by Sharpe ratio</p>
 
-<div style="padding:32px 0">
-  <div style="max-width:900px;margin:0 auto;overflow-x:auto">
+<article class="review-article">
+  <div class="content">
 
-| Asset | Return | CAGR | Sharpe | Max DD | Win Rate | PF | Trades |
-|-------|--------|------|--------|--------|----------|-----|--------|
-| 🟢 [ETH](/backtests/volume-spike-breakout-eth-usd/) | +50.3% | 8.5% | 0.56 | 20.5% | 57.1% | 2.20 | 28 |
-| 🔴 [TSLA](/backtests/volume-spike-breakout-tsla/) | +8.8% | 1.7% | -0.12 | 4.5% | 66.7% | 2.12 | 6 |
-| 🔴 [BTC](/backtests/volume-spike-breakout-btc-usd/) | +4.3% | 0.8% | -0.17 | 17.1% | 41.4% | 1.11 | 29 |
-| 🔴 [SPY](/backtests/volume-spike-breakout-spy/) | +0.5% | 0.1% | -1.23 | 4.5% | 50.0% | 1.08 | 12 |
-| 🔴 [AAPL](/backtests/volume-spike-breakout-aapl/) | -12.8% | -2.7% | -1.75 | 13.1% | 45.5% | 0.36 | 22 |
-| 🔴 [QQQ](/backtests/volume-spike-breakout-qqq/) | -1.6% | -0.3% | -2.17 | 3.8% | 37.5% | 0.70 | 8 |
+<table>
+<thead>
+<tr>
+  <th>Asset</th>
+  <th>Return</th>
+  <th>CAGR</th>
+  <th>Sharpe</th>
+  <th>Max DD</th>
+  <th>Win Rate</th>
+  <th>PF</th>
+  <th>Trades</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🟢 <a href="/backtests/volume-spike-breakout-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+50.3%</td><td>8.5%</td><td>0.56</td><td>20.5%</td><td>57.1%</td><td>2.20</td><td>28</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+8.8%</td><td>1.7%</td><td>-0.12</td><td>4.5%</td><td>66.7%</td><td>2.12</td><td>6</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+4.3%</td><td>0.8%</td><td>-0.17</td><td>17.1%</td><td>41.4%</td><td>1.11</td><td>29</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+0.5%</td><td>0.1%</td><td>-1.23</td><td>4.5%</td><td>50.0%</td><td>1.08</td><td>12</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>-12.8%</td><td>-2.7%</td><td>-1.75</td><td>13.1%</td><td>45.5%</td><td>0.36</td><td>22</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-1.6%</td><td>-0.3%</td><td>-2.17</td><td>3.8%</td><td>37.5%</td><td>0.70</td><td>8</td></tr>
+</tbody>
+</table>
 
-<p style="margin-top:2rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
+<p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
 
   </div>
-</div>
+</article>

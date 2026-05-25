@@ -8,20 +8,34 @@ description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe
 
 <p style="font-size:1.4rem;color:var(--text-on-dark-muted);text-align:center;max-width:600px;margin:0 auto">5 assets tested · 5-year historical data · Sorted by Sharpe ratio</p>
 
-<div style="padding:32px 0">
-  <div style="max-width:900px;margin:0 auto;overflow-x:auto">
+<article class="review-article">
+  <div class="content">
 
-| Asset | Return | CAGR | Sharpe | Max DD | Win Rate | PF | Trades |
-|-------|--------|------|--------|--------|----------|-----|--------|
-| 🟢 [QQQ](/backtests/ichimoku-cloud-qqq/) | +64.6% | 10.5% | 0.54 | 22.4% | 42.1% | 2.17 | 19 |
-| 🟡 [SPY](/backtests/ichimoku-cloud-spy/) | +50.5% | 8.5% | 0.49 | 19.9% | 47.4% | 2.39 | 19 |
-| 🟡 [BTC](/backtests/ichimoku-cloud-btc-usd/) | +51.1% | 8.6% | 0.31 | 51.4% | 27.0% | 1.24 | 37 |
-| 🟡 [ETH](/backtests/ichimoku-cloud-eth-usd/) | +19.6% | 3.6% | 0.16 | 53.0% | 33.3% | 1.08 | 36 |
-| 🔴 [EURUSD](/backtests/ichimoku-cloud-eurusd/) | -2.8% | -0.6% | -0.49 | 15.2% | 34.6% | 0.87 | 26 |
+<table>
+<thead>
+<tr>
+  <th>Asset</th>
+  <th>Return</th>
+  <th>CAGR</th>
+  <th>Sharpe</th>
+  <th>Max DD</th>
+  <th>Win Rate</th>
+  <th>PF</th>
+  <th>Trades</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🟢 <a href="/backtests/ichimoku-cloud-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+64.6%</td><td>10.5%</td><td>0.54</td><td>22.4%</td><td>42.1%</td><td>2.17</td><td>19</td></tr>
+<tr><td>🟡 <a href="/backtests/ichimoku-cloud-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+50.5%</td><td>8.5%</td><td>0.49</td><td>19.9%</td><td>47.4%</td><td>2.39</td><td>19</td></tr>
+<tr><td>🟡 <a href="/backtests/ichimoku-cloud-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+51.1%</td><td>8.6%</td><td>0.31</td><td>51.4%</td><td>27.0%</td><td>1.24</td><td>37</td></tr>
+<tr><td>🟡 <a href="/backtests/ichimoku-cloud-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+19.6%</td><td>3.6%</td><td>0.16</td><td>53.0%</td><td>33.3%</td><td>1.08</td><td>36</td></tr>
+<tr><td>🔴 <a href="/backtests/ichimoku-cloud-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>-2.8%</td><td>-0.6%</td><td>-0.49</td><td>15.2%</td><td>34.6%</td><td>0.87</td><td>26</td></tr>
+</tbody>
+</table>
 
-<p style="margin-top:2rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
+<p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
 
   </div>
-</div>
+</article>
