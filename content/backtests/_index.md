@@ -71,7 +71,7 @@ description: "Real backtest results for popular TradingView indicators. 5+ years
 
 <div class="lr-faq">
   <h3>How often are results updated?</h3>
-  <p>Every Saturday we refresh all existing backtests with the latest market data and add new indicators to the roster. The methodology stays consistent — same engine, same parameters, same starting capital.</p>
+  <p>Every Saturday we refresh all existing backtests with the latest market data and add new indicators to the roster. The methodology stays consistent — same engine, same parameters, same position sizing.</p>
 </div>
 
 <div class="lr-faq">
