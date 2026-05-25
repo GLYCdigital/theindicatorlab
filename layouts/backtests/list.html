@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p style="font-size:1.4rem;color:var(--text-muted)">{{ . | safeHTML }}</p>{{ end }}
+  </div>
+</section>
+
+<section style="padding:48px 0">
+  <div class="container" style="max-width:800px">
+    {{ .Content }}
+  </div>
+</section>
+
+<style>
+.lr-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+.lr-benefit { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 1.5rem; }
+.lr-benefit .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.lr-benefit h4 { margin: 0 0 0.3rem; font-size: 1.4rem; font-weight: 600; color: var(--text); }
+.lr-benefit p { margin: 0; color: var(--text-secondary); font-size: 1.3rem; line-height: 1.5; }
+.lr-benefit h4 a:hover { color: var(--accent) !important; }
+.lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
+.lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
+.lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
+@media (max-width: 600px) { .lr-benefits { grid-template-columns: 1fr; } }
+</style>
+{{ end }}
