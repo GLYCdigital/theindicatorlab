@@ -7,25 +7,96 @@ layout: list
 description: "Real backtest results for popular TradingView indicators. 5+ years of historical data. No opinions — just numbers."
 ---
 
-<section class="page-hero">
-  <div class="container">
-    <h1>Indicator Backtests</h1>
-    <p class="page-subtitle">Real backtest results for popular TradingView indicators. 5+ years of historical data. No opinions — just numbers.</p>
-  </div>
-</section>
+## 10 Indicators · 8 Assets · 5-Year Data
 
-<section style="padding:48px 0 64px">
-  <div class="container" style="max-width:800px">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-<article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/bollinger-band-squeeze-tsla/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">BollingerBands</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">6 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: TSLA · +131.5% · Sharpe 0.53</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/donchian-channel-breakout-aapl/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">Donchian</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">7 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: AAPL · +0.0% · Sharpe 0.00</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/ema-ribbon-qqq/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">EMA</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">5 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: QQQ · +81.5% · Sharpe 0.67</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/ichimoku-cloud-qqq/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">Ichimoku</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">5 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: QQQ · +64.6% · Sharpe 0.54</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/macd-crossover-tsla/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">MACD</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">8 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: TSLA · +334.6% · Sharpe 0.66</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/rsi-oversold-overbought-aapl/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">RSI</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">7 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: AAPL · +75.5% · Sharpe 0.52</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/parabolic-sar-aapl/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">SAR</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">6 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: AAPL · +43.1% · Sharpe 0.31</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/golden-cross-qqq/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">SMA</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">6 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: QQQ · +110.3% · Sharpe 0.80</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/stochastic-crossover-btc-usd/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">Stochastic</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">5 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: BTC · +22.4% · Sharpe 0.22</p></a></article><article style="padding:20px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius)"><a href="/backtests/volume-spike-breakout-eth-usd/" style="text-decoration:none"><h2 style="margin:0 0 4px;font-size:1.7rem;font-weight:600;color:var(--text)">Volume</h2><p style="margin:0 0 8px;font-size:1.3rem;color:var(--text-muted)">6 assets tested</p><p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Best: ETH · +50.3% · Sharpe 0.56</p></a></article>
-    </div>
-  </div>
-</section>
+<div class="indicator-cards">
+<div class="indicator-card">
+    <h3><a href="/backtests/bollinger-band-squeeze-tsla/">BollingerBands</a> 🟢</h3>
+    <p class="card-best">Best: <strong>TSLA</strong> — +131.5% return, 0.53 Sharpe</p>
+    <p class="card-assets">Tested on: TSLA, QQQ, AAPL, BTC-USD, ETH-USD, SPY</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/donchian-channel-breakout-aapl/">Donchian</a> 🔴</h3>
+    <p class="card-best">Best: <strong>AAPL</strong> — +0.0% return, 0.00 Sharpe</p>
+    <p class="card-assets">Tested on: AAPL, BTC-USD, ETH-USD, GC=F, QQQ, SPY, TSLA</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/ema-ribbon-qqq/">EMA</a> 🟢</h3>
+    <p class="card-best">Best: <strong>QQQ</strong> — +81.5% return, 0.67 Sharpe</p>
+    <p class="card-assets">Tested on: QQQ, BTC-USD, SPY, AAPL, ETH-USD</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/ichimoku-cloud-qqq/">Ichimoku</a> 🟢</h3>
+    <p class="card-best">Best: <strong>QQQ</strong> — +64.6% return, 0.54 Sharpe</p>
+    <p class="card-assets">Tested on: QQQ, SPY, BTC-USD, ETH-USD, EURUSD=X</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/macd-crossover-tsla/">MACD</a> 🟢</h3>
+    <p class="card-best">Best: <strong>TSLA</strong> — +334.6% return, 0.66 Sharpe</p>
+    <p class="card-assets">Tested on: TSLA, BTC-USD, AAPL, GC=F, ETH-USD, QQQ, SPY, EURUSD=X</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/rsi-oversold-overbought-aapl/">RSI</a> 🟢</h3>
+    <p class="card-best">Best: <strong>AAPL</strong> — +75.5% return, 0.52 Sharpe</p>
+    <p class="card-assets">Tested on: AAPL, SPY, QQQ, BTC-USD, ETH-USD, TSLA, EURUSD=X</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/parabolic-sar-aapl/">SAR</a> 🟡</h3>
+    <p class="card-best">Best: <strong>AAPL</strong> — +43.1% return, 0.31 Sharpe</p>
+    <p class="card-assets">Tested on: AAPL, QQQ, SPY, BTC-USD, ETH-USD, EURUSD=X</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/golden-cross-qqq/">SMA</a> 🟢</h3>
+    <p class="card-best">Best: <strong>QQQ</strong> — +110.3% return, 0.80 Sharpe</p>
+    <p class="card-assets">Tested on: QQQ, SPY, GC=F, BTC-USD, AAPL, TSLA</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/stochastic-crossover-btc-usd/">Stochastic</a> 🟡</h3>
+    <p class="card-best">Best: <strong>BTC</strong> — +22.4% return, 0.22 Sharpe</p>
+    <p class="card-assets">Tested on: BTC-USD, ETH-USD, SPY, QQQ, EURUSD=X</p>
+</div><div class="indicator-card">
+    <h3><a href="/backtests/volume-spike-breakout-eth-usd/">Volume</a> 🟢</h3>
+    <p class="card-best">Best: <strong>ETH</strong> — +50.3% return, 0.56 Sharpe</p>
+    <p class="card-assets">Tested on: ETH-USD, TSLA, BTC-USD, SPY, AAPL, QQQ</p>
+</div>
+</div>
 
-<section style="padding:0 0 48px">
-  <div class="container" style="max-width:800px">
-    <h2>Methodology</h2>
-    <p>All backtests run on <strong>5 years of daily OHLCV data</strong> from Yahoo Finance using the <strong>backtrader</strong> engine. Starting capital: $10,000, 95% position sizing, 0.1% commission per trade. No curve-fitting, no cherry-picking.</p>
-    <p>Updated every Saturday. 10 indicators across 8 assets and growing.</p>
-  </div>
-</section>
+## Methodology
+
+All backtests run on **5 years of daily OHLCV data** from Yahoo Finance using the **backtrader** engine. Starting capital: $10,000, 95% position sizing, 0.1% commission per trade. No curve-fitting.
+
+## FAQ
+
+**Are these results real?** Yes. Every number comes from an actual backtest against historical price data.
+
+**Can I copy these signals?** Past performance doesn't guarantee future results. Educational use only.
+
+**How often are results updated?** Weekly. Every Saturday we refresh all existing backtests and add new indicators.
+
+<style>
+.indicator-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+.indicator-card {
+  background: var(--card-background, #f6f8fa);
+  border-radius: 10px;
+  padding: 1.3rem 1.5rem;
+  transition: box-shadow 0.2s;
+}
+.indicator-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.indicator-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+.indicator-card h3 a {
+  color: var(--accent-color, #1a73e8);
+  text-decoration: none;
+}
+.indicator-card .card-best {
+  margin: 0 0 0.4rem;
+  font-size: 0.92rem;
+  color: var(--text-color, #333);
+}
+.indicator-card .card-assets {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-secondary, #888);
+}
+</style>
