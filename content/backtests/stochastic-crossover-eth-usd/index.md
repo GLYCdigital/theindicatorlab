@@ -135,6 +135,8 @@ This doesn't mean the Stochastic is useless — it may work better on different 
 
 Our take: skip it on ETH unless you're combining it with other confirmations or using it on different timeframes.
 
+
+
 <small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on ETH-USD](/backtests/stochastic-crossover-eth-usd-trades.png)

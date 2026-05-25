@@ -135,6 +135,8 @@ The 29.2% win rate means you'll be wrong more than half the time. The profit fac
 
 Our take: usable as a confirmation tool, but not as a standalone system on TSLA. Combine with trend filters or volume confirmation for better results.
 
+
+
 <small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on TSLA](/backtests/bollinger-band-squeeze-tsla-trades.png)

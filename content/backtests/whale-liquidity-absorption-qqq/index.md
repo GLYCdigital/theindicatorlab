@@ -135,6 +135,17 @@ This doesn't mean the Volume is useless — it may work better on different asse
 
 Our take: skip it on QQQ unless you're combining it with other confirmations or using it on different timeframes.
 
+
+<div class="affiliate-cta-card" style="margin:2rem 0">
+  <p style="font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin:0 0 0.5rem">Lab Original — Invite-Only</p>
+  <h3 style="color:#fff;margin:0 0 0.5rem;font-size:1.5rem">Get Whale Liquidity / Absorption Profile on TradingView</h3>
+  <p style="color:rgba(255,255,255,0.8);margin:0 0 1.2rem;font-size:1.05rem">This backtest simulates the core logic behind our Whale Liquidity / Absorption Profile script. The real thing runs live on TradingView with full alert conditions, multi-timeframe support, and phone notifications.</p>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center">
+    <a href="/lab-originals/whale-liquidity-absorption/" style="background:var(--accent);color:#fff;padding:12px 32px;border-radius:6px;text-decoration:none;font-weight:700;font-size:1.05rem">View Script — \$35</a>
+    <a href="https://www.tradingview.com/script/ksAw7irF/" target="_blank" rel="nofollow noopener" style="background:rgba(255,255,255,0.15);color:#fff;padding:12px 32px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem">See on TradingView →</a>
+  </div>
+</div>
+
 <small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on QQQ](/backtests/whale-liquidity-absorption-qqq-trades.png)

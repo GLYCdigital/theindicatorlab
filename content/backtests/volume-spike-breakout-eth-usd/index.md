@@ -135,6 +135,8 @@ The 57.1% win rate means you'll be wrong more than half the time. The profit fac
 
 Our take: usable as a confirmation tool, but not as a standalone system on ETH. Combine with trend filters or volume confirmation for better results.
 
+
+
 <small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on ETH-USD](/backtests/volume-spike-breakout-eth-usd-trades.png)
