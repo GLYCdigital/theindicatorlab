@@ -694,6 +694,7 @@ img { max-width: 100%; height: auto; display: block; }
   /* Affiliate CTA */
   .affiliate-cta { padding: 20px 24px; }
   .affiliate-cta h3 { font-size: 1.7rem; }
+  .lr-cta { padding: 16px 32px !important; font-size: 1.4rem !important; white-space: normal !important; word-break: break-word; max-width: 100%; }
 }
 
 /* Small phones */
@@ -719,4 +720,5 @@ img { max-width: 100%; height: auto; display: block; }
   .affiliate-cta { padding: 16px 20px; }
   .affiliate-cta h3 { font-size: 1.5rem; }
   .affiliate-cta .btn { padding: 10px 22px; font-size: 1.35rem; }
+  .lr-cta { padding: 14px 24px !important; font-size: 1.3rem !important; white-space: normal !important; word-break: break-word; display: inline-block; max-width: 100%; }
 }
