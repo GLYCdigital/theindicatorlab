@@ -86,7 +86,7 @@ description: "All 8 Lab Originals scripts. One subscription.<br>7-day free trial
 ## How It Works
 
 1. **Start your 7-day free trial** — full access, no restrictions
-2. **We add your TradingView username** to all 8 invite-only scripts within 24 hours
+2. **We add your TradingView username** to all 8 invite-only scripts by the next business day
 3. **Scripts appear in your TradingView** — just add them to any chart
 4. **Cancel anytime** — no lock-in. Monthly or annual billing
 5. **Future scripts included** — new Lab Originals added to the Suite at no extra cost
@@ -97,6 +97,6 @@ description: "All 8 Lab Originals scripts. One subscription.<br>7-day free trial
   <p style="margin: 0 0 1.5rem; color: var(--text-secondary); font-size: 1.3rem;">Full access to all 8 scripts. No restrictions. Cancel anytime.</p>
   <a href="https://buy.stripe.com/8x28wHgSy6pKgu2cyZaAw0a" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 4px 16px rgba(232,119,34,.4);">Get Lab Originals Suite — 7 Days Free</a>
   <p style="margin-top:1.25rem;font-size:1.25rem;color:var(--text-muted);">$29/month after trial · Cancel anytime · Annual: $279 (20% off)</p>
-  <p style="margin-top:0.5rem;font-size:1.15rem;color:var(--text-muted);">After subscribing, your TradingView username will be added to all 8 scripts within 24 hours.</p>
+  <p style="margin-top:0.5rem;font-size:1.15rem;color:var(--text-muted);">After subscribing, your TradingView username will be added to all 8 scripts by the next business day.</p>
 </div>
 {{< /rawhtml >}}
