@@ -1,0 +1,57 @@
+{{ define "main" }}
+<article class="review-article">
+  <nav class="breadcrumb">
+    <a href="/">Home</a> › <a href="/blog/">Blog</a> › <span>{{ .Title }}</span>
+  </nav>
+
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
+
+  <div class="meta-bar">
+    {{ with .Date }}<span>{{ .Format "Jan 2, 2006" }}</span>{{ end }}
+    {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+    {{ with .Params.author }}<span>by {{ . }}</span>{{ end }}
+  </div>
+
+  {{ with .Params.image }}
+  <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; border-radius: var(--radius); margin: 24px 0; border: 1px solid var(--card-border);">
+  {{ end }}
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  {{ partial "upgrade-to-pro.html" . }}
+
+  {{ $currentTags := .Params.tags | default slice }}
+  {{ if $currentTags }}
+  <div class="related-indicators" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--card-border);">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Related Reviews</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem;">
+      {{ $related := slice }}
+      {{ range where .Site.RegularPages "Section" "reviews" }}
+        {{ $match := 0 }}
+        {{ $pageTags := .Params.tags | default slice }}
+        {{ range $currentTags }}
+          {{ if in $pageTags . }}{{ $match = add $match 1 }}{{ end }}
+        {{ end }}
+        {{ if gt $match 1 }}
+          {{ $related = $related | append . }}
+        {{ end }}
+      {{ end }}
+      {{ range first 4 $related }}
+        {{ $r := . }}
+        <a href="{{ $r.RelPermalink }}" style="display: block; padding: 1.25rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); text-decoration: none; color: var(--text);">
+          <div style="font-weight: 600; font-size: 1.3rem; margin-bottom: 0.4rem;">{{ $r.Title }}</div>
+          {{ with $r.Params.rating }}
+          <div style="color: var(--accent); font-size: 1.15rem;">
+            {{ $stars := . }}{{ range seq 5 }}{{ if le . $stars }}★{{ else }}☆{{ end }}{{ end }}
+          </div>
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</article>
+{{ end }}

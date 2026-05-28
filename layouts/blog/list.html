@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>TradingView guides, indicator comparisons, and strategy deep-dives</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="review-grid" style="margin-top: -24px; padding-top: 48px;">
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="review-card">
+      <a href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit;">
+        <div class="card-img" style="background: linear-gradient(135deg, var(--accent) 0%, #c44 100%); min-height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+          📝
+        </div>
+      </a>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+        <h3 class="card-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <p class="card-text">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 150 }}{{ end }}</p>
+        <div class="card-tags">
+          {{ range .Params.tags }}
+          <span style="background: var(--card-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; color: var(--text-muted);">#{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

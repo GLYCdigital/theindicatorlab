@@ -95,6 +95,12 @@ defaultContentLanguage = "en"
     weight = 28
 
   [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 9
+
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
