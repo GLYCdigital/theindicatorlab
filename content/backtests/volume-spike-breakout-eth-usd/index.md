@@ -1,7 +1,7 @@
 ---
 {
   "title": "Volume \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-05-25",
+  "date": "2026-05-28",
   "draft": false,
   "type": "backtests",
   "period": "2021-05-26 \u2192 2026-05-23",
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "ease of movement \u2014 review",
-      "url": "/reviews/ease-of-movement/"
+      "title": "triple_exponential_ma \u2014 expert review",
+      "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
-      "url": "/reviews/monte-carlo-ct-ss/"
+      "title": "ease of movement \u2014 review",
+      "url": "/reviews/ease-of-movement/"
     }
   ]
 }
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on ETH. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on ETH-USD](/backtests/volume-spike-breakout-eth-usd-trades.png)

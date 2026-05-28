@@ -1,7 +1,7 @@
 ---
 {
   "title": "CVD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-05-25",
+  "date": "2026-05-28",
   "draft": false,
   "type": "backtests",
   "period": "2021-05-26 \u2192 2026-05-22",
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on QQQ. 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on QQQ](/backtests/cvd-divergence-alerts-qqq-trades.png)

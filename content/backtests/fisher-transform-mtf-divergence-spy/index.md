@@ -1,7 +1,7 @@
 ---
 {
   "title": "Fisher \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-05-25",
+  "date": "2026-05-28",
   "draft": false,
   "type": "backtests",
   "period": "2021-05-26 \u2192 2026-05-22",
@@ -146,6 +146,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on SPY](/backtests/fisher-transform-mtf-divergence-spy-trades.png)

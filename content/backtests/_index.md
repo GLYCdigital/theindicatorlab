@@ -70,6 +70,22 @@ description: "Real backtest results for popular TradingView indicators and Lab O
         <h4><a href="/backtests/whale-liquidity-absorption/" style="text-decoration:none;color:var(--text)">Whale Liquidity / Absorption Profile <span style="font-size:0.7rem;background:var(--accent);color:#fff;padding:2px 6px;border-radius:4px;vertical-align:middle">LAB</span></a></h4>
         <p>4 assets · Best: ETH (+50.3%, Sharpe 0.56)</p>
       </div>
+
+      <div class="lr-benefit">
+        <div class="icon">🏗️</div>
+        <h4><a href="/backtests/market-structure-pro/" style="text-decoration:none;color:var(--text)">Market Structure Pro <span style="font-size:0.7rem;background:var(--accent);color:#fff;padding:2px 6px;border-radius:4px;vertical-align:middle">LAB</span></a></h4>
+        <p>6 assets · Best: TSLA (+94.5%, Sharpe 0.43)</p>
+      </div>
+      <div class="lr-benefit">
+        <div class="icon">🎯</div>
+        <h4><a href="/backtests/liquidity-sweep-pro/" style="text-decoration:none;color:var(--text)">Liquidity Sweep Pro <span style="font-size:0.7rem;background:var(--accent);color:#fff;padding:2px 6px;border-radius:4px;vertical-align:middle">LAB</span></a></h4>
+        <p>6 assets · Best: AAPL (+52.6%, Sharpe 0.48)</p>
+      </div>
+      <div class="lr-benefit">
+        <div class="icon">📊</div>
+        <h4><a href="/backtests/volume-profile-pro/" style="text-decoration:none;color:var(--text)">Volume Profile Pro <span style="font-size:0.7rem;background:var(--accent);color:#fff;padding:2px 6px;border-radius:4px;vertical-align:middle">LAB</span></a></h4>
+        <p>6 assets · Best: ETH (+135.5%, Sharpe 0.57)</p>
+      </div>
 </div>
 
 <h2 id="methodology" style="margin-top:3rem;color:var(--navy-bar);margin-bottom:1rem">Methodology</h2>

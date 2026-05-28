@@ -1,7 +1,7 @@
 ---
 {
   "title": "SuperTrend \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-05-25",
+  "date": "2026-05-28",
   "draft": false,
   "type": "backtests",
   "period": "2021-05-26 \u2192 2026-05-22",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-aapl-equity.png",
   "crosslinks": [
     {
+      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
+      "url": "/reviews/luxalgo/"
+    },
+    {
       "title": "supertrend + atr trailing stop \u2014 pro review",
       "url": "/reviews/supertrend-atr-trailing-stop/"
     },
     {
       "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
-    },
-    {
-      "title": "moving average ribbon \u2014 review",
-      "url": "/reviews/moving-average-ribbon/"
     }
   ]
 }
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on AAPL.
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on AAPL](/backtests/supertrend-atr-trailing-stop-aapl-trades.png)

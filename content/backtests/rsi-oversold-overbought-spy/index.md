@@ -1,7 +1,7 @@
 ---
 {
   "title": "RSI \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-05-25",
+  "date": "2026-05-28",
   "draft": false,
   "type": "backtests",
   "period": "2021-05-26 \u2192 2026-05-22",
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on SPY. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on SPY](/backtests/rsi-oversold-overbought-spy-trades.png)

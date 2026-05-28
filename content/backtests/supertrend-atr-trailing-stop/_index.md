@@ -1,6 +1,6 @@
 ---
 title: "SuperTrend Backtest Results"
-date: 2026-05-25
+date: 2026-05-28
 draft: false
 type: backtests
 description: "All 6 asset backtests for the SuperTrend indicator. Sorted by Sharpe ratio."
@@ -37,7 +37,7 @@ description: "All 6 asset backtests for the SuperTrend indicator. Sorted by Shar
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: May 25, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: May 28, 2026</p>
 
   </div>
 </article>

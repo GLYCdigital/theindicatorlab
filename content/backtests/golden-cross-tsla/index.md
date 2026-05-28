@@ -1,7 +1,7 @@
 ---
 {
   "title": "SMA \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-05-25",
+  "date": "2026-05-28",
   "draft": false,
   "type": "backtests",
   "period": "2021-05-26 \u2192 2026-05-22",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/golden-cross-tsla-equity.png",
   "crosslinks": [
     {
+      "title": "market structure volume profiles kioseff trading review: settings, strategy &amp; how to use it",
+      "url": "/reviews/market-structure-volume-profiles-kioseff-trading/"
+    },
+    {
       "title": "money flow index \u2014 review",
       "url": "/reviews/money-flow-index/"
     },
     {
       "title": "mcginley dynamic review: settings, strategy &amp; how to use it",
       "url": "/reviews/mcginley-dynamic/"
-    },
-    {
-      "title": "arnaud legoux moving average \u2014 review",
-      "url": "/reviews/arnaud-legoux/"
     }
   ]
 }
@@ -137,6 +137,6 @@ Our take: skip it on TSLA unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 25, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on TSLA](/backtests/golden-cross-tsla-trades.png)
