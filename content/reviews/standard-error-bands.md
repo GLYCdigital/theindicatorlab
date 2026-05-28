@@ -4,6 +4,7 @@ slug: "standard-error-bands"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/standard-error-bands.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Standard_Error_Bands TradingView indicator review: settings, strategy, and how t
 
 ## TradingView
 
-View this indicator: [TradingView — standard-error-bands](https://www.tradingview.com/chart/indicator/standard-error-bands/)
+View this indicator: [View Standard Error Bands on TradingView](https://www.tradingview.com/scripts/?search=standard%20error%20bands)
 
 ## Strategy Notes
 

@@ -1,5 +1,5 @@
 ---
-title: "Squeeze_Momentum_Indicator — Expert Review"
+title: "Squeeze Momentum Indicator — Expert Review"
 slug: "squeeze-momentum-indicator"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — squeeze-momentum-indicator](https://www.tradingview.com/chart/indicator/squeeze-momentum-indicator/)
+View this indicator: [View Squeeze Momentum Indicator on TradingView](https://www.tradingview.com/scripts/?search=squeeze%20momentum%20indicator)
 
 ## Strategy Notes
 

@@ -1,9 +1,10 @@
 ---
-title: "Zero_Lag_Ema — Expert Review"
+title: "Zero Lag Ema — Expert Review"
 slug: "zero-lag-ema"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/zero-lag-ema.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — zero-lag-ema](https://www.tradingview.com/chart/indicator/zero-lag-ema/)
+View this indicator: [View Zero Lag Ema on TradingView](https://www.tradingview.com/scripts/?search=zero%20lag%20ema)
 
 ## Strategy Notes
 

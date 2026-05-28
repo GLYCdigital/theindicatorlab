@@ -1,5 +1,5 @@
 ---
-title: "Guppy_Multiple_Moving_Average — Expert Review"
+title: "Guppy Multiple Moving Average — Expert Review"
 slug: "guppy-multiple-moving-average"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — guppy-multiple-moving-average](https://www.tradingview.com/chart/indicator/guppy-multiple-moving-average/)
+View this indicator: [View Guppy Multiple Moving Average on TradingView](https://www.tradingview.com/scripts/?search=guppy%20multiple%20moving%20average)
 
 ## Strategy Notes
 

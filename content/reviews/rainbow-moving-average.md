@@ -1,5 +1,5 @@
 ---
-title: "Rainbow_Moving_Average — Expert Review"
+title: "Rainbow Moving Average — Expert Review"
 slug: "rainbow-moving-average"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — rainbow-moving-average](https://www.tradingview.com/chart/indicator/rainbow-moving-average/)
+View this indicator: [View Rainbow Moving Average on TradingView](https://www.tradingview.com/scripts/?search=rainbow%20moving%20average)
 
 ## Strategy Notes
 

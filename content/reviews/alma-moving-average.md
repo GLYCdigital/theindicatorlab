@@ -1,5 +1,5 @@
 ---
-title: "Alma_Moving_Average — Expert Review"
+title: "Alma Moving Average — Expert Review"
 slug: "alma-moving-average"
 date: 2026-05-27
 draft: false
@@ -17,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — alma-moving-average](https://www.tradingview.com/chart/indicator/alma-moving-average/)
+View this indicator: [View Alma Moving Average on TradingView](https://www.tradingview.com/scripts/?search=alma%20moving%20average)
 
 ## Strategy Notes
 

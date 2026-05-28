@@ -1,5 +1,5 @@
 ---
-title: "Time_Segmented_Volume — Expert Review"
+title: "Time Segmented Volume — Expert Review"
 slug: "time-segmented-volume"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — time-segmented-volume](https://www.tradingview.com/chart/indicator/time-segmented-volume/)
+View this indicator: [View Time Segmented Volume on TradingView](https://www.tradingview.com/scripts/?search=time%20segmented%20volume)
 
 ## Strategy Notes
 

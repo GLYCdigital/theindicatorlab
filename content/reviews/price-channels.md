@@ -4,6 +4,7 @@ slug: "price-channels"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/price-channels.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Price_Channels TradingView indicator review: settings, strategy, and how to use 
 
 ## TradingView
 
-View this indicator: [TradingView — price-channels](https://www.tradingview.com/chart/indicator/price-channels/)
+View this indicator: [View Price Channels on TradingView](https://www.tradingview.com/scripts/?search=price%20channels)
 
 ## Strategy Notes
 

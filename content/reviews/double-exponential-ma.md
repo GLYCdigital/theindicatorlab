@@ -1,9 +1,10 @@
 ---
-title: "Double_Exponential_Ma — Expert Review"
+title: "Double Exponential Ma — Expert Review"
 slug: "double-exponential-ma"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/double-exponential-ma.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — double-exponential-ma](https://www.tradingview.com/chart/indicator/double-exponential-ma/)
+View this indicator: [View Double Exponential Ma on TradingView](https://www.tradingview.com/scripts/?search=double%20exponential%20ma)
 
 ## Strategy Notes
 

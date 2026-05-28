@@ -1,5 +1,5 @@
 ---
-title: "Vortex_Indicator — Expert Review"
+title: "Vortex Indicator — Expert Review"
 slug: "vortex-indicator"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — vortex-indicator](https://www.tradingview.com/chart/indicator/vortex-indicator/)
+View this indicator: [View Vortex Indicator on TradingView](https://www.tradingview.com/scripts/?search=vortex%20indicator)
 
 ## Strategy Notes
 

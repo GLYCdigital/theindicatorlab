@@ -1,5 +1,5 @@
 ---
-title: "Order_Blocks — Expert Review"
+title: "Order Blocks — Expert Review"
 slug: "order-blocks"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — order-blocks](https://www.tradingview.com/chart/indicator/order-blocks/)
+View this indicator: [View Order Blocks on TradingView](https://www.tradingview.com/scripts/?search=order%20blocks)
 
 ## Strategy Notes
 

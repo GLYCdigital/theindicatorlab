@@ -1,5 +1,5 @@
 ---
-title: "Trend_Strength_Index — Expert Review"
+title: "Trend Strength Index — Expert Review"
 slug: "trend-strength-index"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — trend-strength-index](https://www.tradingview.com/chart/indicator/trend-strength-index/)
+View this indicator: [View Trend Strength Index on TradingView](https://www.tradingview.com/scripts/?search=trend%20strength%20index)
 
 ## Strategy Notes
 

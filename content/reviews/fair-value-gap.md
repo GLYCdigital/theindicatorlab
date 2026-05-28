@@ -1,5 +1,5 @@
 ---
-title: "Fair_Value_Gap — Expert Review"
+title: "Fair Value Gap — Expert Review"
 slug: "fair-value-gap"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — fair-value-gap](https://www.tradingview.com/chart/indicator/fair-value-gap/)
+View this indicator: [View Fair Value Gap on TradingView](https://www.tradingview.com/scripts/?search=fair%20value%20gap)
 
 ## Strategy Notes
 

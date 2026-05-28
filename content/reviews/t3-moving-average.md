@@ -1,5 +1,5 @@
 ---
-title: "T3_Moving_Average — Expert Review"
+title: "T3 Moving Average — Expert Review"
 slug: "t3-moving-average"
 date: 2026-05-27
 draft: false
@@ -17,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — t3-moving-average](https://www.tradingview.com/chart/indicator/t3-moving-average/)
+View this indicator: [View T3 Moving Average on TradingView](https://www.tradingview.com/scripts/?search=t3%20moving%20average)
 
 ## Strategy Notes
 

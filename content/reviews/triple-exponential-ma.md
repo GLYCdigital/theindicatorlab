@@ -1,9 +1,10 @@
 ---
-title: "Triple_Exponential_Ma — Expert Review"
+title: "Triple Exponential Ma — Expert Review"
 slug: "triple-exponential-ma"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/triple-exponential-ma.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — triple-exponential-ma](https://www.tradingview.com/chart/indicator/triple-exponential-ma/)
+View this indicator: [View Triple Exponential Ma on TradingView](https://www.tradingview.com/scripts/?search=triple%20exponential%20ma)
 
 ## Strategy Notes
 

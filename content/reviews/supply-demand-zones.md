@@ -1,5 +1,5 @@
 ---
-title: "Supply_Demand_Zones — Expert Review"
+title: "Supply Demand Zones — Expert Review"
 slug: "supply-demand-zones"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — supply-demand-zones](https://www.tradingview.com/chart/indicator/supply-demand-zones/)
+View this indicator: [View Supply Demand Zones on TradingView](https://www.tradingview.com/scripts/?search=supply%20demand%20zones)
 
 ## Strategy Notes
 

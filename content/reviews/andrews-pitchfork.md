@@ -4,6 +4,7 @@ slug: "andrews-pitchfork"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/andrews-pitchfork.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Andrews_Pitchfork TradingView indicator review: settings, strategy, and how to u
 
 ## TradingView
 
-View this indicator: [TradingView — andrews-pitchfork](https://www.tradingview.com/chart/indicator/andrews-pitchfork/)
+View this indicator: [View Andrews Pitchfork on TradingView](https://www.tradingview.com/scripts/?search=andrews%20pitchfork)
 
 ## Strategy Notes
 

@@ -1,5 +1,5 @@
 ---
-title: "Central_Pivot_Range — Expert Review"
+title: "Central Pivot Range — Expert Review"
 slug: "central-pivot-range"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — central-pivot-range](https://www.tradingview.com/chart/indicator/central-pivot-range/)
+View this indicator: [View Central Pivot Range on TradingView](https://www.tradingview.com/scripts/?search=central%20pivot%20range)
 
 ## Strategy Notes
 

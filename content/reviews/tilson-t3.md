@@ -1,9 +1,10 @@
 ---
-title: "Tilson_T3 — Expert Review"
+title: "Tilson T3 — Expert Review"
 slug: "tilson-t3"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/tilson-t3.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — tilson-t3](https://www.tradingview.com/chart/indicator/tilson-t3/)
+View this indicator: [View Tilson T3 on TradingView](https://www.tradingview.com/scripts/?search=tilson%20t3)
 
 ## Strategy Notes
 

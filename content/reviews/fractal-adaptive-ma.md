@@ -1,9 +1,10 @@
 ---
-title: "Fractal_Adaptive_Ma — Expert Review"
+title: "Fractal Adaptive Ma — Expert Review"
 slug: "fractal-adaptive-ma"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/fractal-adaptive-ma.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — fractal-adaptive-ma](https://www.tradingview.com/chart/indicator/fractal-adaptive-ma/)
+View this indicator: [View Fractal Adaptive Ma on TradingView](https://www.tradingview.com/scripts/?search=fractal%20adaptive%20ma)
 
 ## Strategy Notes
 

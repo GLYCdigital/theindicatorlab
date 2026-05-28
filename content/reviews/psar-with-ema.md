@@ -4,6 +4,7 @@ slug: "psar-with-ema"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/psar-with-ema.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Psar_With_Ema TradingView indicator review: settings, strategy, and how to use i
 
 ## TradingView
 
-View this indicator: [TradingView — psar-with-ema](https://www.tradingview.com/chart/indicator/psar-with-ema/)
+View this indicator: [View Psar With Ema on TradingView](https://www.tradingview.com/scripts/?search=psar%20with%20ema)
 
 ## Strategy Notes
 

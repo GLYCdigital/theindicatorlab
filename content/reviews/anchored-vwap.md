@@ -1,5 +1,5 @@
 ---
-title: "Anchored_Vwap — Expert Review"
+title: "Anchored Vwap — Expert Review"
 slug: "anchored-vwap"
 date: 2026-05-27
 draft: false
@@ -22,7 +22,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — anchored-vwap](https://www.tradingview.com/chart/indicator/anchored-vwap/)
+View this indicator: [View Anchored Vwap on TradingView](https://www.tradingview.com/scripts/?search=anchored%20vwap)
 
 ## Strategy Notes
 

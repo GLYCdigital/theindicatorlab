@@ -4,6 +4,7 @@ slug: "linear-regression-channel"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/linear-regression-channel.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Linear_Regression_Channel TradingView indicator review: settings, strategy, and 
 
 ## TradingView
 
-View this indicator: [TradingView — linear-regression-channel](https://www.tradingview.com/chart/indicator/linear-regression-channel/)
+View this indicator: [View Linear Regression Channel on TradingView](https://www.tradingview.com/scripts/?search=linear%20regression%20channel)
 
 ## Strategy Notes
 

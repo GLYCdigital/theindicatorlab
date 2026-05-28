@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Moving_Average — Expert Review"
+title: "Adaptive Moving Average — Expert Review"
 slug: "adaptive-moving-average"
 date: 2026-05-27
 draft: false
@@ -17,7 +17,7 @@ Clean chart with strong trend signal. The indicator shows clear support/resistan
 
 ## TradingView
 
-View this indicator: [TradingView — adaptive-moving-average](https://www.tradingview.com/chart/indicator/adaptive-moving-average/)
+View this indicator: [View Adaptive Moving Average on TradingView](https://www.tradingview.com/scripts/?search=adaptive%20moving%20average)
 
 ## Strategy Notes
 

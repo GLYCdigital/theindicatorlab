@@ -4,6 +4,7 @@ slug: "alma-arnaud-legoux"
 date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/alma-arnaud-legoux.png"
 tags: [indicators, scalping, technical-analysis]
 categories: [Momentum, Trend, Technical Analysis]
 rating: 4
@@ -16,7 +17,7 @@ Alma_Arnaud_Legoux TradingView indicator review: settings, strategy, and how to 
 
 ## TradingView
 
-View this indicator: [TradingView — alma-arnaud-legoux](https://www.tradingview.com/chart/indicator/alma-arnaud-legoux/)
+View this indicator: [View Alma Arnaud Legoux on TradingView](https://www.tradingview.com/scripts/?search=alma%20arnaud%20legoux)
 
 ## Strategy Notes
 
