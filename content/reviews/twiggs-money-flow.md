@@ -1,5 +1,7 @@
 ---
 title: "Twiggs Money Flow Review: Settings, Strategy &amp; How to Use It"
+description: "In-depth Twiggs Money Flow indicator review with chart analysis, strategy notes, and TradingView setup guide. Should you install Twiggs Money Flow?"
+image: "/screenshots/twiggs-money-flow.png"
 date: 2026-05-19
 draft: false
 type: reviews
@@ -15,10 +17,6 @@ categories:
   - Free
   - Volume
 rating: 4
-image: "/screenshots/twiggs-money-flow.png"
-image_alt: "Twiggs Money Flow TradingView indicator chart screenshot"
-description: "Twiggs Money Flow (TMF) is a volume-based indicator that measures buying and selling pressure to identify trend strength and potential reversals, offeri..."
-keywords: "twiggs money flow, volume, tradingview, indicator, review, trading, accumulation, Twiggs Money Flow"
 ---
 
 <script type="application/ld+json">

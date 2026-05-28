@@ -83,6 +83,12 @@ defaultContentLanguage = "en"
     weight = 25
 
   [[menu.main]]
+    identifier = "courses"
+    name = "Courses"
+    url = "/courses/"
+    weight = 27
+
+  [[menu.main]]
     identifier = "backtests"
     name = "Backtests"
     url = "/backtests/"

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+# Don't crawl XML feeds (RSS/Atom)
+Disallow: /*/index.xml
+Disallow: /index.xml
+# Don't crawl affiliate redirect pages
+Disallow: /go/
+# Use trailing-slash URLs in sitemap
+Sitemap: https://theindicatorlab.com/sitemap.xml
