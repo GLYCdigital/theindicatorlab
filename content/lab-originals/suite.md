@@ -93,7 +93,7 @@ description: "All 8 Lab Originals scripts. One subscription.<br>7-day free trial
 
 {{< rawhtml >}}
 <div style="text-align:center;padding:3rem 2rem;margin:3rem 0;background: linear-gradient(135deg, var(--card-bg) 0%, var(--card-bg) 100%); border: 2px solid var(--accent); border-radius: var(--radius-lg); box-shadow: 0 4px 24px rgba(232,119,34,0.2);">
-  <p style="margin: 0 0 0.5rem; font-size: 2rem; font-weight: 800; color: var(--accent);">Start Your 7-Day Free Trial</p>
+  <p style="margin: 0 0 0.5rem; font-size: 2.6rem; font-weight: 800; color: var(--accent);">Start Your 7-Day Free Trial</p>
   <p style="margin: 0 0 1.5rem; color: var(--text-secondary); font-size: 1.3rem;">Full access to all 8 scripts. No restrictions. Cancel anytime.</p>
   <a href="https://buy.stripe.com/8x28wHgSy6pKgu2cyZaAw0a" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 4px 16px rgba(232,119,34,.4);margin:0.75rem 0 1.5rem;display:inline-block;">Get Lab Originals Suite — 7 Days Free</a>
   <p style="margin-top:1.25rem;font-size:1.25rem;color:var(--text-muted);">$29/month after trial · Cancel anytime · Annual: $279 (20% off)</p>
