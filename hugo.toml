@@ -68,19 +68,19 @@ defaultContentLanguage = "en"
     identifier = "reviews"
     name = "Reviews"
     url = "/reviews/"
-    weight = 10
+    weight = 3
 
   [[menu.main]]
     identifier = "categories"
     name = "Categories"
     url = "/categories/"
-    weight = 20
+    weight = 5
 
   [[menu.main]]
     identifier = "daily-digest"
     name = "Daily Digest"
     url = "/daily-digest/"
-    weight = 25
+    weight = 4
 
   [[menu.main]]
 
@@ -88,31 +88,31 @@ defaultContentLanguage = "en"
     identifier = "backtests"
     name = "Backtests"
     url = "/backtests/"
-    weight = 28
+    weight = 7
 
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
-    weight = 9
+    weight = 6
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 30
+    weight = 8
 
   [[menu.main]]
     identifier = "lab-originals"
     name = "Lab Originals"
     url = "/lab-originals/"
-    weight = 5
+    weight = 1
 
   [[menu.main]]
     identifier = "lab-report"
     name = "The Lab Report"
     url = "/the-lab-report/"
-    weight = 8
+    weight = 2
 
 # Analytics (Umami)
 [params.analytics]
