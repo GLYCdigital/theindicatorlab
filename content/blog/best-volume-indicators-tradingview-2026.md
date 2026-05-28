@@ -4,6 +4,7 @@ description: "Compare 7 volume indicators every serious trader should know. From
 date: 2026-05-28
 draft: false
 type: blog
+image: "/screenshots/anchored-vwap.png"
 tags:
   - volume
   - tradingview
