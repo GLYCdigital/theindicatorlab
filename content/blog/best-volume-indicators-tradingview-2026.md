@@ -90,7 +90,7 @@ CVD separates volume into buying and buying volume based on whether each tick tr
 
 This is the closest retail traders get to watching the order book in real time.
 
-→ [Check out CVD Divergence Alerts Pro](/lab-originals/cvd-divergence-alerts-pro/) — our paid script that detects CVD-price divergences automatically.
+→ [Check out CVD Divergence Alerts Pro](/lab-originals/cvd-divergence-alerts/) — our paid script that detects CVD-price divergences automatically.
 
 ---
 
