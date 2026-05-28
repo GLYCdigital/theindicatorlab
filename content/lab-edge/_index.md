@@ -67,7 +67,7 @@ description: "Time-Series Momentum on 166 markets.<br>Weekly signals. Institutio
 <div class="le-hero">
   <h1>The Lab<span>.</span>Edge</h1>
   <p>Time-Series Momentum on <strong>166 markets</strong>. One signal every Sunday. Same framework institutional funds have used for 50+ years — packaged for your phone.</p>
-  <p class="le-cta-sub" style="font-size:1.4rem;color:var(--text-secondary);">Currently in paper trading phase. Launching soon.</p>
+  <p class="le-cta-sub" style="font-size:1.4rem;color:var(--text-secondary);">7-day free trial. Cancel anytime. Annual plans available.</p>
 </div>
 
 <div class="le-trust">
@@ -191,17 +191,19 @@ description: "Time-Series Momentum on 166 markets.<br>Weekly signals. Institutio
     <h2>Lab Edge</h2>
     <div class="le-price">$79<span>/mo</span></div>
     <p class="le-price-sub">Weekly TSM signals on 166 markets · Cancel anytime</p>
-    <p style="color:rgba(255,255,255,0.7);font-size:1.3rem;">Currently in paper trading. Launching after 3-month live track record.</p>
+    <p style="color:rgba(255,255,255,0.7);font-size:1.3rem;">7-day free trial. Cancel anytime. Annual: $759 (20% off).</p>
+    <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta">Get The Lab Edge →</a>
   </div>
 
   <div class="le-pricing" style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);">
     <h2>Bundle — Lab Report + Lab Edge</h2>
     <div class="le-price">$99<span>/mo</span></div>
     <p class="le-price-sub">The Lab Report ($29) + Lab Edge ($79) together. Save $9/mo.</p>
-    <p style="color:rgba(255,255,255,0.7);font-size:1.3rem;">Launching alongside Lab Edge. Stripe subscription available soon.</p>
+    <p style="color:rgba(255,255,255,0.7);font-size:1.3rem;">7-day free trial. Annual: $950 (20% off).</p>
+    <a href="https://buy.stripe.com/dRm7sD0TA7tO2DcbuVaAw0c" class="le-cta">Get The Bundle →</a>
   </div>
 
-  <p style="text-align:center;font-size:1.15rem;color:var(--text-muted);margin-top:1rem;">Coming soon · Stripe subscription will be available here</p>
+  <p style="text-align:center;font-size:1.15rem;color:var(--text-muted);margin-top:1rem;"></p>
 </div>
 
 <div class="le-section">
@@ -232,7 +234,7 @@ description: "Time-Series Momentum on 166 markets.<br>Weekly signals. Institutio
   <div class="le-close">
     <h2>The Edge is patience.</h2>
     <p>One signal per week. 166 markets. No noise.</p>
-    <p style="font-size:1.3rem;color:rgba(255,255,255,0.6);">Coming soon. Stripe subscription live shortly.</p>
+    <p style="font-size:1.3rem;color:rgba(255,255,255,0.6);">7-day free trial. Cancel anytime.</p>
   </div>
 </div>
 
