@@ -81,7 +81,7 @@ description: "All 8 Lab Originals scripts. One subscription.<br>7-day free trial
 | **Annual** | $279/yr (~$23.25/mo) | All 8 scripts. Save 20%. |
 | **Individual** | $15–35 one-time | Single script, lifetime access |
 
-**$195 one-time vs. $29/mo.** Try all 8 scripts free for 7 days before deciding.
+**$200 one-time vs. $29/mo.** Try all 8 scripts free for 7 days before deciding.
 
 ## How It Works
 
