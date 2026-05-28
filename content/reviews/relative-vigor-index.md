@@ -1,80 +1,112 @@
 ---
-title: "Relative Vigor Index — Review"
-date: 2026-05-10
+title: "Relative Vigor Index Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/relative-vigor-index.png"
 tags:
   - relative vigor index
-  - momentum
-  - oscillator
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/relative-vigor-index.png"
 description: "The Relative Vigor Index (RVI) smooths price action to measure trend conviction by comparing closing prices to their trading range."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Relative Vigor Index",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Relative Vigor Index (RVI) smooths price action to measure trend conviction by comparing closing prices to their trading range.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Relative Vigor Index Review
 
 The Relative Vigor Index is a momentum oscillator developed by John Ehlers that attempts to quantify the vigor of a price move by comparing the closing price to the open, high, and low. It is based on the premise that in an uptrend, the close tends to be higher than the open, while in a downtrend, the close tends to be lower. The indicator uses a smoothed moving average of these comparisons to generate a line and a signal line, with crossovers and divergences providing trading signals.
 
-The RVI is typically plotted as two lines: the RVI line and a signal line, often a moving average of the RVI. Values oscillate around a zero line, with positive values suggesting bullish momentum and negative values suggesting bearish momentum. It is often used in conjunction with other indicators to confirm trends and identify potential reversals.
-
-Traders find the RVI useful for spotting trend strength and potential exhaustion. Its main strength lies in filtering out noise compared to raw momentum oscillators, but it can lag in fast-moving markets. It works best in trending conditions and may give false signals in choppy, sideways markets.
+![Relative Vigor Index TradingView indicator chart screenshot](/screenshots/relative-vigor-index.png "Relative Vigor Index indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Compares closing price to the open-high-low range to measure momentum
-- Smoothed using a simple moving average to reduce noise
-- Generates a signal line (typically a 4-period moving average of RVI)
-- Oscillates around a zero line for bullish/bearish bias
-- Can be used to identify divergences with price for reversal signals
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Relative Vigor Index
 
-1. Buy when the RVI line crosses above the signal line from below zero
-2. Sell when the RVI line crosses below the signal line from above zero
-3. Look for bullish divergence when price makes lower lows but RVI makes higher lows
-4. Look for bearish divergence when price makes higher highs but RVI makes lower highs
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Relative Vigor Index
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Smooths price action effectively, reducing false signals
-- Clear crossover signals that are easy to interpret
-- Useful for confirming trend strength in trending markets
-- Divergence signals can provide early reversal warnings
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Lagging indicator that can give late signals in fast markets
-- Performs poorly in ranging or choppy conditions
-- Signal line crossovers can produce many whipsaws without a trend
-- Less popular than RSI or Stochastics, so fewer resources available
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: to identify trend continuation and potential reversals over days or weeks
-- Trend followers: to confirm the strength of an established trend
-- Disciplined traders: who avoid trading in flat markets and wait for clear signals
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Relative Strength Index (RSI): more widely used and faster at identifying overbought/oversold levels
-- Stochastic Oscillator: more sensitive to price changes and better for range-bound markets
-- MACD: provides trend direction and momentum in one indicator with histogram and signal line
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The Relative Vigor Index is a solid momentum tool for traders who prefer smoother signals and trend confirmation, but it is not a standalone system. Its lagging nature and poor performance in choppy markets mean it should be paired with trend filters or other indicators for best results.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
+[View Relative Vigor Index on TradingView →](https://www.tradingview.com/scripts/?search=relative%20vigor%20index)

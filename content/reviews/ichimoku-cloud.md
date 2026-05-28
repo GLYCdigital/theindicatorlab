@@ -1,74 +1,112 @@
 ---
-title: "Ichimoku Cloud — Review"
-date: 2026-05-06
+title: "Ichimoku Cloud Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - ichimoku
-  - cloud
-  - trend
-categories:
-  - Free
-  - Trend
-  - Advanced
-rating: 3
 image: "/screenshots/ichimoku-cloud.png"
+tags:
+  - ichimoku cloud
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 3
 description: "Ichimoku Cloud — the most information-dense indicator on TradingView. Powerful if you learn it. Overwhelming if you don't."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ichimoku Cloud",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Ichimoku Cloud — the most information-dense indicator on TradingView. Powerful if you learn it. Overwhelming if you don't.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Ichimoku Cloud Review
 
 The Ichimoku Cloud (Ichimoku Kinko Hyo) is a complete trading system in one indicator. It shows support/resistance, trend direction, momentum, and future volatility — all at once. The learning curve is steep, but traders who climb it rarely go back to individual indicators.
+
+![Ichimoku Cloud TradingView indicator chart screenshot](/screenshots/ichimoku-cloud.png "Ichimoku Cloud indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **The Cloud (Kumo)** — future support/resistance zone. Price above cloud = bullish, below = bearish
-- **Tenkan-sen** — fast line, similar to 9-period MA
-- **Kijun-sen** — slow line, similar to 26-period MA
-- **Chikou Span** — lagging line, confirms trend by comparing current price to past price
-- **Senkou Span A + B** — cloud boundaries, show future volatility
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Ichimoku Cloud
 
-1. Price above cloud + Tenkan above Kijun = strong uptrend
-2. Cloud thickness = support/resistance strength (thick = strong)
-3. Chikou Span above price from 26 periods ago = trend confirmation
-4. Flat cloud = ranging market (don't trade)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Ichimoku Cloud
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Five signals, one indicator — replaces multiple charts
-- Cloud projects support/resistance into the future (unique feature)
-- Works on any timeframe
-- Excellent for multi-timeframe analysis (higher timeframe cloud = major levels)
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Steep learning curve — most traders give up after a week
-- Default settings (9, 26, 52) are designed for daily charts
-- The cloud doesn't work well on lower timeframes (M1-M15)
-- Too much information for simple setups — can cause analysis paralysis
-- Clunky on mobile TradingView — small screens can't display it well
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Daily chart traders:** This is the single best daily timeframe indicator
-- **Advanced traders:** If you learn it, it replaces 3-4 other indicators
-- **Beginners:** Skip it until you're comfortable with basic MAs and RSI
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Simple EMA crossover** — Does 80% of what Ichimoku does with 10% of the complexity
-- **Bollinger Bands + SuperTrend** — Trend + volatility combo that's easier to read
-- **VWAP** — Better for intraday trading than Ichimoku
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-Brilliant on daily charts for experienced traders. Overkill for everyone else. If you trade daily and have the patience to learn it, it's a 5/5 tool. If you trade lower timeframes or want simplicity, use something else.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
-
+[View Ichimoku Cloud on TradingView →](https://www.tradingview.com/scripts/?search=ichimoku%20cloud)

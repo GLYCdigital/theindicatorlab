@@ -1,76 +1,112 @@
 ---
-title: "Market Facilitation Index — Review"
-date: 2026-05-14
+title: "Market Facilitation Index Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/market-facilitation-index.png"
 tags:
   - market facilitation index
-  - volume
-  - accumulation
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 3
-image: "/screenshots/market-facilitation-index.png"
-description: "The Market Facilitation Index (MFI) is a volume-based indicator that attempts to measure the efficiency of price movement by combining price change and volume, but its practical value is often questioned due to ambiguous signals."
+description: "The Market Facilitation Index (MFI) is a volume-based indicator that attempts to measure the efficiency of price movement by combining price change and ..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Market Facilitation Index",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Market Facilitation Index (MFI) is a volume-based indicator that attempts to measure the efficiency of price movement by combining price change and ...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Market Facilitation Index Review
 
 Developed by Bill Williams, the Market Facilitation Index is calculated by dividing the price range (high minus low) by volume. It aims to show how much price movement occurs for each unit of volume traded, theoretically indicating the market's willingness to move. The indicator is typically displayed as a histogram with green, red, blue, and brown bars based on combinations of MFI direction and volume changes.
+
+![Market Facilitation Index TradingView indicator chart screenshot](/screenshots/market-facilitation-index.png "Market Facilitation Index indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Color-coded bars for quick visual interpretation
-- Combines price range and volume into a single metric
-- Four distinct bar types: green (up MFI, up volume), red (down MFI, down volume), blue (up MFI, down volume), brown (down MFI, up volume)
-- Often used alongside Bill Williams' trading concepts like the Alligator and Fractals
-- Can be applied to any timeframe or asset class
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Market Facilitation Index
 
-1. Identify periods of price efficiency (green bars suggest strong trend)
-2. Detect potential reversals with brown bars (price range down despite rising volume)
-3. Look for confirmation when combined with other Williams indicators
-4. Use bar patterns to gauge market interest or apathy
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Market Facilitation Index
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simple and straightforward calculation
-- Provides a unique perspective on volume-price relationship
-- Color coding makes it easy to spot patterns at a glance
-- Works on any market or timeframe
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Signals can be ambiguous and subjective to interpret
-- Prone to whipsaws in ranging markets
-- Lacks statistical robustness compared to traditional volume indicators
-- Requires additional confirmation, reducing its standalone value
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Bill Williams followers: who want a complete system including the Alligator and Fractals
-- Novice traders: who appreciate visual simplicity but may misinterpret signals
-- Volume enthusiasts: who seek alternative ways to analyze volume beyond simple bars
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- On-Balance Volume (OBV): more established and less prone to false signals
-- Volume-Weighted Average Price (VWAP): better for intraday trading and institutional context
-- Chaikin Money Flow (CMF): provides clearer overbought/oversold levels
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-While the Market Facilitation Index offers a creative approach to volume analysis, its unreliable signals and subjectivity limit its practical use for most traders. It may add value as a secondary tool within a broader system, but as a standalone indicator it often frustrates with ambiguous readings.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.
+[View Market Facilitation Index on TradingView →](https://www.tradingview.com/scripts/?search=market%20facilitation%20index)

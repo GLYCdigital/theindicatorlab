@@ -1,70 +1,112 @@
 ---
-title: "ATR — Review"
-date: 2026-05-03
+title: "Atr Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/atr.png"
 tags:
   - atr
-  - volatility
-  - stops
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volatility
+  - Trend
+  - Technical Analysis
 rating: 5
-image: "/screenshots/atr.png"
 description: "Average True Range — the only volatility measure you actually need. Not for signals. For position sizing and stop placement."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Atr",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Average True Range — the only volatility measure you actually need. Not for signals. For position sizing and stop placement.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Atr Review
 
 Average True Range (ATR) measures market volatility by calculating the average range between high and low over N periods. Unlike other indicators, ATR doesn't tell you direction — it tells you how much a market typically moves. That's why it's the single most useful tool for position sizing.
+
+![Atr TradingView indicator chart screenshot](/screenshots/atr.png "Atr indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Volatility measurement** — pure and simple
-- **Directionless** — doesn't try to predict, just measures
-- **True range** — accounts for gaps and limit moves
-- **Customizable** — period (default 14)
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Atr
 
-1. Higher ATR = more volatility (reduce position size)
-2. Lower ATR = less volatility (increase position size)
-3. Set stops at 1.5x-3x ATR below entry
-4. ATR breakout = volatility expansion (potential trade entry)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Atr
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Single most useful tool for risk management
-- Works on every market and timeframe
-- Free, built into TradingView
-- Tells you exactly how to size your position
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Not a trading signal — doesn't show direction
-- Can spike during news events
-- Default period (14) may need adjustment
-- Useless on its own without a strategy
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Every trader:** This should be on every chart for position sizing
-- **Options traders:** ATR tells you which strikes to sell
-- **Risk managers:** The foundation of proper position sizing
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Bollinger Bands** — Shows volatility as band width
-- **Keltner Channels** — ATR-based bands
-- **VIX** — Market-wide volatility (not per-stock)
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐⭐ (5/5)**
 
-Not a trading indicator — it's a risk management tool. Every trade should reference ATR for position sizing. If you don't know the ATR of what you're trading, you're gambling.
+Outstanding. One of the best in its category.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Atr on TradingView →](https://www.tradingview.com/scripts/?search=atr)

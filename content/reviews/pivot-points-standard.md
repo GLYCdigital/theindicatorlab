@@ -1,79 +1,112 @@
 ---
-title: "Standard Pivot Points — Review"
-date: 2026-05-15
+title: "Pivot Points Standard Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/pivot-points-standard.png"
 tags:
   - pivot points standard
-  - support & resistance
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Support & Resistance
+  - Trend
+  - Technical Analysis
 rating: 3
-image: "/screenshots/pivot-points-standard.png"
 description: "Standard Pivot Points offer a classic, reliable framework for identifying key support and resistance levels based on the previous period's price action."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pivot Points Standard",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Standard Pivot Points offer a classic, reliable framework for identifying key support and resistance levels based on the previous period's price action.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Pivot Points Standard Review
 
 Standard Pivot Points calculate levels using the high, low, and close of the prior trading period (daily, weekly, monthly). The pivot point itself is the average, with three standard support and resistance levels derived from it. This indicator is widely used by day traders for intraday market structure and potential reversal zones.
 
-The calculation is straightforward: Pivot = (High + Low + Close)/3, then R1 = 2*Pivot - Low, S1 = 2*Pivot - High, and so on. These levels act as magnets, often leading to price reactions, making them a staple in many trading strategies.
-
-While simple and time-tested, the indicator can be less effective in strong trending markets or volatile conditions without confluence from other tools. It provides a baseline but should not be used in isolation.
+![Pivot Points Standard TradingView indicator chart screenshot](/screenshots/pivot-points-standard.png "Pivot Points Standard indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Calculates one pivot point and three support/resistance levels (S1, S2, S3, R1, R2, R3)
-- Based on the previous period's high, low, and close price
-- Plots horizontal lines on the chart for immediate visual reference
-- Automatically updates with each new period (daily, weekly, monthly)
-- Customizable colors and line styles for different levels
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Pivot Points Standard
 
-1. Identify potential intraday entry and exit points near S/R levels
-2. Set stop-loss orders just beyond support or resistance zones
-3. Combine with candlestick patterns for high-probability reversals
-4. Use as a framework for breakout or mean-reversion strategies
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Pivot Points Standard
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simple and easy to understand for beginners
-- Provides clear, objective levels without lag
-- Works well in range-bound markets for scalping
-- Universally recognized across trading platforms
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Less effective in strong trending markets (levels often break)
-- Static levels don't adapt to intraday price dynamics
-- Can generate false signals in low volatility or choppy conditions
-- Requires confluence with other indicators for reliability
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Day traders: for quick intraday support/resistance levels
-- Swing traders: as a baseline for multi-day setups
-- Beginners: as a foundational tool to understand market structure
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Fibonacci Pivot Points: uses Fibonacci ratios for more dynamic levels
-- Woodie's Pivot Points: emphasizes opening price for different calculations
-- Camarilla Pivot Points: focuses on volatility with tighter levels near price
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-Standard Pivot Points are a solid, time-honored baseline for support and resistance, especially for intraday traders. However, they are not a standalone solution and work best when combined with volume, momentum, or price action confirmation. A worthwhile addition to any trader's toolbox, but not a magic bullet.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
+[View Pivot Points Standard on TradingView →](https://www.tradingview.com/scripts/?search=pivot%20points%20standard)

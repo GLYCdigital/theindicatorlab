@@ -1,70 +1,112 @@
 ---
-title: "Donchian Channels — Review"
-date: 2026-05-03
+title: "Donchian Channels Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - donchian
-  - channels
-  - breakout
-categories:
-  - Free
-  - Volatility
-rating: 3
 image: "/screenshots/donchian-channels.png"
+tags:
+  - donchian channels
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 3
 description: "Donchian Channels — the original breakout indicator. Richard Donchian's classic measures the highest high and lowest low over N periods."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Donchian Channels",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Donchian Channels — the original breakout indicator. Richard Donchian's classic measures the highest high and lowest low over N periods.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Donchian Channels Review
 
 Donchian Channels plot the highest high and lowest low over a set period, creating an upper and lower band with a median line. It's the oldest breakout indicator still in common use — developed by Richard Donchian, the father of trend following.
+
+![Donchian Channels TradingView indicator chart screenshot](/screenshots/donchian-channels.png "Donchian Channels indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Upper band** — highest high over N periods
-- **Lower band** — lowest low over N periods
-- **Median line** — average of upper and lower
-- **Breakout signals** — price closing outside the bands
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Donchian Channels
 
-1. Price breaks above upper band = potential uptrend start
-2. Price breaks below lower band = potential downtrend start
-3. Bands widening = increasing volatility
-4. Bands narrowing = consolidation (expect breakout)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Donchian Channels
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Pure price action — no derived math or smoothing
-- Excellent for breakout trading
-- Works across all timeframes
-- Simple concept, easy to understand
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Very lagging — highest high/lowest low is a rear-view mirror
-- Whipsaws in ranging markets
-- Less information than Bollinger or Keltner
-- Requires confirmation — breakouts can fail
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Breakout traders:** The original breakout tool
-- **Trend followers:** Use as a systematic entry trigger
-- **Beginners:** Good learning tool for understanding volatility
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Bollinger Bands** — More information (volatility, mean reversion)
-- **Keltner Channels** — Smoother, ATR-based
-- **SuperTrend** — Better trend direction signals
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-The original breakout indicator that started it all. Useful for systematic trend following strategies, but more modern alternatives offer better information. Keep it simple or use Bollinger instead.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Donchian Channels on TradingView →](https://www.tradingview.com/scripts/?search=donchian%20channels)

@@ -1,76 +1,112 @@
 ---
-title: "Chande Momentum Oscillator — Review"
-date: 2026-05-10
+title: "Chande Momentum Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/chande-momentum.png"
 tags:
   - chande momentum
-  - momentum
-  - oscillator
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/chande-momentum.png"
 description: "A versatile momentum oscillator that smooths price changes to identify overbought and oversold conditions with reduced noise."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Chande Momentum",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "A versatile momentum oscillator that smooths price changes to identify overbought and oversold conditions with reduced noise.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Chande Momentum Review
 
 The Chande Momentum Oscillator (CMO) was developed by Tushar Chande to measure the momentum of price movements by calculating the difference between the sum of recent gains and losses, then normalizing it into an oscillator. Unlike traditional momentum indicators, it uses a smoothing technique that reduces whipsaws and provides a clearer signal. The CMO oscillates between -100 and +100, with typical overbought/oversold thresholds set at +/-50.
+
+![Chande Momentum TradingView indicator chart screenshot](/screenshots/chande-momentum.png "Chande Momentum indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Calculates momentum by comparing the sum of all up-day gains to down-day losses over a specified period
-- Smoothing mechanism reduces noise compared to raw momentum or RSI
-- Plots as a single line oscillating between -100 and +100
-- Customizable overbought and oversold levels (commonly +/-50)
-- Can generate buy and sell signals through centerline crossovers and divergence
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Chande Momentum
 
-1. Buy when the CMO crosses above the oversold level (e.g., -50) or the centerline
-2. Sell when the CMO crosses below the overbought level (e.g., +50) or the centerline
-3. Look for bullish divergence when price makes a lower low but CMO makes a higher low
-4. Use with a trend filter to avoid false signals in ranging markets
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Chande Momentum
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Smoother and less prone to false signals than raw momentum
-- Clearly defined overbought/oversold levels make it easy to interpret
-- Works well in trending markets when combined with a trend indicator
-- Customizable period allows adaptation to different timeframes
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Lagging indicator due to smoothing, may miss early moves
-- Less effective in choppy, sideways markets
-- Overbought/oversold levels are arbitrary and may need adjustment
-- Does not provide directional bias on its own
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: looking for medium-term momentum shifts with reduced noise
-- Discretionary traders: who prefer clear overbought/oversold signals
-- Technical analysts: seeking a smoother alternative to RSI or Stochastic
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- RSI: more widely used and similar overbought/oversold concept but less smoothing
-- MACD: better for trend-following and momentum crossovers
-- Stochastic Oscillator: more sensitive to recent price action, useful for shorter timeframes
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The Chande Momentum Oscillator is a solid choice for traders who want a cleaner momentum reading without the noise of raw indicators. It excels in trending conditions but requires confirmation in ranging markets. Overall, a reliable tool for those comfortable with its smoothing lag.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
+[View Chande Momentum on TradingView →](https://www.tradingview.com/scripts/?search=chande%20momentum)

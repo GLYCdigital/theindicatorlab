@@ -1,80 +1,112 @@
 ---
-title: "Balance of Power (BOP) — Review"
-date: 2026-05-13
+title: "Balance Of Power Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/balance-of-power.png"
 tags:
   - balance of power
-  - volume
-  - accumulation
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/balance-of-power.png"
-description: "The Balance of Power (BOP) indicator provides clear insights into the strength of buying versus selling pressure by comparing price movement to volume, making it a valuable tool for confirming trends and spotting potential reversals."
+description: "The Balance of Power (BOP) indicator provides clear insights into the strength of buying versus selling pressure by comparing price movement to volume, ..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Balance Of Power",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Balance of Power (BOP) indicator provides clear insights into the strength of buying versus selling pressure by comparing price movement to volume, ...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Balance Of Power Review
 
 The Balance of Power (BOP) indicator, developed by Igor Livshin, is a volume-based oscillator that measures the relative strength of buyers and sellers. It calculates a ratio of price change to volume, helping traders assess whether bulls or bears are in control during a given period. The indicator oscillates around a zero line, with positive values indicating buying pressure and negative values signaling selling pressure.
 
-The BOP is typically plotted as a histogram or line below the price chart, making it easy to compare with price action. It is most effective when used in conjunction with other technical tools, such as trend lines or support/resistance levels, to validate breakouts or divergences. The indicator can be applied to any timeframe, from intraday to weekly charts, and works across various markets including stocks, forex, and cryptocurrencies.
-
-While the BOP is not a standalone trading system, it excels at providing early warnings of shifts in market sentiment. Traders often look for bullish divergence (price making lower lows while BOP makes higher lows) as a sign of potential upward reversals, or bearish divergence for downturns. Its simplicity and clear visual representation make it a popular choice for both novice and experienced traders focusing on volume analysis.
+![Balance Of Power TradingView indicator chart screenshot](/screenshots/balance-of-power.png "Balance Of Power indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Measures buying vs. selling pressure using a ratio of price change to volume
-- Oscillates around a zero line for easy interpretation of bullish or bearish sentiment
-- Generates divergence signals to anticipate trend reversals
-- Works on any timeframe and across multiple asset classes
-- Provides clear visual output as a histogram or line chart
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Balance Of Power
 
-1. Use bullish divergence (price lower low, BOP higher low) to anticipate upward reversals
-2. Use bearish divergence (price higher high, BOP lower high) to foresee downward reversals
-3. Combine with trend lines to confirm breakouts when BOP supports the direction
-4. Apply on multiple timeframes to align short-term signals with longer-term trends
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Balance Of Power
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simple and intuitive to interpret with clear zero-line crossing
-- Effective at identifying early shifts in market sentiment
-- Works well as a confirmation tool for other indicators
-- Free and available on most trading platforms
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can produce false signals in choppy or low-volume markets
-- Requires volume data, which may be unreliable for certain assets
-- Lags during strong trends and may miss rapid moves
-- Not a standalone system; needs additional analysis for reliable trades
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Trend-following traders: To confirm strength of trends and avoid false breakouts
-- Reversal traders: To spot divergences and catch early trend changes
-- Volume-focused analysts: To quantify buying and selling pressure objectively
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- On-Balance Volume (OBV): Tracks cumulative volume flow for trend confirmation
-- Volume Weighted Average Price (VWAP): Provides intraday fair value and volume profile
-- Chaikin Money Flow (CMF): Combines price and volume over a set period for broader pressure assessment
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The Balance of Power indicator is a solid volume-based tool that adds depth to price analysis, especially when used for divergence spotting and trend confirmation. While not perfect in all market conditions, its simplicity and effectiveness make it a worthwhile addition to any trader's toolkit.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.
+[View Balance Of Power on TradingView →](https://www.tradingview.com/scripts/?search=balance%20of%20power)

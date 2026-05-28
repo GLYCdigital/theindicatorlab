@@ -1,70 +1,112 @@
 ---
-title: "Money Flow Index — Review"
-date: 2026-05-03
+title: "Money Flow Index Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - mfi
-  - money-flow
-  - volume
-categories:
-  - Free
-  - Volume
-rating: 4
 image: "/screenshots/money-flow-index.png"
+tags:
+  - money flow index
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 4
 description: "Money Flow Index — RSI with volume. The same overbought/oversold concept but weighted by trading volume for more reliable signals."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Money Flow Index",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Money Flow Index — RSI with volume. The same overbought/oversold concept but weighted by trading volume for more reliable signals.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Money Flow Index Review
 
 The Money Flow Index (MFI) is RSI's smarter cousin. Instead of only looking at price, MFI incorporates volume to measure buying and selling pressure. When price and MFI diverge, it's a stronger signal than RSI divergence alone.
+
+![Money Flow Index TradingView indicator chart screenshot](/screenshots/money-flow-index.png "Money Flow Index indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Volume-weighted** — incorporates trading volume
-- **80/20 levels** — overbought/oversold (wider than RSI's 70/30)
-- **Divergence** — stronger than RSI when volume confirms
-- **Money flow ratio** — positive vs negative volume calculation
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Money Flow Index
 
-1. MFI above 80 = overbought (potential reversal down)
-2. MFI below 20 = oversold (potential reversal up)
-3. Divergence between price and MFI = powerful signal
-4. MFI trending up with price = strong uptrend (volume confirms)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Money Flow Index
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- More reliable than RSI — volume adds confirmation
-- Divergences are stronger signals
-- Excellent for swing trading on daily charts
-- Free, built into TradingView
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Less sensitive than RSI — can miss early moves
-- Volume data isn't always accurate (crypto, FX)
-- 80/20 levels are hit less often than RSI's 70/30
-- Not useful on very low-volume instruments
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Swing traders:** Best timeframe is daily chart
-- **Volume traders:** MFI is the volume oscillator to use
-- **RSI users looking for more:** This is your upgrade
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **RSI** — More responsive, no volume component
-- **OBV** — Pure volume analysis, simpler
-- **CMF** — Chaikin Money Flow, similar concept
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-A better RSI. If you like overbought/oversold trading but want volume confirmation, MFI is your tool. Divergences here are more reliable than RSI divergences.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Money Flow Index on TradingView →](https://www.tradingview.com/scripts/?search=money%20flow%20index)

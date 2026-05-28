@@ -1,71 +1,112 @@
 ---
-title: "Pivot Points — Review"
-date: 2026-05-01
+title: "Pivot Points Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - pivot
-  - support-resistance
-  - daily
-categories:
-  - Free
-  - Support & Resistance
-rating: 4
 image: "/screenshots/pivot-points.png"
+tags:
+  - pivot points
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 4
 description: "Pivot Points — classic support and resistance levels used by floor traders. Still relevant in modern markets for identifying key price zones."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pivot Points",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Pivot Points — classic support and resistance levels used by floor traders. Still relevant in modern markets for identifying key price zones.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Pivot Points Review
 
 Pivot Points calculate potential support and resistance levels based on the previous period's high, low, and close. They're the oldest form of support/resistance analysis still in active use — and they still work because enough traders watch them.
+
+![Pivot Points TradingView indicator chart screenshot](/screenshots/pivot-points.png "Pivot Points indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Pivot (PP)** — central level, calculated from (H+L+C)/3
-- **R1, R2, R3** — three resistance levels above pivot
-- **S1, S2, S3** — three support levels below pivot
-- **Daily reset** — fresh levels each trading day
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Pivot Points
 
-1. PP is the center of gravity — expect price to gravitate toward it
-2. S1/R1 are the first support/resistance (day trading range)
-3. Break of R1 = bullish bias for the day
-4. Break of S1 = bearish bias for the day
-5. R2/R3 and S2/S3 are extremes — reversals become more likely
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Pivot Points
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Self-fulfilling prophecy — enough traders use them
-- Fresh levels daily — always relevant
-- Excellent for setting profit targets
-- Free, built into TradingView
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Purely mathematical — doesn't consider market context
-- Less effective in low-volatility environments
-- Standard calculation doesn't fit all markets
-- Multiple pivot calculations can conflict (Woodie, Camarilla, etc.)
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Day traders:** Set intraday targets at R1/S1
-- **Swing traders:** Use weekly pivots for broader levels
-- **Position traders:** Monthly pivots act as major support/resistance
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Volume Profile** — Shows actual support/resistance from volume
-- **Fibonacci retracements** — Dynamic levels, not fixed daily
-- **VWAP** — Intraday support/resistance with volume weighting
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Simple, effective, time-tested. Pivot Points work because enough traders believe in them. Use the classic calculation with R1/S1 as your daily trading range and you won't go far wrong.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Pivot Points on TradingView →](https://www.tradingview.com/scripts/?search=pivot%20points)

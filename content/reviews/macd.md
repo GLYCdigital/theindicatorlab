@@ -1,71 +1,112 @@
 ---
-title: "MACD — Review"
-date: 2026-05-07
+title: "Macd Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/macd.png"
 tags:
   - macd
   - trend
-  - momentum
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
   - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/macd.png"
 description: "Moving Average Convergence Divergence — the trend-following heavyweight. Slower than RSI, more reliable in trends."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Macd",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Moving Average Convergence Divergence — the trend-following heavyweight. Slower than RSI, more reliable in trends.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Macd Review
 
 The MACD (Moving Average Convergence Divergence) tracks the relationship between two exponential moving averages. It's slower than RSI but more reliable in trending markets — which is most markets, most of the time.
+
+![Macd TradingView indicator chart screenshot](/screenshots/macd.png "Macd indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Signal line crossovers** — MACD line crossing above/below the signal line
-- **Zero-line crossovers** — MACD histogram above/below zero = momentum direction
-- **Divergence** — price vs MACD direction — especially powerful on daily charts
-- **Histogram** — rate of change visualization, shows momentum accelerating/decelerating
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Macd
 
-1. Default settings (12, 26, 9) work well — adjust if needed
-2. Signal line cross = trade entry/exit signal
-3. Zero line cross = trend confirmation (above zero = bullish)
-4. Histogram shrinking = momentum fading (prepare for reversal)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Macd
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Excellent in trending markets — filters out noise
-- Three signals in one (crossover, centerline, divergence)
-- Histogram shows momentum velocity, not just direction
-- Universally understood by traders
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Lagging — you'll miss the first move of every trend
-- Useless in ranging/sideways markets (whipsaws)
-- Default parameters (12, 26, 9) were designed in the 1970s — markets have changed
-- Can give conflicting signals across timeframes
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Trend traders:** Best friend. Use it to confirm trend direction and time entries
-- **Swing traders:** Set it and check it daily
-- **Scalpers:** Skip it — too slow for M1/M5 timeframes
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Awesome Oscillator** — Faster, uses median price instead of close
-- **Fisher Transform** — More responsive, catches turns earlier
-- **Volume Profile** — Better for understanding price context
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-A must-have for trend traders. Slower than alternatives but more reliable in trending conditions. Best paired with RSI — MACD for trend, RSI for entries.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
-
+[View Macd on TradingView →](https://www.tradingview.com/scripts/?search=macd)

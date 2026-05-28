@@ -1,76 +1,112 @@
 ---
-title: "Hull Moving Average — Review"
-date: 2026-05-11
+title: "Hull Moving Average Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/hull-moving-average.png"
 tags:
   - hull moving average
   - trend
-  - direction
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
   - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/hull-moving-average.png"
 description: "The Hull Moving Average (HMA) solves the lag problem — it's a moving average that reacts almost as fast as price itself."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hull Moving Average",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Hull Moving Average (HMA) solves the lag problem — it's a moving average that reacts almost as fast as price itself.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Hull Moving Average Review
 
 Alan Hull created the HMA to eliminate lag in traditional moving averages. He used weighted moving averages and a clever square root trick to create an MA that nearly hugs price. The result is a line that turns sharply at market reversals instead of slowly curving after the fact. It's one of the few MAs that genuinely improves on the original concept.
+
+![Hull Moving Average TradingView indicator chart screenshot](/screenshots/hull-moving-average.png "Hull Moving Average indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Near-zero lag** — the fastest-reacting MA on TradingView
-- **Weighted calculation** — uses WMA math with square root period trick
-- **Smooth output** — faster reaction without extra choppiness
-- **Crossover clarity** — clean, decisive cross signals
-- **Free and popular** — huge community of HMA users
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Hull Moving Average
 
-1. Use HMA (20) as dynamic support/resistance in trends
-2. HMA crosses above/below price = early trend change signal
-3. Two HMA lines (fast/slow) for crossover signals with less lag
-4. HMA + volume confirmation = high-probability entries
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Hull Moving Average
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Fastest-reacting MA — catches reversals before SMA/EMA
-- Smooth output — no jitter despite the speed
-- Well-documented with strong community support
-- Free on TradingView
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can give whipsaws in extremely choppy markets
-- Still a lagging indicator — just less lagging than alternatives
-- Best with trend context — pure cross signals need confirmation
-- Not as standard as EMA — fewer institutional strategies use it
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Trend followers:** Fastest MA for catching new trends early
-- **Day traders:** Quick reactions suit short timeframes
-- **System traders:** Clean signals are great for automation
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **ALMA** — Different approach, similar low-lag goal
-- **VWMA** — Volume-weighted alternative
-- **Zero Lag EMA** — Another lag-reduction variant
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-HMA is my pick for best all-round moving average. Fast enough for scalping, smooth enough for swing trading. Learn it, use it, profit.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
+[View Hull Moving Average on TradingView →](https://www.tradingview.com/scripts/?search=hull%20moving%20average)

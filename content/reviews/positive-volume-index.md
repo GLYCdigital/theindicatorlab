@@ -1,76 +1,112 @@
 ---
-title: "Positive Volume Index — Review"
-date: 2026-05-10
+title: "Positive Volume Index Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/positive-volume-index.png"
 tags:
   - positive volume index
-  - volume
-  - accumulation
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 3
-image: "/screenshots/positive-volume-index.png"
-description: "The Positive Volume Index focuses solely on days with higher volume to identify when uninformed traders are driving the market, offering a unique contrarian perspective on trend strength."
+description: "The Positive Volume Index focuses solely on days with higher volume to identify when uninformed traders are driving the market, offering a unique contra..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Positive Volume Index",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Positive Volume Index focuses solely on days with higher volume to identify when uninformed traders are driving the market, offering a unique contra...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Positive Volume Index Review
 
 The Positive Volume Index (PVI) is a volume-based indicator that only updates on days when trading volume increases compared to the previous day. It assumes that on high-volume days, less informed traders (the crowd) are active, while low-volume days reflect the actions of informed investors. By isolating these high-volume periods, the PVI helps traders gauge when market sentiment may be overly optimistic or pessimistic.
+
+![Positive Volume Index TradingView indicator chart screenshot](/screenshots/positive-volume-index.png "Positive Volume Index indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Updates only on days with higher volume than the previous session
-- Typically plotted as a cumulative line similar to price
-- Often paired with a moving average to generate signals
-- Assumes high volume reflects uninformed trading activity
-- Can be used to identify divergences with price movements
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Positive Volume Index
 
-1. Buy signal: PVI crosses above its moving average during an uptrend
-2. Sell signal: PVI crosses below its moving average during a downtrend
-3. Divergence: PVI diverging from price may indicate a reversal
-4. Confirmation: Use with other trend indicators to filter false signals
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Positive Volume Index
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simple to calculate and interpret
-- Provides a contrarian perspective on market sentiment
-- Works well in trending markets
-- Can help filter out noise from low-volume days
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- May generate false signals in choppy or sideways markets
-- Less effective in highly liquid markets with constant volume spikes
-- Requires confirmation from other indicators for reliability
-- Assumes a psychological premise that may not always hold true
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Contrarian traders: who seek to profit from crowd behavior during high volume
-- Trend followers: looking for additional confirmation from volume analysis
-- Intermediate traders: who understand the limitations of volume-based signals
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- On-Balance Volume: uses full volume data for trend confirmation, not just high-volume days
-- Volume Price Trend: integrates price change magnitude with volume for a more nuanced view
-- Accumulation/Distribution Line: focuses on where volume closes relative to the range
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-The Positive Volume Index is a niche tool that adds a unique behavioral layer to volume analysis, but it should not be used in isolation due to its reliance on a specific market psychology. When combined with other indicators, it can offer valuable contrarian signals, but traders should be wary of whipsaws in non-trending conditions.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.
+[View Positive Volume Index on TradingView →](https://www.tradingview.com/scripts/?search=positive%20volume%20index)

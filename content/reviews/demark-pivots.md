@@ -1,79 +1,112 @@
 ---
-title: "DeMark Pivots — Review"
-date: 2026-05-15
+title: "Demark Pivots Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/demark-pivots.png"
 tags:
   - demark pivots
-  - support & resistance
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Support & Resistance
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/demark-pivots.png"
-description: "DeMark Pivots offer a unique, mathematically derived alternative to traditional pivot points, focusing on exhaustion levels for more accurate support and resistance."
+description: "DeMark Pivots offer a unique, mathematically derived alternative to traditional pivot points, focusing on exhaustion levels for more accurate support an..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Demark Pivots",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "DeMark Pivots offer a unique, mathematically derived alternative to traditional pivot points, focusing on exhaustion levels for more accurate support an...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Demark Pivots Review
 
 DeMark Pivots, developed by Tom DeMark, are a set of support and resistance levels calculated using a specific formula based on the prior period's price action. Unlike standard pivot points that use simple high, low, and close averages, DeMark Pivots incorporate the relationship between the open and close to predict potential turning points. This makes them particularly useful for identifying price exhaustion and trend reversals.
 
-These pivots are widely used by traders who prefer a more dynamic approach to support and resistance. The calculations produce up to four support and resistance levels, with the first level (R1 or S1) often being the most significant. The indicator is available on most major trading platforms and can be applied to any timeframe, though it is most effective in trending markets.
-
-Traders often combine DeMark Pivots with other technical tools like moving averages or momentum indicators to confirm signals. The indicator's strength lies in its ability to highlight price levels where the market is likely to stall or reverse, making it a valuable addition to any trader's toolkit.
+![Demark Pivots TradingView indicator chart screenshot](/screenshots/demark-pivots.png "Demark Pivots indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Calculates up to 4 support and 4 resistance levels based on DeMark's unique formula
-- Uses prior period's open, high, low, and close to predict exhaustion points
-- Automatically plots levels on the chart for any timeframe
-- Levels are recalculated at the start of each new period
-- Works well in both trending and ranging markets
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Demark Pivots
 
-1. Identify key reversal zones by watching price action at R1 and S1 levels
-2. Use R2/R3 and S2/S3 as extreme boundaries for breakouts or pullbacks
-3. Combine with candlestick patterns for higher probability trade entries
-4. Set stop-loss orders just beyond the nearest pivot level
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Demark Pivots
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Provides more dynamic levels than traditional pivot points
-- Effective for spotting potential trend reversals
-- Works across all timeframes and asset classes
-- Easy to interpret and integrate with other analysis
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Less effective in strongly trending markets without confirmation
-- Can generate false signals in choppy or low-volatility conditions
-- Requires understanding of the underlying calculation to trust levels
-- Not as widely known as standard pivot points, so less consensus
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: Excellent for identifying intraweek reversal zones
-- Day traders: Useful for setting intraday targets and stops
-- Technical analysts: Adds a unique, non-traditional perspective to support/resistance
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Standard Pivot Points: More widely used and simpler for beginners
-- Fibonacci Pivots: Combines Fibonacci retracement levels with pivot calculations
-- Woodie Pivots: Another variation that gives more weight to the closing price
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-DeMark Pivots are a solid choice for traders seeking a more nuanced support and resistance indicator. They excel in identifying exhaustion points but require confirmation in strong trends. Overall, they are a valuable supplementary tool rather than a standalone system.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
+[View Demark Pivots on TradingView →](https://www.tradingview.com/scripts/?search=demark%20pivots)

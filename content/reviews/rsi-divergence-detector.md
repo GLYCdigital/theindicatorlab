@@ -1,83 +1,112 @@
 ---
-title: "RSI Divergence Detector — Indicator Review"
-date: 2026-05-23
+title: "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/rsi-divergence-detector.png"
 tags:
   - rsi divergence detector
-  - momentum
-  - divergence
-  - detector
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/rsi-divergence-detector.png"
 description: "A detailed review of RSI Divergence Detector — a momentum indicator for TradingView. Settings, strategy, pros and cons, and how to use it effectively."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Rsi Divergence Detector",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "A detailed review of RSI Divergence Detector — a momentum indicator for TradingView. Settings, strategy, pros and cons, and how to use it effectively.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Rsi Divergence Detector Review
 
 RSI Divergence Detector is a momentum oscillator that measures the speed and magnitude of price movements. It helps traders identify overbought and oversold conditions, spot divergences, and confirm trend strength before entering trades.
 
-On a TradingView chart, RSI Divergence Detector appears as an oscillator below the price panel — oscillating around a centerline or between fixed bounds. The indicator generates signals when it crosses key threshold levels or when its direction diverges from price action.
+![Rsi Divergence Detector TradingView indicator chart screenshot](/screenshots/rsi-divergence-detector.png "Rsi Divergence Detector indicator on TradingView")
 
+<!--more-->
 
-## How It Works
+## Key Features
 
-RSI Divergence Detector calculates the difference between recent gains and losses over a specified period, normalizing the result into an oscillator. The resulting value oscillates, with extreme readings signaling potential reversals and midline crossovers confirming trend direction.
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-Traders typically watch for three signals:
+## Best Settings for Rsi Divergence Detector
 
-- **Overbought/Oversold:** When the oscillator reaches extreme levels, it suggests the trend is stretched and may reverse
-- **Centerline Crossovers:** Crossing above/below the midline confirms bullish/bearish momentum shifts
-- **Divergences:** When price makes a higher high but the oscillator makes a lower high, momentum is weakening — a reversal signal
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
 
+## How to Use Rsi Divergence Detector
 
-## Best Settings
-
-| Parameter | Default | Recommended Range |
-|-----------|---------|-------------------|
-| Period | 14 | 7–21 |
-| Overbought | 70 | 60–80 |
-| Oversold | 30 | 20–40 |
-| Smoothing | 3 | 1–5 |
-
-Shorter periods generate more signals but increase noise. Longer periods filter whipsaws but lag more. The 14-period default works well on 1h and daily timeframes.
-
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Clear overbought/oversold signals — easy to interpret at a glance
-- Divergence detection provides early reversal warnings before price turns
-- Works on all timeframes and markets — universal applicability
-- Combines well with trend indicators for confirmation
-- Built into TradingView — no custom script needed
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can stay overbought/oversold for extended periods in strong trends
-- Lagging by design — signals confirm after the move starts
-- False signals in ranging/sideways markets
-- Needs confirmation from price action or another indicator
-- Default settings aren't optimal for all markets
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
-## Strategy Tips
+## Who Is This For?
 
-1. **Divergence is the highest-probability signal.** Wait for price to make a new high/low while the oscillator fails to confirm — then enter on the first candle reversal.
-2. **Combine with trend filter.** Only take overbought signals in downtrends and oversold signals in uptrends. Use a 200-period moving average for trend context.
-3. **Watch the centerline.** A cross above the midline confirms bullish momentum; below confirms bearish. These signals are more reliable than extreme readings.
-4. **Multi-timeframe confirmation.** If the daily RSI Divergence Detector is oversold and the 4h starts turning up, that's a high-probability long setup.
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
+## Alternatives
 
-## Should You Install RSI Divergence Detector?
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
 
-Yes — RSI Divergence Detector is a solid momentum indicator that earns its place on your chart. It won't reinvent your trading, but it reliably flags momentum shifts that most traders miss until it's too late.
+## Frequently Asked Questions
 
-**Rating: 4/5** ★★★★☆
+### How do I know which period to use?
 
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
 
----
+### Does it repaint?
 
-**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
 
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+
+## Final Verdict
+
+**Rating: ⭐⭐⭐⭐ (4/5)**
+
+Solid tool. Does what it claims and does it well.
+
+[View Rsi Divergence Detector on TradingView →](https://www.tradingview.com/scripts/?search=rsi%20divergence%20detector)

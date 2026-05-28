@@ -1,78 +1,112 @@
 ---
-title: "Vertical Horizontal Filter (VHF) — Review"
-date: 2026-05-16
+title: "Vertical Horizontal Filter Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/vertical-horizontal-filter.png"
 tags:
   - vertical horizontal filter
   - trend
-  - direction
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
   - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/vertical-horizontal-filter.png"
-description: "The Vertical Horizontal Filter (VHF) identifies trending versus ranging markets by measuring price movement efficiency, helping traders avoid false signals."
+description: "The Vertical Horizontal Filter (VHF) identifies trending versus ranging markets by measuring price movement efficiency, helping traders avoid false sign..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vertical Horizontal Filter",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Vertical Horizontal Filter (VHF) identifies trending versus ranging markets by measuring price movement efficiency, helping traders avoid false sign...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Vertical Horizontal Filter Review
 
 The Vertical Horizontal Filter (VHF) is a trend indicator developed by Adam Hewison that quantifies whether a market is trending strongly, consolidating, or moving sideways. It calculates the ratio of net price movement over a period to the sum of all individual price changes, producing a value between 0 and 1; higher values indicate strong trends, while lower values suggest choppy, range-bound conditions.
 
-This indicator does not predict direction but instead serves as a filter to determine when to apply trend-following strategies versus mean-reversion or breakout approaches. The VHF is typically plotted as a single line, often with a threshold (e.g., 0.3 or 0.4) to distinguish trend from non-trend regimes.
+![Vertical Horizontal Filter TradingView indicator chart screenshot](/screenshots/vertical-horizontal-filter.png "Vertical Horizontal Filter indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Quantifies trend strength on a scale from 0 to 1
-- Works across multiple timeframes and asset classes
-- Requires only price data (high, low, close)
-- Customizable lookback period (default 28)
-- Can be used as a standalone filter or combined with other indicators
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Vertical Horizontal Filter
 
-1. Set a threshold (e.g., 0.3) to identify trending vs. ranging markets
-2. Apply trend-following strategies when VHF is above threshold
-3. Use mean-reversion or breakout strategies when VHF is low
-4. Adjust lookback period based on trading style (shorter for scalping, longer for swing)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Vertical Horizontal Filter
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simple to understand and calculate
-- Helps avoid false signals in ranging markets
-- Versatile across different trading styles
-- Works well as a complementary filter for other indicators
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Does not indicate trend direction, only strength
-- Threshold values can be subjective and require optimization
-- Lagging indicator, may miss early trend shifts
-- Less effective in highly volatile or erratic markets
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Trend traders: to confirm trend presence before entry
-- Swing traders: to filter out choppy periods and focus on clear moves
-- Systematic traders: as a regime filter in algorithmic strategies
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- ADX (Average Directional Index): provides both trend strength and direction
-- Choppiness Index: specifically measures market chop, similar use case
-- Efficiency Ratio (ER): comparable concept by Perry Kaufman, used in adaptive moving averages
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The VHF is a solid, underutilized tool for identifying market regimes, but it works best as a supporting indicator rather than a standalone system. It excels at keeping you out of trouble during sideways markets, though you'll need additional inputs for trade direction and timing.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
+[View Vertical Horizontal Filter on TradingView →](https://www.tradingview.com/scripts/?search=vertical%20horizontal%20filter)

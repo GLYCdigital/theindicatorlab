@@ -1,70 +1,112 @@
 ---
-title: "Fibonacci Retracement — Review"
-date: 2026-05-09
+title: "Fibonacci Retracement Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/fibonacci-retracement.png"
 tags:
   - fibonacci retracement
-  - support & resistance
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Support & Resistance
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/fibonacci-retracement.png"
 description: "Fibonacci Retracement is the most widely used tool in technical analysis — traders use it to find where price will reverse in a pullback."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Fibonacci Retracement",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Fibonacci Retracement is the most widely used tool in technical analysis — traders use it to find where price will reverse in a pullback.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Fibonacci Retracement Review
 
 Fibonacci Retracement draws horizontal lines at the key ratios: 23.6%, 38.2%, 50%, 61.8%, and 78.6%. After a strong move in one direction, price often pulls back to one of these levels before continuing. The 61.8% 'Golden Ratio' is the most watched level. Every trader should know this one — it's the closest thing technical analysis has to a law of physics.
+
+![Fibonacci Retracement TradingView indicator chart screenshot](/screenshots/fibonacci-retracement.png "Fibonacci Retracement indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Key reversal zones** — 38.2%, 50%, 61.8% are the levels that matter
-- **Golden Ratio (61.8%)** — most watched level across all markets
-- **Confluence multiplier** — strongest when Fib aligns with MA, trendline, or volume
-- **Multi-timeframe** — draw on weekly, trade on 4H
-- **Built into every platform** — zero setup required
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Fibonacci Retracement
 
-1. Draw from swing low to swing high (or vice versa) in an trending move
-2. Look for entries at 38.2%, 50%, or 61.8% retracement with trend
-3. Combine with a candlestick reversal pattern (pin bar, engulfing) for confirmation
-4. Higher timeframe Fib levels = stronger support/resistance
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Fibonacci Retracement
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Universally watched — self-fulfilling prophecy effect
-- Works across every market and timeframe
-- Excellent for setting stop-loss and take-profit levels
-- No indicators needed — pure price action tool
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Subjective — where you draw the swing points changes the levels
-- Doesn't always work — price can blow through all levels
-- Overused — everyone is watching the same levels
-- Not a standalone system — needs confirmation
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **All traders:** This is a universal tool every trader should know
-- **Swing traders:** Gold standard for pullback entries
-- **Position traders:** Use weekly Fibs for major reversal zones
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Horizontal S/R** — Simpler, no Fib needed
-- **Pivot Points** — Algorithmic approach to the same levels
-- **Ichimoku Kijun** — Dynamic support/resistance alternative
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Fibonacci Retracement isn't magic — it's just math that everyone watches. That's its strength. Learn to draw it properly, combine it with price action, and it'll become your most reliable tool for pullback entries.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Fibonacci Retracement on TradingView →](https://www.tradingview.com/scripts/?search=fibonacci%20retracement)

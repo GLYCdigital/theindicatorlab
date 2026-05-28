@@ -1,76 +1,112 @@
 ---
-title: "Know Sure Thing (KST) — Review"
-date: 2026-05-12
+title: "Know Sure Thing Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/know-sure-thing.png"
 tags:
   - know sure thing
-  - momentum
-  - oscillator
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/know-sure-thing.png"
 description: "The Know Sure Thing (KST) is a momentum oscillator that smooths multiple rate-of-change periods to identify major trend shifts and filter out market noise."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Know Sure Thing",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Know Sure Thing (KST) is a momentum oscillator that smooths multiple rate-of-change periods to identify major trend shifts and filter out market noise.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Know Sure Thing Review
 
 Developed by Martin Pring, the KST combines four different rate-of-change (ROC) timeframes into a single smoothed line, providing a comprehensive view of momentum across short, intermediate, and long-term horizons. Its signal line crossovers and centerline analysis help traders spot trend reversals and confirm established trends. The indicator is especially valued for reducing false signals compared to single-period momentum tools.
+
+![Know Sure Thing TradingView indicator chart screenshot](/screenshots/know-sure-thing.png "Know Sure Thing indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Combines four ROC periods (typically 10, 15, 20, 30) with weighted smoothing
-- Generates a single KST line and a signal line (SMA of KST)
-- Provides centerline crossovers for bullish/bearish bias
-- Offers divergence detection for potential trend reversals
-- Customizable periods and smoothing factors to suit different markets
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Know Sure Thing
 
-1. Buy when KST crosses above signal line and is rising above centerline
-2. Sell when KST crosses below signal line and is falling below centerline
-3. Look for bullish divergence when price makes lower low but KST makes higher low
-4. Use centerline as primary trend filter: above for longs, below for shorts
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Know Sure Thing
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Reduces noise by smoothing multiple timeframes
-- Effective at identifying major trend shifts early
-- Works well on daily and weekly charts for swing trading
-- Complements other momentum tools like RSI or MACD
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can lag significantly during fast markets due to heavy smoothing
-- Complex calculation may be less intuitive for beginners
-- Signal line crossovers still produce false signals in choppy markets
-- Requires careful parameter tuning for different assets
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: Ideal for catching medium-term trends with reduced noise
-- Trend-following investors: Helps confirm long-term momentum shifts
-- Experienced analysts: Those comfortable with multi-timeframe indicators
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- MACD: Simpler, more widely used, and faster for shorter timeframes
-- ROC (Rate of Change): More responsive but noisier for trend confirmation
-- TRIX: Similar triple-smoothed approach but focuses on exponential smoothing
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The KST is a robust indicator for traders who prioritize trend clarity over speed, but its complexity and lag make it less suitable for scalping or highly volatile assets. When paired with price action and volume analysis, it becomes a powerful tool for identifying sustainable moves.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
+[View Know Sure Thing on TradingView →](https://www.tradingview.com/scripts/?search=know%20sure%20thing)

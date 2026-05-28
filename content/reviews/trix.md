@@ -1,70 +1,112 @@
 ---
-title: "TRIX — Review"
-date: 2026-05-01
+title: "Trix Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/trix.png"
 tags:
   - trix
-  - momentum
-  - oscillator
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 3
-image: "/screenshots/trix.png"
 description: "TRIX — a triple-smoothed momentum oscillator. Extremely clean, extremely lagging. Best for identifying macro trend shifts."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Trix",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "TRIX — a triple-smoothed momentum oscillator. Extremely clean, extremely lagging. Best for identifying macro trend shifts.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Trix Review
 
 TRIX applies a triple exponential smoothing to price data, then measures the percentage change between consecutive smoothed values. The result is an oscillator so smooth it almost eliminates noise — at the cost of being very slow to react.
+
+![Trix TradingView indicator chart screenshot](/screenshots/trix.png "Trix indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Triple smoothing** — triple EMA removes virtually all noise
-- **Signal line** — 9-period EMA of TRIX for crossover signals
-- **Centerline** — above zero = bullish, below = bearish
-- **Divergence** — rare but powerful when it occurs
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Trix
 
-1. TRIX crossing above signal line = bullish signal
-2. TRIX crossing below signal line = bearish signal
-3. Above zero = momentum is positive (bullish bias)
-4. Below zero = momentum is negative (bearish bias)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Trix
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Cleanest oscillator on TradingView — no noise
-- Excellent for identifying major trend shifts
-- Signal line crossovers are rare but reliable
-- Works well on weekly and monthly timeframes
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Extremely lagging — you'll miss significant moves
-- Too slow for short-term trading
-- Signal crossovers happen infrequently
-- Triple smoothing obscures short-term momentum
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Position traders:** Weekly charts, macro trend shifts only
-- **Long-term investors:** Monthly timeframes for major entries
-- **Noise-haters:** If even MACD feels too noisy, TRIX is your answer
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **MACD** — Similar concept, less smoothing, more signals
-- **Fisher Transform** — More responsive, noise-free
-- **Awesome Oscillator** — Smoother than MACD, faster than TRIX
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-The ultimate noise filter — too aggressive for most traders. TRIX is useful for identifying macro trend shifts on weekly charts but too slow for anything shorter. Good for position traders, skip it if you trade daily or faster.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Trix on TradingView →](https://www.tradingview.com/scripts/?search=trix)

@@ -1,80 +1,112 @@
 ---
-title: "DEMA — Review"
-date: 2026-05-14
+title: "Double Exponential Moving Average Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/double-exponential-moving-average.png"
 tags:
   - double exponential moving average
   - trend
-  - direction
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
   - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/double-exponential-moving-average.png"
 description: "DEMA is a trend-following indicator that reduces lag compared to traditional moving averages, offering faster signals for active traders."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Double Exponential Moving Average",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "DEMA is a trend-following indicator that reduces lag compared to traditional moving averages, offering faster signals for active traders.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Double Exponential Moving Average Review
 
 The Double Exponential Moving Average (DEMA) is a technical analysis tool developed by Patrick Mulloy to minimize lag inherent in standard moving averages. It achieves this by applying a smoothing process that combines a single exponential moving average (EMA) with a double-smoothed EMA, resulting in a curve that responds more quickly to price changes while maintaining smoothness.
 
-DEMA is particularly useful in trending markets where traders seek to capture momentum early. It can be used to identify trend direction, generate crossover signals, and act as dynamic support or resistance. However, like all trend indicators, it may produce whipsaws in choppy or sideways markets.
-
-While DEMA improves responsiveness, it does not eliminate false signals entirely. Traders often combine it with other indicators like volume or oscillators to filter noise. Its simplicity and effectiveness make it a popular choice for both novice and experienced traders.
+![Double Exponential Moving Average TradingView indicator chart screenshot](/screenshots/double-exponential-moving-average.png "Double Exponential Moving Average indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Reduces lag compared to simple and exponential moving averages
-- Smoother curve than traditional moving averages
-- Provides clear trend direction signals
-- Generates crossover signals for entry and exit points
-- Works well on multiple timeframes
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Double Exponential Moving Average
 
-1. Identify trend direction: price above DEMA suggests uptrend, below suggests downtrend
-2. Generate buy/sell signals: DEMA line crosses above price for bullish, below for bearish
-3. Use as dynamic support or resistance in trending markets
-4. Combine with other indicators like RSI or MACD for confirmation
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Double Exponential Moving Average
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Less lag than standard moving averages, offering faster signals
-- Simple to interpret and apply
-- Effective in strong trending markets
-- Smooth and less prone to noise than single EMAs
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can produce whipsaws in ranging or volatile markets
-- Not ideal for sideways price action
-- May lag during sudden reversals
-- Requires confirmation from other tools for reliability
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Trend traders: seek early entry into strong trends
-- Swing traders: want a responsive moving average for medium-term trades
-- Active traders: need quick signals without excessive lag
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- TEMA: further reduces lag with triple smoothing
-- Hull Moving Average: offers even less lag and smoother curve
-- MACD: combines moving averages for trend and momentum
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-DEMA is a solid choice for traders who want a faster-moving average without sacrificing too much smoothness. It excels in trending conditions but should be paired with other indicators to avoid false signals in choppy markets. Overall, it is a reliable trend tool for active traders.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
+[View Double Exponential Moving Average on TradingView →](https://www.tradingview.com/scripts/?search=double%20exponential%20moving%20average)

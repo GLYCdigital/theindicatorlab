@@ -1,70 +1,112 @@
 ---
-title: "Negative Volume Index — Review"
-date: 2026-05-08
+title: "Negative Volume Index Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/negative-volume-index.png"
 tags:
   - negative volume index
-  - volume
-  - accumulation
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/negative-volume-index.png"
 description: "Negative Volume Index — a technical indicator for volume flow and institutional activity used by active traders."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Negative Volume Index",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Negative Volume Index — a technical indicator for volume flow and institutional activity used by active traders.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Negative Volume Index Review
 
 Negative Volume Index is a technical analysis tool focused on volume flow and institutional activity. Traders use it to identify volume divergences and time entries and exits with greater precision. Like most indicators in its class, it works best when combined with price action context.
+
+![Negative Volume Index TradingView indicator chart screenshot](/screenshots/negative-volume-index.png "Negative Volume Index indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Volume Flow And Institutional Activity focus** — built specifically for this use case
-- **Visual signals** — clear on any chart
-- **Customizable** — adjust period to fit your timeframe
-- **Multi-market** — works on stocks, crypto, forex, futures
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Negative Volume Index
 
-1. Watch for signal line crosses to identify directional bias
-2. Look for divergences between indicator and price for reversal warnings
-3. Use overbought/oversold zones for counter-trend entries (carefully)
-4. Combine with trend context — indicator signals are stronger with-trend
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Negative Volume Index
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Well-suited for volume traders and swing traders
-- Free on TradingView
-- Works on all timeframes
-- Catches early signals when calibrated correctly
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can give false signals in low-volatility or choppy markets
-- Best used with a secondary confirmation indicator
-- Period selection significantly affects sensitivity
-- Not a complete trading system on its own
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Volume Traders And Swing Traders** — primary audience
-- **Active traders:** Use on intraday or swing setups
-- **System builders:** Good component in a multi-indicator approach
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **RSI** — Popular momentum oscillator, good comparison
-- **MACD** — Trend and momentum combined
-- **Bollinger Bands** — Volatility context
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Negative Volume Index is a capable tool for traders focused on volume flow and institutional activity. Not flashy, not a silver bullet — but reliable when used in the right context. Learn its quirks and it'll earn its place on your chart.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Negative Volume Index on TradingView →](https://www.tradingview.com/scripts/?search=negative%20volume%20index)

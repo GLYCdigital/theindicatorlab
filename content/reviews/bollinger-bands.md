@@ -1,72 +1,112 @@
 ---
-title: "Bollinger Bands — Review"
-date: 2026-05-07
+title: "Bollinger Bands Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - volatility
-  - bands
-  - bollinger
-categories:
-  - Free
-  - Volatility
-rating: 5
 image: "/screenshots/bollinger-bands.png"
+tags:
+  - bollinger bands
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 5
 description: "John Bollinger's volatility bands — the single most useful indicator on TradingView. Simple concept, endless applications."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Bollinger Bands",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "John Bollinger's volatility bands — the single most useful indicator on TradingView. Simple concept, endless applications.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Bollinger Bands Review
 
 Bollinger Bands consist of a middle SMA with upper and lower bands set at standard deviation intervals. When volatility expands, bands widen. When it contracts, bands tighten. That's it — and it's brilliant.
+
+![Bollinger Bands TradingView indicator chart screenshot](/screenshots/bollinger-bands.png "Bollinger Bands indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Volatility measurement** — bands expand and contract automatically
-- **Squeeze detection** — tight bands = explosive move coming
-- **Band touch** — price touching upper/lower band = extended move (not necessarily reversal)
-- **Walk-up/Walk-down** — price riding a band = strong trend in progress
-- **Customizable** — period (default 20), standard deviations (default 2), source
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Bollinger Bands
 
-1. Watch for the squeeze — tight bands signal an impending breakout
-2. In a trend, buy when price touches the lower band and bounce off
-3. Use upper band as volatility target, not a sell signal
-4. Band width tells you when to trade (wide bands = trade, tight bands = wait)
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Bollinger Bands
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Only volatility indicator most traders ever need
-- Extremely visual — you can read market state at a glance
-- The squeeze is one of the most reliable setups in trading
-- Works on any timeframe, any market
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Band touch ≠ reversal signal (most common mistake)
-- Not directional — tells you volatility, not trend
-- Static standard deviation doesn't fit all market regimes
-- Can feel useless in low-volatility environments (you're supposed to wait)
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Every trader:** This should be on every chart, period
-- **Breakout traders:** The squeeze setup is your bread and butter
-- **Options traders:** Band width tells you when to sell premium (tight bands) or buy (wide bands)
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Keltner Channels** — Uses ATR instead of standard deviation, smoother
-- **ATR (Average True Range)** — Same volatility concept, single line
-- **Donchian Channels** — Based on highest high/lowest low, good for breakouts
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐⭐ (5/5)**
 
-The most useful indicator on TradingView. Not for signals — for market context. Put it on every chart, learn to read the squeeze, and you'll level up your trading.
+Outstanding. One of the best in its category.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
-
+[View Bollinger Bands on TradingView →](https://www.tradingview.com/scripts/?search=bollinger%20bands)

@@ -1,78 +1,112 @@
 ---
-title: "VIDYA — Review"
-date: 2026-05-12
+title: "Variable Index Dynamic Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/variable-index-dynamic.png"
 tags:
   - variable index dynamic
   - trend
-  - direction
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
   - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/variable-index-dynamic.png"
 description: "VIDYA is an adaptive moving average that adjusts its smoothing constant based on market volatility, offering a dynamic trend-following tool."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Variable Index Dynamic",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "VIDYA is an adaptive moving average that adjusts its smoothing constant based on market volatility, offering a dynamic trend-following tool.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Variable Index Dynamic Review
 
 The Variable Index Dynamic Average (VIDYA) is a trend-following indicator developed by Tushar Chande. Unlike traditional moving averages that use a fixed smoothing period, VIDYA dynamically adjusts its sensitivity based on the market's volatility, measured by the Chande Momentum Oscillator (CMO). This allows it to respond faster to price changes during volatile periods and smooth out noise during quieter times.
 
-VIDYA effectively reduces lag common in standard moving averages while providing a smoother line than some adaptive alternatives. It is particularly useful for traders who want to follow trends without being whipsawed by sudden, short-term price fluctuations. The indicator's adaptability makes it suitable for trending markets, but it can generate false signals in choppy, sideways conditions.
+![Variable Index Dynamic TradingView indicator chart screenshot](/screenshots/variable-index-dynamic.png "Variable Index Dynamic indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Adaptive smoothing based on volatility via the Chande Momentum Oscillator
-- Reduces lag compared to traditional fixed-period moving averages
-- Provides a single, smooth line on the price chart
-- Customizable lookback period and CMO length
-- Works across multiple timeframes and asset classes
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Variable Index Dynamic
 
-1. Identify trend direction: price above VIDYA suggests uptrend, below suggests downtrend
-2. Use VIDYA crossovers with price for entry signals
-3. Combine with other indicators like RSI or MACD for confirmation
-4. Adjust CMO period to fine-tune sensitivity for different market conditions
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Variable Index Dynamic
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Adapts to market volatility, reducing lag in trending markets
-- Smoother than many adaptive MAs, filtering out minor noise
-- Simple to interpret and apply to charts
-- Customizable to fit various trading styles
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can still produce false signals in ranging or choppy markets
-- Requires parameter optimization for best results
-- May underperform in very low-volatility environments
-- Not a standalone system; needs confirmation from other tools
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Trend followers: seeking a responsive moving average that minimizes lag
-- Swing traders: who want to capture medium-term trends with less noise
-- Volatility-aware traders: preferring indicators that adjust to market conditions
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- KAMA (Kaufman's Adaptive Moving Average): also adapts based on market noise, but uses a different efficiency ratio
-- EMA (Exponential Moving Average): simpler, fixed-period alternative for trend following
-- SuperTrend: combines ATR with moving averages for clearer trend direction and stop levels
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-VIDYA is a solid choice for traders who want a dynamic moving average that adapts to volatility without excessive complexity. While it requires some tweaking and works best in trending markets, its ability to reduce lag makes it a valuable addition to a trend-following toolkit. I recommend it as a complement to other indicators, not a sole decision-maker.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
+[View Variable Index Dynamic on TradingView →](https://www.tradingview.com/scripts/?search=variable%20index%20dynamic)

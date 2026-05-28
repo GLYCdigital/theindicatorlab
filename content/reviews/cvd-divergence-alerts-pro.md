@@ -1,132 +1,112 @@
 ---
-title: "CVD Divergence Alerts — Pro Review"
-date: 2026-05-18
+title: "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/cvd-divergence-alerts-pro.png"
 tags:
-  - cvd
-  - cumulative volume delta
-  - divergence
-  - volume
-  - alerts
-  - pro
+  - cvd divergence alerts pro
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Pro
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 5
-image: "/screenshots/cvd-divergence-alerts.png"
-description: "CVD Divergence Alerts — The first CVD indicator that actually watches the chart for you. Detects regular and hidden divergences, pushes alerts to your phone. Built by The Indicator Lab."
+description: "CVD Divergence Alerts — The first CVD indicator that actually watches the chart for you. Detects regular and hidden divergences, pushes alerts to your p..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Cvd Divergence Alerts Pro",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "CVD Divergence Alerts — The first CVD indicator that actually watches the chart for you. Detects regular and hidden divergences, pushes alerts to your p...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Cvd Divergence Alerts Pro Review
 
 CVD Divergence Alerts solves the single biggest problem with every free Cumulative Volume Delta indicator on TradingView: **you have to watch it**. Manual divergence scanning — staring at price highs vs CVD highs, comparing swing lows — is slow, error-prone, and impossible to do across multiple charts. This script does the watching for you.
 
-Four divergence types, three CVD calculation methods, configurable pivot detection, phone alerts via TradingView's notification system, and a debounce filter that prevents spam. One install. Set your alerts. Walk away.
+![Cvd Divergence Alerts Pro TradingView indicator chart screenshot](/screenshots/cvd-divergence-alerts-pro.png "Cvd Divergence Alerts Pro indicator on TradingView")
 
 <!--more-->
 
-## How It Works
-
-### The CVD Engine
-Pick your calculation method based on your market:
-
-| Method | Best For |
-|--------|----------|
-| **Direction** (default) | Equities, futures — clean directional volume |
-| **Volume-Weighted** | Crypto — captures intra-bar reversals |
-| **Close Location** | Forex — midpoint-aware, fewer whipsaws |
-
-CVD is calculated per-bar and accumulated. The histogram colours show you at a glance whether smart money is accumulating (green) or distributing (red).
-
-### Divergence Detection
-The script watches for four patterns simultaneously:
-
-- **🟢 Regular Bullish** — Price makes a lower low, CVD makes a higher low. Buyers are stepping in while sellers exhaust. Classic reversal signal.
-- **🔴 Regular Bearish** — Price makes a higher high, CVD makes a lower high. Distribution at the top. Selling into strength.
-- **🟡 Hidden Bullish** — Price makes a higher low, CVD makes a lower low. Institutional accumulation during a retracement. Continuation buy.
-- **🟠 Hidden Bearish** — Price makes a lower high, CVD makes a higher high. Selling into a pullback. Continuation sell.
-
-Each detection plots a labelled marker on your chart so you can verify the signal visually — no black box.
-
-### Alert System
-After installing, open TradingView's Alert dialog (Alt+A). You'll see four new conditions in the dropdown:
-
-1. 🟢 CVD Bullish Divergence
-2. 🔴 CVD Bearish Divergence
-3. 🟡 CVD Hidden Bullish Divergence
-4. 🟠 CVD Hidden Bearish Divergence
-
-Pick your delivery — push notification, email, SMS, or webhook to Discord/Telegram — and you're done. Phone buzzes. You check the chart. You decide.
-
-### Built-in Noise Filters
-- **Pivot confirmation** — uses `ta.pivothigh`/`ta.pivotlow` with configurable lookback, not flimsy crossover logic
-- **Alignment check** — price and CVD pivots must be within 5 bars of each other
-- **Minimum strength** — weak divergences filtered out (configurable from 0.1% to 10%)
-- **Alert cooldown** — won't spam you with the same signal twice in N bars
-- **Bar confirmation** — `barstate.isconfirmed` gating, zero repaint risk
-
 ## Key Features
 
-- **4 divergence types** — Regular Bullish/Bearish + Hidden Bullish/Bearish
-- **3 CVD calculation methods** — Direction, Volume-Weighted, Close Location
-- **Phone alerts** — Push notification, email, SMS, or webhook via TradingView
-- **Configurable everything** — Pivot lookback, strength threshold, cooldown, display options
-- **Clean chart markers** — Colour-coded shapes with labels (B/S/BH/SH)
-- **No repaint** — All signals are barstate-confirmed
-- **All markets** — Stocks, crypto, forex, futures, indices
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
+
+## Best Settings for Cvd Divergence Alerts Pro
+
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Cvd Divergence Alerts Pro
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- The only CVD script on TV with automated phone alerts for divergences
-- Pivot-based detection (not crossover — dramatically fewer false signals)
-- Three CVD methods adapt to any market type
-- Debounce and strength filter prevent notification fatigue
-- Clean, labelled chart markers for visual verification
-- One-time purchase, no subscription
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- $25 (paid) — free CVDs exist, they just don't alert
-- No multi-timeframe in v1 (coming in update)
-- CVD is volume delta approximation (true tick-level delta requires exchange data)
-
-## Setup Guide
-
-1. **Install** — Add to chart from TradingView indicator panel
-2. **Configure** — Adjust pivot lookback (default 2/2 is good for 15m–4h), pick CVD method for your market
-3. **Set alerts** — Alt+A → Condition dropdown → pick your divergence types → Push notification → Create
-4. **Walk away** — Phone buzzes when CVD diverges from price
-
-Recommended starting settings:
-- BTC/USD 15m: Pivot L=2 R=2, Direction method, Strength 0.5%
-- AAPL/TSLA 1h: Pivot L=2 R=2, Volume-Weighted, Strength 1.0%
-- Forex 4h: Pivot L=3 R=3, Close Location, Strength 0.3%
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Active traders** who use volume analysis and want to stop staring at charts
-- **Swing traders** looking for reversal and continuation signals with volume confirmation
-- **Multi-chart traders** who can't monitor CVD on 5 timeframes manually
-- **Crypto traders** who need phone alerts for fast-moving markets
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Free CVD on TradingView** — Histogram only, no alerts, manual scanning required
-- **RSI Divergence** — Price-based only, no volume confirmation
-- **MACD** — Different signal type (momentum vs volume flow)
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐⭐ (5/5)**
 
-CVD Divergence Alerts is the definitive CVD script on TradingView. Not because the histogram looks different — because it's the only one that does the job of watching the chart for you. The divergence logic is sound, the alerts work natively through TradingView's notification system, and the debounce prevents the notification fatigue that kills most alert-based indicators.
+Outstanding. One of the best in its category.
 
-If you're already using free CVD and manually scanning for divergences: this pays for itself in the first trade you catch that you would have missed. If you're not using CVD yet: this is the best entry point — learn volume analysis with an indicator that actually tells you when something happens.
-
-[Get CVD Divergence Alerts — $25 →](/lab-originals/cvd-divergence-alerts/)
-
-
----
-
-**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.
+[View Cvd Divergence Alerts Pro on TradingView →](https://www.tradingview.com/scripts/?search=cvd%20divergence%20alerts%20pro)

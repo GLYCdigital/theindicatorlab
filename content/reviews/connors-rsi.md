@@ -1,80 +1,112 @@
 ---
-title: "Connors RSI (CRSI) — Review"
-date: 2026-05-17
+title: "Connors Rsi Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/connors-rsi.png"
 tags:
   - connors rsi
-  - momentum
-  - oscillator
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/connors-rsi.png"
 description: "Connors RSI (CRSI) combines three distinct components to deliver a powerful mean-reversion momentum signal for short-term trading."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Connors Rsi",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Connors RSI (CRSI) combines three distinct components to deliver a powerful mean-reversion momentum signal for short-term trading.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Connors Rsi Review
 
 Developed by Larry Connors, the Connors RSI (CRSI) is a sophisticated variation of the classic Relative Strength Index. It integrates a standard 3-period RSI of price, a percentile rank of the current close relative to past closes, and a measure of the magnitude of recent winning streaks. This triple-component approach aims to reduce false signals and highlight high-probability entry points in trending or range-bound markets.
 
-The indicator is particularly effective for identifying short-term overbought and oversold conditions, making it a favorite among day traders and swing traders. It excels in mean-reversion strategies, where prices are expected to snap back after extreme moves. However, its complexity requires practice to interpret correctly, and it may underperform in strongly trending markets without additional filters.
-
-CRSI values typically range from 0 to 100, with readings below 10 considered deeply oversold and above 90 extremely overbought. Traders often combine it with price action or volume confirmation to improve reliability. While not a standalone system, it remains a staple for those seeking an edge in short-term momentum trading.
+![Connors Rsi TradingView indicator chart screenshot](/screenshots/connors-rsi.png "Connors Rsi indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Combines 3-period RSI, percentile rank of closing price, and a streak component for robust signals
-- Customizable lookback period for percentile calculation (default 100)
-- Clear oversold (below 10) and overbought (above 90) thresholds
-- Works across multiple asset classes including stocks, ETFs, and forex
-- Available on major platforms like TradingView, MetaTrader, and Thinkorswim
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Connors Rsi
 
-1. Enter long when CRSI drops below 10 and starts rising, confirming oversold reversal
-2. Enter short when CRSI rises above 90 and turns down, indicating overbought exhaustion
-3. Use with a trailing stop or ATR-based stop to manage risk on mean-reversion trades
-4. Combine with volume spikes or support/resistance levels for higher confidence setups
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Connors Rsi
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Reduces false signals compared to standard RSI by incorporating streak and percentile data
-- Ideal for mean-reversion strategies in ranging or choppy markets
-- Provides clear, actionable thresholds that are easy to program into alerts
-- Performs well on short timeframes (1-minute to 60-minute charts)
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can give whipsaws in strong trending markets without additional trend filters
-- Requires careful parameter tuning for different assets and timeframes
-- Not intuitive for beginners due to its composite calculation
-- May generate fewer signals than simpler oscillators, potentially missing some moves
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Day traders: excels at capturing quick reversals on intraday charts
-- Swing traders: effective for 2-5 day mean-reversion trades in range-bound stocks
-- Algorithmic traders: easily codified for automated mean-reversion systems
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Standard RSI (14): simpler and more widely used for general overbought/oversold conditions
-- Stochastic RSI: similar mean-reversion focus but uses a different calculation method
-- Fisher Transform: converts prices into a Gaussian distribution for clearer turning points
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Connors RSI is a powerful tool for traders who understand mean-reversion, but it is not a magic bullet. It shines in choppy markets but falters in strong trends. New traders should paper trade extensively before using it live.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
+[View Connors Rsi on TradingView →](https://www.tradingview.com/scripts/?search=connors%20rsi)

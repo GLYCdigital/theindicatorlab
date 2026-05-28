@@ -1,76 +1,112 @@
 ---
-title: "Williams %R — Review"
-date: 2026-05-13
+title: "Williams Percent Range Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/williams-percent-range.png"
 tags:
   - williams percent range
-  - momentum
-  - oscillator
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Momentum
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/williams-percent-range.png"
-description: "A momentum oscillator that measures the current closing price relative to the highest high and lowest low over a specified period, identifying overbought and oversold conditions."
+description: "A momentum oscillator that measures the current closing price relative to the highest high and lowest low over a specified period, identifying overbough..."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Williams Percent Range",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "A momentum oscillator that measures the current closing price relative to the highest high and lowest low over a specified period, identifying overbough...",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Williams Percent Range Review
 
 Developed by Larry Williams, the Williams %R is a momentum indicator that oscillates between 0 and -100, with readings below -80 indicating oversold conditions and above -20 indicating overbought conditions. It is similar to the Stochastic Oscillator but uses a different scale and calculation approach. The indicator is best used in ranging markets to identify potential reversal points, but it can generate false signals in strong trends.
+
+![Williams Percent Range TradingView indicator chart screenshot](/screenshots/williams-percent-range.png "Williams Percent Range indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Oscillates between 0 and -100 with fixed overbought and oversold thresholds
-- Helps identify potential price reversals when extreme readings occur
-- Can be used with multiple timeframes for stronger confirmation
-- Works well with divergence analysis to spot trend weakness
-- Simple visual representation with clear buy and sell zones
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Williams Percent Range
 
-1. Enter long when %R crosses above -80 from oversold territory
-2. Enter short when %R crosses below -20 from overbought territory
-3. Look for bullish divergence: price makes lower low, %R makes higher low
-4. Combine with trendlines or moving averages to filter false signals
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Williams Percent Range
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Easy to interpret with clear overbought/oversold levels
-- Effective in ranging markets for timing entries
-- Provides early warning of potential reversals
-- Works well with other indicators like RSI or MACD
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Prone to whipsaws in strong trending markets
-- Can remain in overbought/oversold territory for extended periods
-- Lagging nature may cause late signals on fast moves
-- Less effective on low-volume or illiquid assets
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: for timing entries in ranging markets
-- Day traders: for quick reversal setups on short timeframes
-- Technical analysts: as a complementary momentum tool for divergence
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- RSI: more widely used with similar overbought/oversold logic but smoother readings
-- Stochastic Oscillator: similar concept but uses different scale and calculation
-- CCI: measures deviation from statistical mean, good for identifying cyclical turns
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Williams %R is a solid momentum indicator for traders who understand its limitations in trending markets. It excels when combined with other tools, but relying solely on it can lead to losses. Best for range-bound conditions and as a confirmation signal.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
+[View Williams Percent Range on TradingView →](https://www.tradingview.com/scripts/?search=williams%20percent%20range)

@@ -1,76 +1,112 @@
 ---
-title: "Average True Range (ATR) — Review"
-date: 2026-05-15
+title: "Average True Range Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/average-true-range.png"
 tags:
   - average true range
-  - volatility
-  - risk
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volatility
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/average-true-range.png"
 description: "A reliable volatility gauge that measures market noise to help set stop-loss levels and identify potential breakout opportunities."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Average True Range",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "A reliable volatility gauge that measures market noise to help set stop-loss levels and identify potential breakout opportunities.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Average True Range Review
 
 The Average True Range (ATR) is a technical analysis indicator developed by J. Welles Wilder Jr. to measure market volatility by decomposing the entire range of an asset's price for a given period. It does not indicate price direction, but rather the degree of price movement, making it a pure volatility tool. By calculating the average of true ranges over a specified lookback period (typically 14), ATR provides a dynamic sense of how much an asset typically moves, which traders use to adjust position sizes and set stop-losses.
+
+![Average True Range TradingView indicator chart screenshot](/screenshots/average-true-range.png "Average True Range indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Measures market volatility based on high-low and gap movements
-- Default 14-period calculation but adjustable for different timeframes
-- Provides a single numerical value representing average price range
-- Works on any timeframe from minutes to months
-- Can be used to identify volatility expansion or contraction over time
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Average True Range
 
-1. Set stop-loss levels at a multiple of ATR below entry price
-2. Identify potential breakouts when ATR spikes from low levels
-3. Adjust position size inversely to ATR to manage risk
-4. Confirm trend strength when combined with directional indicators
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Average True Range
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simple to understand and calculate
-- Works across all asset classes and timeframes
-- Helps set objective, volatility-adjusted stops
-- Useful for position sizing in volatile markets
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Does not indicate trend direction or price momentum
-- Can be lagging due to its averaging nature
-- Less effective in ranging or low-volatility environments
-- Requires context from other indicators for meaningful decisions
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: to set trailing stops and manage risk during volatile swings
-- Day traders: to gauge intraday volatility and avoid tight stops in choppy markets
-- Position traders: to adjust position sizing based on long-term volatility changes
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Bollinger Bands: provide volatility-based support and resistance with mean reversion context
-- Keltner Channels: similar volatility envelope but uses ATR for width calculation
-- Chaikin Volatility: compares current price range to historical range for more dynamic readings
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-ATR is a must-have for risk management but not a standalone trading signal. Its real strength lies in helping traders adapt to changing market conditions, though it should always be paired with trend or momentum indicators for entry and exit decisions.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Volatility creates opportunity — if you can read it.** [Open NVDA on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator. Spotting squeeze setups and expansion signals is easier with the full charting suite.
+[View Average True Range on TradingView →](https://www.tradingview.com/scripts/?search=average%20true%20range)

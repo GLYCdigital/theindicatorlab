@@ -1,70 +1,112 @@
 ---
-title: "Williams %R — Review"
-date: 2026-05-02
+title: "Williams Percent R Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - williams
-  - oscillator
-  - overbought
-categories:
-  - Free
-  - Momentum
-rating: 3
 image: "/screenshots/williams-percent-r.png"
+tags:
+  - williams percent r
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 3
 description: "Williams %R — a momentum oscillator that measures overbought and oversold levels. Inverted RSI with a different scaling, same logic."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Williams Percent R",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Williams %R — a momentum oscillator that measures overbought and oversold levels. Inverted RSI with a different scaling, same logic.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Williams Percent R Review
 
 Williams %R (pronounced "percent R") is Larry Williams' momentum oscillator that measures where the current close falls within the recent high-low range. It's essentially an inverted version of the Stochastic Fast indicator, scaled from -100 to 0 instead of 0 to 100.
+
+![Williams Percent R TradingView indicator chart screenshot](/screenshots/williams-percent-r.png "Williams Percent R indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Inverted scale** — -80 to -100 is oversold (unlike most indicators)
-- **Range-bound** — always between -100 and 0
-- **Period-based** — default 14 periods
-- **Fixed levels** — -20 overbought, -80 oversold
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Williams Percent R
 
-1. Williams %R above -20 = overbought (ready to fall)
-2. Williams %R below -80 = oversold (ready to rise)
-3. Bullish divergence: price makes lower low, %R makes higher low
-4. Centerline cross at -50 confirms momentum direction
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Williams Percent R
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Highly sensitive — catches turns early
-- Inverted scale forces you to think differently
-- Divergences are reliable on daily charts
-- Free, built into TradingView
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Very noisy on lower timeframes
-- The inverted scale confuses most traders
-- Can stay overbought/oversold for extended periods
-- Same information as Stochastic, just inverted
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Contrarian traders:** The inverted scale suits contrarian thinking
-- **Swing traders:** Best on daily for divergence trading
-- **Traders who find RSI too slow:** Williams %R is more responsive
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **RSI** — Same concept, more intuitive scaling
-- **Stochastic** — Similar sensitivity, conventional scaling
-- **MFI** — Volume-weighted, more reliable signals
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-Same as Stochastic, just inverted. If the -100 to 0 scale makes sense to your brain, use it. Otherwise, use RSI or Stochastic — they give you the same information in a more intuitive format.
+Decent but not exceptional. Has its use cases.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Williams Percent R on TradingView →](https://www.tradingview.com/scripts/?search=williams%20percent%20r)

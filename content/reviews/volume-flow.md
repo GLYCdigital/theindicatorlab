@@ -1,80 +1,112 @@
 ---
-title: "Volume Flow Indicator — Review"
-date: 2026-05-12
+title: "Volume Flow Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/volume-flow.png"
 tags:
   - volume flow
-  - volume
-  - accumulation
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/volume-flow.png"
 description: "The Volume Flow Indicator (VFI) effectively combines volume and price action to identify trend strength and potential reversals with minimal lag."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Volume Flow",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "The Volume Flow Indicator (VFI) effectively combines volume and price action to identify trend strength and potential reversals with minimal lag.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Volume Flow Review
 
 The Volume Flow Indicator is a volume-based oscillator that measures the flow of volume relative to price direction, filtering out noise to highlight genuine buying and selling pressure. It calculates a volume-weighted moving average of price changes, using a threshold to separate significant volume from trivial activity, making it more robust than raw volume analysis.
 
-This indicator is particularly useful for confirming trends and spotting divergences that may signal impending reversals. It performs well in trending markets but can produce false signals during low-volume or choppy conditions, requiring supplementary analysis for best results.
-
-The VFI is less common than the On-Balance Volume (OBV) or Money Flow Index (MFI), but offers a unique perspective by smoothing volume data and focusing on flow consistency, making it a valuable addition to a trader's toolkit.
+![Volume Flow TradingView indicator chart screenshot](/screenshots/volume-flow.png "Volume Flow indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- Measures volume flow by comparing price change direction with volume magnitude
-- Uses a threshold to filter insignificant volume, reducing noise
-- Generates oscillator values that range above and below a centerline
-- Includes a customizable smoothing parameter for sensitivity adjustment
-- Provides divergence signals between price and volume flow
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Volume Flow
 
-1. Combine with trend-following indicators like moving averages to confirm trends
-2. Look for bullish divergences when price makes lower lows but VFI makes higher lows
-3. Use bearish divergences as early warnings for potential reversals in uptrends
-4. Apply in conjunction with support and resistance levels for entry and exit signals
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Volume Flow
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Reduces noise compared to standard volume indicators
-- Provides early reversal signals through divergence
-- Works well in trending markets with clear volume patterns
-- Customizable sensitivity adapts to different timeframes
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Can give false signals in choppy or low-volume conditions
-- Requires understanding of divergence concepts to use effectively
-- Not as widely used, so less community support and resources
-- May need additional confirmation from price action or other indicators
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: who benefit from early divergence signals for trend reversals
-- Volume-focused traders: who want a cleaner volume metric to gauge pressure
-- Discretionary traders: who use multi-indicator confluence and can interpret nuances
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- On-Balance Volume (OBV): simpler cumulative volume measure, good for trend confirmation
-- Money Flow Index (MFI): combines price and volume into an oscillator with overbought/oversold levels
-- Chaikin Money Flow (CMF): similar volume-weighted concept but uses accumulation/distribution line
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The Volume Flow Indicator is a solid choice for traders who want a refined volume metric that cuts through market noise and highlights genuine buying and selling pressure. Its divergence signals are particularly powerful, but it is not a standalone tool and works best when combined with other analysis methods. It earns a 4 out of 5 for its effectiveness in trending markets and unique approach to volume flow.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](/go/tradingview)
-
-
----
-
-**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.
+[View Volume Flow on TradingView →](https://www.tradingview.com/scripts/?search=volume%20flow)

@@ -1,72 +1,112 @@
 ---
-title: "On-Balance Volume — Review"
-date: 2026-05-02
+title: "On Balance Volume Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
+image: "/screenshots/on-balance-volume.png"
 tags:
-  - obv
-  - volume
-  - divergence
+  - on balance volume
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
 categories:
-  - Free
-  - Volume
+  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/obv.png"
 description: "On-Balance Volume — the simplest volume indicator. A cumulative line that tells you if smart money is buying or selling."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "On Balance Volume",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "On-Balance Volume — the simplest volume indicator. A cumulative line that tells you if smart money is buying or selling.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# On Balance Volume Review
 
 On-Balance Volume (OBV) is a cumulative volume indicator that adds volume on up days and subtracts volume on down days. The concept is simple: volume precedes price. When OBV diverges from price, a reversal is likely coming.
+
+![On Balance Volume TradingView indicator chart screenshot](/screenshots/on-balance-volume.png "On Balance Volume indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Cumulative** — adds and subtracts volume over time
-- **Divergence** — OBV up, price down = accumulation (bullish)
-- **Trend confirmation** — OBV and price moving together = healthy trend
-- **Breakout confirmation** — OBV breaking out before price = strong signal
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for On Balance Volume
 
-1. OBV trending up = accumulation, smart money is buying
-2. OBV trending down = distribution, smart money is selling
-3. Bullish divergence: price makes lower lows, OBV makes higher lows
-4. Bearish divergence: price makes higher highs, OBV makes lower highs
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use On Balance Volume
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Simplest volume analysis — one line, easy to read
-- Divergence signals are reliable and early
-- Works on any timeframe
-- Free, built into TradingView
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Cumulative — doesn't reset, can drift
-- Less useful on very high-volume instruments
-- Needs price context — OBV alone tells you nothing
-- Can stay diverging for longer than you can stay solvent
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Divergence traders:** OBV divergences are some of the most reliable
-- **Swing traders:** Use on daily charts for early reversal signals
-- **Beginners:** The best first volume indicator to learn
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Volume Profile** — More detailed volume analysis
-- **MFI** — Overbought/oversold with volume
-- **CMF** — Smoother, period-based volume analysis
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The simplest volume indicator that actually works. OBV divergences catch reversals before price confirms them. Put it on your chart, look for divergences, and watch your timing improve.
+Solid tool. Does what it claims and does it well.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
-
-**💡 Pro Upgrade:** Tired of manually scanning OBV for divergences? [CVD Divergence Alerts](/reviews/cvd-divergence-alerts-pro/) watches the chart for you — 4 divergence types, phone alerts, zero manual scanning.
+[View On Balance Volume on TradingView →](https://www.tradingview.com/scripts/?search=on%20balance%20volume)

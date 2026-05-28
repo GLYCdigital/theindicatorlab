@@ -1,70 +1,112 @@
 ---
-title: "Heiken Ashi — Review"
-date: 2026-05-01
+title: "Heiken Ashi Review: Settings, Strategy &amp; How to Use It"
+date: 2026-05-28
 draft: false
 type: reviews
-tags:
-  - heiken-ashi
-  - candles
-  - trend
-categories:
-  - Free
-  - Trend
-rating: 5
 image: "/screenshots/heiken-ashi.png"
+tags:
+  - heiken ashi
+  - trend
+  - tradingview
+  - indicator
+  - review
+  - trading
+categories:
+  - Trend
+  - Technical Analysis
+rating: 5
 description: "Heiken Ashi — not an indicator, a better way to see candles. Smoothed price action that makes trends obvious at a glance."
 ---
 
-## Overview
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Heiken Ashi",
+  "applicationCategory": "TradingView Indicator",
+  "operatingSystem": "TradingView",
+  "description": "Heiken Ashi — not an indicator, a better way to see candles. Smoothed price action that makes trends obvious at a glance.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1"
+  }
+}
+</script>
+
+# Heiken Ashi Review
 
 Heiken Ashi (平均足, "average bar") modifies traditional candlestick calculations to create smoother candles that filter out market noise. The result is a chart where trends are obvious — no squinting at wicks and small bodies. It replaces your regular candlestick chart entirely.
+
+![Heiken Ashi TradingView indicator chart screenshot](/screenshots/heiken-ashi.png "Heiken Ashi indicator on TradingView")
 
 <!--more-->
 
 ## Key Features
 
-- **Smoothed candles** — no small wicks, no noise
-- **No gaps** — consecutive candles touch, creating blocks
-- **Color tells the story** — green/blue = strong trend
-- **Trend clarity** — trends last longer and are easier to read
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
-## How to Use
+## Best Settings for Heiken Ashi
 
-1. All green/blue candles with no lower wicks = strong uptrend
-2. All red candles with no upper wicks = strong downtrend
-3. Small bodies with long wicks = trend weakening (potential reversal)
-4. Doji-like candles = consolidation, wait for next signal
+| Trading Style | Recommended Setting |
+|-------------|-------------------|
+| Short-term | 10-20 period |
+| Medium-term | 20-50 period |
+| Long-term | 50-200 period |
+
+## How to Use Heiken Ashi
+
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-**Pros:**
-- Makes trends painfully obvious
-- Eliminates noise from your chart
-- Excellent for trend following strategies
-- Works on every timeframe
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
 
-**Cons:**
-- Not real price data — lagging by design
-- Can hide important price details (gaps, exact opens/closes)
-- Late entries — you miss the beginning of trends
-- Must be combined with regular candles for entries
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- **Trend traders:** Your chart should always be Heiken Ashi
-- **Beginners:** Makes learning to read trends much easier
-- **Swing traders:** Use Heiken Ashi on daily, regular candles for entries
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- **Renko charts** — Even smoother, brick-based
-- **Kagi charts** — Line-based, ignores time entirely
-- **Line charts** — Simplest possible view
+- Moving Average: simpler but slower
+- SuperTrend: ATR-based, adaptive
+- ADX: measures strength, not direction
+- Parabolic SAR: stops and reversals
+
+## Frequently Asked Questions
+
+### How do I know which period to use?
+
+Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+
+### Does it repaint?
+
+No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+
+### Best market for this indicator?
+
+Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐⭐ (5/5)**
 
-Not an indicator — a better way to see price. Switch your charts to Heiken Ashi and trend direction becomes obvious. Use regular candles or Heiken Ashi sma for entry timing. Life-changing for trend traders.
+Outstanding. One of the best in its category.
 
-[Get it on TradingView →](https://www.tradingview.com/?aff_id=166324)
+[View Heiken Ashi on TradingView →](https://www.tradingview.com/scripts/?search=heiken%20ashi)
