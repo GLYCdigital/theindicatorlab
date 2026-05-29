@@ -74,7 +74,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <h2>Institutions have been running this since the 1970s. They just never gave you the dashboard.</h2>
   <p>Time-Series Momentum is the documented anomaly that never went away — Moskowitz, Ooi, and Pedersen published it in 2012. AQR runs it. Bridgewater runs it. Renaissance runs it. The difference? They run it with teams of quants and Bloomberg terminals. You now run it with a Telegram bot.</p>
   <p>Two moving averages. SMA10 crossing above SMA40. That's the entire signal. No machine learning. No black box. Just a mechanical rule that works across every asset class — stocks, bonds, commodities, crypto, forex — because human behaviour patterns are universal.</p>
-  <p>SMA10 crosses above SMA40 → buy. Crosses below → sell. Position sized by volatility so you don't get wiped out during the chop. Rebalanced once a week because daily noise kills returns. This is not a secret. It's just hard to do across 166 markets by yourself. That's the part we built.</p>
+  <p>SMA10 crosses above SMA40 → buy. Crosses below → sell. Position sized by volatility so you don't get wiped out during the chop. Rebalanced once a week because daily noise kills returns. The framework is documented. The engine that runs it across 166 markets, every Sunday, with zero input from you — that's what took years to build. That's what $79 gets you.</p>
 </div>
 
 <div class="le-section">
@@ -98,7 +98,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <p style="text-align:center;font-size:1.25rem;color:var(--text-muted);margin-top:1rem;">157 of 166 markets profitable · 33,112 trades · +185% average return · 61 years of data (1965–2026)</p>
 
   <div class="le-transparency">
-    <p style="margin:0;font-size:1.3rem;color:var(--text-secondary);"><strong>⚡ Full transparency:</strong> Two moving averages. No optimisation. The same SMA10/40 rule applied to every market. You can replicate any signal on a free TradingView chart in 30 seconds. Nothing is hidden.</p>
+    <p style="margin:0;font-size:1.3rem;color:var(--text-secondary);"><strong>⚡ Full transparency:</strong> Two moving averages. No optimisation. The same SMA10/40 rule applied to every market. We show you the framework because it holds up to scrutiny — verify any signal yourself. Nothing is hidden because there's nothing to hide.</p>
   </div>
 </div>
 
@@ -129,7 +129,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <div class="le-block">
       <div class="icon">🔍</div>
       <h4>No Black Box</h4>
-      <p>SMA10 × SMA40. ATR-sized. That's it. You can recreate every signal on any chart.</p>
+      <p>SMA10 × SMA40. ATR-sized. Every signal verifiable. Transparency is the proof.</p>
     </div>
     <div class="le-block">
       <div class="icon">📋</div>
@@ -189,7 +189,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
   <div class="le-faq">
     <h3>Is this a black box?</h3>
-    <p>No. Two moving averages: SMA10 and SMA40. When the fast line crosses above the slow line, it signals a bullish trend. Position size is scaled by ATR. Every signal is replicable on a free TradingView chart. Nothing is hidden.</p>
+    <p>No. Two moving averages: SMA10 and SMA40. When the fast line crosses above the slow line, it signals a bullish trend. Position size is scaled by ATR. We open the hood because the framework holds up to scrutiny — you can verify every signal. What you're paying for is the engine that scans 166 markets every week and surfaces what matters, so you don't have to.</p>
   </div>
 
   <div class="le-faq">
