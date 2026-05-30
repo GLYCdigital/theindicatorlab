@@ -12,9 +12,7 @@ We're tired of the noise. So we built something different.
 
 ## How We Do It
 
-We love data. We are obsessed with data analysis. And the only thing we love more is making money in the markets. Combining these together is what drives everything we build — we test every indicator ourselves, run the backtests, and publish the results. The good. The bad. The ugly. No cherry-picking. No marketing fluff.
-
-If an indicator doesn't hold up, we say so. If it does, we explain exactly why — and how to use it.
+We love data, we are obsessed with data analysis, and the only thing we love more is making money in the markets. Combining these together, is how theindicatorlab was formed.
 
 ## What Is This?
 
