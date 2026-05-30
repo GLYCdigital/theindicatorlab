@@ -171,7 +171,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <h2>How are you privately running this strategy?</h2>
-  <p><br>We open one message on Sunday evening. We read which markets are bullish, which have reversed, and what's still trending. We place our trades. We close the app.</p>
+  <p><br>We open one message on Sunday evening. We read which markets are bullish, which have reversed, and what's still trending. <span style="color:var(--accent);">The Lab Edge</span> is a Long-only strategy — we don't track Shorts. We place our trades. We close the app.</p>
   <p>We don't look again until next Sunday. The engine does the watching. We just execute and move on with our lives.</p>
   <p>That's the entire week.</p>
 </div>
