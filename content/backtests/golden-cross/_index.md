@@ -1,6 +1,6 @@
 ---
 title: "SMA Backtest Results"
-date: 2026-05-28
+date: 2026-05-30
 draft: false
 type: backtests
 description: "All 6 asset backtests for the SMA indicator. Sorted by Sharpe ratio."
@@ -25,11 +25,11 @@ description: "All 6 asset backtests for the SMA indicator. Sorted by Sharpe rati
 </tr>
 </thead>
 <tbody>
-<tr><td>🟢 <a href="/backtests/golden-cross-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+110.3%</td><td>16.1%</td><td>0.80</td><td>22.1%</td><td>50.0%</td><td>999.00</td><td>2</td></tr>
-<tr><td>🟢 <a href="/backtests/golden-cross-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+60.2%</td><td>9.9%</td><td>0.69</td><td>18.1%</td><td>50.0%</td><td>999.00</td><td>2</td></tr>
-<tr><td>🟢 <a href="/backtests/golden-cross-gc=f/" style="color:var(--accent);text-decoration:none;font-weight:600">GC=F</a></td><td>+107.2%</td><td>15.7%</td><td>0.56</td><td>17.4%</td><td>0.0%</td><td>0.00</td><td>2</td></tr>
+<tr><td>🟢 <a href="/backtests/golden-cross-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+115.5%</td><td>16.6%</td><td>0.83</td><td>22.1%</td><td>50.0%</td><td>999.00</td><td>2</td></tr>
+<tr><td>🟢 <a href="/backtests/golden-cross-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+62.2%</td><td>10.2%</td><td>0.71</td><td>18.1%</td><td>50.0%</td><td>999.00</td><td>2</td></tr>
+<tr><td>🟢 <a href="/backtests/golden-cross-gc=f/" style="color:var(--accent);text-decoration:none;font-weight:600">GC=F</a></td><td>+110.1%</td><td>16.0%</td><td>0.57</td><td>17.4%</td><td>0.0%</td><td>0.00</td><td>2</td></tr>
 <tr><td>🟡 <a href="/backtests/golden-cross-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+81.8%</td><td>12.7%</td><td>0.37</td><td>36.0%</td><td>75.0%</td><td>3.54</td><td>4</td></tr>
-<tr><td>🟡 <a href="/backtests/golden-cross-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+12.7%</td><td>2.4%</td><td>0.06</td><td>28.6%</td><td>25.0%</td><td>0.36</td><td>4</td></tr>
+<tr><td>🟡 <a href="/backtests/golden-cross-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+13.0%</td><td>2.5%</td><td>0.06</td><td>28.6%</td><td>25.0%</td><td>0.36</td><td>4</td></tr>
 <tr><td>🔴 <a href="/backtests/golden-cross-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>-32.9%</td><td>-7.7%</td><td>-0.32</td><td>56.3%</td><td>25.0%</td><td>0.14</td><td>4</td></tr>
 </tbody>
 </table>
@@ -37,7 +37,7 @@ description: "All 6 asset backtests for the SMA indicator. Sorted by Sharpe rati
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: May 28, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: May 30, 2026</p>
 
   </div>
 </article>

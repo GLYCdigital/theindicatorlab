@@ -1,18 +1,18 @@
 ---
 {
   "title": "Sweep \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-27",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+10.7%"
+      "value": "+11.6%"
     },
     {
       "label": "CAGR",
-      "value": "2.1%"
+      "value": "2.2%"
     },
     {
       "label": "Sharpe Ratio",
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+19.1%",
+      "return_pct": "+20.2%",
       "trades": "9",
       "win_rate_pct": "38.2%"
     }
@@ -96,7 +96,7 @@ On QQQ, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-01 → 2026-05-27), the Liquidity Sweep Pro delivered a **+10.7% total return** on QQQ, compounding at **2.1% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Liquidity Sweep Pro delivered a **+11.6% total return** on QQQ, compounding at **2.2% annually**. 
 
 At **0.09**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -124,6 +124,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on QQQ](/backtests/liquidity-sweep-pro-qqq-trades.png)

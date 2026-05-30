@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-24",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-3.9%",
+      "return_pct": "-4.0%",
       "trades": "6",
       "win_rate_pct": "38.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+4.8%",
+      "return_pct": "+6.3%",
       "trades": "9",
       "win_rate_pct": "38.8%"
     }
@@ -84,16 +84,8 @@
   "equity_curve_url": "/backtests/donchian-channel-breakout-gc=f-equity.png",
   "crosslinks": [
     {
-      "title": "bollinger bands \u2014 review",
-      "url": "/reviews/bollinger-bands/"
-    },
-    {
-      "title": "keltner channels \u2014 review",
-      "url": "/reviews/keltner-channels/"
-    },
-    {
-      "title": "price channel \u2014 review",
-      "url": "/reviews/price-channel/"
+      "title": "donchian channels review: settings, strategy &amp; how to use it",
+      "url": "/reviews/donchian-channels/"
     }
   ]
 }
@@ -109,7 +101,7 @@ On GC=F, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-05-26 → 2026-05-24), the Donchian Channel Breakout delivered a **+52.7% total return** on GC=F, compounding at **8.8% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Donchian Channel Breakout delivered a **+52.7% total return** on GC=F, compounding at **8.8% annually**. 
 
 At **0.49**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +129,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on GC=F.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on GC=F](/backtests/donchian-channel-breakout-gc=f-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+43.1%"
+      "value": "+44.5%"
     },
     {
       "label": "CAGR",
-      "value": "7.4%"
+      "value": "7.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.31"
+      "value": "0.32"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+40.4%",
+      "return_pct": "+43.3%",
       "trades": "7",
       "win_rate_pct": "46.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+14.2%",
+      "return_pct": "+14.4%",
       "trades": "6",
       "win_rate_pct": "46.4%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/parabolic-sar-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "supertrend + atr trailing stop \u2014 pro review",
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
+    },
+    {
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/relative-strength-index-rsi/"
+    },
+    {
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
       "url": "/reviews/supertrend-atr-trailing-stop/"
-    },
-    {
-      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
-      "url": "/reviews/kama/"
-    },
-    {
-      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
-      "url": "/reviews/monte-carlo-ct-ss/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On AAPL, the SAR acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-05-26 → 2026-05-22), the Parabolic SAR delivered a **+43.1% total return** on AAPL, compounding at **7.4% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Parabolic SAR delivered a **+44.5% total return** on AAPL, compounding at **7.7% annually**. 
 
-At **0.31**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.32**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 32% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.31 | ❌ Weak |
+| Sharpe Ratio | 0.32 | ❌ Weak |
 | Max Drawdown | 32.1% | ⚠️ Significant |
 | Win Rate | 46.4% | ⚠️ Below average |
 | Profit Factor | 1.18 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.18** tells the real story: when the SAR fires, the winn
 
 ## Does the Parabolic SAR Work on AAPL?
 
-The parabolic sar shows moderate edge on AAPL — **0.31 Sharpe, 1.18 profit factor** over 56 trades. It's not a home run, but it's also not random.
+The parabolic sar shows moderate edge on AAPL — **0.32 Sharpe, 1.18 profit factor** over 56 trades. It's not a home run, but it's also not random.
 
 The 46.4% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on AAPL.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on AAPL](/backtests/parabolic-sar-aapl-trades.png)

@@ -1,10 +1,10 @@
 ---
 {
   "title": "Volume \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-23",
+  "period": "2021-05-31 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+17.8%",
+      "return_pct": "+24.0%",
       "trades": "1",
       "win_rate_pct": "41.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-13.6%",
+      "return_pct": "-16.7%",
       "trades": "1",
       "win_rate_pct": "41.4%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/volume-spike-breakout-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze \u2014 indicator review",
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "triple_exponential_ma \u2014 expert review",
+      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "ease of movement \u2014 review",
-      "url": "/reviews/ease-of-movement/"
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/relative-strength-index-rsi/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-05-26 → 2026-05-23), the Volume Spike Breakout delivered a **+4.3% total return** on BTC-USD, compounding at **0.8% annually**. 
+Over five years (2021-05-31 → 2026-05-29), the Volume Spike Breakout delivered a **+4.3% total return** on BTC-USD, compounding at **0.8% annually**. 
 
 At **-0.17**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on BTC-USD](/backtests/volume-spike-breakout-btc-usd-trades.png)

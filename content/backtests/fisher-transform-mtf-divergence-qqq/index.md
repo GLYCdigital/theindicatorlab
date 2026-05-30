@@ -1,22 +1,22 @@
 ---
 {
   "title": "Fisher \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-19.3%"
+      "value": "-17.3%"
     },
     {
       "label": "CAGR",
-      "value": "-4.2%"
+      "value": "-3.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.16"
+      "value": "-0.14"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.5%",
+      "return_pct": "+20.0%",
       "trades": "30",
       "win_rate_pct": "43.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+17.2%",
+      "return_pct": "+20.2%",
       "trades": "20",
       "win_rate_pct": "43.9%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/fisher-transform-mtf-divergence-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "rsi \u2014 review",
-      "url": "/reviews/relative-strength-index-rsi/"
-    },
-    {
-      "title": "awesome oscillator \u2014 review",
-      "url": "/reviews/awesome-oscillator/"
-    },
-    {
       "title": "ehlers fisher transform review: settings, strategy &amp; how to use it",
       "url": "/reviews/ehlers-fisher-transform/"
+    },
+    {
+      "title": "fisher transform mtf divergence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/fisher-transform-mtf-divergence/"
+    },
+    {
+      "title": "laguerre rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/laguerre-rsi/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On QQQ, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-05-26 → 2026-05-22), the Fisher Transform MTF Divergence delivered a **-19.3% total return** on QQQ, compounding at **-4.2% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Fisher Transform MTF Divergence delivered a **-17.3% total return** on QQQ, compounding at **-3.7% annually**. 
 
-At **-0.16**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.14**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **42.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 42% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **42.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.16 | ❌ Weak |
+| Sharpe Ratio | -0.14 | ❌ Weak |
 | Max Drawdown | 42.1% | ⚠️ Significant |
 | Win Rate | 43.9% | ⚠️ Below average |
 | Profit Factor | 0.88 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.88** tells the real story: when the Fisher fires, the w
 
 ## Does the Fisher Transform MTF Divergence Work on QQQ?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.16 Sharpe ratio** and **0.88 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.14 Sharpe ratio** and **0.88 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on QQQ](/backtests/fisher-transform-mtf-divergence-qqq-trades.png)

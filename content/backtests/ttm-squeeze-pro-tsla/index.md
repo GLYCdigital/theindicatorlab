@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+131.5%"
+      "value": "+137.3%"
     },
     {
       "label": "CAGR",
-      "value": "18.3%"
+      "value": "18.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.53"
+      "value": "0.55"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+70.7%",
+      "return_pct": "+69.4%",
       "trades": "8",
       "win_rate_pct": "29.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-2.8%",
+      "return_pct": "-0.2%",
       "trades": "5",
       "win_rate_pct": "29.2%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/ttm-squeeze-pro-tsla-equity.png",
   "crosslinks": [
     {
-      "title": "accumulation/distribution line \u2014 review",
-      "url": "/reviews/accumulation-distribution/"
-    },
-    {
-      "title": "ttm squeeze pro \u2014 pro review",
+      "title": "ttm squeeze pro review: settings, strategy &amp; how to use it",
       "url": "/reviews/ttm-squeeze-pro/"
     },
     {
-      "title": "detrended price oscillator (dpo) \u2014 review",
-      "url": "/reviews/detrended-price-oscillator/"
+      "title": "bollinger_bands_percent_b review: settings, strategy &amp; how to use it",
+      "url": "/reviews/bollinger-bands-percent-b/"
+    },
+    {
+      "title": "bollinger bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/bollinger-bands/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On TSLA, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-05-26 → 2026-05-22), the TTM Squeeze Pro delivered a **+131.5% total return** on TSLA, compounding at **18.3% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the TTM Squeeze Pro delivered a **+137.3% total return** on TSLA, compounding at **18.9% annually**. 
 
-At **0.53**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.55**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **39.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 40% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **39.9% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.53 | ⚠️ Moderate |
+| Sharpe Ratio | 0.55 | ⚠️ Moderate |
 | Max Drawdown | 39.9% | ⚠️ Significant |
 | Win Rate | 29.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.37 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.37** tells the real story: when the BollingerBands fire
 
 ## Does the TTM Squeeze Pro Work on TSLA?
 
-The ttm squeeze pro shows moderate edge on TSLA — **0.53 Sharpe, 1.37 profit factor** over 65 trades. It's not a home run, but it's also not random.
+The ttm squeeze pro shows moderate edge on TSLA — **0.55 Sharpe, 1.37 profit factor** over 65 trades. It's not a home run, but it's also not random.
 
 The 29.2% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on TSLA.
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on TSLA](/backtests/ttm-squeeze-pro-tsla-trades.png)

@@ -1,10 +1,10 @@
 ---
 {
   "title": "RSI \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-05-31 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
@@ -12,7 +12,7 @@
     },
     {
       "label": "CAGR",
-      "value": "-3.1%"
+      "value": "-3.0%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "23.6%"
+      "value": "23.9%"
     },
     {
       "label": "Win Rate",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-7.5%",
+      "return_pct": "-7.1%",
       "trades": "8",
       "win_rate_pct": "16.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-1.1%",
+      "return_pct": "-0.7%",
       "trades": "2",
       "win_rate_pct": "16.7%"
     }
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-eurusd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze \u2014 indicator review",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
+      "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "rsi \u2014 review",
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "supertrend + atr trailing stop \u2014 pro review",
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
       "url": "/reviews/supertrend-atr-trailing-stop/"
     }
   ]
@@ -109,18 +109,18 @@ On EURUSD, the RSI acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-05-26 → 2026-05-22), the RSI Oversold/Overbought delivered a **-14.3% total return** on EURUSD=X, compounding at **-3.1% annually**. 
+Over five years (2021-05-31 → 2026-05-29), the RSI Oversold/Overbought delivered a **-14.3% total return** on EURUSD=X, compounding at **-3.0% annually**. 
 
 At **-0.58**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **23.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 24% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **23.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 24% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | -0.58 | ❌ Weak |
-| Max Drawdown | 23.6% | ⚠️ Moderate |
+| Max Drawdown | 23.9% | ⚠️ Moderate |
 | Win Rate | 16.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.51 | ❌ Unprofitable |
 | Trades/Year | ~24 total | Selective — not overtrading |
@@ -137,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on EURUSD=X](/backtests/rsi-oversold-overbought-eurusd-trades.png)

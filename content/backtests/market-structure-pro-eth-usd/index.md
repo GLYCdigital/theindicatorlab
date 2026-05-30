@@ -1,10 +1,10 @@
 ---
 {
   "title": "Swing \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-29 \u2192 2026-05-26",
+  "period": "2021-05-31 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+61.6%",
+      "return_pct": "+35.6%",
       "trades": "10",
       "win_rate_pct": "24.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-31.0%",
+      "return_pct": "-32.5%",
       "trades": "10",
       "win_rate_pct": "24.5%"
     }
@@ -84,11 +84,11 @@
   "equity_curve_url": "/backtests/market-structure-pro-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze \u2014 indicator review",
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "triple_exponential_ma \u2014 expert review",
+      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
       "url": "/reviews/triple-exponential-ma/"
     },
     {
@@ -109,7 +109,7 @@ On ETH, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-05-29 → 2026-05-26), the Market Structure Pro delivered a **+49.9% total return** on ETH-USD, compounding at **8.4% annually**. 
+Over five years (2021-05-31 → 2026-05-29), the Market Structure Pro delivered a **+49.9% total return** on ETH-USD, compounding at **8.4% annually**. 
 
 At **0.30**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on ETH-USD](/backtests/market-structure-pro-eth-usd-trades.png)

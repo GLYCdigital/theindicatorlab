@@ -1,10 +1,10 @@
 ---
 {
   "title": "Sweep \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-27",
+  "period": "2021-05-31 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-1.0%",
+      "return_pct": "-0.7%",
       "trades": "7",
       "win_rate_pct": "30.8%"
     }
@@ -96,7 +96,7 @@ On EURUSD, the Sweep acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-05-31 → 2026-05-27), the Liquidity Sweep Pro delivered a **-24.2% total return** on EURUSD=X, compounding at **-5.4% annually**. 
+Over five years (2021-05-31 → 2026-05-29), the Liquidity Sweep Pro delivered a **-24.2% total return** on EURUSD=X, compounding at **-5.4% annually**. 
 
 At **-2.63**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -124,6 +124,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on EURUSD=X](/backtests/liquidity-sweep-pro-eurusd-trades.png)

@@ -1,18 +1,18 @@
 ---
 {
   "title": "SuperTrend \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+80.4%"
+      "value": "+80.7%"
     },
     {
       "label": "CAGR",
-      "value": "12.5%"
+      "value": "12.6%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "39.5%"
+      "value": "39.3%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "304"
+      "value": "305"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+70.7%",
-      "trades": "32",
-      "win_rate_pct": "39.5%"
+      "return_pct": "+69.4%",
+      "trades": "31",
+      "win_rate_pct": "39.3%"
     },
     {
       "year": "2022",
       "return_pct": "-69.2%",
       "trades": "61",
-      "win_rate_pct": "39.5%"
+      "win_rate_pct": "39.3%"
     },
     {
       "year": "2023",
       "return_pct": "+129.9%",
       "trades": "61",
-      "win_rate_pct": "39.5%"
+      "win_rate_pct": "39.3%"
     },
     {
       "year": "2024",
       "return_pct": "+62.6%",
       "trades": "64",
-      "win_rate_pct": "39.5%"
+      "win_rate_pct": "39.3%"
     },
     {
       "year": "2025",
       "return_pct": "+18.6%",
       "trades": "64",
-      "win_rate_pct": "39.5%"
+      "win_rate_pct": "39.3%"
     },
     {
       "year": "2026",
-      "return_pct": "-2.8%",
-      "trades": "22",
-      "win_rate_pct": "39.5%"
+      "return_pct": "-0.2%",
+      "trades": "24",
+      "win_rate_pct": "39.3%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-tsla-equity.png",
   "crosslinks": [
     {
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
+    },
+    {
       "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
       "url": "/reviews/luxalgo/"
     },
     {
-      "title": "supertrend + atr trailing stop \u2014 pro review",
-      "url": "/reviews/supertrend-atr-trailing-stop/"
-    },
-    {
-      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
-      "url": "/reviews/monte-carlo-ct-ss/"
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/relative-strength-index-rsi/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On TSLA, the SuperTrend acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-05-26 → 2026-05-22), the SuperTrend + ATR Trailing Stop delivered a **+80.4% total return** on TSLA, compounding at **12.5% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the SuperTrend + ATR Trailing Stop delivered a **+80.7% total return** on TSLA, compounding at **12.6% annually**. 
 
 At **0.36**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,17 +121,17 @@ The catch? A **54.1% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.36 | ❌ Weak |
 | Max Drawdown | 54.1% | ⚠️ Significant |
-| Win Rate | 39.5% | ❌ Low — relies on outsized wins |
+| Win Rate | 39.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.08 | ⚠️ Marginal |
-| Trades/Year | ~304 total | Active |
+| Trades/Year | ~305 total | Active |
 
-The **profit factor of 1.08** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 39.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.08** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 39.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on TSLA?
 
-The supertrend + atr trailing stop shows moderate edge on TSLA — **0.36 Sharpe, 1.08 profit factor** over 304 trades. It's not a home run, but it's also not random.
+The supertrend + atr trailing stop shows moderate edge on TSLA — **0.36 Sharpe, 1.08 profit factor** over 305 trades. It's not a home run, but it's also not random.
 
-The 39.5% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 39.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on TSLA. Combine with trend filters or volume confirmation for better results.
 
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on TSLA.
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on TSLA](/backtests/supertrend-atr-trailing-stop-tsla-trades.png)

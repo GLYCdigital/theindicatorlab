@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+5.7%"
+      "value": "+6.3%"
     },
     {
       "label": "CAGR",
-      "value": "1.1%"
+      "value": "1.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.02"
+      "value": "-0.01"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "43.5%"
+      "value": "42.9%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "62"
+      "value": "63"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+14.5%",
+      "return_pct": "+14.3%",
       "trades": "10",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "12",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "10",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "13",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "13",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+9.4%",
-      "trades": "4",
-      "win_rate_pct": "43.5%"
+      "return_pct": "+10.9%",
+      "trades": "5",
+      "win_rate_pct": "42.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/parabolic-sar-spy-equity.png",
   "crosslinks": [
     {
-      "title": "supertrend + atr trailing stop \u2014 pro review",
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
+    },
+    {
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/relative-strength-index-rsi/"
+    },
+    {
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
       "url": "/reviews/supertrend-atr-trailing-stop/"
-    },
-    {
-      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
-      "url": "/reviews/kama/"
-    },
-    {
-      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
-      "url": "/reviews/monte-carlo-ct-ss/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On SPY, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-05-26 → 2026-05-22), the Parabolic SAR delivered a **+5.7% total return** on SPY, compounding at **1.1% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Parabolic SAR delivered a **+6.3% total return** on SPY, compounding at **1.2% annually**. 
 
-At **-0.02**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.01**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **25.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **25.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.02 | ❌ Weak |
+| Sharpe Ratio | -0.01 | ❌ Weak |
 | Max Drawdown | 25.6% | ⚠️ Moderate |
-| Win Rate | 43.5% | ⚠️ Below average |
+| Win Rate | 42.9% | ⚠️ Below average |
 | Profit Factor | 1.09 | ⚠️ Marginal |
-| Trades/Year | ~62 total | Active |
+| Trades/Year | ~63 total | Active |
 
-The **profit factor of 1.09** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 43.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.09** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 42.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on SPY?
 
-The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.02 Sharpe ratio** and **1.09 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.01 Sharpe ratio** and **1.09 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on SPY](/backtests/parabolic-sar-spy-trades.png)

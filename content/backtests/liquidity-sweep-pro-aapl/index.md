@@ -1,18 +1,18 @@
 ---
 {
   "title": "Sweep \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-27",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+52.6%"
+      "value": "+52.0%"
     },
     {
       "label": "CAGR",
-      "value": "8.8%"
+      "value": "8.7%"
     },
     {
       "label": "Sharpe Ratio",
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+14.9%",
+      "return_pct": "+14.4%",
       "trades": "5",
       "win_rate_pct": "37.6%"
     }
@@ -96,7 +96,7 @@ On AAPL, the Sweep acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-06-01 → 2026-05-27), the Liquidity Sweep Pro delivered a **+52.6% total return** on AAPL, compounding at **8.8% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Liquidity Sweep Pro delivered a **+52.0% total return** on AAPL, compounding at **8.7% annually**. 
 
 At **0.48**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -124,6 +124,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on AAPL.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on AAPL](/backtests/liquidity-sweep-pro-aapl-trades.png)

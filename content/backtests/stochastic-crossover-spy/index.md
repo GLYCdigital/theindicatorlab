@@ -1,14 +1,14 @@
 ---
 {
   "title": "Stochastic \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-24.7%"
+      "value": "-24.6%"
     },
     {
       "label": "CAGR",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "41.4%"
+      "value": "41.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.77"
+      "value": "0.76"
     },
     {
       "label": "Total Trades",
-      "value": "162"
+      "value": "161"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+14.5%",
-      "trades": "19",
-      "win_rate_pct": "41.4%"
+      "return_pct": "+14.3%",
+      "trades": "18",
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "32",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "34",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "31",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "32",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2026",
-      "return_pct": "+9.4%",
+      "return_pct": "+10.9%",
       "trades": "14",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "41.0%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/stochastic-crossover-spy-equity.png",
   "crosslinks": [
     {
-      "title": "rsi \u2014 review",
-      "url": "/reviews/relative-strength-index-rsi/"
+      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
+      "url": "/reviews/triple-exponential-ma/"
     },
     {
       "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     },
     {
-      "title": "ultimate oscillator \u2014 review",
-      "url": "/reviews/ultimate-oscillator/"
+      "title": "standard error bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/standard-error-bands/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On SPY, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-05-26 → 2026-05-22), the Stochastic Crossover delivered a **-24.7% total return** on SPY, compounding at **-5.5% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Stochastic Crossover delivered a **-24.6% total return** on SPY, compounding at **-5.5% annually**. 
 
 At **-0.48**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,15 +121,15 @@ The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.48 | ❌ Weak |
 | Max Drawdown | 32.1% | ⚠️ Significant |
-| Win Rate | 41.4% | ⚠️ Below average |
-| Profit Factor | 0.77 | ❌ Unprofitable |
-| Trades/Year | ~162 total | Active |
+| Win Rate | 41.0% | ⚠️ Below average |
+| Profit Factor | 0.76 | ❌ Unprofitable |
+| Trades/Year | ~161 total | Active |
 
-The **profit factor of 0.77** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 41.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.76** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 41.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on SPY?
 
-The stochastic crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.48 Sharpe ratio** and **0.77 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.48 Sharpe ratio** and **0.76 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on SPY](/backtests/stochastic-crossover-spy-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "Stochastic \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-44.1%"
+      "value": "-42.7%"
     },
     {
       "label": "CAGR",
-      "value": "-11.0%"
+      "value": "-10.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.63"
+      "value": "-0.60"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.5%",
+      "return_pct": "+20.0%",
       "trades": "18",
       "win_rate_pct": "43.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+17.2%",
+      "return_pct": "+20.2%",
       "trades": "16",
       "win_rate_pct": "43.5%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/stochastic-crossover-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "rsi \u2014 review",
-      "url": "/reviews/relative-strength-index-rsi/"
+      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
+      "url": "/reviews/triple-exponential-ma/"
     },
     {
       "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
       "url": "/reviews/monte-carlo-ct-ss/"
     },
     {
-      "title": "ultimate oscillator \u2014 review",
-      "url": "/reviews/ultimate-oscillator/"
+      "title": "standard error bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/standard-error-bands/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On QQQ, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-05-26 → 2026-05-22), the Stochastic Crossover delivered a **-44.1% total return** on QQQ, compounding at **-11.0% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Stochastic Crossover delivered a **-42.7% total return** on QQQ, compounding at **-10.5% annually**. 
 
-At **-0.63**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.60**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.63 | ❌ Weak |
+| Sharpe Ratio | -0.60 | ❌ Weak |
 | Max Drawdown | 49.5% | ⚠️ Significant |
 | Win Rate | 43.5% | ⚠️ Below average |
 | Profit Factor | 0.67 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.67** tells the real story: when the Stochastic fires, t
 
 ## Does the Stochastic Crossover Work on QQQ?
 
-The stochastic crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.63 Sharpe ratio** and **0.67 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.60 Sharpe ratio** and **0.67 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on QQQ](/backtests/stochastic-crossover-qqq-trades.png)

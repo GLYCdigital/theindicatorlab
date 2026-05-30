@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-26 \u2192 2026-05-22",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+75.5%"
+      "value": "+75.9%"
     },
     {
       "label": "CAGR",
-      "value": "11.9%"
+      "value": "12.0%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+40.4%",
+      "return_pct": "+43.3%",
       "trades": "0",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+14.2%",
+      "return_pct": "+14.4%",
       "trades": "2",
       "win_rate_pct": "33.3%"
     }
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze \u2014 indicator review",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
+      "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "rsi \u2014 review",
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "supertrend + atr trailing stop \u2014 pro review",
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
       "url": "/reviews/supertrend-atr-trailing-stop/"
     }
   ]
@@ -109,7 +109,7 @@ On AAPL, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-05-26 → 2026-05-22), the RSI Oversold/Overbought delivered a **+75.5% total return** on AAPL, compounding at **11.9% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the RSI Oversold/Overbought delivered a **+75.9% total return** on AAPL, compounding at **12.0% annually**. 
 
 At **0.52**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on AAPL.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on AAPL](/backtests/rsi-oversold-overbought-aapl-trades.png)

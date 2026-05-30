@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-05-28",
+  "date": "2026-05-30",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-27",
+  "period": "2021-06-01 \u2192 2026-05-29",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+78.8%"
+      "value": "+77.6%"
     },
     {
       "label": "CAGR",
-      "value": "12.4%"
+      "value": "12.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.43"
+      "value": "0.42"
     },
     {
       "label": "Max Drawdown",
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+0.5%",
+      "return_pct": "-0.2%",
       "trades": "7",
       "win_rate_pct": "31.2%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/volume-profile-pro-tsla-equity.png",
   "crosslinks": [
     {
-      "title": "ease of movement \u2014 review",
-      "url": "/reviews/ease-of-movement/"
-    },
-    {
-      "title": "balance of power (bop) \u2014 review",
-      "url": "/reviews/balance-of-power/"
-    },
-    {
       "title": "htf volume spike imbalance projection review: settings, strategy &amp; how to use it",
       "url": "/reviews/htf-volume-spike-imbalance-projection/"
+    },
+    {
+      "title": "vwap_standard_deviation_bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/vwap-standard-deviation-bands/"
+    },
+    {
+      "title": "vwap regime filter signal quality indicator lunqfx review: settings, strategy &amp; how to use it",
+      "url": "/reviews/vwap-regime-filter-signal-quality-indicator-lunqfx/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On TSLA, the VWAP acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-01 → 2026-05-27), the Volume Profile Pro delivered a **+78.8% total return** on TSLA, compounding at **12.4% annually**. 
+Over five years (2021-06-01 → 2026-05-29), the Volume Profile Pro delivered a **+77.6% total return** on TSLA, compounding at **12.2% annually**. 
 
-At **0.43**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.42**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **49.7% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.43 | ❌ Weak |
+| Sharpe Ratio | 0.42 | ❌ Weak |
 | Max Drawdown | 49.7% | ⚠️ Significant |
 | Win Rate | 31.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.22 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.22** tells the real story: when the VWAP fires, the win
 
 ## Does the Volume Profile Pro Work on TSLA?
 
-The volume profile pro shows moderate edge on TSLA — **0.43 Sharpe, 1.22 profit factor** over 80 trades. It's not a home run, but it's also not random.
+The volume profile pro shows moderate edge on TSLA — **0.42 Sharpe, 1.22 profit factor** over 80 trades. It's not a home run, but it's also not random.
 
 The 31.2% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on TSLA.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on TSLA](/backtests/volume-profile-pro-tsla-trades.png)
