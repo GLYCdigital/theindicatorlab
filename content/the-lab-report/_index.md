@@ -44,7 +44,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
   .lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
-  .lr-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff !important; }
+  .lr-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 2rem auto; color: #fff !important; }
   .review-article .lr-close h2 { font-size: 5rem; margin: 0 0 1rem; font-weight: 700; color: var(--accent) !important; letter-spacing: -1.5px; }
   .lr-close p { font-size: 1.5rem; color: #fff !important; margin: 0 0 2rem; }
   .lr-promo { display: inline-block; background: var(--accent); color: #fff; border-radius: 6px; padding: 0.6rem 1.5rem; font-weight: 700; font-size: 1.35rem; letter-spacing: 0.3px; margin-top: 1rem; }
