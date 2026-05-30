@@ -178,7 +178,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <h2>How it works</h2>
-  <p>1. Subscribe — 7-day free trial. No card tricks.</p>
+  <p><br>1. Subscribe — 7-day free trial. No card tricks.</p>
   <p>2. Start <a href="https://t.me/TheLabEdge_bot" style="color:var(--accent);font-weight:600;">@TheLabEdge_bot</a> on Telegram.</p>
   <p>3. Sunday 22:00 SGT — you get the week's signal broadcast. New entries. Exits. What's still trending.</p>
   <p>4. During the week: /report for the latest snapshot. /trending for what's moving. /markets to explore 166 markets by class.</p>
