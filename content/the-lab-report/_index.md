@@ -16,6 +16,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-cta:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(232, 119, 34, 0.4); }
   .lr-cta-sub { margin-top: 2.5rem; font-size: 1.1rem !important; color: var(--text-muted); }
   .lr-trust { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; padding: 1.5rem 1rem; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); max-width: 720px; margin: 0 auto 3rem; color: var(--text-muted); font-size: 1.3rem; }
+  .lr-trust span { flex: 1; text-align: center; min-width: 0; }
   .lr-trust strong { color: var(--text); }
   .lr-section { max-width: 720px; margin: 0 auto; padding: 4rem 1rem; }
   .lr-section h2 { font-size: 2.2rem; font-weight: 700; margin: 0 0 1rem; color: var(--text); }
