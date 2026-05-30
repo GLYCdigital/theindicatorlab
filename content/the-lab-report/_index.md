@@ -14,7 +14,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-hero p { font-size: 1.8rem; color: var(--text-secondary); max-width: 680px; margin: 0 auto 2.5rem; line-height: 1.6; }
   .lr-cta { display: block; width: fit-content; margin: 0 auto; background: var(--accent); color: #fff !important; font-weight: 700; padding: 18px 52px; border-radius: var(--radius); font-size: 1.6rem; text-decoration: none !important; transition: background 0.15s, transform 0.15s; box-shadow: 0 2px 8px rgba(232, 119, 34, 0.3); }
   .lr-cta:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(232, 119, 34, 0.4); }
-  .lr-cta-sub { margin-top: 2.5rem; font-size: 1.15rem; color: var(--text-muted); }
+  .lr-cta-sub { margin-top: 2.5rem; font-size: 1rem; color: var(--text-muted); }
   .lr-trust { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; padding: 1.5rem 1rem; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); max-width: 720px; margin: 0 auto 3rem; color: var(--text-muted); font-size: 1.3rem; }
   .lr-trust strong { color: var(--text); }
   .lr-section { max-width: 720px; margin: 0 auto; padding: 4rem 1rem; }
