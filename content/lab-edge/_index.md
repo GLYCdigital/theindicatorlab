@@ -115,7 +115,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 </div>
 
 <div class="le-section">
-  <h2 class="xl">What you get</h2>
+  <h2>What you get</h2>
 
   <div class="le-blocks">
     <div class="le-block">
