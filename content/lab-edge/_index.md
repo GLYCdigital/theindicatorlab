@@ -36,22 +36,22 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-block .icon { font-size: 2.4rem; margin-bottom: 1rem; }
   .le-block h4 { margin: 0 0 0.5rem; font-size: 1.7rem; font-weight: 600; color: var(--text); }
   .le-block p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.5; }
-  .le-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 3.5rem 2rem; margin: 2rem 0; color: #fff; }
-  .le-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: #fff; }
-  .le-price { font-size: 5.5rem; font-weight: 800; margin: 1.5rem 0 0.5rem; color: #fff; }
-  .le-price span { font-size: 1.6rem; color: #fff; font-weight: 400; }
-  .le-price-sub { color: #fff; margin: 0 0 2rem; font-size: 1.5rem; }
+  .le-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 3.5rem 2rem; margin: 2rem 0; color: #fff !important; }
+  .le-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: #fff !important; }
+  .le-price { font-size: 5.5rem; font-weight: 800; margin: 1.5rem 0 0.5rem; color: #fff !important; }
+  .le-price span { font-size: 1.6rem; color: #fff !important; font-weight: 400; }
+  .le-price-sub { color: #fff !important; margin: 0 0 2rem; font-size: 1.5rem; }
   .le-pricing .le-cta { background: var(--accent); }
   .le-pricing .le-cta:hover { background: var(--accent-hover); }
-  .le-bundle { text-align: center; background: linear-gradient(135deg, var(--primary) 0%, #5a1f8a 100%); border-radius: var(--radius-lg); padding: 3rem 2rem; margin: 2rem 0; color: #fff; }
-  .le-bundle h2 { margin: 0 0 0.5rem; font-size: 1.8rem; color: #fff; }
+  .le-bundle { text-align: center; background: linear-gradient(135deg, var(--primary) 0%, #5a1f8a 100%); border-radius: var(--radius-lg); padding: 3rem 2rem; margin: 2rem 0; color: #fff !important; }
+  .le-bundle h2 { margin: 0 0 0.5rem; font-size: 1.8rem; color: #fff !important; }
   .le-bundle .le-price { font-size: 4rem; }
   .le-faq { border-top: 1px solid var(--card-border); padding: 2rem 0; }
   .le-faq h3 { margin: 0 0 0.8rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .le-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.7; }
-  .le-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff; }
-  .le-close h2 { font-size: 3rem; margin: 0 0 1rem; font-weight: 700; color: #fff; }
-  .le-close p { font-size: 1.6rem; color: #fff; margin: 0 0 2rem; }
+  .le-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff !important; }
+  .le-close h2 { font-size: 3rem; margin: 0 0 1rem; font-weight: 700; color: #fff !important; }
+  .le-close p { font-size: 1.6rem; color: #fff !important; margin: 0 0 2rem; }
   @media (max-width: 768px) {
     .le-blocks { grid-template-columns: 1fr; }
     .le-hero h1 .le-line1 { font-size: 2.2rem; }
