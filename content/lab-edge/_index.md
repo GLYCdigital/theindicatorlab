@@ -155,8 +155,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <h2>Why once a week?</h2>
   <p><br>Because the data says so. More trades ≠ more profit. The data confirms it. Years of running this privately showed that weekly rebalancing maximises every metric that matters — Sharpe ratio, win rate, drawdown recovery.</p>
   <p>Daily signals introduce noise. Hourly signals introduce chaos. <span style="color:var(--accent);">The Lab Edge</span> is patience.</p>
-  <p>You live your life. The engine runs on Sunday evening.</p>
-  <p>You open one message. Ready for the markets on Monday.</p>
+  <p>You live your life. The engine runs on Sunday evening.<br>You open one message. Ready for the markets on Monday.</p>
 </div>
 
 <div class="le-section">
