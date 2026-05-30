@@ -37,21 +37,21 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-block h4 { margin: 0 0 0.5rem; font-size: 1.7rem; font-weight: 600; color: var(--text); }
   .le-block p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.5; }
   .le-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 3.5rem 2rem; margin: 2rem 0; color: #fff; }
-  .le-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: rgba(255,255,255,0.95); }
+  .le-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: #fff; }
   .le-price { font-size: 5.5rem; font-weight: 800; margin: 1.5rem 0 0.5rem; color: #fff; }
-  .le-price span { font-size: 1.6rem; color: rgba(255,255,255,0.7); font-weight: 400; }
-  .le-price-sub { color: rgba(255,255,255,0.7); margin: 0 0 2rem; font-size: 1.5rem; }
+  .le-price span { font-size: 1.6rem; color: #fff; font-weight: 400; }
+  .le-price-sub { color: #fff; margin: 0 0 2rem; font-size: 1.5rem; }
   .le-pricing .le-cta { background: var(--accent); }
   .le-pricing .le-cta:hover { background: var(--accent-hover); }
   .le-bundle { text-align: center; background: linear-gradient(135deg, var(--primary) 0%, #5a1f8a 100%); border-radius: var(--radius-lg); padding: 3rem 2rem; margin: 2rem 0; color: #fff; }
-  .le-bundle h2 { margin: 0 0 0.5rem; font-size: 1.8rem; color: rgba(255,255,255,0.9); }
+  .le-bundle h2 { margin: 0 0 0.5rem; font-size: 1.8rem; color: #fff; }
   .le-bundle .le-price { font-size: 4rem; }
   .le-faq { border-top: 1px solid var(--card-border); padding: 2rem 0; }
   .le-faq h3 { margin: 0 0 0.8rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .le-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.7; }
   .le-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff; }
   .le-close h2 { font-size: 3rem; margin: 0 0 1rem; font-weight: 700; color: #fff; }
-  .le-close p { font-size: 1.6rem; color: rgba(255,255,255,0.8); margin: 0 0 2rem; }
+  .le-close p { font-size: 1.6rem; color: #fff; margin: 0 0 2rem; }
   @media (max-width: 768px) {
     .le-blocks { grid-template-columns: 1fr; }
     .le-hero h1 .le-line1 { font-size: 2.2rem; }
@@ -190,7 +190,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <h2>The Lab Edge</h2>
     <div class="le-price">$79<span>/mo</span></div>
     <p class="le-price-sub">Weekly TSM signals on 166 markets · 7-day free trial · Cancel anytime</p>
-    <p style="color:rgba(255,255,255,0.7);font-size:1.35rem;">Annual: $759/yr (save 20%)</p>
+    <p style="color:#fff;font-size:1.35rem;">Annual: $759/yr (save 20%)</p>
     <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta">Get The Lab Edge →</a>
   </div>
 
@@ -200,7 +200,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <h2>Bundle — Edge + Report</h2>
     <div class="le-price">$99<span>/mo</span></div>
     <p class="le-price-sub">Weekly Edge signals + 15-min Report consensus. Two products, one price.</p>
-    <p style="color:rgba(255,255,255,0.6);font-size:1.3rem;">7-day free trial. Annual: $950 (20% off).</p>
+    <p style="color:#fff;font-size:1.3rem;">7-day free trial. Annual: $950 (20% off).</p>
     <a href="https://buy.stripe.com/dRm7sD0TA7tO2DcbuVaAw0c" class="le-cta">Get The Bundle →</a>
   </div>
 </div>
@@ -238,7 +238,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <div class="le-close">
     <h2>You don't need to watch 166 markets. That's our job.</h2>
     <p>One message every Sunday. The signal. The stop. The size.</p>
-    <p style="font-size:1.3rem;color:rgba(255,255,255,0.6);">7-day free trial. Cancel anytime.</p>
+    <p style="font-size:1.3rem;color:#fff;">7-day free trial. Cancel anytime.</p>
   </div>
 </div>
 
