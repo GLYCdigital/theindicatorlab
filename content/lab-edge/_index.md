@@ -237,7 +237,8 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 <div class="le-section">
   <div class="le-close">
     <h2>You don't need to watch 166 markets.<br>That's our job.</h2>
-    <p>One message every Sunday. The signal. The stop. The size.</p>
+    <p>One message every Sunday.</p>
+    <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta">Get The Lab Edge →</a>
     <p style="font-size:1.3rem;color:#fff;">7-day free trial. Cancel anytime.</p>
   </div>
 </div>
