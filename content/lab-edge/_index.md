@@ -89,7 +89,8 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <h2>The same signal. The same rule. Everywhere.</h2>
-  <p><br>This is a backtest of one mechanical rule — SMA10 crossing above SMA40, long-only — applied identically across all 166 markets. No optimisation. No cherry-picking. The engine ran it on 61 years of data, from 1965 to 2026. 33,112 trades. 157 of 166 markets ended profitable. Same signal. Same parameters. Every asset class.</p>
+  <p><br>This is a backtest of one mechanical rule — SMA10 crossing above SMA40, long-only — applied identically across all 166 markets. No optimisation. No cherry-picking. The engine ran it on 61 years of data, from 1965 to 2026. 33,112 trades. 157 of 166 markets ended profitable.</p>
+  <p>Same signal. Same parameters. Every asset class.</p>
 
   <table class="le-table">
     <thead><tr><th>Asset Class</th><th>Markets</th><th>Profitable</th><th>Avg Return</th><th>Sharpe</th></tr></thead>
