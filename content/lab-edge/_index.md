@@ -194,7 +194,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta">Get The Lab Edge →</a>
   </div>
 
-  <p style="text-align:center;color:var(--text-muted);font-size:1.15rem;margin-bottom:0;">Want the full picture? Real-time consensus from 44 indicators every 15 minutes:</p>
+  <p style="text-align:center;color:#fff;font-size:1.15rem;margin-bottom:0;">Want the full picture? Real-time consensus from 44 indicators every 15 minutes:</p>
 
   <div class="le-bundle">
     <h2>Bundle — Edge + Report</h2>
