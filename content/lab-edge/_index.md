@@ -8,8 +8,8 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 {{< rawhtml >}}
 <style>
-  .le-hero { text-align: center; padding: 3rem 1rem 4rem; }
-  .le-hero h1 { font-size: 5.5rem; line-height: 1.1; margin: 0 0 3.5rem; color: var(--text); letter-spacing: -1.5px; }
+  .le-hero { text-align: center; padding: 1rem 1rem 4rem; }
+  .le-hero h1 { font-size: 5.5rem; line-height: 1.1; margin: 0 0 5rem; color: var(--text); letter-spacing: -1.5px; }
   .le-hero h1 .le-line1 { display: block; font-size: 3.5rem; margin-bottom: 1.8rem; font-weight: 700; color: var(--primary); }
   .le-hero h1 span { color: var(--accent); }
   .le-hero .sub { font-size: 2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem; line-height: 1.5; font-weight: 400; }
