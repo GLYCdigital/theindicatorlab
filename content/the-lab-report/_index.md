@@ -32,7 +32,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-benefit h4 { margin: 0 0 0.3rem; font-size: 1.4rem; font-weight: 600; color: var(--text); }
   .lr-benefit p { margin: 0; color: var(--text-secondary); font-size: 1.3rem; line-height: 1.5; }
   .lr-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 2.5rem 2rem 3rem; margin: 2rem 0; color: #fff !important; }
-  .review-article .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 5rem; color: #fff !important; letter-spacing: -1.5px; }
+  .review-article .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 5rem; color: #fff !important; letter-spacing: -1.5px; line-height: 1.1; }
   .lr-pricing > p { font-size: 1.5rem; color: #fff !important; }
   .lr-pricing-header { font-size: 2.6rem; font-weight: 800; color: #fff; margin: 0.5rem 0 0.75rem; line-height: 1.25; letter-spacing: -0.3px; }
   .lr-price { font-size: 5rem; font-weight: 800; margin: 1rem 0; color: #fff; }
@@ -174,7 +174,7 @@ When 25 of 48 indicators agree on direction, that's not a coincidence. That's a 
 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
-  <h2>One subscription. Every feature. Price locked forever.</h2>
+  <h2>One subscription. Every feature.<br>Price locked forever.</h2>
   <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
