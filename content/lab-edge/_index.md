@@ -121,12 +121,12 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <div class="le-block">
       <div class="icon">📡</div>
       <h4>Weekly Signal</h4>
-      <p>Every Sunday 22:00 SGT. New entries, exits, trends. One message. Clear. No noise.</p>
+      <p>Every Sunday 22:00 SGT. Bullish entries, exit signals, active trends. 166 markets. One message. No noise.</p>
     </div>
     <div class="le-block">
       <div class="icon">🎯</div>
-      <h4>Exact Levels</h4>
-      <p>Entry price. Stop-loss. Position size. You decide. The math is done for you.</p>
+      <h4>Signal + Context</h4>
+      <p>Current price. ATR-scaled position size. Trend direction. The engine finds the momentum — you decide your levels.</p>
     </div>
     <div class="le-block">
       <div class="icon">🌍</div>
