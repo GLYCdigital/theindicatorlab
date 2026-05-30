@@ -37,7 +37,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-block h4 { margin: 0 0 0.5rem; font-size: 1.7rem; font-weight: 600; color: var(--text); }
   .le-block p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.5; }
   .le-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 3.5rem 2rem; margin: 2rem 0; color: #fff !important; }
-  .review-article .le-pricing h2 { color: #fff !important; }
+  .review-article .le-pricing h2 { color: var(--accent) !important; }
   .le-price { font-size: 5.5rem; font-weight: 800; margin: 1.5rem 0 0.5rem; color: #fff !important; }
   .le-price span { font-size: 1.6rem; color: #fff !important; font-weight: 400; }
   .le-price-sub { color: #fff !important; margin: 0 0 2rem; font-size: 1.5rem; }
@@ -197,7 +197,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <p style="text-align:center;color:var(--text-muted);font-size:1.15rem;margin-bottom:0;">Want the full picture? Real-time consensus from 44 indicators every 15 minutes:</p>
 
   <div class="le-bundle">
-    <h2>Bundle — Edge + Report</h2>
+    <h2>Bundle — Originals + Report + Edge</h2>
     <div class="le-price">$99<span>/mo</span></div>
     <p class="le-price-sub">Weekly Edge signals + 15-min Report consensus. Two products, one price.</p>
     <p style="color:#fff;font-size:1.3rem;">7-day free trial. Annual: $950 (20% off).</p>
