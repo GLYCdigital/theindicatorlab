@@ -31,22 +31,22 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-benefit .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
   .lr-benefit h4 { margin: 0 0 0.3rem; font-size: 1.4rem; font-weight: 600; color: var(--text); }
   .lr-benefit p { margin: 0; color: var(--text-secondary); font-size: 1.3rem; line-height: 1.5; }
-  .lr-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 2.5rem 2rem 3rem; margin: 2rem 0; color: #fff; }
-  .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: rgba(255,255,255,0.9); }
-  .lr-pricing > p { font-size: 1.5rem; color: rgba(255,255,255,0.7); }
+  .lr-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 2.5rem 2rem 3rem; margin: 2rem 0; color: #fff !important; }
+  .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 5rem; color: #fff !important; letter-spacing: -1.5px; }
+  .lr-pricing > p { font-size: 1.5rem; color: #fff !important; }
   .lr-pricing-header { font-size: 2.6rem; font-weight: 800; color: #fff; margin: 0.5rem 0 0.75rem; line-height: 1.25; letter-spacing: -0.3px; }
   .lr-price { font-size: 5rem; font-weight: 800; margin: 1rem 0; color: #fff; }
-  .lr-price span { font-size: 1.6rem; color: rgba(255,255,255,0.7); font-weight: 400; }
-  .lr-price-sub { color: rgba(255,255,255,0.7); margin: 0 0 2rem; font-size: 1.5rem; }
+  .lr-price span { font-size: 1.6rem; color: #fff !important; font-weight: 400; }
+  .lr-price-sub { color: #fff !important; margin: 0 0 2rem; font-size: 1.5rem; }
   .lr-pricing .lr-cta { background: var(--accent); }
   .lr-pricing .lr-cta:hover { background: var(--accent-hover); }
-  .lr-early { margin-top: 1.5rem; font-size: 1.35rem; color: rgba(255,255,255,0.6); }
+  .lr-early { margin-top: 1.5rem; font-size: 1.35rem; color: #fff !important; }
   .lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
   .lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
-  .lr-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff; }
-  .lr-close h2 { font-size: 2.8rem; margin: 0 0 1rem; font-weight: 700; color: #fff; }
-  .lr-close p { font-size: 1.5rem; color: rgba(255,255,255,0.8); margin: 0 0 2rem; }
+  .lr-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff !important; }
+  .lr-close h2 { font-size: 5rem; margin: 0 0 1rem; font-weight: 700; color: #fff !important; letter-spacing: -1.5px; }
+  .lr-close p { font-size: 1.5rem; color: #fff !important; margin: 0 0 2rem; }
   .lr-promo { display: inline-block; background: var(--accent); color: #fff; border-radius: 6px; padding: 0.6rem 1.5rem; font-weight: 700; font-size: 1.35rem; letter-spacing: 0.3px; margin-top: 1rem; }
   .lr-promo-inline { display: inline-block; background: rgba(232, 119, 34, 0.15); color: var(--accent); border: 1px solid rgba(232, 119, 34, 0.3); border-radius: 6px; padding: 0.4rem 1rem; font-weight: 600; font-size: 1.35rem; letter-spacing: 0.3px; }
   @media (max-width: 600px) {
@@ -176,34 +176,34 @@ When 25 of 48 indicators agree on direction, that's not a coincidence. That's a 
 <div class="lr-pricing" id="pricing">
   <h2>PRICING</h2>
   <p class="lr-pricing-header">One subscription. Every feature. Price locked forever.</p>
-  <p style="color: rgba(255,255,255,0.7); font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
+  <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
     <div style="background: rgba(255,255,255,0.14); border-radius: var(--radius); padding: 1.5rem 0.75rem; border: 2px solid var(--accent);">
       <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin-bottom: 0.5rem; font-weight: 700;">Founding Member</div>
       <div style="font-size: 3rem; font-weight: 800;">$29<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem;">First 50 subscribers</div>
+      <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">First 50 subscribers</div>
       <div style="font-size: 0.95rem; color: var(--accent); margin-top: 0.2rem; font-weight: 600;">Price locked forever ↓</div>
     </div>
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
-      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Early Adopter</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem;">Early Adopter</div>
       <div style="font-size: 3rem; font-weight: 800;">$49<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem;">50+ indicators live</div>
+      <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">50+ indicators live</div>
     </div>
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
-      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Supporter</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem;">Supporter</div>
       <div style="font-size: 3rem; font-weight: 800;">$69<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem;">100+ indicators live</div>
+      <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">100+ indicators live</div>
     </div>
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
-      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">Member</div>
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem;">Member</div>
       <div style="font-size: 3rem; font-weight: 800;">$89<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
-      <div style="font-size: 1.1rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem;">200+ indicators live</div>
+      <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">200+ indicators live</div>
     </div>
   </div>
 
   <div style="text-align: center; margin-bottom: 2rem;">
-    <div style="display: inline-block; background: rgba(255,255,255,0.1); border-radius: var(--radius); padding: 0.75rem 1.5rem; font-size: 1.4rem; color: rgba(255,255,255,0.9);">
+    <div style="display: inline-block; background: rgba(255,255,255,0.1); border-radius: var(--radius); padding: 0.75rem 1.5rem; font-size: 1.4rem; color: #fff;">
       🔒 <strong>Your price is locked forever.</strong> We'll never raise it on you.
     </div>
   </div>
@@ -213,9 +213,9 @@ When 25 of 48 indicators agree on direction, that's not a coincidence. That's a 
   
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
   
-  <p style="margin-top: 1.25rem; font-size: 1.4rem; color: rgba(255,255,255,0.9);"><span class="lr-promo-inline">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
+  <p style="margin-top: 1.25rem; font-size: 1.4rem; color: #fff;"><span class="lr-promo-inline">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
   <p class="lr-early">Only <strong>50 Founding Member spots</strong> at this price. Lock in $29/month or $279/year forever.</p>
-  <p style="margin-top: 1rem; font-size: 1.25rem; color: rgba(255,255,255,0.5);">No credit card required to start. Cancel anytime with one Telegram command.</p>
+  <p style="margin-top: 1rem; font-size: 1.25rem; color: #fff;">No credit card required to start. Cancel anytime with one Telegram command.</p>
 </div>
 
 <div style="text-align: center; padding: 2rem 1rem; max-width: 720px; margin: 0 auto;">
@@ -297,6 +297,6 @@ When 25 of 48 indicators agree on direction, that's not a coincidence. That's a 
   <h2>Stop guessing. Start knowing.</h2>
   <p>30+ indicators. 20 markets. One verdict. Delivered to your phone every 15 minutes.</p>
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
-  <p style="margin-top: 1.25rem;"><span class="lr-promo-inline" style="background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.2);">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
+  <p style="margin-top: 1.25rem;"><span class="lr-promo-inline" style="background: rgba(255,255,255,0.12); color: #fff; border-color: #fff;">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
 </div>
 {{< /rawhtml >}}
