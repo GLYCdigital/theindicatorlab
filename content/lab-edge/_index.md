@@ -9,7 +9,9 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 {{< rawhtml >}}
 <style>
   .le-hero { text-align: center; padding: 6rem 1rem 4rem; }
-  .le-hero h1 { font-size: 5.5rem; line-height: 1.1; margin: 0 0 2rem; color: var(--text); letter-spacing: -1.5px; }
+  .le-hero h1 { line-height: 1.1; margin: 0 0 2rem; color: var(--text); letter-spacing: -1.5px; font-size: inherit; }
+  .le-hero h1 .le-line1 { display: block; font-size: 3.5rem; margin-bottom: 0.6rem; font-weight: 700; }
+  .le-hero h1 .le-line2 { display: block; font-size: 4.5rem; font-weight: 700; }
   .le-hero h1 span { color: var(--accent); }
   .le-hero .sub { font-size: 2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem; line-height: 1.5; font-weight: 400; }
   .le-cta { display: block; width: fit-content; margin: 0 auto; background: var(--accent); color: #fff !important; font-weight: 700; padding: 20px 56px; border-radius: var(--radius); font-size: 1.7rem; text-decoration: none !important; transition: background 0.15s, transform 0.15s; box-shadow: 0 2px 12px rgba(232, 119, 34, 0.35); }
@@ -52,14 +54,15 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-close p { font-size: 1.6rem; color: rgba(255,255,255,0.8); margin: 0 0 2rem; }
   @media (max-width: 768px) {
     .le-blocks { grid-template-columns: 1fr; }
-    .le-hero h1 { font-size: 3.2rem; }
+    .le-hero h1 .le-line1 { font-size: 2.2rem; }
+    .le-hero h1 .le-line2 { font-size: 2.8rem; }
   }
 </style>
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
 <div class="le-hero">
-  <h1>A strategy institutions keep quiet.<br>The <span>Edge</span> to hear it anyway.</h1>
+  <h1><span class="le-line1">A strategy that institutions keep quiet.</span><span class="le-line2">The <span>Edge</span> to hear it anyway.</span></h1>
   <p class="sub">Time-Series Momentum — the same framework Bridgewater, AQR, and Renaissance have used for decades — across 166 markets. One signal. Once a week. Delivered to your phone.</p>
   <p class="le-cta-sub">7-day free trial. Cancel anytime.</p>
 </div>
