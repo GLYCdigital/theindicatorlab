@@ -74,7 +74,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <h2>Institutions have been running this since the 1970s.<br>They just never gave you the dashboard.</h2>
-  <p><br>Time-Series Momentum is the documented anomaly that never went away — Moskowitz, Ooi, and Pedersen published it in 2012. AQR runs it. Bridgewater runs it. Renaissance runs it. The difference? They run it with teams of quants and Bloomberg terminals.</p>
+  <p><br>Time-Series Momentum is one of the most documented anomalies in finance — not a secret, just underutilised by retail. Moskowitz, Ooi, and Pedersen published it in 2012. AQR runs it. Bridgewater runs it. Renaissance runs it. The difference? They run it with teams of quants and Bloomberg terminals.</p>
   <p>Now, you have the opportunity to run it with a Telegram bot.</p>
   <p>Two moving averages. SMA10 crossing above SMA40. That's the entire signal. No machine learning. No black box. Just a mechanical rule that works across every asset class — stocks, bonds, commodities, crypto, forex — because human behaviour patterns are universal.</p>
   <p>SMA10 crosses above SMA40 → buy. Crosses below → sell. Position sized by volatility so you don't get wiped out during the chop. Rebalanced once a week because daily noise kills returns. The framework is documented.</p>
