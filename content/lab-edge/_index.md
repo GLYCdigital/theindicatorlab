@@ -199,7 +199,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <div class="le-bundle">
     <h2>Bundle — Originals + Report + Edge</h2>
     <div class="le-price">$99<span>/mo</span></div>
-    <p class="le-price-sub">Weekly Edge signals + 15-min Report consensus + Lab Originals scripts. Three products, one price.</p>
+    <p class="le-price-sub">Lab Originals scripts + 15-min consensus Report + weekly Edge signals.<br>Three products, one price.</p>
     <p style="color:#fff;font-size:1.3rem;">7-day free trial. Annual: $950 (20% off).</p>
     <a href="https://buy.stripe.com/dRm7sD0TA7tO2DcbuVaAw0c" class="le-cta">Get The Bundle →</a>
   </div>
