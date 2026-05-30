@@ -159,6 +159,23 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 </div>
 
 <div class="le-section">
+  <h2>Sounds simple enough for me to do this on my own.</h2>
+  <p><br>Certainly. We already told you — SMA10 crossing above SMA40. It's not a secret. It's just that running it across 166 markets requires infrastructure most people don't have. That's what we built.</p>
+  <p>It's mechanical enough for you to set it up yourself. But there's another reason it's underutilised by retail traders.</p>
+  <p>It is uncomfortable enough to trade when you're watching it every day, every hour, every minute.</p>
+  <p>TSM works beautifully on paper. In real life it tests your nerve.</p>
+  <p>The strategy catches big trending moves — that's when you're winning. But between those runs, it bleeds slowly in sideways markets. Rinse, repeat. Sometimes for months. When you watch your trade bleeding while the S&P rips higher without you, every instinct screams to abandon the system. Many do. Right before the trend finally catches and recovers everything.</p>
+  <p>It's not the math that's hard. It's sitting through the chop while your brain tells you you're the idiot.</p>
+  <p><span style="color:var(--accent);">The Lab Edge</span> survives because most people can't.</p>
+</div>
+
+<div class="le-section">
+  <h2>How are you privately running this strategy?</h2>
+  <p><br>Every week, we look at which markets have new bullish signals and continuing trends for Longs — <span style="color:var(--accent);">The Lab Edge</span> is not meant for Shorts — and which markets ended their trends and are reversing. These signals determine our entry and exit.</p>
+  <p>We don't let daily noise affect us, just the weekly signals. Which is why <span style="color:var(--accent);">The Lab Edge</span> survives.</p>
+</div>
+
+<div class="le-section">
   <h2>How it works</h2>
   <p>1. Subscribe — 7-day free trial. No card tricks.</p>
   <p>2. Start <a href="https://t.me/TheLabEdge_bot" style="color:var(--accent);font-weight:600;">@TheLabEdge_bot</a> on Telegram.</p>
