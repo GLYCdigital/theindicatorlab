@@ -174,8 +174,7 @@ When 25 of 48 indicators agree on direction, that's not a coincidence. That's a 
 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
-  <h2>PRICING</h2>
-  <p class="lr-pricing-header">One subscription. Every feature. Price locked forever.</p>
+  <h2>One subscription. Every feature. Price locked forever.</h2>
   <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
