@@ -20,7 +20,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-stat { text-align: center; flex: 1; min-width: 0; }
   .le-stat .num { font-size: 2.8rem; font-weight: 800; color: var(--accent); display: block; line-height: 1; }
   .le-stat .label { font-size: 1.2rem; color: var(--text-muted); margin-top: 0.5rem; }
-  .le-section { max-width: 720px; margin: 0 auto; padding: 5rem 1rem; }
+  .le-section { max-width: 720px; margin: 0 auto; padding: 8rem 1rem 5rem; }
   .review-article .le-section h2 { font-size: 3rem; font-weight: 700; margin: 0 0 1rem; color: var(--primary); letter-spacing: -0.5px; text-align: center; }
   .review-article .le-section h2.xl { font-size: 5.5rem; letter-spacing: -1.5px; }
   .le-section h3 { font-size: 1.8rem; font-weight: 600; margin: 0 0 0.5rem; }
