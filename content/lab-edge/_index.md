@@ -17,7 +17,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-cta:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232, 119, 34, 0.5); }
   .le-cta-sub { margin-top: 1.5rem; font-size: 1.3rem; color: var(--text-muted); }
   .le-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; padding: 2rem 1rem; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); max-width: 800px; margin: 0 auto; }
-  .le-stat { text-align: center; }
+  .le-stat { text-align: center; flex: 1; min-width: 0; }
   .le-stat .num { font-size: 2.8rem; font-weight: 800; color: var(--accent); display: block; line-height: 1; }
   .le-stat .label { font-size: 1.2rem; color: var(--text-muted); margin-top: 0.5rem; }
   .le-section { max-width: 720px; margin: 0 auto; padding: 5rem 1rem; }
