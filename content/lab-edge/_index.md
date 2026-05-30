@@ -171,8 +171,9 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <h2>How are you privately running this strategy?</h2>
-  <p><br>Every week, we look at which markets have new bullish signals and continuing trends for Longs — <span style="color:var(--accent);">The Lab Edge</span> is not meant for Shorts — and which markets ended their trends and are reversing. These signals determine our entry and exit.</p>
-  <p>We don't let daily noise affect us, just the weekly signals. Which is why <span style="color:var(--accent);">The Lab Edge</span> survives.</p>
+  <p><br>We open one message on Sunday evening. We read which markets are bullish, which have reversed, and what's still trending. We place our trades. We close the app.</p>
+  <p>We don't look again until next Sunday. The engine does the watching. We just execute and move on with our lives.</p>
+  <p>That's the entire week.</p>
 </div>
 
 <div class="le-section">
