@@ -32,7 +32,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-benefit h4 { margin: 0 0 0.3rem; font-size: 1.4rem; font-weight: 600; color: var(--text); }
   .lr-benefit p { margin: 0; color: var(--text-secondary); font-size: 1.3rem; line-height: 1.5; }
   .lr-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 2.5rem 2rem 3rem; margin: 2rem 0; color: #fff !important; }
-  .review-article .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 5rem; color: #fff !important; letter-spacing: -1.5px; line-height: 1.1; }
+  .review-article .lr-pricing h2 { margin: 0 0 0.5rem; font-size: 5rem; color: var(--accent) !important; letter-spacing: -1.5px; line-height: 1.1; }
   .lr-pricing > p { font-size: 1.5rem; color: #fff !important; }
   .lr-pricing-header { font-size: 2.6rem; font-weight: 800; color: #fff; margin: 0.5rem 0 0.75rem; line-height: 1.25; letter-spacing: -0.3px; }
   .lr-price { font-size: 5rem; font-weight: 800; margin: 1rem 0; color: #fff; }
