@@ -82,7 +82,9 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <h2>We built this for ourselves. We're now opening access.</h2>
-  <p><br>The Lab Edge scan engine has been running privately, watching 166 markets around the clock. Every Sunday at 22:00 SGT, it runs the numbers and surfaces what's moving. We didn't build this to sell.<br>We built it because we wanted it. The decision to share it came after we realized how well it works.</p>
+  <p>We can only watch so many markets. Mental bandwidth is finite. And when the handful we're watching aren't setting up, our capital sits idle — out of the game, earning nothing. So we built an engine that never sleeps. It watches 166 markets around the clock. When some aren't trending, it finds the ones that are. Because money should work harder than we do.</p>
+  <p>The Lab Edge scan engine has been running privately, watching 166 markets around the clock. Every Sunday at 22:00 SGT, it runs the numbers and surfaces what's moving.</p>
+  <p>We didn't build this to sell. We built it because we wanted it. The decision to share it came after we realized how well it works.</p>
 
   <table class="le-table">
     <thead><tr><th>Asset Class</th><th>Markets</th><th>Profitable</th><th>Avg Return</th><th>Sharpe</th></tr></thead>
