@@ -24,7 +24,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .review-article .le-section h2 { font-size: 3rem; font-weight: 700; margin: 0 0 1rem; color: var(--text); letter-spacing: -0.5px; text-align: center; }
   .review-article .le-section h2.xl { font-size: 5.5rem; letter-spacing: -1.5px; }
   .le-section h3 { font-size: 1.8rem; font-weight: 600; margin: 0 0 0.5rem; }
-  .le-section p { font-size: 1.8rem; color: var(--text-secondary); line-height: 1.7; margin: 0 0 1.5rem; }
+  .le-section p { font-size: 1.7rem; color: var(--text-secondary); line-height: 1.7; margin: 0 0 1.5rem; }
   .le-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 1.35rem; }
   .le-table th { text-align: left; padding: 10px 14px; border-bottom: 2px solid var(--card-border); color: var(--text-muted); font-weight: 600; }
   .le-table td { padding: 10px 14px; border-bottom: 1px solid var(--card-border); }
@@ -34,8 +34,8 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-blocks { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
   .le-block { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 2rem; text-align: center; }
   .le-block .icon { font-size: 2.4rem; margin-bottom: 1rem; }
-  .le-block h4 { margin: 0 0 0.5rem; font-size: 1.4rem; font-weight: 600; color: var(--text); }
-  .le-block p { margin: 0; color: var(--text-secondary); font-size: 1.3rem; line-height: 1.5; }
+  .le-block h4 { margin: 0 0 0.5rem; font-size: 1.7rem; font-weight: 600; color: var(--text); }
+  .le-block p { margin: 0; color: var(--text-secondary); font-size: 1.5rem; line-height: 1.5; }
   .le-pricing { text-align: center; background: var(--primary); border-radius: var(--radius-lg); padding: 3.5rem 2rem; margin: 2rem 0; color: #fff; }
   .le-pricing h2 { margin: 0 0 0.5rem; font-size: 2rem; color: rgba(255,255,255,0.95); }
   .le-price { font-size: 5.5rem; font-weight: 800; margin: 1.5rem 0 0.5rem; color: #fff; }
