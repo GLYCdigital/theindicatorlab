@@ -44,7 +44,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-pricing .le-cta { background: var(--accent); }
   .le-pricing .le-cta:hover { background: var(--accent-hover); }
   .le-bundle { text-align: center; background: linear-gradient(135deg, var(--primary) 0%, #5a1f8a 100%); border-radius: var(--radius-lg); padding: 3rem 2rem; margin: 2rem 0; color: #fff !important; }
-  .review-article .le-bundle h2 { color: #fff !important; }
+  .review-article .le-bundle h2 { color: var(--accent) !important; }
 
   .le-faq { border-top: 1px solid var(--card-border); padding: 2rem 0; }
   .le-faq h3 { margin: 0 0 0.8rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
