@@ -85,6 +85,11 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <p><br>We can only watch so many markets. Mental bandwidth is finite. And when the handful we're watching aren't setting up, our capital sits idle — out of the game, earning nothing. So we built an engine that never sleeps. It watches 166 markets around the clock. When some aren't trending, it finds the ones that are. Because money should work harder than we do.</p>
   <p>The Lab Edge scan engine has been running privately, watching 166 markets around the clock. Every Sunday at 22:00 SGT, it runs the numbers and surfaces what's moving. We didn't build this to sell.</p>
   <p>We built it because we wanted it. The decision to share it came after we realized how well it works.</p>
+</div>
+
+<div class="le-section">
+  <h2>The same signal. The same rule. Everywhere.</h2>
+  <p><br>This is a backtest of one mechanical rule — SMA10 crossing above SMA40, long-only — applied identically across all 166 markets. No optimisation. No cherry-picking. The engine ran it on 61 years of data, from 1965 to 2026. 33,112 trades. 157 of 166 markets ended profitable. Same signal. Same parameters. Every asset class.</p>
 
   <table class="le-table">
     <thead><tr><th>Asset Class</th><th>Markets</th><th>Profitable</th><th>Avg Return</th><th>Sharpe</th></tr></thead>
