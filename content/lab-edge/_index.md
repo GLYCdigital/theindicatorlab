@@ -62,7 +62,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 {{< rawhtml >}}
 <div class="le-hero">
   <h1><span class="le-line1">A strategy that institutions keep quiet.</span>The <span>Edge</span> to hear it anyway.</h1>
-  <p class="sub">Time-Series Momentum — the same framework institutions use.<br>166 markets. Weekly signals. Delivered to your phone.</p>
+  <p class="sub">Time-Series Momentum — the same framework Bridgewater, AQR, and Renaissance have used for decades — across 166 markets.<br>One signal. Once a week. Delivered to your phone.</p>
   <p class="le-cta-sub">7-day free trial. Cancel anytime.</p>
 </div>
 
