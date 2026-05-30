@@ -71,7 +71,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 
 <div class="lr-hero">
   <h1>Multiple indicators.<br><span>One verdict.</span></h1>
-  <p style="margin: 2rem auto 3.5rem;">Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
+  <p style="margin: 2rem auto 5rem;">Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta">Become a Founding Member →</a>
   <p class="lr-cta-sub">$29/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
   <p class="lr-promo">Use code <strong>FOUNDING</strong> at checkout — first 50 only</p>
