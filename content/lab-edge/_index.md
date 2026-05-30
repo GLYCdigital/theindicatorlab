@@ -126,7 +126,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <div class="le-block">
       <div class="icon">🎯</div>
       <h4>Signal + Context</h4>
-      <p>Current price. ATR-scaled position size. Trend direction. The engine finds the momentum — you decide your levels.</p>
+      <p>Current price. Trend direction. Volatility context. The engine finds the momentum — you decide your levels.</p>
     </div>
     <div class="le-block">
       <div class="icon">🌍</div>
