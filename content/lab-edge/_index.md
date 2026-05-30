@@ -50,7 +50,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-faq h3 { margin: 0 0 0.8rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .le-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.7; }
   .le-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff !important; }
-  .review-article .le-close h2 { color: #fff !important; }
+  .review-article .le-close h2 { color: var(--accent) !important; }
   .review-article .le-close p { color: #fff !important; }
   @media (max-width: 768px) {
     .le-blocks { grid-template-columns: 1fr; }
@@ -236,7 +236,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
 <div class="le-section">
   <div class="le-close">
-    <h2>You don't need to watch 166 markets. That's our job.</h2>
+    <h2>You don't need to watch 166 markets.<br>That's our job.</h2>
     <p>One message every Sunday. The signal. The stop. The size.</p>
     <p style="font-size:1.3rem;color:#fff;">7-day free trial. Cancel anytime.</p>
   </div>
