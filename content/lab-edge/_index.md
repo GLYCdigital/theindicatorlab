@@ -77,7 +77,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <p>You now have the opportunity to run it with a Telegram bot.</p>
   <p>Two moving averages. SMA10 crossing above SMA40. That's the entire signal. No machine learning. No black box. Just a mechanical rule that works across every asset class — stocks, bonds, commodities, crypto, forex — because human behaviour patterns are universal.</p>
   <p>SMA10 crosses above SMA40 → buy. Crosses below → sell. Position sized by volatility so you don't get wiped out during the chop. Rebalanced once a week because daily noise kills returns. The framework is documented.</p>
-  <p>The engine that runs it across 166 markets, every Sunday, with zero input from you. That's what took us years to build, test and use.</p>
+  <p>The engine that runs it across 166 markets, every Sunday, with zero input from you — that's what took us years to build, test and use.</p>
 </div>
 
 <div class="le-section">
