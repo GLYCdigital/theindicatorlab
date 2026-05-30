@@ -185,7 +185,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <p>5. Next Sunday: same time, updated signals. A new snapshot overwrites the old one. Simple.</p>
 </div>
 
-<div id="pricing" class="le-section" style="padding-top: 3rem;">
+<div id="pricing" class="le-section" style="padding-top: 0;">
   <div class="le-pricing">
     <h2>The Lab Edge</h2>
     <div class="le-price">$79<span>/mo</span></div>
