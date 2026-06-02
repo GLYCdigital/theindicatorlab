@@ -16,6 +16,9 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Double Exponential MA TradingView indicator review: settings, strategy, and how to use it for momentum trading. Expert analysis with chart examples."
+
+aliases:
+  - /reviews/double-exponential-moving-average/
 ---
 
 <script type="application/ld+json">

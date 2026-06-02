@@ -16,6 +16,9 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Price Channel is a reliable trend-following indicator that defines clear support and resistance levels based on recent highs and lows."
+
+aliases:
+  - /reviews/price-channels/
 ---
 
 <script type="application/ld+json">

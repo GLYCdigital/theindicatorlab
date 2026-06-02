@@ -19,6 +19,9 @@ image: "/screenshots/vidya.png"
 image_alt: "Variable Index Dynamic Average (VIDYA) TradingView indicator chart screenshot"
 description: "Variable Index Dynamic Average (VIDYA) adapts to volatility, reducing lag during trends and smoothing noise in ranging markets, ideal for trend traders."
 keywords: "vidya, trend, tradingview, indicator, review, trading, direction, Variable Index Dynamic Average (VIDYA)"
+
+aliases:
+  - /reviews/variable-index-dynamic/
 ---
 
 <script type="application/ld+json">

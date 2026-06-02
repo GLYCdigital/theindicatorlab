@@ -16,6 +16,9 @@ categories:
   - Technical Analysis
 rating: 3
 description: "A detailed review of Least Squares — a trend indicator for TradingView. Settings, strategy, pros and cons, and how to use it effectively."
+
+aliases:
+  - /reviews/least-squares-moving-average/
 ---
 
 <script type="application/ld+json">

@@ -16,6 +16,9 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Williams %R — a momentum oscillator that measures overbought and oversold levels. Inverted RSI with a different scaling, same logic."
+
+aliases:
+  - /reviews/williams-percent-range/
 ---
 
 <script type="application/ld+json">

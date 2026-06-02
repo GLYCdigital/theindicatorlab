@@ -16,6 +16,9 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A versatile trend-following indicator that uses ATR to dynamically set trailing stop levels, helping traders identify trend direction and potential reve..."
+
+aliases:
+  - /reviews/supertrend/
 ---
 
 <script type="application/ld+json">

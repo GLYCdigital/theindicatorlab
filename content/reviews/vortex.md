@@ -16,6 +16,9 @@ categories:
   - Technical Analysis
 rating: 4
 description: "The Vortex Indicator tracks trend direction and momentum using positive and negative directional movement — simple, visual, effective."
+
+aliases:
+  - /reviews/vortex-indicator/
 ---
 
 <script type="application/ld+json">
