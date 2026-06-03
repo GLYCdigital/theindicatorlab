@@ -8,8 +8,8 @@ Disallow: /go/
 # Block paginated thin pages
 Disallow: */page/
 
-# Block RSS/XML feeds from search results
-Disallow: *.xml
+# Block RSS/Atom feeds from search results (sitemap.xml stays accessible)
+Disallow: /index.xml
 
 # Block search pages (thin content)
 Disallow: /search/
