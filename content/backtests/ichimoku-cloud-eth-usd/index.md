@@ -1,10 +1,10 @@
 ---
 {
   "title": "Ichimoku \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+35.6%",
+      "return_pct": "+42.2%",
       "trades": "1",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-32.5%",
+      "return_pct": "-46.9%",
       "trades": "6",
       "win_rate_pct": "33.3%"
     }
@@ -105,7 +105,7 @@ On ETH, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-05-31 → 2026-05-29), the Ichimoku Cloud delivered a **+19.6% total return** on ETH-USD, compounding at **3.6% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Ichimoku Cloud delivered a **+19.6% total return** on ETH-USD, compounding at **3.6% annually**. 
 
 At **0.16**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -133,6 +133,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on ETH-USD](/backtests/ichimoku-cloud-eth-usd-trades.png)

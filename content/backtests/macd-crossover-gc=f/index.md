@@ -1,10 +1,10 @@
 ---
 {
   "title": "MACD \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.0%",
+      "return_pct": "-3.7%",
       "trades": "4",
       "win_rate_pct": "44.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+6.3%",
+      "return_pct": "+1.2%",
       "trades": "4",
       "win_rate_pct": "44.2%"
     }
@@ -109,7 +109,7 @@ On GC=F, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-06-01 → 2026-05-29), the MACD Crossover delivered a **+25.1% total return** on GC=F, compounding at **4.6% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the MACD Crossover delivered a **+25.1% total return** on GC=F, compounding at **4.6% annually**. 
 
 At **0.24**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on GC=F unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on GC=F](/backtests/macd-crossover-gc=f-trades.png)

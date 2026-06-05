@@ -1,10 +1,10 @@
 ---
 {
   "title": "BollingerBands \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.0%",
+      "return_pct": "+38.0%",
       "trades": "12",
       "win_rate_pct": "23.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-16.7%",
+      "return_pct": "-31.5%",
       "trades": "6",
       "win_rate_pct": "23.8%"
     }
@@ -109,7 +109,7 @@ On BTC, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-05-31 → 2026-05-29), the TTM Squeeze Pro delivered a **+51.5% total return** on BTC-USD, compounding at **8.7% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the TTM Squeeze Pro delivered a **+51.5% total return** on BTC-USD, compounding at **8.7% annually**. 
 
 At **0.32**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on BTC-USD](/backtests/ttm-squeeze-pro-btc-usd-trades.png)

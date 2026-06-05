@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+20.8%"
+      "value": "+19.2%"
     },
     {
       "label": "CAGR",
-      "value": "3.9%"
+      "value": "3.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.17"
+      "value": "0.15"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+14.3%",
+      "return_pct": "+13.6%",
       "trades": "7",
       "win_rate_pct": "39.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+10.9%",
+      "return_pct": "+9.3%",
       "trades": "6",
       "win_rate_pct": "39.7%"
     }
@@ -109,9 +109,9 @@ On SPY, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-01 → 2026-05-29), the Bollinger Band Squeeze delivered a **+20.8% total return** on SPY, compounding at **3.9% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Bollinger Band Squeeze delivered a **+19.2% total return** on SPY, compounding at **3.6% annually**. 
 
-At **0.17**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.15**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **21.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 22% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **21.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.17 | ❌ Weak |
+| Sharpe Ratio | 0.15 | ❌ Weak |
 | Max Drawdown | 21.8% | ⚠️ Moderate |
 | Win Rate | 39.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.09 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.09** tells the real story: when the BollingerBands fire
 
 ## Does the Bollinger Band Squeeze Work on SPY?
 
-The bollinger band squeeze struggled to generate meaningful edge on SPY over this 5-year period. With a **0.17 Sharpe ratio** and **1.09 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The bollinger band squeeze struggled to generate meaningful edge on SPY over this 5-year period. With a **0.15 Sharpe ratio** and **1.09 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on SPY](/backtests/bollinger-band-squeeze-spy-trades.png)

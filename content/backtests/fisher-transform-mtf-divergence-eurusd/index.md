@@ -1,18 +1,18 @@
 ---
 {
   "title": "Fisher \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-45.8%"
+      "value": "-45.2%"
     },
     {
       "label": "CAGR",
-      "value": "-11.5%"
+      "value": "-11.4%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "46.0%"
+      "value": "45.2%"
     },
     {
       "label": "Win Rate",
-      "value": "34.1%"
+      "value": "34.4%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "287"
+      "value": "285"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-7.1%",
-      "trades": "32",
-      "win_rate_pct": "34.1%"
+      "return_pct": "-6.9%",
+      "trades": "30",
+      "win_rate_pct": "34.4%"
     },
     {
       "year": "2022",
       "return_pct": "-6.3%",
       "trades": "56",
-      "win_rate_pct": "34.1%"
+      "win_rate_pct": "34.4%"
     },
     {
       "year": "2023",
       "return_pct": "+3.3%",
       "trades": "64",
-      "win_rate_pct": "34.1%"
+      "win_rate_pct": "34.4%"
     },
     {
       "year": "2024",
       "return_pct": "-5.9%",
       "trades": "66",
-      "win_rate_pct": "34.1%"
+      "win_rate_pct": "34.4%"
     },
     {
       "year": "2025",
       "return_pct": "+13.5%",
       "trades": "49",
-      "win_rate_pct": "34.1%"
+      "win_rate_pct": "34.4%"
     },
     {
       "year": "2026",
-      "return_pct": "-0.7%",
+      "return_pct": "-1.9%",
       "trades": "20",
-      "win_rate_pct": "34.1%"
+      "win_rate_pct": "34.4%"
     }
   ],
   "cta_headline": "Trade Forex with TradingView Pro",
@@ -109,23 +109,23 @@ On EURUSD, the Fisher acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-05-31 → 2026-05-29), the Fisher Transform MTF Divergence delivered a **-45.8% total return** on EURUSD=X, compounding at **-11.5% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Fisher Transform MTF Divergence delivered a **-45.2% total return** on EURUSD=X, compounding at **-11.4% annually**. 
 
 At **-2.43**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **46.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 46% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **45.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 45% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | -2.43 | ❌ Weak |
-| Max Drawdown | 46.0% | ⚠️ Significant |
-| Win Rate | 34.1% | ❌ Low — relies on outsized wins |
+| Max Drawdown | 45.2% | ⚠️ Significant |
+| Win Rate | 34.4% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.40 | ❌ Unprofitable |
-| Trades/Year | ~287 total | Active |
+| Trades/Year | ~285 total | Active |
 
-The **profit factor of 0.40** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 34.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.40** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 34.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on EURUSD?
 
@@ -146,6 +146,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on EURUSD=X](/backtests/fisher-transform-mtf-divergence-eurusd-trades.png)

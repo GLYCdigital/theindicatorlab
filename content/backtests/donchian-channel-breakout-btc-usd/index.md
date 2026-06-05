@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.0%",
+      "return_pct": "+38.0%",
       "trades": "11",
       "win_rate_pct": "27.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-16.7%",
+      "return_pct": "-31.5%",
       "trades": "9",
       "win_rate_pct": "27.1%"
     }
@@ -101,7 +101,7 @@ On BTC, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-05-31 → 2026-05-29), the Donchian Channel Breakout delivered a **+35.5% total return** on BTC-USD, compounding at **6.3% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Donchian Channel Breakout delivered a **+35.5% total return** on BTC-USD, compounding at **6.3% annually**. 
 
 At **0.27**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -129,6 +129,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on BTC-USD](/backtests/donchian-channel-breakout-btc-usd-trades.png)

@@ -20,8 +20,13 @@ OUTPUT_DIR = "/Users/Gabriel 1/.openclaw/workspace/til/dashboard"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-TELEGRAM_TOKEN = "8001151629:AAEo5ML5ZBCBkElWw6IEfoCyfdeSK1aLWXs"
-TELEGRAM_CHAT = "-1003250348876"
+# Token and chat ID read from env only — Gemma's old token was revoked
+# Set via cron sourcing ~/.openclaw/secrets/env.sh
+TELEGRAM_TOKEN = os.environ.get('TIL_PNL_BOT_TOKEN', '')
+TELEGRAM_CHAT = os.environ.get('TIL_PNL_CHAT_ID', '-1003250348876')
+
+if not TELEGRAM_TOKEN:
+    print("WARNING: TIL_PNL_BOT_TOKEN not set — Telegram disabled")
 
 NOW = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 

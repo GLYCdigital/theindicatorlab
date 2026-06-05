@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+18.2%"
+      "value": "+16.6%"
     },
     {
       "label": "CAGR",
-      "value": "3.4%"
+      "value": "3.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.13"
+      "value": "0.11"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+14.3%",
+      "return_pct": "+13.6%",
       "trades": "8",
       "win_rate_pct": "29.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+10.9%",
+      "return_pct": "+9.3%",
       "trades": "6",
       "win_rate_pct": "29.2%"
     }
@@ -101,9 +101,9 @@ On SPY, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-01 → 2026-05-29), the Donchian Channel Breakout delivered a **+18.2% total return** on SPY, compounding at **3.4% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Donchian Channel Breakout delivered a **+16.6% total return** on SPY, compounding at **3.1% annually**. 
 
-At **0.13**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.11**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **24.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 24% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -111,7 +111,7 @@ The catch? A **24.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.13 | ❌ Weak |
+| Sharpe Ratio | 0.11 | ❌ Weak |
 | Max Drawdown | 24.5% | ⚠️ Moderate |
 | Win Rate | 29.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.05 | ⚠️ Marginal |
@@ -121,7 +121,7 @@ The **profit factor of 1.05** tells the real story: when the Donchian fires, the
 
 ## Does the Donchian Channel Breakout Work on SPY?
 
-The donchian channel breakout struggled to generate meaningful edge on SPY over this 5-year period. With a **0.13 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on SPY over this 5-year period. With a **0.11 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -129,6 +129,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on SPY](/backtests/donchian-channel-breakout-spy-trades.png)

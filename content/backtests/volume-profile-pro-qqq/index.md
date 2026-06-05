@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+46.9%"
+      "value": "+43.2%"
     },
     {
       "label": "CAGR",
-      "value": "8.0%"
+      "value": "7.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.34"
+      "value": "0.31"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+20.0%",
+      "return_pct": "+18.6%",
       "trades": "9",
       "win_rate_pct": "39.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+20.2%",
+      "return_pct": "+17.0%",
       "trades": "7",
       "win_rate_pct": "39.1%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/volume-profile-pro-qqq-equity.png",
   "crosslinks": [
     {
+      "title": "vwap_bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/vwap-bands/"
+    },
+    {
+      "title": "vwap_multi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/vwap-multi/"
+    },
+    {
       "title": "htf volume spike imbalance projection review: settings, strategy &amp; how to use it",
       "url": "/reviews/htf-volume-spike-imbalance-projection/"
-    },
-    {
-      "title": "vwap_standard_deviation_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-standard-deviation-bands/"
-    },
-    {
-      "title": "vwap regime filter signal quality indicator lunqfx review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-regime-filter-signal-quality-indicator-lunqfx/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On QQQ, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-01 → 2026-05-29), the Volume Profile Pro delivered a **+46.9% total return** on QQQ, compounding at **8.0% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Volume Profile Pro delivered a **+43.2% total return** on QQQ, compounding at **7.4% annually**. 
 
-At **0.34**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.31**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **32.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 32% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **32.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.34 | ❌ Weak |
+| Sharpe Ratio | 0.31 | ❌ Weak |
 | Max Drawdown | 32.5% | ⚠️ Significant |
 | Win Rate | 39.1% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.21 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.21** tells the real story: when the VWAP fires, the win
 
 ## Does the Volume Profile Pro Work on QQQ?
 
-The volume profile pro shows moderate edge on QQQ — **0.34 Sharpe, 1.21 profit factor** over 69 trades. It's not a home run, but it's also not random.
+The volume profile pro shows moderate edge on QQQ — **0.31 Sharpe, 1.21 profit factor** over 69 trades. It's not a home run, but it's also not random.
 
 The 39.1% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on QQQ. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on QQQ](/backtests/volume-profile-pro-qqq-trades.png)

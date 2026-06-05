@@ -1,18 +1,18 @@
 ---
 {
   "title": "EMA \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.7%"
+      "value": "+14.5%"
     },
     {
       "label": "CAGR",
-      "value": "2.8%"
+      "value": "2.7%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+35.6%",
+      "return_pct": "+42.2%",
       "trades": "2",
       "win_rate_pct": "39.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-32.5%",
+      "return_pct": "-46.9%",
       "trades": "4",
       "win_rate_pct": "39.3%"
     }
@@ -109,7 +109,7 @@ On ETH, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-05-31 → 2026-05-29), the EMA Ribbon delivered a **+14.7% total return** on ETH-USD, compounding at **2.8% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the EMA Ribbon delivered a **+14.5% total return** on ETH-USD, compounding at **2.7% annually**. 
 
 At **0.16**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on ETH-USD](/backtests/ema-ribbon-eth-usd-trades.png)

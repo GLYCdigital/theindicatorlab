@@ -1,22 +1,22 @@
 ---
 {
   "title": "Fisher \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-05-31 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+18.2%"
+      "value": "+14.3%"
     },
     {
       "label": "CAGR",
-      "value": "3.4%"
+      "value": "2.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.18"
+      "value": "0.17"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "31.9%"
+      "value": "31.8%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "342"
+      "value": "343"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.0%",
-      "trades": "40",
-      "win_rate_pct": "31.9%"
+      "return_pct": "+38.0%",
+      "trades": "39",
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "63",
-      "win_rate_pct": "31.9%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "76",
-      "win_rate_pct": "31.9%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "68",
-      "win_rate_pct": "31.9%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "70",
-      "win_rate_pct": "31.9%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2026",
-      "return_pct": "-16.7%",
-      "trades": "25",
-      "win_rate_pct": "31.9%"
+      "return_pct": "-31.5%",
+      "trades": "27",
+      "win_rate_pct": "31.8%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On BTC, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-05-31 → 2026-05-29), the Fisher Transform MTF Divergence delivered a **+18.2% total return** on BTC-USD, compounding at **3.4% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Fisher Transform MTF Divergence delivered a **+14.3% total return** on BTC-USD, compounding at **2.7% annually**. 
 
-At **0.18**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.17**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.18 | ❌ Weak |
+| Sharpe Ratio | 0.17 | ❌ Weak |
 | Max Drawdown | 49.5% | ⚠️ Significant |
-| Win Rate | 31.9% | ❌ Low — relies on outsized wins |
+| Win Rate | 31.8% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.04 | ⚠️ Marginal |
-| Trades/Year | ~342 total | Active |
+| Trades/Year | ~343 total | Active |
 
-The **profit factor of 1.04** tells the real story: when the Fisher fires, the winning signals are larger than the losing ones. Combined with a 31.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.04** tells the real story: when the Fisher fires, the winning signals are larger than the losing ones. Combined with a 31.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on BTC?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on BTC over this 5-year period. With a **0.18 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on BTC over this 5-year period. With a **0.17 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on BTC-USD](/backtests/fisher-transform-mtf-divergence-btc-usd-trades.png)

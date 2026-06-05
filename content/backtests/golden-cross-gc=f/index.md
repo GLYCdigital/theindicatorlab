@@ -1,26 +1,26 @@
 ---
 {
   "title": "SMA \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-01 \u2192 2026-05-29",
+  "period": "2021-06-07 \u2192 2026-06-05",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+110.1%"
+      "value": "+100.1%"
     },
     {
       "label": "CAGR",
-      "value": "16.0%"
+      "value": "14.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.57"
+      "value": "0.53"
     },
     {
       "label": "Max Drawdown",
-      "value": "17.4%"
+      "value": "17.6%"
     },
     {
       "label": "Win Rate",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.0%",
+      "return_pct": "-3.7%",
       "trades": "0",
       "win_rate_pct": "0.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+6.3%",
+      "return_pct": "+1.2%",
       "trades": "0",
       "win_rate_pct": "0.0%"
     }
@@ -109,18 +109,18 @@ On GC=F, the SMA acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-06-01 → 2026-05-29), the Golden Cross delivered a **+110.1% total return** on GC=F, compounding at **16.0% annually**. 
+Over five years (2021-06-07 → 2026-06-05), the Golden Cross delivered a **+100.1% total return** on GC=F, compounding at **14.9% annually**. 
 
-At **0.57**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.53**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **17.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 17% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **17.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.57 | ⚠️ Moderate |
-| Max Drawdown | 17.4% | ⚠️ Moderate |
+| Sharpe Ratio | 0.53 | ⚠️ Moderate |
+| Max Drawdown | 17.6% | ⚠️ Moderate |
 | Win Rate | 0.0% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.00 | ❌ Unprofitable |
 | Trades/Year | ~2 total | Selective — not overtrading |
@@ -129,7 +129,7 @@ The **profit factor of 0.00** tells the real story: when the SMA fires, the winn
 
 ## Does the Golden Cross Work on GC=F?
 
-The golden cross shows moderate edge on GC=F — **0.57 Sharpe, 0.00 profit factor** over 2 trades. It's not a home run, but it's also not random.
+The golden cross shows moderate edge on GC=F — **0.53 Sharpe, 0.00 profit factor** over 2 trades. It's not a home run, but it's also not random.
 
 The 0.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on GC=F.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: May 30, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on GC=F](/backtests/golden-cross-gc=f-trades.png)
