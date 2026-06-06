@@ -1,46 +1,73 @@
-{{/* Related Indicators — shows up to 4 related reviews based on shared categories/tags */}}
+{{/* Related Indicators — powered by the cross-linking engine */}}
 {{ $current := . }}
-{{ $related := slice }}
-{{ $currentCats := $current.Params.categories | default slice }}
-{{ $currentTags := $current.Params.tags | default slice }}
+{{ $currentSlug := .File.TranslationBaseName }}
 
-{{/* Find pages in same section with matching categories or tags */}}
-{{ range where .Site.RegularPages "Section" "reviews" }}
-  {{ if ne .Permalink $current.Permalink }}
-    {{ $matchScore := 0 }}
-    {{ $pageCats := .Params.categories | default slice }}
-    {{ $pageTags := .Params.tags | default slice }}
-    {{ range $currentCats }}
-      {{ if in $pageCats . }}{{ $matchScore = add $matchScore 2 }}{{ end }}
-    {{ end }}
-    {{ range $currentTags }}
-      {{ if in $pageTags . }}{{ $matchScore = add $matchScore 1 }}{{ end }}
-    {{ end }}
-    {{ if gt $matchScore 1 }}
-      {{ $related = $related | append (dict "page" . "score" $matchScore) }}
+{{/* Try the pre-computed data file first */}}
+{{ $dataFile := index hugo.Data "related_reviews" }}
+{{ if $dataFile }}
+  {{ $related := index $dataFile $currentSlug }}
+  {{ if $related }}
+    <div class="related-indicators" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--card-border);">
+      <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Related Indicators</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem;">
+        {{ range $related }}
+          {{ $rating := .rating }}
+          <a href="{{ "/reviews/" | relURL }}{{ .slug }}/" style="display: block; padding: 1.25rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); text-decoration: none; color: var(--text); transition: border-color 0.15s;">
+            <div style="font-weight: 600; font-size: 1.3rem; margin-bottom: 0.4rem;">{{ .title }}</div>
+            {{ with $rating }}
+            <div style="color: var(--accent); font-size: 1.15rem;">
+              {{ range seq 5 }}{{ if le . $rating }}★{{ else }}☆{{ end }}{{ end }}
+              {{ $rating }}/5
+            </div>
+            {{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+{{ else }}
+  {{/* Fallback: Hugo-native matching (category + tag overlap) */}}
+  {{ $related := slice }}
+  {{ $currentCats := $current.Params.categories | default slice }}
+  {{ $currentTags := $current.Params.tags | default slice }}
+
+  {{ range where .Site.RegularPages "Section" "reviews" }}
+    {{ if ne .Permalink $current.Permalink }}
+      {{ $matchScore := 0 }}
+      {{ $pageCats := .Params.categories | default slice }}
+      {{ $pageTags := .Params.tags | default slice }}
+      {{ range $currentCats }}
+        {{ if in $pageCats . }}{{ $matchScore = add $matchScore 2 }}{{ end }}
+      {{ end }}
+      {{ range $currentTags }}
+        {{ if in $pageTags . }}{{ $matchScore = add $matchScore 1 }}{{ end }}
+      {{ end }}
+      {{ if gt $matchScore 2 }}
+        {{ $related = $related | append (dict "page" . "score" $matchScore) }}
+      {{ end }}
     {{ end }}
   {{ end }}
-{{ end }}
 
-{{/* Sort by score and take top 4 */}}
-{{ $related = sort $related "score" "desc" | first 4 }}
+  {{ $related = sort $related "score" "desc" | first 4 }}
 
-{{ if $related }}
-<div class="related-indicators" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--card-border);">
-  <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Related Indicators</h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem;">
-    {{ range $related }}
-      {{ $r := .page }}
-      <a href="{{ $r.Permalink }}" style="display: block; padding: 1.25rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); text-decoration: none; color: var(--text); transition: border-color 0.15s;">
-        <div style="font-weight: 600; font-size: 1.3rem; margin-bottom: 0.4rem;">{{ $r.Title }}</div>
-        {{ with $r.Params.rating }}
-        <div style="color: var(--accent); font-size: 1.15rem;">
-          {{ range seq 5 }}{{ if le . $.Params.rating }}★{{ else }}☆{{ end }}{{ end }}
-          {{ . }}/5
-        </div>
-        {{ end }}
-      </a>
-    {{ end }}
+  {{ if $related }}
+  <div class="related-indicators" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--card-border);">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Related Indicators</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem;">
+      {{ range $related }}
+        {{ $r := .page }}
+        <a href="{{ $r.Permalink }}" style="display: block; padding: 1.25rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); text-decoration: none; color: var(--text); transition: border-color 0.15s;">
+          <div style="font-weight: 600; font-size: 1.3rem; margin-bottom: 0.4rem;">{{ $r.Title }}</div>
+          {{ with $r.Params.rating }}
+          <div style="color: var(--accent); font-size: 1.15rem;">
+            {{ range seq 5 }}{{ if le . $r.Params.rating }}★{{ else }}☆{{ end }}{{ end }}
+            {{ . }}/5
+          </div>
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
   </div>
-</div>
+  {{ end }}
 {{ end }}
