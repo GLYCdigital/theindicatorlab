@@ -432,13 +432,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "atr-channels": [
@@ -1611,6 +1611,32 @@
       "score": 5.0
     }
   ],
+  "demarker-indicator": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.1
+    }
+  ],
   "detrended-price-oscillator": [
     {
       "slug": "acceleration-deceleration",
@@ -1769,16 +1795,16 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.8
-    },
-    {
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.8
+    },
+    {
+      "slug": "moving-average-ribbon",
+      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.7
     },
     {
       "slug": "guppy-multiple-moving-average",
@@ -3069,6 +3095,12 @@
   ],
   "heikin-ashi-smoothed": [
     {
+      "slug": "heikin-ashi-trend",
+      "title": "Heikin_Ashi_Trend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3085,11 +3117,31 @@
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.1
+    }
+  ],
+  "heikin-ashi-trend": [
+    {
+      "slug": "heikin-ashi-smoothed",
+      "title": "Heikin_Ashi_Smoothed Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 1.1
     }
   ],
@@ -3299,6 +3351,32 @@
       "title": "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
+    }
+  ],
+  "inverse-fisher-transform": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.1
     }
   ],
   "jurik-moving-average": [
@@ -5568,25 +5646,25 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.4
+      "score": 3.3
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.4
+      "score": 3.3
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.4
+      "score": 3.3
     },
     {
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.4
+      "score": 3.3
     }
   ],
   "rajiv-alpha-fusion": [
@@ -6184,7 +6262,7 @@
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "supertrend-atr-trailing-stop": [
@@ -7120,7 +7198,7 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "volume-profile-pro": [
@@ -7302,7 +7380,7 @@
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.5
+      "score": 3.4
     }
   ],
   "vortex": [
