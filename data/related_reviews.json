@@ -527,22 +527,22 @@
       "score": 9.0
     },
     {
-      "slug": "keltner-channels",
-      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.6
-    },
-    {
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.4
     },
     {
-      "slug": "chandelier-exit",
-      "title": "Chandelier Exit Review: Settings, Strategy &amp; How to Use It",
+      "slug": "keltner-channels",
+      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.4
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
     }
   ],
   "aurora-compass": [
@@ -657,14 +657,14 @@
       "score": 9.0
     },
     {
-      "slug": "keltner-channels",
-      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.6
-    },
-    {
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.4
+    },
+    {
+      "slug": "keltner-channels",
+      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.4
     },
@@ -975,14 +975,14 @@
       "score": 5.9
     },
     {
-      "slug": "volatility-smile",
-      "title": "Volatility_Smile Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.3
-    },
-    {
       "slug": "chaikin-volatility-histogram",
       "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "historical-volatility",
+      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -1171,20 +1171,8 @@
   ],
   "chandelier-exit": [
     {
-      "slug": "atr",
-      "title": "Atr Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
-      "score": 5.3
-    },
-    {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.3
-    },
-    {
-      "slug": "keltner-channels",
-      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.3
     },
@@ -1192,6 +1180,18 @@
       "slug": "atr-channels",
       "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "atr-fibonacci-expansion-zones",
+      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 5.1
+    },
+    {
+      "slug": "atr-trailing-stop",
+      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 5.1
     }
   ],
@@ -1836,13 +1836,13 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "efficiency-ratio-bands": [
@@ -3410,7 +3410,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.7
+      "score": 9.5
     },
     {
       "slug": "jurik-volatility-bands",
@@ -3509,18 +3509,38 @@
       "score": 8.0
     }
   ],
+  "kaufman-efficiency-ratio": [
+    {
+      "slug": "kama",
+      "title": "Kaufman Adaptive Moving Average (KAMA) Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    }
+  ],
   "keltner-channels": [
     {
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.6
-    },
-    {
-      "slug": "average-true-range",
-      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.6
+      "score": 5.4
     },
     {
       "slug": "average-true-range-simple",
@@ -3529,10 +3549,16 @@
       "score": 5.4
     },
     {
-      "slug": "chandelier-exit",
-      "title": "Chandelier Exit Review: Settings, Strategy &amp; How to Use It",
+      "slug": "average-true-range",
+      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.4
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
     }
   ],
   "kitty-s-law-theultimator5": [
@@ -4081,6 +4107,32 @@
       "score": 5.0
     }
   ],
+  "market-meanness-index": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.1
+    }
+  ],
   "market-microstructure-analytics": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -4424,13 +4476,13 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 6.3
+      "score": 6.2
     },
     {
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.9
+      "score": 5.8
     },
     {
       "slug": "ema-crossover",
@@ -5823,10 +5875,16 @@
       "score": 1.1
     }
   ],
-  "relative-strength-comparison": [
+  "relative-momentum-index": [
     {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "relative-strength-comparison",
+      "title": "Relative_Strength_Comparison Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
@@ -5841,12 +5899,32 @@
       "title": "Relative Vigor Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "relative-strength-comparison": [
+    {
+      "slug": "connors-rsi",
+      "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     },
     {
-      "slug": "balance-of-power",
-      "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
+      "slug": "relative-momentum-index",
+      "title": "Relative_Momentum_Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 5.0
+    },
+    {
+      "slug": "relative-strength-index-rsi",
+      "title": "Relative Strength Index Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "relative-vigor-index",
+      "title": "Relative Vigor Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "relative-strength-index-rsi": [
@@ -6322,19 +6400,19 @@
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "price-channel",
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "supertrend-atr-trailing-stop",
@@ -6634,25 +6712,25 @@
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "on-balance-volume",
       "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "price-volume-trend",
       "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "tranquila-smc-free-01": [
@@ -7007,14 +7085,14 @@
       "score": 1.6
     },
     {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "slug": "least-squares",
+      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 1.6
     },
     {
-      "slug": "least-squares",
-      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
+      "slug": "pwvo",
+      "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 1.6
     }
@@ -7050,7 +7128,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.7
+      "score": 9.5
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -7076,23 +7154,23 @@
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.3
+      "score": 5.1
+    },
+    {
+      "slug": "chaikin-volatility-histogram",
+      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
     },
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.1
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 5.3
-    },
-    {
-      "slug": "chaikin-volatility-histogram",
-      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "slug": "historical-volatility",
+      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -7111,14 +7189,14 @@
       "score": 5.9
     },
     {
-      "slug": "volatility-smile",
-      "title": "Volatility_Smile Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.3
-    },
-    {
       "slug": "chaikin-volatility-histogram",
       "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "historical-volatility",
+      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -7365,12 +7443,6 @@
       "score": 2.0
     },
     {
-      "slug": "positive-volume-index",
-      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.8
-    },
-    {
       "slug": "volume-flow",
       "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7381,6 +7453,12 @@
       "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.8
+    },
+    {
+      "slug": "on-balance-volume",
+      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.7
     }
   ],
   "volume-weighted-ma": [
@@ -7452,13 +7530,13 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.5
+      "score": 3.4
     },
     {
-      "slug": "moving-average-exp-envelope",
-      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
+      "slug": "guppy-multiple-moving-average",
+      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.4
+      "score": 3.3
     }
   ],
   "vortex": [
