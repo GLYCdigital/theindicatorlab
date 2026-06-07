@@ -966,13 +966,13 @@
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.9
+      "score": 5.8
     },
     {
       "slug": "volatility-stop",
       "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.9
+      "score": 5.8
     },
     {
       "slug": "chaikin-volatility-histogram",
@@ -1137,8 +1137,8 @@
       "score": 9.0
     },
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
+      "slug": "volatility-stop",
+      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 5.9
     }
@@ -1460,25 +1460,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "pwvo",
       "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "darvas-box": [
@@ -2119,14 +2119,14 @@
       "score": 5.1
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     },
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "slug": "jurik-volatility-bands",
+      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -2151,8 +2151,8 @@
       "score": 5.1
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -2769,14 +2769,14 @@
       "score": 5.1
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     },
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "slug": "jurik-volatility-bands",
+      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -3405,12 +3405,44 @@
       "score": 1.1
     }
   ],
+  "jurik-cfj": [
+    {
+      "slug": "jurik-moving-average",
+      "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "jurik-volatility-bands",
+      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "ema-crossover",
+      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    }
+  ],
   "jurik-moving-average": [
     {
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.5
+      "score": 9.4
+    },
+    {
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
       "slug": "jurik-volatility-bands",
@@ -3423,15 +3455,15 @@
       "title": "Kitty s Law theUltimator5 Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 8.0
-    },
-    {
-      "slug": "mcginley-dynamic",
-      "title": "McGinley Dynamic Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 8.0
     }
   ],
   "jurik-volatility-bands": [
+    {
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
@@ -3447,12 +3479,6 @@
     {
       "slug": "chaikin-volatility-histogram",
       "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -3488,7 +3514,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.7
+      "score": 8.6
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -3696,25 +3722,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "pwvo",
       "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "linear-regression-channel": [
@@ -3945,10 +3971,10 @@
       "score": 5.1
     },
     {
-      "slug": "focus-bars-kioseff-trading",
-      "title": "Focus Bars Kioseff Trading Review: Settings, Strategy &amp; How to Use It",
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 5.1
     }
   ],
   "machine-learning-knn": [
@@ -4531,6 +4557,12 @@
       "score": 5.1
     },
     {
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
       "slug": "volume-weighted-macd",
       "title": "Volume Weighted Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4541,12 +4573,6 @@
       "title": "Zero Lag MACD Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.1
     }
   ],
   "mtf-moving-average": [
@@ -5646,25 +5672,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "qstick": [
@@ -5724,25 +5750,25 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.3
+      "score": 3.2
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.3
+      "score": 3.2
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.3
+      "score": 3.2
     },
     {
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.3
+      "score": 3.2
     }
   ],
   "rajiv-alpha-fusion": [
@@ -6029,6 +6055,32 @@
       "title": "Laguerre RSI Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "rsi-macd-combo": [
+    {
+      "slug": "connors-rsi",
+      "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "impulse-rsi-tobbysimard",
+      "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "macd",
+      "title": "Macd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "mtf-macd",
+      "title": "Mtf_Macd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
     }
   ],
   "schaff-trend-cycle": [
@@ -6367,6 +6419,32 @@
       "title": "Andrews Pitchfork Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "starc-bands": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.1
     }
   ],
   "stochastic-rsi": [
@@ -6805,8 +6883,8 @@
       "score": 5.1
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -6938,7 +7016,7 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "twiggs-money-flow": [
@@ -7076,25 +7154,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
+      "score": 1.5
+    },
+    {
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.5
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.6
-    },
-    {
-      "slug": "pwvo",
-      "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "vervoortcrossover-zero-lag-npr21": [
@@ -7128,7 +7206,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.5
+      "score": 9.4
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -7177,16 +7255,16 @@
   ],
   "volatility-stop": [
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 5.9
-    },
-    {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.9
+    },
+    {
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 5.8
     },
     {
       "slug": "chaikin-volatility-histogram",
@@ -7307,26 +7385,26 @@
   ],
   "volume-price-analysis": [
     {
-      "slug": "atr-trailing-stop",
-      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.6
-    },
-    {
-      "slug": "cvd",
-      "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.6
-    },
-    {
-      "slug": "least-squares",
-      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.6
-    },
-    {
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.6
+    },
+    {
+      "slug": "on-balance-volume",
+      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.6
+    },
+    {
+      "slug": "positive-volume-index",
+      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.6
+    },
+    {
+      "slug": "price-volume-trend",
+      "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.6
     }
@@ -7507,10 +7585,10 @@
       "score": 5.1
     },
     {
-      "slug": "focus-bars-kioseff-trading",
-      "title": "Focus Bars Kioseff Trading Review: Settings, Strategy &amp; How to Use It",
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 5.1
     }
   ],
   "volume-weighted-moving-average": [
@@ -7533,8 +7611,8 @@
       "score": 3.4
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 3.3
     }
