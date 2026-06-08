@@ -3275,12 +3275,12 @@
       "score": 1.0
     }
   ],
-  "ichimoku-cloud": [
+  "ichimoku-cloud-spans": [
     {
-      "slug": "price-density-clouds-excavo",
-      "title": "Price Density Clouds EXCAVO Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
+      "slug": "ichimoku-cloud",
+      "title": "Ichimoku Cloud Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 9.0
     },
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -3297,6 +3297,32 @@
     {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    }
+  ],
+  "ichimoku-cloud": [
+    {
+      "slug": "ichimoku-cloud-spans",
+      "title": "Ichimoku_Cloud_Spans Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "price-density-clouds-excavo",
+      "title": "Price Density Clouds EXCAVO Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
     }
@@ -3514,7 +3540,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.6
+      "score": 8.5
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -5048,7 +5074,7 @@
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.8
+      "score": 5.7
     },
     {
       "slug": "psar-with-ema",
@@ -5074,7 +5100,7 @@
       "slug": "parabolic-sar-multi",
       "title": "Parabolic_Sar_Multi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.8
+      "score": 5.7
     },
     {
       "slug": "nova-reversal-bands",
@@ -5405,6 +5431,32 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 1.0
+    }
+  ],
+  "polarized-fractal-efficiency": [
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "fractal-chaos-oscillator",
+      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "fractal-support-resistance",
+      "title": "Fractal_Support_Resistance Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "positive-volume-index": [
@@ -6551,7 +6603,39 @@
       "score": 5.0
     }
   ],
+  "super-trend-oscillator": [
+    {
+      "slug": "super-trend",
+      "title": "Super Trend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    }
+  ],
   "super-trend": [
+    {
+      "slug": "super-trend-oscillator",
+      "title": "Super_Trend_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
     {
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
@@ -6568,12 +6652,6 @@
       "slug": "price-channel",
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
-    },
-    {
-      "slug": "supertrend-atr-trailing-stop",
-      "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
       "score": 1.5
     }
   ],
@@ -7599,12 +7677,6 @@
       "score": 2.0
     },
     {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.7
-    },
-    {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -7613,6 +7685,12 @@
     {
       "slug": "volume-flow",
       "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.7
+    },
+    {
+      "slug": "volume-oscillator",
+      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.7
     }
@@ -7686,7 +7764,7 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.4
+      "score": 3.3
     },
     {
       "slug": "moving-average-exp-envelope",
