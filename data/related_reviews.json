@@ -227,10 +227,10 @@
       "score": 9.0
     },
     {
-      "slug": "ehlers-fisher-transform",
-      "title": "Ehlers Fisher Transform Review: Settings, Strategy &amp; How to Use It",
+      "slug": "williams-fractal-dimension",
+      "title": "Williams_Fractal_Dimension Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.0
+      "score": 9.0
     }
   ],
   "alma-arnaud-legoux": [
@@ -1137,10 +1137,10 @@
       "score": 9.0
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.9
+      "score": 5.8
     }
   ],
   "chande-momentum": [
@@ -1821,16 +1821,16 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.7
-    },
-    {
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.7
+    },
+    {
+      "slug": "moving-average-ribbon",
+      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.6
     },
     {
       "slug": "guppy-multiple-moving-average",
@@ -5580,13 +5580,13 @@
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.7
+      "score": 1.6
     },
     {
       "slug": "macd",
       "title": "Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.7
+      "score": 1.6
     }
   ],
   "price-density-clouds-excavo": [
@@ -5825,28 +5825,54 @@
   ],
   "rainbow-moving-average": [
     {
+      "slug": "rainbow-oscillator",
+      "title": "Rainbow_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.2
+      "score": 3.1
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.2
+      "score": 3.1
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.2
+      "score": 3.1
+    }
+  ],
+  "rainbow-oscillator": [
+    {
+      "slug": "rainbow-moving-average",
+      "title": "Rainbow Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     },
     {
-      "slug": "volume-weighted-moving-average",
-      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.2
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
     }
   ],
   "rajiv-alpha-fusion": [
@@ -6553,6 +6579,12 @@
   ],
   "stochastic-momentum-index": [
     {
+      "slug": "stochastic-oscillator",
+      "title": "Stochastic_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "stochastic-rsi",
       "title": "Stochastic Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6569,10 +6601,30 @@
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
+    }
+  ],
+  "stochastic-oscillator": [
+    {
+      "slug": "stochastic-momentum-index",
+      "title": "Stochastic_Momentum_Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "stochastic-rsi",
+      "title": "Stochastic Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ehlers-adaptive-stochastic",
+      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
     }
@@ -6591,14 +6643,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "stochastic-oscillator",
+      "title": "Stochastic_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 9.0
     },
     {
-      "slug": "alma-arnaud-legoux",
-      "title": "Alma Arnaud Legoux Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -7411,15 +7463,15 @@
   ],
   "volatility-stop": [
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.9
-    },
-    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.8
+    },
+    {
+      "slug": "chaikin-volatility",
+      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.8
     },
     {
@@ -7674,7 +7726,7 @@
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.0
+      "score": 1.9
     },
     {
       "slug": "positive-volume-index",
@@ -7770,7 +7822,7 @@
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.3
+      "score": 3.2
     }
   ],
   "vortex": [
@@ -8005,6 +8057,32 @@
       "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "williams-fractal-dimension": [
+    {
+      "slug": "alligator",
+      "title": "Alligator (Bill Williams) Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 9.0
+    },
+    {
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "fractal-chaos-oscillator",
+      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "williams-percent-r": [
