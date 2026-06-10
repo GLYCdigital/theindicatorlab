@@ -157,6 +157,12 @@
   ],
   "adaptive-trend-lines": [
     {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "ehlers-adaptive-stochastic",
       "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -171,12 +177,6 @@
     {
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "fractal-adaptive-ma",
-      "title": "Fractal Adaptive MA Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -467,6 +467,32 @@
       "score": 1.3
     }
   ],
+  "artemis-adaptive-rsi": [
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "connors-rsi",
+      "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ehlers-adaptive-stochastic",
+      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ehlers-mesa-adaptive-ma",
+      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "atr-channels": [
     {
       "slug": "atr-fibonacci-expansion-zones",
@@ -750,7 +776,7 @@
       "slug": "market-cipher-b",
       "title": "Market Cipher B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "beta-indicator": [
@@ -1391,14 +1417,14 @@
       "score": 5.1
     },
     {
-      "slug": "impulse-rsi-tobbysimard",
-      "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy &amp; How to Use It",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "mtf-rsi",
-      "title": "Mtf_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ezpz-rsi-scalper",
+      "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1989,14 +2015,14 @@
       "score": 5.0
     },
     {
-      "slug": "ehlers-deviation-scaled",
-      "title": "Ehlers_Deviation_Scaled Review: Settings, Strategy &amp; How to Use It",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "ehlers-fisher-transform",
-      "title": "Ehlers Fisher Transform Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ehlers-deviation-scaled",
+      "title": "Ehlers_Deviation_Scaled Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2067,14 +2093,14 @@
       "score": 5.0
     },
     {
-      "slug": "ehlers-deviation-scaled",
-      "title": "Ehlers_Deviation_Scaled Review: Settings, Strategy &amp; How to Use It",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "ehlers-fisher-transform",
-      "title": "Ehlers Fisher Transform Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ehlers-deviation-scaled",
+      "title": "Ehlers_Deviation_Scaled Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2389,6 +2415,32 @@
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
+    }
+  ],
+  "ezpz-rsi-scalper": [
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "connors-rsi",
+      "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "impulse-rsi-tobbysimard",
+      "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "mtf-rsi",
+      "title": "Mtf_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "fair-value-gap-profile-rolling-poc": [
@@ -3563,26 +3615,26 @@
   ],
   "impulse-rsi-tobbysimard": [
     {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
+      "slug": "ezpz-rsi-scalper",
+      "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "mtf-rsi",
       "title": "Mtf_Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "relative-strength-index-rsi",
-      "title": "Relative Strength Index Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3644,7 +3696,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.3
+      "score": 9.2
     },
     {
       "slug": "jurik-cfj",
@@ -4863,26 +4915,26 @@
   ],
   "mtf-rsi": [
     {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
+      "slug": "ezpz-rsi-scalper",
+      "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "impulse-rsi-tobbysimard",
       "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "relative-strength-index-rsi",
-      "title": "Relative Strength Index Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -4963,6 +5015,32 @@
       "title": "Central Pivot Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.8
+    }
+  ],
+  "nadaraya-watson-regression-liquidity-sweeps-algoalpha": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "liquidity-gravity-map-phenlabs",
+      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "liquidity-levels",
+      "title": "Liquidity_Levels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "liquidity-sweep-pro",
+      "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "negative-volume-index": [
@@ -5282,7 +5360,7 @@
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.7
+      "score": 5.6
     },
     {
       "slug": "psar-with-ema",
@@ -5308,7 +5386,7 @@
       "slug": "parabolic-sar-multi",
       "title": "Parabolic_Sar_Multi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.7
+      "score": 5.6
     },
     {
       "slug": "nova-reversal-bands",
@@ -6371,26 +6449,26 @@
   ],
   "rsi-macd-combo": [
     {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
+      "slug": "ezpz-rsi-scalper",
+      "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "impulse-rsi-tobbysimard",
       "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "macd",
-      "title": "Macd Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "mtf-macd",
-      "title": "Mtf_Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -7674,7 +7752,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.3
+      "score": 9.2
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -7853,28 +7931,28 @@
   ],
   "volume-price-analysis": [
     {
+      "slug": "atr-trailing-stop",
+      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.4
+    },
+    {
+      "slug": "cvd",
+      "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.4
+    },
+    {
+      "slug": "least-squares",
+      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.4
+    },
+    {
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
-    },
-    {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.5
-    },
-    {
-      "slug": "positive-volume-index",
-      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.5
-    },
-    {
-      "slug": "price-volume-trend",
-      "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "volume-profile-fixed-range": [
@@ -7986,7 +8064,7 @@
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.9
+      "score": 1.8
     },
     {
       "slug": "on-balance-volume",
@@ -8076,7 +8154,7 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.2
+      "score": 3.1
     },
     {
       "slug": "moving-average-exp-envelope",
