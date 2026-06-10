@@ -623,6 +623,32 @@
       "score": 1.0
     }
   ],
+  "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.0
+    }
+  ],
   "automatic-support-resistance": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -806,6 +832,32 @@
     }
   ],
   "bid-ask-volume": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.0
+    }
+  ],
+  "bidayah-smc-indicator": [
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
@@ -1215,10 +1267,10 @@
       "score": 9.0
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.8
+      "score": 5.7
     }
   ],
   "chande-momentum": [
@@ -1951,16 +2003,16 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.6
-    },
-    {
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.6
+    },
+    {
+      "slug": "moving-average-ribbon",
+      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.5
     },
     {
       "slug": "guppy-multiple-moving-average",
@@ -3774,7 +3826,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.3
+      "score": 8.2
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -4814,7 +4866,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 6.1
+      "score": 6.0
     },
     {
       "slug": "vidya",
@@ -6055,6 +6107,32 @@
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 1.4
+    }
+  ],
+  "qarar-unified-egx-market-map": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.0
     }
   ],
   "qstick": [
@@ -7801,15 +7879,15 @@
   ],
   "volatility-stop": [
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.8
-    },
-    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.7
+    },
+    {
+      "slug": "chaikin-volatility",
+      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.7
     },
     {
@@ -8067,12 +8145,6 @@
       "score": 1.8
     },
     {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.6
-    },
-    {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -8081,6 +8153,12 @@
     {
       "slug": "volume-flow",
       "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.6
+    },
+    {
+      "slug": "volume-oscillator",
+      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.6
     }
@@ -8157,10 +8235,10 @@
       "score": 3.1
     },
     {
-      "slug": "moving-average-exp-envelope",
-      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
+      "slug": "guppy-multiple-moving-average",
+      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.1
+      "score": 3.0
     }
   ],
   "vortex": [
