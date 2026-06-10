@@ -181,6 +181,32 @@
       "score": 4.7
     }
   ],
+  "adx": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.0
+    }
+  ],
   "ajay-strong-smart-money-scalper": [
     {
       "slug": "liquidity-gravity-map-phenlabs",
@@ -909,6 +935,32 @@
       "score": 8.0
     }
   ],
+  "butterfly-pattern": [
+    {
+      "slug": "gartley-pattern",
+      "title": "Gartley_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "harmonic-patterns",
+      "title": "Harmonic_Patterns Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    }
+  ],
   "camarilla-pivots": [
     {
       "slug": "demark-pivots",
@@ -1486,25 +1538,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "pwvo",
       "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "darvas-box": [
@@ -1873,14 +1925,14 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "volume-weighted-moving-average",
-      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.7
-    },
-    {
       "slug": "moving-average-ribbon",
       "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.6
+    },
+    {
+      "slug": "volume-weighted-moving-average",
+      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.6
     },
@@ -2991,6 +3043,12 @@
   ],
   "gartley-pattern": [
     {
+      "slug": "butterfly-pattern",
+      "title": "Butterfly_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "harmonic-patterns",
       "title": "Harmonic_Patterns Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3005,12 +3063,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.0
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
     }
@@ -3147,6 +3199,12 @@
   ],
   "harmonic-patterns": [
     {
+      "slug": "butterfly-pattern",
+      "title": "Butterfly_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "gartley-pattern",
       "title": "Gartley_Pattern Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3161,12 +3219,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.0
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
     }
@@ -3670,7 +3722,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.4
+      "score": 8.3
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -3904,25 +3956,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "pwvo",
       "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "linear-regression-channel": [
@@ -5906,25 +5958,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "qstick": [
@@ -5990,19 +6042,19 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.1
+      "score": 3.0
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.1
+      "score": 3.0
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.1
+      "score": 3.0
     }
   ],
   "rainbow-oscillator": [
@@ -7570,25 +7622,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
+      "score": 1.4
+    },
+    {
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.4
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.5
-    },
-    {
-      "slug": "pwvo",
-      "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "vervoortcrossover-zero-lag-npr21": [
@@ -7801,26 +7853,26 @@
   ],
   "volume-price-analysis": [
     {
-      "slug": "atr-trailing-stop",
-      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.5
-    },
-    {
-      "slug": "cvd",
-      "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.5
-    },
-    {
-      "slug": "least-squares",
-      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.5
-    },
-    {
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.5
+    },
+    {
+      "slug": "on-balance-volume",
+      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.5
+    },
+    {
+      "slug": "positive-volume-index",
+      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.5
+    },
+    {
+      "slug": "price-volume-trend",
+      "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.5
     }
@@ -7937,20 +7989,20 @@
       "score": 1.9
     },
     {
-      "slug": "volume-flow",
-      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.7
-    },
-    {
-      "slug": "volume-oscillator",
-      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.7
-    },
-    {
       "slug": "on-balance-volume",
       "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.6
+    },
+    {
+      "slug": "positive-volume-index",
+      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.6
+    },
+    {
+      "slug": "volume-flow",
+      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.6
     }
@@ -8027,8 +8079,8 @@
       "score": 3.2
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 3.1
     }
@@ -8395,6 +8447,32 @@
       "title": "Andrews Pitchfork Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "woodies-pivots": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.0
     }
   ],
   "wyckoff-pattern-indicator-almostperfect": [
