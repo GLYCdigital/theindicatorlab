@@ -52,9 +52,21 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   .le-close { text-align: center; padding: 5rem 1rem; background: var(--primary); border-radius: var(--radius-lg); max-width: 720px; margin: 0 auto; color: #fff !important; }
   .review-article .le-close h2 { color: var(--accent) !important; }
   .review-article .le-close p { color: #fff !important; }
+  .le-what, .le-who { max-width: 720px; margin: 0 auto; padding: 0 1rem 4rem; }
+  .le-what h2, .le-who h2 { font-size: 2.2rem; font-weight: 700; margin: 0 0 1.5rem; color: var(--text); }
+  .le-what p, .le-who p { font-size: 1.6rem; color: var(--text-secondary); line-height: 1.7; margin: 0 0 1.2rem; }
+  .le-audience { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0; }
+  .le-audience h3 { font-size: 1.5rem; font-weight: 600; margin: 0 0 0.8rem; }
+  .le-audience ul { list-style: none; padding: 0; margin: 0; }
+  .le-audience li { padding: 0.55rem 0; font-size: 1.4rem; color: var(--text-secondary); line-height: 1.5; position: relative; padding-left: 1.5rem; }
+  .le-audience li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+  .le-not { margin-top: 0; }
+  .le-not li { padding: 0.4rem 0; font-size: 1.4rem; color: var(--text-muted); line-height: 1.5; position: relative; padding-left: 1.5rem; }
+  .le-not li::before { content: '✕'; position: absolute; left: 0; opacity: 0.5; }
   @media (max-width: 768px) {
     .le-blocks { grid-template-columns: 1fr; }
     .le-hero h1 .le-line1 { font-size: 2.2rem; }
+    .le-audience { grid-template-columns: 1fr; gap: 1.5rem; }
   }
 </style>
 {{< /rawhtml >}}
@@ -111,6 +123,40 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
 
   <div class="le-transparency">
     <p style="margin:0;font-size:1.3rem;color:var(--text-secondary);"><strong>⚡ Full transparency:</strong> Two moving averages. No optimisation. The same SMA10/40 rule applied to every market. We show you the framework because it holds up to scrutiny — verify any signal yourself. Nothing is hidden because there's nothing to hide.</p>
+  </div>
+</div>
+
+<div class="le-section">
+  <h2>What This Is</h2>
+  <p>The Lab Edge is <strong>Time-Series Momentum, applied mechanically</strong>. Two moving averages — SMA10 and SMA40. When the fast line crosses above the slow, the engine flags a bullish entry. Position size is volatility-adjusted via ATR. Exit on cross-under. Long-only. Rebalanced once a week.</p>
+  <p>One rule. 166 markets. Every Sunday at 22:00 SGT, you get the updated signals.</p>
+  <p>No machine learning. No optimisation. No black box. The same parameters across every asset class — from US equities to crypto to forex. The framework has been validated on 33,112 trades across 61 years of data, with 157 of 166 markets ending profitable.</p>
+  <p>You can learn this strategy yourself — we published the rules above. <strong>The product is the engine:</strong> the infrastructure that scans 166 markets every week, calculates volatility-adjusted positions, and delivers a clean signal broadcast to your phone in one message. So you don't have to.</p>
+</div>
+
+<div class="le-section" style="padding-top: 0;">
+  <h2>Who This Is For</h2>
+  
+  <div class="le-audience">
+    <div>
+      <h3 style="color:#22c55e;">✅ You'll love it if…</h3>
+      <ul>
+        <li>You're patient. Money is made catching trends, not guessing every tick. You wait. The engine watches. When a market trends, you're in.</li>
+        <li>You diversify. 166 markets across 9 asset classes. Spread your capital where the momentum is — not one ticker you found on Twitter.</li>
+        <li>You trust process over gut feeling. The rule never changes. You can verify every signal yourself.</li>
+        <li>You trade alongside a busy life. Open one message Sunday evening. Place your trades. Close the app. Don't look at charts again until next Sunday.</li>
+        <li>You want institutional-grade strategy without institutional infrastructure. SMA10/40 cross on one market is doable. On 166 markets every week — that's the engine.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color:#ef4444;">❌ Not for you if…</h3>
+      <ul class="le-not">
+        <li>You day trade. Weekly signals don't serve intraday strategies. If you need entries every hour, this is the wrong rhythm.</li>
+        <li>You can't handle drawdowns. TSM bleeds in sideways markets. We told you upfront — the chop between trends tests your nerve. If you'll abandon the system after two red weeks, save your money.</li>
+        <li>You want a shortcut. The Edge gives you the signal. The discipline to follow it — that's on you.</li>
+        <li>You expect every week to be green. That's not how trend-following works. The 5% of unprofitable markets in our backtest exist for a reason.</li>
+      </ul>
+    </div>
   </div>
 </div>
 

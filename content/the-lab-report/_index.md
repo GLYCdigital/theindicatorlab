@@ -42,6 +42,17 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-pricing .lr-cta { background: var(--accent); }
   .lr-pricing .lr-cta:hover { background: var(--accent-hover); }
   .lr-early { margin-top: 1.5rem; font-size: 1.35rem; color: #fff !important; }
+  .lr-what, .lr-who { max-width: 720px; margin: 0 auto; padding: 0 1rem 4rem; }
+  .lr-what h2, .lr-who h2 { font-size: 2.2rem; font-weight: 700; margin: 0 0 1.5rem; color: var(--text); }
+  .lr-what p, .lr-who p { font-size: 1.6rem; color: var(--text-secondary); line-height: 1.7; margin: 0 0 1.2rem; }
+  .lr-audience { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0; }
+  .lr-audience h3 { font-size: 1.5rem; font-weight: 600; margin: 0 0 0.8rem; }
+  .lr-audience ul { list-style: none; padding: 0; margin: 0; }
+  .lr-audience li { padding: 0.55rem 0; font-size: 1.4rem; color: var(--text-secondary); line-height: 1.5; position: relative; padding-left: 1.5rem; }
+  .lr-audience li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+  .lr-not { margin-top: 0; }
+  .lr-not li { padding: 0.4rem 0; font-size: 1.4rem; color: var(--text-muted); line-height: 1.5; position: relative; padding-left: 1.5rem; }
+  .lr-not li::before { content: '✕'; position: absolute; left: 0; opacity: 0.5; }
   .lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
   .lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
@@ -55,6 +66,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
     .lr-price { font-size: 3rem; }
     .lr-benefits { grid-template-columns: 1fr; }
     .lr-pricing-ladder { grid-template-columns: 1fr 1fr !important; }
+    .lr-audience { grid-template-columns: 1fr; gap: 1.5rem; }
     .lr-hero p { font-size: 1.5rem; }
     .lr-cta { padding: 14px 36px; font-size: 1.5rem; }
     .lr-pricing-header { font-size: 2rem; }
@@ -80,7 +92,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 
 <div class="lr-trust">
   <span><strong>{{< review-count >}}+</strong> indicator reviews</span>
-  <span><strong>53</strong> indicators tracked</span>
+  <span><strong>58</strong> indicators tracked</span>
   <span><strong>20</strong> markets covered</span>
   <span><strong>Every 15 min</strong> updates</span>
 </div>
@@ -123,10 +135,43 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-step-num">3</div>
   <div>
     <h3>You get the verdict</h3>
-    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 28 of 53 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
+    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 28 of 58 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
   </div>
 </div>
 {{< /rawhtml >}}
+
+<div class="lr-what">
+  <h2>What This Is</h2>
+  <p>The Lab Report is a <strong>multi-indicator consensus engine</strong>. 58 indicators across four categories — momentum, volume, trend, volatility — each vote BUY, SELL, or NEUTRAL on 20 hand-picked markets. Every 15 minutes, we tally the votes and send you the verdict.</p>
+  <p>Think of it as a parliament of indicators. Not one noisy MP. Fifty-eight of them. When 30 or more agree on direction, you have something statistically sharper than any single indicator can produce — multi-indicator consensus reduces false signals by 60&ndash;70% compared to single-indicator strategies.</p>
+  <p><strong>This is not a trading bot.</strong> It does not execute trades. It delivers signal consensus — the raw data you need to make better decisions, faster. What you do with it is your call.</p>
+</div>
+
+<div class="lr-who">
+  <h2>Who This Is For</h2>
+  
+  <div class="lr-audience">
+    <div>
+      <h3 style="color:#22c55e;">✅ You'll love it if…</h3>
+      <ul>
+        <li>You're tired of conflicting indicators — RSI says buy, MACD says sell, OBV says wait. Who wins? The Report tells you the consensus.</li>
+        <li>You have a day job. You can track 20 markets every 15 minutes, or you can pay $29/month and check one message.</li>
+        <li>You already have a system but want a second opinion. Cross-reference your analysis with 58 indicators aggregated in real time.</li>
+        <li>You swing trade. 15-minute updates catch consensus shifts intraday so you can plan your move without staring at charts.</li>
+        <li>You're an indicator geek. See how momentum, volume, trend and volatility indicators interact across real markets — and watch the roster grow weekly as we publish new reviews.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color:#ef4444;">❌ Not for you if…</h3>
+      <ul class="lr-not">
+        <li>You check your portfolio once a quarter. The Report's 15-minute rhythm won't change your life if you're not watching markets at all.</li>
+        <li>You want trading signals. The Report aggregates indicators. It does not tell you when to buy or sell — you decide what to do with the data.</li>
+        <li>You scalp moves in seconds. Every 15 minutes is not tick-by-tick data.</li>
+        <li>You expect a guaranteed win rate. Indicators have edge, not certainty. Multi-indicator consensus improves your odds — it doesn't eliminate risk.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ## What You Get
 
@@ -144,7 +189,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   </div>
   <div class="lr-benefit">
     <div class="icon">⚙️</div>
-    <h4>53 Indicators</h4>
+    <h4>58 Indicators</h4>
     <p>Growing weekly as we publish new reviews and add them to the roster</p>
   </div>
   <div class="lr-benefit">
@@ -169,7 +214,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
 
 The Lab Report reduces noise through **diverse signal aggregation**. Individual indicators have blind spots — MACD lags in range-bound markets, RSI whipsaws on trending days, Bollinger Bands miss breakouts.
 
-When 28 of 53 indicators agree on direction, that's not a coincidence. That's a signal worth acting on.
+When 28 of 58 indicators agree on direction, that's not a coincidence. That's a signal worth acting on.
 
 **The science:** Multi-indicator consensus reduces false signals by 60-70% compared to single-indicator strategies. Most profitable trading systems use 3+ indicators per decision. The Lab Report gives you 30+ and counting, as we add them to the roster.
 
@@ -240,7 +285,7 @@ When 28 of 53 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>What indicators are included?</h3>
-  <p><a href="/the-lab-report/indicators/" target="_blank" rel="noopener">→ See the current full list</a> — 53 indicators across momentum, volume, trend, and volatility. Updated weekly as we add new reviews.</p>
+  <p><a href="/the-lab-report/indicators/" target="_blank" rel="noopener">→ See the current full list</a> — 58 indicators across momentum, volume, trend, and volatility. Updated weekly as we add new reviews.</p>
 </div>
 <div class="lr-faq">
   <h3>How do I receive alerts?</h3>
