@@ -883,6 +883,32 @@
       "score": 0.9
     }
   ],
+  "blur-fibonacci": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "bollinger-bands-percent-b": [
     {
       "slug": "bollinger-bands-width",
@@ -1143,6 +1169,32 @@
       "score": 4.9
     }
   ],
+  "celestial-mean-reversion-envelopes-pineify": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "center-of-gravity": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -1183,15 +1235,15 @@
       "score": 5.0
     },
     {
-      "slug": "pivot-points-camarilla",
-      "title": "Pivot_Points_Camarilla Review: Settings, Strategy &amp; How to Use It",
+      "slug": "pivot-breakout-retest-signals-algo-aakash",
+      "title": "Pivot_Breakout_Retest_Signals_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "pivot-points-death-cross",
-      "title": "Pivot Points Death Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "pivot-points-camarilla",
+      "title": "Pivot_Points_Camarilla Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -2029,14 +2081,14 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "volume-weighted-moving-average",
-      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.6
-    },
-    {
       "slug": "moving-average-ribbon",
       "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.5
+    },
+    {
+      "slug": "volume-weighted-moving-average",
+      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.5
     },
@@ -2044,13 +2096,13 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.3
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.3
     }
   ],
   "efficiency-ratio-bands": [
@@ -3904,7 +3956,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.1
+      "score": 8.0
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -5542,7 +5594,7 @@
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.6
+      "score": 5.5
     },
     {
       "slug": "psar-with-ema",
@@ -5568,7 +5620,7 @@
       "slug": "parabolic-sar-multi",
       "title": "Parabolic_Sar_Multi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.6
+      "score": 5.5
     },
     {
       "slug": "nova-reversal-bands",
@@ -5719,6 +5771,32 @@
       "score": 0.9
     }
   ],
+  "pivot-breakout-retest-signals-algo-aakash": [
+    {
+      "slug": "central-pivot-range",
+      "title": "Central Pivot Range Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "demark-pivots",
+      "title": "Demark Pivots Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "machine-learning-pivot-points-knn-ss",
+      "title": "Machine Learning Pivot Points KNN SS Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "pivot-points-camarilla",
+      "title": "Pivot_Points_Camarilla Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "pivot-points-camarilla": [
     {
       "slug": "central-pivot-range",
@@ -5739,9 +5817,9 @@
       "score": 5.0
     },
     {
-      "slug": "pivot-points-death-cross",
-      "title": "Pivot Points Death Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "pivot-breakout-retest-signals-algo-aakash",
+      "title": "Pivot_Breakout_Retest_Signals_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -5791,8 +5869,8 @@
       "score": 5.0
     },
     {
-      "slug": "pivot-points-camarilla",
-      "title": "Pivot_Points_Camarilla Review: Settings, Strategy &amp; How to Use It",
+      "slug": "pivot-breakout-retest-signals-algo-aakash",
+      "title": "Pivot_Breakout_Retest_Signals_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -6354,19 +6432,19 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.9
+      "score": 2.8
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.9
+      "score": 2.8
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.9
+      "score": 2.8
     }
   ],
   "rainbow-oscillator": [
@@ -7342,19 +7420,19 @@
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.3
     },
     {
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.4
+      "score": 1.3
     },
     {
       "slug": "price-channel",
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.3
     }
   ],
   "supertrend-atr-trailing-stop": [
@@ -8431,20 +8509,20 @@
       "score": 1.8
     },
     {
-      "slug": "volume-flow",
-      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.6
-    },
-    {
-      "slug": "volume-oscillator",
-      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.6
-    },
-    {
       "slug": "on-balance-volume",
       "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.5
+    },
+    {
+      "slug": "positive-volume-index",
+      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.5
+    },
+    {
+      "slug": "volume-flow",
+      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.5
     }
@@ -8521,8 +8599,8 @@
       "score": 3.0
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 2.9
     }
