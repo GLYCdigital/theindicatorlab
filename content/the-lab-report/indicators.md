@@ -1,18 +1,18 @@
 ---
 title: "All Indicators — The Lab Report"
-date: 2026-06-01
+date: 2026-06-11
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 53 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 58 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **53 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** {{< param date >}} · **58 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (19)
+## Momentum (21)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -37,8 +37,10 @@ Indicators that measure the speed and strength of price movement.
 | Chande Momentum | [→ Full review](/reviews/chande-momentum/) |
 | Elder Ray | [→ Full review](/reviews/elder-ray-index/) |
 | Fisher Transform | [→ Full review](/reviews/fisher-transform/) |
+| Schaff Trend Cycle | [→ Full review](/reviews/schaff-trend-cycle/) |
+| True Strength Index | [→ Full review](/reviews/true-strength-index/) |
 
-## Trend (15)
+## Trend (16)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -59,6 +61,7 @@ Indicators that identify direction and strength of the prevailing trend.
 | Zig Zag | [→ Full review](/reviews/zig-zag/) |
 | Alligator | [→ Full review](/reviews/alligator/) |
 | Vortex Indicator | [→ Full review](/reviews/vortex-indicator/) |
+| Heikin Ashi | [→ Full review](/reviews/heiken-ashi/) |
 
 ## Volume (10)
 
@@ -77,7 +80,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Volume Weighted MACD | [→ Full review](/reviews/volume-weighted-macd/) |
 | VWAP | [→ Full review](/reviews/vwap/) |
 
-## Volatility (9)
+## Volatility (11)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -92,6 +95,8 @@ Indicators that measure the magnitude of price fluctuations.
 | Chaikin Volatility | [→ Full review](/reviews/chaikin-volatility/) |
 | Chandelier Exit | [→ Full review](/reviews/chandelier-exit/) |
 | ATR Trailing Stop | [→ Full review](/reviews/atr-trailing-stop/) |
+| TTM Squeeze | [→ Full review](/reviews/ttm-squeeze-pro/) |
+| Choppiness Index | [→ Full review](/reviews/choppiness-index/) |
 
 ---
 
