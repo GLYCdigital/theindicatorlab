@@ -1403,6 +1403,32 @@
       "score": 5.0
     }
   ],
+  "chart-patterns-screener-trendoscope": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "chart-patterns": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -2107,16 +2133,16 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.5
-    },
-    {
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.5
+    },
+    {
+      "slug": "moving-average-ribbon",
+      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.4
     },
     {
       "slug": "guppy-multiple-moving-average",
@@ -4031,12 +4057,6 @@
   ],
   "kama": [
     {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "cvd-profiles-tradingiq",
       "title": "CVD Profiles TradingIQ Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4053,6 +4073,12 @@
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 8.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 7.9
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -4381,15 +4407,15 @@
       "score": 9.0
     },
     {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-sweep-profiler-flux-charts",
+      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "whale-liquidity-absorption",
-      "title": "Whale Liquidity Absorption Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "liquidity-thermal-map",
+      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -4407,15 +4433,15 @@
       "score": 9.0
     },
     {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-sweep-profiler-flux-charts",
+      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "whale-liquidity-absorption",
-      "title": "Whale Liquidity Absorption Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "liquidity-thermal-map",
+      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -4433,15 +4459,41 @@
       "score": 9.0
     },
     {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-sweep-profiler-flux-charts",
+      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "whale-liquidity-absorption",
-      "title": "Whale Liquidity Absorption Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "liquidity-thermal-map",
+      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "liquidity-sweep-profiler-flux-charts": [
+    {
+      "slug": "liquidity-gravity-map-phenlabs",
+      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-levels",
+      "title": "Liquidity_Levels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-sweep-pro",
+      "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-thermal-map",
+      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -4465,9 +4517,9 @@
       "score": 9.0
     },
     {
-      "slug": "whale-liquidity-absorption",
-      "title": "Whale Liquidity Absorption Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "liquidity-sweep-profiler-flux-charts",
+      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -4497,7 +4549,13 @@
       "score": 8.0
     }
   ],
-  "macd": [
+  "macd-rewired-probalist-essentials": [
+    {
+      "slug": "macd",
+      "title": "Macd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "volume-weighted-macd",
       "title": "Volume Weighted Macd Review: Settings, Strategy &amp; How to Use It",
@@ -4515,10 +4573,30 @@
       "title": "Focus Bars Kioseff Trading Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "macd": [
+    {
+      "slug": "macd-rewired-probalist-essentials",
+      "title": "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "volume-oscillator",
-      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "volume-weighted-macd",
+      "title": "Volume Weighted Macd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zero-lag-macd",
+      "title": "Zero Lag MACD Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "focus-bars-kioseff-trading",
+      "title": "Focus Bars Kioseff Trading Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -5175,6 +5253,12 @@
   ],
   "mtf-macd": [
     {
+      "slug": "macd-rewired-probalist-essentials",
+      "title": "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
       "slug": "macd",
       "title": "Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5191,12 +5275,6 @@
       "title": "Volume Weighted Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
-    },
-    {
-      "slug": "zero-lag-macd",
-      "title": "Zero Lag MACD Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.0
     }
   ],
   "mtf-moving-average": [
@@ -6256,13 +6334,13 @@
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
+      "score": 1.4
     },
     {
       "slug": "macd",
       "title": "Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
+      "score": 1.4
     }
   ],
   "price-density-clouds-excavo": [
@@ -8711,6 +8789,12 @@
   ],
   "volume-weighted-macd": [
     {
+      "slug": "macd-rewired-probalist-essentials",
+      "title": "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "macd",
       "title": "Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8725,12 +8809,6 @@
     {
       "slug": "focus-bars-kioseff-trading",
       "title": "Focus Bars Kioseff Trading Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "volume-oscillator",
-      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9041,8 +9119,8 @@
       "score": 9.0
     },
     {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-sweep-profiler-flux-charts",
+      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
