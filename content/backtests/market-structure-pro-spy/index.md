@@ -1,14 +1,14 @@
 ---
 {
   "title": "Swing \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+16.6%"
+      "value": "+16.3%"
     },
     {
       "label": "CAGR",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "29.2%"
+      "value": "30.8%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.05"
+      "value": "1.24"
     },
     {
       "label": "Total Trades",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.6%",
+      "return_pct": "+12.8%",
       "trades": "8",
-      "win_rate_pct": "29.2%"
+      "win_rate_pct": "30.8%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "15",
-      "win_rate_pct": "29.2%"
+      "win_rate_pct": "30.8%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "13",
-      "win_rate_pct": "29.2%"
+      "win_rate_pct": "30.8%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "10",
-      "win_rate_pct": "29.2%"
+      "win_rate_pct": "30.8%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "13",
-      "win_rate_pct": "29.2%"
+      "win_rate_pct": "30.8%"
     },
     {
       "year": "2026",
-      "return_pct": "+9.3%",
+      "return_pct": "+8.8%",
       "trades": "6",
-      "win_rate_pct": "29.2%"
+      "win_rate_pct": "30.8%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On SPY, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-07 → 2026-06-05), the Market Structure Pro delivered a **+16.6% total return** on SPY, compounding at **3.1% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Market Structure Pro delivered a **+16.3% total return** on SPY, compounding at **3.1% annually**. 
 
 At **0.11**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,15 +121,15 @@ The catch? A **24.5% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.11 | ❌ Weak |
 | Max Drawdown | 24.5% | ⚠️ Moderate |
-| Win Rate | 29.2% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.05 | ⚠️ Marginal |
+| Win Rate | 30.8% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.24 | ⚠️ Marginal |
 | Trades/Year | ~65 total | Active |
 
-The **profit factor of 1.05** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 29.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.24** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 30.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Market Structure Pro Work on SPY?
 
-The market structure pro struggled to generate meaningful edge on SPY over this 5-year period. With a **0.11 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on SPY over this 5-year period. With a **0.11 Sharpe ratio** and **1.24 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on SPY](/backtests/market-structure-pro-spy-trades.png)

@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+48.2%"
+      "value": "+47.6%"
     },
     {
       "label": "CAGR",
-      "value": "8.2%"
+      "value": "8.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.6%",
+      "return_pct": "+12.8%",
       "trades": "0",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+9.3%",
+      "return_pct": "+8.8%",
       "trades": "1",
       "win_rate_pct": "33.3%"
     }
@@ -109,7 +109,7 @@ On SPY, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-07 → 2026-06-05), the RSI Oversold/Overbought delivered a **+48.2% total return** on SPY, compounding at **8.2% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the RSI Oversold/Overbought delivered a **+47.6% total return** on SPY, compounding at **8.1% annually**. 
 
 At **0.42**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on SPY. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on SPY](/backtests/rsi-oversold-overbought-spy-trades.png)

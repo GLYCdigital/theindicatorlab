@@ -1,10 +1,10 @@
 ---
 {
   "title": "EMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+38.0%",
+      "return_pct": "+15.1%",
       "trades": "1",
       "win_rate_pct": "34.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-31.5%",
+      "return_pct": "-28.1%",
       "trades": "4",
       "win_rate_pct": "34.4%"
     }
@@ -109,7 +109,7 @@ On BTC, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-07 → 2026-06-05), the EMA Ribbon delivered a **+108.0% total return** on BTC-USD, compounding at **15.8% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the EMA Ribbon delivered a **+108.0% total return** on BTC-USD, compounding at **15.8% annually**. 
 
 At **0.45**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on BTC-USD](/backtests/ema-ribbon-btc-usd-trades.png)

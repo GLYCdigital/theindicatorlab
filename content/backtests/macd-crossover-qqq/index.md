@@ -1,14 +1,14 @@
 ---
 {
   "title": "MACD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+11.6%"
+      "value": "+11.5%"
     },
     {
       "label": "CAGR",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+18.6%",
+      "return_pct": "+15.9%",
       "trades": "3",
       "win_rate_pct": "42.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+17.0%",
+      "return_pct": "+18.0%",
       "trades": "5",
       "win_rate_pct": "42.6%"
     }
@@ -109,7 +109,7 @@ On QQQ, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-07 → 2026-06-05), the MACD Crossover delivered a **+11.6% total return** on QQQ, compounding at **2.2% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the MACD Crossover delivered a **+11.5% total return** on QQQ, compounding at **2.2% annually**. 
 
 At **0.06**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on QQQ](/backtests/macd-crossover-qqq-trades.png)

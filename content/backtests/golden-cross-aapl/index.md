@@ -1,22 +1,22 @@
 ---
 {
   "title": "SMA \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.0%"
+      "value": "+6.1%"
     },
     {
       "label": "CAGR",
-      "value": "2.7%"
+      "value": "1.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.07"
+      "value": "-0.04"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+41.5%",
+      "return_pct": "+36.5%",
       "trades": "0",
       "win_rate_pct": "25.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+15.5%",
+      "return_pct": "+7.2%",
       "trades": "0",
       "win_rate_pct": "25.0%"
     }
@@ -109,9 +109,9 @@ On AAPL, the SMA acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-06-07 → 2026-06-05), the Golden Cross delivered a **+14.0% total return** on AAPL, compounding at **2.7% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Golden Cross delivered a **+6.1% total return** on AAPL, compounding at **1.2% annually**. 
 
-At **0.07**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.04**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **28.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 29% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **28.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.07 | ❌ Weak |
+| Sharpe Ratio | -0.04 | ❌ Weak |
 | Max Drawdown | 28.6% | ⚠️ Moderate |
 | Win Rate | 25.0% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.36 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.36** tells the real story: when the SMA fires, the winn
 
 ## Does the Golden Cross Work on AAPL?
 
-The golden cross struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.07 Sharpe ratio** and **0.36 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The golden cross struggled to generate meaningful edge on AAPL over this 5-year period. With a **-0.04 Sharpe ratio** and **0.36 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SMA is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on AAPL unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on AAPL](/backtests/golden-cross-aapl-trades.png)

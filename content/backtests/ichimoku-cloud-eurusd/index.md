@@ -1,10 +1,10 @@
 ---
 {
   "title": "Ichimoku \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-6.9%",
+      "return_pct": "-6.5%",
       "trades": "2",
       "win_rate_pct": "34.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-1.9%",
+      "return_pct": "-1.5%",
       "trades": "2",
       "win_rate_pct": "34.6%"
     }
@@ -83,6 +83,10 @@
   "cta_url": "https://www.tradingview.com/?aff_id=166324",
   "equity_curve_url": "/backtests/ichimoku-cloud-eurusd-equity.png",
   "crosslinks": [
+    {
+      "title": "ichimoku_cloud_spans review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ichimoku-cloud-spans/"
+    },
     {
       "title": "rajiv alpha fusion review: settings, strategy &amp; how to use it",
       "url": "/reviews/rajiv-alpha-fusion/"
@@ -105,7 +109,7 @@ On EURUSD, the Ichimoku acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-06-07 → 2026-06-05), the Ichimoku Cloud delivered a **-2.8% total return** on EURUSD=X, compounding at **-0.6% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Ichimoku Cloud delivered a **-2.8% total return** on EURUSD=X, compounding at **-0.6% annually**. 
 
 At **-0.49**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -133,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on EURUSD=X](/backtests/ichimoku-cloud-eurusd-trades.png)

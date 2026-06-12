@@ -1,10 +1,10 @@
 ---
 {
   "title": "BollingerBands \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+74.6%",
+      "return_pct": "+71.1%",
       "trades": "8",
       "win_rate_pct": "30.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-9.6%",
+      "return_pct": "-8.0%",
       "trades": "5",
       "win_rate_pct": "30.8%"
     }
@@ -109,7 +109,7 @@ On TSLA, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-07 → 2026-06-05), the TTM Squeeze Pro delivered a **+127.2% total return** on TSLA, compounding at **17.8% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the TTM Squeeze Pro delivered a **+127.2% total return** on TSLA, compounding at **17.8% annually**. 
 
 At **0.52**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on TSLA.
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on TSLA](/backtests/ttm-squeeze-pro-tsla-trades.png)

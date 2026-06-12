@@ -1,22 +1,22 @@
 ---
 {
   "title": "Fisher \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.3%"
+      "value": "+19.6%"
     },
     {
       "label": "CAGR",
-      "value": "2.7%"
+      "value": "3.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.17"
+      "value": "0.19"
     },
     {
       "label": "Max Drawdown",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+38.0%",
-      "trades": "39",
+      "return_pct": "+15.1%",
+      "trades": "38",
       "win_rate_pct": "31.8%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-31.5%",
-      "trades": "27",
+      "return_pct": "-28.1%",
+      "trades": "28",
       "win_rate_pct": "31.8%"
     }
   ],
@@ -109,9 +109,9 @@ On BTC, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-07 → 2026-06-05), the Fisher Transform MTF Divergence delivered a **+14.3% total return** on BTC-USD, compounding at **2.7% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Fisher Transform MTF Divergence delivered a **+19.6% total return** on BTC-USD, compounding at **3.7% annually**. 
 
-At **0.17**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.19**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.17 | ❌ Weak |
+| Sharpe Ratio | 0.19 | ❌ Weak |
 | Max Drawdown | 49.5% | ⚠️ Significant |
 | Win Rate | 31.8% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.04 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.04** tells the real story: when the Fisher fires, the w
 
 ## Does the Fisher Transform MTF Divergence Work on BTC?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on BTC over this 5-year period. With a **0.17 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on BTC over this 5-year period. With a **0.19 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on BTC-USD](/backtests/fisher-transform-mtf-divergence-btc-usd-trades.png)

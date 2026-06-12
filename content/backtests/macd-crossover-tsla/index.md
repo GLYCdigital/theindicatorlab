@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+315.6%"
+      "value": "+344.0%"
     },
     {
       "label": "CAGR",
-      "value": "33.0%"
+      "value": "34.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.64"
+      "value": "0.67"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "34.7%"
+      "value": "35.4%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.98"
+      "value": "2.02"
     },
     {
       "label": "Total Trades",
-      "value": "49"
+      "value": "48"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+74.6%",
-      "trades": "6",
-      "win_rate_pct": "34.7%"
+      "return_pct": "+71.1%",
+      "trades": "5",
+      "win_rate_pct": "35.4%"
     },
     {
       "year": "2022",
       "return_pct": "-69.2%",
       "trades": "10",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "35.4%"
     },
     {
       "year": "2023",
       "return_pct": "+129.9%",
       "trades": "8",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "35.4%"
     },
     {
       "year": "2024",
       "return_pct": "+62.6%",
       "trades": "8",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "35.4%"
     },
     {
       "year": "2025",
       "return_pct": "+18.6%",
       "trades": "10",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "35.4%"
     },
     {
       "year": "2026",
-      "return_pct": "-9.6%",
+      "return_pct": "-8.0%",
       "trades": "7",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "35.4%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On TSLA, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-07 → 2026-06-05), the MACD Crossover delivered a **+315.6% total return** on TSLA, compounding at **33.0% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the MACD Crossover delivered a **+344.0% total return** on TSLA, compounding at **34.8% annually**. 
 
-At **0.64**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.67**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **44.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,24 +119,24 @@ The catch? A **44.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.64 | ⚠️ Moderate |
+| Sharpe Ratio | 0.67 | ⚠️ Moderate |
 | Max Drawdown | 44.1% | ⚠️ Significant |
-| Win Rate | 34.7% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.98 | ✅ Good |
-| Trades/Year | ~49 total | Active |
+| Win Rate | 35.4% | ❌ Low — relies on outsized wins |
+| Profit Factor | 2.02 | ✅ Excellent |
+| Trades/Year | ~48 total | Active |
 
-The **profit factor of 1.98** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 34.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 2.02** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 35.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on TSLA?
 
-The macd crossover shows moderate edge on TSLA — **0.64 Sharpe, 1.98 profit factor** over 49 trades. It's not a home run, but it's also not random.
+The macd crossover shows moderate edge on TSLA — **0.67 Sharpe, 2.02 profit factor** over 48 trades. It's not a home run, but it's also not random.
 
-The 34.7% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 35.4% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on TSLA. Combine with trend filters or volume confirmation for better results.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on TSLA](/backtests/macd-crossover-tsla-trades.png)

@@ -1,10 +1,10 @@
 ---
 {
   "title": "Sweep \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-6.9%",
+      "return_pct": "-6.5%",
       "trades": "13",
       "win_rate_pct": "30.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-1.9%",
+      "return_pct": "-1.5%",
       "trades": "8",
       "win_rate_pct": "30.6%"
     }
@@ -84,8 +84,16 @@
   "equity_curve_url": "/backtests/liquidity-sweep-pro-eurusd-equity.png",
   "crosslinks": [
     {
+      "title": "nadaraya_watson_regression_liquidity_sweeps_algoalpha review: settings, strategy &amp; how to use it",
+      "url": "/reviews/nadaraya-watson-regression-liquidity-sweeps-algoalpha/"
+    },
+    {
       "title": "liquidity_sweep_pro review: settings, strategy &amp; how to use it",
       "url": "/reviews/liquidity-sweep-pro/"
+    },
+    {
+      "title": "liquidity_sweep_profiler_flux_charts review: settings, strategy &amp; how to use it",
+      "url": "/reviews/liquidity-sweep-profiler-flux-charts/"
     }
   ]
 }
@@ -101,7 +109,7 @@ On EURUSD, the Sweep acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-06-07 → 2026-06-05), the Liquidity Sweep Pro delivered a **-24.6% total return** on EURUSD=X, compounding at **-5.5% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Liquidity Sweep Pro delivered a **-24.6% total return** on EURUSD=X, compounding at **-5.5% annually**. 
 
 At **-2.72**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -129,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on EURUSD=X](/backtests/liquidity-sweep-pro-eurusd-trades.png)

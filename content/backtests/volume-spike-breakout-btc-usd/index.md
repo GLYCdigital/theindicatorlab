@@ -1,14 +1,14 @@
 ---
 {
   "title": "Volume \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+4.3%"
+      "value": "+4.0%"
     },
     {
       "label": "CAGR",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.17"
+      "value": "-0.18"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "41.4%"
+      "value": "40.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.11"
+      "value": "1.10"
     },
     {
       "label": "Total Trades",
-      "value": "29"
+      "value": "30"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+38.0%",
+      "return_pct": "+15.1%",
       "trades": "1",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "4",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "8",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "7",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "8",
-      "win_rate_pct": "41.4%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-31.5%",
-      "trades": "1",
-      "win_rate_pct": "41.4%"
+      "return_pct": "-28.1%",
+      "trades": "2",
+      "win_rate_pct": "40.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On BTC, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-07 → 2026-06-05), the Volume Spike Breakout delivered a **+4.3% total return** on BTC-USD, compounding at **0.8% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Volume Spike Breakout delivered a **+4.0% total return** on BTC-USD, compounding at **0.8% annually**. 
 
-At **-0.17**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.18**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **17.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 17% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **17.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.17 | ❌ Weak |
+| Sharpe Ratio | -0.18 | ❌ Weak |
 | Max Drawdown | 17.1% | ⚠️ Moderate |
-| Win Rate | 41.4% | ⚠️ Below average |
-| Profit Factor | 1.11 | ⚠️ Marginal |
-| Trades/Year | ~29 total | Selective — not overtrading |
+| Win Rate | 40.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.10 | ⚠️ Marginal |
+| Trades/Year | ~30 total | Selective — not overtrading |
 
-The **profit factor of 1.11** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 41.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.10** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Volume Spike Breakout Work on BTC?
 
-The volume spike breakout struggled to generate meaningful edge on BTC over this 5-year period. With a **-0.17 Sharpe ratio** and **1.11 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The volume spike breakout struggled to generate meaningful edge on BTC over this 5-year period. With a **-0.18 Sharpe ratio** and **1.10 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Volume is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on BTC-USD](/backtests/volume-spike-breakout-btc-usd-trades.png)

@@ -1,14 +1,14 @@
 ---
 {
   "title": "Sweep \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-2.1%"
+      "value": "-1.8%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "26.3%"
+      "value": "26.2%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "167"
+      "value": "168"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+38.0%",
+      "return_pct": "+15.1%",
       "trades": "18",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "26.2%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "34",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "26.2%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "35",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "26.2%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "32",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "26.2%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "32",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "26.2%"
     },
     {
       "year": "2026",
-      "return_pct": "-31.5%",
-      "trades": "16",
-      "win_rate_pct": "26.3%"
+      "return_pct": "-28.1%",
+      "trades": "17",
+      "win_rate_pct": "26.2%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,8 +84,16 @@
   "equity_curve_url": "/backtests/liquidity-sweep-pro-btc-usd-equity.png",
   "crosslinks": [
     {
+      "title": "nadaraya_watson_regression_liquidity_sweeps_algoalpha review: settings, strategy &amp; how to use it",
+      "url": "/reviews/nadaraya-watson-regression-liquidity-sweeps-algoalpha/"
+    },
+    {
       "title": "liquidity_sweep_pro review: settings, strategy &amp; how to use it",
       "url": "/reviews/liquidity-sweep-pro/"
+    },
+    {
+      "title": "liquidity_sweep_profiler_flux_charts review: settings, strategy &amp; how to use it",
+      "url": "/reviews/liquidity-sweep-profiler-flux-charts/"
     }
   ]
 }
@@ -101,7 +109,7 @@ On BTC, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-07 → 2026-06-05), the Liquidity Sweep Pro delivered a **-2.1% total return** on BTC-USD, compounding at **-0.4% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Liquidity Sweep Pro delivered a **-1.8% total return** on BTC-USD, compounding at **-0.4% annually**. 
 
 At **0.12**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -113,11 +121,11 @@ The catch? A **63.2% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.12 | ❌ Weak |
 | Max Drawdown | 63.2% | ⚠️ Significant |
-| Win Rate | 26.3% | ❌ Low — relies on outsized wins |
+| Win Rate | 26.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.99 | ❌ Unprofitable |
-| Trades/Year | ~167 total | Active |
+| Trades/Year | ~168 total | Active |
 
-The **profit factor of 0.99** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 26.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.99** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 26.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Liquidity Sweep Pro Work on BTC?
 
@@ -129,6 +137,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on BTC-USD](/backtests/liquidity-sweep-pro-btc-usd-trades.png)

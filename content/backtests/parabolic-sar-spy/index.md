@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+6.1%"
+      "value": "+5.8%"
     },
     {
       "label": "CAGR",
-      "value": "1.2%"
+      "value": "1.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.11"
+      "value": "1.09"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.6%",
+      "return_pct": "+12.8%",
       "trades": "9",
       "win_rate_pct": "43.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+9.3%",
+      "return_pct": "+8.8%",
       "trades": "5",
       "win_rate_pct": "43.5%"
     }
@@ -109,7 +109,7 @@ On SPY, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-07 → 2026-06-05), the Parabolic SAR delivered a **+6.1% total return** on SPY, compounding at **1.2% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Parabolic SAR delivered a **+5.8% total return** on SPY, compounding at **1.1% annually**. 
 
 At **-0.02**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -122,14 +122,14 @@ The catch? A **25.6% max drawdown**. At some point during this 5-year run, you'd
 | Sharpe Ratio | -0.02 | ❌ Weak |
 | Max Drawdown | 25.6% | ⚠️ Moderate |
 | Win Rate | 43.5% | ⚠️ Below average |
-| Profit Factor | 1.11 | ⚠️ Marginal |
+| Profit Factor | 1.09 | ⚠️ Marginal |
 | Trades/Year | ~62 total | Active |
 
-The **profit factor of 1.11** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 43.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.09** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 43.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on SPY?
 
-The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.02 Sharpe ratio** and **1.11 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.02 Sharpe ratio** and **1.09 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on SPY](/backtests/parabolic-sar-spy-trades.png)

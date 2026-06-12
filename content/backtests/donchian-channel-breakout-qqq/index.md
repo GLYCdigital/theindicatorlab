@@ -1,14 +1,14 @@
 ---
 {
   "title": "Donchian \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+37.4%"
+      "value": "+37.5%"
     },
     {
       "label": "CAGR",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "28.8%"
+      "value": "30.3%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.13"
+      "value": "1.42"
     },
     {
       "label": "Total Trades",
@@ -36,45 +36,45 @@
     },
     {
       "label": "Avg Trade",
-      "value": "17 days"
+      "value": "18 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+18.6%",
+      "return_pct": "+15.9%",
       "trades": "8",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "30.3%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "15",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "30.3%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "8",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "30.3%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "12",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "30.3%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "17",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "30.3%"
     },
     {
       "year": "2026",
-      "return_pct": "+17.0%",
+      "return_pct": "+18.0%",
       "trades": "6",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "30.3%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -101,7 +101,7 @@ On QQQ, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-07 → 2026-06-05), the Donchian Channel Breakout delivered a **+37.4% total return** on QQQ, compounding at **6.6% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Donchian Channel Breakout delivered a **+37.5% total return** on QQQ, compounding at **6.6% annually**. 
 
 At **0.28**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -113,15 +113,15 @@ The catch? A **30.3% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 30.3% | ⚠️ Significant |
-| Win Rate | 28.8% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.13 | ⚠️ Marginal |
+| Win Rate | 30.3% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.42 | ⚠️ Marginal |
 | Trades/Year | ~66 total | Active |
 
-The **profit factor of 1.13** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 28.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.42** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 30.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on QQQ?
 
-The donchian channel breakout struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.28 Sharpe ratio** and **1.13 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.28 Sharpe ratio** and **1.42 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -129,6 +129,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on QQQ](/backtests/donchian-channel-breakout-qqq-trades.png)

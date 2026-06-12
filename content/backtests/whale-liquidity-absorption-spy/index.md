@@ -1,10 +1,10 @@
 ---
 {
   "title": "Volume \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-06",
+  "date": "2026-06-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-07 \u2192 2026-06-05",
+  "period": "2021-06-14 \u2192 2026-06-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.6%",
+      "return_pct": "+12.8%",
       "trades": "3",
       "win_rate_pct": "50.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+9.3%",
+      "return_pct": "+8.8%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     }
@@ -109,7 +109,7 @@ On SPY, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-07 → 2026-06-05), the Whale Liquidity / Absorption Profile delivered a **+0.5% total return** on SPY, compounding at **0.1% annually**. 
+Over five years (2021-06-14 → 2026-06-12), the Whale Liquidity / Absorption Profile delivered a **+0.5% total return** on SPY, compounding at **0.1% annually**. 
 
 At **-1.23**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 06, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on SPY](/backtests/whale-liquidity-absorption-spy-trades.png)
