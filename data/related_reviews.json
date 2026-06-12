@@ -802,7 +802,7 @@
       "slug": "market-cipher-b",
       "title": "Market Cipher B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.3
     }
   ],
   "beta-indicator": [
@@ -1345,10 +1345,10 @@
       "score": 9.0
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.7
+      "score": 5.6
     }
   ],
   "chande-momentum": [
@@ -1541,12 +1541,6 @@
       "score": 9.0
     },
     {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
       "slug": "relative-momentum-index",
       "title": "Relative_Momentum_Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1555,6 +1549,12 @@
     {
       "slug": "relative-strength-comparison",
       "title": "Relative_Strength_Comparison Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "relative-vigor-index",
+      "title": "Relative Vigor Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -5511,6 +5511,32 @@
       "score": 4.9
     }
   ],
+  "ohlc-olhc-arkn": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "on-balance-volume": [
     {
       "slug": "balance-of-power",
@@ -6741,12 +6767,6 @@
       "score": 9.0
     },
     {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6756,6 +6776,12 @@
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "average-directional-index",
+      "title": "Average Directional Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -7461,6 +7487,32 @@
       "score": 0.9
     }
   ],
+  "structure-decision-engine-algopoint": [
+    {
+      "slug": "market-structure-volume-profiles-kioseff-trading",
+      "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    }
+  ],
   "super-trend-oscillator": [
     {
       "slug": "super-trend",
@@ -8024,13 +8076,13 @@
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "ttm-squeeze-pro": [
@@ -8321,15 +8373,15 @@
   ],
   "volatility-stop": [
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.7
-    },
-    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.6
+    },
+    {
+      "slug": "chaikin-volatility",
+      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.6
     },
     {
@@ -8451,28 +8503,28 @@
   ],
   "volume-price-analysis": [
     {
+      "slug": "atr-trailing-stop",
+      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.3
+    },
+    {
+      "slug": "cvd",
+      "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.3
+    },
+    {
+      "slug": "least-squares",
+      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.3
+    },
+    {
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
-    },
-    {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.4
-    },
-    {
-      "slug": "positive-volume-index",
-      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.4
-    },
-    {
-      "slug": "price-volume-trend",
-      "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.4
+      "score": 1.3
     }
   ],
   "volume-profile-fixed-range": [
@@ -8587,12 +8639,6 @@
       "score": 1.7
     },
     {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.5
-    },
-    {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -8601,6 +8647,12 @@
     {
       "slug": "volume-flow",
       "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.5
+    },
+    {
+      "slug": "volume-oscillator",
+      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.5
     }
@@ -8674,7 +8726,7 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 3.0
+      "score": 2.9
     },
     {
       "slug": "moving-average-exp-envelope",
@@ -8762,6 +8814,32 @@
     }
   ],
   "vwap-regime-filter-signal-quality-indicator-lunqfx": [
+    {
+      "slug": "anchored-vwap",
+      "title": "Anchored Vwap Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "post-absorption-vwap-reversal-engine-6",
+      "title": "Post Absorption Vwap Reversal Engine 6 Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 9.0
+    },
+    {
+      "slug": "vwap-bands",
+      "title": "Vwap_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "vwap-multi",
+      "title": "Vwap_Multi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "vwap-sigma-bands-y-algo": [
     {
       "slug": "anchored-vwap",
       "title": "Anchored Vwap Review: Settings, Strategy &amp; How to Use It",
