@@ -1200,13 +1200,13 @@
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.6
+      "score": 5.5
     },
     {
       "slug": "volatility-stop",
       "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.6
+      "score": 5.5
     },
     {
       "slug": "chaikin-volatility-histogram",
@@ -1397,8 +1397,8 @@
       "score": 9.0
     },
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
+      "slug": "volatility-stop",
+      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 5.6
     }
@@ -2188,25 +2188,25 @@
       "slug": "moving-average-ribbon",
       "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.2
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.3
+      "slug": "atr",
+      "title": "Atr Review: Settings, Strategy &amp; How to Use It",
+      "rating": 5,
+      "score": 1.1
     },
     {
-      "slug": "hull-moving-average",
-      "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "average-directional-index",
+      "title": "Average Directional Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.1
     },
     {
-      "slug": "macd",
-      "title": "Macd Review: Settings, Strategy &amp; How to Use It",
+      "slug": "average-true-range-simple",
+      "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.1
     }
   ],
   "efficiency-ratio-bands": [
@@ -3199,6 +3199,12 @@
   ],
   "fractional-ema-kalman-filter": [
     {
+      "slug": "kalman-auction-ribbon",
+      "title": "Kalman_Auction_Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3213,12 +3219,6 @@
     {
       "slug": "jurik-cfj",
       "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.9
-    },
-    {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     }
@@ -3717,6 +3717,32 @@
       "score": 0.9
     }
   ],
+  "hero-dashboard-information-table": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "historical-volatility": [
     {
       "slug": "carrier-volatility-pumori",
@@ -4003,6 +4029,32 @@
       "score": 0.9
     }
   ],
+  "jonnyfutures-ib": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "jurik-cfj": [
     {
       "slug": "jurik-moving-average",
@@ -4031,12 +4083,6 @@
   ],
   "jurik-moving-average": [
     {
-      "slug": "vidya",
-      "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 9.1
-    },
-    {
       "slug": "jurik-cfj",
       "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4045,6 +4091,12 @@
     {
       "slug": "jurik-volatility-bands",
       "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "vidya",
+      "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     },
@@ -4104,6 +4156,32 @@
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 0.9
+    }
+  ],
+  "kalman-auction-ribbon": [
+    {
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 0.9
     }
   ],
@@ -5201,12 +5279,6 @@
   ],
   "moving-average-envelope": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5222,6 +5294,12 @@
       "slug": "fractional-ema-kalman-filter",
       "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 4.9
+    },
+    {
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.9
     }
   ],
@@ -5271,10 +5349,10 @@
       "score": 5.1
     },
     {
-      "slug": "moving-average-envelope",
-      "title": "Moving_Average_Envelope Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.1
+      "score": 4.9
     }
   ],
   "mtf-bollinger": [
@@ -8506,7 +8584,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.1
+      "score": 9.0
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -8555,16 +8633,16 @@
   ],
   "volatility-stop": [
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 5.6
-    },
-    {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.6
+    },
+    {
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 5.5
     },
     {
       "slug": "chaikin-volatility-histogram",
@@ -8821,12 +8899,6 @@
       "score": 1.7
     },
     {
-      "slug": "positive-volume-index",
-      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.5
-    },
-    {
       "slug": "volume-flow",
       "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8837,6 +8909,12 @@
       "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.5
+    },
+    {
+      "slug": "on-balance-volume",
+      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.4
     }
   ],
   "volume-weighted-ma": [
@@ -8908,7 +8986,7 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.9
+      "score": 2.8
     },
     {
       "slug": "moving-average-exp-envelope",
