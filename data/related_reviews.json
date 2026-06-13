@@ -175,8 +175,8 @@
       "score": 4.9
     },
     {
-      "slug": "renko-pulseflow-elite-by-sam-george-adaptive-trade-map",
-      "title": "Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map Review: Settings, Strategy &amp; How to Use It",
+      "slug": "nlms-adaptive-trend-filter-backquant",
+      "title": "Nlms_Adaptive_Trend_Filter_Backquant Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     }
@@ -2185,28 +2185,28 @@
   ],
   "ease-of-movement": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "slug": "balance-of-power",
+      "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.0
     },
     {
-      "slug": "atr",
-      "title": "Atr Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
-      "score": 1.1
+      "slug": "connors-rsi",
+      "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
     },
     {
-      "slug": "average-directional-index",
-      "title": "Average Directional Index Review: Settings, Strategy &amp; How to Use It",
+      "slug": "directional-flow-signals",
+      "title": "Directional Flow Signals Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     },
     {
-      "slug": "average-true-range-simple",
-      "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
+      "slug": "force-index",
+      "title": "Force Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "efficiency-ratio-bands": [
@@ -2523,12 +2523,6 @@
   ],
   "ema-crossover": [
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
       "slug": "zero-lag-macd",
       "title": "Zero Lag MACD Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2544,6 +2538,12 @@
       "slug": "fractional-ema-kalman-filter",
       "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 4.9
+    },
+    {
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.9
     }
   ],
@@ -4208,7 +4208,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.9
+      "score": 7.8
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -4991,6 +4991,32 @@
       "score": 0.9
     }
   ],
+  "market-momentum-energy-zurvaneg": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
+    }
+  ],
   "market-power-zones": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -5334,7 +5360,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.9
+      "score": 5.8
     },
     {
       "slug": "vidya",
@@ -5343,16 +5369,42 @@
       "score": 5.5
     },
     {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
+    },
+    {
+      "slug": "ema-crossover",
+      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    }
+  ],
+  "mr-market-maker": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.9
     }
   ],
   "mtf-bollinger": [
@@ -5665,6 +5717,32 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 0.9
+    }
+  ],
+  "nlms-adaptive-trend-filter-backquant": [
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "ehlers-adaptive-stochastic",
+      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "ehlers-mesa-adaptive-ma",
+      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
     }
   ],
   "normalized-candles-rsi-jamallo": [
@@ -6461,16 +6539,16 @@
       "score": 5.0
     },
     {
-      "slug": "average-true-range",
-      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
+      "slug": "linear-regression",
+      "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.4
+      "score": 1.3
     },
     {
-      "slug": "macd",
-      "title": "Macd Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.4
+      "slug": "parabolic-sar",
+      "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.3
     }
   ],
   "price-density-clouds-excavo": [
