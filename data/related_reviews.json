@@ -235,26 +235,26 @@
   ],
   "ajay-strong-smart-money-scalper": [
     {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
       "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     },
     {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
       "slug": "liquidity-gravity-map-phenlabs",
       "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.9
-    },
-    {
-      "slug": "liquidity-levels",
-      "title": "Liquidity_Levels Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.9
-    },
-    {
-      "slug": "liquidity-sweep-pro",
-      "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     }
@@ -608,13 +608,13 @@
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "true-strength-index",
@@ -732,19 +732,19 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "atr-channels",
@@ -764,17 +764,17 @@
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
-    },
-    {
-      "slug": "keltner-channels",
-      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "chandelier-exit",
       "title": "Chandelier Exit Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "keltner-channels",
+      "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
     }
@@ -1397,10 +1397,10 @@
       "score": 9.0
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.6
+      "score": 5.5
     }
   ],
   "chande-momentum": [
@@ -1963,14 +1963,14 @@
       "score": 5.0
     },
     {
-      "slug": "fractals",
-      "title": "Fractals (Bill Williams) Review: Settings, Strategy &amp; How to Use It",
+      "slug": "exhaustion-zones-momentum-episodes-hermescore",
+      "title": "Exhaustion_Zones_Momentum_Episodes_Hermescore Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "luxalgo",
-      "title": "LuxAlgo Indicator Suite Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractals",
+      "title": "Fractals (Bill Williams) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2599,6 +2599,32 @@
       "score": 0.9
     }
   ],
+  "equal-highs-lows-liquidity-pool-engine-algo-aakash": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "liquidity-gravity-map-phenlabs",
+      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    }
+  ],
   "ergodic-cdi": [
     {
       "slug": "acceleration-deceleration",
@@ -2629,6 +2655,32 @@
     {
       "slug": "ergodic-cdi",
       "title": "Ergodic Candlestick Dynamics Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    }
+  ],
+  "exhaustion-zones-momentum-episodes-hermescore": [
+    {
+      "slug": "demark-pivots",
+      "title": "Demark Pivots Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
@@ -3503,8 +3555,8 @@
       "score": 4.9
     },
     {
-      "slug": "ezpz-rsi-scalper",
-      "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     }
@@ -4208,7 +4260,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.8
+      "score": 7.7
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -4274,19 +4326,19 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     }
   ],
   "kitty-s-law-theultimator5": [
@@ -4523,7 +4575,13 @@
       "score": 0.9
     }
   ],
-  "liquidity-gravity-map-phenlabs": [
+  "liquidity-grab-prl-engine-erdensedat": [
+    {
+      "slug": "liquidity-gravity-map-phenlabs",
+      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "liquidity-levels",
       "title": "Liquidity_Levels Review: Settings, Strategy &amp; How to Use It",
@@ -4541,16 +4599,42 @@
       "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "liquidity-gravity-map-phenlabs": [
+    {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-levels",
+      "title": "Liquidity_Levels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-sweep-pro",
+      "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-sweep-profiler-flux-charts",
+      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
   ],
   "liquidity-levels": [
     {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "liquidity-gravity-map-phenlabs",
       "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4565,18 +4649,18 @@
     {
       "slug": "liquidity-sweep-profiler-flux-charts",
       "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
   ],
   "liquidity-sweep-pro": [
     {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "liquidity-gravity-map-phenlabs",
       "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4591,18 +4675,18 @@
     {
       "slug": "liquidity-sweep-profiler-flux-charts",
       "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
   ],
   "liquidity-sweep-profiler-flux-charts": [
     {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "liquidity-gravity-map-phenlabs",
       "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4617,18 +4701,18 @@
     {
       "slug": "liquidity-sweep-pro",
       "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liquidity-thermal-map",
-      "title": "Liquidity_Thermal_Map Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
   ],
   "liquidity-thermal-map": [
     {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "liquidity-gravity-map-phenlabs",
       "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4643,12 +4727,6 @@
     {
       "slug": "liquidity-sweep-pro",
       "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liquidity-sweep-profiler-flux-charts",
-      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -5597,20 +5675,20 @@
       "score": 4.9
     },
     {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
       "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     },
     {
-      "slug": "liquidity-gravity-map-phenlabs",
-      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.9
-    },
-    {
-      "slug": "liquidity-levels",
-      "title": "Liquidity_Levels Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     }
@@ -6539,16 +6617,16 @@
       "score": 5.0
     },
     {
+      "slug": "average-true-range",
+      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.2
+    },
+    {
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
-    },
-    {
-      "slug": "parabolic-sar",
-      "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.3
+      "score": 1.2
     }
   ],
   "price-density-clouds-excavo": [
@@ -6848,19 +6926,19 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.7
+      "score": 2.6
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.7
+      "score": 2.6
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.7
+      "score": 2.6
     }
   ],
   "rainbow-oscillator": [
@@ -7940,19 +8018,19 @@
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.2
     },
     {
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.3
+      "score": 1.2
     },
     {
       "slug": "price-channel",
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.2
     }
   ],
   "supertrend-atr-trailing-stop": [
@@ -8815,15 +8893,15 @@
   ],
   "volatility-stop": [
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.6
-    },
-    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.5
+    },
+    {
+      "slug": "chaikin-volatility",
+      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.5
     },
     {
@@ -9171,8 +9249,8 @@
       "score": 2.8
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 2.7
     }
@@ -9425,19 +9503,25 @@
       "score": 4.9
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     },
     {
-      "slug": "liquidity-gravity-map-phenlabs",
-      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.9
     }
   ],
   "whale-liquidity-absorption": [
+    {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "liquidity-gravity-map-phenlabs",
       "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
@@ -9453,12 +9537,6 @@
     {
       "slug": "liquidity-sweep-pro",
       "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liquidity-sweep-profiler-flux-charts",
-      "title": "Liquidity_Sweep_Profiler_Flux_Charts Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
     }
