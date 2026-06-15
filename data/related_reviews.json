@@ -3587,6 +3587,32 @@
       "score": 5.0
     }
   ],
+  "ha-macd-nemesis": [
+    {
+      "slug": "macd-rewired-probalist-essentials",
+      "title": "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "macd",
+      "title": "Macd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "mtf-macd",
+      "title": "Mtf_Macd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    }
+  ],
   "half-trend": [
     {
       "slug": "alligator",
@@ -5565,6 +5591,12 @@
   ],
   "mtf-macd": [
     {
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "macd-rewired-probalist-essentials",
       "title": "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5579,12 +5611,6 @@
     {
       "slug": "rsi-macd-combo",
       "title": "Rsi_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "volume-weighted-macd",
-      "title": "Volume Weighted Macd Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -9405,10 +9431,10 @@
       "score": 2.7
     },
     {
-      "slug": "moving-average-exp-envelope",
-      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
+      "slug": "guppy-multiple-moving-average",
+      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.7
+      "score": 2.6
     }
   ],
   "vortex": [
