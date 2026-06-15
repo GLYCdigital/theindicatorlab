@@ -767,16 +767,16 @@
       "score": 5.1
     },
     {
-      "slug": "chandelier-exit",
-      "title": "Chandelier Exit Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.1
-    },
-    {
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.1
+    },
+    {
+      "slug": "chandelier-exit",
+      "title": "Chandelier Exit Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "awesome-oscillator": [
@@ -828,7 +828,7 @@
       "slug": "market-cipher-b",
       "title": "Market Cipher B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.2
     }
   ],
   "beta-indicator": [
@@ -1434,7 +1434,7 @@
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.1
+      "score": 5.0
     },
     {
       "slug": "mass-index",
@@ -4150,7 +4150,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.0
+      "score": 8.9
     },
     {
       "slug": "kitty-s-law-theultimator5",
@@ -4703,6 +4703,32 @@
       "title": "Liquidity_Sweep_Pro Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "liquidity-sweep-retracements": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
     }
   ],
   "liquidity-thermal-map": [
@@ -7877,6 +7903,58 @@
       "score": 0.8
     }
   ],
+  "stoc-risk-table-lite": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.8
+    }
+  ],
+  "stoc-supertrend-lite": [
+    {
+      "slug": "supertrend-atr-trailing-stop",
+      "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
+      "rating": 5,
+      "score": 5.2
+    },
+    {
+      "slug": "supertrend-parameter-sensitivity-3d",
+      "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.2
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "atr-fibonacci-expansion-zones",
+      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.8
+    }
+  ],
   "stochastic-momentum-index": [
     {
       "slug": "stochastic-oscillator",
@@ -8125,15 +8203,15 @@
       "score": 5.4
     },
     {
+      "slug": "stoc-supertrend-lite",
+      "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.2
+    },
+    {
       "slug": "atr-channels",
       "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "atr-fibonacci-expansion-zones",
-      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 4.8
     }
   ],
@@ -8145,6 +8223,12 @@
       "score": 5.4
     },
     {
+      "slug": "stoc-supertrend-lite",
+      "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.2
+    },
+    {
       "slug": "atr-channels",
       "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8153,12 +8237,6 @@
     {
       "slug": "atr-fibonacci-expansion-zones",
       "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 4.8
-    },
-    {
-      "slug": "atr-trailing-stop",
-      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 4.8
     }
@@ -8922,7 +9000,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 9.0
+      "score": 8.9
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -9101,28 +9179,28 @@
   ],
   "volume-price-analysis": [
     {
+      "slug": "atr-trailing-stop",
+      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.2
+    },
+    {
+      "slug": "cvd",
+      "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.2
+    },
+    {
+      "slug": "least-squares",
+      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.2
+    },
+    {
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
-    },
-    {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.3
-    },
-    {
-      "slug": "positive-volume-index",
-      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.3
-    },
-    {
-      "slug": "price-volume-trend",
-      "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.3
+      "score": 1.2
     }
   ],
   "volume-profile-fixed-range": [
@@ -9237,12 +9315,6 @@
       "score": 1.6
     },
     {
-      "slug": "on-balance-volume",
-      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.4
-    },
-    {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -9251,6 +9323,12 @@
     {
       "slug": "volume-flow",
       "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.4
+    },
+    {
+      "slug": "volume-oscillator",
+      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.4
     }
