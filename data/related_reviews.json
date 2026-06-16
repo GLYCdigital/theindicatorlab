@@ -247,14 +247,14 @@
       "score": 4.8
     },
     {
-      "slug": "liquidity-grab-prl-engine-erdensedat",
-      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     },
     {
-      "slug": "liquidity-gravity-map-phenlabs",
-      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -2613,14 +2613,14 @@
       "score": 4.8
     },
     {
-      "slug": "liquidity-grab-prl-engine-erdensedat",
-      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     },
     {
-      "slug": "liquidity-gravity-map-phenlabs",
-      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-grab-prl-engine-erdensedat",
+      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -3055,15 +3055,15 @@
       "score": 4.8
     },
     {
-      "slug": "order-flow-cumulative-delta",
-      "title": "Order_Flow_Cumulative_Delta Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     },
     {
-      "slug": "order-flow-imbalance",
-      "title": "Order Flow Imbalance Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "order-flow-cumulative-delta",
+      "title": "Order_Flow_Cumulative_Delta Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.8
     }
   ],
@@ -4286,7 +4286,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.7
+      "score": 7.6
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -4601,6 +4601,32 @@
       "score": 0.8
     }
   ],
+  "liquidity-absorption-and-rejection-orderflow-maxmaserati": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.8
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "footprint-chart",
+      "title": "Footprint_Chart Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    }
+  ],
   "liquidity-grab-prl-engine-erdensedat": [
     {
       "slug": "liquidity-gravity-map-phenlabs",
@@ -4679,6 +4705,58 @@
       "score": 9.0
     }
   ],
+  "liquidity-magnet": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    }
+  ],
+  "liquidity-shift-detection-lsd": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    }
+  ],
   "liquidity-sweep-pro": [
     {
       "slug": "liquidity-grab-prl-engine-erdensedat",
@@ -4751,8 +4829,8 @@
       "score": 4.8
     },
     {
-      "slug": "liquidity-grab-prl-engine-erdensedat",
-      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -5522,7 +5600,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.5
+      "score": 5.4
     },
     {
       "slug": "ema-cross",
@@ -5730,19 +5808,19 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "central-pivot-range",
       "title": "Central Pivot Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     }
   ],
   "nadaraya-watson-regression-liquidity-sweeps-algoalpha": [
@@ -5765,8 +5843,8 @@
       "score": 4.8
     },
     {
-      "slug": "liquidity-grab-prl-engine-erdensedat",
-      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -8226,7 +8304,7 @@
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.4
+      "score": 5.3
     },
     {
       "slug": "stoc-supertrend-lite",
@@ -8246,7 +8324,7 @@
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.4
+      "score": 5.3
     },
     {
       "slug": "stoc-supertrend-lite",
