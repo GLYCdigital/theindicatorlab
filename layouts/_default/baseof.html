@@ -19,6 +19,57 @@
   {{ end }}
   {{ partial "head/custom.html" . }}
   {{ partial "head/analytics.html" . }}
+  {{- /* GEO — Organization + WebSite schema for entity authority */ -}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}#organization",
+    "name": "The Indicator Lab",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "Independent TradingView indicator reviews. Honest analysis, real backtests, and community ratings for every indicator worth trading.",
+    "sameAs": [
+      "https://twitter.com/IndicatorLabs",
+      "https://www.tradingview.com/u/TheIndicatorLab/"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "{{ .Site.BaseURL }}#website",
+    "url": "{{ .Site.BaseURL }}",
+    "name": "The Indicator Lab",
+    "description": "Honest TradingView indicator reviews. Find the best indicators for your trading strategy.",
+    "publisher": { "@id": "{{ .Site.BaseURL }}#organization" },
+    "inLanguage": "en-US"
+  }
+  </script>
+
+  {{- /* GEO — BreadcrumbList schema (simple: Home → Section → Page) */ -}}
+  {{- $bcItems := slice -}}
+  {{- $bcItems = $bcItems | append (dict "pos" 1 "name" "Home" "url" .Site.BaseURL) -}}
+  {{- if not .IsHome -}}
+    {{- $section := .CurrentSection -}}
+    {{- if $section -}}
+      {{- $sectionName := $section.Title -}}
+      {{- if eq $section.Type "reviews" }}{{ $sectionName = "Indicator Reviews" }}{{ end -}}
+      {{- if ne $section.RelPermalink "/" -}}
+        {{- $bcItems = $bcItems | append (dict "pos" 2 "name" $sectionName "url" $section.Permalink) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if .IsPage -}}
+      {{- $bcItems = $bcItems | append (dict "pos" (add (len $bcItems) 1) "name" (.Title | plainify) "url" "") -}}
+    {{- end -}}
+  {{- end -}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{{ range $i, $item := $bcItems }}{"@type":"ListItem","position":{{ $item.pos }},"name":"{{ $item.name }}"{{ with $item.url }},"item":"{{ . }}"{{ end }}}{{ if lt $i (sub (len $bcItems) 1) }},{{ end }}{{ end }}]
+  }
+  </script>
 </head>
 <body>
   {{ partial "header.html" . }}

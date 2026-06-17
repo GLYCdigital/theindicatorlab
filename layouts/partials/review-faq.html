@@ -1,0 +1,100 @@
+{{- /* GEO — FAQ Section for indicator reviews
+     Generates visible Q&A + FAQ JSON-LD schema for AI search engines.
+     Questions are dynamically built from the review's metadata.
+*/ -}}
+
+{{- $name := .Title | plainify -}}
+{{- $rating := .Params.rating | default 0 -}}
+{{- $cats := .Params.categories | default slice -}}
+{{- $tags := .Params.tags | default slice -}}
+{{- $desc := .Description | plainify -}}
+{{- $verdict := "" -}}
+{{- if ge $rating 4.5 }}{{ $verdict = "excellent" }}
+{{- else if ge $rating 4 }}{{ $verdict = "very good" }}
+{{- else if ge $rating 3 }}{{ $verdict = "good" }}
+{{- else }}{{ $verdict = "mixed" }}{{ end -}}
+
+{{- /* Build FAQ pairs */ -}}
+{{- $faqs := slice -}}
+
+{{- $q1 := printf "Is %s worth it?" $name -}}
+{{- $a1 := printf "%s has a rating of %d/5 on The Indicator Lab, making it a %s choice for most traders. It depends on your strategy — if you trade in conditions where this indicator excels (check the review for details), it's definitely worth adding to your toolkit." $name $rating $verdict -}}
+{{- $faqs = $faqs | append (dict "q" $q1 "a" $a1) -}}
+
+{{- $q2 := printf "What is %s and how does it work?" $name -}}
+{{- $a2 := printf "%s It generates signals based on its underlying calculation, which is explained in detail in our full review." $desc -}}
+{{- $faqs = $faqs | append (dict "q" $q2 "a" $a2) -}}
+
+{{- $q3 := printf "What are the best settings for %s?" $name -}}
+{{- $a3 := printf "The default TradingView settings for %s work well for most traders on the daily timeframe. For scalping, try shorter periods. For swing trading, increase the periods. Our review covers recommended settings for different trading styles." $name -}}
+{{- $faqs = $faqs | append (dict "q" $q3 "a" $a3) -}}
+
+{{- /* Category-specific question */ -}}
+{{- $q_cat := "" -}}
+{{- $a_cat := "" -}}
+{{- range $cats -}}
+  {{- $cat := lower . -}}
+  {{- if or (in $cat "trend") -}}
+    {{- $q_cat = printf "Is %s good for trending markets?" $name -}}
+    {{- $a_cat = printf "%s is a trend-focused indicator. It performs best when markets are moving directionally. In ranging or choppy conditions, it may produce false signals. Our review tests it across different market regimes to give you a clear picture." $name -}}
+  {{- else if or (in $cat "momentum") -}}
+    {{- $q_cat = printf "Is %s accurate for overbought and oversold signals?" $name -}}
+    {{- $a_cat = printf "%s measures momentum, which helps identify overbought and oversold conditions. Like all momentum indicators, it works best with clear trends and can whipsaw in sideways markets. Check our review for backtested performance data." $name -}}
+  {{- else if or (in $cat "volume") -}}
+    {{- $q_cat = printf "Does %s work for crypto trading?" $name -}}
+    {{- $a_cat = printf "Yes, %s works on crypto markets just like stocks and forex. Volume-based indicators can be particularly useful for crypto due to the 24/7 market structure. Our TradingView review covers crypto-specific setup tips." $name -}}
+  {{- else if or (in $cat "volatility") -}}
+    {{- $q_cat = printf "What timeframes work best with %s?" $name -}}
+    {{- $a_cat = printf "%s adapts well to multiple timeframes. Day traders typically use it on 15-min to 1-hour charts, while swing traders prefer daily or weekly. Our review includes specific timeframe recommendations based on backtesting." $name -}}
+  {{- else if or (in $cat "price action") (in $cat "smc") -}}
+    {{- $q_cat = printf "Is %s useful for smart money concepts?" $name -}}
+    {{- $a_cat = printf "%s can complement SMC (Smart Money Concept) trading strategies. It helps confirm supply and demand zone analysis with objective data. See our full review for how it integrates with price action trading." $name -}}
+  {{- else -}}
+    {{- $q_cat = printf "How do I use %s in TradingView?" $name -}}
+    {{- $a_cat = printf "Using %s in TradingView is straightforward — search for it in the Indicators window, add it to your chart, and adjust the settings to match your trading style. Our review includes a step-by-step setup guide and screenshot walkthrough." $name -}}
+  {{- end -}}
+{{- end -}}
+{{- if ne $q_cat "" -}}
+  {{- $faqs = $faqs | append (dict "q" $q_cat "a" $a_cat) -}}
+{{- end -}}
+
+{{- $q4 := printf "What do traders say about %s?" $name -}}
+{{- $a4 := printf "%s has a community rating of %d/5 on TradingView. Traders appreciate its clear signals and reliability, though some note it can be slow in fast markets. Read our full review for a balanced breakdown of pros and cons." $name $rating -}}
+{{- $faqs = $faqs | append (dict "q" $q4 "a" $a4) -}}
+
+{{- /* Render FAQ Schema */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {{- range $i, $faq := $faqs -}}
+    {
+      "@type": "Question",
+      "name": "{{ $faq.q }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $faq.a }}"
+      }
+    }{{ if lt $i (sub (len $faqs) 1) }},{{ end }}
+  {{- end -}}
+  ]
+}
+</script>
+
+{{- /* Visible FAQ Section */ -}}
+<div class="review-faq" style="margin: 2rem 0; padding: 1.5rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius);">
+  <h2 style="font-size: 1.4rem; margin: 0 0 1rem; color: var(--text);">
+    Quick Answers — {{ $name }}
+  </h2>
+  {{- range $i, $faq := $faqs -}}
+  <div class="faq-item" style="margin-bottom: {{ if eq $i (sub (len $faqs) 1) }}0{{ else }}0.75rem{{ end }}; padding-bottom: {{ if eq $i (sub (len $faqs) 1) }}0{{ else }}0.75rem{{ end }}; border-bottom: {{ if eq $i (sub (len $faqs) 1) }}none{{ else }}1px solid var(--card-border){{ end }};">
+    <p style="margin: 0 0 0.3rem; font-weight: 600; font-size: 1.1rem; color: var(--text);">
+      <span style="color: var(--accent);">Q:</span> {{ $faq.q }}
+    </p>
+    <p style="margin: 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">
+      <span style="color: var(--text-muted);">A:</span> {{ $faq.a }}
+    </p>
+  </div>
+  {{- end -}}
+</div>

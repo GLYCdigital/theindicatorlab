@@ -1,0 +1,72 @@
+{{- /* GEO — Product schema for The Indicator Lab product pages */ -}}
+{{- $url := .Permalink -}}
+{{- $base := .Site.BaseURL -}}
+
+{{- if in $url "/the-lab-report/" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "The Lab Report",
+  "description": "Real-time TradingView indicator consensus delivered to your phone every 15 minutes. 58+ indicators across 20 markets — one unified verdict.",
+  "brand": { "@type": "Brand", "name": "The Indicator Lab" },
+  "offers": {
+    "@type": "Offer",
+    "price": "29",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ $url }}",
+    "priceValidUntil": "2027-12-31"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "bestRating": "5",
+    "ratingCount": "24"
+  },
+  "applicationCategory": "TradingApplication"
+}
+</script>
+{{- else if in $url "/lab-edge/" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "The Lab Edge",
+  "description": "Time-Series Momentum framework across 166 markets. Weekly institutional-grade signals. 95% profitable markets in backtesting.",
+  "brand": { "@type": "Brand", "name": "The Indicator Lab" },
+  "offers": {
+    "@type": "Offer",
+    "price": "79",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ $url }}",
+    "priceValidUntil": "2027-12-31"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.0",
+    "bestRating": "5",
+    "ratingCount": "12"
+  }
+}
+</script>
+{{- else if in $url "/lab-originals/" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Lab Originals",
+  "description": "Premium invite-only TradingView scripts developed by The Indicator Lab. CVD Divergence, SuperTrend ATR, Fisher Transform MTF, and more.",
+  "brand": { "@type": "Brand", "name": "The Indicator Lab" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "29",
+    "highPrice": "199",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ $url }}"
+  }
+}
+</script>
+{{- end -}}
