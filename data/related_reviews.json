@@ -5511,6 +5511,32 @@
       "score": 0.8
     }
   ],
+  "momentum-conviction-hermescore": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.8
+    }
+  ],
   "momentum-reversal-indicator": [
     {
       "slug": "acceleration-deceleration",
@@ -5821,6 +5847,32 @@
       "title": "Rsi Divergence Detector Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "multi-strategy-portfolio-optimizer": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.8
     }
   ],
   "multi-timeframe-volume-profiles-tradingiq": [
@@ -7747,6 +7799,32 @@
       "score": 0.8
     }
   ],
+  "session-edge-profiler-flux-charts": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 0.8
+    }
+  ],
   "sessions-flow-cartel-console": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -8168,13 +8246,13 @@
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "atr-channels",
@@ -8440,7 +8518,7 @@
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "atr-channels",
@@ -8460,7 +8538,7 @@
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.2
+      "score": 5.1
     },
     {
       "slug": "atr-channels",
@@ -9572,7 +9650,7 @@
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.6
+      "score": 1.5
     },
     {
       "slug": "volume-flow",
