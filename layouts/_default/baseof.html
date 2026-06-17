@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{- /* Noindex paginated pages and taxonomy pages (thin content for SEO) */ -}}
   {{- $url := .RelPermalink -}}
-  {{- if or (in $url "/page/") (or (in $url "/tags/") (in $url "/categories/")) -}}
+  {{- if or (in $url "/page/") (in $url "/tags/") (in $url "/categories/") (in $url "/backtests/") -}}
   <meta name="robots" content="noindex, follow">
   {{- end -}}
   <link rel="canonical" href="{{ .Permalink }}">
