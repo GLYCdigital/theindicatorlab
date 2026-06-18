@@ -305,8 +305,8 @@
       "score": 4.8
     },
     {
-      "slug": "liquidity-grab-prl-engine-erdensedat",
-      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -851,8 +851,8 @@
       "score": 5.1
     },
     {
-      "slug": "chandelier-exit",
-      "title": "Chandelier Exit Review: Settings, Strategy &amp; How to Use It",
+      "slug": "true-strength-index",
+      "title": "True_Strength_Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1501,10 +1501,10 @@
       "score": 9.0
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.5
+      "score": 5.4
     }
   ],
   "chande-momentum": [
@@ -1535,12 +1535,6 @@
   ],
   "chandelier-exit": [
     {
-      "slug": "average-true-range",
-      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "mass-index",
       "title": "Mass Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1557,6 +1551,12 @@
       "title": "Vwap Regime Filter Signal Quality Indicator Lunqfx Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 5.0
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
     }
   ],
   "chart-patterns-screener-trendoscope": [
@@ -2659,6 +2659,12 @@
       "score": 4.8
     },
     {
+      "slug": "fractional-ema-kalman-filter-d7",
+      "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "fractional-ema-kalman-filter",
       "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -2667,12 +2673,6 @@
     {
       "slug": "jurik-cfj",
       "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik_Volatility_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -2691,15 +2691,15 @@
       "score": 4.8
     },
     {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "fractional-ema-kalman-filter-d7",
+      "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.8
     },
     {
-      "slug": "jurik-cfj",
-      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.8
     }
   ],
@@ -2775,8 +2775,8 @@
       "score": 4.8
     },
     {
-      "slug": "liquidity-grab-prl-engine-erdensedat",
-      "title": "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -3197,6 +3197,32 @@
       "score": 8.0
     }
   ],
+  "focus-bars-trading": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    }
+  ],
   "footprint-chart": [
     {
       "slug": "footprint-imbalance",
@@ -3217,8 +3243,8 @@
       "score": 4.8
     },
     {
-      "slug": "order-flow-cumulative-delta",
-      "title": "Order_Flow_Cumulative_Delta Review: Settings, Strategy &amp; How to Use It",
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -3405,6 +3431,32 @@
       "score": 8.0
     }
   ],
+  "fractional-ema-kalman-filter-d7": [
+    {
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "ema-crossover",
+      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.8
+    },
+    {
+      "slug": "jurik-cfj",
+      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    }
+  ],
   "fractional-ema-kalman-filter": [
     {
       "slug": "kalman-auction-ribbon",
@@ -3425,8 +3477,8 @@
       "score": 4.8
     },
     {
-      "slug": "jurik-cfj",
-      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractional-ema-kalman-filter-d7",
+      "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -4811,6 +4863,12 @@
   ],
   "liquidity-absorption-and-rejection-orderflow-maxmaserati": [
     {
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.8
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4827,10 +4885,30 @@
       "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
+    }
+  ],
+  "liquidity-absorption-and-rejection-orderflow": [
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.8
     },
     {
-      "slug": "footprint-chart",
-      "title": "Footprint_Chart Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.8
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -5785,15 +5863,15 @@
       "score": 4.8
     },
     {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "fractional-ema-kalman-filter-d7",
+      "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.8
     },
     {
-      "slug": "jurik-cfj",
-      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.8
     }
   ],
@@ -7472,19 +7550,19 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.5
+      "score": 2.4
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.5
+      "score": 2.4
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.5
+      "score": 2.4
     }
   ],
   "rainbow-oscillator": [
@@ -9000,25 +9078,25 @@
       "slug": "negative-volume-index",
       "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "on-balance-volume",
       "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "price-volume-trend",
       "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     }
   ],
   "tranquila-smc-free-01": [
@@ -9451,14 +9529,14 @@
       "score": 1.2
     },
     {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "slug": "least-squares",
+      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 1.2
     },
     {
-      "slug": "least-squares",
-      "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
+      "slug": "pwvo",
+      "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 1.2
     }
@@ -9543,15 +9621,15 @@
   ],
   "volatility-stop": [
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.5
-    },
-    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.4
+    },
+    {
+      "slug": "chaikin-volatility",
+      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.4
     },
     {
@@ -9899,8 +9977,8 @@
       "score": 2.6
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 2.5
     }
