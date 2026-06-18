@@ -1,5 +1,11 @@
 {
-  "a-l-p-h-a-x-surge": [
+  "1-trendline-strategy": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
@@ -17,11 +23,31 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 0.8
+    }
+  ],
+  "a-l-p-h-a-x-surge": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 0.8
     }
   ],
@@ -53,6 +79,12 @@
   ],
   "accelerator-oscillator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -68,12 +100,6 @@
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 0.8
-    },
-    {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
       "score": 0.8
     }
   ],
@@ -183,6 +209,12 @@
   ],
   "adx": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -199,16 +231,42 @@
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
+    }
+  ],
+  "ai-predictive-flow": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 0.8
     }
   ],
   "ai-source-switching-moving-average": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -224,12 +282,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -337,6 +389,32 @@
       "score": 13.0
     }
   ],
+  "alpha-signal-engine": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    }
+  ],
   "anchored-vwap": [
     {
       "slug": "post-absorption-vwap-reversal-engine-6",
@@ -391,6 +469,12 @@
   ],
   "arms-index": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -406,12 +490,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -429,14 +507,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -455,14 +533,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -625,6 +703,12 @@
   ],
   "aurora-compass": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -640,17 +724,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -666,17 +750,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "automatic-support-resistance": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -692,12 +776,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -833,6 +911,12 @@
   ],
   "beta-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -848,17 +932,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "bid-ask-volume": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -874,17 +958,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "bidayah-smc-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -900,17 +984,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "blur-fibonacci": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -926,12 +1010,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1015,6 +1093,12 @@
   ],
   "breaker-blocks": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1030,12 +1114,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1067,6 +1145,12 @@
   ],
   "btc-asymmetric-quantile-model-cowen-2026": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1082,12 +1166,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1105,14 +1183,14 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -1145,6 +1223,12 @@
   ],
   "candle-pressure-flip-engine": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1160,12 +1244,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1177,6 +1255,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1185,12 +1269,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -1223,6 +1301,12 @@
   ],
   "celestial-mean-reversion-envelopes-pineify": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1238,17 +1322,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "center-of-gravity": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1264,12 +1348,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1457,6 +1535,12 @@
   ],
   "chart-patterns-screener-trendoscope": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1472,17 +1556,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "chart-patterns": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1498,17 +1582,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "chop-zone": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1524,17 +1608,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "choppiness-index": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1550,12 +1634,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1587,6 +1665,12 @@
   ],
   "composite-index": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1602,12 +1686,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1665,6 +1743,12 @@
   ],
   "correlation-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1680,12 +1764,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1703,14 +1781,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -1795,6 +1873,12 @@
   ],
   "darvas-box": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1810,17 +1894,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "delivery-shift-cisd-viprasol": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1836,12 +1920,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -1977,6 +2055,12 @@
   ],
   "demarker-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1992,12 +2076,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2055,6 +2133,12 @@
   ],
   "doji-scanner": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2070,12 +2154,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2139,6 +2217,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2147,18 +2231,18 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
   ],
   "dual-log-regression-channels": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2174,12 +2258,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2237,6 +2315,12 @@
   ],
   "efficiency-ratio-bands": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2252,12 +2336,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2393,6 +2471,12 @@
   ],
   "ehlers-roofing-filter": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2408,12 +2492,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2477,6 +2555,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2485,12 +2569,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -2503,6 +2581,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2511,12 +2595,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -2575,6 +2653,12 @@
   ],
   "engulfing-scanner": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2590,17 +2674,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "envelopes": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2616,12 +2700,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2685,6 +2763,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2693,12 +2777,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -2711,6 +2789,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2719,18 +2803,18 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
   ],
   "exprlib": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2746,12 +2830,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -2815,6 +2893,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -2823,12 +2907,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -3017,6 +3095,12 @@
   ],
   "floor-pivots": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3032,12 +3116,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3101,6 +3179,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3109,12 +3193,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -3303,6 +3381,12 @@
   ],
   "funding-rate": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3318,12 +3402,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3335,6 +3413,12 @@
       "score": 9.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3343,12 +3427,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -3361,6 +3439,12 @@
       "score": 9.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3369,18 +3453,18 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
   ],
   "gap-detector": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3396,17 +3480,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "garch-model": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3422,12 +3506,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3445,14 +3523,14 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -3485,6 +3563,12 @@
   ],
   "gk-xauusd-diamond-sniper": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3500,17 +3584,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "gmma": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3526,17 +3610,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "gold-toolkit-22-matsukazealgo": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3552,12 +3636,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3679,20 +3757,26 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
   ],
   "head-and-shoulders": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3708,17 +3792,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "heatmap": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3734,17 +3818,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "heiken-ashi": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3760,12 +3844,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3783,14 +3861,14 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -3809,19 +3887,25 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
   ],
   "hero-dashboard-information-table": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
@@ -3838,12 +3922,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3953,6 +4031,12 @@
   ],
   "hurst-exponent": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3968,12 +4052,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -3985,6 +4063,12 @@
       "score": 9.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3993,12 +4077,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4017,14 +4095,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4109,6 +4187,12 @@
   ],
   "institutional-turtle-soup-smc": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4124,17 +4208,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "inverse-fisher-transform": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4150,17 +4234,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "jonnyfutures-ib": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4176,12 +4260,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -4265,6 +4343,12 @@
   ],
   "kagi-charts": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4280,12 +4364,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -4297,6 +4375,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4305,12 +4389,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4338,7 +4416,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.6
+      "score": 7.5
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -4349,6 +4427,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4357,12 +4441,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4479,6 +4557,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4487,12 +4571,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4629,6 +4707,12 @@
   ],
   "liquidation-levels": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4644,12 +4728,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5011,8 +5089,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -5063,8 +5141,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -5097,6 +5175,12 @@
   ],
   "market-cipher-a": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5112,12 +5196,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5149,6 +5227,12 @@
   ],
   "market-cipher-d": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5164,12 +5248,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5201,6 +5279,12 @@
   ],
   "market-meanness-index": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5216,17 +5300,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "market-microstructure-analytics": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5242,17 +5326,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "market-momentum-energy-zurvaneg": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5268,17 +5352,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "market-power-zones": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5294,12 +5378,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5331,6 +5409,12 @@
   ],
   "market-structure-oscillator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5346,17 +5430,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "market-structure-pro": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5372,12 +5456,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5461,6 +5539,12 @@
   ],
   "mello": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5476,17 +5560,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "mitigation-blocks": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5502,17 +5586,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "momentum-conviction-hermescore": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5528,12 +5612,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5695,6 +5773,12 @@
   ],
   "mr-market-maker": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5710,12 +5794,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5739,8 +5817,8 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -5773,6 +5851,12 @@
   ],
   "mtf-moving-average": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5788,12 +5872,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5851,6 +5929,12 @@
   ],
   "multi-strategy-portfolio-optimizer": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5866,12 +5950,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -5993,14 +6071,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -6019,14 +6097,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -6059,6 +6137,12 @@
   ],
   "neuralib-a-native-ai-and-deep-learning-runtime": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6074,12 +6158,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -6189,6 +6267,12 @@
   ],
   "ohlc-olhc-arkn": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6204,12 +6288,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -6241,6 +6319,12 @@
   ],
   "open-interest": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6256,17 +6340,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "orb-continuation-0-signals-levels": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6282,12 +6366,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -6409,14 +6487,14 @@
       "score": 4.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -6449,6 +6527,12 @@
   ],
   "perfect-squares": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6464,17 +6548,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "phase-exhaustion-reversal-bullbyte": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6490,17 +6574,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "pin-bar-scanner": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6516,12 +6600,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -6553,6 +6631,12 @@
   ],
   "pinescript-integration-with-notepad-udl": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6568,12 +6652,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -6761,6 +6839,12 @@
   ],
   "pk-william-analytics-clean-monthly-ist": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6776,17 +6860,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "point-and-figure": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6802,12 +6886,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -7073,6 +7151,12 @@
   ],
   "pullback-sniper-method": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7088,17 +7172,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "put-call-ratio": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7114,12 +7198,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -7151,6 +7229,12 @@
   ],
   "qarar-unified-egx-market-map": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7166,12 +7250,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -7203,6 +7281,12 @@
   ],
   "quant-smc": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7218,17 +7302,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "quantitative-estimation": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7244,17 +7328,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "quantum-imbalance-trap": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7270,17 +7354,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "quartile-footprint-bubbles-maxmaserati": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7296,12 +7380,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -7339,6 +7417,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7347,12 +7431,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -7385,6 +7463,12 @@
   ],
   "ranked-support-resistance-zones": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7400,12 +7484,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -7455,8 +7533,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -7481,8 +7559,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -7599,6 +7677,12 @@
       "score": 9.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7607,12 +7691,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -7723,6 +7801,12 @@
   ],
   "schiff-pitchfork": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7738,17 +7822,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "seasonality-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7764,17 +7848,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "sentiment-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7790,17 +7874,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "session-edge-profiler-flux-charts": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7816,17 +7900,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "sessions-flow-cartel-console": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7842,17 +7926,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "skew-mtf-trend": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7868,17 +7952,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "sma-cross": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7894,17 +7978,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "smart-trader-episode-06-isotropic-trend-lines": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7920,17 +8004,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "smartbreak-fibo-traderhook": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7946,17 +8030,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "smi-ergodic": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7972,12 +8056,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -8001,8 +8079,8 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -8191,6 +8269,12 @@
   ],
   "starc-bands": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8206,17 +8290,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "stoc-risk-table-lite": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8232,12 +8316,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -8287,8 +8365,8 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -8313,8 +8391,8 @@
       "score": 4.8
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -8347,6 +8425,12 @@
   ],
   "stop-hunt-radar-gbb": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8362,17 +8446,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "strat-sniper": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8388,12 +8472,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -8405,6 +8483,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8413,12 +8497,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -8431,6 +8509,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8439,12 +8523,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -8457,6 +8535,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8465,12 +8549,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -8573,14 +8651,20 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
   ],
   "swing-gradient-tpos-boswaves": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8596,17 +8680,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "swing-index": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8622,17 +8706,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "swing-structure-forecast-boswaves": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8648,12 +8732,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -8737,6 +8815,12 @@
   ],
   "tertiary-pivot-structural-zones": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8752,17 +8836,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "the-tradegoal-9-0": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8778,17 +8862,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "the-tradegoal-90": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8804,12 +8888,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -8867,6 +8945,12 @@
   ],
   "tranquila-smc-free-01": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8882,17 +8966,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "trend-predictor-ribbon-clone-roj-karo-moj-karo": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8908,12 +8992,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -8945,6 +9023,12 @@
   ],
   "triangle-pattern": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8960,17 +9044,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "trinity-magic-ma-ribbon": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8986,12 +9070,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -9231,6 +9309,12 @@
   ],
   "v2rk-price-action-internal-exteranal-structure": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -9246,12 +9330,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -9439,6 +9517,12 @@
   ],
   "volume-cluster": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -9454,12 +9538,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -9621,6 +9699,12 @@
   ],
   "volume-rate-of-change": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -9636,12 +9720,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -9653,25 +9731,31 @@
       "score": 1.5
     },
     {
-      "slug": "volume-flow",
-      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.4
-    },
-    {
-      "slug": "volume-oscillator",
-      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.4
-    },
-    {
       "slug": "on-balance-volume",
       "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.3
+    },
+    {
+      "slug": "positive-volume-index",
+      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.3
+    },
+    {
+      "slug": "volume-flow",
+      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.3
     }
   ],
   "volume-weighted-ma": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
@@ -9688,12 +9772,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -9743,10 +9821,10 @@
       "score": 2.6
     },
     {
-      "slug": "moving-average-exp-envelope",
-      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
+      "slug": "guppy-multiple-moving-average",
+      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.6
+      "score": 2.5
     }
   ],
   "vortex": [
@@ -9959,6 +10037,12 @@
   ],
   "wedge-polaris": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -9974,12 +10058,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -10115,6 +10193,12 @@
   ],
   "wolfe-waves": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10130,12 +10214,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -10167,6 +10245,12 @@
   ],
   "woodies-pivots": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10182,17 +10266,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "wyckoff-pattern-indicator-almostperfect": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10208,17 +10292,17 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
   "xau-bands": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10234,12 +10318,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 0.8
     }
   ],
@@ -10303,6 +10381,12 @@
       "score": 4.8
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10311,12 +10395,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -10329,6 +10407,12 @@
       "score": 4.8
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10337,12 +10421,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
