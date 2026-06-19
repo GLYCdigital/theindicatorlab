@@ -562,13 +562,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "artemis-adaptive-rsi": [
@@ -5771,6 +5771,32 @@
       "score": 0.8
     }
   ],
+  "momentum-conviction": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    }
+  ],
   "momentum-reversal-indicator": [
     {
       "slug": "acceleration-deceleration",
@@ -7189,16 +7215,16 @@
       "score": 5.0
     },
     {
+      "slug": "average-true-range",
+      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.1
+    },
+    {
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
-    },
-    {
-      "slug": "parabolic-sar",
-      "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.2
+      "score": 1.1
     }
   ],
   "price-density-clouds-excavo": [
@@ -7905,6 +7931,12 @@
   ],
   "rsi-macd-combo": [
     {
+      "slug": "rsi-macd-confluence",
+      "title": "Rsi_Macd_Confluence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.8
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7921,10 +7953,30 @@
       "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
+    }
+  ],
+  "rsi-macd-confluence": [
+    {
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.8
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "connors-rsi",
+      "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "ezpz-rsi-scalper",
+      "title": "Ezpz_Rsi_Scalper Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -8135,6 +8187,32 @@
       "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
+    }
+  ],
+  "smart-money-stop-hunt-detector-algo-aakash": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
     }
   ],
   "smart-trader-episode-06-isotropic-trend-lines": [
@@ -8720,19 +8798,19 @@
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "price-channel",
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     }
   ],
   "supertrend-atr-trailing-stop": [
@@ -9974,7 +10052,7 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.6
+      "score": 2.5
     },
     {
       "slug": "moving-average-exp-envelope",
