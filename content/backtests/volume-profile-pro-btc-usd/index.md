@@ -1,18 +1,18 @@
 ---
 {
   "title": "VWAP \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-19",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+71.0%"
+      "value": "+73.0%"
     },
     {
       "label": "CAGR",
-      "value": "11.3%"
+      "value": "11.6%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+15.1%",
+      "return_pct": "+46.2%",
       "trades": "7",
       "win_rate_pct": "21.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
+      "return_pct": "-28.8%",
       "trades": "6",
       "win_rate_pct": "21.1%"
     }
@@ -109,7 +109,7 @@ On BTC, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-14 → 2026-06-12), the Volume Profile Pro delivered a **+71.0% total return** on BTC-USD, compounding at **11.3% annually**. 
+Over five years (2021-06-21 → 2026-06-19), the Volume Profile Pro delivered a **+73.0% total return** on BTC-USD, compounding at **11.6% annually**. 
 
 At **0.39**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on BTC-USD](/backtests/volume-profile-pro-btc-usd-trades.png)

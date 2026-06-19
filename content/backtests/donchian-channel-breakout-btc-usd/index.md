@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-19",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+38.9%"
+      "value": "+50.2%"
     },
     {
       "label": "CAGR",
-      "value": "6.8%"
+      "value": "8.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.28"
+      "value": "0.32"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "27.4%"
+      "value": "28.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.14"
+      "value": "1.17"
     },
     {
       "label": "Total Trades",
-      "value": "95"
+      "value": "93"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+15.1%",
-      "trades": "10",
-      "win_rate_pct": "27.4%"
+      "return_pct": "+46.2%",
+      "trades": "8",
+      "win_rate_pct": "28.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "19",
-      "win_rate_pct": "27.4%"
+      "win_rate_pct": "28.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "18",
-      "win_rate_pct": "27.4%"
+      "win_rate_pct": "28.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "19",
-      "win_rate_pct": "27.4%"
+      "win_rate_pct": "28.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "20",
-      "win_rate_pct": "27.4%"
+      "win_rate_pct": "28.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
+      "return_pct": "-28.8%",
       "trades": "9",
-      "win_rate_pct": "27.4%"
+      "win_rate_pct": "28.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -101,9 +101,9 @@ On BTC, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-14 → 2026-06-12), the Donchian Channel Breakout delivered a **+38.9% total return** on BTC-USD, compounding at **6.8% annually**. 
+Over five years (2021-06-21 → 2026-06-19), the Donchian Channel Breakout delivered a **+50.2% total return** on BTC-USD, compounding at **8.5% annually**. 
 
-At **0.28**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.32**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **54.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 54% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -111,24 +111,24 @@ The catch? A **54.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.28 | ❌ Weak |
+| Sharpe Ratio | 0.32 | ❌ Weak |
 | Max Drawdown | 54.3% | ⚠️ Significant |
-| Win Rate | 27.4% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.14 | ⚠️ Marginal |
-| Trades/Year | ~95 total | Active |
+| Win Rate | 28.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.17 | ⚠️ Marginal |
+| Trades/Year | ~93 total | Active |
 
-The **profit factor of 1.14** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 27.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.17** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 28.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on BTC?
 
-The donchian channel breakout struggled to generate meaningful edge on BTC over this 5-year period. With a **0.28 Sharpe ratio** and **1.14 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout shows moderate edge on BTC — **0.32 Sharpe, 1.17 profit factor** over 93 trades. It's not a home run, but it's also not random.
 
-This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
+The 28.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
-Our take: skip it on BTC unless you're combining it with other confirmations or using it on different timeframes.
+Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on BTC-USD](/backtests/donchian-channel-breakout-btc-usd-trades.png)

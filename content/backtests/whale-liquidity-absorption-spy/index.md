@@ -1,22 +1,22 @@
 ---
 {
   "title": "Volume \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-18",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+0.5%"
+      "value": "-0.7%"
     },
     {
       "label": "CAGR",
-      "value": "0.1%"
+      "value": "-0.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-1.23"
+      "value": "-1.16"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "50.0%"
+      "value": "45.5%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.08"
+      "value": "0.90"
     },
     {
       "label": "Total Trades",
-      "value": "12"
+      "value": "11"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+12.8%",
-      "trades": "3",
-      "win_rate_pct": "50.0%"
+      "return_pct": "+13.6%",
+      "trades": "2",
+      "win_rate_pct": "45.5%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "1",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "45.5%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "1",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "45.5%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "3",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "45.5%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "4",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "45.5%"
     },
     {
       "year": "2026",
-      "return_pct": "+8.8%",
+      "return_pct": "+9.9%",
       "trades": "0",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "45.5%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -92,8 +92,8 @@
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "vwap_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-bands/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On SPY, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-14 → 2026-06-12), the Whale Liquidity / Absorption Profile delivered a **+0.5% total return** on SPY, compounding at **0.1% annually**. 
+Over five years (2021-06-21 → 2026-06-18), the Whale Liquidity / Absorption Profile delivered a **-0.7% total return** on SPY, compounding at **-0.1% annually**. 
 
-At **-1.23**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-1.16**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **4.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 4% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **4.5% max drawdown**. At some point during this 5-year run, you'd 
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -1.23 | ❌ Weak |
+| Sharpe Ratio | -1.16 | ❌ Weak |
 | Max Drawdown | 4.5% | ✅ Low |
-| Win Rate | 50.0% | ⚠️ Below average |
-| Profit Factor | 1.08 | ⚠️ Marginal |
-| Trades/Year | ~12 total | Selective — not overtrading |
+| Win Rate | 45.5% | ⚠️ Below average |
+| Profit Factor | 0.90 | ❌ Unprofitable |
+| Trades/Year | ~11 total | Selective — not overtrading |
 
-The **profit factor of 1.08** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 50.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.90** tells the real story: when the Volume fires, the winning signals don't outweigh the losers. Combined with a 45.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Whale Liquidity / Absorption Profile Work on SPY?
 
-The whale liquidity / absorption profile struggled to generate meaningful edge on SPY over this 5-year period. With a **-1.23 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The whale liquidity / absorption profile struggled to generate meaningful edge on SPY over this 5-year period. With a **-1.16 Sharpe ratio** and **0.90 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Volume is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on SPY](/backtests/whale-liquidity-absorption-spy-trades.png)

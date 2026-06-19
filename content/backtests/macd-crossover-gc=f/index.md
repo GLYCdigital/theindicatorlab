@@ -1,30 +1,30 @@
 ---
 {
   "title": "MACD \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-19",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+25.4%"
+      "value": "+22.3%"
     },
     {
       "label": "CAGR",
-      "value": "4.6%"
+      "value": "4.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.25"
+      "value": "0.20"
     },
     {
       "label": "Max Drawdown",
-      "value": "15.3%"
+      "value": "17.4%"
     },
     {
       "label": "Win Rate",
-      "value": "46.2%"
+      "value": "45.3%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "52"
+      "value": "53"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-2.0%",
+      "return_pct": "+2.6%",
       "trades": "4",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "45.3%"
     },
     {
       "year": "2022",
       "return_pct": "+1.1%",
       "trades": "11",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "45.3%"
     },
     {
       "year": "2023",
       "return_pct": "+12.1%",
       "trades": "11",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "45.3%"
     },
     {
       "year": "2024",
       "return_pct": "+27.4%",
       "trades": "11",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "45.3%"
     },
     {
       "year": "2025",
       "return_pct": "+62.7%",
       "trades": "11",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "45.3%"
     },
     {
       "year": "2026",
-      "return_pct": "-1.6%",
-      "trades": "4",
-      "win_rate_pct": "46.2%"
+      "return_pct": "-3.3%",
+      "trades": "5",
+      "win_rate_pct": "45.3%"
     }
   ],
   "cta_headline": "Trade Commodities with TradingView Pro",
@@ -88,12 +88,12 @@
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
-      "url": "/reviews/kama/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     },
     {
-      "title": "monte carlo ct ss review: settings, strategy &amp; how to use it",
-      "url": "/reviews/monte-carlo-ct-ss/"
+      "title": "kaufman adaptive moving average (kama) review: settings, strategy &amp; how to use it",
+      "url": "/reviews/kama/"
     }
   ]
 }
@@ -109,27 +109,27 @@ On GC=F, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-06-14 → 2026-06-12), the MACD Crossover delivered a **+25.4% total return** on GC=F, compounding at **4.6% annually**. 
+Over five years (2021-06-21 → 2026-06-19), the MACD Crossover delivered a **+22.3% total return** on GC=F, compounding at **4.1% annually**. 
 
-At **0.25**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.20**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **15.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 15% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **17.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 17% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.25 | ❌ Weak |
-| Max Drawdown | 15.3% | ⚠️ Moderate |
-| Win Rate | 46.2% | ⚠️ Below average |
+| Sharpe Ratio | 0.20 | ❌ Weak |
+| Max Drawdown | 17.4% | ⚠️ Moderate |
+| Win Rate | 45.3% | ⚠️ Below average |
 | Profit Factor | 1.49 | ⚠️ Marginal |
-| Trades/Year | ~52 total | Active |
+| Trades/Year | ~53 total | Active |
 
-The **profit factor of 1.49** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 46.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.49** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 45.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on GC=F?
 
-The macd crossover struggled to generate meaningful edge on GC=F over this 5-year period. With a **0.25 Sharpe ratio** and **1.49 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on GC=F over this 5-year period. With a **0.20 Sharpe ratio** and **1.49 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on GC=F with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on GC=F unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on GC=F](/backtests/macd-crossover-gc=f-trades.png)

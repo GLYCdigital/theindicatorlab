@@ -1,14 +1,14 @@
 ---
 {
   "title": "Sweep \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-19",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-3.9%"
+      "value": "-4.0%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "21.7%"
+      "value": "21.1%"
     },
     {
       "label": "Profit Factor",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+45.1%",
-      "trades": "18",
-      "win_rate_pct": "21.7%"
+      "return_pct": "+95.0%",
+      "trades": "17",
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "28",
-      "win_rate_pct": "21.7%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "38",
-      "win_rate_pct": "21.7%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "29",
-      "win_rate_pct": "21.7%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "40",
-      "win_rate_pct": "21.7%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2026",
-      "return_pct": "-44.4%",
-      "trades": "13",
-      "win_rate_pct": "21.7%"
+      "return_pct": "-43.2%",
+      "trades": "14",
+      "win_rate_pct": "21.1%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/liquidity-sweep-pro-eth-usd-equity.png",
   "crosslinks": [
     {
+      "title": "liquidity_sweep_retracements review: settings, strategy &amp; how to use it",
+      "url": "/reviews/liquidity-sweep-retracements/"
+    },
+    {
       "title": "nadaraya_watson_regression_liquidity_sweeps_algoalpha review: settings, strategy &amp; how to use it",
       "url": "/reviews/nadaraya-watson-regression-liquidity-sweeps-algoalpha/"
     },
     {
       "title": "liquidity_sweep_pro review: settings, strategy &amp; how to use it",
       "url": "/reviews/liquidity-sweep-pro/"
-    },
-    {
-      "title": "liquidity_sweep_profiler_flux_charts review: settings, strategy &amp; how to use it",
-      "url": "/reviews/liquidity-sweep-profiler-flux-charts/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On ETH, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-06-14 → 2026-06-12), the Liquidity Sweep Pro delivered a **-3.9% total return** on ETH-USD, compounding at **-0.8% annually**. 
+Over five years (2021-06-21 → 2026-06-19), the Liquidity Sweep Pro delivered a **-4.0% total return** on ETH-USD, compounding at **-0.8% annually**. 
 
 At **0.06**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **52.7% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.06 | ❌ Weak |
 | Max Drawdown | 52.7% | ⚠️ Significant |
-| Win Rate | 21.7% | ❌ Low — relies on outsized wins |
+| Win Rate | 21.1% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.99 | ❌ Unprofitable |
 | Trades/Year | ~166 total | Active |
 
-The **profit factor of 0.99** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 21.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.99** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 21.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Liquidity Sweep Pro Work on ETH?
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on ETH-USD](/backtests/liquidity-sweep-pro-eth-usd-trades.png)

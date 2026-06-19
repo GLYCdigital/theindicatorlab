@@ -1,10 +1,10 @@
 ---
 {
   "title": "Volume \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-18",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+15.9%",
+      "return_pct": "+15.8%",
       "trades": "2",
       "win_rate_pct": "40.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+18.0%",
+      "return_pct": "+20.9%",
       "trades": "2",
       "win_rate_pct": "40.0%"
     }
@@ -92,8 +92,8 @@
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "vwap_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-bands/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On QQQ, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-14 → 2026-06-12), the Whale Liquidity / Absorption Profile delivered a **-1.6% total return** on QQQ, compounding at **-0.3% annually**. 
+Over five years (2021-06-21 → 2026-06-18), the Whale Liquidity / Absorption Profile delivered a **-1.6% total return** on QQQ, compounding at **-0.3% annually**. 
 
 At **-2.17**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on QQQ](/backtests/whale-liquidity-absorption-qqq-trades.png)

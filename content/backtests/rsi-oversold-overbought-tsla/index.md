@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-18",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-39.7%"
+      "value": "-40.1%"
     },
     {
       "label": "CAGR",
-      "value": "-9.6%"
+      "value": "-9.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+71.1%",
+      "return_pct": "+70.2%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.0%",
+      "return_pct": "-8.6%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
-      "url": "/reviews/relative-strength-index-rsi/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     },
     {
-      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
-      "url": "/reviews/supertrend-atr-trailing-stop/"
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/relative-strength-index-rsi/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On TSLA, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-14 → 2026-06-12), the RSI Oversold/Overbought delivered a **-39.7% total return** on TSLA, compounding at **-9.6% annually**. 
+Over five years (2021-06-21 → 2026-06-18), the RSI Oversold/Overbought delivered a **-40.1% total return** on TSLA, compounding at **-9.8% annually**. 
 
 At **-0.09**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on TSLA unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on TSLA](/backtests/rsi-oversold-overbought-tsla-trades.png)

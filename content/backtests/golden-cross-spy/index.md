@@ -1,22 +1,22 @@
 ---
 {
   "title": "SMA \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-18",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+59.4%"
+      "value": "+60.9%"
     },
     {
       "label": "CAGR",
-      "value": "9.8%"
+      "value": "10.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.68"
+      "value": "0.70"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+12.8%",
+      "return_pct": "+13.6%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+8.8%",
+      "return_pct": "+9.9%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     }
@@ -92,8 +92,8 @@
       "url": "/reviews/money-flow-index/"
     },
     {
-      "title": "mcginley dynamic review: settings, strategy &amp; how to use it",
-      "url": "/reviews/mcginley-dynamic/"
+      "title": "smart_money_stop_hunt_detector_algo_aakash review: settings, strategy &amp; how to use it",
+      "url": "/reviews/smart-money-stop-hunt-detector-algo-aakash/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On SPY, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-14 → 2026-06-12), the Golden Cross delivered a **+59.4% total return** on SPY, compounding at **9.8% annually**. 
+Over five years (2021-06-21 → 2026-06-18), the Golden Cross delivered a **+60.9% total return** on SPY, compounding at **10.0% annually**. 
 
-At **0.68**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.70**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **18.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **18.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.68 | ⚠️ Moderate |
+| Sharpe Ratio | 0.70 | ⚠️ Moderate |
 | Max Drawdown | 18.1% | ⚠️ Moderate |
 | Win Rate | 50.0% | ⚠️ Below average |
 | Profit Factor | 999.00 | ✅ Excellent |
@@ -129,7 +129,7 @@ The **profit factor of 999.00** tells the real story: when the SMA fires, the wi
 
 ## Does the Golden Cross Work on SPY?
 
-The golden cross shows moderate edge on SPY — **0.68 Sharpe, 999.00 profit factor** over 2 trades. It's not a home run, but it's also not random.
+The golden cross shows moderate edge on SPY — **0.70 Sharpe, 999.00 profit factor** over 2 trades. It's not a home run, but it's also not random.
 
 The 50.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on SPY. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on SPY](/backtests/golden-cross-spy-trades.png)

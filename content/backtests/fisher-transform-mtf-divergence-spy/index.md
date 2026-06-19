@@ -1,10 +1,10 @@
 ---
 {
   "title": "Fisher \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-18",
   "metrics": [
     {
       "label": "Total Return",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "244"
+      "value": "242"
     },
     {
       "label": "Avg Trade",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+12.8%",
-      "trades": "26",
+      "return_pct": "+13.6%",
+      "trades": "24",
       "win_rate_pct": "43.4%"
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+8.8%",
+      "return_pct": "+9.9%",
       "trades": "24",
       "win_rate_pct": "43.4%"
     }
@@ -109,7 +109,7 @@ On SPY, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-14 → 2026-06-12), the Fisher Transform MTF Divergence delivered a **-27.4% total return** on SPY, compounding at **-6.2% annually**. 
+Over five years (2021-06-21 → 2026-06-18), the Fisher Transform MTF Divergence delivered a **-27.4% total return** on SPY, compounding at **-6.2% annually**. 
 
 At **-0.65**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -123,7 +123,7 @@ The catch? A **35.6% max drawdown**. At some point during this 5-year run, you'd
 | Max Drawdown | 35.6% | ⚠️ Significant |
 | Win Rate | 43.4% | ⚠️ Below average |
 | Profit Factor | 0.78 | ❌ Unprofitable |
-| Trades/Year | ~244 total | Active |
+| Trades/Year | ~242 total | Active |
 
 The **profit factor of 0.78** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 43.4% win rate, this requires careful position sizing to be profitable.
 
@@ -146,6 +146,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on SPY](/backtests/fisher-transform-mtf-divergence-spy-trades.png)

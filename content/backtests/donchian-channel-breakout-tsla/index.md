@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-06-13",
+  "date": "2026-06-20",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-14 \u2192 2026-06-12",
+  "period": "2021-06-21 \u2192 2026-06-18",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+71.1%",
+      "return_pct": "+70.2%",
       "trades": "9",
       "win_rate_pct": "32.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.0%",
+      "return_pct": "-8.6%",
       "trades": "6",
       "win_rate_pct": "32.9%"
     }
@@ -101,7 +101,7 @@ On TSLA, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-14 → 2026-06-12), the Donchian Channel Breakout delivered a **+85.2% total return** on TSLA, compounding at **13.1% annually**. 
+Over five years (2021-06-21 → 2026-06-18), the Donchian Channel Breakout delivered a **+85.2% total return** on TSLA, compounding at **13.1% annually**. 
 
 At **0.40**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -129,6 +129,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on TSLA.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on TSLA](/backtests/donchian-channel-breakout-tsla-trades.png)
