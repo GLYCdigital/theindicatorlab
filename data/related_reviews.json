@@ -181,6 +181,32 @@
       "score": 5.0
     }
   ],
+  "adaptive-ai-indicator": [
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "ehlers-adaptive-stochastic",
+      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "ehlers-mesa-adaptive-ma",
+      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    }
+  ],
   "adaptive-moving-average": [
     {
       "slug": "fractal-adaptive-ma",
@@ -209,6 +235,12 @@
   ],
   "adaptive-trend-lines": [
     {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -223,12 +255,6 @@
     {
       "slug": "ehlers-mesa-adaptive-ma",
       "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "nlms-adaptive-trend-filter-backquant",
-      "title": "Nlms_Adaptive_Trend_Filter_Backquant Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -545,6 +571,32 @@
       "score": 0.8
     }
   ],
+  "alt-bat-pattern": [
+    {
+      "slug": "butterfly-pattern",
+      "title": "Butterfly_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "gartley-pattern",
+      "title": "Gartley_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "harmonic-patterns",
+      "title": "Harmonic_Patterns Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
+    }
+  ],
   "anchored-vwap": [
     {
       "slug": "post-absorption-vwap-reversal-engine-6",
@@ -703,6 +755,12 @@
   ],
   "artemis-adaptive-rsi": [
     {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -717,12 +775,6 @@
     {
       "slug": "ehlers-adaptive-stochastic",
       "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "ehlers-mesa-adaptive-ma",
-      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -761,6 +813,12 @@
       "score": 4.8
     },
     {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "atr-channels",
       "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -771,11 +829,31 @@
       "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 4.8
+    }
+  ],
+  "atr-based-position-sizing": [
+    {
+      "slug": "atr",
+      "title": "Atr Review: Settings, Strategy &amp; How to Use It",
+      "rating": 5,
+      "score": 5.2
     },
     {
-      "slug": "atr-trailing-stop",
-      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "average-true-range",
+      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.2
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.8
     }
   ],
@@ -793,14 +871,14 @@
       "score": 4.8
     },
     {
-      "slug": "atr-fibonacci-expansion-zones",
-      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.8
     },
     {
-      "slug": "atr-trailing-stop",
-      "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "atr-fibonacci-expansion-zones",
+      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 4.8
     }
@@ -851,8 +929,8 @@
       "score": 4.8
     },
     {
-      "slug": "atr-channels",
-      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -865,6 +943,12 @@
       "score": 9.0
     },
     {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.2
+    },
+    {
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -873,12 +957,6 @@
     {
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "true-strength-index",
-      "title": "True_Strength_Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1021,6 +1099,12 @@
       "score": 9.0
     },
     {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.2
+    },
+    {
       "slug": "average-true-range-simple",
       "title": "Average_True_Range_Simple Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1029,12 +1113,6 @@
     {
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "true-strength-index",
-      "title": "True_Strength_Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1353,6 +1431,12 @@
   ],
   "butterfly-pattern": [
     {
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "gartley-pattern",
       "title": "Gartley_Pattern Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -1367,12 +1451,6 @@
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -3823,6 +3901,12 @@
   ],
   "gartley-pattern": [
     {
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "butterfly-pattern",
       "title": "Butterfly_Pattern Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3837,12 +3921,6 @@
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4057,6 +4135,12 @@
   ],
   "harmonic-patterns": [
     {
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "butterfly-pattern",
       "title": "Butterfly_Pattern Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4071,12 +4155,6 @@
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.8
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.8
     }
@@ -4728,7 +4806,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.4
+      "score": 7.3
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -4777,8 +4855,8 @@
       "score": 4.8
     },
     {
-      "slug": "atr-channels",
-      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -6527,6 +6605,12 @@
   ],
   "nlms-adaptive-trend-filter-backquant": [
     {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6541,12 +6625,6 @@
     {
       "slug": "ehlers-adaptive-stochastic",
       "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "ehlers-mesa-adaptive-ma",
-      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -7758,19 +7836,19 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.4
+      "score": 2.3
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.4
+      "score": 2.3
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.4
+      "score": 2.3
     }
   ],
   "rainbow-oscillator": [
@@ -8067,6 +8145,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.8
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8075,12 +8159,6 @@
     {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.8
-    },
-    {
-      "slug": "ehlers-adaptive-stochastic",
-      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.8
     }
@@ -10248,13 +10326,7 @@
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.5
-    },
-    {
-      "slug": "positive-volume-index",
-      "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.3
+      "score": 1.4
     },
     {
       "slug": "volume-flow",
@@ -10267,6 +10339,12 @@
       "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.3
+    },
+    {
+      "slug": "negative-volume-index",
+      "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.2
     }
   ],
   "volume-weighted-ma": [
@@ -10341,8 +10419,8 @@
       "score": 2.5
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 2.4
     }
