@@ -183,6 +183,12 @@
   ],
   "adaptive-ai-indicator": [
     {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -199,10 +205,30 @@
       "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
+    }
+  ],
+  "adaptive-envelopes": [
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
     },
     {
-      "slug": "ehlers-mesa-adaptive-ma",
-      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "ehlers-adaptive-stochastic",
+      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -241,6 +267,12 @@
       "score": 5.1
     },
     {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.1
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -249,12 +281,6 @@
     {
       "slug": "ehlers-adaptive-stochastic",
       "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "ehlers-mesa-adaptive-ma",
-      "title": "Ehlers_Mesa_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -338,6 +364,32 @@
     }
   ],
   "adx-smoothed": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
+  "adx-with-di-di": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -813,6 +865,12 @@
       "score": 4.7
     },
     {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -821,12 +879,6 @@
     {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "ehlers-adaptive-stochastic",
-      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -962,6 +1014,32 @@
     }
   ],
   "atr-percentile": [
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    }
+  ],
+  "atr-raw": [
     {
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
@@ -2266,25 +2344,25 @@
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "directional-flow-signals",
       "title": "Directional Flow Signals Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "ease-of-movement",
       "title": "Ease Of Movement Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     }
   ],
   "cvd-divergence-alerts-pro": [
@@ -2838,25 +2916,25 @@
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "currency-strength-meter",
       "title": "Currency_Strength_Meter Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "directional-flow-signals",
       "title": "Directional Flow Signals Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     }
   ],
   "efficiency-ratio-bands": [
@@ -5040,7 +5118,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.3
+      "score": 7.2
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -6845,6 +6923,12 @@
       "score": 4.7
     },
     {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6853,12 +6937,6 @@
     {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "ehlers-adaptive-stochastic",
-      "title": "Ehlers_Adaptive_Stochastic Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -8385,14 +8463,14 @@
       "score": 4.7
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -10000,13 +10078,13 @@
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     }
   ],
   "ttm-squeeze-pro": [
