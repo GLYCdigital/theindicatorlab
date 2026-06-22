@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View A_L_P_H_A_X_Surge on TradingView →](https://www.tradingview.com/scripts/?search=a%20l%20p%20h%20a%20x%20surge)
+[View A_L_P_H_A_X_Surge on TradingView →](https://www.tradingview.com/?aff_id=166324)

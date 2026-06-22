@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ohlc_Olhc_Arkn on TradingView →](https://www.tradingview.com/scripts/?search=ohlc%20olhc%20arkn)
+[View Ohlc_Olhc_Arkn on TradingView →](https://www.tradingview.com/?aff_id=166324)

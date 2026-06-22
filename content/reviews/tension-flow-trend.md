@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Tension Flow Trend on TradingView →](https://www.tradingview.com/scripts/?search=tension%20flow%20trend)
+[View Tension Flow Trend on TradingView →](https://www.tradingview.com/?aff_id=166324)

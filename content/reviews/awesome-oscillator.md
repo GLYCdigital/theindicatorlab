@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Awesome Oscillator on TradingView →](https://www.tradingview.com/scripts/?search=awesome%20oscillator)
+[View Awesome Oscillator on TradingView →](https://www.tradingview.com/?aff_id=166324)

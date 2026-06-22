@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Gk_Xauusd_Diamond_Sniper on TradingView →](https://www.tradingview.com/scripts/?search=gk%20xauusd%20diamond%20sniper)
+[View Gk_Xauusd_Diamond_Sniper on TradingView →](https://www.tradingview.com/?aff_id=166324)

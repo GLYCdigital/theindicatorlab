@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ehlers_Mesa_Sine_Wave on TradingView →](https://www.tradingview.com/scripts/?search=ehlers%20mesa%20sine%20wave)
+[View Ehlers_Mesa_Sine_Wave on TradingView →](https://www.tradingview.com/?aff_id=166324)

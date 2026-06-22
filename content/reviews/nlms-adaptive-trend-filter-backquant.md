@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Nlms_Adaptive_Trend_Filter_Backquant on TradingView →](https://www.tradingview.com/scripts/?search=nlms%20adaptive%20trend%20filter%20backquant)
+[View Nlms_Adaptive_Trend_Filter_Backquant on TradingView →](https://www.tradingview.com/?aff_id=166324)

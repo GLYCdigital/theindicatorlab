@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Elder Ray Index on TradingView →](https://www.tradingview.com/scripts/?search=elder%20ray%20index)
+[View Elder Ray Index on TradingView →](https://www.tradingview.com/?aff_id=166324)

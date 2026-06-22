@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Keltner_Channel_Width on TradingView →](https://www.tradingview.com/scripts/?search=keltner%20channel%20width)
+[View Keltner_Channel_Width on TradingView →](https://www.tradingview.com/?aff_id=166324)

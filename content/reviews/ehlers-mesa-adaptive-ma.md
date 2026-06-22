@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ehlers_Mesa_Adaptive_Ma on TradingView →](https://www.tradingview.com/scripts/?search=ehlers%20mesa%20adaptive%20ma)
+[View Ehlers_Mesa_Adaptive_Ma on TradingView →](https://www.tradingview.com/?aff_id=166324)

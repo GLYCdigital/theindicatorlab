@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Outstanding. One of the best in its category.
 
-[View Ttm Squeeze Pro on TradingView →](https://www.tradingview.com/scripts/?search=ttm%20squeeze%20pro)
+[View Ttm Squeeze Pro on TradingView →](https://www.tradingview.com/?aff_id=166324)

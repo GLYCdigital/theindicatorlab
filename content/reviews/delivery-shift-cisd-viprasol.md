@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Delivery_Shift_Cisd_Viprasol on TradingView →](https://www.tradingview.com/scripts/?search=delivery%20shift%20cisd%20viprasol)
+[View Delivery_Shift_Cisd_Viprasol on TradingView →](https://www.tradingview.com/?aff_id=166324)

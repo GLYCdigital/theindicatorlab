@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Orb_Continuation_0_Signals_Levels on TradingView →](https://www.tradingview.com/scripts/?search=orb%20continuation%200%20signals%20levels)
+[View Orb_Continuation_0_Signals_Levels on TradingView →](https://www.tradingview.com/?aff_id=166324)

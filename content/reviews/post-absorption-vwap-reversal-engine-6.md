@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Post Absorption Vwap Reversal Engine 6 on TradingView →](https://www.tradingview.com/scripts/?search=post%20absorption%20vwap%20reversal%20engine%206)
+[View Post Absorption Vwap Reversal Engine 6 on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Htf_Candle_Volume_Profile_Chartprime on TradingView →](https://www.tradingview.com/scripts/?search=htf%20candle%20volume%20profile%20chartprime)
+[View Htf_Candle_Volume_Profile_Chartprime on TradingView →](https://www.tradingview.com/?aff_id=166324)

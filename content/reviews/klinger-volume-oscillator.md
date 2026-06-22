@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Klinger_Volume_Oscillator on TradingView →](https://www.tradingview.com/scripts/?search=klinger%20volume%20oscillator)
+[View Klinger_Volume_Oscillator on TradingView →](https://www.tradingview.com/?aff_id=166324)

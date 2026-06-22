@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Dynamic_Pivot_Fibo_Analytics on TradingView →](https://www.tradingview.com/scripts/?search=dynamic%20pivot%20fibo%20analytics)
+[View Dynamic_Pivot_Fibo_Analytics on TradingView →](https://www.tradingview.com/?aff_id=166324)

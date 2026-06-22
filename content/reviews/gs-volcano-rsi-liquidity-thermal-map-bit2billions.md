@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions on TradingView →](https://www.tradingview.com/scripts/?search=gs%20volcano%20rsi%20liquidity%20thermal%20map%20bit2billions)
+[View Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions on TradingView →](https://www.tradingview.com/?aff_id=166324)

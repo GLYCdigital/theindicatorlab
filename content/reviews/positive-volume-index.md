@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Positive Volume Index on TradingView →](https://www.tradingview.com/scripts/?search=positive%20volume%20index)
+[View Positive Volume Index on TradingView →](https://www.tradingview.com/?aff_id=166324)

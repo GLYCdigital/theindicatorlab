@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Liquidity_Grab_Prl_Engine_Erdensedat on TradingView →](https://www.tradingview.com/scripts/?search=liquidity%20grab%20prl%20engine%20erdensedat)
+[View Liquidity_Grab_Prl_Engine_Erdensedat on TradingView →](https://www.tradingview.com/?aff_id=166324)

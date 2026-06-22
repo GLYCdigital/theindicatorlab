@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Wyckoff_Pattern_Indicator_Almostperfect on TradingView →](https://www.tradingview.com/scripts/?search=wyckoff%20pattern%20indicator%20almostperfect)
+[View Wyckoff_Pattern_Indicator_Almostperfect on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -124,3 +124,8 @@ It offers more visual profile detail than basic delta indicators but requires mo
 CVD Profiles TradingIQ is a standout trend tool for traders who understand volume delta, offering clear visual cues of market pressure. While it has a learning curve, its ability to detect divergences early makes it a valuable addition to any volume-based strategy.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

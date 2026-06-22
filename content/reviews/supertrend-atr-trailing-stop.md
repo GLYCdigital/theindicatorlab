@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Outstanding. One of the best in its category.
 
-[View Supertrend Atr Trailing Stop on TradingView →](https://www.tradingview.com/scripts/?search=supertrend%20atr%20trailing%20stop)
+[View Supertrend Atr Trailing Stop on TradingView →](https://www.tradingview.com/?aff_id=166324)

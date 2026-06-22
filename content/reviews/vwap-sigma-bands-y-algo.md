@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Vwap_Sigma_Bands_Y_Algo on TradingView →](https://www.tradingview.com/scripts/?search=vwap%20sigma%20bands%20y%20algo)
+[View Vwap_Sigma_Bands_Y_Algo on TradingView →](https://www.tradingview.com/?aff_id=166324)

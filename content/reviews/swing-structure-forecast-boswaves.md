@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Swing_Structure_Forecast_Boswaves on TradingView →](https://www.tradingview.com/scripts/?search=swing%20structure%20forecast%20boswaves)
+[View Swing_Structure_Forecast_Boswaves on TradingView →](https://www.tradingview.com/?aff_id=166324)

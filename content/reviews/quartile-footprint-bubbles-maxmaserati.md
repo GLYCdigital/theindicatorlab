@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Quartile_Footprint_Bubbles_Maxmaserati on TradingView →](https://www.tradingview.com/scripts/?search=quartile%20footprint%20bubbles%20maxmaserati)
+[View Quartile_Footprint_Bubbles_Maxmaserati on TradingView →](https://www.tradingview.com/?aff_id=166324)

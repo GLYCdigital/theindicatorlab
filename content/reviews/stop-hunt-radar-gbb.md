@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Stop_Hunt_Radar_Gbb on TradingView →](https://www.tradingview.com/scripts/?search=stop%20hunt%20radar%20gbb)
+[View Stop_Hunt_Radar_Gbb on TradingView →](https://www.tradingview.com/?aff_id=166324)

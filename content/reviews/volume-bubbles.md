@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Volume Bubbles is a solid, no-nonsense tool for traders who want to incorporate volume confirmation into their trend analysis. It's not a standalone system, but when used with a trend filter, it can significantly improve entry timing and reduce false signals. Worth adding to your toolkit if you value simplicity and visual clarity.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

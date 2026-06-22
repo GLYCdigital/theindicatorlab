@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Chart_Patterns_Screener_Trendoscope on TradingView →](https://www.tradingview.com/scripts/?search=chart%20patterns%20screener%20trendoscope)
+[View Chart_Patterns_Screener_Trendoscope on TradingView →](https://www.tradingview.com/?aff_id=166324)

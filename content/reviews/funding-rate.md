@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Funding_Rate on TradingView →](https://www.tradingview.com/scripts/?search=funding%20rate)
+[View Funding_Rate on TradingView →](https://www.tradingview.com/?aff_id=166324)

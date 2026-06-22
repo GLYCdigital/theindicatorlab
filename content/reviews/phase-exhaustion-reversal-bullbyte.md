@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Phase_Exhaustion_Reversal_Bullbyte on TradingView →](https://www.tradingview.com/scripts/?search=phase%20exhaustion%20reversal%20bullbyte)
+[View Phase_Exhaustion_Reversal_Bullbyte on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Kitty s Law theUltimator5 is a solid trend indicator for traders who value confluence and clarity, but it's not a magic bullet. It shines in strong trends but requires additional tools or manual judgment in ranging markets. If you're willing to combine it with volume or RSI, it can become a powerful part of your trading toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

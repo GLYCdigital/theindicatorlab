@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Market Structure Volume Profiles Kioseff Trading is a solid indicator for traders who want to blend volume with market structure. It excels in trending markets but may not suit everyone due to its learning curve. If you already use volume profile concepts, this tool can save time and improve consistency.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

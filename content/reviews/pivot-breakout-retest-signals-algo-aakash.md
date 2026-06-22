@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Pivot_Breakout_Retest_Signals_Algo_Aakash on TradingView →](https://www.tradingview.com/scripts/?search=pivot%20breakout%20retest%20signals%20algo%20aakash)
+[View Pivot_Breakout_Retest_Signals_Algo_Aakash on TradingView →](https://www.tradingview.com/?aff_id=166324)

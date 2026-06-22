@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Pine3D is a niche but powerful tool for traders who want to explore trend analysis from a new angle. Its 3D rendering is impressive and functional, but the learning curve and system requirements may deter casual users. For dedicated trend followers and visual traders, it's a worthy addition to the TradingView toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

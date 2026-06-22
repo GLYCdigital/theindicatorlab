@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash on TradingView →](https://www.tradingview.com/scripts/?search=equal%20highs%20lows%20liquidity%20pool%20engine%20algo%20aakash)
+[View Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash on TradingView →](https://www.tradingview.com/?aff_id=166324)

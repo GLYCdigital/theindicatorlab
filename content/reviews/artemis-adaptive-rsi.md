@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Artemis_Adaptive_Rsi on TradingView →](https://www.tradingview.com/scripts/?search=artemis%20adaptive%20rsi)
+[View Artemis_Adaptive_Rsi on TradingView →](https://www.tradingview.com/?aff_id=166324)

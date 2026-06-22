@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Supertrend_Parameter_Sensitivity_3D on TradingView →](https://www.tradingview.com/scripts/?search=supertrend%20parameter%20sensitivity%203d)
+[View Supertrend_Parameter_Sensitivity_3D on TradingView →](https://www.tradingview.com/?aff_id=166324)

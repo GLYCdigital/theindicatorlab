@@ -109,4 +109,4 @@ Yes — works on all asset classes including crypto. Higher timeframes (4h+) ten
 
 Solid tool. Does what it claims and does it well.
 
-[View Psar With EMA on TradingView →](https://www.tradingview.com/scripts/?search=psar%20with%20ema)
+[View Psar With EMA on TradingView →](https://www.tradingview.com/?aff_id=166324)

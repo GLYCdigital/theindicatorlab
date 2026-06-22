@@ -109,4 +109,4 @@ Yes — works on all asset classes including crypto. Higher timeframes (4h+) ten
 
 Solid tool. Does what it claims and does it well.
 
-[View Alma Moving Average on TradingView →](https://www.tradingview.com/scripts/?search=alma%20moving%20average)
+[View Alma Moving Average on TradingView →](https://www.tradingview.com/?aff_id=166324)

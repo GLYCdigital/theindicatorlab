@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Machine_Learning_Random_Forest_Strategy on TradingView →](https://www.tradingview.com/scripts/?search=machine%20learning%20random%20forest%20strategy)
+[View Machine_Learning_Random_Forest_Strategy on TradingView →](https://www.tradingview.com/?aff_id=166324)

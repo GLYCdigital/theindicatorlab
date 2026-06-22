@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Parabolic_Sar_Multi on TradingView →](https://www.tradingview.com/scripts/?search=parabolic%20sar%20multi)
+[View Parabolic_Sar_Multi on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Machine_Learning_Rsi_Ai_Classification_Ranking on TradingView →](https://www.tradingview.com/scripts/?search=machine%20learning%20rsi%20ai%20classification%20ranking)
+[View Machine_Learning_Rsi_Ai_Classification_Ranking on TradingView →](https://www.tradingview.com/?aff_id=166324)

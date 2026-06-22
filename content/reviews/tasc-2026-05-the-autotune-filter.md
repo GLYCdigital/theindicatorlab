@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The AutoTune Filter is a clever, adaptive trend indicator that saves time by automatically adjusting to market conditions. While it\u2019s not perfect in all scenarios, its ability to reduce lag and noise makes it a valuable tool for traders who want a dynamic filter without constant tweaking. I recommend it for those who trade trending markets and are comfortable with its slight learning curve.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

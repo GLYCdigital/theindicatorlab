@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Market_Structure_Oscillator on TradingView →](https://www.tradingview.com/scripts/?search=market%20structure%20oscillator)
+[View Market_Structure_Oscillator on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Fair Value Gap Profile Rolling Poc on TradingView →](https://www.tradingview.com/scripts/?search=fair%20value%20gap%20profile%20rolling%20poc)
+[View Fair Value Gap Profile Rolling Poc on TradingView →](https://www.tradingview.com/?aff_id=166324)

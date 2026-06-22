@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View The_Tradegoal_90 on TradingView →](https://www.tradingview.com/scripts/?search=the%20tradegoal%2090)
+[View The_Tradegoal_90 on TradingView →](https://www.tradingview.com/?aff_id=166324)

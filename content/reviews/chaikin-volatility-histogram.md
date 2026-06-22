@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Chaikin_Volatility_Histogram on TradingView →](https://www.tradingview.com/scripts/?search=chaikin%20volatility%20histogram)
+[View Chaikin_Volatility_Histogram on TradingView →](https://www.tradingview.com/?aff_id=166324)

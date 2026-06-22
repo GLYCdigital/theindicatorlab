@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Exhaustion_Zones_Momentum_Episodes_Hermescore on TradingView →](https://www.tradingview.com/scripts/?search=exhaustion%20zones%20momentum%20episodes%20hermescore)
+[View Exhaustion_Zones_Momentum_Episodes_Hermescore on TradingView →](https://www.tradingview.com/?aff_id=166324)

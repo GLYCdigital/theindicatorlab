@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Outstanding. One of the best in its category.
 
-[View Atr on TradingView →](https://www.tradingview.com/scripts/?search=atr)
+[View Atr on TradingView →](https://www.tradingview.com/?aff_id=166324)

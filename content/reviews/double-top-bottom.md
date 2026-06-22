@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Double_Top_Bottom on TradingView →](https://www.tradingview.com/scripts/?search=double%20top%20bottom)
+[View Double_Top_Bottom on TradingView →](https://www.tradingview.com/?aff_id=166324)

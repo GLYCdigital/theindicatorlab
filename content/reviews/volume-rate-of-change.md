@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Volume_Rate_Of_Change on TradingView →](https://www.tradingview.com/scripts/?search=volume%20rate%20of%20change)
+[View Volume_Rate_Of_Change on TradingView →](https://www.tradingview.com/?aff_id=166324)

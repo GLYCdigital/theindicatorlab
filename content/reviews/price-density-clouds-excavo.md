@@ -126,3 +126,8 @@ It offers a unique density-based approach unlike SuperTrend or Keltner Channels,
 Price Density Clouds EXCAVO is a solid trend indicator that offers a fresh perspective on price action through density analysis. While it requires some tweaking to suit different trading styles, its visual clarity and non-repainting nature make it a valuable tool for traders who rely on support/resistance levels. It's not a standalone system but enhances any trend-following strategy.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Neuralib_A_Native_Ai_And_Deep_Learning_Runtime on TradingView →](https://www.tradingview.com/scripts/?search=neuralib%20a%20native%20ai%20and%20deep%20learning%20runtime)
+[View Neuralib_A_Native_Ai_And_Deep_Learning_Runtime on TradingView →](https://www.tradingview.com/?aff_id=166324)

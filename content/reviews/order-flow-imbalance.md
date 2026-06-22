@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Order Flow Imbalance on TradingView →](https://www.tradingview.com/scripts/?search=order%20flow%20imbalance)
+[View Order Flow Imbalance on TradingView →](https://www.tradingview.com/?aff_id=166324)

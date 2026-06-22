@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Gold_Toolkit_22_Matsukazealgo on TradingView →](https://www.tradingview.com/scripts/?search=gold%20toolkit%2022%20matsukazealgo)
+[View Gold_Toolkit_22_Matsukazealgo on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -112,4 +112,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Williams Percent R on TradingView →](https://www.tradingview.com/scripts/?search=williams%20percent%20r)
+[View Williams Percent R on TradingView →](https://www.tradingview.com/?aff_id=166324)

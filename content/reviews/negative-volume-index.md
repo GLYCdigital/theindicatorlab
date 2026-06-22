@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Negative Volume Index on TradingView →](https://www.tradingview.com/scripts/?search=negative%20volume%20index)
+[View Negative Volume Index on TradingView →](https://www.tradingview.com/?aff_id=166324)

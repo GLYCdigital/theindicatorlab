@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Bollinger_Bands_Percent_B on TradingView →](https://www.tradingview.com/scripts/?search=bollinger%20bands%20percent%20b)
+[View Bollinger_Bands_Percent_B on TradingView →](https://www.tradingview.com/?aff_id=166324)

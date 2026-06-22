@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Relative Vigor Index on TradingView →](https://www.tradingview.com/scripts/?search=relative%20vigor%20index)
+[View Relative Vigor Index on TradingView →](https://www.tradingview.com/?aff_id=166324)

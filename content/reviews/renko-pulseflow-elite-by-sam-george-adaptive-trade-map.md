@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map on TradingView →](https://www.tradingview.com/scripts/?search=renko%20pulseflow%20elite%20by%20sam%20george%20adaptive%20trade%20map)
+[View Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map on TradingView →](https://www.tradingview.com/?aff_id=166324)

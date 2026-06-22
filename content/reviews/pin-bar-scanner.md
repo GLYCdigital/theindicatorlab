@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Pin_Bar_Scanner on TradingView →](https://www.tradingview.com/scripts/?search=pin%20bar%20scanner)
+[View Pin_Bar_Scanner on TradingView →](https://www.tradingview.com/?aff_id=166324)

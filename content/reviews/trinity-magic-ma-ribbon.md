@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Trinity_Magic_Ma_Ribbon on TradingView →](https://www.tradingview.com/scripts/?search=trinity%20magic%20ma%20ribbon)
+[View Trinity_Magic_Ma_Ribbon on TradingView →](https://www.tradingview.com/?aff_id=166324)

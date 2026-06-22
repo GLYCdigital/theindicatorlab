@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Outstanding. One of the best in its category.
 
-[View Cvd Divergence Alerts Pro on TradingView →](https://www.tradingview.com/scripts/?search=cvd%20divergence%20alerts%20pro)
+[View Cvd Divergence Alerts Pro on TradingView →](https://www.tradingview.com/?aff_id=166324)

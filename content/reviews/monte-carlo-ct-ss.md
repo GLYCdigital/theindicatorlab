@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Monte Carlo CT SS is a sophisticated trend indicator that offers a unique probabilistic perspective. It excels in filtering noise but may not suit traders who prefer simplicity. Best used as a confirmation tool alongside price action or other indicators.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

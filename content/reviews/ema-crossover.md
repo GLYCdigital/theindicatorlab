@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ema Crossover on TradingView →](https://www.tradingview.com/scripts/?search=ema%20crossover)
+[View Ema Crossover on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Chaikin Money Flow on TradingView →](https://www.tradingview.com/scripts/?search=chaikin%20money%20flow)
+[View Chaikin Money Flow on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Order_Flow_Indicator on TradingView →](https://www.tradingview.com/scripts/?search=order%20flow%20indicator)
+[View Order_Flow_Indicator on TradingView →](https://www.tradingview.com/?aff_id=166324)

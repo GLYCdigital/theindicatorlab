@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Vwap Regime Filter Signal Quality Indicator Lunqfx on TradingView →](https://www.tradingview.com/scripts/?search=vwap%20regime%20filter%20signal%20quality%20indicator%20lunqfx)
+[View Vwap Regime Filter Signal Quality Indicator Lunqfx on TradingView →](https://www.tradingview.com/?aff_id=166324)

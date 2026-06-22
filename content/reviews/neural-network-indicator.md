@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Neural_Network_Indicator on TradingView →](https://www.tradingview.com/scripts/?search=neural%20network%20indicator)
+[View Neural_Network_Indicator on TradingView →](https://www.tradingview.com/?aff_id=166324)

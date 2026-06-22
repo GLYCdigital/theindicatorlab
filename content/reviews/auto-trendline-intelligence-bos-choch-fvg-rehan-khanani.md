@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Auto_Trendline_Intelligence_Bos_Choch_Fvg_Rehan_Khanani on TradingView →](https://www.tradingview.com/scripts/?search=auto%20trendline%20intelligence%20bos%20choch%20fvg%20rehan%20khanani)
+[View Auto_Trendline_Intelligence_Bos_Choch_Fvg_Rehan_Khanani on TradingView →](https://www.tradingview.com/?aff_id=166324)

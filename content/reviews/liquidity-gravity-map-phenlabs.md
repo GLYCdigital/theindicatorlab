@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Liquidity_Gravity_Map_Phenlabs on TradingView →](https://www.tradingview.com/scripts/?search=liquidity%20gravity%20map%20phenlabs)
+[View Liquidity_Gravity_Map_Phenlabs on TradingView →](https://www.tradingview.com/?aff_id=166324)

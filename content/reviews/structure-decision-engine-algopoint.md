@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Structure_Decision_Engine_Algopoint on TradingView →](https://www.tradingview.com/scripts/?search=structure%20decision%20engine%20algopoint)
+[View Structure_Decision_Engine_Algopoint on TradingView →](https://www.tradingview.com/?aff_id=166324)

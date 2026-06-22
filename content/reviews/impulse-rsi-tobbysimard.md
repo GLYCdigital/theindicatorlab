@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Impulse_Rsi_Tobbysimard on TradingView →](https://www.tradingview.com/scripts/?search=impulse%20rsi%20tobbysimard)
+[View Impulse_Rsi_Tobbysimard on TradingView →](https://www.tradingview.com/?aff_id=166324)

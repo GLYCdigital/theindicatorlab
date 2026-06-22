@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Nadaraya_Watson_Regression_Liquidity_Sweeps_Algoalpha on TradingView →](https://www.tradingview.com/scripts/?search=nadaraya%20watson%20regression%20liquidity%20sweeps%20algoalpha)
+[View Nadaraya_Watson_Regression_Liquidity_Sweeps_Algoalpha on TradingView →](https://www.tradingview.com/?aff_id=166324)

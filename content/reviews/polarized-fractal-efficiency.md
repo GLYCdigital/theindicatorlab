@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Polarized_Fractal_Efficiency on TradingView →](https://www.tradingview.com/scripts/?search=polarized%20fractal%20efficiency)
+[View Polarized_Fractal_Efficiency on TradingView →](https://www.tradingview.com/?aff_id=166324)

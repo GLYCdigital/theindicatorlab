@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Outstanding. One of the best in its category.
 
-[View Fisher Transform Mtf Divergence on TradingView →](https://www.tradingview.com/scripts/?search=fisher%20transform%20mtf%20divergence)
+[View Fisher Transform Mtf Divergence on TradingView →](https://www.tradingview.com/?aff_id=166324)

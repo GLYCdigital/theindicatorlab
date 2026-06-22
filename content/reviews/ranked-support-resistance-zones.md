@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ranked_Support_Resistance_Zones on TradingView →](https://www.tradingview.com/scripts/?search=ranked%20support%20resistance%20zones)
+[View Ranked_Support_Resistance_Zones on TradingView →](https://www.tradingview.com/?aff_id=166324)

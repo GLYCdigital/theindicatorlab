@@ -124,3 +124,8 @@ It offers more dynamic projections than static volume tools like VWAP, but may b
 The HTF Volume Spike Imbalance Projection is a solid indicator for traders who prioritize volume in their analysis. It excels in trending conditions but may struggle in ranging markets. Overall, it's a valuable addition to any volume trader's toolkit.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

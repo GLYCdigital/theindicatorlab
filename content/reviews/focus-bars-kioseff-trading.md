@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Focus Bars Kioseff Trading is a solid trend indicator for traders who value simplicity and clarity. It excels in trending conditions but requires caution in range-bound markets. When used with proper settings and complementary tools, it can be a reliable addition to any trend-trading strategy.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

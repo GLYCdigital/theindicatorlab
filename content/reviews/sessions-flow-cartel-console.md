@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Sessions_Flow_Cartel_Console on TradingView →](https://www.tradingview.com/scripts/?search=sessions%20flow%20cartel%20console)
+[View Sessions_Flow_Cartel_Console on TradingView →](https://www.tradingview.com/?aff_id=166324)

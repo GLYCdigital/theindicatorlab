@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Zigzag_Confluence_Probalist_Essentials on TradingView →](https://www.tradingview.com/scripts/?search=zigzag%20confluence%20probalist%20essentials)
+[View Zigzag_Confluence_Probalist_Essentials on TradingView →](https://www.tradingview.com/?aff_id=166324)

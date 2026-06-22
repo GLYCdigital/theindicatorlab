@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Chop_Zone on TradingView →](https://www.tradingview.com/scripts/?search=chop%20zone)
+[View Chop_Zone on TradingView →](https://www.tradingview.com/?aff_id=166324)

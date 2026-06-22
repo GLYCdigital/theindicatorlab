@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Normalized_Candles_Rsi_Jamallo on TradingView →](https://www.tradingview.com/scripts/?search=normalized%20candles%20rsi%20jamallo)
+[View Normalized_Candles_Rsi_Jamallo on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Decent but not exceptional. Has its use cases.
 
-[View Fractional Ema Kalman Filter on TradingView →](https://www.tradingview.com/scripts/?search=fractional%20ema%20kalman%20filter)
+[View Fractional Ema Kalman Filter on TradingView →](https://www.tradingview.com/?aff_id=166324)

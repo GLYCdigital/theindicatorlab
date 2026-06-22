@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Smart_Trader_Episode_06_Isotropic_Trend_Lines on TradingView →](https://www.tradingview.com/scripts/?search=smart%20trader%20episode%2006%20isotropic%20trend%20lines)
+[View Smart_Trader_Episode_06_Isotropic_Trend_Lines on TradingView →](https://www.tradingview.com/?aff_id=166324)

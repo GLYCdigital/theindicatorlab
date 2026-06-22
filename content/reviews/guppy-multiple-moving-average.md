@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Guppy Multiple Moving Average on TradingView →](https://www.tradingview.com/scripts/?search=guppy%20multiple%20moving%20average)
+[View Guppy Multiple Moving Average on TradingView →](https://www.tradingview.com/?aff_id=166324)

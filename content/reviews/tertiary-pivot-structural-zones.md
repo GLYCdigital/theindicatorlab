@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Tertiary_Pivot_Structural_Zones on TradingView →](https://www.tradingview.com/scripts/?search=tertiary%20pivot%20structural%20zones)
+[View Tertiary_Pivot_Structural_Zones on TradingView →](https://www.tradingview.com/?aff_id=166324)

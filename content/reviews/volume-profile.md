@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Outstanding. One of the best in its category.
 
-[View Volume Profile on TradingView →](https://www.tradingview.com/scripts/?search=volume%20profile)
+[View Volume Profile on TradingView →](https://www.tradingview.com/?aff_id=166324)

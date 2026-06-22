@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ajay_Strong_Smart_Money_Scalper on TradingView →](https://www.tradingview.com/scripts/?search=ajay%20strong%20smart%20money%20scalper)
+[View Ajay_Strong_Smart_Money_Scalper on TradingView →](https://www.tradingview.com/?aff_id=166324)

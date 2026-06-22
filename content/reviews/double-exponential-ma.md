@@ -112,4 +112,4 @@ Yes — works on all asset classes including crypto. Higher timeframes (4h+) ten
 
 Solid tool. Does what it claims and does it well.
 
-[View Double Exponential MA on TradingView →](https://www.tradingview.com/scripts/?search=double%20exponential%20ma)
+[View Double Exponential MA on TradingView →](https://www.tradingview.com/?aff_id=166324)

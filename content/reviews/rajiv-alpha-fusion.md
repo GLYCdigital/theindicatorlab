@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 Rajiv Alpha Fusion is a well-rounded trend indicator that effectively combines multiple signals to reduce noise and improve trade timing. It is best for traders who want a reliable, non-repainting tool for swing and position trading, but it may require some initial adjustment to match personal trading style and asset volatility.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.

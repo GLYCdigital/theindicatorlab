@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Ai_Source_Switching_Moving_Average on TradingView →](https://www.tradingview.com/scripts/?search=ai%20source%20switching%20moving%20average)
+[View Ai_Source_Switching_Moving_Average on TradingView →](https://www.tradingview.com/?aff_id=166324)

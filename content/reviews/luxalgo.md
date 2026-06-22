@@ -117,3 +117,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The LuxAlgo Indicator Suite is a powerful, all-in-one trend tool that excels at simplifying complex market analysis. While its premium price and lack of backtesting may deter some, its dynamic levels and clear signals make it a solid choice for traders prioritizing trend clarity. It's not a magic bullet, but a reliable companion when used with proper risk management.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

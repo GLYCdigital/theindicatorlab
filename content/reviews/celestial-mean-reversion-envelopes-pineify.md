@@ -109,4 +109,4 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 Solid tool. Does what it claims and does it well.
 
-[View Celestial_Mean_Reversion_Envelopes_Pineify on TradingView →](https://www.tradingview.com/scripts/?search=celestial%20mean%20reversion%20envelopes%20pineify)
+[View Celestial_Mean_Reversion_Envelopes_Pineify on TradingView →](https://www.tradingview.com/?aff_id=166324)

@@ -118,3 +118,8 @@ Start with the default, then adjust based on your trading style and timeframe.
 The VervoortCrossover Zero Lag NPR21 is a solid choice for traders seeking a responsive trend indicator without the typical lag. It excels in trending conditions but requires caution in range-bound markets. Overall, it's a worthwhile addition to any trend-focused toolkit, especially when used with proper risk management.
 
 [Get it on TradingView →](/go/tradingview)
+
+
+---
+
+**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
