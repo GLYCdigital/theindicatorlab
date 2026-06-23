@@ -357,9 +357,9 @@
       "score": 4.7
     },
     {
-      "slug": "fisher-transform-mtf-divergence",
-      "title": "Fisher Transform Mtf Divergence Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "demarker-divergence",
+      "title": "Demarker_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.7
     }
   ],
@@ -1160,7 +1160,7 @@
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "ais-supertrend",
@@ -1316,7 +1316,7 @@
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "ais-supertrend",
@@ -1400,7 +1400,7 @@
       "slug": "market-cipher-b",
       "title": "Market Cipher B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "bat-pattern": [
@@ -1943,9 +1943,9 @@
       "score": 4.7
     },
     {
-      "slug": "fisher-transform-mtf-divergence",
-      "title": "Fisher Transform Mtf Divergence Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "demarker-divergence",
+      "title": "Demarker_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.7
     }
   ],
@@ -2807,6 +2807,32 @@
       "score": 0.7
     }
   ],
+  "dark-cloud-cover": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
   "darvas-box": [
     {
       "slug": "1-trendline-strategy",
@@ -2989,7 +3015,59 @@
       "score": 5.0
     }
   ],
+  "demarker-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "cci-divergence",
+      "title": "Cci_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "cvd-divergence-alerts-pro",
+      "title": "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It",
+      "rating": 5,
+      "score": 4.7
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.7
+    }
+  ],
   "demarker-indicator": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
+  "demarker-mtf": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -5404,7 +5482,7 @@
       "slug": "moving-average-ribbon",
       "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.5
+      "score": 5.4
     }
   ],
   "jurik-volatility-bands": [
@@ -5508,7 +5586,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 7.0
+      "score": 6.9
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -5565,18 +5643,6 @@
   ],
   "keltner-channels": [
     {
-      "slug": "atr",
-      "title": "Atr Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
-      "score": 5.0
-    },
-    {
-      "slug": "average-true-range",
-      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "bollinger-bands",
       "title": "Bollinger Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
@@ -5586,6 +5652,18 @@
       "slug": "donchian-channels",
       "title": "Donchian Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "luxalgo",
+      "title": "LuxAlgo Indicator Suite Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "moving-average-exp-envelope",
+      "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -6894,7 +6972,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.5
+      "score": 5.4
     },
     {
       "slug": "vidya",
