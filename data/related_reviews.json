@@ -862,25 +862,25 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     }
   ],
   "artemis-adaptive-rsi": [
@@ -1902,13 +1902,13 @@
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "volatility-stop",
       "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "chaikin-volatility-histogram",
@@ -2200,13 +2200,13 @@
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "volatility-stop",
       "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.3
+      "score": 5.2
     }
   ],
   "chande-momentum": [
@@ -2599,6 +2599,32 @@
       "score": 0.7
     }
   ],
+  "cup-and-handle": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
   "currency-strength-meter": [
     {
       "slug": "balance-of-power",
@@ -2734,25 +2760,51 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "pwvo",
       "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
+    }
+  ],
+  "cypher-pattern": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
     }
   ],
   "darvas-box": [
@@ -3013,6 +3065,32 @@
       "title": "Alma Arnaud Legoux Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "dmi-directional-movement-index": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
     }
   ],
   "doji-scanner": [
@@ -5308,7 +5386,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.7
+      "score": 8.6
     },
     {
       "slug": "kitty-s-law-theultimator5",
@@ -5646,25 +5724,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "pwvo",
       "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "linear-regression-channel": [
@@ -6822,7 +6900,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "ema-cross",
@@ -8272,25 +8350,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "tension-flow-trend",
       "title": "Tension Flow Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "qarar-unified-egx-market-map": [
@@ -10586,25 +10664,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
+    },
+    {
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 1.0
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
-    },
-    {
-      "slug": "pwvo",
-      "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "vervoortcrossover-zero-lag-npr21": [
@@ -10638,7 +10716,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.7
+      "score": 8.6
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -10690,13 +10768,13 @@
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "chaikin-volatility-histogram",
@@ -10820,25 +10898,25 @@
       "slug": "atr-trailing-stop",
       "title": "Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "least-squares",
       "title": "Least Squares Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.1
+      "score": 1.0
     },
     {
-      "slug": "pwvo",
-      "title": "Pwvo Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 1.1
+      "slug": "negative-volume-index",
+      "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
     }
   ],
   "volume-profile-fixed-range": [
