@@ -3301,6 +3301,32 @@
       "score": 5.0
     }
   ],
+  "donchian-mtf": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
   "double-exponential-ma": [
     {
       "slug": "adaptive-moving-average",
@@ -3327,7 +3353,59 @@
       "score": 13.0
     }
   ],
+  "double-exponential-moving-average-dema": [
+    {
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "ema-crossover",
+      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "fractional-ema-kalman-filter-d7",
+      "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "fractional-ema-kalman-filter",
+      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.7
+    }
+  ],
   "double-top-bottom": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
+  "drawdown-tracker": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -3745,6 +3823,12 @@
   ],
   "ema-cross": [
     {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3761,12 +3845,6 @@
       "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 4.7
-    },
-    {
-      "slug": "jurik-cfj",
-      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
     }
   ],
   "ema-crossover": [
@@ -3775,6 +3853,12 @@
       "title": "Zero Lag MACD Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    },
+    {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
     },
     {
       "slug": "ema-cross",
@@ -3786,12 +3870,6 @@
       "slug": "fractional-ema-kalman-filter-d7",
       "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 4.7
     }
   ],
@@ -4525,6 +4603,12 @@
   ],
   "fractional-ema-kalman-filter-d7": [
     {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4541,15 +4625,15 @@
       "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 4.7
-    },
-    {
-      "slug": "jurik-cfj",
-      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
     }
   ],
   "fractional-ema-kalman-filter": [
+    {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
@@ -4565,12 +4649,6 @@
     {
       "slug": "fractional-ema-kalman-filter-d7",
       "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "jurik-cfj",
-      "title": "Jurik_Cfj Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -5513,6 +5591,12 @@
   ],
   "jurik-cfj": [
     {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5528,12 +5612,6 @@
       "slug": "fractional-ema-kalman-filter-d7",
       "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 4.7
     }
   ],
@@ -5583,8 +5661,8 @@
       "score": 4.7
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -6995,6 +7073,12 @@
   ],
   "moving-average-envelope": [
     {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7010,12 +7094,6 @@
       "slug": "fractional-ema-kalman-filter-d7",
       "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "fractional-ema-kalman-filter",
-      "title": "Fractional Ema Kalman Filter Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 4.7
     }
   ],
@@ -7059,14 +7137,14 @@
       "score": 5.2
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -10549,8 +10627,8 @@
       "score": 5.0
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
