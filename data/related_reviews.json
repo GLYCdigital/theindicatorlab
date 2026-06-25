@@ -85,6 +85,12 @@
       "score": 4.7
     },
     {
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "fractal-chaos-bands",
       "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -93,12 +99,6 @@
     {
       "slug": "fractal-chaos-oscillator",
       "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "fractal-support-resistance",
-      "title": "Fractal_Support_Resistance Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -4471,6 +4471,32 @@
       "score": 0.7
     }
   ],
+  "fibonacci-channels": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
   "fibonacci-extension": [
     {
       "slug": "1-trendline-strategy",
@@ -4625,6 +4651,32 @@
       "title": "Alma Arnaud Legoux Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "flag-pattern": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
     }
   ],
   "floor-pivots": [
@@ -4809,6 +4861,32 @@
       "score": 13.0
     }
   ],
+  "fractal-breakout": [
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.7
+    },
+    {
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "fractal-chaos-oscillator",
+      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    }
+  ],
   "fractal-chaos-bands": [
     {
       "slug": "acceleration-deceleration-ac-oscillator",
@@ -4823,14 +4901,14 @@
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-oscillator",
-      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "fractal-support-resistance",
-      "title": "Fractal_Support_Resistance Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-chaos-oscillator",
+      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -4849,14 +4927,14 @@
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "fractal-support-resistance",
-      "title": "Fractal_Support_Resistance Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -4875,14 +4953,14 @@
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-oscillator",
-      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -7680,19 +7758,19 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 1.3
+      "score": 1.2
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.2
     },
     {
       "slug": "central-pivot-range",
       "title": "Central Pivot Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.3
+      "score": 1.2
     }
   ],
   "nadaraya-watson-regression-liquidity-sweeps-algoalpha": [
@@ -8593,14 +8671,14 @@
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-oscillator",
-      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -11999,14 +12077,14 @@
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "fractal-chaos-oscillator",
-      "title": "Fractal_Chaos_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
