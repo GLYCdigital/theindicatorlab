@@ -69,7 +69,7 @@ description: "Detects equal highs/lows, liquidity sweeps & Market Structure Shif
 
 {{< rawhtml >}}
 <div style="text-align:center;padding:2rem 0 3rem;">
-  <a href="https://buy.stripe.com/5kQ5kv31IaG0gu20QhaAw08" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get Liquidity Sweep Pro — $30</a>
+  <a href="https://buy.stripe.com/5kQ5kv31IaG0gu20QhaAw08" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-originals" data-umami-event-name="Liquidity Sweep Pro" data-umami-event-price="$30" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get Liquidity Sweep Pro — $30</a>
   <p style="margin-top:1rem;font-size:1.25rem;color:var(--text-muted);">Invite-only access · Lifetime · One-time purchase</p>
   <p style="margin-top:0.5rem;font-size:1.15rem;color:var(--text-muted);">After purchase, your TradingView username will be added to the script by the next business day.</p>
 </div>

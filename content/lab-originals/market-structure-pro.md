@@ -75,7 +75,7 @@ description: "Auto BOS, CHOCH, Order Blocks, FVGs & Liquidity Sweeps.<br>The com
 
 {{< rawhtml >}}
 <div style="text-align:center;padding:2rem 0 3rem;">
-  <a href="https://buy.stripe.com/7sYbIT9q6cO8cdM8iJaAw06" class="lr-cta" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get Market Structure Pro — $25</a>
+  <a href="https://buy.stripe.com/7sYbIT9q6cO8cdM8iJaAw06" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-originals" data-umami-event-name="Market Structure Pro" data-umami-event-price="$25" style="background:var(--accent);color:#fff!important;font-weight:700;padding:18px 52px;border-radius:var(--radius);font-size:1.6rem;text-decoration:none!important;box-shadow:0 2px 8px rgba(232,119,34,.3);">Get Market Structure Pro — $25</a>
   <p style="margin-top:1rem;font-size:1.25rem;color:var(--text-muted);">Invite-only access · Lifetime · One-time purchase</p>
   <p style="margin-top:0.5rem;font-size:1.15rem;color:var(--text-muted);">After purchase, your TradingView username will be added to the script by the next business day.</p>
 </div>

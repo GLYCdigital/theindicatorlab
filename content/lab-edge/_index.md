@@ -237,7 +237,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <div class="le-price">$79<span>/mo</span></div>
     <p class="le-price-sub">Weekly TSM signals on 166 markets · 7-day free trial · Cancel anytime</p>
     <p style="color:#fff;font-size:1.35rem;">Annual: $759/yr (save 20%)</p>
-    <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta">Get The Lab Edge →</a>
+    <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta" data-umami-event="stripe_click" data-umami-event-product="lab-edge" data-umami-event-name="The Lab Edge" data-umami-event-price="$79/mo" data-umami-event-placement="pricing">Get The Lab Edge →</a>
   </div>
 
   <p style="text-align:center;color:var(--text-muted);font-size:1.5rem;margin:4rem 0 3rem;">Active daily trader too? Want the full picture?<br>TradingView invite-only scripts + real-time consensus from 48 indicators every 15 minutes</p>
@@ -247,7 +247,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <div class="le-price">$99<span>/mo</span></div>
     <p class="le-price-sub">Lab Originals scripts + 15-min consensus Report + weekly Edge signals.<br>Three products, one price.</p>
     <p style="color:#fff;font-size:1.3rem;">7-day free trial. Annual: $950 (20% off).</p>
-    <a href="https://buy.stripe.com/dRm7sD0TA7tO2DcbuVaAw0c" class="le-cta">Get The Bundle →</a>
+    <a href="https://buy.stripe.com/dRm7sD0TA7tO2DcbuVaAw0c" class="le-cta" data-umami-event="stripe_click" data-umami-event-product="bundle" data-umami-event-name="Lab Report + Edge Bundle" data-umami-event-price="$99/mo">Get The Bundle →</a>
   </div>
 </div>
 
@@ -284,7 +284,7 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
   <div class="le-close">
     <h2>You don't need to watch 166 markets.<br>That's our job.</h2>
     <p>One message every Sunday.</p>
-    <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta">Get The Lab Edge →</a>
+    <a href="https://buy.stripe.com/cNidR19q6aG06Ts0QhaAw0b" class="le-cta" data-umami-event="stripe_click" data-umami-event-product="lab-edge" data-umami-event-name="The Lab Edge" data-umami-event-price="$79/mo" data-umami-event-placement="cta-close">Get The Lab Edge →</a>
     <p style="font-size:1.3rem;color:#fff;">7-day free trial. Cancel anytime.</p>
   </div>
 </div>
