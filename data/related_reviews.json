@@ -365,6 +365,12 @@
   ],
   "adx-divergence": [
     {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "cci-divergence",
       "title": "Cci_Divergence Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -380,12 +386,6 @@
       "slug": "delta-divergence",
       "title": "Delta Divergence Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 4.7
-    },
-    {
-      "slug": "demarker-divergence",
-      "title": "Demarker_Divergence Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
       "score": 4.7
     }
   ],
@@ -1637,7 +1637,39 @@
       "score": 0.7
     }
   ],
+  "bollinger-bands-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "bollinger-bands-percent-b",
+      "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "bollinger-bands",
+      "title": "Bollinger Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 5,
+      "score": 4.7
+    }
+  ],
   "bollinger-bands-percent-b": [
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
     {
       "slug": "bollinger-bands-width",
       "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
@@ -1655,15 +1687,15 @@
       "title": "Mtf_Bollinger Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
-    },
-    {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.7
     }
   ],
   "bollinger-bands-width": [
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
     {
       "slug": "bollinger-bands-percent-b",
       "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
@@ -1681,12 +1713,6 @@
       "title": "Mtf_Bollinger Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
-    },
-    {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.7
     }
   ],
   "bollinger-bands": [
@@ -2009,6 +2035,12 @@
       "score": 4.7
     },
     {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "cvd-divergence-alerts-pro",
       "title": "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
@@ -2018,12 +2050,6 @@
       "slug": "delta-divergence",
       "title": "Delta Divergence Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 4.7
-    },
-    {
-      "slug": "demarker-divergence",
-      "title": "Demarker_Divergence Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
       "score": 4.7
     }
   ],
@@ -3127,6 +3153,12 @@
       "score": 4.7
     },
     {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "cci-divergence",
       "title": "Cci_Divergence Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3136,12 +3168,6 @@
       "slug": "cvd-divergence-alerts-pro",
       "title": "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 4.7
-    },
-    {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 4.7
     }
   ],
@@ -4471,6 +4497,32 @@
       "score": 4.7
     }
   ],
+  "fair-value-gap-fvg": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
   "fair-value-gap-profile-rolling-poc": [
     {
       "slug": "cvd-profiles-tradingiq",
@@ -4644,13 +4696,13 @@
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     },
     {
       "slug": "know-sure-thing",
       "title": "Know Sure Thing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.1
+      "score": 1.0
     }
   ],
   "fibonacci-time-zones": [
@@ -4729,6 +4781,32 @@
       "title": "Alma Arnaud Legoux Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "fixed-fractional-position-sizing": [
+    {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "atr",
+      "title": "Atr Review: Settings, Strategy &amp; How to Use It",
+      "rating": 5,
+      "score": 1.0
+    },
+    {
+      "slug": "average-true-range",
+      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.0
+    },
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
     }
   ],
   "flag-pattern": [
@@ -6262,7 +6340,7 @@
       "slug": "moving-average-ribbon",
       "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.4
+      "score": 5.3
     }
   ],
   "jurik-volatility-bands": [
@@ -6366,7 +6444,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 6.8
+      "score": 6.7
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -7752,7 +7830,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.4
+      "score": 5.3
     },
     {
       "slug": "vidya",
@@ -7801,6 +7879,12 @@
   ],
   "mtf-bollinger": [
     {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "bollinger-bands-percent-b",
       "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7817,12 +7901,6 @@
       "title": "Bollinger Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
       "score": 4.7
-    },
-    {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.7
     }
   ],
   "mtf-macd": [
