@@ -524,19 +524,19 @@
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "atr-bands",
@@ -4939,6 +4939,32 @@
       "score": 4.7
     }
   ],
+  "fractal-levels": [
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.7
+    },
+    {
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    }
+  ],
   "fractal-support-resistance": [
     {
       "slug": "acceleration-deceleration-ac-oscillator",
@@ -5173,7 +5199,59 @@
       "score": 0.7
     }
   ],
+  "gap-and-go": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
   "gap-detector": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
+  "gap-fill-tracker": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -10144,19 +10222,19 @@
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "atr-bands",
@@ -10453,12 +10531,6 @@
   ],
   "super-trend": [
     {
-      "slug": "ais-supertrend",
-      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.0
-    },
-    {
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10475,6 +10547,12 @@
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
     }
   ],
   "supertrend-atr-trailing-stop": [
@@ -10488,19 +10566,19 @@
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     }
   ],
   "supertrend-parameter-sensitivity-3d": [
@@ -10508,19 +10586,19 @@
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "atr-bands",
