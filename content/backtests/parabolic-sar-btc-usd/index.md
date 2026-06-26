@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-19",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-17.2%"
+      "value": "-17.4%"
     },
     {
       "label": "CAGR",
-      "value": "-3.7%"
+      "value": "-3.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+46.2%",
+      "return_pct": "+34.5%",
       "trades": "8",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-28.8%",
+      "return_pct": "-32.4%",
       "trades": "7",
       "win_rate_pct": "33.3%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
+      "url": "/reviews/currency-strength-meter/"
     },
     {
-      "title": "vwap_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-bands/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-21 → 2026-06-19), the Parabolic SAR delivered a **-17.2% total return** on BTC-USD, compounding at **-3.7% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Parabolic SAR delivered a **-17.4% total return** on BTC-USD, compounding at **-3.8% annually**. 
 
 At **0.03**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on BTC-USD](/backtests/parabolic-sar-btc-usd-trades.png)

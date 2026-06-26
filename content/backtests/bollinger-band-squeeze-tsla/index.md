@@ -1,10 +1,10 @@
 ---
 {
   "title": "BollingerBands \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-18",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
@@ -12,7 +12,7 @@
     },
     {
       "label": "CAGR",
-      "value": "17.9%"
+      "value": "17.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+70.2%",
+      "return_pct": "+53.4%",
       "trades": "8",
       "win_rate_pct": "30.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.6%",
+      "return_pct": "-12.2%",
       "trades": "5",
       "win_rate_pct": "30.8%"
     }
@@ -109,7 +109,7 @@ On TSLA, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-21 → 2026-06-18), the Bollinger Band Squeeze delivered a **+127.2% total return** on TSLA, compounding at **17.9% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Bollinger Band Squeeze delivered a **+127.2% total return** on TSLA, compounding at **17.8% annually**. 
 
 At **0.52**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on TSLA.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on TSLA](/backtests/bollinger-band-squeeze-tsla-trades.png)

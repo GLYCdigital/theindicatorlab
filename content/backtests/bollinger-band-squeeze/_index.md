@@ -1,6 +1,6 @@
 ---
 title: "BollingerBands Backtest Results"
-date: 2026-06-20
+date: 2026-06-27
 draft: false
 type: backtests
 description: "All 6 asset backtests for the BollingerBands indicator. Sorted by Sharpe ratio."
@@ -25,19 +25,19 @@ description: "All 6 asset backtests for the BollingerBands indicator. Sorted by 
 </tr>
 </thead>
 <tbody>
-<tr><td>🟢 <a href="/backtests/bollinger-band-squeeze-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+127.2%</td><td>17.9%</td><td>0.52</td><td>39.9%</td><td>30.8%</td><td>1.41</td><td>65</td></tr>
-<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+55.3%</td><td>9.2%</td><td>0.44</td><td>20.1%</td><td>33.3%</td><td>1.62</td><td>66</td></tr>
+<tr><td>🟢 <a href="/backtests/bollinger-band-squeeze-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+127.2%</td><td>17.8%</td><td>0.52</td><td>39.9%</td><td>30.8%</td><td>1.41</td><td>65</td></tr>
 <tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+52.5%</td><td>8.8%</td><td>0.38</td><td>26.4%</td><td>42.3%</td><td>1.56</td><td>52</td></tr>
-<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+62.5%</td><td>10.2%</td><td>0.36</td><td>53.8%</td><td>24.2%</td><td>1.21</td><td>99</td></tr>
-<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+56.1%</td><td>9.3%</td><td>0.34</td><td>44.0%</td><td>22.2%</td><td>1.12</td><td>90</td></tr>
-<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+18.0%</td><td>3.4%</td><td>0.13</td><td>21.8%</td><td>40.6%</td><td>1.28</td><td>64</td></tr>
+<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+47.3%</td><td>8.1%</td><td>0.38</td><td>20.1%</td><td>31.8%</td><td>1.51</td><td>66</td></tr>
+<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+61.8%</td><td>10.1%</td><td>0.36</td><td>53.8%</td><td>24.0%</td><td>1.20</td><td>100</td></tr>
+<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+50.6%</td><td>8.5%</td><td>0.31</td><td>44.0%</td><td>21.7%</td><td>1.11</td><td>92</td></tr>
+<tr><td>🟡 <a href="/backtests/bollinger-band-squeeze-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+14.9%</td><td>2.8%</td><td>0.09</td><td>21.8%</td><td>39.1%</td><td>1.23</td><td>64</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: June 20, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: June 27, 2026</p>
 
   </div>
 </article>

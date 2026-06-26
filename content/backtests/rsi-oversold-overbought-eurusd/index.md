@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-19",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-12.7%"
+      "value": "-13.5%"
     },
     {
       "label": "CAGR",
-      "value": "-2.7%"
+      "value": "-2.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.56"
+      "value": "-0.58"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.57"
+      "value": "0.54"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.6%",
+      "return_pct": "-5.2%",
       "trades": "5",
       "win_rate_pct": "19.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-2.3%",
+      "return_pct": "-3.0%",
       "trades": "2",
       "win_rate_pct": "19.0%"
     }
@@ -109,9 +109,9 @@ On EURUSD, the RSI acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-06-21 → 2026-06-19), the RSI Oversold/Overbought delivered a **-12.7% total return** on EURUSD=X, compounding at **-2.7% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the RSI Oversold/Overbought delivered a **-13.5% total return** on EURUSD=X, compounding at **-2.9% annually**. 
 
-At **-0.56**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.58**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **21.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 21% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **21.2% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.56 | ❌ Weak |
+| Sharpe Ratio | -0.58 | ❌ Weak |
 | Max Drawdown | 21.2% | ⚠️ Moderate |
 | Win Rate | 19.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.57 | ❌ Unprofitable |
+| Profit Factor | 0.54 | ❌ Unprofitable |
 | Trades/Year | ~21 total | Selective — not overtrading |
 
-The **profit factor of 0.57** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 19.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.54** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 19.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the RSI Oversold/Overbought Work on EURUSD?
 
-The rsi oversold/overbought struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.56 Sharpe ratio** and **0.57 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The rsi oversold/overbought struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.58 Sharpe ratio** and **0.54 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on EURUSD=X](/backtests/rsi-oversold-overbought-eurusd-trades.png)

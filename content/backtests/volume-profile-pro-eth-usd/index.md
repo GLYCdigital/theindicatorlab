@@ -1,18 +1,18 @@
 ---
 {
   "title": "VWAP \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-19",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+163.3%"
+      "value": "+153.3%"
     },
     {
       "label": "CAGR",
-      "value": "21.4%"
+      "value": "20.4%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+95.0%",
+      "return_pct": "+77.1%",
       "trades": "10",
       "win_rate_pct": "22.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-43.2%",
+      "return_pct": "-47.3%",
       "trades": "9",
       "win_rate_pct": "22.0%"
     }
@@ -109,7 +109,7 @@ On ETH, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-06-21 → 2026-06-19), the Volume Profile Pro delivered a **+163.3% total return** on ETH-USD, compounding at **21.4% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Volume Profile Pro delivered a **+153.3% total return** on ETH-USD, compounding at **20.4% annually**. 
 
 At **0.58**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on ETH. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on ETH-USD](/backtests/volume-profile-pro-eth-usd-trades.png)

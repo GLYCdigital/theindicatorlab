@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-18",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+34.6%",
+      "return_pct": "+32.1%",
       "trades": "5",
       "win_rate_pct": "33.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+10.2%",
+      "return_pct": "+3.6%",
       "trades": "5",
       "win_rate_pct": "33.9%"
     }
@@ -83,6 +83,14 @@
   "cta_url": "https://j.moomoo.com/0BpZwx",
   "equity_curve_url": "/backtests/donchian-channel-breakout-aapl-equity.png",
   "crosslinks": [
+    {
+      "title": "donchian_mtf review: settings, strategy &amp; how to use it",
+      "url": "/reviews/donchian-mtf/"
+    },
+    {
+      "title": "donchian_breakout review: settings, strategy &amp; how to use it",
+      "url": "/reviews/donchian-breakout/"
+    },
     {
       "title": "donchian channels review: settings, strategy &amp; how to use it",
       "url": "/reviews/donchian-channels/"
@@ -101,7 +109,7 @@ On AAPL, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-06-21 → 2026-06-18), the Donchian Channel Breakout delivered a **+9.7% total return** on AAPL, compounding at **1.9% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Donchian Channel Breakout delivered a **+9.7% total return** on AAPL, compounding at **1.9% annually**. 
 
 At **0.07**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -129,6 +137,6 @@ Our take: skip it on AAPL unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on AAPL](/backtests/donchian-channel-breakout-aapl-trades.png)

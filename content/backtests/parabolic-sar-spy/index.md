@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-18",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+3.0%"
+      "value": "+1.3%"
     },
     {
       "label": "CAGR",
-      "value": "0.6%"
+      "value": "0.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.06"
+      "value": "-0.08"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.6%",
+      "return_pct": "+11.9%",
       "trades": "8",
       "win_rate_pct": "41.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+9.9%",
+      "return_pct": "+8.1%",
       "trades": "6",
       "win_rate_pct": "41.9%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
+      "url": "/reviews/currency-strength-meter/"
     },
     {
-      "title": "vwap_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-bands/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On SPY, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-21 → 2026-06-18), the Parabolic SAR delivered a **+3.0% total return** on SPY, compounding at **0.6% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Parabolic SAR delivered a **+1.3% total return** on SPY, compounding at **0.3% annually**. 
 
-At **-0.06**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.08**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **25.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **25.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.06 | ❌ Weak |
+| Sharpe Ratio | -0.08 | ❌ Weak |
 | Max Drawdown | 25.5% | ⚠️ Moderate |
 | Win Rate | 41.9% | ⚠️ Below average |
 | Profit Factor | 1.06 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.06** tells the real story: when the SAR fires, the winn
 
 ## Does the Parabolic SAR Work on SPY?
 
-The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.06 Sharpe ratio** and **1.06 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.08 Sharpe ratio** and **1.06 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on SPY](/backtests/parabolic-sar-spy-trades.png)

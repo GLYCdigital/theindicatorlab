@@ -1,10 +1,10 @@
 ---
 {
   "title": "SAR \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-18",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+34.6%",
+      "return_pct": "+32.1%",
       "trades": "6",
       "win_rate_pct": "46.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+10.2%",
+      "return_pct": "+3.6%",
       "trades": "7",
       "win_rate_pct": "46.4%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
+      "url": "/reviews/currency-strength-meter/"
     },
     {
-      "title": "vwap_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-bands/"
+      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "url": "/reviews/rsi-macd-confluence/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On AAPL, the SAR acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-06-21 → 2026-06-18), the Parabolic SAR delivered a **+21.6% total return** on AAPL, compounding at **4.0% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Parabolic SAR delivered a **+21.6% total return** on AAPL, compounding at **4.0% annually**. 
 
 At **0.16**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on AAPL unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on AAPL](/backtests/parabolic-sar-aapl-trades.png)

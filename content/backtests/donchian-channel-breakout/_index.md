@@ -1,6 +1,6 @@
 ---
 title: "Donchian Backtest Results"
-date: 2026-06-20
+date: 2026-06-27
 draft: false
 type: backtests
 description: "All 7 asset backtests for the Donchian indicator. Sorted by Sharpe ratio."
@@ -25,20 +25,20 @@ description: "All 7 asset backtests for the Donchian indicator. Sorted by Sharpe
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-gc=f/" style="color:var(--accent);text-decoration:none;font-weight:600">GC=F</a></td><td>+51.8%</td><td>8.7%</td><td>0.48</td><td>21.6%</td><td>38.8%</td><td>1.82</td><td>67</td></tr>
-<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+85.2%</td><td>13.1%</td><td>0.40</td><td>48.3%</td><td>32.9%</td><td>1.23</td><td>70</td></tr>
-<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+72.1%</td><td>11.5%</td><td>0.37</td><td>49.8%</td><td>24.7%</td><td>1.13</td><td>93</td></tr>
-<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+50.2%</td><td>8.5%</td><td>0.32</td><td>54.3%</td><td>28.0%</td><td>1.17</td><td>93</td></tr>
-<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+37.8%</td><td>6.6%</td><td>0.29</td><td>30.3%</td><td>29.9%</td><td>1.42</td><td>67</td></tr>
-<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+15.7%</td><td>3.0%</td><td>0.10</td><td>24.5%</td><td>30.3%</td><td>1.23</td><td>66</td></tr>
+<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-gc=f/" style="color:var(--accent);text-decoration:none;font-weight:600">GC=F</a></td><td>+48.7%</td><td>8.3%</td><td>0.44</td><td>23.2%</td><td>38.8%</td><td>1.73</td><td>67</td></tr>
+<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+86.4%</td><td>13.3%</td><td>0.40</td><td>48.3%</td><td>33.3%</td><td>1.23</td><td>69</td></tr>
+<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+65.7%</td><td>10.6%</td><td>0.35</td><td>49.8%</td><td>24.5%</td><td>1.12</td><td>94</td></tr>
+<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+47.0%</td><td>8.0%</td><td>0.31</td><td>54.3%</td><td>27.7%</td><td>1.16</td><td>94</td></tr>
+<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+33.3%</td><td>5.9%</td><td>0.25</td><td>30.3%</td><td>29.9%</td><td>1.36</td><td>67</td></tr>
 <tr><td>🟡 <a href="/backtests/donchian-channel-breakout-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+9.7%</td><td>1.9%</td><td>0.07</td><td>34.4%</td><td>33.9%</td><td>1.10</td><td>56</td></tr>
+<tr><td>🟡 <a href="/backtests/donchian-channel-breakout-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+12.9%</td><td>2.5%</td><td>0.06</td><td>23.9%</td><td>28.8%</td><td>1.18</td><td>66</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: June 20, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: June 27, 2026</p>
 
   </div>
 </article>

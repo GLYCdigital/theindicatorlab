@@ -1,10 +1,10 @@
 ---
 {
   "title": "Ichimoku \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-19",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+46.2%",
+      "return_pct": "+34.5%",
       "trades": "2",
       "win_rate_pct": "27.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-28.8%",
+      "return_pct": "-32.4%",
       "trades": "3",
       "win_rate_pct": "27.0%"
     }
@@ -109,7 +109,7 @@ On BTC, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-21 → 2026-06-19), the Ichimoku Cloud delivered a **+51.1% total return** on BTC-USD, compounding at **8.6% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Ichimoku Cloud delivered a **+51.1% total return** on BTC-USD, compounding at **8.6% annually**. 
 
 At **0.31**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on BTC-USD](/backtests/ichimoku-cloud-btc-usd-trades.png)

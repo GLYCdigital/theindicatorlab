@@ -1,22 +1,22 @@
 ---
 {
   "title": "Stochastic \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-06-20",
+  "date": "2026-06-27",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-21 \u2192 2026-06-18",
+  "period": "2021-06-28 \u2192 2026-06-26",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-41.3%"
+      "value": "-41.8%"
     },
     {
       "label": "CAGR",
-      "value": "-10.1%"
+      "value": "-10.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.57"
+      "value": "-0.58"
     },
     {
       "label": "Max Drawdown",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+15.8%",
-      "trades": "15",
+      "return_pct": "+12.7%",
+      "trades": "14",
       "win_rate_pct": "43.1%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+20.9%",
-      "trades": "18",
+      "return_pct": "+16.4%",
+      "trades": "19",
       "win_rate_pct": "43.1%"
     }
   ],
@@ -109,9 +109,9 @@ On QQQ, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-21 → 2026-06-18), the Stochastic Crossover delivered a **-41.3% total return** on QQQ, compounding at **-10.1% annually**. 
+Over five years (2021-06-28 → 2026-06-26), the Stochastic Crossover delivered a **-41.8% total return** on QQQ, compounding at **-10.3% annually**. 
 
-At **-0.57**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.58**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.57 | ❌ Weak |
+| Sharpe Ratio | -0.58 | ❌ Weak |
 | Max Drawdown | 49.5% | ⚠️ Significant |
 | Win Rate | 43.1% | ⚠️ Below average |
 | Profit Factor | 0.68 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.68** tells the real story: when the Stochastic fires, t
 
 ## Does the Stochastic Crossover Work on QQQ?
 
-The stochastic crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.57 Sharpe ratio** and **0.68 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.58 Sharpe ratio** and **0.68 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 20, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on QQQ](/backtests/stochastic-crossover-qqq-trades.png)
