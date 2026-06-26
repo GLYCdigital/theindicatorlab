@@ -215,6 +215,12 @@
       "score": 5.0
     },
     {
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -223,12 +229,6 @@
     {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "efficiency-ratio-adaptive-ma",
-      "title": "Efficiency_Ratio_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -241,6 +241,12 @@
       "score": 5.0
     },
     {
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -249,12 +255,6 @@
     {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "efficiency-ratio-adaptive-ma",
-      "title": "Efficiency_Ratio_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -285,6 +285,32 @@
       "score": 13.0
     }
   ],
+  "adaptive-trend-line": [
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "adaptive-trend-lines": [
     {
       "slug": "adaptive-ai-indicator",
@@ -299,14 +325,14 @@
       "score": 5.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "efficiency-ratio-adaptive-ma",
-      "title": "Efficiency_Ratio_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -442,6 +468,32 @@
     }
   ],
   "adx": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.7
+    }
+  ],
+  "adxr": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -897,14 +949,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "efficiency-ratio-adaptive-ma",
-      "title": "Efficiency_Ratio_Adaptive_Ma Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1139,6 +1191,32 @@
     {
       "slug": "atr-based-position-sizing",
       "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    }
+  ],
+  "atr-volatility-indicator": [
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -1911,14 +1989,14 @@
       "score": 5.2
     },
     {
-      "slug": "chaikin-volatility-histogram",
-      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "historical-volatility",
-      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-histogram",
+      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -2171,14 +2249,14 @@
       "score": 4.7
     },
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 4.7
     }
@@ -3575,14 +3653,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3627,14 +3705,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3783,14 +3861,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -5799,6 +5877,12 @@
   ],
   "historical-volatility": [
     {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -5813,12 +5897,6 @@
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "implied-volatility-rank",
-      "title": "Implied_Volatility_Rank Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -5981,6 +6059,12 @@
   ],
   "implied-volatility-rank": [
     {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -5995,18 +6079,18 @@
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "historical-volatility",
-      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
   ],
   "implied-volatility": [
     {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -6021,12 +6105,6 @@
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "historical-volatility",
-      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -6189,6 +6267,12 @@
   ],
   "jurik-volatility-bands": [
     {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -6203,12 +6287,6 @@
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "double-exponential-moving-average-dema",
-      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -8099,14 +8177,14 @@
       "score": 4.7
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -9312,25 +9390,25 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.1
+      "score": 2.0
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.1
+      "score": 2.0
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.1
+      "score": 2.0
     },
     {
-      "slug": "volume-weighted-moving-average",
-      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-ribbon",
+      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.1
+      "score": 2.0
     }
   ],
   "rainbow-oscillator": [
@@ -9633,14 +9711,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -11519,6 +11597,12 @@
   ],
   "volatility-smile": [
     {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.7
+    },
+    {
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -11533,12 +11617,6 @@
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.7
-    },
-    {
-      "slug": "historical-volatility",
-      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -11557,14 +11635,14 @@
       "score": 5.2
     },
     {
-      "slug": "chaikin-volatility-histogram",
-      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     },
     {
-      "slug": "historical-volatility",
-      "title": "Historical_Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-histogram",
+      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.7
     }
@@ -11898,13 +11976,13 @@
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.2
+      "score": 2.1
     },
     {
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 2.1
+      "score": 2.0
     }
   ],
   "volumetric-trend-ribbon": [
