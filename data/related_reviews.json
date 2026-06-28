@@ -85,6 +85,12 @@
       "score": 4.6
     },
     {
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -93,12 +99,6 @@
     {
       "slug": "fractal-breakout",
       "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -657,6 +657,12 @@
       "score": 4.6
     },
     {
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
@@ -665,12 +671,6 @@
     {
       "slug": "fractal-breakout",
       "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -1018,25 +1018,25 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "balance-of-power",
       "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 0.9
+      "score": 0.8
     },
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     }
   ],
   "artemis-adaptive-rsi": [
@@ -1533,6 +1533,32 @@
       "score": 4.6
     }
   ],
+  "awesome-oscillator-bill-williams": [
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "alligator-bill-williams",
+      "title": "Alligator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
+      "score": 4.6
+    },
+    {
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
   "awesome-oscillator": [
     {
       "slug": "acceleration-deceleration",
@@ -1608,7 +1634,7 @@
       "slug": "market-cipher-b",
       "title": "Market Cipher B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     }
   ],
   "bat-pattern": [
@@ -1767,6 +1793,32 @@
       "score": 0.6
     }
   ],
+  "bollinger-bands-b": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-percent-b",
+      "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
   "bollinger-bands-divergence": [
     {
       "slug": "adaptive-bollinger-bands",
@@ -1787,8 +1839,8 @@
       "score": 4.6
     },
     {
-      "slug": "bollinger-bands-percent-b",
-      "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -1797,6 +1849,12 @@
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
@@ -1811,18 +1869,18 @@
       "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
-    },
-    {
-      "slug": "bollinger-bands",
-      "title": "Bollinger Bands Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
-      "score": 4.6
     }
   ],
   "bollinger-bands-width": [
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
@@ -1836,12 +1894,6 @@
       "slug": "bollinger-bands-percent-b",
       "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "bollinger-bands",
-      "title": "Bollinger Bands Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
       "score": 4.6
     }
   ],
@@ -2493,6 +2545,32 @@
       "title": "Alma Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "chandelier-exit-long-short": [
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
     }
   ],
   "chandelier-exit": [
@@ -5343,15 +5421,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-chaos-bands",
-      "title": "Fractal_Chaos_Bands Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -5369,15 +5447,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-breakout",
-      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -5395,15 +5473,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-breakout",
-      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -5421,15 +5499,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-breakout",
-      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -5447,15 +5525,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-breakout",
-      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -6782,7 +6860,7 @@
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 6.7
+      "score": 6.6
     }
   ],
   "kaufman-efficiency-ratio": [
@@ -8223,6 +8301,12 @@
       "score": 4.6
     },
     {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8231,12 +8315,6 @@
     {
       "slug": "bollinger-bands-percent-b",
       "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "bollinger-bands-width",
-      "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -9321,15 +9399,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-breakout",
-      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -12727,15 +12805,15 @@
       "score": 4.6
     },
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "fractal-breakout",
-      "title": "Fractal_Breakout Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
