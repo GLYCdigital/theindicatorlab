@@ -1342,7 +1342,7 @@
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "ais-supertrend",
@@ -1524,7 +1524,7 @@
       "slug": "keltner-channels",
       "title": "Keltner Channels Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "ais-supertrend",
@@ -1813,8 +1813,8 @@
       "score": 4.6
     },
     {
-      "slug": "bollinger-bands-width",
-      "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -1865,8 +1865,34 @@
       "score": 4.6
     },
     {
-      "slug": "bollinger-bands-width",
-      "title": "Bollinger_Bands_Width Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "bollinger-bands-squeeze": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-percent-b",
+      "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -2548,6 +2574,32 @@
     }
   ],
   "chandelier-exit-long-short": [
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-based-position-sizing",
+      "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-channels",
+      "title": "Atr_Channels Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "chandelier-exit-mtf": [
     {
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
@@ -4341,7 +4393,13 @@
       "score": 0.6
     }
   ],
-  "elliott-wave-fibonacci": [
+  "elliott-wave-corrective-patterns": [
+    {
+      "slug": "elliott-wave-fibonacci",
+      "title": "Elliott_Wave_Fibonacci Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
     {
       "slug": "elliott-wave",
       "title": "Elliott_Wave Review: Settings, Strategy &amp; How to Use It",
@@ -4359,15 +4417,41 @@
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.6
+    }
+  ],
+  "elliott-wave-fibonacci": [
+    {
+      "slug": "elliott-wave-corrective-patterns",
+      "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "slug": "elliott-wave",
+      "title": "Elliott_Wave Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.6
     }
   ],
   "elliott-wave": [
+    {
+      "slug": "elliott-wave-corrective-patterns",
+      "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
     {
       "slug": "elliott-wave-fibonacci",
       "title": "Elliott_Wave_Fibonacci Review: Settings, Strategy &amp; How to Use It",
@@ -4383,12 +4467,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.6
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.6
     }
@@ -10635,6 +10713,12 @@
   ],
   "squeeze-indicator": [
     {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "squeeze-momentum-binary",
       "title": "Squeeze_Momentum_Binary Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -10651,15 +10735,15 @@
       "title": "Ttm Squeeze Pro Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
       "score": 4.6
-    },
-    {
-      "slug": "ttm-squeeze",
-      "title": "Ttm Squeeze Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 4.6
     }
   ],
   "squeeze-momentum-binary": [
+    {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
     {
       "slug": "squeeze-indicator",
       "title": "Squeeze_Indicator Review: Settings, Strategy &amp; How to Use It",
@@ -10676,12 +10760,6 @@
       "slug": "ttm-squeeze-pro",
       "title": "Ttm Squeeze Pro Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 4.6
-    },
-    {
-      "slug": "ttm-squeeze",
-      "title": "Ttm Squeeze Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
       "score": 4.6
     }
   ],
@@ -11843,14 +11921,14 @@
       "score": 9.0
     },
     {
-      "slug": "squeeze-indicator",
-      "title": "Squeeze_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "squeeze-momentum-binary",
-      "title": "Squeeze_Momentum_Binary Review: Settings, Strategy &amp; How to Use It",
+      "slug": "squeeze-indicator",
+      "title": "Squeeze_Indicator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -11869,14 +11947,14 @@
       "score": 9.0
     },
     {
-      "slug": "squeeze-indicator",
-      "title": "Squeeze_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "squeeze-momentum-binary",
-      "title": "Squeeze_Momentum_Binary Review: Settings, Strategy &amp; How to Use It",
+      "slug": "squeeze-indicator",
+      "title": "Squeeze_Indicator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -12467,14 +12545,14 @@
       "score": 5.0
     },
     {
-      "slug": "hull-moving-average",
-      "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 2.1
-    },
-    {
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 2.0
+    },
+    {
+      "slug": "hull-moving-average",
+      "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 2.0
     }
