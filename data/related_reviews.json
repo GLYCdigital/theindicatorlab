@@ -1813,8 +1813,8 @@
       "score": 4.6
     },
     {
-      "slug": "bollinger-bands-percent-b",
-      "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-mtf",
+      "title": "Bollinger_Bands_Mtf Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -1865,8 +1865,34 @@
       "score": 4.6
     },
     {
-      "slug": "bollinger-bands-percent-b",
-      "title": "Bollinger_Bands_Percent_B Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-mtf",
+      "title": "Bollinger_Bands_Mtf Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "bollinger-bands-mtf": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -2623,6 +2649,32 @@
       "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 5.1
+    }
+  ],
+  "chande-momentum-oscillator-cmo": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
     }
   ],
   "chande-momentum": [
@@ -3849,6 +3901,12 @@
   ],
   "double-exponential-moving-average-dema": [
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -3863,12 +3921,6 @@
     {
       "slug": "ema-multiple-timeframe",
       "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-ribbon",
-      "title": "Ema_Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4627,10 +4679,16 @@
       "score": 4.6
     }
   ],
-  "ema-cross": [
+  "ema-cross-signal": [
     {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
@@ -4645,10 +4703,30 @@
       "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
+    }
+  ],
+  "ema-cross": [
+    {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
     },
     {
-      "slug": "ema-ribbon",
-      "title": "Ema_Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "ema-crossover",
+      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "ema-multiple-timeframe",
+      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4667,14 +4745,14 @@
       "score": 4.6
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4687,6 +4765,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4695,12 +4779,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-ribbon",
-      "title": "Ema_Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4713,6 +4791,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4721,12 +4805,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4947,6 +5025,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4955,12 +5039,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -5805,6 +5883,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5813,12 +5897,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -5831,6 +5909,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5839,12 +5923,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -6949,6 +7027,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6959,12 +7043,6 @@
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
     }
   ],
   "jurik-moving-average": [
@@ -6972,7 +7050,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.5
+      "score": 8.4
     },
     {
       "slug": "kitty-s-law-theultimator5",
@@ -8431,6 +8509,12 @@
       "score": 4.6
     },
     {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8439,12 +8523,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -8495,8 +8573,8 @@
       "score": 4.6
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -8720,19 +8798,19 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "central-pivot-range",
       "title": "Central Pivot Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     }
   ],
   "nadaraya-watson-regression-liquidity-sweeps-algoalpha": [
@@ -10133,8 +10211,8 @@
       "score": 1.9
     },
     {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
+      "slug": "volume-weighted-moving-average",
+      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.9
     }
@@ -12302,7 +12380,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 8.5
+      "score": 8.4
     },
     {
       "slug": "cvd-profiles-tradingiq",
@@ -12617,12 +12695,6 @@
       "score": 1.2
     },
     {
-      "slug": "negative-volume-index",
-      "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.0
-    },
-    {
       "slug": "on-balance-volume",
       "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -12632,6 +12704,12 @@
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
+      "score": 1.0
+    },
+    {
+      "slug": "volume-flow",
+      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 1.0
     }
   ],
