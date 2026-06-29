@@ -1,18 +1,18 @@
 ---
 title: "All Indicators — The Lab Report"
-date: 2026-06-22
+date: 2026-06-28
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 63 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 68 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **63 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** {{< param date >}} · **68 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (22)
+## Momentum (24)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -40,8 +40,10 @@ Indicators that measure the speed and strength of price movement.
 | Schaff Trend Cycle | [→ Full review](/reviews/schaff-trend-cycle/) |
 | True Strength Index | [→ Full review](/reviews/true-strength-index/) |
 | Laguerre RSI | [→ Full review](/reviews/laguerre-rsi/) |
+| Detrended Price Osc | [→ Full review](/reviews/detrended-price-oscillator/) |
+| Gator Oscillator | [→ Full review](/reviews/gator-oscillator/) |
 
-## Trend (17)
+## Trend (18)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -64,6 +66,7 @@ Indicators that identify direction and strength of the prevailing trend.
 | Vortex Indicator | [→ Full review](/reviews/vortex-indicator/) |
 | Heikin Ashi | [→ Full review](/reviews/heiken-ashi/) |
 | Guppy Multiple MA | [→ Full review](/reviews/guppy-multiple-moving-average/) |
+| Envelopes | [→ Full review](/reviews/envelopes/) |
 
 ## Volume (12)
 
@@ -84,7 +87,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Cumulative Volume Delta | [→ Full review](/reviews/cumulative-volume-delta/) |
 | Klinger Oscillator | [→ Full review](/reviews/klinger-oscillator/) |
 
-## Volatility (12)
+## Volatility (14)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -102,6 +105,8 @@ Indicators that measure the magnitude of price fluctuations.
 | TTM Squeeze | [→ Full review](/reviews/ttm-squeeze-pro/) |
 | Choppiness Index | [→ Full review](/reviews/choppiness-index/) |
 | Mass Index | [→ Full review](/reviews/mass-index/) |
+| Bollinger %B | [→ Full review](/reviews/bollinger-bands-percent-b/) |
+| Historical Volatility | [→ Full review](/reviews/historical-volatility/) |
 
 ---
 
