@@ -1923,6 +1923,32 @@
       "score": 4.6
     }
   ],
+  "bollinger-bands-reversion": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
   "bollinger-bands-rsi-combo": [
     {
       "slug": "adaptive-bollinger-bands",
@@ -2860,6 +2886,32 @@
     }
   ],
   "chart-patterns": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "chop-zone-indicator": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -4680,6 +4732,32 @@
     }
   ],
   "elliott-wave-mtf": [
+    {
+      "slug": "elliott-wave-corrective-patterns",
+      "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "elliott-wave-count",
+      "title": "Elliott_Wave_Count Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "elliott-wave-fibonacci",
+      "title": "Elliott_Wave_Fibonacci Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "elliott-wave-impulse-detector",
+      "title": "Elliott_Wave_Impulse_Detector Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "elliott-wave-oscillator": [
     {
       "slug": "elliott-wave-corrective-patterns",
       "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy &amp; How to Use It",
@@ -9919,15 +9997,15 @@
       "score": 5.0
     },
     {
-      "slug": "average-true-range",
-      "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
+      "slug": "linear-regression",
+      "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.9
     },
     {
-      "slug": "linear-regression",
-      "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
+      "slug": "parabolic-sar",
+      "title": "Parabolic Sar Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 0.9
     }
   ],
@@ -12770,7 +12848,7 @@
       "slug": "volume-weighted-moving-average",
       "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.2
+      "score": 1.1
     },
     {
       "slug": "on-balance-volume",
