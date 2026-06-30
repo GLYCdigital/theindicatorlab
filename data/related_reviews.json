@@ -409,9 +409,9 @@
       "score": 4.6
     },
     {
-      "slug": "cvd-divergence-alerts-pro",
-      "title": "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "chande-momentum-oscillator-divergence",
+      "title": "Chande_Momentum_Oscillator_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     }
   ],
@@ -955,9 +955,9 @@
       "score": 4.6
     },
     {
-      "slug": "cvd-divergence-alerts-pro",
-      "title": "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "chande-momentum-oscillator-divergence",
+      "title": "Chande_Momentum_Oscillator_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     }
   ],
@@ -1122,13 +1122,13 @@
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "ais-supertrend",
@@ -1336,7 +1336,7 @@
       "slug": "atr-based-position-sizing",
       "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "keltner-channels",
@@ -1518,7 +1518,7 @@
       "slug": "atr-based-position-sizing",
       "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.0
+      "score": 4.9
     },
     {
       "slug": "keltner-channels",
@@ -2359,9 +2359,9 @@
       "score": 4.6
     },
     {
-      "slug": "cvd-divergence-alerts-pro",
-      "title": "Cvd Divergence Alerts Pro Review: Settings, Strategy &amp; How to Use It",
-      "rating": 5,
+      "slug": "chande-momentum-oscillator-divergence",
+      "title": "Chande_Momentum_Oscillator_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     }
   ],
@@ -2675,6 +2675,32 @@
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.6
+    }
+  ],
+  "chande-momentum-oscillator-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "cci-divergence",
+      "title": "Cci_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
     }
   ],
   "chande-momentum": [
@@ -4569,8 +4595,8 @@
       "score": 4.6
     },
     {
-      "slug": "elliott-wave",
-      "title": "Elliott_Wave Review: Settings, Strategy &amp; How to Use It",
+      "slug": "elliott-wave-mtf",
+      "title": "Elliott_Wave_Mtf Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4595,8 +4621,8 @@
       "score": 4.6
     },
     {
-      "slug": "elliott-wave",
-      "title": "Elliott_Wave Review: Settings, Strategy &amp; How to Use It",
+      "slug": "elliott-wave-mtf",
+      "title": "Elliott_Wave_Mtf Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4621,8 +4647,8 @@
       "score": 4.6
     },
     {
-      "slug": "elliott-wave",
-      "title": "Elliott_Wave Review: Settings, Strategy &amp; How to Use It",
+      "slug": "elliott-wave-mtf",
+      "title": "Elliott_Wave_Mtf Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4647,8 +4673,34 @@
       "score": 4.6
     },
     {
-      "slug": "elliott-wave",
-      "title": "Elliott_Wave Review: Settings, Strategy &amp; How to Use It",
+      "slug": "elliott-wave-mtf",
+      "title": "Elliott_Wave_Mtf Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "elliott-wave-mtf": [
+    {
+      "slug": "elliott-wave-corrective-patterns",
+      "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "elliott-wave-count",
+      "title": "Elliott_Wave_Count Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "elliott-wave-fibonacci",
+      "title": "Elliott_Wave_Fibonacci Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "elliott-wave-impulse-detector",
+      "title": "Elliott_Wave_Impulse_Detector Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4836,6 +4888,32 @@
     }
   ],
   "engulfing-scanner": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "envelopes-fixed-percentage": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -5464,19 +5542,19 @@
       "slug": "atr-based-position-sizing",
       "title": "Atr_Based_Position_Sizing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "atr",
       "title": "Atr Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "average-true-range",
       "title": "Average True Range Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "1-trendline-strategy",
