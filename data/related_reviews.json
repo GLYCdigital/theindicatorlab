@@ -2396,13 +2396,13 @@
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.1
+      "score": 5.0
     },
     {
       "slug": "volatility-stop",
       "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.1
+      "score": 5.0
     },
     {
       "slug": "atr-volatility-indicator",
@@ -2752,7 +2752,7 @@
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.1
+      "score": 5.0
     }
   ],
   "chande-momentum-oscillator-cmo": [
@@ -4679,6 +4679,32 @@
       "score": 4.9
     }
   ],
+  "ehlers-mesa-adaptive": [
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    },
+    {
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.9
+    }
+  ],
   "ehlers-mesa-sine-wave": [
     {
       "slug": "1-trendline-strategy",
@@ -4732,6 +4758,32 @@
     }
   ],
   "ehlers-supersmoother": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "elder-ray-index-bull-bear-power": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -5762,13 +5814,13 @@
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     },
     {
       "slug": "know-sure-thing",
       "title": "Know Sure Thing Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.0
+      "score": 0.9
     }
   ],
   "fibonacci-time-zones": [
@@ -5795,6 +5847,32 @@
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.6
+    }
+  ],
+  "fisher-transform-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "cci-divergence",
+      "title": "Cci_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
     }
   ],
   "fisher-transform-mtf-divergence": [
@@ -10664,25 +10742,25 @@
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.9
+      "score": 1.8
     },
     {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.9
+      "score": 1.8
     },
     {
       "slug": "moving-average-exp-envelope",
       "title": "Moving Average Exp Envelope Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.9
+      "score": 1.8
     },
     {
-      "slug": "volume-weighted-moving-average",
-      "title": "Volume Weighted Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "slug": "moving-average-ribbon",
+      "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 1.9
+      "score": 1.8
     }
   ],
   "rainbow-oscillator": [
@@ -12900,13 +12978,13 @@
       "slug": "carrier-volatility-pumori",
       "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 5.1
+      "score": 5.0
     },
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.1
+      "score": 5.0
     },
     {
       "slug": "atr-volatility-indicator",
@@ -13247,16 +13325,16 @@
       "score": 5.0
     },
     {
-      "slug": "guppy-multiple-moving-average",
-      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.9
-    },
-    {
       "slug": "hull-moving-average",
       "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.9
+    },
+    {
+      "slug": "guppy-multiple-moving-average",
+      "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.8
     }
   ],
   "volumetric-trend-ribbon": [
