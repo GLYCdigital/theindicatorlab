@@ -2053,6 +2053,32 @@
       "score": 4.6
     }
   ],
+  "bollinger-bands-with-ema": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger_Bands_B Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
   "bollinger-bands": [
     {
       "slug": "keltner-channels",
@@ -3067,6 +3093,32 @@
       "score": 0.6
     }
   ],
+  "commodity-channel-index-cci": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
   "commodity-channel-index": [
     {
       "slug": "accumulation-swing-index",
@@ -4031,6 +4083,12 @@
   ],
   "double-exponential-moving-average-dema": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "ema-cross-signal",
       "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4045,12 +4103,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4863,6 +4915,12 @@
   ],
   "ema-cross-signal": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4879,15 +4937,15 @@
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
     }
   ],
   "ema-cross": [
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
     {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
@@ -4903,12 +4961,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -4921,6 +4973,12 @@
       "score": 5.0
     },
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4929,18 +4987,18 @@
     {
       "slug": "ema-cross-signal",
       "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
   ],
   "ema-multiple-timeframe": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4955,18 +5013,18 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
   ],
   "ema-ribbon": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -4981,12 +5039,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -5227,6 +5279,12 @@
   ],
   "exponential-moving-average-ema": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -5241,12 +5299,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -6111,6 +6163,12 @@
   ],
   "fractional-ema-kalman-filter-d7": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6125,18 +6183,18 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
   ],
   "fractional-ema-kalman-filter": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -6151,12 +6209,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -6444,6 +6496,32 @@
       "slug": "crab-pattern",
       "title": "Crab_Pattern Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "gator-oscillator-bill-williams": [
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "alligator-bill-williams",
+      "title": "Alligator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 3,
       "score": 4.6
     }
   ],
@@ -7255,6 +7333,12 @@
   ],
   "jurik-cfj": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7269,12 +7353,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -7302,13 +7380,19 @@
       "slug": "moving-average-ribbon",
       "title": "Moving Average Ribbon Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.2
     }
   ],
   "jurik-volatility-bands": [
     {
       "slug": "atr-volatility-indicator",
       "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
@@ -7321,12 +7405,6 @@
     {
       "slug": "chaikin-volatility-histogram",
       "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -8737,6 +8815,12 @@
   ],
   "moving-average-envelope": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -8751,12 +8835,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -8792,7 +8870,7 @@
       "slug": "jurik-moving-average",
       "title": "Jurik Moving Average (JMA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.3
+      "score": 5.2
     },
     {
       "slug": "vidya",
@@ -8801,14 +8879,14 @@
       "score": 5.1
     },
     {
-      "slug": "double-exponential-moving-average-dema",
-      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "ema-cross-signal",
-      "title": "Ema_Cross_Signal Review: Settings, Strategy &amp; How to Use It",
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -12291,8 +12369,8 @@
       "score": 5.0
     },
     {
-      "slug": "double-exponential-moving-average-dema",
-      "title": "Double_Exponential_Moving_Average_Dema Review: Settings, Strategy &amp; How to Use It",
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
