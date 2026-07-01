@@ -2671,13 +2671,19 @@
       "score": 4.6
     },
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
   ],
   "chaikin-volatility-histogram": [
+    {
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.6
+    },
     {
       "slug": "chaikin-volatility",
       "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
@@ -2695,11 +2701,31 @@
       "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
+    }
+  ],
+  "chaikin-volatility-oscillator": [
+    {
+      "slug": "chaikin-volatility-histogram",
+      "title": "Chaikin_Volatility_Histogram Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.6
     },
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
+      "slug": "chaikin-volatility",
+      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.6
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
       "score": 4.6
     }
   ],
@@ -2717,14 +2743,14 @@
       "score": 8.6
     },
     {
-      "slug": "carrier-volatility-pumori",
-      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 5.1
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 8.6
     },
     {
-      "slug": "volatility-stop",
-      "title": "Volatility Stop Review: Settings, Strategy &amp; How to Use It",
+      "slug": "carrier-volatility-pumori",
+      "title": "Carrier Volatility Pumori Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
       "score": 5.1
     }
@@ -3221,6 +3247,32 @@
       "title": "Alma Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "coppock-with-signals": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
     }
   ],
   "correlation-indicator": [
@@ -6681,6 +6733,32 @@
       "score": 4.6
     }
   ],
+  "guppy-multiple-moving-average-gmma": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
   "guppy-multiple-moving-average": [
     {
       "slug": "kitty-s-law-theultimator5",
@@ -7013,8 +7091,8 @@
       "score": 4.6
     },
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -7195,8 +7273,8 @@
       "score": 4.6
     },
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -7221,8 +7299,8 @@
       "score": 4.6
     },
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -12733,8 +12811,8 @@
       "score": 4.6
     },
     {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "chaikin-volatility-oscillator",
+      "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
