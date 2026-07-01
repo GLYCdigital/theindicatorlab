@@ -602,19 +602,19 @@
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "atr-bands",
@@ -1015,28 +1015,28 @@
   ],
   "aroon": [
     {
-      "slug": "awesome-oscillator",
-      "title": "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 0.8
-    },
-    {
-      "slug": "balance-of-power",
-      "title": "Balance Of Power Review: Settings, Strategy &amp; How to Use It",
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
+      "score": 0.6
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy &amp; How to Use It",
-      "rating": 3,
-      "score": 0.8
-    },
-    {
-      "slug": "chaikin-volatility",
-      "title": "Chaikin Volatility Review: Settings, Strategy &amp; How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
     }
   ],
   "artemis-adaptive-rsi": [
@@ -1631,10 +1631,10 @@
       "score": 5.0
     },
     {
-      "slug": "market-cipher-b",
-      "title": "Market Cipher B Review: Settings, Strategy &amp; How to Use It",
+      "slug": "relative-strength-index-rsi",
+      "title": "Relative Strength Index Rsi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.9
+      "score": 0.8
     }
   ],
   "bat-pattern": [
@@ -3951,6 +3951,32 @@
       "score": 4.6
     }
   ],
+  "dmi-adx-combo": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
   "dmi-directional-movement-index": [
     {
       "slug": "1-trendline-strategy",
@@ -4497,6 +4523,32 @@
       "score": 0.6
     }
   ],
+  "ehlers-deviation-scaled-oscillator": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
   "ehlers-deviation-scaled": [
     {
       "slug": "1-trendline-strategy",
@@ -4550,6 +4602,32 @@
     }
   ],
   "ehlers-instantaneous-trendline": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "ehlers-laguerre-filter": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -8954,7 +9032,7 @@
       "slug": "vidya",
       "title": "Variable Index Dynamic Average (VIDYA) Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 5.1
+      "score": 5.0
     },
     {
       "slug": "bollinger-bands-with-ema",
@@ -11574,19 +11652,19 @@
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "atr-bands",
@@ -11883,12 +11961,6 @@
   ],
   "super-trend": [
     {
-      "slug": "ais-supertrend",
-      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 0.9
-    },
-    {
       "slug": "linear-regression",
       "title": "Linear Regression Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -11905,6 +11977,12 @@
       "title": "Price Channel Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.9
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.8
     }
   ],
   "supertrend-atr-trailing-stop": [
@@ -11918,19 +11996,19 @@
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "supertrend-parameter-sensitivity-3d",
       "title": "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     }
   ],
   "supertrend-parameter-sensitivity-3d": [
@@ -11938,19 +12016,19 @@
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "stoc-supertrend-lite",
       "title": "Stoc_Supertrend_Lite Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "supertrend-atr-trailing-stop",
       "title": "Supertrend Atr Trailing Stop Review: Settings, Strategy &amp; How to Use It",
       "rating": 5,
-      "score": 4.9
+      "score": 4.8
     },
     {
       "slug": "atr-bands",
@@ -13169,14 +13247,14 @@
       "score": 5.0
     },
     {
-      "slug": "hull-moving-average",
-      "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 2.0
-    },
-    {
       "slug": "guppy-multiple-moving-average",
       "title": "Guppy Multiple Moving Average Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 1.9
+    },
+    {
+      "slug": "hull-moving-average",
+      "title": "Hull Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 1.9
     }
