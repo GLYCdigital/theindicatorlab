@@ -8657,6 +8657,32 @@
       "score": 4.6
     }
   ],
+  "loss-recovery-calculator": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
   "lstm-price-forecast": [
     {
       "slug": "1-trendline-strategy",
@@ -8762,6 +8788,32 @@
     }
   ],
   "machine-learning-knn": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "machine-learning-linear-regression": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -9490,6 +9542,32 @@
     }
   ],
   "mr-market-maker": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "mtf-adx": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -13625,26 +13703,26 @@
   ],
   "volume-ratio": [
     {
+      "slug": "negative-volume-index",
+      "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
+      "slug": "on-balance-volume",
+      "title": "On Balance Volume Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.9
+    },
+    {
       "slug": "positive-volume-index",
       "title": "Positive Volume Index Review: Settings, Strategy &amp; How to Use It",
       "rating": 3,
-      "score": 1.0
+      "score": 0.9
     },
     {
-      "slug": "volume-flow",
-      "title": "Volume Flow Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.0
-    },
-    {
-      "slug": "volume-oscillator",
-      "title": "Volume Oscillator Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 1.0
-    },
-    {
-      "slug": "negative-volume-index",
-      "title": "Negative Volume Index Review: Settings, Strategy &amp; How to Use It",
+      "slug": "price-volume-trend",
+      "title": "Price Volume Trend Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 0.9
     }
