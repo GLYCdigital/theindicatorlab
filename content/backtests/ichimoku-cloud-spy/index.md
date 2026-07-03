@@ -1,22 +1,22 @@
 ---
 {
   "title": "Ichimoku \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+53.0%"
+      "value": "+48.6%"
     },
     {
       "label": "CAGR",
-      "value": "8.9%"
+      "value": "8.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.51"
+      "value": "0.46"
     },
     {
       "label": "Max Drawdown",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "50.0%"
+      "value": "52.6%"
     },
     {
       "label": "Profit Factor",
-      "value": "2.84"
+      "value": "2.77"
     },
     {
       "label": "Total Trades",
-      "value": "20"
+      "value": "19"
     },
     {
       "label": "Avg Trade",
-      "value": "60 days"
+      "value": "58 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.9%",
-      "trades": "2",
-      "win_rate_pct": "50.0%"
+      "return_pct": "+10.4%",
+      "trades": "1",
+      "win_rate_pct": "52.6%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "5",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "52.6%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "5",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "52.6%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "2",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "52.6%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "4",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "52.6%"
     },
     {
       "year": "2026",
-      "return_pct": "+8.1%",
+      "return_pct": "+9.6%",
       "trades": "2",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "52.6%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On SPY, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-28 → 2026-06-26), the Ichimoku Cloud delivered a **+53.0% total return** on SPY, compounding at **8.9% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the Ichimoku Cloud delivered a **+48.6% total return** on SPY, compounding at **8.3% annually**. 
 
-At **0.51**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.46**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **19.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 20% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,24 +119,24 @@ The catch? A **19.9% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.51 | ⚠️ Moderate |
+| Sharpe Ratio | 0.46 | ❌ Weak |
 | Max Drawdown | 19.9% | ⚠️ Moderate |
-| Win Rate | 50.0% | ⚠️ Below average |
-| Profit Factor | 2.84 | ✅ Excellent |
-| Trades/Year | ~20 total | Selective — not overtrading |
+| Win Rate | 52.6% | ⚠️ Below average |
+| Profit Factor | 2.77 | ✅ Excellent |
+| Trades/Year | ~19 total | Selective — not overtrading |
 
-The **profit factor of 2.84** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 50.0% win rate, this is a mathematically sound edge.
+The **profit factor of 2.77** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 52.6% win rate, this is a mathematically sound edge.
 
 ## Does the Ichimoku Cloud Work on SPY?
 
-The ichimoku cloud shows moderate edge on SPY — **0.51 Sharpe, 2.84 profit factor** over 20 trades. It's not a home run, but it's also not random.
+The ichimoku cloud shows moderate edge on SPY — **0.46 Sharpe, 2.77 profit factor** over 19 trades. It's not a home run, but it's also not random.
 
-The 50.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 52.6% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on SPY. Combine with trend filters or volume confirmation for better results.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on SPY](/backtests/ichimoku-cloud-spy-trades.png)

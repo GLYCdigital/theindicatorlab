@@ -1,14 +1,14 @@
 ---
 {
   "title": "Stochastic \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-23.6%"
+      "value": "-23.3%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "42.1%"
+      "value": "41.9%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "159"
+      "value": "160"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.9%",
+      "return_pct": "+10.4%",
       "trades": "15",
-      "win_rate_pct": "42.1%"
+      "win_rate_pct": "41.9%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "32",
-      "win_rate_pct": "42.1%"
+      "win_rate_pct": "41.9%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "34",
-      "win_rate_pct": "42.1%"
+      "win_rate_pct": "41.9%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "31",
-      "win_rate_pct": "42.1%"
+      "win_rate_pct": "41.9%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "32",
-      "win_rate_pct": "42.1%"
+      "win_rate_pct": "41.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+8.1%",
-      "trades": "15",
-      "win_rate_pct": "42.1%"
+      "return_pct": "+9.6%",
+      "trades": "16",
+      "win_rate_pct": "41.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On SPY, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-28 → 2026-06-26), the Stochastic Crossover delivered a **-23.6% total return** on SPY, compounding at **-5.2% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the Stochastic Crossover delivered a **-23.3% total return** on SPY, compounding at **-5.2% annually**. 
 
 At **-0.46**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.46 | ❌ Weak |
 | Max Drawdown | 32.1% | ⚠️ Significant |
-| Win Rate | 42.1% | ⚠️ Below average |
+| Win Rate | 41.9% | ⚠️ Below average |
 | Profit Factor | 0.77 | ❌ Unprofitable |
-| Trades/Year | ~159 total | Active |
+| Trades/Year | ~160 total | Active |
 
-The **profit factor of 0.77** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 42.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.77** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 41.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on SPY?
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on SPY](/backtests/stochastic-crossover-spy-trades.png)

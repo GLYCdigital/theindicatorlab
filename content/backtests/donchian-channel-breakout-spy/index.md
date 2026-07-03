@@ -1,14 +1,14 @@
 ---
 {
   "title": "Donchian \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+12.9%"
+      "value": "+13.3%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "28.8%"
+      "value": "28.4%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "66"
+      "value": "67"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.9%",
+      "return_pct": "+10.4%",
       "trades": "7",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "15",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "13",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "10",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "13",
-      "win_rate_pct": "28.8%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2026",
-      "return_pct": "+8.1%",
-      "trades": "8",
-      "win_rate_pct": "28.8%"
+      "return_pct": "+9.6%",
+      "trades": "9",
+      "win_rate_pct": "28.4%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On SPY, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-28 → 2026-06-26), the Donchian Channel Breakout delivered a **+12.9% total return** on SPY, compounding at **2.5% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the Donchian Channel Breakout delivered a **+13.3% total return** on SPY, compounding at **2.5% annually**. 
 
 At **0.06**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **23.9% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.06 | ❌ Weak |
 | Max Drawdown | 23.9% | ⚠️ Moderate |
-| Win Rate | 28.8% | ❌ Low — relies on outsized wins |
+| Win Rate | 28.4% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.18 | ⚠️ Marginal |
-| Trades/Year | ~66 total | Active |
+| Trades/Year | ~67 total | Active |
 
-The **profit factor of 1.18** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 28.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.18** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 28.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on SPY?
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on SPY](/backtests/donchian-channel-breakout-spy-trades.png)

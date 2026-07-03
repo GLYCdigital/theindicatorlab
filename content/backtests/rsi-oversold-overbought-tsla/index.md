@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-42.4%"
+      "value": "-41.1%"
     },
     {
       "label": "CAGR",
-      "value": "-10.4%"
+      "value": "-10.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+53.4%",
+      "return_pct": "+60.2%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.2%",
+      "return_pct": "-10.2%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     }
@@ -109,7 +109,7 @@ On TSLA, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-06-28 → 2026-06-26), the RSI Oversold/Overbought delivered a **-42.4% total return** on TSLA, compounding at **-10.4% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the RSI Oversold/Overbought delivered a **-41.1% total return** on TSLA, compounding at **-10.1% annually**. 
 
 At **-0.10**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on TSLA unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on TSLA](/backtests/rsi-oversold-overbought-tsla-trades.png)

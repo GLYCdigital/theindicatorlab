@@ -1,18 +1,18 @@
 ---
 {
   "title": "EMA \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+80.3%"
+      "value": "+80.5%"
     },
     {
       "label": "CAGR",
-      "value": "12.5%"
+      "value": "12.6%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+12.7%",
+      "return_pct": "+10.7%",
       "trades": "2",
       "win_rate_pct": "37.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.4%",
+      "return_pct": "+16.5%",
       "trades": "1",
       "win_rate_pct": "37.5%"
     }
@@ -109,7 +109,7 @@ On QQQ, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-06-28 → 2026-06-26), the EMA Ribbon delivered a **+80.3% total return** on QQQ, compounding at **12.5% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the EMA Ribbon delivered a **+80.5% total return** on QQQ, compounding at **12.6% annually**. 
 
 At **0.66**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on QQQ. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on QQQ](/backtests/ema-ribbon-qqq-trades.png)

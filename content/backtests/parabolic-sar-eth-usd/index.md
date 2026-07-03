@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-05 \u2192 2026-07-03",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-49.0%"
+      "value": "-47.9%"
     },
     {
       "label": "CAGR",
-      "value": "-12.6%"
+      "value": "-12.2%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "34.7%"
+      "value": "34.2%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "72"
+      "value": "73"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+77.1%",
+      "return_pct": "+67.5%",
       "trades": "5",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "14",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "14",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "16",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "17",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2026",
-      "return_pct": "-47.3%",
-      "trades": "6",
-      "win_rate_pct": "34.7%"
+      "return_pct": "-42.1%",
+      "trades": "7",
+      "win_rate_pct": "34.2%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On ETH, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-06-28 → 2026-06-26), the Parabolic SAR delivered a **-49.0% total return** on ETH-USD, compounding at **-12.6% annually**. 
+Over five years (2021-07-05 → 2026-07-03), the Parabolic SAR delivered a **-47.9% total return** on ETH-USD, compounding at **-12.2% annually**. 
 
 At **-0.07**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **76.5% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.07 | ❌ Weak |
 | Max Drawdown | 76.5% | ⚠️ Significant |
-| Win Rate | 34.7% | ❌ Low — relies on outsized wins |
+| Win Rate | 34.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.86 | ❌ Unprofitable |
-| Trades/Year | ~72 total | Active |
+| Trades/Year | ~73 total | Active |
 
-The **profit factor of 0.86** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 34.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.86** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 34.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on ETH?
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on ETH-USD](/backtests/parabolic-sar-eth-usd-trades.png)

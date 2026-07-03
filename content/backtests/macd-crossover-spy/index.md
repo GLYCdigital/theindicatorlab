@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+17.4%"
+      "value": "+16.2%"
     },
     {
       "label": "CAGR",
-      "value": "3.3%"
+      "value": "3.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.16"
+      "value": "0.13"
     },
     {
       "label": "Max Drawdown",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "46.2%"
+      "value": "43.4%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.31"
+      "value": "1.29"
     },
     {
       "label": "Total Trades",
-      "value": "52"
+      "value": "53"
     },
     {
       "label": "Avg Trade",
-      "value": "17 days"
+      "value": "16 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.9%",
-      "trades": "4",
-      "win_rate_pct": "46.2%"
+      "return_pct": "+10.4%",
+      "trades": "5",
+      "win_rate_pct": "43.4%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "7",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "43.4%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "10",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "43.4%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "13",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "43.4%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "13",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "43.4%"
     },
     {
       "year": "2026",
-      "return_pct": "+8.1%",
+      "return_pct": "+9.6%",
       "trades": "5",
-      "win_rate_pct": "46.2%"
+      "win_rate_pct": "43.4%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On SPY, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-28 → 2026-06-26), the MACD Crossover delivered a **+17.4% total return** on SPY, compounding at **3.3% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the MACD Crossover delivered a **+16.2% total return** on SPY, compounding at **3.0% annually**. 
 
-At **0.16**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.13**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **15.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 15% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **15.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.16 | ❌ Weak |
+| Sharpe Ratio | 0.13 | ❌ Weak |
 | Max Drawdown | 15.3% | ⚠️ Moderate |
-| Win Rate | 46.2% | ⚠️ Below average |
-| Profit Factor | 1.31 | ⚠️ Marginal |
-| Trades/Year | ~52 total | Active |
+| Win Rate | 43.4% | ⚠️ Below average |
+| Profit Factor | 1.29 | ⚠️ Marginal |
+| Trades/Year | ~53 total | Active |
 
-The **profit factor of 1.31** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 46.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.29** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 43.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on SPY?
 
-The macd crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **0.16 Sharpe ratio** and **1.31 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **0.13 Sharpe ratio** and **1.29 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on SPY](/backtests/macd-crossover-spy-trades.png)

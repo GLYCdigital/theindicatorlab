@@ -1,14 +1,14 @@
 ---
 {
   "title": "BollingerBands \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.9%"
+      "value": "+14.7%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "39.1%"
+      "value": "38.5%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "64"
+      "value": "65"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.9%",
+      "return_pct": "+10.4%",
       "trades": "6",
-      "win_rate_pct": "39.1%"
+      "win_rate_pct": "38.5%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "15",
-      "win_rate_pct": "39.1%"
+      "win_rate_pct": "38.5%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "11",
-      "win_rate_pct": "39.1%"
+      "win_rate_pct": "38.5%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "11",
-      "win_rate_pct": "39.1%"
+      "win_rate_pct": "38.5%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "13",
-      "win_rate_pct": "39.1%"
+      "win_rate_pct": "38.5%"
     },
     {
       "year": "2026",
-      "return_pct": "+8.1%",
-      "trades": "8",
-      "win_rate_pct": "39.1%"
+      "return_pct": "+9.6%",
+      "trades": "9",
+      "win_rate_pct": "38.5%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -92,8 +92,8 @@
       "url": "/reviews/bollinger-bands-percent-b/"
     },
     {
-      "title": "bollinger bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands/"
+      "title": "bollinger_bands_macd_combo review: settings, strategy &amp; how to use it",
+      "url": "/reviews/bollinger-bands-macd-combo/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On SPY, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-06-28 → 2026-06-26), the TTM Squeeze Pro delivered a **+14.9% total return** on SPY, compounding at **2.8% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the TTM Squeeze Pro delivered a **+14.7% total return** on SPY, compounding at **2.8% annually**. 
 
 At **0.09**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **21.8% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.09 | ❌ Weak |
 | Max Drawdown | 21.8% | ⚠️ Moderate |
-| Win Rate | 39.1% | ❌ Low — relies on outsized wins |
+| Win Rate | 38.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.23 | ⚠️ Marginal |
-| Trades/Year | ~64 total | Active |
+| Trades/Year | ~65 total | Active |
 
-The **profit factor of 1.23** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 39.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.23** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 38.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the TTM Squeeze Pro Work on SPY?
 
@@ -146,6 +146,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on SPY](/backtests/ttm-squeeze-pro-spy-trades.png)

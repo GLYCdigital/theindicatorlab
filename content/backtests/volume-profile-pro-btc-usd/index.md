@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-05 \u2192 2026-07-03",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+78.9%"
+      "value": "+30.4%"
     },
     {
       "label": "CAGR",
-      "value": "12.3%"
+      "value": "5.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.41"
+      "value": "0.25"
     },
     {
       "label": "Max Drawdown",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "21.3%"
+      "value": "20.4%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.27"
+      "value": "1.14"
     },
     {
       "label": "Total Trades",
-      "value": "94"
+      "value": "93"
     },
     {
       "label": "Avg Trade",
-      "value": "10 days"
+      "value": "9 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+34.5%",
-      "trades": "6",
-      "win_rate_pct": "21.3%"
+      "return_pct": "+37.2%",
+      "trades": "5",
+      "win_rate_pct": "20.4%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "19",
-      "win_rate_pct": "21.3%"
+      "win_rate_pct": "20.4%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "19",
-      "win_rate_pct": "21.3%"
+      "win_rate_pct": "20.4%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "21",
-      "win_rate_pct": "21.3%"
+      "win_rate_pct": "20.4%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "23",
-      "win_rate_pct": "21.3%"
+      "win_rate_pct": "20.4%"
     },
     {
       "year": "2026",
-      "return_pct": "-32.4%",
+      "return_pct": "-30.0%",
       "trades": "6",
-      "win_rate_pct": "21.3%"
+      "win_rate_pct": "20.4%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On BTC, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-28 → 2026-06-26), the Volume Profile Pro delivered a **+78.9% total return** on BTC-USD, compounding at **12.3% annually**. 
+Over five years (2021-07-05 → 2026-07-03), the Volume Profile Pro delivered a **+30.4% total return** on BTC-USD, compounding at **5.5% annually**. 
 
-At **0.41**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.25**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **56.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 56% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,24 +119,24 @@ The catch? A **56.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.41 | ❌ Weak |
+| Sharpe Ratio | 0.25 | ❌ Weak |
 | Max Drawdown | 56.5% | ⚠️ Significant |
-| Win Rate | 21.3% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.27 | ⚠️ Marginal |
-| Trades/Year | ~94 total | Active |
+| Win Rate | 20.4% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.14 | ⚠️ Marginal |
+| Trades/Year | ~93 total | Active |
 
-The **profit factor of 1.27** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 21.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.14** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 20.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Volume Profile Pro Work on BTC?
 
-The volume profile pro shows moderate edge on BTC — **0.41 Sharpe, 1.27 profit factor** over 94 trades. It's not a home run, but it's also not random.
+The volume profile pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.25 Sharpe ratio** and **1.14 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
-The 21.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+This doesn't mean the VWAP is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
-Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
+Our take: skip it on BTC unless you're combining it with other confirmations or using it on different timeframes.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on BTC-USD](/backtests/volume-profile-pro-btc-usd-trades.png)

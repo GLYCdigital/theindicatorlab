@@ -1,22 +1,22 @@
 ---
 {
   "title": "CVD \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-05 \u2192 2026-07-03",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+61.8%"
+      "value": "+17.4%"
     },
     {
       "label": "CAGR",
-      "value": "10.1%"
+      "value": "3.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.36"
+      "value": "0.19"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "24.0%"
+      "value": "23.2%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.20"
+      "value": "1.08"
     },
     {
       "label": "Total Trades",
-      "value": "100"
+      "value": "99"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+34.5%",
-      "trades": "9",
-      "win_rate_pct": "24.0%"
+      "return_pct": "+37.2%",
+      "trades": "8",
+      "win_rate_pct": "23.2%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "18",
-      "win_rate_pct": "24.0%"
+      "win_rate_pct": "23.2%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "26",
-      "win_rate_pct": "24.0%"
+      "win_rate_pct": "23.2%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "17",
-      "win_rate_pct": "24.0%"
+      "win_rate_pct": "23.2%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "22",
-      "win_rate_pct": "24.0%"
+      "win_rate_pct": "23.2%"
     },
     {
       "year": "2026",
-      "return_pct": "-32.4%",
+      "return_pct": "-30.0%",
       "trades": "8",
-      "win_rate_pct": "24.0%"
+      "win_rate_pct": "23.2%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On BTC, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-06-28 → 2026-06-26), the CVD Divergence Alerts delivered a **+61.8% total return** on BTC-USD, compounding at **10.1% annually**. 
+Over five years (2021-07-05 → 2026-07-03), the CVD Divergence Alerts delivered a **+17.4% total return** on BTC-USD, compounding at **3.3% annually**. 
 
-At **0.36**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.19**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **53.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 54% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,21 +119,21 @@ The catch? A **53.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.36 | ❌ Weak |
+| Sharpe Ratio | 0.19 | ❌ Weak |
 | Max Drawdown | 53.8% | ⚠️ Significant |
-| Win Rate | 24.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.20 | ⚠️ Marginal |
-| Trades/Year | ~100 total | Active |
+| Win Rate | 23.2% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.08 | ⚠️ Marginal |
+| Trades/Year | ~99 total | Active |
 
-The **profit factor of 1.20** tells the real story: when the CVD fires, the winning signals are larger than the losing ones. Combined with a 24.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.08** tells the real story: when the CVD fires, the winning signals are larger than the losing ones. Combined with a 23.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the CVD Divergence Alerts Work on BTC?
 
-The cvd divergence alerts shows moderate edge on BTC — **0.36 Sharpe, 1.20 profit factor** over 100 trades. It's not a home run, but it's also not random.
+The cvd divergence alerts struggled to generate meaningful edge on BTC over this 5-year period. With a **0.19 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
-The 24.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+This doesn't mean the CVD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
-Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
+Our take: skip it on BTC unless you're combining it with other confirmations or using it on different timeframes.
 
 
 <div class="affiliate-cta-card" style="margin:2rem 0">
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on BTC-USD](/backtests/cvd-divergence-alerts-btc-usd-trades.png)

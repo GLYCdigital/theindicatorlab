@@ -1,38 +1,38 @@
 ---
 {
   "title": "RSI \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-05 \u2192 2026-07-03",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-13.5%"
+      "value": "-12.9%"
     },
     {
       "label": "CAGR",
-      "value": "-2.9%"
+      "value": "-2.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.58"
+      "value": "-0.56"
     },
     {
       "label": "Max Drawdown",
-      "value": "21.2%"
+      "value": "20.9%"
     },
     {
       "label": "Win Rate",
-      "value": "19.0%"
+      "value": "22.7%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.54"
+      "value": "0.56"
     },
     {
       "label": "Total Trades",
-      "value": "21"
+      "value": "22"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-5.2%",
+      "return_pct": "-4.5%",
       "trades": "5",
-      "win_rate_pct": "19.0%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2022",
       "return_pct": "-6.3%",
       "trades": "5",
-      "win_rate_pct": "19.0%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2023",
       "return_pct": "+3.3%",
       "trades": "2",
-      "win_rate_pct": "19.0%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2024",
       "return_pct": "-5.9%",
       "trades": "6",
-      "win_rate_pct": "19.0%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2025",
       "return_pct": "+13.5%",
       "trades": "1",
-      "win_rate_pct": "19.0%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2026",
-      "return_pct": "-3.0%",
-      "trades": "2",
-      "win_rate_pct": "19.0%"
+      "return_pct": "-2.6%",
+      "trades": "3",
+      "win_rate_pct": "22.7%"
     }
   ],
   "cta_headline": "Trade Forex with TradingView Pro",
@@ -109,27 +109,27 @@ On EURUSD, the RSI acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-06-28 → 2026-06-26), the RSI Oversold/Overbought delivered a **-13.5% total return** on EURUSD=X, compounding at **-2.9% annually**. 
+Over five years (2021-07-05 → 2026-07-03), the RSI Oversold/Overbought delivered a **-12.9% total return** on EURUSD=X, compounding at **-2.7% annually**. 
 
-At **-0.58**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.56**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **21.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 21% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **20.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 21% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.58 | ❌ Weak |
-| Max Drawdown | 21.2% | ⚠️ Moderate |
-| Win Rate | 19.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.54 | ❌ Unprofitable |
-| Trades/Year | ~21 total | Selective — not overtrading |
+| Sharpe Ratio | -0.56 | ❌ Weak |
+| Max Drawdown | 20.9% | ⚠️ Moderate |
+| Win Rate | 22.7% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.56 | ❌ Unprofitable |
+| Trades/Year | ~22 total | Selective — not overtrading |
 
-The **profit factor of 0.54** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 19.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.56** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 22.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the RSI Oversold/Overbought Work on EURUSD?
 
-The rsi oversold/overbought struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.58 Sharpe ratio** and **0.54 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The rsi oversold/overbought struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.56 Sharpe ratio** and **0.56 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on EURUSD=X](/backtests/rsi-oversold-overbought-eurusd-trades.png)

@@ -1,14 +1,14 @@
 ---
 {
   "title": "SAR \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-05 \u2192 2026-07-03",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-6.5%"
+      "value": "-6.1%"
     },
     {
       "label": "CAGR",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-1.00"
+      "value": "-0.98"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.79"
+      "value": "0.80"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-5.2%",
-      "trades": "6",
+      "return_pct": "-4.5%",
+      "trades": "5",
       "win_rate_pct": "36.2%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-3.0%",
-      "trades": "4",
+      "return_pct": "-2.6%",
+      "trades": "5",
       "win_rate_pct": "36.2%"
     }
   ],
@@ -109,9 +109,9 @@ On EURUSD, the SAR acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-06-28 → 2026-06-26), the Parabolic SAR delivered a **-6.5% total return** on EURUSD=X, compounding at **-1.3% annually**. 
+Over five years (2021-07-05 → 2026-07-03), the Parabolic SAR delivered a **-6.1% total return** on EURUSD=X, compounding at **-1.3% annually**. 
 
-At **-1.00**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.98**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **12.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 13% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **12.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -1.00 | ❌ Weak |
+| Sharpe Ratio | -0.98 | ❌ Weak |
 | Max Drawdown | 12.6% | ✅ Low |
 | Win Rate | 36.2% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.79 | ❌ Unprofitable |
+| Profit Factor | 0.80 | ❌ Unprofitable |
 | Trades/Year | ~58 total | Active |
 
-The **profit factor of 0.79** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 36.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.80** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 36.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on EURUSD?
 
-The parabolic sar struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-1.00 Sharpe ratio** and **0.79 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.98 Sharpe ratio** and **0.80 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on EURUSD=X](/backtests/parabolic-sar-eurusd-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-06 \u2192 2026-07-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+40.8%"
+      "value": "+44.6%"
     },
     {
       "label": "CAGR",
-      "value": "7.1%"
+      "value": "7.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.36"
+      "value": "0.39"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "44.8%"
+      "value": "44.3%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.17"
+      "value": "1.15"
     },
     {
       "label": "Total Trades",
-      "value": "288"
+      "value": "289"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+32.1%",
-      "trades": "29",
-      "win_rate_pct": "44.8%"
+      "return_pct": "+25.4%",
+      "trades": "28",
+      "win_rate_pct": "44.3%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "58",
-      "win_rate_pct": "44.8%"
+      "win_rate_pct": "44.3%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "59",
-      "win_rate_pct": "44.8%"
+      "win_rate_pct": "44.3%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "58",
-      "win_rate_pct": "44.8%"
+      "win_rate_pct": "44.3%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "59",
-      "win_rate_pct": "44.8%"
+      "win_rate_pct": "44.3%"
     },
     {
       "year": "2026",
-      "return_pct": "+3.6%",
-      "trades": "25",
-      "win_rate_pct": "44.8%"
+      "return_pct": "+14.1%",
+      "trades": "27",
+      "win_rate_pct": "44.3%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On AAPL, the SuperTrend acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-06-28 → 2026-06-26), the SuperTrend + ATR Trailing Stop delivered a **+40.8% total return** on AAPL, compounding at **7.1% annually**. 
+Over five years (2021-07-06 → 2026-07-02), the SuperTrend + ATR Trailing Stop delivered a **+44.6% total return** on AAPL, compounding at **7.7% annually**. 
 
-At **0.36**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.39**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **29.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 29% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,19 +119,19 @@ The catch? A **29.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.36 | ❌ Weak |
+| Sharpe Ratio | 0.39 | ❌ Weak |
 | Max Drawdown | 29.0% | ⚠️ Moderate |
-| Win Rate | 44.8% | ⚠️ Below average |
-| Profit Factor | 1.17 | ⚠️ Marginal |
-| Trades/Year | ~288 total | Active |
+| Win Rate | 44.3% | ⚠️ Below average |
+| Profit Factor | 1.15 | ⚠️ Marginal |
+| Trades/Year | ~289 total | Active |
 
-The **profit factor of 1.17** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 44.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.15** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 44.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on AAPL?
 
-The supertrend + atr trailing stop shows moderate edge on AAPL — **0.36 Sharpe, 1.17 profit factor** over 288 trades. It's not a home run, but it's also not random.
+The supertrend + atr trailing stop shows moderate edge on AAPL — **0.39 Sharpe, 1.15 profit factor** over 289 trades. It's not a home run, but it's also not random.
 
-The 44.8% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 44.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on AAPL. Combine with trend filters or volume confirmation for better results.
 
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on AAPL.
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on AAPL](/backtests/supertrend-atr-trailing-stop-aapl-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-06-27",
+  "date": "2026-07-04",
   "draft": false,
   "type": "backtests",
-  "period": "2021-06-28 \u2192 2026-06-26",
+  "period": "2021-07-05 \u2192 2026-07-03",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-54.7%"
+      "value": "-46.1%"
     },
     {
       "label": "CAGR",
-      "value": "-14.6%"
+      "value": "-11.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.49"
+      "value": "-0.31"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.93"
+      "value": "0.94"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+77.1%",
-      "trades": "44",
+      "return_pct": "+67.5%",
+      "trades": "41",
       "win_rate_pct": "36.2%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-47.3%",
-      "trades": "46",
+      "return_pct": "-42.1%",
+      "trades": "49",
       "win_rate_pct": "36.2%"
     }
   ],
@@ -109,9 +109,9 @@ On ETH, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-06-28 → 2026-06-26), the SuperTrend + ATR Trailing Stop delivered a **-54.7% total return** on ETH-USD, compounding at **-14.6% annually**. 
+Over five years (2021-07-05 → 2026-07-03), the SuperTrend + ATR Trailing Stop delivered a **-46.1% total return** on ETH-USD, compounding at **-11.6% annually**. 
 
-At **-0.49**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.31**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **75.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 75% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **75.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.49 | ❌ Weak |
+| Sharpe Ratio | -0.31 | ❌ Weak |
 | Max Drawdown | 75.0% | ⚠️ Significant |
 | Win Rate | 36.2% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.93 | ❌ Unprofitable |
+| Profit Factor | 0.94 | ❌ Unprofitable |
 | Trades/Year | ~467 total | Active |
 
-The **profit factor of 0.93** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 36.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.94** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 36.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on ETH?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.49 Sharpe ratio** and **0.93 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.31 Sharpe ratio** and **0.94 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: June 27, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on ETH-USD](/backtests/supertrend-atr-trailing-stop-eth-usd-trades.png)
