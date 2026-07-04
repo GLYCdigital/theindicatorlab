@@ -1631,10 +1631,10 @@
       "score": 5.0
     },
     {
-      "slug": "relative-strength-index-rsi",
-      "title": "Relative Strength Index Rsi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "candlestick-pattern-strength",
+      "title": "Candlestick_Pattern_Strength Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
-      "score": 0.8
+      "score": 0.7
     }
   ],
   "bat-pattern": [
@@ -7261,6 +7261,12 @@
       "score": 4.6
     },
     {
+      "slug": "heikin-ashi-mtf",
+      "title": "Heikin_Ashi_Mtf Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
       "slug": "heikin-ashi-smoothed",
       "title": "Heikin_Ashi_Smoothed Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
@@ -7269,12 +7275,6 @@
     {
       "slug": "heikin-ashi-trend",
       "title": "Heikin_Ashi_Trend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "smoothed-heikin-ashi",
-      "title": "Smoothed_Heikin_Ashi Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -7305,33 +7305,7 @@
       "score": 4.6
     }
   ],
-  "heikin-ashi-smoothed": [
-    {
-      "slug": "heikin-ashi-candles",
-      "title": "Heikin_Ashi_Candles Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "heikin-ashi-ema-combo",
-      "title": "Heikin_Ashi_Ema_Combo Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "heikin-ashi-trend",
-      "title": "Heikin_Ashi_Trend Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    },
-    {
-      "slug": "smoothed-heikin-ashi",
-      "title": "Smoothed_Heikin_Ashi Review: Settings, Strategy &amp; How to Use It",
-      "rating": 4,
-      "score": 4.6
-    }
-  ],
-  "heikin-ashi-trend": [
+  "heikin-ashi-mtf": [
     {
       "slug": "heikin-ashi-candles",
       "title": "Heikin_Ashi_Candles Review: Settings, Strategy &amp; How to Use It",
@@ -7351,8 +7325,60 @@
       "score": 4.6
     },
     {
-      "slug": "smoothed-heikin-ashi",
-      "title": "Smoothed_Heikin_Ashi Review: Settings, Strategy &amp; How to Use It",
+      "slug": "heikin-ashi-trend",
+      "title": "Heikin_Ashi_Trend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "heikin-ashi-smoothed": [
+    {
+      "slug": "heikin-ashi-candles",
+      "title": "Heikin_Ashi_Candles Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "heikin-ashi-ema-combo",
+      "title": "Heikin_Ashi_Ema_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "heikin-ashi-mtf",
+      "title": "Heikin_Ashi_Mtf Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "heikin-ashi-trend",
+      "title": "Heikin_Ashi_Trend Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    }
+  ],
+  "heikin-ashi-trend": [
+    {
+      "slug": "heikin-ashi-candles",
+      "title": "Heikin_Ashi_Candles Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "heikin-ashi-ema-combo",
+      "title": "Heikin_Ashi_Ema_Combo Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "heikin-ashi-mtf",
+      "title": "Heikin_Ashi_Mtf Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "heikin-ashi-smoothed",
+      "title": "Heikin_Ashi_Smoothed Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
@@ -7696,6 +7722,32 @@
     }
   ],
   "indicator-agreement-scanner": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 0.6
+    }
+  ],
+  "inflation-adjusted-indicator": [
     {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy &amp; How to Use It",
@@ -8239,6 +8291,32 @@
       "title": "Alma Moving Average Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "kst-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
+    },
+    {
+      "slug": "cci-divergence",
+      "title": "Cci_Divergence Review: Settings, Strategy &amp; How to Use It",
+      "rating": 4,
+      "score": 4.6
     }
   ],
   "laguerre-rsi": [
@@ -11947,14 +12025,14 @@
       "score": 4.6
     },
     {
-      "slug": "heikin-ashi-smoothed",
-      "title": "Heikin_Ashi_Smoothed Review: Settings, Strategy &amp; How to Use It",
+      "slug": "heikin-ashi-mtf",
+      "title": "Heikin_Ashi_Mtf Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     },
     {
-      "slug": "heikin-ashi-trend",
-      "title": "Heikin_Ashi_Trend Review: Settings, Strategy &amp; How to Use It",
+      "slug": "heikin-ashi-smoothed",
+      "title": "Heikin_Ashi_Smoothed Review: Settings, Strategy &amp; How to Use It",
       "rating": 4,
       "score": 4.6
     }
