@@ -1,6 +1,6 @@
 ---
 title: "Williams Percent R Review: Settings, Strategy &amp; How to Use It"
-date: 2026-05-28
+date: 2026-07-04
 draft: false
 type: reviews
 image: "/screenshots/williams-percent-r.png"
@@ -15,10 +15,7 @@ categories:
   - Trend
   - Technical Analysis
 rating: 3
-description: "Williams %R — a momentum oscillator that measures overbought and oversold levels. Inverted RSI with a different scaling, same logic."
-
-aliases:
-  - /reviews/williams-percent-range/
+description: "Williams Percent R TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
 ---
 
 <script type="application/ld+json">
@@ -28,7 +25,7 @@ aliases:
   "name": "Williams Percent R",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "Williams %R — a momentum oscillator that measures overbought and oversold levels. Inverted RSI with a different scaling, same logic.",
+  "description": "Williams Percent R TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "3",
@@ -40,7 +37,7 @@ aliases:
 
 # Williams Percent R Review
 
-Williams %R (pronounced "percent R") is Larry Williams' momentum oscillator that measures where the current close falls within the recent high-low range. It's essentially an inverted version of the Stochastic Fast indicator, scaled from -100 to 0 instead of 0 to 100.
+Williams Percent R helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
 
 ![Williams Percent R TradingView indicator chart screenshot](/screenshots/williams-percent-r.png "Williams Percent R indicator on TradingView")
 
@@ -56,16 +53,14 @@ Williams %R (pronounced "percent R") is Larry Williams' momentum oscillator that
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Short-term | 10-20 period |
-| Medium-term | 20-50 period |
-| Long-term | 50-200 period |
+| Default | 14-20 period |
 
 ## How to Use Williams Percent R
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+1. Start by checking the indicator's direction on your trading timeframe
+1. Take long trades only when the indicator shows an uptrend (and vice versa)
+1. Use a faster setting for entry timing and a slower setting for trend filter
+1. Avoid trading when the indicator is flat or whipsawing around the midline
 
 ## Pros & Cons
 
@@ -75,22 +70,22 @@ Williams %R (pronounced "percent R") is Larry Williams' momentum oscillator that
     - Works as both a standalone tool and with other indicators
 
 ### Cons
-    - All trend indicators have some inherent lag behind price
-    - Whipsaws in ranging markets — needs a volatility filter
-    - Parameter selection significantly affects signal quality
+    - Inherent lag means you miss the first part of every move
+    - Sideways markets generate repeated false signals — best used with a range filter
+    - Short periods create noise, long periods create delays — finding the sweet spot matters
 
 ## Who Is This For?
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+- Systematic traders who want rules-based entry and exit signals
+- Traders transitioning from discretionary to semi-automated decision-making
+- Multi-timeframe traders who use long-term trend as their primary filter
 
 ## Alternatives
 
-- Moving Average: simpler but slower
-- SuperTrend: ATR-based, adaptive
-- ADX: measures strength, not direction
-- Parabolic SAR: stops and reversals
+- Moving Average — simpler, slower, the original trend-following tool
+- SuperTrend — ATR-based, adapts to volatility, one of the most popular
+- ADX — measures trend strength but not direction (pair with a direction filter)
+- Parabolic SAR — dot-based stops and reversals, works in strong trends
 
 ## Frequently Asked Questions
 
@@ -110,6 +105,14 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-Decent but not exceptional. Has its use cases.
+Decent but not exceptional. Has its use cases but isn't a must-have.
 
-[View Williams Percent R on TradingView →](https://www.tradingview.com/?aff_id=166324)
+## Get Started with Better Trading Tools
+
+🔬 **See the setup live.** Every example on this page was captured from TradingView — the platform used by 50M+ traders worldwide.
+
+[Get Started with TradingView →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link — helps support The Indicator Lab at no extra cost to you*
+
+---
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

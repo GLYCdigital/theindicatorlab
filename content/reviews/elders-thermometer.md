@@ -1,24 +1,21 @@
 ---
 title: "Elder's Thermometer Review: Settings, Strategy &amp; How to Use It"
-date: 2026-05-19
+date: 2026-07-04
 draft: false
 type: reviews
+image: "/screenshots/elders-thermometer.png"
 tags:
   - elders thermometer
-  - momentum
+  - free
   - tradingview
   - indicator
   - review
   - trading
-  - oscillator
 categories:
   - Free
-  - Momentum
+  - Technical Analysis
 rating: 4
-image: "/screenshots/elders-thermometer.png"
-image_alt: "Elder's Thermometer TradingView indicator chart screenshot"
-description: "Elder's Thermometer measures market momentum by comparing price changes to volume, helping traders identify overbought and oversold conditions for bette..."
-keywords: "elders thermometer, momentum, tradingview, indicator, review, trading, oscillator, Elder's Thermometer"
+description: "Elder's Thermometer TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples."
 ---
 
 <script type="application/ld+json">
@@ -28,7 +25,7 @@ keywords: "elders thermometer, momentum, tradingview, indicator, review, trading
   "name": "Elder's Thermometer",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "Elder's Thermometer measures market momentum by comparing price changes to volume, helping traders identify overbought and oversold conditions for better entry and exit timing.",
+  "description": "Elder's Thermometer TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4",
@@ -37,9 +34,10 @@ keywords: "elders thermometer, momentum, tradingview, indicator, review, trading
   }
 }
 </script>
+
 # Elder's Thermometer Review
 
-Elder's Thermometer is a momentum-based indicator developed by Dr. Alexander Elder that gauges the strength and direction of market trends by analyzing the relationship between price movement and trading volume. Unlike traditional oscillators, it uses volume to confirm momentum, reducing false signals and providing a clearer picture of buying and selling pressure. This makes it a valuable tool for traders seeking to filter out market noise and focus on genuine trend strength.\n\nAt its core, the indicator calculates a momentum score based on the difference between current and past prices, weighted by volume. The result is plotted as a histogram with a zero line, where values above zero indicate bullish momentum and below zero indicate bearish momentum. When the thermometer spikes to extreme levels, it suggests the market is overextended and due for a reversal, while readings near zero signal indecision or consolidation.\n\nFor traders wondering how to use Elder's Thermometer effectively, the key is to combine it with other analysis tools like trendlines or moving averages. Its best settings typically involve a 14-period lookback for standard momentum calculations, though scalpers may prefer shorter periods like 5 to 8 for faster signals, while swing traders can use 21 to 30 for smoother readings. The indicator's pros and cons center on its volume-weighted approach, which enhances accuracy but can lag in fast-moving markets.
+The Elder's Thermometer is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
 
 ![Elder's Thermometer TradingView indicator chart screenshot](/screenshots/elders-thermometer.png "Elder's Thermometer indicator on TradingView")
 
@@ -47,79 +45,74 @@ Elder's Thermometer is a momentum-based indicator developed by Dr. Alexander Eld
 
 ## Key Features
 
-- Volume-weighted momentum calculation for reduced false signals
-- Histogram visualization with clear zero line for bullish/bearish zones
-- Customizable lookback period from 1 to 50 periods
-- Color-coded bars to highlight momentum strength changes
-- Adjustable moving average smoothing to filter noise
+- Reveals trend direction by smoothing raw price fluctuations
+- Self-correcting — outdated signals fade as new bars form
+- Works standalone or as a foundation layer in multi-indicator systems
 
 ## Best Settings for Elder's Thermometer
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Default | 14-20 period. Suitable for most traders. |
+| Default | 14-20 period |
 
 ## How to Use Elder's Thermometer
 
-1. Identify overbought conditions when histogram spikes above +100 (use 14-period default)
-1. Spot oversold reversals when histogram drops below -100 with volume confirmation
-1. Combine with 20-period EMA for trend direction filter (buy when histogram above zero and price above EMA)
-1. Set alert at zero line crossover for early trend change signals (period: 14 for daily, 8 for scalp)
+1. Plot on your chart and watch for the direction of the line or colour
+1. Enter when the indicator turns bullish (line slopes up / colour changes)
+1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
+1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
 
 ## Pros & Cons
 
-<div class="pros-cons-grid">
-<div class="pros">
-<h3>Pros</h3>
-<ul>
-    <li>Volume integration reduces false breakouts compared to price-only oscillators</li>
-    <li>Clear histogram format is easy to interpret at a glance</li>
-    <li>Customizable periods adapt to any timeframe from 1-minute to weekly</li>
-    <li>Works well as a standalone momentum filter for entry timing</li>
-</ul>
-</div>
-<div class="cons">
-<h3>Cons</h3>
-<ul>
-    <li>Can lag significantly in fast-moving markets due to volume weighting</li>
-    <li>Requires volume data, which may be unreliable on some brokers or crypto exchanges</li>
-    <li>Produces frequent whipsaws in low-volume, range-bound markets</li>
-    <li>No built-in divergence detection, so traders must manually spot divergences</li>
-</ul>
-</div>
-</div>
+### Pros
+    - Simple to interpret — direction tells you everything you need
+    - Keeps you in trends longer by filtering out counter-trend noise
+    - Works across all markets and timeframes without major reconfiguration
+
+### Cons
+    - Inherent lag means you miss the first part of every move
+    - Sideways markets generate repeated false signals — best used with a range filter
+    - Short periods create noise, long periods create delays — finding the sweet spot matters
 
 ## Who Is This For?
 
-- Swing traders: Ideal for capturing medium-term momentum shifts with daily charts
-- Momentum traders: Excellent for confirming trend strength before entering breakouts
-- Volume-focused traders: Perfect for those who prioritize volume analysis in their strategy
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- See our full review of [Relative Strength Index (RSI)]({{< relref "relative-strength-index-rsi" >}}): Simpler, volume-independent momentum oscillator with overbought/oversold levels
-- On-Balance Volume (OBV): Pure volume-based momentum indicator without price smoothing
-- See our full review of [MACD]({{< relref "macd" >}}): Trend-following momentum indicator with signal line crossovers and histogram
+- Exponential Moving Average — faster response than SMA, more whipsaws
+- Supertrend — beginner-friendly, clear colour changes, works well with volume
+- Linear Regression — statistically driven, less common but more precise
+- Donchian Channels — breakout-based trend following, Turtle Traders' choice
 
 ## Frequently Asked Questions
 
-### Is Elder's Thermometer worth it?
+### What's the most common mistake traders make?
 
-Yes, if used correctly. See the full review above.
+Overriding the signal. The indicator says long, but you short because it feels 'too high'. Trust the system or don't use it.
 
-### What settings should I use for Elder's Thermometer?
+### Can I use this for intraday trading?
 
-Start with the default, then adjust based on your trading style and timeframe.
+Yes, but lower the period proportionally. A 50-period on a 1-minute chart represents less than an hour of data. Try 10-20 for intraday, 50-200 for daily and above.
+
+### Does this work in crypto?
+
+Yes — crypto trends are strong and persistent. Higher timeframes (4h, daily) work best. Lower timeframes (15m, 1h) are noisy and generate excessive whipsaws.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Elder's Thermometer is a solid momentum indicator for traders who value volume confirmation, though it's not a magic bullet. It excels in trending markets with consistent volume but struggles in choppy conditions. For best results, pair it with a trend filter and avoid using it as a standalone system.
+Reliable and well-built. Has limitations, but the strengths far outweigh them.
 
-[Get it on TradingView →](/go/tradingview)
+## Get Started with Better Trading Tools
 
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-
-**Ready to test this on real charts?** [Open AAPL on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator — momentum setups are easier to spot when you can overlay RSI, MACD, and volume on the same chart.
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

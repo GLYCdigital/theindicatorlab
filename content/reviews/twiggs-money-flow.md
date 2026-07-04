@@ -1,22 +1,21 @@
 ---
 title: "Twiggs Money Flow Review: Settings, Strategy &amp; How to Use It"
-description: "In-depth Twiggs Money Flow indicator review with chart analysis, strategy notes, and TradingView setup guide. Should you install Twiggs Money Flow?"
-image: "/screenshots/twiggs-money-flow.png"
-date: 2026-05-19
+date: 2026-07-04
 draft: false
 type: reviews
+image: "/screenshots/twiggs-money-flow.png"
 tags:
   - twiggs money flow
-  - volume
+  - free
   - tradingview
   - indicator
   - review
   - trading
-  - accumulation
 categories:
   - Free
-  - Volume
+  - Technical Analysis
 rating: 4
+description: "Twiggs Money Flow TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples."
 ---
 
 <script type="application/ld+json">
@@ -26,7 +25,7 @@ rating: 4
   "name": "Twiggs Money Flow",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "Twiggs Money Flow (TMF) is a volume-based indicator that measures buying and selling pressure to identify trend strength and potential reversals, offering traders clear signals for entries and exits.",
+  "description": "Twiggs Money Flow TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4",
@@ -35,9 +34,10 @@ rating: 4
   }
 }
 </script>
+
 # Twiggs Money Flow Review
 
-Twiggs Money Flow (TMF) is a powerful volume indicator developed by Colin Twiggs, designed to refine the classic Chaikin Money Flow (CMF) by adding a smoothing mechanism and volatility adjustments. It tracks the accumulation and distribution of money flow over a specified period, helping traders gauge whether a stock is under accumulation (buying pressure) or distribution (selling pressure). This makes it especially valuable for confirming trends or spotting divergences before price moves.\n\nFor traders wondering how to use Twiggs Money Flow effectively, the indicator plots a line that oscillates above and below a zero level. Readings above zero suggest net buying pressure, while readings below zero indicate net selling pressure. The best settings for Twiggs Money Flow typically involve adjusting the period length (often 21 or 34 days) to match your trading style, and traders often look for divergences between the indicator and price to anticipate reversals. Its ability to smooth out noise makes it a favorite among swing traders and position traders who prioritize trend confirmation.\n\nWhy does Twiggs Money Flow matter? It bridges the gap between price action and volume, offering a clearer picture of market sentiment than raw volume alone. By filtering out false signals and highlighting genuine money flow, it helps traders avoid common pitfalls like buying into weak rallies or selling during temporary dips. This makes it a reliable tool for volume analysis in both trending and ranging markets.
+The Twiggs Money Flow is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
 
 ![Twiggs Money Flow TradingView indicator chart screenshot](/screenshots/twiggs-money-flow.png "Twiggs Money Flow indicator on TradingView")
 
@@ -45,79 +45,74 @@ Twiggs Money Flow (TMF) is a powerful volume indicator developed by Colin Twiggs
 
 ## Key Features
 
-- Measures buying vs. selling pressure using volume and price range
-- Smoothing function reduces noise for cleaner signals
-- Customizable lookback period (default 21 days) for different timeframes
-- Zero line crossovers indicate shifts in money flow direction
-- Divergence detection between TMF and price for reversal alerts
+- Reveals trend direction by smoothing raw price fluctuations
+- Self-correcting — outdated signals fade as new bars form
+- Works standalone or as a foundation layer in multi-indicator systems
 
 ## Best Settings for Twiggs Money Flow
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Default | 14-20 period. Suitable for most traders. |
+| Default | 14-20 period |
 
 ## How to Use Twiggs Money Flow
 
-1. Buy signal: Wait for TMF to cross above zero with increasing volume, confirming accumulation
-1. Sell signal: TMF crossing below zero indicates distribution, especially if volume spikes
-1. Divergence trading: Look for price making higher highs while TMF makes lower highs (bearish divergence) or vice versa (bullish divergence)
-1. Best settings: Use 21 periods for swing trading (daily charts), 34 periods for longer trends, and 13 periods for shorter-term moves (scalping on hourly charts)
+1. Plot on your chart and watch for the direction of the line or colour
+1. Enter when the indicator turns bullish (line slopes up / colour changes)
+1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
+1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
 
 ## Pros & Cons
 
-<div class="pros-cons-grid">
-<div class="pros">
-<h3>Pros</h3>
-<ul>
-    <li>Effective at filtering out volume noise compared to raw volume indicators</li>
-    <li>Clear zero-line crossovers provide objective buy/sell signals</li>
-    <li>Divergences often precede major price reversals, offering early entries</li>
-    <li>Works well across multiple asset classes including stocks, ETFs, and crypto</li>
-</ul>
-</div>
-<div class="cons">
-<h3>Cons</h3>
-<ul>
-    <li>May generate false signals in low-volume or choppy markets</li>
-    <li>Lagging nature means it reacts to price moves rather than predicting them</li>
-    <li>Requires confirmation from other indicators for high-probability trades</li>
-    <li>Less effective on very short timeframes like 1-minute charts due to noise</li>
-</ul>
-</div>
-</div>
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
+
+### Cons
+    - All trend indicators have some inherent lag behind price
+    - Whipsaws in ranging markets — needs a volatility filter
+    - Parameter selection significantly affects signal quality
 
 ## Who Is This For?
 
-- Swing traders: who want to confirm trend strength and spot reversals over days to weeks
-- Position traders: using TMF on daily/weekly charts to identify long-term accumulation or distribution phases
-- Volume-focused traders: who prioritize volume analysis and need a reliable money flow gauge without complex calculations
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Chaikin Money Flow (CMF): the original indicator TMF is based on, but without smoothing and volatility adjustments
-- On-Balance Volume (OBV): a simpler cumulative volume indicator that also tracks buying/selling pressure but lacks a zero line
-- Money Flow Index (MFI): a volume-weighted RSI that uses overbought/oversold levels instead of zero crossovers
+- Moving Average — simpler, slower, the original trend-following tool
+- SuperTrend — ATR-based, adapts to volatility, one of the most popular
+- ADX — measures trend strength but not direction (pair with a direction filter)
+- Parabolic SAR — dot-based stops and reversals, works in strong trends
 
 ## Frequently Asked Questions
 
-### Is Twiggs Money Flow worth it?
+### What's the most common mistake traders make?
 
-Yes, if used correctly. See the full review above.
+Overriding the signal. The indicator says long, but you short because it feels 'too high'. Trust the system or don't use it.
 
-### What settings should I use for Twiggs Money Flow?
+### Can I use this for intraday trading?
 
-Start with the default, then adjust based on your trading style and timeframe.
+Yes, but lower the period proportionally. A 50-period on a 1-minute chart represents less than an hour of data. Try 10-20 for intraday, 50-200 for daily and above.
+
+### Does this work in crypto?
+
+Yes — crypto trends are strong and persistent. Higher timeframes (4h, daily) work best. Lower timeframes (15m, 1h) are noisy and generate excessive whipsaws.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Verdict for Twiggs Money Flow.
+Reliable and well-built. Has limitations, but the strengths far outweigh them.
 
-[Get it on TradingView →](/go/tradingview)
+## Get Started with Better Trading Tools
 
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-
-**Volume tells the real story.** [Open a chart on TradingView](https://www.tradingview.com/?aff_id=166324) and add this indicator alongside price — the divergence between volume and price action is where the best trades hide.
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

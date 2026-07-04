@@ -1,6 +1,6 @@
 ---
 title: "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy &amp; How to Use It"
-date: 2026-06-18
+date: 2026-07-04
 draft: false
 type: reviews
 image: "/screenshots/liquidity-absorption-and-rejection-orderflow.png"
@@ -37,7 +37,7 @@ description: "Liquidity_Absorption_And_Rejection_Orderflow TradingView indicator
 
 # Liquidity_Absorption_And_Rejection_Orderflow Review
 
-The Liquidity_Absorption_And_Rejection_Orderflow is a trend indicator for TradingView. It helps traders identify market conditions and potential entry points with clear visual signals. Used correctly alongside volume and price action analysis, this indicator has earned its place in many traders' toolkits.
+The Liquidity_Absorption_And_Rejection_Orderflow is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
 
 ![Liquidity_Absorption_And_Rejection_Orderflow TradingView indicator chart screenshot](/screenshots/liquidity-absorption-and-rejection-orderflow.png "Liquidity_Absorption_And_Rejection_Orderflow indicator on TradingView")
 
@@ -53,16 +53,14 @@ The Liquidity_Absorption_And_Rejection_Orderflow is a trend indicator for Tradin
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Short-term | 10-20 period |
-| Medium-term | 20-50 period |
-| Long-term | 50-200 period |
+| Default | 14-20 period |
 
 ## How to Use Liquidity_Absorption_And_Rejection_Orderflow
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+1. Start by checking the indicator's direction on your trading timeframe
+1. Take long trades only when the indicator shows an uptrend (and vice versa)
+1. Use a faster setting for entry timing and a slower setting for trend filter
+1. Avoid trading when the indicator is flat or whipsawing around the midline
 
 ## Pros & Cons
 
@@ -72,9 +70,9 @@ The Liquidity_Absorption_And_Rejection_Orderflow is a trend indicator for Tradin
     - Works as both a standalone tool and with other indicators
 
 ### Cons
-    - All trend indicators have some inherent lag behind price
-    - Whipsaws in ranging markets — needs a volatility filter
-    - Parameter selection significantly affects signal quality
+    - Inherent lag means you miss the first part of every move
+    - Sideways markets generate repeated false signals — best used with a range filter
+    - Short periods create noise, long periods create delays — finding the sweet spot matters
 
 ## Who Is This For?
 
@@ -84,10 +82,10 @@ The Liquidity_Absorption_And_Rejection_Orderflow is a trend indicator for Tradin
 
 ## Alternatives
 
-- Moving Average: simpler but slower
-- SuperTrend: ATR-based, adaptive
-- ADX: measures strength, not direction
-- Parabolic SAR: stops and reversals
+- Simple Moving Average — the classic, widely understood
+- Keltner Channels — trend direction + volatility envelope in one
+- Ichimoku Cloud — comprehensive: support, resistance, trend, momentum combined
+- MACD — trend following with a momentum twist through the signal line crossover
 
 ## Frequently Asked Questions
 
@@ -107,7 +105,7 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Solid tool. Does what it claims and does it well.
+A dependable performer. Not perfect, but delivers consistent value for its intended use.
 
 ## Get Started with Better Trading Tools
 

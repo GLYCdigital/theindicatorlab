@@ -1,6 +1,6 @@
 ---
 title: "Vertical Horizontal Filter Review: Settings, Strategy &amp; How to Use It"
-date: 2026-05-28
+date: 2026-07-04
 draft: false
 type: reviews
 image: "/screenshots/vertical-horizontal-filter.png"
@@ -15,7 +15,7 @@ categories:
   - Trend
   - Technical Analysis
 rating: 4
-description: "The Vertical Horizontal Filter (VHF) identifies trending versus ranging markets by measuring price movement efficiency, helping traders avoid false sign..."
+description: "Vertical Horizontal Filter TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
 ---
 
 <script type="application/ld+json">
@@ -25,7 +25,7 @@ description: "The Vertical Horizontal Filter (VHF) identifies trending versus ra
   "name": "Vertical Horizontal Filter",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "The Vertical Horizontal Filter (VHF) identifies trending versus ranging markets by measuring price movement efficiency, helping traders avoid false sign...",
+  "description": "Vertical Horizontal Filter TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4",
@@ -37,7 +37,7 @@ description: "The Vertical Horizontal Filter (VHF) identifies trending versus ra
 
 # Vertical Horizontal Filter Review
 
-The Vertical Horizontal Filter (VHF) is a trend indicator developed by Adam Hewison that quantifies whether a market is trending strongly, consolidating, or moving sideways. It calculates the ratio of net price movement over a period to the sum of all individual price changes, producing a value between 0 and 1; higher values indicate strong trends, while lower values suggest choppy, range-bound conditions.
+Vertical Horizontal Filter helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
 
 ![Vertical Horizontal Filter TradingView indicator chart screenshot](/screenshots/vertical-horizontal-filter.png "Vertical Horizontal Filter indicator on TradingView")
 
@@ -45,31 +45,29 @@ The Vertical Horizontal Filter (VHF) is a trend indicator developed by Adam Hewi
 
 ## Key Features
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+- Filters out market noise to show the dominant price direction
+- Automatically adjusts as new price data arrives
+- Visual crossovers and slope changes signal entry and exit points
 
 ## Best Settings for Vertical Horizontal Filter
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Short-term | 10-20 period |
-| Medium-term | 20-50 period |
-| Long-term | 50-200 period |
+| Default | 14-20 period |
 
 ## How to Use Vertical Horizontal Filter
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+1. Plot on your chart and watch for the direction of the line or colour
+1. Enter when the indicator turns bullish (line slopes up / colour changes)
+1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
+1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
 
 ## Pros & Cons
 
 ### Pros
-    - Reduces noise compared to raw price action
-    - Clear visual signals — no complex interpretation needed
-    - Works as both a standalone tool and with other indicators
+    - Automated trend detection removes emotional bias from trade direction
+    - Self-adjusts to new price data — no manual recalibration
+    - Compatible with every major market — stocks, crypto, forex, futures
 
 ### Cons
     - All trend indicators have some inherent lag behind price
@@ -84,29 +82,37 @@ The Vertical Horizontal Filter (VHF) is a trend indicator developed by Adam Hewi
 
 ## Alternatives
 
-- Moving Average: simpler but slower
-- SuperTrend: ATR-based, adaptive
-- ADX: measures strength, not direction
-- Parabolic SAR: stops and reversals
+- Exponential Moving Average — faster response than SMA, more whipsaws
+- Supertrend — beginner-friendly, clear colour changes, works well with volume
+- Linear Regression — statistically driven, less common but more precise
+- Donchian Channels — breakout-based trend following, Turtle Traders' choice
 
 ## Frequently Asked Questions
 
-### How do I know which period to use?
+### How do I reduce whipsaws?
 
-Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
 
-### Does it repaint?
+### Should I use it alone or with other indicators?
 
-No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
 
-### Best market for this indicator?
+### How does this handle gaps?
 
-Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Solid tool. Does what it claims and does it well.
+A dependable performer. Not perfect, but delivers consistent value for its intended use.
 
-[View Vertical Horizontal Filter on TradingView →](https://www.tradingview.com/?aff_id=166324)
+## Get Started with Better Trading Tools
+
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
+
+---
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

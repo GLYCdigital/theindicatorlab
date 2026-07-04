@@ -1,24 +1,21 @@
 ---
 title: "Fractals (Bill Williams) Review: Settings, Strategy &amp; How to Use It"
-date: 2026-05-22
+date: 2026-07-04
 draft: false
 type: reviews
+image: "/screenshots/fractals.png"
 tags:
   - fractals
-  - trend
+  - free
   - tradingview
   - indicator
   - review
   - trading
-  - direction
 categories:
   - Free
-  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/fractals.png"
-image_alt: "Fractals (Bill Williams) TradingView indicator chart screenshot"
-description: "Fractals (Bill Williams) indicator review: how to use, best settings, pros and cons for trend trading with price patterns."
-keywords: "fractals, trend, tradingview, indicator, review, trading, direction, Fractals (Bill Williams)"
+description: "Fractals (Bill Williams) TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples."
 ---
 
 <script type="application/ld+json">
@@ -28,7 +25,7 @@ keywords: "fractals, trend, tradingview, indicator, review, trading, direction, 
   "name": "Fractals (Bill Williams)",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "Fractals (Bill Williams) indicator review: how to use, best settings, pros and cons for trend trading with price patterns.",
+  "description": "Fractals (Bill Williams) TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4",
@@ -37,9 +34,10 @@ keywords: "fractals, trend, tradingview, indicator, review, trading, direction, 
   }
 }
 </script>
+
 # Fractals (Bill Williams) Review
 
-The Fractals (Bill Williams) indicator is a classic trend-following tool that identifies potential reversal points on price charts. It works by marking a fractal when a series of five consecutive bars has the middle bar as the highest high (up fractal) or lowest low (down fractal). This helps traders spot key support and resistance levels, making it useful for defining trend direction and entry/exit zones.\n\nDeveloped as part of Bill Williams' trading system, fractals are often combined with other tools like the Alligator or Awesome Oscillator to confirm signals. While they can lag in fast markets, their simplicity and visual clarity make them popular among beginners. Understanding how to use fractals effectively involves waiting for a breakout after a fractal forms, rather than trading on the signal alone.\n\nThe best settings for Fractals are fixed by design (5 bars), but traders can adjust the lookback period for different timeframes. For scalping, a shorter period (e.g., 3 bars) reduces lag, while swing trading may use the default 5 or even 7 bars for smoother signals. The indicator works best on higher timeframes (1H or above) to avoid noise.
+The Fractals (Bill Williams) is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
 
 ![Fractals (Bill Williams) TradingView indicator chart screenshot](/screenshots/fractals.png "Fractals (Bill Williams) indicator on TradingView")
 
@@ -47,79 +45,74 @@ The Fractals (Bill Williams) indicator is a classic trend-following tool that id
 
 ## Key Features
 
-- Automatic marking of up and down fractals on price charts
-- Based on a fixed 5-bar pattern for consistency
-- Works across all timeframes and instruments
-- Can be used to identify trend reversals and support/resistance levels
-- Integrates with Bill Williams' trading system (Alligator, Accelerator Oscillator)
+- Identifies trend direction and strength with minimal lag
+- Automatically adapts to changing market conditions
+- Clear buy/sell signals with visual confirmation
 
 ## Best Settings for Fractals (Bill Williams)
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Default | 14-20 period. Suitable for most traders. |
+| Default | 14-20 period |
 
 ## How to Use Fractals (Bill Williams)
 
-1. Use default 5-bar setting for swing trading on daily or 4H charts
-1. For scalping, reduce the lookback to 3 bars (if adjustable) on 5-15 min timeframes
-1. Combine with the Alligator indicator to filter false signals during trends
-1. Wait for a breakout beyond the fractal's high/low before entering a trade
+1. Add to any chart — the indicator plots directly on price or in a separate pane
+1. Use crossovers or line slope changes as entry/exit signals
+1. Combine with volume analysis to confirm trend strength
+1. Use higher timeframes for trend direction, lower for entries
 
 ## Pros & Cons
 
-<div class="pros-cons-grid">
-<div class="pros">
-<h3>Pros</h3>
-<ul>
-    <li>Simple and easy to understand for beginners</li>
-    <li>Provides clear visual levels for stop-loss placement</li>
-    <li>Works well in trending markets when combined with other indicators</li>
-    <li>No repainting on standard implementation</li>
-</ul>
-</div>
-<div class="cons">
-<h3>Cons</h3>
-<ul>
-    <li>Signals can lag significantly in fast-moving markets</li>
-    <li>Generates many false signals in ranging/choppy conditions</li>
-    <li>Limited customization (fixed 5-bar pattern by default)</li>
-    <li>Requires confirmation from other tools to be effective</li>
-</ul>
-</div>
-</div>
+### Pros
+    - Reduces noise compared to raw price action
+    - Clear visual signals — no complex interpretation needed
+    - Works as both a standalone tool and with other indicators
+
+### Cons
+    - Inherent lag means you miss the first part of every move
+    - Sideways markets generate repeated false signals — best used with a range filter
+    - Short periods create noise, long periods create delays — finding the sweet spot matters
 
 ## Who Is This For?
 
-- Beginner traders: because of its simplicity and visual clarity
-- Swing traders: who can wait for fractal breakouts on higher timeframes
-- Bill Williams system users: as a core component of the trading methodology
+- Systematic traders who want rules-based entry and exit signals
+- Traders transitioning from discretionary to semi-automated decision-making
+- Multi-timeframe traders who use long-term trend as their primary filter
 
 ## Alternatives
 
-- See our full review of [Zig Zag]({{< relref "zig-zag" >}}}}): Shows price swings more flexibly with adjustable deviation
-- Williams Alligator: A trend-following indicator that complements fractals
-- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}}}): Provides dynamic support/resistance with less lag
+- Moving Average — simpler, slower, the original trend-following tool
+- SuperTrend — ATR-based, adapts to volatility, one of the most popular
+- ADX — measures trend strength but not direction (pair with a direction filter)
+- Parabolic SAR — dot-based stops and reversals, works in strong trends
 
 ## Frequently Asked Questions
 
-### Is Fractals (Bill Williams) worth it?
+### What's the most common mistake traders make?
 
-Yes, if used correctly. See the full review above.
+Overriding the signal. The indicator says long, but you short because it feels 'too high'. Trust the system or don't use it.
 
-### What settings should I use for Fractals (Bill Williams)?
+### Can I use this for intraday trading?
 
-Start with the default, then adjust based on your trading style and timeframe.
+Yes, but lower the period proportionally. A 50-period on a 1-minute chart represents less than an hour of data. Try 10-20 for intraday, 50-200 for daily and above.
+
+### Does this work in crypto?
+
+Yes — crypto trends are strong and persistent. Higher timeframes (4h, daily) work best. Lower timeframes (15m, 1h) are noisy and generate excessive whipsaws.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Fractals (Bill Williams) is a solid, time-tested indicator for trend identification, especially when paired with other tools. However, its lag and false signals limit its standalone use. Best for traders who want clear structural levels and are willing to wait for confirmations.
+Solid tool. Does what it claims and does it well. Minor trade-offs but nothing deal-breaking.
 
-[Get it on TradingView →](/go/tradingview)
+## Get Started with Better Trading Tools
 
+📈 **Put this indicator to work on TradingView.** Real-time charts, pro-grade screeners, and over 100,000 community indicators.
+
+[Start Free on TradingView →](https://www.tradingview.com/?aff_id=166324)
+*We earn a commission at no extra cost to you*
 
 ---
-
-**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

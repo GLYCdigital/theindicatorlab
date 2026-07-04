@@ -1,6 +1,6 @@
 ---
 title: "Murrey Math Lines Review: Settings, Strategy &amp; How to Use It"
-date: 2026-05-28
+date: 2026-07-04
 draft: false
 type: reviews
 image: "/screenshots/murrey-math-lines.png"
@@ -15,7 +15,7 @@ categories:
   - Trend
   - Technical Analysis
 rating: 4
-description: "Murrey Math Lines translates W.D. Gann's geometric principles into actionable support and resistance levels by dividing price action into eighths, offer..."
+description: "Murrey Math Lines TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
 ---
 
 <script type="application/ld+json">
@@ -25,7 +25,7 @@ description: "Murrey Math Lines translates W.D. Gann's geometric principles into
   "name": "Murrey Math Lines",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "Murrey Math Lines translates W.D. Gann's geometric principles into actionable support and resistance levels by dividing price action into eighths, offer...",
+  "description": "Murrey Math Lines TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4",
@@ -37,7 +37,7 @@ description: "Murrey Math Lines translates W.D. Gann's geometric principles into
 
 # Murrey Math Lines Review
 
-Murrey Math Lines (MML) is a proprietary trading system developed by T.H. Murrey, based on the premise that markets move in predictable rhythmic cycles that can be divided into eighths of a price range. The indicator automatically calculates eight horizontal lines (0/8, 1/8, 2/8, 3/8, 4/8, 5/8, 6/8, 7/8, 8/8) on the chart, with the 4/8 line serving as the central pivot. These lines represent potential support and resistance zones, with certain levels (like 3/8, 4/8, 5/8) carrying more significance for reversals and breakouts.\n\nThe system relies on identifying a major price range (such as the previous month or week's high-low) and then fractally applying the same octave divisions to smaller timeframes. This creates a hierarchical structure of lines that can be used across multiple timeframes simultaneously. Traders often combine MML with volume or momentum oscillators to confirm signals, as the lines themselves are purely based on geometric price divisions.\n\nMML works particularly well in range-bound or trending markets where price respects these mathematical levels. However, during extremely volatile or news-driven events, the lines may be temporarily violated. The indicator's main strength lies in providing clear, objective price targets and reversal zones without the lag associated with moving averages.
+The Murrey Math Lines is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
 
 ![Murrey Math Lines TradingView indicator chart screenshot](/screenshots/murrey-math-lines.png "Murrey Math Lines indicator on TradingView")
 
@@ -53,9 +53,7 @@ Murrey Math Lines (MML) is a proprietary trading system developed by T.H. Murrey
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Short-term | 10-20 period |
-| Medium-term | 20-50 period |
-| Long-term | 50-200 period |
+| Default | 14-20 period |
 
 ## How to Use Murrey Math Lines
 
@@ -72,41 +70,49 @@ Murrey Math Lines (MML) is a proprietary trading system developed by T.H. Murrey
     - Works as both a standalone tool and with other indicators
 
 ### Cons
-    - All trend indicators have some inherent lag behind price
-    - Whipsaws in ranging markets — needs a volatility filter
-    - Parameter selection significantly affects signal quality
+    - Inherent lag means you miss the first part of every move
+    - Sideways markets generate repeated false signals — best used with a range filter
+    - Short periods create noise, long periods create delays — finding the sweet spot matters
 
 ## Who Is This For?
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+- Systematic traders who want rules-based entry and exit signals
+- Traders transitioning from discretionary to semi-automated decision-making
+- Multi-timeframe traders who use long-term trend as their primary filter
 
 ## Alternatives
 
-- Moving Average: simpler but slower
-- SuperTrend: ATR-based, adaptive
-- ADX: measures strength, not direction
-- Parabolic SAR: stops and reversals
+- Simple Moving Average — the classic, widely understood
+- Keltner Channels — trend direction + volatility envelope in one
+- Ichimoku Cloud — comprehensive: support, resistance, trend, momentum combined
+- MACD — trend following with a momentum twist through the signal line crossover
 
 ## Frequently Asked Questions
 
-### How do I know which period to use?
+### What's the most common mistake traders make?
 
-Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+Overriding the signal. The indicator says long, but you short because it feels 'too high'. Trust the system or don't use it.
 
-### Does it repaint?
+### Can I use this for intraday trading?
 
-No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+Yes, but lower the period proportionally. A 50-period on a 1-minute chart represents less than an hour of data. Try 10-20 for intraday, 50-200 for daily and above.
 
-### Best market for this indicator?
+### Does this work in crypto?
 
-Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+Yes — crypto trends are strong and persistent. Higher timeframes (4h, daily) work best. Lower timeframes (15m, 1h) are noisy and generate excessive whipsaws.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Solid tool. Does what it claims and does it well.
+Solid tool. Does what it claims and does it well. Minor trade-offs but nothing deal-breaking.
 
-[View Murrey Math Lines on TradingView →](https://www.tradingview.com/?aff_id=166324)
+## Get Started with Better Trading Tools
+
+📈 **Put this indicator to work on TradingView.** Real-time charts, pro-grade screeners, and over 100,000 community indicators.
+
+[Start Free on TradingView →](https://www.tradingview.com/?aff_id=166324)
+*We earn a commission at no extra cost to you*
+
+---
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

@@ -1,24 +1,21 @@
 ---
 title: "Kaufman Adaptive Moving Average (KAMA) Review: Settings, Strategy &amp; How to Use It"
-date: 2026-05-17
+date: 2026-07-04
 draft: false
 type: reviews
+image: "/screenshots/kama.png"
 tags:
   - kama
-  - trend
+  - free
   - tradingview
   - indicator
   - review
   - trading
-  - direction
 categories:
   - Free
-  - Trend
+  - Technical Analysis
 rating: 4
-image: "/screenshots/kama.png"
-image_alt: "Kaufman Adaptive Moving Average (KAMA) TradingView indicator chart screenshot"
-description: "KAMA adapts to market volatility, reducing noise for smoother trend signals. Learn how to use, best settings, pros and cons."
-keywords: "kama, trend, tradingview, indicator, review, trading, direction, Kaufman Adaptive Moving Average (KAMA)"
+description: "Kaufman Adaptive Moving Average (KAMA) TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart ..."
 ---
 
 <script type="application/ld+json">
@@ -28,7 +25,7 @@ keywords: "kama, trend, tradingview, indicator, review, trading, direction, Kauf
   "name": "Kaufman Adaptive Moving Average (KAMA)",
   "applicationCategory": "TradingView Indicator",
   "operatingSystem": "TradingView",
-  "description": "KAMA adapts to market volatility, reducing noise for smoother trend signals. Learn how to use, best settings, pros and cons.",
+  "description": "Kaufman Adaptive Moving Average (KAMA) TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart ...",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4",
@@ -37,9 +34,10 @@ keywords: "kama, trend, tradingview, indicator, review, trading, direction, Kauf
   }
 }
 </script>
+
 # Kaufman Adaptive Moving Average (KAMA) Review
 
-The Kaufman Adaptive Moving Average (KAMA) is a trend-following indicator that dynamically adjusts its smoothing factor based on market volatility. Unlike traditional moving averages that use a fixed period, KAMA becomes faster in trending markets and slower in sideways markets, helping traders identify genuine trends while filtering out noise. Developed by Perry Kaufman, this indicator is especially useful for traders looking to reduce lag and avoid whipsaws in choppy conditions.\n\nKAMA's core innovation lies in its \"efficiency ratio,\" which measures price directionality relative to noise. A high ratio (strong trend) makes KAMA more responsive, while a low ratio (choppy market) increases smoothing. This adaptive nature makes it a powerful tool for both short-term scalpers and long-term trend followers, as it can be applied to any timeframe or asset class.\n\nFor traders wondering how to use KAMA effectively, the key is to interpret its crossover signals with price action or use it as a dynamic support/resistance level. When KAMA turns upward and price stays above it, it confirms an uptrend; the opposite signals a downtrend. Common settings include periods of 10-30 for the lookback, but KAMA's default parameters (typically 10, 2, 30) work well across most markets.
+Kaufman Adaptive Moving Average (KAMA) helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
 
 ![Kaufman Adaptive Moving Average (KAMA) TradingView indicator chart screenshot](/screenshots/kama.png "Kaufman Adaptive Moving Average (KAMA) indicator on TradingView")
 
@@ -47,79 +45,74 @@ The Kaufman Adaptive Moving Average (KAMA) is a trend-following indicator that d
 
 ## Key Features
 
-- Adaptive smoothing based on market volatility using the efficiency ratio
-- Reduces lag compared to traditional moving averages in trending markets
-- Filters out noise and whipsaws in ranging or choppy conditions
-- Works on any timeframe and asset class (stocks, forex, crypto)
-- Provides clear trend direction and dynamic support/resistance levels
+- Filters out market noise to show the dominant price direction
+- Automatically adjusts as new price data arrives
+- Visual crossovers and slope changes signal entry and exit points
 
 ## Best Settings for Kaufman Adaptive Moving Average (KAMA)
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Default | 14-20 period. Suitable for most traders. |
+| Default | 14-20 period |
 
 ## How to Use Kaufman Adaptive Moving Average (KAMA)
 
-1. Identify trend direction: Buy when price is above KAMA and KAMA is rising; sell when price is below and KAMA is falling
-1. Use KAMA crossovers with price as entry signals (e.g., price crossing above KAMA signals long entry)
-1. Set KAMA as a trailing stop-loss in trending markets (e.g., exit long when price closes below KAMA)
-1. Adjust periods for different styles: default (10,2,30), scalp (5,2,10), swing (20,2,50)
+1. Plot on your chart and watch for the direction of the line or colour
+1. Enter when the indicator turns bullish (line slopes up / colour changes)
+1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
+1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
 
 ## Pros & Cons
 
-<div class="pros-cons-grid">
-<div class="pros">
-<h3>Pros</h3>
-<ul>
-    <li>Adapts to market conditions automatically, reducing false signals</li>
-    <li>Less lag than comparable moving averages in strong trends</li>
-    <li>Excellent for filtering noise in sideways markets</li>
-    <li>Versatile across timeframes and asset classes</li>
-</ul>
-</div>
-<div class="cons">
-<h3>Cons</h3>
-<ul>
-    <li>Can still produce whipsaws in extremely choppy or low-volatility markets</li>
-    <li>Not a leading indicator; it confirms trends after they have started</li>
-    <li>May require optimization of parameters for specific assets or timeframes</li>
-    <li>Less intuitive than simple moving averages for beginners</li>
-</ul>
-</div>
-</div>
+### Pros
+    - Automated trend detection removes emotional bias from trade direction
+    - Self-adjusts to new price data — no manual recalibration
+    - Compatible with every major market — stocks, crypto, forex, futures
+
+### Cons
+    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
+    - Prone to whipsaws in sideways markets where the line oscillates without direction
+    - The chosen period heavily influences performance — no one-size-fits-all setting
 
 ## Who Is This For?
 
-- Trend traders: Reliable for capturing and riding medium to long-term trends
-- Swing traders: Adaptive smoothing helps avoid premature exits in volatile swings
-- Algorithmic traders: Easy to code and combine with other indicators for automated strategies
+- Trend followers who want automated trend detection
+- Swing traders who enter on pullbacks in established trends
+- Position traders who hold for weeks and need trend confirmation
 
 ## Alternatives
 
-- Moving Average Convergence Divergence (MACD): Offers trend confirmation with momentum signals
-- See our full review of [Parabolic SAR]({{< relref "parabolic-sar" >}}): Excellent for setting trailing stops in strong trends
-- Hull Moving Average (HMA): Reduces lag with a different smoothing method
+- Exponential Moving Average — faster response than SMA, more whipsaws
+- Supertrend — beginner-friendly, clear colour changes, works well with volume
+- Linear Regression — statistically driven, less common but more precise
+- Donchian Channels — breakout-based trend following, Turtle Traders' choice
 
 ## Frequently Asked Questions
 
-### Is Kaufman Adaptive Moving Average (KAMA) worth it?
+### How do I reduce whipsaws?
 
-Yes, if used correctly. See the full review above.
+Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
 
-### What settings should I use for Kaufman Adaptive Moving Average (KAMA)?
+### Should I use it alone or with other indicators?
 
-Start with the default, then adjust based on your trading style and timeframe.
+Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
+
+### How does this handle gaps?
+
+Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-KAMA is a solid choice for traders who want a moving average that adapts to volatility without constant manual adjustments. It excels in trending markets but may struggle in extreme chop. For most traders, it's worth adding to your toolkit as a confirmation or trailing stop tool, but not as a standalone system.
+A dependable performer. Not perfect, but delivers consistent value for its intended use.
 
-[Get it on TradingView →](/go/tradingview)
+## Get Started with Better Trading Tools
 
+🔬 **See the setup live.** Every example on this page was captured from TradingView — the platform used by 50M+ traders worldwide.
+
+[Get Started with TradingView →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link — helps support The Indicator Lab at no extra cost to you*
 
 ---
-
-**See how this works in real-time.** [Pull up SPY on TradingView](https://www.tradingview.com/?aff_id=166324) and apply this indicator — trend-following is all about confidence in the signal, and that comes from watching it work.
+*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*

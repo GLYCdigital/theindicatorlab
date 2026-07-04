@@ -1,6 +1,6 @@
 ---
 title: "Liquidity_Magnet Review: Settings, Strategy &amp; How to Use It"
-date: 2026-06-16
+date: 2026-07-04
 draft: false
 type: reviews
 image: "/screenshots/liquidity-magnet.png"
@@ -37,7 +37,7 @@ description: "Liquidity_Magnet TradingView indicator review: settings, strategy,
 
 # Liquidity_Magnet Review
 
-The Liquidity_Magnet is a trend indicator for TradingView. It helps traders identify market conditions and potential entry points with clear visual signals. Used correctly alongside volume and price action analysis, this indicator has earned its place in many traders' toolkits.
+Liquidity_Magnet helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
 
 ![Liquidity_Magnet TradingView indicator chart screenshot](/screenshots/liquidity-magnet.png "Liquidity_Magnet indicator on TradingView")
 
@@ -45,17 +45,15 @@ The Liquidity_Magnet is a trend indicator for TradingView. It helps traders iden
 
 ## Key Features
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+- Reveals trend direction by smoothing raw price fluctuations
+- Self-correcting — outdated signals fade as new bars form
+- Works standalone or as a foundation layer in multi-indicator systems
 
 ## Best Settings for Liquidity_Magnet
 
 | Trading Style | Recommended Setting |
 |-------------|-------------------|
-| Short-term | 10-20 period |
-| Medium-term | 20-50 period |
-| Long-term | 50-200 period |
+| Default | 14-20 period |
 
 ## How to Use Liquidity_Magnet
 
@@ -72,22 +70,22 @@ The Liquidity_Magnet is a trend indicator for TradingView. It helps traders iden
     - Works as both a standalone tool and with other indicators
 
 ### Cons
-    - All trend indicators have some inherent lag behind price
-    - Whipsaws in ranging markets — needs a volatility filter
-    - Parameter selection significantly affects signal quality
+    - Inherent lag means you miss the first part of every move
+    - Sideways markets generate repeated false signals — best used with a range filter
+    - Short periods create noise, long periods create delays — finding the sweet spot matters
 
 ## Who Is This For?
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+- Traders who prefer 'the trend is your friend' as their core philosophy
+- Swing traders looking for pullback entries in strong uptrends
+- Anyone who struggles with overtrading — the indicator forces you to stay directional
 
 ## Alternatives
 
-- Moving Average: simpler but slower
-- SuperTrend: ATR-based, adaptive
-- ADX: measures strength, not direction
-- Parabolic SAR: stops and reversals
+- Exponential Moving Average — faster response than SMA, more whipsaws
+- Supertrend — beginner-friendly, clear colour changes, works well with volume
+- Linear Regression — statistically driven, less common but more precise
+- Donchian Channels — breakout-based trend following, Turtle Traders' choice
 
 ## Frequently Asked Questions
 
@@ -107,7 +105,7 @@ Trend indicators work best in trending markets — stocks in bull runs, trending
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-Solid tool. Does what it claims and does it well.
+Reliable and well-built. Has limitations, but the strengths far outweigh them.
 
 ## Get Started with Better Trading Tools
 
