@@ -1,18 +1,18 @@
 ---
 title: "All Indicators — The Lab Report"
-date: 2026-06-28
+date: 2026-07-05
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 68 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 73 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **68 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** {{< param date >}} · **73 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (24)
+## Momentum (26)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -42,8 +42,10 @@ Indicators that measure the speed and strength of price movement.
 | Laguerre RSI | [→ Full review](/reviews/laguerre-rsi/) |
 | Detrended Price Osc | [→ Full review](/reviews/detrended-price-oscillator/) |
 | Gator Oscillator | [→ Full review](/reviews/gator-oscillator/) |
+| KST (Know Sure Thing) | [→ Full review](/reviews/know-sure-thing/) |
+| Connors RSI | [→ Full review](/reviews/connors-rsi/) |
 
-## Trend (18)
+## Trend (19)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -67,8 +69,9 @@ Indicators that identify direction and strength of the prevailing trend.
 | Heikin Ashi | [→ Full review](/reviews/heiken-ashi/) |
 | Guppy Multiple MA | [→ Full review](/reviews/guppy-multiple-moving-average/) |
 | Envelopes | [→ Full review](/reviews/envelopes/) |
+| Fractal Adaptive MA | [→ Full review](/reviews/fractal-adaptive-ma/) |
 
-## Volume (12)
+## Volume (14)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -86,6 +89,8 @@ Indicators that analyze trading volume to confirm or refute price action.
 | VWAP | [→ Full review](/reviews/vwap/) |
 | Cumulative Volume Delta | [→ Full review](/reviews/cumulative-volume-delta/) |
 | Klinger Oscillator | [→ Full review](/reviews/klinger-oscillator/) |
+| Twiggs Money Flow | [→ Full review](/reviews/twiggs-money-flow/) |
+| Chaikin Oscillator | [→ Full review](/reviews/chaikin-oscillator/) |
 
 ## Volatility (14)
 
