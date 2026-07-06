@@ -8,7 +8,7 @@ status: "Available — 7-Day Free Trial"
 categories: ["Bundle", "All Access"]
 tags: ["suite", "bundle", "subscription", "all-access", "lab-originals"]
 image: "/screenshots/market-structure-pro.png"
-description: "All 8 Lab Originals scripts. One subscription.<br>7-day free trial. $29/mo or $279/year. Cancel anytime."
+description: "All 9 Lab Originals scripts. One subscription.<br>7-day free trial. $29/mo or $279/year. Cancel anytime."
 ---
 
 {{< rawhtml >}}
@@ -17,11 +17,11 @@ description: "All 8 Lab Originals scripts. One subscription.<br>7-day free trial
     <div>
       <h2 style="margin: 0 0 0.5rem; font-size: 2.2rem; color: var(--text);">Lab Originals Suite</h2>
       <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
-        <span style="background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">ALL 8 SCRIPTS</span>
+        <span style="background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">ALL 9 SCRIPTS</span>
         <span style="background: var(--green); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">7-DAY FREE TRIAL</span>
         <span style="background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 1.15rem; font-weight: 600;">$29/MO</span>
       </div>
-      <p style="margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6;">All 8 Lab Originals scripts. One subscription. Cancel anytime.<br>7-day free trial — full access, no restrictions.</p>
+      <p style="margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6;">All 9 Lab Originals scripts. One subscription. Cancel anytime.<br>7-day free trial — full access, no restrictions.</p>
     </div>
   </div>
 </div>
