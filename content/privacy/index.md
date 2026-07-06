@@ -51,7 +51,7 @@ You have the right to:
 - Request deletion of your data
 - Opt out of affiliate click tracking (disable JavaScript in your browser)
 
-To exercise these rights, contact us at: **privacy@glycdigital.com**
+To exercise these rights, contact us at: **contact@theindicatorlab.com**
 
 ### Changes to This Policy
 
@@ -61,4 +61,4 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 GLYC Digital Pte Ltd  
 Singapore  
-Email: privacy@glycdigital.com
+Email: contact@theindicatorlab.com
