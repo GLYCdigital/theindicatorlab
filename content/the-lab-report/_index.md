@@ -96,7 +96,8 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   <h1>Multiple indicators.<br><span>One verdict.</span></h1>
   <p style="margin: 2rem auto 5rem;">Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$49/mo" data-umami-event-placement="hero">Subscribe at $49/mo →</a>
-  <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
+  <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial</p>
+  <p style="margin-top: 0.25rem; font-size: 1.1rem; color: var(--text-muted);">Backed by {{< review-count >}}+ indicator reviews</p>
   <p style="margin-top: 1.5rem; font-size: 1.3rem; color: var(--text-secondary);">📊 Join 500+ traders using The Lab Report</p>
 </div>
 
