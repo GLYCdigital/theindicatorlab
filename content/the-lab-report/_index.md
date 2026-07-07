@@ -361,7 +361,7 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>Is there an annual plan?</h3>
-  <p>Yes. Choose monthly or annual at checkout. Founding Member annual is $470/year — that's $23.25/month, saving you 20%. Your locked-in price applies to both. If you subscribe monthly first and want to switch to annual later, email us and we'll flip it instantly.</p>
+  <p>Yes. Choose monthly or annual at checkout. Current annual is $470/year — that's $39.16/month, saving you 20%. Your locked-in price applies to both monthly or annual. If you subscribe annually, your price is also locked in at this annual price when the price increases as the product improves.</p>
 </div>
 <div class="lr-faq">
   <h3>Do I need TradingView?</h3>
