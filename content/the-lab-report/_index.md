@@ -95,9 +95,9 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 <div class="lr-hero">
   <h1>Multiple indicators.<br><span>One verdict.</span></h1>
   <p style="margin: 2rem auto 5rem;">Real-time indicator consensus on 20 hand-picked markets, delivered to your phone every 15 minutes. No more conflicting signals. No more chart clutter.</p>
-  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$29/mo" data-umami-event-placement="hero">Become a Founding Member →</a>
-  <p class="lr-cta-sub">$29/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
-  <p class="lr-promo">Use code <strong>FOUNDING</strong> at checkout — first 50 only</p>
+  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$49/mo" data-umami-event-placement="hero">Subscribe at $49/mo →</a>
+  <p class="lr-cta-sub">$49/month · Cancel anytime · 7-day free trial · Backed by {{< review-count >}}+ indicator reviews</p>
+  <p style="margin-top: 1.5rem; font-size: 1.3rem; color: var(--text-secondary);">📊 Join 500+ traders using The Lab Report</p>
 </div>
 
 <div class="lr-trust">
@@ -191,7 +191,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
       <h3 style="color:#22c55e;">✅ You'll love it if…</h3>
       <ul>
         <li>You're tired of conflicting indicators — RSI says buy, MACD says sell, OBV says wait. Who wins? The Report tells you the consensus.</li>
-        <li>You have a day job. You can track 20 markets every 15 minutes, or you can pay $29/month and check one message.</li>
+        <li>You have a day job. You can track 20 markets every 15 minutes, or you can pay $49/month and check one message.</li>
         <li>You already have a system but want a second opinion. Cross-reference your analysis with 73 indicators aggregated in real time.</li>
         <li>You swing trade. 15-minute updates catch consensus shifts intraday so you can plan your move without staring at charts.</li>
         <li>You're an indicator geek. See how momentum, volume, trend and volatility indicators interact across real markets — and watch the roster grow weekly as we publish new reviews.</li>
@@ -261,14 +261,14 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
   <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;"><br>The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
-    <div style="background: rgba(255,255,255,0.14); border-radius: var(--radius); padding: 1.5rem 0.75rem; border: 2px solid var(--accent);">
-      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin-bottom: 0.5rem; font-weight: 700;">Founding Member</div>
+    <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem; font-weight: 700;">Founding Member</div>
       <div style="font-size: 3rem; font-weight: 800;">$29<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
       <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">First 50 subscribers</div>
       <div style="font-size: 0.95rem; color: var(--accent); margin-top: 0.2rem; font-weight: 600;">Price locked forever ↓</div>
     </div>
-    <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
-      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem;">Early Adopter</div>
+    <div style="background: rgba(255,255,255,0.14); border-radius: var(--radius); padding: 1.5rem 0.75rem; border: 2px solid var(--accent);">
+      <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin-bottom: 0.5rem;">Early Adopter</div>
       <div style="font-size: 3rem; font-weight: 800;">$49<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
       <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">50+ indicators live</div>
     </div>
@@ -290,13 +290,17 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
     </div>
   </div>
 
-  <div class="lr-price">$29 <span>/month</span></div>
-  <p class="lr-price-sub">or <strong>$279/year</strong> (save 20%) · Founding Member · 7-day free trial · Cancel anytime</p>
+  <div class="lr-price">$49 <span>/month</span></div>
+  <p class="lr-price-sub">or <strong>$470/year</strong> (save 20%) · 7-day free trial · Cancel anytime</p>
+  <p style="margin-bottom: 1.5rem; font-size: 1.3rem; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
   
-  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$29/mo" data-umami-event-placement="pricing">Become a Founding Member →</a>
+  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$49/mo" data-umami-event-placement="pricing">Subscribe at $49/mo →</a>
   
-  <p style="margin-top: 1.25rem; font-size: 1.4rem; color: #fff;"><span class="lr-promo-inline">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
-  <p class="lr-early">Only <strong>50 Founding Member spots</strong> at this price. Lock in $29/month or $279/year forever.</p>
+  <p style="margin-top: 1.25rem; font-size: 1.4rem; color: #fff; text-align: center;"><span class="lr-promo-inline" style="display: inline-flex; flex-direction: column; align-items: center; gap: 0.3rem; padding: 0.6rem 1.2rem; line-height: 1.3;">
+    <s style="color: #e74c3c; text-decoration: line-through;">Use code <strong>FOUNDING</strong> at checkout — first 50 only</s>
+    <span style="color: #e74c3c; font-weight: 800; font-size: 1.4rem;">✅ FULLY REDEEMED</span>
+  </span></p>
+  <p style="margin-top: 1.5rem; font-size: 1.35rem; color: #fff;">Founding Member tier sold out. Current price locked forever until next increase.</p>
   <p style="margin-top: 1rem; font-size: 1.25rem; color: #fff;">No credit card required to start. Cancel anytime with one Telegram command.</p>
 </div>
 
@@ -362,7 +366,7 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>Is there an annual plan?</h3>
-  <p>Yes. Choose monthly or annual at checkout. Founding Member annual is $279/year — that's $23.25/month, saving you 20%. Your locked-in price applies to both. If you subscribe monthly first and want to switch to annual later, email us and we'll flip it instantly.</p>
+  <p>Yes. Choose monthly or annual at checkout. Founding Member annual is $470/year — that's $23.25/month, saving you 20%. Your locked-in price applies to both. If you subscribe monthly first and want to switch to annual later, email us and we'll flip it instantly.</p>
 </div>
 <div class="lr-faq">
   <h3>Do I need TradingView?</h3>
@@ -378,7 +382,11 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
 <div class="lr-close">
   <h2>Stop guessing. Start knowing.</h2>
   <p>73 indicators. 20 markets. One verdict. Delivered to your phone every 15 minutes.</p>
-  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$29/mo" data-umami-event-placement="cta-close">Become a Founding Member →</a>
-  <p style="margin-top: 1.25rem;"><span class="lr-promo-inline" style="background: rgba(255,255,255,0.12); color: #fff; border-color: #fff;">Use code <strong>FOUNDING</strong> at checkout — first 50 only</span></p>
+  <p style="margin-bottom: 1.5rem; font-size: 1.3rem; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
+  <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$49/mo" data-umami-event-placement="cta-close">Subscribe at $49/mo →</a>
+  <p style="margin-top: 1.25rem;"><span class="lr-promo-inline" style="background: rgba(255,255,255,0.12); color: #fff; border-color: #fff; display: inline-flex; flex-direction: column; align-items: center; gap: 0.3rem; padding: 0.5rem 1rem; line-height: 1.3;">
+    <s style="color: #e74c3c; text-decoration: line-through;">Use code <strong>FOUNDING</strong> at checkout — first 50 only</s>
+    <span style="color: #e74c3c; font-weight: 800; font-size: 1.4rem;">✅ FULLY REDEEMED</span>
+  </span></p>
 </div>
 {{< /rawhtml >}}
