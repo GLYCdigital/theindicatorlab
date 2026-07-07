@@ -230,11 +230,6 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
     <p>Growing weekly as we publish new reviews and add them to the roster</p>
   </div>
   <div class="lr-benefit">
-    <div class="icon">📈</div>
-    <h4>Daily Report</h4>
-    <p>End-of-day consensus summary delivered to your inbox every evening</p>
-  </div>
-  <div class="lr-benefit">
     <div class="icon">🔬</div>
     <h4>All Lab Originals</h4>
     <p>Every invite-only indicator script we build — CVD Divergence Alerts and more — included free</p>
