@@ -254,6 +254,7 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
 <div class="lr-pricing" id="pricing">
   <h2>One subscription. Every feature.<br>Price locked forever.</h2>
   <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;"><br>The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
+  <p style="margin-bottom: 2rem; font-size: 1.3rem; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
@@ -287,7 +288,6 @@ When 37 of 73 indicators agree on direction, that's not a coincidence. That's a 
 
   <div class="lr-price">$49 <span>/month</span></div>
   <p class="lr-price-sub">or <strong>$470/year</strong> (save 20%) · 7-day free trial · Cancel anytime</p>
-  <p style="margin-bottom: 1.5rem; font-size: 1.3rem; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
   
   <a href="https://buy.stripe.com/fZuaEP7hYg0kfpY6aBaAw03" class="lr-cta" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$49/mo" data-umami-event-placement="pricing">Subscribe at $49/mo →</a>
   
