@@ -1,10 +1,10 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+37.2%",
+      "return_pct": "+39.7%",
       "trades": "0",
       "win_rate_pct": "75.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-30.0%",
+      "return_pct": "-28.1%",
       "trades": "0",
       "win_rate_pct": "75.0%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/golden-cross-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "market structure volume profiles kioseff trading review: settings, strategy &amp; how to use it",
-      "url": "/reviews/market-structure-volume-profiles-kioseff-trading/"
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "money flow index review: settings, strategy &amp; how to use it",
-      "url": "/reviews/money-flow-index/"
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
+      "url": "/reviews/supertrend-atr-trailing-stop/"
     },
     {
-      "title": "smart_money_stop_hunt_detector_algo_aakash review: settings, strategy &amp; how to use it",
-      "url": "/reviews/smart-money-stop-hunt-detector-algo-aakash/"
+      "title": "ease of movement review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ease-of-movement/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-05 → 2026-07-03), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
 
 At **0.37**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

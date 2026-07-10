@@ -1,18 +1,18 @@
 ---
 {
   "title": "Ichimoku \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+19.6%"
+      "value": "+18.8%"
     },
     {
       "label": "CAGR",
-      "value": "3.6%"
+      "value": "3.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "33.3%"
+      "value": "32.4%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "36"
+      "value": "37"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+67.5%",
+      "return_pct": "+80.8%",
       "trades": "1",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.4%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "7",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.4%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "7",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.4%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "9",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.4%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "6",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.4%"
     },
     {
       "year": "2026",
-      "return_pct": "-42.1%",
-      "trades": "6",
-      "win_rate_pct": "33.3%"
+      "return_pct": "-40.4%",
+      "trades": "7",
+      "win_rate_pct": "32.4%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/ichimoku-cloud-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ichimoku_cloud_spans review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ichimoku-cloud-spans/"
+      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
+      "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "rajiv alpha fusion review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rajiv-alpha-fusion/"
+      "title": "breakeven_stop_calculator review: settings, strategy &amp; how to use it",
+      "url": "/reviews/breakeven-stop-calculator/"
     },
     {
-      "title": "ichimoku cloud review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ichimoku-cloud/"
+      "title": "ais_supertrend review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ais-supertrend/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On ETH, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-05 → 2026-07-03), the Ichimoku Cloud delivered a **+19.6% total return** on ETH-USD, compounding at **3.6% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Ichimoku Cloud delivered a **+18.8% total return** on ETH-USD, compounding at **3.5% annually**. 
 
 At **0.16**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **53.0% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.16 | ❌ Weak |
 | Max Drawdown | 53.0% | ⚠️ Significant |
-| Win Rate | 33.3% | ❌ Low — relies on outsized wins |
+| Win Rate | 32.4% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.08 | ⚠️ Marginal |
-| Trades/Year | ~36 total | Active |
+| Trades/Year | ~37 total | Active |
 
-The **profit factor of 1.08** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.08** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 32.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on ETH?
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on ETH-USD](/backtests/ichimoku-cloud-eth-usd-trades.png)

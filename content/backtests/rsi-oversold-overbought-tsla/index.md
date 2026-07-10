@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-02",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-41.1%"
+      "value": "-38.9%"
     },
     {
       "label": "CAGR",
-      "value": "-10.1%"
+      "value": "-9.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.10"
+      "value": "-0.08"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+60.2%",
+      "return_pct": "+54.1%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-10.2%",
+      "return_pct": "-6.7%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-tsla-equity.png",
   "crosslinks": [
     {
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
+    },
+    {
       "title": "triple exponential ma review: settings, strategy &amp; how to use it",
       "url": "/reviews/triple-exponential-ma/"
     },
     {
       "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
       "url": "/reviews/rsi-macd-confluence/"
-    },
-    {
-      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
-      "url": "/reviews/relative-strength-index-rsi/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On TSLA, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-07-06 → 2026-07-02), the RSI Oversold/Overbought delivered a **-41.1% total return** on TSLA, compounding at **-10.1% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the RSI Oversold/Overbought delivered a **-38.9% total return** on TSLA, compounding at **-9.4% annually**. 
 
-At **-0.10**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.08**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **70.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 70% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **70.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.10 | ❌ Weak |
+| Sharpe Ratio | -0.08 | ❌ Weak |
 | Max Drawdown | 70.0% | ⚠️ Significant |
 | Win Rate | 14.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.22 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.22** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on TSLA?
 
-The rsi oversold/overbought struggled to generate meaningful edge on TSLA over this 5-year period. With a **-0.10 Sharpe ratio** and **0.22 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The rsi oversold/overbought struggled to generate meaningful edge on TSLA over this 5-year period. With a **-0.08 Sharpe ratio** and **0.22 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on TSLA with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on TSLA unless you're combining it with other confirmations or
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on TSLA](/backtests/rsi-oversold-overbought-tsla-trades.png)

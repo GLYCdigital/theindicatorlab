@@ -1,10 +1,10 @@
 ---
 {
   "title": "Volume \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+67.5%",
+      "return_pct": "+80.8%",
       "trades": "0",
       "win_rate_pct": "55.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-42.1%",
+      "return_pct": "-40.4%",
       "trades": "1",
       "win_rate_pct": "55.2%"
     }
@@ -109,7 +109,7 @@ On ETH, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-05 → 2026-07-03), the Whale Liquidity / Absorption Profile delivered a **+48.9% total return** on ETH-USD, compounding at **8.3% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Whale Liquidity / Absorption Profile delivered a **+48.9% total return** on ETH-USD, compounding at **8.3% annually**. 
 
 At **0.54**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on ETH. 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on ETH-USD](/backtests/whale-liquidity-absorption-eth-usd-trades.png)

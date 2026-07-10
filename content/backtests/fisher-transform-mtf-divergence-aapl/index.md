@@ -1,22 +1,22 @@
 ---
 {
   "title": "Fisher \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-02",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+6.5%"
+      "value": "+8.4%"
     },
     {
       "label": "CAGR",
-      "value": "1.3%"
+      "value": "1.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.05"
+      "value": "0.06"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+25.4%",
+      "return_pct": "+23.2%",
       "trades": "20",
       "win_rate_pct": "43.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+14.1%",
+      "return_pct": "+16.2%",
       "trades": "27",
       "win_rate_pct": "43.6%"
     }
@@ -109,9 +109,9 @@ On AAPL, the Fisher acts as a trend filter. It won't catch every exact bottom, b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-07-06 → 2026-07-02), the Fisher Transform MTF Divergence delivered a **+6.5% total return** on AAPL, compounding at **1.3% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Fisher Transform MTF Divergence delivered a **+8.4% total return** on AAPL, compounding at **1.6% annually**. 
 
-At **0.05**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.06**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **38.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 39% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **38.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.05 | ❌ Weak |
+| Sharpe Ratio | 0.06 | ❌ Weak |
 | Max Drawdown | 38.6% | ⚠️ Significant |
 | Win Rate | 43.6% | ⚠️ Below average |
 | Profit Factor | 1.01 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.01** tells the real story: when the Fisher fires, the w
 
 ## Does the Fisher Transform MTF Divergence Work on AAPL?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.05 Sharpe ratio** and **1.01 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.06 Sharpe ratio** and **1.01 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on AAPL unless you're combining it with other confirmations or
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on AAPL](/backtests/fisher-transform-mtf-divergence-aapl-trades.png)

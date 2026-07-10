@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.9%",
+      "return_pct": "+1.2%",
       "trades": "5",
       "win_rate_pct": "38.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-2.9%",
+      "return_pct": "-4.7%",
       "trades": "10",
       "win_rate_pct": "38.8%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/donchian-channel-breakout-gc=f-equity.png",
   "crosslinks": [
     {
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
+    },
+    {
       "title": "donchian_mtf review: settings, strategy &amp; how to use it",
       "url": "/reviews/donchian-mtf/"
     },
     {
-      "title": "donchian_breakout review: settings, strategy &amp; how to use it",
-      "url": "/reviews/donchian-breakout/"
-    },
-    {
-      "title": "donchian channels review: settings, strategy &amp; how to use it",
-      "url": "/reviews/donchian-channels/"
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
+      "url": "/reviews/supertrend-atr-trailing-stop/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On GC=F, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-07-06 → 2026-07-03), the Donchian Channel Breakout delivered a **+48.7% total return** on GC=F, compounding at **8.3% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Donchian Channel Breakout delivered a **+48.7% total return** on GC=F, compounding at **8.3% annually**. 
 
 At **0.44**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on GC=F.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on GC=F](/backtests/donchian-channel-breakout-gc=f-trades.png)

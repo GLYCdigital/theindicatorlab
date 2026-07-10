@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-02",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+5.7%"
+      "value": "+6.9%"
     },
     {
       "label": "CAGR",
-      "value": "1.1%"
+      "value": "1.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.03"
+      "value": "-0.01"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.4%",
+      "return_pct": "+9.4%",
       "trades": "9",
       "win_rate_pct": "34.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+9.6%",
+      "return_pct": "+11.0%",
       "trades": "9",
       "win_rate_pct": "34.6%"
     }
@@ -92,8 +92,8 @@
       "url": "/reviews/vwap-multi/"
     },
     {
-      "title": "htf volume spike imbalance projection review: settings, strategy &amp; how to use it",
-      "url": "/reviews/htf-volume-spike-imbalance-projection/"
+      "title": "vwap_standard_deviation_bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/vwap-standard-deviation-bands/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On SPY, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-07-06 → 2026-07-02), the Volume Profile Pro delivered a **+5.7% total return** on SPY, compounding at **1.1% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Volume Profile Pro delivered a **+6.9% total return** on SPY, compounding at **1.4% annually**. 
 
-At **-0.03**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.01**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **28.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 28% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **28.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.03 | ❌ Weak |
+| Sharpe Ratio | -0.01 | ❌ Weak |
 | Max Drawdown | 28.1% | ⚠️ Moderate |
 | Win Rate | 34.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.08 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.08** tells the real story: when the VWAP fires, the win
 
 ## Does the Volume Profile Pro Work on SPY?
 
-The volume profile pro struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.03 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The volume profile pro struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.01 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the VWAP is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on SPY](/backtests/volume-profile-pro-spy-trades.png)

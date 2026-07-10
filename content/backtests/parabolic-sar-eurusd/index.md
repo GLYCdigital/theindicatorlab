@@ -1,14 +1,14 @@
 ---
 {
   "title": "SAR \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-6.1%"
+      "value": "-6.2%"
     },
     {
       "label": "CAGR",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.5%",
+      "return_pct": "-4.6%",
       "trades": "5",
       "win_rate_pct": "36.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-2.6%",
+      "return_pct": "-2.8%",
       "trades": "5",
       "win_rate_pct": "36.2%"
     }
@@ -84,12 +84,12 @@
   "equity_curve_url": "/backtests/parabolic-sar-eurusd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
-    },
-    {
       "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
       "url": "/reviews/currency-strength-meter/"
+    },
+    {
+      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
+      "url": "/reviews/luxalgo/"
     },
     {
       "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
@@ -109,7 +109,7 @@ On EURUSD, the SAR acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-07-05 → 2026-07-03), the Parabolic SAR delivered a **-6.1% total return** on EURUSD=X, compounding at **-1.3% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Parabolic SAR delivered a **-6.2% total return** on EURUSD=X, compounding at **-1.3% annually**. 
 
 At **-0.98**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on EURUSD unless you're combining it with other confirmations 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on EURUSD=X](/backtests/parabolic-sar-eurusd-trades.png)

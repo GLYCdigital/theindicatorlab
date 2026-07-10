@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+63.4%"
+      "value": "+68.0%"
     },
     {
       "label": "CAGR",
-      "value": "10.3%"
+      "value": "10.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.36"
+      "value": "0.38"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+67.5%",
+      "return_pct": "+80.8%",
       "trades": "9",
       "win_rate_pct": "21.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-42.1%",
+      "return_pct": "-40.4%",
       "trades": "10",
       "win_rate_pct": "21.0%"
     }
@@ -92,8 +92,8 @@
       "url": "/reviews/vwap-multi/"
     },
     {
-      "title": "htf volume spike imbalance projection review: settings, strategy &amp; how to use it",
-      "url": "/reviews/htf-volume-spike-imbalance-projection/"
+      "title": "vwap_standard_deviation_bands review: settings, strategy &amp; how to use it",
+      "url": "/reviews/vwap-standard-deviation-bands/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-05 → 2026-07-03), the Volume Profile Pro delivered a **+63.4% total return** on ETH-USD, compounding at **10.3% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Volume Profile Pro delivered a **+68.0% total return** on ETH-USD, compounding at **10.9% annually**. 
 
-At **0.36**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.38**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **44.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **44.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.36 | ❌ Weak |
+| Sharpe Ratio | 0.38 | ❌ Weak |
 | Max Drawdown | 44.5% | ⚠️ Significant |
 | Win Rate | 21.0% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.21 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.21** tells the real story: when the VWAP fires, the win
 
 ## Does the Volume Profile Pro Work on ETH?
 
-The volume profile pro shows moderate edge on ETH — **0.36 Sharpe, 1.21 profit factor** over 100 trades. It's not a home run, but it's also not random.
+The volume profile pro shows moderate edge on ETH — **0.38 Sharpe, 1.21 profit factor** over 100 trades. It's not a home run, but it's also not random.
 
 The 21.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -137,6 +137,6 @@ Our take: usable as a confirmation tool, but not as a standalone system on ETH. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on ETH-USD](/backtests/volume-profile-pro-eth-usd-trades.png)

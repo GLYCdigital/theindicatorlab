@@ -1,22 +1,22 @@
 ---
 {
   "title": "CVD \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-02",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.7%"
+      "value": "+16.1%"
     },
     {
       "label": "CAGR",
-      "value": "2.8%"
+      "value": "3.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.09"
+      "value": "0.10"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.4%",
+      "return_pct": "+9.4%",
       "trades": "6",
       "win_rate_pct": "38.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+9.6%",
+      "return_pct": "+11.0%",
       "trades": "9",
       "win_rate_pct": "38.5%"
     }
@@ -109,9 +109,9 @@ On SPY, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-07-06 → 2026-07-02), the CVD Divergence Alerts delivered a **+14.7% total return** on SPY, compounding at **2.8% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the CVD Divergence Alerts delivered a **+16.1% total return** on SPY, compounding at **3.0% annually**. 
 
-At **0.09**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.10**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **21.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 22% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **21.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.09 | ❌ Weak |
+| Sharpe Ratio | 0.10 | ❌ Weak |
 | Max Drawdown | 21.8% | ⚠️ Moderate |
 | Win Rate | 38.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.23 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.23** tells the real story: when the CVD fires, the winn
 
 ## Does the CVD Divergence Alerts Work on SPY?
 
-The cvd divergence alerts struggled to generate meaningful edge on SPY over this 5-year period. With a **0.09 Sharpe ratio** and **1.23 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The cvd divergence alerts struggled to generate meaningful edge on SPY over this 5-year period. With a **0.10 Sharpe ratio** and **1.23 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the CVD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -146,6 +146,6 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on SPY](/backtests/cvd-divergence-alerts-spy-trades.png)

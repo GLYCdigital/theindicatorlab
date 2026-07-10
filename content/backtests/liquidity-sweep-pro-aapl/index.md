@@ -1,22 +1,22 @@
 ---
 {
   "title": "Sweep \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-02",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+57.1%"
+      "value": "+62.9%"
     },
     {
       "label": "CAGR",
-      "value": "9.5%"
+      "value": "10.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.50"
+      "value": "0.54"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "37.9%"
+      "value": "37.6%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.40"
+      "value": "1.43"
     },
     {
       "label": "Total Trades",
-      "value": "95"
+      "value": "93"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+25.4%",
-      "trades": "14",
-      "win_rate_pct": "37.9%"
+      "return_pct": "+23.2%",
+      "trades": "12",
+      "win_rate_pct": "37.6%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "17",
-      "win_rate_pct": "37.9%"
+      "win_rate_pct": "37.6%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "18",
-      "win_rate_pct": "37.9%"
+      "win_rate_pct": "37.6%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "20",
-      "win_rate_pct": "37.9%"
+      "win_rate_pct": "37.6%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "19",
-      "win_rate_pct": "37.9%"
+      "win_rate_pct": "37.6%"
     },
     {
       "year": "2026",
-      "return_pct": "+14.1%",
+      "return_pct": "+16.2%",
       "trades": "7",
-      "win_rate_pct": "37.9%"
+      "win_rate_pct": "37.6%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On AAPL, the Sweep acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-07-06 → 2026-07-02), the Liquidity Sweep Pro delivered a **+57.1% total return** on AAPL, compounding at **9.5% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Liquidity Sweep Pro delivered a **+62.9% total return** on AAPL, compounding at **10.3% annually**. 
 
-At **0.50**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.54**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **23.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 23% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,24 +119,24 @@ The catch? A **23.2% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.50 | ❌ Weak |
+| Sharpe Ratio | 0.54 | ⚠️ Moderate |
 | Max Drawdown | 23.2% | ⚠️ Moderate |
-| Win Rate | 37.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.40 | ⚠️ Marginal |
-| Trades/Year | ~95 total | Active |
+| Win Rate | 37.6% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.43 | ⚠️ Marginal |
+| Trades/Year | ~93 total | Active |
 
-The **profit factor of 1.40** tells the real story: when the Sweep fires, the winning signals are larger than the losing ones. Combined with a 37.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.43** tells the real story: when the Sweep fires, the winning signals are larger than the losing ones. Combined with a 37.6% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Liquidity Sweep Pro Work on AAPL?
 
-The liquidity sweep pro shows moderate edge on AAPL — **0.50 Sharpe, 1.40 profit factor** over 95 trades. It's not a home run, but it's also not random.
+The liquidity sweep pro shows moderate edge on AAPL — **0.54 Sharpe, 1.43 profit factor** over 93 trades. It's not a home run, but it's also not random.
 
-The 37.9% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 37.6% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on AAPL. Combine with trend filters or volume confirmation for better results.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on AAPL](/backtests/liquidity-sweep-pro-aapl-trades.png)

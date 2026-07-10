@@ -1,18 +1,18 @@
 ---
 {
   "title": "SuperTrend \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-06 \u2192 2026-07-02",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-24.1%"
+      "value": "-24.5%"
     },
     {
       "label": "CAGR",
-      "value": "-5.4%"
+      "value": "-5.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "44.1%"
+      "value": "43.8%"
     },
     {
       "label": "Profit Factor",
@@ -32,49 +32,49 @@
     },
     {
       "label": "Total Trades",
-      "value": "295"
+      "value": "297"
     },
     {
       "label": "Avg Trade",
-      "value": "4 days"
+      "value": "3 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.7%",
+      "return_pct": "+10.0%",
       "trades": "25",
-      "win_rate_pct": "44.1%"
+      "win_rate_pct": "43.8%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "58",
-      "win_rate_pct": "44.1%"
+      "win_rate_pct": "43.8%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "63",
-      "win_rate_pct": "44.1%"
+      "win_rate_pct": "43.8%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "58",
-      "win_rate_pct": "44.1%"
+      "win_rate_pct": "43.8%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "65",
-      "win_rate_pct": "44.1%"
+      "win_rate_pct": "43.8%"
     },
     {
       "year": "2026",
-      "return_pct": "+16.5%",
-      "trades": "26",
-      "win_rate_pct": "44.1%"
+      "return_pct": "+18.6%",
+      "trades": "28",
+      "win_rate_pct": "43.8%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On QQQ, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-06 → 2026-07-02), the SuperTrend + ATR Trailing Stop delivered a **-24.1% total return** on QQQ, compounding at **-5.4% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **-24.5% total return** on QQQ, compounding at **-5.5% annually**. 
 
 At **-0.31**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **35.9% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.31 | ❌ Weak |
 | Max Drawdown | 35.9% | ⚠️ Significant |
-| Win Rate | 44.1% | ⚠️ Below average |
+| Win Rate | 43.8% | ⚠️ Below average |
 | Profit Factor | 0.87 | ❌ Unprofitable |
-| Trades/Year | ~295 total | Active |
+| Trades/Year | ~297 total | Active |
 
-The **profit factor of 0.87** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 44.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.87** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 43.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on QQQ?
 
@@ -146,6 +146,6 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on QQQ](/backtests/supertrend-atr-trailing-stop-qqq-trades.png)

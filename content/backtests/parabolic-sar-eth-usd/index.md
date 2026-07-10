@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-47.9%"
+      "value": "-47.3%"
     },
     {
       "label": "CAGR",
-      "value": "-12.2%"
+      "value": "-12.0%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+67.5%",
+      "return_pct": "+80.8%",
       "trades": "5",
       "win_rate_pct": "34.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-42.1%",
+      "return_pct": "-40.4%",
       "trades": "7",
       "win_rate_pct": "34.2%"
     }
@@ -84,12 +84,12 @@
   "equity_curve_url": "/backtests/parabolic-sar-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
-    },
-    {
       "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
       "url": "/reviews/currency-strength-meter/"
+    },
+    {
+      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
+      "url": "/reviews/luxalgo/"
     },
     {
       "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
@@ -109,7 +109,7 @@ On ETH, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-05 → 2026-07-03), the Parabolic SAR delivered a **-47.9% total return** on ETH-USD, compounding at **-12.2% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Parabolic SAR delivered a **-47.3% total return** on ETH-USD, compounding at **-12.0% annually**. 
 
 At **-0.07**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on ETH-USD](/backtests/parabolic-sar-eth-usd-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-04",
+  "date": "2026-07-11",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-05 \u2192 2026-07-03",
+  "period": "2021-07-12 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+18.0%"
+      "value": "+21.3%"
     },
     {
       "label": "CAGR",
-      "value": "3.4%"
+      "value": "3.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.15"
+      "value": "0.17"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+67.5%",
+      "return_pct": "+80.8%",
       "trades": "7",
       "win_rate_pct": "23.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-42.1%",
+      "return_pct": "-40.4%",
       "trades": "13",
       "win_rate_pct": "23.4%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/donchian-channel-breakout-eth-usd-equity.png",
   "crosslinks": [
     {
+      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "url": "/reviews/ttm-squeeze/"
+    },
+    {
       "title": "donchian_mtf review: settings, strategy &amp; how to use it",
       "url": "/reviews/donchian-mtf/"
     },
     {
-      "title": "donchian_breakout review: settings, strategy &amp; how to use it",
-      "url": "/reviews/donchian-breakout/"
-    },
-    {
-      "title": "donchian channels review: settings, strategy &amp; how to use it",
-      "url": "/reviews/donchian-channels/"
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
+      "url": "/reviews/supertrend-atr-trailing-stop/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-05 → 2026-07-03), the Donchian Channel Breakout delivered a **+18.0% total return** on ETH-USD, compounding at **3.4% annually**. 
+Over five years (2021-07-12 → 2026-07-10), the Donchian Channel Breakout delivered a **+21.3% total return** on ETH-USD, compounding at **3.9% annually**. 
 
-At **0.15**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.17**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.15 | ❌ Weak |
+| Sharpe Ratio | 0.17 | ❌ Weak |
 | Max Drawdown | 49.8% | ⚠️ Significant |
 | Win Rate | 23.4% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.04 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.04** tells the real story: when the Donchian fires, the
 
 ## Does the Donchian Channel Breakout Work on ETH?
 
-The donchian channel breakout struggled to generate meaningful edge on ETH over this 5-year period. With a **0.15 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on ETH over this 5-year period. With a **0.17 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,6 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 04, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on ETH-USD](/backtests/donchian-channel-breakout-eth-usd-trades.png)
