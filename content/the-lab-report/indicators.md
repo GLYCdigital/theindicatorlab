@@ -1,18 +1,18 @@
 ---
 title: "All Indicators — The Lab Report"
-date: 2026-07-05
+date: 2026-07-12
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 73 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 78 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **73 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** {{< param date >}} · **78 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (26)
+## Momentum (28)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -44,8 +44,10 @@ Indicators that measure the speed and strength of price movement.
 | Gator Oscillator | [→ Full review](/reviews/gator-oscillator/) |
 | KST (Know Sure Thing) | [→ Full review](/reviews/know-sure-thing/) |
 | Connors RSI | [→ Full review](/reviews/connors-rsi/) |
+| Center of Gravity | [→ Full review](/reviews/center-of-gravity/) |
+| Relative Vigor Index | [→ Full review](/reviews/relative-vigor-index/) |
 
-## Trend (19)
+## Trend (21)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -70,6 +72,8 @@ Indicators that identify direction and strength of the prevailing trend.
 | Guppy Multiple MA | [→ Full review](/reviews/guppy-multiple-moving-average/) |
 | Envelopes | [→ Full review](/reviews/envelopes/) |
 | Fractal Adaptive MA | [→ Full review](/reviews/fractal-adaptive-ma/) |
+| ALMA | [→ Full review](/reviews/alma-arnaud-legoux/) |
+| McGinley Dynamic | [→ Full review](/reviews/mcginley-dynamic/) |
 
 ## Volume (14)
 
@@ -92,7 +96,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Twiggs Money Flow | [→ Full review](/reviews/twiggs-money-flow/) |
 | Chaikin Oscillator | [→ Full review](/reviews/chaikin-oscillator/) |
 
-## Volatility (14)
+## Volatility (15)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -112,6 +116,7 @@ Indicators that measure the magnitude of price fluctuations.
 | Mass Index | [→ Full review](/reviews/mass-index/) |
 | Bollinger %B | [→ Full review](/reviews/bollinger-bands-percent-b/) |
 | Historical Volatility | [→ Full review](/reviews/historical-volatility/) |
+| Ulcer Index | [→ Full review](/reviews/ulcer-index/) |
 
 ---
 
