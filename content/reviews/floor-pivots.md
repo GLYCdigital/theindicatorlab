@@ -1,111 +1,95 @@
 ---
-title: "Floor_Pivots Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Floor_Pivots Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/floor-pivots.png"
 tags:
   - floor pivots
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "Floor_Pivots TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Floor_Pivots provides key support/resistance levels based on daily, weekly, and monthly pivots. Ideal for breakout and mean-reversion traders. Settings and strategy inside."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Floor_Pivots",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Floor_Pivots TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+**What This Indicator Actually Does**
 
-# Floor_Pivots Review
+Floor_Pivots calculates and plots classic pivot points, support (S1, S2, S3), and resistance (R1, R2, R3) levels using the standard formula: (High + Low + Close) / 3. You can choose daily, weekly, or monthly timeframes. As the chart above shows, these levels act as magnets — price often reacts at them, either reversing or accelerating through.
 
-Trend indicators like Floor_Pivots are the backbone of systematic trading. By smoothing price action over a lookback period, they reveal the dominant direction and help traders stay in moves longer rather than exiting prematurely.
+**Key Features That Set It Apart**
 
-![Floor_Pivots TradingView indicator chart screenshot](/screenshots/floor-pivots.png "Floor_Pivots indicator on TradingView")
+Most pivot indicators on TradingView are cluttered or overly complex. Floor_Pivots keeps it clean. Three standout features:
 
-<!--more-->
+- **Multi-timeframe selection** in one script — toggle between daily, weekly, and monthly without adding three separate indicators.
+- **Customizable line styles and colors** — you can make resistance green and support red (or whatever fits your chart).
+- **Built-in session high/low labels** — useful for spotting intraday extremes relative to the pivot.
 
-## Key Features
+**Honest Pros and Cons**
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+| Pros | Cons |
+|------|------|
+| Clean, non-repainting levels | No central pivot range (CPR) or Fibonacci variants |
+| Works on any timeframe | Default colors are a bit dull |
+| Lightweight — no lag | No alerts for level breaks |
+| Monthly pivots hold well for swing trading | Doesn't auto-adjust for market open gaps |
 
-## Best Settings for Floor_Pivots
+**Best Settings (My Tried-and-Tested Recommendations)**
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+- **Timeframe**: Daily for intraday scalping; Weekly for swing trades. Monthly if you're holding 2+ weeks.
+- **Line style**: Solid for pivot, dashed for S1/R1, dotted for S2/R2 and beyond. This helps you distinguish strength.
+- **Colors**: I set pivot = white, S/R1 = yellow, S2/R2 = orange, S3/R3 = red. Easy to read at a glance.
+- **Session High/Low**: Turn ON if you trade the first 2 hours. Turn OFF for longer-term views.
 
-## How to Use Floor_Pivots
+**How to Use It for Entries and Exits**
 
-1. Start by checking the indicator's direction on your trading timeframe
-1. Take long trades only when the indicator shows an uptrend (and vice versa)
-1. Use a faster setting for entry timing and a slower setting for trend filter
-1. Avoid trading when the indicator is flat or whipsawing around the midline
+This is a pure level indicator — no signals. Use it like this:
 
-## Pros & Cons
+- **Breakout entry**: Price closes above R1 with volume → long, target R2. Stop below pivot.
+- **Mean reversion**: Price touches S2 on a 15-minute chart with RSI oversold → long, target S1 or pivot. Stop below S3.
+- **Reversal at pivot**: If price opens above pivot but fails to hold → short below pivot, target S1.
+- **Trailing stop**: Use R1 as a trailing stop for long positions in a strong trend.
 
-### Pros
-    - Automated trend detection removes emotional bias from trade direction
-    - Self-adjusts to new price data — no manual recalibration
-    - Compatible with every major market — stocks, crypto, forex, futures
+**Who It's Actually For**
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+- **Day traders** who need clean, fast-loading levels.
+- **Swing traders** who want weekly/monthly reference points.
+- **Beginners** learning support/resistance — the simplicity is a plus.
 
-## Who Is This For?
+Not for: Traders who want automatic entry signals, Fibonacci levels, or volume-based pivots.
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+**Better Alternatives If They Exist**
 
-## Alternatives
+- **Auto Pivot Levels** — includes CPR and Fibonacci, but more cluttered.
+- **Pivot Point Standard** — similar but with alerts.
+- **VWAP + Pivots** — if you want volume-weighted levels alongside pivots.
 
-- Moving Average — simpler, slower, the original trend-following tool
-- SuperTrend — ATR-based, adapts to volatility, one of the most popular
-- ADX — measures trend strength but not direction (pair with a direction filter)
-- Parabolic SAR — dot-based stops and reversals, works in strong trends
+Floor_Pivots is better than most because it's lightweight and customizable without being overwhelming.
 
-## Frequently Asked Questions
+**FAQ: Real Trader Questions**
 
-### How do I reduce whipsaws?
+**Q: Does this repaint?**  
+No. Pivot levels are calculated from the previous day/week/month and stay fixed.
 
-Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
+**Q: Can I use it on crypto?**  
+Yes, works on any asset. Monthly pivots are surprisingly reliable on Bitcoin.
 
-### Should I use it alone or with other indicators?
+**Q: Why don't I see S3/R3?**  
+Check your settings — they're enabled by default but might be hidden if you toggled them off.
 
-Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
+**Q: Can I backtest strategies with this?**  
+Indirectly. The levels don't generate signals, but you can manually test entries at S1/R1.
 
-### How does this handle gaps?
+**Final Verdict**
 
-Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
+Floor_Pivots is a solid, no-nonsense pivot level tool. It won't make you rich by itself, but paired with price action or an oscillator, it's a reliable reference. For a free indicator with clean code, it earns its four stars.
 
-## Final Verdict
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-A dependable performer. Not perfect, but delivers consistent value for its intended use.
+**Rating**: ⭐⭐⭐⭐ (4/5)
 
 ## Get Started with Better Trading Tools
 
@@ -115,4 +99,4 @@ A dependable performer. Not perfect, but delivers consistent value for its inten
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

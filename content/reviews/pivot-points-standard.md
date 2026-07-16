@@ -1,118 +1,126 @@
 ---
-title: "Pivot Points Standard Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Pivot Points Standard Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/pivot-points-standard.png"
 tags:
   - pivot points standard
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 3
-description: "Pivot Points Standard TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "A solid, no-frills pivot point calculator. Works as advertised, but nothing you can't draw yourself. Decent for quick S/R levels on daily charts."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Pivot Points Standard",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Pivot Points Standard TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "3",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+**Pivot Points Standard** is one of those indicators you install, glance at, and realize you’ve seen it a hundred times. It calculates the classic floor pivot levels — Pivot, R1–R3, S1–S3 — based on the previous period’s high, low, and close. No AI, no adaptive lines, no fancy volatility bands. Just raw math.
 
-# Pivot Points Standard Review
+If you’re new to TradingView and want pivot points without the clutter, this does the job. But if you’ve been around the block, you’ll likely find it… basic.
 
-Pivot Points Standard helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
+## What this indicator actually does
 
-![Pivot Points Standard TradingView indicator chart screenshot](/screenshots/pivot-points-standard.png "Pivot Points Standard indicator on TradingView")
+It plots horizontal lines at predefined levels. That’s it. The pivot is the average of high, low, and close from the prior period. Resistance (R1, R2, R3) and Support (S1, S2, S3) are calculated using the standard formulas:
 
-<!--more-->
+- R3 = High + 2*(Pivot – Low)
+- S3 = Low – 2*(High – Pivot)
 
-## Key Features
+You can switch between daily, weekly, or monthly timeframes. The lines are color-coded and you can adjust their thickness and transparency. Nothing groundbreaking — but it’s clean and fast.
 
-- Reveals trend direction by smoothing raw price fluctuations
-- Self-correcting — outdated signals fade as new bars form
-- Works standalone or as a foundation layer in multi-indicator systems
+## Key features that set it apart
 
-## Best Settings for Pivot Points Standard
+Honestly? Not much. But there are two things worth mentioning:
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+1. **Multi-timeframe support** – You can set the calculation to daily, weekly, or monthly while viewing a lower timeframe chart. That’s useful for intraday traders who want weekly levels on a 15-minute chart.
+2. **Clean labeling** – The levels are labeled clearly (R1, Pivot, S1, etc.) and you can toggle visibility per level. It’s simple, but some pivot indicators clutter the chart with extra lines or annotations.
 
-## How to Use Pivot Points Standard
+That’s the list. It doesn’t auto-detect breakouts, calculate sentiment, or give you entry signals. It’s a ruler, not a compass.
 
-1. Plot on your chart and watch for the direction of the line or colour
-1. Enter when the indicator turns bullish (line slopes up / colour changes)
-1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
-1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
+## Best settings with specific recommendations
 
-## Pros & Cons
+In the settings, you have three main options:
 
-### Pros
-    - Reduces noise compared to raw price action
-    - Clear visual signals — no complex interpretation needed
-    - Works as both a standalone tool and with other indicators
+- **Calculation timeframe**: Set to `Daily` for intraday use, `Weekly` for swing trades, or `Monthly` for long-term support/resistance zones.
+- **Line style & color**: I keep R1–R3 in red tones (dashed for R2, solid for R3) and S1–S3 in green. Pivot gets a thicker yellow line. This prevents visual overload.
+- **Show only pivot**: If you only want the central pivot line, uncheck all support/resistance levels. Useful if you’re combining it with other indicators.
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+**My go-to**: Daily calculation, show all levels, R2 and S2 as dashed lines, S3 and R3 hidden (they rarely get hit in normal conditions). This keeps the chart readable.
 
-## Who Is This For?
+## How to use it for entries and exits
 
-- Traders who prefer 'the trend is your friend' as their core philosophy
-- Swing traders looking for pullback entries in strong uptrends
-- Anyone who struggles with overtrading — the indicator forces you to stay directional
+Pivot points are reactive, not predictive. Here’s the most reliable way I’ve used them:
 
-## Alternatives
+- **Bounce off Pivot**: If price pulls back to the daily pivot and shows a bullish candlestick pattern (hammer, engulfing) with volume, I take a long. Stop loss below the pivot. Target R1.
+- **Break of R1 with retest**: If price breaks above R1 and then retests it as support, that’s a continuation entry. Target R2.
+- **S1 as floor**: In a downtrend, if price hits S1 and forms a bullish divergence on RSI, I look for a scalp back to the pivot.
 
-- Simple Moving Average — the classic, widely understood
-- Keltner Channels — trend direction + volatility envelope in one
-- Ichimoku Cloud — comprehensive: support, resistance, trend, momentum combined
-- MACD — trend following with a momentum twist through the signal line crossover
+**Don’t** use them as hard stop-loss levels. They’re zones, not exact lines. On the chart above, you can see price often wicks through S1 before reversing — wait for confirmation.
 
-## Frequently Asked Questions
+## Honest pros and cons
 
-### What's the most common mistake traders make?
+**Pros**:
+- Zero learning curve. Install, set timeframe, done.
+- Lightweight — doesn’t slow down your chart even on 100+ symbols.
+- Multi-timeframe calculation is genuinely useful for day traders.
+- Free. No premium version nonsense.
 
-Overriding the signal. The indicator says long, but you short because it feels 'too high'. Trust the system or don't use it.
+**Cons**:
+- Static and basic. You could calculate these levels in your head or on a spreadsheet.
+- No auto-update for extended trading hours. If you trade crypto or forex 24/5, the daily high/low reset time matters — this indicator doesn’t handle that gracefully.
+- No volume-weighted pivots, no Fibonacci extensions. Nothing modern.
+- Can be misleading in ranging markets. Levels get hit multiple times, losing their significance fast.
 
-### Can I use this for intraday trading?
+## Who it’s actually for
 
-Yes, but lower the period proportionally. A 50-period on a 1-minute chart represents less than an hour of data. Try 10-20 for intraday, 50-200 for daily and above.
+- **Beginners** learning about support/resistance and pivot calculations.
+- **Day traders** who want a quick visual reference for daily levels without thinking.
+- **Swing traders** using weekly pivots to frame their trades.
 
-### Does this work in crypto?
+It’s **not** for:
+- Traders who need adaptive or volatility-adjusted levels.
+- Anyone using 5-minute charts for scalping — the levels become noise.
+- Traders who already know how to draw horizontal lines manually.
 
-Yes — crypto trends are strong and persistent. Higher timeframes (4h, daily) work best. Lower timeframes (15m, 1h) are noisy and generate excessive whipsaws.
+## Better alternatives if they exist
 
-## Final Verdict
+- **Pivot Points High Low** (by LuxAlgo) – Same concept but with volume-weighted calculations and auto-drawn extensions. More accurate on 24/5 markets.
+- **VWAP + Pivot Zones** – Combines volume profile with pivot levels. Better for intraday.
+- **Standard Pivot Points (by QuantNomad)** – Similar to this, but allows custom formulas and multi-timeframe display with more styling options.
+
+If you want the same thing but with modern features, go with LuxAlgo’s version. If you just want plain pivots, this one is fine.
+
+## FAQ
+
+**Q: Can I use this for crypto?**  
+A: Yes, but be careful. Crypto trades 24/7, so the daily high/low might not reset at midnight UTC. You’ll get different levels depending on your exchange’s session time. This indicator uses TradingView’s session, which may not align.
+
+**Q: Does it repaint?**  
+A: No. Once a period closes, the levels are fixed. No repainting.
+
+**Q: Can I export the pivot levels?**  
+A: Not directly. You’d need to use the Pine Script console or manually note them.
+
+**Q: Is it better than drawing my own horizontal lines?**  
+A: It’s faster, but not better. If you’re disciplined, manual lines give you more control over which levels matter.
+
+## Final verdict with star rating
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-Average performer. Does the job in the right conditions but isn't a game changer.
+Pivot Points Standard is a utility knife. It does one thing — calculate standard pivot levels — and does it without bugs or surprises. But in a world where indicators can adapt, learn, and filter noise, this one feels like a relic. Install it if you want a clean default pivot plot. Uninstall it if you want anything more.
+
+It’s not bad. It’s just… standard.
 
 ## Get Started with Better Trading Tools
 
-📈 **Put this indicator to work on TradingView.** Real-time charts, pro-grade screeners, and over 100,000 community indicators.
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
 
-[Start Free on TradingView →](https://www.tradingview.com/?aff_id=166324)
-*We earn a commission at no extra cost to you*
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

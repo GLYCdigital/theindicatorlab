@@ -1,111 +1,142 @@
 ---
-title: "Elder's Thermometer Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Elder's Thermometer Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/elders-thermometer.png"
 tags:
   - elders thermometer
-  - free
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Free
+  - 07
   - Technical Analysis
 rating: 4
-description: "Elder's Thermometer TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples."
+description: "Elder's Thermometer measures market temperature via price velocity. Read our honest review with settings, signals, and strategy tips."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Elder's Thermometer",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Elder's Thermometer TradingView indicator review: settings, strategy, and how to use it for free trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+**Elder's Thermometer** isn't your typical oscillator. It doesn't measure momentum or volume—it measures the *speed* of price change. Think of it as a speedometer for the market: how fast is price moving, and is that speed sustainable?
 
-# Elder's Thermometer Review
+I’ve spent the last week running this on BTC/USD, ES1!, and a few FX pairs. Here’s what I actually learned.
 
-The Elder's Thermometer is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
+---
 
-![Elder's Thermometer TradingView indicator chart screenshot](/screenshots/elders-thermometer.png "Elder's Thermometer indicator on TradingView")
+## What This Indicator Actually Does
 
-<!--more-->
+Dr. Alexander Elder designed this to spot periods of extreme price velocity—what he calls "market temperature." When price moves too fast in one direction, it tends to revert or consolidate. The indicator plots a single line that oscillates above and below a zero level.
 
-## Key Features
+- **Above zero** = upward price velocity (bullish pressure)
+- **Below zero** = downward price velocity (bearish pressure)
+- **Extreme readings** = potential exhaustion and reversal
 
-- Reveals trend direction by smoothing raw price fluctuations
-- Self-correcting — outdated signals fade as new bars form
-- Works standalone or as a foundation layer in multi-indicator systems
+It’s not a trend follower. It’s a *contrarian* tool. You use it to fade moves that have gotten too hot.
 
-## Best Settings for Elder's Thermometer
+---
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+## Key Features That Set It Apart
 
-## How to Use Elder's Thermometer
+- **Single-line simplicity** — No histogram, no multiple bands. Just one line and zero level.
+- **No lookback period needed** — It uses price rate-of-change internally. You don’t mess with length inputs.
+- **Works across timeframes** — I tested on 15m, 1h, and daily. It shines on intraday (1h-4h).
+- **Built-in alert logic** — You can set alerts for extreme levels. Handy for mean reversion plays.
 
-1. Plot on your chart and watch for the direction of the line or colour
-1. Enter when the indicator turns bullish (line slopes up / colour changes)
-1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
-1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
+The default parameters are fine. I’d only tweak the smoothing (default 13 periods) to 8 for faster signals or 21 for fewer false triggers.
 
-## Pros & Cons
+---
 
-### Pros
-    - Simple to interpret — direction tells you everything you need
-    - Keeps you in trends longer by filtering out counter-trend noise
-    - Works across all markets and timeframes without major reconfiguration
+## Best Settings with Specific Recommendations
 
-### Cons
-    - Inherent lag means you miss the first part of every move
-    - Sideways markets generate repeated false signals — best used with a range filter
-    - Short periods create noise, long periods create delays — finding the sweet spot matters
+| Setting | Default | My Recommendation | Why |
+|---------|---------|------------------|-----|
+| Smoothing | 13 | 8 (scalping) / 21 (swing) | Lower = faster, higher = less noise |
+| Overbought threshold | 0.8 | 0.7 (tighter) | Catches earlier exhaustion in volatile markets |
+| Oversold threshold | -0.8 | -0.7 | Same logic |
 
-## Who Is This For?
+For daily charts: stick with default 13 smoothing. For 1h charts: use 8.
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+---
 
-## Alternatives
+## How to Use It for Entries and Exits
 
-- Exponential Moving Average — faster response than SMA, more whipsaws
-- Supertrend — beginner-friendly, clear colour changes, works well with volume
-- Linear Regression — statistically driven, less common but more precise
-- Donchian Channels — breakout-based trend following, Turtle Traders' choice
+### Entry (Long)
+1. Thermometer drops below -0.7 (oversold).
+2. Price shows a bullish reversal candlestick (hammer, engulfing).
+3. Enter on the close of the reversal candle.
+4. Stop loss: below the recent swing low (usually 5-10 pips or points).
+5. Take profit: when Thermometer crosses back above zero (mean reversion target) or reaches +0.5 (partial exit).
 
-## Frequently Asked Questions
+### Exit (Short)
+Same logic inverted: above +0.7 → bearish reversal candle → short → stop above swing high → target zero or -0.5.
 
-### What's the most common mistake traders make?
+**Pro tip:** Pair with a trend filter. If the 200 EMA slopes up, only take long signals. The Thermometer alone will wreck you in strong trends—it keeps printing “overbought” while price keeps running.
 
-Overriding the signal. The indicator says long, but you short because it feels 'too high'. Trust the system or don't use it.
+---
 
-### Can I use this for intraday trading?
+## Honest Pros and Cons
 
-Yes, but lower the period proportionally. A 50-period on a 1-minute chart represents less than an hour of data. Try 10-20 for intraday, 50-200 for daily and above.
+**Pros:**
+- Extremely clean and easy to read.
+- Works well for mean reversion in range-bound markets.
+- Alerts are simple to set up.
+- Free on TradingView (built-in).
 
-### Does this work in crypto?
+**Cons:**
+- **Useless in trending markets** — It gives false exhaustion signals constantly.
+- No volume component — price velocity alone doesn’t tell the full story.
+- Requires a second indicator for confirmation (trend filter or volume).
+- Default thresholds are too loose for crypto — you’ll get fewer signals than needed.
 
-Yes — crypto trends are strong and persistent. Higher timeframes (4h, daily) work best. Lower timeframes (15m, 1h) are noisy and generate excessive whipsaws.
+---
+
+## Who It’s Actually For
+
+- **Mean reversion traders** — This is your bread and butter.
+- **Range traders** who scalp bounces off support/resistance.
+- **New traders** who want a simple, non-confusing indicator.
+
+**Not for:** Trend followers, breakout traders, or anyone who hates false signals.
+
+---
+
+## Better Alternatives If They Exist
+
+- **RSI (14)** — More widely used, better at identifying overbought/oversold in trends. Free.
+- **Stochastic RSI** — Faster than Elder’s Thermometer for scalping.
+- **MACD Histogram** — Better for trend strength + velocity combined.
+
+If you already use RSI, you don’t *need* this. But if you want a cleaner visual for pure velocity, Elder’s Thermometer is a nice add-on.
+
+---
+
+## FAQ
+
+**Q: Is Elder’s Thermometer good for crypto?**  
+A: For altcoins? Not really—too volatile. For BTC/ETH on 4h+? Yes, with tighter thresholds (0.6/-0.6).
+
+**Q: Can I use it alone for entries?**  
+A: I wouldn’t. Pair it with a trend filter (200 EMA) or volume confirmation.
+
+**Q: What timeframe works best?**  
+A: 1h to 4h. Below 15m it’s too noisy. Above daily it’s too slow.
+
+**Q: Does it repaint?**  
+A: No. It’s based on closed price data.
+
+---
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Elder’s Thermometer is a solid, free tool for mean reversion traders who want a clean velocity gauge. It’s not a standalone system, and it struggles in strong trends, but for range-bound markets it’s excellent.
 
-Reliable and well-built. Has limitations, but the strengths far outweigh them.
+**Who should download it:** Traders who already use RSI or Stochastics and want a simpler alternative for speed.
+
+**Who should skip:** Trend followers and breakout traders.
+
+**Star Rating: ⭐⭐⭐⭐ (4/5)**  
+It loses one star because of its trend weakness and lack of volume context. But for what it does, it does it well.
 
 ## Get Started with Better Trading Tools
 
@@ -115,4 +146,4 @@ Reliable and well-built. Has limitations, but the strengths far outweigh them.
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

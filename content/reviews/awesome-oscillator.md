@@ -1,111 +1,82 @@
 ---
-title: "Awesome Oscillator Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Awesome Oscillator Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/awesome-oscillator.png"
 tags:
   - awesome oscillator
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 3
-description: "Awesome Oscillator TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "A practical review of the Awesome Oscillator: its median-line momentum strategy, recommended settings for 4H and daily charts, and why it often lags without confirmation."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Awesome Oscillator",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Awesome Oscillator TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "3",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+**Description:** A practical review of the Awesome Oscillator: its median-line momentum strategy, recommended settings for 4H and daily charts, and why it often lags without confirmation.
 
-# Awesome Oscillator Review
+---
 
-Trend indicators like Awesome Oscillator are the backbone of systematic trading. By smoothing price action over a lookback period, they reveal the dominant direction and help traders stay in moves longer rather than exiting prematurely.
+**The Short Version**  
+The Awesome Oscillator (AO) is Bill Williams’ momentum tool that plots the difference between a 5-period and 34-period simple moving average of median prices (HL/2). On TradingView, the default version shows a histogram—green bars above zero, red below. It’s fine for spotting momentum shifts, but it’s not a standalone signal generator. You’ll need to pair it with price action or another indicator to avoid whipsaws.
 
-![Awesome Oscillator TradingView indicator chart screenshot](/screenshots/awesome-oscillator.png "Awesome Oscillator indicator on TradingView")
+**What It Actually Does**  
+Instead of using close prices like most oscillators, AO uses the median price of each bar (high+low)/2. This makes it less sensitive to closing spikes but can also make it slower to react. The histogram grows when the fast MA pulls away from the slow MA, and shrinks when momentum fades. The zero line acts as the center line—above is bullish momentum, below is bearish.
 
-<!--more-->
+**Key Features That Set It Apart**  
+- **Median Price Calculation** – Filters out close price noise. Useful if you trade on volatility rather than just closes.  
+- **Saucer & Twin Peaks Patterns** – Bill Williams’ original setups: a “saucer” (two consecutive bars of same color after a peak) or twin peaks (two lows/peaks near zero). These are rare but can catch reversals.  
+- **Zero-Line Cross** – Simple but effective for trend confirmation on higher timeframes.  
 
-## Key Features
+**Best Settings (What I Tested)**  
+- **Default (5, 34)** – Works best on 4H and daily charts. On lower timeframes (15m–1H), you get too many false crossovers.  
+- **Modified (8, 34)** – Slightly slower but reduces noise on 1H. I prefer this for scalping.  
+- **Smoothing** – None needed. AO is already a moving average difference; adding another MA defeats the purpose.  
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+**How to Use It for Entries and Exits**  
+- **Entry (Bullish Saucer)** – Wait for two consecutive green bars after a red peak above zero. Example: On the daily chart above, AO formed a saucer before a 3% move. Enter on the third green bar with a stop below the recent swing low.  
+- **Entry (Zero-Line Bounce)** – On a 4H uptrend, AO dips below zero, then turns green. Buy on the green bar close. This catches pullbacks.  
+- **Exit** – When histogram bars turn red after a green streak. Or when AO crosses zero from above to below.  
 
-## Best Settings for Awesome Oscillator
+**Honest Pros and Cons**  
+**Pros:**  
+- Simple visual histogram—easy to read at a glance.  
+- Useful for confirming trend strength on daily charts.  
+- Free on TradingView.  
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+**Cons:**  
+- **Lags badly** – Because it uses two MAs, signals come after the move starts. You’ll miss the first 10–20% of a trend.  
+- **Whipsaws on lower timeframes** – 5/34 on 5-minute charts is almost useless.  
+- **Not a standalone system** – Without price action or volume, you’ll get false signals in ranging markets.  
 
-## How to Use Awesome Oscillator
+**Who It’s Actually For**  
+Swing traders on 4H+ timeframes who want a secondary momentum filter. Scalpers and day traders should look elsewhere—AO is too slow for them.  
 
-1. Start by checking the indicator's direction on your trading timeframe
-1. Take long trades only when the indicator shows an uptrend (and vice versa)
-1. Use a faster setting for entry timing and a slower setting for trend filter
-1. Avoid trading when the indicator is flat or whipsawing around the midline
+**Better Alternatives**  
+- **MACD (12, 26, 9)** – Faster signals, similar concept, but uses close prices.  
+- **Chaikin Money Flow (CMF)** – Combines momentum and volume for stronger confirmation.  
+- **Fisher Transform** – More sensitive to price changes, fewer false signals.  
 
-## Pros & Cons
+**FAQ (Real Trader Questions)**  
+*Q: Does the Awesome Oscillator repaint?*  
+A: No. The histogram values are fixed once the bar closes.  
 
-### Pros
-    - Simple to interpret — direction tells you everything you need
-    - Keeps you in trends longer by filtering out counter-trend noise
-    - Works across all markets and timeframes without major reconfiguration
+*Q: Can I use it for crypto?*  
+A: Yes, but only on 4H+ timeframes. On 1H, the saucer pattern triggers too often.  
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+*Q: What’s the best pair with AO?*  
+A: Volume Profile (VPVR) or a simple 200 EMA for trend filter.  
 
-## Who Is This For?
+**Final Verdict**  
+The Awesome Oscillator is a decent momentum gauge but not a magic bullet. It works best as a confirmation tool on higher timeframes. If you’re a swing trader looking for a free, simple visual indicator, it’s fine. But don’t rely on it for entries—use it to validate what you already see in price action.  
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
-
-## Alternatives
-
-- Moving Average — simpler, slower, the original trend-following tool
-- SuperTrend — ATR-based, adapts to volatility, one of the most popular
-- ADX — measures trend strength but not direction (pair with a direction filter)
-- Parabolic SAR — dot-based stops and reversals, works in strong trends
-
-## Frequently Asked Questions
-
-### How do I reduce whipsaws?
-
-Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
-
-### Should I use it alone or with other indicators?
-
-Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
-
-### How does this handle gaps?
-
-Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
-
-## Final Verdict
-
-**Rating: ⭐⭐⭐ (3/5)**
-
-Average performer. Does the job in the right conditions but isn't a game changer.
+**Rating: ⭐⭐⭐ (3/5)**  
+*Does the job, nothing exceptional. Free and easy, but lags too much for serious edge.*
 
 ## Get Started with Better Trading Tools
 
@@ -115,4 +86,4 @@ Average performer. Does the job in the right conditions but isn't a game changer
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

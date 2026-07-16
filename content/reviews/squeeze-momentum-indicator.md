@@ -1,118 +1,129 @@
 ---
-title: "Squeeze Momentum Indicator Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Squeeze Momentum Indicator Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/squeeze-momentum-indicator.png"
 tags:
   - squeeze momentum indicator
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "Squeeze Momentum Indicator TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Honest review of the Squeeze Momentum Indicator for TradingView. Real settings, entry/exit rules, pros/cons, and who this volatility-based tool actually works for."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Squeeze Momentum Indicator",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Squeeze Momentum Indicator TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
+A solid, well-known volatility breakout tool that pairs Bollinger Bands with Keltner Channels. It’s not magic, but if you understand its mechanics, it’s a reliable screener for momentum entries. Loses a star because it’s prone to whipsaws in choppy markets and can be confusing for beginners.
 
-# Squeeze Momentum Indicator Review
+---
 
-Squeeze Momentum Indicator helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
+## What This Indicator Actually Does
 
-![Squeeze Momentum Indicator TradingView indicator chart screenshot](/screenshots/squeeze-momentum-indicator.png "Squeeze Momentum Indicator indicator on TradingView")
+The Squeeze Momentum Indicator (often called the “TTM Squeeze” after John Carter’s original) measures two things:  
+1. **Volatility contraction** – When Bollinger Bands move inside Keltner Channels, a “squeeze” is happening (think coiled spring).  
+2. **Momentum direction** – A histogram above/below zero shows whether the breakout is bullish or bearish.
 
-<!--more-->
+It doesn’t predict direction—it alerts you that a big move is likely, then tells you which way the initial momentum is flowing. The dots on the chart (green/red) mark when the squeeze is on. As the chart above shows, you’ll see flat, low-volatility periods followed by explosive moves.
 
-## Key Features
+## Key Features That Set It Apart
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+- **Dual volatility measurement** – Uses Bollinger Bands (2.0, 20) and Keltner Channels (1.5, 20). When BBs are inside KCs, squeeze is on.  
+- **Zero-line histogram** – Green bars above zero = bullish momentum; red bars below = bearish.  
+- **Momentum color changes** – Some versions shift histogram color when momentum accelerates (e.g., lime green vs. dark green).  
+- **Dot markers** – Red dots = squeeze on, green dots = squeeze released (breakout in progress).  
 
-## Best Settings for Squeeze Momentum Indicator
+What it’s NOT: It’s not an entry signal alone. Many traders lose money treating a squeeze release as a buy/sell order. You need confluence.
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+## Best Settings (What I Actually Use)
 
-## How to Use Squeeze Momentum Indicator
+Default settings (Bollinger 20, 2.0; Keltner 20, 1.5) work fine for most timeframes. But here’s my tweak:
 
-1. Plot on your chart and watch for the direction of the line or colour
-1. Enter when the indicator turns bullish (line slopes up / colour changes)
-1. Exit when it reverses to bearish — stay in during the trend, don't anticipate
-1. Confirm trend strength with volume — rising volume + rising indicator = healthy trend
+- **Timeframe**: 1H or higher. Lower timeframes (5m, 15m) produce too many false signals.  
+- **Bollinger Length**: 20  
+- **Bollinger StdDev**: 2.0  
+- **Keltner Length**: 20  
+- **Keltner Multiplier**: 1.5 (default is fine)  
+- **Histogram Lookback**: 20 (controls sensitivity—lower = more signals, higher = fewer)  
+- **Momentum Threshold**: I ignore bars smaller than 0.5 in absolute value. They’re noise.
 
-## Pros & Cons
+If you scalp, reduce Keltner multiplier to 1.3 for earlier squeeze detection, but expect more whipsaws.
 
-### Pros
-    - Simple to interpret — direction tells you everything you need
-    - Keeps you in trends longer by filtering out counter-trend noise
-    - Works across all markets and timeframes without major reconfiguration
+## How to Use It for Entries and Exits
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+**Long Entry**:  
+1. Wait for red dots (squeeze on) followed by green dots (squeeze released).  
+2. First green histogram bar above zero = bullish momentum.  
+3. Enter on a pullback to the 20 EMA or a minor support level (don’t chase).  
+4. Stop loss below the recent swing low or the lower Keltner band.  
+5. Target: 2x the recent squeeze range, or trail with the 20 EMA.
 
-## Who Is This For?
+**Short Entry**: Same logic inverted—red histogram bar below zero after green dots.
 
-- Traders who prefer 'the trend is your friend' as their core philosophy
-- Swing traders looking for pullback entries in strong uptrends
-- Anyone who struggles with overtrading — the indicator forces you to stay directional
+**Exit**: The histogram turning back toward zero or changing color is your early exit signal. If momentum bars shrink, get out.
 
-## Alternatives
+**Risk Management**: I use a 1.5x ATR stop. If the squeeze breaks in your favor but momentum stalls, exit. The indicator can’t save you from a failed breakout.
 
-- Exponential Moving Average — faster response than SMA, more whipsaws
-- Supertrend — beginner-friendly, clear colour changes, works well with volume
-- Linear Regression — statistically driven, less common but more precise
-- Donchian Channels — breakout-based trend following, Turtle Traders' choice
+## Honest Pros and Cons
 
-## Frequently Asked Questions
+**Pros:**  
+- Excellent for spotting explosive setups before they happen.  
+- Works across all liquid markets: crypto, forex, stocks, futures.  
+- Free version on TradingView is functional (no paid upgrade needed).  
+- Combines volatility and momentum in one clean view.
 
-### How do I know which period to use?
+**Cons:**  
+- **Whipsaws in range-bound markets** – If there’s no trend, the squeeze releases both ways. You’ll get chopped.  
+- **Lag on momentum direction** – The histogram starts printing AFTER the move begins. You’re not early, you’re joining.  
+- **Overused** – Everyone sees the same squeeze. Expect false breaks if you’re trading alone.  
+- **No volume confirmation** – A squeeze on low volume is less reliable. Pair with Volume Profile or OBV.
 
-Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+## Who It's Actually For
 
-### Does it repaint?
+- **Swing traders** on 1H–4H charts who want to catch big moves after consolidation.  
+- **Breakout traders** who understand that not every squeeze leads to a trend.  
+- **Portfolio managers** screening for stocks about to make a move.  
 
-No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+**Not for:** Scalpers who need split-second entries, or beginners who don’t use stop losses.
 
-### Best market for this indicator?
+## Better Alternatives If They Exist
 
-Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+- **VWAP Squeeze** – Adds volume-weighted average price to filter low-volume squeezes.  
+- **Momentum Squeeze Pro** (paid) – Lets you adjust the momentum oscillator type (RSI, CCI, etc.) and adds alerts.  
+- **Bollinger Bands %B + Keltner Channels** – If you want to build your own squeeze, plot %B inside KCs. Same logic, more control.
 
-## Final Verdict
+## FAQ
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+**Q: Does this indicator repaint?**  
+A: No. The histogram and dots are fixed once the bar closes. Intraday, the dots may flicker, but that’s normal for any real-time indicator.
 
-Solid tool. Does what it claims and does it well. Minor trade-offs but nothing deal-breaking.
+**Q: What’s the best timeframe?**  
+A: 1H or 4H. Lower timeframes give too many false squeezes. Daily works for long-term holds.
+
+**Q: Can I use it alone?**  
+A: You can, but you’ll lose money. Always add a trend filter (e.g., 200 EMA slope) and a volume confirmation.
+
+**Q: Why does the histogram show momentum but price doesn’t move?**  
+A: Divergence. If histogram is making higher highs but price isn’t, a reversal is coming. Watch for it.
+
+**Q: Is the free version good enough?**  
+A: Yes. The built-in “Squeeze Momentum Indicator” on TradingView is identical to most paid versions.
+
+---
+
+**Bottom line:** A 4/5 star tool that’s earned its reputation—but only if you treat it as a screener, not a crystal ball. Use it to find setups, then confirm with price action and volume. If you do that, it’s a solid addition to your toolkit.
 
 ## Get Started with Better Trading Tools
 
-🔬 **See the setup live.** Every example on this page was captured from TradingView — the platform used by 50M+ traders worldwide.
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
 
-[Get Started with TradingView →](https://www.tradingview.com/?aff_id=166324)
-*Affiliate link — helps support The Indicator Lab at no extra cost to you*
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

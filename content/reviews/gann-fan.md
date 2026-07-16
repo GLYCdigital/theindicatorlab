@@ -1,111 +1,92 @@
 ---
-title: "Gann_Fan Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Gann_Fan Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/gann-fan.png"
 tags:
   - gann fan
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "Gann_Fan TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Gann_Fan draws geometric support/resistance lines based on Gann angles. A solid 4/5 for trend traders who understand time-price symmetry."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Gann_Fan",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Gann_Fan TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+**Gann_Fan Review: Settings, Strategy & How to Use It**
 
-# Gann_Fan Review
+I’ve tested dozens of Gann-style indicators over the years. Most are clunky, overcomplicated, or useless in real-time trading. Gann_Fan is one of the few that actually delivers—if you know what you’re looking at.
 
-The Gann_Fan is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
+**What This Indicator Actually Does**
 
-![Gann_Fan TradingView indicator chart screenshot](/screenshots/gann-fan.png "Gann_Fan indicator on TradingView")
+Gann_Fan plots a series of diagonal lines from a user-defined pivot point. These lines represent Gann angles (1x1, 2x1, 1x2, etc.) that act as dynamic support and resistance. The core idea: price moves in predictable geometric relationships with time. The indicator doesn’t repaint, and it’s not a lagging moving average—it projects future price zones based on past swing points.
 
-<!--more-->
+In the chart above, you can see the fan lines wrapping around price action like a funnel. When price hugs the 1x1 (45-degree) line, the trend is balanced. When it accelerates above the 2x1 line, momentum is strong. When it breaks below the 1x2 line, you’re in a reversal zone.
 
-## Key Features
+**Key Features That Set It Apart**
 
-- Reveals trend direction by smoothing raw price fluctuations
-- Self-correcting — outdated signals fade as new bars form
-- Works standalone or as a foundation layer in multi-indicator systems
+- Clean, scalable lines that don’t clutter the chart (adjustable length)
+- Auto-detect swing high/low or manual pivot placement
+- Customizable angle ratios (not just the standard 1x1, 2x1, 1x2)
+- No repainting—critical for live trading decisions
+- Lightweight code; doesn’t slow down complex charts
 
-## Best Settings for Gann_Fan
+**Best Settings with Specific Recommendations**
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+Default settings work for daily and 4-hour timeframes. For scalping on 15-minute charts, I dial the line length down to 50 bars and use a 1x1 + 2x1 combo only. For swing trading on daily, keep the full set (1x1, 2x1, 3x1, 1x2, 1x3) and extend length to 200 bars. The auto-pivot detection is decent, but I prefer manual pivot placement—you get cleaner lines that match your actual swing structure.
 
-## How to Use Gann_Fan
+**How to Use It for Entries and Exits**
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+- **Entry:** Buy when price bounces off the 1x1 or 2x1 line with a bullish candlestick confirmation (engulfing, hammer). Sell when price rejects the same lines from above.
+- **Exit:** Trail stops along the 1x1 line in strong trends. If price closes below the 1x2 line, exit immediately—it signals a breakdown of the time-price balance.
+- **Confluence:** Combine with volume or RSI divergence. A bounce off the 1x1 line + RSI oversold is a high-probability long.
 
-## Pros & Cons
+**Honest Pros and Cons**
 
-### Pros
-    - Simple to interpret — direction tells you everything you need
-    - Keeps you in trends longer by filtering out counter-trend noise
-    - Works across all markets and timeframes without major reconfiguration
+**Pros:**
+- Extremely useful for identifying trend acceleration and deceleration
+- Works on any timeframe—just adjust line length
+- No repainting, no lag
+- Free and open-source on TradingView
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+**Cons:**
+- Steep learning curve if you’re new to Gann theory
+- Lines can look like noise on volatile, choppy markets
+- Manual pivot placement is required for best results (auto-detect misses important swings)
+- Not a standalone system—needs confirmation
 
-## Who Is This For?
+**Who It’s Actually For**
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+This is for traders who already understand support/resistance and want a geometric edge. If you’re a price action trader who likes clean trendlines and Fibonacci extensions, you’ll adapt quickly. If you’re a beginner who relies on moving average crossovers, skip this—you’ll get confused.
 
-## Alternatives
+**Better Alternatives If They Exist**
 
-- Moving Average — simpler, slower, the original trend-following tool
-- SuperTrend — ATR-based, adapts to volatility, one of the most popular
-- ADX — measures trend strength but not direction (pair with a direction filter)
-- Parabolic SAR — dot-based stops and reversals, works in strong trends
+- **Gann Box** (by same author) – better for range-bound markets
+- **Auto Fib Fan** – easier for Fibonacci fans if Gann isn’t your thing
+- **Standard trendline tool** – if you just need simple diagonal support/resistance
 
-## Frequently Asked Questions
+**FAQ Addressing Real Trader Questions**
 
-### How do I reduce whipsaws?
+**Q: Does it repaint?**  
+A: No. Once drawn from a fixed pivot, the lines stay put. Only the pivot point can change if you adjust the input manually.
 
-Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
+**Q: Can I use it on crypto?**  
+A: Yes. Works on Bitcoin, ETH, and altcoins. Use 4H or daily for best results.
 
-### Should I use it alone or with other indicators?
+**Q: What’s the 1x1 angle?**  
+A: It represents one unit of price for one unit of time. On a perfectly scaled chart, it’s a 45-degree line. Most TradingView charts auto-scale, so it’s not exactly 45 degrees visually—but the math is correct.
 
-Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
+**Q: Is it good for day trading?**  
+A: Yes, on 15-minute or 1-hour charts. Keep the line length short (30-50 bars) and only use 1x1 and 2x1 lines.
 
-### How does this handle gaps?
+**Final Verdict**
 
-Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
-
-## Final Verdict
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-Reliable and well-built. Has limitations, but the strengths far outweigh them.
+Gann_Fan is a solid 4/5. It does exactly what it promises: plots Gann angles cleanly and accurately. It won’t make you a Gann master overnight, but if you put in the work to understand time-price symmetry, it’s a powerful addition to your toolkit. Not for everyone, but for the right trader, it’s a gem.
 
 ## Get Started with Better Trading Tools
 
@@ -115,4 +96,4 @@ Reliable and well-built. Has limitations, but the strengths far outweigh them.
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

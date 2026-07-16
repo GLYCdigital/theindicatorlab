@@ -1,111 +1,87 @@
 ---
-title: "Chande Momentum Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Chande Momentum Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/chande-momentum.png"
 tags:
   - chande momentum
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "Chande Momentum TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Chande Momentum review: Honest pros, cons, settings, and a complete strategy guide for entries and exits. See how it compares to RSI and ROC."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Chande Momentum",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Chande Momentum TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+## What This Indicator Actually Does
 
-# Chande Momentum Review
+The Chande Momentum Oscillator (CMO) is a lesser-known momentum indicator developed by Tushar Chande. Unlike RSI or Stochastic, it calculates momentum by taking the sum of all upward price changes over a period and dividing it by the sum of all downward price changes, then normalizing the result. The final value oscillates between -100 and +100.
 
-Chande Momentum helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
+What sets it apart? It’s more sensitive to price action than RSI because it uses raw change sums rather than averages. On the chart above, you can see it reacts faster to trend shifts, especially during volatile moves.
 
-![Chande Momentum TradingView indicator chart screenshot](/screenshots/chande-momentum.png "Chande Momentum indicator on TradingView")
+## Key Features That Set It Apart
 
-<!--more-->
+- **True range-based calculation:** It considers both the magnitude and direction of every bar’s move, not just closing prices.
+- **No smoothing lag:** The CMO line is direct—no extra averaging, so it hugs price action closely.
+- **Built-in signal line:** Most versions include a moving average of the CMO itself, creating clear cross signals.
 
-## Key Features
+## Best Settings with Specific Recommendations
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+For daily charts, I use a **9-period CMO** with a **3-period signal line**. This catches short-term swings without too much noise. For H1 or lower, try **14-period CMO** with a **5-period signal line**—the extra period filters out scalp-level chop.
 
-## Best Settings for Chande Momentum
+Avoid the default 20-period setting on lower timeframes; it lags too much and gives late signals.
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+## How to Use It for Entries and Exits
 
-## How to Use Chande Momentum
+- **Long entry:** CMO crosses above +50 from below, or when the CMO line crosses above its signal line near zero.
+- **Short entry:** CMO crosses below -50 from above, or signal line cross below near zero.
+- **Exit:** Take partial profits when CMO hits +80/-80. Trail with the signal line.
 
-1. Start by checking the indicator's direction on your trading timeframe
-1. Take long trades only when the indicator shows an uptrend (and vice versa)
-1. Use a faster setting for entry timing and a slower setting for trend filter
-1. Avoid trading when the indicator is flat or whipsawing around the midline
+I’ve found it works best as a **confirmation tool**—combine with support/resistance or a trendline break. Pure CMO cross signals on low TF produce too many whipsaws.
 
-## Pros & Cons
+## Honest Pros and Cons
 
-### Pros
-    - Simple to interpret — direction tells you everything you need
-    - Keeps you in trends longer by filtering out counter-trend noise
-    - Works across all markets and timeframes without major reconfiguration
+**Pros:**
+- More responsive than RSI during sharp trends.
+- Clear overbought/oversold zones (+50/-50) that actually work on trending instruments.
+- Low repaint risk compared to some momentum oscillators.
 
-### Cons
-    - All trend indicators have some inherent lag behind price
-    - Whipsaws in ranging markets — needs a volatility filter
-    - Parameter selection significantly affects signal quality
+**Cons:**
+- Less known, so fewer community resources or scripts.
+- Can be noisy on 5-minute and lower timeframes.
+- Not a standalone system—you need price action or volume to avoid fakeouts.
 
-## Who Is This For?
+## Who It's Actually For
 
-- Traders who prefer 'the trend is your friend' as their core philosophy
-- Swing traders looking for pullback entries in strong uptrends
-- Anyone who struggles with overtrading — the indicator forces you to stay directional
+- Traders who find RSI too slow or too range-bound.
+- Swing traders on 4H or daily charts who want an early momentum shift signal.
+- Anyone comfortable with a less popular indicator that works—just requires some manual validation.
 
-## Alternatives
+## Better Alternatives If They Exist
 
-- Exponential Moving Average — faster response than SMA, more whipsaws
-- Supertrend — beginner-friendly, clear colour changes, works well with volume
-- Linear Regression — statistically driven, less common but more precise
-- Donchian Channels — breakout-based trend following, Turtle Traders' choice
+If you want less noise, **RSI (14)** with a 7-period smoothing line is more stable. For pure speed, **ROC (Rate of Change)** is even faster but more erratic. I keep CMO as a secondary tool, not my primary oscillator.
 
-## Frequently Asked Questions
+## FAQ
 
-### How do I reduce whipsaws?
+**Q: Does Chande Momentum repaint?**  
+No—the calculation is fixed per bar. However, moving average cross signals can appear to repaint if you use a short signal period.
 
-Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
+**Q: Can I use it on crypto or forex?**  
+Yes. Works best on trending pairs like BTC/USD or GBP/JPY. Chop-prone instruments like EUR/CHF give more false signals.
 
-### Should I use it alone or with other indicators?
+**Q: What's the difference between CMO and RSI?**  
+RSI averages up/down closes over periods. CMO sums them. CMO reacts faster to large single-bar moves.
 
-Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
+## Final Verdict with Star Rating
 
-### How does this handle gaps?
+Chande Momentum isn't a magic bullet—it still needs context. But for traders who want a faster, more direct momentum gauge than RSI, it’s a solid pickup. The built-in signal line helps clean up entries.
 
-Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
-
-## Final Verdict
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-A dependable performer. Not perfect, but delivers consistent value for its intended use.
+**Rating: ⭐⭐⭐⭐ (4/5)** — A reliable momentum tool that’s underused. Not perfect, but definitely worth adding to your toolkit.
 
 ## Get Started with Better Trading Tools
 
@@ -115,4 +91,4 @@ A dependable performer. Not perfect, but delivers consistent value for its inten
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

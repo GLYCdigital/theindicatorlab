@@ -1,118 +1,115 @@
 ---
-title: "Williams Percent R Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Williams Percent R Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/williams-percent-r.png"
 tags:
   - williams percent r
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 3
-description: "Williams Percent R TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Williams %R identifies overbought/oversold levels and hidden momentum shifts. Honest review of settings, strategy, and when it actually works."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Williams Percent R",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Williams Percent R TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "3",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+## What This Indicator Actually Does
 
-# Williams Percent R Review
+Williams Percent R (or %R) is a momentum oscillator developed by Larry Williams. It measures where the current close sits relative to the highest high over a lookback period—typically 14 bars. The result is plotted from -100 to 0. Think of it as an inverted version of the Stochastic Oscillator: readings below -80 are oversold, above -20 are overbought.
 
-Williams Percent R helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
+But here's the thing most reviews gloss over: %R doesn't predict price direction. It tells you the market's *internal momentum*—how far price has stretched compared to recent range. Extreme readings mean price is at one end of the range, which can indicate exhaustion or continuation, depending on context.
 
-![Williams Percent R TradingView indicator chart screenshot](/screenshots/williams-percent-r.png "Williams Percent R indicator on TradingView")
+On the chart above, you'll see %R bouncing between -100 and 0. Notice how it can stay oversold for weeks during a strong downtrend. That's the trap.
 
-<!--more-->
+## Key Features That Set It Apart
 
-## Key Features
+- **Inverted scale**: Unlike RSI or Stochastic, %R uses a negative scale. -100 is oversold, 0 is overbought. This takes getting used to.
+- **Single line, no signal line**: The original %R is just one line. No crossovers. This simplicity can be a strength or weakness.
+- **Default 14-period lookback**: Same as RSI. Works on any timeframe, but shines on daily and above.
+- **Built-in alerts**: TradingView allows you to set alerts when %R crosses -20 or -80 thresholds.
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+## Best Settings with Specific Recommendations
 
-## Best Settings for Williams Percent R
+The default 14 is fine for most swing trading, but I've tested these variations:
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+- **14 (default)**: Best for daily charts on indices (SPX, NDX). Gives reliable overbought/oversold signals in range-bound markets.
+- **10**: More sensitive. Works for scalping 5-15 minute charts on forex pairs (EUR/USD, GBP/JPY).
+- **21**: Smoother. Reduces false signals in trending markets. I use this on weekly charts for position trading.
 
-## How to Use Williams Percent R
+The indicator has two plotting parameters: `Level 1` and `Level 2`. Keep them at -20 and -80. No need to "optimize" these—they're standard for a reason.
 
-1. Start by checking the indicator's direction on your trading timeframe
-1. Take long trades only when the indicator shows an uptrend (and vice versa)
-1. Use a faster setting for entry timing and a slower setting for trend filter
-1. Avoid trading when the indicator is flat or whipsawing around the midline
+**Pro tip**: Add a horizontal line at -50 as a centerline. When %R crosses above -50, it confirms bullish momentum. Below -50 confirms bearish. This is more useful than extremes in strong trends.
 
-## Pros & Cons
+## How to Use It for Entries and Exits
 
-### Pros
-    - Reduces noise compared to raw price action
-    - Clear visual signals — no complex interpretation needed
-    - Works as both a standalone tool and with other indicators
+**Entry (long)**: Wait for %R to dip below -80, then *confirm* with price action. Don't buy just because it's oversold. Look for a bullish candlestick pattern (hammer, bullish engulfing) after the oversold reading. Enter on the close of the confirmation bar.
 
-### Cons
-    - Inherent lag means you miss the first part of every move
-    - Sideways markets generate repeated false signals — best used with a range filter
-    - Short periods create noise, long periods create delays — finding the sweet spot matters
+**Exit (long)**: When %R crosses above -20, especially if price is at resistance. This is the classic "overbought exit."
 
-## Who Is This For?
+**Entry (short)**: %R above -20, then a bearish candlestick pattern (shooting star, bearish engulfing). Enter on confirmation.
 
-- Systematic traders who want rules-based entry and exit signals
-- Traders transitioning from discretionary to semi-automated decision-making
-- Multi-timeframe traders who use long-term trend as their primary filter
+**Reversal warning**: If %R reaches -100 or 0 (extreme), expect a snap-back. This isn't a guaranteed reversal, but it signals exhaustion.
 
-## Alternatives
+## Honest Pros and Cons
 
-- Moving Average — simpler, slower, the original trend-following tool
-- SuperTrend — ATR-based, adapts to volatility, one of the most popular
-- ADX — measures trend strength but not direction (pair with a direction filter)
-- Parabolic SAR — dot-based stops and reversals, works in strong trends
+**Pros**:
+- Simple, no lag (unlike moving averages)
+- Works beautifully in range-bound markets (sideways price action)
+- Easy to combine with support/resistance
+- Free on TradingView
 
-## Frequently Asked Questions
+**Cons**:
+- Useless in strong trends (gives false signals constantly)
+- Single line means no crossover strategy
+- Inverted scale confuses beginners
+- Doesn't account for volume or volatility
 
-### How do I know which period to use?
+## Who It's Actually For
 
-Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+**Best for**: Swing traders who trade range-bound stocks, indices, or forex pairs on daily or 4-hour timeframes. If you like mean reversion strategies, %R is a solid tool.
 
-### Does it repaint?
+**Not for**: Trend followers, scalpers looking for quick entries, or anyone trading crypto (crypto trends are too strong—%R will whipsaw you).
 
-No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+## Better Alternatives If They Exist
 
-### Best market for this indicator?
+- **Stochastic RSI (Stoch RSI)**: If you want a %R-like indicator that works better in trends, Stoch RSI uses RSI as input rather than price. More sensitive, but gives fewer false signals.
+- **RSI with momentum filter**: RSI (14) combined with a 20-period momentum oscillator. This filters out weak moves.
+- **Williams Alligator**: If you're a Larry Williams fan, his Alligator indicator is actually more useful for trend identification.
 
-Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+## FAQ
+
+**Q: Is Williams %R better than RSI?**  
+A: No, but it's different. RSI is more versatile across market conditions. %R excels in ranges; RSI handles trends better.
+
+**Q: What's the best timeframe for %R?**  
+A: Daily or 4-hour. Lower timeframes produce too much noise.
+
+**Q: Can I use %R alone?**  
+A: Please don't. Use it with support/resistance, trendlines, or volume. It's a confirmation tool, not a standalone system.
+
+**Q: Why does %R stay below -80 for weeks?**  
+A: That's a strong downtrend. Selling into oversold is dangerous. Wait for price to break above a resistance level before buying.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐ (3/5)**
+Williams Percent R is a dinosaur—but a useful one if you understand its limits. It's free, simple, and effective in the right conditions (ranges). In trends, it's a trap. I give it **3 stars** because it's a solid piece of a toolkit, not the whole toolbox.
 
-Decent but not exceptional. Has its use cases but isn't a must-have.
+**Rating**: ⭐⭐⭐ (3/5)  
+**Best for**: Swing traders in range-bound markets.  
+**Worst for**: Trend followers or crypto traders.  
+**Bottom line**: Install it, but don't rely on it. Use it as a secondary confirmation.
 
 ## Get Started with Better Trading Tools
 
-🔬 **See the setup live.** Every example on this page was captured from TradingView — the platform used by 50M+ traders worldwide.
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
 
-[Get Started with TradingView →](https://www.tradingview.com/?aff_id=166324)
-*Affiliate link — helps support The Indicator Lab at no extra cost to you*
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

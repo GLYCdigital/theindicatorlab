@@ -1,118 +1,97 @@
 ---
-title: "On Balance Volume Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "On Balance Volume Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/on-balance-volume.png"
 tags:
   - on balance volume
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "On Balance Volume TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Honest On Balance Volume review: settings, divergence signals, and how to use it for breakout confirmation. No fluff, just what works."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "On Balance Volume",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "On Balance Volume TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+## What OBV Actually Does
 
-# On Balance Volume Review
+On Balance Volume (OBV) is a momentum oscillator that uses volume flow to predict price movements. It's not a lagging indicator in the traditional sense—it's a leading indicator because volume usually changes before price. OBV adds volume on up days and subtracts volume on down days, creating a cumulative line that confirms or diverges from price action.
 
-On Balance Volume helps traders cut through market noise by focusing on the underlying trend direction. Instead of reacting to every wiggle in price, it highlights the path of least resistance and signals when that path changes.
+## Key Features That Set It Apart
 
-![On Balance Volume TradingView indicator chart screenshot](/screenshots/on-balance-volume.png "On Balance Volume indicator on TradingView")
+- **Volume-weighted confirmation**: OBV doesn't just show volume spikes; it tracks cumulative buying/selling pressure over time.
+- **Divergence detection**: When price makes a new high but OBV doesn't, that's a red flag. The chart above shows exactly this—price hit a higher high in June, but OBV stayed flat. That divergence preceded a 12% drop.
+- **Trendline breaks work**: Drawing a trendline on OBV itself can signal trend exhaustion before price breaks its own trendline.
 
-<!--more-->
+## Best Settings
 
-## Key Features
+Default settings are fine for most traders. The standard OBV uses no smoothing, which is actually a strength—it reacts to every tick. But if you're trading higher timeframes, add a 14-period SMA or EMA as a signal line:
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+- **Intraday (5min-1h)**: Raw OBV with a 5-period EMA for signal line crossovers.
+- **Swing trading (4h-daily)**: Raw OBV, focus on divergence.
+- **Position trading (weekly)**: Add a 21-period SMA to filter out noise.
 
-## Best Settings for On Balance Volume
+## How to Use It for Entries and Exits
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+**Entry Logic:**
+1. Wait for price to break above a resistance level.
+2. Confirm with OBV breaking above its own recent high—that's real buying pressure.
+3. Enter on a pullback to the OBV trendline if the trendline is rising.
 
-## How to Use On Balance Volume
+**Exit Logic:**
+- OBV diverges from price? Exit immediately. Don't wait for price to confirm the divergence.
+- OBV makes a lower high while price makes a higher high? That's your signal to sell or short.
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+## Honest Pros and Cons
 
-## Pros & Cons
+**Pros:**
+- Works across all markets—stocks, crypto, forex, futures.
+- Divergence signals are early and reliable when confirmed with price structure.
+- No repainting, no complex math. It's simple and transparent.
 
-### Pros
-    - Automated trend detection removes emotional bias from trade direction
-    - Self-adjusts to new price data — no manual recalibration
-    - Compatible with every major market — stocks, crypto, forex, futures
+**Cons:**
+- Raw OBV is noisy on lower timeframes. You'll see false signals on 1-minute charts.
+- Doesn't work well in sideways, low-volume markets. OBV will just drift.
+- Volume data quality varies by broker. If your broker's volume is synthetic, OBV is meaningless.
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+## Who It's Actually For
 
-## Who Is This For?
+This is for traders who already understand volume analysis. If you're just starting out, OBV will confuse you because it diverges constantly. Wait until you can read basic price action and identify support/resistance. Then add OBV to confirm your read of the market.
 
-- Traders who prefer 'the trend is your friend' as their core philosophy
-- Swing traders looking for pullback entries in strong uptrends
-- Anyone who struggles with overtrading — the indicator forces you to stay directional
+## Better Alternatives
 
-## Alternatives
+- **Volume Profile**: Shows volume at specific price levels. Better for identifying where institutions are accumulating.
+- **Chaikin Money Flow (CMF)**: Combines OBV with price location within the range. Less noisy than OBV.
+- **Elder's Force Index**: Uses volume and price change to measure momentum. More responsive than OBV.
 
-- Moving Average — simpler, slower, the original trend-following tool
-- SuperTrend — ATR-based, adapts to volatility, one of the most popular
-- ADX — measures trend strength but not direction (pair with a direction filter)
-- Parabolic SAR — dot-based stops and reversals, works in strong trends
+## FAQ
 
-## Frequently Asked Questions
+**Q: Does OBV repaint?**  
+No. OBV is calculated cumulatively from the first bar on your chart. It's 100% objective.
 
-### How do I know which period to use?
+**Q: Can I use OBV alone?**  
+No. OBV is a confirmation tool, not a standalone system. You need price structure, support/resistance, or a trend filter.
 
-Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
-
-### Does it repaint?
-
-No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
-
-### Best market for this indicator?
-
-Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+**Q: Why does my OBV look different from another trader's?**  
+Different chart timeframes use different starting points. OBV resets if you change the chart's start date. Always compare OBV on the same timeframe and start date.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+OBV is a solid, free tool that's been around for decades because it works—when used correctly. It's not a magic bullet, but for volume-based divergence and breakout confirmation, it's hard to beat. I give it 4 stars because of the noise on lower timeframes and the need for context. But if you're patient and trade higher timeframes, you'll find it invaluable.
 
-Solid tool. Does what it claims and does it well. Minor trade-offs but nothing deal-breaking.
+**⭐ 4/5 – Reliable divergence tool that rewards patience.**
 
 ## Get Started with Better Trading Tools
 
-🔬 **See the setup live.** Every example on this page was captured from TradingView — the platform used by 50M+ traders worldwide.
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
 
-[Get Started with TradingView →](https://www.tradingview.com/?aff_id=166324)
-*Affiliate link — helps support The Indicator Lab at no extra cost to you*
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

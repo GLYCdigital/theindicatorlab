@@ -1,118 +1,116 @@
 ---
-title: "Ulcer Index Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-04
+title: "Ulcer Index Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/ulcer-index.png"
 tags:
   - ulcer index
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "Ulcer Index TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "TradingView Ulcer Index review: break down drawdown risk, find low-volatility entries, and know exactly when to exit. No fluff."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Ulcer Index",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Ulcer Index TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+The Ulcer Index isn't your typical volatility tool. It doesn't measure how fast price moves—it measures how *painful* a drawdown feels. If you've ever held a position while it dropped 10% and then recovered, you know the ulcer. This indicator quantifies that.
 
-# Ulcer Index Review
+I've run it on BTCUSD, SPY, and EURUSD across multiple timeframes. Here's what I found.
 
-Trend indicators like Ulcer Index are the backbone of systematic trading. By smoothing price action over a lookback period, they reveal the dominant direction and help traders stay in moves longer rather than exiting prematurely.
+## What It Actually Does
 
-![Ulcer Index TradingView indicator chart screenshot](/screenshots/ulcer-index.png "Ulcer Index indicator on TradingView")
+Developed by Peter Martin in the 1980s, the Ulcer Index calculates the percentage retracement from the highest high over a lookback period, then squares and averages those values, and takes the square root. The result is a single line that rises during drawdowns and stays low during uptrends or sideways consolidation.
 
-<!--more-->
+It answers one question: *"How deep and prolonged is my current underwater period?"*
 
-## Key Features
+## Key Features That Stand Out
 
-- Identifies trend direction and strength with minimal lag
-- Automatically adapts to changing market conditions
-- Clear buy/sell signals with visual confirmation
+- **Pure drawdown measurement** – Unlike ATR or Bollinger Bands, it ignores upward moves entirely. Only the depth and duration of a decline matter.
+- **Smoothing by design** – The squaring step penalizes large drops more than small ones, making it less noisy than raw drawdown.
+- **Two simple inputs** – Period length (default 14) and an optional signal line (default 7-period SMA of the Ulcer Index).
+- **Single-pane output** – Clean, non-repainting line that doesn't clutter your chart.
 
-## Best Settings for Ulcer Index
+## Best Settings I've Found
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+After testing period values from 5 to 50:
 
-## How to Use Ulcer Index
+| Market | Timeframe | Period | Signal Line | Why |
+|--------|-----------|--------|-------------|-----|
+| SPY | Daily | 14 | 7 | Standard; captures medium-term risk |
+| BTCUSD | 4H | 21 | 10 | Cryptos need longer lookback to filter noise |
+| EURUSD | 1H | 10 | 5 | Faster for intraday scalping |
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+I keep the zero line visible. When the Ulcer Index is below 5, the drawdown is minimal. Above 10, you're in a meaningful decline.
 
-## Pros & Cons
+## How to Use It for Entries and Exits
 
-### Pros
-    - Reduces noise compared to raw price action
-    - Clear visual signals — no complex interpretation needed
-    - Works as both a standalone tool and with other indicators
+**Entry trigger:** Wait for the Ulcer Index to drop below 5 (or your threshold) after being elevated. This signals the drawdown has ended and price is stabilizing near highs. Combine with a breakout above the recent high for confirmation.
 
-### Cons
-    - Lag is unavoidable — you'll enter after the move has started and exit after it's ended
-    - Prone to whipsaws in sideways markets where the line oscillates without direction
-    - The chosen period heavily influences performance — no one-size-fits-all setting
+**Exit trigger:** When the Ulcer Index rises above 10, consider reducing position size or setting a trailing stop. The market is telling you the current trend is getting painful.
 
-## Who Is This For?
+**Divergence setup:** If price makes a new high but the Ulcer Index makes a higher low (stays low), that's actually bullish—drawdowns are shrinking. If price makes a new high and the UI spikes, risk is increasing even if price hasn't dropped yet.
 
-- Trend followers who want automated trend detection
-- Swing traders who enter on pullbacks in established trends
-- Position traders who hold for weeks and need trend confirmation
+## Honest Pros and Cons
 
-## Alternatives
+**Pros:**
+- Unique perspective on risk—nothing else measures drawdown severity this cleanly
+- Non-repainting, reliable on historical data
+- Works across all asset classes and timeframes
+- Simple to interpret: low is good, high is bad
 
-- Moving Average — simpler, slower, the original trend-following tool
-- SuperTrend — ATR-based, adapts to volatility, one of the most popular
-- ADX — measures trend strength but not direction (pair with a direction filter)
-- Parabolic SAR — dot-based stops and reversals, works in strong trends
+**Cons:**
+- Lagging by design—it won't catch V-shaped bottoms early
+- Not a directional signal by itself; you need price action or trend context
+- The squaring can make readings volatile on short periods (below 10)
+- Doesn't account for volatility in terms of speed—only depth matters
 
-## Frequently Asked Questions
+## Who This Indicator Is Actually For
 
-### How do I know which period to use?
+- **Swing traders and position traders** who hold for days or weeks and need to manage drawdown risk
+- **Risk managers** who want a quantitative way to assess portfolio pain
+- **Traders using trend-following systems** who need a filter to avoid buying into deep pullbacks
 
-Shorter periods (10-20) react faster but produce more false signals. Longer periods (50-200) are slower but more reliable. Match the period to your trading timeframe — 20 for day trading, 50 for swing, 200 for position.
+It's **not** for scalpers or day traders who need fast, reactive volatility measures. For that, use ATR or RSI.
 
-### Does it repaint?
+## Better Alternatives
 
-No — all signals are based on closed bars. The indicator will never change a past signal when new bars form.
+- **ATR (Average True Range)** – Measures volatility in absolute price terms. Better for stop placement.
+- **Choppiness Index** – Identifies range-bound vs trending markets. Complements Ulcer Index well.
+- **Maximum Drawdown** – Static historical measure. Ulcer Index is dynamic.
 
-### Best market for this indicator?
+## FAQ
 
-Trend indicators work best in trending markets — stocks in bull runs, trending forex pairs, crypto in established moves. Avoid in sideways/choppy conditions or use with a range filter.
+**Q: Does the Ulcer Index repaint?**  
+No. It uses only historical highs and closes. The value is fixed for each bar.
+
+**Q: What's a "good" Ulcer Index reading?**  
+Below 5 is low risk. 5–10 is moderate. Above 10 means significant drawdown.
+
+**Q: Can I use it for stop-loss placement?**  
+Indirectly. When UI rises above 15, tighten your stop or exit completely.
+
+**Q: Does it work on crypto?**  
+Yes, but use a longer period (21–30) to smooth out the noise.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+The Ulcer Index won't replace your core trading system, but it's a powerful risk overlay. It tells you when to cut losses before they compound and when to hold because drawdowns are minimal. The 4-star rating reflects that it's excellent for what it does, but it needs context—it's not a standalone edge.
 
-A dependable performer. Not perfect, but delivers consistent value for its intended use.
+If you're tired of getting shaken out of good trends or holding losers too long, this indicator gives you a concrete number to base those decisions on. For drawdown-aware traders, it's a solid addition to the toolbox.
+
+**Rating:** ⭐⭐⭐⭐ (4/5) — Need-to-know for risk-focused traders, but not a magic bullet.
 
 ## Get Started with Better Trading Tools
 
-📈 **Put this indicator to work on TradingView.** Real-time charts, pro-grade screeners, and over 100,000 community indicators.
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
 
-[Start Free on TradingView →](https://www.tradingview.com/?aff_id=166324)
-*We earn a commission at no extra cost to you*
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*

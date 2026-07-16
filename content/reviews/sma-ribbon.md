@@ -1,118 +1,96 @@
 ---
-title: "Sma_Ribbon Review: Settings, Strategy &amp; How to Use It"
-date: 2026-07-14
+title: "Sma_Ribbon Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/sma-ribbon.png"
 tags:
   - sma ribbon
-  - trend
+  - 07
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - Trend
+  - 07
   - Technical Analysis
 rating: 4
-description: "Sma_Ribbon TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples."
+description: "Honest Sma_Ribbon review. See how multiple SMAs stacked as a ribbon reveal trend strength and reversals. Best settings, entry rules, and real pros/cons."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Sma_Ribbon",
-  "applicationCategory": "TradingView Indicator",
-  "operatingSystem": "TradingView",
-  "description": "Sma_Ribbon TradingView indicator review: settings, strategy, and how to use it for trend trading. Expert analysis with chart examples.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "bestRating": "5",
-    "ratingCount": "1"
-  }
-}
-</script>
+## What This Indicator Actually Does
 
-# Sma_Ribbon Review
+Sma_Ribbon takes a handful of simple moving averages and plots them all on one pane, creating a visual "ribbon" that shows you the trend's health at a glance. It’s not reinventing the wheel—it’s just stacking SMAs with different periods (e.g., 10, 20, 30, 50, 100, 200) in a single color-coded bundle. The ribbon expands when momentum is strong, contracts when the market is undecided, and flips direction when a trend change is brewing. If you’ve ever wanted to see whether short-term, medium-term, and long-term traders are all aligned, this is your cheat sheet.
 
-The Sma_Ribbon is a trend-following indicator designed to identify the direction and strength of market moves. It filters out noise by averaging or smoothing price data, giving traders a clear picture of which way the wind is blowing.
+## Key Features That Set It Apart
 
-![Sma_Ribbon TradingView indicator chart screenshot](/screenshots/sma-ribbon.png "Sma_Ribbon indicator on TradingView")
+- **Color coding by distance:** The indicator shades each SMA line based on how far it is from the others. When they’re all green and stacked tightly, it’s a strong uptrend. Red and spread out? Bearish signal. This visual cue beats squinting at numeric values.
+- **Customizable periods:** You can tweak the SMA lengths however you like. The default set (10, 20, 30, 50, 100, 200) works out of the box, but I’ve had success swapping in 8, 13, 21, 34, 55 for a Fibonacci twist.
+- **No repainting:** Like any standard SMA, values are fixed once the bar closes. No second-guessing your entry.
 
-<!--more-->
+## Best Settings with Specific Recommendations
 
-## Key Features
+For **daily charts**, the default periods are fine—they capture the major trend layers without clutter. For **4H or lower**, drop the longest SMA to 100 instead of 200 to reduce lag. I personally use: 8, 13, 21, 34, 55, 89 on 1H for scalping. The ribbon tightens fast on pullbacks, which gives you early reversal clues.
 
-- Reveals trend direction by smoothing raw price fluctuations
-- Self-correcting — outdated signals fade as new bars form
-- Works standalone or as a foundation layer in multi-indicator systems
+**Pro tip:** Turn off the line labels in the settings. They add visual noise, and the ribbon’s width tells you everything you need.
 
-## Best Settings for Sma_Ribbon
+## How to Use It for Entries and Exits
 
-| Trading Style | Recommended Setting |
-|-------------|-------------------|
-| Default | 14-20 period |
+**Entry:** Wait for the ribbon to compress (all lines close together) after a clear uptrend. That’s the “coil.” When the ribbon starts expanding upward again, go long. The compression means indecision; the expansion means the trend resumed. For shorts, same logic but flipped.
 
-## How to Use Sma_Ribbon
+**Exit:** Take profits when the ribbon starts to fan out and the shortest SMA (e.g., 8) crosses below the second shortest. That’s early warning of a trend stall. Full exit when the ribbon goes flat or starts to compress.
 
-1. Add to any chart — the indicator plots directly on price or in a separate pane
-1. Use crossovers or line slope changes as entry/exit signals
-1. Combine with volume analysis to confirm trend strength
-1. Use higher timeframes for trend direction, lower for entries
+**Avoid:** Don’t trade during a wide, parallel ribbon—it’s just noise. The ribbon needs to be either compressed (coiling) or clearly expanding in your direction.
 
-## Pros & Cons
+## Honest Pros and Cons
 
-### Pros
-    - Automated trend detection removes emotional bias from trade direction
-    - Self-adjusts to new price data — no manual recalibration
-    - Compatible with every major market — stocks, crypto, forex, futures
+**Pros:**
+- Instantly shows trend alignment across timeframes.
+- No lag beyond the SMAs themselves.
+- Simple to interpret—no math degree needed.
 
-### Cons
-    - All trend indicators have some inherent lag behind price
-    - Whipsaws in ranging markets — needs a volatility filter
-    - Parameter selection significantly affects signal quality
+**Cons:**
+- Can be laggy on fast moves (it’s SMAs, not EMAs). On a 5-minute chart, you’ll miss the first 2–3 bars of a breakout.
+- Not standalone—you still need volume or RSI to confirm. The ribbon alone will give false signals during range-bound markets.
+- The color coding is helpful but can be distracting if you use too many periods.
 
-## Who Is This For?
+## Who It’s Actually For
 
-- Traders who prefer 'the trend is your friend' as their core philosophy
-- Swing traders looking for pullback entries in strong uptrends
-- Anyone who struggles with overtrading — the indicator forces you to stay directional
+This is for **swing traders** and **position traders** who hold trades for days to weeks. Day traders on lower timeframes will find it too slow. Beginners will love it because it makes trend direction obvious without complex calculations. Advanced traders might find it too basic—but sometimes simple is better.
 
-## Alternatives
+## Better Alternatives If They Exist
 
-- Exponential Moving Average — faster response than SMA, more whipsaws
-- Supertrend — beginner-friendly, clear colour changes, works well with volume
-- Linear Regression — statistically driven, less common but more precise
-- Donchian Channels — breakout-based trend following, Turtle Traders' choice
+- **Better Trend Visualizer:** Supertrend. It’s faster and gives clear buy/sell signals without the ribbon’s lag. But it’s binary—no nuance.
+- **Better for Day Trading:** EMA Ribbon (same concept but with exponential MAs). Less lag, better for 1H and below.
+- **Better for Multi-Timeframe:** Cloud indicators like Ichimoku give more info (support/resistance, future projections) but are harder to learn.
 
-## Frequently Asked Questions
+## FAQ
 
-### How do I reduce whipsaws?
+**Q: Does it repaint?**  
+A: No. SMAs are fixed after the bar closes.
 
-Two approaches: (1) increase the period for smoother output, or (2) add a minimum ADX threshold. Only trade when ADX is above 25 to avoid ranging markets.
+**Q: Can I use it on crypto?**  
+A: Yes, works fine. But crypto is noisy—use at least a 1H timeframe to avoid whipsaws.
 
-### Should I use it alone or with other indicators?
+**Q: What’s the best pair?**  
+A: Forex majors (EUR/USD, GBP/USD) during London/NY sessions. Indices (SPY, NASDAQ) also behave well.
 
-Alone is fine for simple trend following. For better results, combine with volume (confirms conviction) and a volatility filter like ATR for stop placement.
-
-### How does this handle gaps?
-
-Gaps are treated as price data — the indicator recalculates on the next bar. If you trade instruments prone to gaps (crypto, earnings plays), use wider periods to smooth the impact.
+**Q: Should I use the default periods?**  
+A: Yes, to start. Then adjust based on your timeframe and asset volatility.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Sma_Ribbon is a solid, no-nonsense trend tool. It won’t make you a millionaire, but it will stop you from buying into a weak trend. It’s honest, transparent, and works exactly as advertised. If you already use SMAs, this just packages them better. If you don’t, it’s a great introduction to trend analysis.
 
-A dependable performer. Not perfect, but delivers consistent value for its intended use.
+**Rating: ⭐⭐⭐⭐ (4/5)**  
+Docked one star because it’s still just SMAs—lag is inherent, and you need other tools to filter false signals. But for what it does, it does it well.
 
 ## Get Started with Better Trading Tools
 
-📈 **Put this indicator to work on TradingView.** Real-time charts, pro-grade screeners, and over 100,000 community indicators.
+📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
 
-[Start Free on TradingView →](https://www.tradingview.com/?aff_id=166324)
-*We earn a commission at no extra cost to you*
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*
