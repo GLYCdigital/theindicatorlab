@@ -1,5 +1,5 @@
-{{- /* GEO — FAQ Section for indicator reviews
-     Generates visible Q&A + FAQ JSON-LD schema for AI search engines.
+{{- /* GEO — FAQPage JSON-LD Schema for AI search engines (Google SGE/AI Overviews).
+     Schema only — no visible box. Reviews have their own natural FAQ in the body.
      Questions are dynamically built from the review's metadata.
 */ -}}
 
@@ -62,7 +62,7 @@
 {{- $a4 := printf "%s has a community rating of %d/5 on TradingView. Traders appreciate its clear signals and reliability, though some note it can be slow in fast markets. Read our full review for a balanced breakdown of pros and cons." $name $rating -}}
 {{- $faqs = $faqs | append (dict "q" $q4 "a" $a4) -}}
 
-{{- /* Render FAQ Schema */ -}}
+{{- /* Render FAQPage JSON-LD schema for Google SGE/AI Overviews */ -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,19 +82,4 @@
 }
 </script>
 
-{{- /* Visible FAQ Section */ -}}
-<div class="review-faq" style="margin: 2rem 0; padding: 1.5rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius);">
-  <h2 style="font-size: 1.4rem; margin: 0 0 1rem; color: var(--text);">
-    Quick Answers — {{ $name }}
-  </h2>
-  {{- range $i, $faq := $faqs -}}
-  <div class="faq-item" style="margin-bottom: {{ if eq $i (sub (len $faqs) 1) }}0{{ else }}0.75rem{{ end }}; padding-bottom: {{ if eq $i (sub (len $faqs) 1) }}0{{ else }}0.75rem{{ end }}; border-bottom: {{ if eq $i (sub (len $faqs) 1) }}none{{ else }}1px solid var(--card-border){{ end }};">
-    <p style="margin: 0 0 0.3rem; font-weight: 600; font-size: 1.1rem; color: var(--text);">
-      <span style="color: var(--accent);">Q:</span> {{ $faq.q }}
-    </p>
-    <p style="margin: 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">
-      <span style="color: var(--text-muted);">A:</span> {{ $faq.a }}
-    </p>
-  </div>
-  {{- end -}}
-</div>
+{{- /* Visible FAQ intentionally removed — LLM writes natural FAQ in body */ -}}
