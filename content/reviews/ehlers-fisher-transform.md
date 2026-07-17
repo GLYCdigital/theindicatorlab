@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-fisher-transform.png"
 tags:
   - ehlers fisher transform
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers Fisher Transform review: tested settings, entry/exit signals, pros/cons. A powerful but noisy reversal indicator for trend traders."

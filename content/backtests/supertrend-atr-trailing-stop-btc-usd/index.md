@@ -1,14 +1,14 @@
 ---
 {
   "title": "SuperTrend \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-10.4%"
+      "value": "-10.5%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "35.4%"
+      "value": "35.6%"
     },
     {
       "label": "Profit Factor",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+39.7%",
+      "return_pct": "+41.1%",
       "trades": "43",
-      "win_rate_pct": "35.4%"
+      "win_rate_pct": "35.6%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "93",
-      "win_rate_pct": "35.4%"
+      "win_rate_pct": "35.6%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "102",
-      "win_rate_pct": "35.4%"
+      "win_rate_pct": "35.6%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "91",
-      "win_rate_pct": "35.4%"
+      "win_rate_pct": "35.6%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "88",
-      "win_rate_pct": "35.4%"
+      "win_rate_pct": "35.6%"
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
+      "return_pct": "-27.7%",
       "trades": "46",
-      "win_rate_pct": "35.4%"
+      "win_rate_pct": "35.6%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On BTC, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-12 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **-10.4% total return** on BTC-USD, compounding at **-2.2% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the SuperTrend + ATR Trailing Stop delivered a **-10.5% total return** on BTC-USD, compounding at **-2.2% annually**. 
 
 At **0.00**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **45.1% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.00 | ❌ Weak |
 | Max Drawdown | 45.1% | ⚠️ Significant |
-| Win Rate | 35.4% | ❌ Low — relies on outsized wins |
+| Win Rate | 35.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.98 | ❌ Unprofitable |
 | Trades/Year | ~463 total | Active |
 
-The **profit factor of 0.98** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 35.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.98** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 35.6% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on BTC?
 
@@ -146,6 +146,18 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on BTC-USD](/backtests/supertrend-atr-trailing-stop-btc-usd-trades.png)

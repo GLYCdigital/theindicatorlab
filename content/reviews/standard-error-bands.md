@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/standard-error-bands.png"
 tags:
   - standard error bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Standard Error Bands offer a statistical edge over Bollinger Bands. I break down settings, entry signals, and why they work better on trending pairs like BTCUSD."

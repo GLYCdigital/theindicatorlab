@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/macd-rewired-probalist-essentials.png"
 tags:
   - macd rewired probalist essentials
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A MACD derivative that adds probability-weighted signals and noise filters. Not a holy grail, but a solid upgrade for serious traders."

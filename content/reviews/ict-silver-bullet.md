@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ict-silver-bullet.png"
 tags:
   - ict silver bullet
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ICT Silver Bullet indicator review: honest breakdown of settings, entry rules, and real trade performance. See if it fits your ICT style."

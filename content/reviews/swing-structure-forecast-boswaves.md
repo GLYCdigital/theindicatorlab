@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/swing-structure-forecast-boswaves.png"
 tags:
   - swing structure forecast boswaves
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Swing_Structure_Forecast_Boswaves detects market structure shifts, forecasts break-of-structure levels, and plots potential reversal zones. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ease-of-movement.png"
 tags:
   - ease of movement
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ease of Movement (EOM) measures price-to-volume efficiency. Reliable for spotting trend strength and reversals. Best settings, strategy, and honest verdict inside."

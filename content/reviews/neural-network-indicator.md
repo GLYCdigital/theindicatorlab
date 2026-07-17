@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/neural-network-indicator.png"
 tags:
   - neural network indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "AI-powered trend prediction with neural network logic. Good for swing traders, but not magic. 4/5."

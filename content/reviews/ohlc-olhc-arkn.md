@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ohlc-olhc-arkn.png"
 tags:
   - ohlc olhc arkn
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "OHLC_OLHC_ARKN overlays two candle patterns for trend detection. Review covers settings, entry/exit rules, and real trade examples."

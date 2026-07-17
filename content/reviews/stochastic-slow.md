@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-slow.png"
 tags:
   - stochastic slow
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A solid, proven oscillator for timing reversals. We test the best settings, entry rules, and when to skip it."

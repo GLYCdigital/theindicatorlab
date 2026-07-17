@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heikin-ashi-candles.png"
 tags:
   - heikin ashi candles
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Heikin_Ashi_Candles review: how to use Heikin Ashi for trend filtering, best settings, entry/exit signals, and why it’s not a standalone system."

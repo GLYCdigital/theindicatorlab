@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heat-map-multi-asset.png"
 tags:
   - heat map multi asset
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-asset heat map for spotting relative strength/weakness across Forex, stocks, crypto. 4/5 stars. Best for top-down analysis and sector rotation."

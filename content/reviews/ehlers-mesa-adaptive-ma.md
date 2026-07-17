@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-mesa-adaptive-ma.png"
 tags:
   - ehlers mesa adaptive ma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers Mesa Adaptive MA review: a lag-reduced moving average that adapts to market cycles. Best settings, entry/exit strategy, and honest pros vs cons."

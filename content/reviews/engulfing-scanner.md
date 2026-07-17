@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/engulfing-scanner.png"
 tags:
   - engulfing scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Engulfing_Scanner finds bullish and bearish engulfing patterns across all timeframes. No fluff. Here’s exactly how to set it up and trade it."

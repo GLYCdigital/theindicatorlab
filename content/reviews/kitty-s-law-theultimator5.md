@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kitty-s-law-theultimator5.png"
 tags:
   - kitty s law theultimator5
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe momentum and volatility scalper. Best on 1m-15m for crypto and forex. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kagi-charts.png"
 tags:
   - kagi charts
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Kagi_Charts eliminates noise by focusing on price reversals. A clean, classic tool for trend and swing traders. 4/5 stars."

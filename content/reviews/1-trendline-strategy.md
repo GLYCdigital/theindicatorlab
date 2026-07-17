@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/1-trendline-strategy.png"
 tags:
   - 1 trendline strategy
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, single-trendline breakout system that auto-draws support/resistance. Honest review with settings, entry rules, and where it falls short."

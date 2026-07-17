@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/jurik-moving-average.png"
 tags:
   - jurik moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Smooth, lag-reduced moving average by Mark Jurik. Great for trend filtering and reducing noise. Review covers settings, pros, cons, and better alternatives."

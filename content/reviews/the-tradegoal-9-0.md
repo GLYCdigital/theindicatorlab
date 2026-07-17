@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/the-tradegoal-9-0.png"
 tags:
   - the tradegoal 9 0
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A solid 4/5 multi-timeframe momentum and volatility tool. Clean signals, no repaint, but needs context. Best on 15m–1h charts."

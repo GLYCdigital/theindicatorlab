@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cci-smoothed.png"
 tags:
   - cci smoothed
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Cci_Smoothed review: a dual-smoothing CCI that reduces noise. Honest breakdown of settings, strategy, and how it compares to raw CCI for swing trading."

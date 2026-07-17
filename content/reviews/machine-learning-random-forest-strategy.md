@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-random-forest-strategy.png"
 tags:
   - machine learning random forest strategy
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Machine_Learning_Random_Forest_Strategy — a TradingView indicator that uses random forest ML to generate buy/sell signals with configurable features."

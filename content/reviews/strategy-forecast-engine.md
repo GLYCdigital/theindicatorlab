@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strategy-forecast-engine.png"
 tags:
   - strategy forecast engine
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Strategy_Forecast_Engine combines ARIMA forecasting with price action zones to predict short-term moves. Honest review of settings, entries, and real trade results."

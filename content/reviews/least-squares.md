@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/least-squares.png"
 tags:
   - least squares
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "A practical look at Least Squares indicator on TradingView. See how it smooths trends, find optimal settings, and decide if it fits your strategy in 2026."

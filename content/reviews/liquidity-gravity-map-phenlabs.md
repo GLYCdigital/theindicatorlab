@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-gravity-map-phenlabs.png"
 tags:
   - liquidity gravity map phenlabs
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Phenlabs' Liquidity Gravity Map reveals hidden liquidity pools and order flow imbalances. A powerful tool for ICT traders looking for precision entries and exits."

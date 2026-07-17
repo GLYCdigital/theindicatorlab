@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/engulfing-pattern.png"
 tags:
   - engulfing pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Engulfing_Pattern indicator review. Tested on BTC, EURUSD, and TSLA. Settings, real trade examples, and when to ignore false signals. 4/5 stars."

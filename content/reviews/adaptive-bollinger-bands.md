@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adaptive-bollinger-bands.png"
 tags:
   - adaptive bollinger bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive_Bollinger_Bands adjusts band width in real time using volatility. Here's how to set it up, trade it, and avoid its flaws."

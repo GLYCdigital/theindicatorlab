@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractal-breakout.png"
 tags:
   - fractal breakout
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fractal_Breakout identifies clean breakouts from Bill Williams fractal levels. 4/5 stars. Best settings, entry rules, and honest limitations for day traders."

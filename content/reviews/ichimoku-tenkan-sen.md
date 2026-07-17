@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-tenkan-sen.png"
 tags:
   - ichimoku tenkan sen
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ichimoku_Tenkan_Sen review: testing settings, entry/exit strategy, and key pros/cons for traders."

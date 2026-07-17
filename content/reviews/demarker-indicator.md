@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/demarker-indicator.png"
 tags:
   - demarker indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Demarker_Indicator on TradingView. See how it measures buying vs selling pressure, best settings for entries and exits, and if it beats RSI or Stochastics."

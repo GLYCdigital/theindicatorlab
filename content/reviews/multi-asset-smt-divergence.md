@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/multi-asset-smt-divergence.png"
 tags:
   - multi asset smt divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi Asset SMT Divergence spots hidden divergences between correlated assets. Review covers settings, strategy, pros/cons, and how to trade SMT setups."

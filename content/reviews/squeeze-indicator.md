@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/squeeze-indicator.png"
 tags:
   - squeeze indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Review of Squeeze_Indicator: a volatility-based momentum tool. See settings, entry rules, pros, cons, and better alternatives for TradingView."

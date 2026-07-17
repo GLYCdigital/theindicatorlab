@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dynamic-pivot-fibo-analytics.png"
 tags:
   - dynamic pivot fibo analytics
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Dynamic_Pivot_Fibo_Analytics combines pivot points with Fibonacci retracements for dynamic support/resistance. A solid 4-star multi-timeframe tool."

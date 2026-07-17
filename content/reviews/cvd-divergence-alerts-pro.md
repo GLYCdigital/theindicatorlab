@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cvd-divergence-alerts-pro.png"
 tags:
   - cvd divergence alerts pro
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Honest review of CVD Divergence Alerts Pro. Discover settings, entry/exit strategies, and whether this 5-star tool replaces volume-based divergence setups for crypto and forex traders."

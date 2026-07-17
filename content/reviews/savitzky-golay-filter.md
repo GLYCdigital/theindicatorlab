@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/savitzky-golay-filter.png"
 tags:
   - savitzky golay filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Savitzky-Golay Filter smooths noise without lag. Tested on BTC, AAPL. Best settings, entry signals, and honest pros/cons for traders."

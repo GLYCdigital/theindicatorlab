@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/macd-adaptive.png"
 tags:
   - macd adaptive
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive MACD that adjusts to market volatility. Tested on BTC, ES, and FX. Settings, strategy, and honest verdict inside."

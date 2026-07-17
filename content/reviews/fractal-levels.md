@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractal-levels.png"
 tags:
   - fractal levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fractal_Levels auto-draws key support/resistance from Bill Williams fractals. See settings, entry tactics, and honest pros/cons for scalpers and swing traders."

@@ -1,3 +1,13 @@
+---
+title: "Chaikin Volatility Histogram Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/chaikin-volatility-histogram.png"
+rating: 4
+description: "** Chaikin Volatility Histogram review: settings, strategy, and how to use it for spotting volatility breakouts and reversals. 4/5 stars."
+---
+
 **description:** Chaikin Volatility Histogram review: settings, strategy, and how to use it for spotting volatility breakouts and reversals. 4/5 stars.
 
 ---

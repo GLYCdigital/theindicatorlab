@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/momentum-leader-scanner-ashish.png"
 tags:
   - momentum leader scanner ashish
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A momentum scanner that flags leading stocks before the crowd. Fast signals, low lag, but needs confirmation. Best for intraday scalping on 5-15min charts."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adx-divergence.png"
 tags:
   - adx divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Practical ADX divergence scanner that catches trend exhaustion. Works best on 1H–4H with clear settings. Not perfect, but a solid addition."

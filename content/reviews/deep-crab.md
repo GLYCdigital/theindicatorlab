@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/deep-crab.png"
 tags:
   - deep crab
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Deep_Crab identifies harmonic crab patterns with precision. A solid tool for reversal traders—clean signals, but not a holy grail. 4/5."

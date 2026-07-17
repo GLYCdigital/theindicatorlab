@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/standard-deviation-channels.png"
 tags:
   - standard deviation channels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Standard Deviation Channels review: 3/5 stars. A solid volatility-based envelope for trend and mean reversion. Settings, strategy, and honest trade-offs."

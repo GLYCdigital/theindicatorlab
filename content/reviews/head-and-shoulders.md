@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/head-and-shoulders.png"
 tags:
   - head and shoulders
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Head_And_Shoulders indicator for TradingView. Find out if it works for real trading, best settings, and how to use it for entries and exits."

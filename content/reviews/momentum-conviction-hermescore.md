@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/momentum-conviction-hermescore.png"
 tags:
   - momentum conviction hermescore
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Momentum_Conviction_Hermescore review: combines momentum strength with conviction scoring. Best settings, entry/exit strategies, and who should use it."

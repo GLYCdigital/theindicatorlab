@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/psar-with-ema.png"
 tags:
   - psar with ema
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Psar With EMA combines Parabolic SAR and EMA for trend confirmation. Read our honest review, best settings, and entry strategy."

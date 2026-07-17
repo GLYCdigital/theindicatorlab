@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/average-directional-index.png"
 tags:
   - average directional index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest ADX review: settings, pros/cons, and how to trade strong trends without chasing noise. Tested on multiple timeframes."

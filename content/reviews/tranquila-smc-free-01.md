@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tranquila-smc-free-01.png"
 tags:
   - tranquila smc free 01
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Tranquila_Smc_Free_01 review: SMC-based free indicator for liquidity sweeps, FVG, and OB. Best settings, pros/cons, and trading strategy tested on real charts."

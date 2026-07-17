@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-deviation-scaled-oscillator.png"
 tags:
   - ehlers deviation scaled oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Deviation_Scaled_Oscillator review: a smoothed momentum oscillator using deviation scaling. Settings, entry/exit rules, and honest pros vs cons."

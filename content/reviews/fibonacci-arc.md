@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-arc.png"
 tags:
   - fibonacci arc
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Fibonacci_Arc: how it predicts support/resistance in trending markets, best settings, and entry/exit strategies."

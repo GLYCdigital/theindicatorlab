@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rsi-divergence-detector.png"
 tags:
   - rsi divergence detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of RSI Divergence Detector: how it spots hidden & regular divergences, best settings, and why it’s a solid 4-star tool for reversal traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/xau-bands.png"
 tags:
   - xau bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Xau_Bands review: A volatility-based envelope for gold (XAUUSD). Tests real settings, entry rules, pros & cons. A solid 4/5 for trend traders."

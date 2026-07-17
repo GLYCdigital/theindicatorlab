@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gator-oscillator.png"
 tags:
   - gator oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Bill Williams' Gator Oscillator: settings, best timeframe, and how to use it for trend-following without the hype."

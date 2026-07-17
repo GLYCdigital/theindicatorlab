@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-deviation-scaled.png"
 tags:
   - ehlers deviation scaled
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Deviation_Scaled shows normalized price deviation with clear overbought/oversold levels. 4/5 rating. Best settings, strategy, and how to trade it."

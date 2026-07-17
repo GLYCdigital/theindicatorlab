@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ai-predictive-flow.png"
 tags:
   - ai predictive flow
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ai_Predictive_Flow uses a neural network to predict price direction with a clean signal line. Honest review, settings, and strategy."

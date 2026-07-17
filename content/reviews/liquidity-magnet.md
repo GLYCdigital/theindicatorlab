@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-magnet.png"
 tags:
   - liquidity magnet
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Liquidity_Magnet identifies key liquidity zones and stop hunts in real time. Honest review with settings, entry strategy, and who should use it."

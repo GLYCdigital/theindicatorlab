@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/zigzag-confluence-probalist-essentials.png"
 tags:
   - zigzag confluence probalist essentials
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A multi-timeframe zigzag tool that highlights trend reversal zones with probability scores. Best for swing traders who want confluence without clutter."

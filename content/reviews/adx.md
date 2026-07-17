@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adx.png"
 tags:
   - adx
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "The ADX measures trend strength, not direction. A 4/5 classic for filtering trades. Settings, entry rules, and honest trade-offs."

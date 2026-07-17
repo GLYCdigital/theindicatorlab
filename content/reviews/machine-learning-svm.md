@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-svm.png"
 tags:
   - machine learning svm
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Machine_Learning_Svm uses Support Vector Machines to classify price direction. A solid ML tool for trend confirmation. Settings, pros/cons, and real usage inside."

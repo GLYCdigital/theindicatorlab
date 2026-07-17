@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/on-balance-volume.png"
 tags:
   - on balance volume
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest On Balance Volume review: settings, divergence signals, and how to use it for breakout confirmation. No fluff, just what works."

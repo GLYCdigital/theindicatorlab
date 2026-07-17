@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/detrended-price-oscillator.png"
 tags:
   - detrended price oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Detrended Price Oscillator review: settings, strategy, and how to use it for cycle-based entries. See if it fits your trading."

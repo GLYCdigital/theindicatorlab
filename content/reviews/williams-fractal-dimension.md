@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/williams-fractal-dimension.png"
 tags:
   - williams fractal dimension
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical review of the Williams Fractal Dimension indicator. We cover settings, entry signals, and whether it actually helps identify trend strength in real charts."

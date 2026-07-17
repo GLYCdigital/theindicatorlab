@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-adaptive-stochastic.png"
 tags:
   - ehlers adaptive stochastic
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers Adaptive Stochastic review: adaptive stochastic oscillator with dynamic periods. How to set it up, strategy tips, and who it's actually for."

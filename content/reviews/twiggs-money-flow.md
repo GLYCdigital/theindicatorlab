@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/twiggs-money-flow.png"
 tags:
   - twiggs money flow
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Twiggs Money Flow improves on Chaikin Money Flow with volatility-adjusted volume. My full review covers settings, entry signals, and real trade examples."

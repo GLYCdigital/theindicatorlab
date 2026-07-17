@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-fast.png"
 tags:
   - stochastic fast
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Stochastic_Fast: a no-nonsense momentum oscillator for spotting overbought/oversold. Tested settings, entries, and exit strategies included."

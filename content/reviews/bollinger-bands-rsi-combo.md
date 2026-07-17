@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-rsi-combo.png"
 tags:
   - bollinger bands rsi combo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Bollinger_Bands_Rsi_Combo review: combines BB squeeze and RSI overbought/oversold signals. Settings, entry rules, pros, cons, and better alternatives."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/moving-average-envelope.png"
 tags:
   - moving average envelope
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Moving_Average_Envelope review: a classic volatility-based channel indicator. Settings, strategy, pros/cons, and how to use it for trend and mean reversion trades."

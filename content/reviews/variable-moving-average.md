@@ -1,3 +1,13 @@
+---
+title: "Variable Moving Average Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/variable-moving-average.png"
+rating: 4
+description: "Variable Moving Average review: real settings, entry/exit rules, pros & cons, and better alternatives. 4/5 stars from a trader who tested it."
+---
+
 **description:** "Variable Moving Average review: real settings, entry/exit rules, pros & cons, and better alternatives. 4/5 stars from a trader who tested it."
 
 ---

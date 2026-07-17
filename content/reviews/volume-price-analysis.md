@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-price-analysis.png"
 tags:
   - volume price analysis
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Volume Price Analysis provides basic volume-price relationship signals but lacks the nuance of professional VPA scanning tools."

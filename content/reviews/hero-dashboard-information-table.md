@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hero-dashboard-information-table.png"
 tags:
   - hero dashboard information table
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, customizable dashboard that displays key market data directly on your chart. Ideal for quick scans without switching tabs."

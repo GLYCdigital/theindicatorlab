@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adaptive-moving-average.png"
 tags:
   - adaptive moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A no-nonsense review of the Adaptive Moving Average on TradingView. Discover if this self-adjusting trend filter beats traditional MAs, plus best settings and entry rules."

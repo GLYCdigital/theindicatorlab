@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/alligator-bill-williams.png"
 tags:
   - alligator bill williams
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bill Williams Alligator indicator review. See how its three smoothed moving averages identify trends and breakouts. Settings, strategy, and honest verdict."

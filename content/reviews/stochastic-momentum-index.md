@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-momentum-index.png"
 tags:
   - stochastic momentum index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Stochastic_Momentum_Index review: faster, smoother momentum oscillator than classic Stoch or RSI. Settings, strategy, pros/cons, and who it's actually for."

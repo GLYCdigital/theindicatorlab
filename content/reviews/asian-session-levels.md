@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/asian-session-levels.png"
 tags:
   - asian session levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Asian_Session_Levels draws key support/resistance zones from Tokyo/Asian session. Clean, automatic, but lacks volume confirmation. Honest 4/5 review."

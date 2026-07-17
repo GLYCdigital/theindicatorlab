@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/equity-curve-analyzer.png"
 tags:
   - equity curve analyzer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Equity_Curve_Analyzer: tracks your strategy's P&L, drawdown, and Sharpe ratio directly on the chart. Settings, pros/cons, and alternatives."

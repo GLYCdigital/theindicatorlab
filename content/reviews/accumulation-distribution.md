@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/accumulation-distribution.png"
 tags:
   - accumulation distribution
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Accumulation Distribution indicator review. See how this volume-based tool reveals smart money moves, plus exact settings and entry timing."

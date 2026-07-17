@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-raw.png"
 tags:
   - atr raw
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Atr_Raw strips ATR down to its bare bones: clean, raw volatility lines without smoothing. Great for active traders who want unfiltered noise, but not for beginners."

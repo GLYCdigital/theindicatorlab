@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/interest-rate-sensitivity.png"
 tags:
   - interest rate sensitivity
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tracks how assets react to interest rate shifts. Useful for macro-aware traders. Not a standalone entry signal. Best on bonds, REITs, and rate-sensitive equities."

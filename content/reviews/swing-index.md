@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/swing-index.png"
 tags:
   - swing index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Swing_Index measures intra-bar price pressure to spot reversals. I tested it on BTC and SPY. Settings, pros, cons, and a better alternative included."

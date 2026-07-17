@@ -1,3 +1,13 @@
+---
+title: "Price Channel Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/price-channel.png"
+rating: 4
+description: "** An honest review of TradingView's Price Channel indicator, covering settings, strategy, and how to trade it effectively. 4/5 stars."
+---
+
 **Description:** An honest review of TradingView's Price Channel indicator, covering settings, strategy, and how to trade it effectively. 4/5 stars.
 
 ---

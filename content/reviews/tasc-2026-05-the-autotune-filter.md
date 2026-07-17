@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tasc-2026-05-the-autotune-filter.png"
 tags:
   - tasc 2026 05 the autotune filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "AutoTune Filter dynamically adjusts its smoothing based on market volatility. A solid 4/5 for trend traders who hate repainting."

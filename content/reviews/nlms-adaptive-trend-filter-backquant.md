@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/nlms-adaptive-trend-filter-backquant.png"
 tags:
   - nlms adaptive trend filter backquant
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive trend filter using NLMS algorithm with backquant smoothing. Good for choppy markets but has a learning curve. Tested on BTC, ES, and FX."

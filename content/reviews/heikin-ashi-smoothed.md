@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heikin-ashi-smoothed.png"
 tags:
   - heikin ashi smoothed
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Heikin_Ashi_Smoothed review: a lag-reducing Heikin Ashi variant. Real settings, entry/exit rules, pros/cons, and better alternatives for trend traders."

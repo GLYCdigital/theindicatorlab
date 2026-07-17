@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/triple-ema.png"
 tags:
   - triple ema
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical review of Triple Ema on TradingView. Covers optimal settings, entry rules, and why it beats single EMAs but isn't perfect."

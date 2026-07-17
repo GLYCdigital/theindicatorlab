@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chandelier-exit.png"
 tags:
   - chandelier exit
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Chandelier Exit review after 100+ trades. Best settings, entry/exit rules, and when this volatility-based trailing stop actually beats ATR stops."

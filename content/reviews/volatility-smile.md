@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volatility-smile.png"
 tags:
   - volatility smile
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volatility_Smile reveals hidden volatility zones using a unique smile-shaped band. See how to set it up, trade entries, and avoid false signals."

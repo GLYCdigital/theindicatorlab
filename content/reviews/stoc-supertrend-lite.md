@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stoc-supertrend-lite.png"
 tags:
   - stoc supertrend lite
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Stoc_Supertrend_Lite blends stochastic momentum with SuperTrend trend-following. Honest review: settings, entry/exit rules, and who it works for."

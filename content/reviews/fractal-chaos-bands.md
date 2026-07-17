@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractal-chaos-bands.png"
 tags:
   - fractal chaos bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fractal_Chaos_Bands combines Bill Williams' fractals with adaptive volatility bands. A solid 4/5 for trend traders who want clean support/resistance."

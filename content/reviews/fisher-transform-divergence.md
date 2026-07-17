@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fisher-transform-divergence.png"
 tags:
   - fisher transform divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fisher_Transform_Divergence review: how to use it for hidden & regular divergences, best settings, entry signals, and who it actually works for."

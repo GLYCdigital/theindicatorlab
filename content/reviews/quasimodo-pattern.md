@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/quasimodo-pattern.png"
 tags:
   - quasimodo pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Quasimodo_Pattern auto-detects the classic M/W reversal pattern. See how to trade it, best settings, and why it's not a holy grail."

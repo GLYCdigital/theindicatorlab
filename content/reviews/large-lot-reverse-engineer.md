@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/large-lot-reverse-engineer.png"
 tags:
   - large lot reverse engineer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Reverse-engineer large lot trades from volume & footprint data. See where big money is buying/selling. Good for scalping, but not for trend trading."

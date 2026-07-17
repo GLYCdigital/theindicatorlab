@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-standard.png"
 tags:
   - bollinger bands standard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A no-nonsense review of Bollinger_Bands_Standard. See what makes this classic volatility tool tick, best settings, entry/exit tactics, and who should skip it."

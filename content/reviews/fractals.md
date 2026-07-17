@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractals.png"
 tags:
   - fractals
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fractals (Bill Williams) helps identify swing highs/lows with clear arrows. Tested on BTCUSD and EURUSD—here's my honest 4/5 review."

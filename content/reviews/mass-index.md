@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mass-index.png"
 tags:
   - mass index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Mass Index detects trend reversals by measuring high-low expansion and contraction. A practical volatility reversal indicator for swing traders."

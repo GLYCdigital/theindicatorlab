@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/aj-ict-smc.png"
 tags:
   - aj ict smc
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Aj_Ict_Smc auto-draws ICT concepts like FVG, order blocks, and liquidity. Clean but not perfect. Read my honest review."

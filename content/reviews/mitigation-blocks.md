@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mitigation-blocks.png"
 tags:
   - mitigation blocks
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Mitigation_Blocks auto-draws key order blocks and fair value gaps. Honest review of settings, pros/cons, and how to trade them without the fluff."

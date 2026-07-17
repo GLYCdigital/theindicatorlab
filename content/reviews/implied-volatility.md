@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/implied-volatility.png"
 tags:
   - implied volatility
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Implied_Volatility review: how it calculates IV, best settings for swings & options, pros/cons, and better alternatives. No fluff."

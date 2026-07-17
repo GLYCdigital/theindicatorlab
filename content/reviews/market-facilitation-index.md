@@ -1,3 +1,13 @@
+---
+title: "Market Facilitation Index Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/market-facilitation-index.png"
+rating: 4
+description: "Bill Williams' MFI measures price/volume efficiency. A legacy indicator with mixed signals — useful for context, not standalone trades."
+---
+
 **description:** "Bill Williams' MFI measures price/volume efficiency. A legacy indicator with mixed signals — useful for context, not standalone trades."
 
 ---

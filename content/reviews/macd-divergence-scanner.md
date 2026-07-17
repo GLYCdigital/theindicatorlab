@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/macd-divergence-scanner.png"
 tags:
   - macd divergence scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Macd_Divergence_Scanner review: tested for entries/exits, pros & cons, best settings, and alternatives. See if it fits your trading."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pattern-recognition-using-ai.png"
 tags:
   - pattern recognition using ai
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "AI-powered pattern recognition that spots chart patterns without manual drawing. Reliable for swing trades but needs confirmation. 4/5."

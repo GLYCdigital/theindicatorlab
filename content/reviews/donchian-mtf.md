@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/donchian-mtf.png"
 tags:
   - donchian mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Donchian Channel indicator for spotting breakout zones and trend direction across higher and lower timeframes."

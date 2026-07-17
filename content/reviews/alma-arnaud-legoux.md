@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/alma-arnaud-legoux.png"
 tags:
   - alma arnaud legoux
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ALMA (Arnaud Legoux Moving Average) review: settings, strategy, and real testing results. See how this noise-reducing moving average improves trend detection."

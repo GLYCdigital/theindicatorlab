@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cvd-profiles-tradingiq.png"
 tags:
   - cvd profiles tradingiq
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "CVD Profiles TradingIQ review: real trader test of cumulative volume delta profiles. Best settings, entry/exit signals, and honest pros/cons for futures scalping."

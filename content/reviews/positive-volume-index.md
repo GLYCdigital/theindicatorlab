@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/positive-volume-index.png"
 tags:
   - positive volume index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "PVI tracks price moves on rising volume to identify bull trends. A decent confirmation tool but not a standalone system. Read our full review."

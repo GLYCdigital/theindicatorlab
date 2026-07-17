@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/correlation-indicator.png"
 tags:
   - correlation indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Correlation_Indicator for TradingView: settings, strategy, and how to use it for pairs trading and divergence. Pros, cons, and better alternatives."

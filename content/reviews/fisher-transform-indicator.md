@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fisher-transform-indicator.png"
 tags:
   - fisher transform indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fisher Transform Indicator review: turns price into Gaussian normal distribution for early reversals. Best settings, entry/exit rules, and honest pros/cons."

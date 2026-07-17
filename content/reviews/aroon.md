@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/aroon.png"
 tags:
   - aroon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Aroon indicator review: settings, entry/exit strategy, pros & cons. Tests show it excels in trending markets but lags in choppy conditions. See if it fits your system."

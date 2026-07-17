@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/relative-momentum-index.png"
 tags:
   - relative momentum index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Relative_Momentum_Index review: settings, pros/cons, entry signals, and who it's for. A solid RMI variant with clear overbought/oversold zones."

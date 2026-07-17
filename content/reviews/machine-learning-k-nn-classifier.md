@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-k-nn-classifier.png"
 tags:
   - machine learning k nn classifier
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "K-NN classifier for trading: predicts price direction using machine learning. Review covers settings, signals, and realistic backtest performance."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/jurik-cfj.png"
 tags:
   - jurik cfj
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Jurik_Cfj offers a smoothed, lag-reduced momentum oscillator. I tested it live. Here's how to set it up, enter trades, and avoid whipsaws."

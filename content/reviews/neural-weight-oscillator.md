@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/neural-weight-oscillator.png"
 tags:
   - neural weight oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Neural Weight Oscillator review: a weighted momentum tool with adaptive smoothing. Best settings, entry rules, and when to skip it."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/roc-mtf.png"
 tags:
   - roc mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Roc_Mtf review: multi-timeframe Rate of Change indicator. Settings, strategy, pros/cons, and how to use it for momentum divergence trading."

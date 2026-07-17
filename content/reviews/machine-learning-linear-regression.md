@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-linear-regression.png"
 tags:
   - machine learning linear regression
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical review of TradingView's Machine_Learning_Linear_Regression indicator. See how it forecasts price trends, optimal settings, and real trade examples."

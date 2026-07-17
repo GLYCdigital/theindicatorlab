@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/post-absorption-vwap-reversal-engine-6.png"
 tags:
   - post absorption vwap reversal engine 6
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Post Absorption VWAP Reversal Engine 6 catches trend reversals after absorption phases. Overcomplicated but works in choppy markets. Settings and strategy inside."

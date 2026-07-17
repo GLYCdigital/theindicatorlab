@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/beta-indicator.png"
 tags:
   - beta indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Beta_Indicator review: A 4/5 star tool for relative strength vs. SPY. Settings, entry signals, and a no-BS breakdown of its real trading value."

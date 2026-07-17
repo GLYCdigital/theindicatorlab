@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elder-ray-index-bull-bear-power.png"
 tags:
   - elder ray index bull bear power
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Elder Ray Index Bull Bear Power review: how it measures buying & selling pressure, best settings, entry rules, and why Dr. Elder's classic still works."

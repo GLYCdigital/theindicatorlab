@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-trailing-stop.png"
 tags:
   - atr trailing stop
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "A practical ATR Trailing Stop review. We test its settings, entry/exit logic, and compare it to better alternatives. 3/5 stars."

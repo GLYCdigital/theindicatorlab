@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/order-flow-indicator.png"
 tags:
   - order flow indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Order_Flow_Indicator on TradingView. See how it visualizes aggressive buy/sell pressure, delta, and volume imbalances—and whether it's worth your time."

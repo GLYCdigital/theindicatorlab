@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adaptive-trend-line.png"
 tags:
   - adaptive trend line
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive_Trend_Line auto-adjusts to market volatility. Review covers settings, entry/exit rules, and whether it beats static trendlines."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cvd.png"
 tags:
   - cvd
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "CVD tracks cumulative volume delta to reveal hidden buying/selling pressure. Works best on lower timeframes with volume confirmation. 3/5."

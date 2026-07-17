@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ema-cross-signal.png"
 tags:
   - ema cross signal
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ema_Cross_Signal review. Tested settings, pros/cons, and entry rules. A 4/5 star EMA crossover tool—fast, clear, but lacks volume confirmation."

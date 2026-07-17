@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/multi-indicator-confluence.png"
 tags:
   - multi indicator confluence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi_Indicator_Confluence combines RSI, MACD, and moving averages into one clean signal. Handy for confluence traders but not a breakthrough."

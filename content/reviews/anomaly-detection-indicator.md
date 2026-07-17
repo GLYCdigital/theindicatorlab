@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/anomaly-detection-indicator.png"
 tags:
   - anomaly detection indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Anomaly_Detection_Indicator. See how it spots rare price moves, optimal settings, and if it's worth adding to your TradingView toolkit."

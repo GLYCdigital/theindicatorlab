@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/linear-regression.png"
 tags:
   - linear regression
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical review of TradingView's Linear Regression indicator. Best settings, entry/exit rules, and honest pros/cons for trend traders."

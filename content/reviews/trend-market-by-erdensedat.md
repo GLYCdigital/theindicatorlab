@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/trend-market-by-erdensedat.png"
 tags:
   - trend market by erdensedat
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Trend_Market_By_Erdensedat is a clean trend-following tool for swing traders. It plots dynamic support/resistance zones and momentum shifts. No repainting, moderate lag, solid for daily charts."

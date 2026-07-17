@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/lstm-price-forecast.png"
 tags:
   - lstm price forecast
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "LSTM-based price projection tool. Delivers a single forecast line with adaptive retracement zones. Good for swing traders, not scalping."

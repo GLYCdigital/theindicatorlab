@@ -1,3 +1,13 @@
+---
+title: "Mcginley Dynamic Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/mcginley-dynamic.png"
+rating: 4
+description: "Smoother than a moving average? Our McGinley Dynamic review tests its trend-following accuracy, best settings, and practical trading strategy."
+---
+
 **description:** "Smoother than a moving average? Our McGinley Dynamic review tests its trend-following accuracy, best settings, and practical trading strategy."
 
 ---

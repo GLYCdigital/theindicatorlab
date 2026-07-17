@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/celestial-mean-reversion-envelopes-pineify.png"
 tags:
   - celestial mean reversion envelopes pineify
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Mean reversion envelopes with adaptive bands and trend filter. Works on forex, crypto, stocks. 4/5 stars for reliability."

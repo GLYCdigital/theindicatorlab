@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/exponential-moving-average-ema.png"
 tags:
   - exponential moving average ema
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Exponential_Moving_Average_Ema review. Testing the classic EMA indicator on TradingView. Best settings, pros/cons, and how to actually trade with it."

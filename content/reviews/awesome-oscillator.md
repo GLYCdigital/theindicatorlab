@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/awesome-oscillator.png"
 tags:
   - awesome oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "A practical review of the Awesome Oscillator: its median-line momentum strategy, recommended settings for 4H and daily charts, and why it often lags without confirmation."

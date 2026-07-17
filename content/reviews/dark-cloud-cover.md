@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dark-cloud-cover.png"
 tags:
   - dark cloud cover
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Dark_Cloud_Cover indicator review. Real settings, filter tweaks, and strategy tips for bearish reversal signals. No fluff—just what works."

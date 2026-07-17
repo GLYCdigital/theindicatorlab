@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/simple-moving-average-sma.png"
 tags:
   - simple moving average sma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Simple_Moving_Average_Sma. Tested on charts. Settings, entry rules, pros/cons, and who should use it."

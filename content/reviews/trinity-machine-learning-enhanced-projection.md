@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/trinity-machine-learning-enhanced-projection.png"
 tags:
   - trinity machine learning enhanced projection
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A solid ML overlay that projects future price zones with decent accuracy. Not magic, but a useful edge when combined with price action."

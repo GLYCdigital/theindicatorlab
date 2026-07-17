@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/exhaustion-zones-momentum-episodes-hermescore.png"
 tags:
   - exhaustion zones momentum episodes hermescore
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A multi-layered momentum exhaustion tool that flags trend reversals and episode shifts. Works best on 1H-4H swings. Not for scalpers."

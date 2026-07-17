@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/choppiness-index.png"
 tags:
   - choppiness index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Choppiness_Index review: How to use it to avoid choppy markets, find trend reversals, and set optimal entry & exit levels. Settings included."

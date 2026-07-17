@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-profile-pro.png"
 tags:
   - volume profile pro
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume_Profile_Pro delivers institutional-grade volume profile analysis. See settings, strategy, and honest performance data from my backtests."

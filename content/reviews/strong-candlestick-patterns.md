@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strong-candlestick-patterns.png"
 tags:
   - strong candlestick patterns
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Strong_Candlestick_Patterns review. Tests real setups, settings, and win rates. See if it beats free alternatives before you install."

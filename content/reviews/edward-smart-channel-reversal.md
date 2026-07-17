@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/edward-smart-channel-reversal.png"
 tags:
   - edward smart channel reversal
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Channel-based reversal scanner with dynamic support/resistance. Flags high-probability turns when price touches channel edges. Works best on 1H–4H forex and crypto. Not for scalpers."

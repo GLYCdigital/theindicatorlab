@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vidya.png"
 tags:
   - vidya
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "VIDYA adapts to market volatility, smoothing trends during choppy periods and reacting faster in strong moves. A solid alternative to EMA or SMA."

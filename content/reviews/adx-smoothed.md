@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adx-smoothed.png"
 tags:
   - adx smoothed
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adx_Smoothed filters ADX noise with a second smoothing layer. Reduces false signals in ranging markets. 4/5 rating."

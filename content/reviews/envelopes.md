@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/envelopes.png"
 tags:
   - envelopes
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Envelopes indicator review: settings, strategy, and honest take. A simple volatility bands tool that works best in trending markets. 4/5 stars."

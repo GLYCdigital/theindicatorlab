@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/coppock-with-signals.png"
 tags:
   - coppock with signals
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Coppock_With_Signals adds buy/sell arrows and a smoothed trend line to the classic Coppock Curve. Works best on weekly charts for long-term trend reversals."

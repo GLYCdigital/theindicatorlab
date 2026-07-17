@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/phase-exhaustion-reversal-bullbyte.png"
 tags:
   - phase exhaustion reversal bullbyte
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Phase_Exhaustion_Reversal_Bullbyte catches trend exhaustion and reversal signals using phase analysis. Honest review with settings, strategy, and who it's for."

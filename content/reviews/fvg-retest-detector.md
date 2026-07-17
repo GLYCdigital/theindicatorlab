@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fvg-retest-detector.png"
 tags:
   - fvg retest detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Fvg_Retest_Detector review: settings, strategy, and how to use it for entries. See if this FVG retest tool actually works for your trading."

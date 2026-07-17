@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/predictive-breakout-channels.png"
 tags:
   - predictive breakout channels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Predictive Breakout Channels flags potential breakouts before price moves. Honest review: settings, pros/cons, and who should use it."

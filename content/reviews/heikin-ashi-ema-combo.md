@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heikin-ashi-ema-combo.png"
 tags:
   - heikin ashi ema combo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Heikin_Ashi_Ema_Combo combines smoothed candles with EMA crossovers. I tested it for 30 days—here’s my honest take on settings, trade setups, and whether it’s worth adding to your chart."

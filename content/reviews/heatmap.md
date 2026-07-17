@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heatmap.png"
 tags:
   - heatmap
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Heatmap review: a visual volatility & volume tool. See how it highlights high-activity zones, best settings, and entry/exit tactics. Not magic, but useful."

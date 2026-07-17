@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/inverse-fisher-transform-rsi.png"
 tags:
   - inverse fisher transform rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Inverse Fisher Transform RSI review: a smoothed oscillator that sharpens RSI signals. Best settings, entry rules, and honest pros and cons for traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ulcer-index.png"
 tags:
   - ulcer index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "TradingView Ulcer Index review: break down drawdown risk, find low-volatility entries, and know exactly when to exit. No fluff."

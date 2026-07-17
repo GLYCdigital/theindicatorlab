@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stop-hunt-radar-gbb.png"
 tags:
   - stop hunt radar gbb
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A stop-hunt detector for GBP pairs that flags liquidity grabs before reversals. Reliable on M15-H1 but not magic. 4/5."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/super-trend-oscillator.png"
 tags:
   - super trend oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Super_Trend_Oscillator combines trend-following SuperTrend logic with RSI-style oscillator lines for clearer entries and exits. Honest review with settings."

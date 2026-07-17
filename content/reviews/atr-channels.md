@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-channels.png"
 tags:
   - atr channels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Atr_Channels review: settings, strategy, and how to use it for entries and exits. See if this volatility-based channel indicator fits your trading."

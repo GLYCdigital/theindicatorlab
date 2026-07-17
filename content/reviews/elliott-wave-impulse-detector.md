@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave-impulse-detector.png"
 tags:
   - elliott wave impulse detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automated Elliott Wave impulse detection for TradingView. Honest review of settings, pros, cons, and how to use it for entries and exits."

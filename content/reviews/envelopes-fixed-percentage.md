@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/envelopes-fixed-percentage.png"
 tags:
   - envelopes fixed percentage
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A fixed-percentage channel indicator that wraps price action with two bands. Best for range trading and volatility-based exits. Settings guide included."

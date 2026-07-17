@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-points-demark.png"
 tags:
   - pivot points demark
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Demark Pivot Points review: How Tom DeMark’s sequential formula predicts support/resistance. Settings, entry/exit rules, and honest pros vs cons."

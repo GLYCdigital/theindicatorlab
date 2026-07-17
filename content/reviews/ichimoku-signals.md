@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-signals.png"
 tags:
   - ichimoku signals
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ichimoku_Signals automates cloud-based trading signals. Tests show solid trend entries but noisy in ranging markets. Best settings and strategies inside."

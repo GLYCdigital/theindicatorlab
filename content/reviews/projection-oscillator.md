@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/projection-oscillator.png"
 tags:
   - projection oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Projection Oscillator review: honest breakdown of its predictive momentum, custom settings, entry signals, and who should actually use it."

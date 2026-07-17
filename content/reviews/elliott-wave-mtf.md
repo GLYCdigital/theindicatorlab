@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave-mtf.png"
 tags:
   - elliott wave mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Elliott_Wave_Mtf review: automates multi-timeframe wave counting. Tested settings, entry/exit rules, pros vs cons. Not perfect, but best free EW tool."

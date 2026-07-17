@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gold-toolkit-22-matsukazealgo.png"
 tags:
   - gold toolkit 22 matsukazealgo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Gold_Toolkit_22_Matsukazealgo review: real settings, entry rules, and backtest results for XAUUSD. Not hype, just what works."

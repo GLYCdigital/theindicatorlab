@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/alt-bat-pattern.png"
 tags:
   - alt bat pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Alt_Bat_Pattern finds harmonic setups with 0.886 XA retracement. Review covers settings, entry/exit rules, and why it's a solid tool for swing traders."

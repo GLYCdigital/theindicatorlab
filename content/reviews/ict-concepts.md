@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ict-concepts.png"
 tags:
   - ict concepts
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ICT_Concepts auto-maps liquidity zones, order blocks, and FVG levels. A solid tool for SMC traders, but requires practice to avoid false signals. 4/5."

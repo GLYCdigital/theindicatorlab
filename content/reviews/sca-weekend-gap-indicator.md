@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/sca-weekend-gap-indicator.png"
 tags:
   - sca weekend gap indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Sca_Weekend_Gap_Indicator review. Tests gap fill probability, best settings, entry/exit rules, and who should use it. No fluff."

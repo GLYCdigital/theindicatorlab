@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cardwell-rsi-trade-navigator.png"
 tags:
   - cardwell rsi trade navigator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Cardwell RSI Trade Navigator review: authentic RSI divergence signals, bullish/bearish setups, and practical settings for trend trading."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-mesa-adaptive.png"
 tags:
   - ehlers mesa adaptive
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Mesa_Adaptive review: how this adaptive cycle indicator filters noise, best settings for entries/exits, and who should use it."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pine3d-a-native-3d-graphical-rendering-engine.png"
 tags:
   - pine3d a native 3d graphical rendering engine
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Pine3D brings real-time 3D chart rendering to TradingView. I tested its utility for visualizing multi-dimensional data and price action patterns. Honest review with settings and strategy."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/moving-average-ribbon.png"
 tags:
   - moving average ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Moving Average Ribbon review: Tested settings, trend strength signals, entry/exit tactics, and honest pros vs cons. See if it beats plain MAs."

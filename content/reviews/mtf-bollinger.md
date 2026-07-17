@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-bollinger.png"
 tags:
   - mtf bollinger
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Bollinger Bands: see higher timeframe volatility on lower timeframes. Honest review of settings, strategy, and who should use it."

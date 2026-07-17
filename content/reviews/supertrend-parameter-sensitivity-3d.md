@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/supertrend-parameter-sensitivity-3d.png"
 tags:
   - supertrend parameter sensitivity 3d
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "3D visualization of Supertrend sensitivity across ATR period and multiplier. Find optimal parameters fast. Honest review with settings & strategy."

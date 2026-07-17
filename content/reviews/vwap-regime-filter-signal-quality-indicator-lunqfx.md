@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vwap-regime-filter-signal-quality-indicator-lunqfx.png"
 tags:
   - vwap regime filter signal quality indicator lunqfx
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "VWAP Regime Filter + signal quality scoring. Decent for trend context, but the entry signals lag. 3/5 review."

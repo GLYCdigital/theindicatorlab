@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/quantum-imbalance-trap.png"
 tags:
   - quantum imbalance trap
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Quantum_Imbalance_Trap spots order-flow traps and imbalance zones. Read our honest review with settings, entry tactics, and where it falls short."

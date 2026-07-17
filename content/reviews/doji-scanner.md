@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/doji-scanner.png"
 tags:
   - doji scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest Doji_Scanner review: settings, pros/cons, and how it handles doji detection across timeframes. Not perfect, but saves screen time."

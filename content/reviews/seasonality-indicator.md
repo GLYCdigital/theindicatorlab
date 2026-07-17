@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/seasonality-indicator.png"
 tags:
   - seasonality indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Seasonality_Indicator review: tests its seasonal patterns, best settings for day & swing trading, and whether it beats the hype."

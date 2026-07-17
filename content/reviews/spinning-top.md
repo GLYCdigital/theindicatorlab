@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/spinning-top.png"
 tags:
   - spinning top
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest review of Spinning_Top. Covers settings, entry/exit rules, pros/cons, and who it's for. Not a holy grail, but a solid filter."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/qqe-mod.png"
 tags:
   - qqe mod
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Qqe_Mod review: A smoothed RSI-based momentum oscillator with dynamic levels. Best settings, entry/exit rules, pros/cons, and who it’s for."

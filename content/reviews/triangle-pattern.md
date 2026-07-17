@@ -1,3 +1,13 @@
+---
+title: "Triangle Pattern Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/triangle-pattern.png"
+rating: 4
+description: "Automatic triangle pattern detection on TradingView. Honest review of settings, entry/exit strategies, and real trade examples."
+---
+
 **description:** "Automatic triangle pattern detection on TradingView. Honest review of settings, entry/exit strategies, and real trade examples."
 
 ---

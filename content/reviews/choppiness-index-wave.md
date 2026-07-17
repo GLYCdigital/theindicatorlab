@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/choppiness-index-wave.png"
 tags:
   - choppiness index wave
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Choppiness_Index_Wave review: a smoothed momentum oscillator that filters noise and reveals trend vs. chop. Settings, strategy, and honest verdict."

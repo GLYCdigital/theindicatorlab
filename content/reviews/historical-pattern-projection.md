@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/historical-pattern-projection.png"
 tags:
   - historical pattern projection
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Historical_Pattern_Projection: a pattern-matching tool for price projection. Best settings, strategy, pros/cons, and who should use it."

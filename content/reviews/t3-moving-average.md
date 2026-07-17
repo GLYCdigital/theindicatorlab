@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/t3-moving-average.png"
 tags:
   - t3 moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "T3 Moving Average cuts noise better than EMA or SMA. See how I use it for entries, exits, and the best settings."

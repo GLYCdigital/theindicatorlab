@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/average-true-range-simple.png"
 tags:
   - average true range simple
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, lightweight ATR indicator that strips away clutter. Perfect for quick volatility checks. Read our full review with settings and strategy tips."

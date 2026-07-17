@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/implied-volatility-rank.png"
 tags:
   - implied volatility rank
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Implied_Volatility_Rank review. See how this indicator ranks IV vs historical data, best settings for options traders, and when to avoid it."

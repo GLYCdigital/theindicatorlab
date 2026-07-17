@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elder-thermometer.png"
 tags:
   - elder thermometer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Elder_Thermometer review: measures market temperature from 0-100. How to set it, trade extremes, and avoid false signals. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/multi-timeframe-volume-profiles-tradingiq.png"
 tags:
   - multi timeframe volume profiles tradingiq
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi Timeframe Volume Profiles TradingIQ review: aggregate volume profiles across 3 timeframes. Honest pros, cons, best settings, and how to trade with it."

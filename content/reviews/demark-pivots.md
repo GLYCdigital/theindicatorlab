@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/demark-pivots.png"
 tags:
   - demark pivots
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Demark Pivots review: how to use Tom DeMark’s sequential pivot system for trend reversals, key settings, and honest pros/cons."

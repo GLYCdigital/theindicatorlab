@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/morning-evening-star.png"
 tags:
   - morning evening star
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Morning_Evening_Star indicator after real testing. See best settings, entry rules, and whether it actually works for swing trading."

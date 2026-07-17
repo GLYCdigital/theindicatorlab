@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractal-chaos-oscillator.png"
 tags:
   - fractal chaos oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Combines Bill Williams’ fractals with a momentum oscillator to spot exhaustion moves. Best for trend-following entries on 1H-4H, but noisy in ranging markets. 4/5."

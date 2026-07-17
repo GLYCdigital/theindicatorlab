@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-shift-detection-lsd.png"
 tags:
   - liquidity shift detection lsd
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Identifies liquidity sweeps and shift zones for reversals. 4/5 star indicator. Best settings, strategy, and honest pros & cons for smart money traders."

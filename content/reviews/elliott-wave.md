@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave.png"
 tags:
   - elliott wave
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Elliott_Wave indicator review: automatic wave labeling, Fibonacci targets, and how to trade with it. Pros, cons, and better alternatives."

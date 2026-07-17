@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tertiary-pivot-structural-zones.png"
 tags:
   - tertiary pivot structural zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tertiary_Pivot_Structural_Zones identifies key supply/demand zones using tertiary pivots. Read our honest review, best settings, and trading strategy."

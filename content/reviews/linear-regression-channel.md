@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/linear-regression-channel.png"
 tags:
   - linear regression channel
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Linear Regression Channel: a trend tool that uses least-squares to plot a midline with standard deviation channels. Solid for trend trading, but not magic."

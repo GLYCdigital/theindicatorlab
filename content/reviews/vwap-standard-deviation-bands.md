@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vwap-standard-deviation-bands.png"
 tags:
   - vwap standard deviation bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "VWAP with standard deviation bands for dynamic support/resistance. Backtested on crypto, forex, and stocks. Settings and entry rules included."

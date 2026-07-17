@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vortex.png"
 tags:
   - vortex
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Vortex indicator review with settings, entry rules, and honest pros/cons. A solid trend-following tool for swing traders."

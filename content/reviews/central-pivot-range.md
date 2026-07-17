@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/central-pivot-range.png"
 tags:
   - central pivot range
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Central Pivot Range review: tested on ES, NQ, and forex. Best settings, entry strategies, and when this indicator actually works."

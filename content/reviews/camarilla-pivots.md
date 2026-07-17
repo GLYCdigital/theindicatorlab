@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/camarilla-pivots.png"
 tags:
   - camarilla pivots
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Camarilla Pivots: 4/5 stars. Intraday reversal levels that actually hold. Best for scalping ES, NQ, and FX. Settings and live trade examples inside."

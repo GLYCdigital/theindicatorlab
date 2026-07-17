@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-cluster.png"
 tags:
   - volume cluster
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume_Cluster reveals high-activity price zones using volume bars. I tested it on crypto and forex. Here's how to set it up, spot reversals, and avoid false signals."

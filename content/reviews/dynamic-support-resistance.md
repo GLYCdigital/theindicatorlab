@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dynamic-support-resistance.png"
 tags:
   - dynamic support resistance
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical dynamic S/R tool that adapts to volatility. Not perfect but avoids the lag of traditional pivot levels. Best for intraday scalping."

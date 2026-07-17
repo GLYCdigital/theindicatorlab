@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/alma-moving-average.png"
 tags:
   - alma moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A detailed review of the ALMA Moving Average on TradingView. See settings, strategy, pros/cons, and if it beats standard MAs for your trading."

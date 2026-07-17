@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/order-block-detector.png"
 tags:
   - order block detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Order_Block_Detector for TradingView. See how it marks institutional supply/demand zones, best settings, and if it’s worth your time."

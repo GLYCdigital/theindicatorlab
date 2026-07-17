@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/auto-trendline-intelligence-bos-choch-fvg-rehan-khanani.png"
 tags:
   - auto trendline intelligence bos choch fvg rehan khanani
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A multi-tool indicator combining trendlines, BOS, CHoCH, and FVG. Decent for structure trading but noisy on lower timeframes."

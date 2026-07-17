@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/harmonic-divergence.png"
 tags:
   - harmonic divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Harmonic_Divergence spots hidden and regular divergences on harmonic patterns. A solid 4/5 tool for pattern traders who want confluence."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/balance-of-power.png"
 tags:
   - balance of power
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Balance Of Power review: a volume-weighted momentum oscillator that reveals hidden buying/selling pressure. Settings, entry rules, and real-testing results."

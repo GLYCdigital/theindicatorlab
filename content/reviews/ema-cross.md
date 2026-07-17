@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ema-cross.png"
 tags:
   - ema cross
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ema_Cross review: tested on BTC, ES, and EURUSD. Best settings, entry rules, and why it's a solid 4/5 for trend traders."

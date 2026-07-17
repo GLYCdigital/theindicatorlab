@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strong-retest-zones-projectsyndicate.png"
 tags:
   - strong retest zones projectsyndicate
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Strong_Retest_Zones_Projectsyndicate: how it marks liquidity zones, best settings for entries, and whether it’s worth your time."

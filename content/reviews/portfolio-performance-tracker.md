@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/portfolio-performance-tracker.png"
 tags:
   - portfolio performance tracker
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Portfolio_Performance_Tracker review: settings, strategy, and how to use it for tracking multi-asset returns. See if it fits your workflow."

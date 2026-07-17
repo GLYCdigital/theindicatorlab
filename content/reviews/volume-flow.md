@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-flow.png"
 tags:
   - volume flow
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume Flow tracks smart money by combining volume with price action. Here's my honest review after 100+ trades with settings and strategy."

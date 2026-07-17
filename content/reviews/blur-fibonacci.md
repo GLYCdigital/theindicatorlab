@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/blur-fibonacci.png"
 tags:
   - blur fibonacci
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Blur_Fibonacci auto-draws Fibonacci retracements with dynamic levels and a smoothing algorithm. Honest review, settings, and strategy for real traders."

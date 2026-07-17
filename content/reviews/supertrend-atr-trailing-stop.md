@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/supertrend-atr-trailing-stop.png"
 tags:
   - supertrend atr trailing stop
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Honest Supertrend ATR Trailing Stop review after 288 trades on AAPL. Settings, backtest stats, entry/exit rules, and who it actually works for."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-bubbles.png"
 tags:
   - volume bubbles
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume Bubbles review: hands-on test of TradingView's volume visualization. Best settings, entry/exit strategies, and honest pros/cons for day traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/footprint-imbalance.png"
 tags:
   - footprint imbalance
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Footprint_Imbalance reveals order-flow strength by comparing bid vs ask volume. Honest review of settings, real entries, and who should skip it."

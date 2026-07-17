@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cvd-profiles.png"
 tags:
   - cvd profiles
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Cvd_Profiles tracks cumulative volume delta across price levels to reveal hidden supply/demand zones. A niche tool for scalpers and order-flow traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/smart-money-stop-hunt-detector-algo-aakash.png"
 tags:
   - smart money stop hunt detector algo aakash
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Detects smart money stop hunts using liquidity sweeps and order blocks. Best on 15m-1H for forex and crypto. 4/5."

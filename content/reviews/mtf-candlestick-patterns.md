@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-candlestick-patterns.png"
 tags:
   - mtf candlestick patterns
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe candlestick pattern scanner that auto-detects 20+ patterns across higher timeframes. Saves screen space but lags on lower TFs."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/center-of-gravity-cog-oscillator.png"
 tags:
   - center of gravity cog oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Center of Gravity (COG) Oscillator on TradingView. Settings, entry/exit rules, pros/cons, and if it beats RSI or MACD."

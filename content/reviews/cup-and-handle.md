@@ -1,3 +1,13 @@
+---
+title: "Cup And Handle Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/cup-and-handle.png"
+rating: 4
+description: "Honest Cup_And_Handle indicator review: tested settings, entry/exit rules, pros/cons, and who should use this pattern scanner."
+---
+
 **description:** "Honest Cup_And_Handle indicator review: tested settings, entry/exit rules, pros/cons, and who should use this pattern scanner."
 
 ---

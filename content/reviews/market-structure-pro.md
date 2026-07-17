@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-structure-pro.png"
 tags:
   - market structure pro
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market_Structure_Pro auto-labels swing highs/lows and break of structure on any timeframe. See settings, backtest results, and honest pros/cons here."

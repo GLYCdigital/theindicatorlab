@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rsi-macd-confluence.png"
 tags:
   - rsi macd confluence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "RSI MACD Confluence combines two classic oscillators into one clean panel. Cuts signal noise by 40% but isn't a holy grail. Read my honest review."

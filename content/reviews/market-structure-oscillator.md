@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-structure-oscillator.png"
 tags:
   - market structure oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market_Structure_Oscillator review: combines swing analysis with oscillator logic for cleaner trend entries. Settings, pros/cons, and strategy inside."

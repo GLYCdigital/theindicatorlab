@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/delivery-shift-cisd-viprasol.png"
 tags:
   - delivery shift cisd viprasol
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A volume-weighted momentum shift indicator for intraday and swing trading. Offers clear shift detection but needs tweaking for range-bound markets."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-oscillator.png"
 tags:
   - stochastic oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Stochastic_Oscillator review: settings, overbought/oversold levels, divergence strategies, and how to avoid false signals. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/schiff-pitchfork.png"
 tags:
   - schiff pitchfork
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Schiff Pitchfork review: honest breakdown of settings, strategy, and how to use it for trend channel entries and reversals."

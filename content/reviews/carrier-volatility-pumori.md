@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/carrier-volatility-pumori.png"
 tags:
   - carrier volatility pumori
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Carrier Volatility Pumori review: A momentum-based volatility indicator. Settings, strategy, pros/cons, and better alternatives. Not for beginners."

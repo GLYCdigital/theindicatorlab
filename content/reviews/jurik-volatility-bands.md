@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/jurik-volatility-bands.png"
 tags:
   - jurik volatility bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Jurik Volatility Bands smooth price action with unique JMA filtering. We test settings, entry/exit rules, pros, cons, and better alternatives."

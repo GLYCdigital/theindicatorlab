@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/standard-deviation-indicator.png"
 tags:
   - standard deviation indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Standard_Deviation_Indicator on TradingView. See how to use it for volatility-based entries, exits, and risk management."

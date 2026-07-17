@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-time-zones.png"
 tags:
   - fibonacci time zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fibonacci_Time Zones projects future reversal dates based on past swing highs/lows. A solid time tool for trend traders, but not a standalone edge."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-pivot-points-knn-ss.png"
 tags:
   - machine learning pivot points knn ss
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Machine Learning Pivot Points KNN SS. Tested on real charts. Best settings, entry strategy, pros/cons, and better alternatives."

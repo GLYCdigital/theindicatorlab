@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/guppy-multiple-moving-average.png"
 tags:
   - guppy multiple moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Guppy Multiple Moving Average on TradingView: settings, strategy, and real trades. A 4/5 review from a trader who's used it for trend shifts."

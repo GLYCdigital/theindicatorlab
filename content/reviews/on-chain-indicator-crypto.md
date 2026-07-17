@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/on-chain-indicator-crypto.png"
 tags:
   - on chain indicator crypto
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "On_Chain_Indicator_Crypto brings exchange inflow/outflow, MVRV, and NUPL into TradingView. Honest review with settings, strategy, and pros/cons for crypto traders."

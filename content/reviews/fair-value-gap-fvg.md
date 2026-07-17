@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fair-value-gap-fvg.png"
 tags:
   - fair value gap fvg
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fair_Value_Gap_Fvg automatically detects ICT fair value gaps on any timeframe. Clear zones for reversal or continuation setups. Worth adding to your ICT toolkit."

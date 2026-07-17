@@ -1,3 +1,13 @@
+---
+title: "Fibonacci Fan Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/fibonacci-fan.png"
+rating: 4
+description: "** Honest Fibonacci_Fan review. See how to set it up, trade with it, and whether it's worth installing on TradingView."
+---
+
 **description:** Honest Fibonacci_Fan review. See how to set it up, trade with it, and whether it's worth installing on TradingView.
 
 ---

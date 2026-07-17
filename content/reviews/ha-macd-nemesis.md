@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ha-macd-nemesis.png"
 tags:
   - ha macd nemesis
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Heiken Ashi smoothing meets MACD crossovers with adaptive ATR stops. No lag, but not a holy grail. Honest 4-star review."

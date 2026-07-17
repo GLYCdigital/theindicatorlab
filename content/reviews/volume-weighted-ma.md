@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-weighted-ma.png"
 tags:
   - volume weighted ma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume_Weighted_Ma review: A volume-weighted moving average for better trend filtering. Settings, entry/exit rules, pros/cons, and how it compares to VWAP."

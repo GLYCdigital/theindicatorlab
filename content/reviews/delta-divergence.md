@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/delta-divergence.png"
 tags:
   - delta divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "A detailed review of Delta Divergence on TradingView. We test its settings, strategy, real pros and cons, and compare it to better divergence indicators."

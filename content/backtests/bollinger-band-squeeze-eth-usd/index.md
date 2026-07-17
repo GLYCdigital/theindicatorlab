@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+10.2%"
+      "value": "+12.2%"
     },
     {
       "label": "CAGR",
-      "value": "2.0%"
+      "value": "2.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.07"
+      "value": "0.08"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+80.8%",
+      "return_pct": "+84.7%",
       "trades": "7",
       "win_rate_pct": "20.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-40.4%",
+      "return_pct": "-39.3%",
       "trades": "13",
       "win_rate_pct": "20.7%"
     }
@@ -109,9 +109,9 @@ On ETH, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-12 → 2026-07-10), the Bollinger Band Squeeze delivered a **+10.2% total return** on ETH-USD, compounding at **2.0% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Bollinger Band Squeeze delivered a **+12.2% total return** on ETH-USD, compounding at **2.3% annually**. 
 
-At **0.07**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.08**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.07 | ❌ Weak |
+| Sharpe Ratio | 0.08 | ❌ Weak |
 | Max Drawdown | 44.0% | ⚠️ Significant |
 | Win Rate | 20.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.02 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.02** tells the real story: when the BollingerBands fire
 
 ## Does the Bollinger Band Squeeze Work on ETH?
 
-The bollinger band squeeze struggled to generate meaningful edge on ETH over this 5-year period. With a **0.07 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The bollinger band squeeze struggled to generate meaningful edge on ETH over this 5-year period. With a **0.08 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -137,6 +137,18 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on ETH-USD](/backtests/bollinger-band-squeeze-eth-usd-trades.png)

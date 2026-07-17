@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cypher-pattern.png"
 tags:
   - cypher pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Cypher_Pattern review: a harmonic pattern finder that auto-draws Cypher structures. Settings, entry tactics, and why it’s a solid 4/5 for swing traders."

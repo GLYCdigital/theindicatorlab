@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rajiv-alpha-fusion.png"
 tags:
   - rajiv alpha fusion
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe fusion of volume, momentum, and volatility. Decent for catching trend shifts, but not a holy grail. See settings and use cases."

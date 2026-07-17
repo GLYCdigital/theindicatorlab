@@ -1,14 +1,14 @@
 ---
 {
   "title": "SuperTrend \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-20.8%"
+      "value": "-20.7%"
     },
     {
       "label": "CAGR",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.4%",
+      "return_pct": "+9.6%",
       "trades": "26",
       "win_rate_pct": "41.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+11.0%",
+      "return_pct": "+11.1%",
       "trades": "26",
       "win_rate_pct": "41.8%"
     }
@@ -109,7 +109,7 @@ On SPY, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-07-12 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **-20.8% total return** on SPY, compounding at **-4.5% annually**. 
+Over five years (2021-07-14 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **-20.7% total return** on SPY, compounding at **-4.5% annually**. 
 
 At **-0.50**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,18 @@ Our take: skip it on SPY unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Stocks on Moomoo — Commission-Free**
+
+Access US markets with zero commissions and professional-grade charting tools.
+
+👉 [Open Moomoo Account](https://j.moomoo.com/0BpZwx)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on SPY](/backtests/supertrend-atr-trailing-stop-spy-trades.png)

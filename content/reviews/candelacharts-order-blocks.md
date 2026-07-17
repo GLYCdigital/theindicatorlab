@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/candelacharts-order-blocks.png"
 tags:
   - candelacharts order blocks
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Candelacharts_Order_Blocks: a solid order-block detector with Mitigation, Breaker, and Reversal zones. Settings, strategy, pros/cons, and better alternatives."

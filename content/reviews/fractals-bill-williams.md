@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractals-bill-williams.png"
 tags:
   - fractals bill williams
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bill Williams Fractals: a proven reversal tool. Tested settings, real entry/exit rules, and honest pros/cons for trend traders. 4/5 stars."

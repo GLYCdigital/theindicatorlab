@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-momentum-energy-zurvaneg.png"
 tags:
   - market momentum energy zurvaneg
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Market_Momentum_Energy_Zurvaneg: a momentum-energy hybrid indicator for spotting trend exhaustion and reversals. Settings, signals, and who it's for."

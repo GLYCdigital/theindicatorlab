@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/quartile-footprint-bubbles-maxmaserati.png"
 tags:
   - quartile footprint bubbles maxmaserati
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bubble-based footprint charting for volume profile analysis. Shows quartile imbalances and aggressive order flow on any timeframe."

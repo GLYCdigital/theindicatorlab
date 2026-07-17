@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/structure-decision-engine-algopoint.png"
 tags:
   - structure decision engine algopoint
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Algopoint's Structure Decision Engine auto-detects market structure shifts, break of structure (BOS), and change of character (CHoCH). A solid 4/5 tool for ICT/SMC traders."

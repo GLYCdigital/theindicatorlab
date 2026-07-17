@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-mtf.png"
 tags:
   - bollinger bands mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Bollinger Bands with automatic higher timeframe signals. A smart twist on a classic tool for trend and volatility analysis."

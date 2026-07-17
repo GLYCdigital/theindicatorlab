@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cci-with-ob-os-levels.png"
 tags:
   - cci with ob os levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "CCI with OB/OS Levels adds clear overbought/oversold zones and a centerline cross. Best for momentum scalping and trend reversals. No repaint."

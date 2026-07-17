@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/crab-pattern.png"
 tags:
   - crab pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Crab_Pattern auto-detects the harmonic Crab pattern on TradingView. Review covers settings, entry/exit rules, pros/cons, and real trader FAQ."

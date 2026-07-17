@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/nova-reversal-bands.png"
 tags:
   - nova reversal bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Nova Reversal Bands are a volatility-based support/resistance overlay. Decent for mean reversion but not a standalone reversal system."

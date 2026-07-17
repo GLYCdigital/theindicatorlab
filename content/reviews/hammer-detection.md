@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hammer-detection.png"
 tags:
   - hammer detection
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Hammer_Detection review: pinpoints bullish reversal hammers with adjustable sensitivity. Settings, entry strategy, pros, cons, and better alternatives for day traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/qqe-divergence.png"
 tags:
   - qqe divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest QQE Divergence review. I tested the indicator for weeks. See settings, pros/cons, and how to trade bull/bear divergences without the fluff."

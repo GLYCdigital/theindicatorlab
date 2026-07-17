@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/qqe-quantitative-qualitative-estimation.png"
 tags:
   - qqe quantitative qualitative estimation
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "QQE combines RSI smoothing with ATR-based bands for trend and momentum. Helps spot overbought/oversold and trend shifts. Solid 4/5."

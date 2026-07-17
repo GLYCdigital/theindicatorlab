@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chande-momentum-oscillator-divergence.png"
 tags:
   - chande momentum oscillator divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Chande Momentum Oscillator Divergence review: settings, hidden divergences, entry strategy, pros/cons. Honest 4/5 rating from a real trader."

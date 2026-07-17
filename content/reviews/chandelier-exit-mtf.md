@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chandelier-exit-mtf.png"
 tags:
   - chandelier exit mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Chandelier Exit for trailing stops. Tests well on trends, but laggy in choppy markets. Best on 1H-4H with ATR multiplier 3."

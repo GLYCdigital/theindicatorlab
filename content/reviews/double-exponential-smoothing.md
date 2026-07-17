@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/double-exponential-smoothing.png"
 tags:
   - double exponential smoothing
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Double_Exponential_Smoothing smooths price data with less lag than simple moving averages. Ideal for trend confirmation in volatile markets."

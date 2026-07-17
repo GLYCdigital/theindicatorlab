@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cluster-analysis.png"
 tags:
   - cluster analysis
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Cluster_Analysis groups price action into clusters, revealing hidden support/resistance and momentum shifts. A solid 4/5 for swing traders."

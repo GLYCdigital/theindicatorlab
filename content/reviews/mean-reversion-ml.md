@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mean-reversion-ml.png"
 tags:
   - mean reversion ml
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ML-driven mean reversion indicator with adaptive thresholds. Good for choppy markets, but requires patience and a filter."

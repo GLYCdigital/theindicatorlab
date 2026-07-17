@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/klinger-volume-oscillator.png"
 tags:
   - klinger volume oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Klinger Volume Oscillator review: settings that work, entry/exit strategies, and a direct comparison with OBV and Volume Profile."

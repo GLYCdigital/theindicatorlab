@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-structure-volume-profiles-kioseff-trading.png"
 tags:
   - market structure volume profiles kioseff trading
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Market Structure Volume Profiles by Kioseff Trading. Combines market structure with volume profile for high-conviction entries. Settings, strategy, pros/cons, and alternatives."

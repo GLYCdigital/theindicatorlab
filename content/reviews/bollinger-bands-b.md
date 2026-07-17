@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-b.png"
 tags:
   - bollinger bands b
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bollinger_Bands_B review by a TradingView pro. See how it filters noise, find best settings, and get honest pros/cons—no fluff."

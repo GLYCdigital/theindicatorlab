@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/breakout-scanner.png"
 tags:
   - breakout scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Real trader tests Breakout Scanner on TradingView: see how it flags key support/resistance breaks, noise filters, and best settings for scalping vs swing trading."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-cloud.png"
 tags:
   - ichimoku cloud
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Honest Ichimoku Cloud review: settings, strategy, and backtest results. A powerful all-in-one indicator, but noisy without strict filters. Not for beginners."

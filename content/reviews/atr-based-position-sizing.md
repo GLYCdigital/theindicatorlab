@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-based-position-sizing.png"
 tags:
   - atr based position sizing
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest ATR-based position sizing review. Tested on real charts. Best settings, entry/exit logic, pros/cons, and who it's for. 4/5 stars."

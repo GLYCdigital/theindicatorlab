@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-expansion.png"
 tags:
   - fibonacci expansion
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Fibonacci_Expansion for TradingView. I tested its auto-retracement levels, multi-timeframe targets, and exit strategies. See if it works."

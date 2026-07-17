@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pullback-sniper-method.png"
 tags:
   - pullback sniper method
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Pullback Sniper Method review: a trend-following pullback entry tool. Find out if it delivers sniper accuracy or just noise. Settings & strategy tips inside."

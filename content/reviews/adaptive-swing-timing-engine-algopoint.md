@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adaptive-swing-timing-engine-algopoint.png"
 tags:
   - adaptive swing timing engine algopoint
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A dynamic swing-point detector that filters noise and catches reversals. Adaptive to volatility, it’s great for scalping and swing trading but lags on fast moves."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adaptive-dual-engine-strategy-momentum-mean-reversion-bt.png"
 tags:
   - adaptive dual engine strategy momentum mean reversion bt
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive Dual Engine Strategy combines momentum and mean reversion without conflicting signals. See settings, entry rules, and honest pros and cons."

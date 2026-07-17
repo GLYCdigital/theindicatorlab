@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/a-l-p-h-a-x-surge.png"
 tags:
   - a l p h a x surge
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A_L_P_H_A_X_Surge identifies explosive momentum shifts using volume and volatility. Honest review with settings, strategy, and real trade logic."

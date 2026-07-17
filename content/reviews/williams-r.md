@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/williams-r.png"
 tags:
   - williams r
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Williams %R review. Covers settings, divergence setups, oversold/overbought levels, and how to avoid false signals. 4/5 stars."

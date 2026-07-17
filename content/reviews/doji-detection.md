@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/doji-detection.png"
 tags:
   - doji detection
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Doji_Detection finds doji candles automatically with configurable body size and wick ratios. Solid for reversal spotting, but not a standalone system."

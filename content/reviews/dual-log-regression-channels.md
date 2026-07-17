@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dual-log-regression-channels.png"
 tags:
   - dual log regression channels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Dual_Log_Regression_Channels review: a logarithmic regression channel pair for trend and mean reversion. Settings, entry rules, and honest pros/cons."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elders-thermometer.png"
 tags:
   - elders thermometer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Elder's Thermometer measures market temperature via price velocity. Read our honest review with settings, signals, and strategy tips."

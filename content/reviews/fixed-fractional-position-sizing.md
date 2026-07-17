@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fixed-fractional-position-sizing.png"
 tags:
   - fixed fractional position sizing
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Fixed_Fractional_Position_Sizing review. See how it calculates risk-based position size, best settings for futures/forex, and why it’s worth 4 stars."

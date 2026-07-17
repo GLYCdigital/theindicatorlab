@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tomukas-scale-in.png"
 tags:
   - tomukas scale in
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Scale into positions systematically with Tomukas_Scale_In. Honest review of its entry logic, risk management, and best settings for trend-following traders."

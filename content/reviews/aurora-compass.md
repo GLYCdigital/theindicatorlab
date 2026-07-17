@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/aurora-compass.png"
 tags:
   - aurora compass
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Aurora_Compass is a multi-timeframe trend and momentum indicator that uses polar projection to map price direction. Read our hands-on review."

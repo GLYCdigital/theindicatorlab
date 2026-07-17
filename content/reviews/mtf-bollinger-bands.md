@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-bollinger-bands.png"
 tags:
   - mtf bollinger bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Bollinger Bands that plot higher timeframe bands on your current chart. Useful for spotting hidden support/resistance and trend shifts."

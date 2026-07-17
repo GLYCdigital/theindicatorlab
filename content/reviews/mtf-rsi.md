@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-rsi.png"
 tags:
   - mtf rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Mtf_Rsi review: multi-timeframe RSI for trend confirmation. Tested settings, entry rules, pros/cons, and better alternatives. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strategy-performance-dashboard.png"
 tags:
   - strategy performance dashboard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A no-nonsense dashboard that tracks win rate, profit factor, and drawdown in real time. Best for backtesting & live strategy monitoring."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/monte-carlo-ct-ss.png"
 tags:
   - monte carlo ct ss
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Monte Carlo CT SS review. See how this unique indicator simulates thousands of paths to gauge trend strength and risk. Settings, entry/exit tips, and who it's for."

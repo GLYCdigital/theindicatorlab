@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bid-ask-volume.png"
 tags:
   - bid ask volume
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Real-time bid vs ask volume to spot hidden buying/selling pressure. Supports multiple timeframes and cumulative delta. 4/5 stars."

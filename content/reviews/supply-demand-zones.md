@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/supply-demand-zones.png"
 tags:
   - supply demand zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Supply Demand Zones review: how it plots key levels, best settings, entry/exit tactics, and who should use it. No fluff."

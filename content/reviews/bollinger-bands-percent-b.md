@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-percent-b.png"
 tags:
   - bollinger bands percent b
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bollinger Bands %B indicator review: how to use it for overbought/oversold, mean reversion, and trend strength. Honest pros, cons, and settings."

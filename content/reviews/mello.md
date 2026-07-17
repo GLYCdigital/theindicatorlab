@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mello.png"
 tags:
   - mello
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Mello is a multi-timeframe momentum oscillator. Here's my honest take on its settings, best use cases, and whether it's worth adding to your chart."

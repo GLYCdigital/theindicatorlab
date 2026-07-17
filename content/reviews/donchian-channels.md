@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/donchian-channels.png"
 tags:
   - donchian channels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Donchian Channels: a 20-day high/low breakout system. Works in strong trends, but choppy markets will destroy you. Honest settings & strategy."

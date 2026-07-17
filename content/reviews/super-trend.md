@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/super-trend.png"
 tags:
   - super trend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Super Trend indicator review. Tested settings for trend following, entries, exits, and why it’s not a magic bullet. 4/5 stars."

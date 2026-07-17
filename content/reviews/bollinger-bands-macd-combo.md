@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-macd-combo.png"
 tags:
   - bollinger bands macd combo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Combines Bollinger Bands and MACD for momentum-confirmed reversals. 4/5 stars. Best settings, entry tactics, and honest pros/cons."

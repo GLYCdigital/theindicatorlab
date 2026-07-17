@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chande-momentum.png"
 tags:
   - chande momentum
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Chande Momentum review: Honest pros, cons, settings, and a complete strategy guide for entries and exits. See how it compares to RSI and ROC."

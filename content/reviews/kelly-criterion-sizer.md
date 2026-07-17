@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kelly-criterion-sizer.png"
 tags:
   - kelly criterion sizer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Kelly_Criterion_Sizer calculates optimal position size using win rate & risk/reward. Honest review with settings, pros/cons, and alternatives."

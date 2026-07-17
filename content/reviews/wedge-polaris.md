@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/wedge-polaris.png"
 tags:
   - wedge polaris
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Wedge_Polaris catches wedge breakouts before they happen. I test its settings, entry rules, and real chart performance. Honest 4/5."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-fibonacci-expansion-zones.png"
 tags:
   - atr fibonacci expansion zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "ATR Fibonacci Expansion Zones combines volatility with Fibonacci extensions. A decent tool for trend targets, but not a standalone system."

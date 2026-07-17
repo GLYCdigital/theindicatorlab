@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/risk-reward-calculator.png"
 tags:
   - risk reward calculator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Real-time risk-reward ratio calculator for TradingView. Automatically plots entry, stop loss, and take profit levels. No more mental math."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/holt-winter-trend-forecast.png"
 tags:
   - holt winter trend forecast
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Holt-Winter Trend Forecast: a triple exponential smoothing tool that predicts price direction and cycles. Read our honest review, settings, and strategy."

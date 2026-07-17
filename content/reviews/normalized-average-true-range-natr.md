@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/normalized-average-true-range-natr.png"
 tags:
   - normalized average true range natr
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "NATR offers volatility comparison across assets. The Normalized Average True Range indicator turns raw ATR into a percentage, making it a cleaner tool for scanning and position sizing."

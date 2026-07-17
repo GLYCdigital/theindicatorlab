@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-supersmoother.png"
 tags:
   - ehlers supersmoother
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Supersmoother review: a lag-free filter that smooths price noise without distorting signals. Better than a moving average for trend traders."

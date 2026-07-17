@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/candlestick-patterns.png"
 tags:
   - candlestick patterns
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Candlestick_Patterns on TradingView. Covers settings, entry/exit strategy, pros & cons, and who it's really for. 4/5 stars."

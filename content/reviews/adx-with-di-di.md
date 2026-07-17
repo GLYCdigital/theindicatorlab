@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adx-with-di-di.png"
 tags:
   - adx with di di
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adx_With_Di_Di review: a clean ADX + DI+/DI- combo with customizable smoothing. Best settings, entry signals, and honest pros/cons for trending markets."

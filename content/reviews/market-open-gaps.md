@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-open-gaps.png"
 tags:
   - market open gaps
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Market_Open_Gaps indicator: tracks price gaps at market open. Best settings, entry/exit strategies, and pros/cons for gap traders."

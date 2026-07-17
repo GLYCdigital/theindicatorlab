@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/awesome-oscillator-bill-williams.png"
 tags:
   - awesome oscillator bill williams
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bill Williams' Awesome Oscillator measures momentum with a simple histogram. We test settings, zero-line cross strategy, and saucer patterns."

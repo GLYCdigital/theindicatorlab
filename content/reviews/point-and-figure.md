@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/point-and-figure.png"
 tags:
   - point and figure
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Point_And_Figure review: a clean P&F implementation for TradingView. Covers box size, reversal settings, signal generation, and why it’s a solid 4-star choice for trend traders."

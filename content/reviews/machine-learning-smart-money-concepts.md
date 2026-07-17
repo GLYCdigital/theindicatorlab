@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-smart-money-concepts.png"
 tags:
   - machine learning smart money concepts
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ML-powered SMC indicator that detects order blocks, liquidity grabs, and FVG zones. 4/5 stars. Honest review with settings and strategy tips."

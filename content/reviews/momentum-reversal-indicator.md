@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/momentum-reversal-indicator.png"
 tags:
   - momentum reversal indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Momentum_Reversal_Indicator. It identifies trend exhaustion and reversal zones with clear signals. Works best on 1H-4H. No repaint. Read before you install."

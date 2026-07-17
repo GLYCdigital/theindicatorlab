@@ -1,14 +1,14 @@
 ---
 {
   "title": "BollingerBands \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+45.0%"
+      "value": "+44.9%"
     },
     {
       "label": "CAGR",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.0%",
+      "return_pct": "+9.8%",
       "trades": "7",
       "win_rate_pct": "30.4%"
     },
@@ -109,7 +109,7 @@ On QQQ, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-12 → 2026-07-10), the TTM Squeeze Pro delivered a **+45.0% total return** on QQQ, compounding at **7.7% annually**. 
+Over five years (2021-07-14 → 2026-07-10), the TTM Squeeze Pro delivered a **+44.9% total return** on QQQ, compounding at **7.7% annually**. 
 
 At **0.36**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -146,6 +146,18 @@ Our take: usable as a confirmation tool, but not as a standalone system on QQQ. 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Stocks on Moomoo — Commission-Free**
+
+Access US markets with zero commissions and professional-grade charting tools.
+
+👉 [Open Moomoo Account](https://j.moomoo.com/0BpZwx)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on QQQ](/backtests/ttm-squeeze-pro-qqq-trades.png)

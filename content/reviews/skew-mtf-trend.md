@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/skew-mtf-trend.png"
 tags:
   - skew mtf trend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe skew-based trend indicator. Real bearish/bullish divergences, not lagging crossovers. Best used on 1H-4H with 15M confirmation."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/htf-volume-spike-imbalance-projection.png"
 tags:
   - htf volume spike imbalance projection
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tracks higher timeframe volume spikes to project directional bias and imbalance zones. Best for swing traders who want liquidity-based entry triggers."

@@ -1,3 +1,13 @@
+---
+title: "Quantitative Estimation Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/quantitative-estimation.png"
+rating: 4
+description: "A transparent volume-based oscillator that estimates buying vs. selling pressure. Practical for divergence trading and volume confirmation. 4/5 stars."
+---
+
 **description:** "A transparent volume-based oscillator that estimates buying vs. selling pressure. Practical for divergence trading and volume confirmation. 4/5 stars."
 
 ---

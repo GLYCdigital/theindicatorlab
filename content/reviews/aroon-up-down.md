@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/aroon-up-down.png"
 tags:
   - aroon up down
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Aroon_Up_Down simplifies trend detection by plotting separate Aroon Up/Down lines with clear cross signals. 4/5 stars for clarity and timing."

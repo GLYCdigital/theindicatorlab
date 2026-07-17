@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-ichimoku.png"
 tags:
   - mtf ichimoku
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Ichimoku that plots higher timeframe clouds on your active chart. Clean, no lag, and actually useful for trend context."

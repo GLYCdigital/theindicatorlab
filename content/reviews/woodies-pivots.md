@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/woodies-pivots.png"
 tags:
   - woodies pivots
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Woodies_Pivots plots pivot highs/lows with dynamic zones and alerts. Great for scalping and intraday reversals, but not for trend-following. 4/5."

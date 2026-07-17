@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chart-patterns.png"
 tags:
   - chart patterns
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Chart_Patterns indicator review: detects 50+ patterns, settings, and real trade setups. See how it performs on live charts and whether it's worth adding."

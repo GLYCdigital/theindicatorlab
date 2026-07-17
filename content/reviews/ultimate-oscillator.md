@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ultimate-oscillator.png"
 tags:
   - ultimate oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ultimate Oscillator review: settings, divergence strategies, and why it outperforms RSI and Stochastics for momentum trading."

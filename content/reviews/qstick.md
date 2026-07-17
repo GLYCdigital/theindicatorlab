@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/qstick.png"
 tags:
   - qstick
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Qstick measures buying vs selling pressure using open-close relationships. A clean volume-price oscillator for spotting trend shifts and momentum."

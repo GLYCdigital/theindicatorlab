@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave-oscillator.png"
 tags:
   - elliott wave oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An oscillator-based tool for spotting Elliott Wave patterns. Clear signals for wave 3 and 5 entries. Best on 1H-4H timeframes with default settings."

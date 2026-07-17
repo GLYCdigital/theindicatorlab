@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/sma-ribbon.png"
 tags:
   - sma ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Sma_Ribbon review. See how multiple SMAs stacked as a ribbon reveal trend strength and reversals. Best settings, entry rules, and real pros/cons."

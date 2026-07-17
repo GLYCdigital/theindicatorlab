@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/composite-index.png"
 tags:
   - composite index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Composite_Index is a multi-timeframe momentum indicator that combines RSI, MACD, and volume into one clean line. Here's my honest review with settings and strategy."

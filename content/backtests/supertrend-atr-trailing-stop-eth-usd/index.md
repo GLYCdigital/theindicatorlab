@@ -1,10 +1,10 @@
 ---
 {
   "title": "SuperTrend \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -12,7 +12,7 @@
     },
     {
       "label": "CAGR",
-      "value": "-14.5%"
+      "value": "-14.6%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "36.3%"
+      "value": "36.5%"
     },
     {
       "label": "Profit Factor",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+80.8%",
+      "return_pct": "+84.7%",
       "trades": "39",
-      "win_rate_pct": "36.3%"
+      "win_rate_pct": "36.5%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "87",
-      "win_rate_pct": "36.3%"
+      "win_rate_pct": "36.5%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "103",
-      "win_rate_pct": "36.3%"
+      "win_rate_pct": "36.5%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "93",
-      "win_rate_pct": "36.3%"
+      "win_rate_pct": "36.5%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "94",
-      "win_rate_pct": "36.3%"
+      "win_rate_pct": "36.5%"
     },
     {
       "year": "2026",
-      "return_pct": "-40.4%",
+      "return_pct": "-39.3%",
       "trades": "50",
-      "win_rate_pct": "36.3%"
+      "win_rate_pct": "36.5%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On ETH, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-12 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **-54.4% total return** on ETH-USD, compounding at **-14.5% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the SuperTrend + ATR Trailing Stop delivered a **-54.4% total return** on ETH-USD, compounding at **-14.6% annually**. 
 
 At **-0.58**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **75.0% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.58 | ❌ Weak |
 | Max Drawdown | 75.0% | ⚠️ Significant |
-| Win Rate | 36.3% | ❌ Low — relies on outsized wins |
+| Win Rate | 36.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.92 | ❌ Unprofitable |
 | Trades/Year | ~466 total | Active |
 
-The **profit factor of 0.92** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 36.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.92** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 36.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on ETH?
 
@@ -146,6 +146,18 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on ETH-USD](/backtests/supertrend-atr-trailing-stop-eth-usd-trades.png)

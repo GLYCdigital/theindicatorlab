@@ -1,3 +1,13 @@
+---
+title: "Moving Average Exp Envelope Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/moving-average-exp-envelope.png"
+rating: 4
+description: "Expert review of the Moving Average Exp Envelope indicator for TradingView. Honest settings, strategy tips, and real performance analysis. 4/5 stars."
+---
+
 **description:** "Expert review of the Moving Average Exp Envelope indicator for TradingView. Honest settings, strategy tips, and real performance analysis. 4/5 stars."
 
 ---

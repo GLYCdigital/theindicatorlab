@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave-count.png"
 tags:
   - elliott wave count
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A solid Elliott Wave auto-labeler for TradingView. Handles zigzags, flats, and extensions with decent accuracy. Not perfect, but saves hours of manual counting."

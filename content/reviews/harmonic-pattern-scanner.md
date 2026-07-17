@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/harmonic-pattern-scanner.png"
 tags:
   - harmonic pattern scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Real trader review of Harmonic_Pattern_Scanner. Covers settings, entry/exit rules, pros/cons, and who it actually works for. 4/5 stars."

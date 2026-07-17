@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/btc-asymmetric-quantile-model-cowen-2026.png"
 tags:
   - btc asymmetric quantile model cowen 2026
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bitcoin quantile model for macro regime detection. Quantifies asymmetric risk/reward zones using historical BTC cycles. Settings, strategy & honest verdict."

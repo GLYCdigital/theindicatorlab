@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-mesa-sine-wave.png"
 tags:
   - ehlers mesa sine wave
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Mesa_Sine_Wave review: a lag-reduced oscillator for trend timing. Best settings, entry/exit rules, pros/cons, and honest verdict for day traders."

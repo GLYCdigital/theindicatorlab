@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/anchored-vwap.png"
 tags:
   - anchored vwap
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Anchored VWAP review: key settings, entry/exit tips, and who it's really for. No fluff, just actionable trader insights."

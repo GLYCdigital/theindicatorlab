@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/momentum-rsi-for-loop-nal.png"
 tags:
   - momentum rsi for loop nal
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A multi-timeframe RSI momentum scanner that loops through bars. Good for catching divergences and trend exhaustion. Best on 1H+."

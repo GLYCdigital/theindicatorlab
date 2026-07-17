@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-points-fibonacci.png"
 tags:
   - pivot points fibonacci
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "A solid pivot point indicator with Fibonacci extensions for support/resistance. Works best on daily timeframe, but nothing revolutionary."

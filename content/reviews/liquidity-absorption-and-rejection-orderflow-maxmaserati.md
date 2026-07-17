@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-absorption-and-rejection-orderflow-maxmaserati.png"
 tags:
   - liquidity absorption and rejection orderflow maxmaserati
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Advanced orderflow tool that detects liquidity sweeps, absorptions, and rejections. Helps identify reversals and continuation patterns with real-time market structure analysis."

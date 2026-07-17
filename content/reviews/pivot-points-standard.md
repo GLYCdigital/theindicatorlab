@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-points-standard.png"
 tags:
   - pivot points standard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "A solid, no-frills pivot point calculator. Works as advertised, but nothing you can't draw yourself. Decent for quick S/R levels on daily charts."

@@ -1,3 +1,13 @@
+---
+title: "Atr Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/atr.png"
+rating: 4
+description: "**"
+---
+
 **Description:**  
 A complete, hands-on review of TradingView's built-in ATR indicator — how to set it up, use it for stops and targets, and why it deserves five stars.
 

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strong-fu-candle.png"
 tags:
   - strong fu candle
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Strong_Fu_Candle identifies high-probability reversal zones based on candlestick patterns and volatility. Tested on BTC, ES, and FX pairs. Settings, strategy, and honest verdict inside."

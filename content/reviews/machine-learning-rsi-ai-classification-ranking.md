@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-rsi-ai-classification-ranking.png"
 tags:
   - machine learning rsi ai classification ranking
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ML-powered RSI ranking that classifies overbought/oversold zones with AI. Not perfect, but beats traditional RSI in choppy markets."

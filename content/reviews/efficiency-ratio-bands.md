@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/efficiency-ratio-bands.png"
 tags:
   - efficiency ratio bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Efficiency_Ratio_Bands uses Kaufman's Efficiency Ratio to create dynamic volatility bands. Here's my honest review after testing it on multiple timeframes."

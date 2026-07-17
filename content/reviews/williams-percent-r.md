@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/williams-percent-r.png"
 tags:
   - williams percent r
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Williams %R identifies overbought/oversold levels and hidden momentum shifts. Honest review of settings, strategy, and when it actually works."

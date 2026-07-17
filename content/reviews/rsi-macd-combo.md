@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rsi-macd-combo.png"
 tags:
   - rsi macd combo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Combines RSI and MACD into one clean panel with divergence detection. Reliable for swing trades but not a holy grail. Review with settings."

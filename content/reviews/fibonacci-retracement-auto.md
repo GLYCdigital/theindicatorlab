@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-retracement-auto.png"
 tags:
   - fibonacci retracement auto
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Auto-draws Fibonacci retracement levels from swing highs and lows. Saves time, but needs manual confirmation. Best for trend traders on 1H+ timeframes."

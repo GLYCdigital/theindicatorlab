@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bat-pattern.png"
 tags:
   - bat pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bat_Pattern auto-detects harmonic Bat formations with precise Fibonacci ratios. Reliable for reversals but needs confirmation. 4/5."

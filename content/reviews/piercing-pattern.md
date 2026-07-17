@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/piercing-pattern.png"
 tags:
   - piercing pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Piercing_Pattern indicator. See how this bullish reversal tool flags entries, my tested settings, and whether it actually works."

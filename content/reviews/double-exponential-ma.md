@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/double-exponential-ma.png"
 tags:
   - double exponential ma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Double Exponential MA indicator on TradingView. Covers settings, strategy, pros/cons, and who it's actually for."

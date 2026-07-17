@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/exprlib.png"
 tags:
   - exprlib
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Exprlib is a versatile library indicator for Pine Script v5. It provides modular functions for array math, matrix ops, and custom signal generation. A solid toolkit for advanced indicator builders, but not for beginners."

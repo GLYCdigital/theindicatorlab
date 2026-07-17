@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-profile.png"
 tags:
   - market profile
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Hands-on Market_Profile review for TradingView. See how this volume-at-price tool reveals value areas, TPOs, and auction market structure. Best settings, entry rules, and honest pros vs cons."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/breaker-blocks.png"
 tags:
   - breaker blocks
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Breaker_Blocks review: a smart twist on supply/demand zones that catches trend reversals early. Settings, entry rules, and real trader pros/cons."

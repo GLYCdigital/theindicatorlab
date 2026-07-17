@@ -1,3 +1,13 @@
+---
+title: "Woodie Pivots Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/woodie-pivots.png"
+rating: 4
+description: "** Honest Woodie Pivots review: settings, strategy, and how to use it for intraday entries. Tested on real charts."
+---
+
 **description:** Honest Woodie Pivots review: settings, strategy, and how to use it for intraday entries. Tested on real charts.
 
 ---

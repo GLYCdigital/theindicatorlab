@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/inflation-adjusted-indicator.png"
 tags:
   - inflation adjusted indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adjusts price action for inflation using CPI data. Helps spot real vs. nominal trends. Works best on long-term charts. 4/5 stars."

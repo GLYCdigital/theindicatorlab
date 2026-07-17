@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/roc-divergence.png"
 tags:
   - roc divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Roc_Divergence review: tests settings, entry/exit rules, and real performance. A solid momentum divergence tool, but not a holy grail. 4/5."

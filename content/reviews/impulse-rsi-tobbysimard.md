@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/impulse-rsi-tobbysimard.png"
 tags:
   - impulse rsi tobbysimard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A custom RSI with smoothed momentum and divergence detection. Not revolutionary, but cleaner signals than default RSI. Good for trend-confirmation scalping."

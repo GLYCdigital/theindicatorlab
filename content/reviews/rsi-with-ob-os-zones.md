@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rsi-with-ob-os-zones.png"
 tags:
   - rsi with ob os zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Clean RSI with customizable overbought/overshoot zones. No lag, no fluff. Best for scalping pullbacks. 4/5 stars."

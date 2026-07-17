@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractional-ema-kalman-filter-d7.png"
 tags:
   - fractional ema kalman filter d7
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A hybrid trend-following tool that combines fractional EMA with Kalman filtering. Works best on 1H–4H timeframes for low-lag entries."

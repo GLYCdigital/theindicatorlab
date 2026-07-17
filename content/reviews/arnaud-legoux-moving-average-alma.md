@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/arnaud-legoux-moving-average-alma.png"
 tags:
   - arnaud legoux moving average alma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ALMA eliminates lag better than SMA/EMA while staying smoother than WMA. Best settings, pros/cons, and how to use it for entries and exits."

@@ -1,3 +1,13 @@
+---
+title: "Rsi Smoothed Trend Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/rsi-smoothed-trend.png"
+rating: 4
+description: "RSI_Smoothed_Trend review: settings, signals, and strategy for smoother RSI trend entries. Trader-tested with honest pros/cons."
+---
+
 **description:** "RSI_Smoothed_Trend review: settings, signals, and strategy for smoother RSI trend entries. Trader-tested with honest pros/cons."
 
 ---

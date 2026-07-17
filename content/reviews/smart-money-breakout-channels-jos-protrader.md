@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/smart-money-breakout-channels-jos-protrader.png"
 tags:
   - smart money breakout channels jos protrader
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tracks institutional liquidity zones and breakouts with multi-timeframe channels. A solid 4/5 tool for price action traders who want to follow smart money."

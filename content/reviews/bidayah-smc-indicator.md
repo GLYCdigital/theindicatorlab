@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bidayah-smc-indicator.png"
 tags:
   - bidayah smc indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Bidayah_Smc_Indicator: SMC logic with FVG, order blocks, and liquidity zones. Settings, strategy, pros/cons, and who it really suits."

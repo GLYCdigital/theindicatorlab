@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ai-source-switching-moving-average.png"
 tags:
   - ai source switching moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A data-savvy MA that auto-switches between price sources (close, high, low, etc.) based on volatility. Not magic, but smartly adaptive."

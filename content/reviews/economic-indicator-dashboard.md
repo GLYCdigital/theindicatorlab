@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/economic-indicator-dashboard.png"
 tags:
   - economic indicator dashboard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A TradingView dashboard that streams real-time economic data (GDP, CPI, unemployment) directly on your chart. Honest review, settings, and strategy."

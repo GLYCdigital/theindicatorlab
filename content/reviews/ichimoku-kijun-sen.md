@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-kijun-sen.png"
 tags:
   - ichimoku kijun sen
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ichimoku_Kijun_Sen review: the Kijun Sen line as a standalone trend filter. We test settings, entry/exit rules, and whether it beats the full Ichimoku system."

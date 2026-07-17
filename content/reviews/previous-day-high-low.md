@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/previous-day-high-low.png"
 tags:
   - previous day high low
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A no-fuss indicator that plots yesterday’s high, low, and close. Clean, customizable, and perfect for S/R traders who hate clutter."

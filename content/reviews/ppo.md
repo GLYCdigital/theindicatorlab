@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ppo.png"
 tags:
   - ppo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ppo review: settings, strategy, and when it actually works. A solid momentum oscillator, but not a holy grail."

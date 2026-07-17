@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gap-fill-tracker.png"
 tags:
   - gap fill tracker
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Gap_Fill_Tracker: how it marks gap levels, fills, and why it’s useful for mean-reversion and breakout traders."

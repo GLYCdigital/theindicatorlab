@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/double-top-bottom.png"
 tags:
   - double top bottom
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, no-nonsense double top/bottom pattern detector. Automates spotting these classic reversal patterns with adjustable sensitivity. Solid 4/5."

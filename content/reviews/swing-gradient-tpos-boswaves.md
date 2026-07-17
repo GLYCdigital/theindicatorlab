@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/swing-gradient-tpos-boswaves.png"
 tags:
   - swing gradient tpos boswaves
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Swing_Gradient_Tpos_Boswaves combines gradient trend strength, TPO market profile zones, and BoS waves for multi-timeframe swing analysis. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chandelier-exit-long-short.png"
 tags:
   - chandelier exit long short
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Chandelier_Exit_Long_Short review: a trailing stop based on ATR. Best settings, entry/exit signals, and honest pros & cons for trend traders."

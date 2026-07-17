@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/custom-metric-builder.png"
 tags:
   - custom metric builder
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Build your own custom metrics from any indicator or price data. A powerful tool for advanced traders, but requires scripting know-how. Not for beginners."

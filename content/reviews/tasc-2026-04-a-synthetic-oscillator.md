@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tasc-2026-04-a-synthetic-oscillator.png"
 tags:
   - tasc 2026 04 a synthetic oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A unique oscillator that synthesizes price, volume, and momentum into a single overbought/oversold reading. Best for range-bound markets and divergence spotting."

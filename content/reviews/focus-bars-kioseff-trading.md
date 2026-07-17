@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/focus-bars-kioseff-trading.png"
 tags:
   - focus bars kioseff trading
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Focus Bars Kioseff Trading highlights key price action bars to filter noise. Read our honest review with settings, pros/cons, and how to use it."

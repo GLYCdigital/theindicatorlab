@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volatility-stop.png"
 tags:
   - volatility stop
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Volatility Stop review: a trend-trailing stop based on ATR. Decent for swing trades, but easily faked on low timeframe noise. Settings and strategy inside."

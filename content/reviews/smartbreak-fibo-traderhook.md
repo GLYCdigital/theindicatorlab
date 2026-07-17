@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/smartbreak-fibo-traderhook.png"
 tags:
   - smartbreak fibo traderhook
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Smartbreak_Fibo_Traderhook combines Fibonacci retracement with breakout detection for precise entries. I tested it on BTC, EURUSD, and AAPL. Here's my honest take."

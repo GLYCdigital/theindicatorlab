@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/order-blocks.png"
 tags:
   - order blocks
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Order Blocks indicator review. Real settings, entry tactics, and whether it beats manual SMC zones. Tested on crypto, forex, and indices."

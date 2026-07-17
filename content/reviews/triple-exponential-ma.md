@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/triple-exponential-ma.png"
 tags:
   - triple exponential ma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "T3 MA review: reduces lag vs. standard moving averages. Settings for scalping & swing trading. Honest pros, cons, and alternatives."

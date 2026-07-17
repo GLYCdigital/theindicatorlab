@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gs-volcano-rsi-liquidity-thermal-map-bit2billions.png"
 tags:
   - gs volcano rsi liquidity thermal map bit2billions
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe RSI with liquidity zones and thermal mapping. A solid 4/5 for trend exhaustion and reversal plays. Not for scalpers."

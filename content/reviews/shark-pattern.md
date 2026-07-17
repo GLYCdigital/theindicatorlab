@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/shark-pattern.png"
 tags:
   - shark pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Shark_Pattern review. Tested on real charts. Covers settings, entry/exit tricks, and who should skip this harmonic pattern tool."

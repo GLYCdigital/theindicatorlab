@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/automatic-support-resistance.png"
 tags:
   - automatic support resistance
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automatic_Support_Resistance draws clean S/R levels using pivot points. Settings, backtest results, entry/exit tips, and honest pros vs cons."

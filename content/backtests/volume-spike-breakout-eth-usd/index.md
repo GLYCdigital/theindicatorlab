@@ -1,7 +1,7 @@
 ---
 {
   "title": "Volume \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
   "period": "2021-07-12 \u2192 2026-07-10",
@@ -137,6 +137,18 @@ Our take: usable as a confirmation tool, but not as a standalone system on ETH. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on ETH-USD](/backtests/volume-spike-breakout-eth-usd-trades.png)

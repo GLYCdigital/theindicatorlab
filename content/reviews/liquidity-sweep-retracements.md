@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-sweep-retracements.png"
 tags:
   - liquidity sweep retracements
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Liquidity_Sweep_Retracements — a smart-liquidity tool for spotting sweep traps and retracement entries. Settings, pros, cons, and alternatives."

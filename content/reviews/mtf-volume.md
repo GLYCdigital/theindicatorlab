@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-volume.png"
 tags:
   - mtf volume
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe volume analysis for divergence, breakout confirmation, and momentum shifts. Practical settings and real trade examples included."

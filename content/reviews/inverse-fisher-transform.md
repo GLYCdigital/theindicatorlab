@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/inverse-fisher-transform.png"
 tags:
   - inverse fisher transform
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A robust momentum oscillator that normalizes price extremes. Our review covers settings, entry signals, and why it’s a solid 4/5 tool for swing traders."

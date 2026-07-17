@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/negative-volume-index.png"
 tags:
   - negative volume index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Negative Volume Index (NVI) on TradingView. How to set it up, best settings, and entry/exit tactics for trend confirmation."

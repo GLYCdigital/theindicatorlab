@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cumulative-volume-delta.png"
 tags:
   - cumulative volume delta
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Cumulative_Volume_Delta tracks buying vs selling pressure in real-time. A 4/5 star indicator for spotting divergences and volume shifts on any timeframe."

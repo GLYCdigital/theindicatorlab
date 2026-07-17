@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/flag-pattern.png"
 tags:
   - flag pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Flag_Pattern automatically detects bullish and bearish flag formations on your chart. Accurate, customizable, and saves hours of manual scanning. A solid 4/5."

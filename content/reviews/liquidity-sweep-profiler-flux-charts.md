@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-sweep-profiler-flux-charts.png"
 tags:
   - liquidity sweep profiler flux charts
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tracks liquidity sweeps in real-time with flux zones. Good for spotting stop hunts and reversals, but can be noisy on lower timeframes."

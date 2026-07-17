@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-knn.png"
 tags:
   - machine learning knn
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "K-Nearest Neighbors for price prediction: practical guide to settings, entry rules, and real-world performance. Not magic, but useful."

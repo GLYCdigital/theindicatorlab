@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-width.png"
 tags:
   - bollinger bands width
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bollinger_Bands_Width measures volatility expansion and contraction. Find squeeze setups, trend breaks, and mean reversion entries with clear signals."

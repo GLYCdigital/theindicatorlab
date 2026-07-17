@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/floor-pivots.png"
 tags:
   - floor pivots
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Floor_Pivots provides key support/resistance levels based on daily, weekly, and monthly pivots. Ideal for breakout and mean-reversion traders. Settings and strategy inside."

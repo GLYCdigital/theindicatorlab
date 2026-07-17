@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/jonnyfutures-ib.png"
 tags:
   - jonnyfutures ib
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Jonnyfutures_Ib is a solid short-term momentum scanner for futures. It catches quick breakouts with minimal lag, but lacks trend context. Best for scalpers."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/delta-void-profile.png"
 tags:
   - delta void profile
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Delta Void Profile identifies price levels where aggressive buying or selling was absent. A niche tool for spotting hidden support/resistance, but limited in trending markets."

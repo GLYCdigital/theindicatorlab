@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/marubozu-detection.png"
 tags:
   - marubozu detection
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Marubozu_Detection review: settings, backtest results, entry rules, and why it’s a solid candlestick pattern tool for trend traders."

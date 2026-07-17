@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ais-supertrend.png"
 tags:
   - ais supertrend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ais_Supertrend adapts ATR multiplier to volatility. Best settings, entry rules, and honest pros/cons in this hands-on review."

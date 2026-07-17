@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vwap-multi.png"
 tags:
   - vwap multi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe VWAP with 5 configurable periods. Clean visuals, reliable support/resistance. Best for intraday and swing traders. Solid 4-star tool."

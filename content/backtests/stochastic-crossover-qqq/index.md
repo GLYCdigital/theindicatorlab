@@ -1,10 +1,10 @@
 ---
 {
   "title": "Stochastic \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.0%",
+      "return_pct": "+9.8%",
       "trades": "13",
       "win_rate_pct": "42.3%"
     },
@@ -109,7 +109,7 @@ On QQQ, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-12 → 2026-07-10), the Stochastic Crossover delivered a **-41.9% total return** on QQQ, compounding at **-10.3% annually**. 
+Over five years (2021-07-14 → 2026-07-10), the Stochastic Crossover delivered a **-41.9% total return** on QQQ, compounding at **-10.3% annually**. 
 
 At **-0.59**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,18 @@ Our take: skip it on QQQ unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Stocks on Moomoo — Commission-Free**
+
+Access US markets with zero commissions and professional-grade charting tools.
+
+👉 [Open Moomoo Account](https://j.moomoo.com/0BpZwx)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on QQQ](/backtests/stochastic-crossover-qqq-trades.png)

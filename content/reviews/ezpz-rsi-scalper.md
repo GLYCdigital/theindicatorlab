@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ezpz-rsi-scalper.png"
 tags:
   - ezpz rsi scalper
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ezpz_Rsi_Scalper review: a simple RSI-based scalping tool with clear overbought/oversold signals. Settings, strategy, pros/cons, and better alternatives."

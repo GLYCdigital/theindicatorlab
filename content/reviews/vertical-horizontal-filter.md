@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vertical-horizontal-filter.png"
 tags:
   - vertical horizontal filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Vertical Horizontal Filter review: a volatility-based trend filter that smooths noise and pinpoints strong moves. Settings, strategy, and honest pros/cons."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-point-forecast-with-sr-ss.png"
 tags:
   - machine learning point forecast with sr ss
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Machine_Learning_Point_Forecast_With_Sr_Ss uses a simple linear regression to forecast price and mark key support/resistance levels. 4/5 stars."

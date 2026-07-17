@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/monte-carlo-simulator.png"
 tags:
   - monte carlo simulator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Monte Carlo Simulator for TradingView: honest review of its 1000+ path projections, risk metrics, and how to avoid false confidence. Settings and strategy included."

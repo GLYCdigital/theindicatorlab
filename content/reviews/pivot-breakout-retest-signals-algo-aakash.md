@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-breakout-retest-signals-algo-aakash.png"
 tags:
   - pivot breakout retest signals algo aakash
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A robust pivot breakout & retest system with Aakash’s algo logic. Reduces noise, but requires confirmation. Best on 1H–4H for trend reversals."

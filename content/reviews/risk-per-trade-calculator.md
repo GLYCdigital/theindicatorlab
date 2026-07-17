@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/risk-per-trade-calculator.png"
 tags:
   - risk per trade calculator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Risk_Per_Trade_Calculator: a simple tool that calculates position size based on stop loss and account risk. Settings, pros/cons, and who should use it."

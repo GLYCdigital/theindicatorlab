@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-meanness-index.png"
 tags:
   - market meanness index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Market_Meanness_Index review: how to set it up, what it measures, and how to trade mean reversion without overcomplicating your charts."

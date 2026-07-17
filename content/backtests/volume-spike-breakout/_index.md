@@ -1,6 +1,6 @@
 ---
 title: "Volume Backtest Results"
-date: 2026-07-11
+date: 2026-07-13
 draft: false
 type: backtests
 description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe ratio."
@@ -37,7 +37,7 @@ description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe r
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: July 11, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: July 13, 2026</p>
 
   </div>
 </article>

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/orb-continuation-0-signals-levels.png"
 tags:
   - orb continuation 0 signals levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ORB Continuation 0 Signals Levels review: a solid breakout tool for intraday traders. Settings, strategy, pros/cons, and who it's best for."

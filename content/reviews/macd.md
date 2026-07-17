@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/macd.png"
 tags:
   - macd
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest MACD review: how this classic momentum oscillator really works, best settings for scalping vs. swing trading, and when to ignore the crossovers."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/macd-colored-histogram.png"
 tags:
   - macd colored histogram
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest review of the Macd_Colored_Histogram indicator. Discover color-coded MACD signals, best settings, and practical trade strategies."

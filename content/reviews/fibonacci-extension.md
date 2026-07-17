@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-extension.png"
 tags:
   - fibonacci extension
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fibonacci_Extension auto-draws key levels (1.272, 1.618, 2.618) for price targets. Solid for profit-taking but not a standalone strategy. 4/5."

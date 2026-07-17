@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-thermal-map.png"
 tags:
   - liquidity thermal map
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Liquidity_Thermal_Map visualizes pending stop and limit clusters. See where smart money hunts liquidity, with heat zones for entries and exits."

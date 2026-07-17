@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/standard-error-channel.png"
 tags:
   - standard error channel
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Standard_Error_Channel review: a statistical volatility channel that predicts price range with regression lines. Settings, entry/exit rules, and honest pros vs alternatives."

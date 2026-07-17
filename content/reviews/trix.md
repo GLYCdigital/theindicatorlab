@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/trix.png"
 tags:
   - trix
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "An honest review of TradingView's Trix indicator: how it works, best settings, entry signals, and whether it's worth your time. No fluff."

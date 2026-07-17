@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/put-call-ratio.png"
 tags:
   - put call ratio
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Put_Call_Ratio review: how to set it up, what the signals actually mean, and why it's a solid contrarian tool for equity indices."

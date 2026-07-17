@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractal-adaptive-ma.png"
 tags:
   - fractal adaptive ma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fractal Adaptive MA review: settings, strategy, and performance. A dynamic moving average that adjusts to market volatility. See how it works and if it fits your trading."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/force-index.png"
 tags:
   - force index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Force Index combines price direction, volume, and momentum into a single oscillator. Here's my honest review after hundreds of trades."

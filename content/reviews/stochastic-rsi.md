@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-rsi.png"
 tags:
   - stochastic rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Stochastic RSI review: 4/5 stars. Tested settings, entry rules, and a better alternative. No fluff."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/previous-month-high-low.png"
 tags:
   - previous month high low
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Previous_Month_High_Low indicator. See how it marks key monthly levels, best settings, and entry strategies for swing traders."

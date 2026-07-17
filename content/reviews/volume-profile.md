@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-profile.png"
 tags:
   - volume profile
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Volume Profile reveals where the big money traded. My settings, entry rules, and why it beats standard volume indicators."

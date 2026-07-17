@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-profile-fixed-range.png"
 tags:
   - volume profile fixed range
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest test of Volume_Profile_Fixed_Range. See if it’s worth adding to your chart for support/resistance or if you're better off with standard volume profile."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-oscillator.png"
 tags:
   - volume oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical breakdown of TradingView's Volume Oscillator: real settings, entry/exit tactics, and when this lagging volume tool actually earns its keep."

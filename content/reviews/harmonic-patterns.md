@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/harmonic-patterns.png"
 tags:
   - harmonic patterns
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "TradingView's Harmonic_Patterns indicator: auto-detect Gartley, Bat, Crab & more. Tested settings, entry rules, and honest pros & cons for traders."

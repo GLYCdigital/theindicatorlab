@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bayesian-probability-indicator.png"
 tags:
   - bayesian probability indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bayesian_Probability_Indicator calculates real-time probability of trend continuation using Bayesian inference. 4/5 stars."

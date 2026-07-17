@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/money-flow-index.png"
 tags:
   - money flow index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Money Flow Index indicator. Tested settings, divergence strategy, and when to actually use MFI over RSI."

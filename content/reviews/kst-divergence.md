@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kst-divergence.png"
 tags:
   - kst divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Kst_Divergence review: how it detects momentum reversals with divergences, best settings for crypto & forex, and why it beats RSI for trend exhaustion."

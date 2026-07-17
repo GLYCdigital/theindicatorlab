@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/multi-timeframe-multi-indicator-dashboard.png"
 tags:
   - multi timeframe multi indicator dashboard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi_Timeframe_Multi_Indicator_Dashboard review: Combines RSI, MACD, MA, Bollinger Bands across 5 timeframes. Best settings, entry/exit rules, pros/cons, and who it suits."

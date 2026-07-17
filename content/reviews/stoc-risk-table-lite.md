@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stoc-risk-table-lite.png"
 tags:
   - stoc risk table lite
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A lightweight risk/reward table for stochastic oscillator levels. Shows clear entry zones and R/R ratios, but lacks dynamic alerts."

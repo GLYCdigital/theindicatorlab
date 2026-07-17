@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dmi-adx-combo.png"
 tags:
   - dmi adx combo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Dmi_Adx_Combo combines ADX, DMI+, and DMI- into one clean panel. We test the settings and show you how to spot real trend strength."

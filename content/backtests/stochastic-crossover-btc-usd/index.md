@@ -1,10 +1,10 @@
 ---
 {
   "title": "Stochastic \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "37.1%"
+      "value": "37.0%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "237"
+      "value": "238"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+39.7%",
+      "return_pct": "+41.1%",
       "trades": "22",
-      "win_rate_pct": "37.1%"
+      "win_rate_pct": "37.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "48",
-      "win_rate_pct": "37.1%"
+      "win_rate_pct": "37.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "47",
-      "win_rate_pct": "37.1%"
+      "win_rate_pct": "37.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "47",
-      "win_rate_pct": "37.1%"
+      "win_rate_pct": "37.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "47",
-      "win_rate_pct": "37.1%"
+      "win_rate_pct": "37.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
-      "trades": "26",
-      "win_rate_pct": "37.1%"
+      "return_pct": "-27.7%",
+      "trades": "27",
+      "win_rate_pct": "37.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On BTC, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-12 → 2026-07-10), the Stochastic Crossover delivered a **-0.4% total return** on BTC-USD, compounding at **-0.1% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Stochastic Crossover delivered a **-0.4% total return** on BTC-USD, compounding at **-0.1% annually**. 
 
 At **0.15**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **59.3% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.15 | ❌ Weak |
 | Max Drawdown | 59.3% | ⚠️ Significant |
-| Win Rate | 37.1% | ❌ Low — relies on outsized wins |
+| Win Rate | 37.0% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.00 | ❌ Unprofitable |
-| Trades/Year | ~237 total | Active |
+| Trades/Year | ~238 total | Active |
 
-The **profit factor of 1.00** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 37.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.00** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 37.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on BTC?
 
@@ -137,6 +137,18 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on BTC-USD](/backtests/stochastic-crossover-btc-usd-trades.png)

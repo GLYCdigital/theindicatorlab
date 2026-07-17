@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/directional-flow-signals.png"
 tags:
   - directional flow signals
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Directional Flow Signals review: A momentum-based trend filter with clear entry/exit signals. Settings, strategy, pros/cons, and better alternatives tested."

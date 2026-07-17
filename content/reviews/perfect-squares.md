@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/perfect-squares.png"
 tags:
   - perfect squares
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Perfect_Squares plots square-of-9 support/resistance zones. Honest review: settings, exit strategy, and why it works for swing but not scalping."

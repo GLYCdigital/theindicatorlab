@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/connors-rsi.png"
 tags:
   - connors rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Connors RSI blends RSI, streak length, and percentile rank to catch mean-reversion moves. Here's how to set it up and trade it."

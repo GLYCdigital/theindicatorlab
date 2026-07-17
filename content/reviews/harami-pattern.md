@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/harami-pattern.png"
 tags:
   - harami pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Harami_Pattern review. Tests settings, entry/exit rules, and compares it to other candlestick pattern tools. 4/5 stars."

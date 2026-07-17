@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-weighted-moving-average.png"
 tags:
   - volume weighted moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest VWMA review: how it differs from SMA/EMA, best settings for trend and reversals, and why volume weighting adds real edge."

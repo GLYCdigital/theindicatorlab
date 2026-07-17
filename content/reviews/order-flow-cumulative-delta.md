@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/order-flow-cumulative-delta.png"
 tags:
   - order flow cumulative delta
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Order_Flow_Cumulative_Delta: tracks aggressive buying vs selling volume delta. Pros, cons, best settings, and how to use it for entries."

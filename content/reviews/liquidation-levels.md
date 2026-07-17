@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidation-levels.png"
 tags:
   - liquidation levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Liquidation_Levels maps clustered stop-losses from major exchange data. Helps avoid wick traps and spot high-probability reversal zones."

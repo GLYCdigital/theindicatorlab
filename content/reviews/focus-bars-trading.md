@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/focus-bars-trading.png"
 tags:
   - focus bars trading
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Focus_Bars_Trading highlights key price bars based on volume, volatility, or trend strength. A solid 4/5 tool for spotting high-probability setups without clutter."

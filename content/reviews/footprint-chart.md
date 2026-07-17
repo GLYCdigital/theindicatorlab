@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/footprint-chart.png"
 tags:
   - footprint chart
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Footprint_Chart brings CME-level order flow to TradingView. Honest review of settings, pros/cons, and how to trade with it."

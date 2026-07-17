@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ajay-strong-smart-money-scalper.png"
 tags:
   - ajay strong smart money scalper
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A reliable scalping tool for spot entries on 1-5 min charts. Combines order flow, volume, and momentum to catch smart money moves. Solid 4/5."

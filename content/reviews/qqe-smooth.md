@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/qqe-smooth.png"
 tags:
   - qqe smooth
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Qqe_Smooth gives cleaner QQE signals by averaging the RSI. Review covers settings, entries/exits, and who should use it."

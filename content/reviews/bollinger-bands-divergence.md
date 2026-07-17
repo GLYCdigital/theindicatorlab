@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-divergence.png"
 tags:
   - bollinger bands divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Bollinger_Bands_Divergence review: how it spots hidden and regular divergences, best settings for 1H/4H, entry rules, and why it's a solid but not perfect signal tool."

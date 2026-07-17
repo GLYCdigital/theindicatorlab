@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fvg-retest-entry-engine.png"
 tags:
   - fvg retest entry engine
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fair Value Gap retest indicator for entries. I tested Fvg_Retest_Entry_Engine on 500+ trades. Settings, pros/cons, and honest verdict."

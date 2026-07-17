@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heiken-ashi.png"
 tags:
   - heiken ashi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Heiken Ashi review: an honest breakdown of how this smoothing candlestick technique filters noise, improves trend clarity, and when to actually use it."

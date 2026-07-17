@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/donchian-breakout.png"
 tags:
   - donchian breakout
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Donchian_Breakout: a classic breakout system with clean entry signals, trailing stops, and adjustable channel length. 4/5 stars."

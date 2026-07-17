@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-cloud-spans.png"
 tags:
   - ichimoku cloud spans
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Clean Ichimoku Cloud display with custom timeframe spans. Perfect for multi-timeframe analysis and trend confirmation. No bloat, just the core cloud."

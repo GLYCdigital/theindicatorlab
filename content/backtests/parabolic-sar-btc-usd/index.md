@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-17.0%"
+      "value": "-16.1%"
     },
     {
       "label": "CAGR",
-      "value": "-3.7%"
+      "value": "-3.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+39.7%",
+      "return_pct": "+41.1%",
       "trades": "8",
       "win_rate_pct": "32.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
+      "return_pct": "-27.7%",
       "trades": "8",
       "win_rate_pct": "32.9%"
     }
@@ -109,7 +109,7 @@ On BTC, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-12 → 2026-07-10), the Parabolic SAR delivered a **-17.0% total return** on BTC-USD, compounding at **-3.7% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Parabolic SAR delivered a **-16.1% total return** on BTC-USD, compounding at **-3.5% annually**. 
 
 At **0.03**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,18 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on BTC-USD](/backtests/parabolic-sar-btc-usd-trades.png)

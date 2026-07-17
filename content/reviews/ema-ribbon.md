@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ema-ribbon.png"
 tags:
   - ema ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ema_Ribbon packs 8 EMAs into one clean ribbon. Tested on BTC: +15.6% CAGR, 53% DD. Best settings, entry tactics, and honest pros/cons inside."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dmi-directional-movement-index.png"
 tags:
   - dmi directional movement index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest DMI Directional Movement Index review: settings, strategy, and how to trade trends and reversals with ADX. No fluff, just what works."

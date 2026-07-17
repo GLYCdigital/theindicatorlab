@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ema-multiple-timeframe.png"
 tags:
   - ema multiple timeframe
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Stack EMAs from multiple timeframes on one chart. Clear multi-TF trend alignment tool. Ideal for swing traders who hate tab-switching."

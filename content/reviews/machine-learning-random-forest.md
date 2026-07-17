@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/machine-learning-random-forest.png"
 tags:
   - machine learning random forest
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Unbiased review of Machine_Learning_Random_Forest on TradingView. Tested settings, entry/exit rules, pros/cons, and when to skip it."

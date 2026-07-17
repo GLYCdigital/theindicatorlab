@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ict-killzones.png"
 tags:
   - ict killzones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ICT Killzones marks key intraday sessions for forex and indices. Works best on 5-15 min charts. Clean visuals, no repaint. 4/5."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/loss-recovery-calculator.png"
 tags:
   - loss recovery calculator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Stop guessing your recovery math. This tool calculates position size and win rate needed to bounce back from a loss. Honest review after testing."

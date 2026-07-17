@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/laguerre-rsi.png"
 tags:
   - laguerre rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A detailed review of the Laguerre RSI indicator. Learn its settings, strategy, pros, cons, and whether it's worth adding to your TradingView toolkit."

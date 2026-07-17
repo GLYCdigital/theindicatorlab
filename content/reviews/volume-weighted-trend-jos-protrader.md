@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-weighted-trend-jos-protrader.png"
 tags:
   - volume weighted trend jos protrader
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A solid volume-weighted trend filter that smooths noise and gives clear directional bias. Best for swing trading on 1H–4H. Not a standalone entry tool."

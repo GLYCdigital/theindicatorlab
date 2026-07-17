@@ -1,3 +1,13 @@
+---
+title: "Mtf Macd Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/mtf-macd.png"
+rating: 4
+description: "** Multi-timeframe MACD indicator that overlays higher timeframe signal on your active chart. Real-time alignment check without switching tabs."
+---
+
 **description:** Multi-timeframe MACD indicator that overlays higher timeframe signal on your active chart. Real-time alignment check without switching tabs.
 
 ---

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hull-ma-cross-signal.png"
 tags:
   - hull ma cross signal
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Hull_Ma_Cross_Signal gives clean, low-lag cross signals with Hull Moving Averages. Fast on entries, few false triggers. Best on 1H–4H. Read our full review."

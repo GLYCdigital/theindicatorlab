@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pennant-pattern.png"
 tags:
   - pennant pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Pennant_Pattern review. See how this auto-detector catches continuation setups, best settings, and whether it beats manual charting."

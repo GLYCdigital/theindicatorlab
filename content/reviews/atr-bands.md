@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-bands.png"
 tags:
   - atr bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Atr_Bands uses ATR to create dynamic volatility bands. Practical for trend and breakout trades. Solid 4/5 for its simplicity."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/the-tradegoal-90.png"
 tags:
   - the tradegoal 90
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A custom momentum and volatility indicator for scalping and intraday. Clean signals but needs confirmation. Honest 4-star review with settings and strategy."

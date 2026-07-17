@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heikin-ashi-trend.png"
 tags:
   - heikin ashi trend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Heikin_Ashi_Trend transforms choppy candles into smooth trend signals. I review settings, backtest results, and whether it actually helps with entries."

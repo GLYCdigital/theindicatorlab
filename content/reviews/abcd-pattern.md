@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/abcd-pattern.png"
 tags:
   - abcd pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Abcd_Pattern review: identifies harmonic ABCD zones automatically. Learn settings, entry rules, and why it's a solid 4/5 tool for trend traders."

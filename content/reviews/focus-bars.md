@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/focus-bars.png"
 tags:
   - focus bars
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Focus_Bars filters out market noise by highlighting only high-activity price bars. A solid 4/5 for scalpers and intraday traders who hate clutter."

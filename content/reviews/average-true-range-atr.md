@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/average-true-range-atr.png"
 tags:
   - average true range atr
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Average_True_Range_Atr review: settings, pros/cons, and how to use it for stops, entries, and volatility filters. No fluff."

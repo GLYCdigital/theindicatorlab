@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/alpha-signal-engine.png"
 tags:
   - alpha signal engine
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe momentum and volume confluence system. Solid for trend confirmation but noisy in choppy markets. 4/5."

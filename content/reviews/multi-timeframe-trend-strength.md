@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/multi-timeframe-trend-strength.png"
 tags:
   - multi timeframe trend strength
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi_Timeframe_Trend_Strength combines ADX, Aroon, and moving averages across 3 timeframes to score trend power. Honest review of settings, entry rules, and real trade examples."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chop-zone.png"
 tags:
   - chop zone
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Chop_Zone identifies high-probability breakout zones by detecting market chop vs. trending moves. A solid 4-star tool for scalpers and swing traders."

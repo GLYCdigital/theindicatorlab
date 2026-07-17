@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-percentile.png"
 tags:
   - atr percentile
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Atr_Percentile measures current volatility relative to its own history, helping you spot expansion/contraction cycles. Strong for filtering breakouts and timing entries."

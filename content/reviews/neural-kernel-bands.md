@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/neural-kernel-bands.png"
 tags:
   - neural kernel bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Neural_Kernel_Bands review: A smart volatility band using kernel regression. Settings, entry/exit strategies, and honest pros/cons for active traders."

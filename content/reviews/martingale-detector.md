@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/martingale-detector.png"
 tags:
   - martingale detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Exposes martingale bots and position-splitting patterns in real time. 4/5 stars for its unique niche utility. Settings & strategy included."

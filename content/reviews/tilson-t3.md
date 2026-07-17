@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tilson-t3.png"
 tags:
   - tilson t3
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tilson T3 smooths price action with triple EMA and volume factor. A versatile trend-following tool for swing traders. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/momentum-conviction.png"
 tags:
   - momentum conviction
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Momentum_Conviction cuts through market noise by measuring buying and selling pressure with conviction levels. Honest review of settings, strategy, and whether it actually works."

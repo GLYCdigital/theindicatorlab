@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/candlestick-pattern-recognition.png"
 tags:
   - candlestick pattern recognition
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Candlestick_Pattern_Recognition. See how it scans 50+ patterns, best settings, and whether it's worth installing."

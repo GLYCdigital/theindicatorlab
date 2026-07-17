@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strong-hurst-cycles.png"
 tags:
   - strong hurst cycles
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Strong_Hurst_Cycles review: tested on BTC, ES, FX. Best settings, entry/exit rules, pros/cons. Is it worth installing? Find out."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kama.png"
 tags:
   - kama
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "KAMA adapts to market noise — reducing lag in trends and smoothing whipsaws in ranges. A moving average that thinks for itself. Full review inside."

@@ -1,3 +1,13 @@
+---
+title: "Keltner Channels Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/keltner-channels.png"
+rating: 4
+description: "Honest Keltner Channels review: settings, strategies, and real-world entry/exit tips for trend and breakout traders."
+---
+
 **description:** "Honest Keltner Channels review: settings, strategies, and real-world entry/exit tips for trend and breakout traders."
 
 ---

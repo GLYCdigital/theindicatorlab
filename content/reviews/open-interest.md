@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/open-interest.png"
 tags:
   - open interest
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Open_Interest indicator review: tracks real OI data on TradingView. See best settings, how to spot divergences, and who should use it."

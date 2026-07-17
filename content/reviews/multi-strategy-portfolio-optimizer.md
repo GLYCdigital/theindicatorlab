@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/multi-strategy-portfolio-optimizer.png"
 tags:
   - multi strategy portfolio optimizer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automates multiple strategy signals into one portfolio. Good for backtesting combos, but not a live holy grail. 4/5."

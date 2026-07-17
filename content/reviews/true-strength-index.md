@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/true-strength-index.png"
 tags:
   - true strength index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest True Strength Index review after 100+ trades. Settings, divergence signals, and how it compares to RSI and MACD."

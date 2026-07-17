@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gann-square.png"
 tags:
   - gann square
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Gann_Square draws Gann's Square of Nine on your chart. We test its key levels, best settings, and whether it’s worth the learning curve."

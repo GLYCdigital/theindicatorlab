@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-weighted-macd.png"
 tags:
   - volume weighted macd
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume Weighted MACD improves on the classic indicator by adding volume to the signal line. Here's my honest test results and settings."

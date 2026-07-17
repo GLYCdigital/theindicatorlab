@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/inside-bar-detector.png"
 tags:
   - inside bar detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Inside_Bar_Detector. How it works, best settings for forex and crypto, entry/exit rules, and whether it's worth your time."

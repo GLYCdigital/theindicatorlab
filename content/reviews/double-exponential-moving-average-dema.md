@@ -1,3 +1,13 @@
+---
+title: "Double Exponential Moving Average (DEMA) Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/double-exponential-moving-average-dema.png"
+rating: 4
+description: "A clean DEMA implementation with no lag and minimal repaint. Decent for fast trend following but lacks extras."
+---
+
 **description:** "A clean DEMA implementation with no lag and minimal repaint. Decent for fast trend following but lacks extras."
 
 ---

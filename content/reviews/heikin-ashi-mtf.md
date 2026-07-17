@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/heikin-ashi-mtf.png"
 tags:
   - heikin ashi mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Heikin Ashi MTF smooths price action across multiple timeframes. Clean trend signals with zero repaint. Best for swing traders who hate noise."

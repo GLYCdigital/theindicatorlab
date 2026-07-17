@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/normalized-candles-rsi-jamallo.png"
 tags:
   - normalized candles rsi jamallo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Normalized Candles RSI Jamallo review: A color-coded RSI overlay on candles for quick trend and momentum reads. Settings, strategy, pros/cons."

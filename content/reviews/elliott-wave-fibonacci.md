@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave-fibonacci.png"
 tags:
   - elliott wave fibonacci
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automated Elliott Wave counts with Fibonacci retracements and extensions. Honest review of settings, pros/cons, and how to use it for real trades."

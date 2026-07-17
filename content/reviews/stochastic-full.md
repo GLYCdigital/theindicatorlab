@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-full.png"
 tags:
   - stochastic full
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Full Stochastic oscillator review: settings, divergence signals, and entry strategies. A reliable momentum tool for range-bound markets. 4/5 stars."

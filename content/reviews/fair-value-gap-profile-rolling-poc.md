@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fair-value-gap-profile-rolling-poc.png"
 tags:
   - fair value gap profile rolling poc
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Combines FVG zones with rolling POC for mean-reversion trades. Decent for range-bound markets, but laggy in trends. Not a game-changer."

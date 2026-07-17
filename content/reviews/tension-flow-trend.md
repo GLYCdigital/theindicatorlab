@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/tension-flow-trend.png"
 tags:
   - tension flow trend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Tension Flow Trend review: a momentum-based trend filter with volatility bands. Settings, entry tips, pros & cons for scalpers and swing traders."

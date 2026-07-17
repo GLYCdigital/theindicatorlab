@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/smi-ergodic.png"
 tags:
   - smi ergodic
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest SMI Ergodic review: how it smooths momentum, best settings for scalping & swing, entry/exit rules, and a direct comparison with the classic Stochastic."

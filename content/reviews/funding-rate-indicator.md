@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/funding-rate-indicator.png"
 tags:
   - funding rate indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Funding_Rate_Indicator. See how it tracks perpetual swap funding, spot deviations, and why it’s useful for longs & shorts."

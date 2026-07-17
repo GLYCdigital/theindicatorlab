@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-grab-prl-engine-erdensedat.png"
 tags:
   - liquidity grab prl engine erdensedat
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A smart liquidity grab detector with PRL engine for clean entry signals. Best on 15m-1H for crypto and forex. 4/5 stars."

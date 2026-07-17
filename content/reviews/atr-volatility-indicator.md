@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-volatility-indicator.png"
 tags:
   - atr volatility indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical ATR-based volatility tool for breakout entries and stop placement. Honest review with tested settings and strategy tips."

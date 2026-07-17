@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/candlestick-pattern-strength.png"
 tags:
   - candlestick pattern strength
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical candlestick pattern strength indicator that filters weak patterns and grades strong ones. Honest review with settings, entry rules, and trading strategy."

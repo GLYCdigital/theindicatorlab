@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/stochastic-divergence.png"
 tags:
   - stochastic divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automatically spots hidden and regular divergences on the Stochastic oscillator. Saves hours of manual charting. Best with 14,3,3 settings on 1H-4H."

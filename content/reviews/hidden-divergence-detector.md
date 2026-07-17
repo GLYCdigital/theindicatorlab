@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hidden-divergence-detector.png"
 tags:
   - hidden divergence detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Hidden_Divergence_Detector catches hidden divergences others miss. Tested on crypto, forex, stocks. Honest review with settings, pros, cons, and alternatives."

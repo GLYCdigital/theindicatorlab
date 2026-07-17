@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ergodic-oscillator.png"
 tags:
   - ergodic oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ergodic Oscillator review: a smoothed momentum oscillator that filters noise. Learn best settings, entry signals, and how it compares to MACD."

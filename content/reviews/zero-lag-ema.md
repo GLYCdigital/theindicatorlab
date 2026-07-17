@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/zero-lag-ema.png"
 tags:
   - zero lag ema
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Zero Lag EMA reduces traditional EMA lag by ~40% using a corrective alpha. Best for trend-following on 1H-4H. Settings, strategy, and honest pros/cons inside."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/artemis-adaptive-rsi.png"
 tags:
   - artemis adaptive rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive RSI that adjusts lookback based on volatility. Practical for trend and mean-reversion. Honest review with settings and trade examples."

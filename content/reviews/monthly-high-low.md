@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/monthly-high-low.png"
 tags:
   - monthly high low
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Monthly_High_Low marks key monthly levels directly on your chart. Clean, no-lag support/resistance zones for swing trading and breakout setups."

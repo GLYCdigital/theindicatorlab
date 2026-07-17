@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hull-moving-average.png"
 tags:
   - hull moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "The Hull Moving Average reduces lag better than SMA or EMA. My test of settings, entry rules, and when this indicator falls short."

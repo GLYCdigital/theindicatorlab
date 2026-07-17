@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/delta-volume.png"
 tags:
   - delta volume
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Delta_Volume tracks aggressive buy/sell pressure using real tick data. Honest review of settings, entry signals, and who it actually works for."

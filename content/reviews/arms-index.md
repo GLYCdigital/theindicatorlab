@@ -1,3 +1,13 @@
+---
+title: "Arms Index Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/arms-index.png"
+rating: 4
+description: "Honest Arms_Index review. See how this market breadth indicator works on TradingView, best settings, and how to use it for entries."
+---
+
 **description:** "Honest Arms_Index review. See how this market breadth indicator works on TradingView, best settings, and how to use it for entries."
 
 ---

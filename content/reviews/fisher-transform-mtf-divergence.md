@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fisher-transform-mtf-divergence.png"
 tags:
   - fisher transform mtf divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Multi-timeframe Fisher Transform divergence indicator. We test its hidden divergence signals, optimal settings, and backtest results. High win rate on BTC."

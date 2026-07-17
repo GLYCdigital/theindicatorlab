@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/risk-management-dashboard.png"
 tags:
   - risk management dashboard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of the Risk_Management_Dashboard indicator. Tested its real-time risk tracking, P&L, and position sizing. See settings, pros, cons, and if it fits your trading."

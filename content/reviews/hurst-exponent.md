@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hurst-exponent.png"
 tags:
   - hurst exponent
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "TradingView Hurst_Exponent indicator review. See how it detects trend strength, mean reversion, and optimal settings for intraday & swing trading."

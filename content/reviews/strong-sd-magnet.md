@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strong-sd-magnet.png"
 tags:
   - strong sd magnet
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Strong_Sd_Magnet identifies high-probability support/resistance levels using standard deviation bands. Best settings, entry rules, and honest pros/cons."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/relative-vigor-index.png"
 tags:
   - relative vigor index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Relative Vigor Index review: how it works, best settings for 1h/4h, entry signals, and why it beats RSI in trending markets."

@@ -1,3 +1,13 @@
+---
+title: "Breakeven Stop Calculator Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/breakeven-stop-calculator.png"
+rating: 4
+description: "Honest Breakeven_Stop_Calculator review. Tested on real charts. Settings, pros/cons, and exact entry/exit use cases. No fluff."
+---
+
 **description:** "Honest Breakeven_Stop_Calculator review. Tested on real charts. Settings, pros/cons, and exact entry/exit use cases. No fluff."
 
 ---

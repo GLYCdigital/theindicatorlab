@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/accelerator-oscillator.png"
 tags:
   - accelerator oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Accelerator_Oscillator review: how it really works, best settings for scalping & trend trading, and when to ignore it."

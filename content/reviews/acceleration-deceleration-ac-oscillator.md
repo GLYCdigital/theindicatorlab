@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/acceleration-deceleration-ac-oscillator.png"
 tags:
   - acceleration deceleration ac oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bill Williams' AC oscillator measures momentum shifts. Review covers settings, zero-line crossings, and saucer patterns for entries."

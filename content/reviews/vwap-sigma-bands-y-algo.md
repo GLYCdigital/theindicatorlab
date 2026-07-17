@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vwap-sigma-bands-y-algo.png"
 tags:
   - vwap sigma bands y algo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "VWAP with dynamic sigma bands for mean reversion and trend trading. Real trader tested: settings, strategy, and honest pros/cons."

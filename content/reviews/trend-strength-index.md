@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/trend-strength-index.png"
 tags:
   - trend strength index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "The Trend Strength Index (TSI) measures trend momentum and direction. A 4-star alternative to ADX. Settings, strategy, and honest pros and cons inside."

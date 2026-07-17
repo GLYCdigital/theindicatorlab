@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/keltner-bollinger-combo.png"
 tags:
   - keltner bollinger combo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Keltner_Bollinger_Combo merges Bollinger Bands and Keltner Channels for squeeze detection and trend entries. Reliable and clean."

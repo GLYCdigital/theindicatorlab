@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ewo-rsi-signals-strategy-exhaustion-filter.png"
 tags:
   - ewo rsi signals strategy exhaustion filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A combined EWO, RSI, and exhaustion filter strategy. Good for spotting trend reversals with momentum confirmation, but requires practice to avoid whipsaws in ranging markets."

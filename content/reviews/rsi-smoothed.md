@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rsi-smoothed.png"
 tags:
   - rsi smoothed
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Rsi_Smoothed reduces RSI noise with a smoothing filter. Cuts false signals by ~30% on 1H+. Best for trend filter, not scalping. Settings: 14, 5, 70/30."

@@ -1,3 +1,13 @@
+---
+title: "Renko Charts Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/renko-charts.png"
+rating: 4
+description: "Renko_Charts on TradingView transforms price action into clean brick charts. My honest review covers settings, strategy, and whether it's worth your time."
+---
+
 **description:** "Renko_Charts on TradingView transforms price action into clean brick charts. My honest review covers settings, strategy, and whether it's worth your time."
 
 ---

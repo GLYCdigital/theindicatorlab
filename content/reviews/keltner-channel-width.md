@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/keltner-channel-width.png"
 tags:
   - keltner channel width
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Keltner_Channel_Width measures channel expansion and contraction to spot volatility breakouts and trend strength—simple and effective."

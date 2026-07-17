@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/atr-trailing-stop-mtf.png"
 tags:
   - atr trailing stop mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe ATR trailing stop that adapts to higher timeframe volatility for cleaner trend signals. Best settings and honest pros/cons inside."

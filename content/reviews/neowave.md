@@ -1,3 +1,13 @@
+---
+title: "Neowave Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/neowave.png"
+rating: 4
+description: "Neowave review: a volume-based momentum indicator for identifying breakout strength and divergence. Settings, strategy, pros/cons, and honest verdict."
+---
+
 **description:** "Neowave review: a volume-based momentum indicator for identifying breakout strength and divergence. Settings, strategy, pros/cons, and honest verdict."
 
 ---

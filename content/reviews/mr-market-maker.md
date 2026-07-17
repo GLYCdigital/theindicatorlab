@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mr-market-maker.png"
 tags:
   - mr market maker
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Mr_Market_Maker — a liquidity-based indicator for detecting smart money footprints. Settings, strategy, and real trader verdict inside."

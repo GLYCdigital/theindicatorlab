@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/guppy-multiple-moving-average-gmma.png"
 tags:
   - guppy multiple moving average gmma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "GMMA review: 12 EMAs reveal trader vs investor behavior. Settings, entry strategy, and why it’s a solid trend tool—but not a standalone system."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/price-density-clouds-excavo.png"
 tags:
   - price density clouds excavo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Price Density Clouds EXCAVO review: a volume-based cloud indicator for trend strength and reversals. Settings, strategy, pros/cons, and alternatives."

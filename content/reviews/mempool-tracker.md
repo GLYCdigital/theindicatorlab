@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mempool-tracker.png"
 tags:
   - mempool tracker
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Real-time Bitcoin mempool congestion data on TradingView. Track fee rates, pending transactions, and block space pressure for trade timing."

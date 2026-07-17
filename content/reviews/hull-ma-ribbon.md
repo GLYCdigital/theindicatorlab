@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/hull-ma-ribbon.png"
 tags:
   - hull ma ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Hull_Ma_Ribbon: A multi-timeframe moving average ribbon that smooths trends faster than standard MAs. I test its settings, entry signals, and real edge."

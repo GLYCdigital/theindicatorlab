@@ -1,3 +1,13 @@
+---
+title: "Fibonacci Extension Auto Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/fibonacci-extension-auto.png"
+rating: 4
+description: "** Auto-draws Fibonacci extension levels from swing highs/lows. Saves time but can miss key pivots. Here's my honest take."
+---
+
 **description:** Auto-draws Fibonacci extension levels from swing highs/lows. Saves time but can miss key pivots. Here's my honest take.
 
 ---

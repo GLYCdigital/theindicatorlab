@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidation-level-estimator.png"
 tags:
   - liquidation level estimator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Estimates liquidation clusters for BTC/ETH perps. Works best for scalping reversals near high-leverage zones. Not for trend traders."

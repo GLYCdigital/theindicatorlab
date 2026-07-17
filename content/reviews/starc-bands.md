@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/starc-bands.png"
 tags:
   - starc bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Starc_Bands adds volatility bands to any moving average. Find overextended moves, trade mean reversion, and filter trends. Honest review with settings and strategy."

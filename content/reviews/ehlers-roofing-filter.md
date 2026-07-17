@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-roofing-filter.png"
 tags:
   - ehlers roofing filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Roofing_Filter review: a high-pass filter that removes cycle noise. Best settings, entry rules, and why it beats standard moving averages."

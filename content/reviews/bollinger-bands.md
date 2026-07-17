@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands.png"
 tags:
   - bollinger bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Bollinger Bands review: tested settings, volatility strategies, entry/exit rules, and why this 5-star indicator remains a must-have for every trader."

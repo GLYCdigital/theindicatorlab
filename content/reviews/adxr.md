@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adxr.png"
 tags:
   - adxr
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ADXR refines ADX by smoothing trend strength over time. Honest review of settings, entry signals, and why it’s a solid 4-star tool for trend traders."

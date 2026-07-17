@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/iceberg-detector.png"
 tags:
   - iceberg detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Iceberg_Detector reveals hidden large orders in the order book. A niche but powerful tool for spotting accumulation or distribution before price moves."

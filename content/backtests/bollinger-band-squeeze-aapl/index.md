@@ -1,18 +1,18 @@
 ---
 {
   "title": "BollingerBands \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-10",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+56.7%"
+      "value": "+57.2%"
     },
     {
       "label": "CAGR",
-      "value": "9.4%"
+      "value": "9.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+23.2%",
+      "return_pct": "+19.4%",
       "trades": "5",
       "win_rate_pct": "42.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.2%",
+      "return_pct": "+16.6%",
       "trades": "5",
       "win_rate_pct": "42.3%"
     }
@@ -109,7 +109,7 @@ On AAPL, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-07-12 → 2026-07-10), the Bollinger Band Squeeze delivered a **+56.7% total return** on AAPL, compounding at **9.4% annually**. 
+Over five years (2021-07-14 → 2026-07-10), the Bollinger Band Squeeze delivered a **+57.2% total return** on AAPL, compounding at **9.5% annually**. 
 
 At **0.41**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,18 @@ Our take: usable as a confirmation tool, but not as a standalone system on AAPL.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Stocks on Moomoo — Commission-Free**
+
+Access US markets with zero commissions and professional-grade charting tools.
+
+👉 [Open Moomoo Account](https://j.moomoo.com/0BpZwx)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on AAPL](/backtests/bollinger-band-squeeze-aapl-trades.png)

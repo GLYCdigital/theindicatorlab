@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/previous-week-high-low.png"
 tags:
   - previous week high low
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Clean weekly S/R levels with auto-update. No bloat, no repaint. Best for swing traders who want clear structural targets and stops."

@@ -1,18 +1,18 @@
 ---
 {
   "title": "Fisher \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-62.6%"
+      "value": "-62.1%"
     },
     {
       "label": "CAGR",
-      "value": "-17.9%"
+      "value": "-17.7%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "34.7%"
+      "value": "34.6%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "337"
+      "value": "338"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+80.8%",
+      "return_pct": "+84.7%",
       "trades": "28",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.6%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "67",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.6%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "71",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.6%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "75",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.6%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "61",
-      "win_rate_pct": "34.7%"
+      "win_rate_pct": "34.6%"
     },
     {
       "year": "2026",
-      "return_pct": "-40.4%",
-      "trades": "35",
-      "win_rate_pct": "34.7%"
+      "return_pct": "-39.3%",
+      "trades": "36",
+      "win_rate_pct": "34.6%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On ETH, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-12 → 2026-07-10), the Fisher Transform MTF Divergence delivered a **-62.6% total return** on ETH-USD, compounding at **-17.9% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Fisher Transform MTF Divergence delivered a **-62.1% total return** on ETH-USD, compounding at **-17.7% annually**. 
 
 At **-0.50**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **79.7% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.50 | ❌ Weak |
 | Max Drawdown | 79.7% | ⚠️ Significant |
-| Win Rate | 34.7% | ❌ Low — relies on outsized wins |
+| Win Rate | 34.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.89 | ❌ Unprofitable |
-| Trades/Year | ~337 total | Active |
+| Trades/Year | ~338 total | Active |
 
-The **profit factor of 0.89** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 34.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.89** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 34.6% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on ETH?
 
@@ -146,6 +146,18 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
   </div>
 </div>
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on ETH-USD](/backtests/fisher-transform-mtf-divergence-eth-usd-trades.png)

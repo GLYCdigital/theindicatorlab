@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/nadaraya-watson-regression-liquidity-sweeps-algoalpha.png"
 tags:
   - nadaraya watson regression liquidity sweeps algoalpha
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Combines Nadaraya-Watson smoothing with liquidity sweep detection. Great for spotting fakeouts and key levels, but needs tweaking."

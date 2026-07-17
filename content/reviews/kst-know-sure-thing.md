@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kst-know-sure-thing.png"
 tags:
   - kst know sure thing
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "KST Know Sure Thing review: a momentum oscillator by Martin Pring. Full settings guide, entry/exit strategy, and honest pros vs cons. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rounding-bottom---top.png"
 tags:
   - rounding bottom   top
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Detects bullish rounding bottoms and bearish rounding tops automatically. No more squinting at charts. Solid 4/5 for pattern traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/backtesting-dashboard.png"
 tags:
   - backtesting dashboard
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical backtesting dashboard for TradingView that tracks win rate, profit factor, and trade stats in real time. No fluff."

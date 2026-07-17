@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/aroon-oscillator.png"
 tags:
   - aroon oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Aroon_Oscillator review: what it does, best settings, entry/exit rules, pros & cons. See how this trend-strength tool performs in real charts."

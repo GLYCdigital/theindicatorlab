@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/wyckoff-pattern-indicator-almostperfect.png"
 tags:
   - wyckoff pattern indicator almostperfect
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Wyckoff_Pattern_Indicator_Almostperfect review: detects accumulation/distribution phases and SOS/SOW signals. Settings, backtest results, and honest pros/cons for traders."

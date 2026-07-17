@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/strat-sniper.png"
 tags:
   - strat sniper
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Strat_Sniper review: a precise momentum scalper for 1-15 min charts. See how it filters noise, best settings, and why it's not for swing traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-decycler.png"
 tags:
   - ehlers decycler
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Decycler review: decycler oscillator filters noise, reveals cycles. Best settings, entry/exit rules, and honest pros/cons for active traders."

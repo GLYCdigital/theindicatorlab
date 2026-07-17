@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ttm-squeeze.png"
 tags:
   - ttm squeeze
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Honest TTM Squeeze review: what it does, best settings for 1H and 4H, how to trade squeezes, and why it’s not a standalone system. Pros, cons, and better alternatives."

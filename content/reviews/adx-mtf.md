@@ -1,4 +1,14 @@
-**description:** "Multi-timeframe ADX analysis for trend strength. See higher TF ADX without switching charts. 4/5 rating – practical but limited."
+---
+title: "Adx (MTF) Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/adx-mtf.png"
+rating: 4
+description: "Multi-timeframe ADX analysis for trend strength. See higher TF ADX without switching charts. 4/5 rating – practical but limited."
+---
+
+**description:** Multi-timeframe ADX analysis for trend strength. See higher TF ADX without switching charts. 4/5 rating – practical but limited.
 
 ---
 

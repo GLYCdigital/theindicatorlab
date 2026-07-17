@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/standard-deviation-bands.png"
 tags:
   - standard deviation bands
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Standard_Deviation_Bands review: a dynamic volatility-based envelope for trend and mean reversion. See settings, strategy, and honest pros/cons."

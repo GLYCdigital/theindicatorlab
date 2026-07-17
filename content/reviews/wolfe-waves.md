@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/wolfe-waves.png"
 tags:
   - wolfe waves
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automatically detects Wolfe Wave patterns on any timeframe. A solid tool for pattern-based traders, but manual validation still essential."

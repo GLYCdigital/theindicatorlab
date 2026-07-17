@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/whale-liquidity-absorption.png"
 tags:
   - whale liquidity absorption
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Whale Liquidity Absorption reveals where big money is hiding. This 5-star indicator helps spot stealth accumulation and distribution zones for smarter entries and exits."

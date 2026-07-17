@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/demarker-divergence.png"
 tags:
   - demarker divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Demarker_Divergence review: tested on real charts. Covers settings, divergence signals, and how to avoid false ones. No fluff."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-levels.png"
 tags:
   - liquidity levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Liquidity_Levels review. I tested this indicator for weeks. See how to set it up, trade liquidity sweeps, and avoid false signals."

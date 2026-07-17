@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/aroon-divergence.png"
 tags:
   - aroon divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Aroon_Divergence combines classic Aroon with hidden/regular divergence detection. Here’s my honest take after 50+ trades."

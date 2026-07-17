@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-kumo-breakout.png"
 tags:
   - ichimoku kumo breakout
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ichimoku_Kumo_Breakout automates cloud break signals. I tested its settings, best pairs, and real entry/exit rules. Honest 4/5 review."

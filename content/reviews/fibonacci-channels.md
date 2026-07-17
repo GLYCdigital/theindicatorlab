@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-channels.png"
 tags:
   - fibonacci channels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fibonacci_Channels plots dynamic Fibonacci-based trend channels. Find support/resistance, reversals, and trend strength zones. Honest 4/5 review."

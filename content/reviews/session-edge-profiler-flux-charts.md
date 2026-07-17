@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/session-edge-profiler-flux-charts.png"
 tags:
   - session edge profiler flux charts
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Session_Edge_Profiler_Flux_Charts review: breakouts, volume shifts, session-based edges. Settings, entry tactics, and honest pros/cons for day traders."

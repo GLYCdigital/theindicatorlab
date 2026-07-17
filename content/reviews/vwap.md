@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vwap.png"
 tags:
   - vwap
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest VWAP review: how to set it up, trade entries/exits, and avoid common mistakes. Not a magic bullet, but a solid volume-based anchor."

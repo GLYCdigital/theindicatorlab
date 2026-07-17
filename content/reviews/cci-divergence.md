@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cci-divergence.png"
 tags:
   - cci divergence
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest CCI Divergence indicator review. See how this tool spots hidden and regular divergences, best settings for 1H–4H, and how to trade it without false signals."

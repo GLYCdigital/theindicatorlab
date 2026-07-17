@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-squeeze.png"
 tags:
   - bollinger bands squeeze
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bollinger Bands Squeeze review: how it signals volatility breakouts, best settings for scalping and swing trading, and honest pros/cons from real testing."

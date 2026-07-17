@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/know-sure-thing.png"
 tags:
   - know sure thing
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Know Sure Thing (KST) review. Covers default settings, divergence signals, and strategy for momentum swing trading in Forex and crypto."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mirage-liquidity-sweep-jos-protrader.png"
 tags:
   - mirage liquidity sweep jos protrader
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Review of Mirage_Liquidity_Sweep_Jos_Protrader: a smart liquidity sweep detector with entry logic. Settings, pros/cons, and how to use it effectively."

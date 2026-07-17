@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chaikin-volatility.png"
 tags:
   - chaikin volatility
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Chaikin Volatility measures the rate of price range expansion. I tested it across 50+ charts. Here's how to use it for breakout entries and trend confirmation."

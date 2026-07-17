@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/smart-trader-episode-06-isotropic-trend-lines.png"
 tags:
   - smart trader episode 06 isotropic trend lines
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A unique trend-following indicator that adapts to market noise. Review covers settings, entry signals, and who should use this."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-adx.png"
 tags:
   - mtf adx
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe ADX that plots trend strength from higher timeframes directly on your active chart. Clean, no-repaint, useful for confirming trend conviction."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-instantaneous-trendline.png"
 tags:
   - ehlers instantaneous trendline
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers Instantaneous Trendline cuts lag vs. standard MAs. Review covers settings, entry rules, and why it works for trend-following on any timeframe."

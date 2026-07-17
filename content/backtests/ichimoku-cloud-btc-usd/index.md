@@ -1,18 +1,18 @@
 ---
 {
   "title": "Ichimoku \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+51.1%"
+      "value": "+51.8%"
     },
     {
       "label": "CAGR",
-      "value": "8.6%"
+      "value": "8.7%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "27.0%"
+      "value": "26.3%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "37"
+      "value": "38"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+39.7%",
+      "return_pct": "+41.1%",
       "trades": "2",
-      "win_rate_pct": "27.0%"
+      "win_rate_pct": "26.3%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "10",
-      "win_rate_pct": "27.0%"
+      "win_rate_pct": "26.3%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "6",
-      "win_rate_pct": "27.0%"
+      "win_rate_pct": "26.3%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "7",
-      "win_rate_pct": "27.0%"
+      "win_rate_pct": "26.3%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "9",
-      "win_rate_pct": "27.0%"
+      "win_rate_pct": "26.3%"
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
-      "trades": "3",
-      "win_rate_pct": "27.0%"
+      "return_pct": "-27.7%",
+      "trades": "4",
+      "win_rate_pct": "26.3%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On BTC, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-12 → 2026-07-10), the Ichimoku Cloud delivered a **+51.1% total return** on BTC-USD, compounding at **8.6% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Ichimoku Cloud delivered a **+51.8% total return** on BTC-USD, compounding at **8.7% annually**. 
 
 At **0.31**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,22 +121,34 @@ The catch? A **51.4% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.31 | ❌ Weak |
 | Max Drawdown | 51.4% | ⚠️ Significant |
-| Win Rate | 27.0% | ❌ Low — relies on outsized wins |
+| Win Rate | 26.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.24 | ⚠️ Marginal |
-| Trades/Year | ~37 total | Active |
+| Trades/Year | ~38 total | Active |
 
-The **profit factor of 1.24** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 27.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.24** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 26.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on BTC?
 
-The ichimoku cloud shows moderate edge on BTC — **0.31 Sharpe, 1.24 profit factor** over 37 trades. It's not a home run, but it's also not random.
+The ichimoku cloud shows moderate edge on BTC — **0.31 Sharpe, 1.24 profit factor** over 38 trades. It's not a home run, but it's also not random.
 
-The 27.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 26.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on BTC-USD](/backtests/ichimoku-cloud-btc-usd-trades.png)

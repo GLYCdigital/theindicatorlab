@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gap-detector.png"
 tags:
   - gap detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Gap_Detector review: how it spots real gaps, best settings for fill probability, entry/exit rules, and who should skip it. 4/5 stars."

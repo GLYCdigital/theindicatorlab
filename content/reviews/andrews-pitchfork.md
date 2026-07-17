@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/andrews-pitchfork.png"
 tags:
   - andrews pitchfork
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Andrews Pitchfork review: how to set it up, trade with it, and whether it actually works. Includes best settings, entry rules, and who it’s for."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/regression-channel.png"
 tags:
   - regression channel
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A reliable mean-reversion tool that plots dynamic support/resistance. Honest review of settings, pros, cons, and how to trade it."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/divergence-detector-universal.png"
 tags:
   - divergence detector universal
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Divergence_Detector_Universal. See how it spots hidden and regular divergences across multiple assets, plus the best settings and entry tactics."

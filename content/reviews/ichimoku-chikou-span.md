@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ichimoku-chikou-span.png"
 tags:
   - ichimoku chikou span
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, lagging Ichimoku Chikou Span indicator for TradingView. No clutter—just the lagging line for clear confirmation. Best settings, entry/exit tips, and honest pros/cons."

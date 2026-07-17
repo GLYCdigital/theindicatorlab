@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gmma.png"
 tags:
   - gmma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Gmma indicator review: 4/5 stars. A multi-timeframe moving average ribbon that filters trends and spots reversals. Settings, backtest results, and real trade examples included."

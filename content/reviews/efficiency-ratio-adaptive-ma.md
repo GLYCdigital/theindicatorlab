@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/efficiency-ratio-adaptive-ma.png"
 tags:
   - efficiency ratio adaptive ma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive moving average that adjusts to market noise using Kaufman's Efficiency Ratio. 4/5 stars. Best for trend followers wanting less lag."

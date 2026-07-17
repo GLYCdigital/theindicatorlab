@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ssl-hybrid.png"
 tags:
   - ssl hybrid
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "SSL Hybrid blends Keltner Channels with SSL smoothing for cleaner trend signals. No repaint, good on 1H-4H. Read our hands-on review."

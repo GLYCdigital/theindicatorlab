@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/vervoortcrossover-zero-lag-npr21.png"
 tags:
   - vervoortcrossover zero lag npr21
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest review of VervoortCrossover Zero Lag NPR21. Covers settings, pros/cons, entry rules, and who should use this zero-lag momentum crossover."

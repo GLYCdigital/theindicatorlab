@@ -1,3 +1,13 @@
+---
+title: "Squeeze Momentum Binary Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/squeeze-momentum-binary.png"
+rating: 4
+description: "** Binary squeeze momentum indicator review. Tests LazyBear's classic for clear buy/sell signals. Settings, strategy, and honest verdict included."
+---
+
 **description:** Binary squeeze momentum indicator review. Tests LazyBear's classic for clear buy/sell signals. Settings, strategy, and honest verdict included.
 
 ---

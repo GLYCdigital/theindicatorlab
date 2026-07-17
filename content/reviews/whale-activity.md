@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/whale-activity.png"
 tags:
   - whale activity
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tracks large-volume transactions in real time to spot whale accumulation or distribution. Honest review of settings, signals, and who it actually works for."

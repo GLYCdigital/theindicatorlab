@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/adaptive-envelopes.png"
 tags:
   - adaptive envelopes
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Adaptive_Envelopes dynamically adjusts volatility bands. Tested for trend and mean reversion. Settings, pros/cons, and a better alternative inside."

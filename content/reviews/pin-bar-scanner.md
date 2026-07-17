@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pin-bar-scanner.png"
 tags:
   - pin bar scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automatically identify high-probability pin bars with customizable wick-to-body ratios and trend filters. A solid tool for price action traders."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/trend-predictor-ribbon-clone-roj-karo-moj-karo.png"
 tags:
   - trend predictor ribbon clone roj karo moj karo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe ribbon indicator that predicts trend direction with color-coded bars and dynamic support/resistance zones. Strong for swing trading."

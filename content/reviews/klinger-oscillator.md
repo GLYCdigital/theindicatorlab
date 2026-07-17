@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/klinger-oscillator.png"
 tags:
   - klinger oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "See how the Klinger Oscillator combines volume and price to spot trend reversals earlier than RSI or MACD. Settings, strategy, and honest limits."

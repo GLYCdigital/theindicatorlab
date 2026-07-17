@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/relative-strength-index-rsi.png"
 tags:
   - relative strength index rsi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest RSI review: tested on 1H/4H. Best settings for overbought/oversold, divergence, and trend confirmation. 4/5 stars."

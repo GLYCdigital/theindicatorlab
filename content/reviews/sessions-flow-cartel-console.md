@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/sessions-flow-cartel-console.png"
 tags:
   - sessions flow cartel console
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A session volume & delta tool for tracking institutional flow. See if it’s worth adding to your toolkit in this honest review."

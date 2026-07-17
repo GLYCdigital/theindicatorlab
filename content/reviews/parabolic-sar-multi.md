@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/parabolic-sar-multi.png"
 tags:
   - parabolic sar multi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Parabolic SAR with adjustable acceleration factors. Great for trend following and trailing stops. 4/5 stars."

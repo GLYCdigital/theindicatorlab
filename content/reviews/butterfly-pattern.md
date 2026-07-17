@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/butterfly-pattern.png"
 tags:
   - butterfly pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Butterfly_Pattern indicator review. Covers key settings, entry/exit strategies, pros & cons, and whether it beats manual pattern spotting."

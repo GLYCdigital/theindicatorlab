@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rainbow-oscillator.png"
 tags:
   - rainbow oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Rainbow_Oscillator review: a multi-color momentum oscillator that identifies overbought/oversold zones and trend shifts. Settings, strategy, and honest pros and cons."

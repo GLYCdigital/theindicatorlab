@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-rate-of-change.png"
 tags:
   - volume rate of change
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Hands-on Volume_Rate_Of_Change review. See how this momentum oscillator confirms breakouts and divergences. Settings, pros, cons, and who should use it."

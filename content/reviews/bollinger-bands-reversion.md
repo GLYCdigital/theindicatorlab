@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-reversion.png"
 tags:
   - bollinger bands reversion
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest review of Bollinger_Bands_Reversion: a mean-reversion tool that flags oversold/overbought extremes. Settings, strategy, pros/cons, and who it's actually for."

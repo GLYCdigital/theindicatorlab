@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/sma-cross.png"
 tags:
   - sma cross
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Sma_Cross gives clear SMA crossover signals with adjustable fast/slow lengths. A solid, no-nonsense tool for trend-following strategies."

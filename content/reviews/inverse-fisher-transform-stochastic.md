@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/inverse-fisher-transform-stochastic.png"
 tags:
   - inverse fisher transform stochastic
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "IFT Stochastics smooths standard stochastic signals using the inverse Fisher transform. Reduces noise, catches reversals early. Best on 1H–4H charts."

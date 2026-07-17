@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-points-camarilla.png"
 tags:
   - pivot points camarilla
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Camarilla pivot points for intraday support/resistance. 4/5 stars. Accurate levels for scalping, but watch for false breakouts on low volume."

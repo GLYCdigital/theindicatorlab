@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/obv-simple.png"
 tags:
   - obv simple
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Obv_Simple review: a clean, no-nonsense On-Balance Volume indicator. Best settings, entry/exit signals, and who should use it."

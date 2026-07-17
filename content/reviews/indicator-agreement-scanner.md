@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/indicator-agreement-scanner.png"
 tags:
   - indicator agreement scanner
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Indicator_Agreement_Scanner. See how it filters false signals by cross-checking multiple indicators. Settings, pros, cons, and who it's for."

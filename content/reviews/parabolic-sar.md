@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/parabolic-sar.png"
 tags:
   - parabolic sar
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Honest Parabolic SAR review: settings, pros/cons, and a simple trend-following strategy. No hype, just what works and what doesn't."

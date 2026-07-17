@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ict-htf-candles-bryan.png"
 tags:
   - ict htf candles bryan
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "ICT HTF Candles Bryan review: see higher timeframe candle colors on your lower timeframe chart for market structure and bias shifts."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kaufman-efficiency-ratio.png"
 tags:
   - kaufman efficiency ratio
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Kaufman_Efficiency_Ratio review: measures trend efficiency vs noise. Covers settings, entry/exit logic, and real-world performance. Not a holy grail, but a solid filter."

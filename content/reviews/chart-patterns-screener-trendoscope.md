@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chart-patterns-screener-trendoscope.png"
 tags:
   - chart patterns screener trendoscope
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automated chart pattern screener that scans for 40+ patterns. Honest review of settings, entry/exit strategies, pros/cons, and who it's for."

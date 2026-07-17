@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chart-pattern-recognition.png"
 tags:
   - chart pattern recognition
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automatically detects 15+ chart patterns like head & shoulders, flags, and wedges. Good for scanning, but not a standalone entry signal."

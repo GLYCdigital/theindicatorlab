@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ergodic-cdi.png"
 tags:
   - ergodic cdi
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A hybrid momentum-volatility indicator that filters signal noise. We test its real edge on BTC, ES, and FX pairs."

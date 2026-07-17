@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-laguerre-filter.png"
 tags:
   - ehlers laguerre filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest review of the Ehlers Laguerre Filter on TradingView. See its smoothed trend, zero-lag behavior, best settings, and how it compares to a simple EMA."

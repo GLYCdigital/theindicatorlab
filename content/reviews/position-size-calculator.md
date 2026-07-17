@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/position-size-calculator.png"
 tags:
   - position size calculator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Position_Size_Calculator review: key settings, risk-based position sizing, pros, cons, and better alternatives for TradingView traders."

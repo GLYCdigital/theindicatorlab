@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/dealing-range-equilibrium-premium-discount-zones-smc.png"
 tags:
   - dealing range equilibrium premium discount zones smc
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "SMC-based tool mapping equilibrium, premium/discount zones, and dealing ranges. Clear visual structure but not a silver bullet. 4/5 stars."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/relative-strength-comparison.png"
 tags:
   - relative strength comparison
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Compares one asset’s price action against another to spot relative strength/weakness. Practical for pairs trading and rotation strategies."

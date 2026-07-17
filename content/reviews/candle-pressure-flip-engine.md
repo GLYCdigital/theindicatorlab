@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/candle-pressure-flip-engine.png"
 tags:
   - candle pressure flip engine
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Candle_Pressure_Flip_Engine review. Tested on BTC and ES. Shows real-time buying vs selling pressure with flip signals. Settings, entries, and who it's for."

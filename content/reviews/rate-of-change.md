@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rate-of-change.png"
 tags:
   - rate of change
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A momentum oscillator that measures the speed of price change. Solid for identifying overbought/oversold conditions and divergences across any timeframe."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/historical-volatility.png"
 tags:
   - historical volatility
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, no-nonsense Historical Volatility indicator for options traders and swing traders. Measures price dispersion over time with clear percentile bands."

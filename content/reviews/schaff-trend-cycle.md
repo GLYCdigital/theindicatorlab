@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/schaff-trend-cycle.png"
 tags:
   - schaff trend cycle
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Schaff Trend Cycle review: a smoothed cycle oscillator that filters noise and catches trend shifts. Settings, strategy, pros/cons, and better alternatives."

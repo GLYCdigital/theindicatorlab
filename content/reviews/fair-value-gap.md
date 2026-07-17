@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fair-value-gap.png"
 tags:
   - fair value gap
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Fair Value Gap indicator. Covers settings, how to trade FVG gaps, pros/cons, and if it's worth adding to your toolkit."

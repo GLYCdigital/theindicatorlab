@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/funding-rate.png"
 tags:
   - funding rate
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Funding_Rate indicator review. See what it tracks, best settings for scalping vs. swing trading, and real entry/exit strategies."

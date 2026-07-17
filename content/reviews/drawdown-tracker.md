@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/drawdown-tracker.png"
 tags:
   - drawdown tracker
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Drawdown_Tracker review: tracks max DD, equity curve, and recovery. Settings, strategy tips, and who should use it. 4/5 stars."

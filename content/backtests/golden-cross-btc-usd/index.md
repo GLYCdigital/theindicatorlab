@@ -1,10 +1,10 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+39.7%",
+      "return_pct": "+41.1%",
       "trades": "0",
       "win_rate_pct": "75.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
+      "return_pct": "-27.7%",
       "trades": "0",
       "win_rate_pct": "75.0%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
-      "url": "/reviews/supertrend-atr-trailing-stop/"
+      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy &amp; how to use it",
+      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     },
     {
-      "title": "ease of movement review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ease-of-movement/"
+      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
+      "url": "/reviews/supertrend-atr-trailing-stop/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-12 → 2026-07-10), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
 
 At **0.37**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,18 @@ Our take: usable as a confirmation tool, but not as a standalone system on BTC. 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

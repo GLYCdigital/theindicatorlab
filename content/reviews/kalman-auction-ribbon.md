@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kalman-auction-ribbon.png"
 tags:
   - kalman auction ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Kalman Auction Ribbon review: A unique trend-following tool using Kalman filters and auction theory. Find settings, entry rules, and honest pros/cons."

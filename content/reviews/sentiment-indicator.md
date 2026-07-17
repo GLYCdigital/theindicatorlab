@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/sentiment-indicator.png"
 tags:
   - sentiment indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Sentiment_Indicator review: tests settings, entries/exits, pros & cons. See if this crowd-sentiment tool fits your strategy."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-wave-corrective-patterns.png"
 tags:
   - elliott wave corrective patterns
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Elliott_Wave_Corrective_Patterns. Tests settings, real entries/exits, and who it's for. No fluff—just what works."

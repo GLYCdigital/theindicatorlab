@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/half-trend.png"
 tags:
   - half trend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "HalfTrend review: a smooth trend-following indicator with adaptive ATR stops. Settings, entry strategy, and honest pros/cons for swing traders."

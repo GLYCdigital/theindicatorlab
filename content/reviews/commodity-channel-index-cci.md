@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/commodity-channel-index-cci.png"
 tags:
   - commodity channel index cci
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Commodity Channel Index (CCI) review. See how it spots overbought/oversold levels and divergences. Settings, entry rules, and when it fails."

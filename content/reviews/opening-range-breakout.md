@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/opening-range-breakout.png"
 tags:
   - opening range breakout
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A no-nonsense ORB indicator for intraday momentum. Clean signals, custom timeframes, and solid backtesting. Best for ES, NQ, and forex scalpers."

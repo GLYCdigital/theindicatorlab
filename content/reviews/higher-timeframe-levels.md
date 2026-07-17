@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/higher-timeframe-levels.png"
 tags:
   - higher timeframe levels
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Higher_Timeframe_Levels: a free TradingView indicator that projects key support/resistance from higher timeframes onto your current chart. Tested settings, entry tips, and pros & cons."

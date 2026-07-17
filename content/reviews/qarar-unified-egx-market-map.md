@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/qarar-unified-egx-market-map.png"
 tags:
   - qarar unified egx market map
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Qarar_Unified_Egx_Market_Map for EGX traders. Covers settings, entry/exit signals, and real performance. Not for beginners."

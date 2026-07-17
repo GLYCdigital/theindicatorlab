@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/order-flow-imbalance.png"
 tags:
   - order flow imbalance
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Order Flow Imbalance tracks aggressive buying vs selling pressure. Decent for spotting reversals, but laggy and noisy on lower timeframes."

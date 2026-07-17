@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/coppock-curve.png"
 tags:
   - coppock curve
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Coppock Curve review: how it works, best settings for monthly/daily charts, entry signals, pros/cons, and who it actually helps."

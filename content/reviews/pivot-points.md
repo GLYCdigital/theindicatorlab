@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-points.png"
 tags:
   - pivot points
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Pivot Points review: settings, strategy tips, and pros/cons from real chart tests. See if this classic support/resistance tool fits your trading."

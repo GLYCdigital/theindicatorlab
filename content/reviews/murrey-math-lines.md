@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/murrey-math-lines.png"
 tags:
   - murrey math lines
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Murrey Math Lines break price into 8/8 octave levels. I tested it for months. Here's the truth on settings, entry logic, and why it's not for trend traders."

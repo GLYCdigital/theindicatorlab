@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gap-and-go.png"
 tags:
   - gap and go
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Gap_And_Go catches pre-market momentum gaps and rides the first 30-min trend. Works best on 1-5 min charts. Not for overnight holds."

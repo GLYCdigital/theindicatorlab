@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractional-ema-kalman-filter.png"
 tags:
   - fractional ema kalman filter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Fractional EMA meets Kalman Filter. Here's my honest take on whether this hybrid trend smoother actually improves trade timing or just adds noise."

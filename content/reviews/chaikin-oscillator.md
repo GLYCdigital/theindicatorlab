@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chaikin-oscillator.png"
 tags:
   - chaikin oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Chaikin Oscillator review: How to use this volume-weighted momentum indicator for divergences, crossovers, and zero-line signals. Settings, pros, cons."

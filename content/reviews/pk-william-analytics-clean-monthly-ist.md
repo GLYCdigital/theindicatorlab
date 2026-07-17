@@ -1,3 +1,13 @@
+---
+title: "Pk William Analytics Clean Monthly Ist Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/pk-william-analytics-clean-monthly-ist.png"
+rating: 4
+description: "Monthly pivot analytics indicator for trend traders. We test its clean layout, key levels, and real trade setups. Full review inside."
+---
+
 **description:** "Monthly pivot analytics indicator for trend traders. We test its clean layout, key levels, and real trade setups. Full review inside."
 
 ---

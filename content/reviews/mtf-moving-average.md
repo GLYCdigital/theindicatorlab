@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-moving-average.png"
 tags:
   - mtf moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Mtf_Moving_Average review: 4/5 stars. Multi-timeframe MA with clean visual layers. Best settings, entry/exit rules, pros, cons, and better alternatives tested."

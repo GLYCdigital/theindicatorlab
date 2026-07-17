@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/equal-highs-lows-liquidity-pool-engine-algo-aakash.png"
 tags:
   - equal highs lows liquidity pool engine algo aakash
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Smart liquidity sweeps detection. Identifies equal highs/lows that act as liquidity pools, then marks when price sweeps them. Solid for ICT/SMC traders but needs practice."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/parametric-indicator.png"
 tags:
   - parametric indicator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Parametric_Indicator review: tested on real charts. Covers settings, entry/exit strategy, pros, cons, and who should actually use this tool."

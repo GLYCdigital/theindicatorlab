@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fractal-support-resistance.png"
 tags:
   - fractal support resistance
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Fractal_Support_Resistance automatically plots fractal-based support and resistance levels. Solid for confluences but watch out for repainting."

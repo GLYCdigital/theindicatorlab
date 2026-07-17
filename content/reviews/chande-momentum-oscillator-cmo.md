@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chande-momentum-oscillator-cmo.png"
 tags:
   - chande momentum oscillator cmo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A no-nonsense review of the Chande Momentum Oscillator. Find the best settings, entry/exit rules, pros/cons, and who should use this 4/5 star indicator."

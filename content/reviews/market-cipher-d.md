@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-cipher-d.png"
 tags:
   - market cipher d
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market_Cipher_D combines volume, momentum, and divergence signals. My honest review covers settings, entry rules, and why it’s not a magic bullet."

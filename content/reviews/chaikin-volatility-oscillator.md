@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chaikin-volatility-oscillator.png"
 tags:
   - chaikin volatility oscillator
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Chaikin_Volatility_Oscillator: how to read volatility expansions, best settings for breakouts, and when this oscillator actually helps your trades."

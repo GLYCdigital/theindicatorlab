@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/acceleration-deceleration.png"
 tags:
   - acceleration deceleration
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bill Williams' AC indicator measures momentum changes. Review covers settings, zero-line cross strategy, and how to combine with AO for high-probability trades."

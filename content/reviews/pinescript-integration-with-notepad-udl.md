@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pinescript-integration-with-notepad-udl.png"
 tags:
   - pinescript integration with notepad udl
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A niche tool for coders: syncs Pine Script editors with Notepad++ UDL. Saves time, but not for casual traders."

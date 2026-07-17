@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ib-orb-live-stats.png"
 tags:
   - ib orb live stats
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Ib_Orb_Live_Stats review. Real settings, entry/exit rules, pros/cons, and better alternatives for TradingView ORB traders."

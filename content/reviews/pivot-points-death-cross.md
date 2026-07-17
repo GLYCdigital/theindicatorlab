@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-points-death-cross.png"
 tags:
   - pivot points death cross
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Pivot Points Death Cross combines standard pivot levels with a moving average cross system. Honest review: settings, pros/cons, and why it’s a 3/5."

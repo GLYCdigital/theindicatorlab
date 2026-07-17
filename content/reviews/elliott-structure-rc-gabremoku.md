@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elliott-structure-rc-gabremoku.png"
 tags:
   - elliott structure rc gabremoku
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Elliott_Structure_Rc_Gabremoku: a real-time Elliott Wave labeling tool. Tested on BTCUSD, ES, and FX. Pros, cons, settings, and exact entry/exit rules."

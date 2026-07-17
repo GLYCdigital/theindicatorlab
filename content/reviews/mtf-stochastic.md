@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/mtf-stochastic.png"
 tags:
   - mtf stochastic
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe stochastic with divergence detection. Practical settings, entry rules, and honest pros/cons for swing and trend traders."

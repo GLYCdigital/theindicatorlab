@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/cci-mtf.png"
 tags:
   - cci mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe CCI indicator that syncs higher timeframe signals to your current chart. Reliable for trend filtering and divergence spotting."

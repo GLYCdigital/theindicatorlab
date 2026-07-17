@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/darvas-box.png"
 tags:
   - darvas box
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Darvas_Box review: how it draws breakout boxes, best settings for stocks & crypto, and when it actually works vs. fails."

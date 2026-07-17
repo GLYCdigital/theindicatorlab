@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/neuralib-a-native-ai-and-deep-learning-runtime.png"
 tags:
   - neuralib a native ai and deep learning runtime
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Neuralib brings on-device AI to TradingView, with LSTM and transformer models for trend prediction. Fast, no cloud lag, but sharp learning curve. 4/5."

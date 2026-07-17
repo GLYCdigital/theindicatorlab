@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pivot-high-low-detector.png"
 tags:
   - pivot high low detector
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Pivot_High_Low_Detector review. Tested pivot detection, best settings, entry rules, and why it's a solid 4-star tool for swing traders."

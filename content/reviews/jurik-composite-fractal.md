@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/jurik-composite-fractal.png"
 tags:
   - jurik composite fractal
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Jurik_Composite_Fractal review: a low-lag fractal indicator for trend detection. Settings, entry/exit rules, and honest pros/cons for day traders."

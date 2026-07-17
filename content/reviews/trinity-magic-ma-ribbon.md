@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/trinity-magic-ma-ribbon.png"
 tags:
   - trinity magic ma ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A clean, multi-timeframe MA ribbon that identifies trend direction and momentum shifts. Best for swing traders on H1–D1. 4/5."

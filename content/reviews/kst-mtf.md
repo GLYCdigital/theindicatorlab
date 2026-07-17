@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/kst-mtf.png"
 tags:
   - kst mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Kst_Mtf review: honest breakdown of this multi-timeframe Know Sure Thing oscillator. Best settings, entry signals, and who it actually works for."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/v2rk-price-action-internal-exteranal-structure.png"
 tags:
   - v2rk price action internal exteranal structure
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Analyzes internal vs external structure for swing trading. Decodes complex market structure without repainting. Best on 15m-1H charts."

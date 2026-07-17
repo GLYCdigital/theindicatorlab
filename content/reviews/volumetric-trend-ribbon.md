@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volumetric-trend-ribbon.png"
 tags:
   - volumetric trend ribbon
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volumetric_Trend_Ribbon combines volume profile with trend ribbons for cleaner entries. See real settings, pros, cons, and who it's for."

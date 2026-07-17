@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/demarker-mtf.png"
 tags:
   - demarker mtf
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe DeMarker indicator for spotting reversals and divergences. Tested on crypto and forex. Settings, strategy, and honest verdict."

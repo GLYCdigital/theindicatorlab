@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/waddah-attar.png"
 tags:
   - waddah attar
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Waddah Attar combines trend strength with explosive breakout detection. My full review covers settings, entry rules, and why it's a hidden gem for scalpers."

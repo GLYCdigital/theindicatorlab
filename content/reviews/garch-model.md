@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/garch-model.png"
 tags:
   - garch model
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Garch_Model brings GARCH(1,1) volatility forecasting to TradingView. I tested it on FX pairs and crypto. Here's how to use it effectively."

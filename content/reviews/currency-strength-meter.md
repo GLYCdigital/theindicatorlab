@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/currency-strength-meter.png"
 tags:
   - currency strength meter
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Currency_Strength_Meter review: how it tracks 8 major currencies, best settings for forex pairs, entry/exit rules, pros, cons, and better alternatives."

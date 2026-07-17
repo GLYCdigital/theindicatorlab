@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-power-zones.png"
 tags:
   - market power zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market_Power_Zones identifies key supply/demand areas using volume and price action. A solid 4/5 for swing traders who want clean entry zones."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-cipher-b.png"
 tags:
   - market cipher b
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market Cipher B combines momentum, volume, and volatility into one actionable dashboard. Here's how to set it up and trade with it."

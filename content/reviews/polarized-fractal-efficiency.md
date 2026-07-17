@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/polarized-fractal-efficiency.png"
 tags:
   - polarized fractal efficiency
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Polarized_Fractal_Efficiency measures trend strength vs noise using fractal dimension. A 4/5 tool for filtering chop—not magic, but solid."

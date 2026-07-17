@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/htf-candle-volume-profile-chartprime.png"
 tags:
   - htf candle volume profile chartprime
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Higher-timeframe volume profile built into a single candle. Review of Chartprime's HTF volume tool, with settings, entry tactics, and honest pros & cons."

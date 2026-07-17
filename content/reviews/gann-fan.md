@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gann-fan.png"
 tags:
   - gann fan
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Gann_Fan draws geometric support/resistance lines based on Gann angles. A solid 4/5 for trend traders who understand time-price symmetry."

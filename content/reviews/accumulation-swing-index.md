@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/accumulation-swing-index.png"
 tags:
   - accumulation swing index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Accumulation Swing Index review: a momentum-volume hybrid that identifies accumulation phases. Settings, strategy, and honest pros and cons."

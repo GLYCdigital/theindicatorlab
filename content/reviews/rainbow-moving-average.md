@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rainbow-moving-average.png"
 tags:
   - rainbow moving average
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Rainbow Moving Average review: test settings, entry/exit strategies, pros/cons. 4/5 stars. Not a holy grail, but a solid visual trend filter."

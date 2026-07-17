@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/volume-ratio.png"
 tags:
   - volume ratio
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Volume Ratio measures buying vs selling pressure in real time. Here's how to set it up, trade with it, and avoid common pitfalls."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/rectangle-pattern.png"
 tags:
   - rectangle pattern
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Rectangle_Pattern: an automated breakout tool for TradingView. Covers settings, entry/exit logic, pros/cons, and who it’s actually for."

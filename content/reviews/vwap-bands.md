@@ -1,3 +1,13 @@
+---
+title: "Vwap Bands Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/vwap-bands.png"
+rating: 4
+description: "**"
+---
+
 **Description:**  
 VWAP Bands review: Settings, strategy, and how to trade volatility with volume-weighted standard deviation bands. Honest 4/5 rating.
 

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/quant-smc.png"
 tags:
   - quant smc
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest 4/5 review of Quant_Smc: a Smart Money Concepts indicator that auto-draws FVG, order blocks, and liquidity zones. See settings, strategy, and if it’s worth installing."

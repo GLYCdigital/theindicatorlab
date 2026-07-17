@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ranked-support-resistance-zones.png"
 tags:
   - ranked support resistance zones
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Automatically identifies and ranks key support/resistance zones by strength. Clear tiers help you spot high-probability reversal and breakout levels."

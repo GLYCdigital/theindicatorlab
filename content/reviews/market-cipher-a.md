@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-cipher-a.png"
 tags:
   - market cipher a
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market_Cipher_A combines momentum, volume, and trend for high-probability entries. An honest review of settings, strategy, and who it actually works for."

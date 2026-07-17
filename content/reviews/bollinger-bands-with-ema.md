@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/bollinger-bands-with-ema.png"
 tags:
   - bollinger bands with ema
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Bollinger_Bands_With_Ema combines Bollinger Bands with an EMA for trend-confirmed volatility breakouts. 4/5 stars for clarity."

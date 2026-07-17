@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-sweep-pro.png"
 tags:
   - liquidity sweep pro
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Liquidity_Sweep_Pro detects liquidity grabs and sweep patterns. We tested it on AAPL, ES, and BTC. Settings, strategy, and honest verdict inside."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/chaikin-money-flow.png"
 tags:
   - chaikin money flow
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Chaikin Money Flow measures buying vs selling pressure over a lookback period. Decent for confirmation, but laggy and noisy as a standalone signal."

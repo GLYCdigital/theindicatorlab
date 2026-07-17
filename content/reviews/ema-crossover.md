@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ema-crossover.png"
 tags:
   - ema crossover
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Review of the EMA Crossover indicator: honest take on settings, pros/cons, and how to trade pullbacks and breakouts. No hype, just real usage."

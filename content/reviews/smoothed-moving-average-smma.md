@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/smoothed-moving-average-smma.png"
 tags:
   - smoothed moving average smma
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "SMMA review: a less laggy cousin of SMA. Tested on BTC and EURUSD. Settings, pros/cons, and when to use it over EMA."

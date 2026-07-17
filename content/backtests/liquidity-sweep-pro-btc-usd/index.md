@@ -1,18 +1,18 @@
 ---
 {
   "title": "Sweep \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-6.5%"
+      "value": "-5.9%"
     },
     {
       "label": "CAGR",
-      "value": "-1.3%"
+      "value": "-1.2%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+39.7%",
+      "return_pct": "+41.1%",
       "trades": "14",
       "win_rate_pct": "26.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-28.1%",
+      "return_pct": "-27.7%",
       "trades": "18",
       "win_rate_pct": "26.1%"
     }
@@ -92,8 +92,8 @@
       "url": "/reviews/nadaraya-watson-regression-liquidity-sweeps-algoalpha/"
     },
     {
-      "title": "liquidity_sweep_pro review: settings, strategy &amp; how to use it",
-      "url": "/reviews/liquidity-sweep-pro/"
+      "title": "mirage_liquidity_sweep_jos_protrader review: settings, strategy &amp; how to use it",
+      "url": "/reviews/mirage-liquidity-sweep-jos-protrader/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-12 → 2026-07-10), the Liquidity Sweep Pro delivered a **-6.5% total return** on BTC-USD, compounding at **-1.3% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Liquidity Sweep Pro delivered a **-5.9% total return** on BTC-USD, compounding at **-1.2% annually**. 
 
 At **0.10**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -137,6 +137,18 @@ Our take: skip it on BTC unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on BTC-USD](/backtests/liquidity-sweep-pro-btc-usd-trades.png)

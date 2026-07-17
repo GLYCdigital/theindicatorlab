@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/elder-ray-index.png"
 tags:
   - elder ray index
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Elder Ray Index review: how it measures buying/selling pressure, best settings, entry rules, and whether it outperforms MACD or OBV."

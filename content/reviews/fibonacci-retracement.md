@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/fibonacci-retracement.png"
 tags:
   - fibonacci retracement
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Fibonacci Retracement review: key settings, real entry/exit strategies, and when this classic tool actually works (and when it doesn’t)."

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/institutional-turtle-soup-smc.png"
 tags:
   - institutional turtle soup smc
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "A practical SMC reversal tool that catches liquidity grabs and turtle soup patterns. Best on 15m-1h. Honest 4/5 review."

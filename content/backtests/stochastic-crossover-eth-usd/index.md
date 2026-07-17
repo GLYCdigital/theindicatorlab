@@ -1,18 +1,18 @@
 ---
 {
   "title": "Stochastic \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-11",
+  "date": "2026-07-13",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-07-14 \u2192 2026-07-12",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-41.2%"
+      "value": "-40.2%"
     },
     {
       "label": "CAGR",
-      "value": "-10.1%"
+      "value": "-9.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "34.4%"
+      "value": "34.2%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "224"
+      "value": "225"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+80.8%",
+      "return_pct": "+84.7%",
       "trades": "19",
-      "win_rate_pct": "34.4%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "44",
-      "win_rate_pct": "34.4%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "45",
-      "win_rate_pct": "34.4%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "50",
-      "win_rate_pct": "34.4%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "42",
-      "win_rate_pct": "34.4%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2026",
-      "return_pct": "-40.4%",
-      "trades": "24",
-      "win_rate_pct": "34.4%"
+      "return_pct": "-39.3%",
+      "trades": "25",
+      "win_rate_pct": "34.2%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,7 +109,7 @@ On ETH, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-12 → 2026-07-10), the Stochastic Crossover delivered a **-41.2% total return** on ETH-USD, compounding at **-10.1% annually**. 
+Over five years (2021-07-14 → 2026-07-12), the Stochastic Crossover delivered a **-40.2% total return** on ETH-USD, compounding at **-9.8% annually**. 
 
 At **-0.27**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **63.6% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.27 | ❌ Weak |
 | Max Drawdown | 63.6% | ⚠️ Significant |
-| Win Rate | 34.4% | ❌ Low — relies on outsized wins |
+| Win Rate | 34.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.92 | ❌ Unprofitable |
-| Trades/Year | ~224 total | Active |
+| Trades/Year | ~225 total | Active |
 
-The **profit factor of 0.92** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 34.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.92** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 34.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on ETH?
 
@@ -137,6 +137,18 @@ Our take: skip it on ETH unless you're combining it with other confirmations or 
 
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 11, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+
+---
+
+**Trade Crypto on OKX — 0.08% Spot Fees**
+
+Execute these signals with institutional-grade liquidity and the lowest fees in crypto.
+
+👉 [Start Trading on OKX](https://my.okx.com/join/89285202)
+
+*The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
+
+
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on ETH-USD](/backtests/stochastic-crossover-eth-usd-trades.png)

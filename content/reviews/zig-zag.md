@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/zig-zag.png"
 tags:
   - zig zag
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Zig Zag review: how it filters noise, best settings for swings, entry/exit rules, and why it's not a standalone strategy. 4/5 ⭐"

@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/renko-pulseflow-elite-by-sam-george-adaptive-trade-map.png"
 tags:
   - renko pulseflow elite by sam george adaptive trade map
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Renko Pulseflow Elite adapts to volatility like no other Renko indicator. I tested it on BTC and ES — here’s my honest take on settings, signals, and trade execution."

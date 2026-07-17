@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/market-microstructure-analytics.png"
 tags:
   - market microstructure analytics
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Market_Microstructure_Analytics reveals hidden order flow, liquidity gaps, and trade imbalance. A solid 4/5 for serious price action traders."

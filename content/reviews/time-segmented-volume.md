@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/time-segmented-volume.png"
 tags:
   - time segmented volume
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Time Segmented Volume reveals intraday volume clusters by session. Honest review with settings, strategy tips, and real trade examples."

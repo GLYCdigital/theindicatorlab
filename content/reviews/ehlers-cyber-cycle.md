@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ehlers-cyber-cycle.png"
 tags:
   - ehlers cyber cycle
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Ehlers_Cyber_Cycle review: a lag-free cycle oscillator for timing reversals. Best settings, entry/exit rules, and honest pros vs. alternatives."

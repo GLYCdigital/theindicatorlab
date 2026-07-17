@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/ttm-squeeze-pro.png"
 tags:
   - ttm squeeze pro
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 5
 description: "Honest TTM Squeeze Pro review: settings, entry rules, and backtest results. Find out if this squeeze indicator is worth your time."

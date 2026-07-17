@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/price-volume-trend.png"
 tags:
   - price volume trend
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Price Volume Trend review: how it combines price and volume for divergence signals, best settings, and who should actually use it."

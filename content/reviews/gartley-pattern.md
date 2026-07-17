@@ -1,3 +1,13 @@
+---
+title: "Gartley Pattern Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/gartley-pattern.png"
+rating: 4
+description: "Automated Gartley pattern detection with harmonic ratios. Accurate XABCD zones, but requires proper trend context. 4/5 stars."
+---
+
 **description:** "Automated Gartley pattern detection with harmonic ratios. Accurate XABCD zones, but requires proper trend context. 4/5 stars."
 
 ---

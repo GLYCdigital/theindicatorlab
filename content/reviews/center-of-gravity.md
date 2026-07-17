@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/center-of-gravity.png"
 tags:
   - center of gravity
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "An honest look at Center_Of_Gravity: a smoothed oscillator that finds dynamic support/resistance. Settings, strategy, and when it actually works."

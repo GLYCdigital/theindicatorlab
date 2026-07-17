@@ -1,3 +1,13 @@
+---
+title: "Regression Oscillator Review: Settings, Strategy & How to Use It"
+date: 2026-07-16
+draft: false
+type: reviews
+image: "/screenshots/regression-oscillator.png"
+rating: 4
+description: "**"
+---
+
 **description:**  
 An honest review of the Regression_Oscillator indicator for TradingView. Get the best settings, entry rules, and whether it actually works.
 

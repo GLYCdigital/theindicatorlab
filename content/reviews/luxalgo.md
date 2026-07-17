@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/luxalgo.png"
 tags:
   - luxalgo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest LuxAlgo Suite review: tested on real charts. Covers best settings, entry/exit signals, pros/cons, and who it actually works for."

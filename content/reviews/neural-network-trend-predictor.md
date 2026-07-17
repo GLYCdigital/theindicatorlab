@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/neural-network-trend-predictor.png"
 tags:
   - neural network trend predictor
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest Neural_Network_Trend_Predictor review: tested on real charts. See how this AI-driven indicator forecasts trend direction with specific settings and entry rules."

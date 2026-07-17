@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/liquidity-absorption-and-rejection-orderflow.png"
 tags:
   - liquidity absorption and rejection orderflow
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Tracks real-time orderflow absorption & rejection zones. Solid for spotting liquidity grabs and failed breakouts. Not a standalone system."

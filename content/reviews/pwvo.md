@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/pwvo.png"
 tags:
   - pwvo
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 3
 description: "Pwvo is a volume-based momentum oscillator. It’s functional but not groundbreaking. Here’s how to set it up and where it falls short."

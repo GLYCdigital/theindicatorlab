@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/delta-profile.png"
 tags:
   - delta profile
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Delta_Profile reveals hidden order flow by plotting cumulative delta vs. price. Honest 4/5 review with settings, strategy, and real trade examples."

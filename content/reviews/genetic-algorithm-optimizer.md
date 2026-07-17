@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/genetic-algorithm-optimizer.png"
 tags:
   - genetic algorithm optimizer
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Honest review of Genetic_Algorithm_Optimizer. Learn how to use its settings for backtesting, avoid overfitting, and when it actually works."

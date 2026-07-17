@@ -6,13 +6,13 @@ type: reviews
 image: "/screenshots/gk-xauusd-diamond-sniper.png"
 tags:
   - gk xauusd diamond sniper
-  - 07
+  - "07"
   - tradingview
   - indicator
   - review
   - trading
 categories:
-  - 07
+  - "07"
   - Technical Analysis
 rating: 4
 description: "Gold-specific breakout sniper with diamond pattern recognition. Reliable on M15-H1 for scalping XAUUSD. 4/5 for niche focus."
