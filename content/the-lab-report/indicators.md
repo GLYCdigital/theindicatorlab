@@ -1,14 +1,14 @@
 ---
 title: "All Indicators — The Lab Report"
-date: 2026-07-12
+date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 78 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 83 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **78 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** {{< param date >}} · **83 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
@@ -47,7 +47,7 @@ Indicators that measure the speed and strength of price movement.
 | Center of Gravity | [→ Full review](/reviews/center-of-gravity/) |
 | Relative Vigor Index | [→ Full review](/reviews/relative-vigor-index/) |
 
-## Trend (21)
+## Trend (22)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -74,8 +74,9 @@ Indicators that identify direction and strength of the prevailing trend.
 | Fractal Adaptive MA | [→ Full review](/reviews/fractal-adaptive-ma/) |
 | ALMA | [→ Full review](/reviews/alma-arnaud-legoux/) |
 | McGinley Dynamic | [→ Full review](/reviews/mcginley-dynamic/) |
+| Zigzag Probalist 🆕 | [→ Full review](/reviews/zigzag-confluence-probalist-essentials/) |
 
-## Volume (14)
+## Volume (16)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -95,8 +96,10 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Klinger Oscillator | [→ Full review](/reviews/klinger-oscillator/) |
 | Twiggs Money Flow | [→ Full review](/reviews/twiggs-money-flow/) |
 | Chaikin Oscillator | [→ Full review](/reviews/chaikin-oscillator/) |
+| Whale Liquidity Absorption 🆕 | [→ Full review](/reviews/whale-liquidity-absorption/) |
+| Volume Profile 🆕 | [→ Full review](/reviews/volume-profile/) |
 
-## Volatility (15)
+## Volatility (17)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -117,6 +120,8 @@ Indicators that measure the magnitude of price fluctuations.
 | Bollinger %B | [→ Full review](/reviews/bollinger-bands-percent-b/) |
 | Historical Volatility | [→ Full review](/reviews/historical-volatility/) |
 | Ulcer Index | [→ Full review](/reviews/ulcer-index/) |
+| Trailing Stop Calculator 🆕 | [→ Full review](/reviews/trailing-stop-calculator/) |
+| ATR Bands 🆕 | [→ Full review](/reviews/atr-bands/) |
 
 ---
 
