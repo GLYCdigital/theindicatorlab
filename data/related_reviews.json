@@ -2489,10 +2489,10 @@
       "score": 16.0
     },
     {
-      "slug": "adx-divergence",
-      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "rsi-divergence-hunter",
+      "title": "Rsi_Divergence_Hunter Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.0
+      "score": 13.0
     }
   ],
   "carrier-volatility-pumori": [
@@ -13877,10 +13877,36 @@
       "score": 16.0
     },
     {
-      "slug": "adx-divergence",
-      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "rsi-divergence-hunter",
+      "title": "Rsi_Divergence_Hunter Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.0
+      "score": 13.0
+    }
+  ],
+  "rsi-divergence-hunter": [
+    {
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-divergence-detector",
+      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "true-strength-index",
+      "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "rsi-macd-combo": [
@@ -15188,19 +15214,19 @@
       "slug": "true-strength-index",
       "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.6
+      "score": 15.7
     },
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 14.4
+      "score": 14.5
     },
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.7
+      "score": 13.8
     },
     {
       "slug": "waddah-attar",
@@ -15571,6 +15597,32 @@
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "take-profit-stop-loss-levels": [
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "tasc-2026-04-a-synthetic-oscillator": [
@@ -17081,6 +17133,32 @@
       "score": 8.0
     }
   ],
+  "weekly-high-low": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "whale-activity": [
     {
       "slug": "ajay-strong-smart-money-scalper",
@@ -17257,8 +17335,8 @@
       "score": 5.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "slug": "alma-moving-average",
+      "title": "Alma Moving Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
