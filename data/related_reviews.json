@@ -727,6 +727,32 @@
       "score": 12.0
     }
   ],
+  "algo-price-action-signals": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "macd-adaptive",
+      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "alligator-bill-williams": [
     {
       "slug": "alligator",
@@ -1105,14 +1131,14 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -2211,6 +2237,12 @@
   ],
   "breakeven-stop-calculator": [
     {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "alma-arnaud-legoux",
       "title": "Alma Arnaud Legoux Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2225,12 +2257,6 @@
     {
       "slug": "arnaud-legoux-moving-average-alma",
       "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "atr-percentile",
-      "title": "Atr_Percentile Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -8501,6 +8527,32 @@
       "score": 8.0
     }
   ],
+  "intrabar-profile-trading": [
+    {
+      "slug": "macd-colored-histogram",
+      "title": "Macd_Colored_Histogram Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "range-reaper-smart-crt-trading-system",
+      "title": "Range_Reaper_Smart_Crt_Trading_System Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "strong-fu-candle",
+      "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "supertrend-macd-combo",
+      "title": "Supertrend_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "inverse-fisher-transform-rsi": [
     {
       "slug": "cardwell-rsi-trade-navigator",
@@ -8743,12 +8795,6 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "adaptive-envelopes",
       "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8757,6 +8803,12 @@
     {
       "slug": "alpha-signal-engine",
       "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "anchored-vwap",
+      "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -11155,6 +11207,12 @@
   ],
   "mtf-macd": [
     {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11169,12 +11227,6 @@
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12155,14 +12207,14 @@
       "score": 12.0
     },
     {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-trend-line",
-      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
+      "slug": "adx-smoothed",
+      "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -15801,8 +15853,8 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -15991,6 +16043,12 @@
   ],
   "trailing-stop-calculator": [
     {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16005,12 +16063,6 @@
     {
       "slug": "ha-macd-nemesis",
       "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "horizontal-red-line",
-      "title": "Horizontal_Red_Line Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16117,6 +16169,32 @@
       "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "trend-strength-indicator": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-macd-confluence",
+      "title": "Rsi_Macd_Confluence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "triangle-pattern": [
@@ -17254,7 +17332,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.8
+      "score": 15.7
     },
     {
       "slug": "schaff-trend-cycle",
@@ -17629,6 +17707,12 @@
   ],
   "zero-lag-macd": [
     {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -17643,12 +17727,6 @@
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
