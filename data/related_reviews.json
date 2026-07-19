@@ -7747,6 +7747,32 @@
       "score": 8.0
     }
   ],
+  "horizontal-red-line": [
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "macd-adaptive",
+      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "htf-candle-volume-profile-chartprime": [
     {
       "slug": "market-profile",
@@ -13435,8 +13461,8 @@
       "score": 9.0
     },
     {
-      "slug": "macd-adaptive",
-      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
+      "slug": "horizontal-red-line",
+      "title": "Horizontal_Red_Line Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15931,8 +15957,8 @@
       "score": 9.0
     },
     {
-      "slug": "macd-adaptive",
-      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
+      "slug": "horizontal-red-line",
+      "title": "Horizontal_Red_Line Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
