@@ -553,12 +553,6 @@
       "score": 8.0
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -567,6 +561,12 @@
     {
       "slug": "adaptive-trend-line",
       "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -747,8 +747,8 @@
       "score": 9.0
     },
     {
-      "slug": "macd-adaptive",
-      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
+      "slug": "liq-sweep-choch-ob-instant",
+      "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -7253,6 +7253,32 @@
       "score": 8.0
     }
   ],
+  "halftrend-long-short-signal-engine": [
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "hammer-detection": [
     {
       "slug": "1-trendline-strategy",
@@ -9281,6 +9307,32 @@
       "score": 8.0
     }
   ],
+  "liq-sweep-choch-ob-instant": [
+    {
+      "slug": "strong-fu-candle",
+      "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cvd",
+      "title": "Cvd Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
+    }
+  ],
   "liquidation-level-estimator": [
     {
       "slug": "1-trendline-strategy",
@@ -9591,6 +9643,32 @@
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "liquidity-sweep-target": [
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-concepts",
+      "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "liquidity-thermal-map": [
@@ -13111,12 +13189,6 @@
       "score": 12.0
     },
     {
-      "slug": "fractional-ema-kalman-filter-d7",
-      "title": "Fractional_Ema_Kalman_Filter_D7 Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
       "slug": "jurik-cfj",
       "title": "Jurik_Cfj Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13125,6 +13197,12 @@
     {
       "slug": "jurik-composite-fractal",
       "title": "Jurik_Composite_Fractal Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
+      "slug": "parabolic-sar-multi",
+      "title": "Parabolic_Sar_Multi Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
