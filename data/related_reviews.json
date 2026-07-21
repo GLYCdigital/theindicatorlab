@@ -1189,9 +1189,9 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 8.0
     }
   ],
@@ -3693,6 +3693,12 @@
   ],
   "dark-cloud-cover": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3708,12 +3714,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 8.0
     }
   ],
@@ -9751,6 +9751,12 @@
   ],
   "luxalgo": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9766,12 +9772,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 8.0
     }
   ],
@@ -10843,6 +10843,12 @@
   ],
   "momentum-reversal-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10857,12 +10863,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -11141,14 +11141,14 @@
       "score": 12.0
     },
     {
-      "slug": "delta-volume",
-      "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
-      "rating": 4,
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 12.0
     },
     {
-      "slug": "footprint-chart",
-      "title": "Footprint_Chart Review: Settings, Strategy & How to Use It",
+      "slug": "delta-volume",
+      "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -11879,6 +11879,32 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "new-york-session-levels": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "nlms-adaptive-trend-filter-backquant": [
@@ -12681,9 +12707,9 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 8.0
     }
   ],
@@ -13189,6 +13215,12 @@
       "score": 12.0
     },
     {
+      "slug": "chaikin-money-flow",
+      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 12.0
+    },
+    {
       "slug": "chaikin-oscillator",
       "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13197,12 +13229,6 @@
     {
       "slug": "chaikin-volatility-oscillator",
       "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "money-flow-index",
-      "title": "Money Flow Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -16405,6 +16431,32 @@
       "score": 12.0
     }
   ],
+  "trend-intensity-index": [
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "trend-market-by-erdensedat": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -17722,7 +17774,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.7
+      "score": 15.8
     },
     {
       "slug": "schaff-trend-cycle",
@@ -18093,6 +18145,32 @@
       "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "xaubands": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "zero-lag-ema": [
