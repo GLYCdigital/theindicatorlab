@@ -8561,6 +8561,12 @@
       "score": 9.0
     },
     {
+      "slug": "machine-learning-trends-and-signals",
+      "title": "Machine_Learning_Trends_And_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "range-reaper-smart-crt-trading-system",
       "title": "Range_Reaper_Smart_Crt_Trading_System Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8569,12 +8575,6 @@
     {
       "slug": "smart-trend-dashboard",
       "title": "Smart_Trend_Dashboard Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "strong-fu-candle",
-      "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10163,6 +10163,32 @@
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "machine-learning-trends-and-signals": [
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "market-cipher-a": [
@@ -12141,6 +12167,32 @@
       "score": 8.0
     }
   ],
+  "orb-session-liquidity-model": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "order-block-detector": [
     {
       "slug": "1-trendline-strategy",
@@ -13439,6 +13491,32 @@
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "quant-confluence-engine": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "quant-smc": [
@@ -14749,6 +14827,12 @@
       "score": 13.0
     },
     {
+      "slug": "quant-confluence-engine",
+      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "rsi-macd-combo",
       "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14757,12 +14841,6 @@
     {
       "slug": "rsi-macd-confluence",
       "title": "Rsi_Macd_Confluence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "schaff-trend-cycle",
-      "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -16341,14 +16419,14 @@
       "score": 13.0
     },
     {
-      "slug": "rsi-macd-combo",
-      "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "quant-confluence-engine",
+      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "rsi-macd-confluence",
-      "title": "Rsi_Macd_Confluence Review: Settings, Strategy & How to Use It",
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
