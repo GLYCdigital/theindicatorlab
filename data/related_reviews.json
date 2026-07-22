@@ -2515,8 +2515,8 @@
       "score": 16.0
     },
     {
-      "slug": "rsi-divergence-hunter",
-      "title": "Rsi_Divergence_Hunter Review: Settings, Strategy & How to Use It",
+      "slug": "rsi-divergence-entry-engine",
+      "title": "Rsi_Divergence_Entry_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -3039,6 +3039,32 @@
       "title": "Atr_Channels Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "change-of-character-choch-alert-system-algo-aakash": [
+    {
+      "slug": "liq-sweep-choch-ob-instant",
+      "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "strong-fu-candle",
+      "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 10.8
+    },
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "chart-pattern-recognition": [
@@ -3691,6 +3717,32 @@
       "score": 8.0
     }
   ],
+  "daily-moving-averages-any-tf": [
+    {
+      "slug": "arnaud-legoux-moving-average-alma",
+      "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double Exponential Moving Average (DEMA) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-multiple-timeframe",
+      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "heikin-ashi-ema-combo",
+      "title": "Heikin_Ashi_Ema_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "dark-cloud-cover": [
     {
       "slug": "1-trendline-strategy",
@@ -4335,8 +4387,8 @@
       "score": 9.0
     },
     {
-      "slug": "ehlers-laguerre-filter",
-      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -7839,14 +7891,14 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "macd-adaptive",
-      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9309,6 +9361,12 @@
   ],
   "liq-sweep-choch-ob-instant": [
     {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9324,12 +9382,6 @@
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cvd",
-      "title": "Cvd Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -11329,8 +11381,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13793,14 +13845,14 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "horizontal-red-line",
-      "title": "Horizontal_Red_Line Review: Settings, Strategy & How to Use It",
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14267,6 +14319,32 @@
       "score": 16.0
     },
     {
+      "slug": "rsi-divergence-entry-engine",
+      "title": "Rsi_Divergence_Entry_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
+  "rsi-divergence-entry-engine": [
+    {
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-divergence-detector",
+      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "rsi-divergence-hunter",
       "title": "Rsi_Divergence_Hunter Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14293,8 +14371,8 @@
       "score": 13.0
     },
     {
-      "slug": "true-strength-index",
-      "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
+      "slug": "rsi-divergence-entry-engine",
+      "title": "Rsi_Divergence_Entry_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -14801,6 +14879,12 @@
       "score": 9.0
     },
     {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -14809,12 +14893,6 @@
     {
       "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
       "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16237,16 +16315,16 @@
       "score": 12.0
     },
     {
-      "slug": "multitimeframe-9-ema-dashed-shaddytrades718",
-      "title": "Multitimeframe_9_Ema_Dashed_Shaddytrades718 Review: Settings, Strategy & How to Use It",
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "hull-ma-cross-signal",
-      "title": "Hull_Ma_Cross_Signal Review: Settings, Strategy & How to Use It",
+      "slug": "multitimeframe-9-ema-dashed-shaddytrades718",
+      "title": "Multitimeframe_9_Ema_Dashed_Shaddytrades718 Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.1
+      "score": 9.0
     }
   ],
   "the-tradegoal-9-0": [
@@ -16425,8 +16503,8 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16789,8 +16867,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18245,8 +18323,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
