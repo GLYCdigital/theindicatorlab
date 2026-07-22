@@ -337,6 +337,32 @@
       "score": 12.0
     }
   ],
+  "adaptive-regression-breakout-map-gainz-algo": [
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "adaptive-swing-timing-engine-algopoint": [
     {
       "slug": "adaptive-envelopes",
@@ -3719,6 +3745,12 @@
   ],
   "daily-moving-averages-any-tf": [
     {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "arnaud-legoux-moving-average-alma",
       "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3733,12 +3765,6 @@
     {
       "slug": "ema-multiple-timeframe",
       "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "heikin-ashi-ema-combo",
-      "title": "Heikin_Ashi_Ema_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4369,6 +4395,12 @@
   ],
   "double-exponential-moving-average-dema": [
     {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "alma-arnaud-legoux",
       "title": "Alma Arnaud Legoux Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -4383,12 +4415,6 @@
     {
       "slug": "bollinger-bands-with-ema",
       "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "daily-moving-averages-any-tf",
-      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -5993,14 +6019,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-line",
-      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "alt-bat-pattern",
-      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -8821,6 +8847,12 @@
       "score": 16.0
     },
     {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-envelopes",
       "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8829,12 +8861,6 @@
     {
       "slug": "adaptive-swing-timing-engine-algopoint",
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "ais-supertrend",
-      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -8893,6 +8919,12 @@
   ],
   "kama": [
     {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8907,12 +8939,6 @@
     {
       "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
       "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -10501,6 +10527,32 @@
       "title": "Volume_Profile_Fixed_Range Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "market-structure-engine-0": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "market-structure-oscillator": [
@@ -16315,14 +16367,14 @@
       "score": 12.0
     },
     {
-      "slug": "daily-moving-averages-any-tf",
-      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "multitimeframe-9-ema-dashed-shaddytrades718",
-      "title": "Multitimeframe_9_Ema_Dashed_Shaddytrades718 Review: Settings, Strategy & How to Use It",
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16829,6 +16881,12 @@
       "score": 13.0
     },
     {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "alma-arnaud-legoux",
       "title": "Alma Arnaud Legoux Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16837,12 +16895,6 @@
     {
       "slug": "arnaud-legoux-moving-average-alma",
       "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -17861,6 +17913,32 @@
       "score": 12.0
     }
   ],
+  "w-x-y-pattern-auto-targets-jpt": [
+    {
+      "slug": "elliott-wave-corrective-patterns",
+      "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "elliott-wave-count",
+      "title": "Elliott_Wave_Count Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "elliott-wave-fibonacci",
+      "title": "Elliott_Wave_Fibonacci Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "elliott-wave-impulse-detector",
+      "title": "Elliott_Wave_Impulse_Detector Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "waddah-attar": [
     {
       "slug": "inverse-fisher-transform",
@@ -17878,13 +17956,13 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.8
+      "score": 15.7
     },
     {
       "slug": "schaff-trend-cycle",
       "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.4
+      "score": 13.3
     }
   ],
   "wedge-polaris": [
@@ -17947,6 +18025,12 @@
       "score": 13.0
     },
     {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "alma-arnaud-legoux",
       "title": "Alma Arnaud Legoux Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -17955,12 +18039,6 @@
     {
       "slug": "arnaud-legoux-moving-average-alma",
       "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
