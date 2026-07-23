@@ -237,11 +237,6 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
     <p>Growing weekly as we publish new reviews and add them to the roster</p>
   </div>
   <div class="lr-benefit">
-    <div class="icon">🔬</div>
-    <h4>All Lab Originals</h4>
-    <p>Every invite-only indicator script we build — CVD Divergence Alerts and more — included free</p>
-  </div>
-  <div class="lr-benefit">
     <div class="icon">🔒</div>
     <h4>Price Locked Forever</h4>
     <p>Subscribe at today's price — your rate never increases. Even as we add 100+ more indicators.</p>
@@ -348,19 +343,8 @@ When 42 of 83 indicators agree on direction, that's not a coincidence. That's a 
   <p><strong>3. Wrong watchlist.</strong> Use /watchlist in the bot to check which markets you're following. Only your 5 selected markets trigger notifications.</p>
 </div>
 <div class="lr-faq">
-  <h3>I subscribed but still can't access your invite-only indicators yet</h3>
-  <p>Our consensus engine runs round the clock — you'll get alerts as soon as Stripe confirms your payment and you message @TheLabReport_bot.</p>
-  <p>Complimentary invite-only indicators are processed manually during business hours, Singapore Time (GMT+8). If you subscribed in the evening or on a weekend, your TradingView access will be added the next business day.</p>
-</div>
-<div class="lr-faq">
   <h3>How do I cancel?</h3>
   <p>One command: /unsubscribe in the Telegram bot. Your subscription stops immediately. No questions, no retention tactics.</p>
-</div>
-<div class="lr-faq">
-  <h3>What are Lab Originals?</h3>
-  <p>Invite-only TradingView indicators we build ourselves. CVD Divergence Alerts is our first — more coming.</p>
-  <p>All subscribers get instant access to every Lab Original, free.</p>
-  <p>Non-subscribers can purchase individual scripts from our <a href="/lab-originals/">Lab Originals</a> page.</p>
 </div>
 <div class="lr-faq">
   <h3>What happens when the price increases?</h3>
@@ -372,7 +356,7 @@ When 42 of 83 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>Do I need TradingView?</h3>
-  <p>No. The Lab Report processes data independently. You receive alerts directly on Telegram. No TradingView account required. (But if you have one, you get priority access to our invite-only scripts.)</p>
+  <p>No. The Lab Report processes data independently. You receive alerts directly on Telegram. No TradingView account required. (TradingView user? Check out our <a href="/lab-originals/">Lab Originals</a> — premium scripts built in-house, sold separately.)</p>
 </div>
 <div class="lr-faq">
   <h3>Is there a free trial?</h3>
