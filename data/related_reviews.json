@@ -761,6 +761,12 @@
       "score": 9.0
     },
     {
+      "slug": "dealing-and-displacement-range-trade-entries",
+      "title": "Dealing_And_Displacement_Range_Trade_Entries Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ha-macd-nemesis",
       "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -769,12 +775,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liq-sweep-choch-ob-instant",
-      "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -1215,9 +1215,9 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 8.0
     }
   ],
@@ -3509,6 +3509,32 @@
       "score": 12.0
     }
   ],
+  "credit-stress-composite": [
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "cumulative-volume-delta": [
     {
       "slug": "bid-ask-volume",
@@ -3771,12 +3797,6 @@
   ],
   "dark-cloud-cover": [
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3792,6 +3812,12 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 8.0
     }
   ],
@@ -3819,6 +3845,32 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "dealing-and-displacement-range-trade-entries": [
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "intrabar-profile-trading",
+      "title": "Intrabar_Profile_Trading Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "dealing-range-equilibrium-premium-discount-zones-smc": [
@@ -8633,6 +8685,12 @@
   ],
   "intrabar-profile-trading": [
     {
+      "slug": "dealing-and-displacement-range-trade-entries",
+      "title": "Dealing_And_Displacement_Range_Trade_Entries Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "macd-colored-histogram",
       "title": "Macd_Colored_Histogram Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8647,12 +8705,6 @@
     {
       "slug": "range-reaper-smart-crt-trading-system",
       "title": "Range_Reaper_Smart_Crt_Trading_System Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "smart-trend-dashboard",
-      "title": "Smart_Trend_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9829,12 +9881,6 @@
   ],
   "luxalgo": [
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9850,6 +9896,12 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 8.0
     }
   ],
@@ -10947,12 +10999,6 @@
   ],
   "momentum-reversal-indicator": [
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10967,6 +11013,12 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -11245,14 +11297,14 @@
       "score": 12.0
     },
     {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "delta-volume",
+      "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 12.0
     },
     {
-      "slug": "delta-volume",
-      "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
+      "slug": "footprint-chart",
+      "title": "Footprint_Chart Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -12811,9 +12863,9 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 8.0
     }
   ],
@@ -13345,12 +13397,6 @@
       "score": 12.0
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
-      "score": 12.0
-    },
-    {
       "slug": "chaikin-oscillator",
       "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13359,6 +13405,12 @@
     {
       "slug": "chaikin-volatility-oscillator",
       "title": "Chaikin_Volatility_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
+      "slug": "money-flow-index",
+      "title": "Money Flow Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -13903,8 +13955,8 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "dealing-and-displacement-range-trade-entries",
+      "title": "Dealing_And_Displacement_Range_Trade_Entries Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15786,7 +15838,7 @@
       "slug": "true-strength-index",
       "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.7
+      "score": 15.6
     },
     {
       "slug": "fisher-transform-divergence",
@@ -17962,7 +18014,7 @@
       "slug": "schaff-trend-cycle",
       "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.3
+      "score": 13.4
     }
   ],
   "wedge-polaris": [
@@ -18251,7 +18303,39 @@
       "score": 8.0
     }
   ],
+  "wyckoff-architectural-range-erdensedat": [
+    {
+      "slug": "wyckoff-pattern-indicator-almostperfect",
+      "title": "Wyckoff_Pattern_Indicator_Almostperfect Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "wyckoff-volume-analysis",
+      "title": "Wyckoff_Volume_Analysis Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "wyckoff-pattern-indicator-almostperfect": [
+    {
+      "slug": "wyckoff-architectural-range-erdensedat",
+      "title": "Wyckoff_Architectural_Range_Erdensedat Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "wyckoff-volume-analysis",
       "title": "Wyckoff_Volume_Analysis Review: Settings, Strategy & How to Use It",
@@ -18269,15 +18353,15 @@
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
     }
   ],
   "wyckoff-volume-analysis": [
+    {
+      "slug": "wyckoff-architectural-range-erdensedat",
+      "title": "Wyckoff_Architectural_Range_Erdensedat Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "wyckoff-pattern-indicator-almostperfect",
       "title": "Wyckoff_Pattern_Indicator_Almostperfect Review: Settings, Strategy & How to Use It",
@@ -18293,12 +18377,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
