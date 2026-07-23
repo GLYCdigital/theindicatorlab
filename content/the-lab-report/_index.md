@@ -269,16 +269,22 @@ When 42 of 83 indicators agree on direction, that's not a coincidence. That's a 
       <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin-bottom: 0.5rem;">Early Adopter</div>
       <div style="font-size: 3rem; font-weight: 800;">$49<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
       <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">50+ indicators live</div>
+      <div style="font-size: 0.95rem; color: #fff; margin-top: 0.3rem;">20 assets tracked</div>
+      <div style="font-size: 0.95rem; color: #fff; margin-top: 0.15rem;">5 watchlist choices</div>
     </div>
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
       <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem;">Supporter</div>
       <div style="font-size: 3rem; font-weight: 800;">$69<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
       <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">100+ indicators live</div>
+      <div style="font-size: 0.95rem; color: #fff; margin-top: 0.3rem;">30 assets tracked</div>
+      <div style="font-size: 0.95rem; color: #fff; margin-top: 0.15rem;">10 watchlist choices</div>
     </div>
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
       <div style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; margin-bottom: 0.5rem;">Member</div>
       <div style="font-size: 3rem; font-weight: 800;">$89<span style="font-size: 1.1rem; font-weight: 400;">/mo</span></div>
       <div style="font-size: 1.1rem; color: #fff; margin-top: 0.5rem;">200+ indicators live</div>
+      <div style="font-size: 0.95rem; color: #fff; margin-top: 0.3rem;">50 assets tracked</div>
+      <div style="font-size: 0.95rem; color: #fff; margin-top: 0.15rem;">10 watchlist choices</div>
     </div>
   </div>
 
