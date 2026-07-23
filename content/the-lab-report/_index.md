@@ -255,8 +255,8 @@ When 42 of 83 indicators agree on direction, that's not a coincidence. That's a 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
   <h2>One subscription. Every feature.<br>Price locked forever.</h2>
-  <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.6; max-width: 580px; margin-left: auto; margin-right: auto;"><br>The price increases when the product improves — more indicators added to the bot. <strong>Your price is locked at whatever it was the day you joined.</strong> The earlier you join, the less you pay — forever.</p>
-  <p style="margin-bottom: 2rem; font-size: 1.3rem; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
+  <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.8; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot.<br><strong>Your price is locked at whatever it was the day you joined.</strong><br>The earlier you join, the less you pay — forever.</p>
+  <p style="margin-bottom: 2rem; font-size: 1.6rem; font-weight: 700; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
     <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.5rem 0.75rem;">
