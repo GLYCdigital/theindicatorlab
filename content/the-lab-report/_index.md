@@ -255,7 +255,7 @@ When 42 of 83 indicators agree on direction, that's not a coincidence. That's a 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
   <h2>One subscription. Every feature.<br>Price locked forever.</h2>
-  <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.8; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators added to the bot.<br><strong>Your price is locked at whatever it was the day you joined.</strong><br>The earlier you join, the less you pay — forever.</p>
+  <p style="color: #fff; font-size: 1.4rem; margin: 0 0 2rem; line-height: 1.8; max-width: 580px; margin-left: auto; margin-right: auto;">The price increases when the product improves — more indicators and assets added to the bot.<br><strong>Your price is locked at whatever it was the day you joined.</strong><br>The earlier you join, the less you pay — forever.</p>
   <p style="margin-bottom: 2rem; font-size: 1.6rem; font-weight: 700; color: #fff;">📊 Join 500+ traders using The Lab Report</p>
   
   <div class="lr-pricing-ladder" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 2.5rem; max-width: 720px; margin-left: auto; margin-right: auto;">
@@ -319,7 +319,25 @@ When 42 of 83 indicators agree on direction, that's not a coincidence. That's a 
 {{< rawhtml >}}
 <div class="lr-faq">
   <h3>What assets are supported?</h3>
-  <p>BTC, ETH, SPY, QQQ, AAPL, TSLA, NVDA, MSFT, GOOGL, EURUSD, GBPUSD, and 10 more.<br>Custom requests welcome — we'll consider expanding the roster in the near future.</p>
+  <p>20 hand-picked markets across three asset classes:</p>
+  <div class="lr-benefits" style="grid-template-columns: 1fr 1fr 1fr; margin: 1rem 0;">
+    <div class="lr-benefit" style="padding: 1rem;">
+      <div class="icon">₿</div>
+      <h4>Crypto (8)</h4>
+      <p>Bitcoin, Ethereum, Solana, Dogecoin, XRP, Cardano, Avalanche, Polkadot</p>
+    </div>
+    <div class="lr-benefit" style="padding: 1rem;">
+      <div class="icon">📈</div>
+      <h4>US Equities (8)</h4>
+      <p>SPY, QQQ, Apple, Tesla, NVIDIA, Microsoft, Google, Amazon</p>
+    </div>
+    <div class="lr-benefit" style="padding: 1rem;">
+      <div class="icon">💱</div>
+      <h4>Forex (4)</h4>
+      <p>EUR/USD, GBP/USD, USD/JPY, AUD/USD</p>
+    </div>
+  </div>
+  <p>Custom requests welcome — we'll consider expanding the roster in the near future.</p>
 </div>
 <div class="lr-faq">
   <h3>What indicators are included?</h3>
