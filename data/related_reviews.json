@@ -761,6 +761,12 @@
       "score": 9.0
     },
     {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ha-macd-nemesis",
       "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -769,12 +775,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liq-sweep-choch-ob-instant",
-      "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4575,6 +4575,32 @@
       "score": 8.0
     }
   ],
+  "dynamic-market-metrics": [
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "dynamic-pivot-fibo-analytics": [
     {
       "slug": "1-trendline-strategy",
@@ -7975,8 +8001,8 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8449,6 +8475,32 @@
       "score": 8.0
     }
   ],
+  "ict-sessions-killzones": [
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "ict-silver-bullet": [
     {
       "slug": "aj-ict-smc",
@@ -8629,6 +8681,32 @@
       "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "institutional-gradient-channel": [
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-concepts",
+      "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-gravity-map-phenlabs",
+      "title": "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "nadaraya-watson-regression-liquidity-sweeps-algoalpha",
+      "title": "Nadaraya_Watson_Regression_Liquidity_Sweeps_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "institutional-turtle-soup-smc": [
@@ -10309,14 +10387,14 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13955,8 +14033,8 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15838,7 +15916,7 @@
       "slug": "true-strength-index",
       "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.6
+      "score": 15.7
     },
     {
       "slug": "fisher-transform-divergence",
