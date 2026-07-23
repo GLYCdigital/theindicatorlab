@@ -6397,12 +6397,6 @@
   ],
   "floor-pivots": [
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -6417,6 +6411,12 @@
     {
       "slug": "anchored-vwap",
       "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "andrews-pitchfork",
+      "title": "Andrews Pitchfork Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -8763,6 +8763,12 @@
   ],
   "intrabar-profile-trading": [
     {
+      "slug": "kinetic-slippage-index-ksi",
+      "title": "Kinetic_Slippage_Index_Ksi Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "macd-colored-histogram",
       "title": "Macd_Colored_Histogram Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8777,12 +8783,6 @@
     {
       "slug": "range-reaper-smart-crt-trading-system",
       "title": "Range_Reaper_Smart_Crt_Trading_System Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "smart-trend-dashboard",
-      "title": "Smart_Trend_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9201,6 +9201,32 @@
       "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy & How to Use It",
       "rating": 3,
       "score": 9.0
+    }
+  ],
+  "kinetic-slippage-index-ksi": [
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "macd-divergence-scanner",
+      "title": "Macd_Divergence_Scanner Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "timeframe-divergence-scanner",
+      "title": "Timeframe_Divergence_Scanner Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "true-strength-index",
+      "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "kitty-s-law-theultimator5": [
@@ -9905,6 +9931,32 @@
       "score": 12.0
     }
   ],
+  "liquidity-zones": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cvd",
+      "title": "Cvd Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "loss-recovery-calculator": [
     {
       "slug": "1-trendline-strategy",
@@ -10049,16 +10101,16 @@
       "score": 16.0
     },
     {
-      "slug": "timeframe-divergence-scanner",
-      "title": "Timeframe_Divergence_Scanner Review: Settings, Strategy & How to Use It",
+      "slug": "kinetic-slippage-index-ksi",
+      "title": "Kinetic_Slippage_Index_Ksi Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "adx-divergence",
-      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "timeframe-divergence-scanner",
+      "title": "Timeframe_Divergence_Scanner Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.0
+      "score": 13.0
     }
   ],
   "macd-rewired-probalist-essentials": [
@@ -14741,6 +14793,32 @@
       "score": 8.0
     }
   ],
+  "scalping-master-buy-and-sell": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ai-source-switching-moving-average",
+      "title": "Ai_Source_Switching_Moving_Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "schaff-trend-cycle": [
     {
       "slug": "center-of-gravity-cog-oscillator",
@@ -16621,6 +16699,12 @@
       "score": 13.0
     },
     {
+      "slug": "kinetic-slippage-index-ksi",
+      "title": "Kinetic_Slippage_Index_Ksi Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "macd-divergence-scanner",
       "title": "Macd_Divergence_Scanner Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16631,12 +16715,6 @@
       "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "adx-divergence",
-      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "tomukas-scale-in": [
@@ -18092,7 +18170,7 @@
       "slug": "schaff-trend-cycle",
       "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.4
+      "score": 13.3
     }
   ],
   "wedge-polaris": [
