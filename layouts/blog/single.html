@@ -21,6 +21,18 @@
     {{ .Content }}
   </div>
 
+  {{/* Inline affiliate CTA — matches review template style */}}
+  <div class="blog-affiliate-inline" style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(232,119,34,0.08) 100%); border: 1px solid var(--accent); border-radius: var(--radius); text-align: center;">
+    <p style="margin: 0 0 0.8rem; font-size: 1.3rem; font-weight: 600;">🔬 Test these indicators on TradingView</p>
+    <p style="margin: 0 0 1rem; color: var(--text-secondary); font-size: 1.1rem;">Run SMA, EMA, HMA, and ALMA side-by-side — no limits with a Pro account.</p>
+    <a href="https://www.tradingview.com/?aff_id=166324" 
+       onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click',{target:'tradingview',review:'{{ .Title | plainify }}',placement:'blog-inline'});"
+       style="display: inline-block; padding: 0.8rem 2rem; background: var(--accent); color: #fff; font-weight: 700; font-size: 1.2rem; border-radius: var(--radius); text-decoration: none;">
+      Try TradingView Pro Free →
+    </a>
+    <p style="margin: 0.6rem 0 0; font-size: 0.9rem; color: var(--text-tertiary);">$15 off your first month — affiliate link</p>
+  </div>
+
   {{ partial "upgrade-to-pro.html" . }}
 
   {{ $currentTags := .Params.tags | default slice }}
