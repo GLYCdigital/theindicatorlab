@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="page-hero" style="background-color: var(--primary);">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p style="max-width:640px;color:var(--text-secondary);">Search {{ len (where .Site.RegularPages "Section" "reviews") }} TradingView indicator reviews. Find the right tools for your strategy.</p>
+  </div>
+</section>
+
+<section class="section-white search-section">
+  <div class="container">
+    <div id="search-ui"></div>
+  </div>
+</section>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: "#search-ui",
+      showSubResults: false,
+      showImages: true,
+      excerptLength: 25,
+      baseUrl: "/",
+    });
+  });
+</script>
+{{ end }}

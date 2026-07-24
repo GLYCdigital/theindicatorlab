@@ -13,6 +13,7 @@
         {{ range .Site.Menus.main }}
         <li><a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
         {{ end }}
+        <li><a href="/search/" aria-label="Search reviews">🔍</a></li>
       </ul>
     </nav>
   </div>
