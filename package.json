@@ -1,0 +1,8 @@
+{
+  "name": "theindicatorlab",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

@@ -1,8 +1,8 @@
 {{ define "main" }}
-<section class="page-hero" style="background-color: var(--primary);">
+<section class="page-hero" style="background-color: var(--primary); color: #fff;">
   <div class="container">
-    <h1>{{ .Title }}</h1>
-    <p style="max-width:640px;color:var(--text-secondary);">Search {{ len (where .Site.RegularPages "Section" "reviews") }} TradingView indicator reviews. Find the right tools for your strategy.</p>
+    <h1 style="color: #fff;">{{ .Title }}</h1>
+    <p style="max-width:640px;color: rgba(255,255,255,0.85);">Search {{ len (where .Site.RegularPages "Section" "reviews") }} TradingView indicator reviews. Find the right tools for your strategy.</p>
   </div>
 </section>
 
