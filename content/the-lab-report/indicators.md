@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 83 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 88 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** {{< param date >}} · **83 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** July 26, 2026 · **88 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (28)
+## Momentum (30)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -46,8 +46,10 @@ Indicators that measure the speed and strength of price movement.
 | Connors RSI | [→ Full review](/reviews/connors-rsi/) |
 | Center of Gravity | [→ Full review](/reviews/center-of-gravity/) |
 | Relative Vigor Index | [→ Full review](/reviews/relative-vigor-index/) |
+| Acceleration/Deceleration 🆕 | [→ Full review](/reviews/acceleration-deceleration/) |
+| Stochastic Momentum Index 🆕 | [→ Full review](/reviews/stochastic-momentum-index/) |
 
-## Trend (22)
+## Trend (23)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -75,8 +77,9 @@ Indicators that identify direction and strength of the prevailing trend.
 | ALMA | [→ Full review](/reviews/alma-arnaud-legoux/) |
 | McGinley Dynamic | [→ Full review](/reviews/mcginley-dynamic/) |
 | Zigzag Probalist 🆕 | [→ Full review](/reviews/zigzag-confluence-probalist-essentials/) |
+| Aroon 🆕 | [→ Full review](/reviews/aroon-up-down/) |
 
-## Volume (16)
+## Volume (17)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -98,8 +101,9 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Chaikin Oscillator | [→ Full review](/reviews/chaikin-oscillator/) |
 | Whale Liquidity Absorption 🆕 | [→ Full review](/reviews/whale-liquidity-absorption/) |
 | Volume Profile 🆕 | [→ Full review](/reviews/volume-profile/) |
+| Market Facilitation Index 🆕 | [→ Full review](/reviews/market-facilitation-index/) |
 
-## Volatility (17)
+## Volatility (18)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -122,6 +126,7 @@ Indicators that measure the magnitude of price fluctuations.
 | Ulcer Index | [→ Full review](/reviews/ulcer-index/) |
 | Trailing Stop Calculator 🆕 | [→ Full review](/reviews/trailing-stop-calculator/) |
 | ATR Bands 🆕 | [→ Full review](/reviews/atr-bands/) |
+| Implied Volatility Rank 🆕 | [→ Full review](/reviews/implied-volatility-rank/) |
 
 ---
 
