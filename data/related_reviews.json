@@ -9567,6 +9567,32 @@
       "score": 8.0
     }
   ],
+  "linear-regression-line": [
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "linear-regression": [
     {
       "slug": "1-trendline-strategy",
@@ -9685,14 +9711,14 @@
       "score": 16.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "slug": "liquidity-sweep-detector",
+      "title": "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.0
+      "score": 13.0
     },
     {
-      "slug": "bid-ask-volume",
-      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -9711,16 +9737,42 @@
       "score": 16.0
     },
     {
+      "slug": "liquidity-sweep-detector",
+      "title": "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "liquidity-grab-detector": [
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "bid-ask-volume",
-      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.0
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-concepts",
+      "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "liquidity-grab-prl-engine-erdensedat": [
@@ -9851,6 +9903,32 @@
       "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "liquidity-sweep-detector": [
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "market-microstructure-analytics",
+      "title": "Market_Microstructure_Analytics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bid-ask-volume",
+      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "liquidity-sweep-pro": [
@@ -10647,14 +10725,14 @@
       "score": 16.0
     },
     {
-      "slug": "bid-ask-volume",
-      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "slug": "liquidity-sweep-detector",
+      "title": "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.0
+      "score": 13.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "slug": "bid-ask-volume",
+      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -18528,7 +18606,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.6
+      "score": 15.7
     },
     {
       "slug": "schaff-trend-cycle",
