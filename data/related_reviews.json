@@ -6423,12 +6423,6 @@
   ],
   "floor-pivots": [
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -6443,6 +6437,12 @@
     {
       "slug": "anchored-vwap",
       "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "andrews-pitchfork",
+      "title": "Andrews Pitchfork Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -10087,6 +10087,32 @@
       "score": 9.0
     }
   ],
+  "london-session-levels": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "loss-recovery-calculator": [
     {
       "slug": "1-trendline-strategy",
@@ -12713,6 +12739,32 @@
       "score": 12.0
     }
   ],
+  "order-flow-fvg": [
+    {
+      "slug": "bid-ask-volume",
+      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
+    },
+    {
+      "slug": "delta-volume",
+      "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "order-flow-imbalance": [
     {
       "slug": "bid-ask-volume",
@@ -12799,6 +12851,12 @@
       "score": 9.0
     },
     {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12807,12 +12865,6 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15313,6 +15365,32 @@
       "score": 8.0
     }
   ],
+  "sma-multiple-timeframe": [
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alpha-signal-engine",
+      "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "atr-percentile",
+      "title": "Atr_Percentile Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "sma-ribbon": [
     {
       "slug": "accelerator-oscillator",
@@ -16254,7 +16332,7 @@
       "slug": "true-strength-index",
       "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.6
+      "score": 15.7
     },
     {
       "slug": "fisher-transform-divergence",
