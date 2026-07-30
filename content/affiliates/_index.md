@@ -124,7 +124,7 @@ description: "Earn 30% recurring commission promoting The Lab Report — the mul
   <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem;">FAQ</h2>
 
   <h3>What does my audience get?</h3>
-  <p>50% off their first month of The Lab Report. After that, $49/month. Same 7-day free trial as the public offer — plus your discount on month one.</p>
+  <p>50% off their first month of The Lab Report. After that, the standard monthly rate — same price everyone pays. Same 7-day free trial as the public offer — plus your discount on month one.</p>
 
   <h3>How and when do I get paid?</h3>
   <p>Commissions vest after 60 days (two paid months). Once vested, you earn 30% per subscriber for as long as they stay subscribed. Stripe handles payouts automatically to your connected bank account.</p>
