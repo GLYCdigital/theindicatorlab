@@ -41,7 +41,7 @@ description: "Earn 30% recurring commission promoting The Lab Report — the mul
 
 <div class="aff-hero">
   <h1>Earn <span>30%</span> Recurring</h1>
-  <p>Promote The Lab Report to your audience. Earn $14.70/month for every subscriber you refer — for the life of their subscription.</p>
+  <p>Promote The Lab Report to your audience. Earn <strong>30%</strong> of every subscription payment — recurring for the life of their subscription.</p>
   <a href="https://t.me/TheLabReport_bot" class="aff-cta">Apply on Telegram →</a>
   <p style="margin-top: 1.25rem; font-size: 1.3rem; color: var(--text-muted);">
     DM <strong>@TheLabReport_bot</strong> with <code>/apply</code>
@@ -55,8 +55,8 @@ description: "Earn 30% recurring commission promoting The Lab Report — the mul
       <div class="label">Commission</div>
     </div>
     <div class="aff-number">
-      <div class="big">$14.70</div>
-      <div class="label">Per sub/month</div>
+      <div class="big">30%</div>
+      <div class="label">Commission</div>
     </div>
     <div class="aff-number">
       <div class="big">Recurring</div>
@@ -73,7 +73,7 @@ description: "Earn 30% recurring commission promoting The Lab Report — the mul
   <div class="aff-card">
     <div class="icon">💰</div>
     <h3>Earn on every referral</h3>
-    <p>You get 30% of every payment your referred subscribers make — monthly or annually. That's $14.70/month per subscriber, every month they stay.</p>
+    <p>You get 30% of every payment your referred subscribers make — monthly or annually. Your commission scales as the price increases, so your earnings grow with the product.</p>
   </div>
   <div class="aff-card">
     <div class="icon">🎁</div>
@@ -127,7 +127,7 @@ description: "Earn 30% recurring commission promoting The Lab Report — the mul
   <p>50% off their first month of The Lab Report. After that, $49/month. Same 7-day free trial as the public offer — plus your discount on month one.</p>
 
   <h3>How and when do I get paid?</h3>
-  <p>Commissions vest after 60 days (two paid months). Once vested, you earn $14.70/month per subscriber for as long as they stay subscribed. Payouts are manual for now — we'll reach out to arrange your preferred payment method.</p>
+  <p>Commissions vest after 60 days (two paid months). Once vested, you earn 30% per subscriber for as long as they stay subscribed. Stripe handles payouts automatically to your connected bank account.</p>
 
   <h3>What if my demo expires?</h3>
   <p>If you have at least one active referral, your demo auto-renews. Keep referring, keep access.</p>
@@ -136,7 +136,7 @@ description: "Earn 30% recurring commission promoting The Lab Report — the mul
   <p>No. Self-referrals are detected and blocked automatically. You earn by referring real traders — not yourself.</p>
 
   <h3>Is there a limit on how much I can earn?</h3>
-  <p>No. Bring 10 subscribers → $147/month. Bring 50 → $735/month. Bring 100 → $1,470/month. No cap, no expiry on commissions.</p>
+  <p>No. Bring 10 subscribers → 30% of every payment. Bring 50 → 30% of every payment. Bring 100 → 30% of every payment. No cap, no expiry on commissions. Your earnings scale with every subscription.</p>
 
   <h3>What markets does The Lab Report cover?</h3>
   <p>20 markets across crypto (BTC, ETH, SOL, DOGE, XRP, ADA, AVAX, DOT), US equities (SPY, QQQ, AAPL, TSLA, NVDA, MSFT, GOOGL, AMZN), and forex (EUR/USD, GBP/USD, USD/JPY, AUD/USD). 88 indicators. Updates every 15 minutes.</p>
