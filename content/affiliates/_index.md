@@ -79,7 +79,7 @@ description: "Partner with The Indicator Lab. Earn recurring commission promotin
   <div class="aff-card">
     <div class="icon">🎟️</div>
     <h3>50% off for your audience</h3>
-    <p>Every affiliate gets a unique coupon code. Your audience gets half off their first month — the same 7-day free trial applies. After that, the standard rate.</p>
+    <p>Every affiliate gets a unique coupon code. Your audience gets the same 7-day free trial, then 50% off their first month. After that, the standard rate applies.</p>
   </div>
   <div class="aff-card">
     <div class="icon">🔑</div>
