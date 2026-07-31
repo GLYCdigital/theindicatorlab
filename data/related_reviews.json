@@ -12765,6 +12765,32 @@
       "score": 8.0
     }
   ],
+  "open-interest-tracker": [
+    {
+      "slug": "-",
+      "title": "  Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "open-interest": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -17601,6 +17627,32 @@
       "score": 8.0
     }
   ],
+  "trade-journal-visualizer": [
+    {
+      "slug": "atr-fibonacci-expansion-zones",
+      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "average-true-range-atr",
+      "title": "Average_True_Range_Atr Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "backtesting-dashboard",
+      "title": "Backtesting_Dashboard Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "bat-pattern",
+      "title": "Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "trailing-stop-calculator": [
     {
       "slug": "-",
@@ -17651,6 +17703,32 @@
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "trend-classification-ml": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "trend-intensity-index": [
