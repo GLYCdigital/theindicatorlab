@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 88 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 93 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** July 26, 2026 · **88 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** August 2, 2026 · **93 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (30)
+## Momentum (32)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -48,8 +48,10 @@ Indicators that measure the speed and strength of price movement.
 | Relative Vigor Index | [→ Full review](/reviews/relative-vigor-index/) |
 | Acceleration/Deceleration 🆕 | [→ Full review](/reviews/acceleration-deceleration/) |
 | Stochastic Momentum Index 🆕 | [→ Full review](/reviews/stochastic-momentum-index/) |
+| Bayesian Probability 🆕 | [→ Full review](/reviews/bayesian-probability-indicator/) |
+| Elder's Thermometer 🆕 | [→ Full review](/reviews/elders-thermometer/) |
 
-## Trend (23)
+## Trend (24)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -78,6 +80,7 @@ Indicators that identify direction and strength of the prevailing trend.
 | McGinley Dynamic | [→ Full review](/reviews/mcginley-dynamic/) |
 | Zigzag Probalist 🆕 | [→ Full review](/reviews/zigzag-confluence-probalist-essentials/) |
 | Aroon 🆕 | [→ Full review](/reviews/aroon-up-down/) |
+| Fractional EMA Kalman 🆕 | [→ Full review](/reviews/fractional-ema-kalman-filter/) |
 
 ## Volume (17)
 
@@ -103,7 +106,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Volume Profile 🆕 | [→ Full review](/reviews/volume-profile/) |
 | Market Facilitation Index 🆕 | [→ Full review](/reviews/market-facilitation-index/) |
 
-## Volatility (18)
+## Volatility (20)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -127,6 +130,8 @@ Indicators that measure the magnitude of price fluctuations.
 | Trailing Stop Calculator 🆕 | [→ Full review](/reviews/trailing-stop-calculator/) |
 | ATR Bands 🆕 | [→ Full review](/reviews/atr-bands/) |
 | Implied Volatility Rank 🆕 | [→ Full review](/reviews/implied-volatility-rank/) |
+| Vertical Horizontal Filter 🆕 | [→ Full review](/reviews/vertical-horizontal-filter/) |
+| Hurst Exponent 🆕 | [→ Full review](/reviews/hurst-exponent/) |
 
 ---
 

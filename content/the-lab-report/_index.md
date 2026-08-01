@@ -102,7 +102,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 
 <div class="lr-trust">
   <span><strong>{{< review-count >}}+</strong> indicator reviews</span>
-  <span><strong>83</strong> indicators tracked</span>
+  <span><strong>88</strong> indicators tracked</span>
   <span><strong>20</strong> markets covered</span>
   <span><strong>Every 15 min</strong> updates</span>
 </div>
@@ -137,7 +137,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
     <span class="lr-tag volume">Volume Profile</span>
     <span class="lr-tag volatility">ATR Bands</span>
   </div>
-  <a href="/the-lab-report/indicators/" class="lr-see-all">See all 88 indicators →</a>
+  <a href="/the-lab-report/indicators/" class="lr-see-all">See all 93 indicators →</a>
 </div>
 {{< /rawhtml >}}
 
@@ -178,15 +178,15 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-step-num">3</div>
   <div>
     <h3>You get the verdict</h3>
-    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 42 of 88 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
+    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 42 of 93 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
   </div>
 </div>
 {{< /rawhtml >}}
 
 <div class="lr-what">
   <h2>What This Is</h2>
-  <p>The Lab Report is a <strong>multi-indicator consensus engine</strong>. 88 indicators across four categories — momentum, volume, trend, volatility — each vote BUY, SELL, or NEUTRAL on 20 hand-picked markets. Every 15 minutes, we tally the votes and send you the verdict.</p>
-  <p>Think of it as a parliament of indicators. Not one noisy voice. 88 of them. When 42 or more agree on direction, you have something statistically sharper than any single indicator can produce — multi-indicator consensus reduces false signals by 60&ndash;70% compared to single-indicator strategies.</p>
+  <p>The Lab Report is a <strong>multi-indicator consensus engine</strong>. 93 indicators across four categories — momentum, volume, trend, volatility — each vote BUY, SELL, or NEUTRAL on 20 hand-picked markets. Every 15 minutes, we tally the votes and send you the verdict.</p>
+  <p>Think of it as a parliament of indicators. Not one noisy voice. 93 of them. When 42 or more agree on direction, you have something statistically sharper than any single indicator can produce — multi-indicator consensus reduces false signals by 60&ndash;70% compared to single-indicator strategies.</p>
   <p><strong>This is not a trading bot.</strong> It does not execute trades. It delivers signal consensus — the raw data you need to make better decisions, faster. What you do with it is your call.</p>
 </div>
 
@@ -199,7 +199,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
       <ul>
         <li>You're tired of conflicting indicators — RSI says buy, MACD says sell, OBV says wait. Who wins? The Report tells you the consensus.</li>
         <li>You have a day job. You can track 20 markets every 15 minutes, or you can pay $49/month and check one message.</li>
-        <li>You already have a system but want a second opinion. Cross-reference your analysis with 88 indicators aggregated in real time.</li>
+        <li>You already have a system but want a second opinion. Cross-reference your analysis with 93 indicators aggregated in real time.</li>
         <li>You swing trade. 15-minute updates catch consensus shifts intraday so you can plan your move without staring at charts.</li>
         <li>You're an indicator geek. See how momentum, volume, trend and volatility indicators interact across real markets — and watch the roster grow weekly as we publish new reviews.</li>
       </ul>
@@ -208,7 +208,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
       <h3 style="color:#ef4444;">❌ Not for you if…</h3>
       <ul class="lr-not">
         <li>You check your portfolio once a quarter. The Report's 15-minute rhythm won't change your life if you're not watching markets at all.</li>
-        <li>Your eyes can track 88 indicators across 20 markets, non-stop, round the clock. If that's you — you don't need a bot. You are the bot.</li>
+        <li>Your eyes can track 93 indicators across 20 markets, non-stop, round the clock. If that's you — you don't need a bot. You are the bot.</li>
         <li>You want trading signals. The Report aggregates indicators. It does not tell you when to buy or sell — you decide what to do with the data.</li>
         <li>You scalp moves in seconds. Every 15 minutes is not tick-by-tick data.</li>
         <li>You expect a guaranteed win rate. Indicators have edge, not certainty. Multi-indicator consensus improves your odds — it doesn't eliminate risk.</li>
