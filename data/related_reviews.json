@@ -5857,12 +5857,6 @@
       "score": 8.0
     },
     {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -5872,6 +5866,12 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 8.0
     }
   ],
@@ -14483,6 +14483,12 @@
   ],
   "qqe-quantitative-qualitative-estimation": [
     {
+      "slug": "supertrend-rsi-combo",
+      "title": "Supertrend_Rsi_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.9
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14497,12 +14503,6 @@
     {
       "slug": "atr-bands",
       "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "Atr_Channels Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -14791,6 +14791,32 @@
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "range-profile-oscillator": [
+    {
+      "slug": "-",
+      "title": "  Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "range-reaper-smart-crt-trading-system": [
@@ -17237,6 +17263,32 @@
       "score": 12.0
     }
   ],
+  "supertrend-rsi-combo": [
+    {
+      "slug": "qqe-quantitative-qualitative-estimation",
+      "title": "Qqe_Quantitative_Qualitative_Estimation Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.9
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "atr-volatility-indicator",
+      "title": "Atr_Volatility_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "supertrend": [
     {
       "slug": "ais-supertrend",
@@ -18031,14 +18083,14 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "bid-ask-volume",
+      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bid-ask-volume",
-      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19568,7 +19620,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.6
+      "score": 15.5
     },
     {
       "slug": "schaff-trend-cycle",
