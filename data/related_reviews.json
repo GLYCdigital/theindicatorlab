@@ -2451,6 +2451,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2459,12 +2465,6 @@
     {
       "slug": "adx-mtf",
       "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-smoothed",
-      "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -4727,6 +4727,32 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "dynamic-market-structure-liquidity-engine-dmsl": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8691,6 +8717,12 @@
       "score": 9.0
     },
     {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8699,12 +8731,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "liquidity-absorption-and-rejection-orderflow",
-      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9939,6 +9965,12 @@
       "score": 9.0
     },
     {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
       "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9947,12 +9979,6 @@
     {
       "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ict-concepts",
-      "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10199,6 +10225,12 @@
       "score": 9.0
     },
     {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
       "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10207,12 +10239,6 @@
     {
       "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ict-concepts",
-      "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10289,8 +10315,8 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13065,14 +13091,14 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15885,6 +15911,58 @@
       "score": 8.0
     }
   ],
+  "session-high-low": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "session-volume-profile": [
+    {
+      "slug": "htf-candle-volume-profile-chartprime",
+      "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "market-profile",
+      "title": "Market_Profile Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "market-structure-volume-profiles-kioseff-trading",
+      "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "multi-timeframe-volume-profiles-tradingiq",
+      "title": "Multi Timeframe Volume Profiles TradingIQ Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "sessions-flow-cartel-console": [
     {
       "slug": "1-trendline-strategy",
@@ -16191,8 +16269,8 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16283,6 +16361,12 @@
       "score": 8.0
     },
     {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16291,12 +16375,6 @@
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -18230,7 +18308,7 @@
       "slug": "smart-money-concepts",
       "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.6
+      "score": 9.5
     },
     {
       "slug": "-",
