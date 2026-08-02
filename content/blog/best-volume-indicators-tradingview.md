@@ -95,6 +95,13 @@ Our selection spans 7 trend indicators, 3 free indicators. The average rating ac
 
 **Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
 
+## Test These on TradingView
+
+📊 **Volume analysis is best done on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script to build your own volume-based edge.
+
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
+
 ---
 
 *All indicators reviewed on live TradingView charts. Ratings reflect our independent testing methodology. Always test indicators in a demo environment before trading with real capital.*

@@ -95,6 +95,13 @@ Our selection spans 10 trend indicators. The average rating across this group is
 
 **Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
 
+## Test These on TradingView
+
+📊 **Power your multi-timeframe analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script to stack your own confluence across timeframes.
+
+[Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
+
 ---
 
 *All indicators reviewed on live TradingView charts. Ratings reflect our independent testing methodology. Always test indicators in a demo environment before trading with real capital.*
