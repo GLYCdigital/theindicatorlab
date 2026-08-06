@@ -10,12 +10,6 @@ tags:
   - "tradingview"
   - "indicator"
   - "review"
-tags:
-  - "macd zero lag"
-  - "trend"
-  - "tradingview"
-  - "indicator"
-  - "review"
   - "trading"
 categories:
   - "Trend"
