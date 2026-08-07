@@ -88,9 +88,19 @@ A: No. Wait for the second candle to confirm. The first cross can be a fakeout.
 
 The Negative Volume Index is a niche tool, not a holy grail. It fills a specific gap: tracking quiet accumulation and distribution. If you pair it with trend confirmation and avoid ranging markets, it's a solid 4-star addition. But if you're looking for a one-click solution, keep shopping.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

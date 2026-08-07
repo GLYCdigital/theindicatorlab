@@ -101,9 +101,19 @@ I tested it on a MACD chart. The indicator itself doesn’t use MACD, but the co
 The Change of Character (CHOCH) Alert System does one thing well: it identifies structural breaks in real-time and alerts you. It’s not a holy grail — you still need confluence from price action or a momentum oscillator like MACD. But for a free tool that saves hours of manual charting, it’s a solid addition to any SMC trader’s toolkit.
 
 Would I rely on it alone? No. But as a first-line filter before manual analysis? Absolutely. Give it a try on your 1H MACD chart — just turn off alerts for anything below 15m.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -89,9 +89,19 @@ A: Yes, especially on 15M-1H. The intrabar profiles filter out the noise from sp
 Intrabar_Profile_Trading is a sharp tool for traders who want to see the market’s micro-structure without drowning in order flow data. It’s not a holy grail—you still need to read price context—but for catching trend shifts early, it’s one of the better indicators I’ve tested. The learning curve is real, but if you put in the screen time, it pays off.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Deducted one star because it’s weak on low timeframes and isn’t beginner-friendly. But for serious trend traders? It’s a keeper.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

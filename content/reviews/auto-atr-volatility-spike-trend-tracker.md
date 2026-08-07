@@ -88,9 +88,19 @@ If you want pure trend direction without volatility filtering, stick with a stan
 ## Final Verdict
 
 **⭐⭐⭐⭐ (4/5)** — Worth installing if you’re tired of laggy trend filters. It won’t make you a millionaire, but it’ll keep you out of bad trades. The auto-adjustment is the killer feature—set it and forget it. Loses a star because it struggles in sideways markets and lacks advanced alert logic. For the price (free), it’s a no-brainer addition to your trend toolbox.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

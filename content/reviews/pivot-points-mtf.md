@@ -100,9 +100,19 @@ Yes. It’s a community script on TradingView.
 Pivot_Points_Mtf is a solid, no-nonsense tool for traders who want clean multi-timeframe pivot levels without repainting. It won’t make you money by itself—no indicator does—but it provides a reliable framework for identifying key support and resistance zones. The lack of intraday pivots and alerts keeps it from being a five-star tool, but for a free script, it punches well above its weight.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

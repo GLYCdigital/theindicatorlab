@@ -93,9 +93,19 @@ This is a trend trader's tool. If you swing trade or position trade and want a c
 The Percentage_Price_Oscillator_Navigator doesn't reinvent the wheel—it makes the wheel smoother. The adaptive signal line and navigator bands are genuinely useful additions that reduce false signals and improve trade management. It's not a holy grail (nothing is), but for trend traders who want a smarter PPO, this is one of the better options on TradingView.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Solid, tested, and worth your chart space if you trade trends. Not essential for beginners, but a genuine upgrade over the default PPO.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

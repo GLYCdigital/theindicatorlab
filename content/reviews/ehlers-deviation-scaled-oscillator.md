@@ -108,9 +108,19 @@ A: If you find RSI’s fixed levels frustrating, yes. This is more adaptive.
 
 The Ehlers_Deviation_Scaled_Oscillator is a well-engineered tool that does exactly what it promises: clean, adaptive momentum readings. It’s not a magic bullet, but it’s a reliable filter that reduces noise without sacrificing too much speed. I give it 4 stars because it’s missing built-in threshold lines and requires some manual setup. But for traders who value signal clarity over flashy features, this is a keeper.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

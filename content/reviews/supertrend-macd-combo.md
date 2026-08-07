@@ -90,9 +90,19 @@ Yes. The defaults are generic. Test on 1-2 weeks of data before going live.
 **⭐️⭐️⭐️⭐️ (4/5)**
 
 The Supertrend_Macd_Combo does what it promises: combine two proven tools into one clean signal. It’s not revolutionary, but it’s practical. The slight repaint on lower timeframes and the need for manual confirmation keep it from a perfect score. For swing traders on 1H-4H, this is a solid addition to your toolkit—free, functional, and honest. No fluff, no hype. Just a better way to follow trends.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

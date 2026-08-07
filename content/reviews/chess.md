@@ -103,9 +103,19 @@ They complement each other. Use MACD for divergence, Chess for trend state confi
 Chess isn't revolutionary, but it's a well-executed trend tool that solves a real problem: filtering out noise without adding lag. The adaptive lookback is the standout feature, and the visual clarity is better than anything in its class. It's not a complete system — you'll still need your own risk management and entry timing — but as a trend filter, it's genuinely good.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Worth installing if you trade swings on higher timeframes. Not a game-changer, but a solid upgrade over default MACD.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

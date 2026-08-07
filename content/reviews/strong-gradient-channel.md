@@ -104,9 +104,19 @@ A: Only for direction bias. Don’t use it for volatility-based strategies — u
 ⭐ **4/5 Stars**
 
 *Strong_Gradient_Channel* earns a solid 4 stars because it does exactly what it promises: **visualize trend momentum with adaptive support/resistance zones.** It’s not flashy, not over-engineered, and it won’t replace your fundamental analysis. But as a trend filter and exit tool, it’s one of the better free indicators in the TradingView catalog. The only thing holding it back from 5 stars is the lack of built-in alerts and the noise in sideways markets. If you’re a trend trader who hates laggy indicators, this is worth adding to your toolkit.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

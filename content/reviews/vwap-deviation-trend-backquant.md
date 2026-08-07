@@ -100,9 +100,19 @@ I found this works best on 1H–4H charts. On daily charts, the bands are too wi
 Vwap_Deviation_Trend_Backquant earns four stars because it does one thing exceptionally well: it quantifies trend strength using VWAP deviations. It’s not perfect—ranging markets will frustrate you, and the complexity isn’t for everyone. But if you’re a swing trader who respects VWAP and wants a clear, statistical edge in defining trend phases, this indicator delivers. Just pair it with a volatility filter and price action confirmation.
 
 Would I install it permanently? Yes, on my 4H swing trading setup. But I keep a simple VWAP line as backup for when the bands get too wide.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

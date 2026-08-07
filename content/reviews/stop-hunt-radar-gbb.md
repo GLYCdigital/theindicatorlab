@@ -95,9 +95,19 @@ A: Yes, it’s a paid indicator. Check the TradingView store for current price.
 
 Stop_Hunt_Radar_Gbb is a solid specialized tool. It won’t make you a millionaire overnight, but it will save you time identifying liquidity sweeps on GBP pairs. It’s not perfect—false signals on low timeframes and pair-specific limitations are real drawbacks. But if you already trade GBP and understand market structure, this indicator earns its keep. I give it a solid 4 out of 5 stars. No magic, just a focused tool that works.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

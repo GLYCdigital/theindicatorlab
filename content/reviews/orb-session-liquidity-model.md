@@ -86,9 +86,19 @@ This is for **intraday momentum traders** who trade breakouts and don’t mind w
 Orb_Session_Liquidity_Model is a **solid 4/5** indicator. It does one thing—map session liquidity zones—and does it well. It’s not a holy grail (no indicator is), but if you pair it with a solid risk management plan and a clean trend filter (I use a 200 EMA on the 15-minute), it can give you a real edge. The lack of alerts is frustrating, but the visual clarity makes up for it. Download it, set it up on a 15-minute ES chart, and watch for those sweeps. You’ll see the pattern within a week.
 
 **Rating**: ⭐⭐⭐⭐
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

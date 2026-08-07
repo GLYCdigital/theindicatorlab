@@ -85,9 +85,19 @@ A: Yes, same rules. Swap DI+ and DI-.
 
 **Bottom line:** Adx_Smoothed is a **solid 4/5** for traders who already use ADX and want to reduce noise. It won't magically find trends, but it'll stop you from entering fake ones. If you're new to ADX, start with the raw version first—understand the baseline before smoothing it. For $0 (it's free), there's no reason not to try it. Just don't expect it to predict the future. No indicator does.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

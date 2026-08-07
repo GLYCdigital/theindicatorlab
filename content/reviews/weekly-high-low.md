@@ -86,9 +86,19 @@ This is for **discretionary traders** who want a quick, reliable reference for k
 ## Final Verdict
 
 ⭐ **4/5** – *Weekly_High_Low* is a no-nonsense tool that does exactly what it promises. It won’t make you a profitable trader by itself, but it will help you stop chasing price and start respecting established levels. It loses a star for the lack of alerts and the fact that it’s purely retrospective — but for a free, zero-maintenance indicator, that’s a minor complaint. Add it to your chart, set your levels, and trade the week with more clarity.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

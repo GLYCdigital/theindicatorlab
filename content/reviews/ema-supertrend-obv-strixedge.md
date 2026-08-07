@@ -101,9 +101,19 @@ Not really. OBV divergence signals are too rare on the 5m or 15m charts. You’l
 Ema_Supertrend_Obv_Strixedge is a solid, no-nonsense trend indicator that does exactly what it promises: combines EMA, SuperTrend, and OBV divergence into one actionable tool. It won’t make you a millionaire overnight, but it will keep you disciplined if you follow the triple confirmation logic. The 4/5 rating comes from its limited applicability on lower timeframes and the occasional conflict between components in sideways markets. For swing traders, it’s a keeper. For scalpers, skip it.
 
 **Bottom line:** If you want a single-pane trend system that actually filters noise and flags reversals early, install this. Just pair it with a solid risk management plan—no indicator can do that for you.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

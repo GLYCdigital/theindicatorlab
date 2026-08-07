@@ -97,9 +97,19 @@ It’s free to add to your TradingView chart. No subscription required.
 **⭐⭐⭐⭐ (4/5)**  
 
 The *Rsi_Divergence_Entry_Engine* is a solid, no-nonsense divergence scanner that does exactly what it promises. It’s not a holy grail—no indicator is—but it cuts through the noise and gives you clean, actionable signals. If you already know how to trade divergences and want a faster way to spot them, this is worth adding to your toolkit. Just don’t expect it to do the thinking for you.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -93,9 +93,19 @@ No. It shows trend and volatility. You define entry logic.
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
 Xaubands is a solid, no-nonsense trend band indicator that does exactly what it promises: show trend direction and volatility shifts without repainting or clutter. It’s not revolutionary, but it’s better than Bollinger Bands for most swing trading scenarios. Loses one star because it lacks native alerts for color changes and can flicker on low timeframes. If you trade 1H-4H, it’s worth installing.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

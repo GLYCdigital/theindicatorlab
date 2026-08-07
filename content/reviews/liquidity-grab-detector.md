@@ -96,9 +96,19 @@ Poorly. The detector needs trending conditions. Use the trend filter or skip it 
 Liquidity_Grab_Detector is a sharp, no-nonsense tool for traders who understand market structure. It won’t make you profitable alone—you still need entry discipline and risk management—but it cuts through the noise and shows you exactly where liquidity was taken. That’s valuable.
 
 Docked one star because of the false signals in ranges and the lack of built-in trade management. But for what it does—detecting liquidity grabs—it’s one of the better options on TradingView. If you trade trends and want to avoid getting stopped out by market makers, this deserves a spot in your toolkit.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

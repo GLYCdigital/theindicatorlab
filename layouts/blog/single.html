@@ -21,16 +21,32 @@
     {{ .Content }}
   </div>
 
-  {{/* Inline affiliate CTA — matches review template style */}}
-  <div class="blog-affiliate-inline" style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(232,119,34,0.08) 100%); border: 1px solid var(--accent); border-radius: var(--radius); text-align: center;">
-    <p style="margin: 0 0 0.8rem; font-size: 1.3rem; font-weight: 600;">🔬 Test these indicators on TradingView</p>
-    <p style="margin: 0 0 1rem; color: var(--text-secondary); font-size: 1.1rem;">Run SMA, EMA, HMA, and ALMA side-by-side — no limits with a Pro account.</p>
-    <a href="https://www.tradingview.com/?aff_id=166324" 
-       onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click',{target:'tradingview',review:'{{ .Title | plainify }}',placement:'blog-inline'});"
-       style="display: inline-block; padding: 0.8rem 2rem; background: var(--accent); color: #fff; font-weight: 700; font-size: 1.2rem; border-radius: var(--radius); text-decoration: none;">
-      Try TradingView Pro Free →
-    </a>
-    <p style="margin: 0.6rem 0 0; font-size: 0.9rem; color: var(--text-tertiary);">$15 off your first month — affiliate link</p>
+  {{/* Inline CTA — Lab products first (highest LTV), then TradingView */}}
+  <div class="blog-affiliate-inline" style="margin: 2rem 0; padding: 1.5rem; background: var(--card-bg); border: 2px solid #3b82f6; border-radius: var(--radius-lg);">
+    <p style="margin: 0 0 0.75rem; font-weight: 700; font-size: 1.3rem; text-align: center;">🔬 Go Deeper Than One Indicator</p>
+    <p style="margin: 0 0 1rem; color: var(--text-secondary); font-size: 1.1rem; text-align: center; line-height: 1.6;">
+      Enjoyed this comparison? Get real-time consensus from 93 indicators across 20 markets — every 15 minutes, right to your phone.
+    </p>
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin-bottom: 0.75rem;">
+      <a href="/the-lab-report/" 
+         onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click',{target:'lab-report',review:'{{ .Title | plainify }}',placement:'blog-inline'});"
+         style="display: inline-block; background: #3b82f6; color: #fff; font-weight: 700; padding: 12px 28px; border-radius: var(--radius); text-decoration: none; font-size: 1.15rem; text-align: center; box-shadow: 0 2px 8px rgba(59,130,246,0.3);">
+        🔬 Lab Report · $49/mo →
+      </a>
+      <a href="/lab-edge/" 
+         onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click',{target:'lab-edge',review:'{{ .Title | plainify }}',placement:'blog-inline'});"
+         style="display: inline-block; background: #10b981; color: #fff; font-weight: 700; padding: 12px 28px; border-radius: var(--radius); text-decoration: none; font-size: 1.15rem; text-align: center; box-shadow: 0 2px 8px rgba(16,185,129,0.3);">
+        📈 Lab Edge · $79/mo →
+      </a>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://www.tradingview.com/?aff_id=166324" 
+         onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click',{target:'tradingview',review:'{{ .Title | plainify }}',placement:'blog-inline'});"
+         style="display: inline-block; border: 1px solid var(--card-border); color: var(--text); font-weight: 600; padding: 8px 24px; border-radius: var(--radius); text-decoration: none; font-size: 1rem;">
+        Or try it on TradingView →
+      </a>
+    </div>
+    <p style="margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--text-muted); text-align: center;">7-day free trial · Cancel anytime · Affiliate link</p>
   </div>
 
   {{ partial "upgrade-to-pro.html" . }}

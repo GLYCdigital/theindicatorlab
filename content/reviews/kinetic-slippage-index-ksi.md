@@ -89,9 +89,19 @@ Poorly. Add a trend filter like ADX or a 200-period moving average.
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
 The Kinetic_Slippage_Index_Ksi is a solid addition to any trend trader’s toolbox—especially if you’ve been frustrated by late MACD signals. It’s not a standalone system, but as a confirmation tool for reversals and continuations, it earns its keep. The one-star deduction is for the lack of divergence alerts and the whipsaw risk in choppy conditions. If you pair it with a trend filter and practice spotting divergences, you’ll find it outperforms most free trend oscillators. Give it 20 trades before judging—it clicks after you see the slippage in action.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

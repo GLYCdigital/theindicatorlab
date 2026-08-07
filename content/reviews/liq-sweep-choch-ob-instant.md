@@ -104,9 +104,19 @@ Yes, but avoid during low-liquidity sessions (Asian close). Sweeps are less reli
 Liq_Sweep_Choch_Ob_Instant is a solid, free tool for traders who know what they’re looking at. It saves time by automating pattern recognition, and the no-repaint guarantee is a rare find. It loses a star because of noise on lower timeframes and the occasional Choch lag. But if you pair it with a trend filter (e.g., 200 EMA) and stick to 1H+, it becomes a reliable edge.  
 
 **Bottom line**: Install it, but don’t rely on it blindly. Use it as a screener, not a signal generator.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

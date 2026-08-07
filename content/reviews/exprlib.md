@@ -83,9 +83,19 @@ A: Yes, it’s a Pine Script library available in the community scripts section.
 ### Final Verdict
 Exprlib is a 4/5 star tool for serious indicator builders. It won’t make you money by itself, but it’ll cut your coding time in half and let you test advanced math ideas. If you’re comfortable with Pine Script and need matrix functions or robust percentile calculations, this is a no-brainer. If you’re a beginner, come back after you’ve written your first custom indicator.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

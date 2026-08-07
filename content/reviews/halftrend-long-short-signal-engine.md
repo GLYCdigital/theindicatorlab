@@ -102,9 +102,19 @@ Solid for trend days. On range days, you’ll get chopped up—use the trend fil
 The Halftrend_Long_Short_Signal_Engine is a reliable, no-nonsense trend-following indicator that delivers exactly what it promises: clear long/short signals with solid alerting. It’s not a holy grail—it will fail in chop—but if you respect its limitations and trade with the trend, it’s a powerful tool.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – One star off for whipsaw vulnerability and lack of a built-in volatility filter. Everything else is solid.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

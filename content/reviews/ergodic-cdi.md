@@ -87,9 +87,19 @@ A: Yes. I tested on BTC, ETH, and SOL. Works best on BTC 1H with period 14.
 
 The Ergodic Candlestick Dynamics Index is a solid 4-star tool for traders who want to cut through oscillator noise without switching to lagging trendlines. It's not perfect on trend days, but the divergence detection and adaptive smoothing give it a real edge. Install it, run it on 1H BTC or ES, and focus on the divergences—that's where the money is.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -91,9 +91,19 @@ A: 1H to 4H for swing. Lower than 5m and you’ll get noise. Higher than daily a
 
 The Projection Oscillator is a solid 4-star tool. It’s not revolutionary, but it’s genuinely useful if you understand its limits. It shines in ranging markets and for early reversal detection. In strong trends, keep your finger on the exit button. If you’re tired of lagging oscillators and want something that actually tries to look ahead, this is worth adding to your toolbox. Just don’t expect it to predict the next flash crash — nothing does that.
 
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -97,9 +97,19 @@ Absolutely. The percentage-based calculation handles crypto's volatility well. J
 Price_Rate_Of_Change_Proc is a solid, well-executed momentum indicator that does exactly what it promises — no more, no less. It's not going to rewrite your trading playbook, but if you're looking for a cleaner ROC with practical smoothing options, this is a legitimate upgrade over the default.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — It earns the rating through solid execution and practical design. It loses a star because it doesn't push the concept forward in any meaningful way. If you want a reliable momentum filter that won't clutter your charts, this is worth installing. Just don't expect it to do your thinking for you.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

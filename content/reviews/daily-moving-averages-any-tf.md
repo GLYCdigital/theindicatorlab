@@ -100,9 +100,19 @@ Yes. No subscription or Pine Script knowledge needed.
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
 Daily_Moving_Averages_Any_Tf does one thing and does it well: it brings daily trend context to your lower timeframe chart without clutter or repainting. It’s not a magic bullet — you still need your own entry logic — but for traders who value multi-timeframe alignment, it’s a reliable, free add-on. The lack of weekly support and alerts keeps it from a perfect score, but for daily-focused trend traders, this is a solid 4-star tool.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

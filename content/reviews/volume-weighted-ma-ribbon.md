@@ -109,9 +109,19 @@ A: Manually via TradingView’s alert system. Set condition “cross of VWMA 9 a
 The Volume_Weighted_Ma_Ribbon does one thing differently from the dozens of other MA ribbons out there, and that one thing—volume weighting—actually matters. It’s not a holy grail, but it’s a solid filter that keeps you out of low-conviction moves. If you already like MA ribbons and understand volume analysis, this is a worthwhile upgrade.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – A genuinely useful twist on a classic concept. Loses a star for the lack of built-in alerts and occasional erratic behavior on low-volume pairs.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -85,9 +85,19 @@ Daily and 4H. On 1H, it’s okay but expect more false signals during news event
 Parabolic_Sar_Macd_Combo earns a solid 4 out of 5 stars. It’s not revolutionary, but it’s a reliable tool that does exactly what it promises: filter noise with two proven indicators. If you’re tired of manual alignment or chasing false PSAR flips, install it. Just don’t expect miracles in sideways markets—nothing works there. Use it with a trend filter, and it’ll pay for itself in saved headaches.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -95,9 +95,19 @@ Yes, especially for Bitcoin and Ethereum, where higher timeframe volume zones ar
 ⭐ **4/5 Stars**
 
 Multi_Timeframe_Volume_Profiles does one thing—overlay higher timeframe volume profiles—and does it well. It’s not flashy, it’s not a holy grail, but it’s a practical tool for seeing where the market has already voted with volume. The clutter and CPU usage keep it from a perfect score, but for serious multi-timeframe traders, it’s a solid addition to the toolkit. Recommended.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

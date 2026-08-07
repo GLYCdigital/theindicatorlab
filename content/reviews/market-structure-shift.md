@@ -93,9 +93,19 @@ Not built-in. You’ll need to apply it to multiple charts or use TradingView’
 Market_Structure_Shift does one thing and does it cleanly. It’s not flashy, it won’t make you a profitable trader on its own, but it automates a tedious part of technical analysis and does it without repainting or lag. The lack of alerts and the noise in ranging markets keep it from being a 5-star tool. For traders who already understand market structure and want to save time, it’s a solid 4-star addition to your toolkit — just don’t expect it to think for you.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

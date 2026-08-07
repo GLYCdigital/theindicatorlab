@@ -95,9 +95,19 @@ Yes. The chart shows a MACD overlay. Use the histogram to confirm momentum — g
 **4 out of 5 stars.** Rounding_Bottom_Top isn’t revolutionary, but it’s reliable. It does one thing — detect rounded reversals — and does it without repainting or selling you a dream. Pair it with volume and a momentum oscillator, and you’ve got a solid edge. For swing traders who hate guessing where the bottom or top is, this is a keeper.
 
 **Rating: ⭐⭐⭐⭐**
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

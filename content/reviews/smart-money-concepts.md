@@ -95,9 +95,19 @@ LuxAlgo’s version is flashier but more prone to false signals. This one is lea
 Smart_Money_Concepts is a solid tool for trend traders who already grasp institutional concepts. It won’t make you profitable overnight — no indicator does — but it saves hours of manual zone drawing and provides a clean edge when paired with MACD. The 4-star rating reflects its consistency in trending markets and its weaknesses in choppy conditions.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Install it if you trade swings on 1H-4H and want a clutter-free ICT toolkit.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

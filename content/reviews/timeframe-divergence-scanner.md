@@ -91,9 +91,19 @@ A: I’d keep it to 3–4 timeframes max. Scanning 5+ slows down the chart, espe
 The *Timeframe_Divergence_Scanner* is a solid tool that does exactly what it promises—no fluff, no overpromising. You have to invest time in dialing in the settings, but once you do, it’s a reliable companion for multi-timeframe divergence trading. It’s not perfect, but it’s one of the better scanners I’ve tested.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

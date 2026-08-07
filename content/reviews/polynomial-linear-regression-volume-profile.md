@@ -97,9 +97,19 @@ A: In settings, set “Show Volume Profile” to false. You’ll keep just the r
 **⭐⭐⭐⭐ (4/5)**
 
 Polynomial_Linear_Regression_Volume_Profile is a solid tool for trend traders who want volume context. It’s not a holy grail—it fails in sideways markets and lags breakouts—but it does its job cleanly. I’d give it 5 stars if it had user-defined alert zones on the volume profile (e.g., “alert when price reaches top 10% volume node”). For now, it’s a reliable add-on, not a standalone system. Install it if you trade trends and already use volume profile. Skip it if you scalp or trade ranges.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

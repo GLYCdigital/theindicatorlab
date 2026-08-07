@@ -101,9 +101,19 @@ No. The LSMA is a true moving average — each value is fixed once the candle cl
 The Least Squares Moving Average is a solid, no-frills tool that solves a real problem: lag. It’s not perfect—range markets will chew you up—but for trend-following on 1H–4H charts, it’s one of the best simple moving averages I’ve used. At a fair price and with no bloat, it earns a solid 4 out of 5 stars.
 
 **Verdict: ⭐⭐⭐⭐ (4/5)** — Install it if you trade trends and want a cleaner, faster MA. Skip it if you need a complete system or trade only ranges.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

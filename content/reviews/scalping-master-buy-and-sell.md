@@ -104,9 +104,19 @@ Poorly. Use the Trend Filter to skip sideways zones, or combine with an ADX (abo
 Scalping_Master_Buy_And_Sell is a solid, no-nonsense trend arrow indicator that delivers on its core promise: clear, non-repainting entry signals for short-term scalping. It’s not revolutionary, but it’s reliable—and in trading, reliable beats flashy every time. The lack of built-in exit logic means you need to bring your own risk management, but for the price (or free if you find a community version), it’s worth adding to your toolkit.
 
 **Rating**: ⭐⭐⭐⭐ (4/5) – Honest, functional, and does exactly what it says. Just don’t expect it to trade for you.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

@@ -93,9 +93,19 @@ Adxr_With_Di earns a solid 4 stars. It's not flashy, not revolutionary — but i
 It loses a star for the missing alerts and lack of multi-timeframe analysis — both would have made this a truly complete tool. But if you're looking for a dependable trend confirmation layer that won't clutter your charts or lie to you, this is a solid addition to your arsenal.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*

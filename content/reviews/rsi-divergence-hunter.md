@@ -93,9 +93,19 @@ The indicator is RSI-based only, but you can overlay it on a MACD chart (as show
 ## Final Verdict
 
 Rsi_Divergence_Hunter is a solid, no-bloat tool that does one thing well: catch RSI divergences fast. It’s not perfect—chop kills its reliability—but paired with a trend filter like MACD or EMA slope, it’s a reliable addition to any trend trader’s toolkit. For the price (free), you’re getting professional-grade divergence detection that would cost hours of manual work. **⭐ 4/5** — loses one star for the lack of multi-indicator support and alert granularity, but at this price point, it’s hard to complain.
-## Get Started with Better Trading Tools
+---
 
-📊 **Power your analysis on TradingView** — the platform that powers The Indicator Lab. Get real-time data, 100M+ indicators, and Pine Script.
+## Go Deeper with The Indicator Lab
+
+🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+
+[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+
+📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
+
+[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+
+📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*
