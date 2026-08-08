@@ -208,7 +208,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
       <h3 style="color:#ef4444;">❌ Not for you if…</h3>
       <ul class="lr-not">
         <li>You check your portfolio once a quarter. The Report's 15-minute rhythm won't change your life if you're not watching markets at all.</li>
-        <li>Your eyes can track 93 indicators across 20 markets, non-stop, round the clock. If that's you — you don't need a bot. You are the bot.</li>
+        <li>Your eyes can track 98 indicators across 20 markets, non-stop, round the clock. If that's you — you don't need a bot. You are the bot.</li>
         <li>You want trading signals. The Report aggregates indicators. It does not tell you when to buy or sell — you decide what to do with the data.</li>
         <li>You scalp moves in seconds. Every 15 minutes is not tick-by-tick data.</li>
         <li>You expect a guaranteed win rate. Indicators have edge, not certainty. Multi-indicator consensus improves your odds — it doesn't eliminate risk.</li>
@@ -347,7 +347,7 @@ When 42 of 88 indicators agree on direction, that's not a coincidence. That's a 
 </div>
 <div class="lr-faq">
   <h3>What indicators are included?</h3>
-  <p><a href="/the-lab-report/indicators/" target="_blank" rel="noopener">→ See the current full list</a> — 88 indicators across momentum, volume, trend, and volatility. Updated weekly as we add new reviews.</p>
+  <p><a href="/the-lab-report/indicators/" target="_blank" rel="noopener">→ See the current full list</a> — 98 indicators across momentum, volume, trend, and volatility. Updated weekly as we add new reviews.</p>
 </div>
 <div class="lr-faq">
   <h3>How do I receive alerts?</h3>
