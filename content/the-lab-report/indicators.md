@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 93 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 98 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** August 2, 2026 · **93 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** August 9, 2026 · **98 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (32)
+## Momentum (34)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -50,8 +50,10 @@ Indicators that measure the speed and strength of price movement.
 | Stochastic Momentum Index 🆕 | [→ Full review](/reviews/stochastic-momentum-index/) |
 | Bayesian Probability 🆕 | [→ Full review](/reviews/bayesian-probability-indicator/) |
 | Elder's Thermometer 🆕 | [→ Full review](/reviews/elders-thermometer/) |
+| Accumulation Swing Index 🆕 | [→ Full review](/reviews/accumulation-swing-index/) |
+| Rainbow Oscillator 🆕 | [→ Full review](/reviews/rainbow-oscillator/) |
 
-## Trend (24)
+## Trend (26)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -81,6 +83,8 @@ Indicators that identify direction and strength of the prevailing trend.
 | Zigzag Probalist 🆕 | [→ Full review](/reviews/zigzag-confluence-probalist-essentials/) |
 | Aroon 🆕 | [→ Full review](/reviews/aroon-up-down/) |
 | Fractional EMA Kalman 🆕 | [→ Full review](/reviews/fractional-ema-kalman-filter/) |
+| Adaptive AI Indicator 🆕 | [→ Full review](/reviews/adaptive-ai-indicator/) |
+| Polarized Fractal Efficiency 🆕 | [→ Full review](/reviews/polarized-fractal-efficiency/) |
 
 ## Volume (17)
 
@@ -106,7 +110,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Volume Profile 🆕 | [→ Full review](/reviews/volume-profile/) |
 | Market Facilitation Index 🆕 | [→ Full review](/reviews/market-facilitation-index/) |
 
-## Volatility (20)
+## Volatility (21)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -132,6 +136,7 @@ Indicators that measure the magnitude of price fluctuations.
 | Implied Volatility Rank 🆕 | [→ Full review](/reviews/implied-volatility-rank/) |
 | Vertical Horizontal Filter 🆕 | [→ Full review](/reviews/vertical-horizontal-filter/) |
 | Hurst Exponent 🆕 | [→ Full review](/reviews/hurst-exponent/) |
+| Standard Error Bands 🆕 | [→ Full review](/reviews/standard-error-bands/) |
 
 ---
 

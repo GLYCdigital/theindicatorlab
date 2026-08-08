@@ -102,7 +102,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
 
 <div class="lr-trust">
   <span><strong>{{< review-count >}}+</strong> indicator reviews</span>
-  <span><strong>88</strong> indicators tracked</span>
+  <span><strong>98</strong> indicators tracked</span>
   <span><strong>20</strong> markets covered</span>
   <span><strong>Every 15 min</strong> updates</span>
 </div>
@@ -137,7 +137,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
     <span class="lr-tag volume">Volume Profile</span>
     <span class="lr-tag volatility">ATR Bands</span>
   </div>
-  <a href="/the-lab-report/indicators/" class="lr-see-all">See all 93 indicators →</a>
+  <a href="/the-lab-report/indicators/" class="lr-see-all">See all 98 indicators →</a>
 </div>
 {{< /rawhtml >}}
 
@@ -178,15 +178,15 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
   <div class="lr-step-num">3</div>
   <div>
     <h3>You get the verdict</h3>
-    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 42 of 93 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
+    <p>Every 15 minutes, our Telegram bot hits your phone: "BTCUSD: 49 of 98 indicators bullish — strong buy consensus."<br><strong>You check the chart. You decide. You act.</strong></p>
   </div>
 </div>
 {{< /rawhtml >}}
 
 <div class="lr-what">
   <h2>What This Is</h2>
-  <p>The Lab Report is a <strong>multi-indicator consensus engine</strong>. 93 indicators across four categories — momentum, volume, trend, volatility — each vote BUY, SELL, or NEUTRAL on 20 hand-picked markets. Every 15 minutes, we tally the votes and send you the verdict.</p>
-  <p>Think of it as a parliament of indicators. Not one noisy voice. 93 of them. When 42 or more agree on direction, you have something statistically sharper than any single indicator can produce — multi-indicator consensus reduces false signals by 60&ndash;70% compared to single-indicator strategies.</p>
+  <p>The Lab Report is a <strong>multi-indicator consensus engine</strong>. 98 indicators across four categories — momentum, volume, trend, volatility — each vote BUY, SELL, or NEUTRAL on 20 hand-picked markets. Every 15 minutes, we tally the votes and send you the verdict.</p>
+  <p>Think of it as a parliament of indicators. Not one noisy voice. 98 of them. When 42 or more agree on direction, you have something statistically sharper than any single indicator can produce — multi-indicator consensus reduces false signals by 60&ndash;70% compared to single-indicator strategies.</p>
   <p><strong>This is not a trading bot.</strong> It does not execute trades. It delivers signal consensus — the raw data you need to make better decisions, faster. What you do with it is your call.</p>
 </div>
 
