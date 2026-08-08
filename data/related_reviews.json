@@ -1975,6 +1975,32 @@
       "score": 8.0
     }
   ],
+  "bid-ask-volume-ratio": [
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-smoothed",
+      "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-with-di-di",
+      "title": "Adx_With_Di_Di Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "bid-ask-volume": [
     {
       "slug": "cumulative-volume-delta",
@@ -7123,6 +7149,32 @@
       "score": 8.0
     }
   ],
+  "fvg-displacement-fill-scoring-slatinatrades": [
+    {
+      "slug": "liq-sweep-choch-ob-instant",
+      "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "macd-rewired-probalist-essentials",
+      "title": "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "quant-confluence-engine",
+      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "rsi-macd-combo",
+      "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "fvg-retest-detector": [
     {
       "slug": "abcd-pattern",
@@ -8109,6 +8161,32 @@
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "high-volume-breakout-targets-algoalpha": [
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-multiple-timeframe",
+      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "higher-timeframe-levels": [
@@ -9179,6 +9257,12 @@
   ],
   "intrabar-profile-trading": [
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "kinetic-slippage-index-ksi",
       "title": "Kinetic_Slippage_Index_Ksi Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9193,12 +9277,6 @@
     {
       "slug": "liquidity-sweep",
       "title": "Liquidity_Sweep Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "macd-colored-histogram",
-      "title": "Macd_Colored_Histogram Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10069,6 +10147,12 @@
       "score": 9.0
     },
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "intrabar-profile-trading",
       "title": "Intrabar_Profile_Trading Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10077,12 +10161,6 @@
     {
       "slug": "macd-adaptive",
       "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "macd-histogram-divergence",
-      "title": "Macd_Histogram_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11519,6 +11597,12 @@
   ],
   "market-profile-tpo": [
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "htf-candle-volume-profile-chartprime",
       "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11533,12 +11617,6 @@
     {
       "slug": "market-structure-volume-profiles-kioseff-trading",
       "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "multi-timeframe-volume-profiles-tradingiq",
-      "title": "Multi Timeframe Volume Profiles TradingIQ Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11675,6 +11753,18 @@
   ],
   "market-structure-scatter-dashboard": [
     {
+      "slug": "zig-zag-indicator",
+      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag-percentage",
+      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "zig-zag",
       "title": "Zig Zag Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11685,18 +11775,6 @@
       "title": "Zigzag_Confluence_Probalist_Essentials Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "market-structure-shift": [
@@ -12190,6 +12268,32 @@
       "slug": "connors-rsi",
       "title": "Connors Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "money-flow-index-mfi": [
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-money-flow-cmf",
+      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-money-flow",
+      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 9.0
     }
   ],
@@ -12975,6 +13079,12 @@
   ],
   "multi-timeframe-volume-profiles": [
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "htf-candle-volume-profile-chartprime",
       "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12989,12 +13099,6 @@
     {
       "slug": "market-profile",
       "title": "Market_Profile Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "market-structure-volume-profiles-kioseff-trading",
-      "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14613,6 +14717,12 @@
   ],
   "polynomial-linear-regression-volume-profile": [
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "htf-candle-volume-profile-chartprime",
       "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14627,12 +14737,6 @@
     {
       "slug": "market-profile",
       "title": "Market_Profile Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "market-structure-volume-profiles-kioseff-trading",
-      "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15599,6 +15703,32 @@
       "score": 8.0
     }
   ],
+  "random-forest-ai-rsi-macd-confluence-dots3red": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "momentum-indicator",
+      "title": "Momentum_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "quant-confluence-engine",
+      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-macd-combo-signal",
+      "title": "RSI MACD Combo Signal Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "range-profile-oscillator": [
     {
       "slug": "-",
@@ -15613,14 +15743,14 @@
       "score": 9.0
     },
     {
-      "slug": "innovation-gated-hull-supertrend-backquant",
-      "title": "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It",
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "slug": "innovation-gated-hull-supertrend-backquant",
+      "title": "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16295,8 +16425,8 @@
       "score": 13.0
     },
     {
-      "slug": "rsi-macd-combo",
-      "title": "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "random-forest-ai-rsi-macd-confluence-dots3red",
+      "title": "Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -16667,6 +16797,12 @@
   ],
   "session-volume-profile": [
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "htf-candle-volume-profile-chartprime",
       "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16683,10 +16819,30 @@
       "title": "Market_Profile Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "session-vp": [
+    {
+      "slug": "anchored-vwap",
+      "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "market-structure-volume-profiles-kioseff-trading",
-      "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It",
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-candle-volume-profile-chartprime",
+      "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "market-profile-tpo",
+      "title": "Market_Profile_Tpo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16741,6 +16897,32 @@
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "sigmoid-rsi-nal": [
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "demarker-indicator",
+      "title": "Demarker_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "signal-fusion-engine": [
@@ -17095,14 +17277,14 @@
       "score": 9.0
     },
     {
-      "slug": "vwap-bands",
-      "title": "Vwap Bands Review: Settings, Strategy & How to Use It",
+      "slug": "session-vp",
+      "title": "Session_Vp Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "vwap-deviation-trend-backquant",
-      "title": "Vwap_Deviation_Trend_Backquant Review: Settings, Strategy & How to Use It",
+      "slug": "vwap-bands",
+      "title": "Vwap Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -17153,8 +17335,8 @@
       "score": 13.0
     },
     {
-      "slug": "rsi-macd-combo-signal",
-      "title": "RSI MACD Combo Signal Review: Settings, Strategy & How to Use It",
+      "slug": "random-forest-ai-rsi-macd-confluence-dots3red",
+      "title": "Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -17335,8 +17517,8 @@
       "score": 9.0
     },
     {
-      "slug": "squeeze-indicator",
-      "title": "Squeeze_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "money-flow-index-mfi",
+      "title": "Money_Flow_Index_Mfi Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19808,7 +19990,7 @@
       "slug": "adaptive-envelopes",
       "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 11.8
+      "score": 11.9
     }
   ],
   "ultimate-oscillator": [
@@ -20062,7 +20244,7 @@
       "slug": "bollinger-bands-with-ema",
       "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.8
+      "score": 12.9
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -20333,6 +20515,12 @@
   ],
   "volume-profile-s-r": [
     {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "htf-candle-volume-profile-chartprime",
       "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20347,12 +20535,6 @@
     {
       "slug": "market-profile",
       "title": "Market_Profile Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "market-structure-volume-profiles-kioseff-trading",
-      "title": "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20683,14 +20865,14 @@
       "score": 9.0
     },
     {
-      "slug": "smart-swing-vwap",
-      "title": "Smart_Swing_Vwap Review: Settings, Strategy & How to Use It",
+      "slug": "session-vp",
+      "title": "Session_Vp Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "vwap-deviation-trend-backquant",
-      "title": "Vwap_Deviation_Trend_Backquant Review: Settings, Strategy & How to Use It",
+      "slug": "smart-swing-vwap",
+      "title": "Smart_Swing_Vwap Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20879,16 +21061,16 @@
   ],
   "waddah-attar": [
     {
-      "slug": "schaff-trend-cycle",
-      "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.3
-    },
-    {
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.3
+    },
+    {
+      "slug": "schaff-trend-cycle",
+      "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.2
     },
     {
       "slug": "smart-trend-dashboard",
@@ -21501,6 +21683,58 @@
       "score": 9.0
     }
   ],
+  "zig-zag-indicator": [
+    {
+      "slug": "market-structure-scatter-dashboard",
+      "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag-percentage",
+      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag",
+      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zigzag-confluence-probalist-essentials",
+      "title": "Zigzag_Confluence_Probalist_Essentials Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "zig-zag-percentage": [
+    {
+      "slug": "market-structure-scatter-dashboard",
+      "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag-indicator",
+      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag",
+      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zigzag-confluence-probalist-essentials",
+      "title": "Zigzag_Confluence_Probalist_Essentials Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "zig-zag": [
     {
       "slug": "zigzag-confluence-probalist-essentials",
@@ -21515,16 +21749,16 @@
       "score": 9.0
     },
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "slug": "zig-zag-indicator",
+      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
+      "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "slug": "zig-zag-percentage",
+      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
+      "score": 9.0
     }
   ],
   "zigzag-confluence-probalist-essentials": [
@@ -21541,16 +21775,16 @@
       "score": 9.0
     },
     {
-      "slug": "1-trendline-strategy",
-      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "slug": "zig-zag-indicator",
+      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
+      "score": 9.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "slug": "zig-zag-percentage",
+      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
+      "score": 9.0
     }
   ]
 }
