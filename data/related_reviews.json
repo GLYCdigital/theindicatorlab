@@ -1,30 +1,4 @@
 {
-  "-": [
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-metrics",
-      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    }
-  ],
   "0dte-scalper-kalman-supertrend-and-adx-volatility-waves": [
     {
       "slug": "ais-supertrend",
@@ -79,12 +53,6 @@
   ],
   "8020-system-indicator": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -99,6 +67,12 @@
     {
       "slug": "adaptive-swing-timing-engine-algopoint",
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2237,6 +2211,12 @@
   ],
   "bollinger-bands-rsi-combo": [
     {
+      "slug": "rsi-bollinger-bands",
+      "title": "Rsi_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2251,12 +2231,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -2523,12 +2497,6 @@
   ],
   "buy-sell-signals-using-multi-logic-trading-system": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "adx-mtf",
       "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2543,6 +2511,12 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3381,12 +3355,6 @@
   ],
   "chess": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3401,6 +3369,12 @@
     {
       "slug": "8020-system-indicator",
       "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3563,12 +3537,6 @@
   ],
   "commodity-channel-index": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3584,6 +3552,12 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 5.0
     }
   ],
@@ -4083,12 +4057,6 @@
   ],
   "dealing-and-displacement-range-trade-entries": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -4103,6 +4071,12 @@
     {
       "slug": "adx-smoothed",
       "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ai-source-switching-moving-average",
+      "title": "Ai_Source_Switching_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -4811,12 +4785,6 @@
   ],
   "dynamic-market-metrics": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -4831,6 +4799,12 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4855,8 +4829,8 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4885,6 +4859,32 @@
       "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "dynamic-smc-market-structure": [
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "dynamic-support-resistance": [
@@ -7359,6 +7359,12 @@
   ],
   "garch-model": [
     {
+      "slug": "rsi-bollinger-bands",
+      "title": "Rsi_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-envelopes",
       "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -7373,12 +7379,6 @@
     {
       "slug": "ais-supertrend",
       "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -7563,6 +7563,32 @@
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "gravity-trend-adx-strength-meter-quality-scored-dmi-system": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "gs-volcano-rsi-liquidity-thermal-map-bit2billions": [
@@ -8165,6 +8191,12 @@
   ],
   "high-volume-breakout-targets-algoalpha": [
     {
+      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
+      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-regression-breakout-map-gainz-algo",
       "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8179,12 +8211,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8295,12 +8321,6 @@
   ],
   "horizontal-red-line": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8315,6 +8335,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8379,6 +8405,12 @@
       "score": 9.0
     },
     {
+      "slug": "market-structure-trend",
+      "title": "Market_Structure_Trend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "moving-average-crossover-mtf",
       "title": "Moving_Average_Crossover_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8387,12 +8419,6 @@
     {
       "slug": "parabolic-sar-ema-combo",
       "title": "Parabolic_Sar_Ema_Combo Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "psar-with-ema",
-      "title": "Psar With EMA Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8763,12 +8789,6 @@
   ],
   "ichimoku-mtf": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8783,6 +8803,12 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8931,14 +8957,14 @@
       "score": 9.0
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "institutional-order-blocks",
-      "title": "Institutional_Order_Blocks Review: Settings, Strategy & How to Use It",
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9113,14 +9139,14 @@
       "score": 13.0
     },
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
-      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9197,8 +9223,8 @@
       "score": 9.0
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9357,6 +9383,32 @@
       "title": "Rsi_Macd_Confluence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 16.0
+    }
+  ],
+  "inversion-order-blocks-iob": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "jonnyfutures-ib": [
@@ -10341,8 +10393,8 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10361,14 +10413,14 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10621,14 +10673,14 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10947,12 +10999,6 @@
   ],
   "macd-standard": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10967,18 +11013,18 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
   ],
   "macd-zero-lag": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10993,6 +11039,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11285,12 +11337,6 @@
   ],
   "machine-learning-trends-and-signals": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11305,6 +11351,12 @@
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11649,12 +11701,6 @@
   ],
   "market-structure-bos-choch-hh-hl-lh-ll-trend-health-lunqfx": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11671,15 +11717,15 @@
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "market-structure-engine-0": [
-    {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
     {
       "slug": "adx-smoothed",
       "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
@@ -11695,6 +11741,12 @@
     {
       "slug": "adxr-with-di",
       "title": "Adxr_With_Di Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ai-predictive-flow",
+      "title": "Ai_Predictive_Flow Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -11797,8 +11849,8 @@
       "score": 9.0
     },
     {
-      "slug": "ict-concepts",
-      "title": "Ict_Concepts Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11827,6 +11879,32 @@
       "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
+    }
+  ],
+  "market-structure-trend": [
+    {
+      "slug": "htf-scalp-system",
+      "title": "Htf_Scalp_System Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "tertiary-pivot-structural-zones",
+      "title": "Tertiary_Pivot_Structural_Zones Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "alma-arnaud-legoux",
+      "title": "Alma Arnaud Legoux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.2
+    },
+    {
+      "slug": "arnaud-legoux-moving-average-alma",
+      "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.2
     }
   ],
   "market-structure-volume-profiles-kioseff-trading": [
@@ -12741,12 +12819,6 @@
   ],
   "mtf-macd": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12761,6 +12833,12 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13181,6 +13259,32 @@
       "score": 12.0
     }
   ],
+  "negative-volume-index-nvi": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 5.0
+    }
+  ],
   "negative-volume-index": [
     {
       "slug": "1-trendline-strategy",
@@ -13599,12 +13703,6 @@
   ],
   "open-interest-tracker": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13619,6 +13717,12 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -13747,8 +13851,8 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13963,12 +14067,6 @@
   ],
   "parabolic-sar-macd-combo": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13983,6 +14081,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14007,9 +14111,9 @@
       "score": 9.0
     },
     {
-      "slug": "parabolic-sar",
-      "title": "Parabolic Sar Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "parabolic-sar-with-signals",
+      "title": "Parabolic_Sar_With_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -14035,6 +14139,32 @@
     {
       "slug": "parabolic-sar-macd-combo",
       "title": "Parabolic_Sar_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "parabolic-sar-with-signals": [
+    {
+      "slug": "parabolic-sar-ema-combo",
+      "title": "Parabolic_Sar_Ema_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "parabolic-sar-macd-combo",
+      "title": "Parabolic_Sar_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "parabolic-sar-multi-timeframe",
+      "title": "Parabolic_Sar_Multi_Timeframe Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "parabolic-sar-multi",
+      "title": "Parabolic_Sar_Multi Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14145,12 +14275,6 @@
   ],
   "percentage-price-oscillator-navigator": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14165,6 +14289,12 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14509,12 +14639,6 @@
   ],
   "pivot-points-mtf": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -14529,6 +14653,12 @@
     {
       "slug": "adx-smoothed",
       "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-with-di-di",
+      "title": "Adx_With_Di_Di Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14847,8 +14977,34 @@
   ],
   "ppo-mtf": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "ppo-percentage-price-oscillator": [
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
@@ -14867,32 +15023,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    }
-  ],
-  "ppo-percentage-price-oscillator": [
-    {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15731,12 +15861,6 @@
   ],
   "range-profile-oscillator": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15753,15 +15877,15 @@
       "title": "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "range-reaper-smart-crt-trading-system": [
-    {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
     {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
@@ -15777,6 +15901,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15809,12 +15939,6 @@
   ],
   "rate-of-change-roc": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15829,6 +15953,12 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -16251,12 +16381,6 @@
   ],
   "rounding-bottom-top": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16273,6 +16397,38 @@
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "rsi-bollinger-bands": [
+    {
+      "slug": "bollinger-bands-rsi-combo",
+      "title": "Bollinger_Bands_Rsi_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger_Bands_Width Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands",
+      "title": "Bollinger Bands Review: Settings, Strategy & How to Use It",
+      "rating": 5,
+      "score": 13.0
     }
   ],
   "rsi-divergence-detector": [
@@ -16615,12 +16771,6 @@
   ],
   "scalping-master-buy-and-sell": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16635,6 +16785,12 @@
     {
       "slug": "ai-source-switching-moving-average",
       "title": "Ai_Source_Switching_Moving_Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -16939,14 +17095,14 @@
       "score": 13.0
     },
     {
-      "slug": "triple-exponential-moving-average-tema",
-      "title": "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It",
+      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
+      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "true-range-tr",
-      "title": "True_Range_Tr Review: Settings, Strategy & How to Use It",
+      "slug": "triple-exponential-moving-average-tema",
+      "title": "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -17083,12 +17239,6 @@
   ],
   "sma-ribbon": [
     {
-      "slug": "bollinger-bands-mtf",
-      "title": "Bollinger_Bands_Mtf Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -17105,6 +17255,38 @@
       "title": "Coppock Curve Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    },
+    {
+      "slug": "coppock-with-signals",
+      "title": "Coppock_With_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    }
+  ],
+  "smart-market-structure-johnson": [
+    {
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "andrews-pitchfork",
+      "title": "Andrews Pitchfork Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani",
+      "title": "Auto_Trendline_Intelligence_Bos_Choch_Fvg_Rehan_Khanani Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "smart-money-breakout-channels-jos-protrader": [
@@ -17173,14 +17355,14 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18175,12 +18357,6 @@
   ],
   "strong-gold-signals": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
       "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18195,6 +18371,12 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18305,12 +18487,6 @@
   ],
   "strong-volumetric-zones": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "1-trendline-strategy",
       "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18325,6 +18501,12 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18479,8 +18661,8 @@
       "score": 13.0
     },
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18695,12 +18877,6 @@
   ],
   "supply-demand-mtf": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18715,6 +18891,12 @@
     {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ai-source-switching-moving-average",
+      "title": "Ai_Source_Switching_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18747,12 +18929,6 @@
   ],
   "support-resistance-zones": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18767,6 +18943,12 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18889,14 +19071,14 @@
       "score": 13.0
     },
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
-      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18955,12 +19137,6 @@
   ],
   "tasc-2026-08-an-ag-selling-model": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18975,6 +19151,12 @@
     {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-smoothed",
+      "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19033,12 +19215,6 @@
   ],
   "test-debug-review": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19055,15 +19231,15 @@
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "test-slug-999": [
-    {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
     {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
@@ -19081,6 +19257,38 @@
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "test-xyz": [
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ha-macd-nemesis",
+      "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "kinetic-slippage-index-ksi",
+      "title": "Kinetic_Slippage_Index_Ksi Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "the-tradegoal-9-0": [
@@ -19135,6 +19343,32 @@
       "score": 12.0
     }
   ],
+  "thestrat-suite-open-source-entries-targets-and-stop-loss": [
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "signal-fusion-engine",
+      "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "triple-exponential-moving-average-tema",
+      "title": "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "weighted-moving-average-wma",
+      "title": "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "three-black-crows": [
     {
       "slug": "abcd-pattern",
@@ -19163,12 +19397,6 @@
   ],
   "three-white-soldiers": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19183,6 +19411,12 @@
     {
       "slug": "adx-smoothed",
       "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19319,12 +19553,6 @@
   ],
   "trailing-stop-calculator": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19339,6 +19567,12 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19579,12 +19813,6 @@
   ],
   "trinity-flexible-multi-tf-ma-alignment-dashboard": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19599,6 +19827,12 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-smoothed",
+      "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19715,16 +19949,16 @@
       "score": 13.0
     },
     {
-      "slug": "weighted-moving-average-wma",
-      "title": "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It",
+      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
+      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "weighted-moving-average-wma",
+      "title": "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.0
+      "score": 13.0
     },
     {
       "slug": "adaptive-regression-breakout-map-gainz-algo",
@@ -19734,12 +19968,6 @@
     }
   ],
   "trix-triple-exponential-average": [
-    {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
     {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
@@ -19755,6 +19983,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19955,14 +20189,14 @@
       "score": 13.0
     },
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
-      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20073,12 +20307,6 @@
   ],
   "variable-moving-average": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20093,6 +20321,12 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21061,16 +21295,16 @@
   ],
   "waddah-attar": [
     {
-      "slug": "strong-fu-candle",
-      "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
+      "slug": "schaff-trend-cycle",
+      "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.3
     },
     {
-      "slug": "schaff-trend-cycle",
-      "title": "Schaff Trend Cycle Review: Settings, Strategy & How to Use It",
+      "slug": "strong-fu-candle",
+      "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.2
+      "score": 13.3
     },
     {
       "slug": "smart-trend-dashboard",
@@ -21087,12 +21321,6 @@
   ],
   "walk-forward-optimization": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21107,6 +21335,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21139,12 +21373,6 @@
   ],
   "wedge-pattern": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21159,6 +21387,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21223,16 +21457,16 @@
       "score": 13.0
     },
     {
-      "slug": "triple-exponential-moving-average-tema",
-      "title": "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It",
+      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
+      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
+      "slug": "triple-exponential-moving-average-tema",
+      "title": "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.0
+      "score": 13.0
     },
     {
       "slug": "adaptive-regression-breakout-map-gainz-algo",
@@ -21313,8 +21547,8 @@
       "score": 9.0
     },
     {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21659,12 +21893,6 @@
   ],
   "zero-lag-macd": [
     {
-      "slug": "-",
-      "title": "  Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21679,6 +21907,12 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-metrics",
+      "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
