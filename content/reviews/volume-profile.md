@@ -4,6 +4,7 @@ date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/volume-profile.png"
+tv_script_url: "https://www.tradingview.com/script/4rlNNL5e-Polynomial-Linear-Regression-Volume-Profile-BigBeluga/"
 tags:
   - volume profile
   - "07"

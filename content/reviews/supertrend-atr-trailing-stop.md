@@ -4,6 +4,7 @@ date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/supertrend-atr-trailing-stop.png"
+tv_script_url: "https://www.tradingview.com/script/dH3ujrk1-SuperTrend-ATR-Trailing-Stop-Entry-Exit-in-One-View/"
 tags:
   - supertrend atr trailing stop
   - "07"

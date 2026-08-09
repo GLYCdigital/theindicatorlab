@@ -4,6 +4,7 @@ date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/whale-liquidity-absorption.png"
+tv_script_url: "https://www.tradingview.com/script/ksAw7irF-Whale-Liquidity-Absorption-Profile-Institutional-Order-Flow/"
 tags:
   - whale liquidity absorption
   - "07"

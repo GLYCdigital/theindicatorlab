@@ -22,6 +22,18 @@
     {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
   </div>
 
+  {{/* Direct link to the TradingView script page — credibility + staleness detection */}}
+  {{ with .Params.tv_script_url }}
+  <div class="tv-script-link" style="margin: 1rem 0;">
+    <a href="{{ . }}{{ if in . "?" }}&{{ else }}?{{ end }}aff_id=166324"
+       target="_blank" rel="noopener"
+       onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click',{target:'tradingview',review:'{{ $.Title | plainify }}',placement:'script-link'});"
+       style="display:inline-block; border:1px solid #3b82f6; color:#3b82f6; font-weight:600; padding:8px 20px; border-radius:8px; text-decoration:none; font-size:0.95rem; transition:background 0.15s;">
+      📊 View this indicator on TradingView →
+    </a>
+  </div>
+  {{ end }}
+
   {{/* In-content CTA — Lab products first (highest LTV), then TradingView */}}
   <div class="review-affiliate-inline" style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(59,130,246,0.06) 100%); border: 2px solid #3b82f6; border-radius: var(--radius-lg);">
     <p style="margin: 0 0 0.75rem; font-weight: 700; font-size: 1.3rem;">🔬 Go Deeper Than One Indicator</p>
