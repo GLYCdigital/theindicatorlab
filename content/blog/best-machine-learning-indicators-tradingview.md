@@ -42,6 +42,17 @@ Ai_Predictive_Flow filters out noise effectively, giving you a clean read on tre
 
 Ai_Source_Switching_Moving_Average filters out noise effectively, giving you a clean read on trend direction without second-guessing every bar. It works well both as a standalone and paired with momentum for confirmation. In strong sideways markets, expect whipsaws. We recommend pairing it with a volatility filter like ATR to avoid chop. Suits traders who use multi-timeframe analysis for confirmation best.
 
+---
+
+**Short on time?** The three indicators above are the ones we'd actually install. Test them side-by-side on TradingView's free plan, then grab a real-time read on all 93 indicators across 20 markets with the Lab Report — every 15 minutes, straight to your phone.
+
+[🔬 Lab Report · $49/mo →](https://theindicatorlab.com/the-lab-report/)
+[📈 Lab Edge · $79/mo →](https://theindicatorlab.com/lab-edge/)
+[📊 Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate links · We earn a commission at no extra cost to you*
+
+---
+
 ### 4. Machine Learning Pivot Points KNN SS
 
 **[Machine Learning Pivot Points KNN SS](/reviews/machine-learning-pivot-points-knn-ss/)** ⭐⭐⭐⭐ (4/5)

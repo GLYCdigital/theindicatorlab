@@ -4,6 +4,7 @@ date: 2026-07-16
 draft: false
 type: reviews
 image: "/screenshots/ttm-squeeze-pro.png"
+tv_script_url: "https://www.tradingview.com/script/fM2r5hCG-TTM-Squeeze-Pro-Multi-Timeframe-Squeeze-Divergence-Alerts/"
 tags:
   - ttm squeeze pro
   - "07"
