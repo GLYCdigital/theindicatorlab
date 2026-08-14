@@ -179,7 +179,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
     </div>
     <div class="lr-compare-card">
       <div class="lr-compare-label after">✅ After — The Lab Report</div>
-      <img src="/images/lab-report-after-bot.jpg" alt="The Lab Report bot notification on Telegram" loading="lazy">
+      <img src="/images/lab-report-after-chart-v2.jpg" alt="The Lab Report bot notification on Telegram" loading="lazy">
       <p class="lr-compare-cap">One verdict, one message, every 15 minutes. Delivered to your phone.</p>
     </div>
   </div>
