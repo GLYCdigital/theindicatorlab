@@ -240,12 +240,12 @@ description: "The same Time-Series Momentum framework institutions use. 166 mark
     <a href="https://buy.stripe.com/5kQbIT0TA7tO4LkeH7aAw0o" class="le-cta" data-umami-event="stripe_click" data-umami-event-product="lab-edge" data-umami-event-name="The Lab Edge" data-umami-event-price="$249/mo" data-umami-event-placement="pricing">Get The Lab Edge →</a>
   </div>
 
-  <p style="text-align:center;color:var(--text-muted);font-size:1.5rem;margin:4rem 0 3rem;">Active daily trader too? Want the full picture?<br>TradingView invite-only scripts + real-time consensus from 48 indicators every 15 minutes</p>
+  <p style="text-align:center;color:var(--text-muted);font-size:1.5rem;margin:4rem 0 3rem;">Active daily trader too? Want the full picture?<br>Real-time consensus from 48 indicators every 15 minutes + weekly TSM signals on 166 markets</p>
 
   <div class="le-bundle">
-    <h2>Bundle — Originals + Report + Edge</h2>
+    <h2>Bundle — Report + Edge</h2>
     <div class="le-price">$299<span>/mo</span></div>
-    <p class="le-price-sub">Lab Originals scripts + 15-min consensus Report + weekly Edge signals.<br>Three products, one price.</p>
+    <p class="le-price-sub">15-min consensus Report + weekly Edge signals.<br>Two products, one price.</p>
     <p style="color:#fff;font-size:1.3rem;">7-day free trial. Annual: <a href="https://buy.stripe.com/fZu5kv59QaG0b9IbuVaAw0r" style="color:var(--accent);text-decoration:underline;" data-umami-event="stripe_click" data-umami-event-product="bundle" data-umami-event-name="Bundle Annual" data-umami-event-price="$2,990/yr">$2,990/yr</a> (2 months free)</p>
     <a href="https://buy.stripe.com/4gM3cn0TAcO8cdM42taAw0q" class="le-cta" data-umami-event="stripe_click" data-umami-event-product="bundle" data-umami-event-name="Lab Report + Edge Bundle" data-umami-event-price="$299/mo">Get The Bundle →</a>
   </div>
