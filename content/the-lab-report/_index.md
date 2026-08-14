@@ -62,10 +62,10 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-not { margin-top: 0; }
   .lr-not li { padding: 0.4rem 0; font-size: 1.4rem; color: var(--text-muted); line-height: 1.5; position: relative; padding-left: 1.5rem; }
   .lr-not li::before { content: '✕'; position: absolute; left: 0; opacity: 0.5; }
-  .lr-compare { max-width: 960px; margin: 4rem auto; padding: 0 1rem; }
+  .lr-compare { max-width: 720px; margin: 4rem auto; padding: 0 1rem; }
   .lr-compare h2 { text-align: center; font-size: 2.2rem; font-weight: 700; margin: 0 0 0.5rem; color: var(--text); }
   .lr-compare-sub { text-align: center; font-size: 1.5rem; color: var(--text-secondary); margin: 0 0 2.5rem; }
-  .lr-compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+  .lr-compare-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
   .lr-compare-card { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--card-border); background: var(--card-bg); box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
   .lr-compare-card img { width: 100%; height: auto; display: block; }
   .lr-compare-label { text-align: center; font-weight: 800; font-size: 1.15rem; letter-spacing: 1.5px; padding: 0.9rem 1rem; text-transform: uppercase; }
