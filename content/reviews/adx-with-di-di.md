@@ -116,7 +116,7 @@ Adx_With_Di_Di is a solid, no-frills tool for trend traders who want the ADX + D
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
-[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+[Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 

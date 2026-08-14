@@ -118,7 +118,7 @@ Gann_Square is a 4-star tool if you’re willing to invest time in Gann theory. 
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
-[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+[Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 

@@ -115,7 +115,7 @@ If you've ever revenge traded after a red day, install this. It's like having a 
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
-[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+[Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 
