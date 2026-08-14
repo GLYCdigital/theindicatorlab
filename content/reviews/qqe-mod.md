@@ -110,7 +110,7 @@ Qqe_Mod is a solid, no-nonsense momentum oscillator. It won’t make you a milli
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 
-[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+[Subscribe $249/mo →](https://theindicatorlab.com/lab-edge/)
 
 📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 

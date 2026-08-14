@@ -127,7 +127,7 @@ The Super_Trend_Oscillator is a clever twist on a classic tool. It solves the la
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 
-[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+[Subscribe $249/mo →](https://theindicatorlab.com/lab-edge/)
 
 📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 

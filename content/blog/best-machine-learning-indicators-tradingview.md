@@ -47,7 +47,7 @@ Ai_Source_Switching_Moving_Average filters out noise effectively, giving you a c
 **Short on time?** The three indicators above are the ones we'd actually install. Test them side-by-side on TradingView's free plan, then grab a real-time read on all 93 indicators across 20 markets with the Lab Report — every 15 minutes, straight to your phone.
 
 [🔬 Lab Report · $149/mo →](https://theindicatorlab.com/the-lab-report/)
-[📈 Lab Edge · $79/mo →](https://theindicatorlab.com/lab-edge/)
+[📈 Lab Edge · $249/mo →](https://theindicatorlab.com/lab-edge/)
 [📊 Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate links · We earn a commission at no extra cost to you*
 

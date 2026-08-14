@@ -99,7 +99,7 @@ Docked one star because it needs other indicators to be useful. But if you're ti
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 
-[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+[Subscribe $249/mo →](https://theindicatorlab.com/lab-edge/)
 
 📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 

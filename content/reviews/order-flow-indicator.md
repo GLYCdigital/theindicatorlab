@@ -137,7 +137,7 @@ The **Order_Flow_Indicator** is a solid tool for serious day traders who underst
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 
-[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+[Subscribe $249/mo →](https://theindicatorlab.com/lab-edge/)
 
 📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
