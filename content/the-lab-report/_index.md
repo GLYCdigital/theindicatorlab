@@ -62,6 +62,16 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
   .lr-not { margin-top: 0; }
   .lr-not li { padding: 0.4rem 0; font-size: 1.4rem; color: var(--text-muted); line-height: 1.5; position: relative; padding-left: 1.5rem; }
   .lr-not li::before { content: '✕'; position: absolute; left: 0; opacity: 0.5; }
+  .lr-compare { max-width: 960px; margin: 4rem auto; padding: 0 1rem; }
+  .lr-compare h2 { text-align: center; font-size: 2.2rem; font-weight: 700; margin: 0 0 0.5rem; color: var(--text); }
+  .lr-compare-sub { text-align: center; font-size: 1.5rem; color: var(--text-secondary); margin: 0 0 2.5rem; }
+  .lr-compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+  .lr-compare-card { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--card-border); background: var(--card-bg); box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .lr-compare-card img { width: 100%; height: auto; display: block; }
+  .lr-compare-label { text-align: center; font-weight: 800; font-size: 1.15rem; letter-spacing: 1.5px; padding: 0.9rem 1rem; text-transform: uppercase; }
+  .lr-compare-label.before { background: rgba(239,68,68,0.1); color: #ef4444; }
+  .lr-compare-label.after { background: rgba(34,197,94,0.12); color: #22c55e; }
+  .lr-compare-cap { text-align: center; font-size: 1.35rem; color: var(--text-secondary); padding: 1rem 1.25rem 1.4rem; margin: 0; line-height: 1.5; }
   .lr-faq { border-top: 1px solid var(--card-border); padding: 1.5rem 0; }
   .lr-faq h3 { margin: 0 0 0.5rem; font-size: 1.5rem; font-weight: 600; color: var(--text); }
   .lr-faq p { margin: 0; color: var(--text-secondary); font-size: 1.4rem; line-height: 1.6; }
@@ -79,6 +89,7 @@ description: "Multiple indicators. One verdict.<br>Real-time indicator consensus
     .lr-cta { padding: 14px 36px; font-size: 1.5rem; }
     .lr-pricing-header { font-size: 2rem; }
     .lr-step { flex-direction: column; align-items: flex-start; }
+    .lr-compare-grid { grid-template-columns: 1fr; gap: 1.25rem; }
     .lr-trust { gap: 1rem; font-size: 1.15rem; }
   .lr-indicator-tags { gap: 0.4rem; }
     .lr-close h2 { font-size: 2rem; }
@@ -155,6 +166,25 @@ You have 20+ indicators on your chart. RSI says buy. MACD says sell. OBV says ho
 Traders who act on the consensus of multiple indicators consistently outperform those who pick signals from a single source. The data is clear: **diverse signal aggregation reduces false signals by 60-70%**. But no one has the time to check 20 indicators across 30 assets every 15 minutes.
 
 The Lab Report does that for you. Every 15 minutes, across 20 hand-picked markets.<br>Pick the ones you want alerts for. **No noise from markets you don't care about.**
+
+{{< rawhtml >}}
+<div class="lr-compare">
+  <h2>Your chart vs. your phone</h2>
+  <p class="lr-compare-sub">The same market. Two ways to read it.</p>
+  <div class="lr-compare-grid">
+    <div class="lr-compare-card">
+      <div class="lr-compare-label before">😵 Before — Your chart</div>
+      <img src="/images/lab-report-before-chart.jpg" alt="TradingView chart cluttered with dozens of indicators" loading="lazy">
+      <p class="lr-compare-cap">Dozens of indicators. RSI says buy. MACD says sell. VWAP says wait. Who wins?</p>
+    </div>
+    <div class="lr-compare-card">
+      <div class="lr-compare-label after">✅ After — The Lab Report</div>
+      <img src="/images/lab-report-after-bot.jpg" alt="The Lab Report bot notification on Telegram" loading="lazy">
+      <p class="lr-compare-cap">One verdict, one message, every 15 minutes. Delivered to your phone.</p>
+    </div>
+  </div>
+</div>
+{{< /rawhtml >}}
 
 ## How It Works
 
