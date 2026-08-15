@@ -163,7 +163,7 @@ You have 20+ indicators on your chart. RSI says buy. MACD says sell. OBV says ho
 </div>
 {{< /rawhtml >}}
 
-Traders who act on the consensus of multiple indicators consistently outperform those who pick signals from a single source. The data is clear: **diverse signal aggregation reduces false signals by 60-70%**. But no one has the time to check 20 indicators across 30 assets every 15 minutes.
+Traders who act on the consensus of multiple indicators consistently outperform those who pick signals from a single source. The data is clear: **diverse signal aggregation cuts through conflicting signals**. But no one has the time to check 20 indicators across 30 assets every 15 minutes.
 
 The Lab Report does that for you. Every 15 minutes, across 20 hand-picked markets.<br>Pick the ones you want alerts for. **No noise from markets you don't care about.**
 
@@ -215,7 +215,7 @@ The Lab Report does that for you. Every 15 minutes, across 20 hand-picked market
 <div class="lr-what">
   <h2>What This Is</h2>
   <p>The Lab Report is a <strong>multi-indicator consensus engine</strong>. 98 indicators across four categories — momentum, volume, trend, volatility — each vote BUY, SELL, or NEUTRAL on 20 hand-picked markets. Every 15 minutes, we tally the votes and send you the verdict.</p>
-  <p>Think of it as a parliament of indicators. Not one noisy voice. 98 of them. When 42 or more agree on direction, you have something statistically sharper than any single indicator can produce — multi-indicator consensus reduces false signals by 60&ndash;70% compared to single-indicator strategies.</p>
+  <p>Think of it as a parliament of indicators. Not one noisy voice. 98 of them. When 42 or more agree on direction, you have something statistically sharper than any single indicator can produce — a consensus worth acting on, not another noisy signal.</p>
   <p><strong>This is not a trading bot.</strong> It does not execute trades. It delivers signal consensus — the raw data you need to make better decisions, faster. What you do with it is your call.</p>
 </div>
 
@@ -279,7 +279,7 @@ The Lab Report reduces noise through **diverse signal aggregation**. Individual 
 
 When 42 of 88 indicators agree on direction, that's not a coincidence. That's a signal worth acting on.
 
-**The science:** Multi-indicator consensus reduces false signals by 60-70% compared to single-indicator strategies. Most profitable trading systems use 3+ indicators per decision. The Lab Report gives you 83 and counting, as we add them to the roster.
+**The science:** Most profitable trading systems use 3+ indicators per decision. The Lab Report aggregates the full roster — momentum, volume, trend, and volatility — so you read the consensus, not one noisy signal. 98 indicators and counting, as we add them to the roster.
 
 {{< rawhtml >}}
 <div class="lr-pricing" id="pricing">
