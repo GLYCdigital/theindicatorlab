@@ -142,3 +142,7 @@ The *Mtf_Macd* is a no-nonsense tool that does exactly what it promises: shows y
 The lack of alerts and divergence detection keeps it from being a 5-star tool. But for a free, clean, reliable multi-timeframe MACD overlay, it earns a solid **4 out of 5 stars**.
 
 **⭐ ⭐ ⭐ ⭐** (4/5) – Recommended for any trader who values trend alignment over bells and whistles.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

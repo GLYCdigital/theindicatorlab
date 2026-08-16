@@ -87,3 +87,7 @@ Renko_Charts is a solid 4-star implementation of a classic concept. It does exac
 
 **Score: ⭐⭐⭐⭐ (4/5)**  
 *Docked one star for the lack of built-in alerts and poor performance in range-bound markets.*
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

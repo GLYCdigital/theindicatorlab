@@ -98,3 +98,7 @@ Your stop will still move to breakeven on the next tick. Not ideal, but that’s
 **Breakeven_Stop_Calculator** is a simple, reliable tool that does exactly what it promises. It won’t make you rich, but it will stop you from giving back hard-earned profits. If you’re a trader who needs a mechanical stop-adjustment rule, install it and test it for a week.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – Takes one star off for the lack of a trail feature, but for a free indicator, it’s a solid 4.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

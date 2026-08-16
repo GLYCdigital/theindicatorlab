@@ -112,3 +112,7 @@ It’s a community script on TradingView, so yes, free to add.
 Fibonacci_Fan is a solid utility tool that does exactly what it promises: draw Fibonacci fans automatically. It won’t make you a better trader by itself, but it will save you time and keep your charts consistent. If you already use Fibonacci fans, this is a no-brainer addition. If you don’t, learn the concept first.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – Deducted a star for the lack of alerts and the need for multiple instances to draw multiple fans. Otherwise, it’s clean, reliable, and free.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

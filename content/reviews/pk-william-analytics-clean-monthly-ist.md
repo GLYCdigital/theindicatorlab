@@ -121,3 +121,7 @@ A: No. It’s hardcoded to pivot, R1, R2, S1, S2.
 **Pk_William_Analytics_Clean_Monthly_Ist** is a no-nonsense monthly pivot indicator that does exactly what it promises: clean levels, no repaint, and no clutter. It’s not a holy grail, but for swing and position traders who want a quick read on monthly structure, it’s a solid 4 out of 5.
 
 **Rating**: ⭐⭐⭐⭐ (4/5)
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

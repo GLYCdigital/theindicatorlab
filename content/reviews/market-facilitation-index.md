@@ -95,3 +95,7 @@ Yes, TradingView supports it. But you’ll get too many false signals.
 The Market Facilitation Index is a **curiosity, not a core tool**. It adds a unique lens on price-volume dynamics, but its binary nature and lack of quantitative depth make it unreliable as a primary indicator. If you’re already proficient with price action and want a lightweight confirmation filter for breakouts, it’s worth a try. Otherwise, spend your time on Volume Profile or OBV.
 
 **Rating**: ⭐⭐⭐ (3/5) — Interesting concept, limited practical value. Fine for context, not for conviction.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

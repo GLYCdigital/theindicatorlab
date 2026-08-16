@@ -106,3 +106,7 @@ A: Woodie is better for gap days and trending markets. Camarilla is better for t
 Woodie Pivots are a solid upgrade over standard pivots if you trade intraday and need levels that respect overnight gaps. The midpoint lines are genuinely useful for scalping — most pivot indicators ignore them. It's not a standalone system (no indicator is), but as a framework for entries and exits, it's one of the cleaner pivot options on TradingView.
 
 **Rating**: ⭐⭐⭐⭐ (4/5) — Reliable, fast-adapting levels. Loses a star because it needs a volume or momentum filter to reduce false signals in chop. Still, it earned a permanent spot on my ES chart.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

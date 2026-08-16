@@ -92,3 +92,7 @@ A: Basic cross alerts only. No push to mobile without third-party setup.
 The Double Exponential Moving Average DEMA is a no-nonsense indicator that does exactly what it promises — smooth price data with less lag. It won’t make you a millionaire, but it will clean up your charts and give you a reliable trend line. If you’re tired of repainting messes or overcomplicated indicators, this is a breath of fresh air.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Good tool, misses extras, but does its job well.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

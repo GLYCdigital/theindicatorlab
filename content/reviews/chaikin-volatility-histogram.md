@@ -109,3 +109,7 @@ The **Chaikin_Volatility_Histogram** is a niche tool, but it does its job well. 
 **Rating**: ⭐⭐⭐⭐ (4/5)
 
 Loses one star because of the inherent lag and occasional false signals in choppy markets. But for what it is — a clean, no-repaint volatility momentum indicator — it’s better than most alternatives on TradingView. If you want to add it to your toolkit, click the install button and test it on your favorite pair. Just don’t expect it to predict the next crash.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

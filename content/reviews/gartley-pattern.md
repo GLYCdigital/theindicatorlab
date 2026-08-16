@@ -78,3 +78,7 @@ A: The Gartley has a 0.786 retracement at D, while the Bat uses 0.886. The indic
 This is a solid, no-nonsense Gartley detector. It does one thing well—automating pattern recognition—but doesn’t hold your hand beyond that. If you’re disciplined about trend context and price action confirmation, it’s a valuable tool. If you’re looking for a magic “buy/sell” button, you’ll be disappointed.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – One star off for the lack of volume/trend filters and the noise in choppy markets. For the price (free), it’s excellent.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

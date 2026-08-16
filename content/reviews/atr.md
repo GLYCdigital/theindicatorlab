@@ -100,3 +100,7 @@ A: No. It’s based on closed bars. No repainting.
 ATR is the foundation of risk management. It’s not exciting, but it’s essential. Every trader should have it on their chart and know how to use it.
 
 **Rating: ⭐⭐⭐⭐⭐ (5/5)**
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

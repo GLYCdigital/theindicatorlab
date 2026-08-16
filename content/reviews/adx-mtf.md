@@ -111,3 +111,7 @@ Adx_Mtf does one thing and does it well: it shows higher timeframe ADX on your c
 - ADX itself is lagging, so the tool inherits that limitation.
 
 But for what it is – a clean, free, multi-timeframe ADX overlay – it earns its place in my toolkit. If you trade with ADX, install it. If you don’t, skip it.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

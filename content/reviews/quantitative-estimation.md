@@ -126,3 +126,7 @@ A: Yes. It's a community script on TradingView.
 If you understand that no indicator is perfect and you're willing to combine it with price action and trend confirmation, this is a 4/5 tool. If you're looking for a magic bullet, keep scrolling.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Reliable, transparent, and practical. Not flashy, but it works.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

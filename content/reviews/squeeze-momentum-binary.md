@@ -88,3 +88,7 @@ A: Open the source code (Pine Script), find `plot(hist, ...)` and uncomment it. 
 The Squeeze_Momentum_Binary is a solid tool for traders who want a clear momentum trigger without the noise. It’s not perfect — no indicator is — but it’s honest, lightweight, and easy to use. If you pair it with a trend filter and decent risk management, it’ll earn its place on your chart.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Loses a star because it needs a volatility filter to avoid whipsaws. But for what it is, it’s excellent.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

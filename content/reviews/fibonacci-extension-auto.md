@@ -94,3 +94,7 @@ No — once a swing is confirmed, the level stays. But as new swings form, the e
 I give it **4 out of 5 stars**. It does exactly what it promises — but it doesn't solve the deeper problem of *which* swings actually matter. Use it as a starting point, not a final answer.
 
 If you want to save time drawing extensions and don't mind occasionally redrawing them manually on key swings, install it. If you need surgical precision, keep drawing by hand.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

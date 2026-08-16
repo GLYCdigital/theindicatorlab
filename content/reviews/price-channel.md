@@ -93,3 +93,7 @@ A: 4-hour for swing trading, 1-hour for day trading. Lower timeframes get too no
 The Price Channel is a **reliable, honest indicator** that does exactly what it says — no magic, no false promises. It's not going to make you rich overnight, but it'll give you a solid framework for trend trading. The biggest drawback is the false breakout rate, but that's a problem with *any* channel-based tool. Combine it with volume or a momentum oscillator, and you've got a legit system.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — A top-tier basic tool. Would be 5 stars if it had a built-in filter for false breakouts.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

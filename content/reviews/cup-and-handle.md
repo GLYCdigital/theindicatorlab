@@ -92,3 +92,7 @@ A: The indicator doesn’t check trend direction. If the market is in a downtren
 This is one of the better free cup-and-handle scanners on TradingView. It’s not perfect — it lags and needs manual filtering — but if you’re patient and use the settings I outlined, it will catch high-probability continuation trades that most traders miss.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — loses a star for no built-in trend filter and lack of alerts. But for a free script, it’s a solid tool in any swing trader’s arsenal.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

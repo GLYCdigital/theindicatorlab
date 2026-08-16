@@ -112,3 +112,7 @@ The Variable Moving Average is a solid 4 out of 5. It’s not perfect—no indic
 **Rating: ⭐⭐⭐⭐ (4/5)**  
 **Best for:** Trend-following swing traders who want less lag.  
 **Skip if:** You hate tweaking settings or only trade ranges.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

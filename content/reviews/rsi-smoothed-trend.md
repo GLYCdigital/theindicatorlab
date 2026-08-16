@@ -102,3 +102,7 @@ Yes. I combined it with 50 EMA for trend direction and got cleaner results. Avoi
 RSI_Smoothed_Trend is one of those rare indicators that does exactly what it promises: smooths RSI noise without adding lag. It’s not a holy grail, but it’s a solid tool for trend‑following traders who want to cut down on false signals. The missing divergence detection and slight whipsaw in ranging markets keep it from 5 stars.
 
 If you’re tired of standard RSI screaming at you on every candle, give this a try. It’ll save you a headache and a few losing trades.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

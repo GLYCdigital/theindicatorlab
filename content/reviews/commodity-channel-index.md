@@ -83,3 +83,7 @@ A: Because mean deviation shrinks in low volatility, so any small move looks ext
 ## Final Verdict
 
 ⭐⭐⭐⭐ (4/5) — The Commodity Channel Index is a solid tool when used correctly. It loses a star because it's not beginner-friendly and requires active management of false signals. But for traders who understand divergence and know when to ignore overbought/oversold levels, it's one of the most reliable reversal indicators on TradingView.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

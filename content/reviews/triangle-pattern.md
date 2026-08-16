@@ -117,3 +117,7 @@ Yes. Crypto loves triangles. Just increase the pivot lookback to 30.
 If you trade patterns and want to cut down on chart time, install it. Just remember: **the pattern is the setup, not the trade.**
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – One star off for the flickering on small timeframes and lack of volume confirmation. Otherwise, it’s a keeper.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

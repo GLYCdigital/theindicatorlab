@@ -97,3 +97,7 @@ A: Yes, but only on high-volume pairs like BTC/USDT, ETH/USDT. Avoid low-cap alt
 Vwap_Bands is a solid, no-nonsense indicator that adds volume awareness to a classic VWAP setup. It’s not revolutionary, but it’s practical and well-built. The lack of built-in alerts is a minor annoyance, but the clean design and accurate bands make it a keeper for my daily workflow.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Recommended for intraday traders who want volume-weighted volatility bands without the bloat.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

@@ -84,3 +84,7 @@ A: Hell no. Wait for a reversal back below 1.0. The index can stay elevated for 
 The Arms_Index is a solid breadth tool for index traders who understand that volume tells the real story. It won’t make you money by itself, but combined with price action and a second breadth indicator, it’s a powerful edge. Four stars because the crypto/forex limitation is real, and the learning curve is steeper than most.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

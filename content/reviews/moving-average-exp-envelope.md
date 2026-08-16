@@ -92,3 +92,7 @@ A: For trending markets, yes. In tight ranges, the fixed envelope might be easie
 ## Final verdict with star rating
 
 **4/5 stars** – The Moving Average Exp Envelope is a solid, volatility-adaptive tool that improves on classic envelopes. It’s not revolutionary, but it’s well-built and practical. The lack of built-in alerts and the slight opacity in its deviation calculation keep it from a 5-star rating. If you trade trends and want a cleaner version of Keltner Channels, this is worth adding to your toolkit.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

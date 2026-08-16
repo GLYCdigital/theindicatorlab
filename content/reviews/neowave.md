@@ -110,3 +110,7 @@ Neowave is a solid volume-based momentum indicator that avoids the worst sins (r
 The 4-star rating reflects that it’s a good tool, not a holy grail. For most traders, it’s worth adding to your toolkit—just don’t rely on it alone.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

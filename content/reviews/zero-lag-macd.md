@@ -103,3 +103,7 @@ The Zero Lag MACD delivers on its promise. It’s faster, cleaner, and more resp
 It loses one star because of the extra whipsaws and the fact that it’s not truly “zero lag.” But for a momentum oscillator, it’s one of the best I’ve used.
 
 **Would I install it?** Yes—but I’d set it up with a 200-period moving average as a filter. That combination has been my go-to for the last two weeks, and it’s consistently profitable on 1-hour charts.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

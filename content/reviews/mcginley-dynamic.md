@@ -111,3 +111,7 @@ The McGinley Dynamic is a solid moving average variant that delivers on its prom
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 Deducted one star because the improvement over a standard EMA is real but marginal, and it offers no edge in ranging markets. Still, for its simplicity and genuine utility in trends, it earns a strong recommendation for trend-focused traders.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.

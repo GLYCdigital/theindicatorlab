@@ -99,3 +99,7 @@ No. It's calculated on the current bar and doesn't change. I confirmed this by r
 The Regression_Oscillator is a solid 4/5. It does what it promises: gives you a smoother, more statistically meaningful oscillator. It's not revolutionary, but it's well-built and practical. The divergence detection is the standout feature. If you're tired of RSI's noise, give this a try.
 
 **Rating:** ⭐⭐⭐⭐ (4/5) — Recommended for intermediate traders who want a cleaner momentum tool.
+
+---
+
+**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
