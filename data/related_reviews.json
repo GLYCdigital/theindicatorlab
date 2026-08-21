@@ -53,6 +53,12 @@
   ],
   "6-indicator-master-fuel-zone-70-80": [
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -61,6 +67,26 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "6-indicator-master": [
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
@@ -1241,8 +1267,8 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1767,6 +1793,32 @@
       "score": 13.0
     }
   ],
+  "auto-fib-strategy-buy-sell": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani": [
     {
       "slug": "1-trendline-strategy",
@@ -1817,6 +1869,32 @@
       "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "average-daily-weekly-ranges-adr-awr-d4a": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "average-directional-index": [
@@ -2139,6 +2217,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2147,12 +2231,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2223,14 +2301,14 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2757,6 +2835,12 @@
   ],
   "butterworth-spectral-trend": [
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2771,12 +2855,6 @@
     {
       "slug": "adaptive-trend-ensemble-backquant",
       "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "Adx_With_Di_Di Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3685,8 +3763,8 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3875,6 +3953,12 @@
   ],
   "commodity-channel-index": [
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3890,12 +3974,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 5.0
     }
   ],
@@ -4427,6 +4505,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -4435,12 +4519,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -6137,6 +6215,12 @@
   ],
   "ema-cross": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
       "slug": "ehlers-laguerre-filter",
       "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -6151,12 +6235,6 @@
     {
       "slug": "ema-crossover",
       "title": "Ema Crossover Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -6189,6 +6267,12 @@
   ],
   "ema-multiple-timeframe": [
     {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
       "slug": "ehlers-laguerre-filter",
       "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -6203,12 +6287,6 @@
     {
       "slug": "ema-ribbon",
       "title": "Ema_Ribbon Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "exponential-moving-average-ema",
-      "title": "Exponential_Moving_Average_Ema Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -8033,6 +8111,32 @@
       "score": 8.0
     }
   ],
+  "gold-session-map-sweep-signals": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx",
+      "title": "Adx Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "gold-toolkit-22-matsukazealgo": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -9419,6 +9523,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9428,12 +9538,6 @@
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 5.0
     }
   ],
@@ -10043,6 +10147,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10051,12 +10161,6 @@
     {
       "slug": "adaptive-regression-breakout-map-gainz-algo",
       "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -11577,6 +11681,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11586,12 +11696,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 5.0
     }
   ],
@@ -12533,6 +12637,12 @@
   ],
   "market-structure-engine-0": [
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12547,12 +12657,6 @@
     {
       "slug": "adx-smoothed",
       "title": "Adx_Smoothed Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "Adx_With_Di_Di Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -12987,14 +13091,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -13417,6 +13521,12 @@
   ],
   "moving-average-crossover-mtf": [
     {
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double Exponential Moving Average (DEMA) Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13431,12 +13541,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13845,14 +13949,14 @@
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -13995,6 +14099,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14003,12 +14113,6 @@
     {
       "slug": "adx-average-directional-index",
       "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-mtf",
-      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14193,6 +14297,32 @@
       "title": "Perfect_Squares Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "my-custom-no-trading-shield": [
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-ensemble-backquant",
+      "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-pulse-jpt",
+      "title": "Adaptive_Trend_Pulse_Jpt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "nadaraya-watson-regression-liquidity-sweeps-algoalpha": [
@@ -14495,14 +14625,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14895,6 +15025,32 @@
       "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "optipine-high-performance-caching-and-data-pipelines": [
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "orb-continuation-0-signals-levels": [
@@ -15405,14 +15561,14 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -15757,6 +15913,12 @@
   ],
   "pivot-points-mtf": [
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -15771,12 +15933,6 @@
     {
       "slug": "adaptive-trend-ensemble-backquant",
       "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-mtf",
-      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -15830,7 +15986,7 @@
       "slug": "renko-pulseflow-elite-by-sam-george-adaptive-trade-map",
       "title": "Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.5
+      "score": 13.6
     }
   ],
   "pivot-points-woodie": [
@@ -16361,6 +16517,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16369,12 +16531,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -16569,6 +16725,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "8020-system-indicator",
       "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16577,12 +16739,6 @@
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -17219,6 +17375,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -17227,12 +17389,6 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration",
-      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -17598,7 +17754,7 @@
       "slug": "pivot-points-standard",
       "title": "Pivot Points Standard Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 13.5
+      "score": 13.6
     }
   ],
   "risk-management-dashboard": [
@@ -18433,6 +18589,32 @@
       "score": 5.0
     }
   ],
+  "session-overlap-tape": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "session-volume-profile": [
     {
       "slug": "high-volume-breakout-targets-algoalpha",
@@ -19143,6 +19325,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19151,12 +19339,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -20056,7 +20238,7 @@
       "slug": "waddah-attar",
       "title": "Waddah Attar Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.5
+      "score": 13.6
     },
     {
       "slug": "true-strength-index",
@@ -20073,6 +20255,12 @@
   ],
   "strong-gold-signals": [
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20087,12 +20275,6 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -20799,6 +20981,32 @@
       "score": 8.0
     }
   ],
+  "swing-structure-pips-candles-sl": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "andrews-pitchfork",
+      "title": "Andrews Pitchfork Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "anomaly-detection-indicator",
+      "title": "Anomaly_Detection_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "t3-moving-average": [
     {
       "slug": "adaptive-ai-indicator",
@@ -20911,6 +21119,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20920,12 +21134,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 5.0
     }
   ],
@@ -21082,7 +21290,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.9
+      "score": 12.8
     }
   ],
   "the-tradegoal-9-0": [
@@ -21154,13 +21362,13 @@
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.9
+      "score": 12.8
     },
     {
       "slug": "the-oloid-owma-oloid-weighted-moving-average",
       "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.9
+      "score": 12.8
     }
   ],
   "three-black-crows": [
@@ -21223,6 +21431,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21231,12 +21445,6 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21275,6 +21483,12 @@
       "score": 9.0
     },
     {
+      "slug": "session-overlap-tape",
+      "title": "Session_Overlap_Tape Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21283,12 +21497,6 @@
     {
       "slug": "asian-session-levels",
       "title": "Asian_Session_Levels Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "backtesting-dashboard",
-      "title": "Backtesting_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21717,6 +21925,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21725,12 +21939,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21853,14 +22061,14 @@
       "score": 12.0
     },
     {
-      "slug": "ehlers-laguerre-filter",
-      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     },
     {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -21888,7 +22096,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.9
+      "score": 12.8
     }
   ],
   "trix-triple-exponential-average": [
@@ -22229,10 +22437,42 @@
       "score": 8.3
     }
   ],
+  "uptrick-adaptive-trend-trail": [
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "uptrick-flow-expansion-trend": [
     {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
@@ -22245,12 +22485,6 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration",
-      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22991,6 +23225,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -23000,12 +23240,6 @@
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 5.0
     }
   ],
@@ -23508,7 +23742,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.5
+      "score": 13.6
     },
     {
       "slug": "schaff-trend-cycle",
@@ -23526,7 +23760,7 @@
       "slug": "rsi-divergence-mtf",
       "title": "Rsi_Divergence_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.3
+      "score": 12.2
     }
   ],
   "walk-forward-optimization": [
@@ -24343,6 +24577,12 @@
       "score": 5.0
     },
     {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -24351,12 +24591,6 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
