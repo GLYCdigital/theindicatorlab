@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+79.1%"
+      "value": "+76.0%"
     },
     {
       "label": "CAGR",
-      "value": "12.4%"
+      "value": "12.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.54"
+      "value": "0.52"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.4%",
+      "return_pct": "+18.8%",
       "trades": "0",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.6%",
+      "return_pct": "+14.5%",
       "trades": "2",
       "win_rate_pct": "33.3%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On AAPL, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-07-14 → 2026-07-10), the RSI Oversold/Overbought delivered a **+79.1% total return** on AAPL, compounding at **12.4% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the RSI Oversold/Overbought delivered a **+76.0% total return** on AAPL, compounding at **12.0% annually**. 
 
-At **0.54**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.52**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **32.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 33% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **32.7% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.54 | ⚠️ Moderate |
+| Sharpe Ratio | 0.52 | ⚠️ Moderate |
 | Max Drawdown | 32.7% | ⚠️ Significant |
 | Win Rate | 33.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.85 | ✅ Good |
@@ -129,7 +129,7 @@ The **profit factor of 1.85** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on AAPL?
 
-The rsi oversold/overbought shows moderate edge on AAPL — **0.54 Sharpe, 1.85 profit factor** over 12 trades. It's not a home run, but it's also not random.
+The rsi oversold/overbought shows moderate edge on AAPL — **0.52 Sharpe, 1.85 profit factor** over 12 trades. It's not a home run, but it's also not random.
 
 The 33.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on AAPL](/backtests/rsi-oversold-overbought-aapl-trades.png)

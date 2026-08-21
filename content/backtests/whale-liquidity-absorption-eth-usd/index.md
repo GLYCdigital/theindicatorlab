@@ -1,22 +1,22 @@
 ---
 {
   "title": "Volume \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-12 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+48.9%"
+      "value": "+59.6%"
     },
     {
       "label": "CAGR",
-      "value": "8.3%"
+      "value": "9.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.54"
+      "value": "0.71"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "55.2%"
+      "value": "53.3%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "29"
+      "value": "30"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+80.8%",
+      "return_pct": "+10.9%",
       "trades": "0",
-      "win_rate_pct": "55.2%"
+      "win_rate_pct": "53.3%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "6",
-      "win_rate_pct": "55.2%"
+      "win_rate_pct": "53.3%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "6",
-      "win_rate_pct": "55.2%"
+      "win_rate_pct": "53.3%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "9",
-      "win_rate_pct": "55.2%"
+      "win_rate_pct": "53.3%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "7",
-      "win_rate_pct": "55.2%"
+      "win_rate_pct": "53.3%"
     },
     {
       "year": "2026",
-      "return_pct": "-40.4%",
-      "trades": "1",
-      "win_rate_pct": "55.2%"
+      "return_pct": "-19.2%",
+      "trades": "2",
+      "win_rate_pct": "53.3%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/whale-liquidity-absorption-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
+    },
+    {
+      "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
-    },
-    {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
-    },
-    {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-12 → 2026-07-10), the Whale Liquidity / Absorption Profile delivered a **+48.9% total return** on ETH-USD, compounding at **8.3% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Whale Liquidity / Absorption Profile delivered a **+59.6% total return** on ETH-USD, compounding at **9.8% annually**. 
 
-At **0.54**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.71**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **20.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 20% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,19 +119,19 @@ The catch? A **20.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.54 | ⚠️ Moderate |
+| Sharpe Ratio | 0.71 | ⚠️ Moderate |
 | Max Drawdown | 20.5% | ⚠️ Moderate |
-| Win Rate | 55.2% | ✅ Strong |
+| Win Rate | 53.3% | ⚠️ Below average |
 | Profit Factor | 2.13 | ✅ Excellent |
-| Trades/Year | ~29 total | Selective — not overtrading |
+| Trades/Year | ~30 total | Selective — not overtrading |
 
-The **profit factor of 2.13** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 55.2% win rate, this is a mathematically sound edge.
+The **profit factor of 2.13** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 53.3% win rate, this is a mathematically sound edge.
 
 ## Does the Whale Liquidity / Absorption Profile Work on ETH?
 
-The whale liquidity / absorption profile shows moderate edge on ETH — **0.54 Sharpe, 2.13 profit factor** over 29 trades. It's not a home run, but it's also not random.
+The whale liquidity / absorption profile shows moderate edge on ETH — **0.71 Sharpe, 2.13 profit factor** over 30 trades. It's not a home run, but it's also not random.
 
-The 55.2% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 53.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on ETH. Combine with trend filters or volume confirmation for better results.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on ETH-USD](/backtests/whale-liquidity-absorption-eth-usd-trades.png)

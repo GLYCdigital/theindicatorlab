@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-48.4%"
+      "value": "-32.1%"
     },
     {
       "label": "CAGR",
-      "value": "-12.4%"
+      "value": "-7.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.03"
+      "value": "0.06"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+84.7%",
+      "return_pct": "+10.9%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-39.3%",
+      "return_pct": "-19.2%",
       "trades": "3",
       "win_rate_pct": "14.3%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-14 → 2026-07-12), the RSI Oversold/Overbought delivered a **-48.4% total return** on ETH-USD, compounding at **-12.4% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the RSI Oversold/Overbought delivered a **-32.1% total return** on ETH-USD, compounding at **-7.4% annually**. 
 
-At **-0.03**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.06**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **68.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 68% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **68.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.03 | ❌ Weak |
+| Sharpe Ratio | 0.06 | ❌ Weak |
 | Max Drawdown | 68.0% | ⚠️ Significant |
 | Win Rate | 14.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.64 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.64** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on ETH?
 
-The rsi oversold/overbought struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.03 Sharpe ratio** and **0.64 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The rsi oversold/overbought struggled to generate meaningful edge on ETH over this 5-year period. With a **0.06 Sharpe ratio** and **0.64 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on ETH-USD](/backtests/rsi-oversold-overbought-eth-usd-trades.png)

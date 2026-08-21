@@ -1,26 +1,26 @@
 ---
 {
   "title": "MACD \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+17.6%"
+      "value": "+10.0%"
     },
     {
       "label": "CAGR",
-      "value": "3.3%"
+      "value": "1.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.17"
+      "value": "-0.05"
     },
     {
       "label": "Max Drawdown",
-      "value": "15.3%"
+      "value": "14.9%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.30"
+      "value": "1.19"
     },
     {
       "label": "Total Trades",
@@ -36,14 +36,14 @@
     },
     {
       "label": "Avg Trade",
-      "value": "17 days"
+      "value": "16 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.6%",
-      "trades": "3",
+      "return_pct": "+6.9%",
+      "trades": "2",
       "win_rate_pct": "44.2%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+11.1%",
-      "trades": "6",
+      "return_pct": "+12.6%",
+      "trades": "7",
       "win_rate_pct": "44.2%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/macd-crossover-spy-equity.png",
   "crosslinks": [
     {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
+      "title": "luxalgo indicator suite review: settings, strategy & how to use it",
+      "url": "/reviews/luxalgo/"
+    },
+    {
+      "title": "rsi_macd_confluence review: settings, strategy & how to use it",
       "url": "/reviews/rsi-macd-confluence/"
-    },
-    {
-      "title": "relative strength index rsi review: settings, strategy &amp; how to use it",
-      "url": "/reviews/relative-strength-index-rsi/"
     }
   ]
 }
@@ -109,27 +109,27 @@ On SPY, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-07-14 → 2026-07-10), the MACD Crossover delivered a **+17.6% total return** on SPY, compounding at **3.3% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the MACD Crossover delivered a **+10.0% total return** on SPY, compounding at **1.9% annually**. 
 
-At **0.17**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.05**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **15.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 15% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **14.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 15% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.17 | ❌ Weak |
-| Max Drawdown | 15.3% | ⚠️ Moderate |
+| Sharpe Ratio | -0.05 | ❌ Weak |
+| Max Drawdown | 14.9% | ✅ Low |
 | Win Rate | 44.2% | ⚠️ Below average |
-| Profit Factor | 1.30 | ⚠️ Marginal |
+| Profit Factor | 1.19 | ⚠️ Marginal |
 | Trades/Year | ~52 total | Active |
 
-The **profit factor of 1.30** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 44.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.19** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 44.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on SPY?
 
-The macd crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **0.17 Sharpe ratio** and **1.30 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.05 Sharpe ratio** and **1.19 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on SPY](/backtests/macd-crossover-spy-trades.png)

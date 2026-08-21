@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-20.7%"
+      "value": "-21.2%"
     },
     {
       "label": "CAGR",
-      "value": "-4.5%"
+      "value": "-4.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.50"
+      "value": "-0.51"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "41.8%"
+      "value": "42.1%"
     },
     {
       "label": "Profit Factor",
@@ -36,45 +36,45 @@
     },
     {
       "label": "Avg Trade",
-      "value": "4 days"
+      "value": "3 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.6%",
-      "trades": "26",
-      "win_rate_pct": "41.8%"
+      "return_pct": "+6.9%",
+      "trades": "20",
+      "win_rate_pct": "42.1%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "60",
-      "win_rate_pct": "41.8%"
+      "win_rate_pct": "42.1%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "62",
-      "win_rate_pct": "41.8%"
+      "win_rate_pct": "42.1%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "59",
-      "win_rate_pct": "41.8%"
+      "win_rate_pct": "42.1%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "66",
-      "win_rate_pct": "41.8%"
+      "win_rate_pct": "42.1%"
     },
     {
       "year": "2026",
-      "return_pct": "+11.1%",
-      "trades": "26",
-      "win_rate_pct": "41.8%"
+      "return_pct": "+12.6%",
+      "trades": "32",
+      "win_rate_pct": "42.1%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-spy-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
+      "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
-    },
-    {
-      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On SPY, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-07-14 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **-20.7% total return** on SPY, compounding at **-4.5% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the SuperTrend + ATR Trailing Stop delivered a **-21.2% total return** on SPY, compounding at **-4.7% annually**. 
 
-At **-0.50**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.51**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **30.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 31% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **30.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.50 | ❌ Weak |
+| Sharpe Ratio | -0.51 | ❌ Weak |
 | Max Drawdown | 30.6% | ⚠️ Significant |
-| Win Rate | 41.8% | ⚠️ Below average |
+| Win Rate | 42.1% | ⚠️ Below average |
 | Profit Factor | 0.86 | ❌ Unprofitable |
 | Trades/Year | ~299 total | Active |
 
-The **profit factor of 0.86** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 41.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.86** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 42.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on SPY?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.50 Sharpe ratio** and **0.86 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.51 Sharpe ratio** and **0.86 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on SPY](/backtests/supertrend-atr-trailing-stop-spy-trades.png)

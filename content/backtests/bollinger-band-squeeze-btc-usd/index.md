@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+20.2%"
+      "value": "+39.4%"
     },
     {
       "label": "CAGR",
-      "value": "3.8%"
+      "value": "6.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.20"
+      "value": "0.28"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "23.0%"
+      "value": "23.1%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.08"
+      "value": "1.07"
     },
     {
       "label": "Total Trades",
-      "value": "100"
+      "value": "104"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+41.1%",
-      "trades": "8",
-      "win_rate_pct": "23.0%"
+      "return_pct": "-6.5%",
+      "trades": "7",
+      "win_rate_pct": "23.1%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "18",
-      "win_rate_pct": "23.0%"
+      "win_rate_pct": "23.1%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "26",
-      "win_rate_pct": "23.0%"
+      "win_rate_pct": "23.1%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "17",
-      "win_rate_pct": "23.0%"
+      "win_rate_pct": "23.1%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "22",
-      "win_rate_pct": "23.0%"
+      "win_rate_pct": "23.1%"
     },
     {
       "year": "2026",
-      "return_pct": "-27.7%",
-      "trades": "9",
-      "win_rate_pct": "23.0%"
+      "return_pct": "-12.8%",
+      "trades": "14",
+      "win_rate_pct": "23.1%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/bollinger-band-squeeze-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "bollinger_bands_percent_b review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands-percent-b/"
+      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "bollinger_bands_macd_combo review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands-macd-combo/"
+      "title": "vwap bands review: settings, strategy & how to use it",
+      "url": "/reviews/vwap-bands/"
     },
     {
-      "title": "bollinger bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands/"
+      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On BTC, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-14 → 2026-07-12), the Bollinger Band Squeeze delivered a **+20.2% total return** on BTC-USD, compounding at **3.8% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Bollinger Band Squeeze delivered a **+39.4% total return** on BTC-USD, compounding at **6.9% annually**. 
 
-At **0.20**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.28**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **53.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 54% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **53.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.20 | ❌ Weak |
+| Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 53.8% | ⚠️ Significant |
-| Win Rate | 23.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.08 | ⚠️ Marginal |
-| Trades/Year | ~100 total | Active |
+| Win Rate | 23.1% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.07 | ⚠️ Marginal |
+| Trades/Year | ~104 total | Active |
 
-The **profit factor of 1.08** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 23.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.07** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 23.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Bollinger Band Squeeze Work on BTC?
 
-The bollinger band squeeze struggled to generate meaningful edge on BTC over this 5-year period. With a **0.20 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The bollinger band squeeze struggled to generate meaningful edge on BTC over this 5-year period. With a **0.28 Sharpe ratio** and **1.07 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on BTC-USD](/backtests/bollinger-band-squeeze-btc-usd-trades.png)

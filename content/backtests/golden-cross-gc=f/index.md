@@ -1,10 +1,10 @@
 ---
 {
   "title": "SMA \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.2%",
+      "return_pct": "+1.3%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-4.7%",
+      "return_pct": "+8.4%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/golden-cross-gc=f-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy &amp; how to use it",
-      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     },
     {
-      "title": "supertrend atr trailing stop review: settings, strategy &amp; how to use it",
-      "url": "/reviews/supertrend-atr-trailing-stop/"
+      "title": "triple exponential ma review: settings, strategy & how to use it",
+      "url": "/reviews/triple-exponential-ma/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On GC=F, the SMA acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-07-14 → 2026-07-10), the Golden Cross delivered a **+86.6% total return** on GC=F, compounding at **13.3% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Golden Cross delivered a **+86.6% total return** on GC=F, compounding at **13.3% annually**. 
 
 At **0.46**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on GC=F](/backtests/golden-cross-gc=f-trades.png)

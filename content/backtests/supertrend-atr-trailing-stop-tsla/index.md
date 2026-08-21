@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+44.4%"
+      "value": "+34.7%"
     },
     {
       "label": "CAGR",
-      "value": "7.6%"
+      "value": "6.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.26"
+      "value": "0.23"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "38.8%"
+      "value": "38.6%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.05"
+      "value": "1.03"
     },
     {
       "label": "Total Trades",
-      "value": "307"
+      "value": "306"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+61.7%",
-      "trades": "26",
-      "win_rate_pct": "38.8%"
+      "return_pct": "+49.6%",
+      "trades": "18",
+      "win_rate_pct": "38.6%"
     },
     {
       "year": "2022",
       "return_pct": "-69.2%",
       "trades": "61",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "38.6%"
     },
     {
       "year": "2023",
       "return_pct": "+129.9%",
       "trades": "61",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "38.6%"
     },
     {
       "year": "2024",
       "return_pct": "+62.6%",
       "trades": "64",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "38.6%"
     },
     {
       "year": "2025",
       "return_pct": "+18.6%",
       "trades": "64",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "38.6%"
     },
     {
       "year": "2026",
-      "return_pct": "-6.9%",
-      "trades": "31",
-      "win_rate_pct": "38.8%"
+      "return_pct": "-17.2%",
+      "trades": "38",
+      "win_rate_pct": "38.6%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-tsla-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
+      "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
-    },
-    {
-      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On TSLA, the SuperTrend acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-07-14 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **+44.4% total return** on TSLA, compounding at **7.6% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the SuperTrend + ATR Trailing Stop delivered a **+34.7% total return** on TSLA, compounding at **6.1% annually**. 
 
-At **0.26**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.23**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **54.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 54% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **54.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.26 | ❌ Weak |
+| Sharpe Ratio | 0.23 | ❌ Weak |
 | Max Drawdown | 54.1% | ⚠️ Significant |
-| Win Rate | 38.8% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.05 | ⚠️ Marginal |
-| Trades/Year | ~307 total | Active |
+| Win Rate | 38.6% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.03 | ⚠️ Marginal |
+| Trades/Year | ~306 total | Active |
 
-The **profit factor of 1.05** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 38.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.03** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 38.6% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on TSLA?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.26 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.23 Sharpe ratio** and **1.03 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on TSLA with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on TSLA](/backtests/supertrend-atr-trailing-stop-tsla-trades.png)

@@ -1,18 +1,18 @@
 ---
 {
   "title": "CVD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+44.9%"
+      "value": "+45.3%"
     },
     {
       "label": "CAGR",
-      "value": "7.7%"
+      "value": "7.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.8%",
-      "trades": "7",
+      "return_pct": "+6.9%",
+      "trades": "6",
       "win_rate_pct": "30.4%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+18.6%",
-      "trades": "12",
+      "return_pct": "+16.6%",
+      "trades": "13",
       "win_rate_pct": "30.4%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/cvd-divergence-alerts-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "cvd_profiles review: settings, strategy &amp; how to use it",
-      "url": "/reviews/cvd-profiles/"
+      "title": "bid_ask_volume_ratio review: settings, strategy & how to use it",
+      "url": "/reviews/bid-ask-volume-ratio/"
     },
     {
-      "title": "cvd review: settings, strategy &amp; how to use it",
-      "url": "/reviews/cvd/"
+      "title": "open_interest_tracker review: settings, strategy & how to use it",
+      "url": "/reviews/open-interest-tracker/"
     },
     {
-      "title": "cvd divergence alerts pro review: settings, strategy &amp; how to use it",
-      "url": "/reviews/cvd-divergence-alerts-pro/"
+      "title": "order_flow_cumulative_delta review: settings, strategy & how to use it",
+      "url": "/reviews/order-flow-cumulative-delta/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On QQQ, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-14 → 2026-07-10), the CVD Divergence Alerts delivered a **+44.9% total return** on QQQ, compounding at **7.7% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the CVD Divergence Alerts delivered a **+45.3% total return** on QQQ, compounding at **7.8% annually**. 
 
 At **0.36**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on QQQ](/backtests/cvd-divergence-alerts-qqq-trades.png)

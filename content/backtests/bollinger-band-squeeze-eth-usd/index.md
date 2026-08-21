@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+12.2%"
+      "value": "+36.1%"
     },
     {
       "label": "CAGR",
-      "value": "2.3%"
+      "value": "6.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.08"
+      "value": "0.27"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.02"
+      "value": "1.03"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+84.7%",
-      "trades": "7",
+      "return_pct": "+10.9%",
+      "trades": "5",
       "win_rate_pct": "20.7%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-39.3%",
-      "trades": "13",
+      "return_pct": "-19.2%",
+      "trades": "15",
       "win_rate_pct": "20.7%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/bollinger-band-squeeze-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "bollinger_bands_percent_b review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands-percent-b/"
+      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "bollinger_bands_macd_combo review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands-macd-combo/"
+      "title": "vwap bands review: settings, strategy & how to use it",
+      "url": "/reviews/vwap-bands/"
     },
     {
-      "title": "bollinger bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/bollinger-bands/"
+      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-14 → 2026-07-12), the Bollinger Band Squeeze delivered a **+12.2% total return** on ETH-USD, compounding at **2.3% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Bollinger Band Squeeze delivered a **+36.1% total return** on ETH-USD, compounding at **6.4% annually**. 
 
-At **0.08**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.27**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.08 | ❌ Weak |
+| Sharpe Ratio | 0.27 | ❌ Weak |
 | Max Drawdown | 44.0% | ⚠️ Significant |
 | Win Rate | 20.7% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.02 | ⚠️ Marginal |
+| Profit Factor | 1.03 | ⚠️ Marginal |
 | Trades/Year | ~92 total | Active |
 
-The **profit factor of 1.02** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 20.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.03** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 20.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Bollinger Band Squeeze Work on ETH?
 
-The bollinger band squeeze struggled to generate meaningful edge on ETH over this 5-year period. With a **0.08 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The bollinger band squeeze struggled to generate meaningful edge on ETH over this 5-year period. With a **0.27 Sharpe ratio** and **1.03 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on ETH-USD](/backtests/bollinger-band-squeeze-eth-usd-trades.png)

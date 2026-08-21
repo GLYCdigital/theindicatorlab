@@ -1,14 +1,14 @@
 ---
 {
   "title": "Fisher \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-29.8%"
+      "value": "-30.2%"
     },
     {
       "label": "CAGR",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.6%",
-      "trades": "21",
+      "return_pct": "+6.9%",
+      "trades": "15",
       "win_rate_pct": "42.6%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+11.1%",
-      "trades": "27",
+      "return_pct": "+12.6%",
+      "trades": "33",
       "win_rate_pct": "42.6%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/fisher-transform-mtf-divergence-spy-equity.png",
   "crosslinks": [
     {
-      "title": "inverse_fisher_transform_stochastic review: settings, strategy &amp; how to use it",
-      "url": "/reviews/inverse-fisher-transform-stochastic/"
+      "title": "acceleration_deceleration_ac_oscillator review: settings, strategy & how to use it",
+      "url": "/reviews/acceleration-deceleration-ac-oscillator/"
     },
     {
-      "title": "fisher_transform_indicator review: settings, strategy &amp; how to use it",
-      "url": "/reviews/fisher-transform-indicator/"
+      "title": "cci_smoothed review: settings, strategy & how to use it",
+      "url": "/reviews/cci-smoothed/"
     },
     {
-      "title": "ehlers fisher transform review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ehlers-fisher-transform/"
+      "title": "price_rate_of_change_proc review: settings, strategy & how to use it",
+      "url": "/reviews/price-rate-of-change-proc/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On SPY, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-07-14 → 2026-07-10), the Fisher Transform MTF Divergence delivered a **-29.8% total return** on SPY, compounding at **-6.9% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Fisher Transform MTF Divergence delivered a **-30.2% total return** on SPY, compounding at **-6.9% annually**. 
 
 At **-0.72**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on SPY](/backtests/fisher-transform-mtf-divergence-spy-trades.png)

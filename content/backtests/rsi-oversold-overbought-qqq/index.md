@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+65.2%"
+      "value": "+62.4%"
     },
     {
       "label": "CAGR",
-      "value": "10.6%"
+      "value": "10.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.39"
+      "value": "0.38"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.8%",
+      "return_pct": "+6.9%",
       "trades": "1",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+18.6%",
+      "return_pct": "+16.6%",
       "trades": "1",
       "win_rate_pct": "33.3%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On QQQ, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-14 → 2026-07-10), the RSI Oversold/Overbought delivered a **+65.2% total return** on QQQ, compounding at **10.6% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the RSI Oversold/Overbought delivered a **+62.4% total return** on QQQ, compounding at **10.2% annually**. 
 
-At **0.39**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.38**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **37.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 37% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **37.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.39 | ❌ Weak |
+| Sharpe Ratio | 0.38 | ❌ Weak |
 | Max Drawdown | 37.1% | ⚠️ Significant |
 | Win Rate | 33.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.79 | ✅ Good |
@@ -129,7 +129,7 @@ The **profit factor of 1.79** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on QQQ?
 
-The rsi oversold/overbought shows moderate edge on QQQ — **0.39 Sharpe, 1.79 profit factor** over 9 trades. It's not a home run, but it's also not random.
+The rsi oversold/overbought shows moderate edge on QQQ — **0.38 Sharpe, 1.79 profit factor** over 9 trades. It's not a home run, but it's also not random.
 
 The 33.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on QQQ](/backtests/rsi-oversold-overbought-qqq-trades.png)

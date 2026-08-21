@@ -1,22 +1,22 @@
 ---
 {
   "title": "Swing \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+23.5%"
+      "value": "+46.2%"
     },
     {
       "label": "CAGR",
-      "value": "4.3%"
+      "value": "7.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.18"
+      "value": "0.28"
     },
     {
       "label": "Max Drawdown",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "23.4%"
+      "value": "22.9%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.04"
+      "value": "1.05"
     },
     {
       "label": "Total Trades",
-      "value": "94"
+      "value": "96"
     },
     {
       "label": "Avg Trade",
-      "value": "8 days"
+      "value": "9 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+84.7%",
-      "trades": "7",
-      "win_rate_pct": "23.4%"
+      "return_pct": "+10.9%",
+      "trades": "6",
+      "win_rate_pct": "22.9%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "16",
-      "win_rate_pct": "23.4%"
+      "win_rate_pct": "22.9%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "20",
-      "win_rate_pct": "23.4%"
+      "win_rate_pct": "22.9%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "17",
-      "win_rate_pct": "23.4%"
+      "win_rate_pct": "22.9%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "21",
-      "win_rate_pct": "23.4%"
+      "win_rate_pct": "22.9%"
     },
     {
       "year": "2026",
-      "return_pct": "-39.3%",
-      "trades": "13",
-      "win_rate_pct": "23.4%"
+      "return_pct": "-19.2%",
+      "trades": "16",
+      "win_rate_pct": "22.9%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/market-structure-pro-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "url": "/reviews/ttm-squeeze/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-14 → 2026-07-12), the Market Structure Pro delivered a **+23.5% total return** on ETH-USD, compounding at **4.3% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Market Structure Pro delivered a **+46.2% total return** on ETH-USD, compounding at **7.9% annually**. 
 
-At **0.18**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.28**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.18 | ❌ Weak |
+| Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 49.8% | ⚠️ Significant |
-| Win Rate | 23.4% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.04 | ⚠️ Marginal |
-| Trades/Year | ~94 total | Active |
+| Win Rate | 22.9% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.05 | ⚠️ Marginal |
+| Trades/Year | ~96 total | Active |
 
-The **profit factor of 1.04** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 23.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.05** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 22.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Market Structure Pro Work on ETH?
 
-The market structure pro struggled to generate meaningful edge on ETH over this 5-year period. With a **0.18 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on ETH over this 5-year period. With a **0.28 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on ETH-USD](/backtests/market-structure-pro-eth-usd-trades.png)

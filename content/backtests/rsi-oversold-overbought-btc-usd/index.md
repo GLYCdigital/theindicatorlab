@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+3.3%"
+      "value": "+23.5%"
     },
     {
       "label": "CAGR",
-      "value": "0.6%"
+      "value": "4.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.28"
+      "value": "0.32"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+41.1%",
+      "return_pct": "-6.5%",
       "trades": "1",
       "win_rate_pct": "22.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-27.7%",
+      "return_pct": "-12.8%",
       "trades": "4",
       "win_rate_pct": "22.7%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/rsi-oversold-overbought-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On BTC, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-14 → 2026-07-12), the RSI Oversold/Overbought delivered a **+3.3% total return** on BTC-USD, compounding at **0.6% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the RSI Oversold/Overbought delivered a **+23.5% total return** on BTC-USD, compounding at **4.3% annually**. 
 
-At **0.28**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.32**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **72.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 72% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **72.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.28 | ❌ Weak |
+| Sharpe Ratio | 0.32 | ❌ Weak |
 | Max Drawdown | 72.0% | ⚠️ Significant |
 | Win Rate | 22.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.97 | ❌ Unprofitable |
@@ -129,11 +129,11 @@ The **profit factor of 0.97** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on BTC?
 
-The rsi oversold/overbought struggled to generate meaningful edge on BTC over this 5-year period. With a **0.28 Sharpe ratio** and **0.97 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The rsi oversold/overbought shows moderate edge on BTC — **0.32 Sharpe, 0.97 profit factor** over 22 trades. It's not a home run, but it's also not random.
 
-This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
+The 22.7% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
-Our take: skip it on BTC unless you're combining it with other confirmations or using it on different timeframes.
+Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
 
 
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on BTC-USD](/backtests/rsi-oversold-overbought-btc-usd-trades.png)

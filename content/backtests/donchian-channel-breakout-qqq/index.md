@@ -1,14 +1,14 @@
 ---
 {
   "title": "Donchian \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+31.1%"
+      "value": "+31.4%"
     },
     {
       "label": "CAGR",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.8%",
-      "trades": "8",
+      "return_pct": "+6.9%",
+      "trades": "7",
       "win_rate_pct": "28.6%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+18.6%",
-      "trades": "10",
+      "return_pct": "+16.6%",
+      "trades": "11",
       "win_rate_pct": "28.6%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/donchian-channel-breakout-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
-    },
-    {
-      "title": "donchian_mtf review: settings, strategy &amp; how to use it",
+      "title": "donchian_mtf review: settings, strategy & how to use it",
       "url": "/reviews/donchian-mtf/"
     },
     {
-      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy &amp; how to use it",
-      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
+      "title": "starc_bands review: settings, strategy & how to use it",
+      "url": "/reviews/starc-bands/"
+    },
+    {
+      "title": "donchian_breakout review: settings, strategy & how to use it",
+      "url": "/reviews/donchian-breakout/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On QQQ, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-14 → 2026-07-10), the Donchian Channel Breakout delivered a **+31.1% total return** on QQQ, compounding at **5.6% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Donchian Channel Breakout delivered a **+31.4% total return** on QQQ, compounding at **5.6% annually**. 
 
 At **0.24**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on QQQ](/backtests/donchian-channel-breakout-qqq-trades.png)

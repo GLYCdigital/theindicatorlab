@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+49.9%"
+      "value": "+46.9%"
     },
     {
       "label": "CAGR",
-      "value": "8.4%"
+      "value": "8.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.43"
+      "value": "0.39"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.19"
+      "value": "1.20"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.4%",
-      "trades": "26",
+      "return_pct": "+18.8%",
+      "trades": "19",
       "win_rate_pct": "44.4%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.6%",
-      "trades": "28",
+      "return_pct": "+14.5%",
+      "trades": "35",
       "win_rate_pct": "44.4%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
+      "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
-    },
-    {
-      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On AAPL, the SuperTrend acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-07-14 → 2026-07-10), the SuperTrend + ATR Trailing Stop delivered a **+49.9% total return** on AAPL, compounding at **8.4% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the SuperTrend + ATR Trailing Stop delivered a **+46.9% total return** on AAPL, compounding at **8.0% annually**. 
 
-At **0.43**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.39**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **29.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 29% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **29.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.43 | ❌ Weak |
+| Sharpe Ratio | 0.39 | ❌ Weak |
 | Max Drawdown | 29.0% | ⚠️ Moderate |
 | Win Rate | 44.4% | ⚠️ Below average |
-| Profit Factor | 1.19 | ⚠️ Marginal |
+| Profit Factor | 1.20 | ⚠️ Marginal |
 | Trades/Year | ~288 total | Active |
 
-The **profit factor of 1.19** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 44.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.20** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 44.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on AAPL?
 
-The supertrend + atr trailing stop shows moderate edge on AAPL — **0.43 Sharpe, 1.19 profit factor** over 288 trades. It's not a home run, but it's also not random.
+The supertrend + atr trailing stop shows moderate edge on AAPL — **0.39 Sharpe, 1.20 profit factor** over 288 trades. It's not a home run, but it's also not random.
 
 The 44.4% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on AAPL](/backtests/supertrend-atr-trailing-stop-aapl-trades.png)

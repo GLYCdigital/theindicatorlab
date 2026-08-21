@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+1.0%"
+      "value": "+0.7%"
     },
     {
       "label": "CAGR",
-      "value": "0.2%"
+      "value": "0.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "43.5%"
+      "value": "41.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.01"
+      "value": "1.00"
     },
     {
       "label": "Total Trades",
-      "value": "62"
+      "value": "61"
     },
     {
       "label": "Avg Trade",
-      "value": "18 days"
+      "value": "17 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.8%",
-      "trades": "6",
-      "win_rate_pct": "43.5%"
+      "return_pct": "+6.9%",
+      "trades": "4",
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "13",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "11",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "13",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "13",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "41.0%"
     },
     {
       "year": "2026",
-      "return_pct": "+18.6%",
-      "trades": "6",
-      "win_rate_pct": "43.5%"
+      "return_pct": "+16.6%",
+      "trades": "7",
+      "win_rate_pct": "41.0%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/parabolic-sar-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
+      "title": "ichimoku_cloud_components review: settings, strategy & how to use it",
+      "url": "/reviews/ichimoku-cloud-components/"
     },
     {
-      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "standard_error_channel review: settings, strategy & how to use it",
+      "url": "/reviews/standard-error-channel/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy &amp; how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "parabolic_sar_ema_combo review: settings, strategy & how to use it",
+      "url": "/reviews/parabolic-sar-ema-combo/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On QQQ, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-14 → 2026-07-10), the Parabolic SAR delivered a **+1.0% total return** on QQQ, compounding at **0.2% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Parabolic SAR delivered a **+0.7% total return** on QQQ, compounding at **0.1% annually**. 
 
 At **0.01**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,15 +121,15 @@ The catch? A **37.9% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.01 | ❌ Weak |
 | Max Drawdown | 37.9% | ⚠️ Significant |
-| Win Rate | 43.5% | ⚠️ Below average |
-| Profit Factor | 1.01 | ⚠️ Marginal |
-| Trades/Year | ~62 total | Active |
+| Win Rate | 41.0% | ⚠️ Below average |
+| Profit Factor | 1.00 | ❌ Unprofitable |
+| Trades/Year | ~61 total | Active |
 
-The **profit factor of 1.01** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 43.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.00** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 41.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on QQQ?
 
-The parabolic sar struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.01 Sharpe ratio** and **1.01 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.01 Sharpe ratio** and **1.00 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on QQQ](/backtests/parabolic-sar-qqq-trades.png)

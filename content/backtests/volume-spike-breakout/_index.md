@@ -1,6 +1,6 @@
 ---
 title: "Volume Backtest Results"
-date: 2026-07-13
+date: 2026-08-22
 draft: false
 type: backtests
 description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe ratio."
@@ -25,19 +25,19 @@ description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe r
 </tr>
 </thead>
 <tbody>
-<tr><td>🟢 <a href="/backtests/volume-spike-breakout-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+48.9%</td><td>8.3%</td><td>0.54</td><td>20.5%</td><td>55.2%</td><td>2.13</td><td>29</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-spike-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+8.8%</td><td>1.7%</td><td>-0.12</td><td>4.5%</td><td>66.7%</td><td>2.12</td><td>6</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-spike-breakout-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>-1.4%</td><td>-0.3%</td><td>-0.35</td><td>17.1%</td><td>37.9%</td><td>0.96</td><td>29</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-spike-breakout-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-0.7%</td><td>-0.1%</td><td>-1.16</td><td>4.5%</td><td>45.5%</td><td>0.90</td><td>11</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-spike-breakout-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>-14.6%</td><td>-3.1%</td><td>-1.88</td><td>14.6%</td><td>43.5%</td><td>0.33</td><td>23</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-spike-breakout-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-1.6%</td><td>-0.3%</td><td>-2.17</td><td>4.5%</td><td>40.0%</td><td>0.73</td><td>10</td></tr>
+<tr><td>🟢 <a href="/backtests/volume-spike-breakout-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+59.6%</td><td>9.8%</td><td>0.71</td><td>20.5%</td><td>53.3%</td><td>2.13</td><td>30</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+9.5%</td><td>1.8%</td><td>-0.01</td><td>17.1%</td><td>36.7%</td><td>0.96</td><td>30</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+6.2%</td><td>1.2%</td><td>-0.21</td><td>6.8%</td><td>57.1%</td><td>1.59</td><td>7</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-0.5%</td><td>-0.1%</td><td>-1.18</td><td>4.5%</td><td>50.0%</td><td>0.93</td><td>10</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>-16.6%</td><td>-3.6%</td><td>-1.83</td><td>16.6%</td><td>41.7%</td><td>0.31</td><td>24</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-1.3%</td><td>-0.3%</td><td>-2.14</td><td>4.5%</td><td>44.4%</td><td>0.77</td><td>9</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: July 13, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: August 22, 2026</p>
 
   </div>
 </article>

@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+34.2%"
+      "value": "+42.7%"
     },
     {
       "label": "CAGR",
-      "value": "6.1%"
+      "value": "7.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.27"
+      "value": "0.30"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "20.2%"
+      "value": "19.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.15"
+      "value": "1.09"
     },
     {
       "label": "Total Trades",
-      "value": "94"
+      "value": "100"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+41.1%",
-      "trades": "4",
-      "win_rate_pct": "20.2%"
+      "return_pct": "-6.5%",
+      "trades": "5",
+      "win_rate_pct": "19.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "19",
-      "win_rate_pct": "20.2%"
+      "win_rate_pct": "19.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "19",
-      "win_rate_pct": "20.2%"
+      "win_rate_pct": "19.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "21",
-      "win_rate_pct": "20.2%"
+      "win_rate_pct": "19.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "23",
-      "win_rate_pct": "20.2%"
+      "win_rate_pct": "19.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-27.7%",
-      "trades": "8",
-      "win_rate_pct": "20.2%"
+      "return_pct": "-12.8%",
+      "trades": "13",
+      "win_rate_pct": "19.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/volume-profile-pro-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "vwap_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-bands/"
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
     },
     {
-      "title": "vwap_multi review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-multi/"
+      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "vwap_standard_deviation_bands review: settings, strategy &amp; how to use it",
-      "url": "/reviews/vwap-standard-deviation-bands/"
+      "title": "triple exponential ma review: settings, strategy & how to use it",
+      "url": "/reviews/triple-exponential-ma/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On BTC, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-07-14 → 2026-07-12), the Volume Profile Pro delivered a **+34.2% total return** on BTC-USD, compounding at **6.1% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Volume Profile Pro delivered a **+42.7% total return** on BTC-USD, compounding at **7.4% annually**. 
 
-At **0.27**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.30**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **56.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 56% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **56.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.27 | ❌ Weak |
+| Sharpe Ratio | 0.30 | ❌ Weak |
 | Max Drawdown | 56.5% | ⚠️ Significant |
-| Win Rate | 20.2% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.15 | ⚠️ Marginal |
-| Trades/Year | ~94 total | Active |
+| Win Rate | 19.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.09 | ⚠️ Marginal |
+| Trades/Year | ~100 total | Active |
 
-The **profit factor of 1.15** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 20.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.09** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 19.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Volume Profile Pro Work on BTC?
 
-The volume profile pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.27 Sharpe ratio** and **1.15 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The volume profile pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.30 Sharpe ratio** and **1.09 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the VWAP is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on BTC-USD](/backtests/volume-profile-pro-btc-usd-trades.png)

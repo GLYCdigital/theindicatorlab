@@ -1,26 +1,26 @@
 ---
 {
   "title": "EMA \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+83.6%"
+      "value": "+74.7%"
     },
     {
       "label": "CAGR",
-      "value": "12.9%"
+      "value": "11.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.68"
+      "value": "0.61"
     },
     {
       "label": "Max Drawdown",
-      "value": "19.0%"
+      "value": "17.8%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "2.85"
+      "value": "3.52"
     },
     {
       "label": "Total Trades",
@@ -36,14 +36,14 @@
     },
     {
       "label": "Avg Trade",
-      "value": "74 days"
+      "value": "76 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.8%",
-      "trades": "2",
+      "return_pct": "+6.9%",
+      "trades": "1",
       "win_rate_pct": "37.5%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+18.6%",
-      "trades": "1",
+      "return_pct": "+16.6%",
+      "trades": "2",
       "win_rate_pct": "37.5%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/ema-ribbon-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
+      "title": "volume_ma review: settings, strategy & how to use it",
+      "url": "/reviews/volume-ma/"
+    },
+    {
+      "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
-    },
-    {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
-    },
-    {
-      "title": "triple exponential ma review: settings, strategy &amp; how to use it",
-      "url": "/reviews/triple-exponential-ma/"
     }
   ]
 }
@@ -109,27 +109,27 @@ On QQQ, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-07-14 → 2026-07-10), the EMA Ribbon delivered a **+83.6% total return** on QQQ, compounding at **12.9% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the EMA Ribbon delivered a **+74.7% total return** on QQQ, compounding at **11.8% annually**. 
 
-At **0.68**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.61**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **19.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 19% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **17.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.68 | ⚠️ Moderate |
-| Max Drawdown | 19.0% | ⚠️ Moderate |
+| Sharpe Ratio | 0.61 | ⚠️ Moderate |
+| Max Drawdown | 17.8% | ⚠️ Moderate |
 | Win Rate | 37.5% | ❌ Low — relies on outsized wins |
-| Profit Factor | 2.85 | ✅ Excellent |
+| Profit Factor | 3.52 | ✅ Excellent |
 | Trades/Year | ~16 total | Selective — not overtrading |
 
-The **profit factor of 2.85** tells the real story: when the EMA fires, the winning signals are larger than the losing ones. Combined with a 37.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 3.52** tells the real story: when the EMA fires, the winning signals are larger than the losing ones. Combined with a 37.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the EMA Ribbon Work on QQQ?
 
-The ema ribbon shows moderate edge on QQQ — **0.68 Sharpe, 2.85 profit factor** over 16 trades. It's not a home run, but it's also not random.
+The ema ribbon shows moderate edge on QQQ — **0.61 Sharpe, 3.52 profit factor** over 16 trades. It's not a home run, but it's also not random.
 
 The 37.5% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on QQQ](/backtests/ema-ribbon-qqq-trades.png)

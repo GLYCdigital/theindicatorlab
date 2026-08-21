@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-12",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-54.4%"
+      "value": "-52.1%"
     },
     {
       "label": "CAGR",
-      "value": "-14.6%"
+      "value": "-13.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.58"
+      "value": "-0.56"
     },
     {
       "label": "Max Drawdown",
@@ -28,11 +28,11 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.92"
+      "value": "0.90"
     },
     {
       "label": "Total Trades",
-      "value": "466"
+      "value": "463"
     },
     {
       "label": "Avg Trade",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+84.7%",
-      "trades": "39",
+      "return_pct": "+10.9%",
+      "trades": "27",
       "win_rate_pct": "36.5%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-39.3%",
-      "trades": "50",
+      "return_pct": "-19.2%",
+      "trades": "59",
       "win_rate_pct": "36.5%"
     }
   ],
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
+      "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "currency_strength_meter review: settings, strategy &amp; how to use it",
-      "url": "/reviews/currency-strength-meter/"
-    },
-    {
-      "title": "luxalgo indicator suite review: settings, strategy &amp; how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-07-14 → 2026-07-12), the SuperTrend + ATR Trailing Stop delivered a **-54.4% total return** on ETH-USD, compounding at **-14.6% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the SuperTrend + ATR Trailing Stop delivered a **-52.1% total return** on ETH-USD, compounding at **-13.7% annually**. 
 
-At **-0.58**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.56**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **75.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 75% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **75.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.58 | ❌ Weak |
+| Sharpe Ratio | -0.56 | ❌ Weak |
 | Max Drawdown | 75.0% | ⚠️ Significant |
 | Win Rate | 36.5% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.92 | ❌ Unprofitable |
-| Trades/Year | ~466 total | Active |
+| Profit Factor | 0.90 | ❌ Unprofitable |
+| Trades/Year | ~463 total | Active |
 
-The **profit factor of 0.92** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 36.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.90** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 36.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on ETH?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.58 Sharpe ratio** and **0.92 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.56 Sharpe ratio** and **0.90 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on ETH-USD](/backtests/supertrend-atr-trailing-stop-eth-usd-trades.png)

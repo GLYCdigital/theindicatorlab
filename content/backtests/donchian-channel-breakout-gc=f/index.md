@@ -1,38 +1,38 @@
 ---
 {
   "title": "Donchian \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-07-13",
+  "date": "2026-08-22",
   "draft": false,
   "type": "backtests",
-  "period": "2021-07-14 \u2192 2026-07-10",
+  "period": "2021-08-23 \u2192 2026-08-21",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+48.7%"
+      "value": "+62.9%"
     },
     {
       "label": "CAGR",
-      "value": "8.3%"
+      "value": "10.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.44"
+      "value": "0.63"
     },
     {
       "label": "Max Drawdown",
-      "value": "23.2%"
+      "value": "25.4%"
     },
     {
       "label": "Win Rate",
-      "value": "38.8%"
+      "value": "36.2%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.73"
+      "value": "1.64"
     },
     {
       "label": "Total Trades",
-      "value": "67"
+      "value": "69"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.2%",
-      "trades": "5",
-      "win_rate_pct": "38.8%"
+      "return_pct": "+1.3%",
+      "trades": "4",
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2022",
       "return_pct": "+1.1%",
       "trades": "12",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2023",
       "return_pct": "+12.1%",
       "trades": "12",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2024",
       "return_pct": "+27.4%",
       "trades": "14",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2025",
       "return_pct": "+62.7%",
       "trades": "14",
-      "win_rate_pct": "38.8%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2026",
-      "return_pct": "-4.7%",
-      "trades": "10",
-      "win_rate_pct": "38.8%"
+      "return_pct": "+8.4%",
+      "trades": "13",
+      "win_rate_pct": "36.2%"
     }
   ],
   "cta_headline": "Trade Commodities with TradingView Pro",
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/donchian-channel-breakout-gc=f-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy &amp; how to use it",
-      "url": "/reviews/ttm-squeeze/"
-    },
-    {
-      "title": "donchian_mtf review: settings, strategy &amp; how to use it",
+      "title": "donchian_mtf review: settings, strategy & how to use it",
       "url": "/reviews/donchian-mtf/"
     },
     {
-      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy &amp; how to use it",
-      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
+      "title": "starc_bands review: settings, strategy & how to use it",
+      "url": "/reviews/starc-bands/"
+    },
+    {
+      "title": "donchian_breakout review: settings, strategy & how to use it",
+      "url": "/reviews/donchian-breakout/"
     }
   ]
 }
@@ -109,29 +109,29 @@ On GC=F, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-07-14 → 2026-07-10), the Donchian Channel Breakout delivered a **+48.7% total return** on GC=F, compounding at **8.3% annually**. 
+Over five years (2021-08-23 → 2026-08-21), the Donchian Channel Breakout delivered a **+62.9% total return** on GC=F, compounding at **10.3% annually**. 
 
-At **0.44**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.63**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **23.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 23% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **25.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 25% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.44 | ❌ Weak |
-| Max Drawdown | 23.2% | ⚠️ Moderate |
-| Win Rate | 38.8% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.73 | ✅ Good |
-| Trades/Year | ~67 total | Active |
+| Sharpe Ratio | 0.63 | ⚠️ Moderate |
+| Max Drawdown | 25.4% | ⚠️ Moderate |
+| Win Rate | 36.2% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.64 | ✅ Good |
+| Trades/Year | ~69 total | Active |
 
-The **profit factor of 1.73** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 38.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.64** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 36.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on GC=F?
 
-The donchian channel breakout shows moderate edge on GC=F — **0.44 Sharpe, 1.73 profit factor** over 67 trades. It's not a home run, but it's also not random.
+The donchian channel breakout shows moderate edge on GC=F — **0.63 Sharpe, 1.64 profit factor** over 69 trades. It's not a home run, but it's also not random.
 
-The 38.8% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 36.2% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on GC=F. Combine with trend filters or volume confirmation for better results.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: July 13, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on GC=F](/backtests/donchian-channel-breakout-gc=f-trades.png)
