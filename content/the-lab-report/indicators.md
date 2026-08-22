@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 103 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 108 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** August 16, 2026 · **103 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** August 23, 2026 · **108 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (35)
+## Momentum (37)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -53,8 +53,10 @@ Indicators that measure the speed and strength of price movement.
 | Accumulation Swing Index 🆕 | [→ Full review](/reviews/accumulation-swing-index/) |
 | Rainbow Oscillator 🆕 | [→ Full review](/reviews/rainbow-oscillator/) |
 | MACD Adaptive 🆕 | [→ Full review](/reviews/macd-adaptive/) |
+| Market Cipher B 🆕 | [→ Full review](/reviews/market-cipher-b/) |
+| Kinetic Slippage Index 🆕 | [→ Full review](/reviews/kinetic-slippage-index-ksi/) |
 
-## Trend (29)
+## Trend (32)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -89,6 +91,9 @@ Indicators that identify direction and strength of the prevailing trend.
 | Kaufman Efficiency Ratio 🆕 | [→ Full review](/reviews/kaufman-efficiency-ratio/) |
 | Automatic Support/Resistance 🆕 | [→ Full review](/reviews/automatic-support-resistance/) |
 | Pivot Points (Floor) 🆕 | [→ Full review](/reviews/pivot-points-standard-floor/) |
+| Liquidity Sweep 🆕 | [→ Full review](/reviews/liquidity-sweep/) |
+| Fractals (Bill Williams) 🆕 | [→ Full review](/reviews/fractals/) |
+| Murrey Math Lines 🆕 | [→ Full review](/reviews/murrey-math-lines/) |
 
 ## Volume (17)
 
