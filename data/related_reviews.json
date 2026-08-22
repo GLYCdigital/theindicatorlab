@@ -1169,6 +1169,32 @@
       "score": 12.0
     }
   ],
+  "amd-po3-with-live-edge-stats-willyalgotrader": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "anchored-vwap": [
     {
       "slug": "post-absorption-vwap-reversal-engine-6",
@@ -6993,6 +7019,32 @@
       "score": 8.0
     }
   ],
+  "fibonacci-trend-continuation-signals-algoalpha": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "fisher-transform-divergence": [
     {
       "slug": "cardwell-rsi-trade-navigator",
@@ -8989,8 +9041,8 @@
       "score": 5.0
     },
     {
-      "slug": "anchored-vwap",
-      "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
+      "slug": "amd-po3-with-live-edge-stats-willyalgotrader",
+      "title": "Amd_Po3_With_Live_Edge_Stats_Willyalgotrader Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9799,6 +9851,32 @@
       "title": "Demarker_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "index-peak-dispersion": [
+    {
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "machine-learning-neural-network-engine",
+      "title": "Machine_Learning_Neural_Network_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "signal-fusion-engine",
+      "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "the-oloid-owma-oloid-weighted-moving-average",
+      "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "indicator-agreement-scanner": [
@@ -12057,8 +12135,8 @@
       "score": 9.0
     },
     {
-      "slug": "jurik-moving-average-jma",
-      "title": "Jurik_Moving_Average_Jma Review: Settings, Strategy & How to Use It",
+      "slug": "index-peak-dispersion",
+      "title": "Index_Peak_Dispersion Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15285,6 +15363,32 @@
       "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "order-flow-profiler": [
+    {
+      "slug": "best-order-flow-footprint-delta-xcelerate-trade",
+      "title": "Best_Order_Flow_Footprint_Delta_Xcelerate_Trade Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bid-ask-volume",
+      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
     }
   ],
   "orderblock-footprints-algoalpha": [
@@ -20929,6 +21033,32 @@
       "score": 8.0
     }
   ],
+  "swing-high-low-detector": [
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-pulse-jpt",
+      "title": "Adaptive_Trend_Pulse_Jpt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "swing-index": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -21495,8 +21625,8 @@
       "score": 5.0
     },
     {
-      "slug": "asian-session-levels",
-      "title": "Asian_Session_Levels Review: Settings, Strategy & How to Use It",
+      "slug": "amd-po3-with-live-edge-stats-willyalgotrader",
+      "title": "Amd_Po3_With_Live_Edge_Stats_Willyalgotrader Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22775,6 +22905,32 @@
       "score": 12.0
     }
   ],
+  "volume-bars": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "volume-bubbles": [
     {
       "slug": "1-trendline-strategy",
@@ -22825,6 +22981,32 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "volume-colored": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "volume-divergence": [
@@ -23581,6 +23763,32 @@
       "score": 9.0
     }
   ],
+  "vwap-ema-combo": [
+    {
+      "slug": "anchored-vwap",
+      "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-crossover",
+      "title": "Ema Crossover Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "vwap-multi": [
     {
       "slug": "anchored-vwap",
@@ -23757,8 +23965,8 @@
       "score": 13.0
     },
     {
-      "slug": "rsi-divergence-mtf",
-      "title": "Rsi_Divergence_Mtf Review: Settings, Strategy & How to Use It",
+      "slug": "positioning-flow-index-by-dgt",
+      "title": "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.2
     }
@@ -24333,6 +24541,32 @@
       "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "xauau-to-shfe-ag-au": [
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "xaubands": [
