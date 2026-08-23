@@ -995,6 +995,12 @@
       "score": 9.0
     },
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "dynamic-market-metrics",
       "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -1003,12 +1009,6 @@
     {
       "slug": "ha-macd-nemesis",
       "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-mtf",
-      "title": "Ichimoku_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -2339,6 +2339,32 @@
       "score": 5.0
     }
   ],
+  "black-litterman-allocator-backquant": [
+    {
+      "slug": "innovation-gated-hull-supertrend-backquant",
+      "title": "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "iq-trend-beams",
+      "title": "Iq_Trend_Beams Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
+      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "trailing-stop-calculator",
+      "title": "Trailing_Stop_Calculator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "blur-fibonacci": [
     {
       "slug": "1-trendline-strategy",
@@ -2379,14 +2405,14 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "connors-rsi",
-      "title": "Connors Rsi Review: Settings, Strategy & How to Use It",
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -2729,6 +2755,32 @@
       "score": 9.0
     }
   ],
+  "breadth-topping-syndrome": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "momentum-indicator",
+      "title": "Momentum_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "breaker-blocks": [
     {
       "slug": "cvd",
@@ -2887,6 +2939,12 @@
   ],
   "buy-sell-indicator": [
     {
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "daily-moving-averages-any-tf",
       "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2901,12 +2959,6 @@
     {
       "slug": "ema-supertrend-obv-strixedge",
       "title": "Ema_Supertrend_Obv_Strixedge Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "htf-scalp-system",
-      "title": "Htf_Scalp_System Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4029,6 +4081,58 @@
       "score": 8.0
     }
   ],
+  "composite-valuation-standard-score": [
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "buy-sell-indicator",
+      "title": "Buy_Sell_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-supertrend-obv-strixedge",
+      "title": "Ema_Supertrend_Obv_Strixedge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "confirmed-structure-transition-map-pineify": [
+    {
+      "slug": "alligator-bill-williams",
+      "title": "Alligator_Bill_Williams Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "fractal-breakout",
+      "title": "Fractal_Breakout Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "fractal-chaos-bands",
+      "title": "Fractal_Chaos_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "connors-rsi": [
     {
       "slug": "bollinger-bands-rsi-combo",
@@ -4465,8 +4569,8 @@
       "score": 9.0
     },
     {
-      "slug": "double-exponential-moving-average-dema",
-      "title": "Double Exponential Moving Average (DEMA) Review: Settings, Strategy & How to Use It",
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8059,6 +8163,32 @@
       "score": 12.0
     }
   ],
+  "gaussian-filter-trend": [
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 5.0
+    }
+  ],
   "gcm-heikin-ashi-supertrend-rsi-oscillator": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -8161,6 +8291,32 @@
       "title": "Coppock Curve Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "gold-fibonacci-multiple-grid": [
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "gold-session-map-sweep-signals": [
@@ -8989,10 +9145,36 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "htf-auction-candle": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "htf-candle-volume-profile-chartprime": [
@@ -9019,6 +9201,32 @@
       "title": "Volume_Profile_Fixed_Range Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "htf-candles-and-fvg": [
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alpha-signal-engine",
+      "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "htf-power-of-3-po3-with-trailing-stop": [
@@ -10257,14 +10465,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "black-litterman-allocator-backquant",
+      "title": "Black_Litterman_Allocator_Backquant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11947,14 +12155,14 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11999,14 +12207,14 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12343,8 +12551,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12373,6 +12581,32 @@
       "title": "Ichimoku_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "margin-debt-expansion-vs-contraction-indicator": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "market-cipher-a": [
@@ -12707,8 +12941,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13287,6 +13521,12 @@
   ],
   "momentum-indicator": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13301,12 +13541,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "positioning-flow-index-by-dgt",
-      "title": "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -13397,6 +13631,12 @@
       "score": 9.0
     },
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13405,12 +13645,6 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "connors-rsi",
-      "title": "Connors Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15463,8 +15697,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16303,6 +16537,12 @@
   ],
   "positioning-flow-index-by-dgt": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16317,12 +16557,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "momentum-indicator",
-      "title": "Momentum_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -16425,8 +16659,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -17109,6 +17343,12 @@
   ],
   "quant-confluence-engine": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -17123,12 +17363,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "momentum-indicator",
-      "title": "Momentum_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -17343,6 +17577,12 @@
   ],
   "random-forest-ai-rsi-macd-confluence-dots3red": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -17357,12 +17597,6 @@
     {
       "slug": "positioning-flow-index-by-dgt",
       "title": "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "quant-confluence-engine",
-      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -17439,8 +17673,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -17699,8 +17933,8 @@
       "score": 9.0
     },
     {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18005,14 +18239,14 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18149,6 +18383,12 @@
   ],
   "rsi-divergence-mtf": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18163,12 +18403,6 @@
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -18227,6 +18461,12 @@
   ],
   "rsi-macd-combo-signal": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18241,12 +18481,6 @@
     {
       "slug": "positioning-flow-index-by-dgt",
       "title": "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "quant-confluence-engine",
-      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -18349,8 +18583,8 @@
       "score": 9.0
     },
     {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18707,14 +18941,14 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19345,6 +19579,12 @@
   ],
   "smart-trend-dashboard": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19359,12 +19599,6 @@
     {
       "slug": "positioning-flow-index-by-dgt",
       "title": "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "quant-confluence-engine",
-      "title": "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -20105,6 +20339,12 @@
       "score": 13.0
     },
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20113,12 +20353,6 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "demarker-indicator",
-      "title": "Demarker_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -20137,14 +20371,14 @@
       "score": 13.0
     },
     {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20348,7 +20582,7 @@
       "slug": "true-strength-index",
       "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.2
+      "score": 13.1
     },
     {
       "slug": "liquidity-sweep",
@@ -21313,8 +21547,8 @@
       "score": 9.0
     },
     {
-      "slug": "daily-moving-averages-any-tf",
-      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21339,8 +21573,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21379,6 +21613,12 @@
       "score": 9.0
     },
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "dynamic-market-metrics",
       "title": "Dynamic_Market_Metrics Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21387,12 +21627,6 @@
     {
       "slug": "ha-macd-nemesis",
       "title": "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ict-sniper-by-david",
-      "title": "Ict_Sniper_By_David Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21420,7 +21654,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.8
+      "score": 12.7
     }
   ],
   "the-tradegoal-9-0": [
@@ -21492,13 +21726,13 @@
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.8
+      "score": 12.7
     },
     {
       "slug": "the-oloid-owma-oloid-weighted-moving-average",
       "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.8
+      "score": 12.7
     }
   ],
   "three-black-crows": [
@@ -21775,14 +22009,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "black-litterman-allocator-backquant",
+      "title": "Black_Litterman_Allocator_Backquant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22226,7 +22460,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.8
+      "score": 12.7
     }
   ],
   "trix-triple-exponential-average": [
@@ -22243,14 +22477,14 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22309,6 +22543,12 @@
   ],
   "true-strength-index-tsi": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22323,12 +22563,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "momentum-indicator",
-      "title": "Momentum_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -22361,6 +22595,12 @@
   ],
   "tsi-divergence": [
     {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22375,12 +22615,6 @@
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -23549,8 +23783,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -23959,16 +24193,16 @@
       "score": 13.3
     },
     {
-      "slug": "smart-trend-dashboard",
-      "title": "Smart_Trend_Dashboard Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "positioning-flow-index-by-dgt",
-      "title": "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It",
+      "slug": "smart-trend-dashboard",
+      "title": "Smart_Trend_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.2
+      "score": 13.0
     }
   ],
   "walk-forward-optimization": [
@@ -23991,8 +24225,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24043,8 +24277,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24641,8 +24875,8 @@
       "score": 9.0
     },
     {
-      "slug": "double-exponential-moving-average-dema",
-      "title": "Double Exponential Moving Average (DEMA) Review: Settings, Strategy & How to Use It",
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24667,8 +24901,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
