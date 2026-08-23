@@ -56,6 +56,12 @@ You'd be forgiven for thinking CVD Profiles TradingIQ was a premium script. The 
 
 You'd be forgiven for thinking Ehlers Fisher Transform was a premium script. The execution is polished, the signals are reliable, and there's no upsell nagging you to upgrade. Like most free scripts, documentation can be sparse. Plan to spend a few minutes experimenting with settings to dial it in for your timeframe. Best for: traders who use multi-timeframe analysis for confirmation.
 
+---
+
+**Reading half a list and already overwhelmed?** You don't need to stack 10 indicators — you need one consensus. The [Lab Report](/the-lab-report/) runs 93 indicators across 20 markets, tallies the signal, and pings your phone every 15 minutes. One verdict, no chart clutter. [Try it free →](https://theindicatorlab.com/the-lab-report/)
+
+---
+
 ### 6. Elder's Thermometer
 
 **[Elder's Thermometer](/reviews/elders-thermometer/)** ⭐⭐⭐⭐ (4/5)

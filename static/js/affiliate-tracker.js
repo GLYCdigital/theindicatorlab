@@ -2,6 +2,13 @@
  * Affiliate Link Click Tracker
  * Auto-detects outbound affiliate links and fires Umami custom events.
  * Works retroactively on all existing + future review content.
+ *
+ * Attribution note (2026-08-24): Umami Cloud's /eventData API is broken
+ * (Cloudflare worker "ReadableStream is disturbed" bug), so custom event
+ * payloads (target/review/url) cannot be read back via API. To keep
+ * attribution working, the affiliate target is encoded INTO THE EVENT NAME
+ * (e.g. affiliate_click_tradingview) — the events endpoint still returns
+ * eventName + urlPath reliably. Do not revert to payload-only tracking.
  */
 (function() {
   'use strict';
@@ -34,10 +41,11 @@
         var target = domains[domain];
         var slug = getSlug();
 
-        // Umami custom event — uses sendBeacon, survives navigation
+        // Umami custom event — uses sendBeacon, survives navigation.
+        // Target is encoded in the event NAME for reliable attribution.
         if (typeof umami !== 'undefined' && umami.track) {
           try {
-            umami.track('affiliate_click', {
+            umami.track('affiliate_click_' + target, {
               target: target,
               review: slug,
               url: href
