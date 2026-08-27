@@ -4757,6 +4757,32 @@
       "score": 12.0
     }
   ],
+  "deepflow-absorption-proxy-fibonacciflux": [
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "delivery-shift-cisd-viprasol": [
     {
       "slug": "1-trendline-strategy",
@@ -13230,7 +13256,7 @@
       "slug": "ns-market-regime-nomadascalper",
       "title": "Ns_Market_Regime_Nomadascalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.7
+      "score": 8.6
     }
   ],
   "market-structure-volume-profiles-kioseff-trading": [
@@ -16422,7 +16448,7 @@
       "slug": "fractal-chaos-bands",
       "title": "Fractal_Chaos_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 15.9
+      "score": 15.8
     },
     {
       "slug": "renko-pulseflow-elite-by-sam-george-adaptive-trade-map",
@@ -17719,14 +17745,14 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18431,6 +18457,32 @@
       "title": "Bollinger Bands Review: Settings, Strategy & How to Use It",
       "rating": 5,
       "score": 13.0
+    }
+  ],
+  "rsi-bottom-top-retest-scalper-josseliani": [
+    {
+      "slug": "demarker-indicator",
+      "title": "Demarker_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "fisher-transform",
+      "title": "Fisher Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "impulse-rsi-tobbysimard",
+      "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "random-forest-ai-rsi-macd-confluence-dots3red",
+      "title": "Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "rsi-divergence-detector": [
@@ -21914,7 +21966,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.7
+      "score": 12.6
     }
   ],
   "the-tradegoal-9-0": [
@@ -21986,13 +22038,13 @@
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.7
+      "score": 12.6
     },
     {
       "slug": "the-oloid-owma-oloid-weighted-moving-average",
       "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.7
+      "score": 12.6
     }
   ],
   "three-black-crows": [
@@ -22567,6 +22619,32 @@
       "score": 5.0
     }
   ],
+  "triangle-pattern-ascending-descending-symmetrical": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "triangle-pattern": [
     {
       "slug": "1-trendline-strategy",
@@ -22772,7 +22850,33 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.7
+      "score": 12.6
+    }
+  ],
+  "trix-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "trix-signal-line": [
@@ -23475,6 +23579,32 @@
       "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "volatility-storm-tracker-quantum-algo": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "volume-bars": [
@@ -24205,6 +24335,32 @@
       "score": 12.0
     }
   ],
+  "volume-weighted-order-block-zones": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "volume-weighted-s-r": [
     {
       "slug": "1-trendline-strategy",
@@ -24281,6 +24437,58 @@
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "vortex-divergence": [
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "vortex-mtf": [
+    {
+      "slug": "adx-with-di-di",
+      "title": "Adx_With_Di_Di Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ai-predictive-flow",
+      "title": "Ai_Predictive_Flow Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "vortex": [
@@ -24879,6 +25087,32 @@
       "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "williams-accumulation-distribution": [
+    {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "williams-alligator-fractals-combo": [
