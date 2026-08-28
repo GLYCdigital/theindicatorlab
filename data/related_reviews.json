@@ -519,6 +519,32 @@
       "score": 13.0
     }
   ],
+  "adaptive-liquidity-reclaim-map-phenlabs": [
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "adaptive-moving-average": [
     {
       "slug": "adaptive-ai-indicator",
@@ -909,6 +935,32 @@
       "score": 8.0
     }
   ],
+  "agreement-streak-analyzer-fibonacciflux": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "ai-predictive-flow": [
     {
       "slug": "acceleration-deceleration-ac-oscillator",
@@ -1235,14 +1287,14 @@
       "score": 5.0
     },
     {
-      "slug": "ais-supertrend",
-      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -1885,15 +1937,41 @@
       "score": 5.0
     },
     {
-      "slug": "alt-bat-pattern",
-      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "atr-fibonacci-expansion-zones",
-      "title": "Atr Fibonacci Expansion Zones Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "alt-bat-pattern",
+      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "auto-fibonacci-ai-level-respect-statistics-dots3red": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -2405,14 +2483,14 @@
       "score": 9.0
     },
     {
-      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
-      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
+      "slug": "phase-space-quadrant-dashboard-fibonacciflux",
+      "title": "Phase_Space_Quadrant_Dashboard_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "trailing-stop-calculator",
-      "title": "Trailing_Stop_Calculator Review: Settings, Strategy & How to Use It",
+      "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
+      "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -3091,6 +3169,32 @@
       "title": "Atr_Based_Position_Sizing Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "candelacharts-value-area-reversals": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "candle-pressure-flip-engine": [
@@ -5513,6 +5617,12 @@
   ],
   "dynamic-market-structure-liquidity-engine-dmsl": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -5527,12 +5637,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "choch-identifier",
-      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -5565,6 +5669,12 @@
   ],
   "dynamic-smc-market-structure": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -5579,12 +5689,6 @@
     {
       "slug": "choch-identifier",
       "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -5613,6 +5717,32 @@
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "earnings-overview-valuation-toolkit": [
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "backtesting-dashboard",
+      "title": "Backtesting_Dashboard Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "ease-of-movement": [
@@ -7123,6 +7253,32 @@
       "score": 5.0
     }
   ],
+  "fibonacci-path-profile-mantisalgo": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "fibonacci-retracement-auto": [
     {
       "slug": "1-trendline-strategy",
@@ -8385,14 +8541,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -8411,14 +8567,14 @@
       "score": 5.0
     },
     {
-      "slug": "adx-average-directional-index",
-      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adx",
-      "title": "Adx Review: Settings, Strategy & How to Use It",
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9093,8 +9249,8 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-with-ema",
-      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9217,14 +9373,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9249,8 +9405,8 @@
       "score": 5.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9289,6 +9445,12 @@
       "score": 5.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9297,12 +9459,6 @@
     {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "alpha-signal-engine",
-      "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9341,20 +9497,20 @@
       "score": 5.0
     },
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "amd-po3-with-live-edge-stats-willyalgotrader",
-      "title": "Amd_Po3_With_Live_Edge_Stats_Willyalgotrader Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9795,8 +9951,8 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9821,8 +9977,8 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -9985,6 +10141,12 @@
   ],
   "ict-sessions-killzones": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -9999,12 +10161,6 @@
     {
       "slug": "dynamic-smc-market-structure",
       "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10037,6 +10193,12 @@
   ],
   "ict-smart-money-execution-engine": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10051,12 +10213,6 @@
     {
       "slug": "dynamic-market-structure-liquidity-engine-dmsl",
       "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-smc-market-structure",
-      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10323,6 +10479,12 @@
   ],
   "institutional-order-blocks": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10337,12 +10499,6 @@
     {
       "slug": "dynamic-market-structure-liquidity-engine-dmsl",
       "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-smc-market-structure",
-      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10427,6 +10583,12 @@
   ],
   "intrabar-profile-trading": [
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "high-volume-breakout-targets-algoalpha",
       "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10441,12 +10603,6 @@
     {
       "slug": "kinetic-slippage-index-ksi",
       "title": "Kinetic_Slippage_Index_Ksi Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "linear-regression-mtf",
-      "title": "Linear_Regression_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -10549,8 +10705,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -10569,14 +10725,14 @@
       "score": 9.0
     },
     {
-      "slug": "black-litterman-allocator-backquant",
-      "title": "Black_Litterman_Allocator_Backquant Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "black-litterman-allocator-backquant",
+      "title": "Black_Litterman_Allocator_Backquant Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11571,6 +11727,12 @@
   ],
   "liquidity-absorption-detection": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11587,15 +11749,15 @@
       "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "liquidity-grab-detector": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
@@ -11611,12 +11773,6 @@
     {
       "slug": "dynamic-smc-market-structure",
       "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11753,6 +11909,12 @@
   ],
   "liquidity-suite": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11767,12 +11929,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11883,6 +12039,12 @@
   ],
   "liquidity-sweep-target": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11897,12 +12059,6 @@
     {
       "slug": "dynamic-market-structure-liquidity-engine-dmsl",
       "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-smc-market-structure",
-      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11961,6 +12117,12 @@
   ],
   "liquidity-zones": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11976,12 +12138,6 @@
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -12253,6 +12409,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12261,12 +12423,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12285,14 +12441,14 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12311,14 +12467,14 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12331,6 +12487,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12339,12 +12501,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13065,14 +13221,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14261,14 +14417,14 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15183,6 +15339,32 @@
       "score": 9.0
     }
   ],
+  "obv-attention-consensus-ribbon-fibonacciflux": [
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-money-flow-cmf",
+      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-money-flow",
+      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-oscillator",
+      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "obv-ma": [
     {
       "slug": "accumulation-distribution",
@@ -15523,6 +15705,12 @@
   ],
   "orb-session-liquidity-model": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15537,12 +15725,6 @@
     {
       "slug": "dynamic-market-structure-liquidity-engine-dmsl",
       "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-smc-market-structure",
-      "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15593,8 +15775,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -15821,14 +16003,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16091,6 +16273,32 @@
       "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "phase-space-quadrant-dashboard-fibonacciflux": [
+    {
+      "slug": "adaptive-trend-ensemble-backquant",
+      "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "black-litterman-allocator-backquant",
+      "title": "Black_Litterman_Allocator_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "piercing-pattern": [
@@ -16454,7 +16662,7 @@
       "slug": "renko-pulseflow-elite-by-sam-george-adaptive-trade-map",
       "title": "Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.6
+      "score": 13.7
     }
   ],
   "pivot-points-woodie": [
@@ -16783,14 +16991,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16809,14 +17017,14 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -17797,14 +18005,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18222,7 +18430,7 @@
       "slug": "pivot-points-standard",
       "title": "Pivot Points Standard Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 13.6
+      "score": 13.7
     }
   ],
   "risk-management-dashboard": [
@@ -18389,6 +18597,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18397,12 +18611,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18921,8 +19129,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18993,14 +19201,14 @@
       "score": 5.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19169,6 +19377,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19177,12 +19391,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19221,6 +19429,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "anchored-vwap",
       "title": "Anchored Vwap Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19229,12 +19443,6 @@
     {
       "slug": "high-volume-breakout-targets-algoalpha",
       "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "htf-candle-volume-profile-chartprime",
-      "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19481,6 +19689,12 @@
       "score": 5.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19489,12 +19703,6 @@
     {
       "slug": "alpha-signal-engine",
       "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "atr-percentile",
-      "title": "Atr_Percentile Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19545,8 +19753,8 @@
       "score": 5.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19657,6 +19865,12 @@
   ],
   "smart-money-liquidity-matrix-session-finder": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19673,15 +19887,15 @@
       "title": "Dynamic_Smc_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "smart-money-liquidity-structure": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
@@ -19699,15 +19913,15 @@
       "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "cvd",
-      "title": "Cvd Review: Settings, Strategy & How to Use It",
-      "rating": 3,
-      "score": 9.0
     }
   ],
   "smart-money-stop-hunt-detection": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "dynamic-market-structure-liquidity-engine-dmsl",
       "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
@@ -19723,12 +19937,6 @@
     {
       "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
       "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19889,6 +20097,32 @@
       "score": 8.0
     }
   ],
+  "smartfit-trend-channels": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "smc-institutional-clean-wave-structure": [
     {
       "slug": "3d-market-profile-boswaves",
@@ -20021,6 +20255,12 @@
   ],
   "smt-divergence": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20035,12 +20275,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20862,7 +21096,7 @@
       "slug": "waddah-attar",
       "title": "Waddah Attar Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.6
+      "score": 13.7
     },
     {
       "slug": "true-strength-index",
@@ -20897,8 +21131,8 @@
       "score": 5.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -20957,6 +21191,12 @@
   ],
   "strong-mtf-liquidity-matrix": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20971,12 +21211,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21463,14 +21697,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21515,14 +21749,14 @@
       "score": 9.0
     },
     {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21665,6 +21899,12 @@
       "score": 5.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "alt-bat-pattern",
       "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21673,12 +21913,6 @@
     {
       "slug": "andrews-pitchfork",
       "title": "Andrews Pitchfork Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "anomaly-detection-indicator",
-      "title": "Anomaly_Detection_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21879,14 +22113,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22341,6 +22575,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22349,12 +22589,6 @@
     {
       "slug": "black-litterman-allocator-backquant",
       "title": "Black_Litterman_Allocator_Backquant Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22627,6 +22861,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22635,12 +22875,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22769,8 +23003,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22913,6 +23147,12 @@
       "score": 9.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22921,12 +23161,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24271,14 +24505,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24473,6 +24707,12 @@
       "score": 5.0
     },
     {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "ai-predictive-flow",
       "title": "Ai_Predictive_Flow Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -24481,12 +24721,6 @@
     {
       "slug": "aj-ict-smc",
       "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "algo-price-action-signals",
-      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -24834,7 +25068,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.6
+      "score": 13.7
     },
     {
       "slug": "schaff-trend-cycle",
@@ -24869,14 +25103,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24921,14 +25155,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -25065,6 +25299,12 @@
   ],
   "whale-liquidity-and-absorption-profile-algoalpha": [
     {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -25079,12 +25319,6 @@
     {
       "slug": "choch-identifier",
       "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -25597,14 +25831,14 @@
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
