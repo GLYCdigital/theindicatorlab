@@ -1,18 +1,18 @@
 ---
 {
   "title": "Ichimoku \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+53.2%"
+      "value": "+54.0%"
     },
     {
       "label": "CAGR",
-      "value": "8.9%"
+      "value": "9.0%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+6.9%",
+      "return_pct": "+4.9%",
       "trades": "0",
       "win_rate_pct": "40.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.6%",
+      "return_pct": "+17.2%",
       "trades": "3",
       "win_rate_pct": "40.0%"
     }
@@ -109,7 +109,7 @@ On QQQ, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-08-23 → 2026-08-21), the Ichimoku Cloud delivered a **+53.2% total return** on QQQ, compounding at **8.9% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Ichimoku Cloud delivered a **+54.0% total return** on QQQ, compounding at **9.0% annually**. 
 
 At **0.45**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on QQQ](/backtests/ichimoku-cloud-qqq-trades.png)

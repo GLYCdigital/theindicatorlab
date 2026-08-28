@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+22.9%"
+      "value": "+22.0%"
     },
     {
       "label": "CAGR",
-      "value": "4.2%"
+      "value": "4.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.17"
+      "value": "0.16"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.18"
+      "value": "1.17"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+18.8%",
+      "return_pct": "+16.1%",
       "trades": "5",
       "win_rate_pct": "47.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+14.5%",
+      "return_pct": "+18.3%",
       "trades": "9",
       "win_rate_pct": "47.4%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/ichimoku-cloud-components/"
     },
     {
-      "title": "standard_error_channel review: settings, strategy & how to use it",
-      "url": "/reviews/standard-error-channel/"
+      "title": "confirmed_structure_transition_map_pineify review: settings, strategy & how to use it",
+      "url": "/reviews/confirmed-structure-transition-map-pineify/"
     },
     {
-      "title": "parabolic_sar_ema_combo review: settings, strategy & how to use it",
-      "url": "/reviews/parabolic-sar-ema-combo/"
+      "title": "standard_error_channel review: settings, strategy & how to use it",
+      "url": "/reviews/standard-error-channel/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On AAPL, the SAR acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-08-23 → 2026-08-21), the Parabolic SAR delivered a **+22.9% total return** on AAPL, compounding at **4.2% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Parabolic SAR delivered a **+22.0% total return** on AAPL, compounding at **4.1% annually**. 
 
-At **0.17**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.16**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 32% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.17 | ❌ Weak |
+| Sharpe Ratio | 0.16 | ❌ Weak |
 | Max Drawdown | 32.1% | ⚠️ Significant |
 | Win Rate | 47.4% | ⚠️ Below average |
-| Profit Factor | 1.18 | ⚠️ Marginal |
+| Profit Factor | 1.17 | ⚠️ Marginal |
 | Trades/Year | ~57 total | Active |
 
-The **profit factor of 1.18** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 47.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.17** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 47.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on AAPL?
 
-The parabolic sar struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.17 Sharpe ratio** and **1.18 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.16 Sharpe ratio** and **1.17 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on AAPL](/backtests/parabolic-sar-aapl-trades.png)

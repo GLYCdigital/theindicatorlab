@@ -1,22 +1,22 @@
 ---
 {
   "title": "Stochastic \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-17.7%"
+      "value": "-17.0%"
     },
     {
       "label": "CAGR",
-      "value": "-3.8%"
+      "value": "-3.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.35"
+      "value": "-0.33"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.83"
+      "value": "0.84"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+6.9%",
-      "trades": "9",
+      "return_pct": "+5.7%",
+      "trades": "8",
       "win_rate_pct": "43.9%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+12.6%",
-      "trades": "19",
+      "return_pct": "+13.2%",
+      "trades": "20",
       "win_rate_pct": "43.9%"
     }
   ],
@@ -109,9 +109,9 @@ On SPY, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-08-23 → 2026-08-21), the Stochastic Crossover delivered a **-17.7% total return** on SPY, compounding at **-3.8% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Stochastic Crossover delivered a **-17.0% total return** on SPY, compounding at **-3.7% annually**. 
 
-At **-0.35**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.33**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 32% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.35 | ❌ Weak |
+| Sharpe Ratio | -0.33 | ❌ Weak |
 | Max Drawdown | 32.1% | ⚠️ Significant |
 | Win Rate | 43.9% | ⚠️ Below average |
-| Profit Factor | 0.83 | ❌ Unprofitable |
+| Profit Factor | 0.84 | ❌ Unprofitable |
 | Trades/Year | ~157 total | Active |
 
-The **profit factor of 0.83** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 43.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.84** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 43.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on SPY?
 
-The stochastic crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.35 Sharpe ratio** and **0.83 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.33 Sharpe ratio** and **0.84 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on SPY](/backtests/stochastic-crossover-spy-trades.png)

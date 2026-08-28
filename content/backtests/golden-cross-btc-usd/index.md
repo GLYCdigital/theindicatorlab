@@ -1,10 +1,10 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-6.5%",
+      "return_pct": "-1.6%",
       "trades": "0",
       "win_rate_pct": "75.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.8%",
+      "return_pct": "-12.2%",
       "trades": "0",
       "win_rate_pct": "75.0%"
     }
@@ -109,7 +109,7 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-08-23 → 2026-08-21), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
 
 At **0.37**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

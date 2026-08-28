@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+35.3%"
+      "value": "+31.0%"
     },
     {
       "label": "CAGR",
-      "value": "6.2%"
+      "value": "5.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.42"
+      "value": "0.34"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.3%",
+      "return_pct": "+1.0%",
       "trades": "2",
       "win_rate_pct": "42.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+8.4%",
+      "return_pct": "+4.9%",
       "trades": "6",
       "win_rate_pct": "42.3%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/rsi-macd-combo-signal/"
     },
     {
-      "title": "luxalgo indicator suite review: settings, strategy & how to use it",
-      "url": "/reviews/luxalgo/"
+      "title": "deepflow_absorption_proxy_fibonacciflux review: settings, strategy & how to use it",
+      "url": "/reviews/deepflow-absorption-proxy-fibonacciflux/"
     },
     {
-      "title": "rsi_macd_confluence review: settings, strategy & how to use it",
-      "url": "/reviews/rsi-macd-confluence/"
+      "title": "luxalgo indicator suite review: settings, strategy & how to use it",
+      "url": "/reviews/luxalgo/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On GC=F, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-08-23 → 2026-08-21), the MACD Crossover delivered a **+35.3% total return** on GC=F, compounding at **6.2% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the MACD Crossover delivered a **+31.0% total return** on GC=F, compounding at **5.6% annually**. 
 
-At **0.42**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.34**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **22.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 22% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **22.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.42 | ❌ Weak |
+| Sharpe Ratio | 0.34 | ❌ Weak |
 | Max Drawdown | 22.0% | ⚠️ Moderate |
 | Win Rate | 42.3% | ⚠️ Below average |
 | Profit Factor | 1.38 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.38** tells the real story: when the MACD fires, the win
 
 ## Does the MACD Crossover Work on GC=F?
 
-The macd crossover shows moderate edge on GC=F — **0.42 Sharpe, 1.38 profit factor** over 52 trades. It's not a home run, but it's also not random.
+The macd crossover shows moderate edge on GC=F — **0.34 Sharpe, 1.38 profit factor** over 52 trades. It's not a home run, but it's also not random.
 
 The 42.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on GC=F](/backtests/macd-crossover-gc=f-trades.png)

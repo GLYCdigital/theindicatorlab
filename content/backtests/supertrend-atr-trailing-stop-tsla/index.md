@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+34.7%"
+      "value": "+26.2%"
     },
     {
       "label": "CAGR",
-      "value": "6.1%"
+      "value": "4.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.23"
+      "value": "0.20"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.03"
+      "value": "1.04"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+49.6%",
-      "trades": "18",
+      "return_pct": "+44.6%",
+      "trades": "17",
       "win_rate_pct": "38.6%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-17.2%",
-      "trades": "38",
+      "return_pct": "-20.8%",
+      "trades": "39",
       "win_rate_pct": "38.6%"
     }
   ],
@@ -109,9 +109,9 @@ On TSLA, the SuperTrend acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-08-23 → 2026-08-21), the SuperTrend + ATR Trailing Stop delivered a **+34.7% total return** on TSLA, compounding at **6.1% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the SuperTrend + ATR Trailing Stop delivered a **+26.2% total return** on TSLA, compounding at **4.8% annually**. 
 
-At **0.23**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.20**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **54.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 54% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **54.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.23 | ❌ Weak |
+| Sharpe Ratio | 0.20 | ❌ Weak |
 | Max Drawdown | 54.1% | ⚠️ Significant |
 | Win Rate | 38.6% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.03 | ⚠️ Marginal |
+| Profit Factor | 1.04 | ⚠️ Marginal |
 | Trades/Year | ~306 total | Active |
 
-The **profit factor of 1.03** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 38.6% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.04** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 38.6% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on TSLA?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.23 Sharpe ratio** and **1.03 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.20 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on TSLA with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on TSLA](/backtests/supertrend-atr-trailing-stop-tsla-trades.png)

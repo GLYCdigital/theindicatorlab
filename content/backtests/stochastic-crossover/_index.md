@@ -1,6 +1,6 @@
 ---
 title: "Stochastic Backtest Results"
-date: 2026-08-22
+date: 2026-08-29
 draft: false
 type: backtests
 description: "All 5 asset backtests for the Stochastic indicator. Sorted by Sharpe ratio."
@@ -25,18 +25,18 @@ description: "All 5 asset backtests for the Stochastic indicator. Sorted by Shar
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/stochastic-crossover-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+15.2%</td><td>2.9%</td><td>0.20</td><td>59.3%</td><td>37.1%</td><td>0.99</td><td>237</td></tr>
-<tr><td>🔴 <a href="/backtests/stochastic-crossover-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-41.6%</td><td>-10.2%</td><td>-0.29</td><td>63.6%</td><td>32.7%</td><td>0.88</td><td>226</td></tr>
-<tr><td>🔴 <a href="/backtests/stochastic-crossover-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-17.7%</td><td>-3.8%</td><td>-0.35</td><td>32.1%</td><td>43.9%</td><td>0.83</td><td>157</td></tr>
-<tr><td>🔴 <a href="/backtests/stochastic-crossover-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-39.9%</td><td>-9.7%</td><td>-0.55</td><td>49.5%</td><td>43.0%</td><td>0.70</td><td>165</td></tr>
-<tr><td>🔴 <a href="/backtests/stochastic-crossover-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>-30.9%</td><td>-7.1%</td><td>-2.72</td><td>31.4%</td><td>33.9%</td><td>0.47</td><td>171</td></tr>
+<tr><td>🟡 <a href="/backtests/stochastic-crossover-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+16.0%</td><td>3.0%</td><td>0.20</td><td>59.3%</td><td>37.6%</td><td>1.04</td><td>237</td></tr>
+<tr><td>🔴 <a href="/backtests/stochastic-crossover-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-43.0%</td><td>-10.6%</td><td>-0.30</td><td>63.6%</td><td>32.7%</td><td>0.90</td><td>226</td></tr>
+<tr><td>🔴 <a href="/backtests/stochastic-crossover-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-17.0%</td><td>-3.7%</td><td>-0.33</td><td>32.1%</td><td>43.9%</td><td>0.84</td><td>157</td></tr>
+<tr><td>🔴 <a href="/backtests/stochastic-crossover-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-38.5%</td><td>-9.3%</td><td>-0.52</td><td>49.5%</td><td>43.0%</td><td>0.72</td><td>165</td></tr>
+<tr><td>🔴 <a href="/backtests/stochastic-crossover-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>-31.2%</td><td>-7.2%</td><td>-2.79</td><td>31.4%</td><td>33.7%</td><td>0.47</td><td>172</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: August 22, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: August 29, 2026</p>
 
   </div>
 </article>

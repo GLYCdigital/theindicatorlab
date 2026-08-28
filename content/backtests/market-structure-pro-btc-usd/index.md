@@ -1,22 +1,22 @@
 ---
 {
   "title": "Swing \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+27.3%"
+      "value": "+32.2%"
     },
     {
       "label": "CAGR",
-      "value": "4.9%"
+      "value": "5.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.24"
+      "value": "0.25"
     },
     {
       "label": "Max Drawdown",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "26.8%"
+      "value": "27.4%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.03"
+      "value": "1.05"
     },
     {
       "label": "Total Trades",
-      "value": "97"
+      "value": "95"
     },
     {
       "label": "Avg Trade",
-      "value": "9 days"
+      "value": "10 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-6.5%",
-      "trades": "6",
-      "win_rate_pct": "26.8%"
+      "return_pct": "-1.6%",
+      "trades": "4",
+      "win_rate_pct": "27.4%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "19",
-      "win_rate_pct": "26.8%"
+      "win_rate_pct": "27.4%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "18",
-      "win_rate_pct": "26.8%"
+      "win_rate_pct": "27.4%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "19",
-      "win_rate_pct": "26.8%"
+      "win_rate_pct": "27.4%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "20",
-      "win_rate_pct": "26.8%"
+      "win_rate_pct": "27.4%"
     },
     {
       "year": "2026",
-      "return_pct": "-12.8%",
+      "return_pct": "-12.2%",
       "trades": "15",
-      "win_rate_pct": "26.8%"
+      "win_rate_pct": "27.4%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On BTC, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-08-23 → 2026-08-21), the Market Structure Pro delivered a **+27.3% total return** on BTC-USD, compounding at **4.9% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Market Structure Pro delivered a **+32.2% total return** on BTC-USD, compounding at **5.8% annually**. 
 
-At **0.24**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.25**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **54.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 54% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **54.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.24 | ❌ Weak |
+| Sharpe Ratio | 0.25 | ❌ Weak |
 | Max Drawdown | 54.3% | ⚠️ Significant |
-| Win Rate | 26.8% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.03 | ⚠️ Marginal |
-| Trades/Year | ~97 total | Active |
+| Win Rate | 27.4% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.05 | ⚠️ Marginal |
+| Trades/Year | ~95 total | Active |
 
-The **profit factor of 1.03** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 26.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.05** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 27.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Market Structure Pro Work on BTC?
 
-The market structure pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.24 Sharpe ratio** and **1.03 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.25 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on BTC-USD](/backtests/market-structure-pro-btc-usd-trades.png)

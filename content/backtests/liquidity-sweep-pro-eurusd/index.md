@@ -1,18 +1,18 @@
 ---
 {
   "title": "Sweep \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-25.0%"
+      "value": "-25.6%"
     },
     {
       "label": "CAGR",
-      "value": "-5.6%"
+      "value": "-5.7%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-3.2%",
+      "return_pct": "-4.0%",
       "trades": "9",
       "win_rate_pct": "29.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-0.6%",
+      "return_pct": "-1.4%",
       "trades": "13",
       "win_rate_pct": "29.4%"
     }
@@ -109,7 +109,7 @@ On EURUSD, the Sweep acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-08-23 → 2026-08-21), the Liquidity Sweep Pro delivered a **-25.0% total return** on EURUSD=X, compounding at **-5.6% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Liquidity Sweep Pro delivered a **-25.6% total return** on EURUSD=X, compounding at **-5.7% annually**. 
 
 At **-2.47**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on EURUSD=X](/backtests/liquidity-sweep-pro-eurusd-trades.png)

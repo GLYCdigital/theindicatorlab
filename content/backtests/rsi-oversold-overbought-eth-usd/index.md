@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-32.1%"
+      "value": "-31.5%"
     },
     {
       "label": "CAGR",
-      "value": "-7.4%"
+      "value": "-7.3%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.9%",
+      "return_pct": "+14.2%",
       "trades": "0",
       "win_rate_pct": "14.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-19.2%",
+      "return_pct": "-18.6%",
       "trades": "3",
       "win_rate_pct": "14.3%"
     }
@@ -109,7 +109,7 @@ On ETH, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-08-23 → 2026-08-21), the RSI Oversold/Overbought delivered a **-32.1% total return** on ETH-USD, compounding at **-7.4% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the RSI Oversold/Overbought delivered a **-31.5% total return** on ETH-USD, compounding at **-7.3% annually**. 
 
 At **0.06**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on ETH-USD](/backtests/rsi-oversold-overbought-eth-usd-trades.png)

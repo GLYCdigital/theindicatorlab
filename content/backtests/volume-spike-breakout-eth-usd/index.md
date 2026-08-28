@@ -1,22 +1,22 @@
 ---
 {
   "title": "Volume \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-08-22",
+  "date": "2026-08-29",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-23 \u2192 2026-08-21",
+  "period": "2021-08-30 \u2192 2026-08-28",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+59.6%"
+      "value": "+61.9%"
     },
     {
       "label": "CAGR",
-      "value": "9.8%"
+      "value": "10.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.71"
+      "value": "0.74"
     },
     {
       "label": "Max Drawdown",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "53.3%"
+      "value": "56.7%"
     },
     {
       "label": "Profit Factor",
-      "value": "2.13"
+      "value": "2.43"
     },
     {
       "label": "Total Trades",
@@ -36,45 +36,45 @@
     },
     {
       "label": "Avg Trade",
-      "value": "1 days"
+      "value": "2 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+10.9%",
+      "return_pct": "+14.2%",
       "trades": "0",
-      "win_rate_pct": "53.3%"
+      "win_rate_pct": "56.7%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "6",
-      "win_rate_pct": "53.3%"
+      "win_rate_pct": "56.7%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "6",
-      "win_rate_pct": "53.3%"
+      "win_rate_pct": "56.7%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "9",
-      "win_rate_pct": "53.3%"
+      "win_rate_pct": "56.7%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "7",
-      "win_rate_pct": "53.3%"
+      "win_rate_pct": "56.7%"
     },
     {
       "year": "2026",
-      "return_pct": "-19.2%",
+      "return_pct": "-18.6%",
       "trades": "2",
-      "win_rate_pct": "53.3%"
+      "win_rate_pct": "56.7%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On ETH, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-08-23 → 2026-08-21), the Volume Spike Breakout delivered a **+59.6% total return** on ETH-USD, compounding at **9.8% annually**. 
+Over five years (2021-08-30 → 2026-08-28), the Volume Spike Breakout delivered a **+61.9% total return** on ETH-USD, compounding at **10.1% annually**. 
 
-At **0.71**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.74**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **20.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 20% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,19 +119,19 @@ The catch? A **20.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.71 | ⚠️ Moderate |
+| Sharpe Ratio | 0.74 | ⚠️ Moderate |
 | Max Drawdown | 20.5% | ⚠️ Moderate |
-| Win Rate | 53.3% | ⚠️ Below average |
-| Profit Factor | 2.13 | ✅ Excellent |
+| Win Rate | 56.7% | ✅ Strong |
+| Profit Factor | 2.43 | ✅ Excellent |
 | Trades/Year | ~30 total | Selective — not overtrading |
 
-The **profit factor of 2.13** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 53.3% win rate, this is a mathematically sound edge.
+The **profit factor of 2.43** tells the real story: when the Volume fires, the winning signals are larger than the losing ones. Combined with a 56.7% win rate, this is a mathematically sound edge.
 
 ## Does the Volume Spike Breakout Work on ETH?
 
-The volume spike breakout shows moderate edge on ETH — **0.71 Sharpe, 2.13 profit factor** over 30 trades. It's not a home run, but it's also not random.
+The volume spike breakout shows moderate edge on ETH — **0.74 Sharpe, 2.43 profit factor** over 30 trades. It's not a home run, but it's also not random.
 
-The 53.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 56.7% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on ETH. Combine with trend filters or volume confirmation for better results.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 22, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on ETH-USD](/backtests/volume-spike-breakout-eth-usd-trades.png)
