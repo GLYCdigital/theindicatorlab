@@ -14,7 +14,7 @@ tags:
 author: "The Indicator Lab"
 ---
 
-The difference between a fake breakout and a real one is volume. These indicators help you read the participation behind price action — essential for any trader who wants to avoid false signals.
+The difference between a fake breakout and a real one is volume. These indicators help you read the participation behind price action — essential for any trader who wants to avoid false signals. We tested every pick live on [TradingView](https://www.tradingview.com/?aff_id=166324) before it made this list.
 
 Our selection spans 7 trend indicators, 3 free indicators.
 
@@ -35,6 +35,13 @@ In our testing, Volume Profile handled ranging markets better than most trend in
 **[Bid_Ask_Volume](/reviews/bid-ask-volume/)** ⭐⭐⭐⭐ (4/5)
 
 In our testing, Bid_Ask_Volume handled ranging markets better than most trend indicators — fewer whipsaws, clearer signals when the trend actually shifted. Like any trend tool, it lags in fast reversals. You'll give back some profits on sharp turnarounds — that's the trade-off for reliability. Best for: traders who use multi-timeframe analysis for confirmation.
+
+### 2.5. Quick CTA — Test the Top Picks Free
+
+Volume indicators only earn their keep when you see them on a live chart. Our top picks below are all free on TradingView:
+
+[Open TradingView and Load a Volume Indicator →](https://www.tradingview.com/?aff_id=166324)
+*Affiliate link · We earn a commission at no extra cost to you*
 
 ### 3. Cumulative_Volume_Delta
 
@@ -94,6 +101,8 @@ If you're setting up a TradingView chart and wondering where to start, this list
 Our selection spans 7 trend indicators, 3 free indicators. The average rating across this group is **4.1/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
 **Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+
+Want volume analysis across 20 markets at once — not just one chart? The [Lab Report](/the-lab-report/) tracks 93 indicators on 20 markets every 15 minutes, so you always know when volume is confirming (or rejecting) a move.
 
 ## Test These on TradingView
 
