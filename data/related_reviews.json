@@ -311,6 +311,32 @@
       "score": 8.0
     }
   ],
+  "accum-dist-divergence": [
+    {
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "multi-indicator-divergence",
+      "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "accumulation-distribution": [
     {
       "slug": "chaikin-money-flow",
@@ -2067,14 +2093,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -2549,6 +2575,12 @@
   ],
   "bolinger-bands-range-rsi-oscillator": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2563,12 +2595,6 @@
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -3121,6 +3147,12 @@
   ],
   "buy-sell-signals-using-multi-logic-trading-system": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adx-mtf",
       "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -3135,12 +3167,6 @@
     {
       "slug": "algo-price-action-signals",
       "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "alpha-signal-engine",
-      "title": "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -3373,8 +3399,8 @@
       "score": 16.0
     },
     {
-      "slug": "multi-indicator-divergence",
-      "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -3613,10 +3639,48 @@
       "score": 8.0
     }
   ],
-  "chaikin-money-flow-cmf": [
+  "chaikin-cmf-divergence": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "chaikin-cmf-signals": [
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-money-flow-cmf",
+      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
@@ -3625,17 +3689,31 @@
       "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
       "rating": 3,
       "score": 9.0
-    },
+    }
+  ],
+  "chaikin-money-flow-cmf": [
     {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-volatility-histogram",
-      "title": "Chaikin Volatility Histogram Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-cmf-signals",
+      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-money-flow",
+      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
+      "rating": 3,
       "score": 9.0
     }
   ],
@@ -7319,14 +7397,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-line",
-      "title": "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -8821,6 +8899,12 @@
       "score": 14.5
     },
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -8829,12 +8913,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
     }
@@ -11779,6 +11857,12 @@
   ],
   "linear-regression-mtf": [
     {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -11793,12 +11877,6 @@
     {
       "slug": "intrabar-profile-trading",
       "title": "Intrabar_Profile_Trading Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "macd-adaptive",
-      "title": "Macd_Adaptive Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -12347,6 +12425,32 @@
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "liquidity-void-detector": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "choch-identifier",
+      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "liquidity-zones": [
@@ -13859,6 +13963,12 @@
   ],
   "mfi-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13875,18 +13985,18 @@
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "mfi-mtf": [
     {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
@@ -13899,12 +14009,6 @@
     {
       "slug": "chaikin-oscillator",
       "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-volatility-histogram",
-      "title": "Chaikin Volatility Histogram Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14171,6 +14275,12 @@
   ],
   "momentum-rsi-nal": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bollinger-bands-rsi-combo",
       "title": "Bollinger_Bands_Rsi_Combo Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14185,12 +14295,6 @@
     {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14209,15 +14313,15 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "chaikin-cmf-signals",
+      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -14521,15 +14625,15 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -14683,8 +14787,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14951,6 +15055,12 @@
   ],
   "multi-indicator-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14965,12 +15075,6 @@
     {
       "slug": "rsi-divergence-detector",
       "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-entry-engine",
-      "title": "Rsi_Divergence_Entry_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -15315,6 +15419,12 @@
   ],
   "neowave": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15329,12 +15439,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15685,20 +15789,20 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "chaikin-cmf-signals",
+      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-money-flow-cmf",
+      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15711,6 +15815,12 @@
       "score": 9.0
     },
     {
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "chaikin-money-flow-cmf",
       "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15720,12 +15830,6 @@
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -15789,20 +15893,20 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "chaikin-cmf-signals",
+      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-money-flow-cmf",
+      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18071,6 +18175,12 @@
   ],
   "quantitative-estimation": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18085,12 +18195,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18291,14 +18395,14 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18617,6 +18721,12 @@
   ],
   "relative-momentum-index-rmi": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18631,12 +18741,6 @@
     {
       "slug": "bollinger-bands-rsi-combo",
       "title": "Bollinger_Bands_Rsi_Combo Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18895,8 +18999,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19013,6 +19117,12 @@
       "score": 13.0
     },
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19021,12 +19131,6 @@
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19059,6 +19163,12 @@
   ],
   "rsi-bottom-top-retest-scalper-josseliani": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "demarker-indicator",
       "title": "Demarker_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19073,12 +19183,6 @@
     {
       "slug": "impulse-rsi-tobbysimard",
       "title": "Impulse_Rsi_Tobbysimard Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "random-forest-ai-rsi-macd-confluence-dots3red",
-      "title": "Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -19103,14 +19207,20 @@
       "score": 16.0
     },
     {
-      "slug": "multi-indicator-divergence",
-      "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
   ],
   "rsi-divergence-entry-engine": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19125,18 +19235,18 @@
     {
       "slug": "multi-indicator-divergence",
       "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
   ],
   "rsi-divergence-hunter": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19153,15 +19263,15 @@
       "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
     }
   ],
   "rsi-divergence-mtf": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
     {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
@@ -19179,15 +19289,15 @@
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
     }
   ],
   "rsi-divergence-scanner": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
     {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
@@ -19203,18 +19313,18 @@
     {
       "slug": "multi-indicator-divergence",
       "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
   ],
   "rsi-hidden-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19229,12 +19339,6 @@
     {
       "slug": "multi-indicator-divergence",
       "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -19319,6 +19423,12 @@
   ],
   "rsi-mtf": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19333,12 +19443,6 @@
     {
       "slug": "multi-indicator-divergence",
       "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -19397,6 +19501,12 @@
   ],
   "rsi-regular-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19411,12 +19521,6 @@
     {
       "slug": "multi-indicator-divergence",
       "title": "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-divergence-detector",
-      "title": "Rsi Divergence Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -19571,8 +19675,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19637,6 +19741,12 @@
       "score": 5.0
     },
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -19645,12 +19755,6 @@
     {
       "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
       "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "agreement-streak-analyzer-fibonacciflux",
-      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -19969,6 +20073,12 @@
   ],
   "sigmoid-rsi-nal": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis_Adaptive_Rsi Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -19983,12 +20093,6 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "demarker-indicator",
-      "title": "Demarker_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20203,6 +20307,12 @@
   ],
   "smart-market-structure-johnson": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "alt-bat-pattern",
       "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20217,12 +20327,6 @@
     {
       "slug": "aroon-divergence",
       "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani",
-      "title": "Auto_Trendline_Intelligence_Bos_Choch_Fvg_Rehan_Khanani Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -20697,6 +20801,12 @@
   ],
   "smt-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20711,12 +20821,6 @@
     {
       "slug": "aroon-divergence",
       "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "bollinger-bands-divergence",
-      "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21085,6 +21189,32 @@
       "score": 16.0
     }
   ],
+  "std-time": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "stoc-risk-table-lite": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -21295,6 +21425,12 @@
   ],
   "stochastic-rsi-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -21309,12 +21445,6 @@
     {
       "slug": "cardwell-rsi-trade-navigator",
       "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -21333,14 +21463,14 @@
       "score": 13.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22119,8 +22249,8 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22139,14 +22269,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22257,6 +22387,12 @@
   ],
   "swing-high-low-detector": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-swing-timing-engine-algopoint",
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22271,12 +22407,6 @@
     {
       "slug": "adx-average-directional-index",
       "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-mtf",
-      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -23321,6 +23451,32 @@
       "score": 5.0
     }
   ],
+  "trendline-breakout-levels": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-trend-ensemble-backquant",
+      "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "byo-pattern-trendoscope",
+      "title": "Byo_Pattern_Trendoscope Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "triangle-pattern-ascending-descending-symmetrical": [
     {
       "slug": "adaptive-composite-oscillator-aco",
@@ -23557,6 +23713,12 @@
   ],
   "trix-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -23571,12 +23733,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -23739,6 +23895,12 @@
   ],
   "tsi-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -23753,12 +23915,6 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -24257,6 +24413,32 @@
       "score": 12.0
     }
   ],
+  "volatility-squeeze": [
+    {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger_Bands_Squeeze Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger_Bands_Width Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands",
+      "title": "Bollinger Bands Review: Settings, Strategy & How to Use It",
+      "rating": 5,
+      "score": 13.0
+    }
+  ],
   "volatility-stop": [
     {
       "slug": "adaptive-envelopes",
@@ -24441,6 +24623,12 @@
   ],
   "volume-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -24455,12 +24643,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -24629,20 +24811,20 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "chaikin-cmf-signals",
+      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-money-flow-cmf",
+      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -25143,6 +25325,12 @@
   ],
   "vortex-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -25157,12 +25345,6 @@
     {
       "slug": "bollinger-bands-divergence",
       "title": "Bollinger_Bands_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -25477,6 +25659,32 @@
       "title": "Session_Vwap Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "vwap-std-dev-bands": [
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger_Bands_Width Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands",
+      "title": "Bollinger Bands Review: Settings, Strategy & How to Use It",
+      "rating": 5,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-bollinger-bands",
+      "title": "Rsi_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "vwap": [
@@ -25897,6 +26105,12 @@
   ],
   "williams-r-divergence": [
     {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "breadth-topping-syndrome",
       "title": "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -25911,12 +26125,6 @@
     {
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -26129,6 +26337,32 @@
       "score": 9.0
     }
   ],
+  "wyckoff-spring-detection": [
+    {
+      "slug": "green-red-sweep-candle",
+      "title": "Green_Red_Sweep_Candle Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "initial-balance-auction-intelligence-by-dgt",
+      "title": "Initial_Balance_Auction_Intelligence_By_Dgt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "innovation-gated-hull-supertrend-backquant",
+      "title": "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "wyckoff-volume-analysis": [
     {
       "slug": "ml-vsa",
@@ -26201,8 +26435,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
