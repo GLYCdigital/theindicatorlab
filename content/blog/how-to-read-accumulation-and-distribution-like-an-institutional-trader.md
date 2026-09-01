@@ -1,7 +1,7 @@
 ---
 title: "How to Read Accumulation and Distribution Like an Institutional Trader"
 description: "Accumulation and distribution explained: how to spot Wyckoff phases using TradingView indicators you already have, without a proprietary black box."
-date: 2026-09-02
+date: 2026-09-02T00:30:00+08:00
 draft: false
 type: blog
 image: "/screenshots/accumulation-distribution.png"
