@@ -337,6 +337,32 @@
       "score": 13.0
     }
   ],
+  "accumulation-distribution-line-adl": [
+    {
+      "slug": "wyckoff-accumulation-distribution",
+      "title": "Wyckoff_Accumulation_Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "accumulation-distribution": [
     {
       "slug": "chaikin-money-flow",
@@ -3653,19 +3679,25 @@
       "score": 9.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adx-divergence",
-      "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
   ],
   "chaikin-cmf-signals": [
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
@@ -3683,15 +3715,15 @@
       "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
-      "score": 9.0
     }
   ],
   "chaikin-money-flow-cmf": [
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
@@ -3708,12 +3740,6 @@
       "slug": "chaikin-cmf-signals",
       "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -4413,8 +4439,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-supertrend-obv-strixedge",
-      "title": "Ema_Supertrend_Obv_Strixedge Review: Settings, Strategy & How to Use It",
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -5979,6 +6005,58 @@
       "score": 5.0
     }
   ],
+  "ease-of-movement-eom": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "ease-of-movement-ma": [
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "alma-arnaud-legoux",
+      "title": "Alma Arnaud Legoux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "arnaud-legoux-moving-average-alma",
+      "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "ease-of-movement": [
     {
       "slug": "1-trendline-strategy",
@@ -6903,14 +6981,14 @@
       "score": 9.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ais-supertrend",
-      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -8007,6 +8085,32 @@
       "score": 13.0
     }
   ],
+  "force-index-ema": [
+    {
+      "slug": "arnaud-legoux-moving-average-alma",
+      "title": "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "force-index": [
     {
       "slug": "1-trendline-strategy",
@@ -8974,7 +9078,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 14.6
+      "score": 14.5
     },
     {
       "slug": "accum-dist-divergence",
@@ -10919,6 +11023,32 @@
       "score": 8.0
     }
   ],
+  "institutional-turtle-soup": [
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "jurik-composite-fractal",
+      "title": "Jurik_Composite_Fractal Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "moving-average-cross",
+      "title": "Moving_Average_Cross Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "interest-rate-sensitivity": [
     {
       "slug": "1-trendline-strategy",
@@ -11245,14 +11375,14 @@
       "score": 9.0
     },
     {
-      "slug": "ehlers-laguerre-filter",
-      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy & How to Use It",
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -11875,8 +12005,8 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -12323,6 +12453,32 @@
       "score": 12.0
     }
   ],
+  "liquidity-shift-detection": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "choch-identifier",
+      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "liquidity-suite": [
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
@@ -12559,6 +12715,12 @@
   ],
   "liquidity-zones": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -12574,12 +12736,6 @@
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cvd",
-      "title": "Cvd Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -14093,6 +14249,12 @@
   ],
   "mfi-mtf": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14108,12 +14270,6 @@
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -14405,6 +14561,12 @@
   ],
   "money-flow-index-mfi": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14419,12 +14581,6 @@
     {
       "slug": "chaikin-cmf-divergence",
       "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-cmf-signals",
-      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14567,6 +14723,12 @@
       "score": 9.0
     },
     {
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-cross-signal",
       "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14575,12 +14737,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14599,14 +14755,14 @@
       "score": 9.0
     },
     {
-      "slug": "ema-cross-signal",
-      "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
+      "slug": "ema-cross-signal",
+      "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14735,8 +14891,8 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14749,12 +14905,6 @@
       "score": 8.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14763,6 +14913,12 @@
     {
       "slug": "adaptive-swing-timing-engine-algopoint",
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive_Trend_Lines Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -15347,6 +15503,12 @@
       "score": 9.0
     },
     {
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-cross-signal",
       "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15355,12 +15517,6 @@
     {
       "slug": "ema-cross",
       "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "Ema Crossover Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15887,6 +16043,12 @@
   ],
   "obv-attention-consensus-ribbon-fibonacciflux": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15902,12 +16064,6 @@
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-oscillator",
-      "title": "Chaikin_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -15939,6 +16095,12 @@
   ],
   "obv-ma": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -15955,15 +16117,15 @@
       "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "obv-mtf": [
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
@@ -15980,12 +16142,6 @@
       "slug": "chaikin-money-flow-cmf",
       "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-money-flow",
-      "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -16043,6 +16199,12 @@
   ],
   "on-balance-volume-obv": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -16057,12 +16219,6 @@
     {
       "slug": "chaikin-cmf-signals",
       "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -16191,8 +16347,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -16406,6 +16562,32 @@
     }
   ],
   "order-flow-fvg": [
+    {
+      "slug": "best-order-flow-footprint-delta-xcelerate-trade",
+      "title": "Best_Order_Flow_Footprint_Delta_Xcelerate_Trade Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bid-ask-volume",
+      "title": "Bid_Ask_Volume Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
+    }
+  ],
+  "order-flow-imbalance-s-r": [
     {
       "slug": "best-order-flow-footprint-delta-xcelerate-trade",
       "title": "Best_Order_Flow_Footprint_Delta_Xcelerate_Trade Review: Settings, Strategy & How to Use It",
@@ -17341,6 +17523,32 @@
       "score": 8.0
     }
   ],
+  "polarized-fractal-efficiency-pfe": [
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "awesome-oscillator-bill-williams",
+      "title": "Awesome_Oscillator_Bill_Williams Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review: Settings, Strategy & How to Use It",
+      "rating": 3,
+      "score": 9.0
+    }
+  ],
   "polarized-fractal-efficiency": [
     {
       "slug": "acceleration-deceleration-ac-oscillator",
@@ -17863,6 +18071,12 @@
   ],
   "price-volume-rank": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -17878,12 +18092,6 @@
       "slug": "cvd",
       "title": "Cvd Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -18551,14 +18759,14 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -20331,6 +20539,32 @@
       "score": 12.0
     }
   ],
+  "sma-cross-signal": [
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "force-index-divergence",
+      "title": "Force_Index_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "green-red-sweep-candle",
+      "title": "Green_Red_Sweep_Candle Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "sma-cross": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -20365,6 +20599,12 @@
       "score": 9.0
     },
     {
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ehlers-laguerre-filter",
       "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20373,12 +20613,6 @@
     {
       "slug": "ema-cross-signal",
       "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -20989,6 +21223,12 @@
       "score": 13.0
     },
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -20997,12 +21237,6 @@
     {
       "slug": "adx-divergence",
       "title": "Adx_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "aroon-divergence",
-      "title": "Aroon_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21391,8 +21625,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -21844,7 +22078,7 @@
       "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
       "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 14.6
+      "score": 14.5
     },
     {
       "slug": "waddah-attar",
@@ -22457,8 +22691,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22980,7 +23214,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.5
+      "score": 12.4
     }
   ],
   "the-tradegoal-9-0": [
@@ -23052,13 +23286,13 @@
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.5
+      "score": 12.4
     },
     {
       "slug": "the-oloid-owma-oloid-weighted-moving-average",
       "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.5
+      "score": 12.4
     }
   ],
   "three-black-crows": [
@@ -23890,7 +24124,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.5
+      "score": 12.4
     }
   ],
   "trix-divergence": [
@@ -25013,6 +25247,12 @@
   ],
   "volume-price-trend-vpt": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -25027,12 +25267,6 @@
     {
       "slug": "chaikin-cmf-signals",
       "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -25273,26 +25507,26 @@
   ],
   "volume-weighted-ma-ribbon": [
     {
+      "slug": "ease-of-movement-ma",
+      "title": "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-ribbon",
       "title": "Ema_Ribbon Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
+      "slug": "force-index-ema",
+      "title": "Force_Index_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "high-volume-breakout-targets-algoalpha",
       "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "jurik-trend-ribbon",
-      "title": "Jurik_Trend_Ribbon Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "moving-average-ribbon",
-      "title": "Moving Average Ribbon Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -26019,8 +26253,8 @@
       "score": 5.0
     },
     {
-      "slug": "alt-bat-pattern",
-      "title": "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -26183,6 +26417,12 @@
   ],
   "whale-liquidity-and-absorption-profile-algoalpha": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -26197,12 +26437,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "choch-identifier",
-      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -26443,6 +26677,12 @@
   ],
   "wyckoff-accumulation-distribution": [
     {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -26457,12 +26697,6 @@
     {
       "slug": "chaikin-cmf-divergence",
       "title": "Chaikin_Cmf_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-cmf-signals",
-      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
