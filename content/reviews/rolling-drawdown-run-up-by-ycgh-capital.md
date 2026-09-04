@@ -10,12 +10,6 @@ tags:
   - "tradingview"
   - "indicator"
   - "review"
-tags:
-  - "rolling drawdown run up by ycgh capital"
-  - "trend"
-  - "tradingview"
-  - "indicator"
-  - "review"
   - "trading"
 categories:
   - "Trend"
