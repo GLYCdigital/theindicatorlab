@@ -1,38 +1,38 @@
 ---
 {
   "title": "Ichimoku \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-06 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-0.4%"
+      "value": "+1.3%"
     },
     {
       "label": "CAGR",
-      "value": "-0.1%"
+      "value": "0.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.41"
+      "value": "-0.38"
     },
     {
       "label": "Max Drawdown",
-      "value": "15.2%"
+      "value": "12.8%"
     },
     {
       "label": "Win Rate",
-      "value": "34.6%"
+      "value": "36.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.91"
+      "value": "0.98"
     },
     {
       "label": "Total Trades",
-      "value": "26"
+      "value": "25"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.0%",
-      "trades": "1",
-      "win_rate_pct": "34.6%"
+      "return_pct": "-4.7%",
+      "trades": "0",
+      "win_rate_pct": "36.0%"
     },
     {
       "year": "2022",
       "return_pct": "-6.3%",
       "trades": "6",
-      "win_rate_pct": "34.6%"
+      "win_rate_pct": "36.0%"
     },
     {
       "year": "2023",
       "return_pct": "+3.3%",
       "trades": "5",
-      "win_rate_pct": "34.6%"
+      "win_rate_pct": "36.0%"
     },
     {
       "year": "2024",
       "return_pct": "-5.9%",
       "trades": "5",
-      "win_rate_pct": "34.6%"
+      "win_rate_pct": "36.0%"
     },
     {
       "year": "2025",
       "return_pct": "+13.5%",
       "trades": "6",
-      "win_rate_pct": "34.6%"
+      "win_rate_pct": "36.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-1.4%",
+      "return_pct": "-1.1%",
       "trades": "3",
-      "win_rate_pct": "34.6%"
+      "win_rate_pct": "36.0%"
     }
   ],
   "cta_headline": "Trade Forex with TradingView Pro",
@@ -109,27 +109,27 @@ On EURUSD, the Ichimoku acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-08-30 → 2026-08-28), the Ichimoku Cloud delivered a **-0.4% total return** on EURUSD=X, compounding at **-0.1% annually**. 
+Over five years (2021-09-06 → 2026-09-04), the Ichimoku Cloud delivered a **+1.3% total return** on EURUSD=X, compounding at **0.3% annually**. 
 
-At **-0.41**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.38**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **15.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 15% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **12.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 13% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.41 | ❌ Weak |
-| Max Drawdown | 15.2% | ⚠️ Moderate |
-| Win Rate | 34.6% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.91 | ❌ Unprofitable |
-| Trades/Year | ~26 total | Selective — not overtrading |
+| Sharpe Ratio | -0.38 | ❌ Weak |
+| Max Drawdown | 12.8% | ✅ Low |
+| Win Rate | 36.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.98 | ❌ Unprofitable |
+| Trades/Year | ~25 total | Selective — not overtrading |
 
-The **profit factor of 0.91** tells the real story: when the Ichimoku fires, the winning signals don't outweigh the losers. Combined with a 34.6% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.98** tells the real story: when the Ichimoku fires, the winning signals don't outweigh the losers. Combined with a 36.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on EURUSD?
 
-The ichimoku cloud struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.41 Sharpe ratio** and **0.91 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ichimoku cloud struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.38 Sharpe ratio** and **0.98 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Ichimoku is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on EURUSD=X](/backtests/ichimoku-cloud-eurusd-trades.png)

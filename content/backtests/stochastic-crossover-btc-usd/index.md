@@ -1,22 +1,22 @@
 ---
 {
   "title": "Stochastic \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-06 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+16.0%"
+      "value": "+20.4%"
     },
     {
       "label": "CAGR",
-      "value": "3.0%"
+      "value": "3.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.20"
+      "value": "0.21"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "37.6%"
+      "value": "37.7%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.04"
+      "value": "1.05"
     },
     {
       "label": "Total Trades",
-      "value": "237"
+      "value": "236"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-1.6%",
-      "trades": "16",
-      "win_rate_pct": "37.6%"
+      "return_pct": "-12.0%",
+      "trades": "15",
+      "win_rate_pct": "37.7%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "48",
-      "win_rate_pct": "37.6%"
+      "win_rate_pct": "37.7%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "47",
-      "win_rate_pct": "37.6%"
+      "win_rate_pct": "37.7%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "47",
-      "win_rate_pct": "37.6%"
+      "win_rate_pct": "37.7%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "47",
-      "win_rate_pct": "37.6%"
+      "win_rate_pct": "37.7%"
     },
     {
       "year": "2026",
-      "return_pct": "-12.2%",
+      "return_pct": "-10.4%",
       "trades": "32",
-      "win_rate_pct": "37.6%"
+      "win_rate_pct": "37.7%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On BTC, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-08-30 → 2026-08-28), the Stochastic Crossover delivered a **+16.0% total return** on BTC-USD, compounding at **3.0% annually**. 
+Over five years (2021-09-06 → 2026-09-04), the Stochastic Crossover delivered a **+20.4% total return** on BTC-USD, compounding at **3.8% annually**. 
 
-At **0.20**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.21**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **59.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 59% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **59.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.20 | ❌ Weak |
+| Sharpe Ratio | 0.21 | ❌ Weak |
 | Max Drawdown | 59.3% | ⚠️ Significant |
-| Win Rate | 37.6% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.04 | ⚠️ Marginal |
-| Trades/Year | ~237 total | Active |
+| Win Rate | 37.7% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.05 | ⚠️ Marginal |
+| Trades/Year | ~236 total | Active |
 
-The **profit factor of 1.04** tells the real story: when the Stochastic fires, the winning signals are larger than the losing ones. Combined with a 37.6% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.05** tells the real story: when the Stochastic fires, the winning signals are larger than the losing ones. Combined with a 37.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on BTC?
 
-The stochastic crossover struggled to generate meaningful edge on BTC over this 5-year period. With a **0.20 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on BTC over this 5-year period. With a **0.21 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on BTC-USD](/backtests/stochastic-crossover-btc-usd-trades.png)

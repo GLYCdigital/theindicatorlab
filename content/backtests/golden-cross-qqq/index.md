@@ -1,18 +1,18 @@
 ---
 {
   "title": "SMA \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-07 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+110.3%"
+      "value": "+110.4%"
     },
     {
       "label": "CAGR",
-      "value": "16.0%"
+      "value": "16.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+4.9%",
+      "return_pct": "+4.4%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
@@ -109,7 +109,7 @@ On QQQ, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-08-30 → 2026-08-28), the Golden Cross delivered a **+110.3% total return** on QQQ, compounding at **16.0% annually**. 
+Over five years (2021-09-07 → 2026-09-04), the Golden Cross delivered a **+110.4% total return** on QQQ, compounding at **16.1% annually**. 
 
 At **0.80**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on QQQ](/backtests/golden-cross-qqq-trades.png)

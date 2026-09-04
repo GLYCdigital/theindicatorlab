@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-07 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+3.1%"
+      "value": "+2.8%"
     },
     {
       "label": "CAGR",
-      "value": "0.6%"
+      "value": "0.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "41.9%"
+      "value": "42.6%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.03"
+      "value": "1.04"
     },
     {
       "label": "Total Trades",
-      "value": "62"
+      "value": "61"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+5.7%",
-      "trades": "6",
-      "win_rate_pct": "41.9%"
+      "return_pct": "+5.9%",
+      "trades": "5",
+      "win_rate_pct": "42.6%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "12",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "42.6%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "10",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "42.6%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "13",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "42.6%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "13",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "42.6%"
     },
     {
       "year": "2026",
       "return_pct": "+13.2%",
       "trades": "8",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "42.6%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On SPY, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-08-30 → 2026-08-28), the Parabolic SAR delivered a **+3.1% total return** on SPY, compounding at **0.6% annually**. 
+Over five years (2021-09-07 → 2026-09-04), the Parabolic SAR delivered a **+2.8% total return** on SPY, compounding at **0.5% annually**. 
 
 At **-0.06**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,15 +121,15 @@ The catch? A **25.5% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.06 | ❌ Weak |
 | Max Drawdown | 25.5% | ⚠️ Moderate |
-| Win Rate | 41.9% | ⚠️ Below average |
-| Profit Factor | 1.03 | ⚠️ Marginal |
-| Trades/Year | ~62 total | Active |
+| Win Rate | 42.6% | ⚠️ Below average |
+| Profit Factor | 1.04 | ⚠️ Marginal |
+| Trades/Year | ~61 total | Active |
 
-The **profit factor of 1.03** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 41.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.04** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 42.6% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on SPY?
 
-The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.06 Sharpe ratio** and **1.03 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.06 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on SPY](/backtests/parabolic-sar-spy-trades.png)

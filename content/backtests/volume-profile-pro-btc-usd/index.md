@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-06 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+49.7%"
+      "value": "+52.6%"
     },
     {
       "label": "CAGR",
-      "value": "8.4%"
+      "value": "8.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.32"
+      "value": "0.33"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-1.6%",
+      "return_pct": "-12.0%",
       "trades": "3",
       "win_rate_pct": "19.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.2%",
+      "return_pct": "-10.4%",
       "trades": "13",
       "win_rate_pct": "19.4%"
     }
@@ -109,9 +109,9 @@ On BTC, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-08-30 → 2026-08-28), the Volume Profile Pro delivered a **+49.7% total return** on BTC-USD, compounding at **8.4% annually**. 
+Over five years (2021-09-06 → 2026-09-04), the Volume Profile Pro delivered a **+52.6% total return** on BTC-USD, compounding at **8.8% annually**. 
 
-At **0.32**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.33**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **56.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 56% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **56.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.32 | ❌ Weak |
+| Sharpe Ratio | 0.33 | ❌ Weak |
 | Max Drawdown | 56.5% | ⚠️ Significant |
 | Win Rate | 19.4% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.11 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.11** tells the real story: when the VWAP fires, the win
 
 ## Does the Volume Profile Pro Work on BTC?
 
-The volume profile pro shows moderate edge on BTC — **0.32 Sharpe, 1.11 profit factor** over 98 trades. It's not a home run, but it's also not random.
+The volume profile pro shows moderate edge on BTC — **0.33 Sharpe, 1.11 profit factor** over 98 trades. It's not a home run, but it's also not random.
 
 The 19.4% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on BTC-USD](/backtests/volume-profile-pro-btc-usd-trades.png)

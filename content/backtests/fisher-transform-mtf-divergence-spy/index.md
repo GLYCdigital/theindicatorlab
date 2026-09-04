@@ -1,18 +1,18 @@
 ---
 {
   "title": "Fisher \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-07 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-28.0%"
+      "value": "-28.3%"
     },
     {
       "label": "CAGR",
-      "value": "-6.4%"
+      "value": "-6.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.77"
+      "value": "0.78"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+5.7%",
-      "trades": "14",
+      "return_pct": "+5.9%",
+      "trades": "13",
       "win_rate_pct": "42.4%"
     },
     {
@@ -73,7 +73,7 @@
     {
       "year": "2026",
       "return_pct": "+13.2%",
-      "trades": "35",
+      "trades": "36",
       "win_rate_pct": "42.4%"
     }
   ],
@@ -109,7 +109,7 @@ On SPY, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-08-30 → 2026-08-28), the Fisher Transform MTF Divergence delivered a **-28.0% total return** on SPY, compounding at **-6.4% annually**. 
+Over five years (2021-09-07 → 2026-09-04), the Fisher Transform MTF Divergence delivered a **-28.3% total return** on SPY, compounding at **-6.5% annually**. 
 
 At **-0.65**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -122,14 +122,14 @@ The catch? A **35.6% max drawdown**. At some point during this 5-year run, you'd
 | Sharpe Ratio | -0.65 | ❌ Weak |
 | Max Drawdown | 35.6% | ⚠️ Significant |
 | Win Rate | 42.4% | ⚠️ Below average |
-| Profit Factor | 0.77 | ❌ Unprofitable |
+| Profit Factor | 0.78 | ❌ Unprofitable |
 | Trades/Year | ~243 total | Active |
 
-The **profit factor of 0.77** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 42.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.78** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 42.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on SPY?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.65 Sharpe ratio** and **0.77 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on SPY over this 5-year period. With a **-0.65 Sharpe ratio** and **0.78 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on SPY](/backtests/fisher-transform-mtf-divergence-spy-trades.png)

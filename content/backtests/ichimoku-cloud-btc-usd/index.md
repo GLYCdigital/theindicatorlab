@@ -1,22 +1,22 @@
 ---
 {
   "title": "Ichimoku \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-06 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+39.0%"
+      "value": "+41.7%"
     },
     {
       "label": "CAGR",
-      "value": "6.8%"
+      "value": "7.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.27"
+      "value": "0.28"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-1.6%",
+      "return_pct": "-12.0%",
       "trades": "1",
       "win_rate_pct": "23.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.2%",
+      "return_pct": "-10.4%",
       "trades": "5",
       "win_rate_pct": "23.7%"
     }
@@ -109,9 +109,9 @@ On BTC, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-08-30 → 2026-08-28), the Ichimoku Cloud delivered a **+39.0% total return** on BTC-USD, compounding at **6.8% annually**. 
+Over five years (2021-09-06 → 2026-09-04), the Ichimoku Cloud delivered a **+41.7% total return** on BTC-USD, compounding at **7.2% annually**. 
 
-At **0.27**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.28**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **45.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 45% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **45.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.27 | ❌ Weak |
+| Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 45.1% | ⚠️ Significant |
 | Win Rate | 23.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.14 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.14** tells the real story: when the Ichimoku fires, the
 
 ## Does the Ichimoku Cloud Work on BTC?
 
-The ichimoku cloud struggled to generate meaningful edge on BTC over this 5-year period. With a **0.27 Sharpe ratio** and **1.14 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ichimoku cloud struggled to generate meaningful edge on BTC over this 5-year period. With a **0.28 Sharpe ratio** and **1.14 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Ichimoku is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on BTC-USD](/backtests/ichimoku-cloud-btc-usd-trades.png)

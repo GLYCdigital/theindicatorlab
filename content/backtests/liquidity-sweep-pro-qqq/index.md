@@ -1,22 +1,22 @@
 ---
 {
   "title": "Sweep \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-07 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+3.2%"
+      "value": "+1.4%"
     },
     {
       "label": "CAGR",
-      "value": "0.6%"
+      "value": "0.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.02"
+      "value": "0.00"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "36.5%"
+      "value": "36.2%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.04"
+      "value": "1.02"
     },
     {
       "label": "Total Trades",
-      "value": "104"
+      "value": "105"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+4.9%",
+      "return_pct": "+4.4%",
       "trades": "8",
-      "win_rate_pct": "36.5%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "21",
-      "win_rate_pct": "36.5%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "18",
-      "win_rate_pct": "36.5%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "23",
-      "win_rate_pct": "36.5%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "19",
-      "win_rate_pct": "36.5%"
+      "win_rate_pct": "36.2%"
     },
     {
       "year": "2026",
       "return_pct": "+17.2%",
-      "trades": "15",
-      "win_rate_pct": "36.5%"
+      "trades": "16",
+      "win_rate_pct": "36.2%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On QQQ, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-08-30 → 2026-08-28), the Liquidity Sweep Pro delivered a **+3.2% total return** on QQQ, compounding at **0.6% annually**. 
+Over five years (2021-09-07 → 2026-09-04), the Liquidity Sweep Pro delivered a **+1.4% total return** on QQQ, compounding at **0.3% annually**. 
 
-At **0.02**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.00**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **36.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 36% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **36.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.02 | ❌ Weak |
+| Sharpe Ratio | 0.00 | ❌ Weak |
 | Max Drawdown | 36.4% | ⚠️ Significant |
-| Win Rate | 36.5% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.04 | ⚠️ Marginal |
-| Trades/Year | ~104 total | Active |
+| Win Rate | 36.2% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.02 | ⚠️ Marginal |
+| Trades/Year | ~105 total | Active |
 
-The **profit factor of 1.04** tells the real story: when the Sweep fires, the winning signals are larger than the losing ones. Combined with a 36.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.02** tells the real story: when the Sweep fires, the winning signals are larger than the losing ones. Combined with a 36.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Liquidity Sweep Pro Work on QQQ?
 
-The liquidity sweep pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.02 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The liquidity sweep pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.00 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Sweep is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on QQQ](/backtests/liquidity-sweep-pro-qqq-trades.png)

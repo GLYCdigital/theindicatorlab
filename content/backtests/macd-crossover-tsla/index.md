@@ -1,18 +1,18 @@
 ---
 {
   "title": "MACD \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-07 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+237.2%"
+      "value": "+242.0%"
     },
     {
       "label": "CAGR",
-      "value": "27.5%"
+      "value": "27.9%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+44.6%",
+      "return_pct": "+40.4%",
       "trades": "1",
       "win_rate_pct": "32.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-20.8%",
+      "return_pct": "-19.6%",
       "trades": "9",
       "win_rate_pct": "32.6%"
     }
@@ -109,7 +109,7 @@ On TSLA, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-08-30 → 2026-08-28), the MACD Crossover delivered a **+237.2% total return** on TSLA, compounding at **27.5% annually**. 
+Over five years (2021-09-07 → 2026-09-04), the MACD Crossover delivered a **+242.0% total return** on TSLA, compounding at **27.9% annually**. 
 
 At **0.56**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on TSLA](/backtests/macd-crossover-tsla-trades.png)

@@ -1,10 +1,10 @@
 ---
 {
   "title": "Volume \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-06 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+14.2%",
+      "return_pct": "-6.3%",
       "trades": "0",
       "win_rate_pct": "56.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-18.6%",
+      "return_pct": "-18.5%",
       "trades": "2",
       "win_rate_pct": "56.7%"
     }
@@ -109,7 +109,7 @@ On ETH, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-08-30 → 2026-08-28), the Whale Liquidity / Absorption Profile delivered a **+61.9% total return** on ETH-USD, compounding at **10.1% annually**. 
+Over five years (2021-09-06 → 2026-09-04), the Whale Liquidity / Absorption Profile delivered a **+61.9% total return** on ETH-USD, compounding at **10.1% annually**. 
 
 At **0.74**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on ETH-USD](/backtests/whale-liquidity-absorption-eth-usd-trades.png)

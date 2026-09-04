@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-08-29",
+  "date": "2026-09-05",
   "draft": false,
   "type": "backtests",
-  "period": "2021-08-30 \u2192 2026-08-28",
+  "period": "2021-09-06 \u2192 2026-09-04",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-57.4%"
+      "value": "-58.3%"
     },
     {
       "label": "CAGR",
-      "value": "-15.7%"
+      "value": "-16.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.31"
+      "value": "-0.32"
     },
     {
       "label": "Max Drawdown",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "32.9%"
+      "value": "34.2%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.71"
+      "value": "0.75"
     },
     {
       "label": "Total Trades",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+14.2%",
+      "return_pct": "-6.3%",
       "trades": "3",
-      "win_rate_pct": "32.9%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "14",
-      "win_rate_pct": "32.9%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "14",
-      "win_rate_pct": "32.9%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "16",
-      "win_rate_pct": "32.9%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "17",
-      "win_rate_pct": "32.9%"
+      "win_rate_pct": "34.2%"
     },
     {
       "year": "2026",
-      "return_pct": "-18.6%",
+      "return_pct": "-18.5%",
       "trades": "9",
-      "win_rate_pct": "32.9%"
+      "win_rate_pct": "34.2%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On ETH, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-08-30 → 2026-08-28), the Parabolic SAR delivered a **-57.4% total return** on ETH-USD, compounding at **-15.7% annually**. 
+Over five years (2021-09-06 → 2026-09-04), the Parabolic SAR delivered a **-58.3% total return** on ETH-USD, compounding at **-16.0% annually**. 
 
-At **-0.31**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.32**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **76.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 76% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **76.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.31 | ❌ Weak |
+| Sharpe Ratio | -0.32 | ❌ Weak |
 | Max Drawdown | 76.5% | ⚠️ Significant |
-| Win Rate | 32.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.71 | ❌ Unprofitable |
+| Win Rate | 34.2% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.75 | ❌ Unprofitable |
 | Trades/Year | ~73 total | Active |
 
-The **profit factor of 0.71** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 32.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.75** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 34.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on ETH?
 
-The parabolic sar struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.31 Sharpe ratio** and **0.71 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.32 Sharpe ratio** and **0.75 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: August 29, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on ETH-USD](/backtests/parabolic-sar-eth-usd-trades.png)
