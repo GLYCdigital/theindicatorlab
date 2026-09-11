@@ -1,22 +1,22 @@
 ---
 {
   "title": "Ichimoku \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-07 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+54.0%"
+      "value": "+51.9%"
     },
     {
       "label": "CAGR",
-      "value": "9.0%"
+      "value": "8.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.45"
+      "value": "0.44"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "2.37"
+      "value": "2.14"
     },
     {
       "label": "Total Trades",
@@ -36,13 +36,13 @@
     },
     {
       "label": "Avg Trade",
-      "value": "58 days"
+      "value": "56 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+4.4%",
+      "return_pct": "+6.0%",
       "trades": "0",
       "win_rate_pct": "40.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+17.2%",
+      "return_pct": "+17.1%",
       "trades": "3",
       "win_rate_pct": "40.0%"
     }
@@ -109,9 +109,9 @@ On QQQ, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-09-07 → 2026-09-04), the Ichimoku Cloud delivered a **+54.0% total return** on QQQ, compounding at **9.0% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Ichimoku Cloud delivered a **+51.9% total return** on QQQ, compounding at **8.7% annually**. 
 
-At **0.45**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.44**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **20.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 20% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **20.2% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.45 | ❌ Weak |
+| Sharpe Ratio | 0.44 | ❌ Weak |
 | Max Drawdown | 20.2% | ⚠️ Moderate |
 | Win Rate | 40.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 2.37 | ✅ Excellent |
+| Profit Factor | 2.14 | ✅ Excellent |
 | Trades/Year | ~20 total | Selective — not overtrading |
 
-The **profit factor of 2.37** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 2.14** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on QQQ?
 
-The ichimoku cloud shows moderate edge on QQQ — **0.45 Sharpe, 2.37 profit factor** over 20 trades. It's not a home run, but it's also not random.
+The ichimoku cloud shows moderate edge on QQQ — **0.44 Sharpe, 2.14 profit factor** over 20 trades. It's not a home run, but it's also not random.
 
 The 40.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on QQQ](/backtests/ichimoku-cloud-qqq-trades.png)

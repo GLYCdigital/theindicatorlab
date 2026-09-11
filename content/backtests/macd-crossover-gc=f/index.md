@@ -1,10 +1,10 @@
 ---
 {
   "title": "MACD \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-07 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.8%",
+      "return_pct": "+2.0%",
       "trades": "2",
       "win_rate_pct": "44.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+3.5%",
+      "return_pct": "+2.1%",
       "trades": "6",
       "win_rate_pct": "44.2%"
     }
@@ -109,7 +109,7 @@ On GC=F, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-09-07 → 2026-09-04), the MACD Crossover delivered a **+26.0% total return** on GC=F, compounding at **4.7% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the MACD Crossover delivered a **+26.0% total return** on GC=F, compounding at **4.7% annually**. 
 
 At **0.26**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on GC=F](/backtests/macd-crossover-gc=f-trades.png)

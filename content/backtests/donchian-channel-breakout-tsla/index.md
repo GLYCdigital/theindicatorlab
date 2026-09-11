@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-07 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.7%"
+      "value": "+18.6%"
     },
     {
       "label": "CAGR",
-      "value": "2.8%"
+      "value": "3.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.16"
+      "value": "0.18"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+40.4%",
+      "return_pct": "+42.2%",
       "trades": "5",
       "win_rate_pct": "29.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-19.6%",
+      "return_pct": "-16.7%",
       "trades": "11",
       "win_rate_pct": "29.6%"
     }
@@ -109,9 +109,9 @@ On TSLA, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-09-07 → 2026-09-04), the Donchian Channel Breakout delivered a **+14.7% total return** on TSLA, compounding at **2.8% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Donchian Channel Breakout delivered a **+18.6% total return** on TSLA, compounding at **3.5% annually**. 
 
-At **0.16**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.18**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **48.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 48% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **48.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.16 | ❌ Weak |
+| Sharpe Ratio | 0.18 | ❌ Weak |
 | Max Drawdown | 48.3% | ⚠️ Significant |
 | Win Rate | 29.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.05 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.05** tells the real story: when the Donchian fires, the
 
 ## Does the Donchian Channel Breakout Work on TSLA?
 
-The donchian channel breakout struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.16 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.18 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on TSLA with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on TSLA](/backtests/donchian-channel-breakout-tsla-trades.png)

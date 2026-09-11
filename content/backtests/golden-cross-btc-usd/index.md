@@ -1,30 +1,30 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+81.8%"
+      "value": "+79.6%"
     },
     {
       "label": "CAGR",
-      "value": "12.7%"
+      "value": "12.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.37"
+      "value": "0.36"
     },
     {
       "label": "Max Drawdown",
-      "value": "36.0%"
+      "value": "37.5%"
     },
     {
       "label": "Win Rate",
-      "value": "75.0%"
+      "value": "60.0%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "4"
+      "value": "5"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-12.0%",
+      "return_pct": "+3.0%",
       "trades": "0",
-      "win_rate_pct": "75.0%"
+      "win_rate_pct": "60.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "0",
-      "win_rate_pct": "75.0%"
+      "win_rate_pct": "60.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "2",
-      "win_rate_pct": "75.0%"
+      "win_rate_pct": "60.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "1",
-      "win_rate_pct": "75.0%"
+      "win_rate_pct": "60.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "1",
-      "win_rate_pct": "75.0%"
+      "win_rate_pct": "60.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-10.4%",
-      "trades": "0",
-      "win_rate_pct": "75.0%"
+      "return_pct": "-12.7%",
+      "trades": "1",
+      "win_rate_pct": "60.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,29 +109,29 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-06 → 2026-09-04), the Golden Cross delivered a **+81.8% total return** on BTC-USD, compounding at **12.7% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Golden Cross delivered a **+79.6% total return** on BTC-USD, compounding at **12.4% annually**. 
 
-At **0.37**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.36**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **36.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 36% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **37.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 38% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.37 | ❌ Weak |
-| Max Drawdown | 36.0% | ⚠️ Significant |
-| Win Rate | 75.0% | ✅ Strong |
+| Sharpe Ratio | 0.36 | ❌ Weak |
+| Max Drawdown | 37.5% | ⚠️ Significant |
+| Win Rate | 60.0% | ✅ Strong |
 | Profit Factor | 3.54 | ✅ Excellent |
-| Trades/Year | ~4 total | Selective — not overtrading |
+| Trades/Year | ~5 total | Selective — not overtrading |
 
-The **profit factor of 3.54** tells the real story: when the SMA fires, the winning signals are larger than the losing ones. Combined with a 75.0% win rate, this is a mathematically sound edge.
+The **profit factor of 3.54** tells the real story: when the SMA fires, the winning signals are larger than the losing ones. Combined with a 60.0% win rate, this is a mathematically sound edge.
 
 ## Does the Golden Cross Work on BTC?
 
-The golden cross shows moderate edge on BTC — **0.37 Sharpe, 3.54 profit factor** over 4 trades. It's not a home run, but it's also not random.
+The golden cross shows moderate edge on BTC — **0.36 Sharpe, 3.54 profit factor** over 5 trades. It's not a home run, but it's also not random.
 
-The 75.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 60.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

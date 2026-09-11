@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-14.5%"
+      "value": "-17.5%"
     },
     {
       "label": "CAGR",
-      "value": "-3.1%"
+      "value": "-3.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.04"
+      "value": "0.02"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.94"
+      "value": "0.92"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-12.0%",
+      "return_pct": "+3.0%",
       "trades": "4",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-10.4%",
+      "return_pct": "-12.7%",
       "trades": "11",
       "win_rate_pct": "33.3%"
     }
@@ -109,9 +109,9 @@ On BTC, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-06 → 2026-09-04), the Parabolic SAR delivered a **-14.5% total return** on BTC-USD, compounding at **-3.1% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Parabolic SAR delivered a **-17.5% total return** on BTC-USD, compounding at **-3.8% annually**. 
 
-At **0.04**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.02**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **61.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 62% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **61.7% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.04 | ❌ Weak |
+| Sharpe Ratio | 0.02 | ❌ Weak |
 | Max Drawdown | 61.7% | ⚠️ Significant |
 | Win Rate | 33.3% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.94 | ❌ Unprofitable |
+| Profit Factor | 0.92 | ❌ Unprofitable |
 | Trades/Year | ~75 total | Active |
 
-The **profit factor of 0.94** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.92** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on BTC?
 
-The parabolic sar struggled to generate meaningful edge on BTC over this 5-year period. With a **0.04 Sharpe ratio** and **0.94 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on BTC over this 5-year period. With a **0.02 Sharpe ratio** and **0.92 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on BTC-USD](/backtests/parabolic-sar-btc-usd-trades.png)

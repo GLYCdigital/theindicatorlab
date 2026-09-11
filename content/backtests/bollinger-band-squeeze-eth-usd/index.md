@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+45.9%"
+      "value": "+16.8%"
     },
     {
       "label": "CAGR",
-      "value": "7.8%"
+      "value": "3.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.34"
+      "value": "0.12"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "20.9%"
+      "value": "21.1%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.05"
+      "value": "1.06"
     },
     {
       "label": "Total Trades",
-      "value": "91"
+      "value": "90"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-6.3%",
-      "trades": "4",
-      "win_rate_pct": "20.9%"
+      "return_pct": "+12.1%",
+      "trades": "3",
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "17",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "21",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "15",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "19",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "21.1%"
     },
     {
       "year": "2026",
-      "return_pct": "-18.5%",
+      "return_pct": "-14.5%",
       "trades": "15",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "21.1%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On ETH, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-06 → 2026-09-04), the Bollinger Band Squeeze delivered a **+45.9% total return** on ETH-USD, compounding at **7.8% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Bollinger Band Squeeze delivered a **+16.8% total return** on ETH-USD, compounding at **3.2% annually**. 
 
-At **0.34**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.12**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,21 +119,21 @@ The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.34 | ❌ Weak |
+| Sharpe Ratio | 0.12 | ❌ Weak |
 | Max Drawdown | 44.0% | ⚠️ Significant |
-| Win Rate | 20.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.05 | ⚠️ Marginal |
-| Trades/Year | ~91 total | Active |
+| Win Rate | 21.1% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.06 | ⚠️ Marginal |
+| Trades/Year | ~90 total | Active |
 
-The **profit factor of 1.05** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 20.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.06** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 21.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Bollinger Band Squeeze Work on ETH?
 
-The bollinger band squeeze shows moderate edge on ETH — **0.34 Sharpe, 1.05 profit factor** over 91 trades. It's not a home run, but it's also not random.
+The bollinger band squeeze struggled to generate meaningful edge on ETH over this 5-year period. With a **0.12 Sharpe ratio** and **1.06 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
-The 20.9% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
-Our take: usable as a confirmation tool, but not as a standalone system on ETH. Combine with trend filters or volume confirmation for better results.
+Our take: skip it on ETH unless you're combining it with other confirmations or using it on different timeframes.
 
 
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on ETH-USD](/backtests/bollinger-band-squeeze-eth-usd-trades.png)

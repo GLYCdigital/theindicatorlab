@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-07 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+49.1%"
+      "value": "+49.5%"
     },
     {
       "label": "CAGR",
-      "value": "8.3%"
+      "value": "8.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.44"
+      "value": "0.45"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.73"
+      "value": "1.70"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.8%",
+      "return_pct": "+2.0%",
       "trades": "4",
       "win_rate_pct": "37.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+3.5%",
+      "return_pct": "+2.1%",
       "trades": "14",
       "win_rate_pct": "37.1%"
     }
@@ -109,9 +109,9 @@ On GC=F, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-09-07 → 2026-09-04), the Donchian Channel Breakout delivered a **+49.1% total return** on GC=F, compounding at **8.3% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Donchian Channel Breakout delivered a **+49.5% total return** on GC=F, compounding at **8.4% annually**. 
 
-At **0.44**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.45**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **25.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 25% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **25.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.44 | ❌ Weak |
+| Sharpe Ratio | 0.45 | ❌ Weak |
 | Max Drawdown | 25.4% | ⚠️ Moderate |
 | Win Rate | 37.1% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.73 | ✅ Good |
+| Profit Factor | 1.70 | ✅ Good |
 | Trades/Year | ~70 total | Active |
 
-The **profit factor of 1.73** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 37.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.70** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 37.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on GC=F?
 
-The donchian channel breakout shows moderate edge on GC=F — **0.44 Sharpe, 1.73 profit factor** over 70 trades. It's not a home run, but it's also not random.
+The donchian channel breakout shows moderate edge on GC=F — **0.45 Sharpe, 1.70 profit factor** over 70 trades. It's not a home run, but it's also not random.
 
 The 37.1% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on GC=F](/backtests/donchian-channel-breakout-gc=f-trades.png)

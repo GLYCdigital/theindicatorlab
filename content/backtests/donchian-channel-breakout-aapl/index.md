@@ -1,14 +1,14 @@
 ---
 {
   "title": "Donchian \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-07 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+12.4%"
+      "value": "+12.6%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "34.5%"
+      "value": "33.9%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "55"
+      "value": "56"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.5%",
+      "return_pct": "+18.9%",
       "trades": "2",
-      "win_rate_pct": "34.5%"
+      "win_rate_pct": "33.9%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "14",
-      "win_rate_pct": "34.5%"
+      "win_rate_pct": "33.9%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "7",
-      "win_rate_pct": "34.5%"
+      "win_rate_pct": "33.9%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "10",
-      "win_rate_pct": "34.5%"
+      "win_rate_pct": "33.9%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "15",
-      "win_rate_pct": "34.5%"
+      "win_rate_pct": "33.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+18.8%",
-      "trades": "7",
-      "win_rate_pct": "34.5%"
+      "return_pct": "+23.4%",
+      "trades": "8",
+      "win_rate_pct": "33.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On AAPL, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-07 → 2026-09-04), the Donchian Channel Breakout delivered a **+12.4% total return** on AAPL, compounding at **2.4% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Donchian Channel Breakout delivered a **+12.6% total return** on AAPL, compounding at **2.4% annually**. 
 
 At **0.09**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **34.4% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.09 | ❌ Weak |
 | Max Drawdown | 34.4% | ⚠️ Significant |
-| Win Rate | 34.5% | ❌ Low — relies on outsized wins |
+| Win Rate | 33.9% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.11 | ⚠️ Marginal |
-| Trades/Year | ~55 total | Active |
+| Trades/Year | ~56 total | Active |
 
-The **profit factor of 1.11** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 34.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.11** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 33.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on AAPL?
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on AAPL](/backtests/donchian-channel-breakout-aapl-trades.png)

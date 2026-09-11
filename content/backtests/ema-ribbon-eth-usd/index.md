@@ -1,22 +1,22 @@
 ---
 {
   "title": "EMA \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+7.8%"
+      "value": "+12.9%"
     },
     {
       "label": "CAGR",
-      "value": "1.5%"
+      "value": "2.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.10"
+      "value": "0.13"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-6.3%",
+      "return_pct": "+12.1%",
       "trades": "0",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-18.5%",
+      "return_pct": "-14.5%",
       "trades": "5",
       "win_rate_pct": "33.3%"
     }
@@ -109,9 +109,9 @@ On ETH, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-06 → 2026-09-04), the EMA Ribbon delivered a **+7.8% total return** on ETH-USD, compounding at **1.5% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the EMA Ribbon delivered a **+12.9% total return** on ETH-USD, compounding at **2.5% annually**. 
 
-At **0.10**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.13**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **52.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 53% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **52.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.10 | ❌ Weak |
+| Sharpe Ratio | 0.13 | ❌ Weak |
 | Max Drawdown | 52.6% | ⚠️ Significant |
 | Win Rate | 33.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.88 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.88** tells the real story: when the EMA fires, the winn
 
 ## Does the EMA Ribbon Work on ETH?
 
-The ema ribbon struggled to generate meaningful edge on ETH over this 5-year period. With a **0.10 Sharpe ratio** and **0.88 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ema ribbon struggled to generate meaningful edge on ETH over this 5-year period. With a **0.13 Sharpe ratio** and **0.88 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the EMA is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on ETH-USD](/backtests/ema-ribbon-eth-usd-trades.png)

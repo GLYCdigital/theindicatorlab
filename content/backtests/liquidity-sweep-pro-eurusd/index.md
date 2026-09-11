@@ -1,18 +1,18 @@
 ---
 {
   "title": "Sweep \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-25.5%"
+      "value": "-25.7%"
     },
     {
       "label": "CAGR",
-      "value": "-5.7%"
+      "value": "-5.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "25.9%"
+      "value": "26.0%"
     },
     {
       "label": "Win Rate",
-      "value": "30.3%"
+      "value": "30.0%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "109"
+      "value": "110"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.7%",
+      "return_pct": "-4.1%",
       "trades": "9",
-      "win_rate_pct": "30.3%"
+      "win_rate_pct": "30.0%"
     },
     {
       "year": "2022",
       "return_pct": "-6.3%",
       "trades": "25",
-      "win_rate_pct": "30.3%"
+      "win_rate_pct": "30.0%"
     },
     {
       "year": "2023",
       "return_pct": "+3.3%",
       "trades": "22",
-      "win_rate_pct": "30.3%"
+      "win_rate_pct": "30.0%"
     },
     {
       "year": "2024",
       "return_pct": "-5.9%",
       "trades": "18",
-      "win_rate_pct": "30.3%"
+      "win_rate_pct": "30.0%"
     },
     {
       "year": "2025",
       "return_pct": "+13.5%",
       "trades": "22",
-      "win_rate_pct": "30.3%"
+      "win_rate_pct": "30.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-1.1%",
-      "trades": "13",
-      "win_rate_pct": "30.3%"
+      "return_pct": "-1.3%",
+      "trades": "14",
+      "win_rate_pct": "30.0%"
     }
   ],
   "cta_headline": "Trade Forex with TradingView Pro",
@@ -109,23 +109,23 @@ On EURUSD, the Sweep acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-09-06 → 2026-09-04), the Liquidity Sweep Pro delivered a **-25.5% total return** on EURUSD=X, compounding at **-5.7% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Liquidity Sweep Pro delivered a **-25.7% total return** on EURUSD=X, compounding at **-5.8% annually**. 
 
 At **-2.47**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **25.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **26.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | -2.47 | ❌ Weak |
-| Max Drawdown | 25.9% | ⚠️ Moderate |
-| Win Rate | 30.3% | ❌ Low — relies on outsized wins |
+| Max Drawdown | 26.0% | ⚠️ Moderate |
+| Win Rate | 30.0% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.46 | ❌ Unprofitable |
-| Trades/Year | ~109 total | Active |
+| Trades/Year | ~110 total | Active |
 
-The **profit factor of 0.46** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 30.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.46** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 30.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Liquidity Sweep Pro Work on EURUSD?
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on EURUSD=X](/backtests/liquidity-sweep-pro-eurusd-trades.png)

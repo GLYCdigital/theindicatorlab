@@ -1,10 +1,10 @@
 ---
 {
   "title": "Ichimoku \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "36.0%"
+      "value": "40.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.98"
+      "value": "1.07"
     },
     {
       "label": "Total Trades",
@@ -36,45 +36,45 @@
     },
     {
       "label": "Avg Trade",
-      "value": "34 days"
+      "value": "35 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.7%",
+      "return_pct": "-4.1%",
       "trades": "0",
-      "win_rate_pct": "36.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2022",
       "return_pct": "-6.3%",
       "trades": "6",
-      "win_rate_pct": "36.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2023",
       "return_pct": "+3.3%",
       "trades": "5",
-      "win_rate_pct": "36.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2024",
       "return_pct": "-5.9%",
       "trades": "5",
-      "win_rate_pct": "36.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2025",
       "return_pct": "+13.5%",
       "trades": "6",
-      "win_rate_pct": "36.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-1.1%",
+      "return_pct": "-1.3%",
       "trades": "3",
-      "win_rate_pct": "36.0%"
+      "win_rate_pct": "40.0%"
     }
   ],
   "cta_headline": "Trade Forex with TradingView Pro",
@@ -109,7 +109,7 @@ On EURUSD, the Ichimoku acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-09-06 → 2026-09-04), the Ichimoku Cloud delivered a **+1.3% total return** on EURUSD=X, compounding at **0.3% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Ichimoku Cloud delivered a **+1.3% total return** on EURUSD=X, compounding at **0.3% annually**. 
 
 At **-0.38**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,15 +121,15 @@ The catch? A **12.8% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.38 | ❌ Weak |
 | Max Drawdown | 12.8% | ✅ Low |
-| Win Rate | 36.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.98 | ❌ Unprofitable |
+| Win Rate | 40.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.07 | ⚠️ Marginal |
 | Trades/Year | ~25 total | Selective — not overtrading |
 
-The **profit factor of 0.98** tells the real story: when the Ichimoku fires, the winning signals don't outweigh the losers. Combined with a 36.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.07** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on EURUSD?
 
-The ichimoku cloud struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.38 Sharpe ratio** and **0.98 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ichimoku cloud struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.38 Sharpe ratio** and **1.07 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Ichimoku is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on EURUSD=X](/backtests/ichimoku-cloud-eurusd-trades.png)

@@ -1,14 +1,14 @@
 ---
 {
   "title": "Stochastic \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-06 \u2192 2026-09-04",
+  "period": "2021-09-13 \u2192 2026-09-11",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-30.2%"
+      "value": "-30.1%"
     },
     {
       "label": "CAGR",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-2.48"
+      "value": "-2.43"
     },
     {
       "label": "Max Drawdown",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-4.7%",
-      "trades": "11",
+      "return_pct": "-4.1%",
+      "trades": "10",
       "win_rate_pct": "33.9%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-1.1%",
-      "trades": "25",
+      "return_pct": "-1.3%",
+      "trades": "26",
       "win_rate_pct": "33.9%"
     }
   ],
@@ -109,9 +109,9 @@ On EURUSD, the Stochastic acts as a trend filter. It won't catch every exact bot
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-09-06 → 2026-09-04), the Stochastic Crossover delivered a **-30.2% total return** on EURUSD=X, compounding at **-6.9% annually**. 
+Over five years (2021-09-13 → 2026-09-11), the Stochastic Crossover delivered a **-30.1% total return** on EURUSD=X, compounding at **-6.9% annually**. 
 
-At **-2.48**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-2.43**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **30.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 30% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **30.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -2.48 | ❌ Weak |
+| Sharpe Ratio | -2.43 | ❌ Weak |
 | Max Drawdown | 30.5% | ⚠️ Significant |
 | Win Rate | 33.9% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.48 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.48** tells the real story: when the Stochastic fires, t
 
 ## Does the Stochastic Crossover Work on EURUSD?
 
-The stochastic crossover struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-2.48 Sharpe ratio** and **0.48 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-2.43 Sharpe ratio** and **0.48 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 05, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on EURUSD=X](/backtests/stochastic-crossover-eurusd-trades.png)

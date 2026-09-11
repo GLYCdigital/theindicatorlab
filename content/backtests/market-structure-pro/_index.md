@@ -1,6 +1,6 @@
 ---
 title: "Swing Backtest Results"
-date: 2026-09-05
+date: 2026-09-12
 draft: false
 type: backtests
 description: "All 6 asset backtests for the Swing indicator. Sorted by Sharpe ratio."
@@ -25,19 +25,19 @@ description: "All 6 asset backtests for the Swing indicator. Sorted by Sharpe ra
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/market-structure-pro-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+56.7%</td><td>9.4%</td><td>0.33</td><td>49.8%</td><td>23.2%</td><td>1.06</td><td>95</td></tr>
-<tr><td>🟡 <a href="/backtests/market-structure-pro-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+34.8%</td><td>6.2%</td><td>0.26</td><td>54.3%</td><td>27.4%</td><td>1.05</td><td>95</td></tr>
-<tr><td>🟡 <a href="/backtests/market-structure-pro-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+32.2%</td><td>5.7%</td><td>0.24</td><td>30.3%</td><td>29.0%</td><td>1.33</td><td>69</td></tr>
-<tr><td>🟡 <a href="/backtests/market-structure-pro-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+14.7%</td><td>2.8%</td><td>0.16</td><td>48.3%</td><td>29.6%</td><td>1.05</td><td>71</td></tr>
-<tr><td>🟡 <a href="/backtests/market-structure-pro-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+18.6%</td><td>3.5%</td><td>0.14</td><td>22.4%</td><td>30.3%</td><td>1.27</td><td>66</td></tr>
-<tr><td>🟡 <a href="/backtests/market-structure-pro-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+12.4%</td><td>2.4%</td><td>0.09</td><td>34.4%</td><td>34.5%</td><td>1.11</td><td>55</td></tr>
+<tr><td>🟡 <a href="/backtests/market-structure-pro-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+31.1%</td><td>5.6%</td><td>0.24</td><td>30.3%</td><td>28.6%</td><td>1.32</td><td>70</td></tr>
+<tr><td>🟡 <a href="/backtests/market-structure-pro-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+18.6%</td><td>3.5%</td><td>0.18</td><td>48.3%</td><td>29.6%</td><td>1.05</td><td>71</td></tr>
+<tr><td>🟡 <a href="/backtests/market-structure-pro-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+24.0%</td><td>4.4%</td><td>0.17</td><td>49.8%</td><td>23.4%</td><td>1.08</td><td>94</td></tr>
+<tr><td>🟡 <a href="/backtests/market-structure-pro-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+8.1%</td><td>1.6%</td><td>0.16</td><td>52.2%</td><td>27.7%</td><td>1.04</td><td>94</td></tr>
+<tr><td>🟡 <a href="/backtests/market-structure-pro-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+18.9%</td><td>3.5%</td><td>0.15</td><td>22.4%</td><td>30.8%</td><td>1.27</td><td>65</td></tr>
+<tr><td>🟡 <a href="/backtests/market-structure-pro-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+12.6%</td><td>2.4%</td><td>0.09</td><td>34.4%</td><td>33.9%</td><td>1.11</td><td>56</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 05, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 12, 2026</p>
 
   </div>
 </article>
