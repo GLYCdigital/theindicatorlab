@@ -4861,6 +4861,32 @@
       "score": 5.0
     }
   ],
+  "ctz-bitcoin-cycle-master": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3_Way_Bollinger_Trend_Zynalgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "cumulative-volume-delta": [
     {
       "slug": "bid-ask-volume",
@@ -11101,6 +11127,32 @@
       "score": 9.0
     }
   ],
+  "implied-market-structure": [
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo_Price_Action_Signals Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "initial-balance-auction-intelligence-by-dgt",
+      "title": "Initial_Balance_Auction_Intelligence_By_Dgt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "implied-volatility-rank": [
     {
       "slug": "adaptive-envelopes",
@@ -11271,14 +11323,14 @@
       "score": 9.0
     },
     {
-      "slug": "intrabar-profile-trading",
-      "title": "Intrabar_Profile_Trading Review: Settings, Strategy & How to Use It",
+      "slug": "implied-market-structure",
+      "title": "Implied_Market_Structure Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "range-profile-oscillator",
-      "title": "Range_Profile_Oscillator Review: Settings, Strategy & How to Use It",
+      "slug": "intrabar-profile-trading",
+      "title": "Intrabar_Profile_Trading Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14013,6 +14065,32 @@
       "score": 9.0
     }
   ],
+  "mad-adaptive-trend-score-backquant": [
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "margin-debt-expansion-vs-contraction-indicator": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -14403,6 +14481,32 @@
       "score": 5.0
     }
   ],
+  "market-structure-flow-map-boswaves": [
+    {
+      "slug": "market-structure-scatter-dashboard",
+      "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag-indicator",
+      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag-percentage",
+      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "zig-zag",
+      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "market-structure-oscillator": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -14457,6 +14561,12 @@
   ],
   "market-structure-scatter-dashboard": [
     {
+      "slug": "market-structure-flow-map-boswaves",
+      "title": "Market_Structure_Flow_Map_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "zig-zag-indicator",
       "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14471,12 +14581,6 @@
     {
       "slug": "zig-zag-retracement",
       "title": "Zig_Zag_Retracement Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag",
-      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -15727,6 +15831,32 @@
       "title": "Ichimoku_Kijun_Sen Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "mtf-liquidity-stack": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker_Block_Detector_Algotim Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "choch-identifier",
+      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "mtf-macd": [
@@ -18222,7 +18352,7 @@
       "slug": "renko-pulseflow-elite-by-sam-george-adaptive-trade-map",
       "title": "Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.8
+      "score": 13.9
     }
   ],
   "pivot-points-woodie": [
@@ -20172,7 +20302,7 @@
       "slug": "pivot-points-standard",
       "title": "Pivot Points Standard Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 13.8
+      "score": 13.9
     }
   ],
   "reversal-probability-profile-algoalpha": [
@@ -21073,15 +21203,15 @@
       "score": 5.0
     },
     {
-      "slug": "accum-dist-divergence",
-      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -21161,6 +21291,32 @@
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "sector-rotation-leadership-persistence-dots3red": [
+    {
+      "slug": "adx",
+      "title": "Adx Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alligator-bill-williams",
+      "title": "Alligator_Bill_Williams Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "atr-percentile",
+      "title": "Atr_Percentile Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "auto-fib-strategy-buy-sell",
+      "title": "Auto_Fib_Strategy_Buy_Sell Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "sentiment-indicator": [
@@ -22149,6 +22305,32 @@
       "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "smcwhatitdoesdata3": [
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker_Block_Detector_Algotim Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "choch-identifier",
+      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "smi-ergodic-oscillator": [
@@ -23228,7 +23410,7 @@
       "slug": "waddah-attar",
       "title": "Waddah Attar Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.8
+      "score": 13.9
     },
     {
       "slug": "true-strength-index",
@@ -24307,6 +24489,32 @@
       "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "tech-leadership-map-herman": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-pulse-jpt",
+      "title": "Adaptive_Trend_Pulse_Jpt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "Adx_Average_Directional_Index Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "tension-flow-trend": [
@@ -27590,7 +27798,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.8
+      "score": 13.9
     },
     {
       "slug": "schaff-trend-cycle",
@@ -28339,6 +28547,32 @@
       "score": 5.0
     }
   ],
+  "xel-onlinerecursion": [
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive_Flow_Channel Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "zero-lag-ema": [
     {
       "slug": "alma-arnaud-legoux",
@@ -28419,6 +28653,12 @@
   ],
   "zig-zag-indicator": [
     {
+      "slug": "market-structure-flow-map-boswaves",
+      "title": "Market_Structure_Flow_Map_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "market-structure-scatter-dashboard",
       "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -28435,15 +28675,15 @@
       "title": "Zig_Zag_Retracement Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "zig-zag",
-      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "zig-zag-percentage": [
+    {
+      "slug": "market-structure-flow-map-boswaves",
+      "title": "Market_Structure_Flow_Map_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "market-structure-scatter-dashboard",
       "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
@@ -28459,12 +28699,6 @@
     {
       "slug": "zig-zag-retracement",
       "title": "Zig_Zag_Retracement Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag",
-      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -28503,6 +28737,12 @@
       "score": 12.0
     },
     {
+      "slug": "market-structure-flow-map-boswaves",
+      "title": "Market_Structure_Flow_Map_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "market-structure-scatter-dashboard",
       "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -28511,12 +28751,6 @@
     {
       "slug": "zig-zag-indicator",
       "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag-percentage",
-      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -28529,6 +28763,12 @@
       "score": 12.0
     },
     {
+      "slug": "market-structure-flow-map-boswaves",
+      "title": "Market_Structure_Flow_Map_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "market-structure-scatter-dashboard",
       "title": "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -28537,12 +28777,6 @@
     {
       "slug": "zig-zag-indicator",
       "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag-percentage",
-      "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
