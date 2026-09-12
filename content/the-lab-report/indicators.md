@@ -3,12 +3,12 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 118 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 123 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** September 6, 2026 · **118 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** September 13, 2026 · **123 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
@@ -57,7 +57,7 @@ Indicators that measure the speed and strength of price movement.
 | Kinetic Slippage Index 🆕 | [→ Full review](/reviews/kinetic-slippage-index-ksi/) |
 | Ehlers Cyber Cycle 🆕 | [→ Full review](/reviews/ehlers-cyber-cycle/) |
 
-## Trend (36)
+## Trend (39)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -99,8 +99,11 @@ Indicators that identify direction and strength of the prevailing trend.
 | AIS SuperTrend 🆕 | [→ Full review](/reviews/ais-supertrend/) |
 | Elliott Wave 🆕 | [→ Full review](/reviews/elliott-wave-count/) |
 | Jurik Moving Average 🆕 | [→ Full review](/reviews/jurik-moving-average-jma/) |
+| Kalman Filter Trend 🆕 | [→ Full review](/reviews/kalman-filter-trend/) |
+| Wyckoff Spring Detection 🆕 | [→ Full review](/reviews/wyckoff-spring-detection/) |
+| Previous Day High/Low 🆕 | [→ Full review](/reviews/previous-day-high-low/) |
 
-## Volume (20)
+## Volume (21)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -126,8 +129,9 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Volume MA 🆕 | [→ Full review](/reviews/volume-ma/) |
 | Wyckoff Accum/Distribution 🆕 | [→ Full review](/reviews/wyckoff-accumulation-distribution/) |
 | Negative Volume Index 🆕 | [→ Full review](/reviews/negative-volume-index-nvi/) |
+| Williams Accum/Distribution 🆕 | [→ Full review](/reviews/williams-accumulation-distribution/) |
 
-## Volatility (24)
+## Volatility (25)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -157,6 +161,7 @@ Indicators that measure the magnitude of price fluctuations.
 | Fractal Chaos Bands 🆕 | [→ Full review](/reviews/fractal-chaos-bands/) |
 | Bollinger Bands Squeeze 🆕 | [→ Full review](/reviews/bollinger-bands-squeeze/) |
 | Adaptive Bollinger Bands 🆕 | [→ Full review](/reviews/adaptive-bollinger-bands/) |
+| GARCH Model 🆕 | [→ Full review](/reviews/garch-model/) |
 
 ---
 
