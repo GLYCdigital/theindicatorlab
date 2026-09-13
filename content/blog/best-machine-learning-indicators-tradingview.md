@@ -20,6 +20,20 @@ Our selection spans 9 trend indicators, 1 free indicators.
 
 From our archive of 558 TradingView indicator reviews, we selected the highest-rated tools that met strict criteria: no repainting, clear signal logic, reliable performance across multiple markets, and genuine utility for the target trading style.
 
+<div class="blog-affiliate-inline" style="margin: 1.75rem 0; padding: 1.25rem 1.5rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(59,130,246,0.06) 100%); border: 2px solid #3b82f6; border-radius: var(--radius-lg);">
+<p style="margin:0 0 .5rem;font-weight:700;font-size:1.2rem;">🔬 Which AI indicator is actually firing today?</p>
+<p style="margin:0 0 1rem;color:var(--text-secondary);line-height:1.6;">An ML model is only useful if it's right <em>now</em>. The Lab Report reads <strong>93 indicators across 20 markets every 15 minutes</strong> and sends one consensus verdict — so you stop guessing which model to trust today.</p>
+<p style="margin:0;display:flex;gap:.6rem;flex-wrap:wrap;">
+<a href="/the-lab-report/"
+   onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-machine-learning-indicators-tradingview',placement:'blog-above-fold'});"
+   style="display:inline-block;background:#3b82f6;color:#fff;font-weight:700;padding:11px 22px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">Lab Report · $149/mo →</a>
+<a href="https://www.tradingview.com/?aff_id=166324"
+   onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_tradingview',{target:'tradingview',review:'best-machine-learning-indicators-tradingview',placement:'blog-above-fold'});"
+   target="_blank" rel="noopener"
+   style="display:inline-block;border:1px solid var(--card-border);color:var(--text);font-weight:600;padding:10px 22px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">Try TradingView Free →</a>
+</p>
+</div>
+
 ---
 
 ## The List
@@ -105,6 +119,8 @@ If you're setting up a TradingView chart and wondering where to start, this list
 Our selection spans 9 trend indicators, 1 free indicators. The average rating across this group is **4.0/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
 **Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+
+**Also popular this week:** [Volume Profile review](/reviews/volume-profile/) · [Cumulative Volume Delta](/reviews/cumulative-volume-delta/) · [Best volume indicators](/blog/best-volume-indicators-tradingview/).
 
 ## Test These on TradingView
 
