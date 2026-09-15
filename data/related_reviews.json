@@ -2053,6 +2053,32 @@
       "score": 8.0
     }
   ],
+  "aurora-kama-kama-adaptive-trend-strategy": [
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "auto-atr-volatility-spike-trend-tracker": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -4303,14 +4329,14 @@
       "score": 13.0
     },
     {
-      "slug": "smart-money-concepts",
-      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts-axealgo",
+      "title": "Smart_Money_Concepts_Axealgo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "sniper-liquidity-zones-by-david",
-      "title": "Sniper_Liquidity_Zones_By_David Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts",
+      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -6389,8 +6415,8 @@
       "score": 5.0
     },
     {
-      "slug": "agreement-streak-analyzer-fibonacciflux",
-      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "slug": "amd-structure-map-axealgo",
+      "title": "Amd_Structure_Map_Axealgo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -9148,7 +9174,7 @@
       "slug": "gann-fan",
       "title": "Gann_Fan Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 5.9
+      "score": 6.0
     }
   ],
   "gann-square": [
@@ -12883,14 +12909,14 @@
       "score": 13.0
     },
     {
-      "slug": "smart-money-concepts",
-      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts-axealgo",
+      "title": "Smart_Money_Concepts_Axealgo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "sniper-liquidity-zones-by-david",
-      "title": "Sniper_Liquidity_Zones_By_David Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts",
+      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -13021,6 +13047,32 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "liquidity-draws": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
+      "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs_Volcano_Rsi_Liquidity_Thermal_Map_Bit2Billions Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -13403,14 +13455,14 @@
       "score": 13.0
     },
     {
-      "slug": "smart-money-concepts",
-      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts-axealgo",
+      "title": "Smart_Money_Concepts_Axealgo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "sniper-liquidity-zones-by-david",
-      "title": "Sniper_Liquidity_Zones_By_David Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts",
+      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -15833,6 +15885,32 @@
       "score": 12.0
     }
   ],
+  "moya-sessions-volume-profile-realsebastianmoya": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-candle-volume-profile-chartprime",
+      "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-log-regression-volume-profile",
+      "title": "Htf_Log_Regression_Volume_Profile Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "mr-market-maker": [
     {
       "slug": "bid-ask-volume",
@@ -16453,6 +16531,32 @@
     {
       "slug": "bollinger-bands-macd-combo",
       "title": "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "multi-timeframe-supertrend-algotim": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "atr-trailing-stop-mtf",
+      "title": "Atr_Trailing_Stop_Mtf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "average-true-range-atr",
+      "title": "Average_True_Range_Atr Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -21599,8 +21703,8 @@
       "score": 5.0
     },
     {
-      "slug": "auto-fib-strategy-buy-sell",
-      "title": "Auto_Fib_Strategy_Buy_Sell Review: Settings, Strategy & How to Use It",
+      "slug": "aurora-kama-kama-adaptive-trend-strategy",
+      "title": "Aurora_Kama_Kama_Adaptive_Trend_Strategy Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -22101,6 +22205,12 @@
   ],
   "sma-ribbon": [
     {
+      "slug": "bollinger-bands-mtf",
+      "title": "Bollinger_Bands_Mtf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "chaikin-money-flow",
       "title": "Chaikin Money Flow Review: Settings, Strategy & How to Use It",
       "rating": 3,
@@ -22115,12 +22225,6 @@
     {
       "slug": "coppock-curve",
       "title": "Coppock Curve Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "coppock-with-signals",
-      "title": "Coppock_With_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -22141,6 +22245,32 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "smart-flow-imbalance-strixedge": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     },
@@ -22201,6 +22331,32 @@
       "title": "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "smart-money-concepts-axealgo": [
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liq-sweep-choch-ob-instant",
+      "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-sweep",
+      "title": "Liquidity_Sweep Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "smart-money-concepts",
+      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "smart-money-concepts": [
@@ -22821,8 +22977,8 @@
       "score": 13.0
     },
     {
-      "slug": "smart-money-concepts",
-      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts-axealgo",
+      "title": "Smart_Money_Concepts_Axealgo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -24491,6 +24647,32 @@
       "score": 9.0
     }
   ],
+  "swing-fibonacci-arcs-volume-profile": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-candle-volume-profile-chartprime",
+      "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-log-regression-volume-profile",
+      "title": "Htf_Log_Regression_Volume_Profile Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "swing-gradient-tpos-boswaves": [
     {
       "slug": "abcd-pattern",
@@ -25321,6 +25503,32 @@
       "title": "Atr_Trailing_Stop_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "top-strategy-finder-spokostocks": [
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bitcoin-superflip-supertrend-ema-trend-following-strategy",
+      "title": "Bitcoin_Superflip_Supertrend_Ema_Trend_Following_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "composite-valuation-standard-score",
+      "title": "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dual-phase-reversal-by-dgt",
+      "title": "Dual_Phase_Reversal_By_Dgt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "trade-journal-visualizer": [
@@ -26701,6 +26909,32 @@
       "score": 12.0
     }
   ],
+  "viprasol-gold-sniper-confluence": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "vix-term-structure": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -27189,8 +27423,8 @@
       "score": 13.0
     },
     {
-      "slug": "smart-money-concepts",
-      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "slug": "smart-money-concepts-axealgo",
+      "title": "Smart_Money_Concepts_Axealgo Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
