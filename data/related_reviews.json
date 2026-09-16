@@ -2639,14 +2639,14 @@
       "score": 9.0
     },
     {
-      "slug": "ema-cross",
-      "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
+      "slug": "ema-cloud-phantomcipher",
+      "title": "Ema_Cloud_Phantomcipher Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ema-multiple-timeframe",
-      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
+      "slug": "ema-cross",
+      "title": "Ema_Cross Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4601,6 +4601,32 @@
       "score": 8.0
     }
   ],
+  "coasyn-directional-order-blocks": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "amd-po3-with-live-edge-stats-willyalgotrader",
+      "title": "Amd_Po3_With_Live_Edge_Stats_Willyalgotrader Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "coil-breaker-rsi-range-compression": [
     {
       "slug": "bollinger-bands-width",
@@ -5493,6 +5519,12 @@
       "score": 8.0
     },
     {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -5501,12 +5533,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration/Deceleration (AC) Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator_Oscillator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -6230,7 +6256,7 @@
       "slug": "sigmoid-rsi-nal",
       "title": "Sigmoid_Rsi_Nal Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 7.9
+      "score": 8.0
     },
     {
       "slug": "fisher-transform-divergence",
@@ -7277,6 +7303,32 @@
       "title": "Elliott_Wave_Impulse_Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "ema-cloud-phantomcipher": [
+    {
+      "slug": "bfg-profil3d",
+      "title": "Bfg_Profil3D Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-multiple-timeframe",
+      "title": "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "ema-cross-signal": [
@@ -10947,6 +10999,12 @@
   ],
   "ichimoku-cloud-components": [
     {
+      "slug": "ema-cloud-phantomcipher",
+      "title": "Ema_Cloud_Phantomcipher Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ichimoku-chikou-span",
       "title": "Ichimoku_Chikou_Span Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10962,12 +11020,6 @@
       "slug": "ichimoku-cloud",
       "title": "Ichimoku Cloud Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-kijun-sen",
-      "title": "Ichimoku_Kijun_Sen Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -12477,6 +12529,32 @@
       "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "key-levels-for-futures": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "kinetic-slippage-index-ksi": [
@@ -15287,6 +15365,32 @@
       "score": 5.0
     }
   ],
+  "minawesome-s-best": [
+    {
+      "slug": "adaptive-trend-ensemble-backquant",
+      "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "amd-structure-map-axealgo",
+      "title": "Amd_Structure_Map_Axealgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "aurora-kama-kama-adaptive-trend-strategy",
+      "title": "Aurora_Kama_Kama_Adaptive_Trend_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "minimalistic-po3-m1d": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
@@ -16479,6 +16583,32 @@
     {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "multi-timeframe-i-fvg-analysis-bmt": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3_Way_Bollinger_Trend_Zynalgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "Adx (MTF) Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -18716,7 +18846,7 @@
       "slug": "renko-pulseflow-elite-by-sam-george-adaptive-trade-map",
       "title": "Renko_Pulseflow_Elite_By_Sam_George_Adaptive_Trade_Map Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.9
+      "score": 14.0
     }
   ],
   "pivot-points-woodie": [
@@ -20666,7 +20796,7 @@
       "slug": "pivot-points-standard",
       "title": "Pivot Points Standard Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 13.9
+      "score": 14.0
     }
   ],
   "reversal-probability-profile-algoalpha": [
@@ -20771,6 +20901,32 @@
       "title": "Average_True_Range_Atr Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "rob-hoffman-irb-ma-trend": [
+    {
+      "slug": "bfg-profil3d",
+      "title": "Bfg_Profil3D Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "daily-moving-averages-any-tf",
+      "title": "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-cloud-phantomcipher",
+      "title": "Ema_Cloud_Phantomcipher Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "robust-regression-residual-bands-pineify": [
@@ -23815,6 +23971,32 @@
       "score": 8.0
     }
   ],
+  "strategy-script-sweep-return": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change_Of_Character_Choch_Alert_System_Algo_Aakash Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "choch-identifier",
+      "title": "Choch_Identifier Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "strong-candlestick-patterns": [
     {
       "slug": "1-trendline-strategy",
@@ -23852,7 +24034,7 @@
       "slug": "waddah-attar",
       "title": "Waddah Attar Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.9
+      "score": 14.0
     },
     {
       "slug": "true-strength-index",
@@ -25190,7 +25372,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.2
+      "score": 12.1
     }
   ],
   "the-tradegoal-9-0": [
@@ -25256,19 +25438,19 @@
       "slug": "weighted-moving-average-wma",
       "title": "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.4
+      "score": 12.3
     },
     {
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.2
+      "score": 12.1
     },
     {
       "slug": "the-oloid-owma-oloid-weighted-moving-average",
       "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.2
+      "score": 12.1
     }
   ],
   "three-black-crows": [
@@ -25319,6 +25501,32 @@
     {
       "slug": "bat-pattern",
       "title": "Bat_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "three-session-volume-profile": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-candle-volume-profile-chartprime",
+      "title": "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "htf-log-regression-volume-profile",
+      "title": "Htf_Log_Regression_Volume_Profile Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -26204,7 +26412,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.2
+      "score": 12.1
     }
   ],
   "trix-divergence": [
@@ -27775,6 +27983,12 @@
       "score": 9.0
     },
     {
+      "slug": "ema-cloud-phantomcipher",
+      "title": "Ema_Cloud_Phantomcipher Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-cross-signal",
       "title": "Ema_Cross_Signal Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -27783,12 +27997,6 @@
     {
       "slug": "ema-ribbon",
       "title": "Ema_Ribbon Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "force-index-ema",
-      "title": "Force_Index_Ema Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -28474,7 +28682,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong_Fu_Candle Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 13.9
+      "score": 14.0
     },
     {
       "slug": "schaff-trend-cycle",
@@ -28648,7 +28856,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.4
+      "score": 12.3
     }
   ],
   "whale-activity": [
@@ -29141,6 +29349,32 @@
     {
       "slug": "initial-balance-auction-intelligence-by-dgt",
       "title": "Initial_Balance_Auction_Intelligence_By_Dgt Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "wyckoff-theultimator5": [
+    {
+      "slug": "ml-vsa",
+      "title": "Ml_Vsa Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "volume-spread-analysis",
+      "title": "Volume_Spread_Analysis Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "wyckoff-accumulation-distribution",
+      "title": "Wyckoff_Accumulation_Distribution Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "wyckoff-architectural-range-erdensedat",
+      "title": "Wyckoff_Architectural_Range_Erdensedat Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
