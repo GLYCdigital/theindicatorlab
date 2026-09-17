@@ -2581,6 +2581,12 @@
       "score": 9.0
     },
     {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "cumulative-volume-delta",
       "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -2590,12 +2596,6 @@
       "slug": "delta-divergence",
       "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
       "rating": 3,
-      "score": 9.0
-    },
-    {
-      "slug": "delta-volume",
-      "title": "Delta_Volume Review: Settings, Strategy & How to Use It",
-      "rating": 4,
       "score": 9.0
     }
   ],
@@ -4465,8 +4465,8 @@
       "score": 9.0
     },
     {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -4599,6 +4599,32 @@
       "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "cme-institutional-order-flow-amt-lens": [
+    {
+      "slug": "liquidity-sweep-detector",
+      "title": "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "market-microstructure-analytics",
+      "title": "Market_Microstructure_Analytics Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "market-structure-smc",
+      "title": "Market_Structure_Smc Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "smart-money-concepts",
+      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "coasyn-directional-order-blocks": [
@@ -6256,7 +6282,7 @@
       "slug": "sigmoid-rsi-nal",
       "title": "Sigmoid_Rsi_Nal Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 8.0
+      "score": 7.9
     },
     {
       "slug": "fisher-transform-divergence",
@@ -7277,6 +7303,32 @@
       "title": "Elliott_Wave_Impulse_Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "elliott-wave-structure": [
+    {
+      "slug": "elliott-wave-corrective-patterns",
+      "title": "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "elliott-wave-count",
+      "title": "Elliott_Wave_Count Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "elliott-wave-fibonacci",
+      "title": "Elliott_Wave_Fibonacci Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "elliott-wave-impulse-detector",
+      "title": "Elliott_Wave_Impulse_Detector Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "elliott-wave": [
@@ -9220,7 +9272,7 @@
       "slug": "murrey-math-mtf",
       "title": "Murrey_Math_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 6.7
+      "score": 6.8
     },
     {
       "slug": "gann-fan",
@@ -13391,6 +13443,12 @@
   ],
   "liquidity-sweep-detector": [
     {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -13405,12 +13463,6 @@
     {
       "slug": "market-microstructure-analytics",
       "title": "Market_Microstructure_Analytics Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "market-structure-smc",
-      "title": "Market_Structure_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -14651,14 +14703,14 @@
       "score": 16.0
     },
     {
-      "slug": "institutional-order-flow",
-      "title": "Institutional_Order_Flow Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "liquidity-sweep-detector",
-      "title": "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It",
+      "slug": "institutional-order-flow",
+      "title": "Institutional_Order_Flow Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -14977,6 +15029,12 @@
   ],
   "market-structure-smc": [
     {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14991,12 +15049,6 @@
     {
       "slug": "market-microstructure-analytics",
       "title": "Market_Microstructure_Analytics Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "smart-money-concepts",
-      "title": "Smart_Money_Concepts Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -17835,6 +17887,32 @@
       "score": 5.0
     }
   ],
+  "order-block-intelligence-mitigation-probability-ai-dots3red": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive_Liquidity_Reclaim_Map_Phenlabs Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker_Block_Detector_Algotim Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker_Blocks Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "order-blocks": [
     {
       "slug": "abcd-pattern",
@@ -17901,15 +17979,15 @@
       "score": 9.0
     },
     {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -17927,15 +18005,15 @@
       "score": 9.0
     },
     {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -18005,15 +18083,15 @@
       "score": 9.0
     },
     {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -20227,6 +20305,32 @@
       "score": 13.0
     }
   ],
+  "range-breakout-by-av": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum_Dist_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "range-commander-orb": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -22073,6 +22177,32 @@
       "score": 8.0
     }
   ],
+  "sessions-opening-levels-and-day-separators": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "shark-pattern": [
     {
       "slug": "1-trendline-strategy",
@@ -22385,6 +22515,32 @@
       "score": 8.0
     }
   ],
+  "sma20-tail-reversal": [
+    {
+      "slug": "exponential-moving-average-ema",
+      "title": "Exponential_Moving_Average_Ema Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "heikin-ashi-ema-combo",
+      "title": "Heikin_Ashi_Ema_Combo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "high-volume-breakout-targets-algoalpha",
+      "title": "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "sma-flip-strategy",
+      "title": "Sma_Flip_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "smart-auto-fibonacci-retracement-jpt": [
     {
       "slug": "1-trendline-strategy",
@@ -22523,6 +22679,12 @@
       "score": 13.0
     },
     {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "liq-sweep-choch-ob-instant",
       "title": "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22531,12 +22693,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity_Absorption_And_Rejection_Orderflow_Maxmaserati Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "liquidity-absorption-and-rejection-orderflow",
-      "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -22587,8 +22743,8 @@
       "score": 9.0
     },
     {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic_Market_Structure_Liquidity_Engine_Dmsl Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -22673,6 +22829,12 @@
   ],
   "smart-money-volume-absorption-signals-i-eonmetrics": [
     {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "institutional-order-flow",
       "title": "Institutional_Order_Flow Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -22687,12 +22849,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow",
       "title": "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "liquidity-sweep-detector",
-      "title": "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -24543,6 +24699,32 @@
       "score": 12.0
     }
   ],
+  "supertrend-regime-confluence": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais_Supertrend Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
+      "title": "Anchored_Vwap_W_4_Stdev_Pip_Atr_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "atr-bands",
+      "title": "Atr_Bands Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "supertrend-rsi-combo": [
     {
       "slug": "gcm-heikin-ashi-supertrend-rsi-oscillator",
@@ -24675,6 +24857,12 @@
   ],
   "supply-demand-mtf": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "20-50-ema-pullback-tap-indicator",
       "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -24687,14 +24875,8 @@
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master-fuel-zone-70-80",
-      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -25435,12 +25617,6 @@
       "score": 13.0
     },
     {
-      "slug": "weighted-moving-average-wma",
-      "title": "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 12.3
-    },
-    {
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -25449,6 +25625,12 @@
     {
       "slug": "the-oloid-owma-oloid-weighted-moving-average",
       "title": "The_Oloid_Owma_Oloid_Weighted_Moving_Average Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 12.1
+    },
+    {
+      "slug": "triple-exponential-moving-average-tema",
+      "title": "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 12.1
     }
@@ -27521,15 +27703,15 @@
       "score": 9.0
     },
     {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review: Settings, Strategy & How to Use It",
-      "rating": 3,
+      "slug": "cumulative-volume-delta",
+      "title": "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 9.0
     }
   ],
@@ -28856,7 +29038,7 @@
       "slug": "thestrat-suite-open-source-entries-targets-and-stop-loss",
       "title": "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 12.3
+      "score": 12.1
     }
   ],
   "whale-activity": [
@@ -29507,6 +29689,58 @@
       "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "z-score-range-boxes-breakout": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive_Envelopes Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "zen-abr-scalping-ladder": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3_Way_Bollinger_Trend_Zynalgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "zero-lag-ema": [
