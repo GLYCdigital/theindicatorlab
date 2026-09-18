@@ -2772,7 +2772,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It",
       "rating": 4,
-      "score": 10.1
+      "score": 10.0
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -10115,6 +10115,12 @@
   ],
   "head-and-shoulders": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -10129,12 +10135,6 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "aj-ict-smc",
-      "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -10603,6 +10603,32 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption_Detection Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "htf-3-candle-system": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3_Way_Bollinger_Trend_Zynalgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -14905,6 +14931,12 @@
       "score": 9.0
     },
     {
+      "slug": "sattam-harmonic-lab",
+      "title": "Sattam_Harmonic_Lab Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "zig-zag-indicator",
       "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14913,12 +14945,6 @@
     {
       "slug": "zig-zag-percentage",
       "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag",
-      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -14983,6 +15009,12 @@
       "score": 9.0
     },
     {
+      "slug": "sattam-harmonic-lab",
+      "title": "Sattam_Harmonic_Lab Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "zig-zag-indicator",
       "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -14991,12 +15023,6 @@
     {
       "slug": "zig-zag-percentage",
       "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag-retracement",
-      "title": "Zig_Zag_Retracement Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -17517,8 +17543,8 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It",
+      "slug": "chaikin-cmf-signals",
+      "title": "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -18513,6 +18539,12 @@
   ],
   "piercing-pattern": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -18527,12 +18559,6 @@
     {
       "slug": "aj-ict-smc",
       "title": "Aj_Ict_Smc Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 8.0
     }
@@ -21761,6 +21787,32 @@
       "score": 9.0
     }
   ],
+  "sattam-harmonic-lab": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd_Pattern Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-trend-ensemble-backquant",
+      "title": "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement_Streak_Analyzer_Fibonacciflux Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "sattam-supply-demand": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
@@ -24193,14 +24245,14 @@
       "score": 14.0
     },
     {
-      "slug": "true-strength-index",
-      "title": "True_Strength_Index Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 13.1
-    },
-    {
       "slug": "force-index-divergence",
       "title": "Force_Index_Divergence Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-sweep",
+      "title": "Liquidity_Sweep Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 13.0
     }
@@ -25201,20 +25253,20 @@
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master-fuel-zone-70-80",
-      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "6-indicator-master",
-      "title": "6_Indicator_Master Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "8020-system-indicator",
       "title": "8020_System_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 5.0
     }
@@ -26311,6 +26363,32 @@
       "score": 5.0
     }
   ],
+  "trendfollower-with-momentum-pullback-engine-for-gold-8": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3_Way_Bollinger_Trend_Zynalgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "trendline-breakout-levels": [
     {
       "slug": "byo-pattern-trendoscope",
@@ -26516,6 +26594,32 @@
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review: Settings, Strategy & How to Use It",
       "rating": 3,
+      "score": 5.0
+    }
+  ],
+  "trinity-reversal-pattern-algoalpha": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1_Trendline_Strategy Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3_Way_Bollinger_Trend_Zynalgo Review: Settings, Strategy & How to Use It",
+      "rating": 4,
       "score": 5.0
     }
   ],
@@ -27053,14 +27157,14 @@
       "score": 9.0
     },
     {
-      "slug": "kalman-filter-trend",
-      "title": "Kalman_Filter_Trend Review: Settings, Strategy & How to Use It",
+      "slug": "moving-average-crossover-mtf",
+      "title": "Moving_Average_Crossover_Mtf Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "moving-average-crossover-mtf",
-      "title": "Moving_Average_Crossover_Mtf Review: Settings, Strategy & How to Use It",
+      "slug": "sma20-tail-reversal",
+      "title": "Sma20_Tail_Reversal Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -29861,14 +29965,14 @@
       "score": 9.0
     },
     {
-      "slug": "zig-zag-indicator",
-      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "sattam-harmonic-lab",
+      "title": "Sattam_Harmonic_Lab Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "zig-zag-retracement",
-      "title": "Zig_Zag_Retracement Review: Settings, Strategy & How to Use It",
+      "slug": "zig-zag-indicator",
+      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -29881,6 +29985,12 @@
       "score": 9.0
     },
     {
+      "slug": "sattam-harmonic-lab",
+      "title": "Sattam_Harmonic_Lab Review: Settings, Strategy & How to Use It",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "zig-zag-indicator",
       "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
       "rating": 4,
@@ -29889,12 +29999,6 @@
     {
       "slug": "zig-zag-percentage",
       "title": "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "zig-zag",
-      "title": "Zig Zag Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -29919,8 +30023,8 @@
       "score": 9.0
     },
     {
-      "slug": "zig-zag-indicator",
-      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "sattam-harmonic-lab",
+      "title": "Sattam_Harmonic_Lab Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
@@ -29945,8 +30049,8 @@
       "score": 9.0
     },
     {
-      "slug": "zig-zag-indicator",
-      "title": "Zig_Zag_Indicator Review: Settings, Strategy & How to Use It",
+      "slug": "sattam-harmonic-lab",
+      "title": "Sattam_Harmonic_Lab Review: Settings, Strategy & How to Use It",
       "rating": 4,
       "score": 9.0
     }
