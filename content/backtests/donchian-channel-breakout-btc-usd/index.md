@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-12",
+  "date": "2026-09-19",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-13 \u2192 2026-09-11",
+  "period": "2021-09-20 \u2192 2026-09-18",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+3.0%",
+      "return_pct": "+8.1%",
       "trades": "3",
       "win_rate_pct": "27.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.7%",
+      "return_pct": "-8.7%",
       "trades": "15",
       "win_rate_pct": "27.7%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/donchian-mtf/"
     },
     {
-      "title": "starc_bands review: settings, strategy & how to use it",
-      "url": "/reviews/starc-bands/"
+      "title": "range_breakout_by_av review: settings, strategy & how to use it",
+      "url": "/reviews/range-breakout-by-av/"
     },
     {
-      "title": "donchian_breakout review: settings, strategy & how to use it",
-      "url": "/reviews/donchian-breakout/"
+      "title": "trendfollower_with_momentum_pullback_engine_for_gold_8 review: settings, strategy & how to use it",
+      "url": "/reviews/trendfollower-with-momentum-pullback-engine-for-gold-8/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-13 → 2026-09-11), the Donchian Channel Breakout delivered a **+8.1% total return** on BTC-USD, compounding at **1.6% annually**. 
+Over five years (2021-09-20 → 2026-09-18), the Donchian Channel Breakout delivered a **+8.1% total return** on BTC-USD, compounding at **1.6% annually**. 
 
 At **0.16**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on BTC-USD](/backtests/donchian-channel-breakout-btc-usd-trades.png)

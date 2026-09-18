@@ -1,26 +1,26 @@
 ---
 {
   "title": "SMA \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-09-12",
+  "date": "2026-09-19",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-13 \u2192 2026-09-11",
+  "period": "2021-09-20 \u2192 2026-09-18",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+86.6%"
+      "value": "+79.9%"
     },
     {
       "label": "CAGR",
-      "value": "13.3%"
+      "value": "12.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.46"
+      "value": "0.43"
     },
     {
       "label": "Max Drawdown",
-      "value": "24.5%"
+      "value": "24.2%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "22.93"
+      "value": "18.33"
     },
     {
       "label": "Total Trades",
@@ -36,25 +36,25 @@
     },
     {
       "label": "Avg Trade",
-      "value": "601 days"
+      "value": "602 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+2.0%",
+      "return_pct": "+3.7%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
     {
       "year": "2022",
-      "return_pct": "+1.1%",
+      "return_pct": "+1.4%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
     {
       "year": "2023",
-      "return_pct": "+12.1%",
+      "return_pct": "+12.2%",
       "trades": "2",
       "win_rate_pct": "50.0%"
     },
@@ -66,13 +66,13 @@
     },
     {
       "year": "2025",
-      "return_pct": "+62.7%",
+      "return_pct": "+62.6%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
     {
       "year": "2026",
-      "return_pct": "+2.1%",
+      "return_pct": "+2.4%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     }
@@ -109,27 +109,27 @@ On GC=F, the SMA acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-09-13 → 2026-09-11), the Golden Cross delivered a **+86.6% total return** on GC=F, compounding at **13.3% annually**. 
+Over five years (2021-09-20 → 2026-09-18), the Golden Cross delivered a **+79.9% total return** on GC=F, compounding at **12.5% annually**. 
 
-At **0.46**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.43**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **24.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 24% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **24.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 24% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.46 | ❌ Weak |
-| Max Drawdown | 24.5% | ⚠️ Moderate |
+| Sharpe Ratio | 0.43 | ❌ Weak |
+| Max Drawdown | 24.2% | ⚠️ Moderate |
 | Win Rate | 50.0% | ⚠️ Below average |
-| Profit Factor | 22.93 | ✅ Excellent |
+| Profit Factor | 18.33 | ✅ Excellent |
 | Trades/Year | ~2 total | Selective — not overtrading |
 
-The **profit factor of 22.93** tells the real story: when the SMA fires, the winning signals are larger than the losing ones. Combined with a 50.0% win rate, this is a mathematically sound edge.
+The **profit factor of 18.33** tells the real story: when the SMA fires, the winning signals are larger than the losing ones. Combined with a 50.0% win rate, this is a mathematically sound edge.
 
 ## Does the Golden Cross Work on GC=F?
 
-The golden cross shows moderate edge on GC=F — **0.46 Sharpe, 22.93 profit factor** over 2 trades. It's not a home run, but it's also not random.
+The golden cross shows moderate edge on GC=F — **0.43 Sharpe, 18.33 profit factor** over 2 trades. It's not a home run, but it's also not random.
 
 The 50.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on GC=F](/backtests/golden-cross-gc=f-trades.png)

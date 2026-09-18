@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-12",
+  "date": "2026-09-19",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-13 \u2192 2026-09-11",
+  "period": "2021-09-20 \u2192 2026-09-18",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+23.7%"
+      "value": "+29.1%"
     },
     {
       "label": "CAGR",
-      "value": "4.4%"
+      "value": "5.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.32"
+      "value": "0.34"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+3.0%",
+      "return_pct": "+8.1%",
       "trades": "1",
       "win_rate_pct": "22.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.7%",
+      "return_pct": "-8.7%",
       "trades": "4",
       "win_rate_pct": "22.7%"
     }
@@ -109,9 +109,9 @@ On BTC, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-13 → 2026-09-11), the RSI Oversold/Overbought delivered a **+23.7% total return** on BTC-USD, compounding at **4.4% annually**. 
+Over five years (2021-09-20 → 2026-09-18), the RSI Oversold/Overbought delivered a **+29.1% total return** on BTC-USD, compounding at **5.2% annually**. 
 
-At **0.32**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.34**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **72.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 72% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **72.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.32 | ❌ Weak |
+| Sharpe Ratio | 0.34 | ❌ Weak |
 | Max Drawdown | 72.0% | ⚠️ Significant |
 | Win Rate | 22.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.97 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.97** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on BTC?
 
-The rsi oversold/overbought shows moderate edge on BTC — **0.32 Sharpe, 0.97 profit factor** over 22 trades. It's not a home run, but it's also not random.
+The rsi oversold/overbought shows moderate edge on BTC — **0.34 Sharpe, 0.97 profit factor** over 22 trades. It's not a home run, but it's also not random.
 
 The 22.7% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on BTC-USD](/backtests/rsi-oversold-overbought-btc-usd-trades.png)

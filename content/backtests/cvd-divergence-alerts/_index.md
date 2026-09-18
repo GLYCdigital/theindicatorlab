@@ -1,6 +1,6 @@
 ---
 title: "CVD Backtest Results"
-date: 2026-09-12
+date: 2026-09-19
 draft: false
 type: backtests
 description: "All 5 asset backtests for the CVD indicator. Sorted by Sharpe ratio."
@@ -25,18 +25,18 @@ description: "All 5 asset backtests for the CVD indicator. Sorted by Sharpe rati
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+66.2%</td><td>10.7%</td><td>0.46</td><td>26.4%</td><td>43.1%</td><td>1.58</td><td>51</td></tr>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+40.8%</td><td>7.1%</td><td>0.32</td><td>20.1%</td><td>31.0%</td><td>1.41</td><td>71</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+61.8%</td><td>10.1%</td><td>0.44</td><td>26.4%</td><td>42.0%</td><td>1.54</td><td>50</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+31.2%</td><td>5.6%</td><td>0.24</td><td>18.5%</td><td>29.6%</td><td>1.34</td><td>71</td></tr>
 <tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+20.9%</td><td>3.9%</td><td>0.21</td><td>49.9%</td><td>23.8%</td><td>1.10</td><td>101</td></tr>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+16.8%</td><td>3.2%</td><td>0.12</td><td>44.0%</td><td>21.1%</td><td>1.06</td><td>90</td></tr>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+13.3%</td><td>2.5%</td><td>0.07</td><td>21.8%</td><td>39.7%</td><td>1.19</td><td>68</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+11.5%</td><td>2.2%</td><td>0.08</td><td>44.0%</td><td>20.9%</td><td>1.04</td><td>91</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+9.0%</td><td>1.7%</td><td>0.01</td><td>21.0%</td><td>38.8%</td><td>1.14</td><td>67</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 12, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 19, 2026</p>
 
   </div>
 </article>

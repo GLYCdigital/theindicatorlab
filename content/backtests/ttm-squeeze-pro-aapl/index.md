@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-12",
+  "date": "2026-09-19",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-13 \u2192 2026-09-11",
+  "period": "2021-09-20 \u2192 2026-09-18",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+66.2%"
+      "value": "+61.8%"
     },
     {
       "label": "CAGR",
-      "value": "10.7%"
+      "value": "10.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.46"
+      "value": "0.44"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "43.1%"
+      "value": "42.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.58"
+      "value": "1.54"
     },
     {
       "label": "Total Trades",
-      "value": "51"
+      "value": "50"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+18.9%",
-      "trades": "2",
-      "win_rate_pct": "43.1%"
+      "return_pct": "+24.4%",
+      "trades": "1",
+      "win_rate_pct": "42.0%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "11",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.0%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "8",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.0%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "11",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.0%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "12",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.0%"
     },
     {
       "year": "2026",
-      "return_pct": "+23.4%",
+      "return_pct": "+24.2%",
       "trades": "7",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.0%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On AAPL, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-13 → 2026-09-11), the TTM Squeeze Pro delivered a **+66.2% total return** on AAPL, compounding at **10.7% annually**. 
+Over five years (2021-09-20 → 2026-09-18), the TTM Squeeze Pro delivered a **+61.8% total return** on AAPL, compounding at **10.1% annually**. 
 
-At **0.46**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.44**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,19 +119,19 @@ The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.46 | ❌ Weak |
+| Sharpe Ratio | 0.44 | ❌ Weak |
 | Max Drawdown | 26.4% | ⚠️ Moderate |
-| Win Rate | 43.1% | ⚠️ Below average |
-| Profit Factor | 1.58 | ✅ Good |
-| Trades/Year | ~51 total | Active |
+| Win Rate | 42.0% | ⚠️ Below average |
+| Profit Factor | 1.54 | ✅ Good |
+| Trades/Year | ~50 total | Active |
 
-The **profit factor of 1.58** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 43.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.54** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 42.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the TTM Squeeze Pro Work on AAPL?
 
-The ttm squeeze pro shows moderate edge on AAPL — **0.46 Sharpe, 1.58 profit factor** over 51 trades. It's not a home run, but it's also not random.
+The ttm squeeze pro shows moderate edge on AAPL — **0.44 Sharpe, 1.54 profit factor** over 50 trades. It's not a home run, but it's also not random.
 
-The 43.1% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 42.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on AAPL. Combine with trend filters or volume confirmation for better results.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 12, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on AAPL](/backtests/ttm-squeeze-pro-aapl-trades.png)
