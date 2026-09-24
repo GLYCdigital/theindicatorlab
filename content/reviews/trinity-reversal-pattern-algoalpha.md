@@ -119,11 +119,11 @@ For traders who already have a reversal playbook and want structured pattern det
 
 🔬 **The Lab Report** — 123 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
-[Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
+[Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 
 📈 **The Lab Edge** — Time-Series Momentum across 166 markets. The same framework institutions use. Weekly signals to your phone.
 
-[Subscribe $79/mo →](https://theindicatorlab.com/lab-edge/)
+[Subscribe $249/mo →](https://theindicatorlab.com/lab-edge/)
 
 📊 **Prefer to trade on your own?** Power your analysis on TradingView — the platform behind every review on this site.
 
