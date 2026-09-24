@@ -16,101 +16,108 @@ categories:
   - Technical Analysis
 rating: 4
 description: "ADXR refines ADX by smoothing trend strength over time. Honest review of settings, entry signals, and why it’s a solid 4-star tool for trend traders."
+grounding: "none (no source found)"
 ---
-
-**ADXR (Average Directional Movement Index Rating)** — it’s ADX’s older, calmer cousin. If you’ve used ADX and found its raw line too jumpy or prone to false readings, ADXR is the fix. It averages ADX values over a user-defined period, giving you a smoother, more reliable measure of trend strength. No hype, just a cleaner signal.
-
-I ran this on BTC/USD 4H and EUR/USD 1H for two weeks. Here’s what I found.
+**ADXR (Average Directional Movement Index Rating)** — ADX's older, calmer cousin. Where the raw ADX line can be jumpy and prone to false readings, ADXR applies an additional smoothing pass to ADX values, producing a steadier read on trend strength. No hype, just a cleaner signal.
 
 ## What This Indicator Actually Does
 
-ADXR doesn’t tell you *direction*. It tells you *conviction*. It takes the standard ADX line and applies a secondary smoothing (usually a simple moving average) to produce a single line that oscillates from 0 to 100.  
+ADXR doesn't tell you *direction*. It tells you *conviction*. It takes the standard ADX line and applies a secondary smoothing (typically a simple moving average) to produce a single line that oscillates from 0 to 100.
 
-- **Above 25** = trending market (strong conviction)  
-- **Below 20** = ranging or choppy market  
-- **Cross of 25** = potential trend start or end  
+- **Above 25** = trending market (strong conviction)
+- **Below 20** = ranging or choppy market
+- **Cross of 25** = potential trend start or end
 
-The key difference from ADX: ADXR reacts slower but with far fewer whipsaws. In the chart above, you can see ADXR held above 25 during the April rally, while ADX briefly dipped below twice — which would have stopped you out prematurely.
+The key difference from ADX: ADXR reacts slower but with far fewer whipsaws. Because ADXR holds its level longer than ADX, it is less likely to dip below a threshold during a temporary pullback and signal an exit prematurely.
 
 ## Key Features That Set It Apart
 
-- **Single-line simplicity** — No +DI/-DI clutter unless you toggle them on. Just trend strength.  
-- **Adjustable smoothing** — Default period is 14 for ADX, then ADXR smoothing is also 14. You can crank it to 20+ for swing trading.  
-- **Customizable threshold** — I set mine to 22 on lower timeframes (15m, 30m) to catch earlier moves.  
-- **Color-coded histogram option** — Green when above threshold, red below. Quick visual scan.
+- **Single-line simplicity** — No +DI/-DI clutter unless you toggle them on. Just trend strength.
+- **Adjustable smoothing** — ADX has its own period, then the ADXR smoothing is applied on top of it. Both can be lengthened for slower, smoother output.
+- **Customizable threshold** — The trend/ranging line can be moved to suit the timeframe you trade.
+- **Color-coded histogram option** — One color above the threshold, another below. Quick visual scan.
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-- **Timeframe**: 1H–4H for swing trades. Scalping? Stick to ADX — ADXR is too slow.  
-- **ADX Period**: 14 (default).  
-- **ADXR Smoothing**: 14 for standard use, 20 if you trade weekly charts.  
-- **Threshold**: 25 on 4H+, 22 on 1H or lower.  
-- **Show +/-DI**: Off. They’re noise here. Use a separate indicator (e.g., EMA cross) for direction.  
+- **Timeframe**: Higher timeframes suit ADXR's slower response better. On very short intraday charts it lags too far behind price to be useful.
+- **ADX Period**: Standard default.
+- **ADXR Smoothing**: Standard default for general use; lengthen it if you trade slower charts and want an even smoother line.
+- **Threshold**: A higher threshold on slower timeframes, a slightly lower one on faster charts to catch moves earlier.
+- **Show +/-DI**: Off. They add noise here. Use a separate indicator for direction.
+
+Note that these are starting points, not optimized values — the right threshold depends on the instrument and timeframe you trade.
 
 ## How to Use It for Entries and Exits
 
-**Entry**:  
-Wait for ADXR to cross *above* your threshold (say 25) after being below it for at least 3 candles. That confirms a trend is starting. Then check direction — I use a 50 EMA slope or price above/below VWAP.  
+**Entry**:
+Wait for ADXR to cross *above* your threshold after being below it for several candles. That confirms a trend is starting. Then check direction with a separate tool — an EMA slope or price relative to VWAP are common choices.
 
-**Exit**:  
-Exit when ADXR drops back below 25. Or use a trailing stop if ADXR stays above 35 (strong trend).  
+**Exit**:
+Exit when ADXR drops back below the threshold. Or use a trailing stop if ADXR stays well above it, indicating a strong trend.
 
-**Avoid**:  
-Don’t trade when ADXR is between 20 and 25. That’s no-man’s land — too weak for trends, too strong for ranges.
+**Avoid**:
+Don't trade when ADXR is sitting in the zone between the ranging and trending thresholds. That's no-man's land — too weak for trends, too strong for ranges.
 
 ## Honest Pros and Cons
 
-**Pros**  
-- Much fewer false signals than ADX.  
-- Works beautifully on 4H+ for catching sustained moves.  
-- Clean visual — one line, no clutter.  
+**Pros**
+- Fewer false signals than raw ADX.
+- Suited to slower timeframes for catching sustained moves.
+- Clean visual — one line, no clutter.
 - Free and built into TradingView.
 
-**Cons**  
-- Lags more than ADX — you’ll enter later.  
-- Useless in ranging markets (but that’s the point).  
-- No direction info — you must pair it with another tool.  
-- On lower timeframes (<1H), it’s almost worthless.
+**Cons**
+- Lags more than ADX — you'll enter later.
+- Useless in ranging markets (but that's the point).
+- No direction info — you must pair it with another tool.
+- On very low timeframes, it's almost worthless.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Swing traders** who hold positions 2–10 days.  
-- **Trend followers** tired of ADX whipsaws.  
-- **Systematic traders** needing a trend strength filter for entry rules.  
+- **Swing traders** who hold positions for days at a time.
+- **Trend followers** tired of ADX whipsaws.
+- **Systematic traders** needing a trend strength filter for entry rules.
 
-Not for scalpers or day traders on 5-minute charts. You’ll get chopped up.
+Not for scalpers or day traders on 5-minute charts. You'll get chopped up.
 
-## Better Alternatives If You Exist
+## Better Alternatives
 
-- **ADX (raw)** — If you need faster signals and accept more noise.  
-- **SuperTrend** — Combines direction and strength in one indicator.  
-- **KST (Know Sure Thing)** — Less common but gives trend momentum without ADX’s lag.  
+- **ADX (raw)** — If you need faster signals and accept more noise.
+- **SuperTrend** — Combines direction and strength in one indicator.
+- **KST (Know Sure Thing)** — Less common but gives trend momentum without ADX's lag.
 
-ADXR is better than ADX for most retail traders, but it’s not the best for everyone.
+ADXR is a reasonable default over ADX for many retail traders, but it's not the best fit for everyone.
 
 ## FAQ: Real Trader Questions
 
-**Q: Should I replace ADX with ADXR?**  
-A: Only if you trade 1H+ and hate false signals. For quick entries, keep ADX.
+**Q: Should I replace ADX with ADXR?**
+A: Only if you trade higher timeframes and want fewer false signals. For quick entries, keep ADX.
 
-**Q: What’s the best timeframe for ADXR?**  
-A: 4H or daily. On 1H, set threshold to 22.
+**Q: What's the best timeframe for ADXR?**
+A: Slower charts suit it best. On faster charts, lower the threshold slightly.
 
-**Q: Can I use it alone?**  
+**Q: Can I use it alone?**
 A: No. You need price action or another indicator for direction.
 
-**Q: Does it repaint?**  
-A: No. It’s a true moving average of ADX. What you see is final.
+**Q: Does it repaint?**
+A: No. It's a true moving average of ADX. What you see is final.
 
 ## Final Verdict
 
-ADXR is a solid 4-star upgrade to ADX. It’s not revolutionary, but it fixes ADX’s biggest flaw — jumpiness — without adding complexity. If you’re a swing trader who struggles with trend identification, ADXR will clean up your chart and your entries.
+ADXR is a solid upgrade to ADX. It's not revolutionary, but it addresses ADX's biggest flaw — jumpiness — without adding complexity. If you're a swing trader who struggles with trend identification, ADXR can clean up your chart and your entries.
 
-**Rating**: ⭐⭐⭐⭐ (4/5)  
-**Best for**: Trend strength filtering on 4H+  
-**Pair with**: EMA (50) or VWAP for direction
+**Best for**: Trend strength filtering on slower timeframes
+**Pair with**: EMA or VWAP for direction
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ADX/DMI** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 56.2%, GBPUSD 54.2%, AMD 53.0%, AVAXUSD 52.8%
+- Weakest markets: LTCUSD 44.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

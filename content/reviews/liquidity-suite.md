@@ -17,84 +17,75 @@ categories:
 rating: 4
 description: "Tested Liquidity_Suite on TradingView: honest review of its liquidity sweeps, fair value gaps, and trend structure. See settings, pros/cons, and who it suits."
 tv_script_url: "https://www.tradingview.com/script/2cn0x1mX-Liquidity-Suite/"
+sources: ["https://www.tradingview.com/script/2cn0x1mX-Liquidity-Suite/"]
 ---
-Let me be upfront: "Liquidity_Suite" sounds like another overhyped script promising to reveal the market's secrets. After running it on multiple timeframes and 40+ charts, I can tell you it's not that — but it's also not useless. It's a competent liquidity-mapping tool that does exactly what it says, no more, no less. Here's the breakdown.
+# Liquidity Suite Review
+
+The name "Liquidity Suite" promises a lot. What it actually delivers is a market-structure and liquidity-mapping study that consolidates the standard liquidity references into one workspace and tries to keep the chart readable instead of drowning it in lines. Whether that's useful depends entirely on whether you already trade liquidity concepts. Here's the breakdown.
 
 ## What It Actually Does
 
-This is a trend-structure indicator that plots liquidity zones — areas where stop losses cluster above recent highs or below recent lows. When price sweeps these zones, it often signals an exhaustion move and a potential reversal. The suite also draws fair value gaps (FVGs) and marks the current trend direction via a colored histogram.
+This is a market-structure study that maps liquidity references — session ranges, prior-period highs and lows, and higher-timeframe buy-side and sell-side liquidity (BSL/SSL) — onto a single chart. It also includes a True Day Open, a fractal-based swing map, and a tracking system for levels that have already been swept.
 
-What separates it from the pack: it doesn't just draw boxes. It labels each zone with its origination date and whether it's been "swept" or is still "active." That's genuinely useful for tracking which liquidity pools remain untapped. As the chart above shows, the zones are cleanly rendered without cluttering the price action — a problem most similar indicators suffer from.
+What separates it from a basic level plotter is the level management. Levels are marked as purged once liquidity has been taken, and a relevance filter compares nearby levels by ATR distance to decide which ones stay visible. The indicator keeps every level tracked internally for sweep detection even when it stops drawing it, which is the part most similar scripts skip.
 
 ## Key Features That Matter
 
-- **Liquidity zone tagging**: Each zone shows creation date and sweep status. You're not guessing whether a level is still valid.
-- **Automated fair value gaps**: Identifies imbalance zones that often act as magnets for price retracement.
-- **Trend bias ribbon**: A subtle color shift on the histogram that flips when higher-timeframe structure breaks. No repainting on this component.
-- **Alerts**: Built-in sweep alerts fire when price touches an active zone. This is where the indicator saves you desk time.
+- **Session engine**: Asian, London, and New York sessions with boxes, high/low lines, or both, plus labels and alerts when a session high or low is taken.
+- **True Day Open**: Plots the New York midnight open, with optional labeling.
+- **Previous period levels**: Previous Day, Week, and Month High/Low, each of which marks itself purged once taken.
+- **HTF BSL/SSL engine**: Up to three higher-timeframe liquidity layers, with automatic or manual timeframe selection.
+- **Relevant swings**: Fractal swing detection with ATR-based clustering and filtering of minor pivots.
+- **Universal purged levels**: A consistent sweep treatment across PDH/PDL, PWH/PWL, PMH/PML, and HTF BSL/SSL — optional ✕ marker, optional deletion, or grey dotted historical display.
+- **Alerts**: Alerts fire when session highs or lows are taken.
 
-## Settings Worth Changing
+## Settings and How to Tune Them
 
-The defaults are conservative, and I found them too loose for day trading. Here's what worked after two weeks of testing:
+The input list is long, which is worth knowing before you load it. The meaningful groups:
 
-- **Zone sensitivity**: Crank it from the default 1.0 to 1.5. You'll get fewer, higher-quality zones. At 1.0, I was getting boxes on almost every swing, which diluted the signal.
-- **Lookback period**: Set to 500 bars. Going longer just produces stale zones that no longer matter to price action.
-- **FVGs**: Disable them below the 4-hour timeframe. On lower timeframes, they flicker on and off and become noise.
-- **Sweep confirmation**: Turn on the option to require a candle close beyond the zone before alerting. Prevents false triggers during wicks.
+- **General**: Timezone, used for both sessions and the True Day Open.
+- **Relevance filter**: A toggle that hides overlapping levels based on ATR proximity while keeping the logic running underneath. It has an ATR length and a proximity threshold expressed as an ATR multiple. The filter's priority rules are fixed: fresh levels beat purged ones, higher-timeframe liquidity beats local swings, and older confirmed levels are preferred over newer overlapping ones. Active sessions are excluded from filtering entirely until they close.
+- **Sessions**: Toggle session display, suppress drawing above a chosen timeframe, enable break alerts, choose box, lines, or both, and set transparency, line style, width, label size, and the number of historical sessions. Asia, London, and New York are configured individually for times, colors, and high/low labels.
+- **True Day Open**: Show/hide, plus color, line style, width, and label.
+- **Previous highs and lows**: PDH/PDL, PWH/PWL, and PMH/PML are enabled individually, each with color, style, and width.
+- **HTF BSL/SSL**: Three layers, each with enable, automatic or manual timeframe, color, style, and width, plus a global maximum-lines-per-level cap.
+- **Purged levels**: Delete or retain swept levels, with purged color, style, ✕ marker toggle, and a maximum stored purged count.
+- **Relevant swings**: Window size, pivot length, swing ATR length, maximum levels per side, line color, style, width, and label text.
 
-## How I Actually Traded It
+There is no single correct configuration here. The relevance filter is the main lever for chart cleanliness, and the HTF layer count and max-lines caps are the main levers for how much higher-timeframe context you want on screen at once.
 
-The cleanest setup was a sweep-and-reclaim strategy: Wait for price to wick into a liquidity zone, watch for a bullish or bearish engulfing candle to reclaim the zone, then enter with a stop beyond the sweep low. On the 15-minute chart with BTC, this produced a ~65% win rate over 30 trades in my backtesting — though my sample size is small, so take that with salt.
+## How It's Meant to Be Used
 
-The trend filter matters. When the histogram is green, only take long-side liquidity sweeps. When red, only short-side. Fighting the bias doubles your false signals. I learned that the hard way on a Tuesday when I ignored the red ribbon and bought a sweep that kept bleeding lower.
+The documentation suggests pairing it with price action and market structure rather than trading it mechanically. The stated workflow is: identify higher-timeframe liquidity, watch session range development, wait for sweeps into key levels, look for confirmation, and lean on the relevance filter to keep the chart legible.
 
 ## The Honest Trade-Offs
 
 **Pros**:
-- Zone tagging with dates is genuinely unique and saves manual charting time
-- No repainting on the trend component (I verified by reloading historical data)
-- Alerts are reliable and customizable
-- Works across all timeframes without lag
+- Consolidates sessions, prior-period levels, HTF liquidity, and swings into one study instead of several.
+- Purged-level tracking is applied consistently across every level type, so swept liquidity isn't just deleted and forgotten.
+- The relevance filter has explicit, stated priority rules rather than arbitrary hiding.
+- Up to three independent HTF layers gives it more higher-timeframe depth than a single-layer liquidity plotter.
 
 **Cons**:
-- The FVG component is mediocre — it misses significant imbalances and draws irrelevant ones on lower timeframes
-- No multi-timeframe confluence display. You have to manually check if a zone on the daily aligns with the 15-minute sweep
-- Setup can be overwhelming. There are 30+ input fields, and the documentation is sparse
-- Heavier on CPU than most trend indicators — noticeable on 1-minute charts
+- The input list is extensive, and the documentation, while organized, is not a walkthrough — expect time spent mapping settings to behavior.
+- Levels are managed by ATR proximity, which is a heuristic. Two genuinely distinct levels that happen to sit close together can be treated as one for display purposes.
+- Active sessions are deliberately exempt from the filter, so intraday session clutter is not something the relevance engine will clean up for you.
+- It is a discretionary tool. Nothing here generates entries.
 
 ## Who Should Install This
 
-This is for traders who already understand liquidity concepts — if you've never heard of "stop hunts" or "liquidity sweeps," this won't teach you. It's a tool for executing a strategy you already have, not for discovering one. Swing traders on 1H-4H will get the most value. Scalpers will find it too slow.
-
-If you're a pure price-action trader who prefers clean charts, skip it. The zone clutter, even at optimized settings, will annoy you.
-
-## Better Alternatives
-
-If the FVG component is what draws you, **Fair Value Gaps by LuxAlgo** does it better. For pure liquidity mapping, **Liquidity Levels by QuantNomad** offers multi-timeframe confluence but lacks the sweep alerts. The suite's advantage is bundling both — just know neither is best-in-class individually.
+Traders who already work from liquidity and session structure and want the mapping automated. If terms like stop hunt or liquidity sweep aren't already part of your process, this study won't supply the framework — it assumes one. The documentation notes it's designed for discretionary liquidity-based trading across forex, indices, crypto, and futures.
 
 ## Common Questions
 
-**Does it repaint?** The trend ribbon doesn't. The liquidity zones don't shift once formed. The FVGs can appear and disappear on lower timeframes. I'd rate it 90% repaint-free.
+**Does it repaint?** The description states the indicator is non-repainting. It also notes that purged levels remain internally tracked to keep filtering and historical context accurate, and that active session levels are intentionally held out of the relevance filter until the session closes.
 
-**Does it work for crypto and forex?** Yes, tested both. Works well with BTC, ETH, EURUSD, and GBPUSD. Gold (XAUUSD) had more false sweeps due to its erratic wicking behavior.
-
-**Is it worth the subscription cost?** The free version gives you 50 zones per chart. That's enough to evaluate. If the sweep alerts save you two hours of manual monitoring per week, the paid tier pays for itself.
+**What markets is it for?** Per the documentation, discretionary liquidity-based trading across forex, indices, crypto, and futures.
 
 ## Final Verdict
 
-Liquidity_Suite is a solid 4-star tool. It's not revolutionary, but it's reliable, and the zone-dating feature genuinely changes how you track liquidity. The FVG weakness and lack of multi-timeframe display hold it back from greatness. For the trader who already knows how to trade liquidity and wants to automate the mapping, it's worth your credits. For everyone else, it's another indicator that won't fix a broken strategy.
+Liquidity Suite is a well-scoped study that does one job — consolidating liquidity references with sane decluttering — and does it without pretending to be a signal generator. The relevance filter and universal purged-level handling are the parts that justify it over stacking three or four separate level indicators. The cost is a dense settings panel and an ATR-based filter that will occasionally collapse levels you'd rather see separately. If you already trade liquidity, it's a reasonable addition. If you don't, it won't teach you.
 
-**Rating**: ⭐⭐⭐⭐ (4/5) — Recommended with caveats.
-
-## Frequently Asked Questions
-
-### Is Liquidity_Suite worth it?
-
-Based on testing across multiple timeframes, Liquidity_Suite delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

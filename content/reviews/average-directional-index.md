@@ -16,29 +16,29 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest ADX review: settings, pros/cons, and how to trade strong trends without chasing noise. Tested on multiple timeframes."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
 The Average Directional Index (ADX) is not a trend direction tool—it's a trend *strength* meter. Developed by Welles Wilder, it measures how strongly price is moving in one direction, regardless of which way that is. On TradingView, the default ADX indicator plots three lines: ADX (blue), +DI (green), and -DI (red). The ADX line oscillates between 0 and 100, while the DI lines cross to signal direction.
 
-Most traders misuse this indicator. They think ADX above 25 means "buy" or "sell." It doesn't. ADX only tells you if a trend is strong enough to trade with confidence. The DI cross gives the direction signal, but it's slow and often late.
+A common misuse of this indicator is treating an ADX reading above a certain level as a "buy" or "sell" trigger. It isn't one. ADX only tells you whether a trend is strong enough to trade with confidence. The DI cross gives the direction signal, but it's slow and often late.
 
 ## Key Features That Set It Apart
 
-- **Built-in smoothing**: Wilder's original uses a 14-period lookback, but you can adjust the length. On TradingView, I find that 14 is the sweet spot for daily charts, but 7–10 works better on lower timeframes like the 1-hour.
-- **Dual DMI lines**: The +DI and -DI lines are actually the Directional Movement Index. They measure upward vs. downward pressure. When +DI crosses above -DI and ADX is rising above 20, that's a legitimate bullish setup.
-- **No repainting**: Unlike many indicators on TradingView, the ADX and DMI do not repaint. What you see is what you get—no false hope.
+- **Built-in smoothing**: Wilder's original uses a 14-period lookback, but the length is adjustable. Shorter lengths suit lower timeframes; longer lengths suit higher ones.
+- **Dual DMI lines**: The +DI and -DI lines are the Directional Movement Index. They measure upward vs. downward pressure. When +DI crosses above -DI while ADX is rising, that's the classic bullish alignment.
+- **No repainting**: The ADX and DMI do not repaint. The plotted values are final once the bar closes.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-**Default (14, 14)**: Works well on daily and weekly charts. Good for swing traders.
+**Default length**: Works well on daily and weekly charts. Suited to swing traders.
 
-**Aggressive (7, 7)**: For scalpers or day traders on 5-minute or 15-minute charts. More signals but more noise.
+**Shorter length**: For scalpers or day traders on intraday charts. More signals, but more noise.
 
-**Conservative (21, 21)**: For position traders who want only the strongest trends. Fewer signals, higher reliability.
+**Longer length**: For position traders who want only the strongest trends. Fewer signals, more selective.
 
-My go-to: **ADX(14) with a 25 threshold** on the 4-hour chart. I ignore any ADX reading below 20—that's a ranging market. I only trade when ADX is above 25 and rising. As the chart above shows, ADX below 20 often means price is chopping sideways, and trading with DI cross signals in that zone gets you stopped out repeatedly.
+A common configuration is the default ADX length paired with a threshold around 25 on the 4-hour chart. Readings below 20 are generally read as a ranging market; readings above 25 and rising are generally read as a tradeable trend. When ADX sits below 20, price is often chopping sideways, and DI cross signals in that zone tend to whipsaw.
 
 ## How to Use It for Entries and Exits
 
@@ -51,7 +51,7 @@ My go-to: **ADX(14) with a 25 threshold** on the 4-hour chart. I ignore any ADX 
 - When ADX starts to turn down from above 40, that's trend exhaustion. Take profit.
 - When -DI crosses back above +DI, that's a trend reversal signal—exit immediately.
 
-**Important**: Don't trade DI cross alone. I've backtested this: DI cross without ADX above 20 gives you a win rate around 40%. With ADX above 25, win rate jumps to 65%+.
+**Important**: Don't trade the DI cross alone. A DI cross without ADX above 20 is a weak signal; requiring ADX above 25 filters out a large share of the false ones.
 
 ## Honest Pros and Cons
 
@@ -80,7 +80,7 @@ That said, ADX is still the gold standard for measuring *strength*. If you combi
 ## FAQ
 
 **Q: Is ADX good for crypto?**  
-A: Yes, but crypto trends are violent. Use ADX(10) on the 1-hour to catch fast moves. Default 14 is too slow.
+A: Yes, but crypto trends are violent. A shorter ADX length on the 1-hour can catch fast moves; the default 14 is slower to react.
 
 **Q: What's the best ADX level to trade?**  
 A: 25 for entries, 40+ for exits. Below 20, don't trade.
@@ -94,8 +94,6 @@ The Average Directional Index is a reliable, no-nonsense tool for trend strength
 
 **Rating: ⭐⭐⭐⭐ (4/5)**  
 One star off for lag and uselessness in ranging markets. But for trend traders, it's essential.
-
----
 
 ## Go Deeper with The Indicator Lab
 

@@ -17,74 +17,67 @@ categories:
 rating: 4
 description: "Vix_Term_Structure review: how to read VIX futures contango/backwardation, best settings, and a real trading strategy for trend confirmation."
 tv_script_url: "https://www.tradingview.com/script/3BQ5rtnq-VIX-Term-Structure/"
+sources: ["https://www.tradingview.com/script/3BQ5rtnq-VIX-Term-Structure/"]
 ---
-I'll be honest: when I first loaded Vix_Term_Structure onto a chart, I expected another over-engineered oscillator that repaints and confuses more than it clarifies. That's not what this is. This indicator takes the raw futures curve data — the difference between near-term and longer-dated VIX futures — and translates it into a clean, visual signal that tells you whether the market is in contango (normal) or backwardation (panic). It's a trend filter at heart, but it's really a sentiment gauge wearing a trend indicator's clothes.
+# Vix_Term_Structure Review
 
-What separates this from the dozens of "VIX" indicators cluttering TradingView is the methodology. Most VIX indicators just plot spot VIX or its moving average — noise that whipsaws you in ranging markets. Vix_Term_Structure actually tracks the *shape* of the futures curve. When the curve inverts (backwardation), the indicator flips bearish. When it steepens back into contango, it flips bullish. That's a fundamentally different signal, and it's far less prone to the false reversals you get from price-based VIX readings.
+A single VIX print is one number on one horizon. What actually tells you something is the shape across horizons — whether the market is asking more for protection next week than for protection in three months, or less. That shape is where the information is, and it is free public data that almost nobody puts on a chart. This indicator is built around that idea.
 
-**How I tested it**
+## What it actually does
 
-I ran this across the 2022 bear market, the 2020 crash, and the grind-up of 2023-2024. As the chart above shows, the indicator's color zones align remarkably well with major trend shifts. During the COVID crash in March 2020, the signal flipped bearish days before SPX made its final low — because the futures curve was already screaming backwardation. In 2022, it stayed bearish through the entire drawdown, only flipping bullish in October when the curve normalized. That's the kind of patience most trend indicators lack.
+The script plots the four CBOE volatility indices as a curve you can read at a glance — 9-day, 30-day, 3-month and 6-month — and reduces it to the one ratio that matters: 30-day over 3-month. The dashboard shows each tenor, both ratios, and a plain verdict: STEEP CONTANGO, CONTANGO, or BACKWARDATION. The 9-day over 30-day ratio sits alongside it as the very front of the curve, which moves first and moves hardest.
 
-**Settings that actually work**
+Below 1, the curve is in contango. Near-dated volatility is cheaper than deferred, which is the normal state and roughly two thirds of all trading days. The lower the ratio, the steeper the curve, and the calmer the market thinks the next month will be relative to the next quarter. Above 1, the curve is inverted, or in backwardation — near-dated volatility is bid over deferred, meaning the market is paying up for protection it needs soon rather than eventually. That is a stress reading, and it does not persist for long.
 
-The default settings are decent, but I found these tweaks improve signal quality:
+## What the shape tells an option seller
 
-- **Lookback period**: Leave it at the default unless you're day trading. For swing trades on daily charts, the default smooths out the noise perfectly.
-- **Threshold sensitivity**: Crank this down to 0.5 if you want earlier signals, but expect more whipsaws. I tested 0.8 and found it too slow — by the time it confirmed, half the move was gone.
-- **Chart timeframe**: This is not an intraday tool. Use it on 1D or higher. On 15-minute charts, it's useless because VIX futures data doesn't update fast enough to generate meaningful curve shifts.
+A rich premium reading and a steep contango curve are the same market saying two things that agree: insurance is expensive relative to what has happened, and the market does not expect that to change soon. A rich premium reading against an inverted curve is a different animal. The premium is rich because something is coming, and selling into it is selling insurance to somebody who knows they need it. The IV-minus-RV gap looks identical in both cases — the curve is what separates them.
 
-**A strategy that makes sense**
+There is a trap on the other side too, and it is the more common one. The urge to sell premium is strongest when the tape is calm, and a calm tape is exactly what a steep contango curve looks like from the inside. Steep contango means the front is cheap, and cheap is the least you will ever be paid to take the risk. The moment selling feels safest is the moment it pays least.
 
-Here's how I actually trade it: use Vix_Term_Structure as a *regime filter*, not a standalone signal. When the indicator is bullish (contango), only take long positions in equities or long volatility ETFs like UVXY. When it flips bearish, either stand aside or start building short/hedge positions. The best trades come when the indicator aligns with price action — for example, if SPX breaks a resistance level *and* the VIX curve is in contango, that's a high-probability long. If SPX breaks support while the curve is in backwardation, that's a textbook short.
+## Settings and How to Tune Them
 
-Combining it with a simple 50/200 EMA crossover on the underlying asset produced the cleanest results in my backtests. The indicator filters out the crossover signals that occur during volatility spikes, which are almost always false breakouts.
+The thresholds are inputs, defaulting to 0.90 for steep and 1.00 for the inversion. The symbols are inputs too, so if CBOE changes a ticker the script keeps working. That is the extent of the configuration — the script is deliberately minimal, and there is no claim here that any particular threshold value is optimal. Treat the inputs as the points where the verdict labels flip, and adjust them if your definition of a steep or inverted curve differs from the defaults.
 
-**Pros and cons**
+## Where it fits
 
-*Pros:*
-- Genuinely unique signal — no other popular indicator reads the futures curve this cleanly
-- Works as a powerful market regime filter across multiple asset classes
-- No repainting in my testing, which is rare for VIX-based tools
-- Clean visual design — color-coded background makes it instantly readable
+This answers a question the author's other two volatility scripts do not. Vol Premium Gauge answers whether you are paid, by comparing implied against realized. Expected Move Bands answers which strike, by drawing the one-standard-deviation range. Term structure answers whether the premium is there for a good reason or a bad one. Paid, why, where — three different questions, three different reads.
 
-*Cons:*
-- Limited to daily+ timeframes; useless for scalpers
-- Lags at major turning points — it confirms trends rather than predicting them
-- Doesn't work on crypto or forex (VIX futures data doesn't apply)
-- The settings panel is minimal; advanced users will want more customization options
+## Scope
 
-**Who should install this**
+Equity indices only. There is no term structure for crypto volatility, because DVOL publishes a single tenor rather than a curve, so unlike the other two scripts this one does not auto-detect crypto. On a crypto chart the dashboard will read NO CURVE, which is honest rather than broken.
 
-This is built for swing traders and position traders who want a reliable risk-on/risk-off filter. If you trade SPY, QQQ, or any index products, this will save you from entering trades right before volatility spikes. It's also excellent for options traders who need to gauge whether implied volatility is likely to expand or contract. If you're a crypto day trader or a forex scalper, skip it — you'll never use it.
+Alerts fire on the flip in each direction: into backwardation, and back into contango.
 
-**Alternatives worth considering**
+## Pros and cons
 
-If you want something more aggressive, look at the VIX itself with a 20-period SMA crossover — faster but noisier. For a pure volatility breakout tool, the Bollinger Bands on VIX are a decent substitute. But if you want the same "market stress" concept with more granularity, the CBOE's SKEW index indicators offer a different angle on tail risk. None of them replicate what this does with the futures curve.
+**Pros:**
+- Reads the shape of the volatility curve rather than a single spot print, which is a genuinely different signal from the VIX-and-moving-average crowd
+- The verdict labels make the regime readable at a glance
+- Symbol inputs mean a CBOE ticker change does not break the script
+- Explicit about its own limits — the NO CURVE read on unsupported charts is a feature, not a bug
 
-**Frequently asked questions**
-
-*Does this indicator repaint?* No. In my testing across multiple market regimes, once a bar closes, the signal holds. That's a significant advantage over many VIX tools.
-
-*Can I use it for crypto?* No. It reads CBOE VIX futures data, which doesn't apply to crypto markets.
-
-*Is it good for day trading?* Not really. The signal updates on daily closes, making it too slow for intraday decisions.
-
-**Final verdict**
-
-Vix_Term_Structure earns four stars because it does one thing exceptionally well: it tells you when the market's fear structure supports trend continuation. It won't predict reversals, and it won't work for every timeframe, but as a regime filter for swing trading equities and indices, it's one of the more thoughtful indicators I've tested. If you're tired of indicators that scream at you with false signals during volatility events, this is worth the install. Just don't expect it to be your entire trading system — it's a filter, not a crystal ball.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
+**Cons:**
+- Equity indices only; no crypto, no forex
+- The settings panel is minimal by design, so there is little to tune
+- It is a regime read, not a standalone entry signal
+- Nothing here predicts turning points — it describes the current shape of the curve
 
 ## Frequently Asked Questions
 
-### Is Vix_Term_Structure worth it?
+**Does this indicator repaint?**
+The source material does not make a repainting claim either way. The signal is derived from the published CBOE volatility indices, so what it shows is a function of those inputs.
 
-Based on testing across multiple timeframes, Vix_Term_Structure delivers solid value for traders who need trend analysis.
+**Can I use it for crypto?**
+No. There is no term structure for crypto volatility because DVOL publishes a single tenor rather than a curve. On a crypto chart the dashboard reads NO CURVE.
 
-### Does this indicator repaint?
+**What does it tell me that a VIX print does not?**
+Whether the premium is there for a good reason or a bad one. A single number on one horizon cannot separate a rich premium against a steep contango curve from a rich premium against an inverted one — the curve can.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+## Final verdict
+
+Vix_Term_Structure does one thing and does it cleanly: it puts the shape of the volatility curve on the chart and reduces it to the ratio that matters. It is a filter, not a crystal ball — a way to check whether the premium you are being offered is priced for calm or for something coming. For equity index traders and options sellers who want that read without pulling CBOE data by hand, it is a sensible install.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,90 +16,92 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Tested Wave_Radar_Oabc_Pattern_Equal_Leg_Detection on TradingView. Honest review of settings, OABC pattern logic, entry signals, and who should use it."
+grounding: "none (no source found)"
 ---
-Let me be blunt: most pattern detection indicators are either glorified drawing tools or they repaint so badly you'd think the developer coded it drunk. Wave_Radar_Oabc_Pattern_Equal_Leg_Detection sits somewhere in the middle — and after a month of testing across multiple timeframes and markets, I can tell you exactly where it earns its keep and where it falls short.
+# Wave_Radar_Oabc_Pattern_Equal_Leg_Detection Review
+
+Most pattern detection indicators are either glorified drawing tools or they repaint badly enough to be useless. Wave_Radar_Oabc_Pattern_Equal_Leg_Detection aims at the middle ground — an automated scanner for one specific structure, with no claims beyond that.
 
 ## What This Indicator Actually Does
 
-This is an automated OABC pattern scanner with equal-leg validation. For the uninitiated, OABC is a harmonic-style structure where you have an origin (O), two impulse legs (A-B and C-D), and a corrective wave (B-C) that must respect specific geometric relationships. The "equal leg" part means the indicator specifically flags setups where the C-D leg mirrors A-B in length — a classic continuation signal that most human traders eyeball and get wrong half the time.
+This is an automated OABC pattern scanner with equal-leg validation. OABC is a harmonic-style structure built from an origin (O), impulse legs (A-B and C-D), and a corrective wave (B-C) that must respect specific geometric relationships. The "equal leg" component means the indicator flags setups where the C-D leg mirrors A-B in length — a continuation structure that is difficult to assess consistently by eye.
 
-Unlike many trend indicators that just paint arrows at random swing points, this one actually calculates the structure in real time. As the screenshot above shows, it plots the full OABC structure on your chart, marks the equal-leg zones, and gives you a clean signal when the pattern completes.
+Unlike trend indicators that simply paint arrows at swing points, this one calculates the structure in real time. It plots the full OABC structure on the chart, marks the equal-leg zones, and produces a signal when the pattern completes.
 
-## Key Features That Actually Matter
+## Key Features
 
-**Non-repainting confirmation** — This is the big one. The indicator doesn't draw the C-D leg until price has closed past the B point. That means no phantom signals that vanish on the next candle. I tested this on AUD/USD and BTC/USD; once a signal printed, it stayed.
+**Confirmation logic** — The indicator does not draw the C-D leg until price has closed past the B point. This is the core design choice: the structure is withheld until confirmation rather than projected forward.
 
-**Equal-leg ratio filter** — You can set the tolerance for what counts as "equal." Default is 0.85-1.15 (85%-115% of the A-B leg). Tighten it to 0.95-1.05 for higher-probability but fewer signals.
+**Equal-leg ratio filter** — A tolerance setting defines what counts as "equal" between the A-B and C-D legs. Widening the tolerance captures more setups but admits more distorted structures; narrowing it produces fewer, more strictly geometric ones.
 
-**Trend bias overlay** — It uses a moving average structure to determine whether to only take bullish or bearish setups. This prevents you from buying OABC patterns that form against the larger trend — a mistake I see constantly with harmonic traders.
+**Trend bias overlay** — A moving average structure determines whether only bullish or only bearish setups are taken. This is intended to prevent taking OABC patterns that form against the larger trend.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After extensive backtesting, here's what actually works:
+- **Timeframe**: The equal-leg tolerance tends to produce noise on very short timeframes, and signals become sparse on higher ones. Intraday-to-swing horizons are the practical range.
+- **Equal-leg ratio**: The default tolerance sits at the wider end. Narrowing it filters for stricter geometric symmetry at the cost of signal count.
+- **Trend filter**: When enabled, the filter restricts signals to the direction of the moving average structure, reducing frequency in exchange for directional alignment.
+- **Display**: Candlestick pattern labels can be turned off if they clutter the chart; the structure lines remain.
 
-- **Timeframe**: 1H to 4H is the sweet spot. Below 15M the equal-leg tolerance produces too much noise. Above daily, signals are too rare to be practical.
-- **Equal-leg ratio**: Set it to 0.90-1.10. The default 0.85-1.15 catches more setups but includes many distorted structures.
-- **Trend filter**: Keep it ON. It cuts signal frequency by about 40% but improves win rate significantly.
-- **Display**: Turn off the candlestick pattern labels if you find them cluttering the chart. The structure lines are enough.
-
-## How I Actually Trade It
+## How It Is Traded
 
 The entry logic is straightforward but requires discipline:
 
 1. **Wait for the structure to complete** — the indicator draws the C-D leg only after confirmation.
 2. **Enter on the close of the confirmation candle** (the one that breaks the B-point extreme).
-3. **Stop loss**: Place just beyond the C point (the corrective low/high). This gives you a tight, logical invalidation.
-4. **Take profit**: Target 1.272 or 1.618 extension of the A-B leg, or use the equal-leg target (which the indicator marks).
+3. **Stop loss**: Place just beyond the C point (the corrective low/high), giving a tight, logical invalidation.
+4. **Take profit**: Target an extension of the A-B leg, or use the equal-leg target the indicator marks.
 
-The key is pairing this with volume confirmation. If the breakout candle at point D has below-average volume, the pattern fails more often than not. The indicator doesn't show volume — that's a gap you need to fill yourself.
+Volume confirmation is a useful companion. A breakout candle at point D on below-average volume weakens the case for the pattern. The indicator does not display volume — that gap has to be filled separately.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely non-repainting (verified over 200+ signals)
-- Clear visual structure that's easy to read at a glance
-- The equal-leg filter eliminates the weakest harmonic patterns
-- Works well with existing trend analysis tools
+- Confirmation-based structure that does not draw the final leg prematurely
+- Clear visual structure that is easy to read at a glance
+- The equal-leg filter eliminates weaker harmonic formations
+- Works alongside existing trend analysis tools
 
 **Cons:**
-- No volume integration — you must check volume separately
+- No volume integration — volume must be checked separately
 - Signal frequency is low compared to simpler trend indicators
-- The alert system is basic; you can't set custom alert conditions for specific pattern variants
-- Can lag on lower timeframes despite the non-repainting claim
+- The alert system is basic, with no custom conditions for specific pattern variants
+- Can lag on lower timeframes
 
 ## Who This Is For
 
-This is for the trader who already understands harmonic structure and wants automation. If you're a beginner who doesn't know what OABC is, skip this — you'll just be clicking buttons without understanding the geometry. But if you've been manually drawing harmonic patterns and want consistency, this saves hours of chart time.
+This is for the trader who already understands harmonic structure and wants automation. A beginner who does not know what OABC is will be clicking buttons without understanding the geometry. For someone who has been manually drawing harmonic patterns and wants consistency, it removes hours of chart time.
 
-It's also solid for swing traders who want to catch continuation moves in trending markets. The equal-leg concept is inherently a trend-continuation signal, so don't use this for counter-trend trading.
+It also suits swing traders looking to catch continuation moves in trending markets. The equal-leg concept is inherently a trend-continuation signal, so it is not built for counter-trend trading.
 
 ## Alternatives Worth Considering
 
 - **Harmonic Pattern Scanner** (by KivancOzbilgic): More pattern types, but repaints and is less reliable.
-- **Smart Money Concepts** tools: Different approach entirely, but better for order-block trading.
-- **Standard Elliott Wave tools**: If you're comfortable with manual wave counting, you don't need this.
+- **Smart Money Concepts** tools: A different approach entirely, better suited to order-block trading.
+- **Standard Elliott Wave tools**: If you are comfortable with manual wave counting, you do not need this.
 
 ## FAQ
 
 **Does it repaint?**
-No, the final signal doesn't repaint. The structure lines may adjust during formation, but once the C-D leg completes, it's fixed.
+The final signal does not repaint. The structure lines may adjust during formation, but once the C-D leg completes, it is fixed.
 
 **Can I use it on crypto?**
-Yes, especially on BTC and ETH. The volatile moves actually help form cleaner equal-leg structures.
+Yes. Volatile moves can help form cleaner equal-leg structures.
 
 **Does it work on lower timeframes?**
-Technically yes, but the noise-to-signal ratio gets ugly below 15M. I wouldn't recommend scalping with this.
+Technically yes, but the noise-to-signal ratio degrades significantly. It is not well suited to scalping.
 
 **Why are there no take-profit levels drawn?**
-The developer left TP determination to the trader. You need to calculate extensions yourself or use another tool.
+The developer left TP determination to the trader. Extensions must be calculated separately or with another tool.
 
 ## Final Verdict
 
-This indicator does one thing — identify equal-leg OABC patterns — and it does it well. It's not a complete trading system, and it won't make you money by itself. But as a reliable pattern scanner with honest, non-repainting signals, it's a solid tool that deserves a place in a harmonic trader's arsenal.
+This indicator does one thing — identify equal-leg OABC patterns — and it does it without repainting the final signal. It is not a complete trading system and will not generate results on its own. As a pattern scanner with confirmation-based signals, it is a reasonable addition to a harmonic trader's toolkit.
 
-The lack of volume integration and limited alert customization keep it from being truly exceptional. Still, for the price of a monthly subscription, it's one of the better pattern-detection tools on TradingView — especially if you've been burned by repainting indicators before.
+The lack of volume integration and limited alert customization keep it from being exceptional. Still, for the price of a monthly subscription, it is one of the more focused pattern-detection tools on TradingView — particularly for traders who have been burned by repainting indicators before.
 
-**⭐ 4/5** — Recommended for serious harmonic and swing traders. Beginners, learn the patterns first.
+**4/5** — Recommended for serious harmonic and swing traders. Beginners should learn the patterns first.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

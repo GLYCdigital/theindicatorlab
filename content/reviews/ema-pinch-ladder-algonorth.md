@@ -17,81 +17,106 @@ categories:
 rating: 4
 description: "Ema_Pinch_Ladder_Algonorth review: a multi-EMA trend tool that visualizes momentum compression and expansion. Tested settings, entry logic, and honest pros and cons."
 tv_script_url: "https://www.tradingview.com/script/52m4Z0Yo-EMA-Pinch-Ladder-AlgoNorth/"
+sources: ["https://www.tradingview.com/script/52m4Z0Yo-EMA-Pinch-Ladder-AlgoNorth/"]
 ---
-Most trend indicators on TradingView are just a moving average with a coat of paint. "Ema_Pinch_Ladder_Algonorth" is not that — but it's also not the revolution its name implies. What you actually get is a ladder of EMAs that visually "pinch" together during consolidation and fan apart when a trend commits. That single behavior is the whole product, and it's more useful than it sounds.
+Most trend indicators on TradingView are just a moving average with a coat of paint. EMA Pinch Ladder is not that — but it's also not the revolution its name implies. What it actually is: a study that watches a stack of six EMAs, detects when they compress into a tight band, and then measures how far price travels once they fan apart. That single behavior is the whole product.
 
 ## What it actually does
 
-The script plots a stack of exponential moving averages — a fast one, a slow one, and several in between — and the spacing between them is the signal. When the EMAs compress into a tight band, the indicator renders a "pinch," which is essentially the market telling you it's coiled. When they spread, you get a "ladder" — a clean, ordered stack of lines all leaning the same direction.
+The script plots six exponential moving averages — 8, 13, 21, 34, 55 and 89 by default — with source fixed to close. The gap between the highest and lowest EMA is divided by a 100-bar ATR, so the "pinch width" is measured as a multiple of ATR, not a price distance. That one design choice is why the same settings carry across symbols and timeframes.
 
-I ran this on a MACD pane configuration against BTCUSD and EURUSD on the 15-minute and 4-hour. If you've used a standard EMA ribbon, you already understand the mechanic. What Algonorth adds is the visual grading: the ladder rungs make it obvious which EMAs have crossed and which are lagging. That's genuinely easier to read than a flat ribbon where everything blends into a smear.
+A pinch starts when the gap drops under the pinch width and ends once it opens past the width plus a release buffer. The buffer exists so a pinch hovering on the line doesn't get chopped into several smaller ones. Once a pinch ends, the script measures the full high-to-low range of the following 20 bars (adjustable), divided by the ATR as it stood at the release — so the outcome is expressed in ATRs, with the ATR frozen at the release bar.
 
-## The pinch is the part that matters
+The visual layer: cyan zones box finished pinches, pink zones cover the measured window after each release, a white thread tracks a pinch as it forms bar by bar, a diamond marks the bar where a pinch of at least the minimum length ended, and a ribbon glow restates how neatly the stack is lined up.
 
-Here's the honest take — the ladder itself is fine, but the pinch detection is why you'd install this. As shown in the chart above, the compression phase draws attention to the exact bars where a breakout is likely, before price has moved. That's a leading behavior, which is rare in trend tools that usually just confirm what already happened.
+## The measurement is the part that matters
 
-The catch: a pinch tells you *something* is coming, not *which direction*. You still need price action or a secondary confirmation. Traders who expect the indicator to hand them a direction will be disappointed.
+Most EMA ribbons just show you the lines. This one files every finished pinch onto a ladder by how long it lasted — the default buckets are 1–5, 6–10, 11–20 and 21+ bars — and each row shows the median outcome in ATRs alongside the sample count. There's also an "Any bar" row measuring the same thing from every bar in the recent history, so you have a baseline to compare pinch outcomes against.
 
-## Settings I actually settled on
+On the example panel shown in the source material (ES1! 15m, last bar 2026-09-21 02:30 exchange time, bar #20,799):
 
-Default settings were too noisy on lower timeframes. After a few days of fiddling:
+```
+1–5 bars    6.2×  n=57
+6–10 bars   4.7×  n=57
+11–20 bars  5.3×  n=71
+21+ bars    4.9×  n=103
+Any bar     3.9×  n=3000
+```
 
-- **Fast EMA:** 8 (down from the default 12) — reacts faster to the pinch resolution
-- **Slow EMA:** 34 — keeps the ladder from over-spreading on intraday noise
-- **Ladder count:** 5 rungs — anything more clutters the pane without adding information
-- **Pinch threshold:** tighten it by ~20% from default if you trade crypto; loosen it on FX where ranges are narrower
-- **Timeframe:** 1H and above is where this earns its keep. Below 15m the pinch fires constantly and stops meaning anything.
+Read it as: after the 57 pinches lasting 1–5 bars, price travelled a median of about 6.2 ATRs over the 20 bars from the release. On that particular chart, every pinch row sits above the "Any bar" baseline.
 
-If you scalp the 1-minute, this isn't your tool. Set it and forget it on the 4H and it behaves.
+Those numbers are specific to that symbol, timeframe and loaded history. They shift as new bars arrive. The script's own documentation flags that part of any gap between pinch rows and the baseline is built into how the window is chosen — each measurement starts on the bar where the stack opened up, so some of the extra movement comes from the window definition rather than the pinch itself. The "Any bar" row is there for exactly that comparison.
 
-## How I'd trade it
+## What a pinch does and doesn't tell you
 
-The logic that held up in testing:
+A pinch tells you the stack has compressed. It does not tell you which way price will resolve. The outcome is the full high-to-low range of the window, so a trend, a reversal and wide chop can all print the same number. It measures distance, not direction.
 
-1. Wait for the pinch — EMAs compressed, price flat.
-2. Let the ladder begin to fan. Enter on the *second* rung separating, not the first. The first separation is often a fakeout.
-3. Stop below the pinch low (long) or above the pinch high (short).
-4. Trail using the slow EMA as your dynamic exit.
+## Settings and How to Tune Them
 
-The second-rung rule alone filtered out a meaningful chunk of the whipsaws I saw when entering on first separation. That's the kind of detail the indicator won't tell you — you find it by watching it fail a few times.
+The settings are grouped by function, and the source material describes them conceptually rather than prescribing values:
+
+- **Stack** — the six EMA lengths and the ATR length used as the yardstick.
+- **Pinch** — the pinch width, the release buffer, the number of outcome bars measured after release, and the minimum bars required before a pinch is drawn (this last one also acts as the threshold for the two pinch alerts).
+- **Length buckets** — three ladder boundaries, read in ascending order regardless of the order you enter them, plus the minimum samples required before a row displays a figure. A row stays blank until it holds 5 samples.
+- **Stack appearance** — palettes including a Neutral option that uses one hue for both orders so the stack can't be confused with your candle colours, plus custom colours, glow strength and EMA line visibility.
+- **Zones and tags** — show or hide each element, colours, fills, how many zones remain on the chart, edge width and tag size.
+- **Panel** — full or compact rows, five positions and text size. The header shows the live settings; the last row shows bar time and count.
+
+Everything is measured in ATRs, so the same parameter values are intended to behave similarly across symbols and timeframes. The script's documentation does not recommend one configuration over another — the honest approach is to load it on your own market and read what your chart says.
+
+## How it's meant to be used
+
+The documented uses are mostly exploratory rather than prescriptive:
+
+- Test the squeeze idea on your own symbol and timeframe before building anything on it.
+- Get a feel for how much room price has needed after pinches on that specific chart.
+- Compare markets and timeframes without changing settings, since everything is normalised to ATR.
+- Watch the State row, which shows live whether the stack is pinched right now and for how many bars.
+
+Alerts fire on four events: pinch reached minimum length, pinch released, stack in bull order, and stack in bear order.
 
 ## Pros and cons
 
 **Pros:**
-- Pinch detection is genuinely leading, not lagging
-- The ladder visualization beats a flat ribbon for readability
-- Works cleanly on higher timeframes without repainting (I watched it live for two sessions)
-- Lightweight — no settings bloat
+- Normalising pinch width and outcome to ATR means settings carry across symbols and timeframes.
+- Median, not average, is used per row — a single wild release can't dominate a bucket.
+- Sample counts are shown on every row.
+- The "Any bar" baseline gives an honest reference point rather than leaving pinch outcomes in isolation.
+- No repainting: every pinch decision happens on a closed bar, and zones and tags are created once and never moved or recoloured.
+- No external data or higher-timeframe fetches — every number comes from the bars on the chart.
 
 **Cons:**
-- No directional bias from the pinch itself; you supply that
-- Noisy and unreliable under the 15-minute timeframe
-- The name oversells it — "Algonorth" suggests proprietary magic that isn't there
-- No alerts out of the box for pinch events, which is an odd omission for a trend tool
+- Measures distance, not direction. You supply the directional read.
+- Zones are historical: they're drawn once a pinch has played out. While a pinch is running, the live signs are the thread and the State row.
+- Part of any measured gap is built into the window definition, as the script itself acknowledges.
+- Samples overlap. "Any bar" includes the pinch bars themselves, and back-to-back pinches can share bars, so n counts windows rather than independent samples. Each row keeps its most recent 500 pinches; "Any bar" keeps the last 3,000 bars.
+- It's a measuring tool, not a strategy — no entries, no exits, not a backtest.
+- Heikin Ashi and Renko use synthetic bars, which the panel flags when loaded.
 
 ## Who it's for
 
-Swing traders on the 1H to daily who want an early heads-up on compression before a move. Discretionary traders who pair it with structure or volume. Not for scalpers, not for anyone wanting a one-click signal, and not for beginners who'll misread the pinch as a directional call.
+Discretionary traders who already have a directional process and want an objective read on how compressed their market is and how far it has historically travelled after similar compressions. It is not for anyone wanting a one-click signal.
 
 ## Alternatives worth a look
 
-If you want the same compression idea with built-in direction, the classic **Bollinger Band squeeze** (or a TTM Squeeze script) does more of the work for you. If you just want a clean EMA stack, a plain **EMA ribbon** is lighter and free of the branding. This indicator sits between the two — more visual than a ribbon, less decisive than a squeeze.
+If you want the compression idea with built-in direction, a Bollinger Band squeeze or a TTM Squeeze script does more of the directional work for you. If you just want a clean EMA stack, a plain EMA ribbon is lighter. This indicator sits between the two — more measured than a ribbon, less decisive than a squeeze.
 
 ## FAQ
 
-**Does it repaint?** No. The EMAs are calculated on close and the pinch markers stayed put when I re-checked historical bars.
+**Does it repaint?** No. Every pinch decision happens on a closed bar, and zones and tags are created once and never moved or recoloured. The live readouts are the panel's State and Stack width rows plus the EMA lines on the forming bar, which settle at the close like any moving average.
 
-**Can I use it for crypto?** Yes, but tighten the pinch threshold — crypto ranges compress harder and the default fires late.
+**Does it give buy/sell signals?** No. It flags conditions and measures past outcomes. Entry logic is yours to build.
 
-**Does it give buy/sell signals?** No. It flags conditions, not entries. You build the entry logic.
+**Can I use it on any symbol or timeframe?** The script is designed so the same settings carry across symbols and timeframes because everything is normalised to ATR. That said, the source material is explicit that your numbers will differ with the symbol, timeframe and history loaded — so the honest answer is to load it and read your own panel.
 
-**Best timeframe?** 1H and up. It degrades fast on lower timeframes.
+**What's the warm-up requirement?** About 100 bars. Overnight and regular hours are counted together, and "Last bar" shows exchange time.
 
 ## Verdict
 
-Ema_Pinch_Ladder_Algonorth does one thing well: it makes EMA compression visible and tradeable. That's a real edge for swing traders who already have a discretionary process. It's not a signal generator, the name promises more than the code delivers, and it falls apart intraday. But for what it does — cleanly, without repainting — it earns its place on a higher-timeframe chart.
+EMA Pinch Ladder does one thing and does it cleanly: it makes EMA compression visible and files every past pinch onto a ladder so you can see how far price has historically travelled after similar setups on your chart. It measures distance, not direction, and it is explicitly a history book rather than a crystal ball. For traders who already have a directional process and want an objective compression read, that's a real contribution. For anyone expecting signals, it will disappoint.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — install it if you trade the 1H+ and want an early read on coiled markets. Skip it if you need direction handed to you.
+**Rating: ⭐⭐⭐⭐ (4/5)** — install it if you want an honest, non-repainting measurement of what happens after EMA compression on your market. Skip it if you need direction handed to you.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

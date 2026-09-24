@@ -16,84 +16,80 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Real trader tests Breakout Scanner on TradingView: see how it flags key support/resistance breaks, noise filters, and best settings for scalping vs swing trading."
+grounding: "none (no source found)"
 ---
-
 **What This Indicator Actually Does**
 
-Breakout Scanner isn't some AI that predicts the future—it's a multi-timeframe detection tool that scans for price breaking above or below defined support/resistance levels, pivot highs/lows, or moving average slopes. The chart above shows it catching a clean break of a descending trendline on BTC/USDT with a green alert marker. It doesn't repaint, which is rare for breakout tools. Instead, it confirms the break after the candle closes (or after a user-set number of ticks), so you're not chasing ghosts.
+Breakout Scanner is a multi-timeframe detection tool that scans for price breaking above or below defined support/resistance levels, pivot highs/lows, or moving average slopes. It confirms the break after the candle closes (or after a user-set number of ticks), so signals are not issued mid-candle. That confirmation logic matters: it means the tool is designed around completed breaks rather than intrabar spikes.
 
 **Key Features That Set It Apart**
 
-- **Noise filter slider** — I cranked this to medium (default is low). Low gave me false triggers on every 1-minute wick. Medium cleaned it up nicely without missing real breakouts.
-- **Multi-timeframe confirmation** — You can set it to only alert when two timeframes (e.g., 15m and 1h) align. This halved my false signals.
-- **Volume surge detection** — It optionally requires a volume spike relative to the 20-period average. I kept this on for day trading; off for swing trading because volume confirmation lags on lower timeframes.
-- **Custom break types** — Choose between "range break," "trendline break," or "moving average slope break." I tested all three: range break worked best for consolidation zones, trendline break for reversals.
+- **Noise filter slider** — A sensitivity control that governs how much price movement is required before a break registers. Lower settings catch more breaks but also more marginal ones; higher settings filter out weaker attempts at the cost of some responsiveness.
+- **Multi-timeframe confirmation** — The indicator can be set to alert only when two timeframes align, which reduces the number of standalone signals it fires.
+- **Volume surge detection** — Optionally requires a volume spike relative to a moving average of volume before a break qualifies. This adds a participation check to the price condition.
+- **Custom break types** — Choose between "range break," "trendline break," or "moving average slope break." Each defines the break differently, so the setting should match the structure you actually trade.
 
-**Best Settings (What I Actually Use)**
+**Settings and How to Tune Them**
 
-After 50+ trades across forex, crypto, and stocks:
-
-- **Timeframe:** 15-minute for intraday, 1-hour for swing. Anything below 5 minutes produces too many false breaks.
-- **Break type:** Range break (20-period high/low) with 1.5 ATR extension filter. This avoids fakeouts on 0.1% moves.
-- **Volume filter:** On for crypto and stocks, off for forex (forex volume data is sketchy).
-- **Confirmation candles:** 2 candles. One candle breaks the level, the second retests and holds. This alone improved my win rate from 48% to 62%.
-- **Alert style:** Push notification + sound. The indicator sends alerts to TradingView's alert system, so you can set it and walk away.
+- **Timeframe:** Intraday and swing usage are both supported. Very short timeframes produce more marginal breaks, so the timeframe choice should reflect how much noise you're willing to screen out.
+- **Break type:** Range break, trendline break, or moving average slope break. Range break suits consolidation zones; trendline break suits reversal structures.
+- **Volume filter:** Can be enabled or disabled. It is most meaningful on instruments with reliable volume data and least meaningful where volume reporting is thin.
+- **Confirmation candles:** Controls how many closed candles must confirm the level before a signal is issued. More confirmation candles mean fewer, later signals; fewer mean earlier, more frequent ones.
+- **Alert style:** Signals route through TradingView's alert system, so notification delivery is handled by the platform rather than the indicator itself.
 
 **How to Use It for Entries and Exits**
 
-- **Entry:** When a green "BUY" marker appears *and* the second confirmation candle closes above the level. I enter on the next candle open with a limit order at the break level, not market—reduces slippage.
-- **Stop loss:** 1 ATR below the breakout level (for longs). The indicator doesn't auto-plot this, so I add it manually.
-- **Take profit:** First target = 2x risk (i.e., 2 ATR). Second target = prior swing high/low. The indicator gives no TP suggestion—that's your job.
-- **Trailing stop:** Once price moves 1.5 ATR in your favor, trail by 0.5 ATR. I eyeball this; no built-in trail.
+- **Entry:** Wait for the marker to appear *and* for the confirmation candle to close beyond the level. Entering at the break level with a limit order rather than at market reduces slippage.
+- **Stop loss:** Placed beyond the breakout level using an ATR-based distance. The indicator does not plot this automatically, so it must be added manually.
+- **Take profit:** The indicator offers no target suggestion. Targets have to come from your own structure read — prior swing highs/lows, measured moves, or a fixed multiple of risk.
+- **Trailing stop:** No built-in trailing logic. Any trailing has to be managed manually.
 
 **Honest Pros and Cons**
 
 **Pros:**
-- No repaint (confirmed with replay mode on 100+ candles).
-- Noise filter is genuinely useful—most scanners lack this.
-- Works across asset classes (tested on crypto, forex, and NYSE).
-- Lightweight; doesn't slow down my TradingView even with 20+ symbols.
+- Confirms breaks on candle close rather than intrabar, which avoids signals that later vanish.
+- The noise filter is a genuine differentiator — most breakout scanners lack a comparable sensitivity control.
+- Applies across asset classes.
+- Lightweight enough to run on multiple charts without slowing the platform.
 
 **Cons:**
-- No auto-stop-loss plotting. For a paid-ish indicator, that's a miss.
-- No multi-asset scanner—you have to add it to each chart manually.
-- Volume filter is useless for forex (as expected, but worth noting).
-- No backtesting statistics built in. You'll need to track manually or use another tool.
+- No automatic stop-loss plotting.
+- No multi-asset scanner — the indicator has to be added to each chart individually.
+- The volume filter adds little on instruments with unreliable volume data.
+- No built-in backtesting statistics; performance tracking has to be done externally.
 
 **Who It's Actually For**
 
-- **Day traders** who scalp breakouts on 15-min charts (best use case).
-- **Swing traders** who want a clean entry signal on 1h/4h.
-- **Crypto traders** who need low-latency alerts without repaint.
-- **Not for** complete beginners—you still need to understand support/resistance and risk management.
+- **Day traders** working breakouts on intraday charts.
+- **Swing traders** who want a confirmed entry signal on higher timeframes.
+- **Crypto traders** who need alert delivery without signals disappearing after the fact.
+- **Not for** complete beginners — you still need to understand support/resistance and risk management to use the output.
 
 **Better Alternatives (If Any)**
 
-- **Better for scalpers:** *Killzone Breakout* — faster alerts but repaints occasionally. I'd still pick Breakout Scanner for reliability.
-- **Better for multi-asset scanning:** *Market Scanner Pro* — scans 50+ symbols at once but costs more and has a steeper learning curve.
-- **Free alternative:** TradingView's built-in "Breakout" alert on a horizontal line. It's manual but does the same thing minus the noise filter.
+- **Better for scalpers:** *Killzone Breakout* — faster alerts, but it repaints.
+- **Better for multi-asset scanning:** *Market Scanner Pro* — scans many symbols at once, but costs more and has a steeper learning curve.
+- **Free alternative:** TradingView's built-in breakout alert on a horizontal line. Manual, but it covers the basic function minus the noise filter.
 
-**FAQ (Real Questions from My Discord)**
+**FAQ**
 
 *Q: Does it repaint?*
-A: I tested 200 candles in replay. Green markers appear only after the confirmation candle closes. No repaint. The "tick count" option adds a 1-3 tick delay for faster alerts but still doesn't repaint—it just confirms earlier. I keep it at 2 ticks.
+A: Signals are designed to appear only after the confirmation candle closes, so the markers are not intended to move once printed.
 
 *Q: Can I use it for crypto futures?*
-A: Yes, I use it on BTCUSDT and ETHUSDT perpetuals. Works fine. The volume filter actually helps with futures because volume data is cleaner than spot.
+A: Yes. The volume filter tends to be more useful on futures than on spot because the volume data is cleaner.
 
 *Q: Why do I get false signals during news events?*
-A: Turn off the indicator 5 minutes before major news (NFP, FOMC, CPI). The noise filter can't handle sudden volatility spikes. I learned this the hard way.
+A: The noise filter is not built to handle sudden volatility spikes. Disabling the indicator around major scheduled releases avoids signals generated by the spike rather than by structure.
 
 *Q: Does it work on 1-minute charts?*
-A: Technically yes, but expect 70%+ false signals. Stick to 5-minute minimum.
+A: It will run, but breaks on very short timeframes are far more likely to be marginal. Higher timeframes give the confirmation logic more to work with.
 
 **Final Verdict**
 
-Breakout Scanner is a solid, no-repaint tool that does one thing well: confirm breakouts with a noise filter. It won't make you profitable by itself—you still need a stop loss, a TP plan, and common sense about liquidity. But for $X (usually around $30-$50 one-time), it's a time-saver that cuts through the noise. I'd give it 4 stars because it lacks auto-stop plotting and multi-symbol scanning, but for the core function, it delivers.
+Breakout Scanner is a focused tool that does one thing: confirm breakouts with a noise filter and close-based validation. It won't make you profitable by itself — you still need a stop loss, a target plan, and judgment about liquidity. Its main gaps are the absence of auto-stop plotting and multi-symbol scanning, but for the core function it delivers.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

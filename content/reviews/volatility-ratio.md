@@ -16,91 +16,91 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Volatility_Ratio review: a trend-strength gauge that filters noise. Tested settings, entry logic, pros/cons, and who should use it."
+grounding: "none (no source found)"
 ---
-Let's cut through the noise. Volatility_Ratio isn't another lagging moving average crossover dressed up with a fancy name. It's a trend-strength filter that measures the relationship between price movement and its own volatility. The core idea: when price moves faster than its average volatility, you have a real trend. When it doesn't, you're looking at chop.
+# Volatility_Ratio Review
 
-I ran this on the MACD chart shown above — pairing it with the classic momentum oscillator to see if it actually adds anything. Spoiler: it does, but only if you use it correctly.
+Volatility_Ratio isn't another lagging moving average crossover dressed up with a fancy name. It's a trend-strength filter that measures the relationship between price movement and its own volatility. The core idea: when price moves faster than its average volatility, you have a real trend. When it doesn't, you're looking at chop. Pairing it with a classic momentum oscillator like MACD is a common way to see whether it adds anything to a setup you already run.
 
 ## What It Actually Does
 
 The indicator calculates a ratio and plots it as a line with a signal trigger. When the ratio spikes above a threshold, volatility is expanding in a directional way — that's your trend signal. When it collapses below, volatility is contracting, meaning the market is either coiling or just drifting sideways. The built-in moving average of the ratio smooths out the noise and gives you a secondary confirmation.
 
-What I appreciate is that it doesn't repaint. Once a bar closes, the value is fixed. That alone puts it ahead of half the trend indicators on TradingView.
-
 ## Key Features That Matter
 
-First, the threshold levels are adjustable. Most similar tools hard-code their zones, which is useless across different timeframes and assets. Here you can set your own expansion and contraction levels based on what you're trading.
+First, the threshold levels are adjustable. Many similar tools hard-code their zones, which is awkward across different timeframes and assets. Here you can set your own expansion and contraction levels based on what you're trading.
 
-Second, the signal line acts as a dynamic filter. In the chart above, you can see how the ratio line crossing above its average consistently precedes MACD histogram expansions. That's not a coincidence — it's measuring the volatility expansion that momentum indicators need to produce meaningful signals.
+Second, the signal line acts as a dynamic filter. In a typical setup, the ratio line crossing above its average precedes MACD histogram expansions. That isn't a coincidence — it's measuring the volatility expansion that momentum indicators need to produce meaningful signals.
 
-Third, it works on any timeframe. I tested it on 1-minute scalps and daily swing trades. The concept scales because volatility is relative, not absolute.
+Third, the concept is timeframe-agnostic in principle. Volatility is relative, not absolute, so the same logic can be applied across different chart intervals, though the responsiveness of the ratio will vary with the timeframe you choose.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After stress-testing across BTC, EUR/USD, and S&P 500 futures, here's what worked:
+- **Length** — the lookback for the volatility ratio. Shorter values produce more whipsaws; longer values lag behind the actual move. Tune this to the timeframe you trade rather than treating any single value as universal.
+- **Signal MA** — the moving average applied to the ratio. It balances responsiveness against noise reduction. Lower timeframes typically call for a shorter signal MA to stay responsive; higher timeframes can afford a longer one.
+- **Threshold levels** — the expansion and contraction boundaries. These are not magic numbers; they act as filters that screen out the bulk of false signals while still catching meaningful moves. Set them according to the asset and timeframe you're working with.
 
-- **Length: 20** — default is fine. Shorter values (10-14) create too many whipsaws. Longer values (30+) lag behind the actual move.
-- **Signal MA: 10** — this gives a good balance between responsiveness and noise reduction. Use 15 if you're on lower timeframes.
-- **Threshold: 1.5 for expansion, 0.5 for contraction** — these aren't magic numbers, but they filter out the bulk of false signals while catching meaningful moves.
-
-The most reliable setup I found was combining the ratio crossing above 1.5 with the signal MA in an uptrend (price above the 200 EMA). That combination caught strong trends early without the usual false starts.
+The most consistent use is combining a ratio cross above the expansion threshold with the signal MA confirming direction, in the context of an established trend (for example, price above a long-term moving average). That combination tends to catch strong trends earlier without the usual false starts.
 
 ## How to Use It — The Logic That Makes Sense
 
-Here's the approach that actually worked in my testing:
+**Entry:** Wait for the volatility ratio to cross above the expansion threshold AND the signal line to confirm. If you're long, the ratio should be rising while price makes higher highs. Avoid entering on the first cross — wait for a pullback to the signal line or a retest of a key level.
 
-**Entry:** Wait for the volatility ratio to cross above the 1.5 threshold AND the signal line to confirm. If you're long, the ratio should be rising while price makes higher highs. Don't enter on the first cross — wait for a pullback to the signal line or a retest of a key level.
+**Exit:** When the ratio crosses back below the signal line, that's a cue to reduce. The nuance: if the ratio drops below the midpoint while price is still trending, that's consolidation, not reversal. Hold through it. Exit fully only when the ratio drops below the contraction threshold.
 
-**Exit:** When the ratio crosses back below the signal line, that's your cue to reduce. But here's the nuance — if the ratio drops below 1.0 while price is still trending, that's consolidation, not reversal. Hold through it. Exit fully only when the ratio drops below 0.5.
-
-**Filter:** If you're using MACD or RSI, only take their signals when the volatility ratio confirms direction. The chart above shows this clearly — MACD crossovers that aligned with the ratio expansion were the profitable ones. The others were noise.
+**Filter:** If you're using MACD or RSI, only take their signals when the volatility ratio confirms direction. MACD crossovers that align with ratio expansion tend to be the meaningful ones. The others are noise.
 
 ## Pros & Cons
 
 **Pros:**
-- No repainting — reliable backtesting
-- Adjustable thresholds that adapt to any market
+- Adjustable thresholds that adapt to different markets and timeframes
 - Works as a standalone trend filter or as a confirmation tool
 - Clear visual representation of volatility expansion and contraction
 
 **Cons:**
 - Not a standalone strategy — you need a direction bias from price action or another indicator
 - The ratio can stay elevated for extended periods in strong trends, making it less useful for timing entries
-- Default settings are mediocre — you must tune them for your market and timeframe
+- Default settings may need tuning for your market and timeframe
 
 ## Who It's For
 
-This is for traders who already have a system but struggle with filtering bad signals. If you're using MACD, RSI, or moving averages and getting chopped up in ranging markets, this will help. It's also great for trend followers who want a volatility-based confirmation that doesn't repaint.
+This is for traders who already have a system but struggle with filtering bad signals. If you're using MACD, RSI, or moving averages and getting chopped up in ranging markets, this can help. It's also suited to trend followers who want a volatility-based confirmation layer.
 
 It's not for beginners looking for a "buy/sell" arrow indicator. It requires you to understand what volatility expansion means and how to combine it with your existing approach.
 
 ## Alternatives Worth Considering
 
-- **Supertrend** — better for pure trend direction, worse at detecting the strength of a move
+- **Supertrend** — better for pure trend direction, less focused on detecting the strength of a move
 - **ATR Trailing** — excellent for exit management, but doesn't tell you when a trend is starting
 - **Keltner Channels** — similar volatility concept, but the visual signal is less clear for trend strength
 
 ## FAQ
 
-**Does this indicator repaint?**
-No. Values are calculated on closed bars and stay fixed.
-
 **Can I use it for crypto?**
-Yes, and it actually works better there because crypto has clear volatility expansion phases.
+Yes — crypto tends to have clear volatility expansion phases, which suits the ratio's design.
 
 **What's the best timeframe?**
-I found the 15-minute to 4-hour range ideal. Lower timeframes produce too much noise even with adjusted thresholds.
+The concept scales across timeframes because volatility is relative, but lower timeframes produce more noise even with adjusted thresholds. Tune the length and thresholds to the interval you trade.
 
 **Does it work alone?**
-Technically yes, but you'll get a lot of false signals. Pair it with a trend filter like the 200 EMA.
+Technically yes, but expect a lot of false signals. Pair it with a trend filter such as a long-term moving average.
 
 ## Final Verdict
 
-Volatility_Ratio earns a solid 4 stars. It's not flashy, but it does one thing well — telling you when a trend has real momentum behind it. The adjustable thresholds and no-repaint design make it genuinely useful for active traders who want to filter their existing signals. It won't replace your main strategy, but it will make it significantly better.
+Volatility_Ratio does one thing well — telling you when a trend has real momentum behind it. The adjustable thresholds make it genuinely useful for active traders who want to filter their existing signals. It won't replace your main strategy, but it can sharpen it.
 
 If you're tired of indicators that look great on your chart but produce garbage signals in live trading, this is worth adding. Just don't expect it to do all the work for you.
 
-⭐⭐⭐⭐ (4/5)
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volatility** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

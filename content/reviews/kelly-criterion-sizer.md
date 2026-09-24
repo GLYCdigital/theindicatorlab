@@ -16,125 +16,94 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Kelly_Criterion_Sizer calculates optimal position size using win rate & risk/reward. Honest review with settings, pros/cons, and alternatives."
+grounding: "none (no source found)"
 ---
-
-The Kelly Criterion is a mathematical betting formula that tells you exactly how much of your capital to risk per trade. The problem? Most traders misuse it, overbet, and blow up. This indicator *tries* to fix that.
-
-I’ve tested this thing on 50+ charts across forex, crypto, and stocks. Here’s what I found.
-
----
+The Kelly Criterion is a mathematical betting formula for sizing positions based on edge and odds. It is also widely misused: applied at full strength to real markets, it tends to produce position sizes that most accounts cannot survive. This indicator attempts to address that problem.
 
 ### What This Indicator Actually Does
 
-Kelly_Criterion_Sizer takes your historical trade data (win rate, average win, average loss) and spits out a recommended position size as a percentage of your account. It’s not a signal generator. It’s a risk management tool.
+Kelly_Criterion_Sizer takes historical trade statistics — win rate, average win, average loss — and outputs a recommended position size as a percentage of account equity. It is not a signal generator. It is a risk management tool.
 
-You feed it your stats manually or let it track them automatically if you use TradingView’s strategy tester. The output is a clean number on the chart: “Kelly %: 12.5%” or “Fractional Kelly %: 6.25%.”
+You either enter your stats manually or let the indicator read them from TradingView's strategy tester. The output is displayed on the chart as a percentage figure, with both a full Kelly value and a fractional Kelly value.
 
-**Key difference from other position sizers:** It uses the actual Kelly formula — not a fixed risk percentage. This is mathematically aggressive by default, so the indicator includes a “Fractional Kelly” slider (0.1x to 0.5x) to tone it down to something a human can actually stomach.
+**Key difference from other position sizers:** it applies the Kelly formula rather than a fixed risk percentage. Full Kelly is mathematically aggressive by design, so the indicator includes a fractional Kelly multiplier to scale the output down to a level a trader can realistically sustain.
 
----
+### Key Features
 
-### Key Features That Set It Apart
+- **Automatic win rate and risk/reward calculation** from strategy tester results.
+- **Fractional Kelly multiplier** — scales the raw Kelly output down to a more conservative figure.
+- **Visual display** — shows the recommended position size on the chart in a label.
+- **Alert integration** — can trigger a notification when the Kelly percentage changes significantly, such as after a losing streak.
+- **No repainting.** The displayed value reflects the inputs as calculated.
 
-- **Automatic win rate & risk/reward calculation** from your strategy tester results.
-- **Fractional Kelly multiplier** — default 0.25x. This is smart because full Kelly on real markets will destroy you.
-- **Visual display** — shows the recommended position size directly on the chart in a label.
-- **Alert integration** — can trigger a notification when your Kelly % changes significantly (e.g., after a losing streak).
-- **No repainting.** What you see is what you get.
+### Settings and How to Tune Them
 
----
+The fractional Kelly multiplier is the setting that matters most. It scales the raw Kelly figure, and it is the difference between a theoretically optimal number and one you can actually trade. Lower multipliers reduce position size; higher multipliers move you closer to full Kelly and its corresponding drawdown risk. There is no universally correct value — it depends on your tolerance for drawdown and the volatility of what you trade.
 
-### Best Settings (Tested on BTC/USD 1H, 2025-2026)
+The indicator can read statistics directly from the strategy tester, or you can supply win rate and average risk/reward manually. If you enter them manually, the accuracy of the output depends entirely on the accuracy of those inputs.
 
-After running it on a 1H mean reversion strategy with a 55% win rate and 1:2 R/R:
+### How to Use It
 
-| Setting | Default | My Recommended |
-|--------|---------|----------------|
-| Fractional Kelly | 0.25 | 0.15 (for crypto) / 0.30 (for FX) |
-| Use Strategy Tester | True | True |
-| Max Risk % | 20 | 10 |
-| Minimum Win Rate | 40% | 50% |
+This is not an entry signal. You still need your own strategy.
 
-The **Fractional Kelly** is the most important setting. Crypto is volatile — 0.15x kept me in the game after a 5-loss streak. For forex, 0.30x worked fine because the drawdowns are smaller.
+1. **Backtest your strategy** over a meaningful sample. Get your win rate and average R/R.
+2. **Input those stats** into the indicator's settings, or let it read from the strategy tester.
+3. **Set your fractional Kelly multiplier** based on your risk tolerance.
+4. **Take the position size** it shows. A reading of a given percentage means risking that percentage of your account on the trade.
+5. **Re-calculate periodically.** Win rates drift, and stale inputs produce stale sizing.
 
----
+**Exit:** The indicator does not help here. You manage stop loss and take profit as usual.
 
-### How to Use It for Entries and Exits
-
-This is not an entry signal. You still need your own strategy. Here’s the workflow:
-
-1. **Backtest your strategy** over at least 50 trades. Get your win rate and average R/R.
-2. **Input those stats** into the indicator’s settings (or let it auto-read from the strategy tester).
-3. **Set your Fractional Kelly** — start at 0.25x, then adjust based on your risk tolerance.
-4. **Take the position size** it shows. For example, if it says “6.25%,” that means risk 6.25% of your account on this trade.
-5. **Re-calculate** after every 20-30 trades. Win rates drift.
-
-**Exit:** Doesn’t help here. You still manage your stop loss and take profit as usual.
-
----
-
-### Honest Pros and Cons
+### Pros and Cons
 
 **Pros:**
-- Forces you to think about risk management mathematically.
-- Fractional Kelly slider prevents the “gambler’s ruin” scenario.
-- Works with any timeframe or asset — purely based on your stats.
+- Forces risk management to be handled mathematically rather than by feel.
+- The fractional Kelly multiplier prevents the gambler's ruin outcome that full Kelly invites.
+- Not tied to a timeframe or asset class — the output derives from your statistics.
 - Clean, unobtrusive display.
 
 **Cons:**
-- **Useless without a proven strategy.** If your win rate is under 50%, Kelly will tell you to risk 0% or negative — which means you shouldn’t trade. That’s correct, but frustrating.
-- **No dynamic adjustment.** It doesn’t update after every trade in real-time unless you manually refresh. You have to re-run the strategy tester.
-- **Overly aggressive for new traders.** Even at 0.25x fractional, a 4-loss streak can wipe 20% of your account if you’re not careful.
-- **No position sizing for multi-leg strategies** (e.g., hedging). It assumes single-direction trades.
+- **Useless without a proven strategy.** If your win rate is low or your average loss exceeds your average win, Kelly returns zero or negative — meaning you should not be trading that system. That is correct behavior, but it is not encouraging.
+- **No dynamic adjustment.** It does not update after every trade in real time; you have to re-run the strategy tester.
+- **Aggressive for new traders.** Even at a fractional multiplier, a losing streak can produce meaningful drawdown if you are not prepared for it.
+- **No position sizing for multi-leg strategies** such as hedges. It assumes single-direction trades.
 
----
-
-### Who It’s Actually For
+### Who It's For
 
 **Verdict:** Intermediate and advanced traders who already have a backtested edge.
 
-- **Good for:** Systematic traders, quants, and anyone who uses a strategy tester.
-- **Bad for:** Beginners who don’t have a track record. Also bad for scalpers who need super-fast recalculations.
-- **Not for:** “I’ll just risk 2% every time” crowd. This is more nuanced.
+- **Good for:** Systematic traders and anyone who works from strategy tester results.
+- **Bad for:** Beginners without a track record, and scalpers who need fast recalculation.
+- **Not for:** Traders who prefer a flat fixed-risk approach.
 
----
+### Alternatives
 
-### Better Alternatives
-
-If Kelly_Criterion_Sizer doesn’t fit, try:
-
-- **Position Size Calculator** by LonesomeTheBlue — simpler, uses fixed risk %, no math required.
+- **Position Size Calculator** by LonesomeTheBlue — simpler, fixed risk percentage, no Kelly math.
 - **Risk & Position Size Calculator** by Robo — includes ATR-based sizing and portfolio heat.
-- **Custom code:** If you’re coding, the Kelly formula is literally 3 lines. You might not need this indicator.
+- **Custom code:** The Kelly formula is short. If you already code, you may not need a dedicated indicator.
 
----
+### FAQ
 
-### FAQ (Real Questions from Traders)
+**Q: Can I use this without a strategy tester?**
+A: Yes. Input your win rate and average R/R manually. The output is only as meaningful as the sample behind those numbers.
 
-**Q: Can I use this without a strategy tester?**  
-A: Yes. Input your win rate and average R/R manually. But if you don’t have at least 50 trades of data, the output is meaningless.
+**Q: What's a "safe" fractional Kelly value?**
+A: There is no universal answer. Lower multipliers reduce risk; higher multipliers approach full Kelly. Never assume a high multiplier is safe just because the formula says it is optimal.
 
-**Q: What’s a “safe” Fractional Kelly value?**  
-A: Start at 0.15x for crypto, 0.25x for stocks, 0.30x for forex. Never go above 0.5x unless you enjoy margin calls.
+**Q: Does it work for options?**
+A: The formula uses win and loss amounts. Options have variable payoffs, so you would need to average your R/R manually. It works, but with less precision.
 
-**Q: Does it work for options?**  
-A: The formula uses win/loss amounts. Options have variable payoffs, so you’d need to average your R/R manually. It works, but it’s less precise.
-
-**Q: Why does it say “0%” even though I have a winning strategy?**  
-A: Check your win rate. If it’s below 50% or your average loss is larger than your average win, Kelly says “don’t bet.” That’s mathematically correct.
-
----
+**Q: Why does it say "0%" even though I have a winning strategy?**
+A: Check your win rate and the relationship between average win and average loss. If the math does not support a positive edge, Kelly returns zero. That is mathematically correct.
 
 ### Final Verdict
 
-Kelly_Criterion_Sizer is a solid, no-nonsense risk management tool. It doesn’t promise moon shots. It tells you exactly how much to risk based on cold math. The fractional Kelly slider saves it from being a blowup device.
+Kelly_Criterion_Sizer is a straightforward risk management tool. It does not generate signals and does not promise returns. It converts your own trade statistics into a position size using a defined formula, with a fractional multiplier to keep the output tradable.
 
-If you have a backtested edge and want to optimize your position sizing, this is worth the install. If you’re still trying to find an edge, skip it — you’ll just get a number that says “go study more.”
+If you have a backtested edge and want position sizing handled systematically, it is worth considering. If you are still searching for an edge, it will only tell you what the math already says.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star off because of the manual refresh requirement. A live-updating version would be 5 stars.
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)**
+One star off for the manual refresh requirement.
 
 ## Go Deeper with The Indicator Lab
 

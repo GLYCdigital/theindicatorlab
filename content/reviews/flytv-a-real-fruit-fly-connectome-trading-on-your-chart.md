@@ -32,7 +32,7 @@ Most trend indicators are variations on the same math — smoothed averages, reg
 
 - **Noise rejection without lag penalty.** On the MACD chart I used, choppy consolidation phases barely moved the line, but the moment real direction established, it caught it. That's rare.
 - **Adaptive coloring.** The line's color isn't a fixed threshold. It recalibrates as the network state shifts, so the same price move can read differently depending on context.
-- **No repainting in my tests.** I checked historical bars against live behavior across several sessions. Signals held once printed. That alone puts it ahead of a lot of "smart" trend indicators.
+- **No repainting noted in the source.** Unlike many "smart" trend tools, nothing in the documentation points to signals vanishing after the fact.
 
 ## Best Settings I Landed On
 
@@ -61,7 +61,7 @@ The indicator also works as a filter. If your primary system says long but the c
 **Cons:**
 - The concept is opaque — you can't easily reason about *why* a signal fired
 - Weak on sub-15-minute charts
-- No built-in alerts on the free tier behavior I tested
+- No built-in alerts on the free tier
 - Documentation is thin; you learn by watching, not reading
 
 ## Who It's For
@@ -74,7 +74,7 @@ If you want transparency over novelty, **Supertrend** does similar trend-flip wo
 
 ## FAQ
 
-**Does it repaint?** Not in my testing across multiple sessions and timeframes. Signals held on historical bars.
+**Does it repaint?** The source material does not flag repainting — compare historical against live on your own chart before relying on printed signals.
 
 **Can I use it for crypto?** Yes — it's price-agnostic. I'd apply the same timeframe guidance.
 

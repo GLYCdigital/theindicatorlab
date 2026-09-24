@@ -17,81 +17,80 @@ categories:
 rating: 4
 description: "Bullbyte's Footprint_Delta_Auction_Map overlays order flow on trend charts. Honest review of settings, strategy, and whether it beats standard delta tools."
 tv_script_url: "https://www.tradingview.com/script/73u5eagK-Footprint-Delta-Auction-Map-BullByte/"
+sources: ["https://www.tradingview.com/script/73u5eagK-Footprint-Delta-Auction-Map-BullByte/"]
 ---
-I'll be straight with you: most footprint-style indicators on TradingView are either overpriced eye candy or repackaged volume histograms. Bullbyte's Footprint_Delta_Auction_Map sits somewhere in the middle — and that's not a bad thing. After running it on multiple timeframes and instruments, here's what actually matters.
+I'll be straight with you: most footprint-style indicators on TradingView are either overpriced eye candy or repackaged volume histograms. BullByte's Footprint Delta Auction Map sits somewhere in the middle — and that's not a bad thing. Here's what actually matters.
 
 **What it really does**
 
-This indicator combines two things: cumulative delta (buying vs. selling pressure) and auction map logic (showing where price spent the most time with aggressive volume). The result is a clean overlay on your main chart — no separate pane needed. The delta line flows through price action, and the auction zones paint as colored bands. On the MACD chart style you see above, it works surprisingly well because the delta line gives you a second confirmation signal alongside the MACD histogram.
+This is not a delta overlay with zones bolted on. It's an auction-market-theory qualification framework built around four questions asked on each confirmed bar: is there directional pressure, is the candle convincing, is price at a location the market has already respected, and what kind of session is this. Only when those align does it mark a scenario and draw a reference-level map.
 
-The "Auction Map" part is the differentiator. Standard footprint charts show you every tick's volume. This one simplifies it: it identifies high-volume nodes where price historically paused or reversed, then projects those zones forward. That's practical — you get actual supply/demand levels without staring at a messy heatmap.
+The pressure reading comes from a 3-tier delta engine. Tier 3 uses TradingView's native volume footprint via `request.footprint()` and requires a Premium or Ultimate plan on a supported symbol. Tier 2 is the default and reconstructs intrabar pressure from lower-timeframe sub-bars using `request.security_lower_tf()` plus a close-in-range volume heuristic. Tier 1 is a single-bar OHLCV proxy — `buyPressure = (close − low) / range × volume` — and acts as the universal fallback. All three normalize to a bounded -100 to +100 scale before entering the score. The dashboard always shows which tier is active, which matters because the tiers are not statistically equivalent even on the same scale.
 
-**Settings I actually use**
+**How the qualification works**
 
-Default settings are decent but noisy. Here's what I dialed in after two weeks of testing:
+The composite score is `Fingerprint Score × 0.60 + Ladder Score × 0.40`. The fingerprint side combines auction pressure conviction (up to 40 points), candle body and range structure (up to 35 points), and volume/pressure balance magnitude (up to 25 points). The ladder side scores proximity to POC, VAH/VAL, session high/low, prior day high/low, weekly high/low, and configurable round numbers using a triangular decay kernel — `score = 1 − (distance / tolerance)` inside tolerance, zero outside.
 
-- **Delta smoothing:** Set to 5. Default 3 produces too many whipsaws on 5-minute charts.
-- **Auction lookback:** 200 bars. More than that and you're mapping ancient history that no longer matters.
-- **Zone strength threshold:** 70%. This filters out weak zones that just clutter the chart.
-- **Color scheme:** I keep it simple — green/red for delta direction. The default blue/orange is pretty but harder to read at a glance.
+The 60/40 split is a deliberate design choice: location confirms, pressure and structure trigger. When native footprint data is active, the genuine volume-profile references get the highest ladder weights. When it isn't, those weights are reduced so the ladder doesn't treat session-derived proxies as real volume-profile levels. That's a detail most confluence indicators skip.
 
-For swing trading on the 4H chart, the default settings actually work fine. The noise problem is mostly a lower-timeframe issue.
+**What the IB classifier actually changes**
 
-**How I trade with it**
+The Initial Balance classifier compares today's IB range against a rolling median of prior sessions — today is never included in its own median. Wider than 1.25x → Trend Day, threshold raised by 5, Extension scalar 1.15x. Narrower than 0.75x → Balance Day, threshold lowered by 5, Extension scalar 0.85x. Otherwise Neutral Day. This layer adjusts only the threshold and the Extension multiplier — it does not touch the 60/40 composite weights. Signals are also suppressed until the current IB has formed and at least three completed historical IB samples exist.
 
-The setup is straightforward. You want both the delta line and the MACD histogram (since we're on that chart style) to agree. When delta ticks up while MACD turns positive, and price is sitting at an auction zone from the lookback period — that's your long entry. The stop goes below the auction zone low, not just below the swing low. That's the key difference from a standard delta indicator.
+The descriptive text is candid that this is a heuristic regime signal, not a factual market classification. That honesty is worth noting.
 
-For exits, I watch the delta for divergence. If price makes a new high but delta doesn't confirm, that's my signal to tighten the stop. The auction zones work as profit targets too — if there's a zone from 3 days ago sitting above current price, that's likely to act as resistance.
+**Settings and How to Tune Them**
 
-I tested this on BTCUSD, EURUSD, and a few S&P futures contracts. It works best on crypto and futures where volume data is cleaner. Forex volume is essentially tick volume, which makes the auction map less reliable.
+Timeframe defaults are documented. On 5m–15m charts, HTF defaults to 60 with 1m intrabar reconstruction. On 30m–1H, the description suggests considering HTF 240. On 1m charts, leaving Intrabar Reconstruction at the default "1" causes the lower-timeframe request to fall back to Tier 1, because the requested resolution isn't lower than the chart timeframe. Setting Intrabar Reconstruction to a seconds-based resolution on 5m or higher charts can exceed TradingView's intrabar request cap.
 
-**Pros and cons**
+The settings the author flags as frequently changed: Composite Score Requirement (default 58), HTF Resolution (default 60), and Cooldown Period (default 20 bars). The per-market tunables are Round Number Step and the IB Window — on a 15-minute chart the default 6-bar IB window represents 90 minutes.
 
-**Pros:**
-- Clean visual design — no separate pane needed, unlike most delta indicators
-- The auction zones actually hold up as support/resistance levels
-- Low-latency repainting (it's a plot with lookback, so it does repaint, but it converges quickly)
-- Works across timeframes without constant re-tuning
+The defaults intended to rarely need adjustment: ATR inputs, Pressure Normalization Lookback, Sizing Regime Lookback, Auto Sizing Band Lookback, and Level Tolerance % (default 1.2%).
 
-**Cons:**
-- The repainting can mislead if you're not aware of it
-- No alert system built in — you'll need to set price alerts manually
-- Forex traders get degraded performance due to volume quality
-- The documentation in the code is sparse; you'll figure out settings by trial and error
+Advanced toggles: Footprint Engine should stay OFF unless you have the plan and symbol support. Intrabar Reconstruction stays ON by default. Dynamic Extension Sizing, Auto-Derive Sizing Band, and Require Next-Bar Confirmation are the other switches worth knowing.
 
-**Who should install this**
+**Entry, Reaction, Extension, Invalidation**
 
-If you're already using MACD or similar trend confirmation and want to add a volume/delta dimension without cluttering your screen, this is worth the install. It's particularly good for day traders on 15-minute charts and swing traders on 4H. Scalpers on 1-minute charts will find it too slow.
+All four levels are sized as multiples of a shared Sizing Unit, not raw ATR. The Sizing Unit is a percentile-bounded percentage of price, with its band auto-derived from the instrument's own historical ATR-as-percent-of-price distribution (10th and 90th percentiles by default). Entry is the signal bar close. Reaction is Entry ± k1 × Sizing Unit (default k1 = 1.5). Invalidation is Entry ± k3 × Sizing Unit (default k3 = 1.5). Extension uses an effective k2 that is the larger of (k1 + 0.5) and (k2 base × IB scalar × volatility regime scalar) when dynamic sizing is on, or the larger of (k1 + 0.5) and k2 base (default 2.5) when it's off. The volatility scalar clamps current ATR over baseline ATR between 0.8x and 1.6x so a single spike can't produce a runaway target.
+
+The scenario lifecycle runs Pending → Reaction Zone Reached (a first-touch alert, not a resolution) → Resolved-Extension or Resolved-Invalidation. On resolution, right-edge tags are removed, lines freeze, and a cooldown begins.
+
+**The same-bar disclosure**
+
+When one bar touches both Extension and Invalidation, OHLC data alone cannot establish which came first. The script uses a deterministic proximity convention — the level closer to the prior bar's close is assumed reached first. This is documented as a convention, not an observation of intrabar sequence, and it's disclosed on-chart. Credit where due: many indicators in this space quietly ignore the problem.
+
+**Alerts**
+
+Five alert conditions are selectable in the TradingView dialog: Long Scenario Marked, Short Scenario Marked, Reaction Zone Reached, Extension Zone Reached, and Invalidation Level Reached. The script also issues dynamic `alert()` messages once per confirmed bar close, including direction, active-tier pressure reading, nearest qualifying level, and session character.
+
+**Limitations worth knowing**
+
+The script does not calculate P&L, win rate, or historical strategy performance — it's a discretionary analytical indicator, not a backtest. The IB classifier is a heuristic. The confluence ladder weights are pre-defined analytical weights, not statistically derived reliability scores. Footprint mode may behave inconsistently during Bar Replay due to TradingView's footprint data caching, and the script displays an on-chart notice recommending you disable it for replay testing.
+
+The script does not natively detect Fair Value Gaps or Order Blocks. If you use those, they're external context you compare against the reference-level map — they are not generated or validated by this script.
+
+**Who it's for**
+
+Intraday traders on 5m, 15m, 30m and 1H charts on liquid instruments: crypto pairs, index futures and CFDs, liquid FX, and large-cap equities during regular session hours. The author explicitly does not recommend it for very illiquid instruments, daily or higher timeframes (the IB logic is intraday by design), or symbols with no volume data.
 
 **What to try instead**
 
-If you want pure footprint data with actual bid/ask split on every price, you're better off with a proper footprint chart from a platform like Sierra Chart or Bookmap. On TradingView, the standard "Cumulative Volume Delta" indicator is a decent free alternative, though you lose the auction map zones. The "Volume Profile Fixed Range" tool is also a good complement — it gives you the same auction concept but in a more traditional format.
+If you want raw footprint data with bid/ask split on every price, a dedicated footprint chart from a platform like Sierra Chart or Bookmap is the honest answer — this script is not that. If you want a simpler volume-profile view, TradingView's built-in Volume Profile tools cover that ground without the qualification layer.
 
 **FAQ**
 
-**Does it repaint?** Yes, the delta line uses a moving average of current data, so historical values can shift slightly. The auction zones stabilize quickly — usually within a few bars.
+**Does it repaint?** The HTF EMA filter is explicitly built on the confirmed previous higher-timeframe bar using `barmerge.lookahead_on` on a `[1]` offset — the documented non-repainting pattern for confirmed HTF references. The HTF resolution is validated to be strictly higher than the chart timeframe before the request is made; if not, the script halts with an explicit error. Beyond that, the source material does not make blanket repainting claims for the pressure tiers or level plots.
 
-**Is it free?** It's available in the TradingView indicator catalog, but Bullbyte typically charges for premium access. Check the current pricing before you get attached.
+**Is it free?** Published as open-source under the Mozilla Public License 2.0.
 
-**Does it work on crypto?** Yes, this is where it shines. Volume data is genuine, and the auction zones are remarkably accurate on BTC and ETH.
+**Can I use it for automated trading?** It's a discretionary analytical indicator, not a strategy script. It does not produce audited P&L or position sizing.
 
-**Can I use it for automated trading?** Not directly. It's a visual/confirmation tool, not a strategy script.
+**Does it work on crypto?** The author lists liquid crypto pairs among the intended instruments, with the same caveat applying: volume data quality drives the usefulness of any volume-derived reading.
 
 **Final verdict**
 
-This is a solid 4-star tool. It's not a holy grail — no indicator is — but it does what it claims: gives you a cleaner way to see order flow and auction levels on your existing chart. The auction map concept is genuinely useful, and the overlay design saves screen space. If you understand its limitations (repainting, forex weakness), it earns its place in your toolbox. If you're expecting a magic trading button, save your money.
+This is a framework, not a signal generator, and it's built with unusual transparency about what each layer does and doesn't do. The 3-tier architecture is a genuine practical concession to plan tiers, the IB classifier is scoped to exactly two outputs, and the same-bar resolution limitation is disclosed rather than hidden. If you want a single auditable process that brings order flow, candle structure, location, and session regime into one qualification — and you're willing to accept that signals are intentionally infrequent — this earns a look. If you want a footprint chart with true bid/ask granularity, this isn't that, and the description says so.
 
-As the chart demonstrates, the delta line and MACD confirmation work well together. For the $30-50 range Bullbyte typically charges, it's a fair deal — not a steal, but fair. I'd say give it a trial run on your most liquid market and see if the auction zones match what you already know about price behavior. If they do, keep it. If they don't, you haven't lost anything but a few minutes of setup time.
-
-## Frequently Asked Questions
-
-### Is Footprint_Delta_Auction_Map_Bullbyte worth it?
-
-Based on testing across multiple timeframes, Footprint_Delta_Auction_Map_Bullbyte delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

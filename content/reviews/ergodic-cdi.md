@@ -16,21 +16,21 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A hybrid momentum-volatility indicator that filters signal noise. We test its real edge on BTC, ES, and FX pairs."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The Ergodic Candlestick Dynamics Index (ECDI) is a hybrid oscillator that combines candlestick body ratios with a smoothed ergodic function. It doesn't just plot price action—it measures the *rate of change* in candle structure. As the chart shows, it outputs a single line oscillating between 0 and 100, with two signal bands at 20 and 80 (default). The core idea: when bullish candlestick bodies shrink relative to recent volatility, the line drops; when they expand, it rises. It's not a lagging moving average—it reacts to the *internal energy* of each candle.
-
-I tested it on BTCUSD 1H, ES 5min, and EURUSD daily. On all three, it consistently caught momentum shifts before price broke structure.
+The Ergodic Candlestick Dynamics Index (ECDI) is described as a hybrid oscillator that combines candlestick body ratios with a smoothed ergodic function. Rather than plotting price action directly, it is intended to measure the rate of change in candle structure. According to the material, it outputs a single line oscillating between 0 and 100, with two signal bands at 20 and 80 by default. The stated core idea: when bullish candlestick bodies shrink relative to recent volatility, the line drops; when they expand, it rises. It is presented as reacting to the internal structure of each candle rather than simply lagging price.
 
 ## Key Features That Set It Apart
 
-- **Adaptive smoothing**: Uses a Kaufman-style efficiency ratio to adjust the ergodic calculation period. This means it tightens in trending markets and widens in choppy ones.
-- **Candlestick-aware**: Unlike RSI or Stochastics, it factors in wick-to-body ratios, not just close prices. This filters out noise from indecision candles.
-- **Divergence detection**: Built-in auto-plotting for bullish/bearish divergences between price and the ECDI line. It flagged a hidden bearish divergence on ES 5min last week that saved me 4 points.
+- **Adaptive smoothing**: Uses a Kaufman-style efficiency ratio to adjust the ergodic calculation period, tightening in trending markets and widening in choppy ones.
+- **Candlestick-aware**: Unlike RSI or Stochastics, it is said to factor in wick-to-body ratios, not just close prices, which is intended to filter noise from indecision candles.
+- **Divergence detection**: Built-in auto-plotting for bullish and bearish divergences between price and the ECDI line.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
+
+The material offers the following parameter combinations by asset and timeframe:
 
 | Asset | Timeframe | Period | Band Upper | Band Lower | Signal Smoothing |
 |-------|-----------|--------|------------|------------|------------------|
@@ -38,56 +38,66 @@ I tested it on BTCUSD 1H, ES 5min, and EURUSD daily. On all three, it consistent
 | ES | 5min | 21 | 85 | 15 | 5 |
 | EURUSD | Daily | 10 | 75 | 25 | 2 |
 
-- **Period**: Lower values (10-14) for fast scalp, higher (21-30) for swing. I use 14 on most intraday.
-- **Bands**: Tighten to 80/20 for choppier markets (ES 5min), widen to 75/25 for trending pairs.
-- **Signal Smoothing**: Keep at 2-5. Higher values kill responsiveness.
+- **Period**: Lower values for faster response, higher values for swing horizons. The material cites 14 as a common intraday choice.
+- **Bands**: Tighter bands for choppier markets, wider bands for trending pairs.
+- **Signal Smoothing**: The material suggests keeping this low, noting that higher values reduce responsiveness.
+
+These are presented as starting points, not as optimized or proven values.
 
 ## How to Use It for Entries and Exits
 
-**Long entry**: Wait for the ECDI line to dip below 20 (oversold) and then cross back above it. Confirm with price closing above the 20-period EMA. I entered ES long at 4,505 last Tuesday on this exact setup—price ran 12 points.
+**Long entry**: Wait for the ECDI line to dip below the lower band and then cross back above it, confirming with price closing above a moving average.
 
-**Short entry**: Line above 80, cross below. Add a bearish divergence for higher probability. On BTCUSD 1H, a bearish divergence at 69K led to a 3K drop within 8 hours.
+**Short entry**: Wait for the line to rise above the upper band and cross back below, ideally with a bearish divergence for what the material calls higher probability.
 
-**Exit**: Trail with the signal line. If the ECDI drops below 50 after a long, take partial profits. For full exit, wait for a cross below 20 (long) or above 80 (short).
+**Exit**: Trail with the signal line. The material suggests taking partial profits if the ECDI drops back toward the midline after a long, and waiting for a cross back through the outer band for a full exit.
 
 ## Honest Pros and Cons
 
 **Pros**:
-- Divergence detection is more reliable than RSI or MACD—caught 4 out of 5 reversals in my test on 200 trades.
-- Adaptive smoothing means you don't need to fiddle with settings for every market condition.
-- Works on any timeframe, though it shines on 1H-4H.
+- Divergence detection is presented as more reliable than RSI or MACD.
+- Adaptive smoothing is intended to reduce the need to re-tune settings for every market condition.
+- Described as usable on any timeframe, though the material suggests it is strongest on higher intraday timeframes.
 
 **Cons**:
-- Lag during extreme trend days. On a strong trend day in ES, the ECDI stayed pinned above 80 for 3 hours, giving false overbought signals.
-- Learning curve. Took me about 20 trades to stop second-guessing the divergence signals.
-- Not a standalone system—you'll still need support/resistance or volume confirmation.
+- Lag during extreme trend days, where the material notes the line can stay pinned above the upper band and produce false overbought signals.
+- A learning curve before the divergence signals feel intuitive.
+- Not a standalone system—support/resistance or volume confirmation is still needed.
 
 ## Who It's Actually For
 
-- **Momentum traders** who hate choppy oscillators and want cleaner signals.
-- **Swing traders** using 4H+ timeframes—the divergence detection is a gem for catching trend exhaustion.
-- **Not for scalpers**. The adaptive smoothing adds just enough lag that 1-2 minute charts feel mushy.
+- **Momentum traders** who want a less choppy oscillator.
+- **Swing traders** on higher timeframes, where the divergence detection is described as useful for catching trend exhaustion.
+- **Not for scalpers**, per the material, because the adaptive smoothing adds enough lag that very short charts feel unresponsive.
 
 ## Better Alternatives
 
-If you find ECDI too laggy, try the **Ergodic Candle Momentum** (same developer, faster response) or the **Kaufman Adaptive RSI** for even cleaner divergence signals. For pure trend-following, the **SuperTrend** is simpler and equally effective on daily charts.
+If the ECDI feels too laggy, the material points to the **Ergodic Candle Momentum** (same developer, faster response) or the **Kaufman Adaptive RSI**. For pure trend-following, **SuperTrend** is cited as simpler and comparably effective on daily charts.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. The ECDI line is fixed once the candle closes. The divergence detection repaints until the divergence is confirmed (typically 2-3 candles later), but that's standard for any divergence tool.
+**Q: Does it repaint?**
+A: The material states the ECDI line is fixed once the candle closes. The divergence detection is said to update until the divergence is confirmed, which the material notes is standard for divergence tools.
 
-**Q: Best timeframe?**  
-A: 1H to 4H. Lower timeframes (1-15min) produce too many false divergence signals.
+**Q: Best timeframe?**
+A: The material points to higher intraday timeframes, and cautions that very low timeframes produce too many false divergence signals.
 
-**Q: Can I use it on crypto?**  
-A: Yes. I tested on BTC, ETH, and SOL. Works best on BTC 1H with period 14.
+**Q: Can I use it on crypto?**
+A: Yes, per the material, which cites BTC as the preferred crypto application.
 
 ## Final Verdict
 
-The Ergodic Candlestick Dynamics Index is a solid 4-star tool for traders who want to cut through oscillator noise without switching to lagging trendlines. It's not perfect on trend days, but the divergence detection and adaptive smoothing give it a real edge. Install it, run it on 1H BTC or ES, and focus on the divergences—that's where the money is.
+The Ergodic Candlestick Dynamics Index is presented as a solid tool for traders who want to cut through oscillator noise without switching to lagging trendlines. It is not described as perfect on trend days, but the divergence detection and adaptive smoothing are positioned as its real edge. The material's suggestion is to run it on higher-timeframe BTC or ES and focus on the divergences.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Candlestick** implementation was backtested on 30 markets over 5 years of daily data (4,339 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 46.9%** (50% = coin flip)
+- Strongest markets: META 54.0%, NVDA 52.1%, WTI 52.1%, GOOGL 51.2%
+- Weakest markets: SPY 44.4%, QQQ 44.2%, SHIBUSD 28.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

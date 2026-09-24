@@ -16,111 +16,118 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Combines Bollinger Bands and MACD for momentum-confirmed reversals. 4/5 stars. Best settings, entry tactics, and honest pros/cons."
+grounding: "none (no source found)"
 ---
+**Final Verdict: A confluence filter that cuts noise, not a holy grail.**
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5) — A solid combo that filters out noise, but not a holy grail.**
-
-Look, I’ve tested hundreds of “combo” indicators. Most are just two moving averages glued together with a color change. This one is different. It overlays Bollinger Bands on price and plots MACD in a separate pane, then highlights crossovers *only* when both align. In the chart above, you can see it caught the BTC move from 29k to 31k cleanly — no false signals during the chop beforehand.
+Most "combo" indicators are two moving averages glued together with a color change. This one is structured differently: it overlays Bollinger Bands on price, plots MACD in a separate pane, and highlights crossovers only when both tools align. That alignment logic is the entire point of the indicator.
 
 ---
 
 ### What This Indicator Actually Does
 
-It’s not reinventing the wheel. It takes two proven tools — Bollinger Bands (BB) and MACD — and ties them together with logic. The key is that it only paints a buy/sell signal when:
+It takes two established tools — Bollinger Bands (BB) and MACD — and ties them together with a condition. A buy or sell signal is painted only when:
+
 - Price touches or crosses a BB band (outer or middle)
 - AND the MACD line crosses its signal line in the same direction
 
-This means you’re not buying a BB squeeze without momentum, and you’re not buying a MACD crossover while price is at the outer band with no room left.
+The practical effect is that you're not acting on a BB squeeze without momentum confirmation, and you're not acting on a MACD crossover while price sits at the outer band with no room left to run.
 
 ### Key Features That Set It Apart
 
-- **Signal Confluence Filter** — The main differentiator. You get alerts only when both conditions fire. This killed about 60% of false signals I saw on standard MACD alone.
-- **Customizable Band Sensitivity** — You can adjust the BB period and standard deviation (20, 2 is default). Tighter bands = more signals but more noise.
-- **MACD Fast/Slow/ Signal** — Standard 12, 26, 9. Works fine, but I’ll get to tweaks.
-- **Visual Clarity** — Up arrows in green, down arrows in red. No clutter. The background highlights bars where signals are active.
+- **Signal Confluence Filter** — The main differentiator. Signals fire only when both conditions are met, which is intended to reduce the false crosses that standalone MACD produces in sideways markets.
+- **Customizable Band Sensitivity** — The BB period and standard deviation are adjustable. Wider bands produce fewer signals; tighter bands produce more.
+- **MACD Fast/Slow/Signal** — Standard inputs, adjustable in the settings panel.
+- **Visual Clarity** — Up arrows in green, down arrows in red. The background highlights bars where signals are active.
 
-### Best Settings (What I Actually Use)
+### Settings and How to Tune Them
 
-I trade ETH/USD on the 1H chart. Here’s what worked after 200+ backtested trades:
+The indicator exposes the standard Bollinger Bands and MACD inputs:
 
-- **BB Period:** 20 (default is fine; 15 if you scalp)
-- **BB StdDev:** 2.0 (2.2 for fewer false signals on low-volatility pairs)
-- **MACD Fast:** 12 (default)
-- **MACD Slow:** 26 (default)
-- **MACD Signal:** 9 (I bumped to 12 on BTC to reduce whipsaws)
-- **Signal Source:** Price crossing outer band + MACD crossover (not just touch)
+- **BB Period** — Controls how many bars the band average is calculated over. Shorter periods make the bands more reactive.
+- **BB StdDev** — Controls band width. A higher multiplier widens the bands and reduces signal frequency; a lower multiplier tightens them.
+- **MACD Fast / Slow / Signal** — The three standard MACD lengths. Lengthening the signal line smooths crossovers; shortening it makes them more frequent.
+- **Signal Source** — Whether a signal requires price to cross the outer band versus merely touch it.
 
-**Pro tip:** On the 15M chart, use BB(20, 2.5) to survive the noise. On 4H, keep 2.0.
+There is no single "correct" configuration. Band width and MACD lengths should be tuned to the volatility of the instrument you're trading, and any change trades signal frequency against noise. The indicator does not publish recommended values, and no setting should be treated as producing better results than another.
 
 ### How to Use It for Entries and Exits
 
-**Long Entry:** Wait for price to touch the lower BB, then confirm the MACD line crosses above the signal line. Enter on the next candle close. Set stop loss 1 ATR below the lower band.
+**Long Entry:** Wait for price to touch the lower BB, then confirm the MACD line crosses above the signal line. Enter on the next candle close. Place the stop below the lower band, sized by ATR.
 
-**Short Entry:** Price touches upper BB, MACD crosses below signal line. Short on close. Stop 1 ATR above upper band.
+**Short Entry:** Price touches the upper BB, MACD crosses below the signal line. Short on close. Stop above the upper band, sized by ATR.
 
-**Exit:** The indicator itself doesn’t give targets. I use the middle BB as the first take-profit (TP1 at 50% position) and the opposite band as TP2. Alternatively, close when the next opposite signal appears.
+**Exit:** The indicator does not generate targets. A common approach is to use the middle BB as a first take-profit and the opposite band as a second, or to close when the next opposite signal appears.
 
-**Rejection trade (advanced):** If price touches the outer band but MACD hasn’t crossed yet, wait. If price then closes *inside* the band without the crossover, skip it. The combo filters that.
+**Rejection trade:** If price touches the outer band but MACD hasn't crossed yet, wait. If price then closes back inside the band without the crossover, skip the setup — the confluence condition filters it out.
 
 ### Honest Pros and Cons
 
 **Pros:**
-- Cuts false signals dramatically vs. standalone BB or MACD
-- Clean visual — easy to scan multiple charts
-- Customizable enough for different timeframes
-- Free (no paywall nonsense)
+- Reduces false signals relative to standalone BB or MACD
+- Clean visual output that's easy to scan across multiple charts
+- Adjustable enough to fit different instruments and timeframes
+- Free
 
 **Cons:**
-- Laggy in fast markets — you’ll miss the first 2-3% of a move because it waits for confirmation
-- No built-in stop/target — you need to add your own risk management
-- Doesn’t work well in ranging markets with low volatility (think EUR/USD during Asian session)
+- Laggy in fast markets — it waits for confirmation, so entries come after the initial move
+- No built-in stop or target; risk management is entirely on you
+- Performs poorly in low-volatility ranging conditions, where neither condition fires cleanly
 
-### Who It’s Actually For
+### Who It's Actually For
 
-- **Intermediate traders** who understand that confluence ≠ guarantee
-- **Swing traders** on 1H–4H timeframes
-- **Anyone tired of MACD alone** painting false crosses in a sideways market
+- **Intermediate traders** who understand that confluence is not a guarantee
+- **Swing traders** working on higher intraday timeframes
+- **Anyone frustrated with MACD alone** painting false crosses in sideways markets
 
-Not for scalpers (too slow) or beginners who think arrows = free money. You still need to manage risk.
+Not for scalpers — the confirmation requirement is too slow — and not for beginners who treat arrows as a complete trading plan. Risk management is still required.
 
-### Better Alternatives If You Don’t Like This
+### Better Alternatives If You Don't Like This
 
-- **Supertrend + MACD** — Faster signals but more whipsaws. Good for trend followers.
-- **Bollinger Bands + RSI** — Better for mean-reversion scalping. More signals, less lag.
-- **LuxAlgo’s Smart Money Concepts** — If you want institutional flow, not just momentum.
+- **Supertrend + MACD** — Faster signals, more whipsaws. Suited to trend followers.
+- **Bollinger Bands + RSI** — Better for mean-reversion. More signals, less lag.
+- **LuxAlgo's Smart Money Concepts** — For traders who want order-flow style structure rather than momentum confluence.
 
-The only thing I’d change? Add a built-in ATR-based stop. Right now you have to overlay it manually.
+The most obvious gap is the absence of a built-in ATR-based stop, which has to be overlaid manually.
 
 ---
 
-### FAQ: Real Trader Questions
+### FAQ
 
-**Q: Does it repaint?**  
-No. Once a signal appears, it stays. Tested on 50 different charts.
+**Q: Does it repaint?**
+The indicator is designed so that a printed signal remains on the chart once it appears.
 
-**Q: Best timeframe?**  
-1H to 4H. Lower than 15M gives too many signals. Higher than 4H works but you’ll wait days.
+**Q: Best timeframe?**
+The confluence logic is best suited to intraday swing timeframes. Very short timeframes generate excessive signals; very high timeframes produce very few.
 
-**Q: Works on crypto?**  
-Yes. BTC and ETH are fine. For altcoins, tighten the BB to 15, 2.
+**Q: Works on crypto?**
+Yes, it applies to crypto pairs. Band settings may need adjustment for lower-liquidity altcoins.
 
-**Q: Can I use it for forex?**  
-Yes, but only on GBP/USD or USD/JPY during London/NY. Avoid EUR/CHF — too quiet.
+**Q: Can I use it for forex?**
+Yes, though results depend heavily on session volatility. Quiet pairs and quiet sessions will produce few valid setups.
 
-**Q: How do I set alerts?**  
-Right-click the indicator → Add Alert → Condition: “Signal Up” or “Signal Down”. You’ll get notified when both conditions align.
+**Q: How do I set alerts?**
+Right-click the indicator → Add Alert → select the "Signal Up" or "Signal Down" condition. Alerts trigger when both conditions align.
 
 ---
 
 ### Why Not 5 Stars?
 
-It’s good, not great. The lag in fast moves cost me 2-3% on breakouts. And the lack of a built-in exit means you’re still doing half the work. For a premium indicator, I’d expect that. For a free tool, it’s a steal.
+The confirmation requirement is the same thing that makes it useful and the thing that makes it slow — by the time both conditions align, part of the move is gone. And because there's no built-in exit, half the trade management is still manual. For a free tool, that's a reasonable trade-off. It is not a signal generator you can run without a plan.
 
-If you want a lazy button that prints money, this isn’t it. If you want a reliable confluence filter that keeps you out of bad trades, install it. Just pair it with a volume indicator or order flow tool to confirm the move has legs.
+Pair it with a volume or order-flow tool if you want confirmation that a move has participation behind it.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Recommended for serious traders who want fewer, higher-probability setups.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Recommended for traders who want fewer, higher-confluence setups and are willing to manage the exits themselves.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **MACD** implementation was backtested on 30 markets over 5 years of daily data (43,707 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.8%** (50% = coin flip)
+- Strongest markets: TSLA 53.1%, AMD 52.8%, AAPL 52.3%, AVAXUSD 52.0%
+- Weakest markets: GOOGL 46.6%, AMZN 45.4%, SHIBUSD 27.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

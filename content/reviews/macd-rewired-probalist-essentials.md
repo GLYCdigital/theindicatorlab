@@ -16,23 +16,23 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A MACD derivative that adds probability-weighted signals and noise filters. Not a holy grail, but a solid upgrade for serious traders."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-*Worth installing if you trade MACD setups and want cleaner signals. Not for beginners who just want green/red arrows.*
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+*Worth a look if you trade MACD setups and want cleaner signals. Not for beginners who just want green/red arrows.*
 
 ---
 
 ## What This Indicator Actually Does
 
-Let’s cut through the name. *Macd_Rewired_Probalist_Essentials* is not some black-box AI. It’s a reimagined MACD that uses probability weighting to reduce false crossovers and divergence noise.  
+Let's cut through the name. *Macd_Rewired_Probalist_Essentials* is not some black-box AI. It's a reimagined MACD that uses probability weighting to reduce false crossovers and divergence noise.
 
-Standard MACD gives you a crossover at every price wiggle. This one asks: *How likely is this signal to actually follow through?* It does that by blending three things:  
-- **Weighted moving averages** (less lag than standard EMA-based MACD)  
-- **A probability score** based on historical signal reliability at current volatility levels  
-- **A noise filter** that kills signals below a configurable probability threshold  
+Standard MACD gives you a crossover at every price wiggle. This one asks: *How likely is this signal to actually follow through?* It does that by blending three things:
+- **Weighted moving averages** (less lag than standard EMA-based MACD)
+- **A probability score** based on historical signal reliability at current volatility levels
+- **A noise filter** that kills signals below a configurable probability threshold
 
-As the chart above shows, you get MACD line, signal line, and histogram — but with shaded probability zones. Signals only fire when the histogram momentum aligns with a probability score above your set minimum.
+You get MACD line, signal line, and histogram — but with shaded probability zones. Signals only fire when the histogram momentum aligns with a probability score above your set minimum.
 
 ---
 
@@ -40,69 +40,69 @@ As the chart above shows, you get MACD line, signal line, and histogram — but 
 
 | Feature | What It Does |
 |---|---|
-| **Probability-weighted crossovers** | Doesn’t just show cross — shows % chance of continuation |
+| **Probability-weighted crossovers** | Doesn't just show cross — shows % chance of continuation |
 | **Adaptive threshold filter** | Ignores low-probability wiggles (adjustable from 50% to 90%) |
 | **Divergence detection with confidence** | Marks bullish/bearish divs only when probability > threshold |
 | **Histogram momentum color** | Darker colors = higher conviction; lighter = weak move |
 | **Built-in ATR band overlay** | Option to show volatility envelope on price chart |
 
-That last one is sneaky useful. When the ATR band contracts and probability scores spike, you get high-conviction signals that standard MACD misses.
+That last one is the interesting part. When the ATR band contracts and probability scores spike, you get high-conviction signals that standard MACD misses.
 
 ---
 
-## Best Settings (After 200+ Trades Testing)
+## Settings and How to Tune Them
 
-I ran this on BTC/USD 1H, EUR/USD 4H, and TSLA daily. Here’s what worked:
+- **Fast Length:** default 12 — shortening it speeds up response, with the usual tradeoff in whipsaw
+- **Slow Length:** default 26 — lowering it catches turns earlier but tightens the spread between lines
+- **Signal Smoothing:** default 9 — reducing it cuts lag on exits
+- **Probability Threshold:** adjustable from 50% to 90%; low values produce more signals, high values produce fewer
+- **Divergence Pivot Lookback:** controls how far back pivots are measured
+- **ATR Band Multiplier:** scales the volatility envelope overlay
 
-- **Fast Length:** 9 (default 12 — faster response without whipsaw increase)  
-- **Slow Length:** 21 (default 26 — tighter but catches turns earlier)  
-- **Signal Smoothing:** 7 (default 9 — less lag on exits)  
-- **Probability Threshold:** 70% (below this, too many false signals; above 85%, too few)  
-- **Divergence Pivot Lookback:** 15 (sweet spot for 4H+ timeframes)  
-- **ATR Band Multiplier:** 1.5 (for vol filter overlay)  
+**Scalping-style setup:** shorter fast/slow/signal lengths with a lower probability threshold. Expect more signals.
 
-**My setup for scalping (5M-15M):** Fast 7, Slow 18, Signal 5, Threshold 65%. Expect more signals but tighter stops.
+**Swing-style setup:** longer fast/slow/signal lengths with a higher probability threshold. Fewer signals.
 
-**For swing trading (4H+):** Fast 12, Slow 26, Signal 9, Threshold 80%. Fewer signals, but the ones you get stick.
+There's no universally correct combination here — the right values depend on instrument and timeframe.
 
 ---
 
 ## How to Use It for Entries and Exits
 
-**Entry rules I actually trade:**
+**Entry logic:**
 
-1. **Bullish setup:** Probability score > 70%, MACD line crosses above signal line, histogram turns from dark red to dark green. Enter on next candle close above ATR band midline.  
-2. **Bearish setup:** Same but inverted. Probability > 70%, cross below, histogram dark red. Enter below ATR band.  
+1. **Bullish setup:** Probability score above your threshold, MACD line crosses above signal line, histogram turns from dark red to dark green. Enter on next candle close above the ATR band midline.
+2. **Bearish setup:** Same but inverted — probability above threshold, cross below, histogram dark red. Enter below the ATR band.
 
-**Exit rules:**
-- **Take profit:** When histogram probability drops below 60% (momentum fading). Or use a 1.5x ATR trailing stop.  
-- **Stop loss:** Below the most recent swing low (bullish) or above swing high (bearish), not below the ATR band.  
+**Exit logic:**
+- **Take profit:** When histogram probability drops below your exit threshold (momentum fading), or use an ATR-based trailing stop.
+- **Stop loss:** Below the most recent swing low (bullish) or above swing high (bearish), not below the ATR band.
 
-**Divergence trade (advanced):** Wait for price to make a lower low but MACD to make a higher low *with* probability > 75%. Enter on first green histogram bar after the divergence confirmation.
+**Divergence trade:** Wait for price to make a lower low but MACD to make a higher low *with* probability above your threshold. Enter on the first green histogram bar after the divergence confirmation.
 
 ---
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Filters out 40-50% of false MACD crossovers compared to standard MACD  
-- Divergence detection is cleaner — I stopped using RSI divergence after this  
-- ATR band integration is genuinely useful for stop placement  
-- No repainting (confirmed by comparing real-time with replay mode)  
+- Filters out false MACD crossovers that standard MACD produces
+- Divergence detection is cleaner than raw MACD divergence
+- ATR band integration is useful for stop placement
+- No repainting — signals stay fixed once the candle closes
 
 **Cons:**
-- Steep learning curve — took me 3 days to dial in settings  
-- Not for pure price action traders who hate lagging indicators  
-- Probability score can feel arbitrary on low-liquidity altcoins  
-- No built-in alert system for probability changes (you must set manual alerts)  
+- Steep learning curve to dial in settings
+- Not for pure price action traders who hate lagging indicators
+- Probability score can feel arbitrary on low-liquidity altcoins
+- No built-in alert system for probability changes — you must set manual alerts
 
 ---
 
 ## Who It's Actually For
 
-- **Intermediate to advanced MACD traders** who are tired of false signals  
-- **Swing traders** on 4H+ timeframes (where probability matters most)  
-- **Traders who combine indicators** — works well with volume profile or order flow  
+- **Intermediate to advanced MACD traders** who are tired of false signals
+- **Swing traders** on higher timeframes, where the probability layer matters most
+- **Traders who combine indicators** — works alongside volume profile or order flow
 
 **Not for:** Beginners who want buy/sell arrows. Scalpers who need instant confirmation. Anyone who thinks "probability" means "guarantee."
 
@@ -110,41 +110,51 @@ I ran this on BTC/USD 1H, EUR/USD 4H, and TSLA daily. Here’s what worked:
 
 ## Better Alternatives If You Don't Like This
 
-- **LazyBear's MACD with ATR filter** — free, simpler, but no probability scoring  
-- **MACD 3 Line** — adds a third line for momentum confirmation, less noise than standard  
-- **Divergence Pro by LuxAlgo** — better divergence detection but no probability layer  
-- **Standard MACD + RSI combo** — free, works fine if you know how to read context  
+- **LazyBear's MACD with ATR filter** — free, simpler, but no probability scoring
+- **MACD 3 Line** — adds a third line for momentum confirmation, less noise than standard
+- **Divergence Pro by LuxAlgo** — better divergence detection but no probability layer
+- **Standard MACD + RSI combo** — free, works fine if you know how to read context
 
-If you want the probability layer, stick with this. If you just want cleaner MACD, save your money.
+If you want the probability layer, this is the one to look at. If you just want cleaner MACD, the free options cover it.
 
 ---
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. I verified on replay mode across 500 bars. Signals stay fixed once the candle closes.
+**Q: Does it repaint?**
+A: No — signals stay fixed once the candle closes.
 
-**Q: Can I use it on crypto?**  
-A: Yes, but set probability threshold to 75%+ on BTC/ETH. Lower on alts.
+**Q: Can I use it on crypto?**
+A: Yes. Practitioners often raise the probability threshold on majors like BTC/ETH and lower it on alts, though this is preference rather than a rule.
 
-**Q: Best timeframe?**  
-A: 1H to daily. Below 15M, probability scores get noisy.
+**Q: Best timeframe?**
+A: Higher timeframes are where the probability layer is most meaningful. Lower timeframes tend to produce noisier probability scores.
 
-**Q: Why are no signals appearing?**  
-A: Your probability threshold is too high. Drop it to 60% and see if signals appear. If not, check your fast/slow lengths.
+**Q: Why are no signals appearing?**
+A: Your probability threshold is likely too high. Lower it and see if signals appear. If not, check your fast/slow lengths.
 
-**Q: Does it work for options?**  
-A: Yes, but use the ATR band overlay for strikes. I’ve used it for 0DTE SPX with the scalping settings above.
+**Q: Does it work for options?**
+A: The indicator itself is instrument-agnostic. Options traders sometimes use the ATR band overlay for strike selection.
 
 ---
 
 ## Final Thoughts
 
-*Macd_Rewired_Probalist_Essentials* is not revolutionary — it’s an evolution of an old idea. But sometimes that’s exactly what you need. It gave me cleaner entries, fewer false divergences, and a concrete reason to skip a trade (probability too low).  
+*Macd_Rewired_Probalist_Essentials* is not revolutionary — it's an evolution of an old idea. But sometimes that's exactly what you need. It offers cleaner entries, fewer false divergences, and a concrete reason to skip a trade (probability too low).
 
-If you’re a MACD loyalist who’s been burned by whipsaws, this is a solid 4-star upgrade. Just don’t expect it to trade for you.
+If you're a MACD loyalist who's been burned by whipsaws, this is a solid 4-star upgrade. Just don't expect it to trade for you.
 
 ---
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **MACD** implementation was backtested on 30 markets over 5 years of daily data (43,707 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.8%** (50% = coin flip)
+- Strongest markets: TSLA 53.1%, AMD 52.8%, AAPL 52.3%, AVAXUSD 52.0%
+- Weakest markets: GOOGL 46.6%, AMZN 45.4%, SHIBUSD 27.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

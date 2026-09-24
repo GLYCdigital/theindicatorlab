@@ -16,62 +16,64 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Fair Value Gap indicator. Covers settings, how to trade FVG gaps, pros/cons, and if it's worth adding to your toolkit."
+grounding: "none (no source found)"
 ---
+# Fair Value Gap Indicator Review
 
-When the market gaps, most traders just shrug. But the **Fair Value Gap** indicator turns those gaps into actionable zones. I've been running it on 15-min and 1-hour charts for two weeks, and here's what actually works.
+When the market gaps, most traders just shrug. The **Fair Value Gap** indicator turns those gaps into marked zones on the chart. This review covers what it does, how it is configured, and where it falls short.
 
 ## What This Indicator Actually Does
 
-It identifies **imbalanced price action** — where candles leave a literal gap in value. On the chart, you'll see red and green shaded rectangles between candles. These aren't just noise; they represent price levels where institutional orders weren't filled. The indicator draws them automatically, so you don't have to squint at your screen.
+It identifies **imbalanced price action** — where candles leave a literal gap in value. On the chart, you'll see red and green shaded rectangles between candles. These represent price levels where orders were not filled and the imbalance has not yet been resolved. The indicator draws them automatically, so you don't have to mark them by hand.
 
-The logic is simple: when three consecutive candles show a gap between the middle candle's wicks and the adjacent candles' bodies, that's a Fair Value Gap. Price *often* returns to fill this gap before continuing its trend.
+The logic: when three consecutive candles show a gap between the middle candle's wicks and the adjacent candles' bodies, that's a Fair Value Gap. The premise is that price often returns to fill this gap before continuing its trend.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Real-time gap detection** — no repainting on standard settings. I tested this on replay mode; the gaps appear and stay.
-- **Customizable gap strength** — you can filter by gap size (percentage or tick count). Only show gaps that matter.
-- **Merge overlapping gaps** — when gaps stack, it combines them into one zone. Reduces chart clutter.
-- **Bullish/bearish color coding** — green for buy-side gaps, red for sell-side. Instant directional bias.
+- **Real-time gap detection** — gaps are plotted as price develops rather than only after the fact.
+- **Customizable gap strength** — gaps can be filtered by size, so only the larger ones are shown.
+- **Merge overlapping gaps** — when gaps stack, the indicator combines them into a single zone, which reduces chart clutter.
+- **Bullish/bearish color coding** — green for buy-side gaps, red for sell-side, giving an immediate directional read.
 
-## Best Settings (Specific Recommendations)
+## Settings and How to Tune Them
 
-From my testing, these are the optimal defaults:
+The indicator exposes several parameters:
 
-- **Gap Detection Sensitivity**: set to **3** (out of 5). Higher values create too many false zones on lower timeframes.
-- **Minimum Gap Size**: **0.05%** for crypto, **0.02%** for forex. For stocks, try **$0.10**.
-- **Merge Gaps**: **ON**. Without this, you get a mess of overlapping rectangles.
-- **Max Gap Age**: **20 candles**. Gaps older than that are less likely to fill.
+- **Gap Detection Sensitivity** — controls how strict the gap criteria are. Lower values produce fewer, more selective zones; higher values produce more.
+- **Minimum Gap Size** — a size filter, expressed either as a percentage or a tick count depending on the instrument. Larger thresholds screen out minor gaps.
+- **Merge Gaps** — toggles whether overlapping gaps are combined into one zone. Leaving it on keeps the chart cleaner.
+- **Max Gap Age** — the candle count after which an old gap is removed from the chart automatically.
 
-**Pro tip**: On the 1-hour chart, lower the sensitivity to 2. You'll get fewer but higher-quality gaps.
+Which values suit you depends on the instrument and timeframe you trade. There is no single configuration that is correct for every market; the sensitivity and size filters in particular need to be adjusted to the volatility of what you're looking at.
 
 ## How to Use It for Entries and Exits
 
-**Entry strategy (the way I trade it)**:
+**Entry approach**:
 1. Wait for price to approach a gap zone.
 2. Look for a reversal candle pattern at the gap edge — a pin bar or engulfing candle.
 3. Enter on the close of that candle.
-4. Stop loss: just beyond the opposite side of the gap.
-5. Target: the next major support/resistance or previous swing high/low.
+4. Stop loss beyond the opposite side of the gap.
+5. Target the next major support/resistance or previous swing high/low.
 
-**Exit strategy**: If price closes *inside* the gap and then breaks the other side, exit immediately. The gap has been filled and the imbalance is resolved.
+**Exit approach**: If price closes *inside* the gap and then breaks the other side, the gap has been filled and the imbalance is resolved — that is the point to exit.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros**:
 - Saves hours of manual gap marking on the chart.
-- Works on any timeframe — I've tested from 1-min scalping to daily swing trading.
-- No repainting in real-time mode. I confirmed this by comparing against a separate manual gap tracker.
+- Works across timeframes, from intraday scalping through daily swing trading.
+- Gap detection is stable in real-time mode on standard settings.
 
 **Cons**:
-- On low timeframes (1-min, 5-min), you get flooded with tiny gaps. Stick to 15-min or higher.
+- On low timeframes, short-duration gaps appear frequently and can flood the chart.
 - The indicator doesn't tell you *why* a gap formed. You still need context (news, liquidity sweeps).
 - Gaps can take weeks to fill on higher timeframes. Patience required.
 
-## Who It's Actually For
+## Who It's For
 
 - **ICT/SMC traders** — this is practically essential for that style.
 - **Swing traders** who want to catch mean reversion moves.
-- **Scalpers** on 15-min charts — but only if you filter with volume.
+- **Scalpers** on intraday charts — but only if they filter with volume.
 
 **Not for**: Pure trend followers. If you never fade moves, this indicator will just clutter your charts.
 
@@ -84,25 +86,23 @@ If you're on a budget, the built-in **Volume Profile** can approximate gap zones
 
 ## FAQ
 
-**Does this repaint?**  
-On default settings, no. I verified by marking gaps manually and comparing after a bar closes. They match.
+**Does this repaint?**
+On default settings, gap zones are drawn as they form and remain in place once a bar closes.
 
-**Can I use it for crypto?**  
-Yes, works fine. But crypto gaps fill faster — sometimes within 2-3 candles.
+**Can I use it for crypto?**
+Yes. Crypto gaps tend to fill faster than gaps in other markets.
 
-**What's the best timeframe?**  
-15-min for day trading, 1-hour for swing trading. Avoid 1-min and 5-min unless you enjoy false signals.
+**What's the best timeframe?**
+Intraday charts for day trading, higher timeframes for swing trading. Very low timeframes produce more false signals.
 
-**How do I remove old gaps?**  
+**How do I remove old gaps?**
 Set "Max Gap Age" to your preferred candle count. Gaps older than that disappear automatically.
 
 ## Final Verdict
 
-The Fair Value Gap indicator does exactly what it promises: finds and displays price gaps that matter for reversals. It's not a holy grail — you still need to filter entries with price action and volume — but it saves massive time over doing it manually.
+The Fair Value Gap indicator does what it promises: it finds and displays price gaps that matter for reversals. It's not a holy grail — you still need to filter entries with price action and volume — but it saves significant time over doing it manually.
 
 **4 out of 5 stars.** Docked one star because the lower timeframe noise is annoying and could be handled with smarter filtering. But for the price (free), it's a solid addition to any trader's toolbox who uses imbalance-based strategies.
-
----
 
 ## Go Deeper with The Indicator Lab
 

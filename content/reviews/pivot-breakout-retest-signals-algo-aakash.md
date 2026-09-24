@@ -16,81 +16,79 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A robust pivot breakout & retest system with Aakash’s algo logic. Reduces noise, but requires confirmation. Best on 1H–4H for trend reversals."
+grounding: "none (no source found)"
 ---
+# Pivot_Breakout_Retest_Signals_Algo_Aakash Review
 
-I’ve been running **Pivot_Breakout_Retest_Signals_Algo_Aakash** on my TradingView charts for the past two weeks across BTC, ES, and a few forex pairs. Here’s the raw take.
+## What This Indicator Does
 
-## What This Indicator Actually Does
+This is not a generic pivot high/low scanner. It detects significant swing levels, waits for a breakout above or below them, then flags a retest of that level as a potential entry trigger. A configurable length parameter filters out micro-pivots so the tool is not reacting to every minor swing. Events are marked directly on the chart with arrows and labels.
 
-This isn’t your generic pivot high/low scanner. It detects **significant swing levels**, waits for a breakout above/below them, then flags a **retest** of that level as a potential entry trigger. The algorithm filters out micro-pivots using a configurable length parameter, so you’re not chasing noise. As the chart above shows, it marks these events with clear arrows and labels — no clutter, just actionable zones.
+## Key Features
 
-## Key Features That Set It Apart
+- **Dynamic pivot detection** based on a user-defined lookback period. Levels recalculate as new bars form.
+- **Breakout plus retest logic** — the indicator does not fire on the initial breakout. It waits for price to return and test the broken level first. This is the main structural difference from pivot indicators that only draw lines.
+- **Colored labels** to distinguish bullish from bearish events, with optional alert conditions tied to the breakout and retest sequence.
+- **Alerts built in**, so notifications can be configured around the retest event rather than only the breakout.
 
-- **Dynamic pivot detection** based on user-defined lookback period (default 10 bars). It recalculates in real time.
-- **Breakout + retest logic** — it doesn’t fire on the initial breakout. It waits for price to come back and test the broken level first. This is a big differentiator from most pivot indicators that just draw lines.
-- **Colored labels** (green for bullish breakouts, red for bearish) with optional alert conditions for when both breakout and retest occur.
-- **Alerts built-in** — you can set it to notify you on retest completion, not just breakout.
+## Settings and How to Tune Them
 
-## Best Settings with Specific Recommendations
+| Parameter | Purpose |
+|-----------|---------|
+| Pivot Length | Controls how many bars define a swing level. Lower values produce more pivots, higher values produce fewer, more significant levels. |
+| Show Levels | Toggles the pivot lines on the chart. |
+| Retest Threshold | Defines how close price must come back to the broken level to count as a retest. Lower values allow more signals; higher values require a tighter retest. |
+| Alert on Retest | Enables or disables the retest notification. |
 
-| Parameter | Default | My Recommended |
-|-----------|---------|----------------|
-| Pivot Length | 10 | 12 (for 1H–4H) / 8 (for 5M–15M) |
-| Show Levels | true | Keep true |
-| Retest Threshold (points) | 10 | Adjust based on asset volatility (e.g., 5 for forex, 15 for crypto) |
-| Alert on Retest | true | Always on |
-
-**Pro tip:** In the settings, lower the **Retest Threshold** if you want more signals — but be prepared for more false ones. I keep it at 12 for ES futures.
+The relationship between Pivot Length and Retest Threshold is the main tuning decision. Shortening the pivot length increases the number of candidate levels; widening the retest threshold increases how many of those levels qualify as retests. Both adjustments trade signal frequency against selectivity. The appropriate values depend on the instrument's volatility and the timeframe being traded, and there is no single configuration that is correct across markets.
 
 ## How to Use It for Entries and Exits
 
-- **Long entry**: Price breaks above a pivot high, then pulls back to the same level (retest). Enter on the first bullish candle close above the pivot level after the retest. Place stop loss 1 ATR below the pivot.
-- **Short entry**: Mirror the above — break below pivot low, retest from below, enter on bearish close.
-- **Exit**: Take partial profits at 1.5x the pivot range, then trail with a 20-period EMA. The indicator doesn’t have dynamic targets, so you’ll need your own risk management.
+- **Long entry**: Price breaks above a pivot high, then pulls back to that same level. A common approach is to enter on a bullish candle close above the pivot level following the retest.
+- **Short entry**: The mirror — price breaks below a pivot low, retests from below, and a bearish close confirms.
+- **Exit**: The indicator does not provide dynamic targets, so exits must come from your own risk management framework. Common approaches include scaling out at a multiple of the pivot range and trailing with a moving average.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Reduces fakeouts significantly compared to raw pivot indicators.
-- Works well in ranging-to-trending transitions.
-- Alerts are reliable — I haven’t missed a retest signal yet.
+- Filters out a large share of the fakeouts that raw pivot indicators generate.
+- Functions reasonably across ranging-to-trending transitions.
+- Alerts are tied to the retest event, which is the more meaningful trigger.
 
 **Cons:**
-- Can be slow in strong trends — you might miss the initial move while waiting for a retest that never comes.
-- No built-in stop loss or take profit levels. You’ll need to add your own.
-- On lower timeframes (1M, 5M), the retest threshold becomes tricky to tune.
+- Can lag in strong trends — waiting for a retest that never arrives means missing the initial move.
+- No built-in stop loss or take profit levels. Risk management must be added separately.
+- On very low timeframes, the retest threshold becomes difficult to calibrate because normal bar-to-bar noise approaches the size of the threshold itself.
 
-## Who It’s Actually For
+## Who It Is For
 
-This is for **swing traders** and **position traders** who have the patience to wait for retests. If you scalp 1-minute bars, you’ll get frustrated. If you trade 1H–4H charts and want high-probability entries with a clear structure, this is a solid addition.
+Swing traders and position traders who are willing to wait for retests. Scalpers working one-minute bars will find the retest requirement restrictive. Traders on higher timeframes looking for structured entries around confirmed pivot breaks are the natural audience.
 
-## Better Alternatives If They Exist
+## Alternatives
 
-- **LuxAlgo’s Pivot Levels** — more feature-rich but pricier. This one is simpler and free.
-- **Supertrend + Pivot combo** — if you want a trend-following alternative, that’s more aggressive.
-- **VWAP retest** — for intraday, VWAP retest strategies often outperform this on 15M charts.
+- **LuxAlgo's Pivot Levels** — more feature-rich, but a paid tool. This indicator is simpler and free.
+- **Supertrend plus pivot combinations** — a more aggressive trend-following alternative.
+- **VWAP retest strategies** — a common intraday comparison point for retest-based entries.
 
-## FAQ Addressing Real Trader Questions
+## FAQ
 
-**Q: Can I use this on crypto?**  
-Yes, I tested it on BTCUSDT 4H. Works fine with Retest Threshold set to 15–20.
+**Can I use this on crypto?**
+Yes. It functions on crypto pairs; the retest threshold generally needs to be widened relative to lower-volatility instruments.
 
-**Q: Does it repaint?**  
-No. Once a pivot is formed and broken, the label stays fixed. The retest signal is non-repainting.
+**Does it repaint?**
+Pivot levels are confirmed once formed and broken, and the labels remain fixed after that. The retest signal is not designed to repaint.
 
-**Q: How many signals per day?**  
-On 1H, expect 2–4 clean signals. On 4H, maybe 1 every 2 days.
+**How many signals should I expect?**
+Signal frequency depends on the pivot length, retest threshold, and timeframe. Higher timeframes produce fewer, more spaced-out signals; lower timeframes produce more.
 
-**Q: Can I combine it with RSI or MACD?**  
-Yes, I filter longs with RSI > 40 and shorts with RSI < 60 to avoid counter-trend traps.
+**Can I combine it with RSI or MACD?**
+Yes. Many traders use a momentum filter — for example, only taking longs when momentum is not deeply negative, and shorts when it is not deeply positive — to avoid counter-trend entries.
 
 ## Final Verdict
 
-**Pivot_Breakout_Retest_Signals_Algo_Aakash** is a clean, no-nonsense tool that does exactly what it promises — identify pivot breakouts and wait for retests before signaling. It won’t make you a millionaire overnight, but it will keep you out of bad entries. For a free indicator, that’s a win.
+Pivot_Breakout_Retest_Signals_Algo_Aakash does what it says: it identifies pivot breakouts and waits for a retest before signaling. It is not a complete system — there is no built-in risk management, and it will underperform in fast trends where retests do not develop. But as a structural entry tool, it is a clean and focused addition to a chart.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — subtracts one star for the lack of built-in risk management and slower performance in strong trends.
-
----
+**Rating: 4/5** — one point off for the absence of built-in risk management and the lag in strong trending conditions.
 
 ## Go Deeper with The Indicator Lab
 

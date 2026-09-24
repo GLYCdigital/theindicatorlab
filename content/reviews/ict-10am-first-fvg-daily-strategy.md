@@ -17,88 +17,91 @@ categories:
 rating: 4
 description: "Honest ICT 10AM First FVG Daily Strategy review: how the fair value gap logic works, tested settings, entry rules, and whether it beats manual FVG marking."
 tv_script_url: "https://www.tradingview.com/script/Za5HKgrL-ICT-10AM-First-FVG-Daily-Strategy/"
+sources: ["https://www.tradingview.com/script/Za5HKgrL-ICT-10AM-First-FVG-Daily-Strategy/"]
 ---
-Most "ICT" indicators on TradingView are repackaged moving averages with a fancy name and a liquidity sweep label slapped on top. This one isn't that. The **Ict_10Am_First_Fvg_Daily_Strategy** does one specific thing: it isolates the first fair value gap that forms *after* the 10:00 AM candle and uses that as the day's directional bias. That's a real ICT concept, mechanically defined, and the script executes it without much hand-waving.
+Most "ICT" indicators on TradingView are repackaged moving averages with a fancy name and a liquidity sweep label slapped on top. This one isn't that. The **ICT 10AM First FVG Daily Strategy** does one specific thing: it isolates the first fair value gap that forms *after* the 10:00 AM candle and uses that as the day's directional bias. That's a real ICT concept, mechanically defined, and the script executes it without much hand-waving.
 
-I ran it across ES, NQ, and GBPUSD on the 5-minute for two weeks. Here's what actually matters.
+## What the Strategy Actually Does
 
-## What the Indicator Actually Does
+The logic is narrow by design. Per the official description, the strategy identifies one setup per New York trading day. It records the 10:00 AM opening price, waits for the first valid three-candle Fair Value Gap, and places a limit order at the FVG's first-touch boundary. Both bullish and bearish setups are supported.
 
-The logic is narrow by design. On each trading day, the script waits for the 10:00 AM (exchange time) candle to close. From there, it scans forward for the first three-candle fair value gap — a bullish FVG where candle 1's high sits below candle 3's low, or a bearish FVG where candle 1's low sits above candle 3's high. The first one that prints becomes the day's signal.
+The timing rule is the core constraint: the middle, or displacement, candle of the FVG must begin at or after 10:00 AM New York time. The 09:59–10:00–10:01 structure is valid; the 09:58–09:59–10:00 structure is rejected. Only the first confirmed FVG of the day is used, and later FVGs are ignored even when the first setup remains unfilled.
 
-Once that gap is identified, the indicator plots the gap zone as a shaded box, draws the midpoint, and marks the bias direction. It also extends the levels to the session close so you can see whether price respects the gap or blows through it.
-
-The MACD panel in the screenshot above is a useful pairing — you can see how the gap often forms right as the MACD histogram flips, which gives confluence without the indicator forcing it on you.
+Once the gap is identified, a limit order goes in at the FVG's first-touch boundary, with a stop and take-profit prepared as a linked bracket.
 
 ## Key Features Worth Noting
 
-- **Time-locked bias.** The 10:00 AM filter is the entire point. Pre-10 AM gaps are ignored, which filters out a lot of the noise that kills generic FVG scripts.
-- **One signal per day.** No signal spam. You get the first FVG, and that's it. If you miss it, you miss the day.
-- **Clean zone rendering.** The gap box doesn't repaint after it's confirmed. I watched it across multiple sessions — once the three candles close, the level is locked.
-- **Session reset.** Everything clears at the daily open, so you're not carrying stale zones into the next session.
+- **Time-locked bias.** The 10:00 AM filter is the entire point. Structures beginning before that candle are rejected, which is what separates this from generic FVG scripts.
+- **One signal per day.** The strategy allows only one setup per New York trading day. Later FVGs are ignored even if the first setup never fills.
+- **Non-repainting design.** FVGs are accepted only after the third candle has closed and the structure is confirmed. The script does not use future bar references, request.security(), or look-ahead settings.
+- **Visual levels that terminate.** All visual levels stop at the actual TP or SL candle. No line or FVG box is extended indefinitely after the trade is completed.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-The defaults are close to usable, but a few tweaks made a real difference:
+The configuration options are structural rather than cosmetic:
 
-- **Timeframe:** 5-minute is the sweet spot. On the 1-minute, you get too many micro-gaps that trigger false confidence. On the 15-minute, the first FVG often doesn't form until noon, which defeats the purpose.
-- **Time zone:** Set this to your exchange's session time, not your local time. If you're trading ES and you leave it on your broker's local time, the 10:00 AM anchor will be wrong and the whole thing falls apart.
-- **Gap fill threshold:** The default treats a wick touch as a fill. I'd recommend switching to body-close fills if you're trading the retest, because wick touches on the 5-minute are usually just noise.
-- **Extend to close:** Keep it on. The visual reference of where the gap sits relative to the session close matters more than the entry arrow.
+- **New York setup starting hour.** This anchors the 10:00 AM logic. Setting it to match the intended session is what makes the rest of the strategy coherent.
+- **Session cancellation and closing hour.** Pending orders are cancelled at the configured session ending time, and open positions can optionally be closed at session end.
+- **Fixed contract quantity.** Position sizing is set directly rather than derived.
+- **Long and short permissions.** Each direction can be enabled or disabled independently.
+- **Friday and weekend protection.** These can prevent new setups near the market transition. The default Friday protection time is 15:45 New York time.
+- **FVG and trade-level visibility.** Controls whether the 10:00 AM opening level, the first valid FVG zone, and the entry, stop-loss and take-profit levels are drawn.
 
-## How I'd Trade It
+## How the Setup Works
 
-The setup is straightforward once you accept the constraint of one trade per day:
+The mechanics are defined per direction rather than left to discretion:
 
-1. Wait for the 10:00 AM candle to close. Do nothing before that.
-2. Watch for the first FVG to print. The indicator will shade it and mark the bias.
-3. Entry is on the retest into the gap — ideally on the 50% level (the midpoint).
-4. Stop goes just beyond the far edge of the gap. If price closes through the gap on the 5-minute, the setup is invalid.
-5. Target the previous day's high/low or the session's opening range extension.
+**Long:** The first confirmed bullish FVG is selected. A buy limit order is placed at the FVG's first-touch boundary. The stop-loss sits below the displacement candle's low. The take-profit is set at the highest directional extreme formed after 10:00 AM and before entry.
 
-The bias direction matters. A bullish FVG after 10 AM in an uptrending session is a much higher-probability trade than the same signal counter to the daily trend. The indicator doesn't tell you that — you have to bring your own context.
+**Short:** The first confirmed bearish FVG is selected. A sell limit order is placed at the FVG's first-touch boundary. The stop-loss sits above the displacement candle's high. The take-profit is set at the lowest directional extreme formed after 10:00 AM and before entry.
+
+While the limit order is waiting, each newly completed pre-entry candle may update the directional target. The candle in which the entry is filled is excluded from target calculation, which prevents the strategy from using price movement that occurs after or during the first-touch entry.
+
+## Order Management
+
+The complete protective bracket is prepared together with the pending entry: entry as a limit order, take-profit as a limit order, stop-loss as a stop order. The TP and SL are linked to the entry and become active as soon as the limit order fills. Pyramiding is disabled.
 
 ## Pros and Cons
 
 **Pros:**
 - Genuinely mechanical ICT concept, not a buzzword wrapper
-- One clean signal per session, no repainting after confirmation
-- The 10 AM filter does real work — it eliminates the pre-market chop that ruins most FVG strategies
-- Lightweight, doesn't clutter the chart
+- One setup per session, with FVGs confirmed only after the third candle closes
+- The 10:00 AM filter is a real constraint, not a cosmetic label
+- Target logic explicitly excludes the entry candle
 
 **Cons:**
-- One trade per day is restrictive if you're looking for more action
-- No built-in alert for the gap formation — you have to watch it or set a manual alert on the zone
-- The 10 AM anchor is hardcoded to exchange time, so crypto traders on 24/7 sessions get odd behavior
-- No backtesting stats or win-rate display, which would help newer traders calibrate expectations
+- One setup per day is restrictive if you want more activity
+- No performance statistics or win-rate display in the script
+- The 10:00 AM anchor is tied to New York session time, so behavior on 24/7 markets differs from the intended use case
 
 ## Who This Is For
 
-This suits discretionary day traders who already understand ICT concepts and want a mechanical guardrail for the first FVG of the session. It's also useful for traders who keep jumping in too early — the 10 AM lock forces patience. If you're a scalper looking for 10 setups a day, or a swing trader on the daily, this isn't built for you.
+This suits discretionary day traders who already understand ICT concepts and want a rule-based guardrail for the first FVG of the New York session. It's also useful for traders who enter too early — the time lock enforces patience. If you're a scalper looking for many setups a day, or a swing trader on the daily, this isn't built for you.
 
 ## Alternatives
 
-If you want broader FVG coverage without the time lock, **LuxAlgo's Smart Money Concepts** is more flexible. If you want pure ICT with more signal types, **TradingRush's ICT Concepts** covers order blocks and liquidity sweeps alongside FVGs. This indicator's edge is its narrowness — the alternatives are better if you want breadth, worse if you want discipline.
+If you want broader FVG coverage without the time lock, other smart-money-concepts scripts are more flexible. If you want pure ICT with more signal types, scripts covering order blocks and liquidity sweeps alongside FVGs offer more breadth. This strategy's edge is its narrowness — the alternatives are better if you want breadth, worse if you want discipline.
 
 ## FAQ
 
 **Does it repaint?**
-No. Once the three-candle FVG closes, the zone locks. I verified this across multiple sessions.
+Per the official description, FVGs are accepted only after the third candle has closed and the structure is confirmed, and the script uses no future bar references, request.security(), or look-ahead settings. Normal historical testing and Bar Magnifier testing produced identical trades across the validated MNQ 1-minute test window. Same-candle entry and exit behavior may still depend on TradingView's historical broker-emulator assumptions.
 
 **What timeframe should I use?**
-5-minute on futures and forex. 1-minute generates too much noise.
+The source material does not prescribe a timeframe. The validated test window referenced is MNQ 1-minute.
 
 **Can I use it on crypto?**
-Yes, but the 10 AM anchor is based on exchange session time, so on 24/7 markets the logic is less meaningful.
+The source material does not address crypto. The strategy is defined around the New York session, so the 10:00 AM anchor assumes a session-based market.
 
 **Does it give buy/sell signals?**
-It marks bias direction and the gap zone. It doesn't print arrows — you decide the entry.
+It places a limit order at the FVG's first-touch boundary with a linked TP and SL, and it can display the 10:00 AM opening level, the first valid FVG zone, and the entry, stop-loss and take-profit levels on the chart.
 
 ## Final Verdict
 
-The Ict_10Am_First_Fvg_Daily_Strategy does one thing and does it well. It's not a complete trading system — you still need context, risk management, and a target framework. But as a mechanical filter for the first fair value gap of the session, it's cleaner than most ICT scripts on TradingView, and the 10 AM lock is a genuinely useful constraint.
+The ICT 10AM First FVG Daily Strategy does one thing and does it well. It's not a complete trading system — you still need context, risk management, and a target framework. But as a mechanical filter for the first fair value gap of the New York session, the logic is coherent and the 10:00 AM lock is a genuinely useful constraint.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — loses a star for the missing alerts and the lack of any performance stats, but the core logic is sound and it earns its place on my 5-minute charts.
+The official notice is worth repeating: this strategy is intended for research, backtesting and educational use, historical performance does not guarantee future results, and commission, spread, slippage, contract specifications and real execution conditions should be configured and independently evaluated before live use.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

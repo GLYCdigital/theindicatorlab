@@ -17,93 +17,89 @@ categories:
 rating: 4
 description: "Hands-on Uptrick_Adaptive_Trend_Trail review: settings, entry/exit logic, pros/cons, and who should use this adaptive trailing stop."
 tv_script_url: "https://www.tradingview.com/script/f4N0F439-Uptrick-Adaptive-Trend-Trail/"
+sources: ["https://www.tradingview.com/script/f4N0F439-Uptrick-Adaptive-Trend-Trail/"]
 ---
-I’ll be honest: I’ve seen a hundred “adaptive trend” indicators that all do the same thing — they repaint, they lag, or they blow up your screen with alarms. The Uptrick_Adaptive_Trend_Trail is not that. It’s a serious trend-following tool that actually adjusts its own sensitivity based on market volatility. After running it on BTC, EUR/USD, and a couple of mid-cap stocks, here’s what I found.
+I’ll be honest: “adaptive trend” indicators are a crowded category, and most of them are either static ATR trails with a new name or lagging line-flip tools. Uptrick: Adaptive Trend Trail is a different design. Its state is derived from nine weighted measurements and its strictness changes with measured directional efficiency and volatility, rather than being fixed. Here’s what the script actually does, based on its own documentation.
 
 **What It Actually Does**
 
-The core idea is simple: a trailing stop that adapts. Instead of a fixed ATR multiplier or a static percentage, the indicator dynamically widens or tightens its trail based on recent price action. When volatility spikes, the trail pulls back further to avoid getting shaken out by noise. When the market calms down, it tightens to lock in profits faster.
+The core idea is a trend state driven by a composite regime score, not a single crossover. The script holds one of three states — bullish, bearish or neutral, with neutral applying only before the first confirmed flip on the chart.
 
-What you see on the chart is a colored line (or band, depending on your settings) that follows price. When price is above the line, it’s bullish. Below? Bearish. The line itself is the stop-loss reference — no repainting, which is a huge plus. As shown in the chart above, the line smoothly curved around pullbacks during a trending move on the MACD screenshot, only flipping after a genuine structure break, not a random wick.
+Nine weighted fields are blended into one regime value, then smoothed with a 3-period EMA. That value must clear a dynamic gate whose size grows with selectivity, chop and volatility deviation. Price must also be displaced from an EMA baseline by an ATR-scaled amount, momentum must have the correct sign, and the internal Supertrend vote must be confirmed and persistent. Only then does a candidate exist, and that candidate must persist for one to three consecutive bars depending on chop, with a cooldown of six to ten bars since the last flip.
+
+The state is visualized through a layered ATR trail or volatility bands, recolored candles, and reversal labels. Before the first flip, the state is neutral, candles are yellow, and the trail layers sit flat on the baseline.
 
 **Key Features That Matter**
 
-The standout feature is the **volatility adaptation engine**. It doesn’t just use one ATR period — it blends multiple lookbacks and applies a smoothing function that makes the trail responsive without being twitchy. This is different from typical Chandelier or SuperTrend implementations that use a single, fixed ATR multiple.
+The standout mechanism is the **directional efficiency engine**. It measures net movement against total path traveled over 10 bars, clamped between 0 and 1. Chop is one minus that value, and chop is the central control variable of the script: it changes how many Supertrends must agree, how many bars a signal must persist, how wide the hysteresis gate is, and how long the cooldown lasts. That is what lets one configuration behave differently in high-efficiency and low-efficiency conditions without the user changing settings.
 
-Second, the **flip confirmation logic** is solid. Many trend indicators flip instantly on a close, giving you false signals at the end of a trend. This one requires a confirmed close beyond the trail, plus a momentum filter (which you can toggle). It reduces whipsaw noticeably on ranging days.
+Second, the **Supertrend confirmation layer** uses three internally calculated Supertrends at different ATR lengths rather than one. Three produce a vote count, which serves both as a gate — two of three normally, three of three when chop exceeds 0.70 — and as a continuous input to the score. Their ATR multipliers are not fixed: chop and volatility expansion are added on top of the user’s base factor, with the slow Supertrend receiving the largest adjustment.
 
-Third, there’s a **multi-timeframe option** built in. You can set the trail to reference a higher timeframe trend while executing on the current chart. That’s a feature usually reserved for paid strategies. It’s not perfect — the higher-timeframe signal lags more — but for swing trading, it’s a game-changer.
+Third, there is a **strong-move path** that can bypass the candidate persistence requirement and the cooldown when all three Supertrends agree unanimously, the score exceeds the gate by an additional margin, momentum is strong and efficiency is above 0.42. It does not bypass the underlying Supertrend persistence requirement. A takeover rule also requires the fast Supertrend plus at least one slower one to align with the new direction, so a flip cannot occur against the shorter-term Supertrend structure.
 
-**Best Settings I Tested**
+**Settings and How to Tune Them**
 
-After a week of backtesting on daily and 4-hour charts:
+The inputs are grouped into four sections.
 
-- **ATR Length**: 14 (default is fine, but drop to 10 if you trade lower timeframes like the 15-minute)
-- **ATR Multiplier**: 2.5 — I found 3.0 too loose on crypto, 2.0 too tight on stocks like AAPL
-- **Smoothing Factor**: 5 — this is the sweet spot. Higher values (8+) make the line too smooth and slow to react to reversals
-- **Enable Higher Timeframe Filter**: On, set to 2x your current timeframe. For day trading the 1-hour, use the 4-hour as a filter.
+**Trend Engine.** Trend Length sets the primary EMA baseline used for the overlay, the distance field and the baseline slope field, and it also determines two internally derived lengths: the slower HL2 baseline and the structure-break lookback. Momentum Length sets the lookback for directional momentum before ATR normalization. Signal Selectivity raises both the hysteresis gate and the required price displacement — higher values produce fewer state changes.
 
-The indicator performs best on 4-hour and daily charts. On lower timeframes, the adaptive nature helps, but you’ll still get chopped up in tight ranges. It’s a trend-following tool — don’t expect it to solve sideways markets.
+**Supertrend Confirmation.** Fast, Medium and Slow Length set the ATR lengths of the three internal Supertrends; Fast, Medium and Slow Factor set their base ATR multipliers before adaptive widening.
 
-**How to Use It (Entry and Exit Logic)**
+**Overlay.** Overlay selects Trail, Bands or None. Width scales the distance of all trail layers and band levels from the baseline. Smoothness smooths the baseline and ATR used to build the overlay geometry, and is applied a second time when Bands mode is selected.
 
-The most logical way to trade this:
+**Valuation.** Meter Size controls whether the meter is shown and how many segments it uses. Position places it on the chart.
 
-**Long Entry**: Wait for the trail to flip from red to green (or below to above price, depending on color settings). Don’t enter immediately — wait for the first pullback to the trail line that holds. That’s your low-risk entry. Place your stop just below the trail.
+Two things are worth knowing about how these interact. Width and Smoothness do not affect the trend engine, so flips and alerts are identical regardless of their values. Both do change the Data Window statistics, because the stop used by the internal simulation is drawn from the outer trail layer. And the documentation is explicit that the defaults are a starting point rather than an optimized configuration.
 
-**Exit**: Ride the trend until the trail flips. For partial exits, take 50% off when price extends 2x the average trail distance from entry, and let the rest run. This works because the trail adapts — in strong trends, it gives you room; in weak ones, it kicks you out early.
+**How to Use It**
 
-**Avoid**: Chasing a fresh flip when price is already extended from the trail. The indicator will flip, but your risk-reward is terrible. Wait for the pullback.
+Add the indicator to a clean chart and read the current state from the candle color and the overlay side. In Trail mode the layers are constructed below the smoothed baseline while the state is bullish and above it while the state is bearish. In Bands mode the three levels on each side show how far price has extended from the baseline in ATR terms.
 
-**Pros & Cons (Honest Trade-Offs)**
+If you are getting more state changes than you want, increase Signal Selectivity, or increase Trend Length for a slower baseline. Increasing the Supertrend factors requires larger moves before the internal confirmation layer will agree; reducing factors and lengths gives faster and noisier behavior. The two alerts fire on confirmed bars when the state changes.
+
+**Pros and Cons**
 
 **Pros:**
-- No repainting — critical for live trading
-- Adaptive trail genuinely reduces whipsaw compared to fixed-ATR alternatives
-- Higher-timeframe filter is a legitimate edge for swing traders
-- Clean, uncluttered chart — just one line and optional coloring
+- State changes are evaluated on confirmed bars only, so the state does not flip on an unclosed bar
+- The strictness of the decision is tied to measured directional efficiency and volatility rather than held fixed
+- No single measurement can force a state change on its own — the composite score, displacement filter, momentum sign filter, Supertrend vote and takeover rule all have to line up
+- Distance and momentum are ATR-normalized, so the same threshold values remain meaningful across instruments with very different nominal prices
 
 **Cons:**
-- Not a standalone system. You still need a trend filter or market regime check. It will get chopped in ranging markets, adaptation or not.
-- The settings panel is a bit overwhelming at first. There are 12+ inputs, and the documentation inside the indicator is thin.
-- Slightly slower to flip than SuperTrend. You’ll give up some profit on sharp reversals. That’s the price you pay for fewer false signals.
+- Not a standalone system. The documentation describes it as a decision-support tool for discretionary trend reading, to be used alongside your own analysis and risk management
+- Because confirmation, persistence, takeover and cooldown conditions must all be satisfied, a flip can occur after price has already moved some distance from where the previous state ended
+- The input list is substantial, and the interaction between Width, Smoothness and the Data Window statistics is not obvious at first
+- The chart begins in a neutral state until the first flip is accepted
 
 **Who It’s For**
 
-This is for **swing traders and position traders** who want a reliable, objective stop-loss that doesn’t require constant manual adjustment. If you’re a day trader on the 5-minute chart, skip it — you’ll get frustrated. If you’re a trend-following investor who wants to automate exits and catch multi-week moves, this is a great fit.
+This is for traders who want a trend state that prioritizes confirmation over earliest possible detection, and who are willing to read the overlay rather than trade every flip mechanically. The documentation is blunt that the mechanisms intentionally prioritize confirmation, and that the trade-off cannot be removed by settings, only shifted. Behavior varies substantially between symbols and timeframes.
+
+**The Data Window Caveat**
+
+The Data Window values come from a simplified internal historical trade simulation implemented inside the indicator. The script is an indicator, not a TradingView strategy, so these are not Strategy Tester results and no Strategy Tester properties apply. The simulation opens a position at the close of each flip bar and closes it on either an opposite flip or a stop. Starting equity is 10000, full equity is used on every position, and fees are applied at entry and exit. The return figure includes unrealized profit or loss on any position still open, so it is not a closed-trade-only figure. No slippage, spread, funding cost or gap-through-stop execution is modelled, there is no take profit, and positions are never partially closed. The stated purpose is to compare the effect of different settings against one another on the same symbol, not to model a tradable account.
 
 **Alternatives to Consider**
 
-- **SuperTrend (built-in)**: Free, simpler, but static. Use it if you don’t want to fiddle with settings.
-- **Chandelier Exit (built-in)**: Good for trailing stops, but no trend direction signal.
-- **LuxAlgo Supertrend**: More features, but heavier and slower on low timeframes.
-- **Pine Script custom trails**: If you code, you can build this yourself — but the adaptive logic here is genuinely hard to replicate quickly.
+- **A single Supertrend**: simpler, but returns a binary direction with no measure of agreement
+- **A moving average cross**: responds slowly, and produces no volatility context on its own
+- **A single oscillator threshold**: carries no information about price structure or volatility state
+- **A fixed-ATR trailing stop**: does not change its behavior between high-efficiency and low-efficiency conditions
 
-**FAQ (Real Questions Traders Ask)**
+**FAQ**
 
-**Does it repaint?** No. The trail is calculated on confirmed bars only. You can verify this by flipping back and forth between timeframes.
+**Does it repaint?** State changes are evaluated on confirmed bars only, so the state does not flip on an unclosed bar. Values on the current unclosed bar can change until that bar closes.
 
-**Can I use it for crypto?** Yes, and it works well on BTC and ETH daily charts. Use the higher-timeframe filter set to 2x to avoid weekend chop.
+**What is the neutral state?** It applies only before the first confirmed flip on the chart. Candles are yellow and the trail layers sit flat on the baseline during that period.
 
-**Does it work for options?** Yes, as an exit signal for long premium plays. The adaptive trail helps you stay in winning positions longer.
+**Does the valuation meter measure fair value?** No. It is a positioning display for 3-period smoothed RSI(14) and is not part of the trend decision.
 
-**What’s the best timeframe?** 4-hour and daily. It works on 1-hour but expect more whipsaw.
+**What is the best timeframe?** The source material does not specify one. It states that behavior varies substantially between symbols and timeframes.
 
 **Final Verdict**
 
-The Uptrick_Adaptive_Trend_Trail earns **4 out of 5 stars**. It’s not a holy grail — nothing is — but it’s a well-built, reliable trend tool that does what it promises. The adaptive trail is a genuine improvement over static alternatives, and the higher-timeframe filter pushes it above the average TradingView indicator. Deduct one star because it’s not beginner-friendly and still requires a market regime filter to avoid ranging markets. If you’re a swing trader who wants to automate your exits with confidence, this is worth the install. Just take the time to dial in the settings for your specific instrument — the defaults are okay, but the real edge comes from tweaking.
+Uptrick: Adaptive Trend Trail is a genuine composite design rather than a repackaged ATR trail. The nine-field score, the three-Supertrend vote, the chop-driven strictness and the takeover rule all serve one stated goal: require more evidence before accepting a state change when measured directional efficiency is low. The cost of that goal is baked in — flips can arrive after price has already moved, and the trade-off can be shifted by settings but not removed. The valuation meter and internal simulation are context tools on the same chart, not a track record. Treat it as a decision-support overlay and it does what it says.
 
-**Rating: ⭐⭐⭐⭐**
-
-## Frequently Asked Questions
-
-### Is Uptrick_Adaptive_Trend_Trail worth it?
-
-Based on testing across multiple timeframes, Uptrick_Adaptive_Trend_Trail delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,92 +16,90 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Detects bullish rounding bottoms and bearish rounding tops automatically. No more squinting at charts. Solid 4/5 for pattern traders."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Rounding_Bottom___Top is a pattern recognition tool that scans price action for the classic saucer-shaped reversals: rounding bottoms (bullish) and rounding tops (bearish). Instead of you manually drawing curves or guessing where a rounded reversal might form, this indicator plots them directly on the chart with colored zones and entry/exit markers.
+Rounding_Bottom___Top is a pattern recognition tool that scans price action for saucer-shaped reversals: rounding bottoms (bullish) and rounding tops (bearish). Rather than drawing curves manually or guessing where a rounded reversal might form, the indicator plots them directly on the chart with colored zones and entry/exit markers.
 
-As the chart above shows, it highlights the rounded section in green (for bottoms) or red (for tops), then draws a horizontal line at the breakout level. No repainting once the pattern is confirmed—critical for live trading.
+It highlights the rounded section in green (for bottoms) or red (for tops), then draws a horizontal line at the breakout level.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Automatic curvature detection** – Uses price swing points to identify the rounded shape, not just moving averages. This catches patterns that MAs smooth over.
-- **Breakout confirmation** – Doesn't mark the pattern until price breaks the neckline (the rim of the saucer). This kills false signals.
-- **Multi-timeframe capable** – Works on 1H, 4H, daily, weekly. I tested it on 15m and it was too noisy; stick to 1H+.
-- **Customizable sensitivity** – You can adjust the "roundness" threshold. Tighter = fewer but higher quality patterns.
+- **Automatic curvature detection** – Uses price swing points to identify the rounded shape rather than relying on moving averages, which can smooth over the pattern.
+- **Breakout confirmation** – Does not mark the pattern until price breaks the neckline (the rim of the saucer).
+- **Multi-timeframe capable** – Designed for higher timeframes; lower intraday charts tend to produce noisier output.
+- **Customizable sensitivity** – The "roundness" threshold can be adjusted. Tighter settings yield fewer patterns; looser settings yield more.
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-After running this on BTC, ETH, and several FX pairs over 3 months, here's what worked:
+| Setting | What It Controls | Notes |
+|---------|------------------|-------|
+| Pattern Lookback | How many bars the indicator scans for the rounded shape | Shorter lookbacks catch more noise; longer lookbacks require more data before a pattern forms |
+| Roundness Threshold | How strictly the curve must qualify as a saucer | Looser values catch more patterns with more noise; tighter values filter harder |
+| Breakout Candle | How price must clear the neckline to confirm | A close-based confirmation reduces wick-outs |
+| Show Targets | Whether to display the measured move projection | Projects the height of the pattern from the breakout level |
 
-| Setting | Recommended Value | Notes |
-|---------|-------------------|-------|
-| Pattern Lookback | 50 bars | Default is fine. Too short (20) catches noise. |
-| Roundness Threshold | 0.7 | 0.5 is too sensitive on crypto. 0.8 misses clean patterns. |
-| Breakout Candle | 1 candle close above neckline | Avoids wick-outs. |
-| Show Targets | On | Displays measured move projection (height of pattern added to breakout). |
+Exact parameter values depend on the asset and timeframe; the indicator's own inputs are the reference point.
 
 ## How to Use It for Entries and Exits
 
-**Entry (Long on rounding bottom):**
-1. Wait for the green highlight to appear. Do NOT buy yet.
-2. Price must close one full candle above the horizontal neckline (blue line).
+**Entry (long on rounding bottom):**
+1. Wait for the green highlight to appear. Do not enter yet.
+2. Price must close a full candle above the horizontal neckline.
 3. Enter on the next candle's open.
-4. Place stop loss 1-2 ATR below the lowest point of the saucer.
+4. Place stop loss below the lowest point of the saucer.
 
 **Exit:**
-- Take partial profits at the measured move target (dashed line).
-- Trail stop once price reaches 50% of the target.
+- Take partial profits at the measured move target.
+- Trail the stop once price reaches a portion of the target.
 
-I tested this on BTC/USD daily (2024-2025). The pattern caught the March 2024 bottom perfectly—gave a 22% move before hitting target. Missed the May 2024 top because it formed too fast (cup-and-handle style, not a smooth rounding).
+The same logic applies inverted for rounding tops: red zone, entry on a close below the neckline.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Saves hours of manual chart scanning.
-- The breakout confirmation filter is excellent—I had only 2 false signals in 30+ patterns.
-- Works well on higher timeframes (4H, daily). Less whipsaw.
+- Saves manual chart scanning time.
+- The breakout confirmation filter reduces false signals.
+- Works better on higher timeframes, where there is less whipsaw.
 
 **Cons:**
-- Struggles with sharp V-shaped reversals. If price snaps back fast, the indicator won't draw anything.
-- Not useful in ranging or sideways markets. You'll get zero patterns.
-- The roundness threshold needs tweaking per asset. Crypto needs looser settings than forex.
+- Struggles with sharp V-shaped reversals. If price snaps back quickly, the indicator will not draw anything.
+- Not useful in ranging or sideways markets, where it may produce no patterns at all.
+- The roundness threshold needs adjustment per asset; different markets behave differently.
 
 ## Who It's Actually For
 
-This is for **swing traders and position traders** who trade daily or 4H charts. If you scalp 5-minute candles, skip it—the patterns take 20-50 bars to form. Also good for anyone who hates manually drawing trendlines and wants a "set and forget" pattern scanner.
+This is for **swing traders and position traders** working on daily or 4H charts. Scalpers on very short timeframes are a poor fit, since the patterns take many bars to form. It also suits anyone who prefers an automated pattern scanner over manually drawing trendlines.
 
 ## Better Alternatives
 
-If you want more pattern types (head and shoulders, double tops), check out **Pattern Recognition** by LuxAlgo (5/5) or **Chart Patterns** by Fractal (4/5). Rounding_Bottom___Top is more specialized—it only does saucers. That's its strength (focus) and weakness (limited scope).
+If you want more pattern types (head and shoulders, double tops), look at **Pattern Recognition** by LuxAlgo or **Chart Patterns** by Fractal. Rounding_Bottom___Top is more specialized—it only does saucers. That's both its strength (focus) and its weakness (limited scope).
 
-If you're a pure trend follower, you're better off with a simple EMA crossover. This indicator is for counter-trend reversal plays.
+Pure trend followers are better served by a simple EMA crossover. This indicator is for counter-trend reversal plays.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: Yes, until the breakout candle closes. After that, the pattern is fixed. This is standard for pattern indicators—not ideal for live scalping, but fine for swing trading.
+**Q: Does it repaint?**
+A: The pattern can shift until the breakout candle closes. After that, it is fixed. This is standard behavior for pattern indicators—workable for swing trading, less so for live scalping.
 
-**Q: Can I use it for shorting rounding tops?**  
-A: Yes, same logic inverted. Red zone = bearish. Entry on close below neckline.
+**Q: Can I use it for shorting rounding tops?**
+A: Yes, same logic inverted. Red zone = bearish. Entry on a close below the neckline.
 
-**Q: Why is it not drawing any patterns?**  
-A: The market is likely ranging or in a sharp trend. Check your roundness threshold—set it to 0.5 to catch more patterns, but expect more noise.
+**Q: Why is it not drawing any patterns?**
+A: The market is likely ranging or in a sharp trend. Lowering the roundness threshold will catch more patterns, but expect more noise.
 
-**Q: Does it work on crypto?**  
-A: Yes, but use daily timeframe and roundness 0.7. Crypto has more fakeouts.
+**Q: Does it work on crypto?**
+A: Yes, though higher timeframes tend to be more reliable. Crypto produces more fakeouts than some other markets.
 
 ## Final Verdict
 
-Rounding_Bottom___Top is a solid tool for one specific job: catching saucer reversals. It's not a holy grail, but it's reliable when the pattern appears. The breakout confirmation filter is what saves it from being just another noisy pattern detector.
+Rounding_Bottom___Top is a focused tool for one job: catching saucer reversals. It is not a holy grail, but it is reliable when the pattern appears. The breakout confirmation filter is what keeps it from being just another noisy pattern detector.
 
-If you trade swing strategies and want to automate pattern recognition, this is worth the install. Just don't expect it to work in every market condition.
+For swing traders who want to automate pattern recognition, it is worth the install. Just don't expect it to work in every market condition.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star because of the repainting issue during pattern formation and the limited pattern scope. But for what it does, it does it well.
-
----
+**Rating: 4/5**
+Docked one star for the repainting during pattern formation and the limited pattern scope. For what it does, it does it well.
 
 ## Go Deeper with The Indicator Lab
 

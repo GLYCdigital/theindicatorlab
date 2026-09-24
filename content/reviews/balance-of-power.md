@@ -16,75 +16,70 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Balance Of Power review: a volume-weighted momentum oscillator that reveals hidden buying/selling pressure. Settings, entry rules, and real-testing results."
+grounding: "none (no source found)"
 ---
-
 **Rating:** ⭐⭐⭐⭐ (4/5)
 
-**Description:** Honest Balance Of Power review: a volume-weighted momentum oscillator that reveals hidden buying/selling pressure. Settings, entry rules, and real-testing results.
+**Description:** An honest Balance Of Power review: a volume-weighted momentum oscillator that aims to reveal hidden buying and selling pressure. Settings, entry rules, and how to use it.
 
 ---
 
-If you've ever watched a stock grind sideways while you *feel* like buyers are quietly accumulating, this indicator is your translator. The **Balance Of Power (BOP)** is one of those rare tools that actually measures the tug-of-war between buyers and sellers using volume and price action—not just price alone.
-
-I've tested this across dozens of symbols over the last two weeks, and here's the unfiltered truth.
+If you've ever watched a stock grind sideways while it *feels* like buyers are quietly accumulating, this indicator is meant to be your translator. The **Balance Of Power (BOP)** is one of those tools that attempts to measure the tug-of-war between buyers and sellers using volume and price action—not just price alone.
 
 ### What This Indicator Actually Does
 
-BOP calculates the ratio of buying volume to selling volume in a single formula: `(Close - Open) / (High - Low) * Volume`. The result is a clean oscillator that swings between -1 and +1.
+BOP is built around the ratio of buying pressure to selling pressure in a single formula: `(Close - Open) / (High - Low) * Volume`. The result is an oscillator that swings between -1 and +1.
 
-- **Positive values** = buyers are in control (green bars above zero)
-- **Negative values** = sellers are in control (red bars below zero)
+- **Positive values** = buyers are in control (bars above zero)
+- **Negative values** = sellers are in control (bars below zero)
 
-What sets it apart from a basic RSI or MACD? It's volume-weighted. A small price move on huge volume will show more conviction than a big price move on thin air. That's the edge.
+What separates it from a basic RSI or MACD is that it's volume-weighted. A small price move on heavy volume will register more conviction than a big price move on thin volume. That's the premise.
 
 ### Key Features That Set It Apart
 
 - **Volume-weighted signals** – most momentum indicators ignore volume. BOP doesn't.
 - **Clean histogram** – no moving averages crossing, no lines to interpret. Just bars.
-- **Divergence-ready** – works beautifully for spotting hidden reversals.
+- **Divergence-ready** – can be used for spotting potential reversals.
 - **Zero-lag behavior** – because it's calculated each bar from raw data, not smoothed.
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-Default settings are fine: **period = 1**. This keeps it raw. But here's my tweak:
+The default period keeps the reading raw. Many users apply a small amount of smoothing to filter noise, but this trades off some responsiveness—the more smoothing you add, the less immediate the signal becomes.
 
-- **Period: 3** – adds a slight smoothing to filter out noise without lag.
-- **Smoothing type: SMA** – simple works best here.
-- **Color scheme: Green for positive, Red for negative** – standard, but change the shade to a muted green (like #00A97F) to avoid eye strain.
+- **Period** – a low value keeps the oscillator raw; a higher value smooths it.
+- **Smoothing type** – a simple moving average is the most common choice.
+- **Color scheme** – typically one color for positive readings and another for negative.
 
-**Pro tip:** Don't apply a moving average to the BOP line. It kills the responsiveness.
+A common caution: applying a moving average to the BOP line itself reduces its responsiveness.
 
 ### How to Use It for Entries and Exits
 
 **Long entry setup:**
 1. BOP crosses above zero from a negative reading.
-2. Price is above the 20 EMA.
+2. Price is above a trend filter such as a moving average.
 3. Volume is increasing (check the volume pane).
 4. Enter on the next candle close.
 
 **Short entry setup:**
 1. BOP crosses below zero from a positive reading.
-2. Price is below the 20 EMA.
+2. Price is below a trend filter.
 3. Volume confirms.
 4. Enter on next candle close.
 
 **Exit rules:**
-- Trail with a 2-ATR stop.
+- Trail with an ATR-based stop.
 - Exit when BOP reverses below (or above) zero.
 
-**Divergence play (higher timeframe):**
+**Divergence play:**
 - Look for **bullish divergence**: price makes a lower low, BOP makes a higher low.
 - Look for **bearish divergence**: price makes a higher high, BOP makes a lower high.
-
-In the chart above, you can see a clear bullish divergence on the 15-minute EUR/USD where BOP bottomed while price dipped—price rallied 12 pips soon after.
 
 ### Honest Pros and Cons
 
 **Pros:**
-- Volume integration makes it more reliable than pure price oscillators.
-- Works on any timeframe (1m to weekly).
-- No repainting.
-- Extremely simple to set up—no config headaches.
+- Volume integration makes it more informative than pure price oscillators.
+- Can be applied across timeframes.
+- Simple to set up—no config headaches.
 
 **Cons:**
 - On low-volume assets (penny stocks, illiquid forex pairs), BOP becomes noise.
@@ -94,42 +89,38 @@ In the chart above, you can see a clear bullish divergence on the 15-minute EUR/
 ### Who It's Actually For
 
 - **Swing traders** who want to confirm accumulation/distribution.
-- **Scalpers** using 1m/5m with high volume stocks.
-- **Forex traders** on major pairs (EUR/USD, GBP/USD) with decent liquidity.
+- **Scalpers** using short timeframes on high-volume stocks.
+- **Forex traders** on major pairs with decent liquidity.
 
-Not for: Options traders, crypto traders on low-cap coins, or anyone who hates looking at histograms.
+Not for: options traders, crypto traders on low-cap coins, or anyone who hates looking at histograms.
 
 ### Better Alternatives If They Exist
 
 - **Volume Profile** – if you want to see exact volume nodes, this is better.
-- **Chaikin Money Flow** – similar concept but uses accumulation/distribution line.
+- **Chaikin Money Flow** – similar concept but uses the accumulation/distribution line.
 - **Raw Volume** – simpler, no calculation, but lacks momentum context.
 
 If you already use **Money Flow Index (MFI)**, BOP is a lighter, faster cousin.
 
 ### FAQ
 
-**Q: Does Balance Of Power repaint?**  
-A: No. It closes with the bar and never updates. Safe for backtesting.
+**Q: Does Balance Of Power repaint?**
+A: It closes with the bar; it is not designed to update intrabar.
 
-**Q: Can I use it on crypto?**  
-A: Yes, but only on high-cap coins (BTC, ETH). On shitcoins with fake volume, it's useless.
+**Q: Can I use it on crypto?**
+A: Yes, but be cautious on low-cap coins with unreliable volume.
 
-**Q: What's the best timeframe?**  
-A: 15-minute for day trading, 1-hour for swing trading.
+**Q: What's the best timeframe?**
+A: There is no single best timeframe—shorter timeframes suit day trading, longer ones suit swing trading.
 
-**Q: Should I combine it with anything?**  
-A: Yes—price action (support/resistance) and a volume filter. Alone, it's too noisy.
+**Q: Should I combine it with anything?**
+A: Yes—price action (support/resistance) and a volume filter. Alone, it can be noisy.
 
 ### Final Verdict
 
-The Balance Of Power indicator is a solid 4-star tool that fills a gap most traders ignore: volume-weighted momentum. It's not flashy, but it's honest. If you pair it with a trend filter and a volume check, you'll catch moves that RSI and MACD miss.
+The Balance Of Power indicator is a solid tool that fills a gap many traders ignore: volume-weighted momentum. It isn't flashy, but it's honest. Paired with a trend filter and a volume check, it can help catch moves that RSI and MACD miss.
 
-Is it the holy grail? No. But it's a damn good compass in a noisy market.
-
-**Try it on:** EUR/USD 15-minute with a 20 EMA. You'll thank me later.
-
----
+Is it the holy grail? No. But it's a reasonable compass in a noisy market.
 
 ## Go Deeper with The Indicator Lab
 

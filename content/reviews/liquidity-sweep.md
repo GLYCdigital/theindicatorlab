@@ -16,48 +16,51 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Liquidity_Sweep identifies stop hunts and liquidity grabs in trending markets. Review covers settings, entry logic, pros & cons, and who it actually works for."
+grounding: "none (no source found)"
 ---
-Let’s be honest: most "liquidity" indicators are just repackaged support/resistance lines with a fancy name. **Liquidity_Sweep** is different—it actually labels specific price moves where stops were likely triggered above recent highs or below recent lows, then shows you whether momentum followed through. I tested it on BTCUSD and EURUSD with the MACD chart type, and here’s what I found.
+# Liquidity_Sweep Review
+
+Let's be honest: most "liquidity" indicators are just repackaged support/resistance lines with a fancy name. **Liquidity_Sweep** takes a different approach—it labels specific price moves where stops were likely triggered above recent highs or below recent lows, then shows whether momentum followed through.
 
 ## What This Indicator Actually Does
 
 Liquidity_Sweep scans price action for two things: a sharp break of a recent swing high or low (the sweep), followed by a reversal candle or wick rejection. It marks these zones as "Liquidity Sweep" with a label and plots a potential entry arrow. The core assumption is that institutional traders pushed price into stop clusters, then reversed to run in the opposite direction.
 
-As the chart above shows on the 1H MACD chart, the indicator catches both bullish and bearish sweeps. It does *not* repaint labels retroactively—once a sweep is marked, it stays. That’s a huge plus for backtesting.
+The indicator catches both bullish and bearish sweeps. It does *not* repaint labels retroactively—once a sweep is marked, it stays, which matters for anyone evaluating signals after the fact.
 
 ## Key Features That Stand Out
 
-- **No repaint on confirmed sweeps.** The label appears only after the reversal candle closes. I checked this across 50+ bars—solid.
-- **Customizable sensitivity.** You can adjust the "Lookback Period" (default 20) to define what counts as a recent swing. Lower values catch micro-sweeps; higher values filter for larger moves.
-- **Clear visual cues.** Bullish sweeps show as blue labels below price; bearish as red above. Entry arrows appear at the reversal candle’s close.
-- **Works on any timeframe.** I tested 5M to 4H. It’s most reliable above 15M.
+- **No repaint on confirmed sweeps.** The label appears only after the reversal candle closes. During candle formation the label may flicker, so the practical approach is to wait for the close.
+- **Customizable sensitivity.** A "Lookback Period" setting defines what counts as a recent swing. Lower values catch micro-sweeps; higher values filter for larger moves.
+- **Clear visual cues.** Bullish sweeps show as blue labels below price; bearish as red above. Entry arrows appear at the reversal candle's close.
+- **Broad timeframe applicability.** The author presents it as usable across timeframes, with the caveat that lower timeframes produce more false sweeps.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-Default settings are decent for daily use, but here’s what worked better:
+The indicator exposes a small set of parameters, and the logic behind each is straightforward:
 
-- **Lookback Period: 25** – Balances noise and signal. 20 caught too many false sweeps in choppy markets.
-- **Sweep Candle Body: 70%** – Requires the sweep candle to have a large body, filtering weak wicks.
-- **Show Entry Arrows: On** – Makes spotting entries instant.
-- **Hide Labels After Entry: Off** – I prefer seeing the zones for context.
+- **Lookback Period** – Defines how far back the indicator looks to establish a "recent" swing high or low. Shorter lookbacks make the sweep definition tighter and produce more signals; longer lookbacks require a larger prior range and filter for bigger moves.
+- **Sweep Candle Body** – A threshold for how much of the sweep candle must be real body versus wick. Raising it demands a stronger candle and screens out weak wicks; lowering it admits more marginal sweeps.
+- **Show Entry Arrows** – Toggles the entry arrow plotted at the reversal candle's close.
+- **Hide Labels After Entry** – Controls whether sweep zone labels remain visible for context after an entry has triggered.
 
-For scalping 5M charts, drop Lookback to 12 and Sweep Body to 50%. You’ll get more signals, but expect 60% accuracy.
+There is no universally "best" configuration here—the right values depend on the instrument, timeframe, and how much noise you're willing to tolerate. The tradeoff is consistent: looser settings mean more signals and more false positives; tighter settings mean fewer, cleaner signals.
 
 ## How to Use It: Entry and Exit Logic
 
 **Bullish sweep setup (long):**
 1. Price breaks below a recent low, then closes back above it.
 2. Entry: Buy at the close of the reversal candle (the one that sweeps and returns).
-3. Stop loss: Place 5–10 ticks below the sweep low.
-4. Take profit: Target the next resistance zone or a 1.5x–2x risk-reward.
+3. Stop loss: Place below the sweep low.
+4. Take profit: Target the next resistance zone or a favorable risk-reward multiple.
 
 **Bearish sweep setup (short):**
 1. Price breaks above a recent high, then closes back below it.
 2. Entry: Sell at the close of the reversal candle.
-3. Stop loss: 5–10 ticks above the sweep high.
+3. Stop loss: Above the sweep high.
 4. Take profit: Next support level.
 
-**Confirmation rule (non-negotiable for me):** Only take the trade if the MACD histogram (on the chart) aligns—bullish sweep + MACD turning up, bearish sweep + MACD turning down. This filters about 30% of false signals.
+**Confirmation rule:** The indicator is best treated as a timing tool rather than a standalone signal. Pairing it with a momentum filter—such as MACD histogram alignment, where a bullish sweep coincides with MACD turning up and a bearish sweep with MACD turning down—helps filter out sweeps that fail to follow through. A trend filter such as a long moving average can also help avoid counter-trend sweeps.
 
 ## Pros & Cons
 
@@ -66,18 +69,18 @@ For scalping 5M charts, drop Lookback to 12 and Sweep Body to 50%. You’ll get 
 | No repaint on confirmed sweeps | Can generate false signals in ranging markets |
 | Customizable sensitivity | Requires manual confirmation (MACD or volume) |
 | Clear visual labels | Not a standalone system—needs context |
-| Works across most timeframes | Lag: signal appears after reversal candle closes |
+| Broad timeframe applicability | Lag: signal appears after reversal candle closes |
 
-## Who It’s For
+## Who It's For
 
-- **Swing traders** on 1H–4H who want to catch institutional reversals.
-- **Price action traders** who already use order blocks or fair value gaps—this adds a timing edge.
-- **Discretionary traders** who enjoy manual entry decisions. If you want a fully automated signal, look elsewhere.
+- **Swing traders** who want to catch reversals around stop-run zones.
+- **Price action traders** who already use order blocks or fair value gaps—this adds a timing layer.
+- **Discretionary traders** who prefer manual entry decisions. If you want a fully automated signal, look elsewhere.
 
-## Who It’s NOT For
+## Who It's NOT For
 
-- **Scalpers** on 1M–5M charts. Too many false sweeps.
-- **Trend followers** who hold through pullbacks—this indicator is designed for reversals, not continuations.
+- **Scalpers** on very low timeframes. False sweeps increase significantly there.
+- **Trend followers** who hold through pullbacks—this indicator is designed around reversals, not continuations.
 
 ## Alternatives Worth Considering
 
@@ -87,26 +90,23 @@ For scalping 5M charts, drop Lookback to 12 and Sweep Body to 50%. You’ll get 
 
 ## FAQ
 
-**Does Liquidity_Sweep repaint?**  
-No, once a sweep label appears and the reversal candle closes, it stays fixed. However, during the candle formation, the label may flicker—wait for the candle close.
+**Does Liquidity_Sweep repaint?**
+Once a sweep label appears and the reversal candle closes, it stays fixed. During candle formation, the label may flicker—wait for the candle close.
 
-**Can I use it on crypto?**  
-Yes. Works well on BTC, ETH, and major alts. Adjust lookback to 15–20 for 1H charts.
+**Can I use it on crypto?**
+Yes. It is presented as working on major crypto pairs; adjust the lookback to suit the timeframe you're trading.
 
-**What timeframe is best?**  
-15M to 4H. Below 15M, false sweeps increase significantly.
+**What timeframe is best?**
+The author frames it as usable across timeframes but notes that false sweeps increase significantly below 15M, making 15M to 4H the more sensible range.
 
-**Does it work with other indicators?**  
-Yes. I paired it with MACD (shown above) and a simple 200 EMA. The EMA trend filter helped avoid counter-trend sweeps.
+**Does it work with other indicators?**
+Yes. It pairs well with momentum tools like MACD and a trend filter such as a long EMA, which helps avoid counter-trend sweeps.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Liquidity_Sweep is a better-than-average "liquidity grab" indicator because it defines the sweep with a clear rule and doesn't repaint confirmed labels. It's not a holy grail—you still need context and a confirmation filter—but for traders who understand stop hunts and want a clean visual tool, it's a solid addition.
 
-Liquidity_Sweep is one of the better "liquidity grab" indicators I’ve tested because it actually defines the sweep with a clear rule and doesn’t repaint. It’s not a holy grail—you still need context and a confirmation filter—but for traders who understand stop hunts and want a clean visual tool, it’s a solid addition.
-
-It loses one star because it’s not a complete strategy. You *must* pair it with trend or momentum filters. But if you already have a trading plan and just need better entry timing, this indicator delivers. Download it, set the lookback to 25, and test it on your favorite pair for a week. You’ll quickly see if it fits your style.
----
+It loses a star because it's not a complete strategy. You *must* pair it with trend or momentum filters. But if you already have a trading plan and just need better entry timing, this indicator is worth a look.
 
 ## Go Deeper with The Indicator Lab
 

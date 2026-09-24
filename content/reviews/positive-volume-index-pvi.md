@@ -16,36 +16,36 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest PVI indicator review: settings, signals, and how to trade volume-based trends. See if it fits your strategy before installing."
+grounding: "none (no source found)"
 ---
-Most volume indicators scream at you with colors, histograms, and alerts. The Positive Volume Index (PVI) does the opposite — it whispers. That quietness is precisely why it's been a staple since Norman Fosback popularized it in the 1970s. This TradingView version is a clean, faithful implementation, but don't mistake simplicity for weakness. Let me walk you through what I found after running it on daily charts across several markets.
+Most volume indicators scream at you with colors, histograms, and alerts. The Positive Volume Index (PVI) does the opposite — it whispers. That quietness is precisely why it's been a staple since Norman Fosback popularized it in the 1970s. This TradingView version is a clean, faithful implementation, but don't mistake simplicity for weakness.
 
 **What it actually does**
 
-PVI tracks cumulative price changes only on days when volume increases versus the previous day. The logic: smart money accumulates on rising volume, so those sessions matter more for trend confirmation. When volume falls, the PVI line stays flat — no signal. The indicator then compares PVI to its own moving average (default 255 periods) to determine trend direction. In this version, you get the PVI line, the signal MA, and color-coded fills when the line crosses above or below that average. No repainting, no hidden calculations.
+PVI tracks cumulative price changes only on days when volume increases versus the previous day. The logic: smart money accumulates on rising volume, so those sessions matter more for trend confirmation. When volume falls, the PVI line stays flat — no signal. The indicator then compares PVI to its own moving average to determine trend direction. In this version, you get the PVI line, the signal MA, and color-coded fills when the line crosses above or below that average.
 
 **Key differences from alternatives**
 
-What sets this apart from something like On-Balance Volume is the psychological basis. OBV reacts to every tick; PVI filters out noise by ignoring declining-volume sessions entirely. In the chart above, you'll notice how PVI stays remarkably smooth during consolidation phases while OBV would be chopping around. The 255-period MA default isn't arbitrary — it approximates a trading year, which makes this a long-term trend filter more than an entry trigger. I'd argue that's its biggest strength and most common misuse.
+What sets this apart from something like On-Balance Volume is the psychological basis. OBV reacts to every tick; PVI filters out noise by ignoring declining-volume sessions entirely. PVI stays smooth during consolidation phases where OBV would be chopping around. The long-period MA default isn't arbitrary — it approximates a trading year, which makes this a long-term trend filter more than an entry trigger. That's its biggest strength and its most common misuse.
 
-**Settings I actually recommend**
+**Settings and How to Tune Them**
 
-The defaults are decent but not optimal for every timeframe. After testing:
+The defaults are a reasonable starting point, but the right configuration depends on your timeframe and style.
 
-- **Daily charts:** Keep the MA at 255. That's the sweet spot for swing trading.
-- **4-hour or lower:** Drop the MA to 89. The 255-period average lags too much on intraday — you'll be entering late.
-- **Color fills:** Turn them on. The visual shift between bullish (typically green) and bearish (red) states helps you spot regime changes at a glance.
+- **Higher timeframes:** The long default MA period approximates a trading year and suits swing and position trading.
+- **Intraday:** The default average lags on shorter timeframes, so many traders shorten it. There's no single correct value — it's a tradeoff between responsiveness and whipsaw.
+- **Color fills:** Turning them on makes the visual shift between bullish and bearish states easier to read at a glance.
+- **MA type:** The default is SMA. An EMA responds earlier but produces more whipsaws; an SMA is smoother but slower. Choose based on how much noise you can tolerate.
 
-One thing I'd change: the default MA type is SMA. I tested EMA and SMA side by side — EMA gives earlier signals but more whipsaws. If you're a patient trader, stick with SMA. If you're scalping, EMA at 89 periods will serve you better.
+**How to trade it**
 
-**How I trade it**
-
-PVI isn't a standalone system; it's a regime filter. Here's the logic that worked best in my testing:
+PVI isn't a standalone system; it's a regime filter. The logic:
 
 1. **Trend alignment:** Only take long setups when PVI is above its MA, and short setups when below. This filters out counter-trend noise.
 2. **Entry trigger:** Wait for a price breakout in the direction of the PVI trend, confirmed by rising volume that day (which pushes PVI up).
-3. **Exit:** Trail your stop under the PVI MA. When the line crosses back below (for longs), the trade thesis is invalidated — get out.
+3. **Exit:** Trail your stop under the PVI MA. When the line crosses back below (for longs), the trade thesis is invalidated.
 
-The most profitable combination I found was PVI as a filter with a simple 20/50 EMA crossover for entries. Without PVI, that crossover produced mediocre results. With it, win rate improved roughly 12% in my backtests on S&P 500 daily data. That's the real value — it keeps you out of bad trades rather than telling you exactly when to get in.
+A common approach is to pair PVI as a filter with a simple moving-average crossover for entries. The value is that it keeps you out of bad trades rather than telling you exactly when to get in.
 
 **Pros and cons**
 
@@ -53,37 +53,37 @@ The most profitable combination I found was PVI as a filter with a simple 20/50 
 - Extremely clean, no clutter on the chart
 - Reliable trend filter that avoids false signals during low-volume chop
 - Customizable MA period and source for different trading styles
-- Works across all asset classes — I tested crypto, forex, and equities
+- Applies across asset classes
 
 **Cons:**
-- Terrible as a standalone entry signal. You'll get late entries if you rely on it alone.
-- 255-period MA makes it useless on short timeframes without adjustment
+- Poor as a standalone entry signal — you'll get late entries if you rely on it alone
+- The long default MA makes it sluggish on short timeframes without adjustment
 - No alerts built in — you'll need to set those up manually
 - The flat line during declining-volume days can make it look "broken" if you're not familiar with the logic
 
 **Who should install this**
 
-If you're a swing trader or position trader holding positions for days to weeks, this is a genuinely useful addition to your toolkit. It's also great for investors who want a logical entry filter for DCA (dollar-cost averaging) into index funds — buy when PVI is above its MA. Day traders will find it too slow unless they adjust the settings aggressively. If you're a pure scalper, skip this one.
+If you're a swing trader or position trader holding positions for days to weeks, this is a genuinely useful addition to your toolkit. It's also useful for investors who want a logical entry filter for DCA (dollar-cost averaging) into index funds — buy when PVI is above its MA. Day traders will find it too slow unless they shorten the settings considerably. If you're a pure scalper, skip this one.
 
 **Alternatives worth considering**
 
 - **OBV (On-Balance Volume):** Better for divergence spotting and short-term momentum, but noisier.
 - **VWAP:** Superior for intraday mean reversion, but doesn't capture multi-week trends.
-- **Chaikin Money Flow:** More versatile with the 20-period default, but gives less clear trend states than PVI.
+- **Chaikin Money Flow:** More versatile, but gives less clear trend states than PVI.
 
 **FAQ**
 
 **Does PVI repaint?**
-No, it's a cumulative indicator based on confirmed daily data. Once a session closes, the value is fixed.
+It's a cumulative indicator based on confirmed data. Once a session closes, the value is fixed.
 
 **Is PVI better than OBV?**
-For trend filtering, yes. For divergence detection, no. They serve different purposes — I actually use both.
+For trend filtering, yes. For divergence detection, no. They serve different purposes.
 
 **Why is my PVI line flat for days?**
 That's normal. It only moves on days when volume increases. If volume has been declining for a stretch, the line sits still. That's the feature working as designed.
 
 **Can I use this for crypto?**
-Yes, but crypto's 24/7 trading means the "day" boundary is arbitrary. I found it works better on daily closes aligned to UTC midnight.
+Yes, but crypto's 24/7 trading means the "day" boundary is arbitrary. Aligning the daily close to a fixed reference like UTC midnight gives a more consistent reading.
 
 **Final verdict**
 
@@ -91,17 +91,16 @@ The Positive Volume Index is a classic for a reason. This TradingView implementa
 
 If you're already using volume-based indicators and want something that cuts through the noise, this earns its place on your chart. Just don't expect it to do the heavy lifting alone.
 
-**⭐ 4/5 — Solid, reliable, and worth installing for swing traders. Docked one star for the missing alert functionality and the misleading simplicity that trips up new users.**
+## What This Class of Signal Has Actually Done
 
-## Frequently Asked Questions
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-### Is Positive_Volume_Index_Pvi worth it?
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
 
-Based on testing across multiple timeframes, Positive_Volume_Index_Pvi delivers solid value for traders who need trend analysis.
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -17,73 +17,87 @@ categories:
 rating: 4
 description: "Ltf_Volume_Microburst_Bubbles review: volume spike detection on lower timeframes. Tested settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/Hdskv6Q5-LTF-Volume-Microburst-Bubbles-Zeiierman/"
+sources: ["https://www.tradingview.com/script/Hdskv6Q5-LTF-Volume-Microburst-Bubbles-Zeiierman/"]
 ---
-I've spent the last two weeks trading with Ltf_Volume_Microburst_Bubbles across BTC, ES futures, and a few liquid forex pairs. Here's my honest take after watching these bubbles pop on dozens of charts.
+# LTf Volume Microburst Bubbles (Zeiierman) Review
 
 ## What This Indicator Actually Does
 
-This is not another lagging trend-line painter. Ltf_Volume_Microburst_Bubbles detects sudden, abnormal volume spikes on lower timeframes (LTF) and plots them as bubbles directly on your chart. The core concept: when a volume burst hits a quiet market, it often precedes a short-term directional push. The indicator marks these moments so you can act on them.
+This is not another lagging trend-line painter. LTf Volume Microburst Bubbles is a lower-timeframe volume indicator that looks inside each chart candle and searches for short bursts of unusually strong buying or selling activity. Rather than analyzing only the total volume of the chart candle, it uses lower-timeframe data to find individual volume spikes occurring within the candle.
 
-The MACD chart in the screenshot above shows how the bubbles align with momentum shifts. Each bubble represents a volume expansion that exceeds a calculated threshold — not just "volume is higher than average," but a genuine microburst relative to recent activity. The size of the bubble scales with the intensity of the burst, giving you a quick visual read on conviction.
+The core concept: when a lower-timeframe volume burst hits a quiet market, it can signal a short-term directional push. The indicator marks these moments as bubbles directly on the chart, so you can see where participation suddenly expanded.
+
+Each bubble represents a lower-timeframe candle that combined significantly elevated volume relative to its baseline with sufficient directional body strength. The size of the bubble scales with the intensity of the burst, giving a quick visual read on conviction.
 
 ## Key Features That Stand Out
 
-The bubble sizing is genuinely useful. Bigger bubbles mean bigger volume anomalies, and I found these correlate with stronger follow-through moves. The indicator also color-codes bubbles based on whether the burst is buying or selling pressure, which saves you from cross-referencing volume with candle direction.
+The bubble sizing is useful. Bigger bubbles mean bigger volume anomalies, and the indicator combines qualifying spikes into a directional Microburst Score that shows whether bullish or bearish activity is dominating inside the candle.
 
-Another thing I appreciate: the alert system. You can set alerts for new bubbles, bubble size thresholds, or direction-specific bursts. This makes it practical for scanning multiple charts without staring at screens all day. The indicator works on any timeframe, though it's clearly optimized for lower LTF setups — think 1m to 15m.
+The indicator also separates qualifying spikes into bullish and bearish activity, color-coding bubbles so you don't have to cross-reference volume with candle direction manually.
 
-## Best Settings I Tested
+The script automatically selects a practical lower timeframe or allows the user to choose one manually. Each lower-timeframe candle is compared against an EMA-based volume baseline, and a volume spike must exceed the selected Spike Threshold before it can contribute to a Microburst. Volume alone isn't enough — the lower-timeframe candle must also show sufficient directional movement relative to its full range, which helps filter out high-volume candles dominated by wicks or indecision.
 
-After extensive backtesting, here's what worked:
+Session filtering is available, so detection can be limited to enabled trading sessions (Sydney, Tokyo, London, New York).
 
-- **Sensitivity (default: 2.0)**: Keep it around 1.5–2.0 for day trading. Lower values (1.0) generate too many false signals on active instruments. Higher values (3.0+) filter out most bursts, which is only useful if you're trading very slow markets.
-- **Bubble display period**: Set this to 20–30 bars. Any shorter and you can't contextualize the burst; any longer and the chart gets cluttered.
-- **Lookback period**: Default is solid. I tried 50 and 100; shorter lookbacks made the threshold too reactive, longer ones missed local spikes.
+## Settings and How to Tune Them
 
-For the MACD chart shown above, I found pairing the bubbles with a standard 12/26/9 MACD works best. The bubbles confirm the momentum shift, while MACD gives you the broader trend context.
+- **Auto Lower Timeframe:** Automatically selects a practical lower timeframe for Microburst detection.
+- **Manual Lower Timeframe:** Sets the lower timeframe used when automatic selection is disabled.
+- **Volume Baseline:** Controls the EMA length used to determine normal lower-timeframe volume.
+- **Spike Threshold:** Sets how far above the volume baseline a lower-timeframe candle must trade before qualifying as a spike.
+- **Min Body Efficiency:** Controls how directional a lower-timeframe candle must be before it can qualify.
+- **Signal Threshold:** Sets the Microburst Score required for bullish and bearish signals.
+- **Session Time Zone:** Controls how enabled trading session times are interpreted.
+- **Sydney / Tokyo / London / New York:** Enables or disables Microburst detection during each trading session.
+- **New Level Cooldown:** Controls how many bars must pass before another same-direction level can form.
+- **Max Level Age:** Sets how long first-burst levels may remain on the chart.
 
-## How I Actually Trade With It
+Tuning is a matter of balancing responsiveness against noise: a lower Spike Threshold and looser Min Body Efficiency will produce more qualifying bubbles, while raising them restricts detection to more concentrated bursts. The Signal Threshold governs how strong the directional Microburst Score must be before a signal is generated.
 
-My setup: I wait for a bubble to appear on a 5m chart, then check the direction of the burst (buy or sell pressure). If it aligns with the higher timeframe trend, I enter on the next candle with a tight stop just beyond the burst candle's range. Target is 1.5x the burst candle's range, giving me a solid risk-reward.
+## How to Use It
 
-The key is confluence. Bubbles alone generate too many false signals. When a bubble aligns with a MACD crossover or a key support/resistance level, the win rate jumps noticeably. I tested this on 100 trades: bubbles alone gave me a 54% win rate, but adding MACD confluence pushed it to 63%.
+**Identify aggressive participation.** Microburst bubbles highlight candles where lower-timeframe activity suddenly expands above normal conditions. Large bubbles can help traders quickly identify areas where unusually strong participation entered the market.
 
-One mistake I kept making: chasing the bubble after it appears. The burst is the catalyst, not the entry. Wait for the immediate post-burst pullback, then enter. Patience here separates profitable trades from stop-out disasters.
+**Trend continuation.** A strong bullish or bearish Microburst can confirm that aggressive participation is entering in the direction of the prevailing move. Bullish continuation signals may appear when price is already trending higher, a pullback ends and bullish Microburst activity expands, or price breaks through resistance with strong bullish lower-timeframe participation. Bearish continuation signals may appear when price is already trending lower, a retracement ends and bearish Microburst activity expands, or price breaks through support with strong bearish lower-timeframe participation.
+
+**Potential reversals.** Strong Microbursts can also appear near the end of an extended move, where unusually aggressive participation may signal a potential reversal. A strong bullish Microburst appearing after a sharp decline may indicate aggressive buying entering near a low; a strong bearish Microburst appearing after an extended rally may indicate aggressive selling entering near a high. Potential reversal signals become more relevant when they appear around previous swing highs or lows, support and resistance levels, liquidity sweeps, extended directional moves, or failed breakouts and breakdowns.
+
+The Microburst itself does not determine whether price will continue or reverse. Its context relative to market structure helps determine how the signal should be interpreted.
 
 ## Pros and Cons
 
 **Pros:**
-- Unique volume anomaly detection that actually works — I haven't found another free indicator doing this effectively
-- Clean visual representation with bubble sizing and color coding
-- Alerts are practical and customizable
-- Pairs well with MACD and other momentum indicators
+- Looks inside the chart candle using lower-timeframe data rather than relying on total candle volume
+- Combines volume spikes with directional body efficiency to filter out wick-dominated candles
+- Directional Microburst Score separates bullish from bearish activity
+- Bubble sizing and color coding give a quick visual read on burst intensity and direction
+- Session filtering and level cooldown/age controls add flexibility
 
 **Cons:**
-- False signals on very liquid instruments during high-impact news events (volume is elevated everywhere, so "microbursts" lose meaning)
-- No built-in trend filter — you need to bring your own context
-- The bubble placement can overlap on fast charts, making it hard to read consecutive bursts
+- No built-in trend filter — you need to bring your own context via market structure
+- The Microburst alone doesn't determine continuation versus reversal; interpretation depends on context
+- High-volume environments can dilute the meaning of a "spike" relative to baseline
 
 ## Who Should Use This
 
-This is a day trader's tool. If you trade 1m–15m charts and already understand volume context, this will sharpen your entries. Swing traders on 4h+ charts will find it mostly useless — the bursts don't carry the same predictive weight on higher timeframes. It's also excellent for scalpers who want to catch the first push after a volume explosion.
+This is a short-timeframe tool. It's aimed at traders who already understand volume context and want to spot sudden expansions in aggressive participation inside individual candles. Because the indicator reads lower-timeframe data inside each chart candle, it's most relevant for intraday analysis, and its continuation and reversal use cases depend on pairing the signal with market structure.
 
 ## Alternatives Worth Considering
 
-If you want volume analysis without the bubble overlay, check out the built-in Volume Profile or the classic VWAP indicator. For a more comprehensive trend system, the SuperTrend with volume filter does a similar job but with clearer trend lines. And if you want something more aggressive, the Volume Weighted MACD combines volume and momentum in one package.
+If you want volume analysis without a bubble overlay, the built-in Volume Profile or the classic VWAP indicator are natural comparisons. For a broader trend framework, trend-following systems with volume filters cover different ground. The Microburst approach is distinctive in that it works inside the candle rather than on candle totals.
 
 ## FAQ
 
-**Does this repaint?** No, the bubbles stay fixed once plotted. This is a major plus — I've been burned by repainting indicators before.
+**Does this repaint?** The source material does not state whether the indicator repaints.
 
-**Can I use it for crypto?** Yes, it works well on BTC and ETH, but be aware that crypto's 24/7 volatility creates more bubbles, so tighten your sensitivity settings.
+**Can I use it for crypto?** The source material does not specify supported markets.
 
-**Does it work on all TradingView plans?** Yes, it's free to add to your chart. No premium features are locked behind a paywall.
+**Does it work on all TradingView plans?** The source material does not state plan compatibility.
 
 ## Final Verdict
 
-Ltf_Volume_Microburst_Bubbles earns a solid 4 out of 5. It's not a complete trading system, but it's a genuinely useful tool for spotting volume anomalies that other indicators miss. The false signals during news events keep it from a perfect score, and the lack of a built-in trend filter means you need to bring your own strategy. That said, for the price (free), it's a no-brainer addition to your volume analysis toolkit. If you're a day trader who respects volume, install it, test it, and see if the bubbles match your trading style.
+LTf Volume Microburst Bubbles is a focused tool, not a complete trading system. Its value is in surfacing lower-timeframe volume bursts that candle-level volume alone would hide, and in scoring whether bullish or bearish activity is dominating inside the candle. The lack of a built-in trend filter means the signal has to be read against market structure — the indicator is explicit that it doesn't determine continuation versus reversal on its own. For intraday traders who respect volume context, it's a useful addition to the toolkit.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

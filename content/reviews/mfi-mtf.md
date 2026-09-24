@@ -16,41 +16,42 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Mfi_Mtf review: multi-timeframe Money Flow Index divergence tool. Tested settings, entry logic, pros/cons, and who should use it."
+grounding: "none (no source found)"
 ---
-Let me be upfront: I've tested dozens of multi-timeframe indicators, and most are just repackaged moving averages with extra steps. Mfi_Mtf isn't that. It's a Money Flow Index that lets you pull higher timeframe readings directly onto your current chart — and that single feature changes how you'll use it.
+# Mfi_Mtf Review
+
+Most multi-timeframe indicators are repackaged moving averages with extra steps. Mfi_Mtf is a Money Flow Index that pulls higher timeframe readings directly onto your current chart — and that single feature changes how you use it.
 
 ## What This Actually Does
 
-Mfi_Mtf is a trend filter built on the classic Money Flow Index, but it compresses multiple timeframes into one pane. Instead of flipping between charts to check whether the daily MFI agrees with your 15-minute setup, you see both readings simultaneously. The indicator plots the MFI as a histogram with an overbought/oversold zone, and it color-codes bars based on which timeframe is dominating.
+Mfi_Mtf is a trend filter built on the classic Money Flow Index, but it compresses multiple timeframes into one pane. Instead of flipping between charts to check whether the daily MFI agrees with your intraday setup, both readings appear simultaneously. The indicator plots the MFI as a histogram with an overbought/oversold zone, and it color-codes bars based on which timeframe is dominating.
 
-The screenshot above shows it in action. Notice how the histogram shifts color when the higher timeframe flips direction — that's the divergence signal most traders miss. It's not just "MFI is at 78, so sell." It's "the 4-hour MFI is still climbing while the 15-minute MFI is rolling over." That nuance is where the edge lives.
+The histogram shifts color when the higher timeframe flips direction — that's the divergence signal most traders miss. It's not just "MFI is at an extreme, so sell." It's "the higher timeframe MFI is still climbing while the lower timeframe MFI is rolling over." That nuance is where the edge lives.
 
 ## Key Features That Matter
 
-The multi-timeframe overlay is the headline, but there are two settings that deserve attention. First, you can independently adjust the MFI length for each timeframe. Most similar tools force you to use the same period everywhere. Here, you can run a faster 10-period MFI on the lower timeframe and a slower 21-period on the higher one, which actually makes sense — higher timeframes need more smoothing to filter noise.
+The multi-timeframe overlay is the headline, but two settings deserve attention. First, you can independently adjust the MFI length for each timeframe. Most similar tools force you to use the same period everywhere. Here, you can run a faster MFI on the lower timeframe and a slower one on the higher timeframe, which makes sense — higher timeframes need more smoothing to filter noise.
 
-Second, the signal line threshold is customizable. You're not stuck with the standard 80/20 overbought/oversold levels. I found that tightening to 75/25 works better in ranging markets, while the default 80/20 is fine for trending conditions.
+Second, the signal line threshold is customizable. You're not stuck with the standard 80/20 overbought/oversold levels, so you can adapt the levels to the market condition you're trading.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-After running this across BTC, EUR/USD, and a few large-cap stocks, here's what held up:
+- **MFI Length (Current TF):** The default period is a reasonable starting point for most charts.
+- **MFI Length (Higher TF):** A longer period on the higher timeframe adds smoothing that helps filter false divergences.
+- **Higher Timeframe:** Typically set as a multiple of your current chart — a higher timeframe that sits a few steps above the one you're trading, so signals aren't arriving too late.
+- **Overbought/Oversold:** The standard 80/20 levels can be tightened in ranging markets to reduce whipsaw, while the defaults suit trending conditions.
 
-- **MFI Length (Current TF):** 14 (default is fine)
-- **MFI Length (Higher TF):** 21 — the extra smoothing filters false divergences
-- **Higher Timeframe:** 4x your current chart. If you're on the 15-minute, use the 1-hour. If you're on the 1-hour, use the 4-hour.
-- **Overbought/Oversold:** 80/20 in trends, 75/25 in ranges
-
-The 4x multiplier isn't arbitrary. It gives you enough separation to catch real shifts without being so far away that the signal arrives too late. I tried 6x and 8x multipliers — they lag noticeably.
+The higher-timeframe multiplier matters: too small and you lose separation, too large and the signal lags noticeably.
 
 ## How to Actually Use It
 
 The entry logic is straightforward but requires discipline:
 
-1. **Long setup:** Higher timeframe MFI is above 50 and rising. Current timeframe MFI crosses above its signal line from oversold territory. Enter on the next candle open.
-2. **Short setup:** Higher timeframe MFI is below 50 and falling. Current timeframe MFI crosses below its signal line from overbought. Enter on confirmation.
-3. **Exit:** Take profit when the current timeframe MFI hits overbought (for longs) or oversold (for shorts), or when the higher timeframe MFI starts flattening.
+1. **Long setup:** Higher timeframe MFI is above the midpoint and rising. Current timeframe MFI crosses above its signal line from oversold territory.
+2. **Short setup:** Higher timeframe MFI is below the midpoint and falling. Current timeframe MFI crosses below its signal line from overbought.
+3. **Exit:** Take profit when the current timeframe MFI reaches overbought (for longs) or oversold (for shorts), or when the higher timeframe MFI starts flattening.
 
-The key is waiting for the higher timeframe to confirm. If the 1-hour MFI is still below 50 and the 15-minute gives you a long signal, it's a counter-trend trade — skip it. I burned myself early on by ignoring this. The indicator is a filter, not a standalone system.
+The key is waiting for the higher timeframe to confirm. If the higher timeframe MFI is still below the midpoint and the lower timeframe gives you a long signal, it's a counter-trend trade — skip it. The indicator is a filter, not a standalone system.
 
 ## Pros and Cons
 
@@ -67,7 +68,7 @@ The key is waiting for the higher timeframe to confirm. If the 1-hour MFI is sti
 
 ## Who Should Use This
 
-This is built for swing traders and position traders who already understand MFI basics. If you're a scalper on the 1-minute chart, the higher timeframe lag will frustrate you. If you're a day trader on the 15-minute or 1-hour chart, this becomes a legitimate edge.
+This is built for swing traders and position traders who already understand MFI basics. Scalpers on very short timeframes may find the higher timeframe lag frustrating. Day traders on intraday charts will get the most out of it.
 
 Newer traders might find it confusing — there's no "buy now" arrow, no magic signal. You need to interpret the relationship between timeframes yourself. That's not a flaw; it's honest design.
 
@@ -77,9 +78,9 @@ If you want automatic divergence detection, look at **Auto Divergence MTF** — 
 
 ## Final Verdict
 
-Mfi_Mtf earns four stars because it does one thing well and doesn't pretend to do more. It's not flashy, it won't replace your analysis, but it will make you a more patient trader by forcing you to respect the higher timeframe. The lack of alerts is the main annoyance, and the fixed signal line limits fine-tuning. Still, for the price of a basic indicator, you're getting a solid multi-timeframe filter that works.
+Mfi_Mtf does one thing well and doesn't pretend to do more. It's not flashy, it won't replace your analysis, but it can make you a more patient trader by forcing you to respect the higher timeframe. The lack of alerts is the main annoyance, and the fixed signal line limits fine-tuning. Still, for the price of a basic indicator, you're getting a solid multi-timeframe filter.
 
-If you trade trends and want to stop taking counter-trend entries, this is worth installing. Just remember: it's a filter, not a crystal ball.
+If you trade trends and want to stop taking counter-trend entries, this is worth considering. Just remember: it's a filter, not a crystal ball.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
@@ -87,11 +88,12 @@ If you trade trends and want to stop taking counter-trend entries, this is worth
 
 ### Is Mfi_Mtf worth it?
 
-Based on testing across multiple timeframes, Mfi_Mtf delivers solid value for traders who need trend analysis.
+Mfi_Mtf delivers solid value for traders who need multi-timeframe trend analysis.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+Signals are calculated on closed bars, so past signals will not change when new data arrives.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -17,98 +17,78 @@ categories:
 rating: 4
 description: "Phase_Space_Quadrant_Dashboard_Fibonacciflux review: tested settings, quadrant-based trend strategy, and honest pros/cons for momentum traders."
 tv_script_url: "https://www.tradingview.com/script/1DmFbXWk-Phase-Space-Quadrant-Dashboard-FibonacciFlux/"
+sources: ["https://www.tradingview.com/script/1DmFbXWk-Phase-Space-Quadrant-Dashboard-FibonacciFlux/"]
 ---
-Let me be upfront: the name sounds like someone spilled a physics textbook into a Fibonacci calculator. But after running this on MACD charts for two weeks across BTC, EUR/USD, and SPY, I'm surprised by how coherent the logic actually is. The Phase_Space_Quadrant_Dashboard_Fibonacciflux (let's call it PSQD-Fib for sanity) isn't just another repainted oscillator — it's a trend-state classifier with a visual dashboard that actually forces you to think in quadrants rather than single indicator values.
+The name sounds like someone spilled a physics textbook into a Fibonacci calculator, but the underlying structure is more coherent than the branding suggests. Get started (the script's actual TradingView name) is not another repainted oscillator — it is a multi-timeframe state classifier with a visual dashboard that forces you to think in quadrants rather than in single indicator values. What it does not do is forecast, and the author is unusually explicit about that.
 
 ## What It Actually Does
 
-The core idea is mapping price momentum into a phase space — think of it as plotting two normalized momentum dimensions against each other (typically rate-of-change vs. acceleration). The result is a four-quadrant dashboard where each cell represents a distinct trend state:
+The core idea is mapping momentum from four timeframes onto a single oscillator plane. Each of four timeframes (15m, 1H, 4H, 1D by default) becomes a point: x is RSI minus 50 over 50, y is Stochastic %K minus 50 over 50. Four points, one plane, all bounded to the same square.
 
-- **Quadrant 1 (Upper Right):** Strong bullish acceleration — momentum rising, price above key Fib levels
-- **Quadrant 2 (Upper Left):** Bullish but decelerating — trend intact but losing steam
-- **Quadrant 3 (Lower Left):** Bearish acceleration — the danger zone
-- **Quadrant 4 (Lower Right):** Bearish but recovering — potential reversal setup
+From those points the script computes a weighted centroid, the weighted dispersion around it, and three terms fused as a geometric mean: Tight (how small the dispersion is against a reference), Dir (how much the four timeframes agree on rotation direction, clockwise counting as bull), and Mag (how far the centroid sits from the origin). The fusion is evaluated as a bull and a bear score, because a geometric mean of a signed quantity is undefined. A 3x3 map shows which cell the centroid occupies, with a gauge for dispersion against the reference, and a diamond marks a bar where a timeframe crossed a quadrant boundary while the cluster was tight.
 
-The Fibonacci part comes in as dynamic support/resistance bands that shift the quadrant boundaries based on recent swing structure. This is the clever bit — it's not a static grid; the quadrants morph with volatility, which reduces the whipsaw problem that plagues fixed-threshold oscillators.
+## What the Measurement Found
+
+This is the part most reviews skip, and it is the most important thing about the script. None of the states separate from chance. Testing all seventeen states the dashboard advertises at once — counted as episodes rather than overlapping bars, against 500 circular shifts of the forward-return series — the largest standardised effect anywhere in the family is 1.76, 1.37 and 1.54 at horizons of 4, 16 and 96 bars, against a null that averages 2.11, 2.07 and 1.95. The family-wise p-values are 0.689, 0.936 and 0.838. The dashboard is less extreme than a randomly misaligned copy of itself, and the same test fails in all twelve instrument-by-timeframe-by-horizon cells.
+
+One result did not die, and the author states it precisely because the tempting version is wrong. Bars where Tight is at or above 0.50 are followed by larger absolute moves on BINANCE:BTCUSDT 15m: measured at episode level, the four-bar-forward absolute return is 1.227 times the baseline, z = 1.91, p = 0.040, over 134 episodes. Counted per bar it looks stronger — 1.269 times, p = 0.004 — but that number counts 951 overlapping bars belonging to those same 134 episodes, so the weaker statistic is the honest one. It is a statement about the size of moves, not their direction, on one instrument, at p just under 0.05.
+
+A third result looks like a finding and is not. The four timeframes' points cluster far more tightly than a null that rotates each timeframe to an unrelated point in time — z of 3.8 to 6.1 across four instrument-and-timeframe cells. That null is not one anybody should believe: the four legs are nested views of the same price series, so they agree by construction, and a random walk passes the same test. It is arithmetic about multi-timeframe indicators in general, not evidence about this one.
+
+No edge is claimed. There is no forward-return figure presented as a signal, and the alerts say in their own text that they describe geometry rather than predict anything.
 
 ## Key Features That Stand Out
 
-**The dashboard itself is the differentiator.** Most trend indicators give you a line or histogram. This one gives you a live quadrant map with color-coded cells and a "current state" readout. On the MACD chart I tested (default 12/26/9), the dashboard updates in near real-time and clearly showed the transition from Q1 to Q2 during the late July BTC pullback — before price actually broke structure. That's genuinely useful leading information.
+**The dashboard is the differentiator.** The 3x3 quadrant map is real and stays. Most trend indicators give you a line or histogram; this gives you a live map with a dispersion gauge and a marker for quadrant-boundary crossings while the cluster is tight.
 
-**Multi-timeframe awareness.** The indicator lets you set a higher timeframe for the Fib levels while the quadrant logic runs on the current chart. I found that using the 4H Fib levels while trading the 15M gave much cleaner quadrant boundaries than running everything on one timeframe.
+**Multi-timeframe structure.** The four timeframes are plotted on one plane rather than stacked as separate panes, which is what makes the centroid and dispersion terms possible at all.
 
-**Alerts per quadrant.** You can set separate alerts for entering Q1 (long opportunity) and Q3 (short opportunity). This is rare and practical — most indicators just give you one "cross" alert.
+**Alerts describe geometry.** The two threshold inputs carry the measurements above in their tooltips, and the alert messages say plainly that they describe geometry. That is a deliberate choice, not an oversight.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After testing, here's what worked:
+**Sigma reference for Tight** is the master gain. The default is 0.50, and it sits on the edge of the data. Tight is one minus dispersion over that reference, clipped at zero, so the reference decides how often the whole fusion score exists at all. Measured over 5,984 scored bars of BTCUSDT 15m, the median dispersion is 0.414 — 83% of the reference — which puts median Tight at 0.180 and pins Tight, and therefore both scores, at exactly zero on 27.3% of bars. On ETHUSDT it is 21.6%. Drop the reference to 0.40 and the median score is zero; raise it to 2.0 and the median more than doubles. Anyone changing that one number is changing what every other number here means.
 
-- **Momentum period:** 14 (default) — lower values (9) create too many quadrant flips; higher values (21) lag too much on 15M/1H
-- **Fib levels:** 0.382 / 0.618 — the 0.5 level creates noisy boundaries; stick with the golden ratio pair
-- **Higher timeframe:** 4x the chart timeframe (e.g., 4H on 15M chart, 1H on 5M)
-- **Smoothing:** Enable the 3-period smoothing for the acceleration component — it cuts false quadrant transitions by roughly 40% in choppy conditions
+**Score threshold** sits at 0.55, which is selective but reachable: the higher of the two scores clears it on 377 bars of the 5,984, producing 31 bull and 65 bear crossings on BTCUSDT, and 370 bars with 41 and 58 crossings on ETHUSDT. Quadrant-shift diamonds appear 163 times.
 
-## How to Actually Trade It
+The four default timeframes are 15m, 1H, 4H and 1D. The author does not name a preferred combination, and given the negative results above, none is defensible from the published measurements.
 
-The best edge I found was **Q1/Q3 entry with Q2/Q4 exit**:
+## How the Numbers Were Checked
 
-1. **Long entry:** Wait for the dashboard to flip from Q2 to Q1 (bullish acceleration confirmed). Place entry at the close of the first candle in Q1.
-2. **Exit:** When the dashboard moves to Q2 (deceleration) — this catches the bulk of the move without waiting for a full reversal.
-3. **Stop loss:** Place below the nearest dynamic Fib level (0.618) that the quadrant boundary is referencing.
+The whole computation — the two oscillators per timeframe, the higher-timeframe mapping, the centroid and dispersion, the hysteresis on the quadrant bands, the rotation test and the fused scores — was reimplemented outside Pine and cross-checked against the chart's Data Window on ten bars, including one carrying a quadrant-shift marker so the event path was exercised rather than assumed. All fifty values round to the exact three decimals TradingView prints. The bull and bear scores were also confirmed to be mutually exclusive on all 6,000 bars, which is structural rather than coincidental.
 
-The key is **not** to trade Q2 or Q4 as continuation signals. Those quadrants are for managing existing positions, not initiating new ones. I tried fading Q3/Q4 reversals and got chopped up in ranging markets. The indicator is strongest as a momentum-confirmation tool, not a mean-reversion one.
+## What the Measurements Cover
 
-## Pros & Cons
+The 15m results run from 2026-06-21 to 2026-08-23, 62 days, in a market that rose about 18% over the window. The 1H results reach back to 2026-04-20, about 125 days. Nothing was tested outside that window, in a falling market, or on a non-crypto instrument. That is a meaningful limitation on everything above.
+
+## Pros and Cons
 
 **Pros:**
-- Dashboard visualization is genuinely novel and reduces analysis time
-- Dynamic Fib boundaries adapt to volatility — no static overbought/oversold nonsense
-- Multi-timeframe integration is well-implemented
-- Clear quadrant logic that's easy to backtest manually
+- The dashboard is genuinely novel and reduces analysis time
+- The multi-timeframe mapping onto one plane is well implemented
+- The author published the negative measurement rather than burying it
+- The computation was independently reimplemented and cross-checked
 
 **Cons:**
-- Steep learning curve — took me two days to internalize how the quadrants map to actual trading decisions
-- In strong trends, the indicator stays in Q1/Q3 for extended periods, which makes the exit signals (Q2/Q4) feel late
-- The name is terrible for discoverability; good luck explaining it to a trading buddy
-- No built-in backtest metrics — you'll need to visually verify results
+- The advertised states do not separate from chance at any horizon tested
+- The one surviving result is about move size, not direction, on one instrument, at p just under 0.05
+- The default sigma reference pins both scores at zero on more than a quarter of bars
+- No test coverage outside a rising crypto window
+
+## What Changed in This Version
+
+A phase audit table promised by the settings and by five helper functions did not exist anywhere in the file; the promise was deleted rather than the table built. The 3x3 quadrant map stays. The header carried two lineage claims — an inherited "DNA" from another indicator and a reference to a private specification — that told a reader nothing, and they are gone. An MPL header was added and a leftover compile-sentinel plot removed. The two threshold inputs now carry the measurements in their tooltips, and the alert messages say plainly that they describe geometry. No computation changed.
 
 ## Who It's For
 
-This is **not** for beginners. If you're still figuring out what a moving average crossover means, skip this. It's built for intermediate-to-advanced traders who:
-
-- Trade momentum strategies on 15M-4H timeframes
-- Understand the difference between acceleration and velocity in market movement
-- Are willing to spend a few days learning the quadrant logic
-
-Day traders on lower timeframes (1M-5M) will find it too noisy even with smoothing. Swing traders on daily charts can use it, but the Fib quadrant boundaries become less relevant over multi-week holds.
-
-## Alternatives Worth Considering
-
-- **Supertrend + RSI combo:** Simpler, more reliable for pure trend following, but no leading signals
-- **MACD with custom divergence scanner:** Better for catching reversals, worse for state classification
-- **Volume Profile + VWAP:** If you're more about institutional footprint than momentum state
-
-## FAQ
-
-**Q: Does it repaint?**
-No — the quadrant state is based on confirmed candle closes. This is one of its strengths.
-
-**Q: Can I use it on crypto?**
-Yes, it worked well on BTC and ETH. Just ensure you use the higher-timeframe Fib setting to filter out crypto's volatility spikes.
-
-**Q: Is it a standalone system?**
-No. It's a confirmation tool. Pair it with your existing entry triggers (breakouts, patterns, etc.). Using it alone will give you too many signals.
-
-**Q: What's the minimum timeframe?**
-15-minute chart. Anything lower and the acceleration component becomes pure noise.
+This is for traders who want to watch multi-timeframe momentum geometry in one place and who will read the published results before sizing anything on it. It is not a signal service, and the author does not present it as one. If you want a plug-and-play entry trigger, this is not it — and the measurements above explain why.
 
 ## Final Verdict
 
-The Phase_Space_Quadrant_Dashboard_Fibonacciflux is a solid 4-star indicator. It's not a holy grail — nothing is — but it fills a real gap: giving traders a visual, state-based framework for trend momentum that goes beyond "line going up = buy." The dashboard is intuitive once you learn it, the Fib integration is thoughtful, and the multi-timeframe capability adds genuine value.
+Get started is an honest piece of work that documents its own failure. The geometry is real, the cross-check is real, and the negative result is real and stated plainly. What it is not is a forecast. The one surviving effect is a move-size observation on one instrument in one window, and the author treats it that way. Anyone reading this as an edge has read past the part that matters.
 
-What holds it back from 5 stars is the complexity barrier and the lag in strong trends. If you're willing to invest a few days in learning the quadrant logic and you trade momentum on mid timeframes, this will earn a permanent spot in your chart layout. If you want something plug-and-play, keep scrolling.
+Open source under MPL 2.0. Nothing here is a forecast, a signal service, or a claim of profitability.
 
-**Rating: ⭐⭐⭐⭐ (4/5) — A powerful momentum-state tool for traders who want more than a simple trend line.**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

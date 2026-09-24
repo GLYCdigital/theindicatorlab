@@ -16,92 +16,99 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Ema_Supertrend_Obv_Strixedge combines three core tools for trend traders. Honest review with settings, entry rules, and real performance."
+grounding: "none (no source found)"
 ---
-Let me cut through the noise: this indicator is not revolutionary, but it’s a surprisingly clean mashup of three proven concepts—EMA, SuperTrend, and OBV—all in one pane. No clutter, no repainting (that I could find after a week of testing on BTC/USD and EUR/USD on the 1H and 4H timeframes). If you already use any of these tools separately, you’ll feel right at home. If you’re new to trend trading, this is a solid starting point.
+# Ema_Supertrend_Obv_Strixedge Review
+
+This indicator is not revolutionary, but it's a clean mashup of three established concepts—EMA, SuperTrend, and OBV—combined into one pane. If you already use any of these tools separately, the layout will feel familiar. If you're new to trend trading, it offers a structured starting point.
 
 ## What It Actually Does
 
-The indicator plots a moving average (default 20 EMA), a SuperTrend line with adjustable factor and period, and an OBV-based divergence signal below the price chart. The key twist: the OBV component is not just a line—it highlights potential bullish or bearish divergences between price and OBV, which is where the real edge lives. The SuperTrend acts as your trend filter, and the EMA provides dynamic support/resistance.
+The indicator plots a moving average, a SuperTrend line with adjustable factor and period, and an OBV-based divergence signal below the price chart. The distinguishing feature is the OBV component: rather than plotting OBV as a standalone line, it highlights potential bullish or bearish divergences between price and OBV. The SuperTrend acts as a trend filter, and the EMA provides dynamic support/resistance reference.
 
-**Real talk:** The OBV divergence signals are the star here. They’re not perfect (more on that), but they catch many trend reversals before the SuperTrend flips. In the chart above, you can see how the indicator flagged a bullish OBV divergence on the 4H EUR/USD about 12 hours before price broke above the SuperTrend. That’s actionable lead time.
+The OBV divergence signals are the centerpiece. They are not infallible, but in principle they can flag trend reversals before the SuperTrend flips, which is where the lead time comes from.
 
 ## Key Features That Stand Out
 
-- **Triple confirmation logic:** You wait for all three to align—price above EMA, SuperTrend green, and OBV divergence signal active. That’s rare in a single indicator.
-- **Customizable alert system:** You can set alerts for SuperTrend flips, EMA crosses, and OBV divergence signals separately. Useful for partial automation.
-- **Clean visual design:** No rainbow lines or unnecessary histograms. The OBV divergence is shown as small arrows above/below price bars. Simple.
+- **Triple confirmation logic:** All three components can be required to align—price relative to the EMA, SuperTrend direction, and an active OBV divergence signal. This combination is uncommon in a single indicator.
+- **Customizable alert system:** Alerts can be set separately for SuperTrend flips, EMA crosses, and OBV divergence signals. Useful for partial automation.
+- **Clean visual design:** No rainbow lines or unnecessary histograms. OBV divergence is shown as small arrows above or below price bars.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-After running it on 6 months of data across Forex and crypto, here’s what worked:
-
-- **Timeframe:** 4H or 1D. Lower timeframes (15m, 1H) produce too many false OBV divergence signals.
-- **SuperTrend:** Factor 3, Period 10 (default is 2 and 7). Slightly wider stops reduce whipsaws.
-- **EMA:** 20 still works best. 50 makes it too laggy for divergence setups.
-- **OBV smoothing:** Leave default (14). I tried 21 and it delayed signals too much.
-
-**Pro tip:** In the indicator settings, toggle off “Show OBV Line” if you only want the divergence arrows. Saves screen space.
+- **Timeframe:** Higher timeframes are generally more suitable. Lower timeframes tend to produce more OBV divergence signals, many of which do not follow through.
+- **SuperTrend:** The factor and period are adjustable. Widening the factor generally reduces whipsaws at the cost of slower reaction.
+- **EMA:** The period is adjustable. Shorter periods track price more closely; longer periods introduce more lag relative to divergence setups.
+- **OBV smoothing:** The default is adjustable. Increasing smoothing tends to delay signals.
+- **Display toggle:** The "Show OBV Line" setting can be turned off if you only want the divergence arrows, which reduces screen clutter.
 
 ## How to Use It: Entry & Exit Logic
 
-This is where the indicator earns its keep. Here’s my tested approach:
+The intended workflow is systematic:
 
 **Long entry:**
 1. Price must be above the EMA.
-2. SuperTrend must be green (uptrend).
-3. A bullish OBV divergence arrow appears (price makes lower low, OBV makes higher low).
-4. Enter on the next candle close after the arrow. Stop loss below the recent swing low or SuperTrend line (whichever is tighter).
+2. SuperTrend must be in its bullish state.
+3. A bullish OBV divergence appears (price makes a lower low, OBV makes a higher low).
+4. Entry is taken on the next candle close after the arrow. Stop loss goes below the recent swing low or the SuperTrend line, whichever is tighter.
 
-**Short entry:** Reverse logic—price below EMA, red SuperTrend, bearish OBV divergence.
+**Short entry:** Reverse logic—price below the EMA, bearish SuperTrend, bearish OBV divergence.
 
 **Exit:**
-- Trail with the SuperTrend. Flip to short when it turns red.
-- Alternatively, take partial profits when price hits the 2x ATR from entry (measure manually).
+- Trail with the SuperTrend. Flip when it reverses.
+- Alternatively, take partial profits when price reaches a measured distance from entry, such as a multiple of ATR.
 
-**What doesn’t work:** Don’t take trades when the OBV divergence arrow appears but price is already far from the EMA (more than 2-3% away). Those tend to fail.
+**What doesn't work:** Trades taken when the OBV divergence arrow appears but price is already extended far from the EMA tend to fail. Distance from the EMA matters.
 
 ## Pros & Cons
 
 **Pros:**
-- Combines three reliable tools into one coherent system.
-- Divergence signals often lead price by 1-3 candles.
-- No repainting on standard settings (verified with replay mode).
-- Works on stocks, crypto, and Forex.
+- Combines three established tools into one coherent system.
+- Divergence signals can lead price by a small number of candles.
+- Standard EMA and SuperTrend components do not repaint.
+- Applicable across stocks, crypto, and Forex.
 
 **Cons:**
-- OBV divergence signals are rare on lower timeframes (scalpers will hate this).
-- The EMA and SuperTrend can conflict in choppy markets (e.g., sideways range on 1H).
-- No built-in risk management (you still need to set your own stop and position size).
+- OBV divergence signals are rare on lower timeframes, which limits scalping use.
+- The EMA and SuperTrend can conflict in choppy, sideways markets.
+- No built-in risk management—stops and position sizing must be set manually.
 
-## Who It’s For
+## Who It's For
 
-This is for **swing traders and position traders** who can hold a trade for 1-5 days. If you trade the 4H or daily chart and want a clean, systematic way to catch trend continuations and reversals, this indicator is worth your time. Scalpers and day traders on the 5m chart should look elsewhere—you’ll see more noise than signals.
+This is aimed at **swing traders and position traders** who hold trades for multiple days. If you trade higher timeframes and want a systematic way to catch trend continuations and reversals, the triple-confirmation structure is the appeal. Scalpers and very short-term day traders will likely see more noise than signals.
 
 ## Alternatives
 
-- **SuperTrend with Volume:** If you don’t need EMA, try the standard SuperTrend with volume profile. Simpler but lacks divergence detection.
-- **MACD Divergence Indicator:** Better for range-bound markets where OBV lags.
-- **TradingView’s built-in OBV + SuperTrend:** You can stack these two manually, but you lose the divergence arrows and triple confirmation logic.
+- **SuperTrend with Volume:** If you don't need the EMA component, the standard SuperTrend combined with volume profile is simpler but lacks divergence detection.
+- **MACD Divergence Indicator:** Better suited to range-bound markets where OBV lags.
+- **TradingView's built-in OBV + SuperTrend:** These can be stacked manually, but you lose the divergence arrows and the triple confirmation logic.
 
 ## FAQ
 
-**Does Ema_Supertrend_Obv_Strixedge repaint?**  
-No. I tested it on replay mode with 1H and 4H data. The OBV divergence arrows appear on the candle of the divergence and do not disappear retroactively. The SuperTrend and EMA are standard non-repainting.
+**Does Ema_Supertrend_Obv_Strixedge repaint?**
+The standard EMA and SuperTrend components do not repaint. The OBV divergence arrows appear on the candle where the divergence forms and do not disappear retroactively.
 
-**Can I use it on crypto?**  
-Yes. Works well on BTC/USD and ETH/USD, especially on the 4H timeframe. Just watch out for crypto’s higher volatility—widening the SuperTrend factor to 4 helps.
+**Can I use it on crypto?**
+Yes. It is applicable to major crypto pairs. Crypto's higher volatility may warrant widening the SuperTrend factor.
 
-**Does it work for day trading?**  
-Not really. OBV divergence signals are too rare on the 5m or 15m charts. You’ll get maybe 1-2 signals per week. Stick to 4H or higher.
+**Does it work for day trading?**
+Generally not well. OBV divergence signals are rare on very low timeframes, so signal frequency will be low. Higher timeframes are more suitable.
 
 ## Final Verdict
 
-**⭐⭐⭐⭐ (4/5)**
+Ema_Supertrend_Obv_Strixedge is a no-nonsense trend indicator that does what it promises: combines EMA, SuperTrend, and OBV divergence into one actionable tool. It won't replace a sound trading plan, but it can enforce discipline if you follow the triple confirmation logic. The main limitations are its reduced applicability on lower timeframes and the occasional conflict between components in sideways markets. For swing traders, it's a reasonable addition. For scalpers, it's not the right fit.
 
-Ema_Supertrend_Obv_Strixedge is a solid, no-nonsense trend indicator that does exactly what it promises: combines EMA, SuperTrend, and OBV divergence into one actionable tool. It won’t make you a millionaire overnight, but it will keep you disciplined if you follow the triple confirmation logic. The 4/5 rating comes from its limited applicability on lower timeframes and the occasional conflict between components in sideways markets. For swing traders, it’s a keeper. For scalpers, skip it.
+**Bottom line:** If you want a single-pane trend system that filters noise and flags potential reversals, this is worth evaluating. Pair it with a solid risk management plan—no indicator can do that for you.
 
-**Bottom line:** If you want a single-pane trend system that actually filters noise and flags reversals early, install this. Just pair it with a solid risk management plan—no indicator can do that for you.
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Supertrend** implementation was backtested on 30 markets over 5 years of daily data (44,697 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: USDJPY 59.0%, GBPUSD 57.1%, AUDUSD 56.9%, EURUSD 56.6%
+- Weakest markets: DOGEUSD 47.7%, LTCUSD 46.6%, SHIBUSD 27.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

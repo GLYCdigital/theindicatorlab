@@ -16,94 +16,104 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Clean RSI with customizable overbought/overshoot zones. No lag, no fluff. Best for scalping pullbacks. 4/5 stars."
+grounding: "none (no source found)"
 ---
+# Rsi_With_Ob_Os_Zones Review
 
-I’ve seen dozens of RSI variants on TradingView. Most are just repaints in fancy clothes. This one—Rsi_With_Ob_Os_Zones—is different because it doesn’t try to be clever. It just does one thing well: give you a clean, customizable RSI with clearly marked overbought and overshoot zones.
-
-I ran it on BTC/USD 15-minute and EUR/USD 1-hour for a week. Here’s what I found.
+The RSI variants on TradingView tend to fall into two camps: cosmetic tweaks that add little, and feature-heavy scripts that bury a simple oscillator under layers of signal logic. Rsi_With_Ob_Os_Zones sits in neither. It does one thing—display a clean, customizable RSI with clearly marked overbought and oversold zones—and leaves it at that.
 
 ## What This Indicator Actually Does
 
-It’s a standard RSI (Relative Strength Index) with two major visual upgrades:
+At its core, this is a standard Relative Strength Index with two visual additions:
 
-1. **Customizable overbought/overshoot zones** – You set the upper and lower thresholds (default 70/30), and the indicator shades those areas. No guessing where the line is.
-2. **Extreme zone coloring** – When RSI enters the overbought zone, the background turns red. Overshoot turns green. Makes reversals instantly visible.
+1. **Customizable overbought/oversold zones** – You set the upper and lower thresholds, and the indicator shades the areas between them and the extremes. The line's position relative to those thresholds is immediately obvious.
+2. **Extreme zone coloring** – When RSI enters the overbought zone, the background shifts color. Oversold does the same in a different shade. The intent is to make exhaustion states stand out at a glance.
 
-That’s it. No moving averages, no divergence detection, no alerts. It’s lean and fast.
+There are no moving averages, no divergence detection, and no alerts. The script is deliberately lean.
 
 ## Key Features That Set It Apart
 
-- **No lag.** Because it’s pure RSI, there’s no smoothing or repainting. What you see is what happened.
-- **Custom zone colors.** You can change the shade opacity and color per zone. I set overbought to 50% opacity red, overshoot to 30% green. Helps spot exhaustion quickly.
-- **Clean aesthetics.** The zones are drawn behind the RSI line, not over it. You can still read the exact RSI value.
+- **No smoothing.** Because it's pure RSI, there is no added lag from averaging. What the line shows is the raw oscillator value.
+- **Custom zone colors.** Shade and opacity are configurable per zone, so you can dial the background intensity up or down depending on your chart.
+- **Clean layout.** Zones are drawn behind the RSI line rather than over it, so the exact value stays readable at all times.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-- **Period**: 14 (default works for most timeframes). For scalping 1-minute, drop to 9. For swing trading 4-hour, keep 14.
-- **Overbought**: 70 (default). If you trade volatile pairs like crypto, try 75 to avoid false signals.
-- **Overshoot**: 30 (default). For indices, 25 reduces noise.
-- **Zone opacity**: 40% for overbought, 30% for overshoot. Any higher and it obscures price action on the chart.
+- **Period**: The default RSI period is the standard starting point. Shorter periods make the oscillator more reactive; longer periods smooth it out. The right choice depends on your timeframe and how much noise you're willing to filter.
+- **Overbought level**: The conventional upper threshold is the default. Raising it makes overbought conditions rarer and more extreme; lowering it triggers them more often.
+- **Oversold level**: The conventional lower threshold is the default. The same trade-off applies in reverse—tighter levels reduce noise, looser levels catch more moves.
+- **Zone opacity**: Lower opacity keeps the zones visible without obscuring the line or the surrounding chart. Very high opacity can make the panel hard to read, particularly on lower timeframes.
+
+None of these settings is objectively "best." They should be matched to the instrument's typical range and the trader's tolerance for false triggers.
 
 ## How to Use It for Entries and Exits
 
-I tested two strategies:
+Two common approaches:
 
-**Strategy A – Pullback entry on overshoot**  
-Wait for RSI to dip below 30 (or your overshoot level) and then cross back above it. Enter long with a stop below the recent swing low. As the chart above shows, on BTC March 2026, this caught a 3% bounce in under 2 hours. Exit when RSI hits 70 or price shows resistance.
+**Pullback entry on oversold**  
+Wait for RSI to dip below the oversold threshold and then cross back above it. A long entry with a stop below the recent swing low is one way to structure the trade. Exit candidates include RSI reaching the overbought threshold or price running into resistance.
 
-**Strategy B – Momentum continuation**  
-RSI above 70 but price still making higher highs? Don’t short. Instead, wait for RSI to drop back below 70, then short on a retest of the breakout level. Works best in ranging markets.
+**Momentum continuation**  
+If RSI is above the overbought threshold but price is still printing higher highs, shorting into strength is premature. A common approach is to wait for RSI to drop back below the threshold, then look for a short on a retest of the breakout level. This tends to suit ranging conditions better than trending ones.
 
-**Key rule**: Never trade the first touch of a zone. Wait for a close outside it. The indicator’s shading helps you see that clearly.
+A useful discipline regardless of approach: don't act on the first touch of a zone. Wait for a close outside it. The zone shading makes that distinction easy to see.
 
 ## Honest Pros and Cons
 
-**Pros**  
-- Zero repaint. Clean data.  
-- Highly customizable without bloat.  
-- Works on all timeframes.  
-- Free (no paywall).
+**Pros**
+- No repainting—RSI is a non-repainting oscillator, and this indicator only displays it.
+- Customizable without bloat.
+- Works across timeframes.
+- Free.
 
-**Cons**  
-- No divergence detection. If you trade RSI divergences, you’ll need a separate indicator.  
-- No alerts. You have to watch the chart.  
-- Zone shading can be a bit heavy on lower timeframes if you set opacity too high.
+**Cons**
+- No divergence detection. Traders who rely on RSI divergences will need a separate tool.
+- No alerts. The chart has to be watched manually.
+- Zone shading can dominate the panel on lower timeframes if opacity is set too high.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Scalpers** who need a fast, clean RSI for pullbacks.  
-- **Beginners** who want to learn RSI without extra noise.  
-- **Price action traders** who use RSI as a filter, not a primary signal.
+- **Scalpers** who want a fast, uncluttered RSI for pullback setups.
+- **Beginners** learning RSI without extra signal noise.
+- **Price action traders** who use RSI as a filter rather than a primary signal.
 
-**Not for**: Traders who rely on automated divergence alerts or multi-timeframe analysis within one indicator.
+**Not for**: traders who depend on automated divergence alerts or multi-timeframe analysis built into a single indicator.
 
-## Better Alternatives If They Exist
+## Alternatives Worth Considering
 
-- **RSI with Divergence** by LazyBear – adds divergence lines and alerts. More features, but slightly heavier.  
-- **TradingView’s built-in RSI** – free, no zones. If you don’t need the shading, it’s fine.  
-- **RSI Heikin Ashi** – smoother RSI for trend confirmation, but introduces lag.
+- **RSI with Divergence** by LazyBear – adds divergence lines and alerts. More features, correspondingly heavier.
+- **TradingView's built-in RSI** – free, no zone shading. Adequate if you don't need the visual thresholds.
+- **RSI Heikin Ashi** – smoother RSI for trend confirmation, at the cost of added lag.
 
 ## FAQ
 
 **Q: Does it repaint?**  
-A: No. RSI is a non-repainting oscillator. This indicator just displays it.
+A: No. RSI is a non-repainting oscillator, and this indicator simply displays it.
 
 **Q: Can I change the period after placing it?**  
-A: Yes. Settings update instantly on the chart.
+A: Yes. Settings update on the chart immediately.
 
 **Q: Does it work on crypto?**  
-A: Yes. I tested on BTC/USD and ETH/USD. Works fine, though zones may need adjusting (try 75/25 for crypto).
+A: Yes. Crypto traders often find that the standard overbought/oversold thresholds need adjusting for the asset's higher volatility.
 
 **Q: Is there an alert when RSI enters a zone?**  
-A: No. You’ll need to set a manual alert on the RSI line or use a separate alert indicator.
+A: No. You'll need a manual alert on the RSI line or a separate alert indicator.
 
 ## Final Verdict
 
-Rsi_With_Ob_Os_Zones is a no-nonsense tool. It doesn’t try to predict the future or add gimmicks. It just makes RSI easier to read. If you already know how to use RSI and just want a cleaner chart, this is worth the install. If you need divergence or alerts, look elsewhere.
+Rsi_With_Ob_Os_Zones is a no-nonsense tool. It doesn't try to predict the future or add gimmicks—it just makes RSI easier to read. If you already know how to use RSI and want a cleaner chart, it earns its place. If you need divergence detection or alerts, look elsewhere.
 
-**Rating: 4/5 stars** – loses one star for missing alerts and divergence detection, but nails the core job perfectly.
+**Rating: 4/5 stars** – loses a star for the missing alerts and divergence detection, but the core job is done well.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

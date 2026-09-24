@@ -16,91 +16,95 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Price_Volume_Trend_Pvt review: Settings, strategy, and how to trade PVT divergences and trend shifts. Honest pros, cons, and alternatives."
+grounding: "none (no source found)"
 ---
-Let me be blunt: most volume-based indicators are either lagging garbage or repaint nightmares. The Price_Volume_Trend_Pvt on TradingView is neither. It's a faithful implementation of the classic PVT (Price Volume Trend) oscillator that's been around since the 1970s, and honestly, that's exactly what makes it worth your time.
+# Price_Volume_Trend_Pvt Review
 
-If you've never used PVT before, here's the core idea: it accumulates volume on up days and subtracts it on down days, weighted by the percentage price change. The result is a single line that shows you whether money is flowing in or out of an asset over time. It's like OBV's smarter cousin — it doesn't treat every tick of volume equally, which means it reacts to big moves proportionally.
+Most volume-based indicators fall into one of two camps: lagging, or unreliable. The Price_Volume_Trend_Pvt indicator on TradingView is neither. It's a faithful implementation of the classic PVT (Price Volume Trend) oscillator that's been around since the 1970s, and that's precisely what makes it worth a look.
 
-**What Sets It Apart**
+If you haven't used PVT before, here's the core idea: it accumulates volume on up days and subtracts it on down days, weighted by the percentage price change. The result is a single line showing whether money is flowing in or out of an asset over time. It's like OBV's smarter cousin — it doesn't treat every tick of volume equally, so it reacts to big moves proportionally.
 
-The TradingView version is clean, which I appreciate. No bloat, no 47 different moving averages cluttering your pane. You get the PVT line, an optional signal line (SMA), and a zero baseline. That's it. The signal line crossover is the classic way to trade it, and the zero line acts as a bull/bear regime filter.
+## What Sets It Apart
 
-But here's the thing that most traders miss: the real value of PVT isn't the crossover — it's the divergence. When price makes a higher high but PVT makes a lower high, you're looking at distribution. That's where this indicator shines, especially on daily and weekly timeframes.
+The TradingView version is clean. No bloat, no dozens of moving averages cluttering your pane. You get the PVT line, an optional signal line (SMA), and a zero baseline. That's it. The signal line crossover is the classic way to trade it, and the zero line acts as a bull/bear regime filter.
 
-**Best Settings I've Tested**
+The real value of PVT, though, isn't the crossover — it's the divergence. When price makes a higher high but PVT makes a lower high, that suggests distribution. That's where this indicator is most useful, particularly on higher timeframes.
 
-After running this across several markets, here's what works:
+## Settings and How to Tune Them
 
-- **Signal line length:** 20 periods. Shorter (5-10) generates way too many false signals on intraday charts. Longer (50+) makes the crossover useless for timing.
-- **Timeframe:** Daily or 4-hour. PVT gets noisy on 5-minute and 15-minute charts because volume patterns are erratic at those speeds.
-- **Zero line filter:** Only take long signals when PVT is above zero, shorts when below. This single filter eliminates about half your false signals in ranging markets.
+The indicator exposes a handful of adjustable parameters. Here's how to think about each:
 
-One thing I'll note: there's no built-in alert for divergences on this version. You'll need to eyeball those or use TradingView's drawing tools. Not a dealbreaker, but worth knowing.
+- **Signal line length:** The signal line is a simple moving average of the PVT line, and its length is configurable. Shorter lengths produce more crossovers, which means more signals but also more noise. Longer lengths smooth the crossover but delay it, which hurts timing. The right value depends on your timeframe and how much confirmation you want before acting.
+- **Timeframe:** PVT is generally more readable on higher timeframes, where volume patterns are less erratic. On very short intraday charts, volume behavior tends to be choppier and the line noisier.
+- **Zero line filter:** Treating the zero line as a regime filter — longs only when PVT is above zero, shorts only when below — is a common way to cut down on signals that fight the broader flow. It won't eliminate whipsaws, but it narrows the field.
 
-**Trading Logic That Makes Sense**
+One thing worth noting: this version has no built-in alert for divergences. You'll need to spot those manually or use TradingView's drawing tools. Not a dealbreaker, but worth knowing going in.
 
-Here's a framework that actually works with PVT:
+## Trading Logic That Makes Sense
 
-1. **Trend confirmation:** Use the zero line as your regime filter. If PVT is above zero, you're only looking for longs. Below zero, only shorts. This keeps you on the right side of institutional flow.
+A workable framework with PVT looks like this:
+
+1. **Trend confirmation:** Use the zero line as your regime filter. If PVT is above zero, you're only looking for longs. Below zero, only shorts. This keeps you aligned with the broader volume flow.
 2. **Entry trigger:** Wait for a signal line crossover in the direction of your regime. Don't chase — wait for the cross to complete and confirm on the next bar.
-3. **Divergence play:** This is where you make real money. When price tags a new high but PVT stays flat or declines, that's your warning. Wait for the signal line to cross down, then enter short with a stop above the swing high.
-4. **Exit:** Trail your stop under the signal line once you're in profit. Or use a fixed risk-reward of 1:2 minimum. The PVT line doesn't give you price targets — that's not its job.
+3. **Divergence play:** When price tags a new high but PVT stays flat or declines, that's a warning. Waiting for the signal line to cross down before entering short, with a stop above the swing high, is one way to structure it.
+4. **Exit:** Trail your stop under the signal line once you're in profit, or use a fixed risk-reward target. The PVT line doesn't give you price targets — that's not its job.
 
-**The Honest Pros and Cons**
+## The Honest Pros and Cons
 
 **Pros:**
-- Volume-weighted price action is genuinely useful — it filters out low-volume noise moves
-- Zero repainting, which is rare in the TradingView catalog
-- Works across all asset classes — I've tested it on crypto, forex, and indices
+- Volume-weighted price action genuinely filters out low-volume noise moves
+- Does not repaint — values are calculated on closed bars, so historical readings are fixed
+- Applicable across asset classes, including crypto, forex, and indices
 - Simple enough for beginners, robust enough for swing traders
 
 **Cons:**
-- No native divergence detection or alerts — you're on your own there
-- The signal line crossover alone generates mediocre results; you must use the zero line filter
-- In strongly trending markets, PVT can stay overextended from zero for weeks, making the zero line filter less useful
+- No native divergence detection or alerts — that work is manual
+- The signal line crossover alone produces mediocre results; the zero line filter is close to essential
+- In strongly trending markets, PVT can stay extended from zero for weeks, making the zero line filter less useful
 - It's a lagging indicator by design — you'll never catch the exact top or bottom
 
-**Who Should Use This**
+## Who Should Use This
 
-If you're a swing trader working daily charts, this deserves a spot in your toolbox. Position traders will appreciate the zero line as a macro regime filter. Day traders — skip it. The signal lag on lower timeframes will eat you alive.
+Swing traders working daily charts will get the most out of it. Position traders can use the zero line as a macro regime filter. Day traders should be cautious — signal lag on lower timeframes is a real problem.
 
-It's also excellent for anyone who wants to understand institutional flow without diving into footprint charts or volume profile. PVT gives you a simplified, visual answer to "is money actually coming in, or is this just noise?"
+It's also useful for anyone who wants a visual read on institutional flow without diving into footprint charts or volume profile. PVT gives a simplified answer to "is money actually coming in, or is this just noise?"
 
-**Alternatives Worth Considering**
+## Alternatives Worth Considering
 
 - **OBV (On Balance Volume):** Simpler, but doesn't weight volume by price change. Better for pure trend confirmation, worse for divergence spotting.
 - **Volume Weighted MACD:** Combines price momentum with volume. More complex, but gives you momentum plus flow in one indicator.
-- **VWAP:** Not a direct alternative, but if you're trading intraday, VWAP plus PVT for daily context is a strong combo.
+- **VWAP:** Not a direct alternative, but for intraday traders, VWAP plus PVT for daily context is a strong combination.
 
-**Frequently Asked Questions**
+## Frequently Asked Questions
 
-**Does PVT repaint?** No. It's calculated on closed bars, so the value on any historical bar is fixed. What you see is what you get.
+**Does PVT repaint?** No. It's calculated on closed bars, so the value on any historical bar is fixed.
 
-**Is PVT better than OBV?** For divergence detection, yes. The percentage weighting makes PVT more sensitive to large moves. For simple trend confirmation, OBV is arguably cleaner.
+**Is PVT better than OBV?** For divergence detection, yes — the percentage weighting makes PVT more sensitive to large moves. For simple trend confirmation, OBV is arguably cleaner.
 
-**Can I use PVT for crypto?** Absolutely. It actually works well on Bitcoin and Ethereum because volume data is relatively reliable compared to thinly traded altcoins.
+**Can I use PVT for crypto?** Yes. It tends to work well on Bitcoin and Ethereum because volume data is relatively reliable compared to thinly traded altcoins.
 
-**Does the signal line length matter much?** Yes. The default is fine for most, but I found 20 periods gives the best balance between responsiveness and false signals on daily charts.
+**Does the signal line length matter much?** Yes. The default is reasonable for most uses, but the right length depends on your timeframe and how much responsiveness versus noise you're willing to accept.
 
-**Final Verdict**
+## Final Verdict
 
-The Price_Volume_Trend_Pvt is a solid, no-frills implementation of a proven concept. It won't blow your mind with fancy features, but it does its job reliably — and in the world of TradingView indicators, that's rarer than you'd think.
+The Price_Volume_Trend_Pvt is a solid, no-frills implementation of a proven concept. It won't dazzle with features, but it does its job reliably — and in the world of TradingView indicators, that's rarer than you'd think.
 
-The lack of divergence detection and alerts holds it back from a perfect score. But if you're willing to put in a little manual work and understand that PVT is a confirmation tool rather than a standalone signal generator, it'll serve you well.
+The lack of divergence detection and alerts holds it back from a perfect score. But if you're willing to put in manual work and understand that PVT is a confirmation tool rather than a standalone signal generator, it'll serve you well.
 
 For swing traders and position traders who want to understand volume flow without complexity, this is a strong addition to your chart. It's not the only indicator you'll ever need — but it's one of the better volume tools available on the platform.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Reliable, honest, and genuinely useful. It loses a star for missing divergence alerts and the necessity of manual filtering, but for the price of free, that's a trade worth making.
 
-## Frequently Asked Questions
+## What This Class of Signal Has Actually Done
 
-### Is Price_Volume_Trend_Pvt worth it?
+*Not this script. A canonical **Trend** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-Based on testing across multiple timeframes, Price_Volume_Trend_Pvt delivers solid value for traders who need trend analysis.
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.4%, QQQ 52.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 45.7%, VIX 43.9%, SHIBUSD 29.4%
 
-### Does this indicator repaint?
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

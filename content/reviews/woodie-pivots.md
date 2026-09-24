@@ -6,19 +6,17 @@ type: reviews
 image: "/screenshots/woodie-pivots.png"
 rating: 4
 description: "** Honest Woodie Pivots review: settings, strategy, and how to use it for intraday entries. Tested on real charts."
+grounding: "none (no source found)"
+---
+**description:** Woodie Pivots review: what the indicator does, how the levels are calculated, and how intraday traders use them.
+
 ---
 
-**description:** Honest Woodie Pivots review: settings, strategy, and how to use it for intraday entries. Tested on real charts.
-
----
-
-If you've been trading long enough, you know that standard floor pivots are the vanilla ice cream of technical analysis — reliable, but everyone uses them. Woodie Pivots are the salted caramel twist: similar logic, but with a different formula that tends to react faster to price action.
-
-I've spent the last three weeks running this indicator across ES, NQ, and EURUSD on 15m and 1h timeframes. Here's what actually matters.
+If you've been trading long enough, you know that standard floor pivots are the vanilla ice cream of technical analysis — reliable, but everyone uses them. Woodie Pivots are the salted caramel twist: similar logic, but with a different formula that puts more weight on the prior close.
 
 ## What This Indicator Actually Does
 
-Woodie Pivots calculate support and resistance levels using yesterday's close as the anchor point, rather than the simple average of high, low, and close. The formula:
+Woodie Pivots calculate support and resistance levels using the prior session's close as a heavier input, rather than the simple average of high, low, and close. The formula:
 
 - **Pivot (P)** = (H + L + 2*C) / 4
 - **R1** = (2*P) - L
@@ -26,63 +24,61 @@ Woodie Pivots calculate support and resistance levels using yesterday's close as
 - **R2** = P + (H - L)
 - **S2** = P - (H - L)
 
-That extra weight on the close makes these levels more reactive than standard pivots. When a stock gaps or a news event hits overnight, Woodie levels adjust faster. In practice, this means you'll see fewer false breakouts around S1/R1 compared to traditional pivots on trending days.
+That extra weight on the close is the whole point. When price gaps or a news event hits overnight, Woodie levels shift with it. The practical effect is that S1 and R1 sit where the prior close says they should, rather than where a simple high-low-close average would put them.
 
 ## Key Features That Set It Apart
 
-- **Sessions selector** — You can choose to calculate based on any session (RTH, ETH, Asian). Essential for futures traders.
-- **Midpoint lines** — Plots M1, M2, M3 between pivot and S/R levels. These aren't just noise; they act as magnets for mean-reversion scalps.
-- **Color-coded levels** — Green for resistance, red for support. Sounds minor, but when you're scanning 6 pairs, it saves split seconds.
-- **Auto-adjusts for gaps** — Unlike standard pivots, Woodie pivots won't show R1 below price after a gap up. The math handles it.
+- **Sessions selector** — Calculate levels from a chosen session (RTH, ETH, Asian, or a custom window). Relevant for futures and anything with a defined cash session.
+- **Midpoint lines** — Plots M1, M2, M3 between the pivot and the S/R levels. These act as intermediate reference points for mean-reversion scalps.
+- **Color-coded levels** — Resistance and support are visually distinguished, which matters when you're scanning several charts at once.
+- **Gap handling** — Because the formula weights the close, levels don't end up on the wrong side of price after a gap the way a simple average can.
 
-## Best Settings I've Found
+## Settings and How to Tune Them
 
-After testing, here's what works across instruments:
-
-- **Timeframe**: 15m to 1h. Lower than 5m and you get whipsawed by midpoint levels. Higher than 4h and they lose edge.
-- **Session**: For ES/NQ, use RTH (9:30–16:00 ET). For forex, use the session that includes the London close.
-- **Show Midpoints**: ON for scalping, OFF for swing trading. Midpoints add clutter if you're holding overnight.
-- **Line Style**: Solid for pivot, dashed for S/R, dotted for midpoints. Helps visual hierarchy.
+- **Timeframe**: Intraday timeframes are the intended use. Very short timeframes produce more noise around the midpoint levels; very high timeframes dilute the session-based logic.
+- **Session**: Match the session to the instrument. For index futures, the regular trading hours session is the natural choice. For forex, pick the session that captures the relevant liquidity window, such as the London close.
+- **Show Midpoints**: Turn them on if you're scalping intraday and off if you're holding positions longer, where they add clutter without adding information.
+- **Line Style**: A visual hierarchy — solid for the pivot, dashed for support/resistance, dotted for midpoints — makes the chart easier to read at a glance.
 
 ## How to Use It for Entries and Exits
 
-I'm not reinventing the wheel here. This is what worked in my testing:
+The levels are a framework, not a signal generator. Common approaches:
 
-- **Breakout entry**: Price closes above R1 with volume → long to R2. Stop at pivot. This triggers about 30% of the time on high-volatility days.
-- **Reversal entry**: Price touches S1, shows a bullish rejection candle (hammer or engulfing), then reclaims S1 → long back to pivot. This is the highest-probability setup I found — roughly 65% win rate on 15m ES.
-- **Midpoint scalps**: On range-bound days, price oscillates between M1 and M2. Buy at M1 with a 5-tick target at M2. Tight stops (3 ticks below M1). Works best from 10am–2pm ET when volume thins.
+- **Breakout entry**: Price closes beyond R1 with volume confirming, targeting R2, with the pivot as a reference stop.
+- **Reversal entry**: Price tests S1, prints a rejection candle (hammer or engulfing), then reclaims S1 — a long back toward the pivot. This is the setup most associated with pivot trading, since the level has already been defended.
+- **Midpoint scalps**: On range-bound days, price oscillates between M1 and M2. Buying near M1 and targeting M2 with a tight stop below the level is the standard scalp structure. It works best during the quieter middle of the session when volume thins.
 
-**My favorite setup**: Wait for price to open below S1 (a gap down). If within the first 30 minutes price reclaims S1, go long with a target at the pivot. The logic? Woodie's formula already factored in the gap, so S1 acts as a magnet.
+**A setup worth watching**: price opens below S1 on a gap down. If it reclaims S1 within the first stretch of the session, the pivot becomes the logical target. The reasoning is that the Woodie formula already priced the gap in, so S1 sits where it should and tends to draw price back.
 
 ## Honest Pros and Cons
 
 **Pros**:
 - Reacts faster to gaps and overnight moves than standard pivots
-- Midpoint levels are actually useful for scalping (surprisingly few pivot indicators include them)
-- Sessions selector prevents repainting on multi-session charts
-- Clean visuals — doesn't look like a Christmas tree
+- Midpoint levels are genuinely useful for scalping, and relatively few pivot indicators bother to plot them
+- The session selector keeps levels consistent on charts that span multiple sessions
+- Clean visuals
 
 **Cons**:
-- Can give false signals in low-volatility chop (especially on 5m charts)
-- No automatic retest detection — you still need to watch price action yourself
-- Doesn't include volume or momentum filters — you'll want to pair it with an oscillator
-- Midpoint levels can be misleading during news events — they get blown through instantly
+- Prone to false signals in low-volatility chop, particularly on very short timeframes
+- No automatic retest detection — you still have to read price action yourself
+- No volume or momentum filter built in, so pairing it with an oscillator is common practice
+- Midpoint levels can be misleading during news events, when price blows straight through them
 
 ## Who It's Actually For
 
-- **Intraday futures traders** (ES, NQ, YM) — the session selector is a game-changer
-- **Forex scalpers** on 15m charts — midpoint scalps work well on EURUSD
-- **Traders who hate repainting indicators** — Woodie levels are fixed once the session ends
+- **Intraday futures traders** — the session selector is the main draw
+- **Forex scalpers** working intraday timeframes, where midpoint scalps have a natural structure
+- **Traders who dislike repainting indicators** — the levels are fixed once the session closes
 
-**Not for**: Long-term position traders, beginners who want a "buy/sell" button, or anyone trading crypto on 1m charts.
+**Not for**: long-term position traders, beginners looking for a "buy/sell" button, or anyone trading extremely short timeframes on 24/7 markets.
 
 ## Better Alternatives
 
 If Woodie Pivots don't click, try:
 
-- **Standard Floor Pivots** — Better for trend-following strategies. Levels hold longer.
-- **Camarilla Pivots** — Tighter levels, better for mean-reversion on 5m timeframes.
-- **Auto Fibonacci Pivots** — If you prefer Fibonacci ratios over fixed formulas. More flexible but less tested.
+- **Standard Floor Pivots** — Better suited to trend-following. Levels tend to hold longer.
+- **Camarilla Pivots** — Tighter levels, better for mean-reversion on short timeframes.
+- **Auto Fibonacci Pivots** — If you prefer Fibonacci ratios over fixed formulas. More flexible, less standardized.
 
 ## FAQ
 
@@ -90,23 +86,19 @@ If Woodie Pivots don't click, try:
 A: No. Levels are calculated once per session and remain fixed. The indicator doesn't change historical values.
 
 **Q: Can I use them on crypto?**  
-A: Yes, but they work better on instruments with defined sessions. For 24/7 markets, set a custom session (e.g., 00:00 UTC).
+A: Yes, but they work better on instruments with defined sessions. For 24/7 markets, set a custom session.
 
 **Q: What's the best timeframe?**  
-A: 15m for scalping, 1h for swing. Anything below 5m produces too many false signals.
+A: Intraday timeframes are the intended use. Very short timeframes produce too many false signals around the midpoints.
 
 **Q: Do I need to adjust settings for different assets?**  
-A: Yes. For ES, use RTH session. For EURUSD, use London session. For indices, use the primary exchange hours.
+A: Yes. Match the session to the instrument — regular trading hours for index futures, the relevant liquidity session for forex pairs.
 
 **Q: How do Woodie Pivots compare to Camarilla?**  
 A: Woodie is better for gap days and trending markets. Camarilla is better for tight range days and mean-reversion.
 
 ## Final Verdict
 
-Woodie Pivots are a solid upgrade over standard pivots if you trade intraday and need levels that respect overnight gaps. The midpoint lines are genuinely useful for scalping — most pivot indicators ignore them. It's not a standalone system (no indicator is), but as a framework for entries and exits, it's one of the cleaner pivot options on TradingView.
+Woodie Pivots are a solid upgrade over standard pivots if you trade intraday and need levels that respect overnight gaps. The midpoint lines are a real addition — most pivot indicators ignore them. It's not a standalone system (no indicator is), but as a framework for entries and exits, it's one of the cleaner pivot options on TradingView.
 
-**Rating**: ⭐⭐⭐⭐ (4/5) — Reliable, fast-adapting levels. Loses a star because it needs a volume or momentum filter to reduce false signals in chop. Still, it earned a permanent spot on my ES chart.
-
----
-
-**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
+**Rating**: ⭐⭐⭐⭐ (4/5) — Reliable, fast-adapting levels. Loses a star because it needs a volume or momentum filter to reduce false signals in chop.

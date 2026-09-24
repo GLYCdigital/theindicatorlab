@@ -16,33 +16,33 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A detailed review of the ALMA Moving Average on TradingView. See settings, strategy, pros/cons, and if it beats standard MAs for your trading."
+grounding: "none (no source found)"
 ---
-
-**Description:** A detailed review of the ALMA Moving Average on TradingView. See settings, strategy, pros/cons, and if it beats standard MAs for your trading.
+**Description:** An editorial review of the ALMA Moving Average on TradingView. See how it works, what its settings control, and how it compares with standard moving averages.
 
 ---
 
 ## What This Indicator Actually Does
 
-The ALMA (Arnaud Legoux Moving Average) is a moving average designed to reduce lag while maintaining smoothness. Unlike a standard SMA or EMA, ALMA applies a Gaussian distribution curve to the price data, which gives more weight to the center of the window and less weight to the edges. The result? A cleaner line that reacts faster to recent price changes without the jittery noise of a typical EMA.
+The ALMA (Arnaud Legoux Moving Average) is a moving average designed to reduce lag while maintaining smoothness. Unlike a standard SMA or EMA, ALMA applies a Gaussian distribution curve to the price data, which gives more weight to the center of the window and less weight to the edges. The result is a cleaner line that reacts faster to recent price changes without the jittery noise of a typical EMA.
 
-On your chart, you'll see a single, smooth curve that hugs price action more closely than a 20 EMA but stays stable enough to avoid false signals in choppy markets.
+On the chart, it plots a single smooth curve that hugs price action more closely than a short EMA but stays stable enough to avoid false signals in choppy markets.
 
 ## Key Features That Set It Apart
 
-- **Adjustable Sigma (0–10):** Controls the "sharpness" of the weighting. Lower sigma (e.g., 2) makes it behave more like a standard MA; higher sigma (e.g., 6) makes it extremely responsive but still smooth.
-- **Offset (0–100):** This is the secret sauce. Offset shifts the moving average forward or backward in time. A positive offset (e.g., 50) makes the line *predictive* — it anticipates price moves. A negative offset (e.g., -30) makes it lag like a slow EMA.
-- **Gaussian Weighting:** No single price point dominates. The curve is smooth even on 1-minute charts.
+- **Adjustable Sigma:** Controls the "sharpness" of the weighting. Lower sigma makes it behave more like a standard MA; higher sigma makes it more responsive while still smooth.
+- **Offset:** This is the distinguishing feature. Offset shifts the moving average forward or backward in time. A positive offset makes the line predictive — it anticipates price moves. A negative offset makes it lag like a slow EMA.
+- **Gaussian Weighting:** No single price point dominates. The curve stays smooth even on very short timeframes.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I've tested this across BTC/USD on 1H and ES futures on 5M. Here's what works:
+The two parameters that matter are sigma and offset, and they interact: sigma governs how sharply the Gaussian weighting is concentrated, while offset shifts the resulting line in time. Both can be pushed to extremes, and the practical risk is over-tuning rather than picking a "correct" value.
 
-- **Swing Trading (4H+):** Length 20, Sigma 4, Offset 50 (predictive). This gives you early signals before price confirms.
-- **Scalping (1M–5M):** Length 10, Sigma 2, Offset 0. Keeps it fast without overshooting.
-- **Trend Following (Daily):** Length 50, Sigma 6, Offset 30. Smooths out noise while staying ahead of price.
+- **Swing Trading:** A longer length with a moderate sigma and a positive offset leans toward earlier signals, before price confirms.
+- **Scalping:** A short length, low sigma, and zero offset keeps the line fast without overshooting.
+- **Trend Following:** A long length with high sigma and a modest positive offset smooths noise while staying closer to price.
 
-**Personal favorite:** Length 20, Sigma 3, Offset 40 for most liquid pairs. It's a sweet spot — lag is minimal, but you don't get whipsawed.
+A middle-of-the-road combination — moderate length, moderate sigma, modest positive offset — is a reasonable starting point on liquid pairs, where lag is contained without inviting whipsaw.
 
 ## How to Use It for Entries and Exits
 
@@ -50,23 +50,23 @@ I've tested this across BTC/USD on 1H and ES futures on 5M. Here's what works:
 **Short Entry:** Price closes below ALMA. Confirm with a second signal (RSI divergence or volume spike).
 **Exit:** Trail price along the ALMA. If offset is positive, the line will "pull" you out before a major reversal.
 
-**Pro tip:** Use offset > 50 only in strong trends. In sideways markets, it'll give false breakouts.
+A caution worth repeating: use a strongly positive offset only in strong trends. In sideways markets, it will produce false breakouts.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Less lag than any EMA with comparable smoothness.
-- Offset feature is genuinely useful for early entries — no other MA offers this.
-- Works well on all timeframes, especially with volatile assets.
+- Less lag than an EMA with comparable smoothness.
+- The offset feature is genuinely useful for early entries — no other MA offers this.
+- Works across timeframes, especially with volatile assets.
 
 **Cons:**
-- Over-optimization trap. You can tweak sigma and offset endlessly — don't. Stick to 2–3 presets.
+- Over-optimization trap. Sigma and offset can be tweaked endlessly — don't. Stick to a small number of presets.
 - Not a standalone indicator. Needs volume or momentum confirmation.
 - Beginners will find "offset" confusing. It's not intuitive.
 
 ## Who It's Actually For
 
-This is for traders who already understand moving averages and want an edge. If you're still struggling with basic EMA crossovers, skip this. But if you've been using 20/50 EMAs and want less lag without sacrificing smoothness, ALMA is a direct upgrade.
+This is for traders who already understand moving averages and want an edge. Anyone still struggling with basic EMA crossovers should skip it. But for someone who has been using standard-length EMAs and wants less lag without sacrificing smoothness, ALMA is a direct upgrade.
 
 **Better than:** SMA, EMA, WMA, HMA for most use cases (except extremely fast scalping, where HMA still wins).
 **Worse than:** DEMA or TEMA for pure speed — but ALMA is smoother.
@@ -83,18 +83,26 @@ This is for traders who already understand moving averages and want an edge. If 
 A: No. It's a fixed calculation based on price. Once the bar closes, the value is final.
 
 **Q: Can I use ALMA with multiple timeframes?**
-A: Yes. I layer a 20 ALMA (offset 50) on the 1H chart with a 50 ALMA (offset 30) on the 4H chart for confluence.
+A: Yes. A shorter ALMA with a positive offset on a lower timeframe can be layered with a longer ALMA with a smaller offset on a higher timeframe for confluence.
 
-**Q: What's the best sigma value?**
-A: Start at 4. Too low (1–2) and it's just a noisy EMA. Too high (8–10) and it starts to curve oddly.
+**Q: What's a reasonable sigma value to start with?**
+A: Start in the middle of the range. Too low and it behaves like a noisy EMA; too high and it starts to curve oddly.
 
 ## Final Verdict
 
-The ALMA Moving Average is a legit upgrade over standard moving averages — if you know what you're doing. The offset feature alone is worth the download. It's not a magical "set and forget" indicator, but with the right settings (Length 20, Sigma 4, Offset 40–50), it'll give you cleaner, earlier signals than anything in the basic MA family.
+The ALMA Moving Average is a legit upgrade over standard moving averages — if you know what you're doing. The offset feature alone is worth the download. It's not a magical "set and forget" indicator, but with sensible settings it will give you cleaner, earlier signals than anything in the basic MA family.
 
 **Rating:** ⭐⭐⭐⭐ (4/5) — a clear winner for trend traders who hate lag, but requires some tuning to avoid false signals.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

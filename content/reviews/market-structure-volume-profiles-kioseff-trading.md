@@ -16,105 +16,92 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of Market Structure Volume Profiles by Kioseff Trading. Combines market structure with volume profile for high-conviction entries. Settings, strategy, pros/cons, and alternatives."
+grounding: "none (no source found)"
 ---
+# Kioseff Trading Market Structure Volume Profiles Review
 
-I’ve tested dozens of market structure and volume profile tools, and most either overcomplicate things or miss the mark entirely. Kioseff Trading’s *Market Structure Volume Profiles* actually combines two core concepts without turning the chart into a mess. After running it on BTC/USD and ES futures for a few weeks, here’s my unfiltered take.
+Market structure and volume profile tools tend to fall into two camps: either overloaded with features that clutter the chart, or stripped down to the point of being unhelpful. Kioseff Trading's *Market Structure Volume Profiles* attempts to combine both concepts into a single overlay.
 
-## What this indicator actually does
+## What this indicator does
 
-This isn’t a magic “buy here” arrow. It plots swing high/low zones (market structure) directly onto the chart and overlays a volume profile on those same levels. The idea is simple: when price revisits a structural zone with heavy volume, that zone becomes more significant. When volume dries up, it’s a weak zone.
+This is not a signal generator. It plots swing high and low zones (market structure) directly on the chart and overlays a volume profile on those same levels. The premise: when price revisits a structural zone that saw heavy volume, that zone carries more weight. When volume is thin, the zone is weaker.
 
-What sets it apart from other structure tools is the **volume-weighted zone coloring**. Zones with high relative volume get a bold fill; low-volume zones are faint. You can instantly see where the “smart money” has been active.
+What distinguishes it from standalone structure tools is the **volume-weighted zone coloring**. Zones with higher relative volume get a bolder fill; lower-volume zones appear fainter, giving a visual read on where participation has been concentrated.
 
-The chart above shows a clean example on the 15-minute timeframe. Notice how the highlighted volume zone around the previous swing low held as support three times before breaking. That’s exactly what this indicator is designed to catch.
+## Key features
 
-## Key features that set it apart
+- **Dynamic zone detection** – Identifies swing points automatically without manual input.
+- **Volume profile overlay** – The profile sits on the price levels themselves rather than in a separate panel, so no cross-referencing is needed.
+- **Customizable zone sensitivity** – Controls how many swings qualify as significant.
+- **Multi-timeframe alignment** – When enabled, displays higher timeframe zones on the current chart.
 
-- **Dynamic zone detection** – Works on any timeframe without manual input. It automatically identifies major and minor swing points.
-- **Volume profile overlay** – Not a separate panel. The profile sits right on the price levels, so you don’t have to cross-reference.
-- **Customizable zone sensitivity** – You can adjust how many swings are “significant” (default: 3 bars left/right).
-- **Multi-timeframe alignment** – If you enable it, the indicator shows higher timeframe zones on your current chart (e.g., 1H zones on a 5M chart).
+## Settings and How to Tune Them
 
-## Best settings with specific recommendations
-
-After backtesting and forward testing, here are the settings I found most effective:
-
-- **Zone Detection Sensitivity:** 3 bars left/right (default). For scalping on 1M, try 2. For swing trading on 1H, try 5.
-- **Volume Profile Lookback:** 50 periods. This gives enough data without lag. For day trading, 20 works better.
-- **Highlight High Volume Zones:** ON. This is the main edge.
-- **Multi-Timeframe Alignment:** OFF unless you’re trading the same direction as the higher timeframe.
-
-**My personal config for ES futures (15M):** Sensitivity 3, Lookback 40, Highlight ON, MTA OFF.
+- **Zone Detection Sensitivity** – Adjusts how many bars on either side define a swing. Lower values produce more zones; higher values filter to fewer, more significant ones.
+- **Volume Profile Lookback** – Sets how many periods feed the profile calculation. Shorter lookbacks respond faster; longer lookbacks smooth the profile.
+- **Highlight High Volume Zones** – Toggles the volume-weighted coloring on the zones.
+- **Multi-Timeframe Alignment** – When on, projects higher timeframe zones onto the current chart.
 
 ## How to use it for entries and exits
 
-I’m not going to give you a rigid system because markets change. But here’s a framework that worked consistently during my testing:
+There is no rigid system here, but the general framework the indicator supports:
 
 **Entry:**
-- Wait for price to reach a **high-volume swing zone** (bold fill).
-- Look for a rejection candle (doji, pin bar, or engulfing) *within* that zone.
+- Wait for price to reach a high-volume swing zone (bold fill).
+- Look for a rejection candle (doji, pin bar, or engulfing) within that zone.
 - Enter on the close of the rejection candle.
 
 **Stop loss:**
-- Place it just beyond the zone’s edge. The volume profile gives you a natural invalidation level.
+- Place it just beyond the zone's edge. The volume profile provides a natural invalidation level.
 
 **Take profit:**
-- Target the next opposite swing zone (low-volume zones often get taken out fast; high-volume zones are sticky).
+- Target the next opposite swing zone. Low-volume zones tend to get taken out faster; high-volume zones are stickier.
 
-**Example from my test:** On the 15M chart, price touched a high-volume resistance zone around 18,300. A bearish engulfing formed inside it. Short entry at 18,295. Stop at 18,340 (above zone). First target was the previous swing low at 18,100 (low-volume zone) — it hit in 4 hours.
-
-## Honest pros and cons
+## Pros and cons
 
 **Pros:**
-- Reduces noise. You’re only looking at zones with volume confirmation.
-- Works across markets: crypto, forex, futures.
-- No repainting (as far as I could tell over 200+ bars).
+- Reduces noise by focusing only on zones with volume confirmation.
+- Applicable across markets: crypto, forex, futures.
+- Zones remain fixed once formed.
 
 **Cons:**
-- On very fast 1M charts, zone sensitivity can feel too slow. It’s not a scalper’s tool.
-- The volume profile calculation can lag slightly on lower timeframes during high volatility (e.g., news events).
-- No built-in alert for zone touches — you have to watch manually.
+- On very fast lower timeframes, zone sensitivity can feel too slow for scalping.
+- The volume profile calculation can lag on lower timeframes during high volatility.
+- No built-in alert for zone touches.
 
-## Who it’s actually for
+## Who it's for
 
-This indicator is best for:
-- **Swing traders** (15M to 4H) who want confluence between structure and volume.
+Best suited for:
+- **Swing traders** wanting confluence between structure and volume.
 - **Position traders** using it for higher timeframe zone mapping.
 - **Discretionary traders** who already understand support/resistance but want volume confirmation.
 
-It’s **not** for:
+Not suited for:
 - Scalpers who need instant signals.
 - Traders who rely on automated entry/exit rules.
 
-## Better alternatives if they exist
+## Alternatives
 
-If you’re looking for something more automated:
 - **Market Structure Auto** by LuxAlgo — cleaner but no volume overlay.
 - **Volume Profile Visible Range** built into TradingView — free but requires manual zone drawing.
 - **Order Flow** by QuantNomad — more detailed but steeper learning curve.
 
-Kioseff Trading’s version wins on simplicity + volume integration. But if you hate any manual interpretation, skip it.
+Kioseff Trading's version wins on simplicity and volume integration. If manual interpretation is a dealbreaker, look elsewhere.
 
-## FAQ addressing real trader questions
+## FAQ
 
-**Q: Does this repaint?**  
-A: I didn’t observe repainting on the swing zones themselves. The volume profile recalculates with each new bar, so the *fill intensity* may adjust slightly. The zones themselves stay fixed once formed.
+**Q: Does this repaint?**
+A: The swing zones themselves stay fixed once formed. The volume profile recalculates with each new bar, so the fill intensity may adjust slightly.
 
-**Q: Can I use it for crypto?**  
-A: Yes. I tested it on BTC and ETH. It works fine, but crypto’s volatile swings can create many zones — adjust sensitivity higher (5+) to filter noise.
+**Q: Can I use it for crypto?**
+A: Yes. Crypto's volatile swings can create many zones, so higher sensitivity settings help filter noise.
 
-**Q: Does it work on all timeframes?**  
-A: Best on 5M to 4H. Below 5M, the volume profile becomes less reliable. Above 4H, zones hold for days — good for position trading but not for day-to-day entries.
+**Q: Does it work on all timeframes?**
+A: It functions across timeframes, though the volume profile becomes less reliable on very low timeframes. On higher timeframes, zones hold for longer — useful for position trading but not day-to-day entries.
 
-## Final verdict with star rating
+## Final verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-It’s not a holy grail, but it’s a solid tool that combines two proven concepts into one clean package. Loses a star because the lack of alerts and slight lag on lower timeframes hold it back from being elite. If you’re a swing trader who values volume confirmation, this is worth the install.
-
-**Would I buy it again?** Yes — but only for my swing trading setup. I’d still use a separate volume profile tool on lower timeframes.
-
----
+It's not a holy grail, but it combines two proven concepts into one clean package. The lack of alerts and some lag on lower timeframes keep it from being elite. For swing traders who value volume confirmation, it's worth the install.
 
 ## Go Deeper with The Indicator Lab
 

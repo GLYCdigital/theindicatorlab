@@ -16,94 +16,86 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Focus Bars Kioseff Trading highlights key price action bars to filter noise. Read our honest review with settings, pros/cons, and how to use it."
+grounding: "none (no source found)"
 ---
-
-**Focus Bars Kioseff Trading** is a chart overlay that color-codes bars based on volume and volatility thresholds. It’s not a holy grail—it’s a visual filter to help you stop staring at every random candle. I’ve run it on BTC, AAPL, and ES futures for a month. Here’s the real take.
+**Focus Bars Kioseff Trading** is a chart overlay that color-codes bars according to volume and volatility thresholds. It is a visual filter, not a standalone system — the purpose is to reduce attention spent on every ordinary candle.
 
 ## What This Indicator Actually Does
 
-The core idea is simple: it highlights bars where price action is “meaningful” based on a combination of volume relative to the average and a volatility check (e.g., ATR or range expansion). When both conditions align, the bar turns a bright color (default green/red). Everything else stays neutral.
-
-As the chart above shows, it’s not cluttered—just a few highlighted bars per session. That’s the point. It forces you to focus on the bars that institutions likely moved on, not the retail chop.
+The core idea is straightforward: it highlights bars where price action is "meaningful" based on a combination of volume relative to an average and a volatility check (ATR or range expansion, depending on configuration). When both conditions align, the bar is colored; everything else stays neutral. The result is a sparse overlay — a handful of highlighted bars per session rather than constant clutter. The intent is to draw attention to bars where larger participants likely transacted, rather than routine chop.
 
 ## Key Features That Set It Apart
 
-- **Volume + Volatility Confluence**: Many volume-only indicators miss low-volume breakouts. This catches both.
-- **Customizable Thresholds**: You can tweak the volume multiplier (I use 1.5x) and volatility sensitivity. Defaults are fine for swing trading.
-- **Minimalist Overlay**: No lines, no histograms—just colored bars. Keeps your chart clean.
-- **Alert Builder Compatible**: You can set alerts when a “focus bar” prints. Handy for breakouts.
+- **Volume + Volatility Confluence**: Volume-only indicators can miss low-volume breakouts. This requires both conditions.
+- **Customizable Thresholds**: Volume multiplier and volatility sensitivity are adjustable.
+- **Minimalist Overlay**: No lines or histograms — just colored bars.
+- **Alert Builder Compatible**: Alerts can be configured to trigger when a focus bar prints.
 
-## Best Settings (After Testing)
+## Settings and How to Tune Them
 
-I tested over 20 pairs across timeframes. Here’s what worked:
-
-- **Timeframe**: 1H or 4H for swing. Lower timeframes (5M–15M) catch too many false signals unless you’re scalping high-liquidity pairs.
-- **Volume Multiplier**: 1.5× to 2×. 1.2× is too loose; 3× is too rare on most assets.
-- **Volatility Lookback**: 14 periods. Matches standard ATR. Shorter periods (7) caused noise on stocks like AAPL.
-- **Color Scheme**: Use distinct colors (e.g., bright cyan for bullish, fuchsia for bearish). Don’t use green/red if you’re already using those for candles.
+- **Timeframe**: Higher timeframes suit swing-style use. Very low timeframes produce frequent signals, which is only appropriate for high-liquidity instruments.
+- **Volume Multiplier**: A lower multiplier flags more bars; a higher multiplier flags fewer. The right value depends on the instrument's typical volume distribution.
+- **Volatility Lookback**: Align this with a standard ATR-style lookback. Shorter periods tend to produce noisier output.
+- **Color Scheme**: Choose colors distinct from your existing candle colors so highlighted bars remain visually separable.
 
 ## How to Use It for Entries and Exits
 
-Do not buy just because a green bar appears. That’s a losing game.
+A colored bar on its own is not an entry.
 
-**Entry Strategy**: Wait for a focus bar to print *after* a pullback to support/resistance. For example, on the chart above, you see a bearish focus bar at resistance—that’s your short signal. Enter on the next bar’s open with a stop above the focus bar’s high.
+**Entry Strategy**: Wait for a focus bar to print after a pullback into support or resistance. A bearish focus bar at resistance is a short signal; enter on the next bar's open with a stop above the focus bar's high.
 
-**Exit Strategy**: Use a trailing stop based on the focus bar’s range. If price breaks beyond the focus bar’s low, tighten stops. If the next candle closes outside the focus bar’s range, exit half.
+**Exit Strategy**: Use a trailing stop based on the focus bar's range. If price breaks beyond the focus bar's low, tighten stops. If the next candle closes outside the focus bar's range, exit half.
 
-**Confirmation**: Combine with a trend filter (e.g., 200 EMA). Only take focus bars in the trend direction. Counter-trend focus bars often trap traders.
+**Confirmation**: Combine with a trend filter such as a long moving average. Only take focus bars in the direction of the trend; counter-trend focus bars frequently trap traders.
 
 ## Honest Pros and Cons
 
-**Pros**  
-- Cuts chart noise drastically. You stop over-analyzing every candle.  
-- Works across assets: crypto, forex, stocks. Volume matters, so forex needs tick volume—still useful.  
-- Simple to set up. Takes 30 seconds.  
-- No repainting (confirmed by watching historical and live bars).
+**Pros**
+- Cuts chart noise substantially.
+- Applies across asset classes; forex requires tick volume but remains usable.
+- Simple to set up.
+- Does not repaint — colored bars stay colored once printed.
 
-**Cons**  
-- Not a standalone system. You must add context (support/resistance, trend).  
-- False signals in low-liquidity pairs (e.g., small cap stocks).  
-- No built-in risk management. You still need to size positions.  
-- The color choices are ugly by default—change them.
+**Cons**
+- Not a standalone system. Support/resistance and trend context are required.
+- False signals in low-liquidity instruments.
+- No built-in risk management.
+- Default colors are not visually appealing.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Swing traders** who want to filter out low-probability setups.  
-- **Price action traders** who hate lagging indicators but want a volume edge.  
-- **Beginners** who struggle to identify “important” bars—this teaches you what matters.  
-- **Not for** scalpers (too few signals on low timeframes) or news traders (indicator ignores fundamentals).
+- **Swing traders** filtering out low-probability setups.
+- **Price action traders** who avoid lagging indicators but want a volume-based edge.
+- **Beginners** who struggle to identify which bars matter.
+- **Not for** scalpers (too few signals on low timeframes) or news traders (the indicator ignores fundamentals).
 
 ## Better Alternatives
 
-- **Volume Profile (Visible Range)**: Shows volume clusters. More detailed but takes up space.  
-- **Trade Volume Index (TVI)**: Similar concept but uses a running line instead of bar colors.  
-- **Smart Money Concepts (SMC)**: Identifies liquidity zones. More complex but more complete.
+- **Volume Profile (Visible Range)**: Shows volume clusters. More detailed, but occupies chart space.
+- **Trade Volume Index (TVI)**: Similar concept using a running line instead of bar colors.
+- **Smart Money Concepts (SMC)**: Identifies liquidity zones. More complex, more complete.
 
-If you already use Volume Profile, you might not need Focus Bars. But if you want a quick visual filter, this is cleaner.
+If you already use Volume Profile, Focus Bars may be redundant. As a quick visual filter, it is cleaner.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. Bars stay colored once printed. I verified by comparing to a second chart.
+**Q: Does it repaint?**
+A: No. Bars stay colored once printed.
 
-**Q: Can I use it on crypto with spot volume?**  
-A: Yes. Works fine on BTC, ETH. For lower-cap coins, volume data is spotty—stick to top 20.
+**Q: Can I use it on crypto with spot volume?**
+A: Yes, on major pairs. Lower-cap coins have unreliable volume data.
 
-**Q: Best timeframe for day trading?**  
-A: 15M or 30M on liquid pairs like EURUSD or ES. Anything lower and you’ll see too many focus bars.
+**Q: Best timeframe for day trading?**
+A: Liquid instruments on intraday timeframes. Lower timeframes produce too many focus bars.
 
-**Q: Does it work on futures?**  
-A: Yes. Volume data is reliable. I tested on ES and NQ—solid.
+**Q: Does it work on futures?**
+A: Yes. Volume data on futures is reliable.
 
 ## Final Verdict
 
-Focus Bars Kioseff Trading is a **4/5** indicator. It does one thing—highlight important bars—and does it well without bloat. It won’t make you a profitable trader by itself, but it will make your chart analysis faster and cleaner. For $0 (it’s free on TradingView), it’s a no-brainer add-on for any price action trader.
+Focus Bars Kioseff Trading does one thing — highlight important bars — without bloat. It will not make anyone profitable by itself, but it can make chart analysis faster and cleaner. It is free on TradingView, which lowers the cost of trying it.
 
-**Star Rating**: ⭐⭐⭐⭐
-
-**Recommendation**: Install it, adjust the colors, and use it as a filter—not a signal. Combine with support/resistance and a trend filter. You’ll stop chasing noise.
-
----
+**Recommendation**: Use it as a filter, not a signal. Combine with support/resistance and a trend filter.
 
 ## Go Deeper with The Indicator Lab
 

@@ -17,91 +17,78 @@ categories:
 rating: 4
 description: "Liquidity_Draws maps price levels where stop orders cluster and shows where price is likely to gravitate. A 4/5 trend tool tested on real charts."
 tv_script_url: "https://www.tradingview.com/script/C6N62bd1-Liquidity-Draws/"
+sources: ["https://www.tradingview.com/script/C6N62bd1-Liquidity-Draws/"]
 ---
-Most "liquidity" indicators on TradingView are repackaged swing high/low markers with a fancy label. Liquidity_Draws is a bit different — it plots the specific price levels where resting orders are likely stacked, then frames them as magnets that price tends to gravitate toward. In practice, that's a trend-following tool disguised as a levels tool, and once you understand that framing, it earns its keep.
+Most "liquidity" indicators on TradingView are repackaged swing high/low markers with a fancy label. This one takes a different approach: it maps the specific price levels where resting orders are likely stacked, then presents them as reference points that price may gravitate toward. Whether that framing works for you depends on how you trade.
 
-I ran it across BTCUSD, EURUSD, and a few large-cap equities on the 15m and 1H charts. Here's what I actually found.
+## What It Actually Does
 
-## What It Really Does
+The indicator plots potential liquidity draws above and below price, covering previous day high and low, session highs and lows (Asia, London, New York AM and PM), the 09:30 New York opening-candle high and low, news-release wicks (one-minute candle extremes at manually configured release times), Fair Value Gaps and optional inverse FVGs, and equal/relatively equal highs and lows with adjustable detection tolerances.
 
-Liquidity_Draws identifies zones where buy-side and sell-side liquidity accumulate — prior swing highs where shorts' stops sit, prior swing lows where longs' stops sit, and equal-high/equal-low clusters. It then draws these as horizontal "draw" levels and, critically, tracks whether price is being pulled toward them.
+Each draw's price and distance are shown in two on-chart tables, alongside the levels themselves. Levels are anchored to their originating candles where one-minute history is available.
 
-The trend angle is the interesting part. Instead of treating every level as equally important, the indicator weights levels by proximity to current price and by how recently they formed. In an uptrend, it highlights the *next* liquidity pool above price as the likely target. In a downtrend, it flips. That's why it sits in the Trend category rather than Support/Resistance.
+## Key Features
 
-As shown in the chart above, the levels aren't static clutter — they shift priority as price moves, and the active draw level gets emphasized.
+**Timeframe-aware display.** Session levels are hidden on charts above 1H. FVGs and iFVGs only appear when their source timeframe is equal to or higher than the chart timeframe, which keeps lower-timeframe gaps off higher-timeframe charts. Daily or weekly gap sources can be selected in settings to display those gaps on higher-timeframe charts.
 
-## Key Features That Stand Out
+**Mitigation and tracking.** Liquidity levels are retired when touched. FVG mitigation can use first-touch or full-fill rules. Optional iFVG tracking identifies gaps that invert following a qualifying source-timeframe close through the opposite boundary. Tracking updates from completed one-minute candles rather than waiting for the higher-timeframe chart candle to close.
 
-**Dynamic level weighting.** Not all liquidity is equal. The indicator deprioritizes stale levels and amplifies fresh ones. This is the single biggest reason it's more useful than a manual swing-high script.
+**Clean chart presentation.** Optional gap boxes show the full imbalance zone, while spaced labels and connector lines reduce clutter. Line styles, widths, colours and transparency are customisable, along with gap-box fills and borders. Chart-level limits and table-row counts are adjustable.
 
-**Draw direction bias.** It tells you *which side* price is being pulled toward, not just where levels exist. That's the trend signal.
+## Settings and How to Tune Them
 
-**Clean visual hierarchy.** Active levels are bold, inactive ones fade. You can actually read the chart without fighting the indicator.
+The settings cover several distinct areas:
 
-**Works across timeframes.** I found it consistent from 5m to 4H. Below 5m it gets noisy — expected, since liquidity structure breaks down at that resolution.
+- **Gap source timeframe.** Daily or weekly gap sources can be selected to display those gaps on higher-timeframe charts.
+- **Equal-high/low detection tolerances.** These are adjustable, which matters because detection uses confirmed pivots — levels appear only after the required confirmation bars.
+- **News release times.** Entered manually; the indicator does not automatically identify high-impact economic releases.
+- **Mitigation rules.** FVG mitigation can be set to first-touch or full-fill.
+- **iFVG tracking.** Optional, and depends on a qualifying source-timeframe close through the opposite boundary.
+- **Visual styling.** Line styles, widths, colours, transparency, gap-box fills and borders, chart-level limits and table-row counts.
 
-## Best Settings I Tested
+## How to Use It
 
-Defaults are decent, but two tweaks made a real difference:
+The indicator is a reference map, not a signal generator. It shows where liquidity may sit and whether levels have been mitigated. Two practical considerations:
 
-- **Lookback period:** Bump it from default (usually 20) to **30–40** on 1H+ charts. Shorter lookbacks over-plot and you'll see levels everywhere.
-- **Level sensitivity / threshold:** Tighten it. The default flags too many minor pools. I set it to only show levels that have been touched or approached at least twice.
-- **Alerts:** Turn on "draw level approached" alerts. This is where the indicator actually earns its subscription.
+- **Historical coverage depends on available one-minute data.** Where one-minute history isn't available, levels won't be anchored to their originating candles.
+- **Equal-high/low levels appear only after confirmed pivots**, so they are inherently lagging by the confirmation period.
 
-Leave the visual styling alone — the built-in hierarchy works.
-
-## How I Traded It
-
-The logic is straightforward once you stop overthinking it:
-
-1. Identify the active draw level (the bold one).
-2. Confirm trend direction on a higher timeframe.
-3. Enter on the pullback *toward* the draw level, not away from it.
-4. Target the draw level itself; it often acts as a magnet that price reaches, then reacts from.
-
-**Long example:** Uptrend on 1H, price pulls back, next liquidity pool sits above at a prior swing high. Enter long on the pullback, target the pool. This worked more often than not in my testing — not because the level is magic, but because it's where other traders' stops and breakout orders genuinely sit.
-
-**Invalidation:** If price rejects hard *at* a draw level and closes back through it, the level is exhausted. Don't re-enter blindly.
+The levels themselves are reference points — not guaranteed destinations or standalone entry signals. The indicator does not establish a win rate or guarantee profitability.
 
 ## Pros & Cons
 
 **Pros:**
-- Dynamic weighting is genuinely useful, not cosmetic
-- Clear trend bias removes guesswork
-- Alerts are well-implemented
-- Reads cleanly even on busy charts
+- Covers a broad set of liquidity references in one tool: prior day, sessions, opening candle, news wicks, FVGs and equal highs/lows
+- Timeframe-aware display prevents lower-timeframe gaps from cluttering higher-timeframe charts
+- Mitigation tracking retires touched levels and updates from completed one-minute candles
+- Optional iFVG tracking for inverted gaps
+- Adjustable styling and table-row counts for chart readability
 
 **Cons:**
-- Default sensitivity over-plots; needs tuning
-- "Liquidity" is a heuristic — it's inferring order placement, not seeing it
-- No backtesting or stats panel
-- Below 5m it's noise
+- News times are entered manually; high-impact releases aren't identified automatically
+- Historical coverage depends on available one-minute data
+- Equal-high/low detection uses confirmed pivots, so levels lag
+- Liquidity draws are inferred reference levels, not observed order flow
+- No win rate or profitability is established by the indicator
 
 ## Who It's For
 
-Discretionary trend traders who already think in terms of stop hunts and liquidity pools. If you trade breakouts or pullbacks on 15m–4H and want a visual map of where price is likely headed, this fits. Scalpers on 1m — skip it. Algo traders wanting hard stats — also skip it; this is a discretionary tool.
-
-## Alternatives
-
-- **LuxAlgo's Liquidity concepts tools** — more comprehensive if you want a full smart-money suite.
-- **Plain swing high/low scripts** — free, but you lose the dynamic weighting.
-- **Volume Profile** — a different lens on the same "where's the action" question; sometimes better, sometimes worse.
+Discretionary traders who already think in terms of liquidity pools and want a visual map of potential draws above and below price. It suits those working on intraday and higher timeframes where session and prior-day levels are meaningful. Traders wanting automated news detection or hard performance statistics will need to look elsewhere.
 
 ## FAQ
 
-**Is Liquidity_Draws repainting?** The levels update as new structure forms, but confirmed levels don't repaint. The active draw level *can* shift — that's by design.
+**Does it repaint?** The source material does not address repainting directly. It does state that tracking updates from completed one-minute candles rather than waiting for the higher-timeframe chart candle to close, and that equal-high/low levels appear only after the required confirmation bars.
 
-**Does it work on crypto?** Yes, and arguably better than forex given 24/7 markets.
+**Does it work on crypto?** The source material makes no market-specific claims.
 
-**Can I use it alone?** You can, but it pairs best with a momentum or trend filter to avoid counter-trend entries.
+**Can I use it alone?** The source material describes liquidity draws as reference levels — not guaranteed destinations or standalone entry signals.
 
-**Is it worth the invite-only cost?** If you trade the 15m–4H range regularly, yes. If you're a casual swing trader, a free swing script does 70% of the job.
+**What timeframes does it support?** Session levels are hidden above 1H. FVGs and iFVGs appear only when their source timeframe is equal to or higher than the chart timeframe. Daily or weekly gap sources can be selected for higher-timeframe charts.
 
 ## Final Verdict
 
-Liquidity_Draws does something most "liquidity" indicators don't: it commits to a directional bias instead of hedging with symmetric levels. That's a real edge for trend traders. It's held back by over-sensitive defaults and the inherent fuzziness of inferring order flow, but tuned properly it's a solid addition to a discretionary setup.
+This indicator's strength is breadth and presentation: it consolidates prior-day, session, opening-candle, news-wick, FVG and equal-high/low references into one timeframe-aware display with mitigation tracking. It's honest about its limits — manual news times, one-minute data dependency, pivot-confirmed equal highs/lows, and no performance guarantees. It's a reference tool, not a signal generator, and should be treated as such.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Good tool, honest about what it can and can't do. Not revolutionary, but genuinely useful.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

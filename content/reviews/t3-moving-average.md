@@ -16,45 +16,43 @@ categories:
   - Technical Analysis
 rating: 4
 description: "T3 Moving Average cuts noise better than EMA or SMA. See how I use it for entries, exits, and the best settings."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The **T3 Moving Average** isn't just another line on your chart. Developed by Tim Tillson, it applies multiple smoothing passes to a standard exponential moving average, then adds a "volume factor" (typically 0.7) to reduce lag while keeping the curve responsive. The result? A moving average that hugs price action tighter than a standard EMA but throws fewer false signals.
+The **T3 Moving Average** isn't just another line on your chart. Developed by Tim Tillson, it applies multiple smoothing passes to a standard exponential moving average, then adds a "volume factor" (typically 0.7) to reduce lag while keeping the curve responsive. The result is a moving average that hugs price action tighter than a standard EMA while producing fewer false signals.
 
-As the chart above shows, the T3 line follows price closely during trends but flattens out in choppy sideways markets—exactly what you want to avoid whipsaws. It’s not magic, but it’s cleaner than most.
+The T3 line follows price closely during trends but flattens out in choppy sideways markets—the behavior that helps avoid whipsaws. It isn't magic, but it's cleaner than most.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **Adjustable Volume Factor (v factor):** Default 0.7. Lower values = faster response (more noise). Higher values = smoother (more lag). This single parameter makes the T3 tunable for any timeframe.
+- **Adjustable Volume Factor (v factor):** Default 0.7. Lower values = faster response (more noise). Higher values = smoother (more lag). This single parameter makes the T3 tunable across timeframes.
 - **Triple Smoothing:** Three rounds of EMA calculations strip out most micro-movements without the heavy delay of a simple moving average.
-- **Built-in Offset:** You can shift the line forward/backward in time—handy for visualizing potential future trend direction.
+- **Built-in Offset:** The line can be shifted forward or backward in time—useful for visualizing potential future trend direction.
 - **Color Change:** Most versions flip color when the T3 changes direction (e.g., green to red). Instant visual cue.
 
 ---
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After testing this on BTC/USD 1H, EUR/USD 4H, and AAPL daily, here’s what works:
+- **Timeframe:** Suited to 1H and above for swing trades. Lower timeframes still work but produce more noise.
+- **Length:** Shorter lengths for short-term trends; medium lengths for medium-term; longer lengths for long-term trend context.
+- **V Factor:** Keep at the 0.7 default for most pairs. Lower values increase responsiveness; higher values produce a smoother line.
+- **Offset:** Leave at default unless deliberately visualizing a leading signal.
 
-- **Timeframe:** Use on 1H+ for swing trades. Lower timeframes still work but you'll get more noise.
-- **Length:** 8–14 for short-term trends; 20–30 for medium-term; 50+ for long-term.
-- **V Factor:** Keep at 0.7 for most pairs. Drop to 0.6 if you want more responsiveness; raise to 0.8 for smoother lines.
-- **Offset:** Leave at 0 unless you’re backtesting a leading signal.
-
-Pro tip: Combine two T3s (fast: length 8, v 0.6; slow: length 21, v 0.7) to spot crossovers—similar to a MACD but cleaner.
+One approach: combine two T3s (a faster one and a slower one) to spot crossovers—similar in concept to a MACD but cleaner.
 
 ---
 
 ## How to Use It for Entries and Exits
 
-**Entry (long):** Price closes above the T3 and the line turns upward (green). Wait for a pullback to the T3 line—don’t chase. Enter on a bounce off the line with confirmation (e.g., bullish candlestick pattern).
+**Entry (long):** Price closes above the T3 and the line turns upward (green). Wait for a pullback to the T3 line—don't chase. Enter on a bounce off the line with confirmation (e.g., bullish candlestick pattern).
 
 **Exit (long):** Price closes below the T3 and the line turns downward (red). For trend-following, trail your stop at the T3 line.
 
-**False signal filter:** Use a 3-bar rule—if price breaks the T3 but closes back on the other side within 3 candles, ignore the signal. This alone cut my false entries by ~40%.
+**False signal filter:** Use a 3-bar rule—if price breaks the T3 but closes back on the other side within 3 candles, ignore the signal.
 
 ---
 
@@ -63,16 +61,16 @@ Pro tip: Combine two T3s (fast: length 8, v 0.6; slow: length 21, v 0.7) to spot
 **Pros:**
 - Cleaner than EMA/SMA in ranging markets.
 - Customizable v factor lets you dial in your style.
-- Works as a standalone trend filter or combine with RSI/MACD.
+- Works as a standalone trend filter or combined with RSI/MACD.
 
 **Cons:**
 - Triple smoothing means it repaints slightly on lower timeframes (intraday). Use with caution on 5M/15M.
-- No built-in alerts in the default version—you’ll need a script with this feature.
+- No built-in alerts in the default version—you'll need a script with this feature.
 - Can lag during explosive breakouts (like a news spike). The T3 will catch up, but you miss the first move.
 
 ---
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Swing traders** (1H–4H charts) who want a reliable trend line without daily noise.
 - **Position traders** using daily/weekly charts who need a clear stop-loss reference.
@@ -92,27 +90,33 @@ Not for scalpers or day traders on 1M–5M charts—the smoothing kills the spee
 
 ## FAQ
 
-**Q: Does the T3 repaint?**  
-A: Yes, slightly. Because it uses multiple EMA passes, the value on the current (incomplete) candle can change as new data comes in. On closed candles, it’s fixed. Use 1H+ to minimize.
+**Q: Does the T3 repaint?**
+A: Yes, slightly. Because it uses multiple EMA passes, the value on the current (incomplete) candle can change as new data comes in. On closed candles, it's fixed. Use 1H+ to minimize.
 
-**Q: What’s the best length for crypto?**  
-A: 12–14 for 1H BTC/ETH. Crypto is noise-heavy—shorter lengths give too many fakeouts.
+**Q: What's the best length for crypto?**
+A: Shorter lengths are typically favored on 1H BTC/ETH. Crypto is noise-heavy—shorter lengths give too many fakeouts.
 
-**Q: Can I use T3 alone for trading?**  
-A: I wouldn’t. Pair it with volume (OBV) or momentum (RSI) for confirmation. Alone, it’s a good trend filter, not a complete system.
+**Q: Can I use T3 alone for trading?**
+A: Pair it with volume (OBV) or momentum (RSI) for confirmation. Alone, it's a good trend filter, not a complete system.
 
 ---
 
 ## Final Verdict with Star Rating
 
-The T3 Moving Average is a workhorse indicator that does one thing well: smooth price data without killing reaction time. It’s not flashy, but it’s reliable—and that’s what matters for consistent trading.
+The T3 Moving Average is a workhorse indicator that does one thing well: smooth price data without killing reaction time. It's not flashy, but it's reliable—and that's what matters for consistent trading.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Deducted one star for the repainting issue on lower timeframes and the lack of native alerts. Otherwise, it’s a staple on my charts.
+**Rating: ⭐⭐⭐⭐ (4/5)**
+Deducted one star for the repainting issue on lower timeframes and the lack of native alerts.
 
-**description:** "T3 Moving Average cuts noise better than EMA or SMA. See how I use it for entries, exits, and the best settings."
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

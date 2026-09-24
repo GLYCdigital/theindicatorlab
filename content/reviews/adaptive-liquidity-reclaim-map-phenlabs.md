@@ -17,87 +17,98 @@ categories:
 rating: 4
 description: "Adaptive_Liquidity_Reclaim_Map_Phenlabs review: tested settings, entry/exit logic, pros/cons, and how to use this liquidity-based trend indicator."
 tv_script_url: "https://www.tradingview.com/script/hGv623ii-Adaptive-Liquidity-Reclaim-Map-PhenLabs/"
+sources: ["https://www.tradingview.com/script/hGv623ii-Adaptive-Liquidity-Reclaim-Map-PhenLabs/"]
 ---
-I'll be straight with you: most liquidity-mapping indicators are just glorified VWAP lines with extra steps. This one from Phenlabs actually does something different. It tracks when price reclaims a liquidity zone and adapts the zone boundaries in real time — which sounds fancy, but after running it through a few weeks of live testing on BTC and EURUSD, I found it's genuinely useful for catching trend continuations off liquidity sweeps. Not perfect, but solid.
+I'll be straight with you: most liquidity-mapping indicators are just horizontal lines with extra steps. The Adaptive Liquidity Reclaim Map from PhenLabs attempts something more specific — it tracks when price sweeps a confirmed liquidity zone, reclaims it, and aligns with higher-timeframe direction, then frames the result as a visual decision. Whether that's useful depends on how you already trade liquidity.
 
 ## What It Actually Does
 
-The indicator plots liquidity zones on your chart — areas where stop losses cluster (typically above recent highs and below recent lows). The "adaptive" part is where it earns its name: instead of static levels like most liquidity tools, the zones recalculate based on volatility and how price interacts with them. When price reclaims a zone after sweeping it, the indicator changes the zone's color and marks the reclaim point. That's your signal.
+The indicator plots two liquidity zones — areas where stops tend to cluster, above recent swing highs and below recent swing lows. It keeps only the newest buy-side and sell-side zones on the chart rather than accumulating stale lines. Pivot highs create the newest buy-side zone; pivot lows create the newest sell-side zone. Each zone is drawn as a slim, semi-transparent ATR-sized band with a colored border and an optional dashed center.
 
-Notice in the screenshot how the zones shift width as volatility expands and contracts — that's the adaptive component working. Static zones get useless in fast markets; these don't.
+The "adaptive" element is the reclaim filter: the candle body is normalized by ATR and compared against a threshold that responds to current volatility. When price trades beyond a zone center and closes back through it, the indicator measures reclaim impulse relative to current ATR. A qualified reclaim prints a diamond marker, a large directional callout, and a projected risk/reward block.
 
 ## Key Features That Matter
 
-- **Reclaim detection**: The indicator doesn't just draw zones — it flags when price closes back inside a swept zone. That's the actionable moment.
-- **Adaptive zone width**: Uses ATR-based adjustment, so zones widen in high volatility and tighten in low. Makes sense on both scalping and swing timeframes.
-- **Color-shift logic**: Zones turn from neutral to bullish/bearish tint after a reclaim, giving you a visual read on whose liquidity got taken.
-- **Clean uncluttered output**: No arrows screaming at you, no 47 different signal types. Just zones and reclaim markers. Refreshing.
+- **Reclaim detection**: The script flags when price closes back through a swept zone — that's the actionable event, not the sweep itself.
+- **Adaptive impulse filter**: Body size is normalized by ATR and checked against a volatility-responsive threshold, so the bar for qualification shifts with conditions.
+- **Confluence quality score**: A 0–100 measure combining impulse quality, reclaim close location, HTF alignment, and volatility suitability. Per the developer, it is not a probability or AI prediction — it's a normalized confluence display.
+- **Risk/reward blocks**: Translucent rectangles project from the sweep-bar invalidation to primary and runner objectives, giving the setup a visible geometry rather than just a target line.
+- **One event per pool**: Each confirmed swing can produce only one signal, which keeps the chart clean during repeated retests.
+- **Dashboard**: A two-column panel shows mode, HTF bias, volatility regime, active pools, last event, and quality.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After testing on 5m, 15m, 1H, and 4H charts:
+The developer publishes defaults and ranges for each input. Use them as a starting point, not a prescription.
 
-- **Timeframe**: Works best on 15m and 1H. Lower than that and the zones flicker too much. Higher and the zones become too slow to be actionable.
-- **Zone sensitivity**: Keep it at default (around 50) for swing trading. Drop it to 30-35 for scalping — you get more zones but they're tighter and more reactive.
-- **ATR multiplier**: Default of 2.0 is solid. I tried 3.0 for wider zones on BTC — reduces false signals but you miss the early reclaims. Stay with 2.0.
-- **Max zones displayed**: Set to 5. Any more and the chart gets cluttered without adding useful info.
+- **Pivot Left Bars** — Default 4, range 2–20. Controls how much left-side structure is required for a zone. Increase for more significant pools.
+- **Pivot Right Bars** — Default 4, range 2–20. Sets confirmation delay and selectivity. Higher values reduce zone turnover.
+- **ATR Length** — Default 14, range 5–100. Volatility unit used for impulse, quality, and zone sizing.
+- **Volatility Lookback** — Default 50, range 10–200. ATR baseline used to identify the current volatility regime.
+- **Base Impulse (ATR)** — Default 0.35, range 0.10–2.00. Minimum normalized candle body before adaptive scaling. Raise it for fewer, more forceful reclaims.
+- **Liquidity Zone Width (ATR)** — Default 0.10, range 0.02–1.00. Half-width of the active zone. The developer suggests keeping it near 0.10 for a slim band.
+- **Require HTF Alignment** — Default On. Requires the reclaim to agree with higher-timeframe EMA direction.
+- **Higher Timeframe** — Default 240. Context timeframe for directional filtering; typically one above the chart timeframe.
+- **Primary Target (R)** — Default 1.0, range 0.50–5.00. First objective, measured from entry to sweep-bar extreme.
+- **Runner Target (R)** — Default 2.0, range 0.75–8.00. Full reward-block objective shown in the signal callout.
+- **Projection Length** — Default 30, range 5–200. Number of bars the active risk/reward block extends.
+- **Show Score Callouts** — Default On. Shows the large directional quality label; only the latest callout per direction is retained.
+- **Tint Signal Candle** — Default On. Adds a directional tint only to qualified signal candles.
 
 ## How to Actually Trade It
 
-The logic is straightforward but requires discipline:
+The logic the tool frames is a sweep-and-reclaim sequence, but the developer is explicit that this is an analytical aid, not a signal service. A reasonable reading:
 
-1. **Wait for a sweep**: Price breaks a zone's edge (liquidity grab) and closes back inside.
-2. **Confirm with the color shift**: The zone should change tint when the reclaim happens.
-3. **Enter on the pullback**: Don't chase the reclaim candle. Wait for price to retest the zone boundary and hold.
-4. **Stop loss**: Below the sweep low (for longs) or above the sweep high (for shorts). Tight and logical.
-5. **Target**: The next opposing zone. The indicator's adaptive zones give you natural profit targets.
+1. **Wait for a sweep**: Price trades beyond a zone center.
+2. **Wait for the reclaim close**: Price closes back through the zone. This is where impulse is measured.
+3. **Check context**: If HTF alignment is on, the reclaim must agree with the higher-timeframe EMA direction.
+4. **Stop reference**: The sweep-bar extreme defines risk in the projection.
+5. **Targets**: Primary and runner objectives are drawn in R multiples from entry.
 
-I found the best setups when a reclaim happens on the 1H and you drop to the 15m for entry. The confluence of both timeframes agreeing on the same zone makes the signal notably stronger.
+The developer's own guidance is to use ALRM with market structure, session context, and a defined execution plan, and to confirm alerts on bar close.
 
 ## Pros & Cons
 
 **Pros:**
-- Adaptive zones actually adapt — rare in this category
-- Reclaim detection is clean and visual, no interpretation guesswork
-- Works well across crypto, forex, and indices
-- Logical stop placement based on sweep extremes
-- Doesn't repaint (I verified this extensively)
+- Keeps only the newest zones per side, avoiding the line clutter common to liquidity tools.
+- Reclaim detection is rule-based and visual, with no interpretation required on the qualification itself.
+- The same sweep-bar event drives detection, quality scoring, invalidation, and targets, so the pieces stay internally consistent.
+- Separate bullish and bearish alerts are available for notification workflows.
+- Quality score is transparently described as a confluence measure, not dressed up as predictive.
 
 **Cons:**
-- No alerts for reclaim events — you have to watch the chart
-- Can produce conflicting zones on adjacent timeframes, which confuses new traders
-- The "adaptive" logic occasionally over-tightens zones in choppy range markets, causing noise
-- No built-in backtesting or strategy tester integration
+- Pivot confirmation delays a new zone by the right-bar setting — the tool explicitly does not predict unconfirmed swings.
+- The quality score is a display, not a forecast, probability, or recommendation; treating it as one would be a misread.
+- Risk/reward blocks use the signal-bar sweep extreme and cannot account for spread, slippage, gaps, event risk, or future liquidity changes.
+- Higher-timeframe alignment can filter valid countertrend reversals; the developer advises disabling it only with a separate reversal plan.
 
 ## Who It's For
 
-This suits traders who already understand liquidity concepts and want a tool to visualize them better. If you're new to liquidity sweeps and reclaims, this won't teach you the concept — it'll just show you pretty boxes. You need to know what you're looking for. Seasoned price action traders who use concepts like "stop hunts" or "liquidity grabs" will get the most value.
+This suits traders who already work with liquidity sweeps and reclaims and want a consistent visual reference for invalidation and payoff. The developer lists it for dark-chart screenshot posts, intraday index/futures/FX/crypto charts, liquidity-focused discretionary workflows, and multi-timeframe execution plans using an HTF direction filter with LTF entries. If you don't already understand sweep-and-reclaim structure, the tool won't teach it.
 
 ## Alternatives Worth Considering
 
-- **LuxAlgo Liquidity Levels**: More comprehensive with alerts and multi-timeframe features, but heavier on the chart and less adaptive.
-- **VWAP + Order Blocks combo**: Free approach that gives similar context but requires more manual interpretation.
-- **Smart Money Concepts by LuxAlgo**: Better if you want the full SMC toolkit, but overwhelming if you just need liquidity zones.
+- **LuxAlgo Liquidity Levels**: Broader liquidity coverage and multi-timeframe features, but heavier on the chart.
+- **Smart Money Concepts by LuxAlgo**: A fuller SMC toolkit if you want order blocks and structure alongside liquidity — more to manage if all you need is zone reclaims.
+- **Manual zone marking**: Free, and forces you to define your own invalidation and targets rather than inheriting the script's.
 
 ## FAQ
 
 **Does this indicator repaint?**
-No. The zones and reclaim markers are based on closed candles and stay fixed once printed. I checked this across multiple sessions.
+The source material does not make a repainting claim. It states that pivot confirmation delays a new zone by the selected right-bar setting and that ALRM does not predict unconfirmed swings. The HTF EMA gate is described as checking directional context without lookahead. Verify behavior on your own chart before relying on it.
 
 **Can I use it for scalping?**
-Yes, but drop the zone sensitivity to 30-35 and stick to 5m charts. Expect more false signals in ranging markets.
+The developer doesn't specify a timeframe preference. The inputs allow you to tighten pivot and impulse settings, but the material makes no claim about which timeframes work best.
 
 **Does it work on crypto?**
-Better than on forex, honestly. Crypto's aggressive sweeps make the reclaim signals more pronounced. BTC 15m is where it shines.
+The developer lists intraday index, futures, FX, and crypto charts as use cases, without ranking them.
 
 **Are alerts included?**
-No. This is the biggest missing feature honestly. You'll need to keep the chart open or use a third-party alert solution.
+Yes — separate bullish and bearish alerts are available for notification workflows. The developer advises confirming alerts on bar close.
 
 ## Final Verdict
 
-**⭐⭐⭐⭐ (4/5)**
+The Adaptive Liquidity Reclaim Map does one thing with unusual discipline: it turns a confirmed sweep-and-reclaim into a single visual event with a defined invalidation and a payoff map, and it keeps the chart from filling up with dead zones. The transparency around the quality score — explicitly not a probability or prediction — is the right posture for a tool like this. What it won't do is decide for you: pivot confirmation means it lags unconfirmed structure by design, HTF alignment can filter valid countertrend reversals, and the risk/reward blocks ignore real-world frictions like spread and gaps. Use it as a visualization layer on top of a plan you already have, and test settings on the market and timeframe you actually trade.
 
-The Adaptive_Liquidity_Reclaim_Map_Phenlabs earns four stars because it does one thing well — visualizing liquidity reclaims adaptively — without overcomplicating it. The lack of alerts and occasional choppy-market noise keep it from being exceptional. But if you trade liquidity concepts and want a clean, reliable tool that shows you exactly when a zone gets reclaimed, this is worth the install. Just pair it with your own entry confirmation rather than taking every signal it gives you.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -17,89 +17,105 @@ categories:
 rating: 4
 description: "Positioning_Flow_Index_By_Dgt review: a trend-following momentum gauge that filters noise. Tested settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/L63e3kLK-Positioning-Flow-Index-by-DGT/"
+sources: ["https://www.tradingview.com/script/L63e3kLK-Positioning-Flow-Index-by-DGT/"]
 ---
-Let me be upfront: I've seen dozens of "flow" indicators that repackage RSI with a moving average and call it a day. This one isn't that. Positioning_Flow_Index_By_Dgt does something subtly different — it tracks the *rate of change* in buying and selling pressure, then smooths it into a single oscillator line. The result is a trend gauge that responds faster than MACD but with fewer false whipsaws than raw momentum oscillators.
+# Positioning Flow Index (PFI) Review
 
-I ran this on BTCUSD, EURUSD, and SPX daily charts over the past three months, and the behavior is consistent: it gives you early trend rotation signals about 2-3 candles before price breaks structure. That's the edge. But it's not a holy grail — there are clear conditions where it falls apart, and I'll get to those.
+Let's be upfront: plenty of "flow" indicators repackage an oscillator and call it a day. This one isn't that. The **Positioning Flow Index (PFI)** is a positioning-analysis framework built around the interaction between **Price** and **Open Interest** — not price momentum in isolation. It doesn't try to produce a simple buy or sell signal. Instead, it classifies the relationship between price movement and participation into four defined regimes, and grades how strong that evidence is.
+
+That's a narrower and more specific tool than the name might suggest, and it's worth understanding exactly what it does before deciding whether it belongs on your chart.
 
 ## What Actually Sets It Apart
 
-The core innovation here is how it handles volume and price together. Most flow indicators multiply volume by price change and call it a day. This one uses a **normalized flow calculation** that adjusts for volatility, so a 2% move on a low-volume day doesn't scream "BUY" the way it would on a raw accumulation/distribution line.
+The core mechanism is the pairing of two distinct data dimensions. **Price** describes the direction and relative strength of the move. **Open Interest** describes whether outstanding derivative positions are expanding or contracting. PFI normalizes both using **Z-scores**, so it measures how unusual the current Price and OI changes are relative to their recent history — a positive Z-score means above the recent average, a negative one means below.
 
-You'll notice three things immediately on the chart:
+That normalization is what separates this from a raw accumulation/distribution line. It's designed to distinguish ordinary fluctuations from statistically unusual changes in positioning. The resulting **Positioning Flow Index** is bounded between **-100 and +100**, giving a continuous read on directional positioning flow.
 
-1. **The zero line is actually meaningful.** When the oscillator crosses above zero, it's not just a momentum shift — it represents genuine net buying pressure after accounting for typical noise. That's rare.
-2. **The signal line is adaptive.** It's not a fixed-length EMA. The smoothing adjusts based on recent volatility, which means it hugs price action tighter during trends and loosens during chop.
-3. **Divergence is visually clean.** Because the oscillator is normalized, divergences against price are easier to spot than with standard MACD.
+## The Four Flow States
 
-## Best Settings I Tested
+The **Flow State** classifies the Price/OI relationship into four regimes:
 
-The defaults are decent, but I found these tweaks improve performance:
+- **Long Buildup (LB)** — Price rising, Open Interest increasing. Upward pressure with expanding participation, commonly associated with new long positioning.
+- **Short Buildup (SB)** — Price falling, Open Interest increasing. Downward pressure with expanding participation, commonly associated with new short positioning.
+- **Short Covering (SC)** — Price rising, Open Interest decreasing. Upward price with contracting positions, commonly associated with shorts being closed.
+- **Long Unwinding (LU)** — Price falling, Open Interest decreasing. Downward price with contracting positions, commonly associated with longs being closed.
 
-- **Length: 21** (default is 14). This reduces noise on 1H-4H charts significantly. On daily charts, 14 works fine.
-- **Signal Smoothing: 9** — keeps the signal line responsive without chasing every tick.
-- **Threshold: 25** — the overbought/oversold zones. I prefer 30 for swing trading, 20 for scalping.
+When Price and Open Interest don't both exceed the required activity threshold, the state is **Neutral**. Per the documentation, Neutral doesn't mean the market is inactive — it means there isn't sufficient synchronized Price + OI evidence to assign one of the four directional states.
 
-On the screenshot above, I'm using the 21/9 combination. Notice how the oscillator kept printing higher lows during the March pullback on BTC while price made lower lows — that divergence caught the reversal two days early.
+## Signal Strength
 
-## How I Actually Trade It
+Not every Flow State carries the same weight of evidence. PFI computes a **Signal Strength** from two components: **Participation** (from the Open Interest Z-score magnitude) and **Confirmation** (from the Price Z-score magnitude). Both are capped at **2σ** and combined using their geometric mean:
 
-Here's the entry logic that worked best in my testing:
+**Signal Strength = √(Participation × Confirmation)**
 
-**Long setup:**
-1. Oscillator crosses above zero *and* signal line crosses above the oscillator.
-2. Price is above the 200 EMA (daily timeframe).
-3. Enter on the next candle open. Stop at the recent swing low. Target 1.5x the stop distance.
+The result is expressed as a percentage. Higher values indicate stronger synchronized evidence. Importantly, the documentation is explicit that this is **not a probability** that the move will continue — it measures the strength of the evidence supporting the current Flow State.
 
-**Short setup:** Mirror it. Zero cross below, price below 200 EMA.
+## Early Warnings vs. Confirmed Signals
 
-**The divergence play:** When price makes a lower low but the oscillator holds higher (like the March example), wait for the zero-line cross as confirmation. Don't catch the knife.
+This is the part worth reading carefully, because it's where repainting enters the picture — deliberately.
 
-The indicator works best on **4H and daily** timeframes. On 15-minute charts, the adaptive smoothing creates too much lag and you'll get chopped up.
+**Early Flow Warning** uses the live, still-forming candle to flag a potential transition before the candle closes. These warnings are intentionally provisional and may change or disappear as Price or OI moves during the candle.
+
+**Confirmed Flow Signals** are evaluated only when the candle closes. Once confirmed, the LB / SB / SC / LU marker is based on the completed candle and does not change afterward.
+
+So the design explicitly separates **early information** from **confirmed information** rather than hiding the natural evolution of live data. Early warnings repaint during the active candle; confirmed markers do not.
+
+## Settings and How to Tune Them
+
+The script exposes a **Flow Model** selector, which changes how the Positioning Flow Index is calculated:
+
+- **Model A — OI × sign(Price):** Open Interest sets the magnitude, Price sets the direction. Emphasizes participation strength and can produce a strong reading even when the price move itself is small.
+- **Model B — OI × Price:** The two Z-scores are multiplied directly. Captures the interaction of both dimensions, but unusually large Price Z-scores can dominate the result.
+- **Model C — Price Direction × OI Magnitude × Price Confirmation:** Price drives directional pressure, OI drives participation magnitude, and the absolute Price Z-score contribution is capped to reduce the influence of extreme price moves. **This is the default model.**
+
+The three models are provided as different ways of interpreting the same underlying Price/OI relationship, not as competing signals. The documentation does not state that any one produces better results — only that they differ in emphasis.
+
+There's also an optional **Price Sentiment** component, a smoothed and normalized view of price behavior on the same **-100 to +100** scale, allowing direct comparison with PFI. And an optional **State Ribbon** on the main chart: **teal** for Long Buildup, **red** for Short Buildup, **yellow** for Short Covering, **orange** for Long Unwinding, and **gray** for Neutral. Ribbon intensity is influenced by Signal Strength.
+
+## How to Read It
+
+PFI is positioned by its author as a **contextual positioning tool**, not a standalone entry system. A strong Long Buildup suggests rising price with expanding OI; a strong Short Buildup suggests falling price with expanding OI; Short Covering suggests rising price with contracting OI; Long Unwinding suggests falling price with contracting OI. Signal Strength helps separate stronger synchronized conditions from weaker ones, while PFI itself gives the continuous directional measure.
+
+The documentation is candid that these states describe the current Price/OI relationship — they do not guarantee future direction.
 
 ## The Honest Trade-Offs
 
 **Pros:**
-- Early trend rotation signals — genuinely faster than MACD
-- Volatility-adjusted, so it handles different assets consistently
-- Clean divergence visualization
-- No repainting (I checked multiple times across historical data)
-- Works across all major asset classes
+- Combines two genuinely independent dimensions (Price and OI) rather than repackaging price momentum
+- Z-score normalization distinguishes unusual positioning changes from ordinary noise
+- A clearly defined, non-repainting confirmation layer alongside explicitly provisional early warnings
+- Bounded -100 to +100 PFI and a separate Signal Strength metric give both direction and evidence quality
 
 **Cons:**
-- On ranging markets, it's useless. Flat oscillators will generate fake crosses
-- The adaptive smoothing means the "speed" of the indicator changes — takes getting used to
-- No built-in alerts for divergences (you have to set them manually)
-- Documentation is sparse; you'll need to experiment with settings
+- Requires markets where **Open Interest data is available** — this rules out instruments without it
+- The Flow State reflects the relationship between Price and OI and should not be read as a direct measure of individual trader intent
+- Early warnings will repaint during the active candle by design, which will bother traders who don't separate them from confirmed markers
+- The three Flow Models mean the PFI reading is model-dependent, adding a layer of interpretation
 
 ## Who Should Use This
 
-Momentum traders who already understand divergence concepts will get the most value. If you're still using MACD and wondering why it lags, this is a solid upgrade. **Swing traders** on 4H+ charts will find it most useful. Day traders on lower timeframes will likely find it too slow.
+Traders working in derivatives markets where Open Interest is meaningful — futures, options-driven instruments, and crypto perpetuals — are the natural audience. Anyone doing discretionary positioning or market-structure analysis will find the four-state framework and Signal Strength a useful structured lens. It's explicitly framed for incorporation into existing frameworks, not as a replacement for one.
 
-**Skip it if:** you're a mean-reversion trader. This indicator is designed to catch trends, not fade extremes. And if you don't understand the concept of flow vs. momentum, you'll misinterpret signals and lose money.
-
-## Better Alternatives
-
-- **For MACD lovers:** Just use this. It's a strict upgrade.
-- **For pure volume analysis:** Look at Volume Profile Fixed Range instead.
-- **For multi-timeframe trend:** The standard Supertrend with ATR 14/3 is simpler and works better on lower timeframes.
-- **For divergence-focused traders:** Stochastic RSI with the standard 14/14/3 settings gives cleaner divergence signals but lags more.
+**Skip it if** you trade instruments without Open Interest data, or if you want a mechanical entry signal. This isn't that, and the author doesn't claim it is.
 
 ## FAQ
 
-**Does it repaint?** No. I verified this by recalculating historical values after new candles printed. The current bar will update, but historical values stay locked.
+**Does it repaint?** It depends on which layer you're looking at. Early Flow Warnings are intentionally repaintable during the active candle because they use live, developing data. Confirmed Flow markers are non-repainting, since they're generated only after the candle closes.
 
-**Can I use it for crypto?** Yes, but adjust the length to 21+ — crypto volatility will trigger too many false signals with the default 14.
+**What does the Signal Strength percentage mean?** It measures how strongly Price and Open Interest are moving together — the strength of evidence supporting the current Flow State. It is explicitly **not** a probability of continuation.
 
-**Is it better than MACD?** For trend detection, yes. MACD is essentially a lagging EMA crossover. This measures actual flow, which leads price. But MACD is better for identifying momentum exhaustion because it's slower.
+**Which Flow Model should I use?** The default is Model C, which caps the Price Z-score contribution to reduce the influence of extreme moves. The documentation presents all three as different interpretations rather than ranked options, so the choice depends on whether you want participation-weighted, interaction-weighted, or direction-and-confirmation-weighted flow.
 
-**What timeframe should I use?** 4H or daily for swing trading. 1H if you're aggressive. Below that, the noise dominates.
+**What markets does it work on?** Markets where Open Interest data is available. The documentation does not specify timeframes.
 
 ## Final Verdict
 
-Positioning_Flow_Index_By_Dgt earns its place as a top-tier trend oscillator. It's not perfect — the ranging market weakness is real, and the lack of built-in divergence alerts is annoying. But for trend traders who understand that *flow* (the rate of buying/selling) leads *price* (the result), this indicator provides a legitimate edge. The volatility normalization alone puts it ahead of 90% of the momentum oscillators on TradingView.
+Positioning Flow Index is a focused, well-documented positioning framework rather than another momentum oscillator with a new coat of paint. Its value is in forcing a specific question — *what is happening to market positioning as price moves?* — and answering it with normalized, bounded, and separately-graded measurements. The explicit split between repaintable early warnings and non-repainting confirmed markers is handled honestly, which is more than most scripts manage.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — One star deducted for the ranging market blind spot and missing divergence alerts. For the price of free, that's a hell of a deal.
+The limitations are real: no Open Interest, no indicator, and the framework describes positioning rather than predicting direction. But for traders in OI-bearing markets who want structure rather than signals, it's a legitimate analytical addition.
+
+**Rating: ⭐⭐⭐⭐ (4/5)** — A point off for the Open Interest dependency and the interpretative overhead of three Flow Models. For a free script, that's a solid deal.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

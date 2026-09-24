@@ -17,89 +17,83 @@ categories:
 rating: 4
 description: "Three_Session_Volume_Profile review: an honest look at this volume profile tool, its best settings, how to trade it, and where it falls short."
 tv_script_url: "https://www.tradingview.com/script/CDfsfyDO-Three-Session-Volume-Profile/"
+sources: ["https://www.tradingview.com/script/CDfsfyDO-Three-Session-Volume-Profile/"]
 ---
-Most "volume profile" scripts on TradingView do the same thing: they draw a histogram on the side of your chart and call it a day. Three_Session_Volume_Profile takes a different angle. Instead of one profile, it builds three — typically covering distinct trading sessions (Asia, London, New York, or whatever split you configure) — and plots them side by side so you can compare where volume actually piled up across the day.
+Most "volume profile" scripts on TradingView do the same thing: they draw a histogram on the side of your chart and call it a day. Three_Session_Volume_Profile takes a different angle. Instead of one profile, it builds three — typically covering distinct trading sessions (Asia, London, New York, or whatever split you configure) — and plots them so you can compare where volume actually accumulated across the day.
 
-I ran it on MACD-style trend setups and intraday charts for a couple of weeks. Here's what it does, where it earns its keep, and where it stumbles.
+Here's what it does, where it earns its keep, and where it stumbles.
 
 ## What this indicator actually does
 
-Strip away the naming and you get a session-segmented volume profile. The script divides the trading day into three windows, calculates a volume-at-price distribution for each, and renders them as horizontal bars anchored to the right edge of the chart. Each session gets its own color, and the Point of Control (POC) — the price level with the most traded volume — is marked for each session.
+Strip away the naming and you get a session-segmented volume profile. The script divides the trading day into three windows, calculates a volume-at-price distribution for each, and renders a separate profile, Point of Control, Value Area, VWAP, and optional deviation bands for each period.
 
-That's the core mechanic. The value isn't in any single profile; it's in the **comparison**. If Asia's POC sits 40 points below London's POC, you're looking at a session that built value at a different level. When the New York session opens and price rejects the London POC, that's a signal you can actually trade.
+Each session is treated as its own auction. The value isn't in any single profile; it's in the comparison. If one session's POC sits well below another's, you're looking at a session that built value at a different level. How price behaves around a prior session's POC during the next session is one of the contextual observations the tool is built to support.
+
+The default schedules use the America/New_York time zone: Asia 18:00–03:00, London 03:00–09:30, and New York 09:30–16:00. All schedules and the time zone are configurable, and the America/New_York setting automatically accounts for daylight-saving changes.
 
 ## Key features worth noting
 
-- **Three independent profiles** with separate color controls. You can mute sessions you don't care about instead of disabling the whole indicator.
-- **Per-session POC lines** that extend across the chart, so you can see how price reacts to prior session value areas.
-- **Value Area percentage** is configurable — default is 70%, which matches the standard TPO convention, but you can tighten it to 60% for a narrower "high-conviction" zone.
-- **Session time inputs** are adjustable, which matters if you trade non-US hours or want a custom split.
+- **Three independent profiles**, each resetting its calculations at the start of its own session. Sessions may overlap, and each continues to calculate independently when they do.
+- **POC and Value Area per session.** The POC is the midpoint of the profile row containing the greatest allocated volume. VAH and VAL define the boundaries of the selected value area.
+- **Value Area percentage is configurable.** The default contains 70% of session volume, but this percentage can be adjusted. Increasing it produces a wider area; reducing it produces a narrower one around the POC.
+- **Session VWAP with optional deviation bands**, resetting independently at the beginning of each session. VWAP uses HLC3 as the representative bar price and weights it by volume. The standard deviation calculation is also volume-weighted, and the selected multiplier is applied above and below VWAP to produce the bands.
+- **Developing and completed levels.** While a session is active, developing VAH, VAL, and POC can be displayed and update as new price and volume information enters. When the session ends, the final profile and levels are stored as completed values, and the number of completed profiles retained per session can be controlled from the settings.
+- **Profile placement.** Each profile can be anchored left (to the session opening edge, extending right) or right (to the session closing or current edge, extending left). This refers to the boundaries of each session, not the edges of the visible chart. A separate Maximum width setting controls horizontal display width in chart bars and does not affect the underlying volume calculations.
 
-The settings panel is more crowded than it needs to be. There are roughly 30 inputs, and several are cosmetic (bar width, transparency, label offsets). If you're the type who wants to open an indicator and go, budget 10 minutes for setup.
+The settings panel is crowded. If you want to open an indicator and go, budget time for setup.
 
-## Best settings I landed on
+## Settings and How to Tune Them
 
-After a lot of fiddling:
+- **Time zone.** Select the time zone used to interpret all three schedules. America/New_York is suitable when session times should follow Eastern Time and adjust automatically for daylight saving. Use a fixed UTC offset only when daylight-saving adjustment is not desired.
+- **Session times.** Set the opening and closing time for Asia, London, and New York. Overnight schedules, such as 18:00–03:00, are supported.
+- **Rows.** Controls profile resolution and supports values from 12 to 200. More rows provide finer price segmentation but also increase calculation requirements. Lower values produce broader profile levels and require fewer calculations.
+- **Value Area percentage.** The standard default is 70%. Increasing the percentage produces a wider Value Area, while reducing it produces a narrower area around the POC.
+- **Completed vs. developing levels.** Developing levels can be used to observe how the current session's distribution changes; completed levels provide fixed references from prior sessions.
+- **VWAP and deviation bands.** Optional, and can be enabled to visualize dispersion around the session-weighted reference price.
 
-- **Value Area: 70%.** The 60% setting looked cleaner but cut out too much of the distribution on thin-volume days.
-- **Rows per profile: 24–30.** Below 20, the profile gets chunky and imprecise. Above 40, it's visual noise.
-- **POC line width: 2, style: dashed.** Solid POC lines clutter the chart when you've got three of them.
-- **Turn off the Asia session** if you're trading the New York open. It rarely adds actionable context unless you're trading the London/Asia overlap.
+One behavior to understand: developing profiles and levels update during the active bar as its high, low, and volume change. This is normal real-time recalculation and should not be interpreted as a fixed signal. A new session high or low changes the profile range and can cause all rows to be redistributed. Completed levels remain fixed unless chart data, timeframe, symbol, session schedule, or indicator settings are changed.
 
-One quirk: the profile only recalculates on bar close if you're on a lower timeframe. On a 1-minute chart with real-time data, the bars flicker mid-formation. Not a dealbreaker, but it's distracting.
+## How to use it
 
-## How I traded it
+The framework the indicator supports is cross-session context:
 
-The logic that worked for me was **POC rejection and cross-session acceptance**:
+1. Mark the prior session's POC and value area boundaries.
+2. Observe whether price accepts or rejects a previous session's Value Area.
+3. Watch whether price rotates around a prior POC, moves from one session's value region toward another, or holds above or below a prior VAH or VAL.
+4. Note whether price trades near or away from the active session VWAP, with deviation bands providing context for how far price is trading from the session's weighted mean.
 
-1. Mark the prior session's POC and value area high/low.
-2. If price opens the new session *inside* the prior value area and rejects the POC, fade toward the value area edge.
-3. If price *accepts* above the prior value area high (two consecutive closes), treat it as a trend continuation signal — the market has repriced.
-
-As shown in the chart above, the three profiles stack neatly and the POC lines give you clear horizontal reference levels. On trending days, the New York POC often drifted above the London POC, and that drift was a decent trend filter.
-
-This isn't a standalone system. It's a context tool. Pair it with a trend indicator or a momentum read — the volume profile tells you *where* to act, not *when*.
+These are contextual observations rather than predefined entry or exit signals. The indicator does not provide trade entries, exits, profit projections, or guarantees of future performance.
 
 ## Pros and cons
 
 **Pros:**
-- Genuinely useful cross-session comparison — most volume profile scripts don't do this.
-- Configurable sessions and value area, so it adapts to different markets.
-- POC lines are clean and don't repaint once the session closes.
+- Genuinely useful cross-session comparison — most volume profile scripts don't separate sessions this way.
+- Configurable sessions, value area, and time zone, so it adapts to different markets.
+- The profile, VWAP, and deviation bands all use the same independently resetting session windows, so the components are internally consistent rather than merged from unrelated studies.
+- No lookahead: the indicator does not request future data, and completed sessions are based only on bars belonging to those sessions.
 
 **Cons:**
-- Heavy settings panel with too much cosmetic filler.
-- Can lag or flicker on low timeframes with live data.
-- No built-in alerts for POC breaks — you have to set those manually.
-- Documentation is thin; you're figuring out session splits by trial and error.
+- Crowded settings panel with cosmetic inputs alongside the functional ones.
+- Developing levels move during the active bar, which can look like flicker on lower timeframes with live data.
+- The profile is an approximation built from chart-bar ranges and volume, not a tick-level bid/ask profile, footprint chart, or reconstruction of individual transactions.
+- Changing the chart timeframe can change the resulting distribution.
 
 ## Who it's for
 
-This is for **intraday traders** — futures, forex, or crypto — who already understand volume profile and want a session-comparison view without paying for a third-party platform. If you're a swing trader holding for days, the session granularity is overkill. If you're brand new to volume profile, start with a simpler single-profile script first.
+This is for intraday traders — futures, forex, or crypto — who already understand volume profile and want a session-comparison view. If you're a swing trader holding for days, the session granularity may be more than you need. If you're new to volume profile, a simpler single-profile script is a better starting point.
 
-## Alternatives
+## Interpretation and limitations
 
-If you just want a standard volume profile, **Volume Profile [LuxAlgo]** is cleaner and better documented. If you want session-based levels without the profile bars, **Session Volume Profile** by TradingView's built-in tools covers the basics. Three_Session_Volume_Profile wins specifically when you need *three simultaneous* profiles — that's its niche.
+A wide section of the profile represents a row receiving relatively more allocated volume; a narrow section represents relatively less. POC and Value Area levels identify areas of historical participation, but they do not guarantee future support or resistance. Their interpretation depends on market structure, volatility, liquidity, instrument type, and the trader's broader methodology.
 
-## FAQ
+On centralized futures markets, the script uses the exchange-reported volume available on the chart. On markets where only tick volume is available, the profile reflects that data instead of centralized transaction volume. Results can differ from volume-profile tools that use lower-timeframe or transaction-level data.
 
-**Does it repaint?**
-No. Once a session closes, the POC and value area are locked. Intra-session, the profile updates with each bar, which is expected behavior.
-
-**Can I use it on crypto?**
-Yes, but you need to manually set session times. The default sessions assume US equity hours.
-
-**Does it work on the 1-minute chart?**
-It works, but expect visual flicker during live bars. Set your rows lower (around 20) to reduce the noise.
-
-**Are alerts included?**
-No built-in alerts. You'd need to reference the plotted POC levels in a separate alert condition.
+Because standard chart data does not provide the exact price of every transaction, each chart bar's volume is allocated across the profile rows intersected by that bar's high-low range, proportional to the amount of the bar's range overlapping each row. A bar with no measurable range has its volume assigned to the row containing its representative price.
 
 ## Final verdict
 
-Three_Session_Volume_Profile does one thing well: it lets you compare value across three sessions at a glance. That's a real edge for intraday traders, and the POC lines are actionable. It loses a star for the cluttered settings, missing alerts, and thin documentation — but if cross-session volume comparison is what you're missing, this fills the gap.
+Three_Session_Volume_Profile does one thing well: it lets you compare value across three sessions at a glance, with POC, Value Area, VWAP, and deviation bands all derived from the same session windows. That's a coherent framework. The tradeoffs are the crowded settings panel, the developing-level recalculation during live bars, and the fact that it's an approximation from chart bars rather than transaction-level data. If cross-session volume comparison is what you're missing, this fills that gap.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

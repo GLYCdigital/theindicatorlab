@@ -17,81 +17,50 @@ categories:
 rating: 4
 description: "Honest review of Confirmed_Structure_Transition_Map_Pineify: settings, entry/exit logic, pros & cons, and who should use this market structure trend indicator."
 tv_script_url: "https://www.tradingview.com/script/u5vdgj0h-Confirmed-Structure-Transition-Map-Pineify/"
+sources: ["https://www.tradingview.com/script/u5vdgj0h-Confirmed-Structure-Transition-Map-Pineify/"]
 ---
-Let me be upfront: I've tested dozens of "market structure" indicators on TradingView, and most are just repackaged fractal breakouts with extra colors. Confirmed_Structure_Transition_Map_Pineify is different — but not in the way you'd expect. It doesn't just mark swing highs and lows; it waits for a confirmed transition before painting the map. That confirmation delay is both its biggest strength and its most frustrating flaw.
+Most "market structure" indicators on TradingView are repackaged fractal breakouts with extra colors. The Confirmed Structure Transition Map [Pineify] takes a different approach: rather than marking every swing high and low, it separates confirmed pivots, break-of-structure events, and direction candidates into an ordered sequence. That separation is the point of the tool, and the delay it introduces is the price you pay for it.
 
 ## What This Indicator Actually Does
 
-This is a trend-mapping tool that identifies shifts in market structure using a confirmation filter — typically a closing price beyond a swing point, often combined with a momentum or candle-close condition. Once a structural transition is confirmed, it repaints the map, showing you the new dominant trend direction with distinct zones for bullish and bearish phases.
+This is a Pine Script v6 study that reads chart OHLC against a symmetric pivot window and builds a stepped price corridor representing state. A pivot is accepted only after its right-side bars close, at which point its price and index are stored and compared with the prior same-type pivot, then armed as a rail. Each high and low becomes a one-use rail, which suppresses duplicate break labels.
 
-As you can see in the chart above (I ran it on the MACD pane for cleaner visualization), the indicator doesn't fire at the exact turning point. It waits for that extra candle or two to confirm the break. That means you'll never catch the absolute bottom or top, but you'll also avoid most of the false breakouts that plague simpler structure tools.
+From there, each confirmed bar compares a Close or Wick probe against both rails. Distance beyond a rail is divided by ATR and must meet a Minimum Break Displacement threshold. A same-direction event against the established bias is a BOS; the first qualified counter-break is only a potential CHoCH. Bias changes only after a fresh rail breaks again in that direction. If price crosses the frozen opposite rail or the candidate hits its age limit, the candidate is cancelled. The script never triggers an earlier break using future information.
 
 ## Key Features That Set It Apart
 
-The confirmation logic is the headline feature. Most structure indicators mark a break the moment price pokes above a swing high. This one waits for a confirmed close or a momentum trigger, which filters out a surprising amount of noise. In my backtests on BTC/USD and EUR/USD 4H charts, the false signal rate dropped by roughly 30% compared to a basic fractal-based structure indicator.
+The lifecycle is the headline feature. Confirmed pivots supply stable levels; a moving extreme has no fixed identity, so the script does not treat one as a rail. Rails arm only when knowable, and if price already exceeded the required displacement at the moment the rail became knowable, the rail is consumed without a hindsight event.
 
-The visual map is genuinely useful too. Instead of just plotting a line, it shades the entire trend regime — you can see at a glance whether you're in a bullish, bearish, or transitioning market. The color coding is intuitive, and the transition points are clearly marked, making it easy to explain your analysis to others.
+The state machine is the second piece. BOS, potential CHoCH, shift, invalidation, and expiry are distinct states rather than one label stream. On a two-sided outside bar, the larger normalized wick defines a single event, so one bar cannot emit conflicting signals. The corridor encodes bullish, bearish, pending, or neutral state, with early bars staying neutral.
 
-## Best Settings I've Tested
+Optional confirmed HH, LH, HL, and LL labels, a wash, bar colors, and a dashboard are all independently configurable.
 
-After messing with the inputs for a few weeks, here's what works:
+## Settings and How to Tune Them
 
-- **Confirmation Period:** Keep it at the default (usually 2-3). Going higher makes signals too laggy for anything but swing trading.
-- **Swing Length:** 5 on lower timeframes (5m-15m), 10-15 on higher timeframes (1H-4H). Adjust based on your trading horizon.
-- **Momentum Filter:** If there's an RSI or MACD confirmation toggle, enable it only if you're day trading. For swing trading, it adds unnecessary delay.
+Pivot Left/Right Bars control granularity and delay. Smaller values add noise; larger values add lag. The tradeoff is direct, and the right choice depends on swing density in the market and timeframe you are charting.
 
-For the chart type, I'd suggest pairing this with a MACD pane as a secondary confirmation — when the MACD histogram aligns with the structure map's direction, the signals are noticeably cleaner.
+Close mode requires settlement beyond a rail, while Wick mode uses extremes and resolves outside bars by the larger excursion. Minimum Break Displacement sets the ATR clearance a break must achieve — ATR scaling filters tiny overruns, but the script does not estimate probability from it. Candidate Expiry limits how long a potential CHoCH can remain open before it expires.
 
-## How to Use It for Entries and Exits
+The official guidance is to begin with Close and default pivots, then check swing density for the instrument and timeframe before adjusting. ATR and pivot settings are market-sensitive, and no single configuration is presented as optimal.
 
-The best way to trade this is to wait for the map to flip, then enter on a pullback to the previous structure zone — not on the transition candle itself. The confirmation delay means the first move is often extended. Here's a practical setup:
+## How to Use It
 
-1. **Entry:** After a confirmed transition, wait for price to retrace to the new structure level (the old high/low that was broken).
-2. **Stop Loss:** Place it just beyond the last swing point before the transition.
-3. **Take Profit:** Target the next major structure level or trail with a moving average.
+Read rails first. BOS indicates price cleared a rail with the established bias — evidence of continuation, not an entry command. A potential CHoCH opens a candidate. A shift completes the two-break transition. Violet marks a candidate; amber shows why one ended.
 
-This works well for both long and short setups, though I found it more reliable on long trades in crypto and forex. The confirmation filter catches genuine reversals, but shorting with this indicator requires extra patience — the lag penalty is more punishing on downside moves.
+Note the timing: HH/HL locations are revealed after the right-bar delay, not known on their historical bars. Markers appear on pivot bars only after that delay, while breaks and shifts remain on confirmation bars. Probes move live, but state and alerts require bar close.
 
-## Pros & Cons
+The script does not select stops, size positions, or forecast events. Risk, liquidity, and execution rules are separate decisions. Alerts for BOS and shift are intended for use within an existing process, not as standalone triggers.
 
-**Pros:**
-- Significantly fewer false signals than standard structure indicators
-- Clean, readable visual map that's easy to interpret
-- Flexible settings that adapt to different timeframes
-- Works well as a standalone trend filter or combined with other tools
+## Assumptions and Limitations
 
-**Cons:**
-- Confirmation delay means you'll miss the first move — sometimes a big one
-- Repainting behavior (the map can shift on the confirmation candle) makes it poor for real-time alerts
-- Not ideal for scalpers or anyone needing precise entry timing
+Pivots need future bars for confirmation, so the delay is structural rather than a tuning artifact. Gaps can jump rails, Wick mode reduces an outside bar to one event, and chop can produce repeated candidates. A wide corridor requires a larger absolute move.
 
-## Who Is This For?
-
-Swing traders and position traders will get the most value here. If you're trading 1H to Daily timeframes and you're comfortable missing the first 1-2% of a move to gain confirmation, this indicator will improve your win rate. Day traders can use it as a trend filter, but it's too slow for entries. Scalpers should skip it entirely.
-
-## Alternatives Worth Considering
-
-If you find the lag too much, look at **Smart Money Concepts** indicators — they offer earlier signals but with more noise. For a simpler approach, **Swing High/Low** indicators from the TradingView library give you raw structure without confirmation. If you want the opposite philosophy — speed over confirmation — try **LuxAlgo's Market Structure** tool, which marks breaks immediately.
-
-## FAQ
-
-**Does this indicator repaint?**
-Yes, it can repaint on the confirmation candle. The map updates once the transition is confirmed, which means earlier bars may change. This makes it unreliable for alert-based trading.
-
-**Can I use it for crypto?**
-Absolutely. I tested it on BTC and ETH with good results. Crypto's volatility actually helps the confirmation filter shine.
-
-**What's the best timeframe?**
-1H and 4H are sweet spots. Below 15m, the confirmation delay eats too much of the move.
-
-**Does it work with other indicators?**
-Pair it with volume-based tools like OBV or with MACD for confirmation. Avoid layering it with another structure indicator — that just creates conflicting signals.
+The model reads chart prices only — not order flow, news, higher timeframes, or execution quality. A shift is an ordered event, not a guaranteed reversal or a profitable trade.
 
 ## Final Verdict
 
-⭐⭐⭐⭐ (4/5)
+The contribution here is an auditable sequence: location, one-use break, provisional counter-break, then confirmation or invalidation. Invalidation level and age limit freeze at candidate start, so later pivots cannot rewrite the test. The tradeoff is explicit lag in exchange for explicit evidence, and the script is upfront about that rather than hiding it behind early labels. It provides structural context; interpretation and risk remain with the user.
 
-Confirmed_Structure_Transition_Map_Pineify isn't flashy, but it does one thing well: it keeps you on the right side of the trend without constantly whipsawing you. The confirmation filter is a genuine improvement over basic structure tools, and the visual map makes it easy to read at a glance. The lag is real, and the repainting limits its use for live alerting, but if you're a swing trader who values fewer false signals over catching the exact pivot, this is a solid addition to your toolbox. It's not exceptional — a 5-star tool would solve the repainting issue — but it's far better than the average structure indicator cluttering the TradingView catalog.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

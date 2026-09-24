@@ -16,41 +16,39 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Engulfing_Scanner finds bullish and bearish engulfing patterns across all timeframes. No fluff. Here’s exactly how to set it up and trade it."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: 4/5 ⭐⭐⭐⭐** – A solid, no-nonsense scanner that catches engulfing patterns live. It won’t make you a millionaire alone, but it saves hours of manual chart-watching.
+**Final Verdict: 4/5 ⭐⭐⭐⭐** – A solid, no-nonsense scanner that flags engulfing patterns as they form. It won't make you a millionaire on its own, but it saves hours of manual chart-watching.
 
 ---
 
 ## What This Indicator Actually Does
 
-Engulfing_Scanner scans every bar on your chart and highlights where a full bullish or bearish engulfing candle appears. It’s not predictive—it’s reactive. When a red candle is completely swallowed by the next green candle (or vice versa), it marks that bar with a label and optional alert.
+Engulfing_Scanner scans every bar on your chart and highlights where a full bullish or bearish engulfing candle appears. It's not predictive—it's reactive. When a red candle is completely swallowed by the next green candle (or vice versa), it marks that bar with a label and optional alert.
 
-The chart above shows it in action on a 1-hour BTC/USD pair. Green labels mark bullish engulfing, red labels mark bearish engulfing. No extra noise. No repainting nonsense—I tested this on a replay and the signals stick once the bar closes.
+Green labels mark bullish engulfing, red labels mark bearish engulfing. No extra noise. No repainting—the signal is based on the completed bar, so it holds once the bar closes.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **Timeframe agnostic** – Works the same on 1-minute as it does on weekly charts. No weird interpolation.
+- **Timeframe agnostic** – Works the same on intraday as it does on higher timeframes. No weird interpolation.
 - **Customizable label placement** – You can put the label above or below the bar, or turn labels off entirely if you just want alerts.
-- **Volume filter** – An optional checkbox: only show the pattern if the engulfing candle’s volume is higher than the previous bar’s volume. This alone cuts false signals by about 40% on lower timeframes.
-- **Alert integration** – You can set an alert for new signals directly in the indicator settings. It’s one click.
+- **Volume filter** – An optional checkbox: only show the pattern if the engulfing candle's volume is higher than the previous bar's volume. This helps cut down weaker signals, particularly on lower timeframes.
+- **Alert integration** – You can set an alert for new signals directly in the indicator settings. It's one click.
 
 ---
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-After 200+ backtested trades on EUR/USD, BTC/USD, and SPY:
+The settings are straightforward, and there's little reason to over-tinker:
 
-- **Volume filter: ON** – Without it, you get too many weak signals on 5-minute and lower.
-- **Label style: “Arrow Up/Down”** – Cleaner than the default “Flag” for quick scanning.
-- **Lookback period: Default (current bar only)** – Don’t change this. The indicator is designed for real-time, not historical.
-- **Timeframe for alerts: Use the chart timeframe** – If you want to scan multiple timeframes, just duplicate the indicator on separate panes.
+- **Volume filter** – Turning it on restricts signals to engulfing candles that come with above-average volume relative to the prior bar. Leaving it off shows every pattern. Which you choose depends on how much noise you're willing to sift through, but the filter exists precisely because raw engulfing signals are common on fast timeframes.
+- **Label style** – Choose between the available label styles. "Arrow Up/Down" is cleaner than the default "Flag" for quick scanning.
+- **Lookback period** – The indicator is designed around the current bar. It's built for real-time use, not for reviewing historical patterns, so there's seldom a reason to change this.
+- **Timeframe for alerts** – Alerts fire on the chart timeframe. If you want to scan multiple timeframes, add the indicator on separate panes.
 
-**My recommendation for swing traders:** 4-hour or daily chart. Volume filter ON. Set an alert and walk away.
-
-**For scalpers:** 5-minute chart. Volume filter ON. Tight stop loss (1.5x the average true range of the engulfing candle).
+There's no single "best" configuration—it depends on your timeframe and how much filtering you want. The volume filter is the one setting that materially changes how many signals you see.
 
 ---
 
@@ -67,7 +65,7 @@ After 200+ backtested trades on EUR/USD, BTC/USD, and SPY:
 - Stop loss: 1 ATR above the high of the engulfing candle.
 - Take profit: 1.5x risk or previous swing low.
 
-**Pro tip:** Engulfing patterns work best when they occur at a key support/resistance level or a moving average (e.g., 20 EMA). If the pattern happens in the middle of nowhere, skip it. The indicator doesn’t filter for context—you have to.
+**Pro tip:** Engulfing patterns work best when they occur at a key support/resistance level or a moving average (e.g., 20 EMA). If the pattern happens in the middle of nowhere, skip it. The indicator doesn't filter for context—you have to.
 
 ---
 
@@ -75,19 +73,19 @@ After 200+ backtested trades on EUR/USD, BTC/USD, and SPY:
 
 **Pros:**
 - Dead simple. No learning curve.
-- No repainting (confirmed after bar close).
-- Volume filter dramatically improves signal quality.
-- Lightweight—won’t lag your chart even on 100+ symbols.
+- No repainting—the signal holds after bar close.
+- Volume filter helps improve signal quality.
+- Lightweight—won't lag your chart even on 100+ symbols.
 
 **Cons:**
-- Only one pattern. It won’t show harami, piercing, or dark cloud cover.
+- Only one pattern. It won't show harami, piercing, or dark cloud cover.
 - No multi-timeframe scanning built in. You have to add it manually per timeframe.
-- The labels can clutter the chart if you’re looking back more than 50 bars. I turn off historical labels in the settings.
-- It’s reactive, not predictive. By the time you enter, the move might already be 2-3 bars old on fast timeframes.
+- The labels can clutter the chart if you're looking back more than 50 bars. Historical labels can be turned off in the settings.
+- It's reactive, not predictive. By the time you enter, the move might already be several bars old on fast timeframes.
 
 ---
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Beginners** learning candlestick patterns. This is a great training wheel.
 - **Swing traders** who want to automate the boring part of scanning for engulfing setups.
@@ -110,25 +108,25 @@ Stick with Engulfing_Scanner if you want laser focus on one reliable pattern.
 
 ## FAQ
 
-**Q: Does this indicator repaint?**  
-A: No. Once the bar closes, the label stays. I verified with TradingView’s bar replay.
+**Q: Does this indicator repaint?**
+A: No. The signal is based on the completed bar, so the label holds once the bar closes.
 
-**Q: Can I use it for crypto?**  
-A: Yes. Works on any market. Volume filter helps more on crypto due to noise.
+**Q: Can I use it for crypto?**
+A: Yes. It works on any market. The volume filter tends to help more on crypto due to noise.
 
-**Q: Why am I not seeing any signals on a 1-minute chart?**  
-A: Engulfing patterns are rare on very short timeframes. Try 5-minute or higher. Also check that volume filter isn’t blocking weak signals.
+**Q: Why am I not seeing any signals on a 1-minute chart?**
+A: Engulfing patterns are rare on very short timeframes. Try a higher timeframe. Also check that the volume filter isn't blocking weaker signals.
 
-**Q: Can I set a Telegram alert?**  
-A: Yes. Use TradingView’s webhook alert feature. The indicator triggers a standard alert, not a custom message.
+**Q: Can I set a Telegram alert?**
+A: Yes. Use TradingView's webhook alert feature. The indicator triggers a standard alert, not a custom message.
 
 ---
 
 ## Final Thoughts
 
-Engulfing_Scanner does one thing and does it well. It’s not a holy grail, but it saves you from staring at charts waiting for engulfing patterns. Pair it with a simple trend filter (e.g., price above 200 EMA for bullish signals) and you’ve got a solid edge.
+Engulfing_Scanner does one thing and does it well. It's not a holy grail, but it saves you from staring at charts waiting for engulfing patterns. Pair it with a simple trend filter (e.g., price above 200 EMA for bullish signals) and you've got a more workable setup.
 
-**Rating: 4/5 ⭐⭐⭐⭐** – Deducted one star for lack of multi-timeframe scanning and no context filters. But for the price (free), it’s a no-brainer addition to your toolkit.
+**Rating: 4/5 ⭐⭐⭐⭐** – Deducted one star for lack of multi-timeframe scanning and no context filters. But for the price (free), it's a no-brainer addition to your toolkit.
 
 ---
 

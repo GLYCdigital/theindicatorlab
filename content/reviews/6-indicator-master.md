@@ -17,90 +17,77 @@ categories:
 rating: 4
 description: "Honest 6_Indicator_Master review: combines 6 trend tools into one pane. Tested settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/6Oe9SgJO-6-Indicator-Master-V5/"
+sources: ["https://www.tradingview.com/script/6Oe9SgJO-6-Indicator-Master-V5/"]
 ---
-Let me be blunt: when I first saw "6_Indicator_Master" I expected another bloated kitchen-sink script that paints rainbows and repaints history. After trading with it for three weeks across BTC, EURUSD, and Apple stock, I was wrong—partially. It's not revolutionary, but it's genuinely useful if you understand what it's actually doing.
+Let me be blunt: the name "6 Indicator Master V5" sets an expectation of another bloated kitchen-sink script. What it actually is, per its own documentation, is a multi-confirmation tool that combines six independent conditions into a single dashboard. That's a narrower and more defensible claim than most scripts in this category make.
 
 ## What This Thing Really Does
 
-Strip away the branding and you've got six trend-following tools compressed into a single pane. The chart above shows the MACD-style visualization, but the indicator isn't a MACD clone. It's a composite that layers moving average crossovers, ADX strength, RSI filtering, Bollinger position, Supertrend direction, and volume confirmation into one unified signal line.
+Strip away the branding and you've got six distinct technical conditions monitored side by side: CM MACD for momentum and MACD direction, Squeeze Momentum for momentum direction and acceleration, WaveTrend for short-term momentum confirmation, Bull Bear Power Trend for bullish versus bearish pressure, Supertrend for overall trend direction, and Trade Pro Rejection Zone for 20 EMA / 50 EMA trend structure.
 
-The genius (or trap, depending on your perspective) is that it only shows you a signal when **all six** agree. That's rare. In ranging markets you'll see almost nothing—which is the point. It's a confluence filter disguised as an oscillator.
+The design premise is that it only flags a signal when **all six** agree. The indicator counts how many of the six conditions are aligned, and when the count reaches six, it prints a 6/6 BEARISH or 6/6 BULLISH confirmation. Signals appear directly on the chart, while the dashboard gives a real-time read on each individual condition. It's a confluence filter, and by the author's own framing it is meant to be read as one clear market bias rather than six separate studies.
 
 ## What Sets It Apart
 
-Most multi-indicator scripts just stack panels vertically until your screen looks like a server rack. This one does something different: it normalizes all six inputs into a single 0-100 scale and plots a histogram plus a signal line. The histogram color shifts from red to green based on the composite trend score.
+Most multi-indicator scripts stack panels until the screen looks like a server rack. This one consolidates the six readings into a single dashboard and reduces them to a count. The value proposition isn't any one of the six components—it's the agreement logic layered on top.
 
-Key differentiator: the **agreement meter**. When all six components align, the indicator prints a small diamond marker above the histogram. In my testing, those diamonds were the highest-probability signals—about 68% hit rate on 1-hour charts over 200 trades. That's not magical, but it's better than any single indicator I've traded.
+The dashboard is the differentiator. Rather than forcing you to eyeball six separate panes and decide whether they're aligned, it tells you how many agree right now. The 6/6 state is the headline event, and everything else is context.
 
-## Settings I Actually Recommend
+## Settings and How to Tune Them
 
-The defaults are conservative, which is good for beginners, but I found these tweaks improved responsiveness without adding noise:
+The source material does not document specific parameter values for the six underlying components, so there is no basis for recommending particular lengths, smoothing values, or weightings. What the documentation does describe is the V5 statistics layer, which is built on:
 
-- **Length**: 14 (default) works for swing trading. Drop to 9 if you're intraday scalping.
-- **Smoothing**: Set to 3. The default 5 makes the signal line lag noticeably on 15-minute charts.
-- **Component weights**: Don't touch them unless you know what you're doing. The default weighting (ADX and Supertrend at 25% each, others at 12.5%) is actually well-calibrated.
-- **Alert condition**: Set alerts specifically for the diamond marker, not the histogram crossing zero. The marker is the high-conviction signal.
+- ATR-based risk distance
+- A 1:1 risk/reward assumption
+- Total signals/trades
+- Winning trades
+- Losing trades
+- Historical win rate
+- Current trade status
+- Entry, Stop Loss and Take Profit levels
 
-## How I Trade It
+The author is explicit that this statistics system is intended for studying the behavior of 6/6 signals, not for projecting future performance. Treat the settings you can't see as fixed inputs from the six component scripts, and treat the statistics panel as a study aid rather than a tuning target.
 
-The entry logic is straightforward but requires patience. I wait for two conditions simultaneously:
+## How It Frames the Trade
 
-1. The histogram flips from red to green *and* the signal line crosses above 50
-2. The diamond agreement marker prints within three bars of that crossover
+The indicator's own logic is straightforward: count agreement, flag 6/6, display the levels. Entry, stop, and target are surfaced through the ATR-based risk distance and the 1:1 risk/reward framework, which gives the signal a defined structure rather than a bare arrow.
 
-That's the long setup. For shorts, mirror it. My exit rule: close when the histogram color changes, not when the signal line crosses back—that's too slow and gives back profits.
-
-One thing I learned the hard way: **never** use this alone in a ranging market. The indicator will keep you flat most of the time, which is correct behavior, but if you force trades you'll get chopped up. Pair it with a session volume filter (like the NYSE open for stocks) and you'll cut false signals by another 30%.
+The important caveat is stated plainly in the documentation: a 6/6 alignment does not guarantee that price will move in the expected direction. The tool is a confirmation layer, not an entry trigger on its own, and the author says as much.
 
 ## The Honest Trade-Offs
 
 **Pros:**
-- Eliminates analysis paralysis by forcing confluence across six tools
-- Diamond markers are genuinely high-probability (my testing showed they beat any single component)
-- Clean single-pane display—no chart clutter
-- Alerts are well-implemented, especially the marker-based ones
+- Forces confluence across six independent conditions instead of leaning on one
+- Single dashboard removes the need to visually reconcile six panes
+- Signals and dashboard are presented together, so you see both the aggregate and the components
+- The statistics layer gives you a way to study signal behavior historically
 
 **Cons:**
-- Severely lags in fast trends. You'll enter after the initial move, sometimes near exhaustion
-- Completely useless in sideways markets (though that's by design)
-- The composite nature means you can't tell *which* component is causing a signal—troubleshooting is opaque
-- No backtesting built in, so you'll need to verify performance yourself
+- The documentation does not explain how the six components are calculated or weighted, so troubleshooting a signal is opaque
+- No parameter values are published, which limits how much you can tune it
+- The statistics are built on a fixed 1:1 risk/reward and ATR-based distance, so they describe one specific trade construction, not the indicator's general behavior
+- The author's own disclaimer warns that historical statistics do not imply future results
 
 ## Who Should Use This
 
-This is perfect for **intermediate traders** who've been burned by single-indicator false signals. If you're still trying to figure out whether RSI or MACD works better, this removes that question. It's also solid for swing traders on daily and 4-hour charts—that's where the lag is least damaging.
+It's aimed at traders who prefer confluence over a single indicator—that's the author's stated audience. If you've been burned by one-off signals and want a dashboard that tells you when six separate readings line up, this is the use case it was built for.
 
-Skip it if you're a scalper (too slow) or an algorithmic trader (the black-box nature of the composite makes it hard to code around). Beginners might find it overwhelming because you can't see what's driving each signal.
-
-## Better Alternatives
-
-- **For scalpers**: Use Supertrend alone with a volume filter—you'll get faster entries
-- **For trend identification**: The classic MACD with a 12/26/9 setting is more transparent
-- **For confluence without the lag**: Try combining just ADX + RSI manually. You'll lose the convenience but gain speed
+Skip it if you need transparency into how each component is computed, or if you want to tune the underlying studies. The documentation doesn't support either.
 
 ## Common Questions
 
-**Does it repaint?** No. The histogram and markers are based on closed bars, which is why I trust the backtested numbers. This is a significant plus—many similar tools repaint and give false confidence.
+**Does it repaint?** The source material does not address repainting, so there's nothing to confirm either way here.
 
-**Can I use it on crypto?** Yes, but expect more chop. The indicator was clearly designed with traditional markets in mind. Bitcoin's 24/7 volatility produces more whipsaws than I'd like.
+**What markets and timeframes?** The documentation doesn't specify. It describes the six components generically and doesn't scope them to particular instruments or intervals.
 
-**Is the diamond marker worth trading alone?** Based on my sample, it's the best signal the indicator produces. Still, I wouldn't trade it without confirming with price action—look for the marker to align with a swing high or low.
+**Are the statistics a backtest?** No. The V5 statistics track total signals, wins, losses, and a historical win rate under an ATR-based, 1:1 risk/reward framework. The author explicitly frames them as a way to *evaluate and study* the behavior of 6/6 signals rather than assume future performance.
 
 ## Final Verdict
 
-**⭐⭐⭐⭐ (4/5)** — 6_Indicator_Master earns its rating by doing one thing well: forcing discipline through multi-factor confirmation. It won't make you rich, and it's not a standalone system, but as a filter and confluence tool it's genuinely better than anything else in its niche. The lag and black-box nature keep it from five stars, but for a trend trader who values quality over quantity, this is a solid addition to your toolkit. Just don't expect it to replace your judgment—it's a tool, not a strategy.
+6 Indicator Master V5 does one thing and states it clearly: it counts agreement across six conditions and flags when all six line up. The dashboard and the statistics layer are the substance; the six components are the inputs. Whether that's worth adding to your chart depends on how much you value a confluence readout versus transparency into the underlying math—and the documentation is thin on the latter. The author's own disclaimer is the right frame: it's a confirmation tool, not a guarantee, and the historical statistics are for study, not projection.
 
-The four-star rating reflects that it's a well-executed solution to a real problem, with clear limitations that are visible from the first glance at the chart. Trade it with realistic expectations and you'll be satisfied.
+Trade it with realistic expectations and it does what it says on the tin.
 
-## Frequently Asked Questions
-
-### Is 6_Indicator_Master worth it?
-
-Based on testing across multiple timeframes, 6_Indicator_Master delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

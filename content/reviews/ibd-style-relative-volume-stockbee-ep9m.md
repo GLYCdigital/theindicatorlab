@@ -17,78 +17,98 @@ categories:
 rating: 4
 description: "Honest Ibd_Style_Relative_Volume_Stockbee_Ep9M review: settings, volume trend strategy, pros/cons, and who should use this TradingView indicator."
 tv_script_url: "https://www.tradingview.com/script/hbScFl8K-IBD-Style-Relative-Volume-Stockbee-EP9M/"
+sources: ["https://www.tradingview.com/script/hbScFl8K-IBD-Style-Relative-Volume-Stockbee-EP9M/"]
 ---
-Let me be upfront: this isn't a magic black box. The **Ibd_Style_Relative_Volume_Stockbee_Ep9M** is a trend-following tool that visualizes relative volume in a way that makes institutional accumulation and distribution easier to spot. It takes the classic IBD (Investor's Business Daily) methodology — volume confirmation on breakouts — and packages it into a single pane on TradingView.
-
-I've run this on daily charts for swing trades and weekly charts for position trading over the past few weeks. Here's what actually matters.
+Let's be clear about what this is: the **RVOL + EP9M** study is not a black box. It is a volume-pane tool that does two jobs — pace relative volume honestly intraday, and tag Stockbee's EP9M institutional-participation signal directly on qualifying bars. It is not a signal generator, and it does not replace price context.
 
 ## What This Indicator Actually Does
 
-At its core, this indicator plots relative volume bars alongside price action. But it's not just "volume vs. average." It applies a smoothed, multi-period calculation that highlights when volume is expanding or contracting relative to the stock's own historical norm. The "Ep9M" suffix suggests it uses a 9-month lookback window for its volume baseline — which makes it slower and more deliberate than most volume oscillators.
+Two things on one volume pane.
 
-The result is a cleaner read on whether a price move is backed by real participation or just noise. On the MACD chart you see above, notice how the volume bars spike during the trend's strongest legs and dry up during pullbacks. That's the indicator doing its job.
+First, relative volume that stays honest intraday. The problem it solves is specific: almost every RVOL tool estimates the day's finishing volume by taking what has traded so far and dividing by the fraction of the session elapsed. At 10:00, thirty minutes into a 390-minute session, that fraction is 30/390 = 0.077, so the tool multiplies volume so far by roughly thirteen. That is a straight line — it assumes volume arrives at a constant rate from open to close.
+
+It does not. The intraday volume profile is a U: heavy on the opening drive, thinning midday, heavy again into the close. By 10:00 a normal stock has already done far more than 7.7% of its day. Multiplying by thirteen projects a finishing volume the stock was never going to reach.
+
+The error is systematic, and it changes sign through the session. Straight-line RVOL runs inflated in the first hour, roughly honest in the early afternoon, and deflated in the final thirty minutes — on every symbol, every day.
+
+This script replaces the straight line with a measured curve. Instead of assuming elapsed_time / 390, it asks: on this specific symbol, what fraction of a typical session's volume has actually been done by this time of day? That fraction, U(t), is measured from the symbol's own recent history, and the live bar is divided by it. Same arithmetic, honest divisor.
+
+Second, EP9M markers — Pradeep Bonde's (Stockbee) 9M breakout screen — tagged directly on the bars that qualify.
 
 ## Key Features That Stand Out
 
-- **Multi-timeframe volume baseline**: The 9-month window filters out short-term volume spikes that would trigger false signals on standard 20-day average volume indicators.
-- **Color-coded volume bars**: Green for above-average accumulation, red for distribution, gray for neutral. This makes scanning charts quick — you can spot institutional activity in seconds.
-- **Breakout confirmation signals**: The indicator flags when price breaks a range on volume exceeding 1.5x the baseline. This is the classic IBD "follow-through day" concept, automated.
-- **Clean visual integration**: It doesn't clutter your chart with dozens of lines. One histogram, one color scheme, no over-engineering.
+- **Time-of-day volume curve.** Built by reading each recent complete session's own intraday sub-bars, bucketing by time of day, and normalizing each bucket by that day's own total. Normalizing per day makes the measurement scale-free — a 30M-share day and a 3M-share day contribute equally to the shape, which is the only thing being measured. Averaged across the lookback, this yields the cumulative curve U(t). Because it is measured rather than assumed, the curve is symbol-specific. A mega-cap and a thin small cap have genuinely different profiles; small caps in particular are far more open-weighted.
 
-## Best Settings I Tested
+- **Two readings, one curve.** RVOL (Mean) is measured against the arithmetic mean of the lookback window and is comparable with conventional RVOL tools. RVOL (Median) is measured against the median of the same window. Share volume is heavily right-skewed — a single earnings day, index add, or halt-and-reopen drags the mean up for the whole lookback and suppresses every mean-based reading inside it. The median ignores the spike. Read together: close together means the baseline is clean; a wide gap means the mean is contaminated and the median row is the honest one. The median cell turns amber automatically when the mean runs at 1.25x the median or higher.
 
-The defaults are decent, but I found these tweaks improve signal quality:
+- **EP9M markers.** A session qualifies when the close is at least 4% above the prior close, volume exceeds the prior session's, and volume is at least 9,000,000 shares. The inverse (down EP9M) flips only the price leg: 4% or more below the prior close, same volume conditions. Markers offer nine shapes, five sizes, independent up and down colors, and a vertical gap so they sit clear of the volume columns.
 
-- **Lookback period**: Set to 189 days (9 months) if it's not already — this is the sweet spot for the IBD methodology. Shorter periods generate too many false breakouts.
-- **Volume threshold**: Default is 1.5x. I raised it to 2.0x for swing trades on liquid large-caps to filter out noise. For small-caps, keep it at 1.5x — they need less volume to move.
-- **Enable the "smoothing" option**: This applies a 3-period moving average to the volume ratio. It removes single-day volume anomalies that would otherwise trigger false signals.
+- **Pre-market volume handling.** Optional, on by default. On daily and weekly charts each bar's own pre-market volume is summed from extended-session sub-bars and added to the plotted column, both baselines, and the projection, so all three are measured on the same basis. Only the regular-session portion is paced; the pre-market block is already complete when the session opens and is added back as a static term.
 
-## How to Actually Trade With It
+- **Diagnostics.** Show Diagnostic Rows exposes every term feeding the calculation: pacing mode, curve versus linear percentage, sessions accumulated, both baselines, the mean-to-median skew, and the full volume decomposition.
 
-The logic is straightforward but requires discipline:
+## Settings and How to Tune Them
 
-1. **Wait for price to consolidate** — 3-6 weeks of tight range. The indicator will show gray bars (neutral volume).
-2. **Entry**: Buy when price breaks the consolidation high *and* the volume bar turns green with a reading above the threshold simultaneously. This is your confirmation.
-3. **Exit**: Take profits when volume bars show a red spike after a strong advance — that's distribution. Trail a stop at the 10-week moving average for position trades.
+- **Average Volume Length** — baseline window, default 50. Setting it to 20 lines up with conventional 20-day RVOL.
+- **Use Time-of-Day Volume Curve** — turning it off reverts to straight-line pacing, which is the quickest way to see the size of the correction.
+- **Curve Lookback** — how many complete sessions feed the curve.
+- **Marker Shape / Size / Gap / Colors** — full control over EP9M tags. Triangle and Arrow invert on a down day; the remaining shapes signal direction by color alone.
+- **Show Diagnostic Rows** — exposes the pacing mode, curve versus linear percentage, sessions accumulated, both baselines, the mean-to-median skew, and the volume decomposition. During a live session, comparing the `pct linear (v1)` row against the `pct curve` row shows the gap directly; it is widest in the first hour.
 
-Here's the catch: this indicator is a *confirmation tool*, not a standalone signal generator. If you use it without a price action context (like a chart pattern or trendline break), you'll get chopped up. I tested it on random stocks without context and the signals were mediocre. With context — like a base pattern — the accuracy improved noticeably.
+Every EP9M threshold is adjustable.
+
+## How to Actually Read It
+
+The two readings are the core workflow. When mean and median sit close together, the baseline is clean and the headline is trustworthy. When they diverge, the mean is contaminated — typically by a single outsized session inside the lookback — and the median row is the one to trust. The amber cell flags that condition automatically.
+
+The diagnostic rows do the verification work. Toggling the curve off and watching the headline RVOL jump to the straight-line value shows the size of the correction on your own chart. The raw-volume row alongside separately summed pre-market and regular-session totals lets you confirm on your own data feed whether TradingView's volume already includes pre-market for a given symbol. That matters more for the EP9M 9,000,000-share floor — an absolute threshold — than for RVOL, where numerator and denominator move together and the ratio barely shifts.
+
+This is a confirmation and context tool. It measures participation; it does not generate entries.
 
 ## Pros & Cons
 
 **Pros:**
-- Excellent at filtering out low-volume breakouts that fail
-- The 9-month baseline is genuinely different from most volume indicators
-- Simple to read once you understand the color coding
-- Works across multiple timeframes
+- Corrects a systematic, sign-flipping bias that straight-line RVOL carries all day
+- The curve is measured from the symbol's own history, not a hard-coded template
+- Mean versus median gives an immediate read on whether the baseline is contaminated
+- EP9M tagging is built in, with full control over marker appearance and thresholds
+- Diagnostics expose every term, so the calculation is auditable on your own data
 
 **Cons:**
-- Lags on daily charts — you'll miss the first few points of a move
-- No alert system built-in (you'll need to set custom alerts)
-- Limited backtesting data available — you're trusting the methodology
-- Can give conflicting signals during low-volume uptrends where price rises without volume
+- The curve corrects bias, not variance. In the opening minutes the divisor is very small and a single block trade dominates the projection — early readings are directionally useful, not precise
+- The curve needs several complete sessions before it engages; until then the script falls back to straight-line pacing and reports that in the diagnostics
+- Intraday timeframes pace linearly within the bar — the time-of-day curve is a within-session shape, so it applies to daily and above
+- Mid-week exchange holidays are counted as trading days in weekly and monthly pacing (daily pacing is unaffected)
+- Markers are drawn as labels and capped at 500 per chart; beyond that the oldest are dropped silently
+- TradingView volume is split-adjusted, so results on names with splits can differ from a raw-share-count implementation of the same screen
 
 ## Who This Is For
 
-This is built for **swing traders and position traders** who follow the William O'Neil / IBD playbook. If you're a scalper or day trader, skip this — the 9-month baseline is too slow for intraday decisions. It's also ideal for investors who want to time entries into fundamentally strong stocks.
-
-Day traders looking for relative volume tools should check out **Volume Profile** or **VWAP** instead. For pure trend analysis, **Supertrend** or **MACD** give faster signals.
+Traders who already know what relative volume is supposed to measure and want the intraday number to stop lying to them. It suits anyone watching for sustained institutional accumulation — the EP9M logic is an absolute participation filter, and names printing several qualifying sessions within a month are under sustained accumulation. If you trade off a volume pane on daily or weekly charts and have been mentally discounting the morning RVOL print, this removes the need.
 
 ## FAQ
 
-**Q: Does this work on crypto?**
-A: It works structurally, but the 9-month baseline is less meaningful in crypto where volume patterns differ. I'd use a 30-60 day lookback instead.
+**Q: Why does the headline RVOL change so much when I toggle the curve off?**
+A: That gap is the straight-line error. The curve divisor reflects the symbol's actual time-of-day profile; the linear divisor assumes constant pacing. The difference is widest in the first hour.
 
-**Q: Can I use it on 15-minute charts?**
-A: Technically yes, but the 9-month lookback becomes irrelevant. Stick to daily or weekly.
+**Q: Which reading should I trust — mean or median?**
+A: Read them together. Close together means the baseline is clean. A wide gap means the mean is contaminated by an outsized session in the lookback, and the median row is the honest one. The amber cell flags when the mean runs at 1.25x the median or higher.
 
-**Q: How does it compare to Stockbee's other indicators?**
-A: This one is more focused on volume confirmation than his momentum oscillators. It complements them well if you use multiple.
+**Q: Does it handle pre-market volume?**
+A: Yes, optionally and on by default on daily and weekly charts. Pre-market volume is summed from extended-session sub-bars and added as a static term to the plotted column, both baselines, and the projection. A diagnostic row lets you verify on your own feed whether TradingView already includes pre-market for a given symbol.
+
+**Q: Can I use it intraday?**
+A: The time-of-day curve is a within-session shape, so it applies to daily and above. Intraday timeframes pace linearly within the bar.
+
+**Q: Why is the curve slow to start on a new symbol?**
+A: It needs several complete sessions before it engages. Until then the script falls back to straight-line pacing and says so in the diagnostics.
 
 ## Final Verdict
 
-The Ibd_Style_Relative_Volume_Stockbee_Ep9M earns 4 stars because it does one thing exceptionally well — filtering false breakouts with institutional-grade volume analysis. It's not flashy, not automated, and won't replace your judgment. But if you trade breakouts and want to stop buying low-volume fakes, this is a solid addition to your arsenal.
+RVOL + EP9M does one thing well and is honest about its edges. The time-of-day curve fixes a real, systematic bias that every straight-line RVOL tool carries, and the mean-versus-median pair gives a built-in check on whether the baseline can be trusted. The diagnostics make the whole calculation auditable rather than a black box.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+The limitations are stated plainly and are worth taking at face value: early-session readings are directional, not precise; the curve needs history before it engages; the tool paces within-session shape on daily and above. This is a confirmation tool, not a signal generator. Used as one, it earns its place on the pane.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

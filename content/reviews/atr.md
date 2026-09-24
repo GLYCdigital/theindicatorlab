@@ -6,101 +6,99 @@ type: reviews
 image: "/screenshots/atr.png"
 rating: 4
 description: "**"
+grounding: "none (no source found)"
 ---
-
 **Description:**  
-A complete, hands-on review of TradingView's built-in ATR indicator — how to set it up, use it for stops and targets, and why it deserves five stars.
+A review of TradingView's built-in ATR indicator — what it measures, how it is configured, and how traders commonly apply it to stops, targets, and position sizing.
 
----
-
-I’ve been trading with ATR for years, and I’ve tested dozens of volatility indicators. The Average True Range is one of the few that earns its spot on every chart I open. It’s not flashy, but it’s brutally practical.
+The Average True Range is not flashy, but it is one of the more practical volatility tools available on TradingView. It does one job and does it without clutter.
 
 ## What This Indicator Actually Does
 
-ATR measures market volatility by averaging the true range over a set period. The true range captures the full price movement of a bar — high to low, plus any gaps. The result is a single line that tells you how much a stock, forex pair, or crypto typically moves per period.
+ATR measures market volatility by averaging the true range over a set period. The true range captures the full price movement of a bar — high to low, plus any gaps. The result is a single line that reflects how much an instrument typically moves per period.
 
-It does not predict direction. It tells you the size of the move, not the direction. That’s its superpower.
+It does not predict direction. It tells you the size of the move, not the direction. That distinction is the whole point of the tool.
 
 ## Key Features That Set It Apart
 
-TradingView’s built-in ATR is clean and minimal. No extra bells, no clutter. You get:
-- **Length** – default 14, adjustable to any period
-- **Smoothing** – RMA is default (similar to EMA), but you can switch to SMA, EMA, or WMA
-- **Multi-timeframe** – you can apply it to any chart timeframe, and it adjusts automatically
+TradingView's built-in ATR is clean and minimal. The parameters are:
+- **Length** – the averaging period for the true range
+- **Smoothing** – RMA is the default, with SMA, EMA, and WMA also available
+- **Multi-timeframe** – it can be applied to any chart timeframe and adjusts automatically
 
-What sets it apart from custom volatility indicators is reliability. It’s based on Wilder’s original formula, and TradingView’s implementation is bug-free. No repainting. No lag spikes.
+What separates it from many custom volatility indicators is that it is based on Wilder's original formula. The implementation is stable and does not repaint.
 
-## Best Settings With Specific Recommendations
+## Settings and How to Tune Them
 
-I’ve tested ATR on everything from 1-minute ES futures to weekly Bitcoin charts. Here’s what works:
+The length and smoothing method are the two levers worth understanding. Shorter lengths react faster to changes in volatility; longer lengths produce a smoother, slower line. RMA is the default smoothing and matches Wilder's original construction; SMA, EMA, and WMA are alternatives with different responsiveness characteristics.
 
-- **Intraday (1m–15m):** Length 7, smoothing RMA. Gives faster volatility readings for scalping.
-- **Swing trading (1h–4h):** Length 14, smoothing RMA. Standard Wilder setting works best.
-- **Position trading (daily+):** Length 20, smoothing EMA. Smoother for long-term stop placement.
-
-I always keep the ATR line on a separate pane below price. Overlaying it on price creates noise.
+ATR is normally plotted in a separate pane below price. Overlaying it on price compresses both scales and makes the reading harder to interpret.
 
 ## How to Use It for Entries and Exits
 
-ATR is not an entry signal alone. It’s a filter and a sizing tool.
+ATR is not an entry signal on its own. It functions as a filter and a sizing tool.
 
 **For stop losses:**  
-I place my stop 1.5x to 2x ATR below entry for longs, or above for shorts. On a daily ES chart with ATR of 30 points, a 1.5x stop means 45 points. That’s enough room to avoid noise but tight enough to manage risk.
+A common approach is to place the stop a multiple of ATR away from entry — below entry for longs, above for shorts. The multiple is a risk preference, not a fixed rule.
 
 **For take profit:**  
-I use 1x to 3x ATR as a target. If ATR is 30 points, I’ll take partial profit at 30 and let the rest run to 60–90.
+ATR multiples are also used to set targets, either as a single exit or scaled across several multiples to take partial profit and let the remainder run.
 
 **For entries:**  
-I wait for a breakout with ATR expanding. If price breaks a resistance level and ATR is rising, the move has conviction. If ATR is flat or falling, I skip the breakout.
+Some traders wait for a breakout accompanied by expanding ATR as confirmation of conviction, and skip breakouts where ATR is flat or falling.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Universal across all asset classes and timeframes
-- No repainting – what you see is what you get
-- Essential for position sizing and risk management
+- Applies across asset classes and timeframes
+- Does not repaint
+- Useful for position sizing and risk management
 - Free and built into TradingView
 
 **Cons:**
-- Doesn’t predict direction – you still need a directional setup
-- Can be slow to react in very fast markets (use length 7 for that)
-- Not a standalone system – it’s a tool, not a strategy
+- Does not predict direction — a directional setup is still required
+- Can be slow to react in very fast markets
+- Not a standalone system — it is a tool, not a strategy
 
-## Who It’s Actually For
+## Who It's Actually For
 
-Every trader who takes risk seriously. If you don’t use ATR for stop placement or position sizing, you’re guessing. Day traders, swing traders, and even long-term investors benefit from knowing the typical range of their instrument.
-
-If you trade purely on gut feeling or rely only on moving averages, this indicator will force you to be more disciplined.
+Traders who take risk seriously. Anyone setting stops or sizing positions without reference to the instrument's typical range is working with less information than they could be. Day traders, swing traders, and longer-term participants all benefit from knowing the typical range of what they trade.
 
 ## Better Alternatives If They Exist
 
 For volatility, there are a few alternatives:
-- **Bollinger Bands** – good for mean reversion, but less precise for stop placement
+- **Bollinger Bands** – useful for mean reversion, less precise for stop placement
 - **Keltner Channels** – similar to Bollinger but use ATR for width
 - **VIX** – only for US equities, not forex or crypto
 
-None replace ATR for pure volatility measurement. It’s the standard for a reason.
+None replace ATR for pure volatility measurement.
 
 ## FAQ
 
 **Q: Should I use ATR on every timeframe?**  
-A: Yes, but adjust the length. Shorter timeframes need shorter lengths (7), longer timeframes need longer lengths (14–20).
+A: It can be applied to any timeframe, but the length should be adjusted to suit the timeframe being traded.
 
 **Q: Does ATR work for crypto?**  
-A: Absolutely. Crypto is highly volatile, and ATR helps you size positions properly. On Bitcoin, I use length 14 on the 4h chart.
+A: Yes. Crypto is highly volatile, and ATR is a reasonable way to size positions accordingly.
 
 **Q: Can ATR be used for trailing stops?**  
-A: Yes. I trail stops at 2x ATR below the highest high since entry. It’s a common and effective method.
+A: Yes. Trailing a stop at an ATR multiple below the highest high since entry is a common method.
 
-**Q: Is ATR repaint?**  
-A: No. It’s based on closed bars. No repainting.
+**Q: Does ATR repaint?**  
+A: No. It is based on closed bars.
 
 ## Final Verdict
 
-ATR is the foundation of risk management. It’s not exciting, but it’s essential. Every trader should have it on their chart and know how to use it.
+ATR is a foundation of risk management. It is not exciting, but it is essential. Any trader using stops or position sizing should understand what it measures and how to configure it.
 
 **Rating: ⭐⭐⭐⭐⭐ (5/5)**
 
----
+## What This Class of Signal Has Actually Done
 
-**Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
+*Not this script. A canonical **ATR** implementation was backtested on 30 markets over 5 years of daily data (44,127 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: USDJPY 58.7%, SPY 55.3%, XAUUSD 54.7%, AMD 53.6%
+- Weakest markets: ADAUSD 45.5%, XRPUSD 43.5%, SHIBUSD 24.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.

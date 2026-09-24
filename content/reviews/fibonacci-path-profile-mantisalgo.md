@@ -17,97 +17,85 @@ categories:
 rating: 4
 description: "Honest Fibonacci_Path_Profile_Mantisalgo review: tested settings, entry/exit strategy, pros/cons, and who should use this trend indicator."
 tv_script_url: "https://www.tradingview.com/script/BU7wGOjd-Fibonacci-Path-Profile-MantisAlgo/"
+sources: ["https://www.tradingview.com/script/BU7wGOjd-Fibonacci-Path-Profile-MantisAlgo/"]
 ---
-Let me cut through the name. Fibonacci_Path_Profile_Mantisalgo isn't a magic Fibonacci retracement tool — it's a trend-momentum hybrid that projects price paths based on swing structure and Fibonacci ratios. I ran it on BTC/USD 4H, EUR/USD 1H, and NAS100 15M for two weeks. Here's what actually matters.
+Let me cut through the name. Fibonacci Path Profile isn't a static Fibonacci retracement tool — it's a historical swing-path analysis study that compares the active market structure against similar Fibonacci swing patterns from the past. The core output is a distribution of where the next D and E swing points have historically formed.
 
 **What This Indicator Actually Does**
 
-The indicator plots a series of projected price paths (the "path profile") that extend from the last confirmed swing. It uses Fibonacci extensions and retracement levels to build a cone of probable future price movement, then colors the trend direction. The core output is a median line with upper/lower expansion bands. When price respects the median, trend is intact. When it slices through, expect a reversal or deep correction.
+The indicator automatically detects alternating swing highs and lows and organizes them into an A-B-C structure. In a bullish ABC, A→B is an upward impulse and B→C is a downward retracement, with the next D swing developing upward from C. In a bearish ABC, the reverse applies. A→B is used as the base swing for all subsequent Fibonacci measurements.
 
-This isn't a lagging MA crossover or a repainting oscillator. It's forward-looking by design, which is both its strength and its weakness. The paths are calculated from the last two pivot points, so every new swing high/low recalculates the entire projection. That's where the "Mantisalgo" part comes in — the algorithm tries to smooth those recalculations to avoid jarring jumps.
+It then measures the B→C movement relative to the A→B impulse and matches historical cases using three filters: ABC direction, B→C Fibonacci range, and live C→Now progress. The result is a set of profiles showing the historical distribution of the next two swing points — the D Path (next swing after C) and the E Path (the swing after D). Both are normalized relative to the B→C range so historical structures of different absolute sizes can be compared on the same basis.
+
+This is not a fixed Fibonacci price target. It's a probabilistic view of the active structure built from historical swing distributions.
 
 **Key Features That Set It Apart**
 
-- **Dynamic path projection** — Unlike static Fibonacci levels, the path adapts to each new swing. The bands widen in high volatility and contract in consolidation. This gave me a clean visual read on expansion phases.
-- **Trend bias coloring** — The median line flips between bullish and bearish states. It's subtle but useful. The color change happened before my MACD histogram confirmed the shift in most cases.
-- **Swing-based recalculation** — It doesn't repaint bar-to-bar. It only recalculates on confirmed swings. I verified this by checking historical prints against live data. No cheating.
-- **Native TradingView integration** — No external data feeds, no lag from API calls. It runs entirely on Pine Script, so alerts work natively.
+- **Historical matching, not projection** — The indicator doesn't draw a cone of future price. It pools past cases that matched the current setup and shows how those cases actually resolved. The displayed percentages represent the weighted share of each outcome among currently matched cases.
+- **Live refinement** — The active profile recalculates as price develops, updating C→Now progress, matched cases, and both path distributions continuously.
+- **Dynamic C handling** — Before a new D swing is confirmed, the B→C retracement may extend to a new extreme. Bullish ABC updates C to a new lower low; bearish ABC updates C to a new higher high. This prevents an unfinished leg from being locked in as a completed swing.
+- **E Path structural outcomes** — The E Path is separated into three outcomes: B Break (E moves beyond B), No Break (E remains between B and C), and C Break (E moves beyond C).
 
-**Best Settings I Tested**
+**Settings and How to Tune Them**
 
-The defaults are heavy. I found these adjustments reduced noise significantly:
+The indicator exposes a weighting method and a set of Fibonacci matching ranges. The B→C ranges are fixed: 0–23.6%, 23.6–38.2%, 38.2–50%, 50–61.8%, 61.8–78.6%, 78.6–100%, 100–127.2%, 127.2–161.8%, and 161.8%+. Values up to 100% are classified as a Retrace; values above 100% are classified as an Extension. To preserve a usable historical sample, all B→C values above 161.8% are grouped into a single 161.8%+ matching range rather than divided into additional extension classes. Similarly, D and E profile values beyond the displayed ±161.8% range are grouped into the outermost top or bottom bin.
 
-- **Path Length: 50** (default is 80). Shorter paths react faster to new swings but produce more whipsaws on lower timeframes.
-- **Smoothing Factor: 3** (default is 5). This tightens the path projection to the actual price action. With 5, the bands were too wide and gave me false "breakout" signals.
-- **Extension Level: 1.618** — The 1.272 level triggered too often. 1.618 filtered out the noise on ranging days.
-- **Timeframe: 1H to 4H** — The indicator struggles below 15M. Scalping with this is like using a sledgehammer on a thumbtack.
+The weighting method has two options:
 
-**How I Used It — Entry and Exit Logic**
+- **Recent** — More recent historical cases receive greater weight, using Weight = 1 / (1 + Age / 1500), where Age is measured in bars. Use this to emphasize newer market behavior.
+- **Equal** — Every matched historical case receives the same weight, giving an unweighted historical distribution.
 
-My tested framework:
+There is no single correct choice here. Recent biases the sample toward current market behavior; Equal shows the raw distribution. The selection should reflect what the trader wants the sample to represent.
 
-- **Entry (Long):** Price closes above the median line while the trend color shifts from red to green. I wait for the first touch of the 1.618 extension path as confirmation, then enter on the next candle open. Stop loss goes below the previous swing low.
-- **Exit:** Take profit at the 2.618 extension level if the trend is strong (price held the median for 10+ candles). Otherwise, exit at the 2.0 level. The trailing stop rides the median line — when price closes below it, I'm out.
+**How to Read It**
 
-On EUR/USD 1H, this caught a clean 85-pip move. The entry was at the first median touch after the color flip, and the exit at the 2.0 extension. On NAS100, the whipsaws were brutal — three consecutive false signals before a real break. That's not the indicator's fault; it's the market regime.
+Use the indicator to evaluate how similar historical structures developed from the current setup. D Path highlights where the next swing historically tended to form. E Path shows how price developed after that D swing, broken into B Break, No Break, and C Break outcomes. C→Now continuously refines the sample as the active move progresses.
+
+Because D and E represent the active forward path, both profile boxes are always displayed to the right of the current candle.
 
 **Pros & Cons**
 
 **Pros:**
-- Genuinely forward-looking. Most trend indicators tell you where price *was*. This tells you where it *might* go.
-- Clean visual hierarchy. The median line and bands are easy to read at a glance.
-- No repainting on confirmed swings. I tested this rigorously across multiple instruments.
-- Works well with a simple trend-following framework.
+- Grounded in historical swing behavior rather than a single fixed Fibonacci level.
+- Continuous refinement as the active move develops, rather than a static snapshot.
+- Dynamic C handling keeps an unfinished retracement leg from being treated as confirmed.
+- Clear structural framing through the ABC skeleton and the B Break / No Break / C Break breakdown.
 
 **Cons:**
-- The "path profile" is an estimate, not a prediction. Newbies will treat it as gospel and get destroyed.
-- Default settings are too wide for practical use. You must tune them.
-- It's terrible in choppy, range-bound markets. The bands flip direction constantly.
-- No built-in alert for the median crossover. You'll need to set custom alerts.
+- The profiles represent historical swing distributions, not traded volume. They are not a fixed price target.
+- The output is probabilistic and depends on the size and relevance of the matched historical sample.
+- Traders who want a single line to trade against will find the distribution format harder to act on.
 
 **Who This Is For**
 
-Momentum and swing traders who already understand market structure. If you can identify swing highs/lows manually, this indicator will supercharge your workflow. If you're a day trader scalping 1-minute charts, skip it — you'll get chopped up.
+Traders who already work with Fibonacci structure and market swings and want a historical, probabilistic layer on top of the current ABC setup. It is not designed as a standalone signal generator or a fixed-target tool.
 
 **Alternatives Worth Considering**
 
-- **Supertrend (classic)** — Simpler, more robust in ranging markets, but completely lagging.
-- **Pivot Points Standard** — Better for mean-reversion strategies, but no directional bias.
-- **VWAP with anchored bands** — Better for intraday institutional flow, but doesn't project future paths.
+- **Static Fibonacci retracement tools** — Simpler, but they draw fixed levels rather than comparing against historical outcomes.
+- **Pivot-based swing indicators** — Good for identifying structure, but they don't pool historical analogues.
 
 **FAQ**
 
-**Does Fibonacci_Path_Profile_Mantisalgo repaint?**
-No, on confirmed swing formations. It recalculates when a new swing high/low is made, but historical values stay locked. I verified this against recorded data.
+**What does the indicator actually measure?**
+It detects the current A-B-C structure, measures B→C relative to A→B, filters historical cases by direction, B→C range, and C→Now progress, then shows the historical distribution of the next D and E swing points.
 
-**Can it be used for crypto?**
-Yes, but only on 1H and higher. Crypto's 24/7 volatility creates too many swings on lower timeframes.
+**What are the B→C ranges?**
+0–23.6%, 23.6–38.2%, 38.2–50%, 50–61.8%, 61.8–78.6%, 78.6–100%, 100–127.2%, 127.2–161.8%, and 161.8%+. Up to 100% is a Retrace; above 100% is an Extension.
 
-**What's the best timeframe?**
-4H for swing trading, 1H for active day trading. Anything below 15M produces unreliable paths.
+**What do B Break, No Break, and C Break mean?**
+They describe the E Path outcome: B Break means E moves beyond the B level, No Break means E remains between B and C, and C Break means E moves beyond the C level.
 
-**Does it work with TradingView alerts?**
-Yes, but you'll need to set custom conditions for median crossovers and band touches. There's no one-click alert built in.
+**Does the profile update in real time?**
+Yes. The active profile is continuously recalculated as price develops, which can update C→Now progress, matched cases, and both path distributions.
+
+**Is this a price target?**
+No. The profiles represent historical swing distributions, not traded volume, and are designed to provide a probabilistic view of the active structure rather than a fixed Fibonacci price target.
 
 **Final Verdict**
 
-This is a solid 4-star tool for traders who understand market structure and want a forward-looking trend framework. It's not a set-and-forget indicator — the settings need tuning, and the path projections require common sense to interpret. I'd recommend it for swing traders who already use Fibonacci and want something more dynamic than static retracement levels. For everyone else, the learning curve might outweigh the benefits.
+This is a well-defined historical swing-path tool built around a clear ABC structure and a documented matching methodology. The value is in the framing: it shows how similar past structures resolved, broken into D and E path distributions and the three E outcomes. It is not a prediction engine and not a fixed-target indicator, and it should not be treated as one. For traders who already think in terms of Fibonacci swings and market structure, it offers a genuinely different lens. For anyone looking for a single line to trade against, it isn't that.
 
-As shown in the chart above, the median line gave a clean trend read during the bullish phase, but the bands widened considerably during the consolidation — a clear signal to stand aside. That's exactly the kind of information you want from a trend indicator.
-
-If you're disciplined with your entries and respect the path structure, this will earn its place in your toolkit. If you're looking for a magic button, keep scrolling.
-
-**Rating: ⭐⭐⭐⭐ (4/5)** — Strong tool with real utility, held back by setup complexity and poor performance in ranging conditions.
-
-## Frequently Asked Questions
-
-### Is Fibonacci_Path_Profile_Mantisalgo worth it?
-
-Based on testing across multiple timeframes, Fibonacci_Path_Profile_Mantisalgo delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

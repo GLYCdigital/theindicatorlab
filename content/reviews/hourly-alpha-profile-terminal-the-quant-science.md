@@ -17,50 +17,54 @@ categories:
 rating: 4
 description: "Honest review of Hourly_Alpha_Profile_Terminal_The_Quant_Science — a trend analysis tool that repackages market structure. Tested settings, strategy, pros/cons, and who it fits."
 tv_script_url: "https://www.tradingview.com/script/qRYFrOJy-Hourly-Alpha-Profile-Terminal-The-Quant-Science/"
+sources: ["https://www.tradingview.com/script/qRYFrOJy-Hourly-Alpha-Profile-Terminal-The-Quant-Science/"]
 ---
-Let me be straight with you: the name is a mouthful, but the indicator itself is surprisingly focused. Hourly_Alpha_Profile_Terminal_The_Quant_Science (I'll call it HAPT for sanity) is a trend-following tool that plots a series of dynamic support/resistance zones based on hourly session alpha. It's not a magic crystal ball — it's a structured way to visualize where institutional money likely parked orders during the current hourly cycle.
+**Hourly Alpha Profile Terminal: An Honest Look**
 
-I tested this across BTC, EURUSD, and NQ on the macd chart type you see above. The core output is a stepped "terminal profile" line that shifts based on price velocity and volume profile of the current hour. When price trades above the terminal line, it's marking bullish continuation potential; below it, bearish pressure. The indicator also colors bars conditionally and can trigger alert conditions when price crosses the terminal.
+The name is a mouthful, but the indicator itself is more focused than the title suggests. Hourly Alpha Profile Terminal is a statistical study for TradingView, not a trend-following overlay. It does not plot dynamic support and resistance or generate entry signals. It maps historical market behavior hour by hour, for a single day of the week chosen by the user, and presents that data in two on-chart tables.
 
-**What actually sets it apart** from your typical moving-average-based trend tool is the alpha profile calculation. Instead of lagging price with SMA/EMA, it uses a rolling hour-based volume-weighted positioning model. In practice, this meant the terminal line reacted noticeably faster to session opens and news spikes than a 20 EMA on the same chart. During the London/NY overlap, the zones tightened and became more reliable — that's when the indicator earns its keep.
+According to the developer, the tool is built for intraday timeframes up to 60 minutes. Its stated purpose is to reveal the structure of price volatility and directionality on an hourly basis, rather than relying on traditional momentum indicators.
 
-Now, about settings. I ran dozens of combinations and found the defaults are workable but not optimal. Here's what I settled on after two weeks of forward testing:
+**What It Actually Does**
 
-- **Alpha Lookback:** Set this to 24 hours (default is often 12). The longer lookback smooths out noise on the macd chart type and gives more stable levels for swing positions.
-- **Profile Sensitivity:** I dropped it from 0.7 to 0.45. This reduces false signals during low-volume Asian hours, which was the indicator's biggest weakness out of the box.
-- **Terminal Smoothing:** Keep it off unless you're scalping. The raw output is already faster than most trend indicators; smoothing just adds lag.
+The script runs two quantitative terminals on the chart.
 
-For entries, the cleanest logic I found was a two-confirmation approach. First, wait for a 15-minute close above the terminal line after price has been below it for at least two hourly sessions — that's your trend shift trigger. Second, confirm with the macd histogram turning positive on the chart's timeframe. Enter on the next bar open. Stop loss goes 0.5% below the most recent hourly low (or the terminal line itself for tighter risk). Take profit at the next alpha zone, which the indicator shades as a semi-transparent band. That gave me roughly a 1:2.3 risk-reward on the pairs I tested, with about 58% win rate on the 4-hour timeframe.
+The **Win Rate Profile Terminal** divides the day into 24 hourly slots from 00:00 to 23:59. For the selected day of the week, it counts how many of those hourly cycles closed bullish versus the total, and returns a success percentage alongside a directional bias of bullish, bearish, or neutral, with a visual progress bar.
 
-The pros are solid: it adapts quickly to regime changes, the visual zones are clean and readable, and the alert system works reliably — I set one for "terminal cross" and it fired within the expected tick during fast moves. The backtesting integration is decent too, though you'll want to account for the repainting on historical bars. That's a real con: the terminal line recalculates for closed sessions, so if you're evaluating past signals, they look better than live ones. Another annoyance — there's no multi-timeframe input built in. You're locked to the hourly base logic, so if you trade 5-minute charts, you'll get too many whipsaws unless you filter manually.
+The **Volatility Profile Terminal** calculates the logarithmically normalized standard deviation of hourly returns for each time slot. It produces a volatility index and risk-based intensity bars, identifying which hour of the day shows the most violent price movements as the peak risk slot.
 
-Who is this for? Swing traders and position traders operating on 1H–4H charts who want a structured, alpha-aware alternative to basic moving averages. If you're a scalper or someone who needs strict multi-timeframe confluence built into the indicator itself, look elsewhere. For intraday momentum traders on the macd chart type, it works well as a filter — don't let it run your entire system.
+Both are historical mappings. They describe what has tended to happen during each hour on that weekday, not what price is doing right now in a directional sense.
 
-Alternatives worth considering: the Volume Profile Visible Range tool from TradingView is free and gives you similar institutional zones without the trend logic. For a more complete trend package, Supertrend with ATR multiplier is simpler and doesn't repaint, though it's far less sophisticated. If you want the alpha concept without the complexity, check out "Squeeze Momentum Indicator" by LazyBear — not the same thing, but it fills a similar trend-momentum gap with less baggage.
+**How to Use It**
 
-**FAQ:**
+The indicator requires an intraday timeframe of 60 minutes or lower — 1m, 5m, 15m, or 60m. Applied to daily, weekly, or higher charts, the terminal blocks execution and displays an error warning. This is a hard constraint, not a suggestion.
 
-**Does it repaint?** Yes, on historical bars. The terminal line for past hourly sessions adjusts as new data comes in. Live signals are stable, but don't trust the backtest equity curve blindly.
+The developer's guidance is to add the script to an intraday chart, open the settings to select the day of the week to analyze, and read the overlapping tables. Hours showing win rates above 55% are presented as trend opportunities; hours with extreme volatility are flagged for risk management.
 
-**Can I use it for crypto?** Absolutely — it worked well on BTC and ETH, especially during high-volume sessions. Just adjust the alpha lookback up to 48 for 24/7 markets.
+The stated use cases are hourly seasonality analysis, entry timing optimization, and volatility mapping for stop placement and slippage avoidance.
 
-**What timeframes does it support?** The base logic is hourly, but you can apply it to lower timeframes. Below 15 minutes, it degrades noticeably and generates excessive signals.
+**Settings and How to Tune Them**
 
-**Is it worth the price?** If it's under $50, yes — it's a legitimate trend analysis tool with a unique angle. Above that, you're paying for the name more than the functionality.
+- **Day to Analyze** — selects the day of the week, Monday through Sunday.
+- **Win Rate Terminal Position** — places the probability table in a corner of the screen: Top Right, Top Left, Bottom Right, Bottom Left, or Center.
+- **Win Rate Terminal Size** — sets the text size inside the table to Small, Normal, or Large.
+- **Volatility Terminal Position** — manages the screen position of the volatility table.
+- **Volatility Terminal Size** — modifies the text size of the volatility table for different screen resolutions.
 
-Here's the bottom line: this is a four-star tool that does exactly what it claims — no more, no less. The alpha profile concept is genuinely useful, the execution is solid, and the visual output is professional. The repainting and lack of multi-timeframe options keep it from being exceptional. If you trade hourly-based trends and want an edge over plain moving averages, this is a worthwhile addition to your toolkit. If you're looking for a hands-off signal generator, keep scrolling.
+These are display and selection controls. The source material does not describe any numerical tuning parameters for the underlying calculations.
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)** — A sharp, alpha-aware trend tool with real strengths, held back by repainting and a single-timeframe focus. Recommended for swing traders who understand its limits.
+**Who It's For**
 
-## Frequently Asked Questions
+Day traders and scalpers looking for recurring intraday behavior around sessions such as the London or New York opens. Quantitative and systematic traders who want to filter setups with hourly probability data. Analysts who want a visual read of market microstructure without adding oscillators to the chart. The developer also positions it as a companion to a separate script, the Bias Detector Terminal, which is used to identify a day with a directional bias at a higher timeframe before drilling into that day's intraday hours with this tool.
 
-### Is Hourly_Alpha_Profile_Terminal_The_Quant_Science worth it?
+**The Honest Assessment**
 
-Based on testing across multiple timeframes, Hourly_Alpha_Profile_Terminal_The_Quant_Science delivers solid value for traders who need trend analysis.
+This is a statistical reference table, not a trading system. It tells you when an asset has historically moved and in which direction on a given weekday, and it does so with a clean two-table layout and no chart clutter. What it does not do is tell you what to do with that information. There are no entries, no stops, no targets, and no signal logic in the source material.
 
-### Does this indicator repaint?
+The intraday timeframe restriction is the main practical limitation, and it is enforced by the script itself. If you trade higher timeframes, this tool will not load. If you trade intraday and want an objective, historical read on hourly behavior for a specific weekday, it provides exactly that.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+**Verdict:** A focused, purpose-built statistics tool for intraday traders, best used as a filter alongside a separate execution method rather than as a standalone system.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

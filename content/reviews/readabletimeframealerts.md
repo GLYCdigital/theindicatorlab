@@ -17,91 +17,79 @@ categories:
 rating: 4
 description: "Readabletimeframealerts review: A simple TradingView tool that converts timeframe labels into plain English. Settings, use cases, pros/cons, and honest verdict."
 tv_script_url: "https://www.tradingview.com/script/sO47UwjC-ReadableTimeframeAlerts/"
+sources: ["https://www.tradingview.com/script/sO47UwjC-ReadableTimeframeAlerts/"]
 ---
-Let me be blunt: most TradingView alerts are a mess of confusing labels. When you're juggling multiple timeframes, the default alert syntax like "close crosses over ta.sma(close, 20)" tells you nothing at a glance. That's exactly the problem Readabletimeframealerts solves — it strips away the code jargon and tells you, in plain English, what just happened and on which timeframe.
+Most TradingView alerts are a mess of confusing labels. When you're juggling multiple timeframes, raw Pine Script values tell you nothing at a glance. That's the problem this library addresses: it converts the raw timeframe string into a readable label.
 
-I've been testing this indicator on a MACD chart for the past two weeks, and honestly, it's one of those tools you don't realize you need until you've used it. It's not a signal generator. It doesn't predict anything. What it does is make your alert notifications actually useful when you're away from the screen.
+**What This Library Actually Does**
 
-**What This Indicator Actually Does**
+Readabletimeframealerts is a Pine Script library, not a signal generator. It doesn't predict anything. Its entire job is to reformat TradingView's raw `timeframe.period` value into something a human can read.
 
-Readabletimeframealerts sits quietly on your chart and intercepts alert conditions. When an alert fires, it reformats the message into something like "BTCUSD 4H: MACD histogram crossed above zero line" instead of the raw Pine Script gibberish. That's the entire job. No repainting, no lag, no hidden calculations.
+Pine's `timeframe.period` returns values like "60", "240", "1D", or "3M" — accurate, but not immediately legible. If an alert says "Zone formed on 360," most people won't know that means the 6-hour timeframe. This library converts those raw strings into proper labels: "60" becomes "1 Hour", "240" becomes "4 Hours", "1D" becomes "Daily", "3M" becomes "3 Months", and so on. It covers minutes, hours, days, weeks, months, seconds, and ticks.
 
-The magic is in the formatting logic. It takes the timeframe you're viewing, converts it from the numeric representation (like "240" for 4H) into readable text, and pairs it with the condition name you've set. The result is an alert message that actually makes sense when you're checking your phone at 3 AM.
+The author built it after running into this exact issue in their own work, where a user kept seeing numbers like 360 in alerts and couldn't tell what timeframe was meant.
 
 **Key Features That Matter**
 
-The standout feature is the timeframe conversion system. It handles all the standard TradingView timeframes — from 1-minute up to monthly — and formats them consistently. On the MACD chart I tested it with, the indicator correctly identified the 4H and 1D timeframes without any configuration. It also plays nicely with multi-timeframe setups, which is where most traders get confused with alerts.
+The core feature is the timeframe conversion system. It handles the standard TradingView timeframe categories — seconds, minutes, hours, days, weeks, months, and ticks — and formats them consistently.
 
-Another thing worth noting: the indicator doesn't bloat your chart. The visual footprint is minimal, which is rare for TradingView tools. It's essentially invisible until an alert fires, and then it does exactly one job — making that alert readable.
+The usage is a single line:
 
-**Settings and Configuration**
+```
+import AfnanTAjuddin/ReadableTimeframeAlerts/1 as tf
+alert("Zone formed on " + tf.f_tf_label(timeframe.period))
+```
 
-Here's where it gets interesting. The default settings work fine out of the box, but you'll want to tweak a few things:
+That line drops into your alert messages, labels, or tables and replaces the raw number with a readable timeframe. Because it's a library rather than a chart study, it has no visual footprint on the chart itself.
 
-- **Alert Message Template**: This is the core setting. You can customize how the message reads — I found "{{ticker}} {{timeframe}}: {{condition}}" works best for clarity.
-- **Timeframe Display Mode**: You can choose between short ("4H") and long ("4-hour") formats. The short mode is better for mobile notifications.
-- **Condition Label Override**: If you're using custom conditions, you can rename them here. This is where you'll spend most of your time setting up.
+**Settings and How to Tune Them**
 
-For my testing, I paired it with MACD crossovers and trendline breaks. The indicator picked up both conditions cleanly and formatted them correctly within the alert message.
+This is a library, so there is no settings panel in the conventional sense. What you control is how you call it and how you build the surrounding alert string. The source material does not describe configurable parameters, display modes, or message templates, so there is nothing concrete to specify here beyond the conversion function itself. Whatever customization exists lives in how you compose the alert message around the library's output.
 
 **How to Actually Use It**
 
-The workflow is straightforward. Set up your alert as you normally would, but instead of writing your own message, reference the indicator's output. The key is using the `{{message}}` placeholder in your alert condition, which pulls in the formatted text.
+The workflow is minimal. Set up your alert as you normally would, then call the library's label function on `timeframe.period` and concatenate the result into your alert message. The formatted text then appears in your alert notifications, labels, or tables.
 
-My entry logic: I set alerts on the 4H MACD histogram crossing zero, with the message template showing both the timeframe and the condition. When the alert fires, I check the 1D trend for confirmation before entering. The readable format means I can assess the situation from my phone without opening the app and squinting at charts.
-
-Exit logic is similar — I have alerts for opposite crossovers, and the clear timeframe labeling tells me immediately which chart I need to check. It sounds minor, but when you're running alerts across five different pairs, this saves real time.
+The author invites users to report edge cases the library doesn't handle correctly, so if you hit a timeframe format that converts wrong, that's the intended feedback channel.
 
 **Pros and Cons**
 
 The good:
-- Eliminates alert message confusion completely
-- Works across all timeframes without manual setup
-- Minimal chart footprint
+- Solves a specific, real problem: unreadable timeframe values in alerts
+- Single-line integration
+- Covers the full range of TradingView timeframe categories
 - Free to use
 
 The not-so-good:
-- It's a formatting tool, not a signal source — you still need your own strategy
-- Limited customization options for the display itself
-- No visual alerts or arrows on the chart
-- Documentation is sparse, so you'll need to experiment with the settings
+- It's a formatting utility, not a signal source — you still need your own strategy
+- Its scope is narrow by design
+- Documentation is limited to the usage example
 
 **Who Should Use This**
 
-If you're running multiple alerts across different timeframes and pairs, this is almost essential. Day traders who monitor 15-minute and 1-hour charts simultaneously will get immediate value. Swing traders juggling daily and weekly timeframes will appreciate the clarity.
+Anyone building alerts that reference the current timeframe and wants those alerts readable at a glance. If your alert messages currently contain raw values like "360" and you've had to explain what that means, this library is aimed at you.
 
-If you only trade one timeframe and rarely use alerts, skip it. You're not the target audience. Same goes for traders who rely on visual signals rather than notifications.
+If you don't use alerts, or your alerts never reference the timeframe, there's no reason to add it.
 
 **Alternatives Worth Considering**
 
-For those who want actual signal generation on top of readable alerts, look at tools like "Pine Script Alerts" or "Signal Bot" — they offer more features but with more complexity. If you want something even simpler, TradingView's built-in alert formatting options cover basic needs, though they lack the timeframe clarity this provides.
+If you need signal generation on top of readable alerts, you'd be looking at a different class of tool entirely. TradingView's built-in alert formatting covers basic needs but doesn't provide this kind of timeframe-to-label conversion.
 
 **FAQ**
 
-**Does this indicator repaint?**
-No. It only formats alert messages, so there's no repainting involved.
+**Does this library repaint?**
+It doesn't calculate signals at all — it only formats a string. The source material makes no claim about repainting either way, but there is nothing to repaint.
 
 **Can I use it with any strategy?**
-Yes, as long as you're setting alerts through TradingView's alert system.
+Yes, as long as you're setting alerts through TradingView's alert system and can import a library into your script.
 
 **Does it work on mobile notifications?**
-That's the main use case. The whole point is making mobile alerts readable.
+The stated purpose is making alert text readable to end users, and the author's motivating example was a user confused by alert output. Mobile readability is the clear intent, though the source material doesn't make an explicit claim about notification platforms.
 
 **Final Verdict**
 
-Readabletimeframealerts does one thing and does it well. It won't make you money by itself, but it'll save you from misreading alerts and making careless mistakes. For a free utility that improves your alert workflow, it earns its place on any multi-timeframe trader's chart. I'm giving it four stars — it loses one because the customization options feel limited and the documentation is thin. But for what it does, it's genuinely useful.
+Readabletimeframealerts does one thing: it turns Pine's raw timeframe string into a label a normal person can read. That's a small, well-defined problem, and the library addresses it directly with a one-line call. It won't make you money and it won't generate signals — it just makes your alerts legible. If unreadable timeframe values in your alerts have ever caused confusion, this is a clean fix.
 
-If you're drowning in confusing alert notifications, this is worth the two minutes it takes to set up. You'll wonder how you traded without it.
-
-## Frequently Asked Questions
-
-### Is Readabletimeframealerts worth it?
-
-Based on testing across multiple timeframes, Readabletimeframealerts delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

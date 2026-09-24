@@ -17,86 +17,79 @@ categories:
 rating: 4
 description: "Gaussian_Filter_Trend review: a smooth trend-following indicator with noise reduction. Tested settings, entry strategies, pros/cons, and alternatives."
 tv_script_url: "https://www.tradingview.com/script/AqRNdhlR-Gaussian-Filter-Trend-QuantAlgo/"
+sources: ["https://www.tradingview.com/script/AqRNdhlR-Gaussian-Filter-Trend-QuantAlgo/"]
 ---
-I'll be straight with you: most trend indicators on TradingView are repackaged moving averages with extra lines and a fancy name. Gaussian_Filter_Trend isn't that. It's a legitimate attempt at solving the lag-vs-noise problem that plagues every trend follower. After trading with it for a few weeks across BTC, EUR/USD, and a couple of large caps, here's my honest take.
+Most trend indicators on TradingView are repackaged moving averages with extra lines and a fancy name. The Gaussian Filter Trend is a more serious attempt at the lag-versus-noise problem that plagues trend followers, and its design choices are worth understanding before you add it to a chart.
 
 **What it actually does**
 
-The indicator applies a Gaussian filter — a weighted moving average that assigns less weight to older data points — to price action. Unlike a simple or exponential MA, the Gaussian filter smooths out high-frequency noise while preserving the shape of the underlying trend. The output is a single colored line that shifts from green to red (or your chosen colors) based on the filtered trend direction. It also plots a zero line, which acts as the neutral reference point.
+The indicator passes a selected source through a cascaded Gaussian filter — one to four single-pole stages — to smooth the source series. A beta term derived from the filter length and the pole count sets the smoothing coefficient, and because pole count enters that calculation directly, adding poles rescales the filter response rather than layering more averaging onto the same curve.
 
-What caught my attention is the lack of over-engineering. There are no histogram bars, no crossover arrows, no "buy/sell" labels cluttering your chart. Just one clean line that tells you which side of the market the momentum sits on. For someone who prefers reading price action over deciphering indicator spaghetti, that's refreshing.
+The filtered value is then held inside an adaptive volatility deadband. That band is sized by an Efficiency Ratio, which compares net directional movement against total distance traveled over the efficiency window: the ratio moves toward one when travel is directional and toward zero when price covers ground without net progress. The reading is smoothed before it is used, so the deadband width is less likely to shift sharply from bar to bar.
+
+The smoothed efficiency blends between a wider chop multiplier and a tighter trend multiplier, and the result scales Average True Range into the deadband width. Higher readings pull the envelope in so the line can follow a move more closely; lower readings push it out, intended to reduce flips in conditions where they are more likely. Adaptive Width can be disabled, in which case a single fixed multiplier is applied instead.
+
+Finally, the trend line carries its previous value forward and steps only when the envelope has moved past it — it drops when the upper band falls below the current level and rises when the lower band climbs above it, producing a stepped path rather than a continuous curve.
 
 **Key features that set it apart**
 
-The standout feature is the adjustable smoothing period. Most filters lock you into a fixed lookback window, but here you can dial in the sensitivity. Set it low (around 10-15) and the line hugs price tightly, giving you early signals but more false whipsaws. Crank it up to 30-40 and you get a much smoother line that ignores minor pullbacks but lags on reversals.
+The deadband mechanism is what distinguishes this from a plain smoothed line. The trend path advances only once a move has cleared the band, so the line tracks sustained moves and sits still through noise instead of reacting to every wiggle in the filtered series.
 
-The second thing I like is the color transition logic. Instead of flipping instantly, the line fades through a gradient as the trend weakens. That visual cue helps you anticipate a potential reversal instead of reacting after it happens. It's subtle, but in practice it's more useful than you'd think.
+A persistent direction state records the last step and carries it through flat segments, so the line color, star field, bar coloring and alerts all read from the same value rather than diverging while the line is stationary. The star field orbits the path at a distance scaled to recent average bar range, spreading as ranges expand and drawing in as they compress, so trend and the volatility it is being measured against are visible in one read.
 
-**Best settings I tested**
+**Settings and How to Tune Them**
 
-After running it against several market conditions, here's what worked:
+Three preconfigured presets cover a range of trading styles and timeframes. "Default" uses four poles over a fourteen bar window, described as a balanced configuration aimed at swing trading on 1-hour and daily charts. "Fast Response" shortens the filter length and drops to two poles for a tighter path on 5-minute to 1-hour charts, which may suit intraday work at the cost of more frequent steps in choppier conditions. "Smooth Trend" lengthens the filter and widens the chop multiplier for a steadier baseline on daily and weekly charts, aimed at position trading.
 
-- **Scalping (1-min to 5-min charts):** Period 12, use the line crossing the zero level as your trigger. Expect around 60% win rate with tight stops. Don't expect huge moves.
-- **Swing trading (1H to 4H):** Period 25-30. This is the sweet spot. The line stays on the correct side of price through normal pullbacks, and the gradient shift gives you an early warning on trend exhaustion.
-- **Position trading (Daily):** Period 40+. You'll rarely trade, but when the line flips, it's a serious move.
+Selecting any preset other than Default overrides every Gaussian Filter and Trend Width input beneath it. Beyond the presets, the filter length and pole count control the smoothing response, the efficiency window and efficiency smoothing control how quickly the deadband adapts, and the chop and trend multipliers set the bounds the adaptive width blends between. Adaptive Width can be switched off to apply a fixed multiplier instead.
 
-The zero line is actually where the magic happens. The distance between the filtered line and the zero level tells you how strong the trend is. When the line is far from zero and flattening, that's your signal to tighten stops.
+On the visual side, six color presets — Custom, Classic, Aqua, Cosmic, Cyber and Neon — provide coordinated bullish and bearish pairings. Custom exposes independent color pickers for both states plus an adjustable neutral color used during the initial warmup before the first directional step. Line width is configurable from one to eight, and the star field toggles separately from the line so either element can be displayed on its own. Optional bar coloring and background shading tint the candles and chart field with the active trend color at configurable transparency levels.
 
 **How to use it in practice**
 
-Here's the entry logic that made sense to me: wait for the line to cross above zero and turn green, then enter long on the first pullback to the line itself. Place your stop below the most recent swing low — not below the zero line, because that's too wide. Target a 2:1 reward-to-risk ratio and trail once you're up 1R.
+The signal logic is defined by the band interaction. A bullish state is entered when the lower band climbs above the trend line, at which point the line steps higher and the trend line and star field switch to the bullish color; this remains active until the upper band falls below the line and confirms a bearish step. A bearish state is entered when the upper band falls below the trend line, with the visuals switching to the bearish color, and it holds until the lower band climbs above the line.
 
-For exits, the gradient shift is your friend. When the line starts losing saturation while still above zero, that's a sign the buying pressure is fading. Close half your position there, move your stop to breakeven, and let the rest ride until the line crosses zero.
+When price stays inside the deadband, neither band displaces the line and it holds level. Color does not change, so the prior state is carried rather than reconfirmed. Extended flat runs indicate the efficiency reading has widened the band against choppier conditions, and the state resolves only when one side of the envelope clears the line.
 
-One thing I'll warn you about: don't use this in a ranging market. The Gaussian filter will give you a clear trend signal, but if price is chopping sideways, you'll get chopped up. Check the ADX or just eyeball whether price is making higher highs and higher lows before trusting the signal.
+Because the state is only reconfirmed on a step, the flat path is information rather than a gap: it tells you the band has not been cleared, not that the trend has reversed.
 
 **Pros and cons**
 
 **Pros:**
-- Genuinely smooth output with minimal lag compared to comparable filters
-- One clean line, no clutter
-- Gradient color shift is a clever early-warning system
-- Highly customizable period suits multiple timeframes
+- Cascaded Gaussian filtering with a configurable pole count gives meaningful control over the smoothing response
+- The efficiency-driven deadband adapts to directional versus choppy conditions rather than using a fixed threshold
+- One clean stepped line, no histogram clutter
+- Direction state is shared consistently across line color, star field, bar coloring and alerts
 
 **Cons:**
-- Useless in sideways markets (like most trend indicators)
-- No built-in alerts for color changes — you'll need to set your own
-- The gradient shift is subjective; new traders might misread it
-- No multi-timeframe analysis built in
+- Like most trend tools, it will hold through chop; the flat path exists precisely because the band widens there
+- Alerts are limited to three trend-transition conditions, with no alert specifically tied to a color change beyond those
+- The adaptive width behavior takes some chart time to internalize
 
 **Who it's for**
 
-This is for the trader who already has a solid sense of market structure and just wants a clean trend filter to confirm their bias. If you're the type who marks support/resistance and needs a second opinion on direction, this is a great addition. If you're a beginner looking for a "click buy when green" magic button, you'll be disappointed — and you'll lose money.
+This suits a trader who already has a sense of market structure and wants a clean trend reference that stays still through noise. It is not a standalone system, and the flat path should be read as the indicator declining to confirm a move rather than as a hidden signal.
 
 **Alternatives worth considering**
 
-- **Supertrend:** Better for breakout traders who want a stop-loss built into the indicator. More aggressive signals.
-- **VWAP bands:** Better for intraday mean-reversion traders. Different philosophy entirely.
-- **MACD with histogram:** More data (momentum + zero crossings) but messier to read.
-
-**FAQ (real questions I saw in the comments)**
-
-*Does the Gaussian filter repaint?* No, the line is calculated on closed bars. It doesn't change historical values. That's a big plus.
-
-*Can I use it on crypto?* Yes, but crypto's volatility means you'll want the higher period settings (25+) to avoid false signals.
-
-*Does it work with the MACD chart type?* As shown in the chart above, it displays fine over the MACD pane. Just make sure you're looking at the trend direction on your main chart, not the indicator's sub-pane.
-
-**Final verdict**
-
-Gaussian_Filter_Trend earns 4 stars. It's not a standalone system — no indicator is — but as a trend filter, it's one of the cleaner ones on the platform. The smoothing is genuinely well-designed, the visual feedback is intuitive, and the settings give you enough flexibility to match your timeframe. The lack of alerts and the poor performance in ranges keep it from a perfect score. If you pair it with proper price action analysis, it'll earn its place on your chart.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
+- **Supertrend:** built-in stop-loss behavior and more aggressive signals, better suited to breakout traders.
+- **VWAP bands:** a different philosophy entirely, better suited to intraday mean-reversion.
+- **MACD with histogram:** more data — momentum plus zero crossings — but messier to read.
 
 ## Frequently Asked Questions
 
-### Is Gaussian_Filter_Trend worth it?
+### What do the three alerts cover?
 
-Based on testing across multiple timeframes, Gaussian_Filter_Trend delivers solid value for traders who need trend analysis.
+"Bullish Trend Signal" fires on the bar the direction state flips to bullish. "Bearish Trend Signal" fires on the bar it flips to bearish. "Any Trend Change" triggers on either transition for traders who want a single unified alert regardless of direction. All alerts include the exchange, ticker and timeframe in the message.
 
-### Does this indicator repaint?
+### Does the indicator work on any instrument or timeframe?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+The description states the trend path is designed to be recognizable at a glance on any instrument or timeframe. The presets are organized by chart timeframe, so the practical question is which preset matches the chart you are trading rather than whether the indicator will plot.
+
+### What happens during the warmup period?
+
+Before the first directional step, the visuals use an adjustable neutral color. This is separate from the bullish and bearish colors and can be set independently when the Custom color preset is selected.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

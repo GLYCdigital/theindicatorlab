@@ -17,86 +17,70 @@ categories:
 rating: 4
 description: "Honest Agreement_Streak_Analyzer_Fibonacciflux review: how this trend-streak tool works, tested settings, entry logic, and who should (and shouldn't) use it."
 tv_script_url: "https://www.tradingview.com/script/eowbBWy9-Agreement-Streak-Analyzer-FibonacciFlux/"
+sources: ["https://www.tradingview.com/script/eowbBWy9-Agreement-Streak-Analyzer-FibonacciFlux/"]
 ---
-Let's cut through the name. "Agreement_Streak_Analyzer_Fibonacciflux" sounds like someone smashed three buzzwords together and hit publish. But after spending two weeks trading with it on the MACD chart type, I can tell you it's more than a gimmick. It's a trend-strength meter that tracks how many consecutive candles agree on direction — then layers Fibonacci-based projection levels on top. Not revolutionary, but genuinely useful if you're a trend-following trader who's tired of getting chopped up in ranging markets.
+# Agreement_Streak_Analyzer_Fibonacciflux Review
+
+The name is a mouthful, and it doesn't do the script any favors — three buzzwords stacked on top of each other. But the underlying concept is more interesting than the name suggests. This is a trend-strength meter that counts how many consecutive bars agree on direction across multiple timeframes, then scores that run against its own history. It's not a signal generator, and the author is upfront about that: the published result is a negative one.
 
 ## What It Actually Does
 
-The core mechanic is simple: the indicator counts consecutive candles where momentum (via MACD histogram agreement) points the same direction. That "streak" number drives everything else. Higher streaks mean stronger conviction — the kind of sustained pressure that precedes big moves. When a streak breaks, the tool flips to warning mode.
+Inside each of four timeframes (15m, 1H, 4H, and 1D by default), the script computes a Stochastic %K and %D, then takes the sign of %K minus %D as that timeframe's direction. When all four point the same way, the bar counts as an agreement bar.
 
-The Fibonacci part kicks in as projection zones. Once a streak reaches a certain threshold, the indicator plots retracement and extension levels based on the move that generated the streak. You're not getting a crystal ball — you're getting statistically probable targets and invalidation points based on how far similar streaks have historically pushed price.
+From there, the indicator tracks the length of the current run of agreement bars, stores every completed run in a rolling array (200 by default), and scores the live run by empirical percentile against that history. Labels mark three events: a run longer than the 90th percentile of its own history (RARE), a run longer than the 95th while the fast timeframe sits in an extreme zone (EXH), and a run longer than every stored run (REC).
 
-## Key Features That Matter
+An audit table shows each timeframe's raw %K, %D and direction, the current run in bars and elapsed time, its percentile, the sample count, and both thresholds.
 
-- **Streak counter with visual state changes**: The background tint shifts from neutral to warm as streaks build. At a glance, you know if you're in a "let it run" or "take profit" environment.
-- **Fibonacci confluence zones**: When a streak hits 5+ consecutive candles, the indicator draws zones where price historically stalls or reverses. These aren't static — they recalculate with each new candle.
-- **Divergence detection**: When price makes a higher high but the streak strength weakens, you get an early warning. Not a sell signal, but a reason to tighten stops.
-- **Alerts on streak milestones**: Customizable alerts for streak breakouts, streak exhaustion, and Fibonacci zone touches. This is where the indicator earns its keep.
+## The Measurement, and Why It's a Negative Result
 
-## Best Settings (Tested)
+The premise worth testing is whether agreement runs reflect a property of the market or a property of the construction. The test is a circular shift: shift each timeframe's direction series against the others, preserving each series' own distribution and autocorrelation while destroying only the alignment between them.
 
-I ran this on BTC/USD, EUR/USD, and ES futures on multiple timeframes. Here's what worked:
+De-aligned copies of these four sensors agree *more* than the real ones:
 
-- **Timeframe**: 1-hour and 4-hour charts are the sweet spot. Lower timeframes (5m/15m) generate too many false streaks — the indicator becomes noise.
-- **Streak threshold**: Set the "minimum streak for Fibonacci zones" to 4. At 3, you get zones on every minor push. At 5+, you miss early entries.
-- **MACD fast/slow**: Leave defaults (12/26/9) unless you're day trading — then try 8/17/9 for faster reaction.
-- **Zone width**: Set Fibonacci zones to "medium" (not tight, not wide). Tight zones trigger too early; wide zones are useless for targeting.
+- Real all-four agreement: 5.72% of bars on BTCUSDT, 6.67% on ETHUSDT
+- Circular-shift null, median of 200 draws: 12.4% and 12.5%
+- Analytic independence baseline: 12.43% and 12.47%
+- Empirical p in both cases: 0.0050, the resolution floor of 200 draws
 
-## How to Use It (Entry/Exit Logic That Works)
+The null lands on the independence baseline, meaning four coin flips would agree about twice as often as these four timeframes do. Read at the same bar without the confirmed-mode lag, agreement rises to 13.2% and 13.6% — indistinguishable from chance. The rarity being scored is mostly manufactured by staggering the four sensors in time, not detected in the market.
 
-Here's the framework I settled on after some painful trial and error:
+Runs are short and the distribution is coarse. Median completed run is 2 bars (30 min), mean 2.58, longest observed 9 bars (2h15m) on BTCUSDT and 8 on ETHUSDT, over 133 completed runs in 62 days. The streak line reads 0 on 94.3% of bars. Because run lengths are small integers, the 90th and 95th percentiles are equal on 82.8% of scored bars on BTCUSDT — the shaded "rare zone" between them has zero height most of the time, and is drawn only where it has width.
 
-**Long entry**: Wait for a 4+ candle bullish streak AND price to be above the 50 EMA. Enter on the first pullback to the nearest Fibonacci retracement zone (0.382 or 0.5) if the streak counter doesn't drop below 3 during the pullback.
+No edge is claimed and none was found. The 4-hour forward return after a continuation event was significantly positive on BTCUSDT and significantly negative on ETHUSDT over the same window. That is what a non-effect looks like when it is measured twice.
 
-**Exit**: Take partial profits at the 1.272 extension. Trail the rest with a stop at the streak-breaking candle's low. The moment the streak counter hits zero, close everything — no exceptions.
+All figures: Binance spot, 15m chart, 6000 bars ending 2026-08-18, default inputs, both symbols measured identically.
 
-**Short logic**: Mirror image, but require the streak to form below the 200 EMA for higher probability.
+## How the Numbers Were Checked
 
-**Avoid**: Trading against a 7+ candle streak. In my testing, those extended streaks tend to continue further than anyone expects. Fighting them is how accounts die.
+The logic was reimplemented outside Pine and cross-checked against the chart's Data Window bar by bar. On seven deliberately chosen bars — runs of 0, 3, 4, 5, 6, 7 and 8 bars, including one bar carrying a RARE label and one carrying an EXH label — the reimplementation matched the chart exactly, thresholds included.
 
-## Pros & Cons
+One caveat a reader can hit: the two percentile thresholds depend on how many completed runs the chart has loaded, not only on the symbol. A chart whose stored array has saturated at 200 samples can put a threshold at 5.0 where a shorter history puts it at 4.5. Because the test is "run longer than the threshold," a run of exactly 5 bars is a label in one case and not in the other. Label counts are not portable between charts with different history depth.
 
-**Pros:**
-- The streak concept is genuinely useful — it quantifies momentum in a way that's easy to read
-- Fibonacci zones are recalculated dynamically, which feels more relevant than static levels
-- Alerts are well-designed and actually useful (unlike most indicators where alerts are an afterthought)
-- Works well as a confluence tool alongside price action
+## Settings and How to Tune Them
 
-**Cons:**
-- The name is terrible. You can't find this in the catalog without the exact slug
-- The indicator is useless in ranging markets. It'll generate streaks that break immediately, and you'll be second-guessing every signal
-- Learning curve is steeper than it should be — the settings panel has 20+ inputs, many of which don't need to be exposed
-- No backtesting engine built in. You'll need to manually verify strategies
+The timeframe set is by far the strongest control. Dropping the daily leg moves agreement from 5.7% to 18.8% of bars, and using only 15m and 1H gives 46.0%. The sensor lengths and the percentiles are load-bearing. The four agreement weights are not — the test is unanimity, so they change no threshold and no label, and they scale only the optional agreement mass line. The colour mid percentile only tints the line.
+
+## What's Fixed in This Version
+
+Nine defects found by adversarial review of the previous private version, each verified against the code before it was fixed:
+
+- %D smoothing could be set to 1, which made every direction exactly zero and the whole indicator permanently blank; a minimum-samples value above the array cap did the same.
+- The rarity alert compared the percentile rank to the percentile input while the label compared the run to the interpolated quantile, so it fired one bar early on three of five labels and four more times with no label at all. Alerts now fire on exactly the booleans that draw the labels.
+- The pane colour used that same second rule and painted exhaustion red on runs one bar shorter than any run that could carry a verdict.
+- An "extreme membership softness" input was algebraically a no-op across its whole range and has been removed in favour of the comparison it actually performed.
+- The exhaustion percentile can no longer sit below the continuation percentile and invert the zone.
+- The streak line is blanked during sensor warm-up instead of drawing a confident flat zero.
+- Draw order was changed so the thresholds and the band no longer cover the line they describe.
+- The audit table promised by the previous version's settings did not exist; it does now.
+
+Every one of these fixes is either display-only or a guard on a setting the defaults do not use, so none of them moves a plotted number at default settings. That was verified rather than assumed: the same bar was read off the chart before and after the rewrite, and the run length, both thresholds, and all three event series came back identical.
 
 ## Who It's For
 
-This is for **swing traders and position traders** who already have a trend-following system and need better timing. If you're a scalper, skip it — the signal lag will frustrate you. If you're a counter-trend trader, this indicator will actively fight you.
+This is for traders who want to understand *why* multi-timeframe agreement feels meaningful — and who are willing to look at evidence that it mostly isn't. The indicator is honest about its own limitations, which is rare. Anyone expecting a standalone system will be disappointed; anyone using it as a study in how apparent signals can be artifacts of construction will find it useful.
 
-Day traders can use it on the 4-hour chart to align with the bigger picture, but don't rely on it for intraday entries alone. Pair it with volume confirmation or order-flow analysis for best results.
+Open source under MPL 2.0. Nothing here is a forecast, a signal service, or a claim of profitability.
 
-## Alternatives Worth Considering
-
-- **Squeeze Momentum Indicator** (LazyBear): Better for range-to-trend transitions, free and widely available
-- **Supertrend**: Simpler trend-following, less information but fewer false signals
-- **MACD Divergence Suite**: If you only care about divergence, this is more direct
-
-## FAQ
-
-**Q: Does this replace MACD?**
-No. It's built on MACD calculations, so it's more of an enhancement. Use both or pick one.
-
-**Q: Can I use it on crypto?**
-Yes, works fine. Just be aware crypto's 24/7 markets create more streaks that don't mean much. Stick to higher timeframes.
-
-**Q: Is the Fibonacci part predictive?**
-No. It's projection, not prediction. The zones show where price has historically reacted given similar streak dynamics. Treat them as probabilities, not certainties.
-
-**Q: Does it repaint?**
-The streak counter updates each candle close, but the Fibonacci zones can shift slightly as new data comes in. Not true repainting, but be aware zones aren't fixed until the streak breaks.
-
-## Final Verdict
-
-**⭐⭐⭐⭐ (4/5)** — The Agreement_Streak_Analyzer_Fibonacciflux earns its stars through the streak mechanic, which genuinely adds value to trend analysis. It's not a standalone system, but as a confluence tool for timing entries and exits, it's surprisingly solid. The Fibonacci integration could be tighter, and the interface needs decluttering, but the core concept works. If you're a swing trader looking to add momentum-quality filters to your existing edge, this deserves a spot in your toolkit. Just don't expect it to hand you trades — it's a tool, not a strategy.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

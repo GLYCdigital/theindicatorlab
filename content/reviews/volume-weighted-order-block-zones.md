@@ -17,98 +17,80 @@ categories:
 rating: 4
 description: "Volume_Weighted_Order_Block_Zones review: settings, entry strategy, and honest pros/cons. Does this volume-filtered S/R tool beat plain order blocks? Tested."
 tv_script_url: "https://www.tradingview.com/script/KcnNgwDI-Volume-Weighted-Order-Block-Zones-BigBeluga/"
+sources: ["https://www.tradingview.com/script/KcnNgwDI-Volume-Weighted-Order-Block-Zones-BigBeluga/"]
 ---
-I've spent the last two weeks trading with Volume_Weighted_Order_Block_Zones on BTC, EURUSD, and a few US equities. The verdict? It's a solid 4-star trend tool that adds real volume context to classic order blocks, but it’s not the holy grail some script descriptions claim.
+Volume-Weighted Order Block Zones is a TradingView study by BigBeluga that maps institutional order blocks using pivot points, price displacement, and volume weighting. The pitch is straightforward: most order block indicators highlight every pivot zone and bury the chart in low-probability setups, while this one attempts to plot only zones backed by significant volume and momentum.
 
-Here’s what the indicator actually does: it identifies order blocks — those candlestick clusters where smart money likely accumulated or distributed — but then filters them through volume. Only zones with above-average volume get highlighted. That’s the core differentiator. Most free order block scripts on TradingView just draw rectangles around the last opposite-colored candle before a strong move. This one asks *whether that move mattered* by checking if volume confirmed it.
+**What the Indicator Does**
+
+The script identifies structural pivot highs and lows using a customizable swing length, then filters those pivots through a volume strength calculation. Zones that fall below the volume threshold are dropped. The result is a cleaner chart that, in theory, surfaces only the order blocks where volume confirms that something meaningful happened.
+
+Two formulas drive the displacement logic:
+
+- bearLevel = bearObHigh - atr * displacement
+- bullLevel = bullObLow + atr * displacement
+
+Here atr is the standard Average True Range of period 100, and displacement is a sensitivity multiplier. Higher values of both displacement and minVolStrength filter out more noise and leave only what the script treats as major institutional footprints.
 
 **What You See on the Chart**
 
-As the chart above shows, the indicator plots zones as shaded rectangles extending to the right. Bullish zones are green, bearish zones are red. The opacity and line style change based on whether the zone is "fresh" (untested) or "broken." Notice how some minor retracement zones aren't drawn at all — those are the volume rejects. That's a huge time-saver if you're tired of staring at a cluttered chart with 14 overlapping rectangles.
+Order block zones are plotted as boxes with volume percentage text, alongside structural pivot high (PH) and pivot low (PL) labels. Dashed trigger lines project from each zone and extend dynamically until price achieves the required ATR displacement. Zones that are breached or fully mitigated are deleted automatically as part of the active zone management loop.
 
-**Key Features That Stand Out**
+**Key Features**
 
-1. **Volume-weighted filtering** — This is the main selling point. Zones without volume confirmation are simply ignored. In my testing, this removed about 40% of false signals compared to a plain order block script.
+1. **Swing and volume-weighted detection** — Pivot identification uses ta.pivothigh and ta.pivotlow with a customizable swing length. Volume intensity is computed via a helper function and compared against the minVolStrength threshold.
 
-2. **Zone freshness tracking** — The indicator tracks whether price has returned to a zone or broken through it. Fresh zones get a solid outline; tested zones fade. This helps you prioritize which levels matter right now.
+2. **Displacement triggers** — Live dashed trigger lines are drawn from the order block bar and extend until the ATR-based displacement condition is met, at which point the zone is treated as confirmed.
 
-3. **Customizable lookback** — You can set the lookback period for detecting order blocks (I use 150 candles on the 1H chart). The default is fine, but if you're scalping on the 5M, you'll want to drop it to 50.
+3. **Zone management and retest signals** — Active zones are monitored continuously. When price retests an active zone, the script prints B (bullish OB bounce) or S (bearish OB rejection) labels.
 
-4. **Volume threshold slider** — The sensitivity control lets you decide how strict the volume filter is. Set it high for only the most significant zones, low for more frequent signals.
+**Settings and How to Tune Them**
 
-**Settings I Actually Recommend**
+The script exposes a swing length for pivot detection, a displacement multiplier that controls how far price must move beyond the order block to confirm it, and a minVolStrength threshold that filters out zones with weak volume. The official documentation notes that higher displacement and minVolStrength values filter out weak market noise and focus on major institutional footprints — the trade-off being fewer, but more selective, zones. There is no single "correct" configuration; the balance depends on how much filtering you want versus how many zones you want to see.
 
-After testing, here's my setup:
+**How to Use It**
 
-- **Lookback period:** 150 (good balance for 1H and 15M charts)
-- **Volume threshold:** 1.2 (slightly above average; 1.0 is too loose, 2.0 is too restrictive)
-- **Zone limit:** 10 (showing more than that clutters the chart)
-- **Break confirmation:** 3 candles (anything less gives false breaks)
+The TradingView documentation suggests two primary use cases:
 
-For scalping on 5M or 1M, drop the lookback to 50 and volume threshold to 1.1. You'll get more zones, but they're less reliable. For swing trading on 4H or daily, raise the lookback to 250 and volume to 1.5 for only the highest-conviction levels.
+1. **Identify high-volume order blocks** — Look for newly formed zones displaying strong volume percentages (the example given is above 20%) to locate institutional liquidity entry points.
 
-**How to Actually Use It**
+2. **Manage risk with retest labels** — Monitor the B and S retest labels to guide entries and manage stops as price interacts with active zones.
 
-The entry logic is straightforward, but execution matters:
+The script is a visualization and signal tool, not a complete trading system. It does not include a trend filter, so zones can form in either direction regardless of the broader trend.
 
-1. **Wait for price to approach a fresh zone** in an established trend. Don't trade zones against the trend — that's how you get chopped up.
-
-2. **Look for a rejection candle pattern** — a pin bar or engulfing candle closing back inside the zone's range. The volume spike on that rejection candle is your confirmation.
-
-3. **Enter on the close of the rejection candle**, not at the zone boundary. This costs you a few pips but saves you from false breakouts.
-
-4. **Stop loss:** Place it 20-30% beyond the zone's opposite edge. That's wider than most scripts suggest, but tight stops get hunted in these zones.
-
-5. **Take profit:** The next significant zone in the opposite direction, or use a 1:2 risk-reward ratio as a baseline.
-
-**Pros & Cons — The Honest Trade-Offs**
+**Pros and Cons**
 
 *Pros:*
-- Volume filtering genuinely reduces false signals. I compared it side-by-side with a standard order block script over 50 trades; the volume-weighted version had a 58% win rate vs. 47%.
-- Clean visualization. No clutter, no useless lines.
-- Works well across timeframes and asset classes.
+- Volume weighting is integrated directly into order block detection, which filters low-volume traps automatically.
+- The dynamic trigger line engine adapts to real-time price action without cluttering historical data.
+- The script is written for Pine Script v6 and uses array management for order block storage and dynamic box rendering.
 
 *Cons:*
-- Not a standalone system. You still need a trend filter. I pair it with an EMA on higher timeframe, otherwise, you'll take counter-trend zones and bleed out.
-- The "zone freshness" logic can lag. A zone might display as untested even after price has wicked through it and closed back — that's a programming quirk, not a bug.
-- No alerts built in. You'll need to set your own price alerts for zone touches, which is annoying.
+- It is not a standalone system. Without an external trend filter, counter-trend zones will appear alongside trend-aligned ones.
+- The documentation does not specify alert conditions, so traders relying on alerts should verify what is available before depending on it.
 
 **Who Should Use This**
 
-This is for traders who already understand order block theory and want to refine it with volume context. If you're a beginner, skip it — you'll get confused by zone freshness states and volume thresholds. If you're intermediate or advanced, this is a genuinely useful addition to your toolkit, especially if you trade breakouts and retests on 15M to 4H charts.
+Traders who already understand order block theory and want volume context layered on top. The volume threshold and displacement settings do the filtering work, so the tool rewards users who know what they are looking at. Beginners without a framework for order blocks will likely find the zone management logic opaque.
 
 **Alternatives to Consider**
 
-- **Plain Order Blocks (free)** — If you want simplicity and don't mind manually checking volume, stick with a basic script. You'll get more zones but do more work filtering.
-- **Smart Money Concepts by LuxAlgo** — More comprehensive (includes FVG, liquidity, and market structure) but heavier and more complex. Volume_Weighted_Order_Block_Zones is a leaner alternative if you only care about zones.
-- **Volume Profile-based tools** — If you're more volume-literate, a proper volume profile at key price levels might serve you better, though it doesn't give you order block structure.
+- **Plain order block scripts** — Simpler, but you filter volume manually.
+- **Smart Money Concepts by LuxAlgo** — Broader scope (fair value gaps, liquidity, market structure) at the cost of complexity.
+- **Volume profile tools** — Better if your primary lens is volume at price rather than order block structure.
 
-**FAQ Traders Usually Ask**
+**FAQ**
 
-**Is this indicator repainting?**  
-Yes, partially. Zones can shift as new candles close and volume data updates. It's not a huge problem for swing trading, but don't use it for precision entries on lower timeframes without confirming on a higher timeframe.
+**Does it repaint?** The source material does not state whether the script repaints. The dynamic trigger lines update in real time until the displacement threshold is met, so zones should be treated as provisional until confirmed.
 
-**Does it work in crypto?**  
-Yes — I tested on BTC and ETH. Crypto's high volume actually makes the filter more effective. Just be aware that zones get tested more frequently due to volatility.
+**Does it work on crypto?** The source material does not make any market-specific claims. It describes the tool in general terms without restricting it to particular asset classes.
 
-**Can I combine this with other indicators?**  
-Absolutely. I run it alongside a simple EMA trend filter and a momentum oscillator. The zones give you levels; the trend filter tells you which side to trade.
+**Can it be combined with other indicators?** Nothing in the script prevents it. Since it lacks a trend filter, pairing it with one is a reasonable approach.
 
 **Final Verdict**
 
-Volume_Weighted_Order_Block_Zones earns a solid ⭐⭐⭐⭐ (4/5). It does one thing — volume-filtered order blocks — and does it well. It's not flashy, it won't make you a millionaire, and it won't replace your discretionary judgement. But if you already trade order blocks and want to cut through the noise with volume confirmation, this is a reliable upgrade. The lack of alerts and the occasional lag in freshness detection keep it from the top tier, but for the price (or free if you can find it in the community scripts), it's worth your chart space.
+Volume-Weighted Order Block Zones does one thing: it plots order blocks that pass a volume and displacement filter. The volume weighting is the genuine differentiator versus the free order block scripts that draw a rectangle around every pivot. It is not a complete system, and the documentation does not claim otherwise. For traders who already work with order blocks and want fewer, higher-conviction zones on the chart, it is a reasonable addition.
 
-If you're looking for a one-click trading solution, keep scrolling. If you want a tool that respects your intelligence and gives you clean, actionable levels, this deserves a trial run.
-
-## Frequently Asked Questions
-
-### Is Volume_Weighted_Order_Block_Zones worth it?
-
-Based on testing across multiple timeframes, Volume_Weighted_Order_Block_Zones delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

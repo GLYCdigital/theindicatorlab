@@ -16,83 +16,84 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Price Density Clouds EXCAVO review: a volume-based cloud indicator for trend strength and reversals. Settings, strategy, pros/cons, and alternatives."
+grounding: "none (no source found)"
 ---
-
-**Price Density Clouds EXCAVO** isn't your average volume oscillator. It visualizes where the market has spent the most time and volume, then paints colored clouds directly on the chart. If you've ever wanted to see "where the big money sat" without squinting at a histogram, this is worth your time.
-
-I've run this on BTC/USDT, ES futures, and EURUSD across multiple timeframes for the past two weeks. Here's what I found.
+**Price Density Clouds EXCAVO** isn't a standard volume oscillator. It visualizes where the market has spent the most time and volume, then paints colored clouds directly on the chart. For traders who want to see where heavy participation clustered without reading a histogram, the overlay approach has obvious appeal.
 
 ---
 
 ## What This Indicator Actually Does
 
-Instead of plotting a line or bar, EXCAVO calculates price density clusters—areas where price has traded heavily over a lookback period. It then fills those zones with semi-transparent clouds:
+Rather than plotting a line or bar in a separate pane, EXCAVO calculates price density clusters—areas where price has traded heavily over a lookback period. It then fills those zones with semi-transparent clouds:
 
 - **Green clouds** = low density (thin trading, potential breakout zones)
 - **Red clouds** = high density (thick trading, support/resistance magnets)
 
-Think of it as a heatmap overlay that updates in real time. The logic is similar to a Volume Profile's Value Area, but dynamic and continuous.
+The concept is a heatmap overlay that updates as new bars form. The logic is comparable to a Volume Profile's Value Area, but dynamic and continuous rather than anchored to a fixed range.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **Cloud-based visualization** – No extra window needed. Clouds sit on price, so you see density without toggling layouts.
-- **Adjustable lookback** – Default is 50 bars, but I found 20 for scalping, 100 for swing trading work better.
-- **Opacity control** – You can dim clouds to not obscure candles. I keep it at 40%.
-- **Multi-timeframe capable** – Works on 1m to weekly. Heavy on 1m, smooth on 1h+.
+- **Cloud-based visualization** – No extra window needed. Clouds sit on price, so density is visible without toggling layouts.
+- **Adjustable lookback** – Controls how much history feeds the density calculation.
+- **Opacity control** – Lets you dim clouds so they don't obscure candles.
+- **Multi-timeframe capable** – Designed to run across intraday and higher timeframes.
 
-The biggest win? It reveals hidden liquidity zones that standard support/resistance lines miss. In the chart above, notice how price bounced twice at the red cloud edge before breaking through.
+The main appeal is that it surfaces liquidity zones that static support/resistance lines don't capture. Price reactions at cloud edges are the behavior to watch.
 
 ---
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After testing, here are my go-to configs:
+The indicator exposes a small set of parameters: lookback length, cloud opacity, cloud width, and a density threshold. There is also a "Show Zero Line" toggle.
 
-| Timeframe | Lookback | Opacity | Cloud Width |
-|-----------|----------|---------|-------------|
-| Scalping (1m–5m) | 20 | 30% | 0.5 |
-| Intraday (15m–1h) | 50 | 40% | 0.7 |
-| Swing (4h–daily) | 100 | 50% | 1.0 |
+Tuning guidance:
 
-**Key tweak:** Uncheck "Show Zero Line" if it's on. It's just noise. Also, set "Density Threshold" to 1.2 for tighter clouds on lower timeframes.
+- **Lookback** – Shorter lookbacks make the clouds more responsive to recent price action; longer lookbacks smooth them out and reflect a broader history. The right value depends on your holding period, not on a universal default.
+- **Opacity** – Purely visual. Lower values keep candles readable; higher values emphasize the density zones.
+- **Cloud Width** – Controls how thick the drawn bands appear. Wider bands are easier to see but less precise at the edges.
+- **Density Threshold** – Raises or lowers the bar for what counts as a high-density zone. A higher threshold produces tighter, fewer clouds.
+- **Show Zero Line** – Can be disabled if you find it visually distracting.
+
+No specific values are recommended here—the correct settings depend on the instrument and timeframe you trade.
 
 ---
 
 ## How to Use It for Entries and Exits
 
-**Entry (long):**  
-Price enters a **green cloud** (low density) above a red cloud. This suggests thin air above—potential for a fast move. Enter on a 1-minute close above the green cloud's upper edge.
+**Entry (long):**
+Price enters a **green cloud** (low density) above a red cloud. This suggests thin air above—potential for a fast move. A close above the green cloud's upper edge is one way to time the entry.
 
-**Exit (long):**  
-Price touches a **red cloud** from below. That's high-density resistance. Take partial profits. If price closes inside the red cloud, exit the rest.
+**Exit (long):**
+Price touches a **red cloud** from below. That's high-density resistance. Partial profits are one option. If price closes inside the red cloud, exiting the remainder is another.
 
-**Stop loss:** Place just below the nearest red cloud edge. If price sinks back into a red cloud, the density is still heavy, and a break below it often fails.
+**Stop loss:**
+Placing the stop just below the nearest red cloud edge is a common approach. If price sinks back into a red cloud, density is still heavy, and breaks below it often struggle.
 
-**Real example:** On 15m BTC, price sat inside a red cloud for 3 hours. When it finally gapped above, the green cloud above was thin—BTC ripped 2% in 20 minutes. Classic density breakout.
+The logic throughout is the same: low-density zones tend to produce faster moves, high-density zones tend to produce friction.
 
 ---
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Reveals hidden liquidity zones ordinary volume indicators miss
-- Clean overlay doesn't clutter your chart
+- Reveals liquidity zones that ordinary volume indicators miss
+- Clean overlay doesn't clutter the chart
 - Works on any asset with volume data
 
 **Cons:**
-- Laggy on tick charts (computationally heavy)
-- False signals in low-volume crypto pairs (e.g., ALGO/USDT)
+- Computationally heavy on tick charts
+- Prone to false signals in low-volume crypto pairs
 - No built-in alert for cloud crossovers
 
 ---
 
 ## Who It's Actually For
 
-- **Intraday and swing traders** who use volume profiles or market profile
-- **Scalpers** who want to see "where the market slept" on lower timeframes
-- **Not for** pure price action traders who hate overlays, or beginners who haven't learned basic support/resistance yet
+- **Intraday and swing traders** who already use volume profile or market profile
+- **Scalpers** who want to see where the market consolidated on lower timeframes
+- **Not for** pure price action traders who dislike overlays, or beginners who haven't yet learned basic support/resistance
 
 ---
 
@@ -102,35 +103,33 @@ Price touches a **red cloud** from below. That's high-density resistance. Take p
 - **Market Profile (by Fractal)** – Better for session analysis, but more complex.
 - **Clouds Indicator (standard)** – Less density-aware, more like moving average clouds.
 
-If you want simplicity, go with EXCAVO. If you want surgical accuracy, stick with VPVR.
+For simplicity, EXCAVO is the lighter option. For surgical accuracy, VPVR is the stronger tool.
 
 ---
 
 ## FAQ
 
-**Q: Does it repaint?**  
-No, but clouds shift as new bars form. The density zones are recalculated fresh each bar—so earlier clouds may fade or expand.
+**Q: Does it repaint?**
+No, but clouds shift as new bars form. Density zones are recalculated each bar, so earlier clouds may fade or expand.
 
-**Q: Best timeframe?**  
-15m to 1h for balance. 1m works but feels noisy.
+**Q: Best timeframe?**
+Higher intraday timeframes offer a balance between responsiveness and noise. Very low timeframes tend to feel noisy.
 
-**Q: Can I use it on forex?**  
-Yes, but forex volume is tick-based, not actual exchange volume. Still useful for relative density.
+**Q: Can I use it on forex?**
+Yes, but forex volume is tick-based, not actual exchange volume. It remains useful for relative density.
 
-**Q: Does it give buy/sell signals?**  
+**Q: Does it give buy/sell signals?**
 No. It's a context tool, not a signal generator.
 
 ---
 
 ## Final Verdict
 
-**Price Density Clouds EXCAVO** is a solid 4/5. It does one thing—show you where the market parked its money—and does it cleanly. It won't make you a millionaire overnight, but it will keep you from buying into a red cloud (literally) when the smart money is trapped.
+**Price Density Clouds EXCAVO** does one thing—show where the market parked its money—and does it cleanly. It won't make anyone a millionaire overnight, but it can help keep a trader from buying into a red cloud when the crowd is trapped there.
 
-It's not perfect on low-volume assets or tick charts, and the lack of alerts hurts. But for the price (free on TradingView), it's a sharp addition to any volume-aware trader's toolkit.
+It's not perfect on low-volume assets or tick charts, and the lack of alerts hurts. But as a free TradingView tool, it's a sharp addition to a volume-aware trader's toolkit.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,79 +16,82 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Session_Volume_Profile review: tested settings, entry/exit logic, pros/cons. Is this volume-based trend indicator worth adding to your arsenal?"
+grounding: "none (no source found)"
 ---
-Let me be upfront: I've tested dozens of volume profile tools on TradingView, and most are either over-engineered messes or thinly veiled repaints. Session_Volume_Profile sits somewhere in the middle — and that's actually a compliment. It does one thing well: visualizing where volume clustered during specific trading sessions so you can map out the battlefield before placing a trade. But is it worth your watchlist space? Let's dig in.
+# Session_Volume_Profile Review
+
+Session volume profile tools on TradingView tend to fall into two camps: over-engineered suites that bury the core function under layers of options, or lightweight scripts that quietly repaint. Session_Volume_Profile sits closer to the middle, and that positioning is part of its appeal. It does one thing — visualizing where volume clustered during specific trading sessions — and it does that thing without much decoration.
 
 ## What It Actually Does
 
-The indicator plots a horizontal volume histogram for each trading session you define — London, New York, Asia, or custom hours. Each session's volume profile shows you exactly where the big money transacted, revealing value areas, high-volume nodes (HVN), and low-volume nodes (LVN). The core logic is straightforward: price tends to get rejected at HVNs and accelerate through LVNs. What sets this apart from the built-in TradingView Volume Profile is session segmentation — instead of one continuous profile, you get clean, isolated snapshots per session, which is critical for intraday traders who care about session-specific behavior.
+The indicator plots a horizontal volume histogram for each trading session you define: London, New York, Asia, or custom hours. Each session's profile shows where volume transacted, revealing value areas, high-volume nodes (HVN), and low-volume nodes (LVN). The working premise behind this style of tool is that price tends to get rejected at HVNs and accelerate through LVNs. What separates this from the built-in TradingView Volume Profile is session segmentation: instead of one continuous profile, you get isolated snapshots per session. For intraday traders who care about session-specific behavior, that distinction matters.
 
 ## Key Features That Matter
 
-The session customization is the standout. You can set any time window, not just the standard three. I tested this on the ES futures during the 2 AM–9 AM ET rollover window, and it handled the pre-market chaos cleanly. The histogram auto-scales to the right of price, so it doesn't clutter your chart. You also get the option to toggle value area (default 70%) and standard deviation bands — useful for mean-reversion setups.
+Session customization is the standout capability. Any time window can be defined, not just the standard three. The histogram auto-scales to the right of price, so it doesn't crowd the chart. There's also a toggle for value area and standard deviation bands, which is useful for mean-reversion setups.
 
-Another underrated feature: the divergence between session profiles. When London's value area sits entirely above New York's, you're seeing institutional flow direction. That's a trend signal you won't get from standard indicators.
+A less obvious feature is the divergence between session profiles. When one session's value area sits entirely above another's, that reflects a directional shift in where volume concentrated — information a standard indicator won't surface.
 
-## Best Settings I've Tested
+## Settings and How to Tune Them
 
-Start with the defaults, then tweak these:
+The defaults are a reasonable starting point. From there:
 
-- **Session 1:** 00:00–08:00 (Asia) — use a lighter histogram opacity (40%) since it's noise-heavy
-- **Session 2:** 08:00–16:00 (London/New York overlap) — full opacity, this is your money session
-- **Value Area:** 70% is fine, but drop to 60% on high-volatility days (Fed announcements, CPI) to tighten your trading range
-- **Bins (row size):** Set to 0.05% of price, not auto. Auto bins on BTC or SPX produce garbage granularity
+- **Session windows:** Define each session by its hours. Asia, the London/New York overlap, and other custom windows can each be set independently.
+- **Value Area:** A percentage threshold determines how much of the session's volume the value area encloses. The default is a common starting point; traders focused on tighter ranges sometimes lower it during high-volatility periods.
+- **Bins (row size):** Can be set manually rather than left on auto. Auto binning tends to produce coarse granularity on high-priced instruments, so a manual row size is often preferable.
+- **Session gap:** Enable this so profiles from consecutive sessions don't overlap visually. It keeps the chart readable when price gaps across sessions.
+- **Histogram opacity:** Adjustable per session, useful if you want quieter sessions to recede visually.
 
-One setting most traders miss: the "session gap" option. Enable it so profiles from consecutive sessions don't overlap visually — it keeps your chart readable when price gaps across sessions.
+No single configuration is universally best — the right values depend on the instrument, the timeframe, and what you're trying to isolate.
 
 ## How to Actually Trade It
 
-The setup I found most reliable is a session-breakout filter. Here's the logic:
+A common approach is to use the profile as a session-breakout filter:
 
-1. **Wait for the first session's profile to form** (Asia, typically). Identify the value area high (VAH) and low (VAL).
-2. **At London open, only take long setups above Asia's VAH** and shorts below Asia's VAL. If price is inside the range, stand down — you're in chop.
-3. **Add a trend confirmation:** If London's developing profile shows an expanding value area moving higher, that's your institutional footprint. Enter on pullbacks to the developing value area edge, not breakouts.
+1. **Wait for the first session's profile to form.** Identify the value area high (VAH) and low (VAL).
+2. **At the next session's open, only take long setups above the prior session's VAH** and shorts below its VAL. If price is inside the range, the read is chop.
+3. **Add trend confirmation:** A developing profile with an expanding value area moving in one direction suggests where volume is concentrating. Entries on pullbacks to the developing value area edge are one way to use that information, rather than chasing breakouts.
 
-For exits, I used the HVN as a target — price tends to stall there. In the chart above, you can see how price reacted sharply at the prior session's POC (point of control) — that's your take-profit zone.
+For exits, HVNs are a natural reference — price often stalls there. The prior session's POC (point of control) is another level worth watching as a potential take-profit zone.
 
 ## Pros & Cons
 
 **Pros:**
 - Clean, uncluttered visualization compared to multi-timeframe volume profile tools
-- True session segmentation — no other free indicator does this as well
-- No repainting on historical bars (I verified this by reloading the chart multiple times)
-- Lightweight, doesn't slow down even on 1-minute charts with months of history
+- True session segmentation
+- Historical profiles are static; the current session updates in real time, which is expected behavior for a developing profile
+- Lightweight enough to run on intraday charts with extended history
 
 **Cons:**
-- No alerts built-in — you'll need to set manual price alerts for VAH/VAL breaks
-- The histogram doesn't show cumulative delta or buy/sell volume breakdown, so it's purely location-based, not flow-based
-- On crypto 24/7 markets, session definition is arbitrary — it works better on traditional exchange hours
-- The default color scheme (purple/blue) is ugly; you'll want to tweak it
+- No built-in alerts — VAH/VAL breaks require manual price alerts
+- No cumulative delta or buy/sell volume breakdown; it's location-based, not flow-based
+- On 24/7 crypto markets, session definition is arbitrary — it works better on traditional exchange hours
+- The default color scheme leaves room for improvement
 
 ## Who This Is For
 
-This is a day trader's tool. If you trade the London or New York sessions on futures, forex, or high-liquidity stocks, it gives you a structural edge. Swing traders will find it less useful — daily profiles work fine, but you're better off with a standard volume profile for multi-day analysis. If you're a scalper, skip it; the histogram is too slow to update for sub-1-minute decisions.
+This is a day trader's tool. If you trade the London or New York sessions on futures, forex, or high-liquidity stocks, it provides structural context for session-based setups. Swing traders will find it less useful — daily profiles work, but a standard volume profile is generally better suited to multi-day analysis. Scalpers working on very short timeframes may find the histogram too slow to update for their decisions.
 
 ## Alternatives Worth Considering
 
 - **Built-in TradingView Volume Profile:** Better for long-term levels, but no session isolation
-- **Volume Profile Fixed Range (by LonesomeTheBlue):** Free and more customizable, but steeper learning curve
-- **Session Volume Profile by LuxAlgo (paid):** Adds delta and cumulative volume — if you need flow analysis, that's the upgrade
+- **Volume Profile Fixed Range (by LonesomeTheBlue):** Free and more customizable, but a steeper learning curve
+- **Session Volume Profile by LuxAlgo (paid):** Adds delta and cumulative volume — the upgrade path if you need flow analysis
 
 ## FAQ
 
 **Does it repaint?**
-No, historical profiles are static. The current session's profile updates in real-time, but that's expected behavior.
+Historical profiles are static. The current session's profile updates in real time, which is expected behavior rather than repainting.
 
 **Can I use it on crypto?**
-Technically yes, but sessions don't align with institutional flow like they do on CME-traded assets. I'd set custom sessions around major exchange volume spikes instead.
+Technically yes, but sessions don't align with institutional flow the way they do on CME-traded assets. Setting custom sessions around major exchange volume spikes is one workaround.
 
 **Does it work on intraday timeframes?**
-Yes, it's designed for 1-minute to 1-hour charts. On daily charts, the session concept loses meaning.
+Yes — it's designed for intraday charts. On daily charts, the session concept loses meaning.
 
 ## Final Verdict
 
-Session_Volume_Profile earns 4 stars because it fills a specific gap — session-aware volume analysis — without the bloat of premium alternatives. It won't make you a better trader overnight, and it lacks the flow data that serious volume traders crave. But if you trade defined sessions and want to see where the big players actually positioned themselves, this is a solid, reliable addition to your toolkit. It's not revolutionary, but it's honest work — and in a sea of overhyped indicators, that counts for something.
----
+Session_Volume_Profile fills a specific gap — session-aware volume analysis — without the bloat of premium alternatives. It won't transform your trading, and it lacks the flow data that serious volume traders want. But if you trade defined sessions and want to see where volume concentrated, it's a solid, reliable addition to the toolkit. Not revolutionary, but honest work.
 
 ## Go Deeper with The Indicator Lab
 

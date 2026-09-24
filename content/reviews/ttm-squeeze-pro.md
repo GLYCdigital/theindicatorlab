@@ -17,120 +17,128 @@ categories:
   - Technical Analysis
 rating: 5
 description: "Honest TTM Squeeze Pro review: settings, entry rules, and backtest results. Find out if this squeeze indicator is worth your time."
+sources: ["https://www.tradingview.com/script/fM2r5hCG-TTM-Squeeze-Pro-Multi-Timeframe-Squeeze-Divergence-Alerts/"]
 ---
-
-Since you're reading this, you've probably already been burned by a few "squeeze" indicators that just flash colors and hope for the best. Let me cut through the noise. I’ve run TTM Squeeze Pro through real backtests (TSLA, AAPL, SPY), traded it live for two weeks, and here’s what actually works—and what doesn’t.
+If you're reading this, you've probably already been burned by a few "squeeze" indicators that flash colors and hope for the best. Here's an honest breakdown of what TTM Squeeze Pro actually is, based on the developer's own documentation — and where the marketing outruns the substance.
 
 ## What This Indicator Actually Does
 
-TTM Squeeze Pro is a momentum breakout tool built on John Carter’s original TTM Squeeze concept. It measures volatility contraction using Bollinger Bands (20,2) inside Keltner Channels (20,1.5). When volatility squeezes tight, it signals an impending expansion. The "Pro" version adds:
+TTM Squeeze Pro is a momentum breakout tool built on John Carter's original TTM Squeeze concept. Per the developer, it detects volatility contraction when Bollinger Bands sit inside Keltner Channels — squeeze ON — and flags the breakout when they expand — squeeze FIRED. The "Pro" version adds:
 
-- **Histogram with momentum color coding** — Green/red bars track the squeeze’s direction and strength.
-- **Squeeze countdown** — Shows how many bars the squeeze has been active. The longer the squeeze, the more explosive the breakout.
-- **Auto-dot markers** — Dots appear above/below price when the squeeze fires, with optional confirmation from RSI or volume.
-- **Customizable alert system** — Get notified when the squeeze triggers, fires, or reverses direction.
+- **Momentum histogram** — A custom oscillator described as a Linear Regression + RSI hybrid, with rising (lime) and falling (red) states plus a zero cross.
+- **Multi-timeframe squeeze state** — The higher timeframe's squeeze status is overlaid on your chart (the developer's example: 4h squeeze status on a 15m chart).
+- **Four divergence types** — Regular Bullish/Bearish and Hidden Bullish/Bearish between momentum and price.
+- **Squeeze dots** — Red for squeeze active, yellow for firing, green for fired, gray for no squeeze.
+- **Seven alert conditions** — Squeeze Fire (Bull/Bear), Zero Cross, Divergence (Bull/Bear/Hidden), and MTF Alignment.
 
-The chart above shows a classic setup: the histogram flips green, the dots appear below the bar, and price rips higher. No lagging crossovers—just a clean signal.
+Note what is *not* in that list: there is no duration meter, no volume-weighted confirmation filter, and no RSI confirmation filter described in the source material. Those appear in a lot of third-party write-ups about squeeze tools generally, but they are not features this script claims.
 
 ## Key Features That Set It Apart
 
-Most squeeze indicators are one-trick ponies. This one gives you:
+The developer's pitch is that free squeeze indicators are single-timeframe, have no divergence detection, and no alerts. This script's differentiators, per the source, are:
 
-1. **Squeeze duration meter** — A small number next to the squeeze label. I’ve seen squeezes last 12–15 bars before breaking. The longer it holds, the more volatility to expect.
-2. **Momentum histogram divergence** — When price makes a lower low but the histogram makes a higher low, that’s a hidden bullish divergence. I caught a 3% move on TSLA with this.
-3. **Multi-timeframe sync** — You can set a higher timeframe filter (e.g., 1H) to confirm the 15-min squeeze direction. This halved my false signals.
-4. **Volume-weighted squeeze confirmation** — Optional. I keep this ON for stocks under $50 to avoid low-volume fakes.
+1. **Multi-timeframe overlay** — You can see whether a higher timeframe is also squeezing while you trade a lower one.
+2. **Momentum direction before the fire** — The histogram is intended to signal which direction is building before the squeeze releases.
+3. **Divergence detection** — Four types, covering both reversals (regular) and continuations (hidden).
+4. **Phone alerts** — Seven conditions, pushed to mobile.
 
-## Best Settings (Specific Recommendations)
+The "zero repaint" claim is the developer's: all signals are stated to be confirmed on bar close. That is a design assertion in the documentation, not an independently verified property.
 
-I’ve tested these across 50+ backtests. Start with these:
+## Settings and How to Tune Them
 
-| Setting | Default | My Recommendation | Why |
-|---------|---------|-------------------|-----|
-| Bollinger Bands Length | 20 | 20 | Standard. Don’t touch. |
-| Keltner Channels Factor | 1.5 | 1.5 | Fine for most markets. |
-| Squeeze Threshold | 0.0 | 0.0 | Keep default. |
-| Momentum Length | 20 | 12 | Faster reaction on 5-min charts. |
-| Confirmation Filter | RSI (14) | RSI (14) with 60/40 threshold | Avoids chop. |
-| Squeeze Min Bars | 3 | 5 | Reduces whipsaws by 20%. |
+The source material does not publish a parameter table. It does not state Bollinger Band lengths, Keltner Channel factors, momentum lengths, or threshold values. Any specific numbers you see quoted elsewhere — including "20,2," "20,1.5," or "momentum length 12" — are not from this script's documentation and should be treated as invented.
 
-For **scalping** (1-min or 5-min): Momentum Length to 8, Squeeze Min Bars to 3. For **swing trading** (daily): Momentum Length to 20, Squeeze Min Bars to 8.
+What the source does say about configuration is conceptual:
+
+- **Squeeze detection** is defined by Bollinger Bands contracting inside Keltner Channels. The relationship between those two bands is the setting that matters; the exact periods are yours to choose.
+- **Momentum length** controls how reactive the histogram is. Shorter lengths react faster; longer lengths smooth.
+- **Divergence detection** is between momentum and price — there is no stated lookback parameter.
+- **MTF overlay** requires you to select a higher timeframe than your chart.
+
+The developer explicitly claims the tool is optimized for 15m–4h and works on all timeframes. Treat "optimized" as a claim, not a tested result.
 
 ## How to Use It for Entries and Exits
 
-### Long Entry (My Go-To)
-1. Wait for the histogram to turn green AND the squeeze dot to appear below price.
-2. Confirm price is above the 20 EMA (simple moving average).
-3. Enter on the next 1-minute candle close above the high of the squeeze bar.
-4. Stop loss: 1 ATR below the squeeze bar’s low.
-5. Target: 2x ATR or the previous swing high, whichever comes first.
+The source lays out a six-step workflow rather than a rule set:
 
-### Short Entry
-Same logic reversed. Histogram turns red, dot above price, price below 20 EMA.
+1. Install on any chart (stocks, crypto, forex, futures).
+2. Read the squeeze dots to see when energy is coiling (red) or firing (green).
+3. Read the momentum histogram to see which direction is building.
+4. Check the MTF overlay to see whether higher timeframes are also squeezing.
+5. Set alerts for squeeze fires or divergence signals.
+6. Act when the alert fires.
 
-### Exit Rules
-- If histogram loses momentum (bar shrinks) for two consecutive bars, exit half.
-- If price touches the 20 EMA, exit all.
+That is the entire documented method. There is no entry trigger, stop placement, target, or exit rule specified in the source material. Any ATR stops, EMA filters, or "exit half on two bars of shrinking momentum" rules you see attached to this indicator in other reviews are not from the developer.
 
-## Performance Data (Backtest)
+## Performance and Honesty Check
 
-I ran a 2-year backtest on TSLA (2024–2026) using 15-minute bars, 2% risk per trade, no compounding.
+The source material contains **no backtest, no win rate, no profit factor, no drawdown, no CAGR, and no trade count**. It is a feature and workflow description only.
 
-| Ticker | Trades | CAGR | Max DD | Win Rate | Profit Factor |
-|--------|--------|------|--------|----------|---------------|
-| TSLA   | 67     | +15.9% | 40% | 29.9% | 1.34 |
+That matters, because squeeze systems in general are breakout systems, and breakout systems in general tend to have low win rates with large winners — but that is a general property of the category, not a measured result for this script. If a review quotes you a win rate or a two-year backtest on a specific ticker for this indicator, that number did not come from the developer and should be treated as fabricated.
 
-Notice the **29.9% win rate** — that’s typical for breakout systems. The high profit factor (1.34) means winners are big enough to offset the losers. If you can’t stomach a 40% drawdown on TSLA, size down.
+The one concrete performance-adjacent claim in the source is "Zero Repaint — all signals confirmed on bar close." That is the developer's assertion about signal behavior, not a performance statistic.
 
 ## Honest Pros and Cons
 
-**Pros:**
-- Squeeze duration meter is genuinely useful — I’ve never seen this on free squeeze indicators.
-- The alert system is robust. I use it on 8 different tickers simultaneously.
-- Works across timeframes (1-min to weekly).
+**Pros (per the source):**
+- Combines squeeze state, momentum, multi-timeframe context, and divergence in one pane — more than the free single-timeframe alternatives.
+- Seven alert conditions, including MTF alignment, which is a genuinely useful workflow feature.
+- Explicitly documented as non-repainting by design.
+- Broad market coverage claimed: stocks, crypto, forex, futures, indices.
 
 **Cons:**
-- Win rate is low (around 30%) — psychological challenge for new traders.
-- False signals in sideways markets (e.g., SPY during low-VIX periods). Use the RSI filter.
-- No built-in trailing stop. You need to code that yourself or use a separate indicator.
+- No published parameters, no published methodology for the momentum oscillator beyond "Linear Regression + RSI hybrid," and no published test results.
+- The divergence types are named but not defined in the source — you're trusting the implementation.
+- "Optimized for 15m–4h" is asserted without evidence.
+- Like all squeeze/breakout tools, it will produce signals in ranging markets; the source does not claim any filter for this.
+- Closed-source authorship means you cannot verify the momentum or divergence logic.
 
 ## Who Is It Actually For?
 
-- **Momentum traders** who love volatility breakouts.
-- **Swing traders** using daily charts for multi-day moves.
-- **Algo traders** who want a clean signal to automate (the histogram and dot values are exported via TradingView’s `plot`).
+- **Momentum and breakout traders** who want squeeze state, direction, and multi-timeframe context in one pane.
+- **Traders who rely on mobile alerts** — the seven conditions are the strongest concrete feature here.
+- **Traders on intraday timeframes** in the 15m–4h band the developer targets.
 
-Not for: Position traders who hold for months, or scalp traders who need >60% win rate.
+Not for: anyone who needs documented, tested performance before committing capital. The source simply doesn't provide it.
 
 ## Better Alternatives?
 
-- **TTM Squeeze (free version)** — Same core logic, no duration meter, no alerts. If you’re on a budget, start there.
-- **VWAP Squeeze** — Combines VWAP bands with squeeze logic. Better for intraday.
-- **Momentum Reversal Pro** — If you prefer mean reversion over breakouts.
-
-If you already own the free TTM Squeeze, this Pro version is worth the upgrade for the alerts and duration meter alone.
+The source material does not name competing scripts, so any "better alternative" list would be editorial opinion rather than sourced fact. The reasonable comparison point is the free TTM Squeeze, which covers the core squeeze logic without the MTF overlay, divergence detection, or alert set. Whether that upgrade is worth it depends entirely on how much you value the added features — the source gives you no performance basis to decide.
 
 ## FAQ
 
 **Q: Does it repaint?**
-A: No. The squeeze dot and histogram are fixed on bar close. No repainting.
+A: The developer states all signals are confirmed on bar close, i.e., no repainting. This is a design claim, not an independently verified one.
 
-**Q: Can I use it for crypto?**
-A: Yes. Works on BTC, ETH, etc. Set Squeeze Min Bars to 4 (crypto squeezes are shorter).
+**Q: What markets does it work on?**
+A: The source lists stocks, crypto, forex, futures, and indices.
 
 **Q: What timeframe is best?**
-A: 15-min for intraday, daily for swing. Avoid 1-min unless you’re scalping with Momentum Length 8.
+A: The source says all timeframes, "optimized for 15m–4h." No specific timeframe is documented as superior.
 
-**Q: Is the backtest data accurate?**
-A: The 15.9% CAGR on TSLA used 2% risk per trade. Your results will vary based on slippage and execution.
+**Q: Are there recommended settings?**
+A: No. The source publishes no parameter values. Ignore any specific numbers you see quoted elsewhere.
+
+**Q: Is there backtest data?**
+A: No. None is provided in the source material.
 
 ## Final Verdict
 
-TTM Squeeze Pro is a legit upgrade over the free version. The duration meter, multi-timeframe sync, and volume filter turn a basic squeeze into a systematic breakout strategy. It’s not for everyone—the low win rate demands discipline—but if you can handle 30% wins with 1.3+ profit factor, this is a 5-star tool.
+TTM Squeeze Pro is a feature-rich squeeze tool: multi-timeframe state, a momentum histogram, four divergence types, and seven alert conditions, all in one pane, with a stated no-repaint design. That's a real package, and the alert set in particular is more than most free squeeze scripts offer.
 
-Rating: ⭐⭐⭐⭐⭐ (5/5) — Best squeeze indicator on TradingView for momentum traders.
+What it is not is a validated system. There are no documented parameters, no defined entry/exit rules, and no test results in the source material. Anyone presenting you with win rates, drawdowns, or ticker-specific backtests for this script is inventing them.
 
----
+Buy it if you want the feature set and are prepared to build and test your own rules around it. Don't buy it expecting the source to tell you how to trade it — it doesn't.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **TTM Squeeze** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

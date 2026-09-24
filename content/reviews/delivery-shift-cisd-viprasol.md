@@ -16,69 +16,58 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A volume-weighted momentum shift indicator for intraday and swing trading. Offers clear shift detection but needs tweaking for range-bound markets."
+grounding: "none (no source found)"
 ---
+# Indicator Review
 
-Here’s the honest breakdown after running this thing on 15+ pairs across multiple timeframes.
+**What This Indicator Actually Does**
+It's a custom momentum oscillator that plots two lines—a fast and a slow version of a "delivery shift" calculation. The core idea is to detect when buying or selling pressure *delivery* changes direction (the "shift"). The VIPRASOL suffix suggests it's a personal tweak of the original Cisd concept, likely adding a volatility filter.
 
-**What This Indicator Actually Does**  
-It’s a custom momentum oscillator that plots two lines—a fast and slow version of a “delivery shift” calculation. The core idea: detect when buying or selling pressure *delivery* changes direction (the “shift”). It’s not a repaint, which I verified by refreshing the chart. The VIPRASOL suffix suggests it’s a personal tweak of the original Cisd concept—likely adding a volatility filter.
+**Key Features**
+- **Dual-line crossover logic** – The fast line crossing the slow line flags a shift in momentum. Conceptually similar to a MACD, but with a volume-weighted twist.
+- **Zero-line reference** – When both lines are above zero, the bias is bullish; below zero, bearish.
+- **Customizable smoothing** – Lookback periods and a smoothing factor can be adjusted.
 
-**Key Features That Set It Apart**  
-- **Dual-line crossover logic** – The fast line crossing the slow line flags a shift in momentum. It’s similar to a MACD but with a volume-weighted twist.  
-- **Zero-line reference** – When both lines are above zero, it’s a bullish bias; below zero, bearish.  
-- **Customizable smoothing** – You can adjust the lookback periods and smoothing factor. Defaults are 5 and 13, which work fine on 15m–1h.  
+**Settings and How to Tune Them**
+The parameters center on the fast period, slow period, and smoothing factor. The general tuning logic: shorter periods make the oscillator more responsive, longer periods make it smoother but slower to react. The smoothing factor governs how much noise is filtered from the raw calculation—raising it produces a cleaner line at the cost of responsiveness. The zero line can be toggled on or off as a visual reference.
 
-**Best Settings (What I Actually Used)**  
-After testing, I settled on:  
-- Fast period: 7  
-- Slow period: 14  
-- Smoothing: 3 (default is 2; 3 reduces noise without lag)  
-- Show zero line: Enabled  
+**How to Use It for Entries and Exits**
+- **Long entry**: Fast line crosses above slow line, both above zero, and price is above a trend filter such as a moving average.
+- **Short entry**: Fast line crosses below slow line, both below zero, and price is below the trend filter.
+- **Exit**: When the lines converge or cross back. The zero line can act as a trailing reference—if momentum drops below zero, consider exiting.
 
-For scalp trading on 5m, drop fast to 5 and slow to 10. For swing on 4h, bump to 10 and 21.
+**Pros**
+- Volume-weighted, so it reacts to participation shifts rather than price noise alone.
+- Works better in trending conditions than in chop.
 
-**How to Use It for Entries and Exits**  
-- **Long entry**: Fast line crosses above slow line, both above zero, and price is above a key moving average (I used the 20 EMA).  
-- **Short entry**: Fast line crosses below slow line, both below zero, and price is below the 20 EMA.  
-- **Exit**: When the lines converge or cross back. The zero line acts as a trailing stop—if momentum drops below zero, exit.
+**Cons**
+- **Whiplash in ranges** – In choppy conditions it produces false crossovers during consolidation.
+- **Lag on higher timeframes** – On longer timeframes it can react slower than a standard RSI or MACD.
+- **No built-in alerts for crossovers** – These have to be configured manually.
 
-**Honest Pros and Cons**  
+**Who It's For**
+Discretionary traders working volume-heavy assets who already use a trend filter and understand volume dynamics. Not suited to traders who need clean signals in sideways markets.
 
-**Pros:**  
-- No repaint – reliable for backtesting.  
-- Volume-weighted – catches institutional shifts, not just price noise.  
-- Works well in trending markets (crypto, indices).  
+**Alternatives Worth Comparing**
+- If you want less lag: a **Volume Weighted MACD**.
+- If you want range-filtered signals: a **Supertrend + RSI** combination.
+- If you want the same concept in a less tweaked form: the original **Cisd Shift**.
 
-**Cons:**  
-- **Whiplash in ranges** – In choppy conditions, it gives false signals. The chart above shows two bad crossovers during consolidation on EURUSD.  
-- **Lag on higher timeframes** – On 1h+, it reacts slower than a standard RSI or MACD.  
-- **No alerts for crossovers** – You have to set them manually.  
+**FAQ**
 
-**Who It’s Actually For**  
-Day traders and swing traders who trade volume-heavy assets like BTC, ES, or FX majors. Not for scalpers on 1m charts or traders who hate false signals in sideways markets.
+*Does it repaint?*
+The source material does not state this either way; treat repainting as something to verify on your own chart before relying on historical signals.
 
-**Better Alternatives**  
-- If you want less lag: Try **Volume Weighted MACD** (free).  
-- If you want range-filtered signals: **Supertrend + RSI** combo.  
-- If you want the same concept but cleaner: **Cisd Shift** (the original, less tweaked version).
+*Best for crypto?*
+The volume weighting is designed to help spot accumulation/distribution, which is relevant to volume-heavy assets, but no specific market is confirmed by the source.
 
-**FAQ**  
+*Can I use it alone?*
+It is generally better paired with a trend filter to reduce whipsaws.
 
-*Does it repaint?*  
-No. I refreshed the chart multiple times—the last signal stayed fixed.  
-
-*Best for crypto?*  
-Yes, especially BTC and ETH on 15m–1h. The volume weighting helps spot accumulation/distribution.  
-
-*Can I use it alone?*  
-Not really. Pair it with a trend filter like the 50 MA or ADX to avoid whipsaws.  
-
-**Final Verdict**  
-It’s a solid 4-star indicator for trend traders who understand volume dynamics. Not a holy grail, but with the right settings and a trend filter, it can improve entry timing. If you’re in a choppy market, skip it.  
+**Final Verdict**
+A reasonable momentum tool for trend traders who understand volume dynamics. Not a holy grail—used with a trend filter and sensible settings, it can help with entry timing. In choppy conditions, it's best left alone.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

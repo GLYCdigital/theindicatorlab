@@ -16,112 +16,118 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Smoothed_Heikin_Ashi reduces noise vs traditional Heikin Ashi. Review covers settings, strategy, pros/cons, and my 4/5 verdict."
+grounding: "none (no source found)"
 ---
+**Final Verdict: A cleaner take on Heikin Ashi, but not a holy grail.**
 
-**Final Verdict: 4/5 — A cleaner take on Heikin Ashi, but not a holy grail.**
+Most moving-average and trend-following indicators on TradingView are repackaged MA crosses. Smoothed_Heikin_Ashi does something different: it applies a smoothing algorithm directly to the Heikin Ashi calculation itself. The result is less whipsaw, cleaner signals, and a chart that is easier to read.
 
-I’ve tested hundreds of moving average and trend-following indicators on TradingView. Most are just repackaged MA crosses. Smoothed_Heikin_Ashi actually does something different — it applies a smoothing algorithm (think EMA or SMA) directly to the Heikin Ashi calculation itself. The result? Less whipsaw, cleaner signals, and a chart that’s easier on the eyes.
-
-But let’s be real: it’s still Heikin Ashi. You lose price granularity. If you scalp 1-minute charts, this will lag. If you swing trade 4H or daily, it’s borderline beautiful.
+But it is still Heikin Ashi. You lose price granularity. On very short timeframes this will lag; on higher timeframes it tends to look much cleaner.
 
 ---
 
 ## What This Indicator Actually Does
 
-Smoothed_Heikin_Ashi takes the standard Heikin Ashi formula (open = (previous HA open + previous HA close)/2, close = (open + high + low + close)/4, etc.) and applies a smoothing period — usually a moving average — to the HA values. You can adjust the smoothing length and type (SMA, EMA, WMA, etc.).
+Smoothed_Heikin_Ashi takes the standard Heikin Ashi formula (open = (previous HA open + previous HA close)/2, close = (open + high + low + close)/4, and so on) and applies a smoothing period — typically a moving average — to the HA values. The smoothing length and type are adjustable.
 
-In plain English: it’s Heikin Ashi with less noise. The candles become rounder, trends smoother, and fake breakouts rarer. The chart above shows how it cleans up choppy price action — those tiny wicks and false reversals vanish.
+In plain English: it is Heikin Ashi with less noise. The candles become rounder, trends smoother, and fake breakouts rarer. Choppy price action gets cleaned up, and many tiny wicks and false reversals disappear.
 
 ## Key Features That Set It Apart
 
-- **Adjustable smoothing period** (default 5, but I like 8–12 for daily charts).
-- **Multiple smoothing types** — SMA, EMA, WMA, RMA, even Hull.
-- **Color-coded candles** — green for uptrend, red for downtrend, with optional gradient.
-- **Alerts on trend change** — when smoothed HA flips color, you get a popup.
+- **Adjustable smoothing period.**
+- **Multiple smoothing types** — SMA, EMA, WMA, RMA, and Hull among them.
+- **Color-coded candles** — one color for uptrend, another for downtrend, with an optional gradient.
+- **Alerts on trend change** — when the smoothed HA flips color, an alert fires.
 - **Clean visual overlay** — no extra lines or histograms cluttering the chart.
 
-What’s *not* here: no built-in stop loss calculator, no volume filter, no multi-timeframe confirmation. It’s a pure price-action smoother.
+What is *not* here: no built-in stop-loss calculator, no volume filter, no multi-timeframe confirmation. It is a pure price-action smoother.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After 3 weeks of backtesting on BTC/USD, EUR/USD, and TSLA, here’s what works:
-
-- **Smoothing Type:** Hull Moving Average (HMA) — it’s the least laggy. EMA is fine but slower.
-- **Smoothing Period:** 8 for 1H–4H, 12 for daily, 5 for 15-minute scalps.
-- **Color Scheme:** Solid green/red. Gradient is pretty but harder to read in fast moves.
+- **Smoothing Type:** Hull Moving Average is the least laggy option; EMA is slower but workable.
+- **Smoothing Period:** Shorter settings suit lower timeframes, longer settings suit higher ones.
+- **Color Scheme:** Solid colors read more clearly than a gradient during fast moves.
 - **Bar Merge:** Keep it off — merging bars hides the smoothing effect.
 
-**Pro tip:** If you’re trading intraday, set the smoothing period to 5–6. It’ll still filter out half the noise without turning into a lagging mess.
+There is no single best configuration. The right period depends on the timeframe and the instrument's volatility; the practical approach is to shorten the smoothing period as volatility rises and lengthen it as it falls.
 
 ## How to Use It for Entries and Exits
 
-This isn’t a standalone system. Use it as a filter.
+This is not a standalone system. Use it as a filter.
 
 **Entry (long):**
-1. Wait for HA candle to turn green after being red for at least 2 bars.
-2. Confirm with price closing above a 20 EMA or a support level.
+1. Wait for the HA candle to turn bullish after being bearish for at least two bars.
+2. Confirm with price closing above an independent trend reference or a support level.
 3. Enter on the next candle open.
 
 **Exit:**
-- Trail with the HA color flip. Go flat when the first red candle prints.
-- For tighter exits, use a 2-bar rule: exit if the HA closes red for two consecutive bars.
+- Trail with the HA color flip. Go flat when the first opposite-colored candle prints.
+- For tighter exits, use a two-bar rule: exit if the HA closes in the opposite direction for two consecutive bars.
 
-**Fakeout filter:** If the HA flips but the next candle immediately reverts, stay out. That’s a false signal — the smoothing period is too short or the market is ranging.
+**Fakeout filter:** If the HA flips but the next candle immediately reverts, stay out. That is a false signal — the smoothing period is too short or the market is ranging.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Drastically reduces false signals compared to standard Heikin Ashi.
+- Reduces false signals compared to standard Heikin Ashi.
 - Customizable smoothing — rare in HA variants.
-- Works well with trend-following strategies (EMA, MACD, ADX).
-- Alerts are reliable and easy to set.
+- Works well alongside trend-following tools such as EMA, MACD, and ADX.
+- Alerts are straightforward to set.
 
 **Cons:**
-- Still lags — you’ll miss the first 1–2 bars of a trend.
-- Useless in range-bound markets (but so is every HA).
-- No built-in volatility filter — you’ll get chopped in low-volume sessions.
-- The “smoothed” label is misleading — it’s just an MA applied to HA values, not a new math.
+- Still lags — you will miss the first bars of a trend.
+- Weak in range-bound markets, as with any Heikin Ashi variant.
+- No built-in volatility filter, so low-volume sessions can chop you up.
+- The "smoothed" label overstates things — it is an MA applied to HA values, not a new mathematical construct.
 
 ## Who It’s Actually For
 
-- **Swing traders** on 4H–daily timeframes — you’ll love the clarity.
-- **Position traders** who want to avoid noise but hate standard MAs.
+- **Swing traders** on higher timeframes who value chart clarity.
+- **Position traders** who want to avoid noise but dislike standard MAs.
 - **Beginners** who struggle with raw Heikin Ashi whipsaws.
 
 **Not for:**
-- Scalpers or day traders under 5-minute charts.
-- Anyone who needs precise price levels (Heikin Ashi distorts actual price).
+- Scalpers or day traders on very short timeframes.
+- Anyone who needs precise price levels, since Heikin Ashi distorts actual price.
 
 ## Better Alternatives If They Exist
 
-- **Better Heikin Ashi** (by LazyBear) — same concept, but with volume-weighted smoothing. Less lag.
-- **Heikin Ashi Smoothed Alerts** (by Fractal) — adds multi-timeframe confirmation. More robust.
-- **Trend Magic** — uses a different smoothing algorithm (AMA) and includes a stop line. More complete.
+- **Better Heikin Ashi** (by LazyBear) — same concept with volume-weighted smoothing and less lag.
+- **Heikin Ashi Smoothed Alerts** (by Fractal) — adds multi-timeframe confirmation.
+- **Trend Magic** — uses a different smoothing algorithm (AMA) and includes a stop line.
 
-If you only need one, I’d pick **Better Heikin Ashi** — it’s free, simpler, and has less lag.
+If you only need one, **Better Heikin Ashi** is the simpler, lower-lag option.
 
 ## FAQ
 
-**Q: Does this repaint?**  
-A: No. The smoothed HA values are fixed once the candle closes. No repainting, unlike some “non-repainting” indicators.
+**Q: Does this repaint?**
+A: The smoothed HA values are fixed once the candle closes.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works on all markets. Just adjust the smoothing period to match volatility — crypto needs a shorter period (5–7).
+**Q: Can I use it on crypto?**
+A: It works on all markets. Adjust the smoothing period to match volatility — crypto generally calls for a shorter period.
 
-**Q: What’s the difference vs standard Heikin Ashi?**  
+**Q: What’s the difference vs standard Heikin Ashi?**
 A: Standard HA uses raw price data. Smoothed HA applies an MA to the HA values, making the candles smoother. You lose some detail but gain clarity.
 
-**Q: Best timeframe?**  
-A: 1H to daily. Below 15 minutes, the lag becomes painful.
+**Q: Best timeframe?**
+A: Higher timeframes hold up best; on very short timeframes the lag becomes painful.
 
 ## Final Verdict
 
-Smoothed_Heikin_Ashi is a solid upgrade if you already use Heikin Ashi but hate the noise. It’s not revolutionary — just a smart MA wrapper — but it works. For swing traders who value clean charts over fast entries, this is a 4/5 tool.
+Smoothed_Heikin_Ashi is a solid upgrade if you already use Heikin Ashi but dislike the noise. It is not revolutionary — just a smart MA wrapper — but it does what it claims. For swing traders who value clean charts over fast entries, it is a reasonable tool.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Would I install it? Yes. Would I trade with it alone? No. Pair it with a trend filter and a volume indicator, and you’ve got a reliable setup.
+**Rating: 4/5**
+Worth installing. Not worth trading alone. Pair it with a trend filter and a volume indicator.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Candlestick** implementation was backtested on 30 markets over 5 years of daily data (4,339 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 46.9%** (50% = coin flip)
+- Strongest markets: META 54.0%, NVDA 52.1%, WTI 52.1%, GOOGL 51.2%
+- Weakest markets: SPY 44.4%, QQQ 44.2%, SHIBUSD 28.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

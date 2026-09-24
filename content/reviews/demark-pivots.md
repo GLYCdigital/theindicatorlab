@@ -16,97 +16,102 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Demark Pivots review: how to use Tom DeMark’s sequential pivot system for trend reversals, key settings, and honest pros/cons."
+grounding: "none (no source found)"
 ---
+**Demark Pivots Review: Does Tom DeMark's Classic Tool Still Hold Up?**
 
-**Demark Pivots Review: Does Tom DeMark’s Classic Tool Still Work in 2026?**
-
-I’ve been trading with Tom DeMark’s concepts for years, so when I saw this Demark Pivots indicator on TradingView, I had to test it properly. After running it on 50+ charts across crypto, forex, and equities, here’s my honest take.
+Tom DeMark's counting methodology has been part of technical analysis for decades, so a TradingView implementation of it is worth examining on its own terms. This review covers what the indicator is built to do, how its settings are structured, and where its logic tends to hold up or break down.
 
 **What This Indicator Actually Does**
 
-This isn’t your typical pivot point calculator. Demark Pivots implements DeMark’s sequential counting method to identify potential exhaustion points in price trends. It plots four levels: two support (S1, S2) and two resistance (R1, R2) based on a rolling window of price bars. The core logic? When price closes above a certain threshold (usually the prior bar’s high), it’s considered "setup" for a reversal. The indicator then counts consecutive closes in that direction.
+This is not a standard pivot point calculator. Demark Pivots implements DeMark's sequential counting method to flag potential exhaustion points in a price trend. It plots four levels — two support (S1, S2) and two resistance (R1, R2) — derived from a rolling window of price bars. The underlying logic is that when price closes beyond a threshold (typically the prior bar's high), that bar is considered a "setup" for a reversal, and the indicator then counts consecutive closes in that direction.
 
-The key difference from standard pivots: it’s forward-looking. Traditional pivots are static levels based on yesterday’s high/low/close. Demark Pivots adapts to current price action and trend velocity. As the chart above shows, when price hits R1, it’s not just a simple resistance line—it’s a signal that the current move might be losing steam.
+The distinction from traditional pivots is directional intent. Classic pivots are static levels computed from the prior session's high, low, and close. Demark Pivots adapts to current price action and trend velocity, so a level like R1 is not just a line on a chart — it represents a point where the current move may be losing momentum.
 
 **Key Features That Set It Apart**
 
-- **Dynamic counting**: The indicator tracks bars sequentially (1 through 9) to signal when a trend is extended. On the chart, you’ll see numbers (1-9) printed above/below bars. When you hit 9, it’s a potential reversal zone.
-- **Auto-adjusting levels**: Unlike fixed pivots, these shift with volatility. In a trending market, R1 and R2 stretch further. In consolidation, they tighten.
-- **Built-in alert logic**: You can set alerts for when price closes at a 9-count or when it breaks through a pivot level. No need to code Pine Script yourself.
-- **Timeframe flexibility**: Works on 1-minute to monthly charts. But I found it most reliable on 4H and daily.
+- **Dynamic counting**: The indicator tracks bars sequentially (1 through 9) to signal when a trend is extended. The numbers appear above or below bars, and a completed count is treated as a potential reversal zone.
+- **Auto-adjusting levels**: Unlike fixed pivots, these shift with volatility. In a trending market, R1 and R2 stretch further apart; in consolidation, they tighten.
+- **Built-in alert logic**: Alerts can be configured for a completed count or for a break through a pivot level, without writing Pine Script.
+- **Timeframe flexibility**: The indicator is designed to run across intraday through monthly charts.
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-Default settings are fine, but here’s what I tweaked:
+The parameters below are the ones the indicator exposes. Defaults are a reasonable starting point; the tradeoffs described are structural, not prescriptive.
 
-- **Lookback period**: Set to 14 bars. Default 9 was too noisy on lower timeframes (1H and below). 14 filters out false counts.
-- **Pivot sensitivity**: I keep it at "Standard" for daily charts, but switch to "Aggressive" on 4H for faster reversals. Aggressive catches early moves but has more whipsaws.
-- **Show count numbers**: Turn this ON. You need to see the sequential count (1-9) to know when price is exhausted.
-- **Color scheme**: I use green for bullish counts, red for bearish. Default is fine, but I inverted because my eyes prefer green = bullish.
+- **Lookback period**: Controls how many bars feed the counting and pivot calculation. A shorter lookback produces more counts and more noise on lower timeframes; a longer one filters counts but delays signals.
+- **Pivot sensitivity**: Selects how readily the indicator registers a pivot. A looser setting catches earlier moves but generates more whipsaws; a stricter setting waits for confirmation.
+- **Show count numbers**: Toggles the sequential count display. The count is the core output — without it, you are only seeing the levels.
+- **Color scheme**: Visual only. Bullish and bearish counts can be color-coded to taste; this has no effect on the calculation.
 
 **How to Use It for Entries and Exits**
 
-I use Demark Pivots as a timing tool, not a standalone system. Here’s my workflow:
+Demark Pivots works best as a timing tool layered onto an existing view, not as a standalone system. A common framework:
 
-- **Entry (long)**: Wait for a bearish count of 9 on the daily chart (price closes lower for 9 consecutive periods). Then look for a close above the prior bar’s high. That’s your trigger. Enter on the next bar’s open.
-- **Entry (short)**: Same logic reversed—bullish count of 9, then close below prior bar’s low.
-- **Stop loss**: Place below the most recent swing low (for longs) or above the swing high (for shorts). Don’t use the pivot level itself as a stop—it’s too tight.
-- **Take profit**: I take partial profits at R1 (for longs) or S1 (for shorts), then let the rest run to R2/S2. If price rejects at R1 quickly, I exit fully.
+- **Entry (long)**: Wait for a completed bearish count — price closing lower for the full sequence — then look for a close above the prior bar's high as the trigger.
+- **Entry (short)**: The mirror image: completed bullish count, then a close below the prior bar's low.
+- **Stop loss**: Place beyond the most recent swing low (for longs) or swing high (for shorts). The pivot level itself is generally too tight to serve as a stop.
+- **Take profit**: Partial exits at R1 (for longs) or S1 (for shorts), with the remainder held toward R2/S2. A fast rejection at R1 is a reason to exit the position entirely.
 
-The indicator also works well for breakout confirmation. If price breaks above R1 on a 9-count reversal setup, that’s a strong signal. I’ve caught several trend continuations this way.
+The indicator can also serve as breakout confirmation: a break above R1 following a completed reversal setup is a stronger signal than the break alone.
 
-**Honest Pros and Cons**
+**Pros and Cons**
 
 **Pros:**
-- It actually predicts exhaustion points with decent accuracy—about 65-70% win rate on daily charts in my testing.
-- The visual countdown is intuitive. You don’t need to be a mathematician.
-- Works across markets. I tested on BTCUSD, EURUSD, and AAPL. All showed similar reliability.
-- No repainting. Once a bar closes, the count is fixed. Huge plus.
+- The counting framework targets exhaustion rather than describing price after the fact.
+- The visual countdown is intuitive and requires no math on the user's part.
+- The logic is market-agnostic and applies across asset classes.
+- Counts are fixed once a bar closes, so the plotted sequence does not shift retroactively.
 
 **Cons:**
-- False signals in choppy, sideways markets. The count can hit 9 and reverse weakly, then continue. I lost 3 trades in a row on EURUSD during a range.
-- Lag on lower timeframes. 15-minute and below produce too many 9-counts. You’ll overtrade.
-- No multi-timeframe analysis built-in. You have to add the indicator to each chart separately.
-- The documentation is sparse. I had to dig into DeMark’s original books to understand the logic.
+- False signals in choppy, sideways markets. A count can complete and then fail, with price continuing in the prior direction.
+- Lower timeframes generate frequent counts, which encourages overtrading.
+- No multi-timeframe analysis is built in; the indicator must be added to each chart separately.
+- Documentation is sparse, and understanding the full logic generally requires going back to DeMark's original writing.
 
-**Who It’s Actually For**
+**Who It's Actually For**
 
-This indicator is for swing traders and position traders who hold for 2-10 days. If you scalp 5-minute charts, skip it—it’s too noisy. If you’re a long-term investor holding for months, it’s overkill. But if you trade daily or 4H charts and want a systematic way to catch trend reversals, Demark Pivots is a solid tool.
+This is a tool for swing and position traders working on higher timeframes. Scalpers on very short intervals will find the count frequency unmanageable, and long-term investors holding for months will find it provides more granularity than they need. For anyone trading daily or 4H charts who wants a systematic way to time reversals, it is a reasonable fit.
 
-**Better Alternatives If They Exist**
+**Alternatives Worth Knowing**
 
-- **Standard Pivot Points**: Better for breakout trading, but don’t predict reversals.
-- **Fibonacci Retracements**: More subjective but can complement Demark levels.
-- **Volume Profile**: Better for identifying value areas, but no sequential counting.
-- **Custom Pine Script**: If you’re comfortable coding, you can build a multi-timeframe version. But this indicator saves you hours of work.
+- **Standard Pivot Points**: Better suited to breakout trading, but they describe levels rather than predict reversals.
+- **Fibonacci Retracements**: More subjective, but can complement Demark levels as a confluence check.
+- **Volume Profile**: Strong for identifying value areas, but offers no sequential counting.
+- **Custom Pine Script**: A multi-timeframe version can be built by hand if you code, but the ready-made indicator saves that effort.
 
-For pure reversal timing, Demark Pivots is the best I’ve tested. But I always pair it with RSI divergence for confirmation.
+For pure reversal timing, Demark Pivots covers ground that most level-based tools do not. Pairing it with a momentum or volume confirmation is a common way to filter its weaker signals.
 
-**FAQ Addressing Real Trader Questions**
+**FAQ**
 
-**Q: Does this repaint?**  
-A: No. Once a bar closes, the count and pivot levels are fixed. I verified by refreshing charts multiple times.
+**Q: Does this repaint?**
+A: Once a bar closes, the count and pivot levels are fixed. The plotted sequence does not change retroactively.
 
-**Q: Can I use it on crypto?**  
-A: Yes, works well. Crypto is volatile, so use the 14-bar lookback to filter noise.
+**Q: Can I use it on crypto?**
+A: Yes. Crypto's volatility means a longer lookback is generally needed to filter noise.
 
-**Q: What’s the best timeframe?**  
-A: Daily is most reliable. 4H is okay. Anything below 1H is unreliable.
+**Q: What's the best timeframe?**
+A: Higher timeframes are more reliable; the lower you go, the more frequent and less meaningful the counts become.
 
-**Q: How do I set alerts for the 9-count?**  
-A: Go to the indicator settings, enable alerts, and choose “Count reaches 9.” You’ll get a notification when it triggers.
+**Q: How do I set alerts for the count?**
+A: In the indicator settings, enable alerts and select the condition for a completed count. You'll be notified when it triggers.
 
-**Q: Is it good for options trading?**  
-A: Yes. I use it to time entries for weekly options. The daily chart 9-count gives 2-3 day windows for reversals.
+**Q: Is it good for options trading?**
+A: It can be used to time entries, since a completed daily count often gives a short window in which a reversal may develop.
 
-**Final Verdict with Star Rating**
+**Final Verdict**
 
-Demark Pivots is a reliable, non-repainting tool for catching trend exhaustion. It’s not perfect—sideways markets will burn you—but it’s one of the few indicators that actually predicts reversals rather than just describing price. For swing traders, it’s a 4-star tool. For scalpers, it’s a 2-star.
+Demark Pivots is a non-repainting tool built around trend exhaustion rather than price description. Its weakness is sideways markets, where completed counts frequently fail. For swing traders on daily or 4H charts, it earns its place as a timing layer — provided it is combined with volume or momentum confirmation rather than used in isolation.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-If you pair it with volume or momentum confirmation, it’s borderline 5-star. But as a standalone, it needs context. Worth installing and testing on your daily chart.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **EMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 57.8%, XAUUSD 56.8%, AVAXUSD 54.8%, META 54.3%
+- Weakest markets: LINKUSD 45.6%, VIX 41.8%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -21,7 +21,7 @@ sources: ["https://www.tradingview.com/script/QqSFhZiX-Uptrick-Band-Flow/"]
 ---
 Most "trend" indicators on TradingView are a moving average with a color change. Uptrick: Band Flow is more deliberate than that. It's a trend overlay built from a smoothed moving-average baseline and ATR bands, where the trend state only flips when a bar closes outside the opposite band. Nothing changes while price sits inside the envelope. That one design decision shapes everything else about the tool.
 
-As shown in the chart above, the output is a colored envelope with occasional Up or Down labels and a set of target markers extending from the entry bar.
+The output is a colored envelope with occasional Up or Down labels and a set of target markers extending from the entry bar.
 
 ## What's actually under the hood
 
@@ -29,7 +29,7 @@ The calculation chain is documented clearly, and it's worth walking through beca
 
 The baseline is a weighted moving average of close over the **Trend Length** (default 30), which weights recent closes more heavily than a simple average so the center line reacts sooner at the same length. An EMA smoothing pass (**Trend Smoothing**, default 4) then reduces bar-to-bar noise. Set it to 1 and the smoothing is switched off.
 
-The bands are baseline ± ATR times a multiplier. **Band ATR Length** defaults to 14, and the upper and lower multipliers default to 1.50 each. They're independent, so you can run an asymmetric envelope if you want. ATR is floored at the symbol's minimum tick, which prevents the band width from collapsing to zero on quiet instruments.
+The bands are baseline ± ATR times a multiplier. **Band ATR Length** defaults to 14, and the upper and lower multipliers default to 1.50 each. They're independent, so an asymmetric envelope is possible. ATR is floored at the symbol's minimum tick, which prevents the band width from collapsing to zero on quiet instruments.
 
 Then comes the part that matters: trend state with memory. A close above the upper band turns it bullish. A close below the lower band turns it bearish. Price inside the bands keeps the previous state. Trend changes are evaluated on confirmed bar closes only. So touching the baseline does nothing — you need a full breakout of the opposite band.
 
@@ -39,19 +39,33 @@ Signals are single-position. An Up label appears on a bullish break when the scr
 
 That signal bar does two things: its close becomes the entry price, and its ATR is captured and frozen. The five take-profit levels are then fixed distances from that entry — entry plus (long) or minus (short) the stored ATR times each level's multiplier. Defaults are 1.0, 2.0, 3.0, 4.0 and 5.0 ATR. Each level marks once per signal with a small cross when a bar's high (long) or low (short) reaches it, and everything resets on the next signal.
 
-Freezing the ATR at entry is the interesting choice here. A live ATR ladder would drift as volatility changes after you're in the trade; this one stays put. Whether that's better depends on how you use targets, but it's a coherent decision rather than an accident.
+Freezing the ATR at entry is the interesting choice here. A live ATR ladder would drift as volatility changes after entry; this one stays put. Whether that's better depends on how targets are used, but it's a coherent decision rather than an accident.
 
 ## Using it
 
-Three overlay modes change the visual without changing the logic. **Center** gives you the baseline with a gradient fill to price. **Trail** shows a one-sided trail — lower trail in an uptrend, upper in a downtrend — with an outer edge expanded by extra ATR. **Bands** shows the full envelope with a gradient strongest near the baseline. The default is Bands.
+Three overlay modes change the visual without changing the logic. **Center** gives the baseline with a gradient fill to price. **Trail** shows a one-sided trail — lower trail in an uptrend, upper in a downtrend — with an outer edge expanded by extra ATR. **Bands** shows the full envelope with a gradient strongest near the baseline. The default is Bands.
 
 Signal labels have two anchor modes. **Bands** places them on the outer trail edge; **ATR** places them beyond the candle low or high. This is label positioning only — it does not change when signals fire. That separation is a small thing that speaks well of the design.
 
 There's a dashboard in the top-right, two columns by six rows, showing script name and trend state, trend direction, overlay mode, signal anchor mode, entry price, and take-profit progress as five dots. Seven alert conditions exist: Up, Down, and TP1 through TP5.
 
-One practical note straight from the documentation: Up and Down alerts are only true on bar close, but take-profit conditions can become true while a bar is still forming. Choose your alert frequency with that in mind.
+One practical note straight from the documentation: Up and Down alerts are only true on bar close, but take-profit conditions can become true while a bar is still forming. Choose alert frequency with that in mind.
 
 Also worth repeating because it's easy to ignore: use standard candlestick or bar charts. Heikin Ashi, Renko, Kagi, Point and Figure and Range charts don't show real traded prices, so signals and targets on them wouldn't be realistic.
+
+## Settings and How to Tune Them
+
+Inputs are grouped into five sections.
+
+**Trend Engine** holds the core parameters: Trend Length, Trend Smoothing, Band ATR Length, and the independent Upper and Lower Band Multipliers. The documentation's guidance on the multipliers is directional but not prescriptive: smaller multipliers generally flip sooner and more often, larger multipliers generally flip later and less often. Trend Length changes how closely the baseline follows price, which moves where the bands sit — the documentation explicitly declines to say which direction is better and recommends testing length changes on your own markets rather than assuming.
+
+**Overlay** covers Overlay Mode plus two parameters that only apply to the trail view: Trail Outer Expansion, which adds extra ATR to the outer trail edge, and Trail Smoothing, an EMA length applied to the baseline and ATR used for that outer edge. Setting Trail Smoothing to 1 switches it off. Both of these also move the labels when Signal Anchor is set to Bands.
+
+**Signal Anchor** holds the anchor mode, the Signal ATR Length used for ATR-anchored labels, and the Signal ATR Distance — the ATR multiple between the candle low or high and the label. Again, this affects label placement only, not signal timing.
+
+**ATR Take Profits** has a toggle that switches both the markers and the take-profit alerts on or off, plus the five per-level ATR multiples.
+
+**Display** has toggles for signals, trend candles, and the dashboard.
 
 ## Pros and cons
 
@@ -66,14 +80,14 @@ Also worth repeating because it's easy to ignore: use standard candlestick or ba
 
 **Cons:**
 - It's a lagging tool by construction. Signals confirm a close outside the envelope, not an early turn. The documentation says this outright.
-- The five ATR targets are reference distances, not orders or predictions. If you treat them as a system, you're using it wrong.
-- Trend Length moves where the bands sit, and the documentation explicitly declines to say which direction is "better" — you have to test on your own markets.
+- The five ATR targets are reference distances, not orders or predictions. Treating them as a system is a misuse of the tool.
+- Trend Length moves where the bands sit, and the documentation explicitly declines to say which direction is "better" — that has to be tested on your own markets.
 - No short-side nuance beyond the mirror of the long logic. If you trade both directions, the tool is symmetric whether your markets are or not.
 - It's an overlay, not a complete system. No position sizing, no stop logic beyond the band structure.
 
 ## Who it's for
 
-Swing and position traders who want a clean trend-state read and a structured way to measure ATR distances from a breakout. It suits people who prefer confirmation over anticipation and who already have their own entry and risk framework. If you scalp or want early signals, this will frustrate you.
+Swing and position traders who want a clean trend-state read and a structured way to measure ATR distances from a breakout. It suits people who prefer confirmation over anticipation and who already have their own entry and risk framework. Scalpers and anyone wanting early signals will find it frustrating.
 
 ## FAQ
 
@@ -92,6 +106,7 @@ Band Flow is a well-assembled trend overlay. The pieces are standard — WMA, EM
 The ceiling is that it's still a lagging, confirmation-based tool with no edge beyond disciplined trend reading. That's fine. It's not trying to be more.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — a solid, coherent trend tool that does exactly what it says, held back only by the inherent limits of close-confirmed breakout logic.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

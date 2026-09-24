@@ -17,68 +17,50 @@ categories:
 rating: 4
 description: "Honest My_Custom_No_Trading_Shield review: trend filter that blocks bad trades. Tested settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/X3aUCCPw-My-Custom-No-Trading-Shield/"
+sources: ["https://www.tradingview.com/script/X3aUCCPw-My-Custom-No-Trading-Shield/"]
 ---
-Let me be blunt about what My_Custom_No_Trading_Shield actually is: it's a trend filter that tries to keep you out of bad trades. The name sounds like something a coder threw together at 2am, but the logic underneath is surprisingly solid. I ran it across multiple timeframes and market conditions, and it does exactly what the title promises — it shields you from trading against the prevailing trend. Nothing more, nothing less.
+# Get started Review
 
-The indicator works by analyzing price structure and momentum to determine whether the current market state is bullish, bearish, or neutral. When the shield is "active," it's telling you to stand down. When it's "inactive," the trend is aligned enough for you to consider a trade. It's not a crystal ball, and it won't tell you exact entry points — but that's not its job.
+The script's own description says it plainly: it blocks out Friday 4pm to Tuesday 11am so the author doesn't trade. That's the entire documented premise. It's a calendar-based blackout window, not a trend filter, momentum model, or signal engine — and any review that frames it as a market-analysis tool is describing something the source material doesn't support.
+
+**What It Actually Is**
+
+Get started is a study that shades a fixed time window on the chart. The stated purpose is behavioral, not analytical: it marks the stretch of the week the author wants to sit out. There is no published logic about price structure, momentum, trend state, or signal generation. It doesn't tell you when to enter. It tells you when the author has decided not to.
+
+That distinction matters. A tool like this isn't making a market call — it's enforcing a rule. Whether the rule is good depends entirely on the trader using it, not on anything the indicator computes.
 
 **What Sets It Apart**
 
-Most trend indicators on TradingView are repainted messes that look great in hindsight and fall apart in real-time. This one doesn't repaint, which is the first thing I checked. The signals that appeared on Friday were still there on Monday, and that alone puts it ahead of maybe 60% of the trend indicators in the catalog.
+Honestly, not much is documented. The source material gives one sentence of description and no methodology. There's no stated sensitivity setting, no trend classification, no signal logic to evaluate. The only thing that distinguishes it is its narrowness: it does one thing — block a time range — and doesn't pretend to do more.
 
-The second thing that impressed me is how it handles chop. As you can see in the chart above, during sideways consolidation the shield stays engaged — it keeps you out of the market entirely. That's rare. Most trend filters flip-flop between buy and sell signals every few bars when price is ranging. This one just says "no" and holds that position until a real trend develops.
+If you're looking for a trend filter, a chop detector, or a signal generator, this isn't that. Nothing in the source material claims otherwise.
 
-**Best Settings**
+**Settings and How to Tune Them**
 
-After testing, here's what worked: keep the sensitivity at its default for swing trading, but if you're day trading, increase it by one notch to get earlier signals. The trade-off is more false "shield off" readings, so you need to pair it with your own confirmation. For the MACD chart type shown in the screenshot, the default settings align well with the standard 12-26-9 parameters.
+The source material documents no adjustable parameters. The only concrete detail is the blackout window itself — Friday 4pm to Tuesday 11am — which reflects the author's own trading schedule. Whether that window is editable in the script is not stated, so treat it as fixed unless you verify otherwise in the code.
 
-I'd avoid cranking the sensitivity too high. The indicator's edge is patience — it doesn't fire signals often, and that's by design. If you force it to be more responsive, you lose the filtering benefit and just get another noisy oscillator.
+There's no sensitivity dial to tune here, no default period to keep or adjust. If the window matches the days and hours you want to avoid, it's useful to you. If it doesn't, it isn't — and the source material doesn't describe a way to change that.
 
-**How I Actually Used It**
+**How to Use It**
 
-The way to trade this isn't to buy when the shield turns off. It's to use the shield as a gatekeeper for your existing strategy. My workflow: when the shield is active, I don't take any new positions. Period. When it's inactive, I look for my usual setups — breakouts, pullbacks, whatever my primary system uses. The shield isn't the strategy; it's the bouncer.
+The only defensible use, based on the description, is as a visual reminder: a shaded region on the chart that prompts you to stay flat during a defined period. It works as a discipline aid, not as part of a signal stack.
 
-For exits, this is where it gets interesting. If I'm in a winning trade and the shield flips to active, that's my signal to tighten my stop or take profits. It's not a hard exit signal, but it's a solid warning that the trend is losing steam. I tested this on a few momentum trades that had runners, and the shield caught the trend exhaustion before my trailing stop did more often than not.
+If your own strategy fires during that window, the indicator won't stop you or warn you beyond the shading. It has no exit logic, no strength reading, and no alert behavior described in the source material. It's a marker, and that's the whole of it.
 
 **Pros & Cons**
 
-The pros: no repainting, excellent chop filter, simple visual display, works cleanly across multiple timeframes. It's genuinely hard to misuse this indicator, which is more than I can say for most.
+The pro is simplicity: one clear purpose, stated in one sentence, with no ambiguity about what it does.
 
-The cons: it lags. Any trend filter does, but this one feels a beat slow on fast moves. You'll give up the first chunk of a breakout. Also, the signals are binary — there's no strength meter, no gradient, just on/off. That's fine for filtering, but if you want to size positions based on trend strength, you'll need another tool.
+The con is that there's almost nothing to evaluate. No methodology, no parameters, no signal logic, no documented behavior beyond the shaded window. A trader looking for analysis won't find any here.
 
 **Who It's For**
 
-This is for traders who already have a system and need a filter, not for beginners looking for a holy grail. If you're a swing trader who keeps getting chopped up in ranging markets, this will save you money. If you're a day trader using MACD as your primary signal — which is why the chart type in the screenshot is MACD — this pairs naturally with that workflow.
-
-**Alternatives Worth Considering**
-
-If you want something with more depth, the classic Supertrend gives you actual price levels to trade off, not just a filter. For a more advanced approach, the MACD itself with proper histogram analysis gives you momentum shifts this indicator doesn't capture. And if you want a true trend strength gauge, the ADX with DI lines will give you the magnitude that this shield doesn't provide.
-
-**FAQ**
-
-*Does this indicator repaint?* No. Signals hold their value. Verified over multiple sessions.
-
-*Can it be used for crypto?* Yes, works fine on 24/7 markets. I tested it on BTC and ETH.
-
-*What timeframes does it work best on?* 1-hour and above for swing trading. Below 15-minutes it gets noisy.
-
-*Does it give buy/sell signals?* No. It only tells you when not to trade. That's the point.
+Traders who already know they want to avoid a specific stretch of the week and want that rule visible on the chart. That's the audience the description speaks to. It's not for anyone seeking entries, exits, trend reads, or filtering logic — the source material makes no such claims.
 
 **Final Verdict**
 
-My_Custom_No_Trading_Shield isn't flashy, and it won't win any awards for creativity in naming. But it does one thing well: it keeps you out of bad trades. For that alone, it deserves a spot in your toolkit if you're a trend-following trader who's tired of getting chopped up. It's not a complete system, and it's not smart enough to trade on its own — but as a filter, it earns its keep. Four stars, and that's coming from someone who deletes most indicators within a week of testing.
+Get started is a one-line utility with a one-line description. It blocks a time window. Whether that's valuable depends entirely on whether that window matches your own schedule and rules. There's nothing here to overstate, and nothing in the source material to justify calling it more than what it is.
 
-⭐⭐⭐⭐
-
-## Frequently Asked Questions
-
-### Is My_Custom_No_Trading_Shield worth it?
-
-Based on testing across multiple timeframes, My_Custom_No_Trading_Shield delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

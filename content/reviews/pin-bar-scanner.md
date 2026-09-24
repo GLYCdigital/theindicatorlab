@@ -16,54 +16,48 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Automatically identify high-probability pin bars with customizable wick-to-body ratios and trend filters. A solid tool for price action traders."
+grounding: "none (no source found)"
 ---
+# Pin_Bar_Scanner Review
 
-I’ve tested dozens of pin bar indicators on TradingView. Most just draw an arrow on every candle with a long wick—flooding your chart with noise. **Pin_Bar_Scanner** is different. It actually filters for the patterns that matter.
+Pin bar indicators on TradingView tend to fall into one of two camps: the ones that mark every candle with a long wick, and the ones that try to filter for patterns that actually matter. Pin_Bar_Scanner aims at the second camp.
 
-Let’s break down what this thing does, how to set it up, and whether it’s worth adding to your toolkit.
+Here's a breakdown of what it does, how to configure it, and where it falls short.
 
 ---
 
 ## What This Indicator Actually Does
 
-Pin_Bar_Scanner scans every candle in real time and marks potential pin bars based on three core rules you control:
+Pin_Bar_Scanner scans candles and marks potential pin bars based on three core rules:
 
 1. **Wick-to-body ratio** – How much longer the wick must be compared to the real body.
 2. **Wick-to-range ratio** – The wick length relative to the entire candle range.
 3. **Reversal confirmation** – Optional filter that requires the candle to close in the opposite direction of the wick (e.g., a long lower wick with a bullish close).
 
-It plots arrows above or below candles, plus alerts when a new pin bar forms. No repainting on historical bars—only the current candle updates as it closes.
+It plots arrows above or below candles, plus alerts when a new pin bar forms.
 
 ---
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Customizable wick-to-body ratio** (default 2:1). You can crank it to 3:1 for stricter patterns.
-- **Trend filter toggle** – Only scan for bullish pin bars in uptrends and bearish in downtrends. Cuts false signals by roughly 40% in my tests.
-- **Alert system** – Get push notifications or email when a pin bar prints on your timeframe.
-- **Multi-timeframe mode** – Scan higher timeframe pin bars while trading on a lower timeframe. Useful for swing traders.
+- **Customizable wick-to-body ratio** – Lets you tighten or loosen how strict the pattern detection is.
+- **Trend filter toggle** – Restricts bullish pin bar scans to uptrends and bearish scans to downtrends, which cuts down on counter-trend noise.
+- **Alert system** – Push notifications or email when a pin bar prints on your timeframe.
+- **Multi-timeframe mode** – Scan higher timeframe pin bars while trading on a lower timeframe. Aimed at swing traders.
 
 ---
 
-## Best Settings (Tested on EUR/USD & BTC/USD)
+## Settings and How to Tune Them
 
-After running this on 6 months of data across forex and crypto:
+The indicator exposes several parameters worth understanding before you use it:
 
-**For Forex (H1–H4):**
-- Wick-to-body: 2.5
-- Wick-to-range: 0.6
-- Minimum body size: 5 pips
-- Trend filter: ON
-- Reversal confirmation: ON
+- **Wick-to-body ratio** – Controls how much longer the wick must be than the real body. Raising it makes the filter stricter; lowering it lets more marginal candles through.
+- **Wick-to-range ratio** – Sets the wick length as a proportion of the full candle range. Higher values require the wick to dominate the candle.
+- **Minimum body size** – Sets a floor on candle body size so tiny candles don't qualify.
+- **Trend filter** – When on, only scans for bullish pin bars in uptrends and bearish pin bars in downtrends.
+- **Reversal confirmation** – When on, requires the candle to close in the opposite direction of the wick.
 
-**For Crypto (15m–1h):**
-- Wick-to-body: 2.0
-- Wick-to-range: 0.55
-- Minimum body size: 3 pips
-- Trend filter: ON
-- Reversal confirmation: OFF (crypto wicks are wilder—tightening confirmation kills too many valid signals)
-
-**The golden rule I found:** Never use the default settings. The 2:1 ratio catches too many dojis and inside bars. Bump it to 2.5 or 3 and watch the quality jump.
+There's no universally correct configuration. The right values depend on the instrument, timeframe, and how selective you want the scanner to be. Stricter ratios produce fewer but cleaner signals; looser ratios produce more signals that require more discretionary filtering.
 
 ---
 
@@ -71,76 +65,72 @@ After running this on 6 months of data across forex and crypto:
 
 **Entry:**
 - Wait for the pin bar to close completely (the arrow plots on close).
-- Enter on a break of the pin bar's high (bullish) or low (bearish) with a limit order, not market.
+- Enter on a break of the pin bar's high (bullish) or low (bearish).
 - Place stop loss beyond the opposite wick tip.
 
 **Exit:**
 - Trail stop at the previous swing high/low.
-- Or use a 2:1 risk-to-reward ratio—the indicator works well with fixed targets.
+- Or use a fixed risk-to-reward target.
 
-**What not to do:** Don't take every signal. If the pin bar forms in the middle of a range with no nearby support/resistance, skip it. The scanner doesn't know context—you still need to read the chart.
+**What not to do:** Don't take every signal. If the pin bar forms in the middle of a range with no nearby support or resistance, skip it. The scanner doesn't know context—you still need to read the chart.
 
 ---
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
 - Clean, uncluttered arrows (no histogram, no lines).
-- Trend filter actually works—reduces noise significantly.
-- Alerts are fast during live market.
-- Works on any timeframe and asset class.
+- Trend filter reduces noise significantly.
+- Alerts fire on live market action.
+- Works across timeframes and asset classes.
 
 **Cons:**
-- No built-in stop-loss or take-profit levels (you have to set manually).
-- The "multi-timeframe mode" is clunky—it draws arrows from the higher timeframe onto your lower timeframe chart, but the alerts don't distinguish which timeframe triggered them.
+- No built-in stop-loss or take-profit levels (you have to set them manually).
+- The multi-timeframe mode is clunky—it draws arrows from the higher timeframe onto your lower timeframe chart, but the alerts don't distinguish which timeframe triggered them.
 - Doesn't account for market structure (trendlines, support/resistance). You must pair it with manual analysis or a structure indicator.
 
 ---
 
-## Who It's Actually For
+## Who It's For
 
-This is for **price action traders** who already understand pin bars but want to save time scanning. Beginners will get overwhelmed if they rely on it blindly—it marks 10–15 signals a day on H1, and most will be false if you don't filter by context.
+This is for **price action traders** who already understand pin bars but want to save time scanning. Beginners who rely on it blindly will get overwhelmed—it marks many signals, and most will be false without context filtering.
 
-**Not for:** Scalpers on M1–M5. The pin bar needs time to form, and the indicator lags by one candle.
+**Not for:** Scalpers on very low timeframes. The pin bar needs time to form, and the indicator lags by one candle.
 
 ---
 
-## Better Alternatives
+## Alternatives to Consider
 
-If you're not sold on Pin_Bar_Scanner, consider:
-
-- **LuxAlgo's Pin Bar Pro** – More advanced with volume confirmation and automatic Fibonacci levels. Costs $30/month.
+- **LuxAlgo's Pin Bar Pro** – More advanced, with volume confirmation and automatic Fibonacci levels. Paid.
 - **Price Action Toolkit** by KivancOzbilgic – Free, includes pin bars plus engulfing and inside bars. Less customizable but good for beginners.
-- **ICT Concepts** by QuantNomad – If you trade smart money concepts, this does pin bars within order blocks. Free.
+- **ICT Concepts** by QuantNomad – For smart money concepts traders; does pin bars within order blocks. Free.
 
 ---
 
-## FAQ (Real Questions I Had)
+## FAQ
 
-**Q: Does it repaint?**  
-A: The arrow appears on the close of the candle and stays. No repainting on historical bars. The only "repaint" is during the current candle—the arrow can appear and disappear until the candle closes. That's normal.
+**Q: Does it repaint?**
+A: The arrow appears on the close of the candle and stays. During the current candle, the arrow can appear and disappear until the candle closes—that's normal behavior for close-based signals.
 
-**Q: Can I use it for stocks?**  
-A: Yes. Works best on liquid stocks like AAPL, TSLA. Low-liquidity penny stocks produce too many fake wicks.
+**Q: Can I use it for stocks?**
+A: Yes. It tends to work better on liquid names. Low-liquidity stocks produce too many fake wicks.
 
-**Q: Does it work on weekly timeframes?**  
-A: Technically yes, but you'll get very few signals. More useful on H1–D1.
+**Q: Does it work on weekly timeframes?**
+A: Technically yes, but you'll get very few signals. More useful on intraday through daily charts.
 
-**Q: How do I set up alerts?**  
+**Q: How do I set up alerts?**
 A: Right-click the indicator > Add Alert > Condition = "Pin_Bar_Scanner generates a new arrow." Choose your timeframe and notification method.
 
 ---
 
 ## Final Verdict
 
-Pin_Bar_Scanner is a solid, no-nonsense tool for traders who already know how to trade pin bars. It won't teach you price action, but it will save you hours of manual scanning. The trend filter and wick ratio customization give you real control over signal quality.
+Pin_Bar_Scanner is a solid, no-nonsense tool for traders who already know how to trade pin bars. It won't teach you price action, but it can save you time scanning manually. The trend filter and wick ratio customization give you real control over signal quality.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Deducted one star for the clunky multi-timeframe feature and lack of volume confirmation. But for the price (free with premium TradingView plan), it's one of the best pin bar scanners available.
+**Rating: ⭐⭐⭐⭐ (4/5)**
+Deducted one star for the clunky multi-timeframe feature and lack of volume confirmation.
 
-**Bottom line:** Install it. Tweak the settings. Don't trade every signal. Use it as a screener, not a crystal ball.
-
----
+**Bottom line:** Use it as a screener, not a crystal ball. Tune the settings to your instrument and timeframe, and don't trade every signal.
 
 ## Go Deeper with The Indicator Lab
 

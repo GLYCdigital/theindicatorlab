@@ -16,9 +16,9 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Review of Squeeze_Indicator: a volatility-based momentum tool. See settings, entry rules, pros, cons, and better alternatives for TradingView."
+grounding: "none (no source found)"
 ---
-
-**Squeeze_Indicator** is a staple in the volatility trader's toolbox. But like many popular indicators, it gets hyped without much clarity on how to actually use it. I've been running this on my charts for the past few weeks across BTC, ES, and some FX pairs. Here's my honest breakdown.
+**Squeeze_Indicator** is a staple in the volatility trader's toolbox. But like many popular indicators, it gets hyped without much clarity on how to actually use it. Here's an honest breakdown.
 
 ### What This Indicator Actually Does
 
@@ -30,19 +30,19 @@ It's not a prediction tool. It doesn't tell you *which way* the breakout will go
 
 - **Two visual modes:** Default histogram + dots. The dots change color when momentum shifts. The histogram shows squeeze intensity.
 - **Automatic volatility detection:** No need to manually check BB vs KC width — it's all calculated.
-- **Multi-timeframe adaptability:** Works on 1m for scalping and 1D for swing trading, though I find it best on 1h-4h.
-- **Minimal repainting:** In real-time, the final dot only triggers after confirmation. Backtest with caution, but live it's clean.
+- **Multi-timeframe adaptability:** Works across intraday and daily charts, though it is generally most readable in the middle of that range.
+- **Minimal repainting:** In real-time, the final dot only triggers after confirmation. Backtest with caution, but live it's cleaner.
 
-### Best Settings (What I Use)
+### Settings and How to Tune Them
 
-Default settings are fine, but tweak these for better results:
+Default settings are a reasonable starting point. Common tweaks:
 
-- **Squeeze Length:** 20 (standard). For faster signals on lower timeframes, try 14.
-- **Keltner Multiplier:** 1.5 (default is 2.0). This makes the squeeze trigger more frequently — good for scalping, bad for false signals on low volatility.
-- **Histogram Style:** I prefer "Smooth" over "Bars" to reduce noise.
-- **Lookback Period:** 2 bars for momentum confirmation. Don't take the first dot as gospel.
+- **Squeeze Length:** The standard lookback for the squeeze calculation. Shortening it produces faster signals on lower timeframes.
+- **Keltner Multiplier:** The default is generally wider. Lowering it makes the squeeze trigger more frequently — useful for scalping, but it also invites more false signals when volatility is low.
+- **Histogram Style:** Choose between "Smooth" and "Bars." Smooth reduces visual noise.
+- **Lookback Period:** Used for momentum confirmation. Don't take the first dot as gospel.
 
-**My recommended preset for 1h chart:** Length 20, KC 1.5, Smooth histogram, Momentum confirmation at 2 bars.
+**A common preset for the 1h chart:** standard Length, a tighter KC multiplier, Smooth histogram, and a short momentum confirmation.
 
 ### How to Use It for Entries and Exits
 
@@ -57,8 +57,6 @@ Default settings are fine, but tweak these for better results:
 - Exit fully when dots change color (green to red or vice versa) or when a new squeeze begins.
 - Trailing stop works well if volatility stays high.
 
-**What the chart above shows:** You can see a clear squeeze on the 4h BTC chart — contraction lasted 8 bars, then a powerful green histogram expansion. The first green dot gave a clean entry around $29,400, and price ran $1,200 before bars shrunk.
-
 ### Honest Pros and Cons
 
 **Pros:**
@@ -70,8 +68,8 @@ Default settings are fine, but tweak these for better results:
 **Cons:**
 - Useless in ranging markets — you'll get whipsawed on every side move.
 - No directional bias. You need additional confluence (e.g., trendlines, volume, or an oscillator like RSI).
-- False signals on low-volume assets. I tested on some altcoins — it fired 4 squeezes in a row, each a fakeout.
-- Histogram can be laggy on 1m charts.
+- False signals on low-volume assets, where squeezes can fire repeatedly and fail.
+- Histogram can be laggy on the fastest intraday charts.
 
 ### Who It's Actually For
 
@@ -89,13 +87,13 @@ This is for **traders who already have a directional bias** and need timing conf
 ### FAQ (Real Trader Questions)
 
 **Q: Does Squeeze_Indicator repaint?**  
-A: In real-time, the dot may flicker on the open, but it locks in at the bar close. Backtest data shows it's accurate. Don't trade the open bar.
+A: In real-time, the dot may flicker on the open, but it locks in at the bar close. Don't trade the open bar.
 
 **Q: Can I use it for crypto?**  
 A: Yes, but only on high-volume pairs (BTC, ETH). Low-cap altcoins produce too many false squeezes.
 
 **Q: What's the best timeframe?**  
-A: 1h to 4h. Lower timeframes (1m-15m) are noisy. Daily works but signals are rare.
+A: 1h to 4h. Lower timeframes are noisy. Daily works but signals are rare.
 
 **Q: Do I need another indicator?**  
 A: Yes. Add a volume indicator (Volume Profile or OBV) to confirm breakout strength. Also use a trend filter like 200 EMA.
@@ -108,9 +106,17 @@ Squeeze_Indicator is a **4-star tool** if you know how to use it. It's not a sta
 **Best for:** Timing entries in trending markets with volatility expansion.  
 **Worst for:** Beginners expecting a buy/sell robot.
 
-If you're a serious trader, install it, test it on a demo for a week, and see if it fits your flow. It's earned its place on my second monitor — but it's not the main act.
+If you're a serious trader, install it, test it on a demo for a week, and see if it fits your flow. It's not the main act — but for the right trader, it earns a place on the screen.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **TTM Squeeze** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

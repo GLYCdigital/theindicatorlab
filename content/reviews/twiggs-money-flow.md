@@ -16,44 +16,33 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Twiggs Money Flow improves on Chaikin Money Flow with volatility-adjusted volume. My full review covers settings, entry signals, and real trade examples."
+grounding: "none (no source found)"
 ---
+**Twiggs Money Flow** — sounds like a fancy rebrand of Chaikin Money Flow, right? It isn't. Developed by Colin Twiggs (of Incredible Charts fame), this indicator replaces the standard volume-based accumulation/distribution with something that accounts for intraday volatility.
 
-**Twiggs Money Flow** — sounds like a fancy rebrand of Chaikin Money Flow, right? I thought the same before I tested it. Turns out, it's actually a genuine improvement. Developed by Colin Twiggs (of Incredible Charts fame), this indicator replaces the standard volume-based accumulation/distribution with something that accounts for intraday volatility.
-
-Let me cut through the noise and tell you what it's really like to trade with.
+Let's cut through the noise and look at what this indicator actually is.
 
 ## What This Indicator Actually Does
 
-Twiggs Money Flow (TMF) measures buying and selling pressure, but with a twist. Instead of using raw volume like the Chaikin Money Flow, it multiplies volume by the high-low range (volatility) to weight each bar's contribution. The formula gets gnarly: it uses a smoothed version of the typical price relative to the high-low range, then applies an exponential moving average.
+Twiggs Money Flow (TMF) measures buying and selling pressure, but with a twist. Instead of using raw volume like Chaikin Money Flow, it multiplies volume by the high-low range (volatility) to weight each bar's contribution. The formula uses a smoothed version of the typical price relative to the high-low range, then applies an exponential moving average.
 
-In plain English: it tells you whether big money is piling into an asset or quietly exiting — and it's less noisy than CMF because volatile bars don't distort the signal as much.
+In plain English: it aims to show whether big money is piling into an asset or quietly exiting — and it's designed to be less noisy than CMF because volatile bars don't distort the signal as much.
 
 ## Key Features That Set It Apart
 
-- **Volatility-adjusted volume** — Each bar's weight depends on its range. A 2% range day with 1M volume carries more weight than a 0.5% range day with the same volume. This is smarter than raw volume counting.
-- **Exponential smoothing** — The default 21-period EMA means recent price action matters more than old data, unlike CMF's simple average.
-- **Zero-line cross signals** — Above zero = accumulation, below = distribution. Simple, but effective when combined with price action.
-- **Divergence detection** — The indicator naturally highlights bullish/bearish divergences against price, which is where the real money is made.
+- **Volatility-adjusted volume** — Each bar's weight depends on its range. A wide-range bar with a given volume carries more weight than a narrow-range bar with the same volume. This is a different approach than raw volume counting.
+- **Exponential smoothing** — The EMA weighting means recent price action matters more than old data, unlike CMF's simple average.
+- **Zero-line cross signals** — Above zero = accumulation, below = distribution. Simple, but meant to be combined with price action.
+- **Divergence detection** — The indicator can highlight bullish/bearish divergences against price, which is often where the useful information sits.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
 The default settings on TradingView are:
 - **Period:** 21
 - **Smoothing:** Exponential (locked)
 - **Volume type:** Standard
 
-Here's what I've landed on after testing across different timeframes:
-
-**For swing trading (4H–Daily):**
-- Period: 34 — reduces false flips, aligns with weekly cycles
-- Works best on liquid stocks and major forex pairs
-
-**For intraday (15min–1H):**
-- Period: 13 — faster response, more whipsaws but catches early moves
-- Combine with a 9/21 EMA ribbon for confirmation
-
-**For position trading (Weekly):**
-- Period: 55 — smooths out everything, only take trades when TMF is decisively above/below zero for 3+ bars
+The period is the main lever. A shorter period makes the indicator respond faster but produces more whipsaws; a longer period smooths the line out and reduces false flips at the cost of responsiveness. Which value suits you depends on your timeframe and how much confirmation you're willing to wait for — there's no single correct number.
 
 ## How to Use It for Entries and Exits
 
@@ -76,20 +65,20 @@ Here's what I've landed on after testing across different timeframes:
 ## Honest Pros and Cons
 
 **Pros:**
-- Less whipsaw than Chaikin Money Flow — the volatility adjustment genuinely helps
-- Divergences are more reliable than on RSI or MACD because volume confirms the conviction
-- Works on any timeframe, but really shines on daily charts
+- Less whipsaw than Chaikin Money Flow — the volatility adjustment is the reason
+- Divergences are more meaningful than on RSI or MACD because volume is part of the calculation
+- Works on any timeframe, but is most often discussed on daily charts
 - Simple enough for beginners, subtle enough for pros
 
 **Cons:**
 - Still a lagging indicator — don't expect it to catch the exact top or bottom
-- Can chop sideways in low-volume, low-volatility markets (think crypto during holiday periods)
-- The default 21 period is too sensitive for daily charts — I had to bump it to 34 to avoid fake signals
+- Can chop sideways in low-volume, low-volatility markets
+- The default period is on the sensitive side for daily charts
 - No built-in alerts for divergences (you have to set them manually on the zero cross)
 
 ## Who It's Actually For
 
-This is for the trader who already uses volume-weighted indicators but wants something cleaner. If you're trading stocks, indices, or forex with decent volume, TMF will give you an edge. Avoid it if:
+This is for the trader who already uses volume-weighted indicators but wants something cleaner. If you're trading stocks, indices, or forex with decent volume, TMF is worth a look. Avoid it if:
 - You trade only on low-volume altcoins or penny stocks (it'll look like noise)
 - You scalp on 1-minute charts (too slow)
 - You hate waiting for confirmations (TMF requires patience)
@@ -107,23 +96,31 @@ This is for the trader who already uses volume-weighted indicators but wants som
 A: On high-cap coins (BTC, ETH) with decent volume, yes. On low-cap alts with sporadic volume, no — the volatility adjustment amplifies noise.
 
 **Q: What's the best timeframe?**
-A: Daily. It's the sweet spot between responsiveness and reliability. Weekly is good for position traders, but you'll get fewer signals.
+A: Daily is the commonly cited sweet spot between responsiveness and reliability. Weekly is good for position traders, but you'll get fewer signals.
 
 **Q: Should I use it alone or with other indicators?**
-A: Please don't use it alone. Pair it with a trend filter (like 50 EMA) and a momentum oscillator (like RSI or Stoch RSI). The zero cross alone is about 55% win rate — with a trend filter, it jumps to 65-70%.
+A: It's generally better not to use it alone. Pair it with a trend filter (like a 50 EMA) and a momentum oscillator (like RSI or Stoch RSI).
 
 **Q: How do I spot divergences?**
 A: Look for price making a higher high while TMF makes a lower high (bearish divergence). Or price making a lower low while TMF makes a higher low (bullish divergence). The indicator doesn't draw lines for you — you need to spot them manually.
 
 ## Final Verdict
 
-Twiggs Money Flow is a solid upgrade to the Chaikin Money Flow. The volatility adjustment makes it less prone to false signals, and the divergences are genuinely useful when combined with a trend filter. It won't make you a millionaire overnight, but it's a reliable tool for confirming volume-backed moves.
+Twiggs Money Flow is a solid upgrade to Chaikin Money Flow. The volatility adjustment makes it less prone to false signals, and the divergences are useful when combined with a trend filter. It won't make you a millionaire overnight, but it's a reliable tool for confirming volume-backed moves.
 
-I give it **4 out of 5 stars**. It loses one star because the defaults need tweaking (21 period is too sensitive), and the lack of built-in divergence alerts is annoying. But if you take the time to dial in the settings, it's a workhorse indicator that won't let you down.
+The main friction points are that the defaults need tuning to taste, and the lack of built-in divergence alerts is annoying. But if you take the time to dial in the settings, it's a workhorse indicator.
 
 **Rating:** ⭐⭐⭐⭐
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **MFI** implementation was backtested on 30 markets over 5 years of daily data (28,124 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.1%** (50% = coin flip)
+- Strongest markets: AMD 54.4%, VIX 53.9%, SPY 53.2%, AVAXUSD 52.5%
+- Weakest markets: LTCUSD 46.3%, USDJPY 40.1%, SHIBUSD 27.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

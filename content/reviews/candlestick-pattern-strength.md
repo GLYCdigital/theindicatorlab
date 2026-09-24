@@ -16,127 +16,126 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A practical candlestick pattern strength indicator that filters weak patterns and grades strong ones. Honest review with settings, entry rules, and trading strategy."
+grounding: "none (no source found)"
+---
+**Description:** A candlestick pattern strength indicator that aims to filter weak formations and grade stronger ones. Review covering what it claims to do, its settings, and how it might be used.
+
 ---
 
-**Description:** A practical candlestick pattern strength indicator that filters weak patterns and grades strong ones. Honest review with settings, entry rules, and trading strategy.
+*Candlestick_Pattern_Strength* is positioned as a filter rather than a signal generator. Its premise is that most candlestick indicators flag every formation regardless of context, and that a scoring layer can separate the formations worth attention from the ones that are just noise.
 
----
+Whether that premise holds depends heavily on the scoring methodology, which is the part most worth scrutinizing before committing to a subscription.
 
-Let’s cut the fluff. I’ve spent the last week slapping *Candlestick_Pattern_Strength* on everything from 1-minute scalps to daily swing charts. The name sounds like a marketing gimmick, but after using it, I’ve got to say—this thing actually does what it promises: it grades candlestick patterns by strength instead of just showing you every single hammer and doji like most indicators do.
+## What This Indicator Claims to Do
 
-If you’ve ever been burned by a "perfect engulfing" that immediately reversed, you’ll appreciate what this indicator filters out.
+The indicator is described as calculating a **strength score** for each detected candlestick pattern, based on factors such as the pattern's size, its location relative to a moving average, volume confirmation, and the pattern's historical reliability on the current timeframe.
 
-## What This Indicator Actually Does
+Its stated behaviors include:
+- Displaying only patterns that meet a user-defined minimum strength threshold.
+- Color-coding results by direction and strength.
+- Printing the strength score alongside the pattern label on the chart.
+- An optional signal line that plots a marker only when a pattern scores above a set level.
 
-Most candlestick pattern indicators are noise machines—they flag every formation, including the ones that simply don’t matter. *Candlestick_Pattern_Strength* takes a different approach: it calculates a **strength score** based on the pattern’s size, location relative to the moving average, volume confirmation, and the pattern’s historical reliability on the current timeframe.
+The core idea is contextual grading: a hammer into resistance on low volume is treated differently from a hammer at support with a volume expansion. That is a reasonable design goal, though the quality of the output depends entirely on how the score is computed — and that logic is rarely transparent in closed-source indicators.
 
-It then:
-- Shows only patterns that meet a user-defined minimum strength threshold (default 50/100).
-- Colors them: **green** for strong bullish, **red** for strong bearish, **gray** for weak (hidden by default).
-- Displays the strength score directly on the chart (e.g., "Bullish Engulfing 78").
-- Includes a **signal line** option that plots a dot or arrow only when a pattern scores above 65.
+## Key Features
 
-The chart above shows it on BTC/USD 1H—notice how the weak doji at 14:00 was ignored, but the 82-strength bullish engulfing at 18:00 got a clear arrow. That’s the filter working.
+- **Strength scoring** that attempts to weigh context rather than pattern existence alone.
+- **Adjustable minimum threshold** so the user can decide how selective the indicator is.
+- **Multi-timeframe alignment** – an optional setting that checks whether pattern strength is consistent on a higher timeframe than the one being traded.
+- **Alerts** configurable on a strength condition, without coding.
+- **Non-repainting claim** – the developer states that once a bar closes, the strength score is fixed.
 
-## Key Features That Set It Apart
+The non-repainting claim is the one to verify yourself. It is easy to assert and easy to test: load the indicator, note the scores on closed bars, then reload the chart and compare. Do this before relying on any signal it produces.
 
-- **Strength scoring (0–100)** based on context, not just pattern existence. A hammer at a resistance zone with low volume scores lower than one at support with a volume spike.
-- **Customizable minimum threshold** – slide it up to 70 for high-confidence setups only.
-- **Multi-timeframe alignment** – optional setting that checks if the pattern strength is consistent on the higher timeframe (e.g., checks 4H strength when trading on 1H).
-- **No repaint** – once a bar closes, the strength score is fixed. I tested this by reloading charts—solid.
-- **Alert system** – you can set alerts for "pattern strength above X" without coding.
+## Settings and How to Tune Them
 
-## Best Settings with Specific Recommendations
+The indicator exposes a small set of parameters:
 
-After testing on 10+ pairs and multiple timeframes, here’s what works:
+- **Minimum strength threshold** – the primary selectivity control. Raising it reduces the number of patterns shown and, by design, favors higher-context formations. Lowering it produces more signals at the cost of more marginal ones.
+- **Multi-timeframe alignment** – when enabled, the indicator checks the higher timeframe for consistency. This adds lag, since the higher timeframe has to develop before the reading is meaningful. It is more appropriate for slower trading styles than for intraday work.
+- **Signal type** – the choice between markers and labels, or both. Labels carry the score; markers are cleaner but convey less information.
+- **Volume confirmation** – when enabled, patterns are weighted by whether volume supports the move. On very fast timeframes, candles form before volume context is meaningful, so this setting tends to be less useful there.
+- **Pattern type filter** – restricts detection to a subset of formations (for example, engulfing patterns, pin bars, inside bars).
 
-**For Swing Trading (4H/Daily):**  
-- Minimum strength: **60**  
-- Enable multi-timeframe alignment: **ON** (check weekly)  
-- Signal type: **Arrows only** (avoid clutter)  
-- Volume confirmation: **ON** (set to 1.5x average)
+There is no universally correct configuration. The threshold and the multi-timeframe setting in particular should be tuned to the instrument and the holding period you actually trade, and validated against your own historical data rather than adopted from someone else's preferences.
 
-**For Intraday (15m–1H):**  
-- Minimum strength: **50** (more signals, but still filtered)  
-- Disable multi-timeframe alignment (laggy on lower TFs)  
-- Signal type: **Dots + labels** (so you can see the score)  
-- Volume confirmation: **OFF** (candles form too fast)
+## How It Might Be Used for Entries and Exits
 
-**My personal favorite setup (scalping 5m):**  
-- Strength threshold: **45**  
-- Pattern types to show: only **Engulfing, Pin Bar, Inside Bar**  
-- Show only patterns with strength > threshold AND closing in the top/bottom 20% of the candle body
+A typical framework based on the indicator's design:
 
-This gave me about 10–15 signals per session, with a win rate around 68% on NQ futures.
+**Entry (bullish example):**
+1. A bullish pattern is flagged with a score above your threshold.
+2. The candle closes beyond the prior candle's extreme, not merely beyond the pattern's own extreme.
+3. Volume confirmation is satisfied, if that setting is enabled.
+4. Entry on the following candle's open.
 
-## How to Use It for Entries and Exits
+**Stop loss:** Below the pattern's low, or below the low of the preceding candles for a tighter placement. ATR-based offsets are a common alternative.
 
-**Entry Rule (Bullish):**  
-1. Wait for a green arrow with a strength score above your threshold.  
-2. The candle must close above the previous candle’s high (not just the pattern’s high).  
-3. Volume must be above the 20-period average (if volume confirmation is ON).  
-4. Enter on the next candle’s open.  
+**Take profit:** A measured move derived from the pattern's height, a nearby structural level, or a trailing stop once the first target is reached.
 
-**Stop Loss:** Place it 1 ATR below the pattern’s low (or below the low of the two preceding candles if you want a tighter stop).  
+**Exit conditions:** A drop in the strength score on the current candle, or the appearance of an opposing pattern of equal or greater strength.
 
-**Take Profit:**  
-- First target: 1.5x the pattern’s height (from low to high of the pattern candle).  
-- Second target: nearest resistance level.  
-- Trail stop after first target is hit.  
+These rules are one reasonable interpretation of how the tool is meant to be used. They are not a validated system, and the strength score itself should not be treated as a probability estimate.
 
-**Exit when:**  
-- Strength score drops below 30 on the current candle.  
-- A counter-pattern of equal or higher strength appears.  
+## Pros and Cons
 
-## Honest Pros and Cons
+**Pros:**
+- Attempts to reduce chart clutter by filtering out low-context formations.
+- The scoring concept, if the underlying logic is sound, addresses a genuine weakness in most pattern indicators.
+- Alert configuration is straightforward.
+- Settings are few enough to tune without overfitting.
 
-**Pros:**  
-- Finally stops showing you every random doji.  
-- The strength score is actually useful—I’ve found patterns with scores above 70 have a ~73% win rate in my backtests on EUR/USD H1.  
-- Clean chart—no flood of labels.  
-- Alerts are simple to set.  
+**Cons:**
+- The multi-timeframe alignment feature introduces lag, which limits its usefulness on lower timeframes.
+- No built-in backtest panel; any evaluation requires exporting data and doing the work yourself.
+- Default color scheme is loud and often needs adjusting.
+- Not free — pricing is in subscription territory, which raises the bar for what the scoring logic needs to deliver.
+- The scoring methodology is a black box unless the source is available. Without knowing how the score is constructed, you cannot judge whether it generalizes or is curve-fit to past data.
 
-**Cons:**  
-- The "multi-timeframe alignment" feature adds 1–2 bars of lag. I turned it off for day trading.  
-- No built-in backtest panel (you have to export data manually).  
-- The default color scheme is a bit garish (bright green/red). I changed it to softer shades.  
-- It’s not free—costs around $25/month or a one-time purchase on some versions.
+## Who It's For
 
-## Who It's Actually For
+- Traders who already read candlestick patterns competently and want a noise filter rather than an education.
+- Swing traders working on higher timeframes, where the multi-timeframe feature's lag matters less.
+- Not suitable for beginners. The indicator assumes you already know what a pin bar or engulfing pattern is and why context matters.
 
-- **Intermediate to advanced traders** who already understand candlestick patterns but want to filter noise.  
-- **Swing traders** who want to avoid false signals on higher timeframes.  
-- **Not for total beginners** – if you don’t know what a bullish engulfing or pin bar is, this indicator won’t teach you.  
+## Alternatives to Consider
 
-## Better Alternatives If They Exist
-
-- **LuxAlgo’s Pattern Matrix** – more patterns, but less strength scoring. Costs similar.  
-- **Squeeze Momentum Indicator** – if you’re looking for momentum + pattern confirmation, this is better.  
-- **Free alternative** – you can manually look for patterns and check RSI/volume. But this saves time.
+- **LuxAlgo's Pattern Matrix** – broader pattern coverage, less emphasis on scoring.
+- **Squeeze Momentum** – a different tool entirely, but relevant if what you actually want is momentum confirmation rather than pattern grading.
+- **Manual pattern reading combined with RSI or volume** – free, slower, and forces you to internalize the context logic the indicator is trying to automate.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. Once the bar closes, the strength score is final. I tested by reloading charts.
+**Does it repaint?**
+The developer states it does not, and that scores are fixed once a bar closes. Verify this independently before trading it.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works on BTC, ETH, and altcoins. Volume confirmation is trickier on some exchanges (use tick volume).
+**Does it work on crypto?**
+It is marketed as working across markets including crypto. Volume-based confirmation is less reliable on venues where reported volume is unreliable; tick volume is a common workaround.
 
-**Q: What’s the best timeframe?**  
-A: 1H to 4H for the best balance of signal quality and frequency.
+**What timeframe is best?**
+There is no objective answer. Higher timeframes generally produce fewer but cleaner formations; lower timeframes produce more signals with more marginal ones. The multi-timeframe feature becomes less practical as you move down.
 
-**Q: Can I combine it with another indicator?**  
-A: Yes. I pair it with a 20 EMA and RSI(14). Strong pattern + price above EMA + RSI above 50 = high probability long.
+**Can it be combined with other indicators?**
+Yes. Combining pattern context with a trend filter and a momentum oscillator is a common approach, though it does not guarantee better outcomes.
 
 ## Final Verdict
 
-*Candlestick_Pattern_Strength* isn’t a magic bullet—no indicator is. But it’s one of the few pattern-based tools that actually *reduces* noise instead of adding to it. The strength scoring is practical, the settings are flexible, and the alert system is solid.
+*Candlestick_Pattern_Strength* addresses a real problem: most pattern indicators are indiscriminate. Whether this one solves it depends on the quality of its scoring logic, which is not fully visible and therefore not fully verifiable. The feature set is sensible, the settings are manageable, and the design intent is clear.
 
-If you trade patterns and want to stop getting faked out by weak formations, this is worth the subscription. Just don’t expect it to predict the future—it only tells you which patterns *historically* had more weight.
+Treat the strength score as a filter, not a forecast. Before paying for it, test the non-repainting claim yourself and decide whether the scoring adds information you could not get from reading the same patterns with volume and structure. If it does, the subscription may be justifiable. If it does not, the free alternatives are competitive.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – Loses one star for the laggy multi-timeframe feature and lack of a built-in backtest. But for what it does, it’s a solid buy.
+**Rating: 3/5** – A sound concept with a closed scoring model, a laggy multi-timeframe option, and no built-in evaluation tools. Worth trialing before buying.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Candlestick** implementation was backtested on 30 markets over 5 years of daily data (4,339 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 46.9%** (50% = coin flip)
+- Strongest markets: META 54.0%, NVDA 52.1%, WTI 52.1%, GOOGL 51.2%
+- Weakest markets: SPY 44.4%, QQQ 44.2%, SHIBUSD 28.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,113 +16,119 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Coppock_With_Signals adds buy/sell arrows and a smoothed trend line to the classic Coppock Curve. Works best on weekly charts for long-term trend reversals."
+grounding: "none (no source found)"
 ---
-
-**Description:** Coppock_With_Signals adds buy/sell arrows and a smoothed trend line to the classic Coppock Curve. Works best on weekly charts for long-term trend reversals.
+**Description:** Coppock_With_Signals adds buy/sell arrows and a smoothed trend line to the classic Coppock Curve. It is intended for weekly charts and long-term trend reversals.
 
 ---
 
 ## What This Indicator Actually Does
 
-The Coppock Curve is an old-school momentum oscillator developed by economist Edwin Coppock in 1962. It’s designed to spot long-term buying opportunities in major stock indices by measuring the rate of change over two different timeframes (typically 14 and 11 months) and smoothing the result with a weighted moving average.
+The Coppock Curve is an old-school momentum oscillator developed by economist Edwin Coppock in 1962. It’s designed to spot long-term buying opportunities in major stock indices by measuring the rate of change over two different timeframes and smoothing the result with a weighted moving average.
 
-This version — **Coppock_With_Signals** — takes the raw Coppock calculation and overlays two key features:  
-- **A zero line** (baseline for bullish/bearish bias)  
+This version — **Coppock_With_Signals** — takes the raw Coppock calculation and overlays two key features:
+- **A zero line** (baseline for bullish/bearish bias)
 - **Buy and sell arrows** that fire when the curve crosses the zero line
 
-As the chart above shows, the indicator paints a clear picture: green arrows appear when the curve turns up from below zero, red arrows when it dips back down from above. No clutter, no extra histograms — just the bare bones with visual triggers.
+The indicator paints a clear picture: green arrows appear when the curve turns up from below zero, red arrows when it dips back down from above. No clutter, no extra histograms — just the bare bones with visual triggers.
 
 ## Key Features That Set It Apart
 
-Most Coppock indicators on TradingView are either too raw (just the line, no signals) or too noisy (add extra filters that lag). This one hits a sweet spot:
+Most Coppock indicators on TradingView are either too raw (just the line, no signals) or too noisy (add extra filters that lag). This one aims for a middle ground:
 
-- **Customizable ROC lengths** – Default 14 and 11 months, but you can adjust for different timeframes. I tested it on weekly BTC and used 28 and 22 weeks instead.
-- **Adjustable smoothing WMA** – Default is 10 periods. Lower it (e.g., 5) for faster signals on daily charts, or raise it (e.g., 20) for ultra-smooth weekly trends.
-- **Signal line toggle** – You can turn on a separate signal line (a moving average of the curve) to confirm crossovers. Helpful for filtering false zero-line crossings.
-- **Show/hide arrows** – You control whether buy/sell markers appear on the chart. I always keep them on for quick visual scans.
+- **Customizable ROC lengths** – Two rate-of-change periods feed the calculation, and both can be adjusted for different timeframes.
+- **Adjustable smoothing WMA** – A weighted moving average smooths the raw curve. Shortening it produces faster signals; lengthening it produces a smoother line.
+- **Signal line toggle** – A separate signal line (a moving average of the curve) can be turned on to confirm crossovers. Useful for filtering false zero-line crossings.
+- **Show/hide arrows** – You control whether buy/sell markers appear on the chart.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I ran this on **weekly S&P 500 (SPX)** and **weekly Bitcoin** for the past three years. Here’s what worked:
+The indicator exposes the two ROC lengths, the WMA smoothing period, a signal line toggle, and an arrow display toggle. It ships with default values for each, and those defaults are the natural starting point.
 
-| Timeframe | ROC1 | ROC2 | WMA Smoothing | Signal Line? | Notes |
-|-----------|------|------|---------------|--------------|-------|
-| Weekly (indices) | 14 | 11 | 10 | Off | Classic setup, low whipsaw |
-| Weekly (crypto) | 28 | 22 | 10 | On | Crypto moves faster; longer ROCs smooth noise |
-| Daily (volatile) | 60 | 45 | 5 | On | Use only for swing trades; expect more false signals |
+The general logic of tuning:
 
-**My go-to for indices:** Keep default settings. On SPX weekly, the curve spent most of 2023–2024 above zero, only briefly dipping in late 2024 — and the buy arrow fired cleanly when it crossed back up in January 2025.
+| Setting | What changing it does |
+|---------|----------------------|
+| ROC1 / ROC2 | Longer periods smooth out noise and slow the curve further; shorter periods make it more responsive and more prone to whipsaw. |
+| WMA smoothing | Lower values speed up the curve; higher values flatten it. |
+| Signal line | Off keeps the display minimal; on adds a second line to cross-check zero-line moves. |
+| Arrows | Purely visual — they don’t change the calculation. |
 
-**My go-to for crypto:** Switch ROC lengths to 28 and 22, and turn on the signal line. During BTC’s 2024 rally, the raw Coppock stayed above zero the entire time, but the signal line crossover gave an earlier exit in mid-2024 before the autumn correction.
+There is no universally correct configuration. The right values depend on the instrument’s volatility and the timeframe you’re viewing. Faster-moving assets generally call for longer ROC periods to compensate; slower, mean-reverting indices can tolerate shorter ones.
 
 ## How to Use It for Entries and Exits
 
-**Entry (long):** Look for the curve to cross *above* zero from below. The arrow appears automatically. Wait for a weekly close above the zero line before pulling the trigger. Don’t chase the first green arrow — let price confirm.
+**Entry (long):** Look for the curve to cross *above* zero from below. The arrow appears automatically. Waiting for a bar close above the zero line is the more conservative approach — the first arrow is not necessarily the one to act on.
 
-**Exit (long):** The curve crossing *below* zero is your exit signal. But here’s the catch: the Coppock is a lagging indicator. If you wait for the zero-line cross on weekly, you’ll give back a chunk of profit. I prefer to exit when the curve makes a lower high while price is still making higher highs (bearish divergence). The indicator doesn’t highlight divergences automatically, but you can spot them easily.
+**Exit (long):** The curve crossing *below* zero is the standard exit signal. The catch is that the Coppock is a lagging indicator, so a zero-line cross on a weekly chart typically gives back a chunk of profit before it triggers. Some traders instead watch for bearish divergence — the curve making a lower high while price makes a higher high. The indicator does not highlight divergences automatically; they have to be spotted manually.
 
-**Short entries:** Not recommended. The Coppock was designed for long-term buying, not shorting. The red arrows work better as “get out” signals than “get short” triggers.
+**Short entries:** The Coppock was designed for long-term buying, not shorting. The red arrows function better as “get out” signals than “get short” triggers.
 
-**Avoid using on:**  
-- Intraday charts (below 4H) – too noisy  
-- Individual stocks with low volume – the curve becomes erratic  
-- As a standalone system – combine with trendlines or moving averages
+**Poor fits:**
+- Intraday charts — too noisy
+- Individual stocks with low volume — the curve becomes erratic
+- As a standalone system — combine with trendlines or moving averages
 
 ## Honest Pros and Cons
 
-**Pros:**  
-- Zero-line cross arrows are clean and easy to spot  
-- Customizable ROCs make it flexible across asset classes  
-- No repainting (tested: arrows stick after bar close)  
-- Lightweight – won’t slow down your chart
+**Pros:**
+- Zero-line cross arrows are clean and easy to spot
+- Customizable ROCs make it flexible across asset classes
+- Lightweight — won’t slow down your chart
+- The signal line toggle adds a confirmation layer without forcing it on you
 
-**Cons:**  
-- **Lag is real** – On weekly SPX, the buy arrow after the 2022 bear market bottom didn’t appear until February 2023, missing 15% of the rally  
-- No divergence detection built in – you have to eyeball it  
-- Red arrows are useless for short entries – they’re really “exit long” signals  
-- Default settings are too slow for crypto – requires tweaking
+**Cons:**
+- **Lag is real** — the curve is slow by construction, and signals arrive well after the move has begun
+- No divergence detection built in — you have to eyeball it
+- Red arrows are weak short entries — they’re really “exit long” signals
+- The default configuration may be too slow for fast-moving assets and requires adjustment
 
 ## Who It’s Actually For
 
-- **Long-term index traders** – This is its native habitat. Works beautifully on SPX, NDX, and DJI weekly charts.  
-- **Portfolio managers** – Use it to time broad market entries for ETF accumulation.  
-- **Swing traders who don’t mind lag** – If you’re trading weekly trends and can hold for months, the Coppock is a solid filter.  
-- **Not for day traders or scalpers** – You’ll get whipsawed to death.
+- **Long-term index traders** – This is its native habitat. It suits major index weekly charts.
+- **Portfolio managers** – Useful for timing broad market entries for ETF accumulation.
+- **Swing traders who don’t mind lag** – If you’re trading weekly trends and can hold for months, the Coppock is a reasonable filter.
+- **Not for day traders or scalpers** – The lag will produce whipsaw.
 
 ## Better Alternatives If They Exist
 
-If you like the concept but need something faster:  
-- **MACD with weekly settings** – Similar zero-line cross logic but less lag.  
-- **RSI with 14-period weekly** – Better for divergence spotting, but no built-in signals.  
+If you like the concept but need something faster:
+- **MACD with weekly settings** – Similar zero-line cross logic with less lag.
+- **RSI on a weekly period** – Better for divergence spotting, but no built-in signals.
 - **TradingView’s built-in Coppock** – It’s free and does the same thing minus the arrows. The arrows here save you a few seconds of manual analysis.
 
-If you want divergence detection:  
+If you want divergence detection:
 - **Supertrend + RSI Divergence** – Combines trend direction with momentum divergences.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does this indicator repaint?**  
-A: No. I tested it on a replay chart. The arrows appear on the close of the bar that crosses zero and stay there.
+**Q: Can I use it on daily charts?**
+A: You can, but expect more false signals. Longer ROC periods help compensate for the faster pace of daily bars.
 
-**Q: Can I use it on daily charts?**  
-A: You can, but expect more false signals. Use longer ROC periods (e.g., 60 and 45) to compensate.
+**Q: Why is the curve sometimes always positive on an asset?**
+A: In a sustained uptrend, the Coppock can stay above zero for extended stretches. It’s designed around mean-reverting indices, so parabolic assets don’t fit its assumptions well.
 
-**Q: Why is the curve always positive on Bitcoin?**  
-A: Because BTC has been in a long-term uptrend. The Coppock rarely dips below zero in strong bull markets. That’s normal — it’s designed for mean-reverting indices, not parabolic assets.
-
-**Q: Do the arrows work for shorting?**  
+**Q: Do the arrows work for shorting?**
 A: Not reliably. The red arrow indicates the curve crossed below zero, but by then the downtrend is often mature. Use it as an exit, not an entry.
 
 ## Final Verdict
 
-**Coppock_With_Signals** is a no-frills improvement on a classic indicator. It won’t make you a millionaire, and it won’t catch bottoms early. But if you trade weekly charts on major indices and want a clean, lagging confirmation tool, this gets the job done.
+**Coppock_With_Signals** is a no-frills improvement on a classic indicator. It won’t catch bottoms early, and it won’t replace a full system. But if you trade weekly charts on major indices and want a clean, lagging confirmation tool, this gets the job done.
 
 The arrows save you from manually checking zero-line crosses, and the customizable ROCs give you flexibility across markets. Just don’t expect miracles — this is a slow-moving trend filter, not a crystal ball.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star deducted for the lack of divergence detection and the useless red arrows for short entries. Otherwise, solid execution of a proven concept.
+**Rating: ⭐⭐⭐⭐ (4/5)**
+One star deducted for the lack of divergence detection and the weak red arrows for short entries. Otherwise, solid execution of a proven concept.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Coppock** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: SPY 53.8%, AVAXUSD 53.5%, DOGEUSD 53.4%, DOTUSD 53.2%
+- Weakest markets: LTCUSD 46.3%, VIX 44.7%, SHIBUSD 30.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

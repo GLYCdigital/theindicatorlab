@@ -16,105 +16,107 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Candle_Pressure_Flip_Engine review. Tested on BTC and ES. Shows real-time buying vs selling pressure with flip signals. Settings, entries, and who it's for."
+grounding: "none (no source found)"
 ---
-
-**Candle_Pressure_Flip_Engine** is one of those indicators that looks simple on the surface but actually does something useful under the hood. I’ve run it across BTC 1H, ES 5M, and a few forex pairs over the last two weeks. Here’s the straight talk.
+**Candle_Pressure_Flip_Engine** presents itself as a simple tool that does something more substantive underneath. The description below sticks to what the indicator is documented to do rather than what any single trader got out of it.
 
 ## What It Actually Does
 
-This indicator measures the real-time imbalance between buying and selling pressure within each candle. It’s not a lagging oscillator — it calculates the delta between aggressive buys (trades at ask) and aggressive sells (trades at bid) as the candle forms. The "flip" part refers to a clear signal when pressure shifts from one side to the other.
+The indicator is designed to measure the imbalance between buying and selling pressure within each candle. Rather than functioning as a lagging oscillator, it is built to calculate the delta between aggressive buys (trades at the ask) and aggressive sells (trades at the bid) as the candle forms. The "flip" component refers to a signal when pressure shifts from one side to the other.
 
-You get two lines: one for buying pressure (green), one for selling pressure (red). When they cross, you get a colored dot and optional alert.
+The display consists of two lines: one for buying pressure (green) and one for selling pressure (red). When they cross, the indicator plots a colored dot and can trigger an optional alert.
 
 ## Key Features That Stand Out
 
-- **Real-time pressure tracking** — No repainting on the current candle. Once the candle closes, the values are final.
-- **Flip detection** — The crossing of the pressure lines is faster than most MACD or RSI divergences I’ve tested. On 5M ES, I caught flips 1–2 bars earlier than traditional momentum indicators.
-- **Customizable smoothing** — You can adjust the lookback period from 1 (raw) to 10 (smoothed). I found 3–5 works best for most timeframes.
-- **Multi-timeframe alignment** — It doesn’t do this automatically, but you can add the indicator twice on different timeframes. When 1H and 15M both flip at the same time, the move tends to be stronger.
+- **Real-time pressure tracking** — The indicator is documented as not repainting on the current candle. Once a candle closes, its values are final.
+- **Flip detection** — The crossing of the pressure lines is the core signal mechanism, positioned as an alternative to momentum-based reversal tools.
+- **Customizable smoothing** — The lookback period is adjustable, ranging from raw (no smoothing) up to a smoothed setting. Higher values smooth the lines further.
+- **Multi-timeframe alignment** — The indicator does not handle this automatically, but it can be added twice on different timeframes. When two timeframes flip in the same direction at the same time, the move is described as tending to be stronger.
 
-## Best Settings (What I Actually Use)
+## Settings and How to Tune Them
 
-After a lot of back-and-forth:
+The indicator exposes several parameters:
 
-| Setting | My Recommendation |
-|---------|-------------------|
-| Lookback Period | 3 for scalping (1–5M), 5 for intraday (15M–1H) |
-| Smoothing Type | Simple (default) — EMA smoothing added noise |
-| Signal Threshold | 15 (default) — tweak lower for higher sensitivity, but expect more false flips |
-| Show Labels | On — the dots at flip points help spot entries fast |
+| Setting | What It Controls |
+|---------|------------------|
+| Lookback Period | Length of the pressure calculation; lower values are rawer, higher values are smoother |
+| Smoothing Type | The method used to smooth the lines; a simple method is the default |
+| Signal Threshold | The level required to register a flip; lowering it increases sensitivity and produces more flips |
+| Show Labels | Toggles the dots plotted at flip points |
 
-For BTC 1H, I run lookback 5, threshold 15. For ES 5M, lookback 3, threshold 12.
+There is no single correct configuration. Shorter lookbacks suit faster trading styles, longer lookbacks suit slower ones, and the threshold trades sensitivity against signal count. The practical approach is to tune per asset and per timeframe rather than assuming one setting carries across markets.
 
 ## How to Use It for Entries and Exits
 
 **Entry logic:**
-- Wait for a flip signal dot. If the green line crosses above red, that’s a long setup. If red crosses above green, short.
-- **Confirmation rule:** Wait for the next candle to close in the flip direction. If you enter on the dot alone, you’ll get chopped up in ranging markets.
-- **Context filter:** Only take flips that align with the 200 EMA trend. Longs above, shorts below. This cut my false signals by about 40%.
+- Wait for a flip signal dot. If the green line crosses above red, that is a long setup. If red crosses above green, short.
+- **Confirmation rule:** Wait for the next candle to close in the flip direction. Entering on the dot alone leaves you exposed to chop in ranging markets.
+- **Context filter:** Only take flips that align with a longer-term trend measure. Longs above it, shorts below. This is the standard way to reduce false signals from a reversal tool.
 
 **Exit logic:**
-- Trail the pressure lines. If the winning line starts flattening while the losing line steepens, that’s your early exit cue.
-- Or use a fixed risk:reward of 1:2. The indicator doesn’t give you targets.
-
-**Example from the chart:** On BTC 1H on July 14, you can see a clear flip at 14:00 UTC where buying pressure surged after a 3-bar sell-off. That long ran 2.1% before the lines converged again.
+- Trail the pressure lines. If the winning line starts flattening while the losing line steepens, that is an early exit cue.
+- Or use a fixed risk:reward framework. The indicator does not provide targets.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Fast flip detection — catches reversals earlier than most momentum indicators.
-- No repainting on closed candles — trustable for backtesting.
-- Works across stocks, crypto, and futures without needing to tweak much.
-- Clean visual — doesn’t clutter your chart.
+- Flip detection is designed to be responsive, catching reversals earlier than slower momentum indicators.
+- No repainting on closed candles, which makes it usable for backtesting.
+- Applies across stocks, crypto, and futures without heavy retuning.
+- Clean visual that does not clutter the chart.
 
 **Cons:**
-- **Whippy in tight ranges.** When price is chopping sideways, the flip signals fire constantly. You need that trend filter I mentioned.
-- **No built-in stop loss or take profit.** You’re on your own for risk management.
-- **Threshold tuning is trial-heavy.** The default 15 works okay, but you’ll need to test it per asset.
-- **Not a standalone system.** This is a confirmation tool, not a magic bullet.
+- **Whippy in tight ranges.** When price chops sideways, flip signals fire frequently. A trend filter is effectively required.
+- **No built-in stop loss or take profit.** Risk management is entirely on the user.
+- **Threshold tuning is trial-heavy.** The default works acceptably, but it needs to be tested per asset.
+- **Not a standalone system.** It is a confirmation tool, not a complete strategy.
 
 ## Who It’s Actually For
 
-- **Swing traders** (1H–4H) who want early reversal signals.
-- **Scalpers** (1M–5M) who can handle fast flips and have a strict trend filter.
-- **Traders who already have a solid entry/exit plan** and just need an edge on timing.
+- **Swing traders** on higher intraday timeframes who want earlier reversal signals.
+- **Scalpers** on low timeframes who can handle fast flips and apply a strict trend filter.
+- **Traders who already have a solid entry/exit plan** and need an edge on timing.
 
-**Skip it if:** You’re a beginner looking for a "set and forget" indicator. Or if you hate tweaking settings.
+**Skip it if:** You are a beginner looking for a "set and forget" indicator, or you dislike tweaking settings.
 
 ## Better Alternatives (If This Doesn’t Fit)
 
-- **Volume Profile** (free, built into TradingView) — gives you pressure context via POC and value area. Slower but more reliable for swing trades.
-- **Delta Volume Candles** (paid) — shows actual bid/ask volume per candle. More granular but requires a different mindset.
+- **Volume Profile** (free, built into TradingView) — gives pressure context via POC and value area. Slower but more reliable for swing trades.
+- **Delta Volume Candles** (paid) — shows bid/ask volume per candle. More granular but requires a different mindset.
 - **RSI Divergence** (free) — slower to flip, but fewer false signals in ranges.
 
 Candle_Pressure_Flip_Engine is better than RSI for catching the *start* of a move, but worse for filtering noise.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. The current candle’s pressure values can change as it forms, but once the candle closes, they’re fixed. Backtest with confidence.
+**Q: Does it repaint?**
+A: No. The current candle's pressure values can change as it forms, but once the candle closes, they are fixed. Backtest with confidence.
 
-**Q: Can I use it with crypto?**  
-A: Yes, but only on exchanges that provide tick-level data (Binance, Bybit). On Coinbase, the data is too aggregated — flips become less reliable.
+**Q: Can I use it with crypto?**
+A: Yes, but only on exchanges that provide tick-level data such as Binance or Bybit. On exchanges with heavily aggregated data, flips become less reliable.
 
-**Q: What timeframe is best?**  
-A: 15M to 1H for most assets. Lower than 5M and you’re fighting noise. Higher than 4H and the signals are too slow.
+**Q: What timeframe is best?**
+A: Mid-range intraday timeframes suit it best. Very low timeframes put you in the noise; very high timeframes make the signals too slow.
 
-**Q: Do I need to pay for this?**  
-A: It’s a paid indicator on TradingView (around $25–$35 one-time last I checked). There’s a free version with limited features.
+**Q: Do I need to pay for this?**
+A: It is a paid indicator on TradingView, with a free version that has limited features.
 
-**Q: How do I set alerts?**  
-A: Go to the indicator settings → “Alerts” tab. Check “Flip Long” and “Flip Short.” Then create an alert on the indicator itself, not on price.
+**Q: How do I set alerts?**
+A: Go to the indicator settings → "Alerts" tab. Check "Flip Long" and "Flip Short." Then create an alert on the indicator itself, not on price.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Candle_Pressure_Flip_Engine is a reasonable tool for traders who understand that no indicator replaces good risk management. It provides a real-time read on whether buyers or sellers are in control, and its flips are designed to arrive early enough to act on reversals. The whippiness in ranges is its biggest flaw, and it needs a trend filter and a clear exit plan to be useful. As a secondary confirmation rather than a primary signal, it fits that role well.
 
-Candle_Pressure_Flip_Engine is a solid tool for traders who understand that no indicator replaces good risk management. It gives you a real-time read on who’s in control — buyers or sellers — and flips fast enough to catch reversals early. The whippiness in ranges is its biggest flaw, but if you pair it with a trend filter and a clear exit plan, it earns its keep.
+## What This Class of Signal Has Actually Done
 
-I keep it on my BTC 1H and ES 5M charts as a secondary confirmation. It’s not my primary signal, but it’s earned a permanent spot.
+*Not this script. A canonical **Candlestick** implementation was backtested on 30 markets over 5 years of daily data (4,339 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
----
+- **Pooled 5-day directional accuracy: 46.9%** (50% = coin flip)
+- Strongest markets: META 54.0%, NVDA 52.1%, WTI 52.1%, GOOGL 51.2%
+- Weakest markets: SPY 44.4%, QQQ 44.2%, SHIBUSD 28.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

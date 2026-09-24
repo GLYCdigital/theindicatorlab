@@ -16,135 +16,132 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Wedge_Polaris catches wedge breakouts before they happen. I test its settings, entry rules, and real chart performance. Honest 4/5."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-*Wedge_Polaris is a solid pattern-recognition tool for breakout traders who want to spot falling and rising wedges without the guesswork. It’s not perfect — but it’s better than most free wedge scripts.*
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+*Wedge_Polaris is a pattern-recognition tool aimed at breakout traders who want to spot falling and rising wedges without drawing them by hand. It has clear limitations, but it covers ground most free wedge scripts don't.*
 
 ---
 
 ### What This Indicator Actually Does
 
-Wedge_Polaris automatically plots wedge patterns directly on your chart. It identifies **falling wedges** (bullish reversal patterns) and **rising wedges** (bearish reversal patterns) by connecting swing highs and lows with trendlines. Unlike many wedge indicators that just draw lines and hope, this one also calculates a **projected breakout zone** — a shaded area where the breakout is statistically likely to occur.
+Wedge_Polaris plots wedge patterns directly on the chart. It identifies **falling wedges** (typically treated as bullish reversal patterns) and **rising wedges** (typically treated as bearish reversal patterns) by connecting swing highs and lows with trendlines. Beyond the lines, it also calculates a **projected breakout zone** — a shaded area representing where the breakout is expected.
 
-You’ll see two colored zones:  
-- **Green zone** = falling wedge (bullish bias)  
+The two colored zones are:
+- **Green zone** = falling wedge (bullish bias)
 - **Red zone** = rising wedge (bearish bias)
 
-When price enters the zone, the indicator alerts you. That’s the core value — you don’t have to stare at charts waiting for a wedge to form; the script does the heavy lifting.
+When price enters the zone, the indicator can trigger an alert. The core value proposition is that you don't have to watch charts waiting for a wedge to complete — the script handles detection.
 
 ---
 
 ### Key Features That Set It Apart
 
-1. **Dynamic trendline detection** — It adapts to recent price action, not a fixed lookback.  
-2. **Breakout zone shading** — Shows *where* the breakout is expected, not just the wedge lines.  
-3. **Multi-timeframe compatibility** — Works on 1m to monthly. I tested it on 15m and 1H primarily.  
-4. **Alert system** — Built-in alerts when price touches the breakout zone. No extra coding needed.  
-5. **Clean visual design** — Minimal clutter. You can toggle off the zone shading if you prefer just the lines.
+1. **Dynamic trendline detection** — Adapts to recent price action rather than relying on a fixed lookback.
+2. **Breakout zone shading** — Shows *where* the breakout is expected, not just the wedge lines.
+3. **Multi-timeframe compatibility** — Designed to work across timeframes.
+4. **Alert system** — Built-in alerts when price reaches the breakout zone, without custom coding.
+5. **Clean visual design** — Minimal clutter, with the option to toggle zone shading off if you only want the lines.
 
-The breakout zone is the standout feature. Most wedge indicators stop at the lines. This one gives you a price target area.
+The breakout zone is the standout feature. Most wedge indicators stop at the lines; this one adds a projected price area.
 
 ---
 
-### Best Settings (From My Testing)
+### Settings and How to Tune Them
 
-I ran this on BTC/USDT (1H) and EUR/USD (15m) for 3 weeks. Here’s what worked:
+The indicator exposes a handful of parameters that shape how wedges are detected and displayed:
 
-- **Lookback length:** 50–100 bars (default 50 is fine for intraday; use 100+ for swing trading)  
-- **Min wedge touches:** 3 (default). 4 reduces false patterns but misses early breakouts.  
-- **Breakout zone width:** 2.0 (tighter = fewer signals but higher accuracy)  
-- **Color alerts:** Keep both enabled. Green for falling wedge, red for rising.  
-- **Show zone shading:** On. It’s the main reason to use this indicator.
+- **Lookback length** — Controls how much recent price action the detection logic considers. Shorter lookbacks react to recent structure; longer lookbacks capture larger formations.
+- **Minimum wedge touches** — The number of times price must touch the trendlines for a wedge to qualify. Requiring more touches filters out weaker patterns but can delay detection of early breakouts.
+- **Breakout zone width** — Determines how wide the shaded projection zone is. A wider zone produces more signals; a narrower zone produces fewer but more selective ones.
+- **Color alerts** — Separately enable alerts for falling wedges (green) and rising wedges (red).
+- **Show zone shading** — Toggle the projection zone on or off. For traders who want the zone feature, leaving it on is the point of using the indicator.
 
-**My optimized settings for 1H crypto:**  
-Lookback = 80, Min touches = 3, Zone width = 1.5. This gave me 3–5 signals per week, with about 65% hitting the projected target.
+Because the zone width and lookback interact with the volatility and structure of whatever you're trading, these are best adjusted per asset rather than treated as universal defaults. There's no single configuration that is objectively best.
 
 ---
 
 ### How to Use It for Entries and Exits
 
-**Entry strategy (falling wedge):**  
-1. Wait for price to enter the green projection zone.  
-2. Look for a bullish candlestick close *inside* the zone.  
-3. Enter long on the next candle’s open.  
-4. Set stop-loss 1–2% below the wedge’s lowest low.
+**Entry logic (falling wedge):**
+1. Wait for price to enter the green projection zone.
+2. Look for a bullish candlestick close *inside* the zone.
+3. Enter long on the next candle's open.
+4. Place the stop-loss below the wedge's lowest low.
 
-**Exit strategy:**  
-- First target: Opposite side of the wedge (the breakout measured move).  
-- Second target: 1.5x the wedge height.  
-- Trail stop after price moves 1x the wedge height.
+**Exit logic:**
+- First target: the opposite side of the wedge (the breakout measured move).
+- Second target: an extension of the wedge height.
+- Trail the stop once price has moved roughly the wedge height in your favor.
 
-**For rising wedges (short):**  
-Flip the logic. Enter short when price enters the red zone with a bearish close. Stop above the wedge’s highest high.
+**For rising wedges (short):**
+Flip the logic. Enter short when price enters the red zone with a bearish close, and place the stop above the wedge's highest high.
 
-**Warning:** Don’t enter *before* the zone. I tried early entries — they fail more often. The zone filter is crucial.
+**Warning:** Entering *before* price reaches the zone tends to produce worse outcomes. The zone filter is the part that matters.
 
 ---
 
 ### Honest Pros and Cons
 
-**Pros:**  
-- Saves hours of manual wedge hunting.  
-- Breakout zone adds real edge — not just pattern recognition.  
-- Clean interface. Doesn’t look like a Christmas tree.  
-- Alerts work reliably (tested on web and desktop).  
+**Pros:**
+- Saves the time of manually hunting for wedges.
+- The breakout zone adds a projection element beyond simple pattern recognition.
+- Clean interface — not visually overloaded.
+- Alerts are part of the design, no extra coding required.
 
-**Cons:**  
-- **False signals in ranging markets.** When price is choppy, it draws wedges that never break. I’d say 30% of signals are duds.  
-- **No volume confirmation.** It’s purely price-based. Pair it with volume or RSI for better results.  
-- **Zone width is sensitive.** Too wide = too many signals. Too narrow = misses breakouts. You’ll need to adjust per asset.  
-- **No backtesting built in.** You’ll have to manually track performance.
-
----
-
-### Who It’s Actually For
-
-- **Breakout traders** who trade wedges regularly.  
-- **Swing traders** on 1H–4H timeframes.  
-- **Crypto and forex traders** — works well on both.  
-- **Not for scalpers.** Too slow for 1m charts.
-
-If you’re a discretionary trader who already draws wedges by hand, this saves time. If you rely purely on mechanical systems, this is a *helper*, not a standalone strategy.
+**Cons:**
+- **False signals in ranging markets.** In choppy conditions it can draw wedges that never break.
+- **No volume confirmation.** It's purely price-based, so pairing it with volume or a momentum oscillator is worth considering.
+- **Zone width is sensitive.** Too wide and you get more signals; too narrow and you miss breakouts. It needs adjustment per asset.
+- **No backtesting built in.** Performance tracking has to be done manually.
 
 ---
 
-### Better Alternatives (If This Isn’t for You)
+### Who It's Actually For
 
-- **Auto Pattern Recognition** (TradingView built-in) — Free, but doesn’t show breakout zones.  
-- **Wedge Breakout Pro** (paid) — More customizable, includes volume filter, but more cluttered.  
-- **Squeeze Momentum Indicator** — Not a wedge detector, but catches similar breakout setups with better noise filtering.
+- **Breakout traders** who trade wedges regularly.
+- **Swing traders** working on higher intraday and daily timeframes.
+- **Crypto and forex traders** — the pattern logic applies to both.
+- **Not for scalpers.** The formations it detects take time to develop.
 
-For most traders, Wedge_Polaris is the best *free* wedge-specific script I’ve found. The paid alternatives aren’t meaningfully better.
+If you're a discretionary trader who already draws wedges by hand, this saves time. If you rely purely on mechanical systems, treat it as a *helper*, not a standalone strategy.
 
 ---
 
-### FAQ (Real Questions from Traders)
+### Better Alternatives (If This Isn't for You)
 
-**Q: Does it repaint?**  
-A: Yes, slightly. As new bars form, the wedge lines and zones adjust. It’s not a repainting lie — the final wedge is fixed once the breakout happens. But live signals can shift. Use alerts with caution.
+- **Auto Pattern Recognition** (TradingView built-in) — Free, but doesn't show breakout zones.
+- **Wedge Breakout Pro** (paid) — More customizable and includes a volume filter, but more cluttered.
+- **Squeeze Momentum Indicator** — Not a wedge detector, but catches similar breakout setups with different noise filtering.
 
-**Q: Works on stocks?**  
-A: Yes. Tested on AAPL and TSLA (1D). Zones work fine, but stocks tend to gap, which breaks the pattern. Better on futures and crypto.
+For traders who want a free wedge-specific script, Wedge_Polaris is a reasonable option. The paid alternatives aren't necessarily better for everyone.
 
-**Q: Can I use it with other indicators?**  
-A: Yes. I pair it with RSI (14) and Volume Oscillator. Only take signals when RSI is oversold (falling wedge) or overbought (rising wedge).
+---
 
-**Q: How many false signals per week?**  
-A: On BTC 1H with my settings, about 2–3 false signals out of 5–6 total. That’s normal for pattern indicators.
+### FAQ
+
+**Q: Does it repaint?**
+A: The wedge lines and zones adjust as new bars form, so live signals can shift. Once a breakout occurs, the final wedge is fixed. Treat live signals with that in mind.
+
+**Q: Does it work on stocks?**
+A: It applies to stocks, but stocks tend to gap, which can break the pattern structure. It tends to behave better on futures and crypto.
+
+**Q: Can I use it with other indicators?**
+A: Yes. Pairing it with an oscillator like RSI or a volume tool is a common approach — for example, only taking falling-wedge signals when momentum is oversold, or rising-wedge signals when momentum is overbought.
+
+**Q: What about false signals?**
+A: False signals are a normal characteristic of pattern-based indicators, and they're more common in range-bound conditions. That's a structural limitation, not something a setting fully eliminates.
 
 ---
 
 ### Final Thoughts
 
-Wedge_Polaris does one thing and does it well: identify wedges and show you where the breakout is likely. It’s not a holy grail — no indicator is — but it’s a reliable tool for traders who already understand wedge patterns. The breakout zone feature alone makes it worth installing.
+Wedge_Polaris does one thing: identify wedges and show where the breakout is expected. It isn't a holy grail — no indicator is — but it's a practical tool for traders who already understand wedge patterns. The breakout zone feature is the main reason to install it.
 
-If you’re new to wedge trading, learn the pattern first. Then add this as a time-saver. If you’re experienced, it’ll catch wedges you might miss after hours of screen time.
+If you're new to wedge trading, learn the pattern first, then use this as a time-saver. If you're experienced, it can surface wedges you might otherwise miss.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-*Docked one star for repainting and false signals in range-bound markets. But for the price (free), it’s a solid 4.*
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)**
+*Docked one star for repainting behavior and false signals in range-bound markets. For a free script, it holds up.*
 
 ## Go Deeper with The Indicator Lab
 

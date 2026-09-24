@@ -17,81 +17,81 @@ categories:
 rating: 4
 description: "Gann_Reversal_Confluence review: tested settings, entry logic, and honest pros/cons. Is this 4-star trend reversal indicator worth adding to your toolkit?"
 tv_script_url: "https://www.tradingview.com/script/Q18RGwxV-Gann-Reversal-Confluence/"
+sources: ["https://www.tradingview.com/script/Q18RGwxV-Gann-Reversal-Confluence/"]
 ---
-I'll be straight with you: most "Gann" indicators on TradingView are repackaged moving averages with a fancy name slapped on. Gann_Reversal_Confluence isn't that. After running it on multiple timeframes and instruments for two weeks, I can tell you exactly what it does, where it shines, and where it'll burn you.
+This one is worth a closer look precisely because it doesn't pretend to be something it isn't. Most "Gann" scripts on TradingView plot a raw bar pattern and stop there — every swing break gets a triangle, meaningful turn or noise. This indicator keeps the classic pattern detection but scores each trigger against the context, so you can see how much is lining up rather than just that a shape appeared.
 
 ## What It Actually Does
 
-This indicator combines two distinct reversal detection methods into one signal. It tracks angular price movements (the Gann angle concept) and cross-references them with momentum divergence. When both conditions align at a key swing point, you get a labeled reversal signal on the chart.
+The script detects one of three classic reversal triggers, selectable in settings:
 
-The key word here is *confluence*. It's not firing arrows every five bars like some hyperactive scalp tool. In my testing on BTCUSD 4H and EURUSD 1H, it produced maybe 2-4 quality signals per week per pair. That's the first thing I liked — it's selective.
+- **Swing** — price closes beyond the recent N-bar high/low.
+- **Key Reversal** — a new extreme that closes back through the prior close.
+- **Outside Bar** — engulfs the prior range and closes in the reversal direction.
+
+Every raw pattern is then checked against up to five independent factors, and the results are tallied into a confluence score shown next to each signal and in the status table. It is not firing arrows indiscriminately — the entire premise is that a shape alone is a trigger, not a signal, and the score tells you how much context agrees.
 
 ## Key Features That Matter
 
-**Dual confirmation logic** — This is the differentiator. Most reversal indicators rely on one calculation. This one requires price action to confirm both the angle-based projection and the momentum shift. When both fire together, the win rate jumps noticeably.
+**Confluence scoring** — This is the differentiator. Each pattern is checked against:
 
-**Swing point detection** — The indicator automatically identifies structural highs and lows, then plots reversal signals only at those locations. This filters out the noise that plagues single-candle reversal systems.
+- **Range (ATR)** — was the bar itself big enough to matter, or just noise?
+- **Volume** — did participation back the move?
+- **Momentum (RSI)** — was the market actually stretched, or was this a mid-range wiggle?
+- **Trend (EMA)** — is this a pullback with the trend, or a potential trend change against it? This one is shown, not scored against you.
+- **Hour-ruler (optional)** — a traditional Chaldean planetary-hour tag. Descriptive only, not a validated filter.
 
-**Customizable sensitivity** — You can adjust the angle tolerance and momentum threshold independently. This is where the real power is. Crank them both tight for scalping, loosen them for swing trading.
+**Cooldown** — a minimum bar gap between signals stops the same swing from re-triggering repeatedly.
 
-## Settings I Actually Tested
+**Bar-close commitment** — everything commits on bar close only. Nothing here repaints or changes after the fact.
 
-After grinding through different configurations, here's what held up:
+## Settings and How to Tune Them
 
-- **Default settings** on 4H charts: Solid. The signals were delayed slightly but reliable on trending pairs.
-- **Angle tolerance at 65-70%** with **momentum threshold at 80%**: This was the sweet spot on EURUSD. Fewer signals, but the ones that fired had noticeably cleaner follow-through.
-- **On 15M charts**: Tighten both settings to 50-60%. Otherwise you'll wait hours between signals.
-- **On 1D charts**: Loosen everything. The default settings over-filter daily moves.
+The settings are grouped into four sections:
 
-The MACD chart setup in the screenshot above shows how the signals align with momentum shifts. Notice how the reversal labels consistently appear near the zero-line cross — that's the confluence mechanism working.
+- **Logic** — reversal method, swing length, close vs. wick confirmation, minimum bars between signals.
+- **Confluence** — independently toggle ATR/Volume/RSI/Trend, tune each threshold, and set the minimum score required to show a signal.
+- **Astro (optional)** — off by default; enables the hour-ruler tag and lets you set a location for the sunrise/sunset calc it depends on.
+- **Display** — swing band, signal level lines, background highlight, confluence score label, status table (with position control), colors, and line styling.
 
-## How I Actually Trade It
+The recommended starting point is the defaults. Watch how the confluence score moves with the setups you'd have taken anyway. When you're ready to filter, raise the minimum confluence score to hide everything below your conviction threshold — for example, set it to 3 to only see signals where 3+ factors agree.
 
-The indicator gives you reversal labels. The entries and exits are on you. Here's the framework I settled on:
+## How to Use It
 
-**Long setup**: Bullish reversal label appears at a swing low → wait for the next candle to close above the label's high → enter on the following open. Stop loss goes below the swing low by 1.5x the average true range. Target is the nearest opposing swing point or 2R, whichever comes first.
-
-**Short setup**: Mirror that logic at swing highs.
-
-The critical rule: **only take signals in the direction of the higher timeframe trend.** On a 4H chart, check the daily trend first. Against the daily trend, the indicator's signals drop to roughly coin-flip accuracy. With the trend, I measured about 68% win rate over 47 trades across BTC, EURUSD, and Gold.
+The signal level line each signal draws is a reference point for how price behaved on the next visit — not a target. The indicator is a confluence aid, meant to sit alongside your own read of the chart and risk management, not a standalone entry/exit system. It gives you the trigger and the context score; the entries and exits are on you.
 
 ## The Honest Trade-Offs
 
 **Pros:**
-- Genuinely selective — filters out most false signals
-- The confluence logic is transparent, not a black box
-- Works across timeframes with minor tweaks
-- Visual output is clean and readable
+- Selectivity is built in — the score filters raw patterns rather than flagging all of them
+- The confluence logic is transparent and itemized, not a black box
+- The astro layer is clearly labeled descriptive, not evidence
+- Non-repainting — every signal is final the moment it prints
 
 **Cons:**
-- Repaints slightly. The signal can shift a bar or two on the daily timeframe as the swing point solidifies. On intraday charts it's stable.
 - No built-in stop loss or take profit levels. This is a signal generator, not a complete system.
-- During ranging markets, it produces almost nothing. That's by design, but frustrating if you don't check the broader market context first.
+- During ranging markets it produces almost nothing. That's by design, but frustrating if you don't check the broader market context first.
+- The hour-ruler tag may read as signal to traders who don't heed the "descriptive only" caveat.
 
 ## Who Should Use This
 
-This is for traders who already have a direction bias and want an objective reversal trigger. If you're manually drawing structure and waiting for confirmations, this indicator automates that confirmation step. It's less useful for beginners who want a "buy/sell" arrow they can blindly follow — that's not what this does, and treating it that way will cost you money.
-
-## Better Alternatives
-
-If you want something simpler, **Squeeze Momentum Indicator** gives you clear momentum shifts with a color-coded histogram. If you want more aggressive signals, **SuperTrend** fires constantly but with a much lower accuracy. Gann_Reversal_Confluence sits in a middle ground — fewer signals, higher quality.
+This is for traders who already have a direction bias and want an objective reversal trigger with a visible context score. If you're manually drawing structure and waiting for confirmations, this automates the confirmation step. It's less useful for beginners who want a "buy/sell" arrow they can blindly follow — that's not what this does.
 
 ## FAQ
 
-**Does this work for crypto?**
-Yes, but stick to 2H or higher timeframes. The signal quality drops on lower timeframes due to crypto's noise.
-
 **Is it a repaint?**
-Intraday, no. On daily and weekly charts, the signal is confirmed after the swing point closes, so there's a one-bar lag possibility.
+No. Everything commits on bar close only, and every signal is final the moment it prints.
 
-**Can I use it for scalping?**
-Not effectively. It's designed for swing positions, not 5-minute trades.
+**What does the hour-ruler do?**
+It's an optional, off-by-default Chaldean planetary-hour tag layered on top of the technical factors. Treat it as a curiosity, not evidence on its own.
+
+**Can I use it without the confluence factors?**
+The ATR, Volume, RSI, and Trend checks are independently toggleable, and the minimum score is adjustable, so you control how much filtering is applied.
 
 ## Final Verdict
 
-Gann_Reversal_Confluence earns its 4 stars by doing one thing well: identifying high-probability reversal zones without spamming the chart. It's not a complete system, but as a confluence filter for your existing strategy, it's genuinely useful. The selectivity is its strength — and its limitation. If you're patient and already have a directional framework, this will sharpen your entries. If you're looking for a magic arrow machine, keep scrolling.
+This script earns its place by doing one thing well: keeping the classic Gann reversal patterns but scoring each one against the context that matters, so you can see how much is lining up rather than just that a shape appeared. It's not a complete system — no stops, no targets — but as a confluence filter alongside your existing strategy, it's a defensible tool. The selectivity is its strength and its limitation. If you're patient and already have a directional framework, it sharpens the trigger step. If you're looking for a magic arrow machine, keep scrolling.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — A quality tool with clear limitations. Worth the install for swing traders who value precision over frequency.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

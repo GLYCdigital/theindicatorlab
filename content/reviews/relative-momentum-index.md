@@ -16,46 +16,43 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Relative_Momentum_Index review: settings, pros/cons, entry signals, and who it's for. A solid RMI variant with clear overbought/oversold zones."
+grounding: "none (no source found)"
 ---
-
-The Relative_Momentum_Index (RMI) isn’t just a renamed RSI. I’ve tested it on BTC/USD, ES futures, and a handful of forex pairs over the past week. It’s a momentum oscillator that replaces the RSI’s simple up/down close comparison with a “momentum” lookback — meaning it compares today’s close to the close *N* bars ago, not just the prior bar. That small twist makes a real difference in choppy markets.
+The Relative_Momentum_Index (RMI) isn’t just a renamed RSI. It’s a momentum oscillator that replaces the RSI’s simple up/down close comparison with a “momentum” lookback — meaning it compares today’s close to the close *N* bars ago, not just the prior bar. That small twist changes behavior in choppy markets.
 
 Let’s cut through the noise.
 
 ### What This Indicator Actually Does
 
-The RMI calculates momentum by taking the ratio of positive and negative price changes over a user-defined length, but instead of using consecutive bar changes (like RSI), it uses a *momentum period*. Default is 5, meaning it checks close vs. close 5 bars ago. The result is a smoother, less whippy line that still respects the 0–100 scale with standard overbought/oversold thresholds.
+The RMI calculates momentum by taking the ratio of positive and negative price changes over a user-defined length, but instead of using consecutive bar changes (like RSI), it uses a *momentum period*. The result is a smoother, less whippy line that still respects the 0–100 scale with standard overbought/oversold thresholds.
 
-On the chart above, you can see how the RMI avoids the constant false signals RSI gives in ranging markets. It stays in neutral territory longer, which is actually a good thing — fewer fake-outs.
+Because the comparison spans multiple bars rather than one, the RMI tends to avoid the constant false signals RSI gives in ranging markets. It stays in neutral territory longer, which means fewer fake-outs.
 
 ### Key Features That Set It Apart
 
-- **Momentum period input** — This is the secret sauce. You can set it to 3, 5, or even 10. Higher values = smoother line, fewer signals, but higher reliability.
-- **Built-in smoothing options** — SMA, EMA, WMA, etc. for the RMI line itself. Most users ignore this, but applying a 3-period SMA to the RMI cleans up noise even further.
-- **Overbought/overshoot levels** — Fully adjustable. Default 70/30, but I found 80/20 works better for trending instruments.
-- **Alert conditions** — Crossovers, level touches, divergence. Useful if you’re automating.
+- **Momentum period input** — This is the core differentiator. A higher value produces a smoother line and fewer signals; a lower value makes it more responsive.
+- **Built-in smoothing options** — SMA, EMA, WMA and similar for the RMI line itself. Most users ignore this, but applying a short smoothing average to the RMI cleans up noise further.
+- **Overbought/oversold levels** — Fully adjustable. Standard thresholds sit at 70/30.
+- **Alert conditions** — Crossovers, level touches, divergence.
 
-### Best Settings (What I Actually Used)
+### Settings and How to Tune Them
 
-After testing across timeframes:
+- **Length**: the standard RSI length is the common starting point.
+- **Momentum period**: shorter for intraday, longer for daily and above to reduce noise on higher timeframes.
+- **Smoothing**: a short SMA on the RMI line damps jitter.
+- **Overbought/Oversold**: adjustable; wider thresholds reduce the number of signals in strong trends.
 
-- **Length**: 14 (standard RSI length — don’t change this unless you know why)
-- **Momentum period**: 5 for intraday (1h–4h), 8 for daily+ (reduces noise on higher timeframes)
-- **Smoothing**: 3-period SMA on the RMI line — this kills the jitter
-- **Overbought**: 75 (not 70 — fewer false tops in strong trends)
-- **Oversold**: 25 (not 30 — avoids buying into minor dips in bear trends)
-
-Pro tip: On the 15m chart for ES, set momentum period to 3 and overbought to 80. You’ll catch stronger moves.
+None of these values is universally correct. The momentum period and the overbought/oversold levels in particular need to be matched to the instrument and timeframe you trade, since the indicator’s sensitivity is entirely a function of those inputs.
 
 ### How to Use It for Entries and Exits
 
-**Long entry**: Wait for RMI to dip below 25 (oversold) *and* cross back above it. Don’t buy the first touch — let it confirm with a cross. On the chart above, you can see two clean buys in early May.
+**Long entry**: Wait for RMI to dip below the oversold level *and* cross back above it. Don’t buy the first touch — let it confirm with a cross.
 
-**Short entry**: RMI above 75, then crosses back down. Same logic — let it confirm.
+**Short entry**: RMI above the overbought level, then crosses back down. Same logic — let it confirm.
 
-**Exit**: Trail with a 10-period SMA of price, or close when RMI crosses back above 70 from below on a long (or below 30 on a short). For tighter exits, watch for RMI divergence against price (price makes higher high, RMI makes lower high → short bias).
+**Exit**: Trail with a moving average of price, or close when RMI crosses back through the overbought/oversold level in the opposite direction. For tighter exits, watch for RMI divergence against price (price makes a higher high, RMI makes a lower high → short bias).
 
-**Divergence**: This is where RMI shines. Because it’s smoother than RSI, divergences are clearer. Mark a lower high in RMI while price makes a higher high → that’s a legit bearish divergence.
+**Divergence**: Because it is smoother than RSI, divergences tend to be clearer. Mark a lower high in RMI while price makes a higher high → that’s a bearish divergence.
 
 ### Honest Pros and Cons
 
@@ -68,16 +65,16 @@ Pro tip: On the 15m chart for ES, set momentum period to 3 and overbought to 80.
 **Cons**:
 - Still lags in fast breakouts (all momentum oscillators do)
 - Overbought/oversold levels need tweaking per asset (no one-size-fits-all)
-- Not great for scalping — too slow for 1m charts
+- Not great for scalping — too slow for the fastest charts
 - No built-in divergence detection (you have to look manually)
 
 ### Who It’s Actually For
 
-- **Swing traders** on 4h–daily — this is your sweet spot
+- **Swing traders** on higher timeframes — this is your sweet spot
 - **Position traders** who want a cleaner momentum read than RSI
 - **Anyone frustrated by RSI’s noise** in choppy markets
 
-Not for scalpers or algorithmic traders who need ultra-fast signals. If you trade 1m or 5m, look elsewhere.
+Not for scalpers or algorithmic traders who need ultra-fast signals.
 
 ### Better Alternatives
 
@@ -87,27 +84,35 @@ Not for scalpers or algorithmic traders who need ultra-fast signals. If you trad
 
 ### FAQ
 
-**Q: Is RMI better than RSI?**  
+**Q: Is RMI better than RSI?**
 A: “Better” depends on your style. RMI is *smoother* — fewer false signals — but slower. If you’re a swing trader, yes. If you scalp, no.
 
-**Q: What momentum period should I use?**  
-A: Start with 5. For daily charts, try 8. For 1h, 3–5 works. Test it — you’ll see the difference in noise reduction.
+**Q: What momentum period should I use?**
+A: It depends on the timeframe. Shorter periods suit intraday work; longer periods suit daily and above. Test it yourself and watch how the noise changes.
 
-**Q: Can I use RMI for crypto?**  
-A: Yes, but set overbought to 80 and oversold to 20. Crypto trends are violent — standard 70/30 will get you stopped out.
+**Q: Can I use RMI for crypto?**
+A: Yes, but crypto trends are violent — the standard 70/30 levels will trigger far more often, so consider wider thresholds.
 
-**Q: Does it repaint?**  
+**Q: Does it repaint?**
 A: No. It’s a standard oscillator — once the bar closes, the value is fixed.
 
 ### Final Verdict
 
-The Relative_Momentum_Index is a refined RSI. It won’t blow your mind, but it fixes the one thing that annoyed me about RSI: the constant noise in sideways markets. If you already use RSI and find it too twitchy, switch to RMI with a momentum period of 5–8 and a 3-period SMA smooth. You’ll get cleaner signals and fewer false alarms.
+The Relative_Momentum_Index is a refined RSI. It won’t blow your mind, but it addresses the main complaint about RSI: the constant noise in sideways markets. If you already use RSI and find it too twitchy, RMI with a longer momentum period and a short smoothing average is worth a look.
 
 For swing traders on higher timeframes, it’s a solid 4/5. For scalpers, skip it.
 
 **Rating**: ⭐⭐⭐⭐ (4/5)
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Momentum** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 55.3%, AMD 54.0%, AAPL 53.7%, SPY 53.5%
+- Weakest markets: LTCUSD 46.4%, VIX 44.7%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

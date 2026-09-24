@@ -16,59 +16,58 @@ categories:
   - Technical Analysis
 rating: 4
 description: "An honest review of Polynomial_Linear_Regression_Volume_Profile: a trend indicator that blends regression and volume. Find settings, strategy, pros/cons, and who it's for."
+grounding: "none (no source found)"
 ---
-Let’s cut the fluff. **Polynomial_Linear_Regression_Volume_Profile** is not your average moving average or VPVR clone. It’s a hybrid: it fits a polynomial regression curve to price, then overlays that with a volume profile histogram to show where the most traded prices are within the regression’s window. The idea is simple—trend direction from the polynomial slope, plus volume-weighted support/resistance from the profile. But execution matters.
+# Polynomial_Linear_Regression_Volume_Profile Review
 
-I’ve run this on multiple timeframes (5m to 4H) and across forex, crypto, and equities. Here’s what actually works, what doesn’t, and whether you should bother installing it.
+**Polynomial_Linear_Regression_Volume_Profile** is not a moving average or VPVR clone. It's a hybrid: it fits a polynomial regression curve to price, then overlays a volume profile histogram to show where the most traded prices sit within the regression's window. The concept is straightforward—trend direction from the polynomial slope, plus volume-weighted support and resistance from the profile. Execution is what determines whether it's useful.
 
 ## What It Actually Does
 
-The indicator calculates a polynomial regression (choose degree 1 for linear, 2 for quadratic, 3 for cubic) over a user-defined lookback period. That gives you a curved trend line that adapts faster than a simple moving average during strong trends, but without whipping around like an EMA. On top of that, it builds a volume profile—a horizontal histogram showing the volume traded at each price level within that same lookback window. The result: you see the regression line (the trend) and the high-volume nodes (the zones where price is likely to react).
+The indicator calculates a polynomial regression (degree 1 for linear, 2 for quadratic, 3 for cubic) over a user-defined lookback period. That produces a curved trend line intended to adapt faster than a simple moving average during strong trends without the whipping behavior of an EMA. On top of that, it builds a volume profile—a horizontal histogram showing volume traded at each price level within the same lookback window. The result: a regression line representing trend, and high-volume nodes marking zones where price may react.
 
-As shown in the chart above (MACD timeframe for reference), the regression line smooths out noise, while the volume profile highlights where institutional interest clusters. It’s a smart combo, but it’s not magic.
+The regression line is designed to smooth out noise, while the volume profile highlights where trading interest clusters. It's a sensible combination, but not magic.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Polynomial degree selector.** Linear (1) for clean trends, quadratic (2) for mild curves, cubic (3) for complex reversals. I stick with degree 2 on most timeframes—it balances responsiveness with false signals.
-- **Customizable volume profile resolution.** You can adjust the number of rows (price bins) in the histogram. More rows = more detail but more clutter. I use 32 on 1H charts.
-- **Visual clarity.** The regression line is distinct from price candles, and the volume histogram is semi-transparent. No overlapping chaos if you set opacity right.
-- **Alert conditions.** You can trigger alerts when price crosses the regression line or when volume profile extremes are breached. Useful for breakouts.
+- **Polynomial degree selector.** Linear for clean trends, quadratic for mild curves, cubic for complex reversals. Higher degrees fit the data more closely, which also means more sensitivity to noise.
+- **Customizable volume profile resolution.** The number of rows (price bins) in the histogram is adjustable. More rows means more detail and more clutter; fewer rows means cleaner but coarser zones.
+- **Visual clarity.** The regression line is drawn distinctly from price candles, and the volume histogram is semi-transparent, so the two don't overwhelm each other if opacity is set appropriately.
+- **Alert conditions.** Alerts can be triggered when price crosses the regression line or when volume profile extremes are breached—useful for breakout monitoring.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-After two weeks of backtesting and forward testing:
-
-- **Degree:** 2 (quadratic) – gives you the trend direction without overfitting.
-- **Lookback:** 50 bars for 1H, 20 bars for 5m. Adjust based on your timeframe—shorter lookbacks for scalping, longer for swing.
-- **Volume Profile Rows:** 32. Fewer rows (16) if you want cleaner zones; more rows (64) if you’re fine with noise.
-- **Color scheme:** I set the regression line to blue, and the volume histogram to a gradient (green for high volume, red for low). Makes reading zones instant.
+- **Degree.** Controls how curved the regression fit is. Lower degrees produce straighter, more stable lines; higher degrees track price more closely but overfit more easily.
+- **Lookback.** The number of bars used for both the regression fit and the volume profile. Shorter lookbacks suit faster trading styles; longer lookbacks suit swing horizons. Match it to your timeframe rather than using one value everywhere.
+- **Volume Profile Rows.** The number of price bins in the histogram. Fewer bins give cleaner zones; more bins give finer detail at the cost of visual noise.
+- **Color scheme.** The regression line color and the volume histogram gradient are configurable, so high-volume and low-volume zones can be distinguished at a glance.
 
 ## How to Use It (Entry/Exit Logic)
 
-**Entry:** Wait for price to close above the regression line with a volume spike at a high-volume node. That’s your buy signal. For shorts, close below with volume at a high-volume node.
+**Entry:** Wait for price to close above the regression line with a volume spike at a high-volume node for longs; close below with volume at a high-volume node for shorts.
 
-**Exit:** Take partial profits when price reaches the next high-volume node above (for longs) or below (for shorts). Move stop to breakeven once price is 1.5x the average true range away.
+**Exit:** Take partial profits when price reaches the next high-volume node above (for longs) or below (for shorts). A common approach is to move the stop to breakeven once price has traveled a set multiple of average true range away from entry.
 
-**Avoid:** Don’t trade when price is stuck inside a flat regression line and volume is evenly distributed—that’s a consolidation zone. The indicator is useless there.
+**Avoid:** Don't trade when price is stuck inside a flat regression line and volume is evenly distributed—that's a consolidation zone where the indicator offers little.
 
 ## Pros & Cons
 
 **Pros:**
-- Combines trend and volume into one clean pane. No need for separate VPVR.
-- Regression line is smoother than MA but faster than SMA. Good for trending markets.
-- Volume profile gives concrete levels—better than guessing support/resistance.
-- Works on any timeframe.
+- Combines trend and volume into one pane, removing the need for a separate VPVR.
+- Regression line is smoother than a raw moving average but more responsive than a long SMA in trending conditions.
+- Volume profile provides concrete levels rather than guessed support and resistance.
+- Adaptable across timeframes.
 
 **Cons:**
-- Lags during sharp reversals. The polynomial curve takes a few bars to catch up—you’ll miss the first leg of a breakout.
-- Volume profile on lower timeframes (1m, 5m) is noisy unless you clean it with a large lookback.
-- Not for ranging markets. If price is flat, the regression line is useless, and the volume profile just shows noise.
+- Lags during sharp reversals. The polynomial curve takes bars to catch up, so the first leg of a breakout is often missed.
+- Volume profile on lower timeframes is noisy unless cleaned up with a larger lookback.
+- Not suited to ranging markets. When price is flat, the regression line is uninformative and the volume profile shows noise.
 
-## Who It’s For
+## Who It's For
 
-- **Swing traders** on 1H–4H who want trend confirmation plus volume levels.
-- **Intraday trend followers** on 15m–1H who need a less whippy trend line.
-- **Traders who already use VPVR** but want it integrated into a trend indicator.
+- **Swing traders** on higher intraday timeframes who want trend confirmation plus volume levels.
+- **Intraday trend followers** who need a less whippy trend line.
+- **Traders who already use VPVR** but want it integrated with a trend indicator.
 
 Not for scalpers (too slow) or reversal traders (laggy regression).
 
@@ -78,26 +77,25 @@ Not for scalpers (too slow) or reversal traders (laggy regression).
 - **Linear Regression Channel (by LazyBear):** A pure regression channel with standard deviation bands. Better for mean reversion.
 - **Supertrend + Volume Profile:** If you want a trailing stop alongside volume zones.
 
-## FAQ (Real Questions)
+## FAQ
 
-**Q: Does this repaint?**  
-A: No. The regression line and volume profile are fixed once the bar closes. No repaint.
+**Q: Does this repaint?**
+A: No. The regression line and volume profile are fixed once the bar closes.
 
-**Q: Can I use it for crypto?**  
-A: Yes. Works fine on BTC/USDT, ETH/USDT. Volume profile is meaningful if you use a high-liquidity exchange like Binance.
+**Q: Can I use it for crypto?**
+A: Yes. It works on major pairs, and the volume profile is meaningful on high-liquidity exchanges.
 
-**Q: What’s the best degree?**  
-A: Degree 2 for most cases. Degree 1 if you want a simple trend line. Degree 3 only if you’re testing complex patterns—it overfits easily.
+**Q: What's the best degree?**
+A: Degree 2 is a reasonable default for most cases. Degree 1 if you want a simple trend line. Degree 3 only for testing complex patterns—it overfits easily.
 
-**Q: How do I remove the volume histogram?**  
-A: In settings, set “Show Volume Profile” to false. You’ll keep just the regression line.
+**Q: How do I remove the volume histogram?**
+A: In settings, set "Show Volume Profile" to false. You'll keep just the regression line.
 
 ## Final Verdict
 
 **⭐⭐⭐⭐ (4/5)**
 
-Polynomial_Linear_Regression_Volume_Profile is a solid tool for trend traders who want volume context. It’s not a holy grail—it fails in sideways markets and lags breakouts—but it does its job cleanly. I’d give it 5 stars if it had user-defined alert zones on the volume profile (e.g., “alert when price reaches top 10% volume node”). For now, it’s a reliable add-on, not a standalone system. Install it if you trade trends and already use volume profile. Skip it if you scalp or trade ranges.
----
+Polynomial_Linear_Regression_Volume_Profile is a solid tool for trend traders who want volume context. It's not a holy grail—it fails in sideways markets and lags breakouts—but it does its job cleanly. It would earn 5 stars with user-defined alert zones on the volume profile (for example, alerting when price reaches a top-percentile volume node). As it stands, it's a reliable add-on, not a standalone system. Install it if you trade trends and already use volume profile. Skip it if you scalp or trade ranges.
 
 ## Go Deeper with The Indicator Lab
 

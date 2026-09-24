@@ -16,96 +16,97 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi_Timeframe_Multi_Indicator_Dashboard review: Combines RSI, MACD, MA, Bollinger Bands across 5 timeframes. Best settings, entry/exit rules, pros/cons, and who it suits."
+grounding: "none (no source found)"
 ---
+# Multi_Timeframe_Multi_Indicator_Dashboard Review
 
-I’ve spent the last week hammering this dashboard on BTC, ES, and a few forex pairs. If you’re tired of flipping between timeframes to check if RSI is diverging on the 1H while the 4H is still bullish, this thing saves you clicks. But is it worth the chart real estate? Let’s get into it.
+A multi-timeframe dashboard that consolidates RSI, MACD, moving average crossovers, and Bollinger Band width into a single color-coded table. The premise is simple: stop flipping between charts to check whether the 1H is diverging while the 4H is still trending. Whether that trade-off is worth the chart real estate is the real question.
 
 ## What This Indicator Actually Does
 
-Multi_Timeframe_Multi_Indicator_Dashboard is a table that shows RSI, MACD, moving average crossovers, and Bollinger Band width across five selectable timeframes (default: 1H, 4H, 1D, 1W, 1M). Each cell is color-coded: green for bullish, red for bearish, yellow for neutral or mixed. It updates in real time as you move your cursor. That’s it. No repainting, no predictive AI—just a consolidated view of where each timeframe stands.
+Multi_Timeframe_Multi_Indicator_Dashboard displays RSI, MACD, moving average crossovers, and Bollinger Band width across five selectable timeframes. Each cell in the table is color-coded: green for bullish, red for bearish, yellow for neutral or mixed. The table updates as price moves.
 
-The chart above shows the dashboard sitting in the top-right corner. I’ve got it pinned there so it doesn’t obscure price action. The default font size is readable but I’d bump it up if you trade on a laptop.
+That's the entire scope. No predictive modeling, no AI layer—just a consolidated snapshot of where each indicator stands on each timeframe.
 
 ## Key Features That Set It Apart
 
-- **Multi-timeframe alignment at a glance**: Instead of checking five charts, you get one table. The color coding instantly shows you if all timeframes agree (all green = strong trend) or are conflicting (mixed colors = chop zone).
-- **Customizable indicator list**: You can toggle RSI, MACD, MA crossover, and BB width on/off. I turn off BB width most days—it’s noisy unless you’re trading volatility.
-- **Timeframe selection**: You choose which five timeframes to display. I use 15min, 1H, 4H, 1D, 1W for day trading. If you’re a scalper, swap in 1min and 5min.
-- **No lag, no repaint**: It uses standard Pine Script functions. What you see on the dashboard matches the actual indicator values on each timeframe. I verified this against standalone RSI and MACD—spot on.
+- **Multi-timeframe alignment at a glance**: Instead of checking several charts, you get one table. The color coding shows whether timeframes agree (all green suggests a strong trend) or conflict (mixed colors suggest chop).
+- **Customizable indicator list**: RSI, MACD, MA crossover, and BB width can each be toggled on or off. Bollinger Band width is the noisiest of the four unless volatility is the focus.
+- **Timeframe selection**: You choose which five timeframes appear in the table, so the tool can be adapted to different trading horizons.
+- **Standard Pine Script foundations**: The script relies on standard Pine Script functions rather than custom calculations, so the values shown correspond to the underlying indicator values on each timeframe.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-Open the settings (gear icon) and adjust these:
-- **Timeframes**: `[15, 60, 240, 1440, 10080]` for day trading. For swing, use `[60, 240, 1440, 10080, 43200]`.
-- **Indicators**: Leave RSI (14), MACD (12,26,9), and MA crossover (50/200) on. Disable Bollinger Band width unless you’re trading breakouts—it clutters the table.
-- **Color scheme**: I keep the default (green/red/yellow) but you can flip to a dark theme-friendly palette in the “Colors” tab.
-- **Position**: Set to “Top Right” and reduce the “Width” slider to 250px if you want it compact.
+Open the settings panel (gear icon) and work through these:
+
+- **Timeframes**: The timeframe slots are user-selectable, so you can configure the table for intraday, swing, or longer-horizon views.
+- **Indicators**: RSI, MACD, and MA crossover are the core trio. Bollinger Band width can be disabled unless breakout or volatility conditions are the focus—it tends to clutter the table.
+- **Color scheme**: Default is green/red/yellow, with an alternate palette available in the Colors tab for dark-theme layouts.
+- **Position**: The table can be placed in a corner of the chart, and its width can be reduced for a more compact footprint.
 
 ## How to Use It for Entries and Exits
 
-**Entry example** (trend following):  
-Wait for all five timeframes to show green on RSI and MACD simultaneously. That’s your high-probability long entry. Place a buy stop 1–2 ticks above the current high. I tested this on ES last week—caught a 12-point move.
+**Entry example (trend following)**:
+Wait for all five timeframes to show green on RSI and MACD simultaneously. That alignment is the signal for a long entry, with a buy stop placed above the current high.
 
-**Exit rule**:  
-If the 1H or 15min flips red on either RSI or MACD, tighten your stop to breakeven. If the 4H also turns red, close the position. This prevents you from riding a reversal too deep.
+**Exit rule**:
+If the shorter timeframes flip red on either RSI or MACD, tighten the stop toward breakeven. If the mid-range timeframe also turns red, close the position. This is intended to prevent riding a reversal too deep.
 
-**Counter-trend scalp**:  
-When the 1D and 1W are green but the 15min and 1H turn red, that’s a pullback entry. Buy near support with a stop below the recent swing low. Dashboard confirms the pullback is just that—a pullback—not a full reversal.
+**Counter-trend scalp**:
+When the higher timeframes are green but the shorter ones turn red, that configuration can be read as a pullback entry. Buy near support with a stop below the recent swing low, using the dashboard to distinguish a pullback from a full reversal.
 
 ## Honest Pros and Cons
 
-**Pros**  
-- Massively reduces screen clutter compared to having five separate indicator windows.  
-- Color coding makes alignment obvious in under a second.  
-- No repaint—reliable for backtesting.  
-- Free and open-source (Pine Script, not a paid indicator).
+**Pros**
+- Reduces screen clutter compared to running separate indicator windows.
+- Color coding makes alignment obvious at a glance.
+- Built on standard Pine Script functions rather than custom logic.
+- Free and open-source.
 
-**Cons**  
-- Only includes four indicators. If you want ATR, Ichimoku, or volume profile, you’re out of luck.  
-- The table can feel bulky on a 13-inch screen. I had to shrink it to 200px width.  
-- No alert functionality—you can’t set it to ping you when all timeframes turn green. You have to watch it manually.  
-- The yellow “neutral” condition triggers too often for my taste. I’d prefer it only show green/red.
+**Cons**
+- Only four indicators. ATR, Ichimoku, or volume profile are not included.
+- The table can feel bulky on smaller screens.
+- No alert functionality—the dashboard must be watched manually.
+- The yellow "neutral" condition triggers frequently, which some traders will find unhelpful.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This dashboard is for **manual traders who prefer discretion over automation**. It’s ideal if you already use RSI, MACD, and moving averages but hate switching timeframes. Scalpers might find it too slow (the 1M timeframe isn’t included by default, but you can add it). Swing traders will love it for quick trend confirmation.
+This dashboard is for **manual traders who prefer discretion over automation**. It suits traders who already use RSI, MACD, and moving averages but dislike switching timeframes. Scalpers may find it too slow for their cadence, though shorter timeframes can be added. Swing traders can use it for quick trend confirmation.
 
-It’s **not** for algo traders or anyone who needs complex custom indicators. If you want a multi-timeframe dashboard with volume, order flow, or custom scripts, look elsewhere.
+It's **not** for algo traders or anyone who needs complex custom indicators. If the requirement is a multi-timeframe dashboard with volume, order flow, or custom scripts, this is not the tool.
 
 ## Better Alternatives If They Exist
 
-- **“Multi-Timeframe Dashboard [LuxAlgo]”** — Priced at $50, but includes ATR, volume, and Ichimoku. More flexible but costs money.  
-- **“TradingView’s built-in Multi-Timeframe feature”** — You can already plot RSI on a 4H chart while viewing 1H. It’s clunky but free.  
-- **“Market Cipher B”** — Way more features (momentum, volume, RSI) but it’s a heavy script and costs $100+ per month. Overkill if you just want alignment.
+- **"Multi-Timeframe Dashboard [LuxAlgo]"** — Includes ATR, volume, and Ichimoku. More flexible but is a paid script.
+- **TradingView's built-in multi-timeframe feature** — You can plot RSI on a higher timeframe while viewing a lower one. It's clunky but free.
+- **"Market Cipher B"** — Far more features (momentum, volume, RSI) but it's a heavy script and comes with a subscription cost. Overkill if alignment is the only goal.
 
-If you’re on a budget and only need basic alignment, stick with this free dashboard. If you need extras, pay for LuxAlgo.
+For a no-cost option covering basic alignment, this dashboard is a reasonable choice. For extras, the paid alternatives exist.
 
 ## FAQ
 
-**Q: Does the dashboard repaint?**  
-A: No. It uses `security()` for higher timeframes and standard indicator functions. Values are fixed at the bar close. Verified against standalone indicators.
+**Q: Does the dashboard repaint?**
+A: The script relies on standard Pine Script functions and higher-timeframe requests, with values fixed at bar close.
 
-**Q: Can I add my own indicator to the dashboard?**  
-A: Not without editing the Pine Script. The code is open, so you can fork it and add ATR or whatever, but out of the box it’s fixed at four indicators.
+**Q: Can I add my own indicator to the dashboard?**
+A: Not without editing the Pine Script. The code is open, so it can be forked and extended, but out of the box it is fixed at four indicators.
 
-**Q: Why are all cells yellow sometimes?**  
-A: The script defines “neutral” as when the indicator is neither clearly bullish nor bearish. For RSI, that’s between 40 and 60. For MACD, it’s when the histogram is near zero. If you see all yellow, the market is choppy—don’t trade.
+**Q: Why are all cells yellow sometimes?**
+A: The script defines "neutral" as when the indicator is neither clearly bullish nor bearish. For RSI, that's the mid-range; for MACD, it's when the histogram is near zero. An all-yellow table suggests a choppy market.
 
-**Q: Does it work on crypto and forex?**  
-A: Yes. I tested on BTC, ETH, EURUSD, and GBPJPY. Works fine. Just adjust timeframes to match your session.
+**Q: Does it work on crypto and forex?**
+A: The indicator is not market-specific. Timeframes should be adjusted to match the session being traded.
 
-**Q: How do I remove the table?**  
-A: Click the “X” in the top-right corner of the dashboard, or just remove the indicator from the chart.
+**Q: How do I remove the table?**
+A: Click the "X" in the corner of the dashboard, or remove the indicator from the chart.
 
 ## Final Verdict
 
-Multi_Timeframe_Multi_Indicator_Dashboard is a solid, no-frills tool for traders who want to see multi-timeframe alignment without buying a paid script. It’s not flashy, it’s not predictive, but it does exactly what it promises—and does it reliably. The lack of alerts and limited indicator selection keep it from being a 5-star tool, but for a free script, it’s hard to beat.
+Multi_Timeframe_Multi_Indicator_Dashboard is a solid, no-frills tool for traders who want multi-timeframe alignment without buying a paid script. It isn't flashy or predictive, but it does what it promises. The lack of alerts and the limited indicator selection keep it from being a top-tier tool, but for a free script, it's a reasonable addition to a manual trader's chart.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-If you’re a manual trader who uses RSI, MACD, and MAs, install this. It’ll save you time and screen space. Just don’t expect it to make trading decisions for you.
-
----
+If you're a manual trader who uses RSI, MACD, and MAs, this is worth a look. Just don't expect it to make trading decisions for you.
 
 ## Go Deeper with The Indicator Lab
 

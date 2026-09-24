@@ -17,82 +17,92 @@ categories:
 rating: 4
 description: "Pattern_Atlas_Geometric_Indicator_Axealgo review: test findings, best settings, entry signals for trend trading. Read before you install."
 tv_script_url: "https://www.tradingview.com/script/rTfR2FWV-Pattern-Atlas-Geometric-Indicator-AxeAlgo/"
+sources: ["https://www.tradingview.com/script/rTfR2FWV-Pattern-Atlas-Geometric-Indicator-AxeAlgo/"]
 ---
-Let me be upfront: I didn't expect much from another "geometric pattern" indicator. Most of these are repackaged moving averages with fancy paint. But Pattern_Atlas_Geometric_Indicator_Axealgo surprised me — it's a genuinely different approach to trend analysis that earns its place on your chart, even if it has some rough edges.
+Let me be upfront: another "geometric pattern" indicator usually means repackaged moving averages with fancy paint. Pattern Atlas: Geometric Indicator [AxeAlgo] is not that. It is a chart-native scanner for classical price-structure patterns, and it takes a genuinely different approach to surfacing them.
 
 ## What This Actually Does
 
-Strip away the "Atlas" branding and you get a multi-timeframe trend detection engine that combines geometric projection (think Fibonacci-style retracement zones with angular momentum) and classic breakout logic. It draws trend channels, flags potential reversal zones, and — most usefully — colors bars based on trend strength. Unlike most trend indicators that just tell you "up" or "down," it shows you *when* a trend is losing its geometric coherence.
+Strip away the "Atlas" branding and you get a pattern-recognition layer that tracks confirmed swing pivots as they form and, when a run of pivots satisfies the geometry of a known pattern and its breakout condition, marks the pattern on the chart. It draws an outline box, an optional construction skeleton, a measured-move target, and a labelled pin signal, and it keeps a live status table of every pattern it knows.
 
-The screenshot above shows it on a MACD chart, which reveals something important: the indicator works *with* existing momentum tools rather than replacing them. The geometric zones it plots align well with MACD histogram shifts — a good sanity check that the signals aren't lagging garbage.
+All recognition logic lives in a companion Pine library, Pattern Atlas: Geometric [AxeAlgo]. This script is the visualization and alerting layer on top of it, so the detection rules stay in one place that can be maintained and audited on their own. That separation is a meaningful design choice — it means the pattern definitions are not buried inside the drawing code.
 
 ## Key Features That Stand Out
 
-- **Geometric projection zones**: The indicator projects likely support/resistance levels based on the *angle* of recent price movement, not just horizontal lines. This is smarter than standard channel indicators.
-- **Trend coherence scoring**: It assigns a "coherence score" (0-100) to the current trend. Below 40, it warns you the trend structure is unstable. I haven't seen this exact mechanic elsewhere.
-- **Adaptive lookback**: The indicator automatically adjusts its calculation window based on volatility, rather than forcing you to pick a fixed period. This handles ranging vs. trending markets better than static indicators.
-- **Clean visual hierarchy**: Signals don't clutter the chart. The essential zones and alerts are visible without turning your chart into a rainbow mess.
+- **Sixteen classical patterns**: Reversal patterns include Head & Shoulders and its Inverse, Double and Triple Tops and Bottoms, Rounding Tops and Bottoms, Diamond Tops and Bottoms, the Broadening Formation, and the V-Top / V-Bottom spike. Continuation patterns include Ascending, Descending, and Symmetrical Triangles; Rising and Falling Wedges; Bull and Bear Flags; Bull and Bear Pennants; the Rectangle; and Cup & Handle with its Inverted form. Structural patterns cover the Island Reversal and Bump-and-Run Reversal.
+- **Pivot-sequence logic**: Each pattern function inspects the recent pivot sequence for its defining shape together with the price move that confirms it. Head & Shoulders, for example, looks for three peaks with a lower-shoulder relationship and a close back through the neckline; an Ascending Triangle looks for a flat resistance base with a rising support line and a close through the base.
+- **Strength score**: A 0-to-100 percent score measuring how decisively price broke through the pattern's confirmation level, relative to the pattern's own price range. A higher score means a cleaner, more committed break.
+- **Measured-move targets**: A classical projection — the pattern's own height added to or subtracted from the breakout point, shown as a small price label.
+- **Clean visual hierarchy**: Boxes, optional construction lines and points, target labels, and pin signals. The skeleton elements are off by default, so the chart stays readable.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After testing across BTC, EUR/USD, and AAPL on multiple timeframes, these settings worked best:
+Pivot Detection controls the left bars, right bars, and the maximum number of pivots tracked. The "Pivot left bars" and "Pivot right bars" inputs set how many bars on each side of a candidate must be less extreme for it to count as a pivot. Higher values give fewer, more significant pivots and a longer confirmation lag.
 
-- **Trend Strength Threshold**: Set to 65. The default 50 generates too many false "strong trend" signals in choppy conditions.
-- **Projection Depth**: Keep at 3. Higher values create overlapping zones that confuse entries.
-- **Enable Discrepancy Alerts**: Turn this on. When price breaks a geometric zone but momentum (MACD) doesn't confirm, the indicator flags a discrepancy — that's your highest-probability signal.
+The Reversal, Continuation, and Structural groups each have a master enable switch plus one checkbox per pattern, so a whole category can be turned off in one click.
 
-## How I Actually Trade It
+Display controls the boxes, construction lines, construction points, targets, and pin signals; the minimum strength filter; the table on/off, position, and text size; and the bullish and bearish colours. The "Minimum pattern strength to show" input filters marginal matches off the chart and out of the alerts. Watermark switches between a Dark and a Light theme.
 
-The indicator shines as a confluence filter, not a standalone system. My tested approach:
+There is no single "best" configuration here — the pivot inputs trade sensitivity against confirmation lag, and the strength filter trades match count against selectivity.
 
-1. **Entry**: Wait for a trend coherence score above 70 AND price to bounce off a geometric zone (either the upper channel in an uptrend or lower channel in a downtrend).
-2. **Confirmation**: Check that MACD histogram is expanding in the trend direction. If the geometric zone says "buy" but MACD is flat, skip the trade.
-3. **Exit**: The geometric projection zones double as natural profit targets. Take partial profits at the next zone, trail the rest.
-4. **Stop loss**: Place stops just beyond the geometric zone that triggered the entry — not a fixed percentage.
+## How to Use It
 
-The discrepancy alerts are particularly useful for catching reversals early. When price breaks a zone but the coherence score drops below 40 simultaneously, that's a strong signal the trend is exhausted.
+This is a context tool, not a mechanical system. Matches report direction, the exact pivots they were built from, a text description, a strength score, and a measured-move target. Treat them as structured context for your own analysis rather than entry signals on their own.
+
+The scanner table lists every pattern with a live status column. When a pattern matches on the current bar the row shows its name and strength percent; when it does not, the row shows a dash. Hovering any row shows that pattern's description. The pin signal is a thin stem with a glowing gem at its tip, placed below the bar for a bullish match and above it for a bearish one — hovering the gem shows the full list of matches on that bar with their strength and targets.
+
+The indicator works best on liquid instruments and on timeframes where swings are well defined. Very low timeframes produce noisy pivots.
+
+## Repainting and Alerts
+
+Every box, line, target, and pin is drawn only on a closed bar. Each match is gated so it appears, and alerts, only once, on the bar it is first confirmed. Swing pivots are only known a number of bars after they occur, equal to "Pivot right bars" — that confirmation lag is structural to pivot-based analysis, not repainting. Nothing already drawn is moved or removed on later bars.
+
+There is one alert condition per pattern, plus an "Any Bullish Chart Pattern" and an "Any Bearish Chart Pattern" condition. There is also a single dynamic alert() call that fires once per closed bar with the full list of patterns found on that bar, along with their strength and targets — add it using the "Any alert() function call" option when creating the alert. Every alert condition is gated to confirmed bars in the code itself, so none of them can fire from a still-forming bar regardless of the alert frequency chosen.
 
 ## Pros & Cons
 
 **Pros:**
-- The geometric scoring actually predicts trend continuation better than I expected — roughly 65% accuracy in my backtests on daily charts
-- Adapts well across different asset classes without re-tuning
-- The discrepancy alert system is genuinely innovative
-- Clean interface — doesn't obscure price action
+- Covers a wide catalogue of classical patterns, organized into reversal, continuation, and structural groups
+- Recognition logic is isolated in a companion library, keeping detection rules auditable and maintainable
+- The strength score gives a quantitative read on how decisive the breakout was
+- Confirmed-bar gating and one-shot match firing keep the display stable
+- Construction lines and points are off by default, so the chart does not get cluttered
 
 **Cons:**
-- On lower timeframes (under 15 minutes), the adaptive lookback creates too many false zones
-- The documentation is vague about the exact geometric formulas — trust but verify with your own testing
-- Computationally heavier than standard trend indicators; can lag on older machines with multiple instances running
+- Chart-pattern recognition is inherently approximate — matches need confirmation with your own analysis
+- Measured-move targets are not shown for the Spike, the Island Reversal, or the Bump-and-Run Reversal, because those patterns have no reliable height to project from
+- Patterns defined by a single point always score a neutral 50 percent, since they have no internal range to measure against
+- Low timeframes produce noisy pivots
 
 ## Who Should Use This
 
-This is a swing trader's and position trader's tool. If you're trading on 1H to 1D charts, it will improve your trend-filtering process. Day traders will find it too slow and noisy. Beginners should skip it initially — you need to understand trend structure before geometric projections will help you.
+Traders who already think in terms of swing structure and classical chart patterns. If you want pattern matches surfaced automatically with a strength reading and a target, this does that. If you expect mechanical trade signals, this is not it — the author is explicit that matches are structured context.
 
 ## Better Alternatives
 
-If Pattern_Atlas doesn't fit your style, consider:
-- **Squeeze Momentum Indicator** — better for momentum-based entries if you care more about breakout timing than trend structure
-- **Supertrend** — simpler and more reliable for pure trend-following on lower timeframes
-- **LuxAlgo Smart Money Concepts** — if you prefer supply/demand logic over mathematical projections
+If this does not fit your style, consider:
+- **Squeeze Momentum Indicator** — for momentum-based entries where breakout timing matters more than structure
+- **Supertrend** — simpler trend-following
+- **LuxAlgo Smart Money Concepts** — if you prefer supply/demand logic over classical pattern geometry
 
 ## FAQ
 
-**Q: Does this replace MACD or other momentum indicators?**
-No. It complements them. The best results come from combining its trend coherence signals with momentum confirmation.
+**Q: Does this replace my own chart analysis?**
+No. Chart-pattern recognition is inherently approximate. Treat matches as structured context and confirm them with your own analysis.
 
-**Q: Is it good for crypto?**
-Yes, particularly on BTC and ETH daily charts. The adaptive lookback handles crypto's volatility well.
+**Q: Does it repaint?**
+No. Every box, line, target, and pin is drawn only on a closed bar, and each match is gated so it appears and alerts only once, on the bar it is first confirmed. The pivot confirmation lag equal to "Pivot right bars" is structural, not repainting.
 
-**Q: Will it repaint?**
-No. The zones are based on closed bars, so signals remain stable once formed.
+**Q: Why do some patterns have no target?**
+Targets are not shown for the Spike, the Island Reversal, or the Bump-and-Run Reversal, because those patterns have no reliable height to project from.
 
 **Q: Can I use it for automated trading?**
-The alerts are structured well enough to feed into basic bots, but I'd recommend manual trading until you fully understand the zone dynamics.
+There is one alert condition per pattern plus two "Any Bullish/Bearish Chart Pattern" conditions, and a dynamic alert() call that fires once per closed bar with the full list of matches, their strength, and targets. All alert conditions are gated to confirmed bars in the code.
 
 ## Final Verdict
 
-Pattern_Atlas_Geometric_Indicator_Axealgo earns a solid ⭐⭐⭐⭐. It's not a holy grail — the lower-timeframe noise and computational demands keep it from a perfect score. But the geometric coherence scoring genuinely improves trend analysis, and the discrepancy alert system is one of the more original ideas I've seen packed into a trend indicator this year. If you're a serious swing trader looking to add an edge to your trend confirmation, this is worth the price. Just don't abandon your basic support/resistance analysis — this enhances it, doesn't replace it.
+Pattern Atlas: Geometric Indicator [AxeAlgo] is a serious pattern scanner rather than a repackaged trend line. Its strengths are breadth of pattern coverage, a clean separation between detection logic and visualization, and a strength score that quantifies breakout conviction. Its limits are the inherent approximation of chart-pattern recognition, the absence of targets on height-less patterns, and noisy pivots on very low timeframes. It earns a place as a structural context tool — not a mechanical system, and not financial advice.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

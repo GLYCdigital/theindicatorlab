@@ -17,87 +17,97 @@ categories:
 rating: 4
 description: "Green_Red_Sweep_Candle review: a trend-following candle pattern indicator. Tested settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/MJiGR4lh-Green-Red-Sweep-Candle/"
+sources: ["https://www.tradingview.com/script/MJiGR4lh-Green-Red-Sweep-Candle/"]
 ---
-I'll be straight with you: most candle-pattern indicators on TradingView are repackaged garbage — they flash arrows after the move is already over, and you end up chasing wicks. So when I loaded Green_Red_Sweep_Candle on a MACD chart for a week of live testing, I expected more of the same. It's not. This is a genuinely useful trend-continuation tool that does one thing well: it identifies sweep candles that mark the resumption of an established move.
+Most candle-pattern indicators on TradingView are repackaged noise. They flash arrows after the move is already over, and you end up chasing wicks. Green_Red_Sweep_Candle is not that. It does one thing and describes it honestly: it finds a specific two-candle sweep sequence and draws the range it happened in.
 
 ## What This Indicator Actually Does
 
-Green_Red_Sweep_Candle is a trend-following pattern detector. It scans for a specific two-candle setup: a red candle that "sweeps" below a recent low (or above a recent high in bearish mode), immediately followed by a green candle that closes back inside the prior range. Think of it as a false-breakout trap — the market shakes out the weak hands, then reverses hard in the direction of the prevailing trend.
+Green_Red_Sweep_Candle is a structural pattern detector. It scans closed candles for a two-candle sequence in which the second candle first trades beyond the far side of the first — taking out the orders resting there — and only then closes past the opposite side. By the time it finishes, it has covered the first candle's entire range, in the direction it was already moving.
 
-The indicator plots colored candle backgrounds and optional alert markers when these setups complete. It doesn't repaint, which I verified by refreshing the chart and cross-referencing historical signals. That alone puts it ahead of half the catalog.
+That is the whole definition, and it is deliberately narrow. The script draws a rectangle over Candle 1's full High-to-Low range, stretched across both candles, and labels it. It does not produce entries, targets or stops.
 
 ## Key Features That Set It Apart
 
-The sweep logic is what separates this from generic engulfing-pattern scanners. Most indicators fire on any two-candle reversal, which means you're catching noise. Green_Red_Sweep_Candle requires the sweep to exceed a user-defined lookback period's extreme — the wick has to actually pierce a support/resistance level before the reversal candle closes. That's a meaningful filter.
+**The order matters, not just the shape.** Plenty of candles end up covering the one before them. What is being looked for here is a sequence: price first goes the wrong way far enough to clear the previous candle's extreme, and only after that commits the other way. A candle that simply opens beyond the previous range and runs is not the same event and is not reported.
 
-The built-in trend filter is the second standout. You can toggle it to only show bullish sweeps when price is above a moving average, and bearish sweeps when below. On the MACD chart I tested, this killed most of the whipsaw signals during the sideways chop between 14:00 and 18:00. Without the filter, you'd be entering on every two-bar wiggle.
+**The close decides, not the wick.** Reaching past the opposite side is not enough — the candle has to close beyond it. A long wick that pokes through and pulls back means the move was rejected, so it does not count. This single rule removes most of what a shape-based check would report.
 
-## Best Settings I Found
+**Both candles must share a colour.** This is what separates the pattern from an ordinary large candle. The first candle already committed to a direction; the second dips against it, clears the level, then closes even further in the same direction. A Doji, where close equals open, takes no part — a pair containing one is never reported.
 
-After running it across BTC/USD 15-minute, EUR/USD 1-hour, and S&P 500 daily, here's what worked:
+**It is deliberately rare.** A sweep on its own is common. A candle covering the previous one is common. Both together, in the same colour, with a close settling beyond, is not. Long stretches with nothing on the chart are normal and expected.
 
-- **Lookback period**: 20 bars is the sweet spot. Shorter (10) gives too many false sweeps in ranging markets; longer (50) delays signals until the reversal is already extended.
-- **Trend filter**: ON, with a 50-period SMA. This cut false signals by roughly 40% in my testing.
-- **Alert mode**: Enable both arrow alerts and candle-color changes. The visual cue alone isn't enough when you're multi-tasking.
-- **Timeframe**: Best on 15-minute to 1-hour charts. Below 5 minutes, the sweep noise becomes unmanageable.
+## Settings and How to Tune Them
 
-## How I Actually Traded It
+**Scan**
+- Scan Length: how many closed candles are scanned backwards from the latest bar. The running candle is always excluded. Increasing it raises the number of drawing objects; TradingView caps these at 500 boxes and 500 labels, and the oldest are dropped once a cap is reached.
 
-The entry logic that made sense to me: wait for the sweep candle to close, then enter on the next candle's open. Place your stop loss just beyond the sweep's extreme wick — that's your invalidation point. For take-profit, I used a 1.5R to 2R target, which gave me a solid win rate without overstaying.
+**Pattern Types**
+- A switch for Green Sweep Candle and one for Red Sweep Candle.
 
-The MACD chart in the screenshot shows a textbook long setup around the 09:30 mark. The red candle swept below the 20-period low, the green candle closed back above the sweep candle's body, and the trend filter confirmed price was above the SMA. Entered at open, stopped out at the wick's low, and it ran 2R in about 30 minutes. Clean.
+**Zone Style**
+- Bullish Zone and Bearish Zone colours, and the fill transparency of the box.
 
-One critical note: don't take every signal. The indicator works best when you combine it with your own bias. I ignored roughly half the signals because they contradicted higher-timeframe structure. The indicator is a tool, not a crystal ball.
+**Labels**
+- Show Labels, Label Size, and Label Distance from Zone as a percentage of the candle's height. Increase the distance on noisy charts so labels clear the candles.
+
+**Summary Table**
+- Show, position and size of the corner table.
+
+## How to Read the Chart
+
+Each detected pattern draws a rectangle over Candle 1's full High-to-Low range. Green Sweeps are drawn in the bullish colour with the label below the box; Red Sweeps in the bearish colour with the label above. The label points at its own box, so it is always clear which rectangle it belongs to.
+
+A summary table in the corner counts how many of each type were found inside the current scan window. It counts every pattern found, including a type that is currently switched off, so the table reflects what the market printed rather than what is on screen.
+
+## Alerts and Repainting
+
+Two alert conditions: Green Sweep Candle and Red Sweep Candle. Each message carries the pattern name, the symbol, the timeframe and the closing price. The same messages are also sent through the alert function, so the "Any alert() function call" alert type can deliver both through a single alert. All alerts are evaluated only after a candle has fully closed.
+
+The script does not repaint. Detection reads confirmed candles only — the scan starts one bar behind the latest bar, so the forming candle is never part of any calculation. Every alert signal is written so it can only become true once a candle has finished. Boxes are rebuilt on the last bar using confirmed history; a box that has been drawn does not move or change afterwards, and only leaves the chart when it falls outside the Scan Length window.
+
+When you create an alert, TradingView may show a caution banner saying the indicator can repaint. That banner appears automatically for any script using the built-in bar state variables, regardless of how they are used, because the platform cannot check the intent behind them. This script uses them for the opposite purpose. Choosing "Once Per Bar Close" when creating the alert is still recommended.
 
 ## Honest Pros & Cons
 
 **Pros:**
-- No repainting — rare and valuable in this category
-- The lookback sweep requirement filters out low-quality reversals
-- Trend filter is genuinely effective in trending conditions
-- Clean, unobtrusive visuals that don't clutter the chart
+- No repainting, and the reasons are spelled out rather than asserted
+- The order-of-events requirement filters out candles that merely cover the previous one
+- The close-beyond rule removes wick-only rejections
+- Purely structural — it reports where the sequence occurred and nothing more
 
 **Cons:**
-- Useless in ranging markets — expect whipsaw if you trade sideways action
-- No built-in position sizing or multi-timeframe confirmation
-- Signals lag slightly; you're buying after the reversal candle closes, not at the wick
-- The default color scheme (bright green/red backgrounds) gets visually noisy on lower timeframes
+- Rare by design; an empty chart is normal
+- No ranking by quality, no follow-through measurement, no entries, targets or stops
+- Detection lags by construction — the pattern is only known once the second candle closes
+- Increasing Scan Length raises drawing-object count against TradingView's caps
 
 ## Who Should Use This
 
-This is for trend traders who already have a directional bias and need a precise entry trigger. If you're a swing trader working 4-hour or daily charts, the sweep pattern can give you high-quality continuation entries. Day traders on 15-minute charts will get the most mileage. Scalpers and range traders should look elsewhere — this indicator will punish you in chop.
+Traders who already have a directional bias and want a structural reference area marked for them. The box marks a range that was swept and then closed through, and traders commonly watch these areas for continuation, for reaction when price returns to the box later — the swept edge in particular — and as confirmation alongside higher timeframe structure, where a sweep in the direction of the larger trend carries more weight than one against it.
 
-## Better Alternatives
+The swept edge — the Low of a Green Sweep, the High of a Red Sweep — is the level price reached before turning, and it is usually the more interesting side of the box.
 
-- **Sweep Logic by LuxAlgo**: More advanced sweep detection with volume confirmation, but heavier and slower on lower timeframes.
-- **Smart Money Concepts by LuxAlgo**: Better if you want order-block and liquidity-sweep analysis with a full institutional framework.
-- **Plain old price action**: If you're comfortable reading wicks and liquidity grabs manually, you can replicate this pattern without any indicator.
-
-## Real Questions Traders Ask
-
-**Does it repaint?** No. I verified signals remained stable after bar close and on chart refresh.
-
-**Can I use it on crypto?** Yes, it works well on BTC and ETH, especially on 15-minute and 1-hour charts.
-
-**What's the win rate?** In my testing, roughly 55-60% with a 1.5R target in trending conditions. It drops below 45% in ranging markets.
-
-**Does it work for shorting?** Yes, the bearish sweep logic is symmetrical and works just as well.
+These are reference areas, not entry signals on their own. Use them alongside your own support and resistance mapping, your own entry method and proper risk management.
 
 ## Final Verdict
 
-Green_Red_Sweep_Candle earns a solid four stars. It's not a holy grail — nothing is — but it's a well-built, honest trend-continuation tool that respects the trader's intelligence. The no-repaint guarantee and the sweep-filter logic make it worth adding to your toolkit if you trade trends and want cleaner entries. Just respect the trend filter, skip the chop, and you'll find it earns its place on your chart.
-
-⭐⭐⭐⭐ (4/5) — Recommended for trend traders who want precise continuation entries without indicator bloat.
+Green_Red_Sweep_Candle is a well-scoped detector. It defines its pattern precisely, draws it cleanly, and is upfront about how rare it is and what it does not do. If you want a pattern tool that respects your intelligence and doesn't pretend to be a strategy, it belongs on the chart. If you want signals to trade mechanically, look elsewhere — this is not that, and it doesn't claim to be.
 
 ## Frequently Asked Questions
 
-### Is Green_Red_Sweep_Candle worth it?
+**Does it repaint?** No. Detection reads confirmed candles only, and boxes are rebuilt on the last bar using confirmed history.
 
-Based on testing across multiple timeframes, Green_Red_Sweep_Candle delivers solid value for traders who need trend analysis.
+**What is the pattern, exactly?** For a Green Sweep: Candle 1 is green, Candle 2 is green, Candle 2's low is at or below Candle 1's low, and Candle 2 closes above Candle 1's high. The Red version mirrors it.
 
-### Does this indicator repaint?
+**Why is my chart empty?** The pattern is rare by design. Two conditions have to line up on the same pair of candles. If you want to see more of them, look at a faster timeframe rather than loosening anything.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+**Does it give buy and sell signals?** No. It reports where the sequence occurred. It does not rank patterns, measure follow-through, or produce entries, targets or stops.
+
+---
+
+*This indicator is a pattern detection tool. It is not financial advice and it makes no claim about profitability. Trading involves risk. Always apply your own analysis and risk management.*
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

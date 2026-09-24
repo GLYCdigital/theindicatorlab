@@ -17,72 +17,86 @@ categories:
 rating: 4
 description: "Parabolic SAR Constraint Kinematics Run Geometry review: how this trend-follower filters SAR whipsaws, best settings, entry logic, and who should install it."
 tv_script_url: "https://www.tradingview.com/script/MvAShOX5-Parabolic-SAR-Constraint-Kinematics-Run-Geometry/"
+sources: ["https://www.tradingview.com/script/MvAShOX5-Parabolic-SAR-Constraint-Kinematics-Run-Geometry/"]
 ---
-Most Parabolic SAR indicators are the same two lines copy-pasted into a new script. This one isn't. "Constraint Kinematics Run Geometry" layers a run-length filter on top of the classic SAR, so instead of flipping on every minor acceleration change, it waits for the trend to build measurable "run geometry" before confirming a reversal. That single design choice is what separates it from the dozens of SAR clones in the public library — and it's also where the indicator earns and loses points.
+Most Parabolic SAR scripts are the same two lines copy-pasted into a new wrapper. This one isn't. TradingView's "Parabolic SAR Constraint Kinematics & Run Geometry" keeps the canonical `ta.sar()` as the plotted series and adds coordinated measurement of how a continuing SAR step is actually formed — the Extreme Point, the remaining Arc, acceleration-factor progression, and the two-bar price constraint that shapes each step.
+
+The central distinction is between the *free* parabolic candidate and the candidate *after* the two-bar constraint. The script measures how much movement the constraint removes, how much remains, and how often material constraints occur within a fully observed run. That measurement layer is what separates it from the dozens of SAR clones in the public library, and it's also where the indicator's value and its limitations both live.
 
 ## What it actually does
 
-Under the hood this is still a Parabolic SAR. The acceleration factor (AF) starts at 0.02, steps by 0.02, and caps at 0.2 — same as Wilder's original. The difference is the added "constraint" layer: the script tracks how far price has traveled in the current run and how consistently it's advanced, then requires that geometry to satisfy a threshold before the SAR is allowed to flip. In plain terms, it suppresses the flip-flop signals that make vanilla SAR unusable in choppy conditions.
+Under the hood this is still a Parabolic SAR. The PSAR formula itself is standard — the script does not adapt it, filter side changes, optimize parameters, or rank trading opportunities.
 
-On the MACD chart I tested, you can see the SAR dots hug price tightly during clean trends and then go quiet — no dots flipping — through consolidation zones where the standard SAR would have whipsawed four or five times. That's the whole pitch, and it delivers.
+What it adds is a measurement framework. The script reconstructs the free candidate step, applies the two-bar price constraint (previous low and low two bars ago for a SAR-below run; previous high and high two bars ago for a SAR-above run), and compares the guarded candidate against the plotted `ta.sar()`. If the reconstruction is outside a permitted tolerance, the state becomes CHECK and the constraint percentages are withheld. If the bar isn't eligible for the continuing-run reconstruction, the state is INIT.
 
-## Best settings I found
+The chart layers include the canonical SAR dots, an Extreme Point trace, a translucent SAR-to-Extreme-Point Arc, small side-change markers, yellow halos on materially constrained bars, and a compact upper-right panel. Cyan and pink distinguish SAR-below and SAR-above run states; green and amber distinguish the corresponding Extreme Point traces. Optional layers — the free candidate point, the constraint bridge, an Arc midline, the run origin line, event markers, and completed-run summaries — are disabled by default to avoid crowding.
 
-Defaults work, but they're not optimal for every timeframe. Here's what I'd actually run:
+## Settings and How to Tune Them
 
-- **Step (AF increment):** Leave at 0.02 for intraday on 5m–15m. Bump to 0.03 on the 1H and above for slightly faster response without reintroducing noise.
-- **Max AF:** 0.2 is standard and fine. Don't push it to 0.3 — you'll get the runaway acceleration problem the constraint layer is trying to solve.
-- **Run threshold / geometry filter:** This is the setting that matters. The default is conservative. If you're trading breakouts and want earlier entries, lower it by roughly 20%. If you're swing trading, raise it — you'll give up the first bar or two of a move but skip most fakeouts.
-- **Source:** Close, not HL2. The constraint math reads cleaner off close and matches how most traders read structure.
+The PSAR factors, confirmation behavior, normalization, history length, constraint threshold, synchronization tolerance, visual layers, marker limits, panel layout and position, right-edge clearance, text size, and colors are all configurable. A few deserve specific mention because the source material gives explicit defaults:
 
-## How to trade it
+- **Starting AF, AF increment, maximum AF:** the defaults are 0.02, 0.02, and 0.20 respectively. If the entered maximum is below the starting factor, the effective maximum is raised to the starting factor. When both are equal, AF progress is represented as 100%.
+- **Tight-Arc contraction threshold:** defaults to five bars minimum run age and 35% retention for entry. Release requires a new Extreme Point and retention reaching the contraction threshold plus hysteresis, capped at 100%. Default hysteresis is 20 percentage points, giving a default release level of 55%.
+- **Synchronization tolerance:** default permitted difference is two minimum ticks, adjustable, with a small numerical floor.
+- **Materiality threshold:** defaults to 12.5%. A measurable constraint additionally requires a removed distance of at least one quarter of a minimum tick and Constraint Load of at least 1%.
+- **History memory:** defaults to 20 completed full runs, accepts 3 to 100. Brief-run threshold defaults to four bars or fewer.
+- **Research window:** recent bars by default; custom window defaults to 3,000 bars, settable from 500 to 50,000; All available bars removes the custom limit subject to chart history.
+- **Confirm state changes at bar close:** enabled by default.
+- **Distance units:** ATR at run start, percent from run origin, minimum ticks, or raw price. The ATR-style normalizer smooths true range using RMA, SMA, EMA, or WMA.
 
-The logic is trend-following, so treat it that way. Wait for the SAR to flip below price (bullish) *and* for the geometry filter to confirm — the confirmation is the entire value-add, so don't ignore it.
+Defaults are described in the source as general research settings, not optimized values. The source does not identify which settings produce better results.
 
-- **Entry:** On a confirmed flip, enter on the close of the confirmation bar. Don't chase the bar after.
-- **Stop:** The SAR dot itself is your trailing stop. This is the cleanest part of the indicator — it ratchets automatically and never widens.
-- **Exit:** Flip back, or trail with the dots and let them take you out. I found trailing with the dots captured more of each run than a fixed R target.
-- **Filter:** I paired it with the MACD on the same chart — only take SAR longs when MACD is above zero, shorts when below. That combination cut my false signals roughly in half during testing.
+## How to read it
+
+The panel is a three-row grid: STATE, RUN, ARC, STEP, MOTION, CODE. STATE tells you whether the run is FULL (beginning observed) or PARTIAL (tracking began mid-run), and flags TIGHT or SYNTHETIC. RUN shows bars in the tracked run, Extreme Point updates, and elapsed bars without an update. ARC shows the current normalized SAR-to-Extreme-Point distance and Arc Retention — the current Arc as a percentage of the widest Arc recorded in the same run. STEP is the absolute one-bar SAR movement and that movement as a percentage of the remaining Arc, which the source explicitly notes is a geometric ratio, not a return or probability, and is not capped at 100%.
+
+MOTION is the mechanical state, plus TX percentage, observed AF, and a synchronization symbol. TX is the guarded directional step as a percentage of the free directional step. The states are INIT (not eligible), CHECK (guarded candidate outside tolerance), FREE (no measurable constraint), TRACE (measurable but below materiality), BRAKE (material constraint with guarded step above a quarter-tick), and PINNED (material constraint with guarded step at or below that threshold).
+
+CODE is a four-axis run signature: A for Arc Retention, F for AF Progress, P for Extreme-Point Pause Share, C for Constraint Load. Each uses fixed percentage bands (1: below 25%, 2: 25–50%, 3: 50–75%, 4: 75%+), with C carrying an additional C0 band for valid load below 1% and C- for unavailable. An example like A3·F2·P2·C0 describes retention from 50% to below 75%, AF progress from 25% to below 50%, pause share from 25% to below 50%, and valid constraint load below 1%. The source is explicit that these are fixed ranges, not sample quartiles, learned regimes, rankings, or probabilities.
+
+Yellow halos mark bars meeting the synchronized material-constraint conditions. Run Constraint Occupancy measures how frequently the guardrail materially affected eligible observations in a run — a frequency, not a probability of a future outcome.
 
 ## Pros and cons
 
 **Pros:**
-- Genuinely reduces SAR whipsaw — the core problem with every vanilla SAR.
-- Trailing stop behavior is excellent and mechanical.
-- Works across timeframes without retuning much.
-- Lightweight, no repainting on closed bars.
+
+- The measurement framework is genuinely coordinated, not cosmetic. Constraint Load, TX, Arc Retention, and the signature code are computed from the same reconstructed candidate and cross-checked against `ta.sar()` before being exposed.
+- The distinction between the free candidate and the two-bar guarded candidate is the actual mechanism of PSAR step formation, and the script makes it visible.
+- FULL versus PARTIAL, and the completed-run history, give honest accounting of what was actually observed versus inferred.
+- The source is unusually careful about what the numbers do *not* mean: no forecasting claims, no probability framing, no trading signals.
 
 **Cons:**
-- The constraint layer adds lag. You *will* enter later than a plain SAR. That's the trade-off, and it's not optional.
-- The extra settings aren't well documented. You have to experiment to find the geometry threshold that suits your instrument.
-- Still a lagging trend indicator. In ranging markets it's just less bad, not good.
-- No alerts customization beyond the basics — I'd like more granular alert conditions.
+
+- The reconstruction is a numerical consistency check within tolerance, not exact recovery of every internal PSAR state. A successful check is agreement, not validation of the model.
+- The source explicitly states the script is not described as completely non-repainting. Active `ta.sar()`, current geometry, constraint calculations, halos, and the displayed signature can change before the bar closes.
+- Partial-run values do not recover unobserved pre-window updates, and normalization references in a PARTIAL run belong to the first tracked bar, not the unknown actual beginning.
+- Settings are numerous, and the source notes that extreme parameter values may produce more unavailable or CHECK observations.
+- The panel shows only the latest execution state — hovering an older bar does not make the panel display that bar's historical state.
 
 ## Who it's for
 
-This is for trend traders and swing traders who liked the *idea* of Parabolic SAR but gave up on it because of the constant flipping. If you trade breakouts, momentum, or ride multi-day moves, the constraint filter is worth the lag. If you're a scalper or a mean-reversion trader, skip it — you'll hate the delayed entries.
+This is a research and inspection tool for traders who want to understand how a Parabolic SAR step is actually formed and constrained, not a signal generator. The source describes it as a descriptive visualization and numerical research tool that makes no claims about forecast accuracy, trading performance, or a predictive edge. If you want a ready-made entry system, this isn't it. If you want to see the mechanics of PSAR step formation laid out numerically, it's a serious piece of work.
 
 ## Alternatives
 
-- **Supertrend:** Similar trailing-stop behavior, often faster to flip, better for scalpers.
-- **Chandelier Exit:** Better trailing stop mechanics if that's all you want.
-- **Vanilla Parabolic SAR:** Use it if you trade only strong, obvious trends and can tolerate whipsaws.
+- **Vanilla Parabolic SAR:** The canonical series with no measurement layer.
+- **Supertrend:** A different trailing-stop mechanism, but no step-reconstruction breakdown.
+- **Chandelier Exit:** Trailing stop based on ATR extremes, again without the constraint kinematics.
 
 ## FAQ
 
-**Does it repaint?** No, not on closed bars. The constraint filter confirms on bar close.
+**Does it repaint?** The source does not describe it as completely non-repainting. Confirmation at bar close is enabled by default and commits run changes, EP updates, event records, and history counters — but active SAR, geometry, constraint calculations, halos, and the displayed signature can still change before the bar closes. Use closed bars for reproducible comparisons.
 
-**Is it better than standard Parabolic SAR?** For trend-following, yes — fewer false flips. For pure speed, no.
+**Is it better than standard Parabolic SAR?** It measures the standard PSAR differently; it does not modify the formula or claim superior signals.
 
-**What timeframe is best?** 1H and 4H showed the cleanest runs in my testing. It works on lower timeframes but the lag becomes more painful.
+**What timeframe is best?** The source gives no timeframe recommendation.
 
-**Can I use it for entries alone?** You can, but pair it with a momentum filter like MACD or RSI. SAR alone, even filtered, isn't enough.
+**Can I use it for entries alone?** The source does not provide trading instructions or entry logic. It explicitly states that neither contraction nor re-expansion forecasts a future market event, and that the displayed percentages are geometric ratios, not probabilities.
 
 ## Verdict
 
-This is a thoughtful upgrade to a tired indicator. The constraint geometry layer does real work — it's not cosmetic — and the trailing stop behavior is as clean as anything in the trend category. It loses a star for the undocumented settings and the inherent lag that will frustrate faster traders.
+A thoughtful, unusually rigorous measurement layer built on top of a standard Parabolic SAR. The constraint kinematics do real analytical work — the free-versus-guarded candidate distinction is the actual mechanism of PSAR step formation made visible. It loses points for the honest caveats the source itself flags: tolerance-based reconstruction rather than exact recovery, provisional intrabar values, and a research-window boundary that requires understanding before comparing records.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Install it if you're a trend trader who wants SAR to stop crying wolf.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

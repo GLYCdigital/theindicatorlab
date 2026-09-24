@@ -17,87 +17,96 @@ categories:
 rating: 4
 description: "Honest review of Cme_Institutional_Order_Flow_Amt_Lens: how the AMT lens maps institutional order flow to trend, best settings, and who it's actually for."
 tv_script_url: "https://www.tradingview.com/script/EYNNWCWE-CME-Institutional-Order-Flow-AMT-Lens/"
+sources: ["https://www.tradingview.com/script/EYNNWCWE-CME-Institutional-Order-Flow-AMT-Lens/"]
 ---
-Most "order flow" indicators on TradingView are repackaged volume with a confident name. This one isn't quite that — but it isn't the institutional glass floor the name implies either. Here's what I found after running it across futures and crypto for a few weeks.
+Most "order flow" indicators on TradingView are repackaged volume with a confident name. This one is a genuine open-source derivative — but it is not the institutional glass floor the name implies either. Here's a breakdown of what the script actually claims, based on its own documentation.
 
 ## What it actually does
 
-Cme_Institutional_Order_Flow_Amt_Lens takes the Auction Market Theory (AMT) framework — value areas, balance, and imbalance — and layers an order-flow lens on top to grade trend direction and conviction. In practice, it reads price relative to recent value and paints a directional bias, then filters that bias through a flow proxy so you're not just chasing every value-area breakout.
+The script is built on the Auction Market Theory (AMT) framework — value areas, balance, and imbalance — and layers an order-flow engine on top of it. Per its documentation, it accesses the exchange trade tape at tick granularity via Pine Script v6's native `request.footprint()` to separate ask-lifted buy volume from bid-hit sell volume, then feeds that into a Gaussian kernel density decomposition to project buyer and seller volume curves on the right margin.
 
-The "CME" label is doing a lot of branding work. It does not pull live CME order book data — no retail-accessible script on TradingView does. What it does is apply an AMT-structured lens to price and volume so the output resembles institutional logic: where value is being accepted, where it's being rejected, and whether the current push has follow-through.
+The "CME" label is doing a lot of branding work. The source material attributes the indicator's microstructure specifications to CME Group's Level 3 Market-By-Order futures standards — tick sizes, session conventions — but this is a framework reference, not a live CME order book feed. No retail-accessible TradingView script pulls that. The output resembles institutional logic: where value is being accepted, where it's being rejected, and how aggressive flow is distributed across price.
 
 ## Key features
 
-The AMT value-area engine is the core. It plots a developing value region and flags when price is accepting above or below it, which is the AMT definition of a trend emerging versus a range persisting.
+The footprint delta engine is the core. It uses `request.footprint()` for tick-level trade tape execution, splitting volume into true ask-lifted buys and true bid-hit sells — as opposed to the "candle color fallacy" where a green bar is labeled 100% buying.
 
-The flow-lens overlay is the differentiator. Instead of a naked breakout signal, it weights the move by a flow proxy — so a weak poke above value gets de-emphasized while a high-conviction push gets highlighted. That single filter is why this beats most value-area scripts, which fire on every wick through the edge.
+The Gaussian profile decomposition is the differentiator. Rather than discretizing volume into rectangular histogram bars, the script treats volume-at-price as a continuous probability density function and solves the cumulative distribution via the Abramowitz & Stegun Formula 7.1.26 rational Chebyshev approximation of the complementary error function, which the documentation says enables O(1) constant-time calculation without iterative loops.
 
-The visual trend state is clean and binary: you get a directional read, not a color soup. As shown in the chart above, the bias flips are readable at a glance without squinting at five stacked histograms.
+The Dalton archetype classifier is the structural layer. It stamps sessions with profile shape badges — [D] Balanced, [P] Buying Drive, [b] Liquidation Drive, [B] Double Distribution — and tracks Value Area High/Low and Virgin POC levels. The documentation cites specific historical frequency figures for each shape, but those are sourced from the author's own audit and should be treated as descriptive, not predictive.
 
-## Best settings
+## Settings and How to Tune Them
 
-Leave the value-area lookback at its default for the first week. It's tuned to a sensible swing horizon, and shortening it to 10–20 bars makes the value region jitter so badly it stops meaning anything.
+The settings dialog is divided into ten structured groups. A few worth understanding conceptually:
 
-Two adjustments worth making:
+**Fast Replay / Lightweight Mode.** Switches calculation from tick-precision footprint sampling to a Geometric Proxy delta, reduces profile lookback, and streamlines profile bins. Default is off — the documentation recommends keeping it unchecked for live charts with sub-bar tick precision.
 
-- **Flow smoothing:** bump it up one notch on anything below the 15-minute chart. Lower timeframes produce noisy flow readings that flip the lens constantly.
-- **Trend confirmation bars:** raise this to 2–3. The default is aggressive, and a single confirmation bar will repaint the bias near the edges of value. Two to three bars costs you a little entry price and saves you a lot of whipsaw.
+**Ratio Multiplier and Stack Depth.** These control the imbalance shelf logic. The ratio defines the diagonal volume dominance required to trigger an imbalance; the stack depth defines how many consecutive price tiers are required to confirm a shelf. The documentation describes the defaults as matching standard institutional footprint configurations.
 
-If you trade crypto, widen the value lookback a touch — the 24/7 session structure means the default session framing fits futures better than spot.
+**Ignore Zeroes (Native Footprint Parity).** When enabled, price tiers with zero volume on the opposite side are disqualified from triggering imbalances, matching TradingView's native footprint behavior. Default is on. Disabling allows trades against zero to trigger imbalances.
+
+**Ticks Per Row.** Price tier bucket size in ticks. The default is Auto-Adaptive, which the documentation says automatically matches row density across assets and timeframes. A fixed value can be forced.
+
+**Volume Engine.** Selects the delta calculation method when Fast Replay is off: Native Footprint (tick precision), Geometric Proxy, Intrabar (1m low memory), or Intrabar (sub-minute). Default is Native Footprint.
+
+**Profile Scope Horizon.** Controls the auction cycle — Auto-Adaptive scales by timeframe, or it can be forced to Sub-Session, Daily Full Cycle, Weekly, or Monthly.
+
+**Wait for 1 Bar Close on Session Open.** Delays the developing profile until the opening candle closes, which the documentation describes as preventing opening-tick jitter and profile flashing. Default is on.
+
+The documentation also notes a calibration detail worth flagging: the volume floor is set to capture genuine prints on smaller-lot CME contracts and to filter retail odd-lot activity on US equities.
 
 ## How to use it
 
-The logic that actually held up:
+The documentation's tactical playbook breaks execution into phases:
 
-**Trend entries.** Wait for price to accept outside the value area *and* for the flow lens to confirm the same direction. When those two agree, you're trading AMT imbalance with a conviction filter — that's the setup the indicator was built for. Enter on the first pullback that holds the value edge, not on the breakout candle.
+**Pre-market orientation.** Check price position relative to the Overnight Half-Back (50% midpoint of the overnight range), scan for Confluent Iron POC alignments between prior Cash VPOC and Overnight VPOC, and check the prior session's Dalton archetype badge.
 
-**Fade the disagreement.** When price breaks value but the flow lens stays neutral or opposes, that's a failed auction in the making. I had the best results treating these as range-continuation signals rather than trend signals.
+**Opening drive.** The documentation advises standing aside during the opening minutes and watching for a false opening drive sweeping overnight extremes into an unmitigated Stacked Imbalance Shelf. Absorption is confirmed via the Effort vs. Reward candle colors.
 
-**Invalidation.** If price re-enters value against your position, the trend thesis is dead. The indicator is honest about this — it flips the bias rather than hedging.
+**Setups by archetype.** Rotational [D-Shape] days: fade Value Area boundaries targeting the VPOC mean. Double Distribution [B-Shape] days: trade the breakout through the LVN Vacuum Corridor. Initiative [P-Shape / b-Shape] days: align with trend pullbacks into the developing right-margin VPOC and stacked imbalance shelves.
 
-It pairs well with a momentum confirmation like MACD divergence, which is why the screenshot uses that layout. The lens tells you *where* you are in the auction; MACD tells you whether momentum is fading into it.
+**Invalidation.** The documentation does not provide explicit invalidation rules beyond the archetype logic — that is left to the trader.
 
 ## Pros & Cons
 
 **Pros**
-- The flow filter genuinely reduces false value-area breakouts — the biggest weakness of raw AMT scripts.
-- Clean, binary trend read that doesn't overwhelm the chart.
-- Works across futures, FX, and crypto with minimal retuning.
-- The AMT framing is conceptually sound, not just a renamed moving average.
+- Uses Pine Script v6's native `request.footprint()` for tick-level tape access rather than a lower-timeframe interpolation proxy.
+- The continuous Gaussian profile decomposition is a mathematically grounded alternative to rectangular histogram bars.
+- Enforces "Ignore Zeroes" parity with TradingView's native footprint engine, which the documentation says eliminates false edge-of-candle anomalies.
+- Extensive visual customization across ten settings groups.
 
 **Cons**
-- The CME branding oversells the data source — it's a proxy, not live institutional flow.
-- Default trend confirmation is too fast and will repaint near value edges until you raise it.
-- No built-in alert logic for the acceptance/flow agreement — you'll set those manually.
-- On very low timeframes the flow lens is close to useless regardless of settings.
+- The CME branding may oversell the data source — the CME attribution is to microstructure specifications, not to a live exchange feed.
+- The Dalton archetype frequency figures come from the author's own audit and are presented without external verification.
+- The documentation does not specify alert behavior or repainting characteristics.
+- Default configurations are described as tuned for live charts, but the documentation notes that several settings (Wait for 1 Bar Close, Ignore Zeroes) exist specifically to prevent visual artifacts — suggesting the defaults matter more than usual.
 
 ## Who it's for
 
-Discretionary trend traders who already think in terms of value and balance, and who want a conviction filter on top of their breakout entries. If you're a pure mechanical signal-follower, the manual interpretation here will frustrate you. If you scalp the 1-minute, look elsewhere.
+Discretionary traders who already think in terms of value, balance, and auction structure, and who want a footprint-based flow layer on top of that framework. Traders looking for a plug-and-play signal generator will not find it here — the documentation is explicit that this is an analytical tool, not a signal service.
 
 ## Alternatives
 
-If you want raw value-area plotting without the flow layer, standard Market Profile and volume-profile scripts do that job for free. If you want genuine order-flow depth, you need a footprint tool with exchange-level data — TradingView's native toolkit won't get you there. This sits in a useful middle: more structure than a plain profile, less pretense than a "smart money" script.
+For raw value-area plotting without the flow layer, standard Market Profile and volume-profile scripts cover that ground. For genuine order-flow depth, a dedicated footprint tool with exchange-level data is the appropriate category. This script sits in between: more structure than a plain profile, with an open-source lineage that is fully disclosed.
 
 ## FAQ
 
 **Does it use real CME order flow data?**
-No. It's an AMT-structured lens with a flow proxy. Treat the output as a conviction filter, not a tape read.
+It uses Pine Script v6's native `request.footprint()` to access exchange trade tape execution at tick granularity. The CME attribution in the documentation refers to microstructure specifications and session conventions, not a live CME order book feed.
 
 **Does it repaint?**
-The trend bias can repaint near value edges with default confirmation. Raising confirmation bars to 2–3 largely fixes this.
+The source material does not make claims about repainting. The documentation notes that "Wait for 1 Bar Close on Session Open" exists to prevent opening-tick jitter and profile flashing, and that "Dead Volume / Chop Color" is gated to confirmed bars.
 
 **What timeframe is best?**
-15-minute to 4-hour. Below 15 minutes the flow lens gets noisy; above 4-hour it's slow to react.
+The source material does not specify a recommended timeframe. The documentation describes Auto-Adaptive behavior across sub-session, daily, weekly, and monthly scopes.
 
 **Can I use it for entries alone?**
-I wouldn't. It's a bias and conviction tool — pair it with a momentum or structure trigger.
+The documentation is explicit that the indicator is published for educational and analytical purposes and does not provide trade recommendations or signals.
 
 ## Final verdict
 
-This is a smarter-than-average AMT script. The flow lens earns its place by filtering the value-area breakouts that plague simpler tools, and the trend read is clean enough to actually trade from. It loses a star for the misleading CME framing and a default configuration that repaints until you tune it — but once dialed in, it's a legitimate part of a trend workflow.
+This is a technically ambitious script with a fully disclosed open-source lineage and a coherent mathematical foundation. The footprint integration and Gaussian profile decomposition are substantive rather than cosmetic. The main caveat is the branding: "CME Institutional" describes the microstructure framework the script references, not the data source it pulls from. Read the documentation carefully, understand what the settings actually control, and treat the archetype frequency figures as descriptive rather than predictive.
 
-⭐⭐⭐⭐ (4/5)
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

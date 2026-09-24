@@ -17,86 +17,78 @@ categories:
 rating: 4
 description: "Cisd_Mtf_5M_15M review: a change-in-state-of-delivery trend tool that reads 5M structure with 15M confirmation. Tested settings, entries, and honest limits."
 tv_script_url: "https://www.tradingview.com/script/l2fTYwtc-CISD-MTF-5m-15m/"
+sources: ["https://www.tradingview.com/script/l2fTYwtc-CISD-MTF-5m-15m/"]
 ---
-Cisd_Mtf_5M_15M is not a mashup of five indicators pretending to be one. It's a narrow, opinionated tool built around a single idea: **Change in State of Delivery (CISD)**, applied across two timeframes — 5-minute and 15-minute — to filter trend continuation entries. If you trade intraday index futures, FX majors, or liquid crypto pairs on lower timeframes, that combination is exactly where this thing earns its keep.
+CISD MTF is not a mashup of five indicators pretending to be one. It is a narrow, opinionated tool built around a single idea: **Change in State of Delivery (CISD)**, applied across two timeframes — 5-minute and 15-minute — and designed to show the reference levels price must close through before the current delivery state can be considered changed.
 
-As the chart above shows, the indicator doesn't clutter your screen. You get a clean ribbon of trend state, a handful of plotted levels, and labels that mark when delivery flips from bullish to bearish or back. That's it. No signal spam, no repainting fireworks.
+That framing matters. The indicator is not trying to tell you when to buy or sell. It is answering one question: what level does price need to close through before the current delivery state can be considered changed? Everything else — entries, stops, targets — is left to you.
 
 ## What CISD actually means here
 
-CISD is a Smart Money / order-flow concept: the moment price stops delivering in one direction and starts delivering in the other — usually marked by a decisive close through a prior candle's body rather than a wick. It's the quieter cousin of a market structure break. This indicator operationalizes that on the 5M as the trigger timeframe and uses the 15M as the directional filter.
+CISD is a Smart Money / order-flow concept: the moment price stops delivering in one direction and starts delivering in the other, marked by a decisive close through a prior reference level rather than a wick. It is the quieter cousin of a market structure break.
 
-In practice: if the 15M is delivering bullish, the 5M only flags longs when its own delivery state flips up. Cross-timeframe disagreement = no signal. That single rule eliminates most of the chop that kills pure 5M trend tools.
+This indicator operationalizes that across two timeframes. It displays the active 5-minute and 15-minute CISD reference levels directly on a lower-timeframe chart. A **Bull CISD** is the level price must close above to confirm a bullish change in delivery. A **Bear CISD** is the level price must close below to confirm a bearish change in delivery.
+
+The important distinction: unlike a simple candle-color or crossover signal, the indicator maintains the current delivery state until the relevant CISD level is actually confirmed. An opposite-colored candle, a wick through the level, or a temporary swing by itself does not automatically change the displayed direction. A Bull CISD remains active during bearish delivery until price confirms above it, and a Bear CISD remains active during bullish delivery until price confirms below it. When the delivery state does change, the previous CISD reference is automatically replaced.
 
 ## Key features that matter
 
-- **Dual-timeframe state logic.** The 15M acts as a bias gate, the 5M as the trigger. Both must align before you act.
-- **Non-repainting on closed bars.** The state flips only after candle close. Intrabar it can flicker — check this on replay before you trust it live.
-- **Compact visuals.** Trend ribbon, flip labels, and optional level plotting. No Bollinger-band-on-MACD-on-RSI nonsense.
-- **Multi-market tolerance.** It behaves the same on NQ, EURUSD, and BTCUSDT 5M — which tells you the logic is structural, not curve-fit to one instrument.
+- **Dual-timeframe levels.** Displays 5m and 15m CISD levels on lower-timeframe charts, tracking only the currently relevant CISD direction for each timeframe.
+- **Confirmed closes only.** Uses confirmed higher-timeframe candle closes, not intrabar price.
+- **Wicks don't count.** A wick through a CISD level does not confirm a state change.
+- **Persistent state.** Bull CISD stays active during bearish delivery until price confirms above it; Bear CISD stays active during bullish delivery until price confirms below it.
+- **Automatic replacement.** The previous CISD reference is swapped out when the delivery state changes.
+- **Right-edge labels.** Active levels are labeled at the right edge for quick identification.
+- **Alerts.** Alerts fire when active CISD references change.
 
-## Best settings I landed on
+## Settings and How to Tune Them
 
-After running it across a few weeks of replay, here's what worked:
+The source material describes the indicator as a 5-minute and 15-minute CISD tool, so those are the timeframes the logic is built around. Beyond that, the documentation does not publish a parameter table.
 
-- **Higher timeframe: 15M, locked.** Do not change this. The whole edge is the 5M/15M pairing. Swap to 1H and signals dry up; drop the filter and you're back to noise.
-- **Trigger timeframe: 5M.** Leave it. Using 1M produced roughly triple the signals and roughly triple the losers.
-- **Confirmation candles: 1–2.** One candle is aggressive, two is safer on indices. I settled on 2 for NQ, 1 for FX.
-- **Alerts: enable on state flip only.** Not on every bar. Otherwise your phone won't stop buzzing.
+Conceptually, the settings you would expect to matter are the timeframe pairings for the CISD reference levels and whatever controls how the confirmed close is evaluated. Treat the 5m/15m pairing as the design intent rather than a starting point to optimize — the indicator is described specifically as a 5m/15m tool, not a general-purpose multi-timeframe engine. If the script exposes toggles for level display or labels, those are cosmetic and do not change the underlying state logic.
 
-If the script exposes a "strict body close" toggle, keep it on. Wick-based flips are where this indicator bleeds.
+## How to use it
 
-## How to trade it
+The author's stated approach is to use CISD as confirmation and context rather than a standalone entry signal. During bearish delivery, the Bull CISD shows the level price would need to reclaim on a confirmed close before there is evidence of a bullish character change. During bullish delivery, the Bear CISD marks the level price would need to close below before bearish delivery is confirmed.
 
-The logic is simple enough to run manually:
-
-1. **Bias check.** Is the 15M ribbon bullish or bearish? That's your only permitted direction.
-2. **Wait for the 5M flip** in that direction.
-3. **Entry** on the close of the flip candle, or on a pullback into the flip zone if you want better R:R.
-4. **Stop** below the flip candle's low (for longs) — usually 8–15 ticks on NQ.
-5. **Target** the prior 5M swing high, or trail once the 15M state is threatened.
-
-The strongest setups are flips that occur right at a higher-timeframe level — a prior day high, a session open. A flip in the middle of nowhere is a coin toss. The indicator doesn't tell you *where* to trade, only *when* delivery changed. Pair it with your own level work.
+The author combines CISD with market structure, EMA structure, liquidity, displacement, and pullback locations rather than entering immediately when a CISD occurs. The indicator tells you *when* delivery changed, not *where* to trade — pair it with your own level work.
 
 ## Pros and cons
 
 **Pros**
-- Genuinely filters noise via the 15M gate — rare for a 5M trend tool
-- Non-repainting on close, so backtests and live results roughly match
-- Clean chart, no visual overload
-- Works across futures, FX, and crypto without tuning
+- Focused, single-concept tool rather than an indicator mashup
+- Persistent state logic avoids flipping on every opposite-colored candle
+- Uses confirmed closes, not intrabar price
+- Wicks through the level do not trigger a state change
+- Right-edge labels make active levels easy to identify
+- Alerts on reference changes
 
 **Cons**
-- Few signals per session — impatient traders will hate it
+- Documentation is thin beyond the concept description
 - No built-in stop/target levels or risk calculator
-- Intrabar flicker means you must wait for candle close
-- Documentation is thin; you're reverse-engineering the logic from behavior
+- Requires confirmed closes, so you cannot act intrabar
+- Only tracks the currently relevant CISD direction per timeframe, not a full history of levels
 
 ## Who it's for
 
-Discretionary intraday traders who already understand market structure and order flow, and who want a mechanical trigger without giving up their level analysis. It is **not** for scalpers hunting 20 signals an hour, and not for swing traders on daily charts — the 5M/15M pairing is baked in.
-
-## Alternatives
-
-- **Pure 15M trend tools** if you want fewer, higher-quality signals and don't need 5M precision.
-- **Market structure / BOS indicators** if you prefer explicit swing labeling over delivery-state logic.
-- **Multi-timeframe MACD dashboards** if you want a familiar oscillator rather than an SMC-flavored concept.
+Discretionary intraday traders who already work with market structure and order flow and want a mechanical reference for delivery-state changes without giving up their own level analysis. It is a market-structure visualization and research tool, not a signal generator, and it does not provide financial advice or guarantee that a trend reversal or continuation will occur.
 
 ## FAQ
 
-**Does it repaint?** Not on closed candles. Intrabar it can flip and flip back — always wait for the close.
+**What does the indicator actually plot?** The active 5m and 15m CISD reference levels, displayed on a lower-timeframe chart with right-edge labels.
 
-**Can I use it on 1M?** You can, but signal quality collapses. The 15M gate is the edge.
+**Does a wick through the level count?** No. A wick through a CISD level does not confirm a state change — only a confirmed close does.
 
-**Is it good for crypto?** Yes, on liquid pairs. It handled BTCUSDT 5M cleanly.
+**Does an opposite-colored candle flip the state?** No. The current delivery state is maintained until the relevant CISD level is actually confirmed.
 
-**Does it give buy/sell arrows?** It gives state-flip labels, which serve the same purpose if you read them correctly.
+**Does it give buy/sell signals?** It shows CISD reference levels and state changes. The author uses it as confirmation and context, not as a standalone entry signal.
+
+**Does it include alerts?** Yes — alerts fire when active CISD references change.
 
 ## Verdict
 
-Cisd_Mtf_5M_15M does one job and does it well: it tells you when 5M delivery aligns with 15M bias. No more, no less. The lack of built-in risk tools and the sparse signal count keep it off five stars, but for structured intraday traders it's a legitimate edge-builder, not a repackaged moving average.
+CISD MTF does one job: it shows the 5m and 15m levels price must close through before delivery state changes, and it holds that state until the close actually confirms. The persistent-state logic and confirmed-close requirement are the parts that separate it from a candle-color flip. The lack of built-in risk tools and the sparse published documentation keep it from being a complete package, but for traders already working from market structure it is a legitimate context tool rather than a repackaged moving average.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

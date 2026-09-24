@@ -17,91 +17,102 @@ categories:
 rating: 4
 description: "Implied_Market_Structure maps swing highs and lows into a readable trend framework. Honest review of settings, entry logic, and where it falls short."
 tv_script_url: "https://www.tradingview.com/script/sMhnCi0K-Implied-Market-Structure/"
+sources: ["https://www.tradingview.com/script/sMhnCi0K-Implied-Market-Structure/", "https://www.cboe.com/us/indices/dispersion/", "https://www.cboe.com/us/indices/implied/", "https://www.prnewswire.com/news-releases/sp-dow-jones-indices-and-cboe-global-markets-to-launch-the-cboe-sp-500-dispersion-index-301937523.html", "https://www.prnewswire.com/news-releases/cboe-global-markets-and-sp-dow-jones-indices-plan-to-launch-new-cboe-sp-500-constituent-volatility-index-vixeq-302279208.html"]
 ---
-Most "market structure" indicators on TradingView are just a pivot-high script with a fresh coat of paint. Implied_Market_Structure is not that — but it isn't a magic bullet either. After running it on MACD-style momentum charts and plain price charts across crypto, FX, and index futures, here's what it actually does and where it earns its keep.
+Most "market structure" indicators on TradingView are a pivot-high script with a fresh coat of paint. Implied_Market_Structure is not that — but it isn't a magic bullet either. It takes a different route entirely: rather than reading the chart it sits on, it reads the listed options surface and turns it into a forward-looking structural read.
 
 ## What This Indicator Actually Does
 
-Implied_Market_Structure tracks the sequence of swing highs and swing lows and translates that sequence into a state machine: is the market making higher highs and higher lows (bullish structure), lower highs and lower lows (bearish), or is it in transition? Rather than plotting one-off pivot dots, it labels the *implied* structure — the directional bias that the current swing pattern suggests before price has fully confirmed it.
+The script does not look at the price of the chart you drop it on. It reads three Cboe indices that already live on TradingView — DSPX, COR3M and VIXEQ — and maps them into an options-derived market structure: what kind of tape the listed surface is paying for.
 
-That word "implied" is doing real work here. The indicator isn't waiting for a confirmed break of structure to flip its bias. It reads the internal rhythm of swings and telegraphs the likely next structural state. On the chart above, you can see the bias flip ahead of the actual swing confirmation — sometimes a bar or two early, sometimes wrong.
+The underlying problem it addresses is real. The cash print of SPX is a weighted average. It can look healthy while the market underneath is narrow, and dull while single names are already running. Breadth indicators catch that after the close, once advancing issues and new highs have printed. The options market is already quoting a related question, because index options and single-stock options together imply how much the constituents are expected to move, and how much they are expected to move together, over the next month. That is not the same as knowing what realised breadth will do next week — it is a reading of the surface being priced now.
+
+Direction still comes from your own setup. This script answers how that setup should be expressed: as an index overlay, a single-stock book, a hedge, or a smaller size. Open a daily SPX, ES or SPY chart, add the script, and read the dashboard before you argue with the line.
 
 ## The Part That's Actually Useful
 
-The sequencing logic is the differentiator. Most pivot tools show you where a swing high *was*. This one shows you what the *pattern of swings* is telling you right now — and that's a meaningfully different question.
+The differentiator is that it compresses two ranks into one line while keeping them separable in the table. The thick line is the IMS score on a 0 to 10 scale, a one-dimensional summary of high DSPX percentile plus low COR3M percentile. Near 10 the surface is paying for stock-level divergence. Near 0 it is paying for a herd.
 
 What sets it apart:
 
-- **State tracking, not just plotting.** It maintains a running structural bias rather than firing isolated signals you have to interpret yourself.
-- **Transition handling.** It doesn't just flip from bull to bear; it has an intermediate/transitional read that keeps you out of chop.
-- **Clean visual hierarchy.** The bias is readable at a glance — you're not squinting at 40 pivot labels.
+- **Two-dimensional regime, not a single number.** The table and the grid underneath it classify the tape as INDEX TAPE, STOCK PICKING, BROAD STRESS, COMPRESSED or MIXED. The line compresses two ranks; the grid keeps them apart.
+- **A stated use for each corner.** INDEX TAPE is high implied correlation and low expected dispersion, when ES and SPY trades and index puts are the more natural tools. STOCK PICKING is the opposite corner, which is Cboe's stated use of DSPX as a read on the opportunity set for names, not a long signal in the index. BROAD STRESS is both high. COMPRESSED is both low.
+- **The Why row.** It restates the corner in words — DSPX HIGH, MID or LOW and COR3M the same — which is the reason the regime is what it is. A score of 5.4 with both factors LOW is still COMPRESSED; the line looks mid because low dispersion and low correlation pull the summary in opposite directions.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-The defaults are reasonable but not optimal for most timeframes. Here's what I landed on after a few weeks of A/B testing:
+The lookback is a trailing window of daily prints, default 252 sessions, held inside the daily request so the lookback remains 252 daily observations on an hourly chart as well as on a daily chart. The ranks are smoothed with a short daily EMA.
 
-- **Swing lookback / sensitivity:** Bump it up from default on anything below the 15m. The default is twitchy on fast timeframes and will flip bias on noise. On the 1H and 4H, defaults are fine.
-- **Confirmation requirement:** If the script exposes a "confirmed vs. implied" toggle, leave implied on for entries but check confirmed for your stop placement. That split is where the indicator earns its money.
-- **Alerts:** Set them on *state change*, not on every pivot. Pivot alerts will bury you.
+High and low for the corners enter at the 60th and 40th percentiles and, with hysteresis on, leave only after 55 and 45 — which stops a one-percentile wobble from renaming the tape.
 
-On the MACD chart setup specifically, I found the indicator pairs well when you use the momentum histogram as a *veto* layer — take the structural long only when momentum agrees.
+Other toggles worth knowing:
 
-## How I'd Trade It
+- **Confirmed D or Live D.** Confirmed D, the default, uses the last completed daily Cboe print, so the last bar on a daily chart is yesterday's structure and does not wander with the developing session. Live D uses the current daily close and can flip while cash is open.
+- **Background colour mode.** Position mode (default) follows the two-dimensional regime rather than the score, so a mid-range line can still sit in a blue COMPRESSED patch. Dynamic mode tints the pane by the 0 to 10 reading. Off leaves the pane unshaded.
+- **Optional grey bands**, off by default, are a 21-day standard deviation of the score, not a forecast interval.
+- **Two further optional lines**, also off by default, plot the DSPX rank and the inverse COR3M rank on the same 0 to 10 scale when you want to see which factor is doing the work.
 
-The logic that makes sense:
+Daily is the timeframe this was written for. Trend and bands follow daily changes on the host chart, so they are exact on a daily pane and only as fine as the host timeframe on a weekly one.
 
-1. **Wait for a structural shift** — the bias flipping from bearish/transitional to bullish.
-2. **Enter on the first pullback** that holds the most recent higher low, not on the flip bar itself.
-3. **Stop below the last structural low** the indicator identifies — this is the cleanest part of the tool, because it gives you a defensible invalidation level.
-4. **Target the prior swing high**, then trail using each new higher low the indicator prints.
+## How to Read It
 
-Notice in the screenshot how the bias holds through a pullback that would have shaken out a momentum-only entry. That's the edge: structure gives you a reason to stay in when price action looks ugly.
+The table at the top right is the actual reading, row by row:
+
+1. **IMS score** — the 0 to 10 summary, printed to two decimals, with confirmed D or live D on the right.
+2. **Regime** — the two-dimensional class.
+3. **Why** — DSPX and COR3M each restated as HIGH, MID or LOW.
+4. **DSPX** — the raw Cboe dispersion level, then the trailing percentile in parentheses, then HIGH, MID or LOW. The percentiles there are rounded to whole numbers; the score above uses the unrounded ranks, so a low percentile pair can sit next to a mid score without a contradiction.
+5. **COR3M** — the raw implied-correlation level the same way.
+6. **Vol overlay** — VIXEQ's percentile, labelled ELEVATED at or above 70, SUBDUED at or below 40, otherwise NORMAL. VIXEQ does not enter the 0 to 10 line and does not move the regime, so you can hold STOCK PICKING and still see constituent implied volatility elevated. The first fact is structure; the second is the vol climate around it.
+7. **Trend** — the EMA slope. If it has fallen by at least 0.20 over five days the dashboard says FALLING; the opposite move is RISING; anything smaller is FLAT.
+8. **Status** — ACTIVE once DSPX and COR3M both have a rank, WARMING UP until the lookback fills. If a feed is late the score stays blank rather than collapsing toward zero.
+
+The grid under those rows is the same plane drawn as a table. Rows are DSPX, high at the top, low at the bottom. Columns are COR3M, low on the left, high on the right. PICK is high dispersion with low correlation; STRESS is both high; COMP is both low; TAPE is low dispersion with high correlation. MIXED sits in the centre, and the dotted cells are the mixed edges where only one factor has left the middle.
 
 ## Pros & Cons
 
 **Pros**
-- Genuinely different from pivot-dot indicators — it answers a structural question, not a plotting question.
-- The implied/early bias flip is useful for anticipation entries.
-- Clear invalidation levels, which is rare for a "structure" tool.
-- Works across timeframes without re-tuning much above 15m.
+- Genuinely different from price-derived structure tools — it answers a question the chart itself cannot.
+- The two-dimensional grid keeps dispersion and correlation separable rather than burying them in one number.
+- Regime descriptions map to a stated expression choice rather than a direction call.
+- Alerts fire on a confirmed bar for the step from one regime into another, for leaving a corner, for the score crossing 7.5 or 2.5, for a turn in the daily EMA slope, and for VIXEQ first reaching the elevated overlay band.
 
 **Cons**
-- Early flips mean early wrong flips. You will get faked out in ranging markets.
-- No built-in volume, momentum, or volatility filter — you must layer your own.
-- The "implied" naming oversells it slightly; it's a swing-sequence model, not a prediction engine.
-- Repaints on the current forming bar if you use implied mode. Fine for context, dangerous for backtesting.
+- It will not tell you whether SPX is going up, and it does not claim to forecast next week's realised breadth. Direction is entirely your own setup.
+- VIXEQ's live window is shorter than DSPX's, so its percentile can stay blank until the lookback fills.
+- The ranks are relative to the window available, not to a decade of history. DSPX has been live since 27 September 2023.
+- It is written for the daily timeframe; on other host timeframes the trend and bands are only as fine as the host.
 
 ## Who It's For
 
-Discretionary swing and intraday traders who already think in terms of higher highs and lower lows and want that process formalized. It's also good for traders learning market structure — the visual bias teaches the concept fast. Scalpers on sub-5m charts should look elsewhere; the noise-to-signal ratio gets ugly.
+Traders who already have a directional setup and need to decide how to express it — index overlay, single-stock book, hedge, or smaller size. It is not a signal generator and it is not a return forecast. Wire the alerts to a notification, not to an order.
 
 ## Alternatives Worth Knowing
 
-- **Market Structure (LuxAlgo)** — more features, more clutter, more repainting.
-- **Smart Money Concepts** — better for order-block/breaker traders, heavier learning curve.
-- **Plain pivot indicators** — cheaper mentally, but you do all the interpretation.
-
-If you want structure *plus* momentum in one pane, Implied_Market_Structure won't replace your MACD — use them together as I described above.
+- **Breadth indicators** — advancing issues and new highs catch the same narrowness, but only after the close.
+- **Price-based market structure tools** — read the chart in front of you, which this script explicitly does not do.
+- **The underlying Cboe indices directly** — DSPX, COR3M and VIXEQ each live on TradingView; this script ranks and combines them rather than rebuilding the formulas.
 
 ## FAQ
 
 **Does it repaint?**
-In implied mode, yes — the forming bar can change bias. Confirmed mode does not repaint but lags.
+Confirmed D, the default, uses the last completed daily Cboe print, so the last bar on a daily chart is yesterday's structure and does not wander with the developing session. Live D uses the current daily close and can flip while cash is open.
 
-**Is it good for backtesting?**
-Only in confirmed mode. Implied mode will flatter your backtest results and lie to you.
+**What timeframe is it for?**
+Daily is the timeframe it was written for. The lookback remains 252 daily observations on an hourly chart as well as on a daily chart, but trend and bands follow daily changes on the host chart.
 
-**What timeframe is best?**
-1H and 4H are the sweet spot. Below 15m requires sensitivity tuning.
+**Does VIXEQ affect the score?**
+No. VIXEQ does not enter the 0 to 10 line and does not move the regime. It is a vol-climate overlay only.
 
 **Can I use it for entries alone?**
-You can, but you shouldn't. Pair it with a momentum or volume filter.
+It does not produce entries. It tells you, each morning, whether the listed options surface is treating the next month as a crowd or as 500 separate stories.
 
 ## Final Verdict
 
-Implied_Market_Structure is a solid, honestly-built tool that does one job well: it turns swing sequences into a readable directional bias with clean invalidation levels. It's not revolutionary, and the implied/repainting tradeoff is a real limitation you have to respect. But if you trade structure, this earns a permanent slot on your chart — just don't trade it naked.
+Implied_Market_Structure is a narrow, honestly-scoped tool. It reads the listed options surface and classifies the forward-looking structure it implies, while leaving direction entirely to your own setup. The two-dimensional grid and the Why row are what make it more than a single-number oscillator, and the confirmed-daily default keeps the reading stable through the session. It is not a forecast, and it does not claim to be one — Cboe, S&P DJI and VIX remain trademarks of their owners, and no return forecast is claimed. If you already have a directional view and need a structured answer on how to express it, this earns a slot on the chart.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a genuinely useful structure tool, docked one star for repainting in implied mode and the missing filter layer.
+**Rating: ⭐⭐⭐⭐ (4/5)** — a genuinely different structure tool, docked one star for the short VIXEQ history and the daily-only design.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

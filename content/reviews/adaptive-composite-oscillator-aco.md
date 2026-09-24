@@ -17,86 +17,100 @@ categories:
 rating: 4
 description: "Honest Adaptive_Composite_Oscillator_Aco review: tested settings, entry/exit logic, pros/cons. See if this adaptive trend oscillator fits your strategy."
 tv_script_url: "https://www.tradingview.com/script/vEMWSCP3-Adaptive-Composite-Oscillator-ACO/"
+sources: ["https://www.tradingview.com/script/vEMWSCP3-Adaptive-Composite-Oscillator-ACO/"]
 ---
-Let me be upfront: when I first loaded the Adaptive_Composite_Oscillator_Aco (ACO) on a daily MACD chart, I expected another repackaged stochastic with a fancy name. After two weeks of backtesting across BTC, EURUSD, and AAPL, I’m genuinely impressed — but not blown away. Here’s the full breakdown.
+The Adaptive Composite Oscillator (ACO) is a momentum oscillator that adapts its own lookback length, normalization bands, and signal logic to current market conditions, rather than relying on the fixed parameters and fixed 70/30-style bands used by traditional oscillators like RSI or Stochastic.
 
 ## What This Indicator Actually Does
 
-ACO is a trend-following oscillator that blends multiple momentum calculations into a single adaptive line. Unlike fixed-period oscillators (RSI, Stoch), it dynamically adjusts its lookback based on market volatility. When volatility spikes, the oscillator speeds up; when things quiet down, it smooths out. The result is a cleaner signal line that avoids the whipsaw noise that plagues traditional oscillators in ranging markets.
+ACO is a momentum oscillator built around an adaptive engine. Instead of running one fixed period regardless of context, it changes its effective momentum length based on recent volatility, measured as ATR relative to its own average. The length shortens when volatility is elevated and lengthens when volatility is calm, so the oscillator speeds up in choppy or volatile stretches and slows down in quiet ones.
 
-The chart above shows the default setup on a 1D MACD chart. Notice how the ACO line (blue) tracks price momentum without the choppy crossovers you’d see on a standard MACD histogram. That’s the adaptive component doing its job.
+Because Pine's built-in `ta.rsi()` requires a fixed length — which a bar-by-bar adaptive length can't satisfy — the RSI is built manually with a Wilder-style recursive average whose smoothing factor is derived from the adaptive length on every bar. Same underlying math as RSI, just computed in a way that tolerates a variable length. That raw adaptive RSI is then passed through a Kaufman Adaptive Moving Average-style filter using an efficiency ratio between fast and slow EMA constants, which makes the line track efficient, directional moves closely while damping down noise during back-and-forth chop.
+
+Rather than fixed overbought/oversold levels, the smoothed momentum is converted into a z-score against its own rolling mean and standard deviation. The ±2 SD bands self-calibrate to each instrument's own volatility character instead of using one arbitrary threshold for every market.
 
 ## Key Features That Set It Apart
 
-**Dynamic period adjustment** — This is the core differentiator. The indicator uses a volatility-based algorithm (similar to ATR weighting) to modify its internal period. In my tests, it reduced false signals by roughly 30% compared to a fixed 14-period RSI on the same data.
+**Adaptive lookback** — The core differentiator. The effective momentum length is volatility-driven rather than fixed, so the oscillator's responsiveness changes with market conditions instead of staying constant.
 
-**Composite signal structure** — It doesn’t just plot one line. ACO combines short-term and long-term momentum readings into a single oscillator with a signal line. The crossover points are cleaner than most, and the zero-line acts as a meaningful trend filter.
+**Manual adaptive RSI** — A Wilder-style recursive average with a smoothing factor derived from the adaptive length on every bar, which is what makes a variable-length RSI possible in Pine.
 
-**Built-in divergence detection** — This surprised me. The indicator flags regular and hidden divergences automatically. Not as polished as dedicated divergence tools, but functional enough for swing trading.
+**KAMA-style smoothing** — The raw adaptive RSI is filtered using an efficiency ratio between fast and slow EMA constants, so directional moves are tracked closely and chop is damped.
 
-## Best Settings I Found
+**Statistical normalization** — Z-score bands against a rolling mean and standard deviation, with ±2 SD bands that self-calibrate per instrument rather than using one fixed threshold for every market.
 
-After stress-testing multiple configurations, here’s what worked:
+**Regime filter (ADX/DMI)** — An ADX reading classifies conditions as ranging or trending. In ranging conditions, z-score extremes are treated as mean-reversion signals. In strong trends (ADX above threshold), those same extremes are deliberately ignored — since momentum can stay "overbought" for a long time inside a real trend — and instead a zero-line cross in the direction confirmed by +DI/−DI is treated as a trend-continuation signal.
 
-- **Timeframe:** 4H or 1D. Anything lower and the adaptive component becomes too twitchy.
-- **Fast Length:** 9 (default is fine, but 8 reduces lag slightly)
-- **Slow Length:** 21 (keep at 21; changing it disrupts the balance)
-- **Signal Smoothing:** 5 (default 3 causes too many crossovers)
-- **Use Zero Line Filter:** ON — this is critical. It filters out weak signals that occur above/below the zero line during strong trends.
+**Volume confirmation** — Every signal additionally requires volume above its own moving average, filtering out low-participation moves.
 
-One warning: don’t crank the adaptive sensitivity to maximum. I tried it, and the indicator turned into noise on 15-minute charts. The default adaptive strength is well-calibrated for most markets.
+**Algorithmic divergence with connecting lines** — Bullish and bearish divergence is detected by comparing confirmed price pivots to oscillator pivots, a defined rule rather than a discretionary read, and drawn as connecting lines on both the price chart and the oscillator pane so the shape of the divergence is visible rather than marked with a single dot.
 
-## How to Use It: Entry/Exit Logic
+## Settings and How to Tune Them
 
-This is where ACO shines if you combine it with price action:
+All lengths, the ADX trend threshold, volume multiplier, pivot lookback, and KAMA constants are adjustable in settings. The defaults are described in the source material as a reasonable starting point, not a finished strategy — which is the honest framing, since there's no published evidence that any particular configuration outperforms another.
 
-**Long Entry:** Wait for the ACO line to cross above the signal line *while both are below the zero line*. This confirms a momentum shift from oversold territory. Add a bullish candlestick pattern (hammer, engulfing) for confluence. I found this filter alone removed about 40% of losing trades.
+The parameters you'll be tuning are:
 
-**Short Entry:** Mirror image — cross below signal line, both above zero line, bearish candlestick confirmation.
+- **Adaptive lookback lengths** — the momentum length that the volatility engine scales up or down. Shorter effective lengths make the oscillator more responsive; longer ones make it slower.
+- **KAMA constants** — the fast and slow EMA constants used inside the efficiency-ratio filter. These govern how aggressively the smoothing line tracks directional moves versus damping noise.
+- **ADX trend threshold** — the level above which conditions are classified as trending, which switches the signal logic from mean-reversion to trend-continuation.
+- **Volume multiplier** — how far above its own moving average volume must be for a signal to count.
+- **Pivot lookback** — how many bars on each side are required to confirm a pivot for divergence detection.
 
-**Exit Strategy:** The zero line is your best friend. If you’re long and ACO falls below zero, exit regardless of signal line position. This protected my gains during the August 2026 BTC correction when the indicator signaled early weakness.
+There is no basis in the source material for claiming one setting produces better results than another. Treat the defaults as a starting point and tune to the instrument and timeframe you're actually trading.
 
-**Stop Loss:** Place below the recent swing low (long) or above the swing high (short). The adaptive nature means the indicator won’t save you from gap risks, so always use structural stops.
+## How to Use It: Reading the Signals
+
+Start by reading the regime background. Yellow shading means the market is trending strongly by ADX; no shading means it's ranging. That tells you which of the two signal modes is currently active.
+
+Then read the line color — gray, blue, or orange — which tells you the direction of any active trend. The oscillator line is colored by regime: gray for ranging, blue for confirmed uptrend, orange for confirmed downtrend.
+
+Triangles mark volume-confirmed signals: green below the line for long, red above for short. Connecting lines mark divergence: magenta between two price/oscillator highs for bearish, lime between two lows for bullish. These appear a few bars after the second pivot confirms, since a pivot needs bars on both sides to validate.
+
+The strongest setups combine elements rather than relying on one signal alone — for example, a long triangle firing alongside a lime divergence line, or a trend-mode zero-cross that agrees with a higher-timeframe trend you've checked separately. Avoid taking ranging-mode mean-reversion signals against a clearly shaded trending background; that's exactly the mismatch the regime filter exists to prevent.
+
+Four alert conditions are built in — Long Signal, Short Signal, Bullish Divergence, and Bearish Divergence — via TradingView's standard Add Alert dialog.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely adaptive — no other oscillator I’ve tested handles volatility shifts this well
-- Clean visual output, even in the default MACD chart style
-- Divergence detection is a free bonus
-- Works across crypto, forex, and equities without re-tuning
+- Genuinely adaptive lookback rather than a fixed period
+- Regime filter explicitly separates mean-reversion from trend-continuation logic
+- Statistical z-score bands that self-calibrate per instrument
+- Algorithmic divergence detection drawn as connecting lines on both panes
+- Volume confirmation on every signal
 
 **Cons:**
-- Learning curve for new traders — the adaptive concept isn’t intuitive at first
-- Too sensitive on lower timeframes (below 1H gets messy)
-- No alerts for divergences — you have to spot them visually
-- The default signal smoothing (3) is too aggressive; needs adjustment
+- Learning curve — the adaptive concept and the two signal modes aren't intuitive at first
+- Divergence lines only appear after the second pivot confirms, so they lag the pivot itself
+- The regime-switching logic means the same z-score extreme can mean opposite things depending on ADX, which requires attention to the background shading
 
-## Who It’s For
+## Who It's For
 
-This indicator suits **swing traders and position traders** who work on 4H or higher timeframes. If you’re a day trader looking for scalping signals, look elsewhere — the adaptive logic works against you on M5/M15 charts. It’s also a strong fit for traders who find fixed-period oscillators too laggy in trending markets but too noisy in ranges.
+This suits discretionary traders who want an oscillator that adjusts its behavior to volatility instead of running a fixed period, and who are willing to work with two distinct signal modes depending on regime. It's a poor fit for anyone who wants a single, unambiguous overbought/oversold threshold — the whole point of the z-score normalization is that there isn't one.
 
 ## Alternatives Worth Considering
 
-- **Supertrend** — Better if you want pure trend direction without oscillator complexity
-- **MACD with adaptive settings** — Simpler alternative if you’re comfortable tweaking standard MACD inputs
-- **Stochastic RSI** — Better for mean-reversion trading in ranging markets; ACO struggles there
+- **Standard RSI or Stochastic** — Simpler, fixed-period, fixed 70/30-style bands. Less to learn, less adaptive.
+- **MACD** — A different momentum construction with a signal line and zero-line cross, but fixed periods.
+- **Dedicated divergence tools** — If divergence detection is your main use case, a purpose-built tool may be more focused than an all-in-one oscillator.
 
 ## FAQ
 
-**Is ACO a lagging indicator?** All oscillators lag, but ACO’s adaptive component reduces lag by roughly 15-20% compared to fixed-period versions. It’s still not leading — don’t expect it to predict reversals.
+**Is ACO a lagging indicator?** All oscillators are lagging by construction. ACO's adaptive length changes its responsiveness with volatility, but the source material makes no claim about how much lag it removes relative to fixed-period oscillators.
 
-**Can I use ACO for day trading?** Technically yes, but I don’t recommend it. Below the 1H timeframe, the adaptive algorithm overreacts to minor volatility changes, producing excessive false signals.
+**Does it repaint?** The source material does not state anything about repainting. Divergence lines do appear a few bars after the second pivot confirms, because a pivot needs bars on both sides to validate — that's a timing characteristic of the divergence detection, not a repainting claim.
 
-**Does it repaint?** No. I verified this on historical candles — the ACO values don’t change once a bar closes. This is crucial for backtesting reliability.
+**Does it have alerts?** Yes. Four alert conditions are built in — Long Signal, Short Signal, Bullish Divergence, and Bearish Divergence — via TradingView's standard Add Alert dialog.
 
-**What’s the best market for ACO?** Crypto and forex. The adaptive nature handles 24/7 volatility well. For stocks, it works best on index ETFs rather than individual stocks with earnings gaps.
+**What's the best market or timeframe for ACO?** The source material doesn't specify a preferred market or timeframe. The adaptive lookback, z-score bands, and regime filter are all designed to self-calibrate, and all lengths and thresholds are adjustable in settings.
 
 ## Final Verdict
 
-The Adaptive_Composite_Oscillator_Aco earns **4 out of 5 stars**. It’s not a holy grail — no indicator is — but it’s one of the few oscillators that genuinely improves on the classic formulas. The adaptive logic reduces noise without sacrificing trend detection, and the zero-line filter alone is worth the install. The main downsides are the learning curve and poor performance on lower timeframes.
+The Adaptive Composite Oscillator is a well-constructed momentum oscillator that takes the adaptive concept seriously: variable lookback, manual adaptive RSI, KAMA-style smoothing, z-score normalization, a regime filter that switches signal logic between mean-reversion and trend-continuation, volume confirmation, and algorithmic divergence drawn as connecting lines.
 
-If you’re a swing trader tired of RSI whipsawing you out of good positions, give ACO a shot. Just remember to adjust the signal smoothing to 5 and always confirm with price action. It’s earned a permanent spot in my toolbox, and I suspect it’ll earn one in yours too.
+What it isn't is a finished strategy. The defaults are a starting point, the two signal modes require you to read the regime background before interpreting anything, and there's no published performance data to lean on. Treat it as a structured framework for reading momentum across regimes rather than a signal generator to follow mechanically.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

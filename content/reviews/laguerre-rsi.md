@@ -16,85 +16,90 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A detailed review of the Laguerre RSI indicator. Learn its settings, strategy, pros, cons, and whether it's worth adding to your TradingView toolkit."
+grounding: "none (no source found)"
 ---
-
-**Description:** A detailed review of the Laguerre RSI indicator. Learn its settings, strategy, pros, cons, and whether it's worth adding to your TradingView toolkit.
-
----
-
 ## What This Indicator Actually Does
 
-The Laguerre RSI isn’t your standard RSI clone. It’s a filtered version of the classic Relative Strength Index, designed to reduce noise and produce cleaner signals. Instead of the usual 14-period smoothing, it uses a Laguerre filter — a mathematical transformation that makes the line react faster to price changes while ignoring random wiggles. The result? Fewer false breakouts, tighter entries, and a line that hugs price action better than the original. On the chart above, you’ll see it doesn’t spike as wildly as a 14-period RSI; it stays more stable, giving clearer overbought/oversold zones.
+The Laguerre RSI is a filtered version of the classic Relative Strength Index, built to reduce noise and produce cleaner signals. Rather than standard period smoothing, it applies a Laguerre filter — a recursive mathematical transformation intended to let the line react to price changes while ignoring minor fluctuations. The practical claim is fewer false breakouts and a line that tracks price action more closely than a conventional RSI, with more stable overbought and oversold zones instead of wild spikes.
 
 ## Key Features That Set It Apart
 
-- **Laguerre filter** – This is the core differentiator. It applies a recursive smoothing that reduces lag compared to standard moving averages. You get faster reactions without the chop.
-- **Adjustable gamma** – Most implementations let you tweak the gamma parameter (default 0.5 or 0.7). Lower gamma = smoother but slower; higher gamma = faster but noisier. I found 0.5 works best for swing trading on 1H–4H charts.
-- **Overbought/oversold levels** – Fixed at 0.85 and 0.20 by default. These are tighter than the classic 70/30, which helps spot extremes earlier. But don’t expect perfect reversals — it still whipsaws in ranging markets.
+- **Laguerre filter** – The core differentiator. It applies recursive smoothing that is designed to reduce lag compared to standard moving averages, aiming for faster reactions without the chop.
+- **Adjustable gamma** – Most implementations expose a gamma parameter. In general terms, lower gamma produces a smoother but slower line; higher gamma produces a faster but noisier one.
+- **Overbought/oversold levels** – These sit at tighter thresholds than the classic 70/30, which is intended to flag extremes earlier. That tightness also means the indicator can whipsaw in ranging markets.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After testing over 200 trades on EUR/USD and BTC/USD:
-- **Gamma**: 0.5 (sweet spot for most timeframes). For scalping on 5-minute charts, try 0.7 — but expect more false signals.
-- **Overbought**: 0.85. If you’re trading trending markets, lower to 0.80 to catch earlier pullbacks.
-- **Oversold**: 0.20. Raise to 0.30 for stronger trend confirmation.
-- **Signal line**: Keep it enabled. A crossover of the Laguerre RSI above/below its own signal line adds another layer of confirmation.
+- **Gamma**: The smoothing control. Lower values trade responsiveness for smoothness; higher values do the opposite. Tuning it to your timeframe and instrument is a matter of preference, not a fixed rule.
+- **Overbought level**: The upper threshold. Raising or lowering it shifts how early extremes are flagged — looser levels catch earlier pullbacks but produce more signals.
+- **Oversold level**: The lower threshold, adjusted on the same logic in reverse.
+- **Signal line**: An optional secondary line. A crossover of the Laguerre RSI above or below its own signal line can be used as an additional confirmation layer.
+
+No single configuration is universally best; the right values depend on the asset, timeframe, and trading style.
 
 ## How to Use It for Entries and Exits
 
-**Long entry**: Wait for the Laguerre RSI to dip below 0.20 (oversold) *and* cross back above its signal line. Don’t buy the first touch — let it confirm. On the chart above, that’s the moment it turns up after a brief hold below 0.20.
+**Long entry**: Wait for the Laguerre RSI to dip below the oversold level *and* cross back above its signal line. Rather than buying the first touch, wait for confirmation — the turn up after a brief hold below the threshold.
 
-**Short entry**: Same logic in reverse — above 0.85, then cross below signal line.
+**Short entry**: The same logic in reverse — a move above the overbought level, then a cross below the signal line.
 
-**Exit**: Trail with the signal line. If you’re long and the Laguerre RSI crosses below its signal line, close the trade. For aggressive exits, use a fixed 0.70 (short) or 0.30 (long) as a warning zone.
+**Exit**: Trail with the signal line. If long and the Laguerre RSI crosses below its signal line, close the trade. More aggressive traders can use intermediate levels as an early warning zone.
 
-**Pro tip**: Combine with a 50-period EMA. Only take longs if price is above the EMA and the Laguerre RSI is oversold. This filters out counter-trend traps.
+**Combination approach**: Pairing the indicator with a long-period EMA is a common way to filter counter-trend entries — for example, only taking longs when price is above the EMA and the Laguerre RSI is oversold.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Reduces noise significantly compared to standard RSI. Fewer false signals in trending markets.
-- Faster reaction than a 14-period RSI — you’ll catch moves earlier.
-- Customizable gamma lets you adapt to different timeframes.
-- Clean visual presentation; doesn’t clutter the chart.
+- Reduces noise compared to standard RSI, with fewer false signals in trending markets.
+- Reacts faster than a conventional period-smoothed RSI, which can mean catching moves earlier.
+- Customizable gamma lets you adapt it to different timeframes and instruments.
+- Clean visual presentation that doesn't clutter the chart.
 
 **Cons:**
-- Still whipsaws in sideways, choppy markets. No indicator is perfect here.
-- The 0.85/0.20 levels are arbitrary — you’ll need to backtest them for your specific asset.
-- Gamma values >0.7 produce too many false signals for my taste.
-- Not intuitive at first glance. New traders may struggle with the Laguerre concept.
+- Still whipsaws in sideways, choppy markets. No indicator solves that.
+- The default overbought/oversold levels are arbitrary — they need to be evaluated against your specific asset.
+- High gamma values produce noticeably more false signals.
+- Not intuitive at first glance. New traders may struggle with the Laguerre concept itself.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This is for intermediate to advanced traders who want a cleaner RSI variant. If you’re tired of the classic RSI giving you 20 signals a day, the Laguerre RSI will cut that in half. Swing traders on 1H–4H charts will benefit most. Scalpers can use it but need tighter gamma (0.7) and a fast timeframe — just expect more false moves.
+This suits intermediate to advanced traders who want a cleaner RSI variant. If the classic RSI is generating more signals than you can act on, the Laguerre version is designed to cut that down. Swing traders on intraday charts are the most natural fit. Scalpers can use it too, but typically need a faster gamma setting and a fast timeframe — and should expect more false moves.
 
 ## Better Alternatives (If They Exist)
 
-- **Stochastic RSI** – Similar noise reduction but with a different math. It’s more sensitive to momentum shifts. I’d say the Laguerre RSI is slightly better for trend-following; StochRSI for mean reversion.
-- **RSI with Hull Moving Average** – If you just want a faster RSI without the Laguerre filter, try replacing the smoothing with a Hull MA. It’s simpler and often works just as well.
-- **Fisher Transform** – More aggressive than Laguerre RSI. Great for spotting extremes but prone to overshooting. Use only in strong trends.
+- **Stochastic RSI** – Similar noise reduction through different math. It's more sensitive to momentum shifts. Broadly, the Laguerre RSI leans toward trend-following use, while StochRSI leans toward mean reversion.
+- **RSI with Hull Moving Average** – If you want a faster RSI without the Laguerre filter, replacing the smoothing with a Hull MA is simpler and often performs comparably.
+- **Fisher Transform** – More aggressive than the Laguerre RSI. Good for spotting extremes but prone to overshooting; best reserved for strong trends.
 
 ## FAQ: Real Trader Questions
 
-**Q: Does it repaint?**  
-A: No, standard Laguerre RSI does not repaint. It’s a real-time calculation. Some custom scripts claim to repaint — avoid those.
+**Q: Does it repaint?**
+A: The standard Laguerre RSI is a real-time calculation and does not repaint. Some custom scripts claim to — treat those with caution.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works well on BTC and ETH with gamma 0.5. Adjust overbought/oversold to 0.80/0.25 for crypto’s higher volatility.
+**Q: Can I use it on crypto?**
+A: Yes. It applies to crypto pairs like BTC and ETH. Because crypto volatility is higher, the overbought/oversold thresholds often need widening from the defaults.
 
-**Q: Is it better than a 14-period RSI?**  
-A: Depends. For reducing noise and getting earlier signals, yes. For simplicity and universal recognition, no. The classic RSI has decades of data behind it.
+**Q: Is it better than a standard RSI?**
+A: Depends on the goal. For reducing noise and getting earlier signals, yes. For simplicity and universal recognition, no — the classic RSI has decades of data behind it.
 
-**Q: What timeframe works best?**  
-A: 1H to 4H for swing trading. 5-minute for scalping (with gamma 0.7). Avoid daily unless you’re a position trader.
+**Q: What timeframe works best?**
+A: Intraday swing timeframes are the common fit, with fast timeframes for scalping. Higher timeframes are generally less suitable unless you're a position trader.
 
 ## Final Verdict
 
-The Laguerre RSI is a solid upgrade to the classic RSI if you’re tired of noise. It’s not a magic bullet — no indicator is — but it gives you cleaner signals and faster reactions. The gamma setting is its superpower, letting you fine-tune it to your style. For the price (free on TradingView), it’s a no-brainer to test. Just don’t expect it to work in choppy markets, and always combine with price action.
+The Laguerre RSI is a reasonable upgrade to the classic RSI if noise is your main complaint. It isn't a magic bullet — no indicator is — but it offers cleaner signals and faster reactions. The gamma setting is its strongest feature, letting you fine-tune responsiveness to your style. It's free on TradingView, so testing it costs nothing. Just don't expect it to perform in choppy markets, and always combine it with price action.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – One star off for the whipsaw in ranging markets and the learning curve. But for trending conditions, it’s hard to beat.
+**Rating: ⭐⭐⭐⭐ (4/5)** – One star off for the whipsaw in ranging markets and the learning curve. In trending conditions, it holds up well.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

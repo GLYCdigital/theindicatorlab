@@ -16,35 +16,35 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Bill Williams' AC oscillator measures momentum shifts. Review covers settings, zero-line crossings, and saucer patterns for entries."
+grounding: "none (no source found)"
 ---
-
 **Description:** Bill Williams' AC oscillator measures momentum shifts. Review covers settings, zero-line crossings, and saucer patterns for entries.
 
 ---
 
-If you've ever felt like price action is running away from you, the Acceleration/Deceleration (AC) Oscillator is the tool that helps you catch it before it leaves the station. Developed by Bill Williams as part of his trading chaos system, this indicator isn't some rehashed RSI or MACD clone—it directly measures whether momentum is speeding up or slowing down. I've run it on everything from 1-minute ES futures to daily FX pairs, and here's the raw truth.
+The Acceleration/Deceleration (AC) Oscillator is a momentum tool from Bill Williams' trading chaos system. Rather than rehashing RSI or MACD, it measures whether momentum is speeding up or slowing down, which gives it a different character from most oscillators on the platform.
 
 ### What This Indicator Actually Does
 
-The AC oscillator calculates the difference between a 5-period SMA of the Awesome Oscillator and a 34-period SMA of the Awesome Oscillator. That sounds more complex than it is. In plain English: it shows you whether the market's acceleration is increasing (green histogram bars above zero) or decreasing (red bars below zero). The zero line acts as the tipping point between positive and negative momentum velocity.
+The AC oscillator calculates the difference between a short-period SMA of the Awesome Oscillator and a longer-period SMA of the same. In plain terms: it shows whether the market's acceleration is increasing (green histogram bars above zero) or decreasing (red bars below zero). The zero line acts as the tipping point between positive and negative momentum velocity.
 
-As the chart above shows, when bars flip from red to green above zero, that's where you see explosive moves—and when they turn red below zero, institutional selling often follows.
+When bars flip from red to green above zero, that tends to coincide with strong directional moves. When they turn red below zero, selling pressure often follows.
 
 ### Key Features That Set It Apart
 
-- **Saucer Pattern Detection** – The indicator automatically highlights when three consecutive bars change color, creating a visual "saucer" that Williams used for high-probability entries. You'll see green saucers for buy signals and red saucers for sell signals.
-- **Zero-Line Crosses** – While not unique, the AC's zero line is more responsive than MACD's signal line crossovers because it measures acceleration, not just trend.
-- **Bar Color Logic** – Green above zero = acceleration up. Red above zero = deceleration up. Red below zero = acceleration down. Green below zero = deceleration down. This four-quadrant system tells you *where* the force is coming from.
+- **Saucer Pattern Detection** – The indicator highlights when three consecutive bars change color, creating a visual "saucer" that Williams used for entries. Green saucers are read as buy signals and red saucers as sell signals.
+- **Zero-Line Crosses** – Not unique on its own, but the AC's zero line responds faster than MACD's signal line crossovers because it measures acceleration rather than trend.
+- **Bar Color Logic** – Green above zero = acceleration up. Red above zero = deceleration up. Red below zero = acceleration down. Green below zero = deceleration down. This four-quadrant system tells you where the force is coming from.
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-Default settings (5, 34 for the underlying AO) work fine for most timeframes. But here's what I found after stress-testing:
+The default settings (5 and 34 for the underlying AO) are the reference point. Beyond that, the parameters are best understood conceptually rather than as fixed prescriptions:
 
-- **Scalping (1m-5m):** Tighten to (3, 21). You'll get more signals but more noise. Use only the saucer patterns—ignore single-bar flips.
-- **Swing Trading (1h-4h):** Default (5, 34) is perfect. The saucer patterns on daily charts are worth their weight in gold.
-- **Position Trading (Daily+):** Widen to (8, 55). Slower signals, but almost no false positives.
+- **Short timeframes:** Tighter periods produce more signals but more noise. In that regime, the saucer patterns are the more meaningful filter; single-bar flips carry less information.
+- **Swing timeframes:** The defaults are the natural starting point, and the saucer patterns are the primary signal to watch.
+- **Position timeframes:** Wider periods produce slower signals that occur less frequently.
 
-**Pro tip:** Always use the AC oscillator with a 20-period SMA on price. If the AC shows a green saucer above zero *and* price is above the 20 SMA, the trade has triple confirmation.
+A common approach is to pair the AC oscillator with a moving average on price as a trend filter. When the AC shows a green saucer above zero and price sits above that average, the two readings align.
 
 ### How to Use It for Entries and Exits
 
@@ -56,65 +56,71 @@ Default settings (5, 34 for the underlying AO) work fine for most timeframes. Bu
 
 **Exit Rules:**
 - Take partial profits when the AC bar turns red above zero (deceleration).
-- Exit full position when the AC crosses below zero with red bars.
+- Exit the full position when the AC crosses below zero with red bars.
 
 **Short Entry Rules (Sell):**
 1. AC above zero with green bars.
 2. Three consecutive red bars forming a saucer below zero.
-3. Enter short on third red bar close.
-
-I tested this on EUR/USD 1H over 500 trades. Saucer patterns gave a 62% win rate with a 1.8:1 risk-reward. Not world-beating, but solid for a simple oscillator.
+3. Enter short on the third red bar close.
 
 ### Honest Pros and Cons
 
 **Pros:**
-- Catches momentum shifts 1-2 bars before price confirms—you get early entries.
-- Saucer patterns filter out 70% of noise compared to raw zero-line crosses.
-- Works across all liquid markets (FX, indices, crypto).
+- Catches momentum shifts before price confirms, which allows for earlier entries.
+- Saucer patterns filter out a large share of the noise compared to raw zero-line crosses.
+- Works across liquid markets (FX, indices, crypto).
 - Minimal lag compared to MACD.
 
 **Cons:**
-- Terrible in ranging markets. Whipsaws will destroy you if you don't use a trend filter.
+- Poor in ranging markets. Whipsaws are a real risk without a trend filter.
 - The saucer pattern is subjective—what counts as "three consecutive bars" can vary.
-- No built-in alerts for saucer patterns (you'll need to code them in Pine Script).
+- No built-in alerts for saucer patterns; you'll need to code them in Pine Script.
 - Underperforms on low-volume assets (penny stocks, illiquid cryptos).
 
 ### Who It's Actually For
 
-This indicator is perfect for traders who:
+This indicator suits traders who:
 - Use Bill Williams' trading system (fractals, alligator, AO).
 - Want momentum confirmation without lag.
 - Trade breakouts and need to know when momentum is accelerating.
 
-It's *not* for scalpers who need 100 signals a day, or for traders who can't handle false signals in choppy conditions.
+It's not for scalpers who need a high volume of signals, or for traders who can't handle false signals in choppy conditions.
 
 ### Better Alternatives If They Exist
 
-- **Awesome Oscillator (AO)** – If you want the raw momentum without the acceleration layer. AO is simpler and works better in trends.
+- **Awesome Oscillator (AO)** – Raw momentum without the acceleration layer. Simpler, and better suited to trending conditions.
 - **MACD Histogram** – More widely used, with built-in alerts and divergence detection. Less responsive than AC but more reliable in ranging markets.
 - **Fisher Transform** – Faster than AC for catching reversals, but more prone to whipsaws.
 
 ### FAQ Addressing Real Trader Questions
 
-**Q: Does the AC oscillator repaint?**  
-No. The histogram bars are fixed once the bar closes. However, the saucer pattern can disappear if a bar changes color after close—but that's rare on higher timeframes.
+**Q: Does the AC oscillator repaint?**
+The histogram bars are fixed once the bar closes. The saucer pattern can disappear if a bar changes color after close, though this is uncommon on higher timeframes.
 
-**Q: Can I use it for crypto?**  
-Yes, but only on BTC, ETH, and top-10 coins. Lower-cap coins lack the volume for reliable acceleration readings.
+**Q: Can I use it for crypto?**
+It works best on BTC, ETH, and top-10 coins. Lower-cap coins generally lack the volume for reliable acceleration readings.
 
-**Q: What's the best timeframe?**  
+**Q: What's the best timeframe?**
 1H and 4H for swing trading. Daily for position trading. Avoid anything below 15 minutes.
 
-**Q: How do I add alerts for saucer patterns?**  
+**Q: How do I add alerts for saucer patterns?**
 TradingView doesn't have a native alert for this. You'll need to write a custom Pine Script alert condition: `ta.crossover(ac, 0) and ac > ac[1] and ac[1] > ac[2]`.
 
-### Final Verdict with Star Rating
+### Final Verdict
 
-The Acceleration/Deceleration Oscillator is a niche tool that shines in trending markets when combined with proper trend filters. It won't make you money by itself—no indicator does—but as part of a Bill Williams system or as a momentum confirmation tool, it's worth the screen space.
+The Acceleration/Deceleration Oscillator is a niche tool that performs best in trending markets when combined with proper trend filters. It won't make money by itself—no indicator does—but as part of a Bill Williams system or as a momentum confirmation tool, it earns its screen space.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – Minus one star for the lack of built-in saucer alerts and poor performance in sideways markets. But for what it does (measure acceleration), it's the best in class.
+**Rating: ⭐⭐⭐⭐ (4/5)** – Minus one star for the lack of built-in saucer alerts and its weakness in sideways markets. For what it does (measure acceleration), it's a strong option.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Oscillator** implementation was backtested on 30 markets over 5 years of daily data (9,899 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: VIX 76.2%, AUDUSD 59.5%, LTCUSD 58.8%, EURUSD 57.8%
+- Weakest markets: MSFT 42.8%, NVDA 39.8%, SHIBUSD 31.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

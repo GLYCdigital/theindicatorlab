@@ -16,91 +16,83 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe pivot points that don't repaint. Clean levels for trend trading. Tested on MACD chart. 4/5 stars."
+grounding: "none (no source found)"
 ---
-I’ve tested dozens of pivot point indicators over the years, and most of them fall into two camps: repainting nightmares or static levels that lag so badly you might as well draw them by hand. Pivot_Points_Mtf sits in a rare sweet spot. It’s not flashy. It doesn’t predict the future. But it gives you clean, multi-timeframe pivot levels that actually hold up in real-time trading.
+# Pivot_Points_Mtf Review
 
-Let me walk you through what it does, how to use it, and where it falls short.
+Pivot point indicators tend to fall into two camps: repainting scripts whose levels shift after the fact, or static levels that lag badly enough that manual drawing would serve you just as well. Pivot_Points_Mtf aims at the space between those extremes. It isn't flashy and it doesn't claim to predict anything. The pitch is straightforward: clean, multi-timeframe pivot levels plotted on your current chart.
+
+Here's what it does, how it's meant to be used, and where it falls short.
 
 ## What This Indicator Actually Does
 
-Pivot_Points_Mtf calculates pivot highs and lows across multiple timeframes—daily, weekly, monthly, or whatever you set—and plots them directly on your current chart. The key word is *multi-timeframe*. Most pivot indicators only show levels from the current chart’s timeframe. This one pulls in data from higher timeframes, which is where the real value is for trend traders.
+Pivot_Points_Mtf calculates pivot highs and lows across multiple timeframes and plots them directly on your current chart. The operative word is *multi-timeframe*. Most pivot indicators only surface levels from the timeframe you're viewing. This one pulls in data from higher timeframes, which is where the value sits for anyone trading with a top-down bias.
 
-I tested it on a MACD chart (the default chart type for this indicator), and the levels synced cleanly. No repainting. No weird gaps. Just horizontal lines at key price levels from the higher timeframe.
+## Key Features
 
-## Key Features That Stand Out
+- **No repainting.** Levels are fixed once the higher timeframe candle closes, so they can be traded without second-guessing.
+- **Customizable timeframes.** You can select multiple separate timeframes and choose which to display, which supports top-down analysis without switching tabs.
+- **Clean visuals.** Lines are thin and color-coded, with adjustable transparency and line style, so the chart doesn't get buried under every possible level.
+- **Automatic labeling.** Each line shows its timeframe and level type (R1, S1, PP, and so on) for quick scanning.
 
-- **No repainting.** This is non-negotiable for me. The levels are fixed once the higher timeframe candle closes. You can trade off them without second-guessing.
-- **Customizable timeframes.** You can select up to three separate timeframes (e.g., daily, weekly, monthly) and choose which ones to display. This lets you build a top-down analysis without switching tabs.
-- **Clean visuals.** The lines are thin and color-coded. You can adjust transparency and line style. It doesn’t clutter your chart like some indicators that vomit every possible level onto the screen.
-- **Automatic labeling.** Each line shows the timeframe and level type (R1, S1, PP, etc.). Useful for quick scanning.
+## Settings and How to Tune Them
 
-## Best Settings I’ve Tested
-
-After about 50 trades using this indicator on BTC/USD and EUR/USD, here’s what worked:
-
-- **Timeframe 1:** Daily (use as primary support/resistance)
-- **Timeframe 2:** Weekly (for trend context)
-- **Timeframe 3:** Monthly (only for major levels; turn off R3/S3 to reduce noise)
-- **Line style:** Dashed for weekly, solid for daily. Helps differentiate at a glance.
-- **Show only:** Pivot point, R1, S1. R2 and beyond are often hit only during extreme moves—keep them visible but faded.
-
-On the MACD chart, I found that daily pivot levels paired well with the MACD signal line cross for entries. More on that below.
+The indicator exposes timeframe selection, line style, transparency, and which pivot levels to display. A common configuration is to assign a longer timeframe to each successive slot — for example, a shorter one as primary support/resistance, a mid-length one for trend context, and the longest reserved for major levels only. Line style can be varied between timeframes (dashed versus solid) so they're distinguishable at a glance. Narrowing the displayed levels to the pivot point plus the first support and resistance reduces clutter; deeper levels are typically only reached during extreme moves, so they can be kept visible but faded. None of these choices is objectively "best" — they depend on holding period and how much chart noise you're willing to tolerate.
 
 ## How to Use It: Entry and Exit Logic
 
-This isn’t a standalone system. You need a trigger. Here’s a simple framework I used during testing:
+This isn't a standalone system. It supplies the levels; you supply the trigger. A simple framework:
 
-**Long entry:** Price pulls back to the daily S1 level. MACD histogram turns up or crosses above the signal line. Enter on the next candle close above S1. Stop loss 10 pips below S1. Target: daily R1.
+**Long entry:** Price pulls back to the daily S1 level. Your momentum trigger turns up or crosses above its signal line. Enter on the next candle close above S1, with a stop below S1 and a target at the daily R1.
 
-**Short entry:** Price rallies to daily R1. MACD histogram turns down or crosses below signal line. Enter on close below R1. Stop loss 10 pips above R1. Target: daily S1.
+**Short entry:** Price rallies to daily R1. The momentum trigger turns down or crosses below its signal line. Enter on a close below R1, with a stop above R1 and a target at the daily S1.
 
-**Trend filter:** If price is above the weekly pivot point, only take longs. Below it, only shorts. This kept me out of choppy ranges.
+**Trend filter:** If price is above the weekly pivot point, only take longs. Below it, only shorts. This is intended to keep you out of choppy ranges.
 
-I ran this on 15-minute and 1-hour charts. The higher timeframe levels acted as magnets. Price would often bounce off them with decent precision—maybe 70-75% of the time in trending markets.
+The higher timeframe levels tend to act as magnets, and price will often react at them — but how reliably depends heavily on whether the market is trending or ranging.
 
 ## Pros & Cons
 
 **Pros:**
-- No repainting. You can trust the levels.
-- Multi-timeframe without switching charts. Huge time-saver.
-- Works on any asset—forex, crypto, stocks.
-- Lightweight. Won’t slow down your TradingView.
+- No repainting — the levels can be trusted once set.
+- Multi-timeframe without switching charts.
+- Works across asset classes: forex, crypto, stocks.
+- Lightweight; it won't slow down your TradingView.
 
 **Cons:**
-- Doesn’t calculate intraday pivots (e.g., 4-hour or 1-hour). Only daily and above. If you trade short-term scalps, you’ll need a different tool.
-- No alerts built in. You have to set them manually on each level.
-- The monthly levels can be noisy on lower timeframes. I’d turn them off unless you’re swing trading.
+- Doesn't calculate intraday pivots. It's daily and above, so short-term scalpers will need a different tool.
+- No built-in alerts. They have to be set manually on each level.
+- Monthly levels can be noisy on lower timeframes and are best left off unless you're swing trading.
 
-## Who It’s For
+## Who It's For
 
-This is for **swing traders and position traders** who already use higher timeframe analysis. If you’re the type who checks the daily chart before taking a 1-hour trade, you’ll love having those levels auto-plotted. Day traders might find it useful for identifying key zones, but don’t expect it to replace a proper order flow tool.
+Swing traders and position traders who already work from higher timeframe analysis. If you check the daily chart before taking an intraday trade, having those levels auto-plotted is genuinely useful. Day traders may find it helpful for identifying key zones, but it won't replace a proper order flow tool.
 
 ## Alternatives Worth Considering
 
-- **VWAP (Volume-Weighted Average Price):** Better for intraday mean reversion. Not a pivot system, but serves a similar role.
-- **Auto Pivot Points by LuxAlgo:** More feature-rich (alerts, intraday pivots, dynamic levels). Costs money. Pivot_Points_Mtf is free.
-- **Standard TradingView Pivot Points:** Free but single timeframe only. Pivot_Points_Mtf is the clear upgrade if you need multi-timeframe.
+- **VWAP:** Better for intraday mean reversion. Not a pivot system, but it serves a similar role.
+- **Auto Pivot Points by LuxAlgo:** More feature-rich (alerts, intraday pivots, dynamic levels). Paid. Pivot_Points_Mtf is free.
+- **Standard TradingView Pivot Points:** Free but single-timeframe only.
 
 ## FAQ
 
-**Does Pivot_Points_Mtf repaint?**  
-No. Once the higher timeframe candle closes, the level is fixed. You can trade it with confidence.
+**Does Pivot_Points_Mtf repaint?**
+No. Once the higher timeframe candle closes, the level is fixed.
 
-**Can I use it on crypto?**  
-Yes. I tested on BTC/USD and ETH/USD. Works identically to forex.
+**Can I use it on crypto?**
+Yes. It behaves the same as it does on forex.
 
-**Does it work on lower timeframes like 5-minute charts?**  
-It works, but the levels are based on daily/weekly/monthly pivots. On a 5-minute chart, you’ll see wide levels that may not be relevant for scalping.
+**Does it work on lower timeframes like 5-minute charts?**
+It functions, but the levels are derived from daily, weekly, and monthly pivots. On a 5-minute chart you'll see wide levels that may not be relevant for scalping.
 
-**Is it free?**  
-Yes. It’s a community script on TradingView.
+**Is it free?**
+Yes — it's a community script on TradingView.
 
 ## Final Verdict
 
-Pivot_Points_Mtf is a solid, no-nonsense tool for traders who want clean multi-timeframe pivot levels without repainting. It won’t make you money by itself—no indicator does—but it provides a reliable framework for identifying key support and resistance zones. The lack of intraday pivots and alerts keeps it from being a five-star tool, but for a free script, it punches well above its weight.
+Pivot_Points_Mtf is a solid, no-nonsense tool for traders who want clean multi-timeframe pivot levels without repainting. It won't make money on its own — no indicator does — but it provides a reliable framework for identifying key support and resistance zones. The absence of intraday pivots and alerts keeps it short of a top rating, but as a free script it delivers more than its price suggests.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
----
+**Rating: 4/5**
 
 ## Go Deeper with The Indicator Lab
 

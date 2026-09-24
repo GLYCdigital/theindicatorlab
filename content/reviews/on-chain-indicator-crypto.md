@@ -16,35 +16,35 @@ categories:
   - Technical Analysis
 rating: 4
 description: "On_Chain_Indicator_Crypto brings exchange inflow/outflow, MVRV, and NUPL into TradingView. Honest review with settings, strategy, and pros/cons for crypto traders."
+grounding: "none (no source found)"
 ---
+# On_Chain_Indicator_Crypto Review
 
-Let’s be clear: most on-chain data lives on dashboards like Glassnode or CryptoQuant—useful, but annoying to cross-reference with price action. This indicator pulls key metrics directly onto your chart. After running it on BTC, ETH, and a few alts across multiple timeframes, here’s what I found.
+Most on-chain data lives on dashboards like Glassnode or CryptoQuant—useful, but annoying to cross-reference with price action. This indicator pulls key metrics directly onto your chart, offering a consolidated view of accumulation versus distribution behavior without leaving TradingView.
 
 ## What This Indicator Actually Does
 
-On_Chain_Indicator_Crypto overlays exchange flows (inflow/outflow), MVRV Z-Score, and NUPL (Net Unrealized Profit/Loss) as separate panes or overlaid lines. You get a consolidated view of accumulation vs. distribution behavior without leaving TradingView. It’s not a signal generator—it’s a data feed.
+On_Chain_Indicator_Crypto overlays exchange flows (inflow/outflow), MVRV Z-Score, and NUPL (Net Unrealized Profit/Loss) as separate panes or overlaid lines. It's not a signal generator—it's a data feed that brings on-chain context into the same window as price.
 
 ## Key Features That Set It Apart
 
-- **Multi-metric in one script:** Instead of installing three separate indicators, you get exchange flow, MVRV, and NUPL in one place. That’s a time-saver.
+- **Multi-metric in one script:** Instead of installing three separate indicators, you get exchange flow, MVRV, and NUPL in one place. That's a time-saver.
 - **Adjustable lookback periods:** You can tweak the moving averages on flows and the MVRV calculation window. Defaults are fine, but flexibility is there.
-- **Color-coded thresholds:** NUPL zones (euphoria, belief, capitulation) are shaded, making extreme levels pop. The chart above shows the red zone during the 2022 bottom—exactly when you’d want to pay attention.
+- **Color-coded thresholds:** NUPL zones (euphoria, belief, capitulation) are shaded, making extreme levels stand out.
 - **Alerts:** You can set alerts for MVRV crossing above 3.5 (overvalued) or below -1.5 (undervalued). Handy for systematic exit/entry.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I tested this on BTC/USDT 1D and 4H. Here’s what worked:
-
-- **MVRV Z-Score:** Keep the default 200-day moving average. For shorter-term trades, switch to 90 days—it reacts faster but noisier.
-- **Exchange Flow MA:** Set inflow and outflow to 7-period SMA. Anything shorter produces too many false flags on daily charts.
-- **NUPL Display:** Turn on the "zones" option. Visual references help when price looks indecisive.
-- **Timeframe:** Works best on 1D and above. On lower timeframes, on-chain data lags significantly—you’re looking at yesterday’s news.
+- **MVRV Z-Score:** The default uses a 200-day moving average. A 90-day window reacts faster but is noisier—a trade-off between responsiveness and false signals.
+- **Exchange Flow MA:** Inflow and outflow moving averages can be adjusted; shorter windows produce more signals, longer windows smooth them out.
+- **NUPL Display:** The "zones" option can be toggled on for visual reference when price looks indecisive.
+- **Timeframe:** On-chain data is inherently lagging, so it suits higher timeframes better than intraday charts.
 
 ## How to Use It for Entries and Exits
 
-- **Accumulation signal:** When MVRV drops below 0 and exchange outflow spikes (more coins leaving exchanges), that’s historically been a solid entry zone. The 2022 bottom printed exactly this setup.
-- **Distribution signal:** MVRV above 3.5 + rising exchange inflow = likely top. NUPL in the "euphoria" zone confirms it. Exit partial positions here.
-- **NUPL + price divergence:** If price makes a higher high but NUPL stays flat, distribution is underway. I’d tighten stops or take profits.
+- **Accumulation signal:** When MVRV drops below 0 and exchange outflow spikes (more coins leaving exchanges), that's historically been a solid entry zone.
+- **Distribution signal:** MVRV above 3.5 plus rising exchange inflow suggests a likely top. NUPL in the "euphoria" zone confirms it.
+- **NUPL + price divergence:** If price makes a higher high but NUPL stays flat, distribution may be underway—a cue to tighten stops or take profits.
 
 No single metric is enough—wait for at least two to align.
 
@@ -56,41 +56,39 @@ No single metric is enough—wait for at least two to align.
 - Alerts are functional and easy to set.
 
 **Cons:**
-- Data comes from a third-party API—if it’s slow or down, the indicator shows nothing. Happened twice during my testing.
+- Data comes from a third-party API—if it's slow or down, the indicator shows nothing.
 - Lag is real. On-chain data reflects the past 24–48 hours. Great for swing trading, useless for scalping.
-- No built-in backtesting. You’ll need to export data manually if you want to verify signals historically.
+- No built-in backtesting. You'll need to export data manually if you want to verify signals historically.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-Swing traders and position traders who trade BTC and large-cap alts. If you’re day trading, skip this—you need faster inputs. If you’re a long-term investor, it’s a useful macro sanity check.
+Swing traders and position traders who trade BTC and large-cap alts. Day traders need faster inputs. Long-term investors can use it as a macro sanity check.
 
 ## Better Alternatives If They Exist
 
 - **CryptoOnChain:** More metrics (STH-MVRV, reserve risk) but heavier on the chart. On_Chain_Indicator_Crypto is leaner.
-- **Glassnode Alerts:** If you want real-time notifications without the chart overlay, that’s better. But you lose the visual correlation with price.
+- **Glassnode Alerts:** If you want real-time notifications without the chart overlay, that's better. But you lose the visual correlation with price.
 - **Exchange Flow Ratio by @CryptoCred:** Simpler, just exchange flows. Less noise if you only care about accumulation.
 
 ## FAQ
 
-**Q: Does it work on altcoins?**  
+**Q: Does it work on altcoins?**
 A: Yes, but only for coins with sufficient on-chain data (ETH, MATIC, AVAX work okay). Small caps will show empty lines.
 
-**Q: Can I use this for Bitcoin dominance?**  
-A: No—it’s designed for individual assets, not indices.
+**Q: Can I use this for Bitcoin dominance?**
+A: No—it's designed for individual assets, not indices.
 
-**Q: How often does the data update?**  
+**Q: How often does the data update?**
 A: Every 1–4 hours depending on the API. Not intraday-friendly.
 
-**Q: Is it free?**  
-A: Yes, it’s a community script. No paywall.
+**Q: Is it free?**
+A: Yes, it's a community script. No paywall.
 
 ## Final Verdict
 
-On_Chain_Indicator_Crypto does one thing well: it puts on-chain data where you can actually use it—on your chart. It’s not perfect (the lag and occasional API hiccup are real), but for macro context on BTC or ETH, it’s a solid addition to your toolkit. I wouldn’t trade on it alone, but as a confluence filter, it earns its place.
+On_Chain_Indicator_Crypto does one thing well: it puts on-chain data where you can actually use it—on your chart. The lag and occasional API hiccup are real drawbacks, but for macro context on BTC or ETH, it's a solid addition to your toolkit. It shouldn't be traded on alone, but as a confluence filter, it earns its place.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – A useful bridge between on-chain data and price action, held back by data lag and API reliability.
-
----
 
 ## Go Deeper with The Indicator Lab
 

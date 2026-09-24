@@ -16,68 +16,67 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Klinger Volume Oscillator review: settings that work, entry/exit strategies, and a direct comparison with OBV and Volume Profile."
+grounding: "none (no source found)"
 ---
+**What it actually does**
+The Klinger Volume Oscillator measures volume flow relative to price movement. It is not simply a "volume up equals bullish" reading. It compares buying pressure against selling pressure using two moving averages and plots the difference as a histogram. The signal to watch for is when price makes a new high but the KVO does not—that is hidden weakness.
 
-If you’ve ever watched a breakout fail because you ignored volume divergence, you’ll appreciate the Klinger Volume Oscillator. It’s not flashy, but it’s one of the few indicators that *forces* you to check volume before pulling the trigger.
+**Key features that set it apart**
+- **Divergence reading**: It can flag bearish and bullish divergences, on the logic that volume often shifts before price does.
+- **Signal line cross**: A trigger when the KVO line crosses its signal line.
+- **Zero-line flips**: Crossing above zero suggests net accumulation; below zero, distribution.
+- **Customizable smoothing**: The fast and slow EMA lengths can be adjusted to match your timeframe.
 
-I’ve run this on multiple timeframes and markets over the last month. Here’s what actually works—and what doesn’t.
+**Settings and How to Tune Them**
+The KVO uses a fast EMA, a slow EMA, and a signal line. Defaults exist, and the lengths can be adjusted. Longer settings produce fewer, slower signals; shorter settings react faster and are noisier. There is no universal best configuration—it depends on the instrument and the timeframe you trade.
 
-**What it actually does**  
-The KVO measures volume flow relative to price movement. It’s not just “volume up = bullish.” It compares the volume of buying vs. selling pressure over two moving averages (typically 34 and 55 periods), then plots the difference as a histogram. The key signal? When price makes a new high but KVO doesn’t—that’s hidden weakness.
+The histogram color can be set to change when the KVO crosses zero, distinguishing accumulation from distribution in the style tab.
 
-**Key features that set it apart**  
-- **Divergence engine**: It catches bearish and bullish divergences earlier than RSI or MACD because volume often shifts before price.  
-- **Signal line cross**: A buy/sell trigger when the KVO line crosses its 13-period signal line.  
-- **Zero-line flips**: Crossing above zero suggests net accumulation; below zero, distribution.  
-- **Customizable smoothing**: You can adjust the fast/slow EMA lengths (default 34/55) to match your timeframe.
+**How to use it for entries and exits**
+- **Long entry**: Wait for KVO to cross above the signal line and be above zero, ideally with price at support or breaking resistance on volume.
+- **Short entry**: KVO crosses below the signal line and is below zero, ideally with price rejection at resistance.
+- **Divergence trade**: If price makes a lower low but KVO makes a higher low, that is bullish divergence.
+- **Exit**: Close when the histogram flips color, or use a trailing measure of the KVO.
+- **Stop loss**: KVO lags, so it is not suited to stop placement. Use price-based stops instead.
 
-**Best settings with specific recommendations**  
-After testing on BTC/USD and AAPL:  
-- **Day trading (5m–15m)**: Keep defaults (34/55/13). Add a 5-period smoothing on the KVO line to reduce noise.  
-- **Swing trading (1H–4H)**: Lengthen to 55/89/21. This filters out intraday chop and gives cleaner divergence signals.  
-- **Position trading (Daily)**: Use 89/144/34. You’ll get fewer signals but higher win rate on major trends.  
-- **Pro tip**: Set the histogram color to change when KVO crosses zero—green for accumulation, red for distribution. It’s in the style tab.
+**Honest pros and cons**
+**Pros**:
+- Divergence signals can be useful for catching trend reversals.
+- Applies across stocks, crypto, and forex.
+- Free on TradingView.
+- Easy to interpret once the zero line is understood.
 
-**How to use it for entries and exits**  
-- **Long entry**: Wait for KVO to cross above the signal line *and* be above zero. Ideally, price is at a support level or breaking a resistance with volume.  
-- **Short entry**: KVO crosses below signal line *and* is below zero. Look for price rejection at resistance.  
-- **Divergence trade**: If price makes a lower low but KVO makes a higher low, that’s bullish divergence. Enter on the first green bar of the histogram after the divergence.  
-- **Exit**: Trail with a 2-period high/low of KVO. Or close when the histogram flips color (e.g., from green to red).  
-- **Stop loss**: Place 1 ATR below/above the entry candle. Don’t use KVO for stop placement—it lags.
+**Cons**:
+- **Laggy in fast markets**. On very short charts the histogram reacts too slowly for scalping.
+- **False signals in low-volume assets**. Illiquid instruments will produce whipsaws.
+- **Needs context**. KVO alone is weak; combine it with support/resistance or a longer moving average.
+- **No built-in divergence alert**. Divergence has to be spotted manually, though alerts can be set for zero-line and signal-line crosses.
 
-**Honest pros and cons**  
-**Pros**:  
-- Reliable divergence signals—better than MACD for catching trend reversals.  
-- Works across stocks, crypto, and forex.  
-- Free on TradingView.  
-- Easy to interpret once you understand the zero line.
+**Who it's actually for**
+Swing traders and position traders who already check volume but want a systematic way to read accumulation and distribution. Day traders can use it on higher intraday timeframes if patient. Scalpers should skip it.
 
-**Cons**:  
-- **Laggy in fast markets**. On 1-minute charts, the histogram reacts too slowly for scalping.  
-- **False signals in low-volume assets**. Penny stocks and illiquid cryptos will whip you around.  
-- **Needs context**. KVO alone is dangerous. Combine it with support/resistance or a 200 EMA.  
-- **No built-in alert for divergence**. You have to spot it manually—though you can set alerts for zero-line crosses.
+**Better alternatives**
+- **On-Balance Volume (OBV)**: Simpler and less laggy—better suited to day trading.
+- **Volume Profile**: Shows exact volume nodes—better for identifying key support and resistance.
+- **Money Flow Index (MFI)**: Combines volume and RSI—better for overbought/oversold reads in ranging markets.
 
-**Who it’s actually for**  
-Swing traders and position traders who already check volume but want a systematic way to spot accumulation/distribution. Day traders can use it on 15m+ if they’re patient. Scalpers should skip it.
+**FAQ**
+- *Can I use KVO alone?* No. It is a confirmation tool. Pair it with price action.
+- *Best timeframe?* Higher intraday through daily. Very low timeframes give choppy signals.
+- *How to set alerts?* Use the alarm clock icon on the indicator and choose a cross condition for the KVO line versus the signal line, or a zero-line cross.
 
-**Better alternatives**  
-- **On-Balance Volume (OBV)**: Simpler, faster, less laggy—better for day trading.  
-- **Volume Profile**: Shows exact volume nodes—better for identifying key support/resistance.  
-- **Money Flow Index (MFI)**: Combines volume and RSI—better for overbought/oversold in ranging markets.
+**Final verdict**
+The Klinger Volume Oscillator is not a magic bullet, but it is a solid addition to a volume-focused strategy. It is best treated as a confirmation tool rather than a standalone system, and it should not be relied on in very fast or illiquid conditions.
 
-**FAQ**  
-- *Can I use KVO alone?* No. It’s a confirmation tool. Pair it with price action.  
-- *Does it repaint?* No—it’s a lagging indicator based on closed candles.  
-- *Best timeframe?* 1H to Daily. Lower than 15m gives choppy signals.  
-- *How to set alerts?* Click the alarm clock icon on the indicator. Choose “Cross” for KVO line vs. signal line, or “Crossing zero line.”  
+## What This Class of Signal Has Actually Done
 
-**Final verdict**  
-The Klinger Volume Oscillator isn’t a magic bullet, but it’s a solid addition to any volume-focused strategy. If you’re tired of fake breakouts and want to see where smart money is positioning, this tool earns its spot. Just don’t expect it to work on 1-minute charts or illiquid assets.
+*Not this script. A canonical **Oscillator** implementation was backtested on 30 markets over 5 years of daily data (9,899 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-**Rating: 4/5** — loses one star for lag on lower timeframes and the lack of divergence alerts. But for swing trading, it’s a keeper.
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: VIX 76.2%, AUDUSD 59.5%, LTCUSD 58.8%, EURUSD 57.8%
+- Weakest markets: MSFT 42.8%, NVDA 39.8%, SHIBUSD 31.9%
 
----
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

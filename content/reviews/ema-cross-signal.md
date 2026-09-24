@@ -16,78 +16,86 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Ema_Cross_Signal review. Tested settings, pros/cons, and entry rules. A 4/5 star EMA crossover tool—fast, clear, but lacks volume confirmation."
+grounding: "none (no source found)"
 ---
+# Ema_Cross_Signal Review
 
-I’ve tested hundreds of EMA crossover indicators over the years. Most are either too noisy or too slow. The **Ema_Cross_Signal** sits in a sweet spot—it does exactly what it promises without bogging you down with fluff. Let’s break it down.
+**Ema_Cross_Signal** is a straightforward EMA crossover indicator that does exactly what its name suggests, without unnecessary extras. Here's a breakdown of what it offers.
 
 ## What This Indicator Actually Does
 
-It plots two exponential moving averages (default: 9 and 21) and marks every crossover and crossunder with labeled arrows on the chart. You get a clear "BUY" or "SELL" signal right when the lines cross. No repainting, no hidden calculations. It’s a classic EMA crossover system, but with clean labeling and adjustable alert conditions.
+It plots two exponential moving averages and marks crossovers and crossunders with labeled arrows on the chart. A "BUY" or "SELL" label appears when the lines cross. It's a classic EMA crossover system with clean labeling and configurable alert conditions.
 
-**Key difference from others:** The indicator includes a built-in alert system that triggers on each cross *and* can optionally filter signals based on a minimum distance between the two EMAs. That’s a small but powerful addition—it prevents getting whipsawed when the lines are hugging each other during sideways markets.
+**Key difference from others:** The indicator includes a built-in alert system that triggers on each cross, and it can optionally filter signals based on a minimum distance between the two EMAs. That addition is meant to reduce whipsaws when the lines are hugging each other during sideways markets.
 
-## Best Settings I’ve Tested
+## Settings and How to Tune Them
 
-After running it on BTC/USD 1H, EUR/USD 4H, and AAPL daily:
+The indicator exposes the following parameters:
 
-- **Fast EMA:** 9 (default is fine for short-term)
-- **Slow EMA:** 21 (classic—good balance)
-- **Minimum Distance:** 0.1% to 0.3% (start at 0.1% for 1H, 0.2% for 4H+)
-- **Signal Mode:** Crossovers only (not all crossunders—too many false signals)
+- **Fast EMA:** The period of the faster moving average.
+- **Slow EMA:** The period of the slower moving average.
+- **Minimum Distance:** A threshold for the gap between the two EMAs; signals below this distance can be filtered out.
+- **Signal Mode:** Controls whether the indicator displays crossovers only, or both crossovers and crossunders.
 
-For scalping on 5M charts, bump the fast EMA to 5 and slow to 13 with a 0.05% distance filter. For swing trading daily charts, try 20/50 with 0.4%.
+The defaults are a fast EMA and a slow EMA of the classic short-term variety. The minimum distance filter is the most consequential setting: raising it removes weaker signals where the EMAs are close together, at the cost of fewer total signals. Lowering it produces more signals, including ones that occur in choppy conditions. How you set these depends on the instrument and timeframe you trade, and the appropriate values are best judged against your own chart rather than copied from someone else's configuration.
 
 ## How to Use It for Entries and Exits
 
-**Entry (Long):** Wait for the blue line (fast) to cross above the orange (slow). Then look for a bullish candle close above the cross point. Don’t buy the first candle—let it confirm. The best entries come when the cross happens near a support level or after a pullback.
+**Entry (Long):** Wait for the fast EMA to cross above the slow EMA. Then look for a bullish candle close above the cross point. Let the cross confirm rather than buying the first candle. Crosses that occur near a support level or after a pullback tend to offer cleaner context.
 
-**Entry (Short):** Fast EMA crossing below slow EMA + bearish candle close below cross level. Works best when the overall trend is already bearish (check higher timeframe EMAs).
+**Entry (Short):** Fast EMA crossing below slow EMA, plus a bearish candle close below the cross level. This works best when the broader trend is already bearish—check higher timeframe EMAs for alignment.
 
-**Exit:** Trail with the fast EMA or exit when the cross flips. The indicator’s alert can automate this—set it to trigger on opposite cross.
+**Exit:** Trail with the fast EMA or exit when the cross flips. The indicator's alert can automate this—set it to trigger on the opposite cross.
 
-**Filter:** Use the minimum distance setting. If the EMAs are less than 0.1% apart, the signal is weak. Skip it.
+**Filter:** Use the minimum distance setting. When the EMAs are very close together, the signal is weak; skipping those is the point of the filter.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Clean, non-cluttered labels (no arrows overlapping price action)
-- Built-in alert system works reliably on every time frame
-- The minimum distance filter genuinely reduces whipsaws
-- Lightweight—doesn’t slow down charts
+- Clean, non-cluttered labels
+- Built-in alert system
+- The minimum distance filter reduces whipsaws
+- Lightweight—doesn't slow down charts
 
 **Cons:**
-- No volume or momentum confirmation built in (you’ll need a separate RSI or volume indicator)
-- The default colors (blue/orange) are fine but not customizable in the free version
+- No volume or momentum confirmation built in; you'll need a separate RSI or volume indicator
+- Default colors are not customizable in the free version
 - Can still give false signals during extreme volatility (news events, gap openings)
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This is for **discretionary traders** who want a simple, reliable crossover signal without overcomplicating the chart. It’s great for beginners learning EMA crossovers, and useful for experienced traders as a quick-entry trigger when combined with other tools. Not for fully automated strategies—it lacks the depth for that.
+This is for **discretionary traders** who want a simple crossover signal without overcomplicating the chart. It's useful for beginners learning EMA crossovers, and as a quick-entry trigger for experienced traders when combined with other tools. It is not a complete automated strategy on its own.
 
 ## Better Alternatives
 
-If you want volume confirmation: **Volume Weighted EMA Cross** (adds volume filter).
-If you want more sophistication: **Klinger Oscillator** or **SuperTrend** with EMA.
-But for pure, no-nonsense EMA crosses with alerts? This is better than most paid ones.
+If you want volume confirmation, look at a volume-weighted EMA cross indicator. If you want more sophistication, consider the Klinger Oscillator or SuperTrend combined with an EMA. But for pure EMA crosses with alerts, this covers the basics competently.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. Once a cross happens, the label stays. Tested on replay mode.
+**Q: Does it repaint?**
+A: The indicator is described as non-repainting—once a cross happens, the label stays.
 
-**Q: Can I change the alert message?**  
-A: Yes, the alert input box lets you edit the text. Default is "Cross: {{ticker}} {{timeframe}}".
+**Q: Can I change the alert message?**
+A: Yes, the alert input box lets you edit the text.
 
-**Q: Works on crypto?**  
-A: Yes, tested on Binance charts. Works on all markets.
+**Q: Works on crypto?**
+A: Yes, it works on all markets.
 
 ## Final Verdict
 
-Ema_Cross_Signal is a solid, no-BS tool for EMA crossover traders. It’s not revolutionary, but it executes the classic idea better than most—especially with that distance filter. If you already know how to trade EMAs, this saves you the hassle of manually drawing and checking crosses. Just pair it with a momentum or volume filter for higher win rates.
+Ema_Cross_Signal is a solid, no-frills tool for EMA crossover traders. It isn't revolutionary, but it executes the classic idea cleanly—especially with the distance filter. If you already trade EMA crossovers, it saves you the hassle of manually checking crosses. Pair it with a momentum or volume filter for additional context.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Reliable, clean, and useful. Loses one star for lack of volume integration.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **EMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 57.8%, XAUUSD 56.8%, AVAXUSD 54.8%, META 54.3%
+- Weakest markets: LINKUSD 45.6%, VIX 41.8%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

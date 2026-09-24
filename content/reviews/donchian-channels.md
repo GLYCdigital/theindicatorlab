@@ -16,87 +16,91 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Donchian Channels: a 20-day high/low breakout system. Works in strong trends, but choppy markets will destroy you. Honest settings & strategy."
+grounding: "none (no source found)"
 ---
-
-Alright, let’s cut the fluff. Donchian Channels is one of those indicators that’s been around since the 1970s, so it’s got street cred. But does that mean you should slap it on your chart today? I’ve been running it on BTC/USD, EUR/USD, and some S&P 500 futures for the last two weeks. Here’s what I actually found.
+Donchian Channels is one of those indicators that has been around since the 1970s, so it has street cred. Does that mean you should put it on your chart today? Here is what the tool actually does and where it tends to fit.
 
 ## What This Indicator Actually Does
 
-Donchian Channels plots three horizontal lines: the upper channel (highest high over N periods), the lower channel (lowest low over N periods), and the middle line (average of the two). Default is 20 periods, but you can change that. It’s a pure price-based breakout system—no moving averages, no volume, no math tricks. Just raw highs and lows.
+Donchian Channels plots three horizontal lines: the upper channel (highest high over N periods), the lower channel (lowest low over N periods), and the middle line (average of the two). The default is typically 20 periods, but the period is configurable. It is a pure price-based breakout system—no moving averages, no volume, no math tricks. Just raw highs and lows.
 
-In the chart above, you can see the channels acting like a rubber band around price. When price breaks above the upper band, it signals a potential uptrend. Break below the lower band? Downtrend. Simple as that.
+The channels act like a rubber band around price. When price breaks above the upper band, it signals a potential uptrend. Break below the lower band, and it signals a downtrend.
 
 ## Key Features That Set It Apart
 
-- **No lag** – Unlike moving averages or Bollinger Bands, Donchian doesn’t smooth anything. It’s literally the highest high and lowest low of the lookback period. So it reacts instantly to new price extremes.
-- **Clean visual** – Three lines. No histograms, no wavy nonsense. I can set it to a light gray and it won’t clutter my chart.
-- **Built-in in TradingView** – You don’t need to hunt for a community script. It’s under “Indicators > Donchian Channels” with a solid default.
+- **No lag** – Unlike moving averages or Bollinger Bands, Donchian doesn't smooth anything. It is literally the highest high and lowest low of the lookback period, so it reacts immediately to new price extremes.
+- **Clean visual** – Three lines. No histograms, no wavy clutter. It can sit quietly on a chart without drawing attention away from price.
+- **Built into TradingView** – You don't need to hunt for a community script. It ships as a standard built-in indicator with a reasonable default.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-I tried 10, 20, and 50 periods. Here’s what worked:
+The period is the main lever. A shorter lookback makes the channels hug price more tightly and reacts to smaller swings; a longer lookback widens the bands and only reacts to more significant extremes. There is no single correct value—it depends on the market you trade and how much noise you're willing to sit through.
 
-- **20-period** – Best for daily and 4H charts. Balances noise and signal. Use this as your starting point.
-- **50-period** – Too wide for my taste. You’ll miss early trend moves. Only useful on weekly charts for long-term position trading.
-- **10-period** – Good for scalping on 15-min or 1-hour, but expect more whipsaws. I wouldn’t trade it alone.
-
-**My recommendation:** Stick with 20, and add a 50-period SMA on top of the middle line for a trend filter. That way you avoid buying breakouts when price is below the SMA—saved me a few bad trades this week.
+A common approach is to pair the channels with a longer-term moving average plotted near the middle line, using it as a trend filter so you avoid taking breakouts against the broader direction.
 
 ## How to Use It for Entries and Exits
 
-**Long entry:** Wait for a candle to close *above* the upper channel. Then buy on a pullback to the middle line—don’t chase the breakout. On the chart above, you’ll see a clean example in early June: price broke upper, retested middle, then ran 4%.
+**Long entry:** Wait for a candle to close *above* the upper channel, then look to buy on a pullback toward the middle line rather than chasing the breakout itself.
 
-**Short entry:** Close below lower channel. Short on a retest of the middle line.
+**Short entry:** Wait for a close below the lower channel, then look to short on a retest of the middle line.
 
-**Stop loss:** Place it 1–2 ATR below the lower channel for longs, or above the upper for shorts. The channels themselves are too wide for stops.
+**Stop loss:** The channels themselves are typically too wide to serve as stops. A volatility-based measure such as ATR placed beyond the relevant channel is a common alternative.
 
-**Take profit:** I use a 1.5x risk-reward ratio off the entry. Don’t ride all the way back to the other channel—price rarely makes it.
+**Take profit:** Rather than riding price all the way back to the opposite channel—which price rarely does—many traders scale out against a fixed risk-reward target.
 
 ## Honest Pros and Cons
 
 **Pros:**
 - Zero calculation lag. If price makes a new high, the line moves instantly.
-- Works beautifully in strong trends (think crypto in 2021 or USD/JPY in 2023).
-- Easy to explain to a newbie.
+- Tends to perform well in strong trends.
+- Easy to explain to a beginner.
 
 **Cons:**
-- **Useless in chop.** Sideways markets will generate fake breakouts constantly. Last week in EUR/USD, I had four false breakouts in two days. Terrible.
-- No dynamic adjustment. Bollinger Bands tighten in low volatility and widen in high volatility. Donchian just keeps the same 20-bar window regardless.
-- The middle line isn’t a moving average—it’s just the average of the two extremes. It’s not responsive to price direction, so it’s mediocre as a trend filter.
+- **Useless in chop.** Sideways markets generate fake breakouts constantly.
+- No dynamic adjustment. Bollinger Bands tighten in low volatility and widen in high volatility; Donchian keeps the same fixed lookback window regardless of conditions.
+- The middle line isn't a moving average—it's just the average of the two extremes. It isn't responsive to price direction, so it is a mediocre trend filter on its own.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This is for **trend traders** who don’t mind waiting for a clear breakout and can sit through whipsaws. If you’re a scalper or a mean-reversion trader, skip it. Also, if you trade forex in Asian session when markets are quiet—prepare for pain.
+This is for **trend traders** who don't mind waiting for a clear breakout and can sit through whipsaws. Scalpers and mean-reversion traders should look elsewhere. It's also a poor fit for quiet sessions in markets that range for hours at a time.
 
 ## Better Alternatives
 
 - **Bollinger Bands** – Dynamic, better in choppy markets, and gives you volatility context.
-- **Keltner Channels** – Uses ATR instead of raw highs/lows. Less prone to fakeouts.
-- **Supertrend** – Simpler, single line, and you can pair it with Donchian for confirmation.
+- **Keltner Channels** – Uses ATR instead of raw highs and lows, which makes it less prone to fakeouts.
+- **Supertrend** – Simpler, a single line, and can be paired with Donchian for confirmation.
 
-If I had to pick one, I’d take Bollinger Bands over Donchian for most markets. But if you’re trading strong trends like commodities or crypto, Donchian has a slight edge because it’s so simple.
+For most markets, Bollinger Bands offer more context than Donchian. In strong, persistent trends, Donchian's simplicity is its edge.
 
 ## FAQ
 
 **Q: Can I use Donchian Channels for intraday trading?**
-Yes, but set the period to 10–15 and expect noise. I tested it on 5-min ES futures, and it’s only reliable during the first hour of the US session.
+Yes, with a shorter period—but expect more noise and more false breakouts.
 
 **Q: Should I use the middle line as a trailing stop?**
-No. It’s too wide and lags. Use a 20-period exponential moving average instead.
+Generally no. It tends to be too wide and lags price. A moving average is a more common trailing reference.
 
 **Q: Does it work on all timeframes?**
-Better on higher timeframes (4H, daily, weekly). Lower timeframes (1-min, 5-min) produce too many fake breakouts.
+It is generally better on higher timeframes. Lower timeframes produce more fake breakouts.
 
 ## Final Verdict
 
-Donchian Channels is a solid, old-school breakout tool. It does exactly what it says, no more, no less. But in 2026, with better alternatives like Bollinger Bands and Supertrend, it’s not a must-install. I keep it on my daily chart as a reference, but I wouldn’t trade it alone.
+Donchian Channels is a solid, old-school breakout tool. It does exactly what it says, no more, no less. With alternatives like Bollinger Bands and Supertrend available, it isn't a must-install. It can serve as a useful reference on a higher-timeframe chart, but trading it alone is a rough ride.
 
-**Rating: ⭐⭐⭐ (3/5)** – Reliable in trends, painful in chop. Use with a trend filter and a trailing stop.
+**Rating: ⭐⭐⭐ (3/5)** – Reliable in trends, painful in chop. Use with a trend filter and a sensible stop.
 
-**Description (SEO-optimized, max 155 chars):**  
-Donchian Channels: a 20-day high/low breakout system. Works in strong trends, but choppy markets will destroy you. Honest settings & strategy.
+**Description (SEO-optimized, max 155 chars):**
+Donchian Channels: a high/low breakout system. Works in strong trends, but choppy markets will punish you. Settings, entries, and honest tradeoffs.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Donchian** implementation was backtested on 30 markets over 5 years of daily data (44,030 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 55.4%, SPY 54.6%, QQQ 53.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 47.3%, VIX 46.5%, SHIBUSD 28.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,59 +16,59 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Compares one asset’s price action against another to spot relative strength/weakness. Practical for pairs trading and rotation strategies."
+grounding: "none (no source found)"
 ---
-
 **What This Indicator Actually Does**
 
 Relative_Strength_Comparison isn't another RSI clone. It calculates a ratio between two assets — say SPY vs. QQQ — and plots that ratio as a line. When the line rises, the first asset is outperforming the second. When it falls, the second is stronger. Simple math, but it reveals what raw price action hides: which asset is actually leading the market.
 
 **Key Features That Set It Apart**
 
-- **Flexible Symbol Inputs:** You can compare any two tickers — stocks, ETFs, crypto, forex. I tested it with BTC vs. ETH and with AAPL vs. MSFT. Both worked without lag.
-- **Ratio Line or Histogram:** The default is a smooth ratio line, but you can switch to a histogram view. I prefer the line for trend clarity.
-- **Overlay or Separate Pane:** You can overlay it on the first symbol's chart or drop it into a separate pane. I keep it in a separate pane to avoid clutter.
-- **Custom Moving Average:** A simple MA of the ratio line is included. It helps confirm direction changes.
+- **Flexible Symbol Inputs:** Any two tickers can be compared — stocks, ETFs, crypto, forex. The tool is not restricted to a single asset class.
+- **Ratio Line or Histogram:** The default is a smooth ratio line, with an option to switch to a histogram view.
+- **Overlay or Separate Pane:** It can be overlaid on the first symbol's chart or placed in a separate pane.
+- **Custom Moving Average:** A simple MA of the ratio line is included, intended to help confirm direction changes.
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-- **Comparison Symbol:** Enter the ticker you want to compare against. For sector rotation, use SPY as a baseline.
-- **MA Length:** Default is 14. I bump it to 21 for daily charts to filter noise. For shorter timeframes (15m–1h), 9 works better.
-- **Line Color:** Default is blue. I change it to green when the ratio is rising, red when falling. Adds visual clarity.
-- **Histogram Mode:** Only turn this on if you're scalping. The line is cleaner for trend analysis.
+- **Comparison Symbol:** Enter the ticker you want to compare against. For sector rotation, a broad market baseline such as SPY is the common choice.
+- **MA Length:** The default is 14. Longer lengths smooth the ratio line and filter noise; shorter lengths react faster and suit lower timeframes. The right value depends on how much lag you're willing to accept.
+- **Line Color:** Default is blue. Coloring the line by direction — one color when the ratio is rising, another when falling — is a common visual aid.
+- **Histogram Mode:** Better suited to very short-term, fast-decision trading than to swing analysis, where the line tends to read more cleanly.
 
 **How to Use It for Entries and Exits**
 
-This is where the indicator earns its keep. I use it for pairs trades and sector rotation.
+This is where the indicator earns its keep. Its main uses are pairs trades and sector rotation.
 
-- **Pairs Trade Setup:** If I'm long SPY and short QQQ, I watch the ratio line. When it crosses above its 21 MA, SPY strength is confirmed — hold the long. If it dives below, QQQ is taking over — consider flipping.
-- **Sector Rotation:** Compare a sector ETF (e.g., XLF for financials) against SPY. When the ratio breaks above a resistance level, that sector is likely to lead. I enter long the sector ETF.
-- **Divergence:** If price of the first asset makes a new high but the ratio line fails to confirm, that's a warning. I've caught several trend reversals this way.
-- **Exit Signal:** If the ratio line breaks below its MA and the trend flips, I exit the trade. No second-guessing.
+- **Pairs Trade Setup:** If long SPY and short QQQ, watch the ratio line. When it crosses above its MA, SPY strength is confirmed — hold the long. If it dives below, QQQ is taking over — consider flipping.
+- **Sector Rotation:** Compare a sector ETF (e.g., XLF for financials) against SPY. When the ratio breaks above a resistance level, that sector is likely to lead.
+- **Divergence:** If price of the first asset makes a new high but the ratio line fails to confirm, that's a warning sign of a possible trend reversal.
+- **Exit Signal:** If the ratio line breaks below its MA and the trend flips, the trade thesis is no longer intact.
 
 **Honest Pros and Cons**
 
 *Pros:*
-- Zero lag — it's a real-time ratio, not a smoothed oscillator.
-- Works across asset classes. I've used it on crypto, stocks, and forex pairs.
+- The ratio is calculated in real time rather than smoothed through an oscillator.
+- Works across asset classes — crypto, stocks, and forex pairs.
 - Clean, minimal interface. No overwhelming clutter.
-- The MA line is a simple but powerful confirmation tool.
+- The MA line is a simple but effective confirmation tool.
 
 *Cons:*
-- It's a single ratio line. No advanced features like multiple comparison symbols or automated alerts on crossovers (you have to set alerts manually).
-- The histogram mode is borderline useless for swing trading. Too choppy.
-- If you don't understand relative strength conceptually, this indicator will confuse you. It's not for beginners.
+- It's a single ratio line. No advanced features like multiple comparison symbols or automated alerts on crossovers (alerts have to be set manually).
+- The histogram mode is of limited use for swing trading. Too choppy.
+- A conceptual grasp of relative strength is a prerequisite. It's not for beginners.
 - No built-in backtesting or performance metrics.
 
 **Who It's Actually For**
 
-- **Pairs Traders:** This is your bread and butter. SPY vs. QQQ, BTC vs. ETH, you name it.
-- **Sector Rotators:** Compare a sector ETF to the broad market. Identify leaders.
+- **Pairs Traders:** The core use case. SPY vs. QQQ, BTC vs. ETH, and similar pairings.
+- **Sector Rotators:** Compare a sector ETF to the broad market to identify leaders.
 - **Intermediate Traders:** You need to grasp the concept of relative performance. If you're still learning basic trends, skip this for now.
 - **Not for:** Scalpers or pure price-action traders who don't care about comparative analysis.
 
 **Better Alternatives If They Exist**
 
-- **Relative Strength by LazyBear:** Similar concept but with more customization (multiple comparison symbols, alert options). It's a step up if you need complexity.
+- **Relative Strength by LazyBear:** Similar concept but with more customization (multiple comparison symbols, alert options). A step up if you need complexity.
 - **MarketCypher's RS Line:** Includes a smoothed version with automatic support/resistance levels. More advanced but heavier on the chart.
 - **TradingView's built-in "Compare" feature:** Free and works on any chart, but it's not an indicator you can automate signals with.
 
@@ -77,10 +77,10 @@ Relative_Strength_Comparison is a solid mid-tier tool. It does one thing well �
 **FAQ Addressing Real Trader Questions**
 
 *Q: Can I use this for crypto?*  
-A: Yes. I tested it with BTC/ETH and BTC/SOL. Works perfectly. Just enter the tickers manually.
+A: Yes. Enter the tickers manually, as with any other asset class.
 
 *Q: Does it repaint?*  
-A: No. It's a real-time ratio calculation. No historical changes.
+A: The ratio is a real-time calculation, so it updates with the current bar rather than rewriting past values.
 
 *Q: Can I set alerts when the ratio crosses the MA?*  
 A: Not directly. You'll need to use TradingView's alert system on the indicator's output line.
@@ -93,8 +93,6 @@ A: Different tool. RSI measures overbought/oversold. This measures relative perf
 Relative_Strength_Comparison is a workhorse indicator for traders who understand relative performance. It's not flashy, but it's reliable. If you trade pairs or rotate sectors, it's worth the install. For everyone else, it's a "nice to have" rather than a "must have."
 
 **Rating:** ⭐⭐⭐⭐ (4/5) — Solid, effective, and no-nonsense. Loses a star for lack of advanced features and beginner-unfriendliness.
-
----
 
 ## Go Deeper with The Indicator Lab
 

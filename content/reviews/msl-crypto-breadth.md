@@ -17,86 +17,97 @@ categories:
 rating: 4
 description: "Msl_Crypto_Breadth review: a market breadth tool for crypto trend analysis. Tested settings, entry logic, pros/cons, and real alternatives."
 tv_script_url: "https://www.tradingview.com/script/2ARcraNQ-MSL-Crypto-Breadth/"
+sources: ["https://www.tradingview.com/script/2ARcraNQ-MSL-Crypto-Breadth/"]
 ---
-Let me be blunt: most crypto "breadth" indicators are just repackaged moving averages with a fancy name. Msl_Crypto_Breadth isn't that. It actually measures the internal strength of the crypto market by aggregating participation across multiple assets, then plotting that against price. If you've ever watched Bitcoin rally while altcoins bleed, you know exactly why this matters.
+Most crypto "breadth" indicators are repackaged moving averages with a fancy name. This one is not that. It measures the internal strength of a market by aggregating participation across a basket of coins, then plotting that reading against the reference symbol. If you have ever watched Bitcoin rally while altcoins bleed, you already know why the distinction matters.
 
 ## What This Indicator Actually Does
 
-Msl_Crypto_Breadth pulls data from a basket of major cryptocurrencies and calculates how many are trading above their respective trend thresholds. The result is a single line that oscillates between oversold and overbought territory, overlaid on your chart. When breadth confirms price, trends hold. When it diverges, you're looking at a potential reversal.
+The script watches a basket of 20 coins at once and answers a question a single chart cannot: out of those 20, how many are actually taking part in the move on screen right now. That answer changes what the same candle means. If Bitcoin gains five percent and 17 of the 20 coins gain with it, the move has something under it. If Bitcoin gains the same five percent while only 3 coins follow, one name is carrying everything and the rest of the market has already turned away. On a price chart those two days look identical.
 
-The chart above shows it running on a MACD-style layout, which is actually a smart default. You get the breadth line, a signal line, and histogram-style bars that make divergence easier to spot than with a raw line plot.
+Two lines do the work. **Participation** is a state: how many coins of the basket are trading above their own moving average, drawn as a percentage from 0 to 100. It moves only when a member crosses its average, which is a large event, so the line is slow and honest. **Pressure** reacts on every bar, counting how many coins closed up against how many closed down and accumulating that difference over time, so it turns while participation is still standing still.
+
+The indicator then watches the reference symbol and participation together. While they move the same way, nothing is drawn. When they split and go opposite ways, the stretch of time between them is shaded red or green and stays shaded until they come back together. Red means price is being pulled up while fewer and fewer coins follow it. Green means price is falling while more and more coins are quietly recovering underneath it.
 
 ## Key Features That Set It Apart
 
-The standout feature is the **divergence detection**. Most breadth tools show you the data and make you do the interpretation. This one flags bullish and bearish divergences directly on the chart with small markers. In my testing, those markers caught Bitcoin's March 2026 local top about 11 hours before price rolled over.
+The standout feature is **divergence detection between the reference and the basket**. One window, two measurements, no pivots: the reference must travel at least the configured percentage across the window while participation moves the other way by at least the configured number of points. A vertical line marks the bar the disagreement opened and a band runs until the pair comes back together.
 
-The second thing I appreciate is the **customizable asset basket**. You're not locked into whatever the developer chose. I stripped out the small-cap alts and ran it with just BTC, ETH, SOL, and BNB — the signal got noticeably cleaner. Fewer laggards dragging the average down.
+The event is measured on participation alone. The pressure line takes no part in it — hide it and not one band, glyph or alert changes. Participation sits on a fixed scale where ten points has a stated meaning: two members out of twenty changing sides. Pressure is normalised against its own recent range, where ten points would mean nothing statable. Read together, a band with pressure agreeing is a warning confirmed twice; a band against it is the narrow kind that more often dissolves.
 
-Finally, the **regime filter** deserves a mention. It colors the background based on whether breadth is expanding or contracting. It's simple, but it stops you from fighting the tape.
+The **basket is fully configurable** — twenty symbol slots, and any symbol your plan can open works. The basket does not have to be crypto, so the same engine measures a sector, an index or a watchlist. The basket does not change with the chart, so the reading is about the market rather than the instrument in front of you.
 
-## Best Settings I Tested
+Agreement produces nothing at all. Both sides moving up together, or both down, is what a healthy market looks like, and it is exactly what closes an open band. A move too small to clear either threshold does nothing either, so an open band is never cancelled by noise.
 
-After running this across multiple timeframes and market conditions, here's what worked:
+## Settings and How to Tune Them
 
-- **Length**: 21 (the default) is good for swing trading. Drop to 14 if you want earlier signals with more noise, or push to 34 for weekly-style trend confirmation.
-- **Show Divergences**: Keep this ON. It's the best feature.
-- **Basket Size**: If you trade large caps, reduce the basket to 10-15 assets. For full-market sentiment, keep all 30.
-- **Signal Threshold**: I set overbought at 80 and oversold at 20. The defaults (75/25) generate too many false signals in ranging markets.
+**Core.** Basket Timeframe — empty follows the chart, and a higher setting keeps a slow reading on a fast chart. MA Length — a long-term reading versus a swing one. MA Type across SMA, EMA, WMA and RMA. Coins Counted, how many of the twenty slots take part. Minimum Live Feeds, the smallest sample that may be published at all.
+
+**Basket.** Twenty symbol slots.
+
+**Divergence.** Reference Symbol, Comparison Window, Reference Move percent and Breadth Gap Points — the two thresholds that define an event.
+
+**Visuals.** The second line and its swing window; how events are drawn, as line and band, band only, line only or glyph only; the arrow on the edge; on-chart explanations and how many are kept; whether events show in the pane, on the chart or both; four colours.
+
+**Dashboard.** Table on or off, its corner out of eight, and the text size.
 
 ## How to Actually Use It
 
-The entry logic that made sense to me:
+The script's own usage notes map participation states to position sizing, not to entries:
 
-**Long setup**: Breadth line crosses above its signal line while price is above the 200 EMA. Wait for a bullish divergence marker or for breadth to pull back to the 40-50 zone before entering — don't chase strength.
+- **Participation above 50 and rising** — the market is broad, most of the basket holds its average. The only state where adding makes sense.
+- **Participation between 30 and 50** — the move is carried by a few names. Half size, closer targets.
+- **Participation below 30** — breakouts in the basket mostly fail. Stand aside, or trade the reference symbol alone.
+- **Participation above 80** — everybody is already in, advances are crowded. Not a place to open; reduce and tighten the stop.
+- **A red band opens** — the reference is being carried while participation leaks away. Stop adding, protect what is open. A warning, not an exit, and it can run for weeks.
+- **A green band opens while participation is below 20** — the reference is falling while more members repair underneath it. Prepare, do not enter yet; this stage can last weeks.
+- **Participation then crosses 50 upward** — the repair is confirmed by the state, not only by pressure. The entry window of the reversal sequence, late by design and verified by design.
+- **A band closes** — the pair moved the same way again, the disagreement is resolved and the warning is lifted.
+- **Participation crosses 50 downward** — most of the basket has lost its average. The last and bluntest exit reason.
 
-**Exit logic**: Get out when breadth crosses below its signal line AND price breaks the most recent swing low. The histogram flipping negative is your warning; the price break is your confirmation.
-
-**Avoid**: Taking trades when the regime filter shows contracting breadth, even if price looks strong. That's how you buy the top.
+Five alerts cover this without watching the screen: participation crossing above and below half, the two divergence conditions, and the bar an open disagreement closes.
 
 ## Pros & Cons
 
 **Pros:**
-- Divergence markers save hours of manual analysis
-- Multi-asset aggregation is genuinely useful, not decorative
-- Clean visual design — no clutter on the chart
-- Works across all major timeframes
+- Divergence detection is built in and measured on a scale with a stated meaning, rather than left to interpretation
+- Multi-asset aggregation that excludes silent members instead of counting them as weakness
+- The basket is configurable and need not be crypto
+- Nothing is drawn against a candle or at a price level, so the output cannot be mistaken for an entry signal
 
 **Cons:**
-- Steeper learning curve than your average trend indicator
-- The asset basket needs adjustment; defaults include too many low-liquidity coins that distort readings
-- No alert system for divergence events — you'll need to set up your own price alerts
-- Repainting on historical bars as new data comes in (minor, but worth knowing)
+- Steeper learning curve than a single-line trend indicator
+- Divergences almost never fire on H1, because a genuine disagreement between a whole basket and Bitcoin inside a day is rare; divergence is a 4h and daily tool
+- Members are read through the chart, so their history begins where the chart history begins — a 200 length average needs 200 chart bars before the first reading exists
+- Breadth describes the crowd, not the next bar
 
 ## Who It's For
 
-This is for crypto traders who understand that Bitcoin dominance and altcoin correlation matter. If you're a swing trader or position trader looking for a confirmation tool that filters out weak signals, this earns its place. Day traders will find it too slow — the 21-period length lags on 15-minute charts.
-
-If you're new to crypto, skip it. You need a solid grasp of market structure first, or you'll interpret every divergence as a top or bottom.
+This is for traders who already have an entry system and want a second opinion on whether a signal deserves full size, half size, or nothing at all. It does not tell you where to buy. It tells you whether the trade your own system just found is backed by a broad market or carried by one name. Day traders working intraday will find the divergence component largely silent.
 
 ## Alternatives Worth Considering
 
-- **Crypto Market Breadth by Fadly**: Free, simpler, but lacks divergence detection. Better for beginners.
-- **Total Crypto Market Cap Overlay**: Not a breadth tool per se, but useful if you only trade BTC/ETH.
-- **BTC Dominance Indicator**: Complements Msl_Crypto_Breadth well — use both for a complete market picture.
+- **Crypto Market Breadth by Fadly** — free and simpler, but without paired open-and-close divergence events.
+- **Total Crypto Market Cap Overlay** — not a breadth tool, but useful if you only trade BTC and ETH.
+- **BTC Dominance Indicator** — complements a breadth reading; use both for a fuller market picture.
 
 ## FAQ
 
-**Does Msl_Crypto_Breadth work for stocks?**
-No. It's hardcoded around crypto assets. The math would work, but you'd need the Pro version to modify the universe.
-
-**Is it worth the price?**
-If you're a serious crypto trader, yes. The divergence detection alone justifies it versus free alternatives.
+**Does it work for stocks?**
+Yes. Any symbol your plan can open works as a basket slot, and the basket does not have to be crypto — the same engine measures a sector, an index or a watchlist.
 
 **Does it repaint?**
-Historical values shift slightly as new data enters the calculation. Current signals are stable.
+Not stated in the source material. What is stated: each member is requested on the selected timeframe with lookahead disabled, and its moving average is computed inside its own context on its own data. A member that has not returned data contributes nothing — it leaves both sides of the division rather than being counted as a coin below its average. No share is published at all until a minimum number of members have answered.
+
+**Does it give entry signals?**
+No. Nothing is drawn against a candle and nothing sits at a price level, and the indicator produces no entries. A shape placed on a bar is read as an entry whatever the description says.
 
 ## Final Verdict
 
-Msl_Crypto_Breadth gets 4 stars because it does one thing exceptionally well — showing you when the crypto market is lying about its strength. It's not a standalone system, and the default settings need tweaking. But as a trend confirmation and divergence tool, it's one of the better crypto-specific indicators I've tested this year.
+This is a breadth tool built with unusual care about what a breadth reading can honestly claim. The exclusion of silent members, the minimum sample gate before any percentage is published, and the detrending of the cumulative count are the details that separate a real internals reading from a decorative one. The divergence event is deliberately narrow — measured on participation alone, on a fixed scale where ten points means two members out of twenty — and it produces no entries, only context.
 
-The divergence markers alone have saved me from two bad entries in the past month. That's worth the price of admission.
+It is not a standalone system. Low participation is not a reason to short on its own, and a thin market can stay thin for weeks while price grinds higher on two names. Used as a sizing and confirmation layer on top of your own signals, it does the one thing it promises: it tells you when a market is lying about its strength, with a count anyone can check.
 
-⭐⭐⭐⭐
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

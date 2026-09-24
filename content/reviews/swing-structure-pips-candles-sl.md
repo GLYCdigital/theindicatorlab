@@ -17,94 +17,88 @@ categories:
 rating: 4
 description: "Honest Swing_Structure_Pips_Candles_Sl review: how it maps swing highs/lows, best settings for 15m-1H, stop-loss logic, and whether it beats plain market structure tools."
 tv_script_url: "https://www.tradingview.com/script/tIs3t6rn-Advanced-Swing-Structure-Pips-Candles-SL/"
+sources: ["https://www.tradingview.com/script/tIs3t6rn-Advanced-Swing-Structure-Pips-Candles-SL/"]
 ---
-Let me be upfront: the name "Swing_Structure_Pips_Candles_Sl" sounds like someone smashed three indicator categories together and hoped for the best. But after a week of forward-testing on EUR/USD, GBP/JPY, and BTC/USD, I'm surprised by how coherent this tool actually is. It's not revolutionary, but it does one thing really well—and that's more than most trend indicators can claim.
+The name "Swing_Structure_Pips_Candles_Sl" reads like three indicator categories smashed together. In practice, the tool is more coherent than that suggests. It isn't revolutionary, but it does one thing with reasonable focus—and that's more than many trend indicators manage.
 
 ## What it actually does
 
-This is a market structure indicator that draws swing highs and lows directly on your chart, then projects potential stop-loss levels based on pip distances and candle patterns. The "Sl" in the name isn't just decoration—it actively calculates suggested stop-loss zones for both breakout and reversal scenarios.
+This is a market structure indicator built on ZigZag swing detection. It identifies key structural swing points and classifies them as Higher High (HH), Higher Low (HL), Lower High (LH), or Lower Low (LL), so you can follow bullish and bearish structure as price develops.
 
-The MACD screenshot you see above tells the real story. Notice how the swing points align with momentum shifts rather than just any price extreme. That's the key difference from a basic fractal indicator. It filters swings through a candle-formation lens, so you're not getting noise from every two-pip wiggle.
+Each swing carries two measurements: the pip distance travelled between swing points, and the number of candles between them. The "Sl" in the name is a swing-based Stop Loss feature—it uses the previous opposite swing as its reference and applies a configurable pip offset. In bullish conditions the SL sits below the reference swing; in bearish conditions it sits above it.
 
 ## Key features that matter
 
-- **Structure-based SL projection**: Instead of telling you "place your stop here," it shows a zone based on recent swing structure plus a pip buffer you control
-- **Candle pattern filtering**: Only marks swings confirmed by specific candle closes, which cuts false signals significantly
-- **Visual clarity**: The swing levels are color-coded by trend direction—green for bullish structure, red for bearish. No guesswork
-- **Pip-based customization**: You set minimum swing size in pips, so it works across instruments if you adjust for volatility
+- **Structure classification**: HH, HL, LH and LL labels make the current market structure readable at a glance
+- **Swing-based SL projection**: Rather than a fixed stop, the level is derived from the previous opposite swing plus a pip offset you control
+- **Swing distance and duration**: Pip distance and candle count between swings are displayed directly on each swing
+- **Visual customization**: ZigZag lines, bullish and bearish colours, label size, transparency, background highlighting and SL appearance can all be adjusted
+- **Sensitivity controls**: Depth, Deviation and Backstep govern how swings are detected
 
-## Best settings I tested
+## Settings and How to Tune Them
 
-This is where the indicator shines or falls apart depending on your inputs. After extensive backtesting:
+The indicator's behavior is driven by three detection parameters plus the SL offset:
 
-- **Timeframe**: Sweet spot is 15-minute to 1-hour charts. Below 5-minutes, the candle filtering creates too much lag. Above 4-hours, the pip settings become less meaningful
-- **Minimum swing pips**: 15-20 pips for forex majors, 50-80 for crypto. If you leave the default on BTC, you'll get a new swing every candle
-- **Candle confirmation**: Set it to 2 candles minimum. One candle gives too many false breaks
-- **SL buffer**: 10 pips works well for day trading. For swing trading, 20-25 pips avoids getting wicked out
+- **Depth, Deviation, Backstep**: These control the sensitivity of swing detection. Adjusting them changes how readily the ZigZag marks a new swing, which in turn affects how many structure labels appear.
+- **SL offset**: A configurable pip offset applied to the reference swing when positioning the stop-loss level.
+- **Repaint Levels**: An optional setting. When enabled, the current developing swing can move as price creates new highs or lows—normal ZigZag behaviour that should be considered when analysing live conditions.
+- **ZigZag line extension**: An optional setting to extend the ZigZag lines.
+- **Appearance**: Bullish and bearish colours, label size, transparency, and background highlighting are all customizable.
 
-## How I actually traded it
+The script does not prescribe specific values for these parameters, and the appropriate settings will depend on the instrument and timeframe you trade.
 
-The setup that performed best was a simple structure-break strategy:
+## How the SL logic works
 
-1. Wait for the indicator to mark a confirmed swing high/low
-2. Enter on the first candle close beyond that level
-3. Set your stop-loss at the projected SL zone, not the swing point itself
-4. Take profit at the next opposite swing level
-
-What impressed me was the SL logic. The indicator doesn't just slap a stop at the swing extreme—it factors in average candle range and gives you a buffer that actually survives normal volatility. In my testing, this reduced premature stop-outs by about 30% compared to placing stops directly at swing points.
+The stop-loss feature follows the structure rather than sitting at the swing extreme itself. It references the previous opposite swing and applies the pip offset on top. In an uptrend, that places the stop below the prior swing low; in a downtrend, above the prior swing high. This ties risk placement to the same structure the indicator is drawing, instead of an unrelated fixed distance.
 
 ## Pros and cons
 
 **What works:**
-- The SL projection feature is genuinely useful, not gimmicky
-- Candle filtering removes most of the chop that plagues standard structure indicators
-- Works well for both breakout and mean-reversion strategies if you flip the logic
+- Structure classification (HH/HL/LH/LL) is clear and immediately readable
+- The swing-based SL feature ties stop placement to actual market structure
+- Pip distance and candle count give useful context on each swing
+- Broad visual customization without cluttering the chart
 
 **What doesn't:**
-- The indicator is slow to repaint—it confirms swings only after 2-3 candles close, so you'll miss the very first move
-- No alert functionality built in. For a tool focused on structure breaks, this feels like an oversight
-- The pip-based settings require manual adjustment per asset. There's no ATR-based option, which would have made it more universal
+- The developing swing can repaint when Repaint Levels is enabled, so live readings are not final
+- The pip offset is manual—there is no ATR-based alternative mentioned
+- No alert functionality is described in the script documentation
 
 ## Who should use this
 
-This is for traders who already understand market structure but want a cleaner visual and smarter stop placement. If you're a new trader still learning what swing highs and lows are, this will hold your hand too much—you won't develop the skill of reading structure yourself.
-
-Day traders on 15-minute charts will get the most value. Swing traders might find the pip settings too rigid on higher timeframes. Scalpers should look elsewhere—the confirmation lag will frustrate you.
+This suits traders who already read market structure and want it labelled cleanly, with a structural reference for stop placement. It is a visual and analytical aid, not a signal generator, and it assumes you understand what HH, HL, LH and LL mean before you start relying on them.
 
 ## Alternatives worth considering
 
-- **Smart Money Concepts by LuxAlgo**: Better for institutional-style structure analysis, but heavier and more complex
-- **Market Structure by LonesomeTheBlue**: Simpler, more customizable, but no SL projection
-- **Fractal Levels**: If you just want raw swing points without the candle filtering
+- **ZigZag++ by DevLucem**: The original this script is based on, acknowledged in the documentation
+- **Smart Money Concepts by LuxAlgo**: Heavier, institutional-style structure analysis
+- **Market Structure by LonesomeTheBlue**: Simpler, but without the SL projection
 
 ## Real questions traders ask
 
 **Does it repaint?**
-Yes, but only in the sense that it confirms swings after candle closes. The historical levels are stable—it's only the most recent swing that might change.
+When Repaint Levels is enabled, the current developing swing can move as price creates new highs or lows. The documentation states this is normal ZigZag behaviour and should be factored in when analysing live market conditions. Historical swings, once confirmed, are not described as changing.
 
-**Can I use it on crypto?**
-Yes, but adjust the pip settings. I used 50+ pips on BTC and 80+ on ETH to avoid signal overload.
+**What is it based on?**
+The script acknowledges the original ZigZag++ by DevLucem, with additional functionality and modifications added in this version. It is written in Pine Script v6.
 
-**Does the SL projection actually work?**
-In my testing, the projected zones were more reliable than fixed ATR-based stops. The candle-range component adds a layer of volatility awareness that pure structure tools miss.
+**Does the SL projection work?**
+The SL level references the previous opposite swing and applies a configurable pip offset, placing the stop below the reference swing in bullish conditions and above it in bearish conditions. That is the documented mechanism.
 
 ## Final verdict
 
-Swing_Structure_Pips_Candles_Sl earns its 4 stars because it solves a specific problem—smarter stop placement on structure breaks—without overcomplicating the chart. It's not flashy, it won't predict the future, and it has some lag. But for a trader who wants a reliable structure map with built-in risk management logic, this is a solid addition to the toolkit.
-
-The missing alerts and lack of ATR-based sizing keep it from being exceptional, but as a trend analysis tool, it does exactly what it promises. If you're tired of manually drawing swing levels and guessing where to put your stops, this is worth your time.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Swing_Structure_Pips_Candles_Sl solves a specific problem—labelling market structure and deriving a stop-loss level from it—without overcomplicating the chart. It classifies swings, measures them in pips and candles, and anchors the SL to prior structure. The repainting behavior of the developing swing and the manual pip offset are the main caveats. For a trader who wants a clear structure map with structure-based risk placement, it does what it says it does.
 
 ## Frequently Asked Questions
 
 ### Is Swing_Structure_Pips_Candles_Sl worth it?
 
-Based on testing across multiple timeframes, Swing_Structure_Pips_Candles_Sl delivers solid value for traders who need trend analysis.
+It provides HH/HL/LH/LL structure classification, swing distance and duration, and a swing-based stop-loss level with a configurable pip offset. Whether that fits depends on how much you rely on structural labeling versus other tools.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+When Repaint Levels is enabled, the current developing swing can move as price creates new highs or lows. The script documentation notes this is normal ZigZag behaviour and should be considered when analysing live market conditions.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

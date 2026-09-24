@@ -16,101 +16,96 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Asian_Session_Levels draws key support/resistance zones from Tokyo/Asian session. Clean, automatic, but lacks volume confirmation. Honest 4/5 review."
+grounding: "none (no source found)"
 ---
+# Asian_Session_Levels Review
 
-I've tested dozens of session-based indicators, and most are either too cluttered or too vague. Asian_Session_Levels sits somewhere in the middle — it does one thing well, but it's not a magic bullet. Let me break it down.
+Asian_Session_Levels does one thing: it draws the Asian session's high, low, and open on your chart. It is not a complete system, and it is not a magic bullet. What follows is a breakdown of what it offers and where it falls short.
 
 ## What This Indicator Actually Does
 
-Asian_Session_Levels automatically plots the high, low, and open of the Asian session (default: 00:00–08:00 UTC) directly on your chart. It's meant to give you a clean reference for the session's price action without manual drawing. No repainting, no alerts — just static levels that update each day.
+The indicator automatically plots the high, low, and open of the Asian session directly on the chart, giving you a clean reference for the session's price action without manual drawing. It draws three horizontal lines — Asian High, Asian Low, and Asian Open — each in a distinct color. The levels remain visible for the rest of the trading day or until the next session resets them.
 
-As the chart above shows, it draws three horizontal lines: Asian High (red), Asian Low (green), and Asian Open (blue or orange depending on your theme). The levels stay visible for the rest of the trading day or until the next session resets them.
-
-## Key Features That Set It Apart
+## Key Features
 
 - **Automatic daily reset** — no need to redraw zones manually.
-- **Customizable session time** — you can shift the start/end by UTC offset.
+- **Customizable session time** — the session window can be adjusted.
 - **Clean visual style** — thin lines, no fill, minimal chart clutter.
-- **Works on all timeframes** — but best on 1H or lower for intraday use.
+- **Works across timeframes** — though it is intended primarily for intraday use.
 
-What it doesn't have: volume analysis, breakout filters, or multi-session comparison. It's a tool for clean reference, not a full system.
+What it does not include: volume analysis, breakout filters, or multi-session comparison. It is a reference tool, not a full system.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I tested this on EUR/USD, USD/JPY, and GBP/JPY. Here's what worked:
+The indicator exposes a small set of options:
 
-- **Session start:** 00:00 UTC (default). For London/US traders, shift to 00:00–08:00 UTC to capture Tokyo.
-- **Line style:** Dashed or dotted — solid lines blend into price action on high-volatility days.
-- **Show open line:** Yes. The open is often the most relevant for mean reversion trades.
-- **Color scheme:** Use contrasting colors. I set high = #FF5252 (red), low = #69F0AE (green), open = #40C4FF (blue).
+- **Session start and end** — the session window is defined by UTC input, so it can be shifted to match the hours you care about.
+- **Line style** — solid, dashed, or dotted. Solid lines tend to blend into price action on high-volatility days, so a dashed or dotted style is worth considering.
+- **Show open line** — the open line can be toggled on or off. The open is often the most relevant level for mean reversion trades.
+- **Color scheme** — use contrasting colors for the high, low, and open lines so they stay distinguishable from price.
 
-Avoid using it on crypto or 24-hour markets — the "session" concept doesn't hold there.
+The indicator is not suited to crypto or other 24-hour markets, where the concept of a defined session does not hold.
 
 ## How to Use It for Entries and Exits
 
-This isn't a standalone strategy. Here's how I pair it:
+This is not a standalone strategy. It works as a reference layer alongside other tools.
 
-**Breakout play:** Wait for price to close 1 candle above Asian high with a bullish candle body > 50% of its range. Enter long with stop below Asian low. Target: previous day's high or 1.5x Asian range.
+**Breakout play:** Wait for price to close above the Asian high, then look for a bullish candle with a substantial body. Enter long with a stop below the Asian low, targeting the previous day's high or a multiple of the Asian range.
 
-**Fade play:** If price touches Asian high/low during London session but fails to close beyond it, look for reversal patterns (engulfing, pin bar). Enter counter-trend with stop 10 pips beyond the level.
+**Fade play:** If price touches the Asian high or low during the London session but fails to close beyond it, look for reversal patterns such as an engulfing candle or pin bar. Enter counter-trend with a stop just beyond the level.
 
-**Mean reversion:** If price is far from Asian open (e.g., 2x Asian range), expect a pullback. Use RSI divergence for confirmation.
+**Mean reversion:** If price is far from the Asian open relative to the Asian range, a pullback becomes more likely. Use momentum divergence for confirmation.
 
-**Pro tip:** Combine with a volume indicator (like Volume Profile) to confirm whether a breakout is genuine. Without volume, Asian_Session_Levels alone will give you false breakouts on low-liquidity days.
+Combining the indicator with a volume tool can help confirm whether a breakout is genuine. Without volume context, the levels alone will produce false breakouts on low-liquidity days.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Saves hours of manual drawing
+- Saves time versus manual drawing
 - Clean, non-invasive chart overlay
 - Customizable session times
 - Free to use (Pine Script)
 
 **Cons:**
-- No volume/confirmation data
-- Useless on 24-hour markets
-- Doesn't account for multiple sessions (e.g., overlap with London)
+- No volume or confirmation data
+- Not useful on 24-hour markets
+- Does not account for multiple sessions or session overlaps
 - No alert system
-- Line sometimes overlaps with price action on low timeframe charts
+- Lines can overlap with price action on low timeframes
 
-## Who It's Actually For
+## Who It's For
 
-**Best for:** Swing traders and intraday traders who focus on Forex pairs during Asian session (USD/JPY, EUR/JPY, GBP/JPY, AUD/USD). If you trade breakouts or mean reversion within a defined session window, this is a solid foundation.
+**Best for:** Swing and intraday traders who focus on Forex pairs during the Asian session. If you trade breakouts or mean reversion within a defined session window, this is a solid foundation.
 
-**Not for:** Scalpers (too slow), crypto traders (irrelevant), or traders who need volume confirmation built in. Also skip if you trade multiple sessions simultaneously — you'll need a more advanced tool.
+**Not for:** Scalpers, crypto traders, or traders who need volume confirmation built in. Skip it if you trade multiple sessions simultaneously — you'll need a more advanced tool.
 
-## Better Alternatives
-
-If you want more depth:
+## Alternatives
 
 - **Session High Low** (by LuxAlgo) — adds volume zones and alerts.
 - **Time-Based Levels** (by Fikira) — cleaner, with multi-session support.
 - **Session Boxes** (by TealFox) — fills the session range as a box, better for visual traders.
 
-Asian_Session_Levels is simpler than all of these. If you prefer minimalism, stick with it. If you need more context, upgrade.
+Asian_Session_Levels is simpler than all of these. If you prefer minimalism, it holds up. If you need more context, look at the alternatives.
 
 ## FAQ
 
-**Q: Does it repaint?**  
+**Does it repaint?**
 No. Levels are fixed once the session closes.
 
-**Q: Can I use it on stocks?**  
+**Can I use it on stocks?**
 Not recommended. Sessions are based on Forex market hours.
 
-**Q: How do I change session time?**  
-Go to indicator settings > "Session Start" and "Session End" — input in UTC.
+**How do I change session time?**
+Go to indicator settings, then "Session Start" and "Session End" — input in UTC.
 
-**Q: Does it work on 5-minute charts?**  
-Yes, but levels may look noisy. Stick to 15M or 1H for cleaner signals.
+**Does it work on 5-minute charts?**
+Yes, but levels may look noisy. Higher intraday timeframes give cleaner readings.
 
 ## Final Verdict
 
-Asian_Session_Levels does exactly what it promises — no more, no less. It's a reliable reference tool for Forex traders who want quick, clean session levels without extra fluff. But it's not a complete system. Pair it with volume or price action confirmation, and you'll get consistent value from it.
+Asian_Session_Levels does exactly what it promises — no more, no less. It is a reliable reference tool for Forex traders who want quick, clean session levels without extra fluff. It is not a complete system. Pair it with volume or price action confirmation to get the most from it.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star for lack of alerts and volume confirmation. Otherwise, solid and free.
-
----
+**Rating: 4/5** — docked one star for the lack of alerts and volume confirmation. Otherwise solid, and free.
 
 ## Go Deeper with The Indicator Lab
 

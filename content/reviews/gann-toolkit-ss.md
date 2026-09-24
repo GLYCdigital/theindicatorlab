@@ -17,86 +17,53 @@ categories:
 rating: 4
 description: "Gann_Toolkit_Ss review: 4/5 stars. A practical Gann-based trend tool with swing projections and time cycles. Tested settings and honest trade-offs inside."
 tv_script_url: "https://www.tradingview.com/script/2gzI4OCQ-Gann-Toolkit-SS/"
+sources: ["https://www.tradingview.com/script/2gzI4OCQ-Gann-Toolkit-SS/"]
 ---
-Let me cut through the mystique around Gann theory right now: most "Gann" indicators on TradingView are repainted fibonacci nonsense wrapped in esoteric jargon. Gann_Toolkit_Ss is not that. This is a genuinely different beast — a trend-following toolkit that uses Gann's geometric angles and time-price squaring, but presents them in a way that's actually tradeable.
-
-I ran this across BTCUSD, EURUSD, and a few S&P futures on multiple timeframes over the past three weeks. The MACD chart above shows how it behaves in a trending environment — and honestly, it held up better than I expected for a Gann-based tool.
+Let me cut through the mystique around Gann theory: most "Gann" indicators on TradingView are repainted Fibonacci constructions wrapped in esoteric jargon. The script reviewed here is a different beast — a geometric toolkit that uses Gann's angles and time-price squaring, and packages them in a way that is actually readable on a chart.
 
 **What It Actually Does**
 
-The indicator plots Gann fan angles (the 1x1, 1x2, 2x1 lines) from significant swing points, but here's the differentiator: it automatically identifies pivot highs and lows, then projects both price and time targets from those points. You're not manually drawing 45-degree lines and hoping. The toolkit calculates the angle based on the actual price-to-time ratio of the chart, which is where most Gann tools fail — they assume a fixed ratio that doesn't match your chart's scale.
+The script offers a choice between three primary tools: the Gann Fan, the Gann Box, and the Gann Square of 9, all driven by a dynamic pivot anchor system. Rather than relying purely on static fixed angles, it runs a Cumulative Distribution Function (CDF) across recent bar ranges to project statistical percentile bands (p10 through p90) from the anchor. In parallel, a Volume Gravity engine checks volume density around each price level. High-volume nodes trigger thicker lines, higher opacity, and star ratings, while low-volume levels fade out.
 
-It also includes a time-cycle counter that marks potential reversal zones based on Gann's square-of-nine principles. That's the part that sounds like astrology, but in practice, the time markers align with actual swing reversals more often than random chance — roughly 60-65% of the time in my testing.
+It also tracks Harmonic Time projections across key Gann bar cycles (45, 90, 144, 180, 270, 360). When a time cycle aligns with a CDF level, a 1x1 fan ray, or a volume cluster, the indicator scores the confluence and flags high-probability time windows.
 
 **Key Features That Stand Out**
 
-The auto-pivot detection is the best I've seen in a Gann tool. It uses a proper fractal-based algorithm rather than a simple lookback, so the angles don't repaint after new highs form. That alone puts it ahead of 90% of Gann indicators on the platform.
+The auto anchor is the structural centerpiece. It automatically tracks local swing highs or lows, with an option for a manual offset if you want to anchor to a specific bar in history. The CDF bands add a statistical dimension that most geometric tools lack, and the Volume Gravity layer gives those bands a visual weight that reflects where volume actually sits.
 
-The visual clarity is another win. The fan lines are color-coded by angle steepness, and the time projections appear as discreet vertical markers rather than cluttering your chart with labels. You can actually read the price action underneath.
+The visual design is deliberate. Stars on the CDF bands indicate volume density at that level, with three stars meaning a heavy volume cluster is backing that price band. Confluence badges (⚡ / ◈) highlight key time-cycle bars where price, volume, and Gann geometry align at the same point in time. The stated goal is to cut through the noise of standard geometric drawing tools and focus only on the levels where statistical range and real volume overlap.
 
-**Settings I Settled On**
+**Settings and How to Tune Them**
 
-After testing, here's what worked: set the pivot strength to "Medium" — the default "Strong" setting generates angles too infrequently, missing most swing opportunities. For the time cycle, use a period of 34 (Fibonacci) rather than the default 21; it gave cleaner reversal zones on daily charts. On lower timeframes (5-15 min), disable the time projections entirely — they're noisy and the angles dominate.
+The settings let you tweak pivot lookbacks, volume tolerance percentage, CDF distribution windows, and individual color themes for all tools. The active tool selector lets you swap between the Fan, 3x3 Box, and Square of 9 on the fly without loading separate scripts.
 
-One critical setting: adjust the "Price Scale Ratio" to match your chart. If you're on a log scale, the angles distort. I found the indicator performs best with "Auto" enabled, but if you're trading a specific instrument for months, manually locking the ratio to your dominant timeframe improves consistency.
+The author's own disclosure is worth repeating: they state plainly that they know nothing about Gann, researched what a Gann box and fan were, reviewed existing Gann indicators, and worked from that point. That context matters when you evaluate the geometry — this is an enthusiast's reconstruction, not a practitioner's system.
 
-**How I Actually Traded It**
+**How to Read It**
 
-My most reliable setup: wait for the 1x1 angle (45 degrees) to be broken after a pivot low forms. That's my trend confirmation. I'd enter on the close of the candle that breaks the angle, place my stop just below the pivot low, and target the next time-cycle marker — not a price target. That's the key insight: Gann_Toolkit_Ss really shines for time-based exits, not price targets.
-
-In the screenshot above, you can see how the price respected the 1x1 angle as support during a strong uptrend, and the time markers aligned with consolidation zones. When price broke back below the 1x1 angle, that was my exit signal — and it caught the trend reversal with reasonable precision.
+The workflow is built around the active tool selector, the star ratings on CDF bands, and the confluence badges. The auto anchor handles the pivot tracking so you are not manually drawing angles. The practical reading is to watch for the overlap: a CDF percentile band carrying three stars, sitting near a 1x1 fan ray, landing on a flagged time-cycle bar, is the setup the indicator is designed to surface.
 
 **Pros & Cons**
 
-The honest trade-offs:
-
 Pros:
-- No repainting on the core angle lines — verified by refreshing charts after new pivots formed
-- Time-cycle projections add a dimension most trend indicators lack
-- Clean visual design; doesn't turn your chart into a spaghetti mess
-- Works across multiple instruments without heavy re-tweaking
+- Combines Gann geometry with a statistical range model (CDF) rather than drawing angles in isolation
+- Volume Gravity gives a visual hierarchy to price levels instead of uniform lines
+- Three tools (Fan, Box, Square of 9) in one script, swappable on the fly
+- Deliberate visual design that avoids cluttering the chart
 
 Cons:
-- The time projections are inconsistent on lower timeframes — unusable below the 15-minute chart
-- Learning curve is steep if you're not familiar with Gann concepts
-- The "Auto" price scale setting occasionally produces wildly different angles on the same chart after a refresh — rare, but it happened twice in my testing
-- No alerts for angle breaks, which seems like a glaring omission for a toolkit
+- The author openly states they have no background in Gann theory, so the geometric logic is a reconstruction
+- The value of a confluence signal depends entirely on how the underlying CDF and volume calculations are implemented, which the description does not detail
+- As with any geometric overlay, the projected levels are reference points, not trade signals
 
 **Who This Is For**
 
-This is for traders who already understand trend structure and want a different lens on it — not beginners looking for a magic buy/sell arrow. If you're comfortable with concepts like market geometry and time-price analysis, you'll find this genuinely useful. If you want a simple moving-average crossover replacement, look elsewhere.
-
-**Alternatives Worth Considering**
-
-- **Gann Hi-Lo Activator**: Simpler, more mechanical, but lacks the time projections
-- **Gann Swing Chart**: Better for swing traders who want a more structured approach
-- **Auto Gann Fan by LuxAlgo**: Free and decent, but repaints more and lacks the time-cycle component
-
-**FAQ**
-
-**Does it repaint?** The core fan lines don't repaint after pivots are confirmed. The time-cycle markers can shift slightly when new pivots form, but not retroactively.
-
-**What timeframes work best?** Daily and 4-hour charts are ideal. Anything below 15 minutes degrades significantly.
-
-**Can it be used for scalping?** No. The tool's philosophy is based on time cycles that play out over hours or days, not minutes.
-
-**Does it work on crypto?** Yes, especially on BTC and ETH daily charts where Gann angles align surprisingly well with major moves.
+This is for traders who already work with market geometry and time-price analysis and want a different lens on structure — not beginners looking for a magic buy/sell arrow. If you are comfortable reading confluence across price, volume, and time, this gives you a structured way to do it. If you want a simple crossover replacement, look elsewhere.
 
 **Final Verdict**
 
-Gann_Toolkit_Ss earns its place in a serious trader's arsenal — not as a standalone system, but as a confirmation tool that adds a time dimension most trend indicators ignore. The lack of alerts and lower-timeframe inconsistency hold it back from a perfect score, but for swing traders on higher timeframes, it's a legitimate edge. It's not magic — no indicator is — but it's honest Gann, executed well.
+The script is an ambitious attempt to merge Gann geometry with distribution statistics and volume profiling, and the visual execution is clearly the priority. The honest caveat is the author's own: they built this from research rather than deep Gann expertise, so treat the geometry as a structured framework rather than doctrine. For traders who use geometric confluence as confirmation, it is a legitimate tool to evaluate — not magic, and not a standalone system.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-## Frequently Asked Questions
-
-### Is Gann_Toolkit_Ss worth it?
-
-Based on testing across multiple timeframes, Gann_Toolkit_Ss delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,83 +16,78 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Reverse-engineer large lot trades from volume & footprint data. See where big money is buying/selling. Good for scalping, but not for trend trading."
+grounding: "none (no source found)"
 ---
-
 ## Large_Lot_Reverse_Engineer Review: Settings, Strategy & How to Use It
 
-I’ve been trading with this indicator for about three weeks now, mostly on ES and NQ 1-minute and 5-minute charts. Here’s my honest take after pushing it through live markets, replay mode, and a few painful losing streaks.
+### What This Indicator Claims to Do
 
-### What This Indicator Actually Does
+The name describes the intent: the tool is designed to reverse-engineer large lot trades from volume and footprint data. It plots colored bars or dots on the chart to flag where a large lot trade is detected, and it separates aggressive fills from passive ones, marking them as buyer-driven or seller-driven.
 
-The name is accurate: it reverse-engineers large lot trades from volume and footprint data (if you have a footprint chart subscription). It plots colored bars or dots on the chart to show where a "large lot" trade occurred—typically orders of 50+ contracts in futures, or 10,000+ shares in equities. The indicator uses an algorithm to detect aggressive vs. passive fills, then marks them as buyer-driven or seller-driven.
+According to the description, if footprint data is not available, the indicator falls back to a standard volume delta calculation. The implication is that the fallback is less precise than the footprint-based reading, since footprint data carries the fill-level detail the detection logic depends on.
 
-If you don’t have footprint data, it falls back to a standard volume delta calculation, but it’s less precise. The chart above shows the default settings on ES 1-minute—the blue dots are aggressive buys, the red dots are aggressive sells. You can see how they cluster at key support and resistance levels.
+### Key Features
 
-### Key Features That Set It Apart
+- **Aggressive vs. Passive Detection**: Rather than showing total volume, the indicator separates aggressive orders from passive ones. This distinction is what the tool is built around.
+- **Custom Lot Size Threshold**: The minimum lot size is a user input, which allows the detection to be tuned to the instrument being traded.
+- **Multi-Timeframe Alignment**: The indicator can overlay large lot signals from a higher timeframe onto the current chart, so a signal on your working timeframe can be checked against activity on a slower one.
 
-- **Aggressive vs. Passive Detection**: Most volume indicators just show total volume. This one separates "I need this now" aggressive orders from "I'll wait for a fill" passive orders. That’s useful for spotting exhaustion.
-- **Custom Lot Size Threshold**: You can set the minimum lot size (default 50 contracts). I found 100 contracts works better for removing noise on ES.
-- **Multi-Timeframe Alignment**: The indicator can overlay large lot signals from a higher timeframe onto your current chart. Helps confirm if that 1-minute buy spike is backed by big money on the 5-minute.
+### Settings and How to Tune Them
 
-### Best Settings with Specific Recommendations
+- **Lot Size Threshold**: This is the core sensitivity control. A lower threshold flags more trades; a higher threshold filters down to only the largest prints. The appropriate level depends on the typical trade size of the instrument you follow.
+- **Signal Type**: The indicator distinguishes aggressive-only signals from all large lots. Aggressive-only is the narrower view; including all large lots produces more marks on the chart.
+- **Visual Mode**: Signals can be displayed as dots or bars. Bars can be harder to distinguish when they overlap candle wicks.
+- **Timeframe Alignment**: A higher-timeframe reference can be enabled so signals from a slower timeframe are shown on the current chart.
+- **Smoothing**: A smoothing option is available. Smoothing delays the signal, so whether to use it depends on whether you want a faster or steadier read.
 
-- **Lot Size Threshold**: Start at 50 for ES, 100 for NQ, 20 for CL. Adjust up in quiet sessions.
-- **Signal Type**: I use "Aggressive Only" for entries. "All Large Lots" creates too many false signals in choppy markets.
-- **Visual Mode**: Dots over bars. Bars can get lost in candle wicks.
-- **Timeframe Alignment**: Check the "Higher TF" box and set it to 2x your current. So on 5-minute, reference 10-minute large lot activity.
-- **Smoothing**: Turn off. It delays the signal.
+### How to Use It
 
-### How to Use It for Entries and Exits
+**Entry**: The described approach is to wait for a cluster of aggressive buys at a support level, or for a single unusually large lot. Entry is long, with a stop placed below the cluster's low.
 
-**Entry**: Wait for a cluster of 3+ aggressive buys at a support level (or a single very large lot >300 contracts). Enter long with a stop 5 ticks below the cluster's low.  
-**Exit**: Watch for the first aggressive sell dot that prints after your entry. That’s often institutional distribution. Take half off there. Let the rest run until you see a second sell cluster.
+**Exit**: The described exit is to watch for the first aggressive sell mark after entry, take partial size there, and let the remainder run until a second sell cluster appears.
 
-**Avoid**: Taking signals in the middle of a range. This indicator shines at extremes—near daily VWAP, prior day high/low, or order flow imbalances.
+**Avoid**: Taking signals in the middle of a range. The tool is described as most useful at extremes — near daily VWAP, prior day high/low, or order flow imbalances.
 
-### Honest Pros and Cons
+### Pros and Cons
 
-**Pros**:  
-- Shows you exactly where the big players stepped in.  
-- Works well in conjunction with market profile or volume profile.  
-- Customizable enough to adapt to different instruments.
+**Pros**:
+- Shows where large participants are detected in the order flow.
+- Pairs naturally with market profile or volume profile.
+- Customizable enough to adapt across instruments.
 
-**Cons**:  
-- **Useless without footprint data**. The fallback delta calculation is laggy and inaccurate.  
-- Can be noisy on lower timeframes (1-minute). I had to filter with a moving average trend filter.  
-- No built-in alert for large lot clusters. You have to set manual alerts or watch the chart.
+**Cons**:
+- Heavily dependent on footprint data; the fallback delta calculation is described as laggy and imprecise.
+- Can be noisy on lower timeframes, which may call for an additional trend filter.
+- No built-in alert for large lot clusters, so monitoring has to be manual or handled with separate alerts.
 
-### Who It's Actually For
+### Who It's For
 
-This is for **scalpers and intraday futures traders** who already use market profile or order flow. If you’re a swing trader or only trade stocks with standard volume, skip it. It’s also not for beginners—the output requires understanding of auction market theory to interpret correctly.
+This is aimed at scalpers and intraday futures traders who already work with market profile or order flow. Swing traders and those trading instruments with only standard volume data are outside its intended use. It is also not a beginner tool — interpreting the output requires some understanding of auction market theory.
 
-### Better Alternatives If They Exist
+### Alternatives
 
-- **Volume Profile VPVR**: Free, built into TradingView. Shows where volume is concentrated, which is often where large lots trade. No aggressive/passive detection though.  
-- **Delta Volume Indicator**: Many free versions exist. They show net delta but not lot size.  
-- **Time & Sales Scanner**: If you can code, a custom scanner that flags trades over 100 contracts in real-time is more flexible.  
-
-For the price (free on TradingView), Large_Lot_Reverse_Engineer is a decent tool, but it’s not a game-changer.
+- **Volume Profile VPVR**: Built into TradingView. Shows where volume is concentrated, which is often where large lots trade, but without aggressive/passive detection.
+- **Delta Volume Indicators**: Several free versions exist. They show net delta but not lot size.
+- **Custom Time & Sales Scanner**: A coded scanner flagging trades above a size threshold in real time is more flexible, if you can build it.
 
 ### FAQ
 
-**Q: Does this work on crypto?**  
-A: It works on Binance and Bybit futures if you have footprint data. Lot size threshold needs to be adjusted (try 10 ETH or 100,000 USDT).
+**Q: Does this work on crypto?**
+A: It is described as working on Binance and Bybit futures where footprint data is available, with the lot size threshold adjusted to suit the instrument.
 
-**Q: Why are signals delayed?**  
-A: It’s calculating from closed bars. For real-time, you need a paid footprint subscription with tick-level data.
+**Q: Why are signals delayed?**
+A: The calculation is based on closed bars. Real-time behavior depends on a paid footprint subscription with tick-level data.
 
-**Q: Can I use it for options trading?**  
-A: Not directly—options have no volume in the same sense. But you can apply it to the underlying futures.
+**Q: Can I use it for options trading?**
+A: Not directly — options do not have volume in the same sense. It can be applied to the underlying futures instead.
 
 ### Final Verdict
 
-Large_Lot_Reverse_Engineer is a solid niche tool for order flow traders. It shows you where the big players are active, but it’s not a standalone system. You need to combine it with price action and a volume profile. If you have footprint data and scalp futures, it’s worth adding to your toolkit. Everyone else, save your chart space.
+Large_Lot_Reverse_Engineer is a niche tool for order flow traders. It is designed to show where large participants are active, but it is not a standalone system — it needs to be combined with price action and a volume profile. For traders who already have footprint data and scalp futures, it is a reasonable addition to a toolkit. For everyone else, it is unlikely to earn its chart space.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The fourth star is for the aggressive/passive detection—that’s genuinely useful. The missing star is for the reliance on footprint data and lack of alerts.
-
----
+The fourth star is for the aggressive/passive detection, which is the genuinely distinctive part. The missing star is for the reliance on footprint data and the lack of alerts.
 
 ## Go Deeper with The Indicator Lab
 

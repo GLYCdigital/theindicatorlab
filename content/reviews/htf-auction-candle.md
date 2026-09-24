@@ -17,87 +17,103 @@ categories:
 rating: 4
 description: "Honest Htf_Auction_Candle review: how this higher-timeframe trend indicator works, best settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/HhfasNyh-HTF-Auction-Candle-Zeiierman/"
+sources: ["https://www.tradingview.com/script/HhfasNyh-HTF-Auction-Candle-Zeiierman/"]
 ---
-I’ll be straight with you: most higher-timeframe indicators are just moving averages wearing a disguise. Htf_Auction_Candle isn't that. It's a trend tool that repaints your current chart with the auction context of a higher timeframe — and that distinction matters more than you'd think.
+I’ll be straight with you: most higher-timeframe indicators are just moving averages wearing a disguise. HTF Auction Candle (Zeiierman) isn't that. It's a multi-timeframe auction profiling tool that reconstructs the currently forming Higher Timeframe candle and analyzes the lower-timeframe activity developing inside it — and that distinction matters more than you'd think.
 
-I ran this on BTC/USD daily charts with the weekly timeframe as the reference, then stress-tested it on EUR/USD and crude oil. Here's what actually happens under the hood, the settings that worked, and where this thing falls short.
+The key idea is that the Higher Timeframe candle isn't treated as a single OHLC structure. Instead, its full high-to-low range is broken into individual price cells, and the indicator estimates how buying and selling activity is distributed across those levels. Here's what the tool actually does, how the settings work, and where it falls short.
 
 ## What It Actually Does
 
-Htf_Auction_Candle takes the open, high, low, and close from a higher timeframe (say, the 4H or daily) and plots that information directly onto your current chart. The result is a set of colored candles or levels that show you where the "big money" timeframe is currently auctioning price.
+HTF Auction Candle reconstructs the selected Higher Timeframe candle using its live open, high, low, and current close. The high and low are also linked back to the chart bars where those extremes first formed.
 
-The key distinction: it's not an oscillator that tells you "buy" or "sell." It's a context tool. When you're trading a 15-minute chart, this indicator shows you whether the daily candle is bullish or bearish, where the daily open sits, and how far price has traveled from that reference point. This is auction market theory applied visually — nothing more, nothing less.
+The internal auction is built from Lower Timeframe candles, using their open, high, low, close, and volume. The selected Lower Timeframe must remain below the Higher Timeframe and cannot exceed the chart timeframe.
+
+This is not an oscillator that tells you "buy" or "sell." It's a context tool. The center of the indicator displays the reconstructed Higher Timeframe candle, with buy and sell activity shown on opposite sides. When you're trading a lower timeframe, the indicator lets you monitor a Higher Timeframe auction without leaving your current chart.
 
 ## Key Features That Set It Apart
 
-The standout feature is the **session open line**. Most HTF indicators will show you the high and low of a higher timeframe, but few anchor that information to the session open. That's a critical piece of context. If price is trading above the daily open with a strong HTF bullish candle, you have a completely different bias than if price is below that open inside a bearish HTF structure.
+The standout feature is the **Volume Wings**. Sell activity extends to the left of the candle, buy activity extends to the right, and the width of each profile section represents the estimated amount of activity concentrated at that price level. Wider areas highlight prices where greater participation occurred during the developing Higher Timeframe auction.
 
-The candle repainting is also well-executed. You can choose to color your current chart's candles based on the HTF candle direction, which gives you an at-a-glance read on the macro trend without cluttering your screen with extra panes. The MACD chart in the screenshot above shows how this plays out — the HTF candles overlay cleanly without obscuring your primary analysis.
+**Delta Dominance** is the second layer. When enabled, each price cell compares estimated buying and selling activity. Positive Delta extends to the right, negative Delta extends to the left, and larger Delta cells represent stronger directional imbalance. Delta is calculated as the difference between estimated buy and sell activity inside each Price Cell.
 
-## Best Settings I Tested
+**Battle Bubbles** summarize buyer-versus-seller control across 20 equal sections of the Higher Timeframe range. Green bubbles indicate a buyer win, red bubbles indicate a seller win, and larger bubbles represent stronger battles with greater participation. Bubble size is normalized against the strongest Battle segment in the current Higher Timeframe candle.
 
-After a few weeks of backtesting, here's what performed best:
+Together, the Volume Wings, Delta Dominance, and Battle Bubbles provide different views of participation, imbalance, and directional control inside the developing Higher Timeframe candle.
 
-- **HTF multiplier: 4x your current timeframe** — This seems to be the sweet spot. On a 15-minute chart, use the 1H. On a 1H chart, use the 4H. Going higher (like 16x) creates signals that lag too much for intraday entries.
-- **Candle coloring: On** — The visual clarity is worth the minor aesthetic cost.
-- **Session open type: Daily** — Weekly opens are too far from price action on lower timeframes. Daily gives you actionable context without excessive noise.
+## Settings and How to Tune Them
 
-One setting I'd avoid: applying this to a 1-minute chart with a daily HTF. The distance between timeframes is so large that the indicator becomes irrelevant — you're essentially just watching a daily chart while trading microseconds.
+- **Higher Timeframe:** Selects the Higher Timeframe candle used for the live auction. It must be greater than the chart timeframe.
+- **Auto LTF:** Automatically selects a suitable Lower Timeframe used to build the internal auction.
+- **Manual LTF:** Selects the Lower Timeframe manually when Auto LTF is disabled. It must remain below the Higher Timeframe and no higher than the chart timeframe.
+- **Price Cells:** Controls how many price levels divide the Higher Timeframe range. More cells provide finer profile and Delta resolution.
+- **Cell Concentration:** Controls how tightly estimated buy and sell activity is distributed around each Lower Timeframe candle's directional activity centers.
+- **LTF Sample Capacity:** Sets the maximum number of Lower Timeframe samples retained before older samples are compressed to maintain performance.
 
-## How to Use It for Entries and Exits
+The main structural constraint to keep in mind is the timeframe relationship: the Higher Timeframe must sit above the chart timeframe, and the Lower Timeframe used for sampling must sit below the Higher Timeframe while not exceeding the chart timeframe.
 
-The most effective approach I found uses the HTF auction context as a filter rather than a standalone signal:
+## How to Use It
 
-**Long bias:** Wait for the HTF candle to be bullish (green) and price to be trading above the HTF session open. Then look for your standard entry triggers — a pullback to a support level, a bullish engulfing pattern, or a volume spike. The HTF context gives you permission to take the trade, not the entry itself.
+**Analyze the developing Higher Timeframe candle.** Use the reconstructed candle to monitor a Higher Timeframe auction without leaving the current chart timeframe. Instead of waiting for the Higher Timeframe candle to close, you can observe how its structure and internal participation are developing in realtime. This can be useful when monitoring larger timeframe candles from lower execution timeframes.
 
-**Short bias:** The inverse. Bearish HTF candle, price below the session open, then wait for your confirmation.
+**Identify high-participation areas.** Wide sections of the Volume Wings show price levels where more estimated activity has accumulated. These areas can highlight important zones of acceptance, consolidation, support, resistance, or repeated participation within the current Higher Timeframe candle. Narrow profile areas show prices where relatively less activity occurred.
 
-**Exits:** This is where the indicator shines. If you're long and price closes below the HTF open, that's your exit — regardless of what your lower-timeframe analysis says. The daily open acts as a natural profit target and invalidation point.
+**Use the Control Price.** The Control Price identifies the price cell with the highest combined estimated activity. It can serve as a reference for where the current Higher Timeframe auction has concentrated the greatest participation. Price holding around the Control Price can suggest continued acceptance, while movement away from it can help highlight changes in the developing auction.
 
-I tested this on 50 trades over three weeks. Filtering with the HTF context improved my win rate from 54% to 63% compared to using lower-timeframe signals alone. The trade-off was fewer total setups — roughly 30% fewer — but the quality improvement was worth it.
+**Read Delta across the range.** Delta Dominance shows which side is stronger at individual price levels. Positive Delta highlights areas of stronger estimated buying activity, negative Delta highlights areas of stronger estimated selling activity, and large Delta cells highlight stronger directional imbalance. For example, strong positive Delta near the upper portion of the range can show aggressive bullish participation, while strong negative Delta near the highs can indicate selling pressure developing into higher prices.
+
+**Read the Battle Bubbles.** Battle Bubbles provide a simplified view of which side is winning across different parts of the Higher Timeframe range. Clusters of larger buyer or seller bubbles can highlight areas where directional control is especially strong, while smaller bubbles indicate weaker or less significant battles. They can be used alongside the Volume Wings and Delta Dominance to distinguish broad directional control from the more detailed activity occurring inside individual price cells.
+
+## How It Works Under the Hood
+
+**Higher Timeframe Reconstruction.** The indicator reconstructs the selected Higher Timeframe candle using its live open, high, low, and current close, linking the high and low back to the chart bars where those extremes first formed.
+
+**Lower Timeframe Sampling.** The internal auction is built from Lower Timeframe candles using their open, high, low, close, and volume.
+
+**Buy and Sell Volume Estimation.** Each Lower Timeframe candle's volume is divided into estimated buy and sell activity using its close position, candle direction, and wick structure. A stronger bullish structure receives a larger estimated buy share, while a stronger bearish structure receives a larger sell share. This is an estimation model and does not use true bid and ask transaction data.
+
+**Price Cell Distribution.** The Higher Timeframe range is divided into Price Cells, with each Lower Timeframe candle contributing activity only to the cells touched by its range. Buy and sell volume is weighted toward separate directional areas, while Cell Concentration controls how tightly that activity is distributed.
+
+**Higher Timeframe Delta.** The indicator also calculates estimated Delta across the entire Higher Timeframe candle as a percentage of total volume. Positive values indicate overall buying dominance, while negative values indicate selling dominance.
 
 ## Pros & Cons
 
 **What works:**
-- Clean visual representation of auction theory
-- Session open line is genuinely useful for intraday bias
-- Light on CPU; no lag even on multi-chart setups
-- Pairs well with any lower-timeframe entry strategy
+- Clean visual representation of auction theory across multiple timeframes
+- Volume Wings, Delta Dominance, and Battle Bubbles give layered views of the same auction
+- Control Price provides a clear reference for where participation concentrated
+- Lets you monitor a Higher Timeframe auction without leaving your current chart
 
 **Where it falls short:**
-- Repainting on the current candle can mislead you if you're not paying attention to the HTF close time
-- No alerts built in — you'll need to set those manually
-- The documentation is sparse; I had to experiment to understand the multiplier logic
-- Not a standalone strategy — if you have no entry system, this won't give you one
+- Buy and sell volume is an estimation model — it does not use true bid and ask transaction data
+- The documentation is relatively sparse, so expect to experiment with settings to understand how they interact
+- It is not a standalone strategy — if you have no entry system, this won't give you one
 
 ## Who Should Use This
 
-This is for traders who already have a lower-timeframe entry strategy and need a macro context filter. If you're a scalper on 1-5 minute charts, skip it — the HTF information is too distant to be actionable. If you're a swing trader on 4H or daily charts, you'll find it redundant with your existing analysis.
-
-The sweet spot is intraday traders on 15-minute to 1-hour charts who trade with the daily trend but want a visual anchor for that trend. Day traders using MACD or RSI for entries will find this pairs exceptionally well — it's the context layer those momentum indicators lack.
+This is for traders who already have a lower-timeframe entry approach and want macro auction context. The tool's stated use case is monitoring larger timeframe candles from lower execution timeframes, so it fits traders who work on a lower chart but want to track a developing Higher Timeframe auction. If you already trade directly on the higher timeframe, the reconstruction adds little.
 
 ## Alternatives Worth Considering
 
-If you want something similar but simpler, **The Strat** by Rob Smith does a similar job with HTF candle context and has better documentation. For a more automated approach, **Squeeze Momentum Indicator** gives you a trend direction signal without needing to manually interpret HTF structure — though it lacks the auction theory depth.
+If you want something similar but simpler, **The Strat** by Rob Smith does a similar job with HTF candle context and has better documentation. For a more automated approach, **Squeeze Momentum Indicator** gives you a trend direction signal without needing to manually interpret HTF structure, though it lacks the auction theory depth.
 
 ## FAQ
 
-**Does Htf_Auction_Candle repaint?**
-Yes, on the current forming candle. The repaint disappears once the HTF candle closes. This is standard for HTF indicators but worth knowing.
+**Does HTF Auction Candle repaint?**
+The indicator reconstructs the currently forming Higher Timeframe candle using its live open, high, low, and current close, so the developing candle updates as new Lower Timeframe data arrives. The source material does not make claims about repainting beyond this.
 
-**Can I use it for crypto and forex?**
-Both work fine. I tested crypto and forex with similar results. The session open function works best with 24/7 markets like crypto — forex session boundaries can create odd opens.
+**What markets does it work on?**
+The source material does not specify supported markets. The tool requires a Higher Timeframe above your chart timeframe and a Lower Timeframe below the Higher Timeframe that does not exceed the chart timeframe.
 
 **Is this a free indicator?**
-Yes, it's freely available in the TradingView public library.
+It's published in the TradingView public library.
 
 ## Final Verdict
 
-Htf_Auction_Candle earns four stars because it does one thing exceptionally well: it gives you the auction context of a higher timeframe without overwhelming your chart. It's not a magic bullet, and it won't replace your entry system. But as a filter and bias tool for intraday traders, it's genuinely useful and well-executed.
+HTF Auction Candle earns its place as a focused context tool. It does one thing well: it reconstructs a Higher Timeframe candle and breaks its range into price cells so you can see where estimated buying and selling activity concentrated, which side controlled different segments, and where the Control Price sits. It won't replace your entry system, and its volume estimates are derived from candle structure rather than true order flow data. But as a way to monitor a developing Higher Timeframe auction without leaving your current chart, it's genuinely useful.
 
-If you trade 15-minute to 1-hour charts and struggle with "fighting the trend," this indicator will help you see the bigger picture without leaving your current chart. That's worth the install.
+**Rating: ⭐⭐⭐⭐ (4/5)** — A solid, focused tool that does exactly what it promises, with estimation-model caveats and sparse documentation keeping it from perfection.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — A solid, focused tool that does exactly what it promises, with minor documentation and alert limitations keeping it from perfection.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

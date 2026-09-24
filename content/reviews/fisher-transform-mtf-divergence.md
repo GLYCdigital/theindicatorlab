@@ -16,111 +16,92 @@ categories:
   - Technical Analysis
 rating: 5
 description: "Multi-timeframe Fisher Transform divergence indicator. We test its hidden divergence signals, optimal settings, and backtest results. High win rate on BTC."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Let's cut through the noise. The **Fisher Transform Mtf Divergence** is not your typical oscillator rehash. It applies the Fisher Transform—a mathematical normalization that makes price data more Gaussian—across **three timeframes simultaneously** (e.g., 15m, 1h, 4h). Then it plots **regular and hidden divergences** between price and the Fisher line on each timeframe.
+The **Fisher Transform Mtf Divergence** applies the Fisher Transform—a mathematical normalization that reshapes price data toward a more Gaussian distribution—across **multiple timeframes at once**. It then plots **regular and hidden divergences** between price and the Fisher line on each of those timeframes.
 
-What sets this apart? Most divergence indicators look at one timeframe and cry wolf constantly. This one filters by requiring divergence confirmation across multiple timeframes. The result? Fewer false signals, especially in ranging markets.
+The distinguishing idea is the multi-timeframe requirement: rather than flagging every divergence on a single chart, the indicator is designed to surface signals only when timeframes agree. That design intent is what separates it from the crowded field of single-timeframe divergence oscillators.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Triple-timeframe lens**: You pick three timeframes (e.g., 5, 15, 60). The indicator overlays Fisher lines for each, color-coded. Divergence signals appear only when at least two timeframes agree.
-- **Hidden divergence detection**: Most free indicators miss this. Hidden bullish divergence (higher low in price, lower low in Fisher) is a continuation signal—gold for trend-following strategies.
-- **Auto-alert system**: No need to stare. Set alerts for "Bullish Divergence Confirmed" or "Hidden Bearish Divergence." I tested this on BTC and it fired 30 minutes before a major reversal.
+- **Multi-timeframe lens**: You select several timeframes, and the indicator overlays a Fisher line for each, color-coded. Divergence signals are gated on agreement between timeframes rather than firing on one alone.
+- **Hidden divergence detection**: Regular divergence is common in free scripts; hidden divergence (a higher low in price against a lower low in the oscillator, or the inverse) is not. Hidden divergence is typically read as a continuation signal rather than a reversal.
+- **Alert system**: The indicator supports alerts tied to its divergence conditions, so you don't have to watch the chart continuously.
 
-## Best Settings (Tested Live)
+## Settings and How to Tune Them
 
-I ran this on BTC/USDT 1h chart for 3 weeks. Here's what worked:
+The indicator exposes a set of timeframes, a lookback period for the Fisher calculation, a smoothing input, and a divergence sensitivity control.
 
-- **Timeframe 1**: 15 (fast)
-- **Timeframe 2**: 60 (medium)  
-- **Timeframe 3**: 240 (slow)
-- **Lookback Period**: 10 (default is 9—I found 10 reduces whipsaws)
-- **Smoothing**: 3 (default is 2; 3 gives cleaner lines)
-- **Divergence Sensitivity**: Medium
+- **Timeframes**: The core design choice. A faster, medium, and slower timeframe combination lets the faster one surface early divergences while the slower ones act as a filter. The specific combination should follow the horizon you actually trade.
+- **Lookback Period**: Controls how much price history feeds the Fisher Transform. Shorter lookbacks react faster and produce more noise; longer lookbacks smooth the line at the cost of lag.
+- **Smoothing**: Applies additional averaging to the Fisher line. More smoothing produces cleaner lines but delays the crossover signals.
+- **Divergence Sensitivity**: Determines how strict the divergence detection is. Looser settings surface more candidates; stricter settings surface fewer.
 
-Why these? The triple combo catches early divergences on the 15m, confirms on 1h, and the 4h filter kills fakeouts. The chart above shows a clear hidden bullish divergence on BTC during the June 2026 consolidation—price made a higher low, Fisher made a lower low. That signal preceded a 4% move.
+There is no single correct configuration here—the timeframes, lookback, and smoothing need to be matched to your holding period and the instrument's noise profile. Treat the defaults as a starting point and adjust one input at a time.
 
 ## How to Use It for Entries & Exits
 
-**Long Entry**:
-1. Spot **hidden bullish divergence** on the medium timeframe (1h) with confirmation on the fast (15m).
-2. Wait for Fisher line to cross above its signal line (dotted).
-3. Enter on the next candle close. Stop loss below the recent swing low (not the divergence low—be generous).
-4. Target: next resistance or 2x risk-reward.
+**Long entry**:
+1. Look for **hidden bullish divergence** on a medium timeframe, with agreement from a faster one.
+2. Wait for the Fisher line to cross above its signal line.
+3. Enter on the next candle close, with a stop below the recent swing low rather than the divergence low.
+4. Target the next resistance level or a fixed multiple of risk.
 
-**Short Entry**:
-1. Look for **regular bearish divergence** on the slow timeframe (4h).
-2. Price makes a higher high, Fisher makes a lower high.
+**Short entry**:
+1. Look for **regular bearish divergence** on a slower timeframe.
+2. Price makes a higher high while Fisher makes a lower high.
 3. Enter when Fisher drops below zero.
 4. Stop above the swing high.
 
-**Exit**: The indicator repaints a bit on the fast timeframe—don't exit on a single candle reversal. Wait for Fisher to cross back below/above zero on the medium timeframe.
-
-## Performance Data (Backtest)
-
-I ran a backtest on BTC/USDT from Jan 2025 to July 2026 using the settings above. Here are the raw numbers—no cherry-picking:
-
-| Metric | Value |
-|--------|-------|
-| Total Trades | 343 |
-| CAGR | +3.9% |
-| Max Drawdown | -50% |
-| Win Rate | 32.4% |
-| Profit Factor | 1.04 |
-
-Honestly? The win rate looks low, but that's typical for divergence-based systems. The 1.04 profit factor means you break even with a slight edge. The -50% drawdown is brutal—this is not a set-and-forget indicator. You must size position accordingly (1-2% risk per trade). The +3.9% CAGR over 18 months is unspectacular alone, but combined with trend-following or volume filters, it improves.
+**Exit**: On faster timeframes the indicator can repaint, so a single candle reversal is not a reliable exit trigger. Waiting for Fisher to cross back through zero on a medium timeframe gives a more stable signal.
 
 ## Honest Pros & Cons
 
 **Pros**:
-- Hidden divergence detection is rare and works well on trending pairs like BTC
-- Multi-timeframe filter cuts false signals by ~60% vs single-TF divergence
-- Clean, non-cluttered UI—unlike most multi-TF indicators
+- Hidden divergence detection, which most free divergence scripts omit.
+- The multi-timeframe filter is intended to reduce the false-signal rate compared with single-timeframe divergence.
+- A comparatively clean layout for a multi-timeframe tool.
 
 **Cons**:
-- High drawdown in backtest—requires strict risk management
-- Repaints on fast timeframe (5-15m)—only trade on 1h+ confirmations
-- Not for scalping—signals take 2-4 candles to form
+- Divergence systems generally carry meaningful drawdown, so position sizing is not optional.
+- Repainting on faster timeframes means signals there should be treated as provisional.
+- Signals take several candles to form, which rules out scalping use.
 
-## Who It's Actually For
+## Who It's For
 
-- **Swing traders** (1h-4h charts) who want to catch trend continuations and reversals
-- **Traders who hate false divergence signals**—this filter is a godsend
-- **Not for you** if you scalp 1m-5m charts or can't handle 50% drawdown
+- **Swing traders** working on higher timeframes who want trend continuations and reversals.
+- **Traders frustrated by single-timeframe divergence noise**, for whom the multi-timeframe agreement condition is the main draw.
+- **Not for you** if you scalp very short timeframes or are unwilling to manage drawdown actively.
 
-## Better Alternatives
+## Alternatives
 
-If this doesn't fit your style:
-- **Supertrend Divergence** by same author—simpler, less drawdown (max 30%), but misses hidden divergences
-- **MACD Divergence (Multi-TF)** —good for trend-following, but slower signals
+- **Supertrend Divergence** by the same author—simpler, but it does not detect hidden divergences.
+- **MACD Divergence (Multi-TF)**—suited to trend-following, with slower signals.
 
 ## FAQ
 
-**Q: Does this indicator repaint?**  
-A: Yes, on the fast timeframe (5-15m). On 1h+ with smoothing=3, repainting is minimal (<1 candle). Always confirm with price action.
+**Q: Does this indicator repaint?**
+A: On faster timeframes, yes. On higher timeframes with smoothing applied, repainting is limited. Confirm with price action regardless.
 
-**Q: Can I use it for crypto?**  
-A: Yes. BTC backtest above shows it works. ETH and altcoins have more noise—use longer timeframes (4h+).
+**Q: Can I use it for crypto?**
+A: Yes. Noisier altcoins benefit from longer timeframes.
 
-**Q: What's the best pair?**  
-A: BTC/USDT on 1h chart. Forex pairs like EUR/USD are too range-bound; hidden divergences are rare.
+**Q: What's the best pair?**
+A: There is no universally best pair. The tool suits instruments that trend; range-bound pairs produce few hidden divergences.
 
-**Q: How many signals per week?**  
-A: On BTC 1h, about 3-5 signals. On lower timeframes (15m), maybe 10-15.
+**Q: How many signals per week?**
+A: Signal frequency scales with timeframe—higher timeframes produce fewer, lower timeframes produce more.
 
-**Q: Is it worth the price?**  
-A: If you trade divergence strategies, yes. Free alternatives don't have multi-TF confirmation or hidden divergence. If you're a beginner, start with the free version of this script (if available) or Supertrend.
+**Q: Is it worth the price?**
+A: If you trade divergence strategies specifically, the multi-timeframe confirmation and hidden divergence detection are the differentiators. Beginners may be better served starting with a simpler free script.
 
 ## Final Verdict
 
-The **Fisher Transform Mtf Divergence** is a niche tool for serious traders who understand divergence mechanics. It's not a magic button—the backtest shows a 1.04 profit factor and high drawdown. But for swing traders who combine it with volume or trend filters, it's a reliable signal generator. The hidden divergence detection alone justifies the price if you trade trending assets like BTC.
+The **Fisher Transform Mtf Divergence** is a niche tool aimed at traders who already understand divergence mechanics. It is not a magic button, and divergence systems in general demand disciplined risk management. But for swing traders who pair it with volume or trend filters, the multi-timeframe confirmation and hidden divergence detection are genuine differentiators rather than marketing.
 
-**Star Rating: ⭐⭐⭐⭐⭐ (5/5)** — Best-in-class for multi-timeframe divergence. Just don't skip risk management.
-
----
+**Star Rating: ⭐⭐⭐⭐ (4/5)** — Strong for its specific niche. Just don't skip risk management.
 
 ## Go Deeper with The Indicator Lab
 

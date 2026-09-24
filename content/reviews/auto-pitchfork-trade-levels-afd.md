@@ -17,86 +17,93 @@ categories:
 rating: 4
 description: "Auto_Pitchfork_Trade_Levels_Afd review: an honest look at this automated Pitchfork trend indicator, the settings that matter, and how to trade it."
 tv_script_url: "https://www.tradingview.com/script/qaZnLWji-Auto-Pitchfork-Trade-Levels-AFD/"
+sources: ["https://www.tradingview.com/script/qaZnLWji-Auto-Pitchfork-Trade-Levels-AFD/"]
 ---
-Andrew's Pitchfork used to be a manual chore. You'd eyeball three pivots, drag the tines around, and inevitably second-guess whether you picked the right swing points. Auto_Pitchfork_Trade_Levels_Afd does the pivot-picking for you and draws the fork, the median line, and a set of trade levels automatically. That's the whole pitch, and it mostly delivers.
+Andrew's Pitchfork used to be a manual chore. You'd eyeball three pivots, drag the tines around, and second-guess whether you picked the right swing points. This script automates the anchor selection and draws the fork, the median line, and a set of trade levels from it. That's the whole pitch, and it holds up as far as it goes.
 
-This is a trend tool, not a signal generator. It doesn't tell you to buy or sell. It tells you where price sits relative to a structured channel — and that distinction matters a lot when you decide whether to keep it on your chart.
+This is a trend and structure tool, not a signal generator. It doesn't tell you to buy or sell. It tells you where price sits relative to a structured channel — and that distinction matters when you decide whether to keep it on your chart.
 
 ## What it actually does
 
-The indicator scans price for pivot highs and lows, selects a dominant swing sequence, and projects a three-tine pitchfork from it. From there it plots what the name promises: trade levels — typically the median line, the outer parallel tines, and intermediate warning lines where reactions tend to happen.
+The script builds automatic pitchforks from confirmed swing pivots — no manual anchors, and no pivot that is still forming. Three alternating confirmed pivots (P0, P1, P2) make a fork once they pass six checks: leg size, leg length, P2 beyond P0, fork width, intact structure, and a confirming close inside the fork.
 
-As shown in the chart above, the fork anchors to a clean impulse leg and fans outward. Price respects the median line surprisingly often, and the outer tines act as the "don't chase here" zones. If you've traded manual forks, the behavior will feel familiar — you just skip the drawing step.
+**Standard**, **Schiff** or **Modified Schiff** sets where the median line starts. Parallels run through P1 and P2; dotted warning lines sit one median-to-parallel distance further out. A fork ends on a close past a warning line by a small margin, on replacement by a newer valid fork, or by age. Accepted anchors are fixed: a newer fork replaces an old one, never moves it.
 
-The auto-selection is the real feature. On liquid instruments with clear swings (think EURUSD on 4H, ES on 15m), it picks sensible anchors. On choppy, ranging messes, it picks garbage. More on that below.
+An optional **Longer layer** runs the same rules at three times the **Swing length**. Anchor labels carry S or L.
 
-## Settings that actually matter
+The design is late on purpose. A pivot confirms **Swing length** bars after it prints, so every fork appears after its anchors, and a finished chart shows forks where nothing was drawn at the time. TradingView classes scripts like this as potentially misleading, and this one is one. No claim is made about repainting either way.
 
-I tested this across timeframes and settled on a configuration that keeps it useful without turning the chart into spaghetti.
+## Settings and How to Tune Them
 
-**Pivot lookback / sensitivity.** This is the one dial that changes everything. Lower values make the fork snap to every minor wiggle and redraw constantly. Higher values produce a stable fork that holds its shape for dozens of bars. I'd start at a lookback that captures the last 5–10 significant swings on your timeframe and leave it there.
+**Swing length.** Sets how many bars after a pivot prints before it confirms, and therefore how late every fork appears. It also anchors the optional Longer layer, which runs the same rules at three times this value. There is no single correct setting; it depends on the swing structure you want to trade.
 
-**Show median line.** Always on. The median line is the tradeable feature. Without it you're just looking at a decorative channel.
+**Fork variant.** Standard, Schiff or Modified Schiff — this sets where the median line starts. It changes the geometry of the fork, not the trade logic.
 
-**Show outer tines.** On, but treat them as context, not entries.
+**Longer layer.** Toggles a second set of forks running the same rules at three times the Swing length, with anchor labels marked L versus S.
 
-**Show trade levels / warning lines.** Useful on higher timeframes (4H+). On the 5-minute it adds clutter for marginal value.
+**Target basis.** Sets how T1 to T3 are derived. **Actual stop (R)** (default) gives 1R, 2R and 3R from Entry, where R is the Entry-to-Stop distance, so the ladder is reproducible from the panel. **ATR** gives 1, 2 and 3 times the fork's frozen ATR(14). **Median line** gives one target, the median itself. **Structure** gives the median, then the parallel and warning line on the target side.
 
-**Extend fork right.** Enable it if you're trading the current structure. Disable it if you only want historical context.
+**Panel position.** Auto puts the table on the Entry and Stop side — low for a long setup, high for a short one — where it can cover those tags. The four corners are fixed alternatives.
 
-The biggest complaint I have: there's no clean "lock the fork" option. When a new pivot forms, the whole thing can shift. That's inherent to any auto-pitchfork, but a manual override would make this a 5-star tool.
+Switching a fork line off hides its drawings, including a sloped target on it. The panel is unchanged.
 
-## How to trade it
+## How to read it
 
-The logic is straightforward once you accept the fork is a map, not a trigger.
+Entry (the confirming close) and Stop (beyond P2) freeze when the fork forms. The last two target bases are fork lines, so they slope; the panel shows each line's latest value until it is reached or the setup closes. A line already behind Entry at formation is not a target and shows as a dash. With none left, the setup reads **Levels Unavailable**.
 
-- **Trend continuation:** In an uptrend, buy pullbacks into the median line or the lower tine, ideally with a rejection candle. Stop goes below the tine. Target the upper tine.
-- **Trend reversal watch:** When price breaks and closes beyond the outer tine, the structure that generated the fork is failing. That's your cue to stop trusting the fork, not to fade it blindly.
-- **Median line as the bias gauge:** Price above the median line = bullish bias. Below = bearish. This alone is a decent filter for other strategies you already run.
+On the chart, green bands run from Entry through the targets, and a red band runs from Entry to Stop, with wedges under a sloped basis. A confirmed bar reaching a level marks it reached, with price and time, and clears its drawings. The last target or the Stop clears the rest. Nothing is counted across setups: no hit rate, no score. An unmarked level has not been reached yet; it is not a failure.
 
-Pair it with a momentum read — RSI divergence into an outer tine, or a MACD cross back toward the median — and the win rate improves noticeably. The fork on its own is directional context. The fork plus confirmation is a system.
+Touch counts — bars within a fixed ATR band of the median or a parallel — are in the Data Window and the Full and JSON alerts, with their band and bar sample.
+
+The panel shows setup and state on top, for example **Standard - Long** above **Closed, T3 Reached**, then Entry, Stop and T1 to T3 with their multiples. Closed means level tracking ended, not that an order was closed: there are no orders, positions or sizes here. With both layers on, each gets a column. Before a setup, a note reads *insufficient confirmed pivots*, *waiting for a new confirmed pivot*, or the rule the newest candidate failed.
+
+## Trade levels
+
+The target ladder is the part worth understanding before you use it. With **Actual stop (R)**, the targets are fixed multiples of the Entry-to-Stop distance, so you can recompute them from the panel. With **ATR**, they're multiples of the fork's frozen ATR(14). With **Median line** and **Structure**, targets sit on the fork's own lines and slope with them — which means a target's displayed value changes until it is reached or the setup closes.
 
 ## Pros and cons
 
 **Pros:**
 - Removes the subjectivity of drawing pitchforks manually
-- Median line and tines are genuinely useful reaction zones
-- Works well on trending FX pairs and index futures
-- Clean, uncluttered default output
+- Anchors are confirmed-only and fixed once accepted — a newer fork replaces an old one, never moves it
+- Targets are recomputable from the panel or sit on the fork's own lines
+- A named reason is shown when nothing draws
+- Reached levels are recorded but never scored
 - Free and lightweight on the chart
 
 **Cons:**
-- Auto pivot selection is unreliable in ranging or news-driven chop
-- The fork can redraw when new pivots form — no lock feature
-- No alerts built in for tine touches or median crosses
-- "Trade levels" are somewhat generic; not instrument-specific
-- No multi-timeframe awareness
+- Late by design: a pivot confirms Swing length bars after it prints, so forks appear after their anchors
+- No manual anchor override
+- No claim about repainting either way
+- Geometry is linear in price and bar index, on a log scale too — readability at extreme zoom is not claimed
+- One value comes from another timeframe: the previous closed daily ATR, for an internal cap on intraday charts
 
 ## Who it's for
 
-Discretionary trend traders who already think in channels and want automation to handle the drawing. If you trade breakouts of structure, pullbacks to dynamic support, or you're learning pitchfork theory, this is a solid training-wheels-plus tool. Scalpers on the 1-minute will find it too twitchy. Pure indicator-signal traders who want buy/sell arrows should look elsewhere.
+Discretionary trend traders who already think in channels and want the drawing handled automatically. If you trade pullbacks to dynamic support or breakouts of structure, the median line and parallels give you a consistent frame. Traders who want a trigger should look elsewhere — this is context, not a signal.
 
 ## Alternatives
 
-If you want a pitchfork with manual anchor control, the built-in **Pitchfork** drawing tool plus a pivot indicator gives you more precision. For automated trend channels, **Linear Regression Channel** or **Auto Trendlines** scratch a similar itch. If you specifically want trade levels with alerts, a **Pivot Points**-based script will fire notifications this one won't.
+If you want manual anchor control, the built-in **Pitchfork** drawing tool plus a pivot indicator gives you more precision. For automated trend channels, **Linear Regression Channel** or **Auto Trendlines** scratch a similar itch.
 
 ## FAQ
 
-**Does it repaint?** The fork redraws when new pivots qualify. Historical tine touches don't vanish, but the projection can shift. Treat the current fork as provisional until the anchor leg is confirmed.
+**Does it repaint?** The script makes no claim either way. What it does state is that anchors are confirmed-only and fixed once accepted — a newer fork replaces an old one rather than moving it — and that every fork appears after its anchors, so a finished chart shows forks where nothing was drawn at the time.
 
-**Which timeframe is best?** 4H and Daily for swing trading, 15m for intraday on liquid instruments. Avoid below 5m.
+**Which timeframe is best?** The script does not specify one. The relevant settings are Swing length and the target basis, and those depend on the structure you want to trade.
 
-**Can I get alerts?** Not natively. You'd need to add alert conditions manually or use it alongside an alert-capable script.
+**Can I get alerts?** Yes. Fork formed, Median reached, Parallel touch, Fork ended, and one batched alert in Brief, Full or JSON, all on confirmed bars.
 
-**Does it work on crypto?** Yes, but only on pairs with clean swing structure. Low-cap altcoins produce noise forks.
+**What does the JSON alert contain?** Schema 2. Note that `target` is T2, and `r` is the legacy capped unit, not the ladder's R.
 
-**Is it a buy/sell signal?** No. It's context. You supply the trigger.
+**Is it a buy/sell signal?** No. Entry, targets and stop are chart geometry: each target is a fixed multiple of the selected unit, or a fork line itself. Counts describe this chart's history inside the stated band, not a forecast.
 
 ## Final verdict
 
-Auto_Pitchfork_Trade_Levels_Afd does one job well: it turns a fiddly manual drawing exercise into a consistent, automatic overlay. The median line and outer tines are tradeable, and on trending markets the tool earns its chart space. It stumbles on chop, lacks alerts, and the redraw behavior will annoy precision traders — but for the price of free and a few minutes of setup, it's a worthwhile addition to a trend-following toolkit.
+This script does one job well: it turns a fiddly manual drawing exercise into a consistent, automatic overlay, and it is unusually explicit about its own limitations. The confirmed-only anchors, the named reason when nothing draws, and the recomputable target ladder are the parts that carry real weight. It is late by design, it makes no repainting claim, and it does not score itself — which is exactly the honesty a tool like this needs.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Solid, useful, and honest about what it is. A lock feature and alerts would make it essential.
+**Licence:** Mozilla Public License 2.0. Auction Foundry.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

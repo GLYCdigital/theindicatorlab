@@ -16,86 +16,89 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Atr_Percentile measures current volatility relative to its own history, helping you spot expansion/contraction cycles. Strong for filtering breakouts and timing entries."
+grounding: "none (no source found)"
 ---
-
 **What this indicator actually does**
 
-Atr_Percentile is a volatility filter dressed in statistical clothing. Instead of showing you raw ATR values (which are price-dependent and hard to compare across markets), it tells you where the current ATR sits in its own historical range. Think of it as a percentile rank for volatility: 95 means we're in the top 5% of recent volatility; 10 means we're near the quietest levels.
+Atr_Percentile is a volatility filter dressed in statistical clothing. Instead of showing raw ATR values — which are price-dependent and hard to compare across markets — it tells you where the current ATR sits in its own historical range. Think of it as a percentile rank for volatility: a high reading means recent volatility is near the top of its range, a low reading means it's near the quietest levels.
 
-It's not a predictive tool. It doesn't tell you direction. What it does well is quantify whether volatility is expanding, contracting, or range-bound — and that's useful for filtering trades.
+It isn't a predictive tool. It doesn't tell you direction. What it does is quantify whether volatility is expanding, contracting, or range-bound, which makes it useful as a filter for other decisions.
 
 **Key features that set it apart**
 
-- **Normalized output** – The 0–100 scale lets you compare volatility across BTC, ES, or EURUSD without re-tuning. I tested it on all three and the 75+ percentile threshold worked consistently.
-- **Lookback control** – You can set the lookback period (default 50 bars) to match your timeframe. I use 20 on 5-minute charts, 100 on daily.
-- **No repaint** – Confirmed on multiple reloads. The percentile value stays fixed once the bar closes.
-- **Clean visual** – A single line with optional overbought/oversold bands. No clutter.
+- **Normalized output** – The 0–100 scale is meant to let you compare volatility across instruments without re-tuning the indicator. Whether that holds up in practice depends on the instrument and the lookback you choose.
+- **Lookback control** – The lookback period is user-configurable, so you can align the percentile calculation with your timeframe. Shorter lookbacks make the reading more reactive; longer lookbacks make it more stable.
+- **Bar-close behavior** – Like any indicator that incorporates the current bar's data, the value updates intrabar and settles once the bar closes.
+- **Clean visual** – A single line with optional upper and lower bands. No clutter.
 
-**Best settings with specific recommendations**
+**Settings and How to Tune Them**
 
-After two weeks of testing on equities and crypto:
+The indicator's main adjustable parameters are the lookback period, the upper and lower threshold bands, and an optional smoothing input (an SMA).
 
-- **Default lookback (50)** works for swing trading on 4H+. For scalping, drop it to 14–20.
-- **Threshold for "high volatility"**: Set upper band at 80. Below 20 signals compressed volatility.
-- **Smoothing**: The indicator has a built-in SMA option. I keep it off — raw percentile is more responsive.
+- **Lookback** – Controls how much history the percentile is measured against. A shorter lookback makes the reading more responsive to recent volatility shifts; a longer lookback makes it slower and more representative of the broader regime. The right value depends on your holding period and the noise level of the instrument.
+- **Upper and lower bands** – These define what counts as "high" or "low" volatility for your purposes. They are thresholds, not signals — you're choosing where you want the indicator to flag stretched or compressed conditions.
+- **Smoothing** – If enabled, it averages the percentile reading. Smoothing reduces whipsaw at the cost of responsiveness. Whether to use it is a tradeoff between lag and noise, not a question with a single correct answer.
 
-One tweak I found useful: on the 1-minute chart for day trading ES, set lookback to 10 bars and watch for readings below 15. That's where micro-breakouts often ignite.
+No specific parameter values are prescribed here. The appropriate settings depend on the instrument, timeframe, and how you intend to use the reading.
 
 **How to use it for entries and exits**
 
-I pair Atr_Percentile with a trend filter (like a 50 EMA or ADX). The strategy is simple:
+The indicator is generally paired with a trend or price-action filter, since it carries no directional information on its own. Common patterns:
 
-- **Breakout entry**: Wait for percentile to drop below 20 (volatility contraction), then enter on a candle close above a swing high. The contraction acts as a spring.
-- **Trend continuation**: In an established uptrend, if percentile drops to 30–40 and price pulls back to the moving average, that's a low-risk entry.
-- **Exit signal**: When percentile hits 90+, volatility is stretched. Take partial profits or tighten stops.
-
-The chart above shows a real example on BTC 1H: volatility compressed for 8 bars (percentile below 20), then an explosive break to the upside. The indicator caught it before price moved.
+- **Breakout framing**: Watch for percentile to fall into a low-volatility zone (contraction), then look to price structure — such as a close beyond a swing high or low — for the actual trigger. The contraction is context, not a signal.
+- **Trend continuation**: In an established trend, a pullback into a moving average that coincides with a moderate percentile reading can be treated as a lower-risk continuation setup, provided the trend filter still agrees.
+- **Exit framing**: When percentile reaches a high-volatility extreme, volatility is stretched. Some traders use that as a prompt to take partial profits or tighten stops. This is risk management, not a reversal call.
 
 **Honest pros and cons**
 
 **Pros:**
-- Works across timeframes and asset classes without constant tuning
-- Eliminates the "is this volatility high or low?" guesswork
-- Simple enough to use immediately, deep enough to layer into complex strategies
+- Normalizes volatility so readings are comparable across instruments and timeframes
+- Removes some of the "is this volatility high or low?" guesswork
+- Simple enough to use immediately and can be layered into a larger strategy
 
 **Cons:**
-- Useless in isolation — you need a price action or trend filter
-- On very low volume pairs, the percentile can spike erratically
-- Doesn't differentiate between trend volatility and noise volatility (a 95 reading during a tight range is different from a 95 during a breakout)
+- Useless in isolation — it needs a price-action or trend filter to produce decisions
+- On very low-volume instruments, the percentile can move erratically
+- Doesn't distinguish between trend volatility and noise volatility — a high reading during a tight range means something different from a high reading during a breakout
 
 **Who it's actually for**
 
-Discretionary traders who already have a strategy and need a volatility filter to avoid bad entries. Not for beginners who expect a "buy here" signal — you'll be disappointed. It's a tool, not a system.
+Discretionary traders who already have a strategy and want a volatility filter to avoid poor entries. Not for traders looking for a "buy here" signal — it doesn't provide one. It's a tool, not a system.
 
 **Better alternatives if they exist**
 
 - **Bollinger Bands %B**: Similar concept but tied to price rather than ATR. Better if you want volatility relative to price extremes.
-- **Keltner Channels width**: Measures volatility expansion but uses raw values, not percentiles.
-- **VIX (for SPX traders)**: If you trade S&P 500, the VIX is a more direct volatility gauge.
+- **Keltner Channels width**: Measures volatility expansion but uses raw values rather than percentiles.
+- **VIX (for SPX traders)**: If you trade the S&P 500, the VIX is a more direct volatility gauge.
 
-I still prefer Atr_Percentile for its clean normalization across assets. %B is fine for mean reversion, but for breakout strategies, this is sharper.
+The tradeoff is normalization versus directness. Percentile-based measures are easier to compare across assets; price- or index-based measures are more directly tied to the thing being traded.
 
 **FAQ addressing real trader questions**
 
-**Q: Does it repaint on the current bar?**  
+**Q: Does it repaint on the current bar?**
 A: Like any indicator using the current bar's data, the value updates until the bar closes. Once closed, it's fixed.
 
-**Q: Can I use it for options trading?**  
-A: Yes, but indirectly. It measures historical volatility of the underlying, not implied volatility. Use it to gauge whether the underlying is entering a high-vol regime that might inflate premiums.
+**Q: Can I use it for options trading?**
+A: Yes, but indirectly. It measures historical volatility of the underlying, not implied volatility. Use it to gauge whether the underlying is entering a high-volatility regime that might inflate premiums.
 
-**Q: What's the best timeframe?**  
-A: 1H or 4H for swing trading. Lower than 15 minutes introduces noise unless paired with a volume filter.
+**Q: What's the best timeframe?**
+A: There's no universally correct answer. Higher timeframes produce more stable percentile readings; very short timeframes tend to introduce noise unless paired with an additional filter.
 
-**Final verdict with star rating**
+**Final verdict**
 
-Atr_Percentile solves a real problem: normalizing volatility so you can compare apples to apples across different instruments. It's not flashy, but it's robust. The lookback customization and zero-repaint behavior make it reliable enough to build a strategy around.
+Atr_Percentile addresses a real problem: normalizing volatility so you can compare instruments on a like-for-like basis. It isn't flashy, but the concept is sound, and the lookback control gives you a way to adapt it to your timeframe.
 
-Does it replace a full volatility system? No. But if your current approach needs a simple volatility governor — and you're tired of guessing whether ATR 15 is "high" or "low" — this is a solid addition.
+Does it replace a full volatility system? No. But if your approach needs a simple volatility governor — and you're tired of guessing whether a given ATR value is "high" or "low" for that instrument — it's a reasonable addition to the toolkit.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star off because it requires a companion indicator for direction. But for what it claims to do — measure volatility percentile — it's near perfect.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **ATR** implementation was backtested on 30 markets over 5 years of daily data (44,127 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: USDJPY 58.7%, SPY 55.3%, XAUUSD 54.7%, AMD 53.6%
+- Weakest markets: ADAUSD 45.5%, XRPUSD 43.5%, SHIBUSD 24.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

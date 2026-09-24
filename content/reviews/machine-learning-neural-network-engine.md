@@ -17,87 +17,72 @@ categories:
 rating: 4
 description: "Honest Machine_Learning_Neural_Network_Engine review: settings, strategy logic, pros/cons, and who should actually use this trend indicator."
 tv_script_url: "https://www.tradingview.com/script/7sKZIrbB-Machine-Learning-Neural-Network-Engine/"
+sources: ["https://www.tradingview.com/script/7sKZIrbB-Machine-Learning-Neural-Network-Engine/"]
 ---
-Let me be upfront: "Machine learning" in TradingView indicators usually means a glorified moving average crossover with extra steps. This one is different — and that's why it earns four stars instead of the usual skepticism.
-
 **What this actually does**
 
-The Machine_Learning_Neural_Network_Engine (MLNNE for short) runs a lightweight neural network on price action to classify trend states. It's not predicting tomorrow's close — it's identifying whether the current market regime is trending up, down, or ranging, then outputting that as a colored histogram and signal line. As shown in the chart above, the MACD-style visualization makes it instantly readable: green bars for bullish momentum, red for bearish, and a flatter profile when the network detects chop.
+The script is a study built around a compact 6-5-1 neural network that classifies Daily market behavior into three states: LONG, WATCH and CASH. It does not output a MACD-style histogram or a signal line, and it does not classify regimes as up, down or ranging. The output is a colored neural axis with a surrounding halo that displays the active state without covering the chart with labels, plus transition pulses that mark confirmed changes.
 
-The key difference from standard trend indicators? The neural network weights adapt as new bars form. It learns from recent price behavior rather than applying fixed parameters. That sounds fancy, but practically it means the indicator re-calibrates its sensitivity to the current volatility regime automatically.
+The network analyzes six normalized features: short- and medium-term trend structure, RSI momentum, deviation from linear regression, directional price efficiency, relative volatility, and candle pressure adjusted by relative volume. It learns sequentially from completed market outcomes — on each confirmed Daily bar it can only train on information from an earlier bar whose result has become known. Training uses nonlinear neurons, RMS-scaled gradient updates, error clipping and regularization.
+
+The distinguishing claim is that this is an adaptive online model rather than a set of fixed coefficients labelled as machine learning. That is the vendor's framing, and it is the axis on which the whole script should be judged.
 
 **Key features that stand out**
 
-- **Adaptive lookback** — Instead of a fixed period like 14 or 20, the network's effective lookback shifts based on recent volatility. In choppy August conditions, it shortens; in clean trends, it extends.
-- **Confidence threshold** — You can set a minimum probability level before signals fire. This is the most underrated setting here. It filters out weak signals that plague most trend indicators.
-- **Regime overlay** — The histogram background changes color when the network detects ranging conditions. That alone saves you from false breakout entries.
+- **Self-auditing machine learning** — The network is continuously compared against an independent structural trend model. When its matured predictions provide useful additional information, its influence increases; when its recent error becomes worse than the structural baseline, its influence is automatically reduced. This is the most interesting design decision here, because it prevents the ML component from being trusted unconditionally.
+- **Independent crisis detection** — A separate stress engine monitors rapid 10-day declines, drawdown from the 63-day high, abnormal ATR expansion and long-term price structure. This layer can trigger a defensive state independently of the neural model.
+- **Confirmed state machine** — The three states are gated by confirmation rules intended to limit excessive switching. The four functions — online learning, live error-based validation, downside-stress detection and state stabilization — each have a separate role rather than being combined as a simple indicator vote.
 
-**Best settings I've tested**
+**Settings and How to Tune Them**
 
-After running this on BTCUSD, EURUSD, and SPX daily charts, here's what worked:
+- **ML response** controls adaptation speed and signal stability. Fast reacts sooner, Balanced is the recommended starting point, and Smooth prioritizes stability. No numeric values are given for these options.
+- **ML selectivity** controls how much evidence is required before LONG or CASH is confirmed. Again, no numeric thresholds are published.
 
-- **Confidence threshold: 0.65** — Default is usually 0.5, which generates too many signals. At 0.65, you get fewer but much cleaner entries.
-- **Lookback range: 50–150** — The network adapts within this window. I found the 50–150 range works best on daily and 4-hour timeframes. On lower timeframes (15m/1h), tighten it to 30–100 to avoid lag.
-- **Signal smoothing: 2** — One pass of smoothing on the output. Anything higher delays entries noticeably.
+The indicator is designed exclusively for standard Daily charts. That is a hard constraint from the developer, not a preference.
 
-**How to use it**
+**How to read it**
 
-The cleanest strategy: wait for the histogram to flip color AND the confidence reading to exceed your threshold. Enter long when you get a green bar with confidence above 0.65. Exit when the histogram crosses back below zero — not when it turns red, which is often late.
+- **LONG (green)** — The model, trend structure and confirmation rules support a constructive market environment.
+- **WATCH (amber)** — The market remains structurally LONG, but risk or exit evidence is increasing.
+- **CASH (red)** — The environment is defensive because of persistent weakness or confirmed crisis stress.
 
-For ranging markets, the regime overlay is your friend. When the background shifts, stand aside. The neural network's accuracy drops substantially in chop, and respecting that filter saves you from most whipsaw losses.
+The indicator never takes short positions. The dashboard shows bull probability, neural risk and the current machine-learning audit.
 
-I also tested using it as a confluence filter layered under price action. That worked better than using it standalone. Wait for a clear support/resistance level, then check if MLNNE confirms the trend direction before entering.
+**Built-in comparison**
+
+The dashboard includes a lagged long/cash comparison against buy-and-hold, applying the selected transition cost and openly displaying periods when the model underperforms. The developer is explicit that this is a diagnostic tool, not a complete strategy backtest — it does not include every possible spread, slippage, tax, financing or execution constraint.
 
 **Pros & Cons**
 
 Pros:
-- Genuinely adaptive — doesn't suffer from the "fixed period" problem that plagues most trend indicators
-- The confidence threshold is a real innovation for filtering noise
-- Clean, uncluttered visualization makes it easy to read at a glance
+- Two independent safeguards — live error-based validation and a separate crisis engine — rather than a single signal trusted at face value
+- Sequential training on completed outcomes, so current predictions never use future data
+- Clean visualization that conveys state without cluttering the chart
 
 Cons:
-- The neural network is a black box. You can't see what features it's weighting, which makes it hard to trust during unusual market conditions
-- Repainting on historical bars — the indicator adjusts past signals as new data comes in. Not ideal for backtesting (though still fine for live trading)
-- It's slower to react in strong trends than a well-tuned moving average system. The adaptive nature costs you some responsiveness
+- The bull probability is an internal normalized score, not a statistically calibrated probability of profit
+- The model can react late and generate false transitions in sideways markets, and it cannot eliminate gap risk
+- The developing Daily bar may change before closing, so the current state is not final until the bar closes
+- Daily chart only
 
 **Who it's for**
 
-If you're a swing trader or position trader working on daily charts, this is worth installing. The adaptive nature shines on assets with shifting volatility profiles — crypto, indices during earnings season, or any market that alternates between quiet and explosive.
+The design targets Daily-chart swing and position traders who want a regime read rather than an entry trigger. Because the script is built exclusively for standard Daily charts, it is not intended for intraday or scalping use, and no lower-timeframe adaptation is described.
 
-If you're a scalper on 1-minute charts, skip it. The repainting issue becomes a real problem at that speed, and the neural network's processing time adds noticeable lag.
+**Limitations to take seriously**
 
-Day traders on 15m/1h charts can use it, but I'd recommend pairing it with a momentum indicator like RSI to confirm entries.
-
-**Alternatives worth considering**
-
-- **Supertrend** — Simpler and more responsive for pure trend following, but no noise filtering
-- **MACD with adaptive periods** — Similar visualization, but you have to manually adjust settings as volatility changes
-- **LuxAlgo's Smart Money Concepts** — Better if you trade supply/demand zones rather than momentum
-
-**FAQ**
-
-*Does this indicator repaint?*
-Yes, on historical bars. The neural network re-evaluates past signals as new data arrives. For live trading, the current signal is accurate — but don't backtest with it expecting reliable historical results.
-
-*What timeframes work best?*
-Daily and 4-hour are optimal. The adaptive lookback needs enough data to train the network meaningfully.
-
-*Can I use this for crypto?*
-Absolutely. In fact, it performed better on BTC and ETH than on forex in my testing, likely because crypto's volatility regime shifts are more pronounced.
-
-**Final verdict**
-
-The Machine_Learning_Neural_Network_Engine isn't magic — it's a well-executed adaptive trend filter with a genuinely useful confidence mechanism. The repainting issue and black-box nature keep it from five stars, but for daily swing traders who want to cut through market noise without constantly tweaking parameters, this is a solid addition to the toolkit. ⭐⭐⭐⭐
+The developer states plainly that the model can react late, that it generates false transitions in sideways markets, and that it cannot eliminate gap risk. Confirmed historical states use no future data, no lookahead and no higher-timeframe security calls — but that applies to confirmed states, not to the developing bar. Online learning does not imply future outperformance.
 
 ## Frequently Asked Questions
 
-### Is Machine_Learning_Neural_Network_Engine worth it?
+### Is this indicator worth using?
 
-Based on testing across multiple timeframes, Machine_Learning_Neural_Network_Engine delivers solid value for traders who need trend analysis.
+It provides market context, not financial advice or guaranteed performance. Whether it fits depends on whether a Daily-only, long/flat regime filter with a self-auditing ML layer matches how you trade. The developer's own framing is that it is a context tool.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+Confirmed historical states use no future data, no lookahead and no higher-timeframe security calls, and the network trains only on earlier bars whose outcomes are known. However, the developing Daily bar may change before it closes, so the active state can shift until the bar is confirmed.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

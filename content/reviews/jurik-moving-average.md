@@ -16,102 +16,101 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Smooth, lag-reduced moving average by Mark Jurik. Great for trend filtering and reducing noise. Review covers settings, pros, cons, and better alternatives."
+grounding: "none (no source found)"
+---
+**Smooth, lag-reduced moving average by Mark Jurik. Intended for trend filtering and noise reduction. Review covers settings, pros, cons, and alternatives.**
+
 ---
 
-**Smooth, lag-reduced moving average by Mark Jurik. Great for trend filtering and reducing noise. Review covers settings, pros, cons, and better alternatives.**
+The Jurik Moving Average (JMA) is a custom moving average attributed to Mark Jurik, positioned as a solution to the classic trade-off between smoothness and lag. Traditional moving averages such as the SMA and EMA tend to be either noisy or slow; JMA is designed to be both smooth and responsive by way of an adaptive algorithm. It is described as a filtered trend line rather than a leading indicator.
 
----
+On the chart, it renders as a single line, with the option to change color when the trend flips. There are no additional features beyond that.
 
-Let’s cut through the hype. The Jurik Moving Average (JMA) is one of those indicators that gets mentioned in whispers by pro traders who don’t want to give away their edge. I’ve tested it across dozens of charts, multiple timeframes, and both crypto and forex. Here’s the unfiltered truth.
+## What This Indicator Is Designed to Do
 
-## What This Indicator Actually Does
+JMA is built around a single stated goal: reducing lag while maintaining smoothness. The claimed effect is a curve that responds to price changes faster than a standard moving average while looking closer to a smoothed average than a raw price series. It is not presented as a leading indicator, and it is not intended to forecast price.
 
-JMA is a custom moving average designed to solve the classic trade-off: **smoothness vs. lag**. Traditional moving averages (SMA, EMA) are either too wiggly or too slow. JMA uses a proprietary adaptive algorithm—based on Jurik’s research—to produce a line that’s both smooth and responsive to price changes. It doesn’t repaint, and it’s not a leading indicator. It’s a *filtered* trend line.
+## Key Features
 
-On the chart, you get a single colored line. It can be set to change color when the trend flips. That’s it. No extra bells and whistles, which is refreshing.
+- **Low lag with high smoothness:** The core selling point. The intent is a line that reacts to price changes without the whipsaw of a shorter standard moving average.
+- **Minimal parameters:** The user adjusts a *length* and a *phase* setting. There is no multi-parameter optimization surface to tune.
+- **Phase control:** A distinguishing feature. Phase biases the response toward the left or right side of price. A neutral phase is the default posture for pure trend smoothing; negative or positive values shift the response.
+- **Non-leading construction:** The indicator is described as a filtered line, not a predictive one.
 
-## Key Features That Set It Apart
+## Settings and How to Tune Them
 
-- **Low lag with high smoothness:** This is the main selling point. Compared to a standard EMA, JMA cuts lag by about 30–50% while producing a curve that looks like a smoothed SMA. On the chart above, notice how JMA hugs price action during the March 2025 rally without the whipsaws of a 20-period EMA.
-- **Single parameter:** You only adjust the *length* and a *phase* setting. No complex optimization needed.
-- **Phase control:** A unique feature. Set it to 0 for pure trend smoothing, or negative/positive values to bias the response toward the left or right side of price. I keep it at 0 for most use cases.
-- **No repaint, no future leak.** Confirmed by stepping bar-by-bar.
+The indicator exposes two parameters: **length** and **phase**.
 
-## Best Settings with Specific Recommendations
+- **Length** controls the smoothing window. Shorter lengths track price more closely; longer lengths produce a smoother line that behaves more like dynamic support or resistance.
+- **Phase** controls the response bias. A neutral phase is the standard setting for trend smoothing. Negative phase values bias the line toward earlier reaction to price; positive values bias it toward later reaction.
 
-I tested lengths from 5 to 200 across BTCUSD 1H, EURUSD 1D, and TSLA 15M. Here’s what works:
+Conceptually, the length should be matched to the trading horizon being filtered: shorter for fast, intraday trend work, longer for swing and position horizons. Phase is best left neutral unless there is a specific reason to shift the response, since biasing the line toward earlier reaction changes how it behaves in choppy conditions.
 
-- **Scalping (1m–5m):** Length 7–12, Phase 0. Catches micro-trends without the noise of an EMA.
-- **Swing trading (1H–4H):** Length 21–34, Phase 0. Sits right in the middle of the trend.
-- **Position trading (daily+):** Length 50–89, Phase 0. Acts as a strong dynamic support/resistance.
+## How It Is Typically Used
 
-Pro tip: **Do not use negative phase values** unless you want the line to react *before* price—it looks cool but introduces false signals in ranging markets.
+- **Trend filter:** Price above the JMA suggests a long bias; price below suggests a short bias.
+- **Entry trigger:** A candle closing through the JMA line in the direction of the trend can be read as a continuation signal.
+- **Exit:** Trailing a stop behind the JMA line is a common approach, on the premise that price rarely closes through the line during a strong trend.
+- **Confluence:** Pairing the JMA with a momentum or volume indicator is a common way to filter signals.
 
-## How to Use It for Entries and Exits
-
-This is where JMA shines if you’re disciplined.
-
-- **Trend filter:** Price above JMA = long bias. Below = short bias. Simple.
-- **Entry trigger:** Wait for a candle to close *through* the JMA line in the trend direction. For example, if price pulls back to JMA in an uptrend and then closes above it, that’s a long entry. The chart above shows this on the April 8–10 pullback.
-- **Exit:** Trail a stop under the JMA line. In strong trends, price rarely closes through it. When it does, you’re out.
-- **Confluence:** Use JMA with a volume indicator or RSI. On the 1H chart, a JMA bounce + RSI oversold gave 3 solid longs in a row last week.
-
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Genuinely less lag than any standard MA I’ve tested (SMA, EMA, WMA, HMA).
-- Clean chart. No clutter.
-- Phase control is a neat tool for fine-tuning.
-- Works well as a trailing stop in trends.
+- Designed to reduce lag relative to standard moving averages.
+- Clean chart output — a single line with no clutter.
+- Phase control offers a way to fine-tune responsiveness.
+- Functions as a trailing reference in trending conditions.
 
 **Cons:**
-- **Useless in ranging markets.** JMA will whip you to death. Every close through the line is a fakeout. Use a filter like ADX > 25.
-- **Not a standalone entry system.** You need price action confirmation.
-- The math is proprietary—you can’t reverse-engineer it, which bugs some traders.
-- **Slightly slower on heavy tick data** (5,000+ bars). Fine on most setups.
+- Prone to false signals in ranging markets, where price repeatedly closes through the line.
+- Not a standalone entry system; it requires price-action confirmation.
+- The underlying math is proprietary, which some traders dislike.
+- Can be slower on very large bar counts.
 
-## Who It's Actually For
+## Who It Suits
 
-- **Trend-following traders** who hate lag. If you trade breakouts or momentum, JMA is your friend.
-- **Swing and position traders** using daily or 4H charts. It keeps you in the trade longer.
-- **Traders who want a single clean line** without indicator spaghetti.
+Trend-following traders who prioritize responsiveness, and swing or position traders working on higher timeframes, are the natural audience. Traders who want a single clean line rather than a stack of indicators will find it useful. It is not aimed at mean-reversion traders or anyone looking for a leading indicator.
 
-Not for: scalpers using 1-second charts, mean-reversion traders, or anyone who needs a leading indicator.
+## Alternatives
 
-## Better Alternatives If They Exist
+- **Hull Moving Average (HMA):** Comparable smoothness, generally more lag, and freely available.
+- **Zero Lag EMA (ZLEMA):** Less smooth, but simpler to understand and implement.
+- **Adaptive Moving Average (AMA):** Similar concept, typically choppier output.
 
-- **Hull Moving Average (HMA):** Almost as smooth, slightly more lag, but free and widely available. JMA wins on response time.
-- **Zero Lag EMA (ZLEMA):** Less smooth than JMA, but easier to understand. If you hate black-box math, use ZLEMA.
-- **Adaptive Moving Average (AMA):** Similar concept but often choppier. JMA is smoother.
+## FAQ
 
-Honestly? JMA is the best of the bunch for trend filtering. But if you’re on a tight budget, HMA is 85% as good for free.
+**Does JMA repaint?**
+The indicator is constructed as a filtered line rather than a predictive one, so it does not rely on future data.
 
-## FAQ Addressing Real Trader Questions
+**Can it be used on crypto?**
+There is nothing specific to crypto in the construction; it is a general-purpose moving average. As with any trend tool, ranging conditions are the weak point.
 
-**Q: Does JMA repaint?**  
-A: No. I stepped through bar-by-bar on 3 different assets. It’s static.
+**What length should be used?**
+Length should be matched to the trading horizon. Shorter lengths for fast timeframes, longer lengths for swing and position horizons.
 
-**Q: Can I use it for crypto?**  
-A: Yes. Works great on BTC and ETH due to strong trending phases. Just add an ADX filter.
+**Does it work in forex?**
+It is a general-purpose moving average and is not specific to any market.
 
-**Q: What’s the best length for day trading?**  
-A: 14–21 on 15M or 1H. Shorter lengths (7) work for 5M scalping.
-
-**Q: Does it work in forex?**  
-A: Yes, but less effective in EURUSD due to frequent ranges. Use on GBPJPY or USDJPY for better trends.
-
-**Q: Is it worth paying for?**  
-A: If you’re a serious trend trader, yes. For casual use, stick with HMA or EMA.
+**Is it worth paying for?**
+That depends on how much weight a trader places on the lag-reduction claims. Free alternatives such as the HMA cover similar ground.
 
 ## Final Verdict
 
-Jurik Moving Average is a **high-quality, specialized tool** for trend traders who value responsiveness without sacrificing smoothness. It’s not a magic bullet—no indicator is—but it does exactly what it promises. The phase setting is a nice bonus, though most users will leave it at 0.
+The Jurik Moving Average is a specialized tool aimed at trend traders who want responsiveness without sacrificing smoothness. It does not claim to be a complete system, and it should not be treated as one. The phase setting is a useful addition, though a neutral setting is the sensible default.
 
-It loses half a star because of poor performance in ranges and the lack of a built-in filter. But if you pair it with a trend strength indicator (like ADX or a VWAP slope), it becomes a reliable core of any trend-following system.
+Its weaknesses are the same as any trend filter: it struggles in ranges, and it has no built-in filter to tell you when conditions are unfavorable. Paired with a trend-strength measure, it can serve as a component of a trend-following approach.
 
-**Rating:** ⭐⭐⭐⭐ (4/5) — Recommended for trend traders. Not for everyone, but excellent for its niche.
+**Rating:** ⭐⭐⭐⭐ (4/5) — Recommended for trend traders. Not for everyone, but well suited to its niche.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

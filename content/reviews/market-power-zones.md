@@ -16,86 +16,84 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Market_Power_Zones identifies key supply/demand areas using volume and price action. A solid 4/5 for swing traders who want clean entry zones."
+grounding: "none (no source found)"
 ---
-
 **What This Indicator Actually Does**
 
-Market_Power_Zones isn't another lagging oscillator or repainting mess. It's a zone-finding tool that highlights areas where price has historically shown strong buying or selling interest. The core logic combines volume spikes, price rejection wicks, and consolidation breaks to draw horizontal lines that act as potential support or resistance.
+Market_Power_Zones is a zone-finding tool that highlights areas where price has shown strong buying or selling interest. Its core logic combines volume spikes, price rejection wicks, and consolidation breaks to draw horizontal lines that act as potential support or resistance.
 
-**Key Features That Set It Apart**
+**Key Features**
 
-- **Dynamic zone strength**: Zones have a "power" label (Weak, Moderate, Strong) based on how many times price respected the level. This is more useful than static support/resistance lines that never update.
-- **Auto-extension**: Zones extend to the right automatically, so you don't need to manually redraw them. Useful for multi-timeframe analysis.
-- **Volume confirmation toggle**: You can filter zones to only show levels that coincide with above-average volume. This cuts noise significantly.
-- **Customizable lookback**: Default is 100 bars, but you can shorten to 20 for scalping or stretch to 500 for swing trading.
+- **Zone strength labels**: Zones are tagged as Weak, Moderate, or Strong, based on how many times price respected the level. This is more dynamic than static support/resistance lines that never update.
+- **Auto-extension**: Zones extend to the right automatically, so you don't have to redraw them manually. Useful for multi-timeframe analysis.
+- **Volume confirmation toggle**: You can filter zones to only show levels that coincide with above-average volume, which cuts noise.
+- **Customizable lookback**: The lookback period controls how far back the indicator scans for zone-forming behavior, and can be adjusted shorter or longer depending on your trading horizon.
 
-**Best Settings (After Testing 50+ Combinations)**
+**Settings and How to Tune Them**
 
-For 1-hour charts on BTC/USD:
-- Lookback period: 100
-- Minimum zone touches: 2
-- Volume filter: ON (1.5x average)
-- Zone display: Show only "Strong" and "Moderate"
+The indicator exposes a lookback period, a minimum zone-touch count, a volume filter toggle, and a zone-display filter that lets you show or hide zones by strength label.
 
-Anything less than 2 touches produces too many false zones. With volume filter off, you'll get clutter—especially in low-liquidity altcoins.
+Tuning these is a matter of tradeoff rather than optimization. A shorter lookback makes the indicator more responsive but surfaces more transient levels; a longer lookback emphasizes levels that have held over a broader sample. Requiring more touches narrows the field to levels that have been respected repeatedly. Turning the volume filter on restricts zones to those backed by above-average activity. The display filter lets you hide the weakest labels if they aren't useful to you.
+
+There is no single correct configuration — the right values depend on the instrument, the timeframe, and how selective you want the zones to be.
 
 **How to Use It for Entries and Exits**
 
-Enter long when price touches a "Strong" green zone (buying power) and you see a bullish rejection candle (hammer, engulfing). Set stop loss just below the zone. Take partial profit at the next resistance zone above.
+The intended use is as a confluence tool, not a standalone signal.
 
-Exit short when price hits a "Strong" red zone (selling power) with a bearish rejection. Same logic.
+For longs, the setup is price touching a green (buying power) zone alongside a bullish rejection candle — a hammer or engulfing pattern, for example. A stop below the zone and partial profit-taking at the next resistance zone above is the natural structure.
 
-The indicator works best as a confluent tool—don't enter on zone touch alone. Wait for price action confirmation. As the chart above shows, the cleanest trades come when price touches a zone, bounces, and closes back toward the zone's midpoint.
+For shorts, the mirror logic applies: price hitting a red (selling power) zone with a bearish rejection candle.
 
-**Honest Pros and Cons**
+The indicator is not meant to be traded on zone touch alone. Wait for price action confirmation before acting.
+
+**Pros and Cons**
 
 Pros:
-- Clean, non-repainting zones (confirmed on multiple refreshes)
-- Volume filter eliminates 70% of noise zones
-- Works across timeframes (15m to daily)
+- Zones are intended to be non-repainting once a bar closes.
+- The volume filter removes a large share of low-conviction zones.
+- Works across timeframes.
 
 Cons:
-- Repaints slightly on the first touch if bar closes outside the zone (rare, but happens)
-- No built-in alert for zone touch—you need to add your own
-- "Weak" zones are practically useless; I hide them entirely
-- Can get cluttered on lower timeframes if you don't adjust lookback
+- Zones can shift on the first touch if a bar closes outside the zone.
+- No built-in alert for zone touch — you need to set up your own.
+- Weak zones carry little information and many users hide them entirely.
+- Can get cluttered on lower timeframes if the lookback isn't adjusted.
 
-**Who It's Actually For**
+**Who It's For**
 
-Swing traders and position traders who trade 1-hour or higher. Scalpers will find it too slow—zones don't update intra-bar. Day traders on 15m can use it, but you'll need to reduce lookback to 30-50 bars.
+Swing and position traders on higher timeframes are the natural audience. Scalpers will likely find it too slow, since zones don't update intra-bar. Day traders on lower timeframes can use it, but will need to shorten the lookback.
 
-**Better Alternatives**
+**Comparable Indicators**
 
-- **LuxAlgo Supply Demand**: More features (zone breakouts, volume profiling), but heavier on the chart. 4.5 stars.
-- **Supply and Demand Zones by KivancOzbilgic**: Free, similar logic but no volume filter. 3.5 stars.
+- **LuxAlgo Supply Demand**: More features (zone breakouts, volume profiling), but heavier on the chart.
+- **Supply and Demand Zones by KivancOzbilgic**: Free, similar logic, but no volume filter.
 
-If you already have a volume profile indicator, Market_Power_Zones becomes redundant. If you don't, this is a solid standalone.
+If you already run a volume profile indicator, Market_Power_Zones overlaps with it significantly. If you don't, it stands on its own.
 
 ---
 
 **FAQ**
 
 *Q: Does it repaint?*
-A: No, not in the traditional sense. Zones are fixed once the bar closes. I tested by refreshing—no zone shifting after 2 bars.
+A: Not in the traditional sense. Zones are fixed once the bar closes, though they can shift on the first touch if a bar closes outside the zone.
 
 *Q: Can I use it for crypto?*
-A: Yes. Works well on BTC, ETH, and large-cap alts. Low-cap coins with thin volume produce too many weak zones.
+A: Yes. It works on BTC, ETH, and large-cap alts. Low-cap coins with thin volume tend to produce too many weak zones.
 
 *Q: Best timeframe?*
-A: 1-hour for swing trading. 4-hour for position trading. Avoid below 15m.
+A: Higher timeframes suit swing and position trading. Lower timeframes require a shorter lookback to stay usable.
 
 *Q: Does it work in a downtrend?*
-A: Yes, but only the red (selling power) zones are reliable. Green zones will break more often.
+A: Yes, but red (selling power) zones tend to hold better than green zones in that environment.
 
 ---
 
 **Final Verdict**
 
-Market_Power_Zones does one thing well: highlight high-probability reversal zones using real volume and price structure. It's not a holy grail—you still need to read candles and manage risk. But for a zone-based indicator that doesn't repaint and keeps the chart clean, it's a solid addition to any swing trader's toolkit.
+Market_Power_Zones does one thing: highlight potential reversal zones using volume and price structure. It's not a holy grail — you still need to read candles and manage risk. But as a zone-based indicator built to stay clean and avoid the usual repainting problems, it's a reasonable addition to a swing trader's toolkit.
 
-**4/5 ⭐⭐⭐⭐** – Recommended for swing traders who want reliable, volume-confirmed zones without the clutter.
-
----
+**4/5** – Recommended for swing traders who want volume-confirmed zones without the clutter.
 
 ## Go Deeper with The Indicator Lab
 

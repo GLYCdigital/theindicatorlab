@@ -16,29 +16,29 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Fibonacci_Arc: how it predicts support/resistance in trending markets, best settings, and entry/exit strategies."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Fibonacci_Arc draws curved arcs based on Fibonacci retracement levels, projecting potential support and resistance zones as price moves. Unlike standard horizontal lines, these arcs curve with time, making them useful for anticipating where price might reverse during a trend. On the chart above, you'll see three semi-circular arcs originating from a swing low to a swing high.
+Fibonacci_Arc draws curved arcs based on Fibonacci retracement levels, projecting potential support and resistance zones as price moves. Unlike standard horizontal lines, these arcs curve with time, which makes them useful for anticipating where price might reverse during a trend. On a typical chart, you'll see three semi-circular arcs originating from a swing low to a swing high.
 
 ## Key Features That Set It Apart
 
-- **Time-sensitive structure**: The arcs expand as time passes, so they adjust dynamically—not just static horizontal levels.
-- **Three default levels**: 38.2%, 50%, and 61.8% arcs. You can customize these in settings.
+- **Time-sensitive structure**: The arcs expand as time passes, so they adjust dynamically rather than sitting as static horizontal levels.
+- **Three default levels**: 38.2%, 50%, and 61.8% arcs. These can be customized in settings.
 - **Trend flexibility**: Works on both uptrends (bullish arcs) and downtrends (bearish arcs) depending on how you place them.
 - **No repainting**: Once drawn, the arcs stay fixed relative to your chosen swing points.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
 Open the indicator settings (gear icon) and adjust:
 
-- **Levels**: Stick with 0.382, 0.5, and 0.618. Adding 0.236 or 0.786 creates too much clutter.
-- **Line style**: Use dashed lines for less visual noise on busy charts.
-- **Extend right**: Enable this—you want the arcs to project forward, not just sit between points.
-- **Color**: Choose contrasting colors (e.g., blue for bullish, red for bearish) to avoid confusion.
+- **Levels**: The default set of 0.382, 0.5, and 0.618 is the standard Fibonacci grouping. Adding more levels increases visual clutter.
+- **Line style**: Dashed lines tend to reduce visual noise on busy charts.
+- **Extend right**: Projects the arcs forward rather than confining them between the two anchor points.
+- **Color**: Contrasting colors (for example, one color for bullish setups and another for bearish ones) help avoid confusion when multiple arcs are on screen.
 
-For timeframes, 1H to daily works best. Lower timeframes (5m–15m) produce arcs too tight to be useful.
+Timeframe choice depends on how much time you have to monitor positions. Higher timeframes produce wider arcs that take longer to play out; very low timeframes compress the arcs into a narrow range.
 
 ## How to Use It for Entries and Exits
 
@@ -62,7 +62,7 @@ For timeframes, 1H to daily works best. Lower timeframes (5m–15m) produce arcs
 
 ## Who It's Actually For
 
-Trend traders who already use standard Fibonacci retracement and want additional confluence. Swing traders on 1H–daily charts will get the most value. Scalpers and news traders should skip it—the arcs are too slow for fast moves.
+Trend traders who already use standard Fibonacci retracement and want additional confluence. Swing traders on higher timeframes will get the most value. Scalpers and news traders should skip it—the arcs are too slow for fast moves.
 
 ## Better Alternatives
 
@@ -72,13 +72,13 @@ Trend traders who already use standard Fibonacci retracement and want additional
 
 ## FAQ
 
-**Does Fibonacci_Arc repaint?**  
+**Does Fibonacci_Arc repaint?**
 No. Once you set the swing points, arcs are fixed.
 
-**Can I use it on crypto?**  
+**Can I use it on crypto?**
 Yes, works on any asset—forex, stocks, crypto, futures. Effectiveness depends on clear trends.
 
-**Should I rely on arcs alone?**  
+**Should I rely on arcs alone?**
 No. Combine with volume, RSI divergence, or candlestick confirmation. Arcs give zones, not exact entries.
 
 ## Final Verdict
@@ -86,8 +86,6 @@ No. Combine with volume, RSI divergence, or candlestick confirmation. Arcs give 
 Fibonacci_Arc is a solid tool for traders who understand that support and resistance aren't just lines—they're curves that evolve over time. It won't replace your main strategy, but it adds a valuable layer of confluence. Not for beginners, but worth the effort for intermediate trend traders.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – One star off for subjectivity and limited use in sideways markets.
-
----
 
 ## Go Deeper with The Indicator Lab
 

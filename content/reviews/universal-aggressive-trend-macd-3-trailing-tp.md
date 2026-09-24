@@ -17,108 +17,101 @@ categories:
 rating: 4
 description: "Universal_Aggressive_Trend_Macd_3_Trailing_Tp review: a MACD-driven trend system with three trailing take-profits. Tested settings, entry logic, and honest pros and cons."
 tv_script_url: "https://www.tradingview.com/script/UVosPbFA-Universal-Aggressive-Trend-MACD-v3-3-Trailing-TP/"
+sources: ["https://www.tradingview.com/script/UVosPbFA-Universal-Aggressive-Trend-MACD-v3-3-Trailing-TP/"]
 ---
-Most "aggressive" indicators on TradingView are aggressive in the same way a puppy is aggressive — loud, chaotic, and ultimately harmless. **Universal_Aggressive_Trend_Macd_3_Trailing_Tp** is a different animal. It's a MACD-based trend system that stacks three separate trailing take-profit levels on top of a momentum entry trigger, and the name is doing exactly what it says on the tin. You get entries, you get a stop, and you get three exits that ratchet behind price as the move develops.
+Most "aggressive" indicators on TradingView are aggressive in the same way a puppy is aggressive — loud, chaotic, and ultimately harmless. This one is a strategy rather than a study, and per its own documentation it is an automated trend-following system built around a momentum entry trigger and a trailing profit-locking exit. The official description frames it as a sniper: it waits for momentum to shift in the direction of the overall trend, enters, then squeezes as much as possible out of the move.
 
-I ran it across BTCUSD, EURUSD, and a few large-cap equities over the past two weeks to figure out whether the aggression is an edge or a liability. Short answer: it's an edge, but only if you respect what it's actually doing.
+Whether that framing holds up depends entirely on what the mechanics actually are, and the description is unusually explicit about them.
 
-## What the indicator actually does
+## What the strategy actually does
 
-This is not a repackaged MACD crossover. The core logic reads MACD histogram momentum to define a trend bias, then fires entries when momentum confirms in the direction of that bias. From there, it draws a hard stop and three trailing take-profit lines that advance as price moves in your favour.
+This is not a bare MACD crossover. According to the documentation, the system combines four distinct pieces:
 
-The "3_Trailing_Tp" part is the entire personality of this tool. Instead of one TP that either hits or doesn't, you get a staggered scale-out structure — the first TP locks in partial profit early, the second manages the middle of the move, and the third rides the trend until momentum genuinely breaks. As the chart above shows, all three trail rather than sitting static, which is the difference between catching a 2R move and catching a 6R move.
+**Trend filter.** A long-term moving average (EMA 99) establishes whether the market is generally moving up or down. The strategy also checks the *slope* of that average, so a flat EMA doesn't qualify as a trend even if price is above or below it.
 
-## The three-tier trailing logic
+**Momentum trigger.** Rather than reacting instantly to a MACD crossover, the strategy "arms" the signal. When the MACD lines cross, the system remembers that shift and permits an entry over the next several candles if the other conditions align. It also looks for continuation breakouts — entering an existing trend when price breaks past recent highs or lows.
 
-This is where the indicator earns its keep. Static take-profits are the single biggest reason trend traders underperform — they cap winners while letting losers run to full stop. Three trailing TPs partially solve that.
+**Safety filters.** An ADX filter is used to confirm the market is actually trending rather than chopping sideways, and a volume filter is used to confirm enough money is moving through the asset. The strategy refuses to trade in low-volume or non-trending conditions.
 
-In practice:
+**Exit stack.** Once a trade is in profit, the strategy tracks the highest peak profit achieved *on candle closes*. If price pulls back from that peak by a set percentage, the trade closes automatically. Separately, an ATR stop-loss acts as a safety net if the market reverses violently before any profit is built up.
 
-- **TP1** trails tight and triggers early. It's your "I'm not giving this back" exit.
-- **TP2** trails wider and captures the middle leg.
-- **TP3** is the runner. It only closes when momentum meaningfully reverses.
+## The trailing take-profit, as described
 
-You can adjust the trailing distance for each level independently. On lower timeframes (5m–15m) I found the defaults too loose — TP3 gave back more than it captured. Tighten all three by roughly 30–40% on intraday charts.
+The profit-locking mechanism is the part the description spends the most time on, and it's the clearest differentiator from a plain MACD system.
 
-## Tested settings
+The key detail is that the peak profit reference is measured on candle closes, not intrabar highs. That matters: a wick that spikes and immediately reverses does not ratchet the trailing level upward. Closes are what count. Once a peak close-based profit is established, a pullback of a set percentage from that peak triggers the exit.
 
-Defaults are built for the 1H–4H range, and that's where they work best. My tested configurations:
+Note that this is a single trailing take-profit described in the official text — not three. The description makes no mention of staggered TP1/TP2/TP3 levels, and any claim that it ships with a three-tier scale-out structure is not supported by the source material.
 
-**Swing trading (4H, BTC/ETH):**
-- Leave the MACD parameters at 12/26/9 — don't touch them, the entry logic is calibrated to standard MACD
-- TP1 trail: default
-- TP2 trail: default
-- TP3 trail: widen by 20% to let the runner breathe
+## Settings and How to Tune Them
 
-**Intraday (15m, FX majors):**
-- TP1 trail: −40%
-- TP2 trail: −35%
-- TP3 trail: −30%
-- Stop distance: widen slightly, because MACD whipsaws on 15m FX and you'll get stopped on noise otherwise
+The official description confirms the following components exist as configurable parts of the system, but does not publish default values or recommended ranges for most of them:
 
-**Aggressive scalping (5m):** Honestly, don't. The MACD lag makes entries late and the trailing TPs can't keep up. This indicator is not built for sub-15m charts despite the name.
+- **EMA length** — described as a long-term moving average, cited specifically as EMA 99.
+- **MACD parameters** — the trigger mechanism; the description refers to "the MACD lines" without specifying periods.
+- **ADX filter** — used to gate trades to trending conditions. No threshold is given.
+- **Volume filter** — used to gate trades to adequate liquidity. No threshold is given.
+- **Trailing take-profit percentage** — the pullback from peak close profit that closes the trade.
+- **ATR stop-loss** — the emergency stop distance.
+
+Because the documentation doesn't publish defaults, the honest position is that tuning is a matter of matching the trend and filter thresholds to the instrument and timeframe you're trading, and matching the trailing percentage to how much give-back you're willing to tolerate. There is no basis in the source material for claiming which settings perform better, or for prescribing specific percentage adjustments.
 
 ## How to trade it
 
-The entry signal is a momentum confirmation, not a reversal call — so you're buying strength or selling weakness, never picking tops or bottoms. That's fine, but it means you need to accept late entries in exchange for higher hit rate.
+The entry is a momentum confirmation, not a reversal call — the system buys strength or sells weakness. The practical implications:
 
-Practical workflow:
-
-1. Wait for the signal candle to close. Don't front-run it.
-2. Enter on the close, stop where the indicator puts it. No exceptions — the stop placement is calibrated to the MACD structure, and moving it manually breaks the risk model.
-3. Take TP1 without hesitation. This is what funds the trade.
-4. Let TP2 and TP3 trail. If momentum re-accelerates, you're still in.
-5. Exit the remainder manually if MACD histogram flips against you before TP3 triggers.
-
-The scale-out structure means your average exit is worse than a perfect TP3 hit but dramatically better than a single static target. Over 40+ trades in my testing, the three-tier system outperformed a single trailing stop by a meaningful margin.
+1. Because the MACD signal is "armed" rather than acted on instantly, entries are deliberately late relative to the crossover. That's the design, not a defect.
+2. The ATR stop is the risk definition. It is described as a cap on maximum loss, not a discretionary level.
+3. The trailing exit only engages once the trade is in profit. Before that, the ATR stop is the only protection.
+4. The dashboard is intended to remove guesswork about state: it displays current profit, peak profit, win rate, and whether the market filters are currently green (good to trade) or red (stay out).
 
 ## Pros and cons
 
 **Pros:**
-- Three independent trailing TPs genuinely improve average exit efficiency
-- MACD-based logic is transparent — you can reason about why it entered
-- Stop placement is consistent and doesn't repaint
-- Works well on 1H–4H across crypto, FX, and equities
+- The trend filter uses both EMA position and EMA slope, which is more selective than a simple price-versus-average rule
+- The armed-signal approach avoids the worst of MACD crossover whipsaw by requiring other conditions to align
+- Profit is locked using close-based peaks, which is less prone to intrabar noise than a high-based trail
+- Two independent filters (ADX and volume) screen out the chop that kills most trend systems
+- The on-screen dashboard exposes filter state directly rather than leaving it implicit
 
 **Cons:**
-- The "aggressive" label is misleading on low timeframes — it's slow and lag-heavy below 15m
-- Default trailing distances are too wide for intraday
-- No built-in position sizing or risk calculator
-- Signals are late by design (momentum confirmation), which frustrates reversal traders
-- Documentation is thin — you'll be reverse-engineering the trailing logic from the chart
+- The documentation does not publish default parameter values, so the strategy arrives partly as a black box
+- The "aggressive" branding sits oddly against a system whose whole design is to wait for confirmation
+- Entries are late by construction, which will frustrate anyone looking for reversal timing
+- No position sizing or risk calculator is mentioned
+- The trailing exit is described as a single mechanism, not a scale-out ladder — if you want partial exits, that's on you to build
 
 ## Who it's for
 
-Trend-following swing traders on 1H to 4H charts. If you already understand MACD and want a structured exit framework rather than another entry signal, this is genuinely useful. It's also a solid fit for traders who struggle with the psychology of giving back profits — the three-tier system removes the "when do I exit?" decision almost entirely.
+Trend-following traders who want a rules-based entry and an automated exit rather than another discretionary signal. The combination of a slope-confirmed EMA filter, armed MACD triggers, and dual ADX/volume gating is aimed at traders who would rather miss trades than take bad ones. It's also a reasonable fit for anyone who struggles with the psychology of giving back open profit, since the trailing exit removes that decision.
 
-It is **not** for scalpers, mean-reversion traders, or anyone trading below 15 minutes. The name oversells the aggression; the reality is a disciplined momentum system.
-
-## Alternatives
-
-If you want faster signals, a SuperTrend-based system will get you in earlier. If you want a pure MACD entry without the trailing complexity, standard MACD + a manual ATR trail does 80% of what this does. But the three-tier trailing structure is the differentiator, and few free indicators on TradingView replicate it cleanly.
+It is not for reversal traders, and the description gives no basis for using it as a scalping tool.
 
 ## FAQ
 
 **Does it repaint?**
-No. Signals fire on candle close and stay put. Stops and TPs adjust with price but don't retroactively change past signals.
+The source material does not address repainting, and no claim should be made either way.
 
-**Can I use it on crypto?**
-Yes — it performed best on BTC and ETH 4H in my testing.
+**Does it work on crypto, FX, or equities?**
+The official description does not name specific markets. The mechanics — EMA slope, MACD, ADX, volume, ATR — are general-purpose, but that is an inference about the toolset, not a documented claim about performance on any particular asset.
 
-**Does it work on 1-minute charts?**
-Technically it loads, but the MACD lag makes it useless. Don't.
+**What timeframes is it for?**
+Not stated in the source material.
 
 **Can I automate it?**
-The signals are clean enough to wire into alerts. Scale-outs will need manual handling unless you script the partial exits yourself.
+It is already a strategy, so it executes its own entries and exits by definition. The description does not discuss alerts.
 
 **Is the stop fixed or trailing?**
-The initial stop is fixed; the three TPs trail. That's the design, and it works.
+Per the description, the ATR stop is an emergency stop-loss and the trailing mechanism applies to profit-taking. The source does not describe the stop itself as trailing.
 
 ## Final verdict
 
-This is a well-constructed momentum system with a genuinely useful exit framework bolted on. The three-tier trailing take-profit is not a gimmick — it materially changes how you manage a trend trade, and that alone justifies installing it. The misleading "aggressive" branding and poorly-tuned intraday defaults knock it down a peg.
+What the documentation describes is a coherent, layered trend system: EMA slope for direction, armed MACD for timing, ADX and volume for filtering, close-based trailing for exits, ATR for disaster protection, and a dashboard for state. That's a sensible architecture, and the close-based peak tracking is a genuinely thoughtful detail.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Excellent for swing traders on 1H–4H. Skip it if you trade fast timeframes or want early reversal entries.
+What the documentation does not provide is any of the numbers that would let you evaluate it before installing — no defaults, no thresholds, no stated markets or timeframes. That's a real limitation, not a nitpick. The description is detailed about *what* the strategy does and silent about *how well*, which means the only way to assess it is to read the code or run it yourself.
+
+Worth a look if the architecture matches how you already think about trend trading. Skip it if you need published defaults and documented performance before you'll commit screen space.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

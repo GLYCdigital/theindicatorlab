@@ -16,112 +16,96 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Volume_Profile_Pro delivers institutional-grade volume profile analysis. See settings, strategy, and honest performance data from my backtests."
+grounding: "none (no source found)"
 ---
+# Volume Profile Pro Review
 
-Let's cut through the noise. Volume Profile Pro is not a magic bullet, but it's one of the cleaner volume profile implementations on TradingView. I've tested it across BTC, ETH, and ES futures for the past three months. Here's what I found.
+Volume Profile Pro is not a magic bullet, but it's a clean implementation of volume profile on TradingView. Here's a breakdown of what it does and where it fits.
 
 ## What This Indicator Actually Does
 
-Volume Profile Pro plots a histogram of traded volume at specific price levels over a defined period. Unlike standard volume bars at the bottom, this shows you *where* the big money is transacting. It highlights high-volume nodes (HVN) — areas where price tends to get sticky — and low-volume nodes (LVN) — gaps where price moves fast.
+Volume Profile Pro plots a histogram of traded volume at specific price levels over a defined period. Unlike standard volume bars at the bottom of a chart, this shows you *where* volume is transacting. It highlights high-volume nodes (HVN) — areas where price tends to get sticky — and low-volume nodes (LVN) — gaps where price moves fast.
 
-As the chart above shows, the default settings use 48 bars of historical data with 12 price levels per bar. You can adjust both. The indicator also draws the Point of Control (POC) — the price level with the highest volume — as a horizontal line.
+The indicator draws the Point of Control (POC) — the price level with the highest volume — as a horizontal line. The lookback period and the number of price levels per bar are both adjustable.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Multi-timeframe support** — You can run it on 1H for micro-structure and 4H for the big picture simultaneously. Most volume profile scripts force you to pick one.
-- **Customizable value area** — Default is 70% (standard deviation), but you can dial it to 68% or 50% depending on your style. I prefer 68% for futures.
-- **Clean label system** — HVN, LVN, and POC are color-coded and labeled directly on the chart. No clutter.
-- **Auto-refresh** — Unlike manual volume profile tools that require redrawing, this updates automatically with each new bar. Huge time saver.
+- **Multi-timeframe support** — You can run it on one timeframe for micro-structure and another for the big picture simultaneously, rather than being forced to pick one.
+- **Customizable value area** — The value area percentage is adjustable, letting you widen or narrow the zone depending on your style.
+- **Clean label system** — HVN, LVN, and POC are color-coded and labeled directly on the chart.
+- **Auto-refresh** — Unlike manual volume profile tools that require redrawing, this updates automatically with each new bar.
 
-## Best Settings & Recommendations
+## Settings and How to Tune Them
 
-After 100+ trades with this thing, here's what works:
+- **Timeframe:** Choose based on your holding period. Shorter timeframes produce more noise.
+- **Lookback period:** A longer lookback smooths the data but lags more; a shorter one is more responsive but noisier.
+- **Value area percentage:** Adjustable to widen or narrow the value area.
+- **POC line style:** A visual preference; the POC functions as a key reference level either way.
+- **Volume type:** The appropriate volume source depends on the instrument. Tick volume and actual volume are not interchangeable across all markets.
 
-- **Timeframe:** 1H for swing, 15min for intraday. Avoid 5min — too much noise.
-- **Lookback period:** 48 bars for 1H, 24 bars for 15min. Longer periods smooth out the data but lag more.
-- **Value area percentage:** 68% for most pairs. 70% if you want wider zones.
-- **POC line style:** Solid, not dashed. It's a key reference level.
-- **Volume type:** Ticks for crypto, actual volume for futures. If you use tick volume on ES, the data is deceptive.
-
-**Pro tip:** Overlay two instances — one with 48-bar lookback and one with 24-bar lookback. When both show an LVN at the same price, that's a magnet for price action.
+**A common approach:** Overlay two instances with different lookback periods. When both show an LVN at the same price, that level tends to attract price action.
 
 ## How to Use It for Entries and Exits
 
-**Long setup:** Price pulls back to the lower edge of the value area (VAH for short? No — the *lower* edge is VAL). Wait for a bullish candlestick rejection. Enter at the close of that candle. Stop loss 1-2 ticks below the low of the rejection candle.
+**Long setup:** Price pulls back to the lower edge of the value area (VAL). Wait for a bullish candlestick rejection, then enter at the close of that candle. Stop loss below the low of the rejection candle.
 
-**Short setup:** Price rallies into the upper edge of the value area (VAH). Look for a bearish engulfing or shooting star. Enter at the close. Stop above the high.
+**Short setup:** Price rallies into the upper edge of the value area (VAH). Look for a bearish engulfing or shooting star, then enter at the close. Stop above the high.
 
-**Exit:** Take partial profits at the POC line. Let the rest ride to the opposite edge of the value area. If price breaks above VAH with volume, add to your position.
-
-## Performance Data (Backtest)
-
-I ran this on ETH/USDT, 1H timeframe, January–June 2026. The setup: buy at VAL rejection, sell at VAH. Here's the raw data:
-
-| Metric | Value |
-|--------|-------|
-| Total Trades | 100 |
-| CAGR | +11.3% |
-| Max Drawdown | 44% |
-| Win Rate | 21.0% |
-| Profit Factor | 1.21 |
-
-**Honest take:** That 21% win rate looks terrible, but a 1.21 PF means the wins are big enough to offset the losses. The 44% drawdown is brutal though. This is not a strategy for small accounts. You need a 2:1 or 3:1 risk-reward ratio to survive the losing streaks.
+**Exit:** Take partial profits at the POC line. Let the rest ride to the opposite edge of the value area. If price breaks above VAH with volume, consider adding to the position.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Institutional-grade volume cluster analysis
+- Institutional-style volume cluster analysis
 - Auto-refresh saves manual work
-- Multi-timeframe capability without lag
+- Multi-timeframe capability
 - Clean, uncluttered visual design
 
 **Cons:**
-- High drawdown in trending markets (price can blow through VAH without stopping)
-- Learning curve — new traders misunderstand value area concepts
-- Lag on lower timeframes (15min and below)
-- No built-in alert for POC or value area breaches
+- Price can blow through VAH in trending markets without stopping
+- Learning curve — value area concepts are easy to misunderstand
+- Lag on lower timeframes
+- No built-in alerts for POC or value area breaches
 
 ## Who It's Actually For
 
-This is for **intermediate to advanced traders** who understand volume profile theory. If you don't know the difference between HVN and LVN, you'll lose money. Beginners should stick to simple support/resistance.
+This is for **intermediate to advanced traders** who already understand volume profile theory. If you don't know the difference between HVN and LVN, the output won't mean much. Beginners are better served by simple support and resistance.
 
-Ideal for: Futures traders (ES, NQ, CL), crypto swing traders, and anyone trading range-bound markets. Avoid if you're a pure trend follower — this indicator shines in mean-reversion setups.
+Ideal for futures traders, crypto swing traders, and anyone trading range-bound markets. Pure trend followers will find less use for it — the tool is oriented toward mean-reversion setups.
 
 ## Better Alternatives
 
-- **Volume Profile Visible Range (VPVR)** by LuxAlgo — More features, better for scalping. But heavier on resources.
+- **Volume Profile Visible Range (VPVR)** by LuxAlgo — More features, oriented toward scalping, but heavier on resources.
 - **Market Profile (standard)** — If you want the full auction market theory experience. Less automated, more manual.
-- **POC Zone** by TradeSmart — Lighter, faster, but fewer customization options.
+- **POC Zone** by TradeSmart — Lighter and faster, but with fewer customization options.
 
-Verdict: Volume_Profile_Pro is better than VPVR for swing trading but worse for day trading. Pick your poison.
+Verdict: Volume Profile Pro is better suited to swing trading than day trading.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-No. Once the bar closes, the profile is fixed. Intra-bar it can shift slightly.
+**Q: Does it repaint?**
+Once the bar closes, the profile is fixed. Intra-bar it can shift slightly.
 
-**Q: Can I use it on crypto?**  
-Yes, but set volume type to "tick" for accuracy. Crypto volume data is unreliable.
+**Q: Can I use it on crypto?**
+Yes, but crypto volume data is less reliable than exchange-reported futures volume, so check which volume source you're using.
 
-**Q: What's the best timeframe?**  
-1H for swing, 4H for position trading. 15min if you scalp, but expect more false signals.
+**Q: What's the best timeframe?**
+It depends on your holding period. Shorter timeframes produce more false signals.
 
-**Q: How do I reduce the drawdown?**  
-Combine with a trend filter (e.g., 200 EMA). Only take trades in the direction of the trend.
+**Q: How do I reduce the drawdown?**
+Combine with a trend filter and only take trades in the direction of the trend.
 
-**Q: Is it worth the subscription price?**  
-If you trade volume profile daily, yes. If you're a casual user, free alternatives like "Volume Profile" by LonesomeTheBlue work fine.
+**Q: Is it worth the subscription price?**
+If you trade volume profile regularly, it's a reasonable tool. Casual users can get by with free alternatives like "Volume Profile" by LonesomeTheBlue.
 
 ## Final Verdict
 
-Volume_Profile_Pro is a solid tool for traders who already understand volume profile. It does exactly what it promises: clean volume distribution analysis with minimal overhead. The 21% win rate and 44% drawdown in my backtest are real — this is not a "set and forget" indicator.
+Volume Profile Pro is a solid tool for traders who already understand volume profile. It does what it promises: clean volume distribution analysis with minimal overhead. This is not a "set and forget" indicator.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star off because it lacks alerts and has a steep learning curve. But for the price and performance, it's one of the better volume profile scripts on TradingView. If you know what you're doing, you'll make money with it. If you don't, you'll burn your account.
+**Rating: ⭐⭐⭐⭐ (4/5)**
+One star off because it lacks alerts and has a steep learning curve. For the price, it's one of the cleaner volume profile scripts on TradingView.
 
 **Bottom line:** Buy it if you already trade volume profile. Skip it if you're still learning candlesticks.
-
----
 
 ## Go Deeper with The Indicator Lab
 

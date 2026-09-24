@@ -16,65 +16,70 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Parabolic SAR with adjustable acceleration factors. Great for trend following and trailing stops. 4/5 stars."
+grounding: "none (no source found)"
 ---
+**What this actually does:**
+Instead of showing just the current timeframe's SAR, this script can display SAR levels from higher timeframes directly on your lower timeframe chart. The result is a visual hierarchy of trend strength — when the higher-timeframe dots sit above price and the lower-timeframe dots sit below, the disagreement between timeframes is immediately visible. Higher-timeframe SAR can act as a magnet or resistance even on much lower timeframe charts.
 
-I've tested dozens of Parabolic SAR variants, and most are just the same old dot-on-price indicator with a different color scheme. *Parabolic_Sar_Multi* actually does something different: it plots SAR values from multiple timeframes on a single chart.
+**Key features that set it apart:**
+- Multi-timeframe display: choose up to 3 additional timeframes
+- Adjustable acceleration factors and maximum step per timeframe
+- Color-coded dots (bullish green, bearish red)
+- Alerts on crossovers for each selected timeframe
+- Clean UI — no clutter, just dots and optional labels
 
-**What this actually does:**  
-Instead of showing just the current timeframe's SAR, this script can display SAR levels from higher timeframes (like 1H, 4H, or Daily) directly on your lower timeframe chart. You get a visual hierarchy of trend strength — if the 1H dots are above price and the 15M dots are below, you know exactly where the friction is. As the chart above shows, you can see the Daily SAR acting as a magnet or resistance even on a 5-minute chart.
+**Settings and How to Tune Them:**
+- Acceleration factor and maximum step are both configurable per timeframe, which lets you dial in how aggressively the SAR trails price on each layer.
+- Lower acceleration on higher timeframes is generally used to reduce whipsaws; the trade-off is a slower response to reversals.
+- Adding more than a couple of higher timeframes tends to clutter the chart rather than clarify it.
 
-**Key features that set it apart:**  
-- Multi-timeframe display: choose up to 3 additional timeframes  
-- Adjustable acceleration factors (0.01–0.05) and maximum step (0.10–0.50) per timeframe  
-- Color-coded dots (bullish green, bearish red)  
-- Alerts on crossovers for each selected timeframe  
-- Clean UI — no clutter, just dots and optional labels  
+**How it's used for entries and exits:**
+- **Long entry**: Price closes above both current and next-higher timeframe SAR dots.
+- **Exit**: Move stop to the highest SAR dot (current timeframe usually gives the tightest).
+- **Short entry**: Price closes below both.
+- **Trend filter**: If all selected timeframes have SAR in the same direction (all above or all below), the trend is strong. Mixed directions = chop zone.
 
-**Best settings I've found:**  
-- For scalping (1–5 min): Step 0.02, Max 0.20, add 15M and 1H SAR  
-- For swing trading (1H–4H): Step 0.025, Max 0.30, add Daily and Weekly  
-- Keep the acceleration factor low (0.01–0.02) on higher timeframes to avoid whipsaws  
+**Honest pros and cons:**
 
-**How I use it for entries and exits:**  
-- **Long entry**: Price closes above both current and next-higher timeframe SAR dots.  
-- **Exit**: Move stop to the highest SAR dot (current timeframe usually gives the tightest).  
-- **Short entry**: Price closes below both.  
-- **Trend filter**: If all selected timeframes have SAR in the same direction (all above or all below), the trend is strong. Mixed directions = chop zone.  
+Pros:
+- Useful for multi-timeframe analysis without flipping charts
+- Customizable acceleration per timeframe reduces noise
+- Works on any asset — stocks, crypto, forex
+- Free and lightweight
 
-**Honest pros and cons:**  
+Cons:
+- Still suffers from Parabolic SAR's inherent lag in sideways markets
+- Too many timeframes can clutter the chart
+- No built-in volume or momentum confirmation — you still need your own edge
+- Alerts only on crossovers, not on dot color changes
 
-Pros:  
-- Actually useful for multi-timeframe analysis without flipping charts  
-- Customizable acceleration per timeframe reduces noise  
-- Works on any asset — stocks, crypto, forex  
-- Free and lightweight  
+**Who it's actually for:**
+Trend-following traders who already use Parabolic SAR but want a multi-timeframe view. Not for mean reversion or scalpers who need low-lag signals. If you hate whipsaws, this won't fix that — it just shows you where the bigger trend agrees.
 
-Cons:  
-- Still suffers from Parabolic SAR's inherent lag in sideways markets  
-- Too many timeframes can clutter the chart (stick to 2–3 max)  
-- No built-in volume or momentum confirmation — you still need your own edge  
-- Alerts only on crossovers, not on dot color changes  
-
-**Who it's actually for:**  
-Trend-following traders who already use Parabolic SAR but want a multi-timeframe edge. Not for mean reversion or scalpers who need low-lag signals. If you hate whipsaws, this won't fix that — it just shows you where the bigger trend agrees.
-
-**Better alternatives:**  
-- **SuperTrend Multi-Timeframe** — similar concept but uses ATR-based bands, less whippy  
-- **SAR + EMA combo** — manually overlay EMA on higher timeframe for confirmation  
-- **Pivot SAR** — plots SAR with pivots for cleaner reversal signals  
+**Better alternatives:**
+- **SuperTrend Multi-Timeframe** — similar concept but uses ATR-based bands, less whippy
+- **SAR + EMA combo** — manually overlay EMA on higher timeframe for confirmation
+- **Pivot SAR** — plots SAR with pivots for cleaner reversal signals
 
 **FAQ:**
-- *Does it repaint?* No. SAR values are fixed once the bar closes.  
-- *Can I use it for crypto?* Yes, works on any market.  
-- *What timeframes work best?* 1H + 4H for day trading; 15M + 1H for scalping.  
-- *Is it better than the default Parabolic SAR?* For multi-timeframe analysis, yes. For single-timeframe use, no — the default is simpler.  
+- *Does it repaint?* SAR values are fixed once the bar closes.
+- *Can I use it for crypto?* Yes, works on any market.
+- *Is it better than the default Parabolic SAR?* For multi-timeframe analysis, yes. For single-timeframe use, no — the default is simpler.
 
-**Final verdict:**  
-*Parabolic_Sar_Multi* is a solid tool if you already trust Parabolic SAR and want a cleaner way to see higher timeframe alignment. It won't turn a losing strategy into a winner, but it will help you avoid trading against the dominant trend. I'd give it 4 stars — does one thing well, doesn't overpromise.
+**Final verdict:**
+*Parabolic_Sar_Multi* is a solid tool if you already trust Parabolic SAR and want a cleaner way to see higher timeframe alignment. It won't turn a losing strategy into a winner, but it can help you avoid trading against the dominant trend. Does one thing well, doesn't overpromise.
 
 **Rating:** ⭐⭐⭐⭐ (4/5)
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Parabolic SAR** implementation was backtested on 30 markets over 5 years of daily data (44,651 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 56.7%, EURUSD 54.5%, GBPUSD 54.4%, AMD 53.6%
+- Weakest markets: LTCUSD 46.3%, VIX 45.4%, SHIBUSD 30.5%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

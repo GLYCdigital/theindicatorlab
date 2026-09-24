@@ -16,40 +16,39 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Session_High_Low review: tested settings, entry/exit logic, and honest pros/cons. See if this simple session range tool fits your trading style."
+grounding: "none (no source found)"
 ---
-I've lost count of how many "session" indicators I've tested that promise the moon but deliver a mess of confusing lines. Session_High_Low isn't that. It's exactly what the name says — and that's both its strength and its limitation. Let me break down what you're actually getting before you hit that "Add to Chart" button.
+# Session_High_Low Review
+
+Session indicators tend to promise a lot and deliver a tangle of confusing lines. Session_High_Low isn't that. It's exactly what the name says — and that's both its strength and its limitation. Here's what you're actually getting before you hit "Add to Chart."
 
 **What This Indicator Actually Does**
 
-Session_High_Low plots the high and low of whatever session you define — Asia, London, New York, or a fully custom window — directly onto your chart as horizontal levels. The key detail: it's not just drawing static lines. The indicator dynamically tracks whether price is above or below the session midpoint, giving you a quick visual read on intraday bias. The screenshot above shows it on a MACD chart setup, where the session levels act as clean reference points against momentum.
+Session_High_Low plots the high and low of whatever session you define — Asia, London, New York, or a fully custom window — directly onto your chart as horizontal levels. The key detail: it's not just drawing static lines. The indicator dynamically tracks whether price is above or below the session midpoint, giving a quick visual read on intraday bias.
 
 Nothing fancy. No repainting, no predictive algorithms, no multi-timeframe wizardry. It's a session range tool that does one job well.
 
 **Key Features That Stand Out**
 
-The session customization is genuinely flexible. You can set exact start/end times, choose which days of the week to include, and toggle whether the previous session's levels carry over into the next. That last feature is huge for London open traders who want the Asia range as their morning reference.
+The session customization is genuinely flexible. You can set exact start/end times, choose which days of the week to include, and toggle whether the previous session's levels carry over into the next. That last feature matters for London open traders who want the Asia range as their morning reference.
 
-The midpoint line deserves a mention. Most session indicators skip this, but having that 50% level plotted automatically saves me from doing mental math during fast moves. When price closes a candle above mid, I know the session bias is bullish. Simple, but effective.
+The midpoint line deserves a mention. Most session indicators skip this, but having the 50% level plotted automatically saves mental math during fast moves. When price closes a candle above mid, the session bias reads bullish. Simple, but effective.
 
 The visual styling is also better than most. Levels are clean, color-coded by session type, and you can adjust line width and transparency. No visual clutter unless you want it.
 
-**Best Settings I've Tested**
+**Settings and How to Tune Them**
 
-After running this across forex pairs, indices, and crypto, here's what works:
+The indicator's behavior is driven by session start and end times, day-of-week selection, whether prior session levels carry over, midpoint visibility, and line styling (solid versus dashed, width, transparency, color by session type).
 
-- **For forex**: Set your session to 00:00–08:00 EST for Asia, then 08:00–16:00 EST for London/NY combined. Keep the previous day's levels visible — the Asia range becomes your key support/resistance for the US session.
-- **For crypto**: Use a 24-hour UTC session. The daily high/low acts as a reliable breakout filter when combined with volume.
-- **For indices**: Custom session of 09:30–16:00 EST (regular trading hours). Ignore the overnight levels; they're noise for index trading.
-- **Show midpoint**: Always on. It's the single most useful feature here.
-- **Line style**: Solid for current session, dashed for previous. The contrast helps avoid confusion during the first hour of a new session.
+Because the customization is entirely time-based, the right configuration depends on which session you're tracking and which market you trade — a forex trader, a crypto trader, and an index trader will each want different session windows. The general principle is to match the session definition to the hours you actually care about, and to keep the previous session visible only when it's relevant to your next session's levels.
 
-**How I Actually Trade It**
+**How It's Used in Practice**
 
-The most reliable setup I've found is a session breakout with a twist. I wait for the first touch of the session high or low, then look for a close beyond that level on the 15-minute chart. If momentum confirms (that's where the MACD setup in the chart becomes useful), I enter in the breakout direction with a stop just inside the range.
+The most common setup is a session breakout: wait for the first touch of the session high or low, then look for a close beyond that level on an intraday chart. If momentum confirms, enter in the breakout direction with a stop just inside the range.
 
-The mean-reversion play works too, but only in ranging markets. When price tags the session high and shows rejection wicks on lower timeframes, I'll take a fade back toward mid with a tight stop beyond the level. This works best in the final hours of a session when ranges tend to consolidate.
+The mean-reversion play works too, but only in ranging markets. When price tags the session high and shows rejection wicks on lower timeframes, a fade back toward mid with a tight stop beyond the level is the setup. This tends to work best in the final hours of a session when ranges consolidate.
 
-One thing I've learned: this indicator is terrible for trend-day trading. On strong trend days, price blows through the session high and never looks back. If you short that breakout because "it's overextended," you'll get run over. The levels are reference points, not hard barriers.
+One caveat: this indicator is a poor fit for trend-day trading. On strong trend days, price blows through the session high and never looks back. Shorting that breakout because "it's overextended" gets you run over. The levels are reference points, not hard barriers.
 
 **Pros & Cons**
 
@@ -63,7 +62,7 @@ One thing I've learned: this indicator is terrible for trend-day trading. On str
 **Cons:**
 - No alerts built in — you'll need to set your own price alerts
 - It's a reference tool, not a signal generator. Don't expect buy/sell arrows
-- Session levels mean nothing in strongly trending markets
+- Session levels mean little in strongly trending markets
 - No multi-session comparison (can't easily view last week's ranges)
 
 **Who This Is For**
@@ -74,34 +73,23 @@ It's not for you if you're looking for an all-in-one signal system or if you swi
 
 **Alternatives Worth Considering**
 
-If you want the same concept with more analytical depth, check out **Session Volume Profile** — it adds volume-at-price within the session range, which gives you a much better sense of where the real value area sits. **Kill Zones** is another option if you trade ICT-style concepts, though it's more prescriptive about when to trade. For raw session levels without any extra features, TradingView's built-in session tool gets you 80% of the way there for free.
+If you want the same concept with more analytical depth, check out **Session Volume Profile** — it adds volume-at-price within the session range, which gives a better sense of where the real value area sits. **Kill Zones** is another option if you trade ICT-style concepts, though it's more prescriptive about when to trade. For raw session levels without any extra features, TradingView's built-in session tool covers the basics for free.
 
 **FAQ**
 
 **Does this indicator repaint?** No. Once a session high or low is printed, it stays fixed. The midpoint recalculates throughout the session, but that's expected behavior.
 
-**Can I use it on crypto markets that trade 24/7?** Yes, just set a custom session that matches your trading window. I prefer UTC-based sessions for crypto.
+**Can I use it on crypto markets that trade 24/7?** Yes — set a custom session that matches your trading window.
 
-**Does it work on lower timeframes?** The indicator works fine on 1-minute to 1-hour charts. Below that, session levels are less meaningful.
+**Does it work on lower timeframes?** The indicator works on 1-minute to 1-hour charts. Below that, session levels are less meaningful.
 
 **Are there alerts?** No built-in alerts. You'll need to create price alerts on the level values manually.
 
 **Final Verdict**
 
-Session_High_Low does exactly what it promises: clean session levels with a useful midpoint. It's not going to make you a better trader by itself, but it removes the friction of manually drawing session ranges every day. For the price (free), it's a no-brainer addition to your chart setup if you trade specific market sessions.
+Session_High_Low does exactly what it promises: clean session levels with a useful midpoint. It won't make you a better trader by itself, but it removes the friction of manually drawing session ranges every day. For the price (free), it's a reasonable addition to your chart setup if you trade specific market sessions.
 
-I'm giving it 4 stars. It's not the most sophisticated indicator on TradingView, but it's reliable, well-executed, and earns its place in my workspace. The missing alerts and lack of multi-session comparison keep it from a perfect score, but for most day traders, this is a genuine upgrade over TradingView's barebones session tool.
-
-## Frequently Asked Questions
-
-### Is Session_High_Low worth it?
-
-Based on testing across multiple timeframes, Session_High_Low delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
+It's not the most sophisticated indicator on TradingView, but it's reliable and well-executed. The missing alerts and lack of multi-session comparison are the main gaps, but for most day traders, this is a genuine upgrade over TradingView's barebones session tool.
 
 ## Go Deeper with The Indicator Lab
 

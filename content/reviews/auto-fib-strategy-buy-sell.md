@@ -17,74 +17,53 @@ categories:
 rating: 4
 description: "Auto_Fib_Strategy_Buy_Sell review: tested settings, entry/exit logic, pros/cons. Find out if this automated Fibonacci trend indicator is worth installing."
 tv_script_url: "https://www.tradingview.com/script/kwzomHxK-AUTO-FIB-STRATEGY-BUY-SELL/"
+sources: ["https://www.tradingview.com/script/kwzomHxK-AUTO-FIB-STRATEGY-BUY-SELL/"]
 ---
-Let me be blunt about what this indicator actually does: it automates Fibonacci retracement analysis and pairs it with a basic trend filter to fire buy/sell signals. It's not a holy grail — nothing is — but it does solve a real problem. Manually drawing fib levels across multiple timeframes is tedious and subjective. This script does that work for you, then tells you when to act.
+This strategy automates Fibonacci retracement analysis and pairs it with a trend filter to generate buy and sell signals. It is not a holy grail — nothing is — but it addresses a real problem. Manually drawing fib levels across multiple timeframes is tedious and subjective. This script does that work for you, then tells you when to act.
 
-I ran it on the MACD chart type (as shown in the screenshot above) alongside a few other trend tools to see if the signals held up in real market conditions. The verdict: it's a solid 4-star tool with some quirks you need to understand before trusting it.
+The honest caveat: the official description is thin. It states that the strategy places fib retracements from swing low to high and vice versa, enters when price hits a certain level (0.618 by default), and that everything is customizable. Anything beyond that — specific filter logic, signal quality claims, behavior across timeframes — is not documented in the source material and should be treated as unverified until you confirm it on your own charts.
 
 **Key Features That Actually Matter**
 
-The core logic combines two things: Fibonacci retracement levels (typically 0.382, 0.5, and 0.618) and a trend direction filter. When price pulls back to a key fib zone and the trend filter aligns, you get a signal. That's it. No machine learning, no volume analysis, no market structure overlays.
+The core logic, per the description, is Fibonacci retracement levels plus an entry trigger at a chosen level. When price pulls back to that level, the strategy enters. That is the documented scope. There is no stated volume analysis, no market structure overlay, no machine learning component.
 
-What surprised me is the signal quality when the trend filter is engaged. In strong uptrends, the long signals at the 0.5 and 0.618 retracement levels were remarkably clean. The script doesn't repaint — I verified this by reloading charts and checking historical signals. They stayed put, which is more than I can say for half the "auto" indicators on TradingView.
+What the description does emphasize is customization — the retracement level that triggers entry is adjustable, with 0.618 as the default. That flexibility is the main functional selling point. Whether the resulting signals are clean or noisy is not something the source material addresses, and any claim about signal quality in trending versus choppy conditions would be assertion rather than fact.
 
-The interface is straightforward: labels appear above/below bars with clear "BUY" and "SELL" text. You can toggle alerts directly from the indicator settings, which is a nice touch for those who don't want to mess with TradingView's alert builder.
+**Settings and How to Tune Them**
 
-**Settings I Found Work Best**
+The only parameter value documented in the source material is the entry level: 0.618 by default. Everything else is described as fully customizable, but no specific settings, ranges, or defaults are given.
 
-After testing multiple configurations on different pairs and timeframes, here's what I settled on:
-
-- **Trend period**: Default is usually 20, but I found 50 works better on higher timeframes (1H and above). It filters out noise without being so slow that you miss moves.
-- **Fib depth**: The 0.618 level is your friend. Set the script to only trigger signals there if you're trading swing moves. The 0.382 level generates too many false signals in choppy conditions.
-- **Timeframe**: This indicator shines on 1H to 4H charts. On lower timeframes (5M/15M), the fib levels get whipsawed constantly. Don't bother.
-
-One thing I'll note: the default settings are too aggressive for my taste. The script fires signals on every minor pullback, which results in overtrading. Tighten it up.
+Conceptually, the settings you would expect to work with are the fib level that triggers entry and whatever defines the swing low and high the retracements are drawn from. Beyond that, the source material does not specify a trend period, a timeframe recommendation, or any other numeric default. Treat any specific numbers you see elsewhere as unverified.
 
 **How to Actually Trade With It**
 
-The entry logic is straightforward — wait for price to touch the 0.5 or 0.618 fib level while the trend filter confirms direction. But here's the nuance most people miss: don't take the signal immediately. Wait for a rejection candle (a close back above the fib level for longs, below for shorts). That single filter eliminated maybe 40% of the false signals I encountered.
+The documented entry logic is simple: the strategy places retracements from swing low to high (and the reverse), and enters when price reaches the chosen level. The default is 0.618.
 
-For exits, the indicator doesn't give you targets — it's not that sophisticated. I used the opposite fib level as my profit target. If you enter long at the 0.618 retracement, your logical target is the previous swing high, which typically aligns with the 0.382 level or the start of the move.
+The source material does not describe exit logic, stop-loss placement, take-profit targets, or confirmation rules. If you use this strategy, those decisions are yours to make and test. The description offers no guidance on rejection candles, opposing fib levels as targets, or stop placement relative to deeper retracement levels — so do not assume any of that is built in.
 
-Stop loss placement is critical. Putting it just below the 0.786 level (which the script doesn't show by default) worked better than the standard 1-2% stop. The deeper stop survived more noise without blowing up my risk-reward ratio.
+**What to Watch For**
 
-**What I Like and What Grinds My Gears**
+Because the description is minimal, the practical risks are the usual ones for any automated entry tool:
 
-**Pros:**
-- No repainting — verified this multiple times
-- Clean, unobtrusive chart labels
-- The trend filter genuinely improves signal quality
-- Alerts work flawlessly once configured
+- No documented stop-loss or take-profit logic — position management is on you.
+- No stated multi-timeframe awareness — the script sees the chart it is applied to.
+- The customization claim is broad but unspecified; confirm which parameters are actually exposed before relying on them.
+- The 0.618 default is the only documented setting, so any tuning beyond that is exploratory.
 
-**Cons:**
-- No stop-loss or take-profit suggestions — you're on your own there
-- The default settings cause overtrading
-- No multi-timeframe analysis — it only sees the chart you're looking at
-- Can't customize which fib levels trigger signals (locked into their presets)
+**Who Should Consider It**
 
-**Who Should Install This?**
-
-If you're a swing trader who already understands Fibonacci retracement but hates the manual drawing process, this is for you. It saves real time and gives you consistent levels across different pairs. Day traders on lower timeframes should look elsewhere — the signals are too noisy below the 1H chart.
-
-Beginners will find it useful as a learning tool to see how fib levels interact with price, but don't treat the signals as gospel. Learn the underlying concepts before trusting the automation.
-
-**Better Alternatives**
-
-If you want something more advanced, look at **Smart Money Concepts** indicators that combine fib levels with order blocks and liquidity zones — they're more comprehensive but also more complex. For pure trend trading without fibs, the classic **Supertrend** or **MACD crossover** scripts are simpler and more reliable in ranging markets. The **Auto Fib Retracement** official TradingView indicator is a decent free alternative if you just want the levels without the signals.
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**
-
-Auto_Fib_Strategy_Buy_Sell earns its rating because it does one thing well: automating Fibonacci-based trade signals with a reliable trend filter. It's not revolutionary, and it won't make you profitable by itself, but as a tool that removes manual fib drawing and provides consistent, non-repainting signals, it earns its place in a swing trader's toolkit. Adjust the settings, add your own confluence, and it becomes a genuinely useful part of a trading system.
+Traders who already understand Fibonacci retracement and want the drawing automated are the natural audience. The value proposition is consistency and saved time, not a proprietary edge. Anyone expecting documented performance characteristics or built-in risk management will be disappointed, because the source material provides neither.
 
 ## Frequently Asked Questions
 
-### Is Auto_Fib_Strategy_Buy_Sell worth it?
+### Is this strategy worth using?
 
-Based on testing across multiple timeframes, Auto_Fib_Strategy_Buy_Sell delivers solid value for traders who need trend analysis.
+The source material does not provide performance data or testing results, so there is no factual basis for a value judgment. The documented functionality is automated fib retracement placement with a customizable entry level, defaulting to 0.618.
 
-### Does this indicator repaint?
+### Does this strategy repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+The source material does not state whether signals repaint. This claim cannot be made either way without verification on your own charts.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

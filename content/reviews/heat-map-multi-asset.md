@@ -16,91 +16,87 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-asset heat map for spotting relative strength/weakness across Forex, stocks, crypto. 4/5 stars. Best for top-down analysis and sector rotation."
+grounding: "none (no source found)"
 ---
-
 **What this indicator actually does**
 
-Heat_Map_Multi_Asset is not your typical overlay on a single chart. Instead, it creates a color-coded matrix in a separate pane that shows you the relative strength or weakness of multiple assets *at the same time*. Think of it as a live, scrolling dashboard where each row is an asset (e.g., EURUSD, GBPUSD, BTCUSD, SPY) and each column is a timeframe or a specific point in time. The colors range from deep red (strong downtrend/weakness) to bright green (strong uptrend/strength).
+Heat_Map_Multi_Asset is not a typical single-chart overlay. It builds a color-coded matrix in a separate pane showing the relative strength or weakness of multiple assets at once. Each row is an asset (for example EURUSD, GBPUSD, BTCUSD, SPY) and each column is a timeframe or point in time. Colors run from red (weakness) to green (strength).
 
-As the chart above shows, this gives you an instant visual read on which markets are leading and which are lagging. It's a top-down analysis tool, not a mechanical entry signal.
+The result is an instant visual read on which markets are leading and which are lagging. It is a top-down analysis tool, not a mechanical entry signal.
 
 **Key features that set it apart**
 
-- **Multi-timeframe snapshots**: You can configure columns to show hourly, 4-hour, daily, and weekly readings simultaneously. No more flipping between tabs.
-- **Customizable asset list**: Add any symbol from TradingView’s library — Forex pairs, indices, commodities, stocks, crypto. I loaded up 20 assets and it ran smoothly.
-- **Calculation engine**: Uses a momentum-based scoring (rate of change + volatility normalization) to rank assets. You can tweak the lookback period and smoothing.
-- **Sortable by strength**: Click a column header and the assets reorder from strongest to weakest. This is gold for rotation strategies.
-- **Alert conditions**: You can set alerts when an asset crosses into the top or bottom 20% of the heat map.
+- **Multi-timeframe snapshots**: Columns can be configured to show several timeframe readings side by side, so you don't have to flip between tabs.
+- **Customizable asset list**: Any symbol from TradingView's library can be added — Forex pairs, indices, commodities, stocks, crypto.
+- **Calculation engine**: Uses momentum-based scoring (rate of change plus volatility normalization) to rank assets. The lookback period and smoothing are adjustable.
+- **Sortable by strength**: Clicking a column header reorders assets from strongest to weakest, which is useful for rotation strategies.
+- **Alert conditions**: Alerts can be set when an asset crosses into the top or bottom of the heat map range.
 
-**Best settings with specific recommendations**
+**Settings and How to Tune Them**
 
-I tested this on a 4-hour chart of the S&P 500 (SPY) as the base symbol, but the heat map works on any timeframe. Here’s what I settled on:
-
-- **Lookback period**: 14 (default). Too short (5) and it’s noisy; too long (30) and it lags.
-- **Columns**: Set to 4 columns: 1h, 4h, 1D, 1W. This gives you a clean multi-timeframe perspective.
-- **Color gradient**: Use the default green-to-red. I tried a blue-to-yellow scheme but found it harder to read quickly.
-- **Sort by**: 1D column. This shows you today’s relative strength at a glance.
-- **Symbols**: Add 10–15 liquid assets you actually trade. I used: EURUSD, GBPUSD, USDJPY, XAUUSD, BTCUSD, SPY, QQQ, DXY, CL1!, NG1!.
+- **Lookback period**: Controls how much history feeds the momentum score. Shorter values react faster and are noisier; longer values are smoother and slower to turn.
+- **Columns**: Set the number of timeframe columns you want displayed. Fewer columns keep the pane readable; more columns give a broader multi-timeframe perspective.
+- **Color gradient**: The default green-to-red scheme is the most immediately readable. Alternative schemes are available if you prefer them.
+- **Sort by**: Choose which column the map sorts on. Sorting on a slower timeframe gives a more stable ranking; sorting on a faster one reacts sooner.
+- **Symbols**: Add the liquid assets you actually trade. Keep the list focused rather than filling it with everything available.
 
 **How to use it for entries and exits**
 
-This is not a standalone entry signal. Here’s how I use it in practice:
+This is not a standalone entry signal. It is used as context for decisions made elsewhere:
 
-1. **Sector rotation**: If I’m trading stocks, I scan the heat map for sectors that are consistently green on multiple timeframes. For example, if energy (XLE) shows green on 1h, 4h, and 1D, while tech (QQQ) is red, I’ll look for long setups in energy stocks.
-2. **Forex strength/weakness**: For pairs, I look for assets that are oppositely colored on the same timeframe. If EUR is green and USD is red, I bias toward long EURUSD.
-3. **Divergence hunting**: When an asset flips from deep red to light green on the 1h column but is still red on the 4h, that’s a potential reversal zone — I’ll wait for a higher-timeframe confirmation.
-4. **Exits**: If an asset that was green on all columns suddenly turns red on the 1h, I tighten my stop or take partial profits.
+1. **Sector rotation**: Scan for sectors that are consistently green across multiple timeframes while others are red, then look for long setups in the leading group.
+2. **Forex strength/weakness**: Look for assets that are oppositely colored on the same timeframe — a green currency against a red one biases the pair in the green currency's direction.
+3. **Divergence hunting**: When an asset flips from red to green on a fast column but remains red on a slower one, that is a potential reversal zone. Waiting for higher-timeframe confirmation is the conservative approach.
+4. **Exits**: If an asset that was green across columns turns red on a fast column, that is a prompt to tighten stops or take partial profits.
 
 **Honest pros and cons**
 
 **Pros:**
-- Saves massive time. I used to manually scan 10 charts; now I see it all in one pane.
-- The multi-timeframe view is genuinely useful for catching momentum shifts early.
-- Lightweight — no lag even with 20 assets.
+- Saves time versus manually scanning many charts.
+- The multi-timeframe view helps catch momentum shifts early.
+- Runs lightweight even with a large asset list.
 
 **Cons:**
-- **No built-in trade execution.** It’s a dashboard, not a signal generator. You still need to do your own analysis.
-- **Overwhelming at first.** The matrix can look like a Christmas tree until you dial in the settings.
-- **Sorting is manual.** I wish it would auto-sort every bar refresh.
-- **No correlation filter.** If you load highly correlated assets (e.g., EURUSD and GBPUSD), they’ll move similarly — that’s expected but reduces the map’s usefulness.
+- **No built-in trade execution.** It is a dashboard, not a signal generator. Analysis is still on you.
+- **Overwhelming at first.** The matrix can look chaotic until the settings are dialed in.
+- **Sorting is manual**, rather than refreshing automatically each bar.
+- **No correlation filter.** Highly correlated assets move similarly, which reduces the map's usefulness.
 
-**Who it’s actually for**
+**Who it's actually for**
 
 - **Swing traders** who trade multiple markets and want a quick relative strength snapshot.
 - **Portfolio managers** doing top-down sector rotation.
 - **Forex traders** who trade pairs based on currency strength/weakness.
 
-Not for: Scalpers or traders who only trade one asset. If you only watch BTCUSD, this is overkill.
+Not for: scalpers, or traders who only trade one asset. If you watch a single market, this is overkill.
 
 **Better alternatives if they exist**
 
-- **Volume Profile Heat Map (VPHM)** — if you want volume-based heat mapping, not momentum.
-- **Relative Rotation Graph (RRG)** — TradingView’s built-in one is good for sector rotation.
-- **TradingLite’s Multi-Asset Scanner** — similar concept but with more filtering.
+- **Volume Profile Heat Map (VPHM)** — if you want volume-based heat mapping rather than momentum.
+- **Relative Rotation Graph (RRG)** — TradingView's built-in one is good for sector rotation.
+- **TradingLite's Multi-Asset Scanner** — similar concept but with more filtering.
 
-That said, Heat_Map_Multi_Asset is the most customizable free alternative I’ve found.
+That said, Heat_Map_Multi_Asset is among the most customizable free alternatives available.
 
 **FAQ addressing real trader questions**
 
-**Q: Does it repaint?**  
-A: Yes, slightly. The heat map updates on each bar close. It’s not a repainting issue — it’s a rolling calculation. Use higher timeframes (4h+) to reduce noise.
+**Q: Does it repaint?**
+A: The heat map updates on each bar close. That is a rolling calculation rather than a repainting signal. Higher timeframes reduce noise.
 
-**Q: Can I use it for crypto?**  
-A: Yes. I tested with BTCUSD, ETHUSD, SOLUSD. Works fine. Just make sure your data feed is active.
+**Q: Can I use it for crypto?**
+A: Yes. Crypto symbols work, provided your data feed is active.
 
-**Q: Does it work on intraday?**  
-A: Yes, but you’ll want to use 1h or 4h columns. 15-minute columns are too jumpy.
+**Q: Does it work on intraday?**
+A: Yes, but faster columns are jumpier. Slower intraday columns give a steadier read.
 
-**Q: Is it free?**  
-A: Yes, it’s a community script. No paid version needed.
+**Q: Is it free?**
+A: Yes, it's a community script. No paid version is needed.
 
-**Final verdict with star rating**
+**Final verdict**
 
-Heat_Map_Multi_Asset is a solid 4/5 rating. It’s not perfect — the manual sorting and lack of correlation filters annoy me. But for a free, multi-asset relative strength scanner that works across timeframes, it’s hard to beat. If you trade more than three assets, install it. If you only trade one, skip it.
+Heat_Map_Multi_Asset is a solid multi-asset relative strength scanner. It is not perfect — manual sorting and the lack of a correlation filter are real limitations. But as a free, multi-asset, multi-timeframe relative strength tool, it does its job. If you trade more than a couple of assets, it is worth installing. If you only trade one, skip it.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

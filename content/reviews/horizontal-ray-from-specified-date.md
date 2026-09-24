@@ -17,64 +17,66 @@ categories:
 rating: 4
 description: "Honest review of Horizontal_Ray_From_Specified_Date for TradingView: how to anchor key price levels to any date, best settings, and real trade setups."
 tv_script_url: "https://www.tradingview.com/script/orqI6kAw-Horizontal-Ray-from-Specified-Date/"
+sources: ["https://www.tradingview.com/script/orqI6kAw-Horizontal-Ray-from-Specified-Date/"]
 ---
-Most "indicators" on TradingView are signal generators. This one isn't. **Horizontal_Ray_From_Specified_Date** does exactly one thing: it draws a horizontal ray starting from a date you specify, extending it to the right edge of your chart. That's it. And that simplicity is precisely why it earns a place in my charting toolkit.
+Most "indicators" on TradingView are signal generators. This one isn't. **Horizontal Ray from Specified Date** does exactly one thing: it draws a horizontal ray from the high of a chosen day and extends it to the right edge of the chart. That's it. And that simplicity is precisely what makes it useful.
 
-If you've ever manually dragged a horizontal line to a specific candle and then watched it drift out of place as new bars form, you already understand the problem this solves. Let me show you where it actually earns its keep.
+If you've ever manually dragged a horizontal line to a specific candle and then watched it drift out of place as new bars form, you already understand the problem this solves.
 
 ## What It Actually Does (Not the Marketing Version)
 
-The indicator takes a date input (and often a time component, depending on the version) and anchors a horizontal ray to the price at that point. The ray then extends right indefinitely. You're not getting signals, alerts, or buy/sell arrows. You're getting a persistent, date-anchored reference line.
+The indicator takes a date input and anchors a horizontal ray to the price at that point. The ray then extends to the right. You're not getting signals, alerts, or buy/sell arrows. You're getting a persistent, date-anchored reference line.
 
-This matters more than it sounds. TradingView's native horizontal ray tool is manual — you click, you drag, and you hope you don't accidentally move it. This indicator makes the anchor programmatic. Set the date once, and the line stays put through refreshes, timeframe changes, and symbol reloads on that chart.
+This matters more than it sounds. TradingView's native horizontal ray tool is manual — you click, you drag, and you hope you don't accidentally move it. This indicator makes the anchor programmatic. Set the date once, and the line stays put.
 
-As the chart above shows, I anchored a ray to a specific session close on a MACD-based setup. The line held its exact price level while the oscillator cycled through multiple crossovers beneath it.
+The intended use case is specific: after a big red day. Once the indices sell off hard, that day's high becomes the level to watch. Until the indices close back above it, the market hasn't fully recovered. Stocks already closing above their own high from that day show relative strength. Put the script on a watchlist, flip through the charts, and the leaders are the ones trading above the line.
+
+The best of those names, per the script's own documentation, are ones where the shakeout that followed pulled price back to retest a base breakout, rather than names that just bounced at random.
 
 ## Why Date-Anchoring Beats Manual Lines
 
-Here's the practical case. Say you want to track the high of a specific earnings day, a Fed announcement candle, or the open of a particular month. With a manual ray, you're re-drawing it every time you adjust the chart. With this indicator, you enter the date and the level is locked.
+Here's the practical case. Say you want to track the high of a specific selloff day, an earnings date, or a macro event candle. With a manual ray, you're re-drawing it every time you adjust the chart. With this indicator, you enter the date and the level is locked.
 
 That's the entire value proposition, and for a certain type of trader — swing traders marking historical pivots, event-driven traders tracking reaction levels — it's worth the install.
 
-## Best Settings and How I Configure It
+## Settings and How to Tune Them
 
-The settings panel is minimal, which I appreciate:
+The settings panel is minimal:
 
-- **Date input**: Use the exact date of the candle you want to anchor to. If your version includes a time field, match it to the candle's timestamp — a mismatch of even a few hours can anchor the ray to the wrong bar on intraday charts.
-- **Color and line style**: Keep it subtle. A dashed gray or thin solid line works best. You're building a reference layer, not a signal.
-- **Line width**: 1px. Anything thicker clutters price action, especially on lower timeframes.
-- **Extend right**: Confirm this is enabled — some builds default to a fixed-length ray, which defeats the purpose.
+- **Date input**: Pick any date you want to anchor to. If the date falls on a holiday, the script uses the next trading day.
+- **Source**: Choose High, Low, Close or Open as the level. The default behavior described in the documentation anchors to the high of the chosen day.
+- **Label text**: The text label shows the date and price by default, or you can supply your own text.
+- **Color, thickness and style**: The line's colour, thickness and style (solid, dashed or dotted) can all be changed.
 
-One caveat: on very low timeframes (1m, 5m), date precision becomes finicky. The ray may anchor to the first bar of that date rather than the exact candle you intended. Test it on your timeframe before trusting it in a live setup.
+One thing worth knowing: the level is the full day's value on any timeframe, so the line sits at the same price on a 5-minute chart as on the daily chart. That consistency is a deliberate design choice, not an accident.
 
-## How I Actually Trade With It
+## How to Trade With It
 
-This is a levels tool, not an entry trigger. My workflow:
+This is a levels tool, not an entry trigger. The workflow the documentation implies:
 
-1. **Identify the event candle** — a high-volume breakout day, a rejection wick, or a news-driven spike.
-2. **Anchor the ray** to that candle's close or high.
-3. **Watch for retests.** When price returns to the ray, I'm looking for either a clean bounce (continuation) or a decisive break-and-hold (regime change).
-4. **Combine with momentum.** Notice in the screenshot how the MACD histogram flipped negative right as price tested the ray from below — that confluence is where I'd size up a short.
+1. **Identify the event day** — a big red day in the indices, or a specific session you want to mark.
+2. **Anchor the ray** to that day's high (or another source).
+3. **Watch for retests.** Price returning to the ray is the moment of interest. A clean hold versus a decisive close back above tells you whether the market has recovered.
+4. **Compare across names.** Stocks already closing above their own high from that day are showing relative strength — those are the leaders.
 
-The ray gives you the *where*. Your oscillator or price action gives you the *when*. Use them together.
+The ray gives you the *where*. Your other tools give you the *when*.
 
 ## Pros & Cons
 
 **Pros:**
 - Genuinely solves a real annoyance: manual rays that drift or get deleted.
 - Dead simple to configure — no learning curve.
-- Persistent across timeframe and symbol switches on the same chart.
+- Consistent level across timeframes, since the value is the full day's price.
 - Free and lightweight.
 
 **Cons:**
 - Zero automation beyond drawing — no alerts when price touches the ray.
-- Date/time precision is inconsistent on intraday charts.
 - You can only run as many rays as you're willing to add instances for; no multi-level input.
-- No built-in labeling, so you have to remember what each ray represents.
+- The label is minimal, so if you use custom text you have to remember what each ray represents.
 
 ## Who It's For
 
-Swing traders and position traders who mark historical levels and want them to stay put. Also useful for anyone doing event studies — anchoring to an earnings date or macro release and tracking the reaction over weeks. Scalpers on 1-minute charts will find the date precision too coarse.
+Swing traders and position traders who mark historical levels and want them to stay put. Also useful for anyone doing event studies — anchoring to a selloff day or macro release and tracking the reaction over weeks. The relative-strength comparison across a watchlist is where the tool earns its keep.
 
 ## Alternatives Worth Considering
 
@@ -92,17 +94,18 @@ No. It's a drawing tool only. You'd need a separate alert on the price level.
 **Can I add multiple rays?**
 Yes, by adding the indicator multiple times with different dates. There's no single-instance multi-level mode.
 
-**Why is my ray anchored to the wrong candle?**
-Almost always a timezone or time-precision mismatch. Align the date input to the candle's exact timestamp.
+**What happens if I pick a holiday?**
+The script uses the next trading day.
 
-**Does it work on all timeframes?**
-Yes, but accuracy degrades on intraday timeframes where a "date" spans many candles.
+**Does the level change between timeframes?**
+No. The line is the full day's value, so it sits at the same price on a 5-minute chart as on the daily chart.
 
 ## Final Verdict
 
-**Horizontal_Ray_From_Specified_Date** is a focused, single-purpose tool that does its job well. It won't make you money on its own — no level indicator will — but it removes a genuine friction point for traders who mark historical pivots. The lack of alerts and the intraday precision quirks keep it from a perfect score, but for daily-and-above charting, it's a clean, reliable addition.
+**Horizontal Ray from Specified Date** is a focused, single-purpose tool that does its job well. It won't make you money on its own — no level indicator will — but it removes a genuine friction point for traders who mark historical pivots and compare relative strength after a selloff. The lack of alerts keeps it from being a complete package, but for daily-and-above charting and watchlist scanning, it's a clean, reliable addition.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Install it if you mark date-specific levels. Skip it if you need signals or alerts.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

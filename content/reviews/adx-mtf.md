@@ -6,112 +6,116 @@ type: reviews
 image: "/screenshots/adx-mtf.png"
 rating: 4
 description: "Multi-timeframe ADX analysis for trend strength. See higher TF ADX without switching charts. 4/5 rating – practical but limited."
+grounding: "none (no source found)"
 ---
-
 **description:** Multi-timeframe ADX analysis for trend strength. See higher TF ADX without switching charts. 4/5 rating – practical but limited.
 
 ---
 
-I’ve spent the last week hammering the **Adx_Mtf** indicator on everything from 1-minute scalps to daily swing trades. Here’s what I found after staring at enough ADX lines to make my eyes cross.
+Adx_Mtf is a workflow tool for traders who already use ADX. It plots the ADX (Average Directional Index) from a higher timeframe directly onto the current chart, so the higher timeframe trend strength is visible without flipping between charts.
 
 ## What It Actually Does
 
-Adx_Mtf plots the ADX (Average Directional Index) from a higher timeframe directly onto your current chart. Instead of flipping between timeframes to check if the 1-hour trend is strong enough to trust a 5-minute signal, you see the higher TF ADX value, +DI, and -DI right there on your lower timeframe.
+Adx_Mtf plots the ADX from a higher timeframe onto your current chart. Rather than switching timeframes to check whether the higher timeframe trend is strong enough to trust a lower timeframe signal, the higher timeframe ADX value, +DI, and -DI are displayed on the lower timeframe chart.
 
-It’s not reinventing the wheel. It’s just saving you clicks and mental context-switching.
+It is not reinventing the wheel. It removes the need to switch charts and re-orient context.
 
 ## Key Features That Stand Out
 
-- **Multi-timeframe ADX display** – Choose any higher timeframe (e.g., 15-min on a 1-min chart) and see its ADX readings as an overlay or as separate lines.
-- **Customizable smoothing** – You can adjust the ADX period (default 14) and the smoothing length. I found 14 works for most timeframes, but bumping smoothing to 21 cleaned up noise on lower TFs.
-- **Color-coded thresholds** – It highlights when ADX crosses above 25 (trending) and below 20 (ranging). This is standard, but the visual clarity is decent.
-- **Multi-line mode** – Shows +DI and -DI lines from the higher timeframe, so you can spot directional bias without switching charts.
+- **Multi-timeframe ADX display** – Choose a higher timeframe (for example, 15-min readings on a 1-min chart) and see its ADX as an overlay or as separate lines.
+- **Customizable smoothing** – The ADX period and the smoothing length are both adjustable.
+- **Color-coded thresholds** – The indicator highlights when ADX crosses above the trending threshold and below the ranging threshold, giving a visual cue for regime.
+- **Multi-line mode** – Shows +DI and -DI lines from the higher timeframe, so directional bias is visible without switching charts.
 
-## Best Settings I’ve Tested
+## Settings and How to Tune Them
 
-For **intraday swing trading** (15-min chart with 1-hour ADX):
-- ADX Period: 14
-- Smoothing: 14
-- Source: Close
-- Higher TF: 60 (1 hour)
-- Thresholds: 25 (strong trend), 20 (weak/ranging)
+The indicator exposes the ADX period, the smoothing length, the source, the higher timeframe selection, and the threshold levels.
 
-For **scalping** (1-min chart with 15-min ADX):
-- ADX Period: 14
-- Smoothing: 21 (reduces false signals)
-- Higher TF: 15
-- Thresholds: 25 and 20
+For intraday swing trading, a common configuration pairs a mid-range chart with a higher timeframe ADX, using the standard ADX period and smoothing, source set to Close, and thresholds separating trending from ranging conditions.
 
-The smoothing bump is key for scalping – without it, you’ll get whipsawed by noise.
+For scalping on a faster chart with a short higher timeframe, the same period applies but a longer smoothing length can be used to reduce noise. The smoothing adjustment matters most on the fastest timeframes, where raw readings are choppier.
 
-## How I Use It for Entries and Exits
+Thresholds are typically set so that one level marks a trending environment and a lower level marks a weak or ranging one. The defaults are a reasonable starting point; the right values depend on the instrument and the timeframe being traded.
 
-**Long entry example** (as shown in the chart above):
-1. Wait for the higher timeframe ADX (e.g., 1-hour) to cross above 25. This confirms a trending environment.
+## How It Is Used for Entries and Exits
+
+A long entry sequence:
+
+1. Wait for the higher timeframe ADX to cross above the trending threshold. This confirms a trending environment.
 2. Check that +DI is above -DI on that same higher timeframe.
-3. Drop to your lower timeframe (e.g., 15-min) and look for a pullback to a moving average or support.
-4. Enter on the lower timeframe confirmation (e.g., bullish engulfing or MACD crossover).
-5. Exit when the higher timeframe ADX drops below 20, or when +DI crosses below -DI.
+3. Drop to the lower timeframe and look for a pullback to a moving average or support.
+4. Enter on lower timeframe confirmation (for example, a bullish engulfing candle or an MACD crossover).
+5. Exit when the higher timeframe ADX drops below the ranging threshold, or when +DI crosses below -DI.
 
-**Short entry** – reverse the logic.
+Short entries reverse the logic.
 
-The key insight: *Higher timeframe ADX tells you whether to trade the direction. Lower timeframe price action tells you when to pull the trigger.* Adx_Mtf removes the guesswork of checking that higher timeframe strength manually.
+The core idea: the higher timeframe ADX tells you whether to trade the direction. Lower timeframe price action tells you when to pull the trigger. Adx_Mtf removes the manual step of checking that higher timeframe strength.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Saves time – no more switching between charts to check trend strength.
+- Saves time – no switching between charts to check trend strength.
 - Clean, customizable visuals. The threshold colors are easy to spot.
-- Works across all timeframes. I tested it from 1-min to daily.
-- Free (if you have TradingView Pro or higher for multi-chart layouts, but the indicator itself is free on the community scripts).
+- Works across timeframes.
+- Free to use on the community scripts.
 
 **Cons:**
-- ADX is a lagging indicator. Even with the multi-timeframe feature, you’re still reacting to past data. Don’t expect leading signals.
-- No alert system for ADX crossing thresholds. You’ll have to set manual alerts or use TradingView’s native alert on the indicator value.
-- The multi-line mode can get cluttered if you also have other indicators on your chart. I hide +DI/-DI lines and just track the ADX line.
-- Not a standalone system. You absolutely need price action or another confluence tool.
+- ADX is a lagging indicator. Even with the multi-timeframe feature, it reacts to past data. It does not produce leading signals.
+- No alert system for ADX crossing thresholds. Alerts must be set manually or through TradingView's native alert on the indicator value.
+- Multi-line mode can get cluttered alongside other indicators. Hiding the +DI/-DI lines and tracking only the ADX line is one way to manage that.
+- Not a standalone system. It needs price action or another confluence tool.
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Swing traders** who want to confirm trend strength on higher timeframes without leaving their entry chart.
-- **Scalpers** who need to know if the 15-min trend supports their 1-min trades.
+- **Scalpers** who need to know whether the higher timeframe trend supports their lower timeframe trades.
 - **Traders who already use ADX** and want to speed up their workflow.
 
-It’s **not** for beginners who don’t understand ADX interpretation. If you don’t know what a 30 ADX reading means, this indicator won’t help you.
+It is not for beginners who don't understand ADX interpretation. Without a working understanding of what an elevated ADX reading means, the indicator adds nothing.
 
 ## Better Alternatives
 
 - **ADX with DMI by LazyBear** – More features (colored bars, histogram mode) but no multi-timeframe capability.
 - **Multi-Timeframe ADX Dashboard** – Shows ADX values for multiple timeframes in a single pane. Better for scanning than trading.
-- **VWAP + ADX combo** – For trend-following, I sometimes prefer VWAP for real-time trend strength over ADX’s lagging nature.
+- **VWAP + ADX combo** – For trend following, VWAP offers a real-time trend reference that does not share ADX's lag.
 
-If you need multi-timeframe ADX specifically, Adx_Mtf is the cleanest free option I’ve found.
+For multi-timeframe ADX specifically, Adx_Mtf is one of the cleaner free options available.
 
 ## FAQ
 
-**Q: Does it repaint?**  
+**Q: Does it repaint?**
 A: No. ADX is a standard calculation. The higher timeframe value is fixed once the candle closes on that higher timeframe.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works on any asset class. I tested it on BTC, ETH, Tesla, and EUR/USD.
+**Q: Can it be used on crypto?**
+A: Yes. It works on any asset class.
 
-**Q: Why does ADX show 0 sometimes?**  
-A: The higher timeframe candle hasn’t closed yet. The indicator will update once it does.
+**Q: Why does ADX show 0 sometimes?**
+A: The higher timeframe candle hasn't closed yet. The indicator updates once it does.
 
-**Q: Does it work on TradingView free tier?**  
-A: Yes, the indicator itself is free. But to see a higher timeframe ADX while on a lower timeframe chart, you need at least a Pro account to have multiple chart layouts open. The script works on a single chart, but you’ll only see the current TF’s ADX without Pro.
+**Q: Does it work on the TradingView free tier?**
+A: The indicator itself is free. Viewing a higher timeframe ADX while on a lower timeframe chart alongside other charts generally requires a plan that supports multiple chart layouts.
 
 ## Final Verdict ⭐⭐⭐⭐ (4/5)
 
-Adx_Mtf does one thing and does it well: it shows higher timeframe ADX on your current chart. No fluff, no overpromises. It’s a practical tool for traders who already understand ADX and want to streamline their workflow.
+Adx_Mtf does one thing: it shows higher timeframe ADX on the current chart. No fluff, no overpromises. It is a practical tool for traders who already understand ADX and want to streamline their workflow.
 
-**Why 4 stars and not 5?**  
-- No built-in alerts.  
-- Lacks advanced features like divergence detection or multi-timeframe histogram.  
+**Why 4 stars and not 5?**
+- No built-in alerts.
+- Lacks advanced features like divergence detection or a multi-timeframe histogram.
 - ADX itself is lagging, so the tool inherits that limitation.
 
-But for what it is – a clean, free, multi-timeframe ADX overlay – it earns its place in my toolkit. If you trade with ADX, install it. If you don’t, skip it.
+For what it is – a clean, free, multi-timeframe ADX overlay – it is worth installing if you trade with ADX. If you don't, skip it.
 
 ---
 
 **Try it yourself.** [Open this indicator on TradingView](https://www.tradingview.com/?aff_id=166324) — nothing beats seeing how a signal plays out on your own watchlist.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ADX/DMI** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 56.2%, GBPUSD 54.2%, AMD 53.0%, AVAXUSD 52.8%
+- Weakest markets: LTCUSD 44.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.

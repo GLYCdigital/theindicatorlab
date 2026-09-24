@@ -16,114 +16,114 @@ categories:
   - Technical Analysis
 rating: 4
 description: "SMC-based tool mapping equilibrium, premium/discount zones, and dealing ranges. Clear visual structure but not a silver bullet. 4/5 stars."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-This is a Smart Money Concepts (SMC) indicator that auto-draws the **Dealing Range** (the high-to-low range of a chosen lookback period), then splits that range into **equilibrium** (the midpoint), **premium** (upper half), and **discount** (lower half) zones. It also marks **liquidity levels** and **order blocks** within those zones. No repainting, no magic—just clean SMC geometry on your chart.
+This is a Smart Money Concepts (SMC) indicator that auto-draws the **Dealing Range** (the high-to-low range of a chosen lookback period), then splits that range into **equilibrium** (the midpoint), **premium** (upper half), and **discount** (lower half) zones. It also marks **liquidity levels** and **order blocks** within those zones. The intent is clean SMC geometry on the chart rather than a signal generator.
 
-I’ve been running this on BTCUSD 1H and 15M for two weeks. The chart above shows it applied to a recent swing: the dealing range (gray rectangle), equilibrium line (dashed white), premium zone (red tint), discount zone (green tint), and a few order blocks (small rectangles). It’s not an entry signal—it’s a framework.
+The setup typically renders as a dealing range rectangle, an equilibrium line at the midpoint, tinted premium and discount zones, and small rectangles marking order blocks. It is a framework for context, not an entry trigger.
 
 ## Key Features That Set It Apart
 
-- **Auto-ranging with adjustable lookback** – You set the period (default 20 bars). It finds the highest high and lowest low in that window. No manual rectangle drawing.
-- **Premium/Discount shading** – Red overlay for the top 50% (premium), green for the bottom 50% (discount). Makes it instantly obvious where price is “expensive” vs “cheap” relative to recent range.
-- **Equilibrium line** – The midpoint. Many SMC traders use this as a magnet for mean reversion.
-- **Order block markers** – Detects and plots recent order blocks inside the range. Useful for confluence.
-- **Liquidity sweep detection** – Flags when price takes out a previous swing high/low before reversing. Common SMC trigger.
+- **Auto-ranging with adjustable lookback** – The lookback period defines the window; the indicator finds the highest high and lowest low within it, so you don't have to draw the rectangle manually.
+- **Premium/Discount shading** – A tinted overlay distinguishes the upper half (premium) from the lower half (discount), making it visually obvious where price sits relative to the recent range.
+- **Equilibrium line** – The midpoint of the range. In SMC usage this is often treated as a mean-reversion reference rather than a reversal guarantee.
+- **Order block markers** – Detects and plots recent order blocks inside the range, useful for confluence with the zone framework.
+- **Liquidity sweep detection** – Flags when price takes out a previous swing high or low before reversing, a common SMC trigger.
 
-It’s not revolutionary—you could draw all this manually—but it saves 10–15 minutes per chart setup.
+None of this is revolutionary—the same geometry can be drawn by hand—but it removes the manual drawing step from each chart setup.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I tested three configurations before settling on this:
+The settings that matter most are the ones that define the range and the zones:
 
-**Timeframe: 1H (primary), 15M (for precision)**
-- Lookback Period: **20** (sweet spot for intraday swings. 50+ gets too laggy)
-- Show Premium/Discount: **ON** (the whole point)
-- Show Equilibrium: **ON**
-- Order Block Sensitivity: **Medium** (High gives too many false positives on noise)
-- Liquidity Sweep Radius: **3 bars** (catches sweeps without triggering on every wick)
-- Color Scheme: Default works fine. I changed premium to light red, discount to light green for contrast.
+- **Lookback Period** – The number of bars used to compute the dealing range. A shorter window tracks recent swings closely; a longer window produces a broader, slower-moving range.
+- **Show Premium/Discount** – Toggles the zone shading. This is the core visual output of the indicator.
+- **Show Equilibrium** – Toggles the midpoint line.
+- **Order Block Sensitivity** – Controls how aggressively order blocks are flagged. Lower sensitivity returns fewer, more selective markers; higher sensitivity returns more markers, including ones drawn from minor pushes.
+- **Liquidity Sweep Radius** – Defines how far back the indicator looks when checking whether a prior swing high or low has been taken out.
+- **Color Scheme** – Cosmetic only. Adjusting premium and discount colors for contrast is reasonable if the defaults are hard to read on your chart.
+- **Show Only Current Range** – When enabled, hides prior ranges. Leaving it off preserves historical ranges for context.
 
-Don’t touch the “Show Only Current Range” toggle—leave it off. You want to see the previous range for context.
+There is no single "best" configuration here. The right values depend on the instrument, the timeframe, and whether you want the range to track recent price action tightly or represent a broader structural area.
 
 ## How to Use It for Entries and Exits
 
-This isn’t a standalone system. It’s a **context tool**. Here’s how I actually trade with it:
+This is not a standalone system. It is a **context tool**, and any entry logic layered on top has to come from your own strategy.
 
-**Long entries (discount zone):**
-1. Wait for price to enter the discount zone (green) below equilibrium.
+A common way traders frame it:
+
+**Long setups (discount zone):**
+1. Wait for price to enter the discount zone below equilibrium.
 2. Look for a bullish order block or liquidity sweep inside that zone.
-3. Enter on a 1H bullish candlestick close above the order block.
-4. Stop loss: 5–10 pips below the nearest swing low inside the discount zone.
-5. Target: Equilibrium line first (quick scalp), then premium zone if momentum holds.
+3. Enter on a bullish candlestick close above the order block.
+4. Stop loss below the nearest swing low inside the discount zone.
+5. Target the equilibrium line first, then the premium zone if momentum holds.
 
-**Short entries (premium zone):**
-1. Price in premium zone (red) above equilibrium.
-2. Bearish order block or liquidity sweep at the top.
-3. Enter on bearish candle close below the order block.
-4. Stop loss: 5–10 pips above the nearest swing high.
-5. Target: Equilibrium, then discount zone.
+**Short setups (premium zone):**
+1. Price in the premium zone above equilibrium.
+2. Bearish order block or liquidity sweep at the top of the range.
+3. Enter on a bearish candle close below the order block.
+4. Stop loss above the nearest swing high.
+5. Target equilibrium, then the discount zone.
 
-**What not to do:** Don’t fade the equilibrium line blindly. It’s a midpoint, not a guaranteed reversal. I saw it get sliced through cleanly on a news spike—stop loss hit instantly.
+**What not to do:** Don't fade the equilibrium line blindly. It is a midpoint, not a guaranteed reversal level, and price can slice straight through it—especially on a news spike—without giving a clean reaction.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean, non-cluttered visuals. No rainbow lines.
-- Saves hours of manual rectangle drawing.
-- Works across all timeframes (tested 1M to 1D).
-- Order block detection is actually decent—few false positives on medium sensitivity.
-- Free to use (no paywall).
+- Clean, non-cluttered visuals.
+- Removes the manual work of drawing dealing ranges.
+- The premium/discount concept applies across markets and timeframes.
+- Order block detection is serviceable at moderate sensitivity, with relatively few false positives.
+- Free to use.
 
 **Cons:**
-- The dealing range is static within the lookback window. If price expands beyond it, the range shifts—your zones redraw. Can be disorienting mid-trade.
-- No alert functionality built-in. You have to manually watch price approach zones.
+- The dealing range is static within the lookback window. If price expands beyond it, the range shifts and the zones redraw, which can be disorienting mid-trade.
+- No built-in alert functionality. Price approaching a zone has to be watched manually.
 - Equilibrium acts as a magnet but also as a trap. Price often kisses it and reverses, but sometimes blasts through.
-- Order block detection is basic—it doesn’t distinguish between structural order blocks and random pushes.
+- Order block detection is basic—it doesn't distinguish between structural order blocks and random pushes.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-**Perfect for:** SMC beginners who don’t want to manually draw ranges. Day traders on 1H–4H who need a quick visual of premium/discount. Swing traders who want to enter near the cheap side of a range.
+**Suited to:** SMC traders who don't want to manually draw ranges, and anyone who wants a quick visual of premium versus discount within a recent range.
 
-**Not for:** Scalpers (too slow to redraw). Price action purists who prefer manual analysis. Anyone expecting an automated entry signal.
+**Not suited to:** Traders who need automated entry signals, or price action purists who prefer to draw their own levels.
 
 ## Better Alternatives If They Exist
 
-- **LuxAlgo’s Premium Discount Zones** – More advanced, includes Fibonacci ratios and multi-timeframe alignment. Paid, but better for pro use.
-- **Manual drawing with Rectangle tool + Custom Ranges indicator** – If you want full control, skip the automation. This indicator is a middle ground.
-- **Order Block by LuxAlgo** – Better order block detection if that’s your main need. But it lacks the premium/discount framework.
+- **LuxAlgo's Premium Discount Zones** – More advanced, with additional ratio and multi-timeframe features. Paid.
+- **Manual drawing with a Rectangle tool plus a custom ranges indicator** – Full control, no automation. This indicator sits in the middle ground.
+- **Order Block tools from LuxAlgo** – Stronger order block detection if that's the main requirement, though they lack the premium/discount framework.
 
-If you’re on a budget, this is the best free SMC range tool I’ve found. If you’re willing to pay, LuxAlgo’s suite does more.
+For a free SMC range tool, this one covers the basics. Paid suites do more.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does it repaint?**  
-A: No. Once a bar closes, the zones lock. But the dealing range can shift as new highs/lows form within the lookback window.
+**Q: Does it repaint?**
+A: Zones lock once a bar closes, but the dealing range can shift as new highs or lows form within the lookback window.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works fine on BTC, ETH, altcoins. Tested on Binance data.
+**Q: Can I use it on crypto?**
+A: Yes—the premium/discount concept applies to crypto markets.
 
-**Q: What timeframe is best?**  
-A: 1H for swing trading, 15M for intraday. Avoid 1M—too much noise.
+**Q: What timeframe is best?**
+A: It depends on your holding period. Shorter timeframes produce more noise, which makes the zone shading less useful.
 
-**Q: Does it work with Forex?**  
-A: Yes. Tested on EURUSD and GBPJPY. The premium/discount concept applies to any market.
+**Q: Does it work with Forex?**
+A: Yes. The premium/discount concept applies to any market.
 
-**Q: Why did my zones suddenly change?**  
-A: The lookback window updates each bar. If a new 20-bar high or low forms, the range recalculates. That’s expected behavior, not a bug.
+**Q: Why did my zones suddenly change?**
+A: The lookback window updates each bar. If a new high or low forms within that window, the range recalculates. That's expected behavior, not a bug.
 
 ## Final Verdict
 
-This is a **solid 4-star utility tool** for SMC traders. It does one thing—draw dealing ranges with premium/discount zones—and does it well. No fluff, no false promises. You still need to bring your own entry strategy and risk management.
+A solid utility tool for SMC traders. It does one thing—draw dealing ranges with premium/discount zones—and does it without fluff or false promises. You still need to bring your own entry strategy and risk management.
 
-It won’t make you a profitable trader overnight. But if you already use SMC concepts, it’ll save you drawing time and keep your charts consistent.
+It won't make anyone a profitable trader on its own. But if you already use SMC concepts, it removes drawing time and keeps charts consistent.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-*Would give 5 stars if it had alerts and multi-timeframe range overlays.*
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)**
+*Would be 5 stars with alerts and multi-timeframe range overlays.*
 
 ## Go Deeper with The Indicator Lab
 

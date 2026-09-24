@@ -16,56 +16,54 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A smart liquidity grab detector with PRL engine for clean entry signals. Best on 15m-1H for crypto and forex. 4/5 stars."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-This isn't another pile-of-lines oscillator. The **Liquidity_Grab_Prl_Engine_Erdensedat** scans price action for liquidity sweeps (stop hunts) and then applies a "PRL Engine" — a proprietary logic that filters false breaks from real ones. It marks potential grab zones on the chart where smart money likely entered, and the indicator repaints slightly to confirm the grab after the move has started. Annoying? Yes. But it reduces noise by about 40% compared to raw liquidity tools I've tested.
+This isn't another pile-of-lines oscillator. The **Liquidity_Grab_Prl_Engine_Erdensedat** scans price action for liquidity sweeps (stop hunts) and then applies a "PRL Engine" — logic intended to filter false breaks from real ones. It marks potential grab zones on the chart where smart money may have entered, and it confirms the grab after the move has started, meaning the initial signal can appear late.
 
 ## Key Features That Set It Apart
 
-- **PRL Engine filter**: It cross-references volume and momentum to decide if a liquidity grab was "real" — not just a wick. This is the secret sauce.
-- **Multi-timeframe alignment**: You can set a higher timeframe bias (e.g., 1H) to only show signals that align with the bigger trend.
-- **Auto zone labeling**: Each grab zone is numbered and shows the strength rating (1-3). Stronger = more likely to hold.
-- **Alert system**: Alerts when a new grab zone forms and when price revisits it. Essential for scalpers.
+- **PRL Engine filter**: Cross-references volume and momentum to decide if a liquidity grab was "real" — not just a wick.
+- **Multi-timeframe alignment**: A higher timeframe bias can be set so that only signals aligned with the bigger trend are shown.
+- **Auto zone labeling**: Each grab zone is numbered and carries a strength rating. Stronger zones are presented as more likely to hold.
+- **Alert system**: Alerts when a new grab zone forms and when price revisits it.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After a week of testing on BTC/USDT, EUR/USD, and NAS100:
-
-- **Timeframe**: 15m to 1H works best. Lower than 5m = too many false signals. Higher than 4H = too laggy.
-- **PRL Sensitivity**: Set to **Medium** for crypto, **High** for forex. High on BTC gave me 3 false signals out of 10.
-- **Minimum Grab Strength**: 2. Ignore strength 1 zones — they fail 70% of the time.
-- **Multi-timeframe Filter**: Enable and set to 1H if you're on 15m. It killed about 20% of signals but improved win rate from 55% to 68% in my sample.
+- **Timeframe**: Mid-range intraday timeframes are the intended use. Very low timeframes produce more false signals; very high timeframes lag.
+- **PRL Sensitivity**: A sensitivity control governs how strict the filter is. Higher sensitivity means fewer, more selective signals.
+- **Minimum Grab Strength**: A threshold that hides weaker zones from the chart. Raising it removes the lowest-rated zones.
+- **Multi-timeframe Filter**: Enable and align it to a higher timeframe than your chart. This reduces the number of signals shown.
 
 ## How to Use It for Entries and Exits
 
-**Entry**: Wait for price to revisit a marked grab zone (strength 2+). Look for a reversal candlestick pattern (pin bar, engulfing) at the zone. Enter on the close of that candle. The chart above shows a clean example on BTC — price grabbed below a swing low, then bounced hard at the marked box.
+**Entry**: Wait for price to revisit a marked grab zone of sufficient strength. Look for a reversal candlestick pattern (pin bar, engulfing) at the zone, and enter on the close of that candle.
 
-**Exit**: Take partial profits at the next liquidity zone above/below. Use a trailing stop once price moves 1.5x the zone's range. The indicator doesn't give TP levels, so you'll need your own risk management.
+**Exit**: Take partial profits at the next liquidity zone above or below. A trailing stop can be used once price has moved beyond the zone's range. The indicator does not provide take-profit levels, so risk management is on you.
 
-**Stop loss**: Place 5-10 pips (or 0.2% in crypto) beyond the grab zone's wick. If the zone is invalidated, you're out fast.
+**Stop loss**: Place the stop beyond the grab zone's wick. If the zone is invalidated, exit.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Filters out most fake liquidity sweeps
-- Works well on trending pairs (EUR/USD, BTC)
-- Alert system is reliable — I didn't miss a single signal
-- Not overloaded with settings — you can set it up in 2 minutes
+- Filters out many fake liquidity sweeps
+- Suited to trending pairs
+- Alert system covers both zone formation and revisits
+- Not overloaded with settings
 
 **Cons:**
-- Slight repaint — it doesn't show the grab until the candle closes. For scalpers on lower timeframes, this hurts.
-- No built-in take-profit levels. You have to layer on another tool.
-- Strength 1 zones are mostly noise. The default should be set to 2.
-- Documentation is sparse. The "PRL Engine" acronym isn't explained anywhere.
+- The initial signal can appear only after the candle closes, so it can lag the move
+- No built-in take-profit levels — you have to layer on another tool
+- The lowest strength zones are mostly noise
+- Documentation is sparse; the "PRL Engine" acronym isn't explained anywhere
 
 ## Who It's Actually For
 
-This is for intermediate+ traders who already understand liquidity grabs and want a cleaner signal. Beginners will get confused by the zone labels and repaint behavior. Best suited for:
-- Swing traders on 1H-4H
-- Intraday traders on 15m
-- Crypto and forex (less effective on stocks due to lower volume)
+This is for traders who already understand liquidity grabs and want a cleaner signal. Beginners may find the zone labels and late confirmation confusing. Suited to:
+- Swing traders on higher intraday timeframes
+- Intraday traders on mid-range timeframes
+- Crypto and forex, where volume is typically higher than in individual stocks
 
 ## Better Alternatives If They Exist
 
@@ -73,29 +71,27 @@ This is for intermediate+ traders who already understand liquidity grabs and wan
 - **Smart Money Concepts (SMC) Suite**: More comprehensive with order blocks, but heavier on the chart.
 - **Order Flow Liquidity**: Better for futures traders who want volume profile integration.
 
-If you're looking for a no-repaint liquidity tool, skip this. Otherwise, the PRL Engine gives you a genuine edge.
+If you're looking for a no-repaint liquidity tool, skip this. Otherwise, the PRL Engine is a genuine attempt at filtering liquidity signals.
 
 ## FAQ
 
-**Q: Does this indicator repaint?**  
-A: Yes, slightly. It confirms the grab after the candle closes. It won't repaint after that, but the initial signal can appear after the move starts.
+**Q: Does this indicator repaint?**
+A: The initial signal can appear only after the candle closes, so confirmation can arrive after the move has started. It does not repaint after that.
 
-**Q: Can I use it on 1-minute charts?**  
-A: Not recommended. The repaint and noise will kill you. Stick to 15m+.
+**Q: Can I use it on 1-minute charts?**
+A: Not recommended. The late confirmation and noise make it poorly suited to very low timeframes. Mid-range timeframes and above are the intended use.
 
-**Q: What does "PRL" stand for?**  
-A: The creator doesn't say. Best guess: "Price Reversal Logic" — it's a momentum+volume filter.
+**Q: What does "PRL" stand for?**
+A: The creator doesn't say. It functions as a momentum-plus-volume filter.
 
-**Q: Is it worth $50?**  
-A: For the filtering alone, yes. But only if you already trade liquidity concepts. Don't buy it expecting a magic button.
+**Q: Is it worth the asking price?**
+A: Only if you already trade liquidity concepts. Don't buy it expecting a magic button.
 
 ## Final Verdict
 
-The Liquidity_Grab_Prl_Engine_Erdensedat is a solid tool for anyone trading liquidity grabs who's tired of false signals. The PRL filter genuinely improves accuracy, even with the slight repaint. It's not perfect — strength 1 zones are useless and you'll need your own TP strategy — but for the price, it delivers.
+The Liquidity_Grab_Prl_Engine_Erdensedat is a tool for traders working with liquidity grabs who are tired of false signals. The PRL filter is designed to improve selectivity, at the cost of late confirmation and no built-in take-profit logic. It's not perfect — the weakest zones are noise and you'll need your own exit strategy — but it addresses a real problem.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

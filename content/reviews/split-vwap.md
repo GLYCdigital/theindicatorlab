@@ -17,92 +17,76 @@ categories:
 rating: 4
 description: "Honest Split_Vwap review: tested settings, entry/exit rules, pros & cons. See if this session-split VWAP tool fits your intraday strategy."
 tv_script_url: "https://www.tradingview.com/script/v2BhTtjK-Split-VWAP/"
+sources: ["https://www.tradingview.com/script/v2BhTtjK-Split-VWAP/"]
 ---
-Let me be upfront: I've tested dozens of VWAP variants over the years, and most are just repackaged moving averages with a fancy name. Split_Vwap isn't that. It actually does something different — it resets the VWAP calculation at defined session boundaries, letting you see institutional order flow per session instead of one continuous line that becomes useless by Thursday afternoon.
-
-Here's what I found after running it on daily charts, 5-minute ES futures, and crypto pairs for two weeks straight.
-
 **What Split_Vwap Actually Does**
 
-Standard VWAP anchors to the first tick of the day and accumulates volume-weighted price from there. It's great for the first few hours, but by mid-session the line barely moves because it's averaging in thousands of prints. Split_Vwap fixes this by partitioning the session into customizable segments — you can reset it every hour, every 30 minutes, or at specific times like the London and New York opens. Each segment gets its own VWAP line, its own standard deviation bands, and its own mean-reversion logic.
+Standard VWAP anchors to the first tick of the session and accumulates volume-weighted price from there. Split_Vwap takes a different approach: it cuts every bar horizontally at the session VWAP and draws that bar as two candles at the same position — one spanning the low up to VWAP, one spanning VWAP up to the high. Each partial takes the bar's open and close clamped into its own range, and a share of the bar's volume proportional to its height.
 
-The chart above shows it on a MACD chart type, which actually pairs well because the VWAP lines give you the trend context while MACD confirms momentum shifts. Notice how the split lines react to price much faster than a traditional daily VWAP would — that's the entire point.
+The reasoning is straightforward. A single candle gives you four prices and one volume total, but says nothing about how that activity was distributed relative to the session's average price. Splitting the bar at VWAP and attributing volume to each side makes that distribution visible.
 
-**Key Features That Stand Out**
+Where VWAP sits at or beyond a bar's extreme, one partial collapses to zero height and the other takes the whole bar and all of its volume. The collapsed partial is hidden by default.
 
-The session boundary customization is the headline feature. You're not locked into a single reset time. I tested 30-minute splits on the 5-minute timeframe, and the indicator cleanly plotted fresh VWAP bands every half hour. That's genuinely useful for scalpers who want to know if price is above or below the *current* session's average, not yesterday's.
+**How the Colouring Works**
 
-The deviation bands are also well-implemented. They use the same rolling standard deviation calculation as classic Bollinger Bands but applied to each segment. When price tags the +2σ band in the first 10 minutes of a new segment, that's a statistically meaningful overextension — not noise from three hours ago.
+Each partial is coloured from two changes, both measured against the previous bar's partial on the same side of VWAP: the change in attributed volume, and the change in clamped close.
 
-One thing I appreciate: the indicator doesn't repaint. The VWAP for a closed segment stays fixed. No curve-fitting tricks, no "look at this perfect signal" that disappears after the fact.
+In the default mode, "Volume hue OKLCh", each change gets a channel of its own. The volume change moves the hue along a continuum — red when it fell, green when it held, blue when it rose. The price change moves the lightness: lighter when the close rose, darker when it fell.
 
-**Best Settings (Tested, Not Theorized)**
+All three anchors sit at the same OKLCh lightness and hold as much chroma as their hue can carry at that lightness, capped so the ends do not shout over the middle. Green is the quiet one because green simply cannot hold as much. OKLCh is used rather than HSL because HSL treats lightness as a function of the hue you happen to be on, so a fixed magnitude renders brighter on some hues than others; in OKLCh, lightness, chroma and hue move independently.
 
-After running through multiple configurations, here's what worked:
+Bodies are hollow when the partial's clamped close is above its clamped open, and solid otherwise. A dot marks the VWAP level itself, coloured by the same scheme applied to the whole bar.
 
-- **Timeframe:** 5-minute or 15-minute charts. Anything lower gets choppy; anything higher defeats the purpose of session-splitting.
-- **Segment length:** 1-hour for day trading. It aligns well with typical institutional rebalancing windows. For scalping, 30-minute segments on the 5-minute chartwork okay, but expect more whipsaw at the boundaries.
-- **Deviation multiplier:** 2.0 for standard entries, 2.5 for high-conviction trades. The 1.5 setting triggers too often on ranging days.
-- **Color scheme:** Default is fine. I switched to solid lines instead of dashed for cleaner visual scanning, but that's personal preference.
+Three further modes are included — Quadrant intensity, Bilinear blend and Polar OKLCh. These read the two changes as four corner colours instead of two channels, one per sign combination, and use magnitude to drive chroma and opacity. Every corner and anchor colour is an input.
 
-**How I Actually Traded It**
+**Scaling**
 
-The cleanest setup was mean reversion at the extremes. Price tags the +2σ band of a fresh segment, MACD shows bearish divergence, and I take a counter-trend scalp back toward the VWAP line. The stop goes above the band, target is the VWAP itself. On the MACD chart type, this confluence was particularly strong — the momentum confirmation filters out false band touches.
+Every series is normalised against the dispersion of its own bar-to-bar changes: a multiple of the mean absolute change over a lookback, which is roughly two standard deviations for a well-behaved distribution but far less sensitive to the occasional volume spike.
 
-For trend following, I used a simpler rule: stay long as long as price holds above the current segment's VWAP, and the most recent segment's VWAP is rising. Exit when price closes below the VWAP line *and* MACD crosses below signal. This caught clean moves on trending days but sat out chop — which is fine, chop kills accounts.
+Measuring each series against itself matters more than it sounds. A partial carries only a fraction of the bar's volume, so normalising its volume change against the whole bar's average volume compresses that axis and leaves the colour field stuck near the middle. In the other direction, half the ATR is smaller than a typical close-to-close move, so the price axis clips on a large share of bars. It also gives the VWAP-pinned partial a usable scale: when a bar closes above VWAP the lower partial's close is pinned to the cut, so its only movement is VWAP drift — small in absolute terms, but perfectly legible against its own dispersion.
 
-The session boundary reset is where you need discipline. When the new segment starts, the old VWAP levels are meaningless. I had to train myself to ignore the previous hour's +2σ touch because the new segment might be at a completely different price level.
+The consequence worth holding on to while reading the chart: the colour says how unusual a change is for that partial, not how large it is in absolute terms.
 
-**Pros & Cons**
+**Setup**
 
-**Pros:**
-- Fast-reacting VWAP that doesn't lag into uselessness
-- Genuinely customizable session boundaries
-- No repainting, clean code, minimal CPU load
-- Deviation bands are statistically meaningful per segment
+The script paints over the chart's native candles, but Pine cannot hide the chart symbol itself. For the cleanest result, right-click the chart, open Settings -> Symbol, and uncheck Body, Borders and Wick.
 
-**Cons:**
-- No built-in alerts for band touches (I had to code my own)
-- The interface for setting custom times isn't intuitive — took me 10 minutes to figure out the timezone handling
-- On quiet overnight sessions, the split VWAP can sit nearly flat and generate false signals
-- Doesn't work well on daily or weekly charts — this is strictly an intraday tool
+**Settings and How to Tune Them**
 
-**Who Should Use This**
+- **Gradient mode** — the four schemes described above.
+- **Price lightness span** — how far a full-strength price change moves the lightness off the anchor, in OKLCh lightness. Default 0.16. A wider span reads more decisively but costs colour at both ends, because sRGB is widest in the middle and narrows toward black and toward white. Rather than let the channels clip, the requested chroma is fitted to whatever the lightness and hue can actually carry, so bright bars are pastel and dark bars are saturated.
+- **Response ramp** — how quickly the colour responds as a change grows. 1.0 is proportional; the default 0.6 reaches most of the response earlier, so only genuinely quiet bars stay washed out.
+- **Price change scale / Volume change scale** — the lookbacks for the two normalisers.
+- **Transparency at no change** — how far quiet bars recede. Lower it if the quiet end reads too faint.
 
-Intraday traders who understand that VWAP is a mean-reversion tool, not a magic line. If you trade the first hour of the US session and want to know where institutional buyers stepped in at 9:45 AM specifically, this gives you that answer. Scalpers on the 5-minute timeframe will get the most value. Swing traders should skip it — you need a rolling or anchored VWAP instead.
+**Limitations**
 
-**Alternatives Worth Considering**
+Volume attribution is proportional to segment height, not measured from intrabar data. It is a shape-preserving approximation, not a true intrabar volume profile.
 
-- **VWAP Session:** Cheaper, simpler, but only splits at fixed intraday times. Good if you don't need custom segments.
-- **CryptoVWAP:** Better for crypto specifically because it handles 24/7 sessions properly. Split_Vwap's timezone settings feel equity-focused.
-- **Volume Weighted MACD:** If you want the same concept but momentum-weighted, this is a solid hybrid.
+The VWAP is session-anchored, so the split level resets at each session boundary and the first bars of a session sit close to it.
 
-**Real Questions Traders Ask**
+On a strongly trending session, price can run far enough from the session VWAP that one partial collapses on most bars and the display degrades toward ordinary candles. That is expected behaviour rather than a fault.
 
-*Does it work on crypto?*
-Yes, but you'll need to configure the session boundaries manually since crypto never closes. I tested it on BTC/USDT with 4-hour segments and it worked fine.
+The script requires a symbol that reports volume, and raises a runtime error on symbols that report none.
 
-*Can I use it for pre-market analysis?*
-The RTH session handles pre-market separately if you set the boundary correctly. I found 4 AM ET to 9:30 AM ET as one segment captures the overnight range cleanly.
+**Originality**
 
-*Is it worth the price?*
-If you're already profitable with VWAP and want more precision, yes. If you're just starting, learn standard VWAP first — this adds complexity without fixing fundamental trading skill gaps.
-
-**Final Verdict**
-
-Split_Vwap earns four stars because it solves a real problem — standard VWAP's tendency to become irrelevant within hours — without overcomplicating the core concept. It's not revolutionary, but it's a meaningful improvement for intraday traders who actually respect session structure. The lack of alerts and the clunky timezone setup keep it from five stars. If you trade session opens and want to know exactly where the smart money is active *right now*, this is worth the install.
-
-Rating: ⭐⭐⭐⭐ (4/5)
+This is original work. The bar splitting, the volume attribution, the per-partial normalisation, and the OKLCh colour handling — including the OKLab conversions and the chroma fitting, neither of which Pine provides — are implemented from scratch. No third-party code is reused.
 
 ## Frequently Asked Questions
 
-### Is Split_Vwap worth it?
+### What does Split_Vwap actually show?
 
-Based on testing across multiple timeframes, Split_Vwap delivers solid value for traders who need trend analysis.
+It splits each bar at the session VWAP into two partial candles and attributes a share of the bar's volume to each side, proportional to its height. The colour of each partial reflects how unusual its volume change and clamped-close change are relative to its own recent history.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+The source material does not make a repainting claim, so none should be inferred either way. What can be said is that the colouring is computed from changes against the previous bar's partial on the same side of VWAP — it is a comparison to a completed prior value, not a forward-looking projection. Whether any part of the display updates intrabar is not stated in the source.
+
+### What are the main limitations?
+
+Volume attribution is a shape-preserving approximation based on segment height, not true intrabar data. The VWAP is session-anchored, so the split level resets at each session boundary. On strongly trending sessions, one partial can collapse on most bars and the display degrades toward ordinary candles. The script also requires a symbol that reports volume and errors out on those that do not.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

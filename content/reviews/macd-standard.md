@@ -16,97 +16,101 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Macd_Standard review by a trader who tested it. Settings, entry/exit logic, pros/cons, and who should use this classic trend indicator."
+grounding: "none (no source found)"
 ---
-Let’s get one thing straight: this is the MACD. You already know what it does. The Macd_Standard indicator on TradingView is the default MACD implementation—no frills, no hidden AI, no fancy repainting. It’s the same old friend from the 1970s, drawn fresh. And honestly? It’s still worth your time if you use it right.
+# Macd_Standard Review
 
-I’ve spent the last week trading with this thing on multiple timeframes—15min, 1H, and daily—with BTCUSD, EURUSD, and AAPL. Here’s what I found.
+Let's get one thing straight: this is the MACD. You already know what it does. Macd_Standard on TradingView is the default MACD implementation—no frills, no hidden logic, no proprietary extras. It's the same classic tool, drawn fresh. Whether it earns a place on your chart depends entirely on how you use it.
 
-**What It Actually Does**
+## What It Actually Does
 
-Macd_Standard plots the classic MACD line (12-period EMA minus 26-period EMA), a signal line (9-period EMA of the MACD line), and a histogram showing the difference. It’s a lagging trend-following oscillator that measures momentum and trend strength. Nothing more.
+Macd_Standard plots the classic MACD line (the fast EMA minus the slow EMA), a signal line (an EMA of the MACD line), and a histogram showing the difference between the two. It's a lagging trend-following oscillator that measures momentum and trend strength. Nothing more.
 
-**Key Features That Matter**
+## Key Features That Matter
 
-- **Zero-lag? No.** But the default settings (12, 26, 9) are battle-tested. The histogram crossovers and divergences are where the real edge lives.
-- **Divergence detection** is manual, not built-in. You scan price and MACD peaks/troughs yourself. That’s fine—it forces you to think.
-- **Customizable inputs:** You can change fast, slow, and signal lengths. I’ll get to the best tweaks in a second.
+- **Zero-lag? No.** The default settings are the long-established MACD convention. The histogram crossovers and divergences are where most of the analytical value lives.
+- **Divergence detection is manual, not built-in.** You scan price and MACD peaks and troughs yourself. That means no automatic output—it forces you to read the chart.
+- **Customizable inputs:** The fast, slow, and signal lengths can all be changed. Tuning is covered below.
 
-**Best Settings I Tested**
+## Settings and How to Tune Them
 
-The default (12, 26, 9) works for swing trading on 1H–4H. For scalping on 5min–15min, tighten the signal line to 5 or 6 to catch faster exits. For long-term trend following on daily, slow it down: (21, 55, 13) gives fewer false signals.
+The default fast, slow, and signal lengths are the standard MACD configuration and are widely used as a starting point. Beyond that, the parameters are a tradeoff rather than a "best" value:
 
-**How to Use It (Real Strategy)**
+- **Shorter signal length:** Makes the signal line more responsive, producing faster crossovers. The tradeoff is more noise.
+- **Longer fast/slow lengths:** Produces fewer, slower signals that may filter out some whipsaw in choppy conditions, at the cost of responsiveness.
+- **Matching settings to timeframe:** Shorter timeframes generally call for more responsive settings if you want quicker exits; longer timeframes can tolerate slower settings that produce fewer signals.
 
-I tested three setups:
+There is no setting that eliminates lag or guarantees a better result. Choose based on your timeframe and how much noise you're willing to tolerate.
 
-1. **Standard Crossover:** Buy when MACD line crosses above signal line and histogram turns green. Sell when it crosses below and histogram turns red. Works 60% of the time in trending markets. In choppy price action, it whipsaws like crazy.
+## How to Use It
 
-2. **Histogram Zero-Line Reversal:** Wait for histogram to dip below zero and curl back up. Enter long when the bar turns green after a red streak. This catches early reversals better than the line crossover. I got a nice +2.3% on a 1H EURUSD trade using this.
+Three common approaches:
 
-3. **Divergence:** Price makes a lower low, but MACD makes a higher low. Classic bullish divergence. On daily AAPL, this signaled a 5% move two days early. But you have to look at the chart—no automatic alerts here.
+1. **Standard Crossover:** Buy when the MACD line crosses above the signal line and the histogram turns positive; sell when it crosses below and the histogram turns negative. This is a trend-following approach, so it performs poorly in choppy, range-bound price action where it whipsaws.
 
-**Pros & Cons**
+2. **Histogram Zero-Line Reversal:** Wait for the histogram to dip below zero and curl back up, then enter long when the bar turns positive after a negative streak. This attempts to catch reversals earlier than the line crossover, but it is more sensitive to noise.
 
-**Pros:**  
-- Simple, no-nonsense. No repainting, no hidden code.  
-- Works on any timeframe with adjusted settings.  
-- Divergence signals are powerful when you spot them.  
-- Completely free and built into TradingView.
+3. **Divergence:** Price makes a lower low while MACD makes a higher low—classic bullish divergence (and the mirror image for bearish). This requires manual chart reading, since the indicator has no built-in divergence scanner or automatic alerts for it.
 
-**Cons:**  
-- Lags badly in ranging markets. You’ll get faked out.  
-- No built-in divergence scanner—you must do it manually.  
-- Histogram alone is noisy; don’t trade it without price confirmation.  
-- Nothing new. If you’ve used MACD before, you’ve seen this.
+## Pros & Cons
 
-**Who It’s For**
+**Pros:**
+- Simple and transparent—no hidden code.
+- Can be applied across timeframes with adjusted settings.
+- Divergence signals are informative when you identify them manually.
+- Free and built into TradingView.
 
-- **Swing traders** who trade 1H–4H trends and don’t mind waiting for confirmation.  
-- **Beginners** learning trend-following with a classic tool.  
-- **Divergence hunters** who enjoy manual chart analysis.  
+**Cons:**
+- Lags in ranging markets and can produce false signals.
+- No built-in divergence scanner—divergence must be identified by hand.
+- The histogram alone is noisy; it's generally read alongside price action rather than in isolation.
+- Nothing new—if you've used MACD before, you've seen this.
 
-**Who It’s NOT For**
+## Who It's For
 
-- Scalpers who need instant signals.  
-- Traders who hate lag. Use RSI or stochastic instead.  
-- Anyone looking for an “edge” without learning price action. MACD alone won’t save you.
+- **Swing traders** who follow trends on higher timeframes and don't mind waiting for confirmation.
+- **Beginners** learning trend-following with a classic tool.
+- **Divergence hunters** who enjoy manual chart analysis.
 
-**Alternatives**
+## Who It's NOT For
 
-- **MACD Divergence Indicator** by LonesomeTheBlue: Automatically plots divergences—saves time.  
-- **MACD 2 Lines Histogram** by LuxAlgo: Adds histogram smoothing and alert conditions.  
-- **RSI** (if you want faster momentum detection without the lag).
+- Scalpers who need instant signals.
+- Traders who dislike lag.
+- Anyone looking for an "edge" without learning price action. MACD alone won't provide one.
 
-**FAQ**
+## Alternatives
 
-**Q: Does Macd_Standard repaint?**  
-No. Once a bar closes, the MACD values are fixed. No repainting.
+- **MACD Divergence Indicator** by LonesomeTheBlue: Plots divergences automatically.
+- **MACD 2 Lines Histogram** by LuxAlgo: Adds histogram smoothing and alert conditions.
+- **RSI**: A momentum oscillator with different lag characteristics.
 
-**Q: Can I get alerts for crossovers?**  
-Yes. Right-click the indicator > Add Alert > Condition: “MACD line crosses signal line.” Works great.
+## FAQ
 
-**Q: Is it better than MACD on other platforms?**  
-It’s identical. The only difference is TradingView’s charting and alert system.
+**Q: Does Macd_Standard repaint?**
+No. Once a bar closes, the MACD values are fixed.
 
-**Q: What’s the best timeframe?**  
-1H–4H for swing. Daily for long-term. 15min if you scalp with tight stops.
+**Q: Can I get alerts for crossovers?**
+Yes. TradingView's alert system lets you set a condition for the MACD line crossing the signal line.
 
-**Final Verdict**
+**Q: Is it better than MACD on other platforms?**
+The calculation is the same. The difference is TradingView's charting and alert system.
 
-Macd_Standard is a 4/5 star rating. It’s not sexy. It’s not new. But it’s reliable when used with a trend filter (e.g., 200 EMA) and price action. If you’re expecting a magic bullet, look elsewhere. If you want a solid, honest trend indicator that’s stood the test of time, this is it. Just don’t blame the tool when your entries are bad—that’s on you.
+**Q: What's the best timeframe?**
+There is no single best timeframe. Higher timeframes suit swing and longer-term trend following; shorter timeframes suit more active trading, with correspondingly more noise.
 
-**⭐ ⭐ ⭐ ⭐**
+## Final Verdict
 
-## Frequently Asked Questions
+Macd_Standard is a solid, unglamorous implementation of a classic indicator. It's not new, and it isn't a magic bullet. Used alongside a trend filter and price action, it can serve as a reliable momentum and trend reference. Expecting it to generate an edge on its own is a mistake—the entries are still on you.
 
-### Is Macd_Standard worth it?
+## What This Class of Signal Has Actually Done
 
-Based on testing across multiple timeframes, Macd_Standard delivers solid value for traders who need trend analysis.
+*Not this script. A canonical **MACD** implementation was backtested on 30 markets over 5 years of daily data (43,707 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-### Does this indicator repaint?
+- **Pooled 5-day directional accuracy: 48.8%** (50% = coin flip)
+- Strongest markets: TSLA 53.1%, AMD 52.8%, AAPL 52.3%, AVAXUSD 52.0%
+- Weakest markets: GOOGL 46.6%, AMZN 45.4%, SHIBUSD 27.8%
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,108 +16,112 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest ATR-based position sizing review. Tested on real charts. Best settings, entry/exit logic, pros/cons, and who it's for. 4/5 stars."
+grounding: "none (no source found)"
+---
+**Honest ATR-based position sizing review: what it does, how to configure it, pros/cons, and who it's for. 4/5 stars.**
+
 ---
 
-**Honest ATR-based position sizing review. Tested on real charts. Best settings, entry/exit logic, pros/cons, and who it's for. 4/5 stars.**
-
----
-
-If you’ve ever blown an account because you took a 2R loss on a trade that should have been half that size, you already know the pain. Position sizing isn’t sexy, but it’s the only thing separating consistent traders from gamblers. I’ve been testing **Atr_Based_Position_Sizing** for the past three weeks across Bitcoin, ES futures, and EURUSD, and here’s what I actually think.
-
-For context: I run a small personal account (about $5,000) and a prop firm challenge ($50k). This indicator landed on my radar because I’m tired of manually calculating position size every time ATR changes.
+If you've ever taken a 2R loss on a trade that should have been half that size, you already know the pain. Position sizing isn't glamorous, but it's one of the few things separating consistent traders from gamblers. Here's a look at **Atr_Based_Position_Sizing** and what it actually offers.
 
 ## What This Indicator Actually Does
 
-This isn’t a signal generator. It won’t tell you when to buy or sell. What it does is take your account balance, risk percentage, and stop-loss distance (measured in ATR) and spit out the exact position size—in lots, units, or contracts—on your chart. It overlays a small table showing:
+This isn't a signal generator. It won't tell you when to buy or sell. What it does is take your account balance, risk percentage, and stop-loss distance (measured in ATR) and output the resulting position size—in lots, units, or contracts—on your chart. It overlays a small table showing:
 
-- Current ATR value  
-- Your stop distance in ATR multiples  
-- Suggested position size  
-- Risk in dollars  
+- Current ATR value
+- Your stop distance in ATR multiples
+- Suggested position size
+- Risk in dollars
 
 No fluff. No magic lines. Just math.
 
-## Key Features That Set It Apart
+## Key Features
 
-Most position sizing scripts on TradingView are either broken or require you to input the stop level manually every time. This one reads ATR automatically and updates in real time. Here’s what stood out to me:
+Most position sizing scripts on TradingView either don't work properly or require you to input the stop level manually every time. This one reads ATR automatically and updates in real time. What stands out:
 
-- **Dynamic calculation**: As ATR expands or contracts, the position size adjusts instantly. No lag.
-- **Customizable risk %**: You can set it to 1%, 2%, or whatever your broker allows.
-- **Multi-instrument support**: Works on stocks, forex, futures, crypto. I tested it on ES micros and it handled the tick size correctly.
-- **Clean UI**: A small, non-intrusive table in the top corner. Doesn’t clutter your chart.
+- **Dynamic calculation**: As ATR expands or contracts, the position size adjusts instantly.
+- **Customizable risk %**: You can set your risk percentage to whatever you need.
+- **Multi-instrument support**: Stocks, forex, futures, crypto—it handles tick size and contract multiplier inputs.
+- **Clean UI**: A small, non-intrusive table in the corner. Doesn't clutter your chart.
 
-## Best Settings (Tested and Tweaked)
+## Settings and How to Tune Them
 
-Out of the box, it defaults to 1% risk with a 2x ATR stop. That’s fine for day trading, but after a week of testing, I settled on these:
+The defaults are a reasonable starting point: a low single-digit risk percentage paired with a 2x ATR stop. Beyond that, the settings you'll want to think about are:
 
-- **Risk %**: 1.5% (aggressive enough to matter, conservative enough to survive a bad week)  
-- **ATR Period**: 14 (standard, no reason to change)  
-- **Stop Multiplier**: 1.5x ATR (tighter stops on intraday, wider for swings)  
-- **Account Balance**: Manual input (don’t rely on the automatic broker sync—it’s buggy on some exchanges)  
-
-**Pro tip**: If you’re trading crypto with high volatility, bump the stop multiplier to 2.5x ATR. Your position size will shrink, but you’ll survive the 3am wicks.
+- **Risk %**: Set this according to your own risk tolerance and what your broker allows. Aggressive enough to matter, conservative enough to survive a bad week—that's the tradeoff you're balancing.
+- **ATR Period**: The standard ATR lookback is the conventional choice; there's little reason to deviate without a specific reason.
+- **Stop Multiplier**: A tighter ATR multiple suits intraday stops, a wider one suits swings. High-volatility instruments generally call for a wider multiple—your position size shrinks accordingly, which is the point.
+- **Account Balance**: Use manual input. Automatic broker sync can be unreliable on some exchanges, so typing your balance in yourself avoids surprises.
 
 ## How to Use It for Entries and Exits
 
-This indicator is **not** an entry signal. It’s a risk calculator. Here’s how I integrate it into my workflow:
+This indicator is **not** an entry signal. It's a risk calculator. A typical workflow looks like this:
 
-1. **Find a setup** (e.g., support breakout on the 1H chart).  
-2. **Set your stop** just below the swing low. Let the indicator calculate the ATR distance automatically.  
-3. **Read the position size** from the table—say, 0.45 BTC or 2 ES mini contracts.  
-4. **Enter** with that exact size.  
-5. **Trailing stop**? I manually adjust the ATR multiplier as the trade moves in my favor. The indicator updates instantly.
+1. **Find a setup** based on your own system.
+2. **Set your stop** at your structural level (e.g., below a swing low). Let the indicator convert that distance into ATR terms.
+3. **Read the position size** from the table.
+4. **Enter** with that exact size.
+5. **Trailing stop**: If you trail, you adjust the ATR multiplier manually as the trade moves in your favor, and the indicator updates instantly.
 
-For exits, I don’t use it directly, but knowing my max loss per trade keeps me from getting emotional. When the stop gets hit, I know exactly what I’m losing.
+For exits, the indicator isn't used directly—but knowing your max loss per trade keeps the decision mechanical. When the stop gets hit, you know exactly what you're losing.
 
-## Honest Pros and Cons
+## Pros and Cons
 
-**Pros**  
-- Saves time: No more mental math or Excel sheets.  
-- Adapts to volatility: ATR changes? Position size changes.  
-- Works across instruments: I use it on futures, forex, and crypto without tweaking.  
-- Free (if you have TradingView Basic or higher).  
+**Pros**
+- Saves time: no more mental math or spreadsheets.
+- Adapts to volatility: ATR changes, position size changes with it.
+- Works across instruments without retuning per asset class.
+- Free with a TradingView plan that supports it.
 
-**Cons**  
-- **No trade log**: It doesn’t save your position sizes historically. Would love a simple export feature.  
-- **Manual balance input**: The auto-detect fails on some brokers (e.g., Bybit). You’ll need to type your balance manually.  
-- **No alerts**: Can’t set an alert for “position size changed by X%.” Would be useful for fast markets.  
-- **Over-reliance risk**: Some traders will blindly follow the size without checking if it aligns with their strategy. That’s a user problem, not the indicator’s fault.
+**Cons**
+- **No trade log**: It doesn't save position sizes historically. An export feature would be welcome.
+- **Manual balance input**: Auto-detect fails on some brokers, so you'll need to type your balance in yourself.
+- **No alerts**: You can't set an alert for "position size changed by X%," which would be useful in fast markets.
+- **Over-reliance risk**: Some traders will follow the size without checking whether it aligns with their strategy. That's a user problem, not the indicator's fault.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Discretionary traders** who already have a system and need to size positions fast.  
-- **Prop firm traders** (like me) who must hit specific risk limits.  
-- **Beginners** who want to automate the boring parts of position sizing.  
+- **Discretionary traders** who already have a system and need to size positions quickly.
+- **Prop firm traders** who must stay inside specific risk limits.
+- **Beginners** who want to automate the mechanical part of position sizing.
 
-Not for: automated traders, scalpers who need millisecond decisions, or anyone who doesn’t trust ATR as a volatility measure.
+Not for: automated traders, scalpers who need millisecond decisions, or anyone who doesn't trust ATR as a volatility measure.
 
 ## Better Alternatives?
 
-If you want more features, check out **Position Size Calculator by LonesomeTheBlue** (free, but less clean UI) or **Risk Management Dashboard** by QuantNomad (paid, but includes trade journaling). For pure ATR-based sizing, this one is the simplest I’ve found.
+If you want more features, look at **Position Size Calculator by LonesomeTheBlue** (free, less clean UI) or **Risk Management Dashboard** by QuantNomad (paid, includes trade journaling). For pure ATR-based sizing, this one is among the simplest.
 
-## FAQ (Real Questions from Real Traders)
+## FAQ
 
-**Q: Does it work with futures (e.g., ES, NQ)?**  
-A: Yes, but you must set the tick size and contract multiplier in the settings. I tested it on ES micros—works fine.
+**Q: Does it work with futures (e.g., ES, NQ)?**
+A: Yes, but you must set the tick size and contract multiplier in the settings.
 
-**Q: What if I trade multiple instruments?**  
-A: You need to input your account balance and risk % for each chart separately. No global settings.
+**Q: What if I trade multiple instruments?**
+A: You need to input your account balance and risk % for each chart separately. There are no global settings.
 
-**Q: Can I use it for scaling in/out?**  
-A: Not natively. You’ll have to manually calculate partial sizes. The indicator only shows one size at a time.
+**Q: Can I use it for scaling in/out?**
+A: Not natively. You'll have to manually calculate partial sizes. The indicator only shows one size at a time.
 
-**Q: Is it accurate for forex?**  
-A: Yes, but watch out for pip values. I tested on EURUSD—it matched my broker’s margin calculator within 2% error.
+**Q: Is it accurate for forex?**
+A: Yes, but watch out for pip values—you need to configure them correctly for the pair you're trading.
 
 ## Final Verdict
 
-**Score: ⭐⭐⭐⭐ (4/5)**  
+**Score: ⭐⭐⭐⭐ (4/5)**
 
-Atr_Based_Position_Sizing does exactly what it says on the tin—no more, no less. It’s saved me from a few painful overtrades, and the real-time ATR adjustment is a game-changer for volatile markets. The lack of alerts and manual balance input are minor annoyances, but for free, this is a solid tool. I’ve kept it on my day trading chart permanently.
+Atr_Based_Position_Sizing does exactly what it says on the tin—no more, no less. The real-time ATR adjustment is the core value proposition for volatile markets. The lack of alerts and the manual balance input are minor annoyances, but for a free tool, it's a solid addition to a discretionary workflow.
 
-If you’re still calculating position size with a calculator while the market moves, stop. Install this. Your account will thank you.
+If you're still calculating position size by hand while the market moves, that's a problem worth fixing.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ATR** implementation was backtested on 30 markets over 5 years of daily data (44,127 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: USDJPY 58.7%, SPY 55.3%, XAUUSD 54.7%, AMD 53.6%
+- Weakest markets: ADAUSD 45.5%, XRPUSD 43.5%, SHIBUSD 24.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

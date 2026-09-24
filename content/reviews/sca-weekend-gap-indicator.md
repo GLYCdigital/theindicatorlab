@@ -16,94 +16,90 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Sca_Weekend_Gap_Indicator review. Tests gap fill probability, best settings, entry/exit rules, and who should use it. No fluff."
+grounding: "none (no source found)"
 ---
-
 **Sca_Weekend_Gap_Indicator Review: Does It Actually Predict Gap Fills?**
 
-I’ve tested dozens of gap indicators. Most are repainted junk or just draw lines that look smart in hindsight. The Sca_Weekend_Gap_Indicator? It’s one of the few that actually respects the data. Let me walk you through what I found after running it on 60+ stocks and futures over the last six months.
+Gap indicators are a crowded category, and many of them draw lines that only look smart in hindsight. The question worth asking about any of them is whether the logic holds up outside the specific cases it was built around.
 
 ---
 
 ### What This Indicator Actually Does
 
-It doesn’t predict the future. It shows you the weekend gap (Sunday open vs. Friday close) and calculates a fill probability based on historical volume and price action. No mystical algorithms — just math on what happened before. The chart above shows a typical view: blue shaded area for the gap, a percentage label near the top left, and a dotted line at the fill target.
+It does not predict the future. It displays the weekend gap — the difference between the Sunday open and the Friday close — and attaches a fill probability derived from historical volume and price action. The output is a shaded area marking the gap, a percentage label, and a dotted line at the fill target.
 
-**Key difference from other gap tools:** It filters out gaps smaller than 0.5% by default (adjustable) and ignores weekends with zero volume. That alone cuts noise by about 40%.
-
----
-
-### Best Settings I’ve Found
-
-After tweaking, here’s what works:
-
-- **Gap Threshold:** 0.8% for stocks, 0.5% for indices. Below that, the noise-to-signal ratio is awful.
-- **Fill Period:** 3 sessions. Anything longer and you’re holding into mid-week reversals.
-- **Show Probability:** On. It’s not perfect, but when it drops below 35%, the gap almost never fills.
-- **Volume Filter:** On. If pre-market volume is below 50% of average, skip the trade.
-
-**One tweak most people miss:** Change the color scheme to "Contrast" in settings — the default pastels blend into the chart.
+The filtering behavior is the part that distinguishes it from simpler gap tools: it screens out gaps below a size threshold and ignores weekends with no volume, which removes a large share of low-information signals.
 
 ---
 
-### How I Use It for Entries and Exits
+### Settings and How to Tune Them
 
-I don’t trade every gap. Here’s my process:
+The main parameters are the gap size threshold, the fill period, the probability display, and the volume filter.
 
-1. **Identify the gap direction** — up or down at Sunday open.
-2. **Check the probability label.** If above 60%, I consider a fade trade (betting the gap closes).
-3. **Look for confirmation.** A 15-minute candle closing back toward the gap is my trigger. No reversal candle? No trade.
-4. **Target:** 50% fill for partial fills, 100% for full fills. I use a trailing stop at 1.5x ATR once price hits 50%.
+- **Gap Threshold:** Controls the minimum gap size the indicator will plot. Raising it removes small, noisy gaps; lowering it shows more setups. There is no single correct value — it depends on the instrument's typical gap distribution.
+- **Fill Period:** How many sessions the indicator looks ahead when assessing whether a gap filled. Shorter windows keep the assessment tied to the days immediately after the open.
+- **Show Probability:** Toggles the probability label. Useful if you want the visual gap without the statistic.
+- **Volume Filter:** Screens out weekends where volume is too thin for the gap to be meaningful.
 
-**Example from my log:** On AAPL last month, the indicator showed a 72% fill probability on a $1.20 gap. I shorted at open, covered at 50% fill for a 0.6% gain in under two hours. Not a home run, but consistent.
+Color scheme is also configurable; the default palette can blend into a busy chart, so a higher-contrast option is available for readability.
+
+---
+
+### How It Can Be Used for Entries and Exits
+
+A typical workflow:
+
+1. **Identify the gap direction** — up or down at the Sunday open.
+2. **Read the probability label** before committing to anything.
+3. **Wait for confirmation.** Rather than trading the open blindly, wait for a candle to close back toward the gap. No reversal candle, no trade.
+4. **Set targets** at partial fill and full fill, with a stop managed below the entry.
+
+The indicator supplies the gap and the probability; the entry trigger and risk management remain the trader's job.
 
 ---
 
 ### Honest Pros and Cons
 
 **Pros:**
-- Clean, non-repainting signals. The gap line doesn’t move after it appears.
-- Probability calculation actually backtests well on liquid names.
-- No lag — it updates at the Sunday open candle.
+- Clean, non-repainting plots — the gap line does not move after it appears.
+- The probability calculation is grounded in historical data rather than a fitted curve.
+- Updates at the Sunday open candle, so there is no waiting period.
 
 **Cons:**
-- Useless on crypto (no weekend gaps in 24/7 markets).
-- Probability is based on historical averages — it breaks during earnings or news gaps.
-- Only works on daily and weekly timeframes. Try it on 4H and you’ll get false signals.
+- Not useful on crypto, where 24/7 markets produce no weekend gap.
+- The probability is a historical average, so it degrades around earnings and news-driven gaps.
+- Built for daily and weekly timeframes; lower timeframes produce false signals.
 
 ---
 
-### Who It’s Actually For
+### Who It's Actually For
 
-Swing traders who trade Monday opens and hold 1–3 days. If you scalp 5-minute charts, skip this. Scalpers need something like the **VWAP Gap Scanner** instead — faster, but less reliable.
+Swing traders who trade Monday opens and hold for a short window. Scalpers working intraday charts will find little here — they need a different tool built around intraday volume, not weekend gaps.
 
-**Better alternatives if you hate this one:**
-- **Gap Scanner Pro** — more customization but uglier interface.
-- **FillTheGap** — free, but repaints like crazy.
+**Alternatives worth comparing:**
+- **Gap Scanner Pro** — more customization, less polished interface.
+- **FillTheGap** — free, but repaints.
 
 ---
 
 ### FAQ
 
-**Q: Does it work on futures like ES or NQ?**  
+**Q: Does it work on futures like ES or NQ?**
 A: Yes, but only on continuous contracts. Rollover gaps confuse it.
 
-**Q: Can I automate it with PineScript alerts?**  
-A: Yes, the indicator has built-in alert conditions for gap fill probability crossing thresholds.
+**Q: Can it be automated with PineScript alerts?**
+A: Yes — it ships with built-in alert conditions for gap fill probability crossing thresholds.
 
-**Q: Why sometimes it shows no gap when there clearly is one?**  
-A: Check your exchange hours. It only works on standard market hours (9:30–16:00 ET). Pre-market gaps are ignored.
+**Q: Why does it sometimes show no gap when one is clearly visible?**
+A: Check exchange hours. It works on standard market hours and ignores pre-market gaps.
 
 ---
 
 ### Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+It is not a holy grail, but it is honest about what it does. No repainting, probability math based on historical data, and readable visuals. It loses a star for being useless on crypto and unreliable during news events. For equities swing trading around Monday gaps, it is a reasonable option on TradingView.
 
-It’s not a holy grail, but it’s honest. No repainting, solid probability math, and clear visuals. Loses a star because it’s worthless on crypto and breaks during news events. For equities swing trading Monday gaps? It’s one of the best free-ish options on TradingView.
-
-**One-line takeaway:** If you fade gaps, install this. Just don’t trust it blindly during earnings week.
-
----
+**One-line takeaway:** If you fade gaps, this is worth a look — just don't trust it blindly during earnings week.
 
 ## Go Deeper with The Indicator Lab
 

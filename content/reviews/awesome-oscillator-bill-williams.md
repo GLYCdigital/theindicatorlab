@@ -16,89 +16,95 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Bill Williams' Awesome Oscillator measures momentum with a simple histogram. We test settings, zero-line cross strategy, and saucer patterns."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The Awesome_Oscillator_Bill_Williams is not a new-age AI gizmo. It's a straightforward momentum oscillator that calculates the difference between a 34-period and 5-period simple moving average of the median price (H+L)/2. The result is plotted as a histogram — green bars above zero line (bullish momentum), red bars below (bearish momentum).
+The Awesome Oscillator is a momentum oscillator that calculates the difference between a 34-period and a 5-period simple moving average of the median price (H+L)/2. The result is plotted as a histogram — green bars above the zero line indicate bullish momentum, red bars below indicate bearish momentum.
 
-If you've seen the MACD, you'll recognize the structure. But the key difference? This one uses raw SMA differences, not exponential smoothing, and it's tuned to Bill Williams' specific periods (5 and 34). No signal line, no bells — just the histogram.
-
-I tested this on BTCUSD 1H and EURUSD 4H over the last 3 months. The chart above shows a clean zero-line cross setup on the 4H timeframe.
+Structurally it resembles the MACD, but the key distinction is that it uses raw SMA differences rather than exponential smoothing, and it is built around Bill Williams' specific periods (5 and 34). There is no signal line — just the histogram.
 
 ## Key Features That Set It Apart
 
-- **No signal line.** Most oscillators have a signal line (like MACD). This one skips it, forcing you to rely on the histogram shape and zero-line crosses.
-- **Saucer pattern detection.** Bill Williams defined a "saucer" — two consecutive green bars after a red bar dip. That's a buy signal. The indicator doesn't color them automatically, but you can spot them visually.
-- **Twin Peaks.** Two consecutive peaks above zero line with a dip between them = bearish divergence. Opposite for bullish.
-- **Simple median price input.** It uses (H+L)/2, not close price. This makes it less reactive to closing fireworks and more sensitive to intra-bar extremes.
+- **No signal line.** Unlike the MACD, this oscillator skips the signal line entirely, which means you rely on histogram shape and zero-line crosses rather than crossovers between two lines.
+- **Saucer pattern.** Bill Williams defined a "saucer" as two consecutive green bars following a red bar dip. The indicator does not color these automatically, but they can be spotted visually.
+- **Twin Peaks.** Two consecutive peaks above the zero line with a dip between them is a bearish divergence pattern. The opposite applies for bullish.
+- **Median price input.** It uses (H+L)/2 rather than close price, which makes it less reactive to closing prints and more sensitive to intra-bar extremes.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-The default periods (5, 34) are non-negotiable if you want Bill Williams' original logic. But here's what I tweaked:
+The periods of 5 and 34 are non-negotiable if you want Bill Williams' original logic.
 
-- **Timeframe:** 1H to 4H works best. Below 15M, you get too many whipsaws. Above daily, signals are rare but reliable.
-- **Color scheme:** Keep default. Green/red is intuitive.
-- **Zero-line smoothing:** Don't add any. The raw histogram is the point.
-- **Divergence detection:** You'll need a separate tool for that — this indicator doesn't plot divergences automatically.
+- **Timeframe:** The indicator is generally used on intraday and daily charts. Lower timeframes tend to produce more whipsaws, while higher timeframes produce fewer but more spaced-out signals.
+- **Color scheme:** The default green/red is intuitive and there is no functional reason to change it.
+- **Zero-line smoothing:** The raw histogram is the point; adding smoothing changes the character of the signal.
+- **Divergence detection:** This indicator does not plot divergences automatically — a separate tool is needed for that.
 
-If you want fewer false signals, try adding a 3-period SMA of the histogram (as a separate indicator). I did that on the 1H chart and cut whipsaws by about 30%.
+There is no single "best" configuration. Any period changes move you away from the original Bill Williams logic, and any smoothing or filtering is a trade-off between signal frequency and responsiveness.
 
 ## How to Use It for Entries and Exits
 
-**Zero-line cross (most common):** When the histogram crosses above zero, go long. Cross below, go short. Simple, but it's a lagging signal — you'll miss the first 5-10 bars of the move.
+**Zero-line cross:** When the histogram crosses above zero, that is a long signal; a cross below zero is a short signal. This is a lagging signal by nature — the move has already begun before the cross occurs.
 
-**Saucer entry:** Look for the histogram to dip below zero, then print two consecutive green bars with the second one higher than the first. Buy on the close of the second green bar. On the chart above, this happened on July 12 — a clean entry that caught a 1.2% move on EURUSD 4H.
+**Saucer entry:** Look for the histogram to dip below zero, then print two consecutive green bars with the second higher than the first. The buy trigger is the close of the second green bar.
 
-**Exit strategy:** Close when the histogram prints a bar of the opposite color. Or trail with a 20-period SMA if you want to hold longer.
+**Exit strategy:** One approach is to close when the histogram prints a bar of the opposite color. Another is to trail with a moving average if you want to hold longer.
 
-**Divergence:** If price makes a higher high but the histogram makes a lower high, that's bearish divergence. Wait for two red bars to confirm before shorting.
+**Divergence:** If price makes a higher high while the histogram makes a lower high, that is bearish divergence. Waiting for two red bars to confirm before acting is a common filter.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Zero lag from smoothing — it's pure SMA difference
-- Works well in trending markets with clear momentum
-- Easy to spot saucers and twin peaks visually
+- No lag from exponential smoothing — it is a pure SMA difference
+- Tends to work well in trending markets with clear momentum
+- Saucers and twin peaks are visually identifiable
 - Free and built into TradingView
 
 **Cons:**
-- Whipsaws badly in ranging markets (tested on July 8-10 — 4 false signals)
-- No built-in divergence plotting (you have to manually check)
-- Lagging on zero-line crosses — you'll miss early entries
-- Not great for scalping below 15M
+- Whipsaws in ranging markets
+- No built-in divergence plotting — divergence must be checked manually
+- Lagging on zero-line crosses, so early entries are missed
+- Not suited to very low timeframes where noise dominates
 
 ## Who It's Actually For
 
-This is for swing traders and position traders who trade 1H to daily charts. If you're a scalper, look elsewhere. If you trade breakouts with momentum, this complements your strategy well. Also good for traders who follow Bill Williams' fractals or Alligator — it's part of his ecosystem.
+This is for swing traders and position traders working on intraday-to-daily charts. Scalpers on very low timeframes will find it noisy. Traders working with breakouts and momentum will find it complements their approach. It also fits traders who follow Bill Williams' fractals or Alligator, since it is part of that ecosystem.
 
 ## Better Alternatives If They Exist
 
-- **MACD (12,26,9):** More popular, has a signal line, less whipsaw. But it's slower.
-- **Momentum Oscillator (Rahul Mohindar):** Faster, with overbought/oversold zones. Better for range-bound markets.
-- **Awesome Oscillator Pro (by LuxAlgo):** Paid, adds divergence lines, auto-saucers, and alerts. Worth it if you rely heavily on this.
+- **MACD (12,26,9):** More widely used, includes a signal line, and is generally smoother — but also slower.
+- **Momentum Oscillator (Rahul Mohindar):** Faster, with overbought/oversold zones. Better suited to range-bound markets.
+- **Awesome Oscillator Pro (by LuxAlgo):** Paid, adds divergence lines, automatic saucer marking, and alerts. Worth considering if you rely heavily on this indicator.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does this repaint?**  
-A: No. Each bar is fixed once the candle closes. No repainting.
+**Q: Does this repaint?**
+A: No. Each bar is fixed once the candle closes.
 
-**Q: Can I use it with fractals?**  
-A: Yes. Bill Williams designed them to work together. Use fractal breakouts as entry triggers and AO for momentum confirmation.
+**Q: Can I use it with fractals?**
+A: Yes. Bill Williams designed them to work together. Fractal breakouts can serve as entry triggers with the AO providing momentum confirmation.
 
-**Q: What's the best timeframe?**  
-A: 1H to 4H for swing trading. Daily for position trading. Avoid below 15M.
+**Q: What's the best timeframe?**
+A: Intraday to daily for swing and position trading. Very low timeframes should be avoided.
 
-**Q: Is it better than MACD?**  
-A: Different. MACD is smoother and better for trend following. AO is faster and better for catching momentum shifts.
+**Q: Is it better than MACD?**
+A: They are different tools. MACD is smoother and better for trend following. The AO is faster and better for catching momentum shifts.
 
 ## Final Verdict
 
-The Awesome_Oscillator_Bill_Williams is a solid, classic momentum tool. It won't blow your mind, but it does one thing well — measure raw momentum without overcomplicating. The lack of built-in divergence detection is a pain, and whipsaws in ranging markets are real. But if you pair it with price action and a filter (like a 50-period SMA for trend direction), it becomes a reliable part of your toolkit.
+The Awesome Oscillator is a solid, classic momentum tool. It does one thing well — measure raw momentum without overcomplicating. The lack of built-in divergence detection is a limitation, and whipsaws in ranging markets are real. Paired with price action and a trend filter, it can be a reliable part of a toolkit.
 
-**4/5 stars.** Not perfect, but for a free, no-nonsense momentum indicator, it earns its place on your chart.
+For a free, no-nonsense momentum indicator, it earns its place on the chart.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Williams %R** implementation was backtested on 30 markets over 5 years of daily data (19,268 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: LTCUSD 57.5%, VIX 57.0%, EURUSD 56.5%, WTI 53.8%
+- Weakest markets: AMD 44.7%, MSFT 44.6%, SHIBUSD 27.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

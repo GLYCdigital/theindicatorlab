@@ -17,80 +17,93 @@ categories:
 rating: 4
 description: "3D_Market_Profile_Boswaves review: honest take on settings, entry logic, pros/cons, and who should actually use this trend indicator."
 tv_script_url: "https://www.tradingview.com/script/QdfnWDjO-3D-Market-Profile-BOSWaves/"
+sources: ["https://www.tradingview.com/script/QdfnWDjO-3D-Market-Profile-BOSWaves/"]
 ---
-Let's skip the marketing fluff. 3D_Market_Profile_Boswaves is a trend visualization tool that attempts to merge volume profile concepts with break-of-structure (BOS) detection. The "3D" in the name isn't a gimmick — it refers to how the indicator plots value area levels across multiple timeframes in a way that creates a pseudo-depth effect on your chart. If you've used traditional market profile tools, this feels familiar but with a modern twist.
+# 3D Market Profile [BOSWaves] Review
 
-I tested this on the MACD chart type as recommended, and honestly, that pairing makes more sense than I initially expected. The indicator's BOS lines align cleanly with momentum shifts on the MACD histogram, which gives you a confluence signal that standalone profile tools rarely offer.
+The 3D Market Profile [BOSWaves] is a TPO (Time Price Opportunity) market profile system that aggregates chart bars into complete TPO periods, builds a per-row distribution of letters and print counts, and renders the result as a three-dimensional extruded structure using polyline geometry. As the name suggests, the "3D" element is not a gimmick — it refers to extruded top faces and side caps that follow the profile contour row by row, plus a rear glass plane and wireframe bounding box. If you've used traditional market profile tools, the analytical framework (POC, Value Area, Initial Balance) will feel familiar, but the spatial rendering is a different approach to the same underlying data.
 
-**What Actually Sets It Apart**
+It's worth being clear about what this indicator is and isn't. It is a structural visualization and reference tool, not a signal generator. It builds a distribution from recent chart history, derives standard market profile levels from that distribution, and renders them as extending reference lines. It does not produce discrete entry or exit signals.
 
-Most market profile indicators are static. They show you yesterday's value area and call it a day. This one dynamically recalculates the 3D structure as new candles form. The key innovation is how it layers three distinct timeframe profiles simultaneously — short, medium, and long-term — and then flags when price breaks through the value area of each layer.
+## What Actually Sets It Apart
 
-The BOS detection isn't just a line on the chart. It comes with a momentum filter that checks whether the break has actual volume behind it. I've seen plenty of false breakouts on the 5-minute timeframe that this indicator correctly ignored because volume wasn't there. That's rare in this category.
+Most market profile indicators render flat row boxes where the only visual difference between a high-density and low-density row is bar width — something that gets hard to compare once a profile has many rows or is viewed on a smaller screen. This indicator adds two more visual dimensions on top of width: extruded top and side faces that follow the profile contour, and density-gradient coloring that progresses from a configured low-density color to a high-density color with a power-transformed gradient.
 
-**Settings I Actually Recommend**
+The design principles behind it are specific:
 
-After running it through trending, ranging, and choppy markets, here's what worked:
+- TPO distribution is built from complete timeframe periods, not individual bars, so each period contributes exactly one letter print to each price row it trades through regardless of how many chart bars compose it.
+- The 3D extrusion follows the profile contour row by row rather than applying a uniform rectangular extrusion, preserving the shape of the distribution in the depth geometry.
+- POC, VAH, VAL, and Initial Balance are all derived from the same TPO count data that drives the visual rendering.
 
-- **Short-term profile length:** 20 periods. Lower than this and you get noise; higher and it lags too much for intraday.
-- **Medium-term profile length:** 50 periods. This is the sweet spot for swing entries.
-- **Long-term profile length:** 200 periods. Keep this default unless you're trading weekly charts.
-- **BOS sensitivity:** Set to 0.5. At 0.3, you get too many signals. At 0.7, you miss the early moves.
-- **Volume threshold:** 1.2x average. This filters out the low-volume breaks that tend to fail.
+The POC tiebreaking rule is also worth noting: when multiple rows share the maximum print count, the row closest to the profile mid-range is selected. That's a consistent rule favoring centrally located levels rather than an arbitrary pick.
 
-One warning: the default settings on install are aggressive. The indicator will flood your chart with signals. Dial back the sensitivity before you start taking trades.
+## Settings and How to Tune Them
 
-**How I Actually Traded It**
+The source material provides a suggested baseline configuration, which is a reasonable starting point rather than a recommendation of optimal values:
 
-The cleanest setup was a three-step confirmation:
+- **Length:** 180
+- **Rows:** 24
+- **Value Area %:** 70
+- **Placement:** Right of Price
+- **TPO Timeframe:** 30
+- **Show TPO Letters:** Enabled
+- **Initial Balance Periods:** 2
+- **3D Depth (Bars):** 6
+- **3D Height (Rows):** 0.42
+- **Show 3D Frame:** Enabled
+- **Show POC / VA:** Enabled
+- **Show Initial Balance:** Enabled
+- **Show Level Labels:** Enabled
 
-1. Wait for price to break the medium-term value area on a closing basis.
-2. Check that the MACD histogram shows expanding momentum in the same direction.
-3. Enter on the retest of the broken level, with a stop just beyond the value area edge.
+Tuning guidance from the source material:
 
-For exits, I used the long-term profile's opposite edge as a target. In trending conditions, this captured about 70% of the move on average. In range-bound markets, it was closer to 40% — which is why I stopped using it for mean-reversion plays entirely.
+- **Rows:** Adjust to increase or decrease vertical price resolution. The goal is to calibrate row height to the instrument's typical daily range so rows represent meaningful price increments rather than noise-level or excessively large bands.
+- **TPO Cell Width:** Controls the horizontal space allocated to each letter. Increase for wider, more readable letter display, or decrease to fit more prints within the same profile width.
+- **Length and Cell Width:** Profile width scales automatically with the maximum row print count multiplied by cell width, so these two settings together determine the resulting profile width.
+- **3D Depth (Bars) and 3D Height (Rows):** Control horizontal perspective extent and vertical depth respectively. Calibrate to the chart's aspect ratio and current zoom level.
+- **Right Offset / Placement:** If the profile overlaps price action, use Right of Price with a larger Right Offset to push it further from current price, or switch to On Range placement to anchor it to the beginning of the analyzed window.
+- **Initial Balance Periods:** Adjust to include more or fewer opening TPO periods in the IB calculation. Two periods represents the conventional first trading hour using thirty-minute TPOs; increase for a wider opening range definition.
+- **TPO Timeframe:** Match to the session type being analyzed. Using a thirty-minute timeframe on a daily chart produces very few periods and minimal distribution differentiation, so choose a timeframe appropriate to the chart timeframe and session length.
 
-**Pros & Cons**
+Adjustments should be incremental and evaluated across multiple session types rather than isolated market conditions.
 
-The strengths are real. The multi-timeframe visualization genuinely helps you see where institutional money is parked. The volume-filtered BOS signals cut down on the false breakouts that plague most trend indicators. The interface is clean, and the 3D effect isn't just decorative — the depth shading makes it obvious which value area is most significant.
+## How It's Meant to Be Used
 
-The weaknesses are equally real. The indicator is slow to repaint. When the current candle closes and the profile recalculates, some signals that appeared valid suddenly vanish. That's a dealbreaker for scalpers but manageable for swing traders. It's also resource-heavy. On lower-end machines with multiple charts open, you'll notice lag. And there's no built-in alert system, which is frustrating for a tool that's clearly designed for breakout trading.
+The indicator is built around conventional market profile and auction theory approaches rather than a proprietary signal model:
 
-**Who Should Use This**
+1. **POC reversion framework:** Use the POC line as a mean reversion reference when price has extended to or beyond the Value Area boundaries. The POC represents the price where the distribution's greatest acceptance occurred.
+2. **Value Area boundary trading:** Monitor price behavior at VAH and VAL for acceptance or rejection. Price accepting above VAH or below VAL with multiple closes beyond the boundary suggests genuine range extension; rejection at the boundaries and return inside the Value Area suggests reversion continuation.
+3. **Initial Balance range extension:** Price establishing acceptance above IBH with sustained closes is framed as potential bullish range extension; acceptance below IBL as potential bearish extension. Price remaining within IB is framed as balanced auction conditions.
+4. **Single print targeting:** Single print rows are treated as potential return targets for incomplete auction areas, on the market profile principle that incomplete auctions tend to be revisited.
+5. **Placement selection:** Right of Price keeps the profile in forward chart space as a live reference; On Range anchors it to the historical window for post-session analysis.
+6. **Timeframe and length calibration:** The source material maps timeframe choices to session types — shorter timeframes for intraday micro-profiles, thirty-minute TPOs for conventional daily profiles, and longer timeframes for multi-day macro profiles.
 
-Swing traders and position traders will get the most value. If you're holding trades for hours to days and want to understand where price is likely to react, this is worth the install. Intraday traders can use it too, but only if they're trading the 15-minute timeframe or higher.
+Note that this is a visualization and reference framework. The indicator does not generate discrete entry or exit signals.
 
-If you're a scalper, skip it. The repainting alone disqualifies it for that use case. And if you're new to market profile concepts, this will overwhelm you — learn the basics of value area and point of control before diving in.
+## Pros & Cons
 
-**Alternatives Worth Considering**
+**Strengths:** The multi-timeframe spatial rendering is the core differentiator — extruded geometry and gradient coloring communicate density through width, shape, and color simultaneously. The analytical framework follows conventional market profile methodology (POC via max count with mid-range tiebreaking, outward Value Area expansion from the POC with alternating upper/lower priority, IB derived from the opening periods). Level rendering is differentiated by type: dual glow and core lines for POC, dotted lines for VAH/VAL, dashed lines for IBH/IBL, with price readout labels at the right extent.
 
-If you want something simpler, the built-in TradingView Volume Profile is free and does the job for basic analysis. For a more advanced alternative, Check out "Market Profile 3D" by LuxAlgo — it has better alert functionality but lacks the BOS detection. If you're specifically after breakout signals, "Smart Money Concepts" by LuxAlgo pairs well alongside this indicator for confirmation.
+**Weaknesses:** The source material lists reduced effectiveness in several conditions — markets with highly variable daily ranges where a fixed row count produces inconsistent row heights, instruments without clear session structure where few complete periods form, very short profile lengths producing too few TPO periods for a meaningful distribution, compressed consolidation where all rows get similar counts and the distribution flattens, and markets with frequent large gaps where the profile range is dominated by gap space. The performance profile also notes full object cleanup and rebuild on the last bar, which is relevant for anyone running this on lower-end hardware with multiple charts. The source material does not describe repainting behavior, alert functionality, or resource consumption beyond the cleanup-and-rebuild note, so I won't make claims either way on those fronts.
 
-**Common Questions**
+## Who Should Use This
 
-**Does it repaint?** Yes, particularly on the BOS signals. The current candle's profile updates in real-time, so signals can disappear after the candle closes.
+The source material positions this for market profile and auction theory-based approaches. High effectiveness is claimed for session-structured markets with a defined trading window, instruments with consistent daily range, and workflows where POC, Value Area, and IB are the primary structural reference. Reduced effectiveness is noted for markets without clear session structure, highly variable daily ranges, very short profile lengths, compressed consolidation, and gap-dominated markets.
 
-**Is it good for crypto?** Yes, actually better than forex in my testing. Crypto's 24/7 trading makes the profile data more complete.
+If you're new to market profile concepts, the indicator will not teach you what POC and Value Area mean — those are prerequisites, not features. The visualization assumes you already read a distribution.
 
-**Can I use it on lower timeframes?** Technically yes, but the 3D visualization gets cluttered below the 15-minute chart.
+## Common Questions
 
-**Does it work for shorting?** The logic is symmetrical. Short signals are just as reliable as long signals.
+**Does it generate signals?** No. It provides continuous structural reference (POC, VAH, VAL, IBH, IBL) but no discrete entry or exit signals. The source material states this explicitly.
 
-**Final Verdict**
+**What does the "3D" actually do?** It constructs polyline quadrilateral top faces following each row's width contour, side end cap faces at the outer edge of each row, and a rear glass plane bounding box, using configurable depth bar and depth row offsets. It's a spatial rendering of the same distribution data, not a separate indicator.
 
-3D_Market_Profile_Boswaves earns 4 out of 5 stars. It's not perfect — the repainting and lack of alerts hold it back from greatness. But as a trend confirmation tool that combines volume profile with BOS detection, it's genuinely useful. For swing traders who understand market profile concepts, this is a solid addition to the toolbox. Just don't expect it to do the thinking for you.
+**Can I use it on any timeframe?** The source material gives timeframe guidance rather than a hard restriction: shorter timeframes for intraday micro-profiles, mid-range timeframes for session profiles, and higher timeframes for multi-session macro profiles. It warns that mismatching the TPO timeframe to the chart timeframe (e.g., thirty-minute TPOs on a daily chart) produces very few periods and minimal differentiation.
 
-⭐⭐⭐⭐
+## Final Verdict
 
-## Frequently Asked Questions
+3D Market Profile [BOSWaves] is a structurally sound implementation of conventional TPO market profile analysis with an unusually elaborate rendering layer. The analytical core — period aggregation, row-level print counting, POC selection with mid-range tiebreaking, outward Value Area expansion, and IB derivation — follows standard methodology, and the 3D geometry is driven by the same count data rather than being decorative. The caveats are real: it's a reference tool, not a signal generator, and its effectiveness degrades in the specific conditions the source material calls out. For traders already fluent in market profile concepts who want a more spatially readable distribution, it's a coherent addition to a broader analytical framework.
 
-### Is 3D_Market_Profile_Boswaves worth it?
-
-Based on testing across multiple timeframes, 3D_Market_Profile_Boswaves delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

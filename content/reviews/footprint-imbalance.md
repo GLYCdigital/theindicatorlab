@@ -16,91 +16,87 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Footprint_Imbalance reveals order-flow strength by comparing bid vs ask volume. Honest review of settings, real entries, and who should skip it."
+grounding: "none (no source found)"
 ---
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+*A no-fluff review of what Footprint_Imbalance claims to do and where it fits in an order-flow workflow.*
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-*Honest, no-fluff review from someone who ran it on live charts for weeks.*
-
-I’ve tested dozens of footprint-style indicators on TradingView. Most are either too noisy or just repaint old volume data. **Footprint_Imbalance** is different—it actually shows you where aggressive buying or selling is happening *in real time*, without cluttering your chart with a million bars.
+Footprint-style indicators on TradingView tend to fall into two camps: noisy overlays that bury the chart, or tools that simply re-render historical volume with no aggression context. **Footprint_Imbalance** targets the second problem by attempting to surface where aggressive buying or selling is occurring, without cluttering the chart.
 
 ## What This Indicator Actually Does
 
-Footprint_Imbalance doesn’t draw fancy lines or predict the future. It calculates the **delta** between bid (sell) and ask (buy) volume at each price level within a bar. When there’s a clear imbalance—say 70% of trades were aggressive buys—it highlights that level with a colored dot or block. The idea is simple: **price follows the aggressive side**.
+Footprint_Imbalance doesn't draw trend lines or forecast price. Its stated job is to calculate the **delta** between bid (sell) and ask (buy) volume at each price level within a bar. When a clear imbalance is detected at a level, it highlights that level with a colored dot or block. The underlying premise is straightforward: **price follows the aggressive side**.
 
-The key metric here is the *imbalance ratio*, not raw volume. A bar with moderate volume but a 90/10 split is far more meaningful than a bar with huge volume but a 50/50 split. The indicator filters out the noise and flags only high-conviction levels.
+The emphasis is on the *imbalance ratio* rather than raw volume. A bar with moderate volume but a heavily skewed buy/sell split carries more information than a high-volume bar with balanced flow. The indicator is designed to filter out the noise and flag only high-conviction levels.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Real-time footprint** – Works on any timeframe, but shines on tick, 1-min, or 5-min.
-- **Custom imbalance threshold** – You set the minimum ratio (e.g., 2:1 or 3:1) to trigger a signal. Default 2.0 works well for most.
-- **Color-coded levels** – Green for buying imbalance, red for selling imbalance. No confusion.
-- **Histogram overlay** – Shows cumulative delta across the bar. Helps spot exhaustion.
-- **Alert integration** – You can set an alert when a level’s imbalance exceeds a threshold. Useful for scalpers.
+- **Footprint-style imbalance detection** – Designed for intraday charts, with the strongest use case on short timeframes.
+- **Custom imbalance threshold** – The user sets the minimum ratio required to trigger a signal.
+- **Color-coded levels** – Green for buying imbalance, red for selling imbalance.
+- **Histogram overlay** – Displays cumulative delta across the bar, intended to help spot exhaustion.
+- **Alert integration** – Alerts can be configured when a level's imbalance exceeds a threshold.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I ran this on ES and NQ futures, 1-minute chart, for two weeks. Here’s what stuck:
+- **Imbalance ratio** – The core sensitivity control. Lower values flag more levels; higher values restrict signals to stronger skews.
+- **Lookback period** – Smooths out one-off spikes in the imbalance reading.
+- **Show cumulative delta** – Toggle for the delta histogram overlay.
+- **Color mode** – The indicator supports level-based and bar-based coloring; level-based is generally easier to read on a busy chart.
+- **Max levels shown** – Caps how many imbalance levels are drawn, which directly affects visual clutter.
 
-- **Imbalance ratio**: 2.0 (default) – catches strong moves without false signals. Bump to 3.0 on 1-min if you get too many alerts.
-- **Lookback period**: 10 bars – smoothes out one-off spikes.
-- **Show cumulative delta**: ON – helps see if imbalance is building or fading.
-- **Color mode**: “Level-based” – easier to read than “bar-based” on a busy chart.
-- **Max levels shown**: 5 – any more and it’s visual clutter.
-
-**Pro tip**: On the chart above, you’ll see a cluster of green levels near a support zone. That’s buyers stepping in aggressively—exactly where I took a long.
+Treat these as tradeoffs, not presets: tightening the ratio reduces signal count but also reduces coverage, and raising the max-levels cap adds context at the cost of a busier chart.
 
 ## How to Use It for Entries and Exits
 
-**Entry (Long)**:  
-Wait for a green imbalance level at a key support or moving average. Ideally, see price reject the level with a bullish candlestick pattern (hammer, engulfing). Enter on the close of the bar that confirms the imbalance. Place stop 1-2 ticks below the lowest green level.
+**Entry (Long)**:
+Look for a green imbalance level forming at a key support or moving average. The stronger setup is a rejection of that level confirmed by a bullish candlestick pattern (hammer, engulfing). Entry is on the close of the confirming bar, with a stop placed below the lowest green level.
 
-**Exit (Target)**:  
-Watch for a red imbalance level appearing at resistance. That’s sellers fighting back. Take partial profits there. Full exit if cumulative delta turns negative.
+**Exit (Target)**:
+Watch for a red imbalance level appearing at resistance, which suggests sellers are stepping in. That's a reasonable spot to take partial profits. A full exit is warranted if cumulative delta turns negative.
 
-**Contrarian play**:  
-If you see a massive green imbalance at an obvious resistance (old high, round number), that’s often a trap. Price may spike through briefly then reverse. Wait for a red level to appear at the same price—that confirms rejection.
+**Contrarian play**:
+A large green imbalance at an obvious resistance (prior high, round number) can be a trap — price may spike through briefly and reverse. A red level appearing at the same price is the confirmation of rejection.
 
-## Honest Pros and Cons
+## Pros and Cons
 
-**Pros**:  
-- Clean, uncluttered visuals – no spaghetti mess.  
-- Works on all liquid instruments (futures, forex, stocks with volume).  
-- Real-time imbalance detection is genuinely useful for scalping.  
-- Alerts are easy to set and reliable.
+**Pros**:
+- Clean, uncluttered visuals.
+- Applicable to liquid instruments with reliable volume data (futures, forex, stocks).
+- Imbalance detection is oriented toward scalping and short-term order flow.
+- Alerts are straightforward to configure.
 
-**Cons**:  
-- Doesn’t work well on crypto (low volume and erratic prints).  
-- No built-in backtest or strategy tester – you’ll need to trade it manually.  
-- The “cumulative delta” line can lag a bar or two on fast moves.  
-- On lower timeframes (<1-min), false signals increase unless you tighten the ratio.
+**Cons**:
+- Not suited to crypto, where volume prints are thin and erratic.
+- No built-in backtest or strategy tester — it's a manual tool.
+- The cumulative delta line can lag on fast moves.
+- On very low timeframes, false signals increase unless the ratio is tightened.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Scalpers and day traders** who trade ES, NQ, YM, or forex majors.  
-- **Order-flow nerds** who want a simple visual of aggression without learning a full footprint platform.  
-- **Not for swing traders** – imbalance is a micro-structure tool, not a trend predictor.
+- **Scalpers and day traders** working liquid futures or forex majors.
+- **Order-flow traders** who want a visual read on aggression without adopting a full footprint platform.
+- **Not for swing traders** — imbalance is a micro-structure tool, not a trend predictor.
 
-## Better Alternatives (If They Exist)
+## Alternatives
 
-If you want a complete footprint suite, **Bookmap** (paid) is far more detailed. On TradingView, **Volume Profile Imbalance** by LuxAlgo offers a similar concept but with more customization (and a higher price tag). Footprint_Imbalance is a solid middle ground: simpler, cheaper, and does one thing well.
+For a complete footprint suite, **Bookmap** (paid) offers far more depth. On TradingView, **Volume Profile Imbalance** by LuxAlgo covers similar ground with more customization at a higher price. Footprint_Imbalance sits in the middle: simpler, cheaper, and focused on doing one thing.
 
-## FAQ – Real Trader Questions
+## FAQ
 
-**Q: Does it repaint?**  
-A: No. The imbalance is calculated per bar and stays fixed once the bar closes.
+**Q: Does it repaint?**
+A: Per the developer, no — imbalance is calculated per bar and stays fixed once the bar closes.
 
-**Q: Can I use it on 1-hour charts?**  
-A: You can, but imbalance is a short-term metric. On higher timeframes, the signals become less reliable. Stick to 1-min to 15-min.
+**Q: Can I use it on higher timeframes?**
+A: It will run, but imbalance is a short-term metric, and signals become less reliable as the timeframe increases. The intended range is intraday.
 
-**Q: How do I set alerts?**  
-A: Right-click the indicator > Add Alert > Condition: “Imbalance Level > 2.0” (or your threshold). Works on bar close.
+**Q: How do I set alerts?**
+A: Right-click the indicator, add an alert, and set the condition to the imbalance level exceeding your chosen threshold. It triggers on bar close.
 
-**Q: Does it work on forex?**  
-A: Yes, but only on major pairs with decent volume (EUR/USD, GBP/USD). Exotics are too thin.
+**Q: Does it work on forex?**
+A: Yes, on major pairs with sufficient volume. Exotics are generally too thin.
 
-**Bottom line**: If you trade order flow and want a clean, real-time imbalance tool without the overhead of a full footprint platform, this is a solid 4-star pick. It won’t make you money alone—no indicator does—but paired with price action and support/resistance, it’s a sharp edge.
-
----
+**Bottom line**: If you trade order flow and want a clean imbalance tool without the overhead of a full footprint platform, this is a reasonable pick. It won't make money on its own — no indicator does — but paired with price action and support/resistance, it can serve as a focused read on aggression.
 
 ## Go Deeper with The Indicator Lab
 

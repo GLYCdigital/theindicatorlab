@@ -17,89 +17,81 @@ categories:
 rating: 4
 description: "Gann-based trend indicator with calendar count verticals. Tested settings, entry logic, pros/cons, and who should use it. Honest 4-star review."
 tv_script_url: "https://www.tradingview.com/script/YefTwU4v-Square-Bar-Calendar-Count-Verticals-Gann/"
+sources: ["https://www.tradingview.com/script/YefTwU4v-Square-Bar-Calendar-Count-Verticals-Gann/"]
 ---
-I’ll be straight with you: most Gann-inspired indicators on TradingView are either incomprehensible math experiments or repackaged moving averages with mystical labels. The *Square_Bar_Calendar_Count_Verticals_Gann* sits somewhere in the middle — it’s genuinely useful, but it demands you understand what you’re looking at before it makes sense.
+Most Gann-inspired indicators on TradingView are either incomprehensible math experiments or repackaged moving averages with mystical labels. *Square Bar/Calendar Count Verticals* sits somewhere in the middle — it is a legitimate time-counting tool, but it demands you understand what you are looking at before it makes sense.
 
-Let me break down what this thing actually does, because the name alone is a mouthful.
+The name alone is a mouthful. Here is what the script actually does.
 
-**What you’re really looking at**
+**What you're really looking at**
 
-This indicator blends Gann’s square-of-nine time cycles with vertical countdown bars. In plain English: it projects potential reversal zones based on calendar day counts from significant swing highs or lows. The "square bar" part refers to the geometric price-time relationship Gann traders obsess over — the indicator plots vertical lines at intervals it considers mathematically significant (typically 30, 45, 60, 90, 120, 144, 180 days).
+The indicator implements a specific working set drawn from W.D. Gann's time-counting methods. The premise: elapsed time from a significant price extreme reaching a perfect square marks a date of elevated probability for a trend pause, inflection, or termination. The roots squared by default are 9, 10, 11, 12, 17, and 19 — the same set demonstrated in Constance Brown's published Gann work, where bar counts of 9², 10², 11², and 12² are projected from swing extremes, a 17² calendar-day count is run from a significant low, the 144 count is monitored from key pivots, and the square of 19 is tracked as a separate helix cycle.
 
-The default chart setting I tested was on a MACD chart type, which is unusual but actually works well. The verticals line up with momentum shifts on the MACD histogram — you’ll see the countdown bars cluster right where the histogram flips. That’s not a coincidence; the time cycles are anchoring to the same swing points that drive MACD crossovers.
+Crucially, the verticals are time factors only. They carry no directional information. Their value is realized when a squared count expires while price is simultaneously at a level identified by independent price-based methods.
 
 **Key features that separate it from the pack**
 
-- **Calendar-based, not bar-based**: Most time-cycle indicators count trading sessions. This one uses actual calendar days, so weekends and holidays matter. In backtesting on BTC and EURUSD, the calendar approach caught weekend-gap reversals that bar-counting missed entirely.
-- **Auto-detection of swing points**: You don’t manually mark highs and lows. The indicator finds its own pivots based on a lookback period you control.
-- **Vertical countdown lines**: These aren’t just decorative. Each vertical represents a full square cycle completion. When price is trending and a vertical appears, that’s your alert window.
-- **Multi-timeframe consistency**: Works on anything from 15-minute to weekly. I found daily and 4-hour charts give the cleanest signals.
+- **Two units in parallel**: Most Gann-count scripts plot a single count series in a single unit. This one runs trading-bar counts and calendar-day counts from the same anchor at the same time, and explicitly flags where the two coincide. Per the methodology, the strongest dates are those where a bar-count square and a calendar-day square land together.
+- **Anchor resolution by containment**: Each anchor is a timestamp selected on the chart, resolved to a bar by taking the first bar whose closing time exceeds the timestamp. That makes resolution independent of exchange timezone and safe when the timestamp falls on a weekend or holiday, rather than silently shifting by one bar.
+- **Correct projection per unit**: Calendar squares are drawn in time coordinates and can mark dates arbitrarily far into the future. Bar squares are drawn in bar-index coordinates and are bounded by the platform's future-bar range. Each unit stays accurate to its own definition.
+- **144-cycle repeats**: When the root 12 is present and the repeat setting exceeds 1, additional verticals are drawn at 288, 432, and further multiples of 144, in both units.
+- **Status table and alerts**: A table reports, per active anchor, elapsed counts in both units and the next upcoming square in each, with bars remaining and the calendar date. Three alert conditions fire — on the bar completing a bar-count square, on the bar containing a calendar-day square date, and on the bar where both occur together.
 
-**The settings I actually recommend**
+**Settings and How to Tune Them**
 
-After two weeks of testing across crypto, forex, and indices, here’s what worked:
+- **Square roots**: comma-separated integer roots to square. Default 9,10,11,12,17,19.
+- **Inclusive count**: when enabled, the anchor bar or anchor day counts as 1, so targets land one unit earlier. Default on.
+- **Trading-bar squares**: show or hide bar-count verticals. Default on.
+- **Calendar-day squares**: show or hide calendar-count verticals. Default on.
+- **144-cycle repeats**: number of 144 multiples to project; 1 disables repeats. Default 3.
+- **Anchors 1, 2, 3**: enable flag, pivot timestamp, and line color per anchor. Anchor 1 prompts for a chart click on load. Defaults: Anchor 1 enabled, Anchors 2 and 3 disabled.
+- **Status table**: show or hide the summary table. Default on.
+- **Label size**: tiny, small, or normal. Default small.
 
-- **Pivot Lookback**: 5 (default). Lower values create too many lines; higher values miss the important ones.
-- **Square Root Increment**: 0.25. This controls the spacing between verticals. Stick with 0.25 for swing trading — it spaces the lines 30–45 days apart on daily charts, which is practical.
-- **Show Counter Labels**: On. You want the day counts visible, otherwise you’re guessing which vertical you’re at.
-- **Timeframe Offset**: 0. If you’re using higher timeframes for analysis, set this to 1 or 2 to see where the future verticals will land.
+There is no automatic pivot detection, and that is deliberate. Significance of an anchor is an analytical judgment the script leaves to you.
 
-**How to actually trade this thing**
+**How to actually use it**
 
-The verticals are timing tools, not standalone signals. The most reliable setup I found:
+The verticals are appointments in time, not signals. The intended workflow:
 
-1. Wait for price to approach a vertical line.
-2. Confirm with MACD divergence or a candlestick rejection at that zone.
-3. Enter on the close of the rejection candle.
-4. Target the next vertical line or a 1:2 risk-reward, whichever comes first.
+1. Anchor each slot on a significant swing extreme.
+2. Validate the anchor by inspecting verticals already in the past. If historical squared counts from that anchor align with real pivots, keep it. If they align with nothing, move or disable it.
+3. When price approaches an upcoming vertical, consult independent price analysis. A squared count expiring while price sits at a level derived from other methods is the condition of interest. A squared count expiring in open space warns at most of a pause or stall.
+4. Treat the third alert — a bar square and a calendar square completing on the same bar — as the highest-weight event the tool can flag.
 
-On the chart above, you can see the December 2024 vertical caught a major BTC pullback right at the 0.618 Fibonacci level — that confluence is where this indicator shines. Alone, the verticals will give you too many false alarms. Combined with price action, they’re excellent timing filters.
+Bar counts are timeframe-relative by design. The same anchor produces different bar-square dates on daily and weekly charts, and both are legitimate counts on their own timeframe. Calendar-day counts are identical on every timeframe. The tool is built for daily and weekly swing analysis, where Gann's counts were applied; on intraday charts the calendar counts remain valid but bar counts become session-dependent.
+
+**Visual elements**
+
+Solid vertical lines are trading-bar squares. Dashed vertical lines are calendar-day squares. The heavy line with a date label is the anchor. Labels above price name bar counts; labels below price name calendar counts. The top-right table summarizes elapsed and upcoming counts.
 
 **Pros and Cons**
 
 Pros:
-- Genuinely unique approach — no other free indicator uses calendar-day Gann cycles this cleanly
-- Works well as a confluence tool with standard TA
-- Visual output is immediately readable once you understand the concept
+- Runs both counting units in parallel and detects their coincidence, rather than treating confluence as an afterthought
+- Anchor resolution survives timezones, weekends, and holidays without shifting by a bar
+- Visual output is readable once the concept is understood
 
 Cons:
-- Steep learning curve. If you don’t know Gann theory, the lines feel random at first
-- Not a standalone signal. You will lose money if you trade every vertical blindly
-- Repainting risk: the pivot detection can shift the earlier verticals when new swings form. I noticed lines moving about 2–3 days on historical data after major new highs/lows
+- Steep learning curve if you have no familiarity with Gann time counting
+- Not a standalone signal — the script itself makes no directional forecast and no claim about the outcome of price at any vertical
+- Drawings are created once per script load on the last bar, so elapsed counts in the table and newly reachable verticals refresh only when the script recalculates
+
+**Notes and limitations**
+
+- Bar-count verticals can be projected at most about 490 bars beyond the current bar, a platform ceiling on future bar-index coordinates. Calendar-day verticals have no such ceiling.
+- The script draws up to 500 lines and 500 labels. Many roots combined with three anchors, both units, and repeats can reach this ceiling, at which point the oldest objects are removed.
+- If an anchor timestamp predates the symbol's available history, the anchor resolves to the first available bar and every count measures from there — unlikely to be the intended pivot.
+- Bar counts depend on the chart timeframe and on the symbol's session definition. Symbols with irregular sessions or many holidays will show bar squares and calendar squares diverging substantially. That is expected behavior, not an error.
 
 **Who should install this?**
 
-This is for traders who already have a solid entry strategy and need better timing — not beginners looking for a holy grail. If you swing trade or position trade on 4H to weekly charts, the verticals give you a concrete "check this date" framework. Day traders will find it too slow; scalpers should skip it entirely.
-
-**Alternatives worth considering**
-
-- **Gann Square of 9 (by LonesomeTheBlue)**: More mathematically pure but harder to interpret. Use if you want deeper Gann theory.
-- **Time Cycle Indicator (by LonesomeTheBlue)**: Simpler, bar-based, better for intraday traders who don’t want calendar complexity.
-- **Cycle High Low Lines**: If you just want swing-based verticals without Gann math, this is cleaner.
-
-**Frequently asked questions**
-
-*Does it work on crypto?* Yes — actually better than forex, since crypto trades 24/7 and calendar cycles align more naturally with its round-the-clock structure.
-
-*Does it repaint?* Partially. The pivot points can shift as new swings form, which moves earlier verticals slightly. The most recent vertical is always accurate though.
-
-*Can I use it for options expiry planning?* Absolutely. The calendar-day approach aligns well with monthly options expirations. I found the 30-day cycles often land within 2–3 days of monthly expiries.
+Traders who already have an entry method and want a timing framework layered on top of it. If you swing trade or position trade and want a concrete "check this date" reference, the verticals provide one. Traders looking for a standalone signal will be disappointed — by design.
 
 **Final verdict**
 
-The *Square_Bar_Calendar_Count_Verticals_Gann* earns 4 stars — not because it’s perfect, but because it fills a gap no other free indicator covers. It’s a legitimate time-cycle tool that, when combined with price action, improves trade timing meaningfully. The learning curve is real, and the repainting issue is annoying, but for swing traders who want an edge in *when* to enter rather than just *where*, this is worth your time.
+*Square Bar/Calendar Count Verticals* fills a gap that most Gann scripts on TradingView leave open: it counts in two units at once, resolves anchors robustly, and handles projection correctly for each unit. It is a legitimate time-cycle tool whose output only becomes actionable alongside independent price analysis. The learning curve is real, and the recalculation behavior is a genuine limitation, but for traders who want help with *when* rather than *where*, it is worth the time.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-## Frequently Asked Questions
-
-### Is Square_Bar_Calendar_Count_Verticals_Gann worth it?
-
-Based on testing across multiple timeframes, Square_Bar_Calendar_Count_Verticals_Gann delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

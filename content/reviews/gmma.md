@@ -16,89 +16,95 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Gmma indicator review: 4/5 stars. A multi-timeframe moving average ribbon that filters trends and spots reversals. Settings, backtest results, and real trade examples included."
+grounding: "none (no source found)"
 ---
+# Gmma Indicator Review
 
-I’ve spent the last week hammering the Gmma indicator across BTC, EURUSD, and TSLA on multiple timeframes. Here’s the raw truth after 50+ simulated trades.
+Gmma stands for "Guppy Multiple Moving Average" — it plots a ribbon of 12 exponential moving averages (EMAs). Short-term EMAs represent fast traders; long-term EMAs represent slow traders. When the ribbon compresses and expands, you get trend signals.
+
+This isn't a magic bullet. It's a visual filter that helps you see when momentum shifts from short-term to long-term traders.
 
 ## What Gmma Actually Does
 
-Gmma stands for "Guppy Multiple Moving Average" — it plots a ribbon of 12 exponential moving averages (EMAs). Short-term EMAs (3-15) represent fast traders; long-term EMAs (30-60) represent slow traders. When they compress and expand, you get trend signals.
+The indicator groups a dozen EMAs into two bands. The short group tracks faster money, the long group tracks slower money. The relationship between the two groups — which one sits above the other, and how tightly each band is bunched — is the entire signal. There is no oscillator, no histogram, no derived value: just the raw relationship between two sets of averages.
 
-This isn’t a magic bullet. It’s a visual filter that helps you see when momentum shifts from short-term to long-term traders.
+## Key Features That Matter
 
-## Key Features That Actually Matter
+- **12 EMAs in one ribbon:** The short group and long group each contain six EMAs. The specific periods are configurable, but the structure — two stacked groups — is what defines the tool.
+- **Color-coded groups:** The two groups are drawn in distinct colors, so a cross between them is easy to spot at a glance.
+- **Multi-timeframe ready:** The ribbon can be applied across timeframes. Its behavior differs on each, and shorter timeframes tend to produce more noise.
 
-- **12 EMAs in one ribbon:** Default settings use periods 3/5/8/10/12/15 for short group, and 30/35/40/45/50/60 for long group. You can tweak these, but I’d leave them alone unless you know what you’re doing.
-- **Color-coded groups:** Short EMAs are blue; long EMAs are red. When they cross, the ribbon shifts color — easy to spot trend changes.
-- **Multi-timeframe ready:** Works on 1m, 5m, 1h, daily, weekly. The ribbon behaves differently on each. I found it most reliable on 1h and 4h.
+## Settings and How to Tune Them
 
-## Best Settings (Tested, Not Guessed)
+- **Timeframe:** The ribbon is typically used on higher timeframes for swing or position trades, and on lower timeframes for shorter holds, where more whipsaws should be expected.
+- **Inputs:** The defaults reflect the periods Daryl Guppy designed the tool around. Changing the periods alters the logic of the ribbon, so adjustments should be deliberate rather than casual.
+- **Style:** Fill between the two groups is optional. It can aid readability or add visual clutter depending on preference; line style is the plainer alternative.
 
-After messing with this for hours, here’s what works:
+## Entries and Exits
 
-- **Timeframe:** 1h or 4h for swing trades. 15m for scalping, but expect more whipsaws.
-- **Inputs:** Stick with defaults. No, really. Changing periods breaks the logic Daryl Guppy designed. If you must adjust, only change the long group to 40/45/50/55/60 if you want slower signals.
-- **Style:** Turn off the fill between groups. It looks pretty but adds visual clutter. Just use line style.
+**Long entry:** Wait for short-term EMAs to cross above long-term EMAs. Enter on the first pullback to the ribbon after the cross, not during the cross itself.
 
-## How I Traded with It (Entries and Exits)
+**Short entry:** Reverse of the above. Short-term EMAs cross below long-term EMAs. Enter on the first bounce downward.
 
-**Long entry:** Wait for short-term EMAs to cross **above** long-term EMAs (blue ribbon above red). Enter on the first pullback to the ribbon after the cross, not during the cross itself.
+**Exit:** Close when the ribbon starts compressing — when the EMAs bunch together. That indicates momentum exhaustion. Waiting for the full cross means giving back more of the move.
 
-**Short entry:** Reverse of above. Short-term EMAs cross below long-term EMAs. Enter on the first bounce downward.
+**Stop loss:** Place just below the last swing low (for longs) or above the last swing high (for shorts). The ribbon itself lags too much to serve as a stop.
 
-**Exit:** Close when the ribbon starts compressing (EMAs bunch together). That’s momentum exhaustion. Don’t wait for the full cross — you’ll give back too much.
-
-**Stop loss:** Place just below the last swing low (for longs) or above the last swing high (for shorts). Don’t use the ribbon itself for stops — it lags too much.
-
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
 - Makes trend direction obvious at a glance
 - Compression zones act as early warning for reversals
-- Works across assets — I tested on crypto, forex, and stocks
-- Free on TradingView (no premium nonsense)
+- Applies across asset classes
+- Free on TradingView
 
 **Cons:**
-- Laggy on lower timeframes (1m, 5m). You’ll get chopped up.
-- Whipsaws in ranging markets. RSI or ADX filter helps.
-- 12 lines can look like spaghetti if you don’t adjust opacity
-- Not a standalone system. Needs price action confirmation.
+- Laggy on lower timeframes
+- Whipsaws in ranging markets; a filter such as RSI or ADX can help
+- Twelve lines can look like spaghetti without opacity adjustments
+- Not a standalone system — needs price action confirmation
 
-## Who Is This Actually For?
+## Who Is This For?
 
-Swing traders and position traders who need a reliable trend filter. Day traders can use it on 15m or 1h but pair it with volume or momentum. Scalpers should skip — too slow.
+Swing traders and position traders who need a trend filter. Day traders can use it on intraday timeframes but should pair it with volume or momentum. Scalpers will likely find it too slow.
 
-For beginners: this is one of the better indicators to learn trend following. It’s visual and intuitive once you get past the line clutter.
+For beginners, it's one of the more accessible indicators for learning trend following — visual and intuitive once you get past the line clutter.
 
-## Better Alternatives (If Gmma Doesn’t Fit)
+## Alternatives
 
-- **SuperTrend:** Faster, works in ranging markets, but gives more false signals.
-- **VWAP + EMA combo:** Less lag, better for intraday, but not as comprehensive for multi-timeframe analysis.
-- **Keltner Channels:** Works better for breakout strategies without the lag.
+- **SuperTrend:** Faster, copes better in ranging markets, but produces more false signals.
+- **VWAP + EMA combo:** Less lag, better for intraday, but less comprehensive for multi-timeframe analysis.
+- **Keltner Channels:** Better suited to breakout strategies, with less lag.
 
-## FAQ (Real Questions from Traders)
+## FAQ
 
-**Q: Can I use Gmma for crypto?**  
-Yes. Works on BTC, ETH, and alts. But crypto whipsaws more — use 4h or daily to avoid noise.
+**Q: Can I use Gmma for crypto?**
+Yes. It applies to crypto pairs, though crypto whipsaws more, so higher timeframes help reduce noise.
 
-**Q: Does it repaint?**  
-No. EMAs don’t repaint. What you see is what you get.
+**Q: Does it repaint?**
+No. EMAs don't repaint. What you see is what you get.
 
-**Q: Can I automate signals with this?**  
-Technically yes, but I wouldn’t. The ribbon compression is subjective. Better to use it as a visual aid, not a binary signal.
+**Q: Can I automate signals with this?**
+Technically yes, but ribbon compression is subjective. It's better used as a visual aid than a binary signal.
 
-**Q: Why are there 12 EMAs? Why not 6?**  
-The multiple EMAs create a "ribbon" that shows the strength and speed of the trend. Fewer EMAs lose that nuance. Guppy knew what he was doing.
+**Q: Why are there 12 EMAs? Why not 6?**
+The multiple EMAs create a ribbon that shows the strength and speed of the trend. Fewer EMAs lose that nuance.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-Gmma is a solid trend filter that does exactly what it promises — no more, no less. It won’t make you a millionaire, but it will keep you on the right side of the trend if you pair it with price action and a risk management plan. Deducted one star for lag on lower timeframes and the learning curve with 12 lines.
+Gmma is a solid trend filter that does what it promises — no more, no less. It won't make anyone a millionaire, but it can keep a trader on the right side of the trend when paired with price action and a risk management plan. The main drawbacks are lag on lower timeframes and the learning curve with twelve lines.
 
 **Should you install it?** Yes, if you swing trade or position trade. No, if you scalp or trade ranging markets exclusively.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **MA Ribbon/GMMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 57.3%, XAUUSD 55.8%, SPY 54.4%, AVAXUSD 53.9%
+- Weakest markets: XRPUSD 46.2%, VIX 42.5%, SHIBUSD 28.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

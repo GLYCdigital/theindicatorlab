@@ -16,42 +16,37 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Blur_Fibonacci auto-draws Fibonacci retracements with dynamic levels and a smoothing algorithm. Honest review, settings, and strategy for real traders."
+grounding: "none (no source found)"
 ---
-
 **What This Indicator Actually Does**
 
 Blur_Fibonacci isn't another lagging retracement tool that plots static levels based on a single swing high/low. It uses a proprietary "blur" algorithm that averages multiple Fibonacci retracement calculations across different timeframes or swing points, then smooths them into a single dynamic line. Think of it as a consensus Fibonacci—it shows you where the *average* of several Fib levels clusters, rather than just one.
 
-As the chart above shows, the indicator paints a gradient band (not a single line) that shifts as price action evolves. The band's opacity indicates the strength of the confluence: darker = more agreement across the underlying calculations.
+The indicator paints a gradient band (not a single line) that shifts as price action evolves. The band's opacity indicates the strength of the confluence: darker = more agreement across the underlying calculations.
 
 **Key Features That Set It Apart**
 
 - **Dynamic levels that adjust in real-time** — no need to redraw manually after every swing.
-- **Opacity gradient** — instantly see where multiple Fib calculations agree (darker zones) vs. where they disagree (lighter, less reliable zones).
+- **Opacity gradient** — see where multiple Fib calculations agree (darker zones) vs. where they disagree (lighter, less reliable zones).
 - **Customizable blur radius** — controls how many swing points or timeframes are averaged. Higher values = smoother but slower to react.
 - **Auto-detect swing highs/lows** — or you can manually define the lookback period.
 - **Alerts on level touches** — set alerts for when price enters the band, exits it, or touches the median line.
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-After testing on BTC/USD, EUR/USD, and ES1!, my preferred setup:
-
-- **Blur Radius:** 3 (default is 2). This smooths out noise without lagging too much. On 4H+ charts, you can push it to 5.
-- **Lookback Period:** 50 bars. Shorter = more sensitive but more false signals. Longer = fewer signals but higher reliability.
-- **Band Width:** 0.382 to 0.618. This captures the core retracement zone. For scalping, narrow to 0.5 only.
-- **Median Line:** Enable. It's the strongest single level.
-- **Gradient Opacity:** 70%. Dark enough to see, light enough not to obscure price.
-
-For intraday (5m-15m): Use Blur Radius 2, Lookback 30.
-For swing trading (1D+): Use Blur Radius 5, Lookback 100.
+- **Blur Radius:** Controls how many swing points or timeframes are averaged into the composite line. Higher values produce a smoother band that reacts more slowly; lower values react faster but track noise more closely.
+- **Lookback Period:** Sets how far back the indicator looks for swing points. Shorter lookbacks are more sensitive but produce more signals; longer lookbacks produce fewer signals.
+- **Band Width:** Defines the Fib levels that bound the band. A narrower band focuses on a tighter retracement zone.
+- **Median Line:** Toggles the center line of the band.
+- **Gradient Opacity:** Controls how strongly the confluence shading is displayed. Dark enough to read, light enough not to obscure price.
 
 **How to Use It for Entries and Exits**
 
-**Entry (Long):** Wait for price to dip into the band with decreasing momentum (e.g., a doji or hammer on the lower timeframe). Enter when the first bullish candle closes *above* the median line inside the band. The darker the band at that point, the better.
+**Entry (Long):** Wait for price to dip into the band with decreasing momentum (e.g., a doji or hammer on the lower timeframe). Enter when the first bullish candle closes *above* the median line inside the band. The darker the band at that point, the stronger the agreement between the underlying calculations.
 
-**Exit (Long):** Take partial profits when price reaches the opposite side of the band (the 0.618 level if entering near 0.382). Trail the rest using the median line as a stop—if price closes back below the median, exit.
+**Exit (Long):** Take partial profits when price reaches the opposite side of the band. Trail the rest using the median line as a stop—if price closes back below the median, exit.
 
-**Stop Loss:** Place 1 ATR below the band's lower edge. Don't use a fixed pip stop—the band moves.
+**Stop Loss:** Place your stop below the band's lower edge, sized to the instrument's volatility rather than a fixed pip distance—the band moves, so a static stop will not stay aligned with it.
 
 **Honest Pros and Cons**
 
@@ -84,25 +79,23 @@ Blur_Fibonacci sits in the middle—it's better than the static tools for adapti
 
 **FAQ Addressing Real Trader Questions**
 
-*Q: Does it repaint?*  
+*Q: Does it repaint?*
 A: No, once a bar closes, the levels for that bar are fixed. It only updates on new bars.
 
-*Q: Can I use it for crypto?*  
+*Q: Can I use it for crypto?*
 A: Yes, works great on BTC and ETH due to the frequent retracement moves.
 
-*Q: Why is the band sometimes very light?*  
+*Q: Why is the band sometimes very light?*
 A: Low opacity means low agreement between the averaged Fib levels. Avoid trading those zones—they're unreliable.
 
-*Q: Does it work in ranging markets?*  
+*Q: Does it work in ranging markets?*
 A: Better than static Fib, but no Fib tool is ideal in strong trends. Use trend-following indicators instead.
 
-**Final Verdict with Star Rating**
+**Final Verdict**
 
-Blur_Fibonacci solves a real problem: static Fib levels that become useless after a few bars. The dynamic band and opacity gradient are genuinely useful, and the no-repaint guarantee is a must. It's not perfect—the fuzziness takes getting used to, and it's not for beginners who want a simple "buy/sell" signal. But for traders who understand the math and want a more adaptive tool, it's a solid 4-star addition to the toolkit.
+Blur_Fibonacci solves a real problem: static Fib levels that become useless after a few bars. The dynamic band and opacity gradient are genuinely useful, and the no-repaint guarantee is a must. It's not perfect—the fuzziness takes getting used to, and it's not for beginners who want a simple "buy/sell" signal. But for traders who understand the math and want a more adaptive tool, it's a solid addition to the toolkit.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Honest, innovative, and practical. Not revolutionary, but a clear upgrade over manual Fibonacci drawing.
-
----
 
 ## Go Deeper with The Indicator Lab
 

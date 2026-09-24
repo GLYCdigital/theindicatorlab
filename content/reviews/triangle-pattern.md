@@ -6,117 +6,115 @@ type: reviews
 image: "/screenshots/triangle-pattern.png"
 rating: 4
 description: "Automatic triangle pattern detection on TradingView. Honest review of settings, entry/exit strategies, and real trade examples."
+grounding: "none (no source found)"
+---
+**description:** "Automatic triangle pattern detection on TradingView. A review of what it does, how to configure it, and how it fits into a pattern-trading workflow."
+
 ---
 
-**description:** "Automatic triangle pattern detection on TradingView. Honest review of settings, entry/exit strategies, and real trade examples."
-
----
-
-I’ve spent the last month grinding through triangle patterns manually. Drawing trendlines, waiting for breakouts, second-guessing if the pattern was even valid. So when I saw **Triangle_Pattern**, I was skeptical. Another auto-detection tool that flags every random consolidation as a wedge? Not quite.
-
-Let me be clear: this indicator doesn’t replace your brain. But it does save hours of chart time. Here’s my honest take after running it on BTC/USD, ES futures, and a handful of altcoins.
+Triangle patterns are tedious to trade manually. Drawing trendlines, waiting for breakouts, second-guessing whether the pattern was even valid. **Triangle_Pattern** is an auto-detection tool built for that problem. It is not a replacement for judgment, but it does cut down chart time. Here is a straightforward look at what it offers and where it falls short.
 
 ---
 
 ### What This Indicator Actually Does
 
-**Triangle_Pattern** scans your chart in real-time and highlights three classic triangle formations:
+**Triangle_Pattern** scans the chart and highlights three classic triangle formations:
 
 - **Ascending** (bullish – higher lows, flat resistance)  
 - **Descending** (bearish – lower highs, flat support)  
 - **Symmetrical** (neutral – converging trendlines)
 
-It draws the trendlines automatically and marks the breakout zone with a colored label. You get a clear visual of where price is coiling. No repainting on confirmed patterns, but early-stage triangles will flicker – that’s the nature of the beast.
+It draws the trendlines automatically and marks the breakout zone with a colored label, giving a clear visual of where price is coiling. Confirmed patterns do not repaint, but early-stage triangles will flicker as the pattern develops — an inherent limitation of real-time pattern detection, not a defect unique to this tool.
 
 ---
 
-### Key Features That Set It Apart
+### Key Features
 
-- **Multi-timeframe support.** I tested it on 15m, 1h, and 4h – it works across all. On 1h+ it’s more reliable.
-- **Customizable pivot strength.** The default setting (lookback 20) catches most patterns. Increase to 30+ for fewer, cleaner triangles.
-- **Breakout confirmation filter.** You can toggle this on to avoid false flags. It waits for a candle close outside the trendline.
-- **Alert system.** Set a price alert when a triangle completes. I use this for swing trades on 4h charts.
-
----
-
-### Best Settings (My Recommendations)
-
-| Setting | Default | My Pick | Why |
-|---------|---------|---------|-----|
-| Pivot Lookback | 20 | 25 | Reduces noise on volatile pairs |
-| Min Triangle Bars | 5 | 8 | Avoids micro-triangles |
-| Breakout Filter | Off | On | Cuts false breaks by ~40% |
-| Line Color | Auto | Custom (green/red) | Better visibility |
-
-**Pro tip:** On crypto pairs (high volatility), bump the pivot lookback to 30. You’ll miss a few patterns but the ones you get will hold tighter.
+- **Multi-timeframe support.** The indicator is designed to work across timeframes.
+- **Customizable pivot strength.** Pivot lookback controls how sensitive the pattern detection is. A higher lookback produces fewer, cleaner triangles.
+- **Breakout confirmation filter.** An optional toggle that waits for a candle close outside the trendline before flagging the breakout, which helps filter out false breaks.
+- **Alert system.** Alerts can be set for when a triangle completes, which is useful for swing trading workflows.
 
 ---
 
-### How to Use It for Entries and Exits
+### Settings and How to Tune Them
 
-**Entry:** Wait for the breakout filter to trigger (candle close outside the trendline). Enter on the next candle open with a stop 1 ATR below the breakout point.
+| Setting | Role | Tuning Notes |
+|---------|------|-----|
+| Pivot Lookback | Controls pattern sensitivity | Higher values reduce noise on volatile pairs |
+| Min Triangle Bars | Minimum pattern length | Raising it filters out micro-triangles |
+| Breakout Filter | Requires candle close outside trendline | Enabling it cuts false breaks |
+| Line Color | Visual styling | Custom colors improve visibility |
 
-**Exit:** Classic rule – measure the widest part of the triangle, project it from the breakout. That’s your target. I trail a 21 EMA for partial exits.
-
-**Example from my journal:** On the 4h ETH/USD chart last week, a symmetrical triangle formed over 6 days. Breakout was at $3,240. I entered at $3,248. Target ($3,390) hit in 2 days. Stop was $3,175. Clean.
+On volatile instruments like crypto pairs, raising the pivot lookback reduces the number of patterns flagged, but the ones that remain tend to be better formed. The trade-off is that some valid setups will be missed.
 
 ---
 
-### Honest Pros and Cons
+### Entries and Exits
+
+**Entry:** Wait for the breakout filter to trigger — a candle close outside the trendline. A common approach is to enter on the next candle open with a stop placed below the breakout point.
+
+**Exit:** The classic measured-move rule applies: measure the widest part of the triangle and project that distance from the breakout point. That is the target. Some traders trail a moving average for partial exits rather than exiting all at once.
+
+Because the indicator gives no volume confirmation, pairing it with volume bars is worth considering for additional context on whether a breakout has participation behind it.
+
+---
+
+### Pros and Cons
 
 **Pros:**  
 - Saves hours of manual trendline drawing  
-- Breakout filter is actually useful (rare for auto-indicators)  
-- Works on futures, forex, crypto, stocks  
+- The breakout filter is genuinely useful — rare for auto-detection indicators  
+- Applicable across futures, forex, crypto, and stocks  
 
 **Cons:**  
-- Early-stage triangles will redraw – do not trade before the filter confirms  
-- On low timeframes (1m-5m) it’s noisy. Stick to 15m+  
-- No volume confirmation built in. Pair it with volume bars for better accuracy  
+- Early-stage triangles will redraw — do not trade before the filter confirms  
+- Noisy on low timeframes; 15m and above is the practical floor  
+- No volume confirmation built in — pair it with volume bars for better context  
 
 ---
 
-### Who It’s Actually For
+### Who It’s For
 
-- **Swing traders** (1h-4h timeframes) – this is where it shines  
+- **Swing traders** — higher timeframes are where the tool performs best  
 - **Pattern traders** who want to scan multiple charts quickly  
 - **Anyone tired of drawing trendlines manually**  
 
-Not for: scalpers or traders who need 100% precision. No indicator gives that.
+Not for scalpers or traders who need absolute precision. No indicator provides that.
 
 ---
 
-### Better Alternatives
+### Alternatives
 
 If you want more than just triangles:
 
-- **Chart Patterns by LuxAlgo** – detects 12+ patterns (head & shoulders, double tops, etc.) but it’s paid  
-- **Auto Fib Retracement** – for pullback entries after the triangle breaks  
+- **Chart Patterns by LuxAlgo** – detects a wider range of formations (head & shoulders, double tops, etc.) but it’s paid  
+- **Auto Fib Retracement** – useful for pullback entries after a triangle breaks  
 
-Triangle_Pattern is free and does one thing well. I keep it on my watchlist alongside LuxAlgo.
+Triangle_Pattern is free and does one thing well.
 
 ---
 
 ### FAQ
 
 **Does it repaint?**  
-Only on incomplete patterns. Once a breakout is confirmed (filter on), it doesn’t repaint.
+Only on incomplete patterns. Once a breakout is confirmed with the filter on, it does not repaint.
 
 **Can I use it for day trading?**  
-On 15m charts, yes. Lower than that and you’ll get too many false signals.
+On 15m charts, yes. Below that, expect too many false signals.
 
 **Is it good for crypto?**  
-Yes. Crypto loves triangles. Just increase the pivot lookback to 30.
+Crypto produces triangles frequently. Raising the pivot lookback helps filter the noise.
 
 ---
 
 ### Final Verdict
 
-**Triangle_Pattern** is a solid tool for automatic triangle detection. It won’t make you a profitable trader by itself – no indicator does. But it gives you a clean, fast way to spot high-probability setups. The breakout filter is the secret sauce.
+**Triangle_Pattern** is a solid tool for automatic triangle detection. It won’t make anyone profitable by itself — no indicator does. But it provides a clean, fast way to spot potential setups. The breakout filter is the most valuable feature.
 
-If you trade patterns and want to cut down on chart time, install it. Just remember: **the pattern is the setup, not the trade.**
+For pattern traders looking to cut down on chart time, it’s worth installing. Just remember: **the pattern is the setup, not the trade.**
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – One star off for the flickering on small timeframes and lack of volume confirmation. Otherwise, it’s a keeper.
+**Rating: 4/5** – One star off for flickering on small timeframes and the lack of volume confirmation. Otherwise, it’s a keeper.
 
 ---
 

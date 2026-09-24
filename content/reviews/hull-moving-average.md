@@ -16,95 +16,107 @@ categories:
   - Technical Analysis
 rating: 4
 description: "The Hull Moving Average reduces lag better than SMA or EMA. My test of settings, entry rules, and when this indicator falls short."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The Hull Moving Average (HMA) is a weighted moving average designed to reduce lag, which is the main complaint traders have about traditional moving averages. Developed by Alan Hull in 2005, it uses a clever calculation: it takes the weighted moving average of the difference between two WMAs of different periods. The result? A smoother line that reacts faster to price changes than an EMA of the same length.
+The Hull Moving Average (HMA) is a weighted moving average designed to reduce lag, which is the main complaint traders have about traditional moving averages. It was developed by Alan Hull in 2005. The calculation takes the weighted moving average of the difference between two WMAs of different periods. The result is a smoother line intended to react faster to price changes than an EMA of the same length.
 
-On the chart above, you can see the HMA (blue line) hugging price action much tighter than the standard 20-period EMA (orange). During the sharp rally in mid-May, the HMA caught the turn nearly three candles earlier. That’s the whole point.
+On a chart, the HMA typically hugs price action more tightly than a standard EMA. The intent is to catch turns earlier, at the cost of some of the smoothness a longer EMA provides.
 
 ## Key Features That Set It Apart
 
-- **Lag reduction is real.** In my backtests across BTCUSD, EURUSD, and SPY, the HMA consistently turned 1–2 bars before a comparable EMA. This matters for swing traders who need early signals.
-- **Adjustable source.** You can choose close, open, high, low, HL2, HLC3, or OHLC4. For volatile stocks, I prefer HL2 to smooth out wicks.
-- **Customizable length.** Default is 9, but I’ve found 20 works better for daily charts and 5 for scalping.
-- **No repainting.** This is a standard study — the value at a closed bar is fixed. Some custom scripts repaint, but the built-in TradingView HMA does not.
+- **Lag reduction is the design goal.** The whole point of the HMA construction is to turn earlier than a comparable EMA of the same length. That matters for swing traders who want earlier signals.
+- **Adjustable source.** You can choose close, open, high, low, HL2, HLC3, or OHLC4. HL2 is often used on volatile instruments to smooth out wicks.
+- **Customizable length.** The default is 9. Traders commonly adjust it depending on timeframe and instrument.
+- **No repainting on the built-in version.** The standard TradingView study fixes its value at a closed bar. Some custom Pine Script versions do repaint — check the script description before relying on one.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After testing 30+ combinations on 1H, 4H, and daily timeframes:
+The HMA has two inputs: length and source. Both matter, and both are best chosen based on the instrument and timeframe you trade rather than copied from someone else's chart.
 
-- **Scalping (1m–5m):** Length 5, source close. Use as a fast trend filter — don’t trade against the HMA slope on these timeframes.
-- **Swing trading (1H–4H):** Length 20, source HL2. This balances responsiveness with avoiding whipsaws.
-- **Position trading (Daily+):** Length 50, source close. Works as a dynamic support/resistance level.
+- **Short lengths** are used as a fast trend filter on intraday charts. The shorter the length, the more responsive the line and the more sensitive it is to noise.
+- **Medium lengths** are commonly used for swing trading, where the goal is balancing responsiveness against whipsaws.
+- **Longer lengths** are used on daily and higher timeframes, where the HMA can act as a dynamic support or resistance level.
 
-Avoid length below 3 — it becomes noise. Above 100 is too slow for most markets.
+Avoid extremely short lengths — the line becomes noise rather than signal. Very long lengths make it too slow to be useful for most markets.
+
+Source selection is secondary but not irrelevant. HL2 is a common choice on volatile instruments because it dampens the effect of long wicks. Close is the default and works fine as a starting point.
 
 ## How to Use It for Entries and Exits
 
-**Entry rules I actually trade:**
-- **Trend continuation:** Price pulls back to the HMA on the 4H chart, bounces, and the HMA is sloping up. Enter long on the close of the bounce candle.
-- **Trend reversal:** Price crosses the HMA with a strong close (full candle body beyond the line). Confirm with volume spike or RSI divergence.
-- **Breakout filter:** Only take long breakouts when price is above the HMA and the HMA is rising. Ditto for short.
+**Entry approaches:**
 
-**Exit rules:**
-- Trail with the HMA on a lower timeframe. If you entered on 4H, trail using the 1H HMA. When price closes below it, exit half.
-- Use the HMA as a hard stop only if you hold overnight. In 2023, it saved me from a 4% drawdown on NVDA.
+- **Trend continuation:** Price pulls back to the HMA, bounces, and the HMA is sloping in the trend direction. Enter on the close of the bounce candle.
+- **Trend reversal:** Price crosses the HMA with a strong close — a full candle body beyond the line. Confirm with a volume spike or momentum divergence.
+- **Breakout filter:** Only take long breakouts when price is above the HMA and the HMA is rising. The inverse applies for shorts.
+
+**Exit approaches:**
+
+- Trail with the HMA on a lower timeframe than your entry. If you entered on a higher timeframe, trail using a lower-timeframe HMA. When price closes below it, consider scaling out.
+- The HMA can serve as a hard stop, but it is generally more useful as a trailing reference than as a static level.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Less lag than SMA/EMA — genuinely useful for trend detection.
-- Simple to understand and apply. No overfitting needed.
-- Works across all liquid markets: crypto, forex, equities.
+- Less lag than SMA or EMA — genuinely useful for trend detection.
+- Simple to understand and apply.
+- Works across liquid markets: crypto, forex, equities.
 - Free and built into TradingView.
 
 **Cons:**
-- Still lags in fast markets. During the March 2020 crash, the HMA turned down after price had already dropped 8%.
-- Whipsaws in ranging markets. On a sideways SPY in August 2024, the HMA flipped slope 12 times in one week.
-- Not a standalone system. You need a volume or momentum filter to avoid fakeouts.
+- Still lags in fast markets. Sharp moves can extend well past the HMA before it turns.
+- Whipsaws in ranging markets. In sideways conditions the slope can flip repeatedly in a short window.
+- Not a standalone system. A volume or momentum filter helps avoid fakeouts.
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Trend traders** who want cleaner entries without EMA noise.
-- **Scalpers** on 1m–5m charts who need a fast, reliable filter.
-- **Anyone frustrated with SMA lag** but not ready for complex indicators like SuperTrend or KAMA.
+- **Scalpers** on short timeframes who need a fast, responsive filter.
+- **Anyone frustrated with SMA lag** but not ready for adaptive indicators like KAMA.
 
-It’s **not** for:
+It's **not** for:
 - Mean reversion traders. The HMA is pro-trend by design.
-- Traders who want an all-in-one buy/sell signal. You must pair it.
+- Traders who want an all-in-one buy/sell signal. You must pair it with something else.
 
 ## Better Alternatives If They Exist
 
-- **Zero Lag EMA (ZLEMA):** Even less lag than HMA, but more whipsaws. Use if you scalp aggressively.
-- **KAMA (Kaufman’s Adaptive Moving Average):** Adjusts speed based on market noise. Better for ranging markets. I switch to KAMA when ATR drops below 20-period average.
-- **EMA + ATR bands:** For trend following with a volatility stop, this combo beats HMA alone.
+- **Zero Lag EMA (ZLEMA):** Even less lag than HMA, but more whipsaws. Suited to aggressive scalping.
+- **KAMA (Kaufman's Adaptive Moving Average):** Adjusts speed based on market noise. Better for ranging markets.
+- **EMA + ATR bands:** For trend following with a volatility stop, this combination addresses the HMA's weakness in fast reversals.
 
-That said, the HMA is the best **simple** moving average for trend trading. I keep it on my 4H chart alongside volume.
+That said, the HMA remains the most common choice among **simple** moving averages for trend trading, and it pairs naturally with volume or momentum studies.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does the Hull Moving Average repaint?**  
+**Q: Does the Hull Moving Average repaint?**
 A: The built-in TradingView version does **not** repaint. The value at a closed bar is fixed. Some custom Pine Script versions do repaint — check the script description.
 
-**Q: What is the best length for crypto?**  
-A: For Bitcoin on the 4H chart, length 20 with HL2 source. For altcoins with higher volatility, length 34 reduces noise.
+**Q: What is the best length for crypto?**
+A: There is no universal answer; it depends on the asset's volatility and the timeframe. Shorter lengths respond faster but produce more false signals; longer lengths filter noise but lag more.
 
-**Q: Can I use it for shorting?**  
-A: Yes. Short when price is below the HMA and the HMA is sloping down. Pair with RSI below 50 for confirmation.
+**Q: Can I use it for shorting?**
+A: Yes. The mirror of the long logic applies: short when price is below the HMA and the HMA is sloping down. A momentum filter such as RSI can be used for confirmation.
 
-**Q: How does it compare to the Exponential Moving Average?**  
-A: The HMA has about 30% less lag than an EMA of the same length. In practice, that means it catches trend changes 1–3 candles sooner. But the EMA is smoother in choppy markets.
+**Q: How does it compare to the Exponential Moving Average?**
+A: The HMA is designed to have less lag than an EMA of the same length, which in practice means it can catch trend changes sooner. The trade-off is that the EMA is smoother in choppy markets.
 
 ## Final Verdict
 
-The Hull Moving Average is a solid, no-nonsense tool that solves the lag problem better than any standard moving average. It’s not a magic bullet — you still need price action or volume context — but it gives you a cleaner trend line with fewer false moves. For the price (free), it’s a no-brainer addition to your toolkit.
+The Hull Moving Average is a solid, no-nonsense tool that addresses the lag problem more aggressively than any standard moving average. It's not a magic bullet — you still need price action or volume context — but it gives you a cleaner trend line with fewer false moves than an SMA or EMA of the same length. It's free and built into TradingView, which makes it easy to evaluate on your own charts.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star off because it still struggles in sideways markets and requires additional filters to be reliable. If you pair it with ATR or volume, it’s easily a 4.5.
+**Rating: 4/5**
+One star off because it still struggles in sideways markets and requires additional filters to be reliable.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Hull MA** implementation was backtested on 30 markets over 5 years of daily data (43,820 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: AMD 56.0%, AAPL 54.5%, PLTR 53.4%, USDJPY 52.9%
+- Weakest markets: WTI 46.2%, VIX 44.5%, SHIBUSD 26.6%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

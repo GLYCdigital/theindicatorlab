@@ -16,84 +16,87 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Money Flow Index indicator. Tested settings, divergence strategy, and when to actually use MFI over RSI."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Let’s cut through the noise. The Money Flow Index (MFI) is essentially RSI’s smarter cousin. Both measure overbought/oversold conditions, but MFI adds volume into the equation. Where RSI only looks at price changes, MFI weighs each period by trading volume. The result? A momentum oscillator that filters out low-volume noise and gives you signals when real money is moving.
+The Money Flow Index (MFI) is essentially RSI with a volume component. Both measure overbought and oversold conditions, but MFI weights each period by trading volume rather than looking at price changes alone. The intent is a momentum oscillator that filters out low-volume noise and responds when participation is heavier.
 
-I tested this on TradingView’s built-in MFI indicator across BTC/USD, EUR/USD, and TSLA daily charts. The core calculation is standard: 14 periods, typical price (H+L+C)/3, then volume-weighted. It ranges 0–100, with 80+ overbought and 20– oversold.
+On TradingView, the built-in MFI follows the standard calculation: typical price (H+L+C)/3, volume-weighted, plotted on a 0–100 scale with overbought and oversold thresholds. The conventional interpretation is 80+ overbought and 20 or below oversold.
 
 ## Key Features That Set It Apart
 
-The volume component is the real differentiator. In choppy, low-volume markets, RSI will flash overbought/oversold signals that go nowhere. MFI stays quiet until volume confirms the move. On the chart above (daily BTC/USD during the 2024 consolidation), notice how MFI stayed below 70 during low-volume rallies while RSI hit 75+ multiple times. That saved me from fading false breakouts.
+The volume component is the differentiator. In choppy, low-volume conditions, RSI can flash overbought or oversold signals that lead nowhere, while MFI stays quieter until volume confirms the move. That behavior is the core argument for using it over a pure price-based oscillator.
 
-TradingView’s implementation is clean: customizable lookback period, adjustable overbought/oversold thresholds, and optional divergence detection via alerts. No bloat. No extra lines.
+TradingView's implementation is deliberately plain: a customizable lookback period, adjustable overbought/oversold thresholds, and alert capability. No extra lines, no bloat.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-**Default 14 period** works for most swing trades. For faster signals in 1H–4H timeframes, drop to **10 periods** — but expect more whipsaws. For weekly charts, **21 periods** smooths out noise.
+The lookback period is the main lever. A longer period smooths the oscillator and produces fewer signals; a shorter period reacts faster but generates more whipsaws. The right choice depends on your holding period rather than a single correct value.
 
-Overbought/oversold levels: Stick with **80/20** for trending markets. In ranges, tighten to **90/10** to avoid false signals. I tested 70/30 on EUR/USD 4H — too many false exits.
+Overbought/oversold thresholds are the second lever. Wider thresholds reduce the number of extreme readings; tighter thresholds produce more of them. In range-bound conditions, thresholds that are too tight will fire constantly. There is no threshold setting that is universally best — it depends on the instrument and the regime.
 
-Pro tip: Add a 50-line. When MFI crosses above 50 with volume, it confirms bullish momentum. Below 50 signals bearish pressure. This works better than extreme levels in choppy conditions.
+One common adjustment is adding a 50-line reference. An MFI cross above 50 is read as confirming bullish momentum; below 50 as bearish pressure. In choppy conditions, the 50-line cross is often cited as more useful than the extreme levels, because the extremes are reached less reliably.
 
 ## How to Use It for Entries and Exits
 
-**Divergence is where MFI shines.** Look for price making a higher high while MFI makes a lower high (bearish divergence). The chart above shows a textbook bearish divergence on BTC/USD daily in March 2026 — price hit $72k, MFI peaked at 78, then price hit $74k while MFI dropped to 72. Two days later, BTC dumped 8%.
+**Divergence** is the most commonly discussed use. Bearish divergence is price making a higher high while MFI makes a lower high; bullish divergence is the mirror image. Divergence is a warning, not a signal on its own.
 
-**For entries:** Wait for MFI to exit oversold (above 20) or overbought (below 80), then confirm with price action. Don’t buy just because MFI hits 15 — wait for it to turn back above 20 and close a bullish candle.
+**Entries:** The usual approach is to wait for MFI to exit an extreme — back above oversold, or back below overbought — and then confirm with price action. Buying simply because MFI is deeply oversold is not a complete setup.
 
-**For exits:** Trail stops when MFI crosses below 80 from overbought. Or use a 50 cross as a momentum shift warning.
+**Exits:** Trail stops when MFI crosses back below the overbought threshold, or treat a 50-line cross as an early momentum-shift warning.
 
-**False signal filter:** Only trade divergences when MFI is above 50 (bullish) or below 50 (bearish). This removes 40% of false divergences I saw in TSLA 1H.
+**False-signal filter:** Some traders only act on divergences when MFI is on the same side of 50 as the intended trade direction. The logic is that this removes divergences forming against the prevailing momentum.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Volume-weighted — filters noise better than RSI
-- Divergence signals are reliable with proper confirmation
-- Works across timeframes (1H to weekly)
-- TradingView’s version is free and stable
+- Volume-weighted, so it filters noise differently than RSI
+- Divergence readings can be useful with confirmation
+- Available across timeframes
+- TradingView's version is free and stable
 
 **Cons:**
-- Lags on high-volume spikes (flash crashes)
-- Less effective in strongly trending markets (stays overbought/oversold for days)
-- No visual divergence plotting (you have to eyeball it)
-- Requires volume data — useless on instruments without it
+- Lags on high-volume spikes
+- Less useful in strongly trending markets, where it can stay pinned at an extreme for extended stretches
+- No built-in visual divergence plotting — you have to eyeball it
+- Requires volume data, so it is not meaningful on instruments without it
 
-## Who It’s Actually For
+## Who It's Actually For
 
-Swing traders and position traders who want volume confirmation. Day traders can use it on 1H–4H but need to tighten settings. Not for scalpers — the lag will kill you.
+Swing and position traders who want volume confirmation in their momentum reading. Shorter-horizon traders can use it, but the lag becomes more of a problem as the holding period shrinks. Scalpers are generally better served by something faster.
 
 ## Better Alternatives If They Exist
 
-If you want volume-weighted momentum without the lag, try **Volume Weighted RSI (VWRSI)** — it’s MFI but with RSI’s calculation. TradingView has it under "VWAP RSI" in some scripts. For pure divergence detection, **Chaikin Money Flow (CMF)** is cleaner but doesn’t give overbought/oversold levels.
-
-MFI is still the best all-in-one volume + momentum oscillator. Just don’t expect it to replace price action.
+If you want volume-weighted momentum with different responsiveness, look at volume-weighted RSI variants. For pure divergence detection, Chaikin Money Flow is often cited as cleaner, though it does not produce overbought/oversold levels.
 
 ## FAQ
 
-**Q: MFI vs RSI — which is better?**  
-A: For volume-heavy assets like crypto and stocks, MFI. For forex (no reliable volume), RSI.
+**Q: MFI vs RSI — which is better?**
+A: For assets with reliable volume, MFI adds information RSI does not have. For markets where volume data is unreliable, RSI is the more sensible choice.
 
-**Q: Can I use MFI for crypto?**  
-A: Yes, if your exchange provides real volume. Works great on Binance and Coinbase data.
+**Q: Can I use MFI for crypto?**
+A: Yes, provided the exchange reports real volume.
 
-**Q: Why does MFI stay above 80 in strong uptrends?**  
-A: Normal. In trends, use the 50-line cross instead of extremes for signals.
+**Q: Why does MFI stay above 80 in strong uptrends?**
+A: That is normal behavior in a trend. The 50-line cross is often used instead of the extremes in those conditions.
 
-**Q: Does TradingView’s MFI repaint?**  
-A: No, it’s a standard calculation. Once a bar closes, the value is fixed.
+**Q: Does TradingView's MFI repaint?**
+A: No — it is a standard calculation. Once a bar closes, the value is fixed.
 
 ## Final Verdict
 
-The Money Flow Index isn’t flashy, but it’s reliable. For traders who understand that volume matters, MFI is a step up from RSI without the complexity of custom indicators. It won’t make you money on its own — no indicator does — but it’s a solid tool for confirming momentum with real market participation.
+The Money Flow Index is not flashy, but it is a well-understood oscillator. For traders who already factor volume into their process, it is a reasonable step up from RSI without the overhead of a custom script. Like any indicator, it confirms momentum rather than generating trades on its own, and its usefulness depends on the quality of the volume data underneath it.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star for no built-in divergence detection and lag on fast moves. Still a staple in my toolkit for swing trades.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **MFI** implementation was backtested on 30 markets over 5 years of daily data (28,124 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.1%** (50% = coin flip)
+- Strongest markets: AMD 54.4%, VIX 53.9%, SPY 53.2%, AVAXUSD 52.5%
+- Weakest markets: LTCUSD 46.3%, USDJPY 40.1%, SHIBUSD 27.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

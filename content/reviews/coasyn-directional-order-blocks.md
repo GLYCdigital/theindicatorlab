@@ -17,82 +17,96 @@ categories:
 rating: 4
 description: "Coasyn_Directional_Order_Blocks plots trend-aligned order blocks with mitigation tracking. Honest 4-star review: settings, entry logic, and limits."
 tv_script_url: "https://www.tradingview.com/script/479OoWeN-Coasyn-Directional-Order-Blocks/"
+sources: ["https://www.tradingview.com/script/479OoWeN-Coasyn-Directional-Order-Blocks/"]
 ---
-The name oversells it slightly. "Directional Order Blocks" sounds like it's doing something proprietary, but what Coasyn_Directional_Order_Blocks actually does is take the classic order block concept and validate it against trend direction before it draws anything on your chart. That single filter — refusing to plot blocks that fight the prevailing trend — is the whole reason this thing is worth your time.
+The name oversells it slightly. "Directional Order Blocks" sounds like it's doing something proprietary, but what Coasyn Directional Order Blocks actually does is take the classic order block concept and gate it behind a structure-break-plus-displacement check before it draws anything on your chart. That validation step — refusing to plot a zone unless a genuine structure break occurred with a directional displacement candle — is the whole reason this thing is worth a look.
 
-If you've spent any time with the half-dozen order block scripts floating around TradingView, you know the problem. They paint your chart with supply and demand zones in both directions, and you're left deciding which ones matter. Coasyn makes that decision for you, and while its trend logic isn't perfect, it's right often enough to justify the install.
+If you've spent any time with the order block scripts floating around TradingView, you know the problem. They paint your chart with supply and demand zones, and you're left deciding which ones matter. Coasyn's creation criteria do some of that triage for you.
 
 ## What It Actually Plots
 
-Each block is a shaded rectangle anchored to the candle that originated a strong directional move. You get a bullish block (demand) or bearish block (supply), and critically, the indicator only displays blocks that align with its internal trend read. Blocks that get violated — price closes through them — are marked as mitigated, usually with a color change or a subtle strike-through depending on your settings.
+Each block is a shaded rectangle anchored to the candle that preceded a strong directional move. A demand block requires price to break above the most recent tracked swing high; a supply block requires a break below the most recent tracked swing low. That break also has to come with displacement — an ATR-relative candle range with a minimum body percentage, bullish for demand and bearish for supply — which is what keeps every minor structure break from turning into a zone.
 
-The rectangles aren't repainting disasters. I watched several blocks form on the MACD chart above and confirmed against bar replay that once a block prints, its boundaries stay put. That's not nothing. Repainting order blocks are worse than useless because they rewrite history to look smart.
+After a valid break, the indicator searches backward for the opposing candle that preceded the move: a bearish candle for demand, a bullish candle for supply. That origin candle becomes the zone, and how much of it you see depends on the Order Block Zone setting.
 
-## Settings That Actually Matter
+Once a block prints, it goes through a defined lifecycle. It starts fresh and active, becomes touched when price returns according to your chosen threshold, and becomes invalidated when it's structurally broken. Touched blocks can be kept visible with increased transparency; invalidated blocks can be kept as neutral gray shapes that stop extending forward, or removed entirely.
 
-The default settings are usable, but two parameters do all the heavy lifting:
+## Settings and How to Tune Them
 
-**Swing Lookback** — controls how the indicator defines the trend. Lower values (3–5) make it flip direction constantly and you'll get blocks on every minor pullback. I settled on 8 for intraday and 12–15 for the daily chart. Anything above 20 and the trend read lags so badly that blocks appear after the move is over.
+Most of the configuration here is about how strict you want the indicator to be, not about squeezing out performance.
 
-**Mitigation Mode** — you can choose whether a block is killed by a wick touch or a candle close. Wick mode is more responsive but you'll lose blocks to noise. Close mode keeps zones alive longer and worked better in my testing on anything below the 4H.
+**Structure Swing Length** — controls how recent swing highs and lows are tracked. This defines what counts as a structure break, so it's the main lever on how frequently blocks appear.
 
-Leave the max block count at its default. Stacking 40 zones on the chart is how people convince themselves they have an edge when they just have clutter.
+**Displacement filters** — the ATR-relative candle range and the minimum body percentage. Together these decide how much conviction a candle needs before its structure break qualifies.
 
-## How I Traded It
+**Origin Candle Search** — how many candles back the indicator looks for the opposing origin candle.
 
-The logic is straightforward: wait for price to return to an unmitigated block that agrees with trend, then look for rejection. In the MACD screenshot, you can see a bullish block holding as support through a pullback — that's the textbook setup. Entry on the rejection candle, stop just below the block's lower bound, target the next opposing block.
+**Order Block Zone** — chooses how much of the origin candle becomes the displayed zone. Full Candle uses the entire high-to-low range. Body uses only the body. Refined uses a directional slice: for demand, the candle low through the top of the body; for supply, the bottom of the body through the candle high.
 
-The better use, honestly, is as a filter rather than a signal generator. Before I take a trade, I check whether price is sitting in a block or approaching one. If I'm about to short into a fresh bullish demand zone, I reconsider. That alone improved my hit rate more than trying to trade every block touch.
+**Touched When** — First Contact marks the block touched as soon as price reaches its outer edge. 50% Reached requires price to reach the midpoint. Full Fill requires price to travel all the way through to the opposite boundary.
 
-Don't chase the first touch of a virgin block. The second or third retest tends to produce cleaner reactions because the first one often just gets swept.
+**Invalidated When** — Close Beyond requires a candle close past the invalidation boundary; Wick Beyond accepts any wick through it. For demand blocks invalidation is below the zone, for supply blocks above it.
+
+**Maximum Active Blocks per Direction** — caps how many demand and supply zones stay active at once, tracked independently. Older blocks drop off automatically once the cap is exceeded.
+
+**Forward Projection** — how far active blocks extend to the right. The zone keeps updating forward while it remains active.
+
+There are also toggles for the 50% midline, structure break markers (off by default), demand/supply labels, and the color and transparency settings for fresh, touched, and invalidated blocks.
+
+## How It's Meant to Be Used
+
+The indicator's own framing is explicit: it reports the state of a zone, it doesn't decide whether you should enter. A demand block created after a strong bullish displacement through prior structure is a reference point. From there you watch whether price stays away, returns, reaches your chosen touch threshold, and then holds or invalidates.
+
+The more defensible use is as context rather than a trigger. If price is sitting in or approaching a block, that's information about where prior participation may have occurred. It's not a signal on its own, and the documentation is clear that it shouldn't be treated as one.
 
 ## Where It Falls Short
 
-The trend filter is the selling point and the weak point. It uses swing structure, which means it lags at turning points — right when order blocks matter most. You'll get bearish blocks filtered out during the early innings of a reversal, and by the time the trend read catches up, the best entry is gone.
+The structure-break requirement is both the selling point and the limitation. Because blocks only form after a swing high or low is broken with displacement, the indicator is inherently reactive — by the time a zone exists, the move that created it has already happened. At turning points, that lag matters most.
 
-There's also no volume or imbalance data feeding into block quality. Every block is treated equally, but in reality some zones are far stronger than others. A script that weighted blocks by volume delta or time-at-price would be a meaningful upgrade.
+There's also no volume or imbalance data feeding into block quality. Every block that passes the displacement check is treated equally, even though zones in reality aren't. Nothing here scores or ranks them.
 
-And the visual clutter builds fast on lower timeframes. Without disciplined settings, you're back to the same problem every other order block indicator has.
+And the visual clutter can build on lower timeframes. The Maximum Active Blocks per Direction setting exists precisely because of this, but it's on you to keep it sensible.
 
 ## Pros and Cons
 
 **Pros:**
-- Trend-aligned filtering removes the worst low-probability zones
-- Blocks don't repaint once printed
-- Mitigation tracking keeps stale zones from misleading you
-- Clean, readable rectangles that don't overwhelm the chart at sensible settings
+- Structure-break and displacement requirements filter out weak zones
+- Clear block lifecycle: fresh, touched, invalidated
+- Configurable touch and invalidation thresholds
+- Keeps touched and invalidated blocks visually distinct rather than deleting them outright
 
 **Cons:**
-- Trend detection lags at reversals — exactly when you need it most
+- Structure-based logic is reactive by design
 - No volume or quality scoring for blocks
-- Default settings too noisy on sub-15m charts
-- Documentation is thin; you're figuring out the settings by feel
+- Clutter builds if the active-block cap isn't managed
+- The settings surface is broad and the documentation is thin on how the pieces interact
 
 ## Who Should Use It
 
-Discretionary traders who already understand order blocks and want a cleaner version of the concept. If you trade pullbacks in trending markets on the 1H or higher, this fits your workflow. Scalpers on the 1-minute chart will find it too slow and too noisy. Complete beginners should learn market structure first — this indicator assumes you already know why a block matters.
+Discretionary traders who already understand order blocks and want a version with more defined creation and lifecycle rules. If you trade with market structure and want zones that only appear after a validated break, this fits. Complete beginners should learn market structure first — the indicator assumes you already know why a block matters.
 
 ## Alternatives Worth Considering
 
-If you want raw, unfiltered order blocks with more customization, LuxAlgo's supply and demand scripts give you more knobs. If you want the trend context handled separately, pair a plain order block indicator with something like a Supertrend or EMA stack and build the filter yourself. Coasyn's value is convenience — it does the combining for you, and for most people that's worth the tradeoff in flexibility.
+If you want raw, unfiltered order blocks with more customization, LuxAlgo's supply and demand scripts give you more knobs. If you want the trend context handled separately, pair a plain order block indicator with your own structure or trend tool and build the filter yourself. Coasyn's value is that it bundles the validation logic into one script.
 
 ## FAQ
 
-**Does it repaint?** No. Once a block prints, its boundaries are fixed. Mitigation status updates in real time, which is expected behavior.
+**Does it repaint?** The source material doesn't address repainting directly. What it does state is that each block remains active until it is touched, invalidated, or removed, and that the zone continues updating forward while active.
 
-**What timeframe works best?** 1H and 4H gave the most consistent results. Daily is fine for swing trading. Below 15 minutes, reduce your swing lookback and expect more noise.
+**What timeframe works best?** Not specified in the source material.
 
-**Can I use it for entries alone?** You can, but you shouldn't. Treat it as confluence, not a signal.
+**Can I use it for entries alone?** The indicator explicitly does not provide automatic entries, buy or sell recommendations, targets, stop placement, position sizing, or automated execution. It's a visualization tool.
 
-**Does it work on crypto and forex?** Yes — it's price-structure based, so it's asset-agnostic. I tested on both.
+**Does it work on crypto and forex?** Not specified in the source material.
+
+**Does it have alerts?** Yes — for new demand and supply blocks, entered demand and supply blocks, and invalidated demand and supply blocks. Alerts must be configured by the user through TradingView's alert system.
 
 ## Verdict
 
-Coasyn_Directional_Order_Blocks does one thing well: it stops you from trading order blocks that fight the trend. The trend filter lags at reversals and there's no block quality scoring, but the non-repainting blocks and clean mitigation logic make it a solid addition to a trend-following toolkit.
+Coasyn Directional Order Blocks does one thing clearly: it only draws a zone when a structure break comes with displacement, and then it tracks that zone through a defined lifecycle. The structure-based logic is reactive and there's no block quality scoring, but the explicit touch and invalidation rules and the configurable zone construction make it a coherent tool for traders who already work with order blocks.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Install it if you already trade order blocks and want zones with stricter creation criteria. Skip it if you're looking for a standalone buy/sell signal — by its own description, this isn't that.
 
-Install it if you already trade order blocks and want a disciplined filter. Skip it if you're looking for a standalone buy/sell signal — this isn't that, and it never pretends to be.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

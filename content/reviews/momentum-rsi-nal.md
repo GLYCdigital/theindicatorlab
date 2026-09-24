@@ -16,83 +16,94 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Momentum_Rsi_Nal combines RSI and momentum to spot trend shifts. See tested settings, entry rules, and how it fits real trading."
+grounding: "none (no source found)"
 ---
-Let’s cut to it: **Momentum_Rsi_Nal** is a trend-following indicator that tries to solve a common problem—RSI alone gets noisy in choppy markets, and plain momentum lags too much. This one fuses both into a single line with color-coded bars. I’ve run it on BTC/USD, EUR/USD, and a few altcoin pairs on the 1H and 4H charts. Here’s what actually works.
+# Momentum_Rsi_Nal Review
 
-## What It Actually Does
+**Momentum_Rsi_Nal** is a trend-following indicator that attempts to address a familiar problem: RSI alone gets noisy in choppy markets, and plain momentum lags. This script fuses both into a single oscillator line with color-coded bars, and adds a divergence-detection layer on top.
 
-The indicator plots a single oscillator line (0–100 scale) based on RSI smoothed by momentum. When the line crosses above a threshold (default 50) and turns green, it signals bullish momentum. Cross below 50 with red bars? Bearish. The real twist: it adds a second layer—momentum divergence detection. The line will sometimes flash a dot when price makes a higher high but the indicator makes a lower high. That’s where the edge lives.
+## What It Does
 
-In the screenshot above (MACD chart, 4H ETH/USDT), notice how the green bars held during the uptrend from $1,820 to $1,940, while red bars appeared exactly when price started rolling over. No false signals in that window—impressive.
+The indicator plots a single oscillator line on a 0–100 scale, based on RSI smoothed by momentum. When the line crosses above a threshold and turns green, it reads as bullish momentum; crossing below with red bars reads as bearish. The distinguishing feature is a second layer: momentum divergence detection, which marks the chart with a dot when price makes a higher high while the indicator makes a lower high (or the inverse for bullish divergence).
 
-## Key Features That Stand Out
+The intent is for the color-coded bars to keep a trader aligned with the prevailing push, while the divergence dots flag potential exhaustion. Neither element is presented as sufficient on its own.
 
-- **Divergence alerts**: The built-in dot markers for bearish/bullish divergences are rare in free indicators. They’re not perfect, but they catch 70% of major reversals I tested.
-- **Adjustable smoothness**: You can tweak the RSI period (default 14) and momentum length (default 5). I found that increasing momentum length to 8 on lower timeframes (15m) kills most whipsaws.
-- **Zero-lag-ish**: The combo of RSI and momentum actually reduces lag compared to plain RSI. On the 1H chart, it turned green about 2–3 bars earlier than standard RSI(14) crossing 50.
+## Key Features
 
-## Best Settings (Tested)
+- **Divergence markers**: Built-in dot markers for bearish and bullish divergences. These are uncommon in free indicators, though they are not immune to false positives.
+- **Adjustable smoothness**: The RSI period and momentum length can both be tuned, allowing the trader to trade responsiveness against noise.
+- **Reduced lag versus plain RSI**: Combining RSI with momentum is intended to turn the line earlier than a standard RSI midline cross would, at the cost of some additional sensitivity to chop.
 
-After about 200 trades across FX and crypto:
+## Settings and How to Tune Them
 
-- **Default RSI period (14), momentum length (5)**: Works best on 4H and daily. For scalping on 15m, bump momentum to 8 and RSI to 21. You’ll lose some early entries but gain reliability.
-- **Thresholds**: Leave oversold/overbought at 20/80. On trending pairs (like NAS100), try 30/70 to catch moves earlier.
-- **Divergence sensitivity**: The indicator’s default detection is conservative. I prefer that—fewer false positives.
+- **RSI period and momentum length**: These are the two core inputs. A shorter momentum length makes the line more responsive; a longer one smooths it and reduces whipsaws. The trade-off is earlier entries versus fewer false flips. There is no single correct value — it depends on the instrument and the timeframe.
+- **Thresholds**: The midline that separates bullish from bearish reads is adjustable. Widening the thresholds makes signals rarer and more extreme; tightening them catches moves earlier but admits more noise.
+- **Divergence sensitivity**: The default detection is conservative, which tends to mean fewer but cleaner divergence markers. Loosening it will surface more dots, including more that do not resolve.
+- **Show Divergence toggle**: Located under Settings > Style. Uncheck it to remove the divergence dots from the chart if they are not wanted.
 
-## How to Use It (Entry/Exit Logic)
+No specific parameter values are prescribed here — the correct settings depend on the market and timeframe being traded, and should be established by the user.
 
-This isn’t a standalone system. Pair it with price action.
+## How to Use It
 
-**Long entry**: Wait for the line to cross above 50 *and* turn green. Then look for a bullish divergence dot (line makes higher low, price makes lower low). Enter on the next green bar close. Stop loss below the recent swing low.
+This is not a standalone system. It is intended to be paired with price action and structure.
 
-**Short entry**: Line crosses below 50 and turns red. If a bearish divergence dot appears (line lower high, price higher high), short on the next red bar close. Stop above the swing high.
+**Long entry**: Wait for the line to cross above the midline and turn green. Then look for a bullish divergence dot (line makes a higher low, price makes a lower low). Enter on the next green bar close, with a stop below the recent swing low.
 
-**Exit**: Trail with the line itself—if it turns the opposite color, exit half. Full exit when it crosses the 50 midline.
+**Short entry**: Line crosses below the midline and turns red. If a bearish divergence dot appears (line makes a lower high, price makes a higher high), short on the next red bar close, with a stop above the swing high.
 
-My best results came on 4H BTC/USD: the divergence dot caught the February 2026 top almost perfectly, while the green/red bars kept me in the trend without premature exits.
+**Exit**: Trail with the line itself — if it flips color, exit half. Full exit when it crosses back through the midline.
+
+The logic assumes the trader is already comfortable reading swing structure and divergence independently.
 
 ## Pros & Cons
 
 **Pros**:
-- Divergence detection is legit—I caught 4 major reversals in a month that plain RSI missed.
-- Color-coded bars are intuitive. No brain fog.
-- Lightweight. Runs smooth even on 50+ charts.
+- Divergence detection is the standout feature and is rare in free indicators without bloat.
+- Color-coded bars are intuitive and reduce interpretation overhead.
+- Lightweight — runs smoothly across many charts simultaneously.
 
 **Cons**:
-- In ranging markets (sideways chop), the line oscillates around 50 like a drunk metronome. Divergence dots appear but are often false.
-- No multi-timeframe confirmation built in. You need to check higher timeframe yourself.
-- The momentum length parameter isn’t well explained in the script—took me hours to figure out its effect.
+- In ranging markets, the line oscillates around the midline and divergence dots frequently fail.
+- No multi-timeframe confirmation is built in; higher-timeframe context must be checked manually.
+- The momentum length parameter is not well documented in the script, which makes its effect non-obvious at first.
 
-## Who It’s For
+## Who It's For
 
-This is for **intermediate to advanced traders** who already understand divergence and trend structure. Beginners will get confused by the false signals in ranging markets. If you trade breakouts or momentum on 4H+ timeframes, you’ll love it. Scalpers should look elsewhere—the lag, while reduced, still hurts on 1m–5m.
+Intermediate to advanced traders who already understand divergence and trend structure. Beginners are likely to be misled by the false signals that appear in ranging conditions. It suits breakout and momentum traders on higher timeframes. Scalpers on very short timeframes will find that the reduced lag is still enough to hurt.
 
 ## Alternatives
 
-- **RSI Divergence by LonesomeTheBlue**: Better divergence detection, but no trend color coding. Use if you want pure divergence.
-- **Momentum RSI (built-in)**: The default TradingView indicator is simpler but lacks divergence alerts. Good for beginners.
-- **SuperTrend combined with RSI**: A different approach—trend direction plus overbought/oversold. Better for ranging markets.
+- **RSI Divergence by LonesomeTheBlue**: Stronger divergence detection, but no trend color coding. Suited to traders who want pure divergence.
+- **Momentum RSI (built-in)**: Simpler, no divergence alerts. A reasonable starting point for beginners.
+- **SuperTrend combined with RSI**: A different approach — trend direction plus overbought/oversold — that tends to hold up better in ranging markets.
 
 ## FAQ
 
-**Q: Does this repaint?**  
-A: No. The line and colors are fixed once the bar closes. Divergence dots also don’t repaint—they appear on the bar where the condition is met.
+**Q: Does this repaint?**
+A: No. The line and colors are fixed once the bar closes, and divergence dots appear on the bar where the condition is met.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works well on BTC, ETH, and majors. Avoid on low-cap coins with erratic volume—divergence signals become unreliable.
+**Q: Can it be used on crypto?**
+A: Yes, on majors. On low-cap coins with erratic volume, divergence signals become unreliable.
 
-**Q: What’s the best timeframe?**  
-A: 4H and daily for swing trading. 1H for intraday, but expect more false divergences.
+**Q: What's the best timeframe?**
+A: Higher timeframes for swing trading; intraday timeframes work but produce more false divergences.
 
-**Q: How do I remove the dots if I don’t want them?**  
-A: Go to Settings > Style > uncheck “Show Divergence.” Simple.
+**Q: How do I remove the dots?**
+A: Settings > Style > uncheck "Show Divergence."
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Momentum_Rsi_Nal earns its place by combining two classic tools into one clean, actionable signal, with divergence detection as the differentiator. It is not a holy grail — in sideways markets it offers little — but for traders who already read trends and divergences, it consolidates work that would otherwise be done manually. Pairing it with a trend filter is a sensible way to use it.
 
-Momentum_Rsi_Nal earns its stars by giving you a clean, actionable signal that combines two classic tools. The divergence detection is the standout feature—it’s rare to get that in a free indicator without bloat. But it’s not a holy grail. In sideways markets, it’s useless. If you trade trends and know how to read divergences, this will save you hours of manual analysis. For everyone else, pair it with a trend filter (like a 200 EMA) and you’ll have a solid edge.
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

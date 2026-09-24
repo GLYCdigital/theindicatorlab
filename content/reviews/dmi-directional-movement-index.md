@@ -16,122 +16,116 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest DMI Directional Movement Index review: settings, strategy, and how to trade trends and reversals with ADX. No fluff, just what works."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Let’s cut through the noise. The **Dmi_Directional_Movement_Index** is a custom TradingView implementation of the classic **Directional Movement Index (DMI)** developed by J. Welles Wilder. It measures trend strength and direction using three lines:
+The **Dmi_Directional_Movement_Index** is a custom TradingView implementation of the classic **Directional Movement Index (DMI)** developed by J. Welles Wilder. It measures trend strength and direction using three lines:
 
 - **+DI (Positive Directional Indicator)** – measures upward price movement.
 - **-DI (Negative Directional Indicator)** – measures downward price movement.
-- **ADX (Average Directional Index)** – smooths the directional movement to tell you *how strong* the trend is, regardless of direction.
+- **ADX (Average Directional Index)** – smooths the directional movement to indicate how strong the trend is, regardless of direction.
 
-Unlike the built-in Pine Script `dmi()` function, this version offers **customizable smoothing, multi-timeframe alignment, and visual alerts** that make it more practical for day trading and swing trading. As the chart above shows, it overlays cleanly without cluttering your workspace.
+Unlike the built-in Pine Script `dmi()` function, this version offers customizable smoothing, multi-timeframe alignment, and visual alerts.
 
 ## Key Features That Set It Apart
 
-Most DMI indicators are one-trick ponies. This one has:
-
-- **Adjustable ADX smoothing period** (default 14, but you can tweak from 7 to 21).
-- **Multi-timeframe DMI** – you can set a higher timeframe for +DI/-DI cross signals (e.g., use 1H DMI on a 15M chart).
-- **Color-coded ADX zones** – green for strong trend (ADX > 25), yellow for weak, red for range-bound.
+- **Adjustable ADX smoothing period.**
+- **Multi-timeframe DMI** – you can set a higher timeframe for +DI/-DI cross signals.
+- **Color-coded ADX zones** – distinguishing strong trends, weak trends, and range-bound conditions.
 - **Built-in divergence detection** – flags hidden and regular divergences between price and ADX.
 - **Custom alerts** – crossovers, ADX threshold breaches, and divergence triggers.
 
-That divergence feature alone saves you from manually scanning 50 bars back.
+## Settings and How to Tune Them
 
-## Best Settings with Specific Recommendations
+The indicator exposes several adjustable inputs:
 
-After testing on BTC/USD, EUR/USD, and TSLA, here’s what works:
+- **DMI Period** – controls the lookback used for the directional movement calculations.
+- **ADX Smoothing** – controls how heavily the ADX line is smoothed.
+- **ADX Threshold** – the level used to classify trend strength and drive the color-coded zones.
+- **Show Divergence** – toggles divergence detection on or off.
+- **Multi-timeframe DMI** – lets you reference a higher timeframe's DMI on a lower-timeframe chart.
 
-| Market | DMI Period | ADX Smoothing | ADX Threshold | Timeframe |
-|--------|------------|---------------|---------------|-----------|
-| Crypto (4H+) | 14 | 14 | 25 | 1H |
-| Forex (1H) | 12 | 10 | 22 | 15M |
-| Stocks (Daily) | 14 | 14 | 25 | Daily |
-
-**My go-to for swing trading:**  
-- DMI Period: 14  
-- ADX Smoothing: 14  
-- ADX Threshold: 25  
-- Show Divergence: On  
-- Multi-timeframe DMI: Off (unless I’m scalping)
-
-For scalping (1M–5M), drop the DMI period to 9 and ADX smoothing to 7. You’ll get more signals but more false ones too. Tighten your stop-loss accordingly.
+Shorter periods and lighter smoothing produce more frequent signals; longer periods and heavier smoothing produce fewer, slower ones. The trade-off is responsiveness versus noise, and the right balance depends on your timeframe and instrument. There is no single configuration that is best across markets.
 
 ## How to Use It for Entries and Exits
 
-**Trend-following entry:**  
-1. Wait for ADX to rise above 25 (trend is strong).  
-2. +DI crosses above -DI → long.  
-3. -DI crosses above +DI → short.  
+**Trend-following entry:**
+1. Wait for ADX to rise above the threshold (trend is strong).
+2. +DI crosses above -DI → long.
+3. -DI crosses above +DI → short.
 
-**Reversal entry (divergence):**  
-- Price makes a higher high, but ADX makes a lower high → bearish divergence, potential short.  
+**Reversal entry (divergence):**
+- Price makes a higher high, but ADX makes a lower high → bearish divergence, potential short.
 - Price makes a lower low, but ADX makes a higher low → bullish divergence, potential long.
 
-**Exit rules:**  
-- Close long when -DI crosses above +DI (or ADX drops below 20).  
-- Close short when +DI crosses above -DI (or ADX drops below 20).  
-- Alternatively, use a trailing stop based on ATR (ATR multiplier = 1.5–2).
+**Exit rules:**
+- Close long when -DI crosses above +DI, or when ADX drops below the threshold.
+- Close short when +DI crosses above -DI, or when ADX drops below the threshold.
+- Alternatively, use a trailing stop based on ATR.
 
-**My favorite combo:** Pair DMI with a 20 EMA. Enter long only when price is above the EMA *and* +DI > -DI with ADX > 25. For shorts, flip it.
+A common combination is pairing DMI with a moving average: enter long only when price is above the EMA and +DI > -DI with ADX above the threshold, and flip the logic for shorts.
 
-## Honest Pros and Cons
+## Pros and Cons
 
-**Pros:**  
-- Divergence detection actually works (tested on 500+ bars of BTC).  
-- Multi-timeframe feature reduces whipsaws in choppy markets.  
-- Clean UI – no rainbow lines or useless gauges.  
-- Custom alerts save you from staring at the screen.
+**Pros:**
+- Divergence detection is built in.
+- Multi-timeframe feature can reduce whipsaws in choppy markets.
+- Clean UI – no rainbow lines or useless gauges.
+- Custom alerts reduce the need to watch the screen continuously.
 
-**Cons:**  
-- Laggy on lower timeframes (below 5M) – ADX is inherently smoothed.  
-- No built-in stop-loss or take-profit calculator.  
-- Divergence signals can be rare on trending pairs (e.g., USD/JPY).  
-- Doesn’t include the **ADXR** (Average Directional Movement Rating) that some traders prefer.
+**Cons:**
+- Laggy on lower timeframes – ADX is inherently smoothed.
+- No built-in stop-loss or take-profit calculator.
+- Divergence signals can be rare on strongly trending pairs.
+- Doesn't include the **ADXR** (Average Directional Movement Rating) that some traders prefer.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Swing traders** (4H–Daily) – this is where DMI shines.  
-- **Trend traders** who want confirmation before entry.  
-- **Crypto traders** – the divergence signals catch tops and bottoms better than RSI in volatile moves.  
+- **Swing traders** – this is where DMI is most commonly applied.
+- **Trend traders** who want confirmation before entry.
+- **Crypto traders** – divergence signals can help identify tops and bottoms during volatile moves.
 
-**Not for:**  
-- Scalpers (under 5M).  
-- Range-bound market lovers (ADX < 20 means stay out).  
-- Beginners who want a “buy/sell” button – this requires interpretation.
+**Not for:**
+- Scalpers on very low timeframes.
+- Range-bound market traders (a low ADX reading generally means staying out).
+- Beginners who want a "buy/sell" button – this requires interpretation.
 
 ## Better Alternatives If They Exist
 
-- **SuperTrend + ADX** – combines trend direction with strength. Simpler for beginners.  
-- **VWAP + DMI** – good for intraday mean reversion.  
-- **Built-in TradingView DMI** – free, but no divergence detection or multi-timeframe.  
+- **SuperTrend + ADX** – combines trend direction with strength. Simpler for beginners.
+- **VWAP + DMI** – often used for intraday mean reversion.
+- **Built-in TradingView DMI** – free, but no divergence detection or multi-timeframe.
 
-If you’re already paying for TradingView Pro, this custom indicator is a minor upgrade. If you’re on a free plan, it’s worth the pins.
+## FAQ: Common Trader Questions
 
-## FAQ: Real Trader Questions
+**Q: Does it repaint?**
+The DMI lines are based on fixed historical data. The divergence detection is also non-repainting.
 
-**Q: Does it repaint?**  
-No. The DMI lines are based on fixed historical data. The divergence detection is also non-repainting.
+**Q: Can I use it for options trading?**
+It can be applied on daily or 4H charts. Use the ADX threshold to confirm trend before buying calls or puts.
 
-**Q: Can I use it for options trading?**  
-Yes, on daily or 4H charts. Use ADX > 25 to confirm trend before buying calls/puts.
+**Q: What if ADX is above 40?**
+That reading indicates a very strong trend. Some traders stay in the trade but tighten their stop. Overbought/oversold doesn't apply to ADX.
 
-**Q: What if ADX is above 40?**  
-Trend is extremely strong. You can stay in the trade but tighten your stop. Overbought/oversold doesn’t apply here.
-
-**Q: Why do I get false signals on lower timeframes?**  
-DMI is a lagging indicator. On 1M–5M, noise dominates. Use the multi-timeframe feature with a higher timeframe DMI (e.g., 15M DMI on a 5M chart).
+**Q: Why do I get false signals on lower timeframes?**
+DMI is a lagging indicator. On very low timeframes, noise dominates. The multi-timeframe feature lets you reference a higher timeframe's DMI instead.
 
 ## Final Verdict
 
-The **Dmi_Directional_Movement_Index** is a solid, no-nonsense tool for trend traders who want confirmation without the fluff. It doesn’t predict the future (no indicator does), but it does an excellent job of telling you *when to stay in a trade and when to get out*. The divergence detection and multi-timeframe options justify the 4-star rating.
+The **Dmi_Directional_Movement_Index** is a solid, no-nonsense tool for trend traders who want confirmation without the fluff. It doesn't predict the future, but it does a reasonable job of indicating when to stay in a trade and when to get out. The divergence detection and multi-timeframe options are the main additions over the built-in version.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-**Verdict:** Install it if you trade trends and hate guessing. Skip it if you scalp or trade only ranges.
+**Verdict:** Worth a look if you trade trends and want a configurable DMI. Skip it if you scalp or trade only ranges.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ADX/DMI** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 56.2%, GBPUSD 54.2%, AMD 53.0%, AVAXUSD 52.8%
+- Weakest markets: LTCUSD 44.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

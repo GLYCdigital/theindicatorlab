@@ -16,87 +16,85 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Price_Volume_Rank review: Tested settings, entry/exit logic, and honest pros/cons. A solid 4/5 trend-strength tool for swing traders."
+grounding: "none (no source found)"
 ---
-Let me cut through the noise. Price_Volume_Rank isn't some magical black box — it's a trend-strength meter that combines price momentum with volume confirmation into a single normalized score. The concept is simple: a stock moving up on rising volume ranks higher than one drifting on thin participation. That's it. No repainting, no AI, no "smart money" mysticism. Just a clean, quantitative way to gauge whether a trend has legs.
+# Price_Volume_Rank Review
 
-I ran this on the MACD chart type you see above, layering it on daily SPY and a few mid-cap momentum names. The indicator plots a single line oscillating between 0 and 100, with color-coded zones. I'll be honest — the default settings work fine out of the box, but there's some tweaking to do if you want it sharp.
+Price_Volume_Rank is a trend-strength meter that combines price momentum with volume confirmation into a single normalized score. The concept is straightforward: a stock moving up on rising volume ranks higher than one drifting on thin participation. No black box, no "smart money" mysticism — just a quantitative way to gauge whether a trend has participation behind it.
 
-**What Actually Sets It Apart**
+The indicator plots a single line oscillating between 0 and 100, with color-coded zones. There's also a built-in signal line crossover: when the rank line crosses above its moving average, it suggests buying pressure is building, and the color shift from red to green happens at that crossover.
 
-Most volume indicators show you *how much* trading happened. Price_Volume_Rank answers *whether that volume is pushing price in a meaningful direction*. It ranks each bar's price-volume relationship against a rolling lookback window, giving you a percentile score. A reading of 85 means the current price-volume action is stronger than 85% of recent bars. That's genuinely useful for filtering out noise.
+## What Sets It Apart
 
-The built-in signal line crossover is a nice touch. When the rank line crosses above its moving average, you get an early nod that buying pressure is building. The color shift from red to green happens right at that crossover — no lag beyond the calculation period itself.
+Most volume indicators show you *how much* trading happened. Price_Volume_Rank addresses *whether that volume is pushing price in a meaningful direction*. It ranks each bar's price-volume relationship against a rolling lookback window, producing a percentile score. A reading of 85 means the current price-volume action is stronger than 85% of recent bars — useful for filtering out noise.
 
-**Settings I Actually Recommend**
+## Settings and How to Tune Them
 
-After testing various combinations, here's what worked best for me:
+- **Lookback Period** — Controls the rolling window the current bar is ranked against. A shorter setting reacts faster but produces more whipsaws; a longer setting smooths the line at the cost of responsiveness. The right value depends on your timeframe and how much noise you're willing to tolerate.
+- **Signal Line Length** — Sets the moving average the rank line is compared against for crossovers. Shorter lengths give more crossovers (and more false triggers in ranging conditions); longer lengths lag more but filter chop.
+- **Overbought/Oversold Zones** — Define where the line is considered stretched. Tighter zones flag more readings as extreme; wider zones reserve the labels for genuinely exhausted moves.
+- **Color Scheme** — The default gradient can be hard to read at a glance. A simple two-color scheme (one color above the midpoint, another below) is easier to parse visually.
 
-- **Lookback Period: 14** — Default is 10, but 14 smooths out the whipsaws on daily charts. For intraday (5-min or less), drop it to 8.
-- **Signal Line Length: 7** — This gives you a responsive crossover without being twitchy. The default 5 triggered too many false signals on ranging days.
-- **Overbought/Overbought Zones: 80/20** — The default 70/30 is too loose. You want the extremes to be *extreme*. At 80, you're only seeing genuinely exhausted moves.
+## How It Can Be Used
 
-One thing I'll stress: don't use the default color scheme. The default green-to-red gradient is hard to read at a glance. Set it to a simple two-color system — green above 50, red below. Your eyes will thank you.
+A common approach is to treat the indicator as a trend filter rather than a standalone entry trigger:
 
-**How I Actually Trade It**
+1. **Require the rank to hold in the upper range for consecutive bars.** This filters out one-bar spikes that don't reflect sustained participation.
+2. **Look for pullbacks where the rank dips but holds above the signal line.** The idea is to enter with the trend intact rather than chasing an extended move.
+3. **Exit on a close below the midpoint.** Using closing values rather than intraday crosses avoids reacting to noise within the bar.
 
-Here's my entry logic after a week of backtesting:
+The logic works symmetrically for shorts.
 
-1. **Wait for the rank to hold above 60 for three consecutive bars.** This filters out the one-bar spikes that mean nothing.
-2. **Enter on the first pullback where the rank dips to 50-55 but holds above the signal line.** This is your low-risk entry — the trend is intact, but you're not chasing.
-3. **Exit when the rank crosses below 50 on closing basis.** Not intraday. That's the difference between profit and giving it all back.
-
-For shorts, flip everything. The indicator works symmetrically, which is rare.
-
-**The Honest Pros and Cons**
+## Pros and Cons
 
 **Pros:**
-- Combines two critical data points into one readable line — no more juggling separate price and volume charts
-- No repainting. I verified this by refreshing historical bars. What you saw is what happened.
+- Combines price and volume into one readable line — no juggling separate charts
 - Works across timeframes without heavy recalibration
-- Clean, lightweight code — doesn't slow down a chart with 20 indicators running
+- Lightweight — doesn't bog down a chart with multiple indicators
 
 **Cons:**
-- It's a *rank*, not a *signal*. It tells you the strength of the move, not whether to enter. New traders will over-rely on it and get chopped up.
-- On low-volume instruments (crypto alts, penny stocks), the ranking gets erratic. One big block trade sends it to 95, then it collapses.
-- No alert conditions built in beyond the basic crossover. You'll need to set up your own alerts in TradingView's system.
+- It's a *rank*, not a *signal*. It measures the strength of a move, not whether to enter. New traders may over-rely on it and get chopped up.
+- On low-volume instruments, the ranking gets erratic — a single large trade can spike the reading and then collapse it.
+- No alert conditions built in beyond the basic crossover; alerts must be configured through TradingView's own system.
 
-**Who Should Use This**
+## Who Should Use This
 
-Swing traders and position traders holding 3-10 days will get the most value. It's perfect for filtering stock screens — I use it to confirm that a breakout on my momentum scanner actually has volume behind it. Day traders can use it on 15-min charts, but expect more false signals. If you're a scalper, skip it. It's too slow for that.
+Swing and position traders are the natural audience — it works well as a confirmation layer for stock screens, checking whether a breakout has volume behind it. Day traders can apply it on intraday charts but should expect more false signals. Scalpers will likely find it too slow.
 
-**Better Alternatives Depending on Your Style**
+## Alternatives Depending on Your Style
 
 - **VWAP + Volume Profile** — If you want to know *where* volume happened, not just *how much*. Better for intraday mean-reversion.
-- **OBV (On-Balance Volume)** — Simpler, more direct. Good if you just want cumulative volume flow without the ranking complexity.
-- **Aroon** — If you want pure trend direction without volume weight. Cleaner for strict trend-following systems.
+- **OBV (On-Balance Volume)** — Simpler and more direct, for cumulative volume flow without the ranking layer.
+- **Aroon** — Pure trend direction without volume weighting; cleaner for strict trend-following systems.
 
-**Real Questions Traders Ask**
+## Common Questions
 
 **Does it repaint?**
-No. I tested this specifically by marking a signal on the live chart and refreshing. The historical values stayed static.
+The indicator is designed to calculate on closed bars, so historical values should remain static as new data arrives.
 
-**Can I use it for crypto?**
-On BTC, ETH, and other high-liquidity coins, yes. On anything with thin order books, no. The ranking becomes noise.
+**Can it be used for crypto?**
+On high-liquidity coins, yes. On anything with thin order books, the ranking becomes noise.
 
 **What timeframe works best?**
-Daily is the sweet spot. Weekly is too slow, anything under 15 minutes is too jumpy.
+Daily is generally the sweet spot. Weekly is slow, and very short intraday timeframes are jumpy.
 
-**Is it worth the price?**
-It's free on TradingView, so that's not a question. The question is whether it earns a spot on your chart — and for trend confirmation, it does.
+**Is it worth it?**
+It's free on TradingView. The real question is whether it earns a spot on your chart — and as a trend confirmation tool, it can.
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+## Final Verdict
 
-Price_Volume_Rank does exactly what it claims — ranks price-volume strength — and does it without gimmicks. It won't make you a profitable trader by itself, but as a trend filter, it's genuinely better than most paid indicators I've tested. The half-star deduction is for the lack of built-in alert flexibility and the erratic behavior on low-volume instruments. If you're already using a momentum scanner or trend-following system, this is a solid addition to your confirmation stack. Just don't expect it to do the thinking for you.
+Price_Volume_Rank does what it claims — ranks price-volume strength — without gimmicks. It won't make anyone a profitable trader by itself, but as a trend filter it's a reasonable addition to a confirmation stack. The main drawbacks are the lack of built-in alert flexibility and the erratic behavior on low-volume instruments. Don't expect it to do the thinking for you.
 
-## Frequently Asked Questions
+## What This Class of Signal Has Actually Done
 
-### Is Price_Volume_Rank worth it?
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-Based on testing across multiple timeframes, Price_Volume_Rank delivers solid value for traders who need trend analysis.
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
 
-### Does this indicator repaint?
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

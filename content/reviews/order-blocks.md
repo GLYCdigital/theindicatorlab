@@ -16,91 +16,87 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Order Blocks indicator review. Real settings, entry tactics, and whether it beats manual SMC zones. Tested on crypto, forex, and indices."
+grounding: "none (no source found)"
 ---
+## An Overview of This Order Block Indicator
 
-## My Take After 50+ Trades With This Indicator
+Order block tools on TradingView tend to fall into one of two camps: repainting indicators that redraw their zones after the fact, or basic support-and-resistance scripts with new labels. This one sits somewhere in between. It offers a clean visual approach to mapping order blocks, though it has clear limitations.
 
-Look, I've tested dozens of order block tools on TradingView. Most are either repainting nightmares or just dressed-up support/resistance lines. This one? It's different—but not perfect.
-
-As the chart above shows, the indicator maps fresh order blocks—the last candle before a strong impulse move—with a clean visual hierarchy: strong blocks in solid colors, weak ones semi-transparent. No clutter if you tune the settings right.
+As the chart above shows, the indicator maps fresh order blocks—the last candle before a strong impulse move—with a visual hierarchy: strong blocks in solid colors, weak ones semi-transparent.
 
 ## What It Actually Does
 
-This indicator identifies **unmitigated order blocks** (OBs) based on your chosen timeframe and then tracks whether price has "taken" them (mitigated). It's not guessing—it's drawing boxes around the last candle before a significant move, typically a bullish or bearish engulfing pattern or a large body candle.
+This indicator identifies **unmitigated order blocks** (OBs) based on the chosen timeframe and then tracks whether price has "taken" them (mitigated). It draws boxes around the last candle before a significant move, typically a bullish or bearish engulfing pattern or a large body candle.
 
-Key insight: It marks *both* the origin OB (where the move started) and potential continuation OBs along the way. This matters because most rivals only show the first one.
+A notable distinction: it marks *both* the origin OB (where the move started) and potential continuation OBs along the way. Many competing tools only show the first one.
 
-## Settings That Actually Work
+## Settings and How to Tune Them
 
-After hours of tweaking, here's what I settled on:
+- **Timeframe for OB Detection:** Governs which timeframe's candles are used to define blocks. Lower timeframes produce more blocks; higher timeframes produce fewer.
+- **Minimum Candle Body Ratio:** Filters out small OBs formed by indecision candles. Raising it reduces the number of blocks shown; lowering it lets more through.
+- **Mitigation Type:** Determines what counts as a block being taken out. Options include "Close Only" and "Full Wick."
+- **Show Mitigated Blocks:** Toggles whether blocks that have already been traded through remain visible.
+- **Block Extension:** Controls how far to the right each block is drawn.
 
-- **Timeframe for OB Detection:** 15-minute (for day trading). 1-hour for swing. Anything below 5-min produces too many false signals.
-- **Minimum Candle Body Ratio:** Set to 0.65. This filters out tiny OBs from indecision candles. Below 0.5 and you'll see noise.
-- **Mitigation Type:** "Close Only" is best. "Full Wick" repaints too often—price taps wicks, you think the block is invalidated, then it reverses.
-- **Show Mitigated Blocks:** OFF. They distract. You only care about active OBs.
-- **Block Extension:** 5 candles to the right. Any more and you're trading ghosts.
+## How the Indicator Is Typically Used
 
-## How I Actually Trade With It
+This isn't a set-and-forget system. A common zone-based workflow looks like:
 
-This isn't a set-and-forget system. Here's my routine:
+1. **Wait for price to approach an unmitigated OB.** Action is taken when price reaches the block's high or low.
+2. **Check for a reversal candlestick pattern** (pin bar, engulfing) at the block. That pattern serves as the entry trigger.
+3. **Stop loss:** placed beyond the block's extreme. Because the blocks are relatively tight, stops can be kept close.
+4. **Take profit:** the next structural high or low is a common first target, with a trail after that.
 
-1. **Wait for price to approach an unmitigated OB.** I only act when price is within 2-3 pips of the block's high/low.
-2. **Check for a reversal candlestick pattern** (pin bar, engulfing) right at the block. If I see it, I enter.
-3. **Stop loss:** 5-10 pips beyond the block's extreme. The indicator's blocks are tight, so I don't need massive stops.
-4. **Take profit:** First target is the next structural high/low. I trail after that.
+Combining the indicator with a volume profile is a frequently suggested approach, since an OB that aligns with a high-volume node is generally treated as a stronger zone.
 
-**Pro tip:** Combine this with a volume profile. If the OB aligns with high volume node, the probability jumps significantly. I've seen 75%+ win rate on those setups in EUR/USD.
-
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Visual clarity is top-notch. Blocks are color-coded by strength (green/red for strong, faded for weak).
-- No repainting in real-time if you use "Close Only" mitigation. I tested this on replay—blocks don't vanish after they form.
-- Works across asset classes: crypto, forex, indices. I tested on BTC/USD, EUR/USD, and S&P 500 futures.
+- Visual clarity is strong. Blocks are color-coded by strength (green/red for strong, faded for weak).
+- With "Close Only" mitigation, blocks do not repaint once formed.
+- Designed to work across asset classes, including crypto, forex, and indices.
 
 **Cons:**
-- Still shows too many weak blocks by default. You must manually adjust the minimum candle body ratio.
-- Can't filter by block age. Some OBs from 50 candles ago are irrelevant, but they stay on the chart.
-- No multi-timeframe confluence built-in. You'll need to add another indicator or manually check higher timeframe.
+- Shows many weak blocks by default. The minimum candle body ratio has to be adjusted manually.
+- No filter by block age. Old OBs stay on the chart even when they are no longer relevant.
+- No multi-timeframe confluence built in. A second indicator or a manual higher-timeframe check is required.
 
 ## Who Should Use This?
 
 - **Smart Money Concept traders** who want a faster way to spot OBs without drawing them manually.
-- **Day traders** on 15-min or 1-hour charts. Scalpers will find it too slow.
-- **Traders who hate repainting** and want a reliable tool for zone-based entries.
+- **Day traders** on intraday charts. Scalpers will likely find it too slow.
+- **Traders who avoid repainting** and want a zone-based entry tool.
 
-If you're a pure price action trader who draws zones by hand, this might feel like cheating—but it saves you 10 minutes per chart.
+Traders who draw zones by hand may find it redundant, but it removes the manual drawing work.
 
-## Better Alternatives?
+## Alternatives
 
 If you're looking for more advanced OB tools:
-- **LuxAlgo's Order Blocks** — more features (multi-timeframe, volume filter) but $49/month.
-- **Smart Money Concepts by KD** — free, but the OB detection is less precise and has more false signals.
+- **LuxAlgo's Order Blocks** — more features (multi-timeframe, volume filter) but a paid subscription.
+- **Smart Money Concepts by KD** — free, but the OB detection is less precise and produces more false signals.
 - **ICT's manual method** — still the gold standard for precision, but no automation.
 
-This indicator sits in a sweet spot: better than free tools, not as bloated as paid ones.
+This indicator sits in a middle ground: more capable than the free options, less feature-heavy than the paid ones.
 
 ## FAQ
 
 **Does it repaint?**
-Only if you use "Full Wick" mitigation. With "Close Only," blocks stay fixed once formed.
+With "Full Wick" mitigation, blocks can be treated as invalidated when price only taps a wick. With "Close Only," blocks stay fixed once formed.
 
 **Can I use it for crypto?**
-Yes. I tested on BTC/USD 15-min—works well. Adjust the minimum candle body to 0.7 for crypto's volatility.
+Yes. It is designed to work across asset classes, including crypto.
 
 **Why are there so many blocks on my chart?**
-Lower the "Minimum Candle Body Ratio" to 0.6 or increase detection timeframe to 1-hour. Also turn off "Show Weak Blocks" if available.
+Raise the "Minimum Candle Body Ratio" or move the detection timeframe higher. Turning off weak blocks, if the option exists, also reduces clutter.
 
 **Is it good for swing trading?**
-Decent, but you'll need to set detection timeframe to 1-hour or higher. The blocks will hold for days.
+Workable, but a higher detection timeframe is needed. Blocks on higher timeframes tend to hold longer.
 
 ## Final Verdict
 
-This is a solid 4-star tool for traders who use order blocks but hate manual drawing. It's not revolutionary, but it's reliable, clean, and doesn't repaint. The settings could be more granular, and the lack of multi-timeframe confluence is a missed opportunity.
+A solid tool for traders who use order blocks but would rather not draw them by hand. It's not revolutionary, and the settings could be more granular—the lack of multi-timeframe confluence is a real gap. But it's clean, and with the right mitigation setting it does not repaint.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Honest workhorse for SMC traders. Not perfect, but it gets the job done without the hype.
-
----
+**Rating: 4/5** — A dependable workhorse for SMC traders, without the hype.
 
 ## Go Deeper with The Indicator Lab
 

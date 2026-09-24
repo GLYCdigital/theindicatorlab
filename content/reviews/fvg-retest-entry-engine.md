@@ -15,89 +15,85 @@ categories:
   - "07"
   - Technical Analysis
 rating: 4
-description: "Fair Value Gap retest indicator for entries. I tested Fvg_Retest_Entry_Engine on 500+ trades. Settings, pros/cons, and honest verdict."
+description: "Fair Value Gap retest indicator for entries. Settings, pros, cons, and an honest verdict for Fvg_Retest_Entry_Engine."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-If you trade ICT/SMC concepts, you know the pain: spotting a Fair Value Gap is easy, but timing the *retest* entry is where most traders fail. Fvg_Retest_Entry_Engine automates that exact step. It scans for FVGs formed by three consecutive candles (the standard gap between the first and third candle's wicks), then highlights when price returns to that zone. No repainting, no lag—just clean signals on your chart.
+For traders working with ICT/SMC concepts, spotting a Fair Value Gap is the easy part — timing the *retest* entry is where execution usually breaks down. Fvg_Retest_Entry_Engine is built around that specific step. It scans for FVGs formed by three consecutive candles (the standard gap between the first and third candle's wicks), then highlights when price returns to that zone.
 
-Unlike basic gap indicators that paint every imbalance, this one filters for *fresh* FVGs and only triggers alerts when price actually retests them. That's the whole point: entry timing, not just zone identification.
+Unlike basic gap indicators that paint every imbalance, this one is designed to distinguish between zones still waiting for a retest and zones that have already been triggered. That distinction is the core premise: entry timing rather than zone identification alone.
 
 ## Key Features That Set It Apart
 
-- **Retest-specific logic**: Only highlights FVGs that have been touched after formation. Most FVG tools mark zones indefinitely—this one distinguishes between "waiting for retest" and "already triggered."
-- **Customizable gap sensitivity**: You can set the minimum candle body size (in ticks or percentage) to filter out noise from tiny gaps that rarely hold.
-- **Multi-timeframe awareness**: The indicator can pull FVGs from higher timeframes while plotting on your current chart. This is a game-changer for aligning intraday entries with daily or 4H structure.
-- **Alert system**: Push notifications when price enters a marked FVG zone. No need to stare at the screen.
+- **Retest-specific logic**: Highlights FVGs that have been touched after formation. Most FVG tools mark zones indefinitely — this one separates "waiting for retest" from "already triggered."
+- **Customizable gap sensitivity**: A minimum candle body size filter (in ticks or percentage) is available to screen out tiny gaps.
+- **Multi-timeframe awareness**: The indicator can pull FVGs from higher timeframes while plotting on the current chart, which matters for aligning intraday entries with higher-timeframe structure.
+- **Alert system**: Notifications when price enters a marked FVG zone, so you don't have to watch the screen continuously.
 
-## Best Settings (After 500+ Trades)
+## Settings and How to Tune Them
 
-After running this on BTC/USD, EUR/USD, and ES futures:
+- **Candle lookback**: Controls how much history the indicator scans for FVGs. Shorter lookbacks reduce clutter; longer ones provide more context.
+- **Minimum gap size**: A threshold that filters out small gaps. The appropriate value depends on the volatility of the instrument you trade.
+- **Retest confirmation**: An option to require a candle close inside the zone, which is intended to reduce wick-throughs.
+- **Timeframe for FVG source**: Lets you source FVGs from a higher timeframe than your chart.
 
-- **Candle lookback**: 50–100 bars. Too few and you miss context; too many and it clutters.
-- **Minimum gap size**: 0.1% for crypto, 5 ticks for forex/futures. Adjust based on volatility.
-- **Retest confirmation**: Enable "candle close in zone" to avoid wick-throughs that fake you out.
-- **Timeframe for FVG source**: Use 2–4x your chart timeframe. For a 5-minute chart, pull FVGs from 15-minute.
+Tuning these is a matter of matching the filter to the instrument's behavior. There is no single configuration that suits every market.
 
-**My recommendation**: Start with the default settings, then tighten the minimum gap size by 20% if you see too many false signals in ranging markets.
+## How It's Used for Entries and Exits
 
-## How I Use It for Entries and Exits
+**Entry**: Wait for price to enter the FVG zone and show a reversal candle (pin bar, engulfing, or inside bar). The indicator marks the zone; it does not signal the entry itself.
 
-**Entry**: Wait for price to enter the FVG zone AND show a reversal candle (pin bar, engulfing, or inside bar). The indicator marks the zone, but I don't buy the first touch—I wait for a second test.
+**Exit**: Take-profit is typically placed at the next liquidity level (swing high/low) or managed with a fixed risk-reward ratio. The indicator does not provide profit targets, so it's usually paired with a supply/demand tool.
 
-**Exit**: I set my take-profit at the next liquidity level (swing high/low) or use a 1:2 risk-reward ratio. The indicator doesn't give profit targets, so pair it with a supply/demand tool.
+**Invalidation**: If price closes through the FVG without a reaction, the setup is dead and the zone should be removed manually.
 
-**Invalidation**: If price closes *through* the FVG without a reaction, the setup is dead. Delete the zone manually.
-
-As the chart above shows, the engine catches retests on clean trend days but struggles in choppy ranges—price often kisses the zone and reverses prematurely.
+The engine tends to catch retests on clean trend days and struggles in choppy ranges, where price often kisses the zone and reverses prematurely.
 
 ## Honest Pros and Cons
 
 **Pros**:
-- Saves hours of manual FVG scanning
-- No repainting—signals stay fixed after bar close
-- Clean, minimalist visuals (no rainbow clutter)
-- Works on all asset classes
+- Saves manual FVG scanning time
+- Zones are described as fixed after bar close
+- Clean, minimalist visuals
+- Works across asset classes
 
 **Cons**:
-- False signals in ranging markets (price retests gaps randomly)
+- False signals in ranging markets, where price retests gaps randomly
 - No built-in volume or momentum filter
 - Can't distinguish between "institutional" FVGs and random gaps in low liquidity
-- Learning curve—you need to understand ICT concepts to use it properly
+- Learning curve — you need to understand ICT concepts to use it properly
 
 ## Who It's Actually For
 
-ICT/SMC traders who already know how to trade FVGs but want to automate the scanning. Beginners will get confused because the indicator doesn't tell you *why* a retest matters—it just shows you *where*. If you're new to order flow, start with a simpler imbalance indicator first.
+ICT/SMC traders who already know how to trade FVGs but want to automate the scanning. Beginners will likely get confused, because the indicator doesn't tell you *why* a retest matters — it only shows you *where*. If you're new to order flow, start with a simpler imbalance indicator first.
 
 ## Better Alternatives
 
-- **Smart Money Concepts (SMC) by LuxAlgo**: More complete toolkit (order blocks, liquidity levels, FVGs) but pricier and heavier on the chart.
-- **ICT FVG by Quantower**: Similar retest logic but includes volume validation. Slightly better for forex.
-- **Manual FVG drawing**: Honestly, if you trade only 1–2 pairs, just draw them yourself. The indicator shines when scanning multiple markets.
+- **Smart Money Concepts (SMC) by LuxAlgo**: More complete toolkit (order blocks, liquidity levels, FVGs) but heavier on the chart.
+- **ICT FVG by Quantower**: Similar retest logic but includes volume validation. Better suited to forex.
+- **Manual FVG drawing**: If you trade only one or two pairs, drawing them yourself is a reasonable option. The indicator's value shows up most when scanning multiple markets.
 
 ## FAQ
 
 **Q: Does it repaint?**  
-A: No. Zones appear after the third candle closes and stay fixed. Verified on multiple timeframes.
+A: The indicator is described as non-repainting. Zones appear after the third candle closes and stay fixed.
 
 **Q: Can I use it on intraday only?**  
-A: Yes, but it works best on 15-minute and above. Lower timeframes produce too many gaps.
+A: It can be used intraday, but it is generally better suited to higher intraday timeframes. Lower timeframes produce more gaps.
 
 **Q: Does it trade automatically?**  
-A: No alerts only. You execute manually.
+A: No — alerts only. Execution is manual.
 
 **Q: How do I clear old zones?**  
-A: Set a lookback limit (100 bars recommended) or reset manually.
+A: Set a lookback limit or reset manually.
 
 ## Final Verdict
 
-Fvg_Retest_Entry_Engine does exactly what it promises: find FVGs and alert on retests. It's not perfect—no indicator is—but it's a solid tool for traders who already understand the concept. The lack of volume filtering is its biggest weakness, but the clean execution and no-repaint reliability make it worth adding to your toolkit.
+Fvg_Retest_Entry_Engine does what it claims: it finds FVGs and alerts on retests. It's not perfect — no indicator is — but it's a workable tool for traders who already understand the concept. The lack of volume filtering is its biggest weakness. The clean execution and non-repainting zones are its main strengths.
 
 **Rating**: ⭐⭐⭐⭐ (4/5)  
-Recommended for: Intermediate ICT traders. Beginners, skip this until you can spot FVGs manually.
-
----
+Recommended for: Intermediate ICT traders. Beginners should hold off until they can spot FVGs manually.
 
 ## Go Deeper with The Indicator Lab
 

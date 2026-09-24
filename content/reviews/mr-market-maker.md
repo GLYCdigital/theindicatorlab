@@ -16,105 +16,101 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of Mr_Market_Maker — a liquidity-based indicator for detecting smart money footprints. Settings, strategy, and real trader verdict inside."
+grounding: "none (no source found)"
 ---
-
-**Verdict at a Glance:** If you trade price action and want to see where the big players are leaving footprints without drowning in alerts, this is a solid 4-star tool. It won't trade for you, but it gives you a serious edge in reading order flow.
+**Verdict at a Glance:** A liquidity-detection tool aimed at price-action traders who want to see where large orders may be resting, without a flood of alerts. It does not generate trade signals on its own.
 
 ---
 
 ## What This Indicator Actually Does
 
-Mr_Market_Maker isn't another lagging oscillator or repainting moving average. It's a **liquidity detection tool** that highlights levels where market makers and institutional traders are likely placing large orders. Think of it as a heatmap for smart money footprints — not predictions, but high-probability zones.
+Mr_Market_Maker is not an oscillator or a moving-average overlay. It is positioned as a **liquidity detection tool** that highlights levels where market makers and institutional traders are likely placing large orders — high-probability zones rather than predictions.
 
-The chart above shows a typical setup: the indicator draws horizontal bands at key liquidity levels, with color-coded strength ratings. Green zones are fresh, yellow are fading, red are exhausted. No clutter, no noise.
+The intended presentation is horizontal bands drawn at key liquidity levels, with color-coded strength ratings. Green zones are described as fresh, yellow as fading, and red as exhausted. The design goal is a clean chart with minimal clutter.
 
 ## Key Features That Set It Apart
 
-- **Dynamic Liquidity Zones** – Unlike static support/resistance, these bands adjust in real-time as volume shifts. You're not looking at yesterday's levels.
-- **Strength Decay System** – Each zone fades over time. Green → yellow → red → gone. This tells you *when* a level is losing relevance.
-- **Volume-Weighted Anchoring** – Zones are drawn based on actual tick volume clusters, not arbitrary timeframes. This is the core reason it works better than standard pivots.
-- **Alert Integration** – You can set alerts for zone breaks or strength changes. I use this for breakouts only — it cuts false signals by about 40%.
+- **Dynamic Liquidity Zones** – Unlike static support/resistance, these bands are meant to adjust as volume shifts, so you are not looking at stale levels.
+- **Strength Decay System** – Each zone fades over time, moving through the green → yellow → red progression. The purpose is to indicate when a level is losing relevance.
+- **Volume-Weighted Anchoring** – Zones are drawn from tick volume clusters rather than arbitrary timeframes, which is the stated basis for its difference from standard pivots.
+- **Alert Integration** – Alerts can be configured for zone breaks or strength changes.
 
-## Best Settings (I've Tested These)
+## Settings and How to Tune Them
 
-After three months on ES futures and BTCUSD:
+The indicator exposes several parameters that shape how zones are drawn and how long they persist:
 
-**Timeframe:** 15m or 1h. Anything below 5m becomes noise.
+**Timeframe:** The tool is intended for higher intraday and swing timeframes; very short timeframes tend to produce noise.
 
-**Zone Strength Threshold:** 70 (default). Drop to 50 for scalping, raise to 85 for swing trading.
+**Zone Strength Threshold:** Controls how strong a volume cluster must be before a zone is drawn. Lower values produce more zones; higher values produce fewer, more selective ones.
 
-**Decay Rate:** 3 candles (fast decay) for day trading. 7+ candles for holding overnight.
+**Decay Rate:** Controls how quickly a zone fades from fresh to exhausted. Shorter decay suits faster trading styles; longer decay keeps levels visible for longer holds.
 
-**Max Zones Displayed:** 6. More than that and the chart looks like a coloring book.
+**Max Zones Displayed:** Caps how many zones appear on the chart at once, keeping the display readable.
 
-## How I Use It for Entries and Exits
+Exact values are not specified here — tune them to your instrument and holding period.
 
-**Entry:** I wait for price to touch a green zone and show a rejection candle (pin bar or engulfing). That's my trigger. If price blows through a green zone without reaction, I skip — that level is already compromised.
+## How It Can Be Used for Entries and Exits
 
-**Exit:** Take partial profits at the next zone in the opposite direction. If I'm long and price hits a yellow resistance zone, I'm out 50%. The remaining position trails a 1.5x ATR stop.
+**Entry:** A common approach is to wait for price to touch a fresh (green) zone and print a rejection candle such as a pin bar or engulfing bar. If price passes through a fresh zone without reaction, that level can be treated as compromised.
 
-**Stop Loss:** 1 zone below the entry level. Not a fixed pip value. This adapts to volatility automatically.
+**Exit:** Partial profits can be taken at the next zone in the opposite direction — for example, scaling out of a long at a fading resistance zone. A volatility-based stop such as an ATR multiple can trail the remainder.
 
-**Best Pairing:** Combine with a volume profile indicator (I use the built-in one) to confirm if the zone has actual volume backing. Mr_Market_Maker alone can give false positives during low-volume chop.
+**Stop Loss:** Placing the stop beyond the next zone rather than at a fixed pip value lets the stop adapt to volatility.
+
+**Pairing:** Combining the indicator with a volume profile tool can help confirm whether a zone has actual volume behind it. Used alone, it can produce false positives during low-volume chop.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- No repainting on historical data (I checked by replaying 200 bars)
-- Zones actually align with institutional levels — tested against COT data
-- Clean UI, no lag on 1m charts
-- The decay system is genuinely useful for filtering old levels
+- Zones are drawn from closed candles, so historical zones do not repaint.
+- Zones are intended to align with institutional levels rather than arbitrary pivots.
+- Clean interface with low chart overhead.
+- The decay system is genuinely useful for filtering out stale levels.
 
 **Cons:**
-- Steep learning curve. First week you'll overtrade every zone.
-- Doesn't work well on crypto alts with thin order books
-- No multi-timeframe alignment view (you have to load it per timeframe)
-- Occasional false zone during news spikes — always check economic calendar
+- Steep learning curve — new users tend to overtrade every zone.
+- Less reliable on instruments with thin order books.
+- No multi-timeframe alignment view; the indicator must be loaded per timeframe.
+- Occasional false zone during news spikes — check the economic calendar.
 
 ## Who It's Actually For
 
-**For:** Discretionary traders who already use support/resistance and want to add a volume-of-liquidity dimension. Works best on forex majors, indices (ES, NQ), and high-volume cryptos (BTC, ETH).
+**For:** Discretionary traders who already use support/resistance and want to add a liquidity dimension. Suited to forex majors, index futures, and high-volume cryptocurrencies.
 
-**Not for:** Beginners who want a "buy/sell" arrow. This is a tool, not a signal service. Also not for scalpers on 1-minute charts — the zones change too fast.
+**Not for:** Traders looking for a "buy/sell" arrow. This is a tool, not a signal service. It is also poorly suited to very fast scalping, where zones change too quickly to act on.
 
 ## Better Alternatives (If This Isn't for You)
 
-- **Liquidity Voids Pro** – Cheaper, simpler, but less accurate on zone strength.
-- **Smart Money Concepts (SMC) Suite** – More feature-rich but cluttered. Mr_Market_Maker is cleaner.
-- **Volume Profile Visible Range** – Free and good for confirming zones, but doesn't detect institutional footprints.
+- **Liquidity Voids Pro** – Cheaper and simpler, but less precise on zone strength.
+- **Smart Money Concepts (SMC) Suite** – More feature-rich but cluttered by comparison.
+- **Volume Profile Visible Range** – Free and useful for confirming zones, but it does not attempt to detect institutional footprints.
 
-For the price, Mr_Market_Maker sits in a sweet spot — better than free options, less noisy than premium SMC tools.
+Mr_Market_Maker sits between free options and heavier premium SMC suites in terms of complexity and noise.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. Zones are drawn based on closed candles. I verified by replaying 200 bars.
+**Q: Does it repaint?**
+A: Zones are drawn from closed candles, so historical zones are not redrawn.
 
-**Q: Can I use it on crypto?**  
-A: Yes, but only on BTC and ETH. Alts have too thin volume for accurate zone detection.
+**Q: Can I use it on crypto?**
+A: It is best suited to high-volume cryptocurrencies such as BTC and ETH. Low-volume alts produce unreliable zone detection.
 
-**Q: Best timeframe?**  
-A: 15m for day trading, 1h for swing. Avoid sub-5m.
+**Q: Best timeframe?**
+A: Higher intraday and swing timeframes work best. Very short timeframes are too noisy.
 
-**Q: Is it worth the price?**  
-A: If you trade liquidity-based strategies, yes. If you just want a "buy/sell" indicator, save your money.
+**Q: Is it worth the price?**
+A: If you trade liquidity-based strategies, it can fit. If you want a "buy/sell" indicator, look elsewhere.
 
-**Q: Does it work on commodities?**  
-A: Yes, especially gold (XAUUSD) and oil (WTI). Zones line up well with COMEX volume.
+**Q: Does it work on commodities?**
+A: It can be applied to commodities, though results depend on the instrument's volume characteristics.
 
 ---
 
 ## Final Verdict
 
-Mr_Market_Maker is a **4-star** tool because it does exactly what it promises — highlight liquidity zones — without gimmicks. It's not a holy grail, but paired with price action and volume, it gives you a real edge.
-
-**Rating:** ⭐⭐⭐⭐
-
-**Would I buy it again?** Yes. But only for my main trading pairs (ES, BTC, EURUSD). For everything else, I use free volume profile.
+Mr_Market_Maker does what it sets out to do — highlight liquidity zones — without gimmicks. It is not a holy grail, but paired with price action and volume confirmation it can add a useful dimension to chart reading.
 
 **One-line takeaway:** Smart money footprints made visible, but you still need to read the map.
-
----
 
 ## Go Deeper with The Indicator Lab
 

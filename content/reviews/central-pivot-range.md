@@ -16,20 +16,20 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Central Pivot Range review: tested on ES, NQ, and forex. Best settings, entry strategies, and when this indicator actually works."
+grounding: "none (no source found)"
 ---
-
 # Central Pivot Range Review: Settings, Strategy & How to Use It
 
-I’ve been trading with Central Pivot Range (CPR) on and off for about two years now. It’s one of those indicators that looks simple but has surprising depth once you dig into how markets actually behave around those levels.
+Central Pivot Range (CPR) is one of those indicators that looks simple but has surprising depth once you dig into how markets actually behave around those levels.
 
-**What this indicator actually does:** CPR plots a central pivot line (the average of high, low, and close from the prior session) plus two support and two resistance levels. Unlike standard pivots, the central pivot is the most important level here — not the R1/S1. The indicator automatically recalculates on each new session (daily, weekly, or monthly depending on your timeframe). In the chart above, you can see those three horizontal bands forming a "range" around price action.
+**What this indicator actually does:** CPR plots a central pivot line (the average of high, low, and close from the prior session) plus two support and two resistance levels. Unlike standard pivots, the central pivot is the most important level here — not the R1/S1. The indicator automatically recalculates on each new session (daily, weekly, or monthly depending on your timeframe). On the chart, those three horizontal bands form a "range" around price action.
 
-**Key features that set it apart:** The real edge isn't the levels themselves — it's how CPR groups them. The "trading range" between R1 and S1 acts as a natural volatility zone. When price opens *inside* this range, expect mean reversion. When price opens *outside* (above R1 or below S1), you get a directional bias for the session. Very few pivot indicators highlight this behavioral nuance.
+**Key features that set it apart:** The real edge isn't the levels themselves — it's how CPR groups them. The "trading range" between R1 and S1 acts as a natural volatility zone. When price opens *inside* this range, the framework suggests mean reversion. When price opens *outside* (above R1 or below S1), you get a directional bias for the session. Very few pivot indicators highlight this behavioral nuance.
 
-**Best settings with specific recommendations:**
+**Settings and How to Tune Them:**
 - Timeframe: Daily is most reliable. Weekly works for swing trading but gets messy.
 - Session start: Set it to your local session close (e.g., 17:00 EST for US equities).
-- Color scheme: Keep central pivot bold, make the range fill transparent (alpha 20). Don’t clutter with all five levels — just show the three core ones.
+- Color scheme: Keep central pivot bold, make the range fill transparent (alpha 20). Don't clutter with all five levels — just show the three core ones.
 
 **How to use it for entries and exits:**
 - *Range-bound strategy:* Price opens between R1 and S1 → wait for a touch of either extreme → fade it back toward the central pivot. Target the opposite side of the range.
@@ -50,13 +50,11 @@ I’ve been trading with Central Pivot Range (CPR) on and off for about two year
 - *"What timezone should I use?"* Match it to the asset's primary exchange close (e.g., 16:00 EST for stocks, 17:00 EST for futures).
 - *"Why does price sometimes blow through R1 like it's not there?"* Happens on news or high-impact data. In those cases, ignore CPR that day — the levels are based on prior volatility, not current momentum.
 
-**Final verdict with star rating:** ⭐⭐⭐⭐ (4/5)
+**Final verdict:** ⭐⭐⭐⭐ (4/5)
 
 CPR is a solid 4-star tool. It's not a holy grail, but it gives you a repeatable framework for session trading. The range-between-levels concept is genuinely useful for avoiding false breakouts. Just don't expect it to work in every market condition. If you pair it with volume profile or a momentum oscillator, you have a practical edge — especially on ES and NQ.
 
-I still use it daily for my first trade decision. That's worth the install.
-
----
+It's worth the install for a first trade decision.
 
 ## Go Deeper with The Indicator Lab
 

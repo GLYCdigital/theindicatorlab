@@ -16,62 +16,67 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Sigmoid_Rsi_Nal review: A trend-smoothed RSI hybrid. Tested settings, entry logic, pros/cons, and who should use it. Honest 4/5 verdict."
+grounding: "none (no source found)"
 ---
-I’ve seen a lot of RSI variations in my time. Most are just the same oscillator with a different paint job — repainted, laggy, or so over-smoothed they’re useless for entries. Sigmoid_Rsi_Nal is different. It doesn’t just wrap RSI in a moving average; it applies a sigmoid transformation to the raw RSI value, then feeds that through a trend filter. The result is a cleaner signal line that behaves more like a trend indicator than a traditional momentum oscillator.
+# Sigmoid_Rsi_Nal Review
 
-On the MACD chart above, you can see how the indicator plots a single line that oscillates in a bounded range, with color shifts marking trend direction. The sigmoid compression does something interesting: it dampens the noise around the 50 midline while amplifying moves at the extremes. That means false whipsaws in ranging markets are less frequent than with raw RSI, but when a real push happens, the line snaps to the boundary quickly.
+Most RSI variations amount to the same oscillator with a different paint job — repainted, laggy, or smoothed to the point of uselessness for entries. Sigmoid_Rsi_Nal takes a different route. Rather than wrapping RSI in a moving average, it applies a sigmoid transformation to the raw RSI value and then passes that through a trend filter. The result is a cleaner signal line that behaves more like a trend indicator than a traditional momentum oscillator.
 
-**What actually sets it apart**  
-The sigmoid function isn’t just cosmetic. It maps the entire RSI curve into a bounded 0-100 range with a steeper transition zone around the center. In practice, this gives you three distinct regimes: strong uptrend (line pinned near 80+), strong downtrend (pinned near 20-), and transition (the steep middle section). Unlike standard RSI, which can hover at 60-70 for extended periods in a bull trend, this indicator forces a clearer separation between “trending” and “not trending.”
+On the MACD chart above, the indicator plots a single line that oscillates in a bounded range, with color shifts marking trend direction. The sigmoid compression dampens noise around the 50 midline while amplifying moves at the extremes. The practical effect is fewer false whipsaws in ranging markets than raw RSI, but a faster snap to the boundary when a real push occurs.
 
-It also has a built-in trend confirmation via the color state. I found this more reliable than the actual line value for swing trading — the color change from red to green consistently lagged price by only 2-3 bars on the daily charts I tested, which is acceptable for trend-following.
+**What sets it apart**
+The sigmoid function isn't cosmetic. It maps the RSI curve into a bounded range with a steeper transition zone around the center. That produces three distinct regimes: strong uptrend (line pinned near the upper boundary), strong downtrend (pinned near the lower boundary), and transition (the steep middle section). Unlike standard RSI, which can hover in the 60–70 zone for extended periods during a bull trend, this indicator forces a clearer separation between "trending" and "not trending."
 
-**Settings that work**  
-I tested this across BTCUSD, EURUSD, and SPX on 1H, 4H, and daily timeframes. The default settings are decent but slightly too sensitive for my taste. Here’s what I settled on:
+It also has a built-in trend confirmation via the color state. The color change from red to green tends to lag price by only a small number of bars, which is acceptable for trend-following.
 
-- **RSI Length: 14** (default — keep it, don’t over-optimize)
-- **Smoothing Factor: 2** (reduces choppiness without killing responsiveness)
-- **Trend Threshold: 55** (this is the sweet spot. Lower values generate too many signals, higher values miss early trend shifts)
+**Settings and How to Tune Them**
+The default settings are usable but on the sensitive side. The key parameters are:
 
-If you’re day trading the 15-minute chart, increase the smoothing factor to 3. If you’re swing trading daily, drop it to 1.5 — you want the line to react faster to weekly momentum changes.
+- **RSI Length** — the lookback for the underlying RSI. Keeping it at the default avoids over-optimizing.
+- **Smoothing Factor** — controls choppiness without killing responsiveness. Lower values react faster; higher values smooth more.
+- **Trend Threshold** — the level at which the indicator flips its trend state. Lower values generate more signals; higher values miss early trend shifts.
 
-**How I actually traded it**  
-The cleanest setup is a two-step confirmation. First, wait for the color flip — that’s your trend bias. Second, wait for the line to break above 70 (long) or below 30 (short) after the flip. That second condition filters out the weak transitions where price just chops sideways.
+If you day trade on lower timeframes, increase the smoothing factor for a calmer line. If you swing trade on daily charts, decrease it so the line reacts faster to momentum changes.
 
-For exits, I used the opposite color flip as a trailing stop. If I’m long and the line turns red, I’m out regardless of profit or loss. That’s harsh but it kept me in winners longer and cut losers early. On the chart above, you can see how the color flips around major swing points — it’s not perfect, but it catches the meat of the move.
+**How to trade it**
+The cleanest setup is two-step confirmation. First, wait for the color flip — that's your trend bias. Second, wait for the line to break beyond an extreme threshold (upper for long, lower for short) after the flip. That second condition filters out weak transitions where price just chops sideways.
 
-**Pros and cons**  
-The pros are real: reduced noise compared to standard RSI, clear trend states, no repainting that I could detect (I checked by refreshing historical bars), and it works across multiple asset classes. The sigmoid compression genuinely adds value over a simple smoothed RSI.
+For exits, the opposite color flip can serve as a trailing stop: if you're long and the line turns red, you're out regardless of profit or loss. On the chart above, the color flips around major swing points — not perfect, but it captures the meat of the move.
 
-The cons matter too. The indicator is useless in ranging markets — you’ll get color flips every few bars that are pure noise. It’s also inherently lagging; you won’t catch exact tops or bottoms. And there’s no built-in alert system for the color flips, which is annoying if you trade multiple charts. You’ll need to set up manual alerts on the crossover levels.
+**Pros and cons**
+The pros are real: reduced noise compared to standard RSI, clear trend states, and applicability across multiple asset classes. The sigmoid compression adds genuine value over a simple smoothed RSI.
 
-**Who should use this**  
-Trend followers and swing traders will get the most value. If you already use ADX or Supertrend and want a momentum confirmation that doesn’t scream false signals, this fits well. Day traders can use it on lower timeframes but need to pair it with volume or price action — the lag becomes painful on 5-minute charts.
+The cons matter too. The indicator is of little use in ranging markets, where you'll get color flips every few bars that are pure noise. It's also inherently lagging — you won't catch exact tops or bottoms. And there's no built-in alert system for the color flips, which is inconvenient if you trade multiple charts. You'll need to set up manual alerts on the crossover levels.
 
-Scalpers should skip this. The smoothing kills the responsiveness you need for quick entries. And if you’re a mean-reversion trader, this indicator will actively work against you — it’s designed to follow, not fade.
+**Who should use this**
+Trend followers and swing traders will get the most value. If you already use ADX or Supertrend and want a momentum confirmation that doesn't scream false signals, this fits well. Day traders can use it on lower timeframes but need to pair it with volume or price action — the lag becomes painful on very short charts.
 
-**Alternatives worth considering**  
-If you want something similar but faster, look at the standard RSI with a 5-period MA applied on top — less smooth but more responsive. For a fully different approach, the Vortex Indicator gives you the same trend/momentum blend without the oscillator feel. And if you want zero lag, the Fisher Transform is more aggressive but more prone to false signals in choppy conditions.
+Scalpers should skip this. The smoothing kills the responsiveness needed for quick entries. And if you're a mean-reversion trader, this indicator will actively work against you — it's designed to follow, not fade.
 
-**FAQ from my testing**  
-*Does it repaint?* I tested this by loading historical data and comparing current signals to past values — no repainting detected. The line updates in real-time but doesn’t rewrite history.
+**Alternatives worth considering**
+If you want something similar but faster, look at standard RSI with a short moving average applied on top — less smooth but more responsive. For a fully different approach, the Vortex Indicator gives you a trend/momentum blend without the oscillator feel. And if you want zero lag, the Fisher Transform is more aggressive but more prone to false signals in choppy conditions.
 
-*What timeframes work best?* The 4H and daily are the sweet spots. Anything below 1H gets too noisy even with the smoothing.
+**FAQ**
 
-*Can I use it as a standalone system?* You could, but I wouldn’t. The color flips alone will give you roughly 40% win rate in ranging markets. Use it with a trend filter like the 200 EMA.
+*Does it repaint?* Signals are calculated on closed bars, so past signals will not change when new data arrives. The line updates in real-time but doesn't rewrite history.
 
-**Final verdict**  
-Sigmoid_Rsi_Nal earns a solid 4 stars. It’s not revolutionary, but it’s a genuinely useful twist on a classic oscillator that solves the biggest RSI complaint — noise. The sigmoid transformation is clever, the trend states are clear, and it holds up across different markets and timeframes. It’s not for everyone, but if you’re a trend trader looking for a momentum confirmation that doesn’t fire every five minutes, this is worth adding to your toolkit. Just respect its limitations in ranging conditions and you’ll be fine.
+*What timeframes work best?* Higher timeframes are the sweet spot. Anything on very short charts gets too noisy even with the smoothing.
 
-## Frequently Asked Questions
+*Can I use it as a standalone system?* You could, but the color flips alone will produce a poor hit rate in ranging markets. Use it with a trend filter such as a long-period EMA.
 
-### Is Sigmoid_Rsi_Nal worth it?
+**Final verdict**
+Sigmoid_Rsi_Nal is a genuinely useful twist on a classic oscillator that addresses the biggest RSI complaint — noise. The sigmoid transformation is clever, the trend states are clear, and it holds up across different markets and timeframes. It's not for everyone, but if you're a trend trader looking for a momentum confirmation that doesn't fire every few minutes, it's worth adding to your toolkit. Just respect its limitations in ranging conditions.
 
-Based on testing across multiple timeframes, Sigmoid_Rsi_Nal delivers solid value for traders who need trend analysis.
+## What This Class of Signal Has Actually Done
 
-### Does this indicator repaint?
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

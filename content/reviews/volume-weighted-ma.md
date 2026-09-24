@@ -16,78 +16,91 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Volume_Weighted_Ma review: A volume-weighted moving average for better trend filtering. Settings, entry/exit rules, pros/cons, and how it compares to VWAP."
+grounding: "none (no source found)"
 ---
+**Volume_Weighted_Ma Review: A Volume-Aware Moving Average**
 
-Let me be blunt: most moving averages are just price noise filtered through a laggy lens. The **Volume_Weighted_Ma** tries to fix that by weighting each price bar by its volume. In theory, this means big-volume bars move the average more, and low-volume noise gets ignored. In practice, it works—but only if you know when to use it.
+Most moving averages are just price noise filtered through a laggy lens. The **Volume_Weighted_Ma** attempts to address this by weighting each price bar by its volume. In theory, big-volume bars move the average more, and low-volume noise gets ignored. The concept is sound—but whether it helps depends on how you use it.
 
-I’ve tested this on BTC/USD, ES futures, and a handful of liquid altcoins. Here’s the honest breakdown.
+**What It Actually Does**
 
-**What It Actually Does**  
-This is a simple moving average calculation, but instead of weighting each price equally, it multiplies each bar’s price by its volume. The result is a smoother line that reacts faster to high-volume breakouts and slower to low-volume pullbacks. It’s not a VWAP (which resets daily), it’s a rolling average over your chosen period.
+This is a simple moving average calculation, except instead of weighting each price equally, it multiplies each bar's price by its volume. The result is a line that reacts more to high-volume breakouts and less to low-volume pullbacks. It is not a VWAP (which resets daily); it is a rolling average over your chosen period.
 
-**Key Features That Set It Apart**  
-- Volume-weighted smoothing—reduces whipsaws in low-volume chop.  
-- Customizable length and source (close, high, low, HL2, etc.).  
-- Works on any timeframe, but shines on intraday (5m–1h).  
+**Key Features That Set It Apart**
+
+- Volume-weighted smoothing—reduces whipsaws in low-volume chop.
+- Customizable length and source (close, high, low, HL2, etc.).
+- Works on any timeframe.
 - No repaint—once the bar closes, the value is fixed.
 
-**Best Settings with Specific Recommendations**  
-- **Length:** 20 for scalping (5m charts), 50 for swing trading (1h–4h).  
-- **Source:** Close (default is fine, but try HL2 for less lag).  
-- **Color:** I set it to green when price is above, red when below.  
-- **Overlay:** Must be on price chart, not a separate pane.
+**Settings and How to Tune Them**
 
-On the chart above, you can see how the 50-period VWMA holds as support during the uptrend while a simple SMA (dashed white) gets broken twice by noise.
+- **Length:** The period controls how much history feeds the average. Shorter lengths track price more closely; longer lengths smooth more.
+- **Source:** Close is the default. Other inputs such as HL2 can be selected depending on how much responsiveness you want.
+- **Color:** Can be configured to change color based on whether price is above or below the line.
+- **Overlay:** Must be set to display on the price chart, not a separate pane.
 
-**How to Use It for Entries and Exits**  
-- **Entry (long):** Price closes above VWMA on above-average volume. Wait for a retest that holds.  
-- **Exit (long):** Price closes below VWMA with volume spike—profit-taking or stop loss.  
-- **Trend filter:** Only take long trades when price > VWMA, short when price < VWMA.  
-- **Divergence:** If price makes a higher high but VWMA flattens, volume is drying up—trend may fail.
+**How to Use It for Entries and Exits**
 
-**Honest Pros and Cons**  
-*Pros:*  
-- More responsive to real buying/selling pressure than SMA.  
-- Simple to understand, no learning curve.  
-- Works well with volume confirmation.  
+- **Entry (long):** Price closes above VWMA on above-average volume. Wait for a retest that holds.
+- **Exit (long):** Price closes below VWMA with a volume spike—profit-taking or stop loss.
+- **Trend filter:** Only take long trades when price is above the VWMA, short when price is below it.
+- **Divergence:** If price makes a higher high but the VWMA flattens, volume is drying up—the trend may fail.
 
-*Cons:*  
-- Still lags on very low-volume pairs (use with caution on illiquid stocks).  
-- Not a standalone system—needs price action or other filters.  
+**Pros and Cons**
+
+*Pros:*
+- More responsive to buying/selling pressure than a simple moving average.
+- Simple to understand, no learning curve.
+- Works well with volume confirmation.
+
+*Cons:*
+- Still lags on very low-volume pairs (use with caution on illiquid instruments).
+- Not a standalone system—needs price action or other filters.
 - In high-volume news events, the VWMA can jerk violently.
 
-**Who It’s Actually For**  
-- Intraday traders who want a trend filter that respects volume.  
-- Swing traders who pair it with RSI or MACD for confluence.  
+**Who It's Actually For**
+
+- Intraday traders who want a trend filter that respects volume.
+- Swing traders who pair it with RSI or MACD for confluence.
 - Anyone tired of SMA whipsaws in ranging markets.
 
-**Better Alternatives If They Exist**  
-- **VWAP** is better for mean-reversion and daily levels.  
-- **Volume Profile** gives you actual value area, not just a line.  
-- **KAMA** adapts to volatility without volume weighting.  
+**Better Alternatives If They Exist**
 
-But for a pure volume-weighted moving average, this is the cleanest implementation on TradingView.
+- **VWAP** is better for mean-reversion and daily levels.
+- **Volume Profile** gives you an actual value area, not just a line.
+- **KAMA** adapts to volatility without volume weighting.
 
-**FAQ Addressing Real Trader Questions**  
-*Q: Does it repaint?*  
-A: No. Value is fixed after bar close.  
+For a pure volume-weighted moving average, this is a clean implementation on TradingView.
 
-*Q: What period works best for crypto?*  
-A: 20 on 1h for Bitcoin, 50 on 4h for altcoins.  
+**FAQ**
 
-*Q: Can I use it for options?*  
-A: Yes, but volume on options chains is different—stick to underlying stock/ETF.  
+*Q: Does it repaint?*
+A: No. The value is fixed after bar close.
 
-*Q: How is it different from VWAP?*  
-A: VWAP resets daily and uses cumulative volume. VWMA is a rolling average—better for multi-day trends.
+*Q: How is it different from VWAP?*
+A: VWAP resets daily and uses cumulative volume. VWMA is a rolling average—better suited to multi-day trends.
 
-**Final Verdict**  
-Volume_Weighted_Ma is one of those "simple but effective" tools that should be in every trader’s drawer. It won’t make you profitable on its own, but combined with a solid entry strategy and volume confirmation, it filters out a lot of garbage. For the price of free, it’s a no-brainer to at least test.
+*Q: Can I use it for options?*
+A: Volume on options chains behaves differently—sticking to the underlying stock or ETF is more straightforward.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star deducted because it’s not a game-changer—just a smart improvement on an old idea. But for what it does, it does it well.
+**Final Verdict**
 
----
+Volume_Weighted_Ma is a simple, effective tool. It won't make you profitable on its own, but combined with a solid entry strategy and volume confirmation, it filters out a lot of garbage. It's free—worth trying in a demo or backtest environment before committing capital.
+
+**Rating: ⭐⭐⭐⭐ (4/5)**
+
+One star deducted because it's not a game-changer—just a smart improvement on an old idea. But for what it does, it does it well.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,62 +16,76 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Quant_Confluence_Engine review. Tests its multi-indicator trend alignment system. Best settings, entry rules, and whether it beats simpler tools."
+grounding: "none (no source found)"
 ---
-I’ve lost count of how many “confluence” indicators I’ve tested that just stack RSI, MACD, and moving averages on one pane and call it a day. The Quant_Confluence_Engine is not that. It’s a serious attempt to quantify trend alignment across multiple timeframes using a weighted scoring system, and after a few weeks of live and backtested use, I can say it mostly delivers—but with some important caveats.
+# Quant_Confluence_Engine Review
 
-Let’s cut through the marketing. This indicator doesn’t predict price. What it does is aggregate signals from several trend-following tools (moving averages, ADX, MACD, and a proprietary momentum filter) and spit out a single “confluence score” from -10 to +10. A score above 5 means strong bullish alignment across the board; below -5 means the bears are in charge. The real value is in how it weights each component based on timeframe—daily signals count more than 5-minute ones.
+Plenty of "confluence" indicators simply stack RSI, MACD, and moving averages on a single pane and call it a day. The Quant_Confluence_Engine is a different kind of tool: an attempt to quantify trend alignment across multiple timeframes using a weighted scoring system. It's a serious design, but it comes with real trade-offs that matter depending on how you trade.
 
-**What sets it apart** from the usual trend-following clutter is the timeframe weighting. Most confluence tools treat a 1-minute MACD crossover the same as a daily one. This one doesn’t. On the default settings, the daily MACD gets 3x the weight of the 15-minute, which actually matches how I trade. The engine also includes a “divergence detector” for the MACD histogram, which catches potential reversals before the score flips. In the chart above, you can see how the score flatlined at -7 before the divergence triggered a +3 correction—nasty whipsaw, but the engine held its bias until the daily trend confirmed.
+## What It Actually Does
 
-**Best settings I’ve landed on** after a lot of tweaking:
+This indicator doesn't predict price. It aggregates signals from several trend-following components — moving averages, ADX, MACD, and a proprietary momentum filter — and outputs a single confluence score ranging from -10 to +10. A high positive score indicates strong bullish alignment across the components; a deeply negative score indicates the bears are in control. The distinguishing feature is how it weights each component by timeframe, so higher-timeframe signals carry more influence than lower-timeframe ones.
 
-- **Score Threshold:** 3.5 (not 5). The default 5 is too aggressive for 1-hour charts; you’ll sit out half the moves. At 3.5, you catch early breakouts without getting chopped on noise.
-- **Timeframe Weights:** Default is fine for swing trading. If you scalp, drop the daily weight to 1.5x and bump the 15-minute to 2x.
-- **Divergence Sensitivity:** Leave it at “Medium.” “High” floods the chart with false signals on ranging days.
+## What Sets It Apart
 
-**How to actually use it** (because the indicator doesn’t tell you):
+The timeframe weighting is the core differentiator. Most confluence tools treat a short-timeframe MACD crossover the same as a daily one. This engine does not — higher-timeframe readings are weighted more heavily than lower-timeframe ones. The engine also includes a divergence detector for the MACD histogram, intended to flag potential reversals before the composite score flips. In practice, this means the score can hold its bias through a counter-trend move until the dominant timeframe confirms a change.
 
-- **Entry:** Wait for the score to cross above +3.5 AND the MACD histogram to turn positive on the daily. That’s the only combo that held up in my backtests. The score alone will bait you into fakeouts during breakouts that fail.
-- **Exit:** Two rules. First, if the score drops below -2, close. Second, if you’re up 2% and the score ticks down from +5 to +4, take half off. The score tends to cliff-dive before big reversals.
-- **Stop Loss:** Place it at the most recent swing low where the score was below -3. Don’t use a fixed percentage—the engine’s strength is dynamic context.
+## Settings and How to Tune Them
 
-**Pros & Cons:**
+- **Score Threshold:** The default threshold is aggressive for intraday charts — it will keep you out of a large share of moves. A lower threshold catches earlier breakouts but accepts more noise.
+- **Timeframe Weights:** The defaults are oriented toward swing trading. Scalpers will likely want to reduce the higher-timeframe weight and increase the weight on shorter timeframes.
+- **Divergence Sensitivity:** A medium sensitivity setting is the reasonable middle ground. Higher sensitivity produces more signals, including many that fire during ranging conditions.
+
+## How to Use It
+
+The indicator produces a score, not a trade plan, so the interpretation is on you:
+
+- **Entry:** Require the score to cross above your chosen threshold *and* the MACD histogram to confirm in the same direction on your dominant timeframe. The score alone is prone to baiting you into breakouts that fail.
+- **Exit:** Consider closing when the score drops below a defined negative level, and scaling out when the score rolls over from a strong reading. The score can deteriorate sharply ahead of larger reversals.
+- **Stop Loss:** Anchor stops to recent swing structure where the score was decisively negative, rather than a fixed percentage. The engine's value is contextual, and fixed stops ignore that context.
+
+## Pros & Cons
 
 **Pros:**
-- The timeframe weighting is genuinely useful. It filters out the “false confluence” you get when short-term and long-term indicators accidentally align.
-- Divergence detection is decent. Caught a BTC reversal on July 18 that my naked MACD missed.
-- Clean interface. No clutter. Just a line, a histogram, and a signal dot.
-- Works on any timeframe, though it shines on 1H-4H.
+- The timeframe weighting is genuinely useful. It filters out the "false confluence" that occurs when short-term and long-term components happen to align by coincidence.
+- Divergence detection adds a layer that a plain MACD does not provide.
+- The interface is clean — a line, a histogram, and a signal marker, without clutter.
+- It functions across timeframes, though it is best suited to higher intraday and swing timeframes.
 
 **Cons:**
-- Lag is real. The engine waits for confirmation, so you’ll miss the first 5-10% of strong trends. That’s by design, but momentum traders will hate it.
-- Requires manual input to set timeframe weights. Most traders won’t bother optimizing this, and the defaults are too conservative for scalping.
-- The score can oscillate wildly in choppy markets. On low-volume altcoins, it’ll ping-pong between +6 and -6 in two hours. Unusable without a volume filter.
+- Lag is inherent. The engine waits for confirmation, so it will miss the early portion of strong trends. That's by design, but momentum traders will find it frustrating.
+- Timeframe weights require manual adjustment. Traders who don't bother optimizing them will be stuck with defaults that are too conservative for scalping.
+- The score can oscillate sharply in choppy, low-liquidity conditions, which makes it difficult to use without an additional volume or volatility filter.
 
-**Who it’s for:** Swing traders who trade 4H or daily charts and want a systematic way to confirm trend alignment without staring at five separate indicators. If you scalp 5-minute candles, skip this—you’ll get whipsawed.
+## Who It's For
 
-**Alternatives:** If you want a simpler version, try the “Trend Confluence” indicator (free, no timeframe weighting). If you want a faster version with less lag, the “TradingView Trend Strength” script is okay but lacks the divergence detector. For strict trend followers, “Supertrend with Confluence” by LuxAlgo does a similar job with fewer inputs.
+Swing traders working higher intraday or daily charts who want a systematic way to confirm trend alignment without watching five separate indicators. Scalpers on very short timeframes are likely to get whipsawed.
 
-**FAQ:**
+## Alternatives
 
-- **Does it repaint?** No. The score is stable once the candle closes. I verified this by comparing live and replay data.
-- **Can I use it for crypto?** Yes, but only on BTC and ETH. Altcoins are too volatile for the score to be reliable.
-- **Is it worth the $49/month?** Only if you trade daily trends. For intraday, save your money and use free tools.
+- **Trend Confluence** — a simpler, free option without timeframe weighting.
+- **TradingView Trend Strength** — faster and less laggy, but no divergence detector.
+- **Supertrend with Confluence** by LuxAlgo — similar intent with fewer inputs, aimed at strict trend followers.
 
-**Final Verdict:** ⭐⭐⭐⭐ (4/5)
+## FAQ
 
-The Quant_Confluence_Engine is a well-built tool for its niche. It won’t make you a better trader, but it will stop you from entering trades where only one timeframe agrees with the trend. The lag and choppy-market weakness are real trade-offs, but if you swing trade with discipline, this is one of the better confluence indicators I’ve tested. Just don’t expect it to work without your own filters.
+- **Does it repaint?** No. Signals are calculated on closed bars, and past signals do not change as new data arrives.
+- **Can it be used for crypto?** Yes, though reliability varies with liquidity and volatility. Higher-cap assets tend to produce more stable readings than low-volume ones.
+- **Is it worth the subscription cost?** It makes the most sense for traders focused on higher-timeframe trend alignment. Intraday traders may find free tools sufficient.
+
+## Final Verdict
+
+The Quant_Confluence_Engine is a well-built tool for its niche. It won't make you a better trader on its own, but it can stop you from entering trades where only one timeframe agrees with the trend. The lag and choppy-market weakness are real trade-offs. If you swing trade with discipline and apply your own filters, it's a credible addition to a confluence-based workflow — just don't expect it to work without them.
 
 ## Frequently Asked Questions
 
 ### Is Quant_Confluence_Engine worth it?
 
-Based on testing across multiple timeframes, Quant_Confluence_Engine delivers solid value for traders who need trend analysis.
+It offers solid value for traders who need multi-timeframe trend analysis, particularly on higher timeframes. Its usefulness depends on whether you apply your own filters alongside it.
 
 ### Does this indicator repaint?
 
 No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,29 +16,29 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Accumulation Distribution indicator review. See how this volume-based tool reveals smart money moves, plus exact settings and entry timing."
+grounding: "none (no source found)"
 ---
-
-**The short version:** The Accumulation Distribution (A/D) line is a volume-weighted momentum indicator that tracks whether big players are buying or selling. It’s not a signal generator on its own, but when used with price action and volume, it’s a solid 4/5 tool for confirming trends and spotting reversals.
+**The short version:** The Accumulation Distribution (A/D) line is a volume-weighted momentum indicator that tracks whether big players are buying or selling. It is not a signal generator on its own, but used with price action and volume it is a solid 4/5 tool for confirming trends and spotting reversals.
 
 ## What This Indicator Actually Does
 
-The A/D line doesn’t just plot volume bars. It calculates a cumulative running total based on where the close sits within the day’s range, multiplied by volume. If the close is near the high, the indicator pushes up. If near the low, it pushes down. This gives you a continuous line showing whether money is flowing in or out.
+The A/D line does not just plot volume bars. It calculates a cumulative running total based on where the close sits within the day's range, multiplied by volume. If the close is near the high, the indicator pushes up. If near the low, it pushes down. This gives you a continuous line showing whether money is flowing in or out.
 
-As the chart above shows, the A/D line often diverges from price before major moves. That’s its superpower.
+The A/D line often diverges from price before major moves. That is its core function.
 
 ## Key Features That Set It Apart
 
 - **Divergence detection** – When price makes a higher high but A/D makes a lower high, distribution is happening. Same for accumulation on lower lows.
 - **Trend confirmation** – A rising A/D with rising price = strong uptrend. Falling A/D with falling price = strong downtrend.
 - **No lag** – Unlike moving averages, A/D updates instantly with each bar. No smoothing to slow it down.
-- **Works on any timeframe** – I’ve used it on 1-minute scalps and weekly swing trades. It adapts.
+- **Adaptable across timeframes** – It applies to both short-term and longer-term charts.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-The default TradingView A/D has no adjustable parameters—it’s a single line. That’s fine, but you can improve it:
+The default TradingView A/D has no adjustable parameters—it is a single line. That is fine, but it can be improved:
 
-- **Add a 21-period EMA of the A/D line** – This helps you see the trend of the indicator itself. When A/D crosses above its EMA, it’s a bullish shift.
-- **Use a volume filter** – Set a minimum volume threshold (e.g., 1.5x average) to ignore low-volume noise. Only take signals when volume is above that line.
+- **Add an EMA of the A/D line** – This helps you see the trend of the indicator itself. When A/D crosses above its EMA, it is a bullish shift.
+- **Use a volume filter** – Set a minimum volume threshold to ignore low-volume noise. Only take signals when volume is above that line.
 - **Color the A/D line** – Plot the A/D line as green when above its EMA, red when below. This makes divergences pop visually.
 
 No need to over-optimize. The raw A/D line works well out of the box.
@@ -58,60 +58,68 @@ No need to over-optimize. The raw A/D line works well out of the box.
 4. Exit when A/D starts to flatten or price makes a new low without A/D confirming.
 
 **Trend-following entry:**
-- In a strong uptrend (both price and A/D making higher highs), buy pullbacks to the 20-EMA. Exit when A/D turns down for 3 consecutive bars.
+- In a strong uptrend (both price and A/D making higher highs), buy pullbacks to a moving average. Exit when A/D turns down for several consecutive bars.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Reliable divergence signals on higher timeframes (1H, 4H, daily)
-- No repainting – it’s a cumulative calculation
-- Works across all asset classes: stocks, crypto, Forex, futures
+- Reliable divergence signals on higher timeframes
+- No repainting – it is a cumulative calculation
+- Works across asset classes: stocks, crypto, Forex, futures
 
 **Cons:**
-- Can give false signals in low-volume markets (sub-100k shares on small caps)
+- Can give false signals in low-volume markets
 - Not a standalone system – you need price action confirmation
-- Doesn’t work well on tick charts or range bars (volume is distorted)
+- Does not work well on tick charts or range bars (volume is distorted)
 - Default line is hard to read without adding an EMA or smoothing
 
-## Who It’s Actually For
+## Who It's Actually For
 
 This indicator is for traders who:
 - Use volume as a primary data source
 - Trade with the trend, not against it
-- Have patience to wait for divergences on 1H+ timeframes
+- Have patience to wait for divergences on higher timeframes
 - Understand that no indicator is 100% accurate
 
-It’s **not** for scalpers or traders who want clear buy/sell arrows. The A/D line gives you context, not signals.
+It is **not** for scalpers or traders who want clear buy/sell arrows. The A/D line gives you context, not signals.
 
 ## Better Alternatives If They Exist
 
-- **Chaikin Money Flow (CMF)** – Same underlying math but normalized over 21 periods. Gives you overbought/oversold levels. I prefer CMF for shorter timeframes.
+- **Chaikin Money Flow (CMF)** – Same underlying math but normalized over a set period. Gives you overbought/oversold levels. CMF is often preferred for shorter timeframes.
 - **Volume Profile** – Shows actual volume at price levels. Better for identifying support/resistance zones.
-- **On-Balance Volume (OBV)** – Simpler: adds volume on up days, subtracts on down days. Less sensitive to intraday noise.
+- **On-Balance Volume (OBV)** – Simpler: adds volume on up days, subtracts volume on down days. Less sensitive to intraday noise.
 
-If I had to pick one, I’d use CMF for momentum and A/D for longer-term accumulation/distribution.
+For momentum, CMF is the common pick; for longer-term accumulation/distribution, A/D.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does the A/D line repaint?**  
-A: No. It’s a cumulative calculation, so each bar’s value is fixed once the bar closes. No repainting.
+**Q: Does the A/D line repaint?**
+A: No. It is a cumulative calculation, so each bar's value is fixed once the bar closes. No repainting.
 
-**Q: Can I use it on 1-minute charts?**  
-A: You can, but expect many false divergences. Stick to 15-minute or higher for reliability.
+**Q: Can I use it on 1-minute charts?**
+A: You can, but expect many false divergences. Higher timeframes are generally more reliable.
 
-**Q: Is it better than OBV?**  
+**Q: Is it better than OBV?**
 A: For seeing distribution (selling pressure near highs), yes. OBV treats all volume equally. A/D weights it by where the close falls.
 
-**Q: How do I add the EMA overlay?**  
-A: Add a second A/D indicator, then go to its settings > Style > change line color to something distinct. Then add a 21-period Simple Moving Average to the original A/D line.
+**Q: How do I add the EMA overlay?**
+A: Add a second A/D indicator, then go to its settings > Style > change line color to something distinct. Then add a moving average to the original A/D line.
 
 ## Final Verdict
 
-The Accumulation Distribution line is a workhorse indicator that every serious trader should understand, but few use correctly. It’s not flashy, and it won’t print money by itself. But paired with price action and volume, it’s one of the most reliable tools for seeing what smart money is doing.
+The Accumulation Distribution line is a workhorse indicator that every serious trader should understand, but few use correctly. It is not flashy, and it will not print money by itself. But paired with price action and volume, it is one of the more reliable tools for seeing what smart money is doing.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – Loses a star for being hard to read without customization and for false signals in low-volume markets. But for what it does, it’s excellent.
+**Rating: ⭐⭐⭐⭐ (4/5)** – Loses a star for being hard to read without customization and for false signals in low-volume markets. But for what it does, it is excellent.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Accum/Dist** implementation was backtested on 25 markets over 5 years of daily data (37,728 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.3%** (50% = coin flip)
+- Strongest markets: MSFT 53.0%, SPY 52.4%, PLTR 52.2%, NVDA 51.7%
+- Weakest markets: LINKUSD 45.4%, LTCUSD 44.7%, SHIBUSD 27.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

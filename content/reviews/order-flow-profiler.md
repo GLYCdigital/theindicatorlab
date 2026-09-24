@@ -17,85 +17,101 @@ categories:
 rating: 4
 description: "Order_Flow_Profiler review: test results, optimal settings, and honest pros/cons. See if this trend indicator fits your trading style."
 tv_script_url: "https://www.tradingview.com/script/ymFdt7LE-Order-Flow-Profiler-Zeiierman/"
+sources: ["https://www.tradingview.com/script/ymFdt7LE-Order-Flow-Profiler-Zeiierman/"]
 ---
-I'll be straight with you: "Order Flow Profiler" is a misleading name. This isn't a footprint chart or a volume delta tool. It's a trend-following indicator that uses order flow concepts to filter direction, and once you stop expecting a true order book visualization, it actually does its job decently. I ran it on BTC/USD, EUR/USD, and a few large caps for two weeks across multiple timeframes. Here's what I found.
+# Order Flow Profiler (Zeiierman) Review
+
+The name invites confusion. "Order Flow Profiler" is not a footprint chart and it does not read a live order book. It's a price-based volume profiling indicator that estimates how buying and selling activity is distributed across price levels within a selected chart window. Once you drop the expectation of a true bid/ask visualization, the tool has a coherent job to do.
 
 ## What It Actually Does
 
-The indicator plots a colored histogram (or line, depending on your style) that measures the imbalance between aggressive buying and selling pressure. Rather than showing raw volume, it normalizes the data and draws a smoothed oscillator-style output directly on the price chart or in a separate pane. When the histogram turns green and stays above zero, the indicator considers the trend "institutional" — meaning buyers are in control. Red below zero means sellers are running the show.
+Rather than displaying only total volume, the indicator divides the selected auction range into individual price cells and estimates how much buying and selling activity occurred inside each area. Each candle's volume is separated into estimated buy and sell participation using its close position, candle body direction, and wick structure. That activity is then distributed across the price levels the candle touched.
 
-The key difference from a standard RSI or MACD? It's not mean-reverting. The Order_Flow_Profiler is designed to stay in a trend state until the flow genuinely flips. As the chart above shows, it didn't whipsaw as much as I expected during ranging sessions — though it's not immune.
+The result is a two-sided Order Flow Profile. The profile is divided around a central spine: sell activity extends to the left, buy activity extends to the right. The width of each profile row represents the estimated amount of activity at that price level, so larger sections highlight prices where more participation was concentrated.
 
-## Key Features That Stand Out
+The key difference from a standard volume histogram is that the profile is two-sided and row-by-row. When Delta Dominance is enabled, the indicator compares estimated buy and sell activity inside each individual price row, so the profile shows both where activity occurred and which side dominated at each level.
 
-- **Flow State Filtering**: The indicator has an internal "trend state" that only switches when cumulative flow crosses a dynamic threshold. This reduces the chop-chop signals you get from most oscillators.
-- **Multi-Timeframe Awareness**: It includes an optional higher-timeframe confirmation panel. When the 1H and 15M agree, the signals are noticeably cleaner.
-- **Customizable Smoothing**: You can adjust the lookback period and smoothing factor independently. This gives you control over whether you want a fast, reactive signal or a slow, reliable one.
-- **Alert System**: Native TradingView alerts work well here. I set alerts for state flips and they fired without delay.
+## Key Features
 
-## Best Settings I Tested
+- **Buy/Sell Volume Estimation**: Each candle's volume is split into estimated buy and sell activity using its close position, body direction, and wick structure.
+- **Price Cell Distribution**: The profile range is divided into Price Cells, and each candle's estimated activity is distributed across the prices it traded through. Cell Concentration controls how tightly that activity is focused around its estimated buy and sell centers.
+- **Control Price**: The price cell with the highest combined buy and sell activity. Its color shows which side is dominant at that level.
+- **Acceptance Area**: Starting from the Control Price, the indicator expands through neighboring cells until the selected percentage of total profile activity is included. This produces the Upper Acceptance Level and Lower Acceptance Level shown in the Data Window.
+- **Delta Dominance**: Delta measures the difference between estimated buy and sell activity at each price cell. Positive Delta extends to the right and highlights buy dominance; negative Delta extends to the left and highlights sell dominance. Larger cells indicate a stronger imbalance.
+- **Pressure Detection**: Pressure Flags detect significant diagonal imbalances between neighboring price cells. Buy Pressure compares buying activity with sell activity below; Sell Pressure compares buying activity with sell activity above. ▲ indicates Buy Pressure, ▼ indicates Sell Pressure.
+- **Active Profile Readout**: The live profile is divided into broader price segments that compare total buy and sell activity within each area. BUY x MORE shows buyer dominance, SELL x MORE shows seller dominance, and BALANCED shows no meaningful directional advantage.
+- **Historical Profiles**: Preserve earlier profile snapshots, including the profile wings, Delta, Control Price, range caps, and Pressure Flags, allowing comparison of how auction structure changes over time.
 
-After testing permutations, here's what worked for me on a 15-minute chart:
+## How to Use It
 
-- **Flow Lookback**: 20 (default is 14, which is too jumpy)
-- **Smoothing**: 5 (anything above 8 lags too much for intraday)
-- **HTF Confirmation**: On, using the 1-hour timeframe
-- **Visual Style**: Histogram, because the line version cluttered the chart
+**Identify high-volume areas.** Wide sections of the profile show price levels where activity was higher. These areas can help highlight important zones of participation, support, resistance, or consolidation.
 
-For swing trading on the 4H chart, I'd bump the lookback to 34 and keep smoothing at 3. The indicator performs worst on 1-minute charts — too much noise, even with heavy smoothing.
+**Use the Control Price.** The Control Price marks the price level with the highest combined buy and sell activity. It can serve as a key reference level for acceptance, rejection, or potential mean reversion.
 
-## How I Traded It
+**Read buy and sell dominance.** The profile wings, Delta cells, and Active Profile Readout help show which side is stronger at different price levels. Buy dominance can support bullish continuation or absorption, sell dominance can support bearish continuation or rejection, and balanced areas show more even participation between both sides.
 
-The cleanest setup I found was a two-step confirmation:
+**Compare historical profiles.** A rising Control Price and stronger buy activity can suggest improving bullish participation, while a falling Control Price and stronger sell activity can suggest increasing bearish participation.
 
-1. **Wait for the flow state to flip** (red to green or vice versa). Don't enter on the first tick — wait for the histogram to hold the new color for at least 3 candles.
-2. **Enter on a pullback** to the 20 EMA in the direction of the flow state, not on the breakout itself.
+The profile is most useful when combined with price structure, trend, support and resistance, and the surrounding market context.
 
-For exits, I used the opposite flow flip as a hard stop. In backtesting on EUR/USD, this gave me a 1.8R average winner versus a 0.9R average loser. Not spectacular, but consistent. The indicator isn't a standalone system — it's a filter that keeps you on the right side of the market. Pair it with a solid entry trigger or a volume profile tool and you're in business.
+## Settings and How to Tune Them
+
+- **Lookback Bars**: Sets how many chart candles are used to build the profile.
+- **Price Cells**: Controls the number of price levels used inside the profile.
+- **Cell Concentration**: Controls how tightly estimated buy and sell activity is distributed around each candle's activity centers.
+- **Pressure Ratio %**: Sets how strong a buy or sell imbalance must be before a Pressure Flag can appear.
+- **Historical Profiles**: Enables previous profile snapshots on the chart.
+- **Snapshot Every Bars**: Sets how often historical profiles are created.
+- **Active Profile Readout**: Enables the segmented BUY, SELL, and BALANCED summary beside the live profile.
+- **Segments**: Controls how many price sections are used in the Active Profile Readout.
+- **Balanced Below x**: Sets how close buy and sell activity must be for a segment to display BALANCED.
+- **Delta Dominance**: Shows which side dominates at each individual price cell.
+- **Pressure Flags**: Enables buy and sell pressure markers.
+- **Wing Width**: Controls the maximum width of the buy and sell profile wings.
+
+The parameter names describe the tradeoffs clearly: broader lookback and more price cells give a more granular profile at the cost of responsiveness, while Cell Concentration and Pressure Ratio % determine how much smoothing and how high a bar the indicator applies before flagging activity. The right values depend on the instrument and the trader's timeframe, not on a single "best" configuration.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely reduces false trend signals during chop
-- The HTF confirmation feature is genuinely useful, not decorative
-- Clean visual output that doesn't interfere with price action
-- Low-lag response compared to similar trend indicators
+- Two-sided profile shows which side dominated at each individual price level, not just total volume
+- Control Price and Acceptance Area provide concrete reference levels to work from
+- Delta Dominance and Pressure Flags add a directional read on top of the raw profile
+- Historical Profiles let you compare auction structure across snapshots
 
 **Cons:**
-- Misleading name — traders expecting real order flow data will be disappointed
-- It's a lagging indicator at heart; you'll never catch the exact top or bottom
-- No built-in backtesting strategy or trade management
-- The "institutional flow" label is marketing fluff — it's just a volume-weighted momentum calculation
+- The name oversells it: activity is estimated from price and volume, not read from actual order flow
+- It's a descriptive profiler, not a signal generator — no entries, stops, or trade management
+- Interpretation is left to the trader, which means it depends heavily on how it's combined with other context
 
 ## Who It's For
 
-This is for the trader who already has an entry system but keeps getting chewed up by fakeouts. If you're a swing trader or intraday trader on 15M+ timeframes, this indicator will keep you out of bad trades. It's also solid for anyone who wants a trend filter without the complexity of multi-indicator setups.
-
-It's NOT for scalpers, order flow purists, or anyone looking for a standalone signal generator. You will be frustrated if you expect it to tell you exactly when to buy and sell.
+This is for traders who already work with volume profile concepts and want a price-based estimate of where buyers and sellers were active across the chart window. It suits anyone who wants to read participation, dominance, and imbalance at the price level rather than rely on a standalone signal. It is not for traders expecting true bid/ask order flow data, and it is not a complete trading system on its own.
 
 ## Alternatives Worth Considering
 
-- **Volume Profile Fixed Range**: If you actually want to see where big players are positioned, this is the real deal.
-- **Supertrend**: Simpler, more reactive, but more prone to whipsaws. Good if you want a pure trend follower.
-- **VWAP Anchored**: Better for intraday mean reversion around institutional levels.
+- **Volume Profile Fixed Range**: If you want a more conventional volume-at-price view, this is the standard reference.
+- **Supertrend**: Simpler, more reactive trend follower, but more prone to whipsaws.
+- **VWAP Anchored**: Better suited for intraday mean reversion around reference levels.
 
 ## FAQ
 
 **Does this show real order flow (bid/ask imbalance)?**
 No. It's a calculated proxy based on price and volume. Real order flow requires tick data and exchange-specific depth, which TradingView indicators can't access natively.
 
-**What timeframe is best?**
-15 minutes to 4 hours. Anything below 5 minutes is too noisy; anything above daily is too slow to be useful.
+**What timeframe should I use?**
+The source material doesn't specify a preferred timeframe. The indicator builds a profile from a configurable lookback of chart candles, so the timeframe choice depends on the trading horizon you're profiling.
 
 **Can I use it for crypto?**
-Yes, I tested it on BTC and ETH. It works fine, but the 24/7 market means the flow states flip more frequently, so stick to the higher timeframe confirmation.
+The indicator is a price-based study and isn't restricted by asset class in the source material. As with any profile tool, the interpretation depends on the instrument's liquidity and structure.
 
 **Does it repaint?**
-The smoothed values can shift slightly on the current bar, but historical signals do not repaint. It's acceptable for live trading.
+The source material does not address repainting. Treat this as unverified and confirm behavior on your own charts before relying on live signals.
 
 ## Final Verdict
 
-Order_Flow_Profiler gets ⭐⭐⭐⭐ (4/5) from me. It loses a star for the misleading name and the fact that it's not a complete system. But if you're looking for a reliable trend filter that keeps you out of bad trades and you're willing to pair it with your own entry logic, this is one of the better options in the TradingView catalog. I've kept it on my watchlist charts and I'm not removing it anytime soon.
+Order Flow Profiler is best understood as what it is: a price-based, two-sided volume profiler that estimates buy and sell participation across price cells, adds Delta dominance, pressure flags, and a segmented readout, and preserves historical snapshots for comparison. The name oversells the underlying data, and it doesn't generate trades on its own. Used as a context and participation tool alongside price structure and trend, it does the job it was built for.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

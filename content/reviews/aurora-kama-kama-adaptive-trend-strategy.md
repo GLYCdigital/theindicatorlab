@@ -17,67 +17,68 @@ categories:
 rating: 4
 description: "Aurora KAMA Adaptive Trend Strategy review: a Kaufman-based trend system with adaptive smoothing. Tested settings, entry logic, pros, cons, and who it suits."
 tv_script_url: "https://www.tradingview.com/script/kbYTJ8V2-Aurora-KAMA-KAMA-Adaptive-Trend-Strategy/"
+sources: ["https://www.tradingview.com/script/kbYTJ8V2-Aurora-KAMA-KAMA-Adaptive-Trend-Strategy/"]
 ---
-Kaufman's Adaptive Moving Average (KAMA) is one of those indicators that sounds smarter than it usually trades. It speeds up in trends, slows down in chop, and most implementations end up either too twitchy or too sluggish to be useful. The **Aurora_Kama_Kama_Adaptive_Trend_Strategy** is the first KAMA-based system I've tested that actually respects what the adaptive math is supposed to do — and then builds a real trading framework around it instead of just slapping a line on the chart.
+Kaufman's Adaptive Moving Average (KAMA) is a moving average that speeds up when the market is trending cleanly and slows down when it's choppy, rather than using a fixed lookback like a standard SMA or EMA. The **Aurora KAMA Trend** strategy is built around that behavior and wraps a trading framework around it instead of just plotting a line.
 
 ## What it actually does
 
-At its core, this is a KAMA trend-following strategy with a signal engine layered on top. You get the adaptive baseline itself, a faster reaction line, and a trend-state filter that flips between bullish and bearish regimes. Entry and exit markers print on the chart, and the strategy component means you can run it through TradingView's Strategy Tester rather than eyeballing signals.
+This is a KAMA trend-following strategy with a signal engine layered on top. The core signal is KAMA's slope: the strategy requires KAMA to be persistently rising for longs or falling for shorts over a configurable number of bars, which filters out minor wiggles near turning points. An optional long-term SMA acts as a trend filter, only allowing longs above it and shorts below it so trades stay aligned with the dominant trend.
 
-The interesting part is the double-KAMA structure implied by the name. A shorter-period KAMA chases price while a longer one anchors the trend bias. When the fast line crosses the slow line while both are sloping in the same direction, you get a signal. When they diverge against the trend, the strategy flattens. It's simple, but the adaptive smoothing keeps false flips down to a reasonable level in ranging conditions.
+A cooldown period, measured in bars, prevents new entries from stacking up too close together during a single volatile move. Direction control lets you run long-only, short-only, or both.
 
 ## What sets it apart
 
-Most "adaptive" indicators on TradingView are just an EMA with a volatility multiplier glued on. This one uses the genuine efficiency ratio calculation — the same one Perry Kaufman designed — which means the smoothing constant genuinely responds to how directional the market is.
+Most "adaptive" indicators are a fixed moving average with a volatility multiplier attached. This one uses the genuine efficiency ratio calculation — the same one Perry Kaufman designed — so the smoothing constant responds to how directional the market actually is.
 
-Three things stood out during testing:
+Three things stand out from the design:
 
-- **The trend filter is not decorative.** Signals only fire when the regime aligns, which cut my whipsaw count noticeably on the 15-minute chart.
-- **Alerts are built in**, and they're specific — you get separate alerts for long entries, short entries, and trend-regime changes rather than one catch-all.
-- **The strategy version is honest about performance.** No repainting on confirmed bars, which is more than I can say for a lot of adaptive systems I've reviewed.
+- **The trend filter is functional, not decorative.** The optional SMA only permits longs above it and shorts below it, keeping trades aligned with the dominant trend.
+- **Trade spacing is handled explicitly.** The cooldown period stops entries from clustering during a single volatile move.
+- **Risk management is built in.** There's an optional fixed percentage stop-loss plus a trailing stop that only arms after a delay period, giving new positions room to develop before being trailed tightly.
 
-## Best settings I landed on
+## Settings and How to Tune Them
 
-Defaults are reasonable but conservative. Here's what I'd actually run:
+The strategy exposes several configurable inputs. Only their function is described here; specific values should be set according to the instrument and timeframe you trade.
 
-- **Fast KAMA period:** 10 on intraday, 14 on daily. Below 8 it gets noisy.
-- **Slow KAMA period:** 30–50. Anything above 60 lags entries badly on lower timeframes.
-- **Efficiency ratio window:** leave at default (10). Dropping it to 5 made the line jump around without improving signals.
-- **Trend filter:** keep it on. Turning it off roughly doubled trade count and halved win rate in my tests.
-- **Timeframe:** this behaves best on 1H and 4H. On the 1-minute it's a coin flip.
+- **Rising/falling persistence:** the number of bars KAMA must be persistently rising or falling to qualify a signal. Widen these inputs if you're getting whipsawed near turning points.
+- **Trend filter (long-term SMA):** optional. Turn it off if you want KAMA to trade purely on its own slope, independent of the broader trend.
+- **Cooldown period:** the minimum number of bars between entries, which prevents stacking during volatile moves.
+- **Stop-loss:** optional, fixed percentage.
+- **Trailing stop:** optional, with a delay period before it arms. The delay exists to stop you from getting stopped out on entry noise; tighten it only if you're trading a slower timeframe.
+- **Direction control:** long-only, short-only, or both.
 
-If you're scalping, this isn't your tool. If you're swing trading or running a 1H–4H system, the defaults plus a slightly faster fast-line will serve you well.
+The official guidance recommends testing on daily bars for liquid, trending instruments — for example BTCUSD, ES1!, SPY, and QQQ — because KAMA needs a real trend to earn its keep.
 
-## How to trade it
+## How it trades
 
-The logic is straightforward enough that you don't need a manual:
+1. **Long entry:** KAMA must be persistently rising over the configured number of bars, and price must be above the long-term SMA if the trend filter is enabled. Shorts are the mirror image.
+2. **Stop loss:** an optional fixed percentage stop, plus a trailing stop that only activates after its delay period.
+3. **Exit:** the strategy exits on the inverse condition; exits print as small gray X's on the chart.
+4. **Spacing:** the cooldown period blocks new entries too close to the last one.
 
-1. **Long entry:** fast KAMA crosses above slow KAMA, both sloping up, trend filter bullish. Enter on the close of the signal bar.
-2. **Stop loss:** below the most recent swing low, or below the slow KAMA — whichever is tighter. The adaptive line acts as a trailing stop surprisingly well.
-3. **Exit:** opposite cross, or a close back through the slow line against your position.
-4. **Scaling:** the strategy doesn't natively support partial exits, so if you want to scale out you'll need to manage it manually.
+## Visuals
 
-As shown in the chart above, the signals cluster sensibly during trends and go quiet during consolidation — which is exactly what you want from a regime-based system. Notice how the entries during the ranging stretch are sparse; that's the filter doing its job.
+The KAMA line changes color with trend direction — green when rising, red when falling, gray when flat — with a glowing red/green fill between KAMA and price whose intensity scales with the distance between them. The trend SMA is rendered as a layered "glow" line, gold when sloping up and amber when sloping down. Entries are marked with simple triangles.
 
 ## Pros and cons
 
 **Pros:**
-- Genuine Kaufman adaptive math, not a marketing approximation
-- Trend filter meaningfully reduces chop signals
-- Non-repainting on confirmed bars
-- Clean strategy tester integration with realistic position sizing
-- Alerts are granular and usable for automation
+- Genuine Kaufman adaptive math rather than a fixed-lookback approximation
+- Optional trend filter keeps trades aligned with the dominant trend
+- Cooldown period prevents entry clustering
+- Built-in stop-loss, delayed trailing stop, and direction control
+- Clear visual state via KAMA color and the glow fill
 
 **Cons:**
-- Lags on sharp reversals — the adaptive smoothing cuts both ways
+- Adaptive smoothing implies lag at sharp turning points
 - No built-in partial exit or pyramiding logic
-- Documentation is thin; you'll be reverse-engineering settings
-- Underperforms on very low timeframes
-- The name is a mouthful and hard to search for
+- Documentation is thin; settings require experimentation
+- The strategy depends on a real trend to perform as intended
 
 ## Who it's for
 
-Swing traders on 1H–4H charts who want a systematic trend filter without writing their own Pine. If you already trade KAMA manually, this automates the boring parts well. If you're a discretionary scalper or a mean-reversion trader, skip it — the whole design philosophy fights against you.
+Trend traders who want a systematic adaptive filter without writing their own Pine. If you already trade KAMA manually, this automates the mechanical parts. If you're a mean-reversion trader, the design philosophy works against you.
 
 ## Alternatives worth considering
 
@@ -85,23 +86,22 @@ Swing traders on 1H–4H charts who want a systematic trend filter without writi
 - **Hull Moving Average systems** if you want less lag and can tolerate more noise.
 - **Chande Kroll Stop** if your priority is trailing rather than entries.
 
-The Aurora version sits in a nice middle ground — more adaptive than SuperTrend, less twitchy than HMA.
-
 ## FAQ
 
-**Does it repaint?** No, not on confirmed bars. Intrabar it updates, but signals lock on close.
+**Can I trade long-only or short-only?** Yes — direction control supports long-only, short-only, or both.
 
-**Can I use it for alerts only?** Yes. The alert conditions are separate from the strategy logic, so you can run it as an indicator and route signals to a bot.
+**What instruments does it suit?** The official guidance suggests daily bars on liquid, trending instruments such as BTCUSD, ES1!, SPY, and QQQ.
 
-**What's the best timeframe?** 1H and 4H. Daily works too. Avoid below 15 minutes.
+**What if I'm getting whipsawed?** Widen the rising/falling persistence inputs.
 
-**Does it work on crypto?** Yes, though you'll want to widen the slow KAMA period — crypto trends run longer than FX.
+**Can I trade without the trend filter?** Yes — turning off the SMA filter lets KAMA trade purely on its own slope.
 
-**Is the strategy tester result realistic?** Reasonably. Default commission and slippage assumptions are conservative, which is refreshing.
+**How does the trailing stop work?** It only arms after a delay period, giving new positions room to develop before being trailed tightly. Tighten the delay only if you're trading a slower timeframe.
 
 ## Final verdict
 
-The Aurora_Kama_Kama_Adaptive_Trend_Strategy earns **⭐⭐⭐⭐** for doing adaptive trend-following properly. It's not revolutionary — KAMA has been around for decades — but the execution is solid, the filter works, and the strategy tester integration makes it genuinely useful for validation rather than just decoration. It loses a star for thin documentation and the lack of partial-exit logic, but if you trade trends on higher timeframes, this is a keeper.
+The Aurora KAMA Trend does adaptive trend-following properly. It isn't revolutionary — KAMA has been around for decades — but the framework around it is coherent: slope persistence for signals, an optional SMA filter for regime alignment, a cooldown for spacing, and layered risk management. It loses ground on thin documentation and the absence of partial-exit logic, but if you trade trends and want the adaptive smoothing to do its job, this is a solid starting point.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

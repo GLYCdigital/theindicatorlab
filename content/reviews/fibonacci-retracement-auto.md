@@ -16,69 +16,67 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Auto-draws Fibonacci retracement levels from swing highs and lows. Saves time, but needs manual confirmation. Best for trend traders on 1H+ timeframes."
+grounding: "none (no source found)"
 ---
-
 **Fibonacci_Retracement_Auto Review: Settings, Strategy & How to Use It**
 
-I’ve tested dozens of auto-Fib tools, and most are either too cluttered or miss key swings. This one? It’s a solid **4/5**—not perfect, but for $0 (free on TradingView), it’s a massive time-saver for traders who hate manually dragging Fib lines.
+Auto-Fib tools tend to fall into two camps: too cluttered to read, or too crude to catch the swings that matter. This one sits in a reasonable middle ground, and since it's free on TradingView, the bar it has to clear is low. As a manual-drawing replacement, it's a time-saver; as a signal generator, it isn't one.
 
-**What it actually does**  
-Instead of you clicking two points to draw Fibonacci retracement, this indicator scans price action and automatically identifies the most recent significant swing high and low. It then plots the 0.0%, 23.6%, 38.2%, 50.0%, 61.8%, 78.6%, and 100.0% levels. You can toggle extensions (127.2%, 161.8%) on/off. The lines update in real time as new swings form.
+**What it actually does**
+Rather than requiring you to click two points to draw a Fibonacci retracement, this indicator scans price action and identifies the most recent significant swing high and low. It then plots the standard retracement levels. Extension levels can be toggled on or off. The lines update as new swings form.
 
-**Key features that set it apart**  
-- **Swing detection logic** uses a lookback period (default 50 bars) to find pivots. It’s not perfect, but it catches major moves better than rolling-window methods.  
-- **Color-coded levels**—bullish vs. bearish bias is shown via line color (green for uptrend retrace, red for downtrend). This is a small touch, but it helps at a glance.  
-- **Auto-cleanup**—once price breaks beyond the 100% level and confirms a new swing, the previous Fib set disappears. No ghost lines.  
+**Key features that set it apart**
+- **Swing detection logic** uses a lookback period to find pivots. It is not perfect, but it tends to catch major moves better than rolling-window methods.
+- **Color-coded levels** — bullish versus bearish bias is shown via line color (green for an uptrend retracement, red for a downtrend). A small touch, but it helps at a glance.
+- **Auto-cleanup** — once price breaks beyond the full retracement and confirms a new swing, the previous Fib set disappears. No ghost lines.
 
-**Best settings with specific recommendations**  
-- **Lookback period**: Default 50 works for 1H–4H. For intraday (5m–15m), drop it to 20–30. For daily/weekly, bump it to 100–150.  
-- **Fibonacci levels**: I disable 23.6% and 78.6% (too noisy). Keep 38.2%, 50%, 61.8% as these are the actual reversal zones.  
-- **Extension lines**: Turn on only if you scalp breakouts. Otherwise, leave off—they clutter the chart.  
-- **Line style**: Solid lines for main levels, dashed for midpoint. Helps distinguish support/resistance from zone midpoints.  
+**Settings and How to Tune Them**
+- **Lookback period**: The default works for higher intraday timeframes. Shorter lookbacks suit intraday charts, longer lookbacks suit daily and weekly charts. The trade-off is straightforward: a short lookback catches more swings, including minor ones; a long lookback filters noise but responds later.
+- **Fibonacci levels**: Individual retracement levels can be disabled. Traders who find the shallower and deeper levels noisy often keep only the middle retracement zones, which tend to be the areas price actually reacts to.
+- **Extension lines**: Turn these on only if you trade breakouts beyond the swing. Otherwise they clutter the chart.
+- **Line style**: Solid lines for main levels, dashed for midpoints, helps distinguish support/resistance from zone midpoints.
 
-**How to use it for entries and exits**  
-- **Entry**: Wait for price to touch the 61.8% level *with a bullish/bearish divergence on RSI or MACD*. The auto-Fib alone is not a signal—it’s a map. Example: In an uptrend, price retraces to 61.8%, RSI shows bullish divergence → long entry.  
-- **Exit**: Take partial profit at 38.2% extension (if enabled) or trail stop below the 78.6% level.  
-- **Stop loss**: Place 5–10 pips below the 78.6% level (or the 100% level if you’re aggressive).  
+**How to use it for entries and exits**
+- **Entry**: Wait for price to reach a key retracement level with confirmation from a separate momentum tool such as RSI or MACD. The auto-Fib alone is not a signal — it's a map. In an uptrend, for example, price retraces into the zone while momentum shows divergence, and that combination is what you act on.
+- **Exit**: Take partial profit at an extension level if extensions are enabled, or trail a stop behind the deeper retracement level.
+- **Stop loss**: Place the stop beyond the deep retracement level, or beyond the full retracement if you're trading aggressively.
 
-**Honest pros and cons**  
-**Pros**:  
-- Saves 10–15 seconds per trade setup.  
-- Works on any market (forex, crypto, stocks, futures).  
-- Free and lightweight—no lag on 50+ charts.  
+**Honest pros and cons**
+**Pros**:
+- Removes the manual drag-and-drop step from every setup.
+- Applies to any market — forex, crypto, stocks, futures.
+- Free and lightweight.
 
-**Cons**:  
-- Swing detection can be late. On choppy ranges, it draws Fibs on minor swings that aren’t significant. Manual override isn’t possible.  
-- No multi-timeframe option—you see only the current chart’s swings.  
-- The 78.6% level is often ignored by price. I’d rather it default to 88.6% (the golden pocket), but you can’t customize level values.  
+**Cons**:
+- Swing detection can be late. In choppy ranges it draws Fibs on minor swings that aren't significant, and manual override isn't possible.
+- No multi-timeframe option — you see only the current chart's swings.
+- The deepest retracement level is often ignored by price, and level values can't be customized.
 
-**Who it's actually for**  
-- **Trend traders** who use Fibonacci as a confluence tool (e.g., with order flow, candlestick patterns).  
-- **Beginners** learning Fib levels—the auto-draw helps internalize where support/resistance should form.  
-- **Scalpers** on 5m–15m might find it too slow. Use a manual Fib tool instead.  
+**Who it's actually for**
+- **Trend traders** who use Fibonacci as a confluence tool alongside order flow or candlestick patterns.
+- **Beginners** learning Fib levels — the auto-draw helps internalize where support and resistance tend to form.
+- **Scalpers** on very short timeframes may find it too slow and are better served by a manual Fib tool.
 
-**Better alternatives if they exist**  
-- **Auto Fib Retracement by LuxAlgo**: More customizable (level values, swing sensitivity), but costs $49/month.  
-- **Manual Fib tool**: Still the gold standard if you want to control pivot points. This indicator is a helper, not a replacement.  
+**Better alternatives if they exist**
+- **Auto Fib Retracement by LuxAlgo**: More customizable in terms of level values and swing sensitivity, but it's a paid tool.
+- **Manual Fib tool**: Still the gold standard if you want full control over pivot points. This indicator is a helper, not a replacement.
 
-**FAQ addressing real trader questions**  
-**Q: Does it repaint?**  
-A: Yes—swing detection repaints the last 2–3 bars because a new swing high/low can invalidate the previous one. On lower timeframes, this is annoying. On 1H+, it’s manageable.  
+**FAQ addressing real trader questions**
+**Q: Does it repaint?**
+A: Yes — swing detection repaints the most recent bars, because a new swing high or low can invalidate the previous one. On lower timeframes this is more disruptive; on higher timeframes it's more manageable.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but crypto is volatile. The auto-Fib redraws often during fast moves. Best used after a clear trend is established (not during news spikes).  
+**Q: Can I use it for crypto?**
+A: Yes, but crypto is volatile, and the auto-Fib redraws often during fast moves. It's best used after a clear trend is established, not during news spikes.
 
-**Q: Why does it draw on every swing?**  
-A: The lookback period is too short for your timeframe. Increase it (e.g., 100 for 4H charts) to filter minor swings.  
+**Q: Why does it draw on every swing?**
+A: The lookback period is too short for your timeframe. Increase it to filter minor swings.
 
-**Q: Is it profitable alone?**  
-A: No. No indicator is. Use it as a zone map, then confirm with price action (pin bars, engulfing candles, volume).  
+**Q: Is it profitable alone?**
+A: No. No indicator is. Use it as a zone map, then confirm with price action — pin bars, engulfing candles, volume.
 
-**Final verdict**  
-**⭐⭐⭐⭐ (4/5)**  
-If you trade trends and already understand Fibonacci, this indicator removes the manual drag-and-drop hassle. It’s not a magic bullet—you still need to think—but for a free tool, it’s surprisingly clean and effective. I use it daily on my 1H and 4H charts. Just don’t expect it to replace your brain.
-
----
+**Final verdict**
+**4/5**
+If you trade trends and already understand Fibonacci, this indicator removes the manual drawing hassle. It's not a magic bullet — you still have to think — but for a free tool it's clean and functional. Just don't expect it to replace your brain.
 
 ## Go Deeper with The Indicator Lab
 

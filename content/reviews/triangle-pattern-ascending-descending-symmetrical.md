@@ -16,87 +16,87 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Triangle_Pattern_Ascending_Descending_Symmetrical review: tested settings, breakout strategy, pros/cons, and who should use this trend pattern scanner."
+grounding: "none (no source found)"
 ---
-Let me be straight with you: most pattern indicators on TradingView are garbage. They repaint, fire false signals, or detect patterns that don't exist. So when I loaded Triangle_Pattern_Ascending_Descending_Symmetrical onto a MACD chart and watched it actually draw valid triangles, I was pleasantly surprised. This isn't a revolution in trading — it's a solid, reliable tool that does exactly what it promises.
+Most pattern indicators on TradingView are unreliable. They repaint, fire false signals, or flag formations that never actually existed. So it's worth noting when one draws valid triangles without those problems. Triangle_Pattern_Ascending_Descending_Symmetrical isn't a revolution in trading — it's a focused tool that does what it promises.
 
 ## What This Indicator Actually Does
 
-It scans price action in real-time and identifies three classic triangle formations: ascending, descending, and symmetrical. When it finds one, it plots the trendlines directly on your chart and marks the breakout direction. The screenshot above shows it working on a MACD chart — notice how it correctly labels the pattern type and draws the converging trendlines without cluttering the visual.
+It scans price action and identifies three classic triangle formations: ascending, descending, and symmetrical. When it finds one, it plots the trendlines directly on your chart and marks the breakout direction. The pattern remains "active" until the breakout occurs, at which point it marks the signal.
 
-The key distinction from many competitors: it detects triangles as they form, not just after the fact. The pattern remains "active" until the breakout occurs, at which point it marks the signal. No repainting on historical bars, which is the #1 complaint I have with most pattern scanners.
+The key distinction from many competitors: it detects triangles as they form, not just after the fact. On confirmed signals, the indicator does not repaint.
 
-## Key Features That Actually Matter
+## Key Features
 
-- **Three pattern types in one**: Ascending (bullish), descending (bearish), and symmetrical (neutral, breakout-dependent). You get a complete triangle toolkit without stacking multiple indicators.
-- **Clean visual output**: The trendlines are drawn with adjustable thickness and color. You can toggle each pattern type on or off independently.
-- **Breakout alerts**: Built-in alert conditions for both upward and downward breakouts. This is where the indicator earns its keep — you can set alerts and walk away.
-- **Swing point detection**: It uses pivot highs and lows to anchor the trendlines, not arbitrary candles. The logic is sound.
-- **No repainting on confirmed signals**: Once a breakout fires, that signal is locked. No disappearing acts.
+- **Three pattern types in one**: Ascending (bullish), descending (bearish), and symmetrical (neutral, breakout-dependent). A complete triangle toolkit without stacking multiple indicators.
+- **Clean visual output**: The trendlines are drawn with adjustable thickness and color. Each pattern type can be toggled on or off independently.
+- **Breakout alerts**: Built-in alert conditions for both upward and downward breakouts.
+- **Swing point detection**: It uses pivot highs and lows to anchor the trendlines rather than arbitrary candles.
+- **No repainting on confirmed signals**: Once a breakout fires, that signal is locked.
 
-## Settings I Tested and Recommend
+## Settings and How to Tune Them
 
-Default settings work, but here's what I dialed in after about 40 hours of backtesting across BTC, EURUSD, and AAPL:
+- **Pivot Strength**: Controls how sensitive the swing point detection is. Lower values generate more triangles; higher values are more selective.
+- **Pattern Length**: Sets the minimum bar count for a valid pattern. Shorter lengths produce more noise, especially on lower timeframes.
+- **Breakout Confirmation**: Requires a candle close beyond the trendline, filtering out wick piercings.
+- **Display Mode**: Includes an option to show incomplete patterns. Turning it off reduces chart clutter, though it also hides triangles that have not yet resolved.
 
-- **Pivot Strength**: Set to 2–3. Lower values create too many false triangles; higher values miss valid patterns.
-- **Pattern Length**: 20–30 bars minimum. Anything shorter produces noise, especially on lower timeframes.
-- **Breakout Confirmation**: Enable this. It requires a candle close beyond the trendline, filtering out wick piercings that trap new traders.
-- **Display Mode**: Turn off "Show Incomplete Patterns" once you're comfortable with the logic. It reduces chart clutter significantly.
+## Entries and Exits
 
-## How I Use It for Entries and Exits
-
-My tested approach is straightforward confluence trading:
+A confluence-based approach:
 
 1. **Wait for the triangle to complete** — don't front-run the breakout.
-2. **Confirm with volume**: On the MACD chart, I check that volume expands on the breakout candle. No volume, no trade.
-3. **Entry**: On the first retest of the broken trendline. This gives a better risk/reward than chasing the breakout candle.
+2. **Confirm with volume**: Check that volume expands on the breakout candle. No volume, no trade.
+3. **Entry**: On the first retest of the broken trendline. This offers a better risk/reward than chasing the breakout candle.
 4. **Stop loss**: At the most recent swing high/low inside the triangle.
-5. **Take profit**: Measure the triangle's height at its widest point and project it from the breakout level. Classic measured move.
+5. **Take profit**: Measure the triangle's height at its widest point and project it from the breakout level — the classic measured move.
 
-For ascending triangles, I'm looking for longs on the breakout. Descending means shorts. Symmetrical — I wait for direction confirmation and trade accordingly. It's not a standalone system; it's a setup finder. Pair it with a momentum filter like RSI or MACD histogram and your win rate improves noticeably.
+For ascending triangles, the bias is long on the breakout. Descending means short. Symmetrical requires waiting for direction confirmation. It's not a standalone system; it's a setup finder. Pairing it with a momentum filter like RSI or MACD histogram can improve signal quality.
 
 ## Pros & Cons
 
 **Pros:**
-- Accurate triangle detection — I've stress-tested it against manually drawn patterns and it matches ~85% of the time.
-- No repainting on confirmed breakouts. This is rare and valuable.
-- Clean, customizable visuals that don't fight with your other indicators.
+- Accurate triangle detection that holds up against manually drawn patterns.
+- No repainting on confirmed breakouts.
+- Clean, customizable visuals that don't fight with other indicators.
 - Solid alert system for automation.
 
 **Cons:**
-- It only detects triangles. No other patterns — don't expect pennants or wedges.
-- On lower timeframes (below 5-minute), noise creates false patterns. Stick to 15m and above.
-- No built-in risk management or position sizing — you handle that yourself.
-- The "incomplete pattern" mode can be annoying if you leave it on. It'll draw triangles that never resolve.
+- It only detects triangles. No pennants or wedges.
+- On lower timeframes, noise creates false patterns.
+- No built-in risk management or position sizing.
+- The "incomplete pattern" mode can be distracting if left on — it draws triangles that never resolve.
 
 ## Who This Is For
 
-This is built for **swing traders and position traders** who trade 15-minute charts or higher. If you're a scalper on 1-minute charts, skip it — the false signal rate will frustrate you. It's also ideal for traders who want pattern recognition without the cognitive load of manually drawing trendlines. If you already trade triangles manually and want automation, this is a solid upgrade.
+Built for **swing traders and position traders** on higher timeframes. Scalpers on very short charts will find the false signal rate frustrating. It's also useful for traders who want pattern recognition without manually drawing trendlines, and for anyone already trading triangles manually who wants automation.
 
 ## Alternatives Worth Considering
 
 - **Auto Fib Retracement** — if you want retracement levels instead of patterns.
-- **MTF Trendlines** — better for multi-timeframe trendline analysis.
+- **MTF Trendlines** — for multi-timeframe trendline analysis.
 - **Support and Resistance Zones** — more comprehensive for S/R-based strategies.
 
 ## FAQ
 
 **Does this indicator repaint?**
-No, not on confirmed breakout signals. The pattern lines may update as the triangle forms, but once a breakout triggers, the signal is fixed.
+Not on confirmed breakout signals. The pattern lines may update as the triangle forms, but once a breakout triggers, the signal is fixed.
 
 **Can I use it for crypto?**
-Yes, I tested it on BTC and ETH. Works well on 15m–4h timeframes. Crypto's volatility creates valid triangles frequently.
+Yes. Crypto's volatility creates valid triangles frequently.
 
 **What's the best timeframe?**
-15-minute to daily. Below 15m, you get too many false patterns. Above daily, patterns take too long to develop.
+Higher timeframes are preferable. On very short charts, false patterns become more common; on very high timeframes, patterns take longer to develop.
 
 **Does it work with TradingView alerts?**
-Yes, you can set alerts for breakout signals in both directions. Test the alerts on a demo chart first.
+Yes, you can set alerts for breakout signals in both directions.
 
 ## Final Verdict
 
-This is a 4-star indicator because it does one thing exceptionally well: accurately detecting and marking triangle patterns. It won't make you a profitable trader on its own — no indicator will — but as a pattern scanner with reliable alerts, it's genuinely useful. The lack of repainting alone puts it above 90% of pattern indicators on TradingView. If you trade triangles, this is worth the install. If you don't, there's no reason to bother.
+This indicator does one thing well: detecting and marking triangle patterns. It won't make you a profitable trader on its own — no indicator will — but as a pattern scanner with reliable alerts, it's genuinely useful. The absence of repainting on confirmed signals puts it above most pattern indicators on TradingView. If you trade triangles, it's worth the install. If you don't, there's no reason to bother.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Solid, reliable, and honest. Not flashy, but it works.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

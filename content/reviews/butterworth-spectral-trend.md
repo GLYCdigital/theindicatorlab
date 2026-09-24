@@ -17,97 +17,90 @@ categories:
 rating: 4
 description: "Honest Butterworth_Spectral_Trend review: settings, strategy, pros/cons. See if this smooth trend filter beats MACD or SuperTrend for your trading."
 tv_script_url: "https://www.tradingview.com/script/QerTPPmZ-Butterworth-Spectral-Trend-QuantAlgo/"
+sources: ["https://www.tradingview.com/script/QerTPPmZ-Butterworth-Spectral-Trend-QuantAlgo/"]
 ---
-I'll be straight with you: I've tested hundreds of trend indicators, and most are just repackaged moving averages with extra paint. Butterworth_Spectral_Trend is different — it's a spectral analysis approach wrapped in a clean, usable package. After running it on multiple timeframes and asset classes, here's my honest take.
-
 **What This Indicator Actually Does**
 
-Instead of the standard moving average smoothing most trend tools use, this indicator applies a Butterworth filter — a signal processing technique that separates trend from noise with minimal lag. The "spectral" part means it analyzes frequency components of price action, isolating the dominant cycle. The result: a smooth line that changes color (green for uptrend, red for downtrend) with a fill between price and the line.
+Instead of the fixed moving averages or crossover logic most trend tools rely on, this indicator applies a 2-pole Butterworth SuperSmoother — a signal processing filter that extracts a low-noise spectral trend path from price. Coefficients are derived from a live cutoff period and a damping factor (√2 by default, for the maximally flat Butterworth response), then applied recursively to the selected price source, with an optional Nyquist average of the current and prior sample to suppress 2-bar oscillation.
 
-As the chart above shows, the line hugs price action better than a 50 EMA but stays calmer than MACD's signal line. It doesn't repaint, which is a huge plus in my book — too many "trend" indicators on TradingView rewrite history to look perfect.
+The "spectral" part refers to period-based smoothing rather than cycle projection: the trend path comes from the filter, while direction state is derived from the filter's slope. The result is a smoothed line that takes a bullish or bearish colouring, with optional spectral bodies, a gradient fill, and signal labels.
+
+**How It Works**
+
+A provisional filter always runs at the base cutoff. Residual energy (price minus provisional filter) and provisional slope energy are tracked with EMA-style RMS estimates. Their ratio maps conditions into a noise weight: when residuals dominate, the cutoff lengthens; when directional slope energy is cleaner, it shortens. The live cutoff is blended toward that target with a smoothing factor so period changes don't jump bar to bar.
+
+Direction is read from the spectral filter's slope, not from price-versus-line crossovers. Optional hysteresis requires opposite slope to exceed a multiple of its typical recent magnitude before a flip is allowed, and a minimum hold bar count enforces a cooldown after each flip. Trend state is tracked as an integer direction, with signal conditions derived from comparing current and prior bar states.
 
 **Key Features That Stand Out**
 
-- **Zero-lag smoothing**: The Butterworth filter achieves what exponential moving averages can't — smooth output without excessive delay. This matters when you're trying to catch trend reversals early.
-- **Cycle-based adaptation**: Unlike fixed-length indicators, it adapts to whatever market cycle is dominant. In ranging markets, it tightens; in strong trends, it loosens.
-- **Clear visual hierarchy**: The fill between price and line gives you an instant read on trend strength. Faded colors signal weakening momentum — a subtle detail I've learned to respect.
+- **Slope-gated state flips**: Because direction is read from filter slope rather than crossovers, shallow noise wiggles in the filter can occur without flipping direction.
+- **Adaptive cutoff**: Clean directional conditions can tighten the cutoff for faster response; noisy conditions can lengthen it for more stability. When adaptivity is disabled, the filter always uses the fixed base cutoff period.
+- **Hysteresis and hold controls**: These further reduce clustered flips without changing the underlying filter math.
+- **Clear visual hierarchy**: Bullish and bearish palettes are applied across the SuperSmoother line, optional spectral bodies, gradient fill, and labels, with optional bar and background tinting.
 
-**Best Settings I've Tested**
+**Settings and How to Tune Them**
 
-The default settings work, but here's what I found after extensive testing:
+The indicator ships with three preconfigured presets, and selecting a preset overrides the corresponding core, adaptivity, and signal inputs:
 
-- **For intraday (15m-1h)**: Reduce the filter length to 8-10 bars. Default settings will lag too much on lower timeframes.
-- **For swing trading (4h-daily)**: Keep filter length around 15-20. This balances noise reduction with responsiveness.
-- **Sensitivity**: Crank it up (0.8-0.9) for scalping, but expect more false signals. Keep it at 0.5-0.6 for swing positions.
+- **Default**: Targets swing trading on 1-hour to daily charts with a balanced base cutoff, moderate residual adaptivity, and lookback.
+- **Fast Response**: Shortens the cutoff and strengthens adaptivity for intraday charts from 5-minute to 1-hour, where earlier turns matter more than flip sparsity.
+- **Smooth Trend**: Lengthens the cutoff, softens adaptivity, and adds light hysteresis plus a short hold for position trading on daily and weekly timeframes, where false flips are more costly than delayed ones.
 
-One thing I appreciate: the indicator provides no built-in alerts for crossover signals, which is a missed opportunity. You'll need to set up price crossing the line manually.
+Beyond presets, adaptivity can be switched off entirely to run a fixed base cutoff. The damping factor, the hysteresis multiple, and the minimum hold bar count are all exposed as inputs.
 
-**How I Actually Use It**
+**Signal Interpretation**
 
-The entry logic that worked best for me:
+▶ **Bullish Trend (Green/Bullish palette)**: When spectral filter slope turns positive and clears any active hysteresis and hold constraints, the indicator enters bullish mode with bullish colouring applied across the SuperSmoother line, optional spectral bodies, gradient fill, and BUY label. This state persists until slope reverses with enough strength (and after enough bars) to satisfy the signal filters.
 
-1. **Long entry**: Price closes above the line, line turns green, and the fill expands (momentum building).
-2. **Exit**: Price closes below the line, or the fill visibly contracts — that's your warning before the line flips.
-3. **Filter**: Pair this with a higher-timeframe trend filter. In a daily uptrend, only take longs on the 4h chart. This alone cut my false signals by half.
+▶ **Bearish Trend (Red/Bearish palette)**: When spectral filter slope turns negative under the same constraints, the indicator enters bearish mode with bearish colouring across all visual elements. A confirmed opposite slope move is required to exit this state and print a SELL signal.
 
-Here's the catch: the indicator wants to catch trends early, which means it'll occasionally trigger during consolidation. That's not a flaw — it's the nature of cycle-based analysis. You need to respect the broader context.
+**Built-in Alerts**
+
+Three alert conditions cover all directional states. "Bullish Trend Signal" fires on the bar where trend direction confirms bullish. "Bearish Trend Signal" fires on the bar where it confirms bearish. "Any Trend Change" combines both into a single condition. Alerts continue to work even when signal labels are hidden.
+
+**Visual Customisation**
+
+Six colour presets (Classic, Aqua, Cosmic, Cyber, Neon, and Custom) apply coordinated bullish and bearish colour schemes across the SuperSmoother line, spectral bodies, gradient fill, signal labels, and optional bar and background colouring. Bar colouring tints price candles with the active trend colour at a configurable transparency level, and background colouring extends the directional tint across the full chart pane.
 
 **Pros & Cons**
 
 **Pros:**
-- No repainting — verified this across multiple sessions
-- Genuinely different approach, not another MACD clone
-- Adapts to market cycles, reducing whipsaw in ranging conditions
-- Clean visuals, easy to read at a glance
+- Slope-based direction with hysteresis and hold controls, rather than crossover logic
+- Adaptive cutoff responds to residual signal-to-noise conditions
+- Three presets map to distinct trading approaches and timeframes
+- Coordinated colour presets across all visual elements
 
 **Cons:**
-- No built-in alerts — annoying for a paid-level tool
-- Can be too sensitive in choppy markets if you don't tune settings
-- The spectral concept isn't explained in the indicator — you'll need to do homework
-- Less effective on very low timeframes (under 5 minutes)
+- The spectral concept takes some reading to understand — the mechanics aren't self-evident from the chart
+- Preset selection overrides core, adaptivity, and signal inputs, so custom tuning requires care
+- Like any slope-based trend tool, it will still flip during sustained consolidation
 
 **Who This Is For**
 
-This suits traders who understand that trend isn't just "price above or below a line." If you're comfortable with cycle analysis and want a tool that adapts, this will feel natural. It's particularly strong for:
-
-- Swing traders on 4h to daily charts
-- Traders who've used SuperTrend or MACD and want something with less lag
-- People willing to spend 15 minutes tuning settings per timeframe
-
-It's NOT for beginners who want a "buy/sell" arrow indicator, and it's not for scalpers needing instant signals on 1-minute charts.
-
-**Alternatives Worth Considering**
-
-- **SuperTrend**: Better for pure trend-following with clear stop levels, but more laggy
-- **MACD**: More widely understood, but the histogram adds noise Butterworth_Spectral_Trend filters out
-- **Fourier Extrapolator**: If you want even deeper spectral analysis with price projections, though it's more complex
+This suits traders who want a trend filter built on period-based smoothing rather than fixed moving averages, and who are willing to tune adaptivity, hysteresis, and hold settings to their instrument. The preset structure points it at swing, intraday, and position trading timeframes respectively.
 
 **FAQ**
 
-**Does Butterworth_Spectral_Trend repaint?**
-No. I've verified this on multiple sessions — the current and historical values remain consistent. It uses confirmed price data only.
-
-**Is it good for crypto?**
-Yes, actually. Crypto trends are strong and cyclical, which plays to this indicator's strengths. Just adjust the filter length to match 24/7 volatility.
+**Does Butterworth Spectral Trend repaint?**
+The indicator reads direction from the spectral filter's slope and confirms state via hysteresis and hold constraints. Whether a given signal is final on the current bar depends on those constraints completing, so treat unconfirmed flips as provisional until the bar closes.
 
 **Can I use it alone?**
-You can, but you shouldn't. It's a trend filter, not a complete system. Pair it with volume or momentum confirmation.
+It is a trend-direction tool, not a complete system. It provides state flips and alerts, but position sizing, risk, and confirmation are outside its scope.
 
 **Final Verdict**
 
-Butterworth_Spectral_Trend earns ⭐⭐⭐⭐ (4/5). It's a genuinely original take on trend analysis that delivers on its promise of low-lag smoothing. The missing alerts and the learning curve keep it from a perfect score, but for traders who've outgrown basic moving averages, this is a solid upgrade. It won't make you profitable by itself — no indicator will — but it gives you a cleaner read on market cycles than most tools in its category.
+Butterworth Spectral Trend is a genuine departure from repackaged moving averages. The 2-pole Butterworth foundation, residual-based adaptivity, and slope-gated flips with hysteresis and hold controls form a coherent design, and the three presets give traders a reasonable starting point without forcing them to derive parameters from scratch. The trade-off is conceptual overhead: the mechanics reward understanding, and the presets override more than a casual user might expect. For traders who have outgrown fixed moving averages and want a cleaner read on trend direction, it is worth the chart space — provided you treat it as a filter rather than a complete system.
 
-If you're tired of whipsaw-heavy trend indicators and willing to learn a slightly different framework, this is worth your chart space. Just don't expect magic — expect a smarter filter, and that's exactly what it delivers.
+## What This Class of Signal Has Actually Done
 
-## Frequently Asked Questions
+*Not this script. A canonical **Trend** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-### Is Butterworth_Spectral_Trend worth it?
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.4%, QQQ 52.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 45.7%, VIX 43.9%, SHIBUSD 29.4%
 
-Based on testing across multiple timeframes, Butterworth_Spectral_Trend delivers solid value for traders who need trend analysis.
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

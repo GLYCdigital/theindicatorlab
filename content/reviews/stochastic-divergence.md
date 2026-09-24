@@ -16,96 +16,104 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Automatically spots hidden and regular divergences on the Stochastic oscillator. Saves hours of manual charting. Best with 14,3,3 settings on 1H-4H."
+grounding: "none (no source found)"
 ---
+# Stochastic_Divergence Indicator Review
 
-I’ve been burned by fake breakouts more times than I care to count, which is why I keep coming back to divergence setups. The Stochastic_Divergence indicator automates the tedious part—scanning for hidden and regular divergences between price and the Stochastic oscillator. After a week of live trading it on EUR/USD and BTC/USDT, here’s what I found.
+Divergence setups are a staple of oscillator-based trading, and the tedious part has always been the manual scanning—matching swing highs and lows on price against the corresponding swings on the Stochastic. The Stochastic_Divergence indicator automates that identification step, drawing hidden and regular divergences directly on the chart.
 
 ## What This Indicator Actually Does
 
-It draws divergence lines directly on your chart. No alerts, no repainting gimmicks—just clean, color-coded lines connecting swing highs or lows on price to corresponding swings on the Stochastic. You get two types:
-- **Regular divergence** (green lines): Price makes a higher high but Stochastic makes a lower high (bearish), or price makes a lower low but Stochastic makes a higher low (bullish). Classic reversal signal.
+It plots divergence lines on your chart. No alerts, no repainting behavior described—just color-coded lines connecting swing highs or lows on price to corresponding swings on the Stochastic. Two types are drawn:
+
+- **Regular divergence** (green lines): Price makes a higher high but Stochastic makes a lower high (bearish), or price makes a lower low but Stochastic makes a higher low (bullish). This is the classic reversal signal.
 - **Hidden divergence** (red lines): Price makes a higher low but Stochastic makes a lower low (bullish continuation), or price makes a lower high but Stochastic makes a higher high (bearish continuation).
 
 ## Key Features That Set It Apart
 
-- **No lag**: Unlike many divergence tools that redraw, this one locks in once a swing is confirmed. I tested it on ES futures 5-minute charts—no slippage.
-- **Customizable lookback**: You can adjust the Stochastic length (default 14) and the smoothing (default 3,3). I found 14,3,3 works best for daily swing trading; for scalping, drop it to 9,3,3.
-- **Overbought/oversold zones**: Default 80/20. I’ve changed mine to 85/15 for BTC because it’s more volatile—fewer false signals.
-- **Multi-timeframe friendly**: Works on any timeframe, but shines on 1H to 4H. Below 15 minutes, you get too many whipsaws.
+- **Line locking**: Unlike many divergence tools that redraw, this one locks a line in once a swing is confirmed.
+- **Customizable lookback**: The Stochastic length and smoothing are adjustable, as is the divergence lookback window.
+- **Overbought/oversold zones**: Configurable thresholds for the Stochastic bands.
+- **Multi-timeframe capable**: It functions on any timeframe, though it is generally more useful on higher intraday and swing timeframes, where oscillator noise is less of a factor.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After backtesting 200+ trades, here’s what I settled on:
+The indicator exposes the standard Stochastic inputs—length, %K smoothing, %D smoothing, overbought and oversold levels—plus a divergence lookback setting measured in bars.
 
-| Setting | Default | My Recommendation |
-|---------|---------|-------------------|
-| Stochastic Length | 14 | 14 (keep) |
-| Smooth K | 3 | 3 |
-| Smooth D | 3 | 3 |
-| Overbought | 80 | 85 (trending markets) |
-| Oversold | 20 | 15 (trending markets) |
-| Divergence Lookback | 50 bars | 30 bars (shorter = fewer false signals) |
+A conventional starting point is the default Stochastic configuration. From there:
 
-**For aggressive entries**: Tighten lookback to 20 bars and overbought/oversold to 90/10. You’ll miss some signals but catch the strongest reversals.
+- **Overbought/oversold levels**: Widening the bands (raising the overbought threshold and lowering the oversold threshold) will produce fewer, more extreme signals. Narrowing them produces more frequent signals at the cost of selectivity.
+- **Divergence lookback**: A shorter lookback window restricts divergence detection to more recent swings, which tends to reduce the number of signals. A longer window captures older swings but will surface more of them.
+- **Aggressive entries**: Tightening the lookback and pushing the overbought/oversold thresholds toward the extremes will filter for only the strongest reversals, at the cost of missing some setups.
+
+There is no universally "best" configuration—the right values depend on the instrument's volatility and the trader's timeframe.
 
 ## How to Use It for Entries and Exits
 
-**Long setup**: Look for a regular bullish divergence (price makes lower low, Stochastic makes higher low) near oversold. Wait for Stochastic to cross back above 20. Enter on the next candle close. Stop loss below the swing low.
+**Long setup**: Look for a regular bullish divergence (price makes a lower low, Stochastic makes a higher low) near oversold. Wait for the Stochastic to cross back above the oversold threshold. Enter on the next candle close, with a stop below the swing low.
 
-**Short setup**: Regular bearish divergence (price makes higher high, Stochastic makes lower high) near overbought. Wait for Stochastic to cross below 80. Enter on close.
+**Short setup**: Regular bearish divergence (price makes a higher high, Stochastic makes a lower high) near overbought. Wait for the Stochastic to cross below the overbought threshold, then enter on close.
 
-**Continuation trades**: Hidden divergences are gold for trend pullbacks. In an uptrend, price makes a higher low while Stochastic makes a lower low—that’s a buying opportunity with a tighter stop.
+**Continuation trades**: Hidden divergences are useful for trend pullbacks. In an uptrend, price makes a higher low while the Stochastic makes a lower low—a potential buying opportunity with a tighter stop.
 
-**Exit**: Take profit at the previous swing high/low. Or trail with a 20-period EMA.
+**Exit**: Take profit at the previous swing high or low, or trail with a moving average.
 
 ## Honest Pros and Cons
 
 **Pros**:
-- Saves hours of manual line-drawing. I used to spend 20 minutes per chart; now it’s instant.
-- No repainting—confirmed in real-time with a second monitor.
-- Works across asset classes: forex, crypto, indices.
+- Automates the manual line-drawing that divergence trading otherwise requires.
+- Does not redraw confirmed swings.
+- Applies across asset classes: forex, crypto, indices.
 
 **Cons**:
-- No alerts. You have to check the chart. Dealbreaker for some.
-- Can get noisy on lower timeframes (under 15 minutes). I tested on 5M—too many false signals.
-- The lines are thick by default. You can’t adjust line width in settings (only color).
+- No alerts. Signals must be monitored on the chart.
+- Can get noisy on lower timeframes, where oscillator whipsaws are common.
+- Line width is fixed in settings; only color is adjustable.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Swing traders**: The 1H-4H sweet spot is where this indicator earns its keep.
-- **Manual scalpers**: Only if you use 15M+ and filter with volume or trend.
-- **Not for you** if you want push notifications or automated alerts.
+- **Swing traders**: Higher intraday and multi-hour timeframes are where this type of tool is most practical.
+- **Manual scalpers**: Only with additional filtering, such as volume or a trend filter.
+- **Not for you** if you need push notifications or automated alerts.
 
 ## Better Alternatives
 
-- **Divergence Indicator by LonesomeTheBlue** (free, includes alerts, but repaints slightly)
-- **Auto Divergence by KivancOzbilgic** (more customization, paid)
-- **TradingView’s built-in Stochastic** + manual lines (free, but time-consuming)
+- **Divergence Indicator by LonesomeTheBlue** (free, includes alerts)
+- **Auto Divergence by KivancOzbilgic** (more customization)
+- **TradingView's built-in Stochastic** plus manual lines (free, but time-consuming)
 
-If you’re on a budget, the free alternative is fine. This one wins on reliability—no repainting.
+If alerts are a requirement, one of the alternatives is the better fit. This indicator's value is in the automated, non-redrawing divergence identification.
 
 ## FAQ
 
-**Does it repaint?**  
-No. I verified by switching timeframes back and forth. Lines stay fixed once a swing is drawn.
+**Does it repaint?**
+The indicator is designed to lock divergence lines once a swing is confirmed.
 
-**Can I use it for crypto?**  
-Yes. I tested on BTC/USDT and ETH/USDT. Works better with 85/15 zones due to volatility.
+**Can I use it for crypto?**
+Yes—it applies to crypto pairs. Because crypto tends to be more volatile, wider overbought/oversold thresholds are often more appropriate.
 
-**What’s the best timeframe?**  
-1H to 4H. Below 15 minutes, expect 40%+ false signals.
+**What's the best timeframe?**
+Higher intraday and swing timeframes are generally more reliable. Lower timeframes produce more false signals.
 
-**Does it show hidden divergences?**  
-Yes. Red lines for hidden bearish, green lines for regular bullish. Color-coded in the legend.
+**Does it show hidden divergences?**
+Yes. Hidden divergences are drawn alongside regular ones and are color-coded in the legend.
 
 ## Final Verdict
 
-Stochastic_Divergence is a solid, no-repaint tool that automates the grunt work of divergence identification. It’s not flashy—no alerts, no fancy UI—but it’s honest. Pair it with a trend filter (like a 200 EMA) and you’ve got a reliable edge. For the price of free, it’s a no-brainer for any serious trader.
+Stochastic_Divergence is a focused tool that automates the grunt work of divergence identification. It isn't flashy—no alerts, no elaborate UI—but it does one job. Pairing it with a trend filter is a reasonable way to reduce counter-trend noise. For a free indicator, it's a sensible addition to an oscillator-based workflow.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
+**Rating: ⭐⭐⭐⭐ (4/5)**
 *One star missing because of no alerts and limited line customization.*
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Stochastic** implementation was backtested on 30 markets over 5 years of daily data (17,234 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.6%** (50% = coin flip)
+- Strongest markets: LTCUSD 56.5%, VIX 55.4%, EURUSD 55.2%, GBPUSD 53.4%
+- Weakest markets: NVDA 44.4%, SPY 43.8%, SHIBUSD 26.5%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

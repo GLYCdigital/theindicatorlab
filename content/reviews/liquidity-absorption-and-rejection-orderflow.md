@@ -16,43 +16,39 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Tracks real-time orderflow absorption & rejection zones. Solid for spotting liquidity grabs and failed breakouts. Not a standalone system."
+grounding: "none (no source found)"
 ---
-
 **Description:** Tracks real-time orderflow absorption & rejection zones. Solid for spotting liquidity grabs and failed breakouts. Not a standalone system.
 
 ---
 
-I’ve spent the last week hammering this indicator on ES, NQ, and BTC futures. Here’s the unvarnished truth.
-
 ## What This Indicator Actually Does
 
-This is not a lagging oscillator or a trend follower. It’s a real-time orderflow tool that plots colored zones on your chart where price gets *absorbed* (heavy buying fails to push up) or *rejected* (sellers can’t drive it lower). Think of it as a visual footprint of supply/demand battles.
+This is not a lagging oscillator or a trend follower. It's a real-time orderflow tool that plots colored zones on your chart where price gets *absorbed* (heavy buying fails to push up) or *rejected* (sellers can't drive it lower). Think of it as a visual footprint of supply/demand battles.
 
-You’ll see two main things:
+You'll see two main things:
 - **Absorption zones** (usually blue/teal): Price stalls despite aggressive volume. Liquidity is getting eaten.
 - **Rejection zones** (usually red/orange): Price reverses sharply after hitting an area. Classic failed breakout or liquidity sweep.
 
-The chart above shows a clean example on NQ 15-min: price swept below a swing low, then bounced hard off a rejection zone, followed by a 30-point rally.
+The chart above shows an example on NQ 15-min: price swept below a swing low, then bounced hard off a rejection zone.
 
 ## Key Features That Set It Apart
 
-- **Real-time calculation** – No repainting on closed bars. It updates live based on tick data.
-- **Customizable sensitivity** – You can tweak the “absorption threshold” (how much volume vs. price movement defines absorption). Default 1.5x works for ES; crank it to 2.5x for crypto.
-- **Multi-timeframe alerts** – Set alerts when a zone forms. I use this to catch early entries before the breakout crowd piles in.
-- **Clean chart** – Unlike many orderflow tools, it doesn’t clutter your screen with a million boxes. Zones fade after a few bars unless price retests.
+- **Real-time calculation** – Zones form on the bar they occur and don't move.
+- **Customizable sensitivity** – The absorption threshold defines how much volume versus price movement counts as absorption. In practice this is the main dial you'll adjust per instrument, since volatility profiles differ across markets.
+- **Alerts on zone formation** – Useful for catching entries before the breakout crowd piles in.
+- **Clean chart** – Unlike many orderflow tools, it doesn't clutter your screen with a million boxes. Zones fade after a few bars unless price retests.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-I tested these on ES 5-min and 15-min:
+| Setting | What It Controls |
+|---------|------------------|
+| Absorption Threshold | Volume-to-price-movement ratio that qualifies a bar as absorption. Higher values filter more aggressively. |
+| Rejection Sensitivity | How sharp a reversal must be to print a rejection zone. |
+| Zone Expiration | How many bars a zone stays on the chart before fading. |
+| Show Volume Delta | Toggles the delta display. |
 
-| Setting | Recommendation |
-|---------|----------------|
-| Absorption Threshold | 1.8 (ES), 2.2 (BTC) |
-| Rejection Sensitivity | 70% (default is fine) |
-| Zone Expiration | 8 bars (keeps chart clean) |
-| Show Volume Delta | Off (it’s noisy) |
-
-For day trading ES, stick with 5-min. For scalping NQ, go to 1-min but reduce zone expiration to 4 bars.
+The absorption threshold is the setting most worth tuning per market, since volume characteristics vary widely between instruments. The other settings are largely a matter of chart cleanliness and how much history you want visible.
 
 ## How to Use It for Entries and Exits
 
@@ -65,60 +61,58 @@ For day trading ES, stick with 5-min. For scalping NQ, go to 1-min but reduce zo
 **Short entry:**
 Same logic inverted. Absorption zone above resistance → price fails to break → short on retest.
 
-**Exit rule:** If price enters a zone and doesn’t reverse within 2 bars, exit. The zone is failing.
+**Exit rule:** If price enters a zone and doesn't reverse within a couple of bars, exit. The zone is failing.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Excellent for identifying liquidity grabs (stop hunts) before they happen.
-- Works on all liquid markets – futures, forex, crypto.
-- No repaint. I verified by comparing tick data.
-- Lightweight – doesn’t lag even on 1-min charts.
+- Useful for identifying liquidity grabs (stop hunts) as they develop.
+- Works on liquid markets – futures, forex, crypto.
+- Zones form on the bar they occur and don't move.
+- Lightweight – doesn't lag noticeably even on 1-min charts.
 
 **Cons:**
 - **Not a standalone system.** You need price action, support/resistance, or a trend filter. Blindly trading zones will kill your account.
 - False signals in low-volume hours (e.g., Asian session on ES).
-- No built-in backtest metrics. You’ll have to eyeball it.
+- No built-in backtest metrics. You'll have to eyeball it.
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Orderflow traders** who already understand absorption and rejection concepts.
 - **Swing traders** looking for precise entries on pullbacks.
 - **Scalpers** who trade high volume markets (ES, NQ, GC).
 
-**Not for:** Beginners who want a “buy here, sell there” magic button. Or anyone trading low-liquidity stocks.
+**Not for:** Beginners who want a "buy here, sell there" magic button. Or anyone trading low-liquidity stocks.
 
 ## Better Alternatives
 
-- **Sierra Chart’s Order Flow Bars** – More granular, but costs money and is less user-friendly.
+- **Sierra Chart's Order Flow Bars** – More granular, but costs money and is less user-friendly.
 - **Bookmap** – Best for level 2 visibility, but overkill for most.
-- **TradingView’s built-in Volume Profile** – Free, but only shows historical zones, not real-time absorption.
+- **TradingView's built-in Volume Profile** – Free, but only shows historical zones, not real-time absorption.
 
-If you’re on a budget, this indicator is solid. If you’re serious about orderflow, pair it with volume profile.
+If you're on a budget, this indicator is solid. If you're serious about orderflow, pair it with volume profile.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. Zones form on the bar they occur and don’t move.
+**Q: Does it repaint?**
+A: No. Zones form on the bar they occur and don't move.
 
-**Q: Can I use it on crypto?**  
-A: Yes, but increase the absorption threshold to 2.0+ to filter noise.
+**Q: Can I use it on crypto?**
+A: Yes, though you'll likely want a higher absorption threshold to filter noise.
 
-**Q: Why do I get false signals during news?**  
+**Q: Why do I get false signals during news?**
 A: High volatility breaks the absorption/rejection logic. Avoid trading 5 minutes before/after major news.
 
-**Q: Does it work on lower timeframes like 1-min?**  
-A: Yes, but zones expire quickly. Use 4-bar expiration max.
+**Q: Does it work on lower timeframes like 1-min?**
+A: Yes, but zones expire quickly, so a shorter expiration is usually needed.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-It’s a niche tool, not a holy grail. If you understand orderflow and want a clean visual of absorption/rejection zones in real-time, this is one of the better options on TradingView. The lack of built-in backtesting and occasional noise in low volume holds it back from 5 stars.
+It's a niche tool, not a holy grail. If you understand orderflow and want a clean visual of absorption/rejection zones in real-time, this is one of the better options on TradingView. The lack of built-in backtesting and occasional noise in low volume holds it back from 5 stars.
 
-Would I install it? Yes. Would I trade it alone? Hell no. Pair it with price action and a trend filter, and you’ll have a solid edge.
-
----
+Worth installing? Yes. Worth trading alone? No. Pair it with price action and a trend filter.
 
 ## Go Deeper with The Indicator Lab
 

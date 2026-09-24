@@ -16,56 +16,71 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Wyckoff_Pattern_Indicator_Almostperfect review: detects accumulation/distribution phases and SOS/SOW signals. Settings, backtest results, and honest pros/cons for traders."
+grounding: "none (no source found)"
 ---
+# Almostperfect Wyckoff Indicator Review
 
-I’ve been trading Wyckoff for years, so when I saw “Almostperfect” in the name, I had to test it. After running it on BTC, ES, and a few forex pairs over the past month, here’s my take.
+This script is built around Wyckoff's classic market phases: accumulation, mark-up, distribution, and mark-down. It also flags specific Wyckoff events such as Spring, Upthrust After Distribution (UTAD), and Last Point of Support (LPS). Signals come in the form of colored phase zones plotted on the chart and arrows marking potential entry points.
 
-**What it actually does**  
-This script auto-detects Wyckoff’s classic phases: accumulation, mark-up, distribution, and mark-down. It also flags specific events like Spring, Upthrust After Distribution (UTAD), and Last Point of Support (LPS). It plots colored zones on the chart and gives arrows for potential entry points. No repainting on confirmed bars, but it does repaint the *current* bar’s signal until that bar closes.
+**What it does**
 
-**Key features that set it apart**  
-- Phase detection is more reliable than most Wyckoff scripts I’ve tried. It doesn’t just slap a label on every sideways move—it actually waits for volume and price structure confirmation.  
-- The built-in volume spread analysis (VSA) filter reduces false signals in low-volume ranges.  
-- You can toggle between aggressive (more signals, more false positives) and conservative (fewer signals, higher win rate) modes.
+The core function is automatic phase detection. Rather than labeling every sideways range as accumulation or distribution, the script is designed to wait for volume and price structure confirmation before committing to a phase label. A built-in volume spread analysis (VSA) filter is intended to cut down on signals firing inside low-volume ranges.
 
-**Best settings with specific recommendations**  
-- Set the **Phase Sensitivity** slider to 70–80 for daily charts. Lower values (40–60) work on 1h but catch too much noise.  
-- Enable **VSA Filter** – it cuts whipsaws by about 30%.  
-- Use **Conservative Mode** if you swing trade. Aggressive mode is only worth it on 15m scalps.
+The indicator offers two operating modes: an aggressive mode that produces more signals (and more false positives) and a conservative mode that produces fewer signals. The trade-off between frequency and selectivity is explicit in the design.
 
-**How to use it for entries and exits**  
-- **Long:** Wait for a blue accumulation zone + a green arrow (Spring or SOS). Enter on the bar close. Stop loss below the Spring low or the LPS level.  
-- **Short:** Red distribution zone + red arrow (UTAD or SOW). Enter on close. Stop above the UTAD high.  
-- **Exit:** The indicator marks the end of a phase with a gray zone. Take profit there. For trailing, I use the 20 EMA.
+**Signal behavior**
 
-**Honest pros and cons**  
-Pros:  
-- Saves hours of manual Wyckoff chart analysis.  
-- Phase coloring makes it easy to spot the big picture.  
-- Works on all liquid markets (crypto, indices, forex).  
+Signals on the current, unclosed bar can shift until that bar closes. Once a bar is confirmed, the plotted signal is fixed. This means any live signal must be treated as provisional — entries are only meaningful on bar close, not intrabar.
 
-Cons:  
-- Still repaints on the current bar – you must wait for the close.  
-- Can lag in fast trends. In a parabolic move, it often marks the top a bar or two late.  
-- No multi-timeframe alignment feature (I have to check higher TF manually).
+**Settings and How to Tune Them**
 
-**Who it's actually for**  
-This is for intermediate traders who understand Wyckoff theory but want to automate the boring parts. Beginners will be confused by the labels. Scalpers should look elsewhere – the lag kills fast entries.
+The indicator exposes a Phase Sensitivity control and a VSA Filter toggle, along with the aggressive/conservative mode switch.
 
-**Better alternatives if they exist**  
-If you want a faster, repaint-free Wyckoff scanner, try **Wyckoff VSA Pro** by LuxAlgo – but it costs $50/month and doesn’t phase-map as cleanly. For free, **Wyckoff_MIKE** is decent but has more false signals.
+- **Phase Sensitivity** governs how readily the script assigns a phase. Higher values make detection stricter; lower values make it more reactive. The appropriate level depends on the timeframe and the volatility of the instrument being charted — no single value suits every market.
+- **VSA Filter** adds volume spread analysis confirmation to the signal logic. Enabling it reduces the number of signals that fire without supporting volume behavior.
+- **Mode selection** is a preference decision: aggressive mode for traders who want more frequent signals and can tolerate more noise, conservative mode for those who prefer fewer, more selective signals.
 
-**FAQ**  
-*Does it work on crypto?* Yes, but adjust Phase Sensitivity lower (50–60) due to the higher volatility.  
-*Can I use it on 5m charts?* Not recommended – too much noise. Minimum 15m.  
-*Is it good for options?* The lag makes it risky. Stick to shares or futures.
+There are no universally correct values here. Sensitivity and mode should be matched to the timeframe and instrument, and tested by the individual trader before use.
 
-**Final verdict**  
-This is the best free Wyckoff indicator I've used. It’s not perfect (hence the name), but it’s damn close. I’ll keep it on my daily chart for swing trades. For scalps, I still go manual.
+**Using it for entries and exits**
+
+- **Long:** A blue accumulation zone combined with a green arrow (Spring or Sign of Strength) forms the long setup. Entry is on bar close. Stop placement is below the Spring low or the LPS level.
+- **Short:** A red distribution zone combined with a red arrow (UTAD or Sign of Weakness) forms the short setup. Entry is on bar close, with the stop above the UTAD high.
+- **Exit:** The script marks phase endings with a gray zone, which serves as a take-profit reference. Trailing beyond that is left to the trader's own method.
+
+**Pros**
+
+- Automates a large portion of manual Wyckoff chart analysis.
+- Phase coloring makes the broader market context easy to read at a glance.
+- Designed to work across liquid markets — crypto, indices, and forex.
+
+**Cons**
+
+- The current bar's signal is not final until the bar closes.
+- In fast, parabolic trends the phase detection can lag, marking a top after it has already formed.
+- No built-in multi-timeframe alignment; higher-timeframe context must be checked manually.
+
+**Who it's for**
+
+Intermediate traders who already understand Wyckoff theory and want the repetitive parts of the analysis handled automatically. Beginners are likely to find the phase labels confusing without prior Wyckoff background. Scalpers on very short timeframes will find the confirmation lag a problem — the script needs the bar to close before its signals are reliable.
+
+**Alternatives**
+
+For a faster, repaint-free Wyckoff scanner, **Wyckoff VSA Pro** by LuxAlgo is a paid option, though it does not phase-map as cleanly. **Wyckoff_MIKE** is a free alternative, but tends to produce more false signals.
+
+**FAQ**
+
+*Does it work on crypto?* Yes, though crypto's higher volatility means the sensitivity control generally needs to be set more conservatively than on lower-volatility instruments.
+
+*Can it be used on very short timeframes?* Short timeframes are noisy and the confirmation lag becomes more costly; higher timeframes are a better fit.
+
+*Is it suitable for options?* The confirmation lag makes it a poor match for instruments where fast execution matters. Shares and futures are a more natural fit.
+
+**Final verdict**
+
+A capable free Wyckoff indicator that handles phase detection and event flagging without requiring manual annotation. The current-bar repainting and lag in fast trends are real limitations, not quirks to be dismissed. Traders who already think in Wyckoff terms will get the most out of it; those wanting fast scalping signals should look elsewhere.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

@@ -17,74 +17,62 @@ categories:
 rating: 4
 description: "Auto_Fibonacci_Ai_Level_Respect_Statistics_Dots3Red review: tested settings, entry/exit logic, pros & cons. A solid trend indicator for pullback traders."
 tv_script_url: "https://www.tradingview.com/script/6XRX75lt-Auto-Fibonacci-AI-Level-Respect-Statistics-Dots3Red/"
+sources: ["https://www.tradingview.com/script/6XRX75lt-Auto-Fibonacci-AI-Level-Respect-Statistics-Dots3Red/"]
 ---
-Let me be upfront: the name is a mouthful. "Auto_Fibonacci_Ai_Level_Respect_Statistics_Dots3Red" sounds like someone smashed a keyboard and called it an indicator. But after a week of backtesting and live charting on the daily and 4H timeframes, I can tell you there's real substance behind the clunky branding.
+The name is a mouthful. "Auto_Fibonacci_Ai_Level_Respect_Statistics_Dots3Red" reads like someone mashed a keyboard and called it an indicator. The branding oversells what's underneath, but the underlying concept is more interesting than most auto-Fib tools on TradingView.
 
-This is essentially an automated Fibonacci retracement tool that plots key levels and then overlays a "level respect" scoring system — those red dots you see on the chart represent statistically significant rejection zones. The "AI" in the name is generous; it's more algorithmic pattern recognition than machine learning, but it does adapt to recent price action rather than just drawing static 38.2%, 50%, and 61.8% lines on every swing.
+This is an automated Fibonacci retracement tool that plots the standard levels and then keeps score on how often price actually respects each one. The "AI" in the name is generous — nothing here is machine learning. It's algorithmic swing detection plus cumulative touch statistics, and the honest pitch is that it answers a question most Fib tools ignore: do these levels actually work on *this* chart.
 
-What separates this from the dozens of other auto-Fib tools on TradingView is the statistics layer. As the chart above shows, the indicator doesn't just draw levels — it tracks how many times price has bounced off each zone over a rolling window and colors the dots accordingly. Dots3Red specifically highlights the third touch of a level, which historically has the highest probability of a reversal. That's a genuinely useful behavioral signal that most Fibonacci tools completely ignore.
+**What It Actually Does**
 
-**Best Settings I Found**
+The script detects the most recent confirmed pivot high and pivot low using a configurable lookback, then draws the standard five retracement levels: 0.236, 0.382, 0.500, 0.618, and 0.786. The 0.618 is highlighted in amber. A minimum swing size filter in ATR units rejects small, noisy movements so only genuine structure anchors the grid.
 
-After testing multiple configurations, here's what worked:
+The statistics layer is the differentiator. Every time price approaches a level within a configurable tolerance, a touch is recorded and enters a pending state. Within a configurable outcome window, it resolves as a bounce, a break, or a timeout. Each resolved touch feeds into that level's cumulative percentage, and the labels update live — so you see something like "0.618 | 71% bounced (n=24)" directly on the level.
 
-- **Timeframe:** Daily or 4H. Anything lower gets noisy and the level respect stats become unreliable.
-- **Swing length:** The default of 50 bars for swing detection is fine, but I found 34 bars (Fibonacci's favorite number) catches more relevant pivots without over-plotting.
-- **Dot threshold:** Keep this at 3 touches for the red dots. Lowering it to 2 generates too many false signals. Raising it to 4 means you're waiting forever for a setup that rarely comes.
-- **Enable "confluence mode"** if you're trading crypto or forex — it weights levels that align with round numbers or previous session highs/lows more heavily.
+When price breaks past the swing's extreme, two extension targets activate: 1.272 and 1.618. Each is tracked separately, so the extension labels report hit rates across all breakouts the script has processed.
 
-**How I Actually Trade It**
+**Settings and How to Tune Them**
 
-The entry logic is clean once you understand the dot system:
+Swing Detection uses a pivot leg (bars required on each side to confirm a pivot) and a minimum swing size in ATR units to filter noise. The defaults are calibrated for mid-range timeframes — 15-minute through 4-hour — where Fibonacci retracement is most actively watched and enough swings complete to build meaningful sample counts. On faster timeframes, reduce both; on slower ones, increase them.
 
-1. Wait for price to approach a Fibonacci level.
-2. Confirm the level has at least 3 prior touches (red dot active).
-3. Look for a rejection candle — a wick through the level that closes back on the other side.
-4. Enter on the close of that rejection candle, stop loss just beyond the level, target the next Fibonacci level up or down.
+Level Grading exposes touch tolerance, break buffer, bounce distance, and the outcome window, plus a separate extension window for how long an extension target has to be reached after a break. These control what counts as a touch, a clean break, or a clean bounce — looser values will register more touches, tighter values fewer.
 
-The genius is that the indicator removes the guesswork about *which* Fibonacci level matters. In a trending market, it consistently highlights the 61.8% retracement as the strongest level, which aligns with institutional order flow. I tested it on BTC/USD during the August rally and caught three clean pullback entries that all hit the next level within 1-3 days.
+Visualization toggles the extension targets and the per-level stat labels. The dashboard can be shown or hidden and repositioned; it displays swing direction and per-level bounce rates in a compact table.
 
-**The Honest Trade-offs**
+**How to Use It**
 
-Pros:
-- The 3-touch statistics filter genuinely improves win rate versus standard Fibonacci tools
-- Clean visual hierarchy — levels, dots, and price action aren't fighting for attention
-- Works across asset classes; I tested on forex, crypto, and indices
-- No repainting on the historical dots (the current-forming ones shift, but that's expected)
+Let the sample size build before trusting the percentages. A label showing "0% bounced (n=2)" is noise. The N= count is deliberately displayed so you can judge reliability yourself — a consistent reading across a large number of touches is worth attention; a handful is still developing.
 
-Cons:
-- The "AI" label is misleading; it's statistical analysis, not machine learning
-- Useless in choppy markets — it will plot 20 levels and the dots become meaningless noise
-- No alert functionality built-in, which is annoying for a tool that's clearly designed for level-watching
-- The default color scheme is ugly. Red dots on red levels. Spend five minutes in settings.
+Compare across levels. If 0.382 shows a notably lower bounce rate than 0.618 on the same chart, that difference tells you something specific about which pullback depth this market tends to respect, and it's invisible to a plain Fibonacci tool.
 
-**Who Should Install This**
+Use extension hit rates for target selection. If 1.272 has been reached more often than 1.618 across prior breakouts, the first extension is the more realistic target on this chart — an observation about past behavior, not a rule.
 
-Pullback traders and swing traders will get the most value. If your strategy already involves Fibonacci retracements, this saves you the manual work of drawing levels and tracking touches. Day traders on lower timeframes should skip it — the statistics lag too much on 15-minute charts.
+Finally, treat the statistics as context about the past, not a forecast. A high bounce rate at 0.618 means price has historically respected that level here. It is not a promise that the current touch will bounce.
 
-If you're looking for alternatives, the classic "Auto Fib Retracement" by LuxAlgo is more polished but lacks the touch statistics. For a more advanced approach, "Smart Fibonacci Levels" by KivancOzbilgic offers similar confluence detection with better visuals, though it's subscription-based. If you want something completely different, "FVG + Order Blocks" gives you supply/demand zones that often align with the same levels this indicator finds.
+**Trade-offs**
+
+Pros: the statistics layer solves a real problem — knowing which Fib level actually matters on a given instrument — and the labels make that visible at a glance. The visualization is clean, and the per-level N= counts force honest interpretation.
+
+Cons: the "AI" label is misleading and does nothing but invite skepticism. The tool tracks one active grid at a time — the most recent qualifying swing — and statistics are global across all swings since the indicator was added, not per-swing, which is worth understanding before drawing conclusions. On very short timeframes the sample counts build quickly but the measurements may reflect microstructure noise rather than genuine level respect. On very long timeframes it takes extended real-world time to accumulate anything informative.
+
+On repainting: pivots confirm only after the required bars on each side have closed, the swing anchor only updates when a new qualifying pivot confirms, and grading only happens on confirmed bars. The levels and statistics reflect closed-bar history rather than what the current bar is doing.
+
+**Who It's For**
+
+Pullback and swing traders whose strategy already leans on Fibonacci retracement will get the most out of it — it saves the manual work of drawing levels and tracking touches, and the statistics give a concrete read on which depths this market respects. Traders on very fast timeframes should be cautious: the tool is explicitly calibrated for the 15-minute through 4-hour range where Fib levels are actively watched.
 
 **FAQ**
 
-**Does this indicator repaint?** The historical dots don't repaint once confirmed, but the current forming dot can shift until the swing is validated. I recommend waiting for the candle close before acting.
+**Does it repaint?** The script confirms pivots only on closed bars and grades only on confirmed bars, so the historical levels and statistics don't change retroactively. The current, still-forming swing anchor is the part that can shift until a new pivot confirms.
 
-**Can I use it for scalping?** Not recommended. The statistical model needs higher timeframes to generate meaningful touch data.
+**Can I use it for scalping?** The tool itself warns that very short timeframes build sample counts quickly but may measure microstructure noise rather than true level respect. It's designed for the mid-range.
 
-**Is it worth the price?** At the typical $30-50 range for indicators like this, yes. But don't pay extra for the "AI" marketing — you're paying for the statistics engine.
+**Is it worth it?** That depends on whether you already trade Fibonacci retracements. If you do, the statistics engine adds a layer most Fib tools don't have. Pay for the measurement, not the "AI" framing.
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+**Verdict**
 
-This is a genuinely useful tool that earned its four stars through thoughtful design. The 3-touch level respect system solves a real problem — knowing which Fibonacci level actually matters — and the chart visualization makes it easy to spot high-probability setups at a glance. It loses a star for the misleading AI branding and the lack of alerts, but for pullback traders who want to systematize their Fibonacci trading, this is one of the better options on the platform. Just remember: the indicator finds the zones, but you still need to read the price action. No tool replaces that.
+A genuinely useful tool wrapped in overhyped branding. It solves a real problem — knowing which Fibonacci level matters on the chart in front of you — and it's honest enough to show its own sample sizes so you can judge reliability. It loses points for the misleading "AI" label and for the global-across-swings statistics that require some interpretation. For pullback traders who want to systematize their Fibonacci work, it's a reasonable addition. Just remember: the indicator measures the zones, it doesn't read the price action for you.
 
-## Frequently Asked Questions
-
-### Is Auto_Fibonacci_Ai_Level_Respect_Statistics_Dots3Red worth it?
-
-Based on testing across multiple timeframes, Auto_Fibonacci_Ai_Level_Respect_Statistics_Dots3Red delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

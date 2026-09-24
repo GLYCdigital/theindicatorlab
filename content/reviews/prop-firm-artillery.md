@@ -17,87 +17,67 @@ categories:
 rating: 4
 description: "Prop_Firm_Artillery review: tested settings, entry logic, and honest verdict. Does this trend indicator justify its name for prop firm traders?"
 tv_script_url: "https://www.tradingview.com/script/PkUPYbw7-Ultimate-Prop-Firm-Artillery/"
+sources: ["https://www.tradingview.com/script/PkUPYbw7-Ultimate-Prop-Firm-Artillery/"]
 ---
-Let me cut through the marketing. Prop_Firm_Artillery is a trend-following indicator that attempts to solve the biggest problem prop firm traders face: staying in winning trades without giving back profits to the daily drawdown. It's not magic, but it does something most trend indicators don't — it actively manages your position based on your firm's specific risk parameters.
+Ultimate Prop Firm is a pivot-reversal supply/demand strategy built around the risk limits that funded-account traders have to respect. It consolidates the earlier "Ultimate Prop Firm" strategy and its separate "UPF Visual" companion indicator into a single open-source script, so the trading logic and the visual layer now live in one publication. It is not magic, but it does address a real problem most zone-trading scripts ignore: enforcing the daily drawdown, trade-count and session rules that funded accounts require.
 
-## What This Indicator Actually Does
+## What This Strategy Actually Does
 
-The core logic is a multi-layered trend detection system. It combines a fast and slow moving average crossover with a momentum filter and volatility band. What sets it apart is the built-in equity management layer. You input your prop firm's daily loss limit and trailing drawdown percentage, and the indicator generates exit signals when your open trade approaches those thresholds.
+The core logic is reversal trading at recent pivot-based supply and demand zones. Confirmed pivot highs and lows, using left/right bar counts as inputs, define supply and demand levels, which are extended into zones using an ATR multiple.
 
-I tested this on the MACD chart type you see above, which is honestly where it shines. The trend signals align cleanly with MACD histogram expansion, and the equity stops work as a safety net rather than a crutch.
+The long setup requires a confirmed pivot low, price trading down into the demand zone, a bullish bar, RSI above a floor, and volume at or above its moving average. The short setup is the mirror image at a supply zone: confirmed pivot high, price into the zone, bearish bar, RSI below a ceiling, and volume confirmation.
+
+Exits use a three-stage ATR-based take-profit ladder, with partial exits at TP1 and TP2 and the remainder at TP3, plus a common ATR stop and a hard flatten at session end.
+
+Each filter answers a different failure mode of naked zone-trading. The pivot definition keeps zones objective, the RSI floor and ceiling reject entries against collapsing momentum, the volume check rejects dead-tape touches, and the session, drawdown and trade-count rails force the discipline that funded accounts demand. The zones decide where, the filters decide whether, and the rails decide whether you are still allowed to.
 
 ## Key Features That Matter
 
-**The Equity Stop System** — This is the standout feature. Most trend indicators tell you when to enter and exit based on price action. This one also tracks your account equity curve and warns you when a single trade risks blowing your daily limit. For anyone trading a 5% or 10% drawdown rule, this is genuinely useful.
+**The Safety Rails** — This is the standout element for prop-firm-style trading. No new entries are taken once the daily drawdown cap is hit, the max-trades-per-day count is reached, or price is outside the session window. The strategy also forces a flat at session end, so positions are not carried past the close.
 
-**Adaptive Sensitivity** — The indicator has a sensitivity input that adjusts how quickly it reacts to trend changes. At default settings, it's balanced. Crank it up and you'll get more signals but more whipsaws. Lower it and you'll miss early trend moves but avoid choppy markets.
+**Pivot-Based Zones** — Zones come from confirmed pivot highs and lows, with left and right bar counts as inputs, extended into zones using an ATR multiple. Because pivot confirmation requires the right-side bars to close, a zone appears only after its pivot is confirmed, and zones do not repaint once drawn.
 
-**Multi-Timeframe Confirmation** — It pulls in a higher timeframe trend filter. This reduces false signals significantly. I found the BTC/USD 15-minute chart with the 1-hour filter to be particularly effective.
+**ATR-Based Exits** — A three-stage take-profit ladder takes partial exits at TP1 and TP2, with the remainder at TP3, alongside a common ATR stop. Risk per trade is bounded by the ATR stop.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-After running this through several market regimes, here's what worked:
+The script exposes pivot left/right bar counts, an ATR multiple for zone extension, RSI floor and ceiling thresholds, a volume moving average, the ATR stop and take-profit ladder, the daily drawdown cap, the max-trades-per-day count, and the session window. The documented backtest uses a fixed size of one micro futures contract, with defaults tuned for MNQ on the 5-minute chart during the New York session.
 
-- **Sensitivity:** 3 (default is 2, but 3 catches trend reversals earlier without excessive noise)
-- **Equity Stop:** 2% per trade (this aligns with most prop firm daily limits when risking 0.5-1% per trade)
-- **Higher TF Filter:** On (it's off by default, which is a mistake)
-- **Volatility Band:** 1.5 ATR (tight enough to trail profits, wide enough to avoid premature exits)
+Every threshold is an input, and the source is explicit that other symbols or timeframes need their own settings. The visual layers can be switched off in the Visuals input group.
 
-These settings produced a 68% win rate on EUR/USD M15 over a 3-month backtest, though average win was smaller than average loss — classic trend-following profile.
+## What You See On the Chart
 
-## How I Use It
+- Green and red shaded boxes for the active demand and supply zones
+- Triangles and the strategy's own trade markers at entries and exits
+- On each signal: the entry line and price label, dashed TP1/TP2 lines, a gold TP3 line, a solid red stop line, and shaded target and stop zones
+- Background tint for session closed, trending up, trending down, or choppy, based on EMA structure and ADX context
+- A dashboard showing market state, current position, session status, trades left today, volume state, and the active SL/TP3 levels
 
-The entry logic is straightforward. You wait for the trend line to flip color (blue to orange or vice versa), then check for MACD histogram confirmation. The higher timeframe filter must agree. Enter on the next candle open.
+## Behaviour Notes
 
-The exit is where the indicator earns its keep. I set a trailing stop based on the volatility band, but I also watch for the equity warning line. When the indicator flashes the "risk limit" alert, I cut the trade immediately — even if price hasn't hit my stop. That discipline saved me from two separate blown accounts during testing.
+Signals are evaluated on bar close, with no intrabar order generation, no higher-timeframe requests, and no lookahead. Pivot confirmation requires the right-side bars to close, so a zone appears only after its pivot is confirmed, and zones do not repaint once drawn. Three alert conditions are available: long entry, short entry, and end-of-session flatten.
+
+## Backtest Properties
+
+The documented report uses realistic properties for one micro futures contract: 10,000 initial capital, fixed size of one contract, commission of 0.62 per contract per side, 1 tick of slippage, and orders processed on bar close. Risk per trade is bounded by the ATR stop, roughly 1.5 ATR by default, which is a small fraction of capital on a micro contract. Backtest results are historical, vary with the tested window, and do not predict future performance.
 
 ## Pros & Cons
 
 **Pros:**
-- The equity management feature is genuinely unique
-- Clean visual design — signals are obvious at a glance
-- Works across multiple asset classes (I tested crypto, forex, and indices)
-- No repainting — signals don't disappear after they appear
+- The safety rails enforce daily drawdown, trade-count and session limits rather than leaving them to discretion
+- Zones are objective, derived from confirmed pivots rather than drawn by hand
+- The filters are interdependent — zones, momentum, volume and session rules each address a distinct failure mode
+- No repainting once a zone is drawn
+- Original code written with Pine built-ins only, no reused open-source components
 
 **Cons:**
-- The backtest function is basic and clunky
-- It's not a standalone system — you still need to define your own entries
-- The default settings are too aggressive for most prop firm rules
-- No built-in alert for trend reversals (you have to set those manually)
+- Defaults are documented for MNQ on the 5-minute New York session; other symbols and timeframes need their own settings
+- It is not a standalone edge — it is a rules-based reversal process, and results depend on the tested window
 
 ## Who This Is For
 
-This is specifically built for prop firm traders, and it shows. If you're trading a funded account with strict drawdown rules, the equity stop feature alone is worth the price. Swing traders who hold positions for 2-5 days will get the most value. Day traders might find the signals too slow for their style.
+This is built for funded-account and prop-firm-style traders who have to respect a daily drawdown cap, a maximum number of trades per day, a fixed session window and a forced flat at the close. It is an educational and analytical tool for studying a rules-based reversal process. It is not financial advice.
 
-If you're a discretionary trader who doesn't use firm risk limits, you can find cheaper trend indicators with similar signal quality. The equity management won't matter to you.
-
-## Alternatives Worth Considering
-
-- **Supertrend Pro** — Better for quick scalping, but no equity management
-- **Trend Magic** — Cleaner signals but less customizable
-- **MACD Divergence Suite** — Better if you prefer mean reversion over trend following
-
-## FAQ
-
-**Does Prop_Firm_Artillery repaint?**
-No. Signals plot once and stay fixed. I verified this by comparing real-time signals to historical data.
-
-**Can I use it for crypto futures with high leverage?**
-Yes, but the equity stop becomes critical. At 10x leverage, a 2% adverse move can wipe 20% of your account. Adjust the equity stop to 1% or lower.
-
-**Does it work on lower timeframes like M1 or M5?**
-Technically yes, but the signal quality degrades significantly. Stick to M15 or higher for reliable results.
-
-**Is it a complete trading system?**
-No. It's a trend filter with equity management. You still need to handle risk per trade and position sizing yourself.
-
-## Final Verdict
-
-Prop_Firm_Artillery earns its 4-star rating for one reason: it addresses a real problem that most trend indicators ignore. The equity management layer is a thoughtful addition that could genuinely save your funded account. It's not perfect — the backtest tool is weak and the defaults need adjusting — but for prop firm traders who want an extra layer of protection, this is a solid addition to your toolkit.
-
-The name is slightly overpromising. It's not artillery; it's more like a well-placed minefield detector. But sometimes that's exactly what you need.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

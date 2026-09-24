@@ -17,97 +17,104 @@ categories:
 rating: 4
 description: "Edo_Swing_Levels review: an honest look at this swing-high/low trend indicator, its best settings, entry logic, pros, cons, and how it compares to alternatives."
 tv_script_url: "https://www.tradingview.com/script/hzyyjgAQ-Edo-Swing-Levels/"
+sources: ["https://www.tradingview.com/script/hzyyjgAQ-Edo-Swing-Levels/"]
 ---
-Edo_Swing_Levels does one job and mostly does it well: it marks the swing highs and swing lows that define the current trend structure, then draws the horizontal levels those pivots create. No repainting promises, no black-box oscillator, no "AI-powered" nonsense in the description. It's a structural tool. If you trade breakouts, pullbacks, or market structure shifts, that's exactly what you want — and if you're looking for buy/sell arrows, you're in the wrong listing.
-
-I ran it on BTCUSD, EURUSD, and a few large-cap equities across the 15m, 1H, and daily charts to see how the levels hold up. Here's what I found.
+Edo Swing Levels does one job: it marks the swing highs and swing lows that define the current trend structure, then draws the horizontal levels those pivots create. The description makes no repainting promises, no black-box oscillator claims, no "AI-powered" framing. It's a structural tool. If you trade breakouts, pullbacks, or market structure shifts, that's the category it belongs to — and if you're looking for buy/sell arrows, it isn't that.
 
 ## What it actually plots
 
-The indicator identifies pivot points using a lookback-based swing detection method (the classic "highest high / lowest low within N bars" logic), then draws a horizontal line at each confirmed swing. Those lines extend to the right until price breaks them, at which point the level is either invalidated or flips into a support/resistance reference depending on your settings.
+The indicator keeps the last confirmed swing high and swing low and draws a horizontal line at each. The sensitivity of those pivots is set by the Swing Profile: Scalper (5 bars each side), Swing (10 bars, the default), and Long Term (21 bars). The larger the length, the more significant a turn has to be, and the more important and spaced-out the marked levels become. Both levels are projected to the right by a configurable number of bars so they sit ahead of price as live references.
 
-As the chart above shows, the result is a clean ladder of levels rather than a cluttered mess. On a 1H EURUSD chart it typically produces 4–8 active levels at a time, which is manageable. The lines are drawn from the actual pivot bar, not from where the pivot was confirmed, so the visual placement is accurate — an important distinction, since plenty of swing indicators draw levels at the confirmation bar and make structure look shifted.
+The result is a small set of active levels rather than a cluttered chart. The high level is red and the low level teal by default, with a neutral gray until a trend is defined.
 
 ## The feature that separates it from the pile
 
-Most swing indicators are glorified fractals. Edo_Swing_Levels adds one thing that matters: it keeps broken levels on the chart as faded references instead of deleting them. That sounds minor until you're trading retests. Knowing that a level *used* to be resistance and is now being tested as support is the entire basis of breakout-retest trading, and most free indicators throw that history away.
+Most swing indicators treat the swing high and swing low as equivalent. Edo Swing Levels doesn't. It classifies them by bias: in a bullish bias, the low is the Strong level and the high is Weak; in a bearish bias, the high is Strong and the low is Weak. The Strong level is drawn solid, thicker and at full opacity; the Weak level is dashed, thinner and faded. Each line carries a label —Strong High, Weak High, Strong Low or Weak Low.
 
-It also handles level stacking reasonably well. When two pivots form within a few ticks of each other, it merges them into a single zone rather than drawing two lines a pip apart. On the daily chart of a large-cap stock, this cut the level count roughly in half without losing meaningful structure.
+That distinction is the point. The Strong level is the one defending the current trend — the level a trader watches to know whether the trend continues or breaks. The Weak level is the other side, a target rather than a defense. The solid/dashed styling separates, at a glance, the decisive level from the one that is a mere target.
 
-## Best settings I tested
+## Bias and CHoCH
 
-The defaults are usable, but they're tuned for a medium-term swing trader. Here's what I'd change depending on your timeframe:
+The bias is inferred from breaks of structure and is what decides which level is Strong and which Weak. A close above the last swing high turns the bias bullish; a close below the last swing low turns it bearish.
 
-- **Swing length / lookback:** The default sits around 5–10 bars. For intraday (5m–15m), push it to **8–12** — anything lower and you're marking noise as structure. For daily charts, **3–5** is plenty; higher values lag badly on trending instruments.
-- **Extend levels:** Turn this **on** for breakout trading, **off** for clean charting. Extended lines on a busy 5m chart become visual noise fast.
-- **Show broken levels:** Keep this **on**. It's the best feature in the indicator.
-- **Zone merge threshold:** If your instrument has wide spreads (crypto, small caps), increase it slightly so near-identical pivots combine.
+The decisive event is the change of character: when price closes through the Strong level — below the Strong Low in an uptrend, or above the Strong High in a downtrend — the trend that the level defended breaks, the bias flips and the strong level becomes weak. Taking out the Weak level, by contrast, is a simple continuation that confirms the trend without changing it.
 
-One warning: don't set the lookback to 2 or 3 and expect magic. You'll get a level on almost every bar and the indicator becomes useless.
+Breaks are validated on closed bars, so a wick that pierces a level but closes back on the same side does not count as a break.
 
-## How I'd actually trade it
+## Information panel
 
-The logic is straightforward and it's the reason I rate this above average:
+A compact panel under the indicator header shows the market bias (Bullish / Bearish / Neutral) and, for the high and the low, their exact price and whether each is the Strong or Weak level, in the same red/teal color code. The bias row gives the direction; the High and Low rows give the prices and which of the two is the Strong level to watch. The panel sits in any of the four chart corners (Top Right by default), comes in three sizes (Tiny / Small / Normal) and two themes (Dark / Light), and can be hidden entirely. To keep the calculation light, it is drawn only on the last bar.
 
-1. **Trend continuation:** In an uptrend (higher highs, higher lows clearly marked), wait for price to pull back into a prior swing low. Enter on a rejection candle at that level, stop below it, target the next swing high.
-2. **Breakout-retest:** When a swing high breaks, don't chase. Wait for price to return to that broken level and hold. That's your entry, with a stop back below the level.
-3. **Structure shift:** When price breaks a swing low in an uptrend and then fails to make a new high, the trend is weakening. This is a heads-up, not a signal — you still need confirmation from price action.
+## No repainting
 
-None of this is novel, but the indicator makes the levels objective instead of eyeballed, which is the whole point.
+Levels are built on confirmed pivots and breaks are validated on closed bars, so a level never appears or disappears intrabar. There are no higher-timeframe functions: all logic runs on the current chart timeframe. For a multi-timeframe read, apply it on several charts at once.
+
+## Settings and How to Tune Them
+
+The inputs are grouped by block.
+
+- **Structure** sets the swing profile and how many bars the levels are projected to the right.
+- **Style** exposes the high-level and low-level colors, the neutral color, the label size and the Dark/Light theme.
+- **Panel** controls panel visibility, position and size.
+
+The defaults are calibrated to work without adjustment on stocks, crypto, forex, indices and futures, on any timeframe. The input most users touch is the Swing Profile, to set the sensitivity of the levels to their trading horizon.
+
+## Alerts
+
+Four predefined alerts cover the structure read. Strong High taken and Strong Low taken fire on the change of character — when price closes through the Strong level and the trend turns — and are the context alerts. New swing high and New swing low fire when a new level is fixed. All alerts fire on bar close, consistent with the indicator's anti-repaint validation.
+
+## How to read it
+
+Take the Strong level as your invalidation line: while price respects it, trading with the bias has the wind at its back, and its close-through is the signal that the trend has broken. Take the Weak level as your target: in an uptrend price tends to go for the weak high, in a downtrend for the weak low, and the distance between the two levels gives the room available inside the current structure. And treat the taking of the Strong level as the cleanest turn warning — it often marks the start of a new leg in the opposite direction. Pairing it with an HH/HL/LH/LL sequence classification reinforces the read.
 
 ## Where it falls short
 
-The honest weaknesses:
-
-- **It lags by design.** A swing isn't confirmed until N bars pass, so the most recent pivot is always delayed. On fast timeframes this means you're trading levels that are already a few bars old.
-- **No alerts on level breaks** out of the box in the version I tested. You'll need to set them manually or use a companion alert indicator. For a trend tool, that's a real gap.
-- **No trend strength or momentum context.** It tells you *where* structure is, not *how strong* the trend is. Pair it with something like an ADX or a moving average slope if you need that.
-- **Choppy markets produce choppy levels.** In a range, you'll get a cluster of pivots that don't mean much. It doesn't filter for that.
+- **It lags by design.** A swing isn't confirmed until the profile's bar count passes, so the most recent pivot is always delayed. The larger the profile length, the more significant a turn has to be — and the longer the wait.
+- **No trend strength or momentum context.** It tells you where structure is, not how strong the trend is. Pair it with a separate momentum or trend-strength tool if you need that.
+- **Choppy markets produce choppy levels.** In a range, pivots cluster and don't mean much. The indicator doesn't filter for that.
 
 ## Pros and cons
 
 **Pros**
-- Clean, accurate pivot placement
-- Broken levels retained as references
-- Level merging reduces clutter
-- Works across timeframes and asset classes
-- Free and lightweight
+- Distinguishes the trend-defending level from the target level
+- Marks the change of character when the Strong level closes through
+- No repainting: confirmed pivots, closed-bar validation
+- No higher-timeframe functions required
+- Free and open source
 
 **Cons**
 - Inherent lag on pivot confirmation
-- No built-in break alerts
-- No trend-strength filtering
-- Defaults need tuning for intraday
+- No trend-strength or momentum filtering
+- Sensitivity depends on choosing the right Swing Profile for your horizon
 
 ## Who it's for
 
-Discretionary swing and position traders who already read price action and want structure marked objectively. If you trade breakouts, pullbacks, or retests on 1H–daily charts, it fits naturally. Scalpers on 1m–5m will find it too slow. Beginners looking for signals should look elsewhere — this is a framework, not a strategy.
+Discretionary swing and position traders who already read price action and want structure marked objectively. If you trade breakouts, pullbacks, or retests, it fits naturally. Beginners looking for signals should look elsewhere — this is a framework, not a strategy.
 
 ## Alternatives worth considering
 
-- **TradingView's built-in Pivot Points High Low:** Simpler, no level merging, no broken-level retention. Fine if you just want pivots.
-- **LuxAlgo / Smart Money Concepts indicators:** If you want structure *plus* order blocks and liquidity zones, those cover more ground — at the cost of a much busier chart.
-- **Manual horizontal lines:** Honestly, for daily-chart swing traders, drawing your own levels takes two minutes and gives you full control. Edo_Swing_Levels wins on consistency and speed, not on capability.
+- **TradingView's built-in Pivot Points High Low:** Simpler; it marks pivots without the strong/weak classification or the change-of-character read.
+- **LuxAlgo / Smart Money Concepts indicators:** If you want structure plus order blocks and liquidity zones, those cover more ground — at the cost of a much busier chart.
+- **Manual horizontal lines:** For daily-chart swing traders, drawing your own levels gives you full control. Edo Swing Levels wins on consistency and on the strong/weak distinction, not on capability.
 
 ## FAQ
 
-**Does Edo_Swing_Levels repaint?**
-The levels themselves don't move once a pivot is confirmed, but confirmation requires the lookback period to complete, so the most recent level appears with a delay. That's not repainting — it's standard pivot lag.
+**Does Edo Swing Levels repaint?**
+No. Levels are built on confirmed pivots and breaks are validated on closed bars, so a level never appears or disappears intrabar, and a wick that pierces a level but closes back on the same side does not count as a break.
 
 **What timeframe works best?**
-1H and 4H are the sweet spot. Daily works well for position trading. Below 15m the lag becomes a real problem.
+The script runs on the chart's own timeframe with no higher-timeframe functions. The Swing Profile is what you tune to your horizon — Scalper for fast intraday levels on low timeframes, Swing for the balanced 4H and daily read, Long Term for major levels on weekly and higher horizons. For a multi-timeframe read, apply it on several charts at once.
 
 **Is it good for crypto?**
-Yes, but widen the merge threshold — crypto's volatility creates more near-identical pivots that should be combined.
+The defaults are calibrated to work without adjustment on stocks, crypto, forex, indices and futures, on any timeframe.
 
 **Can I get alerts?**
-Not natively for level breaks in the version I tested. You'll need to create them manually or combine it with an alert tool.
+Yes. Four predefined alerts ship with it: Strong High taken and Strong Low taken fire on the change of character, and New swing high and New swing low fire when a new level is fixed. All fire on bar close.
 
 ## Final verdict
 
-Edo_Swing_Levels isn't trying to be clever, and that's its strength. It marks swing structure accurately, keeps broken levels visible, and stays out of your way. The lack of break alerts and trend-strength context keeps it from being a complete toolkit, and the inherent lag means it'll never be a scalping tool. But for swing traders who want objective structure on the chart, it earns its place.
+Edo Swing Levels isn't trying to be clever, and that's its strength. It marks swing structure, tells the trend-defending level apart from the target level, and flags the change of character when the strong level breaks. The absence of trend-strength context and the inherent lag of pivot confirmation mean it won't suit every trader, but for reading objective structure on the chart it does exactly what it says.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a solid, honest structural tool. One star off for missing alerts and zero trend filtering.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -17,49 +17,41 @@ categories:
 rating: 4
 description: "Honest Time_Of_Day_Session_Performance_Stats review: session stats, best settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/Yr3kT0uI-Time-of-Day-Session-Performance-Stats-QuantAlgo/"
+sources: ["https://www.tradingview.com/script/Yr3kT0uI-Time-of-Day-Session-Performance-Stats-QuantAlgo/"]
 ---
-Most session indicators just paint a colored background and call it a day. This one actually does something useful: it breaks down your performance by time of day and session, then overlays that data directly on your chart. I've been running it on a 15-minute MACD setup for the past three weeks, and it's changed how I think about my trading hours more than any "optimal entry time" blog post ever did.
+Most session indicators just paint a colored background and call it a day. The Time-of-Day/Session Performance Stats does something more substantive: it converts historical bars into ranked statistics by hour of day and by session, then overlays the result directly on the chart. It is a time-based analysis tool rather than an entry signal, and its value lies in telling you when markets have historically moved, not when to buy or sell.
 
-Here's what it actually does: the indicator tracks every trade you mark (or that your strategy generates) and buckets it into predefined sessions — Asian, London, New York, or custom windows you define. It then displays win rate, profit factor, average R, and total trades per session right on the chart. The output is a clean stats panel plus a subtle time-of-day heatmap showing which hours historically favor your setup.
+Here's what it actually does: the indicator walks a configurable window of past bars in a selected timezone, assigns each usable bar to its hour of day and to any sessions it falls inside, and accumulates range, volume, directional closes, and drift in parallel. Range can be measured as a percent of close or in raw price units. Hours that fail a minimum bar-count threshold are dropped from every ranking so small samples can't distort the boards.
 
-The killer feature is the session comparison table. Most traders know they trade better at certain hours, but they're guessing based on vibes. This gives you hard numbers. In the chart above, you can see the New York open window showing a 62% win rate versus a 38% win rate in the Asian session — that's the kind of data that makes you stop forcing trades at 2 AM.
+Five ranking boards are produced: Activity (average range), Volume (when the symbol reports it), Bias (percentage of directional bars that closed higher), Drift (mean close-minus-open percentage), and Aggregated (the mean percentile of range, volume, and directional edge). A separate Session Ranking panel orders the four major sessions by average range per bar. The Focus Hours panel translates the Aggregated ranking into four labeled allocation plans plus the single quietest hour to avoid.
 
-**Best settings I've tested:** Keep the default session boundaries (Asian 00:00–08:00, London 08:00–12:00, New York 12:00–16:00 UTC) but switch the display to "Relative R" instead of raw points — it scales better across different instruments. Set the minimum sample size to 30 trades before it shows any stats; otherwise you'll draw conclusions from five lucky trades. The heatmap opacity works best around 40% — anything higher clutters the price action.
+**Settings and How to Tune Them:** Session windows for Sydney, Tokyo, London, and New York can each be enabled or disabled and given custom HHMM-HHMM values in the selected timezone. A weekdays-only filter removes weekend bars for forex, futures, and equities while leaving crypto intact. The Bars To Include setting restricts the study to all bars, any enabled session, or one named session. Range can be expressed as percent of close or raw price units. Overlays are driven independently by any of the rankings or by Focus Hours, with transparency controls to keep the shading obvious or subtle. Six color presets (Classic, Aqua, Cosmic, Cyber, Neon, Custom) apply a continuous gradient from the bullish color at rank 1 to bearish at the last rank; Custom mode exposes individual color pickers with automatic text contrast. There is no single "best" configuration — the appropriate choices depend on your instrument and schedule.
 
-**How I actually use it:** This isn't a standalone entry signal. It's a filter. My MACD strategy fires a crossover signal, but before taking it, I check the session stats panel. If the current time window shows a negative profit factor over the last 50 trades, I skip it. Conversely, when London opens and the stats show a 2.1 profit factor, I size up 50%. The indicator's real power is telling you *when* to be aggressive and *when* to stand aside.
+**How it's meant to be used:** This is a filter, not a standalone signal. The Aggregated ranking and Focus Hours panel are intended to show which windows historically carry the most range, volume, and directional edge, so activity can be concentrated where the data supports it. Divergences between the Bias and Drift boards are often the most interesting readings, since an hour can post a high bull rate yet still show negative drift if its losing bars are larger than its winning ones.
 
 **Pros:**
-- Turns vague "I trade better in the morning" feelings into cold, hard data
-- Session boundaries are fully customizable — you can match your actual life schedule, not just Tokyo/London/NY
-- Works on any timeframe and pairs well with any strategy that produces discrete trade signals
-- The stats panel updates in real time, so you're never looking at stale numbers
+- Turns vague "I trade better in the morning" impressions into ranked statistics
+- Session boundaries are fully customizable, so windows can match any schedule rather than just the standard centers
+- Overlays are computed from a trailing window, so background shading and bar coloring never repaint
+- Built-in alerts cover entry into the peak activity hour, the quietest hour, the peak volume hour, the most bullish or bearish hour, the top Aggregated hour, session opens and closes, and the London-New York overlap
 
 **Cons:**
-- Manual trade marking is tedious if you don't have a strategy that auto-fires alerts
-- The heatmap can be misleading with small sample sizes — I nearly overfit to a 4-trade winning streak in a custom session before I raised the minimum threshold
-- No export function; you're stuck viewing stats inside TradingView
-- It's a trend category indicator, but it doesn't actually help you *find* trends — that's on you
+- Rankings depend on sufficient bar counts per hour; hours below the minimum threshold are dropped entirely
+- On chart intervals above 1 hour, most of the 24 hour buckets never receive a bar and the rankings are incomplete — the indicator displays a warning and recommends switching to 5m, 15m, 30m, or 1h
+- The Volume board is hidden automatically on symbols that report no volume
+- It is an analysis tool, not a trend-finding or entry system
 
-**Who it's for:** This is perfect for systematic traders who already have a defined edge but struggle with execution timing. If you're a discretionary trader who takes 2-3 trades a day and wants to know if your afternoon slump is real, it's worth the install. Skip it if you're a scalper doing 50 trades daily — the session bins are too coarse, and you'd be better off with a tick-based performance tracker.
+**Who it's for:** Traders who already have a defined approach and want ranked insight into when markets actually move. It suits crypto traders running around the clock as well as equity and forex traders working a weekday session schedule. It is less suited to anyone looking for discrete trade signals.
 
-**Alternatives worth considering:** If you want something simpler, "Session Volume Profile" gives you a cleaner visual of when volume and volatility hit without the performance tracking. For algo traders, "Strategy Tester Drawdown" offers more granular trade analytics, but it lacks the session segmentation that makes this one unique.
+**Alternatives worth considering:** Simpler session-shading tools give a cleaner visual of when volume and volatility hit without the ranking and statistics layer. Dedicated trade-analytics tools offer more granular per-trade reporting but lack the hour-of-day and session segmentation that makes this one distinctive.
 
 **FAQ:**
-- *Does it work with backtests?* No — it only tracks live or paper trades you mark, not historical strategy results.
-- *Can I use it on crypto?* Yes, but adjust the session boundaries to UTC+0 and account for the 24/7 market — the standard forex sessions don't map cleanly.
-- *Does it repaint?* No. The stats are based on closed trades, so once a session ends, the numbers are final.
+- *Does it work with backtests?* The indicator analyzes historical bars for its statistics; it is not a strategy tester and does not produce backtest results.
+- *Can I use it on crypto?* Yes. Sessions can be toggled and given custom windows in the selected timezone, and the weekdays-only filter leaves crypto fully intact.
+- *Does it repaint?* No. Chart overlays read a trailing window of the same length rather than the final ranking, so background shading and bar coloring never repaint.
 
-**Final verdict:** The Time_Of_Day_Session_Performance_Stats indicator won't make you a better trader by itself, but it will make you a more honest one. It exposes the uncomfortable truth that your results are highly dependent on when you pull the trigger. For that self-awareness alone, it earns a solid four stars. It loses one star because the manual trade logging is a chore and the small-sample pitfalls require discipline to avoid fooling yourself. If you've got a strategy with a genuine edge and want to optimize execution timing, this is a worthwhile addition to your toolkit. ⭐⭐⭐⭐
+**Final verdict:** The Time-of-Day/Session Performance Stats won't make you a better trader by itself, but it replaces anecdote with ranked statistics. It exposes how much of your result depends on when you're active, and it does so with a non-repainting overlay and a clear set of ranking boards. The main caveats are the interval restriction above 1 hour, the reliance on adequate bar counts per bucket, and the fact that it analyzes rather than signals. For traders with an existing approach who want to optimize execution timing, it is a worthwhile addition to the toolkit. ⭐⭐⭐⭐
 
-## Frequently Asked Questions
-
-### Is Time_Of_Day_Session_Performance_Stats worth it?
-
-Based on testing across multiple timeframes, Time_Of_Day_Session_Performance_Stats delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

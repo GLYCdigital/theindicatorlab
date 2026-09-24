@@ -16,127 +16,114 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Ultimate Oscillator review: settings, divergence strategies, and why it outperforms RSI and Stochastics for momentum trading."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The Ultimate Oscillator is Larry Williams's answer to a problem most oscillators ignore: they only look at one time frame. Standard RSI or Stochastic give you a reading based on the last 14 periods, but they miss the broader momentum context. Williams built this to weigh short, medium, and long-term price action into a single line.
+The Ultimate Oscillator is Larry Williams's answer to a problem most oscillators ignore: they only look at one time frame. Standard RSI or Stochastic give you a reading based on a single lookback, but they miss the broader momentum context. Williams built this to weigh short, medium, and long-term price action into a single line.
 
-In practice, it behaves like a smoothed momentum oscillator that ranges from 0 to 100. The math uses three different lookback periods (default 7, 14, 28) and weights them: 4 parts short-term, 2 parts medium, 1 part long. The result is a line that doesn't whip around as much as a standard Stochastic, but still reacts fast enough to catch moves.
+It behaves like a smoothed momentum oscillator that ranges from 0 to 100. The math uses three different lookback periods and weights them, with the short-term component carrying the most influence and the long-term the least. The result is a line that doesn't whip around as much as a standard Stochastic, but still reacts fast enough to catch moves.
 
-As the chart above shows, you'll see two horizontal lines at 30 and 70 by default—these are the classic overbought/oversold thresholds.
+You'll typically see two horizontal lines marking the classic overbought and oversold thresholds.
 
 ## Key Features That Set It Apart
 
-- **Triple time frame smoothing** – This is the whole point. It blends momentum from 7, 14, and 28 periods so you're not getting false signals from a single window.
-- **Divergence is the real play** – The Ultimate Oscillator was designed *for* divergence. It consistently forms higher highs or lower lows before price does. On the chart, you can spot these with the built-in divergence detection or just by eye.
-- **Customizable weighting** – You can adjust the weights (4,2,1 by default) if you want to emphasize short-term action more or less. I've seen traders use 3,2,3 for a more balanced approach.
-- **No repaint** – Unlike some oscillators that adjust past readings, this one is fixed. Once a bar closes, the value stays.
+- **Triple time frame smoothing** – This is the whole point. It blends momentum from three separate lookback windows so you're not getting signals from a single window.
+- **Divergence is the real play** – The Ultimate Oscillator was designed *for* divergence. It forms higher highs or lower lows before price does, which is what makes it useful for reversal setups.
+- **Customizable weighting** – You can adjust the relative weights of the three components if you want to emphasize short-term action more or less.
+- **Fixed historical readings** – Once a bar closes, its value does not change.
 
-## Best Settings (What I Actually Use)
+## Settings and How to Tune Them
 
-Default settings work for most time frames, but here's where I've found real edge:
+The default configuration uses a short, medium, and long lookback with the short-term component weighted most heavily and the long-term least. Overbought and oversold thresholds sit at the conventional levels.
 
-**For 1H–4H charts (my sweet spot):**
-- Short period: 7
-- Medium period: 14
-- Long period: 28
-- Weights: 4, 2, 1 (keep default)
-- Overbought: 70
-- Oversold: 30
+Tuning comes down to two levers:
 
-**For scalping (5m–15m):**
-- Short period: 5
-- Medium period: 10
-- Long period: 20
-- Weights: 3, 2, 2
-- Overbought: 75
-- Oversold: 25
+- **Lookback periods** – Shortening all three makes the oscillator more responsive and better suited to faster charts. Lengthening them smooths the line and suits slower, higher-timeframe analysis.
+- **Weights** – Shifting weight toward the short-term component makes the line jumpier; shifting it toward the long-term component makes it steadier. Some traders prefer a more balanced weighting than the default.
 
-**For swing trading (daily+):**
-- Short period: 10
-- Medium period: 20
-- Long period: 40
-- Weights: 5, 3, 2
-- Overbought: 65
-- Oversold: 35
-
-The weighting matters more than the periods. I keep 4,2,1 for most pairs because it gives short-term action the loudest voice without drowning out the bigger picture.
+The weighting tends to matter more than the periods. Keeping the default weighting gives short-term action the loudest voice without drowning out the bigger picture.
 
 ## How to Use It for Entries and Exits
 
 ### Divergence (This Is Where It Shines)
 
-The most reliable setup is a **bullish divergence** on the 1H or 4H. Price makes a lower low, but the Ultimate Oscillator makes a higher low. That's your buy signal. I enter on the close of the candle that confirms the divergence, with a stop below the recent swing low.
+The most common setup is a **bullish divergence**. Price makes a lower low, but the Ultimate Oscillator makes a higher low. That's the buy signal. Entry comes on the close of the candle that confirms the divergence, with a stop below the recent swing low.
 
-For exits, I watch for the oscillator to cross back below 70 after a rally. That often marks exhaustion.
+For exits, watch for the oscillator to cross back below the overbought threshold after a rally. That often marks exhaustion.
 
 ### Overbought/Oversold (Use with Caution)
 
-Going long when it's below 30 is tempting, but don't. Wait for it to **cross back above 30** first. That confirms momentum has shifted. Same for shorts—wait for it to drop back below 70.
-
-I tested this on 500+ trades. Buying at exactly 30 without a cross? Win rate dropped to 38%. Waiting for the cross? 62%.
+Going long simply because the oscillator is below the oversold line is tempting, but it isn't the signal. Wait for it to **cross back above** the oversold level first. That confirms momentum has shifted. Same logic for shorts—wait for it to drop back below the overbought level.
 
 ### Bullish/Bearish Failures
 
-If the oscillator pushes above 70, pulls back below 70, then fails to break above 70 on the next push—that's a bearish failure. Short into that. It's rare but powerful.
+If the oscillator pushes above the overbought threshold, pulls back below it, then fails to break above it again on the next push—that's a bearish failure. It's rare but powerful.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Divergence signals are cleaner than RSI or MACD because of the triple smoothing
+- Divergence signals are cleaner than single-timeframe oscillators because of the triple smoothing
 - Less whipsaw than Stochastic on choppy markets
-- No repaint—reliable backtesting
+- Fixed historical readings make it straightforward to evaluate on past bars
 - Customizable weighting gives you control over sensitivity
 
 **Cons:**
 - Can lag in fast breakouts—the smoothing works against you when price rips
 - Overbought/oversold alone is weak; you *must* combine with divergence or trend confirmation
-- Learning curve: most traders don't understand the weighting and just use defaults without adapting
-- Not great on crypto alts or penny stocks—too noisy
+- Learning curve: many traders don't understand the weighting and just use defaults without adapting
+- Not well suited to very noisy, low-liquidity instruments
 
 ## Who It's Actually For
 
-- **Swing traders** on 1H–4H charts who want divergence-based entries
-- **Forex traders** who hate false signals from single-timeframe oscillators
-- **Stock index traders** (SPY, QQQ) where momentum shifts are cleaner
+- **Swing traders** who want divergence-based entries
+- **Forex traders** who dislike false signals from single-timeframe oscillators
+- **Stock index traders** where momentum shifts tend to be cleaner
 
 **Not for:** Scalpers who need instant entries, or beginners who just want a "buy when green, sell when red" indicator.
 
 ## Better Alternatives
 
-- **RSI Divergence** – Simpler, and if you're only trading divergence, RSI with a 14 period does the same job with less noise. But it misses the multi-timeframe context.
+- **RSI Divergence** – Simpler, and if you're only trading divergence, RSI does the same job with less noise. But it misses the multi-timeframe context.
 - **MACD with histogram** – Better for trend-following and momentum shifts. Ultimate Oscillator is better for reversal plays.
 - **Stochastic RSI** – If you want more sensitivity, this is a better choice. But you'll get more false signals.
 
-If you already use RSI effectively, stick with it. If you're tired of RSI giving you divergences that fail, try the Ultimate Oscillator.
+If you already use RSI effectively, stick with it. If you're tired of RSI giving you divergences that fail, the Ultimate Oscillator is worth a look.
 
 ## FAQ
 
-**Q: Does it repaint?**  
+**Q: Do the historical readings change?**
 No. Once a bar closes, the value is fixed.
 
-**Q: Best time frame?**  
-1H to 4H for most traders. Daily is fine too, but signals are less frequent.
+**Q: Best time frame?**
+Higher intraday time frames suit most traders. Daily works too, but signals are less frequent.
 
-**Q: Can I use it alone?**  
-Technically yes, but don't. Combine with support/resistance or a trend filter (e.g., 200 EMA).
+**Q: Can I use it alone?**
+Technically yes, but don't. Combine with support/resistance or a trend filter such as a long moving average.
 
-**Q: Why does it sometimes stay above 70 for hours?**  
-That's normal in strong trends. Don't short just because it's "overbought." Wait for a bearish divergence or a cross below 70.
+**Q: Why does it sometimes stay above the overbought line for hours?**
+That's normal in strong trends. Don't short just because it's "overbought." Wait for a bearish divergence or a cross back below the threshold.
 
-**Q: Can I automate it?**  
-Yes. The logic is straightforward for Pine Script. Many bots use it for divergence detection.
+**Q: Can I automate it?**
+Yes. The logic is straightforward in Pine Script, and divergence detection is a common use case.
 
 ## Final Verdict
 
-The Ultimate Oscillator isn't flashy, and it won't replace a solid trading plan. But it's one of the most reliable divergence tools I've used. If you're tired of RSI giving you false hopes or Stochastic whipping you around, this is a worthy upgrade.
+The Ultimate Oscillator isn't flashy, and it won't replace a solid trading plan. But it's a well-regarded divergence tool. If you're tired of RSI giving you false hopes or Stochastic whipping you around, it's a worthy addition to the toolkit.
 
-It scores 4 stars because it's not a standalone system, and the learning curve trips up new traders. But for anyone serious about momentum reversals, it's a keeper.
+It isn't a standalone system, and the learning curve trips up new traders. But for anyone serious about momentum reversals, it's worth understanding.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Oscillator** implementation was backtested on 30 markets over 5 years of daily data (9,899 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: VIX 76.2%, AUDUSD 59.5%, LTCUSD 58.8%, EURUSD 57.8%
+- Weakest markets: MSFT 42.8%, NVDA 39.8%, SHIBUSD 31.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

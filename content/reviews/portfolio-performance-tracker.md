@@ -16,92 +16,85 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Portfolio_Performance_Tracker review: settings, strategy, and how to use it for tracking multi-asset returns. See if it fits your workflow."
+grounding: "none (no source found)"
+---
+**Description:** A review of the Portfolio_Performance_Tracker indicator — what it does, how it's configured, and who it suits. See if it fits your workflow.
+
 ---
 
-**Description:** Honest Portfolio_Performance_Tracker review: settings, strategy, and how to use it for tracking multi-asset returns. See if it fits your workflow.
-
----
-
-Let me cut through the noise. I’ve been running the **Portfolio_Performance_Tracker** on a mixed basket of crypto, stocks, and forex for the last two weeks. It’s not flashy, no neon lines or magic signals — but it does one thing damn well: show you where your money *actually* is.
-
-Here’s the breakdown from someone who’s tested dozens of portfolio tools.
+Let's cut through the noise. The **Portfolio_Performance_Tracker** isn't flashy — no neon lines or magic signals — but it aims to do one thing well: show you where your money actually is.
 
 ### What This Indicator Actually Does
 
-This isn’t a signal generator. It’s a **real-time dashboard** that tracks P&L, drawdown, and equity curve for up to 10 symbols you define. You feed it your entry prices and position sizes, and it plots your cumulative performance directly on the chart of a base asset (like BTC or SPY).  
+This isn't a signal generator. It's a dashboard that tracks P&L, drawdown, and an equity curve for a set of symbols you define. You feed it entry prices and position sizes, and it plots cumulative performance directly on the chart of a base asset. The visual output is an equity curve plus a floating table showing current profit/loss per position and total return percentage.
 
-The visual output is a clean equity curve + a floating table with current profit/loss per position and total return percentage. No bloat, no repaint.
+### Key Features
 
-### Key Features That Set It Apart
+- **Multi-symbol tracking** on a single chart, displayed against the price action of a chosen base asset.
+- **Customizable entry logic**: entries can be set manually or linked to strategy tester results.
+- **Drawdown analysis**: it highlights peak-to-trough declines in the equity curve, which many free trackers skip.
+- **Lightweight** by design.
 
-- **Multi-symbol tracking** on a single chart: I loaded BTC, ETH, SOL, AAPL, and EURUSD — all displayed against BTC’s price action.  
-- **Customizable entry logic**: You can set entries manually or link them to strategy tester results.  
-- **Drawdown analysis**: It highlights peak-to-trough declines in the equity curve, which most free trackers skip.  
-- **Lightweight**: Zero lag on a 5-minute timeframe with 5 symbols.  
+### Settings and How to Tune Them
 
-### Best Settings for Real Use
+The indicator exposes several inputs worth understanding before you commit to a configuration:
 
-After trial and error, here’s what worked:
+- **Base symbol**: choose the asset you want performance measured against. The most liquid holding in your portfolio is the natural candidate, since everything else is expressed relative to it.
+- **Timeframe**: higher timeframes suit swing holding periods; intraday timeframes suit shorter horizons. Lower timeframes tend to produce noisier readings.
+- **Drawdown threshold**: this marks every point where your portfolio drops by the configured percentage from a high.
+- **Initial capital**: set this to your actual starting figure so position sizing scales correctly.
+- **Display mode**: the table and curve can be shown together; the table alone is cramped.
 
-- **Base symbol**: Use the most liquid asset in your portfolio (I used BTC).  
-- **Timeframe**: Daily for swing trading, 1-hour for intraday. Anything lower gets noisy.  
-- **Inputs**:  
-  - `Drawdown threshold`: Set to 10% — the indicator will mark every time your portfolio drops that much from a high.  
-  - `Initial capital`: Be honest. I used $10,000 and scaled position sizes accordingly.  
-- **Display mode**: “Table + Curve” — the table alone is too cramped.  
+There's no single "best" configuration here — the right values depend on your holding period and how much detail you want on the chart.
 
 ### How to Use It for Entries and Exits
 
-This tool doesn’t give signals. It gives **context**.  
+This tool doesn't give signals. It gives **context**.
 
-- **Entry**: I only add to a position when the equity curve shows a sustained uptrend (higher lows over 5+ bars) and the drawdown is below 5%.  
-- **Exit**: If total drawdown hits 15% in a single session, I close the weakest position (the one with the worst individual P&L in the table).  
-- **Risk management**: The indicator’s peak-to-trough line acts as a trailing stop for your entire portfolio.  
+- **Entry**: a common approach is to add to a position only when the equity curve shows a sustained uptrend (a series of higher lows) and drawdown is modest.
+- **Exit**: when total drawdown reaches a level you've decided is unacceptable, close the weakest position — the one with the worst individual P&L in the table.
+- **Risk management**: the peak-to-trough line can act as a trailing stop for your entire portfolio.
 
 ### Honest Pros and Cons
 
-**Pros:**  
-- Saves you from hopping between tabs to check P&L.  
-- Drawdown visualization is clear — you’ll see exactly when your portfolio bled.  
-- Works with any asset class (stocks, crypto, forex).  
+**Pros:**
+- Saves you from hopping between tabs to check P&L.
+- Drawdown visualization is clear — you'll see when your portfolio bled.
+- Works across asset classes (stocks, crypto, forex).
 
-**Cons:**  
-- **Manual entry setup**: You have to input position sizes each time. No auto-sync with brokers.  
-- **No rebalancing suggestions**: It tracks but doesn’t tell you to trim winners.  
-- **Limited to 10 symbols**: Heavy traders with 20+ positions will feel cramped.  
+**Cons:**
+- **Manual entry setup**: you have to input position sizes each time. No auto-sync with brokers.
+- **No rebalancing suggestions**: it tracks but doesn't tell you to trim winners.
+- **Symbol cap**: heavy traders with many positions will feel cramped.
 
-### Who It’s Actually For
+### Who It's Actually For
 
-- **Swing traders** holding 3–10 positions across different markets.  
-- **Crypto bag holders** who want to see if their altcoin stack is outperforming BTC.  
-- **Anyone tired of spreadsheets** but not ready for paid portfolio software.  
+- **Swing traders** holding a handful of positions across different markets.
+- **Crypto holders** who want to see whether their altcoin stack is outperforming a base asset like BTC.
+- **Anyone tired of spreadsheets** but not ready for paid portfolio software.
 
-### Better Alternatives (If They Exist)
+### Alternatives Worth Considering
 
-For a free indicator, this is solid. But if you want auto-sync and rebalancing:  
-- **TradingView’s built-in Portfolio** (if you use their brokerage).  
-- **Coinigy** (for crypto-only, but costs $30/month).  
+If you want auto-sync and rebalancing, look at:
+- **TradingView's built-in Portfolio** (if you use their brokerage).
+- **Coinigy** (crypto-only, and it costs a monthly fee).
 
 ### FAQ
 
-**Q: Does it repaint?**  
-No. The equity curve updates in real-time but never changes past bars.  
+**Q: Does it repaint?**
+The equity curve updates in real time but does not change past bars.
 
-**Q: Can I use it on futures?**  
-Yes. I tested on ES futures — works fine, but you must manually account for contract multipliers in position size.  
+**Q: Can I use it on futures?**
+Yes, but you must manually account for contract multipliers in position size.
 
-**Q: Why is my total return negative when individual positions are green?**  
-Check the base symbol’s performance. If BTC dropped 20% while your altcoins gained 5%, your net is negative relative to the base.  
+**Q: Why is my total return negative when individual positions are green?**
+Check the base symbol's performance. If the base asset dropped while your holdings gained, your net can still be negative relative to that base.
 
 ### Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
+This indicator won't make you a better trader. But it can make you a *more aware* one. The drawdown tracking is the standout feature. It loses points for the manual setup and the symbol cap.
 
-This indicator won’t make you a better trader. But it will make you a *more aware* one. The drawdown tracking alone is worth the install. Loses one star for the manual setup and 10-symbol cap.  
-
-If you’re tired of juggling five spreadsheets to know your real P&L, grab it. Just don’t expect it to trade for you.
-
----
+If you're tired of juggling spreadsheets to know your real P&L, it's worth a look. Just don't expect it to trade for you.
 
 ## Go Deeper with The Indicator Lab
 

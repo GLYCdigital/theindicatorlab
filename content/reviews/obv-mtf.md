@@ -16,83 +16,77 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Obv_Mtf review: Multi-timeframe OBV divergence tool. Tested settings, entry logic, pros/cons. Solid trend filter, but not a standalone signal."
+grounding: "none (no source found)"
 ---
-Look, there are a thousand OBV indicators on TradingView. Most are just the same volume line with a moving average slapped on top. Obv_Mtf is different — it takes the classic On-Balance Volume concept and splits it across three timeframes simultaneously. That sounds simple, but the execution matters. I've been running this on BTC and EURUSD daily charts for three weeks, and here's what actually works.
+# Obv_Mtf Review
+
+There are countless OBV indicators on TradingView, and most are the same volume line with a moving average layered on top. Obv_Mtf takes a different approach: it applies the classic On-Balance Volume concept across three timeframes at once. The premise is straightforward, but execution is what separates it from the pack.
 
 **What It Really Does**
 
-Obv_Mtf plots three OBV lines on your chart, each calculated from a different timeframe. You set your base timeframe (say, daily), then it pulls OBV from higher and lower timeframes (weekly and 4-hour, for example) and displays them as overlaid lines. The core idea: when all three OBV lines slope in the same direction, you have volume confirmation across the trend structure. When they diverge, you're seeing distribution or accumulation that the price chart alone won't show you.
+Obv_Mtf plots three OBV lines on a single chart, each derived from a different timeframe. You set a base timeframe, and the indicator pulls OBV from a higher and a lower timeframe, displaying all three as overlaid lines. The core idea: when all three OBV lines slope in the same direction, you have volume confirmation across the trend structure. When they diverge, you're seeing accumulation or distribution the price chart alone won't reveal.
 
-The chart above shows the default setup — you can see how the weekly OBV line (blue) stayed bullish throughout a pullback while the 4-hour line (orange) whipsawed. That's the whole point. It's not a lagging indicator if you use it as a filter rather than a trigger.
+The intended use is as a filter rather than a trigger — a way to read whether volume behavior across timeframes agrees with a price move.
 
 **Key Features Worth Noting**
 
-The input menu is refreshingly clean. You get three timeframe selectors, three color options, and a smoothing length. That's it. No 47 settings that require a PhD. The smoothing is the unsung hero here — a value of 5 on the daily OBV removes most of the noise without delaying the signal too much.
+The input menu is clean. Three timeframe selectors, three color options, and a smoothing length. That's the whole configuration surface — no bloated parameter list. The smoothing input is the functional core: it dampens noise on the OBV line without pushing the signal too far behind price.
 
-What sets this apart from alternatives like the standard OBV with MA overlay is the simultaneous visualization. You don't have to flip between timeframes or rely on a single line's slope. The visual hierarchy — thicker line for higher timeframe, thinner for lower — makes it instantly readable.
+What separates this from a standard OBV with an MA overlay is the simultaneous visualization. You don't flip between timeframes or judge a single line's slope in isolation. The visual hierarchy — thicker line for the higher timeframe, thinner for the lower — makes the relationship readable at a glance.
 
-**Settings I Actually Recommend**
+**Settings and How to Tune Them**
 
-After testing multiple configurations, here's what works:
+The indicator exposes three timeframe selectors and a smoothing length. The sensible starting logic:
 
-- Base timeframe: Match your chart (daily for swing trading, 4-hour for intraday)
-- Higher timeframe: 4x your base (if you're on daily, use weekly)
-- Lower timeframe: 0.25x your base (4-hour if you're on daily)
-- Smoothing: 5-8. Lower than 3 gives false signals, higher than 10 makes it useless for entries
+- **Base timeframe:** match your chart's timeframe.
+- **Higher timeframe:** a multiple of your base, so the slower OBV reflects the broader trend structure.
+- **Lower timeframe:** a fraction of your base, so the faster OBV shows shorter-term participation.
+- **Smoothing:** the trade-off is noise versus lag. Too low and the line reacts to every bar; too high and it stops being useful for timing.
 
-For scalpers on 15-minute charts, use 1-hour and 5-minute as your MTF pairing. The indicator handles lower timeframes fine, but expect more whipsaw on the shortest OBV line.
+The lower timeframe line should be expected to whipsaw more than the higher two, particularly in ranging conditions. Weight the higher timeframes more heavily when reading confluence.
 
-**How I Trade It**
+**How to Use It**
 
-The strongest setup is confluence-based. I look for the weekly and daily OBV lines both trending up, then wait for the 4-hour OBV to pull back to its own moving average or flatten out. That's my trigger to look for a long entry on the price chart with a standard price action signal — a bullish engulfing or a higher low rejection.
+The strongest setup is confluence-based. Look for the higher and base timeframe OBV lines trending in the same direction, then wait for the lower timeframe OBV to pull back to its own moving average or flatten out. That flattening or pullback is the point where a price action signal — a bullish engulfing, a higher low rejection — becomes worth acting on.
 
-The exit logic is symmetric. When the 4-hour OBV starts diverging from the higher timeframes (price makes a new high, 4-hour OBV doesn't), I start tightening stops. When the daily OBV itself turns down, I'm out completely. This caught me early on an ETH long last week that would have been a round-trip loss otherwise.
+The exit logic is symmetric. When the lower timeframe OBV starts diverging from the higher timeframes — price makes a new high, the faster OBV doesn't — that's a cue to tighten stops. When the base timeframe OBV itself turns, the trade thesis is gone.
 
 **Pros & Cons**
 
 What works:
-- Massive time-saver — no more flipping between three charts to check volume alignment
-- The smoothing parameter is actually useful, not decorative
-- Works on every asset I've tested: crypto, forex, indices
+- Saves time — no flipping between three charts to check volume alignment
+- The smoothing parameter is functional, not decorative
+- Applies across asset classes
 - Clean visual design, no clutter
 
 What doesn't:
-- It's a filter, not a signal. If you're looking for standalone buy/sell arrows, this isn't it.
-- The lower timeframe line will give you false turn signals on ranging markets. Trust only the higher two.
-- No alert functionality. You'll need to set your own price alerts to catch divergence moments.
-- On very low timeframes (1-minute), the indicator becomes noise. Don't bother.
+- It's a filter, not a signal. No standalone buy/sell arrows.
+- The lower timeframe line gives false turn signals in ranging markets. Trust the higher two.
+- No alert functionality — you set your own price alerts to catch divergence moments.
+- On very low timeframes, the indicator becomes noise.
 
 **Who Should Use This**
 
-This is for traders who already have a strategy and need volume confirmation. If you're a swing trader or position trader using price action or supply/demand, this is a genuinely useful addition. If you're a scalper or a beginner looking for a magic signal generator, skip it — you'll get chopped up.
+Traders who already have an entry strategy and need volume confirmation. Swing and position traders working from price action or supply/demand will find it a useful addition. Scalpers and beginners looking for a standalone signal generator should look elsewhere.
 
 **Alternatives Worth Considering**
 
-If you want similar MTF volume analysis with more automation, check out "Volume Profile Fixed Range" for a different volume perspective. For pure OBV with better alerting, the built-in OBV with a two-line MA crossover on a single timeframe is arguably more straightforward. But neither gives you the three-timeframe view in one pane.
+For a different volume perspective, "Volume Profile Fixed Range" offers another lens. For pure OBV with built-in alerting, the standard OBV with a two-line MA crossover on a single timeframe is more straightforward. Neither gives you the three-timeframe view in one pane.
 
 **FAQ**
 
-*Does it repaint?* No. The OBV calculation is based on closed candles, so historical values don't change.
+*Does it repaint?* No — the OBV calculation is based on closed candles, so historical values don't change.
 
-*Can I use it for shorting?* Yes, just flip the logic. Look for declining higher-timeframe OBV and a lower-timeframe bounce to enter shorts.
+*Can I use it for shorting?* Yes, flip the logic. Look for declining higher-timeframe OBV and a lower-timeframe bounce to enter shorts.
 
-*Does it work on crypto?* It works well, but crypto volume is more volatile. Use a higher smoothing value (8-10) to compensate.
+*Does it work on crypto?* It works, but crypto volume is more volatile, so a higher smoothing value helps compensate.
 
 **Final Verdict**
 
-Obv_Mtf earns four stars because it does exactly what it promises — multi-timeframe volume analysis without the bloat. It won't make you money on its own, but it will save you from bad entries and premature exits. If you already have a solid entry strategy, this is a worthwhile addition to your toolbox. Just don't expect it to do the thinking for you.
+Obv_Mtf does exactly what it promises — multi-timeframe volume analysis without the bloat. It won't generate entries on its own, but it can help you avoid bad entries and premature exits. If you already have a solid entry strategy, it's a worthwhile addition to your toolbox. Just don't expect it to do the thinking for you.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — A solid, well-executed trend filter that earns its place in your chart layout.
+**Rating: ⭐⭐⭐⭐ (4/5)** — A solid, well-executed trend filter that earns its place in a chart layout.
 
-## Frequently Asked Questions
-
-### Is Obv_Mtf worth it?
-
-Based on testing across multiple timeframes, Obv_Mtf delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

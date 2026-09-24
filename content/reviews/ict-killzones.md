@@ -16,96 +16,97 @@ categories:
   - Technical Analysis
 rating: 4
 description: "ICT Killzones marks key intraday sessions for forex and indices. Works best on 5-15 min charts. Clean visuals, no repaint. 4/5."
+grounding: "none (no source found)"
 ---
+# Killzones Indicator Review
 
-I’ve been trading ICT concepts for a while, and the Killzones are the backbone of my session-based entries. This indicator automates the messy part—drawing the boxes—so I can focus on price action inside them. Let’s talk about whether it’s worth your time.
+ICT-style session trading lives and dies by time. The Killzones indicator handles the mechanical part—drawing the session boxes—so attention can stay on price action inside them. Here is an honest look at what it does and where it falls short.
 
 ## What This Indicator Actually Does
 
-It plots colored vertical zones on your chart representing the classic ICT trading sessions: Asian, London, and New York Killzones. Each zone has a start time, end time, and optional fill. The indicator pulls from standard session times (e.g., London open 3:00 AM EST, NY open 8:00 AM EST) and adjusts for DST automatically if you toggle it.
+It plots colored vertical zones on the chart representing the classic ICT trading sessions: Asian, London, and New York Killzones. Each zone has a start time, an end time, and an optional fill. The indicator draws from standard session times and can adjust for daylight saving time automatically when that toggle is enabled.
 
-No repaint. No predictive nonsense. Just time-based rectangles.
+It is a time-based drawing tool. It does not generate signals, and it does not forecast price.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Customizable session offsets** – You can shift start/end times by minutes. Useful if you trade a slightly different open or want to account for news events.
-- **Zone fill opacity control** – From transparent to solid. I keep mine at 30% so I can see candles underneath.
-- **Separate toggle for each Killzone** – Want only NY Killzone? Done. Don’t want Asian? Uncheck it. Most free indicators force all three.
-- **No repaint guarantee** – Once the zone is drawn, it stays. No phantom lines disappearing after the close.
-- **Lightweight** – Doesn’t lag even on 50+ symbol watchlists.
+- **Customizable session offsets** – Start and end times can be shifted by minutes, which is useful if you trade a slightly different open or want to account for news events.
+- **Zone fill opacity control** – Ranges from transparent to solid, so candles underneath can remain visible.
+- **Separate toggle for each Killzone** – Each session can be enabled or disabled independently. Many free indicators force all three on at once.
+- **Lightweight** – Does not appear to lag even on large watchlists.
 
-## Best Settings (What I Actually Use)
+## Settings and How to Tune Them
 
-| Setting | My Recommendation |
+The indicator exposes a small set of inputs rather than a large parameter grid.
+
+| Setting | What It Controls |
 |---|---|
-| **Asian Killzone** | Off (too slow for my style) |
-| **London Killzone** | 3:00 AM – 5:00 AM EST (default works) |
-| **NY Killzone** | 8:00 AM – 10:00 AM EST (shifted +15 min for price to wake up) |
-| **Fill opacity** | 30% |
-| **Zone border** | 1px solid line (not dashed) |
+| **Asian Killzone** | Toggle for the Asian session zone |
+| **London Killzone** | Start/end time for the London session zone |
+| **NY Killzone** | Start/end time for the New York session zone |
+| **Fill opacity** | Transparency level of the zone fill |
+| **Zone border** | Border style (solid vs. dashed) |
+| **DST adjustment** | Automatic daylight saving time shift |
+| **Per-zone color** | Color input for each session zone |
 
-**Pro tip:** If you trade crypto, shift NY Killzone by +30 minutes—BTC often lags the equity open.
+Session start and end times are editable, and offsets can be applied in minutes. Which zones to enable, how transparent to make the fill, and whether to shift the New York window for a particular instrument are all user preferences—there is no single correct configuration. Traders on crypto often note that digital assets do not track traditional forex sessions as cleanly, so adjusting the New York window may be worth experimenting with. Test any offset on your own instrument before relying on it.
 
-## How I Use It for Entries and Exits
+## How It Fits Into a Session-Based Workflow
 
-I only take trades during the **London** and **NY** Killzones. Here’s my process:
+The indicator is a timing filter, not a signal generator. A typical session-based approach might look like this:
 
-1. **Identify the trend** on the 1H chart before the zone opens.
-2. **During the Killzone**, wait for a breakout of the first 15-minute candle’s high/low.
-3. **Enter on a retest** of that breakout level with a 5-minute candle close.
-4. **Target** = prior day’s high/low or a 1:2 risk-reward.
+1. Establish directional bias on a higher timeframe before the zone opens.
+2. During the Killzone, watch for a breakout of an early reference candle's high or low.
+3. Look for a retest of that level with a lower-timeframe close.
+4. Target a prior session's high/low or a fixed risk-reward multiple.
 
-The indicator doesn’t give signals—it just shows *when* I should be looking. That’s its job.
+The indicator's only job in that process is showing *when* to be looking. Everything else is the trader's call.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Saves hours of manual rectangle drawing.
-- DST handling is reliable (tested through March 2026 switch).
-- Works on forex, indices, crypto, commodities.
+- Removes the manual work of drawing session rectangles.
+- DST handling is built in via a toggle.
+- Works across forex, indices, crypto, and commodities as a time overlay.
 
 **Cons:**
 - No volume profile or order flow—strictly time-based.
-- Session times are fixed to EST. If you trade in GMT/UTC, you’ll need to do mental math.
-- Some users want a “next session countdown” label—not included.
+- Session times are anchored to EST, so traders working in GMT/UTC have to convert mentally.
+- No "next session countdown" label.
 
-## Who It’s Actually For
+## Who It's For
 
-- **ICT disciples** – If you follow Inner Circle Trader concepts, this is essential.
-- **Session-based scalpers** – 5-min chart traders who only trade during liquid hours.
-- **Beginners** – Who want to learn session behavior without drawing zones manually.
+- **ICT-focused traders** – Anyone following Inner Circle Trader session concepts will recognize the framework immediately.
+- **Session-based scalpers** – Traders who restrict activity to specific liquid hours.
+- **Beginners** – Useful for learning how session behavior maps to time without drawing zones by hand.
 
-**Not for:** If you trade 1H+ charts or use pure price action without time filters, skip it.
+**Not for:** Traders on 1H+ charts or those using pure price action without any time filter will find little here.
 
-## Better Alternatives
+## Alternatives
 
-- **Killzone Pro** (paid, ~$30) – Adds volume-based zone strength and an audible alert when a zone starts.
-- **Session Volume Profile** (free) – Shows volume during each session, not just time.
-- **Manual rectangles** (free) – If you only trade one session, just draw it yourself.
+- **Killzone Pro** (paid) – Adds volume-based zone strength and an audible alert when a zone begins.
+- **Session Volume Profile** (free) – Shows volume distribution during each session, not just time boundaries.
+- **Manual rectangles** (free) – If you only trade one session, drawing it yourself is trivial.
 
-But for a free, no-nonsense zone marker, I haven’t found a cleaner option.
+## FAQ
 
-## FAQ (Real Questions I’ve Seen)
+**Q: Does it work on crypto?**
+A: Yes, but crypto does not respect traditional forex sessions as cleanly. It is still usable for the New York session on BTC.
 
-**Q: Does it work on crypto?**  
-A: Yes, but crypto doesn’t respect traditional forex sessions as cleanly. I still use it for NY session on BTC.
-
-**Q: Can I change the colors per zone?**  
+**Q: Can colors be changed per zone?**
 A: Yes—each zone has its own color input.
 
-**Q: Will it repaint if I change timeframes?**  
-A: No. Zones are drawn based on time, not price. Switching from 5min to 30min doesn’t affect them.
+**Q: Do the zones change when the timeframe is switched?**
+A: No. Zones are drawn from time, not price, so switching timeframes does not affect their placement.
 
-**Q: Does it work on mobile?**  
-A: Yes, but the zone labels might overlap on small screens. Zoom in.
+**Q: Does it work on mobile?**
+A: Yes, though zone labels may overlap on small screens.
 
 ## Final Verdict
 
-If you trade ICT-style, this indicator is a **4/5**. It does exactly what it promises—marks session times cleanly—and stays out of your way. I docked one star because I’d love a countdown timer and volume integration, but for free, it’s a must-have on any intraday chart.
+For ICT-style session trading, this indicator does exactly what it claims—marks session times cleanly and stays out of the way. The absence of a countdown timer and any volume integration are the main gaps. As a free, no-frills zone marker, it earns a solid recommendation for intraday charts.
 
-**Rating: ⭐⭐⭐⭐**
-
----
+**Rating: 4/5**
 
 ## Go Deeper with The Indicator Lab
 

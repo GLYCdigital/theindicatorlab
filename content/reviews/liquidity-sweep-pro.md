@@ -16,102 +16,90 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Liquidity_Sweep_Pro detects liquidity grabs and sweep patterns. We tested it on AAPL, ES, and BTC. Settings, strategy, and honest verdict inside."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Liquidity_Sweep_Pro is a smart money concept (SMC) tool that identifies where large players are hunting stop losses. It marks zones where price aggressively sweeps through old highs/lows, then reverses. In practice, it's a visual overlay that draws boxes and arrows on your chart whenever it detects a liquidity sweep pattern.
-
-I ran this on AAPL, ES daily futures, and BTC 1H. The chart above shows a clean sweep example on ES — you can see the indicator marked a red box where price dipped below a prior low, then immediately reversed, with a green arrow signaling the sweep was complete.
+Liquidity_Sweep_Pro is a smart money concept (SMC) tool that identifies where large players are hunting stop losses. It marks zones where price aggressively sweeps through old highs or lows, then reverses. In practice, it's a visual overlay that draws boxes and arrows on your chart whenever it detects a liquidity sweep pattern.
 
 ## Key Features That Set It Apart
 
 - **Sweep detection logic** — Not just "price broke a level." It looks for a specific candle structure: a strong move through a key level, followed by a close back inside the prior range. That's the "sweep." Many SMC indicators just paint zones; this one waits for confirmation.
-- **Multi-timeframe awareness** — It can plot higher timeframe sweeps on your current chart. I found this useful on the 15M: it showed me a 1H sweep that was invisible on the lower timeframe.
-- **Alerts** — You can set it to ping when a sweep completes. Saved me from staring at the chart.
+- **Multi-timeframe awareness** — It can plot higher timeframe sweeps on your current chart, so a sweep that formed on a higher timeframe can show up on the timeframe you're trading.
+- **Alerts** — You can set it to ping when a sweep completes.
 - **Customizable zone colors** — You can color sweeps by time (recent vs. older) or by direction (bullish/bearish). Not groundbreaking, but it keeps the chart readable.
 
-## Performance Data (Backtest)
+## Performance Data
 
-I backtested this on AAPL daily data from 2020–2025. Here's what the indicator's signals produced:
+No verified performance figures are available for this indicator. Treat any specific win rate, profit factor, or drawdown claim — from the vendor or from other reviews — as unverified unless you can reproduce it yourself on your own data and settings.
 
-| Metric | Value |
-|--------|-------|
-| Total Trades | 93 |
-| CAGR | +10.3% |
-| Max Drawdown | 23% |
-| Win Rate | 37.6% |
-| Profit Factor | 1.43 |
+## Settings and How to Tune Them
 
-That win rate is low, but the profit factor is solid. It's a low-win-rate, high-RR setup — classic for sweep strategies. The 23% drawdown is manageable for a systematic approach, but you need to size accordingly.
+Out of the box, the indicator tends toward noise. The parameters worth understanding:
 
-## Best Settings & Recommendations
+- **Sweep Sensitivity**: Controls how strict the sweep detection is. Lower values admit weaker sweeps, including moves that stay inside a range day.
+- **Minimum Sweep Distance**: Sets how far price must travel through a level before the sweep counts. Tighter values catch micro-moves that carry little meaning.
+- **Timeframe**: The tool is designed for intraday and swing use. Very low timeframes trigger far more often; higher timeframes produce fewer but larger-context signals.
+- **Show Only Recent Sweeps**: Toggles older sweeps off the chart to reduce clutter.
 
-Out of the box, the indicator is noisy. Here's what worked for me:
-
-- **Sweep Sensitivity**: Set to 70%. Lower than that and you get false sweeps inside range days.
-- **Minimum Sweep Distance**: 0.5% on stocks, 0.25% on futures. Tighter and you catch micro-moves that don't mean anything.
-- **Timeframe**: Best on 15M–1H for intraday. On 5M, it triggers too often. On daily, it's rare but powerful.
-- **Show Only Recent Sweeps**: Check this. Older sweeps clutter the chart.
+These are conceptual descriptions only — no specific parameter values are asserted here, and none should be treated as optimal.
 
 ## How to Use It for Entries and Exits
 
-This is where the indicator shines if you're disciplined.
+This is where the indicator has to be paired with discipline.
 
-**Entry**: Wait for the sweep to complete (green arrow). Then wait for a retest of the sweep zone. Do NOT enter on the arrow alone — that's a common mistake. The arrow is just the alarm. The entry is on a second touch. For example, on ES, I waited for price to sweep below a prior low, arrow fires, then price came back to the zone and held. I entered on a 1M bullish engulfing.
+**Entry**: Wait for the sweep to complete, then wait for a retest of the sweep zone. Entering on the arrow alone is a common mistake — the arrow is the alarm, not the entry. The entry is on a second touch of the zone.
 
-**Exit**: The indicator doesn't give targets. I use a 1.5x ATR stop below the sweep low. For profit targets, I use the next obvious liquidity zone above (prior high). If you're trading sweeps, you're trading into liquidity — don't get greedy.
+**Exit**: The indicator doesn't give targets. A common approach is an ATR-based stop below the sweep low (or above the sweep high for shorts), with profit targets taken at the next obvious liquidity zone — a prior high for longs, a prior low for shorts. If you're trading sweeps, you're trading into liquidity.
 
-**Stop Loss**: Place it just below the sweep low (for long) or above the sweep high (for short). If the sweep was real, price should not revisit that level.
+**Stop Loss**: Place it just below the sweep low (for a long) or above the sweep high (for a short). If the sweep was real, price should not revisit that level.
 
 ## Honest Pros and Cons
 
 **Pros**:
-- Clear visual signals — you can't miss a sweep.
-- Good for identifying reversal zones quickly.
-- Alerts work reliably.
-- Low false-signal rate when tuned properly.
+- Clear visual signals — sweeps are hard to miss once plotted.
+- Useful for flagging reversal zones quickly.
+- Alert support means you don't have to watch the chart continuously.
+- Fewer false signals when the sensitivity is tuned to the instrument.
 
 **Cons**:
 - No built-in target or stop logic. You need to overlay your own risk management.
-- Win rate is low even in a good market. Psychologically tough.
-- Can repaint slightly — the arrow may appear, then disappear if the candle closes differently. I confirmed this by watching live vs. historical. It's minor, but worth noting.
-- Not great for trend-following. It's a counter-trend tool.
+- Signals can be psychologically tough to trade — the strategy profile is low win rate with larger winners.
+- The arrow can appear and then disappear if the candle doesn't close as expected. Treat it as a confirmation tool rather than a real-time trigger.
+- Not a trend-following tool. It is counter-trend by design.
 
 ## Who It's Actually For
 
-This is for traders who already understand liquidity grabs, stop hunts, and SMC. If you're new to these concepts, this indicator will confuse you — you'll take every arrow and get chopped up. If you know what a sweep looks like and just want a tool to spot them faster, this is solid.
+This is for traders who already understand liquidity grabs, stop hunts, and SMC. If you're new to these concepts, the indicator will confuse you — you'll take every arrow and get chopped up. If you already know what a sweep looks like and just want a tool to spot them faster, it's a reasonable fit.
 
-It's NOT for scalpers or anyone trading below 5M. Also not for buy-and-hold investors.
+It's not for scalpers working on very low timeframes, and not for buy-and-hold investors.
 
 ## Better Alternatives
 
-If you want a more complete SMC package, **LuxAlgo's Smart Money Concepts** is more comprehensive — it includes order blocks, FVG, and liquidity levels. But it's also more expensive and slower on the chart.
+If you want a more complete SMC package, **LuxAlgo's Smart Money Concepts** is more comprehensive — it includes order blocks, FVG, and liquidity levels. It's also more expensive and heavier on the chart.
 
-For pure sweep detection, **Sweep & Reversal** by QuantNomad is a free alternative that does 80% of what this does. It's less polished but works.
+For pure sweep detection, **Sweep & Reversal** by QuantNomad is a free alternative covering much of the same ground. It's less polished but functional.
 
 ## FAQ
 
-**Does this indicator repaint?**  
-Yes, slightly. The arrow can appear mid-candle and disappear if the candle doesn't close in the sweep zone. Use it as a confirmation tool, not a real-time entry signal.
+**Does this indicator repaint?**
+The arrow can appear mid-candle and disappear if the candle doesn't close in the sweep zone. Use it as a confirmation tool, not a real-time entry signal.
 
-**Can I use it on crypto?**  
-Yes. I tested on BTC 1H and ETH 15M. Works fine, but crypto's volatility means you get more false sweeps. Raise the minimum sweep distance to 0.5%.
+**Can I use it on crypto?**
+Yes, though crypto's volatility produces more false sweeps, so a wider minimum sweep distance is usually warranted.
 
-**What timeframes work best?**  
-15M to 1H for intraday. 4H for swing. Lower than 5M is noise.
+**What timeframes work best?**
+Intraday through swing timeframes. Very low timeframes are mostly noise.
 
-**Do I need other indicators?**  
-Yes. At minimum, a volume profile or ATR for stop placement. I also overlay a 200 EMA to avoid taking sweeps against the major trend.
+**Do I need other indicators?**
+Yes. At minimum, a volume profile or ATR for stop placement. An overlay like a 200 EMA can also help avoid taking sweeps against the major trend.
 
 ## Final Verdict
 
-Liquidity_Sweep_Pro does one thing and does it well. It's not a magic black box, but if you combine it with solid risk management and a second confirmation (like a retest or candlestick pattern), it can be a reliable part of your toolkit. The backtest on AAPL shows it's profitable in a trending market, but the 37% win rate means you need to trust the process.
+Liquidity_Sweep_Pro does one thing and does it well. It's not a magic black box, but combined with solid risk management and a second confirmation (a retest or candlestick pattern), it can be a useful part of a toolkit. The lack of any exit logic and the possibility of the arrow shifting before the candle closes are the main drawbacks.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**  
-I'm docking one star for the repaint issue and the lack of any exit logic. But for pure sweep detection, it's the best I've tested. Install it, tweak the sensitivity, and use it as a filter, not a standalone system.
-
----
+One star off for the repaint behavior and the absence of exit logic. For pure sweep detection, it's a solid tool — use it as a filter, not a standalone system.
 
 ## Go Deeper with The Indicator Lab
 

@@ -25,7 +25,7 @@ Here's what it actually does, and where it earns its keep.
 
 ## What This Indicator Is
 
-At its core, this is a session-anchored VWAP overlay with three layered systems stacked on top of each other: a session engine, a volume profile engine, and a band-reversal signal system. The description frames it as a response to a specific gap — most VWAP and volume profile tools don't automate higher-timeframe session switching, and they rarely break volume down into bullish versus bearish candle counts per price bin.
+At its core, this is a session-anchored VWAP overlay with three layered systems stacked on top of each other: a session engine, a volume profile engine, and a band-reversal signal system. The author frames it as a response to a specific gap — most VWAP and volume profile tools don't automate higher-timeframe session switching, and they rarely break volume down into bullish versus bearish candle counts per price bin.
 
 That framing is fair. The candle delta distribution boxes are the genuinely distinctive feature here, not the VWAP itself.
 
@@ -61,6 +61,15 @@ Three documented workflows:
 
 The natural pairing is POC plus band rejection: if price rejects an outer band and the delta boxes show one side dominating near that level, you have confluence rather than a lone signal.
 
+## Settings and How to Tune Them
+
+- **Use Auto Timeframe** — targets roughly 200 candles per session when enabled.
+- **Manual Timeframe** — overrides the auto mode with a user-specified higher timeframe.
+- **Manual Bins Count** — fixes the number of price bins instead of letting ATR volatility drive the count.
+- **Band Multiplier (StdDev)** — sets the width of the upper and lower standard deviation channels around the central VWAP.
+
+The description does not specify recommended values for the multiplier or bin count, so treat those as style-dependent. The auto timeframe is the path of least resistance if you don't want to reason about session alignment yourself; the manual bins count is there if you want a fixed profile resolution regardless of volatility.
+
 ## Pros and Cons
 
 **Pros:**
@@ -76,7 +85,7 @@ The natural pairing is POC plus band rejection: if price rejects an outer band a
 
 ## Who It's For
 
-Intraday and swing traders who already think in terms of VWAP and value areas, and who want session automation plus a delta dimension without running two separate scripts. If you're a pure price-action trader who finds profiles noisy, this won't convert you. If you're already anchoring VWAP by hand, it likely will.
+Intraday and swing traders who already think in terms of VWAP and value areas, and who want session automation plus a delta dimension without running two separate scripts. If you're a pure price-action trader who finds profiles noisy, this won't convert you. If you're already anchoring VWAP by hand, it's aimed squarely at you.
 
 ## FAQ
 
@@ -86,13 +95,14 @@ Intraday and swing traders who already think in terms of VWAP and value areas, a
 
 **What does the triangle signal mean?** Price pierced an outer standard deviation band and closed back inside it — a rejection.
 
-**Is the bin count fixed?** No, unless you set it manually. By default it's ATR-driven.
+**Is the bin count fixed?** No, unless you set it manually. Otherwise it's ATR-driven.
 
 ## Final Verdict
 
 The Session VWAP Profile & Candle Delta is a well-architected, genuinely differentiated take on session VWAP. The candle delta distribution is the standout feature and the automation is real. It loses a star for visual density and a signal system that's one-dimensional — mean-reversion only. If your style fits that mold, it's a strong addition.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

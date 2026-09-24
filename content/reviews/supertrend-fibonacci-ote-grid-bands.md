@@ -17,67 +17,66 @@ categories:
 rating: 4
 description: "Supertrend_Fibonacci_Ote_Grid_Bands review: a Supertrend core fused with Fibonacci OTE grid levels. Tested settings, entry logic, and honest pros and cons."
 tv_script_url: "https://www.tradingview.com/script/5MNAEWMW-Supertrend-Fibonacci-OTE-Grid-Bands-BigBeluga/"
+sources: ["https://www.tradingview.com/script/5MNAEWMW-Supertrend-Fibonacci-OTE-Grid-Bands-BigBeluga/"]
 ---
-Most "Supertrend plus something" indicators are a lazy mashup — slap an oscillator on the same pane, call it confluence, ship it. This one is different enough to be worth your time, though it's not without friction. Let me explain what it actually does before you decide.
+Most "Supertrend plus something" indicators are a lazy mashup — slap an oscillator on the same pane, call it confluence, ship it. This one is different enough to be worth a look, though it's not without friction. Here's what it actually does before you decide.
 
 ## What this indicator actually is
 
-Two engines running on one overlay. The first is a standard Supertrend — ATR-based trailing stop that flips direction when price closes beyond the band. Nothing new there, and I'd be suspicious of anyone claiming otherwise.
+Two engines running on one overlay. The first is Supertrend mechanics — volatility-scaled stop lines computed from ATR parameters, plotted as colored stop-loss streams with gradient area fills. That part is conventional.
 
-The second engine is where the name earns its keep. It plots a Fibonacci OTE (Optimal Trade Entry) grid — the 0.618 to 0.79 retracement zone, with the 0.705 "sweet spot" typically marked — and layers grid bands across that zone. When the Supertrend flips bullish and price pulls back into the OTE grid, you get a visual confluence signal that most trend-following indicators don't give you.
+The second engine is where the name earns its keep. It offers two Fibonacci modes: an anchored OTE grid that projects retracement levels across the active trend swing, and continuous Fibonacci channel bands scaled by ATR. In OTE Grid mode, the script draws levels at 0.0, 0.236, 0.382, 0.500, 0.618, 0.705, 0.786, and 1.000, with a shaded Optimal Trade Entry zone between the 0.618 and 0.786 levels.
 
-That's the real product: a trend filter that tells you *where* to enter, not just *which direction*.
+That's the real product: a trend tool that maps retracement structure, not just direction.
 
-## How the Fibonacci OTE layer changes things
+## How the Fibonacci layer changes things
 
-A plain Supertrend gives you a flip signal on the candle that closes through the band. By then, the move is often extended. You're buying strength into a likely pullback, and if you're a discretionary trader, you get shaken out on the mean reversion that follows.
+A plain Supertrend gives you a flip signal on the candle that closes through the band. By then, the move is often extended, and the pullback that follows can shake out a discretionary trader.
 
-The OTE grid fixes this by anchoring to the most recent swing leg. Once the Supertrend flips, the grid projects the 0.618–0.79 retracement zone of that impulse. Now you have a defined pullback area to wait for instead of chasing the flip candle.
+The OTE grid addresses this by anchoring to the most recent trend swing. The script tracks trend highs and lows on direction flips to anchor the Fibonacci calculations, so you have a defined retracement area to monitor rather than chasing the flip candle.
 
-As shown in the chart above, the grid bands sit behind price like a landing zone. Price enters, you look for a rejection candle or a lower-timeframe confirmation, and you enter with the Supertrend as your trend thesis and the 0.79 level as a natural invalidation.
+In practice, the grid bands sit behind price like a landing zone. Price enters, you look for a rejection candle or lower-timeframe confirmation, and you treat the Supertrend as your trend context with the 0.786 level as a natural invalidation reference.
 
-## Best settings I tested
+## Settings and How to Tune Them
 
-I ran this across BTCUSD 1H, ES 5-minute, and EURUSD 15-minute. Here's what held up:
+The indicator groups its inputs into several sections:
 
-- **Supertrend ATR period:** 10 (default 10 works; 7 makes it too twitchy, 14 too slow for intraday)
-- **ATR multiplier:** 3.0 for 1H and above, 2.0 for 5-minute scalping
-- **Swing lookback for Fib anchor:** 20 bars is the sweet spot. Below 10 and the grid redraws constantly — annoying and unreliable.
-- **OTE zone:** leave at 0.618–0.79 unless you're trading crypto, where 0.5–0.786 catches more setups
-- **Show grid bands:** on for visual traders, off if you want a clean chart and just the zone edges
+- **General Settings:** Select between OTE Grid and Fibonacci Bands modes, toggle right-edge price/ratio labels, choose grid line styles (Solid, Dotted, Dashed), adjust grid highlight distance thresholds via ATR multipliers, and enable dimming for non-OTE levels.
+- **Supertrend Parameters:** Configure the ATR Period and Multiplier to adjust the sensitivity and distance of the core stop-loss line.
+- **Fibonacci Bands Parameters:** Define the ATR period and outer band multiplier used specifically in Fibonacci Bands mode.
+- **Main Styling & Colors:** Set bullish and active price highlight colors, and toggle bar/candle coloring based on the active trend direction.
+- **Fibonacci Level Settings:** Enable or disable individual Fibonacci ratios (0.000, 0.236, 0.382, 0.500, 0.618, 0.705, 0.786, 1.000) and customize their individual display colors.
 
-One warning: on the 1-minute, the grid repaints within the forming bar. It's not a repainting indicator in the classic sense — closed-bar values are fixed — but the anchor can shift when a new swing high/low prints. Don't trade the live grid on the lowest timeframes without waiting for bar close.
+The documentation does not specify recommended values for any of these inputs — the ATR period, multiplier, and highlight thresholds are left to the user's discretion.
 
-## Entry and exit logic that actually works
+## How to use it
 
-The clean sequence:
+The script's own guidance lists three application patterns:
 
-1. Wait for a Supertrend flip (color change on the line).
-2. Mark the OTE grid zone that appears.
-3. Do nothing until price retraces into the 0.618–0.79 band.
-4. Enter on the first bullish/bearish rejection candle inside the zone.
-5. Stop below the 0.79 level (long) or the swing low, whichever is tighter.
-6. Trail with the Supertrend line.
+1. **Follow trend momentum:** Stay aligned with prevailing market direction by monitoring the Supertrend line color and trend-colored candles/bars.
+2. **Identify OTE retracement zones:** In OTE Grid mode, monitor the shaded zone between the 0.618 and 0.786 Fibonacci levels for potential trend continuation entries during pullbacks.
+3. **Track key level interactions:** Watch for automatic color highlights and width changes on grid levels as price approaches critical Fibonacci thresholds.
 
-The exit is the elegant part — you're using the same indicator for entry location and trail management. That's rare and it's the reason I'm rating this a 4 instead of a 3.
+The exit logic follows naturally — the same Supertrend line that defines trend direction can serve as a trailing reference, so entry location and trail management come from one overlay.
 
-The losing pattern: entering on the flip itself without waiting for the pullback. You'll get chopped. I did it twice testing this on ES and both trades stopped out before the real move.
+The pattern that tends to fail is entering on the flip itself without waiting for the pullback. The script is designed around retracement entries, and treating it as a pure breakout tool works against its construction.
 
 ## Pros and cons
 
 **Pros:**
-- Genuine confluence — trend direction plus entry zone in one overlay
-- Fib anchor is automatic, so you're not manually dragging retracement tools
-- Bands give the OTE zone visual weight without cluttering the chart
-- Same indicator manages the trade from entry to trail
+- Genuine confluence — trend direction plus retracement zone in one overlay
+- Fibonacci anchoring is automatic, so you're not manually dragging retracement tools
+- Shaded OTE zone gives the 0.618–0.786 area visual weight without cluttering the chart
+- Supports bar and custom candle coloring, adjustable line styles, and dynamic right-edge price labels
+- Price proximity highlighting dynamically adjusts line width and color as price approaches levels
 
 **Cons:**
-- Swing anchor can repaint on the forming bar
-- No alerts for "price entered OTE zone" — a real miss for alert-driven traders
+- The swing anchor can shift when a new trend extreme prints, so the live grid should be treated as provisional
+- The documentation does not list alerts, which is a gap for alert-driven traders
 - Two concepts stacked means two learning curves
-- On ranging markets, the Supertrend flips constantly and the grid becomes noise
+- In ranging conditions, Supertrend flips frequently and the grid can become noise
 
-That last point is the killer. In chop, this thing will produce more false flips than a plain moving average crossover. You need a regime filter — I used a simple ADX above 20 on a separate pane — or you'll bleed.
+That last point matters. Without a regime filter, choppy markets will produce frequent false flips. A separate trend-strength measure on another pane can help you decide when to trust the setup.
 
 ## Who this is for
 
@@ -92,23 +91,22 @@ Swing and intraday traders who already understand Supertrend and want a systemat
 
 ## FAQ
 
-**Does it repaint?** Closed-bar values are fixed. The live swing anchor can shift intrabar, so treat the forming grid as provisional.
+**Does it repaint?** The script does not make a repainting claim either way. The trend extreme tracking updates on direction flips, so the live swing anchor can shift intrabar — treat the forming grid as provisional.
 
-**Does it work on crypto?** Yes, but widen the OTE zone to 0.5–0.786. Crypto retracements are shallower than the classic 0.618–0.79.
+**Does it work on crypto?** The script is described as suitable across various timeframes and asset classes, but it does not make asset-specific claims about which Fibonacci ratios suit which market.
 
-**Can I use it for scalping?** Only on 5-minute and above with alerts off. Below that, the anchor noise outweighs the signal.
+**Can I use it for scalping?** The documentation does not specify timeframe recommendations. What it does offer is configurable ATR sensitivity, which you can adjust to your instrument and timeframe.
 
-**Why no alerts?** That's the question I'd ask the author too. It's the single biggest gap.
+**Does it have alerts?** The official description does not list alert functionality, so plan accordingly if you rely on alerts.
 
 **Does it replace a full strategy?** No. It's an entry-location tool layered on a trend filter. Position sizing, risk, and regime detection are still on you.
 
 ## Final verdict
 
-This is a thoughtful mashup that solves a real problem — Supertrend tells you direction, but it never told you where to enter. The OTE grid fixes that, and the automatic Fibonacci anchoring is genuinely useful. The repaint caveat on the live bar and the missing zone-entry alerts keep it from being exceptional, and it falls apart in ranging conditions without a filter.
+This is a thoughtful mashup that solves a real problem — Supertrend tells you direction, but it never told you where to enter. The OTE grid addresses that, and the automatic Fibonacci anchoring is genuinely useful. The swing-anchor behavior on the forming bar and the apparent absence of zone-entry alerts keep it from being exceptional, and it can fall apart in ranging conditions without a filter.
 
-Install it if you're a pullback trader who already respects Supertrend. Skip it if you want alerts, or if you scalp the 1-minute.
+Install it if you're a pullback trader who already respects Supertrend. Skip it if you rely on alerts, or if you need asset-specific tuning guidance the documentation doesn't provide.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

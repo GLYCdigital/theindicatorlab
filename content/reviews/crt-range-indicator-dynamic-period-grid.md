@@ -17,85 +17,79 @@ categories:
 rating: 4
 description: "Crt_Range_Indicator_Dynamic_Period_Grid tested: A dynamic support/resistance grid that adapts to volatility. Settings, pros/cons, and honest verdict inside."
 tv_script_url: "https://www.tradingview.com/script/JVMlgA3j-CRT-Range-Indicator-Dynamic-Period-Grid/"
+sources: ["https://www.tradingview.com/script/JVMlgA3j-CRT-Range-Indicator-Dynamic-Period-Grid/"]
 ---
-I’ll be straight with you: most “range” indicators are just moving averages dressed up with fancy colors. This one isn’t. The Crt_Range_Indicator_Dynamic_Period_Grid actually builds a dynamic grid of support/resistance levels that adapts its period length based on market conditions. After a week of testing it on BTCUSD, EURUSD, and NQ1! — here’s the honest breakdown.
+I’ll be straight with you: most “range” indicators just redraw old highs and lows with fancy colors. This one is different in intent. The CRT Indicator [Dynamic Period Grid] is built around Candle Range Theory and liquidity concepts, and it frames a higher-timeframe range on your execution chart instead of leaving a mess of historical lines behind.
 
 ## What This Indicator Actually Does
 
-It plots a series of horizontal levels (the “grid”) above and below price, but here’s the twist: the period used to calculate each level isn’t fixed. The indicator dynamically adjusts the lookback window based on recent volatility, so in choppy markets the grid tightens, and in trending conditions it widens. You get a living structure rather than static lines drawn months ago that no longer mean anything.
+The script looks at your chosen Higher Timeframe — say the 1-Hour chart — and establishes the High and Low of the most recently closed candle. That’s the Master Candle, and its range becomes the grid.
 
-The chart above shows it on MACD timeframe settings — that’s the default chart type I tested with. Notice how the grid levels repriced themselves during the high-volatility session in the middle of the screenshot while staying relatively stable during the quiet Asian session. That’s the dynamic period doing its job.
+It then draws a clean bounding box around that range on your current lower timeframe — say the 15m chart. As long as subsequent HTF candles form inside the range, the box expands to the right, dropping a new vertical grid line to mark the passage of each new HTF period. The Master Range is only considered broken if a HTF candle closes outside the boundaries. On a true close, the old grid is wiped away and a brand new Master Range is established.
+
+So the point isn’t a static level drawn months ago. It’s a live frame around the current HTF accumulation and manipulation phases, projected down onto the timeframe you actually execute on.
 
 ## Key Features That Stand Out
 
-Three things separate this from the pack:
+Three things define this tool:
 
-1. **Volatility-adaptive periods** — The core mechanic. Levels don’t just update; their calculation window changes. This means the indicator respects regime shifts automatically.
-2. **Clean grid visualization** — No clutter. You can toggle the number of levels shown, and the lines have a subtle opacity option that keeps your chart readable.
-3. **Multi-timeframe capable** — While it works on any timeframe, it’s genuinely useful on higher timeframes (4H and above) for swing trading levels.
+1. **Liquidity Grab Detection (the Latch System)** — If price wicks past the range boundary but fails to close outside it, the indicator permanently latches a warning onto the chart. The breached horizontal line changes to your designated Breach Color, and the text label updates to explicitly call out a “(Liquidity Grab)”.
+2. **Dynamic Grid Expansion** — The internal vertical lines keep your lower timeframe synced with the higher timeframe’s pacing, so you aren’t guessing where you are in the session.
+3. **Unified, clean visuals** — The base grid stays a single solid color, defaulted to Yellow. Only levels that have been tested or swept change color, so your eye goes exactly where it needs to.
 
-## Best Settings I Found
+One more point worth flagging: the indicator is described as repaint-free multi-timeframe, built with secure historical data referencing so it plots accurately in real-time without looking into the future or repainting historical data.
 
-After testing, here’s what worked:
+## Settings and How to Tune Them
 
-- **Grid Levels: 5** (default is 7, but fewer lines = less noise)
-- **Dynamic Period Sensitivity: 2** — This controls how aggressively the period adjusts. 1 is too slow, 3 starts flipping levels too often.
-- **Use Close Price: On** — For the level calculations. Using high/low makes the grid too jumpy.
-- **Timeframe: 4H or higher** — On lower timeframes (5m/15m), the grid repaints too frequently for my taste.
+- **Master Timeframe** — Select the HTF you want to define your range (e.g., 60 for 1H, 240 for 4H). The text labels update automatically to reflect your choice.
+- **Base Line/Text Color** — Customize the default color of the unbroken range grid.
+- **Breach Colors** — Fully customize the visual alerts for when buy-side or sell-side liquidity is swept (e.g., Green for a high sweep, Red for a low sweep).
+- **Line Styles & Widths** — Toggle between solid, dashed, or dotted lines to fit your chart aesthetic.
+
+There is no sensitivity slider, no level-count parameter, and no calculation-window tuning here — the grid is defined by the HTF candle range, not by a volatility model you dial up or down.
 
 ## How to Use It (Entry/Exit Logic)
 
-This isn’t a buy/sell signal indicator. It’s a structure tool. Here’s how I traded it:
+This isn’t a buy/sell signal indicator. It’s a structure tool. The documented approach is the sweep trade:
 
-**Long setup:** Price pulls back to a grid level that coincides with a previous swing low or key moving average. Wait for a bullish candle close above the grid line, then enter. Place your stop just below the grid line — that’s your invalidation.
+**Trading the sweep:** Wait for the boundary line to change color and display “(Liquidity Grab)”. Once the sweep is confirmed and price rejects back inside the grid, target the opposite side of the Master Range.
 
-**Short setup:** Mirror image. Price rallies into a grid level near resistance, look for bearish confirmation, enter on the rejection candle.
-
-**Profit targets:** The next grid level is your natural target. That’s the beauty — you don’t need to guess where the move ends. The grid gives you predetermined exit zones. I found taking partial profits at each level and trailing the rest works best.
+The distinction the tool is built to make is between a true structural breakout — a HTF candle closing outside the range — and a liquidity sweep, where price wicks past the boundary but closes back inside. That is the core read.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely dynamic — adapts to volatility without manual recalibration
-- Clean visual output that doesn’t clutter your chart
-- Levels align well with actual price reactions, especially in ranging markets
-- Works well as a confluence tool alongside trendlines or order blocks
+- Frames the active HTF range on your execution timeframe without endless historical lines
+- Explicitly separates true closes outside the range from wick-only liquidity grabs
+- The latch system keeps swept levels marked rather than letting them scroll away
+- Base grid stays a single color, so only tested levels draw your attention
 
 **Cons:**
-- Not a standalone strategy — you need price action confirmation
-- On lower timeframes, the grid can feel laggy during fast moves
-- No alerts on level touches (major miss — I had to set manual alerts)
-- The dynamic period logic is a black box; no way to see which period is being used per level
+- It is not a standalone strategy — the documented use requires waiting for a sweep and a rejection back inside
+- The breakout reset depends entirely on HTF closes, so the grid only changes when a new HTF candle closes outside
+- It is a structural framing tool, not a signal generator
 
 ## Who It’s For
 
-This suits **swing traders and position traders** who trade 4H or daily charts. If you’re a scalper, look elsewhere. Day traders could use it for intraday levels on the 15M, but honestly, you’ll find it too slow to react in fast markets. It’s also a solid choice for traders who use multiple confluences — the grid pairs beautifully with supply/demand zones or Fibonacci retracements.
-
-## Alternatives Worth Considering
-
-If you want something similar but more aggressive, **VWAP bands** give you dynamic support/resistance with a different calculation method. **Auto Fib Retracement** does something similar for harmonic levels. And if you just want clean static levels, **Session High-Low** indicators are simpler and free. This grid sits between those two worlds — dynamic but not chaotic.
+This is for traders who already work with Candle Range Theory and liquidity concepts, and who execute on a lower timeframe while defining structure on a higher one. If you don’t already think in terms of HTF range, sweep, and close-back-inside, the grid won’t hand you a thesis — it will just frame one.
 
 ## FAQ
 
 **Q: Does the indicator repaint?**
-A: The levels recalculate as new data comes in, but they don’t retroactively change past values. So no, it doesn’t repaint in the classic sense.
-
-**Q: Can I use it on crypto?**
-A: Yes, I tested on BTC and ETH. Works fine, though crypto’s 24/7 market means the dynamic period reacts differently — expect more frequent level changes.
-
-**Q: What’s the best timeframe?**
-A: 4H and 1D are where it shines. Lower timeframes produce a noisy grid that’s hard to trade.
+A: The script is described as repaint-free multi-timeframe, using secure historical data referencing so it plots accurately in real-time without looking into the future or repainting historical data.
 
 **Q: Does it give buy/sell signals?**
-A: No. It provides structure only. You supply the entry logic.
+A: No. It provides structure. The documented workflow is to wait for a confirmed sweep and rejection back inside the grid, then target the opposite side of the Master Range.
+
+**Q: What defines a breakout versus a sweep?**
+A: A breakout is a HTF candle closing outside the Master Range boundaries, which wipes the old grid and starts a new one. A sweep is a wick past the boundary with no close outside, which latches a “(Liquidity Grab)” label and recolors the breached line.
 
 ## Final Verdict
 
-The Crt_Range_Indicator_Dynamic_Period_Grid earns a solid 4 stars. It does one thing — dynamic support/resistance levels — and does it well. The lack of alerts and the opacity of its calculation method keep it from a perfect score, but for swing traders looking for adaptive structure, it’s a genuinely useful addition to your toolkit.
+The CRT Indicator [Dynamic Period Grid] does one job: it tracks the active HTF Master Range, expands the grid forward as new HTF periods form inside it, and resets only on a true close outside. The latch system gives it a genuine edge over plain range boxes, because swept liquidity stays marked instead of vanishing.
 
-It’s not a holy grail. Nothing is. But as a confluence tool that respects volatility shifts, it earns its place on your chart. If you’re tired of static levels that feel disconnected from the current market, give this one a shot.
+It’s not a holy grail, and it isn’t pitched as one. It’s a structural framing tool for traders who already read liquidity. If your charts are cluttered with stale levels that no longer mean anything, this is a cleaner way to see the range that currently matters.
 
-⭐⭐⭐⭐ (4/5) — Recommended for swing traders who want adaptive levels without the clutter.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

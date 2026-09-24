@@ -16,10 +16,10 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Heikin_Ashi_Candles review: how to use Heikin Ashi for trend filtering, best settings, entry/exit signals, and why it’s not a standalone system."
+grounding: "none (no source found)"
 ---
-
 **Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-A solid trend-filtering tool that cleans up noise—but don’t mistake it for a crystal ball. If you already use Heikin Ashi, this indicator does it with less clutter than most built-in alternatives.
+A solid trend-filtering tool that cleans up noise—but don't mistake it for a crystal ball. If you already use Heikin Ashi, this indicator does it with less clutter than most built-in alternatives.
 
 ---
 
@@ -30,7 +30,7 @@ Heikin_Ashi_Candles recalculates candlestick data using a modified formula:
 - **Close** = (open + high + low + close) / 4  
 - **High/Low** = extreme values from the modified set.
 
-The result? Smoother candles that filter out intraday noise. As the chart above shows, you get fewer false wicks and clearer trend direction. It’s not a new indicator—it’s a *different lens* for price action.
+The result? Smoother candles that filter out intraday noise. You get fewer false wicks and clearer trend direction. It's not a new indicator—it's a *different lens* for price action.
 
 ---
 
@@ -40,18 +40,19 @@ The result? Smoother candles that filter out intraday noise. As the chart above 
 - **Clean visual**: No extra lines, no alerts—just the candles. Perfect for traders who hate clutter.  
 - **Built-in color logic**: Bullish candles are green, bearish are red. Simple, but effective for quick scanning.  
 
-What’s missing? No volume overlay, no divergence detection, no alerts. It’s intentionally minimal.
+What's missing? No volume overlay, no divergence detection, no alerts. It's intentionally minimal.
 
 ---
 
-## Best Settings (I’ve Tested These)
+## Settings and How to Tune Them
 
-Stick with defaults unless you’re scalping:  
-- **Timeframe**: 1H or 4H for swing trading. Lower timeframes (5M, 15M) create too many false reversals.  
-- **Color scheme**: Keep default green/red. Don’t change to blue/orange—it breaks pattern recognition.  
+The indicator's settings are limited, and the defaults are a reasonable starting point.
+
+- **Timeframe**: Choose based on your trading style. Higher timeframes tend to produce fewer false reversals; lower timeframes tend to produce more.  
+- **Color scheme**: The default green/red is what most traders are visually conditioned to read. Changing colors is possible but alters the pattern recognition you've built up.  
 - **Overlay**: Keep it on the main chart, not a separate pane. Heikin Ashi needs price context.
 
-**Pro tip**: Use it as a secondary chart—apply Heikin Ashi to a separate TradingView window, not your main price chart. This avoids confusing regular candles with smoothed ones.
+**Tip**: Consider using it as a secondary chart—apply Heikin Ashi to a separate TradingView window, not your main price chart. This avoids confusing regular candles with smoothed ones.
 
 ---
 
@@ -66,7 +67,7 @@ Stick with defaults unless you’re scalping:
 - Or when the first red candle appears after a green streak.  
 
 **Avoid**:  
-- Trading against the Heikin Ashi trend. If candles are consistently red, don’t try to catch a bottom.  
+- Trading against the Heikin Ashi trend. If candles are consistently red, don't try to catch a bottom.  
 - Using it on news events—the smoothing effect masks sudden volatility.
 
 ---
@@ -79,21 +80,21 @@ Stick with defaults unless you’re scalping:
 - Free and lightweight—no heavy calculations.  
 
 **Cons**  
-- **Not real price data**. You can’t set stop-losses based on Heikin Ashi levels. Always use regular candles for actual entries/exits.  
-- **Whiplash in ranging markets**. It’ll flip colors constantly when there’s no trend.  
+- **Not real price data**. You can't set stop-losses based on Heikin Ashi levels. Always use regular candles for actual entries/exits.  
+- **Whiplash in ranging markets**. It'll flip colors constantly when there's no trend.  
 - No customization beyond colors. If you want alerts or multi-timeframe analysis, look elsewhere.
 
 ---
 
-## Who It’s Actually For
+## Who It's Actually For
 
 **Best fit**:  
 - Swing traders who want a cleaner view of trend direction.  
-- Traders who already use Heikin Ashi but hate the built-in TradingView version’s clunky settings.  
+- Traders who already use Heikin Ashi but hate the built-in TradingView version's clunky settings.  
 
 **Not for**:  
 - Scalpers—the smoothing hides micro-moves.  
-- Beginners who think “green candle = buy.” You’ll get wrecked in sideways markets.
+- Beginners who think "green candle = buy." You'll get wrecked in sideways markets.
 
 ---
 
@@ -110,28 +111,36 @@ If you want the same smoothing with alerts, try **Heikin Ashi Smoothed** by @Pin
 ## FAQ
 
 **Q: Can I set stop-losses with Heikin Ashi candles?**  
-No. Use regular candles for stop placement. Heikin Ashi prices are synthetic—they don’t represent actual market trades.
+No. Use regular candles for stop placement. Heikin Ashi prices are synthetic—they don't represent actual market trades.
 
 **Q: Does it repaint?**  
-Heiken Ashi candles do not repaint in the traditional sense, but the formula uses the current period’s close. On a live chart, the current candle will update until it closes. Once closed, it’s fixed.
+Heiken Ashi candles do not repaint in the traditional sense, but the formula uses the current period's close. On a live chart, the current candle will update until it closes. Once closed, it's fixed.
 
 **Q: Best timeframe?**  
-4H for swing, 1H for intraday. Avoid below 15M unless you’re scalping with heavy confirmation.
+There's no single best timeframe—it depends on your style. Higher timeframes for swing trading, lower for intraday. Very low timeframes tend to produce more false signals, so pair them with heavy confirmation if you use them.
 
 **Q: Can I use it for crypto?**  
-Yes, but crypto’s volatility means more false signals. Pair it with volume or RSI.
+Yes, but crypto's volatility means more false signals. Pair it with volume or RSI.
 
 ---
 
 ## Final Verdict
 
-Heikin_Ashi_Candles is a **solid 4/5**—it does exactly what it promises: smooth price action and clarify trend direction. It’s not a holy grail (no indicator is), but as a filter for entries and exits, it’s reliable.  
+Heikin_Ashi_Candles is a **solid 4/5**—it does exactly what it promises: smooth price action and clarify trend direction. It's not a holy grail (no indicator is), but as a filter for entries and exits, it's reliable.  
 
-**Who should buy it?** Anyone trading trends who wants a cleaner chart. It’s free, so there’s no reason not to try it. Just don’t forget: **Heikin Ashi is a lens, not a price feed.**
+**Who should use it?** Anyone trading trends who wants a cleaner chart. It's free, so there's no reason not to try it. Just don't forget: **Heikin Ashi is a lens, not a price feed.**
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Candlestick** implementation was backtested on 30 markets over 5 years of daily data (4,339 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 46.9%** (50% = coin flip)
+- Strongest markets: META 54.0%, NVDA 52.1%, WTI 52.1%, GOOGL 51.2%
+- Weakest markets: SPY 44.4%, QQQ 44.2%, SHIBUSD 28.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

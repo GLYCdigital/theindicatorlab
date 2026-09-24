@@ -17,85 +17,93 @@ categories:
 rating: 4
 description: "Directional Kernel Filter Backquant review: how this kernel-smoothing trend filter works, best settings, entry logic, and where it beats a plain moving average."
 tv_script_url: "https://www.tradingview.com/script/5AnxLyjj-Directional-Kernel-Filter-BackQuant/"
+sources: ["https://www.tradingview.com/script/5AnxLyjj-Directional-Kernel-Filter-BackQuant/"]
 ---
-Most trend indicators are moving averages wearing a costume. The Directional_Kernel_Filter_Backquant isn't one of them — it's a kernel regression smoother that flips color when price crosses its own fitted curve, and the difference is visible the moment you load it.
+Most trend indicators are moving averages wearing a costume. The Directional Kernel Filter [BackQuant] isn't one of them — it's a Gaussian-weighted smoother with an added directional weighting term, and the difference shows up as soon as you compare it against a standard smoother.
 
 ## What it actually does
 
-Under the hood, this thing runs a kernel regression (a non-parametric smoother) across your price series and outputs a single adaptive line that hugs the trend while cutting the chop a moving average would happily pass through. The line changes direction, and therefore color, when the regression slope flips — long bias in one shade, short bias in the other. There's no repainting of closed signals, which is more than I can say for a lot of "kernel" scripts floating around on TradingView.
+Under the hood, the script builds two independent filters — a Fast Directional Kernel and a Slow Directional Kernel — from a Gaussian-weighted average of the selected source. For every observation in the lookback, weight is `exp(-0.5 × Distance²)`, where distance depends on how far the observation sits from the current bar relative to the kernel bandwidth. Recent observations get more weight; older ones get progressively less.
 
-As shown in the chart above, the line sits cleanly through the middle of the price action rather than lagging behind the extremes the way a 50 EMA does. That's the whole selling point.
+The directional part comes next. The script measures the previous direction of the Base Gaussian Kernel (`Base[1] - Base[2]`), normalizes it by ATR, and caps it between -1 and +1. Each historical observation also gets a local move (`Source[i] - Source[i+1]`), normalized the same way. Alignment is the product of the two, and the directional weight is `exp(Directional Strength × Alignment)`. Observations that agree with the previous filter direction get more weight; opposing ones get less.
+
+Trend state is simply the relationship between the two filters: Fast above Slow is bullish, Fast below Slow is bearish. If they're exactly equal, the previous state holds.
 
 ## The kernel part is not a gimmick
 
-Here's where it separates itself from a standard MA crossover setup. Kernel regression weights recent and historical bars by a bandwidth parameter, so the output is a smooth curve that responds to price *shape* rather than just a rolling mean. In practice:
+This is where it separates itself from a standard MA crossover setup. The Gaussian weighting means the output responds to price shape across the lookback rather than acting as a plain rolling mean, and the directional term tilts the weighting further based on whether each historical observation moved with or against the previously estimated filter direction.
 
-- **Fewer whipsaws in ranges.** The smoother doesn't flip on every inside bar the way a fast EMA does.
-- **Adaptive lag.** Because the weighting is Gaussian-ish, the line accelerates into strong trends and slows in consolidation.
-- **One line, one decision.** No cloud, no histogram, no second signal line to cross-interpret.
+- **Two independent filters.** Fast and Slow kernels share the same Kernel Width, Directional Weight, and ATR normalization, but use different lengths.
+- **Directional bias in the smoothing.** Higher Directional Weight values increase the spread between observations that agree with the previous direction and those that oppose it.
+- **Base Kernel available for comparison.** The normal Gaussian smoother can be plotted alongside the directionally reweighted version, and the difference between them is exposed in the Data Window.
 
-If you've ever run a SuperTrend or a Hull MA and found the flips too twitchy or too late, this sits in a useful middle ground.
+Worth stating plainly: this is a custom smoothing method, not a machine-learning model or price-prediction system. The directional weighting only changes how historical observations inside the current window are weighted.
 
-## Best settings I landed on
+## Settings and How to Tune Them
 
-The defaults are usable, but I got the cleanest results tuning two inputs:
+The defaults are usable, but the inputs are worth understanding before you touch them.
 
-- **Bandwidth / smoothing length:** Drop it lower (faster) for intraday on 5–15m, raise it for 4H and daily. Too low and you've rebuilt an EMA with extra steps. Too high and the line only reacts after the move is over.
-- **Source:** Keep it on `close`. Switching to `hlc3` smooths further but adds lag you don't need.
-- **Signal style:** If the script exposes a "confirmed" vs "intrabar" toggle, always use confirmed for backtests. Intrabar flips look great on a static chart and lie to you in real time.
+- **Fast Kernel Length:** Controls the lookback of the faster filter. Shorter values respond more quickly.
+- **Slow Length:** Controls the slower trend filter. Larger separation between Fast and Slow lengths generally creates a more persistent crossover structure.
+- **Kernel Width:** Controls how concentrated the Gaussian weighting is toward recent observations. Lower values emphasize recent bars more strongly; higher values distribute weight more broadly across the lookback. The effective bandwidth is Filter Length × Kernel Width.
+- **Directional Weight:** Controls how strongly alignment changes the Gaussian weights. Set to 0 to disable directional adjustment entirely — the output becomes the Base Gaussian Kernel. Higher values create a stronger directional bias in the smoothing process.
+- **Normalization Length:** The ATR period used to normalize filter direction and local price movement.
 
-My rule of thumb: tune bandwidth until the line visually sits *through* the candles rather than riding one edge. That's your sweet spot.
+A useful way to tune it: adjust Kernel Width until the line visually sits through the candles rather than riding one edge. If the directional weighting is doing little at a given bar, the Directional Adjustment value in the Data Window will sit near zero.
 
-## How I'd actually trade it
+## How to use it
 
-This is a bias filter, not an entry trigger — treat it that way and it earns its keep.
+The indicator can serve as a fast/slow trend filter, a directional overlay for broader chart context, or a way to compare a normal Gaussian smoother against a directionally reweighted version.
 
-1. **Trend bias:** Line green = only take longs, red = only shorts. Ignore counter-trend setups entirely.
-2. **Entry:** Wait for a pullback into the line, then take the first rejection candle. The kernel line acts as a soft dynamic support/resistance.
-3. **Exit:** Flip of the line, or a fixed ATR stop below the line's value at entry.
-4. **Confluence:** Pair it with something momentum-based — RSI divergence or a volume spike — because the kernel line alone gives you direction, not timing.
+1. **Trend bias:** Fast above Slow is bullish, Fast below Slow is bearish. The optional candle and background colouring reflect the same state.
+2. **Context:** Use it as a directional overlay rather than a standalone trigger.
+3. **Comparison:** Plot the Base Kernel to see how much the directional weighting is actually shifting the result bar to bar.
+4. **Diagnostics:** The Data Window exposes Fast and Slow Reference Direction, Directional Adjustment, and Kernel Spread — positive spread corresponds to bullish, negative to bearish.
 
-The mistake I see people make is using the color flip as a buy/sell arrow. On lower timeframes those flips come with real lag, so you're buying the top of a move that's already half done.
+The mistake worth avoiding is treating the colour flip as a buy/sell arrow. The script is reactive and uses only current and historical data; directional weighting is based on the previously estimated filter direction and does not forecast future direction.
 
 ## Pros and cons
 
 **Pros**
-- Genuinely smoother than comparable MAs without absurd lag.
-- Single, readable output — good for clean charts.
-- Works across timeframes with just a bandwidth tweak.
-- No repainting on confirmed bars.
+- Two independent Gaussian kernels with shared weighting parameters.
+- Base Kernel available for direct comparison against the directionally weighted version.
+- Diagnostic values exposed in the Data Window.
+- Optional ribbon that visualises the spread between Fast and Slow.
+- Bullish and bearish alert conditions provided.
 
 **Cons**
-- Lag on flips is real; it's a trend *follower*, not a predictor.
-- No built-in alerts documentation, so you'll wire your own.
-- In hard ranges it still whipsaws, just less than an EMA.
-- Backquant branding is scattered across similar scripts — make sure you're on this exact version.
+- Reactive by design — it does not predict direction.
+- High Directional Weight settings can make the filter more sensitive to recent directional structure.
+- Fast/slow crossovers can still switch frequently during sideways markets.
+- ATR is only a normalization scale; it does not make the filter volatility predictive.
+- The ribbon introduces no additional signal logic.
 
 ## Who it's for
 
-Swing and position traders who want a clean trend filter to sit under their existing entry system. If you scalp 1-minute charts or trade mean reversion, this isn't your tool. If you're a trend trader tired of MA whipsaws, it's worth the slot.
+Traders who want a trend filter built on Gaussian smoothing with a directional tilt, and who want to inspect how much that tilt is actually changing the output. If you need a predictive tool or a standalone entry trigger, this isn't it.
 
 ## Alternatives worth comparing
 
-- **Hull Moving Average:** Faster, but more prone to flips in chop.
-- **SuperTrend:** Gives you ATR-based stops built in, at the cost of choppier signals.
-- **Linear Regression Channel:** Similar regression math but adds bands — better if you want targets, worse if you want a clean bias line.
+- **Hull Moving Average:** A faster smoother, but a different weighting scheme entirely.
+- **SuperTrend:** ATR-based stops built in, but no directional reweighting of the underlying average.
+- **Standard EMA crossovers:** Similar fast/slow structure, but the underlying lines use a plain rolling mean rather than Gaussian and directional weighting.
 
 ## FAQ
 
-**Does it repaint?** On confirmed bars, no. Intrabar flips can shift until the candle closes, so always evaluate on close.
+**Does it repaint?** The script is reactive and uses only current and historical price data. Directional weighting is based on the previously estimated filter direction.
 
-**What timeframe is best?** 1H through daily. Below 15m the lag starts to matter more than the smoothing benefit.
+**What timeframe is best?** The source material doesn't specify one; the structure is a fast/slow filter that works the same way on any timeframe.
 
-**Can I use it alone?** You can, but you'll enter late. Pair it with a momentum or volume trigger.
+**Can I use it alone?** It's designed as a trend filter and directional overlay. The fast/slow relationship gives direction, not timing.
 
-**Is it better than a moving average?** For trend *filtering*, yes. For raw signal speed, no.
+**Is it better than a moving average?** It's a different construction. The underlying lines use Gaussian and directional weighting instead of a standard MA formula, with the Base Kernel available so you can see exactly what the directional term changes.
 
 ## Verdict
 
-The Directional_Kernel_Filter_Backquant does one job — give you a clean, low-noise trend bias — and does it well. It won't tell you when to pull the trigger, and it lags on flips like every trend follower, but as a filter layered under a real entry system it's a solid upgrade over yet another EMA crossover. Four stars: excellent at its narrow purpose, not a standalone system.
+The Directional Kernel Filter does one job — deliver a Gaussian-smoothed trend state with optional directional reweighting — and it exposes the machinery to inspect that job directly. The Base Kernel comparison and the Data Window diagnostics are what make it more than a repackaged crossover. It won't forecast direction and it will still whipsaw in ranges, but as a trend filter with a clear, inspectable construction it's a legitimate step up from another EMA crossover.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

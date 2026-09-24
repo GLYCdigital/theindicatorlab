@@ -16,84 +16,100 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Rsi_Bollinger_Bands review: combines RSI with Bollinger Bands for trend confirmation. Tested settings, entry/exit logic, pros, cons, and who it suits best."
+grounding: "none (no source found)"
 ---
-I’ve seen a hundred “confluence” indicators that just stack two oscillators on top of each other and call it a strategy. Rsi_Bollinger_Bands is not that. This one actually forces you to think about *when* RSI matters relative to volatility — and that’s a genuinely useful distinction.
+# Rsi_Bollinger_Bands Review
 
-Here’s what it does: it plots RSI (default 14) but filters it through Bollinger Bands (default 20, 2.0 deviation) on the RSI itself. So the bands expand and contract based on RSI’s own volatility, not price. That changes the game — you’re no longer looking at fixed 30/70 levels, but at dynamic thresholds that adapt to momentum conditions.
+"Confluence" indicators usually just stack two oscillators on top of each other and call it a strategy. Rsi_Bollinger_Bands takes a different approach: it forces you to think about *when* RSI matters relative to volatility, and that distinction is what makes it worth a look.
+
+## What It Does
+
+The indicator plots RSI and then applies Bollinger Bands to the RSI itself, not to price. That means the bands expand and contract based on RSI's own volatility. The result is dynamic thresholds instead of fixed 30/70 levels — levels that adapt to momentum conditions rather than sitting still.
 
 ## What Sets It Apart
 
-Most RSI indicators scream “overbought” at 70 and “oversold” at 30 regardless of context. Rsi_Bollinger_Bands abandons that rigidity. When the bands are wide, RSI can run to 80 without touching the upper band — that’s a strong trend signal, not a reversal signal. When the bands are narrow, a move from 50 to 60 becomes statistically significant. That’s the whole point, and it works.
+Most RSI readings scream "overbought" at 70 and "oversold" at 30 regardless of context. This indicator abandons that rigidity. When the bands are wide, RSI can run well past the traditional overbought zone without touching the upper band — a sign of trend strength rather than an imminent reversal. When the bands are narrow, relatively small RSI moves become meaningful. That's the core idea.
 
-The visual layout is clean too. The main chart shows price, but the indicator pane shows RSI as a line with the bands shaded. As the screenshot above demonstrates, the gradient fill between the bands makes mean-reversion setups visually obvious without cluttering your chart.
+The visual layout supports this. The indicator pane shows RSI as a line with the bands shaded and a gradient fill between them, which makes mean-reversion setups visually obvious without cluttering the chart.
 
-## Settings I Actually Tested
+## Settings and How to Tune Them
 
-After a few weeks of backtesting on BTC/USD, EUR/USD, and SPX, here’s what held up:
+The indicator exposes the standard RSI length plus the Bollinger length and deviation settings, applied to the RSI rather than price.
 
-- **Default RSI length (14)** — fine. Shorter (9) gave more signals but way more false ones. Stick with 14.
-- **Bollinger length 20, deviation 2.0** — works across timeframes. Deviation 2.5 was too tight for entries; 1.5 was noise.
-- **Use on higher timeframes (1H+)** — the indicator gets choppy on 5-minute charts. It’s not designed for scalping.
+- **RSI length** — a shorter setting produces more signals but also more false ones. The default is the more conservative choice.
+- **Bollinger length and deviation** — these control how wide the adaptive thresholds sit around RSI. Tightening the deviation produces more frequent band touches; widening it produces fewer, more selective ones. There's a trade-off either way, and the right balance depends on the instrument and timeframe you're trading.
+- **Timeframe** — the indicator behaves more cleanly on higher timeframes. On very short intraday charts, the bands tighten and RSI crosses them constantly, producing choppy, low-quality readings. It isn't built for scalping.
 
-One thing I’d change: the indicator doesn’t include alerts natively. You’ll need to set manual alerts on the RSI crossing the bands. Slightly annoying, but not a dealbreaker.
+Note that the indicator does not include native alerts. Alerts have to be set manually on RSI crossing the bands.
 
-## How I Trade It
+## How It's Typically Traded
 
-The logic is straightforward, but the execution matters:
+The logic is straightforward, but execution matters:
 
-**Long entry:** RSI dips below the lower Bollinger Band *and* closes back above it. That’s a momentum shift, not just an oversold bounce. I add a trend filter — only take longs when price is above the 200 EMA.
+**Long entry:** RSI dips below the lower Bollinger Band and then closes back above it. That close back above the band is the momentum shift — not the oversold reading itself.
 
-**Short entry:** Mirror image. RSI pierces the upper band and closes back below. Price below the 200 EMA.
+**Short entry:** The mirror image. RSI pierces the upper band and closes back below it.
 
-**Exit:** Trail with a 20-period EMA on price. Or take profit when RSI touches the opposite band. That’s aggressive — most of the time I exit at the middle band, which is where RSI tends to revert to.
+**Exit:** Options include trailing with a moving average on price, taking profit when RSI reaches the opposite band, or exiting at the middle band, which is where RSI tends to revert.
 
-The key insight: **this indicator works best as a timing tool, not a standalone signal.** If you’re already using trend lines or moving averages for direction, this tells you *when* to pull the trigger.
+The key framing: this works best as a timing tool, not a standalone signal. If you already have a directional bias from trend lines or moving averages, this tells you *when* to act on it.
 
 ## Pros & Cons
 
 **Pros:**
 - Adaptive levels beat fixed 30/70 RSI thresholds
-- Clear visual representation of volatility contraction/expansion
-- Works on any asset class
+- Clear visual representation of volatility contraction and expansion
 - Simple enough to understand without a manual
+- Useful as a timing layer on top of an existing directional view
 
 **Cons:**
-- No built-in alerts (seriously, why not?)
-- Can whipsaw in ranging markets — the bands get tight, RSI crosses them constantly
-- No trend filter built in — you have to add your own
-- Repaints slightly on the current bar (though this is standard for RSI-based indicators)
+- No built-in alerts
+- Can whipsaw in ranging markets — the bands tighten and RSI crosses them repeatedly
+- No trend filter built in; you supply your own
+- RSI-based indicators of this type can shift on the forming bar, so signals are only settled once the bar closes
 
 ## Who Is This For?
 
-Momentum traders who already have a directional bias and need a trigger. If you’re a mean-reversion trader, it’s workable but you’ll need to be selective about which bounces to take. It’s **not** for scalpers — the signals are too slow on lower timeframes.
+Momentum traders who already have a directional bias and need a trigger. Mean-reversion traders can use it, but will need to be selective about which bounces to take. It is not suited to scalpers — signals are too slow on lower timeframes.
 
-If you’re a beginner, this is actually a decent learning tool. It teaches you that oversold doesn’t mean “buy” — it means “watch for a close back above the band.”
+For beginners, it's a reasonable learning tool. It teaches the distinction between "oversold" and "buy" — oversold means watch for a close back above the band.
 
 ## Alternatives Worth Considering
 
-- **Stochastic RSI** — better for range-bound markets, but more false signals in trends.
-- **Bollinger Bands %B** — simpler, gives you a 0–1 scale instead of RSI values. Less flexible.
+- **Stochastic RSI** — better suited to range-bound markets, but more false signals in trends.
+- **Bollinger Bands %B** — simpler, gives a 0–1 scale instead of RSI values, but less flexible.
 - **RSI with moving average crossover** — cleaner signals, but you lose the volatility context.
 
 ## FAQ
 
 **Does it work on crypto?**
-Yes — actually better than forex in my testing. Crypto trends harder, so the adaptive thresholds shine.
+It applies to any asset class the platform supports. Crypto's stronger trending behavior tends to suit adaptive thresholds well.
 
 **What timeframe is ideal?**
-4H and 1D are the sweet spot. Daily gives fewer, higher-quality signals. Below 1H, expect noise.
+Higher timeframes produce fewer, cleaner signals. Below the 1-hour range, expect noise.
 
-**Can I use it as a standalone strategy?**
-Technically yes, but you’ll get chopped up in sideways markets. Pair it with a trend filter.
+**Can it be used as a standalone strategy?**
+Technically yes, but it will get chopped up in sideways markets. Pair it with a trend filter.
 
 **Does it repaint?**
-Slightly, on the forming bar. Once the bar closes, signals are stable.
+Any RSI-based indicator can shift on the forming bar. Once the bar closes, the readings are stable.
 
 ## Final Verdict
 
-Rsi_Bollinger_Bands earns **⭐⭐⭐⭐ (4/5)**. It’s not revolutionary, but it’s a smart refinement of two classic tools. The adaptive RSI bands genuinely improve signal quality over fixed levels, and the visual design makes volatility conditions easy to assess at a glance.
+Rsi_Bollinger_Bands is not revolutionary, but it's a sensible refinement of two classic tools. The adaptive RSI bands address a real weakness in fixed-level RSI readings, and the visual design makes volatility conditions easy to assess at a glance.
 
-Docking one star for the missing alerts and the lack of a built-in trend filter. If the developer adds those in a future update, this becomes a five-star tool. As it stands, it’s a solid addition to any momentum trader’s toolkit — just bring your own directional bias.
+The missing alerts and the lack of a built-in trend filter are genuine gaps. As it stands, it's a solid addition to a momentum trader's toolkit — provided you bring your own directional bias.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

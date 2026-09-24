@@ -45,11 +45,11 @@ The author's own development numbers on XAUUSD, volume ignored, default settings
 
 Read those for what they are. The author says it plainly: a held rate without a baseline is a description, not an edge. The value is that the same table runs on *your* symbol and tells you which events carry anything there.
 
-## How to Use It
+## Settings and How to Tune Them
 
-Start by leaving the percentile thresholds alone and watching the scoreboard populate. The settings the author flags as worth touching are narrow spread / low volume percentile (the sensitivity), min zone height and departure-within (what counts as a base), and the held = travel × height bar. Raising that last one makes held rates fall — and where they fall slowest is where the zones on your chart actually work.
+The percentile thresholds are the sensitivity controls, and the author's guidance is to leave them alone at first and watch the scoreboard populate. The settings flagged as worth touching are narrow spread / low volume percentile, min zone height (expressed as a multiple of median spread), and departure-within (the bar count that defines a base). The held = travel × height parameter sets the scoreboard's bar: raising it makes held rates fall, and where they fall slowest is where the zones on your chart actually work. Show zone history keeps the last N scored zones, and the palette follows a bright or dark chart on its own.
 
-Alerts are handled with one `alert()` call per event — zone confirmed, strong zone confirmed, zone tested, midline touched, held-then-broken, broken — so a single "Any alert() function call" per chart catches everything, with kind and tags in the message.
+Alerts are handled with one `alert()` call per event — zone confirmed, strong zone confirmed, zone tested, midline touched, held-then-broken, broken — so a single "Any alert() function call" per chart catches everything, with kind and tags in the message. Six alertconditions exist for anyone who wants them separately.
 
 ## Pros and Cons
 
@@ -82,6 +82,7 @@ Discretionary VSA and Wyckoff traders who already read No Supply, No Demand, spr
 Vsa_Digga does something most zone indicators don't: it admits what it doesn't know and gives you the table to find out. The percentile approach is portable, the departure rule is well-reasoned, and the scoreboard is the kind of honesty the VSA space badly needs. It loses a star because the scoreboard is a description rather than an edge, and because tick-volume markets blunt half the toolkit. If you trade VSA by eye, this earns its chart space.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

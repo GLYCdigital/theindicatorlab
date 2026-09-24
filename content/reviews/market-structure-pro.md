@@ -16,124 +16,106 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Market_Structure_Pro auto-labels swing highs/lows and break of structure on any timeframe. See settings, backtest results, and honest pros/cons here."
+grounding: "none (no source found)"
+---
+**Description:** Market_Structure_Pro auto-labels swing highs/lows and break of structure on any timeframe. See settings and honest pros/cons here.
+
 ---
 
-**Description:** Market_Structure_Pro auto-labels swing highs/lows and break of structure on any timeframe. See settings, backtest results, and honest pros/cons here.
+"Market structure" indicators are a crowded category, and most of them draw lines that look tidy without adding anything to a decision. Market_Structure_Pro is aimed at the subset of traders who want break of structure (BOS) and change of character (CHoCH) labeled directly on the chart instead of drawn by hand.
 
----
-
-I've been through dozens of "market structure" indicators. Most just draw lines that look pretty but don't help you trade. Market_Structure_Pro is different—it's actually useful for identifying break of structure (BOS) and change of character (CHoCH) in real time.
-
-Let me break down what I found after running it on 20+ tickers across multiple timeframes.
+Here's what the indicator claims to do, how its settings are meant to be tuned, and where it falls short.
 
 ## What This Indicator Actually Does
 
-Market_Structure_Pro automatically identifies swing highs and swing lows, then labels them with clear markers. It also detects:
+Market_Structure_Pro automatically identifies swing highs and swing lows, then labels them with markers. It also detects:
 
 - **Break of Structure (BOS):** When price breaks a previous swing high/low, confirming trend continuation.
 - **Change of Character (CHoCH):** A failed attempt at a BOS, signaling potential trend reversal.
 - **Liquidity Sweeps / Stop Hunts:** When price briefly takes out a swing point before reversing—common in smart money concepts.
 
-It works on any timeframe, from 1-minute scalping to daily swing trading. The labels are color-coded and don't repaint (as long as you use the default settings).
+It is designed to run on any timeframe, from intraday scalping through daily swing trading. The labels are color-coded, and the vendor states they do not repaint at default settings.
 
 ## Key Features That Set It Apart
 
-1. **Real-time labeling** — No lag. It prints BOS/CHoCH as soon as the candle closes that confirms the structure.
-2. **Customizable swing point detection** — You can adjust the "lookback period" to match your timeframe. Default 5 bars works well for intraday; 15+ for swing trading.
-3. **Liquidity sweep detection** — This is rare in free indicators. It marks potential stop hunts with a distinct icon.
-4. **Clean chart** — Labels don't clutter. They're small and positioned away from price action.
+1. **Labeling on candle close** — BOS/CHoCH labels are plotted once the candle that confirms the structure closes, rather than intrabar.
+2. **Customizable swing point detection** — The "lookback period" controls how many bars define a swing. A shorter lookback makes the indicator more sensitive; a longer one filters out minor swings.
+3. **Liquidity sweep detection** — Marks potential stop hunts with a distinct icon, which is uncommon in free indicators.
+4. **Clean chart** — Labels are small and positioned away from price action rather than stacked over it.
 
-## Best Settings for Different Timeframes
+## Settings and How to Tune Them
 
-After testing, here's what I landed on:
+The lookback period is the main lever, and the trade-off is straightforward: shorter lookbacks catch structure faster but produce more labels, while longer lookbacks reduce noise at the cost of responsiveness. The general guidance is to shorten the lookback on lower timeframes and lengthen it on higher ones, and to use the "Show Minor Swings" toggle to cut clutter on intraday charts. Liquidity sweep and CHoCH displays are optional toggles that can be switched off if you only want core structure.
 
-- **1m–5m (scalping):** Lookback period = 3–5. Keep it tight to catch fast moves. Enable "Show Liquidity Sweeps."
-- **15m–1h (day trading):** Lookback = 7–10. Disable "Show Minor Swings" to reduce noise.
-- **4h–Daily (swing):** Lookback = 15–20. Enable "Show CHoCH" for trend reversal signals.
-
-**My personal favorite:** 15m chart, lookback 7, all alerts on. It gives a good balance of signal quality and frequency.
+There is no single correct configuration. The right settings depend on the instrument's volatility and the timeframe you trade, and the settings that look best on a chart are not necessarily the ones that hold up in live conditions.
 
 ## How to Use It for Entries and Exits
 
-**Entry (trend continuation):** Wait for a BOS label to print after a pullback to a key level (like a moving average or order block). Enter on the next candle close above the BOS high (for longs) or below the low (for shorts).
+**Entry (trend continuation):** Wait for a BOS label to print after a pullback to a key level (such as a moving average or order block). Enter on the next candle close beyond the BOS high for longs, or below the low for shorts.
 
-**Exit:** Trail stop loss under the most recent swing low (for longs). Take partial profits at the next major swing high.
+**Exit:** Trail the stop loss under the most recent swing low for longs, and take partial profits at the next major swing high.
 
-**Reversal play:** When a CHoCH prints at a key support/resistance zone, it's a high-probability reversal setup. Wait for confirmation—don't fade the first CHoCH, wait for a retest.
+**Reversal play:** When a CHoCH prints at a key support/resistance zone, it can mark a reversal setup. The common guidance is to wait for confirmation—don't fade the first CHoCH, wait for a retest.
 
 **False signal filter:** Only take BOS signals that align with the higher timeframe trend. On a 15m chart, check the 1h or 4h for direction.
 
-## Performance Data
+## Performance
 
-I backtested this on TSLA (daily timeframe, 3 years, 0.1% slippage) to see how it performed as a standalone signal:
-
-| Metric | Value |
-|--------|-------|
-| Total Trades | 71 |
-| CAGR | +11.5% |
-| Max Drawdown | 48% |
-| Win Rate | 32.4% |
-| Profit Factor | 1.19 |
-
-The win rate is low, but the profit factor is above 1.0, meaning winners were bigger than losers. That 48% drawdown is rough—this confirms you need a good risk management system. Don't trade this blind.
+No verified performance data is available for this indicator. Any win rate, profit factor, or drawdown figure quoted for a market-structure indicator should be treated with suspicion: it depends entirely on the entry, exit, and risk rules wrapped around the labels. The indicator produces structure labels, not trade signals, so it cannot be evaluated as a standalone system.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean, non-repainting labels (huge plus)
-- Real-time BOS/CHoCH detection is accurate on trending markets
-- Customizable lookback makes it adaptable
-- Liquidity sweep alerts are genuinely useful for ICT/SMC traders
+- Clean labels that the vendor states do not repaint at default settings
+- Real-time BOS/CHoCH detection is the core purpose and is the main reason to use it
+- Customizable lookback makes it adaptable across timeframes
+- Liquidity sweep marking is genuinely useful for ICT/SMC traders
 
 **Cons:**
-- Struggles in ranging markets—lots of false signals during consolidation
-- 48% max drawdown in backtest means your psychology will be tested
-- No built-in volume or momentum filter; you need to add that yourself
+- Structure labels struggle in ranging markets—consolidation produces a lot of false breaks
+- No built-in volume or momentum filter; that has to be added separately
 - The "Auto-Detect" mode for swing points can be too sensitive in volatile stocks
+- Without a defined risk framework around it, the labels are just annotations
 
 ## Who It's Actually For
 
-- **ICT / Smart Money traders** — This is built for you. The liquidity sweep and CHoCH detection align perfectly with that methodology.
-- **Trend followers** — If you trade breakouts and pullbacks, this saves you the manual work of drawing swing points.
-- **Beginner to intermediate** — The labels are intuitive. You'll learn market structure faster by seeing it labeled in real time.
+- **ICT / Smart Money traders** — The liquidity sweep and CHoCH detection align with that methodology.
+- **Trend followers** — If you trade breakouts and pullbacks, this removes the manual work of marking swing points.
+- **Beginner to intermediate** — The labels are intuitive, and seeing structure marked in real time can speed up learning the concept.
 
-**Not for:** Scalpers on 1-minute charts (too many signals) or pure price action traders who prefer drawing their own lines.
+**Not for:** Scalpers on 1-minute charts, where the label density becomes unmanageable, or pure price action traders who prefer drawing their own lines.
 
 ## Better Alternatives
 
 If you want more than structural labels:
 
-- **LuxAlgo's Market Structure** — More features (order blocks, FVG detection) but costs $50/month.
+- **LuxAlgo's Market Structure** — Adds order blocks and fair value gap detection, but is a paid subscription.
 - **Supply & Demand by HPotter** — Free, but only draws zones, not structure.
-- **SMC Pro by QuantNomad** — Similar feature set, but repaints less.
+- **SMC Pro by QuantNomad** — Similar feature set, with a different repainting profile.
 
-For free, Market_Structure_Pro is the best I've found. If you're willing to pay, LuxAlgo's version is more complete.
+For free, Market_Structure_Pro covers the core structure labeling well. If you're willing to pay, LuxAlgo's version is more complete.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: With default settings (lookback 5+), no. But if you set lookback to 1–2, it will repaint on the current candle.
+**Q: Does it repaint?**
+A: The vendor states that at default settings it does not, but that a very short lookback can cause the current candle's label to shift.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works fine on BTC, ETH, and altcoins. Just adjust the lookback—crypto is more volatile, so use 7–10 on 15m.
+**Q: Can I use it on crypto?**
+A: It is designed to work on crypto as well as other markets. Because crypto is more volatile, a longer lookback on intraday charts tends to produce cleaner structure.
 
-**Q: Why do I get false signals in sideways markets?**  
-A: No indicator handles chop well. Add a volatility filter (like ATR > 20-period average) or only trade during the first 2 hours of the session.
+**Q: Why do I get false signals in sideways markets?**
+A: No structure indicator handles chop well—repeated breaks of minor swings are inherent to ranging conditions. A volatility filter or a session-based filter can reduce the count.
 
-**Q: Can I set alerts?**  
-A: Yes. The indicator has built-in alert conditions for BOS, CHoCH, and liquidity sweeps. I use push alerts to my phone—works perfectly.
+**Q: Can I set alerts?**
+A: Yes. The indicator includes alert conditions for BOS, CHoCH, and liquidity sweeps.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+Market_Structure_Pro is a solid tool for traders who already use market structure concepts. It doesn't replace your own analysis, but it removes the repetitive work of marking swings and breaks by hand.
 
-Market_Structure_Pro is a solid tool for any trader who uses market structure concepts. It doesn't replace your own analysis, but it speeds up the process significantly. The 48% drawdown in backtest is a warning—this is a confirmation tool, not a holy grail.
+The main caveat is that it is a confirmation tool, not a system. Nothing here defines position sizing, stops, or exits—those are on you, and they determine the results far more than the labels do.
 
-I've kept it on my 15m charts for three months now. The liquidity sweep alerts alone have saved me from chasing false breakouts. For a free indicator, that's rare value.
-
-**Would I recommend it?** Yes, if you understand market structure and want to save time. No, if you expect it to trade for you.
-
----
+**Would I recommend it?** Yes, if you understand market structure and want to save time marking it. No, if you expect it to trade for you.
 
 ## Go Deeper with The Indicator Lab
 

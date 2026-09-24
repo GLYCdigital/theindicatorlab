@@ -17,103 +17,83 @@ categories:
 rating: 4
 description: "Tasc_2026_09_Adaptive_Supersmoother review: tested settings, entry/exit strategy, pros/cons, and honest verdict for trend traders."
 tv_script_url: "https://www.tradingview.com/script/FnlMn99W-TASC-2026-09-Adaptive-SuperSmoother/"
+sources: ["https://www.tradingview.com/script/FnlMn99W-TASC-2026-09-Adaptive-SuperSmoother/", "https://traders.com/Documentation/FEEDbk_docs/2026/09/TradersTips.html", "https://en.wikipedia.org/wiki/Nyquist_frequency"]
 ---
-I'll be straight with you: most adaptive filters on TradingView are glorified moving averages with extra steps. This one from the TASC 2026 September issue is different — it actually earns its "adaptive" label. I've run it through ranging markets, violent breakouts, and everything in between. Here's what I found.
+The Adaptive SuperSmoother is a trend filter built on John F. Ehlers' work, published in the September 2026 edition of the TASC Traders' Tips. Unlike the many adaptive indicators that are moving averages with extra steps, this one implements a specific, published method. Here's what it does and how to think about it.
 
 ## What This Indicator Actually Does
 
-The Adaptive Supersmoother is a trend filter that applies John Ehlers' supersmoother technique but adjusts its smoothing length dynamically based on market volatility. When price chops around, the filter lengthens to cut noise. When trends accelerate, it shortens to stay responsive. The result is a single line that hugs price action far better than a static SMA or EMA of any period.
+The Adaptive SuperSmoother is a trend filter that dynamically adjusts its critical period based on the rate of change (ROC) of another SuperSmoother filter. Ehlers' core argument is that most adaptive smoothers rely on EMAs, which are first-order filters with limited attenuation of high-frequency noise — roughly -17 dB for an EMA with a critical period of 12 bars. The SuperSmoother is a second-order filter with a zero of transmission at the Nyquist frequency, giving it substantially greater reduction of higher frequencies without perceptibly more computational lag.
 
-What you see on the chart is deceptively simple: one smooth line that changes hue based on direction. But the math underneath is doing something smart — it's measuring the dominant cycle or volatility regime and recalibrating itself every bar. This isn't a repainting indicator; the values are confirmed at bar close, which matters if you're automating anything.
+The adaptation works as follows: a SuperSmoother is calculated with a fixed critical period. The one-bar ROC of that filter is measured, and the RMS of that ROC is calculated over a specified length. The ROC is scaled by the RMS and capped at a maximum scaled value of 2. A period-adjustment factor is then derived as the square of one minus half the scaled ROC. That factor multiplies the base period, the result is floored at a minimum of 2, and a second SuperSmoother is calculated using that adaptive period. That second filter is the Adaptive SuperSmoother.
+
+The practical effect: when changes in the fixed-period filter increase relative to the RMS, the adaptive filter shortens its critical period and becomes more responsive. The script plots both filters on the main chart — the fixed-period SuperSmoother in red and the Adaptive SuperSmoother in blue — plus an oscillator in a separate pane showing the relationship between the two.
 
 ## Key Features That Set It Apart
 
-**Dynamic responsiveness.** A 20-period EMA lags in trends and whipsaws in ranges. This filter adjusts its effective period from roughly 8 to 40 bars depending on conditions. In the chart above, notice how it tightened during the February uptrend and loosened during the March consolidation — that's the adaptation working.
+**Adaptation via ROC, not volatility tuning.** Rather than adjusting an EMA's smoothing factor based on a volatility measure, this script adjusts one SuperSmoother's critical period based on the rate of change in another. That is Ehlers' stated preferred method.
 
-**Clean signal generation.** The color flip from red to green (or vice versa) is your primary signal. There's no histogram noise, no overlaid dots, no arrows cluttering your chart. Just one line with an unambiguous state change.
+**Second-order smoothing.** The SuperSmoother's second-degree polynomial transfer function and zero of transmission at the Nyquist frequency give it meaningfully better high-frequency attenuation than an EMA, which is why Ehlers argues for it over EMAs in most applications, adaptive filtering included.
 
-**Built on published research.** This comes from Technical Analysis of Stocks & Commodities magazine (September 2026 issue). It's not some anonymous Pine script slapped together; there's peer-reviewed logic behind the smoothing algorithm.
+**Built on published research.** The method comes from Ehlers' "Improved Filter Performance" article in the September 2026 TASC Traders' Tips. The script is a direct implementation of the code presented there.
 
-## Best Settings I Tested
+**Dual output.** A fixed-period filter, an adaptive filter, and an oscillator of the difference between them — the oscillator is where Ehlers locates the trading signal.
 
-The default settings work, but they're tuned for daily charts. Here's what I found more effective:
+## Settings and How to Tune Them
 
-- **Timeframe:** 4-hour or daily. The adaptation gets noisy on 1-minute charts.
-- **Smoothing Length:** Leave the base length at its default (usually around 10-15). The adaptive logic handles the rest.
-- **Threshold Sensitivity:** If you're getting too many flips in ranging markets, increase the sensitivity threshold by 10-15%. This filters out minor oscillations that don't represent real trend changes.
-- **Color Scheme:** Use green for bullish, red for bearish. The default aqua/orange is harder to read at a glance.
+The script exposes three inputs:
+
+- **Source**: the series to process. The default is "Close".
+- **Base period**: the base period of the filters. The default is 20.
+- **RMS length**: the number of bars in the RMS calculation. The default is 81, which the article specifies.
+
+The base period sets the starting point that the adaptation factor scales. The RMS length controls how much history feeds the RMS calculation that normalizes the ROC — a longer window produces a more stable baseline against which the current ROC is measured. The script's own defaults are the article's defaults; beyond that, the source material does not prescribe alternative values.
 
 ## How to Actually Trade It
 
-My tested approach:
+Ehlers' recommended reading is the difference between the two filters rather than either line in isolation. His stated directional bias is long when the Adaptive SuperSmoother is above the fixed-period SuperSmoother, and short otherwise. He also suggests that peaks and valleys in the difference between the filters can help identify turning points.
 
-**Entry Logic:**
-- **Long:** Wait for the line to flip green AND close above the 50-period EMA on your chart. The EMA confirmation filters out false flips during strong downtrends.
-- **Short:** Flip red + close below the 50 EMA.
-
-**Exit Logic:**
-- **Conservative:** Exit when the color flips against your position.
-- **Aggressive:** Trail your stop 1.5× the average true range (ATR) below/above the line. This lets winners run while protecting against sharp reversals.
-
-**Avoid:** Don't trade the first flip after a long consolidation. Wait for the second consecutive same-color close. That one filter alone cut my false signals by nearly 40% in testing.
+The oscillator in the separate pane is what surfaces that difference. The main-chart lines give you the visual relationship; the oscillator gives you the same information in a form where extremes and reversals are easier to mark.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely adaptive — adjusts to market conditions in real time
-- No repainting, which makes it reliable for backtesting
-- Clean visual design, easy to read at a glance
-- Works across multiple timeframes and asset classes (I tested crypto, forex, and equities)
+- Implements a specific, published adaptive method rather than a generic smoothing tweak
+- Second-order filtering gives better high-frequency attenuation than an EMA, per Ehlers' analysis
+- Plots both the fixed-period and adaptive filters, so the adaptation is visible rather than hidden
+- Includes the oscillator Ehlers uses for signal generation
 
 **Cons:**
-- Requires a trend context to shine — useless in flat, range-bound markets
-- The adaptation logic can occasionally overreact to sudden volatility spikes, producing a brief false flip
-- No built-in alerts for color changes (you'll need to set price alerts manually)
-- Learning curve: understanding *why* it adapts matters more than with a simple MA
+- The method depends on the relationship between two filters; reading either line alone misses the point
+- Adaptive responsiveness is driven by ROC relative to its own RMS, so behavior shifts with the RMS length
+- Only three inputs, so there is little to tune if the defaults don't suit your instrument
+- Understanding what the adaptation is doing requires engaging with the underlying logic, not just the plot
 
 ## Who This Is For
 
-This indicator suits swing traders and position traders who operate on 4-hour or daily charts and want a reliable trend filter without babysitting multiple indicators. If you're a scalper on 1-minute charts or a mean-reversion trader who profits from ranges, skip this — it'll fight against your style.
-
-It's also great for systematic traders who want a non-repainting trend signal for algorithmic entries. The deterministic output makes backtesting straightforward.
+This indicator suits traders who want a trend filter grounded in published signal-processing research and who are willing to read the relationship between two lines rather than a single color-coded average. It is aimed at anyone applying Ehlers' filter work — the adaptive version specifically — and at traders who want the fixed-period and adaptive outputs side by side for comparison.
 
 ## Alternatives Worth Considering
 
-- **Supertrend:** Simpler, more aggressive signals, but whipsaws more in choppy markets. Better for quick trades, worse for trend riding.
-- **Ehlers' Classic Supersmoother:** The non-adaptive predecessor. If you already have a volatility filter elsewhere, this gives you the same smoothing with fewer moving parts.
-- **Hull Moving Average:** Faster response, but lags less predictably. Good for momentum traders who want earlier signals and accept more noise.
-
-## Real Questions Traders Ask
-
-**Does it repaint?**
-No. The current bar's value is confirmed at close. What you see on the chart is what you get.
-
-**Can I use it for crypto?**
-Yes, especially on BTC and ETH daily charts. The adaptive nature handles crypto's volatility spikes better than static indicators.
-
-**Is it good for day trading?**
-Marginal. The adaptation works, but on 15-minute or lower timeframes, the noise-to-signal ratio gets ugly. Stick to 4H or higher.
-
-**What's the best exit strategy?**
-The color flip is the simplest. But I found combining it with a 2× ATR trailing stop preserves more profit in strong trends. Test both on your asset.
+- **A standard SuperSmoother with a fixed period:** the non-adaptive predecessor. Same smoothing characteristics, no ROC-driven period adjustment.
+- **EMA-based adaptive filters:** the category Ehlers argues against in the article, on the grounds that first-order filters leave too much high-frequency content in the series.
+- **Other Ehlers filter designs:** the article frames the Adaptive SuperSmoother as his preferred approach among the many ways to make a SuperSmoother adaptive, so it is the reference point for comparing alternatives.
 
 ## Final Verdict
 
-The Tasc_2026_09_Adaptive_Supersmoother isn't a holy grail, but it's a genuinely well-engineered trend filter that does what it claims. The adaptation logic is sound, the signals are clean, and it doesn't repaint — three things I rarely find together in TradingView indicators. It loses a star because it's useless in ranging markets and requires some manual setup for alerts.
-
-If you trade trends on 4H or higher, this deserves a permanent spot on your chart.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
+This is a faithful implementation of a specific published method, with the fixed-period filter, the adaptive filter, and the difference oscillator all exposed. Its value depends on whether you accept Ehlers' premise — that a second-order SuperSmoother beats an EMA as an adaptive core, and that the ROC of one filter is the right thing to adapt another against. The script gives you everything needed to evaluate that for yourself: both filters, the relationship between them, and the three inputs that drive the calculation.
 
 ## Frequently Asked Questions
 
-### Is Tasc_2026_09_Adaptive_Supersmoother worth it?
+**What does the oscillator in the separate pane show?**
+It shows the relationship between the fixed-period SuperSmoother and the Adaptive SuperSmoother — the difference Ehlers recommends analyzing for trading signals.
 
-Based on testing across multiple timeframes, Tasc_2026_09_Adaptive_Supersmoother delivers solid value for traders who need trend analysis.
+**What are the default settings?**
+Source is "Close", base period is 20, and RMS length is 81. The RMS length of 81 bars is specified in the article.
 
-### Does this indicator repaint?
+**How does the adaptation decide to speed up or slow down?**
+When changes in the fixed-period SuperSmoother increase relative to the RMS of its ROC, the adaptive period shortens and the filter becomes more responsive. The scaled ROC is capped at 2, and the resulting adaptive period is floored at a minimum of 2.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

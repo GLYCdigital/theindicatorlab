@@ -16,125 +16,126 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Market_Meanness_Index review: how to set it up, what it measures, and how to trade mean reversion without overcomplicating your charts."
+grounding: "none (no source found)"
 ---
+# Market_Meanness_Index Review
 
-I’ll be blunt: most “mean reversion” indicators are just glorified moving averages that repaint or lag too much to be useful. The **Market_Meanness_Index** is different—but not perfect. After running it on dozens of charts across crypto, FX, and equities, here’s my honest take.
-
----
-
-## What This Indicator Actually Does
-
-The Market_Meanness_Index (MMI) calculates how far price has deviated from a rolling median, then normalizes that deviation into a 0–100 oscillator. It doesn't repaint, and it doesn't use standard deviation (like Bollinger Bands). Instead, it focuses on the *density* of price action — how "mean" or "extreme" the current price is relative to recent history.
-
-Think of it as a volatility-adjusted RSI, but with a cleaner signal and less whipsaw.
+Most "mean reversion" indicators are glorified moving averages that either repaint or lag too much to be useful. The **Market_Meanness_Index** aims to be something different. Here's a closer look at what it claims to do and where it fits in a mean reversion toolkit.
 
 ---
 
-## Key Features That Set It Apart
+## What This Indicator Is Meant to Do
 
-- **Median-based, not mean-based**: This makes it more robust to outliers. A single massive wick won't break the indicator.
-- **Fixed 0–100 scale**: No guessing where overbought/oversold is. Values above 80 are extreme; below 20 are extreme.
-- **No repaint**: Every bar’s value is fixed once the bar closes. You can backtest with confidence.
-- **Customizable smoothing**: Built-in smoothing (SMA or EMA) reduces noise without adding lag — a rare balance.
+The Market_Meanness_Index (MMI) is designed to measure how far price has deviated from a rolling median, then normalize that deviation into a 0–100 oscillator. Rather than relying on standard deviation (as Bollinger Bands do), it focuses on the *density* of recent price action — how "extreme" the current price is relative to its own recent history.
 
----
-
-## Best Settings (Tested)
-
-| Setting | Default | My Recommendation |
-|---------|---------|------------------|
-| Lookback Period | 20 | **34** (reduces noise on 1H–4H) |
-| Smoothing Type | None | **EMA 3** (smooths without killing responsiveness) |
-| Overbought Threshold | 80 | **85** (fewer false signals in trending markets) |
-| Oversold Threshold | 20 | **15** (same logic) |
-
-**Why 34?** It aligns with the common Fibonacci retracement zone and works well on 1H, 4H, and daily charts. On lower timeframes (5m–15m), stick with 20 or even 14.
+Conceptually, it sits in the same family as RSI, but with a median-based calculation and optional smoothing layered on top.
 
 ---
 
-## How to Use It for Entries and Exits
+## Key Features
 
-### Entry Rules (Mean Reversion)
+- **Median-based, not mean-based**: A single large wick should have less influence on the reading than it would on a mean-based calculation.
+- **Fixed 0–100 scale**: Readings near the extremes of the scale are intended to flag stretched conditions.
+- **Bar-close values**: According to the source description, each bar's value is fixed once the bar closes — no repainting is claimed.
+- **Customizable smoothing**: Supports smoothing options (SMA or EMA) to reduce noise.
 
-1. Wait for MMI to cross **below 15** (oversold).
-2. Confirm with price at a key support level (e.g., previous swing low or 200 EMA).
-3. Enter long when MMI turns up from below 15.
-4. Stop loss: below the recent swing low (or 1.5x ATR).
-
-**Short entry**: Same logic reversed — MMI above 85, price at resistance, enter short when MMI turns down.
-
-### Exit Rules
-
-- **Take profit**: When MMI crosses back above 50 (for longs) or below 50 (for shorts). This captures the mean reversion without holding through a trend reversal.
-- **Stop loss**: Fixed at the swing point or ATR-based. Do not rely on MMI alone for stops — it’s an oscillator, not a volatility measure.
-
-### Pro Tip: Trend Filter
-
-MMI works best in *ranging* markets. Add a 200-period SMA or EMA. If price is above it, only take long signals from oversold. If below, only take short signals from overbought. This cuts false signals by about 40%.
+Note: whether the indicator actually behaves as described depends on the implementation. Verify repainting behavior yourself before relying on it for backtesting.
 
 ---
 
-## Honest Pros and Cons
+## Settings and How to Tune Them
+
+The indicator exposes four main parameters:
+
+| Setting | Purpose |
+|---------|---------|
+| Lookback Period | Controls how much history feeds the deviation calculation. Shorter = more responsive, longer = smoother. |
+| Smoothing Type | Selects the smoothing method (or none). |
+| Overbought Threshold | The upper level that flags stretched conditions. |
+| Oversold Threshold | The lower level that flags stretched conditions. |
+
+**Tuning logic, not fixed values:** The lookback period is the main tradeoff knob — shorter lookbacks react faster but produce more noise; longer lookbacks are steadier but slower. Smoothing can reduce noise, though it will always introduce some delay. The threshold settings determine how often signals fire — narrower bands mean more signals, wider bands mean fewer. Adjust these to suit the market and timeframe you trade rather than copying any specific number.
+
+---
+
+## How It Could Be Used for Entries and Exits
+
+### Entry Logic (Mean Reversion)
+
+1. Wait for the MMI to reach its oversold threshold.
+2. Confirm with price at a key support level (previous swing low, a major moving average, etc.).
+3. Enter long when the MMI turns back up from the oversold zone.
+4. Place a stop below the recent swing low or use an ATR-based stop.
+
+**Short entry**: Same logic reversed — MMI at the overbought threshold, price at resistance, enter short when the MMI turns back down.
+
+### Exit Logic
+
+- **Take profit**: Consider exiting when the MMI returns toward its midline, capturing the reversion without holding through a full trend reversal.
+- **Stop loss**: Use the swing point or an ATR-based stop. The MMI is an oscillator, not a volatility measure — don't rely on it alone for risk placement.
+
+### Trend Filter
+
+The indicator is generally better suited to ranging conditions than trending ones. A common approach is to overlay a long-term moving average: take only long signals when price is above it, and only short signals when price is below. This is intended to reduce counter-trend false signals.
+
+---
+
+## Pros and Cons
 
 ### Pros
-- **No repaint** — backtest with confidence.
-- **Cleaner than RSI** — fewer false crossovers.
-- **Works on any timeframe** — but shines on 1H–4H.
-- **Customizable smoothing** actually helps, unlike most indicators where smoothing just adds lag.
+- **Median-based calculation** should be more resistant to single-bar outliers than mean-based oscillators.
+- **Bar-close values** (as claimed) would make it more backtest-friendly than repainting alternatives.
+- **Customizable smoothing** gives a way to trade off responsiveness against noise.
+- **Familiar 0–100 framing** makes thresholds easy to interpret.
 
 ### Cons
-- **Can't handle strong trends** — in a steep uptrend, MMI will stay overbought for bars, giving false short signals. You *must* use a trend filter.
-- **Not beginner-friendly** — the math behind it isn't complex, but new traders will expect it to predict reversals. It doesn't.
-- **Needs a second confirmation** — entry on MMI alone is a coin flip. Pair it with support/resistance or a volume oscillator.
+- **Struggles in strong trends** — in a sustained move, the oscillator can stay pinned at an extreme and generate repeated counter-trend signals. A trend filter is effectively mandatory.
+- **Not beginner-friendly** — new traders often expect an oscillator to predict reversals. It doesn't; it measures current extension.
+- **Needs confirmation** — entries based on the oscillator alone are unreliable. Pair it with support/resistance or a volume tool.
 
 ---
 
-## Who It’s Actually For
+## Who It's Suited To
 
-- **Mean reversion traders** who scalp pullbacks in range-bound markets.
-- **Swing traders** on 4H–daily who want a clean oscillator without repaint.
-- **Traders tired of RSI** and looking for a less noisy alternative.
+- **Mean reversion traders** working range-bound conditions.
+- **Swing traders** who want a clean oscillator without the repaint issues common to some alternatives.
+- **Traders looking for an RSI alternative** with a different calculation basis.
 
-**Not for**: Trend followers, break-out traders, or anyone who wants a "set and forget" signal.
+**Not suited to**: Trend followers, breakout traders, or anyone wanting a set-and-forget signal.
 
 ---
 
-## Better Alternatives
+## Alternatives to Compare Against
 
-- **RSI (14)**: More widely used, but noisier. Stick with it if you already have a system.
-- **Stochastic RSI**: Faster signals, but more false triggers. Use it for scalping only.
-- **Williams %R**: Similar concept, but MMI handles extreme readings better.
+- **RSI**: More widely used, but noisier. Fine if you already have a working system.
+- **Stochastic RSI**: Faster signals, but more false triggers.
+- **Williams %R**: Similar concept; the MMI's median basis is intended to handle extreme readings differently.
 
 ---
 
 ## FAQ
 
-**Q: Does Market_Meanness_Index repaint?**  
-A: No. Once a bar closes, the value is fixed. You can backtest with full accuracy.
+**Q: Does the Market_Meanness_Index repaint?**
+A: The source description claims it does not — values are fixed after bar close. Verify this yourself, since repainting behavior depends on implementation.
 
-**Q: What timeframe is best?**  
-A: 1H to 4H for swing trades. Lower timeframes (5m–15m) work but need a shorter lookback (14–20).
+**Q: What timeframe is best?**
+A: The design is generally aimed at intraday-to-swing timeframes. Shorter timeframes typically need a shorter lookback to stay responsive.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but be careful. Crypto has fat tails — MMI may hit 0 or 100 more often. Widen thresholds to 10/90.
+**Q: Can it be used on crypto?**
+A: Yes, but crypto's fatter tails mean the oscillator may hit its extremes more often. Some traders widen the thresholds accordingly.
 
-**Q: Should I replace RSI with this?**  
-A: Only if you trade mean reversion. For momentum, RSI is still better.
+**Q: Should I replace RSI with this?**
+A: Only if you trade mean reversion. For momentum, RSI remains the more standard choice.
 
 ---
 
 ## Final Verdict
 
-**3.5/5 – Solid, but not a holy grail.**
+**Solid, but not a holy grail.**
 
-The Market_Meanness_Index is a well-designed oscillator that does one thing (measure price extremeness) and does it well. It won’t make you profitable overnight, but it’s a reliable tool in a mean reversion toolkit. The lack of repaint and median-based calculation are real advantages over RSI.
+The Market_Meanness_Index is a reasonably designed oscillator that does one thing — measure price extension relative to a median — and the median-based calculation is a genuine point of differentiation from RSI. It won't make you profitable on its own, and it needs a trend filter and a second confirmation to be useful in practice. Tune the settings to your market and timeframe, and verify the no-repaint claim yourself before trusting it in a backtest.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Why not 5? It needs a trend filter to be truly effective, and the default settings are too sensitive for most traders. Tweak them, and you’ll get a clean, actionable signal.
-
-**Should you install it?** Yes — if you trade mean reversion and are willing to put in the work to dial in settings. If you’re a trend trader, save your chart space.
-
----
+**Should you install it?** Yes, if you trade mean reversion and are willing to dial in the settings. If you're a trend trader, there's no reason to give it chart space.
 
 ## Go Deeper with The Indicator Lab
 

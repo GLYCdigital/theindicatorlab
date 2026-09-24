@@ -17,96 +17,97 @@ categories:
 rating: 4
 description: "Minawesome_S_Best review: a momentum-filtered trend indicator. Tested settings, entry and exit logic, pros, cons, and who should install it."
 tv_script_url: "https://www.tradingview.com/script/BEeK4wH1-Minawesome-s-Best-v2/"
+sources: ["https://www.tradingview.com/script/BEeK4wH1-Minawesome-s-Best-v2/"]
 ---
-Minawesome_S_Best is not a crossover system, and it's not a repackaged moving average. It's a momentum-filtered trend tool: it tracks directional bias, then uses a momentum reading to decide whether that bias is worth acting on. The practical effect is fewer signals than a raw MA cross, and the ones that survive tend to arrive when price is already moving rather than when it's chopping sideways.
-
-I ran it on MACD charts across several instruments and timeframes. Here's what actually matters.
+Minawesome_S_Best V2 is not a crossover system and it is not a repackaged moving average. It is a structural overlay that stacks four concepts — CRT/PO3 ranges, Fair Value Gaps and Inverse FVGs, SMT divergence, and intraday reference levels — into one indicator. The defining design choice is that the underlying reference levels are calculated continuously but hidden by default, so what prints on the chart is the zones and markers those levels produce rather than a screen full of extra lines. Every layer can be switched on or shown independently in the settings.
 
 ## What It Does in Practice
 
-The core logic is straightforward. A trend component establishes direction, and a momentum filter gates the signal. When the two disagree, nothing prints. That gating is the entire point of the indicator — it's less about finding entries and more about refusing bad ones.
+The core logic is a stack of independent structural reads rather than a single signal engine. The CRT/PO3 layer tracks the previous higher-timeframe candle's high and low and flags when price sweeps outside that range and closes back inside it — the manipulation-then-reversal pattern the model is built around. The FVG layer detects standard three-candle imbalances and tracks their full lifecycle: an FVG that gets closed through flips into an IFVG, and an IFVG that itself gets reclaimed is removed from the chart entirely. The SMT layer compares swing highs and lows on your chart against a correlated symbol and flags when the two disagree. Prior day high/low and session VWAP round out the reference levels.
 
-On the chart above, notice how long stretches of consolidation produce no signal at all. That's not the indicator being broken; that's the filter working. Compare that to a standard MA cross on the same data and you'll count three or four whipsaw signals where Minawesome_S_Best sat still.
-
-The trade-off is obvious and worth stating plainly: you give up some early entries in exchange for a lower noise floor.
+The practical effect is that only zones whose thesis hasn't been disproven stay visible, and the signal-first configuration keeps the chart readable. Confluence between layers — an SMT divergence lining up with a fresh IFVG, for instance — is the intended read, which is why the color scheme is deliberately restrained to three hues: one neutral tone for structural levels, one for bullish signals, one for bearish.
 
 ## Key Features
 
-- **Momentum gate on trend signals** — the defining feature. Signals only fire when momentum confirms direction.
-- **Clean visual output** — no clutter, no stacked oscillators. You get direction and signal state, nothing more.
-- **Multi-timeframe tolerance** — I found it behaves consistently from 15m through daily. It doesn't collapse on lower timeframes like many momentum-filtered systems.
-- **Standard alert support** — signal, trend change, and momentum shift alerts are all available.
+- **CRT / PO3 range** — tracks the previous higher-timeframe candle's high and low and flags sweeps outside the range that close back inside. The range itself is hidden by default; only the resulting marker is shown.
+- **FVG / IFVG lifecycle** — detects three-candle imbalances, inverts closed-through FVGs into IFVGs, and removes reclaimed IFVGs from the chart. Zones age out after a configurable number of trading sessions, not bars, so the lifetime means the same thing on a 1-minute chart as on a 1-hour chart.
+- **SMT divergence** — compares your symbol's swings against a correlated symbol and flags disagreement between the two.
+- **Prior day high/low & session VWAP** — standard reference levels, calculated only on intraday timeframes since they don't apply on daily and above, and hidden by default alongside the CRT range.
+- **Tooltips and restrained palette** — every marker carries a hover tooltip with the detail behind the signal, and the three-hue scheme makes cross-layer confluence easy to spot.
 
 It's a deliberately narrow tool. If you want an all-in-one dashboard, this isn't it.
 
-## Best Settings
+## Settings and How to Tune Them
 
-The defaults are usable, but a few adjustments made a real difference in testing:
+The defaults are usable, but the layers are configurable and worth understanding before you start flipping switches:
 
-- **Sensitivity / momentum threshold:** tighten it one step on anything below 1H. Defaults on a 5m chart let through too much chop.
-- **Trend smoothing:** leave it. Raising it delays signals without meaningfully improving quality — I tested this across a few hundred bars and the win-rate change was within noise.
-- **Timeframe:** 1H and 4H are the sweet spot. Daily works well for swing context. Below 15m, expect to fight the filter.
+- **CRT / PO3 timeframe:** default 4H, adjustable to any timeframe. This determines which higher-timeframe candle's range is being tracked.
+- **FVG zone lifetime:** configurable in trading sessions rather than bars. Because the unit is sessions, the lifetime means the same thing across timeframes — a 1-minute chart and a 1-hour chart age zones at the same conceptual rate.
+- **SMT correlated symbol:** defaults to ES for NQ/MNQ charts, configurable to anything. The layer needs a reasonable correlated pair to produce meaningful disagreement flags.
+- **Layer visibility:** each layer can be switched on or shown independently. The CRT range, prior day levels, and session VWAP are hidden by default in the signal-first configuration.
 
 If you're scalping, don't force this indicator to do something it isn't built for.
 
 ## How to Use It
 
-The logic that made sense to me:
+The logic the design points toward:
 
-**Entry:** Wait for the trend state to establish, then take the signal only on the first momentum-confirmed print in that direction. Second and third signals in the same trend leg are lower quality — you're buying extension at that point.
+**Entry:** Treat the layers as confluence checks rather than standalone triggers. A fresh IFVG that lines up with an SMT divergence, or a CRT sweep-and-reclaim that coincides with a zone, is the kind of stacked read the three-hue palette is built to make visible at a glance.
 
-**Exit:** Momentum fading back to neutral is your first warning. A trend flip is the hard exit. I'd use the momentum fade to trail stops rather than to close outright, since price often continues briefly after momentum rolls over.
+**Exit:** The IFVG lifecycle gives you a structural invalidation read — an IFVG that gets reclaimed is removed from the chart entirely, which tells you the zone's thesis has been disproven. Zone aging out after the configured number of sessions is the other natural horizon.
 
-**Invalidation:** If price makes a new high in an uptrend and the indicator doesn't confirm, treat that as a divergence flag and reduce size.
+**Invalidation:** An SMT divergence is itself an invalidation flag. When your symbol makes a new high and the correlated symbol fails to confirm it, the two are disagreeing — that's the signal, not a confirmation.
 
 The indicator gives you the framework. Position sizing, stops, and targets are still yours to handle — it doesn't do that work for you, and it never claims to.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely filters noise. The signal count drops and the average signal quality rises.
-- Works across timeframes without constant retuning.
-- Clean, readable output that doesn't fight your chart.
-- Momentum gating is a real edge over plain trend-following.
+- Multiple structural concepts in one overlay without a chart full of lines.
+- The FVG/IFVG lifecycle keeps only zones whose thesis hasn't been disproven on the chart.
+- Session-based zone aging means the same lifetime logic across timeframes.
+- Restrained three-hue palette makes cross-layer confluence easy to spot.
+- Tooltips carry the detail behind each marker.
 
 **Cons:**
-- Late entries by design. You will miss the first move of a reversal.
 - No built-in stop, target, or risk sizing.
-- Underperforms in fast, choppy markets where momentum resets constantly.
-- Documentation is thin — you'll figure out the sensitivity setting by testing, not reading.
+- The SMT layer requires a reasonable correlated pair to be useful.
+- Prior day high/low and session VWAP don't apply on daily and above.
+- The concepts come from the ICT/Smart Money framework and are discretionary — they aren't mechanical signals.
 
 ## Who It's For
 
-Swing traders on 1H to daily charts who already have a risk framework and want a cleaner trend filter. It suits traders who'd rather take five good signals than twenty mediocre ones. It's a poor fit for scalpers, news traders, and anyone expecting the indicator to tell them exactly where to enter and exit.
+Traders who already work with FVG/IFVG, SMT divergence, and the CRT/PO3 model and want them combined into a single signal-first overlay. It suits traders who'd rather read confluence across structural layers than stack separate indicators. It's a poor fit for anyone expecting the indicator to tell them exactly where to enter and exit, and for traders on daily or higher timeframes who want the intraday reference levels.
 
 ## Alternatives
 
-If you want raw crossover speed, a simple EMA pair beats this for early entries — at the cost of far more noise. If you want momentum confirmation without a trend layer, MACD alone does that job. Minawesome_S_Best sits between them: more selective than a crossover, more directional than a bare oscillator. If that middle ground is what you're missing, it earns its place.
+If you want a single structural concept in isolation, dedicated FVG or SMT scripts cover that ground without the layering. If you want reference levels only, prior day high/low and VWAP are available as standalone indicators. Minawesome_S_Best sits above them: the same concepts, combined, with the levels hidden so the signals lead. If that combination is what you're missing, it earns its place.
 
 ## FAQ
 
-**Is Minawesome_S_Best repainting?**
-In my testing, confirmed signals held. I'd still verify on your own timeframe before trading it live — repainting behavior can vary with settings.
+**Does it repaint?**
+The source material doesn't state repainting behavior either way. The FVG/IFVG lifecycle is explicitly stateful — zones invert and get removed as price disproves them — so verify on your own timeframe before trading it live.
 
 **What timeframe works best?**
-1H and 4H. Daily for swing context. Avoid sub-15m.
+The source material doesn't name a preferred timeframe. It states the indicator is timeframe-adaptive and that zone lifetime is measured in sessions so it means the same thing across timeframes. Prior day high/low and session VWAP are calculated only on intraday timeframes.
 
 **Does it work on crypto and forex?**
-Yes, the logic is instrument-agnostic. Adjust sensitivity for volatility.
+The logic is described as instrument-agnostic and works on any liquid symbol, provided you have a reasonable correlated pair for the SMT layer. It was built and tested against NQ/MNQ futures.
 
 **Can I use it alone?**
-You can, but you'll want your own stop and target rules. It handles direction, not risk.
+You can, but you'll want your own stop and target rules. It handles structural reads, not risk.
 
-**Should I change the smoothing setting?**
-Leave it. My tests showed no meaningful improvement from raising it.
+**Are the reference levels always visible?**
+No. The CRT range, prior day levels, and session VWAP are hidden by default in the signal-first configuration. Each layer can be switched on or shown independently in the settings.
 
 ## Final Verdict
 
-Minawesome_S_Best does one thing well: it filters trend signals through momentum so you act less and, ideally, better. That's a real value-add over the crowded field of crossover indicators. It loses a star for the late entries, the missing risk tools, and documentation that leaves you guessing on the sensitivity setting.
+Minawesome_S_Best V2 does one thing well: it combines four structural concepts into a single overlay while keeping the chart clean by hiding the reference levels that generate them. The FVG/IFVG lifecycle and the session-based zone aging are the details that separate it from a simple zone plotter. It loses a star for the missing risk tools, the dependency on a correlated pair for the SMT layer, and the discretionary nature of the underlying concepts.
 
-If you trade trends on higher timeframes and want a cleaner signal stream, install it. If you need speed or a complete system, look elsewhere.
+If you already trade the ICT/Smart Money framework on intraday charts and want the layers combined into one signal-first read, install it. If you need a complete system or mechanical triggers, look elsewhere.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

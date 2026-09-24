@@ -17,88 +17,82 @@ categories:
 rating: 4
 description: "Ctz_Bitcoin_Cycle_Master review: a trend and cycle tool for BTC that plots momentum shifts and cycle phases. Settings, entry logic, pros and cons."
 tv_script_url: "https://www.tradingview.com/script/sJANppzg-CTZ-Bitcoin-Cycle-Master/"
+sources: ["https://www.tradingview.com/script/sJANppzg-CTZ-Bitcoin-Cycle-Master/"]
 ---
-Most "cycle" indicators on TradingView are repackaged moving averages with a fancy name and a rainbow gradient. Ctz_Bitcoin_Cycle_Master is not that — but it's also not the holy grail its name implies. After running it against BTCUSD on daily and weekly charts for several weeks, here's what it actually does and where it earns its keep.
+Most "cycle" indicators on TradingView are repackaged moving averages with a fancy name and a rainbow gradient. **CTZ Cycle Trader + Confluence** is not that — but it's also not the crystal ball its branding implies. Here's what it actually does and where it earns its keep.
 
 ## What the indicator actually does
 
-Stripped of marketing, this is a trend-following tool built specifically around Bitcoin's tendency to move in multi-month phases rather than clean directional trends. It layers a cycle-phase readout on top of a momentum engine, then plots a MACD-style histogram and signal structure underneath price. As shown in the chart above, the histogram flips color when momentum crosses its baseline — that's the core signal. The cycle component is the differentiator: it attempts to classify where BTC sits in its broader rhythm (accumulation, expansion, distribution, contraction), which is genuinely useful context that a vanilla MACD won't give you.
+Stripped of the marketing, this is a confluence tool built around the idea that a turn is only worth acting on when three independent methods agree. The first layer is a four-tier cycle model — Daily (DCL), Weekly (WCL), Yearly (YCL) and 4-Year (4YCL) cycle lows — each with confirmation logic, running counts, and forward-projected timing windows. Asset presets auto-tune the cycle lengths to the instrument you load. A live dashboard tracks days since each low, which windows are open, and the projected dates for the next turns.
 
-It works on any timeframe, but the logic is clearly tuned for daily and above. On a 5-minute chart it's noise.
+The second layer projects two forward target zones at once: a green low-target box below price and a red high-target box above it, each built from the statistical spread of past swings in that direction — how far they typically ran and how long they lasted. Completed swings are shaded green and red across history.
+
+The third layer is the Tidewave Trigger, a WaveTrend + RSI momentum engine that fires bull and bear reversal arrows and auto-adjusts from scalping frames to the macro.
+
+The layers gate each other. A bull arrow carries full weight only inside the green low zone and near a projected cycle low; a bear arrow only in the red high zone near a cycle high. The cycle says a turn is due, the zone says where and by how much, momentum says it's happening now.
 
 ## Key features that separate it from alternatives
 
-The honest comparison is to a standard MACD plus a market-regime filter. Here's what the cycle layer adds:
+The honest comparison is to a single momentum oscillator plus a regime filter. Here's what the layered structure adds:
 
-- **Phase labeling** that updates as structure changes, not just on a fixed calendar
-- **Histogram with signal-line confirmation** so you're not reacting to single-bar flips
-- **Adaptive sensitivity** — it tightens in choppy conditions and widens in trending ones
-- **No repainting on the histogram** in my testing (the phase labels can shift, which is worth knowing)
+- **Cyclical timing** across four nested tiers, rather than one fixed lookback
+- **Dual swing prediction zones** that bracket the expected reversal range on both sides instead of guessing a single direction
+- **Momentum triggering** that adjusts across timeframes
+- **A dedicated confluence alert** that fires only when all three layers agree
 
-That last point matters. Plenty of cycle tools repaint their signals and look brilliant in hindsight. This one keeps the trigger honest.
+That last point matters. Plenty of cycle tools fire constantly and look brilliant in hindsight. Here the gate is explicit: no alert unless the cycle, the zone, and momentum line up.
 
-## Best settings I tested
+## Settings and How to Tune Them
 
-The defaults are decent, but I got cleaner results with adjustments:
+The indicator ships with toggles for every layer, so you can run pure cycles, pure signals, or the full confluence view. State labels, arcs, and extras stay off by default for a clean chart.
 
-- **Sensitivity:** drop it one notch below default on daily. The default fires a touch early in ranging markets.
-- **Signal smoothing:** keep it on. Turning it off produces whipsaws that will wreck your win rate.
-- **Cycle length:** leave it — manually shortening it just front-runs the phase labels and defeats the purpose.
-- **Timeframe:** daily for swing trading, weekly for macro positioning. Don't go below 4H.
-
-If you're scalping, this isn't your tool. Accept that and move on.
+The load-bearing setting is the anchor. By default the **4YCL Anchor Date** is set to **21 Nov 2022**, Bitcoin's last bear-market low, and every cycle phase and projection counts forward from there. When the next 4-year low forms and confirms, open the **4YCL Master Anchor** group and change the **4YCL Anchor Date** to the new bottom — for the current cycle, that will be the 2026 low once it's in. The clock re-bases instantly, with no code editing. Set it to the exact bottom candle: a few days off shifts every downstream projection by those days. You can also toggle the anchor off to fall back to auto-detected pivots.
 
 ## How to actually trade it
 
-The logic that makes sense here is confirmation-based, not signal-chasing:
+The logic here is confirmation-based, not signal-chasing. The intended reading is that the cycle tells you when a turn is due, the zone tells you where and by how much, and momentum tells you it's happening now — and you act when all three align.
 
-**Long entry:** wait for the histogram to flip positive *and* the signal line to confirm on the next close, ideally while the cycle phase reads accumulation or expansion. Entering on the flip alone gets you chopped up.
-
-**Exit:** a histogram flip back negative is your first warning. A phase shift into distribution is your trigger to reduce. Don't wait for both to align perfectly — by then BTC has usually given back a chunk.
-
-**Stop placement:** recent swing low, not a fixed percentage. The indicator gives you structure; use it.
-
-The trap is treating the phase labels as precise timing. They're context, not triggers. Traders who buy the moment it prints "accumulation" will get burned in a downtrend that hasn't finished.
+The trap is treating any single layer as sufficient. A bull arrow outside the green zone, or a cycle window with no momentum confirmation, is not the setup the tool is designed to flag. The confluence alert exists precisely because the individual pieces are meant to be read together.
 
 ## Pros and cons
 
 **Pros:**
-- Clean, non-repainting histogram signals
-- Cycle context that's actually useful for position sizing
-- Works well on daily/weekly without constant babysitting
-- Less cluttered than most "cycle" indicators
+- Three genuinely independent methods rather than one oscillator in disguise
+- Zone projections bracket both directions instead of forcing a bias
+- The anchor mechanism is transparent and user-maintained
+- Every layer has its own toggle, so the chart stays clean if you want it to
 
 **Cons:**
-- Phase labels can shift after the fact
-- Useless on low timeframes
-- No alerts for phase changes on the free-tier experience in my testing
-- The name oversells it — this is a trend tool, not a crystal ball
+- The anchor is manual and load-bearing — a few days of error propagates through every projection
+- Three layers means a steeper learning curve than a single signal
+- The name and branding oversell it; no cycle model is a crystal ball
 
 ## Who it's for
 
-Swing traders and longer-term BTC holders who want a regime filter on top of a momentum signal. If you're already using MACD and want cycle context, this is a sensible upgrade. If you trade intraday or expect precise tops and bottoms, look elsewhere.
+Traders who want a timing framework rather than a trigger — people comfortable reading cycle context, zone placement, and momentum together and waiting for agreement. If you want a single flip to act on, this is more machinery than you need.
 
 ## Alternatives worth considering
 
-- **Standard MACD** — free, simpler, no cycle layer. Fine if you don't need the context.
-- **Pi Cycle Top** — better for spotting macro tops specifically.
-- **Ichimoku Cloud** — stronger for pure trend structure if you don't care about cycles.
+- **Standard MACD** — simpler, no cycle or zone layer. Fine if you don't need the context.
+- **WaveTrend alone** — the momentum component without the gating.
+- **Ichimoku Cloud** — stronger for pure trend structure if cycles aren't your concern.
 
 ## FAQ
 
-**Does it repaint?** The histogram doesn't in my testing. Phase labels can adjust as new data arrives.
+**Does it repaint?** The tool is built around confirmation logic, and the anchor is only updated after a low has confirmed. The forward-projected windows are projections, not settled values.
 
-**What timeframe is best?** Daily for swing trading, weekly for macro. Below 4H it degrades fast.
+**What timeframe is best?** The momentum engine auto-adjusts from scalping frames to the macro, and the cycle tiers run from daily up through the 4-year. The framework is designed to be read across those scales together.
 
-**Can I use it on altcoins?** It'll plot, but the cycle logic is tuned for Bitcoin's behavior. Results on alts are mixed.
+**Can I use it on altcoins?** Asset presets auto-tune the cycle lengths to the instrument you load, including metals, indices, forex, and energy as well as crypto.
 
-**Is it worth it over free MACD?** Yes, if you value the phase context. No, if you just want a momentum flip.
+**What happens when the next 4-year low forms?** You update the **4YCL Anchor Date** in the **4YCL Master Anchor** settings group to the new bottom, and the whole cycle clock re-bases from that date.
 
 ## Final verdict
 
-Ctz_Bitcoin_Cycle_Master does one thing well: it gives BTC traders a momentum trigger wrapped in useful cycle context. It's not revolutionary, and the phase labels aren't gospel, but the non-repainting histogram combined with regime awareness is a legitimate edge for patient swing traders. Just size your positions on the context, not the label.
+CTZ Cycle Trader + Confluence does one thing well: it refuses to give you a signal until cyclical timing, statistical swing projection, and momentum agree. The anchor requirement is a real maintenance obligation, and the three-layer structure takes time to internalize — but the gating is the point, and it's what separates this from the usual cycle indicator with a rainbow gradient. The cycle tells you when. The zones tell you where. Momentum tells you it's happening.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+*For educational purposes. Not financial advice — always confirm with your own analysis and test on your own instruments and timeframes before trading live.*
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

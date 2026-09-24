@@ -16,6 +16,7 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Hull Moving Average (HMA) review. Tested on 1H/4H charts. Best settings, entry/exit rules, pros, cons, and alternatives for traders."
+grounding: "none (no source found)"
 ---
 ## What This Indicator Actually Does
 
@@ -23,48 +24,44 @@ The Hull Moving Average (HMA) is a smoothed moving average designed to reduce la
 
 ## Key Features That Set It Apart
 
-The HMA’s killer feature is its near-zero lag. On a 1H chart, the HMA(20) turns about 2-3 bars earlier than a comparable EMA(20), yet it doesn’t whip around like a shorter-period MA. The built-in smoothing means you don’t get the jagged noise of a simple moving average. TradingView’s version is clean—no extra bells or whistles, just the line with optional color changes based on slope direction.
+The HMA's defining characteristic is its reduced lag relative to standard moving averages. It responds faster than a comparable EMA or SMA, yet it doesn't whip around like a shorter-period MA. The built-in smoothing means you avoid the jagged noise of a simple moving average. TradingView's version is clean—no extra bells or whistles, just the line with optional color changes based on slope direction.
 
-## Best Settings I've Tested
+## Settings and How to Tune Them
 
-I spent two weeks running this on BTC/USD and EUR/USD across multiple timeframes. Here’s what worked:
+The period setting is the main variable to consider. Shorter periods make the line more responsive; longer periods make it smoother and slower to react. The color-change feature—which shifts the line's color based on slope direction—can be toggled on or off depending on whether you want a visual cue for trend direction.
 
-- **Scalping (1m-5m):** Period 9, color change on. It reacts fast enough for quick entries but still filters micro-noise.
-- **Swing trading (1H-4H):** Period 20-30. The HMA(20) on 1H gives clear trend shifts without lagging behind major moves.
-- **Position trading (Daily):** Period 50-55. Provides a reliable trend filter for multi-week holds.
-
-Avoid periods below 5 on any timeframe—you’ll get false signals from random wicks. The color-change feature is useful as a visual cue but never relies on it alone for entries.
+Conceptually, the choice of period should match your trading horizon: shorter for quick, reactive signals and longer for a smoother trend filter. Extremely short periods will pick up random wicks and produce noise, so the period should be long enough to filter bar-to-bar chop. The color-change feature is best treated as a visual aid rather than a signal in itself.
 
 ## How to Use It: Entry/Exit Logic
 
-The HMA is a trend-following tool, not a standalone system. Here’s a simple strategy I tested:
+The HMA is a trend-following tool, not a standalone system. A common approach:
 
-**Entry:** Buy when price closes above the HMA and the line turns blue (upward slope). Sell when price closes below the HMA and the line turns red (downward slope).
+**Entry:** Buy when price closes above the HMA and the line turns upward (color change). Sell when price closes below the HMA and the line turns downward.
 
-**Exit:** Trail the HMA as dynamic support/resistance. On a long trade, exit if price closes below the HMA by 0.5% (or 10 pips on forex). For shorts, exit if price closes above by the same margin.
+**Exit:** Trail the HMA as dynamic support/resistance. On a long trade, exit if price closes back below the HMA. For shorts, exit if price closes back above it.
 
-**Filter:** Add a volume oscillator. Only take signals when volume is above its 20-period average. This eliminates false breakouts during low-activity periods.
+**Filter:** Combine with a volume oscillator. Only take signals when volume is above its average. This helps filter out false breakouts during low-activity periods.
 
-**Risk management:** Place stop-loss at 1.5x the average true range (ATR) below/above the entry. On 1H BTC, that’s roughly 0.8%—tight enough to protect capital, wide enough to avoid noise.
+**Risk management:** Place stop-loss based on average true range (ATR) below or above the entry. The exact multiple depends on your risk tolerance and the instrument's volatility.
 
 ## Pros & Cons
 
 **Pros:**
-- Significantly less lag than EMA/SMA of same period
-- Smooth curve—no false wiggles
+- Less lag than EMA/SMA of the same period
+- Smooth curve—fewer false wiggles
 - Works across all timeframes
 - Simple to interpret
 
 **Cons:**
 - Not a complete system—needs confirmation
 - Can whipsaw in ranging markets (common to all MAs)
-- No built-in alerts for crossovers (you’ll need to add them manually)
+- No built-in alerts for crossovers (you'll need to add them manually)
 - Color-change logic can lag slightly during fast reversals
 
-## Who It’s For
+## Who It's For
 
-- **Trend traders** who want a faster signal than EMA but cleaner than a simple moving average.
-- **Swing traders** on 1H-4H charts who need a reliable trend filter.
+- **Trend traders** who want a faster signal than an EMA but cleaner than a simple moving average.
+- **Swing traders** who need a reliable trend filter.
 - **Scalpers** willing to combine it with price action (support/resistance, candlestick patterns).
 - **Not for** range traders or those who want a one-click trading system.
 
@@ -73,28 +70,37 @@ The HMA is a trend-following tool, not a standalone system. Here’s a simple st
 - **EMA (Exponential Moving Average):** More responsive than SMA but still lags behind HMA. Use if you prefer a more standard tool.
 - **WMA (Weighted Moving Average):** Closest cousin to HMA. Slightly less smooth but more widely available.
 - **SuperTrend:** Better for defining actual support/resistance levels with volatility adjustment. Preferred by position traders.
-- **TradingView’s “Moving Average Exponential”**: Free, reliable, but lags more. Good if you don’t need the speed.
+- **TradingView's "Moving Average Exponential":** Free, reliable, but lags more. Good if you don't need the speed.
 
 ## FAQ
 
-**Q: Does the HMA repaint?**  
+**Q: Does the HMA repaint?**
 No. The TradingView HMA is a fixed calculation on each closed bar. No repainting.
 
-**Q: Best timeframes for HMA?**  
-1H and 4H give the best balance of speed and reliability. Avoid below 5m unless you’re scalping with strict risk management.
+**Q: Best timeframes for HMA?**
+It depends on your trading style. Shorter timeframes suit scalping with strict risk management; longer timeframes suit swing and position trading. There is no single best timeframe.
 
-**Q: Can I use HMA alone for trading?**  
-Technically yes, but you’ll get chopped up in ranges. Pair it with a volume indicator or RSI for confirmation.
+**Q: Can I use HMA alone for trading?**
+Technically yes, but you'll get chopped up in ranges. Pair it with a volume indicator or RSI for confirmation.
 
-**Q: How does it compare to the Tilson T3?**  
+**Q: How does it compare to the Tilson T3?**
 T3 is smoother but slower. HMA is faster but more prone to noise in choppy markets. Choose based on your timeframe.
 
 ## Final Verdict
 
-The Hull Moving Average is a solid upgrade over standard moving averages for traders who need speed without sacrificing smoothness. It’s not a holy grail—no indicator is—but it’s one of the better trend-following tools in TradingView’s free catalog. The 4-star rating reflects its effectiveness as a component, not a complete system. If you already use MAs, swap one out for the HMA and see if it improves your entry timing. It likely will.
+The Hull Moving Average is a solid upgrade over standard moving averages for traders who need speed without sacrificing smoothness. It's not a holy grail—no indicator is—but it's one of the better trend-following tools in TradingView's free catalog. Its strength is as a component, not a complete system. If you already use MAs, the HMA is worth comparing against your current choice for entry timing.
 
-**Rating:** ⭐⭐⭐⭐ (4/5) – A reliable, fast-moving trend filter that earns its place in any trend trader’s toolkit.
----
+**Rating:** ⭐⭐⭐⭐ (4/5) – A reliable, fast-moving trend filter that earns its place in any trend trader's toolkit.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Hull MA** implementation was backtested on 30 markets over 5 years of daily data (43,820 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: AMD 56.0%, AAPL 54.5%, PLTR 53.4%, USDJPY 52.9%
+- Weakest markets: WTI 46.2%, VIX 44.5%, SHIBUSD 26.6%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

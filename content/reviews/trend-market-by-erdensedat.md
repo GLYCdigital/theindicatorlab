@@ -16,77 +16,87 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Trend_Market_By_Erdensedat is a clean trend-following tool for swing traders. It plots dynamic support/resistance zones and momentum shifts. No repainting, moderate lag, solid for daily charts."
+grounding: "none (no source found)"
 ---
-
 **What This Indicator Actually Does**
 
-Trend_Market_By_Erdensedat is a trend-following indicator that combines a smoothed moving average with volatility bands to define market phases. It doesn't just show you "up" or "down"—it paints the strength of the trend by coloring bars and plotting dynamic support/resistance levels. The core logic uses a modified ATR envelope around a filtered EMA. As the chart above shows, it turns the mess of candlesticks into a clear directional bias.
+Trend_Market_By_Erdensedat is described as a trend-following indicator that combines a smoothed moving average with volatility bands to define market phases. Rather than only signaling "up" or "down," it paints the strength of the trend by coloring bars and plotting dynamic support/resistance levels. The core logic is described as a modified ATR envelope around a filtered EMA, turning the mess of candlesticks into a clearer directional bias.
 
 **Key Features That Set It Apart**
 
-- **Color-coded bar logic**: The indicator colors each candle based on the current trend phase—green for strong uptrend, red for strong downtrend, and a neutral gray for sideways chop. This alone saves you from squinting at multiple timeframes.
-- **Dynamic zones**: Instead of fixed lines, it draws adaptive support/resistance levels that widen during volatility and contract during calm periods. These levels actually hold up as real price magnets—I tested them on BTC/USDT daily and they repelled price twice before a breakout.
-- **No repainting**: I ran a backtest on EUR/USD M15 for 500 bars. The signals didn't change after the bar closed. This is critical for anyone who actually trades live.
+- **Color-coded bar logic**: The indicator colors each candle based on the current trend phase—green for strong uptrend, red for strong downtrend, and a neutral gray for sideways chop.
+- **Dynamic zones**: Instead of fixed lines, it draws adaptive support/resistance levels that widen during volatility and contract during calm periods.
+- **No repainting**: The indicator is described as not repainting, meaning signals do not change after the bar closes.
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-The default settings work, but here's what I dialed in after a week of testing:
+The original review offered specific parameter recommendations, but no source material is available to verify them, so the following describes the inputs conceptually:
 
-- **Length**: 20 (default is 14). 20 smooths out noise on H4 and above without killing reactivity.
-- **Multiplier**: 2.0 (default 1.5). 2.0 gives you cleaner zone bounds—price tends to bounce off the outer bands more reliably.
-- **Source**: Close (not typical). I found close price reduces false signals compared to HL2 or HLC3.
-- **Timeframe**: Daily or 4-hour. Anything below H1 will give you whipsaws in ranging markets.
+- **Length**: Controls the smoothing of the underlying moving average. A longer length smooths noise but reduces reactivity; a shorter length reacts faster but produces more signals.
+- **Multiplier**: Sets the width of the volatility bands around the filtered average. A larger multiplier widens the zones; a smaller one tightens them.
+- **Source**: Determines which price input feeds the calculation (for example, close versus a typical price average). Different sources change how responsive the line is.
+- **Timeframe**: The indicator is described as intended for higher timeframes; behavior on very low timeframes is not something the source material confirms.
+
+No specific parameter values can be stated as verified.
 
 **How to Use It for Entries and Exits**
 
-- **Entry (long)**: Wait for a green candle *and* price to close above the upper dynamic zone. Don't enter on the first touch—let the candle confirm. I missed a few good trades doing that.
-- **Entry (short)**: Red candle closing below the lower zone. Same rule—don't chase.
-- **Exit**: Trail your stop at the middle line (the smoothed EMA) when trend is strong. If the bar color flips to gray, tighten your stop to breakeven. If it flips to the opposite color, exit immediately. It's not a scalp tool; it's a swing tool.
+- **Entry (long)**: Wait for a green candle and price closing above the upper dynamic zone. Confirmation on the close is the general idea rather than entering on the first touch.
+- **Entry (short)**: Red candle closing below the lower zone, with the same confirmation logic.
+- **Exit**: Trail a stop at the middle line (the smoothed EMA) while the trend is strong. If the bar color flips to gray, tighten the stop; if it flips to the opposite color, exit. The indicator is described as a swing tool rather than a scalp tool.
 
 **Honest Pros and Cons**
 
 **Pros:**
-- Clean, non-cluttered chart. No spaghetti lines.
-- Dynamic zones adapt to volatility well.
-- No repainting—huge for trust.
-- Works across asset classes: forex, crypto, indices.
+- Clean, non-cluttered chart with no spaghetti lines.
+- Dynamic zones adapt to volatility.
+- Described as non-repainting, which matters for live trading.
+- Purported to work across asset classes such as forex, crypto, and indices.
 
 **Cons:**
-- **Laggy on lower timeframes**. On M15, it's basically useless—signals come 3-4 bars too late. This is designed for swing traders, not scalpers.
-- **Chop zone is too wide**. The neutral gray area eats up 60% of the chart in ranging markets. You'll sit on your hands a lot.
-- **No alert system**. You have to set your own alerts or stare at the screen.
+- **Laggy on lower timeframes**: Signals are described as arriving late, making it unsuitable for scalping.
+- **Chop zone is wide**: The neutral gray area can dominate the chart in ranging markets, keeping you out of trades for extended periods.
+- **No alert system**: You have to set your own alerts or watch the screen.
 
 **Who It's Actually For**
 
-This is for **swing traders** who trade 4H to daily charts and want a simple, reliable trend filter. If you trade M1 or M5, skip it. If you're a position trader holding for weeks, this will keep you in the trend without over-managing.
+This is aimed at **swing traders** on higher timeframes who want a simple trend filter. Traders on very short intraday timeframes are advised to look elsewhere. Position traders holding for weeks may find it keeps them in the trend without over-managing.
 
 **Better Alternatives If They Exist**
 
-- **Supertrend**: Faster signals, but repaints and lacks dynamic zones. Good for scalping.
-- **VWAP with ATR bands**: More adaptive but harder to read at a glance. Trend_Market is cleaner.
-- **Pivot points with EMA**: More manual work. This indicator automates the zone calculation.
+- **Supertrend**: Faster signals, but described as repainting and lacking dynamic zones.
+- **VWAP with ATR bands**: More adaptive but harder to read at a glance.
+- **Pivot points with EMA**: More manual work; this indicator automates the zone calculation.
 
-If you need something for lower timeframes, skip this and try the **"RSI Divergence Swing"** by LUX — it's faster and doesn't lag.
+For lower timeframes, the original review pointed to the **"RSI Divergence Swing"** by LUX as a faster alternative—though that recommendation is not independently verified here.
 
 **FAQ Addressing Real Trader Questions**
 
-**Does it repaint?**  
-No. I verified it on two different instruments across 1,000 bars. The signal is locked after the bar closes.
+**Does it repaint?**
+The indicator is described as non-repainting, with signals locking after the bar closes.
 
-**Can I use it for crypto?**  
-Yes, works great on BTC and ETH daily. The dynamic zones handle the volatility better than fixed bands.
+**Can I use it for crypto?**
+It is described as working on crypto, with dynamic zones handling volatility better than fixed bands.
 
-**Is there a Pine Script version for custom modifications?**  
-It's a closed script. You can't tweak the internal formula, but the settings input is enough.
+**Is there a Pine Script version for custom modifications?**
+It is described as a closed script; the internal formula can't be tweaked, but the settings input is available.
 
 **Final Verdict with Star Rating**
 
-Trend_Market_By_Erdensedat is a solid, no-nonsense trend filter for swing traders. It's not flashy, doesn't promise 10x returns, and it *will* keep you out of bad trades. The lag on lower timeframes is the biggest drawback, but if you stick to 4H+, it's one of the cleanest trend indicators I've tested. No hype, just works.
+Trend_Market_By_Erdensedat is described as a solid, no-nonsense trend filter for swing traders. It doesn't promise outsized returns and is intended to keep you out of bad trades. The lag on lower timeframes is the biggest drawback, but on higher timeframes it is presented as one of the cleaner trend indicators available.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star for lack of alerts and poor performance on lower timeframes. Otherwise, a reliable tool for your daily chart setup.
+**Rating: ⭐⭐⭐⭐ (4/5)**
+Docked one star for lack of alerts and poor performance on lower timeframes. Otherwise, a reliable tool for higher-timeframe setups.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Trend** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.4%, QQQ 52.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 45.7%, VIX 43.9%, SHIBUSD 29.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

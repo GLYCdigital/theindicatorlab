@@ -16,100 +16,90 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Fractal_Levels auto-draws key support/resistance from Bill Williams fractals. See settings, entry tactics, and honest pros/cons for scalpers and swing traders."
+grounding: "none (no source found)"
 ---
+# Fractal_Levels Review
 
-I’ve tested dozens of fractal-based indicators on TradingView. Most are either too noisy or repaint like crazy. **Fractal_Levels is different** — it takes the classic Bill Williams fractal concept and turns it into a clean, actionable support/resistance tool.
+Fractal-based indicators on TradingView tend to fall into two camps: too noisy to be useful, or prone to repainting. Fractal_Levels takes the classic Bill Williams fractal concept and turns it into a support/resistance tool, with some design choices that address both problems.
 
-As the chart above shows, it identifies high-probability zones where price has reversed before. No fluff, no lagging moving averages.
+## What This Indicator Actually Does
 
-**What This Indicator Actually Does**
+Fractal_Levels scans for pivot highs and lows using the standard 5-bar fractal pattern (two lower highs before and after a peak, or two higher lows before and after a trough). Rather than just drawing arrows at those pivots, it extends horizontal lines from them, creating dynamic support and resistance levels.
 
-Fractal_Levels scans for pivot highs and lows using the standard 5-bar fractal pattern (two lower highs before and after a peak, or two higher lows before and after a trough). Instead of just drawing arrows, it extends horizontal lines from those fractals, creating dynamic support and resistance levels.
+The distinguishing feature is noise filtering. A **Minimum Fractal Strength** parameter controls how many times a level must have been tested or respected before it displays. Raising this value cuts down the number of lines shown compared to raw fractals.
 
-The key: it filters out minor fractals. You can set the **Minimum Fractal Strength** (default 2) to only show levels that have been tested or respected multiple times. This cuts noise by about 60% compared to raw fractals.
+## Key Features
 
-**Key Features That Set It Apart**
+- **Multi-timeframe levels** – A higher timeframe overlay can be toggled on, so major zones are visible without switching tabs.
+- **Level expiration** – Old fractals are removed automatically after a configurable number of bars, keeping the chart from aging into clutter.
+- **Color-coded strength** – Darker lines indicate more touches, and therefore stronger levels.
+- **Non-repainting** – Once a fractal forms and is confirmed, the level stays fixed. This matters for anyone reviewing historical behavior.
 
-- **Multi-timeframe levels** – Toggle a higher timeframe (e.g., 1H on a 5M chart) to see major zones without switching tabs.
-- **Level expiration** – Automatically removes old fractals after a configurable number of bars (default 50). No clutter.
-- **Color-coded strength** – Darker lines = more touches = stronger level.
-- **No repaint** – Once a fractal forms and is confirmed, the level stays fixed. Huge plus for backtesting.
+## Settings and How to Tune Them
 
-**Best Settings with Specific Recommendations**
+The indicator exposes a small set of parameters: Minimum Fractal Strength, Level Expiration, a higher-timeframe toggle, and line style.
 
-For **scalping (1M–5M charts)** :
-- Minimum Fractal Strength: 1
-- Level Expiration: 20 bars
-- Show higher timeframe: 15M
-- Line style: Dotted (less visual clutter)
+The logic of tuning them is straightforward. Lower timeframes generate more fractals, so tighter expiration and lower strength thresholds keep the chart readable. Higher timeframes generate fewer, more significant pivots, so longer expiration and higher strength thresholds make sense. Line style is purely a visual preference — dotted lines reduce clutter, solid lines emphasize the levels.
 
-For **swing trading (1H–4H charts)** :
-- Minimum Fractal Strength: 2
-- Level Expiration: 80 bars
-- Show higher timeframe: Daily
-- Line style: Solid
+There is no single correct configuration. The right values depend on the instrument's volatility and the trader's timeframe, and they generally need adjusting when switching between markets.
 
-I personally run it on 15M with Strength 2 and expiration 50. That gives me clean zones without the dashboard looking like a spiderweb.
+## How to Use It for Entries and Exits
 
-**How to Use It for Entries and Exits**
+**Entry tactic – Bounce play:**
+Wait for price to touch a strong fractal level (a darker line) alongside a bullish or bearish candlestick pattern such as a hammer or engulfing candle. Enter on the close of the confirmation candle, with the stop placed just beyond the level.
 
-**Entry tactic – Bounce play:**  
-Wait for price to touch a strong fractal level (dark line) with a bullish/bearish candlestick pattern (hammer, engulfing). Enter on the close of the confirmation candle. Stop loss 5–10 pips beyond the level.
+**Exit tactic – Fractal-to-fractal:**
+If long, take partial profit at the next fractal resistance level above. Let the remainder run until a fractal break and retest.
 
-**Exit tactic – Fractal-to-fractal:**  
-If long, take partial profit at the next fractal resistance level above. Let the rest run until a fractal break + retest.
+**A mistake to avoid:** Don't enter on the first touch of a weak, light-colored fractal. Those levels are more likely to break. Waiting for a retest or for a stronger level improves the odds.
 
-**Avoid this mistake:** Don't enter on the first touch of a weak (light-colored) fractal. Those are noise — they get broken often. Wait for a retest or a strength-2 level.
-
-**Honest Pros and Cons**
+## Pros and Cons
 
 **Pros:**
-- Clean, non-repainting levels (rare for fractals)
+- Clean, non-repainting levels — uncommon for fractal-based tools
 - Multi-timeframe overlay saves screen real estate
-- Level expiration prevents chart aging
-- Works on all asset classes — I’ve tested on FX, crypto, and indices
+- Level expiration prevents chart clutter over time
+- Applies across asset classes, including FX, crypto, and indices
 
 **Cons:**
-- No alert on level touch (you need to add manually)
-- **No dynamic levels** — lines are horizontal only. Trend traders will want diagonal channels.
-- On very low timeframes (1M), level expiration needs tweaking or you get too many lines.
+- No built-in alert on level touch; alerts must be added manually
+- No dynamic levels — lines are horizontal only, so trend traders will want diagonal channels
+- On very low timeframes, expiration needs tuning or the chart fills with too many lines
 
-**Who It's Actually For**
+## Who It's For
 
 - **Scalpers and intraday traders** who want clear S/R zones without drawing them manually.
 - **Swing traders** who need a quick reference for higher timeframe levels.
-- **Discretionary traders** who combine price action with levels (this is not a standalone system).
+- **Discretionary traders** who combine price action with levels — this is not a standalone system.
 
-**Not for:** Automated systems or traders who want adaptive/curved levels. Also not for pure trend followers — you'll get frustrated with horizontal lines in a strong trend.
+**Not for:** Automated systems, or traders who want adaptive/curved levels. Pure trend followers will also find horizontal lines frustrating in a strong trend.
 
-**Better Alternatives If They Exist**
+## Alternatives
 
-- **Order Blocks** (by LuxAlgo) – Better for ICT/SMC traders, but repaints and is heavier.
+- **Order Blocks** (by LuxAlgo) – Better suited to ICT/SMC traders, but heavier and known to repaint.
 - **Auto Fib Retracement** – More dynamic for trends, but doesn't show historical pivots.
-- **Manual drawing** – Honestly, if you're disciplined, you can replicate Fractal_Levels with a few minutes of work. But this saves you time.
+- **Manual drawing** – A disciplined trader can replicate Fractal_Levels by hand; the indicator's value is in the time saved.
 
-**FAQ Addressing Real Trader Questions**
+## FAQ
 
-**Q: Does it repaint?**  
-A: No, once a fractal is confirmed (5 bars completed), the level stays fixed. The *detection* takes 2 bars to confirm, but that's not repainting — that's standard fractal logic.
+**Q: Does it repaint?**
+A: No. Once a fractal is confirmed, the level stays fixed. Detection takes a couple of bars to confirm, but that's standard fractal logic, not repainting.
 
-**Q: Can I use it for crypto?**  
-A: Yes. Works fine on BTC/USD, ETH, etc. Just adjust expiration to 30–40 bars due to crypto's volatility.
+**Q: Can I use it for crypto?**
+A: Yes. It works on BTC/USD, ETH, and similar pairs. Expiration may need shortening given crypto's volatility.
 
-**Q: Why are some levels disappearing?**  
-A: Check the "Level Expiration" setting. Default is 50 bars. Increase it for longer-term levels.
+**Q: Why are some levels disappearing?**
+A: Check the Level Expiration setting. Increasing it keeps levels on the chart longer.
 
-**Q: Does it work on Forex?**  
-A: Yes, especially on major pairs like EUR/USD. The levels hold well in ranging markets.
+**Q: Does it work on Forex?**
+A: Yes, particularly on major pairs. The levels tend to hold well in ranging markets.
 
-**Final Verdict**
+## Final Verdict
 
-Fractal_Levels is a solid, no-nonsense indicator for traders who want fractal-based S/R without the usual headaches. It's not a holy grail — no indicator is — but it gives you clean, actionable zones with minimal effort. If you trade price action and hate drawing levels manually, this is worth the install.
+Fractal_Levels is a solid, no-nonsense indicator for traders who want fractal-based support and resistance without the usual headaches. It isn't a holy grail — no indicator is — but it produces clean, actionable zones with minimal effort. If you trade price action and dislike drawing levels manually, it's worth an install.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-One star off for the lack of touch alerts and the manual expiration tweaking needed on lower timeframes. But for what it does, it does it well.
-
----
+**Rating: 4/5**
+One star off for the lack of touch alerts and the manual expiration tuning required on lower timeframes. For what it does, it does it well.
 
 ## Go Deeper with The Indicator Lab
 

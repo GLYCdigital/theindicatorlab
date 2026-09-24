@@ -17,82 +17,90 @@ categories:
 rating: 4
 description: "Honest Std_Time review: tested settings, entry/exit logic, pros & cons. See if this trend indicator fits your trading style before installing."
 tv_script_url: "https://www.tradingview.com/script/ezlWRUv8-std-time/"
+sources: ["https://www.tradingview.com/script/ezlWRUv8-std-time/", "https://github.com/hikari112/std_time/wiki"]
 ---
-Let's cut through the noise. Std_Time is a trend indicator that doesn't try to be clever — and that's exactly why it works. After a few weeks of backtesting and live charts, I can tell you it's not revolutionary, but it fills a specific gap that most trend tools miss.
+# Std_Time Review: What This Library Actually Does
 
-The core concept is simple: it measures how long a trend has been running using standard deviation of time between price swings. Instead of telling you *where* the trend is, it tells you *how mature* it is. That's a subtle shift in perspective that changes how you time entries.
+Let's cut through the noise. Std_Time is not a trend indicator, and anyone reviewing it as one has misread the listing. It is a Pine Script v6 **library** — infrastructure for time, not a signal generator. The description is blunt about it: "A calendar, not a bag of helpers."
 
-When I first loaded it on the MACD chart you see above, I noticed something immediately — the indicator doesn't repaint. That's rare in this category. The signal lines hold their values, which makes it actually usable for backtesting and live decision-making. Most trend maturity tools I've tested are garbage in this department.
+The premise is that "what day is it in Tokyo" and "is the market open" are questions an indicator asks constantly, and Pine's built-ins only answer halfway. They can format a timestamp; they cannot tell Thanksgiving from a Thursday. Std_Time exists to close that gap.
 
-Here's what separates Std_Time from the pack: it filters out micro-trends by default. The built-in noise threshold means you're not getting whipsawed on every 3-candle pullback. Notice in the screenshot how the colored zones only shift during genuine trend transitions, not during consolidation. That's the standard deviation component doing its job.
+## What's actually inside
 
-**Best settings I found:**
+The scope is wide, and the source material lays it out in a table:
 
-After testing across BTC, EURUSD, and TSLA on multiple timeframes, here's what worked:
+- **Civil arithmetic** — a `DateTime` type with withers and adjusters, keeping calendar time apart from exact time the way `java.time` keeps `Period` apart from `Duration`.
+- **Zones** — thirteen zones with their actual DST rules, with gaps and overlaps resolved explicitly rather than guessed.
+- **Exchange calendars** — NYSE, LSE, CME, JPX, EUREX, HKEX, ASX, TSX, SSE, BSE, SGX and 24/7 crypto, with named closures, half days and lunch breaks.
+- **Sessions** — bounds, windows, progress, bar counts, and a last-bar flag that fires on the closing bar itself.
+- **Trading days** — add, count and roll by ISDA business-day conventions; year fractions under the standard day counts.
+- **Expiries** — monthly, weekly, quarterly and 0DTE, plus the VIX settlement rule.
+- **Text** — ISO-8601 in and out, week dates, durations, and a relative formatter.
 
-- Length: 14 (default) — keep it here for intraday. Drop to 9 on 4H+ charts for faster response.
-- Smoothing: 3 — any higher and you lose the timing edge.
-- Threshold: 2.0 — this is the sweet spot. At 1.5, you get too many false trend shifts. At 2.5, you miss early entries.
-- Enable the "Time Filter" — limits signals to your active session. This was the single biggest improvement to my win rate.
+That's the surface area. The design rationale underneath is worth understanding.
 
-**How I actually trade it:**
+## The one conversion at the bottom
 
-The entry logic is straightforward. Wait for the indicator to shift from trend-expansion mode to trend-maturity mode (the color change on the chart). That's your alert that the current move is getting long in the tooth. Enter on the next pullback, not on the signal itself.
+Everything routes through a single civil-to-epoch pair — Howard Hinnant's algorithm, the one C++20 adopted for `<chrono>`. Day-of-week, ISO weeks, DST boundaries, holidays and expiries are all derived from it, so there is no second implementation that can quietly disagree with the first.
 
-For exits, I pair it with a simple 20 EMA. If price closes below the EMA and Std_Time shows trend maturity, I'm out. The combination catches momentum exhaustion before it reverses hard. On the chart above, you can see this played out cleanly on the last two swings — the maturity signal fired, price pushed a bit further, then the EMA cross confirmed the exit.
+Two distinctions the API enforces that are easy to miss:
 
-Position sizing is where this indicator shines. When Std_Time shows a young trend (first 20% of its historical duration range), I size positions at 1.5x normal. When it shows a mature trend (past 80%), I cut to 0.5x. This alone improved my risk-adjusted returns more than any entry tweak.
+- **Calendar arithmetic and instant arithmetic are separate families.** The documentation gives the example directly: `plus_days(1)` moves the calendar and keeps the wall-clock time, while `plus_ms(86400000)` moves the instant. On two Sundays a year they differ.
+- **An offset and a zone are different things**, because they are. When a DST transition makes a local time impossible or ambiguous, you choose the resolution policy instead of inheriting one.
 
-**The honest trade-offs:**
+## Verification and scope
 
-Pros:
-- No repainting — critically important for trust
-- Works across timeframes without heavy re-optimization
-- The maturity concept adds genuine information, not just another oscillator
-- Clean visual design, easy to read at a glance
+This is where the library earns credibility rather than asserting it. Rules do the work wherever the world runs on rules: VIX settlement is derived, not tabled, and reproduces every published Cboe settlement from 2021 through 2026, including all four Tuesday exceptions. The calendars are checked date-by-date against reference records over their stated ranges — NYSE and LSE on every single day from 1976 to 2035, HKEX through 2049, EUREX across its full window with zero differences.
 
-Cons:
-- It's a timing tool, not a direction tool. You still need a trend direction filter.
-- On low-volume altcoins, the standard deviation calculation gets noisy. Stick to liquid markets.
-- The "Time Filter" can be annoying if you trade 24/7 markets like crypto across global sessions.
+Every calendar declares the years it answers exactly. Past that horizon it returns `UNKNOWN` — a real three-valued answer — rather than reading an untabled holiday as a trading day. As the documentation puts it: completeness is a claim with a date on it, and every calendar states its date.
 
-**Who should install this:**
+The wiki also maintains a **Scope and Limitations** page listing what is not modelled, including three known and deliberate divergences from published exchange data. Publishing the places your data disagrees with the exchange is not a common move.
 
-Momentum traders who've been burned by late entries. If you're the type who sees a breakout, chases it, and gets stopped out at the top, Std_Time will save you money. It's also solid for swing traders who want to avoid picking tops in mature trends.
+## Settings and How to Tune Them
 
-Day traders on 5-minute charts will find it less useful — the signals are too slow for scalping. You'd be better off with a Volume Profile or a simple VWAP strategy.
+There is no settings panel here. Std_Time is a library — you import it and call its exports, so "configuration" means choosing the right function for the question you arrived with, not tuning a length or threshold.
 
-**Alternatives worth considering:**
+The documentation points to two entry paths: an **API Index** listing all 240 exports alphabetically on one page, and a **Task Index** sorting the same set by the question you arrived with. If you are new, the recommended path is the Core Concepts sequence — twelve short pages, each building on the last, with *Civil and Exact Arithmetic* and *Value Semantics* called out as the two that save the most debugging.
 
-- If you want the same maturity concept but with built-in direction, look at the SuperTrend with a time-decay filter.
-- For pure trend strength, the ADX with Wilder's smoothing is still the gold standard.
-- If you want something that combines volume and trend maturity, Volume-Weighted MACD does a better job on higher timeframes.
+The meaningful choices are conceptual, not numeric: which zone, which calendar, which resolution policy for ambiguous DST times, and whether a given operation belongs in the calendar family or the instant family.
 
-**Common questions I get:**
+## The honest trade-offs
 
-*Does it work on crypto?* Yes, but only on BTC, ETH, and the top 10 by volume. The standard deviation math needs consistent liquidity.
+**Strengths:**
 
-*Can I automate it?* The signal is clean enough for Pine Script automation. I've seen it work in backtesting frameworks without curve-fitting issues.
+- One conversion, one source of truth — derived values cannot drift apart from each other.
+- Explicit resolution policy for DST gaps and overlaps instead of a silent default.
+- Calendars that state their coverage window and return `UNKNOWN` past it.
+- Verification documented by oracle, range and count, with limitations published alongside.
 
-*What timeframe is best?* 1H to 4H gives the most reliable readings. Below 15 minutes, the noise threshold starts to blur the signals.
+**Limitations:**
 
-**Final verdict:**
+- It is infrastructure, not a strategy. It tells you what day it is and whether the market is open; it does not tell you what to trade.
+- Coverage is bounded by each calendar's declared range, and past that horizon you get `UNKNOWN`, not a guess.
+- Three known divergences from published exchange data exist and are deliberate — you need to read them to know whether they affect you.
+- Full detail lives in the wiki rather than the script page, so the listing alone won't tell you everything.
 
-Std_Time earns its four stars by doing one thing well: telling you when a trend is getting too old to chase. It's not a complete system, and it doesn't pretend to be. But as a filter for your existing strategy, it's genuinely useful. The no-repaint design and the maturity concept make it worth installing — just don't expect it to be your only tool.
+## Who should install this
 
-If you're a trend trader who keeps buying tops, this will pay for itself in avoided losses within a month. If you're looking for a holy grail, keep scrolling.
+Pine developers building anything that has to reason about sessions, holidays, expiries or time zones — especially anyone who has hand-rolled a holiday table and watched it go stale. If your script needs to know the difference between a Thursday and Thanksgiving, or count trading days under ISDA conventions, this replaces a pile of brittle custom code with a single import.
 
-⭐⭐⭐⭐ — Solid, honest work that fills a real gap.
+If you want an indicator that plots arrows on a chart, this is not that. It is the layer you build one on top of.
 
 ## Frequently Asked Questions
 
-### Is Std_Time worth it?
+**Is Std_Time worth it?**
+That depends on whether you are writing Pine that needs calendar or session logic. If you are, the verification record and the single-conversion design are the reasons to consider it. If you want a ready-made signal, look elsewhere.
 
-Based on testing across multiple timeframes, Std_Time delivers solid value for traders who need trend analysis.
+**Does this indicator repaint?**
+It is not an indicator. It is a library of time and calendar functions, and the source material makes no repainting claim in either direction — so treat any repainting assertion about it as unsupported.
 
-### Does this indicator repaint?
+**What does it cost?**
+The source material does not state a price or access model; the documentation is hosted at the linked GitHub wiki.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+---
+
+The full documentation, per-calendar coverage windows, the error model, and design rationale live at the project wiki: https://github.com/hikari112/std_time/wiki
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

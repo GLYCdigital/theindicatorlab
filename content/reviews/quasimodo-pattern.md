@@ -16,63 +16,59 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Quasimodo_Pattern auto-detects the classic M/W reversal pattern. See how to trade it, best settings, and why it's not a holy grail."
+grounding: "none (no source found)"
+---
+**Description:** Quasimodo_Pattern auto-detects the classic M/W reversal pattern. A look at what it does, how to trade it, and why it isn't a holy grail.
+
 ---
 
-**Description:** Quasimodo_Pattern auto-detects the classic M/W reversal pattern. See how to trade it, best settings, and why it's not a holy grail.
-
----
-
-If you've been around the block, you know the Quasimodo pattern — also called an inverse head and shoulders or an M/W top/bottom. It's one of those reversal setups that looks obvious in hindsight but is a pain to spot live. This indicator tries to do the heavy lifting for you.
-
-I ran it on BTC/USD, EUR/USD, and a few altcoin pairs over the last two weeks. Here's the honest breakdown.
+The Quasimodo pattern — also called an inverse head and shoulders, or an M/W top/bottom — is one of those reversal setups that looks obvious in hindsight but is a pain to spot live. This indicator attempts to do the scanning for you.
 
 ## What This Indicator Actually Does
 
-Quasimodo_Pattern scans price action for the classic three-touch reversal structure: a left peak/trough, a deeper extreme (the "head"), and a right peak/trough. When it finds a valid formation with a neckline break, it draws the pattern on the chart and marks the entry zone.
+Quasimodo_Pattern scans price action for the classic three-touch reversal structure: a left peak/trough, a deeper extreme (the "head"), and a right peak/trough. When it identifies a formation with a neckline break, it draws the pattern on the chart and marks the entry zone.
 
-It's not magic. It's just geometry with some sensible filters.
+It isn't magic. It's geometry with some filters layered on top.
 
 ## Key Features That Set It Apart
 
-- **Auto-draws the neckline** – You don't need to drag lines yourself. The indicator plots the breakout level after confirmation.
-- **Adjustable sensitivity** – You can tweak how many bars the pattern spans. I found 20–50 bars works best for intraday; 100+ for swing trades.
-- **Volume filter option** – It can require volume to confirm the neckline break. This kills a lot of false signals on low-liquidity pairs.
+- **Auto-draws the neckline** – No manual line dragging. The indicator plots the breakout level after confirmation.
+- **Adjustable sensitivity** – The pattern span is configurable, letting you control how many bars a formation can cover.
+- **Volume filter option** – It can require volume to confirm the neckline break, which helps cut down false signals on low-liquidity pairs.
 - **Stop-loss and target levels** – It projects a default risk-reward zone based on the pattern height.
 
-## Best Settings (What I Actually Use)
+## Settings and How to Tune Them
 
-- **Pattern length:** 30 bars on 1-hour charts. Shorter than 20 and you get noise; longer than 60 and you're waiting forever.
-- **Minimum swing height:** 2.5% for crypto, 0.5% for forex. This filters out micro-wobbles.
-- **Neckline confirmation:** 1 candle close beyond the line. With 2 candles, you miss moves.
-- **Volume filter:** ON for forex, OFF for crypto. Crypto volume is too erratic.
+- **Pattern length:** Controls how many bars a valid formation can span. Shorter spans pick up smaller, noisier structures; longer spans mean fewer, slower signals.
+- **Minimum swing height:** A threshold that filters out micro-moves. Set it higher on noisier instruments and lower on cleaner ones.
+- **Neckline confirmation:** How many candle closes beyond the line are required before the pattern is considered valid. More candles means stricter confirmation.
+- **Volume filter:** Optionally requires volume to validate the neckline break.
 
-## How I Use It for Entries and Exits
+## How to Use It for Entries and Exits
 
-I don't enter the second the neckline breaks. I wait for a retest. Classic Quasimodo logic: if the price breaks the neckline, pulls back to it, then rejects — that's my trigger.
+Rather than entering the moment the neckline breaks, the classic Quasimodo approach waits for a retest: price breaks the neckline, pulls back to it, then rejects. That rejection is the trigger.
 
-**Entry:** Limit order at the neckline after a retest candle closes back in breakout direction.
-**Stop loss:** Just beyond the extreme of the head. That's about 1.5–2× the pattern height in my tests.
-**Take profit:** At 1× the pattern height from the neckline. I'll trail from there.
-
-Example: On the chart above, you can see a clear M-top on BTC 1H. The indicator flagged it, I waited for the retest, and got a solid 2.3% move.
+**Entry:** Limit order at the neckline after a retest candle closes back in the breakout direction.
+**Stop loss:** Just beyond the extreme of the head.
+**Take profit:** At the pattern height measured from the neckline, with a trail from there.
 
 ## Honest Pros and Cons
 
 **Pros:**
 - Saves time scanning for the pattern manually.
-- The volume filter genuinely reduces false signals.
-- Works across asset classes — stocks, forex, crypto.
+- The volume filter can reduce false signals.
+- Applies across asset classes — stocks, forex, crypto.
 
 **Cons:**
 - Still generates false signals in ranging markets. No indicator fixes that.
-- The default sensitivity is too high. You'll need to dial it in.
-- No multi-timeframe aggregation. Would love to see it confirm on higher TF.
+- The default sensitivity runs eager; it typically needs dialing in.
+- No multi-timeframe aggregation for higher-timeframe confirmation.
 
 ## Who It's Actually For
 
-This is for intermediate traders who already understand reversal patterns. Beginners will see lines and think it's a signal to buy — it's not. You still need context (trend, support/resistance, volume).
+This is for intermediate traders who already understand reversal patterns. Beginners may see lines and treat them as a buy signal — they aren't. Context (trend, support/resistance, volume) still matters.
 
-If you're scalping 1-minute charts, skip it. Too much noise. Works best on 1H to 4H.
+It is poorly suited to very low timeframes, where noise dominates. Higher timeframes give the pattern room to form cleanly.
 
 ## Better Alternatives
 
@@ -80,26 +76,24 @@ If you're scalping 1-minute charts, skip it. Too much noise. Works best on 1H to
 - **Auto Harmonic Pattern** – For more advanced structures like Gartley or Bat.
 - **Pattern Matrix** – If you want multiple patterns in one script.
 
-Quasimodo_Pattern is fine for what it does, but it's not a replacement for learning the pattern yourself.
+Quasimodo_Pattern is fine for what it does, but it isn't a replacement for learning the pattern yourself.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: Slightly. It draws the pattern only after confirmation, so historical bars won't change. But the final neckline break line appears after the close — not in real-time.
+**Q: Does it repaint?**
+A: The pattern is drawn only after confirmation, so historical bars won't change. The final neckline break line appears after the close, not in real time.
 
-**Q: Can I use it on lower timeframes?**  
-A: Yes, but you'll need to increase the minimum swing height to avoid whipsaws. Try 1% on 5-minute charts.
+**Q: Can I use it on lower timeframes?**
+A: Yes, but the minimum swing height will need to be raised to avoid whipsaws.
 
-**Q: Does it work for shorting?**  
+**Q: Does it work for shorting?**
 A: Yes. It detects both M-tops (short) and W-bottoms (long). The logic is symmetrical.
 
 ## Final Verdict
 
-Quasimodo_Pattern is a solid tool for pattern recognition, but it's not a set-and-forget system. The default settings are too eager, so you must tweak them. For the price (free), it's a good addition to your toolbox — just don't rely on it alone.
+Quasimodo_Pattern is a solid tool for pattern recognition, but it isn't a set-and-forget system. The default settings run eager, so they need tweaking. For the price (free), it's a reasonable addition to a toolbox — just don't rely on it alone.
 
 **Rating: ⭐⭐⭐⭐** (4/5) — Does what it promises, but needs manual tuning and context.
-
----
 
 ## Go Deeper with The Indicator Lab
 

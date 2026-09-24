@@ -16,68 +16,71 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of TradingView's Weekly_High_Low indicator: how to set it up, when it works, and when it fails. Spoiler: it's a reliable support/resistance tool, not a crystal ball."
+grounding: "none (no source found)"
 ---
-If you’ve ever stared at a chart wondering where the big money is likely to step in this week, *Weekly_High_Low* gives you a clean answer. This free, lightweight indicator simply plots the previous week’s high, low, and close as horizontal lines that extend into the current week. No repainting, no lag, no overcomplicated moving averages. Just three levels that act as natural magnets for price.
+# Weekly_High_Low Review
 
-I’ve tested this on dozens of symbols across forex, crypto, and equities. The chart above shows it applied to a MACD chart — price bouncing off the weekly low like it’s glued to it. Let’s break down what makes this indicator worth adding to your toolbox, and where it falls short.
+If you've ever stared at a chart wondering where the big money is likely to step in this week, *Weekly_High_Low* offers a clean answer. This free, lightweight indicator plots the previous week's high, low, and close as horizontal lines that extend into the current week. No moving averages, no layered calculations. Just three levels that can act as natural magnets for price.
 
-## Key Features (What Actually Sets It Apart)
+The chart above shows it applied to a MACD chart, with price interacting with the weekly low. Let's break down what the indicator offers, and where it falls short.
 
-- **Zero lag, zero repaint.** The levels are calculated from the completed weekly candle. Once Sunday close hits (or Friday for forex), those numbers are locked in. No guessing, no recalculations.
-- **Three distinct lines:** Weekly High (red), Weekly Low (green), and Weekly Close (dashed white). The close line is often ignored by traders, but I’ve found it acts as intra-week resistance/support more often than you’d expect.
-- **Auto-adjusting for different timeframes.** Works on 1-minute through daily charts. It pulls the weekly data regardless of your current chart resolution.
+## Key Features (What Sets It Apart)
 
-## Best Settings (Tested and Confirmed)
+- **Levels are fixed once the weekly candle closes.** The lines are calculated from the completed weekly candle, so the numbers don't shift around once the week is done.
+- **Three distinct lines:** Weekly High (red), Weekly Low (green), and Weekly Close (dashed white). The close line is often ignored by traders, but it can act as intra-week resistance or support.
+- **Auto-adjusting for different timeframes.** The indicator pulls weekly data regardless of your current chart resolution.
 
-There are no complex settings panels here. You’ll find:
+## Settings and How to Tune Them
 
-- **Line style & color** – Make the high/low thicker (2–3px) and the close thinner (1px, dashed). This visual hierarchy helps spot the key levels instantly.
-- **Extended lines** – Keep this on. You want the levels to stretch across the full chart width for easy reference.
+There are no complex settings panels here. You'll find:
 
-That’s it. No inputs to tweak, no optimization needed. The simplicity is the point.
+- **Line style & color** – Adjust thickness and color for the high, low, and close lines. A visual hierarchy (heavier high/low lines, lighter dashed close line) helps spot key levels at a glance.
+- **Extended lines** – Toggle this to stretch the levels across the full chart width for easy reference.
+
+That's it. No inputs to tweak, no optimization needed. The simplicity is the point.
 
 ## How to Use It (Entry/Exit Logic)
 
-This isn’t a standalone signal generator. It’s a framework. Here’s how I trade it:
+This isn't a standalone signal generator. It's a framework. Here are some ways traders approach it:
 
-**Breakout play:** If price opens above the weekly high from last week, I wait for a retest as support. If it holds, I go long with a stop below the weekly low. Target? The next week’s high — or trail with a 2:1 risk-to-reward.
+**Breakout play:** If price opens above the weekly high from last week, wait for a retest as support. If it holds, a long entry with a stop below the weekly low is one approach. Target options include the next week's high, or trailing the position.
 
-**Reversal at levels:** When price touches the weekly low on the first few days of the week, I look for confirmation (a bullish engulfing candle or RSI divergence). Entry at the close of the confirmation candle, stop 1 ATR below the low. This works especially well on indices like SPY or NQ.
+**Reversal at levels:** When price touches the weekly low on the first few days of the week, look for confirmation (a bullish engulfing candle or RSI divergence). Entry at the close of the confirmation candle, with a stop below the low, is a common structure. This approach is often applied to indices.
 
-**Mean reversion:** If price is far from the weekly close line (say, 3–4 ATR away), I expect a snap-back. Not a reversal — just a pullback toward that dashed line. Scalpers love this.
+**Mean reversion:** If price is extended from the weekly close line, some traders expect a pullback toward that dashed line. Not a reversal — just a drift back toward the level.
 
-**⚠️ Warning:** Don’t fade the weekly high/low on strong trend days. If price blows through the weekly high with momentum, don’t short it. The indicator shows a level, not the future.
+**⚠️ Warning:** Don't fade the weekly high/low on strong trend days. If price blows through the weekly high with momentum, don't short it. The indicator shows a level, not the future.
 
 ## Pros & Cons
 
 **Pros:**
-- Dead simple. Takes 10 seconds to understand.
-- Works on any market and any timeframe.
+- Dead simple to understand.
+- Works on many markets and timeframes.
 - Free. No premium upsell.
-- Excellent for framing your trading day — sets the battlefield.
+- Useful for framing your trading day — sets the battlefield.
 
 **Cons:**
 - No alerts built in. You have to set manual price alerts.
-- Not predictive. It’s retrospective data. A breakout above last week’s high doesn’t mean price will keep going.
+- Not predictive. It's retrospective data. A breakout above last week's high doesn't mean price will keep going.
 - Can clutter the chart if you also use daily pivots or VWAP. Use selectively.
 
-## Who It’s For
+## Who It's For
 
-This is for **discretionary traders** who want a quick, reliable reference for key levels. Swing traders will get the most value — you can plan entries for the whole week on Sunday. Day traders can use it as a filter: don’t short below the weekly low, don’t buy above the weekly high.
+This is for **discretionary traders** who want a quick reference for key levels. Swing traders may get the most value — you can plan entries for the week in advance. Day traders can use it as a filter: don't short below the weekly low, don't buy above the weekly high.
 
-**Not for:** Algorithmic traders or anyone needing complex multi-timeframe analysis. This does one thing well, but it’s not a system.
+**Not for:** Algorithmic traders or anyone needing complex multi-timeframe analysis. This does one thing well, but it's not a system.
 
 ## Alternatives
 
-- **Daily High Low** (by TradingView) – Same concept but on daily candles. Better for intraday scalping.
-- **Pivot Points Standard** – More levels (R1–R3, S1–S3) but uses previous week’s data with a different calculation. More crowded charts.
-- **VWAP** – Institutional volume-based levels. Better for mean reversion strategies.
+- **Daily High Low** (by TradingView) – Same concept but on daily candles. Better suited to intraday scalping.
+- **Pivot Points Standard** – More levels (R1–R3, S1–S3) but uses previous week's data with a different calculation. More crowded charts.
+- **VWAP** – Institutional volume-based levels. Better suited to mean reversion strategies.
 
 ## FAQ
 
-**Does it repaint?** No. The levels are fixed once the weekly candle closes.
+**Does it repaint?** The levels are fixed once the weekly candle closes.
 
-**Can I use it on crypto?** Yes. Works on BTC/USD, ETH/USD, etc. Crypto markets are 24/7 so the “week” closes Sunday UTC.
+**Can I use it on crypto?** Yes. Works on BTC/USD, ETH/USD, etc. Crypto markets are 24/7 so the "week" closes Sunday UTC.
 
 **Does it work in pre-market or after-hours?** Yes, if your broker provides extended hours data. The indicator uses the weekly high/low inclusive of all sessions.
 
@@ -85,8 +88,7 @@ This is for **discretionary traders** who want a quick, reliable reference for k
 
 ## Final Verdict
 
-⭐ **4/5** – *Weekly_High_Low* is a no-nonsense tool that does exactly what it promises. It won’t make you a profitable trader by itself, but it will help you stop chasing price and start respecting established levels. It loses a star for the lack of alerts and the fact that it’s purely retrospective — but for a free, zero-maintenance indicator, that’s a minor complaint. Add it to your chart, set your levels, and trade the week with more clarity.
----
+*Weekly_High_Low* is a no-nonsense tool that does exactly what it promises. It won't make you a profitable trader by itself, but it can help you stop chasing price and start respecting established levels. The lack of alerts and its purely retrospective nature are real limitations — but for a free, zero-maintenance indicator, that's a minor complaint. Add it to your chart, set your levels, and trade the week with more clarity.
 
 ## Go Deeper with The Indicator Lab
 

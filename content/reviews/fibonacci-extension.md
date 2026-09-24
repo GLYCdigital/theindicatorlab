@@ -16,78 +16,74 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Fibonacci_Extension auto-draws key levels (1.272, 1.618, 2.618) for price targets. Solid for profit-taking but not a standalone strategy. 4/5."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Let’s cut the fluff. **Fibonacci_Extension** automatically plots the classic extension levels from a recent swing high and low—no manual drawing required. The default levels are 0.618, 1.000, 1.272, 1.618, and 2.618. It anchors to the last two significant pivots and updates in real time as price moves. If you've ever spent minutes adjusting Fibonacci retracement lines, you'll appreciate the automation.
+**Fibonacci_Extension** plots the classic extension levels from a recent swing high and low automatically, without manual drawing. The default levels are 0.618, 1.000, 1.272, 1.618, and 2.618. It anchors to the last two significant pivots and updates as price moves. For traders who have spent time adjusting Fibonacci retracement lines by hand, the automation is the main appeal.
 
 ## Key Features That Set It Apart
 
-- **Auto-pivot detection** – The indicator identifies swing highs/lows based on a length parameter (default 10). You can tweak it to match your timeframe.
-- **Extension levels only** – No clutter. It skips the 0.382 and 0.5 retracement levels, focusing purely on where price might extend after a breakout.
-- **Dynamic repainting** – Yes, it repaints as new pivots form. That’s not a bug; it’s how Fibonacci extensions work. The levels adjust to the most recent structure.
-- **Customizable line styles** – Change colors, thickness, and dashed/solid for each level. Useful when stacking multiple instruments.
+- **Auto-pivot detection** – The indicator identifies swing highs and lows based on a length parameter (default 10), which can be adjusted to suit different timeframes.
+- **Extension levels only** – It skips the 0.382 and 0.5 retracement levels and focuses on where price might extend after a breakout.
+- **Dynamic repainting** – Levels shift as new pivots form. This is a structural property of extension levels, which depend on the most recent swing rather than a fixed anchor.
+- **Customizable line styles** – Colors, thickness, and dashed or solid styles can be set per level, which helps when stacking multiple instruments on one chart.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After testing this on BTCUSD (1h), EURUSD (15m), and SPY (daily), here’s what worked:
-
-- **Length**: 10 (default) works for intraday. For swing trading, increase to 20-30 to filter out noise.
-- **Levels**: Keep 1.272 and 1.618. Remove 0.618 and 2.618 unless you scalp—those levels rarely get hit in trending moves.
-- **Style**: Use dashed lines for extensions and solid for retracements (if you add them). Makes the chart readable.
-- **Timeframe**: Best on 1h-4h for swing trading. Scalpers on 1m-5m will see too many repaints.
+- **Length**: The default is 10. A shorter length reacts to more recent pivots; a longer length filters out smaller swings.
+- **Levels**: The five default levels can be toggled individually, so you can keep only the ones relevant to your approach.
+- **Style**: Line color, thickness, and dash style are configurable per level.
+- **Timeframe**: The indicator can be applied to any timeframe, though on lower timeframes pivots form and flip more frequently, so the levels update more often.
 
 ## How to Use It for Entries and Exits
 
-**As an exit tool** – This is where it shines. After a breakout above a swing high, price often pauses or reverses at 1.272, 1.618, or 2.618. Set take-profit orders at these levels. On the chart above, you’ll see price rejecting at the 1.618 level twice before pulling back.
+**As an exit tool** – This is the primary use case. After a breakout above a swing high, price can pause or reverse at 1.272, 1.618, or 2.618. Those levels are natural places to consider take-profit orders, since the levels are watched by a wide range of traders.
 
-**As an entry tool** – Less reliable. Some traders buy the breakout when price closes above 1.272, expecting a run to 1.618. I tested this on 50 trades—win rate was 58%, but risk/reward averaged 1:2. Use only in strong trends.
+**As an entry tool** – Less reliable. A common approach is buying the breakout when price closes above 1.272, with a target at 1.618, but this depends heavily on the trend being strong enough to carry price through.
 
-**Combine with** – Volume or RSI divergence. If price hits 1.618 but RSI shows lower highs, take profit early.
+**Combine with** – Volume or RSI divergence. If price reaches 1.618 while momentum is fading, taking profit early is a reasonable response.
 
 ## Honest Pros and Cons
 
 **Pros**:
 - Saves time on manual drawing.
-- Levels are respected by many algos and retail traders (self-fulfilling prophecy).
-- Lightweight—won’t slow your TradingView even on 50+ charts.
+- Levels are widely watched, which can make them self-reinforcing.
+- Lightweight, so it won't slow down a charting setup with many charts open.
 
 **Cons**:
-- Repainting can mislead in choppy markets. Wait for the candle to close before relying on a level.
-- No alert system built-in. You have to set alerts manually on each level.
-- Only works well in trending markets. In ranges, the pivots flip constantly and levels become noise.
+- Repainting can mislead in choppy markets, so waiting for the candle to close before acting on a level is the safer approach.
+- No built-in alert system; alerts have to be set manually on each level.
+- Works best in trending markets. In ranges, pivots flip constantly and the levels become noise.
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Swing traders** who want quick profit targets on breakouts.
-- **Scalpers** who combine it with volume profile (but expect repainting).
-- **Not for** beginners who treat it as a crystal ball. It’s a target zone, not a guarantee.
+- **Scalpers** who combine it with volume profile, accepting the repainting trade-off.
+- **Not for** beginners who treat it as a crystal ball. It's a target zone, not a guarantee.
 
 ## Better Alternatives If They Exist
 
-- **Auto Fib Retracement** (by LuxAlgo) – More comprehensive with retracement levels and zones. Better for entry points.
+- **Auto Fib Retracement** (by LuxAlgo) – More comprehensive, with retracement levels and zones. Better for entry points.
 - **ICT 2016-2022 Model** – Includes Fibonacci extensions but with liquidity-based logic. Steeper learning curve.
-- **Pivot Points Standard** – Simpler and non-repainting for support/resistance, though less precise for extensions.
+- **Pivot Points Standard** – Simpler and non-repainting for support and resistance, though less precise for extensions.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does it repaint?**  
-A: Yes. The extension levels shift when a new higher high or lower low forms. That’s inherent to Fibonacci extensions—they depend on the most recent swing. Trade the level, not the line.
+**Q: Does it repaint?**
+A: Yes. The extension levels shift when a new higher high or lower low forms. That's inherent to Fibonacci extensions, since they depend on the most recent swing. Trade the level, not the line.
 
-**Q: Can I use it for crypto?**  
-A: Works fine, but crypto’s volatility means levels get blown through often. Use 2.618 as a stop-run target.
+**Q: Can I use it for crypto?**
+A: It applies to crypto like any other market, but high volatility means levels get blown through more often.
 
-**Q: Why no 0.382 level?**  
-A: The indicator focuses on extensions (above 1.0). For retracements, use a separate retracement tool or add lines manually.
+**Q: Why no 0.382 level?**
+A: The indicator focuses on extensions above 1.0. For retracements, a separate retracement tool or manually added lines is the usual approach.
 
-## Final Verdict with Star Rating
+## Final Verdict
 
-**Fibonacci_Extension** is a solid, no-nonsense tool for setting profit targets. It won't predict reversals, but it saves you from drawing lines all day. The repainting is a trade-off you accept for automation. I give it **4 out of 5 stars** because it does one job well—but that’s all it does. Pair it with a trend filter and you’ve got a reliable exit strategy.
+**Fibonacci_Extension** is a no-nonsense tool for setting profit targets. It won't predict reversals, but it removes the manual work of drawing extension lines. The repainting is the trade-off you accept for automation. It does one job well, and that's all it does. Pair it with a trend filter and it can serve as part of a disciplined exit approach.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – Recommended for swing traders who want quick, dynamic extension levels without the manual hassle.
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)** – Recommended for swing traders who want dynamic extension levels without the manual hassle.
 
 ## Go Deeper with The Indicator Lab
 

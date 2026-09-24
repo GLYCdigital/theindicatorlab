@@ -17,83 +17,88 @@ categories:
 rating: 4
 description: "Key_Levels_For_Futures review: an honest look at how this futures level indicator plots support and resistance, its settings, and who it's actually for."
 tv_script_url: "https://www.tradingview.com/script/1v4XPm41-Key-Levels-for-Futures/"
+sources: ["https://www.tradingview.com/script/1v4XPm41-Key-Levels-for-Futures/"]
 ---
-Most "key levels" indicators are just pivot points with a new coat of paint. You get the same five lines every session, and you're left to figure out which ones matter. Key_Levels_For_Futures isn't a revolution — but it's a cleaner, more futures-aware take on the idea, and after running it across several months of ES and NQ data, I can tell you where it earns its keep and where it doesn't.
+Most "key levels" indicators are just pivot points with a new coat of paint. You get the same five lines every session, and you're left to figure out which ones matter. Key Levels isn't a revolution — but it's a cleaner, more deliberate take on the idea, and it's worth understanding where it earns its keep and where it doesn't.
 
 ## What it actually does
 
-Under the hood, this is a trend-context level plotter. It scans the prior session's high, low, and close, then projects a handful of derived levels onto the current session — think previous day high/low, opening range boundaries, and a couple of intermediate zones that act as intraday magnets. As the chart above shows, the levels update session to session without repainting historical bars, which is the single most important thing I check on any level tool.
+Under the hood, this is a reference-level plotter. It draws ten prices that intraday traders typically end up marking by hand every morning: the previous month's high and low, the previous week's, the previous day's regular-session high and low, the London session's, and the premarket's. They're drawn automatically, they update themselves, and the tags stay on screen no matter where you scroll.
 
-It's not a signal generator. It doesn't tell you to buy or sell. What it does is frame the chart so you're not drawing yesterday's lines by hand at 9:29 AM.
+It's not a signal generator. It doesn't tell you to buy or sell. What it does is frame the chart so you're not drawing yesterday's lines by hand before the open.
+
+The ten levels, with their windows:
+
+| Tag | Level | Window |
+|---|---|---|
+| MH / ML | Previous month high and low | calendar month |
+| WH / WL | Previous week high and low | calendar week |
+| PDH / PDL | Previous day high and low | RTH 09:30–16:00 ET |
+| LH / LL | London high and low | 03:00–08:00 ET |
+| PMH / PML | Premarket high and low | 04:00–09:30 ET |
+
+Every window is an input, so if your definition of London or premarket differs from the author's, you can change it. ICT traders who want the London killzone instead of the full session can set it to 0200–0500.
 
 ## What separates it from the free alternatives
 
-TradingView ships with a decent Previous Day High/Low indicator, and honestly, for a lot of traders that's enough. Where Key_Levels_For_Futures pulls ahead:
+TradingView ships with a decent Previous Day High/Low indicator, and for a lot of traders that's enough. Where this one pulls ahead:
 
-- **Futures session logic.** It respects the actual futures session boundary rather than the equity RTH default, which matters if you trade overnight and want the Globex high/low plotted correctly.
-- **Zone shading instead of single lines.** The intermediate levels come in as bands, not razor-thin lines. That's more honest about how price actually reacts around these areas.
-- **Labels that don't clutter.** You can toggle labels on/off per level type, so you're not staring at a wall of text on a 5-minute chart.
+- **Colour encodes two things at once.** Hue tells you the timeframe — the palette runs cool to warm as the timeframe shortens: violet for monthly, blue for weekly, cyan for previous day, amber for London, magenta for premarket. Shade tells you the side: lighter for the high, deeper for the low. A deep violet line is the previous month's low, and you know that at a glance without reading the tag.
+- **Structural levels read first.** Weekly and monthly levels draw one step thicker than the intraday ones, so the structural prices stand out when the chart gets busy.
+- **Tags that don't run away.** The usual approach puts level tags a fixed number of bars to the right of the last candle, so scrolling back makes them vanish off the right edge. These tags anchor to `chart.right_visible_bar_time`, so they sit at the right edge of whatever you're currently looking at. Scroll, zoom, or jump back three weeks and the tags come with you. Each shows its abbreviation and, optionally, the exact price.
+- **Settled vs developing periods.** Weekly and monthly levels default to the previous completed period — finished, and it won't move. Flip either to Current and it tracks the developing period instead, drawn dotted rather than solid, so you can tell a fixed level from one the next candle can still extend.
 
-That zone approach is the real differentiator. A single line at 4520 invites you to think there's a magic price. A band from 4518–4522 tells you the truth: reactions happen in areas, not at pixels.
+## Settings and How to Tune Them
 
-## Best settings I landed on
+- **Show / Hide** — every pair independently. Ten levels is a lot on a quiet chart; turn off what you're not using.
+- **Sessions** — the London, premarket and RTH windows, plus previous-vs-current toggles for the week and month.
+- **Style** — line width (weekly and monthly automatically draw one step heavier), how far the tags sit in from the right edge, tag size from tiny to normal, and whether to include the price in the tag.
+- **Colors** — all ten, individually, plus tag size and tag position.
 
-After a couple of weeks of fiddling, here's what worked:
+## Notes and limitations
 
-- **Session type:** Globex/ETH if you trade the overnight, RTH if you're a day session only. Don't mix them — pick the one that matches your execution window.
-- **Label size:** Small. Medium eats your chart on anything below the 15-minute.
-- **Zone width:** Default is fine, but widen it slightly on NQ. It moves fast enough that tight bands get sliced through without meaningful reaction.
-- **Show prior week levels:** Off for intraday, on for swing. Having both daily and weekly levels active at once turns your chart into spaghetti.
+Use an intraday chart. Session windows mean nothing on a daily or higher chart, and the indicator will tell you so on screen. On stocks, enable Extended Trading Hours or the premarket and London bars won't exist and those levels will stay blank; futures are fine as they are.
 
-The one setting I'd change if I could: there's no option to extend levels only to the current session close. They run to the right edge, which is fine, but a "stop at session end" toggle would clean things up.
+Session levels are calculated on the chart timeframe. On any timeframe whose bars line up with the session boundaries — 1, 2, 3, 5, 10, 15, 30 and 60 minute all do, since the windows start on the hour or the half hour — this is exact. On an unusual timeframe such as 7 minutes, a level can be off by one bar's high or low.
 
-## How I'd actually trade it
+Ten tags will overlap when levels cluster. Drop the tag size to Tiny or hide the pairs you're not watching.
 
-This is a context tool, not an entry trigger. The workflow that made sense to me:
+## On repainting
 
-1. Mark the prior day high/low as your bias boundaries. Above PDH, longs are favored. Below PDL, shorts.
-2. Use the intermediate zones as decision points — if price rejects a zone and reclaims the prior level, that's your continuation setup.
-3. Pair it with a momentum read. This is where the MACD chart type comes in handy: when MACD is expanding in your direction as price clears a key level, the level break is more likely to hold. When MACD is flat or diverging at the level, expect a fade.
-
-On the chart above, notice how price stalled at the upper zone while MACD was rolling over — that's the fade setup. When MACD pushed higher through the same zone on the next attempt, the level gave way. That's the whole game with this indicator: levels tell you *where*, momentum tells you *whether*.
+Nothing here repaints. The previous week and month values are read with the standard `[1]` offset and `lookahead_on`, which returns the last completed period and nothing about the current one. The developing week and month values are accumulated bar by bar on the chart series, so no higher-timeframe request is involved at all. The session levels build up from the bars as they close. A level appears when the data that defines it exists, and never changes afterwards.
 
 ## Pros and cons
 
 **Pros:**
-- Correct futures session handling (rarer than it should be)
-- Non-repainting historical levels
-- Zone-based plotting is more realistic than single lines
-- Clean label management
+- Ten levels plotted automatically, covering monthly, weekly, daily, London and premarket windows
+- Non-repainting
+- Colour encodes timeframe and side, so levels are readable without reading tags
+- Tags anchor to the visible right edge instead of running off it
 
 **Cons:**
-- No built-in alerts on level touches — you'll have to set those manually
+- No alerts
 - No session-end cutoff for level extension
-- Overlaps heavily with free pivot indicators if you only trade RTH
-- Documentation is thin; you're figuring out the settings by trial and error
+- Overlaps with free pivot indicators if you only need previous-day levels
+- Session logic is meaningless above intraday timeframes
 
 ## Who it's for
 
-Futures day traders who work the overnight or early RTH session and want their key levels auto-plotted without hand-drawing. If you trade equities, forex, or crypto, the futures-specific session logic is wasted on you — grab a generic pivot indicator instead. Swing traders will find some value in the weekly levels, but it's clearly built with the intraday futures trader in mind.
-
-## Alternatives worth a look
-
-If you want alerts baked in, the community "Previous Day High/Low" scripts handle that out of the box. If you want a full support/resistance suite with volume profile, something like a VPVR-based tool will give you more depth. And if you just want the levels and nothing else, TradingView's built-in pivots are free and 80% as good.
+Intraday traders who want their key levels auto-plotted without hand-drawing. If you trade a daily or higher timeframe, the session windows are wasted on you. Traders who want a full support/resistance suite with volume profile will need something else.
 
 ## FAQ
 
-**Does it repaint?** No. Historical levels stay put once the session closes. The current session's levels are fixed at the open.
+**Does it repaint?** No. A level appears when the data that defines it exists, and never changes afterwards. The previous week and month values use the standard `[1]` offset and `lookahead_on`; the developing values accumulate bar by bar on the chart series.
 
-**Can I use it on crypto or forex?** You can, but the session logic is tuned for futures hours. Results will be inconsistent.
+**Can I change the session windows?** Yes — every window is an input. ICT traders who want the London killzone instead of the full session can set it to 0200–0500.
 
-**Does it work on the 1-minute chart?** It does, but the labels get crowded fast. Small label size and hiding weekly levels helps.
+**Does it work on stocks?** Yes, but you need to enable Extended Trading Hours, or the premarket and London bars won't exist and those levels will stay blank.
 
-**Are there alerts?** Not built-in. You'll need to create them manually against the level prices.
+**Are there alerts?** Not mentioned in the documentation.
 
 ## Final verdict
 
-Key_Levels_For_Futures does one job — plotting futures-relevant levels — and does it competently. It's not going to change your trading, and if you're disciplined about drawing levels yourself, you don't need it. But for the futures trader who wants a reliable, non-repainting level framework without manual work every morning, it's a solid addition. The missing alerts and thin docs keep it out of five-star territory.
+Key Levels does one job — plotting the ten reference prices intraday traders mark by hand — and does it competently. It won't change your trading, and if you're disciplined about drawing levels yourself, you don't need it. But for the trader who wants a reliable, non-repainting level framework without manual work every morning, it's a solid addition.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a genuinely useful context tool, docked a point for the alert gap and documentation.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

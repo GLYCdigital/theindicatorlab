@@ -19,7 +19,7 @@ description: "Three tools in one overlay: auto-drawn macro and micro trendlines,
 tv_script_url: "https://www.tradingview.com/script/YhFUqQNi-Auto-Trend-Lines-Signals-Supertrend/"
 sources: ["https://www.tradingview.com/script/YhFUqQNi-Auto-Trend-Lines-Signals-Supertrend/"]
 ---
-Most "all-in-one" indicators are a mess — three half-finished ideas bolted together. Auto_Trend_Lines_Signals_Supertrend is the rare exception. It bundles three genuinely distinct concepts — automatic trendlines, breakout signals, and Supertrend — into one overlay, and each part actually does its job. It won't tell you what to trade. It will tell you where price is leaning, and it will tell you the moment that lean changes.
+Most "all-in-one" indicators are a mess — three half-finished ideas bolted together. Auto_Trend_Lines_Signals_Supertrend is the rare exception. It bundles three genuinely distinct concepts — automatic trendlines, breakout signals, and Supertrend — into one overlay, and each part does its own job. It won't tell you what to trade. It will tell you where price is leaning, and it will tell you the moment that lean changes.
 
 Here's what's inside and whether it earns a spot on your chart.
 
@@ -44,22 +44,26 @@ This is where the three components talk to each other. When price crosses a tren
 
 The hierarchy is the whole point. A macro break matters more than a micro break, and the visual weight of the marker tells you that instantly without reading a legend. You can scan a chart and see at a glance whether the market is poking at noise or shoving through a level that's held for weeks.
 
-## How I'd Actually Use It
+## A Practical Workflow
 
-The natural workflow is top-down within a single chart. Let the macro lines define the battlefield — those are the levels that matter. Use the micro lines for timing entries inside that structure. Then let Supertrend arbitrate: if a macro breakout signal prints while Supertrend is already flipped bullish, that's a far cleaner setup than a breakout signal firing against the prevailing Supertrend direction.
+The natural approach is top-down within a single chart. Let the macro lines define the battlefield — those are the levels that matter. Use the micro lines for timing entries inside that structure. Then let Supertrend arbitrate: when a macro breakout signal prints while Supertrend is already flipped bullish, that's a cleaner setup than a breakout signal firing against the prevailing Supertrend direction.
 
 The alerts make this practical. There are six individual conditions — Strong Buy, Strong Sell, Weak Buy, Weak Sell, ST Buy, ST Sell — plus two combined ones: "Any TL Signal" and "Any ST Signal." That last pair is what you want if you're monitoring multiple instruments. Set "Any TL Signal" and walk away.
 
 One settings note worth flagging: the source documents a choice between wick-based and body-based pivots, plus log scale, forward extension, color and style. Wick pivots will find more levels; body pivots will find cleaner ones. On volatile instruments the difference is not trivial.
+
+## Settings and How to Tune Them
+
+The macro engine takes left and right pivot lookbacks, documented at 10 and 5 bars by default. The micro engine takes the same pair of inputs at a shorter scale, documented at 4 and 2. Both engines share options for wick versus body pivots, log scale, forward extension, and line color and style. Supertrend exposes an ATR period and a multiplier, documented at 10 and 3.0. Nothing in the source documents a preferred configuration, so treat the defaults as a starting point rather than an optimum.
 
 ## Pros and Cons
 
 **Pros:**
 - Three complementary tools, one overlay — no stacking separate indicators and fighting over chart space
 - Persistent trendline history, not just the most recent line
-- Genuinely useful signal hierarchy (macro vs. micro) rather than treating every break as equal
+- A clear signal hierarchy (macro vs. micro) rather than treating every break as equal
 - Eight alert conditions, including two catch-all options
-- Sensible, adjustable defaults throughout
+- Adjustable defaults throughout
 
 **Cons:**
 - Trendlines are pivot-derived, so they're reactive by nature — a line only exists after the pivot confirms
@@ -69,7 +73,7 @@ One settings note worth flagging: the source documents a choice between wick-bas
 
 ## Who It's For
 
-Discretionary traders who think in terms of structure and levels. If your process is "where are the key lines, and did we break them," this maps directly onto how you already work. It's also a strong fit for swing traders who want macro context without manually drawing lines every session.
+Discretionary traders who think in terms of structure and levels. If your process is "where are the key lines, and did we break them," this maps directly onto how you already work. It's also a fit for swing traders who want macro context without manually drawing lines every session.
 
 It's less suited to pure mechanical traders looking for a complete strategy with entries, exits, and stops. The signals here are inputs, not instructions.
 
@@ -79,7 +83,7 @@ It's less suited to pure mechanical traders looking for a complete strategy with
 Trendlines are built from confirmed pivots, which by definition require bars to the right of the pivot to form. The Supertrend component behaves like standard Supertrend. Treat signals as confirmed-on-close events.
 
 **Can I turn off one of the three components?**
-The source describes each as a configurable module with its own options, so you can adjust or disable components you don't want. Check the inputs panel for the exact toggles.
+The source describes each as a configurable module with its own options, so components can be adjusted or disabled. Check the inputs panel for the exact toggles.
 
 **Does it work on any timeframe?**
 Nothing in the documentation restricts it. The pivot lookbacks are adjustable, which is what you'd tune for different timeframes — shorter lookbacks on lower timeframes, wider on higher ones.
@@ -89,11 +93,10 @@ The individual alerts fire on one specific condition. "Any TL Signal" fires on a
 
 ## Verdict
 
-Four stars. Auto_Trend_Lines_Signals_Supertrend does the hard part well: it takes three tools that traders already use separately and combines them without the result feeling bloated or gimmicky. The macro/micro signal hierarchy is the standout feature — it gives you a real read on the significance of a breakout rather than treating all breaks as equal.
+Auto_Trend_Lines_Signals_Supertrend does the hard part well: it takes three tools that traders already use separately and combines them without the result feeling bloated or gimmicky. The macro/micro signal hierarchy is the standout feature — it gives you a read on the significance of a breakout rather than treating all breaks as equal.
 
-It loses a star because it's a context layer, not a complete toolkit. There's no risk framework, no targets, and the Supertrend component is the standard one you may already have. But if you want automatic, persistent trendlines with clear breakout signals and a trend filter layered on top, this earns its chart space.
+It's a context layer, not a complete toolkit. There's no risk framework, no targets, and the Supertrend component is the standard one you may already have. But if you want automatic, persistent trendlines with clear breakout signals and a trend filter layered on top, this earns its chart space.
 
-**Rating: ⭐⭐⭐⭐**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

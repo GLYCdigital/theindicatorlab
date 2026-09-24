@@ -16,97 +16,101 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Volume Weighted Moving Average (VWMA) review. Learn settings, entry/exit logic, pros/cons, and who it's for. No fluff, just tested results."
+grounding: "none (no source found)"
 ---
-Let’s cut through the noise. The Volume Weighted Moving Average (VWMA) is not a magic bullet. It’s a simple but powerful twist on a standard moving average that gives more weight to periods with higher volume. If you’ve ever watched a price spike on low volume and then reverse, you already know why this matters. The VWMA filters out the noise.
+# Volume Weighted Moving Average (VWMA) Review
 
-I tested this on the MACD chart type as shown in the screenshot above, and I’ll tell you exactly what I found.
+The Volume Weighted Moving Average is not a magic bullet. It's a simple but useful twist on a standard moving average that gives more weight to periods with higher volume. If you've ever watched a price spike on low volume and then reverse, you already know why this matters. The VWMA filters out some of that noise.
 
 ## What It Actually Does
 
-The VWMA calculates the average price, but each price point is weighted by the volume of that period. So a day with 10 million shares gets more say than a day with 1 million. The result? A smoother line that reacts more to real market participation and less to random ticks. It’s built into TradingView’s indicator catalog, so no install hassle.
+The VWMA calculates the average price, but each price point is weighted by the volume of that period. A period with heavy volume gets more say than a period with light volume. The result is a line that reacts more to real market participation and less to random ticks. It's built into TradingView's indicator catalog, so there's no install hassle.
 
-On the chart, you get a line that behaves like a moving average but hugs price action more tightly during high-volume moves. Notice in the screenshot how the VWMA acts as dynamic support during uptrends when volume is rising.
+On the chart, you get a line that behaves like a moving average but hugs price action more tightly during high-volume moves. It can act as dynamic support during uptrends when volume is rising.
 
 ## Key Features
 
-- **Volume weighting** – The core differentiator. Most moving averages treat every period equally. VWMA doesn’t.
-- **Customizable length** – Default is 20. I tested 10, 20, 50, and 200. Each reveals a different trend layer.
-- **Source selection** – You can base it on close, open, high, low, or HL2. I stick with close for simplicity.
-- **Offset option** – Shift the line forward or backward. I rarely use it, but some swing traders find it useful for early signals.
+- **Volume weighting** – The core differentiator. Most moving averages treat every period equally. VWMA doesn't.
+- **Customizable length** – The default is 20. Different lengths reveal different trend layers.
+- **Source selection** – You can base it on close, open, high, low, or HL2.
+- **Offset option** – Shift the line forward or backward. Some swing traders find it useful for early signals.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After two weeks of backtesting on BTC/USD, EUR/USD, and AAPL, here’s what worked:
+- **Length** – The default is 20. Shorter lengths track price more closely and respond faster to trend shifts, at the cost of more whipsaws. Longer lengths smooth the line and reduce noise, but you'll miss early entries. The length you choose depends on whether you're trading short-term swings or holding positions longer.
+- **Source** – Close, open, high, low, or HL2. Close is the most straightforward choice; HL2 introduces additional smoothing.
+- **Offset** – Leave it at zero unless you have a specific reason to shift the line.
 
-- **Length: 20** – Best for short-term swing trades (2-5 day holds). It catches trend shifts without too much lag.
-- **Length: 50** – Solid for position trading. Fewer whipsaws, but you’ll miss early entries.
-- **Length: 200** – Use it as a long-term trend filter. Price above = bullish bias. Below = bearish.
-- **Source: Close** – Keeps it clean. Using HL2 introduces unnecessary noise.
-- **Offset: 0** – Leave it unless you have a specific reason.
-
-Pro tip: Pair it with a volume indicator (like Volume Oscillator) to confirm when VWMA breaks are real.
+A volume indicator (like a Volume Oscillator) can be paired with the VWMA to help confirm when breaks are real.
 
 ## How to Use It (Entry/Exit Logic)
 
-This isn’t a standalone system, but it works beautifully as a filter.
+This isn't a standalone system, but it works as a filter.
 
-**Long entry:** Wait for price to close above the VWMA while volume is above its 20-period average. That’s your confirmation. Enter on the next candle open.
+**Long entry:** Wait for price to close above the VWMA while volume is above its average. Enter on the next candle open.
 
-**Short entry:** Price closes below VWMA with above-average volume. Same logic.
+**Short entry:** Price closes below the VWMA with above-average volume. Same logic.
 
-**Exit:** Trail the VWMA as dynamic support/resistance. If price closes back across it, exit. Or use a 2x ATR stop loss below/above the VWMA.
+**Exit:** Trail the VWMA as dynamic support/resistance. If price closes back across it, exit. Or use an ATR-based stop loss below/above the VWMA.
 
-I tested this on the MACD chart in the screenshot. The VWMA stayed flat during low-volume chop, then steepened when volume spiked. That’s when the real move started.
+The VWMA tends to stay flat during low-volume chop, then steepen when volume spikes. That's often when a real move starts.
 
 ## Pros & Cons
 
 **Pros:**
-- Reduces false signals from low-volume moves. A 5% rally on thin volume? VWMA barely moves.
-- Works across timeframes – 1-hour for intraday, daily for swings.
+- Reduces false signals from low-volume moves. A rally on thin volume barely moves the VWMA.
+- Works across timeframes — intraday through daily.
 - Simple to understand. No math degree required.
 - Free and built into TradingView.
 
 **Cons:**
-- Lag is still there. It’s a moving average, after all. You won’t catch the exact bottom or top.
-- Useless in low-volume markets (e.g., crypto altcoins during bear markets). The weighting becomes meaningless.
-- Doesn’t predict reversals. It confirms trends after they start.
+- Lag is still there. It's a moving average, after all. You won't catch the exact bottom or top.
+- Less useful in low-volume markets, such as crypto altcoins during bear markets. The weighting becomes meaningless.
+- Doesn't predict reversals. It confirms trends after they start.
 
-## Who It’s For
+## Who It's For
 
-- **Swing traders** – You’ll love it for catching medium-term trends with volume confirmation.
-- **Position traders** – Use the 200-period VWMA as a long-term bias filter.
-- **Day traders** – Works on 15-minute and 1-hour charts, but only on liquid instruments.
+- **Swing traders** – For catching medium-term trends with volume confirmation.
+- **Position traders** – Use a long-period VWMA as a long-term bias filter.
+- **Day traders** – Works on intraday charts, but only on liquid instruments.
 
-Not for scalpers. Too much lag. Not for buy-and-hold investors either—you don’t need this.
+Not for scalpers — too much lag. Not for buy-and-hold investors either — you don't need this.
 
 ## Alternatives
 
 - **VWAP (Volume Weighted Average Price)** – Better for intraday. Anchors to the session start. VWMA is a continuous average.
 - **EMA (Exponential Moving Average)** – Less lag than VWMA, but ignores volume. Use it if volume data is unreliable.
-- **KAMA (Kaufman’s Adaptive Moving Average)** – Adjusts speed based on volatility. Great for choppy markets, but more complex.
+- **KAMA (Kaufman's Adaptive Moving Average)** – Adjusts speed based on volatility. Suited to choppy markets, but more complex.
 
-If you want volume-weighting but with a dynamic length, try the **Volume Weighted EMA**. It’s a hybrid but less common.
+If you want volume-weighting but with a dynamic length, look at the **Volume Weighted EMA**. It's a hybrid but less common.
 
 ## FAQ
 
-**Q: Is VWMA better than SMA?**  
+**Q: Is VWMA better than SMA?**
 A: For trending markets with clear volume patterns, yes. In sideways markets, SMA often wins because VWMA gets erratic.
 
-**Q: Can I use VWMA for crypto?**  
+**Q: Can I use VWMA for crypto?**
 A: Yes, but only on high-cap coins like BTC or ETH. Low-volume altcoins will give you noise.
 
-**Q: What length is best for day trading?**  
-A: 10 or 20 on a 15-minute chart. Any longer and you’ll lag too much.
+**Q: What length is best for day trading?**
+A: Shorter lengths respond faster but lag less; longer lengths smooth more. Any long length will lag too much for intraday use.
 
-**Q: Does VWMA work on any instrument?**  
+**Q: Does VWMA work on any instrument?**
 A: Best on stocks, forex, and futures where volume is meaningful. Not great on indices or ETFs where volume is spread across multiple exchanges.
 
 ## Final Verdict
 
-⭐⭐⭐⭐ (4/5)
+The VWMA is a solid, no-nonsense tool for trend traders who want volume confirmation without complexity. It won't make you rich overnight, but it can help keep you out of bad trades. It's still a lagging indicator and less useful in low-volume environments. But if you trade liquid markets and stick to the rules, it earns its place on your chart.
 
-The VWMA is a solid, no-nonsense tool for trend traders who want volume confirmation without complexity. It won’t make you rich overnight, but it will keep you out of bad trades. Deduct one star because it’s still a lagging indicator and useless in low-volume environments. But if you trade liquid markets and stick to the rules, it earns its place on your chart.
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

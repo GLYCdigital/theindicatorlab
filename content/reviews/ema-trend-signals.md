@@ -17,88 +17,76 @@ categories:
 rating: 4
 description: "Ema_Trend_Signals review: an honest look at this trend-following tool, its best settings, entry logic, pros, cons, and who should actually install it."
 tv_script_url: "https://www.tradingview.com/script/mftN9f1e-EMA-Trend-Signals/"
+sources: ["https://www.tradingview.com/script/mftN9f1e-EMA-Trend-Signals/"]
 ---
-Most EMA indicators on TradingView are the same two moving averages with a couple of labels bolted on. Ema_Trend_Signals is not that — but it's also not the magic button its name might suggest. Here's what it actually does after a few weeks of testing it on intraday and swing charts.
+Most EMA indicators on TradingView are the same two moving averages with a couple of labels bolted on. EMA Trend Signals is a clean, lightweight version of that idea — and it doesn't pretend to be more. Here's what it actually does.
 
-## What Ema_Trend_Signals actually is
+## What EMA Trend Signals actually is
 
-Strip away the name and you get a trend-following system built around a fast/slow EMA pair that fires visual signals when the fast EMA crosses the slow EMA *and* price structure agrees. The key difference from a bare crossover script is that it filters signals using trend context — it doesn't just print an arrow every time two lines touch. That single design decision is why I'm giving it 4 stars instead of 3.
+Strip away the name and you get a trend-following tool built around two exponential moving averages. It colors the trend, highlights the space between the two averages, and marks the bars where the fast average crosses the slow one.
 
-It plots the EMAs on your chart, colors them by slope, and marks crossover events with entry-style labels. You also get a background tint that switches between bullish and bearish regimes, which makes scanning a watchlist much faster.
+The relationship between the two EMAs defines the regime. Fast above slow means momentum is aligned to the upside and the chart reads bullish (green). Fast below slow means momentum is aligned to the downside and it reads bearish (red). That's the whole logic — no hidden filter layer, no secondary confirmation engine.
 
-## Key features that set it apart
+It plots the EMAs on your chart, colors the fast line by the active trend, and marks crossover events with triangle markers. You also get an optional background tint showing the current regime, which makes scanning a watchlist faster.
 
-- **Slope-aware EMAs.** The lines change color based on whether the EMA is rising or falling, not just whether fast is above slow. This catches trend exhaustion earlier than a plain crossover.
-- **Filtered signals.** Crossovers that happen against the higher-timeframe trend are suppressed or dimmed, depending on your settings.
-- **Clean regime shading.** The background tint tells you at a glance whether you're in a trend or chop.
-- **Configurable sensitivity.** You can tighten or loosen the signal frequency without rewriting the logic.
+## Key features
 
-As shown in the chart above, notice how the signals cluster during the trending phase and go quiet during the consolidation box. That's the filter doing its job.
+- **Two EMAs with a directional read.** An EMA weights recent bars more heavily, so it follows price faster than a simple moving average while still smoothing noise. Using two lengths separates short-term momentum from the prevailing trend.
+- **Regime coloring.** The fast EMA line is tinted green or red depending on whether it sits above or below the slow EMA.
+- **Fill between the averages.** A soft fill between the two EMAs is tinted by direction — a wider gap means stronger separation.
+- **Cross markers.** Triangle markers appear on the exact bar where a cross occurs, up or down.
+- **Optional background tint.** A light regime tint can be toggled on or off.
 
-## Best settings I tested
+## Settings and How to Tune Them
 
-Defaults are decent, but not optimal. Here's what worked:
+- **Source** — the price series the EMAs are built from. Default is close; you can apply the logic to hl2, hlc3, and so on.
+- **Fast EMA length** — the short-term average. Default 21.
+- **Slow EMA length** — the trend average. Default 55.
+- **Trend background** — toggles the regime tint.
+- **Cross markers** — toggles the triangle shapes.
 
-- **Fast EMA: 9, Slow EMA: 21.** The classic. Responsive without being noisy on the 15m and 1H.
-- **Signal filter: ON.** Turning this off turns the indicator into a coin flip. Leave it on.
-- **Trend smoothing: 50.** This is the middle ground. Lower values make it twitchy; higher values lag too much on intraday.
-- **Background shading: subtle.** The default opacity is aggressive and will fight your other indicators visually. Dial it back.
+On tuning: shortening the lengths produces faster, more frequent signals; lengthening them produces fewer, smoother ones. That's the trade-off to weigh, and it depends on the timeframe and instrument you're working with rather than any single correct value.
 
-On the daily chart, I'd push the fast/slow to 12/26 to reduce whipsaw. On the 5m, don't bother — the noise-to-signal ratio is brutal no matter what you do.
+## How to use it
 
-## How to actually trade it
-
-The signal label is a *confirmation*, not an entry trigger on its own. My workflow:
-
-1. Wait for the background regime to flip (bullish tint).
-2. Wait for the EMA color to confirm the slope.
-3. Enter on the signal label, but only if price is above the slow EMA.
-4. Stop below the most recent swing low, not a fixed pip amount.
-5. Trail using the slow EMA as your dynamic exit.
-
-Exits are where this indicator earns its keep. When the fast EMA crosses back under the slow EMA *and* the background flips, that's your signal to reduce or close. I found trailing with the slow EMA captured most of the move without giving back the last leg.
+- **Trend bias:** read green as a long bias and red as a short bias. Many traders only take positions in the direction of the color.
+- **Signals:** the up-triangle (fast crosses above slow) and down-triangle (fast crosses below slow) mark momentum shifts. They perform best in trending conditions and will whipsaw in tight ranges — pair them with your own structure, key levels, or a higher-timeframe filter.
+- **Alerts:** two ready-made alerts are included, "EMA Cross Up" and "EMA Cross Down," so you can be notified the moment a cross happens on any symbol or timeframe.
 
 ## Pros and cons
 
 **Pros:**
-- The trend filter genuinely reduces false signals versus a naked crossover.
-- Slope-based coloring is more informative than binary above/below logic.
 - Clean, readable chart output — no clutter.
-- Works across timeframes with minor setting tweaks.
+- The fill and regime tint give an at-a-glance read on direction and momentum shifts.
+- Two built-in alerts cover both cross directions.
+- Open-source, so you can study and build on the logic.
 
 **Cons:**
-- Still a lagging indicator. By definition, it confirms trends, it doesn't predict them.
-- Choppy markets will still produce losing signals, filter or not. You need a discretionary layer.
-- No built-in alerts for the regime flip, only for the crossover signals — an odd omission.
-- Documentation is thin. You're figuring out the settings by trial and error.
+- Moving-average crosses are lagging by nature. They confirm a move after it has already begun rather than predicting it.
+- They can produce false signals in sideways markets.
+- The tool is a visual aid for trend direction and momentum shifts — it is not a complete trading system and does not manage risk or position size.
 
 ## Who it's for
 
-Swing traders on the 1H to daily charts will get the most value. Trend-followers who already understand that no indicator predicts the future will find this a solid confirmation tool. Scalpers and mean-reversion traders should look elsewhere — this is the wrong tool for that job.
-
-## Alternatives worth considering
-
-If you want raw crossover signals with zero filtering, a basic **EMA Ribbon** does the job for free. If you want something that leads rather than lags, look at a **Supertrend** or **Vortex**-based system. And if you're already running a full trend suite, adding Ema_Trend_Signals may just duplicate what you have.
+Traders who want a lightweight trend-direction read without extra clutter, and who already understand that a crossover confirms rather than predicts. Anyone looking for a self-contained system with risk management built in should look elsewhere.
 
 ## FAQ
 
 **Does it repaint?**
-Signals appear on candle close. Intra-candle they can flicker, but closed candles are stable in my testing.
+The source material doesn't address repainting, so there's nothing to state either way.
 
-**Can I use it for crypto?**
-Yes, but raise the smoothing value. Crypto's volatility triggers too many signals on default settings.
-
-**Does it work on the 1-minute chart?**
-Technically yes, practically no. The noise overwhelms the filter.
+**Can I use it on any market or timeframe?**
+The alerts are described as working on any symbol or timeframe. Beyond that, the script makes no market- or timeframe-specific claims.
 
 **Is it better than a plain EMA crossover?**
-Yes — the slope coloring and trend filter are real improvements. But it's an evolution, not a revolution.
+It's a cleaner presentation of the same core idea — two EMAs, a directional read, and cross markers — with the addition of the fill and regime tint.
 
 ## Final verdict
 
-Ema_Trend_Signals is a well-executed trend confirmation tool that respects the trader's intelligence. It won't hand you profits, and it lags by design, but the filtering logic and slope-based coloring make it a genuine upgrade over the naked crossover scripts most traders start with. The missing regime alerts and thin docs keep it from five stars.
+EMA Trend Signals is a well-presented trend-following tool built on a classic, widely used signal: the point where a fast and slow EMA cross. It won't predict anything, and it lags by design, but it's honest about what it is — a visual aid for trend direction and momentum shifts, meant to be confirmed with your own analysis.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a solid addition to a trend-following toolkit, provided you bring your own risk management.
+Open-source and intended for research and educational purposes only. This is not financial advice.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

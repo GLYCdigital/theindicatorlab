@@ -17,82 +17,72 @@ categories:
 rating: 4
 description: "Fibonacci_Trend_Continuation_Signals_Algoalpha review: retracement-based trend entries, best settings, honest pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/U7CZ8jtj-Fibonacci-Trend-Continuation-Signals-AlgoAlpha/"
+sources: ["https://www.tradingview.com/script/U7CZ8jtj-Fibonacci-Trend-Continuation-Signals-AlgoAlpha/"]
 ---
-Let me be upfront: most "Fibonacci" indicators on TradingView are repackaged pivot point drawings with extra lines. This one isn't. What Algoalpha built here is a proper trend-continuation system that uses Fibonacci retracement levels as actionable entry zones rather than just pretty horizontal lines on your chart.
+Most "Fibonacci" indicators on TradingView are repackaged pivot-point drawings with extra lines. This one takes a different approach. Fibonacci Trend Continuation Signals [AlgoAlpha] maps Fibonacci retracement levels inside an adaptive trend structure, using volatility-based trend detection to define a moving range, then projecting Fibonacci ratios across that range as reference zones for pullbacks.
 
-The core logic is straightforward: it identifies the dominant trend, plots the standard 0.382, 0.5, and 0.618 retracement levels during pullbacks, then fires signals when price shows a reaction at those levels. What separates this from the noise is the confirmation layer — it doesn't scream BUY every time price touches the 0.618. There's a momentum filter and a candle-close confirmation baked into the signal generation, which cuts down the false positives you'd get from a raw level cross.
+The core logic: the script builds a trend midline from an exponential moving average of closing price, with outer bands placed above and below it using a smoothed measure of the high-to-low range. The active trend direction only changes when price moves beyond one of those outer bands. Once a direction is active, the script projects the 0.236, 0.382, 0.500, 0.618, and 0.786 levels between the active outer band and the midline. In bullish trends, levels are measured upward from the lower band; in bearish trends, downward from the upper band. Continuation signals appear when price closes back through an enabled Fibonacci level in the direction of the active trend.
 
-Looking at the chart above, you can see how the indicator behaves during a clean uptrend. The signals align with the higher-timeframe structure, and the entry markers appear only after price has actually bounced off the level, not on the touch itself. That's a subtle but crucial difference.
+That last detail is the important one. The signal is not triggered on the touch of a level — it requires a close through it, and only in the direction of the active trend. This is a continuation framework, not a reversal caller, and the design reflects that.
 
 ## Key Features That Matter
 
-The trend filter is the best part. It uses a combination of EMA slope and price position relative to the 200-period SMA to determine whether it's even allowed to issue long or short signals. In a ranging market, you'll notice it goes quiet — which is exactly what you want. Most Fibonacci tools will happily generate signals in chop; this one respects the trend context.
+The adaptive Fibonacci profile is the centerpiece. Rather than anchoring levels to a fixed swing high and low, the script recalculates the trend range as price and volatility change, so the levels move with the structure. Five ratios are configurable, which means you can keep only the retracement zones relevant to how you trade.
 
-The alert system is also properly built. You can set alerts for signal generation, level touches, and trend flips. That's rare for a free indicator in this category.
+Trend continuation signals are marked as bullish and bearish triangles. A bullish signal appears when price closes upward through an enabled Fibonacci level during a bullish trend; a bearish signal is the equivalent close downward during a bearish trend. Because the trend direction is governed by the volatility bands, the signals are inherently conditioned on the trend context rather than firing indiscriminately.
 
-## Settings I Actually Tested
+Current level labels show the price value of each enabled Fibonacci level at the latest bar, so you can read the active retracement zones directly off the chart without measuring. Trend change markers flag the Fibonacci structure when a new bullish or bearish trend begins, which helps you see where the current framework was established.
 
-After running this on BTC/USD and EUR/USD across multiple timeframes, here's what worked:
+## Settings and How to Tune Them
 
-- **Timeframe:** 1H and 4H gave the cleanest signals. Lower timeframes (5m/15m) produce too much noise; the momentum filter gets whipsawed.
-- **Fibonacci Levels:** Keep the default 0.382/0.5/0.618. Adding deeper levels like 0.786 slows down signal generation significantly.
-- **Momentum Filter Period:** I set this to 14 (RSI-based). Shorter values (7-9) generate more signals but with more false positives.
-- **Candle Confirmation:** Leave this on. It's the difference between 60% and 45% win rate in my backtests.
+Three settings govern how the trend framework behaves: **Midline Length**, **Pivot Length**, and **Band Width**. Midline Length controls the EMA that forms the central reference and the endpoint of the Fibonacci range. Pivot Length and Band Width control how quickly the trend framework responds to price and how wide the outer boundaries are. There is no single correct configuration here — shorter, tighter settings make the framework more reactive; longer, wider settings make it more stable. The right balance depends on the instrument and the timeframe you trade.
 
-One thing I'd change: the default signal lookback of 5 candles is too tight. I increased it to 8, which gave the indicator more time to confirm the reaction at the level. Worth testing on your own charts.
+Individual Fibonacci levels can be enabled or disabled. If your method only uses a subset of the five ratios, turning off the rest keeps the chart clean and reduces the number of levels that can generate a signal.
 
-## How I Actually Trade It
+## How to Use It
 
-The entry logic is simple but requires discipline. On a pullback, wait for the price to reach the 0.5 or 0.618 level in the direction of the trend. The indicator will print a signal only when momentum has shifted back in the trend's direction. I enter on the next candle open after the signal.
+Start by identifying the active trend structure. A bullish structure projects Fibonacci levels from the lower band toward the midline; a bearish structure projects them from the upper band toward the midline. During a retracement, the displayed zones show how far price has moved through the active trend range.
 
-My stop loss goes below the swing low (for longs) or above the swing high (for shorts) — usually one ATR beyond the extreme. The take profit target is the prior swing high or the 1.272 extension. The risk-reward comes out around 1:2.5 in trending conditions, which is respectable.
+The signal logic is deliberately narrow: an upward triangle means price closed above an enabled Fibonacci level during a bullish trend, and a downward triangle is the bearish equivalent. The script does not tell you to act on the touch of a level — it waits for the close through it.
 
-The key mistake traders make with this indicator: they trade every signal. The best setups come when the higher timeframe trend aligns with the signal direction, and the pullback is shallow rather than a deep retracement. If price has already retraced more than 61.8%, the trend is weakening — skip those signals.
+The documentation recommends comparing signals with price structure — nearby swing points, support, resistance, or your existing confirmation method — before acting. It also suggests that if price has already retraced deeply through the range, the trend may be weakening, so shallower pullbacks within an established trend are generally the cleaner context for a continuation signal.
 
 ## Pros & Cons
 
 **Pros:**
-- Clean, uncluttered visuals. No wall of lines.
-- The trend filter genuinely reduces chop signals.
-- Alerts are well-implemented and useful.
-- Works on any timeframe; adapts to market conditions.
+- The trend framework is volatility-adjusted, so the Fibonacci range moves with the market instead of sitting on fixed anchors.
+- Signals require a close through a level in the direction of the active trend, which filters out touches that go nowhere.
+- Five Fibonacci levels are individually configurable.
+- Current level labels and trend change markers make the active structure readable at a glance.
 
 **Cons:**
-- The momentum filter uses RSI internally, so it lags in fast-moving markets. You'll miss some early entries.
-- No multi-timeframe analysis built in. You need to check the higher timeframe yourself.
-- In strong trends, price rarely pulls back to the 0.618 — you'll sit waiting for entries that never come.
+- The trend only flips when price crosses an outer band, so the framework can lag at turning points.
+- In strong trends, price may not retrace to the deeper levels, meaning some signals never trigger.
+- There is no built-in multi-timeframe analysis — higher-timeframe context has to be checked separately.
+- It is a continuation tool by design, so it is not intended for counter-trend setups.
 
 ## Who This Is For
 
-This is a tool for traders who already have a trend-following system and need better entry timing. If you're someone who knows the direction but struggles with pullback entries, this indicator solves that problem. It's not for scalpers — the signal generation is too deliberate. It's also not for counter-trend traders; the whole logic is built around continuation.
-
-Beginners will find the settings manageable, but you need to understand Fibonacci retracement basics to use it effectively. This isn't a "set and forget" system.
-
-## Alternatives Worth Considering
-
-- **SMCpro Algo:** Better for ICT/Smart Money concepts, but more complex.
-- **LuxAlgo Fibonacci Retracement:** Cleaner visuals, but no trend filter — you'll get more signals, most of them bad.
-- **Nadaraya-Watson Envelope:** If you want dynamic support/resistance instead of fixed Fibonacci levels.
+This is a tool for traders who already have a view on trend direction and want a structured way to measure pullbacks and time continuation entries. It suits trend-following approaches where retracement entries are part of the plan. It is not built for counter-trend trading, since the entire logic is oriented around continuation, and it is not a set-and-forget system — you still need to bring your own read on structure and confirmation.
 
 ## FAQ
 
-**Does this repaint?**
-No. Signals are confirmed on candle close and stay fixed. That's a big plus for backtesting.
+**Does it repaint?**
+The documentation does not make a repainting claim. Signals are based on price closing through a level, and the trend direction is governed by the volatility bands, but treat this as a description of the logic rather than a guarantee.
 
-**Can I use it for crypto?**
-Yes, it works well on BTC and ETH on the 4H chart. I'd avoid altcoins with thin liquidity.
-
-**Is it good for day trading?**
-Possible on the 15m, but the momentum filter lags. The 1H is the sweet spot.
+**What timeframes does it work on?**
+The source material does not specify timeframes. The settings can be tuned to make the framework more or less reactive, which is the practical lever for adapting it to a given chart.
 
 **Does it work in ranging markets?**
-No, and that's by design. The trend filter suppresses signals in chop. Don't force it.
+The trend direction only changes when price moves beyond an outer band, so in a range the framework tends to stay in whichever direction was last active rather than flipping repeatedly. Whether signals are useful in that condition depends on your own filtering.
+
+**Can I turn off individual Fibonacci levels?**
+Yes. Each level can be enabled or disabled, so you can keep only the ratios relevant to your method.
 
 ## Final Verdict
 
-This is a solid 4-star indicator. It's not revolutionary, but it's honest — it does one thing (trend-continuation entries at Fibonacci levels) and does it well. The trend filter and confirmation logic elevate it above most Fibonacci tools on TradingView. If you're already trading trends and need better entry precision, this is worth installing. If you're looking for a holy grail, keep scrolling.
+This is a well-constructed indicator that does one job: projecting adaptive Fibonacci levels inside a volatility-defined trend and flagging closes back through those levels in the trend direction. The trend framework and the close-based signal logic are what separate it from the crowd of Fibonacci drawing tools. It is not a holy grail, and it is not trying to be — it is a structured way to measure pullbacks and time continuation entries within a trend you have already identified.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Reliable, well-built, with clear limitations. A genuine addition to a trend trader's toolkit, not just another Fibonacci drawing tool.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

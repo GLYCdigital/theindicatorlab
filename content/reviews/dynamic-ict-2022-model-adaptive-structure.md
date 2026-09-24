@@ -17,89 +17,73 @@ categories:
 rating: 4
 description: "Honest review of Dynamic_ICT_2022_Model_Adaptive_Structure on TradingView. Tested settings, entry logic, pros/cons, and who should use this trend indicator."
 tv_script_url: "https://www.tradingview.com/script/XwWnZWG1-Dynamic-ICT-2022-Model-Adaptive-Structure-PRO/"
+sources: ["https://www.tradingview.com/script/XwWnZWG1-Dynamic-ICT-2022-Model-Adaptive-Structure-PRO/", "https://mozilla.org/MPL/2.0/"]
 ---
-Let me be upfront: I've tested dozens of ICT-based indicators, and most are either repackaged moving averages or overcomplicated messes that repaint harder than a house painter on meth. The Dynamic_ICT_2022_Model_Adaptive_Structure is neither of those — which surprised me.
+# Dynamic ICT 2022 Model & Adaptive Structure PRO Review
 
-This indicator attempts to automate the 2022 ICT market structure model, specifically the adaptive logic that adjusts to changing volatility rather than using fixed swing lookbacks. And honestly? It mostly works. As you can see from the MACD chart above, the structure levels it draws aren't just random lines — they actually shift when price action demands it.
+Most ICT-based indicators on TradingView fall into one of two camps: repackaged moving averages with new labels, or overcomplicated scripts that try to do too much. The Dynamic ICT 2022 Model & Adaptive Structure PRO sits somewhere in between, but leans toward the more useful end of the spectrum.
 
-**What It Actually Does**
+The script is an overlay study that automates several pieces of the 2022 ICT market structure model — major swing points, break of structure and change of character detection, and a trend wave. It's built for white/light chart backgrounds, which the color palette makes clear.
 
-The core function is identifying swing highs and lows using an adaptive algorithm that recalculates the lookback period based on recent market volatility. When volatility expands, the structure points pull in tighter. When it contracts, they push out further. This is the "adaptive" part, and it's the differentiator.
+## What It Actually Does
 
-It then plots these as market structure breaks — bullish breaks above prior highs, bearish breaks below prior lows — with distinct colors and labels. The 2022 model specifically emphasizes the "change in character" (CHOCH) versus "break of structure" (BOS) distinction, and this indicator gives you both separately rather than lumping them into one generic signal.
+The indicator combines four distinct components in one script:
 
-**Key Features That Stand Out**
+**Major ITH / ITL detection.** Using a configurable pivot lookback, it marks "Intermediate Term High" and "Intermediate Term Low" pivots with labeled badges. When a new ITH or ITL prints, it automatically generates a position tool — entry line, stop-loss zone, and a target zone sized to the configured risk-to-reward ratio. Both the short-side and long-side position tools are drawn as shaded boxes extending forward from the pivot.
 
-The adaptive lookback is the headline feature, and it's genuinely useful. Most structure indicators use a fixed period (say, 20 bars), which breaks down in ranging versus trending conditions. This one dynamically adjusts, and in my testing on BTCUSD and EURUSD, it caught significant swings earlier than fixed-period alternatives.
+**Trend wave.** A single EMA plotted with a thick core line and a wider translucent halo behind it. The color flips between bullish and bearish depending on whether the EMA is rising or falling bar-to-bar. It's purely a visual trend filter, not a signal generator.
 
-The CHOCH/BOS separation is also done well. You get different plot styles and colors for each, so you're not squinting at the chart trying to figure out whether that break was meaningful or just noise.
+**Market structure (BOS / CHoCH).** Using a separate structure sensitivity input, the script tracks pivot highs and pivot lows. When price closes above the most recent pivot high, it draws a dashed line and a "BOS" label. When price closes below the most recent pivot low, it draws a solid line and a "CHoCH" label. Each structure point is consumed after it's broken — the script clears the stored level so the same pivot can't trigger twice.
 
-One thing I appreciate: it doesn't repaint. The structure points are calculated on confirmed bars, so once a swing high is marked, it stays marked. That's rare in this category.
+**On-chart branding.** A dashboard table at the top of the chart and a small watermark at the bottom both link to the author's Telegram channel. This is worth noting because it's part of the script, not an optional overlay you can switch off.
 
-**Best Settings I Found**
+## Settings and How to Tune Them
 
-After running this across multiple timeframes, here's what worked: keep the default adaptive sensitivity at its midpoint for swing trading. If you're scalping the 5-minute, crank the sensitivity up two notches — the default will lag too much. For daily charts, reduce sensitivity one notch to avoid chopping through legitimate trends.
+The inputs are grouped into three sections:
 
-The "minimum swing size" parameter is worth adjusting per asset. On BTCUSD, 0.5% worked well. On forex pairs, I had to drop it to 0.2% to get meaningful signals. This is the most important setting to tune for your specific market.
+**ICT 2022 Major ITH / ITL & Positions**
+- Toggle for the ITH/ITL labels and position tools
+- Major Pivot Lookback Sensitivity — controls how many bars on each side are required to confirm a major pivot
+- Target Risk-to-Reward — the ratio used to size the target zone relative to the stop distance
+- Label colors for ITH (red) and ITL (green)
+- Zone fill colors for short and long position tools
 
-**How I Trade It**
+**High-Contrast Glowing Wave**
+- Toggle for the trend wave
+- Wave Period Length — the EMA length
+- Bullish and bearish wave colors
 
-The cleanest setup is the CHOCH confirmation after a BOS. I wait for a break of structure in one direction, then look for the change in character against that move. When both align, that's my entry trigger.
+**Market Structure (BOS / CHoCH)**
+- Toggle for BOS and CHoCH lines
+- Structure Sensitivity — the pivot lookback used for break detection
+- BOS line color and CHoCH line color
 
-For exits, I use the opposite structure point. If I'm long and price breaks the most recent swing low, I'm out. Simple, mechanical, and it keeps you in trends without overthinking.
+Both the major pivot sensitivity and structure sensitivity are independent, which matters: the major ITH/ITL levels and the shorter-term BOS/CHoCH levels are tracked separately, so a BOS isn't the same event as a major ITH print.
 
-You can also use it as a confluence filter. If the indicator shows a bullish BOS and your other signals agree, the probability of a valid move increases noticeably. I've found it pairs well with volume profile and momentum oscillators.
+There's no single "best" configuration. The two sensitivity inputs determine how quickly the script reacts — lower values mark more pivots, higher values mark fewer but more significant ones. The risk-to-reward input is a visual sizing choice for the position tool boxes; it doesn't change what the script detects. The ATR multiplier used to offset labels and stops is hardcoded, not user-adjustable.
 
-**Pros & Cons**
+## How the Position Tools Work
 
-Pros:
-- Adaptive lookback genuinely works across different market conditions
-- No repainting — structure points stick
-- Clear CHOCH/BOS distinction
-- Clean visual design without clutter
+When a major ITH prints, the script draws a short-side setup: entry at the open of the bar before the pivot, stop just above the ITH (offset by a fraction of ATR), and target projected downward by the configured R:R multiple. When a major ITL prints, the mirror applies on the long side.
 
-Cons:
-- The learning curve is real. If you don't understand ICT concepts, this will confuse you
-- No alerts for structure breaks (major oversight for a 2026 indicator)
-- The adaptive algorithm can produce whipsaws in low-liquidity altcoins
-- Default settings are mediocre — you must tune them
+This is a mechanical template, not a signal — the script doesn't tell you to take the trade. It shows you where an entry, stop, and target would sit if you were trading the pivot in that direction. The forward-drawn boxes extend a fixed number of bars to the right, so they're a visual planning aid rather than a live tracking tool.
 
-**Who Should Use It**
+## What's Missing
 
-This is for traders who already understand ICT concepts and want them automated. If you're new to trading, skip it — you'll be lost. If you're a price action trader who's tired of manually marking structure, this saves real time.
+The script has no alert conditions defined. For a structure-based indicator, that's a meaningful gap — you'd have to watch the chart manually for BOS and CHoCH prints rather than being notified.
 
-It's particularly good for swing traders on 1-hour and higher timeframes. The adaptive nature handles trending and ranging markets better than most alternatives.
+There's also no built-in filter for trend context on the BOS/CHoCH logic. The trend wave is plotted but not connected to the structure detection, so a BOS against the wave direction is drawn the same way as one with it.
 
-**Alternatives Worth Considering**
+## Who It's For
 
-If you need alerts, look at Smart Money Concepts by LuxAlgo — it has similar structure detection with notification support. For a simpler approach, any decent fractal break indicator will do the job, though you lose the adaptive logic.
+This is aimed at traders already familiar with ICT terminology — ITH, ITL, BOS, CHoCH, and the 2022 model's emphasis on intermediate-term levels. If those terms are unfamiliar, the labels on the chart won't mean much on their own. For someone who already marks these levels manually, the script automates the mechanical part: pivot detection, level tracking, and position-tool drawing.
 
-**FAQ**
+The trend wave and the structure lines serve different purposes and can be used independently — you can turn off the wave and keep only the structure, or vice versa.
 
-Q: Does it repaint?
-A: No. Structure points are confirmed on bar close.
+## Final Verdict
 
-Q: What timeframe works best?
-A: 1-hour and above for swing trading. Lower timeframes work but need sensitivity adjustments.
+The script is a clean, focused implementation of a specific ICT workflow. It does four things and doesn't pretend to do more. The automatic position tools tied to major pivots are the most distinctive feature; the BOS/CHoCH detection is standard but correctly separated into two distinct event types. The lack of alerts and the on-chart Telegram branding are drawbacks worth knowing about before you add it to a chart.
 
-Q: Does it work on crypto?
-A: Yes, but adjust the minimum swing size parameter.
-
-**Final Verdict**
-
-The Dynamic_ICT_2022_Model_Adaptive_Structure earns 4 stars. It does exactly what it claims — adaptive market structure detection — without the repainting gimmicks that plague this category. The missing alerts and the learning curve hold it back from a perfect score. But if you're an ICT trader looking to automate your structure analysis, this is one of the better options on TradingView. Just budget time to tune the settings for your specific market.
-
-⭐⭐⭐⭐
-
-## Frequently Asked Questions
-
-### Is Dynamic_Ict_2022_Model_Adaptive_Structure worth it?
-
-Based on testing across multiple timeframes, Dynamic_Ict_2022_Model_Adaptive_Structure delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

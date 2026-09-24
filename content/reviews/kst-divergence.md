@@ -16,82 +16,89 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Kst_Divergence review: how it detects momentum reversals with divergences, best settings for crypto & forex, and why it beats RSI for trend exhaustion."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The Kst_Divergence indicator combines the lesser-known KST (Know Sure Thing) oscillator with automated divergence detection. Instead of manually scanning for hidden or regular divergences on a momentum line, this script draws them directly on your chart. It's designed to catch momentum exhaustion before price reverses.
+The Kst_Divergence indicator combines the KST (Know Sure Thing) oscillator with automated divergence detection. Instead of manually scanning for hidden or regular divergences on a momentum line, this script draws them directly on your chart. It's designed to flag momentum exhaustion around price extremes.
 
-I ran this on BTC/USD 4H over the past three months, and it flagged a clean bearish divergence on the May 20 top that saved me from buying the rip. The alerts are what make it useful—no squinting at peaks and valleys.
+The alert integration is what makes it practical—no squinting at peaks and valleys to find the patterns yourself.
 
 ## Key Features That Set It Apart
 
 - **Dual divergence types**: Regular (trend reversal) and hidden (trend continuation) are both detected automatically.
-- **Customizable KST parameters**: You can tweak the four moving average lengths (R1–R4) and their smoothing periods. Defaults are geared toward swing trading.
-- **Visual markers**: Green up arrows for bullish divergences, red down arrows for bearish. Clean, not cluttered.
-- **Alert integration**: Right-click on the indicator to set alerts for new divergences. Huge time-saver.
+- **Customizable KST parameters**: The four moving average lengths (R1–R4) and their smoothing periods can be adjusted.
+- **Visual markers**: Green up arrows for bullish divergences, red down arrows for bearish.
+- **Alert integration**: Right-click on the indicator to set alerts for new divergences.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I tested this on crypto, forex, and indices. Here’s what worked best:
+The KST is built from four weighted moving averages (R1 through R4, from fastest to slowest) plus a signal line smoothing period. The divergence detection also uses a lookback window that defines how far back the script scans for pivots to compare.
 
-- **R1 (fastest MA)**: 10 (default 10 is fine for most)
-- **R2**: 15 (increase to 20 for higher timeframes to reduce noise)
-- **R3**: 20 (leave default unless you scalp)
-- **R4 (slowest MA)**: 30 (drop to 25 on 1H for faster signals)
-- **Signal line smoothing**: 9 (default is good, but 12 on daily charts filters more)
-- **Divergence lookback**: 50 bars (increase to 80 on weekly for major reversals)
+The general tuning logic works like this:
 
-For crypto 1H, I used R1=8, R2=13, R3=18, R4=25 with lookback 40. It caught a hidden bullish divergence on the June 12 consolidation that preceded a 12% pump.
+- **R1–R4 lengths**: Shorter lengths make the oscillator more responsive; longer lengths smooth it out and reduce noise. The spread between R1 and R4 determines how much the oscillator behaves like a fast versus slow momentum measure.
+- **Signal line smoothing**: A longer smoothing period filters more, at the cost of lag.
+- **Divergence lookback**: A wider lookback finds larger, more significant divergence structures but responds later. A narrow lookback catches smaller swings but produces more marginal signals.
+
+There is no single "best" configuration here—the right values depend on the instrument, the timeframe, and whether you're trying to catch major reversals or shorter swings. Adjust one parameter at a time and observe how the divergence markers change.
 
 ## How to Use It for Entries and Exits
 
-No single indicator is a system. Here’s how I pair it:
+No single indicator is a system. A reasonable workflow:
 
-- **Entry (regular bullish divergence)**: Price makes a lower low, KST makes a higher low → long. Wait for price to break above the divergence’s second low candle high. In the chart above, this triggered a nice entry on EUR/USD 4H.
-- **Exit (bearish divergence)**: Price makes a higher high, KST makes a lower high → short or take profit. I close 50% at the first lower low on KST, move stop to breakeven.
-- **Trend filter**: Use a 200 EMA on the chart. Only take bullish divergences above it—reduces false signals in strong downtrends.
+- **Entry (regular bullish divergence)**: Price makes a lower low while KST makes a higher low. A common confirmation is waiting for price to break above the high of the candle at the divergence's second low.
+- **Exit (bearish divergence)**: Price makes a higher high while KST makes a lower high. This can serve as a short trigger or a take-profit signal on an existing long.
+- **Trend filter**: Pairing divergence signals with a longer-term trend filter—such as a long moving average on the chart—can reduce signals that fight a strong trend.
 
 ## Honest Pros and Cons
 
 | Pros | Cons |
 |------|------|
-| Automates a tedious manual process | Can repaint if you change lookback mid-trend |
-| Works on any timeframe | Less effective in strong trends—signals appear late |
-| Alerts are solid | No divergence strength ranking (like RSI) |
-| Clean visual, no lag | KST itself is less popular than RSI/MACD, so fewer resources |
+| Automates a tedious manual process | Behavior can change if you alter the lookback mid-trend |
+| Works across timeframes | Less effective in strong trends—signals can appear late |
+| Alert integration | No divergence strength ranking |
+| Clean visual output | KST is less popular than RSI/MACD, so fewer resources exist |
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This is for **swing traders and position traders** who trade 4H to weekly charts. Scalpers will hate the false signals on 1m/5m. If you already use MACD or RSI divergences manually, this saves you 20 minutes of chart time per day.
+This is for **swing traders and position traders** who work on higher timeframes. Lower timeframes tend to produce more noise and marginal divergence signals. If you already plot MACD or RSI divergences manually, this automates the detection step.
 
 ## Better Alternatives If They Exist
 
-- **Divergence Indicator by LazyBear**: More customizable with RSI/MACD/CCI divergence options, but clunkier UI.
-- **Trendoscope’s Divergence Suite**: Better for multi-timeframe analysis, but paid and over-engineered for simple use.
-- **KST alone (no divergence)**: If you only want the oscillator, use the built-in KST indicator—this script adds little extra value without divergence detection.
+- **Divergence Indicator by LazyBear**: More customizable with RSI/MACD/CCI divergence options, but a clunkier interface.
+- **Trendoscope's Divergence Suite**: Better for multi-timeframe analysis, but paid and heavier than a simple use case requires.
+- **KST alone (no divergence)**: If you only want the oscillator, the built-in KST indicator covers it—this script's value is in the divergence detection.
 
 ## FAQ
 
-**Q: Does this repaint?**  
-A: Yes, if you change the lookback period after a divergence forms. On fixed settings, no repainting occurs once the divergence candle closes.
+**Q: Does this repaint?**
+A: Changing the lookback period after a divergence has formed can shift historical markers. On fixed settings, a divergence confirmed at candle close should remain in place.
 
-**Q: Can I use it for day trading?**  
-A: On 15m/30m, yes, but expect more noise. Best on 1H+.
+**Q: Can I use it for day trading?**
+A: It can be applied to intraday timeframes, but expect more noise. Higher timeframes tend to give cleaner divergence structures.
 
-**Q: Does it work on forex?**  
-A: Yes, but divergence signals are less reliable on major pairs during news events. Check economic calendar first.
+**Q: Does it work on forex?**
+A: Divergence signals on major pairs can be less reliable around news events, so checking the economic calendar first is sensible.
 
-**Q: Why is it 4 stars and not 5?**  
-A: The lack of a divergence strength filter (like RSI zone coloring) means you have to manually judge if the signal matters. A minor but noticeable gap.
+**Q: Why is it 4 stars and not 5?**
+A: The lack of a divergence strength filter means you have to manually judge whether a signal matters. A minor but noticeable gap.
 
 ## Final Verdict
 
-The Kst_Divergence indicator is a practical tool for traders who already understand momentum divergence but want to automate the detection. It won’t teach you divergence—you need to know that part yourself. But as a time-saver and alert system, it earns its place in your toolkit.
+The Kst_Divergence indicator is a practical tool for traders who already understand momentum divergence but want to automate the detection. It won't teach you divergence—you need to know that part yourself. As a time-saver and alert system, it earns its place in a toolkit.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – Reliable, clean, and useful for swing traders. Not groundbreaking, but solid execution of a niche concept.
+**Rating: ⭐⭐⭐⭐ (4/5)** – Clean and useful for swing traders. Not groundbreaking, but solid execution of a niche concept.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **KST** implementation was backtested on 30 markets over 5 years of daily data (43,529 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.2%** (50% = coin flip)
+- Strongest markets: AAPL 53.2%, GBPUSD 53.0%, SOLUSD 52.9%, TSLA 52.6%
+- Weakest markets: WTI 46.2%, VIX 45.6%, SHIBUSD 27.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

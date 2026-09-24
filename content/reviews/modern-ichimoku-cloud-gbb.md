@@ -29,7 +29,7 @@ The indicator adds four optional layers, each solving a different complaint trad
 
 **Layer 1 — Normalised geometry.** Cloud thickness and price-to-cloud distance are measured in ATR units and graded against a rolling percentile window: thin, normal, thick, very thick. This is the layer that makes the tool portable. A "thick cloud" means the same thing across instruments, which is the single biggest upgrade here. The cloud's fill transparency tracks the projected-thickness grade in real time, and an on-chart label reports the current grade plus price and Chikou distance from the cloud in ATR terms.
 
-**Layer 2 — Qualified signals.** TK crosses and Kumo breakouts still plot raw, but a *qualified* version requires three things to agree: candle direction, a minimum price-to-cloud distance, and confirmed Chikou momentum — all expressed in ATR units. There's also an optional higher-timeframe cloud-agreement filter. The detail I appreciate most: unqualified events stay visible as small grey dots rather than vanishing. You can see what got filtered and reason about why, instead of the indicator going silent and leaving you guessing.
+**Layer 2 — Qualified signals.** TK crosses and Kumo breakouts still plot raw, but a *qualified* version requires three things to agree: candle direction, a minimum price-to-cloud distance, and confirmed Chikou momentum — all expressed in ATR units. There's also an optional higher-timeframe cloud-agreement filter. The detail worth noting most: unqualified events stay visible as small grey dots rather than vanishing. You can see what got filtered and reason about why, instead of the indicator going silent and leaving you guessing.
 
 **Layer 3 — Flat-line levels.** When Kijun or Senkou B goes flat for a minimum run of bars, that level is drawn forward as a persistent line. This is the classic "Kijun as support/resistance" read, made explicit and trackable instead of eyeballed. Levels are tracked as live, touched, or expired by age in multiples of the Kijun length, with a touch tolerance in ATR.
 
@@ -37,7 +37,15 @@ The indicator adds four optional layers, each solving a different complaint trad
 
 ## On that stats table
 
-Read the author's own disclaimer carefully: the table is computed live from loaded bars, not backtested, and resets on any settings change or reload. It carries no trading costs or slippage. That's unusually honest for a TradingView script, and it's the correct framing — the table is a diagnostic for *what the indicator is doing on the chart in front of you*, not a performance record. If you treat it as a backtest, you'll misread it.
+Read the author's own disclaimer carefully: the table is computed live from loaded bars, not backtested, and resets on any settings change or reload. It carries no trading costs or slippage. That's unusually honest for a TradingView script, and it's the correct framing — the table is a diagnostic for *what the indicator is doing on the chart in front of you*, not a performance record. Treat it as a backtest and you'll misread it.
+
+## Settings and How to Tune Them
+
+The core Ichimoku constants are fixed at 9/26/52/26 and are not meant to be tuned — the author's stated position is that the time theory is the point of the system. Classic mode is a toggle, and it reduces the script to a standard Ichimoku Cloud plot.
+
+The four layers are individually optional, so the main tuning decision is which to enable. Layer 1 controls how cloud thickness and price-to-cloud distance get graded against the rolling percentile window and how the fill transparency reflects that grade. Layer 2 sets the qualification thresholds — minimum price-to-cloud distance and confirmed Chikou momentum, both in ATR units — plus the optional higher-timeframe cloud-agreement filter. Layer 3 defines how long a flat run must persist before a level is drawn forward, and how level age and touch tolerance are measured. Layer 4 selects the higher-timeframe cloud reference (automatic or manual) and toggles the stats table.
+
+There is no "best" configuration here — the layers are additive and each one trades simplicity for structure. The practical approach is to enable one at a time and observe how it changes what the chart shows before stacking the next.
 
 ## How to use it
 
@@ -70,6 +78,7 @@ Discretionary trend and swing traders who already use Ichimoku and want the clou
 A thoughtful rebuild that fixes the subjectivity problem without gutting the original system. The ATR normalisation and the visible grey-dot filtering are the standout ideas; the stats table is honest about what it isn't. It loses a star for setup complexity and for being a tool you have to learn, not install and forget.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

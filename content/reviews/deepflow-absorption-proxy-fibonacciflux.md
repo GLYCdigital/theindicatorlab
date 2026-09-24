@@ -17,89 +17,56 @@ categories:
 rating: 4
 description: "Deepflow_Absorption_Proxy_Fibonacciflux review: tested settings, entry/exit logic, pros & cons. Is this trend indicator worth installing? Honest verdict inside."
 tv_script_url: "https://www.tradingview.com/script/AZhxuvzI-DeepFlow-Absorption-Proxy-FibonacciFlux/"
+sources: ["https://www.tradingview.com/script/AZhxuvzI-DeepFlow-Absorption-Proxy-FibonacciFlux/"]
 ---
-Let me be upfront: I almost skipped this one based on the name alone. "Deepflow_Absorption_Proxy_Fibonacciflux" sounds like someone smashed three trading buzzwords together and hit publish. But after spending two weeks trading with it across BTC, EUR/USD, and SPY, I can tell you it's more than a gimmick — it's a genuinely useful trend filter that just needs a lighter touch than most people will give it.
+Let me be upfront: the name invites skepticism. But the source material behind this script is unusually candid, and that candor is the story here. This is an OHLCV-only proxy for absorption, published together with the measurements that say how little it is entitled to claim. That framing matters more than the marks themselves.
 
 **What it actually does**
 
-Strip away the fancy branding and this is a momentum-trend hybrid. It calculates an absorption proxy — essentially measuring buying vs. selling pressure through volume-weighted price action — then wraps it in Fibonacci retracement levels to define the "flux" zones where trend continuation is most likely. The indicator plots a colored histogram (green for bullish absorption, red for bearish) alongside Fibonacci bands that expand and contract with volatility.
+The script marks a bar when four conditions hold at once: volume is at least 1.8 standard deviations above its 50-bar mean, the body is at most 36% of the bar's range, one wick is at least 38% of that range, and the bar is revisiting a level it already reacted to — within 0.28 ATR of the 18-bar extreme on that side. Sell marks sit at the high, buy marks at the low. An audit table shows each of those four quantities for the last bar and whether it passed, so the reason for a mark, or for its absence, is visible rather than implied.
 
-The chart above shows the indicator applied to a MACD pane, which is actually a smart pairing. The histogram gives you the absorption reading while MACD confirms momentum direction. When both align, you're looking at a high-probability setup.
+The script is explicit about what this is: real absorption is an order-book event. Nothing in OHLCV can see resting size, and the script does not pretend otherwise. It marks a shape.
 
-**Key features that stand out**
+**How often, and where**
 
-The absorption proxy isn't just RSI or volume in disguise. It's measuring the rate of change in volume-weighted price — think of it as an early warning system for exhaustion. When the histogram starts shrinking while price makes new highs, that's absorption weakening, and I've found it catches reversals a few candles before MACD crosses.
+At default inputs, on the 6000 bars of BINANCE:BTCUSDT 15m ending 2026-08-18 13:00 UTC — 62 days — it marks 16 bars: 0.27% of them, 9 sell and 7 buy, no two closer than 26 bars apart, and no bar ever firing both sides.
 
-The Fibonacci bands are the second piece. Unlike standard Bollinger Bands which use standard deviation, these bands are anchored to swing highs and lows, dynamically recalculating as new swings form. The 0.618 level has been remarkably accurate as a trend-continuation zone in my testing — it held on 7 of 10 pullback entries I took.
+That rate belongs to the symbol and the bar size, not to the indicator. Same defaults, same measurement: BTCUSDT 1h 0.57%, BTCUSDT 4h 0.50%, ETHUSDT 15m 0.32%, ETHUSDT 1h 0.30%. On daily bars it can go a very long time without marking anything — on BTCUSDT 1D it marked nothing at all across 1000 days. It is built for intraday bars, and that is a limit rather than a preference.
 
-**Best settings I've tested**
+**What the measurement does not support**
 
-Default settings are too sensitive. The factory-set absorption period of 14 generates too many false signals on lower timeframes. Here's what worked for me:
+The tempting reading of a script like this is that the four gates recognise one event together — that a volume spike means something different on an absorption-shaped bar than on any other bar. Measured, that is not visible here.
 
-- **Absorption period: 21** (smooths out noise, especially on 15-minute and 1-hour charts)
-- **Fibonacci lookback: 50** (captures meaningful swings without being too laggy)
-- **Band deviation: 1.5** (tightens the zones so you're not waiting forever for price to reach them)
-- **Signal filter: On** (this is crucial — it only plots arrows when both absorption and MACD agree)
+Over the 5,951 scored bars, a volume spike is no more likely on a bar that already passed the shape and level tests than on any other bar: the lift is 0.99x on the sell side (95% CI 0.53 to 1.80) and 0.75x on the buy side (CI 0.36 to 1.45). With 123 sell candidates, an interaction smaller than roughly 1.6x could not be seen at all, so the honest statement is that the joint structure is undemonstrated at this sample size, not that it has been disproved.
 
-One warning: don't use this on 5-minute charts without increasing the absorption period to 34. The noise will drive you insane.
+A second test points the same way. Circularly shifting the volume series against untouched candles — which destroys any alignment between volume and bar shape while preserving both series' own distributions — produces about 19 marks on average (5th to 95th percentile 12 to 26) where the real series produces 16. The real series sits below its own null rather than above it, though not significantly (two-sided p = 0.59). One plausible mechanism, measured: range and volume correlate at 0.69, so genuinely high-volume bars tend to be wide-range bars, and wide-range bars are exactly what the small-body gate throws away.
 
-**How I actually trade it**
+The level gate is the part that runs against intuition. At the shipped 18-bar lookback, a bar sitting at an 18-bar extreme is about 28% less likely to carry a volume spike than a bar that is not (0.72x, 95% CI 0.48 to 0.96 on BTCUSDT 15m; 0.62x on ETHUSDT 15m). The relationship does turn positive at longer lookbacks — around 60 bars it runs between 1.3x and 2.5x across BTC and ETH on 15m and 1h — but the headline BTCUSDT 15m cell does not separate from a volume-shift null even there. The default is left at 18 because every number quoted was measured at it, and the tooltip on that input says all of the above.
 
-The cleanest setup I found is a pullback-to-flux-zone strategy. Wait for the histogram to be consistently green (or red for shorts), then look for price to pull back into the 0.618 Fibonacci zone. Enter when the histogram shows a fresh expansion — that's absorption resuming in the trend direction.
+Two more things a user should know before turning knobs. "Require Same Price Reaction" is what makes the indicator rare: switching it off takes the same 6000 bars from 16 marks to 147, and it also silently disables the three inputs above it, which do nothing whatsoever while it is off. And the volume threshold's default of 1.8 sits in the middle of a flat plateau — every value from 1.7 to 2.2 produces exactly the same 16 marks — so nudging it one step will usually appear to do nothing.
 
-Stop loss goes just beyond the 0.5 level. Take profit at the 1.272 extension. I've tested this on 47 trades over the past month and the win rate sits at 63%, with a risk-reward of 1:2.2. Not spectacular, but consistent.
+No edge is claimed and none was measured. There is no forward-return figure here, no hit rate, and no suggestion that a mark predicts anything.
 
-The exit signal is where this indicator really shines. When the histogram crosses the zero line while price is still moving in your direction, that's absorption fading. I've closed several trades early using this signal that would've turned into losers if I'd waited for MACD.
+**Settings and How to Tune Them**
 
-**Pros and cons**
+The four shape and level inputs — the volume threshold, the body-to-range cap, the wick share, and the level lookback — are all quoted above at their shipped values, and every measurement in this review was taken at those values. The volume threshold is the one whose default sits on a flat plateau, so small adjustments to it will usually change nothing. The level lookback is the one whose relationship to volume spikes is negative at the shipped value and turns positive at much longer settings, though the headline cell does not separate from the null even there.
 
-The honest trade-offs:
+The input that actually governs rarity is "Require Same Price Reaction." Turning it off multiplies the mark count many times over and silently disables the three inputs above it. Anyone tuning this script should start by understanding that input, because the others do nothing while it is off.
 
-Pros:
-- The absorption proxy genuinely adds information beyond standard momentum indicators
-- Fibonacci zones are dynamic and adapt to changing volatility
-- Pairs exceptionally well with MACD for confluence
-- Clean visual design — no clutter on the chart
+There is no basis in the source material for recommending any particular setting over another.
 
-Cons:
-- The name is terrible and makes it hard to search for
-- Default settings are too aggressive on lower timeframes
-- Steep learning curve — the concept takes time to internalize
-- Not a standalone system; you need additional confirmation
+**What changed in this version**
+
+The previous version declared a compact volume profile — six inputs, three colour pickers, box and line arrays and a colour helper — and drew none of it: the file simply ended before that code existed. Shipping inputs that do nothing is the thing this publication is trying not to do, so the profile is gone and the title no longer claims one. What remains is the absorption test, which is complete and testable, plus an MPL header, the audit table, and a clamp on "Max Body / Range" so that the part of its slider that could never matter stops pretending it does.
+
+**How the numbers were checked**
+
+The whole computation was reimplemented outside Pine and cross-checked against the chart's Data Window on five bars chosen in advance — three sell marks, one buy mark, and one bar that fires nothing so that a model marking everything could not pass. All five agree exactly, to the price rather than to a tolerance. The reimplementation then reproduces the entire firing set independently: the same 16 bars, at the same indices, over the same 6000.
 
 **Who should use it**
 
-This is for intermediate-to-advanced traders who understand that no single indicator is a holy grail. If you're comfortable combining signals and you trade trends with pullbacks, this will fit naturally into your workflow. Beginners will likely get frustrated because the indicator doesn't give clear "buy now" signals without learning its quirks.
+Traders who want to see the audit trail behind a mark, and who are comfortable with a tool that states plainly what it has not demonstrated. The mark count is low by design, the daily-bar behaviour is effectively silent, and the script does not claim to predict anything. If what you want is a signal that asserts an edge, this is not it — and the source material says so directly. Open source under MPL 2.0. Nothing here is a forecast, a signal service, or a claim of profitability.
 
-If you're looking for something simpler, stick with a standard MACD or RSI setup. For something more comprehensive, a full trend-suite like the Cloud Indicator or Supertrend combined with volume profiles will give you more complete coverage.
-
-**The verdict**
-
-Deepflow_Absorption_Proxy_Fibonacciflux earns 4 stars because it does something genuinely different — and does it well once you dial in the settings. It's not life-changing, but it's a solid addition to any trend trader's toolkit. Just be prepared to spend a few days understanding its behavior before you trust it with real capital. The 0.618 zone alone is worth the install time.
-
-**FAQ**
-
-**Is this indicator free?**
-Yes, it's available in TradingView's public indicator library.
-
-**Does it repaint?**
-The histogram doesn't repaint, but the Fibonacci bands will adjust as new swings form. No repainting on signals.
-
-**Can I use it for crypto?**
-Absolutely. I tested it on BTC and ETH — it actually performs better on crypto due to higher volume participation.
-
-**What timeframes work best?**
-15-minute and above. Anything below that gets too noisy unless you adjust the absorption period significantly.
-
-## Frequently Asked Questions
-
-### Is Deepflow_Absorption_Proxy_Fibonacciflux worth it?
-
-Based on testing across multiple timeframes, Deepflow_Absorption_Proxy_Fibonacciflux delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

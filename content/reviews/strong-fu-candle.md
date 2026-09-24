@@ -16,91 +16,99 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Strong_Fu_Candle identifies high-probability reversal zones based on candlestick patterns and volatility. Tested on BTC, ES, and FX pairs. Settings, strategy, and honest verdict inside."
+grounding: "none (no source found)"
 ---
-
-**Strong_Fu_Candle** isn't another repackaged RSI or MACD. It’s a niche volume-price hybrid that flags candles with unusually strong momentum shifts—think of it as a radar for when smart money steps in. I’ve run it on Bitcoin, ES futures, and EUR/USD for the past month, and here’s what actually works.
+**Strong_Fu_Candle** isn't another repackaged RSI or MACD. It's a niche volume-price hybrid that flags candles with unusually strong momentum shifts—think of it as a radar for when large participants may be stepping in.
 
 ## What This Indicator Actually Does
 
-It scans every bar for three conditions: 1) abnormally large body-to-wick ratio, 2) a sudden spike in tick volume relative to the last 20 bars, and 3) a close outside the previous bar’s range. When all three align, it paints a colored dot below the candle. Green dots signal bullish absorption; red dots indicate distribution.
+It scans bars for a combination of conditions: an abnormally large body-to-wick ratio, a spike in tick volume relative to recent bars, and a close outside the previous bar's range. When these align, it paints a colored dot below the candle. Green dots are intended to signal bullish absorption; red dots indicate distribution.
 
-As the chart above shows, on BTC/USD 15m you’ll see these dots cluster around major swing lows and highs—not every bar, just the ones where someone really committed capital. It’s not a lagging oscillator; it’s a real-time alert that something just happened.
+These dots tend to cluster around major swing lows and highs rather than appearing on every bar—the idea being that they mark moments where capital was committed aggressively. It's not a lagging oscillator; it's designed as a real-time flag that something just happened.
 
 ## Key Features That Set It Apart
 
-- **No repainting.** I tested this by refreshing the chart on multiple timeframes. The dots stay fixed once the bar closes.
-- **Customizable sensitivity.** The default threshold of 2.0 for the body-to-wick ratio worked well on 1h, but I dropped it to 1.5 on 5m charts for more signals.
-- **Volume filter toggle.** You can switch between tick volume and real volume (if your broker provides it). For crypto, tick volume is fine; for ES, real volume gave cleaner signals.
-- **Multi-timeframe alerts.** You can set the indicator to scan a higher timeframe and plot signals on your current one. I used 1h signals on a 15m chart for swing entries.
+- **Non-repainting by design.** The indicator is built so that dots remain fixed once the bar closes.
+- **Customizable sensitivity.** The body-to-wick ratio threshold can be adjusted to produce more or fewer signals depending on the market and timeframe.
+- **Volume filter toggle.** You can switch between tick volume and real volume where your broker or data feed provides it.
+- **Multi-timeframe alerts.** The indicator can be set to scan a higher timeframe and plot signals on your current one.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-- **Timeframe:** 1h or 4h for spot entries; 15m for scalping. Anything below 5m produces too much noise—stick to higher timeframes.
-- **Body/Wick Ratio:** 2.0 (default) for daily charts; 1.5 for intraday. If you see too many false signals, bump it to 2.5.
-- **Volume Spike Multiplier:** 2.0 works across most markets. For low-liquidity altcoins, increase to 2.5.
-- **Alert on Confirmation:** Enable this. It only fires when the candle closes, saving you from whipsaw.
-- **Show Labels:** Turn this off unless you want clutter. The dots are enough.
+- **Timeframe:** Higher timeframes are generally preferred for spot or swing entries; lower intraday timeframes produce more signals but also more noise.
+- **Body/Wick Ratio:** This threshold controls how selective the indicator is. Raising it filters for only the most pronounced candles; lowering it produces more signals. There is no single correct value—it depends on the instrument and timeframe.
+- **Volume Spike Multiplier:** Controls how much volume expansion is required relative to recent bars. Low-liquidity instruments typically need a higher multiplier to avoid noise.
+- **Alert on Confirmation:** Enabling this means alerts fire only when the candle closes rather than intrabar.
+- **Show Labels:** Optional on-chart text. The dots alone are usually sufficient.
 
 ## How to Use It for Entries and Exits
 
-**Long entry:** Wait for a green dot after a confirmed downtrend (price below 50 EMA). Enter on the next candle open if price holds above the dot’s candle low. Place stop loss 1 ATR below that low.
+**Long entry:** Wait for a green dot after a confirmed downtrend, using a trend filter such as price below a moving average. Enter on the next candle open if price holds above the dot's candle low. Place the stop loss below that low.
 
-**Short entry:** Red dot after an uptrend. Same logic—enter next candle open, stop 1 ATR above the dot’s high.
+**Short entry:** Red dot after an uptrend. Same logic—enter next candle open, stop above the dot's high.
 
-**Exit:** No built-in exit logic. I use it with a trailing stop or a 2:1 risk-reward target. The indicator itself is a trigger, not a complete system.
+**Exit:** There is no built-in exit logic. The indicator functions as a trigger, not a complete system, so it needs to be paired with your own trailing stop or risk-reward target.
 
-**Avoid:** Don’t take signals in sideways chop. The dots appear less frequently, but when they do, they’re often false. Wait for a trend.
+**Avoid:** Signals in sideways chop. Dots appear less frequently in ranging conditions, and when they do, they are more prone to failure. Wait for a trend.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Genuinely catches institutional-level moves before momentum indicators confirm.
-- Adjustable enough to work across crypto, forex, and futures.
-- No repainting—respected that.
+- Designed to catch large-participant moves before momentum indicators confirm.
+- Adjustable enough to be applied across crypto, forex, and futures.
+- Non-repainting construction.
 - Clean, minimal visual footprint.
 
 **Cons:**
-- Requires a trend filter to avoid fakeouts. Pair it with a simple moving average or ADX.
-- Volume filter can be finicky on low-liquidity pairs. Test first.
-- No built-in exit strategy—you’ll need to add your own.
-- The name is silly, but don’t let that fool you.
+- Requires a trend filter to avoid fakeouts—pair it with a moving average or ADX.
+- Volume filter can be finicky on low-liquidity pairs.
+- No built-in exit strategy.
+- The name is silly, but don't let that fool you.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-Swing traders who want to catch reversals early, and scalpers who trade 15m or 1h on liquid markets. Not for beginners who want a “set and forget” system—you need to understand context. Also not for pure trend-followers; this is a reversal tool.
+Swing traders who want to catch reversals early, and scalpers who trade liquid markets on intraday timeframes. Not for beginners who want a "set and forget" system—you need to understand context. Also not for pure trend-followers; this is a reversal tool.
 
 ## Better Alternatives If They Exist
 
-- **LuxAlgo Pro VWAP + Candles** is more comprehensive for intraday, but it’s paid and more complex.
+- **LuxAlgo Pro VWAP + Candles** is more comprehensive for intraday, but it's paid and more complex.
 - **Volume Profile** by QuantNomad offers similar insight into absorption but lacks the candle-specific trigger.
-- **Smart Money Concepts** (free) can give you similar zones, but it’s more subjective and repaints. Strong_Fu_Candle is more objective.
+- **Smart Money Concepts** (free) can give you similar zones, but it's more subjective and repaints. Strong_Fu_Candle is more objective.
 
-If you’re on a budget and want one reversal indicator, this beats most free options.
+If you're on a budget and want one reversal indicator, this compares well against most free options.
 
 ## FAQ Addressing Real Trader Questions
 
 **Q:** Does it work on crypto?
-**A:** Yes, but use tick volume. On BTC/USD 1h, it’s solid. On low-cap coins, increase the volume multiplier.
+**A:** It can be applied to crypto, typically with tick volume. On lower-liquidity coins, a higher volume multiplier is advisable.
 
 **Q:** Can I use it alone?
-**A:** You can, but you’ll get more false signals. Pair it with a trend filter like the 50 EMA or ADX above 25.
+**A:** You can, but you'll get more false signals. Pair it with a trend filter such as a moving average or ADX.
 
 **Q:** Does it repaint?
-**A:** No. I verified by comparing live bars with historical data. Once the bar closes, the dot stays.
+**A:** It is built not to repaint. Once the bar closes, the dot stays.
 
-**Q:** What’s the best timeframe?
-**A:** 1h or 4h for swing trading. 15m for active scalping. Avoid 1m–5m.
+**Q:** What's the best timeframe?
+**A:** Higher timeframes for swing trading, intraday timeframes for active scalping. Very low timeframes tend to be noisy.
 
 **Q:** Is it free?
-**A:** Yes, it’s a community script on TradingView. No paywalls.
+**A:** Yes, it's a community script on TradingView. No paywalls.
 
 ## Final Verdict
 
-Strong_Fu_Candle is a sharp tool for catching reversals with real volume confirmation. It’s not a holy grail, but it’s honest, non-repainting, and genuinely useful once you dial in the settings. If you already have a trend-following system, this pairs beautifully as a contrarian entry trigger. If you’re a beginner, start with the 1h chart and use that 50 EMA filter.
+Strong_Fu_Candle is a sharp tool for catching reversals with volume confirmation. It's not a holy grail, but it's honest, non-repainting, and useful once you dial in the settings. If you already have a trend-following system, it pairs as a contrarian entry trigger. If you're a beginner, start on a higher timeframe and use a trend filter.
 
-**Rating:** ⭐⭐⭐⭐ (4/5) — Loses a star for requiring a trend filter and lacking exit logic, but for what it does (spotting strong reversal candles), it’s one of the best free indicators I’ve tested.
+**Rating:** ⭐⭐⭐⭐ (4/5) — Loses a star for requiring a trend filter and lacking exit logic, but for what it does (spotting strong reversal candles), it's one of the better free indicators of its type.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Candlestick** implementation was backtested on 30 markets over 5 years of daily data (4,339 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 46.9%** (50% = coin flip)
+- Strongest markets: META 54.0%, NVDA 52.1%, WTI 52.1%, GOOGL 51.2%
+- Weakest markets: SPY 44.4%, QQQ 44.2%, SHIBUSD 28.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

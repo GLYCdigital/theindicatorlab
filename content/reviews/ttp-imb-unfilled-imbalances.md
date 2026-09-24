@@ -17,92 +17,73 @@ categories:
 rating: 4
 description: "Ttp_Imb_Unfilled_Imbalances review: a practical look at how this ICT-style imbalance tool spots unfilled gaps, best settings, entry logic, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/V27gem2X-TTP-IMB-Unfilled-Imbalances/"
+sources: ["https://www.tradingview.com/script/V27gem2X-TTP-IMB-Unfilled-Imbalances/"]
 ---
-Let me be straight with you: there's no shortage of imbalance indicators on TradingView. Most of them just draw a few boxes and call it a day. Ttp_Imb_Unfilled_Imbalances is different — it specifically tracks *unfilled* imbalances, which is a subtle but crucial distinction that most retail traders miss.
+There's no shortage of imbalance indicators on TradingView, and most of them draw a few boxes and stop there. This script is built around a narrower idea: it tracks *unfilled* imbalances specifically, and it computes them across several timeframes at once rather than only the chart you happen to be on.
 
 ### What This Indicator Actually Does
 
-The core premise comes from ICT/SMC concepts: when price moves aggressively, it leaves behind an imbalance (a one-way price range where few trades occurred). These zones act like magnets — price often returns to "fill" them before continuing the trend. The twist here is that this indicator filters out already-filled imbalances and only displays the ones still lurking in the market.
+The premise comes from ICT/SMC concepts: when price moves aggressively, it can leave behind an imbalance — a one-way range where little trade occurred. These zones are often treated as levels price may return to before continuing.
 
-What you get on your chart is a series of boxes (or shaded zones, depending on your settings) marking these unfilled areas. As the chart above shows, the indicator plots these zones in relation to price action, and you can see how price often respects them on pullbacks.
+What this script draws is three-bar fair value gaps, defined by wicks. A bullish gap exists when the high of the first bar sits below the low of the third; a bearish gap when the low of the first bar sits above the high of the third. The box spans exactly those two extremes. Gaps are computed from four timeframes at once (4H, 1D, 1W, 1M by default, all configurable) and rendered on whatever chart timeframe you are on. Switching chart resolution does not change the levels — a weekly gap keeps the same two prices whether you are viewing 4H or 1D.
 
 ### Key Features That Set It Apart
 
-The unfilled-only filter is the headline feature. Most imbalance tools clutter your chart with every historical imbalance, making it nearly impossible to spot the relevant ones. This one keeps things clean.
+The unfilled-only filter is the headline feature. Rather than keeping every historical gap on the chart, the script removes zones once price has worked into them far enough.
 
-Another strong point: the indicator tracks imbalances across multiple timeframes. You can load the daily imbalances on your 15-minute chart and see where the bigger players are likely to step in. That multi-timeframe awareness is genuinely useful for aligning your intraday bias with higher timeframe structure.
+The multi-timeframe handling is the other distinguishing piece. Gaps from higher timeframes are computed and drawn on your current chart, so a weekly imbalance is visible while you are working on an intraday resolution.
 
-The alert system is solid, too. You can set alerts for when price enters an imbalance zone, which saves you from staring at the chart all day.
+Fading is a useful detail: a zone price has already eaten at least half of but which has not reached the closing threshold is drawn faded and labelled with its fill percentage. That separates an untouched imbalance from one that has already been worked, without hiding either.
 
-### Best Settings (Tested)
+### Settings and How to Tune Them
 
-I ran this on BTCUSD and EURUSD across multiple sessions. Here's what worked:
+- **Filled at (%)** — the closing threshold, default 66.6. A zone stops being drawn once price has overlapped that share of the box's original height, measured from the side price enters by: a bullish gap dies when price falls that far from the top, a bearish gap when price rises that far from the bottom. 100 means only a complete traverse closes a zone; 50 is the classic midpoint rule.
+- **A wick is enough to fill** — off requires a bar close beyond the threshold instead, which leaves noticeably more zones alive.
+- **Zones per side, per TF** — default 3. Per timeframe, the script draws the nearest unfilled zones above price and the same number below, plus every zone that currently contains price. Those containing zones are the operative ones and are never rationed away.
+- **Search range (xN)** — a multiplicative band around current price, default 2. Zones lying entirely outside price/N up to price*N are discarded before anything else. The band is a ratio, not a percentage, and that matters: a symmetric percentage band is lopsided because price moves in multiples — −80% is 0.2x while +80% is only 1.8x. Equal ratios up and down is what a log chart actually shows.
+- **Dim a zone once filled (%)** — the fading threshold, default 50.
+- **Rungs above chart TF** — the gating ceiling, default 2. Only timeframes at or above the chart's own are computed, and only up to that many rungs above it. On a 4H chart that gives 4H/1D/1W and drops the monthly; on a daily chart, 1D/1W/1M. Timeframes below the chart are never drawn and are not calculated at all. Set the ceiling to 3 to see everything at or above the chart, or to 0 for the chart's own timeframe only.
+- **Ignore zones thinner than (%)** — an optional micro-gap filter, off by default.
 
-- **Lookback period:** 200 bars is a good default. Going longer than that just fills your chart with stale zones that rarely get revisited.
-- **Minimum imbalance strength:** I'd set this to 2–3. Anything lower gives you too many false signals, and anything higher becomes too restrictive.
-- **Display mode:** The "boxes" mode is easier to visualize than the "lines" mode. You want to see the full zone, not just the edge.
-- **Timeframe:** For day trading, use the 15-minute chart with the 4H and Daily imbalances loaded. For swing trading, use the 4H chart with Daily and Weekly.
+Border thickness increases with timeframe, so the hierarchy reads at a glance. Partially overlapped zones keep their full original geometry — the box does not shrink, so the imbalance is always visible as it was formed.
 
-### How to Use It: Entry and Exit Logic
+### How to Use It
 
-The most reliable setup I found was the *imbalance sweep*:
-
-1. Wait for price to enter an unfilled imbalance zone.
-2. Look for a candlestick rejection pattern (pin bar, engulfing) at that level.
-3. Enter on the close of the rejection candle.
-4. Set your stop loss just beyond the imbalance zone's edge.
-5. Take profit at the next major structural level or at the opposite side of the range.
-
-For trend trading, the indicator works best when you combine it with a basic trend filter — a 200 EMA or a simple higher-high/lower-low structure check. Only take long entries when the higher timeframe imbalance is below price and acting as support, not resistance.
+This is a visualisation tool. It marks structural levels and does not generate entry or exit signals, and there is no built-in backtester. Any use of the zones for entries, stops or targets is a discretionary overlay you bring yourself, not something the script provides.
 
 ### Pros & Cons
 
 **Pros:**
-- The unfilled filter genuinely reduces chart clutter.
-- Multi-timeframe capability is well implemented.
-- Alerts are practical and easy to set up.
-- Clean, honest visual presentation — no misleading signals.
+- The unfilled-only filter reduces chart clutter compared to tools that keep every historical gap.
+- Multi-timeframe gaps are computed and drawn on the current chart, with gating so lower timeframes are never calculated.
+- Fading and fill-percentage labelling distinguish untouched zones from zones already worked.
+- The multiplicative search band is a more sensible filter than a symmetric percentage band.
 
 **Cons:**
-- Like all imbalance tools, it's *reactive*, not predictive. It tells you where price *might* react, not where it *will*.
-- The boxes can lag slightly on fast-moving markets.
-- No backtesting engine built-in, so you'll need to do that manually or with another tool.
-- On lower timeframes (1m–5m), the zones can be noisy unless you adjust the minimum strength setting.
+- It is reactive, not predictive — it marks where price may react, not where it will.
+- No signals, no backtester, no alert logic described in the script's own documentation.
+- Buffers only fill as far back as the chart's loaded history reaches. On a 4H chart covering roughly two years, the monthly buffer holds about two dozen months rather than the full setting. This does not affect zones near price, which is all the script draws.
+
+### Notes and Limitations
+
+The still-forming higher-timeframe bar cannot *create* a zone — that would repaint intrabar — but it does count toward *filling* one, so a zone can die live as price moves into it. Everything else is closed-bar only.
+
+The gap scan is linear in the number of bars, and the "has this gap been filled" test is answered with suffix extremes rather than a nested scan over later bars, which is what keeps four timeframes inside the execution budget instead of timing out.
 
 ### Who It's For
 
-This is for traders who already understand order flow and market structure concepts. If you're new to the idea of imbalances and fair value gaps, you might find the zones confusing without additional context. But if you've been trading supply/demand or ICT-style concepts, this tool will fit right into your workflow.
-
-It's particularly strong for:
-- Intraday traders who want to align with higher timeframe structure
-- Swing traders who want to know where price is likely to pause or reverse
-- Traders who are tired of clutter-heavy imbalance indicators
+Traders already comfortable with order flow and market structure concepts will get the most out of it. If imbalances and fair value gaps are new to you, the zones may need additional context before they mean much. For anyone already working with supply/demand or ICT-style levels, it slots into that workflow as a structural map rather than a signal generator.
 
 ### Alternatives Worth Considering
 
-If this doesn't quite fit your style:
-- **Smart Money Concepts by LuxAlgo** — more comprehensive if you want the full ICT toolkit (order blocks, FVGs, liquidity zones) in one package.
-- **Fair Value Gaps by LonesomeTheBlue** — simpler and lighter if you just want the basic FVG without the unfilled filter complexity.
-- **Volume Imbalance by TradingView (built-in)** — good enough for quick analysis if you don't want to pay for an external indicator.
+- **Smart Money Concepts by LuxAlgo** — broader if you want the full ICT toolkit in one package.
+- **Fair Value Gaps by LonesomeTheBlue** — simpler if you want basic FVGs without the unfilled-zone handling.
+- **Volume Imbalance (built-in)** — adequate for quick analysis without an external script.
 
-### FAQ
+### Final Verdict
 
-**Does this indicator repaint?**
-No, the zones are drawn based on historical data and don't change once formed. The unfilled status only updates when price actually fills the zone.
+The script solves a real problem — isolating unfilled imbalances and computing them across timeframes — without overcomplicating the presentation. The multiplicative search band and the configurable fill threshold show more thought than most imbalance tools bother with. It is a visualisation tool and nothing more, so it belongs alongside your own process rather than in place of one.
 
-**Can I use it for crypto?**
-Yes, I tested it on BTC and ETH. It works well on crypto's 24/7 markets, though you'll want to use the 4H and Daily imbalances rather than lower timeframes for swing setups.
-
-**Is it good for scalping?**
-Not really. The unfilled zones are too wide on lower timeframes, and you'll get too many signals. It's better suited for intraday and swing trading.
-
-### Final Verdict: ⭐⭐⭐⭐ (4/5)
-
-Ttp_Imb_Unfilled_Imbalances earns its four stars because it solves a real problem — filtering out the noise of filled imbalances — without overcomplicating things. It's not a magic bullet (no indicator is), but it gives you a clear map of where institutional money is likely waiting. The multi-timeframe support and clean alerts make it genuinely useful for daily trading.
-
-I'm docking one star because it lacks a built-in backtester and can feel slightly redundant if you already have a comprehensive SMC suite. But if you're looking for a dedicated unfilled imbalance tool that's precise and doesn't clutter your chart, this is one of the better options I've tested.
-
-**Rating: ⭐⭐⭐⭐ (4/5) — Recommended with confidence.**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

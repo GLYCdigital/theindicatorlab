@@ -17,87 +17,70 @@ categories:
 rating: 4
 description: "Honest Gold_Fibonacci_Multiple_Grid review: multi-timeframe trend structure, tested settings, entry logic, and where it falls short."
 tv_script_url: "https://www.tradingview.com/script/219m7Wtj-Gold-Fibonacci-Multiple-Grid/"
+sources: ["https://www.tradingview.com/script/219m7Wtj-Gold-Fibonacci-Multiple-Grid/"]
 ---
-I’ll be upfront: most Fibonacci tools on TradingView are just retracement levels slapped on a chart with a pretty gradient. Gold_Fibonacci_Multiple_Grid isn’t that. It’s a trend-structure indicator that builds a dynamic grid of Fibonacci zones across multiple timeframes, then colors them by trend bias. After two weeks of backtesting it on gold (obviously), BTC, and EURUSD, here’s my honest read.
-
 **What it actually does**
 
-The indicator plots a multi-level Fibonacci grid (0.236, 0.382, 0.5, 0.618, 0.786) using swing highs and lows from a higher timeframe, then overlays an internal trend filter to determine whether each zone acts as support or resistance. The screenshot above shows it on a MACD chart — you can see the grid shifting as price sweeps through the 0.5 and 0.618 zones. The key difference from a standard Fib tool: it’s *dynamic*, not static. The zones recalculate automatically as new swing points form, which means you’re not manually redrawing anything.
+Most Fibonacci tools on TradingView are relative: retracements, extensions and fans measured between two user-selected swing points, which move whenever the anchors change. Gold Fibonacci Multiple Grid takes the opposite approach. It draws a static grid of horizontal levels at Fibonacci-number multiples of a fixed base price — 35 currency units per ounce by default, the official US dollar price of gold fixed by the Gold Reserve Act of 1934.
+
+Each level equals that base price times one Fibonacci number from the distinct sequence (1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987 and onward), up to a configured count. The level prices are constants: they never move and never depend on price history. The entire level set is defined before any chart data is read, identical on every symbol and timeframe, and immune to anchor-selection bias.
 
 **What sets it apart**
 
-The multi-timeframe logic is the real selling point. Most grid indicators pull from one timeframe and call it a day. This one lets you set a "HTF multiplier" — I tested 3x and 5x the chart timeframe. On a 15-minute chart with a 5x multiplier, the grid reflects 75-minute structure, which filters out a lot of noise. The trend bias coloring is also smart: zones turn green when price is above the grid midline (0.5) and red below. It doesn’t lag as badly as most moving-average-based trend filters because it’s anchored to actual swing points.
+The thesis under examination is an observation from technical analysis literature that gold has tended to reverse near prices equal to Fibonacci numbers times the 1934 fixed price. Some technicians, including Robert Prechter, have used 35 dollars as a permanent anchor and noted that subsequent multi-year turning points clustered near multiples of it — 55 times 35 equals 1925, 89 times 35 equals 3115, 144 times 35 equals 5040. The observation is two-sided: certain multiples coincided with major highs while others coincided with major lows, so each multiple carries a role, not just a price. Whether that clustering exceeds what random level placement would produce is an open empirical question, and the script does not assert that the observation is valid. It performs no statistical test.
 
-**Best settings I found**
+What the script adds on top of the static grid is mechanical: on every bar it computes the percent distance from the closing price to each level, records the nearest level, the nearest level above and the nearest level below, and detects whether the close crossed a level relative to the prior close. When the distance to the nearest level is at or below the proximity threshold, that level's line and label switch to the proximity color and gain width, and an alert condition becomes true on the first bar of the approach. A second alert condition fires on any bar whose close crossed a level. That turns a qualitative literature observation into an inspectable, falsifiable chart object.
 
-After testing, here’s what worked:
+**Settings and How to Tune Them**
 
-- **Timeframe:** 15m or 1h. Below 5m, the grid repaints too aggressively.
-- **HTF multiplier:** 4x is the sweet spot. 3x was too tight (zones overlapped constantly), 5x was too wide (levels rarely got tested).
-- **Swing length:** Default 5 is fine, but I bumped it to 8 on BTC to reduce whipsaws.
-- **Zone opacity:** Turn it down to 40%. Full opacity makes the chart unreadable with multiple levels active.
+- **Base price**, currency units per ounce. Default 35. Every level is this value times a Fibonacci number. Changing it repurposes the grid for any anchored-multiple study.
+- **Number of Fibonacci multiples.** Default 15, which spans 35 to 34545 at the default base. Maximum 20.
+- **Proximity threshold**, percent of level. Default 2. Price within this percent of a level counts as at the level.
+- **Range margin**, percent. Default 20. A level beyond the visible price extremes is drawn only when it lies within this percent of them, so the price scale stays close to the price data on arithmetic charts and a level appears overhead or underneath as price approaches it. Raising the margin draws more of the grid at the cost of scale headroom. Undrawn levels still participate in every calculation and in the table.
+- **High target multiples**, comma separated. Default 21, 55, 144. Levels at these multiples always draw in the high target color.
+- **Low target multiples**, comma separated. Default 1, 3, 8, 34, 89. Levels at these multiples always draw in the low target color. Multiples on no list draw in the neutral color.
+- **Possible turning multiples**, comma separated. Default 233, 377, 610. Unreached multiples treated as possible future turning levels, drawn dashed.
+- **Always draw possible turning levels.** Default off. Forces the possible turning multiples on screen regardless of zoom, which expands the price axis on an arithmetic scale; a logarithmic scale is recommended while enabled. When off, the nearest possible turning level is still reported in the table.
+- **Auto-show possible levels when visible span exceeds**, years. Default 10. When the visible window spans at least this many years, the possible turning multiples draw even though they lie beyond the range margin, and hide again when zoomed back in.
+- **Show level labels.** Default on. Each label states the multiple, the base, the resulting price and the assigned role.
+- **Show nearest-level table.** Default on.
+- **Colors** for high target, low target, possible turning, unassigned level and proximity. Defaults red, green, blue, gray and orange. Table rows for the nearest level above and below inherit the role color of that level; the proximity color overrides the nearest level when price is within the threshold.
 
-One warning: the grid repaints on the current bar. That’s a dealbreaker for some, but it’s inherent to any swing-based structure tool. The repaint is minimal (only the most recent zone recalculates), and it stabilizes within 2–3 bars.
+Note that the default role assignments restate a published observation about which multiples coincided with historical highs and lows. The script does not verify those assignments, and all three lists are editable.
 
-**How to use it for entries**
+**How to use it**
 
-The cleanest setup is a trend-continuation play at the 0.618 zone:
+In plain terms, the script draws a ladder of fixed price rungs. Every rung is the old 35 dollar gold price multiplied by a Fibonacci number, so the rungs get further apart as price rises — roughly 62 percent apart, matching the way gold's swings have grown with its price. The claim being examined is that gold tends to stall or turn near these rungs. Scroll back through history and judge for yourself how often turns landed near a rung and how often they ignored the grid entirely.
 
-1. Wait for price to close above the 0.5 midline with the zone colored green (bullish bias).
-2. Let price pull back to the 0.618 level.
-3. Enter on a bullish candlestick close at that zone, with a stop just below the 0.786 level.
-4. Take partial profits at the previous swing high, then trail the rest.
-
-For reversals, watch for a close *through* the 0.786 zone against the trend bias. That’s when the grid is telling you the structure is breaking. In the chart above, you can see price rejected twice at the 0.618 zone before the third attempt broke through — that was the signal to flip short.
+The grid is designed for charts quoted in US dollars per troy ounce of gold: spot gold, gold futures, or a gold index. The levels are timeframe independent; daily and weekly charts are the practical choices because the observation concerns multi-year turning points. Treat a highlighted level as a location of interest for confluence with independent analysis, not as a prediction of reversal. A level is one price; nothing in the script measures whether price will respect it. Between rungs the script is silent by design.
 
 **Pros & Cons**
 
 Pros:
-- Dynamic grid saves hours of manual drawing
-- Multi-timeframe bias is genuinely useful for context
-- Works well on gold and crypto; the zones act as real magnet levels
-- Clean visual hierarchy — you can tell at a glance where the important levels are
+- Absolute levels derived from one historically fixed price and the integer Fibonacci sequence, so the level set is identical across symbols and timeframes
+- Mechanical proximity detection, crossing detection and nearest-level reporting on top of the static grid
+- The nearest-level table reports the next level overhead, the next underneath, and the distance to the closest one, with the exact distance also exposed in the data window
+- Role-based coloring and labeling distinguish high targets, low targets and possible turning levels
 
 Cons:
-- Repaints on the current bar (minor, but it exists)
-- No built-in alerts for zone touches — you’ll need to set your own
-- Can get visually cluttered on lower timeframes unless you adjust opacity
-- The "grid" name is misleading; it’s really a dynamic Fib retracement tool, not a trading grid
+- The levels are meaningful only on series quoted in US dollars per troy ounce. On gold ETFs, gold miners, or gold quoted in other currencies, the default grid does not correspond to the underlying observation; the base price would need to be redefined.
+- Which levels are drawn depends on the visible price range, so the drawn subset changes as the chart is scrolled or zoomed, and the script recalculates on each change of the visible range.
+- Proximity and crossing calculations use closing prices. On the developing bar they update until the close and do not change afterward.
+- Labels are positioned a few bars past the last bar and reposition as new bars print. The table renders on the last bar only.
+- The script visualizes a hypothesis; it performs no statistical test of whether reversals near these levels occur more often than chance would produce.
 
-**Who it’s for**
+**Who it's for**
 
-This suits swing traders and position traders who want a structural context tool, not a signal generator. It’s especially good for gold traders — the instrument it was clearly designed for. Day traders on lower timeframes will find the repaint annoying; you’re better off with a non-repainting pivot point indicator. If you’re a scalper, skip it — the levels are too wide for 1-minute entries.
+This suits traders who want an inspectable structural reference rather than a signal generator, and who work on daily or weekly charts where multi-year turning points are the relevant scale. It is built for gold quoted in US dollars per troy ounce. Anyone trading instruments quoted differently, or looking for entry timing rather than level context, will find the grid does not apply as configured.
 
-**Alternatives worth considering**
+**Limitations to keep in mind**
 
-- **LuxAlgo Fibonacci Retracement** — cleaner visuals, no repaint, but single-timeframe only. Better for pure price action traders.
-- **Smart Money Concepts (SMC) indicators** — if you want institutional order blocks instead of Fib levels, these give you similar structural context with different logic.
-- **Standard TradingView Fib tool** — free, zero repaint, but you’re back to manual drawing.
-
-**FAQ**
-
-**Does it work on crypto?**
-Yes, I tested it on BTC and ETH. The zones held well on 1h+ timeframes. It’s not gold-specific despite the name.
-
-**Does it repaint?**
-Slightly. The current bar’s zone can shift as the swing point updates. Past zones are stable.
-
-**Can I get alerts on zone touches?**
-No built-in alerts. You’ll need to manually set price alerts at the visible levels.
+The level prices are static constants and there are no lookahead or higher-timeframe requests. Calculations, alerts and the table always use the full level set and are unaffected by the view, even though the drawn subset follows the visible range. The script draws at most 20 lines and 20 labels, far below platform object limits. Level spacing follows the Fibonacci sequence, so consecutive levels are roughly 62 percent apart at scale.
 
 **Final verdict**
 
-Gold_Fibonacci_Multiple_Grid earns a solid **⭐⭐⭐⭐ (4/5)**. It’s a genuinely useful structural tool that combines multi-timeframe analysis with dynamic Fib zones — something most indicators don’t do well. The repaint and lack of alerts keep it from a perfect score, but if you trade gold or crypto on 15m+ timeframes and want a better sense of *where* price is likely to react, this is worth the install. Just don’t expect it to tell you *when* to trade — that’s still your job.
+Gold Fibonacci Multiple Grid is a narrow, well-defined tool: a static anchored-multiple grid with mechanical proximity and crossing detection layered on top. It is not a signal generator and makes no claim that the underlying observation is valid — it is built so the reader can inspect the historical record directly. Whether the clustering of turning points near these multiples exceeds chance remains an open empirical question, and the script does not answer it. If you want to examine that question on a USD-per-ounce gold chart, this gives you the object to examine it with.
 
-## Frequently Asked Questions
-
-### Is Gold_Fibonacci_Multiple_Grid worth it?
-
-Based on testing across multiple timeframes, Gold_Fibonacci_Multiple_Grid delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

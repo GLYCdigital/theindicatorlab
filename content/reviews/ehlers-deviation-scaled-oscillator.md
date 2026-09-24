@@ -16,99 +16,105 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Ehlers_Deviation_Scaled_Oscillator review: a smoothed momentum oscillator using deviation scaling. Settings, entry/exit rules, and honest pros vs cons."
+grounding: "none (no source found)"
 ---
-
 **Rating:** ⭐⭐⭐⭐ (4/5)
 
 ---
 
-Alright, I’ve spent the last few days running the Ehlers_Deviation_Scaled_Oscillator on several timeframes and assets—ES futures, BTCUSD, and a few FX pairs. John Ehlers is a legend in signal processing for trading, so I had high hopes. Let me tell you what this thing actually does and whether it’s worth your time.
+The Ehlers_Deviation_Scaled_Oscillator comes out of John Ehlers' body of work on signal processing for trading. It is worth understanding what the indicator does conceptually and where its limits lie before adding it to a chart.
 
 ## What This Indicator Actually Does
 
-This is not your typical RSI or stochastic. It’s a momentum oscillator that applies Ehlers’ deviation scaling technique. Instead of using fixed overbought/oversold levels like 70/30, it dynamically normalizes price deviations based on recent volatility. The core idea: it measures how far price has moved relative to its recent typical deviation, then scales that into a bounded oscillator. The chart above shows it as a blue line oscillating around a zero centerline, with colored histogram bars turning green or red depending on the direction of the scaled deviation.
+This is not a typical RSI or stochastic. It is a momentum oscillator built around Ehlers' deviation scaling technique. Rather than relying on fixed overbought/oversold levels, it normalizes price deviations against recent volatility. The core idea: it measures how far price has moved relative to its recent typical deviation, then scales that into a bounded oscillator. On the chart it typically appears as a line oscillating around a zero centerline, with colored histogram bars distinguishing the direction of the scaled deviation.
 
-In plain English: it filters out noise better than a standard MACD or RSI, and it adapts to changing volatility without needing constant manual adjustment.
+In plain English: the design intent is to filter noise more effectively than a standard MACD or RSI, and to adapt to changing volatility without manual recalibration.
 
 ## Key Features That Set It Apart
 
-- **Deviation scaling** — automatically adjusts to current volatility. In high-volatility periods, the oscillator doesn’t just blast into extreme zones; it recalibrates.
-- **Smoothing built in** — Ehlers uses his SuperSmoother or similar filter internally, so the line is clean even on 1-minute charts. No jitter.
+- **Deviation scaling** — designed to adjust to current volatility. In high-volatility periods, the oscillator does not simply blast into extreme zones; it recalibrates.
+- **Smoothing built in** — Ehlers typically uses his SuperSmoother or a similar filter internally, so the line is intended to stay clean even on short timeframes.
 - **Histogram coloring** — green when the oscillator is rising (bullish momentum accelerating), red when falling (bearish). Simple but effective.
-- **Zero-line cross signals** — cross above zero = momentum turning positive; cross below = momentum turning negative.
+- **Zero-line cross signals** — cross above zero indicates momentum turning positive; cross below, momentum turning negative.
 
-## Best Settings With Specific Recommendations
+## Settings and How to Tune Them
 
-Default settings are fine for most swing traders on 1H-4H charts. I tested the following:
+The indicator exposes a length parameter and a choice of smoothing type. Default settings are generally reasonable for swing traders on intraday-to-daily charts.
 
-- **Length**: 20 (default) works well for daily and 4H. For scalping on 5-minute, try 10–14. For longer-term, 30–40.
-- **Smoothing type**: I prefer “SuperSmoother” (if available in settings) over EMA-based smoothing. It reduces lag noticeably.
-- **Threshold lines**: The indicator doesn’t have fixed overbought/oversold lines by default. Add horizontal lines at +2 and -2 manually for extreme readings — works great as reversal zones.
+- **Length**: shorter lengths make the oscillator more responsive; longer lengths smooth it further at the cost of lag. The right value depends on the timeframe and the asset.
+- **Smoothing type**: where a SuperSmoother option is available, it is intended to reduce lag relative to EMA-based smoothing.
+- **Threshold lines**: the indicator does not ship with fixed overbought/oversold lines by default. Horizontal lines can be added manually to mark extreme readings and used as reversal zones.
 
-My recommendation: start with Length 20, SuperSmoother, and add your own +/-2 lines. Test on your asset before changing.
+There is no single best configuration. The appropriate length and smoothing depend on the instrument and timeframe, and any setting should be evaluated on the specific market being traded before being relied on.
 
 ## How to Use It for Entries and Exits
 
-**Enter long when:**
+**Long entries:**
 - Oscillator crosses above zero (momentum shift).
 - Histogram turns green and is rising.
-- Price is above a key moving average (e.g., 50 EMA) for confluence.
+- Price is above a key moving average for confluence.
 
-**Enter short when:**
+**Short entries:**
 - Oscillator crosses below zero.
 - Histogram turns red and falling.
-- Price below 50 EMA.
+- Price below a key moving average.
 
 **Exit signals:**
-- Take partial profits when oscillator reaches +2 (overextended) or -2.
-- Full exit when histogram changes color or oscillator crosses zero again.
-
-I tested this on the chart above — the zero-line cross caught a nice swing in ES on the 4H chart, entering near the bottom of a pullback. The exit at +2 would have locked in a solid 1.5% move.
+- Take partial profits when the oscillator reaches an extreme reading marked by a manually added threshold line.
+- Full exit when the histogram changes color or the oscillator crosses zero again.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean, noise-free readings compared to standard oscillators.
-- Adapts to volatility automatically — no repainting issues I could detect.
-- Works across timeframes and asset classes.
+- Cleaner readings than standard oscillators, by design.
+- Adapts to volatility automatically.
+- Usable across timeframes and asset classes.
 - Easy to interpret for beginners.
 
 **Cons:**
-- No built-in overbought/oversold levels — you have to add them manually.
-- Slightly slower to react than a raw momentum indicator (the smoothing adds a small lag).
-- Not a standalone system; needs price action or trend filter for best results.
+- No built-in overbought/oversold levels — they have to be added manually.
+- Slower to react than a raw momentum indicator; the smoothing introduces lag.
+- Not a standalone system; it needs price action or a trend filter for context.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This indicator is for traders who are tired of false signals from choppy RSI or stochastic readings. It’s ideal for swing traders on 1H-4H charts. Scalpers on lower timeframes may find it too slow. Beginners will love the clarity; advanced traders can use it as a momentum filter alongside volume or order flow.
+This indicator is aimed at traders frustrated by false signals from choppy RSI or stochastic readings. It suits swing traders on intraday-to-daily charts. Scalpers on very low timeframes may find it too slow. Beginners will appreciate the clarity; advanced traders can use it as a momentum filter alongside volume or order flow.
 
 ## Better Alternatives
 
 - **Ehlers Fisher Transform** — faster, more extreme signals, but noisier. Use if you want earlier entries.
-- **Ehlers Cyber Cycle** — similar smoothing but focuses on cycle detection. Better for range-bound markets.
+- **Ehlers Cyber Cycle** — similar smoothing but focuses on cycle detection. Better suited to range-bound markets.
 - **MACD with smoothed settings** — cheaper alternative, but less adaptive to volatility.
 
-If you already have a good trend filter, this oscillator is a solid addition. If you need a standalone system, look elsewhere.
+If you already have a good trend filter, this oscillator is a reasonable addition. If you need a standalone system, look elsewhere.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. I checked by replaying bars on several timeframes. The values are fixed once the bar closes.
+**Q: Does it repaint?**
+A: The indicator is not designed to repaint; values are intended to be fixed once the bar closes. This should be verified on the specific platform and version in use.
 
-**Q: Can I use it for crypto?**  
-A: Yes, works well on BTC and ETH. The deviation scaling handles crypto volatility better than RSI.
+**Q: Can I use it for crypto?**
+A: The deviation scaling is intended to handle volatile instruments, which makes it a natural fit for crypto. As always, evaluate it on the specific pair.
 
-**Q: Best timeframe?**  
-A: 1H to daily. Lower than 15 minutes gets noisy despite smoothing.
+**Q: Best timeframe?**
+A: Intraday through daily is the typical range. Very low timeframes tend to be noisier despite the smoothing.
 
-**Q: Should I replace my RSI with this?**  
-A: If you find RSI’s fixed levels frustrating, yes. This is more adaptive.
+**Q: Should I replace my RSI with this?**
+A: If fixed RSI levels feel frustrating, this is more adaptive by design. Whether it replaces RSI depends on the rest of your process.
 
 ## Final Verdict
 
-The Ehlers_Deviation_Scaled_Oscillator is a well-engineered tool that does exactly what it promises: clean, adaptive momentum readings. It’s not a magic bullet, but it’s a reliable filter that reduces noise without sacrificing too much speed. I give it 4 stars because it’s missing built-in threshold lines and requires some manual setup. But for traders who value signal clarity over flashy features, this is a keeper.
+The Ehlers_Deviation_Scaled_Oscillator is a well-engineered tool that does what its design promises: clean, adaptive momentum readings. It is not a magic bullet, but it functions as a reliable filter that reduces noise without sacrificing too much speed. The missing built-in threshold lines and the manual setup required are the main drawbacks. For traders who value signal clarity over flashy features, it is worth a look.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Oscillator** implementation was backtested on 30 markets over 5 years of daily data (9,899 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: VIX 76.2%, AUDUSD 59.5%, LTCUSD 58.8%, EURUSD 57.8%
+- Weakest markets: MSFT 42.8%, NVDA 39.8%, SHIBUSD 31.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

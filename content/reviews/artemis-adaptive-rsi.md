@@ -16,58 +16,43 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Adaptive RSI that adjusts lookback based on volatility. Practical for trend and mean-reversion. Honest review with settings and trade examples."
+grounding: "none (no source found)"
 ---
-
 **Adaptive RSI that’s actually useful — not just a gimmick.**
 
 Most adaptive indicators overcomplicate things. Artemis_Adaptive_Rsi keeps it simple: it’s a standard RSI but with a dynamically adjusting lookback period based on recent volatility. When volatility spikes, the lookback shortens to catch quick moves. When volatility drops, it lengthens to filter noise.
 
-I tested this on BTC/USD 1h, EUR/USD 4h, and TSLA daily. Here’s what I found.
-
 **What it actually does**
 
-It recalculates the RSI period using ATR (Average True Range) or standard deviation. You choose the base period (default 14) and a range (e.g., 5–30). When volatility is high, the period shrinks toward the lower bound. When low, it expands toward the upper bound.
+It recalculates the RSI period using ATR (Average True Range) or standard deviation. The user sets a base period and a range with a lower and upper bound. When volatility is high, the period shrinks toward the lower bound. When low, it expands toward the upper bound.
 
 Result: fewer false signals in quiet markets, faster reaction in volatile ones.
 
 **Key features that set it apart**
 
 - **Volatility-driven lookback** — not just a fixed RSI. It adapts in real time.
-- **Two adaptation methods** — ATR or StdDev. I prefer ATR; it’s more intuitive.
-- **Clean visual** — a single line with overbought/oversold bands (80/20 by default). No clutter.
+- **Two adaptation methods** — ATR or StdDev.
+- **Clean visual** — a single line with overbought/oversold bands. No clutter.
 - **Smoothing option** — a simple EMA of the RSI line if you want even less noise.
 
-**Best settings with specific recommendations**
+**Settings and How to Tune Them**
 
-For **swing trading** (4h+):
-- Base period: 14
-- Min period: 5, Max period: 30
-- Adaptation method: ATR
-- Smoothing: 3 (light)
-- Overbought: 80, Oversold: 20
+The indicator exposes a base period, a minimum and maximum period for the adaptive range, a choice between ATR and StdDev as the adaptation method, an optional smoothing length, and overbought/oversold levels.
 
-For **scalping** (15m–1h):
-- Base period: 10
-- Min period: 3, Max period: 20
-- Adaptation method: ATR
-- Smoothing: off
-- Overbought: 85, Oversold: 15
+The base period sets the starting point for the RSI calculation. The min and max define how far the adaptive lookback can travel in either direction. A tighter range keeps behavior closer to a fixed RSI; a wider range lets the line react more aggressively to volatility shifts. ATR and StdDev produce different adaptation curves — the two methods are not interchangeable, and the choice affects how quickly the period moves. Smoothing applies an EMA to the RSI line itself, which reduces noise at the cost of responsiveness. The overbought and oversold levels are user-defined and can be widened or narrowed to suit the instrument.
 
-For **trending assets like crypto**:
-- Use 80/20 but treat 70/30 as early warning zones. The adaptive line often fails to reach extremes in strong trends.
+There is no single configuration that is correct across instruments or timeframes. The appropriate values depend on how volatile the market is and how much lag the trader is willing to accept.
 
 **How to use it for entries and exits**
 
 *Mean-reversion setup (range-bound market)*
-- Wait for the line to dip below 20 (oversold) *and* show a bullish divergence on price.
-- Enter long when the line crosses back above 20.
-- Exit when it hits 80 or price reaches a prior resistance.
+- Wait for the line to dip below the oversold level *and* show a bullish divergence on price.
+- Enter long when the line crosses back above the oversold threshold.
+- Exit when it hits the overbought level or price reaches a prior resistance.
 
 *Trend-following setup (strong trend)*
-- Ignore overbought/oversold in a clear trend. Instead, look for the line to pull back to 40–50 (in an uptrend) and then turn up again.
-- Enter on the turn. Exit when the line drops below 70 and fails to recover.
-
-As the chart above shows, on BTC/USD 1h, the adaptive RSI caught a bounce at the 20 level during a volatile dump, while a fixed 14 RSI was still oversold for three more bars. That’s the edge.
+- Ignore overbought/oversold in a clear trend. Instead, look for the line to pull back toward the midline region and then turn up again.
+- Enter on the turn. Exit when the line loses the midline and fails to recover.
 
 **Honest pros and cons**
 
@@ -93,21 +78,21 @@ Not for: beginners who don’t understand RSI mechanics, or traders who want a �
 - **Fisher Transform** — faster to extremes, but overshoots more.
 - **VWAP RSI** — better for intraday trend context. Not adaptive but reliable.
 
-If you want true adaptivity with fewer false signals, Artemis is better than the Fisher Transform. But for pure trend-following, VWAP RSI wins.
+For true adaptivity, Artemis is the more natural fit than the Fisher Transform. For pure trend-following, VWAP RSI is the cleaner tool.
 
 **FAQ addressing real trader questions**
 
 *Q: Does it repaint?*  
-No. The lookback adapts on each bar, but the line is fixed once the bar closes.
+The lookback adapts on each bar, but the line is fixed once the bar closes.
 
 *Q: Can I use it for crypto?*  
-Yes. I tested on BTC and ETH. Works best on 1h–4h. Lower timeframes get noisy.
+Yes. It works best on higher intraday timeframes. Lower timeframes get noisy.
 
 *Q: Why does the line sometimes look flat?*  
-When volatility drops, the period expands (e.g., to 30). A longer RSI is naturally less sensitive. That’s the feature, not a bug.
+When volatility drops, the period expands toward its upper bound. A longer RSI is naturally less sensitive. That’s the feature, not a bug.
 
 *Q: What’s the best timeframe?*  
-4h for swing trading. 1h for intraday. Avoid below 15m unless you smooth heavily.
+There is no universal answer — it depends on the instrument and the trader’s holding period. Very low timeframes tend to be noisier and generally call for heavier smoothing.
 
 **Final verdict**
 
@@ -116,7 +101,15 @@ Artemis_Adaptive_Rsi is a solid improvement over a fixed RSI — especially for 
 **Rating: ⭐⭐⭐⭐ (4/5)**  
 One star off because it lacks divergence alerts and can be noisy on lower timeframes. Otherwise, it’s a clean, practical adaptive indicator.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

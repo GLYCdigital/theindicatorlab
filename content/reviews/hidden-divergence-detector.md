@@ -16,79 +16,75 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Hidden_Divergence_Detector catches hidden divergences others miss. Tested on crypto, forex, stocks. Honest review with settings, pros, cons, and alternatives."
+grounding: "none (no source found)"
 ---
+# Hidden_Divergence_Detector Review
 
-I’ve tested dozens of divergence indicators, and most are just repackaged oscillators with ugly arrows. The Hidden_Divergence_Detector is different—it actually focuses on *hidden* divergences, which most traders overlook. Let’s cut through the fluff.
+Most divergence indicators are repackaged oscillators with arrows bolted on. The Hidden_Divergence_Detector takes a narrower brief: it looks specifically for *hidden* divergences, the pattern most traders skip past. Here's what it does and where it falls short.
 
 **What This Indicator Actually Does**
 
-Hidden divergence is a continuation signal, not a reversal one. While regular divergence warns of trend exhaustion, hidden divergence tells you the trend is still strong after a pullback. This detector scans RSI (default) or MACD for those patterns and plots them directly on your chart. As you can see in the chart above, it marks bullish hidden divergences (green arrows) and bearish ones (red arrows) with clean labels.
+Hidden divergence is a continuation signal, not a reversal one. Regular divergence warns of trend exhaustion; hidden divergence suggests the trend is still intact after a pullback. This detector scans RSI (default) or MACD for those patterns and plots them directly on the chart, marking bullish hidden divergences with green arrows and bearish ones with red arrows, with labels kept clear of price action.
 
-**Key Features That Set It Apart**
+**Key Features**
 
-- **Dual oscillator support**: Works with RSI or MACD. I prefer RSI for crypto, MACD for forex.
-- **Sensitivity control**: Adjust `MinBars` (default 5) to filter out noise. I use 10 on lower timeframes like 15m.
-- **Visual clarity**: No clutter—just arrows and optional alert lines. The labels don't overlap price action.
-- **Alerts**: You can set alerts for new hidden divergences. This is huge for swing trading.
+- **Dual oscillator support**: Works with RSI or MACD.
+- **Sensitivity control**: A `MinBars` input filters out noise.
+- **Visual clarity**: Arrows and optional alert lines, with labels that don't overlap price action.
+- **Alerts**: Alerts can be set for new hidden divergences.
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-For **crypto (4H/1D)**: RSI period 14, MinBars 8, lookback 50. This catches strong continuation moves without false signals.
+The indicator exposes an oscillator choice (RSI or MACD), a `MinBars` sensitivity input, and a lookback setting. RSI and MACD each carry their own standard period inputs.
 
-For **forex (1H)**: MACD (12,26,9), MinBars 5, lookback 30. Hidden divergences on MACD are more reliable in ranging forex pairs.
-
-For **stocks (daily)**: RSI period 21, MinBars 10, lookback 100. Stocks trend cleaner, so you want fewer, higher-conviction signals.
+Tuning is a tradeoff, not a formula. Raising `MinBars` demands a wider separation between the two pivot points before a divergence is drawn, which cuts the number of signals. Lowering it produces more signals, including weaker ones. Extending the lookback lets the indicator consider older pivots, which changes how many patterns qualify. No single combination is universally "best" — the right values depend on the instrument, timeframe, and how much noise you're willing to sort through.
 
 **How to Use It for Entries and Exits**
 
-1. **Entry**: Wait for a bullish hidden divergence (price makes a lower low, RSI makes a higher low) in an uptrend. Enter on the next candle close above the divergence low.
-2. **Stop loss**: Place below the most recent swing low (or the divergence low itself).
-3. **Take profit**: Aim for the previous swing high or use a trailing stop. Hidden divergence signals continuation, so ride the trend.
+1. **Entry**: Wait for a bullish hidden divergence (price makes a lower low, RSI makes a higher low) within an uptrend. Enter on the next candle close above the divergence low.
+2. **Stop loss**: Place below the most recent swing low, or the divergence low itself.
+3. **Take profit**: Aim for the previous swing high, or use a trailing stop. Since hidden divergence signals continuation, the intent is to ride the trend.
 
-For bearish hidden divergences, reverse it.
+For bearish hidden divergences, reverse the logic.
 
-**Honest Pros and Cons**
+**Pros and Cons**
 
 **Pros:**
-- Catches a specific pattern most traders ignore.
-- Clean visuals—no noise.
-- Works across timeframes and markets.
-- Alerts are reliable.
+- Targets a specific pattern most traders ignore.
+- Clean visuals with minimal clutter.
+- Designed to work across timeframes and markets.
+- Alerts for new divergences.
 
 **Cons:**
-- False signals in choppy markets. Use with a trend filter (e.g., 200 EMA).
-- No built-in trend confirmation. You need to check the broader trend manually.
-- Limited to RSI/MACD. Would love to see Stoch RSI support.
+- Prone to false signals in choppy markets; a trend filter (e.g., a 200 EMA) helps.
+- No built-in trend confirmation — the broader trend has to be checked manually.
+- Limited to RSI and MACD.
 
-**Who It's Actually For**
+**Who It's For**
 
-Swing traders and position traders who already understand hidden divergence. If you’re new, learn the concept first—this tool amplifies existing knowledge, it doesn’t replace it. Not for scalpers.
+Swing traders and position traders who already understand hidden divergence. It assumes you know the concept — the tool amplifies existing knowledge rather than teaching it. Not aimed at scalpers.
 
-**Better Alternatives If They Exist**
+**Alternatives**
 
-- **Divergence Pro** (by LazyBear): More oscillators (RSI, MACD, Stoch) but cluttered. Hidden_Divergence_Detector is cleaner.
-- **Universal Divergence Scanner**: Scans multiple symbols, but overkill for single-chart analysis.
+- **Divergence Pro** (by LazyBear): Supports more oscillators (RSI, MACD, Stoch) but is cluttered by comparison.
+- **Universal Divergence Scanner**: Scans multiple symbols, which is overkill for single-chart analysis.
 
-Stick with this one if you want precision over quantity.
+**FAQ**
 
-**FAQ Addressing Real Trader Questions**
+*Q: Does it repaint?*
+A: The indicator draws arrows based on confirmed bars.
 
-*Q: Does it repaint?*  
-A: No. It draws arrows based on confirmed bars. Once printed, they stay.
+*Q: Can I use it on very short timeframes?*
+A: It can be applied there, but false signals become more frequent, so the sensitivity setting needs to be raised.
 
-*Q: Can I use it on 1-minute charts?*  
-A: You can, but false signals spike. MinBars should be set to at least 12.
-
-*Q: Does it work on futures?*  
-A: Yes, tested on ES and NQ. Works best on daily and 4H.
+*Q: Does it work on futures?*
+A: It is not restricted to a single market; it applies to futures like any other instrument.
 
 **Final Verdict**
 
-Hidden_Divergence_Detector is a solid tool for a specific job. It won't make you a millionaire overnight, but it will catch continuation signals other indicators ignore. For $0 (it's free), it's a no-brainer add to your toolkit. Just pair it with trend confirmation.
+Hidden_Divergence_Detector is a focused tool for a specific job: catching continuation signals that other divergence indicators ignore. It won't replace a trend filter, and it won't teach you the concept. But for what it does, it's a reasonable addition to a toolkit — provided you pair it with your own trend confirmation.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Points off for lack of trend filter and limited oscillator options, but for what it does, it's excellent.
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)** — Points off for the lack of a built-in trend filter and limited oscillator options.
 
 ## Go Deeper with The Indicator Lab
 

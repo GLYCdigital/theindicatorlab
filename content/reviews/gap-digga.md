@@ -18,7 +18,7 @@ rating: 4
 description: "Gap_Digga review: an honest look at this TradingView trend tool, its best settings, entry logic, and whether the gap detection earns a spot on your chart."
 tv_script_url: "https://www.tradingview.com/script/dJfrwY2W-GAP-DIGGA/"
 ---
-Most "gap" indicators on TradingView are lazy pivot scripts with a new name. Gap_Digga isn't that. It's a trend-detection tool that builds its logic around price displacement — the moments where price leaves one zone and re-establishes itself somewhere else — and then uses that displacement to define the prevailing trend. I ran it on the MACD chart layout you see above, on 15m through daily, across FX majors and a few liquid futures. Here's what actually happens when you install it.
+Most "gap" indicators on TradingView are lazy pivot scripts with a new name. Gap_Digga isn't that. It's a trend-detection tool that builds its logic around price displacement — the moments where price leaves one zone and re-establishes itself somewhere else — and then uses that displacement to define the prevailing trend. The screenshot above shows it on a MACD layout. Here's what actually happens when you install it.
 
 ## What Gap_Digga actually does
 
@@ -31,7 +31,7 @@ That's a meaningful distinction. If you came here looking for a "gaps always fil
 - **Displacement-based trend coloring** rather than a moving-average crossover. This means it reacts to structure, not lag.
 - **Zone persistence** — the reference levels stay on the chart until price invalidates them, which gives you a visual trail of where the trend actually changed.
 - **Non-repainting on confirmed bars.** I checked this specifically by replaying sessions. The current bar can shift, but closed bars hold.
-- **Light footprint.** No 14-layer signal stack. You get a trend state and the levels that define it.
+- **Light footprint.** No stacked signal layers. You get a trend state and the levels that define it.
 
 The non-repainting behavior is the part that matters most, and it's where a lot of trend indicators quietly cheat.
 
@@ -61,7 +61,7 @@ A concrete pattern that worked: price displaces up, leaves a reference zone, pul
 **Cons:**
 - The name is misleading. It's a trend tool, not a gap-fill tool.
 - On choppy, range-bound markets it flips too often and adds little value. It needs directional movement to earn its keep.
-- No built-in alerts for the trend flip on the version I tested — you'll need to set them manually or via a companion script.
+- No built-in alerts for the trend flip — you'll need to set them manually or via a companion script.
 - No entry/exit signals. It tells you the trend, not when to click buy.
 
 That last point is the honest trade-off: this is a context tool, and if you want a system that tells you exactly what to do, it will frustrate you.

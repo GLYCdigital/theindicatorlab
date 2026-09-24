@@ -16,62 +16,60 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Practical ADX divergence scanner that catches trend exhaustion. Works best on 1H–4H with clear settings. Not perfect, but a solid addition."
+grounding: "none (no source found)"
 ---
-
 ## Honest Verdict: 4/5 Stars
 
-I've tested dozens of divergence indicators over the years, and **Adx_Divergence** is one of the more practical ones. It doesn't reinvent the wheel — it does one thing and does it reasonably well. It's not a holy grail, but if you trade trends and want to catch reversals early, this is worth your time.
+**Adx_Divergence** is one of the more practical divergence indicators available. It doesn't reinvent the wheel — it does one thing and does it reasonably well. It's not a holy grail, but for traders who follow trends and want to catch reversals early, it's worth a look.
 
 ## What This Indicator Actually Does
 
-Most traders know ADX measures trend strength. But combining ADX with price divergence? That's where this tool shines. It scans for hidden and regular divergences between price action and the ADX line (usually DI+ or DI– depending on settings). When price makes a higher high but ADX makes a lower high — classic bearish divergence — the indicator marks it.
+Most traders know ADX measures trend strength. Combining ADX with price divergence is where this tool's premise lies. It scans for hidden and regular divergences between price action and the ADX line (typically DI+ or DI– depending on settings). When price makes a higher high but ADX makes a lower high — classic bearish divergence — the indicator marks it.
 
-As the chart above shows, it paints clear arrows and labels directly on your chart. No ambiguous dots or confusing color changes. You see "Bullish Div" or "Bearish Div" right where it happens.
+It paints arrows and labels directly on the chart rather than ambiguous dots or color changes. You see "Bullish Div" or "Bearish Div" marked where the divergence is identified.
 
 ## Key Features That Set It Apart
 
 - **Dual divergence detection**: Both regular (trend reversal) and hidden (trend continuation) divergences are flagged.
-- **Customizable ADX period**: Default is 14, but you can tweak it for faster or slower signals.
-- **Visual clarity**: Arrows and labels are clean. No clutter.
-- **Alert integration**: You can set alerts for new divergences. Useful if you don't stare at charts all day.
-- **Timeframe flexibility**: Works on 1-minute to monthly. But let's be real — it's best on 1H to 4H.
+- **Customizable ADX period**: The period can be adjusted for faster or slower signals.
+- **Visual clarity**: Arrows and labels are clean and uncluttered.
+- **Alert integration**: Alerts can be set for new divergences, useful if you don't watch charts continuously.
+- **Timeframe flexibility**: The indicator is designed to work across timeframes.
 
-## Best Settings (My Recommendations)
+## Settings and How to Tune Them
 
-After running it on BTC, EURUSD, and Gold, here's what worked:
+| Setting | Notes |
+|---------|-------|
+| ADX Period | Adjustable. A shorter period produces faster signals; a longer period produces slower, smoother ones. |
+| Divergence Lookback | Controls how far back the indicator scans for swings. Shorter lookbacks catch more swings but also more noise; longer lookbacks are more selective. |
+| ADX Threshold | Filters divergences by trend strength — only divergences occurring when ADX is above the threshold are shown. |
+| Show Hidden Divergence | Toggles hidden (trend continuation) divergences on or off. |
 
-| Setting | Recommended | Why |
-|---------|-------------|-----|
-| ADX Period | 14 | Standard. Balances lag and noise. |
-| Divergence Lookback | 30 bars | Catches meaningful swings without too many false signals. |
-| ADX Threshold | 25 | Only shows divergences when trend is strong enough. Below 25, ignore. |
-| Show Hidden Divergence | On | Hidden divs are underrated for trend continuation plays. |
-
-**Pro tip**: On lower timeframes (5m–15m), increase the lookback to 40 bars. On higher timeframes (1D+), decrease to 20 bars.
+There is no single "best" configuration. The right values depend on the instrument, timeframe, and how much noise you're willing to tolerate. Lower timeframes generally need a longer lookback to filter noise; higher timeframes can use a shorter one.
 
 ## How to Use It for Entries and Exits
 
-This isn't a standalone system. Use it as a filter.
+This isn't a standalone system. Treat it as a filter.
 
 **Bearish divergence (short entry)**:
 1. Wait for price to make a higher high.
-2. ADX line makes a lower high (or flat).
-3. Check if ADX is above 25 (trend is real).
+2. ADX line makes a lower high (or goes flat).
+3. Check that ADX is above your threshold (trend is real).
 4. Look for confirmation: a bearish candlestick pattern (e.g., shooting star) or RSI crossing below 70.
 5. Entry: market sell or limit below the divergence candle's low.
 6. Stop loss: above the recent swing high.
-7. Target: previous support or 1:2 risk/reward.
+7. Target: previous support or a fixed risk/reward target.
 
 **Bullish divergence (long entry)**:
 1. Price makes a lower low.
 2. ADX line makes a higher low.
-3. ADX above 25.
+3. ADX above your threshold.
 4. Confirmation: bullish engulfing or RSI above 30.
-5. Entry: market buy or limit above divergence candle's high.
+5. Entry: market buy or limit above the divergence candle's high.
 6. Stop loss: below the swing low.
 7. Target: previous resistance.
 
-**Hidden divergence** works the opposite — it signals trend continuation. Use it to add to an existing position.
+**Hidden divergence** works the opposite way — it signals trend continuation. Use it to add to an existing position.
 
 ## Honest Pros and Cons
 
@@ -82,15 +80,15 @@ This isn't a standalone system. Use it as a filter.
 - Free (most versions are community scripts).
 
 **Cons**:
-- False signals in ranging markets. ADX below 25 = ignore completely.
+- False signals in ranging markets — divergence signals when ADX is below your threshold should be ignored.
 - Lag is inherent. It's not a leading indicator — it confirms what's already forming.
 - Doesn't account for volume or momentum divergence (like RSI or MACD).
-- Some community versions have bugs with alert accuracy. Test before trusting.
+- Some community versions have bugs with alert accuracy. Verify before trusting.
 
 ## Who Is This Actually For?
 
 - **Trend traders** who want to spot exhaustion before a reversal.
-- **Swing traders** using 1H–4H timeframes.
+- **Swing traders** working on intraday-to-multi-day timeframes.
 - **Not for scalpers** — too much lag and noise.
 - **Not for beginners** — you need to understand divergence and ADX basics to avoid false signals.
 
@@ -104,27 +102,35 @@ If you want pure ADX divergence without extra fluff, stick with Adx_Divergence. 
 
 ## FAQ
 
-**Q: Does it repaint?**  
+**Q: Does it repaint?**
 A: Some community versions do. The original script by LazyBear doesn't. Test on a demo account first.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works well on BTC and ETH on 4H and 1D.
+**Q: Can I use it on crypto?**
+A: Yes. It's commonly applied to BTC and ETH on higher timeframes.
 
-**Q: What's the best timeframe?**  
-A: 1H to 4H. Lower timeframes generate too many false signals.
+**Q: What's the best timeframe?**
+A: Higher timeframes tend to produce cleaner signals. Lower timeframes generate more noise.
 
-**Q: Should I trust every divergence signal?**  
+**Q: Should I trust every divergence signal?**
 A: No. Always wait for price confirmation (candlestick pattern or RSI). Divergence alone is a warning, not a trigger.
 
 ## Final Thoughts
 
-Adx_Divergence is a **solid 4-star tool** for traders who understand trend dynamics. It won't make you a millionaire, but it will help you avoid buying tops and selling bottoms — which is half the battle. Pair it with price action and a clear risk management plan, and you've got a reliable edge.
+Adx_Divergence is a **solid 4-star tool** for traders who understand trend dynamics. It won't make you a millionaire, but it can help you avoid buying tops and selling bottoms — which is half the battle. Pair it with price action and a clear risk management plan.
 
-**Score**: ⭐⭐⭐⭐ (4/5)  
-**Best for**: Trend traders on 1H–4H who want clean divergence signals.  
+**Score**: ⭐⭐⭐⭐ (4/5)
+**Best for**: Trend traders who want clean divergence signals.
 **Skip if**: You scalp, trade ranging markets, or expect perfection.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ADX/DMI** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 56.2%, GBPUSD 54.2%, AMD 53.0%, AVAXUSD 52.8%
+- Weakest markets: LTCUSD 44.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

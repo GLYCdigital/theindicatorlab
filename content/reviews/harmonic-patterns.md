@@ -16,9 +16,9 @@ categories:
   - Technical Analysis
 rating: 4
 description: "TradingView's Harmonic_Patterns indicator: auto-detect Gartley, Bat, Crab & more. Tested settings, entry rules, and honest pros & cons for traders."
+grounding: "none (no source found)"
 ---
-
-**Harmonic_Patterns** is one of those indicators that sounds too good to be true: "Just install it, and it'll find you perfect harmonic setups." I've been burned by that promise before, so I put this one through its paces across BTC/USD, EUR/USD, and some altcoin pairs. Here's what I found after a few hundred trades.
+**Harmonic_Patterns** bills itself as a set-and-forget harmonic scanner: install it, and it surfaces harmonic setups for you. That promise deserves scrutiny, so this review focuses on what the indicator claims to do and where its limits are.
 
 ## What This Indicator Actually Does
 
@@ -28,31 +28,25 @@ No manual measuring. No guesswork. You see the pattern, the completion zone, and
 
 ## Key Features That Set It Apart
 
-- **Real-time pattern detection** – It updates as each new bar closes. You're not waiting for a refresh.
-- **Customizable pattern list** – You can toggle individual patterns on/off. I turn off Shark and 5-0 most of the time because they're less reliable in my experience.
-- **PRZ shading** – The Potential Reversal Zone is highlighted with a semi-transparent box. Makes spotting entry areas instant.
-- **Trend filter option** – You can require that the pattern aligns with a 200 EMA or other moving average. This alone cut my false signals by about 40%.
-- **Alert system** – Set alerts when a pattern completes. Useful if you're not glued to the screen.
+- **Real-time pattern detection** – It updates as each new bar closes, rather than waiting for a manual refresh.
+- **Customizable pattern list** – Individual patterns can be toggled on or off.
+- **PRZ shading** – The Potential Reversal Zone is highlighted with a semi-transparent box, which makes entry areas easier to spot.
+- **Trend filter option** – You can require that the pattern align with a moving average such as the 200 EMA.
+- **Alert system** – Alerts can be set for when a pattern completes, which is useful if you are not watching the screen continuously.
 
-## Best Settings I've Found
+## Settings and How to Tune Them
 
-After testing, here's my go-to config:
+The main configuration choices are which patterns to enable, the minimum swing size, the Fibonacci ratio deviation tolerance, whether to apply a trend filter, and whether to display the PRZ shading. A common starting point is to enable the major patterns (Gartley, Bat, Crab, Butterfly) and leave the less commonly traded ones off, apply a trend filter using a long moving average, and keep the PRZ shading on.
 
-- **Patterns enabled**: Gartley, Bat, Crab, Butterfly (I leave Shark and Cypher off)
-- **Minimum swing size**: 20 bars on the 1H, 10 bars on the 15M
-- **Max deviation**: 0.05 (tightens the Fibonacci ratio tolerance)
-- **Trend filter**: 200 EMA, only show patterns in the direction of the trend
-- **Show PRZ**: Yes, with 0.618-0.786 shading
-
-On the 1H chart, this combo gives me about 2-4 patterns per week on major pairs—not spammy, but enough to work with.
+Note that the specific numeric values for swing size, maximum deviation, and the PRZ shading range are not documented in the source material for this indicator. Treat any numbers you see quoted elsewhere as starting points to test on your own charts rather than fixed recommendations.
 
 ## How to Use It for Entries and Exits
 
-**Entry**: Wait for price to enter the PRZ (the shaded zone). Then look for confirmation: a bullish/bearish engulfing candle, a pin bar, or an RSI divergence. I don't buy the pattern just because it's plotted—I need that candle close.
+**Entry**: Wait for price to enter the PRZ (the shaded zone). Then look for confirmation: a bullish/bearish engulfing candle, a pin bar, or an RSI divergence. Do not buy the pattern just because it is plotted—the candle close matters.
 
-**Stop loss**: Place it 1-2 ATR below/above the PRZ. The indicator itself doesn't calculate this, so I add a separate ATR indicator.
+**Stop loss**: Place it a multiple of ATR below or above the PRZ. The indicator itself does not calculate this, so a separate ATR indicator is needed.
 
-**Take profit**: Common targets are the 0.382 or 0.618 retracement of the move from X to D. I've also had good results taking partial profits at the 0.382 and trailing the rest.
+**Take profit**: Common targets are the 0.382 or 0.618 retracement of the move from X to D. Partial profits at the 0.382 with a trailing stop on the remainder is one approach.
 
 **Invalidation**: If price blows through the PRZ without a reversal, the pattern is dead. Close the trade.
 
@@ -62,20 +56,19 @@ On the 1H chart, this combo gives me about 2-4 patterns per week on major pairs�
 - Saves hours of manual Fibonacci drawing
 - Consistent pattern detection across timeframes
 - PRZ shading makes entry zones obvious
-- Free (if you have a TradingView Pro account—otherwise limited)
-- Alerts work reliably
+- Alerts for pattern completion
 
 **Cons:**
-- False signals in ranging markets (trend filter helps, but doesn't eliminate)
-- Doesn't calculate position sizing or risk automatically
-- The pattern labels can clutter the chart if you have too many enabled
-- Can repaint slightly on lower timeframes (5M/1M) as price retests the PRZ
+- False signals in ranging markets (a trend filter helps, but does not eliminate them)
+- Does not calculate position sizing or risk automatically
+- Pattern labels can clutter the chart if too many are enabled
+- Can repaint slightly on lower timeframes as price retests the PRZ
 
 ## Who It's Actually For
 
-This is for **intermediate to advanced traders** who already understand harmonic patterns but want to save time. If you're new to harmonics, you'll still need to learn the theory—this indicator won't teach you *why* a Bat or Crab works. It just shows you where it might be forming.
+This is for **intermediate to advanced traders** who already understand harmonic patterns but want to save time. Anyone new to harmonics will still need to learn the theory—this indicator does not teach *why* a Bat or Crab works. It just shows where one might be forming.
 
-Beginners will get overwhelmed by the lines and labels. I'd recommend learning the basics of Gartley and Bat manually first, then use this to speed things up.
+Beginners will likely get overwhelmed by the lines and labels. Learning the basics of Gartley and Bat manually first, then using this to speed things up, is the more sensible path.
 
 ## Better Alternatives If They Exist
 
@@ -83,33 +76,31 @@ Beginners will get overwhelmed by the lines and labels. I'd recommend learning t
 - **Pattern Explorer** – More customizable but has a steeper learning curve.
 - **ZUP (Zig Zag Universal Pattern)** – A free alternative that does similar harmonic detection, but with a clunkier interface and no PRZ shading.
 
-For most traders, **Harmonic_Patterns** is the best balance of accuracy and ease of use. ZUP is free but ugly. Pattern Explorer is powerful but overkill for 90% of traders.
+For most traders, **Harmonic_Patterns** is a reasonable balance of capability and ease of use. ZUP is free but less polished. Pattern Explorer is powerful but overkill for most traders.
 
 ## FAQ
 
 **Q: Does this indicator repaint?**  
-A: On higher timeframes (1H+), no—once the pattern is confirmed, it stays. On lower timeframes (5M/15M), it can flicker as price retests the PRZ. I only use it on 1H or higher.
+A: On higher timeframes, once the pattern is confirmed it tends to stay. On lower timeframes it can flicker as price retests the PRZ.
 
 **Q: Can I use it for crypto?**  
-A: Yes, it works fine on BTC, ETH, and altcoins. The patterns are just as reliable as on forex. Just adjust the minimum swing size to account for crypto's volatility.
+A: Yes, it works on BTC, ETH, and altcoins. Just adjust the minimum swing size to account for crypto's volatility.
 
 **Q: How many patterns should I enable?**  
 A: Start with Gartley, Bat, and Crab only. Add Butterfly later. The more patterns you enable, the more noise you get.
 
 **Q: What's the best timeframe?**  
-A: 1H to 4H for swing trading. 15M for scalping if you're experienced, but expect more false signals.
+A: 1H to 4H for swing trading. 15M for scalping if you are experienced, but expect more false signals.
 
 ## Final Verdict
 
-This indicator does exactly what it promises: finds harmonic patterns automatically and marks the PRZ. It won't make you a profitable trader by itself—you still need confirmation and risk management. But for anyone who trades harmonics seriously, it's a massive time-saver.
+This indicator does what it promises: finds harmonic patterns automatically and marks the PRZ. It will not make you a profitable trader by itself—confirmation and risk management are still on you. But for anyone who trades harmonics seriously, it can be a meaningful time-saver.
 
-The repainting issue on lower timeframes is frustrating, but on the 1H+ charts I use, it's a non-issue. I've been using it for six months and it's become part of my standard setup.
+The repainting on lower timeframes is the main frustration, and it handles ranging markets poorly. It also lacks built-in risk management. For the price (free with Pro), those are tolerable trade-offs. If you trade harmonics, it is worth installing—but plan on filtering the noise yourself.
 
 **Rating: ⭐⭐⭐⭐** (4/5)
 
-One star off because it doesn't handle ranging markets well and lacks built-in risk management. For the price (free with Pro), it's hard to complain. If you trade harmonics, install it today—but learn to filter the noise.
-
----
+One star off because it doesn't handle ranging markets well and lacks built-in risk management.
 
 ## Go Deeper with The Indicator Lab
 

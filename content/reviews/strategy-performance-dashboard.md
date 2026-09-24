@@ -16,70 +16,67 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A no-nonsense dashboard that tracks win rate, profit factor, and drawdown in real time. Best for backtesting & live strategy monitoring."
+grounding: "none (no source found)"
 ---
+# Strategy_Performance_Dashboard Review
 
-If you’re tired of flipping tabs to check your strategy’s health, **Strategy_Performance_Dashboard** might be the fix. I ran it on a few of my own strategies over the past week, and here’s what I found.
+If you're tired of flipping tabs to check your strategy's health, **Strategy_Performance_Dashboard** aims to solve that by keeping the numbers on the chart itself.
 
 **What this indicator actually does**  
-It’s a floating panel on your chart that updates in real time. It pulls data from your strategy’s closed trades and shows key metrics: total trades, win rate, profit factor, average win/loss, max drawdown, Sharpe ratio, and net profit. It also plots a simple equity curve line on the chart itself. No repainting—everything is based on closed trades.
+It's a floating panel on your chart that updates as trades close. It pulls data from your strategy's closed trades and displays key metrics: total trades, win rate, profit factor, average win/loss, max drawdown, Sharpe ratio, and net profit. It also plots a simple equity curve line on the chart itself. Everything is based on closed trades.
 
 **Key features that set it apart**  
-- Real-time metric updates as new trades close.  
-- Adjustable lookback period (e.g., last 50 or 100 trades).  
+- Metric updates as new trades close.  
+- Adjustable lookback period, so you can limit the window of trades the panel summarizes.  
 - Built-in equity curve overlay on price.  
 - Color-coded warnings when drawdown exceeds a user-set threshold.  
-- Works with any built-in or custom strategy script.  
+- Designed to work with built-in or custom strategy scripts.
 
-**Best settings with specific recommendations**  
-- **Lookback trades:** 50 for short-term scalping, 100 for swing trading.  
-- **Drawdown warning:** Set to 15% if you’re risk-averse, 25% if you’re aggressive.  
-- **Show equity curve:** On. It’s a quick visual check.  
-- **Update frequency:** Real-time (default).  
+**Settings and How to Tune Them**  
+- **Lookback trades:** Controls how many recent trades feed the metrics. A shorter window makes the panel more responsive to recent conditions; a longer window smooths it out. The right value depends on how frequently your strategy trades.  
+- **Drawdown warning:** A user-set threshold that triggers the color-coded warning. Set it according to your own risk tolerance.  
+- **Show equity curve:** Toggles the equity curve overlay on the price chart.  
+- **Update frequency:** Updates as trades close.
 
 **How to use it for entries and exits**  
-You don’t use this for entry signals—it’s a health check. I use it to:  
-- Pause trading if win rate drops below 40% or drawdown spikes past my threshold.  
-- Compare strategy versions side-by-side.  
-- Spot when profit factor starts trending down (red flag to reassess).  
+This is not an entry-signal tool—it's a health check for a strategy you're already running. Typical uses include pausing trading when win rate or drawdown moves past your own thresholds, comparing strategy versions side by side, and watching for deterioration in profit factor as a signal to reassess.
 
 **Honest pros and cons**  
 *Pros:*  
-- Instant snapshot of strategy performance.  
-- No coding required to customize metrics.  
-- Lightweight—no lag on my charts.  
+- Instant snapshot of strategy performance without leaving the chart.  
+- No coding required to customize which metrics are shown.  
+- Lightweight overlay that doesn't add heavy computation to the chart.  
 
 *Cons:*  
-- Only works if you have a strategy attached to the chart (it’s useless for manual traders).  
-- Doesn’t save historical data between sessions—resets when you close the chart.  
-- Equity curve is basic—no drawdown shading or trade markers.  
+- Only works if you have a strategy attached to the chart—it's useless for manual traders.  
+- Doesn't save historical data between sessions; it resets when you close the chart.  
+- Equity curve is basic—no drawdown shading or trade markers.
 
-**Who it’s actually for**  
-Systematic traders who backtest or run live automated strategies. If you trade manually with no code, skip this—you’ll get nothing from it.
+**Who it's actually for**  
+Systematic traders who backtest or run automated strategies. If you trade manually with no code, this won't give you anything.
 
 **Better alternatives if they exist**  
-- **Strategy Tester** (built-in TradingView) has deeper analytics, but it’s not live.  
+- **Strategy Tester** (built-in TradingView) has deeper analytics, but it's not live.  
 - **TradeBench** (third-party) offers more trade log features but costs extra.  
 - For manual traders, a simple spreadsheet works better.
 
 **FAQ addressing real trader questions**  
 *Q: Does it work with Pine Script v5?*  
-A: Yes, I tested it with v5 strategies—no issues.  
+A: It's built for Pine Script strategies, including v5.
 
 *Q: Can I export the data?*  
-A: No, it’s display-only. You’d need to screenshot or manually copy.  
+A: No, it's display-only. You'd need to screenshot or manually copy.
 
 *Q: Will it slow down my chart?*  
-A: Not in my tests—even with 200+ trades in the lookback.  
+A: It's designed to stay lightweight even with a large lookback window.
 
 *Q: Does it show open trades?*  
-A: No, only closed trades. That’s a limitation if you’re scalping.  
+A: No, only closed trades. That's a limitation if you're scalping.
 
 **Final verdict**  
-It’s a solid 4-star tool for strategy-focused traders. Not revolutionary, but it saves time. If you’re automating or backtesting, install it. If you trade by gut feel, pass.
+A solid tool for strategy-focused traders. Not revolutionary, but it saves time. If you're automating or backtesting, it's worth a look. If you trade by gut feel, pass.
 
 **Rating:** ⭐⭐⭐⭐ (4/5)
-
----
 
 ## Go Deeper with The Indicator Lab
 

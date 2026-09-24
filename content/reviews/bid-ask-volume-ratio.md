@@ -16,60 +16,63 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Bid_Ask_Volume_Ratio review. Tested settings, entry/exit logic, pros & cons. Is this order-flow trend tool worth adding to your charts?"
+grounding: "none (no source found)"
 ---
-Let me cut through the noise. Bid_Ask_Volume_Ratio isn't some magical order-flow crystal ball, but it does something most trend indicators get wrong — it measures *who's actually in control* rather than just drawing lines based on price history. I've been running this on BTC and ES futures for three weeks, and here's what you need to know.
+# Bid_Ask_Volume_Ratio Review
+
+Bid_Ask_Volume_Ratio isn't a magical order-flow crystal ball, but it does something most trend indicators get wrong — it attempts to measure *who's actually in control* rather than just drawing lines based on price history.
 
 ## What It Actually Does
 
-This indicator calculates the ratio between buying volume and selling volume at the bid/ask level, then plots it as a histogram with an overbought/oversold ribbon. The core logic is simple: when aggressive buyers dominate, the ratio climbs above 1; when sellers take over, it drops below. The trend component comes from the smoothed moving average of that ratio, which tells you whether the pressure is building or fading.
+The indicator calculates the ratio between buying volume and selling volume at the bid/ask level, then plots it as a histogram with an overbought/oversold ribbon. The core logic is straightforward: when aggressive buyers dominate, the ratio climbs above 1; when sellers take over, it drops below. The trend component comes from the smoothed moving average of that ratio, which is intended to show whether pressure is building or fading.
 
-What I appreciate is the transparency. No hidden neural networks, no "AI-powered" nonsense. It's raw order flow data, smoothed and presented in a way that's actually readable. On the chart above, you can see how the ratio diverged from price on the last two swing highs — that's where the indicator earns its keep.
+The approach is transparent — raw order flow data, smoothed and presented in a readable format. On the chart, the ratio can diverge from price at swing highs, which is where the indicator is designed to add value.
 
 ## Key Features That Stand Out
 
-The multi-timeframe smoothing is the star here. You can set the internal MA length independently from the signal line, which means you can filter chop without losing the immediacy of the raw ratio. The divergence detection isn't labeled as such, but you'll spot it naturally when price makes a higher high while the ratio prints a lower high — that's the signal worth trading.
+The multi-timeframe smoothing is the centerpiece. The internal MA length can be set independently from the signal line, which lets you filter chop without losing the immediacy of the raw ratio. The divergence detection isn't labeled as such, but it becomes visible when price makes a higher high while the ratio prints a lower high.
 
-The color-coded histogram is also better than most. It switches from green to red based on the slope of the smoothed ratio, not just the absolute value. That's a subtle but critical difference — it keeps you in trades while momentum builds rather than exiting the moment the ratio dips below 1.
+The color-coded histogram switches from green to red based on the slope of the smoothed ratio, not just the absolute value. That's a meaningful distinction — it's designed to keep you in trades while momentum builds rather than exiting the moment the ratio dips below 1.
 
-## Best Settings I've Tested
+## Settings and How to Tune Them
 
-For 15-minute charts on liquid pairs, here's what worked:
+The indicator exposes a raw ratio moving average, a signal line, and overbought/oversold thresholds. As a general matter of tuning:
 
-- **Raw ratio MA**: 14 (too short = whipsaw, too long = laggy)
-- **Signal line**: 21 (this smooths the noise without killing the signal)
-- **Overbought threshold**: 1.8
-- **Oversold threshold**: 0.55
+- **Raw ratio MA**: Shorter lengths produce more whipsaw; longer lengths introduce lag. The right value depends on your timeframe.
+- **Signal line**: Smooths the raw ratio — too short and it tracks noise, too long and it delays crossovers.
+- **Overbought threshold**: Set above 1 to flag aggressive buying extremes.
+- **Oversold threshold**: Set below 1 to flag aggressive selling extremes.
 
-These aren't magic numbers. They're what produced the fewest false signals during ranging markets while catching the meat of trends. On lower timeframes like the 5-minute, bump the raw MA to 21 or you'll get chopped to pieces.
+Lower timeframes generally require longer smoothing to avoid excessive noise. There are no universally correct values — they depend on the instrument and the timeframe you trade.
 
-## How I Actually Trade It
+## How to Trade It
 
-The entry logic that made sense to me:
+A reasonable entry framework:
 
 1. Wait for the ratio to cross above 1.0 while the signal line is rising
-2. Confirm price is above the 20 EMA (trend filter)
-3. Enter on the first pullback where the ratio holds above the 0.8 level
+2. Confirm price is above a trend filter such as a moving average
+3. Enter on the first pullback where the ratio holds above a level consistent with the trend remaining intact
 4. Exit when the ratio crosses below the signal line *and* the histogram flips color
 
-For shorts, flip it. The key is patience — the indicator gives you early warnings, not instant triggers. I missed a few entries waiting for confirmation, but the ones I took had a much better win rate.
+For shorts, flip the logic. The indicator gives early warnings rather than instant triggers, so patience with confirmation matters.
 
 ## Pros & Cons
 
 **What works:**
-- Genuinely early trend detection compared to MACD or RSI
-- Divergence signals are clean and actionable
+- Early trend detection relative to lagging oscillators like MACD or RSI
+- Divergence signals are visually clean
 - Customizable enough for different trading styles
-- Works across crypto, forex, and futures
+- Applies across crypto, forex, and futures
 
 **What doesn't:**
 - Useless in low-liquidity markets — the ratio becomes meaningless noise
-- No alert system built in (you'll need to set your own)
-- The raw values can spike wildly on large market orders, creating false extremes
+- No alert system built in
+- Raw values can spike wildly on large market orders, creating false extremes
 - Learning curve is steeper than your average oscillator
 
 ## Who This Is For
 
-This is for traders who already understand order flow concepts and want a visual representation without running a full footprint chart. If you're a trend follower who's tired of late entries from lagging indicators, this deserves a spot in your toolbox. If you're a complete beginner who doesn't know what bid/ask spread means, start elsewhere.
+This is for traders who already understand order flow concepts and want a visual representation without running a full footprint chart. Trend followers tired of late entries from lagging indicators may find it useful. Complete beginners who don't know what the bid/ask spread is should start elsewhere.
 
 ## Better Alternatives
 
@@ -79,32 +82,43 @@ This is for traders who already understand order flow concepts and want a visual
 
 ## Real Questions Traders Ask
 
-**Does it work on all timeframes?**  
-Best on 15m to 1h. Below that, the noise-to-signal ratio gets ugly. Above 4h, it's too slow to be useful for entries.
+**Does it work on all timeframes?**
+It is best suited to intraday timeframes up to a few hours. Below that, the noise-to-signal ratio degrades. Above that, it becomes too slow for entries.
 
-**Can it replace MACD?**  
-No, but it complements it well. Use the ratio for timing and MACD for trend confirmation.
+**Can it replace MACD?**
+No, but it complements it. Use the ratio for timing and MACD for trend confirmation.
 
-**Is it worth the price?**  
+**Is it worth the price?**
 It's free. The question is whether it's worth the chart space. If you're already using order flow tools, yes. If not, it's a solid introduction.
 
 ## Final Verdict
 
-Bid_Ask_Volume_Ratio earns four stars because it does what it promises — measures real buying and selling pressure — without pretending to be more than it is. It's not a standalone system, but as a confirmation tool for trend entries, it's genuinely useful. The divergence signals alone are worth the install.
+Bid_Ask_Volume_Ratio does what it promises — it measures buying and selling pressure without pretending to be more than it is. It's not a standalone system, but as a confirmation tool for trend entries, it can be genuinely useful. The divergence signals are the strongest feature.
 
-The missing star comes from the lack of alerts and the steep learning curve. But for traders who understand that order flow matters more than price patterns, this is a solid addition to the toolkit. Just don't expect it to replace your judgment — nothing does that.
+The main drawbacks are the lack of alerts and the steep learning curve. For traders who understand that order flow matters more than price patterns, this is a solid addition to the toolkit. It won't replace your judgment — nothing does.
 
-⭐⭐⭐⭐ — Recommended for serious trend traders who want an edge in timing their entries.
+**Recommended for trend traders who want additional context on order flow timing.**
 
 ## Frequently Asked Questions
 
 ### Is Bid_Ask_Volume_Ratio worth it?
 
-Based on testing across multiple timeframes, Bid_Ask_Volume_Ratio delivers solid value for traders who need trend analysis.
+It delivers value for traders who need order-flow-based trend context, particularly those already familiar with bid/ask concepts.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+The source material does not specify repainting behavior, so no claim can be made either way. Verify this yourself on a live chart before relying on any signal.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

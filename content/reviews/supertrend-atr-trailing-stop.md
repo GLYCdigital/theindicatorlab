@@ -17,139 +17,135 @@ categories:
   - Technical Analysis
 rating: 5
 description: "Honest Supertrend ATR Trailing Stop review after 288 trades on AAPL. Settings, backtest stats, entry/exit rules, and who it actually works for."
+sources: ["https://www.tradingview.com/script/dH3ujrk1-SuperTrend-ATR-Trailing-Stop-Entry-Exit-in-One-View/"]
 ---
-
 ## Description
 
-Honest Supertrend ATR Trailing Stop review after 288 trades on AAPL. Settings, backtest stats, entry/exit rules, and who it actually works for.
+An honest look at the Supertrend ATR Trailing Stop indicator. What it does, how the entry and exit logic work, what the settings control, and who it actually suits.
 
 ---
 
 ## What This Indicator Actually Does
 
-Let’s cut through the noise. The **Supertrend ATR Trailing Stop** is not some magical “buy low, sell high” crystal ball. It’s a dynamic trailing stop-loss tool that adjusts based on ATR (Average True Range). It calculates two bands—an upper and lower—and plots a line that flips between them as price moves. When price closes above the upper band, you get a green line (bullish). Below the lower band, red line (bearish).
+The **Supertrend ATR Trailing Stop** is not a "buy low, sell high" crystal ball. It's a trend-following tool that combines two components: classic SuperTrend flip-based entry signals, and an independent ATR-based trailing stop.
 
-Simple? Yes. Effective? Depends on how you use it.
+The SuperTrend element plots a line that flips between two states as trend changes, giving buy and sell signals with chart labels. The ATR trailing stop is a separate line that ratchets with price — it only moves in your favour and never widens against you. When price pierces the stop line, that's your exit.
 
-I’ve tested this on AAPL with 288 trades over 10 years. The chart above shows how cleanly it catches trends while keeping you out of chop—most of the time. But the real magic is in the settings, not the default.
+The two are deliberately decoupled. SuperTrend gives you entries; the ATR trailing stop gives you a mechanical exit. That separation is the whole point of the script.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **ATR-based volatility adjustment** – Unlike a fixed percentage stop, this indicator tightens in low volatility and widens in high volatility. That’s exactly what you want.
-- **Crossover signals** – The line flip acts as a trailing stop *and* a trend filter. No repainting on the flip itself (confirmed by checking multiple timeframes).
-- **Customizable multiplier** – The ATR multiplier lets you dial in sensitivity. Too tight? You’ll get whipsawed. Too loose? You’ll give back profits. I’ll give you the sweet spot below.
-- **Clean visual** – Just one line. No clutter. Easy to read on any timeframe.
+- **Independent ATR trailing stop** – The stop has its own ATR period and multiplier, separate from the SuperTrend settings. You can tune the entry logic and the exit logic independently.
+- **Mechanical exits** – The stop ratchets up in uptrends and never drops (and vice versa for shorts). No discretionary judgement required once you're in a trade.
+- **Re-entry signals** – If SuperTrend flips back after a stop-out, you get a re-entry signal. That's a useful distinction most trailing-stop tools don't make.
+- **Phone alerts** – Four alert conditions are built in: Bullish Entry, Bearish Entry, Stop Hit, and Re-Entry.
+- **Info table** – Displays current ATR value, stop distance percentage, and trend direction at a glance.
+- **Three display modes** – SuperTrend only, ATR Stop only, or Both. Useful if you already run another trend indicator and only want the stop line.
+- **Zero repaint** – All signals are confirmed on bar close according to the developer.
 
 ---
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After grinding through AAPL, SPY, and BTCUSD, here’s what works:
+The script exposes separate parameters for the SuperTrend side and the ATR trailing stop side. The developer doesn't publish recommended values, so treat these conceptually:
 
-- **ATR Period**: 10 (default is 14—too slow for intraday)
-- **Multiplier**: 2.5 (default 3 is too loose for swing trading; 2.5 catches more moves without adding noise)
-- **Source**: Close (HLC3 can overshoot on wicks)
-- **Show Signals**: On (but ignore the default arrows—they lag)
+- **SuperTrend ATR period** – Controls how much history feeds the volatility calculation behind the SuperTrend bands. Shorter periods react faster; longer periods smooth out noise.
+- **SuperTrend multiplier** – Sets how far the bands sit from price. A larger multiplier means fewer flips and a looser trend filter; a smaller multiplier flips more often.
+- **ATR trailing stop period** – Independent from the SuperTrend period. Governs how responsive the trailing stop line is to recent volatility.
+- **ATR trailing stop multiplier** – Sets the distance between price and the stop line. This is the parameter that most directly controls how much room a trade gets before it's stopped out.
+- **Display mode** – Choose SuperTrend only, ATR Stop only, or Both.
 
-**For scalping (1m/5m)**: ATR Period 7, Multiplier 1.8. Expect more false signals, but faster exits.
-
-**For swing trading (1D/4H)**: ATR Period 14, Multiplier 3.0. Sacrifices entry precision for lower drawdown.
-
-I run the 1D timeframe with ATR 10, Multiplier 2.5, and it’s the sweet spot for most liquid stocks.
-
----
-
-## Performance: Backtest on AAPL
-
-Here’s the data from a 10-year backtest on AAPL (daily timeframe, no slippage included):
-
-| Metric | Value |
-|--------|-------|
-| Total Trades | 288 |
-| CAGR | +8.4% |
-| Max Drawdown | 29% |
-| Win Rate | 44.4% |
-| Profit Factor | 1.19 |
-
-That win rate looks low, but the profit factor of 1.19 means winners are bigger than losers—classic trend-following behavior. The 29% drawdown is high, but that’s the price for catching big runs. If you can’t stomach a 30% dip, tighten the multiplier to 2.0 and accept more whipsaws.
+The key tuning decision is the relationship between the SuperTrend multiplier (which governs entries) and the ATR stop multiplier (which governs exits). A tight stop relative to the entry filter will produce more stop-outs; a loose stop gives trades more room but gives back more on reversals. There's no single correct pairing — it depends on the instrument and the timeframe you're trading.
 
 ---
 
 ## How to Use It for Entries and Exits
 
 **Entries:**
-- Wait for the line to flip from red to green *and* close above it. Don’t buy the first tick—let the candle close confirm.
-- Only take longs when price is above the 200 EMA (filter out downtrends). Shorts when below.
+- Wait for a SuperTrend flip and a bar close confirming it. The developer states signals are confirmed on bar close, so there's no benefit to acting intrabar.
+- The developer doesn't specify additional filters, but the flip itself is the entry trigger.
 
 **Exits:**
-- The line IS your trailing stop. Move your stop-loss to the indicator line every time it flips. No discretionary “I think it’ll bounce” nonsense.
-- For partial exits: Take 50% off when price touches 2x ATR from entry. Let the rest ride with the trailing stop.
+- The ATR trailing stop line is your stop. It ratchets in your favour and never widens against you.
+- When price pierces the stop line, the Stop Hit alert fires. That's your mechanical exit.
+- If SuperTrend flips back in your original direction after a stop-out, the Re-Entry alert fires.
 
-**Filter for chop:**
-- Add a 20-period SMA of the ATR as a filter. If ATR is below its 20-period SMA, skip the trade—volatility isn’t there to sustain the move.
+**Workflow the developer describes:**
+1. Install the indicator on any chart.
+2. SuperTrend bands give entries when trend changes.
+3. The orange dashed line is the trailing stop — it ratchets with price.
+4. Price pierces the stop line → Stop Hit alert.
+5. SuperTrend flips back after a stop-out → Re-Entry alert.
 
 ---
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean, non-repainting trend filter (confirmed on multiple tickers)
-- ATR-based stop adapts to volatility—no guesswork
-- Works across timeframes and asset classes (stocks, crypto, forex)
-- Simple enough for beginners, robust enough for pros
+- Entry and exit logic are separated, which is genuinely useful — most trend tools conflate the two.
+- The trailing stop only moves in your favour, which removes a common source of manual error.
+- Four alert conditions cover the full lifecycle of a trade.
+- Three display modes make it easy to pair with indicators you already use.
+- Developer states zero repaint, with signals confirmed on bar close.
 
 **Cons:**
-- 44% win rate is lower than most traders expect—psychological challenge
-- 29% drawdown on AAPL means you need a thick skin (or a smaller position size)
-- Whipsaws in sideways markets (add the ATR filter above to mitigate)
-- No built-in risk management for position sizing—you handle that
+- The developer doesn't publish recommended settings, so tuning is on you.
+- As with any trailing-stop system, choppy markets will produce stop-outs and re-entries.
+- No position sizing or risk management built in — that's outside the scope of a stop indicator.
+- No backtest statistics or performance figures are published by the developer, so you can't judge expected behaviour without testing it yourself.
 
 ---
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Trend followers** who can tolerate low win rates for high R/R
-- **Swing traders** looking for a mechanical exit strategy
-- **Beginners** who want one clean indicator to learn trend trading
-- **NOT for** scalpers who need 60%+ win rates or day traders who can’t sit through a 29% drawdown
-
----
-
-## Better Alternatives If They Exist
-
-- **ATR Trailing Stop (by KivancOzbilgic)** – Similar concept but with better visual alerts for flip points. Slightly tighter stops.
-- **SuperTrend (by LazyBear)** – The original. Less customizable but more tested. Use this if you want a proven classic.
-- **Chandelier Exit (by Chuck LeBeau)** – Also ATR-based but uses the highest high/lowest low instead of close. Works better in strong trends, worse in reversals.
-
-If you already own the standard SuperTrend, you don’t *need* this one. But the ATR customization makes it more flexible.
+- **Trend followers** who want a mechanical exit rule rather than discretionary stop placement.
+- **Swing and position traders** working on the timeframes the developer says the script is optimized for.
+- **Traders who already have an entry method** and want a standalone ATR trailing stop — the "ATR Stop only" display mode exists for exactly this.
+- **Less suited to** traders who need an all-in-one system with entry filters, position sizing, and risk controls built in.
 
 ---
 
-## FAQ: Real Trader Questions
+## Compatible Markets and Timeframes
+
+**Markets:** Stocks, Crypto, Forex, Futures, Indices.
+
+**Timeframes:** All timeframes, optimized for 15m–4h according to the developer.
+
+---
+
+## FAQ
 
 **Q: Does it repaint?**
-A: No. The line flips based on the close of the current candle. Once that candle closes, the flip is fixed. Just verified on 100+ trades.
+A: The developer states zero repaint, with all signals confirmed on bar close.
 
 **Q: Can I use it for crypto?**
-A: Yes. BTCUSD on 4H with ATR 10, Multiplier 2.5 works well. Expect more whipsaws due to volatility—tighten multiplier to 2.0 if needed.
+A: Yes — crypto is listed as a compatible market.
 
-**Q: What’s the best timeframe?**
-A: 1D for swing trading, 4H for position trading, 1H for intraday. Avoid anything below 15m unless you have a high tolerance for noise.
+**Q: What's the best timeframe?**
+A: The developer lists all timeframes as compatible, with optimization for 15m–4h.
 
 **Q: Should I combine it with other indicators?**
-A: Yes. Add a 200 EMA for trend direction and RSI (14) for overbought/oversold confirmation. The indicator alone is a trailing stop, not a complete system.
+A: The three display modes suggest the developer expects this. Running "ATR Stop only" alongside your existing trend tool is a natural use case.
 
 ---
 
 ## Final Verdict
 
-The Supertrend ATR Trailing Stop is a workhorse, not a flashy toy. It won’t make you a millionaire overnight, but it will give you a mechanical, repeatable way to trail profits and cut losses. The 44% win rate and 29% drawdown are real—but so is the 1.19 profit factor. If you can handle the psychological side, this indicator earns its keep.
+The Supertrend ATR Trailing Stop does one job and does it cleanly: it gives you SuperTrend entries plus an independent, mechanical ATR trailing stop, with alerts for the full trade lifecycle. The separation of entry and exit parameters is the feature that matters most — it lets you tune each side independently instead of accepting a bundled default.
 
-**Rating: ⭐⭐⭐⭐⭐ (5/5)** – Best in class for a trailing stop. Just don’t expect it to predict the next pump.
+What it isn't is a complete system. There's no published backtest, no recommended settings, and no risk management layer. You'll need to work out your own parameter pairing and position sizing. If you want a mechanical trailing stop to bolt onto an existing approach, this is a focused tool for that job. If you want a turnkey strategy with performance data to evaluate, this isn't it.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Supertrend** implementation was backtested on 30 markets over 5 years of daily data (44,697 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: USDJPY 59.0%, GBPUSD 57.1%, AUDUSD 56.9%, EURUSD 56.6%
+- Weakest markets: DOGEUSD 47.7%, LTCUSD 46.6%, SHIBUSD 27.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

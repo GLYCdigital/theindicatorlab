@@ -17,91 +17,84 @@ categories:
 rating: 4
 description: "Honest Multi_Timeframe_State_Dashboard_Pineify review: tested settings, entry/exit logic, pros & cons. See if this trend dashboard fits your workflow."
 tv_script_url: "https://www.tradingview.com/script/80NCX0Vm-Multi-Timeframe-State-Dashboard-Pineify/"
+sources: ["https://www.tradingview.com/script/80NCX0Vm-Multi-Timeframe-State-Dashboard-Pineify/"]
 ---
-I've tested dozens of multi-timeframe dashboards, and most are either too cluttered to read or too simplistic to matter. The Multi_Timeframe_State_Dashboard_Pineify sits somewhere in the middle — and for most traders, that's actually a sweet spot. This isn't a magic signal generator. It's a state tracker that tells you what's happening across timeframes at a glance. Here's my honest take after running it on MACD charts for several weeks.
+# Multi Timeframe State Dashboard [Pineify] Review
+
+Multi-timeframe dashboards tend to sit at one of two extremes: cluttered enough that you stop reading them, or simple enough that they don't tell you much. This one is designed around a specific problem — whether a higher-timeframe reading has actually closed — and builds its whole display around making that distinction visible. It isn't a signal generator. It's a state tracker for context.
 
 **What It Actually Does**
 
-The indicator builds a dashboard that shows trend state across multiple timeframes simultaneously. You're not getting a single "buy" or "sell" — you're getting a matrix of conditions that lets you see alignment. The chart above shows how it renders: a clean panel with color-coded states for each timeframe you've configured. It pulls data from higher timeframes and displays it on your current chart, so you can spot confluence or conflict without flipping between tabs.
+The indicator condenses six reference timeframes into a single matrix. Each row pairs the last closed state with the forming state, and shows the trend, RSI, and ATR-percentile evidence behind each one. You're not getting a single "buy" or "sell" — you're getting a structured read on alignment and disagreement across horizons, rendered on your current chart so you don't have to flip between tabs.
 
-This is genuinely useful for one specific job: filtering. If you're a swing trader on the 1H, you want to know if the 4H and Daily are agreeing with you. This dashboard answers that in half a second.
+The design rationale is worth understanding before you use it. EMA slope is normalized by ATR so direction is comparable across price and volatility scales. RSI adds bounded momentum around 50. ATR percentile labels energy without choosing direction. A weighted score replaces unrelated votes, and strong trend/RSI opposition becomes CONFLICT rather than false neutrality.
 
 **Key Features That Stand Out**
 
-The Pineify version of this dashboard does a few things better than the free alternatives. First, the input structure is logical — you set your timeframes, choose your MA lengths or trend detection method, and it does the rest. The color coding is intuitive: green means bullish state, red means bearish, gray means neutral or transitioning. No learning curve.
+The confirmation-aware structure is the main differentiator. Each slot makes a live request with lookahead disabled, plus a prior-bar request for confirmed higher-timeframe data. When a slot equals the chart timeframe, its current value is confirmed only after that chart bar closes. That's what separates CONFIRMED from LIVE, and it's why apparent agreement can't quietly disappear before a reference bar closes.
 
-Second, it's customizable without being overwhelming. You can toggle which timeframes appear, adjust the sensitivity of the trend detection, and even switch between different calculation modes. I tested it with both EMA-based and SMA-based trend states, and the difference was noticeable — the EMA version reacts faster but gives more false signals on choppy days.
+The consensus logic is also more careful than most. Consensus counts only enabled, unique references equal to or higher than the chart. ALL BULLISH or ALL BEARISH requires every valid confirmed state to share direction. DRIFT counts live states that differ from their confirmed partners. WARM-UP remains visible until all rolling histories exist, and missing values are not replaced with zero.
 
-Third, the performance is light. Unlike some dashboards that recalculate everything on every tick and lag your chart, this one runs smoothly even on lower-end machines.
+State classes cover the range you'd expect: impulse, directional, bias, quiet, neutral, and conflict. Direction is 55% trend and 45% momentum, with thresholds creating bias or direction. Hot direction becomes IMPULSE; a small quiet score becomes QUIET. Duplicate and lower-timeframe references get flagged rather than silently included.
 
-**Settings I Actually Recommend**
+**Settings and How to Tune Them**
 
-After testing, here's what worked: set your primary trend detection to EMA crossover — it's more responsive than SMA for swing trading. For timeframes, don't go overboard. I found that three timeframes (your chart TF, one higher, one significantly higher) gives the clearest signal without information overload. Adding five or six timeframes just creates noise.
+EMA length and slope lookback control directional memory. ATR slope scale controls normalization. RSI length changes momentum response. ATR length and percentile lookback define volatility context. Direction and conflict thresholds set classification strictness — and quiet percentile must remain below hot percentile, which is a hard constraint on the volatility classification. Timeframe inputs set horizon coverage. Display controls cover numeric suffixes, table corner, dashboard, and chart background.
 
-The sensitivity adjustment is where most people go wrong. If you set it too tight, the dashboard flips constantly and becomes useless. Too loose, and it lags reality. I settled on a medium setting that matched the MACD histogram momentum reasonably well — when the MACD histogram was expanding in the trend direction, the dashboard showed strong alignment.
+The main configuration decision is which references you enable. They should be equal to or higher than the chart timeframe. Disable unused rows so the consensus denominator stays intentional — an unused row left enabled affects what counts toward agreement.
 
-**How to Use It for Entries and Exits**
+**How to Use It**
 
-Here's the practical playbook I developed. Don't use this as a standalone signal — use it as a confluence filter with your existing strategy.
+The intended workflow is sequential:
 
-For entries: Look for at least two of your three timeframes showing the same state. If your chart TF and the next higher TF are both green, that's your green light to look for an entry on your primary setup. If they're conflicting — say the 1H is green but the 4H is red — stand down. Those conflicting states are where most losing trades happen.
+1. Set enabled references equal to or higher than the chart timeframe.
+2. Read CONFIRMED for stable context and LIVE for the forming bar.
+3. Check TREND, RSI, and ATR % before interpreting color.
+4. Treat LOWER TF, DUPLICATE, and WARM-UP as diagnostics.
+5. Combine alerts with separate entry, exit, sizing, and invalidation rules.
 
-For exits: The dashboard is actually more valuable for managing trades than entering them. When the highest timeframe you're tracking starts to flip, that's your warning to tighten stops or start taking profits. The lower timeframes will lag, so watching the top of the dashboard gives you the earliest exit signal without getting shaken out by minor pullbacks.
+Confirmed consensus is meant as context for a separate setup, not as an entry trigger. A lower-chart process can ask whether higher horizons are bullish, bearish, or mixed. More DRIFT rows show forming bars challenging closed evidence — not a confirmed reversal. QUIET describes low-energy alignment; IMPULSE describes high ATR rank. Price structure, execution, and risk still need independent rules.
 
 **Pros and Cons**
 
 Pros:
-- Extremely fast visual read on market structure
-- Lightweight — no chart lag
-- Customizable timeframe selection beats fixed-dashboard alternatives
-- Works cleanly on MACD charts without overwhelming the price action
+- Confirmed/live pairing makes temporal uncertainty observable instead of hiding it behind one color
+- Consensus excludes duplicates and lower references, so agreement is auditable
+- Volatility changes the class but cannot select bullish or bearish direction
+- Compact matrix format keeps six horizons readable at a scan
 
 Cons:
-- It's a state tracker, not a signal generator. If you want "buy now" alerts, look elsewhere.
-- The dashboard can become noise if you add too many timeframes
-- No built-in alert functionality for state changes
-- The color scheme is basic — no gradient or severity indication
+- The matrix sacrifices each component's full path for scan speed — you don't get the history behind a state
+- LIVE can change on every update, so the display is not static
+- CONFIRMED waits for completed reference bars and adds delay
+- A newly closed higher-timeframe value appears only when the next chart bar exposes it
 
 **Who This Is For**
 
-This is for the trader who already has a solid entry strategy but struggles with context. If you've ever taken a clean setup on the 15M only to watch it collapse because the Daily was in a strong downtrend, this dashboard fixes that specific problem. It's also excellent for traders who manage multiple positions across different pairs or instruments — the visual read cuts down decision time significantly.
-
-It's not for scalpers who need instant tick-level data. The dashboard's strength is in swing and position trading. If your holding period is under an hour, you'll find this gives too much lag to be useful.
+This is for a trader who already has a setup and needs context on whether higher horizons support it. The sequence the indicator is built around is direction, agreement, then energy — if you want a single color telling you what to do, this isn't that. It's also useful if you track multiple instruments and want a fast read without re-checking each chart.
 
 **Alternatives Worth Considering**
 
-If you want something more aggressive, the standard "Multi-Timeframe Trend Dashboard" indicators on TradingView give you more aggressive signal generation with alerts. The "Pineify" version is actually more conservative and cleaner than most free alternatives. For a different approach, consider "Smart Money Concepts" indicators if you want order flow analysis instead of simple trend states.
+If you want a dashboard that votes on each timeframe independently without confirmed/live separation, simpler multi-timeframe tables exist. This one is built specifically around the confirmation problem, so the tradeoff is a more involved read for more defensible agreement.
 
 **Final Verdict**
 
-The Multi_Timeframe_State_Dashboard_Pineify earns a solid 4 stars. It's not flashy, it doesn't promise miracles, but it does one job well: telling you where the trend stands across timeframes without clutter. If you're tired of flipping between charts and want a clean confluence check that integrates with your existing strategy, this is worth the install. Just don't expect it to trade for you.
+The Multi Timeframe State Dashboard is a confirmation-aware state lattice rather than a set of adjacent indicator readings. Every row preserves closed and forming versions of one state, flags their difference, and removes duplicate or lower references from consensus. The invariant is that only valid, unique, closed-bar states determine consensus, while live states explain drift. That's the whole point: six horizons stay readable, and the calculations, confirmation status, and failure conditions stay exposed instead of hidden behind one color.
 
 **FAQ**
 
 **Does this indicator repaint?**
-No, the dashboard states are based on confirmed closes for the selected timeframes. You won't see historical signals change.
+The design separates CONFIRMED from LIVE precisely because forming data can change. CONFIRMED waits for completed reference bars and adds delay; LIVE can change on every update. A newly closed higher-timeframe value appears when the next chart bar exposes it.
 
-**Can I use it on any chart type?**
-Yes, it works on any chart. I tested it primarily on MACD charts, but it calculates trend state independently of the main chart settings.
-
-**Does it work for crypto and forex equally?**
-Yes, it's market-agnostic. The trend detection uses price action only, so it works anywhere with sufficient liquidity.
+**Can I use it on any chart?**
+The indicator uses EMA slope, RSI, and ATR percentile on its configured references. The source material does not specify market or instrument restrictions.
 
 **Can I set alerts when the state changes?**
-Not natively. This is a limitation — you'll need to visually monitor the dashboard or pair it with a separate alert system.
+Yes — alignment alerts are listed as a feature, alongside closed-bar consensus and optional background. Alerts report alignment only; they are not entry signals.
 
-**Is it free or paid?**
-The Pineify version is available through the Pineify library, with free and paid tiers depending on your TradingView subscription and the Pineify features you've unlocked.
+**What are the main limitations?**
+EMA, RSI, and ATR lag and are parameter-sensitive. ATR percentile is relative, not an absolute risk forecast. Data gaps or limited history can distort ranks. Lower references are rejected. It does not model execution, risk, performance, or future prices.
 
-## Frequently Asked Questions
-
-### Is Multi_Timeframe_State_Dashboard_Pineify worth it?
-
-Based on testing across multiple timeframes, Multi_Timeframe_State_Dashboard_Pineify delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

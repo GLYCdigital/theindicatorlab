@@ -16,30 +16,28 @@ categories:
   - Technical Analysis
 rating: 3
 description: "A practical review of the Awesome Oscillator: its median-line momentum strategy, recommended settings for 4H and daily charts, and why it often lags without confirmation."
+grounding: "none (no source found)"
 ---
-
-**Description:** A practical review of the Awesome Oscillator: its median-line momentum strategy, recommended settings for 4H and daily charts, and why it often lags without confirmation.
-
----
+**Description:** A practical review of the Awesome Oscillator: its median-line momentum strategy, settings for 4H and daily charts, and why it often lags without confirmation.
 
 **The Short Version**  
-The Awesome Oscillator (AO) is Bill Williams’ momentum tool that plots the difference between a 5-period and 34-period simple moving average of median prices (HL/2). On TradingView, the default version shows a histogram—green bars above zero, red below. It’s fine for spotting momentum shifts, but it’s not a standalone signal generator. You’ll need to pair it with price action or another indicator to avoid whipsaws.
+The Awesome Oscillator (AO) is Bill Williams' momentum tool that plots the difference between a 5-period and 34-period simple moving average of median prices (HL/2). On TradingView, the default version shows a histogram—green bars above zero, red below. It's fine for spotting momentum shifts, but it's not a standalone signal generator. You'll need to pair it with price action or another indicator to avoid whipsaws.
 
 **What It Actually Does**  
 Instead of using close prices like most oscillators, AO uses the median price of each bar (high+low)/2. This makes it less sensitive to closing spikes but can also make it slower to react. The histogram grows when the fast MA pulls away from the slow MA, and shrinks when momentum fades. The zero line acts as the center line—above is bullish momentum, below is bearish.
 
 **Key Features That Set It Apart**  
 - **Median Price Calculation** – Filters out close price noise. Useful if you trade on volatility rather than just closes.  
-- **Saucer & Twin Peaks Patterns** – Bill Williams’ original setups: a “saucer” (two consecutive bars of same color after a peak) or twin peaks (two lows/peaks near zero). These are rare but can catch reversals.  
+- **Saucer & Twin Peaks Patterns** – Bill Williams' original setups: a "saucer" (two consecutive bars of same color after a peak) or twin peaks (two lows/peaks near zero). These are rare but can catch reversals.  
 - **Zero-Line Cross** – Simple but effective for trend confirmation on higher timeframes.  
 
-**Best Settings (What I Tested)**  
-- **Default (5, 34)** – Works best on 4H and daily charts. On lower timeframes (15m–1H), you get too many false crossovers.  
-- **Modified (8, 34)** – Slightly slower but reduces noise on 1H. I prefer this for scalping.  
-- **Smoothing** – None needed. AO is already a moving average difference; adding another MA defeats the purpose.  
+**Settings and How to Tune Them**  
+- **Default (5, 34)** – Commonly applied on 4H and daily charts. On lower timeframes (15m–1H), the crossover count rises sharply.  
+- **Modified (8, 34)** – A slower configuration that reduces noise on 1H.  
+- **Smoothing** – Generally unnecessary. AO is already a moving average difference; adding another MA defeats the purpose.  
 
 **How to Use It for Entries and Exits**  
-- **Entry (Bullish Saucer)** – Wait for two consecutive green bars after a red peak above zero. Example: On the daily chart above, AO formed a saucer before a 3% move. Enter on the third green bar with a stop below the recent swing low.  
+- **Entry (Bullish Saucer)** – Wait for two consecutive green bars after a red peak above zero. Enter on the third green bar with a stop below the recent swing low.  
 - **Entry (Zero-Line Bounce)** – On a 4H uptrend, AO dips below zero, then turns green. Buy on the green bar close. This catches pullbacks.  
 - **Exit** – When histogram bars turn red after a green streak. Or when AO crosses zero from above to below.  
 
@@ -50,11 +48,11 @@ Instead of using close prices like most oscillators, AO uses the median price of
 - Free on TradingView.  
 
 **Cons:**  
-- **Lags badly** – Because it uses two MAs, signals come after the move starts. You’ll miss the first 10–20% of a trend.  
+- **Lags badly** – Because it uses two MAs, signals come after the move starts, so the early portion of a trend is missed.  
 - **Whipsaws on lower timeframes** – 5/34 on 5-minute charts is almost useless.  
-- **Not a standalone system** – Without price action or volume, you’ll get false signals in ranging markets.  
+- **Not a standalone system** – Without price action or volume, you'll get false signals in ranging markets.  
 
-**Who It’s Actually For**  
+**Who It's Actually For**  
 Swing traders on 4H+ timeframes who want a secondary momentum filter. Scalpers and day traders should look elsewhere—AO is too slow for them.  
 
 **Better Alternatives**  
@@ -69,16 +67,24 @@ A: No. The histogram values are fixed once the bar closes.
 *Q: Can I use it for crypto?*  
 A: Yes, but only on 4H+ timeframes. On 1H, the saucer pattern triggers too often.  
 
-*Q: What’s the best pair with AO?*  
+*Q: What's the best pair with AO?*  
 A: Volume Profile (VPVR) or a simple 200 EMA for trend filter.  
 
 **Final Verdict**  
-The Awesome Oscillator is a decent momentum gauge but not a magic bullet. It works best as a confirmation tool on higher timeframes. If you’re a swing trader looking for a free, simple visual indicator, it’s fine. But don’t rely on it for entries—use it to validate what you already see in price action.  
+The Awesome Oscillator is a decent momentum gauge but not a magic bullet. It works best as a confirmation tool on higher timeframes. If you're a swing trader looking for a free, simple visual indicator, it's fine. But don't rely on it for entries—use it to validate what you already see in price action.  
 
 **Rating: ⭐⭐⭐ (3/5)**  
 *Does the job, nothing exceptional. Free and easy, but lags too much for serious edge.*
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Awesome Oscillator** implementation was backtested on 30 markets over 5 years of daily data (43,691 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 50.2%** (50% = coin flip)
+- Strongest markets: USDJPY 54.6%, QQQ 53.8%, SPY 53.7%, AMZN 53.3%
+- Weakest markets: LTCUSD 46.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

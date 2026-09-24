@@ -17,80 +17,102 @@ categories:
 rating: 4
 description: "Breadth_Topping_Syndrome flags distribution phases before trend reversals. Tested settings, entry rules, and honest pros/cons in this 4-star review."
 tv_script_url: "https://www.tradingview.com/script/WbFOdoNP-Breadth-Topping-Syndrome/"
+sources: ["https://www.tradingview.com/script/WbFOdoNP-Breadth-Topping-Syndrome/"]
 ---
-I’ll be straight with you: most “topping” indicators are just RSI with a fancy name. Breadth_Topping_Syndrome isn’t that. After running it on daily MACD charts across several major indices and crypto pairs, I found it identifies a specific market condition — broad internal weakness that precedes a trend reversal — rather than just plotting another oscillator line. Here’s what it actually does, where it shines, and where it falls short.
+I’ll be straight with you: most “topping” indicators are just RSI with a fancy name. Breadth Topping Syndrome isn’t that. It identifies a specific market condition — broad internal weakness that accompanies distributive peaks — rather than plotting another oscillator line. Here’s what it actually does, where it fits, and where it falls short.
 
 ## What This Indicator Really Does
 
-Breadth_Topping_Syndrome is a trend-analysis tool designed to detect when a market is losing internal participation even as price makes new highs. It doesn’t rely on price alone. Instead, it measures the relationship between advancing and declining issues (or similar breadth proxies) and compares that to price momentum, which is why it works best on the MACD chart type — the indicator visually aligns its signals with MACD histogram contraction.
+Breadth Topping Syndrome (BTS) is a breadth-analysis tool designed to detect when a market is losing internal participation even as price is still rising. It doesn’t rely on price alone. It condenses four warning conditions into one framework:
 
-On the chart, you get a colored background overlay and a signal line. When the condition triggers, the background shifts to a warning color (default is amber/red), and a "Topping Syndrome" label prints at the bar. Notice in the screenshot how the label appears *before* the MACD crosses down — that early warning is the entire point.
+- **C1:** a Miekka-style divergence, where NYSE new 52-week highs and new 52-week lows are simultaneously elevated as a percentage of advances plus declines.
+- **C2:** Norman Fosback’s High Low Logic Index at a high percentile of its own trailing history.
+- **C3:** weak S&P 500 participation (percentage of constituents above their 200-day moving average) while the trend reference index is in an uptrend.
+- **C4:** a weighted deterioration score built from the same normalized components exceeding a threshold.
+
+When a configurable minimum number of these conditions has been observed within a short synchronization span and the trend gate is up, a trigger fires and opens a signal window. Inside the window the syndrome is Active only while the McClellan Oscillator is negative.
+
+The script plots a normalized breadth deterioration score (0 to 100) in a separate pane against a dashed threshold line and a dotted midline at 50. On the chart, the line turns orange above the threshold and red while the syndrome is Active. Gray indicates missing core data. A faint purple line shows the HLLI percentile separately, since it is the slowest-moving and most historically studied component. A red triangle at the top of the pane marks a syndrome trigger on that bar. Small maroon diamonds mark the Miekka condition alone being true without a full trigger. Maroon background means syndrome Active; orange background means the window is open but the oscillator is positive. A status table (top right) shows the overall state, each condition’s current value and contribution, the syndrome count, the oscillator value, bars remaining in the window, and the cluster count.
 
 ## Key Features That Set It Apart
 
-- **Early distribution detection:** It flags when price makes a new high but breadth momentum is already rolling over. This is the classic "lower high in momentum, higher high in price" divergence — but automated.
-- **MACD-native design:** The indicator's signals are computed to align with MACD histogram behavior, making it a natural companion if you already trade MACD divergences.
-- **Customizable lookback:** You can adjust the breadth lookback period (default 14) and the sensitivity threshold. Lowering the threshold catches more signals but increases false positives.
-- **No repainting (confirmed):** I checked this by comparing historical signals to real-time ones over a week. Once a label prints, it stays. That's critical for backtesting.
+- **Adaptive normalization:** Every component is percentile-ranked against its own trailing distribution before use, so warning levels adapt to the prevailing breadth regime instead of relying on fixed absolute thresholds calibrated to a decades-old NYSE universe.
+- **Tolerant multi-condition assembly:** Conditions are fused through an N-of-M syndrome count with a synchronization span, not a same-bar AND. This acknowledges that breadth deterioration components rarely align to the exact day.
+- **Windowed gating:** The trigger inherits the two-phase Miekka mechanism but generalizes it — the syndrome, not a single divergence, opens the window, and the McClellan Oscillator gates activation inside it.
+- **Quantified clustering:** Trigger clustering is counted directly on the chart rather than left to visual inspection.
 
-## Best Settings I Tested
+The individual components are public-domain methods with documented lineages: the simultaneous new highs and new lows divergence follows James R. Miekka’s Hindenburg Omen specification (1995), itself derived from work by Martin Zweig and Norman Fosback. The High Low Logic Index is Fosback’s, published in 1976. Percentage of stocks above the 200-day moving average is a standard participation measure. The McClellan Oscillator is the 19/39-period EMA differential of net advances, per Sherman and Marian McClellan. The combination architecture is what is novel here.
 
-After trial and error on BTC/USD daily and the S&P 500 daily, here’s what worked:
+## Settings and How to Tune Them
 
-- **Lookback period:** Keep it at 14 for daily charts. On lower timeframes (15m–1h), bump it to 21 to filter out noise.
-- **Sensitivity threshold:** Default is fine (0.5). If you're swing trading, raise it to 0.7 — you'll get fewer signals but they'll be higher quality.
-- **Alert condition:** Set alerts for "Topping Syndrome" detection, not for the background color change. The background shifts can linger; the label is the actionable trigger.
+- **Conditions Required (N of 4):** syndrome count needed to trigger. Default 3.
+- **Condition Sync Span:** bars within which a condition still counts toward the syndrome. Default 5.
+- **Signal Window:** trading days a trigger keeps the window open. Default 30.
+- **Cluster Lookback:** trailing trading days over which triggers are counted. Default 60.
+- **C1 Miekka NH/NL Threshold:** minimum percent of advances plus declines for both new highs and new lows. Default 2.8.
+- **C2 HLLI Warning Percentile:** percentile of the smoothed HLLI that flags bifurcation. Default 90.
+- **C3 Participation Warning Percentile:** participation percentile at or below which weakness is flagged in an uptrend. Default 25.
+- **C4 Deterioration Score Threshold:** score level that flags composite weakness. Default 75.
+- **Uptrend Lookback:** bars over which the trend reference must have risen. Default 50.
+- **HLLI EMA Length:** smoothing applied to the raw HLLI ratio. Default 50.
+- **Percentile Rank Lookback:** window for all percentile ranks. Default 252.
+- **Score weights** for the bifurcation, participation and leadership components. Default 33.3 each.
+- **MCO Fast EMA and Slow EMA:** McClellan Oscillator periods. Defaults 19 and 39.
+- **Data Symbols:** all seven feeds are exposed as string inputs and can be substituted.
+- **Show Status Table:** toggles the table. Default on.
 
-## How to Use It: Entry and Exit Logic
+## How to Use It
 
-This is a *warning* tool, not a standalone entry system. Here’s how I integrated it:
+The script is designed for the 1D timeframe. The breadth feeds are daily series, the window and cluster inputs are specified in trading days, and the Miekka and McClellan parameters are daily conventions, so daily resolution matches the granularity of the logic.
 
-1. **Confirmation required:** Wait for the label to print, then wait for the MACD histogram to print three consecutive lower bars (or candles). That combination filters out most fakeouts.
-2. **Entry:** Short or exit longs on the close of the third lower histogram bar. I found this gave a better risk/reward than shorting immediately on the label.
-3. **Stop loss:** Place it above the most recent swing high that occurred *before* the signal. The indicator doesn't provide stops, so you need your own.
-4. **Take profit:** Target the previous major support level or the 200 EMA, whichever is closer. In my tests, the average move after a confirmed signal was 4-6% on daily charts.
+A single trigger is a caution flag. Two or more triggers within the cluster lookback have historically been the more serious configuration for divergence-based breadth signals, and the script exposes a dedicated alert for that case. Four alerts are provided: trigger fired, syndrome turned Active, clustered trigger, and score crossing above its threshold.
+
+This is a risk-assessment input, not a standalone trading signal. It flags conditions that have accompanied past tops — it is not an entry system, and no claim is made about future results.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely early signal — it caught the August 2025 BTC top about three sessions before price rolled over.
-- Clean visual output. No clutter, just a background tint and a label.
-- No repainting, which makes it viable for backtesting strategies.
+- Combines four independent breadth measures into a single framework rather than relying on any one of them.
+- Every component is percentile-ranked against its own trailing history, so warning levels adapt to the prevailing regime.
+- The N-of-M assembly with a synchronization span tolerates the fact that breadth components rarely align to the exact day.
+- Clustering is quantified on the chart.
+- Clean, documented lineages for each underlying component.
 
 **Cons:**
-- **Not a standalone system.** If you rely on it alone, you'll get chopped up in ranging markets. It needs confirmation.
-- **Limited to trend exhaustion.** It won't help you in strong uptrends or downtrends — it's specifically for tops, not bottoms (there's no mirror "bottoming" signal).
-- **Works best on indices and large caps.** On individual small caps or low-liquidity altcoins, the breadth calculation gets noisy and produces false signals.
+- **Not a standalone system.** It flags conditions that have accompanied past tops. It needs to be paired with your own confirmation and risk management.
+- **Limited to topping conditions.** It is specifically about distributive peaks, not bottoms.
+- **Daily resolution only.** On other timeframes the external series return whatever the feeds report at that resolution, and the day-denominated windows lose their intended meaning.
+- **Limited feed history.** No signals can exist before the feeds begin, and because every percentile rank requires the full normalization lookback (default 252 bars), the first year of available feed history produces unreliable ranks and should be disregarded.
+- **Participation feed dependency.** If neither participation symbol resolves, condition C3 can never contribute. With the default requirement of 3 of 4, all three remaining conditions must then assemble, which makes triggers strictly rarer.
 
 ## Who It's For
 
-This is for swing traders and position traders who already understand MACD divergence and want an automated early-warning system for distribution phases. If you're a day trader looking for quick scalps, skip it — the signals are too slow for intraday use. It's also useful for portfolio managers who want to de-risk ahead of potential market tops without exiting too early.
+This is for swing traders, position traders, and portfolio managers who want a systematic read on internal breadth deterioration as a market rises, and who already understand that breadth divergence signals carry a documented false-positive history. It is a risk-assessment input for de-risking ahead of potential tops — not an intraday tool and not a standalone entry system.
 
 ## Alternatives Worth Considering
 
-- **MACD Divergence Indicator (by LonesomeTheBlue):** If you prefer a manual divergence tool with more control, this is a solid choice, though it lacks the breadth component.
-- **Volume Profile Exhaustion:** For a completely different approach, volume-profile-based exhaustion tools can complement this indicator well.
-- **Supertrend with ATR filter:** If you want a simpler trend-following system that works in both directions, Supertrend is more versatile but far less predictive.
+- **Hindenburg Omen implementations:** narrower, focused only on the Miekka-style divergence without the multi-condition syndrome architecture or adaptive normalization.
+- **McClellan Oscillator / Summation Index:** the underlying activation gate used here, available on its own for those who want the raw breadth reading.
+- **Percentage of stocks above the 200-day moving average:** a standard participation measure, useful standalone if you only want the C3-style reading.
 
 ## FAQ
 
-**Q: Can I use this on crypto?**
-A: Yes, but only on majors like BTC and ETH with high liquidity. The breadth calculation degrades on low-cap coins.
-
-**Q: Does it work on lower timeframes?**
-A: Technically yes, but I wouldn't go below the 1-hour chart. The signal-to-noise ratio drops significantly.
+**Q: Can I use this on other timeframes?**
+A: The logic is designed for daily resolution. On other timeframes the external series return whatever the feeds report at that resolution, and the day-denominated windows lose their intended meaning.
 
 **Q: Is it good for long entries?**
-A: No. It only detects topping conditions. Use it to exit longs or initiate shorts, not to find buying opportunities.
+A: No. It detects topping conditions — internal breadth deterioration while the market is still rising. It is a risk-assessment input, not a standalone signal.
 
-**Q: How often does it signal?**
-A: On daily charts, roughly 4-6 times per year per asset. That's infrequent, which is a feature — it only fires in significant distribution phases.
+**Q: Does it repaint?**
+A: All values on the developing realtime bar update until the bar closes. Signals should be evaluated on closed bars. The script uses same-timeframe requests with lookahead off and does not reference future data.
+
+**Q: Which chart symbol should I use?**
+A: Data is pulled from fixed external symbols regardless of the chart symbol. The chart symbol only determines the bar grid, so the indicator belongs on a US equity index chart at 1D.
 
 ## Final Verdict
 
-Breadth_Topping_Syndrome earns a solid 4 stars. It does one thing and does it well: it gives you an early, reliable warning that a trend is running out of steam. It won't tell you exactly when to short, and it won't work in every market condition, but as a filter or confirmation tool alongside your existing MACD strategy, it's genuinely useful. The no-repainting design and clean alerts make it worth the install if you trade indices or large-cap crypto on daily charts. Just don't expect it to do your job for you — pair it with price action confirmation and you'll have an edge.
+Breadth Topping Syndrome does one thing and does it in a defensible way: it condenses four independent breadth warning conditions into a single, adaptively normalized framework, and it quantifies trigger clustering directly on the chart. It won’t tell you exactly when to short, and it won’t work in every market condition, but as a risk-assessment filter alongside your existing process, it is a well-architected tool. The combination of adaptive normalization, tolerant multi-condition assembly, windowed gating and cluster counting does not correspond to any single published method. Just don’t expect it to do your job for you — pair it with price action confirmation and your own risk management.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

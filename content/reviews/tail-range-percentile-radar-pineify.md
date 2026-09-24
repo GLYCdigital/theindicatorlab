@@ -17,85 +17,96 @@ categories:
 rating: 4
 description: "Tail_Range_Percentile_Radar_Pineify review: how this tail-range percentile trend tool works, tested settings, entry logic, and who it's actually for."
 tv_script_url: "https://www.tradingview.com/script/NBAp559r-Tail-Range-Percentile-Radar-Pineify/"
+sources: ["https://www.tradingview.com/script/NBAp559r-Tail-Range-Percentile-Radar-Pineify/"]
 ---
-Most "trend" indicators are just another moving average with a fresh coat of paint. This one isn't. Tail_Range_Percentile_Radar_Pineify takes a genuinely different angle: instead of smoothing price, it measures where the current range sits within a percentile distribution of prior tail ranges. That sounds like jargon until you watch it on a chart — then it becomes a clean read on whether the market is expanding into a real move or just chopping inside noise.
-
-I ran it across crypto, FX, and a few large-cap names on the MACD-configured layout (shown above) to see whether the percentile logic holds up. Short answer: it does, with caveats.
+Most "trend" indicators are just another moving average with a fresh coat of paint. This one isn't. Tail Range Percentile Radar [Pineify] takes a genuinely different angle: instead of smoothing price, it separates candle rarity from candle shape. Four aligned scan lanes compare true range, real body, upper wick and lower wick against their own recent histories. That sounds like jargon until you read the lanes — then it becomes a compact explanation of whether a bar's movement is unusual, and whether that movement lives in the body or the wicks.
 
 ## What It Actually Measures
 
-The core idea is percentile ranking of range expansion. Rather than asking "is price above the average," it asks "how extreme is this bar's range compared to the recent distribution of ranges?" When the percentile spikes, you're in the tail — meaning an unusually large-range bar relative to recent history. Those tail events are where trends are born and where they exhaust.
+The core idea is percentile ranking of candle components, not a single volatility score. Rather than asking "is price above the average," it asks two questions: is this component unusual, and does it occupy enough of this candle to matter?
 
-The "radar" framing is fair. It doesn't predict direction on its own. It flags when conditions are statistically unusual, and you combine that with structure to decide the trade. This is a regime/context tool, not a signal generator, and treating it as the latter will get you chopped up.
+True range is the largest of high-low, the distance from high to the previous close, and the distance from low to the previous close. Body is absolute close minus open; wicks are the distances from the body edges to high and low. Each magnitude is rounded to the symbol's tick size, then ranked against its own prior-only population.
+
+The design deliberately rejects averaging all four ranks. A single blended score would let a large body mask an exceptional wick. Retaining four lanes costs screen space but preserves the reason for each event. This is a regime/context tool, not a signal generator, and treating it as the latter will get you chopped up.
 
 ## Key Features That Stand Out
 
-- **Percentile-based range ranking** rather than fixed thresholds. This adapts to volatility automatically — no re-tuning when the market goes quiet or wild.
-- **Tail detection** that isolates outlier bars instead of blending them into a smoothed line.
-- **Visual radar output** that makes expansion/contraction phases obvious at a glance on the chart above.
-- **Lightweight, non-repainting behavior** on closed bars, which matters more than most reviewers admit.
+- **Four prior-only percentile populations** with explicit zero handling, so an extreme cannot alter its own baseline.
+- **Independent range and share-qualified body or wick flags** — rarity and geometric relevance are separate conditions.
+- **Tie-aware ranking** using half-weight ties, so repeated tick sizes aren't treated as distinct observations.
+- **A confirmed anatomy strip, close-only alerts and optional statistics.**
 
-The adaptive percentile is the real differentiator. Fixed ATR multipliers break down across regimes; this doesn't need babysitting.
+The percentile approach is the real differentiator. An ATR multiple measures distance from an average, but the same multiple can occur in very different distributions. Fixed ATR multipliers break down across regimes; separate ranks preserve anatomy that one volatility score hides.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-After running multiple configs, here's what held up:
+The script's published design starting points are N=200, Q=95, wick share=20% and body share=55%. These are starting points, not optimized settings.
 
-- **Lookback length:** 100–200 bars. Below 50 it's too twitchy and fires on every minor spike; above 300 it lags regime shifts badly.
-- **Percentile threshold:** 80–90. At 80 you get more signals but more noise. At 90+ you only catch genuine tail events — cleaner, fewer, better.
-- **Smoothing:** Keep it low or off. The whole point is to see the raw tail behavior; heavy smoothing defeats the design.
-- **Timeframe:** Works best on 1H and 4H. On 1-minute charts the percentile is dominated by microstructure noise and the tail signals are unreliable.
+- **Lookback length (N):** Shorter N responds sooner but uses fewer comparisons.
+- **Percentile threshold (Q):** Higher Q rejects more bars. A flag needs rank at or above Q.
+- **Body and wick shares:** Body and wick flags additionally need their configured share of high-low. Higher shares reject more bars. A zero high-low gives zero shares.
+- **Statistics window:** Defaults to 100 chart bars. Its rates use eligible closed bars, with sample coverage shown; overlapping flags can sum above 100%.
+- **Display options:** Guides, tips, strip, table and four colors are configurable.
 
-If you're scalping the 1M, this isn't your tool. If you swing or position trade, the 4H setting is where it earns its keep.
+Note that rank 95 is a sample comparison, not a 5% future probability, and it does not measure how far beyond history a new maximum lies.
 
-## How to Trade It
+## How to Read It
 
-The logic that made sense to me:
+Read the lanes from top to bottom: gold TR, purple body, orange upper wick, teal lower wick. Each uses its own zero baseline and equal height for 0-100; stacked positions are not a shared numeric axis. Dashed rails mark Q, vivid columns show qualifying components and dots confirm them at close. Use the table or Data Window for actual ranks and anatomy codes. The diamond strip marks the selected closed-bar type.
 
-1. **Wait for a tail reading** (percentile crossing your threshold) — this is your "something is happening" alert.
-2. **Confirm with structure** — a break of a recent swing high/low, or a MACD cross as shown in the layout above.
-3. **Enter on the first pullback** after the tail event, not on the spike bar itself. Chasing the tail bar is how you buy the top of an expansion.
-4. **Exit when percentile collapses back toward the median** — that's range contraction, and trends die in contraction.
+The displayed type prioritizes dual tail, upper tail, lower tail, directional body, gap-led range, then range only. Gap-led requires extreme TR and at least 35% of TR outside high-low. Component flags remain independent of this display priority.
 
-The trap is entering directly on the tail signal. It tells you *conditions* changed, not that price will keep going. Pair it with a directional filter and it becomes genuinely useful.
+## How to Use It
+
+The logic that holds up:
+
+1. **Watch for a qualifying lane.** An upper-tail event identifies an unusually large upper wick — not proven selling pressure or a short entry. A lower tail is equally descriptive.
+2. **Compare context.** A tail inside ordinary TR and a range event dominated by a body answer different anatomy questions.
+3. **Review clusters on the chart.** Clusters invite chart review but do not establish reversal odds.
+4. **Keep decisions independent.** There is no entry, exit, profitability or reversal model here.
+
+The trap is reading a flag as a directional call. It describes anatomy, not the next move. Pair it with your own directional method and it becomes a useful context layer.
 
 ## Pros & Cons
 
 **Pros:**
-- Adaptive, regime-aware — no constant re-optimization
-- Clean visual read of expansion vs. contraction
-- Non-repainting on closed bars
+- Separates rarity from shape instead of collapsing both into one score
+- Prior-only, tie-aware populations with explicit zero handling
+- Zero suppression prevents absent wicks from becoming exceptional merely because a reference sample contains many zeros
 - Complements momentum tools instead of duplicating them
 
 **Cons:**
 - No directional bias on its own — you must supply the trend filter
-- Useless on very low timeframes
-- Takes a session or two to interpret fluently; not plug-and-play
-- Percentile thresholds need a bit of tuning per instrument
+- Four lanes cost screen space
+- Takes practice to interpret fluently; not plug-and-play
+- Requires at least N valid prior observations plus previous-close coverage
 
 ## Who It's For
 
-Swing traders and position traders who already have a directional method (structure, MACD, or a trend MA) and want a context layer to time entries around volatility expansions. It's also useful for discretionary traders who want to avoid entering during dead, contracted ranges. It is **not** for scalpers or anyone wanting a standalone buy/sell arrow.
+Discretionary traders who already have a directional method and want a context layer describing observed tail volatility. It is not for anyone wanting a standalone buy/sell arrow, and it is not a reversal model.
 
 ## Alternatives
 
-If you want a pure volatility-expansion signal, a well-tuned **Squeeze Momentum** or **TTM Squeeze** does similar regime work with clearer triggers. For straightforward trend following, **SuperTrend** or a **Hull MA** is more direct. The percentile approach here is the differentiator — if that concept clicks for you, this is worth the install over the alternatives.
+If you want a pure volatility-expansion signal with clearer triggers, a well-tuned Squeeze Momentum or TTM Squeeze does similar regime work. For straightforward trend following, SuperTrend or a Hull MA is more direct. The prior-only, tie-aware four-population comparison with geometric qualification is the differentiator here — if that concept clicks for you, this is worth the install over the alternatives.
 
 ## FAQ
 
-**Does it repaint?** No, on closed bars. Intrabar values update live, as expected.
+**Does it repaint?** Live ranks, shading and table type can change intrabar; tips, strip and alerts require close. Choose once per bar close.
 
 **Can I use it alone?** Not recommended. It's a context tool; add a directional filter.
 
-**Best timeframe?** 1H to 4H. Avoid sub-5-minute charts.
+**What data does it need?** Standard OHLC charts. Synthetic candles change the meaning of anatomy. No volume or order-flow data is used.
 
-**Is it worth the install?** Yes, if you treat it as a volatility-regime radar rather than a signal generator.
+**How many alerts will I get?** Alerts apply to every qualifying closed bar, so consecutive bars can each alert and dual tails can trigger both tail alerts.
+
+**Is it worth the install?** Yes, if you treat it as a candle-anatomy radar rather than a signal generator.
 
 ## Final Verdict
 
-Tail_Range_Percentile_Radar_Pineify does one thing well: it tells you when the market is in a statistically unusual range regime, adaptively and without repainting. That's a genuinely useful layer most trend traders are missing. It loses a star because it demands a companion directional tool and takes real practice to read — it won't hand anyone a signal. For swing traders who want an edge in timing entries around expansion, it's a solid add.
+Tail Range Percentile Radar [Pineify] does one thing well: it distinguishes unusual total movement from unusual candle parts while keeping rarity and shape separate. It loses a star because it demands a companion directional tool and takes real practice to read — it won't hand anyone a signal. For traders who want a compact explanation of observed tail volatility, it's a solid add.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

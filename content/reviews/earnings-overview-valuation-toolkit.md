@@ -17,71 +17,89 @@ categories:
 rating: 4
 description: "Honest Earnings_Overview_Valuation_Toolkit review: settings, entry logic, pros/cons. Is this trend indicator worth your watchlist? Read before installing."
 tv_script_url: "https://www.tradingview.com/script/WCGoBeJh-Earnings-Overview-Valuation-Toolkit/"
+sources: ["https://www.tradingview.com/script/WCGoBeJh-Earnings-Overview-Valuation-Toolkit/"]
 ---
-Let me be upfront: when I first loaded Earnings_Overview_Valuation_Toolkit and saw it categorized under "Trend," I expected another lagging moving average mashup. What I actually found surprised me. This isn't a typical trend-following tool — it's a hybrid that attempts to bridge fundamental valuation data with price action, and for the most part, it works.
+The Earnings Overview & Valuation Toolkit is a Pine Script v6 study that combines fundamental valuation, historical earnings reaction data, and forward-looking volatility projections into a single indicator. It is not a trend-following tool in the conventional sense — it does not generate buy or sell signals. Instead, it layers valuation context and earnings event data onto the price chart, giving traders a fundamental reference frame alongside their existing technical analysis.
 
 ## What This Indicator Actually Does
 
-The toolkit pulls earnings data and valuation metrics directly into your TradingView chart, then overlays a trend bias calculation on top. Unlike pure price-based indicators, it factors in P/E ratios, earnings surprises, and revenue growth to color the trend context. The chart above shows how it renders on a MACD chart type — the valuation bands appear as shaded zones, with a trend line that shifts between bullish and bearish states based on the composite score.
+The toolkit uses Pine Script v6 `force_overlay` to run in a sub-panel while simultaneously drawing price-based elements onto the main chart. The sub-panel displays percentage-based metrics such as earnings surprises and post-earnings price reactions. The main chart receives valuation bands, volatility cones, and a statistics table.
 
-Here's the catch: it's not a signal generator in the traditional sense. It won't give you "BUY" and "SELL" arrows. Instead, it tells you *whether the current trend is supported by fundamentals* or if you're riding a purely speculative wave. That distinction matters more than most traders realize.
+This is not a signal generator. It does not produce entry or exit arrows. What it provides is context: whether a stock's current price sits at a historical valuation discount or premium, how the stock has typically reacted to earnings releases, and what range the market may be pricing in ahead of the next release.
 
-## Key Features That Actually Matter
+## Key Features
 
-The composite scoring system is the standout. It aggregates up to seven different valuation and earnings metrics into a single 0-100 score, then maps that to trend strength. You can see in the screenshot how the score line dips below the 50 midline — that's when the tool flips to a bearish stance.
+**Dynamic P/E Valuation Bands (Main Chart Overlay)**
 
-The earnings surprise tracker deserves special mention. When a company beats estimates, the indicator immediately recalibrates its trend bias rather than waiting for price to react. On the MACD chart above, you can spot how the toolkit turned bullish a full two sessions before the price broke out. That's the kind of leading edge you don't get from standard trend indicators.
+The indicator tracks the company's Trailing Twelve Month EPS and projects historical valuation multiples onto the chart. It calculates the 10th percentile (Undervalued), 50th percentile (Median/Fair Value), and 90th percentile (Overvalued) P/E ratios over a rolling lookback window. The default lookback is 500 bars. Zones are color-coded in soft green and red to mark historical discount and premium areas.
 
-## Best Settings for Real-World Use
+**Earnings Surprise & Price Reaction Tracker (Sub-Pane)**
 
-After weeks of backtesting across different market conditions, here's what worked:
+This panel plots two data points. The Earnings Surprise column shows the percentage beat (green) or miss (red) relative to consensus analyst estimates. The Reaction Dot calculates the percentage price change over a configurable window — default 5 bars — following the earnings release. A negative offset aligns the dot directly above or below the earnings column on the release day, so the surprise and the subsequent price move can be read together.
 
-- **Lookback period: 12 months** — the default 6 months is too twitchy, catching every quarterly wobble. 12 smooths out noise while staying responsive.
-- **Valuation weight: 60%** — if you crank this higher, the indicator becomes too slow and misses trend reversals.
-- **Enable the earnings filter** — this only shows signals for companies with positive earnings growth. It cuts your tradeable universe by about 30% but improves signal quality dramatically.
+**Catalyst Countdown & Volatility Predictor (Main Chart Overlay)**
 
-## How to Actually Trade With It
+The tool pulls the upcoming expected earnings date via `earnings.future_time` and projects a dynamic volatility cone onto the chart from the last candle. The cone's boundaries represent the expected trading range on the release day, calculated using the absolute average return from the last 8 earnings releases.
 
-The most reliable setup I found: wait for the composite score to cross above 60 *and* for price to be trading above the 20-period EMA. That combination produced the best risk-reward ratios in my testing. For exits, reverse it — close when the score drops below 40 or price breaks the EMA.
+**Unified Stats Dashboard (Main Chart Table)**
 
-One warning: don't use this for scalping. The toolkit's minimum meaningful timeframe is the 1-hour chart. Anything shorter and the valuation component becomes irrelevant noise.
+A real-time table anchored to the top-right of the main chart consolidates: TTM EPS and latest reported EPS; current P/E relative to price; a dynamic valuation status label (Undervalued, Fair Value, or Overvalued); average earnings day move percentage and the volatility multiplier relative to standard daily ATR; consensus analyst estimates for the next quarter (EPS and formatted revenue); and the next earnings release date with a countdown in days and hours.
+
+## Settings and How to Tune Them
+
+- **Reaction Window (Bars)**: Controls the length of time used to measure post-earnings price impact. Adjusting this changes how many bars after the release are included in the reaction calculation.
+- **Max Surprise Clamp %**: Caps extreme surprise percentage columns to keep the sub-pane scale readable. Without a clamp, outlier surprises can compress the visual range of normal readings.
+- **P/E Lookback (Bars)**: Sets the length of history used to compute valuation percentiles. A shorter lookback makes the bands more responsive to recent valuation regimes; a longer one produces more stable, slower-moving bands.
+- **Show Volatility Cone**: Toggles the dynamic future projection lines and box on or off.
+- **Color Customization**: Allows the bands, fills, and columns to be matched to light or dark chart themes.
+
+## How to Use This Toolkit
+
+The source material describes three distinct strategies:
+
+**Post-Earnings Announcement Drift (PEAD)**
+
+Scan for stocks that reported earnings in the last 1 to 5 days. Look for a positive surprise (green column) paired with a positive price reaction (green dot). If the stock is trading below its orange Median PE Band, this is treated as confirmation of institutional buying momentum with a margin of safety. The suggested approach is to hold for 2 to 4 weeks with a stop-loss below the low of the earnings day candle.
+
+**Pre-Earnings Volatility Ride**
+
+Scan for stocks with an upcoming earnings countdown of 7 to 10 days. Verify a strong track record of beating earnings (high 8-quarter average surprise) and a high volatility multiplier (the source cites above 1.5x normal ATR as an example). The suggested approach is buying the call or put option contract expiring the week after earnings to capture rising implied volatility and price run-up. The source material states a crucial rule: sell to close the contract the afternoon before the release to capture the maximum IV peak and avoid the overnight gap and IV crush.
+
+**Macro Value Rebound**
+
+For long-term investors, monitor for high-quality, profitable companies whose stock prices fall to or below the green Undervalued Band. Wait for a technical reversal or a positive earnings reaction dot to confirm a floor, then buy shares or long-dated LEAP options to ride the reversion back toward the orange Median and red Overvalued bands.
 
 ## The Honest Pros and Cons
 
 **Pros:**
-- Genuinely unique approach — no other free indicator combines valuation data with trend analysis this cleanly
-- The earnings surprise recalibration is genuinely predictive, not reactive
-- Clean visual design; the valuation bands don't clutter the chart
+- Combines fundamental valuation data with earnings event tracking in a single indicator, which is uncommon among free TradingView scripts
+- The volatility cone projection based on historical earnings moves gives a concrete, data-driven range for upcoming releases
+- The sub-panel and main chart overlay split keeps percentage metrics separate from price-based visuals, reducing clutter
 
 **Cons:**
-- The data can lag for smaller caps — earnings updates sometimes arrive a day late
-- No built-in alerts for score crossovers, which is a missed opportunity
-- The learning curve is steeper than most trend indicators; the settings menu is intimidating at first glance
+- The indicator depends on corporate earnings data, which is subject to reporting schedules and analyst revisions — accuracy is only as good as the underlying data feed
+- It is not a standalone signal generator; users must supply their own entry and exit logic
+- The multi-component layout (bands, cone, sub-panel, dashboard) requires time to learn and configure
 
 ## Who This Is For
 
-This is built for swing traders and position traders who want to avoid value traps. If you trade earnings seasons and want a systematic way to filter out fundamentally weak trends, this will become your first screen. Day traders should look elsewhere — the indicator's strengths don't align with intraday timeframes.
-
-## Better Alternatives
-
-If you're purely a technical trader, stick with something like SuperTrend or the classic MACD — they're simpler and faster. For fundamental trend analysis, this toolkit beats most paid options I've tested, but TradingView's own Earnings tool combined with a basic moving average will get you 80% of the way there if you're on a budget.
+This toolkit is built for stock traders and investors who incorporate earnings events and valuation context into their process. Swing traders running post-earnings drift strategies, options traders positioning around earnings-related volatility, and longer-term investors watching for valuation reversion are the natural audiences. It is not relevant for instruments without earnings data.
 
 ## FAQ
 
-**Q: Does this work for crypto?**  
-No. The indicator relies on earnings data that cryptocurrencies don't have. Stick to equities.
+**Does this work for crypto?**
+No. The indicator relies on earnings data that cryptocurrencies do not have.
 
-**Q: Can I use it for options trading?**  
-Yes, but only for directional bias. The toolkit doesn't factor in implied volatility or Greeks.
+**Can I use it for options trading?**
+The source material describes using it for directional bias and volatility positioning around earnings, but the toolkit does not factor in implied volatility or Greeks directly.
 
-**Q: How often does the data update?**  
-Valuation metrics refresh daily, but earnings data updates as soon as companies report — usually within minutes during earnings season.
+**How often does the data update?**
+The source material does not specify update frequency beyond noting that corporate earnings data is subject to reporting schedules and analyst revisions.
 
 ## Final Verdict
 
-Earnings_Overview_Valuation_Toolkit earns a solid 4 out of 5 stars. It's not perfect — the delayed small-cap data and missing alerts are genuine annoyances — but it fills a real gap in TradingView's ecosystem. This is the only indicator I've used that makes me feel like I'm looking at the market through both a technical and fundamental lens simultaneously. For swing traders who hate getting caught in value traps, it's worth every minute of the learning curve. Just don't expect it to replace your core trend analysis — think of it as the smart filter that sits on top of it.
+The Earnings Overview & Valuation Toolkit fills a specific gap: it brings earnings event data and valuation percentile bands into a single TradingView indicator without requiring a separate fundamental data source. It does not replace technical analysis, and it does not generate signals on its own. What it does is provide structured context — where price sits relative to historical valuation, how the stock has reacted to past earnings, and what range the next release might produce. For traders who already have a technical framework and want to layer earnings awareness on top of it, this is a coherent tool. The disclaimer is worth repeating: past performance does not guarantee future results, and earnings data is subject to revision.
 
-⭐⭐⭐⭐
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

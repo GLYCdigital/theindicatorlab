@@ -16,92 +16,92 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest 4/5 review of the Change of Character (CHOCH) Alert System. Tested on MACD chart. Settings, entry logic, pros/cons, and who should use it."
+grounding: "none (no source found)"
 ---
-If you’ve been trading Smart Money Concepts (SMC) or ICT strategies, you’ve probably spent hours manually marking up “Change of Character” (CHOCH) levels. This indicator promises to automate that process. After testing it on a MACD chart for several weeks, here’s what I actually found.
+# Change of Character (CHOCH) Alert System Review
+
+If you trade Smart Money Concepts (SMC) or ICT-style strategies, you've probably spent hours manually marking up "Change of Character" (CHOCH) levels. This indicator is built to automate that process.
 
 ## What This Indicator Actually Does
 
-The Change of Character (CHOCH) Alert System scans price action for structural breaks — specifically, the moment a trend’s internal structure shifts. When price takes out a previous swing high or low in a way that breaks the current trend’s logic (e.g., a higher low fails, then price breaks below the last higher low), the indicator labels that bar with a “CHOCH” marker and fires an alert.
+The Change of Character (CHOCH) Alert System scans price action for structural breaks — specifically, the moment a trend's internal structure shifts. When price takes out a previous swing high or low in a way that breaks the current trend's logic (for example, a higher low fails, then price breaks below the last higher low), the indicator labels that bar with a "CHOCH" marker and fires an alert.
 
-It’s not a lagging moving average crossover. It’s a real-time structural analysis tool. On the MACD chart I tested it on, it caught every major reversal point within 1–3 candles.
+It is not a lagging moving average crossover. It is a structural analysis tool designed to flag breaks as they form on the chart.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Automatic structure detection**: No need to draw trendlines manually. The algo identifies swing points and flags breaks instantly.
-- **Alert system**: You can set audio, email, or push notifications for new CHOCH signals. This is huge if you’re not glued to the screen.
-- **Customizable lookback**: The “Length” input controls how far back the algorithm searches for swing points. Default is 14 bars, but I found 10 works better on lower timeframes (like 5m or 15m).
-- **Clean visuals**: Labels are minimal — just a small “CHOCH” text above or below the bar. No clutter, even on a busy MACD chart.
+- **Automatic structure detection**: No need to draw trendlines manually. The algorithm identifies swing points and flags breaks.
+- **Alert system**: Audio, email, or push notifications can be configured for new CHOCH signals — useful if you are not watching the screen continuously.
+- **Customizable lookback**: The "Length" input controls how far back the algorithm searches for swing points.
+- **Clean visuals**: Labels are minimal — a small "CHOCH" text above or below the bar, with no clutter.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-After running this on BTCUSD, EURUSD, and SPY across multiple timeframes:
+The indicator exposes a small set of inputs, and the practical tuning decisions revolve around how much structure you want it to consider:
 
-- **Timeframe**: 1H to 4H works best. On lower timeframes (under 15m), you get too many false signals because micro-structures break constantly.
-- **Length**: 12 for swing detection. Too low (under 8) and you catch noise. Too high (over 20) and you miss early reversals.
-- **Show only last signal**: Turn this ON if you’re scalping. It clears old labels and keeps focus on the most recent structural break.
-- **Enable alerts**: Set to “Once per bar close” to avoid re-triggering on the same candle.
+- **Length**: Controls the swing-point lookback. Lower values make the indicator more sensitive to recent structure; higher values make it slower and more selective. The right value depends on the instrument and the timeframe you trade.
+- **Show only last signal**: When enabled, old labels are cleared so only the most recent structural break remains on the chart. This is useful if you prefer a clean chart focused on current structure.
+- **Enable alerts**: Alert behavior can be configured, including triggering once per bar close to avoid re-triggering on the same candle.
+
+No single configuration is universally "best" — the settings should match your timeframe and how much noise you are willing to filter.
 
 ## How to Use It: Entry and Exit Logic
 
-I tested two strategies. Here’s the one that worked best:
+A common approach is to use the CHOCH signal as a directional trigger, filtered by a higher-timeframe or momentum bias:
 
-**Entry**: Wait for a CHOCH signal in the direction of the larger timeframe trend. For example, on the 1H MACD chart, if the MACD line is above the signal line (bullish bias), only take long entries when a bullish CHOCH prints (price breaks above a prior higher high structure after a pullback).
-
-**Stop loss**: Place it 1 ATR below the swing low that defined the CHOCH (for longs). On the MACD chart, the ATR overlay confirmed this was tight enough to avoid being shaken out.
-
-**Take profit**: Use a 1:2 risk-reward ratio initially. Alternatively, trail a 20-period EMA after the trade moves 1R in your favor.
-
-**What to avoid**: Don’t take the first CHOCH signal after a prolonged trend. Wait for a retest of the broken structure level. I saw too many false entries when taking the first break without confirmation.
+- **Entry**: Wait for a CHOCH signal in the direction of the larger trend bias. If a momentum oscillator such as MACD supports the same direction, the signal and the momentum read align.
+- **Stop loss**: Place it beyond the swing point that defined the CHOCH — the structural level that would invalidate the break if reclaimed.
+- **Take profit**: A fixed risk-reward target is one option; alternatively, trail a moving average once the trade has moved in your favor.
+- **What to avoid**: Taking the first CHOCH signal immediately after a prolonged trend, without waiting for a retest of the broken structure level, tends to produce weaker entries.
 
 ## Pros & Cons
 
 **Pros:**
-- Eliminates manual structure drawing — saves hours per week.
-- Alerts work reliably. I missed zero signals during testing.
-- Works well with MACD for confluence (bullish CHOCH + MACD crossover = high probability).
-- Free to use on TradingView (no premium subscription lock).
+- Eliminates manual structure drawing.
+- Alert system for new CHOCH signals.
+- Pairs naturally with momentum tools like MACD for confluence.
+- Free to use on TradingView.
 
 **Cons:**
-- False signals on lower timeframes (under 15m) are frequent. You must filter with higher timeframe context.
-- No multi-timeframe analysis built-in. You have to add the indicator to multiple charts manually.
-- The label text is small — hard to see on a phone screen without zooming.
-- Doesn’t distinguish between CHOCH and a simple break of structure (BOS). They’re functionally the same in this version, which may confuse SMC purists.
+- Lower timeframes produce frequent signals, requiring higher-timeframe context to filter.
+- No built-in multi-timeframe analysis — you have to add the indicator to multiple charts manually.
+- Label text is small and can be hard to read on a phone screen.
+- Does not distinguish between CHOCH and a simple break of structure (BOS); they are treated the same in this version, which may bother SMC purists.
 
-## Who It’s For
+## Who It's For
 
-- **SMC/ICT traders**: If you already understand the concept of market structure shifts, this tool speeds up your workflow.
-- **Swing traders**: Works best on 1H to 4H. Set alerts and check your charts a few times a day.
-- **Traders who hate drawing lines**: The automation is solid.
+- **SMC/ICT traders**: If you already understand market structure shifts, this tool speeds up your workflow.
+- **Swing traders**: The indicator is better suited to higher timeframes where structural breaks are less frequent and more meaningful.
+- **Traders who dislike drawing lines**: The automation handles the markup for you.
 
-**Not for**: Scalpers on 1m or 5m charts. Too much noise, and the indicator doesn’t have a noise filter.
+**Not for**: Scalpers working on very low timeframes, where structural breaks occur constantly and the indicator has no built-in noise filter.
 
 ## Alternatives
 
-- **LuxAlgo Smart Money Concepts**: More advanced (includes order blocks, FVG, etc.) but paid ($50/month).
-- **Market Structure by QuantNomad**: Better for lower timeframes — has a noise filter slider. Free.
-- **ICT Concepts by JiggaD**: Similar CHOCH detection but includes more SMC tools. Also free.
+- **LuxAlgo Smart Money Concepts**: More advanced (includes order blocks, FVG, and more) but paid.
+- **Market Structure by QuantNomad**: Geared toward lower timeframes, with a noise filter slider. Free.
+- **ICT Concepts by JiggaD**: Similar CHOCH detection with additional SMC tools. Free.
 
-If you’re already paying for LuxAlgo, you don’t need this. But if you want a free, no-frills CHOCH alert, this is the best option.
+If you already pay for a full SMC suite, this indicator may be redundant. If you want a free, no-frills CHOCH alert, it covers that need.
 
 ## FAQ
 
-**Does this indicator repaint?**  
-No. Once a CHOCH label appears, it stays fixed on that bar. Alerts fire only on bar close.
+**Does this indicator repaint?**
+Once a CHOCH label appears, it stays fixed on that bar. Alerts fire on bar close.
 
-**Can I use it for crypto?**  
-Yes. Works on BTCUSD, ETHUSD, and altcoins. Just adjust the length depending on volatility (try 10 for crypto).
+**Can I use it for crypto?**
+Yes. It works on major crypto pairs and altcoins, though the length setting may need adjusting depending on volatility.
 
-**Does it work with MACD?**  
-I tested it on a MACD chart. The indicator itself doesn’t use MACD, but the combination is strong — a CHOCH signal occurring at the same time as a MACD crossover has a ~68% win rate in my sample (50 trades).
+**Does it work with MACD?**
+The indicator itself does not use MACD, but the two can be combined — a CHOCH signal occurring alongside a MACD crossover gives a momentum-confirmed read on the structural break.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-The Change of Character (CHOCH) Alert System does one thing well: it identifies structural breaks in real-time and alerts you. It’s not a holy grail — you still need confluence from price action or a momentum oscillator like MACD. But for a free tool that saves hours of manual charting, it’s a solid addition to any SMC trader’s toolkit.
+The Change of Character (CHOCH) Alert System does one thing well: it identifies structural breaks and alerts you to them. It is not a holy grail — confluence from price action or a momentum oscillator like MACD is still needed. But as a free tool that removes manual structure markup, it is a reasonable addition to an SMC trader's toolkit.
 
-Would I rely on it alone? No. But as a first-line filter before manual analysis? Absolutely. Give it a try on your 1H MACD chart — just turn off alerts for anything below 15m.
----
+As a standalone system? No. As a first-line filter before manual analysis? Yes.
 
 ## Go Deeper with The Indicator Lab
 

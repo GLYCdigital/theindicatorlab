@@ -16,103 +16,99 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Mtf_Moving_Average review: 4/5 stars. Multi-timeframe MA with clean visual layers. Best settings, entry/exit rules, pros, cons, and better alternatives tested."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Most moving average tools only show you the current timeframe’s average. That’s fine if you trade on one timeframe, but useless if you want to align a 15-minute entry with a 1-hour trend.
+Most moving average tools only show you the current timeframe's average. That's fine if you trade on one timeframe, but useless if you want to align a lower-timeframe entry with a higher-timeframe trend.
 
-Mtf_Moving_Average solves this by plotting MAs from higher timeframes directly onto your current chart. You see, for example, a 50-period SMA from the 1-hour chart while you’re trading 15-minute candles. No switching tabs. No mental math.
+Mtf_Moving_Average addresses this by plotting MAs from higher timeframes directly onto your current chart. The concept: you see a higher-timeframe moving average on your current chart without switching tabs or calculating it manually.
 
-The indicator supports SMA, EMA, WMA, VWMA, and SMMA. You can choose up to three independent MA lines, each from a different timeframe. The visual is clean — no overlapping clutter if you set the colors right.
+The indicator supports SMA, EMA, WMA, VWMA, and SMMA. It allows up to three independent MA lines, each configurable to a different timeframe.
 
 ## Key Features That Set It Apart
 
-- **True multi-timeframe rendering** — It plots the actual MA value from a higher timeframe, not a smoothed version. This means the line only changes when that higher timeframe candle closes. No repainting.
-- **Multiple MA types** — SMA, EMA, WMA, VWMA, SMMA. Most MTF scripts only offer SMA/EMA.
-- **Per-line timeframe control** — Each of the three lines can pull from different timeframes (e.g., 15 min, 1H, 4H) with different lengths and types.
-- **Clean offset option** — You can shift MAs forward or backward, useful for entry timing tricks.
+- **Multi-timeframe rendering** — It plots the MA value from a higher timeframe rather than a smoothed approximation of it.
+- **Multiple MA types** — SMA, EMA, WMA, VWMA, SMMA. Many MTF scripts only offer SMA and EMA.
+- **Per-line timeframe control** — Each of the three lines can pull from a different timeframe with its own length and type.
+- **Offset option** — You can shift MAs forward or backward along the time axis.
 
-## Best Settings I Use After 200+ Trades
+## Settings and How to Tune Them
 
-This is where most reviews go vague. Here’s what actually works:
+The indicator exposes three independent lines. For each line you choose an MA type, a length, a source timeframe, and a visual offset. Line 3 can be disabled if you want a cleaner chart.
 
-**Conservative trend filter setup:**
-- Line 1: EMA 50, 1-hour timeframe, offset 0
-- Line 2: EMA 200, 4-hour timeframe, offset 0
-- Line 3: Disabled (keeps chart clean)
+A conservative configuration typically pairs a shorter EMA on a lower higher-timeframe with a longer EMA on a higher one, leaving the third line off. An aggressive configuration might stack a volume-weighted average on a short timeframe, a weighted average on a medium one, and a simple average on a long one.
 
-**Aggressive momentum setup:**
-- Line 1: VWMA 20, 15-minute timeframe
-- Line 2: WMA 50, 1-hour timeframe  
-- Line 3: SMA 200, 4-hour timeframe
+Use thicker line widths for the higher-timeframe lines so they stand out as context rather than blending into price action.
 
-**Pro tip:** Use thicker line width (2 or 3) for higher timeframe lines. Thin lines blend into the chart and you miss the context.
+## How It Can Be Used for Entries and Exits
 
-## How I Use It for Entries and Exits
+A common approach is to use the indicator as a trend filter rather than a signal generator. One example: on a lower timeframe, require price above a shorter higher-timeframe EMA and above a longer higher-timeframe EMA before considering longs. A pullback to the shorter line with a bullish close can serve as a trigger, with entries on the following candle.
 
-I trade 15-minute charts. Here’s my rule:
+For exits, a trailing approach works: exit partial size on a close below the shorter higher-timeframe line, and exit the remainder on a close below the longer one. Short setups mirror the logic.
 
-**Long entry:** Price above the 1-hour EMA 50 AND above the 4-hour EMA 200. Wait for a pullback to the 15-minute EMA 20 (from 1-hour) with a bullish candle close. Enter on the next candle.
+This is not a standalone system. It is a filter. A separate trigger — price action, an oscillator, or a volume event — is still required.
 
-**Exit:** Trail below the 1-hour EMA 50. If price closes below it, exit half. If it closes below the 4-hour EMA 200, exit all.
-
-**Short entry:** Same logic inverted.
-
-This isn’t a standalone system. It’s a filter. You still need a trigger (price action, RSI divergence, volume spike).
-
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- No repainting (line only updates on higher timeframe close)
-- Highly customizable without bloat
-- Clean visual — no histogram or arrows cluttering the chart
-- Works on any market (stocks, crypto, forex)
+- The plotted line updates on the higher timeframe's close rather than intrabar.
+- Customizable without excess features.
+- Clean visual with no histogram or arrows cluttering the chart.
+- Can be applied to any market available in TradingView.
 
 **Cons:**
-- No alerts built-in (you’ll need to set them manually)
-- No buy/sell signals — it’s a tool, not a system
-- Higher timeframe lines can lag during fast moves (that’s the nature of MAs, not a bug)
-- Learning curve: you need to understand timeframe alignment
+- No built-in alerts; these must be configured manually.
+- No buy or sell signals — it is a tool, not a system.
+- Higher timeframe lines lag during fast moves, which is inherent to moving averages.
+- Requires an understanding of timeframe alignment to use well.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This is for intermediate to advanced traders who already use moving averages but want to stop flipping between timeframes. Beginners will find it confusing because it doesn’t give signals. If you don’t know what a 4-hour EMA 200 means, start with a single MA first.
+This is aimed at intermediate to advanced traders who already use moving averages but want to avoid switching between timeframes. Beginners may find it confusing because it provides no signals. Traders unfamiliar with higher-timeframe moving averages are generally better off starting with a single MA.
 
 ## Better Alternatives
 
 - **Better Volume Indicator MTF** — If you want volume-weighted context alongside MAs.
-- **Multi-Timeframe Momentum** — If you prefer RSI/MACD crossover confirmation.
-- **TradingView’s built-in “MA Cross”** — If you just want simple cross signals without MTF.
+- **Multi-Timeframe Momentum** — If you prefer RSI or MACD crossover confirmation.
+- **TradingView's built-in "MA Cross"** — If you just want simple cross signals without MTF.
 
-But for pure, clean multi-timeframe MA plotting? This is one of the best free options.
+For straightforward multi-timeframe MA plotting, this is a solid free option.
 
 ## FAQ
 
-**Does it repaint?**  
-No. The line only updates when the higher timeframe candle closes. What you see is what you get.
+**Does it repaint?**
+The line updates when the higher timeframe candle closes.
 
-**Can I use it for crypto?**  
-Yes. Works on any market in TradingView.
+**Can I use it for crypto?**
+Yes. It works on any market in TradingView.
 
-**How many MAs can I add?**  
-Three independent lines. More than that and the chart gets messy.
+**How many MAs can I add?**
+Three independent lines. More than that and the chart gets crowded.
 
-**Does it work on 1-minute charts?**  
-Yes, but higher timeframe lines will be very wide. Best on 5-min to 1-hour charts.
+**Does it work on 1-minute charts?**
+Yes, though higher timeframe lines will be very wide relative to price. It is generally better suited to 5-minute through 1-hour charts.
 
-**Is it free?**  
-Yes. It’s a community script, not a paid indicator.
+**Is it free?**
+Yes. It is a community script, not a paid indicator.
 
 ## Final Verdict
 
-Mtf_Moving_Average does one thing and does it well: plot higher timeframe MAs on your current chart. It’s not flashy. No arrows, no alerts, no signals. But if you’re serious about trend alignment, it’s a must-have.
+Mtf_Moving_Average does one thing: plot higher timeframe MAs on your current chart. It is not flashy — no arrows, no alerts, no signals. For trend alignment, that is often enough.
 
-It loses one star because of the lack of native alerts and the learning curve. But for the price (free), it’s a solid 4/5.
+The lack of native alerts and the learning curve are real drawbacks. But for the price (free), it is a solid choice.
 
-**Rating:** ⭐⭐⭐⭐ (4/5) — Honest, clean, and effective. Just don’t expect it to trade for you.
+**Rating:** ⭐⭐⭐⭐ (4/5) — Clean and effective. Just don't expect it to trade for you.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

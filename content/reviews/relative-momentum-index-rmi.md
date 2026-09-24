@@ -16,98 +16,99 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Our review of the Relative Momentum Index (RMI) on TradingView. Settings, strategy, and honest pros/cons for trend traders."
+grounding: "none (no source found)"
 ---
-You’ve probably seen the Relative Strength Index (RSI) a thousand times. The Relative Momentum Index (RMI) is its sharper, less-known cousin. Instead of comparing average gains to average losses over a fixed period, the RMI replaces the "average loss" component with a measure of downside momentum relative to the number of days since a close was higher than *n* bars ago. That tweak makes it less whippy in choppy markets and more responsive during strong trends.
-
-I tested this indicator on the MACD chart type (as shown in the screenshot) across BTC/USD, EUR/USD, and AAPL — ranging from 15-minute to daily timeframes. Here’s what I found.
+You've probably seen the Relative Strength Index (RSI) a thousand times. The Relative Momentum Index (RMI) is its less-known cousin. Rather than comparing average gains to average losses over a fixed period, the RMI shifts the comparison to count bars where the current close is higher than the close *n* bars ago, against the bars where it is lower. That change is intended to make it less whippy in choppy markets and more responsive during strong trends.
 
 ## What the RMI Actually Does
 
-The RMI outputs a single line that oscillates between 0 and 100, similar to RSI. But the calculation is different: it counts the number of days (or bars) where the current close is higher than the close *n* bars ago, divided by the total of those plus the days where it's lower. That ratio is then smoothed. The result is a momentum oscillator that filters out minor noise and sticks to directional moves longer.
+The RMI outputs a single line that oscillates between 0 and 100, similar to RSI. The calculation differs: it counts the bars where the current close is higher than the close *n* bars ago, divided by the total of those plus the bars where it's lower. That ratio is then smoothed. The result is a momentum oscillator that filters out minor noise and sticks to directional moves longer.
 
-In the TradingView implementation, you get the main RMI line, overbought/oversold zones (default 70/30), and a midline at 50. That’s it. No divergence detection or signals built-in — you bring your own logic.
+In the TradingView implementation, you get the main RMI line, overbought/oversold zones, and a midline at 50. There is no built-in divergence detection or signal logic — you bring your own.
 
 ## Key Features That Set It Apart
 
-- **Less noise than RSI**: Because the RMI compares each bar to one *n* bars back (instead of an average of up/down closes), it produces fewer false crossovers in sideways markets.
-- **Overbought/oversold thresholds work better in trends**: In a strong uptrend, RSI can stay overbought forever. The RMI tends to pull back to the 50 midline more frequently, giving you re-entry opportunities.
-- **Simple settings**: You only need to tweak the length (period) and the overbought/oversold levels. No complex parameters to break.
+- **Less noise than RSI**: Because the RMI compares each bar to one *n* bars back rather than averaging up/down closes, it produces fewer false crossovers in sideways markets.
+- **Overbought/oversold thresholds in trends**: In a strong uptrend, RSI can stay overbought for extended stretches. The RMI tends to pull back to the 50 midline more frequently, which can offer re-entry reference points.
+- **Simple settings**: You only need to adjust the length (period) and the overbought/oversold levels. No complex parameters to break.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-After running through multiple combinations, here’s what performed best:
+The two things worth adjusting are the length (period) and the overbought/oversold thresholds. Everything else is fixed by the indicator.
 
-**For swing trading (4H or daily):**  
-- Length: 14 (default)  
-- Overbought: 75  
-- Oversold: 25  
-- This widens the zones and reduces whipsaws in choppy ranges.
+**Swing trading (higher timeframes):** A longer length with wider overbought/oversold zones. Widening the zones reduces whipsaws in choppy ranges, at the cost of fewer signals.
 
-**For intraday (15m-1H):**  
-- Length: 8  
-- Overbought: 80  
-- Oversold: 20  
-- Shorter length catches faster moves, but expect more false signals. Tighten stops.
+**Intraday (lower timeframes):** A shorter length catches faster moves but produces more false signals. Tighten stops accordingly.
 
-**For trend confirmation (any timeframe):**  
-- Use 50 as the signal line. Price above 50 = bullish bias; below = bearish. Simple and reliable.
+**Trend confirmation:** Use 50 as the signal line. Price above 50 = bullish bias; below 50 = bearish bias.
+
+The specific number you pick should come from your own testing on your own asset and timeframe. There is no universal setting that performs best across markets.
 
 ## How to Use the RMI: Entry and Exit Logic
 
-**Bullish setup:**  
-1. Wait for RMI to dip below oversold (e.g., 25) during an uptrend (price above 50 EMA or higher timeframe uptrend).  
-2. Enter long when RMI crosses back *above* oversold.  
-3. Exit when RMI crosses below 50 or hits overbought and stalls.
+**Bullish setup:**
+1. Wait for RMI to dip below the oversold level during an uptrend (price above a moving average or higher-timeframe uptrend).
+2. Enter long when RMI crosses back *above* oversold.
+3. Exit when RMI crosses below 50 or reaches overbought and stalls.
 
-**Bearish setup:**  
-1. Wait for RMI to spike above overbought (e.g., 75) during a downtrend.  
-2. Enter short when RMI crosses back *below* overbought.  
-3. Exit when RMI crosses above 50 or hits oversold and stalls.
+**Bearish setup:**
+1. Wait for RMI to spike above the overbought level during a downtrend.
+2. Enter short when RMI crosses back *below* overbought.
+3. Exit when RMI crosses above 50 or reaches oversold and stalls.
 
-**Reversal warning:** If RMI makes a lower high while price makes a higher high (or vice versa), that’s a divergence. This isn’t built into the indicator, but you can spot it manually. It’s a strong signal, especially on daily charts.
+**Reversal warning:** If RMI makes a lower high while price makes a higher high (or vice versa), that's a divergence. This isn't built into the indicator, but you can spot it manually. It's a useful signal to watch, especially on daily charts.
 
 ## Pros & Cons
 
-**Pros:**  
-- Smoother than RSI; fewer fakeouts in ranging markets.  
-- Works well as a trend filter when combined with a moving average.  
-- Free and simple — no clutter on the chart.  
+**Pros:**
+- Smoother than RSI; fewer fakeouts in ranging markets.
+- Works as a trend filter when combined with a moving average.
+- Free and simple — no clutter on the chart.
 
-**Cons:**  
-- No built-in divergence detection or signal alerts (you’ll need to set those manually).  
-- Can lag in very fast breakouts — the RMI might not reach oversold before the move ends.  
+**Cons:**
+- No built-in divergence detection or signal alerts (you'll need to set those manually).
+- Can lag in very fast breakouts — the RMI might not reach oversold before the move ends.
 - Not a standalone system; you must pair it with price action or another indicator.
 
-## Who It’s For
+## Who It's For
 
-The RMI is best for **swing traders** and **position traders** who want a momentum oscillator that doesn’t scream "buy" every five minutes. If you trade 4H or daily charts and already use RSI but find it too jittery, this is a direct upgrade. Intraday scalpers might find it too slow — stick with RSI or Stochastic for that.
+The RMI is best suited to **swing traders** and **position traders** who want a momentum oscillator that doesn't fire constantly. If you trade higher timeframes and already use RSI but find it too jittery, this is worth a look. Intraday scalpers may find it too slow — stick with RSI or Stochastic for that.
 
 ## Alternatives
 
-- **RSI (Relative Strength Index)**: The classic. More sensitive to short-term moves, but more whipsaws.  
-- **Stochastic Oscillator**: Faster, better for overbought/oversold in range-bound markets.  
+- **RSI (Relative Strength Index)**: The classic. More sensitive to short-term moves, but more whipsaws.
+- **Stochastic Oscillator**: Faster, better for overbought/oversold in range-bound markets.
 - **MACD**: Better for trend direction and momentum shifts; combine with RMI for confirmation.
 
 ## FAQ
 
-**Is the RMI better than RSI?**  
-For trending markets, yes — it filters noise. For range-bound markets, RSI is slightly better at catching tops and bottoms. Test both on your asset.
+**Is the RMI better than RSI?**
+For trending markets, it filters noise more effectively. For range-bound markets, RSI is often better at catching tops and bottoms. Test both on your asset.
 
-**What length should I use?**  
-14 is standard. For longer trades (daily), try 21. For faster moves (1H), try 8. Adjust overbought/oversold levels accordingly.
+**What length should I use?**
+There is no single standard that fits every trader. Longer lengths suit longer holding periods; shorter lengths suit faster moves. Adjust overbought/oversold levels accordingly.
 
-**Does the RMI work on crypto?**  
-Yes. I tested on BTC/USD and ETH/USD — it’s effective, especially on 4H and daily. Watch for divergences.
+**Does the RMI work on crypto?**
+It's a momentum oscillator, so it applies wherever price data exists. As with any oscillator, watch for divergences and confirm with price structure.
 
-**Can I automate signals with this indicator?**  
+**Can I automate signals with this indicator?**
 You can set alerts on crossovers of the RMI line and the 50 level or overbought/oversold thresholds. Divergence detection requires a script (Pine Script) — not built in.
 
 ## Final Verdict
 
-The RMI is a solid, no-nonsense momentum oscillator. It doesn’t try to do too much — it just gives you a cleaner version of RSI with less noise. Perfect for trend traders who want to avoid the constant flipping of traditional oscillators. Pair it with a moving average or price structure, and you’ve got a reliable filter.
+The RMI is a solid, no-nonsense momentum oscillator. It doesn't try to do too much — it just gives you a cleaner version of RSI with less noise. Suited to trend traders who want to avoid the constant flipping of traditional oscillators. Pair it with a moving average or price structure, and you've got a reasonable filter.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Missing divergence detection and a bit laggy on fast moves, but for its simplicity and effectiveness in trends, it earns a strong recommendation.
----
+**Rating: ⭐⭐⭐⭐ (4/5)** — Missing divergence detection and a bit laggy on fast moves, but for its simplicity and behavior in trends, it earns a strong recommendation.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Momentum** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 55.3%, AMD 54.0%, AAPL 53.7%, SPY 53.5%
+- Weakest markets: LTCUSD 46.4%, VIX 44.7%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

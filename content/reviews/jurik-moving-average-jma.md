@@ -16,31 +16,33 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Jurik Moving Average JMA review: tested settings, entry/exit strategy, pros and cons. Is this lag-reducing trend filter worth adding?"
+grounding: "none (no source found)"
 ---
-The Jurik Moving Average (JMA) is one of those indicators that sounds too good to be true on paper: a moving average that cuts lag dramatically while staying smooth. I've spent the last two weeks running it against my standard toolkit on BTC, EUR/USD, and a few large caps. Here's the honest truth — it's not magic, but it's genuinely better than most trend filters I've used. Let me show you what I found.
+# Jurik Moving Average (JMA) Review
+
+The Jurik Moving Average (JMA) is one of those indicators that sounds too good to be true on paper: a moving average that cuts lag dramatically while staying smooth. That pitch deserves scrutiny. JMA is not magic, but it is a meaningfully different construction from the standard moving averages most traders keep on their charts.
 
 ## What This Indicator Actually Does
 
-JMA is an adaptive moving average developed by Mark Jurik. Unlike a simple or exponential MA that applies a fixed smoothing formula, JMA adjusts its smoothing factor dynamically based on market volatility. When price moves decisively, the average hugs it tightly. When price chops sideways, JMA flattens out and filters noise. The result, as you can see on the chart above, is a line that turns corners noticeably faster than an EMA of equivalent length, without the wild whipsawing you'd expect from a faster average.
+JMA is an adaptive moving average developed by Mark Jurik. Unlike a simple or exponential MA that applies a fixed smoothing formula, JMA adjusts its smoothing factor dynamically based on market volatility. When price moves decisively, the average hugs it tightly. When price chops sideways, JMA flattens out and filters noise. The result is a line that turns corners faster than an EMA of equivalent length, without the wild whipsawing you'd expect from a faster average.
 
-The TradingView implementation is clean — you get the JMA line, optional color-coded bars (green/red based on trend direction), and a couple of core inputs. Nothing bloated. It plots directly on price, so it's easy to overlay with your existing setup.
+The TradingView implementation is clean — you get the JMA line, optional color-coded bars (green/red based on trend direction), and a couple of core inputs. Nothing bloated. It plots directly on price, so it's easy to overlay with an existing setup.
 
 ## Key Features That Set It Apart
 
-- **Phase input (default 50):** This is the secret sauce. It controls the balance between lag reduction and smoothing. Lower values = faster response, higher values = smoother line. Most people never touch this and miss half the indicator's utility.
+- **Phase input:** This is the core of the indicator. It controls the balance between lag reduction and smoothing. Lower values make the line respond faster; higher values make it smoother. Many users never touch this and miss half the indicator's utility.
 - **True adaptive behavior:** The smoothing constant isn't static. It recalculates based on recent price action, which means the indicator behaves differently in trending vs ranging markets automatically.
-- **Minimal parameter clutter:** Just length and phase. That's it. No overcomplicated "quality" or "power" settings that confuse more than they help.
-- **Built-in bar coloring:** If you don't want to build a separate trend filter, the price bars can change color based on whether price is above/below JMA. Simple and effective.
+- **Minimal parameter clutter:** Just length and phase. No overcomplicated "quality" or "power" settings that confuse more than they help.
+- **Built-in bar coloring:** If you don't want to build a separate trend filter, the price bars can change color based on whether price is above or below JMA. Simple and effective.
 
-## Best Settings I've Tested
+## Settings and How to Tune Them
 
-After running optimization sweeps, here's what I settled on:
+The two inputs that matter are length and phase.
 
-- **Default length 15, phase 50:** Good for swing trading on 4H and daily charts. Balanced, not too twitchy.
-- **Length 8, phase 20:** For scalping on 5M/15M charts. Fast, but only use this in strong trending sessions — it will chop you up in ranging markets.
-- **Length 30, phase 70:** For position trading on weekly charts. Very smooth, fewer signals, but those signals tend to be high quality.
+- **Length** sets the lookback window for the average. Shorter lengths respond more quickly and suit active, short-horizon trading; longer lengths smooth the line further and suit slower, position-style horizons.
+- **Phase** sets the lag-versus-smoothness tradeoff. Lower phase values lean toward responsiveness; higher phase values lean toward smoothness.
 
-My recommendation: start with the defaults, but actively experiment with the phase slider. Most traders ignore it and then complain the JMA is "just an EMA." The phase input is where the magic lives.
+A reasonable starting point is the indicator's defaults, then adjust the phase slider deliberately to see how the line's behavior changes. The phase input is where most of the indicator's character lives — treating JMA as a fixed-length EMA and ignoring phase is the most common way to underuse it.
 
 ## How To Use It: Entry/Exit Logic
 
@@ -50,14 +52,14 @@ The most practical approach isn't to trade every cross. That's how you lose mone
 
 **Short setup:** Mirror it in a downtrend.
 
-**Confluence strategy:** I had the best results combining JMA with an RSI divergence or a volume spike. JMA tells you the trend direction, the divergence tells you when momentum is exhausting. The chart above shows this working on the daily MACD chart — the trend filter cleaned up a lot of false divergences.
+**Confluence strategy:** JMA pairs well with momentum tools such as RSI divergence or a volume spike. JMA tells you the trend direction; the divergence tells you when momentum is exhausting. Used as a filter, it can clean up a lot of false divergences.
 
 One critical warning: JMA is **not** a support/resistance indicator. It's a lagging trend filter, just a faster one. Don't place limit orders at the JMA line expecting bounces. Wait for price action confirmation.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely less lag than EMA/SMA of the same length — I measured roughly 30-40% faster turns in trending conditions
+- Less lag than EMA/SMA of the same length
 - Smooth output means fewer false crossovers than faster EMAs
 - Adaptive nature handles volatility shifts automatically
 - Simple, clean implementation on TradingView
@@ -70,35 +72,46 @@ One critical warning: JMA is **not** a support/resistance indicator. It's a lagg
 
 ## Who It's For
 
-JMA is ideal for **swing traders and position traders** who use moving averages as their primary trend filter but are tired of late entries from standard MAs. It's also great for **quantitative traders** who want a smooth, adaptive trend series for building strategies. If you're a pure price action trader who hates indicators, this won't convert you. If you already use EMAs and want a genuine upgrade, this is worth your time.
+JMA is ideal for **swing traders and position traders** who use moving averages as their primary trend filter but are tired of late entries from standard MAs. It's also useful for **quantitative traders** who want a smooth, adaptive trend series for building strategies. A pure price action trader who hates indicators won't be converted. If you already use EMAs and want a genuine alternative, this is worth a look.
 
 ## Alternatives Worth Considering
 
 - **Hull Moving Average (HMA):** Smoother than JMA but less adaptive. Better for visual trend reading, worse for precise entries.
-- **Kaufman's Adaptive MA (KAMA):** More aggressive noise filtering, but slower in strong trends. JMA is the better middle ground.
+- **Kaufman's Adaptive MA (KAMA):** More aggressive noise filtering, but slower in strong trends. JMA sits between the two.
 - **Supertrend:** Not a moving average, but if you just want clean trend signals without thinking about lag, Supertrend is simpler to execute.
 
 ## FAQ
 
 **Is JMA better than a standard EMA?**
-Yes, for trend identification. It turns faster in trends and stays stable in chop. But it's not dramatically better — think 10-15% improvement, not a revolution.
+For trend identification, it's a step up. It turns faster in trends and stays stable in chop. But it's not a revolution — treat it as an incremental improvement, not a transformation.
 
 **Can I use JMA for scalping?**
-Yes, with the shorter settings I mentioned (length 8, phase 20). But only in trending sessions. It will bleed you dry in range-bound markets.
+Yes, with shorter length and lower phase settings. But only in trending sessions. It will bleed you dry in range-bound markets.
 
 **Does JMA repaint?**
-No, it's a standard moving average calculation — the value at any historical bar is fixed. That's a huge plus compared to some adaptive indicators.
+No, it's a standard moving average calculation — the value at any historical bar is fixed. That's a plus compared to some adaptive indicators.
 
 **What's the best timeframe?**
-It works on all timeframes, but the 1H to daily range is where the phase parameter shines. Below 15M, the noise overwhelms the adaptivity.
+It works across timeframes, but the phase parameter's effect is most visible on higher timeframes. On very low timeframes, the noise overwhelms the adaptivity.
 
 ## Final Verdict
 
-The Jurik Moving Average is a genuinely well-engineered trend indicator that delivers on its core promise: less lag without sacrificing smoothness. It's not going to replace your entire trading system, but as a trend filter, it's a clear upgrade over standard MAs. The TradingView implementation is solid, the learning curve is manageable, and once you crack the phase setting, it becomes a reliable workhorse.
+The Jurik Moving Average is a well-engineered trend indicator that delivers on its core promise: less lag without sacrificing smoothness. It's not going to replace an entire trading system, but as a trend filter, it's a clear alternative to standard MAs. The TradingView implementation is solid, the learning curve is manageable, and once you understand the phase setting, it becomes a reliable workhorse.
 
-It loses a star because it's not a complete trading solution — it still struggles in chop, and the lack of built-in alerts is an unnecessary friction point. But for what it is — a high-quality adaptive moving average — it earns its place in my toolkit.
+It loses a star because it's not a complete trading solution — it still struggles in chop, and the lack of built-in alerts is an unnecessary friction point. But for what it is — a high-quality adaptive moving average — it earns its place on the chart.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Install it, play with the phase input, and use it as a confluence tool. You won't be disappointed.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Install it, work with the phase input, and use it as a confluence tool.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

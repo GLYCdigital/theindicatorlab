@@ -17,101 +17,95 @@ categories:
 rating: 4
 description: "Cycle_Counter_With_Phase_And_Next_Low_Projection review: settings, phase timing, next low projections, pros/cons, and best strategies for cycle traders."
 tv_script_url: "https://www.tradingview.com/script/Z2cwzfML-Cycle-Counter-with-Phase-and-Next-Low-Projection/"
+sources: ["https://www.tradingview.com/script/Z2cwzfML-Cycle-Counter-with-Phase-and-Next-Low-Projection/"]
 ---
-Let me be upfront: most cycle indicators on TradingView are repackaged moving averages with extra lines drawn on them. This one isn't. Cycle_Counter_With_Phase_And_Next_Low_Projection actually attempts to measure cyclical behavior in price and then — here's the kicker — projects where the next low *should* land. That's ambitious. After running it on several timeframes and markets, here's my honest take.
+Most cycle indicators on TradingView are repackaged moving averages with extra lines drawn on them. This one is different in kind. Cycle Counter measures position inside a low-to-low price cycle that the user anchors, and projects where the next low is expected to land. That is an ambitious scope, and it is worth being precise about what it does and does not claim.
 
 **What it actually does**
 
-The indicator identifies recurring swing lows based on a user-defined cycle length, then counts bars since the last confirmed low. It displays this as a phase counter — essentially telling you where you are in the current cycle. The "next low projection" part uses the average cycle length and recent low spacing to estimate a future date/price zone where the next significant bottom might form.
+The script measures from a single anchored cycle low and reports four things: how many candles have elapsed since that low, which phase of the cycle the count falls into (Early, Mid or Late), the projected date of the next cycle low, and how many periods remain until that date — or how many the cycle is overdue by.
 
-You can see this visually on the chart above. The vertical lines mark completed cycle lengths, and the shaded zones represent the projected window for the next low. It's not magic — it's statistical extrapolation — but it's presented cleanly enough to actually act on.
+It produces no entries, no exits and no buy or sell signals. It is a timing-context tool. The projection is arithmetic, not a probability estimate: it assumes the next cycle runs the same length as the configured or measured one, and real cycles stretch and compress.
 
 **Key features that stand out**
 
-- **Phase counter**: A numerical readout showing bars elapsed since the last cycle low. This alone is useful for context — you know if you're early, mid, or late cycle.
-- **Projection window**: Instead of a single point, it gives a range for the next low. That's honest. Markets don't respect exact dates, but a window is actionable.
-- **Cycle length adjustment**: You can tune it from 5 to 200 bars. I found the sweet spot between 20-50 on daily charts, but it adapts reasonably well.
-- **Clean visual layout**: Lines and zones don't clutter the chart. Unlike many cycle tools that look like abstract art, this one stays readable.
+- **The anchor is user-controlled.** Three methods are available in Cycle Start Method: Manual Date (type the exact date of the low), Click on Chart (click the low candle directly), and Auto Pivot Low (the script finds the most recent significant low using a symmetric pivot test with configurable strength). Manual Date and Click on Chart do not repaint — the anchor is a fixed timestamp and every value derived from it is stable across reloads.
+- **Snap to true lowest low.** After the anchor is placed, this option watches the first few candles from that point and re-anchors to the lowest wick inside that window. It exists because a clicked candle or typed date often lands one or two bars away from the true extreme, and without the correction every count and projection downstream inherits that error. The trade-off is that the effective start can sit a candle or two away from the date entered.
+- **Phase bucketing.** The elapsed count is classified against boundaries set separately for each basis. Phase drives the colour of the on-chart numbers, so the ageing of a cycle is legible at a glance without reading any figure.
+- **Projection with a window.** From the anchored low the script steps forward in whole cycle lengths until it passes the current bar, and marks that date. Around it, a shaded window spans that date plus and minus a percentage of the cycle length, converted into real calendar time.
+- **Monthly lock.** On by default, this computes the projection in calendar months from the Monthly cycle length regardless of which chart is being viewed, so the projected date and window width are identical on Daily, Weekly and Monthly.
 
-**Settings I actually tested**
+**Settings and How to Tune Them**
 
-I ran this on BTC/USD daily, EUR/USD 4H, and SPY weekly. Here's what worked:
+The settings group into functional blocks rather than a single tuning exercise.
 
-- **Cycle length: 34** — Fibonacci-based, but more importantly it matched the dominant swing rhythm in my test markets. Start here.
-- **Lookback: 100 bars** — Enough history for the projections to stabilize without being overly reactive to ancient data.
-- **Enable "dynamic cycle"**: If available, turn it on. It adjusts the cycle length based on recent volatility, which reduces the false signals you get in ranging vs trending conditions.
+- **Cycle Basis** — Auto follows the chart, or pin to Monthly, Weekly or Daily. On any timeframe other than those three, output is suppressed and a notice is shown instead, because a count expressed in cycle periods has no meaning on a 4-hour or 15-minute chart.
+- **Cycle Start** — the method, the click target, the manual date, and the pivot strength used by Auto Pivot Low.
+- **On-Chart Display** — Auto shows numbers on Monthly and a highlighted low candle on lower timeframes; Numbers or Low Marker can also be forced. Includes the highlight colour and a cap on how many recent bars carry numbers, which keeps long histories readable.
+- **Projection** — the Monthly lock, the next-low line master switch, the shaded window, full-height fill, border, centre line, label, the window tolerance as a percentage of cycle length, and colour.
+- **Accuracy** — snap to true lowest low, the snap search window, and whether to hide output on unsupported timeframes.
+- **Number Appearance** — plain text or label box, text size, and box text colour.
+- **Phase — Monthly / Weekly / Daily** — the Early and Mid boundaries for each basis.
+- **Cycle Length** — the auto-detect toggle and the manual length for each basis.
+- **Phase Colors** — Early, Mid and Late.
+- **Table** — show or hide, and corner position.
 
-Don't touch the smoothing settings unless you understand what they do. I set them too high once and the projections lagged by an embarrassing margin.
+The phase boundaries are inputs rather than fixed values because a multi-year cycle on one instrument and a multi-week cycle on another do not divide into thirds the same way. Likewise, the cycle length is a framework input: set it to whatever the framework expects, or switch on auto-detect and read the Detected row to see what the loaded history suggests.
 
 **How to actually use it**
 
-The phase counter is your timing tool. When it reads low (say, 5-10 bars into a 34-bar cycle), you're early. Don't chase entries. When it approaches the projected cycle low window, that's your alert zone.
+The documented workflow is deliberately ordered:
 
-Here's a practical strategy I tested:
+1. Open the Monthly chart of the instrument being tracked.
+2. Add the indicator. With Click on Chart selected, click the cycle low to measure from. Alternatively choose Manual Date and type the date.
+3. Check the Last low row in the table shows the intended date. If it has moved by a candle or two, that is the snap finding a lower wick nearby.
+4. Set the Monthly cycle length to whatever the framework expects, or switch on auto-detect and read the Detected row.
+5. Leave the Monthly lock enabled, then drop to Weekly or Daily. The count re-bases to weeks or days while the projected low date stays where it was.
 
-1. Wait for price to enter the projected low window.
-2. Confirm with price action — a bullish engulfing candle or a lower wick rejection.
-3. Enter long with a stop below the recent swing low.
-4. Target the midpoint of the cycle — roughly half the cycle length in bars — and trail from there.
-
-For exits, the projection isn't your friend. It only predicts lows, not highs. Use it for entries and let your profit-taking be based on structure or a separate trend indicator.
+Reading the output: a Late-phase count approaching the projected window is the cautious configuration, since the cycle is both old and near its expected turn. An Early-phase count well short of the window is the opposite. The Due row is described as the fastest read in the table — "in 3 mo" and "overdue 5 mo" are very different situations even at the same phase.
 
 **Pros and Cons**
 
 *Pros:*
-- The phase counter is genuinely useful for cycle awareness.
-- Projection windows are conservative enough to avoid most false expectations.
-- Works across timeframes — from scalping on 15-minute to swing trading on weekly.
+- The count and phase reading give cycle context that a plain bar counter does not.
+- The projection window is a range rather than a single point, and it is explicitly arithmetic rather than a probability claim.
+- The Monthly lock holds a single target date constant across timeframes, so dropping to a lower timeframe to study a setup does not move the target.
+- Manual anchoring is stable across reloads.
 
 *Cons:*
-- In strongly trending markets, the cycle logic breaks down. A 50-bar rally will delay projected lows and make you wait for a pullback that never comes.
-- No built-in alerts for the projection window — you'll need to set your own price alerts.
-- The indicator is descriptive, not predictive. It tells you where you *probably* are in a cycle, not where price *will* go next.
+- Auto Pivot Low repaints. A pivot is only confirmed once the configured number of candles have printed past it, and if a new qualifying low forms later the anchor jumps to it, shifting every count, phase and projection.
+- Auto-detected length is a plain average of pivot spacings across the loaded history. It is only as good as the pivot strength setting and how much history the chart has loaded, and on noisy series it will underestimate true cycle length.
+- The projection assumes the next cycle runs the same length as the configured or measured one.
+- Window fills full height extends the box far beyond the data and will compress the price scale unless Scale price chart only is enabled on the price axis.
+- On instruments with no persistent cyclicality, the outputs are arbitrary.
+
+**What is original here**
+
+Low-to-low cycle analysis is long-established public trading theory and the script makes no claim to have originated it. What is original is the implementation. The only built-in technical indicator used anywhere is ta.pivotlow, in two optional roles: locating an anchor under Auto Pivot Low, and estimating average cycle length when auto-detection is enabled. Anchor manually with a fixed length and the script calls no built-in indicator at all. The only other ta. function used is ta.change, which detects when the anchor input is edited so the count can reset.
+
+Everything else is written for this script: the snap-to-true-low correction window, the basis-aware counting that re-expresses the same cycle in months, weeks or days, the per-basis phase boundaries with their own colour mapping, the calendar-time projection that holds a single date constant across every timeframe, and the overdue countdown. There is no moving average, RSI, Bollinger Band, MACD, WaveTrend, stochastic or supertrend derivative in the script.
+
+The parts also form a single chain in which each stage consumes the output of the one before it. The anchor establishes an origin; the snap corrects that origin to the true extreme; the count measures elapsed time from it; phase interprets that count against the expected cycle length; the projection extends the same origin and length forward to a date; the table reports all of it together. Separating them into individual scripts would force the same anchor date to be kept synchronised by hand across several indicators, and any drift between them would corrupt every reading.
 
 **Who this is for**
 
-If you already trade with swing lows and understand that cycles are tendencies, not certainties, this tool will sharpen your timing. It's particularly good for:
-
-- Swing traders on daily/4H charts
-- Mean-reversion traders who buy pullbacks in uptrends
-- Traders who want a systematic way to know *when* to start watching for reversals
-
-If you're a breakout trader or trade purely on momentum, skip it. You'll see the projections as noise and the phase counter as irrelevant.
-
-**Alternatives worth considering**
-
-- **Cycle Master** — More advanced cycle decomposition, but heavier on the chart and harder to read.
-- **Fourier Extrapolator** — Better for determining if a cycle even exists, but not practical for entry timing.
-- **Phasor** — Similar concept, but with a steeper learning curve and less clean output.
-
-For most traders, this indicator hits the sweet spot between functionality and usability.
+Traders who already work with swing lows and treat cycles as tendencies rather than certainties will get the most from it. It is a context tool: it answers "where am I in this cycle" rather than "what should I do now". Traders looking for entries, exits or signals will not find them here.
 
 **FAQ**
 
-**Q: Can I use this for crypto?**
-Yes. It worked well on BTC and ETH daily charts. Just keep the cycle length a bit shorter — crypto cycles compress compared to traditional markets.
-
 **Q: Does it repaint?**
-The projection window can shift as new bars form, but the phase counter itself doesn't repaint. Treat the projections as dynamic, not fixed.
+It depends on the anchor method. Manual Date and Click on Chart do not repaint — the anchor is a fixed timestamp and every value derived from it is stable across reloads. Auto Pivot Low does repaint, because a pivot is only confirmed once the configured number of candles have printed past it, and a later qualifying low will move the anchor and shift every count, phase and projection.
 
-**Q: What's the best timeframe?**
-Daily for swing trades, 4H for shorter-term setups. Anything below 15 minutes gets noisy.
+**Q: What timeframes does it support?**
+Daily, Weekly and Monthly. On any other timeframe the output is suppressed and a notice is shown instead.
 
-**Final verdict: ⭐⭐⭐⭐ (4/5)**
+**Q: Does it generate buy or sell signals?**
+No. It produces no entries, no exits and no signals of any kind.
 
-This is one of the few cycle indicators that doesn't overpromise. The phase counter is a solid addition to any chart, the projection window is practical, and it's simple enough to actually use without a manual. It loses a star because it struggles in strong trends and lacks native alerts for its key feature.
+**Final verdict**
 
-If you trade pullbacks and want better timing, install it. It won't make you a cycle wizard overnight, but it'll give you a measurable edge on when to start paying attention. That's more than most indicators deliver.
+This is a narrowly scoped, honestly framed timing-context tool. The count-and-phase readout, the calendar-time projection held constant across timeframes, and the snap correction are coherent pieces of one chain rather than a mashup. The limitations are real and stated: repainting under Auto Pivot Low, an arithmetic projection that assumes cycle length repeats, an auto-detected length that is only a plain average, and arbitrary output on instruments without persistent cyclicality. It will not tell you what to do — only where you are.
 
-## Frequently Asked Questions
-
-### Is Cycle_Counter_With_Phase_And_Next_Low_Projection worth it?
-
-Based on testing across multiple timeframes, Cycle_Counter_With_Phase_And_Next_Low_Projection delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

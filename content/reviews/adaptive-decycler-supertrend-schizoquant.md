@@ -19,7 +19,7 @@ description: "Adaptive Decycler Supertrend review: how efficiency-adaptive cutof
 tv_script_url: "https://www.tradingview.com/script/vEWWRSv8-Adaptive-Decycler-Supertrend-SchizoQuant/"
 sources: ["https://www.tradingview.com/script/vEWWRSv8-Adaptive-Decycler-Supertrend-SchizoQuant/"]
 ---
-Most Supertrend variants share the same skeleton: an ATR band wrapped around a price average. This one swaps out both halves of that equation. **Adaptive Decycler Supertrend** builds its trailing structure from a residual RMS envelope around an efficiency-adaptive Decycler instead of an ATR band around a fixed baseline. It's a trend-regime indicator, and it's honest about being one.
+Most Supertrend variants share the same skeleton: an ATR band wrapped around a price average. This one swaps out both halves of that equation. **Adaptive Decycler Supertrend** builds its trailing structure from a residual RMS envelope around an efficiency-adaptive Decycler instead of an ATR band around a fixed baseline. It's a trend-regime indicator, and it's upfront about being one.
 
 ## What it actually does
 
@@ -35,17 +35,19 @@ Third, those RMS values get scaled by the Upper and Lower Multipliers to form en
 
 ## The part worth paying attention to
 
-The independent Upper and Lower Multipliers are the detail that separates this from a stock Supertrend. Because the two sides are configured separately, you can make bullish reversals more or less sensitive than bearish ones. That asymmetry isn't cosmetic — it's the whole point of splitting the multipliers rather than using one.
+The independent Upper and Lower Multipliers are the detail that separates this from a stock Supertrend. Because the two sides are configured separately, bullish and bearish reversal sensitivity can be set independently. That asymmetry isn't cosmetic — it's the whole point of splitting the multipliers rather than using one.
 
-The second thing worth understanding is that the baseline and the reversal distance adapt through *different* mechanisms. The Decycler responds to directional efficiency; the envelope responds to residual magnitude. They're not both keyed off the same volatility input. In practice that means a market can have a responsive baseline and a wide reversal band, or a smooth baseline and a tight one, depending on what efficiency and residual RMS are each doing.
+The second thing worth understanding is that the baseline and the reversal distance adapt through *different* mechanisms. The Decycler responds to directional efficiency; the envelope responds to residual magnitude. They're not both keyed off the same volatility input. That means a market can have a responsive baseline and a wide reversal band, or a smooth baseline and a tight one, depending on what efficiency and residual RMS are each doing.
 
-## How to approach it
+## Settings and How to Tune Them
 
 Treat the settings as two separate tuning problems, because that's how the script is built.
 
-The efficiency side — Minimum Cutoff, Maximum Cutoff, Efficiency Length — controls how quickly the baseline reacts. The residual side — Residual RMS Length, Upper Multiplier, Lower Multiplier — controls how far price has to travel to flip the regime. If you adjust one and expect the other to change, you'll be confused.
+The efficiency side — Minimum Cutoff, Maximum Cutoff, Efficiency Length — controls how quickly the baseline reacts. Minimum Cutoff and Maximum Cutoff define the response range available to the adaptive Decycler, and Efficiency Length sets the lookback used to judge how directional or inefficient recent movement has been.
 
-The visualization controls are separate for the Decycler, RMS envelope, LONG/SHORT markers, and candle coloring, and the optional envelope fill only shows when the envelope itself is visible. Start with the envelope and markers on, and add candle coloring if you want the regime state echoed on the bars.
+The residual side — Residual RMS Length, Upper Multiplier, Lower Multiplier — controls how far price has to travel to flip the regime. Residual RMS Length determines how much residual history feeds the displacement measurement, while the two multipliers set the distance of the upper and lower envelopes from the baseline. Adjust one side and expect the other to change, and you'll be confused.
+
+The visualization controls are separate for the Decycler, RMS envelope, LONG/SHORT markers, and candle coloring, and the optional envelope fill only displays when the envelope itself is visible. A reasonable starting point is the envelope and markers on, with candle coloring added if you want the regime state echoed on the bars.
 
 The most useful first step is simply watching how the trailing level behaves during a trend versus during a range. The persistence rule is what makes the indicator readable — the trail only moves in the direction of the active regime, so a rising lower band during an uptrend is information, not noise.
 
@@ -59,14 +61,14 @@ The most useful first step is simply watching how the trailing level behaves dur
 - Separate visualization toggles for every element.
 
 **Cons:**
-- More moving parts than a conventional Supertrend. Five inputs interact, and understanding which one to change requires understanding the two-stage design.
+- More moving parts than a conventional Supertrend. Multiple inputs interact, and understanding which one to change requires understanding the two-stage design.
 - Like any trailing method, it can react late on abrupt reversals — price has to cross the existing trail before the regime changes.
 - Directional efficiency is historical, so a shift in market structure changes the Decycler's effective cutoff in ways you can't predict from the settings alone.
 - Large recent deviations widen the envelope, which raises the bar for the next reversal.
 
 ## Who it's for
 
-Traders who already use a trailing trend tool and want to understand *why* it moves when it moves. If you're comfortable with the idea of a baseline that adapts to trend quality rather than a fixed period, this will feel like a natural upgrade. If you want a single-line indicator you set once and forget, the interaction between the five inputs will frustrate you.
+Traders who already use a trailing trend tool and want to understand *why* it moves when it moves. If you're comfortable with the idea of a baseline that adapts to trend quality rather than a fixed period, this will feel like a natural fit. If you want a single-line indicator you set once and forget, the interaction between the inputs will frustrate you.
 
 ## FAQ
 
@@ -74,7 +76,7 @@ Traders who already use a trailing trend tool and want to understand *why* it mo
 No. It borrows the persistent trailing *mechanism*, but the bands come from residual RMS around an adaptive Decycler, not from ATR around price. The documentation is explicit about that distinction.
 
 **Can I use it as a standalone system?**
-The author says no, and I'd agree. It's a trend-regime indicator. Markers identify internal regime changes, not trade signals with any guaranteed outcome.
+The author says no. It's a trend-regime indicator. Markers identify internal regime changes, not trade signals with any guaranteed outcome.
 
 **Why are my LONG and SHORT markers so far apart?**
 Most likely the envelope has widened. Residual RMS measures historical displacement, so a large recent deviation increases the distance price must travel to trigger a reversal.
@@ -84,11 +86,12 @@ The documentation states no higher-timeframe requests and no lookahead logic. Re
 
 ## Verdict
 
-This is a thoughtfully constructed indicator with a clear design philosophy and documentation that respects the reader. The residual RMS envelope and the independently scaled multipliers give it a real edge in configurability over a conventional Supertrend, and the persistent trail logic is sound.
+This is a thoughtfully constructed indicator with a clear design philosophy and documentation that respects the reader. The residual RMS envelope and the independently scaled multipliers give it real configurability over a conventional Supertrend, and the persistent trail logic is sound.
 
-It loses a star for complexity that isn't fully repaid — five interacting inputs is a lot of surface area for a trend-regime tool, and the late-reaction behaviour on abrupt reversals is inherent to the trailing approach. But if you want a trailing trend indicator whose baseline actually responds to market conditions rather than a number you picked six months ago, this earns its place on the chart.
+It loses a star for complexity that isn't fully repaid — several interacting inputs is a lot of surface area for a trend-regime tool, and the late-reaction behaviour on abrupt reversals is inherent to the trailing approach. But if you want a trailing trend indicator whose baseline responds to market conditions through a defined mechanism rather than a fixed period, this earns its place on the chart.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,84 +16,76 @@ categories:
 rating: 4
 description: "Smartfit_Trend_Channels review: tested settings, entry/exit logic, pros vs cons. See if this dynamic channel indicator fits your trend trading."
 tv_script_url: "https://www.tradingview.com/script/lLbTezjC-SmartFit-Trend-Channels-MarkitTick/"
+sources: ["https://www.tradingview.com/script/lLbTezjC-SmartFit-Trend-Channels-MarkitTick/"]
 ---
-I've spent the last two weeks hammering Smartfit_Trend_Channels across BTC, EURUSD, and a few S&P futures contracts. Here's the honest breakdown after watching it slice through ranging markets, catch clean trends, and occasionally whipsaw me in chop.
-
 **What it actually does**
 
-Smartfit_Trend_Channels is a dynamic support/resistance channel that adapts to price action in real time. Unlike static channels like Keltner or fixed Bollinger Bands, this thing recalculates its upper and lower boundaries based on recent swing structure and volatility. The visual output is clean: two lines that hug price, with a centerline that acts as a mean-reversion reference. The MACD screenshot above shows how the channel aligns with momentum shifts — when MACD crosses and the channel tilts, the trend is real.
+Get started is a linear regression channel that does not rely on a fixed, arbitrary lookback window. Instead, it continuously re-anchors itself at confirmed swing pivots, filters its regression source through a selectable adaptive smoothing stage, validates every channel against a statistical fit-quality test, and optionally gates its breakout signals behind a trend-strength filter.
+
+Where most regression-channel tools work from a single static bar count chosen by the user, redraw the entire channel on every bar, and offer no way to judge whether price is behaving linearly enough for a straight-line model to be meaningful, this script addresses all three limitations at once. It measures channel validity using the Pearson correlation coefficient rather than assuming a regression fit is automatically useful, restarts its lookback window dynamically at the most recent statistically valid swing pivot rather than a fixed period, and finalizes historical segments as discrete drawn objects instead of continuously repainting a single line across the whole chart.
 
 **What sets it apart**
 
-Most channel indicators suffer from lag. This one doesn't feel like it's drawing yesterday's lines. The adaptive nature means it tightens around price during low volatility and expands during explosive moves. That's genuinely useful — I've seen it hold trend lines during pullbacks that would have blown out a standard deviation channel. The color-coded trend state (bullish above centerline, bearish below) is a nice touch for quick visual scanning. It also repaints slightly on historical bars, which is the trade-off for its responsiveness.
+The components are not stacked arbitrarily; each solves a specific weakness left open by the others. The adaptive smoothing stage reduces the high-frequency noise that a raw-price regression is otherwise highly sensitive to. The pivot-anchoring logic solves the "where should this channel actually start" problem that fixed-length regression channels never address. The Pearson fit-quality filter prevents the tool from drawing a confident-looking straight line through what is statistically a sideways, non-linear market. The ADX filter exists specifically to reduce breakout signals firing inside genuinely trendless conditions. The merge engine exists to prevent the chart from filling with redundant, near-identical channel segments once the pivot-anchoring logic starts producing frequent restarts on lower timeframes.
 
-**Best settings I found**
+The regression core is an ordinary least-squares fit, chosen because it minimizes the sum of squared vertical distances between the line and each price point in the window. Layered on top is the Pearson product-moment correlation coefficient, applied to price-versus-time as an accept/reject gate for whether a channel is worth trusting. Deviation bands follow the same statistical foundation as Bollinger-style envelopes, except dispersion is measured as residual distance from a sloped regression line rather than from a flat moving average.
 
-I tested the defaults first and wasn't impressed — too reactive, too many false signals on the 15-minute. After messing with the inputs, here's what clicked:
+**Settings and How to Tune Them**
 
-- **Smoothing length**: 3 (default is 2, which is too jumpy)
-- **Channel width multiplier**: 2.5 (default 2.0 clips too many valid touches)
-- **Source**: Close (default) — don't bother with HL2, it adds noise
-- **Timeframe**: Works best on 1H and 4H. Lower timeframes turn into noise factories.
+The Core group controls the statistical backbone: automatic or manual pivot lookback length, whether nearby channels merge and how strict that merge tolerance is, the minimum Pearson fit strength and minimum bar count required for a channel to be considered valid, and the deviation z-score used to size the bands.
 
-The centerline is the real signal, not the outer bands. Treat it like a dynamic VWAP — price respecting it is the trend confirmation.
+The Filters group holds the optional ADX trend gate (toggle, threshold, and length) and the adaptive source filter selection along with its length. The adaptive source filter can be set to SMA, EMA, or RMA as baseline options with different responsiveness-to-noise tradeoffs; Double WMA for a cleaner underlying line at the cost of additional lag; Triple VWMA for instruments where volume-weighting the trend estimate is meaningful; HMA for closer price tracking; LLAMA, a proprietary MarkitTick method that blends a simple average baseline with a linear slope term; or a Kalman Filter, a recursive single-state estimator whose length controls how much weight goes to new information versus the existing estimate. Selecting "None" regresses directly on the previous confirmed close.
+
+The Visuals group controls channel line width and whether chart candles are recolored by the live channel bias. The Dashboard group sets which corner the statistics table is drawn in. The Alerts group defines the text sent in the "action" field of each of the four webhook JSON payloads. The Colors group governs the bullish, bearish, and weak-fit channel colors, the dashboard gauge accent colors, and the dashboard's background, header, text, and warning colors.
+
+The documentation frames the smoother-versus-more-responsive choice as a tradeoff: smoother options produce fewer but later channel restarts, while more responsive ones track price more closely at the cost of more frequent re-anchoring. Enabling channel merging is suggested for lower timeframes or choppier symbols to keep the chart readable; disabling it shows every discrete regression segment.
 
 **How to actually trade it**
 
-The entry logic that made sense after testing: wait for a close above the centerline with the channel tilted upward. Enter on the first pullback to the upper band's midpoint — not the band itself. Set your stop just below the centerline; the trailing nature of the channel means you're not risking huge distances. For exits, I used the opposite band as a target and then let the centerline act as a trailing stop on partial positions.
+Read channel color and the dashboard's Bias row together. A green, high-fit-percentage channel reflects a statistically supported uptrend in the regression sense; red reflects the equivalent downtrend condition. Gray, low-fit-percentage channels mark periods where price is not moving in a way a straight line meaningfully describes, and signals generated during those conditions should be weighted accordingly.
 
-Here's the catch: this indicator is not a standalone system. It needs confluence. When I filtered signals with a momentum oscillator or volume profile, win rate jumped from 41% to 58% in my backtests. The channel alone gives you structure, not certainty.
+A directional signal — visible as a Breakout or Breakdown state on the dashboard and paired with an alert firing — indicates confirmed price has closed beyond the channel's statistical deviation band with sufficient trend history and fit quality behind it. This is a signal generator, not a backtested strategy, so no historical win-rate or equity curve is produced by the script itself.
+
+A directional signal fires only on a confirmed bar, only when the minimum bar count and fit-quality thresholds are met, and only once per new breakout — not on every bar price remains beyond the band.
 
 **Pros & Cons**
 
 **Pros:**
-- Adapts to volatility better than any static channel I've used
-- Clean visual output that doesn't clutter the chart
-- The centerline is a legitimate dynamic support/resistance level
-- Works across asset classes — equity indices and crypto both handled well
+- Measures channel validity statistically via Pearson correlation rather than assuming a regression fit is useful
+- Re-anchors the lookback window at confirmed swing pivots instead of a fixed period
+- Finalizes historical segments as discrete drawn objects rather than repainting one line across the whole chart
+- Optional ADX gate suppresses breakouts in trendless conditions
+- Webhook-ready JSON payloads with configurable action labels
 
 **Cons:**
-- Repainting on historical bars makes backtesting unreliable
-- Useless in tight ranges — it generates constant false breakouts
-- No built-in alerts for band touches (major oversight for a tool like this)
-- The default settings are poorly tuned for anything below 1H
+- Segment anchors are finalized only once a breakout confirms them, so a newly drawn historical segment's starting point is placed at a bar in the past, after the fact
+- A channel that fails the fit test is still drawn, merely flagged as low-confidence — it must be interpreted, not ignored automatically
 
 **Who it's for**
 
-If you're a swing trader working 1H to 4H charts and you already understand trend structure, this is worth your time. It's also solid for position traders on daily charts who want a visual framework for where to scale in. Trend-following systems that already use EMA or MACD will benefit from the additional context.
-
-If you're a scalper on the 5-minute or a range-bound mean reversion trader, skip this. You'll fight the indicator more than trade with it.
+Traders who want a regression channel whose start point is chosen on a principled basis rather than a fixed bar count, and who are willing to read fit quality alongside direction. The optional ADX filter is described as most useful on instruments or timeframes prone to frequent whipsaw.
 
 **Alternatives worth considering**
 
-- **Keltner Channels**: Better for pure mean reversion, less adaptive, but no repainting
-- **Supertrend**: Simpler, fewer inputs, but gives you a single line instead of a full channel
-- **VWAP + Std Dev Bands**: More institutional, better for intraday, but not as visually intuitive
+- **Static regression channels**: simpler, but redraw across the whole chart and offer no fit-quality judgment
+- **Bollinger-style envelopes**: similar statistical foundation, but dispersion is measured from a flat moving average rather than a sloped regression line
+- **Supertrend**: simpler, but a single line rather than a full channel
 
-**FAQ from traders who tested it**
+**FAQ**
 
 **Does it repaint?**
-Yes, on historical bars. The current bar's channel position changes as price develops. It's not a dealbreaker, but don't trust backtest results from this indicator without verifying on forward data.
+Segment anchors are only finalized once a breakout confirms them, so a newly drawn historical segment's starting point is placed at a bar in the past, after the fact. This is standard behavior for any pivot-anchored channel tool and does not involve unconfirmed or future data, but the visual origin of a finalized segment was not known in real time at that bar; it becomes fixed only once the breakout that closes out the prior segment occurs. The regression calculation itself always runs on confirmed, closed price data, never on the live forming bar.
 
 **Can I use it with TradingView alerts?**
-Not built-in for band touches. You'll need to set alerts manually on the centerline or channel lines using the price levels they currently show.
+Yes. Confirmed breakouts trigger directional alerts, including ready-to-route webhook JSON payloads. To receive them, create an alert on the script using the "Any alert() function call" option, or select one of the four named alert conditions individually if only a subset of signals is needed.
 
-**What's the best chart type?**
-The MACD screenshot above shows it working well, but honestly it performs best on standard candlestick charts with the channel overlaid. The MACD alignment is useful for confirmation, not for the channel itself.
+**What does the dashboard show?**
+The ticker and timeframe, current bias, a bar-style fit-quality gauge, the standard deviation value, the current upper and lower band prices, the number of bars in the active channel, the pivot length in use, the current breakout/breakdown state, and — only when the relevant filters are enabled — the live ADX reading and the selected adaptive filter type.
 
 **Final verdict**
 
-⭐⭐⭐⭐ (4/5) — Smartfit_Trend_Channels earned a solid four stars. It's not a set-and-forget holy grail, but it's a genuinely well-constructed adaptive channel that gives you a real edge when combined with basic momentum confirmation. The repainting and lack of alerts keep it from five stars. If you're building a trend-following toolkit and don't mind doing the extra work on confluence, this deserves a spot in your watchlist. Just fix the settings before you trade it live — the defaults will frustrate you.
+Get started is a coherent, statistically-aware channel system rather than a bundle of unrelated features. Its distinguishing choices — Pearson fit scoring, pivot-based re-anchoring, and finalized historical segments — address real limitations in fixed-length regression channels. It is a signal generator, not a backtested strategy, and the post-hoc anchor placement of finalized segments is a structural property worth understanding before relying on it.
 
-## Frequently Asked Questions
-
-### Is Smartfit_Trend_Channels worth it?
-
-Based on testing across multiple timeframes, Smartfit_Trend_Channels delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

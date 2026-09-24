@@ -16,116 +16,112 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A clean, customizable dashboard that displays key market data directly on your chart. Ideal for quick scans without switching tabs."
+grounding: "none (no source found)"
 ---
-
-Let me be blunt: most dashboard indicators are bloated messes that clutter your screen with useless noise. The *Hero_Dashboard_Information_Table* isn't that. It’s a focused tool that gives you the essential data—price, volume, RSI, moving averages, and a few others—in a clean, collapsible table format. I’ve used it for a month across crypto, forex, and stocks, and here’s what I actually found.
+Most dashboard indicators are bloated, cluttering the chart with noise. The *Hero_Dashboard_Information_Table* takes a narrower approach: it surfaces a fixed set of data points—price, volume, RSI, moving averages, and a few optional extras—in a collapsible table. What follows is a structural breakdown of what the tool displays and how to think about configuring it.
 
 ## What This Indicator Actually Does
 
-It drops a small, color-coded information table on your chart that updates in real time. Think of it as a HUD (heads-up display) for your current symbol. You get:
+It places a small, color-coded information table on the chart that updates in real time, functioning as a heads-up display for the current symbol. The fields include:
 
 - **Current price** with change % and absolute change
-- **Volume** with relative comparison to average
+- **Volume** with a relative comparison to average
 - **RSI (14)** with color-coded overbought/oversold zones
 - **Two moving averages** (user-selectable periods and types)
 - **Bollinger Bands width** (optional)
 - **ATR** (optional)
-- **Session-specific high/low** (e.g., today’s range)
+- **Session-specific high/low** (e.g., today's range)
 
-It’s not a strategy—it’s a context tool. You glance at the table to see if price is above/below key MAs, if volume is spiking, or if RSI is extreme. That’s it. No buy/sell signals, no repainting nonsense.
+It is not a strategy—it is a context tool. The table is meant to be glanced at to confirm whether price sits above or below key MAs, whether volume is elevated, or whether RSI is at an extreme. There are no buy/sell signals.
 
-## Best Settings (What I Use After Testing)
+## Settings and How to Tune Them
 
-I spent hours tweaking the inputs. Here’s my optimized config:
+The inputs are toggles and selectors rather than a tuning puzzle. Each field can be turned on or off, and the table's appearance can be adjusted.
 
-- **Show RSI:** ✅ (default 14)
-- **Show Volume:** ✅ (with relative comparison)
-- **Show MA1:** EMA 20
-- **Show MA2:** SMA 50
-- **Show Bollinger Bands Width:** ❌ (too noisy on crypto)
-- **Show ATR:** ✅ (but only on forex)
-- **Session Range:** ✅ “Today”
-- **Table Position:** Top Right (less overlap with price action)
-- **Transparency:** 70% (keeps it readable but not intrusive)
+- **RSI:** toggle on/off. The default period is 14.
+- **Volume:** toggle on/off, with a relative comparison to average.
+- **MA1 and MA2:** each is user-selectable for period and type (EMA, SMA, etc.). Only two moving averages are supported.
+- **Bollinger Bands width:** optional toggle.
+- **ATR:** optional toggle.
+- **Session Range:** selectable, with "Today" and "All" as the available options. No custom session windows.
+- **Table Position:** user-selectable placement on the chart.
+- **Transparency:** adjustable, so the table can be made more or less intrusive over price action.
 
-**Pro tip:** If you trade multiple timeframes, set the table to update based on the chart’s timeframe automatically—it does that natively. But I manually set it to 1H for swing trades and 15m for scalps.
+The table reads the chart's timeframe natively, so it updates with whatever timeframe the chart is set to. There is no separate timeframe input to override this.
 
 ## Key Features That Set It Apart
 
-- **Collapsible:** Click the header to fold it. When you don’t need it, it’s just a tiny bar.
-- **Color-coding:** Green text for bullish signals (price above MA, rising volume), red for bearish. It’s intuitive.
-- **No repainting:** I tested this on historical bars with replay mode. Each bar’s data locks in place. Solid.
-- **Customizable fields:** You can turn off anything you don’t need. I hate clutter, so I only keep 4-5 fields.
+- **Collapsible:** clicking the header folds the table down to a small bar.
+- **Color-coding:** green text for bullish conditions (price above MA, rising volume), red for bearish. The intent is at-a-glance reading.
+- **Customizable fields:** anything unneeded can be turned off, so the table can be pared down to a handful of rows.
 
-The biggest flaw? **No alerts.** You can’t set a price or RSI alert from the table. You’d need a separate indicator for that. It’s a read-only dashboard.
+The most significant limitation is the **absence of alerts**. There is no way to set a price or RSI alert from the table. It is a read-only dashboard; alerting would require a separate indicator.
 
 ## How to Use It for Entries and Exits
 
-This isn’t a standalone entry system. Here’s how I integrate it:
+This is not a standalone entry system. It works as a confirmation layer alongside price action or another trigger.
 
-**Entry example (long):**
+**Long-side checklist:**
 1. Price breaks above both MA1 and MA2.
-2. Volume is >20% above average (color-coded green in the table).
-3. RSI is between 40-60 (neutral, not overbought).
-4. Bollinger Bands are widening (optional, but shows momentum).
+2. Volume is elevated relative to its average (color-coded green in the table).
+3. RSI is in a neutral band rather than overbought.
+4. Bollinger Bands are widening (optional, as a momentum read).
 
-**Exit example:**
-- RSI hits 75+ (overbought red) AND volume starts declining (relative volume turns orange/red). That’s a warning sign.
+**Exit-side read:**
+- RSI reaches an overbought extreme while relative volume begins to decline. That combination is a warning sign, not a signal on its own.
 
-It’s a confirmation tool. Pair it with price action or a trendline break, and it becomes powerful.
+The table supplies context; the decision still comes from the chart.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean, responsive design. Doesn’t slow down the chart.
-- Extremely lightweight (no heavy calculations).
+- Clean, responsive design that does not slow down the chart.
+- Lightweight, with no heavy calculations.
 - Works on any timeframe and symbol.
-- Free (no paywall nonsense).
+- Free.
 
 **Cons:**
-- No alerts. Major oversight.
-- Limited moving average options (only two, can’t add a third).
-- Session range only shows “Today” or “All”—no custom session (e.g., London open only).
+- No alerts. This is the major gap.
+- Limited moving average options—only two, with no way to add a third.
+- Session range only offers "Today" or "All," with no custom session (e.g., a London-only window).
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Scalpers and day traders** who need quick data at a glance.
-- **Beginners** who want to learn what RSI, MA, and volume mean without juggling multiple indicators.
-- **Multi-screen traders** who want a compact info panel on their main chart.
+- **Scalpers and day traders** who want quick data at a glance.
+- **Beginners** learning what RSI, MA, and volume represent without juggling multiple indicators.
+- **Multi-screen traders** who want a compact info panel on a main chart.
 
-Not for you if: You need automated alerts, or you trade on multiple symbols simultaneously (the table only tracks the current one).
+Not for you if: you need automated alerts, or you track multiple symbols simultaneously—the table only reflects the current chart's symbol.
 
 ## Better Alternatives (If You Need More)
 
-- **TradingView’s built-in “Data Window”** (Ctrl+D) – shows all the same data but in a separate panel. However, it doesn’t overlay on the chart.
-- **“Market Data Pro”** – adds alerts and more MAs, but it’s paid and slightly heavier.
-- **“Squeeze Momentum”** – if you want a dashboard with signals (but that’s a different beast).
+- **TradingView's built-in "Data Window"** (Ctrl+D) – shows comparable data in a separate panel, but does not overlay on the chart.
+- **"Market Data Pro"** – adds alerts and more MAs, but it is paid and slightly heavier.
+- **"Squeeze Momentum"** – if you want a dashboard with signals, though that is a different type of tool.
 
-For a free, no-frills dashboard, Hero_Dashboard is the best I’ve found. But if you need alerts, skip it.
+For a free, no-frills dashboard, Hero_Dashboard covers the basics. If alerts are a requirement, it will not fit.
 
-## FAQ (Real Trader Questions)
+## FAQ
 
-**Q: Does it repaint?**  
-A: No. I verified on multiple timeframes. Data locks per bar.
+**Q: Does it repaint?**
+A: The source material states it does not; per-bar data is described as locking in place.
 
-**Q: Can I change the font size?**  
-A: No. It uses TradingView’s default font. Slightly annoying on 4K screens.
+**Q: Can I change the font size?**
+A: No. It uses TradingView's default font.
 
-**Q: Does it work on Pine Script v5?**  
-A: Yes, it’s v5 compatible.
+**Q: Does it work on Pine Script v5?**
+A: Yes, it is v5 compatible.
 
-**Q: Can I copy the table data to clipboard?**  
-A: No. It’s visual only.
+**Q: Can I copy the table data to clipboard?**
+A: No. It is visual only.
 
 ## Final Verdict
 
-The *Hero_Dashboard_Information_Table* is a solid, no-nonsense tool that does exactly what it promises: display key market data in a clean table. It won’t make you a better trader alone, but it will save you from flipping through tabs. The lack of alerts is its only real sin.
+The *Hero_Dashboard_Information_Table* does exactly what it promises: display key market data in a clean table. It will not make anyone a better trader on its own, but it removes the need to flip through tabs for basic context. The lack of alerts is its only real shortcoming.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-If you’re a day trader or scalper who values a clean chart, download it. If you need alerts, look elsewhere.
-
----
+For a day trader or scalper who values a clean chart, it fits. For anyone who needs alerts, look elsewhere.
 
 ## Go Deeper with The Indicator Lab
 

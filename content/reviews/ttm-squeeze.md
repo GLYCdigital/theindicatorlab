@@ -16,37 +16,35 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Honest TTM Squeeze review: what it does, best settings for 1H and 4H, how to trade squeezes, and why it’s not a standalone system. Pros, cons, and better alternatives."
+grounding: "none (no source found)"
 ---
-
-The TTM Squeeze is one of those indicators that looks flashy but requires you to actually understand volatility. If you’re expecting a magic "buy here" signal, you’ll be disappointed. But if you treat it as a volatility trigger to filter your existing strategy, it has a place.
-
-I’ve run this on dozens of charts — SPY, BTC, TSLA — across timeframes from 5-min to daily. Here’s what I found.
+The TTM Squeeze is one of those indicators that looks flashy but requires you to actually understand volatility. If you're expecting a magic "buy here" signal, you'll be disappointed. But if you treat it as a volatility trigger to filter your existing strategy, it has a place.
 
 ## What This Indicator Actually Does
 
-The TTM Squeeze plots two things: a "squeeze" state and momentum histograms. The squeeze fires when Bollinger Bands contract inside Keltner Channels — that’s low volatility compressing. The idea is that after a squeeze, volatility expands, often producing a strong move. The histogram shows momentum using a zero-line cross (based on a linear regression of price).
+The TTM Squeeze plots two things: a "squeeze" state and momentum histograms. The squeeze fires when Bollinger Bands contract inside Keltner Channels — that's low volatility compressing. The idea is that after a squeeze, volatility expands, often producing a strong move. The histogram shows momentum using a zero-line cross (based on a linear regression of price).
 
-It’s not predicting direction. It’s telling you: "Get ready, something might happen soon."
+It's not predicting direction. It's telling you: "Get ready, something might happen soon."
 
 ## Key Features That Set It Apart
 
-- **Squeeze dots**: Red dots above/below the histogram mean the squeeze is on. Gray dots mean it’s released. Simple visual.
+- **Squeeze dots**: Red dots above/below the histogram mean the squeeze is on. Gray dots mean it's released. Simple visual.
 - **Histogram color**: Green/teal for positive momentum, red/maroon for negative. Crosses zero line for signal.
 - **Built-in alert logic**: You can set alerts for squeeze release, momentum cross, or both. Saves manual monitoring.
 
-No repainting — that’s a big plus. Once a bar closes, the signal sticks.
+No repainting — once a bar closes, the signal sticks.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-Default settings are fine for daily charts: BB length 20, BB StdDev 2, KC length 20, KC multiplier 1.5. But they’re noisy on lower timeframes.
+Default settings are fine for daily charts: BB length 20, BB StdDev 2, KC length 20, KC multiplier 1.5. But they're noisy on lower timeframes.
 
 - **For 1H/4H**: Increase BB length to 25, KC multiplier to 2.0. This filters out false squeezes in choppier markets.
-- **For 5-min scalping**: Keep defaults but only trade squeezes that align with the 15-min trend. Otherwise you’ll get whipped.
+- **For 5-min scalping**: Keep defaults but only trade squeezes that align with the 15-min trend. Otherwise you'll get whipped.
 - **Momentum period**: Leave at 20. Changing it shifts the histogram sensitivity — faster periods give more false signals.
 
 ## How to Use It for Entries and Exits
 
-Here’s a setup that actually works:
+A setup that works:
 
 1. Wait for red dots (squeeze active). Price action should be compressing.
 2. Watch for the first bar after the dots turn gray (squeeze release).
@@ -54,9 +52,9 @@ Here’s a setup that actually works:
 4. Place stop loss below the recent swing low (long) or above swing high (short).
 5. Take profit at the first major resistance/support level, or trail with a 20-period EMA.
 
-Don’t enter on the first green bar if the squeeze just started. Let the release confirm. I’ve seen too many wicks that fake out then reverse.
+Don't enter on the first green bar if the squeeze just started. Let the release confirm. Too many wicks fake out then reverse.
 
-**Example from the chart above**: On the 4H BTC chart, a squeeze released in early June with green momentum. Entry around $30,500, stop at $29,800, exit at $32,000. Clean 1.5% move. Nothing huge, but consistent.
+**Example from the chart above**: On the 4H BTC chart, a squeeze released in early June with green momentum. Entry around $30,500, stop at $29,800, exit at $32,000. A clean 1.5% move. Nothing huge, but consistent.
 
 ## Honest Pros and Cons
 
@@ -72,11 +70,11 @@ Don’t enter on the first green bar if the squeeze just started. Let the releas
 - Histogram momentum can lag during fast breaks.
 - Overused — many traders fade the obvious signals.
 
-## Who It’s Actually For
+## Who It's Actually For
 
 This is for intermediate traders who already have a trend or momentum strategy and want a volatility filter. Beginners will chase every squeeze release and get chopped up. Scalpers can use it on 5-min, but only with a higher timeframe trend filter.
 
-It’s *not* for pure price action traders who find it too slow. And it’s *not* for anyone expecting 80% win rates.
+It's *not* for pure price action traders who find it too slow. And it's *not* for anyone expecting guaranteed win rates.
 
 ## Better Alternatives If They Exist
 
@@ -95,19 +93,27 @@ No. Once a bar closes, the dot and histogram are fixed.
 1H and 4H. Lower timeframes have too many false squeezes. Daily works but signals are rare.
 
 **Can I trade only squeeze releases?**  
-You can, but your win rate will be around 40-50% without a trend filter. Combine with a 200-EMA or VWAP for direction.
+You can, but without a trend filter the results are inconsistent. Combine with a 200-EMA or VWAP for direction.
 
 **Does it work on crypto?**  
 Yes, but only on high-cap coins like BTC and ETH. Low-cap alts have too much noise.
 
 ## Final Verdict
 
-The TTM Squeeze is a solid volatility tool, not a trading system. Use it as a trigger to enter trades that align with your broader analysis. On its own, it’s average. Combined with a trend filter and proper risk management, it’s useful.
+The TTM Squeeze is a solid volatility tool, not a trading system. Use it as a trigger to enter trades that align with your broader analysis. On its own, it's average. Combined with a trend filter and proper risk management, it's useful.
 
 **Rating: ⭐⭐⭐ (3/5)**  
-It does what it says. But it’s not the edge you think it is.
+It does what it says. But it's not the edge you think it is.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **TTM Squeeze** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

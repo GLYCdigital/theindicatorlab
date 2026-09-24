@@ -16,92 +16,92 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Harami_Pattern review. Tests settings, entry/exit rules, and compares it to other candlestick pattern tools. 4/5 stars."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Harami_Pattern is a dedicated candlestick pattern detector for the classic Harami (and inverted Harami) formation. No fluff, no extra signals — it simply paints arrows on your chart when a bullish or bearish Harami completes. Unlike many all-in-one pattern scanners that bury this setup in noise, this indicator keeps it clean: one signal type, two directions, and configurable confirmation filters.
+Harami_Pattern is a dedicated candlestick pattern detector for the classic Harami (and inverted Harami) formation. It paints arrows on the chart when a bullish or bearish Harami completes. Rather than bundling this setup into a multi-pattern scanner, it keeps scope narrow: one signal type, two directions, and configurable confirmation filters.
 
-As the chart above shows, the indicator marks each Harami with a green (bullish) or red (bearish) arrow. It doesn't repaint after the candle closes, which is a huge plus for backtesting and live trading.
+The indicator marks each Harami with a green (bullish) or red (bearish) arrow. According to the source material, it does not repaint after the candle closes — a relevant property for anyone evaluating it for backtesting or live use.
 
 ## Key Features That Set It Apart
 
-- **Focused scope**: Only Harami patterns. If you hate wading through dozens of false signals from other patterns, this is refreshing.
-- **Custom confirmation**: You can require the next candle to close in the signal direction before the arrow appears. This kills many fakeouts.
-- **Optional volume filter**: A toggle to only show patterns when volume is above a moving average — useful for avoiding low-liquidity noise.
-- **Alert builder**: Built-in alerts for new pattern detection. You can set SMS/email/push notifications easily.
+- **Focused scope**: Only Harami patterns. No mixing with Doji, Engulfing, or other formations.
+- **Custom confirmation**: An option to require the next candle to close in the signal direction before the arrow appears.
+- **Optional volume filter**: A toggle to display patterns only when volume is above a moving average.
+- **Alert builder**: Built-in alerts for new pattern detection, with SMS/email/push notification support.
 
-## Best Settings (Tested on BTCUSD 1H and EURUSD 4H)
+## Settings and How to Tune Them
 
-After running it on 300+ trades across different markets:
+The source material describes the following parameters conceptually. Specific values are not established here; treat any number below as an example from the source, not a recommendation.
 
-- **Confirmation candle**: ON. Without it, you'll get too many false Haramis that reverse immediately.
-- **Volume filter**: ON for intraday (1H-4H). OFF for daily+ or low-volatility pairs.
-- **Pattern lookback**: Keep at default (2 candles). Harami is a two-candle pattern — extending it breaks the definition.
-- **Arrow offset**: Set to 5-10 pips above/below the high/low to avoid clutter.
+- **Confirmation candle**: A toggle. When enabled, the arrow only appears after the following candle closes in the signal direction. This is a tradeoff between signal latency and filtering out immediate reversals.
+- **Volume filter**: A toggle. The source suggests it is more relevant on intraday timeframes and less useful on daily or low-volatility instruments, and notes it may be less meaningful on indices where volume data is unreliable.
+- **Pattern lookback**: Harami is defined as a two-candle pattern, so extending the lookback departs from the classical definition. The source describes the default as two candles.
+- **Arrow offset**: A visual setting to shift arrows away from the candle high/low to reduce chart clutter.
+
+No parameter values here are presented as optimal. Which settings suit you depends on your instrument, timeframe, and existing workflow.
 
 ## How to Use It for Entries and Exits
 
-**Bullish Harami entry**: Wait for the confirmation candle to close above the bearish candle's open. Enter long on the next candle open. Place stop loss below the lowest low of the two Harami candles. Target the previous swing high or 1.5x risk.
+**Bullish Harami entry**: Wait for the confirmation candle to close above the bearish candle's open. Enter long on the next candle open. Place stop loss below the lowest low of the two Harami candles. Target the previous swing high or a multiple of risk.
 
 **Bearish Harami entry**: Confirmation candle must close below the bullish candle's open. Short on next candle open. Stop above the Harami's highest high. Target the prior swing low.
 
-**Pro tip**: Don't take every signal. Filter by trend — only take bullish Haramis in an uptrend (price above 200 EMA) and bearish Haramis in a downtrend. This doubled my win rate from 42% to 68% in testing.
+**Trend context**: The source advises against taking every signal and suggests filtering by trend — bullish Haramis in an uptrend, bearish Haramis in a downtrend, using a moving average as a trend reference. The indicator itself has no built-in trend filter, so this has to come from your own setup.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Zero lag. Signals on the close of the confirmation candle.
-- Clean visual — no spaghetti lines or confusing histograms.
-- Works across all asset classes: crypto, forex, stocks, futures.
-- Backtesting is easy because it doesn't repaint.
+- Signals on the close of the confirmation candle rather than intrabar.
+- Clean visual output — no lines or histograms layered on the chart.
+- Described as applicable across asset classes: crypto, forex, stocks, futures.
+- Non-repainting behavior makes it usable in a strategy tester.
 
 **Cons:**
-- Only Harami. If you want Doji, Engulfing, or Morning Star, you need another tool.
-- In ranging markets, false signals pile up even with confirmation turned on.
-- No built-in trend filter — you have to add your own EMA or ADX.
+- Only Harami. Other patterns require a separate tool.
+- In ranging markets, false signals accumulate even with confirmation enabled.
+- No built-in trend filter — you have to add your own moving average or ADX.
 
 ## Who It's Actually For
 
-- **Candlestick pattern traders** who want a laser-focused Harami scanner.
-- **Swing traders** using 4H+ charts. Scalpers will find too few signals.
-- **Backtesters** who need a reliable, non-repainting pattern detector.
+- **Candlestick pattern traders** who want a single-pattern Harami scanner.
+- **Swing traders** on higher timeframes. Scalpers will find too few signals.
+- **Backtesters** who need a pattern detector that does not repaint.
 
-Not for: beginners who want a "make money button" or traders who prefer automated trading systems.
+Not for: traders looking for a fully automated system, or those who want a broad multi-pattern scanner.
 
 ## Better Alternatives
 
-- **ZigZag Harami Pro** (paid): Adds trendline breaks and Fibonacci targets to the same pattern. More features but costs $45/month.
-- **Candlestick Pattern Pro** (free on TV): Detects 50+ patterns including Harami. But it's slower and repaints on some patterns.
-- **Manual spotting**: Honestly, Harami is easy to spot by eye. This indicator just saves you scanning time.
+- **ZigZag Harami Pro** (paid): Adds trendline breaks and Fibonacci targets to the same pattern. The source lists it at $45/month.
+- **Candlestick Pattern Pro** (free on TV): Detects 50+ patterns including Harami, but the source describes it as slower and repainting on some patterns.
+- **Manual spotting**: Harami is visually straightforward; an indicator mainly saves scanning time.
 
 ## FAQ
 
-**Q: Does it work on crypto?**  
-A: Yes. Tested on BTCUSD and ETHUSD — signals were cleaner on 4H+ timeframes.
+**Q: Does it work on crypto?**
+A: The source states it has been used on BTCUSD and ETHUSD, with cleaner signals reported on higher timeframes.
 
-**Q: Can I use it for scalping?**  
-A: Not recommended. Harami is a reversal pattern that needs a few candles to confirm. Scalping 1-minute charts gives too many false signals.
+**Q: Can I use it for scalping?**
+A: The source does not recommend it. Harami is a reversal pattern that needs following candles to confirm.
 
-**Q: Does it alert on mobile?**  
-A: Yes. Set an alert for "Harami_Bullish" or "Harami_Bearish" and you'll get a push notification.
+**Q: Does it alert on mobile?**
+A: Yes. Set an alert for "Harami_Bullish" or "Harami_Bearish" and the source states you will receive a push notification.
 
-**Q: Is it better than the built-in TV pattern detector?**  
-A: For Harami specifically, yes. TV's pattern tool lags and sometimes misses the pattern entirely. This one catches every valid setup.
+**Q: Is it better than the built-in TV pattern detector?**
+A: The source claims it is, for Harami specifically, asserting that TV's pattern tool lags and sometimes misses the pattern. This is the source's claim, not an independently verified one.
 
-**Q: Does it work in backtesting?**  
-A: Yes, because it doesn't repaint. You can trust the signals in your strategy tester.
+**Q: Does it work in backtesting?**
+A: Per the source, yes, because it does not repaint.
 
-**Q: Will it work on indices like SPX or NDX?**  
-A: Yes, but volume filter may be less useful since indices don't have reliable volume data.
+**Q: Will it work on indices like SPX or NDX?**
+A: The source says yes, but notes the volume filter may be less useful since indices don't have reliable volume data.
 
 ## Final Verdict
 
-Harami_Pattern is a solid, no-nonsense indicator for traders who specifically hunt this reversal setup. It won't make you a millionaire, but it will save you hours of scanning and cut down false signals with its confirmation filter. If you already have a trend filter in your workflow, this is a 4-star addition. If you need a Swiss Army knife pattern scanner, look elsewhere.
+Harami_Pattern is a narrow, single-purpose indicator for traders who specifically hunt this reversal setup. It won't replace a broader pattern scanner, and it won't substitute for a trend filter you supply yourself. If your workflow already includes trend context, it can serve as a focused signal layer. If you need a Swiss Army knife pattern scanner, look elsewhere.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Does exactly what it promises, does it well, but limited in scope.
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)** — Does exactly what it promises, but limited in scope.
 
 ## Go Deeper with The Indicator Lab
 

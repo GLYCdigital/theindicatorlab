@@ -17,88 +17,104 @@ categories:
 rating: 4
 description: "Htf_3_Candle_System review: how the higher-timeframe 3-candle trend confirmation works, best settings, entry rules, pros, cons and who it suits."
 tv_script_url: "https://www.tradingview.com/script/rHOFeLwn-HTF-3-Candle-System-Zeiierman/"
+sources: ["https://www.tradingview.com/script/rHOFeLwn-HTF-3-Candle-System-Zeiierman/"]
 ---
-Most "3 candle" indicators are repackaged candlestick patterns that fire on every doji and call it a signal. Htf_3_Candle_System is not that. It's a higher-timeframe trend filter that reads three consecutive candles on an HTF series and projects that bias onto your current chart. You get a colored trend state, an entry marker when the bias flips, and a band that acts as a trailing reference. Simple premise, and that's the point.
+Most "3 candle" indicators are repackaged candlestick patterns that fire on every doji and call it a signal. The HTF 3-Candle System (Zeiierman) is not that. It is a higher-timeframe market structure indicator that evaluates the relationship between three consecutive HTF candles and identifies which price pattern currently best describes the developing structure. Instead of hunting for one fixed candlestick formation, it scores multiple bullish and bearish three-candle structures simultaneously.
 
-The "Htf" in the name matters. This is a top-down tool. You chart the 5-minute, it reads the 1-hour. You chart the 1-hour, it reads the 4-hour. The three-candle logic is just the confirmation gate: the system waits for three closes in the same direction on the higher timeframe before it commits to a trend state.
+The "HTF" in the name matters. This is a top-down tool: the indicator reads a higher timeframe than your chart and reconstructs that structure on the right side of price.
 
 ## What the chart actually shows
 
-Look at the screenshot above — that's the MACD pane with the HTF overlay applied. You'll see the trend state flipping from bearish to bullish, with the entry marker printing on the bar where the third HTF candle confirmed. The band underneath tracks the trend and steps when the bias changes. On a clean trend day it hugs price like a moving average; on chop it flattens and you get the point.
+The three higher-timeframe candles are defined as:
 
-What I like is that it doesn't repaint. Once the third candle closes on the higher timeframe, the state is locked. That's rarer than it should be in this category. Plenty of HTF indicators recalculate the current HTF candle on every tick, which means your "confirmed" signal vanishes when the HTF bar closes differently. This one waits.
+- **C1** = the completed HTF candle two periods back
+- **C2** = the previous completed HTF candle
+- **C3** = the current live HTF candle
 
-## Best settings I landed on
+C1 and C2 are completed; C3 updates continuously while the higher-timeframe candle is forming, so the pattern ranking and projected levels evolve with current price action.
 
-Defaults are workable, but I'd adjust three things:
+The System evaluates 12 three-candle structures: Bullish and Bearish Sweep Reversal, Bullish and Bearish FVG Displacement, Bullish and Bearish PO3 Sequence, Bullish and Bearish Expansion, Bullish and Bearish Compression Break, and Morning Star and Evening Star Reversal.
 
-- **HTF multiplier**: 4x to 6x your chart timeframe is the sweet spot. On a 15-minute chart, use the 1-hour (4x). Push it to 12x and you're trading a different instrument's trend.
-- **Confirmation candles**: keep at 3. Dropping to 2 gives you earlier entries but noticeably more false flips in ranges. Going to 4 is only useful if you're swing trading daily charts.
-- **Band length**: 20 is fine. Shortening it to 10 tightens the trailing stop but whipsaws you in pullbacks.
+Each pattern receives a quality score built from structural conditions plus softer proximity measurements, so a setup can begin ranking before every condition is fully completed. Factors include liquidity sweeps, candle direction, body strength, range, displacement, FVGs, compression, expansion, and recovery or rejection around key levels. The three highest-ranked structures appear in the 3-CANDLE SYSTEM table with their current scores; the top-ranked pattern controls the live state message and the projected structural levels.
 
-One thing to flag: if you're on a 1-minute chart with a 1-hour HTF, you'll sit through a lot of dead bars waiting for signals. This tool rewards patience, not scalp frequency.
+The live state text describes where the active pattern currently stands — sweep or reclaim developing, FVG live, breakout or breakdown developing, compression, PO3 distribution, reversal developing.
 
-## How I'd trade it
+Projected levels depend on the active structure and can include sweep levels, breakout levels, FVG boundaries, CE 50%, equilibrium, recovery levels, and invalidation. Nearby levels can merge automatically to reduce clutter.
 
-The logic is trend-following with a confirmation delay baked in. So:
+C1, C2 and C3 are also reconstructed to the right of price using their actual HTF OHLC values, with C3 updating live. The System can additionally map C1, C2 and C3 directly over the lower-timeframe candles that formed them, with high and low dots identifying the exact lower-timeframe candles behind each HTF extreme. Completed C1 and C2 levels can change from Active to Mitigated after being traded through.
 
-1. Wait for the trend state to flip and the entry marker to print.
-2. Enter on the close of the marker bar, or on the first pullback to the band if you want a better fill.
-3. Stop goes below the band (longs) or above it (shorts).
-4. Exit on either the opposite flip or a band break on your timeframe.
+## Settings and How to Tune Them
 
-That third rule is where most people get hurt. The HTF flip is slow by design — if you wait for it to exit, you give back a chunk of profit. Use the band break on your own timeframe to get out earlier, and treat the HTF flip as the "the trend is genuinely over" signal.
+- **Higher Timeframe:** selects the higher timeframe used to construct C1, C2 and live C3. It must be higher than the chart timeframe.
+- **Strong Match Threshold:** the minimum quality score required for the highest-ranked pattern to be treated as a strong match.
+- **Show Projected HTF Candles:** shows or hides the reconstructed C1, C2 and C3 candles to the right of current price.
+- **Offset:** how far the projected candle structure appears from current price.
+- **Candle Spacing:** horizontal spacing between projected C1, C2 and C3.
+- **Merge:** how close two projected levels can be before they are combined.
+- **Spacing:** horizontal spacing between pattern level labels.
 
-Notice in the chart how the band break happens several bars before the trend state flips. That gap is your realistic exit window.
+The relationship between the Higher Timeframe and your chart timeframe is the setting that changes the tool's character most — a wider gap means slower, more structural reads, a narrower one keeps it closer to current price action.
+
+## How the states read in practice
+
+The examples in the source material show how the ranking and the live state interact, and they are worth understanding before trading off the table.
+
+In a Bearish Expansion example, Bearish Expansion ranks first and the state reads BEARISH EXPANSION LIVE, with C1, C2 and C3 shifting progressively lower and C3 extending through the previous structure. Projected levels identify the Breakdown, the level price should Hold Below, and the Invalidation above.
+
+A Bearish FVG Displacement example reaches the top score with a BEARISH FVG LIVE state; strong downside movement leaves C3 separated below C1, creating the imbalance, and the System projects FVG Upper, CE 50%, C3 High and Invalidation. A related example shows the FVG Upper and CE 50% close enough to merge into a single projected level.
+
+A Bearish Compression Break example is instructive: the pattern ranks first but the state still reads COMPRESSION - WATCH RANGE LOW, because the bearish break has not yet confirmed. C2 is contained within the C1 range and C3 is pressing toward the lower boundary. The Range Low / Breakdown level marks where confirmation would occur, with Equilibrium and Range High defining the rest of the structure. The bullish equivalent reads COMPRESSION - WATCH RANGE HIGH, with confirmation only on a push through the Range High / Breakout level.
+
+A Bullish PO3 Sequence example shows a downside manipulation followed by strong bullish C3 expansion, with the Manipulation Low, the Distribution level above, and the structural Invalidation highlighted.
+
+The reversal examples show earlier-stage states. A Bearish Sweep Reversal can rank first while the state reads HIGH SWEPT - NEED RECLAIM, with the next requirement being C3 moving back below the projected C3 Close level. A Bullish Sweep Reversal can rank first while the state reads WATCHING C1 LOW, before the C1 low has been swept. An Evening Star Reversal can rank first with the state AWAITING REJECTION BELOW C1 MID, showing 50% Rejection, Full Rejection and Invalidation levels.
+
+The takeaway: a high rank is not the same as a confirmed setup. The state message is the part that tells you whether the structure is still developing or has actually triggered.
 
 ## Pros and cons
 
 **Pros**
-- Genuinely non-repainting once the HTF candle closes
-- Clean visual — no clutter, no arrows on every bar
-- Works across any market: FX, futures, crypto, equities
-- The band doubles as a dynamic stop reference
+- Evaluates many structures at once rather than forcing one fixed candlestick pattern
+- Pattern ranking and projected levels evolve with the live third candle
+- Projected levels are structure-specific rather than generic
+- HTF mapping ties each HTF extreme back to the lower-timeframe candles that created it
 
 **Cons**
-- Signals are late by definition. Three HTF candles is a lot of waiting.
-- No built-in alerts for band breaks, only for trend flips (as far as I could get it to fire)
-- If you don't understand HTF logic, the entry markers will look random
-- No backtest stats or win-rate display, so you're testing it yourself
+- By design, a setup can rank highly before it is confirmed, which requires reading the state text carefully
+- C3 is live, so ranking and levels shift while the HTF candle forms
+- No backtest statistics or win-rate display in the source material
+- The interplay between ranking, state, and projected levels takes time to learn
 
 ## Who it's for
 
-Swing traders and intraday trend traders who already trade top-down and want a mechanical confirmation layer. If you're a mean-reversion scalper, this will frustrate you — it's the opposite of what you need. If you trade breakouts on a 15-minute chart and want a higher-timeframe sanity check before you size up, this is a solid filter.
+Traders who already work top-down and want a structured read of higher-timeframe price action rather than a single candlestick signal. It suits someone who wants to see which three-candle structure is developing and where that structure's key levels sit. Traders looking for a fast trigger will find the live-state logic requires patience.
 
 ## Alternatives worth a look
 
-- **MTF MA / Multi-Timeframe Moving Average**: cheaper on screen real estate, but no three-candle confirmation gate.
-- **SuperTrend with HTF input**: similar trend-following behavior, faster flips, more whipsaw.
-- **Squeeze Momentum**: better if you want to catch the *start* of trends rather than confirm them.
+- **MTF moving averages**: lighter on screen, but no multi-pattern scoring or structural levels.
+- **Plain candlestick pattern scanners**: simpler, but typically evaluate one formation at a time rather than ranking a dozen.
+- **Manual HTF markup**: full control, but no automated scoring, ranking, or projected levels.
 
-The three-candle gate is what makes this distinct. If you don't want that delay, the alternatives are better. If you do, this is one of the cleaner implementations.
+The multi-pattern scoring with a live third candle is what makes this distinct. If you want a single fixed formation, the alternatives are simpler.
 
 ## FAQ
 
 **Does it repaint?**
-No. Once the third HTF candle closes, the state is fixed. The current forming HTF candle doesn't affect the displayed trend.
+The source material does not make a repainting claim. C3 is explicitly live and updates continuously while the HTF candle forms, and C1 and C2 are completed candles.
 
 **What timeframe should I use it on?**
-5-minute and up. Below that, the HTF lag makes signals impractical.
+The source material does not specify a chart timeframe. The only constraint given is that the selected higher timeframe must be higher than the chart timeframe.
 
-**Can I use it for scalping?**
-Not really. The confirmation delay means you'll miss most short-term moves. It's a trend filter, not a trigger.
+**Does it work on crypto or specific markets?**
+The source material does not state market coverage.
 
-**Does it work on crypto?**
-Yes. I tested it on BTC and ETH pairs on the 1-hour with a 4-hour HTF — behaved the same as FX.
-
-**Are the entry markers buy/sell signals?**
-They're trend-flip markers. Treat them as bias confirmation, not standalone entries.
+**Are the projected levels buy/sell signals?**
+No. They are the structural references most relevant to the active pattern — sweep levels, breakout levels, FVG boundaries, CE 50%, equilibrium, recovery levels, and invalidation.
 
 ## Verdict
 
-Htf_3_Candle_System does one job and does it honestly. It won't win any originality awards — the three-candle HTF confirmation is a well-known concept — but the execution is clean, the non-repainting behavior is real, and the band gives you a usable stop reference. The lack of band-break alerts and the inherent signal lag keep it from a fifth star. If you're building a top-down trend system and need a reliable higher-timeframe gate, this earns its place on your chart.
+The HTF 3-Candle System does one job: it reads three consecutive higher-timeframe candles, scores twelve possible structures against them, and surfaces the top three with the levels that matter to the leader. The live third candle means the read evolves rather than waiting for a closed bar, which is both the appeal and the thing to understand before using it. If you want a mechanical higher-timeframe structure layer with explicit states and projected levels, this is a coherent implementation of that idea.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

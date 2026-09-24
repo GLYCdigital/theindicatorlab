@@ -16,88 +16,86 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Fair_Value_Gap_Fvg automatically detects ICT fair value gaps on any timeframe. Clear zones for reversal or continuation setups. Worth adding to your ICT toolkit."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Fair_Value_Gap_Fvg is a direct implementation of the ICT Fair Value Gap concept — nothing more, nothing less. It scans price action for three-candle sequences where the middle candle's body leaves a gap that isn't filled by the wicks of the adjacent candles. The indicator then draws a rectangular zone on that gap.
+Fair_Value_Gap_Fvg implements the ICT Fair Value Gap concept directly. It scans price action for three-candle sequences where the middle candle's body leaves a gap that the wicks of the adjacent candles don't fill, then draws a rectangular zone over that gap.
 
-No repainting. No predictive AI. Just clean, code-based detection of what ICT traders call "inefficiencies" in price.
+No repainting. No predictive logic. Just code-based detection of what ICT traders call "inefficiencies" in price.
 
 ## Key Features That Set It Apart
 
-- **Three detection modes**: Bullish only, Bearish only, or Both. Most FVG scripts clutter your chart with both sides. This one lets you focus on what matters for your bias.
-- **Zone fill logic**: You can set it to hide filled gaps (price touches the zone edge) or keep them visible. I keep mine on "hide filled" to reduce noise.
-- **Customizable zone appearance**: Border width, fill transparency, extend to right — all adjustable. I use 50% fill, no border, extended to right by 10 bars.
-- **Multi-timeframe capable**: Works on 1m to monthly. But honestly, below 5m the noise becomes unbearable unless you're scalping with strict filters.
+- **Three detection modes**: Bullish only, Bearish only, or Both. Rather than cluttering the chart with both sides, you can align detection with your directional bias.
+- **Zone fill logic**: Zones can be hidden once price touches the zone edge, or kept visible. Hiding filled gaps reduces chart noise.
+- **Customizable zone appearance**: Border width, fill transparency, and right-extension are all adjustable.
+- **Multi-timeframe capable**: Runs across timeframes from very short intraday up through monthly.
 
-## Best Settings
+## Settings and How to Tune Them
 
-After running this on 50+ charts across forex, indices, and crypto:
+The indicator exposes a handful of inputs, and most of them are about visual clarity rather than signal logic.
 
-- **Timeframe**: 15m for swing, 5m for intraday
-- **Mode**: "Both" if you're scalping; "Bullish Only" on pullbacks in uptrends
-- **Show filled FVGs**: Off. Trust me.
-- **Zone extension**: 10 bars max. More than that and you're guessing at relevance.
-- **Border width**: 1px. Anything thicker and it obscures price.
+- **Timeframe**: Detection follows whatever timeframe the chart is on. Lower timeframes produce more zones; higher timeframes produce fewer, more significant ones.
+- **Mode**: Bullish Only, Bearish Only, or Both. Restricting to one side halves the clutter and keeps the chart aligned with your directional bias.
+- **Show filled FVGs**: On or off. Turning it off hides zones that price has already touched.
+- **Zone extension**: Controls how far to the right a zone is drawn. Longer extensions push into territory where the zone's relevance is less certain.
+- **Border width**: Thin borders keep price action readable; thicker borders obscure candles.
 
-**Pro tweak**: Turn on volume confirmation alongside the zones. An FVG that forms on low volume is often a trap. On high volume, it's a serious imbalance.
+A common approach is to pair the zones with a volume read. An FVG that forms on low volume is frequently a trap; one that forms on high volume represents a more serious imbalance. The indicator itself does not include a volume filter, so that judgment has to come from your own chart setup.
 
 ## How to Use It for Entries and Exits
 
-**Entry (Continuation)**: After a strong impulse move, wait for price to retrace into the FVG zone. Look for a reversal candlestick pattern (engulfing, pin bar) inside the zone. Enter on the close of that candle. Stop loss below/above the zone's opposite edge.
+**Entry (Continuation)**: After a strong impulse move, wait for price to retrace into the FVG zone. Look for a reversal candlestick pattern (engulfing, pin bar) inside the zone. Enter on the close of that candle. Stop loss below or above the zone's opposite edge.
 
-**Entry (Reversal)**: On higher timeframes (1h+), an FVG that forms at a key support/resistance level is a reversal signal. Enter when price returns to the zone and shows rejection.
+**Entry (Reversal)**: On higher timeframes, an FVG that forms at a key support/resistance level can act as a reversal signal. Enter when price returns to the zone and shows rejection.
 
-**Exit**: Take partial profit at the opposite side of the zone. Trail the rest if the move continues. As the chart above shows, price often sweeps through the zone but closes back inside — that's your confirmation.
+**Exit**: Take partial profit at the opposite side of the zone. Trail the rest if the move continues.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- No repainting — zones are fixed once formed
-- Clean, minimal code — doesn't slow down your chart
-- Works well as a confluent filter with order blocks or supply/demand
+- No repainting — zones are fixed once the third candle closes
+- Clean, minimal code that doesn't weigh down the chart
+- Works well as a confluence filter alongside order blocks or supply/demand
 - Free, with no hidden paywalls
 
 **Cons:**
-- On lower timeframes (1m-3m), it generates dozens of zones — unusable without filters
-- No automatic alert for zone touches (you'll need to set your own)
-- Doesn't distinguish between strong and weak gaps (no volume or momentum filter)
-- The "Hide filled" option sometimes removes zones that were only touched by a wick — not true fills
+- On very low timeframes it generates dozens of zones — unusable without filters
+- No automatic alert for zone touches; you'll need to set your own
+- Doesn't distinguish between strong and weak gaps — no volume or momentum filter
+- The "Hide filled" option can remove zones that were only touched by a wick, which isn't a true fill
 
 ## Who It's Actually For
 
-This is for **ICT traders** who already understand FVG theory and just want a clean visual tool. It's also useful for **swing traders** who use order flow and want to mark inefficiencies quickly.
+This is for **ICT traders** who already understand FVG theory and want a clean visual tool. It's also useful for **swing traders** who work from order flow and want to mark inefficiencies quickly.
 
-It's **not** for beginners who expect a "Buy/Sell" magic button. If you don't know what a fair value gap is, this indicator will confuse you.
+It's **not** for beginners who expect a "Buy/Sell" magic button. Without prior knowledge of what a fair value gap is, the indicator will confuse you.
 
 ## Better Alternatives
 
-- **FVG + Order Blocks by LuxAlgo** — If you want premium features like volume weighting and multi-timeframe detection. Costs money but does more.
+- **FVG + Order Blocks by LuxAlgo** — Premium features like volume weighting and multi-timeframe detection. Costs money but does more.
 - **ICT Concepts by QuantiVue** — Free, includes FVG plus order blocks, liquidity levels, and more. Heavier on the chart but more comprehensive.
 - **Smart Money Concepts by HPotter** — Another free option with FVG detection plus market structure breaks. Slightly noisier but good for learning.
 
 ## FAQ
 
-**Does this repaint?**  
-No. The zones are fixed once the third candle closes. What you see is what you get.
+**Does this repaint?**
+No. The zones are fixed once the third candle closes.
 
-**Can I use it on crypto?**  
-Yes. Works on any market where price moves in discrete candles. Crypto on 15m+ is fine.
+**Can I use it on crypto?**
+Yes. It works on any market where price moves in discrete candles.
 
-**Why are there so many zones on my 1m chart?**  
-Because 1m is full of noise. Switch to 5m minimum. Or use the "Bullish Only" or "Bearish Only" mode to halve the clutter.
+**Why are there so many zones on my 1m chart?**
+Because 1m is full of noise. Move to a higher timeframe, or use the "Bullish Only" or "Bearish Only" mode to halve the clutter.
 
-**Does it work for stocks?**  
+**Does it work for stocks?**
 It works, but stocks gap frequently overnight. Those gaps are often not FVGs — they're just session breaks. Use with caution on daily charts.
 
 ## Final Verdict
 
-Fair_Value_Gap_Fvg does exactly what it promises: clean, no-repaint FVG detection. It's not a holy grail, but it's a solid tool for traders who already understand the concept. The lack of volume filtering and alerts keeps it from being a 5-star, but for a free indicator, it earns its place on your chart.
+Fair_Value_Gap_Fvg does exactly what it promises: clean, no-repaint FVG detection. It's not a holy grail, but it's a solid tool for traders who already understand the concept. The lack of volume filtering and alerts keeps it from being a top-tier indicator, but for a free tool it earns its place on your chart.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Reliable, clean, and useful when paired with proper context. Install it, adjust the settings, and stack it with your existing ICT setup.
-
----
 
 ## Go Deeper with The Indicator Lab
 

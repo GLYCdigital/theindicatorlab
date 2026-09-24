@@ -16,49 +16,50 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Zig_Zag_Indicator review: settings, swing trading strategy, pros & cons. Is this classic pivot detector worth adding to your chart?"
+grounding: "none (no source found)"
 ---
-Let's cut the preamble. The Zig Zag indicator is one of the oldest tools in technical analysis, and this TradingView version does exactly what you'd expect—no more, no less. It filters out noise and draws clean pivot lines between significant highs and lows. If you've used any Zig Zag in the past, you know the drill: it's not predictive, it repaints, and it's only as good as your settings. But this specific implementation gets a few things right that make it worth a second look.
+# Zig Zag Indicator Review
+
+The Zig Zag indicator is one of the oldest tools in technical analysis, and this TradingView version does what you'd expect—no more, no less. It filters out noise and draws clean pivot lines between significant highs and lows. As with any Zig Zag, it's not predictive, it repaints, and its usefulness depends heavily on how you configure it.
 
 ## What This Indicator Actually Does
 
-The Zig Zag connects swing points with straight lines, using a percentage threshold (or absolute deviation) to determine what counts as a "significant" move. Set it to 5%, and it ignores everything smaller than that. Set it to 10%, and you get fewer, more meaningful swings. The logic is embarrassingly simple—and that's precisely why it still works.
+The Zig Zag connects swing points with straight lines, using a percentage threshold (or absolute deviation) to determine what counts as a "significant" move. A larger deviation setting ignores smaller moves and produces fewer, more meaningful swings; a smaller setting produces more frequent pivots. The logic is simple, which is part of why it remains widely used.
 
-What sets this version apart from the default TradingView Zig Zag is the level of control. You can toggle between percentage-based and price-based deviation, adjust the calculation source (close, high/low, or any custom source), and choose whether to extend the last leg. There's also a useful "show only last pivot" option that keeps your chart clean when you're focused on the current structure.
+What sets this version apart from the default TradingView Zig Zag is the level of control. You can toggle between percentage-based and price-based deviation, adjust the calculation source (close, high/low, or any custom source), and choose whether to extend the last leg. There's also a "show only last pivot" option that keeps the chart clean when you're focused on the current structure.
 
-## Best Settings That Actually Work
+## Settings and How to Tune Them
 
-I tested this across BTCUSD, EURUSD, and a few S&P 500 ETFs on multiple timeframes. Here's what performed best:
-
-- **Deviation type:** Percentage (default) works fine for crypto and forex. Use absolute price deviation for indices or stocks where percentages get weird on high-priced symbols.
-- **Deviation value:** Start at 5% for intraday, 7–10% for daily swings. Too tight (under 3%) and you're just drawing noise. Too loose (over 15%) and you'll miss the setup entirely.
-- **Source:** Close for most cases. If you want to catch extreme wicks, use high/low—but be prepared for more whipsaw.
-- **Show only last pivot:** Turn this ON when you're actively trading. The full history is useful for analysis, but it clutters the chart fast.
+- **Deviation type:** Percentage tends to suit crypto and forex; absolute price deviation is often more appropriate for indices or stocks where percentage moves behave differently on high-priced symbols.
+- **Deviation value:** The right value depends on your timeframe and the instrument's typical range. Too tight and you're drawing noise; too loose and the indicator misses the structure you're trying to track.
+- **Source:** Close is the common choice. Using high/low will catch extreme wicks but tends to produce more whipsaw.
+- **Show only last pivot:** Useful when actively trading, since full pivot history can clutter a chart quickly.
 
 ## How to Actually Trade With It
 
-Here's the thing about Zig Zag: it's not a standalone system. It's a structural framework. The way I use it, and the way I'd recommend you use it too, is as a confirmation tool alongside price action or an oscillator.
+Zig Zag is not a standalone system. It's a structural framework, best used as a confirmation tool alongside price action or an oscillator.
 
-**Swing trading approach:** Wait for the Zig Zag to print a higher high, then a higher low. That's your uptrend confirmation. Enter on the next breakout above the pivot high, place your stop below the most recent Zig Zag low. For exits, trail your stop under each new higher low the indicator prints. Simple, mechanical, and it removes the emotional guesswork.
+**Swing trading approach:** Wait for the Zig Zag to print a higher high, then a higher low—that's uptrend confirmation. Enter on the next breakout above the pivot high, place your stop below the most recent Zig Zag low, and trail your stop under each new higher low the indicator prints.
 
-**The repaint warning:** The last pivot is always unconfirmed. The indicator will redraw that final line until price moves enough to confirm or invalidate it. That's not a bug—it's the nature of the tool. Never place an entry based solely on the most recent unconfirmed pivot. Wait for the next candle to close, or use a secondary confirmation like RSI divergence.
+**The repaint warning:** The last pivot is always unconfirmed. The indicator will redraw that final line until price moves enough to confirm or invalidate it. That's inherent to the tool. Never place an entry based solely on the most recent unconfirmed pivot—wait for the next candle to close, or use a secondary confirmation like RSI divergence.
 
 ## Pros & Cons
 
 **Pros:**
 - Clean, minimal interface—no indicator overload
 - Fully customizable deviation settings
-- The "extend last leg" option is genuinely useful for projecting targets
-- Works on any timeframe and any market
+- The "extend last leg" option is useful for projecting targets
+- Works across timeframes and markets
 
 **Cons:**
 - Repaints by design. This is a dealbreaker for some traders, and they're right to be cautious
 - Not predictive. It tells you what already happened, not what comes next
-- The default settings are too sensitive for most daily charts—you'll need to dial them in
+- Default settings are too sensitive for most daily charts—you'll need to dial them in
 - No built-in alerts for pivot confirmations, which is a missed opportunity
 
 ## Who It's For
 
-This is a swing trader's tool. If you're holding positions for days or weeks and need a clean visual map of market structure, this will serve you well. Day traders will find it less useful—the lag from the deviation filter eats into the speed you need. Scalpers should skip it entirely; by the time a pivot confirms, the move is over.
+This is a swing trader's tool. If you're holding positions for days or weeks and need a clean visual map of market structure, it will serve you well. Day traders will find it less useful—the lag from the deviation filter eats into the speed you need. Scalpers should skip it entirely; by the time a pivot confirms, the move is over.
 
 It also suits traders who understand that technical analysis is about probabilities, not certainties. If you need an indicator that tells you exactly when to buy and sell, keep scrolling.
 
@@ -72,7 +73,7 @@ If repainting drives you crazy, look at **Fractal Zig Zag** or **ZigZag Pro**—
 Yes. The final pivot is unconfirmed until price moves enough to validate it. This is inherent to the calculation, not a flaw in this particular version.
 
 **What's the best timeframe for Zig Zag?**
-The daily and 4-hour charts give the cleanest swing signals. Anything lower than 15 minutes produces too many false pivots.
+There's no universal answer—higher timeframes generally produce cleaner swing structure, while very low timeframes tend to produce more false pivots.
 
 **Can I use Zig Zag for automated trading?**
 Technically yes, but the repainting makes it risky for live automation. Backtesting with it is also misleading unless you account for the redraw delay.
@@ -84,6 +85,7 @@ This Zig Zag implementation is a solid, dependable version of a classic tool. It
 Four stars. Not exceptional, but reliable, honest, and useful. That's more than most indicators can claim.
 
 **Rating: ⭐⭐⭐⭐**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

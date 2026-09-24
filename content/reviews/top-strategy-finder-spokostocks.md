@@ -17,82 +17,102 @@ categories:
 rating: 4
 description: "Top_Strategy_Finder_Spokostocks review: a trend-following signal tool that plots clear buy/sell arrows. Tested settings, entry logic and honest pros and cons."
 tv_script_url: "https://www.tradingview.com/script/hGDbnWBw-Top-Strategy-Finder-SpokoStocks/"
+sources: ["https://www.tradingview.com/script/hGDbnWBw-Top-Strategy-Finder-SpokoStocks/"]
 ---
-Most "strategy finder" scripts on TradingView are repackaged moving average crossovers with a fancy name and a scatter of arrows that look great in hindsight. Top_Strategy_Finder_Spokostocks is not that — but it isn't a magic bullet either. What it actually does is blend a trend filter with momentum confirmation and print directional signals as arrows on the chart, with a small on-chart status readout that tells you whether the current bias is long, short, or flat. I ran it on multiple timeframes over a few weeks of live data before writing this.
+Most "strategy finder" scripts on TradingView promise a shortcut that doesn't exist. Top Strategy Finder takes a different approach: rather than printing signals, it tests a large library of complete rules directly on the chart you're looking at, ranks the results, and then shows you whether following its own picks would have held up without hindsight.
 
 ## What it actually does
 
-Strip away the name and you get a trend-following signal engine. It watches price relative to a trend baseline, waits for a momentum trigger to confirm, and only then fires an arrow. The key design choice — and the reason it earns four stars rather than three — is that it refuses to signal in chop. During ranging conditions the arrows simply stop appearing. That sounds obvious, but it's the single biggest failure point of competing scripts in this category, most of which fire constantly and drown you in noise.
+The script is a study, not a `strategy()` script, so there's no order-by-order report from TradingView's built-in tester. Instead it backtests up to 2,304 complete strategies on the exact chart it's added to and presents them as a leaderboard you can read in plain language — entry, exit, and filter spelled out as a sentence. Selecting a row draws its trades on the price chart, shows its open position with entry, stop, and target, and exposes its alerts.
 
-On the MACD chart above you can see the pattern clearly: clusters of arrows during directional legs, then long dead zones when price chops sideways. That's the indicator doing its job.
+The more interesting part is the walk-forward line. On every bar the script re-ranks all strategies using only the bars seen so far, then follows a basket of the current leaders. The blue curve is what that basket would have produced bar by bar; the gold curve is the champion's in-sample record. The gap between them is selection bias made visible. When both rise, the edge survived being chosen. When only the gold one does, the numbers came from luck.
 
 ## Key features that separate it
 
-- **Directional arrows with a bias readout.** You always know the current state without guessing.
-- **Chop suppression.** No signals in flat conditions — this is the headline feature.
-- **Multi-timeframe consistency.** Signals on the 1H and 4H tend to agree rather than contradict, which suggests the trend filter is doing real work.
-- **Lightweight.** No repainting drama on closed bars. Arrows that appear on a closed candle stay there.
+- **Plain-language leaderboard.** Top strategies (6 by default, up to 10) with entry on the first line and exit plus filter on the second.
+- **Heat-coloured metrics.** Trades and win rate as a bar, plus profit factor, net, and max drawdown, kept in a narrow table so the chart stays readable.
+- **A trading plan per row.** Exactly when to buy or sell, in which market condition, and how to exit.
+- **Walk-forward reporting.** What following the top basket would have earned, and how often the champion changed.
+- **Price chart integration.** Recent trades drawn as green or red segments, open trade with entry/stop/target lines, plus exposure shading and markers on long, short, or flat turns.
 
-The last point matters more than anything. I specifically watched for arrows appearing and then vanishing on the same bar — the classic repaint tell. I didn't catch it doing that on confirmed bars, which is a big deal for anyone who's been burned before.
+## Settings and How to Tune Them
 
-## Best settings I tested
+The script is deliberately light on settings — the description states there is no coding and nothing to tune to get started. The parameters that exist are structural rather than tuning knobs:
 
-The defaults are usable, but I got cleaner results with a few adjustments:
+- **Search size.** Quick, Standard, Deep, or Max, corresponding to 288, 768, 1,536, and 2,304 strategies tested. Standard is suggested as the starting point.
+- **Cost per side.** Default 0.05%.
+- **Minimum trades.** Default 30, required before a strategy can rank at all.
+- **Net profitability requirement.** On by default — a strategy must be net profitable to rank.
+- **Ranking metric.** Win %, SQN, profit factor, net profit, expectancy, return / drawdown, or average win / average loss.
+- **Champion margin.** The champion keeps its title until a challenger beats it by a margin you set, so the title does not flip on noise.
+- **Top K for the basket.** Default 5, equally weighted, chosen at each bar's close and exposed to the next bar's move.
+- **Display options.** Optional drawdown shading and log scale on the performance pane.
 
-- **On 15m–1H:** leave the sensitivity near default but widen the trend filter slightly. The default is a touch twitchy on lower timeframes.
-- **On 4H–Daily:** you can push sensitivity up. The extra noise is filtered by the timeframe itself, so you get earlier entries without the garbage.
-- **Avoid the 5m and below.** The chop filter can't save you there — you'll get whipsaw signals that look fine on the chart and fail in practice.
+None of these are "best" values in an absolute sense — the ranking metric and champion margin in particular change what the leaderboard surfaces, and the description recommends switching metrics to see which rules stay on top.
 
-If you're a swing trader, the 4H setting is where this thing earns its keep.
+## What is tested
 
-## How I'd actually trade it
+Each strategy is one entry signal × one direction × one exit rule × one market filter.
 
-This is a confirmation tool, not an entry machine. The logic that works:
+**24 entries**, each with a long and mirrored short version: EMA 9/21 and 20/50 crosses · close crossing SMA 20 and SMA 50 · RSI(2) beyond 10/90 and 5/95 · RSI(14) leaving 30/70 and crossing 50 · close beyond the 2σ and 2.5σ Bollinger bands · 10, 20, and 55-bar breakouts · MACD histogram crossing zero · MACD line crossing signal · Supertrend (3,10) and (2,14) flips · Stochastic leaving 20/80 · inside-bar breakout · three closes against the trade · ADX above 20 with a DI cross · Williams %R beyond −90/−10 · fresh 10-bar extreme with a reversal close · gap continuation.
 
-1. Wait for an arrow in the direction of the higher-timeframe trend.
-2. Use the arrow candle's high/low as your invalidation level.
-3. Size your stop off that level, not off a fixed pip count.
-4. Take partials at the prior swing, trail the rest.
+**8 exits:** after 5, 10, or 20 bars · stop 2 ATR / target 3 ATR · stop 1 ATR / target 2 ATR · stop and target 1.5 ATR · trailing stop 3 ATR · exit on the reverse signal.
 
-Ignore any arrow that fires against the dominant higher-timeframe trend. Those are the ones that fail most often in my testing. The indicator gives you the timing; you still supply the context.
+**6 filters:** any market · with the 200-bar trend · against it · calm volatility · high volatility · with 20-bar momentum.
+
+## How the backtest works
+
+Entries are at the close of the signal bar. Stops and targets are checked against the following bars' highs and lows — if both are touched in one bar, the stop is assumed. Every side pays the cost you set. A strategy must reach the minimum trade count and, by default, be net profitable to rank.
+
+## Repainting and data
+
+All signals are evaluated on the chart's own OHLC data, with no higher-timeframe requests. Entries, exits, and rankings are confirmed at the close of each bar; the walk-forward curve and every trade in the logs are built only from closed bars and do not change afterwards. The leaderboard order can change as new bars close, because new trades change the statistics — the description is explicit that this is the ranking updating, not a redraw of history.
+
+## How to use it
+
+1. Add it to the chart you trade. Start with the Standard size.
+2. Read the leaderboard. Favour rows with many trades and a modest drawdown over rows with a large net and few trades.
+3. Look at the pane. Blue rising with gold means the edge survived being chosen. Blue flat while gold soars means the leaders are curve-fit to this chart.
+4. Pick the row you want to trade. Read its plan under the table, check its drawn trades, set its alerts.
+5. Switch the ranking metric. Rules that stay on top under several metrics are the robust ones.
 
 ## Pros and cons
 
 **Pros:**
-- Genuinely suppresses signals in ranging markets
-- Doesn't repaint on confirmed bars
-- Clean visual — arrows plus a bias readout, nothing cluttered
-- Works consistently across higher timeframes
+- Tests complete strategies rather than printing signals — entry, direction, exit, and filter are all specified.
+- The walk-forward line makes selection bias visible instead of hiding it.
+- Plain-language leaderboard means no decoding required.
+- Alerts cover selected strategy entries and exits, basket direction changes, and champion changes.
+- Explicit about what it is: a discovery tool, not a signal generator.
 
 **Cons:**
-- Useless on very low timeframes (5m and under)
-- It's still a trend-follower — it will lag at reversals, no way around that
-- No built-in alerts documentation, so you'll configure alerts yourself
-- The name oversells it. There's no "strategy" being discovered; it's a signal tool.
+- It's an indicator, not a `strategy()` script, so there's no built-in tester report.
+- Results depend on the bars tested (default the last 2,500) and on your cost setting.
+- The leaderboard order shifts as bars close, which can be confusing if you expect a static ranking.
+- It tells you which rule to build and whether picking it would have paid — it does not tell you what to do next.
 
 ## Who it's for
 
-Swing and position traders on the 1H to Daily who want a second opinion on trend direction and timing. If you already have a solid trend framework, this slots in as confirmation. If you're looking for something to hand you a complete system, keep looking — no indicator does that, and this one doesn't pretend to.
+Traders who want to know which rule has actually worked on their specific chart and timeframe, and who care about the difference between in-sample performance and forward performance. It's a research tool rather than a signal service — the value is in the leaderboard and the walk-forward gap, not in an arrow to follow.
 
 ## Alternatives worth knowing
 
-If you want more customization, a well-tuned Supertrend or a manually configured MACD + EMA stack gives you similar signals with more control. If you want fewer signals but higher conviction, a simple 200 EMA filter combined with this indicator's arrows is a strong pairing. This one's edge is convenience and the chop filter, not uniqueness.
+If you want a single well-understood rule rather than a search, a manually configured Supertrend or MACD plus EMA stack covers similar ground with more control. If you want a proper order-by-order report, you'll need a `strategy()` script rather than a study.
 
 ## FAQ
 
-**Does it repaint?** Not on confirmed bars in my testing. Arrows on live bars can shift until the bar closes — normal for any momentum-based script.
+**Does it repaint?** Entries, exits, and rankings are confirmed at the close of each bar, and the walk-forward curve and trade logs are built only from closed bars. The leaderboard order can change as new bars close, because new trades change the statistics — that's the ranking updating, not a redraw of history.
 
-**What's the best timeframe?** 4H is the sweet spot. 1H works. Anything under 15m degrades fast.
+**What's the best search size?** The description suggests starting with Standard and doesn't name a best setting. Larger sizes test more strategies at the cost of more computation.
 
-**Can I use it for crypto and forex?** Yes, it's price-agnostic. It performed the same across both in my checks.
+**Can I tune it?** There's no coding and nothing to tune to get started. The available settings are cost per side, minimum trades, profitability requirement, ranking metric, champion margin, top K, and display options.
 
-**Does it give alerts?** You can set alerts on the signal condition, but you configure them yourself. There's no one-click alert setup.
+**Does it give alerts?** Yes — selected strategy enters long, enters short, exits; basket turns long or short; champion enters long or short; champion changed.
 
 ## Final verdict
 
-Top_Strategy_Finder_Spokostocks is a solid, honest trend tool that does one thing well: it keeps you out of chop and points you in the trend direction. It won't transform your trading, and the name promises more than it delivers, but as a confirmation layer on higher timeframes it's genuinely useful. The chop suppression and lack of repainting are what push it above the crowded middle of the pack.
+Top Strategy Finder is a research tool that does something most scripts in its category don't: it tests complete rules on your chart, ranks them transparently, and then reports without hindsight whether trusting its own picks would have paid. The walk-forward line is the honest core of it — the gap between the blue and gold curves is exactly the thing most strategy finders never show you. It isn't a system, and the description says so: it's a discovery tool that tells you which rule to build. Results depend on the bars tested and your cost setting, and past results don't guarantee future performance.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a reliable trend confirmation tool for swing traders, held back only by its uselessness on low timeframes and a name that overpromises.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

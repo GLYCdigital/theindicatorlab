@@ -17,78 +17,92 @@ categories:
 rating: 4
 description: "Equalhigh_Fair_Value_Upside review: how this trend indicator maps fair-value upside targets, best settings, entry logic, and its real limitations."
 tv_script_url: "https://www.tradingview.com/script/EKSezF8R-Equalhigh-Fair-Value-Upside/"
+sources: ["https://www.tradingview.com/script/EKSezF8R-Equalhigh-Fair-Value-Upside/"]
 ---
-Most "fair value" indicators on TradingView are repackaged moving averages with a fancy name. Equalhigh_Fair_Value_Upside is not that — but it's also not the magic target-finder the name implies. Here's what I found after running it across trend and range conditions.
+Most "fair value" indicators on TradingView are repackaged moving averages with a fancy name. Equalhigh — Fair Value & Upside | SBC v1.1 is not that — but it is also not the magic target-finder the name implies. It is a fundamentals-based valuation tool, and it is explicit about what it does not do: it does not predict market turning points or calculate the probability of a price increase.
 
 ## What this indicator actually does
 
-Stripped of marketing, this is a trend-continuation tool that identifies bullish structure via equal highs and projects a "fair value upside" level above price. The logic: when price prints equal highs (a horizontal resistance shelf), the indicator treats a clean break as confirmation of trend intent, then calculates an upside target based on the measured move — the distance from the base of the structure to the breakout level.
+Stripped of marketing, this is a valuation model that combines financial data pulled through TradingView with user-defined assumptions. It displays three things: an orange base-case fair value line, a green buy-zone threshold set by your margin of safety, and an optional blue dashed nominal target at a selected horizon. Labels show price levels and potential upside or downside, and a dashboard reports the underlying financial inputs, valuation multiples, calculation status, and projected annualized price return.
 
-On the MACD chart I tested, the indicator plots its projected upside level as a horizontal band above current price, and it shades the zone between the breakout and the target. It's not drawing supply/demand zones or order blocks. It's simpler and more mechanical than that, which is honestly a point in its favor.
+The green level marks the maximum price within the model's buy zone. It is not an automatic entry signal.
+
+Three valuation methods are available:
+
+- **EPS:** diluted earnings per share × target P/E.
+- **FCF after SBC:** FCF after deducting stock-based compensation, divided by diluted shares, multiplied by the target FCF multiple.
+- **Hybrid:** a weighted combination of both.
+
+In Hybrid mode, an EPS weight of 50% gives equal weight to the two components; 100% uses only EPS, and 0% uses only FCF.
 
 ## Key features that stand out
 
-The equal-high detection is the core. Unlike most breakout indicators that just fire on any close above a recent swing, this one specifically looks for *equal* highs — two or more touches within a tight tolerance. That filters out a lot of the noise you get from single-touch resistance breaks.
+The explicit SBC deduction is the core differentiator. Many FCF-based valuations treat stock-based compensation as a non-cash add-back, which flatters the multiple. Here the calculation is stated plainly: FCF after SBC = FCF before SBC − SBC, then FCF after SBC per share = FCF after SBC ÷ diluted shares. That is a more conservative treatment than the default in a lot of retail valuation work.
 
-Second, the fair-value projection is dynamic, not static. As new equal highs form, the target recalculates. That's a meaningful difference from drawing your own measured-move target once and forgetting it.
+Second, the buy-zone threshold is derived rather than eyeballed: buy-zone threshold = fair value × (1 − margin of safety). Upside/downside is computed as (fair value ÷ chart price − 1) × 100, so a negative percentage simply means the chart price exceeds the model's fair value.
 
-Third, the visual shading makes the risk/reward obvious at a glance. When I pulled up the MACD chart, I could see at a glance whether the remaining upside to the fair-value level justified a long entry. That's genuinely useful for position sizing.
+Third, the dashboard exposes the inputs and the calculation status rather than hiding them. When a required component is missing or invalid, the script reports the reason instead of silently substituting a value.
 
-## Best settings I tested
+## Settings and How to Tune Them
 
-The defaults are reasonable, but I'd adjust two things:
+**Financial period:** choose FY (latest available fiscal-year data) or TTM (trailing-twelve-month EPS and FCF). Note that selecting TTM does not automatically reconstruct missing financial data from individual reports.
 
-**Equal-high tolerance:** The default is tight. On lower timeframes (5m–15m), loosen it slightly or you'll miss valid structures that are a few ticks apart. On the 4H and daily, keep it tight — equal highs there are meaningful.
+**Valuation model and EPS weight:** select EPS, FCF after SBC, or Hybrid. In Hybrid, the EPS weight determines the split between the two components.
 
-**Lookback for structure detection:** Increase this if you trade higher timeframes. The default lookback is tuned for intraday work. On the daily, you want it to scan further back so it catches the shelf that actually matters, not just the most recent consolidation.
+**Target multiples:** enter a target P/E and a target FCF multiple. Both default to zero, and the relevant valuation component remains suspended until a positive multiple is entered. The choice of multiple is an assumption, not a retrieved fact.
 
-I left the target multiplier at default. It's calibrated to a reasonable measured move, and tweaking it mostly just changes how ambitious your target is without improving hit rate.
+**SBC:** entered manually in this version, in millions of the chart currency, for the same reporting period as the FCF. The confirmation checkbox is required even when SBC is zero — missing SBC is never silently treated as zero.
 
-## How I'd actually trade it
+**Share-data frequency (TTM mode):** Auto uses a positive FQ value first, otherwise FH, otherwise FY. Auto follows an availability order; it does not compare publication dates to identify the newest report. In FY mode, automatic share retrieval uses FY data regardless of the TTM frequency setting. A manual share-count override takes priority over automatic retrieval.
 
-This is a continuation tool, not a reversal tool. Don't use it to catch tops or bottoms.
+**Manual overrides:** diluted EPS (per-share amount in chart currency), FCF before SBC (total, in millions), and diluted shares (in millions). Record the source and period end in the source field. Manual values remain fixed until changed and should be reviewed whenever you switch stocks. Check whether your FCF source deducts lease repayments — the script does not harmonize different FCF definitions.
 
-The clean setup: wait for price to break the equal-high shelf, then enter on the retest of that broken level as support. The fair-value upside band becomes your target. Stop goes below the shelf — if the breakout was real, price shouldn't reclaim that level.
+**Projection:** enabling projection assumptions requires a horizon in years, annual diluted EPS growth, and annual FCF after SBC per share growth. Growth rates are entered as percentages. Each active component grows at its own rate; target multiples and Hybrid weights stay constant. The projection is a reference level for a future nominal target, not a forecast price path or a discounted present value, and the growth inputs are your assumptions rather than retrieved guidance or consensus.
 
-The MACD screenshot above shows exactly this pattern in action — the equal highs form, price breaks, and the fair-value band sits comfortably above as a logical exit. Notice how the projection wasn't absurdly far from price; that's the indicator being honest about a measured move rather than promising a moonshot.
+**Display:** the dashboard can be positioned in any chart corner, and "Label offset (bars)" moves labels horizontally relative to the latest bar. Labels are not pinned to the price axis.
 
-What I would *not* do is enter on the breakout candle itself. Equal-high breaks on the first push are notorious for fakeouts. Wait for the retest.
+## How it fits into a workflow
+
+The script is built to make valuation assumptions visible and comparable. A defensible process is: select the period, choose the model, enter target multiples, verify the retrieved financials, apply overrides where the data is wrong or unavailable, and then read the output as one input among several.
+
+The tool's own guidance is to combine its output with company research, financial-statement review, and your own risk-management process. It does not normalize exceptional items, does not independently audit filings, and does not add net cash or subtract net debt. It may be unsuitable for banks, loss-making businesses, or companies requiring specialized valuation methods.
 
 ## Pros and cons
 
 **Pros:**
-- Equal-high detection filters noise better than generic breakout tools
-- Dynamic fair-value target updates as structure evolves
-- Clean visual — the shaded band makes R:R obvious instantly
-- Works across timeframes with minor setting tweaks
+- Explicitly deducts stock-based compensation in the FCF component
+- Three model options with a stated Hybrid weighting formula
+- Buy-zone threshold tied to a user-defined margin of safety
+- Dashboard reports inputs, multiples, and the specific reason a calculation is suspended
+- Manual overrides for EPS, FCF, and share count, with a source field
 
 **Cons:**
-- Only handles upside. There's no bearish mirror, which limits its usefulness in downtrends
-- The name oversells it — "fair value" implies fundamentals, and this is pure price structure
-- No alert customization to speak of; you get the default alerts or nothing
-- On choppy, rangebound markets it will fire false equal-high breaks repeatedly
+- SBC must be entered manually; there is no automatic retrieval in this version
+- Financial data availability depends on the stock and reporting frequency
+- No automatic net cash or net debt adjustment
+- Does not normalize exceptional items
+- Financial-data revisions and manual overrides make this version unsuitable as a historical point-in-time valuation backtest
 
 ## Who it's for
 
-Swing traders and intraday trend traders who already understand market structure and want a mechanical target projection. If you're a discretionary trader who likes a clean visual of where upside might stall, this earns a spot on your chart. If you're a beginner looking for signals to follow blindly, skip it — the indicator assumes you know what an equal-high break means.
+Traders and investors who work from fundamentals and want a repeatable, transparent way to test valuation assumptions on a chart. It assumes you can supply a defensible target multiple, a verified SBC figure, and a share count. Anyone looking for entry signals or price predictions is looking at the wrong tool — the green level is a buy-zone boundary, not a trigger.
 
 ## Alternatives worth considering
 
-If you want a full trend-following system with both directions, a Supertrend variant is more complete. If you want measured-move targets specifically, drawing tools do the same job manually. This indicator's edge is the automation of equal-high detection, not the target math.
+If you want a purely technical target projection, measured-move drawing tools do the same job manually. If you want a valuation model with automatic SBC retrieval and net-debt adjustments, you will need a fuller fundamental data stack than this script provides.
 
 ## FAQ
 
-**Does it repaint?** No — once an equal-high structure is confirmed and the breakout closes, the level is fixed. The target recalculates as new structure forms, but past signals don't vanish.
+**Does it repaint?** The source material does not address repainting. It does state that valuation lines begin at the latest bar and extend to the right, and that the indicator deliberately avoids applying today's manual inputs retrospectively across the chart.
 
-**Can I use it on crypto and forex?** Yes, though it performs best on instruments with clean structure. Crypto's wicks create more false equal highs; loosen tolerance accordingly.
+**Does it work on any stock?** Availability of diluted EPS, free cash flow, and diluted shares depends on the stock and reporting frequency. The model may be unsuitable for banks, loss-making businesses, or companies requiring specialized valuation methods.
 
-**Why only upside?** That's a real limitation. The developer built a bullish-continuation tool, period.
+**Why does the dashboard say "suspended"?** The dashboard explains what prevents calculation. Possible causes include missing or non-positive EPS, missing FCF, missing or non-positive share count, unverified SBC, non-positive FCF after SBC, or an unconfigured target multiple. Only components required by the selected model and weight must be valid — in Hybrid mode, the script does not silently redistribute weight when a required component is unavailable.
 
 ## Final verdict
 
-Equalhigh_Fair_Value_Upside does one thing well: it spots equal-high breakouts and gives you a sensible upside target. It's not a system, it's not magic, and the name is a bit grandiose — but as a structure tool it earns its place. The lack of a bearish counterpart keeps it from a higher rating.
+Equalhigh — Fair Value & Upside | SBC v1.1 does one thing and documents it carefully: it turns a small set of financial inputs and your own assumptions into a fair value line, a margin-of-safety buy zone, and an optional projection. The SBC deduction and the transparency of the dashboard are the parts that matter. The limitations are equally clear — manual SBC entry, no balance-sheet adjustments, no backtest validity — and the script states them itself. Treat it as a structured way to make valuation assumptions explicit, not as a signal generator.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a solid, honest continuation tool for traders who already read structure.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -17,77 +17,80 @@ categories:
 rating: 4
 description: "Fibonacci_Cloud_Multi_Timeframe_Fibonacci_Scanner review: a multi-TF fib cloud with a built-in scanner. Tested settings, entry logic, pros, cons, and verdict."
 tv_script_url: "https://www.tradingview.com/script/rKsnPJbJ-Fibonacci-Cloud-Multi-Timeframe-Fibonacci-Scanner/"
+sources: ["https://www.tradingview.com/script/rKsnPJbJ-Fibonacci-Cloud-Multi-Timeframe-Fibonacci-Scanner/"]
 ---
-Most Fibonacci tools on TradingView do the same thing: you drag an anchor, pick a swing high and low, and eyeball where price sits relative to the 0.618. The **Fibonacci_Cloud_Multi_Timeframe_Fibonacci_Scanner** tries to solve the obvious weakness of that workflow — that you're drawing on one timeframe and ignoring what the higher timeframes are saying. It auto-plots Fibonacci clouds across multiple timeframes at once and then scans for confluence. That's the pitch. Here's what it actually does when you load it.
+Most Fibonacci tools on TradingView do the same thing: you drag an anchor, pick a swing high and low, and eyeball where price sits relative to the 0.618. The **Fibonacci Cloud** strategy tries to solve the obvious weakness of that workflow — that a fib level showing up on one lookback length is easy to dismiss as coincidence. It stacks three independent retracement grids (short, medium, and long lookback windows) on top of each other and watches for the moments when price sits near multiple levels from multiple grids at once. That's the pitch. Here's what it actually does.
 
 ## What it really is
 
-This is a trend-context tool, not a signal generator. It computes Fibonacci retracement and extension levels from swing points on several timeframes simultaneously, renders them as shaded "clouds," and flags when price is reacting inside overlapping fib zones. The scanner component watches a defined watchlist or the current symbol across those timeframes and highlights alignment — hence the name.
+This is a confluence-zone tool, not a breakout system. It computes Fibonacci retracement levels from three separate lookback windows simultaneously and counts how many of the fifteen tracked levels price is currently touching, within a configurable tolerance band. A trade is only considered when that confluence count clears your threshold.
 
-It does **not** repaint swing anchors on the current bar in the way most auto-fib scripts do, but higher-timeframe levels *do* update until the swing is confirmed. Know that going in.
+The core logic is the star of the show. Zones where a short-term 0.618 lines up with a medium-term 0.5 and a long-term 0.382 are the ones the engine is built to surface. Single-grid touches are not.
 
-## The multi-timeframe angle is the whole point
+## The three-lookback angle is the whole point
 
-Single-timeframe fibs fail constantly because a 0.618 on the 15-minute means nothing if the daily is sitting right on its own 0.382. This indicator's value is showing you both at once. In the MACD chart above, notice how the cloud bands cluster around the 0.5–0.618 region on two timeframes — that overlap is where the scanner lights up, and it's genuinely where the better reactions happen.
+A fib level that only shows up on one lookback length is easy to ignore. A zone where several grids agree is harder to dismiss. That overlap is what the confluence count is measuring.
 
-The cloud shading is heavier where more timeframes agree. That visual density cue is more useful than any alert, honestly.
+Two optional filters can sharpen the signal further: an EMA trend filter that only takes longs above the trend line and shorts below it, and an RSI momentum filter that skips longs when momentum is deeply negative and skips shorts when it's deeply positive. Both are off or loose by default, so the confluence logic itself stays the focus. Tighten them if you want fewer, higher-conviction trades.
 
-## Settings that actually matter
+The script also includes trade direction control (long-only, short-only, or both), a fixed % stop-loss with a configurable R:R take-profit, and built-in alert conditions for both long and short signals.
 
-- **Timeframes:** Defaults to three. Don't run more than three unless you're a scalper. Four+ clouds turn the chart into soup and you lose the confluence read.
-- **Swing lookback:** The default is too tight on lower timeframes. Bump it up ~30–50% on anything below the 1-hour or you'll get fib levels from noise.
-- **Fib levels:** Keep 0.382, 0.5, 0.618, and 0.786. The script includes extensions up to 1.618 — useful for targets, cluttering for entries.
-- **Cloud transparency:** Set it high (80%+). You still need to see candles.
-- **Scanner alerts:** Enable only for confluence events, not single-timeframe touches. Otherwise you'll get buried.
+## Settings and How to Tune Them
 
-## How I'd trade it
+- **Min Confluent Levels:** Start loose (Min Confluent Levels = 1, wide tolerance) to see how many setups the confluence engine finds on your instrument, then tighten gradually rather than starting strict and wondering why trade count is low.
+- **Lookback lengths:** The three lookbacks default to 20/50/100 and are tunable. Pairing a short scalping lookback with a much longer swing lookback tends to produce more meaningful confluence zones than three lookbacks bunched close together.
+- **Confluence tolerance:** Widening the tolerance band makes price count as touching more levels; narrowing it makes the engine stricter.
+- **EMA trend filter:** Try disabling it entirely on ranging instruments and re-enabling it on trending ones — this single toggle changes the strategy's character more than almost any other input.
+- **RSI momentum filter:** Confirmation-style, not fade-style. It skips longs in deeply negative momentum and shorts in deeply positive momentum.
+- **Stop % and R:R:** Backtest these two together rather than in isolation. A looser confluence threshold usually pairs better with a tighter R:R target.
 
-1. Use the **highest timeframe cloud as bias**. Price above the 0.5 of the daily cloud — look for longs only.
-2. Drop to your execution timeframe and wait for price to tap the **0.618 or 0.786** inside the higher-TF cloud.
-3. Confirm with a reversal candle or your own momentum read (this is where the MACD below the chart earns its place).
-4. Stop below the 0.786. First target is the 0.382 of the same cloud, second target the far edge.
+## How to approach it
 
-The scanner's job is to save you from scanning manually. It flags the setup; you still make the call. Treat it as a filter, not a trigger.
+1. Run the confluence engine loose first to see how many setups your instrument actually produces, then tighten the threshold gradually.
+2. Use the EMA trend filter to establish directional bias when the instrument is trending, and turn it off in ranging conditions.
+3. Use the RSI filter as confirmation rather than as a fade signal.
+4. Set stop % and R:R as a pair, not independently.
+
+The engine's job is to flag confluence zones. It counts the overlap; you still make the call.
 
 ## Pros and cons
 
 **Pros**
-- Genuine multi-timeframe confluence in one glance — the cloud density cue works.
-- Scanner covers a lot of ground you'd otherwise chart-hop for.
-- Extensions included for target-setting.
-- Clean, readable once you tune transparency.
+- Three-lookback confluence in one engine — fifteen levels tracked simultaneously.
+- Adjustable confluence tolerance and minimum-overlap threshold.
+- Optional EMA trend filter with directional fill.
+- Optional RSI momentum filter, confirmation-style.
+- Long-only / short-only / both trade direction control.
+- Fixed % stop-loss with configurable R:R take-profit.
+- Built-in alert conditions for both long and short signals.
 
 **Cons**
-- Higher-timeframe levels shift until swings confirm — you can act on a level that moves.
-- No built-in momentum or volume filter, so it'll flag dead-market taps with the same enthusiasm as real ones.
-- On fast timeframes with default lookback, it's noisy out of the box.
-- The scanner is alert-heavy if you don't narrow it.
+- It's a mean-reversion/confluence-zone tool, not a breakout system — it will underperform in strongly trending, low-pullback conditions.
+- The looser default settings favor trade frequency over precision, so win rate and expectancy need verifying for your instrument and timeframe before trading live.
+- Backtest results are historical and do not guarantee future performance. The strategy tester does not account for slippage, liquidity gaps, or execution differences on your specific broker or exchange.
 
 ## Who it's for
 
-Discretionary swing and intraday traders who already understand Fibonacci and want confluence context without drawing three sets of levels by hand. If you're looking for a push-button buy/sell arrow, this isn't it — and the multi-TF overlap will just confuse you.
-
-## Alternatives
-
-- **Auto Fibonacci Retracement** — simpler, single-timeframe, cleaner if you don't need the scanner.
-- **Fib Retracement with Alerts** — better if alerts are your priority over visuals.
-- **Anchored VWAP + fib combo scripts** — worth a look if you want fibs anchored to volume events rather than swings.
+Traders who already understand Fibonacci retracements and want confluence context across multiple lookback windows without drawing three sets of levels by hand. If you're looking for a push-button buy/sell arrow, this isn't it.
 
 ## FAQ
 
-**Does it repaint?** Confirmed swings don't, but the active higher-timeframe swing does until it locks. Expect the most recent cloud edge to move.
+**What does the confluence count actually measure?** How many of the fifteen tracked levels (three lookback grids) price is currently touching within the configurable tolerance band. A trade is only considered when that count clears your minimum threshold.
 
-**Can I use it for scalping?** Yes, but increase the swing lookback and cut to two timeframes or it's unreadable.
+**Can I control trade direction?** Yes — long-only, short-only, or both.
 
-**Does the scanner work on watchlists?** Yes — that's its main advantage over manual fib drawing.
+**Does it include stops and targets?** Yes — a fixed % stop-loss with a configurable R:R take-profit.
 
-**Is it worth the chart real estate?** If you trade Fibonacci already, yes. If not, learn fibs first.
+**Are there alerts?** Yes — built-in alert conditions for both long and short signals.
+
+**Is it financial advice?** No. It's provided for research and educational purposes only.
 
 ## Verdict
 
-The **Fibonacci_Cloud_Multi_Timeframe_Fibonacci_Scanner** does one job well: it collapses the tedious multi-timeframe fib workflow into a single visual and a scanner. It's not perfect — the confirm-lag and noisy defaults cost it a star — but for fib-based traders it replaces twenty minutes of chart-hopping with one glance.
+The **Fibonacci Cloud** strategy does one job: it collapses the tedious multi-lookback fib workflow into a single confluence count and acts only when enough grids agree. The optional EMA and RSI filters are there to sharpen the signal if you want fewer trades, but the confluence engine is the point. It's not a breakout system, and the loose defaults favor frequency over precision — verify expectancy on your own instrument and timeframe before trading it live.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

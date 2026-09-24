@@ -17,81 +17,94 @@ categories:
 rating: 4
 description: "Honest Initial_Balance_Auction_Intelligence_By_Dgt review. Tested settings, entry logic, pros/cons, and who should use this auction-based trend indicator."
 tv_script_url: "https://www.tradingview.com/script/ks2QGulb-Initial-Balance-Auction-Intelligence-by-DGT/"
+sources: ["https://www.tradingview.com/script/ks2QGulb-Initial-Balance-Auction-Intelligence-by-DGT/"]
 ---
-I've spent the last two weeks trading with Initial_Balance_Auction_Intelligence_By_Dgt on the MACD chart type, and it's one of those rare indicators that actually respects market structure instead of just painting arrows on every swing. Let me break down what it really does.
+# Initial_Balance_Auction_Intelligence_By_Dgt Review
 
-**What This Indicator Actually Does**
+Initial_Balance_Auction_Intelligence_By_Dgt is an Auction Market Theory framework built around the Initial Balance (IB) — the range established during a selected opening session. Rather than treating the IB as static support or resistance, it tracks how price develops after the IB completes, using configurable post-IB auction windows to classify market states.
 
-At its core, this tool tracks the Initial Balance (IB) — the high/low range established in the first trading period — and uses it as the anchor for trend direction. But it goes beyond a simple IB line. The "Intelligence" part comes from how it layers auction theory concepts: value area, point of control, and session open logic. When price breaks and holds beyond the IB, the indicator shifts its bias accordingly, giving you a clear "long above, short below" framework.
+## What This Indicator Actually Does
 
-What impressed me is that it doesn't repaint once a candle closes. I've been burned by too many "smart" indicators that rewrite history; this one holds its signals. The visual output is clean — you get the IB zone, current period's developing range, and a bias line that flips between bullish and bearish.
+The tool anchors on the Initial Balance, with IBH and IBL as the boundaries and IBM as the midpoint. Session and timezone are configurable (chart Exchange timezone or a range of predefined markets), so the framework can adapt to different markets and sessions.
 
-**Key Features That Stand Out**
+Once the IB completes, the indicator evaluates each subsequent auction window against it. The available states are:
 
-The session customization is the star here. You can define exactly what period forms your Initial Balance — whether that's the first 15 minutes of regular trading hours, the first hour, or even the overnight globex session. This flexibility matters because IB logic that works on ES futures doesn't translate directly to forex or crypto.
+- **PROBING ABOVE/BELOW** — live, tentative; price beyond a boundary while the window is still forming
+- **ACCEPTED ABOVE/BELOW** — a completed window closes outside the IB
+- **FAILED ABOVE/BELOW** — price extends beyond a boundary but closes back inside
+- **CONTINUATION** — after acceptance, a retest of that boundary holds
+- **REJECTION** — after acceptance, a retest fails and price moves back through it
+- **TWO-SIDED AUCTION** — both IB extremes tested and rejected, a more rotational, conflicted read
 
-The auction intelligence overlay is also genuinely useful. It marks the value area high/low and the point of control. On the MACD chart type, I found this particularly helpful because the indicator respects the data feed's aggregation — you're not getting weird artifacts from tick data mismatches.
+Only completed windows confirm a state transition. Probing states are live, developing information.
 
-**Best Settings I Tested**
+The framework also produces Regime, Bias, Phase, Auction State, cumulative Pressure, Quality, Maturity, and Invalidation levels.
 
-After running it across multiple instruments, here's what worked:
+## Key Features That Stand Out
 
-- **Session length:** 30 minutes for equities, 60 minutes for crypto (crypto's 24/7 nature needs a wider window to avoid noise)
-- **IB mode:** Use "Regular Session Only" if your broker pre-marks pre-market data. The "Full Session" mode is better for futures
-- **Bias confirmation:** Enable the "Close Beyond IB" filter. This forces price to actually close outside the range before flipping the bias, cutting false breakouts by roughly 40% in my tests
-- **Value area multiplier:** Keep it at 70% (the default). Going higher makes the zones too wide to be actionable
+**Decision Candles** (optional) visualize the developing auction window's High/Low and Open/Close, highlighted when the window interacts with IBH or IBL. This is live information until the window completes.
 
-**How I Trade It**
+**Initial Balance Projections** (optional) extend reference levels above IBH and below IBL at 0.5×, 1.0×, and 1.5× the IB range. These are reference levels for evaluating potential range extension — not predicted or guaranteed targets.
 
-The setup is straightforward. I wait for the IB to form, then watch for the bias line to flip with a confirmed close. Long entries happen when price breaks above the IB high, and the bias line turns green with the point of control below price. My stop goes under the IB midpoint; my target is the value area high from the previous session.
+**Pressure** is a bounded −100..+100 reading, accumulated across the whole session from confirmed transitions. **Bias** reflects only the current event. These are deliberately different questions and can disagree. Pressure is not order-flow, volume, or a probability.
 
-The trend-following exit is where this shines — I trail with the developing value area low. As long as price stays above it, I'm in. This naturally captures trends while giving back minimal profit at reversals.
+**Regime** (session character: Balanced / Rotational / Expansion / Failed Expansion / Trend Auction) and **Phase** (lifecycle stage: Balance → Probe → Acceptance → Retest → Expansion/Rotation → Exhaustion) provide higher-level context on top of the raw auction state.
 
-**Pros & Cons**
+**Quality/Conviction** combines close strength, IB-relative extension, and retest behavior to grade confirmed events — Acceptance/Continuation use acceptance criteria, while Failed/Rejection/Two-Sided use failure criteria. **Maturity** tracks how long a state has held (Early → Developing → Mature → Exhausted).
+
+The optional **dashboard** shows Regime, Bias, Phase, Auction State, Pressure, Quality, and Next (the next structural event or retest level plus its invalidation price), each with a contextual tooltip.
+
+## Settings and How to Tune Them
+
+- **Session and timezone:** Configurable to chart Exchange timezone or a range of predefined markets. The session and timezone should match the market being analyzed.
+- **Auction window length:** Configurable — the documentation lists 5/10/15/30 min as options. This is the post-IB window the engine evaluates against the IB.
+- **Decision Candles:** Optional toggle.
+- **Initial Balance Projections:** Optional toggle for the 0.5×, 1.0×, and 1.5× IB range reference levels.
+- **Dashboard:** Optional toggle.
+
+## How to Read It
+
+The script is a contextual framework, not a standalone signal. Read Regime, Bias, Phase, Pressure, Quality, and Invalidation together — acceptance can support continuation, failed auctions can signal reversion toward balance, and two-sided auctions can favor rotation.
+
+Alerts fire on confirmed transitions (Accepted/Failed Above/Below, Two-Sided, Continuation, Rejection) and include the relevant level, instrument, and IB session context.
+
+## Important Notes
+
+- Designed for intraday timeframes ≤ 30 minutes; the engine operates only when this condition is met.
+- Session and timezone should match the market being analyzed.
+- Uses 1-minute lower-timeframe data on higher intraday charts for precise auction-window construction.
+- Live probes and Decision Candles are developing information; state transitions confirm only when the selected auction window completes.
+
+## Pros & Cons
 
 **Pros:**
-- No repainting on closed candles — rare in this category
-- Deep session customization that actually matters
-- Auction theory concepts are implemented correctly, not just as buzzwords
-- Works across timeframes without degradation
+- Tracks auction development after the IB rather than treating the IB as static support/resistance
+- Configurable session and timezone to adapt to different markets
+- Distinguishes confirmed transitions from live probing states
+- Pressure and Bias are deliberately separate readings and can disagree, which is disclosed rather than hidden
+- Alerts fire on confirmed transitions
 
 **Cons:**
-- Steep learning curve if you're unfamiliar with auction market theory
-- The bias line can whipsaw during range-bound consolidation — the "Close Beyond IB" filter is mandatory
-- Performance drag on lower timeframes (1-minute charts with full session history will stutter)
-- No alerts on bias flips — that's a glaring omission for a paid indicator
+- Contextual framework, not a standalone signal — requires the user to interpret multiple outputs together
+- Only operates on intraday timeframes ≤ 30 minutes
+- Requires session and timezone to be configured correctly to be meaningful
 
-**Who It's For**
+## Who It's For
 
-This is not a beginner tool. If you don't understand the concept of fair value and market auction, this will confuse rather than help. It's built for day traders who already have a feel for session structure and need a systematic way to track it. Swing traders can use it on daily charts, but the IB concept loses some relevance over multi-day holds.
+Traders already familiar with Auction Market Theory concepts — acceptance, failed auction, rotation, and balance — who want a systematic way to track post-IB development. It is not a plug-and-play signal tool, and it is not intended for timeframes above 30 minutes.
 
-**Alternatives Worth Considering**
+## FAQ
 
-If you want something simpler, **Volume Profile by TradingView** gives you the value area and point of control without the session logic. For a more aggressive trend approach, **VWAP with Session Levels** (built-in) covers similar ground with less complexity.
+**Does this work on crypto?** The documentation does not make market-specific claims. Session and timezone are configurable so the framework can adapt to different markets and sessions, but the session and timezone should match the market being analyzed.
 
-**FAQ**
+**What timeframe should I use?** The script is designed for intraday timeframes ≤ 30 minutes; the engine operates only when this condition is met.
 
-**Does this work on crypto?** Yes, but set the session length to 60+ minutes. The 24/7 market has no clean opening auction, so the IB needs a wider window to be meaningful.
+**Does this indicator repaint?** Live probes and Decision Candles are developing information. State transitions confirm only when the selected auction window completes.
 
-**What timeframe should I use?** It's best on 5-minute to 1-hour charts. Below 5 minutes, you get excessive zone recalculations.
+## Final Verdict
 
-**Is it worth the price?** If you day trade futures or large-cap equities, the session intelligence alone justifies it. If you're on a tight budget, the free VWAP alternative might suffice.
+Initial_Balance_Auction_Intelligence_By_Dgt is a well-structured Auction Market Theory framework. Its strength is that it treats the Initial Balance as a starting point for reading auction development rather than as a fixed level, and it is explicit about the difference between live probing states and confirmed transitions. It is not a standalone signal and it is scoped to intraday timeframes ≤ 30 minutes, so it will not suit every trader. For those who already read session structure and want it systematized, it is a coherent addition to a toolkit.
 
-**Final Verdict**
-
-Initial_Balance_Auction_Intelligence_By_Dgt earns four stars. It's a well-built, honest indicator that respects market structure and gives you a genuine edge if you understand auction theory. The lack of alerts and the whipsaw potential in chop keep it from a perfect score. But for traders who want to systematize their session-based approach, this is one of the better tools I've tested this year.
-
-If you're serious about trading the opening range and need something that adapts to different markets, this is a solid addition to your toolkit. Just don't expect it to think for you — it's a framework, not a crystal ball.
-
-## Frequently Asked Questions
-
-### Is Initial_Balance_Auction_Intelligence_By_Dgt worth it?
-
-Based on testing across multiple timeframes, Initial_Balance_Auction_Intelligence_By_Dgt delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

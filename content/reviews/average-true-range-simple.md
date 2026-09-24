@@ -16,60 +16,54 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A clean, lightweight ATR indicator that strips away clutter. Perfect for quick volatility checks. Read our full review with settings and strategy tips."
+grounding: "none (no source found)"
+---
+**Description:** A clean, lightweight ATR indicator that strips away clutter. Useful for quick volatility checks. Read our full review with settings and strategy tips.
+
 ---
 
-**Description:** A clean, lightweight ATR indicator that strips away clutter. Perfect for quick volatility checks. Read our full review with settings and strategy tips.
-
----
-
-You know how most TradingView indicators come loaded with moving averages, envelopes, and signal lines you never use? *Average_True_Range_Simple* is the opposite. It’s just the ATR line. No noise. No extra calculations. That’s both its strength and its limitation.
-
-I’ve pulled this up on BTC/USD, EUR/USD, and a few swing trade setups over the past two weeks. Here’s what I found.
+Most TradingView indicators come loaded with moving averages, envelopes, and signal lines you never use. *Average_True_Range_Simple* is the opposite. It's just the ATR line. No noise. No extra calculations. That's both its strength and its limitation.
 
 ### What This Indicator Actually Does
 
-It plots a single line: the Average True Range over a user-defined period. That’s it. No bands, no trailing stop, no buy/sell signals. The indicator defaults to a 14-period ATR, but you can adjust it.
+It plots a single line: the Average True Range over a user-defined period. That's it. No bands, no trailing stop, no buy/sell signals.
 
-The chart above shows it on a 1-hour SPY chart. The line rises when volatility spikes (like during news events) and flattens in quiet ranges. It’s a volatility ruler, not a trading system.
+The line rises when volatility spikes (like during news events) and flattens in quiet ranges. It's a volatility ruler, not a trading system.
 
 ### Key Features That Set It Apart
 
-- **Lightweight code** – Zero lag or repainting. It’s a pure ATR calculation.
-- **Customizable period** – Change from 1 to 200+.
-- **Color-coded line** – Optional “up/down” color change if the ATR slopes higher or lower. Helps spot volatility shifts at a glance.
+- **Lightweight code** – A pure ATR calculation with no added layers.
+- **Customizable period** – The ATR lookback period is adjustable.
+- **Color-coded line** – Optional "up/down" color change if the ATR slopes higher or lower. Helps spot volatility shifts at a glance.
 - **No distractions** – No extra panes, no histogram, no alerts built in.
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-| Timeframe | Period | Use Case |
-|-----------|--------|----------|
-| 1m-5m    | 7-10   | Scalping – quick volatility check |
-| 15m-1h   | 14     | Standard day trade filter |
-| 4h-Daily | 20-30  | Swing trade position sizing |
+The core setting is the ATR period. Shorter periods make the line more reactive to recent volatility; longer periods smooth it out and respond more slowly. The right choice depends on your holding time and how much noise you're willing to tolerate — scalpers generally want faster response, swing traders generally want a smoother line.
 
-For day trading on 15m charts, I use **14 period**. For swing on daily, **21 period** smooths out noise better.
+There is also a color-slope option that changes the line's color depending on whether ATR is rising or falling. If you find the raw ATR values hard to read at a glance, the slope coloring is the feature that adds the most practical value.
 
 ### How to Use It for Entries and Exits
 
-This indicator doesn’t generate signals. You use it as a **confirmation tool**:
+This indicator doesn't generate signals. It's a **confirmation tool**:
 
-- **Entry filter:** Only take trend trades when ATR is rising (volatility expanding). If ATR is flat or falling, expect choppy price action.
-- **Stop loss placement:** Set stops at 1.5x ATR below entry for longs, above for shorts. This adjusts dynamically to current volatility.
-- **Exit trailing:** When ATR contracts after a big move, it often signals trend exhaustion. Tighten stops.
+- **Entry filter:** Consider trend trades when ATR is rising (volatility expanding). If ATR is flat or falling, expect choppy price action.
+- **Stop loss placement:** A common approach is to set stops at a multiple of ATR below entry for longs, above for shorts, so the stop adjusts to current volatility.
+- **Exit trailing:** When ATR contracts after a big move, it can signal trend exhaustion. Some traders tighten stops in response.
 
 ### Honest Pros and Cons
 
 **Pros:**
 - Dead simple. No learning curve.
 - Works on any timeframe and any market.
-- The color slope feature is genuinely useful – I rarely look at raw ATR values now, just the line’s direction.
+- The color slope feature is genuinely useful — the line's direction can be read faster than raw ATR values.
 
 **Cons:**
-- **No alerts.** You can’t set an alert when ATR crosses a threshold. You have to watch it.
-- **No histogram or band visualization.** Some traders prefer seeing ATR as a range around price (Keltner Channels style). This doesn’t do that.
-- **No smoothing option** beyond the period – no EMA of ATR, no median ATR.
+- **No alerts.** You can't set an alert when ATR crosses a threshold from within the indicator. You have to watch it.
+- **No histogram or band visualization.** Some traders prefer seeing ATR as a range around price (Keltner Channels style). This doesn't do that.
+- **No smoothing option** beyond the period — no EMA of ATR, no median ATR.
 
-### Who It’s Actually For
+### Who It's Actually For
 
 - **Minimalists** who hate crowded charts.
 - **New traders** learning about volatility.
@@ -86,25 +80,32 @@ Not for anyone who wants a complete system with signals, alerts, or multiple vol
 ### FAQ Addressing Real Trader Questions
 
 **Q: Does this repaint or lag?**  
-A: No. Standard ATR calculation – it’s based on historical data.
+A: It's a standard ATR calculation based on historical data.
 
 **Q: Can I use it for futures or crypto?**  
-A: Yes. Works on any asset. I tested on ES and BTC.
+A: Yes. Works on any asset.
 
 **Q: How do I set alerts?**  
-A: You can’t directly. You’ll need to use TradingView’s “Crossing” alert with the ATR value or script a custom alert.
+A: Not directly through the indicator. You'd need to use TradingView's alert system against the ATR value or script a custom alert.
 
 **Q: Why use this over default ATR?**  
-A: Color slope and cleaner display. Default ATR is fine, but this looks prettier on a chart.
+A: Color slope and cleaner display. Default ATR is fine, but this presents it more cleanly on a chart.
 
-### Final Verdict with Star Rating
+### Final Verdict
 
-*Average_True_Range_Simple* is a tool, not a strategy. It does one thing well: show you ATR without clutter. If you already know how to use ATR, this is a great lightweight option. If you’re expecting signals or alerts, look elsewhere.
+*Average_True_Range_Simple* is a tool, not a strategy. It does one thing well: show you ATR without clutter. If you already know how to use ATR, this is a lightweight option. If you're expecting signals or alerts, look elsewhere.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Minus one star for no alerts or histogram. But for what it does, it’s nearly perfect.
+It loses points for the absence of alerts and histogram visualization — but for what it does, it's a focused, no-frills implementation.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ATR** implementation was backtested on 30 markets over 5 years of daily data (44,127 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: USDJPY 58.7%, SPY 55.3%, XAUUSD 54.7%, AMD 53.6%
+- Weakest markets: ADAUSD 45.5%, XRPUSD 43.5%, SHIBUSD 24.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

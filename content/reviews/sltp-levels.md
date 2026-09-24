@@ -17,103 +17,122 @@ categories:
 rating: 4
 description: "Sltp_Levels review: a clean stop-loss and take-profit level plotter for trend traders. Tested settings, entry logic, pros, cons, and verdict."
 tv_script_url: "https://www.tradingview.com/script/7kb9JTsO-SLTP-Levels/"
+sources: ["https://www.tradingview.com/script/7kb9JTsO-SLTP-Levels/"]
 ---
-Most "levels" indicators on TradingView are either pivot-drawing spaghetti or repackaged support/resistance scripts that vomit ten lines onto your chart and call it analysis. Sltp_Levels takes a different, more disciplined angle: it plots structured stop-loss and take-profit reference levels derived from trend context, so you're not eyeballing where to place your exits. That's a narrower job, and it does that job well.
+Most "levels" indicators on TradingView are either pivot-drawing spaghetti or repackaged support/resistance scripts that fill the chart with lines and call it analysis. SLTP Levels takes a different, more disciplined angle: it plots structured higher-timeframe and session reference levels so you're not eyeballing where important price areas sit. That's a narrower job, and per its documentation it does that job with a deliberately clean output.
 
-As shown in the chart above, the indicator overlays clean horizontal tiers around price rather than cluttering the pane with oscillators. It's a trend-category tool, but functionally it behaves more like a risk-management assistant that happens to be trend-aware.
+The indicator overlays horizontal reference levels around price rather than cluttering the pane with oscillators. It is explicitly a market-context tool, not a signal generator.
 
 ## What It Actually Does
 
-Strip away the naming and Sltp_Levels is a dynamic level projector. It reads the prevailing trend direction from price structure, then calculates and plots:
+Strip away the naming and SLTP Levels is a multi-timeframe level map. It highlights price areas commonly monitored for liquidity, reactions, breakouts and potential targets, organized into two groups.
 
-- A **stop-loss reference** on the protective side of your position
-- One or more **take-profit tiers** at logical extension points
-- Visual markers that update as the trend shifts
+**Higher timeframe levels:**
 
-It does not generate buy/sell arrows. It does not tell you when to enter. What it does is answer the question traders actually struggle with *after* entry: "Where exactly do I get out?"
+- PDH / PDL — previous day high and low
+- PWH / PWL — previous week high and low
+- PMH / PML — previous month high and low
+- MON H / MON L — Monday's range
+- FRI H / FRI L — the prior Friday's range
+- 4H H / 4H L — extremes of the previous completed 4-hour candle
+- 1H H / 1H L — extremes of the previous completed hourly candle, disabled by default to keep the chart clean
 
-That distinction matters. If you're looking for a signal generator, this isn't it. If you want a consistent, rules-based exit framework, keep reading.
+**Session levels:**
+
+- AS H / AS L — Asia session high and low
+- LDN H / LDN L — London session high and low
+- NY H / NY L — New York session high and low
+
+It does not generate buy or sell signals. It does not tell you when to enter. What it does is answer a question traders wrestle with constantly: where are the reference areas that matter right now?
+
+That distinction matters. If you're looking for a signal generator, this isn't it. If you want a clean map of liquidity and reaction zones, keep reading.
 
 ## Key Features That Stand Out
 
-**Trend-adaptive levels.** The SL/TP lines aren't static Fibonacci retracements. They adjust to the strength and direction of the current trend, which means in a strong uptrend your take-profit target widens rather than staying pinned to a fixed multiple.
+**Multi-timeframe coverage in one overlay.** Daily, weekly, monthly, 4H, 1H and named session extremes are all available from a single indicator, rather than stacking several scripts.
 
-**Clean visual hierarchy.** Stop levels and target levels use distinct styling. On the MACD-style chart above you can see how the lines cluster near price action without obscuring candles — a real problem with many competing scripts.
+**Individual group visibility.** Every level group can be enabled or hidden on its own, so you can run a daily-and-session map without the monthly lines, or any other combination.
 
-**Multi-tier targets.** You typically get more than one TP level, which maps naturally to partial-profit scaling. This is the feature I leaned on most during testing.
+**Clean visual hierarchy.** Labels are intentionally positioned to the right of current price to reduce interference with candles, drawings and other indicators. Nearby labels are automatically staggered while the actual horizontal levels remain at their exact prices.
 
-**Configurable sensitivity.** The trend detection isn't locked. You can tune how aggressively it reacts, which matters enormously across timeframes.
+**Confluence as the point.** When several levels sit in approximately the same price area, that clustering creates technical confluence worth monitoring — and the design makes those clusters easy to spot.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-After running this across BTC, EURUSD, and a few large-cap equities on 15m, 1H, and 4H charts, here's what worked:
+The indicator is built around customization rather than a fixed preset:
 
-- **Trend sensitivity:** Medium. Low settings lag badly and keep stale levels long after a trend has flipped. High settings whipsaw and redraw constantly. Medium is the sweet spot.
-- **TP tiers:** Two. Three tiers spreads your exits too thin and the third level rarely gets hit before a reversal. Two gives you a scale-out and a runner.
-- **SL multiplier:** Slightly wider than default. The stock setting got clipped by normal noise on volatile instruments.
-- **Timeframe:** 1H and above. On 5m and 15m the levels repaint more than I'd like, which I'll flag below.
+- **Level visibility** — each group toggles independently, including the 1H and 4H levels and the session levels.
+- **Colors, transparency, line width and label size** — all adjustable.
+- **Label positioning** — labels sit to the right of current price. The default Label Offset is 20 bars.
+- **Label Offset adjustment** — if another indicator occupies the same area, such as SLTP Pulse or another trade-management overlay, open Settings > General > Label Offset and increase the value.
+- **Chart space** — for best visibility, leave some empty space on the right side of the TradingView chart.
 
-## How to Trade It
+There is no single "best" configuration here. The right setup depends on which timeframes and sessions you actually trade and how much on-chart clutter you're willing to tolerate.
 
-The logic is straightforward and that's a feature, not a bug.
+## How to Use It
 
-1. Establish your entry with whatever method you already trust — this indicator won't do it for you.
-2. Once in a trade, read the plotted SL level and set your hard stop there (or just inside it).
-3. Scale out at TP1, let the remainder run to TP2.
-4. When the trend flips and the levels redraw on the opposite side, that's your cue to tighten stops or exit the runner.
+The logic is straightforward and that's the point.
 
-In the screenshot, notice how the target tiers sit at sensible extension points rather than arbitrary round numbers. That's the value proposition — the math is doing the "where do I take profit" thinking so you don't have to negotiate with yourself mid-trade.
+1. Treat the plotted lines as a market map, not an automatic entry system.
+2. Around these levels, watch for liquidity sweeps, rejection or acceptance, breakout and retest, and market structure changes.
+3. Pay attention when multiple levels cluster in the same area — that's confluence worth monitoring.
+4. Note previous highs and lows acting as potential targets.
+
+A level does not guarantee a reversal. Price may reject it, sweep it, consolidate around it, or trade directly through it. The indicator provides context; confirmation and execution remain yours.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely useful for exit planning, not just another entry signal
-- Adapts to trend strength instead of using fixed offsets
-- Clean, readable chart output
-- Multi-tier targets support scaling out properly
+- Consolidates daily, weekly, monthly, 4H, 1H and session levels into one clean overlay
+- Every level group can be individually shown or hidden
+- Labels positioned to the right of price with automatic staggering to reduce chart interference
+- Explicitly framed as context, not a signal service — no false promises of entries
 
 **Cons:**
-- **Repaints on lower timeframes.** This is the big one. Levels shift as new bars form, so on fast charts you can't fully trust historical levels.
 - No entry signals — some traders will find it incomplete
-- Trend detection can lag on choppy, range-bound markets
-- Documentation is thin; you'll be reverse-engineering settings yourself
+- Documentation is thin beyond the level definitions and display options
+- It does not predict future price movement, so it won't tell you which level will hold
 
 ## Who It's For
 
-This suits **discretionary and swing traders** who already have an entry method and want a disciplined exit framework. It's especially good for anyone who chronically moves stops or exits too early — the plotted levels give you a rule to hide behind.
+This suits discretionary traders who want a structured map of higher-timeframe and session reference areas without stacking multiple indicators. It's especially useful for anyone watching for liquidity sweeps, rejections, or confluence clusters around prior highs and lows.
 
-It is **not** for scalpers on sub-15m charts (repainting kills it) or for traders who want a one-click signal service.
+It is **not** for traders who want a one-click signal service. The script does not generate buy or sell signals and does not constitute financial advice.
 
 ## Alternatives Worth Considering
 
-- If you want **entry signals plus levels**, look at trend-following systems like SuperTrend-based scripts with built-in targets.
-- If you want **pure static support/resistance**, classic pivot indicators are more reliable and don't repaint.
+- If you want **entry signals plus levels**, look at trend-following systems with built-in targets.
+- If you want **pure static support/resistance**, classic pivot indicators cover similar ground.
 - If you want **ATR-based stops specifically**, dedicated ATR trailing-stop indicators are more transparent about their math.
 
-Sltp_Levels sits in a useful middle ground, but it's not the only option.
+SLTP Levels sits in a useful middle ground as a context layer, but it's not the only option.
 
 ## FAQ
 
-**Does Sltp_Levels repaint?**
-Yes, on lower timeframes. On 1H and above the repainting is minimal and acceptable. On 5m–15m, treat the levels as live-only.
+**Does SLTP Levels generate buy or sell signals?**
+No. It is a market-context tool, not a trading system.
+
+**Does it predict price movement?**
+No. The documentation is explicit that it does not predict future price movement and does not constitute financial advice.
 
 **Can I use it for entries?**
-Not really. It's an exit and risk-management tool. You supply the entry.
+No — it's a reference-level tool. You supply the entry and the analysis.
 
-**Does it work on crypto?**
-Yes, but widen your SL multiplier — crypto noise will clip tight stops.
+**Which levels are on by default?**
+The 1H high/low levels are disabled by default to keep the chart clean. Other groups can be toggled individually.
+
+**What if the labels overlap another indicator?**
+Open Settings > General > Label Offset and increase the value.
 
 **Is it free?**
 Check the current TradingView listing; availability and pricing change.
 
-**What timeframe is best?**
-1H and 4H gave the most stable, trustworthy levels in my testing.
-
 ## Final Verdict
 
-Sltp_Levels does one job — plotting trend-aware stop and target levels — and does it cleanly. The repainting on low timeframes and the lack of entry logic keep it from being a complete toolkit, but for traders who already know how to get in and just need a better way out, it earns its place on the chart.
+SLTP Levels does one job — plotting higher-timeframe and session reference levels — and does it cleanly. The absence of entry logic and the thin documentation keep it from being a complete toolkit, but for traders who already know how to get in and just want a better map of where liquidity sits, it earns its place on the chart.
 
-⭐⭐⭐⭐ (4/5) — A solid, focused exit-planning tool. Dock it a star for the lower-timeframe repainting and thin documentation.
+A solid, focused context tool. Always use your own analysis, confirmation and risk management.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

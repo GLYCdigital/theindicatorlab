@@ -17,81 +17,75 @@ categories:
 rating: 4
 description: "Amd_Po3_With_Live_Edge_Stats review: Power of 3 strategy with real-time edge stats. Tested settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/hkKioUnL-AMD-Po3-with-Live-Edge-Stats-WillyAlgoTrader/"
+sources: ["https://www.tradingview.com/script/hkKioUnL-AMD-Po3-with-Live-Edge-Stats-WillyAlgoTrader/"]
 ---
-Let me cut through the name first. "Amd_Po3_With_Live_Edge_Stats_Willyalgotrader" is a mouthful, but it's actually a well-executed Power of 3 (PO3) indicator. If you're not familiar, PO3 is the ICT concept that price typically forms three distinct moves—accumulation, manipulation, and distribution—within a session. This indicator automates the identification of those phases and overlays live edge statistics on top. That last part is what makes it interesting, because most PO3 tools just draw boxes and leave you guessing.
+Let me cut through the name first. It's a mouthful, but underneath it sits a well-built Power of Three (PO3) indicator. If you're not familiar, PO3 is the ICT concept that price typically moves through three phases — accumulation, manipulation, and distribution. This tool automates the identification of those phases and layers a statistics dashboard on top. That last part is the differentiator, because most PO3 scripts just draw boxes and leave you to guess whether the pattern is actually working.
 
-I tested this across BTC, ES, and EURUSD on multiple timeframes, and the chart above (MACD view) shows how the indicator marks the session's opening range and then tracks the subsequent expansion. It's not a lagging moving average crossover — it's a structural tool that tells you *where* price is likely to react, not just *when* a trend started.
+**Key Features That Matter**
 
-**Key Features That Actually Matter**
+The headline feature is the built-in statistics engine. Every closed cycle is scored in R against a fixed reference model, in strict chronological order, with deliberately pessimistic assumptions. Percentages and Average R stay hidden until a minimum sample is collected, so you're not reading a "win rate" built on a handful of trades. The dashboard shows sample size alongside the numbers, which is more transparency than most paid indicators offer.
 
-The headline feature is the live edge stats panel. As the session develops, it calculates the probability of price reaching the opposite end of the range, the average expansion distance, and the win rate of the current setup type. This isn't "AI magic" — it's statistical lookback of similar sessions, but it's refreshingly transparent. You can see the sample size it's drawing from, which is more than most paid indicators offer.
+The structural detection is the other half. A statistical compression test anchors the accumulation range, an impulse-tail trim keeps the leftovers of the previous leg out of the boundaries, and a boundary breach only becomes a valid sweep if price closes back inside the range within a hard deadline. If it doesn't return in time, the move is labeled BREAKOUT and excluded from trade statistics entirely. That distinction — return versus depth — is what separates a manipulation from a genuine breakout, and it's the core of the whole design.
 
-The session plotting is solid too. You can toggle London, New York, and Asia sessions independently. The PO3 zones are drawn with clear labels — accumulation, manipulation, distribution — and they update in real time as the structure breaks. There's also a clean alert system for when a manipulation sweep occurs, which is the highest-probability trigger for a reversal trade.
+Visuals are clean: dashed blue box for accumulation, orange box for the manipulation excursion, M and D labels for the confirmed cycle, and Entry / Stop / Target lines with price and percentage labels. A form strip of the last ten cycles lets you read recent behavior at a glance.
 
-**Best Settings I Found**
+**Settings and How to Tune Them**
 
-After a week of backtesting and forward testing, here's what worked:
+- **Compression threshold:** controls how quiet the market must be before a range is anchored. Raising it produces more cycles; describing it as a percentile ceiling is the accurate way to think about it.
+- **Min range width %:** rejects micro-ranges where the stop and target would drown in the spread.
+- **Impulse-tail trim:** drops the oldest bar of the anchoring window while doing so shrinks the range width beyond the trim threshold, so a preceding impulse leg doesn't contaminate the boundaries.
+- **Max bars until return:** the manipulation deadline. Raising it admits slower manipulations and reduces breakout labeling; lowering it tightens the definition.
+- **Fib extension target:** the level at which the distribution is projected to reach, anchored from the sweep extreme to the opposite boundary. Common values cited are 1.272, 1.5, 1.618, and 2.0. Lower values are easier to reach; higher values demand a longer move.
+- **Stop buffer:** expressed as a multiple of an ATR anchor taken from before the range started — a deliberate choice that avoids measuring volatility inside the compression, where it would shrink the buffer exactly when it matters.
+- **Min sample for % and Avg R:** gates the statistics display until enough cycles have closed.
+- **Filters:** optional killzone session windows and a higher-timeframe bias check. When the bias filter rejects a direction, the range re-arms and waits for a sweep of the opposite side rather than being discarded.
 
-- **Timeframe:** 5-minute for entries, 15-minute for bias confirmation. The 1-minute is too noisy; the 1-hour gives you too few PO3 cycles per day.
-- **Session:** Turn on London + New York overlap. That's where the edge stats show the highest win rates (around 68% on ES, 62% on BTC).
-- **Range type:** Use "Traditional" rather than "Adaptive." The adaptive mode recalculates the opening range dynamically, which sounds great but produces inconsistent zones. Traditional sticks to the first 30 minutes of the session.
-- **Edge stats lookback:** Set it to 200 sessions minimum. Below that, the probabilities swing wildly and become noise.
+**How It Works in Practice**
 
-**How I Trade It**
+The pipeline runs in one direction: compression detection anchors the range, a boundary breach arms a sweep candidate, the return deadline decides whether it was manipulation or breakout, and only a confirmed return opens the reference trade. Entry is the close of the confirming bar, the stop sits beyond the full sweep excursion including the wick plus a buffer, and the target is the fib extension of the manipulation leg. Because the sweep extreme is known at that exact bar, all three levels are determined with no lookahead.
 
-The PO3 logic is straightforward: price opens, sweeps a high or low (manipulation), then reverses into the opposite end of the range (distribution). The entry trigger is the manipulation sweep — wait for the wick to take out the session high or low, then look for a reversal candle confirmation. The edge stats panel helps you decide whether to take the trade: if the win rate is above 60% and the risk-reward is at least 1:1.5, I enter.
+From the next bar onward, each confirmed bar is checked against target and stop until the cycle closes as TARGET, STOP, or TIMEOUT. If a single bar touches both levels, the cycle counts as a stop and increments a separate ambiguous counter — intrabar order is unknowable, so the model refuses to guess in its own favor. Timeout cycles close at the actual R from the final close and are included in Average R rather than dropped.
 
-Stop loss goes beyond the sweep wick by 1-2 points depending on volatility. Take profit at the opposite end of the range. For trend continuation plays, I use the 15-minute bias to filter — only take long PO3 reversals if the 15-minute structure is bullish.
+**Pros**
 
-**Pros & Cons**
+- The statistics layer is a genuine differentiator. It answers whether the pattern currently has an edge on your chart, rather than just painting structure.
+- The conservative scoring rules — pessimistic ambiguity handling, a minimum sample gate, timeouts included in Average R — make the numbers harder to fool yourself with.
+- Clean, uncluttered visuals with per-layer toggles.
+- Session and range definitions are configurable across asset classes.
+- Cycle diagnostics (Failed / Breakout) are reported separately from trade results, answering a different question: how often the market plays the manipulation game at all.
 
-**Pros:**
-- The live edge stats are genuinely useful for position sizing and filtering low-quality setups. Most indicators in this category give you nothing but a painted chart.
-- Clean, uncluttered visuals. The zones are transparent and don't obscure price action.
-- Customizable session times and range definitions give you flexibility across asset classes.
-- Alerts work reliably — I tested them across three days of live trading with zero missed triggers.
+**Cons**
 
-**Cons:**
-- The name is a nightmare. You'll be typing this into the search bar every time. Not a dealbreaker, but annoying.
-- The edge stats are only as good as the lookback data, and on thinly traded pairs (like GBPNZD), the sample sizes are too small to be meaningful.
-- No multi-timeframe confluence built-in. You'll need to manually check the higher timeframe for bias.
-- It's a trend indicator at heart, but it doesn't tell you *why* a PO3 setup fails. When it fails, it fails fast — you need to respect the stop.
+- The name is unwieldy, and the script search bar will be your enemy.
+- The statistics measure a reference model, not your execution — fills at bar close, no commissions, no slippage, no position sizing. Real results will differ.
+- Statistics reset when the chart reloads and depend on loaded history depth; the period buffer covers a rolling window.
+- It's a detector with an embedded measurement model, not a position manager. No trailing stops, no scaling out.
+- Multi-timeframe confluence is not built in beyond the optional HTF bias filter.
 
 **Who It's For**
 
-This is for the trader who understands ICT concepts but doesn't want to spend 20 minutes manually drawing session ranges and calculating probabilities. If you're a swing trader or intraday scalper who trades the London/NY overlap, this will save you time and give you a statistical edge. It's also great for backtesting — you can quickly scan historical sessions to see how the PO3 played out.
-
-If you're a pure price action trader who hates indicator clutter, skip it. And if you're expecting a "set and forget" signal bot, this isn't it — it's a decision-support tool, not an autopilot.
+This suits a trader who already understands ICT structure and wants the accumulation/manipulation/distribution cycle identified mechanically, with an honest scoreboard attached. It's useful for scanning historical cycles and for filtering setups by measured performance rather than by feel. It is not for anyone expecting a set-and-forget signal bot — it detects, projects, and reports; execution remains yours. Traders who dislike indicator overlays altogether should look elsewhere.
 
 **Alternatives Worth Considering**
 
-- **LuxAlgo Power of 3:** More visually polished, but no live edge stats. Better for presentation, worse for actual trading decisions.
-- **ICT PO3 Dashboard:** Free and simpler, but it lacks the statistical layer entirely. Good if you just need session zones.
-- **Smart Money Concepts by LuxAlgo:** A broader toolkit that includes PO3 plus order blocks and fair value gaps. Better if you want an all-in-one SMC suite.
+- **LuxAlgo Power of 3:** more visually polished, but without the live statistics layer.
+- **ICT PO3 Dashboard:** simpler and free, session zones without the statistical component.
+- **Smart Money Concepts by LuxAlgo:** a broader SMC toolkit covering PO3 alongside order blocks and fair value gaps.
 
 **FAQ**
 
-**Does this work for crypto?** Yes, but only on BTC and ETH. The PO3 concept relies on defined session opens, which crypto doesn't have naturally — you'll need to use the "Custom Session" option and set your own range. It works, but the edge stats are less reliable.
+**Does this work on all markets?** The script states it works on all markets and timeframes, with defaults tuned for 15M charts. The dashboard flags when you're on a different timeframe.
 
-**Is it repainting?** The zones don't repaint once the session range is set, but the edge stats update in real time as new data comes in. That's not repainting — that's just live calculation.
+**Is it repainting?** The script states that every state transition, signal, and outcome is evaluated on confirmed bar closes, and that higher-timeframe data uses the last closed HTF bar. Boundaries use confirmed pivots with equal left/right lookback, which the documentation describes as delayed confirmation rather than repainting of future values.
 
-**Can I use it for automated trading?** No. It's a manual analysis tool. Alerts can trigger, but you'll need to execute trades yourself.
+**Can I use it for automated trading?** No. It's an analysis tool with alerts, not an automated bot. Trade decisions remain yours.
 
 **Final Verdict**
 
-The Amd_Po3_With_Live_Edge_Stats_Willyalgotrader earns its 4-star rating because it does one thing well — combining the PO3 structure with live statistical validation — and does it honestly. The edge stats panel is a genuine differentiator that makes you think about probability, not just pattern recognition. It's not perfect; the name is absurd, the multi-timeframe analysis is on you, and it's not a complete trading system. But if you trade session opens and want a statistical edge without building a custom Python script, this is a solid, reliable tool.
+This indicator does one thing well — chaining PO3 structure detection into a measured, walk-forward statistics model — and it's upfront about the limits of that model. The statistics panel forces you to think in terms of probability and sample size rather than pattern recognition alone. It's not a complete trading system, the reference model won't match your fills, and the name is a problem. But if you trade session structure and want measured feedback rather than a painted chart, it's a solid, honest tool.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Worth installing, worth paying for, and worth keeping on your default chart. Just give it a week to learn its behavior before trusting the stats.
+**Rating: ⭐⭐⭐⭐ (4/5)**
 
-## Frequently Asked Questions
-
-### Is Amd_Po3_With_Live_Edge_Stats_Willyalgotrader worth it?
-
-Based on testing across multiple timeframes, Amd_Po3_With_Live_Edge_Stats_Willyalgotrader delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

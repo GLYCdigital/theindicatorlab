@@ -16,9 +16,9 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Pwvo is a volume-based momentum oscillator. It’s functional but not groundbreaking. Here’s how to set it up and where it falls short."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: 3/5 ⭐⭐⭐**  
+**Final Verdict: 3/5 ⭐⭐⭐**
 *Won’t hurt your trading, but won’t transform it either.*
 
 ---
@@ -27,28 +27,26 @@ description: "Pwvo is a volume-based momentum oscillator. It’s functional but 
 
 Pwvo stands for “Price-Weighted Volume Oscillator.” It takes raw volume data and weighs it against price movement to create a smoothed oscillator line. Think of it as a less popular cousin to the Volume-Weighted MACD or the Chaikin Money Flow. It tries to answer: *Is the volume behind a price move confirming or diverging?*
 
-I tested it on BTC/USDT 1H and 4H charts, and on ES1! 5-minute. The output is a single line oscillating around a zero centerline. No histogram, no overbought/oversold bands by default—just a line.
+The output is a single line oscillating around a zero centerline. No histogram, no overbought/oversold bands by default—just a line.
 
 ---
 
 **Key Features That Set It Apart**
 
 - **Built-in smoothing options:** You can choose between EMA, SMA, and WMA for the core calculation. Most volume indicators lock you into one.
-- **Adjustable lookback period:** Default is 14, but I found 21 works better for swing trades, 9 for scalps.
+- **Adjustable lookback period:** The length is user-configurable rather than fixed.
 - **Divergence hints:** It’s not labeled, but the line will show clear peaks and troughs that can be compared to price. That’s where the value is.
 
 Nothing revolutionary. It’s a clean, no-nonsense implementation of a concept that already exists.
 
 ---
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-After testing 20+ combinations:
-
-- **Timeframe:** 1H or higher. Below that, the line becomes noise.
-- **Length:** 21 for daily swing, 14 for intraday momentum.
-- **Smoothing type:** WMA (Weighted Moving Average). It reacts faster than EMA to volume spikes without whipsawing like SMA.
-- **Signal line:** The default doesn’t include one. I’d add a 5-period SMA of the Pwvo line yourself for cross signals—it’s not built in.
+- **Timeframe:** Higher timeframes tend to produce a cleaner line. On very low timeframes, the line becomes noisy.
+- **Length:** A longer lookback suits slower, swing-style reading of the oscillator; a shorter lookback makes it more responsive for intraday momentum.
+- **Smoothing type:** WMA reacts faster than EMA, while SMA is the slowest of the three. Which one suits you depends on how much responsiveness you want versus how much whipsaw you’re willing to tolerate.
+- **Signal line:** Not included by default. If you want cross signals, you would need to add a moving average of the Pwvo line yourself—it’s not built in.
 
 ---
 
@@ -60,7 +58,7 @@ This is where Pwvo is decent but not great.
 - **Bearish entry:** Price makes a lower high, Pwvo makes a lower high (bearish divergence). Short on a break of the prior swing low.
 - **Exit:** When the Pwvo line crosses back below/above its own zero level. Don’t wait for a divergence to close—by then you’ve given back profit.
 
-**Real example from my test:** On the BTC 4H chart (as shown above), there was a clear bullish divergence on May 12–14. Price made a lower low, Pwvo made a higher low. Entry at $27,800, exit when Pwvo crossed zero at $29,400. Decent +5.7% move. But the indicator gave no warning when volume dried up—price reversed the next day.
+The indicator gives no warning when volume dries up; price can reverse shortly after a divergence plays out.
 
 ---
 
@@ -99,22 +97,20 @@ If you’re paying for Pwvo, you’re paying for a slightly cleaner interface. F
 
 **FAQ Addressing Real Trader Questions**
 
-**Q: Does Pwvo repaint?**  
-A: No. Once a bar closes, the value is fixed. I checked by refreshing the chart—no repainting.
+**Q: Does Pwvo repaint?**
+A: The indicator does not repaint. Once a bar closes, the value is fixed.
 
-**Q: Is it good for crypto?**  
+**Q: Is it good for crypto?**
 A: Yes, crypto loves volume indicators. But watch out for wash trading on low-cap coins—volume data can be fake.
 
-**Q: Can I use it alone?**  
+**Q: Can I use it alone?**
 A: Please don’t. Pair it with a trend filter (e.g., 200 EMA) or a support/resistance level. Alone, it’s a lagging confirmer at best.
 
 ---
 
 **Final Verdict: 3/5 ⭐⭐⭐**
 
-Pwvo is a functional, honest oscillator. It does what it says—no more, no less. It won’t replace CMF or OBV in my toolkit, but if you like the clean line and want to tweak smoothing, it’s a decent option. For free? Great. For paid? Look elsewhere.
-
----
+Pwvo is a functional, honest oscillator. It does what it says—no more, no less. It won’t replace CMF or OBV in most toolkits, but if you like the clean line and want to tweak smoothing, it’s a decent option. For free? Great. For paid? Look elsewhere.
 
 ## Go Deeper with The Indicator Lab
 

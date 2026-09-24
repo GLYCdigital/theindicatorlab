@@ -16,40 +16,33 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Stochastic_Momentum_Index review: faster, smoother momentum oscillator than classic Stoch or RSI. Settings, strategy, pros/cons, and who it's actually for."
+grounding: "none (no source found)"
 ---
-
 ## The Short Version: What This Indicator Actually Does
 
-The Stochastic_Momentum_Index (SMI) is a momentum oscillator that improves on the classic stochastic by adding a smoothing layer. Instead of giving you raw %K and %D lines like the standard stochastic, it calculates the position of the current close relative to the midpoint of the high-low range over a set period, then double-smoothes the result. The chart above shows how it produces cleaner signals with less noise than its predecessor.
+The Stochastic_Momentum_Index (SMI) is a momentum oscillator that builds on the classic stochastic by adding a smoothing layer. Instead of the raw %K and %D lines of the standard stochastic, it calculates the position of the current close relative to the midpoint of the high-low range over a set period, then double-smooths the result. The intent is cleaner signals with less noise than its predecessor.
 
-If you've ever found the standard stochastic too jittery in ranging markets, this is the fix. It's not revolutionary — it's been around since William Blau's 1993 book *Momentum, Direction, and Divergence* — but it's one of the most consistent momentum tools I've tested.
+If the standard stochastic feels too jittery in ranging markets, this is the design fix. It isn't a new idea — it traces back to William Blau's 1993 book *Momentum, Direction, and Divergence* — but it remains a widely used momentum tool.
 
 ## Key Features That Set It Apart
 
-- **Double smoothing** — The SMI uses two moving averages (typically EMA or SMA) on the raw stochastic value. This filters out the false crossovers that plague the standard stochastic.
-- **Overbought/oversold zones at ±40** — Not the usual 80/20. The SMI hits extremes faster and stays there longer, which changes how you interpret momentum exhaustion.
-- **Zero-line cross** — Acts like a MACD zero-line cross but with fewer whipsaws. When the SMI line crosses above zero, bullish momentum is confirmed; below zero, bearish.
-- **Hidden divergence potential** — Because it's smoothed, hidden divergences are clearer than on raw stochastics. Useful for trend continuation setups.
+- **Double smoothing** — The SMI applies two moving averages (commonly EMA or SMA) to the raw stochastic value, which filters out the false crossovers common to the standard stochastic.
+- **Overbought/oversold zones at ±40** — Not the usual 80/20. The SMI reaches extremes faster and tends to stay there longer, which changes how you read momentum exhaustion.
+- **Zero-line cross** — Functions like a MACD zero-line cross but with fewer whipsaws. A cross above zero suggests bullish momentum; below zero, bearish.
+- **Hidden divergence potential** — Because it's smoothed, hidden divergences tend to be clearer than on raw stochastics, which can help with trend continuation setups.
 
-## Best Settings (Tested on Multiple Timeframes)
+## Settings and How to Tune Them
 
-For **daily and 4H charts**, I settled on:
-- **%K Length**: 10
-- **%D Length**: 3
-- **Smoothing Method**: EMA (exponential)
-- **Signal Smoothing**: 3
-- **Double Smooth**: EMA
+The SMI exposes several inputs: the %K length, the %D length, the smoothing method, the signal smoothing, and the double-smooth method. The %K length controls how many bars feed the raw stochastic calculation; the %D length sets the signal line; the smoothing method selects the moving average type (EMA or SMA are the common options); signal smoothing applies an additional average to the signal line; and the double-smooth setting determines the moving average used for the final smoothing pass.
 
-This setup balances responsiveness with reliability. On lower timeframes (15m-1H), I tighten %K to 8 and use SMA smoothing to catch faster moves without lagging too much.
-
-Avoid the default settings in most scripts (often %K=5, %D=3). That's too fast and creates noise. The 10/3/EMA combo is the sweet spot.
+The general trade-off: shorter %K lengths make the oscillator more responsive but noisier, while longer lengths smooth the line at the cost of lag. EMA smoothing reacts faster than SMA; SMA is steadier. There is no single correct configuration — the right values depend on the instrument, timeframe, and how much lag you're willing to accept. The main thing to avoid is a configuration so fast that the double smoothing no longer serves its purpose.
 
 ## How to Use It for Entries and Exits
 
 ### Long Entry
 1. SMI line drops below -40 (oversold zone).
 2. Wait for it to turn up and cross back above -40.
-3. If the SMI line is also crossing above the signal line at the same time, that's a high-probability entry.
+3. If the SMI line is also crossing above the signal line at the same time, that's a stronger entry signal.
 4. **Stop-loss** below the most recent swing low.
 5. **Target** at the next resistance level or when SMI crosses back below +40.
 
@@ -73,7 +66,7 @@ Avoid the default settings in most scripts (often %K=5, %D=3). That's too fast a
 - Works well on 4H and daily — not just scalping timeframes.
 
 **Cons:**
-- Lag is higher than RSI or raw stochastic. You'll miss the first 5-10% of a move.
+- Lag is higher than RSI or raw stochastic, so entries come after the initial move.
 - Double smoothing can oversmooth in fast trends — you'll get late exits.
 - Not great for choppy, low-volatility markets. The SMI will just hover around zero.
 - Fewer scripts on TradingView have proper alerts for divergence (you'll need to code your own).
@@ -97,7 +90,7 @@ The SMI isn't a replacement for those — it's a middle ground. If you're alread
 ## FAQ
 
 **Q: Is the Stochastic_Momentum_Index the same as the standard stochastic?**  
-A: No. The SMI uses the midpoint of the high-low range instead of the full range, then double-smoothes. It's a different calculation.
+A: No. The SMI uses the midpoint of the high-low range instead of the full range, then double-smooths. It's a different calculation.
 
 **Q: What timeframes work best?**  
 A: 4H and daily. Lower timeframes (1H, 30m) work but expect more whipsaws. Avoid below 15m.
@@ -113,12 +106,20 @@ A: Most TradingView scripts have alert conditions for crosses above/below +/-40 
 
 ## Final Verdict
 
-The Stochastic_Momentum_Index is a solid, boringly reliable momentum oscillator. It won't give you magic signals, but it will clean up your charts and reduce noise compared to raw stochastics. If you're a swing trader who values consistency over speed, this is worth installing.
+The Stochastic_Momentum_Index is a solid, unglamorous momentum oscillator. It won't give you magic signals, but it will clean up your charts and reduce noise compared to raw stochastics. If you're a swing trader who values consistency over speed, this is worth installing.
 
 **Star Rating: ⭐⭐⭐⭐ (4/5)**  
 One star deducted for the inherent lag and the lack of built-in divergence alerts in most free scripts. But for what it does — smooth momentum tracking — it's one of the best in this category.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Stochastic** implementation was backtested on 30 markets over 5 years of daily data (17,234 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.6%** (50% = coin flip)
+- Strongest markets: LTCUSD 56.5%, VIX 55.4%, EURUSD 55.2%, GBPUSD 53.4%
+- Weakest markets: NVDA 44.4%, SPY 43.8%, SHIBUSD 26.5%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

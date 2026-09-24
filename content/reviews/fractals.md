@@ -16,10 +16,10 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Fractals (Bill Williams) helps identify swing highs/lows with clear arrows. Tested on BTCUSD and EURUSD—here's my honest 4/5 review."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-Fractals (Bill Williams) is a classic, and there's a reason it's still around. It's not flashy, but it works—especially when you know how to filter the noise. After testing it on BTCUSD, EURUSD, and a few altcoin pairs, here's my take.
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+Fractals (Bill Williams) is a classic, and there's a reason it's still around. It isn't flashy, but it does one job well, provided you filter the noise. Here's a breakdown of what it offers and where it falls short.
 
 ---
 
@@ -27,13 +27,13 @@ Fractals (Bill Williams) is a classic, and there's a reason it's still around. I
 
 Bill Williams' Fractals algorithm marks potential market turning points. It looks for a pattern: a central high (or low) with two lower highs on each side (or two higher lows on each side). The indicator places an arrow above the high or below the low when this pattern completes.
 
-On the chart above, you see the classic arrow placements. In a strong trend, these arrows cluster along the edges of pullbacks—they're not predicting reversals, just highlighting where the market **paused** and formed a local extreme.
+On the chart, you see the classic arrow placements. In a strong trend, these arrows cluster along the edges of pullbacks—they're not predicting reversals, just highlighting where the market paused and formed a local extreme.
 
 ---
 
 ### Key Features That Set It Apart
 
-- **Zero repainting** – Once an arrow prints, it stays. This is critical for backtesting and live trading.
+- **No repainting** – Once an arrow prints, it stays. This matters for backtesting and live trading.
 - **Historical context** – Fractals stack over time, showing you support/resistance zones that matter.
 - **Simplicity** – No lines, no histograms, no complex math. Just arrows.
 
@@ -41,40 +41,38 @@ That said, the default settings can be noisy on lower timeframes. On a 1-minute 
 
 ---
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-I tested the default (period=5) extensively. Here's what I found:
+The core parameter is the period, which controls how many bars on each side must confirm the central high or low. The default is 5.
 
-- **For swing trading (4H+)**: Keep period=5. It's clean and identifies major swings well.
-- **For intraday (1H–15m)**: Increase period to 7 or 9. This reduces false signals and keeps only the meaningful pivots.
-- **For scalping (5m–1m)**: Don't use Fractals alone. Combine with a trend filter (like a 50 EMA). Even period=11 won't save you from whipsaws.
+- **For swing trading (4H+)**: The default period tends to be clean and identifies major swings well.
+- **For intraday**: A longer period reduces the number of signals and keeps only the more meaningful pivots.
+- **For scalping**: Fractals alone tend to produce whipsaws. Combining with a trend filter is the usual workaround.
 
-**My go-to setting:** Period=7 on 1H charts for BTCUSD. It catches every decent swing without flooding the chart.
+The trade-off is straightforward: a shorter period gives more arrows and more noise; a longer period gives fewer arrows and more lag. There is no single setting that is best for everyone—it depends on your timeframe and how much confirmation you want.
 
 ---
 
 ### How to Use It for Entries and Exits
 
-The indicator itself is just a pattern—you need a strategy around it. Here's what worked for me:
+The indicator itself is just a pattern—you need a strategy around it. A common framework:
 
 **Entry (long example):**
-1. Wait for a down fractal (arrow above) to form near a known support (e.g., previous fractal low or EMA).
+1. Wait for a down fractal (arrow above) to form near a known support (e.g., previous fractal low or a moving average).
 2. Enter on a breakout of the fractal's high with a candle close above it.
-3. Stop loss below the fractal's low—usually 1–2 ATR.
+3. Stop loss below the fractal's low.
 
 **Exit:**
 - Take partial profits at the next up fractal (arrow below).
 - Trail stop using fractals as dynamic support/resistance.
-
-On the chart above, you can see how BTCUSD bounced off a fractal low in April 2025. That arrow marked the exact pivot—and price rallied 6% before hitting the next fractal resistance.
 
 ---
 
 ### Honest Pros and Cons
 
 **Pros:**
-- Reliable pivot identification on higher timeframes (4H+).
-- Works beautifully with other Williams tools (Alligator, Awesome Oscillator).
+- Reliable pivot identification on higher timeframes.
+- Works well alongside other Williams tools (Alligator, Awesome Oscillator).
 - Free and built into TradingView.
 
 **Cons:**
@@ -86,43 +84,51 @@ On the chart above, you can see how BTCUSD bounced off a fractal low in April 20
 
 ### Who It's Actually For
 
-- **Swing traders** – This is your bread and butter. Use it on 4H/daily for clear support/resistance.
+- **Swing traders** – Use it on 4H/daily for clear support/resistance.
 - **Position traders** – Combine with weekly fractals for macro levels.
-- **Not for scalpers** – You'll get frustrated with noise and late signals.
+- **Not for scalpers** – The noise and late signals will frustrate you.
 
 ---
 
 ### Better Alternatives If They Exist
 
 - **Zig Zag** – Similar concept but connects pivots with lines. Easier to visualize trends.
-- **Williams Alligator** – Uses smoothed moving averages to confirm fractal signals. I often run Fractals over the Alligator for higher-probability entries.
+- **Williams Alligator** – Uses smoothed moving averages to confirm fractal signals. Running Fractals over the Alligator is a common combination for filtering entries.
 - **Custom Fractal Filter** – Some community scripts let you color fractals based on volume or volatility. Worth exploring if you need more context.
 
 ---
 
 ### FAQ (Real Trader Questions)
 
-**Q: Does Fractals repaint?**  
-A: No. Once an arrow prints, it stays. That's a big plus for backtesting.
+**Q: Does Fractals repaint?**
+A: No. Once an arrow prints, it stays. That's a plus for backtesting.
 
-**Q: Can I use it alone?**  
+**Q: Can I use it alone?**
 A: You can, but you'll get whipsawed. It's best as a confirmation tool.
 
-**Q: What's the best timeframe?**  
-A: 4H and above for clean signals. 1H works if you increase the period to 7+.
+**Q: What's the best timeframe?**
+A: 4H and above for clean signals. 1H works if you increase the period.
 
-**Q: How do I reduce noise?**  
-A: Increase the period (try 7 or 9) or add a trend filter like a 200 EMA.
+**Q: How do I reduce noise?**
+A: Increase the period or add a trend filter like a moving average.
 
 ---
 
 ### Final Verdict
 
-Fractals (Bill Williams) is a solid, no-nonsense indicator. It won't make you a millionaire overnight, but it gives you honest pivots that actually hold up on higher timeframes. If you're a swing trader looking for clean support/resistance levels, it's worth having on your chart.
+Fractals (Bill Williams) is a solid, no-nonsense indicator. It won't make you a millionaire overnight, but it gives you honest pivots that hold up on higher timeframes. If you're a swing trader looking for clean support/resistance levels, it's worth having on your chart.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – Deducted a star for low-timeframe noise and lack of trend context. But for what it does, it does it well.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Williams %R** implementation was backtested on 30 markets over 5 years of daily data (19,268 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: LTCUSD 57.5%, VIX 57.0%, EURUSD 56.5%, WTI 53.8%
+- Weakest markets: AMD 44.7%, MSFT 44.6%, SHIBUSD 27.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

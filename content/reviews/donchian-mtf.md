@@ -16,105 +16,117 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Donchian Channel indicator for spotting breakout zones and trend direction across higher and lower timeframes."
+grounding: "none (no source found)"
 ---
+## Donchian_Mtf Review: A Multi-Timeframe Take on the Classic Donchian Channel
 
-## Donchian_Mtf Review: Multi-Timeframe Breakout Tool That Actually Works
+Donchian_Mtf is a multi-timeframe adaptation of the classic Donchian Channel. Where the standard version plots the highest high and lowest low over a period on your current chart, this indicator lets you calculate those levels on a selected higher timeframe and plot them onto whatever chart you're viewing. That solves a common annoyance: manually aligning a higher-timeframe Donchian with a lower-timeframe chart.
 
-Let's cut through the noise. Donchian_Mtf is a multi-timeframe adaptation of the classic Donchian Channel. If you've ever tried to manually align a 1-hour Donchian with a 15-minute chart, you know the pain. This indicator plots the highest high and lowest low of a selected higher timeframe directly onto your current chart. Simple, effective, and saves you from flipping tabs.
+### What It Does
 
-I've been running this on BTC/USDT and ES futures for the last few weeks. Here's what I found.
+The indicator applies the standard Donchian concept—highest high and lowest low over a lookback period—but computes it on a timeframe you choose independently of the chart you're viewing. The practical effect is that you can see, for example, daily Donchian levels while trading on a much lower timeframe.
 
-### What It Actually Does
+It draws three lines:
 
-Donchian_Mtf takes the standard Donchian Channel concept—plotting the highest high and lowest low over a period—and lets you set a *different* timeframe for the calculation. For example, you can see the daily Donchian levels while trading on a 15-minute chart. The indicator draws three lines: upper channel (resistance), lower channel (support), and the middle line (average of the two).
+- **Upper channel** — the highest high over the lookback, functioning as resistance.
+- **Lower channel** — the lowest low over the lookback, functioning as support.
+- **Middle line** — the average of the two, which can serve as a trend bias reference.
 
-As the chart above shows, the indicator doesn't repaint. Once a bar closes on the higher timeframe, those levels stay fixed until the next higher-timeframe bar closes. This is crucial for backtesting and live trading.
+The core selling point is that the higher-timeframe calculation is genuine rather than a rescaled approximation. Once a higher-timeframe bar closes, those levels are fixed until the next higher-timeframe bar closes.
 
-### Key Features That Set It Apart
+### Key Features
 
-- **True MTF without repainting.** Many "MTF" indicators fake it by just scaling the time. This one actually calculates on the selected higher timeframe and plots the values correctly.
-- **Customizable channel length.** Default 20 periods, but I've found 50 works better for swing trading.
-- **Midline toggle.** You can hide it if you just want the breakout boundaries.
-- **Alert-ready.** You can set alerts when price touches the upper or lower channel on the higher timeframe.
+- **Multi-timeframe calculation.** Levels are computed on the selected higher timeframe rather than approximated from the current chart.
+- **Customizable channel length.** The lookback period is user-adjustable.
+- **Midline toggle.** The middle line can be hidden if you only want the breakout boundaries.
+- **Alert capability.** Alerts can be configured on the upper and lower channel.
 
-### Best Settings (What I Actually Use)
+### Settings and How to Tune Them
 
-- **Higher Timeframe:** 1D or 4H for swing trading. For intraday scalping, 1H on a 5-minute chart.
-- **Channel Length:** 20 for fast breakouts. 50 for trend-following. 100 for major structural levels.
-- **Midline:** On for trend bias (price above midline = bullish bias). Off if you just want pure breakout levels.
-- **Line Style:** Solid lines with 50% transparency so they don't clutter the chart.
+- **Higher Timeframe.** Set this to the timeframe whose structure you want to trade against. A higher timeframe relative to your execution chart is the point of the tool; the wider the gap, the slower the levels move.
+- **Channel Length.** Controls the lookback for the highest high and lowest low. Shorter lengths respond faster to recent price; longer lengths produce broader structural levels that change less often. The right value depends on whether you're using the tool for breakout entries or as a trend filter.
+- **Midline.** Enabling it gives you a trend bias reference—price above the midline versus below it. Disabling it leaves only the breakout boundaries.
+- **Line Style.** Purely cosmetic. Adjust transparency and color so the levels don't clutter the chart.
 
-### How to Use It for Entries and Exits
+### How to Use It
 
-**Breakout Strategy:**
-- Wait for price to close above the upper Donchian channel on the higher timeframe (say, 4H).
-- Enter long on the lower timeframe (15m) when price retests the breakout level as support.
-- Stop loss at the lower channel of the current lower timeframe or below the most recent swing low.
-- Target the next higher timeframe channel extension or 2x the channel width.
+**Breakout approach:**
+- Wait for price to close beyond the upper or lower channel on the higher timeframe.
+- On the lower timeframe, look for a retest of the breakout level as support (for longs) or resistance (for shorts).
+- Place stops beyond the opposite channel or beyond the most recent swing on the execution timeframe.
+- Targets can be set at the next channel extension or at a multiple of the channel width.
 
-**Reversal Strategy:**
-- Price touches the upper channel on the higher timeframe and forms a bearish divergence on RSI or MACD.
-- Short on the lower timeframe with stop above the upper channel.
-- Target the midline or lower channel.
+**Reversal approach:**
+- Price reaches the upper or lower channel on the higher timeframe and momentum diverges (for example, on RSI or MACD).
+- Enter against the move on the lower timeframe, with a stop beyond the channel.
+- Target the midline or the opposite channel.
 
-**Trend Filter:**
-- Price above midline = only take long setups.
-- Price below midline = only take short setups.
-- This alone filters out 40% of bad trades.
+**Trend filter:**
+- Price above the midline: favor long setups.
+- Price below the midline: favor short setups.
+- Used this way, the midline acts as a directional bias rather than a signal generator.
 
-### Honest Pros and Cons
+### Pros and Cons
 
 **Pros:**
-- Saves time. No more manual timeframe alignment.
-- Non-repainting. Huge for confidence.
-- Works on any market: crypto, forex, futures.
-- Lightweight. Doesn't slow down my TradingView.
+- Removes the manual work of aligning timeframes.
+- Levels are fixed once the higher-timeframe bar closes.
+- Applies to any market the platform supports.
+- Lightweight—doesn't add noticeable chart overhead.
 
 **Cons:**
-- No alerts for midline crosses (only upper/lower). Minor annoyance.
-- Doesn't show channel width as a % or ATR multiple. Would help with position sizing.
-- The default color scheme is ugly. I changed it to blue/red immediately.
-- No multi-timeframe confluence indicator (e.g., showing when both 1H and 4H channels align). That would be a 5-star feature.
+- No alerts on midline crosses, only on the upper and lower channels.
+- No channel-width readout as a percentage or ATR multiple, which would help with position sizing.
+- Default color scheme is not attractive out of the box.
+- No confluence feature showing when multiple higher timeframes align.
 
-### Who It's Actually For
+### Who It's For
 
-- **Swing traders** who use Donchian as a trend-following tool.
-- **Breakout traders** tired of fakeouts from lower timeframes.
-- **Anyone who trades multiple timeframes** and wants a visual anchor.
-- **Not for scalpers.** The higher timeframe levels change too slowly for sub-1-minute charts.
+- **Swing traders** using Donchian channels as a trend-following framework.
+- **Breakout traders** who want higher-timeframe levels as a filter against lower-timeframe noise.
+- **Multi-timeframe traders** who want a visual anchor from a higher timeframe.
+- **Not for scalpers.** Higher-timeframe levels move too slowly to be useful on very short charts.
 
-### Better Alternatives
+### Alternatives
 
-- **LuxAlgo's Donchian Channels** – More features (channel %, alerts, multi-style), but heavier and costs money.
-- **Kijun Sen (Ichimoku)** – Similar concept but includes lagging line and cloud. Better for trend context.
-- **Standard Donchian Channel** – Free, built-in. If you only trade one timeframe, skip this MTF version.
+- **LuxAlgo's Donchian Channels** — more features (channel percentage, alerts, styling options), but heavier and paid.
+- **Kijun Sen (Ichimoku)** — similar concept with additional trend context via the lagging line and cloud.
+- **Standard Donchian Channel** — the built-in version. If you only trade one timeframe, the MTF version adds nothing.
 
 ### FAQ
 
-**Q: Does this indicator repaint?**  
-A: No. The levels update only when the higher timeframe bar closes. I verified this by comparing with a standard Donchian on the higher timeframe chart.
+**Does it repaint?**
+The levels update when the higher-timeframe bar closes, not intrabar, so closed levels stay fixed until the next higher-timeframe close.
 
-**Q: Can I use it for crypto?**  
-A: Yes. Works great on BTC and ETH. Just set the higher timeframe to 4H or 1D.
+**Can it be used for crypto?**
+Yes. It applies to any instrument the platform carries.
 
-**Q: What's the best channel length?**  
-A: 20 for day trading, 50 for swing, 100 for position trading. Test on your instrument.
+**Which channel length is best?**
+There's no universal answer. Shorter lengths suit faster trading styles; longer lengths suit position-level structure. Test on your own instrument.
 
-**Q: Does it work on Forex?**  
-A: Yes, but I find it less reliable due to lower volatility. Better on indices and crypto.
+**Does it work on forex?**
+It works, but lower-volatility instruments produce narrower channels and levels that may be less meaningful for breakout trading.
 
 ### Final Verdict
 
-Donchian_Mtf is a solid, no-nonsense tool for traders who already use Donchian channels but need the multi-timeframe edge. It's not flashy, doesn't have machine learning, and won't predict the future. What it does is give you clean, non-repainting levels from a higher timeframe directly on your chart. For $0 (it's free on TradingView), that's a steal.
+Donchian_Mtf is a focused tool for traders who already use Donchian channels and want higher-timeframe levels plotted directly on their execution chart. It isn't flashy, doesn't claim to predict anything, and doesn't add features beyond its stated purpose. What it delivers is clean higher-timeframe levels without manual alignment.
 
-If you're a breakout trader or swing trader who values clean charts and reliable levels, install it. If you need more bells and whistles, look at LuxAlgo or build your own.
+For breakout or swing traders who value clean charts and reliable levels, it's worth installing. If you need richer feature sets, look at paid alternatives or the built-in version.
 
-**Rating:** ⭐⭐⭐⭐ (4/5)  
-- One star lost for lack of midline alerts and no channel width % display. But for a free MTF Donchian, it's hard to beat.
+**Rating:** 4/5
+- Loses a point for missing midline alerts and no channel-width display.
 
-**Final advice:** Use it as a filter, not a standalone system. Combine with volume or momentum for higher win rate.
+**Final note:** Use it as a filter or context layer, not as a standalone system. Pair it with volume or momentum analysis to inform entries.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Donchian** implementation was backtested on 30 markets over 5 years of daily data (44,030 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 55.4%, SPY 54.6%, QQQ 53.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 47.3%, VIX 46.5%, SHIBUSD 28.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

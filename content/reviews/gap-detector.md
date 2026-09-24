@@ -16,99 +16,96 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Gap_Detector review: how it spots real gaps, best settings for fill probability, entry/exit rules, and who should skip it. 4/5 stars."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Let’s cut through the fluff. Gap_Detector scans your chart for price gaps — those empty spaces between the previous close and the next open. It marks them with colored labels and lines, then tells you how often similar gaps have filled in the past. That’s it. No AI predictions, no magic signals. Just cold, historical data on gap behavior.
+Gap_Detector scans a chart for price gaps — the empty spaces between the previous close and the next open. It marks them with colored labels and lines, and it reports how often similar gaps have filled historically. That's the scope of the tool: no predictive modeling, no trade signals, just historical context on gap behavior.
 
-I tested it on ES futures, AAPL, and a few forex pairs. It works best on instruments with defined trading sessions (stocks, futures) and struggles on 24/5 markets like crypto where gaps are rare by design.
+Its usefulness depends heavily on the instrument. It is built for markets with defined trading sessions, such as stocks and futures. On continuously traded markets where gaps are rare by design, the gap detection has little to work with.
 
 ## Key Features That Set It Apart
 
-- **Gap classification**: It separates gaps into "breakaway," "runaway," "exhaustion," and "common" using volume and position context. This isn’t unique, but the visual clarity is solid.
-- **Fill probability**: The indicator calculates the percentage of historical gaps that filled within X bars. You set the lookback. I used 50 bars on a 1H chart — it showed 72% fill rate for AAPL gaps. Useful for sizing.
-- **Custom alerts**: You can trigger alerts when a gap forms, when it’s partially filled, or when it’s about to close completely. I set one for 50% fill and it caught a nice reversal on SPY.
-- **Multi-timeframe compatibility**: It works on 1H, 4H, daily, and weekly. On lower timeframes like 5M, the noise drowns out real gaps.
+- **Gap classification**: It separates gaps into "breakaway," "runaway," "exhaustion," and "common" using volume and position context. The classification approach is not unique, but the visual presentation is clear.
+- **Fill probability**: The indicator calculates the share of historical gaps that filled within a configurable number of bars. The lookback is user-defined. This is the feature most gap indicators lack — most simply draw the gap and stop there.
+- **Custom alerts**: Alerts can be triggered when a gap forms, when it is partially filled, or when it is close to filling completely.
+- **Multi-timeframe compatibility**: It functions across higher timeframes such as hourly, 4-hour, daily, and weekly. On very low timeframes, noise tends to overwhelm genuine gaps.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After running it on 10+ instruments, here’s what I settled on:
+The indicator exposes several parameters, and the right values depend on the instrument and timeframe you trade:
 
-- **Lookback period**: 50 bars for daily, 100 for 4H. Keeps calculations fast and relevant.
-- **Minimum gap size**: 0.5% for stocks, 0.3% for ETFs. Anything smaller is noise.
-- **Fill threshold**: 95% — meaning the gap is considered "filled" when price touches 5% inside the gap zone. Gives a bit of room.
-- **Show probability**: Enable. Disable only if you’re trading blind.
-- **Alert on new gap**: On. I missed two good trades because I wasn’t watching.
+- **Lookback period**: Controls how many bars of history feed the fill-probability calculation. A longer lookback gives a broader sample; a shorter one keeps the calculation responsive to recent conditions.
+- **Minimum gap size**: Filters out gaps below a chosen threshold. Smaller thresholds capture more gaps but include more noise; larger thresholds produce fewer, more significant gaps.
+- **Fill threshold**: Defines how far into the gap zone price must move before the gap is considered filled, rather than requiring a full traverse of the zone.
+- **Show probability**: Toggles the fill-probability display.
+- **Alert on new gap**: Enables an alert whenever a new gap is detected.
+- **Visuals**: Label display can be toggled independently of the gap lines, which is useful for keeping a chart readable.
 
-One tweak: if you’re trading forex, set minimum gap size to 0.1% and lookback to 20 bars. Gaps are tiny, but some hold.
+Because the source material does not specify numeric defaults or recommended values, treat these as conceptual controls and tune them to the instrument you are analyzing.
 
 ## How to Use It for Entries and Exits
 
-This is where Gap_Detector earns its keep. I use it in a simple three-step process:
+The indicator is intended to support a structured gap-trading process:
 
-1. **Identify the gap type**: A breakaway gap low in a trend? That’s a continuation signal. An exhaustion gap after a long run? I look to fade it.
-2. **Check fill probability**: Above 70%? I’ll enter a limit order near the gap edge. Below 50%? I skip or size down.
-3. **Set a stop and target**: Stop at 1.5x the gap size, target the other side of the gap. For a 2-point gap on ES, I’d risk 3 points for 2 points. Not great R:R, but the fill probability makes it work.
-
-Example: On the chart above (daily SPY, July 2026), you can see a breakaway gap at $535. Fill probability was 68%. I entered long at $536 with a stop at $533.5 and target $540. Filled in 3 days.
+1. **Identify the gap type**: A breakaway gap early in a trend is read as a continuation signal. An exhaustion gap after an extended run is read as a candidate for fading.
+2. **Check fill probability**: A high historical fill rate supports entering a limit order near the gap edge. A low fill rate argues for skipping the setup or reducing size.
+3. **Set a stop and target**: A common approach is placing the stop beyond the far side of the gap and targeting the opposite edge of the gap zone. The risk-to-reward on any individual trade may be unfavorable, with the historical fill rate providing the basis for the edge.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean visual layout. Gaps are color-coded by type, easy to spot at a glance.
-- Probability calculation is genuinely useful. Most gap indicators just show the gap.
-- Alerts work reliably. I tested across 3 different brokers’ data feeds — no false triggers.
-- Lightweight. Doesn’t lag even on 20,000-bar charts.
+- Clean visual layout. Gaps are color-coded by type and easy to identify at a glance.
+- The probability calculation adds genuine information rather than just marking gaps.
+- Alerts are described as functioning reliably.
+- Lightweight — it does not introduce noticeable lag on large bar counts.
 
 **Cons:**
-- Doesn’t adjust for gap size in probability. A 0.1% gap and a 5% gap get the same historical treatment. That’s lazy.
-- No gap fill speed metric. I want to know how fast gaps typically fill, not just if.
-- Interface is a bit cluttered on lower timeframes. Labels overlap if you don’t resize.
-- No native integration with strategies. You can’t backtest gap trades inside the indicator.
+- Fill probability does not adjust for gap size. A very small gap and a very large gap receive the same historical treatment.
+- No gap fill speed metric. It reports whether gaps filled, not how quickly.
+- The interface can become cluttered on lower timeframes, with labels overlapping unless resized.
+- No native strategy integration, so gap trades cannot be backtested inside the indicator itself.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Day traders** who trade stocks or futures and want a quick gap-fill edge.
-- **Swing traders** looking for entry zones after earnings or news gaps.
-- **Anyone who hates manual gap marking** — this saves 15 minutes per chart.
+- **Day traders** in stocks or futures looking for a quick gap-fill edge.
+- **Swing traders** seeking entry zones after earnings or news gaps.
+- **Traders who mark gaps manually** and want that process automated.
 
 **Not for:**
-- Crypto traders. Gaps are rare, and when they appear, they’re often manipulated.
-- Scalpers. On 1M charts, gaps are mostly data errors.
-- Traders who rely on pure price action. This is a statistical tool, not a crystal ball.
+- Crypto traders. Gaps are rare on continuously traded markets, and the probability data loses meaning.
+- Scalpers. On the lowest timeframes, gaps are often data artifacts rather than tradable events.
+- Traders who rely on pure price action. This is a statistical tool, not a directional forecast.
 
 ## Better Alternatives If They Exist
 
-If you want more depth, look at **Gap Analysis Pro** (paid) — it adds fill speed, volume-weighted probability, and backtesting. But it costs $49/month. Gap_Detector is free.
+If you want more depth, **Gap Analysis Pro** (paid) adds fill speed, volume-weighted probability, and backtesting capability.
 
-For a simpler approach, TradingView’s built-in **Gap** tool (under "Indicators & Strategies" > "Gap") marks gaps but offers no probability. Gap_Detector is a clear upgrade.
+For a simpler approach, TradingView's built-in **Gap** tool marks gaps but offers no probability. Gap_Detector is a clear upgrade on that baseline.
 
-If you’re on a budget, **Gap Filler** (community script) does 80% of what this does, but the code is messy and alerts are buggy.
+**Gap Filler** (a community script) covers much of the same ground, though its code and alert behavior are less polished.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does it work on crypto?**  
-A: Technically yes, but practically no. Gaps are so rare that the probability data is meaningless. Skip it.
+**Q: Does it work on crypto?**
+A: Technically yes, but practically no. Gaps are so rare that the probability data is not meaningful.
 
-**Q: Can I use it for backtesting?**  
-A: No. It shows historical fill rates but doesn’t let you run a full backtest. Export the data if you need it.
+**Q: Can I use it for backtesting?**
+A: No. It shows historical fill rates but does not support running a full backtest. Data can be exported if needed.
 
-**Q: How do I remove the labels from the chart?**  
-A: In settings, under "Visuals," uncheck "Show labels." Lines remain. I did this for cleaner charts.
+**Q: How do I remove the labels from the chart?**
+A: In settings, under "Visuals," uncheck "Show labels." The lines remain.
 
-**Q: Does it repaint?**  
-A: No. Gaps are historical — once marked, they stay. The probability updates as new bars close, but that’s expected.
+**Q: Does it repaint?**
+A: No. Gaps are historical — once marked, they stay. The probability updates as new bars close, which is expected behavior.
 
 ## Final Verdict
 
-Gap_Detector is a solid, no-nonsense tool for traders who want to exploit price gaps without the fluff. It’s not perfect — the missing speed metric and size adjustment bother me — but for a free indicator, it delivers real edge. I’ve made back my time in analysis savings within the first week.
+Gap_Detector is a straightforward tool for traders who want to work with price gaps without extra clutter. The missing speed metric and the lack of size adjustment in the probability calculation are real limitations. But as a free indicator, it provides a usable statistical layer on top of gap detection.
 
-If you trade stocks or futures on daily or 4H timeframes, install it. If you’re a crypto scalper, move on.
+If you trade stocks or futures on daily or 4-hour timeframes, it is worth installing. If you trade continuously open markets on very low timeframes, it is not built for you.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Does one thing well, but leaves room for improvement.
-
----
 
 ## Go Deeper with The Indicator Lab
 

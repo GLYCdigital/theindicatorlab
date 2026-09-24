@@ -16,91 +16,105 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Connors RSI blends RSI, streak length, and percentile rank to catch mean-reversion moves. Here's how to set it up and trade it."
+grounding: "none (no source found)"
 ---
-
-**My honest take:** Connors RSI isn't another RSI clone. It's a mean-reversion machine that most traders set up wrong. After running it on forex, crypto, and stocks, here's what actually works.
+**Honest take:** Connors RSI isn't another RSI clone. It's a mean-reversion tool built around a specific idea, and the way it's usually configured tends to work against that idea. Here's what it actually does and where it fits.
 
 ## What This Indicator Actually Does
 
 Connors RSI combines three separate elements into a single number:
-1. **Standard 3-period RSI** – ultra-sensitive to recent price changes
-2. **Up/Down Streak Length** – how many consecutive green or red candles you've had
-3. **Percentile Rank of Price Change** – where the current move sits vs. the last 100 bars
 
-The result? A reading between 0 and 100 that spikes to extreme levels during sustained moves – and that's exactly when you want to fade them.
+1. **Short-period RSI** – highly sensitive to recent price changes
+2. **Up/Down Streak Length** – how many consecutive higher or lower closes have occurred
+3. **Percentile Rank of Price Change** – where the current move sits relative to a lookback window of prior bars
+
+The result is a reading bounded between 0 and 100 that pushes to extremes during sustained directional moves — which is precisely the condition a mean-reversion trader wants to fade.
 
 ## Key Features That Set It Apart
 
-- **Default 3-period RSI** – Most people use 14. The 3-period makes it hyper-responsive. You'll catch reversals that standard RSI misses by 2-3 bars.
-- **Streak component** – This is the secret sauce. When you've had 7+ consecutive green candles, the streak score maxes out at 100, dragging the total up even if price barely moved.
-- **Percentile rank** – Adds a volatility context. A 2% drop in a quiet stock is a bigger deal than the same drop in a volatile crypto.
+- **Short RSI length** – The default is far shorter than the standard 14-period RSI, which makes the oscillator much more responsive to recent bars. That responsiveness is the point: it reacts to exhaustion faster than a conventional RSI.
+- **Streak component** – When price prints a long run of consecutive closes in one direction, the streak score maxes out and drags the composite toward an extreme even if the cumulative price change is modest. This is the piece that distinguishes it from a plain RSI.
+- **Percentile rank** – Adds a volatility context. The same percentage move means something different in a quiet instrument than in a volatile one, and the rank component normalizes for that.
 
-## Best Settings (Tested, Not Guessed)
+## Settings and How to Tune Them
 
-| Parameter | Default | My Recommended |
-|-----------|---------|----------------|
-| RSI Length | 3 | 3 (keep it) |
-| Streak Length | 2 | 2 (keep it) |
-| Rank Length | 100 | 100 (keep it) |
-| Oversold Threshold | 30 | **20** |
-| Overbought Threshold | 70 | **80** |
+The composite is built from three inputs: an RSI length, a streak length, and a rank lookback length. Beyond those, the indicator's usefulness depends on where you draw the overbought and oversold lines.
 
-Why tighten the thresholds? With default 30/70, you get too many false signals in trending markets. At 20/80, you only take trades when the move is truly exhausted. On the chart above, notice how the 20 level caught the exact bottoms in the August selloff.
+| Parameter | Role |
+|-----------|------|
+| RSI Length | Controls responsiveness of the RSI component |
+| Streak Length | Controls how many consecutive closes feed the streak score |
+| Rank Length | Controls the lookback window for the percentile rank |
+| Oversold Threshold | Lower line for long-side exhaustion |
+| Overbought Threshold | Upper line for short-side exhaustion |
+
+Two tuning notes worth keeping in mind:
+
+- The threshold levels are not fixed constants. They should be adjusted for each asset's volatility. A threshold set for a quiet instrument will trigger far too often on a volatile one.
+- Tightening the thresholds relative to the defaults reduces signal frequency and concentrates them on more extended moves, but it does not eliminate the indicator's core weakness in trending conditions.
 
 ## How to Use It for Entries and Exits
 
-**Long entry** – Wait for CRSI to dip below 20, then look for any bullish price action confirmation (hammer candle, bullish engulfing, or RSI crossing back above 20). Do not buy blindly at the 20 line.
+**Long entry** – Wait for CRSI to dip below the oversold threshold, then look for bullish price action confirmation (a hammer candle, a bullish engulfing pattern, or the oscillator crossing back above the threshold). Do not buy blindly at the line.
 
-**Short entry** – CRSI above 80, then wait for a bearish reversal pattern or a close below the 80 level.
+**Short entry** – CRSI above the overbought threshold, then wait for a bearish reversal pattern or a close back below the threshold.
 
-**Exit** – Take partial profits when CRSI returns to 50 (the median). Trail the rest with a 5-period ATR stop. Works better than a fixed percentage.
+**Exit** – Take partial profits when CRSI returns to the midpoint of its range, and trail the remainder with a volatility-based stop rather than a fixed percentage.
 
-**Filter for trending markets** – This indicator sucks in strong trends. Add a 200-period SMA. Only take CRSI signals if price is within 2% of that SMA. If price is far away, the trend is too strong to fade.
+**Filter for trending markets** – This indicator is weak in strong trends. A long-period moving average can act as a regime filter: only take CRSI signals when price is close to that average. If price is far away from it, the trend is too strong to fade.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Catches bottoms and tops earlier than standard RSI or Stochastics
-- The streak component prevents you from fighting strong momentum too early
-- Works on any timeframe from 5-min to daily
+- Reacts to tops and bottoms earlier than a standard RSI or Stochastics
+- The streak component discourages fighting strong momentum too early
+- Can be applied across intraday and daily timeframes
 - Free on TradingView
 
 **Cons:**
-- Whippy in choppy sideways markets – you'll get stopped out frequently
-- False signals during news events or earnings – the indicator doesn't know about fundamentals
-- Overbought/oversold levels are not fixed; you'll need to adjust for each asset's volatility
+- Whippy in choppy sideways markets — frequent stop-outs
+- Prone to false signals around news events and earnings, since the indicator has no awareness of fundamentals
+- Overbought/oversold levels are not fixed; they need to be adjusted per asset's volatility
 
 ## Who It's Actually For
 
-This is for **mean-reversion traders** who scalp pullbacks in range-bound markets. Day traders on 5-15 minute charts will love it. Swing traders on daily charts can use it for entry timing but must pair it with a trend filter.
+This is for **mean-reversion traders** who scalp pullbacks in range-bound markets. Short-timeframe day traders can use it directly. Swing traders on daily charts can use it for entry timing, but should pair it with a trend filter.
 
-**Not for:** Trend followers, breakout traders, or anyone who can't handle 3-4 consecutive losing trades.
+**Not for:** Trend followers, breakout traders, or anyone who can't tolerate several consecutive losing trades.
 
-## Better Alternatives If You Exist
+## Alternatives Worth Considering
 
-- **RSI with Divergence** – If you want fewer but higher-quality signals, stick with classic RSI and look for hidden divergences.
-- **Stochastic RSI** – Similar concept but smoother. Less whipsaw, but slower to react.
-- **Connors RSI + ATR Bands** – Best combo. Plot 2x ATR bands around the 20/80 levels and only trade when price touches both the band AND the CRSI extreme.
+- **RSI with Divergence** – Fewer but higher-quality signals if you're willing to wait for hidden divergences.
+- **Stochastic RSI** – Similar concept but smoother. Less whipsaw, slower to react.
+- **Connors RSI + ATR Bands** – Plot ATR-based bands around the threshold levels and only trade when price touches both the band and the CRSI extreme.
 
 ## FAQ
 
-**Q: Does Connors RSI work on crypto?**  
-Yes, but widen thresholds to 15/85. Crypto is more volatile and the default 20/80 will trigger too often.
+**Q: Does Connors RSI work on crypto?**
+It can, but crypto's higher volatility means the default thresholds will trigger too often. Widen them accordingly.
 
-**Q: Can I use it for long-term investing?**  
-No. This is a short-term mean-reversion tool. On weekly charts, it gives maybe 2-3 signals per year.
+**Q: Can I use it for long-term investing?**
+No. This is a short-term mean-reversion tool. On weekly charts it produces very few signals.
 
-**Q: Why does my CRSI look different from yours?**  
+**Q: Why does my CRSI look different from someone else's?**
 Check the streak calculation. Some scripts define "up streak" differently. The official Larry Connors version counts consecutive closes above the prior close.
 
 ## Final Verdict
 
-Connors RSI is a **4-star** indicator – not perfect, but genuinely useful when applied correctly. It's not a "set and forget" system. You need to adjust thresholds per asset, add a trend filter, and use price confirmation. But if you put in that work, it will consistently catch the exhaustion points of moves that other indicators miss.
+Connors RSI is a genuinely useful indicator when applied correctly, but it is not a "set and forget" system. You need to adjust thresholds per asset, add a trend filter, and wait for price confirmation. Do that work and it can flag exhaustion points that other oscillators miss. Skip that work and it will whipsaw you in exactly the conditions where mean reversion doesn't apply.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-*Would be 5 stars if it included built-in trend filters and adjustable thresholds per asset.*
+**Rating: ⭐⭐⭐⭐ (4/5)**
+*Would be 5 stars if it included built-in trend filters and per-asset adjustable thresholds.*
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

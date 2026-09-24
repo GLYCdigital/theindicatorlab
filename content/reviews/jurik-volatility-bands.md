@@ -16,102 +16,106 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Jurik Volatility Bands smooth price action with unique JMA filtering. We test settings, entry/exit rules, pros, cons, and better alternatives."
+grounding: "none (no source found)"
+---
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+A lag-reduced alternative to Bollinger Bands. Not perfect, but worth a look if you trade volatility.
+
 ---
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-A solid, lag-reduced alternative to Bollinger Bands. Not perfect, but worth your time if you trade volatility.
+## What Sets Jurik Volatility Bands Apart
 
----
+Jurik Volatility Bands (JVB) is a volatility-based envelope indicator using the Jurik Moving Average (JMA) as its core filter. Unlike standard Bollinger Bands, which rely on a simple moving average and standard deviation, JVB applies JMA's smoothing algorithm to reduce lag while keeping the bands responsive to price shifts.
 
-## What Actually Sets Jurik Volatility Bands Apart
+The difference shows on the chart: the bands tend to be smoother and hug price action more tightly during trending moves, while still widening during high-volatility events such as news spikes or earnings gaps.
 
-Let's cut the marketing fog. Jurik Volatility Bands (JVB) is a volatility-based envelope indicator using the Jurik Moving Average (JMA) as its core filter. Unlike standard Bollinger Bands that rely on a simple SMA and standard deviation, JVB uses JMA's proprietary smoothing algorithm to reduce lag while keeping the bands responsive to price shifts.
+## Key Features
 
-You'll see this immediately on the chart: the bands are smoother and hug price action tighter during trending moves, yet they still widen convincingly during high-volatility events like news spikes or earnings gaps.
+- **JMA Core:** The indicator is built around JMA's phase and power parameters, which govern how the average responds to price.
+- **Multiplier Control:** Similar in role to Bollinger Bands' standard deviation input, but expressed as a band multiplier that scales the envelope width.
+- **Source Flexibility:** The band calculation can be applied to different price sources, such as close or a high-low average, which changes how wide the bands sit relative to price.
 
-## Key Features I Actually Use
+## Settings and How to Tune Them
 
-- **JMA Core:** The default setting uses JMA's phase and power parameters. I found `Phase = 0` and `Power = 2` to be the sweet spot—clean without oversmoothing.
-- **Multiplier Control:** Similar to BB's standard deviation, but JVB uses a "band multiplier" (default 2.0). For scalping, I drop it to 1.5; for swing trades, 2.5 works better.
-- **Source Flexibility:** Works on close, high, low, or custom. I stick with `close` for consistency, but `hl2` (high-low average) gives slightly wider bands that catch false breakouts less often.
+- **Length:** The lookback period for the band calculation. Shorter lengths react faster and produce more signals; longer lengths smooth the bands and reduce whipsaws.
+- **Source:** Which price input feeds the calculation. Using the close keeps the bands consistent with standard practice; a high-low average tends to produce wider bands.
+- **Multiplier:** Scales the distance of the bands from the JMA core. A higher value widens the envelope, a lower value tightens it.
+- **JMA Phase:** Controls the phase adjustment of the moving average. A neutral setting keeps the average centered rather than leaning forward or backward.
+- **JMA Power:** Controls the balance between smoothing and responsiveness. Lower values smooth more, higher values react faster.
+- **Band Type:** Whether the upper band, lower band, or both are plotted.
 
-## Best Settings (Tested on BTC/USD 1H, 2026)
+There is no single configuration that suits every market or timeframe. The right values depend on the instrument's volatility and the trader's holding period, and they should be established by the trader's own testing rather than taken on faith.
 
-After about 50 backtests and 30 live trades, here's my config:
+## How the Indicator Is Typically Traded
 
-- **Length:** 20 (standard, works across timeframes)
-- **Source:** Close
-- **Multiplier:** 2.0 (default), 1.5 for scalping
-- **JMA Phase:** 0 (neutral)
-- **JMA Power:** 2 (balances smoothing and responsiveness)
-- **Band Type:** Both (upper and lower)
+**Entry concepts:**
 
-*Pro tip:* On 5-minute charts, lower the length to 14 and multiplier to 1.5. On daily charts, length 34 with multiplier 2.5 catches major trend shifts without whipsaws.
+1. **Squeeze Setup:** When the bands contract to a narrow range, a close outside the bands is often treated as a breakout trigger.
+2. **Momentum Confirmation:** Band breaks are frequently paired with a momentum oscillator, so that a long requires price closing above the upper band with momentum elevated, and a short requires the mirror condition.
+3. **Trend Filter:** On higher timeframes, a long-term moving average can be used to restrict longs to above the average and shorts to below it.
 
-## How I Actually Trade It
+**Exit concepts:**
 
-**Entry Rules:**
-
-1. **Bollinger Squeeze Setup:** When bands contract to their narrowest point in 20 bars, wait for a close outside the bands. That's your trigger.
-2. **Momentum Confirmation:** I only take long entries if price closes above the upper band *and* RSI (14) is above 50. Shorts: close below lower band + RSI below 50.
-3. **Trend Filter:** On 1H+, I check the 200 EMA. Longs only above it; shorts only below.
-
-**Exit Rules:**
-
-- Trail stop at the middle JMA line. If price closes back inside the bands, I'm out.
-- Take profit at the opposite band (e.g., long entry at upper band → target lower band). This works in ranging markets but fails in strong trends—adjust accordingly.
-
-**Example from my log:** On July 14, 2026, BTC 1H showed a squeeze on JVB (bands 20,2.0). Price closed above upper band at $62,400. RSI was 58. I went long, trail stopped at JMA ($61,900), and exited at $63,100 on a close back inside. +$1,200 on 0.5 BTC. Not a home run, but consistent.
+- Trail a stop at the middle JMA line, exiting if price closes back inside the bands.
+- Target the opposite band, which tends to work in ranging conditions but fails in strong trends.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Less lag than Bollinger Bands—JMA really does respond faster to trend changes.
-- Cleaner on noisy assets like crypto or forex pairs.
-- Squeeze detection is more reliable because the bands don't jump around as much.
+- Less lag than Bollinger Bands, since JMA responds faster to trend changes.
+- Cleaner appearance on noisy assets such as crypto or forex pairs.
+- Squeeze detection can be more stable because the bands don't jump around as much.
 
 **Cons:**
-- Not a standalone system. You *need* volume or momentum confirmation.
-- Can repaint? Yes, slightly. JMA recalculates on new bars, but the effect is minor (1-2 bars max). Not a dealbreaker, just be aware.
-- Steep learning curve for JMA parameters. Most traders will stick with defaults and miss optimization.
+- Not a standalone system. It generally needs volume or momentum confirmation.
+- Repainting: JMA recalculates on new bars, so recent bars can shift. The effect is limited but present, and it matters more on very low timeframes.
+- Steep learning curve for the JMA parameters. Many traders will stick with defaults and never explore the tuning options.
 
-## Who Is This Actually For?
+## Who It Suits
 
-- **Swing traders** (1H-4H) looking for a smoother volatility band than BB.
-- **Scalpers** who can handle the slight repaint risk on lower timeframes.
-- **Anyone trading crypto or volatile FX pairs**—JVB handles noise better than standard bands.
+- **Swing traders** on intraday-to-multi-day horizons looking for a smoother volatility band than Bollinger Bands.
+- **Scalpers** who are comfortable with the repaint behavior on lower timeframes.
+- **Traders in crypto or volatile FX pairs**, where JVB handles noise better than standard bands.
 
-**Not for:** Pure trend followers who want strict price action rules. JVB works best in ranges with occasional breakouts.
+**Not for:** Pure trend followers who want strict price action rules. JVB tends to work best in ranges with occasional breakouts.
 
-## Better Alternatives
+## Alternatives
 
-- **Bollinger Bands (default):** Free, no repaint, simpler. If JVB feels over-engineered, stick with BB.
-- **Keltner Channels:** Use ATR instead of standard deviation. Better for trending markets but lags more.
-- **VWAP Bands:** If you trade intraday and care about volume-weighted levels, VWAP bands are more accurate for mean reversion.
+- **Bollinger Bands (default):** Free, simpler, and no repaint. If JVB feels over-engineered, stick with BB.
+- **Keltner Channels:** Use ATR instead of standard deviation. Better suited to trending markets but lag more.
+- **VWAP Bands:** For intraday traders who care about volume-weighted levels, VWAP bands are more relevant for mean reversion.
 
 ## FAQ
 
-**Q: Does Jurik Volatility Bands repaint?**  
-A: Slightly. The JMA recalculates on each new bar, so the first 1-2 bars after a signal may shift. On higher timeframes (1H+), it's negligible. On 1-minute, avoid.
+**Q: Does Jurik Volatility Bands repaint?**
+A: The JMA recalculates on each new bar, so the most recent bars after a signal can shift. On higher timeframes the effect is negligible; on very low timeframes it is more of a concern.
 
-**Q: Can I use it for crypto?**  
-A: Yes, I tested on BTC and ETH. The noise reduction is noticeable. Lower multiplier to 1.5 for crypto's wider swings.
+**Q: Can it be used for crypto?**
+A: Yes. The noise reduction is noticeable on volatile instruments, and many traders reduce the multiplier to tighten the bands for crypto's wider swings.
 
-**Q: Is it better than Bollinger Bands?**  
-A: For smoothing? Yes. For simplicity? No. If you're new to volatility bands, master Bollinger first.
+**Q: Is it better than Bollinger Bands?**
+A: For smoothing, yes. For simplicity, no. Traders new to volatility bands are usually better off mastering Bollinger first.
 
-**Q: What's the best timeframe?**  
-A: 1H to 4H. Lower timeframes (5M-15M) generate too many false signals unless you pair with a volume filter.
+**Q: What's the best timeframe?**
+A: Higher intraday timeframes tend to produce cleaner signals. Lower timeframes generate more false signals unless paired with a volume filter.
 
 ---
 
 ## Final Score: ⭐⭐⭐⭐ (4/5)
 
-Jurik Volatility Bands is a genuine improvement over Bollinger Bands for traders who need less lag and cleaner signals. It's not a holy grail—nothing is—but it earns its place in my toolkit. Download it, tweak the JMA power to 2, and test it on a demo for a week. You'll either love the smoothness or find it's not your style.
+Jurik Volatility Bands is a genuine improvement over Bollinger Bands for traders who need less lag and cleaner signals. It's not a holy grail—nothing is—but it earns a place in a volatility toolkit. Test it on a demo before committing capital, and expect to spend time learning the JMA parameters.
 
-*Star deducted for the repaint factor and the learning curve on JMA settings. But if you put in the time, JVB pays you back.*
+*Star deducted for the repaint factor and the learning curve on JMA settings.*
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volatility** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

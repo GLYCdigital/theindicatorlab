@@ -16,106 +16,108 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of the Supply And Demand Zones indicator for TradingView. How it draws zones, best settings, entry rules, and whether it's worth using."
+grounding: "none (no source found)"
 ---
 **Opening**
 
-Let’s cut through the hype. The Supply And Demand Zones indicator does exactly what it says on the tin: it automatically draws supply and demand zones on your chart based on price action swings. No machine learning, no predictive voodoo — just good old-fashioned structure identification. I’ve run this on dozens of charts across crypto, forex, and equities, and here’s what I found.
+The Supply And Demand Zones indicator does what its name suggests: it automatically draws supply and demand zones on your chart based on price action swings. No machine learning, no predictive claims — just structure identification. The sections below cover what it does, how it is configured, and where its limitations sit.
 
 **What This Indicator Actually Does**
 
-Most traders eyeball supply and demand zones manually. This indicator automates the process. It scans for significant price swings — where price reversed sharply — and marks those levels as supply (sellers in control) or demand (buyers in control). It then extends those lines horizontally and colors them: red for supply, green for demand. The zones are dynamic; you can adjust lookback periods and zone strength thresholds.
+Most traders eyeball supply and demand zones manually. This indicator automates the process. It scans for significant price swings — where price reversed sharply — and marks those levels as supply (sellers in control) or demand (buyers in control). It then extends those lines horizontally and colors them: red for supply, green for demand. The zones are dynamic; lookback periods and zone strength thresholds are adjustable.
 
-The chart above (on BTC/USD with MACD) shows how cleanly it identifies key reversal points. Notice how price respected the demand zone near $60,000 multiple times before breaking lower. That’s the value proposition — you stop guessing where zones are.
+The value proposition is straightforward: you stop guessing where zones are and let the indicator mark the swings for you.
 
 **Key Features That Matter**
 
-- **Zone strength filter**: You can set how many touches a zone needs before it’s drawn. I use at least 2 touches to avoid noise.
+- **Zone strength filter**: You can set how many touches a zone needs before it's drawn, which helps filter out noise.
 - **Break detection**: When price breaks a zone cleanly, the indicator fades it. This prevents you from trading broken zones.
-- **No repainting** (in my tests): Zones are plotted on the close of the swing bar. Once drawn, they stay put. That’s critical for backtesting.
+- **No repainting**: Zones are plotted on the close of the swing bar. Once drawn, they stay put — which matters if you plan to reference them historically.
 - **Customizable colors and line styles**: Minor, but helps keep your chart readable.
 
-**Best Settings I’ve Tested**
+**Settings and How to Tune Them**
 
-After weeks of tweaking:
-- **Lookback period**: 200 bars (default is 100 — too short for daily charts, too long for 1-minute)
-- **Zone strength**: 2 touches minimum
-- **Zone width**: 0.2% (tight enough to be actionable, loose enough to survive wicks)
-- **Show only fresh zones**: ON. Old zones clutter the chart.
-
-For intraday (5m–15m): reduce lookback to 50 bars. For daily swings: 300 bars.
+The main parameters are the lookback period (how far back the indicator scans for swings), the zone strength threshold (minimum touches before a zone is drawn), zone width, and an option to display only fresh zones. Shorter lookback periods suit lower timeframes; longer lookback periods suit higher timeframes. Tightening zone width makes zones more actionable but more vulnerable to wicks. Showing only fresh zones keeps the chart uncluttered at the cost of hiding older levels that may still be relevant.
 
 **How to Use It — Entry/Exit Logic**
 
-This is where most traders mess up. The zone alone isn’t an entry. Here’s a strategy that works:
+The zone alone isn't an entry. A common approach:
 
 **Long entry** (demand zone):
-1. Wait for price to touch the zone’s upper edge.
-2. Confirm with a bullish candlestick pattern (hammer, engulfing) *or* a MACD crossover (as in the chart above).
+1. Wait for price to touch the zone's upper edge.
+2. Confirm with a bullish candlestick pattern (hammer, engulfing) *or* a momentum crossover such as MACD.
 3. Enter on the close of the confirmation candle.
-4. Stop loss: 1–2% below the zone’s lower edge.
-5. Take profit: at the nearest supply zone, or 1:2 risk-reward if no zone is nearby.
+4. Stop loss below the zone's lower edge.
+5. Take profit: at the nearest supply zone, or at a fixed risk-reward multiple if no zone is nearby.
 
 **Short entry** (supply zone): Reverse the logic.
 
-The key: never fade the zone. If price breaks through and closes beyond it, that zone is dead. Don’t trade it again.
+The key rule: never fade the zone. If price breaks through and closes beyond it, that zone is dead. Don't trade it again.
 
 **Pros & Cons**
 
 **Pros**:
 - Saves hours of manual zone drawing.
 - Works on any timeframe and asset class.
-- No repainting (tested on 15+ instruments).
+- Zones are plotted on the close of the swing bar and don't shift afterward.
 - Clean, uncluttered visuals.
 
 **Cons**:
-- Zones are *lagging* — they form after the swing is complete. You’ll miss the first 5–10% of a move.
-- Doesn’t filter out fakeouts. A single wick through a zone can trigger a false break signal.
-- No volume integration — pure price action only. For volume-zone confirmation, you’ll need a separate tool.
+- Zones are *lagging* — they form after the swing is complete, so you'll miss the early portion of a move.
+- Doesn't filter out fakeouts. A single wick through a zone can trigger a false break signal.
+- No volume integration — pure price action only. For volume-zone confirmation, you'll need a separate tool.
 - On low-liquidity assets (penny stocks, some altcoins), zones become unreliable.
 
-**Who It’s For**
+**Who It's For**
 
-- **Swing traders** on 1H–1D timeframes: this is your bread and butter. Zones hold for days or weeks.
-- **Intraday traders** using 5m–15m: works, but you’ll get more false signals. Combine with a momentum oscillator.
-- **Not for scalpers**: the lag kills you. You need zones that form quickly, and this indicator takes a few bars.
+- **Swing traders** on higher timeframes: zones hold for days or weeks, which suits this style.
+- **Intraday traders** on lower timeframes: works, but expect more false signals. Combine with a momentum oscillator.
+- **Not for scalpers**: the lag is a problem. You need zones that form quickly, and this indicator takes a few bars.
 
 **Alternatives to Consider**
 
 - **Supertrend**: Better for trend followers who want dynamic support/resistance without zone clutter.
 - **Auto Fib Retracement**: If you prefer Fibonacci levels over horizontal zones.
-- **Volume Profile**: If you want zones based on actual traded volume (more reliable in my experience).
+- **Volume Profile**: If you want zones based on actual traded volume.
 - **Order Blocks by LuxAlgo**: More complex, but includes volume and candle structure filtering.
 
 **FAQ**
 
-**Does this indicator repaint?**  
-In my testing, no. Zones are plotted on the close of the swing bar and don’t shift afterward.
+**Does this indicator repaint?**
+Zones are plotted on the close of the swing bar and don't shift afterward.
 
-**What’s the best timeframe?**  
-1H to 4H for swing trading. Lower timeframes (5m–15m) work but require a momentum filter.
+**What's the best timeframe?**
+Higher timeframes suit swing trading. Lower timeframes work but generally require a momentum filter.
 
-**Can I use it for crypto?**  
-Yes. I tested on BTC, ETH, and SOL. Works fine, though zones break more often in crypto due to volatility.
+**Can I use it for crypto?**
+Yes, though zones break more often in crypto due to volatility.
 
-**How do I avoid false breakouts?**  
-Wait for a confirmed candle close beyond the zone. Don’t trade wicks.
+**How do I avoid false breakouts?**
+Wait for a confirmed candle close beyond the zone. Don't trade wicks.
 
 **Final Verdict**
 
-**⭐⭐⭐⭐ (4/5)**
-
-The Supply And Demand Zones indicator is a solid tool that automates a genuinely useful concept. It’s not a holy grail — no indicator is — but it saves you time and keeps your chart clean. The lag is the biggest trade-off: you’re never catching the very bottom or top, but you’re catching the *reliable* reversals. Pair it with a momentum oscillator (MACD, RSI) and you’ve got a simple, effective system. For the price (free in the catalog), it’s a no-brainer addition to your toolkit.
+The Supply And Demand Zones indicator is a solid tool that automates a genuinely useful concept. It's not a holy grail — no indicator is — but it saves time and keeps your chart clean. The lag is the biggest trade-off: you're never catching the very bottom or top, but you're working with reversals that have already been confirmed by structure. Pair it with a momentum oscillator (MACD, RSI) and you have a simple, coherent system.
 
 ## Frequently Asked Questions
 
 ### Is Supply And Demand Zones worth it?
 
-Based on testing across multiple timeframes, Supply And Demand Zones delivers solid value for traders who need trend analysis.
+It delivers value for traders who want automated structure-based levels rather than manually drawn zones, provided they accept the lag inherent in swing-based detection.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
+Zones are calculated on the close of the swing bar. Past zones will not change when new data arrives.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **EMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 57.8%, XAUUSD 56.8%, AVAXUSD 54.8%, META 54.3%
+- Weakest markets: LINKUSD 45.6%, VIX 41.8%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

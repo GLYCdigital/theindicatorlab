@@ -17,57 +17,71 @@ categories:
 rating: 4
 description: "Candelacharts_Value_Area_Reversals review: real settings, backtested entry logic, pros & cons. Is this volume-based trend reversal tool worth your watchlist?"
 tv_script_url: "https://www.tradingview.com/script/korzg0xR-CandelaCharts-Value-Area-Reversals/"
+sources: ["https://www.tradingview.com/script/korzg0xR-CandelaCharts-Value-Area-Reversals/"]
 ---
-Let me cut through the name first. Candelacharts_Value_Area_Reversals sounds like a mouthful of buzzwords, but it's actually a straightforward concept executed well: it identifies when price leaves the value area (the high-volume zone from the previous session) and plots potential reversal points based on that displacement. I've run this on BTC, ES, and a few forex pairs over the last two weeks, and here's what I actually found.
+The name is a mouthful, but the concept underneath is straightforward: this indicator watches the value area from a rolling session volume profile and flags moments when price aggressively rejects its boundaries. That's a familiar idea for anyone who has traded Market Profile, and the script's contribution is in how it operationalizes it rather than in inventing a new premise.
 
-The core logic isn't new — Market Profile traders have been watching value area breaks for decades. What sets this indicator apart is how it operationalizes that idea. Instead of giving you a static histogram or a single POC line, it tracks the current session's developing value area and marks the moment price closes outside it with a clear reversal signal on the chart. The visual output is clean: you get a shaded value area box, a mid-line, and labeled arrows only when the displacement meets its internal confirmation criteria. No clutter, no repainting on historical bars (I checked), and the signals appear on the current candle — not delayed by two or three bars.
+**What it actually does**
 
-The default settings are a good starting point, but I found the sweet spot after some tweaking. Set the **Value Area Period to 70%** (the default is usually 68%, but 70% gives you slightly tighter zones that produce earlier signals). Keep the **lookback at 1 session** — anything higher lags too much on intraday charts. For the **confirmation type, switch to "Close" instead of "Touch"** — you'll get far fewer false positives, especially in ranging markets. If you're scalping lower timeframes like the 5-minute, add a **minimum volume threshold of 1.2x the 20-period average**; this filters out dead-market moves that would otherwise trigger signals.
+The script builds a rolling session Volume Profile and tracks the Value Area High (VAH) and Value Area Low (VAL). When price dips outside the established value area and then reclaims it, the indicator plots a reversal signal. Those signals are volume-filtered: a reversal candle only qualifies if its volume exceeds the volume of the last N similar-type candles. That filter is the difference between a raw boundary touch and a signal.
 
-The entry logic that made sense to me after testing: when the indicator plots a long signal above the value area high, wait for the next 3-5 minute candle to hold above that level before entering. Don't chase the arrow itself. For exits, the indicator doesn't give you a target — you'll want to pair it with a trailing stop or a fixed risk-reward of 2:1. In the chart above, notice how the long signal at the open of the US session caught a clean move while the earlier short signal in the Asian session failed — that's the volume filter doing its job.
+On top of the signal, the script runs what it calls Dynamic CISD (Change In State of Delivery) tracking. When a reversal fires, the script tracks price to find the lowest or highest swing point of the manipulation leg, then maps the body of that swing as a CISD level. That level is drawn as a projection line until price formally breaks it, confirming the shift in delivery. Separately, the indicator can optionally color individual candles that show significant volume spikes relative to their recent peers.
 
-**Pros:**
-- No repainting — I verified this by comparing historical signals against closed candles
-- The value area shading is accurate and updates in real-time without recalculation lag
-- Works well on both crypto and futures, though it shines on ES and NQ
-- The signal logic is transparent — you can see exactly why an arrow appears
+The visual output is a shaded value area with VAH, VAL, and POC levels, plus signal markers. The Volume Profile itself can be drawn as a classic stepped histogram or as a smoothed curved style, both of which map the same volume distribution.
 
-**Cons:**
-- No built-in stop loss or take profit levels — you're on your own for trade management
-- In strongly trending markets, it'll give you counter-trend signals that get run over (use it as a confluence tool, not a standalone system)
-- The input menu is cluttered — there are about 15 settings you'll never touch
+**Settings and How to Tune Them**
 
-This is built for **intraday traders who already understand volume dynamics** — if you're a beginner who just wants arrows to follow, you'll get chopped up. Swing traders won't find much use here since the value area resets daily. It pairs beautifully with a simple moving average filter (I used the 200 EMA on the 15-minute) to keep you on the right side of the trend.
+The settings are grouped into four blocks.
 
-If you're looking for alternatives: **VWAP + Volume Profile** by LuxAlgo gives you similar value area concepts with more customization for free. For a more automated approach, **Smart Money Concepts** by LuxAlgo handles order blocks and breaker blocks with clearer reversal signals. But if you want a dedicated value area reversal tool that doesn't try to do everything at once, this is one of the cleaner options.
+*Volume Profile:* you configure the timeframe that defines a session (for example, Daily), the number of horizontal bins, the Value Area percentage, and the aesthetic style (Curved vs Histogram). The Value Area percentage defaults to 70% in the script's own documentation.
 
-**FAQ:**
+*Change In State Of Delivery:* toggles the CISD tracking system on or off, and controls the line style and colors for the bullish and bearish CISD projections.
 
-*Does it work on gold or forex?* Yes, but I found it less reliable on forex due to lower volume data availability. Gold and indices are better.
+*Signals:* enables or disables the VA Reclaim signals and adjusts the lookback window used to qualify a volume spike.
 
-*Can I use it for crypto?* Absolutely — Bitcoin and Ethereum showed the most consistent signals, especially on the 15-minute and 1-hour timeframes.
+*Style:* full color control over up/down volume nodes, the VAH/VAL/POC levels, and the signal markers.
 
-*Does it repaint?* No, confirmed. Signals stay put once printed.
+Because the source material only documents the default 70% Value Area figure, treat the rest of the numeric inputs as things to tune against your own instrument and timeframe rather than values with a canonical right answer. The lookback window for the volume spike qualifier is the one that most directly changes signal frequency — a longer window raises the bar a reversal candle has to clear.
 
-*Is it good for scalping?* Only with the volume filter enabled; otherwise, you'll get too many signals in low-liquidity periods.
+**Alerts**
 
----
+The indicator ships with native alert conditions for Bullish and Bearish VA Reclaims (firing when a volume-backed reversal back into the value area is detected) and Bullish and Bearish CISD Confirmations (firing when price structurally breaks the dynamic CISD level).
 
-**Final verdict: ⭐⭐⭐⭐ (4/5)**
+**Pros**
 
-It's not a holy grail, and it won't replace your discretion. But as a volume-aware reversal tool that respects the value area concept, it earns its place on my chart. The lack of trade management features and the counter-trend signals in strong trends keep it from a perfect score. If you're willing to add your own filters and treat it as a confluence tool, you'll find it genuinely useful. If you're looking for a plug-and-play system, look elsewhere.
+- The signal logic is legible: a boundary rejection plus a volume condition, both of which you can see on the chart.
+- The volume filter is built in rather than bolted on, so signals are gated by participation rather than by the boundary touch alone.
+- Curved and histogram profile styles cover both the "read the distribution" and "read the shape" preferences.
+- CISD tracking adds a structural layer beyond the initial signal — it anchors to the swing and holds a level until price confirms.
 
-*Rating: ⭐⭐⭐⭐*
+**Cons**
 
-## Frequently Asked Questions
+- No built-in stop loss or take profit. Trade management is entirely on you.
+- The reversal premise is mean-reverting by construction, so in a strongly trending market it will produce counter-trend signals. Treat it as a confluence tool, not a standalone system.
+- The input menu is large. The settings documentation covers four groups with multiple sub-options each, and most users will touch a small fraction of them.
 
-### Is Candelacharts_Value_Area_Reversals worth it?
+**Who it's for**
 
-Based on testing across multiple timeframes, Candelacharts_Value_Area_Reversals delivers solid value for traders who need trend analysis.
+Intraday traders who already read volume dynamics and want a structured way to watch value area boundaries. The session-based profile resets, so the tool's frame of reference is the current session rather than a multi-day structure — swing traders looking for levels that persist across days won't get that here. Beginners looking for arrows to follow will find the volume filter and the counter-trend failure mode unforgiving.
 
-### Does this indicator repaint?
+**Alternatives**
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+VWAP + Volume Profile by LuxAlgo covers similar value area concepts with more customization. Smart Money Concepts by LuxAlgo handles order blocks and breaker blocks with its own reversal logic. This script's pitch is narrower: a dedicated value area reversal tool with dynamic CISD tracking rather than a general-purpose toolkit.
+
+**FAQ**
+
+*Does it work on gold or forex?* The script has no market restriction. Forex volume data is less complete than exchange-traded volume, which affects any volume-filtered signal, so the filter's behavior will differ by instrument.
+
+*Can I use it for crypto?* Nothing in the script restricts it to crypto or excludes it. Crypto trades on exchanges with real volume data, which suits the volume filter.
+
+*Does it repaint?* The source material does not make a repainting claim, and nothing here should be read as one. Signals are generated from the volume profile and candle data as described; whether a given signal holds depends on the volume condition being met, which is evaluated on the bar in question.
+
+*Is it good for scalping?* The volume filter is the relevant lever. With the spike-qualification lookback set tightly, low-liquidity periods will produce fewer qualifying signals; loosen it and you'll get more.
+
+**Final verdict**
+
+It's not a holy grail and it won't replace discretion. As a volume-aware reversal tool that respects the value area concept and adds a structural CISD layer on top, it's a coherent piece of work. The absence of trade management and the counter-trend failure mode in strong trends are real limitations. Add your own filters and treat it as confluence, and it's a reasonable addition to an intraday chart. Look for a plug-and-play system and this isn't it.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

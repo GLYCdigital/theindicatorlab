@@ -43,13 +43,19 @@ Position sizing is the standout feature. Each trade risks a fixed percentage of 
 
 Commission (0.05%) and slippage (2 ticks) are baked into the defaults, which is more honesty than most published strategies bother with.
 
+## Settings and How to Tune Them
+
+The defaults are standard values across the board: 12/26/9 MACD, 200 EMA, 14 ADX and ATR. The author explicitly warns against over-optimizing, and notes that results holding up across nearby parameter values are more trustworthy than a single curve-fit.
+
+The ADX threshold (default 20) is the main quality dial — raising it to 25 is the author's suggestion for fewer, higher-quality trades. The zero-line filter is the main frequency dial: disabling it first is the documented way to get more trades. Beyond that, every filter can be toggled independently, so you can isolate which ones are contributing. Custom start and end dates define the backtest window, and commission and slippage inputs should be adjusted to match your broker or exchange.
+
 ## How to use it
 
-The author's own guidance is worth following rather than fighting. Use it on trending markets and higher timeframes — 1H, 4H, Daily — because MACD crosses on very low timeframes are mostly noise. If you want more trades, disable the zero-line filter first. If you want fewer but higher-quality trades, raise the ADX minimum to 25.
+The author's own guidance is worth following rather than fighting. Use it on trending markets and higher timeframes — 1H, 4H, Daily — because MACD crosses on very low timeframes are mostly noise.
 
-Two practical cautions from the documentation. First, position sizing assumes one contract moves one currency unit per point of price, which fits crypto and stocks but not forex or futures — check your contract value and adjust. Second, the trade count matters: judge results on at least 100 trades, and distrust any configuration that looks brilliant over 20 or 30.
+Two practical cautions from the documentation. First, position sizing assumes one contract moves one currency unit per point of price, which fits crypto and stocks but not forex or futures — check your contract value and adjust. Second, the trade count matters: judge results on at least 100 trades, and distrust any configuration that looks brilliant over 20 or 30. The author also recommends testing across several symbols and timeframes rather than one, and using a lower risk per trade than you think you need in live trading, with a maximum acceptable drawdown set in advance.
 
-The defaults are all standard values (12/26/9 MACD, 200 EMA, 14 ADX and ATR), and the author explicitly warns against over-optimizing. Settings that hold up across nearby parameter values are more trustworthy than a single perfect curve-fit. Custom start and end dates let you define the backtest window, and the MACD histogram, line and signal all render in a separate pane.
+The MACD histogram, line and signal all render in a separate pane.
 
 ## Pros and cons
 
@@ -89,6 +95,7 @@ This is a clean, disciplined implementation of an idea that's been around foreve
 If you want a ready-made pullback framework to build on rather than a magic signal, this is worth the install.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

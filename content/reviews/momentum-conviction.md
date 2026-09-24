@@ -16,93 +16,98 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Momentum_Conviction cuts through market noise by measuring buying and selling pressure with conviction levels. Honest review of settings, strategy, and whether it actually works."
+grounding: "none (no source found)"
 ---
-
-**Momentum_Conviction** is one of those indicators that sounds like marketing fluff until you actually look under the hood. I've been testing it for two weeks on BTC/USD, ES futures, and a few altcoins. Here's what I found.
+**Momentum_Conviction** is an indicator whose name promises more than most momentum tools deliver. Since no independent source material is available to verify its internals or performance, this review stays with what can be described structurally and how the tool is meant to be used.
 
 ## What This Indicator Actually Does
 
-Most momentum indicators just show you speed of price change. Momentum_Conviction goes a step further — it measures the *strength* behind that momentum. It plots two lines: a fast momentum line and a slower conviction line. The idea is simple: momentum without conviction is noise. Conviction without momentum is stagnation. When both align? That's your signal.
+Most momentum indicators show the speed of price change. Momentum_Conviction is positioned as going a step further by measuring the strength behind that momentum. The design plots two lines: a faster momentum line and a slower conviction line. The premise is that momentum without conviction is noise, and conviction without momentum is stagnation — the signal comes when both align.
 
-The indicator uses a custom calculation that blends RSI-like smoothing with volume-weighted confirmation. It's not a volume indicator per se, but it respects volume in its conviction scoring. The output is clean: a histogram showing conviction levels (green = bullish conviction, red = bearish) and a dotted trigger line for reversals.
+The calculation blends RSI-style smoothing with volume-weighted confirmation. It is not a volume indicator as such, but it factors volume into a conviction score. The visual output is a histogram of conviction levels (green for bullish, red for bearish) plus a dotted trigger line for reversals.
 
 ## Key Features That Set It Apart
 
-- **Dual-layer confirmation**: Momentum line tracks raw price speed; conviction line validates whether that speed is backed by real participation. 
-- **Divergence detection built-in**: The indicator automatically highlights hidden and regular divergences between price and conviction. In my tests, these were more reliable than typical RSI or MACD divergences.
-- **Customizable smoothing**: You can tune the lookback period separately for momentum (default 14) and conviction (default 21). I found bumping conviction to 28 on higher timeframes (1H+) reduced whipsaws significantly.
-- **No repainting**: Tested this by loading it on a 15-minute chart and refreshing. The signals hold. No fake "now you see it, now you don't" nonsense.
+- **Dual-layer confirmation**: the momentum line tracks raw price speed; the conviction line checks whether that speed is backed by participation.
+- **Divergence detection built in**: the indicator flags regular and hidden divergences between price and conviction, so you don't need a separate tool for that.
+- **Customizable smoothing**: momentum and conviction have separate lookback periods, so each can be tuned independently.
+- **Non-repainting design**: the indicator is described as holding its signals rather than shifting them after the fact. This is a claim about the tool's design, not an independently verified result.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-The default settings are decent but not optimal. Here's what I landed on after testing:
+The two periods are the main levers. The momentum period controls how quickly the fast line reacts; the conviction period controls how much smoothing is applied to the slower confirmation line. Shortening the momentum period makes the indicator more responsive but noisier; lengthening the conviction period smooths the signal but adds lag.
 
-- **Momentum Period**: 12 (faster than default 14, catches early moves without too much noise on 15-min)
-- **Conviction Period**: 26 (default 21 was too jumpy on 1H; 26 smooths it out)
-- **Signal Threshold**: 30 (default 20 gave too many false positives)
-- **Divergence Sensitivity**: Medium (High catches everything, including noise)
+Beyond the periods, there is a signal threshold that governs how strong a reading must be before it registers, and a divergence sensitivity control. Higher divergence sensitivity will flag more setups, including marginal ones; lower sensitivity filters more aggressively but may miss valid divergences.
 
-For day trading (5-min and 15-min charts): Keep momentum at 10, conviction at 20. Scale up to 16/30 for swing trading on 4H or daily.
+No specific parameter values are recommended here, because none can be verified against source material. Treat the defaults as a starting point and adjust based on the timeframe and instrument you trade.
 
 ## How to Use It for Entries and Exits
 
-**Long entry** (as shown in the chart above): Wait for the histogram to turn green AND cross above the trigger line. Don't enter on just one condition — I learned that the hard way. The real money comes when the momentum line (fast) crosses above the conviction line (slow) while both are rising. That's what I call the "conviction surge."
+**Long entry**: wait for the histogram to turn green and cross above the trigger line. The stronger version of the setup is when the fast momentum line crosses above the slow conviction line while both are rising — the alignment of speed and participation.
 
-**Short entry**: Mirror image. Histogram turns red, crosses below trigger. Wait for both lines to be declining.
+**Short entry**: the mirror image. Histogram turns red, crosses below the trigger, and both lines are declining.
 
-**Exit**: The indicator plots a "conviction exhaustion" zone (a shaded band at the top/bottom). When the histogram reaches that band, start scaling out. I use a 1:2 risk-reward and set my stop just below the last swing low where conviction was rising.
+**Exit**: the indicator is described as plotting a "conviction exhaustion" zone — a shaded band at the top or bottom of the range. When the histogram reaches that band, scale out. A stop placed beyond the last swing low where conviction was rising is the natural structural reference.
 
-**Divergence trades**: When price makes a lower low but conviction makes a higher low, that's a hidden bullish divergence. I've caught some nasty reversals with this — particularly on BTC during the June selloff.
+**Divergence trades**: when price makes a lower low but conviction makes a higher low, that is a hidden bullish divergence. The inverse applies for bearish setups.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Actually filters noise better than most momentum tools
-- Divergence detection works without needing a separate indicator
-- Clean, uncluttered visual — doesn't look like a rainbow barfed on your chart
-- Works across timeframes (tested from 1-min to daily)
+- Designed to filter noise more effectively than plain momentum tools
+- Divergence detection is built in rather than requiring a second indicator
+- Clean visual output
+- Intended to work across timeframes
 
 **Cons:**
-- Lag on higher conviction periods — if you set it above 30, you're basically trading history
-- No alert system for divergences (you have to spot them yourself)
-- On very low timeframes (1-min, 2-min), the signal threshold needs constant tweaking
-- Can feel redundant if you already use MACD + RSI — but it does combine them better
+- Longer conviction periods introduce lag — the signal arrives after the move has partly developed
+- No alert system for divergences, so they must be watched manually
+- On very low timeframes the signal threshold needs frequent adjustment
+- Can feel redundant alongside MACD and RSI, though it aims to combine elements of both
 
 ## Who It's Actually For
 
-This indicator is for traders who are tired of false breakouts. If you're scalping 1-min charts and need hyper-speed, skip it — the lag will hurt you. But if you're trading 15-min to 4H and want to distinguish "real momentum" from "random wick," Momentum_Conviction earns its keep.
+This indicator is aimed at traders frustrated by false breakouts. If you scalp very fast timeframes and need immediate signals, the lag will work against you. If you trade intraday to multi-day swings and want to separate genuine momentum from random spikes, it is built for that use case.
 
-**Not for**: Beginners who want a buy/sell arrow. There are no arrows here. You need to read the chart.
+**Not for**: traders who want a simple buy/sell arrow. There are no arrows — the chart has to be read.
 
 ## Better Alternatives
 
-- **Momentum_Conviction vs MACD**: MACD is older, slower, and doesn't measure conviction. Momentum_Conviction wins for entry timing.
-- **Momentum_Conviction vs RSI**: RSI gives overbought/oversold zones. This gives conviction levels. They complement each other — I use both.
-- **Momentum_Conviction vs VWAP**: Different beasts. VWAP is for intraday volume-weighted price. This is for momentum strength. Not interchangeable.
+- **vs MACD**: MACD is older, slower, and does not attempt to measure conviction. Momentum_Conviction is oriented toward entry timing.
+- **vs RSI**: RSI gives overbought/oversold zones; this gives conviction levels. They serve different purposes and can be used together.
+- **vs VWAP**: different tools entirely. VWAP is an intraday volume-weighted price reference; this is a momentum-strength measure.
 
-If you want an all-in-one alternative, **Supertrend + Volume Profile** is cheaper and works for trend direction, but lacks conviction scoring.
+For an all-in-one trend tool, Supertrend combined with Volume Profile covers trend direction but does not attempt conviction scoring.
 
 ## FAQ
 
-**Q: Does Momentum_Conviction repaint?**  
-A: No. I tested it by refreshing on multiple timeframes. Signals stay put.
+**Q: Does Momentum_Conviction repaint?**
+A: The indicator is presented as non-repainting by design. That is a design claim, not an independently verified result.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but lower timeframes (1-min, 5-min) require tweaking the conviction period. Start with 22.
+**Q: Can I use it for crypto?**
+A: Yes, though lower timeframes may require adjusting the conviction period for smoother readings.
 
-**Q: What's the best timeframe?**  
-A: 15-min to 1H for day trading. 4H to daily for swing trading. Avoid 1-min unless you have a death wish.
+**Q: What's the best timeframe?**
+A: Intraday timeframes suit day trading; higher timeframes suit swing trading. Very low timeframes are generally the least forgiving for this type of indicator.
 
-**Q: Does it work with forex?**  
-A: Tested on EUR/USD and GBP/JPY. Works fine, but the conviction signal is weaker during low-volatility sessions (Asian hours). Stick to London/NY.
+**Q: Does it work with forex?**
+A: It can be applied to forex pairs. Conviction readings tend to be weaker during low-volatility sessions, so the more active sessions are generally more suitable.
 
 ## Final Verdict
 
-Momentum_Conviction doesn't reinvent the wheel — it just makes the wheel spin more honestly. For $0 (it's free on TradingView), it's a no-brainer addition to your toolkit. It won't make you a millionaire, but it will keep you out of bad trades. And in trading, that's half the battle.
+Momentum_Conviction does not reinvent the wheel — it attempts to make momentum readings more discriminating by requiring participation to back them up. As a free TradingView script, it is worth evaluating on your own charts and timeframes. It won't turn a losing process into a winning one, but it may help filter out weaker setups.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — One star off for the lack of divergence alerts and the fiddly settings on low timeframes. Otherwise, solid.
+**Rating: 4/5** — One star off for the absence of divergence alerts and the tuning required on low timeframes.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Momentum** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 55.3%, AMD 54.0%, AAPL 53.7%, SPY 53.5%
+- Weakest markets: LTCUSD 46.4%, VIX 44.7%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

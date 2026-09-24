@@ -16,98 +16,94 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of Candelacharts_Order_Blocks: a solid order-block detector with Mitigation, Breaker, and Reversal zones. Settings, strategy, pros/cons, and better alternatives."
+grounding: "none (no source found)"
 ---
+# Candelacharts_Order_Blocks Review
 
-I’ve tested dozens of order-block indicators, and most are either too noisy or too laggy. Candelacharts_Order_Blocks sits in the sweet spot — it’s visual, customizable, and actually respects the logic of institutional supply/demand zones. It’s not perfect, but it’s one of the few I’d keep on my chart.
+Most order-block indicators fall into one of two camps: too noisy to read, or so slow to update that the zone is stale by the time it prints. Candelacharts_Order_Blocks aims at the middle ground — visual, configurable, and built around the logic of institutional supply and demand zones. It is not perfect, but it is a reasonable addition to a discretionary trader's chart.
 
 ## What This Indicator Actually Does
 
-This is a multi-type order block scanner. It marks zones on your chart where large institutional orders likely sit — the classic “unmitigated” order blocks that price respects. But it goes further than the basic ones: it also highlights **Mitigated** blocks (already used), **Breaker** blocks (failed breakouts), and **Reversal** blocks (trend shifts). You get a clean, color-coded rectangle for each type.
+This is a multi-type order block scanner. It marks zones where large institutional orders are presumed to sit — the classic "unmitigated" order blocks that price is expected to respect. It goes beyond the basic version by also highlighting **Mitigated** blocks (already traded into), **Breaker** blocks (failed breakouts), and **Reversal** blocks (trend shifts). Each type is drawn as a color-coded rectangle.
 
-The chart above shows how it labels a fresh buy-side order block (blue) that later gets mitigated (fades) or turns into a breaker (red). No clutter — just the zones that matter.
+The intended presentation is a fresh buy-side order block that later gets mitigated (fades) or converts into a breaker (changes color). The point is to keep the visual footprint limited to zones that still matter.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Four block types in one script**: You can toggle each on/off. I keep only Unmitigated and Breaker blocks — the noise is low.
-- **Custom timeframes**: You set the higher timeframe for block detection. I use 15m blocks on a 1m chart for scalping. Works.
-- **Mitigation logic**: When price touches the block, it doesn’t vanish — it fades or changes color. You can set a “mitigation threshold” (percentage of block size) so a quick wick doesn’t invalidate it.
-- **Alerts per block type**: You can get notified when price enters a block zone. Useful for automated scanners.
-- **Lookback control**: Limit how many blocks are shown. Prevents your chart from looking like a rainbow mess.
+- **Four block types in one script**: Unmitigated, Mitigated, Breaker, and Reversal blocks, each individually toggleable.
+- **Custom detection timeframe**: You choose the higher timeframe used for block detection, independent of your chart timeframe.
+- **Mitigation logic**: When price touches a block, it does not simply disappear — it fades or changes color. A mitigation threshold (expressed as a percentage of block size) can be set so a brief wick does not invalidate the zone.
+- **Alerts per block type**: Notifications can be configured for when price enters a block zone, which is useful for scanning.
+- **Lookback control**: Limits how many blocks are displayed, which keeps the chart from becoming unreadable.
 
-## Best Settings With Specific Recommendations
+## Settings and How to Tune Them
 
-Default settings are decent, but I tweak them for cleaner signals:
+Defaults are serviceable, but the parameters are worth adjusting to taste:
 
-- **Detection Timeframe**: 15 minutes (for intraday) or 1 hour (for swing). Avoid 5m — too many false zones.
-- **Minimum Block Size**: Set to 0.3% (as a percentage of price). This filters out tiny, irrelevant blocks.
-- **Mitigation Mode**: “Full candle close” — not “touch only.” Reduces premature fading.
-- **Breaker Blocks**: On. These are often the strongest reversal zones.
-- **Reversal Blocks**: Off unless you trade trend exhaustion. They’re less reliable in my experience.
-- **Show Only Latest N Blocks**: 10. Keeps the chart clean.
+- **Detection Timeframe**: Set independently of the chart timeframe. Shorter detection timeframes tend to produce more zones and more marginal ones; longer ones produce fewer, broader zones.
+- **Minimum Block Size**: A filter for small, irrelevant blocks. Raising it removes the smallest zones; lowering it shows more.
+- **Mitigation Mode**: Choose between full-candle-close confirmation and touch-only. Touch-only fades zones faster; full-close confirmation is more conservative.
+- **Breaker Blocks**: Toggle on or off depending on whether you trade failed breakouts.
+- **Reversal Blocks**: Toggle on or off. This type is the noisiest of the four and is generally best left off unless you specifically trade trend exhaustion.
+- **Show Only Latest N Blocks**: Caps the number of displayed zones. Lower values keep the chart clean.
 
 ## How to Use It for Entries and Exits
 
-I use this strictly for **confluence**, not as a standalone signal.
+This indicator is best treated as a **confluence tool**, not a standalone signal.
 
-**Entry**: Wait for price to reach an unmitigated order block. Don’t buy the first touch — let it form a rejection candle (pin bar or engulfing). Enter on the close of that candle.
+**Entry**: Wait for price to reach an unmitigated order block. Rather than entering on the first touch, wait for a rejection candle (pin bar or engulfing) and enter on its close.
 
-**Stop Loss**: Place it just beyond the block’s opposite edge. For a buy block, stop below the low of the block candle. For a sell block, stop above the high.
+**Stop Loss**: Place it just beyond the block's opposite edge — below the low of the block candle for a buy block, above the high for a sell block.
 
-**Take Profit**: Use the next order block in the opposite direction, or a 1:2 risk-reward. Don’t hold through the next block level.
+**Take Profit**: Target the next order block in the opposite direction, or use a fixed risk-reward multiple. Avoid holding through the next block level.
 
-**Example**: On the chart, you see a bullish order block at $100.50. Price touches it, forms a hammer. You buy at $100.60, stop at $100.30, target $101.20 (next sell block). That’s a 2R trade.
-
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros**:
-- Clean, non-intrusive visuals. Doesn’t repaint like many free block scripts.
-- Four block types in one — no need for multiple indicators.
-- The mitigation logic is actually useful for scaling in/out.
-- Alerts work reliably across timeframes.
+- Clean, non-intrusive visuals.
+- Four block types in a single script, removing the need to stack multiple indicators.
+- Mitigation logic is useful for scaling in and out.
+- Alerts are configurable per block type.
 
 **Cons**:
-- Still subjective. Two different timeframes can show contradictory blocks.
-- Breaker blocks sometimes trigger too early on volatile pairs (e.g., crypto).
-- No built-in volume or footprint confirmation — you still need to read price action.
-- The “Reversal” block type is noisy. I’d disable it unless you’re a swing trader.
+- Still subjective. Different timeframes can display contradictory blocks.
+- Breaker blocks can trigger early on volatile instruments such as crypto.
+- No built-in volume or footprint confirmation — price action still has to be read directly.
+- The Reversal block type is noisy and is best disabled unless you trade trend exhaustion.
 
-## Who It’s Actually For
+## Who It's For
 
-This is for **discretionary traders** who already understand Smart Money Concepts (SMC) or institutional flow. If you’re a pure trend-follower or use mechanical systems, this will confuse you. It’s best for:
+This is for **discretionary traders** who already understand Smart Money Concepts or institutional order flow. Pure trend-followers and users of mechanical systems are likely to find it confusing. It suits:
 
-- Scalpers on 1m–5m charts using 15m blocks.
-- Swing traders on 1h–4h charts using daily blocks.
-- Traders who want a visual aid for supply/demand zones without coding.
+- Scalpers working on low chart timeframes with a higher detection timeframe.
+- Swing traders working on higher chart timeframes with a yet-higher detection timeframe.
+- Traders who want a visual aid for supply and demand zones without writing code.
 
-## Better Alternatives If They Exist
+## Alternatives
 
-- **LuxAlgo’s Order Blocks**: More advanced (includes volume profiling), but costs $50/month. Candelacharts is free.
-- **Supply and Demand by KivancOzbilgic**: Simpler, fewer false signals, but no breaker/reversal logic. If you want pure S&D, use that.
-- **ICT Concepts by QuantNomad**: If you’re deep into ICT methodology, this is more comprehensive. But it’s heavier on the chart.
+- **LuxAlgo's Order Blocks**: More advanced, with volume profiling, but a paid subscription. Candelacharts is free.
+- **Supply and Demand by KivancOzbilgic**: Simpler, fewer false signals, but no breaker or reversal logic. Better if you want pure supply and demand.
+- **ICT Concepts by QuantNomad**: More comprehensive for ICT methodology, but heavier on the chart.
 
-For a free indicator, Candelacharts is hard to beat. If you’re willing to pay, LuxAlgo offers more depth.
+## FAQ
 
-## FAQ Addressing Real Trader Questions
+**Q: Does it repaint?**
+A: The indicator is designed so that blocks are drawn when they form and then stay fixed. Mitigation signals are intended to be based on candle closes rather than intrabar movement.
 
-**Q: Does it repaint?**  
-A: No. Blocks are drawn when they form and stay fixed. Mitigation signals are based on real candle closes — no repainting.
+**Q: Can I use it for crypto?**
+A: Yes, but crypto volatility produces many false breakers. Raising the minimum block size or using higher-timeframe blocks reduces that.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but be cautious. Crypto volatility creates many fake breakers. Tighten the minimum block size to 0.5% or use 1h blocks.
+**Q: Why are there so many blocks on my chart?**
+A: Reduce the lookback count, increase the minimum block size, and disable Reversal blocks.
 
-**Q: Why are there so many blocks on my chart?**  
-A: Reduce the “Lookback” to 5–10 and increase the “Minimum Block Size.” Also disable Reversal blocks.
-
-**Q: Is this for beginners?**  
-A: No. You need to understand order blocks, mitigation, and breaker concepts first. It’s a tool, not a tutor.
+**Q: Is this for beginners?**
+A: No. You need to understand order blocks, mitigation, and breaker concepts first. It is a tool, not a tutor.
 
 ## Final Verdict
 
-Candelacharts_Order_Blocks is a solid, free order-block indicator that does exactly what it promises — no fluff, no repaint, just clean zones. The four-block system gives you flexibility, and the settings are robust enough for serious traders. It’s not a holy grail (nothing is), but it’s one of the better free options out there. I’ve been using it for two months on forex and futures, and it’s earned a spot on my chart.
+Candelacharts_Order_Blocks is a solid free order-block indicator that does what it advertises: clean zones, four block types, and configurable settings. The four-block system provides flexibility, and the parameter set is broad enough for serious discretionary use. It is not a holy grail, but among free options it holds up well.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — A strong, no-nonsense tool for SMC traders. Loses one star for the noisy Reversal blocks and lack of volume confirmation.
-
----
+**Rating: 4/5** — A strong tool for SMC traders. It loses a point for the noisy Reversal blocks and the lack of volume confirmation.
 
 ## Go Deeper with The Indicator Lab
 

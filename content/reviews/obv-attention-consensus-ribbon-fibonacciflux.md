@@ -17,75 +17,66 @@ categories:
 rating: 4
 description: "OBV Attention Consensus Ribbon Fibonacciflux review: volume-weighted trend ribbon with Fibonacci levels. Settings, entry logic, pros/cons, and honest verdict."
 tv_script_url: "https://www.tradingview.com/script/fA2xRHKZ-OBV-Attention-Consensus-Ribbon-FibonacciFlux/"
+sources: ["https://www.tradingview.com/script/fA2xRHKZ-OBV-Attention-Consensus-Ribbon-FibonacciFlux/"]
 ---
-Let me be upfront: the name is a mouthful, but this indicator actually does something useful. I've spent the last two weeks trading with Obv_Attention_Consensus_Ribbon_Fibonacciflux across BTC, EUR/USD, and a few S&P 500 tickers. Here's what I found.
+Let me be upfront: the name is a mouthful, but this indicator does something specific and worth understanding before you install it. Here is what the published documentation actually describes.
 
 ## What It Actually Does
 
-This is a trend-following ribbon built on On-Balance Volume (OBV), not price. Instead of plotting a single line or moving average, it renders multiple OBV-based exponential moving averages as a colored ribbon. When the ribbon fans out and turns bullish (green), buyers control the tape. When it collapses and turns red, distribution is happening.
+This is not a price ribbon. Inside each of four timeframes (15m, 1H, 4H, 1D by default) it builds On-Balance Volume, takes the per-bar slope as the difference of two linear regressions, and standardizes that slope by the rolling standard deviation of OBV over the same timeframe. The result is a z sensor per timeframe.
 
-The "Attention Consensus" part means the indicator measures how many of its internal EMAs agree on direction. More aligned EMAs = stronger signal. The "Fibonacciflux" component draws Fibonacci retracement levels on the OBV itself — not on price, which is an interesting twist. It helps you gauge whether a volume-driven pullback is shallow (healthy) or deep (potentially trend-ending).
+OBV is cumulative, so its level depends on where the chart's history begins. The slope difference and the standard deviation are both invariant to that origin, which is what makes the four timeframes comparable at all.
 
-## Key Features That Stand Out
+The white line is the weighted mean of the four z sensors. The ribbon is the weighted dispersion around that mean, so it narrows when the timeframes agree and widens when they do not. Its colour is a geometric mean of three terms: concentration (how tight the dispersion is), side agreement (how much weight sits on one sign), and acceleration agreement (how much weight is moving further in that direction). An audit table prints every sensor's z, its one-bar change, its weight, the consensus, the dispersion, the concentration, both strengths and the current state.
 
-The ribbon's color intensity is the first thing you'll notice. It doesn't just flip from green to red — it shades based on consensus strength. A bright, thick green ribbon with all EMAs stacked bullishly is a much stronger signal than a pale green ribbon where only two of six EMAs agree.
+## What the Measurement Found
 
-The Fibonacci overlay on OBV is genuinely different. Standard Fib tools on price charts measure price retracements. This one measures retracements in cumulative volume, which gives you a different read on whether a pullback has "volume support" at key levels. When price pulls back to a Fib level on the chart and OBV simultaneously retraces to a matching level, that confluence is powerful.
+The author published the actual numbers, and they are worth reading before you trust the defaults.
 
-## Best Settings I Tested
+Two findings, both on 6,000 bars of BINANCE:BTCUSDT 15m (5,949 bars after warm-up), repeated identically on ETHUSDT.
 
-The default settings are conservative — I found them too slow for intraday. After testing, here's what worked:
+First: the previous default threshold could never be reached. The strength is a geometric mean of three fractions, and the acceleration term keeps it small. Measured over the whole window, the strength peaks at 34.5 on BTCUSDT and 36.0 on ETHUSDT, with a median of 20.1 and a 99th percentile of 31.0. The shipped threshold was 60. So the coloured ribbon never appeared on a single bar, both alerts fired zero times, and the branch that paints the ribbon was unreachable code. That is a calibration error, not a conservative setting, and it is fixed here: the default is now 30, where the coloured state covers 137 of 5,949 bars on BTCUSDT and 173 of 5,949 on ETHUSDT.
 
-- On 1-hour and 4-hour charts, keep the default EMA lengths (5, 8, 13, 21, 34, 55). They're well-spaced.
-- For 15-minute scalping, reduce the fastest EMA to 3 and slowest to 34. The ribbon responds faster without becoming noise.
-- Set the Fibonacci levels to 0.382, 0.5, and 0.618 only. The default includes 0.236, which triggers too many false signals on volatile days.
-- Enable "Show Consensus Percentage" if available — it puts a number on the ribbon's strength, which helps with position sizing.
+Second: the whole scale is far smaller than the script's own furniture suggested. The consensus never leaves ±0.141 and the dispersion never exceeds 0.132, while the sensor clips at ±3 and the pane drew guide lines at ±1.5. The clip has never once bound. The guides are now at ±0.10, just above the 99th percentile of |consensus| (0.114 on BTCUSDT, 0.116 on ETHUSDT), so they mark something the series actually reaches.
 
-## How I Actually Trade It
+Neither of those is a claim about returns. There is none here: no forward-return figure, no hit rate, no edge. What the indicator offers is a picture of whether four OBV slopes are pointing the same way and how tightly, and the honest reading of the numbers is that the picture is a low-amplitude one.
 
-The entry logic that made sense after testing: wait for the ribbon to fully flip (all six EMAs on the same side) and the consensus percentage to exceed 70%. Then enter on the first pullback to the 21-EMA within the ribbon. That's a much better entry than chasing the initial flip, which often has a wick against you.
+## Settings and How to Tune Them
 
-For exits, the Fib levels on OBV are my trigger. If price pulls back and OBV retraces beyond the 0.618 level, I close half. If it breaks the 0.786, I'm fully out. That's a mechanical rule that removed a lot of emotional decision-making.
+The HTF data mode is the one that changes the meaning rather than the tuning. Confirmed only reads the last closed bar of each requested timeframe, which is why the higher-timeframe sensors are step functions that hold their value across the chart bars inside one higher-timeframe bar. Developing HTF reacts earlier and changes until that bar closes.
 
-One thing I'll note: this indicator is not a standalone system. It works best when you overlay it with a price-action confirmation — a candlestick rejection at a key level or a break of a minor structure. As shown in the chart above, the ribbon's signals line up well with volume shifts, but it lags on reversals by a few bars. That's the cost of using OBV instead of raw price.
+The four attention weights are normalized onto a simplex, so only their ratios matter, and an all-zero entry falls back to 0.10 / 0.20 / 0.40 / 0.30.
+
+The threshold and the guide lines were recalibrated against the measured output range. The audit table is now implemented; the helper functions for it had been written and left unused in the earlier version.
+
+## How the Numbers Were Checked
+
+The whole computation was reimplemented outside Pine and cross-checked against the chart's Data Window: eight quantities on ten bars, with the individual sensors switched on so nothing was left as na. All 80 values round-trip to the exact three decimals TradingView printed. The worst raw disagreement is 4.9e-4, which is the rounding floor of indicator(precision = 3) rather than a modelling error.
+
+That check discriminates. Near-miss variants a careless port would land on fail loudly against the same 80 values: reading the higher timeframes in developing rather than confirmed mode misses 79 of 80, a slope length of 21 instead of 20 misses 73 of 80, and a flipped regression orientation is off by two orders of magnitude more than the tolerance.
 
 ## Pros & Cons
 
 **Pros:**
-- Volume-based trend read that most ribbon indicators ignore
-- The Fib-on-OBV concept is genuinely unique and useful for pullback entries
-- Color intensity gives a de facto strength gauge
-- Works across multiple timeframes with minor tweaks
+- Volume-based read rather than another price-derived ribbon
+- Four timeframes standardized onto a comparable scale by construction, not by eyeballing
+- The audit table exposes every sensor's contribution instead of hiding it behind a single line
+- The author published the calibration failure and the fix rather than quietly changing the default
 
 **Cons:**
-- Lags reversals. OBV is cumulative, so it's inherently slower to turn than price-based indicators
-- Name is a nightmare to search for — just bookmark it
-- The consensus percentage can stay above 70% for too long during strong trends, making you overconfident right before a sharp reversal
-- No built-in alerts for consensus changes (you'll need to set your own)
+- The author's own measurement describes the output as low-amplitude. The consensus never leaves ±0.141, so this is not a tool that screams
+- No forward-return figure, hit rate, or edge is claimed anywhere. Treat it as a picture, not a signal
+- The default threshold was previously unreachable, so any chart shared before this version showed no coloured ribbon at all
+- Open source under MPL 2.0 — nothing here is a forecast, a signal service, or a claim of profitability
 
 ## Who It's For
 
-This is a swing trader's tool, not a day trader's. The 4-hour and daily timeframes are where the ribbon's signals are cleanest. If you're trading momentum strategies and want a volume confirmation layer, this is worth the install. If you're a scalper needing sub-second signals, skip it — the lag will frustrate you.
+Anyone who wants to see whether four OBV slopes are pointing the same way and how tightly, with the underlying arithmetic exposed. If you need a tool that promises returns, this is explicitly not it. If you want a low-amplitude consensus read and are willing to interpret it yourself, the audit table gives you the raw material to do that.
 
 ## Alternatives Worth Considering
 
-For pure price-based ribbons, the standard "SuperTrend Ribbon" is simpler but less informative. If you want volume without the Fibonacci twist, just plot multiple OBV EMAs manually — it's the same concept with more setup work. For a more aggressive momentum read, combine this with an RSI filter rather than replacing it.
+A single OBV line with a slope measure gives you one timeframe's answer. Plotting multiple OBV EMAs manually gives you the visual without the standardization or the dispersion ribbon. Neither of those solves the origin-dependence problem that the slope-difference and rolling-standard-deviation construction is designed to handle.
 
-## FAQ
-
-**Does it repaint?** No. The ribbon is based on closed-bar OBV values, so signals don't disappear after the fact.
-
-**Can I use it on crypto?** Yes, and it actually performs well there because crypto volume data is more reliable than the reported volume on forex pairs.
-
-**What's the best timeframe?** The 4-hour chart gave me the cleanest signals. Daily is too slow, 1-hour was good but noisier.
-
-## Final Verdict
-
-Obv_Attention_Consensus_Ribbon_Fibonacciflux earns four stars. It's a solid, well-constructed trend indicator that brings something new to the table with its Fibonacci-on-volume approach. It's not perfect — the lag on reversals is a real drawback, and the interface could be cleaner — but for a free indicator, it punches well above its weight.
-
-If you're a swing trader who wants to understand not just *where* price is moving but *how much volume conviction* is behind it, install this. Just don't expect it to call tops and bottoms. It tells you when the trend is healthy — you still have to decide when to leave.
-
-**Rating: ⭐⭐⭐⭐ (4/5)** — A genuinely useful volume-trend hybrid that earns its place in your toolbox.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

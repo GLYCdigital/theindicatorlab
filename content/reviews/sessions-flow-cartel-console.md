@@ -16,117 +16,111 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A session volume & delta tool for tracking institutional flow. See if it’s worth adding to your toolkit in this honest review."
+grounding: "none (no source found)"
 ---
-
-**Sessions_Flow_Cartel_Console** isn’t another pretty dashboard that tells you what you already know. It’s a session-based volume and delta aggregator that breaks down buying and selling pressure across Asian, London, and New York sessions. After running it on ES, NQ, and CL for two weeks, here’s what I found.
-
----
-
-### What This Indicator Actually Does
-
-The indicator overlays a multi-panel console on your chart, showing cumulative delta, volume delta, and session-specific imbalances for each major trading session. It color-codes bars based on whether buyers or sellers are in control during that session window. Think of it as a footprint chart simplified into session blocks.
-
-Unlike standard volume profile tools (which show total volume at price), this one isolates *session aggression*. You can see if the New York open is absorbing Asian volume or if London is rejecting a level before price even moves.
+**Sessions_Flow_Cartel_Console** is a session-based volume and delta aggregator. Rather than a general dashboard, it isolates buying and selling pressure across the Asian, London, and New York sessions, displaying the results in a single console panel.
 
 ---
 
-### Key Features That Set It Apart
+### What This Indicator Does
 
-- **Session-specific delta bars** — Not just total volume. You see who’s *aggressively* pushing price during each session.
-- **Console layout** — All three sessions displayed in a single panel below price. No clutter, no overlapping histograms.
-- **Imbalance ratio** — A numeric readout showing the buy/sell ratio per session. I found this more useful than raw delta numbers.
+The indicator overlays a multi-panel console on the chart, showing cumulative delta, volume delta, and session-specific imbalances for each major trading session. It color-codes bars based on whether buyers or sellers are in control during that session window — effectively a footprint chart simplified into session blocks.
+
+Unlike standard volume profile tools, which show total volume at price, this one isolates *session aggression*. The intent is to show whether one session is absorbing another's volume, or whether a session is rejecting a level before price moves.
+
+---
+
+### Key Features
+
+- **Session-specific delta bars** — Not just total volume. The aim is to show who is *aggressively* pushing price during each session.
+- **Console layout** — All three sessions displayed in a single panel below price, without overlapping histograms.
+- **Imbalance ratio** — A numeric readout showing the buy/sell ratio per session, as an alternative to raw delta numbers.
 - **Auto-adjusting session boundaries** — Handles daylight saving and timezone shifts without manual tweaking.
 
-The console itself is clean. As the chart above shows, you get three rows with delta bars, imbalance arrows, and a cumulative line. It’s not flashy, but it’s functional.
+The console is visually restrained: three rows with delta bars, imbalance arrows, and a cumulative line.
 
 ---
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-After testing, here’s what worked:
+- **Aggregation Mode**: A "Cumulative Delta per Session" option gives a picture of session bias rather than instantaneous delta.
+- **Session Start/End**: Default boundaries are provided for Asian, London, and New York sessions. These are most meaningful for markets with concentrated session volume; on 24/7 markets they become arbitrary.
+- **Show Imbalance Ratio**: A toggle for the numeric buy/sell readout.
+- **Color Scheme**: Options include a bull/bear green/red scheme and a heatmap scheme, which is harder to read at a glance.
 
-- **Aggregation Mode**: “Cumulative Delta per Session” — gives the clearest picture of session bias.
-- **Session Start/End**: Use default (00:00–08:00 Asian, 08:00–16:00 London, 13:00–21:00 New York) unless you trade crypto or 24/7 markets.
-- **Show Imbalance Ratio**: ON. This was the most actionable setting.
-- **Color Scheme**: “Bull/Bear” (green/red). Avoid “Heatmap” — it’s harder to read at a glance.
-
-For timeframes, it works best on 5–15 minute charts. Below 1 minute, the data becomes noisy. Above 1 hour, sessions blend too much.
+Session-based delta is generally most legible on intraday timeframes. On very short timeframes the data becomes noisy; on higher timeframes the sessions blend together.
 
 ---
 
-### How to Use It for Entries and Exits
+### How It Can Be Used for Entries and Exits
 
 **Entry example (ES futures):**
-- Asian session shows heavy selling (red delta bars, imbalance ratio below 0.8).
+- Asian session shows heavy selling (red delta bars, weak imbalance ratio).
 - London opens and price breaks the Asian low.
 - New York opens with buyers absorbing that selling — delta flips green.
-- **Go long** on the NY open with a stop below the London low.
+- Go long on the NY open with a stop below the London low.
 
 **Exit example:**
-- If cumulative delta diverges from price (price making higher highs, delta making lower highs), that’s exhaustion. Take partial profits.
+- If cumulative delta diverges from price (price making higher highs, delta making lower highs), that suggests exhaustion. Take partial profits.
 
-This isn’t a standalone signal. Pair it with a support/resistance level or a moving average for confluence. The console tells you *who is in control* — you decide the entry timing.
+This is not a standalone signal. It's meant to be paired with a support/resistance level or a moving average for confluence. The console tells you *who is in control*; entry timing is left to the trader.
 
 ---
 
-### Honest Pros and Cons
+### Pros and Cons
 
 **Pros:**
-- Very clean visual presentation — no indicator spaghetti.
-- Session delta is genuinely useful for intraday bias (especially for futures).
-- Lightweight — no lag on my 6-year-old laptop.
+- Clean visual presentation without indicator clutter.
+- Session delta is a useful input for intraday bias, especially on futures.
+- Lightweight footprint on the chart.
 
 **Cons:**
-- **Only for intraday.** Useless on daily charts or swing trading.
-- **No alerts.** You have to watch the console manually.
-- **Learning curve.** The imbalance ratio and delta bars take a few days to interpret intuitively.
+- **Intraday only.** Not meaningful on daily charts or for swing trading.
+- **No alerts.** The console must be watched manually.
+- **Learning curve.** The imbalance ratio and delta bars take time to interpret intuitively.
 - **Not a complete system.** This is a tool, not a strategy.
 
 ---
 
-### Who It’s Actually For
+### Who It's For
 
-- **Day traders** trading ES, NQ, YM, or Forex during active sessions.
-- **Swing traders who scalp** — it can help with session entry timing.
+- **Day traders** in ES, NQ, YM, or FX during active sessions.
+- **Swing traders who scalp** — useful for session entry timing.
 - **Traders who already use volume profile** and want a session-specific delta layer.
 
-**Not for:** Position traders, crypto-only traders (session boundaries are less meaningful on 24/7 markets), or anyone who hates looking at numbers.
+**Not for:** Position traders, crypto-only traders (session boundaries are less meaningful on 24/7 markets), or anyone who dislikes numeric readouts.
 
 ---
 
-### Better Alternatives If They Exist
+### Alternatives
 
-- **Volume Profile (standard)** — Better for static support/resistance. *Sessions_Flow_Cartel_Console* is better for dynamic session bias.
-- **CVD (Cumulative Volume Delta) by LuxAlgo** — More features and alerts, but more expensive and heavier on the chart.
-- **Session Volume Bars (free)** — A simpler alternative if you only want total volume per session without delta.
+- **Volume Profile (standard)** — Better for static support/resistance; the session console is oriented toward dynamic session bias.
+- **CVD (Cumulative Volume Delta) by LuxAlgo** — More features and alerts, but heavier on the chart and priced higher.
+- **Session Volume Bars (free)** — A simpler alternative for total volume per session without delta.
 
-If you want a free version, the built-in TradingView session lines plus a basic volume oscillator can approximate some of this, but not the delta breakdown.
+A free approximation is possible using built-in TradingView session lines plus a basic volume oscillator, but that won't reproduce the delta breakdown.
 
 ---
 
 ### FAQ
 
 **Q: Does this work on crypto?**
-A: Kind of. Sessions are less meaningful on 24/7 markets. The imbalance ratio still works, but the session boundaries are arbitrary.
+A: Partially. Sessions are less meaningful on 24/7 markets. The imbalance ratio still functions, but the session boundaries are arbitrary.
 
-**Q: Can I use it on stocks?**
-A: Yes, but it’s most useful on futures and FX where session volume is concentrated.
+**Q: Can it be used on stocks?**
+A: Yes, but it's most useful on futures and FX, where session volume is concentrated.
 
 **Q: Is it repaint?**
 A: No. It calculates based on completed session bars. Once a session closes, the data is fixed.
 
-**Q: Do I need to pay for it?**
-A: It’s a paid indicator on TradingView. Price varies, but it’s not cheap. Worth it if you trade sessions actively.
+**Q: Is it paid?**
+A: It's a paid indicator on TradingView. Pricing varies.
 
 ---
 
 ### Final Verdict
 
-**⭐ 4/5** — Solid, focused tool that does one thing well: show you who’s in control during each trading session. It won’t make you a profitable trader overnight, but it gives you a clear edge in reading session-based flow. The lack of alerts and the intraday-only limitation knock off one star. If you day trade futures or FX, it’s worth the cost. If you’re a casual crypto or stock trader, skip it.
-
-**Recommendation:** Try the free trial for 7 days. If you find yourself checking the console before every trade, buy it. If you forget it’s there, move on.
-
----
+**4/5** — A focused tool that does one thing: show who's in control during each trading session. It won't make anyone a profitable trader overnight, but it provides a clear read on session-based flow. The lack of alerts and the intraday-only limitation are the main drawbacks. For active futures or FX day traders, it's worth evaluating; for casual crypto or stock traders, it's likely unnecessary.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,99 +16,100 @@ categories:
   - Technical Analysis
 rating: 4
 description: "London_Session_Levels marks key high/low/close levels from the London open. See how to trade breakouts and reversals with this clean, no-nonsense session tool."
+grounding: "none (no source found)"
 ---
-I’ll be straight with you: most session-based indicators are noise. They dump a dozen lines on your chart and call it analysis. The *London_Session_Levels* indicator is not that. It does one thing—marks the high, low, and close of the London session—and does it cleanly. No clutter, no repainting, no marketing fluff. I’ve tested it on over 50 pairs across multiple timeframes, and it earns its place in my toolkit. Here’s the real breakdown.
+# London_Session_Levels Review
+
+Most session-based indicators are noise. They dump a dozen lines on your chart and call it analysis. *London_Session_Levels* is not that. It does one thing—marks the high, low, and close of the London session—and does it cleanly. No clutter, no marketing fluff. Here's the breakdown.
 
 **What This Indicator Actually Does**
 
-It draws three horizontal lines on your chart: the high, low, and close of the London trading session (typically 08:00–16:00 UTC). You can customize the session start and end times, which is critical if you trade non-forex markets. The lines extend to the right, so they act as dynamic support/resistance zones for the rest of the trading day. As the chart above shows, these levels often get tested during the New York overlap—clean bounces or breakouts occur right at these lines.
+It draws three horizontal lines on your chart: the high, low, and close of the London trading session. You can customize the session start and end times, which matters if you trade non-forex markets. The lines extend to the right, so they act as reference levels for the rest of the trading day. These levels often get tested during the New York overlap—bounces or breakouts can occur right at these lines.
 
 **Key Features That Set It Apart**
 
-- **No repainting.** The levels are fixed once the session closes. This is a must for backtesting.
-- **Customizable session times.** Most competitors hardcode London hours. Here, you can shift them to align with your broker’s time zone or trade a different session entirely.
 - **Minimalist visual design.** Just three lines. You can toggle visibility for each level independently.
-- **Works on any timeframe.** I use it on 15-minute charts for intraday, but it’s equally effective on 1-hour or 4-hour.
+- **Customizable session times.** Many competitors hardcode London hours. Here, you can shift them to align with your broker's time zone or track a different session entirely.
+- **Simple enough to backtest against.** The levels are drawn from completed session data, so they can be evaluated historically without ambiguity.
+- **Works across timeframes.** The indicator itself does not restrict you to a particular chart interval.
 
-**Best Settings I’ve Tested**
+**Settings and How to Tune Them**
 
-Default settings are fine for most traders, but here’s my optimized config:
-- **Session Start:** 07:00 UTC (15 minutes before official London open to catch early moves)
-- **Session End:** 16:00 UTC
-- **Line Style:** Dashed for high/low, solid for close
-- **Line Width:** 1 for all (keeps the chart clean)
-- **Extend Lines:** Right (standard)
+The indicator exposes session start and end times, line style, line width, and a line-extension option. Defaults are generally reasonable, but the practical adjustments are:
 
-If you trade crypto or indices, shift the session to your local high-volume window. The indicator doesn’t care what market you’re in—it just draws levels.
+- **Session Start / Session End:** Set these to match the session you actually want to mark, in your chart's time zone. If you trade a market with different active hours—crypto, indices—shift the window to that market's high-volume period.
+- **Line Style and Width:** Cosmetic. Choose what keeps your chart readable.
+- **Extend Lines:** Controls whether the levels project forward into the rest of the day.
+
+No single configuration is objectively best; it depends on which session you're marking and how much visual weight you want on the chart.
 
 **How to Trade It (Entry/Exit Logic)**
 
-I use three setups:
+Common approaches traders apply to session levels:
 
-1. **Breakout Trade:** Price breaks above the session high with volume/RSI confirmation. Entry on the retest as support. Target is 1.5x the session range. Stop below the session low.
+1. **Breakout:** Price breaks above the session high, then retests it as support. Stop below the session low; target based on the session range.
+2. **Reversal toward the close level:** If price is extended away from the session close level during the session, some traders look for mean reversion back toward it, with a stop beyond the session high or low.
+3. **New York overlap:** When New York opens, watch for price to react at the London high or low. The overlap of both sessions' liquidity can produce clean moves.
 
-2. **Reversal at Close:** If price is far from the session close level by 14:00 UTC, I expect mean reversion. Enter a fade trade toward the close level, with a stop beyond the session high/low.
-
-3. **New York Overlap Play:** When NY opens at 13:00 UTC, I watch for price to bounce off the London high/low. These are my highest-probability trades—the liquidity from both sessions creates clean moves.
+These are applications of the levels, not signals the indicator generates.
 
 **Pros & Cons**
 
 **Pros:**
 - Dead simple. No learning curve.
-- Works on forex, indices, and crypto.
-- Helps identify high-probability reversal zones during NY session.
-- Backtesting is clean because the levels don’t repaint.
+- Can be applied to forex, indices, and crypto by adjusting session times.
+- Useful for identifying reference zones during the NY session.
+- Levels are based on completed session data, which makes historical evaluation straightforward.
 
 **Cons:**
-- Only three levels. If you want multiple session lines (e.g., Asian, London, NY), you’ll need to add the indicator three times.
-- No automatic alerts for level touches. You’ll need to set them manually.
-- Doesn’t account for news events. A surprise NFP can blow through any level.
+- Only three levels. If you want multiple session lines (Asian, London, NY), you'll need to add the indicator multiple times.
+- No automatic alerts for level touches. You'll need to set them manually.
+- Doesn't account for news events. A surprise NFP can blow through any level.
 
-**Who It’s For**
+**Who It's For**
 
-- **Intraday forex traders** who trade the London–NY overlap. This is your bread and butter.
+- **Intraday forex traders** who trade the London–NY overlap.
 - **Price action traders** who want clean, objective levels without subjective trendlines.
 - **New traders** who need a simple anchor point for their analysis.
 
-**Who It’s NOT For**
+**Who It's NOT For**
 
-- Scalpers who need tick-level granularity. This indicator is for swing and position traders.
+- Scalpers who need tick-level granularity.
 - Traders who want a complete system. This is a tool, not a strategy. Combine it with volume or momentum indicators.
 
 **Alternatives Worth Considering**
 
-- **Session High Low Levels** (by LuxAlgo): More features, including multiple sessions and automatic alerts. But it’s paid and can feel cluttered.
+- **Session High Low Levels** (by LuxAlgo): More features, including multiple sessions and automatic alerts. But it's paid and can feel cluttered.
 - **Day Open Line** (built-in TradingView): Free and ultra-simple, but only marks the open, not high/low/close.
-- **ICT Kill Zones** (by various): If you follow inner circle trader concepts, those indicators are more specialized. London_Session_Levels is cleaner for non-ICT traders.
+- **ICT Kill Zones** (by various): More specialized for inner circle trader concepts. London_Session_Levels is cleaner for non-ICT traders.
 
 **FAQ**
 
 **Q: Does the indicator repaint?**
-A: No. Once the session closes, the levels are fixed forever. This is verified via backtest.
+A: The levels are derived from the completed session, so they are fixed once the session closes.
 
 **Q: Can I use it on crypto?**
-A: Yes. Just adjust the session times to match your exchange’s high-volume period. I’ve tested it on BTC/USD with good results.
+A: Yes. Adjust the session times to match your exchange's high-volume period.
 
 **Q: How many levels does it draw?**
 A: Three: high, low, and close of the session. No extras.
 
 **Q: Does it work on lower timeframes like 1-minute?**
-A: It works, but the levels are less meaningful due to noise. I recommend 15-minute or higher.
+A: It will draw, but the levels carry less meaning on very low timeframes due to noise. Higher intervals tend to be more useful for session-level analysis.
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+**Final Verdict**
 
-London_Session_Levels is a no-nonsense tool that does exactly what it promises. It’s not flashy, it won’t make you a millionaire overnight, but it gives you clean, actionable levels that I’ve found to be reliable across multiple markets. The lack of alerts and the three-line limit are minor drawbacks, but for a free indicator, this is a solid 4-star. If you trade the London session or the NY overlap, install it—you’ll use it more than you expect.
+London_Session_Levels is a no-nonsense tool that does exactly what it promises. It's not flashy, and it won't hand you a strategy—but it gives you clean, objective session levels. The lack of alerts and the three-line limit are minor drawbacks. If you trade the London session or the NY overlap, it's worth a look.
 
 ## Frequently Asked Questions
 
 ### Is London_Session_Levels worth it?
 
-Based on testing across multiple timeframes, London_Session_Levels delivers solid value for traders who need trend analysis.
+It delivers value for traders who want objective session levels without chart clutter—particularly those trading the London session or the London–NY overlap.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
+The levels are based on the completed session, so they do not change once the session closes.
 
 ## Go Deeper with The Indicator Lab
 

@@ -17,98 +17,72 @@ categories:
 rating: 4
 description: "Session_Overlap_Tape review: how this trend indicator visualizes session boundaries on MACD charts, best settings, and realistic trading strategies."
 tv_script_url: "https://www.tradingview.com/script/d5gPOa1Y-Session-Overlap-Tape/"
+sources: ["https://www.tradingview.com/script/d5gPOa1Y-Session-Overlap-Tape/"]
 ---
-Let me be blunt: most "session" indicators are just colored rectangles on your chart. Session_Overlap_Tape does something different — it overlays session information directly onto your MACD histogram, turning a lagging momentum oscillator into a context-aware trend filter. I've run it on forex pairs, indices, and crypto for the past three weeks, and here's what actually matters.
+# Session Overlap Tape Review
+
+The official description of Session Overlap Tape is narrow: it is a tool for currency overlap timings, intended to help a trader decide when to trade and when to simply watch. The script is classified as a study. Anything beyond that framing is interpretation, so this review stays close to what the tool is documented to do.
 
 ## What This Indicator Actually Does
 
-Session_Overlap_Tape plots the MACD histogram with a twist: the histogram bars are color-coded based on which trading session is active — Asian, London, or New York — plus the overlap zones where two markets are simultaneously open. The "tape" part refers to how it stacks session labels along the price axis, giving you a visual timeline of when momentum shifts tend to happen.
+Session Overlap Tape is designed around session overlap timings for currencies. Its stated purpose is timing — marking out when market sessions overlap so a trader can make a decision about when to engage and when to stay on the sidelines.
 
-It's not a signal generator. It's a context layer. If you've ever wondered why your MACD crossover failed at 2 AM EST, this indicator gives you the answer — you were trading dead Asian session liquidity against a London open that hadn't even started.
+That is a modest and specific function. It is not positioned as a signal generator, an entry system, or a momentum oscillator. It is a timing reference, and the description frames it as an aid to the decision of when to trade versus when to watch.
 
 ## What Sets It Apart
 
-The overlap detection is the killer feature. Most session tools mark boundaries but ignore the actual liquidity windows. Session_Overlap_Tape highlights the London-New York overlap (8 AM–12 PM EST) as a distinct state, which historically produces the strongest trending moves. In my testing on EUR/USD and GBP/USD, roughly 60% of daily range expansion occurred during these overlap hours.
+The distinguishing idea is the focus on overlap windows rather than individual session blocks. Many session tools simply shade out session boundaries. This one is built around the periods when sessions overlap, which is the part of the day most relevant to a currency trader deciding whether conditions are worth engaging with.
 
-Another genuinely useful touch: the histogram changes its color scheme based on session, not just the background. So you can spot at a glance whether momentum is building during high-liquidity hours or fading into a dead zone. That's information the standard MACD simply doesn't give you.
+Because the source material does not describe the visual implementation in detail, there is no basis here for claims about how the overlap is rendered, what colors are used, or how labels are arranged. What can be said is what the description says: it is about overlap timings, and it is meant to inform a trade-or-watch decision.
 
-## Best Settings
+## Settings and How to Tune Them
 
-After extensive backtesting across multiple timeframes, here's what worked:
+The source material does not list specific parameter names or values for Session Overlap Tape. Rather than invent them, the honest guidance is conceptual:
 
-- **MACD Fast Length: 12** (default is fine)
-- **MACD Slow Length: 26** (default is fine)
-- **Signal Smoothing: 9** (default is fine)
-- **Session Times:** Keep the defaults for Forex — they align with standard market hours. For crypto, adjust to 24/7 but pay attention to the overlap zones.
-- **Histogram Mode:** Use "Filled" over "Line" — the visual distinction between sessions is much clearer.
+- **Session timings.** Since the tool is built around session overlap, the settings most likely to matter are the session start and end times. How they are configured determines which overlaps get highlighted.
+- **Overlap definition.** Any setting that governs how an overlap is identified — the boundaries of the window — is worth understanding before relying on the tool, because that definition drives everything the indicator communicates.
+- **Display preferences.** Visual options, if present, affect readability but not the underlying timing logic.
 
-The defaults are actually well-chosen. Don't over-optimize. The real value is in how you interpret the colors, not in tweaking MACD parameters.
+No claim is made here about which settings perform better. The source material does not provide that information, and tuning advice beyond "understand the session definitions" would be speculation.
 
 ## How to Actually Trade With It
 
-This is where most traders get confused. Session_Overlap_Tape isn't a standalone system — it's a filter. Here's the logic I've found most effective:
+The description gives one clear use case: deciding when to trade and when to watch. That suggests a filter role rather than a standalone system.
 
-**Entry Rule:** Only take MACD crossovers that occur during a highlighted overlap session. Ignore crossovers during single-session hours unless they align with a higher-timeframe trend.
+- **As a timing filter.** Use the overlap information to decide whether current conditions fall inside a window you consider tradeable or outside one you would rather observe.
+- **As a watchlist cue.** When no overlap is active, the tool's own framing suggests that is a watching period rather than a trading one.
+- **As context, not a trigger.** Nothing in the source material indicates the indicator generates entries or exits on its own. Treat it as information layered onto whatever process you already run.
 
-**Exit Rule:** If you're in a trade and the histogram enters a dead session (Asian close, post-New York lunch), consider taking profit. Momentum often stalls until the next overlap window.
-
-**Confluence:** Combine with a simple trendline or moving average. The indicator shines when the MACD histogram turns bullish during the London-New York overlap AND price is above the 200 EMA. That combination produced my best risk-reward trades on the 15-minute chart.
-
-As the chart above shows, the visual distinction between session bars makes it immediately obvious when momentum is supported by liquidity versus when it's running on fumes.
+Any specific entry rule, exit rule, or confluence condition would be an addition not supported by the description.
 
 ## The Honest Trade-offs
 
 **Pros:**
-- Excellent visual context for session-aware trading
-- Overlap highlighting is genuinely useful, not gimmicky
-- Clean implementation — no clutter, no repainting
-- Works across all asset classes with adjustable session times
+- Focused on a genuinely relevant concept for currency traders — session overlap timing
+- Clear, narrow purpose rather than an overreaching all-in-one tool
+- Frames itself honestly as a timing aid, not a signal system
 
 **Cons:**
-- It's still just MACD underneath — no new signal generation
-- Limited use on intraday scalping timeframes below 5 minutes
-- Session definitions are static — they don't account for daylight saving changes automatically
-- The "tape" labels can feel redundant if you already know your session times cold
+- The source material is thin; there is little detail on implementation, settings, or visuals
+- As a timing reference only, it does not provide entries, exits, or momentum readings on its own
+- Traders who already know session timings well may find limited additional value
 
 ## Who Should Use This
 
-This is for traders who already trade with MACD or momentum strategies and want to filter their entries by market context. If you're a London-session trader who keeps getting chopped up in Asian hours, this will save you real money. It's also excellent for beginners learning *why* momentum behaves differently at different times of day.
-
-If you're a pure price action trader who never touches oscillators, skip it. You won't find value in a MACD wrapper, no matter how well-designed.
-
-## Better Alternatives
-
-- **Session Volume Profile:** Better for volume-focused traders who want to see where liquidity actually sits, not just when sessions overlap.
-- **VWAP + Session High/Low:** More practical for intraday mean-reversion trading around session boundaries.
-- **Custom MACD with ATR Bands:** If you want a momentum indicator with volatility context instead of time context.
+This is aimed at currency traders who want a visual reference for session overlap timings and who make their own decisions about when to be active. It is less relevant to traders working instruments or hours where session overlap is not a meaningful concept, and it is not a substitute for a full trading methodology.
 
 ## Real Questions Traders Ask
 
-**Does it repaint?** No. The MACD calculations are standard, and session boundaries are fixed. What you see is what you get.
+**Does it repaint?** The source material does not address repainting, so no claim is made either way.
 
-**Can I adjust session times for crypto?** Yes, all session start/end times are configurable. For BTC, I recommend setting the "Asian" session to 8 PM–8 AM UTC to capture the typical volatility windows.
+**Can session times be adjusted?** The description does not specify. Given that the tool is about overlap timings, configurable session definitions would be expected, but this is not confirmed in the source material.
 
-**Does it work on lower timeframes?** It works, but the signal quality degrades below 5 minutes. The overlap concept still applies, but noise dominates.
-
-**Is it worth paying for?** It depends on the price you're seeing. As a free or low-cost tool, it's a solid addition. If it's priced like a premium indicator, you're paying for a MACD reskin with session labels — consider whether that's worth it to you.
+**Does it work on all timeframes and markets?** Not stated. The description references currency overlap timings specifically, which is the only scope the source material supports.
 
 ## Final Verdict
 
-Session_Overlap_Tape earns a solid four stars. It doesn't reinvent the wheel, but it makes an existing wheel dramatically more useful by adding market context. The overlap detection is genuinely thoughtful, the implementation is clean, and it fills a real gap for session-focused traders. It's not a holy grail — nothing is — but it's a tool that will improve your timing if you trade momentum across multiple sessions.
+Session Overlap Tape is a narrow, purpose-built tool: it exists to show currency session overlap timings so a trader can decide when to trade and when to watch. Judged against that stated purpose, it is a coherent idea. Judged as a complete trading system, it is not one, and the source material does not pretend otherwise. The honest assessment is that this is a timing reference for currency traders who already have a process to apply it to — no more, and no less.
 
-If you already understand session dynamics intuitively, you might not need it. If you're still learning why your trades fail at certain hours, this is one of the better educational tools disguised as an indicator.
-
-⭐⭐⭐⭐ — Recommended for momentum traders who trade across multiple market sessions.
-
-## Frequently Asked Questions
-
-### Is Session_Overlap_Tape worth it?
-
-Based on testing across multiple timeframes, Session_Overlap_Tape delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,74 +16,66 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of the Center of Gravity (COG) Oscillator on TradingView. Settings, entry/exit rules, pros/cons, and if it beats RSI or MACD."
+grounding: "none (no source found)"
 ---
-
-**Description:** Honest review of the Center of Gravity (COG) Oscillator on TradingView. Settings, entry/exit rules, pros/cons, and if it beats RSI or MACD.
-
----
-
-I’ve been testing the **Center of Gravity (COG) Oscillator** for the past three weeks across BTCUSD, EURUSD, and Gold. Here’s my take after watching it catch tops and bottoms that standard oscillators missed.
+**Description:** Review of the Center of Gravity (COG) Oscillator on TradingView. Settings, entry/exit rules, pros/cons, and how it compares to RSI or MACD.
 
 ---
 
 ### What This Indicator Actually Does
 
-The COG Oscillator is a **lag-reduced momentum oscillator** based on John Ehlers’ work. Instead of smoothing price with a simple moving average—which always lags—it calculates a "center of gravity" by weighting recent prices more heavily. The result: a cleaner line that **reacts faster than RSI or MACD** without the noise you’d get from a raw momentum indicator.
+The COG Oscillator is a lag-reduced momentum oscillator based on John Ehlers' work. Instead of smoothing price with a simple moving average—which always lags—it calculates a "center of gravity" by weighting recent prices more heavily. The result is a cleaner line intended to react faster than RSI or MACD without the noise of a raw momentum reading.
 
-The chart above shows the COG line (blue) oscillating around a zero centerline. When it crosses above zero, momentum is bullish; below, bearish. The key signals come from **divergences** between price and the COG line—those are where the real edge lives.
+The COG line oscillates around a zero centerline. When it crosses above zero, momentum is bullish; below, bearish. The more interesting signals tend to come from divergences between price and the COG line.
 
 ---
 
 ### Key Features That Set It Apart
 
-- **Lag reduction**: Unlike a 14-period RSI, the COG adjusts its weighting dynamically. In my tests, it turned 2–3 bars before RSI on most reversals.
-- **Zero-line crossovers**: Clean, binary signals—no overbought/oversold zones to guess at.
-- **Divergence detection**: The oscillator naturally highlights hidden and regular divergences. I spotted a bearish divergence on the daily Gold chart last Tuesday that saved me from a false breakout.
-- **Customizable length**: Default is 10, but I found 14 works better for swing trading, while 8 works for scalping.
+- **Lag reduction**: Rather than using fixed-period smoothing like a standard RSI, the COG adjusts its weighting dynamically, which is designed to turn earlier at reversals.
+- **Zero-line crossovers**: Binary signals with no overbought/oversold zones to interpret.
+- **Divergence detection**: The oscillator lends itself to spotting regular and hidden divergences against price.
+- **Customizable length**: The length input can be adjusted to shift the oscillator between faster and slower behavior.
 
 ---
 
-### Best Settings (Tested Recommendations)
+### Settings and How to Tune Them
 
-| Timeframe | Length | Use Case |
-|-----------|--------|----------|
-| Scalping (1m–5m) | 8 | Faster signals, catch micro reversals |
-| Intraday (15m–1h) | 10 | Default—balanced reactivity and reliability |
-| Swing (4h–daily) | 14 | Reduces whipsaws, better for trend trades |
+The main input is the oscillator length. A shorter length makes the line more reactive and produces more signals; a longer length smooths it out and reduces whipsaws at the cost of responsiveness. There is no universally correct value—it depends on the instrument's volatility and the trader's holding period.
 
-**Don't** go below 6 or above 20—below 6 it’s noisy, above 20 it starts lagging like a traditional MA.
+A practical approach is to pick a length that matches how often you intend to act: shorter for quick intraday decisions, longer for swing horizons. Extremes in either direction have obvious costs—very short lengths amplify noise, while very long lengths reintroduce the lag the indicator is meant to avoid.
 
 ---
 
-### How I Use It for Entries and Exits
+### How It Can Be Used for Entries and Exits
 
-**Long entry**: Wait for COG to cross **above zero** from below, AND price to be above the 20 EMA. The zero cross alone isn’t enough—combine with trend context.
+**Long entry**: A COG cross above zero, ideally combined with price trading above a trend filter such as a moving average. The zero cross alone is not sufficient—trend context matters.
 
-**Short entry**: COG crosses below zero while price is below the 20 EMA.
+**Short entry**: A COG cross below zero while price is below the trend filter.
 
-**Exit**: Take partial profit when COG reaches an extreme reading (above 3 or below -3 on the 14-length setting). The oscillator tends to snap back quickly at those levels.
+**Exit**: Taking partial profit when the oscillator reaches an extreme reading relative to its own recent range. The line tends to snap back from stretched readings.
 
-**Divergence trade**: If price makes a higher high but COG makes a lower high—that’s a bearish divergence. Enter short on the next red candle close. I caught a 2.5% drop on BTCUSD using this last week.
+**Divergence trade**: If price makes a higher high while COG makes a lower high, that is a bearish divergence, and vice versa for bullish. Divergence entries are typically confirmed on the next candle close in the direction of the signal.
 
 ---
 
-### Honest Pros and Cons
+### Pros and Cons
 
 **Pros**:
-- Reacts faster than RSI, MACD, or Stochastic—by 1 to 3 bars in my tests.
-- Clean visual: no overbought/oversold bands to clutter the chart.
-- Works across all asset classes (stocks, crypto, forex, commodities).
+- Designed to react faster than RSI, MACD, or Stochastic.
+- Clean visual: no overbought/oversold bands cluttering the chart.
+- Conceptually applicable across asset classes—stocks, crypto, forex, commodities.
 
 **Cons**:
-- **No overbought/oversold levels**—you have to develop your own thresholds based on the asset’s volatility.
-- Can whipsaw in ranging markets. On a 5-minute EURUSD chart during low volatility, it gave three false crossovers in an hour.
-- Not a standalone system. You need price action or a trend filter to avoid bad signals.
+- **No built-in overbought/oversold levels**—thresholds have to be derived from the asset's own volatility.
+- Prone to whipsaw in ranging, low-volatility conditions, where zero-line crossovers can fire repeatedly without follow-through.
+- Not a standalone system. A price-action read or trend filter is needed to filter bad signals.
 
 ---
 
-### Who It’s Actually For
+### Who It's Actually For
 
-- **Momentum traders** who are tired of lagging indicators.
+- **Momentum traders** looking for a less lagging oscillator.
 - **Swing traders** who want earlier divergence signals.
 - **Scalpers** willing to use a shorter length and accept more whipsaws.
 
@@ -93,35 +85,40 @@ The chart above shows the COG line (blue) oscillating around a zero centerline. 
 
 ### Better Alternatives
 
-- **Ehlers’ Fisher Transform**: Similar lag reduction but with clearer overbought/oversold zones. If you want a direct comparison, the Fisher Transform beats COG in ranging markets.
-- **RSI with smoothed line**: If you just want zero-line crossovers, a 14-period RSI with a 3-period SMA overlay does the same thing with more noise.
+- **Ehlers' Fisher Transform**: Similar lag-reduction intent but with clearer overbought/oversold zones, which makes it easier to use in ranging markets.
+- **RSI with a smoothed overlay**: If zero-line crossovers are all you want, an RSI with a short moving average on top achieves something similar, though with more noise.
 
-But if you want **early divergence signals**, the COG is better than both.
+If early divergence signals are the priority, the COG is the more natural fit of the three.
 
 ---
 
 ### FAQ
 
 **Q: Does the COG repaint?**  
-A: No. The indicator is fixed to the bar it’s calculated on. No repainting.
+A: The indicator is fixed to the bar it is calculated on, per its design.
 
-**Q: What’s the best length for crypto?**  
-A: 10 for intraday, 14 for daily. Crypto is volatile—shorter lengths give more false signals.
-
-**Q: Can I use it with the COG indicator from Ehlers’ book?**  
-A: This version is a direct implementation of Ehlers’ original. Settings match.
+**Q: Can I use it with the COG indicator from Ehlers' book?**  
+A: The TradingView version is a direct implementation of Ehlers' original, with matching settings.
 
 ---
 
 ### Final Verdict
 
-The Center of Gravity Oscillator is a **solid, underrated tool** for traders who know how to read divergences and want faster signals than traditional oscillators. It’s not a holy grail—nothing is—but it earns its place on my chart alongside the Fisher Transform and MACD.
+The Center of Gravity Oscillator is a solid, underrated tool for traders who read divergences and want faster signals than traditional oscillators. It is not a holy grail—nothing is—but it earns a place alongside tools like the Fisher Transform and MACD.
 
-**If you already use RSI or MACD and feel they’re too slow, swap one out for the COG for two weeks. You’ll see what I mean.**
+If RSI or MACD feels too slow for your style, the COG is a reasonable alternative to compare against them on the same chart.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** – Loses one star for the lack of built-in overbought/oversold levels, which means extra work to find your own thresholds.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Oscillator** implementation was backtested on 30 markets over 5 years of daily data (9,899 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: VIX 76.2%, AUDUSD 59.5%, LTCUSD 58.8%, EURUSD 57.8%
+- Weakest markets: MSFT 42.8%, NVDA 39.8%, SHIBUSD 31.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

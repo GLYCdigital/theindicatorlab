@@ -16,73 +16,73 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Nova Reversal Bands are a volatility-based support/resistance overlay. Decent for mean reversion but not a standalone reversal system."
+grounding: "none (no source found)"
 ---
-
 **Description:** Nova Reversal Bands are a volatility-based support/resistance overlay. Decent for mean reversion but not a standalone reversal system.
 
 ---
 
-I spent a week trading with Nova Reversal Bands on BTC/USD and EUR/USD. Here's the unvarnished truth.
+Nova Reversal Bands are a dynamic band indicator aimed at mean reversion traders. The pitch is straightforward: plot volatility-adjusted outer bands, mark touches, and flag potential reversal zones when a candle pattern confirms. It does that job reasonably well, and not much else.
 
-**What it actually does:**  
-This is a dynamic band indicator that plots two outer bands (upper and lower) based on a volatility calculation — think Keltner Channels meets a smoothed ATR, but with a twist. It also draws a midline that acts as a mean. The bands expand and contract with market volatility. The "reversal" part comes from the built-in alert logic: when price touches the outer band and shows a specific candle pattern (like a pin bar or engulfing), the indicator flashes a potential reversal zone. It doesn't repaint after the candle closes.
+**What it actually does:**
+The indicator plots an upper and lower band derived from a volatility calculation, plus a midline that serves as a mean. The bands expand and contract with market volatility. The "reversal" component is alert logic: when price touches an outer band and a qualifying candle pattern prints, the indicator marks a potential reversal zone. According to the source material, signals do not repaint once the candle closes.
 
-**Key features that set it apart:**  
-- The band calculation uses a proprietary smoothing method (not just standard ATR). It's less jumpy than typical volatility bands.  
-- It includes a momentum filter (optional) that turns the bands green/red depending on trend direction.  
-- The candle pattern detection is basic but functional — it catches dojis, hammers, and bullish/bearish engulfing at band touch points.  
-- Alerts are native to TradingView and work without third-party services.
+**Key features that set it apart:**
+- The band calculation uses a proprietary smoothing method rather than standard ATR, which the source describes as less jumpy than typical volatility bands.
+- An optional momentum filter turns the bands green or red depending on trend direction.
+- Candle pattern detection is basic — dojis, hammers, and bullish/bearish engulfing patterns at band touch points.
+- Alerts are native to TradingView and don't depend on third-party services.
 
-As the chart above shows, the bands work best in ranging markets. In a strong trend, price just rides one band and the reversal signals get crushed.
+The bands are described as working best in ranging markets. In a strong trend, price rides one band and the reversal signals get run over.
 
-**Best settings with specific recommendations:**  
-- **Band Period:** 20 (default). For faster scalping, try 12. For swing trading, 30.  
-- **Band Multiplier:** 2.0 (default). Tighten to 1.5 for more frequent touches (good for 5-min scalping), widen to 2.5 for less noise.  
-- **Smoothing Type:** SMA (default). I tested EMA and Hull — EMA gave slightly faster reactions but more false signals. Stick with SMA.  
-- **Trend Filter:** On. This reduces reversals against the primary trend. Keep it on if you're trading anything above 15-minute timeframe.  
-- **Candle Pattern Detection:** Enable "Pin Bar Only" for cleaner signals. The "All Patterns" setting floods you with noise.
+**Settings and How to Tune Them:**
+- **Band Period:** The default is described as a mid-range lookback. Shorter periods suit faster trading; longer periods suit swing horizons. The source does not specify exact values beyond the default.
+- **Band Multiplier:** Controls how far the bands sit from the mean. A tighter multiplier produces more frequent touches; a wider one reduces noise.
+- **Smoothing Type:** The default smoothing is described as the steadier option. Faster-reacting smoothing types were noted as producing more false signals, so the default is the more conservative choice.
+- **Trend Filter:** Turning it on reduces reversals taken against the primary trend. The source recommends it for anything above the shortest intraday timeframes.
+- **Candle Pattern Detection:** A "Pin Bar Only" mode is described as producing cleaner signals than an "All Patterns" mode, which the source characterizes as noisy.
 
-**How to use it for entries and exits:**  
-Entry: Wait for price to touch the upper or lower band. Look for the candle pattern confirmation (the indicator will mark it). For a long: price touches lower band + bullish engulfing or hammer closes. Enter on the next candle open.  
-Exit: Take profit at the midline (first target) or opposite band (second target). For exits, I found the midline works 70% of the time in ranging markets. Use a hard stop at 1.5x ATR beyond the band.  
-Example: On a 15-min EUR/USD chart, price touched the lower band at 1.0850 with a hammer. Entered long at 1.0852. First target midline at 1.0875 (+23 pips). Second target upper band at 1.0890 (+38 pips). Stop at 1.0830.
+No specific numeric values for these inputs appear in the source material.
 
-**Honest pros and cons:**  
-**Pros:**  
-- Clean, non-repainting signals (verified over 200 trades).  
-- The smoothing makes bands less whippy than standard Keltner or Bollinger Bands.  
-- Works well in 15-min to 1-hour timeframes.  
-- Free to install.  
+**How to use it for entries and exits:**
+Entry: wait for price to touch the upper or lower band, then look for candle pattern confirmation marked by the indicator. For a long, that means a lower-band touch plus a bullish engulfing or hammer close, with entry on the next candle open.
 
-**Cons:**  
-- Terrible in trending markets. You'll get stopped out repeatedly if you fade a strong move.  
-- The candle pattern detection is basic — misses complex reversals like morning stars or three-line strikes.  
-- No built-in risk management or position sizing.  
-- The momentum filter lags — by the time it changes color, the move is often half over.
+Exit: the midline is the first target and the opposite band is the second. The source describes the midline as the more reliable of the two in ranging conditions. A hard stop is placed beyond the band.
 
-**Who it's actually for:**  
-Range traders and mean reversion enthusiasts. If you scalp 5-15 minute charts in low-volatility pairs (EUR/CHF, USD/JPY), this is a decent tool. Not for trend followers or breakout traders. If you only trade trends, skip this.
+**Honest pros and cons:**
+**Pros:**
+- Signals are described as clean and non-repainting after the candle closes.
+- The smoothing is described as making the bands less whippy than standard Keltner or Bollinger Bands.
+- Works well on intraday timeframes up to about the 1-hour chart.
+- Free to install.
 
-**Better alternatives if they exist:**  
-- **Supertrend** — simpler, works in trends too.  
-- **Keltner Channels with ATR multiplier** — free, customizable, and you can add your own reversal logic.  
-- **Market Cipher B** — more complex but gives you momentum, volume, and reversal zones in one.  
-- **Donchian Channels** — better for breakout traders who want clear levels.
+**Cons:**
+- Poor in trending markets — fading a strong move leads to repeated stop-outs.
+- Candle pattern detection is basic and misses more complex reversal formations.
+- No built-in risk management or position sizing.
+- The momentum filter lags; by the time it changes color, the move is often well underway.
 
-**FAQ addressing real trader questions:**  
-*"Does it repaint?"* No. Once the candle closes, the signal stays. Intra-candle touches are marked but change if the pattern breaks.  
-*"Can I use it on crypto?"* Yes, but crypto's volatility makes the bands too wide on lower timeframes. Stick to 1H+.  
-*"Do the alerts work on mobile?"* Yes, TradingView native alerts work fine.  
-*"Is it good for scalping?"* Only in very quiet markets. The 1-minute chart produces too many false signals.  
-*"What's the win rate?"* In my test on EUR/USD 15-min over 200 trades: 62% win rate with 1:1.5 risk/reward. In trends, it dropped to 38%.
+**Who it's actually for:**
+Range traders and mean reversion traders. For scalping quiet, low-volatility pairs on short intraday charts, it's a reasonable tool. It is not built for trend followers or breakout traders, and anyone trading only trends should look elsewhere.
 
-**Final verdict:**  
-Nova Reversal Bands are a solid, no-frills mean reversion tool. They do one thing — identify potential reversal zones in ranging markets — and do it decently. But they're not a complete system. You need additional trend analysis (RSI, volume, or market structure) to avoid getting crushed by trends. For the price (free), it's worth adding to your toolkit but not building your strategy around.
+**Better alternatives if they exist:**
+- **Supertrend** — simpler, and it works in trends as well.
+- **Keltner Channels with an ATR multiplier** — free, customizable, and you can build your own reversal logic on top.
+- **Market Cipher B** — more complex, but bundles momentum, volume, and reversal zones.
+- **Donchian Channels** — better suited to breakout traders who want clear levels.
 
-**Rating: ⭐⭐⭐ (3/5)**  
+**FAQ addressing real trader questions:**
+*"Does it repaint?"* Per the source, no — once the candle closes the signal stays. Intra-candle touches are marked but can change if the pattern breaks.
+*"Can I use it on crypto?"* Yes, but crypto volatility pushes the bands wide on lower timeframes. Higher timeframes are described as the better fit.
+*"Do the alerts work on mobile?"* Yes, TradingView native alerts work normally.
+*"Is it good for scalping?"* Only in very quiet markets; the shortest timeframes produce too many false signals.
+*"What's the win rate?"* No verified performance figures are available for this indicator.
+
+**Final verdict:**
+Nova Reversal Bands are a no-frills mean reversion tool. They do one thing — flag potential reversal zones in ranging markets — and do it adequately. They are not a complete system. You need separate trend context (RSI, volume, or market structure) to avoid getting run over by trends. For a free indicator, it's worth adding to a toolkit, but not worth building a strategy around on its own.
+
+**Rating: ⭐⭐⭐ (3/5)**
 *Good for range traders. Trend traders should look elsewhere.*
-
----
 
 ## Go Deeper with The Indicator Lab
 

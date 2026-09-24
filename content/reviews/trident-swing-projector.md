@@ -17,83 +17,94 @@ categories:
 rating: 4
 description: "Trident_Swing_Projector review: a clean swing-structure trend tool for TradingView. Tested settings, entry logic, pros, cons and honest 4-star verdict."
 tv_script_url: "https://www.tradingview.com/script/VwFBVQ65-Trident-Swing-Projector-MarkitTick/"
+sources: ["https://www.tradingview.com/script/VwFBVQ65-Trident-Swing-Projector-MarkitTick/"]
 ---
-Trident_Swing_Projector is one of those indicators that does one job and mostly stays out of your way: it maps swing highs and lows onto a trend framework so you can see where structure is being respected and where it's breaking. It isn't a signal-spammer, it doesn't repaint a rainbow of arrows at you, and it doesn't pretend to predict the future. It projects swing structure — hence the name — and lets you decide what to do with it.
+Trident_Swing_Projector is a structured swing-projection tool built around Charles Lindsay's Trident quarter-swing method — a manual charting technique converted into a filtered, alert-ready framework for identifying retracement setups and projecting forward trade levels from a confirmed three-point swing structure.
 
-As the chart above shows, the indicator layers swing pivots over the MACD panel context, which tells you something useful straight away: this is built for traders who want momentum and structure in the same glance rather than flipping between panes. On a trending instrument it reads cleanly. On chop it gets noisy — more on that below.
+Its value isn't in reinventing pivot detection — left/right bar-count pivot confirmation is a known technique — but in the specific architecture built around it. The 25/50/75/100% level ladder projected from the retracement point follows Lindsay's quarter-swing framework: a method of projecting Support/Resistance, Critical, and Equality points from a confirmed A-B-C swing. Everything surrounding that ladder — the pullback-depth gate, dominant-trend filter, ADX and higher-timeframe confluence layers, configurable stop buffer, armed-setup expiry, and post-TP1 break-even handling — are MarkitTick design additions layered on top of Lindsay's original concept, not part of it.
 
 ## What it actually does
 
-Under the hood, Trident_Swing_Projector identifies pivot points using a swing-length sensitivity input, then draws the resulting higher-highs and higher-lows (or lower-highs and lower-lows) as a projected structure. The "projector" part is the interesting bit: once a swing is confirmed, it extends a projected level forward so you have a reference for where the next structural test is likely to occur. That's genuinely useful for setting stop placement and profit targets without eyeballing every candle.
+The script identifies swing highs and lows using a left/right bar-count pivot method: a candidate high or low is confirmed only once it has stood as the extreme point across both the bars to its left and the bars to its right, per the Pivot Left and Pivot Right settings. Because the check references bars that have already closed, a pivot is never inferred from the currently forming bar — it is published one bar after its right-side confirmation window completes, a deliberate choice to keep pivot detection non-repainting.
 
-It's a trend-category tool, but it's really a market-structure tool dressed as a trend indicator. That distinction matters. If you're expecting buy/sell signals, look elsewhere. If you want to know whether the trend is intact or breaking, this is aimed squarely at you.
+Once two consecutive confirmed pivots exist, the script watches for a third pivot that retraces into the prior leg. Point A is the origin pivot, Point B the impulse pivot that follows, and Point C a new opposing pivot that pulls back into the A-B leg by a percentage between the Min Pullback % and Max Pullback % settings (23.6–78.6% by default). Pullbacks shallower or deeper than that window are rejected and no setup forms.
+
+The A-B leg is measured either in raw price points or as a percentage move, depending on the Swing Unit setting. From point C, four levels are projected using fixed fractions of the leg in the direction of the setup: 25% of the leg marks the Entry level, 50% marks TP1 (Lindsay's Critical level), 75% marks TP2, and 100% marks TP3 (the Equality target — a projected swing from C equal in size to the original A-B leg). The Stop sits at point C itself, with an optional buffer beyond it in either a fixed number of ticks or a fraction of ATR.
+
+This is an indicator, not a strategy — it does not backtest or simulate equity. It identifies swing structures, projects levels from them, tracks whether those levels are subsequently reached, and reports all of it through a live dashboard and structured alert payloads.
 
 ## Key features that stand out
 
-Three things separate it from the pile of pivot indicators on TradingView:
+Three elements separate it from the pile of pivot indicators on TradingView:
 
-1. **Projected structure levels.** Rather than just marking past pivots, it extends them forward. This gives you forward-looking reference points instead of backward-looking ones.
-2. **Multi-timeframe swing alignment.** The projector respects higher-timeframe swings, so you can see when a lower-timeframe pullback is just noise against a bigger structure.
-3. **Clean visual hierarchy.** Swing labels don't fight the price action. In a category notorious for cluttered charts, this is refreshing.
+1. **The quarter-swing projection ladder.** Rather than only marking past pivots, it projects forward levels from the retracement point, giving you defined reference prices rather than backward-looking marks.
+2. **Stacked confluence filters.** Two independent filters — an ADX filter and an HTF bias check — can each block a structurally valid pattern from arming. The rationale is that a shallow, weak, or counter-trend retracement produces a projection ladder less meaningful than one built from a decisive, trend-aligned impulse.
+3. **A full trade-management and state layer.** Setups step through Armed, Active, TP1 hit, TP2 hit, TP3 hit, Stopped, or Cancelled, with optional armed expiry and post-TP1 break-even handling reported in the dashboard and alerts.
 
-## Best settings I've tested
+## Settings and How to Tune Them
 
-The default swing length is too sensitive for anything below the 15-minute chart. My tested recommendations:
+**Core.** Pivot Left and Pivot Right set the bar counts required on each side of a swing point before confirmation — larger values produce fewer, more significant, and later-confirmed pivots. Swing Unit chooses whether the A-B leg is measured in raw price points or as a percent move, which changes how leg size and therefore all projected distances are calculated.
 
-- **Swing length: 8–12** for intraday (5m–15m). Default tends to over-mark pivots and you'll see structure lines everywhere.
-- **Swing length: 5–7** for 1H–4H. The higher the timeframe, the fewer swings you need to define structure.
-- **Swing length: 3–5** for daily and above. Anything higher and the projector lags too far behind real structure shifts.
-- **Turn off extended projections on ranging pairs.** They add visual noise without adding information when price is mean-reverting.
+**Filters.** The Trend Filter requires the A-B leg to break the prior confirmed swing extreme in the setup's direction, restricting setups to legs extending the dominant swing rather than forming inside a range. Min Pullback % and Max Pullback % define the acceptable retracement depth window for point C. HTF Confirmation and HTF Timeframe require a higher-timeframe directional bias to agree with the setup direction before arming. ADX Filter, ADX Length, and ADX Threshold require trend strength via DMI/ADX to clear a minimum before arming. Signal Smoothing and Smoothing Length apply SMA, RMA, WMA, HMA, or VWMA smoothing to the leg magnitude used for projections.
 
-If you're on the MACD-panel view shown in the screenshot, keep the histogram visible — the projector's structure breaks line up more often than you'd expect with MACD momentum divergence, and that confluence is where it earns its keep.
+**Trade tools.** Lock Signal freezes the current signal and blocks new setups from arming. Stop Buffer, Buffer Ticks, Buffer ATR Fraction, and ATR Length add extra distance beyond point C when placing the stop, either as a fixed tick count or a fraction of ATR. Armed Expiry Bars cancels an armed but untriggered setup if the Entry level isn't closed through within that many bars. Stop to Breakeven after TP1 moves the internally tracked managed stop to entry once TP1 is hit, reported in the dashboard and alerts without moving the drawn stop line.
+
+**Visuals and dashboard.** Trade Levels, A·B·C Markers, Projected Leg, and Entry Markers are independent toggles. Keep Last N Setups limits how many historical setups' drawings remain on the chart to stay within drawing object limits. Show Dashboard and Position control the live info panel.
+
+**Alerts.** Long, Short, Close Long, Close Short, and Info Action strings are customizable text values inserted into the action field of the JSON alert payload for webhook automation.
+
+**Colors.** Independent controls for bullish/bearish/neutral tones, stop, entry, target, A·B·C markers, projected leg, label text, and dashboard header/body/text colors.
 
 ## How to trade it
 
-The logic is straightforward once you internalize it:
+The workflow is sequential:
 
-**Trend continuation entries:** Wait for price to pull back into a projected swing level (a previous higher-low) and hold. If MACD momentum is still positive on the panel, that's your trigger. Stop goes below the projected level — not below the last candle, below the *structure*.
+**Wait for a confirmed A-B-C structure.** The A and B markers appear once a swing has formed; the C marker with entry/stop/target lines appears only once a pullback within the configured percentage window is confirmed.
 
-**Structure break exits:** When price closes decisively through a projected level, the trend thesis is dead. This is the indicator's strongest feature — it gives you an objective exit rather than a "I'll wait one more candle" exit.
+**Treat the Entry line as a watched level, not an instruction.** Entry triggers when a confirmed close crosses the Entry level — not at point C itself.
 
-**No-trade zone:** When the projector is flipping between higher-high and lower-low labels within a tight range, you're in chop. Sit out. This is the single most valuable thing the indicator does for your P&L, and most traders ignore it.
+**Use the Stop line as the invalidation level.** A confirmed close back through point C cancels an armed setup outright. The stop is placed at point C with the optional buffer beyond it.
+
+**Read TP1 (Critical), TP2, and TP3 (Equality) as sequential projection targets** rather than a single expected outcome. The dashboard's reward-to-risk bars for each target update as price approaches or reaches them.
+
+**Check the HTF Bias and ADX rows** in the dashboard if those filters are enabled, to understand why a structurally valid A-B-C pattern may not have armed.
+
+**Use the webhook payload's state and event fields** to drive automation rather than price levels alone, since the payload reports the managed break-even stop separately from the originally drawn stop.
+
+One structural caveat: because pivot confirmation requires Pivot Right bars to elapse and entry/cancellation logic checks a confirmed prior-bar close, every swing structure, entry trigger, and cancellation appears with a built-in lag relative to the bar that produced it. That trade-off is what keeps the A-B-C structure and its projected levels from repainting once drawn. Separately, TP1/TP2/TP3 detection and their alerts monitor the current bar's high/low in real time rather than waiting for bar close, so a target can be marked and alerted intrabar before that bar finishes forming.
 
 ## Pros and cons
 
 **Pros:**
-- Clean, uncluttered structure mapping
-- Projected levels are genuinely forward-useful
-- Multi-timeframe alignment works well
-- No repainting on confirmed swings (projections update, but confirmed pivots hold)
+- Non-repainting pivot detection and A-B-C structure by design
+- Projected quarter-swing levels are forward-useful for stop placement and targets
+- Confluence layers (trend filter, pullback window, ADX, HTF bias) filter weak setups rather than accepting every pivot
+- Full state tracking with dashboard and structured alert payloads
 
 **Cons:**
-- Noisy in ranging markets — needs a trend filter you supply yourself
-- No built-in alerts for structure breaks out of the box (you'll need to script them)
-- The MACD pairing feels slightly arbitrary; it works, but the indicator doesn't *need* MACD
-- Learning curve on the swing-length setting is steeper than the marketing implies
+- Built-in confirmation lag on every structure, entry, and cancellation event
+- Target detection fires intrabar, so the exact moment a target is marked can precede bar close
+- Requires tuning across multiple interacting settings to fit an instrument
+- Non-standard chart types (Heikin Ashi, Renko, Kagi, Point & Figure, Linebreak, Range) trigger an on-chart warning, since projected price levels aren't meaningful on synthetic bars
 
 ## Who it's for
 
-Swing traders and position traders on 1H and above will get the most out of this. Intraday scalpers will find it too slow unless they drop swing length aggressively. Discretionary traders who already think in terms of market structure will adopt it fastest — it formalizes what you're probably already doing by eye.
-
-## Alternatives worth considering
-
-If you want structure *plus* signals, look at LuxAlgo's market structure tools. If you want pure pivot marking without projection, TradingView's built-in Pivot Points is free and adequate. If you want trend-following rather than structure, a Supertrend or ATR-based tool will serve you better. Trident_Swing_Projector's niche is the projection layer — that's what you're paying for.
+Discretionary traders who already think in terms of swing structure and retracement depth will adopt it fastest — it formalizes a manual projection technique into a monitored, alertable framework. Traders who want raw buy/sell signals should look elsewhere; this is a structure-and-projection tool, not a signal generator.
 
 ## FAQ
 
-**Does it repaint?** Confirmed swing pivots hold. Projected levels update as structure evolves, which is by design, not a flaw.
+**Does it repaint?** Confirmed pivots and the A-B-C structure are non-repainting by design. Target detection, however, monitors the current bar's high/low in real time, so a target can be marked intrabar before the bar closes.
 
-**Can I use it for crypto?** Yes, but tighten swing length — crypto's volatility produces more false pivots at default settings.
+**Can I automate it?** Yes — the alert payload includes state and event fields, and the action strings are customizable for webhook use.
 
-**Does it work on lower timeframes?** Technically, but signal quality degrades below 15 minutes. Not recommended for scalping.
+**Does it backtest?** No. It is an indicator, not a strategy; it does not simulate equity.
 
-**Do I need the MACD panel?** No. It pairs well but the indicator functions standalone on price alone.
+**Why didn't a valid A-B-C pattern arm?** Check the HTF Bias and ADX dashboard rows if those filters are enabled — either can block arming independently of the structure.
 
 ## Final verdict
 
-Trident_Swing_Projector does one thing well: it turns market structure into something you can act on with defined risk. The projection feature is a real differentiator, and the multi-timeframe alignment punches above the price point. It loses a star for range-market noise and the lack of native alerts, but for swing traders who want structure without clutter, it's a solid install.
+Trident_Swing_Projector does one thing well: it turns a confirmed A-B-C swing into a defined projection ladder with state tracking, confluence gating, and alertable trade management. The quarter-swing ladder is the core differentiator, and the surrounding filters exist to answer one question before a projection is drawn — was the A-B leg significant enough to justify projecting from it? The confirmation lag and intrabar target detection are structural trade-offs rather than defects, but they're real and worth understanding before you rely on the levels. For traders who want swing structure with defined risk rather than signal spam, it's a solid install.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — install it, tune the swing length to your timeframe, and pair it with your own trend filter.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,39 +16,39 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Bill Williams' AC indicator measures momentum changes. Review covers settings, zero-line cross strategy, and how to combine with AO for high-probability trades."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-The Acceleration/Deceleration (AC) is Bill Williams' momentum oscillator that measures the *rate of change* of momentum — not momentum itself. It’s the second derivative of price, if you’re into math. The idea: before price changes direction, its acceleration (or deceleration) shifts first.
+The Acceleration/Deceleration (AC) is Bill Williams' momentum oscillator that measures the *rate of change* of momentum — not momentum itself. It's the second derivative of price, if you're into math. The idea: before price changes direction, its acceleration (or deceleration) shifts first.
 
-On the chart, AC is a histogram oscillating above/below a zero line. Green bars show increasing acceleration, red bars show deceleration. It’s built on top of the Awesome Oscillator (AO), so you’ll often see them used together.
+On the chart, AC is a histogram oscillating above and below a zero line. Green bars indicate increasing acceleration, red bars indicate deceleration. It's built on top of the Awesome Oscillator (AO), so the two are often used together.
 
 ## Key Features That Set It Apart
 
-- **Leading indicator** — AC can signal a potential reversal before price actually turns
-- **Zero-line cross** — Simplest signal: cross above = bullish acceleration, cross below = bearish deceleration
-- **Saucer patterns** — Bill Williams’ “saucer” buy/sell setup: two consecutive green bars after a zero-line cross
-- **Divergence** — Works well with price: bearish divergence on AC = weakening upward acceleration
+- **Leading indicator** — AC is designed to signal a potential reversal before price actually turns
+- **Zero-line cross** — The simplest signal: cross above = bullish acceleration, cross below = bearish deceleration
+- **Saucer patterns** — Bill Williams' "saucer" buy/sell setup: two consecutive green bars after a zero-line cross
+- **Divergence** — Works alongside price: bearish divergence on AC indicates weakening upward acceleration
 
-What’s unique: AC doesn’t tell you *direction*, it tells you *whether the current move is gaining or losing steam*. That’s subtle but powerful.
+What's distinctive: AC doesn't tell you *direction*, it tells you *whether the current move is gaining or losing steam*. That's subtle but meaningful.
 
-## Best Settings With Specific Recommendations
+## Settings and How to Tune Them
 
-Default settings are fine for most timeframes:
+The indicator runs on two parameters — a smoothing period and a signal period. The conventional defaults are widely used across timeframes.
 
-- **Smoothing**: 5 (AO period)
-- **Signal line**: 3 (AC period)
-- **Timeframe**: H1 to H4 is the sweet spot. Lower timeframes generate too much noise. Daily works for swing trading.
+- **Smoothing period**: the shorter of the two, controls how much the raw acceleration reading is filtered
+- **Signal period**: applied to derive the AC line from the AO
+- **Timeframe**: H1 to H4 is commonly cited as the sweet spot. Lower timeframes generate more noise. Daily works for swing trading.
 
-If you find it too choppy on M15, increase the smoothing to 8-10. I run it at default on H1 and it’s clean enough.
+If the oscillator looks too choppy on lower timeframes, lengthening the smoothing period will calm it down. On higher timeframes the defaults are generally considered clean enough. There's no single setting that is objectively best — it depends on the instrument and the timeframe you trade.
 
 ## How to Use It for Entries and Exits
 
 **Entry setup (buy):**
-1. Wait for AC to cross above zero line
+1. Wait for AC to cross above the zero line
 2. Confirm with two consecutive green bars = saucer buy
-3. Look for bullish divergence on AC vs price if you want higher-probability
+3. Look for bullish divergence on AC vs. price for a stronger confluence
 4. Enter on the next candle after the saucer completes
 
 **Exit:**
@@ -57,25 +57,25 @@ If you find it too choppy on M15, increase the smoothing to 8-10. I run it at de
 
 **Short setup** is the mirror image.
 
-As the chart above shows, AC often prints a bullish saucer about 1-2 candles before price breaks resistance. That’s the lead time you’re paying for.
+AC can print a bullish saucer ahead of a price break of resistance — that lead time is the point of the indicator.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Genuinely leading — catches reversals early
+- Genuinely leading — designed to catch reversals early
 - Clean visual — zero-line cross is easy to spot
 - Pairs well with AO for confirmation
 
 **Cons:**
 - Whippy in ranging markets — false signals happen
-- Laggy on higher timeframes (D1+) — the lead advantage fades
+- Loses its lead advantage on higher timeframes (D1+)
 - Not standalone — needs price action or AO to filter
 
 ## Who It's Actually For
 
 - **Momentum traders** who want early reversal signals
 - **Bill Williams system users** (AC + AO + Alligator + Fractals)
-- **Swing traders** on H1-D1. Scalpers: skip it.
+- **Swing traders** on H1–D1. Scalpers: skip it.
 
 ## Better Alternatives If They Exist
 
@@ -88,26 +88,34 @@ AC is unique in being purely acceleration-based. No other mainstream indicator d
 ## FAQ
 
 **Q: Can I use AC alone?**  
-Technically yes, but you’ll get whipsawed. Always pair with AO or a simple moving average.
+Technically yes, but you'll get whipsawed. Always pair with AO or a simple moving average.
 
 **Q: What timeframe works best?**  
 H1 to H4. M15 is too noisy. D1 is fine but signals are rare.
 
 **Q: Does AC repaint?**  
-No, it’s a fixed calculation based on historical data. But the “saucer” pattern requires the next bar to confirm.
+No, it's a fixed calculation based on historical data. But the "saucer" pattern requires the next bar to confirm.
 
 **Q: Is it better than MACD?**  
 Different. MACD is slower but more reliable. AC is faster but needs more filtering.
 
 ## Final Verdict
 
-AC is a niche tool that excels at one thing: catching momentum shifts early. It’s not a standalone system, but if you already use AO or trade Bill Williams’ method, it’s a solid addition. The zero-line cross + saucer pattern gives you clean entry signals on H1-H4.
+AC is a niche tool that excels at one thing: catching momentum shifts early. It's not a standalone system, but if you already use AO or trade Bill Williams' method, it's a solid addition. The zero-line cross + saucer pattern gives you clean entry signals on H1–H4.
 
-The biggest downside is noise in sideways markets. Use a trend filter (like the Alligator or a 200 EMA) to avoid those signals.
+The biggest downside is noise in sideways markets. Use a trend filter (like the Alligator or a long moving average) to avoid those signals.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Works well in trending markets, fades in chop. Worth having in your toolkit if you understand its limits.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Oscillator** implementation was backtested on 30 markets over 5 years of daily data (9,899 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: VIX 76.2%, AUDUSD 59.5%, LTCUSD 58.8%, EURUSD 57.8%
+- Weakest markets: MSFT 42.8%, NVDA 39.8%, SHIBUSD 31.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

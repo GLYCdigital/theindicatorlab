@@ -16,9 +16,9 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Standard Deviation Channels review: 3/5 stars. A solid volatility-based envelope for trend and mean reversion. Settings, strategy, and honest trade-offs."
+grounding: "none (no source found)"
 ---
-
-**Standard Deviation Channels** is one of those indicators that sounds sexier than it actually is. It's a volatility envelope—like Bollinger Bands' older, less popular cousin—that plots channels based on standard deviation from a moving average. I've run it on BTC/USD, EUR/USD, and a handful of stocks. Here's what I found.
+**Standard Deviation Channels** is one of those indicators that sounds sexier than it actually is. It's a volatility envelope—like Bollinger Bands' older, less popular cousin—that plots channels based on standard deviation from a moving average.
 
 ## What This Indicator Actually Does
 
@@ -34,22 +34,18 @@ The key difference from Bollinger Bands? You get full control over the moving av
 
 But honestly? The chart above shows what you're getting: a pretty standard envelope. The real value is in how you use it.
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-I tested this on daily and 4H charts. Here's what worked:
-
-- **Length**: 20 (standard). For faster signals, drop to 10–14 on lower timeframes.
-- **Source**: Close price. Using high/low creates too much noise.
+- **Length**: Shorten it for faster signals on lower timeframes, or keep it longer for smoother, slower bands.
+- **Source**: Close price tends to be the cleanest input. Using high/low adds noise.
 - **MA Type**: EMA for responsiveness on trends, SMA for cleaner mean reversion signals.
-- **Deviation**: 2.0 for most assets. 2.5 on crypto (false breakouts are frequent).
-- **Offset**: Keep at 0. Any offset distorts the channel.
-
-**Recommended preset**: EMA(20) with 2.0 deviation on daily. This catches 95% of price action within bands.
+- **Deviation**: Higher values push the bands further out and reduce the frequency of touches; lower values bring them in tight.
+- **Offset**: Keep at zero. Any offset distorts the channel.
 
 ## How to Use It for Entries and Exits
 
 **Mean reversion strategy** (works best in ranging markets):
-- **Entry**: Price touches or slightly breaches the lower band → buy when you see a bullish reversal candlestick (hammer, engulfing). 
+- **Entry**: Price touches or slightly breaches the lower band → buy when you see a bullish reversal candlestick (hammer, engulfing).
 - **Exit**: Price touches the centerline or upper band. Take partial profits at centerline.
 - **Stop**: Below the lower band by 1 ATR.
 
@@ -57,7 +53,7 @@ I tested this on daily and 4H charts. Here's what worked:
 - **Entry**: Price hugs the upper band for 3+ candles → pullback to centerline → buy on rejection.
 - **Exit**: When price closes outside the band for 2 consecutive candles.
 
-**Warning**: In choppy markets, this indicator whipsaws like crazy. I lost 4 out of 10 trades on EUR/USD during low volatility hours.
+**Warning**: In choppy markets, this indicator whipsaws. Low-volatility conditions are where the false signals cluster.
 
 ## Honest Pros and Cons
 
@@ -68,8 +64,8 @@ I tested this on daily and 4H charts. Here's what worked:
 - Works on any timeframe.
 
 **Cons**:
-- Lags like a slow boat in fast markets. By the time price hits the band, the move is often exhausted.
-- Useless in strong trends without additional filters (RSI, ADX).
+- Lags in fast markets. By the time price hits the band, the move is often exhausted.
+- Weak in strong trends without additional filters (RSI, ADX).
 - Doesn't adapt to changing volatility as smoothly as Keltner Channels or ATR-based envelopes.
 - No built-in alerts for band touches (you have to code them).
 
@@ -77,7 +73,7 @@ I tested this on daily and 4H charts. Here's what worked:
 
 - **Beginners** learning volatility concepts. It's educational.
 - **Swing traders** on daily charts who want a simple mean reversion tool.
-- **Not for scalpers or day traders**. The lag will kill you.
+- **Not for scalpers or day traders**. The lag will hurt.
 
 ## Better Alternatives
 
@@ -86,28 +82,36 @@ If you're considering this, also look at:
 - **Keltner Channels** (ATR-based, responds faster to volatility changes)
 - **Linear Regression Channels** (better for trend direction + volatility)
 
-For my money, I'd use Bollinger Bands with a 20-period SMA and 2.0 deviation. It's the same thing but with more community support and built-in alerts.
+Bollinger Bands with a 20-period SMA and 2.0 deviation is essentially the same thing but with more community support and built-in alerts.
 
 ## FAQ
 
-**Q: Does this work for crypto?**  
-Yes, but use 2.5 deviation. Crypto has fat tails—price will routinely breach 2.0 bands.
+**Q: Does this work for crypto?**
+Yes, though crypto's fat tails mean price will routinely breach the standard deviation bands. Some traders widen the deviation setting to compensate.
 
-**Q: Can I use it for options trading?**  
+**Q: Can I use it for options trading?**
 Sort of. The bands hint at implied volatility extremes, but don't replace a proper IV rank check.
 
-**Q: Is it repaint?**  
+**Q: Is it repaint?**
 No. It's based on past price data. No repainting.
 
 ## Final Verdict
 
-Standard Deviation Channels is a fine tool—if you're new to volatility-based analysis or want a customizable envelope. But it's not a game-changer. The lag, the lack of alerts, and the mediocre performance in trends make it a 3-star indicator. You're better off with Bollinger Bands (free, built-in) or Keltner Channels (faster response).
+Standard Deviation Channels is a fine tool—if you're new to volatility-based analysis or want a customizable envelope. But it's not a game-changer. The lag, the lack of alerts, and the weak performance in trends make it a middling indicator. You're better off with Bollinger Bands (free, built-in) or Keltner Channels (faster response).
 
 If you absolutely need the ability to change the MA type, this is your pick. Otherwise, pass.
 
 **Rating**: ⭐⭐⭐ (3/5) – Functional but forgettable.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **StdDev** implementation was backtested on 30 markets over 5 years of daily data (44,048 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.5%** (50% = coin flip)
+- Strongest markets: USDJPY 57.6%, SPY 55.9%, XAUUSD 55.0%, QQQ 53.9%
+- Weakest markets: XRPUSD 43.6%, VIX 43.3%, SHIBUSD 24.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

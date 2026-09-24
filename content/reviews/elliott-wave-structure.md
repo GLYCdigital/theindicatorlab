@@ -17,94 +17,92 @@ categories:
 rating: 4
 description: "Elliott_Wave_Structure auto-labels impulsive and corrective waves on your chart. An honest review of its settings, accuracy, and how to trade it."
 tv_script_url: "https://www.tradingview.com/script/MAFSHswT-Elliott-Wave-Structure/"
+sources: ["https://www.tradingview.com/script/MAFSHswT-Elliott-Wave-Structure/"]
 ---
-Most Elliott Wave indicators on TradingView are either glorified zigzags or hand-wavy line-drawing tools that repaint the moment price disagrees with them. Elliott_Wave_Structure sits somewhere better than that: it's an automated wave-labeling tool that scans price structure and stamps 1-2-3-4-5 impulse counts and A-B-C corrections onto your chart. It doesn't pretend to predict the future. It labels the past and the present, then lets you decide what the next leg probably is.
+Most Elliott Wave indicators on TradingView are either glorified zigzags or hand-wavy line-drawing tools. Elliott Wave Structure takes a more disciplined approach: it's an automated wave-labeling tool that scans price structure and stamps 1-2-3-4-5 impulse counts and A-B-C corrections onto your chart. It doesn't pretend to predict the future. It labels structure using confirmed pivots, and leaves interpretation to you.
 
 That's an honest framing, and it's why this one is worth a look rather than an eye-roll.
 
 ## What it actually does
 
-The indicator runs a swing-detection engine underneath, identifies pivot highs and lows based on a configurable lookback, then applies Elliott's structural rules — wave 2 doesn't retrace past the start of wave 1, wave 3 isn't the shortest, wave 4 doesn't overlap wave 1 in an impulse — to decide whether the current sequence qualifies as an impulse or a correction. When it does, you get numbered labels plotted at the pivots.
+The indicator uses confirmed pivot points to identify significant market swings, then applies Elliott's structural rules to decide whether the current sequence qualifies as an impulse or a correction. When it does, labels are plotted at the pivots, with the most recent sequence marked as 1–2–3–4–5 and A–B–C when sufficient swing points are available.
 
-The MACD pane in the screenshot above is relevant here. Elliott's original work leaned on momentum divergence to validate wave counts, and this indicator pairs well with a momentum oscillator for exactly that reason — a wave 5 that prints with a weaker MACD histogram than wave 3 is one of the more reliable signals you'll get out of this tool.
+Because pivots require confirmation, the most recent wave structure can change as new price action develops. That's a structural consequence of the method, not a bug — but it matters for how you use the tool.
 
-## The settings that matter
+Pairing the indicator with a momentum oscillator makes sense for the same reason Elliott's original work leaned on momentum divergence: a wave 5 that prints with weaker momentum than wave 3 is one of the classic confirmations of a completed impulse. The indicator itself doesn't measure momentum; it just gives you the structure to compare against.
 
-Three inputs do most of the heavy lifting:
+## Settings and How to Tune Them
 
-**Swing sensitivity / lookback.** This is the whole ballgame. Set it too tight and the indicator labels every three-bar pullback as a "wave 2." Set it too loose and you'll wait a week for a single label on a 15-minute chart. On the daily, I found a lookback in the 8–14 range gave clean, tradeable counts on liquid instruments. On anything under an hour, push it higher than you think you need.
+The **Pivot Length** input controls how sensitive the swing detection is:
 
-**Show corrective waves (ABC).** Turn this on if you're swing trading. Turn it off if you're a trend follower who only cares about impulses — the ABC labels clutter the chart and rarely change your decision.
+- Lower values detect smaller and more frequent swings.
+- Higher values focus on larger and more significant swings.
 
-**Extend projections.** This draws the *implied* target zone for the next wave based on Fibonacci ratios (typically 1.618 for wave 3, 0.618 retracement for wave 4). Useful, but treat these as zones, not prices. The indicator will happily project a wave 3 target that price never reaches.
+That's the core trade-off. Too sensitive and the indicator labels minor pullbacks as wave structures. Too coarse and labels appear rarely. There's no universally correct value — it depends on the instrument, the timeframe, and the degree of structure you care about.
 
-## How I'd actually trade it
+## How to use it
 
-The single most useful pattern this indicator produces is a clean wave 2 completion. Here's the logic:
+The most useful pattern this indicator produces is a completed impulse followed by a corrective sequence. The logic:
 
-1. Wait for the indicator to label waves 1 and 2.
-2. Confirm wave 2 retraced between 50% and 61.8% of wave 1 (the indicator plots this ratio).
-3. Enter long on the break of wave 1's high, stop below wave 2's low.
-4. Target the 1.618 extension of wave 1, which the indicator projects.
+1. Wait for the indicator to label a full 1–2–3–4–5 sequence.
+2. Watch for the A–B–C correction to develop against that trend.
+3. Treat the potential end of wave C as a location where the prior trend may resume — or where a reversal may be starting, depending on the higher-degree structure.
 
-That's a textbook setup, and to the indicator's credit, it draws the lines that make it executable. The wave 3 entries are where the risk-reward lives; wave 5 entries are where accounts go to die, because the indicator will sometimes label a completed impulse right as the trend exhausts.
+Wave 3 is typically the strongest impulse phase, so entries during a developing wave 3 tend to offer the cleanest risk-reward. Wave 5 often occurs with weaker momentum than wave 3, which is where a momentum oscillator is most useful as a confirmation tool.
 
-For exits, watch for the wave 5 label combined with a MACD bearish divergence. When both fire together, take profits or tighten stops. Don't wait for the A-B-C correction to confirm — by then you've given back half the move.
+For exits, watch for a completed wave 5 label combined with weakening momentum. Waiting for the full A–B–C correction to confirm means giving back a meaningful portion of the move.
 
-## Where it earns its four stars
+## Where it holds up
 
-The structural rule engine is genuinely good. It rejects invalid counts rather than forcing labels, which is more than most competitors bother to do. That alone separates it from the pack of repainting wave indicators that redraw their labels every time price moves.
+The structural rule engine is the strongest part. It uses confirmed swings rather than forcing labels onto incomplete price action, which separates it from indicators that redraw constantly.
 
-It also handles degree reasonably — you can nest counts on higher and lower timeframes and they'll mostly agree, which is rare.
+The labels are readable and don't overwhelm the chart, and the tool connects confirmed pivots into a clear wave structure rather than leaving you to draw lines manually.
 
-## Where it loses the fifth star
+## Where it falls short
 
-Two real problems.
+Two real limitations, both acknowledged in the indicator's own documentation.
 
-First, it repaints on the right edge. The most recent label can and does change as new bars form. This is arguably unavoidable with Elliott Wave — you can't know a wave is complete until it's complete — but the indicator doesn't do much to warn you. Treat the last label as provisional, always.
+First, the most recent wave structure can change as new price action develops. This is inherent to Elliott Wave — you can't confirm a wave is complete until it's complete — but it means the right-edge label should always be treated as provisional.
 
-Second, corrections are messy. The ABC logic struggles with complex corrections (WXY, triangles, flats), and you'll occasionally see labels that violate Elliott's own guidelines. The impulse counting is strong; the corrective counting is average.
+Second, Elliott Wave analysis involves interpretation, and multiple valid wave counts can exist on the same market. The indicator provides a visual representation of potential wave structure based on confirmed market swings; it does not determine the definitive Elliott Wave count. Corrective structures in particular are where this ambiguity bites hardest, since complex corrections don't always resolve into a clean A–B–C.
 
 ## Pros and cons
 
 **Pros**
-- Enforces Elliott's structural rules instead of just drawing zigzags
+- Uses confirmed pivots rather than forcing labels on incomplete price action
 - Clean, readable labels that don't overwhelm the chart
-- Fibonacci projections for wave 3 and 4 targets are built in
-- Pairs cleanly with MACD for divergence confirmation
-- Handles multiple degrees without falling apart
+- Labels both impulse (1–2–3–4–5) and corrective (A–B–C) sequences
+- Pairs naturally with a momentum oscillator for divergence confirmation
+- Configurable sensitivity via Pivot Length
 
 **Cons**
-- Repaints the most recent label — unavoidable but under-communicated
-- Corrective wave logic is weaker than impulse logic
-- Requires tuning; default settings are too sensitive on low timeframes
-- No built-in alerts for specific wave completions (a real miss)
+- The most recent wave structure can change as new price action develops
+- Multiple valid wave counts can exist — the indicator doesn't resolve that ambiguity
+- Requires tuning Pivot Length to the instrument and timeframe
+- It's a visual representation, not a definitive count
 
 ## Who it's for
 
-Swing traders on the 4H and daily who already understand Elliott Wave theory and want an assist with labeling — not a replacement for their own analysis. If you don't know what a wave 2 retracement is, this indicator won't teach you; it'll just confuse you with numbers. Discretionary traders who like to combine structure with momentum will get the most out of it.
-
-Day traders on the 1- and 5-minute should look elsewhere. The repainting is too aggressive at that resolution to be reliable.
+Traders who already understand Elliott Wave theory and want an assist with labeling — not a replacement for their own analysis. If you don't know what a wave 2 retracement is, the labels won't teach you; they'll just add numbers to your chart. Discretionary traders who combine structure with momentum will get the most out of it.
 
 ## Alternatives
 
-If you want pure swing structure without Elliott labels, **ZigZag** or **LuxAlgo's Smart Money Concepts** do the job with less theory baggage. If you want Elliott specifically, this is one of the better free options — the paid competitors like **Elliott Wave PRO** add alerting and better corrective logic, but at a cost.
+If you want pure swing structure without Elliott labels, ZigZag-style tools do the job with less theory baggage. If you want Elliott specifically, this is a reasonable free option to start with — paid alternatives exist, but the underlying interpretive problem doesn't go away with a subscription.
 
 ## FAQ
 
-**Does it repaint?** Yes, the most recent label. Historical labels are stable.
+**Does the labeling change?** Yes — the most recent wave structure can change as new price action develops, because pivots require confirmation.
 
-**Does it work on crypto?** Yes, but tune the sensitivity higher — crypto's volatility produces false wave 2 labels on default settings.
-
-**Can I get alerts?** Not for wave completions specifically, which is the biggest functional gap.
+**Does it give a definitive wave count?** No. Multiple valid wave counts can exist on the same market. The indicator shows potential structure based on confirmed swings.
 
 **Is it worth using without Elliott knowledge?** No. Learn the rules first or the labels will mislead you.
 
 ## Verdict
 
-Elliott_Wave_Structure is a solid, honest implementation of an inherently tricky concept. It won't make you money on its own, and the repainting will occasionally burn you if you trust the right-edge label. But for traders who already think in waves, it's a genuine time-saver that enforces the rules most manual counters forget.
+Elliott Wave Structure is a solid, honest implementation of an inherently tricky concept. It won't make you money on its own, and the right-edge label should always be treated as provisional. But for traders who already think in waves, it's a genuine time-saver that enforces structure using confirmed pivots rather than guessing at incomplete price action.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — excellent for what it is, held back by repainting and weak corrective logic.
+**Rating: ⭐⭐⭐⭐ (4/5)** — excellent for what it is, held back by the inherent ambiguity of Elliott Wave itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

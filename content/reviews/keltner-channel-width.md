@@ -16,76 +16,80 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Keltner_Channel_Width measures channel expansion and contraction to spot volatility breakouts and trend strength—simple and effective."
+grounding: "none (no source found)"
 ---
+**What This Indicator Actually Does**
+Keltner_Channel_Width strips away the fluff. Instead of showing the Keltner Channel bands themselves, it plots a single line representing the *width* of the channel—the difference between the upper and lower bands. When the line rises, volatility is expanding; when it falls, the market is coiling. It's a volatility oscillator in disguise, and it does exactly what it promises.
 
-**What This Indicator Actually Does**  
-Keltner_Channel_Width strips away the fluff. Instead of showing the Keltner Channel bands themselves, it plots a single line representing the *width* of the channel—the difference between the upper and lower bands. When the line rises, volatility is expanding; when it falls, the market is coiling. It’s a volatility oscillator in disguise, and it does exactly what it promises.
+**Key Features That Set It Apart**
+- **One clean line** – No clutter. You get a single histogram or line that shows channel width over time.
+- **Customizable period and multiplier** – The ATR length and multiplier are user inputs, so you can align the channel calculation with your timeframe.
+- **Color-coded expansion** – The line changes color when width exceeds a user-defined threshold, making breakout conditions visually distinct.
+- **Works with any asset** – The underlying calculation is not tied to a specific market, so it can be applied across instruments.
 
-**Key Features That Set It Apart**  
-- **One clean line** – No clutter. You get a single histogram or line that shows channel width over time.  
-- **Customizable period and multiplier** – You can tweak the ATR length and multiplier to match your timeframe.  
-- **Color-coded expansion** – The line changes color when width exceeds a user-defined threshold (default: 1.5x the average), making breakout signals pop.  
-- **Works with any asset** – I’ve tested it on ES futures, BTC, and forex pairs. It’s universal.
+**Settings and How to Tune Them**
+The indicator exposes the ATR length, the channel multiplier, and an expansion threshold that governs the color change. All three are user inputs, so the practical question is how they interact rather than which fixed values are "correct."
 
-**Best Settings with Specific Recommendations**  
-For intraday (5–15 min charts):  
-- ATR Length: 14  
-- Multiplier: 2.0  
-- Expansion Threshold: 1.5  
+- **ATR length** controls how much history feeds the channel width. Shorter lengths make the line more responsive to recent conditions; longer lengths smooth it out.
+- **Multiplier** scales the distance of the bands from the basis line, which directly scales the width reading.
+- **Expansion threshold** defines the level at which the line changes color. A higher threshold means fewer, more extreme readings qualify as expansion; a lower threshold flags more of them.
 
-For swing trading (1H–4H):  
-- ATR Length: 20  
-- Multiplier: 2.5  
-- Expansion Threshold: 2.0  
+Because these inputs are interdependent, the sensible approach is to pick an ATR length and multiplier that produce a width series you can read comfortably on your chosen timeframe, then set the threshold relative to the typical range of that series.
 
-The default settings are decent, but I found the 14-period ATR with a 2.0 multiplier works best for most liquid markets. If you’re scalping, tighten the multiplier to 1.5.
+**How to Use It for Entries and Exits**
+The strategy is straightforward. Look for a **contraction**—the width line drops below its moving average or a flat threshold. This means the channel is narrow, and a breakout is likely. Wait for the width to spike above the expansion threshold (the color change). That's your signal: volatility is back, and a strong move is underway.
 
-**How to Use It for Entries and Exits**  
-The strategy is straightforward. Look for a **contraction**—the width line drops below its 20-period moving average or a flat threshold. This means the channel is narrow, and a breakout is likely. Wait for the width to spike above the expansion threshold (the color change). That’s your signal: volatility is back, and a strong move is underway.
-
-**Entry**: Buy or sell in the direction of the breakout (confirm with price breaking the Keltner Channel band).  
-**Exit**: When the width line crosses back below the expansion threshold or flattens.  
+**Entry**: Buy or sell in the direction of the breakout (confirm with price breaking the Keltner Channel band).
+**Exit**: When the width line crosses back below the expansion threshold or flattens.
 **Stop-loss**: Place below/above the recent swing low/high, or use the ATR value from the indicator.
 
 **Honest Pros and Cons**
 
-*Pros:*  
-- Simple and visual—perfect for identifying low-volatility setups.  
-- Works as a standalone or confluent indicator.  
-- No lag—it updates in real-time with each bar.  
-- Great for catching breakouts before they explode.
+*Pros:*
+- Simple and visual—well suited to identifying low-volatility setups.
+- Works as a standalone or confluent indicator.
+- Updates in real-time with each bar.
+- Useful for catching breakouts as they develop.
 
-*Cons:*  
-- It only shows *width*, not direction. You still need price action or another indicator for trend.  
-- False signals in choppy, sideways markets (width can spike on noise).  
-- No built-in alerts for the contraction phase—only for expansion threshold. That’s a missed opportunity.
+*Cons:*
+- It only shows *width*, not direction. You still need price action or another indicator for trend.
+- Prone to false signals in choppy, sideways markets, where width can spike on noise.
+- No built-in alerts for the contraction phase—only for the expansion threshold. That's a missed opportunity.
 
-**Who It’s Actually For**  
-This is for traders who love volatility-based strategies. If you trade breakouts, Bollinger Bands squeezes, or ATR-based setups, you’ll feel at home. Beginners will appreciate the simplicity, but you need a basic understanding of how volatility cycles work. Scalpers and day traders will get the most mileage. Position traders? Skip it—you want longer-term volatility metrics.
+**Who It's Actually For**
+This is for traders who run volatility-based strategies. If you trade breakouts, Bollinger Bands squeezes, or ATR-based setups, you'll feel at home. Beginners will appreciate the simplicity, but you need a basic understanding of how volatility cycles work. Scalpers and day traders are the natural audience. Position traders may find it less relevant, since it speaks to shorter-term volatility shifts rather than longer-term regimes.
 
-**Better Alternatives If They Exist**  
-- **Bollinger Bands Width** – Essentially the same concept but uses standard deviation instead of ATR. More sensitive, but noisier.  
-- **ATR** – The raw Average True Range is simpler but lacks the relative expansion threshold.  
-- **Volatility Squeeze** – Combines Bollinger Bands and Keltner Channels. More complex, but gives you both squeeze and momentum.  
+**Better Alternatives If They Exist**
+- **Bollinger Bands Width** – Essentially the same concept but uses standard deviation instead of ATR. More sensitive, but noisier.
+- **ATR** – The raw Average True Range is simpler but lacks the relative expansion threshold.
+- **Volatility Squeeze** – Combines Bollinger Bands and Keltner Channels. More complex, but gives you both squeeze and momentum.
 
 If you want a pure, no-nonsense volatility measurement, Keltner_Channel_Width is your pick. If you need direction *and* volatility, try the Squeeze.
 
-**FAQ Addressing Real Trader Questions**  
-*Q: Does it repaint?*  
-A: No. The width is calculated from the current bar’s Keltner Channel values. What you see is what you get.
+**FAQ Addressing Real Trader Questions**
+*Q: Does it repaint?*
+A: No. The width is calculated from the current bar's Keltner Channel values. What you see is what you get.
 
-*Q: Can I use it on crypto?*  
-A: Yes. I tested it on BTC/USDT and ETH/USDT. Works fine, but crypto’s high volatility means you’ll see more false expansions. Use a higher multiplier.
+*Q: Can I use it on crypto?*
+A: Yes. Crypto's high volatility means you'll see more false expansions, so a higher multiplier is the usual adjustment.
 
-*Q: What’s the difference between this and Keltner Channel itself?*  
-A: The original shows bands and price. This shows only the *distance* between them. It’s a derivative—helpful for spotting contractions the naked eye might miss.
+*Q: What's the difference between this and Keltner Channel itself?*
+A: The original shows bands and price. This shows only the *distance* between them. It's a derivative—helpful for spotting contractions the naked eye might miss.
 
-**Final Verdict**  
-Keltner_Channel_Width is a solid, no-frills tool for volatility analysis. It won’t replace a complete trading system, but as a breakout filter, it’s reliable. The lack of built-in contraction alerts is a minor annoyance, but the color-coded expansion threshold makes up for it. If you’re tired of cluttered charts and want one line that tells you when to pay attention, this is it.
+**Final Verdict**
+Keltner_Channel_Width is a solid, no-frills tool for volatility analysis. It won't replace a complete trading system, but as a breakout filter, it's reliable. The lack of built-in contraction alerts is a minor annoyance, but the color-coded expansion threshold makes up for it. If you're tired of cluttered charts and want one line that tells you when to pay attention, this is it.
 
 **Star Rating**: ⭐⭐⭐⭐ (4/5) – Effective, simple, and practical. Not perfect, but well worth adding to your toolkit.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Keltner** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

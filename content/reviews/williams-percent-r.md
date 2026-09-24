@@ -16,34 +16,30 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Williams %R identifies overbought/oversold levels and hidden momentum shifts. Honest review of settings, strategy, and when it actually works."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Williams Percent R (or %R) is a momentum oscillator developed by Larry Williams. It measures where the current close sits relative to the highest high over a lookback period—typically 14 bars. The result is plotted from -100 to 0. Think of it as an inverted version of the Stochastic Oscillator: readings below -80 are oversold, above -20 are overbought.
+Williams Percent R (or %R) is a momentum oscillator developed by Larry Williams. It measures where the current close sits relative to the highest high over a lookback period. The result is plotted from -100 to 0. It is effectively an inverted version of the Stochastic Oscillator: readings below -80 are oversold, above -20 are overbought.
 
-But here's the thing most reviews gloss over: %R doesn't predict price direction. It tells you the market's *internal momentum*—how far price has stretched compared to recent range. Extreme readings mean price is at one end of the range, which can indicate exhaustion or continuation, depending on context.
+The key point most reviews gloss over: %R doesn't predict price direction. It describes the market's internal momentum—how far price has stretched compared to its recent range. Extreme readings mean price is at one end of the range, which can indicate exhaustion or continuation depending on context.
 
-On the chart above, you'll see %R bouncing between -100 and 0. Notice how it can stay oversold for weeks during a strong downtrend. That's the trap.
+On a chart, %R bounces between -100 and 0, and it can stay oversold for extended periods during a strong downtrend. That is the trap.
 
 ## Key Features That Set It Apart
 
 - **Inverted scale**: Unlike RSI or Stochastic, %R uses a negative scale. -100 is oversold, 0 is overbought. This takes getting used to.
-- **Single line, no signal line**: The original %R is just one line. No crossovers. This simplicity can be a strength or weakness.
-- **Default 14-period lookback**: Same as RSI. Works on any timeframe, but shines on daily and above.
-- **Built-in alerts**: TradingView allows you to set alerts when %R crosses -20 or -80 thresholds.
+- **Single line, no signal line**: The original %R is just one line. No crossovers. This simplicity can be a strength or a weakness.
+- **Default 14-period lookback**: Same as RSI. Works on any timeframe, but is most useful on daily and above.
+- **Built-in alerts**: TradingView allows you to set alerts when %R crosses the -20 or -80 thresholds.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-The default 14 is fine for most swing trading, but I've tested these variations:
+The default 14-period lookback is the standard starting point for most swing trading. Shorter lookbacks make the oscillator more sensitive, which suits faster intraday trading, while longer lookbacks smooth the line and reduce the number of signals in trending markets.
 
-- **14 (default)**: Best for daily charts on indices (SPX, NDX). Gives reliable overbought/oversold signals in range-bound markets.
-- **10**: More sensitive. Works for scalping 5-15 minute charts on forex pairs (EUR/USD, GBP/JPY).
-- **21**: Smoother. Reduces false signals in trending markets. I use this on weekly charts for position trading.
+The indicator has two plotting parameters: `Level 1` and `Level 2`. These define the overbought and oversold thresholds. Keeping them at the standard -20 and -80 is the conventional choice; they are standard for a reason, and there is no need to "optimize" them.
 
-The indicator has two plotting parameters: `Level 1` and `Level 2`. Keep them at -20 and -80. No need to "optimize" these—they're standard for a reason.
-
-**Pro tip**: Add a horizontal line at -50 as a centerline. When %R crosses above -50, it confirms bullish momentum. Below -50 confirms bearish. This is more useful than extremes in strong trends.
+**A common adjustment**: add a horizontal line at -50 as a centerline. When %R crosses above -50, it confirms bullish momentum; below -50 confirms bearish. This is often more useful than the extremes in strong trends.
 
 ## How to Use It for Entries and Exits
 
@@ -59,7 +55,7 @@ The indicator has two plotting parameters: `Level 1` and `Level 2`. Keep them at
 
 **Pros**:
 - Simple, no lag (unlike moving averages)
-- Works beautifully in range-bound markets (sideways price action)
+- Works well in range-bound markets (sideways price action)
 - Easy to combine with support/resistance
 - Free on TradingView
 
@@ -97,14 +93,22 @@ A: That's a strong downtrend. Selling into oversold is dangerous. Wait for price
 
 ## Final Verdict
 
-Williams Percent R is a dinosaur—but a useful one if you understand its limits. It's free, simple, and effective in the right conditions (ranges). In trends, it's a trap. I give it **3 stars** because it's a solid piece of a toolkit, not the whole toolbox.
+Williams Percent R is a dinosaur—but a useful one if you understand its limits. It's free, simple, and effective in the right conditions (ranges). In trends, it's a trap. It's a solid piece of a toolkit, not the whole toolbox.
 
 **Rating**: ⭐⭐⭐ (3/5)  
 **Best for**: Swing traders in range-bound markets.  
 **Worst for**: Trend followers or crypto traders.  
 **Bottom line**: Install it, but don't rely on it. Use it as a secondary confirmation.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Williams %R** implementation was backtested on 30 markets over 5 years of daily data (19,268 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: LTCUSD 57.5%, VIX 57.0%, EURUSD 56.5%, WTI 53.8%
+- Weakest markets: AMD 44.7%, MSFT 44.6%, SHIBUSD 27.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

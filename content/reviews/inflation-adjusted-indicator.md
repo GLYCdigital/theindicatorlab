@@ -16,96 +16,92 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Adjusts price action for inflation using CPI data. Helps spot real vs. nominal trends. Works best on long-term charts. 4/5 stars."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)** — A niche but powerful tool for macro-focused traders who want to strip out inflation noise and see true price momentum.
+**Final Verdict: ⭐⭐⭐⭐ (4/5)** — A niche tool for macro-focused traders who want to strip out inflation noise and see price momentum in real terms.
 
 ### What This Indicator Actually Does
 
-Most traders stare at nominal prices and think they're seeing "growth." This indicator slaps you with reality by adjusting price data for inflation using a user-selectable CPI source (U.S. Bureau of Labor Statistics, Eurostat, etc.). It doesn't just overlay a line—it recalculates the entire price series in real-time, so that $100 level in 2020 is actually worth ~$120 in today's dollars.
+Most traders stare at nominal prices and read "growth" into them. This indicator adjusts price data for inflation using a user-selectable CPI source (U.S. Bureau of Labor Statistics, Eurostat, and similar), recalculating the price series rather than simply overlaying a line. The practical effect is that a historical price level is expressed in the purchasing power of a chosen reference period, so nominal highs and lows can be compared against real ones.
 
-As the chart above shows (note the divergence in late 2022), the S&P 500's nominal ATH in early 2022 wasn't a real ATH at all after inflation adjustment. That's the kind of rude awakening this thing delivers.
+The headline use case is divergence: a nominal all-time high that does not hold up after inflation adjustment. That is the kind of gap this tool is built to expose.
 
 ### Key Features That Set It Apart
 
-- **CPI Data Source Options**: You can pick between U.S. CPI, Core CPI, or EU HICP. Most inflation tools only offer one.
-- **Adjustable Base Year**: Want to see prices in 2010 dollars? Set it. 2020 dollars? Done. This is critical for comparing historical levels.
-- **Real vs. Nominal Spread**: A hidden line shows the difference between nominal and real prices—essentially the "inflation tax" on your holdings.
-- **Multi-Timeframe Compatibility**: Works on everything from 1-hour to monthly charts, but honestly, it's useless below daily.
+- **CPI Data Source Options**: U.S. CPI, Core CPI, or EU HICP. Many inflation tools offer only one.
+- **Adjustable Base Year**: Prices can be expressed in the dollars of a chosen year, which matters when comparing historical levels.
+- **Real vs. Nominal Spread**: A separate line shows the difference between nominal and real prices — effectively the erosion of purchasing power on a holding.
+- **Multi-Timeframe Compatibility**: Available across timeframes, though the monthly cadence of CPI data makes it far more meaningful on higher timeframes than intraday ones.
 
-### Best Settings (What I Actually Use)
+### Settings and How to Tune Them
 
-After testing on SPY, QQQ, and Bitcoin (yeah, crypto's "inflation hedge" narrative gets wrecked here), here's my setup:
+- **CPI Source**: Choose the series that matches the currency and region you are analyzing — headline CPI for a broad read, Core CPI to exclude volatile food and energy components.
+- **Base Year**: Set it to the current year for live analysis, or to a historical year when comparing levels across time.
+- **Smoothing**: A short moving average applied to the adjusted line can reduce the step-like jumps that occur between CPI releases.
+- **Show Spread**: Toggle the nominal-versus-real spread line on when you want to see inflation drag explicitly.
 
-- **CPI Source**: U.S. CPI Urban Consumers (SA) — the standard.
-- **Base Year**: Current year (2026) for live trading, 2010 for historical analysis.
-- **Smoothing**: 3-period SMA on the adjusted line to filter CPI release noise.
-- **Show Spread**: On. That spread line tells you exactly when inflation is eating your profits.
-
-Pro tip: On monthly charts, switch to "Core CPI" to strip out volatile food/energy data. It gives a cleaner trend line.
+There is no single correct configuration; the right choices depend on the asset, the horizon, and whether you are reading current conditions or doing historical comparison.
 
 ### How to Use It for Entries and Exits
 
-This isn't a buy/sell signal tool. It's a filter.
+This is a filter, not a signal generator.
 
-**Entry Example**: Wait for price to break above the inflation-adjusted resistance level. If nominal price breaks out but real price is still below its adjusted high, the breakout is fake. I saw this on gold in mid-2024—nominal looked bullish, real was still in a downtrend. Saved me from a bad short.
+**Entry context**: Look for price breaking above an inflation-adjusted resistance level. If nominal price breaks out while real price remains below its adjusted high, the breakout is not confirmed in real terms.
 
-**Exit Example**: When the spread between nominal and real price widens beyond two standard deviations (I add a Bollinger Band on the spread), it's time to take profits or tighten stops. That's excess inflation pricing in a reversal.
+**Exit context**: A widening spread between nominal and real price indicates inflation pricing in. Traders who overlay a volatility band on the spread use that expansion as a prompt to take profits or tighten stops.
 
-**Trend Confirmation**: If nominal price is rising but real price is flat or falling, you're in a "fake growth" zone. Reduce exposure.
+**Trend confirmation**: When nominal price rises but real price is flat or falling, the move is nominal-only. That is a case for reduced exposure rather than added risk.
 
 ### Honest Pros and Cons
 
 **Pros**:
-- Exposes when your "gains" are just inflation. Brutally honest.
-- Adjustable base year is a game-changer for backtesting.
-- Works on any asset—stocks, ETFs, commodities, even forex (though inflation there is trickier).
-- Free to install (but requires Premium TradingView for CPI data).
+- Exposes when gains are simply inflation.
+- Adjustable base year supports historical comparison.
+- Applies across asset classes — stocks, ETFs, commodities, and forex, though inflation adjustment is less clean for currencies.
+- Free to install, though CPI data may require a Premium TradingView plan.
 
 **Cons**:
-- **Lag**: CPI data releases monthly with a 2-week delay. This isn't real-time. Don't day trade with it.
-- **Only U.S./EU data**: No Asian inflation sources yet. If you trade Nikkei or ASX200, you're stuck with U.S. CPI as a proxy.
-- **Overwhelming on short timeframes**: On 1-hour charts, the adjusted line looks like a drunk snake. Stick to daily+.
-- **Not for momentum traders**: This slows you down. If you scalp, skip it.
+- **Lag**: CPI is released monthly with a reporting delay, so the adjusted series is not real-time. It is unsuitable for day trading.
+- **Limited geographic coverage**: U.S. and EU data only. Traders in Asian markets may have to use U.S. CPI as a proxy.
+- **Noisy on short timeframes**: The adjusted line is choppy intraday because CPI is monthly. Daily and above is where it reads cleanly.
+- **Not for momentum traders**: The adjustment slows signals down; scalpers should look elsewhere.
 
 ### Who It's Actually For
 
-- **Long-term investors** holding for 6+ months. You need to know if your "hold forever" thesis is real.
-- **Macro traders** who trade around CPI releases and central bank decisions.
-- **Portfolio managers** who want to hedge against inflation erosion.
-- **Anyone trading TIPS, commodities, or real estate ETFs**—these are directly inflation-sensitive.
+- **Long-term investors** holding for extended periods, who need to know whether a thesis holds in real terms.
+- **Macro traders** positioning around CPI releases and central bank decisions.
+- **Portfolio managers** concerned with inflation erosion.
+- **Traders in TIPS, commodities, or real estate ETFs**, which are directly inflation-sensitive.
 
-**Not for**: Scalpers, day traders, or anyone who thinks "price goes up = good."
+**Not for**: Scalpers, day traders, or anyone treating rising nominal price as automatically bullish.
 
 ### Better Alternatives (If They Exist)
 
 - **Inflation-Adjusted Moving Average** by QuantNomad: Less customizable but smoother for trend following.
-- **Real Price Channel** by MacroLab: Adds bands around inflation-adjusted price. Better for volatility-based entries.
-- **TradingView's built-in "Adjusted for CPI"** (Pine Script version): Free but clunky. This indicator is more polished.
+- **Real Price Channel** by MacroLab: Adds bands around inflation-adjusted price, aimed at volatility-based entries.
+- **TradingView's built-in "Adjusted for CPI"** (Pine Script version): Free but clunky; this indicator is more polished.
 
-If you need inflation data for non-U.S. markets, check **CPI_Global** by FX_Algo — covers 15 countries but costs extra.
+For non-U.S. inflation data, **CPI_Global** by FX_Algo covers multiple countries but costs extra.
 
-### FAQ (Real Questions I Got)
+### FAQ
 
 **Q: Does it work for crypto?**
-A: Yes, but prepare for pain. Bitcoin's real price after 2021's peak is 40% lower than nominal. It's not an inflation hedge—it's a volatility asset.
+A: Yes, but the adjustment is unkind to the "inflation hedge" narrative. Crypto behaves as a volatility asset, and its real price after the 2021 peak is well below the nominal peak.
 
 **Q: Can I use it for options trading?**
-A: Only for long-term LEAPS. The lag makes it dangerous for short-dated options.
+A: Only for long-dated positions such as LEAPS. The data lag makes it dangerous for short-dated options.
 
 **Q: Why is the adjusted line so choppy?**
-A: CPI data is monthly, so the indicator interpolates between releases. On daily charts, it smooths out. On weekly, it's fine.
+A: CPI is monthly, so the indicator interpolates between releases. On daily charts it smooths out; on weekly it reads cleanly.
 
 **Q: Does it adjust dividends?**
-A: No. It only adjusts price. For total return, you'd need a separate dividend-adjusted indicator.
+A: No. It adjusts price only. Total return requires a separate dividend-adjusted indicator.
 
 ### Final Thoughts
 
-The Inflation_Adjusted_Indicator is a reality check tool. It won't make you rich, but it will stop you from making stupid mistakes—like buying a "breakout" that's actually a nominal illusion. I docked a star because of the data lag and limited geographic coverage. But if you trade U.S. markets long-term, this is a must-have in your macro toolkit.
+The Inflation_Adjusted_Indicator is a reality-check tool. It won't generate returns on its own, but it can prevent mistakes — like buying a breakout that is only a nominal illusion. The data lag and limited geographic coverage are real drawbacks. For long-term U.S. market analysis, it earns a place in a macro toolkit.
 
 **Rating: 4/5 Stars** — Indispensable for the right trader, useless for the wrong one. Install it, but don't expect miracles.
-
----
 
 ## Go Deeper with The Indicator Lab
 

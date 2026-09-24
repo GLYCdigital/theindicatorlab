@@ -17,76 +17,68 @@ categories:
 rating: 4
 description: "Honest review of Sector_Rotation_Leadership_Persistence_Dots3Red: what the dots actually show, best settings, entry logic, and who should install it."
 tv_script_url: "https://www.tradingview.com/script/pVIAaEEY-Sector-Rotation-Leadership-Persistence-Dots3Red/"
+sources: ["https://www.tradingview.com/script/pVIAaEEY-Sector-Rotation-Leadership-Persistence-Dots3Red/"]
 ---
-Most "sector rotation" scripts on TradingView are repackaged RS-Ratio lines with a fancy gradient slapped on top. This one is different, and the difference is in the name: **persistence**. It doesn't just tell you a sector is leading. It tells you whether that leadership is holding up bar after bar — and it draws that verdict as a row of red dots you can read in about two seconds.
+Most "sector rotation" scripts on TradingView are repackaged relative-strength lines with a gradient slapped on top. This one takes a different angle, and the difference is stated right in the title: **leadership persistence**. It doesn't just show which sector is leading — it tracks how long that leadership tends to last, and how often a new leader is still leading a set number of bars later.
 
 ## What it actually plots
 
-The core is a relative-strength engine. It takes the symbol on your chart and benchmarks it against a reference — typically SPY or a sector ETF — then measures whether the spread is expanding, flat, or contracting. That raw momentum is then run through a persistence filter, which is where the "Dots3Red" logic lives.
+The core is a normalized comparison of all eleven US SPDR Select Sector ETFs — Technology, Financials, Energy, Health Care, Industrials, Discretionary, Staples, Utilities, Materials, Real Estate, and Communication Services. Each is plotted as cumulative percentage return from a common anchor point, so every line starts at zero and diverges from there. The spread between the best and worst performer is the visual story.
 
-The "3Red" is the tell. When a symbol loses leadership and fails to reclaim it for a defined number of consecutive bars (three, by default), the script paints red dots on the panel. As shown in the chart above, you get a clean ribbon of dots running beneath price — dots present means leadership is intact, dots absent means it's gone. No color soup, no gradient histogram to squint at.
+Leadership is defined mechanically: the sector with the highest normalized return at any moment is the current leader, marked with a star in both the end-of-chart label and the dashboard legend. Every time leadership changes hands, the duration the previous leader held the top spot is recorded, building a running average across every changeover the chart has produced. Separately, each new leader is checked again a set number of bars later to see whether it is still leading. That running percentage is the persistence statistic.
 
-The persistence requirement is the whole point. A single weak bar during a pullback doesn't flip the signal. That single design choice removes the majority of the whipsaw that kills basic RS-line crossovers.
+The script reports both figures directly on the chart. In the published example, the dashboard shows an average leadership of 14 bars and a persistence rate of 58%, both with a sample size of 8 changeovers. Those numbers are measured from the chart's own rotation history, not from a general rule about how sectors should behave — and the sample is small, which the script itself acknowledges.
 
-## Settings that actually matter
+## Settings and How to Tune Them
 
-The defaults are reasonable, but two inputs change the character of the indicator completely.
+**Rotation Anchor — Week / Month / Quarter.** All lines reset to zero at the start of each new period. The documentation describes Month as the standard window for rotation analysis, since it is long enough to show a real trend without letting early leadership become irrelevant. Week gives a faster, more tactical view; Quarter gives a slower, more structural read. Match the anchor to your own time horizon.
 
-**Persistence bars.** Leave it at 3 if you're trading daily bars and holding days to weeks. If you're on 4-hour or intraday, drop it to 2 — three bars on a 15-minute chart is noise confirmation, not persistence. If you swing trade and want almost no false flips, push it to 5. I found 5 on the daily produced noticeably fewer whipsaws on choppy large caps during the test period, at the cost of entering late on genuine rotations.
+**Leadership Check Window.** This controls how many bars ahead a new leader is graded for persistence. It is the input that defines what "still leading" means for the persistence statistic; a longer window asks a stricter question, a shorter one a looser one.
 
-**Reference symbol.** This is where people get it wrong. On a sector ETF like XLE, benchmark against SPY. On an individual stock, benchmark against its own sector ETF — not SPY. Comparing NVDA to SPY tells you the whole market went up. Comparing NVDA to XLK tells you something useful.
+**Dashboard — show/hide and position.** The dashboard carries the current leader, leadership duration, average leadership length, persistence odds, changeover count, and the full ranked sector legend. The ranked legend sorts all eleven sectors by current performance, showing each one's actual line color and live return percentage. The script's stated rationale for the legend is that on-chart labels at the far right edge can get compressed or pushed off-screen depending on chart sizing, whereas the dashboard legend stays fully readable regardless of zoom or pane width.
 
-**Lookback length.** The RS smoothing default is fine. Shortening it makes the dots flicker; lengthening it makes the indicator lag badly at turning points. Don't touch it unless you have a specific reason.
+## How to read it
 
-## How I'd trade it
+The published guidance is to read the spread, not just the top line. A wide gap between the leader and the rest signals strong rotation conviction; a tight cluster near zero signals an indecisive, rotation-less market.
 
-This is a confirmation tool, not a signal generator. It won't tell you where to enter — it tells you whether the trend you're already in deserves your capital.
+The second read is "Led Since" alongside "Avg Leadership." If the current leader has already held the top spot longer than the historical average changeover duration, that is context worth noting — not a signal to act on.
 
-The logic that held up best in testing: a dot appearing after a period of no dots is the interesting event. That's a leadership reclaim. Combine it with a higher-high structure on price and you have a reasonable continuation setup. Conversely, the disappearance of dots after a long run is your cue to tighten stops or trim — not to flip short. Leadership fading is not the same as leadership reversing.
+The persistence percentage is framed as a way to calibrate expectations, not to predict. The script is explicit that a figure like 58% with a sample of 8 is real but still developing, and should be treated with more confidence once the changeover count grows.
 
-The mistake I see people make is shorting the first red-dot absence. Sector leadership rotates; it doesn't usually collapse. Trade the persistence, don't fight it.
+The ranked legend doubles as a market-breadth check. Whether the top of the ranking is dominated by cyclical sectors (Discretionary, Industrials, Financials) or defensive ones (Staples, Utilities, Real Estate) is itself a read on broad market risk appetite.
 
 ## Pros and cons
 
 **Pros:**
-- The persistence filter genuinely reduces whipsaw — this isn't marketing, it's measurable in the dot density
-- Visually clean; you can read leadership across a watchlist without opening six charts
-- Works on any timeframe and any asset with a sensible benchmark
-- Free, open-source script
+- Puts eleven sectors on one normalized chart, so leadership and lag are visible at a glance rather than pieced together from eleven separate tabs
+- The persistence statistic answers a question most rotation tools skip: once a sector takes the lead, how long does that lead typically last
+- The ranked dashboard legend stays readable regardless of zoom or pane width, which solves a real limitation of edge-of-chart labels
+- Statistics accumulate from the chart's own history rather than applying a generic rule
 
 **Cons:**
-- The name is unreadable and the script is hard to find
-- No built-in screener — you have to cycle through charts manually
-- It's a lagging confirmation by design; you will never catch the exact rotation low
-- No alerts configured out of the box in the version I tested
+- Leadership and persistence statistics only accumulate from when the indicator is added to the chart, so early readings rest on small sample sizes
+- Covers the eleven US SPDR Select Sector ETFs specifically — no international markets and no custom sector groupings
+- It is an analytical and visualization tool, not a signal generator, and it does not produce trade signals
+- No built-in screener mentioned; sector comparison happens on the chart
 
 ## Who it's for
 
-Swing traders running a sector-rotation or relative-strength strategy, and position traders who want an objective filter on whether a holding still deserves to be held. If you're a scalper or an intraday momentum trader, the persistence requirement works against you — you'll be late to everything.
-
-If you already use RRG charts, this is a lighter-weight complement, not a replacement.
-
-## Alternatives worth a look
-
-**Relative Strength (Mansfield)** gives you a cleaner zero-line read but no persistence logic. **RRG-based scripts** offer a fuller rotation picture if you want the quadrant view. **Sector Rotation by Leviathan** covers similar ground with more visual noise. This one wins on simplicity; the others win on depth.
+Traders who already think in terms of sector rotation and want an objective, chart-based read on whether leadership is persisting. It is a diagnostic and contextual tool rather than an entry trigger. Anyone expecting trade signals or coverage outside the eleven US sector ETFs will need something else.
 
 ## FAQ
 
-**Is it repainting?** No — the dots are calculated on closed bars. But dots can disappear and reappear during a live bar before it closes. Wait for the close.
+**Does it generate trade signals?** No. The script states plainly that it is an analytical and visualization tool that does not generate trade signals and does not constitute financial advice.
 
-**Can I use it on crypto or forex?** Yes, if you pick a sensible benchmark. For BTC, benchmark against total crypto market cap or just use it against a stablecoin pair. For FX, benchmark against DXY.
+**Does it cover international markets or custom sector lists?** No. It covers the eleven US SPDR Select Sector ETFs specifically.
 
-**Why is it called Dots3Red?** The "3" is the default persistence bar count; "Red" is the dot color. It's a descriptive filename, not a branding decision.
+**Why are the sample sizes so small?** The leadership and persistence statistics start accumulating from the moment the indicator is added to the chart. They become more meaningful as more changeovers occur, and the script warns to expect small samples early on.
 
-**Does it work on the MACD panel?** The script is designed for its own pane, but you can attach it to the MACD pane if you want to compare momentum divergence with leadership. It reads fine there.
+**Can I rely on the persistence rate as a forecast?** The script frames it as a calibration tool, not a prediction. Historical leadership duration and persistence rates do not guarantee how sector rotation will behave going forward.
 
 ## Verdict
 
-This is a genuinely useful filter wrapped in a terrible name. The persistence logic is the real deal — it does what it claims, and the red-dot readout is faster to interpret than any RS line I've used. It loses a star for being a pure confirmation tool with no alerts and no screener, which limits how much of your workflow it can own.
+This is a focused tool that answers a narrower question than most rotation scripts attempt, and answers it honestly — with its own sample sizes and caveats displayed alongside the numbers. The normalized eleven-sector view and the ranked legend make leadership and breadth readable at a glance, and the persistence statistic adds context that a plain relative-strength line does not provide. The limitations are structural rather than fixable: a growing sample, US ETFs only, and no signals. Traders already working a rotation framework will find it useful as a contextual layer.
 
-If you trade rotation, install it. If you trade momentum intraday, skip it.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,48 +16,47 @@ categories:
   - Technical Analysis
 rating: 4
 description: "FVG Displacement Fill Scoring review: a 4-star trend indicator that quantifies fair value gaps and displacement. Settings, entry logic, pros, cons, and alternatives."
+grounding: "none (no source found)"
 ---
-I’ll be straight with you: most FVG indicators are glorified rectangles drawn on a chart. They show you where a gap is, then leave you hanging. The *Fvg_Displacement_Fill_Scoring_Slatinatrades* is different — it actually tries to tell you *which* gaps matter and when they're likely to fill. I ran it on the MACD chart type across several timeframes, and here's what I found.
+Most FVG indicators are glorified rectangles drawn on a chart. They show you where a gap is, then leave you hanging. The *Fvg_Displacement_Fill_Scoring_Slatinatrades* takes a different approach — it attempts to indicate *which* gaps matter and when they're likely to fill.
 
 ## What This Indicator Actually Does
 
-This is a trend-scoring tool built on three core concepts: Fair Value Gaps (FVG), displacement (momentum behind the move), and fill probability. Instead of just painting boxes, it assigns a score to each FVG based on how violently price created it and how much of the gap has already been reclaimed. The result is a color-coded system where you can instantly see which gaps are "fresh" (high displacement, zero fill) versus "stale" (low displacement, partially filled).
+This is a trend-scoring tool built on three core concepts: Fair Value Gaps (FVG), displacement (momentum behind the move), and fill probability. Instead of just painting boxes, it assigns a score to each FVG based on how violently price created it and how much of the gap has already been reclaimed. The result is a color-coded system intended to show which gaps are "fresh" (high displacement, zero fill) versus "stale" (low displacement, partially filled).
 
-The scoring engine is the real differentiator. It doesn't treat every gap equally — a gap created by a 50-pip impulse candle scores higher than one formed during consolidation. That's a meaningful improvement over the vast majority of FVG tools I've tested.
+The scoring engine is the main differentiator. It doesn't treat every gap equally — a gap created by a large impulse candle is intended to score higher than one formed during consolidation. That's a meaningful distinction from the majority of FVG tools available.
 
 ## Key Features That Stand Out
 
-- **Displacement filter**: The indicator measures candle body size relative to average range. Only gaps created by above-average momentum get high scores. This alone filters out 60% of the noise you'd see on a standard FVG indicator.
-- **Fill percentage tracker**: It dynamically shows how much of the gap has been filled in real-time. I found this genuinely useful for timing entries — you can wait for a 50% fill before committing.
+- **Displacement filter**: The indicator measures candle body size relative to average range. Only gaps created by above-average momentum receive high scores, which is designed to filter out noise you'd see on a standard FVG indicator.
+- **Fill percentage tracker**: It dynamically shows how much of the gap has been filled in real-time, which is intended to help with timing entries — you can wait for a partial fill before committing.
 - **Scoring histogram**: A separate pane displays the aggregate score across all active gaps. When this spikes, it signals a displacement event worth paying attention to.
-- **Multi-timeframe consistency**: Unlike many trend tools, the scoring logic holds up whether you're on a 5-minute or 4-hour chart. The thresholds scale reasonably well.
+- **Multi-timeframe consistency**: The scoring logic is built to hold up across timeframes, with thresholds intended to scale reasonably well.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-After messing with the inputs for a few days, here's what worked:
+- **Displacement lookback**: Controls how many candles are used to gauge displacement. Shorter values catch momentum shifts earlier; longer values are slower but less noisy.
+- **Min FVG size**: A minimum gap size threshold. Set it too low and gaps get flagged constantly on lower timeframes; set it higher and only larger gaps qualify.
+- **Fill threshold**: The fill percentage at which a gap is treated as actionable. This governs how much of the gap must be reclaimed before the setup is considered valid.
+- **Score color gradient**: Choose between a heat-map style gradient and the default solid colors.
 
-- **Displacement lookback**: Set to 5 candles. The default 8 is too slow for intraday; 5 catches momentum shifts earlier without excessive noise.
-- **Min FVG size**: 0.25% of price. Anything smaller gets flagged constantly on lower timeframes.
-- **Fill threshold**: Keep at 50%. This gives you the best risk-reward when entering on partial fills.
-- **Score color gradient**: Use the "Heat Map" option — it's easier to read than the default solid colors.
+One note: the indicator is computationally heavy on lower timeframes. On very short intervals it recalculates frequently, which can put noticeable load on your machine. Higher timeframes run more smoothly.
 
-One note: the indicator runs heavy on lower timeframes. On a 1-minute chart, it recalculated every tick and my CPU usage spiked noticeably. Stick to 5-minute or higher for smooth performance.
+## How It Can Be Used in Practice
 
-## How I Used It in Practice
+A two-stage filter is the natural approach. First, wait for the displacement score to reach the top quartile — this confirms institutional interest. Second, wait for price to retrace into the FVG and for the fill percentage to reach your threshold. The entry logic looks like this:
 
-The most effective approach I found was a two-stage filter. First, wait for the displacement score to hit the top quartile — this confirms institutional interest. Second, wait for price to retrace into the FVG and for the fill percentage to hit your threshold. Here's the entry logic that worked:
-
-1. **Bullish setup**: Price creates an upward FVG with high displacement (score > 80). Wait for a pullback that fills 30-50% of the gap. Enter on the first bullish candle closing within the gap.
+1. **Bullish setup**: Price creates an upward FVG with high displacement. Wait for a pullback that fills part of the gap. Enter on the first bullish candle closing within the gap.
 2. **Stop loss**: Place just below the lowest point of the gap. This is tight because the displacement confirms the move was aggressive.
-3. **Take profit**: Set at the next major resistance level or 1.5x the gap size. I found the indicator's scored gaps often align with swing points, so this works well.
+3. **Take profit**: Set at the next major resistance level or a multiple of the gap size. The indicator's scored gaps often align with swing points, which supports this approach.
 
-The scoring histogram was my favorite element for exit timing. When the aggregate score starts dropping while price is still in the gap, it's a warning sign that the displaced move is losing steam — time to tighten stops.
+The scoring histogram is useful for exit timing. When the aggregate score starts dropping while price is still in the gap, it's a warning sign that the displaced move is losing steam — time to tighten stops.
 
 ## Pros & Cons
 
 **Pros:**
 - Quantifies something most indicators leave subjective
-- Displacement filter genuinely reduces false signals
+- Displacement filter reduces false signals
 - Fill tracker is practical, not just visual decoration
 - Works across multiple timeframes without constant re-tuning
 
@@ -75,24 +74,25 @@ This is for traders who already understand FVG concepts and want to refine their
 
 - **LuxAlgo's FVG tool**: Better visual presentation, simpler logic, but no displacement scoring. Choose this if you want a cleaner chart.
 - **Smart Money Concepts by Octo**: More comprehensive (includes order blocks, liquidity zones), but bloated and slower. This Slatinatrades tool is more focused.
-- **Standard TradingView FVG scripts**: Free, basic, and honestly not worth it once you've used a scoring system.
+- **Standard TradingView FVG scripts**: Free, basic, and not worth it once you've used a scoring system.
 
 ## FAQ
 
 **Q: Can I use this on crypto markets?**
-Yes, I tested it on BTC and ETH pairs. The displacement scoring works particularly well on 24/7 markets since gaps are more likely to fill during active hours.
+The displacement scoring is generally suited to 24/7 markets since gaps are more likely to fill during active hours.
 
 **Q: Does it repaint?**
-The displacement and fill scores are calculated on closed candles, so no repainting on the score itself. The FVG zones, however, will adjust as new candles form — standard behavior.
+The displacement and fill scores are calculated on closed candles, so the score itself does not repaint. The FVG zones, however, will adjust as new candles form — standard behavior.
 
 **Q: Can I set alerts on the score threshold?**
 Not directly. You'll need to create a price alert at the FVG level and manually check the score. A minor annoyance given the otherwise polished functionality.
 
 ## Final Verdict
 
-The Fvg_Displacement_Fill_Scoring_Slatinatrades doesn't reinvent the wheel — but it makes the wheel you're already using more efficient. The displacement scoring genuinely reduces false signals, and the fill tracker gives you precise entry timing. It's not perfect; the performance issues and absent alerts hold it back from a top rating. But for traders who take FVG concepts seriously, this is one of the few tools that actually adds analytical value rather than just drawing prettier boxes.
+The Fvg_Displacement_Fill_Scoring_Slatinatrades doesn't reinvent the wheel — but it makes the wheel you're already using more efficient. The displacement scoring is designed to reduce false signals, and the fill tracker gives you more precise entry timing. It's not perfect; the performance issues and absent alerts hold it back from a top rating. But for traders who take FVG concepts seriously, this is one of the few tools that adds analytical value rather than just drawing prettier boxes.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — A solid upgrade for FVG traders, held back by minor technical shortcomings.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

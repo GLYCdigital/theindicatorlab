@@ -17,83 +17,89 @@ categories:
 rating: 4
 description: "Honest review of Tf_Smooth_Trend_Follower_With_Volume_Sparks_Stf: how the smoothed trend line and volume sparks work, best settings, and who it's for."
 tv_script_url: "https://www.tradingview.com/script/5PgariQZ-TF-Smooth-Trend-Follower-with-Volume-Sparks-STF/"
+sources: ["https://www.tradingview.com/script/5PgariQZ-TF-Smooth-Trend-Follower-with-Volume-Sparks-STF/"]
 ---
-Most "smooth trend" indicators are just a moving average wearing a nicer name. This one isn't quite that — but it's also not the revolutionary system the name implies. Let me tell you what you're actually installing.
+Most "smooth trend" indicators are just a moving average wearing a nicer name. This one isn't quite that — but it's also not the revolutionary system the name implies. Here's what you're actually installing.
 
 ## What It Actually Does
 
-Tf_Smooth_Trend_Follower_With_Volume_Sparks_Stf is a trend-following overlay that plots a smoothed trend line directly on price, flips its color on regime changes, and then adds small "spark" markers that fire when volume spikes align with the trend direction. The core is a smoothing filter — think a heavily dampened average rather than a raw EMA — which is why the line barely reacts to single-bar noise.
+TradingFlow: Smooth Trend Follower with Volume Sparks (STF) is a trend-following overlay that plots a smoothed trailing trend line directly on price, marks confirmed direction changes, and adds a volume layer that brightens when participation expands. The core is a smoothing filter — it averages each bar's high-low range with a Hull moving average, which is why the line filters short-term noise while staying responsive to changes in volatility.
 
-The volume sparks are the differentiator. They're not separate bars at the bottom of your chart. They're plotted as discrete events, so you see the moment a high-volume push confirms the trend rather than guessing from a histogram.
+The volume component is the differentiator. Volume Sparks rank each bar's volume within a selected lookback and render the result as a gradient between the dotted trend line and price, rather than as separate bars in a lower panel. Because the reading is relative, it adapts to the symbol and timeframe on its own.
 
-As the chart above shows, the trend line hugs price closely on sustained moves and flattens during chop. That flat stretch is the whole point: it tells you when not to trade.
+The trend line hugs price closely on sustained moves and flattens during chop. That flat stretch is the whole point: it tells you when the trend has stalled.
 
 ## Key Features That Stand Out
 
-- **Adaptive smoothing** that reduces whipsaw without lagging as badly as a slow SMA. On a 15-minute chart the flip response felt roughly one to two bars behind a clean break — acceptable, not instant.
-- **Volume sparks as confirmation events.** This is the feature worth paying attention to. A color flip alone can be early; a flip plus a spark is a much higher-quality signal.
-- **Clean visual hierarchy.** Line color, spark placement, and background stay readable even on a busy MACD-plus-price layout. I tested it stacked with MACD and never lost track of what the trend line was saying.
-- **Alert conditions** for both trend flips and spark events, which lets you automate the two-stage logic instead of staring at the chart.
+- **Smoothed range distance.** Each bar's high-low range is smoothed with a Hull moving average, then multiplied by a Base Factor. With ATR adaptation enabled, that factor rises and falls with current ATR relative to its average, bounded by selected minimum and maximum limits.
+- **Trailing bands.** Upper and lower bands ratchet behind price; a close through the opposite band changes the trend direction. A circle marks each confirmed flip at the close of the bar.
+- **Volume Sparks as a participation layer.** In Sparks mode, only bars above the selected volume percentile light up, with the strongest readings producing the brightest pulses. Continuous mode keeps a faint layer visible and varies its intensity with the volume rank.
+- **Gradient direction.** The pulse is strongest at the dotted trend line and fades toward price. Green or red continues to show trend direction; brightness shows volume intensity.
+- **Alerts** that match the trend event you want to follow.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-The defaults are usable, but I'd adjust these:
+The indicator exposes several parameters, and the documentation describes what each one does rather than prescribing values:
 
-- **Smoothing length:** Push it up 20–30% from default if you trade anything below the 15-minute. The default reacts too eagerly on fast timeframes.
-- **Volume spark threshold:** Raise it. Out of the box, sparks fire often enough to feel noisy on liquid instruments. Tightening the threshold cut my false sparks roughly in half during testing.
-- **Timeframe:** This indicator is happiest on 1H and 4H. On the 5-minute it's a coin flip — the smoothing can't keep up with the noise floor.
+- **Base Factor.** The multiplier applied to the smoothed range distance. A fixed factor keeps the band distance constant; enabling ATR adaptation lets the factor move with current ATR relative to its average, constrained within the selected minimum and maximum limits.
+- **ATR adaptation limits.** The upper and lower bounds that the adaptive factor is allowed to travel between.
+- **Visual offset.** An ATR-based distance that moves the dotted line and start marker away from the candles. This changes the display only — not the trend calculation or the signals.
+- **Volume percentile threshold.** The cutoff that determines which bars qualify for a spark in Sparks mode. A higher percentile means fewer, stronger readings; a lower one means more bars light up.
+- **Volume lookback.** The window used to rank each bar's volume.
+- **Sparks vs. Continuous mode.** Sparks highlights only bars above the percentile threshold; Continuous keeps a light participation layer visible at all times.
 
-If you're trading crypto or low-float small caps, expect to raise the volume threshold more aggressively. Those symbols spike constantly.
+The documentation does not state preferred values for any of these, and the right settings will depend on the symbol and timeframe you trade. Treat the defaults as a starting point and adjust from there.
 
 ## How to Use It
 
-The logic is deliberately two-stage, so trade it that way:
+The design suggests a sequential reading process rather than a single trigger:
 
-1. **Trend flip sets your bias.** Don't enter on the flip itself. Mark it and wait.
-2. **Volume spark is your trigger.** A spark in the direction of the new trend is the entry cue.
-3. **Exit on the opposite flip**, or trail behind the smoothed line if you want to ride extended moves. I prefer the trail — the line is smooth enough to act as a moving stop without getting clipped by normal pullbacks.
+1. **Read the line's color and position** to establish the current direction. A green line below price is an active uptrend; a red line above price is an active downtrend.
+2. **Check whether price is extending, tracking the line, or pulling back toward it.** Pullbacks toward the line show how closely price is testing the trailing boundary. When price and the line move together with a steady gap, the trend is progressing cleanly.
+3. **Use a Volume Spark to locate bars where participation expanded.** Volume Sparks measure activity, not trade direction — read a bright pulse together with the candle and nearby structure.
+4. **At a direction change, compare the confirmed marker with nearby price structure.** A fast move back toward the line deserves attention, especially near a prior high, low, breakout level, or other visible structure.
+5. **Set the alert that matches the trend event you want to follow.**
 
-The one mistake I see traders make with tools like this: treating every spark as a signal. A spark against the trend color is noise. Ignore it.
+One mistake worth avoiding: treating every spark as a signal. Since the layer measures activity rather than direction, a bright pulse only means participation expanded — it needs to be read alongside the trend color and the surrounding structure.
 
 ## Pros & Cons
 
 **Pros:**
-- The volume spark concept genuinely adds information a plain trend line doesn't have
-- Smoothing quality is above average — fewer fake flips than most MA-based trend tools
-- Alerts work for both event types, so it's automation-friendly
-- Chart stays readable
+- The volume spark concept adds information a plain trend line doesn't carry — participation intensity on the main chart
+- The relative percentile ranking means the same logic applies across symbols and timeframes without recalibration
+- Both the trend line and the volume layer are drawn on price, so no additional panels are needed
+- Alerts cover the trend events, making the tool automation-friendly
+- On symbols with missing, sparse, or unchanging volume, the volume layer switches itself off while STF continues normally
 
 **Cons:**
-- Laggy on lower timeframes; the smoothing is a tradeoff, not a free lunch
-- Default volume threshold is too loose — you'll get spark spam until you tune it
-- No built-in stop-loss or position sizing logic; it's purely a signal layer
-- The name is a mouthful and the documentation is thin
+- No built-in stop-loss or position sizing logic; it's purely a signal and context layer
+- Volume Sparks say nothing about trade direction on their own
+- The documentation does not state recommended parameter values, so tuning is on the user
 
 ## Who It's For
 
-Swing traders on 1H–4H charts who want a trend filter with a confirmation layer. If you already trade with a volume-based entry rule, this slots in nicely. Scalpers and 1-minute traders should look elsewhere — the lag will frustrate you.
+Traders who want trend direction, pullback context, and a read on market participation without adding more panels to the chart. If you already work with volume-based entry rules, the spark layer slots in as a visual confirmation. The tool is designed to be read as context for structure you already follow, not as a standalone system.
 
 ## Alternatives
 
-- **Supertrend:** Simpler, faster flips, no volume confirmation. Better if you want raw responsiveness.
-- **VWAP + trend ribbon combos:** More manual, but more control over the volume component.
-- **Hull Moving Average:** Smoother line, but no spark equivalent — you'd need a separate volume indicator.
+- **Supertrend:** A simpler trailing-band trend tool with no volume component.
+- **VWAP plus trend ribbon combinations:** More manual, but more control over how the volume element is weighted.
+- **Hull Moving Average:** Uses the same smoothing family, but with no spark equivalent — you'd pair it with a separate volume indicator.
 
 ## FAQ
 
-**Does it repaint?** The trend line itself is stable after the bar closes. Sparks can appear on the forming bar, so wait for close if you're strict about that.
+**Does it repaint?** The trend direction is confirmed at the close of the bar, and the start marker is placed on that confirmed flip. The documentation does not make claims beyond that about the forming bar.
 
-**Can I use it for alerts only?** Yes, and that's arguably its best use — set the spark alert and let it ping you.
+**Can I use it for alerts only?** Yes — the docs include setting an alert that matches the trend event you want to follow.
 
-**Is it good on crypto?** Workable on 4H, noisy on anything faster. Raise the volume threshold significantly.
-
-**Does it work in ranging markets?** It flattens, which is the correct behavior — but you'll get chopped if you force trades during those flat stretches.
+**Does it work in ranging markets?** The line flattens during chop, which is the intended behavior. The docs note that a fast move back toward the line deserves attention, particularly near visible structure.
 
 ## Final Verdict
 
-This is a solid, well-built trend overlay with one genuinely useful twist — the volume sparks. It's not a magic system, and the defaults need tuning before it's worth trusting. But once dialed in, it does exactly what a trend follower should: keeps you on the right side and out of the chop.
+This is a well-constructed trend overlay with one genuinely useful twist — the volume sparks. It's not a magic system, and the documentation leaves the tuning decisions to you. But it does what a trend follower should: it keeps the active trend visible, shows how hard price is testing the trailing boundary, and layers participation on top without cluttering the chart.
 
-⭐⭐⭐⭐ (4/5) — a strong addition for swing traders who want confirmation baked into their trend line. Just budget time for the settings.
+A solid addition for traders who want confirmation baked into their trend line. Just budget time for the settings.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

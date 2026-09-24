@@ -17,73 +17,81 @@ categories:
 rating: 4
 description: "Composite_Valuation_Standard_Score review: honest take on this trend-scoring indicator. Best settings, strategy tips, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/bEc4OoWa-Composite-Valuation-Standard-Score/"
+sources: ["https://www.tradingview.com/script/bEc4OoWa-Composite-Valuation-Standard-Score/"]
 ---
-Let me be upfront: "Composite_Valuation_Standard_Score" is a mouthful, but it's not just another repackaged moving average crossover. I've spent the last two weeks running this thing on daily and 4-hour charts across indices, forex pairs, and a few large caps. The name is misleading — this isn't about fundamental valuation at all. It's a trend-strength composite that blends multiple underlying calculations into a single standardized score, then plots it as a line in a separate pane with some useful reference levels.
+**Composite Valuation Standard Score (CVSS)** plots a single 0 to 100 line measuring how expensive the broad US equity market is against its own recorded history. It combines up to six valuation ratios through point-in-time statistics. The thesis: one valuation metric can mislead in isolation, but the average anchored z-score of several independent lenses — earnings, cyclically adjusted earnings, book value, sales, output, replacement cost — gives a more robust reading of how uniformly stretched or depressed valuations are, without using future data at any bar.
 
-What actually sets this apart? Most trend indicators give you one signal: up or down. This one gives you a *degree* of conviction. The score oscillates around a neutral zero line, and the magnitude tells you how stretched or aligned the trend components are. On the MACD chart above, you can see how the score line leads the price action slightly — it's not a lagging disaster like a simple SMA cross. The indicator also colors the line based on momentum direction, which makes quick scanning actually practical.
+This is not a trend indicator. It is a slow macro positioning gauge.
 
-**Settings I actually found useful after testing**
+## History and background
 
-The defaults are decent, but here's what worked better for me:
+Averaging the historical percentile of many valuation ratios into one composite is a long-standing practice in institutional market research. The individual components carry their own lineage: the cyclically adjusted price-to-earnings ratio was developed by Robert Shiller, the market-cap-to-GDP ratio is widely associated with Warren Buffett, and the ratio of corporate equity value to corporate net worth descends from James Tobin's Q. The specific construction here — an expanding winsorized z-score per component with a minimum-history admission gate and a composite-level percentile mapping — is described by the author as a novel method built for this script. Its conceptual basis: every observation should be judged only against the history that existed when it printed, and a metric making new all-time highs should keep conveying magnitude instead of freezing at the top of a percentile scale.
 
-- **Lookback period**: I dropped it from the default 14 to 10 on the 4-hour chart. It reduced lag without introducing excessive whipsaw. On daily charts, keep 14 — it filters noise better.
-- **Signal threshold**: The default ±1.0 for "extreme" zones felt too loose. Tighten it to ±1.5 if you want to avoid entering when the score is already overextended.
-- **Smoothing**: Turn this on if you trade 15-minute or lower timeframes. Without it, the score jumps around too much for clean entries.
+## How it works
 
-**How I traded it**
+All series are sampled once per calendar month through `request.security` at the 1M timeframe with lookahead off. Two of the six components are ratios computed from a numerator and denominator symbol: Market Cap / GDP (a total market index divided by nominal GDP) and the Q Ratio proxy (nonfinancial corporate equities at market value divided by nonfinancial corporate net worth). Because every series is immediately transformed to ranks and z-scores, absolute units and level calibration are irrelevant; only the shape of each series matters.
 
-The logic is clean: score crosses above zero and stays above = long bias. Crosses below = short bias. But the real edge is the divergence play. When price makes a higher high but the score makes a lower high on the MACD pane, that's your early warning. I tested this on EUR/USD daily and caught a decent reversal in early August that a standard trendline break would have missed.
+The algorithm, step by step:
 
-For entries, I waited for the score to pull back to the zero line on a healthy trend before entering. That gave me better risk/reward than chasing the initial cross. Exits were simple: trail when the score starts flattening after being in extreme territory (beyond ±2.0), or exit fully if it crosses back through zero against your position.
+1. On each new monthly bar, each enabled component's value is inserted into that component's sorted history array. The arrays only ever grow; nothing is discarded.
+2. A component becomes "live" once its array holds at least the minimum-history gate. Before that it accumulates data but does not contribute, which prevents thin early samples from producing meaningless statistics.
+3. Each live component's current value is converted to an anchored z-score against the expanding mean and standard deviation of its own array, then winsorized by clamping to plus or minus the configured magnitude.
+4. The composite z is the equal-weight average of all live winsorized z-scores, computed whenever at least the minimum number of components is live.
+5. The composite z is itself inserted into an expanding array and converted to its own expanding percentile rank. That rank is the 0 to 100 headline line.
+6. Separately, each live component's expanding percentile rank is compared with the extreme threshold. The share of live components above the threshold is plotted as the extremes-breadth columns.
 
-**The honest trade-offs**
+An optional Excess CAPE Yield series (100 divided by CAPE, minus the 10-year Treasury yield) can be plotted and is always available in the table when enabled.
 
-Pros:
-- Multi-factor approach reduces false signals compared to single-indicator trend tools
-- The standardized score makes it easy to compare across different instruments
-- Color-coded line makes quick visual assessment possible
-- Divergence detection is genuinely useful and not something most trend indicators offer
+## How to use
 
-Cons:
-- The name is terrible for searchability and understanding
-- It's still a lagging indicator derived from price — don't expect leading precision
-- In ranging markets, the score oscillates around zero and will chop you up
-- No built-in alerts for the divergence patterns, which is a missed opportunity
-- Steep learning curve for beginners — the output isn't intuitive at first glance
+Apply the script on a Monthly chart of a symbol with deep monthly history. The chart symbol only supplies the time axis; the valuation data comes from the configured feeds. Charting the trailing P/E series itself, or a long-history index, exposes the full record back to the late 19th century. On a short-history chart symbol the statistics rank against a short window and the reading is not comparable.
 
-**Who should actually use this**
+Reading the pane:
 
-This is squarely aimed at swing traders and position traders who want confirmation beyond "price is above the 50 EMA." If you're a day trader scalping 5-minute charts, look elsewhere — the smoothing won't save you from the noise. But if you're holding positions for days to weeks and want to filter out weak trends from strong ones, this earns its place in your toolkit.
+- The teal line is the market's expensiveness rank from 0 to 100. A reading of 96 means the current composite valuation is richer than 96 percent of everything that came before it. A reading of 5 means cheaper than 95 percent of prior history.
+- Above the dotted 90 line with a red background: valuations are in their most expensive historical decile. Below the dotted 10 line with a green background: cheapest decile.
+- The orange columns show agreement. At 100, every live metric is simultaneously in its own extreme zone; at 0, none is. High teal with low orange means the composite is stretched but the stretch is concentrated in few metrics.
+- The table in the top right shows each component's status (off, gated with progress, or live), its current percentile, and its z-score, plus the composite row and the Excess CAPE Yield row.
 
-**Better alternatives depending on your style**
+This is not a timing signal. Elevated readings can persist for years. Its practical use is context: sizing long-term risk, framing regime, and flagging when many independent valuation lenses agree at an extreme.
 
-If you want something simpler, just use the ADX with a directional bias filter — it gives you trend strength without the composite complexity. For momentum-focused traders, the Fisher Transform does a similar job with less setup. And if you're trading crypto specifically, you'll want something with faster response — try a SuperTrend combined with RSI divergence instead.
+## Settings and How to Tune Them
 
-**Frequently asked questions**
+- **Components group**: six on/off toggles, each with editable symbol fields. Trailing P/E (default on), Shiller CAPE (default on), Price / Book (default on), Price / Sales (default on), Market Cap / GDP with numerator and denominator symbols (default on), Q Ratio proxy with numerator and denominator symbols (default on).
+- **Minimum-history gate**: monthly observations a component needs before it contributes. Default 120.
+- **Winsorize z at +/-**: clamp magnitude for component z-scores. Default 3.
+- **Minimum live components**: fewest live components required for the composite to plot. Default 2.
+- **Extreme threshold (percentile)**: level defining the expensive zone for the background, and the per-component extreme used by the breadth columns. Default 90.
+- **Cheap threshold (percentile)**: level defining the cheap zone for the background. Default 10.
+- **Plot Excess CAPE Yield**: adds the ECY series in percent to the pane and status line. Default off. Its 10-year yield symbol is editable.
+- **Show component table**: toggles the status table. Default on.
 
-*Does it repaint?* No, the score is calculated on confirmed bars. Once a bar closes, the value is fixed.
+The author does not claim any particular setting produces better results; the defaults are simply the documented starting point.
 
-*Can I use it on any timeframe?* Technically yes, but it performs best on 1-hour and above. Below that, the noise-to-signal ratio gets ugly.
+## What makes it original
 
-*Is it a leading indicator?* No. It's faster than most trend indicators, but it's still based on historical price data. Treat it as confirmation, not prediction.
+Published valuation scripts overwhelmingly track a single ratio, and existing multi-series composites in other domains rank each input over a fixed rolling window or against full-sample statistics. The author identifies four specific differences. First, every statistic is point-in-time: each bar is ranked and scored only against observations that existed at that bar, so no early reading benefits from data that had not yet occurred. Second, the primary transform is a winsorized anchored z-score rather than a percentile, so a component that breaks above all prior history continues to register increasing magnitude up to the clamp instead of pinning at 100 and going silent. Third, a minimum-history admission gate handles the unequal start dates of the underlying feeds explicitly: short-history components accumulate until they are statistically meaningful, and the effective composition of the composite changes transparently over time, disclosed live in the table. Fourth, the extremes-breadth columns quantify cross-metric agreement, separating a composite driven by one distorted ratio from one where independent valuation lenses are stretched simultaneously.
 
-*Does it work for crypto?* It works, but you'll need to adjust the sensitivity down. Crypto trends are more volatile, so the score hits extreme zones more often.
+## Notes and limitations
 
-**Final verdict**
-
-Composite_Valuation_Standard_Score doesn't reinvent the wheel, but it makes the wheel more reliable. The composite approach genuinely reduces false signals, and the divergence capability adds real value for trend traders. It's not the most intuitive indicator to learn, and the misleading name is annoying, but the underlying math is sound. I've kept it on my daily swing trading charts and it's earned its place. Four stars — solid, useful, but not life-changing.
-
-If you're a swing trader tired of getting chopped up by single-signal trend indicators, give this a shot with the settings I mentioned. Just ignore the name and focus on what the score is telling you about trend conviction.
+- Sample depth is bounded by the chart symbol's bar history, because expanding statistics can only accumulate on bars that exist on the chart. Use a deep-history monthly chart.
+- The effective component set varies by era. Only the two earnings-based series reach the 19th century; book value and sales feeds begin near 2000, and the market cap and Q feeds clear the gate later still. Early readings are a two-component composite. The table always shows which components are live.
+- Components whose feeds return no data stay gated and are excluded; the composite requires the configured minimum of live components or it plots na.
+- The value on the developing monthly bar updates until that bar closes. On timeframes below monthly the current month's reading evolves intraperiod. No lookahead is used and completed bars do not repaint from the script's side.
+- The underlying economic feeds are revised at the source. National accounts and flow of funds series can be restated historically, which changes past values of the affected components when the data provider updates them.
+- Quarterly feeds repeat their value across the months of a quarter, which mildly smooths the expanding distributions.
+- This indicator describes valuation rank relative to history. It makes no claim about future returns or the timing of any reversal.
 
 ## Frequently Asked Questions
 
-### Is Composite_Valuation_Standard_Score worth it?
+**Does it repaint?** No lookahead is used and completed bars do not repaint from the script's side. The developing monthly bar updates until it closes, and on timeframes below monthly the current month's reading evolves intraperiod.
 
-Based on testing across multiple timeframes, Composite_Valuation_Standard_Score delivers solid value for traders who need trend analysis.
+**What timeframe should I use?** Apply it on a Monthly chart of a symbol with deep monthly history. The chart symbol only supplies the time axis; the valuation data comes from the configured feeds. On a short-history chart symbol the statistics rank against a short window and the reading is not comparable.
 
-### Does this indicator repaint?
+**Is it a leading indicator?** No. It describes valuation rank relative to history and makes no claim about future returns or the timing of any reversal. Elevated readings can persist for years.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+**What does the orange column mean?** It is extremes breadth: the share of live components above the extreme threshold. At 100, every live metric is simultaneously in its own extreme zone; at 0, none is. High teal with low orange means the composite is stretched but the stretch is concentrated in few metrics.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

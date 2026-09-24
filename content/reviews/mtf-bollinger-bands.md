@@ -16,99 +16,107 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Bollinger Bands that plot higher timeframe bands on your current chart. Useful for spotting hidden support/resistance and trend shifts."
+grounding: "none (no source found)"
 ---
-
 **Rating:** ⭐⭐⭐⭐ (4/5)
 
-I’ve tested dozens of multi-timeframe (MTF) indicators, and most are either too cluttered or just repaint. **Mtf_Bollinger_Bands** does one thing well: it overlays Bollinger Bands from a higher timeframe (e.g., 1H or 4H) directly onto your lower timeframe chart (e.g., 5M or 15M). No repainting, no lag—just cleaner context.
+Multi-timeframe (MTF) indicators tend to fall into two camps: cluttered, or unreliable. **Mtf_Bollinger_Bands** takes a narrower approach — it overlays Bollinger Bands from a higher timeframe directly onto a lower timeframe chart, so you get higher timeframe context without switching windows.
 
 ## What This Indicator Actually Does
 
-This is not a fancy new algorithm. It’s a wrapper that pulls Bollinger Bands data from a higher timeframe and plots them on your current chart. You choose the source timeframe (e.g., 30 minutes for a 5-minute chart), and it draws the middle (SMA), upper, and lower bands from that timeframe. The bands update only when the higher timeframe candle closes—no intra-bar repainting.
+This is not a new algorithm. It's a wrapper that pulls Bollinger Bands data from a higher timeframe and plots it on your current chart. You select the source timeframe, and it draws the middle (SMA), upper, and lower bands from that timeframe. The bands update when the higher timeframe candle closes.
 
-In the chart above, I’m on a 15-minute BTC/USDT chart with the 1-hour Bollinger Bands overlaid. Notice how price bounced off the 1-hour lower band twice before reversing. That’s the core value: you see hidden support/resistance zones that your current timeframe’s bands miss.
+The core value is context: you see higher timeframe support and resistance zones that your current timeframe's own bands won't show you.
 
 ## Key Features That Set It Apart
 
-- **True MTF without repaint:** Bands only recalculate when the source timeframe closes. Many MTF indicators repaint or use future data—this one doesn’t.
-- **Clean visual options:** You can adjust line thickness, opacity, and colors for each band. No forced default scheme.
-- **Source timeframe selector:** Dropdown menu with 1 minute to monthly. I rarely use anything beyond 4H for intraday.
-- **Standard Bollinger settings:** You get period (default 20), standard deviation multiplier (default 2), and SMA source (close by default). Nothing exotic.
+- **MTF overlay:** Bands are sourced from a higher timeframe and rendered on the chart you're viewing.
+- **Visual options:** Line thickness, opacity, and colors for each band are adjustable.
+- **Source timeframe selector:** A dropdown covering intraday through monthly timeframes.
+- **Standard Bollinger inputs:** Period, standard deviation multiplier, and SMA source. Nothing exotic.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After weeks of testing on crypto and forex, here’s what works:
+The indicator exposes the usual Bollinger parameters plus a source timeframe selector. The general logic for tuning:
 
-- **For scalping (1M–5M chart):** Use 15-minute or 30-minute source. Period 20, deviation 2. This gives you a mid-term volatility envelope without constant noise.
-- **For intraday (15M–1H chart):** Use 4-hour source. Period 20, deviation 2.5. The wider bands catch bigger moves—price tends to bounce off the 2.5 deviations more cleanly than 2.
-- **For swing trading (4H–Daily chart):** Use weekly source. Period 20, deviation 2. This is my favorite for trend direction. If price closes above the weekly upper band on the daily chart, that’s a strong continuation signal.
+- **Shorter source timeframes** produce bands that track price more closely, which suits scalping and very short intraday work.
+- **Longer source timeframes** produce wider, slower bands that better reflect the dominant trend, which suits intraday-to-swing use.
+- **Deviation multiplier:** A higher multiplier widens the bands, so price reaches them less often but the levels carry more weight when it does. A lower multiplier produces more frequent touches.
+- **Middle SMA line:** If you already run a standard Bollinger Bands indicator on your chart, the overlay's middle line is redundant and can be hidden to reduce clutter.
 
-**Pro tip:** Turn off the middle SMA line on the overlay if you already have a standard Bollinger on your chart. It’s redundant and adds visual clutter.
+There is no single "best" configuration — the right source timeframe depends on the relationship between your chart timeframe and the timeframe whose volatility you actually care about.
 
 ## How to Use It for Entries and Exits
 
-I’ll give you two concrete strategies I’ve used successfully:
+Two common approaches:
 
-**1. MTB Band Bounce (Counter-trend)**
+**1. Band Bounce (Counter-trend)**
 
-Wait for price to touch the higher timeframe lower band on your current chart. Look for a reversal candlestick pattern (hammer, bullish engulfing) at that level. Enter long with a stop just below the band. Target the middle SMA of the higher timeframe or the opposite band. Works best in ranging markets.
+Wait for price to touch the higher timeframe lower band on your current chart. Look for a reversal candlestick pattern at that level. Enter long with a stop just below the band, and target the higher timeframe's middle SMA or the opposite band. This approach fits ranging conditions.
 
 **2. Trend Continuation (Band Walk)**
 
-If price closes outside the higher timeframe upper band and stays there for 3+ candles on your current timeframe, that’s a strong trend. Don’t fade it. Instead, wait for a pullback to the middle SMA of the higher timeframe and enter in the trend direction. I’ve caught several nice runs on ETH/USD this way.
+If price closes outside the higher timeframe upper band and holds there for multiple candles on your current timeframe, treat it as trend strength rather than a fade signal. Wait for a pullback to the higher timeframe's middle SMA and enter in the direction of the trend.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- No repaint—trustworthy data.
-- Lightweight script. Doesn’t slow down charts with 20+ indicators.
-- Simple to set up. No crazy parameters.
-- Works across all asset classes (crypto, forex, stocks, indices).
+- Lightweight script that doesn't add much chart overhead.
+- Simple setup — no unusual parameters to configure.
+- Applies across asset classes: crypto, forex, stocks, indices.
 
 **Cons:**
-- Only plots bands from one higher timeframe at a time. You can’t overlay, say, both 1H and 4H simultaneously without duplicating the indicator.
-- No alerts natively. You’ll need to use TradingView’s alert system manually on the source chart.
-- The bands can look “jumpy” on lower timeframes if the source timeframe is too low (e.g., 15-minute source on a 1-minute chart). Use at least 3x the source timeframe for smoothness.
+- Only plots bands from one higher timeframe at a time. Overlaying two source timeframes requires duplicating the indicator.
+- No native alerts. You'd need to set price alerts on the source chart manually.
+- Bands can appear jumpy on a lower timeframe if the source timeframe is too close to it. A wider gap between chart timeframe and source timeframe produces smoother bands.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Intraday traders** who want to see where the bigger players are watching (e.g., 1H bands on a 5M chart).
-- **Swing traders** who need a quick visual check of higher timeframe volatility without switching charts.
-- **Traders who already use Bollinger Bands** and want a cleaner MTF version without extra noise.
+- **Intraday traders** who want a read on where higher timeframe participants are watching.
+- **Swing traders** who want a quick visual check of higher timeframe volatility without switching charts.
+- **Traders who already use Bollinger Bands** and want an MTF version without extra noise.
 
-It’s *not* for:
-- Beginners who don’t understand timeframes yet.
+It's *not* for:
+- Beginners who don't yet have a working understanding of timeframes.
 - Traders expecting a standalone signal system. This is a context tool, not a buy/sell indicator.
 
 ## Better Alternatives If They Exist
 
-- **Volume Weighted Bollinger Bands (VWAP-based):** If you want bands that respect volume, use VWAP bands instead.
-- **Keltner Channels:** For a volatility measure that’s less sensitive to outliers, Keltner Channels with ATR-based width might suit you better.
-- **“Bollinger Bands Multi-Timeframe” by LuxAlgo:** This one lets you plot up to 5 different timeframes at once. More useful if you need a full MTF matrix, but it’s heavier on the chart.
+- **Volume Weighted Bollinger Bands (VWAP-based):** If you want bands that respect volume, VWAP bands are the relevant comparison.
+- **Keltner Channels:** For a volatility measure that's less sensitive to outliers, Keltner Channels with ATR-based width may suit you better.
+- **"Bollinger Bands Multi-Timeframe" by LuxAlgo:** This one lets you plot multiple timeframes at once. More useful if you need a full MTF matrix, but heavier on the chart.
 
-## FAQ Addressing Real Trader Questions
+## FAQ
 
-**Q: Does this indicator repaint?**  
-A: No. It only updates when the source timeframe candle closes. What you see is what you get.
+**Q: Does this indicator repaint?**
+A: The bands are sourced from a higher timeframe and update when that timeframe's candle closes.
 
-**Q: Can I use it on a 1-minute chart with a 1-hour source?**  
-A: Yes. That’s actually the most common use case. The bands will be smooth and not jumpy.
+**Q: Can I use it on a 1-minute chart with a 1-hour source?**
+A: Yes — a wide gap between chart timeframe and source timeframe is the standard use case, and produces smoother bands.
 
-**Q: Why are the bands flat sometimes?**  
-A: If the source timeframe is much higher (e.g., daily bands on a 1-minute chart), the bands will only change once per day. That’s normal.
+**Q: Why are the bands flat sometimes?**
+A: If the source timeframe is much higher than your chart timeframe, the bands only change when that source candle closes. That's expected behavior.
 
-**Q: Can I get alerts on band touches?**  
-A: Not natively. But you can set a price alert on the source chart near the band level.
+**Q: Can I get alerts on band touches?**
+A: Not natively. You can set a price alert on the source chart near the band level instead.
 
 ## Final Verdict
 
-Mtf_Bollinger_Bands is a solid, no-nonsense tool for traders who understand timeframes. It’s not groundbreaking, but it does exactly what it promises—clean MTF Bollinger Bands without repainting or bloat. If you already know how to use Bollinger Bands, this will improve your chart reading instantly.
+Mtf_Bollinger_Bands is a no-nonsense tool for traders who understand timeframes. It isn't groundbreaking, but it does exactly what it promises — an MTF Bollinger Bands overlay without bloat. If you already know how to use Bollinger Bands, this adds a layer of higher timeframe context to your chart.
 
-I give it **4 out of 5 stars**. It loses a star for the lack of alerts and the inability to plot multiple source timeframes at once. But for a free, lightweight MTF overlay, it’s hard to beat.
+It loses a star for the lack of native alerts and the inability to plot multiple source timeframes at once. For a free, lightweight MTF overlay, that's a reasonable trade-off.
 
-**Should you install it?** Yes, if you trade multiple timeframes and want a visual edge. No, if you expect it to make trading decisions for you.
+**Should you install it?** Yes, if you trade multiple timeframes and want the higher timeframe's volatility envelope visible on your working chart. No, if you expect it to make trading decisions for you.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Bollinger Bands** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

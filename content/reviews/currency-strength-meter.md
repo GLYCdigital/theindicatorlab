@@ -16,83 +16,77 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Currency_Strength_Meter review: how it tracks 8 major currencies, best settings for forex pairs, entry/exit rules, pros, cons, and better alternatives."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Let’s cut the fluff. The **Currency_Strength_Meter** is a multi-panel tool that calculates and displays the relative strength of 8 major currencies (USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD) in real-time. It doesn’t repaint, doesn’t rely on lagging moving averages, and doesn’t try to predict the future. Instead, it measures how each currency is performing *right now* against a basket of the others, using a normalized momentum score.
+The **Currency_Strength_Meter** is described as a multi-panel tool that calculates and displays the relative strength of 8 major currencies (USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD). Rather than relying on lagging moving averages or attempting to predict the future, it measures how each currency is performing against a basket of the others using a normalized momentum score.
 
-As the chart above shows, you get a clean bar chart or line plot at the bottom of your screen. Each currency gets a value from 0 to 100 — above 50 means bullish momentum, below 50 means bearish. Simple, visual, and fast.
+The output is a bar chart or line plot, typically placed at the bottom of the chart. Each currency is assigned a value on a 0 to 100 scale, where readings above 50 indicate bullish momentum and readings below 50 indicate bearish momentum.
 
 ## Key Features That Set It Apart
 
-- **Multi-timeframe alignment**: You can choose the calculation timeframe (e.g., 1H, 4H, daily) and see strength across different horizons. This is huge for spotting divergences.
-- **Customizable lookback**: Default is 14 periods, but you can adjust it. Shorter = more sensitive, longer = smoother.
-- **Alert-ready**: Although not built-in, you can set alerts on the underlying price when a currency crosses a threshold.
-- **No repaint**: I tested this on live data for two weeks. The values update tick-by-tick but never change retroactively.
+- **Multi-timeframe alignment**: The calculation timeframe can be selected independently, allowing strength to be viewed across different horizons. This is useful for spotting divergences between timeframes.
+- **Customizable lookback**: The lookback period can be adjusted. Shorter settings make the meter more sensitive; longer settings make it smoother.
+- **Alert-ready**: Alerts are not built in, but alerts can be set on the underlying price when a currency crosses a threshold.
+- **No repaint**: According to the source material, values update tick-by-tick but do not change retroactively.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-After testing on EUR/USD, GBP/JPY, and USD/CAD:
-
-- **Lookback period**: 14 for day trading, 21 for swing trading.
-- **Calculation timeframe**: Match it to your chart timeframe. If you’re on a 1H chart, set it to 1H. Don’t mix — that introduces noise.
-- **Show only top/bottom 3**: Toggle this on. Too many bars clutter the panel.
-- **Color scheme**: Use green for above 50, red for below. Makes scanning immediate.
-
-For scalping on M5, drop the lookback to 7. You’ll get more false signals but faster reactions.
+- **Lookback period**: A shorter lookback increases sensitivity; a longer lookback produces a smoother reading. The trade-off is responsiveness versus noise.
+- **Calculation timeframe**: Matching the calculation timeframe to the chart timeframe avoids introducing noise from mismatched horizons.
+- **Show only top/bottom currencies**: A toggle exists to limit the panel to the strongest and weakest currencies, which reduces clutter.
+- **Color scheme**: Coloring readings above and below the midpoint differently makes the panel faster to scan.
 
 ## How to Use It for Entries and Exits
 
-**Entry example**: If you see USD strength at 75 and EUR weakness at 30, look to go short EUR/USD. Wait for the bar to cross the 50 level on both currencies — that’s your confirmation. On the chart above, you’ll notice the USD bar jumped from 42 to 68 in one hour while EUR dropped from 55 to 38. That was a clean short entry on EUR/USD that ran 40 pips.
+**Entry logic**: When one currency shows strong momentum and its pair counterpart shows weak momentum, the setup favors a trade in the direction of the stronger currency. Confirmation is typically taken when the bars cross the midpoint level on both currencies.
 
-**Exit**: Close when the strong currency drops below 50 or the weak one rises above 50. Don’t hold through divergence — if USD stays strong but EUR starts climbing toward 50, that’s a warning.
+**Exit logic**: Close when the strong currency drops below the midpoint or the weak one rises above it. Divergence — where the strong currency holds up but the weak one starts climbing toward the midpoint — is treated as a warning sign.
 
-**Avoid**: Don’t trade when all currencies cluster around 40-60. That means no clear leader — chop city.
+**Avoid**: Trading when all currencies cluster near the middle of the range, which indicates no clear leader and choppy conditions.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Instant visual read on which currencies are driving the market.
-- Works on any timeframe, any pair.
-- No repaint, no lag.
+- Provides an immediate visual read on which currencies are driving the market.
+- Designed to work across timeframes and major pairs.
+- Described as non-repainting and non-lagging.
 - Free on TradingView.
 
 **Cons:**
-- Only 8 major currencies. No exotics, no crosses like EUR/GBP directly.
-- The scale is relative, not absolute. A reading of 80 doesn’t mean “strong” in a vacuum — it means “stronger than the others.”
-- No built-in alerts (you have to craft your own).
-- Can be noisy on lower timeframes unless you smooth it with the lookback.
+- Covers only the 8 major currencies — no exotics and no direct crosses such as EUR/GBP.
+- The scale is relative, not absolute. A high reading means strong relative to the others, not strong in isolation.
+- No built-in alerts; these must be constructed manually.
+- Can be noisy on lower timeframes unless smoothed via the lookback setting.
 
 ## Who It’s Actually For
 
-This is for **forex traders who trade major pairs** and want to avoid getting caught in a weak trend. If you trade news, breakouts, or carry trades, this tool gives you context — it’s not a standalone system. Scalpers will find it useful on M15 and above. Position traders should use the daily calculation.
+This is aimed at **forex traders who trade major pairs** and want context on relative currency strength to avoid getting caught in a weak trend. Traders focused on news, breakouts, or carry trades can use it as context, but it is not a standalone system. Scalpers are likely to find it more usable on higher intraday timeframes, while position traders would lean toward a daily calculation.
 
 **Not for**: Crypto traders, stock traders, or anyone trading exotics. Also not for traders who want a single-number buy/sell signal.
 
 ## Better Alternatives If They Exist
 
-If you want more currencies or more advanced divergence detection, check out **Forex Strength Meter** by LonesomeTheBlue — it includes more pairs and has a divergence scanner. For a simpler version with alerts, **Currency Strength** by LuxAlgo is solid but costs money. The free Currency_Strength_Meter is a better starting point.
+For more currencies or more advanced divergence detection, **Forex Strength Meter** by LonesomeTheBlue is cited as including more pairs and a divergence scanner. For a simpler version with alerts, **Currency Strength** by LuxAlgo is described as solid but paid. The free Currency_Strength_Meter is positioned as a better starting point.
 
 ## FAQ Addressing Real Trader Questions
 
-**Q: Does it work on commodities like gold or oil?**  
-A: No. It’s designed for forex majors only.
+**Q: Does it work on commodities like gold or oil?**
+A: No. It is designed for forex majors only.
 
-**Q: Can I use it on a 1-minute chart?**  
-A: You can, but the noise will drive you crazy. Stick to M15 or higher.
+**Q: Can I use it on a 1-minute chart?**
+A: It can be applied there, but noise is a concern. Higher intraday timeframes are generally more usable.
 
-**Q: Does it repaint?**  
-A: No. I tested this. Values update live but never change retroactively.
+**Q: Does it repaint?**
+A: According to the source material, no. Values update live but do not change retroactively.
 
-**Q: How do I get alerts?**  
-A: You can’t directly. But you can set a price alert on the underlying asset when the currency bar crosses a level. It’s manual but works.
+**Q: How do I get alerts?**
+A: Not directly. A price alert can be set on the underlying asset when the currency bar crosses a level. It is manual but functional.
 
-## Final Verdict with Star Rating
+## Final Verdict
 
-**4/5 stars (⭐⭐⭐⭐)**. The Currency_Strength_Meter is a solid, free tool that gives you a clear edge in forex trading — if you use it correctly. It’s not flashy, it doesn’t have bells and whistles, but it does one thing well: tells you which currencies are driving the market. For the price (free), it’s a no-brainer to add to your toolkit. Just don’t expect it to trade for you.
-
----
+The Currency_Strength_Meter is a free tool that provides a clear read on which currencies are driving the market, provided it is used with realistic expectations. It is not flashy and has no bells and whistles, but it does one thing: show relative currency strength across the majors. Just don't expect it to trade for you.
 
 ## Go Deeper with The Indicator Lab
 

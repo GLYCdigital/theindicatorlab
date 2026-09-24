@@ -17,104 +17,93 @@ categories:
 rating: 4
 description: "Honest review of Harmonic_Rsi_Reversal_Scanner_Dual_Wave: tests settings, entry logic, pros/cons, and who should use this RSI trend reversal tool."
 tv_script_url: "https://www.tradingview.com/script/nt2MO35V-Advanced-Harmonic-RSI-Reversal-Scanner-Dual-Wave/"
+sources: ["https://www.tradingview.com/script/nt2MO35V-Advanced-Harmonic-RSI-Reversal-Scanner-Dual-Wave/"]
 ---
-Let me be upfront: the name *Harmonic_Rsi_Reversal_Scanner_Dual_Wave* sounds like someone threw every trading buzzword into a blender. But after running it on dozens of charts over the past few weeks, I can tell you it's more than just a fancy label. It's a trend-reversal detector that combines RSI extremes with a dual-wave confirmation structure. Not perfect, but genuinely useful if you understand its quirks.
+Let me be upfront: the name *Advanced Harmonic & RSI Reversal Scanner* sounds like someone threw every trading buzzword into a blender. But the concept underneath is more specific than the label suggests. It's a pattern-reversal detector that combines Fibonacci harmonic geometry with an RSI exhaustion filter. Not perfect, but a coherent design if you understand what it's actually solving.
 
 ## What It Actually Does
 
-Strip away the jargon and this indicator does two things: it identifies RSI momentum divergence from price action, then confirms reversals using a two-wave harmonic structure. The "dual wave" part means it doesn't fire an alert on the first RSI extreme — it waits for a second wave that shows the momentum failing to make new highs or lows. That's the core edge here.
+Strip away the jargon and the indicator addresses two problems its own description names directly: harmonic tools that clutter the chart with overlapping lines, and harmonic tools that signal entries at Fibonacci levels without checking whether the market is actually slowing down.
 
-If you're watching the MACD chart above, you'll notice how the signals align with momentum shifts rather than raw price pivots. That's deliberate. This isn't a lagging moving average crossover tool. It's trying to catch the moment where trend exhaustion meets RSI confirmation.
+The answer to the first problem is a dual ZigZag engine that scans a "Major" wave and a "Minor" wave simultaneously. It prioritizes larger, macro setups first, but scales down to minor setups when the broader trend is noisy. The answer to the second is an RSI filter: a pattern alone isn't enough, and a Bull or Bear signal only fires when Point D forms *and* the RSI confirms momentum exhaustion by crossing its oversold or overbought thresholds.
+
+That combination is the core idea. Fibonacci geometry locates where a reversal might occur; the RSI filter tries to time when it's actually happening.
 
 ## Key Features That Matter
 
-What separates this from the hundred other RSI divergence scanners on TradingView:
+What separates this from the pile of harmonic scanners on TradingView:
 
-- **Dual-wave confirmation filter** — This is the star. Most RSI reversal tools fire on every single divergence, drowning you in false signals. The two-wave structure cuts out a significant chunk of chop.
-- **Customizable RSI sensitivity** — You can adjust the RSI period (default 14) and the overbought/oversold thresholds (default 70/30). I'd argue these defaults are too tight for crypto and too loose for forex.
-- **Visual clarity** — The alerts are plotted directly on the chart with distinct icons for bullish and bearish reversals. No confusing color gradients or multi-pane overlays to decipher.
-- **Alert system** — Works with TradingView's native alerts, so you can get pushed notifications when a setup completes. This is a must-have feature for a scanner-type indicator.
+- **Live Point D tracking** — Standard scripts wait for a pivot to be fully confirmed, which causes late entries. Here, Point D dynamically tracks the live wick of the current candle, and the Fibonacci ratios update in real time as price moves into the Potential Reversal Zone.
+- **RSI entry confirmation** — The pattern is necessary but not sufficient. The signal requires the RSI hook as well.
+- **Dynamic risk and targets** — On an entry trigger, the script calculates and plots Take Profit and Stop Loss lines automatically, rather than leaving you to measure by hand.
+- **Anti-spam charting** — A strict visual state machine means that when a live candle twitches, the script deletes and redraws its lines instead of stacking overlapping ones on the chart.
+- **Smart history stamping** — Once a setup completes, the pattern and its target lines are permanently stamped onto the chart for reviewing past setups.
 
-## Best Settings I've Tested
+## Supported Patterns
 
-After extensive backtesting and forward testing across BTCUSD, EURUSD, and AAPL, here's what worked:
+The scanner calculates internal and external Fibonacci ratios to identify Gartley, Bat, Butterfly, and Crab structures. AB=CD functions as a fallback priority when an XABCD structure is invalid.
 
-**For crypto (high volatility):**
-- RSI Period: 10 (faster reaction)
-- Overbought: 80 / Oversold: 20
-- Enable the "strict wave filter" option if available
+## The Risk and Target Framework
 
-**For forex (lower volatility):**
-- RSI Period: 21 (smooth out noise)
-- Overbought: 75 / Oversold: 25
-- Consider using only the bullish reversal signals on pairs you've confirmed are ranging
+This is the part worth understanding before anything else, because it's fully specified by the script rather than left to your discretion:
 
-**For indices and stocks:**
-- Stick with defaults (14/70/30) but apply it on the 1-hour or 4-hour timeframe. Anything lower generates too much noise.
+- **TP1** — 38.2% retracement of the A-to-D leg.
+- **TP2** — 61.8% retracement of the A-to-D leg.
+- **Stop Loss** — placed dynamically 20% beyond Point D's structural size, which the description frames as protection against deep extensions like Butterfly or Crab patterns.
 
-## How I Actually Trade It
+## How the Indicator Is Meant to Be Traded
 
-The entry logic is straightforward but requires discipline. Here's the framework that produced the best results in my testing:
+The script's own workflow is a four-step sequence:
 
-1. **Wait for the dual-wave signal** — Both RSI waves must show divergence from price. If the indicator fires on just a single wave, skip it.
-2. **Confirm with trend context** — Only take long signals when price is above the 200 EMA, short signals below it. This indicator works *with* trend exhaustion, not against it.
-3. **Entry trigger** — Wait for the next candle to close in the direction of the signal. Don't chase the exact candle the indicator prints.
-4. **Stop loss** — Place just beyond the swing low/high that created the divergence. Tight but not scalper-tight.
-5. **Take profit** — Target 1.5x to 2x your risk. This is a reversal tool, not a trend follower. Don't expect massive runners.
+1. **Wait for the setup.** Let the script map the X, A, B, and C yellow pivot nodes, and watch as it projects Point D.
+2. **Wait for the trigger.** Don't enter blindly. Wait for the colored "Bull ▲" or "Bear ▼" pill to appear — that means price has hit the PRZ and the RSI has hooked, signaling momentum is shifting.
+3. **Execute the plan.** Place your entry and set your stop at the red Risk line.
+4. **Manage the trade.** Take partial profits or move your stop to breakeven when price hits the green TP1 line, and leave a runner for TP2.
 
-## Pros & Cons
+## Settings and How to Tune Them
 
-**What I Like:**
-- The dual-wave filter genuinely reduces false signals. I compared it side-by-side with a standard RSI divergence indicator on the same chart. Roughly 40% fewer alerts, and the quality was noticeably better.
-- Clean visual presentation. Alerts are labeled clearly without cluttering the chart.
-- Flexible enough for multiple asset classes.
-- Doesn't repaint. This is critical — I've verified signals remain stable after the candle closes.
+The source material does not publish a parameter table, so treat this conceptually. The script exposes a dual ZigZag structure with Major and Minor waves, RSI thresholds for the overbought and oversold conditions that gate entries, and the Fibonacci ratio logic that defines the supported patterns. The specific values behind those thresholds are not documented in the description, and the description does not claim any particular configuration produces better results. If you use the script, read the inputs panel directly rather than assuming defaults.
 
-**What Frustrates Me:**
-- In strong trending markets, it will absolutely chew you up. The dual-wave structure is designed for mean reversion, and it will fight a powerful trend every single time.
-- The indicator name gives you zero clue about usage. The documentation inside the code is sparse. It took me a while to understand the wave filter logic.
-- No built-in risk management or position sizing suggestions. You're on your own there.
-- On lower timeframes (under 15 minutes), the signals become nearly worthless due to noise.
+## Pros and Cons
+
+**Strengths:**
+- The RSI confirmation layer addresses a real weakness in pattern-only harmonic tools — the "falling knife" problem the description calls out explicitly.
+- Live Point D tracking is a genuine design choice against late entries, at the cost of ratios that shift in real time.
+- The visual state machine keeps the chart readable, which is the stated motivation for building it.
+- History stamping makes the tool reviewable after the fact.
+
+**Limitations:**
+- The description itself acknowledges the trade-off: live tracking means ratios update as the candle moves, so a PRZ read on an open candle is provisional.
+- Stop placement at a fixed percentage beyond Point D's structural size is a rule, not an adaptation — it won't suit every instrument's volatility.
+- No built-in position sizing or risk management beyond the plotted lines.
+- The documentation is thin, and the name gives little indication of how the pieces fit together.
 
 ## Who Should Use This
 
-This is a swing trader's tool. If you're trading the 1-hour to daily timeframes and you're comfortable identifying trend context yourself, this indicator earns its place. It's particularly effective on:
+This is a pattern-reversal tool for traders who already read trend context themselves and want the Fibonacci geometry and RSI timing handled mechanically. It suits discretionary swing trading on higher timeframes where harmonic structures have room to complete.
 
-- **Forex pairs** during London/NY overlap
-- **Large-cap crypto** (BTC, ETH) in ranging markets
-- **Index futures** (ES, NQ) at key support/resistance levels
-
-If you're a scalper or a pure trend follower, skip this one. It will either flood you with signals or fight your directional bias constantly.
-
-## Alternatives Worth Considering
-
-If the dual-wave concept intrigues you but you need more context:
-
-- **RSI Divergence Indicator by LonesomeTheBlue** — More classic divergence detection without the harmonic structure. Easier to understand, but more false signals.
-- **TradingView's built-in RSI** with manual divergence drawing — Free and gives you full control. The dual-wave filter is the only real reason to pay for this indicator.
-- **Momentum Reversal Scanner** (if available in your region) — Similar concept but with volume confirmation baked in.
+If you trade purely with trend, or you want a system that tells you position size and portfolio risk, this isn't that tool. It plots levels and signals; the decisions remain yours.
 
 ## FAQ
 
 **Does this indicator repaint?**
-No. I verified this by comparing historical signals against live data. Once a signal prints on a closed candle, it stays.
+The source material does not make a repainting claim. What it does state is that Point D tracks the live wick of the current candle and that Fibonacci ratios update in real time as price moves into the PRZ — so any read taken before the candle closes is, by design, provisional.
 
-**Can I use it for day trading?**
-Technically yes, but I wouldn't recommend it below the 15-minute chart. You'll get too many conflicting signals.
+**How does it avoid chart clutter?**
+Through the anti-spam state machine: on a live candle twitch, lines are deleted and redrawn rather than overlaid.
 
-**Is it worth the price?**
-If you're a serious swing trader, yes. If you're a casual trader, probably not — you'd be better off learning to spot RSI divergence manually.
+**What happens if an XABCD structure is invalid?**
+The script falls back to AB=CD as a lower-priority pattern.
 
-**Does it work for all assets?**
-It works best in markets that mean-revert. Crypto and forex in ranging conditions, yes. Strong trending stocks, no.
+**Does it work on all assets?**
+The description makes no claim about specific markets or timeframes. The pattern set it detects — Gartley, Bat, Butterfly, Crab, AB=CD — is instrument-agnostic, but the description offers no guidance on which markets it performs best in.
 
 ## Final Verdict
 
-The Harmonic_Rsi_Reversal_Scanner_Dual_Wave is a solid 4-star tool because it executes one specific concept very well: filtering RSI reversal signals through a dual-wave confirmation. It's not a miracle system, and it won't replace your market analysis. But if you're tired of RSI divergence indicators that fire on every wiggle, this one does the dirty work of filtering out the noise.
+The Advanced Harmonic & RSI Reversal Scanner is a focused tool built around one clear thesis: harmonic geometry tells you where a reversal might occur, and RSI exhaustion tells you when. It executes that thesis with live Point D tracking, an RSI gate on entries, and a fixed, pre-calculated risk and target framework. It is not a miracle system and it won't replace your market analysis — but for traders who already read structure and want the Fibonacci and momentum checks handled mechanically, the design is coherent and the chart stays clean.
 
-The name is ridiculous, the learning curve is steeper than it should be, and it will fail you in strong trends. But for what it's designed to do — catching exhaustion reversals on higher timeframes — it's genuinely one of the better tools I've tested in this category.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Recommended for discretionary pattern traders who want RSI-confirmed harmonic setups with automatic target and stop levels.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Recommended for swing traders who understand trend context and want a reliable reversal confirmation tool.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

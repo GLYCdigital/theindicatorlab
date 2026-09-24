@@ -16,50 +16,49 @@ categories:
   - Technical Analysis
 rating: 4
 description: "QQE combines RSI smoothing with ATR-based bands for trend and momentum. Helps spot overbought/oversold and trend shifts. Solid 4/5."
+grounding: "none (no source found)"
 ---
-
 **description:** QQE combines RSI smoothing with ATR-based bands for trend and momentum. Helps spot overbought/oversold and trend shifts. Solid 4/5.
 
 ---
 
-Alright, I’ve spent the last week hammering this indicator across BTC, ETH, and a few forex pairs. Here’s the real talk on the QQE_Quantitative_Qualitative_Estimation.
+The QQE_Quantitative_Qualitative_Estimation is a smoothed RSI with volatility-adaptive bands bolted on. Here's what it does and where it falls short.
 
-**What this indicator actually does:** It’s a smoothed RSI (Wilder’s RSI) wrapped in ATR-based bands. The idea? Reduce the noise of standard RSI while giving you dynamic overbought/oversold levels that adapt to volatility. It’s not new—Perry Kaufman’s QQE concept has been around—but this specific implementation on TradingView is clean and functional.
+**What this indicator actually does:** It's a smoothed RSI (Wilder's RSI) wrapped in ATR-based bands. The goal is to cut the noise of standard RSI while giving you overbought/oversold levels that move with volatility instead of sitting at fixed values. The QQE concept itself isn't new—it traces back to Perry Kaufman—but this TradingView implementation is clean and functional.
 
 **Key features that stand out:**
-- **Dual smoothing:** The RSI is smoothed twice (RSI → smoothed RSI → final line). This kills the whipsaws you get with raw RSI.
-- **ATR bands:** Instead of fixed 70/30 levels, the bands expand and contract with volatility. On the chart above, you can see how during low-volatility ranges, the bands tighten—giving fewer false signals.
-- **Color-coded line:** Green for bullish momentum, red for bearish. Simple, but effective for at-a-glance reads.
-- **Signal line crossover:** A secondary line (typically 5-period smoothed) gives entry/exit cues when it crosses the main line.
+- **Dual smoothing:** The RSI is smoothed twice (RSI → smoothed RSI → final line), which is what separates it from a raw RSI read.
+- **ATR bands:** Rather than fixed 70/30 levels, the bands expand and contract with volatility. During low-volatility ranges the bands tighten; during expansions they widen.
+- **Color-coded line:** Green for bullish momentum, red for bearish—a quick at-a-glance read.
+- **Signal line crossover:** A secondary smoothed line gives crossover cues against the main line.
 
-**Best settings I’ve tested:**
-- **RSI Length:** 14 (default works, but for faster scalping on 15m charts, drop to 9. For swings on 4H+, try 21).
-- **Smoothing Factor:** 5 (leave this—too high makes it laggy, too low reintroduces noise).
-- **ATR Multiplier:** 1.5–2.0. At 1.5, bands are tight—good for ranging markets. At 2.0, they’re wider—better for trends.
-- **Signal Line:** 5-period MA of the QQE line.
+**Settings and How to Tune Them:**
+- **RSI Length:** The default is 14. Shorter lengths make the line more reactive; longer lengths smooth it further. There is no single value that is correct for all conditions.
+- **Smoothing Factor:** Controls how much lag is traded for how much noise is removed. Higher smoothing means more lag; lower smoothing reintroduces noise.
+- **ATR Multiplier:** Sets how wide the bands sit relative to volatility. Tighter bands trigger more often; wider bands trigger less often but later.
+- **Signal Line:** A moving average of the QQE line, used purely for crossover timing.
 
 **How to use it for entries/exits:**
-- **Long entry:** Main line crosses *above* signal line while both are above the center (50). Wait for a green candle to close above the upper ATR band for confirmation.
-- **Short entry:** Main line crosses *below* signal line while both are below 50. Red candle closing below lower band.
-- **Exits:** When the main line crosses back below/above the signal line, or when it hits extreme levels (above 80 or below 20) with a divergence.
+- **Long entry:** Main line crosses above the signal line while both are above the center (50), with a candle closing above the upper ATR band as confirmation.
+- **Short entry:** Main line crosses below the signal line while both are below 50, with a candle closing below the lower band.
+- **Exits:** When the main line crosses back below/above the signal line, or when it reaches extreme levels with a divergence.
 
-**Honest pros and cons:**
+**Pros and cons:**
 
 **Pros:**
-- Much cleaner than standard RSI. Fewer false signals.
-- ATR bands adapt to market conditions—no hardcoded zones.
-- Works on multiple timeframes (I tested 5m to 1D).
-- Doesn’t repaint (I backtested—confirmed).
+- Cleaner than standard RSI, with fewer false signals.
+- ATR bands adapt to market conditions rather than using hardcoded zones.
+- Usable across multiple timeframes.
 
 **Cons:**
-- Still lags during fast breakouts. On the chart above, you can see the signal came a bar or two late on the 1H ETH move.
-- Not a standalone system. You need price action or trend context.
-- Overbought/oversold in strong trends can keep you out of big moves (classic RSI problem).
+- Still lags during fast breakouts—signals can arrive a bar or two late.
+- Not a standalone system. It needs price action or trend context around it.
+- Overbought/oversold readings in strong trends can keep you out of big moves, the classic RSI problem.
 
-**Who it’s actually for:**
-- Traders who hate RSI noise but want momentum tracking.
-- Swing traders on 1H–4H who want a secondary confirmation.
-- Scalpers on 5–15m if you tweak the settings (but expect more false signals in choppy markets).
+**Who it's actually for:**
+- Traders who want momentum tracking without raw RSI noise.
+- Swing traders who want a secondary confirmation tool.
+- Scalpers willing to tune the settings, accepting more false signals in choppy conditions.
 
 **Better alternatives:**
 - **Fisher Transform:** Faster, more sensitive to reversals. Better for breakout traders.
@@ -67,14 +66,12 @@ Alright, I’ve spent the last week hammering this indicator across BTC, ETH, an
 - **MACD:** Better for trend direction, but slower.
 
 **FAQ:**
-- *Does it repaint?* No. I checked by reloading the chart—signals hold.
-- *Can I trade solely on this?* Don’t. Use it as a filter. Combine with support/resistance or volume.
-- *Best timeframe?* 1H for swing, 15m for scalping. Below 5m it’s choppy.
+- *Does it repaint?* The implementation is designed not to.
+- *Can I trade solely on this?* It's better used as a filter. Combine it with support/resistance or volume.
+- *Best timeframe?* It works across intraday and higher timeframes; shorter timeframes tend to be choppier.
 
 **Final verdict: ⭐⭐⭐⭐ (4/5)**
-It’s a solid upgrade from standard RSI. The ATR bands make it adaptive, and the smoothing cuts the noise. But it’s not a magic bullet—you still need to pair it with price action. If you’re an RSI user looking for a cleaner version, this is worth your time. If you want a leading indicator, look elsewhere.
-
----
+A solid upgrade from standard RSI. The ATR bands make it adaptive and the smoothing cuts noise. It isn't a magic bullet—pair it with price action. If you're an RSI user looking for a cleaner version, this is worth your time. If you want a leading indicator, look elsewhere.
 
 ## Go Deeper with The Indicator Lab
 

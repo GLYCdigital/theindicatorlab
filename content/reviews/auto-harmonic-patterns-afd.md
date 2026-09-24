@@ -17,84 +17,81 @@ categories:
 rating: 4
 description: "Auto_Harmonic_Patterns_Afd review: how this TradingView indicator auto-detects Gartley, Bat and Butterfly patterns, best settings, entry logic and honest limits."
 tv_script_url: "https://www.tradingview.com/script/2MvG5H7T-Auto-Harmonic-Patterns-AFD/"
+sources: ["https://www.tradingview.com/script/2MvG5H7T-Auto-Harmonic-Patterns-AFD/"]
 ---
-Most harmonic pattern indicators on TradingView are either so eager they paint a butterfly on every three-bar pullback, or so strict you see one setup a month. Auto_Harmonic_Patterns_Afd sits closer to the middle of that range, and after running it on the 4H and daily across FX majors and a few large-cap charts, that's the honest headline: it detects legitimately, it labels cleanly, and it makes you do the final filtering yourself. That's a fair trade, but it's not a free ride.
+Most harmonic pattern indicators on TradingView sit at one of two extremes: eager enough to paint a butterfly on every three-bar pullback, or strict enough that a setup appears once a month. Auto Harmonic Patterns aims at the middle. Its own documentation frames the detector as a mapping tool rather than a signal service — it identifies formations, price zones and prior trend context, then keeps pattern status separate from the levels price has touched. That framing is worth taking literally, because the indicator makes you do the final filtering yourself.
 
 ## What it actually does
 
-The script scans price action for classic harmonic structures — Gartley, Bat, Butterfly, Crab, and the usual XABCD family — and draws the completed leg set with point labels, Fibonacci ratio annotations, and a projected reversal zone around the D point. When a structure completes inside its tolerance band, you get an alert. That's the whole mechanism. No repainting tricks, no "AI prediction" language, no buy/sell arrows pretending to be a system.
+The script scans for twelve harmonic patterns in bullish and bearish orientations: Gartley, Bat, Alt Bat, Butterfly, Crab, Deep Crab, Cypher, Shark, Nen Star, 5-0, ABCD and Three Drives. For each, it draws the formation with grouped labels, with individual details available in hovers. A Potential Reversal Zone (PRZ) marks the outer range of the pattern's price projections — the documentation is explicit that this is not necessarily their overlap and not a prediction of reversal.
 
-It's filed under Trend, which is a slight misnomer. Harmonics are mean-reversion tools by nature — you're trading the reaction off point D back toward B and C. Where the trend category does apply is the filtering: the better setups in my testing were the ones where the pattern pointed in the direction of the higher-timeframe trend, not against it.
+A Setup marker appears when a set of checks pass: D inside the PRZ, the applicable X boundary, a confirming close off D without already leaving the D-to-C band, and, when enabled, prior trend context. Setup describes those checks and nothing more — it is not a trade recommendation. Non-Setup patterns can remain visible on the chart but carry no Entry, Target or Stop levels. A table separates formation Status from Reached level touches.
+
+The timing behaviour is stated plainly in the source material: a completed pattern appears only after D confirms, the relevant swing-strength number of bars later, and is then drawn back to its earlier pivots. It was not available at D in real time. Optional forming patterns and projected D zones can change or disappear before completion.
 
 ## Detection quality and the settings that matter
 
-The defaults are usable but loose. Two inputs changed my results more than anything else:
+Swing strength controls pivot sensitivity, and an optional larger swing reading adds another scale on the same chart timeframe. Prior trend can use swing structure or a moving average. The detector compares confirmed swing-leg ratios against defined pattern ranges and your Ratio tolerance — that tolerance is the main lever on how permissive detection is, and the trend-context option is the main lever on which formations qualify as Setups.
 
-- **Error tolerance / ratio deviation.** Tighten this from the default to roughly 0.05–0.08 on the 4H. The D-point zone shrinks noticeably and you stop getting patterns that "sort of" qualify. On the daily I'd push it slightly looser, around 0.10, because daily swings rarely nail the 0.786 to the tick.
-- **Pattern selection.** Turn off the patterns you don't trade. Crab and Butterfly have wide D zones and produce more false completions than Gartley or Bat. If you're new to harmonics, run Gartley and Bat only for a month.
+Display modes are Standard, Detailed and Minimal: the first two enable triangle fill, Minimal hides it. Custom unlocks preset-controlled switches, with unused controls greyed out. Triangle transparency defaults to 60% and is adjustable from 0% solid to 100% invisible whenever fill is enabled; finished patterns lose their fill. PRZ and level-box shading are separate controls.
 
-One thing worth knowing: the indicator does not repaint completed patterns, but it *does* redraw the in-progress XABCD leg as price moves. If you're watching a forming pattern, treat the D projection as a zone, not a level. I got burned once treating a forming Bat's D as a hard limit — the leg extended, the pattern invalidated, and the label vanished. That's correct behavior, but it's a behavior you need to expect.
+Two behavioural notes matter more than any single setting. First, hover readouts expose the ratios and checks behind each drawing, so every pattern can be audited rather than trusted. Second, Family and orientation filters hide drawings only — they do not affect detection or pattern/lifecycle alerts. Projected-zone alerts are opt-in and require a drawn zone; level touches do not generate alerts.
 
-## How I traded it
+## How to read it
 
-The logic that worked:
+The documentation is careful about what the drawn levels mean, and it is worth repeating rather than paraphrasing away. Entry references the rounded confirmation close. Targets and Stop follow your settings. R means the C-to-D pattern distance, optionally ATR-capped — it is not Entry-to-Stop risk. These are configured geometry, not measured performance. A touch is not a fill and not a win or loss; when Target and Stop are touched within one bar, their order is unknown.
 
-1. Wait for the completed pattern alert. Do not front-run the D point.
-2. Check the higher timeframe. Long from a bullish Gartley only if the daily isn't in a clean downtrend.
-3. Entry on the first rejection candle inside the D zone — a wick, an engulfing close, whatever your trigger is.
-4. Stop beyond X. Not beyond D. Beyond X. If the pattern fails, it fails there, and that's where your invalidation lives.
-5. First target at point C, second at point B. The measured move back to B is where most of the edge is; holding past C for the full retracement dropped my win rate meaningfully.
+Optional sizing rounds down to whole units using the configured budget, the displayed Entry-to-Stop distance and the instrument point value. The budget must already be in the instrument's currency. No FX conversion, fees, slippage, fill modelling or combined-position exposure is included. Unsupported values show as unavailable.
 
-As the chart above shows, the completed structures cluster around swing extremes, which is exactly where you want a reversal tool firing. The MACD panel underneath is useful here — I only took D-point entries where momentum was already diverging against the prior leg. That single filter cut my losing trades more than any setting tweak.
+The intended chart type is standard time-based bars or candles. Available history, search settings and tracking limits affect coverage, and the script does not claim to be an exhaustive historical pattern catalogue.
 
 ## Pros and cons
 
 **Pros**
-- Clean XABCD labeling with visible ratio annotations — you can audit every pattern instead of trusting a black box
-- Adjustable tolerance, which most free harmonic scripts don't expose
-- Alerts fire on completion, not on formation, so you're not chasing ghosts
-- No repainting on confirmed patterns
-- Works across timeframes without needing separate versions
+- Twelve named patterns with grouped labels and hover detail, so ratios and checks are inspectable rather than hidden
+- A clearly defined PRZ with an explicit disclaimer about what it does and does not represent
+- Setup qualification is spelled out as a list of conditions, not a vague "signal"
+- Formation status and level touches are tracked separately
+- Free and open-source under MPL-2.0
 
 **Cons**
-- The in-progress leg redraws, and new users will get faked out by it
-- No built-in trend or volume filter — you supply that context yourself
-- Crab and Butterfly completions are noisy at default tolerance
-- Documentation is thin; you're reverse-engineering the ratio bands from the labels
-- The "Trend" categorization is misleading for anyone browsing by category
+- Completed patterns arrive after D confirms, so nothing is available at D in real time
+- Forming patterns and projected D zones can change or disappear
+- No trend or volume filter beyond the optional prior-trend context
+- Alerts do not fire on level touches, only on patterns, lifecycle events and — opt-in — projected zones
+- Documentation is thin on the practical side; the ratio bands have to be read off the labels
 
 ## Who it's for
 
-Discretionary swing traders who already understand harmonic ratios and want the drawing done for them. If you know what a 0.786 retracement means, this saves you 20 minutes of manual measuring per setup. If you don't, this indicator will generate confident-looking labels you can't evaluate, and you'll lose money politely.
+Discretionary swing traders who already understand harmonic ratios and want the drawing work done for them. The indicator supplies formation, zone and context; the entry, stop and target decisions remain yours, and the source material says as much. Traders without a working grasp of harmonic structure will get confident-looking labels they have no basis to evaluate.
 
-It is not for scalpers. On the 5-minute chart the tolerance bands are meaningless — spread and noise swallow the D zone entirely. And it's not for anyone wanting a turnkey signal; there are no arrows and no strategy tester hook.
+It is not a turnkey signal tool — there are no arrows and no strategy tester hook — and the sizing output is a calculation from configured inputs, not a modelled result.
 
 ## Alternatives
 
-If you want harmonics with a built-in trend filter, look at the Scott Carney-style scripts that gate patterns by EMA slope. If you want automated entries and backtesting, you're better off with a strategy-script version of harmonic detection — this is a visual tool, not a system. And if you just want reversal zones without the XABCD overhead, a plain Fibonacci retracement tool plus divergence does 80% of the job for free.
+If you want harmonics gated by a trend filter, look at scripts that gate patterns by moving-average slope. If you want automated entries and testing, a strategy-script version of harmonic detection is a better fit; this is a visual tool. And if you only want reversal zones without the XABCD overhead, a plain Fibonacci retracement tool covers much of the same ground.
 
 ## FAQ
 
-**Does Auto_Harmonic_Patterns_Afd repaint?**
-Completed patterns do not repaint. Forming patterns redraw the projected D point as price develops, which is expected but can mislead.
+**Does Auto Harmonic Patterns repaint?**
+Completed patterns appear only after D confirms, and the documentation states they were not available at D in real time. Optional forming patterns and projected D zones can change or disappear before completion.
 
 **What timeframe works best?**
-4H and daily. Below 1H the ratio tolerances produce too many marginal completions.
+The source material does not name a preferred timeframe. It specifies standard time-based bars or candles, and notes that available history, search settings and tracking limits affect coverage.
 
 **Does it give buy and sell signals?**
-No. It draws the pattern and fires a completion alert. Entry, stop, and target decisions are yours.
+No. It draws formations and marks Setup when a defined set of checks passes. Setup is described as those checks, not a trade recommendation, and non-Setup patterns carry no Entry, Target or Stop levels.
 
 **Is it free?**
-Check the current listing — pricing on community scripts changes, and the feature set here is closer to a solid free tool than a paid suite.
+Yes — free and open-source under MPL-2.0. The implementation is by Auction Foundry, combining Setup qualification, shared-D label handling and separate formation/level tracking.
 
 **Can I use it for crypto?**
-Yes, and it handles crypto's wider swings reasonably well on the 4H, though you'll want tolerance closer to 0.10.
+The source material does not address specific markets. It states that the detector compares confirmed swing-leg ratios with defined pattern ranges and your Ratio tolerance, and that sizing requires the budget to already be in the instrument's currency, with no FX conversion.
 
 ## Verdict
 
-Auto_Harmonic_Patterns_Afd does one job — finding and drawing harmonic structures — and does it without theatrics. The adjustable tolerance and honest labeling put it above most of the harmonic clutter on TradingView. What holds it back from five stars is the missing context layer: no trend filter, no volume confirmation, thin docs, and a redraw behavior that will cost beginners real money before they learn it. Bring your own filter and it's a genuinely useful swing tool.
+Auto Harmonic Patterns does one job — mapping harmonic formations, their price zones and prior trend context — and it is unusually candid about the limits of that job. The PRZ is labelled as a projection range rather than a reversal call, Setup is defined as a checklist rather than a signal, and the levels are described as configured geometry rather than measured performance. What holds it back is the context you have to supply yourself and the delayed nature of completion: the pattern is drawn back to pivots it already passed, and a forming structure can vanish before it ever completes. Bring your own filtering and it is a usable swing tool.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Recommended for traders who already speak harmonic, with a caveat for everyone else.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

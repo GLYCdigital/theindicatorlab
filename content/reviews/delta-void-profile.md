@@ -16,10 +16,10 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Delta Void Profile identifies price levels where aggressive buying or selling was absent. A niche tool for spotting hidden support/resistance, but limited in trending markets."
+grounding: "none (no source found)"
 ---
-
-**Verdict at a Glance:**  
-Delta Void Profile is a clever concept—it maps out price zones where delta (the difference between aggressive buys and sells) was near zero, meaning no one was willing to push price further. In theory, these "voids" act like liquidity gaps. In practice? It works best in range-bound markets, but falls apart in strong trends. A solid 3-star tool for scalpers and order-flow nerds, not for trend traders.
+**Verdict at a Glance:**
+Delta Void Profile is a clever concept—it maps out price zones where delta (the difference between aggressive buys and sells) was near zero, meaning no one was willing to push price further. In theory, these "voids" act like liquidity gaps. In practice, it works best in range-bound markets and falls apart in strong trends. A niche tool for scalpers and order-flow traders, not for trend traders.
 
 ---
 
@@ -27,62 +27,60 @@ Delta Void Profile is a clever concept—it maps out price zones where delta (th
 
 Most volume profile tools show you where trading happened. Delta Void Profile shows you where it *didn't* happen. It plots horizontal bands on the chart where cumulative delta (aggressive buyer volume minus seller volume) was flat or near zero over a defined lookback period. The idea: if price returns to a void zone, there's no structural support or resistance from prior aggressive activity—so price can slip through easily, or reverse sharply if it finds fresh liquidity.
 
-In the chart above, you can see the gray bands marking these voids. They cluster around consolidation areas and often coincide with low-volume nodes from traditional volume profile. But unlike VPVR, this indicator ignores total volume—it only cares about delta behavior.
+The gray bands mark these voids. They cluster around consolidation areas and often coincide with low-volume nodes from traditional volume profile. But unlike VPVR, this indicator ignores total volume—it only cares about delta behavior.
 
 ---
 
 ### Key Features That Set It Apart
 
 - **Delta-specific voids** – Most gap-finding tools use volume or price alone. This one filters through delta, which is a unique lens.
-- **Customizable lookback** – You can set the period (e.g., 50 bars) to calculate delta accumulation. Shorter lookbacks = more frequent, narrower voids.
-- **Adjustable sensitivity** – A "threshold" parameter controls how close to zero delta must be to qualify as a void. Lower values = stricter voids.
+- **Customizable lookback** – You can set the period used to calculate delta accumulation. Shorter lookbacks produce more frequent, narrower voids.
+- **Adjustable sensitivity** – A "threshold" parameter controls how close to zero delta must be to qualify as a void. Lower values mean stricter voids.
 - **Color coding** – Voids are shaded; darker shades indicate stronger voids (longer periods of zero delta).
 
 ---
 
-### Best Settings (Tested on 1H BTC/USD)
+### Settings and How to Tune Them
 
-After a week of testing on ES futures and crypto pairs:
-
-- **Lookback:** 20–30 bars (1H chart). Too high (100+) and voids become too broad to be actionable.
-- **Threshold:** 0.3–0.5. Below 0.3, you get almost no signals. Above 0.7, voids appear everywhere—noise.
-- **Show "Void Strength":** Enable. It adds a histogram below the chart showing void duration. Helps prioritize.
-- **Timeframe:** Works best on 5M–1H. On daily charts, voids are too rare.
+- **Lookback:** Controls how many bars are used to accumulate delta. Too high and voids become too broad to be actionable.
+- **Threshold:** Controls how close to zero delta must be for a zone to qualify. Very low values produce almost no signals; very high values make voids appear everywhere.
+- **Show "Void Strength":** Adds a histogram below the chart showing void duration, which can help prioritize zones.
+- **Timeframe:** Suited to intraday charts; on daily charts, voids are rare.
 
 ---
 
 ### How to Use It for Entries and Exits
 
-**Entry (mean reversion play):**  
-Wait for price to touch a void band from above or below. If price is approaching a void and delta starts diverging (e.g., price making new lows but delta flattening), that's a potential reversal zone. Enter with a stop 1–2 ticks beyond the void edge.
+**Entry (mean reversion play):**
+Wait for price to touch a void band from above or below. If price is approaching a void and delta starts diverging (e.g., price making new lows but delta flattening), that's a potential reversal zone. Enter with a stop just beyond the void edge.
 
-**Exit (continuation play):**  
-If price gaps through a void with increasing delta, the void acted as a liquidity pocket—price often accelerates. Trail your stop above/below the void band.
+**Exit (continuation play):**
+If price gaps through a void with increasing delta, the void acted as a liquidity pocket—price often accelerates. Trail your stop above or below the void band.
 
-**Avoid:**  
+**Avoid:**
 Don't fade a void in a strong trend. If price is ripping through voids without hesitation, the indicator is basically useless—it's just showing you where price already moved fast.
 
 ---
 
 ### Honest Pros and Cons
 
-**Pros:**  
+**Pros:**
 - Genuinely novel approach to identifying low-interest price zones.
-- Zero repaint (when used with confirmed bar close).
+- Zero repaint when used with confirmed bar close.
 - Complements existing order-flow tools (footprint, cumulative delta).
 
-**Cons:**  
-- No built-in alerts for void touches (you'll need to add a separate alert condition).
-- Useless in choppy, high-volume markets—voids overlap and lose meaning.
+**Cons:**
+- No built-in alerts for void touches (a separate alert condition is needed).
+- Less useful in choppy, high-volume markets—voids overlap and lose meaning.
 - Steep learning curve for traders new to delta concepts.
-- Only works well on liquid instruments (ES, NQ, BTC, major FX).
+- Works best on liquid instruments (ES, NQ, BTC, major FX).
 
 ---
 
 ### Who It's Actually For
 
-- **Order-flow junkies** who already use delta divergence and cumulative delta.
-- **Scalpers and intraday traders** on 5M–1H timeframes.
+- **Order-flow traders** who already use delta divergence and cumulative delta.
+- **Scalpers and intraday traders** on intraday timeframes.
 - **Not for:** Beginners, swing traders, or anyone trading low-volume stocks.
 
 ---
@@ -97,26 +95,24 @@ Don't fade a void in a strong trend. If price is ripping through voids without h
 
 ### FAQ
 
-**Q: Does Delta Void Profile repaint?**  
+**Q: Does Delta Void Profile repaint?**
 A: No, if you set it to "On Bar Close." In real-time, the void can expand on an incomplete bar—but it locks once the bar closes.
 
-**Q: Can I use it on crypto?**  
+**Q: Can I use it on crypto?**
 A: Yes, but only on exchanges with real order-book data (Binance, Bybit). On Coinbase, delta data is unreliable.
 
-**Q: Why are there no voids on my chart?**  
-A: Lower your threshold to 0.2 and reduce lookback to 15. If still nothing, the instrument might be too illiquid.
+**Q: Why are there no voids on my chart?**
+A: Lower your threshold and reduce lookback. If still nothing, the instrument might be too illiquid.
 
-**Q: Is this a standalone strategy?**  
+**Q: Is this a standalone strategy?**
 A: No. Use it as a filter for existing setups (e.g., only take long if price is above a void).
 
 ---
 
-**Final Verdict:**  
-Delta Void Profile is a niche tool that adds a fresh perspective to order-flow analysis. It won't replace your core strategy, but it can sharpen entries in the right conditions. Three stars—worth testing, not worth buying.
+**Final Verdict:**
+Delta Void Profile is a niche tool that adds a fresh perspective to order-flow analysis. It won't replace your core strategy, but it can sharpen entries in the right conditions. Worth testing, not worth buying.
 
 **Rating:** ⭐⭐⭐ (3/5)
-
----
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,80 +16,90 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe Chandelier Exit for trailing stops. Tests well on trends, but laggy in choppy markets. Best on 1H-4H with ATR multiplier 3."
+grounding: "none (no source found)"
 ---
+# Chandelier_Exit_Mtf Review
 
-I’ve run this Chandelier_Exit_Mtf through its paces on BTC, ES futures, and a few forex pairs. The multi-timeframe twist is what sets it apart from the standard Chandelier Exit, but it’s not a magic bullet. Here’s the raw take after dozens of trades.
+The Chandelier Exit is a well-known volatility-based trailing stop, and the "Mtf" variant adds a multi-timeframe twist: it lets you select a higher timeframe for the ATR calculation while still plotting on your current chart. That's the core differentiator from the standard version, and it's worth understanding before adopting it.
 
 ## What This Indicator Actually Does
 
-The Chandelier Exit is a volatility-based trailing stop. It plots a line either above or below price, using ATR to adjust for market noise. The "Mtf" version lets you select a higher timeframe for the ATR calculation while still plotting on your current chart. For example, you can see a 4H stop while trading on a 15-minute chart. This is useful for swing traders who want to avoid getting stopped out by intraday wiggles.
+The Chandelier Exit plots a line either above or below price, using ATR to adjust for market noise. The MTF version decouples the ATR timeframe from the chart timeframe, so you can, for example, reference a higher-timeframe stop while trading on a lower-timeframe chart. This is intended for swing traders who want to avoid getting stopped out by lower-timeframe wiggles.
 
-The line is red when the trend is bearish (stop above price) and green when bullish (stop below price). It repaints slightly as new ATR data comes in, but not aggressively—just the last bar’s value can shift.
+The line is red when the trend is bearish (stop above price) and green when bullish (stop below price). It can repaint slightly as new ATR data comes in, typically just the last bar's value.
 
 ## Key Features That Set It Apart
 
-- **Multi-timeframe ATR**: The real selling point. You choose the timeframe for ATR (e.g., 1H, 4H, 1D) and it applies that volatility to your current chart. This filters out noise from lower timeframes.
+- **Multi-timeframe ATR**: The main selling point. You choose the timeframe for ATR, and that volatility measure is applied to your current chart, filtering out noise from lower timeframes.
 - **Trailing stop logic**: Uses the highest high (long) or lowest low (short) over a lookback period, then subtracts ATR multiplied by a user-defined factor.
-- **Color-coded trend**: Green line below = uptrend, red line above = downtrend. Simple and clean.
+- **Color-coded trend**: Green line below price signals uptrend; red line above signals downtrend.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I tested ATR multipliers from 2 to 4 and lookback periods from 10 to 22. Here’s what worked:
+The indicator exposes a few parameters worth understanding:
 
-- **ATR Multiplier**: 3. Anything lower (2) gave too many false breaks in ranging markets. 4 was too loose for most moves.
-- **Lookback Period**: 20 bars. That balanced responsiveness with noise reduction.
-- **MTF Timeframe**: 1H for 15-minute chart, 4H for 1-hour chart. Using daily on a 15-minute chart made the stop too wide to be useful.
-- **Use Close**: I kept this off. Using close prices instead of high/low makes the stop less sensitive, which can miss trend changes.
+- **ATR Multiplier**: Controls how far the stop sits from price. Lower values produce a tighter stop that reacts faster but can be triggered by noise; higher values give the stop more room but trail further behind.
+- **Lookback Period**: The window used to find the highest high or lowest low. Shorter lookbacks are more responsive; longer lookbacks are smoother.
+- **MTF Timeframe**: The timeframe used for the ATR calculation. Choosing a timeframe close to your chart keeps the stop responsive; going much higher widens the stop considerably.
+- **Use Close**: Toggles whether close prices are used instead of high/low. Using close makes the stop less sensitive to intrabar extremes.
+
+There is no universally correct configuration here — the right values depend on the instrument's volatility and your holding period. The general principle is that the multiplier and lookback should be tuned together: a tighter multiplier paired with a longer lookback behaves differently than a loose multiplier with a short lookback.
 
 ## How to Use It for Entries and Exits
 
-This is a trailing stop, not an entry signal. Here’s how I used it:
+This is a trailing stop, not an entry signal. Typical usage:
 
-- **Exit**: When price closes below the green line in an uptrend, I exit long. For shorts, exit when price closes above the red line.
-- **Entry**: I only enter after the line flips color and price retests the stop level. Entering on the flip alone gets you faked out in choppy markets.
-- **Stop loss**: Place your stop 1 ATR below the Chandelier line to avoid getting clipped by the repaint.
+- **Exit**: When price closes below the green line in an uptrend, exit long. For shorts, exit when price closes above the red line.
+- **Entry**: Entering on the color flip alone tends to produce false signals in choppy markets; waiting for price to retest the stop level after a flip is a more conservative approach.
+- **Stop loss**: Placing the stop somewhat beyond the Chandelier line can help avoid getting clipped by the last-bar repaint.
 
-As the chart above shows, during a strong uptrend the green line holds well and lets profits run. But in sideways action, you’ll get whipsawed. I avoid using it in range-bound markets.
+In strong trends, the line holds well and lets profits run. In sideways action, expect whipsaws — the indicator is not designed for range-bound markets.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros**:
-- MTF feature genuinely reduces noise for swing traders.
-- Simple visual—no complex overlays.
-- Works well on trending instruments like indices and crypto.
+- The MTF feature can reduce noise for swing traders.
+- Simple visual — no complex overlays.
+- Suited to trending instruments such as indices and crypto.
 
 **Cons**:
-- Laggy. The stop always trails behind, so you give back a chunk of profit on reversals.
-- Repaint on the last bar can cause false exits if you act too early.
-- Useless in choppy markets—you’ll get stopped out repeatedly.
+- Laggy by design. The stop always trails behind, so reversals give back a portion of profit.
+- Repaint on the last bar can cause premature exits if acted on too early.
+- Prone to repeated stop-outs in choppy markets.
 
-## Who It’s Actually For
+## Who It's For
 
-Swing traders who hold positions for days to weeks. Day traders might find it too slow. Scalpers should skip it entirely. If you trade trends on 1H to 4H charts, this is a solid addition.
+Swing traders holding positions for days to weeks. Day traders may find it too slow. Scalpers should look elsewhere. If you trade trends on higher intraday timeframes, it can be a reasonable addition to an existing framework.
 
-## Better Alternatives If They Exist
+## Alternatives
 
-- **Standard Chandelier Exit (by everget)**: Simpler, no MTF, but less lag. Better for day trading.
-- **SuperTrend**: More responsive but noisier. Good for shorter timeframes.
-- **KAMA Trailing Stop**: Less lag, but more complex to set up.
+- **Standard Chandelier Exit (by everget)**: Simpler, no MTF, less lag. Better suited to day trading.
+- **SuperTrend**: More responsive but noisier.
+- **KAMA Trailing Stop**: Less lag, but more complex to configure.
 
-If you already use SuperTrend, this is a step up for trend-following on higher timeframes.
+## FAQ
 
-## FAQ Addressing Real Trader Questions
+**Does it repaint?** Yes, but typically only the last completed bar. Once a new bar opens, the value is generally fixed.
 
-**Does it repaint?** Yes, but only the last completed bar. Once a new bar opens, the value is fixed.
+**Can I use it for crypto?** Yes, though crypto's higher volatility may call for a looser ATR multiplier to avoid noise-driven stop-outs.
 
-**Can I use it for crypto?** Yes, but set the ATR multiplier to 3.5 or 4 to avoid the high volatility noise.
-
-**Does it work on 5-minute charts?** Not really. The MTF feature helps, but the lag is too much for fast scalping.
+**Does it work on very short timeframes?** The MTF feature helps, but the inherent lag makes it a poor fit for fast scalping.
 
 ## Final Verdict
 
-The Chandelier_Exit_Mtf is a solid trailing stop for swing traders who want to filter out noise from lower timeframes. It’s not perfect—it’s laggy and useless in ranges—but for trending markets, it keeps you in the move longer than most stops. If you’re a trend follower on 1H-4H, give it a shot. Otherwise, look elsewhere.
+The Chandelier_Exit_Mtf is a solid trailing stop for swing traders who want to filter out noise from lower timeframes. It's not perfect — it's laggy and ill-suited to ranges — but in trending markets it can keep you in the move longer than tighter stops. If you're a trend follower on higher intraday timeframes, it's worth a look. Otherwise, look elsewhere.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Does one thing well, but isn’t a complete system.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Does one thing well, but isn't a complete system.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Chandelier Exit** implementation was backtested on 30 markets over 5 years of daily data (44,037 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.6%** (50% = coin flip)
+- Strongest markets: USDJPY 57.4%, SPY 55.7%, AAPL 53.0%, MSFT 52.9%
+- Weakest markets: ETHUSD 46.0%, XRPUSD 44.5%, SHIBUSD 26.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -6,25 +6,23 @@ type: reviews
 image: "/screenshots/keltner-channels.png"
 rating: 4
 description: "Honest Keltner Channels review: settings, strategies, and real-world entry/exit tips for trend and breakout traders."
+grounding: "none (no source found)"
 ---
-
 **description:** "Honest Keltner Channels review: settings, strategies, and real-world entry/exit tips for trend and breakout traders."
 
 ---
 
-You’ve seen Keltner Channels on every other chart. But have you actually used them to take trades, or are they just another pair of squiggly lines you ignore?
-
-I ran this indicator through a month of live data—ES futures, BTCUSD, and a few forex pairs. Here’s what I found.
+You've seen Keltner Channels on every other chart. But are they actually used to take trades, or are they just another pair of squiggly lines traders learn to ignore?
 
 ## What this indicator actually does
 
-Keltner Channels are a volatility-based envelope. Unlike Bollinger Bands (which use standard deviation), Keltner uses ATR to set channel width. The result? The bands react to *actual price movement* rather than statistical noise.
+Keltner Channels are a volatility-based envelope. Unlike Bollinger Bands (which use standard deviation), Keltner uses ATR to set channel width. The bands react to actual price movement rather than statistical noise.
 
 The default TradingView version plots:
 - A middle line (typically a 20-period EMA)
 - Upper and lower bands (middle line ± ATR multiplier, default 2x)
 
-The bands contract during low volatility and expand during high volatility. That’s useful for spotting squeeze setups and riding breakouts.
+The bands contract during low volatility and expand during high volatility. That makes them useful for spotting squeeze setups and riding breakouts.
 
 ## Key features that set it apart from Bollinger Bands
 
@@ -33,63 +31,59 @@ The bands contract during low volatility and expand during high volatility. That
 - **Works on all timeframes** → 1min scalping to daily swing trades
 - **Clear trend bias** → middle EMA keeps you aligned with momentum
 
-The biggest practical difference? Bollinger Bands widen *after* a big move. Keltner Channels widen *as volatility increases*, giving you earlier warning.
+The biggest practical difference? Bollinger Bands widen *after* a big move. Keltner Channels widen *as volatility increases*, giving earlier warning.
 
-## Best settings with specific recommendations
+## Settings and How to Tune Them
 
-I tested three variations. Here’s what worked:
+The three parameters that matter are the period length, the ATR multiplier, and the price source.
 
-| Use Case | Period | ATR Multiplier | Source |
-|----------|--------|----------------|--------|
-| Trend following (1H+) | 20 | 2.0 | Close |
-| Scalping (5min–15min) | 10 | 1.5 | HLC3 |
-| Breakout trading (intraday) | 20 | 2.5 | Close |
+- **Period** controls how much smoothing the middle line applies. Shorter periods make the channel hug price more closely; longer periods make it slower and smoother.
+- **ATR multiplier** controls channel width. A larger multiplier produces wider bands that price reaches less often; a smaller multiplier produces tighter bands that price breaches more frequently.
+- **Source** determines which price feeds the calculation. The default is typically the close, but other price inputs can be substituted depending on the intent of the setup.
 
-**My go-to:** Period 20, Multiplier 2.0, Source = Close. This balances smoothness with responsiveness. Drop to 1.5x ATR if you’re trading tight ranges in FX.
+Common variations traders use: a shorter period with a tighter multiplier for faster intraday work, and a longer period with a wider multiplier for breakout scanning. There is no single combination that is objectively best — the right choice depends on the timeframe and the market being traded. The default 2x ATR multiplier can be too wide on low-volatility pairs.
 
 ## How to use it for entries and exits
-
-This is where most reviews get fluffy. Here’s the concrete playbook:
 
 **Trend continuation entry (long):**
 1. Price closes above upper band
 2. Middle EMA is sloping up
-3. Enter on the next candle’s retest of the upper band
+3. Enter on the next candle's retest of the upper band
 4. Stop: below the middle EMA
 
 **Breakout squeeze entry:**
-1. Bands contract to their narrowest in 20 bars
+1. Bands contract to their narrowest point
 2. Wait for the first close outside either band
 3. Enter in that direction
 4. Stop: opposite side of the channel
 
-**Exit rules I actually use:**
-- First touch of opposite band → take partial profit (50%)
+**Exit rules:**
+- First touch of opposite band → take partial profit
 - Middle EMA cross → exit the rest
-- If price hugs the band for 3+ bars → trail with a 2x ATR stop
+- If price hugs the band for multiple bars → trail with an ATR-based stop
 
 ## Honest pros and cons
 
 **Pros:**
 - Cleaner than Bollinger Bands in ranging markets
-- ATR-based bands don’t freak out on single big candles
+- ATR-based bands don't freak out on single big candles
 - Works across asset classes without re-tuning
-- The middle EMA gives you a built-in trend filter
+- The middle EMA gives a built-in trend filter
 
 **Cons:**
-- Laggy on fast breakouts (you’ll miss the first 1–2 bars)
+- Laggy on fast breakouts (the first bars of a move are missed)
 - Useless in tight ranges without a volatility expansion
 - The default 2x ATR can be too wide on low-volatility pairs like EURGBP
-- Doesn’t show overbought/oversold—don’t use it for mean reversion
+- Doesn't show overbought/oversold — don't use it for mean reversion
 
-## Who it’s actually for
+## Who it's actually for
 
 - **Trend traders** who want a dynamic stop placement tool
 - **Breakout traders** looking for volatility squeezes
 - **Swing traders** who need clean channel boundaries on daily charts
 - **NOT for** mean reversion scalpers or anyone trading congestion zones
 
-If you’re a counter-trend trader, stick with Bollinger Bands. Keltner will keep you out of good reversal setups.
+Counter-trend traders are better served by Bollinger Bands. Keltner will keep them out of good reversal setups.
 
 ## Better alternatives if they exist
 
@@ -97,31 +91,37 @@ If you’re a counter-trend trader, stick with Bollinger Bands. Keltner will kee
 - **Donchian Channels** → better for pure breakout systems, noisier
 - **Keltner + Bollinger combo** → overlay both; use Bollinger for extremes, Keltner for trend direction
 
-The combo strategy is actually worth testing: Buy when price breaks above Bollinger upper band *and* Keltner upper band simultaneously. Filter reduces false signals by ~30% in my backtesting.
+The combo approach is worth testing: buy when price breaks above the Bollinger upper band *and* the Keltner upper band simultaneously. The dual filter can reduce false signals.
 
 ## FAQ
 
-**Q: Should I use Keltner Channels alone?**  
-No. Pair it with volume or RSI divergence. Alone, it’s a trend tool, not a complete system.
+**Q: Should I use Keltner Channels alone?**
+No. Pair it with volume or RSI divergence. Alone, it's a trend tool, not a complete system.
 
-**Q: What’s the best timeframe?**  
+**Q: What's the best timeframe?**
 1H and above. Lower timeframes get whippy.
 
-**Q: Do the repaint?**  
-The built-in TradingView version does not repaint. Third-party copies might—check the code.
+**Q: Do they repaint?**
+The built-in TradingView version does not repaint. Third-party copies might — check the code.
 
-**Q: Can I automate it?**  
-Yes, Pine Script supports it natively. Easy to code entry/exit logic.
+**Q: Can I automate it?**
+Yes, Pine Script supports it natively. Entry/exit logic is straightforward to code.
 
 ## Final verdict
 
-Keltner Channels are a solid 4-star tool. They won’t replace your main strategy, but they’ll sharpen your entries and stop placement. Use them as a filter, not a standalone oracle.
+Keltner Channels are a solid tool. They won't replace a main strategy, but they can sharpen entries and stop placement. Use them as a filter, not a standalone oracle.
 
-If you only trade breakouts or trends, this is worth adding. If you’re a mean reversion trader, skip it.
+For breakout or trend traders, this is worth adding to the chart. Mean reversion traders can skip it.
 
-**Rating:** ⭐⭐⭐⭐ (4/5)
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **Keltner** implementation was backtested on 30 markets over 5 years of daily data (44,042 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.7%, AAPL 53.8%, QQQ 53.0%
+- Weakest markets: LTCUSD 45.6%, VIX 44.4%, SHIBUSD 28.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

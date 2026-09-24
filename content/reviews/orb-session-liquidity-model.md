@@ -16,77 +16,75 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of the Orb_Session_Liquidity_Model indicator. See tested settings, entry logic, pros/cons, and who should use it for session-based liquidity sweeps."
+grounding: "none (no source found)"
 ---
-Let me cut through the noise. The Orb_Session_Liquidity_Model is a trend-following tool that maps out liquidity zones based on a session's opening range break (ORB). Unlike many ORB indicators that just draw a box and call it a day, this one adds a liquidity model overlay—meaning it highlights where price is likely to sweep liquidity before continuing its trend. I’ve been running it on ES and NQ futures, and it’s a solid addition if you trade intraday breakouts.
+# Orb_Session_Liquidity_Model Review
+
+The Orb_Session_Liquidity_Model is a trend-following tool that maps liquidity zones around a session's opening range break (ORB). Where many ORB indicators stop at drawing a box, this one layers a liquidity model on top—highlighting areas where price may sweep resting liquidity before continuing in the direction of the trend. It is aimed at intraday breakout traders.
 
 ## What It Actually Does
 
-The indicator calculates the opening range of a session (you pick the timeframe—London, New York, Asian, or a custom one) and then projects liquidity levels above and below that range. The key difference? It doesn’t just mark the high and low. It identifies “liquidity gaps”—areas where stop losses cluster (above prior highs, below prior lows) and where price might wick before running. As the chart above shows, price often tags these levels, reverses, then continues in the original direction. That’s the sweet spot.
+The indicator calculates the opening range of a session and projects liquidity levels above and below that range. Rather than simply marking the session high and low, it identifies liquidity gaps—zones where stop losses are likely clustered above prior highs and below prior lows, and where price may wick before running. The core premise is that price often tags these levels, reverses, then continues in the original direction.
 
-## Key Features That Stand Out
+## Key Features
 
-- **Session flexibility**: You can set it for any session (default is NY 9:30–16:00 EST, but I’ve tweaked it for London open and Asian ranges). Each session gets its own color-coded zone.
-- **Liquidity projection**: It doesn’t stop at the range boundary. It projects “target liquidity zones” at 1.272 and 1.618 extensions of the opening range. This is where the real moves happen.
-- **Multi-timeframe capability**: You can overlay multiple sessions on the same chart. I use a 30-minute ORB for day structure and a 5-minute ORB for entries.
-- **Clean visuals**: Zones are semi-transparent rectangles. No cluttered lines. You can turn off labels if you want a cleaner chart.
+- **Session flexibility**: The indicator can be configured for different sessions, each rendered as its own color-coded zone.
+- **Liquidity projection**: It extends beyond the range boundary, projecting target liquidity zones at Fibonacci extensions of the opening range.
+- **Multi-timeframe capability**: Multiple sessions can be overlaid on the same chart, allowing a longer-range ORB to define structure while a shorter-range ORB is used for entries.
+- **Clean visuals**: Zones are drawn as semi-transparent rectangles rather than cluttered lines, and labels can be toggled off for a cleaner chart.
 
-## Best Settings I’ve Tested
+## Settings and How to Tune Them
 
-After about 50 trades using this, here’s what works:
+- **Session**: Defines which session the opening range is drawn from. The relevant consideration is choosing a session that aligns with the volume window you actually trade.
+- **Liquidity extensions**: Fibonacci extension levels of the opening range can be enabled or disabled individually. Traders typically keep the nearer extensions active and disable the furthest ones, since distant levels are less likely to be reached before a reversal.
+- **Show wick levels**: Marks the exact price of the opening range high/low wick, which is useful for stop placement.
+- **Breakout confirmation**: Can be set to require a candle close beyond the range rather than a simple price touch. The candle-close option is the more conservative setting and helps filter out false breakouts.
 
-- **Session**: New York (9:30–10:30 AM for a 1-hour ORB). That first hour has the most volume.
-- **Liquidity Extensions**: Enable 1.272 and 1.618. Disable 2.0—it’s too far and rarely gets hit before a reversal.
-- **Show Wick Levels**: On. This marks the exact price of the opening range high/low wick. Critical for stop placement.
-- **Breakout Confirmation**: Set to “Candle Close” (not “Price Touch”). Reduces false breakouts.
+## How to Trade With It
 
-I run it on a 15-minute chart for swing trades and a 5-minute chart for scalps. On the 5-minute, the 1.272 extension often acts as a reversal zone—price hits it, then retraces back into the range. Don’t chase that extension unless you have a trailing stop.
+**Bullish setup**: Price forms the range high, then breaks above it. Rather than buying the breakout immediately, wait for a retest of the breakout level. If price holds, enter long with a stop below the range low, targeting the first extension. If price pushes through that level, the next extension becomes the objective, with a trailing stop.
 
-## How to Actually Trade With It
+**Bearish setup**: The same logic inverted—break below the range low, retest, short, and target the extensions in sequence.
 
-**Bullish setup**: Price opens, forms the range high. Wait for a breakout above that high. Then, instead of buying immediately, wait for a retest of the breakout level. If price holds, enter long with a stop below the range low. Target the 1.272 extension. If price smashes through that, let it run to 1.618, but trail your stop.
+**The liquidity sweep**: If price breaks above the range high and then immediately reverses and closes back below it, that is a liquidity grab. The setup is to short the reversal with a stop above the wick.
 
-**Bearish setup**: Same logic inverted. Break below range low, retest, short. Target 1.272, then 1.618.
+## Pros and Cons
 
-**The liquidity sweep**: This is where the indicator earns its keep. If price breaks above the range high, then immediately reverses and closes below the range high, that’s a “liquidity grab.” Short that reversal with a stop above the wick. I’ve caught some beautiful 2:1 RR trades this way.
+**Pros:**
+- Identifies specific price levels where liquidity sits, rather than arbitrary support and resistance.
+- Works across multiple timeframes and instruments, including futures, forex, and crypto.
+- Encourages patience—entries only trigger when price interacts with the defined zones.
 
-## Pros & Cons
+**Cons:**
+- Lagging on very low timeframes, where the zones form too slowly for scalpers.
+- Can repaint when breakout confirmation is set to price touch rather than candle close.
+- No alerts for liquidity sweeps; the chart has to be watched manually.
 
-**Pros**:  
-- Identifies specific price levels where liquidity sits (not just arbitrary support/resistance).  
-- Works across multiple timeframes and instruments (futures, forex, crypto).  
-- Reduces overtrading—you only act when price interacts with these zones.
+## Who It's For
 
-**Cons**:  
-- Lagging on lower timeframes. On a 1-minute chart, the zones form too slowly for scalpers.  
-- Can repaint if you use “Price Touch” instead of “Candle Close.” Be careful.  
-- No alerts for liquidity sweeps—you have to watch the chart. That’s a miss.
+This is built for intraday momentum traders who trade breakouts and are comfortable waiting for confirmation. Futures and major forex pairs are the natural fit. It is not suited to position traders holding overnight, since the zones reset each session.
 
-## Who It’s For
-
-This is for **intraday momentum traders** who trade breakouts and don’t mind waiting for confirmation. If you trade futures (ES, NQ, YM) or forex pairs like EURUSD, you’ll get the most out of it. It’s not for position traders holding overnight—the zones reset each session.
-
-**Avoid it if**: You scalp on 1-minute charts, trade purely on price action without levels, or need automated alerts.
+**Avoid it if** you scalp on 1-minute charts, trade purely on price action without levels, or need automated alerts.
 
 ## Alternatives
 
-- **Opening Range Breakout by LuxAlgo**: More features (volume profile, auto-Fib levels) but heavier on resources. Better for multi-session analysis.  
-- **Session VWAP + ORB by QuantNomad**: Combines VWAP with ORB. Better for mean reversion traders.  
-- **Liquidity Voids by Unjuno**: Focuses on gaps between order blocks. Better if you want pure liquidity mapping without session constraints.
+- **Opening Range Breakout by LuxAlgo**: More features, including volume profile and auto-Fib levels, but heavier on resources.
+- **Session VWAP + ORB by QuantNomad**: Combines VWAP with ORB; better suited to mean-reversion traders.
+- **Liquidity Voids by Unjuno**: Focuses on gaps between order blocks; better for pure liquidity mapping without session constraints.
 
 ## FAQ
 
-**Does it work for crypto?** Yes. I tested it on BTCUSDT and ETHUSDT. The 1-hour ORB works well for crypto’s 24/7 nature. Just set a custom session to match high-volume periods (e.g., 0–8 UTC for Asian crypto volume).
+**Does it work for crypto?** The session model can be adapted to crypto's 24/7 nature by defining a custom session that matches high-volume periods.
 
-**Can I use it for multiple sessions on one chart?** Yes. I run NY and London sessions simultaneously. Just be careful—the zones can overlap and get noisy. I hide labels for the secondary session.
+**Can I use it for multiple sessions on one chart?** Yes, though overlapping zones can become noisy. Hiding labels on the secondary session helps.
 
-**Does it repaint?** Only if you use “Price Touch” for breakout confirmation. Set it to “Candle Close” and it’s fixed.
+**Does it repaint?** It can when breakout confirmation is set to price touch. Setting confirmation to candle close avoids this.
 
 ## Final Verdict
 
-Orb_Session_Liquidity_Model is a **solid 4/5** indicator. It does one thing—map session liquidity zones—and does it well. It’s not a holy grail (no indicator is), but if you pair it with a solid risk management plan and a clean trend filter (I use a 200 EMA on the 15-minute), it can give you a real edge. The lack of alerts is frustrating, but the visual clarity makes up for it. Download it, set it up on a 15-minute ES chart, and watch for those sweeps. You’ll see the pattern within a week.
+Orb_Session_Liquidity_Model does one thing—map session liquidity zones—and does it well. It is not a complete trading system on its own, but paired with disciplined risk management and a trend filter it can serve as a useful structural tool. The lack of alerts is a real limitation for anyone who cannot sit in front of the chart, but the visual clarity of the zones compensates for it.
 
 **Rating**: ⭐⭐⭐⭐
----
 
 ## Go Deeper with The Indicator Lab
 

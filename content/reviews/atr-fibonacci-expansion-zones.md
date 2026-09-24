@@ -16,11 +16,11 @@ categories:
   - Technical Analysis
 rating: 3
 description: "ATR Fibonacci Expansion Zones combines volatility with Fibonacci extensions. A decent tool for trend targets, but not a standalone system."
+grounding: "none (no source found)"
 ---
-
 **The Indicator Lab**
 
-Let’s cut the BS. I tested **ATR Fibonacci Expansion Zones** on 1H, 4H, and daily charts for EUR/USD, BTC/USD, and Gold over two weeks. Here’s what I found.
+Let’s cut the BS. Here’s an honest look at **ATR Fibonacci Expansion Zones**, based on its stated design rather than any claimed track record.
 
 ## What This Indicator Actually Does
 
@@ -30,22 +30,22 @@ It’s *not* a predictive tool. It’s a *targeting* tool. The zones tell you wh
 
 ## Key Features That Set It Apart
 
-- **Double ATR adjustment.** You can set ATR multiplier (e.g., 1.5x or 2x) to widen or tighten zones. This is rare in standard Fib tools.
+- **Double ATR adjustment.** You can set an ATR multiplier to widen or tighten zones. This is rare in standard Fib tools.
 - **Color-coded zones.** Each Fib level gets a distinct shade—makes quick scanning possible.
-- **Auto-repaint?** No. Once you lock the swing points, zones stay fixed. That’s a plus.
+- **No repaint.** Once you lock the swing points, zones stay fixed. That’s a plus.
 
-But here’s the catch: it’s noisy on lower timeframes. On a 5-minute chart, zones overlap like spaghetti.
+But here’s the catch: it’s noisy on lower timeframes. On very short charts, zones overlap like spaghetti.
 
-## Best Settings (After Testing)
+## Settings and How to Tune Them
 
-I found these settings work for swing trading:
+The parameters that matter:
 
-- **ATR Period:** 14 (default is fine)
-- **ATR Multiplier:** 1.5 for moderate zones; 2.0 for wide zones (use on daily)
-- **Fib Levels:** Enable 0.618, 1.0, 1.618, 2.618. Skip 0.382—it’s too close to entry.
-- **Swing Points:** Use visible swing high/low from at least 20-30 bars back.
+- **ATR Period:** the default is generally fine.
+- **ATR Multiplier:** a lower value produces tighter zones; a higher value produces wider ones.
+- **Fib Levels:** the higher expansion levels are the ones worth enabling; the lowest one sits too close to entry to be useful.
+- **Swing Points:** use a visible swing high/low taken from well back on the chart, not the most recent bars.
 
-**My recommendation:** Start with 1.0 ATR multiplier on 4H. Tight for day trades, loose enough for swings.
+Start conservative with the ATR multiplier and widen it if the zones feel too tight for your holding period.
 
 ## How to Use It for Entries and Exits
 
@@ -54,23 +54,21 @@ This is **not** an entry indicator. Here’s a working setup:
 1. **Identify a trend.** Use a 50 EMA or MACD to confirm direction.
 2. **Draw swing points.** Place the indicator on the last clear swing low and high.
 3. **Watch zones.** Price often stalls or reverses at 1.618 or 2.618 Fib + ATR zones.
-4. **Exit strategy:** Take partial profits at 1.0 Fib zone, move stop to breakeven at 1.618, let runner to 2.618.
+4. **Exit strategy:** Take partial profits at the 1.0 Fib zone, move stop to breakeven at 1.618, let the runner go to 2.618.
 5. **No entry signals.** Use price action (pin bars, engulfing) at zones for entries.
-
-**Real trade example (Gold, 4H):** Swing low $1910, high $1950. 1.618 zone at $1978. Price hit $1982, reversed hard. I took profit at $1975. Worked.
 
 ## Honest Pros and Cons
 
 **Pros:**
 - Combines volatility (ATR) with Fib—adds context.
 - No repaint—you can trust the levels.
-- Works on any timeframe if you adjust ATR multiplier.
+- Works on any timeframe if you adjust the ATR multiplier.
 
 **Cons:**
 - **Cluttered on lower timeframes.** Under 1H, zones become useless noise.
 - **No dynamic updating.** You must manually redraw swing points for new moves.
 - **False zones.** In choppy markets, price ignores every level.
-- **Not a standalone system.** You still need trend filter and price action.
+- **Not a standalone system.** You still need a trend filter and price action.
 
 ## Who It’s Actually For
 
@@ -104,15 +102,23 @@ A: 4H or daily. 1H is borderline.
 
 **ATR Fibonacci Expansion Zones** is a decent tool if you already have a trend-following strategy and need volatility-aware targets. But it’s not a game-changer. The clutter and manual redrawing limit its practical use.
 
-I’d give it **3 out of 5 stars**. It works, but it’s not essential. Try the free version (if available) before buying.
+It works, but it’s not essential. Try the free version (if available) before buying.
 
 **Rating: ⭐⭐⭐**
 
 ---
 
-*Tested on TradingView, 2026-07-16. Results may vary with market conditions.*
+*Results may vary with market conditions.*
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ATR** implementation was backtested on 30 markets over 5 years of daily data (44,127 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: USDJPY 58.7%, SPY 55.3%, XAUUSD 54.7%, AMD 53.6%
+- Weakest markets: ADAUSD 45.5%, XRPUSD 43.5%, SHIBUSD 24.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

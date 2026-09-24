@@ -16,76 +16,86 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Parabolic_Sar_Macd_Combo review. Tests PSAR and MACD combo for trend entries, exits, and false signal filters. Settings included."
+grounding: "none (no source found)"
 ---
-I’ve seen a lot of trend-following indicators, and most are either too noisy or too laggy. The Parabolic_Sar_Macd_Combo tries to solve that by stitching together two classics: Parabolic SAR and MACD. I put it through its paces on BTC/USD and EUR/USD over the past few months. Here’s the real story.
+# Parabolic_Sar_Macd_Combo Review
+
+Trend-following indicators tend to fall into two camps: too noisy or too laggy. The Parabolic_Sar_Macd_Combo attempts to address that by combining two classics—Parabolic SAR and MACD—into a single confirmation system. Here's what it does and where it fits.
 
 ### What It Actually Does
 
-This indicator plots Parabolic SAR dots directly on the price chart, but it also overlays MACD histogram bars and a signal line in a separate pane. The combo isn’t just visual—it generates buy/sell alerts when both tools align. For instance, a green dot appears when PSAR flips above price and MACD crosses above its signal line. Red dots trigger the opposite. It’s a basic confirmation system: two signals are better than one.
+The indicator plots Parabolic SAR dots directly on the price chart and overlays MACD histogram bars with a signal line in a separate pane. The combination isn't purely visual: it generates buy/sell alerts when both tools align. A green dot appears when PSAR flips above price and MACD crosses above its signal line. Red dots trigger the opposite. It's a basic confirmation framework built on the idea that two signals are better than one.
 
-### Key Features That Stand Out
+### Key Features
 
-- **Alert integration**: You can set push notifications for combo signals. That’s rare for a free script—most require manual monitoring.
-- **Customizable inputs**: PSAR step (0.02) and max (0.2) are default, but you can tweak them. MACD fast, slow, and signal lengths (12, 26, 9) are adjustable too.
-- **Visual clarity**: The dots are color-coded (green/red), and the MACD histogram uses the same scheme. No clutter—just what you need.
+- **Alert integration**: Combo signals can trigger push notifications, which is uncommon for a free script—most require manual monitoring.
+- **Customizable inputs**: PSAR step and max are adjustable, as are the MACD fast, slow, and signal lengths.
+- **Visual clarity**: The dots are color-coded green/red, and the MACD histogram uses the same scheme. Minimal clutter.
 
-### Best Settings I Tested
+### Settings and How to Tune Them
 
-After a week of backtesting, here’s what worked:
+The script exposes the standard PSAR step and max parameters alongside the MACD fast, slow, and signal lengths. All are user-adjustable.
 
-- **PSAR**: Step 0.025, Max 0.25. Default 0.02/0.2 gives too many flips in ranging markets. Slightly higher step smooths it out.
-- **MACD**: Keep defaults (12, 26, 9) for daily charts. For 1H or lower, try fast 8, slow 17, signal 7 to reduce lag.
-- **Signal filter**: Enable the “Trend Filter” in settings (if available in your version)—it checks if price is above a 200 EMA. That cut my false signals by 40%.
+Tuning is a trade-off. Raising the PSAR step reduces flips in ranging conditions but makes the stop-and-reverse behavior less responsive. On MACD, shorter lengths reduce lag on lower timeframes but increase sensitivity to noise. If your version includes a trend filter that checks price against a longer moving average, enabling it can cut down on signals taken against the prevailing trend—but availability varies by version, so check the inputs panel before assuming it's there.
+
+No specific parameter combination is universally "best." The right values depend on the instrument's volatility and the timeframe you trade.
 
 ### How to Use It (Entry/Exit Logic)
 
-I tested three strategies. Only one felt solid:
+A straightforward approach:
 
-**The Combo Breakout**  
-Wait for a green dot + MACD histogram turning positive AND crossing above signal line simultaneously. Enter long at next bar open. Stop-loss: low of the last PSAR dot before the signal. Target: 2x risk or when red dot appears. On EUR/USD 4H, this caught a 120-pip move in June without whipsaws.
+**The Combo Breakout**
+Wait for a green dot plus the MACD histogram turning positive and crossing above its signal line at the same time. Enter long at the next bar open. A logical stop is the low of the last PSAR dot before the signal. Targets can be set at a fixed multiple of risk or on the appearance of a red dot.
 
-**Avoid this**  
-Don’t take signals during low volatility (ATR under 10 on 1H). The combo will flip repeatedly, and you’ll bleed spreads. I lost 3 consecutive trades on GBP/JPY by ignoring that.
+**When to stand aside**
+Signals taken during low-volatility conditions tend to flip repeatedly, and the spread costs add up. Filtering by an ATR threshold or a trend filter helps avoid these environments.
 
 ### Pros & Cons
 
-**Pros**  
-- Reduces false entries by 60% compared to standalone PSAR  
-- Free and fully adjustable  
-- Works on all timeframes, though 4H+ is best  
+**Pros**
+- Combines two indicators into one confirmation signal, reducing the manual work of aligning them
+- Free and fully adjustable
+- Adaptable across timeframes, though higher timeframes tend to suit trend-following logic better
 
-**Cons**  
-- Still lags in choppy markets—no indicator solves that  
-- MACD cross can be slow on lower timeframes (1m-15m)  
-- No built-in stop-loss calculation (you need to add your own)
+**Cons**
+- Still lags in choppy markets—no indicator solves that
+- MACD crosses can be slow on very low timeframes
+- No built-in stop-loss calculation; you supply your own
 
-### Who It’s For
+### Who It's For
 
-This is for swing traders and position traders who hate staring at charts all day. The alerts mean you can set it and check once per session. Scalpers should skip it—the lag will kill your edge. If you already use MACD and PSAR separately, this saves you the headache of aligning them manually.
+Swing and position traders who prefer not to watch charts continuously. The alert system means you can check in once per session rather than monitor every bar. Scalpers are likely to find the lag works against them. If you already use MACD and PSAR separately, this saves the effort of aligning them manually.
 
 ### Alternatives
 
-- **SuperTrend + MACD**: Faster signals, but more whipsaws. Good for day trading.  
-- **TMA True**: Less laggy than PSAR, but requires more tweaking.  
-- **Standalone PSAR**: Simpler, but you miss the MACD filter. Only use if you’re a pure trend follower.
+- **SuperTrend + MACD**: Faster signals, but more whipsaws. Suited to day trading.
+- **TMA True**: Less laggy than PSAR, but requires more tuning.
+- **Standalone PSAR**: Simpler, but you lose the MACD filter. Only suitable for a pure trend-following approach.
 
 ### FAQ
 
-**Can I use this for crypto?**  
-Yes. I tested on BTC/USD 4H and it caught the July rally from $58k to $63k. Just increase PSAR step to 0.03 for crypto’s higher volatility.
+**Can I use this for crypto?**
+Yes. Crypto's higher volatility generally calls for a wider PSAR step so the indicator doesn't flip on every swing.
 
-**Does it repaint?**  
-No. PSAR and MACD are non-repainting. The dots stay fixed once printed. That’s a big plus.
+**Does it repaint?**
+PSAR and MACD are generally considered non-repainting indicators—once a dot prints, it stays printed. Confirm this behavior on your own chart before relying on it for alerts.
 
-**What timeframes are best?**  
-Daily and 4H. On 1H, it’s okay but expect more false signals during news events.
+**What timeframes are best?**
+Higher timeframes tend to produce cleaner trend signals. On lower timeframes, expect more false signals, especially around news events.
 
 ### Final Verdict
 
-Parabolic_Sar_Macd_Combo earns a solid 4 out of 5 stars. It’s not revolutionary, but it’s a reliable tool that does exactly what it promises: filter noise with two proven indicators. If you’re tired of manual alignment or chasing false PSAR flips, install it. Just don’t expect miracles in sideways markets—nothing works there. Use it with a trend filter, and it’ll pay for itself in saved headaches.
+Parabolic_Sar_Macd_Combo isn't revolutionary, but it's a functional tool that does what it promises: filter noise by requiring two proven indicators to agree. If you're tired of manual alignment or chasing false PSAR flips, it's worth a look. Just don't expect miracles in sideways markets—nothing works there. Pair it with a trend or volatility filter and it earns its place in a swing-trading toolkit.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Parabolic SAR** implementation was backtested on 30 markets over 5 years of daily data (44,651 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 56.7%, EURUSD 54.5%, GBPUSD 54.4%, AMD 53.6%
+- Weakest markets: LTCUSD 46.3%, VIX 45.4%, SHIBUSD 30.5%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

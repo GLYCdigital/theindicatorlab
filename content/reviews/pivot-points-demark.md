@@ -16,38 +16,37 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Demark Pivot Points review: How Tom DeMark’s sequential formula predicts support/resistance. Settings, entry/exit rules, and honest pros vs cons."
+grounding: "none (no source found)"
 ---
-
 **Final Verdict: ⭐⭐⭐⭐ (4/5) — A solid, logic-driven alternative to classic pivot points, but not a magic bullet.**
 
 ---
 
 ## What This Indicator Actually Does
 
-If you've used standard pivot points (floor, Fibonacci, Woodie), you know they’re all based on the *previous* day’s high, low, and close. The Demark method flips the script. Instead of using raw price, it applies Tom DeMark’s sequential logic to project support and resistance levels based on the **relationship between open, close, and prior close**.
+If you've used standard pivot points (floor, Fibonacci, Woodie), you know they're all based on the *previous* day's high, low, and close. The Demark method flips the script. Instead of using raw price, it applies Tom DeMark's sequential logic to project support and resistance levels based on the **relationship between open, close, and prior close**.
 
-The indicator plots up to three resistance levels (R1, R2, R3) and support levels (S1, S2, S3), plus a central pivot. On the chart above, you can see the levels auto-update at each new session. They don’t repaint — once a level is set, it sticks.
+The indicator plots up to three resistance levels (R1, R2, R3) and support levels (S1, S2, S3), plus a central pivot. The levels update at each new session.
 
-The key difference? Demark levels are **dynamic relative to price action**. If the market opens with a gap, the formula adjusts. Classic pivots don’t.
+The key difference? Demark levels are **dynamic relative to price action**. If the market opens with a gap, the formula adjusts. Classic pivots don't.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **Conditional formula:** If close < open, the pivot uses a different calculation than if close > open. This means the levels react to intraday sentiment, not just yesterday’s range.
-- **No repaint:** Levels are fixed once the daily candle closes. No second-guessing.
+- **Conditional formula:** If close < open, the pivot uses a different calculation than if close > open. This means the levels react to intraday sentiment, not just yesterday's range.
 - **Clean output:** Just six levels and a pivot line. No clutter, no alerts, no moving averages.
 - **Auto-adjusts for gaps:** Unlike floor pivots, Demark handles overnight gaps without throwing off the numbers.
 
 ---
 
-## Best Settings
+## Settings and How to Tune Them
 
-The indicator has no user-configurable inputs in its standard form. That’s both a pro and con. You get what you get.
+The indicator has no user-configurable inputs in its standard form. That's both a pro and con. You get what you get.
 
 **Recommendations:**
-- **Timeframe:** Works best on **daily or weekly** charts. On lower timeframes (1H, 30m), the levels become noise because the formula is designed for session-based trading.
-- **Pair with:** A momentum oscillator (RSI, Stoch) to confirm entries near levels. Demark alone doesn’t tell you *when* to buy or sell — it only tells you *where*.
+- **Timeframe:** The formula is built for session-based trading, so it fits daily or weekly charts. On intraday timeframes, the levels tend to lose meaning.
+- **Pair with:** A momentum oscillator (RSI, Stoch) to confirm entries near levels. Demark alone doesn't tell you *when* to buy or sell — it only tells you *where*.
 - **Avoid on:** Crypto or 24/7 markets unless you manually define sessions. The indicator assumes a defined open/close cycle.
 
 ---
@@ -68,7 +67,7 @@ The indicator has no user-configurable inputs in its standard form. That’s bot
 - Price closes beyond R3 → trend day. Ride momentum until first sign of exhaustion.
 - Price closes below S3 → breakdown. Look for continuation.
 
-**What the chart above shows:** Notice how price repeatedly bounced off S1 during last week’s session. A trader who bought at S1 with a stop at S3 would have caught a clean 1.5R move.
+**What the chart above shows:** Notice how price repeatedly bounced off S1 during last week's session.
 
 ---
 
@@ -76,23 +75,22 @@ The indicator has no user-configurable inputs in its standard form. That’s bot
 
 **Pros:**
 - More adaptive than classic pivot points — the conditional logic actually makes sense for trending vs. ranging days.
-- No repaint, no lag. Levels are fixed once calculated.
 - Simple. One glance and you know the key zones.
 
 **Cons:**
-- **Not configurable.** You can’t change the calculation period, number of levels, or visual style. That’s annoying for power users.
-- **Worst in choppy markets.** When price oscillates between S1 and R1 without breaking, the levels lose meaning — you’re just watching noise.
-- **Requires defined sessions.** Works great on forex (24h but with clear opens/closes) but terrible on crypto without manual session setup.
-- **No alerts built-in.** You’ll need to set your own price alerts.
+- **Not configurable.** You can't change the calculation period, number of levels, or visual style. That's annoying for power users.
+- **Worst in choppy markets.** When price oscillates between S1 and R1 without breaking, the levels lose meaning — you're just watching noise.
+- **Requires defined sessions.** Works on forex (24h but with clear opens/closes) but poorly on crypto without manual session setup.
+- **No alerts built-in.** You'll need to set your own price alerts.
 
 ---
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Swing traders** who trade daily or weekly sessions.
 - **Forex and futures traders** with clearly defined market opens.
-- **Traders who hate repainting indicators** and want fixed, logic-based levels.
-- **Not for**: Scalpers, crypto traders, or anyone who wants a “set and forget” system.
+- **Traders who want fixed, logic-based levels.**
+- **Not for**: Scalpers, crypto traders, or anyone who wants a "set and forget" system.
 
 ---
 
@@ -106,27 +104,34 @@ The indicator has no user-configurable inputs in its standard form. That’s bot
 
 ## FAQ
 
-**Q: Does this indicator repaint?**  
-A: No. Levels are fixed once the daily candle closes.
-
-**Q: Can I use it on crypto?**  
+**Q: Can I use it on crypto?**
 A: Yes, but only if you define a session start/end time. The indicator assumes a 24h cycle, so it works best on daily charts.
 
-**Q: Why are the levels different from standard pivots?**  
-A: Demark uses a conditional formula based on open vs. close. Classic pivots use (H+L+C)/3. They’re different animals.
+**Q: Why are the levels different from standard pivots?**
+A: Demark uses a conditional formula based on open vs. close. Classic pivots use (H+L+C)/3. They're different animals.
 
-**Q: What’s the best timeframe?**  
-A: Daily or weekly. Lower timeframes produce unreliable levels.
+**Q: What's the best timeframe?**
+A: The formula is session-based, so daily and weekly charts are the natural fit. Lower timeframes produce unreliable levels.
 
 ---
 
 ## Final Verdict
 
-Demark Pivot Points won’t make you a millionaire overnight. But if you understand its logic — and pair it with a momentum filter — it’s a solid tool for identifying high-probability support/resistance zones. It’s not the best pivot system out there, but it’s better than default floor pivots for adaptive traders.
+Demark Pivot Points won't make you a millionaire overnight. But if you understand its logic — and pair it with a momentum filter — it's a solid tool for identifying support/resistance zones. It's not the best pivot system out there, but it's better than default floor pivots for adaptive traders.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
 ---
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **EMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 57.8%, XAUUSD 56.8%, AVAXUSD 54.8%, META 54.3%
+- Weakest markets: LINKUSD 45.6%, VIX 41.8%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

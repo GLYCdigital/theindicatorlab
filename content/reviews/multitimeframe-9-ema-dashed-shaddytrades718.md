@@ -16,82 +16,96 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Review of the Multitimeframe_9_Ema_Dashed indicator: settings, strategy, pros/cons, and whether it's worth adding to your charts."
+grounding: "none (no source found)"
 ---
-Let’s be real: there are a hundred EMA-based indicators on TradingView, and most of them are just repainted noise. The **Multitimeframe_9_Ema_Dashed_Shaddytrades718** is not that. It’s a clean, no-nonsense tool that plots the classic 9 EMA across three different timeframes on a single chart—all as dashed lines. I’ve been testing it on BTCUSD and EURUSD, and here’s what I actually found.
+# Multitimeframe_9_Ema_Dashed_Shaddytrades718 Review
+
+There are countless EMA-based indicators on TradingView, and a large share of them add little beyond clutter. The **Multitimeframe_9_Ema_Dashed_Shaddytrades718** takes a different approach: it plots the classic 9 EMA across three separate timeframes on a single chart, all rendered as dashed lines. The concept is narrow, and that narrowness is the point.
 
 ## What It Actually Does
 
-This indicator takes the 9-period Exponential Moving Average from three separate timeframes (defaults are 5m, 15m, and 1h) and overlays them on your current chart as dashed lines. Each line is color-coded: one for the fast (lower) timeframe, one for the intermediate, and one for the slower (higher) timeframe. The dashed style makes it easy to distinguish from any solid EMAs you might already have.
+The indicator pulls the 9-period Exponential Moving Average from three distinct timeframes and overlays them on the current chart as dashed lines. Each line is color-coded so you can tell the fast, intermediate, and slow timeframes apart at a glance. The dashed styling is deliberate—it separates these lines from any solid EMAs you may already have on the chart.
 
-The core idea is simple: you get a multi-timeframe trend snapshot without switching tabs. If the 1h 9 EMA is sloping up and price is above it, the macro trend is bullish—even if the 5m line is choppy.
+The underlying idea is straightforward: you get a multi-timeframe trend snapshot without switching tabs. If the slowest timeframe's 9 EMA is sloping up and price is above it, the macro trend reads bullish, even when the fastest line is choppy.
 
-## Key Features That Stand Out
+## Key Features
 
-- **Three timeframes, one pane.** You set the base timeframe in the indicator settings (e.g., 5m, 15m, 1h), and it calculates the 9 EMA for each. No repainting—it uses standard close-based EMA formulas.
-- **Dashed lines for clarity.** The visual separation from solid EMAs is a small but huge quality-of-life improvement. On a busy chart, you can instantly spot which line belongs to which timeframe.
-- **Customizable colors and line widths.** You can tweak each EMA’s color, thickness, and even hide lines you don’t need. I’ve found that making the slowest timeframe line thicker and the fastest one thinner helps readability.
-- **No bloat.** There are no alerts, no buy/sell arrows, no cloud fills. It’s pure EMA lines. Some traders will love the simplicity; others might want more.
+- **Three timeframes, one pane.** The base timeframes are configurable in the settings, and the indicator calculates a 9 EMA for each, using standard close-based EMA formulas.
+- **Dashed lines for clarity.** The visual separation from solid EMAs is a small quality-of-life improvement that matters on a busy chart, where you can instantly tell which line belongs to which timeframe.
+- **Customizable colors and line widths.** Each EMA's color, thickness, and visibility can be adjusted, so you can hide lines you don't need.
+- **No bloat.** There are no alerts, no buy/sell arrows, and no cloud fills. It is pure EMA lines. Some traders will appreciate the simplicity; others will want more.
 
-## Best Settings I’ve Tested
+## Settings and How to Tune Them
 
-After running this on 1-hour and 4-hour charts for two weeks, here’s my recommended setup:
+The indicator exposes the three timeframes plus visual settings for each line. A few reasonable ways to frame the choices:
 
-- **Base Timeframe:** 15m (for the fastest), 1h (intermediate), 4h (slowest) — adjust based on your trading style. Scalpers should use 1m/5m/15m, swing traders 1h/4h/daily.
-- **Line Width:** Fast = 1, Intermediate = 2, Slow = 3. This visually prioritizes the higher timeframe trend.
-- **Colors:** Green (bullish slope), red (bearish slope) for each line. I set fast to a lighter shade, slow to a darker one.
+- **Timeframe selection:** Match the three timeframes to your holding period. Faster traders will want lower timeframes stacked together; slower traders will want higher ones. The indicator itself doesn't prescribe a combination.
+- **Line width:** Giving the slowest timeframe the thickest line and the fastest the thinnest is a common way to visually prioritize the higher-timeframe trend, but it's a preference, not a rule.
+- **Colors:** Assigning distinct shades per timeframe helps distinguish them. Some traders color by slope direction (bullish vs. bearish) for each line.
 
-## How to Use It: Entry/Exit Logic That Works
+There is no single "best" configuration here—the right settings depend on how you read trends and how much visual noise you can tolerate.
 
-This is where the indicator shines if you combine it with price action. Here’s a strategy I’ve had consistent success with:
+## How to Use It
 
-**Long entry:** Wait for all three dashed EMAs to slope upward (price above all of them). Enter on a pullback to the fastest EMA line, confirmed by a bullish candlestick close (e.g., a hammer or engulfing). Stop loss below the slowest EMA line.
+The indicator is most useful when combined with price action rather than read in isolation. A few ways traders apply it:
 
-**Short entry:** All three EMAs sloping down (price below all of them). Enter on a retracement to the fastest line, confirmed by a bearish candle.
+**Long bias:** When all three dashed EMAs slope upward and price sits above them, the trend is aligned. Pullbacks toward the fastest EMA line are where some traders look for continuation entries, ideally confirmed by a bullish candlestick close. A stop below the slowest EMA is one way to define risk.
 
-**Exit:** Trail your stop along the intermediate EMA for trending moves. For mean reversion trades, take profit when price touches the slowest EMA.
+**Short bias:** The mirror image—all three EMAs sloping down, price below them, and a retracement into the fastest line confirmed by a bearish candle.
 
-Notice in the screenshot above how on the MACD chart, the 1h and 4h EMAs held as strong resistance during the recent BTC drop. A short entry at the touch of the slowest dashed line with a stop above the intermediate one would have captured a solid move.
+**Exits:** Trending positions can be trailed along the intermediate EMA. For mean-reversion style trades, the slowest EMA often acts as a natural profit-taking reference.
+
+None of this is mechanical; the indicator gives you the trend context, and the execution is on you.
 
 ## Pros & Cons
 
 **Pros:**
-- Genuinely helpful for seeing the multi-timeframe trend alignment at a glance.
-- No repainting—every line is calculated from standard EMA data.
-- Lightweight; won’t lag your chart even with many other indicators.
-- Customizable enough for most traders.
+- Helpful for seeing multi-timeframe trend alignment at a glance.
+- Uses standard EMA data rather than proprietary or derived values.
+- Lightweight; unlikely to weigh down a chart alongside other indicators.
+- Customizable enough for most discretionary traders.
 
 **Cons:**
-- Only uses the 9 EMA. If you prefer 20, 50, or 200, this isn’t for you.
-- No built-in alerts or signals—you’re on your own for execution.
-- The dashed lines can look messy on very fast timeframes (1m or tick charts) if price is choppy.
+- Only uses the 9 EMA. If you prefer 20, 50, or 200, this isn't the tool.
+- No built-in alerts or signals—execution is entirely manual.
+- Dashed lines can look cluttered on very fast timeframes when price is choppy.
 
-## Who It’s For
+## Who It's For
 
-This is perfect for **discretionary trend traders** who already know how to read EMAs but want to save time checking higher timeframes. It’s also great for beginners who want to learn trend alignment without complexity. It’s **not** for algorithmic traders or those who need automated signals.
+This suits **discretionary trend traders** who already read EMAs comfortably and want to save time checking higher timeframes. It's also a reasonable learning aid for newer traders trying to understand trend alignment without complexity. It is **not** aimed at algorithmic traders or anyone needing automated signals.
 
 ## Alternatives
 
-- **Supertrend** by KivancOzbilgic: Better for trend-following with clear entry/exit levels, but it’s a single timeframe.
-- **EMA Cross Alert** by LonesomeTheBlue: Gives you alerts on EMA crosses across multiple timeframes but lacks the visual overlay.
-- **TradingView’s built-in EMA** with manual multi-timeframe drawing: Free but tedious—this indicator saves you the setup time.
+- **Supertrend** by KivancOzbilgic: Better for trend-following with defined entry/exit levels, but single-timeframe.
+- **EMA Cross Alert** by LonesomeTheBlue: Provides alerts on EMA crosses across multiple timeframes but lacks the visual overlay.
+- **TradingView's built-in EMA** with manual multi-timeframe drawing: Free but tedious—this indicator saves the setup time.
 
 ## FAQ
 
-**Does it repaint?**  
-No. The EMA values are calculated from standard close data and don’t change retroactively.
+**Does it repaint?**
+The EMA values are calculated from standard close data, so they are not designed to change retroactively.
 
-**Can I change the EMA period?**  
-No—it’s hardcoded to 9. The only adjustable parameters are the three timeframes and visual settings.
+**Can I change the EMA period?**
+No—it's fixed at 9. The adjustable parameters are the three timeframes and the visual settings.
 
-**Is it free?**  
-Yes, it’s a free public indicator on TradingView. No paywalls or invites.
+**Is it free?**
+Yes, it's a free public indicator on TradingView. No paywalls or invites.
 
 ## Final Verdict
 
-The Multitimeframe_9_Ema_Dashed_Shaddytrades718 doesn’t try to be a magic bullet. It’s a focused, well-executed tool that does one thing—show you the 9 EMA from three timeframes—and does it cleanly. For traders who already understand EMA dynamics, it’s a time-saver and a clarity booster. For everyone else, it’s a solid learning aid. Not revolutionary, but genuinely useful.
+The Multitimeframe_9_Ema_Dashed_Shaddytrades718 doesn't try to be a magic bullet. It's a focused tool that does one thing—show you the 9 EMA from three timeframes—and does it cleanly. For traders who already understand EMA dynamics, it's a time-saver and a clarity booster. For everyone else, it's a solid learning aid. Not revolutionary, but genuinely useful.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
----
+**Rating: 4/5**
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **EMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 57.8%, XAUUSD 56.8%, AVAXUSD 54.8%, META 54.3%
+- Weakest markets: LINKUSD 45.6%, VIX 41.8%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

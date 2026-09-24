@@ -17,97 +17,69 @@ categories:
 rating: 4
 description: "Honest Ml_Vsa review: how this volume-spread analysis tool flags smart money moves, best settings, entry logic, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/HXOgXfMr-ml-vsa/"
+sources: ["https://www.tradingview.com/script/HXOgXfMr-ml-vsa/"]
 ---
-Let me be upfront: I've tested dozens of volume-spread analysis (VSA) indicators on TradingView, and most are either repackaged RSI or overcomplicated messes that repaint like a Jackson Pollock. Ml_Vsa sits in a different category — it's a solid, workmanlike tool that actually respects the original Wyckoff/VSA principles without pretending to be a crystal ball.
+Ml_Vsa is a Pine v6 **library**, not a standalone indicator — and that distinction matters before anything else. It doesn't plot anything on its own. It's a shared dependency that other scripts import to get a consistent vocabulary for Volume Spread Analysis (VSA) readings. If you were expecting a chart overlay you can drop on and trade, this isn't that.
 
-I ran this on the MACD chart type (as shown in the screenshot above) across BTC, EURUSD, and a few S&P 500 stocks over the past month. Here's what I found.
+**What it actually does**
 
-**What Ml_Vsa actually does**
+The library packages the classic VSA effort-vs-result reading of a bar into named, directional events with fixed definitions. The premise: volume is effort, the spread and close location are result. Effort with no result — heavy volume, narrow spread — is absorption. Result with no effort — wide spread, light volume — is a move with nothing behind it. A new extreme that gets rejected on volume is a trap.
 
-At its core, this indicator scans volume and price spread relationships to identify what VSA traders call "effort vs. result." It detects anomalies — like high volume with minimal price movement (absorption) or low volume with large spreads (weakness). It then plots these as colored markers directly on your chart.
-
-The key difference from other VSA tools? It applies a machine-learning filter to reduce false signals. Whether that's genuinely ML or just a weighted moving average under the hood, I can't say for certain — but the output is noticeably cleaner than raw VSA readings.
+Rather than describing absorption vaguely ("price made a high but the oscillator didn't"), a script importing this library can name the event — "Upthrust" or "Stopping Volume" — so the same event means the same thing across every script built on it.
 
 **Key features that matter**
 
-- **Signal types**: The indicator distinguishes between buying climaxes, selling climaxes, no-demand bars, and no-supply bars. This isn't just "buy/sell" — it gives you context.
-- **Repaint check**: I ran this on real-time data for two weeks. Markers on closed bars don't change. That alone puts it ahead of 60% of TradingView's volume indicators.
-- **Alert system**: You can set alerts for specific signal types. This is rare in VSA tools and genuinely useful if you're tracking multiple instruments.
-- **Clean visuals**: The markers are subtle — small dots and triangles. No neon arrows plastered across your chart.
+- **Primitives**: `closePos` (where the bar closed in its range, 0 to 1), `spreadPct` (current range as a percentile of recent history — the result axis), and `volPct` (current volume as a percentile of its history — the effort axis).
+- **Named events**: `noDemand` (bearish), `noSupply` (bullish), `upthrust` (bearish, new high rejected on high volume), `shakeout` (bullish, new low rejected on high volume), `stoppingVolume` (bullish, wide down-bar on very high volume closing off the low), `climax` (returns +1/−1/0 for selling/buying exhaustion), and `effortNoResult` (a non-directional absorption flag).
+- **Composites**: `vsaBias` nets the events to a direction (+1/−1/0, deliberately excluding the non-directional absorption flag), `vsaCode` identifies which event dominates as an integer, and `vsaLabel` returns the dominant event as a string for a dashboard or marker.
+- **Self-contained events**: Each one-bar classification is its own function, so you can call only what you need.
 
-**Best settings I tested**
+**Settings and How to Tune Them**
 
-The defaults are workable, but I found these adjustments improved accuracy:
+This is a library, so there are no chart-level settings — the parameters are function arguments, and the host script decides what to expose.
 
-- **Sensitivity**: Turn it down from the default 100 to 70–80. You'll lose some minor signals but the ones remaining are far more reliable. At 100, I got too many "climax" markers that turned out to be nothing.
-- **Volume MA length**: Keep at 20 unless you're trading lower timeframes. On 5-minute charts, bump it to 30 to filter out noise.
-- **Signal strength filter**: Enable this and set it to 2.0. It removes weak signals that appear during low-liquidity sessions.
+- **Window lengths**: Each function takes simple window lengths for its rolling history. The source material describes these as "yours" — the library leaves them to the caller. The example in the documentation uses an integer input for a VSA history window and a separate lookback for new-extreme detection, exposed as inputs in the host script.
+- **Percentile thresholds**: These follow standard VSA practice and are baked in, not user-adjustable. The exception is the climax threshold, which the source material specifies as the 90th percentile.
+- **Pivot lookback**: The trap events (`upthrust`, `shakeout`) take a separate pivot length defining how far back the "new high" or "new low" is measured.
 
-**How to actually trade with it**
+There is no sensitivity slider, no volume moving average length, and no signal-strength filter to adjust — those don't exist in this library. Tuning happens entirely through the window lengths the host script passes in.
 
-VSA is context-dependent, and Ml_Vsa respects that. Here's the entry logic that worked for me:
+**How to use it**
 
-- **Long setup**: Wait for a "selling climax" marker followed by a "no-supply" bar. Enter on the next bar's open above the no-supply bar's high. Stop loss below the climax low. Target: 2× risk or the nearest resistance level.
-- **Short setup**: Inverse — buying climax, then no-demand bar, enter on break below.
-- **The golden rule**: Only take signals that align with the higher timeframe trend. If you're on a 15-minute chart, check the 1-hour direction first. Ml_Vsa's signals are reversal-oriented, so fighting the trend gets you chopped up.
+The documented pattern is to mark the events and read a shared direction:
 
-I tested this on BTC's August range. The indicator flagged a selling climax on August 22 around the $58k level, followed by a no-supply bar on the 23rd. Long from $58,200, exit at $61,500 two days later. Not life-changing, but a clean 5.7% that the raw chart wasn't showing.
+```
+import Market_Logic_India/ml_vsa/1 as vsa
 
-**Pros and cons**
+ut = vsa.upthrust(high, low, close, volume, len, piv)
+so = vsa.shakeout(high, low, close, volume, len, piv)
+sv = vsa.stoppingVolume(high, low, close, volume, len)
 
-**Pros:**
-- No repainting on closed bars — verified
-- Signal types give you actionable context, not just arrows
-- Alert functionality is genuinely useful
-- Works on all timeframes, though it shines on 15m–1h
+bias = vsa.vsaBias(high, low, close, volume, len, piv)   // +1 / -1 / 0
+```
 
-**Cons:**
-- The "ML" aspect feels oversold. It's a smoothing filter, not artificial intelligence
-- Still generates false signals in ranging markets. No indicator fixes that
-- No built-in backtesting or win-rate statistics — you'll need to track manually
-- Learning curve if you're not familiar with VSA terminology
+The events pair naturally with level and flow tools. An Upthrust into resistance, or Stopping Volume at support, is a stronger read than either alone — that framing comes straight from the documentation.
+
+**Notes that matter**
+
+- **Non-repainting**: Every read is a pure function of closed-bar spread, volume, close and their rolling history (`ta.percentrank` / `ta.highest` / `ta.lowest`). Nothing looks ahead. To be certain a live bar's event never flickers, the documentation advises gating on `barstate.isconfirmed` in the host script.
+- **State safety**: The composites call each event unconditionally and then select, so the `ta.*` inside every event runs on every bar. If you call individual events yourself, keep them out of `if`/ternary branches for the same reason.
+- **Types**: Pass series for price/volume inputs and simple int for window lengths.
+- **Scope**: These are OHLCV-based proxies for the classic tape reads, not exchange-grade order flow. The documentation explicitly recommends pairing every event with a forward test before trusting its edge on your instrument.
+- **Volumeless symbols**: On a symbol with no volume, `volPct` is flat and the volume-gated events never fire.
+
+**Credit and license**
+
+VSA and the effort-vs-result principle — with named events No Demand, No Supply, Upthrust, Shakeout/Spring, Stopping Volume, Buying/Selling Climax and Test — descend from Richard D. Wyckoff and the VSA tradition associated with Tom Williams. This library is described as an original, dependency-free Pine v6 packaging of those public techniques, unaffiliated with any originator. Licensed under Mozilla Public License 2.0, as required for TradingView libraries.
 
 **Who it's for**
 
-This is not a beginner's tool. If you don't understand what a "no-demand bar" means or why volume spread matters, you'll misuse this and lose money. It's designed for traders who already have a VSA foundation or are willing to learn Wyckoff concepts. If you're a price-action purist who thinks volume is noise, skip it.
-
-For day traders on 15-minute charts and swing traders on hourly/daily, this is a genuinely useful addition to your toolkit. Scalpers on 1-minute charts will find it too laggy.
-
-**Alternatives worth considering**
-
-- **If you want simplicity**: "Smart VSA" — fewer signal types but a cleaner interface. Better for beginners.
-- **If you want automation**: "Volume Profile VSA" — integrates volume profile for context, but it's slower on lower timeframes.
-- **If you want the raw Wyckoff method**: Skip indicators entirely and learn to read volume spread manually. It's more work but more honest.
-
-**FAQ**
-
-**Does Ml_Vsa repaint?**
-No, confirmed signals on closed bars stay put. Intra-bar signals can change, so wait for bar close.
-
-**What timeframes work best?**
-15-minute to 4-hour charts. Below 5 minutes, the signals become too noisy.
-
-**Is it good for crypto?**
-Yes, especially on BTC and ETH where volume data is more reliable than on altcoins.
-
-**Can I use it for forex?**
-It works, but forex volume is tick-based and less meaningful. Lower your expectations.
+Pine developers building studies that need a consistent VSA vocabulary — not end users looking for a plug-and-play signal generator. If you don't already understand what a no-demand bar is or why volume spread matters, the library won't teach you; it assumes the framework. The real value is consistency: `vsaBias` means the same thing on every engine you build on top of it.
 
 **Final verdict**
 
-Ml_Vsa earns 4 stars. It's not revolutionary — the machine-learning label is marketing fluff, and it won't save you from bad market conditions. But it's a rare VSA tool that's honest about its signals, doesn't repaint, and gives you enough context to make smart decisions. If you understand VSA principles and want a reliable scanner to flag opportunities, this is worth your monthly subscription credits. If you're looking for a holy grail, keep scrolling.
+As a library, Ml_Vsa does one job cleanly: it names VSA events with fixed definitions and nets them to a direction. The non-repainting design and the unconditional-call pattern show it was written by someone who understands Pine's state pitfalls. It's not a trading system and makes no performance claims — the documentation is explicit that these are proxies needing forward validation. Judge it on whether a shared VSA vocabulary is useful to you, not on whether it prints winning signals.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Solid, dependable, and above the TradingView average. Not exceptional, but genuinely useful.
-
-## Frequently Asked Questions
-
-### Is Ml_Vsa worth it?
-
-Based on testing across multiple timeframes, Ml_Vsa delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

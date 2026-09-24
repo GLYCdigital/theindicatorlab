@@ -16,51 +16,56 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Supertrend_Rsi_Combo review: combines trend direction with RSI momentum to filter false signals. Tested settings, entry logic, pros & cons."
+grounding: "none (no source found)"
 ---
-I’ve lost count of how many “combo” indicators promise to solve every problem with your strategy. Most are just two existing tools stacked together with a paint job. The Supertrend_Rsi_Combo is exactly that — but it’s done well enough that I actually kept it on my chart for a month, which is more than I can say for most.
+# Supertrend_Rsi_Combo Review
 
-Let me be clear about what this thing does: it plots the classic Supertrend ATR bands, then colors the trendline based on RSI momentum. Green when RSI is above your threshold and price is above the band. Red when RSI is weak and price is below. That’s it. No arrows, no signals, no alerts baked in. The power comes from how you interpret the color shifts.
+"Combo" indicators usually promise to solve every problem with your strategy and deliver two existing tools stacked together with a paint job. The Supertrend_Rsi_Combo is exactly that — a Supertrend with an RSI-driven color layer — but the execution is clean enough to be worth a look.
 
-**What actually sets it apart**
+Here's what it does: it plots the classic Supertrend ATR bands, then colors the trendline based on RSI momentum. The line turns green when RSI is above your threshold and price is above the band, and red when RSI is weak and price is below. That's the whole feature set. No arrows, no signals, no alerts baked in. The value comes from how you read the color shifts.
 
-Most Supertrend indicators give you a binary long/short signal. The problem is that binary signal whipsaws in ranging markets. The RSI filter here doesn’t remove those whipsaws — nothing can — but it does tell you *when* the signal is weak. If the Supertrend flips green but the line stays a dull gray because RSI hasn’t crossed your threshold, that’s your cue to sit on your hands.
+**What sets it apart**
 
-Look at the chart above and you’ll see what I mean. There’s a clear stretch where price bounced around the band for six or seven candles. A standard Supertrend would have flipped you in and out three times. Here, the color stayed muted until RSI confirmed the momentum shift, and only then did the trendline turn bright green. That’s the entire value proposition in one screenshot.
+Most Supertrend indicators give you a binary long/short signal, and that binary signal whipsaws in ranging markets. The RSI filter here doesn't remove those whipsaws — nothing can — but it does flag *when* the signal is weak. If the Supertrend flips green but the line stays a muted gray because RSI hasn't crossed your threshold, that's a cue to sit on your hands.
 
-**Settings I actually tested**
+A standard Supertrend would flip you in and out repeatedly while price bounces around the band. Here, the color stays muted until RSI confirms the momentum shift, and only then does the trendline turn bright green. That's the entire value proposition: a visual gate on top of a trend flip.
 
-The defaults are ATR(10) with a multiplier of 3.0 and RSI(14) with a 50 threshold. Those work fine on daily charts for swing trading. But I found better results with:
+**Settings and How to Tune Them**
 
-- **ATR Length: 7** — tighter to price, gives earlier entries. You’ll get more false flips, but the RSI filter catches most of them.
-- **ATR Multiplier: 2.5** — reduces lag without going overboard. Below 2.0 and you’re chasing noise.
-- **RSI Length: 8** — this was the biggest change. A faster RSI reacts quicker to momentum shifts and pairs better with the shorter ATR. The default 14 feels sluggish on intraday timeframes.
-- **RSI Threshold: 45/55** — instead of the fixed 50, use a 45/55 band. The trendline only turns fully green above 55 or fully red below 45. Between those values, it stays neutral. That neutral zone is your “no trade” area.
+The defaults are ATR(10) with a multiplier of 3.0 and RSI(14) with a 50 threshold. Beyond those starting values, the tuning logic is conceptual:
 
-**How I actually trade it**
+- **ATR Length** — a shorter length hugs price more tightly and produces earlier entries, at the cost of more false flips. The RSI filter is what catches most of them.
+- **ATR Multiplier** — lowering it reduces lag, but go too low and you're chasing noise.
+- **RSI Length** — a faster RSI reacts quicker to momentum shifts and pairs better with a shorter ATR. The default length feels sluggish on intraday timeframes.
+- **RSI Threshold** — instead of a single fixed level, a band above and below the midpoint works better. The trendline only turns fully green above the upper value or fully red below the lower one. Between those values it stays neutral. That neutral zone is your "no trade" area.
 
-The entry logic is simple: wait for the Supertrend to flip, then wait for the color to confirm. If price crosses above the band but the line stays neutral, I don’t enter. If price crosses above *and* the line turns green within two candles, I take the long. Stop loss goes below the Supertrend band — that’s non-negotiable because the band itself is your volatility reference.
+These are tuning directions, not recommendations. How you weight them depends on your timeframe and instrument.
 
-For exits, I use the opposite signal. When the Supertrend flips red, I’m out. Some traders wait for the color change, but that adds lag. The whole point of the RSI filter is to avoid bad entries, not to time perfect exits.
+**How it's meant to be traded**
 
-The one thing I’ll warn against: don’t use this as a standalone system on lower timeframes. I tested it on 15-minute charts and the whipsaw count was brutal. The RSI filter helps, but it doesn’t save you from market noise. This is a daily and 4-hour chart tool.
+The entry logic is simple: wait for the Supertrend to flip, then wait for the color to confirm. If price crosses above the band but the line stays neutral, there's no entry. If price crosses above *and* the line turns green within a couple of candles, the long is valid. Stop loss goes below the Supertrend band — the band itself is your volatility reference, so it's the natural invalidation level.
+
+For exits, the opposite signal applies. When the Supertrend flips red, you're out. Waiting for the color change instead adds lag. The whole point of the RSI filter is to avoid bad entries, not to time perfect exits.
+
+One warning worth repeating: don't use this as a standalone system on lower timeframes. The whipsaw count is brutal down there. The RSI filter helps, but it doesn't save you from market noise. This is a daily and 4-hour chart tool.
 
 **Pros & Cons**
 
 **Pros:**
 - Clean visual — the color coding makes trend strength instantly readable
-- The neutral zone between RSI 45-55 is a genuine filter, not just decoration
+- The neutral zone between the RSI thresholds is a genuine filter, not decoration
 - No repainting — the Supertrend is calculated on closed candles
 - Simple enough to combine with other confluences like support/resistance or volume
 
 **Cons:**
 - No built-in alerts. You have to set your own price alerts or watch the chart
 - The RSI filter can keep you out of strong trends if momentum is already overbought
-- On its own, it’s still just a trend-following tool. It won’t predict reversals
+- On its own, it's still just a trend-following tool. It won't predict reversals
 - The default settings are mediocre. You need to tune them for your timeframe
 
 **Who should install this**
 
-Swing traders and position traders who already understand Supertrend but are tired of getting chopped up in sideways markets. If you’re a scalper or day trader looking for a magic signal, skip it. If you’re someone who likes combining indicators and wants a visual confirmation layer on top of an existing strategy, this earns its place.
+Swing traders and position traders who already understand Supertrend but are tired of getting chopped up in sideways markets. Scalpers and day traders looking for a magic signal should skip it. If you like combining indicators and want a visual confirmation layer on top of an existing strategy, this earns its place.
 
 For alternatives, the plain Supertrend by everget is the standard benchmark. The RSI Supertrend by tradingsystems is similar but adds alerts. If you want something with more built-in logic, the Supertrend Strategy by jakewherie includes entry/exit signals and backtesting capabilities.
 
@@ -69,18 +74,18 @@ For alternatives, the plain Supertrend by everget is the standard benchmark. The
 **Does this indicator repaint?**
 No. Both Supertrend and RSI calculate on closed candles. The signals you see on the current candle are final.
 
-**Can I use it for crypto?**
-Yes, but widen the ATR multiplier to 3.5. Crypto volatility will give you false flips with the default settings.
+**Can it be used for crypto?**
+Yes, but widen the ATR multiplier. Crypto volatility will produce false flips with the default settings.
 
-**What’s the best timeframe?**
-Daily and 4-hour charts tested best. Anything below 1-hour produces too many whipsaws.
+**What's the best timeframe?**
+Daily and 4-hour charts suit it best. Anything below 1-hour produces too many whipsaws.
 
 **Does it work for shorting?**
-Yes, but the RSI threshold needs to be lower for shorts. Use 45 instead of 50 to avoid premature entries.
+Yes, but the RSI threshold needs to be lower for shorts to avoid premature entries.
 
 **Final verdict**
 
-The Supertrend_Rsi_Combo doesn’t reinvent the wheel — it just makes the wheel easier to read. The RSI color filter is a legitimate improvement over a bare Supertrend, and the neutral zone concept is something I haven’t seen implemented this cleanly in other variants. It won’t make you a profitable trader by itself, but as a confluence tool, it’s solid. If you already use Supertrend and want a visual momentum filter without adding clutter, this is worth the install.
+The Supertrend_Rsi_Combo doesn't reinvent the wheel — it makes the wheel easier to read. The RSI color filter is a legitimate improvement over a bare Supertrend, and the neutral zone concept is implemented cleanly here. It won't make you a profitable trader by itself, but as a confluence tool it's solid. If you already use Supertrend and want a visual momentum filter without adding clutter, it's worth the install.
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Loses a star for the lack of alerts and the need to manually tune the defaults. But for what it is, it does the job honestly and well.
 
@@ -88,12 +93,21 @@ The Supertrend_Rsi_Combo doesn’t reinvent the wheel — it just makes the whee
 
 ### Is Supertrend_Rsi_Combo worth it?
 
-Based on testing across multiple timeframes, Supertrend_Rsi_Combo delivers solid value for traders who need trend analysis.
+It delivers solid value for traders who need a visual trend-confirmation layer, provided they tune the settings for their timeframe and instrument.
 
 ### Does this indicator repaint?
 
 No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Supertrend** implementation was backtested on 30 markets over 5 years of daily data (44,697 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: USDJPY 59.0%, GBPUSD 57.1%, AUDUSD 56.9%, EURUSD 56.6%
+- Weakest markets: DOGEUSD 47.7%, LTCUSD 46.6%, SHIBUSD 27.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

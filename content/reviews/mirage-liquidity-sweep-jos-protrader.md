@@ -16,79 +16,77 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Review of Mirage_Liquidity_Sweep_Jos_Protrader: a smart liquidity sweep detector with entry logic. Settings, pros/cons, and how to use it effectively."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)** – A solid liquidity sweep tool that helps you spot fakeouts before they happen. Not perfect, but for the price, it’s one of the better sweep indicators I’ve tested.
+**Final Verdict: ⭐⭐⭐⭐ (4/5)** – A liquidity sweep tool aimed at helping traders spot fakeouts before they fully play out. Not perfect, but a reasonable option for traders who already work with sweep concepts.
 
 ---
 
 ## What This Indicator Actually Does
 
-Mirage_Liquidity_Sweep_Jos_Protrader identifies potential liquidity sweeps—those sharp moves that take out old highs/lows before reversing. It’s not just a “here’s where liquidity sits” tool. It also plots entry zones and stop-loss levels based on the sweep structure.
+Mirage_Liquidity_Sweep_Jos_Protrader is designed to identify potential liquidity sweeps—sharp moves that take out prior highs or lows before reversing. It is not purely a "here's where liquidity sits" tool. It also plots entry zones and stop-loss levels based on the sweep structure.
 
-Think of it as a **smart sweep detector** that filters out noise. It doesn’t paint every wick as a sweep; it only highlights ones that meet specific structural criteria (e.g., a clean break of a prior high/low followed by an immediate rejection candle).
+The intent is to act as a sweep detector that filters out noise. Rather than painting every wick as a sweep, it is built to highlight only those that meet structural criteria—for example, a clean break of a prior high or low followed by an immediate rejection candle.
 
-The chart above shows it in action on BTC/USDT (15-minute timeframe). The red dots mark sweep zones, and the green/blue lines are potential entry levels. Notice how it caught the fakeout at the 61,200 level—price swept above the previous high and then reversed hard.
+The indicator plots sweep zones as dots, with entry levels shown as lines or zones. The concept is that a sweep above a prior high followed by a reversal marks a potential short, and a sweep below a prior low followed by a reversal marks a potential long.
 
 ## Key Features That Set It Apart
 
-1. **Sweep detection with confirmation** – Most sweep tools mark every wick. This one waits for the candle to close and checks for a reversal pattern before signaling. That alone saves you from false triggers.
+1. **Sweep detection with confirmation** – Many sweep tools mark every wick. This one is designed to wait for the candle to close and check for a reversal pattern before signaling, which is intended to reduce false triggers.
 
-2. **Entry zone plotting** – After a sweep is confirmed, it draws a box (or line) showing the optimal entry area. Usually 1–3 pips/pips above the sweep low (for long) or below the sweep high (for short). This is surprisingly accurate—I tested it on ES futures and EUR/USD.
+2. **Entry zone plotting** – After a sweep is confirmed, it draws a box or line showing a potential entry area, placed just above the sweep low for longs or below the sweep high for shorts. The exact placement is dynamic.
 
-3. **Dynamic stop-loss levels** – It automatically places a stop just beyond the sweep point. Not a fixed percentage—it adjusts based on the sweep’s wick length. Nice touch.
+3. **Dynamic stop-loss levels** – It places a stop just beyond the sweep point. This is not a fixed percentage—it is designed to adjust based on the sweep's wick length.
 
-4. **Multi-timeframe compatibility** – Works on 1m to 1D, but I found it’s best on 5m to 1h. Higher timeframes (4h+) produce fewer signals but higher quality.
+4. **Multi-timeframe compatibility** – The indicator is built to run across timeframes from intraday up through daily charts, with signal frequency and quality varying by timeframe.
 
-## Best Settings
+## Settings and How to Tune Them
 
-Here’s what I settled on after two weeks of backtesting:
+- **Sweep Sensitivity**: Controls how many sweeps are flagged. Lower values produce more sweeps but also more noise; higher values produce cleaner but fewer signals.
+- **Entry Zone Width**: Measured in bars. Tighter widths produce more aggressive entries; wider widths give more room to avoid being stopped out by random wicks.
+- **Confirmation Candle**: When enabled, the indicator waits for candle confirmation before signaling. Disabling it produces faster but less filtered signals.
+- **Show Pending Sweeps**: When on, unfinished patterns are displayed on the chart. When off, only confirmed sweeps appear.
 
-- **Sweep Sensitivity**: 2 (default is 1). Lower = more sweeps, but more noise. At 2, you get cleaner signals.
-- **Entry Zone Width**: 3 (in bars). Tighter = more aggressive entries. At 3, it gives enough room to avoid being stopped out by random wicks.
-- **Confirmation Candle**: Enabled. Do not turn this off unless you scalp on 1m charts.
-- **Show Pending Sweeps**: Off. It clutters the chart with unfinished patterns. Only enable if you’re manually monitoring.
-
-**Timeframe**: 15-minute for day trading. 5-minute for scalping (but expect more false signals). Avoid 1-minute unless you’re using it as a secondary confirmation.
+**Timeframe**: The indicator works across timeframes, but signal quality and frequency shift with the timeframe chosen. Higher timeframes tend to produce fewer signals; lower timeframes tend to produce more noise.
 
 ## How to Use It for Entries and Exits
 
 **Long Entry Example:**
-1. Wait for price to sweep below a prior swing low (red dot appears).
-2. The indicator draws a green entry zone above the sweep’s wick.
+1. Wait for price to sweep below a prior swing low (a sweep marker appears).
+2. The indicator draws an entry zone above the sweep's wick.
 3. Enter on a bullish candlestick close **inside** that zone.
-4. Stop-loss goes just below the sweep low (the indicator shows a red line).
-5. Take profit: First target is the previous swing high (often 1:2 risk-reward). Second target is the next major resistance.
+4. Stop-loss goes just below the sweep low (shown as a line).
+5. Take profit: first target is the previous swing high; second target is the next major resistance.
 
 **Short Entry Example:**
-1. Sweep above a prior swing high (red dot appears).
-2. Enter on a bearish close inside the blue entry zone.
+1. Sweep above a prior swing high (a sweep marker appears).
+2. Enter on a bearish close inside the entry zone.
 3. Stop-loss above the sweep high.
-4. TP1: Prior swing low. TP2: Next support.
+4. TP1: prior swing low. TP2: next support.
 
-**Pro tip**: Don’t take every signal. I only take sweeps that occur after a clear trend day (e.g., bull trend → sweep below a minor low → buy). Counter-trend sweeps are riskier.
+**Practical note**: Taking every signal is generally not advisable. Sweeps that occur in the direction of the prevailing trend tend to be more reliable than counter-trend sweeps, which carry more risk.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Reduces fakeout entries by requiring confirmation.
+- Designed to reduce fakeout entries by requiring confirmation.
 - Entry zones are dynamic and adapt to volatility.
-- Clean visual design—no clutter if you disable pending sweeps.
-- Works on crypto, forex, futures—I tested on BTC, EUR/USD, and ES.
+- Clean visual design—no clutter if pending sweeps are disabled.
+- Built for use across crypto, forex, and futures markets.
 
 **Cons:**
-- Lag is inevitable due to confirmation candle. You’ll miss the first few pips of the move.
-- In ranging markets (low volatility), it produces 70%+ false signals. Use a volatility filter like ATR > 20 to avoid.
-- No built-in alert system for sweep detection (you have to set price alerts manually).
-- Documentation is sparse—you’ll have to experiment with settings.
+- Lag is inevitable due to the confirmation candle. The first portion of a move may be missed.
+- In ranging, low-volatility markets, false signals become frequent. A volatility filter can help mitigate this.
+- No built-in alert system for sweep detection—price alerts must be set manually.
+- Documentation is sparse, so settings require experimentation.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Swing traders** on 15m to 1h timeframes – this is your sweet spot.
+- **Swing traders** on intraday to hourly timeframes.
 - **Price action traders** who already use liquidity concepts but want automation.
-- **Scalpers** (only on 5m with higher sensitivity) – but expect more noise.
+- **Scalpers** on lower timeframes, with the understanding that more noise is likely.
 
-**Not for**: Beginners who want a “buy/sell” button. This requires understanding of sweep structures. Nor for algorithmic traders—no API export.
+**Not for**: Beginners who want a "buy/sell" button. This requires an understanding of sweep structures. Nor for algorithmic traders—there is no API export.
 
 ## Better Alternatives
 
@@ -96,27 +94,27 @@ If you want **faster** sweeps: **Smart Liquidity Levels** by LuxAlgo – no conf
 
 If you want **cleaner** visuals: **Liquidity Sweep Pro** by KivancOzbilgic – simpler, but lacks entry zone plotting.
 
-If you want **multi-timeframe** sweep analysis: **Order Flow Sweep** by QuanTum – more data, but steeper learning curve.
+If you want **multi-timeframe** sweep analysis: **Order Flow Sweep** by QuanTum – more data, but a steeper learning curve.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: Yes, slightly. The sweep dot appears on the candle close, but if price sweeps again, the dot can shift. It’s not a dealbreaker—most sweep tools do this.
+**Q: Does it repaint?**
+A: Yes, slightly. The sweep marker appears on the candle close, but if price sweeps again, the marker can shift. Most sweep tools behave this way.
 
-**Q: What’s the best stop-loss placement?**  
-A: Use the indicator’s suggested stop (red line). If you want tighter, place it 1 tick below the sweep wick’s low. But expect more whipsaws.
+**Q: What's the best stop-loss placement?**
+A: Use the indicator's suggested stop. For a tighter stop, place it just below the sweep wick's low, though this invites more whipsaws.
 
-**Q: Can I use it with other indicators?**  
-A: Yes. I combine it with a 20 EMA and RSI (14) for confluence. If price sweeps and RSI is oversold, the reversal probability is higher.
+**Q: Can I use it with other indicators?**
+A: Yes. It can be combined with a moving average and an oscillator such as RSI for confluence. If price sweeps and the oscillator is at an extreme, the reversal case is stronger.
 
-**Q: Does it work on crypto 1-minute?**  
-A: Poorly. Too many fakeouts. Stick to 5m or higher.
+**Q: Does it work on crypto 1-minute charts?**
+A: Poorly. Too many fakeouts. Higher timeframes are more suitable.
 
 ## Final Thoughts
 
-Mirage_Liquidity_Sweep_Jos_Protrader is a **4-star tool** because it does one thing well: identify high-probability liquidity sweeps with an entry plan. It’s not a holy grail—nothing is—but if you understand sweep mechanics and use it on the right timeframe, it will improve your trade timing.
+Mirage_Liquidity_Sweep_Jos_Protrader is a 4-star tool because it does one thing well: identify potential liquidity sweeps with an entry plan attached. It is not a holy grail—nothing is—but for traders who understand sweep mechanics and use it on an appropriate timeframe, it can support trade timing.
 
-The lag and ranging market weakness are real drawbacks, but the entry zone plotting and dynamic stops make it worth a download. Test it on a demo for 20 trades before going live.
+The lag and ranging-market weakness are real drawbacks, but the entry zone plotting and dynamic stops are meaningful features. As with any indicator, testing it in a demo environment before committing capital is the sensible approach.
 
 **Rating: 4/5 ⭐⭐⭐⭐** – Recommended for intermediate traders who want to automate sweep detection without losing the price action edge.
 

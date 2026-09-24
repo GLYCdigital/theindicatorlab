@@ -17,91 +17,76 @@ categories:
 rating: 4
 description: "Honest Gold_Session_Map_Sweep_Signals review: session-based sweep detection, optimal settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/bo1WdFiL-Gold-Session-Map-Sweep-Signals/"
+sources: ["https://www.tradingview.com/script/bo1WdFiL-Gold-Session-Map-Sweep-Signals/", "https://www.mql5.com/en/blogs/post/772224", "https://www.mql5.com/en/blogs/post/772224[/url", "https://tiomarkets.com/en/article/best-time-to-trade-gold-xauusd"]
 ---
-Let me be upfront: most "session map" indicators are glorified rectangles with a timezone dropdown. This one is different — it actually does something with those session boundaries. I've run it on gold's M15 and H1 charts for the past three weeks, and here's what I found.
+# Gold Session Map & Sweep Signals — Review
 
-**What it actually does**
+Most "session map" indicators are glorified rectangles with a timezone dropdown. This one tries to do something with those session boundaries. Once you strip away the marketing, here's what it actually is.
 
-Gold_Session_Map_Sweep_Signals identifies liquidity sweeps at the edges of defined trading sessions. Instead of just coloring your chart with Asian/London/New York zones, it watches for price to spike beyond a session's high or low, then flash a signal when that move gets rejected. The indicator plots these as labeled arrows directly on the chart — bull/bear markers with the sweep level attached. It's not a lagging MA crossover or a repainting oscillator. It's a structural tool built around the idea that gold loves to hunt stops at session boundaries.
+**What it does**
 
-**Key features that stand out**
+The script shades four session blocks — Asian, London, the London–NY overlap, and the New York afternoon — and draws the Asian range as a box that extends through the rest of the day. That box is the reference level everything else keys off. It also tracks ADR(20) and how much of today's average range has already been spent.
 
-The session customization is the real deal. You can define up to four sessions manually — start/end times, colors, and whether each one generates signals. I set it to London and New York only, since Asian session sweeps on gold tend to be noise. The sweep detection radius is adjustable in ATR multiples, which is smarter than a fixed pip count. Gold's volatility at 3 AM vs. 3 PM isn't comparable, so ATR-based filtering actually makes sense.
+Then it fires sweep-reclaim signals with a stop and a target. The author is explicit that the session shading is fact, while the signal component is a hypothesis. Treat them differently.
 
-The signal logic is clean: it marks a "sweep" when price breaks the session extreme by your ATR threshold, then closes back inside. You get a clear arrow at the close of the rejection candle. No repainting as far as I can tell — I backtested against my own notes and the signals didn't disappear on bar close.
+**The signal logic**
 
-**Best settings I settled on**
+The setup is the pattern the author describes as recurring in gold session behaviour: London opens, runs the stops sitting just outside the Asian range, then reverses. The script waits for all of the following:
 
-After trial and error, here's what worked on XAUUSD:
+- The Asian session has closed — the range must be finished before it can be swept.
+- Price is in an allowed session (London and the overlap by default).
+- Price traded beyond the Asian high or low by at least 5% of the range, filtering out one-tick brushes.
+- The bar closed back inside the range — this is the reclaim, the actual signal.
+- ADR used is under 90%.
+- The bar is not inside the news blackout.
+- No position is already open, and this direction hasn't fired today.
 
-- Session 1 (London): 08:00–16:30 UTC, signal enabled
-- Session 2 (New York): 13:30–21:00 UTC, signal enabled
-- Asian session: disabled entirely
-- Sweep threshold: 0.75 ATR (tighter than default, catches more early moves)
-- Signal type: both sweep highs and lows
+A long fires when the Asian low is swept and reclaimed; a short fires when the Asian high is swept and reclaimed. It is deliberately counter-intuitive — you are buying the failed breakdown, not the breakout. Entry is the close of the reclaim bar, the stop goes beyond the sweep extreme plus a 0.25×ATR buffer, and the target is a configurable R multiple.
 
-The default 1.0 ATR threshold is fine, but it misses the quick wick-and-reverse plays that happen 15 minutes into London open. At 0.75, you get more signals, but you'll also catch a few false ones during high-impact news. If you're scalping, that's a fair trade. If you're swing trading, keep it at 1.0.
+**Settings and How to Tune Them**
 
-**How I trade it**
+**Take signals during** — defaults to London + Overlap. Narrowing it to the overlap alone reduces the number of signals. The author frames this as a tradeoff, not an improvement.
 
-The logic is simple: when you see a sweep signal, you're betting the other side of the liquidity grab. For a long setup — price sweeps below the session low, closes back above the sweep level — I enter on the next candle open, stop loss just below the wick low, and target the opposite end of the session range. On gold, that's typically 20–40 pips depending on the session.
+**Minimum sweep depth** — 0.05 (5% of the Asian range). The documentation suggests raising it if you're getting signals on trivial pokes, or lowering it if you're getting none.
 
-The screenshot above shows how this played out on a recent M15 chart — notice the London low sweep in the early session, followed by a clean reversal into the New York open. The indicator doesn't tell you *when* to take profit, which is fine; pair it with your favorite exit tool or just trail the session midpoint.
+**Target (R multiple)** — 2.0 by default. At 2R the author notes you need above roughly a 33% strike rate to break even, and suggests trying 1.5R if your tally shows a high hit rate but you keep giving profits back.
 
-One thing I'll warn you about: don't take every signal. The indicator works best when the sweep happens against the broader trend. If price is making higher highs on the H1 and you get a sell sweep signal, skip it. Wait for sweeps that align with the daily bias.
+**Require trend agreement (EMA filter)** — off by default, because this is a mean-reversion setup and a trend filter fights it. Turning it on means sweeps must resolve with the prevailing direction; the author expects roughly half as many signals.
 
-**Pros and cons**
+**Blackout centre** — set to 12:30 UTC, which corresponds to 08:30 ET, when US CPI, PPI and payrolls land. It is defined in your chosen session timezone, so the author advises leaving that on UTC.
 
-Pros:
-- Genuinely useful session logic, not just colored boxes
-- ATR-based sweep detection adapts to volatility
-- No repainting on the signals I verified
-- Clean visual output — arrows and labels don't clutter the chart
-- Fully configurable sessions, so it works on any market, not just gold
+**Dashboard clock** — display only; it changes nothing in the logic.
 
-Cons:
-- The name is misleading — it works fine on indices and forex, but you'll need to tweak session times
-- No alert system built in (you'll need to set your own price alerts)
-- Signal frequency can be low on quiet days; don't expect action every session
-- The documentation inside the indicator is sparse — you'll figure out the settings through trial and error
+**Why sessions are defined in UTC**
 
-**Who should use this**
+London and New York observe daylight saving; the session definitions here don't. Defining sessions in local time means every window shifts by an hour twice a year. UTC pins them to a fixed reference, and the dashboard handles the conversion for display. If you change the session timezone, you must also change all four session strings to match — which is why the input is grouped with a warning.
 
-If you trade gold, crude, or any instrument that respects session boundaries, this is worth your time. It's particularly strong for London and New York session traders who want a structured entry trigger rather than guessing at reversals. Day traders on M15 and M30 will get the most value. If you're a position trader on H4 or above, the signals are too frequent and too small to matter.
+**Reading the dashboard**
 
-It's not for beginners who want a "buy/sell" magic button. You need to understand liquidity concepts and have a basic grasp of market structure. The indicator gives you a trigger, not a strategy.
+The panel shows which session block you're in, whether signals are allowed (green "yes" or the specific blocking reason), the Asian high and low being watched, ADR(20) in dollars, ADR used (green under your ceiling, amber over it, red past 130%), whether a signal is currently live, and a running W/L/flat tally with hit rate.
 
-**Alternatives worth considering**
+**Alerts**
 
-If you want more comprehensive sweep detection, the "Liquidity Sweeps" indicator by popular session traders does a similar job but includes news filtering and multi-timeframe confluence — at a higher price point. If you just want session maps without signals, "True Session" is free and does the job. For gold specifically, "Gold Rush" by a well-known publisher offers similar sweep signals but with a different, more aggressive signal rate.
+The script fires named alerts for long sweep reclaim, short sweep reclaim, target reached, and stop reached. It also fires `alert()` calls carrying the actual entry, stop and target prices, so an "Any alert() function call" alert delivers a formatted message with those levels. The author advises setting the trigger to **Once per bar close** rather than every tick, since signals are defined on the close of the reclaim bar.
 
-**FAQ**
+**What this is not**
 
-*Does this indicator repaint?* I didn't see repainting on the signals themselves — once an arrow prints, it stays. The session boxes obviously update as time passes, but that's expected.
+The W/L tally is not a backtest. It is a rough count of how the plotted signals resolved on whatever history your chart has loaded. It ignores spread, commission and slippage — all three of which matter on gold, where the author notes retail spreads run 12–40¢ depending on session. It assumes fills exactly at the bar close and exactly at your stop or target, and when a single bar touches both levels it assumes the stop hit first.
 
-*Does it work on other instruments?* Yes, but recalibrate the ATR threshold and session times. Gold's volatility profile is unique; what works on XAUUSD will over-signal on something like EURUSD.
+Signals are close-of-bar, so on a 15m chart you may be entering 15 minutes after the actual sweep low — a real cost the tally doesn't capture. The author also notes sample size will be small: one or two signals a day at most, further capped by the one-per-direction-per-day rule, and fifty signals is not evidence of an edge.
 
-*Can I get alerts?* Not built-in. You'll need to create manual price alerts at the session highs/lows, which partially defeats the purpose. This is the biggest missing feature.
+The setup can fail structurally. Sweep-and-reclaim is a mean-reversion pattern. On genuine trend days — an FOMC surprise, a CPI shock — the "sweep" isn't a sweep, it's the start of a move that keeps going. The ADR filter and news blackout are designed to avoid that, and the author states plainly that they will not always succeed.
 
-*Is it good for scalping?* It can work on M1-M5, but you'll want to set the ATR threshold lower (0.5) and accept more false signals. I prefer M15.
+The recommendation is to forward-test on a demo account through at least a month of sessions, including at least one FOMC and one CPI, before letting it inform a real position.
 
-**Final verdict**
+**If you want to backtest it properly**
 
-Gold_Session_Map_Sweep_Signals earns four stars because it does one thing well — identifying session-based liquidity sweeps — without pretending to be a full trading system. It's a solid tool for traders who already understand market structure and need a clean trigger mechanism. The lack of alerts and the generic name hold it back from being truly exceptional, but at its price point, it's a smart addition to any gold trader's toolkit.
+The documentation includes a conversion path to a Pine Script strategy: change the header to a `strategy()` declaration, delete the trade-state-machine block, and replace the entry section with `strategy.entry` and `strategy.exit` calls using the same stop and target arithmetic. It also warns that with `slippage` and `commission_value` left at zero, a strategy tester will flatter almost anything — set them to match your actual broker. The Strategy Tester then gives real drawdown, profit factor and trade-by-trade detail that the indicator's tally cannot.
 
-If you're looking for a session-aware sweep detector that you can build a strategy around, this is a solid choice. Just don't expect it to trade for you.
+**Bottom line**
 
-⭐⭐⭐⭐
+This is a session map with a mean-reversion hypothesis layered on top, and it is documented honestly about which is which. The session structure, ADR framework and sweep pattern are drawn from the cited research; the signal is the author's own hypothesis and is presented as such. It is not a turnkey system, and the documentation says so repeatedly.
 
-## Frequently Asked Questions
-
-### Is Gold_Session_Map_Sweep_Signals worth it?
-
-Based on testing across multiple timeframes, Gold_Session_Map_Sweep_Signals delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

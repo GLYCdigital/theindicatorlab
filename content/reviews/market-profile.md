@@ -16,8 +16,8 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Hands-on Market_Profile review for TradingView. See how this volume-at-price tool reveals value areas, TPOs, and auction market structure. Best settings, entry rules, and honest pros vs cons."
+grounding: "none (no source found)"
 ---
-
 **Final Verdict: ⭐⭐⭐⭐ (4/5)**  
 *If you trade auction market theory or just want to see where the big money values price, this is a solid tool. Not perfect, but miles ahead of most volume profile clones.*
 
@@ -25,38 +25,36 @@ description: "Hands-on Market_Profile review for TradingView. See how this volum
 
 ## What This Indicator Actually Does
 
-Market_Profile is a TradingView implementation of the classic Chicago Board of Trade concept—but updated for modern screens. It plots **Time Price Opportunities (TPOs)** as a sideways histogram, showing you exactly where price spent the most time during each session.
+Market_Profile is a TradingView implementation of the classic Chicago Board of Trade concept—but updated for modern screens. It plots **Time Price Opportunities (TPOs)** as a sideways histogram, showing you where price spent the most time during each session.
 
 Unlike a standard volume profile (which shows *volume* at price), this one tracks *time* at price. The logic: time = acceptance. Where price hangs out, the market is comfortable. Where it zips through, nobody's convinced.
 
-As the chart above shows, the indicator builds a profile for each session automatically. The **Value Area** (usually 70% of TPOs) is shaded, and the Point of Control (POC) is clearly marked. You can switch between daily, weekly, or even intraday profiles.
+The indicator builds a profile for each session automatically. The **Value Area** is shaded, and the Point of Control (POC) is clearly marked. You can switch between daily, weekly, or intraday profiles.
 
 ## Key Features That Set It Apart
 
-- **TPO count & letter sequences** – Each half-hour period gets a letter (A, B, C...). This isn't just visual fluff; you can see *when* price visited a level. If the "J" period (late morning) is far from the "B" period (early open), that's a failed breakout or a runaway move.
+- **TPO count & letter sequences** – Each period gets a letter (A, B, C...). This isn't just visual fluff; you can see *when* price visited a level. If the "J" period (late morning) is far from the "B" period (early open), that's a failed breakout or a runaway move.
 - **Automatic Value Area recalculation** – As the session progresses, the VA shifts. No manual refreshing.
-- **Multi-timeframe profiles** – You can overlay weekly and daily profiles on the same chart. I prefer daily for scalping, weekly for swing ideas.
+- **Multi-timeframe profiles** – You can overlay weekly and daily profiles on the same chart.
 - **POC continuity lines** – Dotted lines extend from the POC to the right. These act like magnetic levels—price often returns to them.
 
-## Best Settings (Tested on ES and NQ)
+## Settings and How to Tune Them
 
-After testing on futures and forex, here's what works:
-
-- **TPO Period:** 30 minutes (default) is fine for ES/NQ. For slower markets like EURUSD, try 60 minutes to reduce noise.
-- **Value Area %:** 70% is standard. 68% gives a tighter range; I use 70% for intraday, 68% for weekly profiles.
-- **Show Letters:** On. The letters help you spot *when* the profile developed—critical for spotting late-session reversals.
+- **TPO Period:** A shorter period gives finer resolution; a longer period reduces noise in slower markets.
+- **Value Area %:** The conventional setting covers the majority of TPOs. A tighter percentage produces a narrower value area.
+- **Show Letters:** On. The letters help you spot *when* the profile developed—useful for spotting late-session reversals.
 - **Profile Position:** Left. Right-side profiles overlap with your price action. Left keeps it clean.
-- **Session Start/End:** Match your exchange hours. For ES, I use 9:30–16:00 ET. For crypto, pick a high-volume window (e.g., 00:00 UTC).
+- **Session Start/End:** Match your exchange hours so the profile reflects the session you actually trade.
 
 **Recommended combo:** Use Market_Profile as your primary time-at-price tool, then stack a volume profile (like Volume Profile Visible Range) beneath it. The two together tell you: "Price spent time here *and* traded heavily here." That's a high-probability zone.
 
 ## How to Use It for Entries and Exits
 
-**Entry setups I've actually traded:**
+**Entry setups:**
 
 1. **Value Area Rejection** – Price spikes above the VA high but immediately closes back inside. That's a short entry, stop above the spike high. Target = VA low or POC. Works best in range-bound markets.
 2. **POC Bounce** – Price pulls back to the POC from above or below. If it shows a rejection candle (hammer or shooting star), enter with momentum. The POC is the most accepted price—traders defend it.
-3. **Failed Breakout of VA** – If the first 2 hours of a session break out of the prior day's VA, but TPOs show *declining* participation (fewer letters per price level), that breakout is weak. Fade it.
+3. **Failed Breakout of VA** – If the early session breaks out of the prior day's VA, but TPOs show *declining* participation (fewer letters per price level), that breakout is weak. Fade it.
 4. **Initial Balance Break** – The first hour's range (the "initial balance") acts as a pivot. If price breaks above it and TPOs expand, go long. If price breaks and TPOs contract (thin profile), it's a trap.
 
 **Exit rules:**
@@ -69,19 +67,19 @@ After testing on futures and forex, here's what works:
 **Pros:**
 - Shows *time* at price, not just volume—a real edge when volume data is unreliable (crypto, low-liquidity forex).
 - Letters make it easy to distinguish early vs. late session activity.
-- Works on any timeframe with minor tweaks. I use it on 1H charts for swing trading.
+- Works across chart timeframes with minor tweaks.
 - No lag. It's a pure price-based tool.
 
 **Cons:**
 - **No volume data** – If you trade stocks or futures with reliable volume, you'll want both. The indicator doesn't show volume at price.
-- **Steep learning curve** – If you've never seen a Market Profile before, the letters and side histogram are confusing. Budget a few hours to study.
+- **Steep learning curve** – If you've never seen a Market Profile before, the letters and side histogram are confusing. Budget time to study.
 - **No auto-trading signals** – This is a *tool*, not a strategy. You need to interpret it.
-- **Can get cluttered** – On daily profiles with 10+ sessions, the screen becomes a mess. I only show the last 3 days.
+- **Can get cluttered** – On daily profiles with many sessions, the screen becomes a mess. Limit how many sessions you display.
 
 ## Who It's Actually For
 
-- **Auction market theorists** – You'll love it. It's the purest implementation of market profile on TradingView.
-- **Futures traders** – ES, NQ, CL, GC all work great. The time-based profile aligns with pit-trading concepts.
+- **Auction market theorists** – It's a faithful implementation of market profile on TradingView.
+- **Futures traders** – The time-based profile aligns with pit-trading concepts.
 - **Swing traders** – Weekly profiles give you strong support/resistance zones that hold for days.
 - **NOT for scalpers** – If you trade 1-minute charts, this is overkill. Use a simple volume profile instead.
 
@@ -94,16 +92,16 @@ After testing on futures and forex, here's what works:
 ## FAQ
 
 **Q: Can I use this for crypto?**  
-A: Yes, but with caution. TPOs rely on time, not volume, so they work perfectly. However, crypto's 24/7 nature means you need to define a "session." I set it to 00:00–00:00 UTC and treat each day as one profile.
+A: Yes, but with caution. TPOs rely on time, not volume, so they work fine. However, crypto's 24/7 nature means you need to define a "session." Set a window and treat each day as one profile.
 
 **Q: Why does my profile look different from the chart?**  
-A: Check your session start/end times. If you're trading ES on a 9:30–16:00 ET profile, but your chart shows pre-market activity, the profile will exclude it. That's intentional—pre-market often has low participation.
+A: Check your session start/end times. If you're trading ES on a regular-session profile, but your chart shows pre-market activity, the profile will exclude it. That's intentional—pre-market often has low participation.
 
 **Q: Is this indicator repainting?**  
-A: No. TPOs are plotted as they happen. Once a letter is printed, it stays. The POC and VA can shift as new data comes in, but that's how profiles work—they're dynamic.
+A: TPOs are plotted as they happen. Once a letter is printed, it stays. The POC and VA can shift as new data comes in, but that's how profiles work—they're dynamic.
 
 **Q: What timeframe should I use?**  
-A: The indicator works on any chart timeframe, but the TPO period (default 30 min) is what matters. I set my chart to 1H and let the TPO period define the profile resolution.
+A: The indicator works on any chart timeframe, but the TPO period is what matters. You can set your chart to one timeframe and let the TPO period define the profile resolution.
 
 **Q: How do I spot a "failed auction"?**  
 A: Look for a profile that's extremely thin (few TPOs per price level) and then reverses hard. That's a failed auction—the market tried a price, nobody bit, and it went the other way. The letters will be clustered on one side.

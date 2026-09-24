@@ -17,79 +17,88 @@ categories:
 rating: 4
 description: "Honest Liquidity_Label_Above_Bar review: how it marks liquidity zones, optimal MACD settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/3C7bqZb3-Liquidity-Label-above-Bar/"
+sources: ["https://www.tradingview.com/script/3C7bqZb3-Liquidity-Label-above-Bar/"]
 ---
-Let me be upfront: "Liquidity_Label_Above_Bar" sounds like something that should be unnecessary. The name suggests it just paints a label over your chart — how useful could that be? After running it on multiple timeframes and pairs for two weeks, I can tell you it's more nuanced than the name implies. This indicator doesn't predict price action. It doesn't repaint. What it does is simple: it identifies where liquidity sits above or below current price and labels those levels directly on the bar where the sweep is likely to occur.
+# Get started — Liquidity Label Review
 
-Here's what actually happens when you load it: the indicator scans historical price action for clusters of equal highs and lows — those areas where stop losses naturally pile up. When it detects a potential liquidity pool, it draws a label above the bar (or below, depending on your settings) at the exact price level. The label stays until price sweeps through it, then it disappears or changes color. No repainting, no lagging alerts. It's a positional tool that tells you where the market is likely to hunt next.
+The name undersells it. "Liquidity Label" sounds like decoration — a floating text element pinned above your chart. But the official description is more specific than the title suggests: it shows a single label above the latest candle displaying the stock's average traded value, so you can judge at a glance whether a stock is liquid enough to trade without opening a screener.
+
+That's the entire premise. This is not a signal indicator, a pattern detector, or a directional bias tool. It is a liquidity readout — a single number that answers one question: is there enough traded value here to bother?
+
+## What It Actually Does
+
+One label is drawn, always on the last bar, and it updates live. The value shown is the average traded value over a configurable number of periods, based on a chosen price source. By default that's the close over 50 periods.
+
+The display unit is where the tool earns its keep. Crore and Lakh units make this handy for NSE/BSE traders, while Million and Billion covers global markets. There's also a Raw option if you want the unformatted figure. Decimals and an optional unit suffix (Cr, L, M, B) let you control how the number reads.
+
+That's it. No boxes, no zones, no multi-timeframe overlay. Just a number, placed where you can see it.
 
 ## What Sets It Apart
 
-Most liquidity indicators on TradingView either flood your screen with boxes or use complicated algorithms that need PhD-level interpretation. This one keeps it clean. The label attaches to the bar where the liquidity forms, giving you a timestamp reference. You can see *when* the pool was created, which matters for judging its validity. Old liquidity pools from three months ago get ignored by smart money — this indicator lets you set a lookback period so you're only tracking relevant, recent zones.
+Most liquidity tools on TradingView try to map where liquidity *sits* — pools, zones, sweep levels. This one does something narrower and arguably more useful for a first-pass filter: it quantifies how much value is actually changing hands.
 
-The MACD chart type in the screenshot above shows something interesting: the labels align with momentum shifts better than on standard candlestick charts. When MACD histogram contracts near a labeled liquidity level, the confluence is worth paying attention to. I tested this on BTC/USD 15-minute and EUR/USD 1-hour — the labels consistently marked areas where price reversed or accelerated through.
+The practical distinction matters. A chart can look clean and tradeable while the underlying instrument is too thin to fill an order without slippage. Conversely, a busy-looking chart on a small-cap may have less real liquidity than a quiet one on a large-cap. The label gives you a direct read on that without leaving the chart to run a screener.
 
-## Settings That Actually Work
+The unit flexibility is the other differentiator. Regional conventions differ, and having Crore/Lakh alongside Million/Billion means the same indicator reads naturally for an Indian equity trader and a US equity trader without mental conversion.
 
-After extensive testing, here's my recommended configuration:
+## Settings and How to Tune Them
 
-- **Lookback period:** 100-150 bars. Shorter gets noisy, longer misses recent relevance.
-- **Label style:** Price level + percentage distance. You want to know both where and how far.
-- **Sweep detection:** Enable it. The indicator should mark when a pool gets swept, not just when it forms.
-- **Alert on sweep:** This is where the real value lives. Set an alert for when price tags a labeled level.
+The official parameter set breaks into four groups.
 
-One warning: the default label size is obnoxious. Shrink it to "small" or "tiny" unless you're trading on a clean setup. You're here for information, not decoration.
+**Calculation:**
+- **Time unit:** Days or Minutes
+- **Period count:** the number of periods used for averaging (default 50)
+- **Price source:** close by default
+- **Display unit:** Crore, Lakh, Million, Billion, or Raw
+- **Decimals and optional unit suffix** (Cr, L, M, B)
 
-## How I Trade It
+**Label look:**
+- Text size, text color, background color
+- Shape: down arrow, box, or plain text
 
-The strategy that worked best: wait for price to approach a labeled liquidity level during a trend. Don't fade it on the first touch — that's how you get run over. Instead, watch for the sweep. When price pokes through the level and closes back inside the range, *that's* your entry signal.
+**Margins:**
+- **Vertical margin:** how far above the high the label sits, as a percent of price
+- **Horizontal margin:** shift the label left or right by bars
 
-For shorts: price sweeps above a resistance liquidity label, MACD histogram shows bearish divergence, then you enter on the rejection candle. Stop loss goes above the sweep high. For longs, flip it. The labels work best as a map of where not to place your own stops — if you see a liquidity label below your entry, your stop is likely sitting right where the market wants to go.
+Tuning notes, kept general since the source doesn't prescribe values: the period count governs how smooth the average is — a shorter window reacts faster to recent volume shifts, a longer one gives a more stable baseline. The time unit determines whether you're averaging daily or intraday periods, which changes what "average liquidity" means for your use case. The display unit should match your market convention; pick the one you'd use in conversation. Label look and margins are pure ergonomics — set the size and offset so the label doesn't obscure price action on your specific chart.
 
-The screenshot shows a clean example: price swept the labeled high on the left, MACD confirmed the momentum loss, and the subsequent move down captured nearly 2% on BTC. That's the pattern you're hunting.
+## How to Use It
+
+The indicator works on any symbol and any chart timeframe, and the source notes it can be used for intraday as well.
+
+The natural workflow is as a pre-trade filter. Before committing to a setup, glance at the label. If the average traded value is below whatever threshold you consider tradeable for your size, the setup doesn't matter. This replaces the step of opening a screener or checking a separate data source.
+
+Because the label updates live on the last bar, it reflects current conditions rather than a static historical figure — useful if you're watching an instrument's activity change during a session.
 
 ## The Honest Trade-Offs
 
 **Pros:**
-- No repainting — labels form and stay until price interacts with them
-- Clean visual representation without box clutter
-- Timestamp on labels helps filter old vs. recent pools
-- Works across timeframes, though it shines on lower timeframes
+- Single, uncluttered readout — no chart pollution
+- Unit options cover both Indian and global market conventions
+- Works on any symbol and any chart timeframe
+- Label updates live, so the figure stays current
+- Removes the need to leave the chart for a screener
 
 **Cons:**
-- It's a map, not a compass. No directional bias built in — you need to pair it with trend analysis or price action
-- On ranging markets, labels stack up in confusing clusters
-- The name undersells it, but the interface is basic — no dashboard, no multi-pair scanning
-- Requires some understanding of liquidity concepts to use effectively
+- It's a filter, not a signal. It tells you nothing about direction, entry, or exit.
+- One label on the last bar only — no historical context, no trend in liquidity over time
+- No alerting, no scanning, no multi-symbol view
+- The value is an average over a lookback; a sudden liquidity shift won't show immediately
 
 ## Who Should Install This
 
-If you trade ICT concepts, smart money theory, or simply want to avoid placing stops where the market will hunt them, this indicator earns its place. Day traders on 5m-1h timeframes will get the most value. Swing traders will find it useful on daily charts, though the lookback needs to be extended significantly.
+Traders who routinely check liquidity before entering — particularly those trading instruments where thin books are a real risk — will get direct value from this. NSE/BSE traders get the Crore/Lakh formatting; global traders get Million/Billion. Intraday users can run it on minute time units.
 
-If you're a pure trend-follower using moving averages or breakout strategies, you can skip this. It won't improve your system much. And if you're new to trading, the concept of liquidity sweeps might confuse more than help until you understand the mechanics.
-
-## Alternatives Worth Considering
-
-For a more comprehensive approach, **Liquidity Zones by LuxAlgo** offers multi-timeframe visualization and more granular controls. **Smart Money Concepts** by LuxAlgo bundles liquidity with order blocks and fair value gaps. But if you want something focused and lightweight that just marks the levels without the full ICT curriculum, this is a solid pick.
-
-## Frequently Asked Questions
-
-**Does this indicator repaint?**
-No. Labels are drawn based on confirmed historical data and remain fixed.
-
-**Can I use it for crypto and forex?**
-Yes. I tested both. Crypto tends to produce more frequent labels due to volatility; forex labels are cleaner.
-
-**Does it work on all chart types?**
-The indicator functions on any chart type, but as the MACD example shows, combining it with momentum indicators improves the signal quality.
-
-**Is it good for scalping?**
-It's workable on 1m-5m charts, but label density becomes an issue. You'll need to increase the lookback threshold to reduce noise.
+If you already have a screener workflow you trust, or you trade only highly liquid instruments where the answer is always "yes, liquid enough," this adds little. It's also not for anyone looking for trade signals — there are none here.
 
 ## Final Verdict
 
-Liquidity_Label_Above_Bar delivers exactly what it promises — clear, timely liquidity markers without the bloat. It won't make trading decisions for you, but it provides the contextual awareness that most retail traders lack. The lack of repainting alone puts it ahead of half the indicators in this category. For traders who understand liquidity dynamics and want a clean visual tool to track them, this is a solid addition to the toolkit.
+Get started (Liquidity Label) is a narrow tool that does its narrow job cleanly. It answers one question — is this instrument liquid enough to trade — and answers it on the chart, in your preferred unit, without ceremony. The lack of clutter is the feature.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Deducting one star for the noisy behavior in ranging conditions and the lack of built-in confluence filters. But for what it does, it does well.
+It won't make trading decisions for you, and it doesn't pretend to. For traders who understand that liquidity is a precondition rather than a signal, it's a reasonable addition to the toolkit.
+
+**Rating: ⭐⭐⭐⭐ (4/5)** — Deducting a star for the absence of historical context and any alerting or scanning capability. But for what it does, it does well.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

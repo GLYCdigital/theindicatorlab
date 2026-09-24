@@ -16,66 +16,67 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Zig_Zag_Percentage review: tested settings, swing trading strategy, pros & cons. See how this classic trend filter compares to alternatives."
+grounding: "none (no source found)"
 ---
-The Zig Zag indicator gets a bad rap. Most traders dismiss it as a lagging relic that redraws history. And they're half right — the standard version is clumsy. But the Zig_Zag_Percentage variant on TradingView fixes the core problem: instead of using fixed point swings, it filters swings by percentage change. That single tweak makes it genuinely useful for swing trading and market structure analysis.
+# Zig_Zag_Percentage Review
 
-I've spent the last few weeks running this on BTC, EURUSD, and a handful of large caps. Here's what I actually found.
+The Zig Zag indicator gets a bad rap. Many traders dismiss it as a lagging relic that redraws history — and the standard version has real limitations. The Zig_Zag_Percentage variant on TradingView addresses one of the core criticisms: instead of using fixed point swings, it filters swings by percentage change. That adjustment makes it more useful for swing trading and market structure analysis.
 
 ## What This Indicator Actually Does
 
-Zig_Zag_Percentage plots swing highs and lows based on a user-defined percentage threshold. A new swing point only forms when price retraces at least that percentage from the previous extreme. Between those points, it draws straight trendlines that connect the pivots.
+Zig_Zag_Percentage plots swing highs and lows based on a user-defined percentage threshold. A new swing point only forms when price retraces at least that percentage from the previous extreme. Between those points, it draws straight trendlines connecting the pivots.
 
-The key difference from the built-in Zig Zag: you're not fighting with ATR or tick-based noise. Percentage-based thresholds scale naturally across all timeframes and asset classes. A 5% swing on Bitcoin means something completely different than a 5% move on EURUSD, but the indicator handles both without manual tweaking.
+The key difference from the built-in Zig Zag is that you're not working with ATR or tick-based noise. Percentage-based thresholds scale across timeframes and asset classes. A 5% swing on Bitcoin means something different than a 5% move on EURUSD, but the indicator handles both without manual tweaking.
 
 ## Key Features That Set It Apart
 
-**Percentage threshold control** — This is the headline feature. Set it to 1% for scalping setups on crypto, or 15% for weekly swing positions. The indicator adapts without changing the core logic.
+**Percentage threshold control** — This is the headline feature. A tighter threshold suits faster setups on crypto; a wider one suits longer-horizon swing positions. The indicator adapts without changing the core logic.
 
-**Clean swing structure visualization** — The lines are crisp, and the pivot points are clearly marked. You can see market structure at a glance without cluttering the chart with dozens of overlapping indicators.
+**Clean swing structure visualization** — The lines are crisp, and the pivot points are clearly marked. Market structure is visible at a glance without cluttering the chart with multiple overlapping indicators.
 
-**No repainting on confirmed swings** — Here's the honest part: the last unconfirmed segment will repaint as new price data forms. That's unavoidable with any Zig Zag variant. But once a swing is locked, it stays locked. That's more than I can say for some other Zig Zag scripts on this platform.
+**No repainting on confirmed swings** — The last unconfirmed segment will repaint as new price data forms, which is unavoidable with any Zig Zag variant. Once a swing is locked, it stays locked.
 
 **Lightweight code** — No bloat. It runs smoothly even on heavily loaded multi-chart layouts.
 
-## Best Settings I Tested
+## Settings and How to Tune Them
 
-Start with these, then adjust for your timeframe and instrument:
+The percentage threshold is the primary parameter to adjust, and the right value depends on your timeframe and instrument:
 
-- **Percentage: 3–5%** for daily swings on crypto and equities
-- **Percentage: 1–2%** for intraday or forex
-- **Percentage: 8–10%** for weekly swing trading on indices
+- **Crypto and equities, daily swings** — a wider percentage threshold
+- **Intraday or forex** — a tighter percentage threshold, since forex moves are smaller in percentage terms
+- **Weekly swing trading on indices** — a wider threshold still
 
-For the screenshot above (MACD chart), I ran it with a 4% threshold on a daily BTC chart. That gave roughly 10–15 swing points over a three-month period — enough structure to see clear trends without chopping every minor pullback into a reversal signal.
+The logic is straightforward: larger, slower moves need a larger threshold to filter noise, while smaller-percentage instruments need a tighter one to register meaningful swings.
 
 ## How to Actually Use It
 
-The Zig Zag isn't an entry signal on its own. It's a structure filter. Here's the setup that worked best for me:
+The Zig Zag isn't an entry signal on its own. It's a structure filter. A few common applications:
 
 **Trend confirmation:** Look for successive higher highs and higher lows on the Zig Zag lines. Trade only in that direction. Wait for price to tap the most recent swing low as support, then enter on the first bullish candle close.
 
-**Reversal detection:** When price breaks the last significant swing point by more than the percentage threshold, that's your warning. Don't fight it. Wait for the new swing to form, then trade the retracement toward the broken level.
+**Reversal detection:** When price breaks the last significant swing point by more than the percentage threshold, that's your warning. Wait for the new swing to form, then trade the retracement toward the broken level.
 
-**Trailing stops:** Place your stop just beyond the most recent swing point. As new swings form, trail your stop accordingly. This keeps you in trends longer than fixed-percentage stops.
+**Trailing stops:** Place your stop just beyond the most recent swing point. As new swings form, trail your stop accordingly. This can keep you in trends longer than fixed-percentage stops.
 
-The worst way to use it: as a standalone buy/sell signal. Anyone who does that is going to get chopped up in ranging markets.
+The worst way to use it: as a standalone buy/sell signal. That approach tends to get chopped up in ranging markets.
 
 ## The Honest Pros and Cons
 
 **Pros:**
-- Percentage scaling works across all markets without per-chart tuning
-- Clear visual market structure — easier to read than most swing indicators
+- Percentage scaling works across markets without per-chart tuning
+- Clear visual market structure — easier to read than many swing indicators
 - Reliable once swings are confirmed
-- Zero learning curve if you've used any Zig Zag before
+- Minimal learning curve if you've used any Zig Zag before
 
 **Cons:**
 - The current swing always repaints until confirmed
-- No built-in alerts for new swing formations — you'll need to add those manually
-- Useless in sideways markets (but that's true of all trend indicators)
-- No customization for line style or pivot labels, which is a minor cosmetic gripe
+- No built-in alerts for new swing formations — those must be added manually
+- Not useful in sideways markets (though that's true of most trend tools)
+- No customization for line style or pivot labels
 
 ## Who This Is For
 
-Swing traders and position traders who need a clean structural overlay. If you trade daily or weekly charts and want to identify key levels without a dozen horizontal lines, this fits. Day traders will find the repainting issue too annoying for scalping, and the percentage thresholds are too wide for intraday noise unless you drop to 0.5% or less.
+Swing traders and position traders who need a clean structural overlay. If you trade daily or weekly charts and want to identify key levels without a dozen horizontal lines, this fits. Day traders may find the repainting issue problematic for scalping, and the percentage thresholds are wide for intraday noise unless set quite low.
 
 ## Better Alternatives
 
@@ -89,24 +90,23 @@ Swing traders and position traders who need a clean structural overlay. If you t
 Only the current unconfirmed swing segment. Confirmed pivots are locked and won't change.
 
 **What's the best percentage setting for scalping?**
-0.5% or lower, but honestly, this isn't the right tool for that job.
+A very tight threshold — but this isn't the ideal tool for that job.
 
 **Can I use it on crypto?**
-Yes — that's where it shines. The percentage scaling handles crypto's volatility without constant adjustment.
+Yes. The percentage scaling handles crypto's volatility without constant adjustment.
 
 **Does it work for forex?**
-Yes, but use tighter percentages (1–2%) since forex moves are smaller in percentage terms.
+Yes, but use tighter percentages since forex moves are smaller in percentage terms.
 
 **Will it give me buy/sell signals?**
 No. It's a structure indicator, not a signal generator. Pair it with price action or momentum confirmation.
 
 ## Final Verdict
 
-Zig_Zag_Percentage does exactly what it promises: it gives you reliable percentage-based market structure without unnecessary complexity. It's not flashy, it won't call tops and bottoms, and it won't work in choppy markets. But as a trend structure tool for swing traders, it's solid, dependable, and earns its place on your chart.
+Zig_Zag_Percentage does what it promises: reliable percentage-based market structure without unnecessary complexity. It's not flashy, it won't call tops and bottoms, and it won't work in choppy markets. But as a trend structure tool for swing traders, it's solid and dependable.
 
-For the price (free) and the clean execution, this is a strong four-star indicator. If it added alerts and eliminated repainting entirely, it'd be a five-star essential. As it stands, it's a well-built tool that respects your chart space and does its job without fuss.
+For the price (free) and the clean execution, it's a strong indicator. With alerts and no repainting at all, it would be close to essential. As it stands, it's a well-built tool that respects chart space and does its job without fuss.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

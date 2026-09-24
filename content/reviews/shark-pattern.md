@@ -16,93 +16,85 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Shark_Pattern review. Tested on real charts. Covers settings, entry/exit tricks, and who should skip this harmonic pattern tool."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Shark_Pattern is a harmonic pattern detector specifically for the **Shark** pattern — that 5-point reversal structure popularized by Scott Carney. Unlike generic pattern scanners that throw every Gartley, Bat, and Crab at you, this one laser-focuses on the Shark. It plots the pattern directly on your chart, labels the X-A-B-C-D points, and highlights potential reversal zones (PRZ). As the chart above shows, it catches the distinct "shark fin" shape with clean lines — no clutter.
-
-I ran it on BTC/USD 1H and EUR/USD 15M for a week. It flagged about 8 patterns total, with 5 hitting the PRZ and 3 reversing sharply. That's a 62.5% hit rate in my test — solid for a niche harmonic tool.
+Shark_Pattern is a harmonic pattern detector built specifically for the **Shark** pattern — the 5-point reversal structure popularized by Scott Carney. Unlike generic pattern scanners that surface every Gartley, Bat, and Crab, this one focuses on the Shark alone. It plots the pattern directly on the chart, labels the X-A-B-C-D points, and highlights potential reversal zones (PRZ). The result is the distinct "shark fin" shape drawn with clean lines rather than clutter.
 
 ## Key Features That Set It Apart
 
-- **Auto-detection with ratios**: It scans for the 0.886/1.13 X-A leg and the 1.13–1.618 BC projection specific to Shark patterns. No manual measuring.
-- **PRZ shading**: The potential reversal zone gets a transparent box. You see exactly where to expect price to reverse or bounce.
-- **Alert system**: It pings you when a new Shark pattern forms. I set mine to "Once per bar close" to avoid spam.
-- **Customizable labels**: You can toggle point labels (X, A, B, C, D) and the PRZ highlight. Helpful when you want a clean chart.
+- **Auto-detection with ratios**: It scans for the X-A leg and BC projection ratios specific to Shark patterns, so no manual measuring is required.
+- **PRZ shading**: The potential reversal zone is drawn as a transparent box, marking where price may reverse or bounce.
+- **Alert system**: It can notify you when a new Shark pattern forms.
+- **Customizable labels**: Point labels (X, A, B, C, D) and the PRZ highlight can be toggled on and off, which helps when you want a clean chart.
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-After tweaking for hours, here's what works:
+- **Min pattern size**: A floor on how many bars a valid pattern must span.
+- **Max pattern size**: A ceiling on pattern length. Set it too tight and legitimate patterns get filtered out.
+- **Ratio tolerance**: Controls how closely detected ratios must match the ideal Shark ratios. Too tight and valid patterns are missed; too loose and noise gets through.
+- **Show PRZ**: Toggles the reversal zone shading.
+- **Alert on completion**: Enables the pattern-found alert condition.
 
-- **Min pattern size**: Leave at default (20 bars). Lower values create too many false signals on lower timeframes.
-- **Max pattern size**: Set to 150–200 bars. Too tight and you miss the real sharks.
-- **Ratio tolerance**: 0.05 (5%). Tight enough to filter noise but not so tight that it misses valid patterns.
-- **Show PRZ**: Always ON. This is the money zone.
-- **Alert on completion**: ON. Enable it with "Pattern Found" condition.
-
-For timeframes: **1H to 4H** works best. Below 1H, the pattern becomes noise. Above 4H, you'll wait days for a signal.
+Timeframe choice matters more than any single setting: the pattern is generally read on intraday-to-swing charts, and the reliability of the structure degrades as you move to very short timeframes.
 
 ## How to Use It for Entries and Exits
 
-**Entry**: Wait for price to touch the PRZ (D point). Don't jump in immediately — let a candle close inside the zone. I enter on a 1H bullish/bearish engulfing or pin bar at the PRZ.
+**Entry**: Wait for price to reach the PRZ (D point) rather than jumping in early. A common approach is to require a candle close inside the zone, or a reversal candle such as an engulfing bar or pin bar at the PRZ.
 
-**Stop Loss**: Place 5–10 pips below the PRZ's low for buys, above its high for sells. The indicator doesn't give a stop level — you have to judge it.
+**Stop Loss**: The indicator does not draw a stop level, so it has to be placed manually — typically just beyond the PRZ's low for longs or high for shorts.
 
-**Take Profit**: First target is the 0.382 retracement of the C-D leg. Second target is the 0.618. Use the indicator's auto-drawn lines or measure manually.
+**Take Profit**: Fibonacci retracement levels of the C-D leg are the usual targets, with the shallower retracement as a first objective and the deeper one as a second. The indicator's drawn lines can be used for this, or the levels can be measured manually.
 
-**Reversal confirmation**: I combine with RSI divergence at the PRZ. If RSI shows hidden divergence on the 1H, the trade probability jumps.
+**Reversal confirmation**: Momentum divergence at the PRZ is a common filter for confirming a reversal before committing.
 
 ## Honest Pros and Cons
 
 **Pros**:
-- Focused — only Shark patterns, no junk.
-- PRZ visualization is crystal clear.
-- Alert system works reliably.
-- Lightweight — doesn't lag even on 50+ charts.
+- Focused — only Shark patterns, no unrelated signals.
+- PRZ visualization is clear.
+- Alert system for pattern completion.
+- Lightweight — does not bog down charts.
 
 **Cons**:
-- No stop-loss or take-profit lines drawn. You have to eyeball.
-- Can miss patterns if ratio tolerance is too tight.
-- Not beginner-friendly — you need to understand harmonic ratios.
+- No stop-loss or take-profit lines drawn; these must be judged manually.
+- Can miss patterns if ratio tolerance is set too tight.
+- Not beginner-friendly — understanding harmonic ratios is a prerequisite.
 - No multi-timeframe confirmation built in.
 
 ## Who It's Actually For
 
-- **Intermediate to advanced harmonic traders** who know the Shark pattern by heart.
-- **Swing traders** on 1H–4H charts.
+- **Intermediate to advanced harmonic traders** who already know the Shark pattern.
+- **Swing traders** working intraday-to-swing timeframes.
 - **Price action traders** who want a visual edge.
 - **Not for**: Scalpers, trend-followers, or anyone who doesn't understand Fibonacci ratios.
 
 ## Better Alternatives
 
-- **Harmonic Patterns by LuxAlgo**: More comprehensive — detects all harmonic patterns including Shark, with better ratio customization. But it's paid and heavier.
-- **ZigZag with Harmonic Detection**: Free alternative — manually mark points using a ZigZag tool. Less automated but more control.
+- **Harmonic Patterns by LuxAlgo**: More comprehensive — detects all harmonic patterns including Shark, with broader ratio customization. Paid and heavier.
+- **ZigZag with Harmonic Detection**: Free alternative — points are marked manually using a ZigZag tool. Less automated but more control.
 - **Autofibonacci by FxSolver**: Plots Fibonacci levels automatically. Pair it with manual Shark detection.
 
-If you only trade Shark patterns, this indicator is the best dedicated tool. If you want a Swiss Army knife, go with LuxAlgo.
+If you only trade Shark patterns, this indicator is a dedicated tool for that niche. If you want a Swiss Army knife, go with LuxAlgo.
 
 ## FAQ
 
 **Q: Does it work on crypto?**  
-A: Yes. I tested on BTC and ETH. Works fine, but crypto's volatility creates more false PRZ touches. Confirm with volume.
+A: Yes. Crypto's volatility produces more false PRZ touches, so confirming with volume is advisable.
 
 **Q: Can I use it on 5-minute charts?**  
-A: Technically yes, but don't. The noise will kill you. Stick to 1H+.
+A: Technically yes, but the noise on very short timeframes makes the pattern far less reliable. Higher timeframes are the intended use.
 
 **Q: How often does it repaint?**  
-A: It repaints until the pattern is confirmed (C point established). After that, points stay fixed. That's standard for harmonic patterns.
+A: Harmonic patterns of this type typically repaint until the pattern is confirmed (once the C point is established). After that, points stay fixed.
 
 **Q: Is it free?**  
 A: Yes, it's a free community script on TradingView. No paywall.
 
 ## Final Verdict
 
-Shark_Pattern is a sharp, focused tool that does one thing well: find Shark patterns. It's not flashy, but it works. The PRZ shading and alerts are its strongest features. The lack of stop-loss levels and multi-timeframe analysis holds it back from a 5-star rating. If you're serious about harmonic trading, this is a solid addition to your toolkit. Just don't expect it to trade for you.
-
-**Rating**: ⭐⭐⭐⭐ (4/5) — Reliable, honest, and effective for its niche.
-
----
+Shark_Pattern is a focused tool that does one thing: find Shark patterns. The PRZ shading and alerts are its strongest features. The lack of stop-loss levels and multi-timeframe analysis holds it back. For traders who already work with harmonic patterns, it's a reasonable addition to the toolkit — but it won't trade for you.
 
 ## Go Deeper with The Indicator Lab
 

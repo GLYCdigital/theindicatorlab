@@ -16,52 +16,54 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest On Balance Volume review: settings, divergence signals, and how to use it for breakout confirmation. No fluff, just what works."
+grounding: "none (no source found)"
 ---
-
 ## What OBV Actually Does
 
-On Balance Volume (OBV) is a momentum oscillator that uses volume flow to predict price movements. It's not a lagging indicator in the traditional sense—it's a leading indicator because volume usually changes before price. OBV adds volume on up days and subtracts volume on down days, creating a cumulative line that confirms or diverges from price action.
+On Balance Volume (OBV) is a momentum oscillator that uses volume flow to anticipate price movement. It is a leading indicator rather than a lagging one, on the premise that volume shifts before price does. OBV adds volume on up days and subtracts volume on down days, building a cumulative line that either confirms price action or diverges from it.
 
 ## Key Features That Set It Apart
 
-- **Volume-weighted confirmation**: OBV doesn't just show volume spikes; it tracks cumulative buying/selling pressure over time.
-- **Divergence detection**: When price makes a new high but OBV doesn't, that's a red flag. The chart above shows exactly this—price hit a higher high in June, but OBV stayed flat. That divergence preceded a 12% drop.
+- **Volume-weighted confirmation**: OBV doesn't just flag volume spikes; it tracks cumulative buying and selling pressure over time.
+- **Divergence detection**: When price prints a new high and OBV does not, that gap is a warning. A flat OBV against a rising price high is the classic divergence pattern.
 - **Trendline breaks work**: Drawing a trendline on OBV itself can signal trend exhaustion before price breaks its own trendline.
 
-## Best Settings
+## Settings and How to Tune Them
 
-Default settings are fine for most traders. The standard OBV uses no smoothing, which is actually a strength—it reacts to every tick. But if you're trading higher timeframes, add a 14-period SMA or EMA as a signal line:
+The default OBV calculation uses no smoothing, which is a feature rather than a flaw—it reacts to every tick. The tradeoff is noise, and the usual fix is to add a moving average as a signal line. How you set that depends on your horizon:
 
-- **Intraday (5min-1h)**: Raw OBV with a 5-period EMA for signal line crossovers.
-- **Swing trading (4h-daily)**: Raw OBV, focus on divergence.
-- **Position trading (weekly)**: Add a 21-period SMA to filter out noise.
+- **Intraday**: Raw OBV, with a short EMA as a signal line for crossovers.
+- **Swing trading**: Raw OBV, with the focus on divergence rather than signal-line crosses.
+- **Position trading**: Add a longer SMA to filter out noise.
+
+There is no single best configuration here. The shorter the timeframe, the more you need smoothing to make the line readable; the longer the timeframe, the less you need it.
 
 ## How to Use It for Entries and Exits
 
 **Entry Logic:**
 1. Wait for price to break above a resistance level.
-2. Confirm with OBV breaking above its own recent high—that's real buying pressure.
+2. Confirm with OBV breaking above its own recent high—that indicates real buying pressure.
 3. Enter on a pullback to the OBV trendline if the trendline is rising.
 
 **Exit Logic:**
-- OBV diverges from price? Exit immediately. Don't wait for price to confirm the divergence.
-- OBV makes a lower high while price makes a higher high? That's your signal to sell or short.
+- If OBV diverges from price, exit. Waiting for price to confirm the divergence usually costs you the move.
+- OBV making a lower high while price makes a higher high is a signal to sell or short.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Works across all markets—stocks, crypto, forex, futures.
-- Divergence signals are early and reliable when confirmed with price structure.
-- No repainting, no complex math. It's simple and transparent.
+- Works across stocks, crypto, forex and futures.
+- Divergence signals arrive early and carry more weight when confirmed with price structure.
+- Simple, transparent math with no repainting.
 
 **Cons:**
-- Raw OBV is noisy on lower timeframes. You'll see false signals on 1-minute charts.
-- Doesn't work well in sideways, low-volume markets. OBV will just drift.
-- Volume data quality varies by broker. If your broker's volume is synthetic, OBV is meaningless.
+- Raw OBV is noisy on lower timeframes, which produces false signals.
+- Poor performance in sideways, low-volume markets—OBV tends to drift.
+- Volume data quality varies by broker. If the feed is synthetic, OBV is meaningless.
 
 ## Who It's Actually For
 
-This is for traders who already understand volume analysis. If you're just starting out, OBV will confuse you because it diverges constantly. Wait until you can read basic price action and identify support/resistance. Then add OBV to confirm your read of the market.
+This is for traders who already understand volume analysis. For someone starting out, OBV will confuse more than help, because it diverges constantly. Get comfortable reading basic price action and identifying support and resistance first, then add OBV as a confirmation layer.
 
 ## Better Alternatives
 
@@ -71,22 +73,28 @@ This is for traders who already understand volume analysis. If you're just start
 
 ## FAQ
 
-**Q: Does OBV repaint?**  
-No. OBV is calculated cumulatively from the first bar on your chart. It's 100% objective.
+**Q: Does OBV repaint?**
+No. OBV is calculated cumulatively from the first bar on your chart, so it is fully objective.
 
-**Q: Can I use OBV alone?**  
-No. OBV is a confirmation tool, not a standalone system. You need price structure, support/resistance, or a trend filter.
+**Q: Can I use OBV alone?**
+No. OBV is a confirmation tool, not a standalone system. You need price structure, support/resistance, or a trend filter alongside it.
 
-**Q: Why does my OBV look different from another trader's?**  
-Different chart timeframes use different starting points. OBV resets if you change the chart's start date. Always compare OBV on the same timeframe and start date.
+**Q: Why does my OBV look different from another trader's?**
+Different chart timeframes use different starting points, and OBV resets if you change the chart's start date. Compare OBV on the same timeframe and start date.
 
 ## Final Verdict
 
-OBV is a solid, free tool that's been around for decades because it works—when used correctly. It's not a magic bullet, but for volume-based divergence and breakout confirmation, it's hard to beat. I give it 4 stars because of the noise on lower timeframes and the need for context. But if you're patient and trade higher timeframes, you'll find it invaluable.
+OBV is a solid, free tool that has survived for decades because it works when used correctly. It is not a magic bullet, but for volume-based divergence and breakout confirmation it is hard to beat. The noise on lower timeframes and the need for context are real limitations. Traders with patience and a higher-timeframe approach will get the most out of it.
 
-**⭐ 4/5 – Reliable divergence tool that rewards patience.**
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **OBV** implementation was backtested on 25 markets over 5 years of daily data (37,685 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: AMD 53.2%, MSFT 52.9%, AAPL 52.7%, QQQ 52.5%
+- Weakest markets: META 47.8%, LINKUSD 47.4%, SHIBUSD 27.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

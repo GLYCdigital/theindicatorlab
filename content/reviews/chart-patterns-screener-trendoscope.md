@@ -16,117 +16,113 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Automated chart pattern screener that scans for 40+ patterns. Honest review of settings, entry/exit strategies, pros/cons, and who it's for."
+grounding: "none (no source found)"
+---
+**Description:** Automated chart pattern screener that scans for 40+ patterns. Review of settings, entry/exit strategies, pros/cons, and who it's for.
+
 ---
 
-**Description:** Automated chart pattern screener that scans for 40+ patterns. Honest review of settings, entry/exit strategies, pros/cons, and who it's for.
-
----
-
-If you've spent hours staring at charts trying to spot head and shoulders or double tops, you know the pain. The Chart_Patterns_Screener_Trendoscope promises to automate that grind. I've been running it on multiple timeframes for the past week, and here's the real deal.
+Spending hours staring at charts trying to spot head and shoulders or double tops is a familiar grind. The Chart_Patterns_Screener_Trendoscope is marketed as a way to automate that work. What follows is a breakdown of what the tool does, how its settings are organized, and where it fits.
 
 ### What This Indicator Actually Does
 
-This isn't a lagging moving average or a repainting oscillator. It's a pattern recognition engine that scans your chart in real-time for 40+ classical chart patterns—from flag and pennant formations to more complex structures like three-drives and cup-and-handle. It then plots them directly on your chart with clear labels and risk/reward targets.
+This is not a lagging moving average or an oscillator. It's a pattern recognition engine that scans your chart for 40+ classical chart patterns—from flag and pennant formations to more complex structures like three-drives and cup-and-handle. It plots them directly on your chart with labels and risk/reward targets.
 
-The key difference from other pattern screeners: it doesn't just draw lines. It calculates projected price targets based on the pattern's measured move, and it gives you a confidence score (High, Medium, Low) so you know which patterns are statistically more reliable.
+The key difference from other pattern screeners: it doesn't just draw lines. It calculates projected price targets based on the pattern's measured move, and it assigns a confidence score (High, Medium, Low) as a rough guide to which patterns tend to be more reliable.
 
 ### Key Features That Set It Apart
 
-- **Real-time scanning** – Patterns update as new bars form. You can watch a descending triangle form and get an alert the moment it breaks.
-- **Customizable pattern list** – You can toggle individual patterns on/off. I turned off rare ones like "falling three methods" because they clutter the chart on lower timeframes.
-- **Measured move targets** – For each pattern, it draws a rectangle showing the estimated price target. On the chart above, you can see it nailed a 1.5R target on that descending triangle in EUR/USD.
-- **Confidence scoring** – This is gold. High-confidence patterns (usually on higher timeframes) have a smaller error margin. Low-confidence ones? Skip them.
-- **Alert system** – You can set alerts for pattern completion, breakout, or invalidation. I use the breakout alert for my entries.
+- **Real-time scanning** – Patterns update as new bars form, so a descending triangle can be watched as it develops, with an alert available at the break.
+- **Customizable pattern list** – Individual patterns can be toggled on and off. Rare patterns such as "falling three methods" can be disabled because they clutter the chart on lower timeframes.
+- **Measured move targets** – For each pattern, a rectangle shows the estimated price target.
+- **Confidence scoring** – Patterns are graded High, Medium, or Low. High-confidence patterns, typically on higher timeframes, carry a smaller error margin. Low-confidence ones are best skipped.
+- **Alert system** – Alerts can be set for pattern completion, breakout, or invalidation. Breakout alerts are the logical choice for entries.
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-I tested this on 15-minute, 1-hour, and daily charts. Here's what worked:
+The indicator runs across timeframes, and the practical tradeoff is signal quality versus frequency. Lower timeframes produce more patterns and more noise; higher timeframes produce fewer, cleaner formations. The settings that matter most:
 
-- **Timeframe:** 1-hour or higher. On 15-minute charts, you get too many false signals. The indicator still scans, but the noise-to-signal ratio is brutal.
-- **Patterns to keep on:** Head and shoulders, double top/bottom, ascending/descending triangles, flag/pennant, wedge. These are the bread and butter. Keep "three-methods" and "window" off.
-- **Confidence filter:** Set to "Medium" or above. "Low" confidence patterns repaint too often.
-- **Minimum pattern length:** I set this to 20 bars. Shorter patterns are noise.
-
-**My recommended preset:**  
-- Timeframe: 1H  
-- Patterns: H&S, Double Tops/Bottoms, Triangles, Flags  
-- Confidence: Medium+  
-- Alerts: On breakout only (not on pattern formation)
+- **Timeframe:** Higher timeframes are the sensible default. Lower timeframes generate a large number of signals with a poor noise-to-signal ratio.
+- **Patterns to keep on:** Head and shoulders, double top/bottom, ascending/descending triangles, flag/pennant, and wedge are the core set. "Three-methods" and "window" patterns are candidates to leave off.
+- **Confidence filter:** Setting this to Medium or above filters out the weaker formations. Low-confidence patterns are the least stable.
+- **Minimum pattern length:** This controls how many bars a formation must span before it qualifies. Shorter patterns are more likely to be noise; raising the threshold reduces clutter.
+- **Alerts:** Breakout-only alerts are the cleaner configuration for entries, as opposed to alerts on pattern formation.
 
 ### How to Use It for Entries and Exits
 
-This is where the indicator shines if you have a plan. Here's my workflow:
+The indicator is most useful when paired with a defined workflow:
 
-1. **Scan for patterns** – Let the indicator run on your watchlist (it works on any symbol). Look for High or Medium confidence patterns.
-2. **Check the target** – The measured move rectangle gives you a price target. If it's at least 1.5x your stop loss distance (based on the pattern's neckline or trendline), consider the trade.
-3. **Enter on breakout** – Don't enter when the pattern is forming. Wait for price to break the neckline/trendline with a confirmed candle close. The indicator will flash an alert.
-4. **Stop loss placement** – Place your stop just below/above the pattern's invalidation point (the opposite side of the breakout). The indicator doesn't do this automatically, so you'll need to calculate it yourself.
-5. **Take profit** – Use the indicator's target as your first TP. I usually take 50% there and trail the rest.
+1. **Scan for patterns** – Run the indicator across a watchlist; it works on any symbol. Look for High or Medium confidence patterns.
+2. **Check the target** – The measured move rectangle gives a price target. If that target is a meaningful multiple of your stop distance (based on the pattern's neckline or trendline), the setup is worth considering.
+3. **Enter on breakout** – Entering while the pattern is still forming is premature. Wait for price to break the neckline or trendline with a confirmed candle close, at which point the alert fires.
+4. **Stop loss placement** – Place the stop just beyond the pattern's invalidation point, on the opposite side of the breakout. The indicator does not calculate this automatically, so it must be measured manually.
+5. **Take profit** – The indicator's target can serve as a first take-profit level, with the remainder of the position trailed.
 
-Example from my testing: On the 1-hour chart above, there was a bullish flag on BTC/USD. The indicator gave a target of $68,200. I entered at $66,800 after the breakout candle, stopped at $66,000 (below the flag's lower trendline), and took profit at $68,200. That's a clean 1.4R.
-
-### Honest Pros and Cons
+### Pros and Cons
 
 **Pros:**
 - Saves hours of manual chart scanning
-- Confidence scoring helps filter garbage patterns
-- Measured move targets are surprisingly accurate on higher timeframes
+- Confidence scoring helps filter weaker patterns
+- Measured move targets are useful on higher timeframes
 - Works on any market (stocks, forex, crypto)
-- Alerts are customizable and responsive
+- Alerts are customizable
 
 **Cons:**
-- On lower timeframes (under 1H), it's a mess. Too many patterns, too much repainting.
-- No built-in stop loss calculation. You have to manually measure the pattern's height.
-- The "Low" confidence patterns are borderline useless. They repaint and disappear constantly.
-- It's not a standalone system. You still need to manage risk and context (e.g., trend direction, volume).
-- The UI can get cluttered if you have multiple patterns on screen. I recommend turning off "Show all patterns" and only keeping the top 3-5.
+- On lower timeframes (under 1H), it produces too many patterns and too much noise.
+- No built-in stop loss calculation. The pattern's height has to be measured manually.
+- The "Low" confidence patterns are borderline useless—they shift and disappear frequently.
+- It's not a standalone system. Risk management and context (trend direction, volume) still fall to the trader.
+- The UI can get cluttered with multiple patterns on screen. Turning off "Show all patterns" and keeping only the top few is advisable.
 
 ### Who It's Actually For
 
 - **Swing traders** on 1H to daily charts who want to automate pattern recognition.
-- **Traders who use classical TA** but hate drawing trendlines manually.
-- **Portfolio managers** screening multiple markets for high-probability setups.
+- **Traders who use classical TA** but dislike drawing trendlines manually.
+- **Portfolio managers** screening multiple markets for setups.
 
 It's NOT for:
 - Scalpers (timeframe too low)
 - Beginners who think patterns guarantee a trade (they don't—context matters)
 - Anyone who wants a "set and forget" system
 
-### Better Alternatives If They Exist
+### Alternatives
 
-- **Patternz** – More affordable, but less accurate on target projections. Good for beginners.
-- **Autoview chart patterns** – Better for multi-symbol scanning (e.g., scanning the entire S&P 500), but the UI is uglier.
-- **TradingView's built-in pattern recognition** – Free, but limited to only 10 patterns and no confidence scoring. This indicator is a major upgrade.
+- **Patternz** – More affordable, but less accurate on target projections. Suited to beginners.
+- **Autoview chart patterns** – Better for multi-symbol scanning (e.g., scanning the entire S&P 500), but the UI is less polished.
+- **TradingView's built-in pattern recognition** – Free, but limited to only 10 patterns and no confidence scoring.
 
-If you're serious about pattern trading, this is the best I've tested for single-symbol scanning with reliable targets.
-
-### FAQ Addressing Real Trader Questions
+### FAQ
 
 **Q: Does it repaint?**  
-Yes, but only on "Low" confidence patterns. Medium and High confidence patterns stabilize after the breakout candle closes. If you're using it for alerts, always wait for the candle close.
+Only on "Low" confidence patterns. Medium and High confidence patterns stabilize after the breakout candle closes. For alerts, always wait for the candle close.
 
 **Q: Can I use it for crypto?**  
-Absolutely. I tested on BTC, ETH, and SOL. Works fine, but crypto patterns break more violently. Use wider stops.
+Yes. Crypto patterns tend to break more violently, so wider stops are warranted.
 
 **Q: How many patterns can it detect?**  
-Over 40, but I recommend sticking to 8-10 core ones. More patterns = more false signals.
+Over 40, but sticking to 8-10 core ones is advisable. More patterns means more false signals.
 
 **Q: Does it work with TradingView's Pine Script v5?**  
 Yes, it's built on v5. No compatibility issues.
 
 **Q: Is it worth the price?**  
-At around $30-50/month (depending on promo), it's cheaper than most pattern screeners. If you trade patterns at least 5 times a week, yes. If you're casual, stick to the free tools.
+Price varies by promotion. For traders who trade patterns frequently, the cost compares favorably with most pattern screeners. Casual traders are better served by free tools.
 
 ### Final Verdict
 
-The Chart_Patterns_Screener_Trendoscope is a solid tool for traders who rely on classical chart patterns. It's not perfect—the low-confidence noise and lack of automated stop loss are genuine drawbacks—but the confidence scoring and measured move targets are best-in-class for a single-symbol screener.
+The Chart_Patterns_Screener_Trendoscope is a solid tool for traders who rely on classical chart patterns. It's not perfect—the low-confidence noise and lack of automated stop loss are genuine drawbacks—but the confidence scoring and measured move targets are strong for a single-symbol screener.
 
-If you're tired of drawing trendlines manually and want a reliable assistant for your daily scan, this is a worthy addition to your toolkit. Just don't expect it to trade for you.
+For traders tired of drawing trendlines manually, it's a reasonable assistant for a daily scan. It should not be expected to trade for you.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star for the low-confidence repainting and the clutter on lower timeframes. But for its core purpose—high-confidence pattern detection with actionable targets—it earns its keep.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **Trend** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.4%, QQQ 52.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 45.7%, VIX 43.9%, SHIBUSD 29.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

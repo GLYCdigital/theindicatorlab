@@ -16,98 +16,102 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A momentum oscillator that measures the speed of price change. Solid for identifying overbought/oversold conditions and divergences across any timeframe."
+grounding: "none (no source found)"
 ---
+**Rate of Change (ROC)** is one of the older momentum oscillators still in circulation. It measures the percentage change in price over a set number of periods. No smoothing, no averaging—just the raw velocity of price movement.
 
-**Rate of Change (ROC)** is one of those "old but gold" momentum oscillators that’s been around since before most of us were trading. It’s simple: it measures the percentage change in price over a set number of periods. No smoothing, no lag—just raw velocity of price movement.
-
-I’ve been using ROC for years, mostly as a divergence tool and a quick way to spot when momentum is accelerating or dying. Let me break down what it actually does on the chart, how to set it up, and where it falls short.
+It's used most often as a divergence tool and as a quick read on whether momentum is accelerating or fading. Here's what it does on the chart, how it's typically configured, and where it falls short.
 
 ## What This Indicator Actually Does
 
-The ROC line oscillates above and below a zero centerline. When it’s above zero, price is rising relative to the lookback period. Below zero, price is falling. The further from zero, the stronger the momentum—but extreme readings often warn of exhaustion.
-
-The default 12-period setting works fine, but I’ll show you why I tweak it.
+The ROC line oscillates above and below a zero centerline. Above zero, price is rising relative to the lookback period. Below zero, price is falling. The further from zero, the stronger the momentum—though extreme readings can warn of exhaustion.
 
 ## Key Features That Set It Apart
 
-- **No smoothing.** Unlike RSI or Stochastics, ROC doesn’t average anything. It’s pure raw momentum. This makes it more responsive to sudden price shifts.
-- **Zero-line cross.** A clean, objective signal. Cross above zero = bullish. Cross below = bearish. No overbought/oversold thresholds to second-guess.
-- **Divergence detection.** This is where ROC shines. As the chart above shows, when price makes a higher high but ROC prints a lower high, that’s bearish divergence—a classic reversal signal.
+- **No smoothing.** Unlike RSI or Stochastics, ROC doesn't average anything. It's raw momentum, which makes it more responsive to sudden price shifts.
+- **Zero-line cross.** A clean, objective signal. Cross above zero is bullish, cross below is bearish. There are no built-in overbought/oversold thresholds to second-guess.
+- **Divergence detection.** When price makes a higher high but ROC prints a lower high, that's bearish divergence—a classic reversal signal.
 
-## Best Settings With Specific Recommendations
+## Settings and How to Tune Them
 
-For **daily and intraday** charts, I use:
-- **Length:** 12 (default) for swing trades; 20 for slower, more reliable momentum shifts
-- **Smoothing:** None. Adding SMA smoothing kills ROC’s responsiveness.
-- **Overbought/Oversold levels:** I draw horizontal lines at +5 and -5 for most assets. For volatile stocks or crypto, bump to +10/-10.
-
-Pro tip: On lower timeframes (1m–15m), reduce length to 6–8 to catch micro-momentum. On weekly charts, 20+ is better.
+- **Length:** The default is 12 periods. A longer length gives slower, smoother momentum shifts; a shorter length reacts faster but produces more noise.
+- **Smoothing:** None. Adding moving-average smoothing reduces ROC's responsiveness.
+- **Overbought/Oversold levels:** ROC has no fixed scale, so any thresholds must be drawn manually. Wider levels suit more volatile assets; tighter levels suit calmer ones.
+- **Timeframe adjustments:** On lower timeframes, a shorter length catches faster momentum. On higher timeframes, a longer length is generally more appropriate. The right values depend on the asset and the trader's holding period.
 
 ## How to Use It for Entries and Exits
 
 **Entry signals:**
-- Zero-line cross: Wait for the close after the cross. Don’t chase.
-- Divergence: Look for price making a lower low while ROC makes a higher low (bullish divergence). Enter on the first green candle after.
-- Overbought/oversold bounces: If ROC hits -5 or below and then reverses up, it’s a long entry—but only if price respects a key support.
+- Zero-line cross: wait for the close after the cross rather than chasing the signal.
+- Divergence: price making a lower low while ROC makes a higher low is bullish divergence.
+- Overbought/oversold bounces: if ROC reaches a lower threshold and then reverses up, that can be treated as a long entry—but only if price is respecting a key support level.
 
 **Exit signals:**
-- ROC crossing back below zero after a long move? Take partial profits.
-- Bearish divergence forming after a strong trend? Tighten stops.
+- ROC crossing back below zero after a long move can justify taking partial profits.
+- Bearish divergence forming after a strong trend is a reason to tighten stops.
 
-**False signal filter:** I never take a zero-line cross unless price itself is above/below the 50 EMA. This cuts out whipsaws in choppy markets.
+**False signal filter:** A common approach is to skip zero-line crosses unless price itself is above or below a trend filter such as the 50 EMA. This reduces whipsaws in choppy markets.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Lightning-fast response to price changes
-- Works on any timeframe (1m to monthly)
-- No repainting (unlike many momentum indicators)
+- Fast response to price changes
+- Works across timeframes
+- Does not repaint
 - Zero-line cross is clean and objective
 
 **Cons:**
-- Very noisy in ranging markets—lots of false crosses
-- No built-in overbought/oversold thresholds (you have to set them manually)
-- Can give conflicting signals with other momentum tools (e.g., RSI might show oversold while ROC screams "still falling")
+- Noisy in ranging markets—lots of false crosses
+- No built-in overbought/oversold thresholds; they must be set manually
+- Can conflict with other momentum tools (RSI may show oversold while ROC still reads as falling)
 
-## Who It’s Actually For
+## Who It's Actually For
 
 This is for traders who:
 - Want a raw momentum read without lag
 - Use divergence as part of their strategy
 - Trade breakouts or trend reversals
 
-It’s **not** for scalpers who need high-probability, low-noise signals. And definitely not for anyone who hates manually drawing levels.
+It's not for scalpers who need low-noise, high-probability signals, and not for anyone who dislikes drawing levels manually.
 
 ## Better Alternatives If They Exist
 
-- **RSI (Relative Strength Index):** Better for overbought/oversold zones due to fixed 0–100 scale. Less prone to extreme spikes.
-- **MACD:** Smoother, with histogram for momentum and signal line cross. Better for trend-following.
-- **Stochastic RSI:** More sensitive to short-term momentum extremes. Good for scalping.
+- **RSI:** Better for overbought/oversold zones due to its fixed 0–100 scale, and less prone to extreme spikes.
+- **MACD:** Smoother, with a histogram for momentum and a signal line cross. Better suited to trend-following.
+- **Stochastic RSI:** More sensitive to short-term momentum extremes.
 
-If you only want raw momentum, ROC wins. But for most traders, RSI or MACD offers better practical signals.
+If raw momentum is the only goal, ROC does that job. For most traders, RSI or MACD offers more practical signals.
 
 ## FAQ
 
-**Q: Does ROC repaint?**  
-No. It’s a fixed calculation based on historical price. What you see is what you get.
+**Q: Does ROC repaint?**
+No. It's a fixed calculation based on historical price.
 
-**Q: Can I use ROC alone to trade?**  
-Technically yes, but I wouldn’t. Combine it with price action (support/resistance) and a trend filter (like 50 EMA). Solo ROC will get you chopped up.
+**Q: Can I use ROC alone to trade?**
+Technically yes, but it's usually paired with price action (support/resistance) and a trend filter. Solo ROC tends to get chopped up.
 
-**Q: Why do my ROC readings look different from someone else’s?**  
-Different lookback lengths. 12-period ROC and 20-period ROC will give very different values. Always specify your settings.
+**Q: Why do my ROC readings look different from someone else's?**
+Different lookback lengths. A 12-period ROC and a 20-period ROC will give very different values. Always specify your settings.
 
-**Q: Is ROC good for crypto?**  
-Yes, but set overbought/oversold wider (±10 to ±15). Crypto moves faster than forex or stocks.
+**Q: Is ROC good for crypto?**
+It can be used, but overbought/oversold levels should be set wider, since crypto moves faster than forex or stocks.
 
 ## Final Verdict
 
-Rate of Change is a classic that’s earned its place. It’s not a holy grail—nothing is—but it’s a reliable momentum tool that pairs well with trend confirmation. If you’re already using RSI or MACD, try adding ROC for divergence spotting. It’ll sharpen your reversals.
+Rate of Change is a classic that has earned its place. It's not a holy grail—nothing is—but it's a reliable momentum tool that pairs well with trend confirmation. If you're already using RSI or MACD, adding ROC can sharpen divergence spotting.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
+**Rating: ⭐⭐⭐⭐ (4/5)**
 Fast, honest, and useful—but noisy in ranges. Keep it in your toolbox, not your single-point decision maker.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ROC** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.6%** (50% = coin flip)
+- Strongest markets: USDJPY 55.3%, AMD 54.0%, AAPL 53.7%, SPY 53.5%
+- Weakest markets: LTCUSD 46.4%, VIX 44.7%, SHIBUSD 29.2%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

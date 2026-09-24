@@ -17,93 +17,66 @@ categories:
 rating: 4
 description: "Honest Mtf_Hilbert_Quadrature_Phase_Lock_Fibonacciflux review: settings, entry signals, multi-timeframe logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/LnE2tzl4-MTF-Hilbert-Quadrature-Phase-Lock-FibonacciFlux/"
+sources: ["https://www.tradingview.com/script/LnE2tzl4-MTF-Hilbert-Quadrature-Phase-Lock-FibonacciFlux/"]
 ---
-Let's be honest about what this indicator actually is before we get into the hype. The Mtf_Hilbert_Quadrature_Phase_Lock_Fibonacciflux is a mouthful, but underneath that ridiculous name sits a genuinely clever trend-following tool. It combines John Ehlers' Hilbert transform quadrature phase detection with Fibonacci retracement levels, then layers on multi-timeframe analysis. That's a lot of heavy math for one script, and surprisingly, it mostly works.
+# Get started — An Honest Look at a Phase-Locking Experiment
 
-I spent two weeks trading this on BTC/USD and EUR/USD across 1H and 4H charts. The chart above shows it running on a MACD-style pane — don't let that confuse you. This isn't a MACD clone. The histogram you see is a phase-lock oscillator, and the colored dots are the actual buy/sell signals generated from the Hilbert phase relationships.
+Let's be clear about what this indicator actually is before anything else. Despite the name, this is not a trading system, not a signal service, and by its own documentation not a claim of profitability. It's an experiment: a test of whether four timeframes' cycles line up, and the answer the author reports is that they do not — and, more interestingly, that the statistic used could not have detected the structure that is actually there.
 
-**What Actually Sets It Apart**
+The script is a study. It runs inside four timeframes (15m, 1H, 4H, 1D by default), detrends price against a weighted moving average, and runs a causal six-tap Ehlers-style FIR quadrature pair on the result. That produces an in-phase and quadrature component per timeframe, and from those an instantaneous phase and amplitude — computed on each timeframe's own bars rather than resampled from the chart.
 
-Most trend indicators are lagging. Moving averages, MACD, even ADX — they all confirm what already happened. The Hilbert transform approach is different. It attempts to measure the *phase* of the cycle, which means it can anticipate turning points slightly earlier than traditional lagging tools. That's the real value here.
+Each timeframe's phase is gated by its quadrature amplitude divided by its own 20-bar EMA, capped at 1. The four gated phase vectors are combined into a weighted circular mean. The white line is 50 + 50·cos of that mean phase. The teal area is the phase-locking value: the resultant vector length, renormalised by the active weight, on a 0–100 scale.
 
-The Fibonacci overlay is the second piece. Instead of drawing arbitrary horizontal lines, the indicator projects Fibonacci levels from the detected swing points of the dominant cycle. The result is dynamic support/resistance that shifts with the market's actual rhythm. The combination of phase detection and Fibonacci levels gives you confluence zones that most indicators simply don't offer.
+**What the measurement found**
 
-The MTF component is the third pillar. You can set a higher timeframe for the trend bias while trading signals on your current chart. This is handled better here than in most MTF indicators because the phase-lock logic doesn't just copy a higher-timeframe value — it recalculates the full Hilbert transform on that timeframe. That's computationally heavier but produces more coherent confluence.
+The headline result is counterintuitive: real data produces *less* phase clustering than deliberately misaligned data. On BINANCE:BTCUSDT 15m across 5,836 scored bars, the mean phase-lock value was 36.76 against a shift-null median of 40.12, with p = 0.010 over 200 draws. A second seed gave 36.53 against 40.37 at p = 0.005, and at 1,000 draws the same direction held at p = 0.005 across all four instrument-and-timeframe cells tested.
 
-**Settings That Actually Work**
+The mechanism matters more than the p-value. Two of the three adjacent pairs do carry a real relationship: 15m→1H shows circular coupling of R = 0.115 at −176°, and 1H→4H shows R = 0.136 at +155°. Both sit close to anti-phase. The third pair, 4H→1D, shows nothing (R = 0.123 against a shift null at p = 0.189). A resultant-length statistic adds vectors together, so a pair near 180° apart cancels rather than accumulates. The structure that exists is precisely the structure this statistic is built to erase. The coupling is weak regardless — roughly 1.5% of circular variance — so this describes a small effect, not a discovery.
 
-After extensive testing, here's what I landed on:
+**What the threshold and quadrants actually tell you**
 
-- **Cycle Length:** 20 (default is fine, but 20-30 works best on 1H-4H)
-- **Multi-Timeframe Factor:** 3 (so on a 1H chart, it pulls 3H trend bias — I found this sweeter than the default 4)
-- **Fibonacci Levels:** Enable 0.382, 0.5, 0.618 — disable the rest to reduce clutter
-- **Signal Sensitivity:** 75% (lower it if you get too many whipsaws, raise it if signals are too rare)
+The 70 line is crossed 70 times on real data against a null median of 117 crossings. The trough quadrant is not informative either: occupied on 22.65% of bars at the default 45° half-width, with the shift null reproducing almost the same figure (23.13%, p = 0.612).
 
-The default settings are actually well-chosen, which is rare for a script with this many parameters. But the MTF factor is where you'll want to experiment. On trending pairs like GBP/JPY, a higher factor (4-5) reduces false signals. On ranging pairs like EUR/CHF, you'll want it lower (2-3) or the indicator will miss most moves.
+There is no edge here. A nominally significant one-day return after a 70 crossing (+0.974%, p = 0.0199) fails both robustness checks: on ETHUSDT over the identical window it gives p = 0.270, and on BTCUSDT 68% of the effect comes from a single calendar day, after whose removal the mean is 0.338% against an unconditional drift of 0.328% over the same window.
 
-**How I Actually Trade It**
+**The scale and what changed**
 
-The cleanest setup is a two-step confirmation:
+The phase-lock value can reach 100 but rarely does: it is bounded by 100 times the weighted mean gate, which averages 0.766, so a typical bar tops out near 77 even with four identical phases. All four gates saturate at 1 on 2.7% of bars. Decomposed multiplicatively, 88% of the variance in the log of the phase-lock value comes from the resultant length and 12% from the gate.
 
-1. **Trend filter:** The higher-timeframe phase-lock line must be above its signal line (bullish) or below it (bearish). This is your bias.
-2. **Entry trigger:** The current-timeframe histogram changes color and prints a dot. Long only if the MTF bias is bullish, short only if bearish.
+This version removed the two trough markers. The author's reasoning: a green up-triangle at the bottom and a red down-triangle at the top are universal buy/sell grammar, and the measurement points the other way — the mean one-day return starting inside the trough quadrant was +0.226% against +0.687% inside the peak quadrant. The state remains as neutral background shading, retitled to describe what it is (mean phase near the minimum of its cosine), and the two alerts built on it are gone. The one remaining alert reports the threshold crossing and states in its own message that this is a reading of the statistic, not a claim of synchronisation.
 
-For exits, I use the Fibonacci levels. If I'm long, the 0.618 extension is my first profit target, and I move my stop to breakeven once price hits the 0.382 level. The indicator's dynamic levels work surprisingly well as trailing zones because they recalculate with each completed cycle.
+Housekeeping: a phase audit table promised by the settings and five helper functions never existed in the file, so the promise was deleted rather than the table built. Four of the six series returned from each timeframe sensor were never read anywhere and are gone. Three lead/lag series computed but never rendered are also gone. An MPL header was added and a leftover compile-sentinel plot removed. None of that touches a plotted number.
 
-One thing I learned the hard way: don't trade against the MTF bias just because the current timeframe shows a signal. The indicator will happily show you a long dot while the higher timeframe is bearish — that's a trap. The phase-lock logic produces counter-trend signals that are lower probability unless you have a strong reversal confluence.
+**Settings and How to Tune Them**
 
-**Pros and Cons**
+The one thing worth knowing before turning knobs: at the default Detrended price signal, the Stochastic length, RSI length, StochRSI length and K smoothing inputs are completely inert — every value produces bit-identical output. They only matter if the quadrature input signal is changed.
 
-**Pros:**
-- Earlier signals than most trend indicators — the phase detection genuinely reduces lag
-- The Fibonacci overlay is dynamic, not static, which makes it more relevant
-- MTF logic is mathematically coherent, not just a visual copy
-- Works across multiple asset classes (I tested crypto, forex, and indices)
+Beyond that, the source material does not specify recommended values, ranges, or which settings perform best. The parameters exist; the documentation does not prescribe them. Treat the defaults as the author's starting point, not an optimised configuration.
 
-**Cons:**
-- Steep learning curve. If you don't understand Hilbert transforms, you'll trust it blindly or not at all
-- Can be noisy on lower timeframes (anything below 15M produces too many false signals)
-- The parameter space is large — optimization can lead to overfitting if you're not careful
-- No alerts for the Fibonacci level touches, which is a missed opportunity
+**How the numbers were checked**
 
-**Who Should Use This**
+The whole computation was reimplemented outside Pine and cross-checked against the chart's Data Window: eight quantities on ten bars, with per-timeframe phase waves switched on so nothing was left as na. All 80 values round to the exact four decimals TradingView prints, with a worst raw difference of 5.0e-5 — the display's own rounding floor.
 
-This is for traders who already understand trend structure and want an edge in timing. Beginners will drown in the complexity. Swing traders on 1H-4H charts will get the most value. Scalpers should look elsewhere — the phase-lock logic needs enough price history to be meaningful.
+**Who this is for**
 
-If you're coming from MACD or standard moving average crossovers, this will feel like a significant upgrade. But if you're comfortable with SuperTrend or the standard MTF trend tools, this might be overkill.
+Traders interested in cycle analysis, Ehlers-style signal processing, or honest negative results. It is not a buy/sell tool, and the author says so explicitly. Anyone looking for entries, exits, or a trend filter should look elsewhere — the measurement here argues against the very signal most people would try to extract from it.
 
-**Alternatives Worth Considering**
-
-- **Ehlers' Adaptive Cyber Cycle** — simpler, same family of math, less flexible
-- **MTF Trend Line** — cleaner visual, but no phase anticipation
-- **Standard MACD with MTF smoothing** — easier to learn, but more lag
-
-**FAQ**
-
-**Is this a lagging or leading indicator?**
-It's technically still lagging (all indicators are), but the Hilbert phase detection reduces lag compared to moving-average-based tools. It gives earlier signals without being a true leading indicator.
-
-**Can I use this on crypto?**
-Yes, and it works well. Crypto's cyclical nature fits the Hilbert transform logic. Just avoid using it on 5-minute charts or lower.
-
-**Does it repaint?**
-The historical signals don't repaint, but the current signal can change as the phase calculation updates with new price data. That's standard for phase-based tools — be aware of it.
-
-**Final Verdict**
-
-The Mtf_Hilbert_Quadrature_Phase_Lock_Fibonacciflux is a serious tool for serious traders. It's not plug-and-play — you'll need to understand its logic and tune it to your market. But if you put in the work, it rewards you with earlier trend signals and dynamic Fibonacci levels that actually respect market structure. It earns 4 stars because it's exceptional at what it does, but the complexity and learning curve hold it back from perfection. For experienced swing traders, this is worth the effort. For everyone else, start with something simpler.
-
-⭐⭐⭐⭐
+Open source under MPL 2.0.
 
 ## Frequently Asked Questions
 
-### Is Mtf_Hilbert_Quadrature_Phase_Lock_Fibonacciflux worth it?
+### Is Get started worth it?
 
-Based on testing across multiple timeframes, Mtf_Hilbert_Quadrature_Phase_Lock_Fibonacciflux delivers solid value for traders who need trend analysis.
+It depends on what you want. As a tradable signal, the source material reports no edge and the author states as much. As a documented experiment in whether multi-timeframe cycles align, it is a coherent and self-critical piece of work.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+The source material does not make any claim about repainting. The phase and amplitude are computed causally on each timeframe's own bars, but nothing in the documentation asserts that historical values are frozen — so no repaint guarantee should be assumed either way.
+
+### Can I use it on crypto?
+
+The instrument tested in the source material is BINANCE:BTCUSDT, alongside ETHUSDT for one robustness check. The documentation makes no claim about other assets or timeframes beyond the four defaults.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

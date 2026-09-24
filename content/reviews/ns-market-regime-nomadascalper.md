@@ -17,82 +17,73 @@ categories:
 rating: 4
 description: "Honest Ns_Market_Regime_Nomadascalper review: settings, entry logic, pros/cons. Does this trend filter beat ADX or SuperTrend? Find out."
 tv_script_url: "https://www.tradingview.com/script/K6xhBPjw-NS-MARKET-REGIME-NomadaScalper/"
+sources: ["https://www.tradingview.com/script/K6xhBPjw-NS-MARKET-REGIME-NomadaScalper/"]
 ---
-Let me cut through the noise. Ns_Market_Regime_Nomadascalper isn't another lagging moving average crossover dressed up with a fancy name. It's a trend regime classifier — it tells you *when* you should be trading trends and *when* you should sit on your hands. I've been running it on BTC/USD and EUR/USD for three weeks across multiple timeframes. Here's what I found.
+The script is a volatility regime classifier. It answers one question three ways: is this market currently more or less volatile than its own normal?
 
 ## What It Actually Does
 
-The indicator plots a colored background or line (depending on your settings) that shifts between bullish, bearish, and neutral/range states. It's built on a composite of price action relative to a smoothed trend baseline, with volatility confirmation baked in. The key differentiator? It doesn't just flip between up and down — it actively identifies *range-bound* conditions and labels them separately.
+Regime is defined as recent volatility divided by that instrument's own normal volatility. Both figures are standard deviations of (close-open)/open returns: the last 10 completed instances against every instance inside a 5-year window. Above 1.0, the market is running wilder than its own habit; below, calmer.
 
-That third state is the real value. Most trend indicators will give you whipsaw signals in a consolidation, this one tells you "don't trade this." As you can see in the chart above, the MACD-based screenshot shows how the regime coloring lines up with actual momentum shifts — not perfectly, but far better than raw MACD histogram alone.
+That ratio is tracked on three independent scopes at once:
+
+- **Daily** — the day as a unit.
+- **Session** — Asia, London, NY AM or NY PM, either fixed or following the clock automatically (America/New_York).
+- **Hour** — any single hour of the ETH day, fixed or following the clock. Twenty-two independent hourly trackers run in parallel; the panel shows the one selected.
+
+Each scope is measured against its own history only. The 3 AM hour is compared with past 3 AM hours, never with the day. That per-scope baseline is the point of the framework: volatility lives in specific parts of the day, and a daily number cannot tell you which part.
 
 ## Key Features That Matter
 
-- **Three-state regime output**: Bullish, Bearish, Neutral. Not just two states like most trend filters.
-- **Volatility-adjusted threshold**: The sensitivity adapts to ATR, so it doesn't scream "trend" during low-volatility chop.
-- **Customizable smoothing**: You can adjust the lookback period for the baseline — shorter for scalping, longer for swing trading.
-- **Alerts built in**: Regime change alerts work cleanly with TradingView's notification system.
+- **Three-scope regime output**: Daily, session, and hour, each measured against its own baseline.
+- **A reading, not a number**: the headline says "67% MORE VOLATILE THAN USUAL" instead of "x1.67". Each scope row states level AND direction — HIGH · RISING, QUIET · TIGHTENING — because x1.05 on the way up and x1.05 on the way down are opposite situations.
+- **A slope with a deadzone derived from the sample itself**: the direction arrow only prints when the change is larger than the baseline's own measurement error (1/sqrt(2(n-1))). A move smaller than the noise of the instrument measuring it is not a direction, so it reads flat.
+- **A sample gate derived, not chosen**: rows stay grey until the baseline holds at least 201 instances — the point where the estimation error drops under the 5% decision threshold it feeds. Below that, the classification would be noise, so it is withheld rather than shown.
+- **A fixed-scale gauge and trend column**: a 15-slot track with the neutral band shaded, and a per-scope sparkline anchored to the same fixed scale. An auto-fit mode exists and is labelled as shape-only.
+- **Context rows and a divergence row**: STOPS / TARGETS / SIZE translate the regime into the three decisions it changes, in the source framework's own terms. When the day and the traded scope disagree on level, the panel says which part of the day is producing the volatility.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-After running this through a few hundred trades, here's what worked:
+Language, panel position and size, driver scope, detail toggles (gauge, trend column and style, context rows, divergence row, raw figures), scope selection (session and hour, fixed or automatic), the legacy monitors with full colour control, and the 1H reminder banner.
 
-- **Timeframe**: 1H to 4H is the sweet spot. Below 15M, the regime flips too often. Above Daily, it's too slow to be actionable.
-- **Lookback**: 50–70 periods. The default around 60 is actually decent. Lower it only if you're day trading.
-- **Smoothing type**: SMA over EMA. The EMA version gave me 30% more false regime flips.
-- **Neutral threshold**: Keep it at default. Widening it too much makes the indicator useless — you'll spend half your time in "neutral."
+Engine constants are not exposed on purpose: the publication carries the original author's calibration, not a parameter playground. There is no lookback, smoothing, or threshold to tune in the regime engine itself.
 
-## How I Actually Trade It
+## How to Read It
 
-Simple framework, no overthinking:
+Load a 1H chart or lower. The session and hour scopes need the hourly feed complete; on higher timeframes those rows withhold themselves and say why. A bottom-center banner speaks in colour: accent while the chart is 1H or lower, orange when the chart is above 1H.
 
-1. **Long setup**: Regime flips to Bullish → wait for a pullback to the 20 EMA → enter on a bullish candle close.
-2. **Short setup**: Regime flips to Bearish → wait for a bounce to the 20 EMA → enter on a bearish candle close.
-3. **No trade**: Regime shows Neutral. Full stop. No exceptions.
+Pick your driver — the scope that sets the headline and the context rows. If you trade one session, that session is your regime; the daily can read expanded while your window is compressed, and following the daily would size you for hours you are not in.
 
-The exit is where this indicator earns its keep. I trail with a 2× ATR stop and exit when the regime flips to Neutral — not when it flips against me. That way I capture the bulk of the move without waiting for a full reversal signal.
+Grey rows are not broken. They are baselines still building, and the tooltip states how far along they are and why the floor exists. Every row's tooltip states its real sample and the real span of history behind it, measured from the chart. Hover anything — every cell explains its number from scratch, raw figures included.
 
 ## Pros & Cons
 
 **Pros:**
-- The neutral state genuinely reduces overtrading. I took 40% fewer trades but my win rate went from 52% to 61%.
-- Alerts are reliable. No missed regime changes.
-- Clean visual output. The background coloring doesn't obscure price action.
+- The per-scope baseline separates volatility by part of day rather than collapsing it into one daily number.
+- Level and direction are reported together, with a deadzone derived from the sample's own measurement error.
+- Rows withhold classification until the baseline is statistically adequate, rather than printing noise.
+- Bilingual by construction: every drawn string lives in one central dictionary (English / Español), so a half-translated panel is impossible. Settings inputs and the alert message stay in English (Pine constraint).
+- The original on-chart monitors are preserved: the sparkline panels draw beside price with 136 points of resolution, hard-clamped so no input combination can push drawing objects past the platform's 500-bar future limit.
 
 **Cons:**
-- It's not a standalone system. You still need confluence (price action, volume, or a momentum oscillator).
-- Lags on lower timeframes. Under 15M, it's basically useless.
-- No multi-timeframe analysis. You have to add it to each chart separately.
+- It is context, not signals. The STOPS / TARGETS / SIZE rows translate the regime into decisions — they do not tell you to enter.
+- On timeframes above 1H the hourly feed skips hours and the session/hour rows withhold themselves.
+- Engine constants are deliberately not exposed, so there is nothing to re-tune.
 
 ## Who Should Use It
 
-This is for **discretionary trend traders** who need a filter, not a signal. If you're a swing trader on 1H–4H charts, this will save you from entering counter-trend setups. It's also solid for crypto traders — the volatility adjustment handles Bitcoin's wild swings better than most.
+This is for traders who want to know whether the market is running hot or calm relative to its own habit, in the specific part of the day they trade, before committing size or stops. It is a filter and a context panel, not an entry system.
 
-**Skip it if** you're a scalper on 1M–5M charts or an algorithmic trader who needs a binary output. The three-state design gets messy for automated logic.
+**Skip it if** you want a signal generator, or if you need to re-calibrate the underlying engine — the constants are fixed by design.
 
-## Alternatives Worth Considering
+## Credits
 
-- **ADX + DI**: Free and built into TradingView. Gives you trend strength but no neutral state — you have to define thresholds yourself.
-- **SuperTrend**: Better for pure trend following with dynamic stops, but no range detection.
-- **Regime Filter by LonesomeTheBlue**: Free option that's simpler but less customizable.
-
-## FAQ
-
-**Is this indicator repainting?**
-No, it's not repainting in the traditional sense. The regime state is calculated on confirmed bars. However, the *transition* point between states can shift slightly when the smoothing period recalculates. Nothing you can't manage.
-
-**Does it work for forex and crypto equally?**
-Yes, but with a caveat. The volatility adjustment handles both, but I found it slightly slower to react on forex pairs with tight ranges (EUR/GBP). Crypto is where it shines.
-
-**Can I use it for backtesting?**
-You can, but it's clunky. The strategy tester will show signals, but you'll need to code your own entry logic to get meaningful results.
-
-**Is it worth the price?**
-If you're paying for it — yes, compared to premium indicators that do half the job. If you're a beginner, start with the free alternatives first.
+The concept is the Market Regimes framework by NQ Stats. The original Pine implementation of the tracking engine was written by Desiringmachine and is carried over into this build mathematically unchanged — same return definition, same rolling window, same baseline construction, same thresholds. Not one constant was re-tuned. What this build adds is the presentation and the statistical honesty layer described above.
 
 ## Final Verdict
 
-**⭐ 4/5** — Ns_Market_Regime_Nomadascalper does one thing and does it well. The neutral state detection is genuinely useful, the settings are flexible enough for different trading styles, and it pairs nicely with a basic price action strategy. It loses a star because it's not a complete system — you'll still need to bring your own entry logic. But as a trend filter, it's among the better ones I've tested. If you're tired of getting chopped up in ranging markets, this is worth your attention.
+The script does one thing and does it carefully. The per-scope baselines, the derived deadzone, and the derived sample gate are the substance — each is defensible on its own terms, and each is documented in the tooltips rather than asserted. It is not a complete system: you still bring your own entry logic. But as a volatility regime filter with an honest treatment of its own uncertainty, it is worth your attention.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

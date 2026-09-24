@@ -17,92 +17,75 @@ categories:
 rating: 4
 description: "Index_Peak_Dispersion review: honest take on trend strength, dispersion signals, best settings, and whether it beats MACD or RSI."
 tv_script_url: "https://www.tradingview.com/script/LXTgseja-Index-Peak-Dispersion/"
+sources: ["https://www.tradingview.com/script/LXTgseja-Index-Peak-Dispersion/"]
 ---
-Let's cut through the noise. Index_Peak_Dispersion isn't another repackaged moving average crossover. It's a trend-momentum hybrid that measures how much price action "disperses" from a central tendency — and then flags when that dispersion peaks. Sounds abstract, but in practice it solves a real problem: most trend indicators lag horribly at turning points. This one attempts to catch the exhaustion moment before the reversal.
+Let's cut through the noise. Index Peak Dispersion isn't another repackaged moving average crossover. It's a breadth tool that measures the *time domain* across a basket of equity indexes — specifically, how scattered their all-time-high dates are — and pairs that with a participation series showing how many are still printing record highs. The thesis, drawn from Dow Theory's non-confirmation principle, is that healthy advances register highs across indexes nearly simultaneously, while major distributive tops fragment, spreading peak dates across weeks or months.
 
-I ran it on BTC/USD daily, EUR/USD 4H, and a handful of large caps with the MACD chart type as suggested. Here's what actually matters.
+It's a narrow, specific instrument. Here's what it actually does and where it breaks.
 
 **What it does differently**
 
-Most trend tools (MACD, ADX) tell you *that* a trend exists. This one tells you *when* the trend is running out of fuel. The core mechanic tracks the spread between price extremes and a rolling mean, then normalizes it. When that normalized dispersion hits an extreme reading, the indicator flashes a peak signal.
+Most breadth and non-confirmation tools on this platform measure the price domain: divergences between an index and an internal line, counts of components above a moving average, or new-high/new-low tallies within one exchange universe. This script instead measures the time domain across whole indexes. It reduces the peak-date scatter of a user-defined index universe to a single bounded statistic — the in-window span of all-time-high ages — and pairs it with a participation series so that fragmentation is only flagged while a high is live.
 
-In the chart above, you can see how it behaved during the August 2026 BTC pullback — the peak signal fired roughly 6-8 candles before price actually reversed. That's not magic; it's dispersion contracting while price still makes new highs. Divergence, but with a statistical backbone instead of just eyeballing lines.
+Concretely, on each bar it runs one `request.security()` call per enabled symbol to track a running maximum of closing prices and record when that maximum was last exceeded. Each recorded timestamp becomes an age in calendar days. Indexes are then classified as Fresh (high within the fresh window), in-window (high within the topping window), or Stale (older than the topping window). When enough indexes are in-window, the dispersion span is the max in-window age minus the min in-window age, normalized as a percent of the topping window. The participation series is the count of Fresh indexes divided by the count of enabled indexes with data.
 
 **Key features worth your attention**
 
-- **Peak detection algorithm** — This isn't a simple threshold. It uses rate-of-change on the dispersion curve, so it adapts to volatility regimes. Chop doesn't trigger false peaks as often as I expected.
-- **Multi-timeframe consistency** — Signals align surprisingly well across 1H, 4H, and daily. That's rare. Most indicators contradict themselves across timeframes.
-- **Clean visual output** — Colored histogram bars plus a signal line. No clutter. You can read it at a glance, which matters when you're scanning 20 charts.
-- **Built-in alerts** — Peak and trough alerts work reliably. I tested them for two weeks; no missed triggers.
+- **Time-domain fragmentation measure** — The dispersion line answers: how spread out in time are the record highs? In a strong market the indexes peak together, so the columns are tall and the line stays low. At tops, one index peaks, then months later another, and the line climbs.
+- **Participation series** — The columns answer a narrower question: how many enabled indexes hit a record high within the fresh window. Each new high carried by fewer indexes thins the columns out.
+- **Fractured-top shading** — The pane background is shaded when dispersion is at or above the warning threshold *while* at least one index is Fresh. That's the specific combination where fragmentation is present at a live high rather than in an established downtrend.
+- **Stale exclusion** — Stale entries are deliberately excluded from the span so a single long-dormant index doesn't saturate the statistic.
+- **Status table** — On the last bar, an optional table lists each index with its all-time-high date, age in days, and classification, plus summary counts and the raw span.
 
-**Settings that actually work**
+**Settings and How to Tune Them**
 
-Default settings are decent but not optimal. After testing, here's what I settled on:
+- **Index universe** — Twelve slots, each with an enable checkbox and a symbol field. Defaults: DJI, DJT, DJU, DJA, SPX, NDX, IXIC, NYA, RUT, SOX, MID, SPXEW. All twelve are enabled by default. Any slot can be repointed to another symbol or disabled.
+- **Fresh high window** (calendar days) — Default 7. An index whose all-time high printed within this many days counts as Fresh.
+- **Topping window** (calendar days) — Default 378. An index whose all-time high printed within this many days participates in the dispersion span. Older highs are classified Stale.
+- **Dispersion warning threshold** (percent of topping window) — Default 25. Sets the dashed reference line and the fractured-top condition. Note that because it's expressed as a percent of the topping window, changing the topping window changes the day-equivalent of the same percent threshold.
+- **Minimum in-window index count for a valid span** — Default 4. Below this count the dispersion plot returns na, which prevents a span computed from too few indexes.
+- **Show status table** — Default on.
+- **Table position** — Default Top right.
 
-- **Dispersion Length: 14** (default is 20). Shorter length catches peaks earlier but adds noise. 14 is the sweet spot on 4H and above.
-- **Smoothing: 5** — Leave this alone. Lower values create whipsaw, higher values kill the early-warning advantage.
-- **Signal Threshold: 0.8** — Default 0.7 fires too often in ranging markets. 0.8 filters out the weak signals without missing the big ones.
+**How to read it**
 
-On lower timeframes (under 15 minutes), I'd skip this indicator entirely. It's built for swing trading and intraday at 4H or higher.
+Read the two series together. Low dispersion with high participation describes a synchronized advance in which the enabled indexes are registering highs together. Rising dispersion while some indexes continue to print fresh highs describes fragmentation: leadership is narrowing and earlier leaders have stopped confirming. The shaded background marks bars on which dispersion is at or above the threshold while at least one fresh high exists.
 
-**How I trade it**
-
-The logic is straightforward but you need discipline:
-
-1. **Entry (long)**: Dispersion contracts after a pullback, then the histogram flips from red to green *and* the signal line crosses above zero. That's your trigger. Enter on the next candle open.
-2. **Exit**: When the histogram prints a higher high but price makes a higher high too, that's the peak signal. Close at least half your position. The other half rides until the signal line crosses below zero.
-3. **Invalidation**: If price closes below the most recent swing low after a long signal, the setup failed. Exit. Don't argue with it.
-
-The key insight: this indicator works best as a *timing filter* on top of your existing trend strategy. Don't use it standalone. Combine it with a simple 50/200 EMA structure — only take long signals when price is above both.
+The script is designed for the 1D timeframe. The running all-time high is intended to operate on daily closes, and both windows are specified in calendar days, so daily resolution matches the granularity of the logic. The condition is a warning context, not a timing trigger. It identifies an environment consistent with historical distributive tops — it does not predict the date or the existence of a decline. The same combination also appears during rotation phases that resolve higher, so treat it as a statement that conditions resemble past major tops, not as an instruction to act.
 
 **The honest trade-offs**
 
 **Pros:**
-- Catches reversals earlier than MACD or RSI divergence — I measured 3-8 candles earlier on average in my tests
-- Adapts to volatility; doesn't go haywire during high-impact news
-- Works across crypto, forex, and equities without parameter changes
+- Measures something most breadth tools ignore — the time domain of peak dates rather than the price domain
+- The classification into Fresh, in-window, and Stale, with the Stale exclusion and the minimum-count gate, lets the scatter of a historical topping process be plotted as one continuous, comparable series across eras
+- The status table provides attribution behind the numbers
 
 **Cons:**
-- Useless in strong, clean trends — it'll tell you to exit a trend that still has room to run
-- Repaints slightly on the peak signal. The final confirmation only prints after the candle closes, so live signals can shift
-- No built-in stop-loss or position sizing logic. You're on your own for risk management
+- The running all-time high is computed only over the bars loaded for each requested symbol. Symbols with short available history, and the early portion of any chart, understate the true age of the all-time high. The plot is only reliable after all enabled symbols have substantial loaded history.
+- On intraday charts the running maximum operates on intraday closes and the calendar-day windows lose their intended granularity. On weekly or monthly charts a fresh window shorter than one bar cannot register.
+- Ages and spans are measured in calendar days, not trading days, so weekends and holidays are included.
+- The script issues twelve security calls; a slot that fails to resolve or returns no data is excluded from every count and appears in the table as "No data."
+- The dispersion plot returns na whenever fewer than the minimum required indexes have an all-time high inside the topping window.
 
 **Who should use this**
 
-Swing traders and position traders who already have a directional bias but struggle with timing entries and exits. If you're a scalper, skip it. If you're a trend-follower who holds through pullbacks, this will drive you crazy with premature exit signals.
-
-**Better alternatives**
-
-- **For trend-following purists**: Supertrend or Chandelier Exit — simpler, less noisy, but laggier
-- **For momentum traders**: MACD with standard settings still beats this in strong trending markets
-- **For mean-reversion**: RSI with overbought/oversold thresholds is more direct for counter-trend plays
+Traders studying broad equity index behavior at the daily timeframe, who want a mechanical, reproducible read on whether leadership is narrowing. It is not a standalone system and not a timing trigger.
 
 **FAQ**
 
-**Does Index_Peak_Dispersion repaint?**
-Slightly, on the peak confirmation. The historical signals are stable, but the live signal can adjust until the candle closes. Account for this in your execution — wait for the close.
+**Does Index Peak Dispersion repaint?**
+All `request.security()` calls run on the chart timeframe with lookahead off. Values on the developing bar update until the bar closes and do not repaint afterward.
 
-**Can I use it for crypto?**
-Yes, and it actually performs better on crypto than forex due to the wider dispersion swings. Just keep the timeframe at 4H or higher.
+**What timeframe is it built for?**
+The 1D timeframe. The running all-time high is intended to operate on daily closes, and both windows are specified in calendar days.
 
-**Is it better than MACD?**
-Different tool. MACD tells you trend direction and momentum. This tells you when momentum is exhausting. They complement each other well.
+**Does it predict declines?**
+No. It identifies an environment consistent with historical distributive tops. It does not predict the date or the existence of a decline, and the same condition can appear during rotation phases that resolve higher.
 
 **Final verdict**
 
-Index_Peak_Dispersion earns a solid ⭐⭐⭐⭐. It's not perfect — the repainting and trend-exit behavior are genuine flaws — but it fills a specific gap that most trend indicators ignore: the exhaustion phase. If you pair it with a basic trend filter and strict risk rules, it becomes a legitimate edge. The 4-star rating reflects that it's exceptional at one thing but not a complete trading system. It's a scalpel, not a Swiss Army knife. Use it accordingly.
+Index Peak Dispersion is a scalpel, not a Swiss Army knife. It measures one thing — the time-domain scatter of index peak dates, paired with live participation — and it measures it in a way that most breadth indicators don't attempt. Its real limitations are structural: it depends on the loaded history of every enabled symbol, it's designed for daily bars, and it issues a dozen security calls. Treat it as a warning context layered on top of your existing work, not as a system, and it earns its place.
 
-For the price of a few coffees per month, it's worth adding to your toolkit — just don't expect it to replace your entire analysis stack.
-
-## Frequently Asked Questions
-
-### Is Index_Peak_Dispersion worth it?
-
-Based on testing across multiple timeframes, Index_Peak_Dispersion delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

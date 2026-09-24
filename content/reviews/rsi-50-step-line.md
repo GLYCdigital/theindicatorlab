@@ -17,68 +17,55 @@ categories:
 rating: 4
 description: "Rsi_50_Step_Line turns RSI into a clean trend filter. Tested settings, entry logic, pros/cons, and who should use it. Honest 4-star review."
 tv_script_url: "https://www.tradingview.com/script/hvp1bb7Z-RSI-50-Step-Line/"
+sources: ["https://www.tradingview.com/script/hvp1bb7Z-RSI-50-Step-Line/"]
 ---
-Let me be blunt about what this indicator actually is: Rsi_50_Step_Line takes the classic RSI and strips away the noise. Instead of watching the oscillator bounce between 30 and 70, you get a single step line that flips between two states — above 50 meaning bullish momentum, below 50 meaning bearish. That's it. No arrows, no alerts screaming at you, no rainbow of colors. Just a clean, binary read on trend direction.
+**Rsi_50_Step_Line — Momentum-Adaptive Price Reference**
 
-I've tested this on BTCUSD 4H, EURUSD 1H, and a few altcoin pairs over the past three weeks. The screenshot above shows it applied to a MACD chart, which is the natural pairing — the step line acts as the trend gatekeeper while MACD handles timing. It's not a standalone system, and it doesn't pretend to be.
+Let's be clear about what this indicator actually is: it plots a dynamic horizontal step line that tracks price at the exact moment RSI crosses the 50 level. Each time RSI (default length 9, source close) crosses 50 in either direction, the line steps to the closing price of that bar and holds flat until the next cross. The result is a stair-step price ladder built entirely from momentum inflection points rather than fixed lookback windows or manually drawn pivots.
+
+No arrows, no signals, no rainbow. Just a running visual history of where momentum shifted.
 
 **What sets it apart**
 
-Most RSI-based trend filters on TradingView fail because they smooth the RSI so aggressively that you lose the signal entirely. This one doesn't. The step line snaps precisely at the 50 level, so there's zero ambiguity about whether you're in a bullish or bearish regime. The "step" nature means no gradual slope — it's either on or off. That's genuinely useful for systemizing your entries.
+Most RSI-based reference tools fail because they over-smooth the oscillator until the signal is gone. This one doesn't smooth anything — it simply marks the price at the moment of the RSI-50 cross and holds that level. Earlier steps are never deleted or redrawn, so the chart accumulates a history of momentum-derived levels. When price later revisits an older step, you can see whether it's testing a level that originally marked a genuine momentum shift, which can carry more weight than an arbitrary support/resistance line.
 
-Another thing I appreciate: the indicator keeps the raw RSI values accessible in the settings. You can tweak the length (default 14) but everything else stays locked. That's a design choice I respect — it doesn't try to be a Swiss Army knife. It's a filter, and it knows its role.
+**Settings and How to Tune Them**
 
-**Settings I actually tested**
+The RSI length defaults to 9 and the source defaults to close; both are adjustable in the inputs panel. The four line and dot colors are also user-adjustable. The indicator's color logic is driven by two live conditions: price's position relative to the current step, and RSI's immediate direction bar-to-bar.
 
-The default length of 14 works fine, but I found that 21 smooths out whipsaws on lower timeframes without killing responsiveness. On the 4H and above, stick with 14 — the extra sensitivity helps catch reversals earlier. For scalping on the 1H, bump it to 21 and combine it with a 200 EMA.
+Light green — price above the level, RSI rising → bullish, momentum strengthening
+Dark green — price above the level, RSI falling → bullish, but momentum fading
+Light red — price below the level, RSI falling → bearish, momentum strengthening
+Dark red — price below the level, RSI rising → bearish, but momentum recovering
 
-One thing to watch: the step line is lagging by nature. It confirms a trend after it's already started. That's the trade-off for reliability. If you're expecting leading signals, this isn't the tool.
+The dark shades are not signals on their own — they're a visual cue that the current side of the trade may be losing conviction, which some traders treat as a prompt to tighten risk or watch more closely for a reversal rather than as an entry/exit trigger.
 
-**How I actually used it**
+**Cross markers**
 
-The most effective setup I found was pair this with MACD for entries. When the step line flips above 50 and MACD histogram is positive, I'd look for long entries on pullbacks to the 20 EMA. When the step line drops below 50 and MACD turns negative, I'd short rallies. The key is to ignore the step line entirely during sideways chop — it'll flip back and forth like a coin toss.
+At each bar where RSI crosses 50 and the line steps to a new level, a small circle marker is plotted. Its color is frozen at the exact bar of the cross, so it reflects the momentum condition that triggered that specific level even if the line's color later changes. Comparing a dot's shade to the segment that follows it shows whether a level was born from strong or weak momentum.
 
-For exits, I used the step line itself as a trailing stop. Once in a long, I'd exit when the line breaks below 50. That's simple, mechanical, and removes emotional decision-making. It also means you'll give back some profit on sharp reversals, but you'll never turn a winner into a loser.
+**What it does and does not do**
+
+This tool identifies and colors momentum-derived price levels. It does not generate buy/sell signals, predict future price movement, or account for risk management. It should be used alongside broader market context and a trader's own risk framework rather than in isolation.
 
 **Pros and cons**
 
-Pros: Dead simple to read, zero repainting (the step line only changes after the candle closes), works as a universal trend filter across any timeframe, and it's lightweight on chart resources.
+Pros: Dead simple to read, leaves a permanent visual history of momentum shifts, works as a reference layer on any chart, and is lightweight.
 
-Cons: It's not a complete strategy — you still need an entry trigger. It lags by design, so you'll miss the very top and bottom of moves. And honestly, the RSI 50 level is not magic; it's just a convenient midpoint. Markets don't respect it as a hard line of support or resistance.
+Cons: It's not a complete strategy — you still need an entry trigger. The step line is a reference, not a leading indicator. And the RSI 50 level is a convenient midpoint, not a line markets are obligated to respect.
 
 **Who should use this**
 
-This is perfect for systematic traders who already have an entry strategy but need a trend filter to stay out of counter-trend trades. It's also great for beginners who find traditional RSI confusing — the binary step line removes all interpretation. If you're a discretionary trader who likes reading raw momentum, you'll find this too limiting.
+Traders who already have an entry method but want a momentum-derived reference for where the bullish/bearish shift occurred. Traders who find raw RSI interpretation ambiguous may prefer the single stepped level. Discretionary traders who read raw momentum directly may find it redundant.
 
 **Alternatives worth considering**
 
-If you want more granularity, the standard RSI with the 50 level drawn manually gives you the same information with more flexibility. For a more advanced filter, check out the SuperTrend — it achieves a similar binary outcome but uses ATR, which adapts better to volatility. The RSI Step Line is simpler, but simpler isn't always worse.
-
-**Frequently asked questions**
-
-*Does this indicator repaint?* No. The step line updates based on the current RSI value, but once a candle closes, the signal is locked. No retrospective changes.
-
-*Can I use it for crypto?* Yes, and it works well. I tested it on BTC and ETH with solid results, especially on 4H and daily timeframes.
-
-*Is it good for scalping?* Not really. The lag makes it poor for very short timeframes. It shines on 1H and above.
-
-*Does it work with other oscillators?* Sure, but MACD pairs best because both are momentum-based. RSI and MACD confirm each other well.
+The standard RSI with the 50 level drawn manually gives similar information with more flexibility. SuperTrend achieves a binary regime read using ATR, which adapts to volatility. The step line is simpler, but simpler isn't always worse.
 
 **Final verdict**
 
-Rsi_50_Step_Line does exactly what it claims — nothing more, nothing less. It's a clean, reliable trend filter that won't blow your mind but will improve your consistency. I'm giving it 4 stars because it fills a specific niche well, but it's not a standalone solution. If you're looking for a simple way to separate bullish from bearish regimes without overthinking, this is worth the install. Just remember to bring your own entry strategy.
+Rsi_50_Step_Line does exactly what it claims — nothing more, nothing less. It's a clean, self-adjusting reference for momentum inflection points that won't blow your mind but fills a specific niche. Bring your own entry strategy.
 
-⭐ 4/5 — Honest, useful, and refreshingly simple.
-
-## Frequently Asked Questions
-
-### Is Rsi_50_Step_Line worth it?
-
-Based on testing across multiple timeframes, Rsi_50_Step_Line delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

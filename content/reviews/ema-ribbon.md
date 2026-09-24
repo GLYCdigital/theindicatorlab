@@ -16,56 +16,50 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Ema_Ribbon packs 8 EMAs into one clean ribbon. Tested on BTC: +15.6% CAGR, 53% DD. Best settings, entry tactics, and honest pros/cons inside."
+grounding: "none (no source found)"
 ---
+# Ema_Ribbon Review
 
 If you've been trading for more than a month, you've seen EMA ribbons before. Most are either too cluttered or too simplistic. The *Ema_Ribbon* indicator sits in a sweet spot—eight exponential moving averages plotted as a single color-coded ribbon that shifts from bullish (green) to bearish (red).
 
-I’ve tested this on BTC, ETH, and a handful of altcoins over the past three weeks. Here’s what actually works and what doesn’t.
-
 ## What This Indicator Actually Does
 
-It plots 8 EMAs (8, 13, 21, 34, 55, 89, 144, 233) as a band. When price is above the ribbon and the ribbon is expanding upward, the whole band turns green. When price breaks below and the ribbon starts contracting or sloping down, it flips red.
+It plots eight EMAs as a band. When price is above the ribbon and the ribbon is expanding upward, the whole band turns green. When price breaks below and the ribbon starts contracting or sloping down, it flips red.
 
-The key difference from a standard multi-EMA setup: the color logic. Most ribbons just stack lines. This one changes the fill color based on the *relationship between the fastest and slowest EMA*. That makes it faster to read at a glance.
+The key difference from a standard multi-EMA setup is the color logic. Most ribbons just stack lines. This one changes the fill color based on the relationship between the fastest and slowest EMA, which makes it faster to read at a glance.
 
 ## Key Features That Set It Apart
 
-- **Color-coded ribbon fill** – Not just lines. The area between EMA 8 and EMA 233 is shaded green or red. This reduces visual noise.
-- **Clean default settings** – Out of the box, it uses the eight most common EMAs. No need to tweak unless you trade very short timeframes.
-- **Works on any timeframe** – I tested it on 1H, 4H, and daily. The ribbon holds up better on 4H+.
-- **No repainting** – Confirmed by stepping through bars. The color is based on historical EMA relationships.
+- **Color-coded ribbon fill** – Not just lines. The area between the fastest and slowest EMA is shaded green or red, which reduces visual noise.
+- **Clean default settings** – Out of the box, it uses a set of commonly used EMAs, so there's no need to tweak unless you trade very short timeframes.
+- **Timeframe flexibility** – The ribbon is intended to work across timeframes, though it tends to hold up better on higher ones than on the fastest intraday charts.
+- **No repainting** – The color is based on EMA relationships at the close of each bar, so the plotted history does not change after the fact.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-I found the defaults (8, 13, 21, 34, 55, 89, 144, 233) work well for swing trading on 4H or daily. If you scalp on 15M or 1H, shorten the ribbon:
+The defaults use a standard stack of eight EMAs and are generally suited to swing trading on higher timeframes. If you scalp on intraday charts, the idea is to shorten the ribbon so it reacts faster.
 
-- **Scalping (15M–1H):** Use 5, 10, 20, 30, 50, 100, 150, 200. Tighten the band so it reacts faster.
-- **Swing (4H–Daily):** Stick with defaults. The slower EMAs filter out noise.
-- **Trend strength:** Watch the *spread* between the fastest and slowest EMA. If the ribbon is wide and sloping, trend is strong. If it's flat and narrow, expect chop.
+- **Scalping:** Use a shorter set of EMAs than the defaults. Tightening the band makes it respond more quickly to price.
+- **Swing:** Stick with the defaults. The slower EMAs filter out noise.
+- **Trend strength:** Watch the spread between the fastest and slowest EMA. If the ribbon is wide and sloping, trend is strong. If it's flat and narrow, expect chop.
+
+There's no single "best" configuration here—it depends on your timeframe and how much noise you're willing to tolerate.
 
 ## How to Use It for Entries and Exits
 
-**Long entry:** Wait for price to close above the ribbon *and* for the ribbon to turn green. Don't buy the first green tick—let it confirm with a second candle. Place stop below the 233 EMA.
+**Long entry:** Wait for price to close above the ribbon and for the ribbon to turn green. Rather than buying the first green tick, let it confirm with a second candle. Place the stop below the slowest EMA in the stack.
 
-**Short entry:** Same logic inverted. Price closes below the ribbon, ribbon turns red. Stop above the 233 EMA.
+**Short entry:** Same logic inverted. Price closes below the ribbon, ribbon turns red. Stop above the slowest EMA.
 
-**Exit:** When the ribbon starts flattening or the faster EMAs cross back toward the slower ones, take partial profits. I trail with the 55 EMA on 4H.
+**Exit:** When the ribbon starts flattening or the faster EMAs cross back toward the slower ones, take partial profits. Some traders trail with one of the mid-range EMAs.
 
-The chart above shows a clean BTC long from July 9–14, 2026. Price bounced off the 233 EMA, ribbon flipped green, and the spread widened for five days. Good example of the setup working as intended.
+The setup works as intended when price bounces off the slowest EMA, the ribbon flips green, and the spread widens over subsequent bars.
 
 ## Performance
 
-Here are the backtest results I ran on BTC/USDT, 4H timeframe, January–July 2026:
+Performance depends heavily on market conditions. In ranging markets the ribbon catches many false flips, which drags the win rate down. The trade-off is that the winners, when they come, tend to be large enough to offset the losers. Drawdowns can be significant if you trade the signal mechanically without a stop or a volatility filter.
 
-| Metric | Value |
-|--------|-------|
-| Trades | 32 |
-| CAGR | +15.6% |
-| Max Drawdown | 53% |
-| Win Rate | 34.4% |
-| Profit Factor | 1.73 |
-
-The win rate is low because the ribbon catches many false flips in ranging markets. But the profit factor is solid—winners are big enough to offset the losers. The 53% drawdown is brutal. If you can't stomach that, use a fixed stop or combine with a volatility filter like ATR.
+If you can't stomach deep drawdowns, use a fixed stop or combine the ribbon with a volatility filter like ATR.
 
 ## Honest Pros and Cons
 
@@ -75,48 +69,54 @@ The win rate is low because the ribbon catches many false flips in ranging marke
 - Free and lightweight. No load on your chart.
 
 **Cons:**
-- 53% max drawdown on BTC is ugly. This indicator alone will wreck your account in a sideways market.
-- Win rate below 40% means you need strong risk management. Not for emotional traders.
+- This indicator alone will struggle in a sideways market.
+- A low win rate means you need strong risk management. Not for emotional traders.
 - No alerts built in. You have to set your own.
-- The ribbon can stay red during a strong uptrend if a deep pullback triggers it. Happened twice in my test.
+- The ribbon can stay red during a strong uptrend if a deep pullback triggers it.
 
 ## Who It's Actually For
 
-This is for traders who already understand EMA structure and want a cleaner visual. If you're a beginner, the 34% win rate will frustrate you. If you're intermediate or advanced, you can use it as a *confirmation tool*—not your only signal.
+This is for traders who already understand EMA structure and want a cleaner visual. Beginners may find the false flips frustrating. Intermediate or advanced traders can use it as a confirmation tool rather than a standalone signal.
 
-It works best on trending assets (BTC, ETH, SPY) on 4H or higher. Avoid on low-liquidity altcoins or during news events.
+It works best on trending assets on higher timeframes. Avoid it on low-liquidity altcoins or during news events.
 
 ## Better Alternatives If They Exist
 
-- **Supertrend** – Simpler, fewer false signals in choppy markets. Lower drawdown.
-- **Keltner Channels + EMAs** – Combines volatility bands with trend. More complete system.
+- **Supertrend** – Simpler, fewer false signals in choppy markets.
+- **Keltner Channels + EMAs** – Combines volatility bands with trend for a more complete system.
 - **Pivot Point Oscillator** – Better for range-bound markets where the ribbon fails.
 
 If you already use a multi-EMA setup, *Ema_Ribbon* just saves you the time of stacking eight lines manually. It's not a game-changer, but it's a solid tool.
 
 ## FAQ
 
-**Q: Does Ema_Ribbon repaint?**  
-A: No. The color is based on EMA relationships at the close of each bar. Confirmed by stepping through.
+**Q: Does Ema_Ribbon repaint?**
+A: No. The color is based on EMA relationships at the close of each bar.
 
-**Q: Can I use it on 1-minute charts?**  
-A: You can, but the ribbon will flip constantly. Stick to 15M minimum.
+**Q: Can I use it on 1-minute charts?**
+A: You can, but the ribbon will flip constantly. Stick to higher intraday timeframes.
 
-**Q: How do I reduce false signals?**  
+**Q: How do I reduce false signals?**
 A: Add a volume filter or RSI divergence. Only take trades when the ribbon flip aligns with volume above average.
 
-**Q: What's the best stop loss?**  
-A: Below the 233 EMA on 4H. On daily, use the 144 EMA as a tighter stop.
+**Q: What's the best stop loss?**
+A: Below the slowest EMA in the ribbon. On higher timeframes, a tighter stop can use a mid-range EMA.
 
 ## Final Verdict
 
 *Ema_Ribbon* is a clean, functional visual tool that does exactly what it promises—no more, no less. It won't make you a profitable trader by itself. But as a trend confirmation layer in a broader system, it's reliable and easy on the eyes.
 
-The 53% drawdown keeps it from a perfect score. Combined with a volatility filter and proper risk sizing, it's a solid 4 out of 5.
+The drawdown risk in ranging conditions keeps it from a perfect score. Combined with a volatility filter and proper risk sizing, it's a solid tool.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **MA Ribbon/GMMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 57.3%, XAUUSD 55.8%, SPY 54.4%, AVAXUSD 53.9%
+- Weakest markets: XRPUSD 46.2%, VIX 42.5%, SHIBUSD 28.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

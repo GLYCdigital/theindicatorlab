@@ -16,37 +16,32 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest On_Balance_Volume_Obv review: tested settings, divergence strategy, pros/cons, and who should actually use this classic volume oscillator."
+grounding: "none (no source found)"
 ---
-Let's cut the preamble. On_Balance_Volume_Obv is a straightforward implementation of Joe Granville's classic OBV indicator, and if you've been trading for more than a week, you already know the concept: cumulative volume added on up days, subtracted on down days. The line's slope tells you whether volume is confirming price or quietly disagreeing with it.
+Let's cut the preamble. On_Balance_Volume_Obv is a straightforward implementation of Joe Granville's classic OBV indicator, and the concept is well known: cumulative volume added on up days, subtracted on down days. The line's slope tells you whether volume is confirming price or quietly disagreeing with it.
 
-What makes this version worth your time? It's clean, it's accurate, and it doesn't try to be clever. No repainting, no laggy smoothing that hides the raw signal, just the pure OBV calculation. The default settings are what you'd expect — 14-period smoothing on the signal line — but here's the thing: OBV's power has never been in the settings. It's in how you read the relationship between price and volume.
+What makes this version worth a look? It aims to be clean and accurate without trying to be clever. The pitch is no repainting, no smoothing that hides the raw signal — just the OBV calculation. The default settings are what you'd expect, including a signal line, but OBV's power has never been in the settings. It's in how you read the relationship between price and volume.
 
 **What Actually Sets It Apart**
 
-Honestly, not much. And that's fine. This is a faithful reproduction of a classic tool. The UI is clean, the colors are customizable, and the signal line is properly calculated. What I appreciate is the absence of noise — no arrows, no alerts screaming "BUY NOW!" at every wiggle. You get the line, you get the signal, you interpret it yourself.
+Honestly, not much. And that's fine. This is a faithful reproduction of a classic tool. The UI is clean, the colors are customizable, and the signal line is calculated. The appeal is the absence of noise — no arrows, no alerts firing on every wiggle. You get the line, you get the signal, you interpret it yourself.
 
-**Settings I Actually Tested**
+**Settings and How to Tune Them**
 
-I ran this across BTC/USD, EUR/USD, and a few large-cap stocks on multiple timeframes. Here's what worked:
+The indicator exposes a signal line alongside the raw OBV. The signal length is adjustable; a shorter setting will track the raw OBV more closely, while a longer setting will smooth the signal line further. Which you prefer depends on how much of the underlying volume swing you want to see versus how much you want filtered out. Because OBV is a cumulative measure, the signal line's job is to give you a reference to compare against the raw line rather than to act as a standalone trigger.
 
-- **Default 14-period signal**: Fine for swing trading, but noisy on lower timeframes
-- **My preference: 21-period signal on the 4H/1D**: Filters out the chop significantly
-- **Divergence hunting**: Disable the signal line entirely and just watch the raw OBV against price
+There's also the option to work with the raw OBV alone — dropping the signal line entirely — if you want to read it directly against price. Beyond colors and the signal length, there isn't much to configure.
 
-The beauty of keeping the signal line longer is that you're not chasing intraday volume spikes. OBV is a cumulative oscillator; it rewards patience.
+**How to Read It**
 
-**How I Actually Trade It**
-
-The entry logic that makes sense with OBV is divergence, not the line crossing. When price makes a lower low but OBV makes a higher low, that's institutional accumulation. I look for this on the daily chart, then drop to the 4H to time entries.
-
-For exits: if you're long and price makes a new high but OBV doesn't confirm — that's your warning. Start trailing your stop. The line itself isn't a great standalone signal; it's the divergence that pays.
+The logic that makes sense with OBV is divergence, not the line crossing. When price makes a lower low but OBV makes a higher low, that can indicate accumulation. The mirror case matters for exits: if you're long and price makes a new high but OBV doesn't confirm, that's a warning to manage the position. The line itself is not a great standalone signal; the divergence is where the information is.
 
 **The Honest Pros and Cons**
 
 **Pros:**
-- Rock solid, accurate OBV calculation
+- Accurate OBV calculation
 - No repainting, no false signals from smoothing tricks
-- Works across all asset classes — I've seen it behave well on crypto, forex, and equities
+- Works across asset classes — crypto, forex, and equities
 - Simple enough for beginners, deep enough for advanced divergence work
 
 **Cons:**
@@ -57,48 +52,49 @@ For exits: if you're long and price makes a new high but OBV doesn't confirm —
 
 **Who This Is For**
 
-If you're a swing trader who understands volume dynamics and wants a clean, dependable OBV chart — this is for you. It's also great for learning. The simplicity forces you to understand the concept rather than rely on fancy features. Position traders will find it useful for spotting accumulation phases months before price moves.
+If you're a swing trader who understands volume dynamics and wants a clean, dependable OBV chart, this fits. It's also useful for learning. The simplicity forces you to understand the concept rather than rely on features. Position traders may find it useful for spotting accumulation phases well before price moves.
 
-If you're a scalper or you want an indicator that hands you signals without thinking — skip it. You'll be frustrated by the lack of automation.
+If you're a scalper or you want an indicator that hands you signals without thinking, skip it. The lack of automation will frustrate you.
 
 **Alternatives Worth Considering**
 
 - **Volume Profile**: Better for identifying actual price levels where volume transacted, not just cumulative flow
 - **VWAP**: More practical for intraday mean reversion
-- **Money Flow Index (MFI)**: Combines price and volume into an oscillator that actually gives you overbought/oversold levels
+- **Money Flow Index (MFI)**: Combines price and volume into an oscillator that gives you overbought/oversold levels
 - **Chaikin Money Flow**: Smoother, more responsive to buying/selling pressure
 
-**FAQ From Traders Who've Tested It**
+**FAQ**
 
-**Q: Does the signal line crossover actually work as a buy/sell signal?**
-A: On higher timeframes (daily+), yes, but it lags. It's better as a confirmation tool than a standalone trigger.
+**Q: Does the signal line crossover work as a buy/sell signal?**
+A: On higher timeframes it can serve as confirmation, but it lags. It's better as a confirmation tool than a standalone trigger.
 
 **Q: Can I use this on crypto?**
-A: Absolutely. OBV works particularly well on BTC because the volume data is genuine — there's no dark pool hiding institutional flow.
+A: Yes. OBV is generally applied to crypto volume data, though the quality of that data varies by venue.
 
 **Q: Is this better than TradingView's built-in OBV?**
-A: Functionally, no. It's the same calculation. The advantage is purely cosmetic — the signal line and cleaner display. If you want divergence detection or alerts, look elsewhere.
+A: Functionally, no. It's the same calculation. The difference is cosmetic — the signal line and cleaner display. If you want divergence detection or alerts, look elsewhere.
 
 **Q: What timeframe is best?**
-A: Daily for divergence, 4H for entries. Anything below 1H is noise.
+A: Higher timeframes tend to give cleaner divergence reads; lower timeframes are noisier. The indicator itself doesn't restrict you to any timeframe.
 
 **Final Verdict**
 
-Here's the deal: this is a well-executed version of a proven concept, but it doesn't reinvent the wheel. The 4-star rating reflects that it does exactly what it claims, flawlessly, without any gimmicks. If you don't already have OBV in your toolkit, this is a solid addition. If you've been using the built-in version and it works for you, there's no urgent reason to switch.
+This is a well-executed version of a proven concept, but it doesn't reinvent the wheel. It does what it claims without gimmicks. If you don't already have OBV in your toolkit, it's a reasonable addition. If you've been using the built-in version and it works for you, there's no urgent reason to switch.
 
-The real edge here isn't the indicator — it's whether you understand volume divergence. The indicator simply shows you the data. Your interpretation is what makes or breaks the trade. For traders who respect that separation, this is a reliable tool that will serve you for years.
+The real edge here isn't the indicator — it's whether you understand volume divergence. The indicator simply shows you the data. Your interpretation is what makes or breaks the trade. For traders who respect that separation, this is a dependable tool.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Solid, dependable, and honest. Not exceptional, but it doesn't need to be.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Solid and honest. Not exceptional, but it doesn't need to be.
 
-## Frequently Asked Questions
+## What This Class of Signal Has Actually Done
 
-### Is On_Balance_Volume_Obv worth it?
+*Not this script. A canonical **OBV** implementation was backtested on 25 markets over 5 years of daily data (37,685 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
-Based on testing across multiple timeframes, On_Balance_Volume_Obv delivers solid value for traders who need trend analysis.
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: AMD 53.2%, MSFT 52.9%, AAPL 52.7%, QQQ 52.5%
+- Weakest markets: META 47.8%, LINKUSD 47.4%, SHIBUSD 27.2%
 
-### Does this indicator repaint?
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

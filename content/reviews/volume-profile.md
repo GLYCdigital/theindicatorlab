@@ -17,110 +17,105 @@ categories:
   - Technical Analysis
 rating: 5
 description: "Volume Profile reveals where the big money traded. My settings, entry rules, and why it beats standard volume indicators."
+sources: ["https://www.tradingview.com/script/4rlNNL5e-Polynomial-Linear-Regression-Volume-Profile-BigBeluga/"]
 ---
+**Volume Profile** isn’t just another volume indicator. It’s a price-level forensic tool that shows where the most volume occurred at each price level. While most volume indicators plot a bar chart at the bottom of the chart, Volume Profile builds a histogram directly on the price axis. That changes what you can read from the chart.
 
-**Volume Profile** isn’t just another volume indicator. It’s a price-level forensic tool that shows you exactly where the most volume occurred at each price level over a session. While most volume indicators just give you a bar chart at the bottom, Volume Profile builds a histogram directly on the price axis. That changes everything.
-
-I’ve tested this built-in TradingView tool across futures, forex, and crypto. As the chart above shows, you can instantly spot the **Point of Control (POC)**—the price where the most trading happened. That’s your magnetic zone. Price tends to gravitate toward it, then reject off the low-volume nodes (LVN) or respect the high-volume nodes (HVN).
+One widely used version is the **Polynomial/Linear Regression Volume Profile [BigBeluga]**, a study that blends statistical modeling with localized volume distribution. Rather than anchoring volume to a static vertical price grid, it curves the profile matrix around a mathematical trend baseline — giving a localized view of value zones, support, and resistance across the trend’s lifecycle.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **Session-based volume distribution** – You choose the time frame (daily, weekly, or custom session). It then computes volume per price level for that window. No other standard volume tool does this.
-- **Visible Range vs. Fixed Range** – You can either auto-calculate based on what’s on your screen (visible range) or lock it to a specific date range (fixed range). I use fixed range for backtesting and visible range for live trading.
-- **Value Area (VA)** – Default is 70% of total volume. The high and low of this area become dynamic support/resistance zones. Price inside the VA is fair game. Outside? Potential breakout or reversal.
-- **LVN and HVN color coding** – Low-volume nodes appear lighter, high-volume nodes darker. This visual hierarchy makes it instant to read.
+- **Recursive regression baselines** – A switchable Ordinary Least Squares engine lets you choose a straight-line path (Linear) or a second-degree curved path (Polynomial). The non-linear baseline curves to track momentum shifts rather than behaving like a standard moving average.
+- **Symmetric grid segmentation** – The indicator slices the regression space into dynamic parallel layers above and below the center line. These tracking cells expand or contract based on the mathematical bounds of the lookback period.
+- **Standard Deviation wave bands** – Tracking envelopes are plotted at 1, 2, and 3 standard deviations, mapping statistical extremes directly on the chart.
+- **Curved order flow profile** – Instead of a vertical price grid, the profile bends horizontally along the regression curve, so volume is localized relative to the trend’s value matrix rather than arbitrary static prices.
+- **Dynamic Point of Control (POC)** – Cumulative transaction weights are calculated across each regression row, and the highest volume cluster across the lookback window is highlighted as a POC baseline.
+- **Gradient density mapping** – Volume bins are colored with a responsive heat-map gradient: low-volume zones fade into deep baseline tones, while high-volume areas light up.
 
 ---
 
-## Best Settings for Most Traders
+## Settings and How to Tune Them
 
-| Setting | My Recommendation |
-|---------|------------------|
-| **Period** | Session (Daily default) |
-| **Value Area Volume** | 70% |
-| **Row Size** | Auto (or 10 ticks for ES futures) |
-| **Visible Range Calculation** | On |
-| **Extend POC Line** | On |
-| **Extend VA Lines** | On |
+The script exposes a small set of controls rather than a long parameter list.
 
-I keep **Row Size** on “Auto” for most charts. For ES or NQ futures, I manually set it to 10 ticks—gives cleaner levels without noise.
+| Control | What it does |
+|---------|--------------|
+| **Regression mode** | Switches between Linear (straight-line OLS) and Polynomial (second-degree curve) baselines. |
+| **Profile width** | Adjusts how far back profile bins stretch across chart space, to limit or extend layout clutter. |
+| **Line style** | Individualized controls for baselines, boundaries, and POC paths — Solid, Dashed, or Dotted. |
 
-**Pro tip:** Toggle **“Volume by Price”** on for a vertical histogram. I keep it off for a cleaner chart, but some day traders prefer it on.
+The **Regression Matrix Dashboard** in the top-right of the chart reports live metrics: current trend direction (Bullish/Bearish), the numerical value of the POC level, the volume resting at that node, and the ±3 SD channel limits. There is no single “best” configuration — the mode and styling choices depend on whether you want a straight trend reference or an adaptive structural arc.
 
 ---
 
-## How I Use It for Entries and Exits
+## How It Can Be Used
 
-### Entry Rules
-1. **Reversal off the Value Area High/Low** – If price touches the VA high and I see a bearish candlestick pattern (e.g., engulfing, pin bar), I enter short with a stop 1–2 ticks above the VA high.
-2. **Breakout of the Value Area** – If price closes outside the VA with heavy volume (check the volume histogram bar at the bottom), I enter in the breakout direction. The first target is the opposite VA boundary.
-3. **POC rejection** – On a retest of the POC, if volume is decreasing (low-volume node), I fade it. If volume is increasing, I wait.
+### Entry concepts
+1. **Trend value nodes** – Treat the dynamic POC line as a trend anchor. In a strong bullish trend, pullbacks into a concentrated, heat-mapped POC node are framed as lower-risk entry areas.
+2. **Mean reversion at statistical boundaries** – When price extends to the outer channel limit and volume density in that outer bin thins out, the setup implies a snapback toward the baseline.
+3. **Volume profile breakouts** – Low-volume zones (gaps in the curved profile) mark levels the market skipped quickly. A break past a thick volume node into a low-volume zone implies a fast move toward the next major heat-mapped node.
 
-### Exit Rules
-- **Take profit** at the opposite VA boundary or at the next LVN.
-- **Stop loss** just beyond the VA boundary or a fixed ATR-based stop (1.5x ATR works for me on daily charts).
+### Structural reading
+- Use the dashboard to gauge macro status. A shift between Bullish and Bearish while price hovers near a high-volume POC implies heavy distribution ahead of the next expansion.
 
 ---
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Eliminates noise from simple volume bars. You see *where* volume happened, not just how much.
-- Works across all liquid markets—futures, forex, crypto.
-- The Value Area is a self-adjusting support/resistance zone that updates every session.
-- Zero lag. It’s historical, not predictive, but the levels are sticky.
+- Reframes volume structure around a trend baseline instead of a static price grid.
+- Combines statistical bands (1/2/3 SD) with order flow in a single study.
+- The heat-map gradient makes high- and low-volume zones readable at a glance.
+- Switchable OLS engine covers both linear and polynomial trend regimes.
 
 **Cons:**
-- Not great for scalping ultra-low timeframes (1-minute or below). The histogram becomes too granular.
-- Requires some learning curve. If you don’t understand the difference between POC, VAH, VAL, and LVN, you’ll misuse it.
-- On illiquid assets or low-volume sessions, the profile can look fragmented and unreliable.
+- The regression framing means the profile is model-dependent — change the mode or lookback and the value zones move.
+- The concept stack (regression rows, POC, SD bands, gradient bins) has a learning curve.
+- As with any volume profile, thin or fragmented volume produces a less meaningful distribution.
 
 ---
 
 ## Who It’s Actually For
 
-- **Swing traders** (daily/weekly timeframes) – The VA and POC give you clear levels to plan entries and exits.
-- **Day traders** (15-min to 1-hour charts) – Use it on the previous day’s session to find today’s key levels.
-- **Futures traders** – Especially ES, NQ, CL, and GC. Volume Profile was designed for futures markets.
-- **Not for** pure scalpers or traders who rely solely on lagging indicators like moving averages.
+- **Trend traders** who want pullback levels tied to a regression baseline rather than a horizontal price grid.
+- **Order-flow-oriented traders** who already read POC and value-area concepts and want them curved along trend.
+- **Not for** traders looking for a simple static session profile — a standard Volume Profile handles that use case more directly.
 
 ---
 
 ## Better Alternatives?
 
-For TradingView users, the built-in Volume Profile is excellent. But if you want more customization:
+- **Standard Volume Profile** – The built-in TradingView tool remains the reference for session-based, vertically anchored profiles.
+- **Volume Spread Analysis (VSA)** indicators – If you want to combine volume with price action patterns rather than regression modeling.
+- **Market Profile** – More granular session structure, but a steeper learning curve.
 
-- **Low Volume Bars (LVB)** by LuxAlgo – Adds automatic detection of low-volume nodes. I use it as a filter.
-- **Market Profile** by TradeStation (not on TradingView) – More granular but steeper learning curve.
-- **Volume Spread Analysis (VSA)** indicators – If you want to combine volume with price action patterns.
-
-That said, for 95% of traders, the native Volume Profile is all you need. It’s free with any paid TradingView plan, and it just works.
+The Polynomial/Linear Regression Volume Profile is a specialized tool. It is best treated as a complement to a conventional profile, not a replacement.
 
 ---
 
 ## FAQ
 
-**Q: Should I use Volume Profile on a 1-minute chart?**  
-A: No. Stick to 15-minute or higher. On lower timeframes, the profile becomes too noisy and unreliable.
+**Q: What is the difference between this and a standard Volume Profile?**
+A: A standard profile anchors volume to a vertical price grid. This study bends the profile along a regression curve, so volume is localized relative to the trend’s path.
 
-**Q: What’s the difference between Volume Profile and Volume by Price?**  
-A: Volume by Price is a static histogram that shows cumulative volume across all price levels for the entire chart. Volume Profile resets per session. Use Volume Profile for session-based trading.
+**Q: What does the dashboard show?**
+A: Trend direction (Bullish/Bearish), the POC level value, the volume at that node, and the ±3 SD channel limits.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but only on high-volume pairs like BTCUSDT or ETHUSDT. Low-cap altcoins don’t have enough liquidity for meaningful profiles.
+**Q: Can I change the line styles?**
+A: Yes — baselines, boundaries, and POC paths each support Solid, Dashed, and Dotted styles.
 
-**Q: How do I set it up on TradingView?**  
-A: Go to Indicators → “Volume Profile” (built-in). Adjust the “Period” to “Session” for daily profiles. Enable “Extend POC Line” and “Extend VA Lines.”
+**Q: How do I control chart clutter?**
+A: Adjust the profile width parameters to limit or extend how far back profile bins stretch.
 
 ---
 
 ## Final Verdict
 
-Volume Profile is a **5-star** indicator for anyone serious about price action and volume analysis. It’s not a magic bullet—you still need to interpret the levels and combine them with your own strategy—but it gives you an edge that standard volume bars simply cannot. If you haven’t added it to your chart yet, you’re leaving money on the table.
+The Polynomial/Linear Regression Volume Profile is a well-constructed study for traders who already think in terms of value zones and order flow but want those zones expressed relative to a trend baseline. It is not a magic bullet — the regression framing means the levels are model-dependent, and it rewards users who understand POC, standard deviation bands, and volume distribution. For that audience, it offers a genuinely different lens on volume structure.
 
-**Rating: ⭐⭐⭐⭐⭐ (5/5)**
+**Rating: ⭐⭐⭐⭐ (4/5)**
 
 ---
 

@@ -17,83 +17,102 @@ categories:
 rating: 4
 description: "Hands-on test of Tradleware's Gaussian Channel + StochRSI combo for ETH. Settings, entry logic, pros/cons, and who should use it."
 tv_script_url: "https://www.tradingview.com/script/egTb7TgJ-TRADLEWARE-Gaussian-Channel-StochRSI-ETH/"
+sources: ["https://www.tradingview.com/script/egTb7TgJ-TRADLEWARE-Gaussian-Channel-StochRSI-ETH/"]
 ---
-Let me cut through the name first. "Tradleware_Gaussian_Channel_Stochrsi_Eth" sounds like someone smashed three indicators together and hoped for the best. But after running it on ETH charts for a few weeks, I'll say this: the combination actually works better than the sum of its parts.
+The script's name is a mouthful, and it invites the assumption that three indicators were bolted together and shipped. The official description makes a more specific claim than that: the components are wired together with a regime gate and a set of filters, and the whole thing is documented as a strategy rather than an indicator. That distinction matters for how you read it.
 
-## What This Indicator Actually Does
+## What This Strategy Actually Does
 
-This is a trend-following tool that layers a Gaussian-filtered channel over price, then uses StochRSI as a momentum confirmation filter. The Gaussian channel isn't your typical Bollinger Band clone — it applies a Gaussian smoothing function to the moving average, which reduces lag significantly compared to standard SMA or EMA-based channels. The result is a channel that hugs price action tighter in ranging markets but still expands properly during strong trends.
+This is a trend-continuation strategy built on three layers. The core is a fast Gaussian Channel — a smoothed price envelope built with an IIR (infinite impulse response) filter, which applies a bell-curve weighting across recent bars for smooth, low-lag output. The channel is formed by adding and subtracting a filtered measure of true range around the central filter line, so it widens and narrows with volatility.
 
-The StochRSI component sits in a separate pane or as an overlay (depending on how you configure it), giving you a momentum read that's more sensitive than plain RSI. The premise is simple: trade the channel direction, but only enter when StochRSI agrees.
+The channel turns green when the filter is rising and red when it is falling. A Stochastic RSI filter supplies momentum confirmation on entries, and a 200-day simple moving average acts as a bull/bear regime switch. The strategy only trades when price is above that average.
+
+The stated intent is to catch trend continuation while sitting out confirmed downtrends.
 
 ## Key Features That Stand Out
 
-The Gaussian filter is the real differentiator here. Unlike the laggy Donchian channels or the whipsaw-prone Bollinger Bands, this channel adapts faster to price reversals. On the ETH 4-hour chart I tested, the channel caught the August 12 reversal within three candles — a standard 20-period Bollinger Band took six.
+The Gaussian filter is the differentiator, and the description is explicit about why: the bell-curve weighting produces smooth output without the lag you would expect from equivalent smoothing. The channel color-coding — green for a rising filter, red for a falling one — gives the trend state at a glance.
 
-The built-in StochRSI divergence detection is another plus. It flags hidden and regular divergences automatically, which saves you from manually scanning momentum peaks. It's not perfect — I counted a few false positives — but it's a useful shortcut.
+The regime gate is the other structural feature. It exists specifically to block breakout entries that fire during bear-market bounces, described as dead-cat rallies that look like trend resumption on the channel and oscillator alone but occur underneath a still-falling long-term average.
 
-The indicator also color-codes the channel based on trend strength. Green for bullish momentum, red for bearish, and gray for neutral. This visual clarity makes it easy to read at a glance, especially when you're monitoring multiple pairs.
+The entry conditions are conjunctive and unusually specific. A long requires all five to be true at once: channel green, price closing above the upper band, Stochastic RSI %K either above 80 or below 25, price above the 200-day SMA, and the signal bar closing above its own open. The last condition filters out breakout bars that clear the upper band intrabar but close weak — a pattern the description identifies as a common precursor to an immediate whipsaw exit on the next bar.
 
-## Best Settings I Found
+## Settings and How to Tune Them
 
-After lots of backtesting, here's what worked for me on ETH/USDT:
+The parameter set is short, and the description gives values for most of it.
 
-- **Gaussian Length:** 20 (default is 14, but 20 reduces noise without adding too much lag)
-- **Channel Multiplier:** 2.0 (the default 2.5 was too wide for scalping)
-- **StochRSI Period:** 14, with Smoothing at 3
-- **StochRSI Overbought/Oversold:** 80/20
+- **Poles:** 4. Controls filter smoothness — higher is smoother but adds lag.
+- **Sampling Period:** 89. Described as a faster channel than the baseline version, reacting sooner to trend changes.
+- **True Range Multiplier:** 1.5. Controls channel width.
+- **Stochastic RSI overbought threshold:** 80.
+- **Stochastic RSI oversold threshold:** 25. A parameter sweep found a stable plateau from 22 to 28; 25 sits at the center of that range rather than at a single best value.
+- **200-SMA regime gate:** on by default, can be disabled, length adjustable.
+- **Bullish entry candle requirement:** on by default, can be disabled.
+- **Entry breakout buffer:** 0% (off) by default. It was tested at multiple levels above 0% and found to reduce returns at every level, so it was left disabled.
+- **Stop-loss at lower band:** on by default, can be disabled.
+- **Start/End date range inputs:** restrict the backtest window without editing code.
 
-For day trading ETH, these settings caught most meaningful moves without getting chopped up. If you're swing trading on higher timeframes, bump the Gaussian Length to 28 and the multiplier to 2.5.
+The description does not claim any setting is optimal. The one tuning note offered — that the oversold threshold sits mid-plateau rather than at a peak — is a robustness argument, not a performance claim.
 
 ## How to Use It
 
-The entry logic that made sense to me:
+The entry logic is fully specified. Long entry requires the five conditions above to hold simultaneously. The bullish-candle requirement and the 200-SMA gate can each be turned off, which changes what the strategy will accept.
 
-**Long entry:** Price closes above the Gaussian midline (the averaged center line), the channel turns green, and StochRSI crosses above 50. Don't chase if StochRSI is already above 80.
+Exit is simpler. The position closes when either price closes back below the upper band (breakout failed or trend cooling) or the channel flips from green to red (trend direction reversed).
 
-**Short entry:** Price closes below the midline, channel turns red, and StochRSI crosses below 50.
-
-**Exit:** Trail your stop along the opposite channel band, or exit when StochRSI hits overbought/oversold and starts curling back.
-
-The divergence signals work best as a warning system rather than a standalone entry. If you see bearish divergence while price is at the upper channel band, that's a strong signal to tighten your stop or take partial profits.
+The stop-loss sits at the lower band and trails as the channel moves, providing a floor if price drops through both bands in the same move. Note the asymmetry in the regime gate: it only blocks new entries. It does not force an exit if price falls back below the 200-SMA mid-trade.
 
 ## Pros & Cons
 
 **Pros:**
-- Gaussian filter genuinely reduces lag compared to traditional channels
-- The combined momentum + trend filter filters out most false signals
-- Clear visual design with useful color coding
-- Divergence alerts are built-in
+- The Gaussian filter is a documented, low-lag alternative to standard moving-average channels, credited to DonovanWall's open-source "Gaussian Channel (DW)" indicator.
+- The entry conditions are explicit and testable, including the two optional filters.
+- The regime gate has a stated purpose — blocking bear-market bounce entries — rather than being a generic trend filter.
+- Costs are modelled honestly: 0.1% commission per side, 3 ticks slippage, fills at the next bar's open.
 
 **Cons:**
-- The name is a nightmare to remember (I keep calling it "Tradleware ETH thing")
-- StochRSI can stay in overbought/oversold territory for extended periods in strong trends — you'll exit early if you follow it blindly
-- Not beginner-friendly. The settings panel is dense, and the documentation is sparse
+- Underperforms in choppy or ranging markets, where the upper-band breakout generates whipsaws when price oscillates without directional conviction.
+- The regime gate is a trade-off: it blocks bear-bounce false starts, but it can also miss the first leg of a genuine new uptrend until price reclaims the 200-day SMA.
+- The filter needs several hundred bars of history to fully converge, so results on very short histories may differ from the validated backtest.
+- The strategy trades infrequently — roughly 28 trades on the validated window — so any single backtest run is a small sample, not a statistically strong result.
 
 ## Who It's For
 
-This indicator suits intermediate to advanced traders who understand how momentum and trend interact. If you're a beginner, you'll likely get confused by the StochRSI signals contradicting the channel direction. It's also best for ETH specifically — the developer clearly optimized it for Ethereum's volatility profile. It works on BTC but feels less tuned there.
+The strategy is designed and validated on ETH/USDT on daily bars. The description notes it is likely applicable to other trending crypto assets, and explicitly states it is not validated on equities. The intended timeframe is daily, not intraday.
+
+The complexity is real: five simultaneous entry conditions plus two optional gates is a lot of moving parts, and the honest framing is that this is a rules-based system for traders who want the regime filter built in, not a plug-and-play signal.
 
 ## Alternatives Worth Considering
 
-If you want a simpler trend channel, **Supertrend** gets you 70% of the functionality with 10% of the complexity. For momentum confirmation, **StochRSI alone** with standard moving averages achieves similar results. The real value of this indicator is having everything in one place with the Gaussian twist.
+The description itself points to the Gaussian Channel (DW) indicator by DonovanWall as the source of the filter. If you want the channel without the Stochastic RSI filter, the 200-day SMA gate, and the order management, that indicator is the direct alternative and is open source.
 
 ## FAQ
 
-**Is this indicator good for scalping ETH?**
-It works on lower timeframes, but the StochRSI whipsaws more on 1-minute charts. Stick to 5-minute or higher.
+**Is this good for scalping ETH?**
+The description does not address intraday use. It states daily bars as the intended timeframe and ETH/USDT as the validated market.
 
 **Does it repaint?**
-The Gaussian channel itself doesn't repaint meaningfully, but the divergence detection can redraw as new candles form. Not a dealbreaker, but be aware.
+The source material does not make a repainting claim. It does note that the filter requires several hundred bars to fully converge, which is a warm-up consideration rather than a repainting one.
 
 **Can I use it on other cryptos?**
-Yes, but adjust the settings. Lower timeframe altcoins need a higher Gaussian Length to filter noise.
+The description says it is likely applicable to other trending crypto assets but was only validated on ETH/USDT. It is explicitly not validated on equities.
 
 ## Final Verdict
 
-The Tradleware_Gaussian_Channel_Stochrsi_Eth is a solid 4-star tool. It's not revolutionary — you can replicate the logic with three separate indicators — but the package is well-executed, the Gaussian filter genuinely improves responsiveness, and the convenience of having everything synced in one script saves time. If you trade ETH with a trend-following style, this deserves a spot in your toolkit. Just don't expect it to work flawlessly on every asset or timeframe without tuning.
+This is a coherently assembled strategy rather than a bundle of indicators sharing a chart. The Gaussian Channel does the trend work, the Stochastic RSI filter and the bullish-candle requirement do the entry-quality work, and the 200-day SMA gate handles regime. The description is candid about the trade-offs: choppy markets hurt, the regime gate costs you the first leg of new uptrends, and 28 trades is a small sample.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — A genuinely useful trend indicator, held back only by its complexity and a namesake that's impossible to remember.
+The main knock is scope. It is validated on one asset on one timeframe, and the documentation says so plainly. Treat it as a documented starting point for daily crypto trend-following, not a general-purpose system.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **StochRSI** implementation was backtested on 30 markets over 5 years of daily data (37,714 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.9%** (50% = coin flip)
+- Strongest markets: LTCUSD 53.2%, AVAXUSD 52.9%, BTCUSD 52.8%, LINKUSD 52.4%
+- Weakest markets: META 48.8%, AAPL 47.6%, SHIBUSD 31.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

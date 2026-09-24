@@ -16,32 +16,29 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe CCI indicator that shows higher timeframe signals on your current chart. Practical for trend filtering and divergence spotting."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Mtf_Cci is a multi-timeframe Commodity Channel Index indicator. Instead of flipping between timeframes, it plots CCI values from a higher timeframe directly on your current chart. You choose the higher timeframe (e.g., 1H or 4H) and it shows that CCI line alongside your current chart's price action.
+Mtf_Cci is a multi-timeframe Commodity Channel Index indicator. Instead of flipping between timeframes, it plots CCI values from a higher timeframe directly on your current chart. You choose the higher timeframe and it shows that CCI line alongside your current chart's price action.
 
 It's not a magical trading system. It's a contextual tool that answers one question: "What's the CCI reading on the higher timeframe right now?"
 
 ## Key Features That Set It Apart
 
-- **True multi-timeframe data**: The line isn't repainted or smoothed. It's the actual CCI value from the selected higher timeframe, plotted on your lower timeframe chart.
-- **Customizable timeframe**: Choose any timeframe from 1 minute to monthly. Most traders will use 1H or 4H for day trading, or daily for swing trading.
-- **Overbought/oversold levels**: Default at +100 and -100, but you can adjust them. I've found +150/-150 works better for trending markets.
+- **True multi-timeframe data**: The line is the actual CCI value from the selected higher timeframe, plotted on your lower timeframe chart.
+- **Customizable timeframe**: Choose any timeframe from 1 minute to monthly.
+- **Overbought/oversold levels**: Default at +100 and -100, but you can adjust them.
 - **Divergence potential**: Because the higher timeframe CCI line is plotted on your chart, you can spot hidden and regular divergences without switching tabs.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-Default settings work, but here's what I've dialed in after testing:
+- **Timeframe**: The higher timeframe you want CCI readings from. A common convention is a 4x multiplier between your chart timeframe and the CCI timeframe.
+- **CCI Length**: The standard CCI length is 14.
+- **Overbought / Oversold**: Defaults sit at +100 and -100 and can be adjusted to suit how much noise you're willing to tolerate.
+- **Line color**: Purely cosmetic; pick whatever makes divergences readable to you.
 
-- **Timeframe**: 4H (for daily chart) or 1H (for 15min chart). This gives you a clean 4x multiplier.
-- **CCI Length**: 14 (standard). Don't touch it unless you know what you're doing.
-- **Overbought**: 150 (reduces noise in trending markets)
-- **Oversold**: -150 (same reasoning)
-- **Line color**: I use green for bullish divergence, red for bearish. Default is fine.
-
-Pro tip: When the higher timeframe CCI is above +100, only take long setups on the lower timeframe. When below -100, only take shorts. This simple filter alone improves win rate by about 15% in my testing.
+A practical filter: when the higher timeframe CCI is above +100, focus on long setups on the lower timeframe. When below -100, focus on shorts. Between the two, treat the market as rangebound and lean on other tools.
 
 ## How to Use It for Entries and Exits
 
@@ -62,8 +59,8 @@ Pro tip: When the higher timeframe CCI is above +100, only take long setups on t
 
 **Pros:**
 - Saves screen real estate. No need for multiple charts open.
-- Reduces overtrading. The higher timeframe filter stops you from taking weak setups.
-- Works well with price action. I use it with support/resistance and candlestick patterns.
+- Reduces overtrading. The higher timeframe filter discourages weak setups.
+- Pairs well with price action, support/resistance and candlestick patterns.
 - Free and lightweight. No lag, no memory issues.
 
 **Cons:**
@@ -90,18 +87,18 @@ For most traders, Mtf_Cci is the cleanest option. It does one thing well.
 ## FAQ Addressing Real Trader Questions
 
 **Q: Does this repaint?**  
-A: No. It plots the higher timeframe CCI value as each higher timeframe bar closes. No repainting, no second-guessing.
+A: It plots the higher timeframe CCI value as each higher timeframe bar closes, so the line reflects confirmed higher timeframe data rather than an unfinished bar.
 
 **Q: Can I use it for crypto?**  
-A: Yes. Works on any market. I've tested it on BTC, ETH, and forex pairs.
+A: Yes. It works on any market.
 
 **Q: What's the best timeframe combination?**  
-A: 4x multiplier. 15min chart with 1H CCI. 1H chart with 4H CCI. 4H chart with daily CCI.
+A: A 4x multiplier is a common convention: 15min chart with 1H CCI, 1H chart with 4H CCI, 4H chart with daily CCI.
 
 **Q: Why does the line look flat sometimes?**  
 A: Because the higher timeframe CCI only updates when that higher timeframe candle closes. On a 5min chart with 4H CCI, the line stays flat for 4 hours between updates.
 
-## Final Verdict with Star Rating
+## Final Verdict
 
 Mtf_Cci is a solid, no-nonsense multi-timeframe CCI indicator. It does exactly what it promises: shows higher timeframe CCI on your current chart. No bells, no whistles, no BS.
 
@@ -110,7 +107,15 @@ It's not going to make you a profitable trader overnight. But if you already und
 **Rating: ⭐⭐⭐⭐ (4/5)**  
 One star deducted because it lacks divergence alerts and the stair-step line can be jarring. But for what it is, it's excellent.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **CCI** implementation was backtested on 30 markets over 5 years of daily data (18,156 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: USDJPY 57.3%, AMD 55.8%, EURUSD 55.7%, XAUUSD 55.1%
+- Weakest markets: LTCUSD 42.3%, VIX 38.0%, SHIBUSD 32.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

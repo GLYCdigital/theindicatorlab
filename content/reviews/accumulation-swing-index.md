@@ -16,63 +16,59 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Accumulation Swing Index review: a momentum-volume hybrid that identifies accumulation phases. Settings, strategy, and honest pros and cons."
+grounding: "none (no source found)"
 ---
+This is one of those indicators that *sounds* like it should be a game-changer — a swing index that tracks accumulation? Sign me up. The reality is more measured. It's not bad, but it's not the secret weapon you might hope for.
 
-This is one of those indicators that *sounds* like it should be a game-changer — a swing index that tracks accumulation? Sign me up. After trading with it for a few weeks on ES and NQ, I’m landing at a solid **3 stars**. It’s not bad, but it’s not the secret weapon you might hope for.
-
-Let’s cut through the marketing.
+Let's cut through the marketing.
 
 ### What This Indicator Actually Does
 
-The **Accumulation Swing Index** (let’s call it ASI for short) is a momentum-volume hybrid. It takes Wilder’s original Swing Index concept and layers in volume-weighted accumulation/distribution logic. The result is a single line that oscillates around a zero level, trying to tell you when smart money is quietly loading up (accumulation) or distributing.
+The **Accumulation Swing Index** (ASI for short) is a momentum-volume hybrid. It takes Wilder's original Swing Index concept and layers in volume-weighted accumulation/distribution logic. The result is a single line that oscillates around a zero level, aiming to show when smart money is quietly loading up (accumulation) or distributing.
 
-Unlike the classic Accumulation/Distribution Line (which is cumulative), ASI resets and swings. It’s more like a smoothed oscillator that reacts to both price action and volume expansion.
+Unlike the classic Accumulation/Distribution Line (which is cumulative), ASI resets and swings. It behaves more like a smoothed oscillator that reacts to both price action and volume expansion.
 
 ### Key Features That Set It Apart
 
-- **Volume-weighted swing logic** – Most swing indexes ignore volume. ASI doesn’t, which gives it an edge in identifying real accumulation vs. noise.
-- **Clear zero-level cross signals** – The line crossing above zero suggests accumulation starting; crossing below suggests distribution.
-- **Divergence detection** – The chart above shows a subtle bullish divergence in late June before a 2% move. That’s the best use case I’ve found.
+- **Volume-weighted swing logic** – Most swing indexes ignore volume. ASI doesn't, which is the basis for its claim to distinguish real accumulation from noise.
+- **Zero-level cross signals** – The line crossing above zero is read as accumulation starting; crossing below as distribution.
+- **Divergence detection** – Divergences between price and the ASI line are the intended use case, and arguably the most defensible one.
 
-But here’s the catch: it’s **not original**. Several paid indicators (like *Smart Money Concepts* or *Volume Profile Swing Index*) do this better with more context.
+The catch: the concept isn't original. Several paid indicators (like *Smart Money Concepts* or *Volume Profile Swing Index*) cover similar ground with more context.
 
-### Best Settings (What Actually Worked)
+### Settings and How to Tune Them
 
-After testing on 15-min to 1-hour timeframes:
+The indicator exposes a period input, a smoothing input, and a volume filter toggle. The period controls how much price history feeds the swing calculation — longer periods produce a smoother line, shorter periods react faster. Smoothing applies an additional averaging pass over the output; more smoothing means less noise but more lag. The volume filter weights the calculation by volume activity, which is the whole point of the indicator, so leaving it enabled is consistent with its design.
 
-- **Period:** 14 (default works, but 21 smooths it more for lower noise)
-- **Smoothing:** 5 (don’t go higher than 8 or you lose responsiveness)
-- **Volume filter:** ON (duh, that’s the whole point)
-
-**Pro tip:** On the 1-hour chart, the 21-period setting gave me fewer false signals when paired with a 50 EMA. Zero-level crosses alone are too noisy.
+Zero-level crosses on their own are noisy. Pairing the line with a trend filter — a moving average, for example — is a common way traders reduce whipsaw, though the choice of filter and its length is a personal one.
 
 ### How to Use It for Entries and Exits
 
-- **Long entry:** ASI line crosses above zero + price above 50 EMA
+- **Long entry:** ASI line crosses above zero with price above a trend filter
 - **Exit:** ASI line crosses below zero or forms bearish divergence
-- **Short entry:** ASI line crosses below zero + price below 50 EMA
+- **Short entry:** ASI line crosses below zero with price below a trend filter
 - **Stop loss:** Recent swing low (for longs) or swing high (for shorts)
 
-It works best as a **confirmation tool**, not a standalone entry system. Don’t trade every zero-cross.
+It works best as a **confirmation tool**, not a standalone entry system. Don't trade every zero-cross.
 
 ### Honest Pros and Cons
 
 **Pros:**
-- Unique volume+momentum blend – actually shows accumulation phases
-- Decent divergence detection on higher timeframes
-- Free (free is always good)
+- Volume-plus-momentum blend that attempts to show accumulation phases
+- Divergence detection is its strongest feature
+- Free
 
 **Cons:**
-- Laggy on lower timeframes (1-min, 5-min are useless)
-- Zero-level crosses generate too many false signals without a trend filter
-- Not much better than a simple RSI + Volume combo
-- Documentation is sparse – you’ll need to experiment
+- Laggy on lower timeframes
+- Zero-level crosses generate false signals without a trend filter
+- Not obviously better than a simple RSI + Volume combo
+- Documentation is sparse — you'll need to experiment
 
-### Who It’s Actually For
+### Who It's Actually For
 
-- **Swing traders** on 1-hour or higher timeframes
+- **Swing traders** on higher timeframes
 - Traders who want a volume-aware momentum indicator without paying for premium suites
-- People who like divergence trading (this is where ASI shines)
+- People who like divergence trading
 
 **Not for:** Scalpers, day traders on low timeframes, or anyone expecting a magic bullet.
 
@@ -80,33 +76,39 @@ It works best as a **confirmation tool**, not a standalone entry system. Don’t
 
 If you want to skip the trial-and-error:
 
-- **Volume Profile Swing Index** (paid) – more accurate accumulation zones
+- **Volume Profile Swing Index** (paid) – more context around accumulation zones
 - **Smart Money Concepts** (free, by LuxAlgo) – better context for supply/demand
-- **Classic RSI + Volume bars** – just as effective, zero learning curve
+- **Classic RSI + Volume bars** – comparable function, zero learning curve
 
 ### FAQ
 
-**Q: Does it repaint?**  
-No, but it does lag by a few bars on lower timeframes. Data is fixed once the bar closes.
+**Q: Does it repaint?**
+The line is calculated from closed-bar data, so values are fixed once a bar closes. It does lag, and the lag is more visible on lower timeframes.
 
-**Q: What’s the best timeframe?**  
-1-hour or higher. Anything below 15-min is noise city.
+**Q: What's the best timeframe?**
+Higher timeframes suit it better. Lower intraday timeframes are dominated by noise.
 
-**Q: Can I use it for crypto?**  
-Yes, but volume on crypto is messy. Use it on BTC or ETH with caution.
+**Q: Can I use it for crypto?**
+Yes, but crypto volume data is messy, so treat the volume component with caution.
 
-**Q: Is it better than the regular Swing Index?**  
-Marginally. The volume component helps, but not enough to call it a game-changer.
+**Q: Is it better than the regular Swing Index?**
+Marginally. The volume component adds something, but not enough to call it a game-changer.
 
 ### Final Verdict
 
-The **Accumulation Swing Index** is an honest indicator – it does what it says, but it doesn’t revolutionize anything. If you’re a swing trader who likes divergence and wants a free volume-aware tool, it’s worth adding to your watchlist. But if you already use RSI with volume or have any premium suite, you’re not missing much.
+The **Accumulation Swing Index** is an honest indicator — it does what it says, but it doesn't revolutionize anything. If you're a swing trader who likes divergence and wants a free volume-aware tool, it's worth a look. But if you already use RSI with volume or have any premium suite, you're not missing much.
 
 **Rating: ⭐⭐⭐ (3/5)**
 
-*Tested on ES, NQ, and BTC/USDT – 15-min to 4-hour timeframes. Best results came from 1-hour + 50 EMA filter.*
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **Accum/Dist** implementation was backtested on 25 markets over 5 years of daily data (37,728 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.3%** (50% = coin flip)
+- Strongest markets: MSFT 53.0%, SPY 52.4%, PLTR 52.2%, NVDA 51.7%
+- Weakest markets: LINKUSD 45.4%, LTCUSD 44.7%, SHIBUSD 27.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

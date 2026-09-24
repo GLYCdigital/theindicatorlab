@@ -17,81 +17,96 @@ categories:
 rating: 4
 description: "Vwap_Ai_Statistical_Bands_Touch_Stats_Dots3Red review: tested settings, entry logic, pros & cons. Solid trend tool with statistical edge, but has quirks."
 tv_script_url: "https://www.tradingview.com/script/Vs7khoJl-VWAP-AI-Statistical-Bands-Touch-Stats-Dots3Red/"
+sources: ["https://www.tradingview.com/script/Vs7khoJl-VWAP-AI-Statistical-Bands-Touch-Stats-Dots3Red/"]
 ---
-Let me be upfront: the name is a mouthful, but this indicator does something genuinely interesting. Vwap_Ai_Statistical_Bands_Touch_Stats_Dots3Red is a trend-following tool that combines volume-weighted average price with statistical bands and a touch-counting mechanism. The "Dots3Red" part isn't marketing fluff—it refers to the three red dots that appear when price touches the lower band a statistically significant number of times, signaling potential mean reversion or trend exhaustion.
+The name is a mouthful, but this indicator does something worth understanding. Vwap_Ai_Statistical_Bands_Touch_Stats_Dots3Red combines volume-weighted average price with statistical bands and a touch-grading mechanism. The "Dots3Red" suffix refers to marker styling rather than a fixed three-touch signal — the script lets you toggle independent Band 1 and Band 2 touch markers and choose between a Dot or Triangle style.
 
-I've run this on multiple timeframes, from 5-minute scalps to daily swing trades, and the behavior is consistent. The indicator plots VWAP with upper and lower bands calculated using standard deviation, but the real value is in the accumulation logic. Every time price touches a band, it logs that event. When you hit three touches on the lower band within a defined lookback window, those red dots fire. That's your signal.
+## What Sets It Apart
 
-## What Actually Sets It Apart
+Most VWAP indicators give you the line and a couple of bands, and the standard deviation bands are treated more or less as reliable support and resistance on faith. This script checks that faith against the actual chart in front of you: every band touch is graded, every break beyond a band is graded, and the results accumulate into a running record.
 
-Most VWAP indicators just give you the line and maybe a couple of bands. This one adds a statistical layer that tells you *when* the bands have been tested enough to matter. The "AI" in the name is a stretch—there's no machine learning here, just well-designed statistical thresholds. But that's fine. The touch-counting mechanism is genuinely useful because it filters out the first touch (which often fails) and waits for confirmation.
+VWAP itself tells you the volume-weighted average price — where the center of gravity of trading has actually been. The bands around it are meant to show how far price typically wanders from that center before snapping back. But "typically" varies enormously by instrument, session, and market condition, and a plain VWAP tool does not tell you what has actually been happening on your chart.
 
-The chart above shows a clean example: price chopped around VWAP for hours, then pushed down to the lower band three separate times within the lookback period. The red dots printed, and price reversed hard. That's the edge—it's not predicting the future, it's quantifying that a level has been tested enough that a bounce becomes statistically probable.
+The statistical layer answers that directly. The dashboard reports figures in the form "+1σ | 62% rejected (n=41)" — meaning 41 touches of the +1σ band have been recorded, and a portion of them resulted in price genuinely rejecting back toward VWAP. That is measured history from the chart rather than an assumption baked into the tool.
 
-## Settings I Actually Recommend
+## How It Works
 
-Default settings are workable but conservative. I tested aggressive and relaxed variations. Here's what performed best:
+**Anchoring** — VWAP resets at the start of each new period. Session is the classic intraday default; Week and Month extend the same logic to longer views. Custom Bar anchors once, permanently, to a specific historical point you choose — useful for anchoring to an earnings date, a gap, or any event you want to measure from, rather than the calendar.
 
-- **Standard Deviation Multiplier:** 2.0 (default is fine, but 1.8 catches more touches on ranging days)
-- **Lookback Period for Touch Count:** 50 bars (shorter makes dots too frequent, longer makes them useless)
-- **Touch Threshold:** 3 (this is the sweet spot—2 gives false signals, 4 misses reversals)
-- **Show Bands:** Keep on. The bands themselves are your context.
+**Two-tier statistical bands** — Band 1 and Band 2 are both standard-deviation multiples of VWAP, computed from a running variance rather than an ATR approximation. Defaults are ±1σ and ±2σ, both fully adjustable.
 
-One critical tweak: on higher timeframes (4H and above), increase the lookback to 100 bars. The default 20-bar lookback makes the dots fire too often on intraday charts where price revisits levels constantly.
+**Touch grading** — when price wicks into a band without closing beyond it, that is logged as a touch. Within a configurable window, it resolves as a Rejection (price moved back toward VWAP by a meaningful distance), a Break (price closed convincingly through the band), or a Timeout (neither happened clearly enough to call).
 
-## How I Trade It
+**Break-to-reversion tracking** — separately, when price actually closes beyond Band 1, the script watches whether that move reverts back toward VWAP or continues away from it. This answers a different question than touch grading: not "did the band hold," but "once it didn't, did price come back anyway?"
 
-The logic is simple but requires discipline. When the three red dots print on the lower band, I look for a bullish reversal confirmation—a hammer candle, RSI divergence, or simply price closing back above the VWAP line. Entry goes at the close of the confirmation candle. Stop loss sits just below the lowest band touch. Target is the VWAP line itself, which acts as the first resistance level.
+**Non-repainting** — all grading happens strictly on confirmed bars.
 
-For shorts, it's the mirror image with the upper band. The red dots only print on the lower band (hence "3Red"), so I use the upper band as a mean-reversion short signal only when price touches it three times—even though the indicator won't mark it, I count manually. That's a limitation worth noting.
+## Settings and How to Tune Them
+
+**Anchoring** — Session / Week / Month / Custom Bar, plus source price.
+
+**Bands** — Band 1 and Band 2 standard-deviation multipliers, and a Band 2 visibility toggle.
+
+**Touch Statistics** — Touch Tolerance, Rejection Distance, Reversion Distance, Outcome Window. These define what counts as a touch, how far price must travel back toward VWAP to grade as a rejection, how far it must revert after a break, and how long the script waits before calling an outcome.
+
+**Visualization** — independent Band 1 / Band 2 touch marker toggles, Dot or Triangle marker style, marker size, VWAP and band line widths, and independent fill transparency per band tier.
+
+**Colors** — VWAP line, Band 1 lines, Band 2 lines, upper/lower touch markers, the Price Above/Below VWAP indicator, and full dashboard color control (background, border, header, row styling).
+
+**Dashboard** — show/hide and position. It displays the current VWAP value, price position, all four band stats, and both break-reversion stats in one place.
+
+## How to Use It
+
+1. **Check the band stats before treating a level as reliable.** A high rejection rate over a large sample and a low rejection rate over a small one look like the same line on the chart but mean very different things about how much to lean on it.
+
+2. **Use break-reversion stats to judge a breakout beyond VWAP's range.** If breaks above Band 1 have reverted back frequently on this chart, that is useful context before assuming a fresh breakout will keep running.
+
+3. **Read Price vs VWAP as the simplest possible bias check.** Above VWAP means the average buyer today is in profit; below means the average buyer is underwater. It is a blunt but genuinely useful read on crowd positioning.
+
+4. **Let sample sizes build before trusting the percentages.** Every stat shows its N= specifically so you can judge reliability yourself — a handful of touches is not yet a pattern.
+
+5. **Match the anchor mode to what you are actually measuring.** Session for pure intraday structure, Week or Month for a longer view, Custom Bar when you want to measure from one specific moment forward.
+
+## Which Timeframes Work Best
+
+Session-anchored VWAP is fundamentally an intraday tool — it was built for, and is most meaningful on, timeframes where a full session contains enough bars to form a real distribution. 1-minute through 1-hour is the classic and most effective range, which is where VWAP sees the heaviest institutional and day-trading use.
+
+On daily or weekly charts, a Session anchor resets so frequently relative to the bar size that it stops being meaningful — you would see very few bars per session. For higher-timeframe or swing-style use, switch the anchor to Week, Month, or Custom Bar instead, so the accumulation window actually spans enough bars to produce a meaningful VWAP and band structure.
+
+The touch and break statistics also need enough occurrences to mean anything — a fast-moving intraday chart will accumulate a useful sample size in days; a slow higher-timeframe anchor will take considerably longer.
 
 ## Where It Struggles
 
-Let's be honest about the flaws. First, this indicator is useless in strong trends. If price is ripping away from VWAP, those lower-band touches mean nothing—the three dots will fire, and you'll catch a falling knife. I learned this the hard way during a strong downtrend where the indicator kept printing buy signals that all failed.
-
-Second, the "AI" branding is misleading. There's no adaptive logic. The statistical bands are just standard deviation channels with extra bookkeeping. It's clever, but not intelligent.
-
-Third, performance on the chart gets cluttered. The dots, bands, and VWAP line plus the optional stats panel can overwhelm the price action. I ended up hiding the stats panel and keeping only the essential visuals.
+The tool has real limitations. It is an analytical and visualization tool, not a signal generator — it does not produce trade signals, and rejection or reversion rates do not guarantee future performance. In a strong trend, price can keep pushing away from VWAP and every band statistic reflects that environment rather than predicting a snap-back. The "AI" in the name overpromises: there is no machine learning here, just statistical thresholds and bookkeeping. And with dots, bands, VWAP line, and the stats panel all enabled, the chart can get cluttered, which is why the visualization toggles exist.
 
 ## The Verdict
 
-This is a four-star indicator. It's not revolutionary, but it's genuinely useful for mean-reversion traders who understand that VWAP bands need a confirming mechanism. The touch-counting feature adds an objective layer to what's usually a subjective "price tapped the band, so maybe it bounces" approach.
+A useful indicator for traders who work VWAP bands and want an objective read on how those bands have actually behaved on their chart, rather than assuming they hold. The touch grading, break-reversion tracking, and running sample sizes are the substance. The naming oversells it, and the stats need time to accumulate before they mean anything. If you trade VWAP reversion, this gives you a concrete record to lean on.
 
 **Pros:**
-- Quantifies band touches objectively
-- Clear, visual signals with the red dots
-- Works across intraday and swing timeframes
-- Good default logic that doesn't repaint
+- Quantifies band touches objectively with running sample sizes
+- Separates touch grading from break-to-reversion tracking
+- Non-repainting, with all grading on confirmed bars
+- Configurable anchoring, bands, and dashboard
 
 **Cons:**
-- Fails in trending conditions without additional filters
+- Does not generate trade signals
 - The "AI" name overpromises
-- Upper band reversals require manual counting
+- Statistics need a meaningful sample before they are useful
 - Chart clutter with all features enabled
 
-**Who this is for:** Mean-reversion traders who trade VWAP bounces and want statistical confirmation. Range-bound market specialists. If you trade breakouts aggressively, skip this—it will fight your style.
+**Who this is for:** Traders who work VWAP bounces and want statistical context before leaning on a band as support or resistance.
 
-**Alternatives:** Standard VWAP with standard deviation bands (if you want simplicity). The "VWAP Reversion" suite by LuxAlgo offers similar band logic with better trend filtering. For pure trend trading, look at Supertrend-based indicators instead.
+## FAQ
 
-**FAQ:**
+**Does this indicator repaint?** No. All grading happens strictly on confirmed bars.
 
-*Does this indicator repaint?* No. The dots appear only after the third touch confirms, and they stay. Historical signals remain valid.
+**What does the dashboard show?** The current VWAP value, price position, all four band stats, and both break-reversion stats.
 
-*Can I use it for crypto?* Yes, works fine on 24/7 markets, though the statistical thresholds behave best on the 1H-4H timeframes.
+**Do the statistics carry over between sessions?** Statistics accumulate from when the indicator is added to the chart and reset only when explicitly cleared by reloading. A Custom Bar anchor never resets on its own — it measures continuously from the point you chose.
 
-*Is the "AI" part real?* No machine learning. It's statistical band analysis with touch counting. Manage expectations.
+**Why do Band 2 stats take longer to build?** Band 2 statistics take meaningfully longer to build a useful sample than Band 1, simply because price reaches ±2σ far less often than ±1σ.
 
-If you trade VWAP reversals and want to stop guessing whether a band touch matters, this indicator gives you a concrete answer. Just respect the trend filter and you'll have a solid addition to your toolkit. Four stars.
-
-## Frequently Asked Questions
-
-### Is Vwap_Ai_Statistical_Bands_Touch_Stats_Dots3Red worth it?
-
-Based on testing across multiple timeframes, Vwap_Ai_Statistical_Bands_Touch_Stats_Dots3Red delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

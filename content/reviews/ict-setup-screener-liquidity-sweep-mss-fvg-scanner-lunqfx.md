@@ -27,7 +27,7 @@ The model is an ICT entry sequence: liquidity gets swept, structure shifts the o
 
 Every row in the table is one symbol sitting at one stage: SCANNING, SWEPT · waiting MSS, LONG SETUP / SHORT SETUP, OPEN, TARGET HIT / STOPPED. Rows re-sort on every bar — entries first, then mapped setups, then pending sweeps, then finished trades, then idle rows — and the symbol of the chart you are on is marked with ◂.
 
-As shown in the chart above, the table is the point. The one chart you have open also gets its own live stage drawn on the candles: the swept level, the shift level, and the entry with stop and target, so the ◂ row and the candles agree.
+The table is the point. The one chart you have open also gets its own live stage drawn on the candles: the swept level, the shift level, and the entry with stop and target, so the ◂ row and the candles agree.
 
 ## The quality grade
 
@@ -43,7 +43,7 @@ Then fix the scan timeframe. Left blank it follows the chart's timeframe, which 
 
 From there, read from the top. OPEN means the entry has been reached and the trade is running. A setup showing "0.3 ATR" is close to its entry; "2.4 ATR" is not. Open the chart before you act — the row tells you the stage and the levels, the chart shows you the candles, and you decide there.
 
-The last column is the clever part: distance to entry in ATR while the setup waits, the trade's standing in R once it is open. ATR and R are the two units twenty different instruments can share.
+The last column is the useful part: distance to entry in ATR while the setup waits, the trade's standing in R once it is open. ATR and R are the two units twenty different instruments can share.
 
 ## Pros and cons
 
@@ -60,6 +60,18 @@ The last column is the clever part: distance to entry in ATR while the setup wai
 - On a scan timeframe higher than the chart's, a row updates when that timeframe's bar closes. That is the cost of not repainting.
 - TARGET HIT and STOPPED are the last resolution of one row, held briefly. They are not tallied, and the description makes no claim about how often the model wins.
 - An open trade that touches neither stop nor target within a set number of bars is retired — this finds setups, it does not babysit positions.
+
+## Settings and How to Tune Them
+
+The settings fall into three groups.
+
+**Entry model** — the scan timeframe, liquidity swing length, internal structure length, the maximum bars allowed from sweep to MSS, the maximum bars from setup to entry, the maximum bars in a trade, take profit expressed in R, minimum stop distance in ATR, and minimum quality.
+
+**Watchlist** — the twenty symbol slots and the number of rows in use. Rows can be lowered, not raised past twenty.
+
+**Visuals** — five candle palettes plus an off option, a toggle for drawing this chart's setup, table position and text size, a hide-scanning-rows option, and an alerts on/off switch.
+
+The author's guidance on tuning is limited to two notes: raise the swing length for higher timeframes, and lower the row count if you want a shorter table. Nothing in the source material claims which values produce better results, so there is no "best" setting to point at here.
 
 ## Who it's for
 
@@ -79,9 +91,8 @@ It is not for someone looking for a signal service or a performance-verified sys
 
 ## Verdict
 
-The sequence is not new and the author says so. What is new is running it twenty times in parallel as one stateful function and reading the output as a ranked list — and that is a real engineering problem solved cleanly. The discipline around repainting, the explicit limitations, and the refusal to dress the quality grade up as a probability are what push this above the usual ICT script. It loses a star because the table can only ever be a pointer: nineteen of the twenty charts stay invisible, and the levels print without true tick size.
+The sequence is not new and the author says so. What is new is running it twenty times in parallel as one stateful function and reading the output as a ranked list — and that is a real engineering problem solved cleanly. The discipline around repainting, the explicit limitations, and the refusal to dress the quality grade up as a probability are what push this above the usual ICT script. The main structural caveat is that the table can only ever be a pointer: nineteen of the twenty charts stay invisible, and the levels print without true tick size.
 
-⭐⭐⭐⭐ (4/5)
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

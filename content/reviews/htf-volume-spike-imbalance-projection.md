@@ -16,62 +16,64 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Tracks higher timeframe volume spikes to project directional bias and imbalance zones. Best for swing traders who want liquidity-based entry triggers."
+grounding: "none (no source found)"
 ---
+# Review: HTF Volume Imbalance Projection Indicator
 
-I’ve been running this one for two weeks across BTC, ES, and FX pairs. The concept is solid: identify where big money stepped in on a higher timeframe (like 4H or daily), then use that imbalance to project where price is likely to rotate toward. It’s not a magic bullet, but it adds real context if you already understand volume.
+The concept is straightforward: identify where large participants stepped in on a higher timeframe, then use that imbalance to project where price is likely to rotate toward. It is not a magic bullet, but it adds context if you already understand volume.
 
 ## What This Indicator Actually Does
 
-Most volume indicators just paint bars. This one goes a step further: it detects a volume spike on a user-selected higher timeframe, then calculates the delta between buying and selling pressure during that spike. If one side dominates by a configurable ratio (default 2:1), it projects a target zone in the direction of the imbalance. The projection lines extend forward until a new spike invalidates the previous one.
+Most volume indicators just paint bars. This one goes a step further: it detects a volume spike on a user-selected higher timeframe, then calculates the delta between buying and selling pressure during that spike. If one side dominates by a configurable ratio, it projects a target zone in the direction of the imbalance. The projection lines extend forward until a new spike invalidates the previous one.
 
-As the chart above shows, a 4H volume spike on BTC with 70% buyer dominance triggered a projected zone that price respected 12 hours later. It’s not predicting the future—it’s mapping where institutional flow *likely* wants to push price.
+It is not predicting the future—it is mapping where institutional flow *likely* wants to push price, based on where volume concentrated.
 
 ## Key Features That Set It Apart
 
-- **HTF selection independent of chart timeframe** – You can be on a 15m chart but analyze volume on 4H. This keeps noise out.
-- **Customizable imbalance ratio** – Default 2.0. I tighten to 1.5 on ES, loosen to 2.5 on crypto.
+- **HTF selection independent of chart timeframe** – You can be on a lower timeframe chart while analyzing volume on a higher one. This keeps noise out of the volume read.
+- **Customizable imbalance ratio** – A configurable threshold determines how one-sided the buying or selling pressure must be before a projection is drawn.
 - **Auto-invalidation** – When a counter-spike exceeds the original volume, the projection line fades. No manual redrawing.
 - **Zone shading with opacity control** – You see the projected area without it blocking price action.
 
-## Best Settings (What I Actually Use)
+## Settings and How to Tune Them
 
-| Setting | Default | My Recommendation |
-|---------|---------|-------------------|
-| HTF Source | 4H | Daily for swings, 1H for intraday scalps on ES |
-| Imbalance Ratio | 2.0 | 1.5 for index futures, 2.5 for crypto |
-| Volume Spike Threshold | 1.5x average | 2.0x for cleaner signals on crypto |
-| Projection Length | 20 bars | 15 bars on faster pairs, 30 on FX |
+| Setting | Role |
+|---------|------|
+| HTF Source | The higher timeframe whose volume is analyzed, independent of your chart timeframe |
+| Imbalance Ratio | How dominant one side of the volume delta must be to trigger a projection |
+| Volume Spike Threshold | How far above average volume must be for a bar to count as a spike |
+| Projection Length | How far forward the projected zone extends |
 
-On ES, I keep the imbalance ratio at 1.5 because volume spikes are more frequent and smaller. On BTC, I use 2.5 to filter out retail noise.
+The imbalance ratio and volume threshold are the two settings that most change behavior. Choppy, low-volume instruments tend to produce more spikes that fail to follow through, so a stricter threshold filters more of them out. More liquid instruments produce spikes more often, so a looser ratio captures more of them. The right values depend on the instrument and must be tuned per market—there is no one-size-fits-all configuration.
 
-## How I Use It for Entries and Exits
+## How to Use It for Entries and Exits
 
-I only take trades when two conditions align:
+The tool is most useful as a confluence filter rather than a standalone signal. Two conditions are worth requiring before acting:
 
 1. **The projection zone aligns with a key level** (previous day high/low, order block, or FVG).
 2. **Price is currently inside the projected zone** – not chasing it.
 
-If BTC shows a 4H buyer spike, and price is pulling back to the projected zone while also sitting on a daily support, that’s my entry. Stop goes below the spike’s low. Target is the zone’s upper bound.
+If a buyer spike projects an upside zone and price pulls back into that zone while also sitting on a higher-timeframe support level, that is the setup. A logical stop sits below the spike's low, with the zone's upper bound as a target.
 
-I also use it as a confidence filter: if a trade idea contradicts the HTF volume projection, I skip it. Simple as that.
+It also works as a confidence filter: if a trade idea contradicts the higher-timeframe volume projection, skip it.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Keeps you aligned with big money, not just price patterns
+- Keeps you aligned with where large volume concentrated, not just price patterns
 - Projection lines act as dynamic support/resistance
-- Works across asset classes with tweaks
+- Works across asset classes with tuning
 - Clean UI – no clutter
 
 **Cons:**
-- False projections in choppy, low-volume markets (e.g., crypto weekends)
-- Imbalance ratio needs tuning per asset – not a one-size-fits-all
+- False projections in choppy, low-volume markets
+- Imbalance ratio needs tuning per asset
 - No alert on new projection (you have to watch it)
-- Can repaint slightly when a volume spike closes (not avoidable)
+- The volume spike is only confirmed at bar close, so the projection line can shift intrabar before it is fixed
 
-## Who It’s Actually For
+## Who It Is Actually For
 
-This is for swing traders and position traders who already use volume profile or market profile. If you’re a pure scalper on 1m charts, skip it. If you trade 1H+ and want to know where liquidity is stacking, this is useful.
+This is for swing traders and position traders who already use volume profile or market profile. Pure scalpers on very low timeframes will find little here. If you trade higher timeframes and want to know where liquidity is stacking, this is useful.
 
 ## Better Alternatives
 
@@ -83,25 +85,33 @@ If you want a projection-based tool without the imbalance filter, Volume Profile
 
 ## FAQ
 
-**Does it repaint?**  
-Slightly. The volume spike is only confirmed when the bar closes. Before that, the projection line can shift. Once closed, it’s fixed.
+**Does it repaint?**
+The volume spike is only confirmed when the bar closes. Before that, the projection line can shift. Once closed, it is fixed.
 
-**Can I use it on crypto?**  
-Yes, but use a 2.5 imbalance ratio and 2.0x volume threshold to avoid fakeouts on low-volume exchanges.
+**Can I use it on crypto?**
+Yes, but a stricter imbalance ratio and volume threshold help avoid fakeouts on low-volume exchanges.
 
-**What’s the best timeframe combo?**  
-15m chart with 4H volume source for day trading. 1H chart with daily volume for swings.
+**What is the best timeframe combo?**
+A lower-timeframe chart with a higher-timeframe volume source for day trading; a higher-timeframe chart with an even higher volume source for swings. The key is that the HTF source stays independent of the chart.
 
-**Does it work for shorting?**  
+**Does it work for shorting?**
 Yes. A seller spike projects a downside zone. Works symmetrically.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+**Rating: 4/5**
 
-It’s not revolutionary, but it’s well-executed. The HTF imbalance projection adds context that most volume indicators miss. Takes about a week to tune per instrument, but once dialed, it becomes a reliable part of your toolkit. Deducted one star for the repaint issue and lack of alerts. If those get fixed, it’s a five-star tool for serious swing traders.
+It is not revolutionary, but it is well-executed. The HTF imbalance projection adds context that most volume indicators miss. Expect to spend time tuning it per instrument before it becomes a reliable part of your toolkit. Deducted one star for the intrabar repaint issue and lack of alerts. If those get fixed, it is a five-star tool for serious swing traders.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

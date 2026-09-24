@@ -17,84 +17,82 @@ categories:
 rating: 4
 description: "Mad Adaptive Trend Score Backquant review: how this adaptive trend-scoring indicator works, best settings, entry logic, pros, cons and who it suits."
 tv_script_url: "https://www.tradingview.com/script/PlQjuEoQ-MAD-Adaptive-Trend-Score-BackQuant/"
+sources: ["https://www.tradingview.com/script/PlQjuEoQ-MAD-Adaptive-Trend-Score-BackQuant/"]
 ---
-Most trend indicators on TradingView are variations on a theme: a moving average flips color, an arrow prints, and you're left guessing whether the signal has any conviction behind it. **Mad_Adaptive_Trend_Score_Backquant** takes a different angle. Instead of a binary buy/sell trigger, it calculates a *trend score* — a graded read on how strongly price is trending — and adapts that calculation to changing market conditions. The result is less "signal spam" and more of a continuous pressure gauge.
-
-I ran it on MACD-style chart setups across trending and ranging conditions. Here's what actually matters.
+Most trend indicators on TradingView are variations on a theme: a moving average flips color, an arrow prints, and you're left guessing whether the signal has any conviction behind it. **MAD Adaptive Trend Score [BackQuant]** takes a different angle. Instead of a binary buy/sell trigger, it calculates a *trend score* — a graded read on where the current filtered value sits relative to its own history.
 
 ## What it really does
 
-The indicator blends directional price movement with an adaptive smoothing mechanism, then compresses the output into a score that rises as trend strength builds and falls as it fades. You're not getting a single line that only knows up or down — you're getting a graded scale. That's the core value proposition, and it's a genuinely more useful framing than another crossover MA.
+The indicator combines two stages. First, it constrains the selected source around a rolling median using Median Absolute Deviation, producing the MAD Adaptive Filter. Source movement inside the MAD envelope passes through normally; movement beyond the envelope is clipped to the current boundary. Because the envelope width is derived from MAD, the filter is not a conventional moving average — it is a source series whose distance from its rolling median is limited by a volatility-derived band.
 
-The "adaptive" label is doing real work here. Rather than using fixed lookback periods, the calculation responds to volatility, so the score tightens up in choppy conditions and stretches out when a trend has legs. In practice, this means fewer whipsaws than a static trend filter on the same timeframe.
+Second, the current filtered value is compared against a range of its own previous values. Each comparison contributes either +1 or -1, and the sum becomes the Trend Score. That score is best understood as a relative-position measure of the filtered series, not a return forecast or a probability of future direction.
 
 ## Key features
 
-- **Graded trend score** rather than binary signals — lets you size positions or filter other systems by conviction.
-- **Adaptive sensitivity** that adjusts to volatility, reducing noise in ranges.
-- **Clear visual state** — the chart above shows how the score compresses and expands around trend transitions, making it easy to spot fading momentum before price fully reverses.
-- **Works as a filter**, which is where I think it earns its keep. Pair it with an entry trigger you already trust and let the score veto low-conviction trades.
+- **Graded trend score** rather than binary signals — the score is bounded by the number of lookback comparisons, so it expresses relative position across a range rather than a single up/down state.
+- **MAD-based clipping** of source movement, which limits how far the filter can travel from its rolling median.
+- **Separate long and short thresholds** that convert the score into a persistent bullish or bearish regime, with hysteresis rather than a single center-line flip.
+- **Optional filter overlay** on the main chart, plus trend candle colouring, background colour, reference lines and alerts.
+- **Data window exposure** of the rolling median, raw MAD and scaled MAD, so you can inspect how the filter is being constructed.
 
-## Best settings (tested)
+## Settings and How to Tune Them
 
-The defaults are reasonable, but I'd adjust two things:
+**MAD Length** — controls the rolling sample used to calculate the median and Median Absolute Deviation. Shorter values adapt more quickly; longer values produce a broader statistical reference window.
 
-1. **Sensitivity / smoothing length:** On 1H–4H charts, tighten the smoothing slightly. The default lags on faster timeframes. On daily, leave it alone — the defaults are tuned well for higher timeframes.
-2. **Score threshold:** Don't treat the zero line as your trigger. Set your "trend confirmed" threshold meaningfully above neutral (roughly 60–70% of the score's range). Signals near zero are noise.
+**MAD Multiplier** — controls how far the filtered source may move from its rolling median. Lower values create a tighter envelope and clip more of the source movement, keeping the filter closer to the median. Higher values create a wider envelope, allow more source movement through unchanged, and make the filter follow price more closely. A very tight multiplier can suppress meaningful movement along with noise; a very wide one makes the filter increasingly similar to the original source.
 
-If you scalp the 5-minute chart, this isn't the tool — the adaptive logic needs room to breathe. It shines on 1H and above.
+**Score Lookback Start / End** — defines which historical MAD Filter values participate in the score. The official example uses Start = 1 and End = 45, giving 45 comparisons and a theoretical score range of -45 to +45. A shorter range responds more quickly to recent changes and creates a smaller score range. A longer range includes more historical comparisons, produces a broader measure of relative trend position, and usually changes more gradually. Because the score range depends on the number of comparisons, threshold settings should be chosen with the selected score range in mind.
+
+**Long Threshold** — the score level that must be exceeded to establish a bullish state. The official example uses 40.
+
+**Short Threshold** — the level that must be crossed downward to establish a bearish state. The official example uses -6. The bearish condition requires an actual downward crossing — previous score at or above the threshold, current score below it — rather than simply remaining below the level. The thresholds are fully configurable and do not need to be symmetrical.
 
 ## How to use it
 
-The logic that made sense in testing:
+The indicator is positioned as a directional trend filter, a persistent bullish/bearish regime indicator, and a confirmation tool alongside other price or market-structure analysis. The official material also notes that the score itself can provide context beyond the binary trend colour — for example, a bullish regime with a score near its maximum is a different situation from a bullish regime whose score has already fallen substantially toward the bearish threshold.
 
-- **Trend confirmation:** Only take longs when the score is above your upper threshold *and rising*. Mirror for shorts.
-- **Fade warning:** When the score peaks and starts rolling over while price is still pushing, that's your cue to tighten stops or scale out. The chart above shows this divergence between score and price clearly.
-- **Filter mode:** Run your existing entry signal, then check the score. If it's neutral, skip the trade. This alone cut my false entries noticeably.
-
-Don't use the raw score as an entry trigger. It's a context tool, not a signal generator — and treating it as the latter is the fastest way to get frustrated with it.
+Worth keeping in mind: a falling score while the state is still bullish means the filtered trend is losing relative strength but the short threshold has not been crossed, so the persistent state remains bullish. A rising score while bearish can recover substantially without establishing a new bullish state until the long threshold is exceeded.
 
 ## Pros & cons
 
 **Pros:**
-- Graded output is more informative than binary trend signals.
-- Adaptive logic genuinely reduces whipsaws versus static filters.
-- Excellent as a confluence/filter tool for existing strategies.
-- Clean, readable visual that doesn't clutter the chart.
+- Graded output is more informative than a binary trend signal.
+- MAD-based clipping gives the filter a volatility-derived envelope rather than a fixed smoothing constant.
+- Separate thresholds introduce persistence, reducing rapid switching around a single center level.
+- The score's meaning is explicit: it measures the current filtered value against a defined historical comparison range.
 
 **Cons:**
-- Not a standalone entry system — requires pairing with a trigger.
-- Lags on lower timeframes; not built for scalping.
-- The "score" concept takes a session or two to internalize.
-- Backquant's naming is dense; documentation could be clearer about the adaptive math.
+- Reactive rather than predictive — the score does not estimate future returns.
+- Threshold selection can materially change signal frequency and persistence.
+- Long score ranges can improve persistence but also delay changes in regime.
+- Strong trends can keep the score near an extreme for extended periods.
 
 ## Who it's for
 
-Swing and position traders on 1H+ timeframes who already have an entry method and want a conviction filter. If you're a discretionary trader who likes to *see* trend strength rather than guess it, this earns its place. Scalpers and pure signal-followers should look elsewhere.
+Traders who already have an entry method and want a persistent regime read or confluence filter. The score's relative-position framing is also useful for discretionary traders who want to see where the filtered trend sits within its recent range rather than just whether it is up or down.
 
 ## Alternatives
 
-- **ADX-based indicators** if you want a more conventional strength read with wider community familiarity.
-- **Supertrend** if you want a simpler binary trend line with clear stops.
-- **Squeeze Momentum** if your priority is catching trend *starts* rather than grading ongoing strength.
-
-This indicator sits between those — more nuanced than Supertrend, more trend-focused than a pure momentum oscillator.
+- **ADX-based indicators** for a more conventional strength read.
+- **Supertrend** for a simpler binary trend line with clear stops.
+- **Squeeze Momentum** if your priority is catching trend starts rather than grading ongoing strength.
 
 ## FAQ
 
-**Is it repainting?** No confirmed repaint in my testing — score updates on close, which is what you want.
+**Is it predictive?** No. The official description states the indicator is reactive rather than predictive, and that the score does not estimate future returns.
 
-**Can I use it alone?** You can, but you shouldn't. It's a filter, not a trigger.
+**Can it be used alone?** The material frames it as a directional trend filter, a persistent regime indicator, and a confirmation tool — not as a standalone entry system.
 
-**Best timeframe?** 1H to Daily. Below 15m it gets noisy.
+**What does the score range depend on?** The number of comparisons between Score Lookback Start and End. With the default 1-to-45 range, the score runs from -45 to +45.
 
-**Does it work on crypto and forex?** Yes — the adaptive logic handles high-volatility assets well.
+**How does the initial state work?** The signal begins neutral. A bullish state can be established once the long threshold condition is satisfied. A bearish state requires a valid downward crossing of the short threshold. Signal markers are shown only when an established bullish state changes to bearish or vice versa — the initial transition from neutral does not produce a long/short marker.
+
+**What alerts are included?** MAD Trend Score Long fires when the stored signal changes from bearish to bullish, and MAD Trend Score Short fires when it changes from bullish to bearish.
 
 ## Final verdict
 
-**Mad_Adaptive_Trend_Score_Backquant** does one thing well: it grades trend strength adaptively and gives you a cleaner read than most trend tools. It won't hand you entries, and it's not for scalpers — but as a conviction filter it's a legitimate upgrade over binary signals. Solid, useful, not revolutionary.
+**MAD Adaptive Trend Score [BackQuant]** does one thing well: it filters price through a MAD-derived envelope and then scores the filtered series against a configurable range of its own history. The output is a bounded relative-position score, converted into a persistent regime by two separate thresholds. It is explicitly reactive, not predictive, and its behaviour depends heavily on the lookback range and threshold values you choose. A defensible tool for trend persistence and threshold experimentation.
 
-⭐⭐⭐⭐ (4/5)
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

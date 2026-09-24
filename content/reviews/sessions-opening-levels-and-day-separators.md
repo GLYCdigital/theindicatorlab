@@ -17,86 +17,93 @@ categories:
 rating: 4
 description: "Sessions_Opening_Levels_And_Day_Separators review: honest look at session levels, day separators, best settings, pros, cons, and who should install it."
 tv_script_url: "https://www.tradingview.com/script/KuFF1J1D-Sessions-Opening-Levels-and-Day-Separators/"
+sources: ["https://www.tradingview.com/script/KuFF1J1D-Sessions-Opening-Levels-and-Day-Separators/"]
 ---
-Most session indicators try to do too much. They stack highs, lows, midpoints, and VWAPs onto your chart until you can't see the candles anymore. Sessions_Opening_Levels_And_Day_Separators does the opposite — it draws the opening price of each major session, marks the daily separators, and then gets out of the way. That restraint is the entire reason it earns a spot on my chart.
+Most session indicators try to do too much. They stack highs, lows, midpoints, and VWAPs onto your chart until you can't see the candles anymore. This script does the opposite — it draws where trading days and weeks begin, shades the major sessions, marks previous period highs and lows, and draws reference opening levels. Then it gets out of the way.
 
 ## What This Indicator Actually Does
 
-Strip away the name and here's the mechanic: it detects the first bar of each defined trading session (Asia, London, New York, or whatever you configure) and extends a horizontal line from that opening price forward. It also paints vertical lines — the "day separators" — at the boundary of each new session or trading day, depending on your setting.
+Strip away the name and here's the mechanic, as stated in the script's own documentation: it draws vertical lines where each trading day and week begins, shades four major sessions (Asia, London, New York AM, New York PM), marks the high and low of previous completed days, weeks and months, and draws horizontal lines at reference opening prices — the 00:00 open, the 10:00 open, today's open, this week's open, this month's open, this year's open, and the all-time high.
 
-That's it. No signals, no alerts blaring at you, no repainting nonsense. It's a reference tool, not a signal generator. If you came here looking for buy/sell arrows, you're in the wrong place.
+That's it. The author is explicit that it produces no buy or sell signals, that every level is a historical measurement of where price has already been, and that none of it is a probability, forecast, or expectation. It's a reference tool. If you came looking for buy/sell arrows, this is the wrong script.
 
-The value is in the reference itself. The session open is one of the few genuinely meaningful price levels in intraday trading. Price often returns to it, rejects from it, or uses it as a pivot for the rest of the session. Having it marked cleanly — without a dozen competing lines — changes how you read the chart.
+The value proposition is context. The script bundles four modules that would otherwise occupy four separate indicator slots and four separate settings panels, and each module's calculation is open source.
 
 ## Key Features That Set It Apart
 
-The day separators are the standout. Most "session" tools assume you want boundaries on every timeframe, which turns a 1-minute chart into a mess of vertical stripes. This one respects your timeframe and only draws separators where they belong. On the 15-minute MACD setup I tested, the separators landed cleanly at session rollovers without cluttering the histogram.
+The day boundary is a real setting rather than an assumption. Five modes are available: Auto (the exchange's own session), Market open only, Midnight in exchange time, Midnight in New York, or a custom clock time in one of eleven timezones. Most session tools fix the separator to the exchange session or a single hardcoded hour.
 
-Second, the opening levels extend as dynamic lines rather than static labels. That means you can watch price interact with them in real time rather than squinting at a tag in the corner. As the chart above shows, the line from the London open acted as resistance through the New York session — a clean, obvious read.
+The week line can follow the day line. If your day starts at midnight New York on a CME symbol, most tools still put the week line at the Sunday 18:00 exchange open, leaving it stranded between two day lines. The "Follow Day Start" mode learns which weekday opens the exchange's week and places the week line on the day boundary that lands on it.
 
-Third, the customization is genuinely useful. You can toggle each session independently, adjust colors per session, and choose whether separators apply to daily or session boundaries. If you trade only the New York open, you can hide everything else and run a near-clean chart.
+There are twelve independent timeframe filters, one per element, each with its own "Apply Below" cutoff. Week lines can appear on the 4-hour, previous-day levels down to the 12-hour, session boxes only at 15 minutes and below, and the 00:00 level only at 45 minutes and below — all in one saved profile. Comparable tools use a single global cutoff that hides everything at once.
 
-## Best Settings I Tested
+Day names are centred on the day. In Auto mode the position comes from the session's own midpoint, so it stays correct on a half day and on a holiday that TradingView folds into the neighbouring session. Other modes measure the previous day's width in bars.
 
-After a week of live use, here's what worked:
+The script also warns you when your chart is empty. With twelve filters, that's the most likely failure mode, so a note appears bottom-right naming the cause.
 
-- **Sessions:** Keep Asia, London, and New York all enabled only if you trade all three. If you're a New York-only trader, disable the rest — the Asia line adds noise on a 5-minute chart.
-- **Separators:** Set them to daily, not per-session, unless you specifically scalp session transitions. Per-session separators on a 1-minute chart are visual poison.
-- **Line style:** Switch opening levels from solid to dashed. They're reference levels, not support/resistance you want screaming at you.
-- **Colors:** Assign each session a distinct but muted color. Bright red for Asia and bright green for London creates a rainbow that fights your candles.
+## Settings and How to Tune Them
 
-Timeframe matters too. This indicator is built for 5-minute to 1-hour charts. On the daily chart it's nearly useless — the "session open" is just the daily open, and separators become redundant.
+**General.** Timezone applies to the session times and the 00:00 and 10:00 levels, and handles daylight saving automatically; day and week lines read their own timing from the market. Show Warning Messages controls the amber notes in the bottom-right corner.
 
-## How to Actually Trade With It
+**Day and Week Vertical Lines.** A master enable and an "Apply Below" cutoff govern the section. Day Line and Week Line each have on/off, style, thickness and colour; where a week line is drawn, that moment's day line is omitted. Day Starts At selects among the five boundary modes above, with Custom Time and Custom Zone fields used only in Custom time mode. Week Starts offers Follow Day Start, Exchange Week, or Specific Day plus a weekday. Day Names toggles Off / Short / Full with text colour and a manual horizontal nudge. Draw As switches between Lines and a Background tint of the whole bar.
 
-The opening level works three ways, and I tested all of them:
+**Sessions.** A master enable and its own "Apply Below" cutoff. Asia, London, NY AM and NY PM each have on/off, session times as HHMM-HHMM, box colour, and the letter written inside. Default times, in New York time, are Asia 20:00-02:00, London 02:00-08:30, NY AM 08:30-11:30, NY PM 13:30-16:00, and all four are fully editable. Label Size controls text size and the opacity of the letter.
 
-**1. Opening range breakout confirmation.** When price breaks the session open and holds above it, the line gives you a clean invalidation level. If it snaps back below, the breakout failed. Simple, mechanical, effective.
+**Previous Highs & Lows.** A master enable, Extend Lines Right with a bar count, and separate rows for Previous Day, Week and Month — each with on/off, colour, and a count of previous periods to show (the script caps these at 50 each). Apply Below is configured per period type, giving three independent filters here. Line Style applies across the section, and Fade Older Lines makes older levels fainter so the newest stands out.
 
-**2. Mean reversion anchor.** In ranging sessions, price tends to oscillate around the open. The line becomes your fair-value reference — fade extremes back toward it, exit at the line.
+**Opening Levels.** A master enable, then rows for 00:00 AM, 10:00 AM, Daily, Weekly, Monthly, Yearly and All-Time High — each with on/off, colour, its own chart text, and its own "apply below" timeframe. Line Style applies across the section; Text Colour sets colour and size of all labels; Line Length controls how far past the last bar the lines and labels sit.
 
-**3. Trend filter.** If price is above the New York open and the London open, you're in an uptrend for the day. Below both, downtrend. This is where the "Trend" category tag makes sense — it's not a trend indicator in the moving-average sense, but it gives you an objective trend read.
+## How to Read It
 
-Notice in the screenshot how the MACD histogram aligns with price holding above the session open — that confluence is the real edge, not either tool alone.
+The script's documentation is careful to frame the following as common ways context tools of this kind are read, not as recommendations or strategies.
+
+**Trend and continuation.** The previous day's high and low, and the week's opening price, are the levels most often referenced when describing whether a market is extending or retracing. A market trading and holding above the prior day's high is described differently from one that reached it and fell back. The suggested setup is previous day and week levels on, sessions off, day and week lines on, on the 1-hour or 4-hour.
+
+**Range and mean reversion.** The session boxes give you a visible container. When the London box and the NY AM box overlap heavily in price, the market has not gone anywhere, and the box edges are boundaries other participants can see too. The 00:00 open and the daily open are frequently used as the "middle" a rangebound day oscillates around. Suggested setup: all four sessions on, 00:00 and daily open on, previous-day levels on, on the 15-minute.
+
+**Scalping.** Use the session boxes as a filter on *when* rather than a signal on *what*. The boundary between one session box ending and the next beginning is where participation changes hands. The documentation suggests turning the day and week vertical lines off at 1 to 5 minutes, since they add clutter without adding information. Suggested setup: sessions on, previous day on, everything else off, on the 1-, 2- or 5-minute.
+
+**Swing.** Switch to the weekly and monthly side. Previous week and previous month highs and lows, plus the monthly and yearly opens and the all-time high, give you the small set of levels a multi-week position is measured against. Suggested setup: previous week and month on, weekly, monthly and yearly opens on, sessions off, on the 4-hour or daily.
+
+**Multi-timeframe workflow.** Because every element has its own "Apply Below" cutoff, you can set the script up once so that scrolling from a daily chart down to a 1-minute chart progressively reveals more detail without touching a setting.
 
 ## Pros & Cons
 
 **Pros:**
-- Clean, uncluttered chart output
-- Day separators that respect timeframe
-- Fully customizable per session
-- No repainting, no lag on the levels themselves
-- Free and lightweight
+- Four modules in one indicator slot, with open-source calculations
+- Five day-boundary modes and three week-boundary modes, including one that follows the day boundary
+- Twelve independent timeframe filters rather than one global cutoff
+- Day names centred on the day rather than pinned to a clock
+- An all-time high level tracked incrementally, without a backward scan
+- A warning banner that names why the chart is empty
 
 **Cons:**
-- No alerts on level touches (a real miss)
-- No session high/low or midpoint — just the open
-- Requires manual configuration to avoid clutter
-- Useless on higher timeframes
+- No session high and low levels. The box is the whole record and it stops at the session end.
+- No alerts of any kind. The documentation calls this the most requested missing feature and the most likely addition to a future version.
+- Only two fixed clock levels, 00:00 and 10:00. They cannot be moved and a third cannot be added.
+- Only four sessions, with no fifth slot.
+- No standard deviation or range projection levels, and no session midpoints.
+- No statistics table and no hit rates — deliberate, per the author, because a hit rate on a chart reads as a probability and it is not one.
+- Capped history: previous-level counts are limited to 50 each, day and week separators to 250 with the oldest dropped, and very deep history is trimmed to roughly 10,000 bars.
 
-## Who It's For
+## Known Behaviours Worth Knowing
 
-Intraday traders who already have a system and just need clean session reference lines. Scalpers on 1–15 minute charts, day traders anchoring to the London or New York open, and anyone running a session-based breakout or mean-reversion strategy. If you're a swing trader on the daily, skip it.
+These are documented as expected, not bugs. "Market open only" matches Auto on most symbols, because futures, forex and crypto have no pre-market to skip; to see it differ, use a US stock with Extended Hours enabled. The 00:00 and 10:00 levels never appear on stocks, since every stock is closed at midnight, and they can also be skipped when a timeframe's bar grid steps over the exact minute, as on 45-minute and 3-hour charts. Previous-period lines run back across the period they summarise on historical bars — intentional, and the line was invisible while that period was forming. The current period has no line until it ends. Lookahead is used for period detection and for reading settled values; nothing visible is derived from unsettled future data. Saturday and Sunday names appear only on crypto symbols. The first day on the chart gets no name. A large gap can swallow a day boundary entirely, and no line is drawn for that day. Background mode forces a fixed transparency regardless of your swatch. Non-time-based charts (Renko, Range, Kagi, Point and Figure, Line Break) cannot use the "Apply Below" filters reliably, and a note says so.
 
-## FAQ
+## Alerts
 
-**Does it repaint?** No. Opening levels are fixed once the session begins.
-
-**Can I get alerts?** Not natively. You'd need to build a separate alert on a price crossing.
-
-**Does it work on crypto?** Yes, but "sessions" are less meaningful for 24/7 markets. The separators still help frame the day.
-
-**Will it clutter my chart?** Only if you enable every session and use solid lines. Configure it properly and it stays clean.
+There are none built in. The documentation frames this as a scope decision: everything the script draws is context, and context is not an event. The practical workaround today is a manual TradingView price alert — read the price off the level via the Data Window (DH, DL, WH, WL, MH or ML), open the alert dialog, choose the symbol rather than the indicator as the condition, set it to Crossing, enter the price, and set the trigger to Only Once. That alert sits on the price, not on the script, so it will not move when the level moves and must be re-created each session.
 
 ## Alternatives
 
-If you want session highs, lows, and midpoints, look at **Session Volume Profile** or **Opening Range Breakout** indicators. If you want alerts, **Session Breakouts** by a different author handles that better. This one wins on simplicity, not features.
+The closest well-known free alternative is ICT Killzones + Pivots, which covers the same broad ground: session boxes, previous day/week/month levels, opening prices and separators. It stores each session's high and low as forward-extending horizontal lines, supports alerts on session and period levels, allows eight or more configurable opening times with custom labels, offers five or six configurable session slots, can plot standard deviation and range projection levels, and shows a statistics table with hit rates and sample sizes. It also offers an unlimited history mode. On all of those points this script has no equivalent.
+
+TradingView also ships a built-in "Session breaks" option in Chart Settings that draws vertical session dividers for free, without using an indicator slot. If separators are all you want, that is the cheaper route — this script is only worth a slot if you want two or more of its four modules.
 
 ## Final Verdict
 
-Sessions_Opening_Levels_And_Day_Separators does one job and does it well. It's not exciting, it won't make you money on its own, and the lack of alerts is a genuine gap. But as a clean reference layer for intraday charts, it's a solid addition to an existing system.
+This is a context layer, and it is honest about being one. It does not forecast, it does not signal, and it deliberately withholds the statistics that would make it look like it does. The day-boundary and week-boundary modes, the twelve independent filters, and the empty-chart warning banner are the parts that go beyond the closest free alternative. The absence of alerts, session high/low levels,
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Docked one star for missing alerts and no session range data. Everything else, it nails.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

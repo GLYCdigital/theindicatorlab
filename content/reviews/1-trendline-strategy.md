@@ -16,93 +16,84 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A clean, single-trendline breakout system that auto-draws support/resistance. Honest review with settings, entry rules, and where it falls short."
+grounding: "none (no source found)"
 ---
+# 1_Trendline_Strategy Review
 
-Here’s the deal: **1_Trendline_Strategy** is not a magic bullet. It’s a straightforward, auto-drawn trendline breakout tool that does exactly what it says—no fluff, no hidden oscillator. After running it on 30+ charts across forex, crypto, and indices, here’s what I found.
+**1_Trendline_Strategy** is a straightforward, auto-drawn trendline breakout tool. It does one job and does it without an embedded oscillator or hidden secondary logic.
 
 ## What It Actually Does
 
-The indicator scans price action to plot one dynamic trendline (either support or resistance) based on recent swing highs/lows. It then triggers alerts when price breaks that line with a close beyond it. No second-guessing, no multiple lines cluttering your chart. The core logic is clean: one line, one direction per timeframe.
+The indicator scans price action to plot a single dynamic trendline—either support or resistance—based on recent swing highs and lows. It then triggers alerts when price breaks that line. The core logic is intentionally minimal: one line, one direction per timeframe.
 
-It’s designed for trend-following breakouts—not for reversals or complex patterns. The line adjusts as new swings form, so it stays relevant without manual redrawing.
+It's built for trend-following breakouts, not reversals or complex pattern recognition. The line adjusts as new swings form, so it stays relevant without manual redrawing.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Auto-draws a single trendline** – eliminates the subjective "where do I connect the dots?" debate.
-- **Breakout confirmation** – only triggers on a close above/below the line, not just a wick.
-- **Customizable lookback** – you can set how many bars it uses to calculate swings. Default 20 works for daily, but for 5-min scalping, drop it to 8-12.
-- **Alert system** – sends push/email when the line is broken. Solid for catching moves live.
-- **No repaint** – once a bar closes, the line is fixed. No false hope.
+- **Auto-draws a single trendline** – removes the subjective "where do I connect the dots?" problem.
+- **Breakout confirmation** – triggers on a close above or below the line, not just a wick.
+- **Customizable lookback** – controls how many bars are used to calculate swings.
+- **Alert system** – can send notifications when the line is broken.
+- **Built to avoid repainting** – once a bar closes, the line is fixed.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-These are my tweaked defaults after 2 weeks of live paper trading:
-
-- **Lookback Period**: 20 for 1H+, 12 for 15-min, 8 for 5-min. The shorter the timeframe, the fewer bars you want, or it lags.
-- **Line Style**: Solid, extended to the right. Dashed is distracting.
-- **Breakout Confirmation**: Enabled (always). Without it, you get whipsawed.
-- **Alert on Close**: Yes. Disable the "alert on touch" option—it fires too early.
-
-If you’re trading intraday, set the lookback to 12 on the 15-min chart. As the chart above shows, this catches the first real break without noise.
+- **Lookback Period**: The source indicator exposes this as a configurable input. Shorter timeframes generally call for a shorter lookback so the line doesn't lag; higher timeframes tolerate a longer one. The exact value should be chosen based on how much swing history you want the line to reflect.
+- **Line Style**: Solid, extended to the right is the cleaner visual choice. Dashed styling tends to add clutter.
+- **Breakout Confirmation**: Enabling this requires a close beyond the line rather than an intrabar touch.
+- **Alert on Close**: Prefer close-based alerts over touch-based alerts, which fire earlier and more often.
 
 ## How to Use It for Entries and Exits
 
-**Entry**: Wait for a candle to close *beyond* the trendline. Then enter on the next bar’s open with a stop 1 ATR below the line (or above for shorts). Don’t enter on the breakout candle itself—fakeouts are common.
+**Entry**: Wait for a candle to close beyond the trendline, then enter on the following bar's open with a stop placed beyond the line. Entering on the breakout candle itself exposes you to fakeouts.
 
-**Exit**: Use a trailing stop at 2x ATR from the entry, or an R:R of 2:1. The indicator doesn’t give TP levels, so you need your own exit plan. I’ve found combining it with a simple moving average (e.g., 50 EMA) as a trailing stop works well.
+**Exit**: The indicator does not provide take-profit levels, so you need your own exit plan—a trailing stop or a fixed reward-to-risk target. Some traders combine it with a simple moving average as a trailing reference.
 
-**Example**: On EUR/USD 1H, the line held as resistance for 8 hours. The break came at 14:00 with a close above. Entry at 14:00 candle close, stop 15 pips below line, target 30 pips. Hit in 2 hours.
-
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros**:
-- Removes drawing subjectivity – great for beginners.
-- Clean chart – one line, not a spaghetti mess.
-- Works on any timeframe, but shines on 1H to daily.
-- Alerts are reliable.
+- Removes drawing subjectivity, which is useful for less experienced traders.
+- Clean chart presentation—one line, not a cluster of levels.
+- Adapts across timeframes, though it is best suited to higher ones.
+- Alerts fire on confirmed closes.
 
 **Cons**:
-- Only one line – if the market is choppy, you get no signal for hours.
-- No volume or momentum filter – you’ll get false breakouts in low-volume zones. Pair it with volume bars.
-- Laggy on fast scalping (1-min or tick charts) – the lookback adjustment helps, but it’s still a trend-following tool, not a scalper.
-- No multi-timeframe option – you have to add it to each chart separately.
+- Only one line—in choppy conditions, no signal may appear for extended periods.
+- No volume or momentum filter, so low-volume false breakouts are a real risk. Pairing it with a volume indicator mitigates this.
+- Lags on very fast timeframes; the lookback adjustment helps but does not turn it into a scalping tool.
+- No multi-timeframe option—it must be added to each chart separately.
 
-## Who It’s Actually For
+## Who It's For
 
-**Best for**: Swing traders and intraday trend followers who want a simple, mechanical breakout system. Also good for beginners who struggle to draw trendlines consistently.
+**Best for**: Swing traders and intraday trend followers who want a simple, mechanical breakout system. Also useful for beginners who struggle to draw trendlines consistently.
 
-**Not for**: Scalpers (under 5-min), reversal traders, or anyone who needs multiple confluence signals in one pane. If you need RSI, MACD, and volume all in one indicator, skip this.
+**Not for**: Scalpers on very short timeframes, reversal traders, or anyone who wants multiple confluence signals in a single pane.
 
-## Better Alternatives
+## Alternatives
 
-- **Auto Trendline (by LuxAlgo)** – similar but allows multiple lines and volume confirmation. Costs more though (paid).
-- **Swing High Low** – free, draws support/resistance zones, not single lines. More flexible for range traders.
-- **Supertrend** – if you want a clean trend-following indicator without drawing lines, this is simpler.
-
-If you’re trading on a budget, 1_Trendline_Strategy does the job. But if you want more sophistication, LuxAlgo’s version is worth the subscription.
+- **Auto Trendline (by LuxAlgo)** – similar concept, supports multiple lines and volume confirmation. Paid.
+- **Swing High Low** – free, draws support/resistance zones rather than single lines. More flexible for range traders.
+- **Supertrend** – a clean trend-following indicator without drawing lines.
 
 ## FAQ
 
-**Q: Does this repaint?**  
-A: No. Once a bar closes, the line is fixed. The breakout alert fires on the close.
+**Q: Does this repaint?**
+A: The indicator is designed so that once a bar closes, the line is fixed and the breakout alert fires on the close.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works fine on BTC/USD 4H. Just adjust the lookback to 20+ because crypto swings are larger.
+**Q: Can I use it on crypto?**
+A: Yes—it applies to crypto charts the same way it does to any other market. Because crypto swings tend to be larger, a longer lookback is generally appropriate.
 
-**Q: Why am I getting false breakouts?**  
-A: Likely low volume. The indicator has no volume filter. Add a volume oscillator and only take trades when volume is above the 20-period average.
+**Q: Why am I getting false breakouts?**
+A: Likely low volume. The indicator has no volume filter. Adding a volume oscillator and only taking trades when volume is elevated relative to its average is a common workaround.
 
-**Q: How do I set alerts?**  
-A: Right-click the line → "Add Alert" → Condition: "Crossing" or "Close crossing". I prefer "Close crossing" to avoid wick noise.
+**Q: How do I set alerts?**
+A: Add an alert on the line and select a crossing condition. A close-based crossing reduces wick noise compared to a touch-based condition.
 
 ## Final Verdict
 
-**1_Trendline_Strategy** is a solid, no-nonsense tool for trendline breakouts. It won’t make you a millionaire overnight, but it will keep your charts clean and your entries objective. The lack of volume filter is its biggest weakness, but pairing it with a simple volume indicator solves that.
+**1_Trendline_Strategy** is a no-nonsense tool for trendline breakouts. It keeps charts clean and entries objective. The lack of a volume filter is its biggest weakness, but pairing it with a volume indicator addresses that.
 
-**Rating**: ⭐⭐⭐⭐ (4/5)  
-It’s not perfect, but for the price (free or low-cost), it’s a reliable workhorse for trend traders. Would I pay $50 for it? No. But as a free add-on? Absolutely worth the install.
-
----
+It is not a complete system—it is a mechanical line-drawing and breakout-alert layer that you build around.
 
 ## Go Deeper with The Indicator Lab
 

@@ -17,84 +17,92 @@ categories:
 rating: 4
 description: "Trend_Pressure review: a momentum-aware trend indicator that gauges buying vs selling pressure. Tested settings, entry logic, pros, cons and verdict."
 tv_script_url: "https://www.tradingview.com/script/SEdUWOIJ-Zeiierman-Trend-Pressure-Zeiierman/"
+sources: ["https://www.tradingview.com/script/SEdUWOIJ-Zeiierman-Trend-Pressure-Zeiierman/"]
 ---
-Most "trend" indicators on TradingView are repackaged moving averages with a fresh coat of paint. Trend_Pressure isn't that — but it's also not the magic bullet its name might imply. After running it across a few hundred bars on multiple timeframes, here's what it actually does and where it earns its keep.
+Most "trend" indicators on TradingView are repackaged moving averages with a fresh coat of paint. Zeiierman Trend Pressure isn't that — but it's also not the magic bullet its name might imply. Here's what it actually does and where it earns its keep.
 
-## What Trend_Pressure actually measures
+## What Trend Pressure actually measures
 
-The core idea is simple and honest: it estimates the *pressure* behind a move, not just its direction. Instead of a single line that flips bullish or bearish, you get a reading of how much force is pushing price in the current direction. Direction tells you where price is going; pressure tells you whether the move has conviction behind it.
+The core idea is straightforward: it estimates the *pressure* behind a move, not just its direction. Instead of a single line that flips bullish or bearish, you get a reading of how much force is pushing price in the current direction. Direction tells you where price is going; pressure tells you whether the move has conviction behind it.
 
-On the chart above, you can see the indicator printed against a MACD pane — a smart pairing, because MACD's histogram is itself a momentum readout, and the two together give you a cleaner picture of whether a trend is accelerating or quietly dying. Notice how pressure readings contract before the MACD histogram rolls over. That's the useful part.
+The indicator separates market behavior into three components. Z-Pulse is the fast, reactive pressure line, built from a Williams-style normalized range calculation blended with a stochastic transformation and smoothed with an EMA. Z-Trend is the slower, macro-weighted trend pressure, combining fast, structural, and macro range measurements with the heaviest weight on the longest component. Pressure Core is the broader directional read, evaluating candle position, body direction, wick behavior, and recent impulse.
 
 ## Key features that stand out
 
 Three things separate this from the pile of trend tools:
 
-- **Pressure, not just slope.** A rising MA tells you price went up. Trend_Pressure tries to tell you *why* — whether buyers are actually committing.
-- **Divergence between price and pressure.** This is where it's genuinely useful. When price makes a higher high but pressure doesn't confirm, that's an early warning the trend is thinning out.
-- **Readable on a secondary pane.** It doesn't clutter your candles, which matters if you already run volume or RSI beneath price.
+- **Pressure, not just slope.** A rising MA tells you price went up. This indicator tries to tell you whether buyers are actually committing, via the Pressure Core's candle-structure read.
+- **A persistent exhaustion model.** When both Z-Pulse and Z-Trend reach the same extreme region, an exhaustion state can activate. It uses entry confirmation and a separate release distance — a hysteresis effect — so the state doesn't immediately terminate on a small fluctuation.
+- **Chart annotations.** Pressure Core coloring identifies the broader directional environment (Bull, Bear, or Neutral). Dots show active pressure states, triangles mark the beginning of an upper or lower pressure event, and price boxes can be projected onto the chart while an exhaustion state remains active.
 
-## Best settings I landed on
+## Settings and How to Tune Them
 
-Defaults are usable, but I found the indicator responded better tuned per timeframe rather than left untouched:
+The settings map to the three internal components:
 
-- **Swing trading (4H/Daily):** Lengthen the lookback roughly 20–30% above default. Shorter settings produced pressure readings that whipsawed every time price caught its breath.
-- **Intraday (15m/1H):** Defaults are close to fine, but I widened the smoothing one notch to cut noise on the open.
-- **Crypto vs. equities:** On crypto, expect more false pressure spikes — the asset class is volatile enough that "pressure" builds and collapses fast. Filter with a higher-timeframe read.
+- **Pulse Range:** the primary range window used by Z-Pulse.
+- **Pulse Stochastic:** the stochastic transformation applied to the fast range reading.
+- **Pulse Smoothing:** EMA smoothing of Z-Pulse. Higher values create a smoother, slower response.
+- **Trend Range:** the medium-term structural range used by Z-Trend.
+- **Macro Trend:** the longest range component used by Z-Trend. This component carries the largest internal weighting.
+- **Trend Smoothing:** final smoothing of Z-Trend.
+- **Trend Persistence:** how strongly persistent occupation of an extreme region influences Z-Trend.
+- **Exhaustion Zone:** the base location of the upper and lower pressure regions.
+- **Sensitivity:** controls exhaustion selectivity, confirmation, release distance, and state persistence. Lower values are looser and more inconsistent; higher values are stricter and more persistent.
+- **Reactive Smoothing:** smoothing of the reactive component inside Pressure Core.
+- **Regime Weight:** how much influence the slower Pressure Core regime receives relative to reactive pressure.
 
-Test these against your own instrument. A setting that's clean on EURUSD will be twitchy on a small-cap.
+There are no published parameter values here — the components are combined using fixed internal weights, but the settings themselves are left for the user to tune against their own instrument.
 
 ## How to actually trade it
 
-The logic that worked for me:
+The documentation lays out three approaches.
 
-1. **Confirmation, not prediction.** Treat Trend_Pressure as a filter on trades you'd already take. Long setup? Check that pressure is rising. If it's flat or falling into a breakout, size down or skip.
-2. **Exit on pressure divergence.** When price pushes to a new extreme but pressure doesn't follow, tighten your stop. You don't have to exit immediately — but the trend is borrowing against the future.
-3. **Don't scalp the crossovers.** This is a trend tool. Using it for quick reversals is fighting its design.
+**Trend trading.** Use Z-Trend and Pressure Core to identify the main directional environment. When Z-Trend holds in the upper half of the oscillator and Pressure Core is Bull-colored, bullish pressure is dominant. When Z-Trend holds in the lower half and Pressure Core is Bear-colored, bearish pressure is dominant.
 
-The MACD pairing shown in the chart is a good template: let MACD give you the directional signal, let Trend_Pressure tell you whether to trust it.
+**Continuation trading.** Look for temporary pullbacks within an established trend. In a bullish trend, Z-Trend and Pressure Core stay bullish while Z-Pulse temporarily moves lower — short-term pressure has weakened, but the broader structure is intact. The setup completes when Z-Pulse turns higher again. The bearish version is the mirror image.
+
+**Reversal trading.** The pressure boxes highlight areas where the market has remained under extreme directional pressure for a period of time. A blue box forms under strong downside pressure; a red box under strong upside pressure. The box alone is not a signal — the triangle at the end marks the Pressure Release, which is the confirmation the indicator is designed around. The stated idea is to wait for the release rather than try to predict the reversal while the box is still developing.
 
 ## Pros and cons
 
 **Pros:**
-- Adds a genuine "conviction" layer most trend indicators lack
-- Clean divergence signals that show up before price reverses
-- Doesn't clutter the price chart
-- Works well stacked with momentum tools like MACD
+- Adds a genuine "conviction" layer most trend indicators lack, via the Pressure Core's candle-structure read
+- Explicit hysteresis on the exhaustion state, so it doesn't flicker on small moves
+- Chart annotations (dots, triangles, boxes) make active pressure states visible without cluttering the oscillator pane
 
 **Cons:**
-- Not a standalone system — it confirms, it doesn't generate entries on its own
-- Needs per-timeframe tuning; lazy default use gives mediocre signals
-- Noisy on highly volatile assets without a higher-timeframe filter
-- Documentation is thin, so expect a learning curve
+- Not a standalone system — the documentation frames it as a confirmation layer
+- The settings list is long, and the docs describe each control conceptually without giving starting values
+- The three-component design means more to interpret than a single line
 
 ## Who it's for
 
-Discretionary swing traders who already have an entry method and want a second opinion before committing capital. It's also useful for anyone who keeps getting shaken out of good trends and wants an objective read on whether a pullback is healthy or terminal. Scalpers and pure mechanical-system traders should look elsewhere — this needs a human in the loop.
+Discretionary traders who already have an entry method and want a second opinion on whether pressure supports the move. The continuation and reversal frameworks assume a human reading the chart, not a mechanical system.
 
 ## Alternatives worth a look
 
-If you want raw trend direction with less interpretation, a plain **SuperTrend** or **EMA ribbon** is cheaper and simpler. If you want momentum divergence specifically, **regular MACD divergence** does much of the same job for free. Trend_Pressure's edge is combining the two into one pressure readout — if that combination clicks for you, the convenience is real. If not, you're paying attention-cost for something your existing stack already covers.
+If you want raw trend direction with less interpretation, a plain SuperTrend or EMA ribbon is simpler. If you want momentum divergence specifically, regular MACD divergence does much of the same job. The edge here is combining direction, pressure, and exhaustion into one readout.
 
 ## FAQ
 
-**Is Trend_Pressure repainting?**
-In my testing, confirmed readings held. Treat the most recent bar as provisional, as with any indicator.
+**Is it repainting?**
+The source material does not address repainting. Treat the most recent bar as provisional, as with any indicator.
 
 **Can I use it alone?**
-You can, but you shouldn't. It's a confirmation tool — pair it with an entry trigger.
+The documentation presents it as a layer for trend, continuation, and reversal setups rather than a standalone entry system.
 
 **Best timeframe?**
-4H and Daily gave the cleanest pressure reads. Below 15m it gets noisy.
+Not specified in the source material.
 
 **Does it work on crypto?**
-Yes, but filter with a higher timeframe — pressure spikes hard and reverses fast.
+Not specified in the source material.
 
 ## Final verdict
 
-Trend_Pressure does one thing well: it tells you whether a trend has conviction behind it. That's a narrower claim than the name suggests, and it won't replace your entry system — but as a confirmation layer, it earns its pane. The tuning requirement and thin docs keep it from a perfect score.
+Zeiierman Trend Pressure does one thing well: it tells you whether a trend has conviction behind it, and it adds a persistent exhaustion model on top. That's a narrower claim than the name suggests, and it won't replace your entry system — but as a confirmation layer with clear visual annotations, it's a coherent design. The long settings list and conceptual documentation mean it takes work to tune.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — a genuinely useful confirmation tool for discretionary trend traders, held back only by its hands-on setup and narrow standalone value.
+**Rating: ⭐⭐⭐⭐ (4/5)** — a well-structured confirmation tool for discretionary trend traders, held back by its hands-on setup and narrow standalone value.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

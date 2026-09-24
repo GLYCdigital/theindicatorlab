@@ -16,88 +16,91 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Detrended Price Oscillator review: settings, strategy, and how to use it for cycle-based entries. See if it fits your trading."
+grounding: "none (no source found)"
 ---
-
 **What this indicator actually does**
 
-The Detrended Price Oscillator (DPO) does one thing: it removes the long-term trend from price action so you can see the underlying cycles more clearly. Unlike a moving average crossover or RSI, the DPO doesn't try to tell you if the market is overbought or oversold. It simply subtracts a shifted moving average from price, leaving the shorter-term oscillations intact. 
+The Detrended Price Oscillator (DPO) does one thing: it removes the long-term trend from price action so the underlying cycles are easier to see. Unlike a moving average crossover or RSI, the DPO isn't built to flag overbought or oversold conditions. It subtracts a shifted moving average from price, leaving shorter-term oscillations intact.
 
-On the chart above, you'll notice the DPO oscillates above and below zero. When it crosses zero, that's a signal that the cycle is peaking or bottoming. It's not a standalone system—it's a cycle filter. And that's what most traders get wrong: they try to use it like a momentum oscillator.
+On the chart, the DPO oscillates above and below zero. A zero-line cross is read as a sign that a cycle is peaking or bottoming. It isn't a standalone system—it's a cycle filter, and that's the part most traders get wrong when they try to use it like a momentum oscillator.
 
 **Key features that set it apart**
 
-- **Cycle isolation**: The DPO is one of the few indicators that explicitly removes trend, making cyclical patterns visible.  
-- **No lag (sort of)**: Because the moving average is shifted back by half the period, the DPO aligns with price peaks and troughs more closely than a standard MA crossover.  
-- **Simple zero-line cross**: No overbought/oversold levels to misinterpret. Just a clean zero line.  
+- **Cycle isolation**: The DPO is one of the few indicators that explicitly removes trend, which makes cyclical patterns visible.
+- **Reduced lag**: Because the moving average is shifted back by half the period, the DPO aligns with price peaks and troughs more closely than a standard MA crossover.
+- **Simple zero-line cross**: No overbought/oversold levels to misinterpret—just a clean zero line.
 
-**Best settings with specific recommendations**
+**Settings and How to Tune Them**
 
-Default is 20 periods, which works for daily charts but feels noisy on lower timeframes. Here's what I've found after testing:
+The default period is 20. Shorter periods produce more frequent crosses and more noise; longer periods smooth out minor cycles and leave only the dominant swing. The right choice depends on the timeframe you trade and how much cycle detail you want to see.
 
-- **Intraday (15m–1h)**: Use 10–14 periods. Anything shorter than 10 gives too many whipsaws.  
-- **Swing trading (4h–daily)**: 20–30 periods. 27 is a sweet spot for many equities and crypto pairs.  
-- **Position trading (weekly)**: 40–50 periods. This smooths out minor cycles and leaves only the dominant swing.  
+- **Intraday**: Shorter periods suit lower timeframes, but very short settings generate frequent whipsaws.
+- **Swing trading**: Mid-range periods are the common choice for 4H and daily charts.
+- **Position trading**: Longer periods smooth out minor cycles and isolate the dominant swing.
 
-If you're using the TradingView built-in (which is fine), keep the "Median Price" as the source. It reduces noise compared to close-only.
+If you're using the TradingView built-in, the "Median Price" source is the default and tends to reduce noise compared to close-only.
 
 **How to use it for entries and exits**
 
-Here's the exact strategy I've been running:
+A common framework:
 
-1. **Entry**: When DPO crosses above zero after being below zero for at least 2 bars (confirms cycle bottom).  
-2. **Exit**: When DPO crosses below zero after being above zero for 2+ bars, OR when price closes below the 20-period moving average (whichever comes first).  
-3. **Filter**: Only take long entries when the 50-period MA is sloping up. Short entries when it's sloping down.  
+1. **Entry**: When the DPO crosses above zero after spending time below zero, which is read as confirmation of a cycle bottom.
+2. **Exit**: When the DPO crosses below zero after spending time above zero, or when price closes below the moving average you're using as a trend reference—whichever comes first.
+3. **Filter**: Take long entries only when a longer-term moving average is sloping up, and short entries when it's sloping down.
 
-This combination filters out false cycle signals during strong trends. In the chart above, you can see how the DPO zero-line crosses align with short-term reversals—but the trend filter keeps you out of counter-trend traps.
+This combination is intended to filter out false cycle signals during strong trends. Zero-line crosses tend to align with short-term reversals, but the trend filter is what keeps you out of counter-trend traps.
 
 **Honest pros and cons**
 
-**Pros**:  
-- Simple logic that actually works for cycle-based trading.  
-- No repainting—the DPO is fixed once the bar closes.  
-- Works well as a timing tool for swing trades when combined with trend filters.  
+**Pros**:
+- Simple logic suited to cycle-based trading.
+- The value is fixed once the bar closes.
+- Works as a timing tool for swing trades when combined with trend filters.
 
-**Cons**:  
-- Useless in strong trends without a filter. You'll get constant false signals.  
-- The zero-line cross is too slow for scalping.  
-- Requires you to understand cycles—not beginner-friendly.  
+**Cons**:
+- Weak in strong trends without a filter—false signals pile up.
+- The zero-line cross is too slow for scalping.
+- Requires an understanding of cycles; not beginner-friendly.
 
 **Who it's actually for**
 
-This is for intermediate traders who already use a trend filter (like a 50 or 200 MA) and want a timing tool for cycle entries. It's not for scalpers, trend followers, or anyone who expects a "buy now" signal. If you trade mean reversion strategies on daily or 4H charts, this will fit your workflow.
+This is for intermediate traders who already use a trend filter and want a timing tool for cycle entries. It isn't for scalpers, trend followers, or anyone expecting a "buy now" signal. If you trade mean reversion on daily or 4H charts, it fits that workflow.
 
 **Better alternatives if they exist**
 
-- **Ehlers Fisher Transform**: Better for identifying cycle extremes without the zero-line lag.  
-- **MACD with custom periods**: More versatile for trend and cycle work, but more complex.  
-- **Simple RSI (14)**: Not a cycle tool, but easier to interpret for most traders.  
+- **Ehlers Fisher Transform**: Aimed at identifying cycle extremes without zero-line lag.
+- **MACD with custom periods**: More versatile for trend and cycle work, but more complex.
+- **Simple RSI**: Not a cycle tool, but easier to interpret for most traders.
 
-If you want the same concept but smoother, try the **Cycle Detrend** script by @LazyBear—it's a cleaner implementation with adjustable smoothing.
+If you want the same concept with smoothing, look at the **Cycle Detrend** script by @LazyBear—it's a cleaner implementation with adjustable smoothing.
 
 **FAQ addressing real trader questions**
 
-**Q: Does the DPO repaint?**  
-A: No. Once the bar closes, the DPO value is fixed. No repainting.
+**Q: Does the DPO repaint?**
+A: The value is fixed once the bar closes.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but only on 4H or higher. Lower timeframes are too noisy.
+**Q: Can I use it for crypto?**
+A: Yes, though lower timeframes tend to be noisy.
 
-**Q: What's the ideal period for Bitcoin?**  
-A: 27 on daily. Bitcoin's cycles tend to align with that period.
+**Q: Should I use it with other indicators?**
+A: It's best treated as one component. Paired with a trend filter and volume, it becomes far more useful than it is alone.
 
-**Q: Should I use it with other indicators?**  
-A: Absolutely. Alone, it's a garden hose. With a trend filter and volume, it's a fire hose.
+**Final verdict**
 
-**Final verdict with star rating**
+The Detrended Price Oscillator is a solid, no-frills cycle tool. It won't make you money by itself, but as a timing filter within a broader strategy, it's reliable and simple. It loses points because it's weak without a trend filter, and the zero-line cross isn't as snappy as newer cycle indicators. If you trade cycles and want something that doesn't repaint, it's worth a look.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+**Description (max 155 chars):**
+Detrended Price Oscillator review: settings, strategy, and how to use it for cycle-based entries. See if it fits your trading.
 
-The Detrended Price Oscillator is a solid, no-frills cycle tool. It won't make you money by itself, but as a timing filter within a solid strategy, it's reliable and simple. Loses one star because it's useless without a trend filter, and the zero-line cross isn't as snappy as newer cycle indicators. But if you trade cycles and want something that doesn't repaint, this is a keeper.
+## What This Class of Signal Has Actually Done
 
-**Description (max 155 chars):**  
-Honest Detrended Price Oscillator review: settings, strategy, and how to use it for cycle-based entries. See if it fits your trading.
+*Not this script. A canonical **Trend** implementation was backtested on 30 markets over 5 years of daily data (43,793 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
----
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: USDJPY 55.1%, SPY 54.4%, QQQ 52.7%, AAPL 52.6%
+- Weakest markets: LTCUSD 45.7%, VIX 43.9%, SHIBUSD 29.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

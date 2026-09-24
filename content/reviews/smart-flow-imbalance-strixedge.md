@@ -17,73 +17,87 @@ categories:
 rating: 4
 description: "Smart_Flow_Imbalance_Strixedge review: how this order-flow trend indicator flags imbalance zones, best settings, and entry rules I actually tested."
 tv_script_url: "https://www.tradingview.com/script/9dD2t8id-Smart-Flow-Imbalance-StrixEDGE/"
+sources: ["https://www.tradingview.com/script/9dD2t8id-Smart-Flow-Imbalance-StrixEDGE/"]
 ---
-Smart_Flow_Imbalance_Strixedge is a trend indicator that tries to do something most "trend" scripts on TradingView don't bother with: it maps imbalance — the price gaps left behind when aggressive buying or selling overwhelms resting orders — and then leans a trend bias on top of those zones. It's not a moving-average crossover dressed up in new colors. It's reading where price moved too fast, and treating those inefficiencies as the bones of the trend.
-
-I ran it on a MACD chart layout across crypto and index futures, mostly on 15m and 1H, and the core logic held up better than I expected.
+StrixEDGE Smart Flow Imbalance is a study that blends persistent flow, displacement and range structure into a directional participation score. It is Engine #06 in the StrixEDGE indicator framework, categorized under Volume, Trend Analysis and Oscillators, and positioned as a flow-focused market-state tool rather than a single conventional oscillator. It is not a moving-average crossover dressed up in new colors — the framework reads directional quality, liquidity behavior, volatility structure and confirmation strength instead.
 
 ## What it actually plots
 
-The script draws two things you'll care about. First, imbalance boxes — shaded regions where a candle's body left an unfilled gap relative to the prior range. These behave like mini fair-value gaps. Second, a trend state that flips when price closes decisively through the most recent imbalance cluster rather than on a raw MA cross.
+The engine combines dedicated core logic with an optional DNA layer, and normalizes the result into a 0–100 Strix Score so the same framework can be read consistently across symbols and timeframes. The DNA layer consists of three modules:
 
-That distinction matters. A standard trend filter whipsaws in chop. This one waits for price to *mitigate* the imbalance before it commits. In the screenshot above, notice how the boxes stack in the direction of the move — bullish imbalances piling up during the uptrend leg, then getting tested and holding as support. That stacking is the tell.
+- **Displacement Efficiency** — directional body displacement normalized by ATR and relative volume.
+- **Range Structure Balance** — maps close location inside rolling high/low structure to a signed state.
+- **Normalized Flow Acceleration** — smooths ATR-normalized return × relative volume to estimate directional flow.
 
-## Best settings I landed on
+The score is read in bands. Above 72 is a bullish state and the long-side trigger zone. Below 28 is a bearish state and the short-side trigger zone. Around 50 is a balanced or neutral state. A signal is generated on a transition into a trigger zone, not on every bar that remains inside it — which is the key distinction from a raw MA cross, and the reason the tool behaves differently in chop.
 
-Defaults are usable, but I tuned them:
+## Settings and How to Tune Them
 
-- **Imbalance sensitivity / lookback:** tighten it. On 15m I dropped the lookback to roughly 20 bars. Wider settings paint too many boxes and the trend signal gets noisy.
-- **Minimum gap size:** raise this if you trade low-liquidity pairs. Too many micro-imbalances = visual clutter and false flips.
-- **Mitigation threshold:** keep it strict. If you loosen it, the indicator starts calling a zone "filled" on a wick, and you lose the whole edge.
-- **Trend confirmation:** require a close beyond the zone, not just a touch. This alone cut my false signals noticeably.
+The combination profile lists a lookback of 24, smoothing of 5, and a signal threshold of 72, with three active DNA modules. Beyond those values, the parameters are conceptual:
 
-On higher timeframes (4H+), the defaults are fine — the imbalance structure is cleaner and you don't need to fight noise.
+- **Lookback** — controls how much history the flow, displacement and range calculations draw on. Wider settings change how much structure the score incorporates.
+- **Smoothing** — controls how much the normalized flow estimate is averaged before it feeds the score.
+- **Signal threshold** — the score level at which a trigger zone is entered.
+- **DNA modules** — the optional layer that can be active alongside the core engine logic.
 
-## How I'd trade it
+The framework is designed so the score can be read consistently across different symbols and timeframes; users should validate the indicator on the symbol, exchange and timeframe they trade.
 
-The logic is simple and it works:
+## How it's meant to be traded
 
-1. Wait for a fresh imbalance box in the direction of the broader trend.
-2. Don't chase the box. Wait for price to pull back *into* it.
-3. Enter when price reacts off the zone (rejection wick or engulfing close), with the trend state confirming.
-4. Stop below/above the imbalance. Invalidate the idea the moment price closes through and mitigates the zone.
+The signal and position framework is structured rather than discretionary. When a valid state transition is detected, the overlay version can create a trade plan containing Entry, DCA level, TP1, TP2 and TP3, and Stop Loss. Each projected level includes its percentage distance from Entry. When a level is reached, the same chart label is updated with a ✓ marker. TP and SL outcome tracking is mutually controlled so the dashboard does not report contradictory terminal results for the same setup.
 
-That's a pullback-into-imbalance model. It's not novel — it's basically an SMC-flavored entry — but the indicator automates the zone detection so you're not eyeballing gaps at 2am.
+The dashboard summarizes the active market state in a compact TradingView table: engine and category; Strix Score and directional bias; signal / market regime; flow pressure and trend quality; relative volume and ATR volatility; structure / VWAP context; active position and signal age; Entry, DCA, TP1, TP2, TP3 and SL; and hit status for each projected level.
+
+The tool is explicitly designed as a market-state and trade-structure framework rather than a standalone prediction system. Stronger setups generally occur when the Strix Score, market regime, flow pressure, structure and volatility context agree instead of relying on the trigger alone.
 
 ## Pros and cons
 
 **Pros:**
-- Imbalance detection is genuinely useful and visually clean once you tune sensitivity.
-- Trend flips are slower and more deliberate than MA-based scripts — fewer chop whipsaws.
-- Works as both a standalone bias tool and a confluence layer with your existing setup.
+- Blends flow, displacement and range structure into a single normalized score instead of leaning on one oscillator.
+- Signal generation is tied to state transitions rather than every bar inside a zone, which reduces noise.
+- The dashboard consolidates score, regime, flow, volatility, structure and trade levels in one place.
+- Works as both a standalone bias tool and a confluence layer.
 
 **Cons:**
-- It's a repainting risk if you use it on the live, forming candle. Confirmed bars only.
-- The naming is rough — "Smart_Flow_Imbalance_Strixedge" sounds like a rebranded repackage, and the marketing around these scripts usually oversells.
-- No alerts out of the box for zone mitigation, which is a real miss for anyone trading multiple pairs.
-- On low timeframes it needs heavy tuning or it drowns you in boxes.
+- Signals require a confirmed chart-bar close by default, so the live bar can shift — trade the close.
+- DCA, TP and SL levels are systematic projections derived from the active setup, not guaranteed outcomes.
+- The engine is built from generic primitives arranged in a dedicated formula; the framework's value is in the arrangement rather than any single novel input.
 
-## Who it's for
+## Market and style profile
 
-Discretionary intraday traders who already think in terms of order flow and fair-value gaps. If you trade SMC or liquidity concepts, this slots in naturally. If you're a pure breakout or MA-cross trader, the zone logic will feel alien and you'll probably ignore half the output.
+- Market focus: Crypto
+- Intended style: Swing
+- Core engine: #06 Smart Flow Imbalance
+- Category: Flow
+
+## Alerts
+
+The generated script includes alert conditions for long state shift, short state shift, DCA reached, TP1 reached, TP2 reached, TP3 reached, and Stop Loss reached.
+
+## Non-repaint and data handling
+
+By default, signals require a confirmed chart-bar close. This reduces intrabar signal fluctuation and makes historical signal placement more stable.
 
 ## FAQ
 
-**Does it repaint?** Confirmed bars are stable. The live bar can shift as price moves — standard for anything reading imbalance. Trade the close.
+**Does it repaint?** By default, signals require a confirmed chart-bar close, which reduces intrabar signal fluctuation and makes historical placement more stable. The live bar can still shift as price moves until the close confirms.
 
-**Is it better than a plain trend MA?** Different, not strictly better. It's slower to flip, which is an advantage in chop and a disadvantage in fast reversals.
+**Is it better than a plain trend MA?** Different, not strictly better. It generates signals on transitions into trigger zones rather than continuously, which changes how it behaves in chop and in fast reversals.
 
-**Can I use it alone?** Yes, with a fixed risk model. It gives bias and levels. Pair it with volume or a momentum filter for confirmation.
+**Can it be used alone?** It is designed as a market-state and trade-structure tool rather than a standalone prediction system. It provides bias and projected levels; the framework's own guidance is to look for agreement across score, regime, flow, structure and volatility.
 
-**Does it work on crypto?** Yes, and it's arguably strongest there — crypto leaves big imbalances and respects them often.
+**Does it work on crypto?** Crypto is the stated market focus, and the intended style is swing.
+
+## Limitations
+
+No indicator can predict future price movement with certainty. Signals can fail during sudden news events, illiquid conditions, gaps, abnormal volatility, regime transitions or unreliable volume. DCA, TP and SL levels are systematic projections derived from the active setup and should not be interpreted as guaranteed outcomes. Users should validate the indicator on the symbol, exchange and timeframe they trade, and should apply independent position sizing and risk management. Historical behavior does not guarantee future performance.
 
 ## Verdict
 
-Smart_Flow_Imbalance_Strixedge does one thing well: it turns imbalance zones into a usable trend framework. It's not revolutionary — the concept is borrowed from order-flow and SMC trading — and the packaging oversells it. But the execution is solid, the zones are accurate after tuning, and it saved me real screen time on pullback entries.
-
-It loses a star for the repainting-on-live-bar caveat, missing mitigation alerts, and a name that makes me suspicious of yet another rebranded script. If you trade pullbacks into inefficiency and want that automated, it's worth the install.
+StrixEDGE Engine #06 does one thing clearly: it turns flow, displacement and range structure into a normalized 0–100 score with a defined trigger framework and a structured trade plan. The concept is not novel — it is assembled from generic price, volume, volatility, structure and confirmed-context primitives — and the framework is explicit that it is a market-state tool rather than a prediction system. But the arrangement is coherent, the transition-based signaling avoids the constant on/off noise of a raw oscillator, and the dashboard consolidates the context that matters. It is for research and educational purposes only, is not financial advice, and does not guarantee profitability.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

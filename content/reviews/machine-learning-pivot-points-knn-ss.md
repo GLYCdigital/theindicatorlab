@@ -16,91 +16,83 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of Machine Learning Pivot Points KNN SS. Tested on real charts. Best settings, entry strategy, pros/cons, and better alternatives."
+grounding: "none (no source found)"
 ---
+# Machine Learning Pivot Points KNN SS Review
 
-This is one of those indicators that sounds complex but actually does something useful. I’ve run it on multiple timeframes and asset classes—stocks, forex, crypto—and it holds up better than most pivot-based tools. Let me break down what it really does.
+This indicator sounds more complex than it is, but the underlying idea is worth understanding. It applies a K-Nearest Neighbors (KNN) algorithm — a basic machine learning model — to the problem of identifying pivot highs and lows from historical price patterns. The "SS" in the name likely refers to smoothing or signal strength, which is what filters out noise. The core output is a set of support and resistance levels that adapt to recent price action rather than relying on fixed lookback periods, making them dynamic rather than static.
 
 ## What This Indicator Actually Does
 
-It’s not magic. It uses a K-Nearest Neighbors (KNN) algorithm—a basic machine learning model—to identify pivot highs and lows based on historical price patterns. The "SS" in the name likely refers to smoothing or signal strength, which filters out noise.
+Instead of hard-coded highs and lows, it learns from recent bars to decide what qualifies as a pivot. This is meant to reduce false signals during ranging markets. The levels are adaptive: they adjust to recent price action rather than being anchored to a fixed calculation window.
 
-The core output is a set of support and resistance levels that adapt to recent price action instead of using fixed lookback periods. So it’s dynamic, not static like standard pivot points.
+A secondary feature is adaptive smoothing, which lets you control sensitivity. More smoothing produces fewer, stronger levels; less smoothing produces more frequent pivots. The indicator is also designed to be used across multiple timeframes, from intraday through daily charts.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **KNN-based pivots** – Instead of hard-coded highs/lows, it learns from the last N bars to decide what qualifies as a pivot. This reduces false signals during ranging markets.
-- **Adaptive smoothing** – You can tweak the sensitivity. Higher smoothing = fewer, stronger levels. Lower smoothing = more frequent pivots.
-- **Multi-timeframe alignment** – Works on 1m to 1D. I found it most reliable on 15m and 1H for intraday.
-- **No repainting** – Confirmed. The levels don’t change once a bar closes. Huge plus for live trading.
+- **KNN-based pivots** – Pivots are derived from historical price patterns rather than fixed rules.
+- **Adaptive smoothing** – A sensitivity control that trades off between frequency and strength of levels.
+- **Multi-timeframe use** – Designed to work across a range of timeframes.
+- **Visual output** – Support and resistance lines plotted directly on the chart, with optional pivot labels.
 
-## Best Settings (After Hours of Testing)
+## Settings and How to Tune Them
 
-I ran it on BTC/USDT 1H, EUR/USD 15m, and AAPL 5m. Here’s what worked:
+The indicator exposes several parameters:
 
-- **KNN Period**: 14 (default). 9 for scalping, 21 for swing trades.
-- **Smoothing Factor**: 3. Anything above 5 flattens the pivots too much.
-- **Lookback Bars**: 200. Enough to train the KNN without overfitting.
-- **Show Pivot Labels**: On. Helps you see which levels are active.
-- **Level Style**: Solid lines for support/resistance. Dotted for intermediate pivots.
+- **KNN Period** – Controls how many bars the algorithm draws on when classifying a pivot. Shorter periods make the indicator more reactive; longer periods make it more selective.
+- **Smoothing Factor** – Controls how much the pivot levels are smoothed. Higher values reduce the number of pivots and flatten the lines; lower values keep more pivots visible.
+- **Lookback Bars** – The amount of history used to train the KNN.
+- **Show Pivot Labels** – Toggles on-chart labels identifying active pivot levels.
+- **Level Style** – Controls how support and resistance lines are rendered, with different styles available for primary versus intermediate pivots.
 
-On the chart above, you’ll notice the red (resistance) and green (support) lines adjust smoothly after big moves—no lag spikes.
+There is no single "best" configuration — the right values depend on your timeframe and how many levels you want to see. The general trade-off is responsiveness versus cleanliness: more reactive settings give you more signals and more noise, while heavier smoothing gives you fewer, more deliberate levels.
 
 ## How to Use It for Entries and Exits
 
-**Long entry**: Price bounces off a green support line with a bullish candlestick pattern (hammer, engulfing). Set stop loss 5–10 ticks below that pivot.
+The intended use is as a dynamic support/resistance framework rather than a standalone signal generator.
 
-**Short entry**: Price rejects a red resistance line with a bearish pin bar or shooting star. Stop loss just above.
+**Long entry**: Look for price to bounce off a support line with a bullish candlestick pattern (such as a hammer or engulfing candle). A stop loss is typically placed just below the pivot.
 
-**Exit targets**: Use the next pivot level in the opposite direction. For example, if you buy at support, take partial profit at the next resistance.
+**Short entry**: Look for price to reject a resistance line with a bearish pin bar or shooting star. Stop loss just above the level.
 
-**Pro tip**: Combine with volume. If the pivot level forms on low volume, it’s weak. High volume = stronger level.
+**Exit targets**: Use the next pivot level in the opposite direction as a target. If you buy at support, the next resistance level is a natural area to take partial profit.
 
-## Honest Pros and Cons
+**Volume context**: Combining the levels with volume can help gauge strength. A pivot that forms on low volume is generally weaker than one formed on high volume.
+
+## Pros and Cons
 
 **Pros**:
-- No repainting—critical for real-time decisions.
-- Adapts to market regime changes better than standard pivots.
-- Clean visual output—easy to spot key levels.
-- Works on nearly any timeframe.
+- Adaptive levels that respond to changing market conditions better than static pivots.
+- Clean visual output that makes key levels easy to spot.
+- Flexible across timeframes and asset classes.
 
 **Cons**:
-- Heavy computation on low timeframes (1m, 5m) during high volatility. Can cause slight lag on older machines.
-- False signals in strong trends. The KNN may pick minor retracements as pivots, flooding the chart with lines.
-- Steep learning curve for beginners who don’t understand KNN settings.
+- Computationally heavier on low timeframes during volatile periods, which can introduce lag on slower machines.
+- Prone to false signals in strong trends, where minor retracements may be picked up as pivots and clutter the chart.
+- Steep learning curve for traders unfamiliar with KNN-style parameters.
 
-## Who It’s Actually For
+## Who It's For
 
-Intermediate to advanced traders who already use support/resistance but want a more dynamic system. Not for complete beginners—you’ll get confused by the settings. Also not for pure trend followers; this is range/momentum hybrid.
+Intermediate to advanced traders who already use support and resistance and want a more adaptive version of it. It is not aimed at complete beginners, who may find the settings opaque, and it is not a pure trend-following tool — it fits better with range and mean-reversion approaches.
 
-## Better Alternatives
+## Alternatives
 
-If you want something simpler: **Pivot Points Standard** (built into TradingView) is free and works fine for daily levels. For machine learning without the overhead, **Volume Profile** with fixed range is more intuitive.
-
-If you want more advanced ML pivots: **Machine Learning Pivot Points (LSTM version)** by the same author—but it repaints. Avoid for live trading.
+For something simpler, TradingView's built-in **Pivot Points Standard** covers daily levels with no configuration overhead. For a different take on volume-based levels, **Volume Profile** with a fixed range is more intuitive. More advanced machine learning pivot tools exist, but some of them are known to repaint, which makes them unsuitable for live decision-making.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. I confirmed by reloading after a completed bar. Levels stay fixed.
+**Does it repaint?**
+The indicator is designed not to repaint — levels are intended to stay fixed once a bar closes. As always, verify this behavior yourself on your own charts and timeframe before relying on it live.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works great on 15m–4H for BTC and ETH. Lower timeframes get noisy.
+**Can it be used on crypto?**
+Yes. It is intended for use across asset classes, including crypto. Lower timeframes tend to be noisier.
 
-**Q: How do I reduce false signals?**  
-A: Increase the Smoothing Factor to 4 or 5, and set the KNN Period to 21. Fewer but stronger levels.
-
-**Q: Is it worth the $50/month?**  
-A: Only if you actively trade support/resistance zones. For occasional use, stick with free pivots.
+**How do I reduce false signals?**
+Increase the smoothing factor and lengthen the KNN period. This produces fewer but stronger levels.
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-The Machine Learning Pivot Points KNN SS is a solid tool for traders who want adaptive S/R without repainting. It’s not perfect—trending markets can overwhelm it—but for ranging and mildly trending conditions, it’s a clear upgrade over static pivots. If you’re willing to dial in the settings, it earns its keep.
-
-**Should you install it?** Yes, if you trade mean-reversion or breakout setups and want a dynamic edge. No, if you prefer a pure trend-following approach.
-
----
+The Machine Learning Pivot Points KNN SS is a reasonable tool for traders who want adaptive support and resistance without repainting. It is not perfect — trending markets can overwhelm it — but in ranging and mildly trending conditions it offers a more flexible alternative to static pivots. Whether it earns its place depends on whether you actively trade support and resistance zones and are willing to tune the settings to your style.
 
 ## Go Deeper with The Indicator Lab
 

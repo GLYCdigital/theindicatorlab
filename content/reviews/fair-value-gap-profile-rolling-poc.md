@@ -16,37 +16,37 @@ categories:
   - Technical Analysis
 rating: 3
 description: "Combines FVG zones with rolling POC for mean-reversion trades. Decent for range-bound markets, but laggy in trends. Not a game-changer."
+grounding: "none (no source found)"
 ---
-
 **Final Verdict: ⭐⭐⭐ (3/5) — Useful for niche setups, but not a core tool.**
 
-I’ve tested this one on BTC/USD 15-min, ES 1-hour, and a few forex pairs over the past two weeks. The idea is solid: overlay fair value gaps (FVG) with a rolling point of control (POC) to identify high-probability reversal zones. Execution is okay, but it’s not revolutionary. Let’s break it down.
+The idea is solid: overlay fair value gaps (FVG) with a rolling point of control (POC) to identify potential reversal zones. Execution is okay, but it’s not revolutionary. Let’s break it down.
 
 ### What This Indicator Actually Does
 
 It plots FVG zones (the usual three-candle imbalance pattern) and then calculates a rolling POC—the price level with the highest volume within a lookback window. The POC line updates bar by bar. The FVG zones are color-coded: bullish gaps in green, bearish in red. When price returns to a FVG and the POC is nearby, the indicator highlights those confluence zones.
 
-As the chart above shows, it’s visually cleaner than many FVG-only tools because the POC adds context. But don’t mistake that for predictive power—it’s still lagging.
+Visually it’s cleaner than many FVG-only tools because the POC adds context. But don’t mistake that for predictive power—it’s still lagging.
 
 ### Key Features That Set It Apart
 
-- **Rolling POC overlay** – Most FVG indicators just draw boxes. This one adds a volume-weighted anchor point, so you see where the big money was active.
-- **Customizable lookback** – You can set the POC window from 10 to 200 bars. I found 50 works best for intraday.
+- **Rolling POC overlay** – Most FVG indicators just draw boxes. This one adds a volume-weighted anchor point, so you see where volume was concentrated.
+- **Customizable lookback** – The POC window is adjustable across a range of bar counts.
 - **FVG filter** – Option to show only gaps that exceed a minimum size (in ticks or percentage). Useful for filtering noise.
 - **Multi-timeframe alert** – Can alert when price touches a FVG zone that aligns with the POC on a higher timeframe.
 
-### Best Settings (What I Actually Use)
+### Settings and How to Tune Them
 
-- **Lookback period**: 50 (for 15-min to 1-hour charts). Too short (20) and it’s noisy; too long (100) and it’s too slow.
-- **Minimum FVG size**: 0.1% for crypto, 2 ticks for ES. Avoids showing tiny gaps that get filled instantly.
-- **POC smoothing**: Turn on exponential smoothing (EMA of POC values) to reduce whipsaws. Default is off—big mistake.
-- **Show only confluent FVGs**: Check this box. It hides gaps where the POC is far away, cutting clutter by about 40%.
+- **Lookback period**: Controls how many bars feed the rolling POC. Shorter windows react quickly but produce noisier levels; longer windows smooth the line but lag more.
+- **Minimum FVG size**: Filters out small gaps that tend to get filled immediately. Set it in ticks or percentage depending on the instrument.
+- **POC smoothing**: Applies exponential smoothing to the POC values to reduce whipsaws. Default is off.
+- **Show only confluent FVGs**: Hides gaps where the POC is far away, cutting clutter on the chart.
 
 ### How to Use It for Entries and Exits
 
-**Entry**: Wait for price to retrace into a FVG zone that contains the rolling POC. On a 15-min chart, that’s your potential reversal area. Enter on the first bearish/bullish candlestick close after touching the zone. Example: BTC drops into a green FVG at $30,500 with POC at $30,480. If the next candle closes above $30,520, go long.
+**Entry**: Wait for price to retrace into a FVG zone that contains the rolling POC. Enter on the first bearish/bullish candlestick close after touching the zone.
 
-**Stop loss**: Place 1 ATR below/above the nearest FVG boundary. For ES, that’s about 4-5 points.
+**Stop loss**: Place 1 ATR below/above the nearest FVG boundary.
 
 **Target**: First target is the opposite side of the FVG zone (usually 1-2x the zone width). Second target is the previous swing high/low.
 
@@ -56,51 +56,49 @@ As the chart above shows, it’s visually cleaner than many FVG-only tools becau
 
 **Pros**:
 - Clean visual layout. Less noise than stacking separate FVG and volume profile tools.
-- The POC filter genuinely improves win rate in ranging markets. I saw ~58% win rate on ES in slow sessions.
-- Lightweight. No repainting issues I could detect (tested by refreshing charts).
+- The POC filter adds genuine context in ranging markets.
+- Lightweight, with no obvious repainting on chart refresh.
 
 **Cons**:
-- **Laggy in trends.** When a strong trend is running, the rolling POC is always behind. You’ll get false reversal signals as price slices through FVGs. Win rate dropped to 35% on trending days.
-- **No dynamic POC adjustment.** The POC window is fixed. If volatility changes, you have to manually tweak it. Annoying.
-- **Poor documentation.** The script notes are sparse. Took me 30 minutes to figure out the smoothing option.
-- **No multi-timeframe POC.** It only calculates POC on the current chart. Would be much stronger with higher TF context.
+- **Laggy in trends.** When a strong trend is running, the rolling POC is always behind. You’ll get false reversal signals as price slices through FVGs.
+- **No dynamic POC adjustment.** The POC window is fixed. If volatility changes, you have to manually tweak it.
+- **Poor documentation.** The script notes are sparse, so the smoothing option isn’t obvious at first glance.
+- **No multi-timeframe POC.** It only calculates POC on the current chart. Would be stronger with higher TF context.
 
 ### Who It’s Actually For
 
-- **Range traders** who scalp 15-min to 1-hour charts. The POC+FVG combo shines when price oscillates between levels.
+- **Range traders** who scalp 15-min to 1-hour charts. The POC+FVG combo is built for price oscillating between levels.
 - **Traders who already use volume profile** and want a visual shortcut to confluence zones.
 - **Not for trend followers.** If you’re trading breakouts or momentum, skip this. It’ll just fill your screen with false signals.
 
 ### Better Alternatives (If You’re Considering This)
 
 - **Volume Profile Visible Range (VPVR)** – Free, built into TradingView. Gives you actual volume distribution, not just a single POC line. More robust.
-- **Smart Money Concepts (SMC) tools** – Many free scripts (e.g., “ICT FVG & Order Blocks”) offer FVG plus order block confluences with better trend context.
+- **Smart Money Concepts (SMC) tools** – Many free scripts offer FVG plus order block confluences with better trend context.
 - **LuxAlgo’s Premium FVG+** – If you’re willing to pay, it has dynamic POC and multi-timeframe alignment. Overkill for most, but more powerful.
 
 ### FAQ
 
-**Q: Does it repaint?**  
-A: No. I checked by comparing a saved screenshot with a refreshed chart. The FVG zones and POC line stay put.
+**Q: Does it repaint?**
+A: No. The FVG zones and POC line stay put on chart refresh.
 
-**Q: Can I use it on crypto?**  
-A: Yes, but set minimum FVG size to 0.1% or higher. Crypto has tons of tiny gaps that are noise.
+**Q: Can I use it on crypto?**
+A: Yes, but set a minimum FVG size, since crypto has many tiny gaps that are noise.
 
-**Q: Best timeframe?**  
-A: 15-min to 1-hour. Lower TF (1-min) creates too many false POC levels. Higher TF (4-hour) makes the POC too sticky.
+**Q: Best timeframe?**
+A: Mid-range intraday timeframes. Very low timeframes create too many false POC levels; very high timeframes make the POC too sticky.
 
-**Q: Does it work for options?**  
-A: Only if you’re trading near the money with tight strikes. The POC gives a decent estimate of where large option positions may cluster.
+**Q: Does it work for options?**
+A: Only if you’re trading near the money with tight strikes. The POC gives a rough estimate of where large option positions may cluster.
 
-**Q: Is it worth the $?**  
-A: It’s free or cheap (depends on the version). If free, yes—it’s a decent addition. If paid, no—use VPVR and a free FVG script instead.
+**Q: Is it worth the $?**
+A: It’s free or cheap depending on the version. If free, it’s a decent addition. If paid, use VPVR and a free FVG script instead.
 
 ### Final Verdict
 
 The Fair Value Gap Profile Rolling POC is a solid **niche tool** for range traders who want to combine price imbalance with volume context. It’s not a game-changer. The lag in trending markets and lack of dynamic settings hold it back. If you’re already comfortable with volume profile and FVGs separately, you won’t miss much by skipping this. But if you want a single-pane solution for mean-reversion setups on lower timeframes, it does the job without fuss.
 
 **Rating: ⭐⭐⭐ (3/5)** — Decent execution of a good idea, but not essential.
-
----
 
 ## Go Deeper with The Indicator Lab
 

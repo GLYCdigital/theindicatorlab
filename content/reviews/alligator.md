@@ -16,36 +16,32 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Bill Williams' Alligator indicator review: how to spot trends, entries, exits, and optimal settings for day trading and swing trading."
+grounding: "none (no source found)"
 ---
+# Bill Williams' Alligator Review
 
-Bill Williams' Alligator is one of those indicators that looks weird at first—three colored moving averages that weave like a reptile's jaw. But after years of testing, I can tell you: it's not just a gimmick. It's a legit trend-following tool if you know how to read it. Let me break down what it actually does, how to set it up, and where most traders get it wrong.
+Bill Williams' Alligator looks strange at first—three colored moving averages that weave like a reptile's jaw. It's not a gimmick, though. It's a trend-following tool with a specific logic, and it works best when you understand what it's actually telling you. Here's a breakdown of what it does, how to set it up, and where traders tend to misread it.
 
 ## What This Indicator Actually Does
 
-The Alligator is a smoothed moving average system with three lines:
+The Alligator is a smoothed moving average system built from three lines:
 - **Blue (Jaw)**: 13-period SMMA, shifted 8 bars into the future
-- **Red (Teeth)**: 8-period SMMA, shifted 5 bars into the future  
+- **Red (Teeth)**: 8-period SMMA, shifted 5 bars into the future
 - **Green (Lips)**: 5-period SMMA, shifted 3 bars into the future
 
-The "shift" means these lines are drawn ahead of current price—they're not repainting, but they *feel* predictive. When the lines are tangled, the Alligator is "sleeping" (consolidation). When they spread and align, it's "awake" (trending).
+The "shift" means these lines are drawn ahead of current price. They are not repainting, but they *feel* predictive. When the lines are tangled, the Alligator is "sleeping" (consolidation). When they spread and align, it's "awake" (trending).
 
-Key number to remember: **the default settings (13,8,5) with shifts (8,5,3) are already optimal**. Don't change them unless you're doing something very specific.
+The default settings (13, 8, 5) with shifts (8, 5, 3) are the standard configuration. Changing them alters the indicator's logic rather than improving it.
 
-## Best Settings for Different Timeframes
+## Settings and How to Tune Them
 
-I tested this on everything from 1-minute to daily charts. Here's what works:
+The default configuration—periods of 13, 8, 5 and shifts of 8, 5, 3—is the reference point. The Alligator's strength is in its consistency; tweaking the periods or shifts generally breaks the logic rather than refining it.
 
-| Timeframe | Settings | Notes |
-|-----------|----------|-------|
-| Scalping (1m-5m) | Keep defaults | Faster shifts cause noise |
-| Day trading (15m-1h) | Defaults | Works best with clear trends |
-| Swing trading (4h-Daily) | Defaults | Perfect for capturing big moves |
-
-**My recommendation**: Stick with the default settings. The Alligator's strength is in its consistency—tweaking it often breaks the logic.
+If you adjust anything, do so for a specific reason tied to your trading style, not because a different number looks better on a chart. Shorter shifts will react faster but introduce more noise; longer shifts smooth the signal further but add lag. The indicator behaves the same way across timeframes—the defaults are not timeframe-specific.
 
 ## How to Use It for Entries and Exits
 
-The classic Bill Williams approach is simple but powerful:
+The classic Bill Williams approach is simple:
 
 **For long entries:**
 - Wait for the Alligator to "wake up" (lines separate and align bullishly: Green above Red above Blue)
@@ -60,16 +56,16 @@ The classic Bill Williams approach is simple but powerful:
 
 **Exits:** Close when the lines start to converge again (Alligator goes back to sleep) or when price closes on the opposite side of the Jaw.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Filters out choppy markets automatically—saves you from overtrading
-- The shifted lines give you a built-in "forecast" that helps with planning
-- Works on any timeframe, but shines on 1H-4H
-- Zero repainting issues (unlike some other Williams tools)
+- Filters out choppy markets automatically, which helps curb overtrading
+- The shifted lines give a built-in "forecast" that helps with planning
+- Works on any timeframe
+- No repainting issues (unlike some other Williams tools)
 
 **Cons:**
-- Lag is real—you'll miss the first 5-10% of a move
+- Lag is real—you'll miss the early portion of a move
 - Useless in ranging markets (but that's the point)
 - The "fractal" entry method Williams pairs it with is mostly noise
 - New traders often overtrade the crossovers (they're not signals)
@@ -83,36 +79,44 @@ This indicator is for traders who:
 
 It's NOT for scalpers or counter-trend traders. If you need to catch exact tops and bottoms, look elsewhere.
 
-## Better Alternatives
+## Alternatives
 
-Here's the truth: the Alligator is fine, but it's not the best trend filter. If you want something with less lag and more precision, check out:
+The Alligator is fine, but it's not the only trend filter. If you want something with less lag and more precision, consider:
 - **Supertrend** (faster entries, but whippy in ranges)
 - **Keltner Channels** with ATR multiplier (better for mean reversion)
 - **Hull Moving Average** (less lag, same trend-following idea)
 
-For pure trend detection, I'd still take the Alligator over a simple EMA crossover because the "sleeping" phase is genuinely useful.
+For pure trend detection, the Alligator still holds up against a simple EMA crossover because the "sleeping" phase is genuinely useful.
 
 ## FAQ
 
-**Q: Does the Alligator repaint?**  
-A: No. The shifted lines are drawn ahead of current price, but they don't change once printed. The shift is cosmetic—it's just a visualization trick.
+**Q: Does the Alligator repaint?**
+A: No. The shifted lines are drawn ahead of current price, but they don't change once printed. The shift is cosmetic—it's a visualization trick.
 
-**Q: Can I use it with crypto?**  
-A: Yes. I've tested it on BTC and ETH 4H charts. Works well, but crypto's volatility means wider stops.
+**Q: Can I use it with crypto?**
+A: Yes, though crypto's volatility means wider stops.
 
-**Q: What's the "fractal" indicator that goes with it?**  
+**Q: What's the "fractal" indicator that goes with it?**
 A: Bill Williams' Fractal shows reversal points. In practice, it's a lagging indicator that gives too many false signals. Skip it.
 
-**Q: Should I use it alone?**  
-A: No. Pair it with volume or RSI for confirmation. I use it with a 20-period VWAP.
+**Q: Should I use it alone?**
+A: No. Pair it with volume or RSI for confirmation.
 
 ## Final Verdict
 
-The Alligator is a solid 4/5 tool. It's not flashy, it's not perfect, but it does one thing well: tells you when to stay out of the market. Most traders lose money in chop—this indicator saves you from that. Just don't expect it to catch every move, and for the love of trading, don't trade every crossover.
+The Alligator is a solid tool. It's not flashy, it's not perfect, but it does one thing well: tells you when to stay out of the market. Most traders lose money in chop—this indicator helps you avoid that. Just don't expect it to catch every move, and don't trade every crossover.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** – A reliable trend filter for patient traders. Not for everyone, but if you respect its limits, it pays.
+**Rating: 4/5** – A reliable trend filter for patient traders. Not for everyone, but if you respect its limits, it does its job.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Alligator/Gator** implementation was backtested on 30 markets over 5 years of daily data (43,996 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: WTI 53.5%, USDJPY 53.3%, QQQ 53.2%, AVAXUSD 52.9%
+- Weakest markets: LINKUSD 46.6%, LTCUSD 46.4%, SHIBUSD 30.6%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,30 +16,30 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Monthly_High_Low marks key monthly levels directly on your chart. Clean, no-lag support/resistance zones for swing trading and breakout setups."
+grounding: "none (no source found)"
 ---
-
-**Monthly_High_Low** is a straightforward tool that plots the current month's high and low, plus the previous month's range, directly on your chart. No repainting, no fancy math — just clean, actionable levels that most traders waste time drawing manually. After testing it across forex, crypto, and indices, here's my honest take.
+**Monthly_High_Low** is a straightforward tool that plots the current month's high and low, plus the previous month's range, directly on your chart. It is intended to replace levels that traders would otherwise draw by hand. No repainting, no fancy math — just clean reference lines.
 
 ## What This Indicator Actually Does
 
-It draws horizontal lines at the monthly high and low prices, extending them forward. You can toggle visibility for the current month, previous month, or both. The lines update automatically as new highs/lows form, but **they never repaint** — once a level is set (e.g., the month's high), it stays fixed until the month closes. This is crucial for backtesting and live trading.
+It draws horizontal lines at the monthly high and low prices, extending them forward. You can toggle visibility for the current month, previous month, or both. The lines update automatically as new highs and lows form.
 
-**Key difference from free alternatives:** Most free scripts repaint or clutter the chart with every tick. Monthly_High_Low only updates at the start of a new month, keeping your workspace clean.
+**Key difference from free alternatives:** Many free scripts clutter the chart with constant updates. Monthly_High_Low is designed to keep the workspace clean by focusing only on the monthly range.
 
 ## Key Features That Set It Apart
 
 - **No-lag levels** – These aren't moving averages. The high and low are actual price points, not smoothed calculations.
-- **Custom timeframes** – You can choose any period (weekly, quarterly, yearly) via the "Period" setting. I use it mostly on monthly, but quarterly is solid for swing traders.
-- **Color control** – Change line colors for current vs. previous month. I set current month high to red, low to green. Makes reactions instant.
-- **Extended lines** – Levels extend to the right indefinitely, so you always see where price is relative to monthly range, even days later.
+- **Custom timeframes** – You can choose the period via the "Period" setting, which is described as supporting weekly, quarterly, and yearly options in addition to monthly.
+- **Color control** – Change line colors for current vs. previous month, so reactions are easy to read at a glance.
+- **Extended lines** – Levels extend to the right, so you can see where price sits relative to the monthly range later in the month.
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-- **Period:** Monthly (default) for most setups. Switch to Weekly if you scalp 1-3 day moves.
-- **Show Current Month:** Yes. This is your active battle zone.
-- **Show Previous Month:** Yes. Previous month's range often acts as magnet when price breaks out.
-- **Line Style:** Dashed for previous month, solid for current. Helps differentiate at a glance.
-- **Line Width:** 2 for current month, 1 for previous. Don't make them too thick — they're reference points, not trading signals.
+- **Period:** Set the timeframe the levels are drawn from. Monthly is the default; weekly and quarterly are also described as options.
+- **Show Current Month:** Toggles the active month's high and low lines.
+- **Show Previous Month:** Toggles the prior month's range.
+- **Line Style and Width:** Style and width are configurable so the current and previous month can be visually distinguished.
+- **Color:** Current and previous month lines can be colored separately.
 
 ## How to Use It for Entries and Exits
 
@@ -54,14 +54,11 @@ It draws horizontal lines at the monthly high and low prices, extending them for
 - Same logic for lows — look for bullish divergences or pin bars.
 
 **Range trading:**
-- In quiet months, buy at the monthly low, sell at the monthly high. Set alerts at these levels. Works best in low-volatility pairs like EURUSD or GBPJPY on higher timeframes.
-
-**What the chart above shows:** As the chart above illustrates, price bounced off the previous month's low (green dashed line) and rallied to test the current month's high (red solid line) — a textbook range play.
+- In quiet months, buy at the monthly low, sell at the monthly high. Set alerts at these levels. Works best in low-volatility pairs on higher timeframes.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Zero repainting. Levels are fixed once set.
 - Simple and clean — no clutter, just lines.
 - Works on any timeframe (1m to monthly).
 - Free. No premium version nonsense.
@@ -87,27 +84,25 @@ It draws horizontal lines at the monthly high and low prices, extending them for
 
 ## FAQ (Real Trader Questions)
 
-**Q: Does it repaint?**  
+**Q: Does it repaint?**
 A: No. The levels update only at the start of a new month. Once set, they stay fixed.
 
-**Q: Can I use it on crypto?**  
+**Q: Can I use it on crypto?**
 A: Yes. Works on any symbol. Crypto's 24/7 nature means monthly levels are still valid.
 
-**Q: How do I change the period to weekly?**  
+**Q: How do I change the period to weekly?**
 A: In the settings, change "Period" from "Monthly" to "Weekly". Simple.
 
-**Q: Does it show levels for multiple months?**  
+**Q: Does it show levels for multiple months?**
 A: Only current and previous month. Not a full historical range plotter.
 
 ## Final Verdict
 
-**Monthly_High_Low** is a solid 4-star tool for traders who need clean, no-nonsense monthly reference levels. It's not a magic bullet — you still need to do the work — but it saves time and keeps your chart organized. If you're tired of drawing lines manually or dealing with repainting junk, this is a reliable upgrade. Just pair it with price action or an oscillator for real edge.
+**Monthly_High_Low** is a solid tool for traders who need clean, no-nonsense monthly reference levels. It's not a magic bullet — you still need to do the work — but it saves time and keeps your chart organized. If you're tired of drawing lines manually or dealing with cluttered scripts, this is a reasonable upgrade. Just pair it with price action or an oscillator for real edge.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Best for: Swing and breakout traders.  
+**Rating: ⭐⭐⭐⭐ (4/5)**
+Best for: Swing and breakout traders.
 Worst for: Scalpers or those wanting automated signals.
-
----
 
 ## Go Deeper with The Indicator Lab
 

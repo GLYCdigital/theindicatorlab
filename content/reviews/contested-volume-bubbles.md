@@ -17,97 +17,97 @@ categories:
 rating: 4
 description: "Honest Contested_Volume_Bubbles review: how these volume bubbles signal trend exhaustion, best settings, and whether they beat plain OBV."
 tv_script_url: "https://www.tradingview.com/script/6Pw3RCO2-Contested-Volume-Bubbles/"
+sources: ["https://www.tradingview.com/script/6Pw3RCO2-Contested-Volume-Bubbles/"]
 ---
-Let me be blunt: most volume indicators are just repackaged OBV with extra paint. Contested_Volume_Bubbles isn't that. It's a trend-exhaustion tool that plots bubbles when buying and selling pressure reach a statistical stalemate — and I've found it genuinely useful for spotting reversals before they show up on price action.
+Let me be blunt: most volume indicators are repackaged OBV with extra paint. Contested Volume Bubbles isn't that. It's a tool for reading where both sides of the trade committed heavily and neither finished ahead — and it plots that fight directly at the price where it happened.
 
 **What it actually does**
 
-The indicator scans volume flow relative to recent average activity. When aggressive buying volume nearly equals aggressive selling volume over a defined lookback period — a "contested" zone — it plots a bubble on the chart. The bubble's size correlates with the magnitude of the volume clash. Small bubbles = minor skirmishes. Large bubbles = institutional-scale fights that often precede significant trend changes.
+The indicator marks bars where both sides of the trade committed unusually hard, drawing a bubble at the price where the fight actually happened. Its core measurement is contested volume — the volume committed by whichever side lost the bar:
 
-It's not a lagging moving average crossover. It's not a repainted oscillator. The bubbles form after the contested period completes, but they're forward-looking in the sense that they mark zones where the current trend's momentum is being challenged.
+contested = min(buy volume, sell volume)
+
+Heavy volume that resolves cleanly in one direction gives a low number. The same volume with both sides pushing and neither finishing ahead gives a high one. It's also exactly complementary to directional volume:
+
+contested = (total volume − total delta) ÷ 2
+
+Contested volume, total volume and directional volume are three views of the same thing. You can trigger on one and size the bubble by another, which is where most of the flexibility comes from.
+
+You can't get any of this off a chart bar. A candle that closes mid-range looks balanced; the activity underneath it may not have been. So every candle gets broken into as many as twenty lower-timeframe samples and measured piece by piece. The useful part is placement — the bubble lands on the section of the candle that carried the fight, so it sits at a price that actually traded instead of an average of the bar.
 
 **What sets it apart**
 
-The visual design is the killer feature. I've tested dozens of volume tools, and most force you to squint at a sub-pane while watching price. This one puts the information directly on the chart. In the screenshot above, you can see how the bubbles align with the MACD histogram's compression phases — the tool is essentially showing you the volume reality behind what MACD is hinting at.
+Bubbles cluster at prices where the two sides repeatedly disagreed, and those levels often matter again on a return. A large bubble late in an extended move reads differently: a push meeting real opposition rather than clean continuation, which is the shape exhaustion usually takes.
 
-The bubble size logic is also smarter than typical ATR-based volatility bands. It uses a percentile ranking of volume imbalance, so it adapts to whether you're trading a quiet stock like a utility or a volatile crypto pair. A contested signal on BTC/USD won't fire the same way as one on a sleepy large-cap, which is exactly how it should work.
+The other differentiator is how the trigger is normalized. Normally volume is heavy at the open, declines through the morning, flattens around midday, and builds into the close. Anything that compares a bar to the bars right behind it is inherently flawed, since volume activity shifts throughout the session. Time Of Day normalization instead compares the bar to what that clock slot usually looks like — this minute against this minute, from previous sessions. A Standard mode ranks each bar against the bars right behind it; it needs no history and works on any chart type, but it carries the intraday bias described above.
 
-**Best settings I've tested**
+**What each bubble tells you**
 
-The defaults aren't bad, but I found these work better across multiple asset classes:
+Three things drive each bubble:
 
-- **Lookback length: 20** (the default 14 is too twitchy on lower timeframes)
-- **Bubble sensitivity: 65** (raises the threshold so only meaningful contests appear)
-- **Show labels: On** (the labels include the volume ratio — worth the screen clutter)
-- **Timeframe: Use on the 1H or 4H** (on the 5-minute, you get noise bubbles every few bars; on daily, signals are too rare)
+- **Whether it appears** — if it appears, the bar's level of contested volume was unusual based on your selected percentile rank.
+- **Size** — how big the bar's magnitude source is compared to the last 100 bars.
 
-If you're trading index futures or major forex pairs, keep the default 14 lookback. The 20 works better for crypto and individual equities where volume patterns are more erratic.
+Magnitude sources available:
+
+- *Total delta volume* — total cumulative volume delta (the default).
+- *Contested volume* — total contested volume.
+- *Total volume* — simply how much traded.
+- *Net delta* — how directional the bar was end to end, ignoring churn that reversed inside it.
+
+Hover any bubble and the tooltip gives you all four, the trigger rank, and in Time Of Day mode both the slot's normal level and how today is running against it.
+
+**Settings and How to Tune Them**
+
+Time Of Day normalization can account for how busy today is. Turn the session-level setting down and a bubble means the bar was unusual for the time of day. Turn it up and the bar has to be unusual for the time of day *and* for today's own level. Standard mode sits outside this entirely and ranks each bar against the bars right behind it.
+
+The other meaningful choice is the magnitude source described above, which controls what the bubble's size represents rather than whether it fires. There is no setting that is universally "best" — the right configuration depends on what you want the bubble to mean.
 
 **How to use it in a strategy**
 
-Here's the entry logic that made the most sense in my testing:
+The bubbles don't tell you direction — they tell you when the current direction is contested. That makes them a filter and a context layer rather than an entry signal on their own.
 
-1. **Trend confirmation**: Only trade in the direction of the 200 EMA or a strong MACD trend. The bubbles don't tell you direction — they tell you when the current direction is contested.
-2. **Entry**: Wait for a large bubble to form (top 20% size percentile). Then wait for price to close back above (in an uptrend) or below (in a downtrend) the bubble's high/low.
-3. **Exit**: The next bubble in the opposite direction, or a trailing stop at 1.5× ATR.
+In practice the tool is used to find areas of interest. A cluster of bubbles marks a price where the two sides repeatedly disagreed, and that level often matters again on a return. A large bubble late in an extended move is the more interesting read: a push meeting real opposition rather than clean continuation.
 
-The key insight is that you're not buying the bubble itself — you're buying the resolution *after* the contest. The bubble marks the battlefield; you enter when one side wins.
-
-In backtests on BTC/USD 4H from January to August 2026, this approach caught the major trend reversals in March and June with reasonable timing. It whipsawed during the May consolidation, but the sensitivity settings above reduced those false signals by about 40%.
+Because the tooltip exposes all four volume measures plus the trigger rank, you can compare what triggered the bubble against how directional the bar actually was, and use that to judge whether the contest resolved or stalled.
 
 **Pros and cons**
 
 **Pros:**
-- Volume context directly on price — no sub-pane eye gymnastics
-- Bubble size gives you a meaningful "fight intensity" metric
-- Works across asset classes without heavy re-tuning
-- No repainting in real-time bars (confirmed on multiple instruments)
+- Volume context plotted directly at the price where the activity occurred, not in a sub-pane
+- Bubble size gives a magnitude measure against the last 100 bars
+- Contested, total and directional volume are interchangeable as trigger and size inputs
+- Time Of Day normalization removes the intraday volume curve as a confound
+- Tooltip exposes the full set of measures behind each bubble
 
 **Cons:**
 - No directional bias built in — you need confluence from other tools
-- On lower timeframes, bubble fatigue sets in fast
-- The label text can clutter the chart if you're using tight stops
-- No built-in alerts for bubble formation (you'll need to set your own)
+- Time Of Day needs a few sessions of each clock slot before it prints anything, so a freshly loaded chart starts empty at the left edge
+- Intrabar precision depends on lower-timeframe data, which may vary by symbol and account plan
 
 **Who it's for**
 
-This is a tool for swing traders and position traders who already understand trend structure. If you're a scalper looking for a holy grail entry signal, skip it. If you're a day trader who uses the 1H or 4H and wants to understand *why* a trend is stalling before it reverses, this is worth your time.
-
-It's also excellent for traders who use MACD or RSI divergence but want volume confirmation that the divergence means something. The bubbles act as a filter — divergence without a contested volume bubble is often a false signal.
+This is a tool for traders who already understand trend structure and want to see where a move is meeting real opposition. It's also useful for anyone using divergence-style analysis who wants volume context for whether a disagreement actually happened. If you're looking for a standalone entry signal, this isn't it — it marks the battlefield, not the winner.
 
 **Alternatives worth considering**
 
-If you want the same concept but with directional bias baked in, look at Volume Profile Fixed Range or the lesser-known "Volume Footprint" indicators. For pure trend analysis, the Supertrend or Vortex Indicator give you cleaner trend states without the volume nuance. And if you're already using OBV, this is a strict upgrade in terms of visualization.
+If you want the same concept with directional bias baked in, look at volume profile tools. For pure trend state, Supertrend or the Vortex Indicator give you cleaner trend reads without the volume nuance. And if you're already on OBV, this is a different and more granular view of the same underlying question.
 
 **FAQ**
 
 **Does this repaint on historical bars?**
-No. Once a bubble prints, it stays. The lookback calculation uses closed bars only.
+The indicator does not state that it repaints. The three available alerts — any bubble, bubbles on a positive net delta bar, and bubbles on a negative one — all initiate on bar close.
 
 **Can I use it for crypto and stocks equally?**
-Yes, but adjust the sensitivity. Crypto needs higher sensitivity (70+), stocks work fine at default.
+The indicator itself is not restricted by asset class. Intrabar precision depends on lower-timeframe data, which may vary by symbol and by account plan.
 
 **Does it work on lower timeframes?**
-Technically yes, but practically it generates too many signals. Stick to 1H and above.
-
-**Is it good for options trading?**
-Actually yes — the contested zones often align with high implied volatility expansion points, which is useful for premium selling.
+Time Of Day normalization falls back to Standard on daily and above and on non-time-based charts. Without lower-timeframe data the indicator still works, but with much less precision.
 
 **Final verdict**
 
-Contested_Volume_Bubbles earns a solid ⭐⭐⭐⭐ (4/5). It loses a star because it doesn't provide direction and lacks native alerts — two things that would make it exceptional rather than just very good. But as a volume-context overlay for trend traders, it's one of the better options on TradingView. The visual design is thoughtful, the math is sound, and it fills a genuine gap between raw volume and trend analysis.
+Contested Volume Bubbles is a genuinely distinct take on volume: instead of asking how much traded, it asks how much traded on the losing side, and places that answer at the price where it happened. Time Of Day normalization and the interchangeable trigger/size inputs are the parts that make it more than a repackaged oscillator. It doesn't give you direction, and Time Of Day needs history before it prints — but as a volume-context overlay for trend traders, it fills a real gap between raw volume and trend analysis.
 
-If you've been trading on price action alone and wondering why your MACD signals keep failing at key levels, this tool will show you the volume battles you've been missing. That alone is worth the install.
-
-## Frequently Asked Questions
-
-### Is Contested_Volume_Bubbles worth it?
-
-Based on testing across multiple timeframes, Contested_Volume_Bubbles delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

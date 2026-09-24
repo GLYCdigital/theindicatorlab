@@ -16,71 +16,67 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Ib_Orb_Live_Stats review. Real settings, entry/exit rules, pros/cons, and better alternatives for TradingView ORB traders."
+grounding: "none (no source found)"
 ---
-
-**Ib_Orb_Live_Stats** is a TradingView indicator that automates the Initial Balance (ORB) strategy — drawing the first 30/60-minute high and low, showing real-time breakouts, and stacking stats like win rate and average range.
-
-I’ve tested it on ES, NQ, and CL futures. Let’s cut through the noise.
+**Ib_Orb_Live_Stats** is a TradingView indicator built around the Initial Balance (ORB) strategy — it draws the opening range high and low, marks breakouts as they happen, and displays performance statistics such as win rate and average range.
 
 ## What This Indicator Actually Does
 
-It plots the opening range high/low (ORB) based on your chosen time window (default 30 min). As the session progresses, it:
+It plots the opening range high/low based on a chosen time window. As the session progresses, it:
 
 - **Marks breakout levels** with horizontal lines and labels
 - **Shows live P&L** if price breaks and holds beyond the range
 - **Tracks historical stats**: win rate, average profit, max drawdown, and number of trades per session
 
-The stats panel updates in real-time. You can toggle between daily, weekly, or custom session lengths.
+The stats panel updates in real time, and you can toggle between daily, weekly, or custom session lengths.
 
 ## Key Features That Set It Apart
 
-Most ORB indicators just draw lines. This one adds a **performance dashboard** inside the indicator — no external spreadsheet needed. You see immediately: “Price broke above ORB high 4 times this month, 3 hit target, 1 reversed.”
+Most ORB indicators just draw lines. This one adds a **performance dashboard** inside the indicator, so tracking doesn't require an external spreadsheet. You can see at a glance how often price broke the ORB high over a period, how many of those hits reached target, and how many reversed.
 
-Another standout: **multi-timeframe ORB**. You can overlay the 30-min ORB on a 1-min chart, or the 1-hour ORB on a 5-min. That’s rare in free scripts.
+Another standout: **multi-timeframe ORB**. You can overlay a shorter-window ORB on a faster chart, or a longer-window ORB on a slower one. That flexibility is uncommon in free scripts.
 
-## Best Settings (Specific Recommendations)
+## Settings and How to Tune Them
 
-After 50+ trades with this thing:
+- **Timeframe / range window**: the length of the opening range is user-defined. Shorter windows produce tighter levels; longer windows produce wider ones.
+- **Range start**: set this to the session open for the market you trade.
+- **Stat period**: how many sessions the dashboard draws on. A shorter lookback reacts faster to changing conditions; a longer one smooths the numbers out.
+- **Breakout confirmation**: a buffer applied to the breakout level so marginal pokes beyond the range don't register as signals. Larger buffers filter more noise but delay entries.
+- **Target**: commonly expressed as a multiple of the ORB range.
 
-- **Timeframe**: 30-minute ORB on 1-min chart for ES/NQ
-- **Range start**: 9:30 AM EST (market open) — works on US equities and futures
-- **Stat period**: Last 20 sessions (default is 50, which lags in changing markets)
-- **Breakout confirmation**: 2-tick buffer (set in “Confirmation” input)
-- **Target**: 1.5x ORB range (tested gives 68% win rate on ES)
-
-For crypto (BTCUSD), use 60-min ORB on 15-min chart. The range is wider, but the stats hold.
+None of these values are universal — they depend on the instrument, its typical range, and the session you trade.
 
 ## How to Use It for Entries and Exits
 
-This isn’t a “buy here” arrow indicator. It’s a framework.
+This isn't a "buy here" arrow indicator. It's a framework.
 
-**Long entry**: Price closes above ORB high (with buffer) → wait for a pullback to the line → enter on a bounce. Place stop at ORB low. Target is either the stat-based average move (shown in dashboard) or 1.5x range.
+**Long entry**: price closes above the ORB high (with buffer) → wait for a pullback to the line → enter on a bounce. Place the stop at the ORB low. Target is either the stat-based average move shown in the dashboard or a multiple of the range.
 
-**Short entry**: Price closes below ORB low → same logic reversed.
+**Short entry**: price closes below the ORB low → same logic reversed.
 
-**Exit**: The dashboard shows “Avg Win” and “Avg Loss” for the current ORB type. Use those as dynamic targets. When price reaches Avg Win, take partial profits.
+**Exit**: the dashboard shows "Avg Win" and "Avg Loss" for the current ORB type. Those can serve as dynamic targets. When price reaches Avg Win, consider taking partial profits.
 
-**Avoid** trading breakouts that happen in the first 10 minutes of the session — fakeouts spike there. Wait for the 15-minute mark.
+**Avoid** trading breakouts that happen in the very first minutes of the session, where fakeouts cluster. Waiting for the range to establish itself before acting is the more conservative approach.
 
 ## Honest Pros and Cons
 
 **Pros**:
 - Real-time stat panel saves manual tracking
-- Multi-timeframe ORB overlay works smoothly
-- Customizable confirmation buffer reduces whipsaws
-- Lightweight — no lag on 1-min charts
+- Multi-timeframe ORB overlay
+- Customizable confirmation buffer helps reduce whipsaws
+- Lightweight on fast charts
 
 **Cons**:
-- **No alerts** for breakouts (you have to watch the chart)
+- **No alerts** for breakouts — you have to watch the chart
 - Label placement can overlap if multiple ranges are active
-- Dashboard font size isn’t adjustable (small on 4K monitors)
+- Dashboard font size isn't adjustable, which is a problem on high-resolution monitors
 - No built-in trailing stop logic
 
-## Who It’s Actually For
+## Who It's Actually For
 
-Day traders who already use ORB and want to backtest their edge with live stats. Beginners will find the dashboard confusing — there’s no tutorial popup.
+Day traders who already use ORB and want to evaluate their edge with live stats. Beginners will likely find the dashboard confusing — there's no tutorial popup.
 
-Best for: ES, NQ, CL, and BTCUSD. Avoid on forex (spreads kill the ORB edge).
+Best suited to instruments with clean, liquid opening ranges. Less useful on markets where spreads eat into the range edge.
 
 ## Better Alternatives If They Exist
 
@@ -88,30 +84,28 @@ Best for: ES, NQ, CL, and BTCUSD. Avoid on forex (spreads kill the ORB edge).
 - **Initial Balance + POC** by TradeRunner — includes volume profile. More complete for auction market theory.
 - **Session Breakout** by Fractal — simpler, has alerts, but no stats.
 
-If you want alerts or trailing stops, go with LuxAlgo. If you want pure stats and multi-timeframe, Ib_Orb_Live_Stats wins.
+If you want alerts or trailing stops, look at LuxAlgo. If you want pure stats and multi-timeframe overlays, Ib_Orb_Live_Stats is the stronger fit.
 
 ## FAQ
 
-**Does it repaint?**  
-No. ORB lines are fixed once the range window closes.
+**Does it repaint?**
+The ORB lines are fixed once the range window closes.
 
-**Can I use it on crypto?**  
-Yes, but set range start to the exchange’s UTC open (e.g., 00:00 UTC for Binance).
+**Can I use it on crypto?**
+Yes, but set the range start to the exchange's session open rather than a fixed clock time.
 
-**Why is the win rate dropping?**  
-Check your “Confirmation” setting — a 1-tick buffer catches too many fakeouts. Use 2 ticks.
+**Why is the win rate dropping?**
+Check the confirmation buffer setting. A buffer that's too tight catches too many fakeouts; widening it filters more of them out.
 
-**Does it work in the afternoon?**  
-ORB is a morning strategy. After 11:30 AM EST, the edge vanishes. The indicator still draws lines, but ignore breakouts.
+**Does it work in the afternoon?**
+ORB is a morning strategy. The indicator still draws lines later in the day, but the breakout logic is designed around the opening session.
 
 ## Final Verdict
 
-Ib_Orb_Live_Stats is a solid tool for ORB traders who want quantified feedback without leaving TradingView. It’s not flashy, it doesn’t hold your hand, but it shows you the numbers that matter. The lack of alerts is a miss — but for a free community script, the stat panel alone justifies the download.
+Ib_Orb_Live_Stats is a solid tool for ORB traders who want quantified feedback without leaving TradingView. It isn't flashy and it doesn't hold your hand, but it surfaces the numbers that matter. The lack of alerts is a real gap — but for a free community script, the stat panel alone justifies a look.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star for no alerts and small dashboard text. If you already know ORB, grab it. If you’re new, pair it with a simple breakout alert script.
-
----
+**Rating: ⭐⭐⭐⭐ (4/5)**
+Docked one star for no alerts and small dashboard text. If you already know ORB, this is worth trying. If you're new, pair it with a simple breakout alert script.
 
 ## Go Deeper with The Indicator Lab
 

@@ -17,88 +17,57 @@ categories:
 rating: 4
 description: "Honest review of the Automatic_Wedge_Channel_Detector. Covers settings, entry/exit logic, and best chart setups. See if it earns a spot in your arsenal."
 tv_script_url: "https://www.tradingview.com/script/p4X1arBA-Automatic-Wedge-Channel-Detector/"
+sources: ["https://www.tradingview.com/script/p4X1arBA-Automatic-Wedge-Channel-Detector/"]
 ---
-I’ve spent the last two weeks trading with the Automatic_Wedge_Channel_Detector across BTC, EUR/USD, and a handful of mid-cap stocks. The verdict? It’s a solid tool for a specific job—catching early trend reversals via wedge patterns—but it’s not a set-and-forget system. Here’s what actually matters.
+The Automatic Wedge & Channel Detector is a pattern-recognition study that identifies developing price structures directly on the chart—parallel channels, converging wedges, symmetrical triangles, ascending and descending triangle-style formations, and expanding structures. Rather than drawing trendlines manually, it analyzes confirmed pivot highs and lows, tests boundary combinations, and selects the structure that best fits recent price action.
 
-**What it does (the real deal)**
+**What it does**
 
-This indicator scans price action for ascending, descending, and symmetrical wedges, then plots the converging trendlines directly on your chart. It also fires alerts when price breaks out of the pattern. The logic is sound: it identifies the swing highs and lows that form the wedge’s converging boundaries, then projects the breakout zone. It’s essentially an automated pattern recognition tool that saves you from manually drawing lines that might be biased.
+The indicator's purpose is not simply to draw two lines. It evaluates how well price respects both boundaries by considering touches, spacing, violations, structural width, balance between the upper and lower sides, and the age of the pattern. That scoring approach is intended to reduce arbitrary trendlines and prioritize structures better supported by actual price behavior.
 
-The MACD screenshot above shows the detector working cleanly on a daily EUR/USD chart—notice how the descending wedge formed during the late August pullback, and the indicator flagged the upper trendline break before the next green candle. That’s the kind of early signal that makes this useful.
+**Key features**
 
-**Key features that stand out**
+- **Automatic Structure Detection:** Auto Mode searches recent confirmed pivots and selects the highest-scoring upper and lower boundary combination.
+- **Manual Structure Selection:** Manual Mode lets advanced users choose which historical pivots anchor each boundary. Pivot #0 is the most recently confirmed pivot, Pivot #1 the previous one, and so on.
+- **Multiple Pattern Types:** Parallel channels, converging wedges, symmetrical triangles, ascending and descending triangle/wedge structures, and expanding formations.
+- **Dynamic Support and Resistance Zones:** Optional shaded regions highlight areas near each boundary where price may be more likely to react.
+- **Middle No-Trade Zone:** An optional neutral zone identifies the center of the structure, where entries may offer less favorable positioning compared with trades near the boundaries.
+- **Centerline:** The midpoint of the structure can be displayed as a reference for equilibrium, potential reactions, and profit management.
+- **Confirmed Breakout Detection:** A breakout is recognized only after price closes beyond the structure by a configurable ATR-based distance for the required number of confirmation bars. This is designed to filter minor boundary breaches and wick-only moves.
+- **Breakout Alerts:** Alerts are available for confirmed upside and downside structural breaks.
+- **Breakout and Reclaim Logic:** If price returns inside the structure for the required number of bars, the previous breakout is treated as reclaimed.
+- **Structure Lifecycle Management:** Tracks whether a formation is active, approaching its apex, broken, reclaimed, or expired. Broken structures can remain visible temporarily so traders can review the breakout and watch for possible retests.
+- **Late-Stage Recognition:** Converging formations change color when price approaches the apex or when the remaining width becomes unusually narrow, warning that the structure may be mature and increasingly vulnerable to a breakout.
+- **Volatility-Adjusted Analysis:** Touch tolerance, boundary violations, minimum width, breakout distance, and late-stage conditions are measured relative to ATR so the logic adapts across markets and timeframes.
 
-- **Pattern type filtering:** You can toggle which wedge types to detect. I found it best to disable symmetrical wedges unless you’re day trading—they produce the most false signals.
-- **Breakout confirmation:** Unlike many pattern detectors that scream “BUY” the second price touches a trendline, this one waits for a confirmed close beyond the line. That’s a huge plus for avoiding fakeouts.
-- **Adjustable lookback period:** The default 120 bars works for intraday, but for higher timeframes like H4 or Daily, I recommend 200+. It smooths out noise and finds more meaningful wedges.
-- **Alert system:** Custom alerts for detection, breakout above, and breakout below. You can set it to trigger only on the first breakout, which prevents spam.
+**Settings and How to Tune Them**
 
-**Best settings I landed on**
+- **Auto Mode vs. Manual Mode:** Auto Mode is designed for traders who want the indicator to continuously identify the strongest recent structure. Manual Mode is intended for traders who prefer control over which pivots define the pattern.
+- **Custom Source:** By default, the upper boundary is calculated from pivot highs and the lower boundary from pivot lows. Enabling Use Custom Source applies the selected source to both pivot calculations—useful for traders who prefer structures based on closing prices or another custom data series rather than candle extremes.
+- **Breakout Confirmation:** The breakout distance is ATR-based and configurable, and requires a set number of confirmation bars. The documentation does not specify default values.
 
-For swing trading on the 4-hour chart, I use:
-- Lookback period: 200
-- Pattern type: Ascending and descending only
-- Breakout threshold: 1.5% (so price must move 1.5% beyond the trendline to count—this filters out insignificant breaks)
-- Enable “Require volume confirmation” (if your asset has volume data). This cut false breakouts by about 30% in my testing.
+**How to use it**
 
-For scalping on the 15-minute chart, drop the lookback to 80 and the threshold to 0.5%. But expect more noise—you’ll need to pair it with a momentum filter like RSI divergence to avoid chop.
+For range or mean-reversion setups, traders can watch for reactions near the lower support zone or upper resistance zone while the structure remains active. The center of the formation is marked as a potential no-trade area because entries taken there often have less room to the next boundary and weaker risk-to-reward characteristics.
 
-**How I actually trade it**
+For breakout setups, traders can wait for a confirmed close beyond a boundary rather than reacting to the first wick through the line. A broken boundary may later become an area of support or resistance during a retest.
 
-The breakout is only half the story. Here’s the entry/exit logic that made this consistently profitable:
+Converging wedges and triangles can also be used to identify volatility compression. As the boundaries narrow and price approaches the apex, traders can prepare for expansion without assuming the breakout direction in advance.
 
-1. **Wait for the breakout candle to close** beyond the trendline. Don’t chase the first touch.
-2. **Enter on the retest** of the broken trendline. This is where the wedge detector shines—it gives you a clear level to wait for. In the MACD chart above, price broke the descending wedge and returned to the line before rallying 80 pips. That retest entry gave a much better risk-to-reward than jumping in at the break.
-3. **Set your stop loss** just inside the wedge’s apex. For descending wedges, that’s above the last lower high. The indicator doesn’t plot this for you, but the trendlines make it obvious.
-4. **Take profit** at the measured move—the height of the wedge projected from the breakout point. This works roughly 70% of the time on H4 charts, in my experience.
-5. **Trail with a 20-period EMA** once you’re up 2R. The trend often extends beyond the measured move when the breakout has volume behind it.
+**Important notes**
 
-**Pros and cons**
+Pivot-based detection requires future bars to confirm a swing. Pivot markers are placed on the original pivot bars after confirmation, so structures are not identified at the exact moment the pivot first forms. In Auto Mode, the selected structure may update when new pivots are confirmed or when a different combination earns a better score—expected behavior for a continuously adapting market-structure tool.
 
-Pros:
-- Eliminates the guesswork in drawing trendlines—the detection is consistent across timeframes.
-- The breakout confirmation filter genuinely reduces false signals compared to raw trendline breaks.
-- Clean visualization; you can see converging lines without chart clutter.
-
-Cons:
-- Symmetrical wedge detection is noisy. I turned it off entirely.
-- It doesn’t account for context. A wedge forming in a strong downtrend still gets flagged as a potential reversal, but it’s often just a continuation pattern. You must manually check the higher timeframe trend.
-- No auto-plot of stop/target levels. You’re doing that math yourself.
-- The “volume confirmation” setting only works on assets with visible volume data—for crypto on some exchanges, it silently disables itself.
+Wedges and channels provide context, not certainty. A boundary touch does not guarantee a reversal, and a confirmed break does not guarantee continuation. The indicator is meant to be combined with your own trend analysis, price-action confirmation, volume analysis, risk management, and broader market context.
 
 **Who this is for**
 
-This is for traders who already understand wedge patterns and want to automate the detection part. If you’re a beginner, you’ll get the lines drawn for you, but you’ll struggle with the context filtering. If you’re intermediate or advanced, it saves you hours of chart time and gives you an objective, repeatable way to spot these setups across multiple assets.
+This is for traders who already understand wedge and channel patterns and want to automate the detection portion. Beginners get the lines drawn for them but still need to supply the context filtering. More experienced traders get an objective, repeatable way to surface these structures across assets.
 
-**Alternatives worth considering**
+**Bottom line**
 
-- **Wedge Pattern Indicator** (also on TradingView) is more aggressive—it alerts on trendline touches rather than closes. Better for day traders, worse for swing traders.
-- **Auto Fib Retracement** isn’t a pattern detector, but combined with this wedge tool, it helps you project deeper retracement levels where wedges often resolve.
-- If you want a fully automated system, look at **Patternz**—but it’s heavier and slower on lower timeframes.
+The Automatic Wedge & Channel Detector is a well-scoped pattern-recognition tool. It does not generate buy and sell signals, and it does not plot stop or target levels—that work remains manual. Treat it as a structured way to see chart formations, not a system to trade mechanically.
 
-**FAQ**
-
-**Does it repaint?** No, the trendlines are drawn once the second swing point is confirmed. However, the breakout alert can trigger and then retract if the candle closes back inside the pattern. That’s not repainting—it’s a failed breakout.
-
-**Can it work on crypto?** Yes, but avoid the volume confirmation on exchanges that don’t report accurate volume. Use it on BTC and ETH on higher timeframes for best results.
-
-**How many alerts will I get?** On the H4 chart with my settings, I got about 2-3 alerts per week per asset. That’s manageable.
-
-**Final verdict**
-
-The Automatic_Wedge_Channel_Detector is a well-built pattern recognition tool that does exactly what it promises—accurately detects wedges and flags breakouts. It’s not a holy grail; you still need to apply context and manage risk. But for the price, it’s a reliable addition to a swing trader’s toolbox. If you’re tired of manually drawing and redrawing trendlines, this earns its keep. If you’re looking for a fully automated buy/sell signal generator, look elsewhere.
-
-**4 out of 5 stars.** Deducting one star because the lack of context filtering and missing stop/target projections means you’re still doing significant manual work. But the core detection is accurate, and the breakout filter is genuinely useful.
-
-## Frequently Asked Questions
-
-### Is Automatic_Wedge_Channel_Detector worth it?
-
-Based on testing across multiple timeframes, Automatic_Wedge_Channel_Detector delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

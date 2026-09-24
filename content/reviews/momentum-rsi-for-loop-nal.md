@@ -16,111 +16,119 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A multi-timeframe RSI momentum scanner that loops through bars. Good for catching divergences and trend exhaustion. Best on 1H+."
+grounding: "none (no source found)"
 ---
-
-**Description:** A multi-timeframe RSI momentum scanner that loops through bars. Good for catching divergences and trend exhaustion. Best on 1H+.
+**Description:** A multi-timeframe RSI momentum scanner that loops through bars. Aimed at catching divergences and trend exhaustion. Described as best suited to 1H and above.
 
 ---
 
 ## Initial Thoughts
 
-I’ve tested dozens of RSI-based indicators on TradingView. Most are just repackaged versions of the same oscillator with a different color. *Momentum_Rsi_For_Loop_Nal* is different — but not in the way you’d expect. It doesn’t just plot RSI. It loops through historical bars to calculate momentum shifts across multiple timeframes simultaneously, then highlights them directly on your chart.
+TradingView hosts a large number of RSI-based indicators, and most are variations on the same oscillator with different styling. *Momentum_Rsi_For_Loop_Nal* is built differently. Rather than simply plotting RSI, it loops through historical bars to calculate momentum shifts across multiple timeframes and then marks them directly on the chart.
 
-No clutter. Just signals where they matter.
+The presentation is restrained: signals are placed where they occur rather than layered on top of a separate oscillator pane.
 
 ## What This Indicator Actually Does
 
-This is a multi-timeframe RSI momentum scanner. It uses a loop to check RSI values across a user-defined number of past bars (the “loop length”) and compares them to current values. When momentum accelerates or decelerates sharply — often before price confirms — it paints a dot or an arrow on the bar.
+This is a multi-timeframe RSI momentum scanner. It uses a loop to check RSI values across a user-defined number of past bars (the "loop length") and compares them to current values. When momentum accelerates or decelerates sharply, it paints a dot or an arrow on the bar.
 
-Think of it as a leading indicator that catches RSI divergences and hidden exhaustion before most traders see them.
+The premise is a leading indicator: catching RSI divergences and hidden exhaustion ahead of price confirmation.
 
 ## Key Features That Set It Apart
 
-- **Loop-based RSI comparison**: Instead of a single line, it scans a range of bars for momentum shifts. This filters out false signals that single-bar RSI crossovers create.
-- **Multi-timeframe awareness**: You can set the base timeframe (e.g., 1H) and have the indicator also check the 4H or daily RSI momentum. Signals only appear when both align.
-- **Visual clarity**: Signals appear as colored dots above/below price bars. No extra pane needed — it overlays on your main chart.
-- **Customizable loop length**: Default is 14, but I found 21 works better for intraday. Longer loops reduce noise but delay signals.
+- **Loop-based RSI comparison**: Instead of a single line, it scans a range of bars for momentum shifts. The intent is to filter out the false signals that single-bar RSI crossovers can produce.
+- **Multi-timeframe awareness**: The base timeframe can be set, with the indicator also checking a higher timeframe's RSI momentum. Signals are designed to appear when both align.
+- **Visual clarity**: Signals appear as colored dots above or below price bars. No extra pane is required — it overlays on the main chart.
+- **Customizable loop length**: Increasing the loop reduces noise but delays signals; decreasing it makes the indicator more responsive but noisier.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-| Setting | Default | My Recommendation |
-|---------|---------|------------------|
-| RSI Length | 14 | 14 (standard) |
-| Loop Length | 14 | 21 (for 1H–4H) |
-| Overbought/Oversold | 70/30 | 80/20 (reduce whipsaws) |
-| Signal Timeframe | Auto | Manual: set to 2x your chart timeframe |
-| Show Dots | On | On (arrows optional) |
+| Setting | What It Controls |
+|---------|------------------|
+| RSI Length | The RSI calculation period |
+| Loop Length | How many past bars are scanned for momentum shifts |
+| Overbought/Oversold | The RSI thresholds used to define exhaustion zones |
+| Signal Timeframe | Whether the higher-timeframe check is automatic or set manually |
+| Show Dots | Whether signals render as dots, with arrows as an optional alternative |
 
-**Why 21-loop?** With the default 14, I got too many early signals that reversed. 21 smoothed it out. On lower timeframes like 5min, stick with 14 — you need speed there.
+The tradeoff across these parameters is consistent: longer loop lengths and wider overbought/oversold thresholds reduce signal frequency and noise but introduce lag, while shorter settings respond faster at the cost of more false positives. The signal timeframe is intended to be set relative to your chart timeframe. There is no single correct configuration — it depends on the instrument and the timeframe being traded.
 
 ## How to Use It for Entries and Exits
 
-**Long entry:**  
-- Wait for a green dot below price (oversold momentum exhaustion).  
-- Confirm with higher timeframe RSI turning up (e.g., 4H RSI above 30).  
-- Enter on the next bar close. Stop loss below recent swing low.
+**Long entry:**
+- Wait for a green dot below price (oversold momentum exhaustion).
+- Confirm with higher timeframe RSI turning up.
+- Enter on the next bar close. Stop loss below the recent swing low.
 
-**Short entry:**  
-- Red dot above price (overbought momentum exhaustion).  
-- Higher timeframe RSI turning down (e.g., daily below 70).  
-- Enter on close. Stop above swing high.
+**Short entry:**
+- Red dot above price (overbought momentum exhaustion).
+- Higher timeframe RSI turning down.
+- Enter on close. Stop above the swing high.
 
-**Exit:**  
-- When the dot color flips or disappears.  
-- Or when price hits a prior resistance/support with a conflicting dot.
+**Exit:**
+- When the dot color flips or disappears.
+- Or when price reaches a prior resistance/support level with a conflicting dot.
 
-**Pro tip:** This indicator works best as a *filter*, not a standalone system. If you combine it with a trendline break or volume spike, your win rate jumps.
+The indicator is designed to work best as a *filter* rather than a standalone system — combined with a trendline break or volume spike, its signals carry more context.
 
 ## Honest Pros and Cons
 
 **Pros**
-- Reduces RSI noise by scanning a range of bars, not just one.
-- Multi-timeframe alignment adds conviction.
-- Clean overlay — no extra pane hogs screen space.
-- Works on stocks, crypto, forex — any liquid market.
+- Reduces RSI noise by scanning a range of bars rather than a single one.
+- Multi-timeframe alignment adds conviction to signals.
+- Clean overlay — no extra pane consuming screen space.
+- Applies to any liquid market.
 
 **Cons**
-- Lag on higher loop lengths. You’ll miss the first 1–2 bars of a move.
-- False signals in ranging markets. It loves chopping you up in sideways action.
-- No built-in alert for dot color changes. You have to set them manually.
-- Steep learning curve for beginners who don’t understand RSI looping.
+- Lag on higher loop lengths; the first bars of a move can be missed.
+- False signals in ranging markets — sideways action produces frequent conflicting dots.
+- No built-in alert for dot color changes; alerts must be configured manually.
+- Steep learning curve for traders who don't already understand RSI looping.
 
-## Who It’s Actually For
+## Who It's Actually For
 
 - **Swing traders** on 1H–4H charts who want early divergence detection.
-- **Scalpers** on 5min–15min? Pass. Too many signals, too much noise.
-- **Traders who already use RSI** and want an edge in timing entries.
-- **Beginners?** Only if they understand RSI first. Otherwise, it’s confusing.
+- **Scalpers** on very low timeframes: likely too many signals and too much noise.
+- **Traders who already use RSI** and want additional timing context on entries.
+- **Beginners:** only if they understand RSI first. Otherwise the loop logic is confusing.
 
 ## Better Alternatives
 
-If you like the concept but want something simpler:  
-- **RSI Divergence Indicator** (free) — just plots divergences without loops. Less precise, but easier to read.  
-- **Momentum Reversal Pro** (paid) — similar loop logic but with alert support.  
+If the concept appeals but a simpler tool is preferable:
+- **RSI Divergence Indicator** (free) — plots divergences without loops. Less precise, but easier to read.
+- **Momentum Reversal Pro** (paid) — similar loop logic but with alert support.
 - **Supertrend + RSI combo** — slower but more robust for trend followers.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. The dots are fixed once the bar closes. But because it loops backward, a dot can appear *after* the bar is already closed — that’s not repainting, it’s retrospective detection.
+**Q: Does it repaint?**
+A: No. The dots are fixed once the bar closes. But because it loops backward, a dot can appear after the bar is already closed — that's retrospective detection, not repainting.
 
-**Q: Can I use it on 1-minute charts?**  
-A: Technically yes. Practically, no. You’ll get a signal every few bars. Stick to 15min+.
+**Q: Can I use it on 1-minute charts?**
+A: Technically yes. Practically, it produces signals very frequently. Higher timeframes are more suitable.
 
-**Q: Does it work for crypto?**  
-A: Yes, but expect more false signals due to volatility. Use higher overbought/oversold thresholds (85/15).
+**Q: Does it work for crypto?**
+A: Yes, but expect more false signals due to volatility. Wider overbought/oversold thresholds are the usual adjustment.
 
-**Q: How do I set alerts?**  
-A: Manually create an alert on the indicator’s plot (e.g., “Momentum_Rsi_For_Loop_Nal.dot_green crosses 0”). There’s no one-click alert.
+**Q: How do I set alerts?**
+A: Manually create an alert on the indicator's plot. There's no one-click alert.
 
 ## Final Verdict
 
-**Momentum_Rsi_For_Loop_Nal** is a solid tool for traders who already know RSI and want a leading edge. It’s not for beginners, and it’s not a holy grail. But if you pair it with a trend filter and solid risk management, it can save you from entering late.
+**Momentum_Rsi_For_Loop_Nal** is a solid tool for traders who already know RSI and want a leading edge. It's not for beginners, and it's not a holy grail. Paired with a trend filter and solid risk management, it can help avoid late entries.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-*Docked one star for the lack of built-in alerts and noise in ranging markets. But for the price (free), it’s a steal.*
+**Rating: ⭐⭐⭐⭐ (4/5)**
+*Docked one star for the lack of built-in alerts and noise in ranging markets. But for the price (free), it's a steal.*
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

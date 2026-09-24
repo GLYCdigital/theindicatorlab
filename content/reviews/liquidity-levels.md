@@ -15,80 +15,82 @@ categories:
   - "07"
   - Technical Analysis
 rating: 4
-description: "Honest Liquidity_Levels review. I tested this indicator for weeks. See how to set it up, trade liquidity sweeps, and avoid false signals."
+description: "Honest Liquidity_Levels review. How to set it up, trade liquidity sweeps, and avoid false signals."
+grounding: "none (no source found)"
 ---
+# Liquidity_Levels Review
 
-I’ve been trading liquidity sweeps for years with manual zones. When I saw **Liquidity_Levels**, I figured I’d give it a run for a few weeks. The verdict? It’s solid—but not a magic wand. Here’s what I found out.
+**Liquidity_Levels** is an indicator built around one specific job: automatically detecting and drawing the zones where price is likely to sweep liquidity—swing highs, swing lows, and the areas where stop hunts tend to cluster. It doesn't attempt to predict direction. It highlights where resting liquidity sits and lets the trader interpret what happens next. On the chart, sell-side liquidity is marked in red above price, buy-side liquidity in green below.
 
 ## What It Actually Does
 
-Liquidity_Levels automatically detects and draws zones where price is likely to sweep liquidity—think highs, lows, and order blocks where stop hunts happen. It doesn’t predict the future; it highlights where big money might be targeting your stops. The chart above shows exactly how it marks these levels: red boxes for sell-side liquidity (above price) and green for buy-side (below price).
+The core function is zone mapping. Rather than manually marking every swing high and low, the indicator draws them for you as they form. The premise is that large participants target clusters of stops sitting just beyond obvious highs and lows, and that having those levels pre-drawn makes it easier to anticipate a sweep before it happens.
 
-## Best Settings I Found
+This is a discretionary tool. It gives you a map, not a signal.
 
-After fiddling with the inputs, here’s what worked for me on BTC/USD 15m and 1h:
+## Settings and How to Tune Them
 
-- **Sensitivity:** Set to 70% (default 50% was too noisy—flagged every tiny wick).
-- **Minimum swing size:** 15 points (keeps out micro-moves that aren’t real levels).
-- **Merge distance:** 3 candles (stops overlapping zones from cluttering the chart).
-- **Show only current session:** ON (unless you want yesterday’s levels lingering).
+The indicator exposes a small set of inputs that control how aggressively it detects and displays levels:
 
-On lower timeframes (1m-5m), drop sensitivity to 50% and merge to 1 candle—you’ll get more, but expect more fakeouts.
+- **Sensitivity** — controls how readily a swing is flagged as a liquidity level. Higher values reduce noise; lower values flag more minor wicks.
+- **Minimum swing size** — filters out micro-moves that don't represent meaningful levels.
+- **Merge distance** — collapses overlapping or near-identical zones so the chart doesn't fill with clutter.
+- **Show only current session** — limits display to the active session rather than carrying prior-session levels forward.
 
-## How I Use It for Entries and Exits
+There is no single "best" configuration. The tradeoff is consistent: looser detection gives you more levels and more noise, tighter detection gives you fewer levels and may miss some. Which side of that tradeoff is right depends on the timeframe and instrument you're trading, and how much chart clutter you're willing to tolerate.
 
-I pair it with price action and a momentum oscillator. Here’s my routine:
+## Using It for Entries and Exits
 
-1. **Wait for a sweep.** Price touches a red liquidity zone above current price. I don’t enter immediately.
-2. **Look for reversal confirmation.** A bullish engulfing candle or a double bottom on the 15m chart next to that zone? That’s my trigger.
-3. **Set stop loss** just beyond the swept level (usually 5-10 ticks).
-4. **Target** the next liquidity zone in the opposite direction—or a 1:2 risk-reward if no zone is nearby.
+The tool is designed to be paired with price action rather than used alone. A typical workflow:
 
-For exits: if price hits a green buy-side zone and stalls, I take partial profits. The indicator repaints zones slightly as new swings form, so don’t marry a level.
+1. **Wait for a sweep.** Price touches a liquidity zone. No entry yet—the touch itself is not the signal.
+2. **Look for confirmation.** A reversal candle or a structural pattern forming at the zone is what turns a sweep into a setup.
+3. **Place the stop** just beyond the swept level.
+4. **Target** the next liquidity zone in the opposite direction, or a fixed risk-reward if no opposing zone is nearby.
 
-## Honest Pros and Cons
+For exits, a common approach is taking partial profits when price reaches an opposing liquidity zone and stalls.
+
+One caveat worth stating plainly: the indicator is not static. Zones shift as new swing highs and lows form, so a level you're trading against can move. Treating any zone as permanent is a mistake.
+
+## Pros and Cons
 
 **Pros:**
-- Saves hours of manual zone drawing. I used to mark these by hand—this is 80% as accurate and 10x faster.
-- Works across all timeframes. I tested it on 5m, 15m, 1h, 4h—consistent performance.
-- Clean visuals. Red/green boxes are easy to read at a glance.
+- Replaces manual zone drawing, which is slow and easy to do inconsistently.
+- Works across timeframes—intraday through swing charts.
+- Clean, readable visuals. The red/green box scheme is legible at a glance.
 
 **Cons:**
-- False signals in ranging markets. During low volatility, it draws zones that never get tested. I’ve learned to ignore them.
-- Repaints slightly. Zones shift a few points when new highs/lows form. Not a dealbreaker, but annoying if you’re scalping.
-- No alert system. You have to watch the chart—no push notification when a sweep happens.
+- **Ranging markets produce false levels.** In low-volatility conditions, it will draw zones that never get tested. These need to be filtered by the trader.
+- **Zones shift.** As new swings form, previously drawn zones can move. This matters most on fast timeframes.
+- **No alerts.** There's no push notification when a sweep occurs—you have to be watching the chart.
 
-## Who It’s Actually For
+## Who It's For
 
-This is for **swing and intraday traders** who already understand liquidity concepts. If you’re a beginner, skip it until you can spot a stop hunt manually—otherwise, the indicator will confuse you. It’s perfect for ICT/SMC traders or anyone who wants to automate zone drawing without paying for a premium suite.
+This is a tool for **swing and intraday traders who already understand liquidity concepts**. If you can't identify a stop hunt on a bare chart, the indicator won't teach you—it will just add boxes to a chart you don't yet know how to read. It fits naturally into an ICT/SMC-style approach, or for anyone who wants automated zone drawing without paying for a full premium suite.
 
-## Better Alternatives
+## Alternatives Worth Considering
 
-- **Liquidity Voids** by LuxAlgo: More repaint but includes volume profile integration. Costs a subscription.
-- **Smart Liquidity Levels** (free on TradingView community): Simpler, no repaint, but fewer customization options. I’d start there if you’re on a budget.
-- **Manual drawing** (free): Still better than any indicator if you understand market structure. But it’s slower.
+- **Liquidity Voids** (LuxAlgo): includes volume profile integration, but requires a subscription.
+- **Smart Liquidity Levels** (free, TradingView community): simpler, with fewer customization options.
+- **Manual drawing** (free): still the most flexible option if you understand market structure—just slower.
 
 ## FAQ
 
-**Does Liquidity_Levels repaint?**  
-Yes, slightly. Zones update when a new swing high/low forms. On 1h+ timeframes, it’s negligible.
+**Does it repaint?**
+Zones update as new swing highs and lows form. The effect is more noticeable on lower timeframes.
 
-**Can I use it for crypto?**  
-Yes. I tested on BTC, ETH, and SOL. Works fine, but crypto volatility means more zones—tighten sensitivity.
+**Can it be used on crypto?**
+Yes. Crypto volatility produces more zones, so detection typically needs to be tightened.
 
-**Is it good for scalping?**  
-Not really. The repaint and lag on lower timeframes make it risky. Stick to 15m or higher.
+**Is it suitable for scalping?**
+The zone shifting and lag on lower timeframes make it a poor fit for very short holding periods.
 
-**Does it include order blocks?**  
-No. It only marks liquidity levels (swing highs/lows). For order blocks, look at a separate indicator.
+**Does it include order blocks?**
+No. It marks liquidity levels only—swing highs and lows. Order blocks require a separate tool.
 
 ## Final Verdict
 
-Liquidity_Levels is a **solid 4/5**. It does one thing well—drawing liquidity zones automatically—and saves time without replacing your brain. If you already trade liquidity sweeps, it’s a useful tool. If you don’t, learn the concept first. For the price (free or low-cost), it’s worth adding to your toolkit, but don’t expect it to make you profitable overnight.
-
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
----
+Liquidity_Levels does one thing and does it competently: it draws liquidity zones automatically and saves the time you'd spend marking them by hand. It is not a signal generator, it shifts as structure develops, and it will produce meaningless levels in quiet markets. Used by a trader who already reads liquidity, it's a reasonable addition to a toolkit. Used as a standalone system, it won't be.
 
 ## Go Deeper with The Indicator Lab
 

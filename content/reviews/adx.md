@@ -16,104 +16,110 @@ categories:
   - Technical Analysis
 rating: 4
 description: "The ADX measures trend strength, not direction. A 4/5 classic for filtering trades. Settings, entry rules, and honest trade-offs."
+grounding: "none (no source found)"
 ---
-
-I’ve spent enough time with the ADX to know its reputation is half-right. It’s not a magic bullet for direction, but for *trend strength* it’s one of the most reliable tools on TradingView. Let’s cut through the noise.
+The ADX has a reputation that is only half-earned. It is not a directional signal generator, but as a measure of trend strength it is one of the more dependable tools available on TradingView. Here is what it does and does not offer.
 
 ## What This Indicator Actually Does
 
-The Average Directional Index (ADX) quantifies how strong a trend is — regardless of whether it’s up or down. It doesn’t tell you *which* way to trade; it tells you *if* there’s enough momentum to bother.
+The Average Directional Index quantifies how strong a trend is, independent of direction. It does not tell you which way to trade; it tells you whether there is enough momentum to justify a trade at all.
 
-As the chart above shows, ADX is plotted as a single line (usually blue) oscillating between 0 and 100. Values above 25 signal a strong trend; below 20 means the market is ranging or choppy. The built-in +DI and -DI lines (green and red) give you a directional bias, but the ADX line itself is the star.
+ADX is plotted as a single line oscillating between 0 and 100. Higher values indicate a stronger trend; lower values indicate a ranging or choppy market. The built-in +DI and -DI lines provide directional bias, but the ADX line itself is the primary read.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Trend strength, not direction** – You won’t get false signals in sideways markets if you respect the 25 threshold.
-- **Works on any timeframe** – From 1-minute scalping to weekly swing trading. I’ve tested it on M15 for breakouts and daily for position trades.
-- **Built-in DI cross signal** – Many scripts include a visual alert when +DI crosses above -DI (long) or vice versa (short). Handy, not holy.
-- **Customizable smoothing** – Default period is 14, but you can tweak it for faster (9) or slower (21) responses.
+- **Trend strength, not direction** – Respecting the threshold helps filter out sideways-market signals.
+- **Timeframe-agnostic** – The calculation applies from intraday scalping through weekly swing trading.
+- **Built-in DI cross signal** – Many scripts include a visual alert when +DI crosses above -DI (long bias) or vice versa (short bias). Useful as context, not as a standalone trigger.
+- **Customizable smoothing** – The period is adjustable, allowing faster or slower response at the cost of more or less noise.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-| Parameter | Default | My Tuned Setup | Why |
-|-----------|---------|----------------|-----|
-| Period | 14 | 14 (keep it) | Balances lag and noise |
-| Signal line length | 14 | 14 | Matches period for clean crossovers |
-| Threshold | 25 | 28 | Reduces whipsaws in crypto/forex |
+| Parameter | Default | Notes |
+|-----------|---------|-------|
+| Period | 14 | Balances lag against noise |
+| Signal line length | 14 | Matching the period keeps crossovers clean |
+| Threshold | 25 | The conventional line between trending and ranging |
 
-**For scalpers** (M1–M5): Try period 9, threshold 30. You’ll get earlier signals but more false positives.
-
-**For swing traders** (H4–Daily): Stick with 14, threshold 25. Let the trend breathe.
+Shorter periods produce earlier signals with more false positives; longer periods produce slower signals with fewer. Raising the threshold reduces whipsaws at the cost of entering trends later. Neither direction is inherently better — it depends on how much confirmation you want before acting.
 
 ## How to Use It for Entries and Exits
 
-**Entry rules (long example):**
-1. ADX rises above 25 (trend is strong).
-2. +DI crosses above -DI (direction is up).
-3. Price is above a key moving average (e.g., 20 EMA) for confirmation.
-4. Enter on a pullback to the EMA.
+**Entry logic (long example):**
+1. ADX rises above the chosen threshold — trend conditions are present.
+2. +DI crosses above -DI — direction is up.
+3. Price is above a key moving average for confirmation.
+4. Enter on a pullback to that average.
 
-**Exit rules:**
-- ADX drops below 25 (trend weakening) — close part of position.
-- +DI crosses below -DI — close the rest.
-- ADX peaks and starts falling while still above 25 — tighten stop to breakeven.
+**Exit logic:**
+- ADX drops below the threshold — trend weakening; reduce the position.
+- +DI crosses below -DI — close the remainder.
+- ADX peaks and begins falling while still above the threshold — tighten the stop.
 
-I’ve found the best results combining ADX with a 20-period EMA and a volume indicator. The chart shows how ADX confirms the EMA slope — when both align, the trade has higher probability.
+Combining ADX with a moving average and a volume indicator gives the trend-strength reading context it cannot supply on its own. When the ADX reading and the average's slope agree, the setup is more coherent.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Eliminates the “should I trade this chop?” question.
-- Works across all asset classes (stocks, forex, crypto, futures).
-- Simple to understand and backtest.
-- Free on TradingView (no premium script needed).
+- Answers the "is this chop worth trading?" question directly.
+- Applies across asset classes — stocks, forex, crypto, futures.
+- Simple to understand and to test.
+- Available on TradingView without a premium script.
 
 **Cons:**
-- Lagging indicator — by the time ADX crosses 25, the move is already underway.
-- Useless in ranging markets below 20 (you’ll get false DI crossovers).
-- Doesn’t predict reversals — only confirms existing trends.
+- Lagging — by the time ADX clears the threshold, the move is already underway.
+- Weak in ranging markets below the lower threshold, where DI crossovers mislead.
+- Does not predict reversals; it only confirms existing trends.
 - DI crossovers alone are weak without price confirmation.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Trend followers** — this is your bread and butter.
-- **Swing traders** who want to avoid choppy weeks.
-- **Beginners** learning to distinguish trends from noise.
+- **Trend followers** — a natural fit.
+- **Swing traders** looking to avoid choppy weeks.
+- **Beginners** learning to separate trends from noise.
 
 **Not for:**
 - Scalpers trading pure order flow.
-- Mean reversion traders (RSI or Stochastic are better).
-- Anyone who wants a single-indicator solution (ADX needs context).
+- Mean reversion traders, for whom oscillators are a better match.
+- Anyone wanting a single-indicator solution — ADX needs context.
 
-## Better Alternatives If They Exist
+## Alternatives
 
-- **SuperTrend** – Easier for entry/exit signals, but doesn’t measure strength.
-- **Parabolic SAR** – Faster for trend changes, but more whipsaws.
-- **Aroon** – Similar concept, but measures time since high/low rather than strength.
+- **SuperTrend** – Easier for entry and exit signals, but does not measure strength.
+- **Parabolic SAR** – Faster at flagging trend changes, but more whipsaws.
+- **Aroon** – Similar concept, but measures time since high or low rather than strength.
 
-If you want a pure strength gauge, ADX is still the gold standard. I keep both ADX and SuperTrend on my daily chart — ADX tells me if the trend is worth trading, SuperTrend tells me when to get in.
+For a pure strength gauge, ADX remains the standard. Running it alongside SuperTrend is a common pairing: ADX for whether the trend is worth trading, SuperTrend for when to enter.
 
-## FAQ Addressing Real Trader Questions
+## FAQ
 
-**Q: Is ADX good for crypto?**  
-A: Yes, but crypto trends are violent. Use a higher threshold (28+) to avoid false reads during pump-and-dumps.
+**Q: Is ADX good for crypto?**
+A: Yes, but crypto trends are violent. A higher threshold helps avoid false reads during pump-and-dumps.
 
-**Q: Can I use ADX alone?**  
-A: You can, but you’ll get chopped up. Always pair with price action or a moving average.
+**Q: Can I use ADX alone?**
+A: You can, but you will get chopped up. Pair it with price action or a moving average.
 
-**Q: What’s the best timeframe?**  
-A: H1 and H4 are the sweet spot for most retail traders. M15 works if you’re active.
+**Q: What's the best timeframe?**
+A: H1 and H4 suit most retail traders. M15 works for more active approaches.
 
-**Q: Does ADX work in forex?**  
-A: Absolutely. Forex trends are persistent — ADX excels there.
+**Q: Does ADX work in forex?**
+A: Yes. Forex trends are persistent, which suits the indicator.
 
 ## Final Verdict
 
-ADX is a 4/5 because it’s honest about what it does: measure trend strength. It won’t make you rich by itself, but it will save you from trading dead markets. If you’ve ever taken a loss in a range, you need this indicator.
+ADX earns a 4/5 because it is honest about what it does: measure trend strength. It will not generate profits by itself, but it will keep you out of dead markets. If you have taken losses in a range, this indicator addresses that problem directly.
 
-**Rating:** ⭐⭐⭐⭐ (4/5) — Essential tool for trend traders, but not a standalone system.
+**Rating:** ⭐⭐⭐⭐ (4/5) — Essential for trend traders, but not a standalone system.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ADX/DMI** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 56.2%, GBPUSD 54.2%, AMD 53.0%, AVAXUSD 52.8%
+- Weakest markets: LTCUSD 44.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

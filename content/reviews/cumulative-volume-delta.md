@@ -16,98 +16,106 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Cumulative_Volume_Delta tracks buying vs selling pressure in real-time. A 4/5 star indicator for spotting divergences and volume shifts on any timeframe."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)** — A solid, battle-tested tool for tracking order flow, but it won't replace a proper footprint chart.
+**Final Verdict: ⭐⭐⭐⭐ (4/5)** — A solid tool for tracking order flow, but it won't replace a proper footprint chart.
 
 ---
 
 ## What This Indicator Actually Does
 
-Let's cut through the noise. Cumulative_Volume_Delta (CVD) isn't some magical crystal ball. It simply calculates the difference between buy-initiated and sell-initiated volume, then cumulates that delta over time. Every tick is tagged as aggressive buying (market buy) or aggressive selling (market sell) based on price direction.
+Cumulative_Volume_Delta (CVD) isn't a magical crystal ball. It calculates the difference between buy-initiated and sell-initiated volume, then cumulates that delta over time. Ticks are tagged as aggressive buying (market buy) or aggressive selling (market sell) based on price direction.
 
-The chart above shows it as a blue/red histogram beneath price. When the line rises, buyers are stepping in aggressively. When it drops, sellers are in control. Simple in concept, but powerful in practice.
+On the chart it typically appears as a blue/red histogram or line beneath price. When the line rises, buyers are stepping in aggressively. When it drops, sellers are in control. Simple in concept, but useful in practice.
 
 ## Key Features That Set It Apart
 
-- **Real-time delta accumulation** — No repainting. What you see is what happened.
-- **Divergence detection** — When price makes a higher high but CVD makes a lower high, that's a warning. The indicator doesn't auto-draw these, but you'll spot them easily.
-- **Customizable smoothing** — You can apply a moving average to the delta line to filter out noise. I use a 14-period EMA.
-- **Multi-timeframe capability** — Works on 1-minute to monthly charts without lag issues. On lower timeframes, the noise is higher, but the signal is faster.
+- **Delta accumulation** — The cumulative line reflects executed volume as it prints.
+- **Divergence detection** — When price makes a higher high but CVD makes a lower high, that's a warning. The indicator doesn't auto-draw these, so they have to be spotted manually.
+- **Customizable smoothing** — A moving average can be applied to the delta line to filter out noise.
+- **Multi-timeframe capability** — It can be plotted across timeframes. On lower timeframes, the noise is higher, but the signal is faster.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-Here’s what I settled on after 200+ trades:
+- **Delta Calculation:** Tick-based is the typical default. Volume-based can be problematic if a broker reports volume in unusual ways.
+- **Smoothing:** A moving average applied to the delta line. Shorter lengths are jittery; longer lengths lag. The right length depends on the trader's holding period and the instrument's typical noise.
+- **Show MA:** Displays a baseline to compare the delta line against.
+- **Color Scheme:** Commonly green for positive delta, red for negative.
 
-- **Delta Calculation:** Tick-based (default). Avoid volume-based if your broker has weird volume reporting.
-- **Smoothing:** EMA length = 14. Anything lower is too jittery; anything higher lags too much for entries.
-- **Show MA:** On. This gives you a baseline to compare against.
-- **Color Scheme:** Green for positive delta, red for negative. I keep it simple.
-
-**Pro tip:** On lower timeframes (1m-5m), switch to *SMA 7* for faster signal. On higher timeframes (1h+), use *EMA 21* to catch sustained pressure shifts.
+On lower timeframes, a faster smoothing length tends to suit quicker decision-making; on higher timeframes, a slower length helps track sustained pressure shifts. The exact values should be chosen to match the trader's timeframe and tolerance for noise rather than copied from someone else's setup.
 
 ## How to Use It for Entries and Exits
 
-This isn’t a standalone system. Use it as a filter.
+This isn't a standalone system. Use it as a filter.
 
-**Long entry example:**  
+**Long entry example:**
 Price breaks above a resistance level. CVD is rising and above its MA. That confirms buying pressure is real, not just a short squeeze. Enter on the retest.
 
-**Short exit example:**  
+**Short exit example:**
 You're in a long. Price stalls, but CVD starts falling hard while price barely moves. That's hidden selling. Get out before the drop.
 
-**Divergence trade:**  
+**Divergence trade:**
 Price makes a lower low, but CVD makes a higher low. That's bullish divergence. Wait for price to break above the prior swing high, then go long.
 
 ## Honest Pros and Cons
 
-**Pros:**  
-- No lag in raw data (the cumulative line updates tick by tick)  
-- Works across all timeframes  
-- Free (built into TradingView)  
-- Great for spotting hidden accumulation/distribution  
+**Pros:**
+- Raw delta updates as ticks print
+- Works across timeframes
+- Free (built into TradingView)
+- Useful for spotting hidden accumulation/distribution
 
-**Cons:**  
-- Raw delta can be noisy on low timeframes — you *must* smooth it  
-- Doesn't show volume profile or footprint data — it's just one number  
-- Beginners will overtrade it, thinking every spike means something  
-- No alert built in for divergences (you have to eyeball them)
+**Cons:**
+- Raw delta can be noisy on low timeframes — smoothing helps
+- Doesn't show volume profile or footprint data — it's just one number
+- Beginners will overtrade it, thinking every spike means something
+- No alert built in for divergences (they have to be eyeballed)
 
 ## Who It's Actually For
 
-- **Day traders** using 5m-15m charts — this is where CVD shines.  
-- **Swing traders** using 1h-4h charts — use it to confirm breakouts or spot exhaustion.  
-- **Order flow nerds** who want a simple delta tool without paying for Sierra Chart.
+- **Day traders** on intraday charts — this is where CVD is most useful.
+- **Swing traders** on higher timeframes — use it to confirm breakouts or spot exhaustion.
+- **Order flow traders** who want a simple delta tool without paying for a dedicated platform.
 
-**Not for:** Scalpers on 1m charts who need tick-by-tick precision (use a proper footprint chart instead). Or people who want a "buy/sell" signal — CVD doesn't give those.
+**Not for:** Scalpers who need tick-by-tick precision (use a proper footprint chart instead). Or people who want a "buy/sell" signal — CVD doesn't give those.
 
 ## Better Alternatives
 
-- **Volume Profile** — If you want to see where big volume traded, not just delta.  
-- **Footprint Charts** — For actual bid/ask imbalance at each price level.  
-- **CVD by LuxAlgo** — Paid version with auto divergence lines and alerts. But honestly, the free version does 90% of the work.
+- **Volume Profile** — If you want to see where big volume traded, not just delta.
+- **Footprint Charts** — For actual bid/ask imbalance at each price level.
+- **CVD by LuxAlgo** — A version with auto divergence lines and alerts. The free built-in version covers a lot of the same ground.
 
 ## FAQ: Real Trader Questions
 
-**Q: Does CVD repaint?**  
-A: No. It's a cumulative calculation. Once a tick is added, it stays.
+**Q: Does CVD repaint?**
+A: It's a cumulative calculation. Once a tick is added, it stays.
 
-**Q: Best timeframe?**  
-A: 15-minute for day trading. 1-hour for swing. Avoid 1-minute unless you're scalping with a tight stop.
+**Q: Best timeframe?**
+A: Depends on the trader's style. Intraday and swing traders use different timeframes; very short timeframes require tighter risk management.
 
-**Q: Can I use it alone?**  
-A: Absolutely not. Pair it with support/resistance, trendlines, or a moving average. CVD confirms, it doesn't predict.
+**Q: Can I use it alone?**
+A: No. Pair it with support/resistance, trendlines, or a moving average. CVD confirms, it doesn't predict.
 
-**Q: Why is my CVD line flat?**  
-A: Low volume. On low-liquidity assets, delta barely moves. Stick to liquid pairs like ES, NQ, or major forex.
+**Q: Why is my CVD line flat?**
+A: Low volume. On low-liquidity assets, delta barely moves. Stick to liquid instruments.
+
+---
+
+**Bottom line:** Cumulative_Volume_Delta is a free, no-nonsense tool for tracking buying vs. selling pressure. It's not a holy grail, but it's a good filter. If you know how to read divergences and volume shifts, it can sharpen entries and exits. If you're a beginner, learn price action first — then come back to this.
+
+**Rating: ⭐⭐⭐⭐ (4/5)** — Deducting one star because it lacks divergence alerts and can be noisy without proper smoothing. But for a free indicator, it's capable.
 
 ---
 
-**Bottom line:** Cumulative_Volume_Delta is a free, no-nonsense tool for tracking buying vs. selling pressure. It's not a holy grail, but it's a damn good filter. If you know how to read divergences and volume shifts, this will tighten your entries and exits. If you're a beginner, learn price action first — then come back to this.
+## What This Class of Signal Has Actually Done
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Deducting one star because it lacks divergence alerts and can be noisy without proper smoothing. But for a free indicator, it's exceptional.
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
 
----
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

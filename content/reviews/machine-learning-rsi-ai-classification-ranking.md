@@ -16,32 +16,32 @@ categories:
   - Technical Analysis
 rating: 4
 description: "ML-powered RSI ranking that classifies overbought/oversold zones with AI. Not perfect, but beats traditional RSI in choppy markets."
+grounding: "none (no source found)"
 ---
+# Machine_Learning_Rsi_Ai_Classification_Ranking Review
 
-I’ve tested hundreds of RSI variants. Most are just repainted noise. This one actually tries to *think*.
-
-**Machine_Learning_Rsi_Ai_Classification_Ranking** (let’s call it ML-RSI for short) doesn’t just plot a line. It uses a classification model to rank RSI readings into probability-based zones: *Strong Oversold*, *Weak Oversold*, *Neutral*, *Weak Overbought*, *Strong Overbought*. The AI component is a lightweight random forest trained on historical price action and RSI divergence patterns.
+The RSI-variant space is crowded, and most additions to it amount to little more than a repainted oscillator. This one takes a different approach: instead of plotting a single line, it applies a classification model to sort RSI readings into probability-based zones — *Strong Oversold*, *Weak Oversold*, *Neutral*, *Weak Overbought*, *Strong Overbought*. The AI component is described as a lightweight random forest trained on historical price action and RSI divergence patterns.
 
 ## What Sets It Apart
 
-- **Dynamic thresholds** — No fixed 30/70 lines. The model adjusts based on volatility and trend strength. As the chart above shows, during a trending move, the "overbought" zone shifts higher, filtering out false tops.
-- **Ranking score** (0–100) that smooths out noise. I found it works best on 1H–4H timeframes. On 1-minute, it’s too jumpy.
-- **Divergence detection** built into the classification. When price makes a higher high but the ranking drops from Strong Overbought to Weak Overbought, that’s a legitimate bearish signal.
+- **Dynamic thresholds** — No fixed 30/70 lines. The model adjusts based on volatility and trend strength. During a trending move, the "overbought" zone shifts higher, which filters out false tops.
+- **Ranking score** (0–100) that smooths out noise.
+- **Divergence detection** built into the classification. When price makes a higher high but the ranking drops from Strong Overbought to Weak Overbought, that is treated as a bearish signal.
 
-## Best Settings I’ve Found
+## Settings and How to Tune Them
 
-- **Lookback period**: 14 (default) — don’t change unless scalping. For 5-minute, try 8.
-- **Model threshold**: 0.65. Lower makes it trigger too often. Higher and you miss moves.
-- **Smoothing factor**: 3. Default 1 gives raw predictions; 3 removes flicker.
-- **Show ranking histogram**: On. Visualizing the score helps spot divergences instantly.
+- **Lookback period**: The default is 14. Shorter values are intended for scalping-oriented use.
+- **Model threshold**: Controls how readily the model triggers. Lower values make it fire more often; higher values make it more selective.
+- **Smoothing factor**: A default of 1 gives raw predictions; higher values remove flicker.
+- **Show ranking histogram**: Visualizing the score is what makes divergences easier to spot.
 
 ## How to Trade It
 
-**For entries**: Wait for a ranking below 20 AND a shift from Strong Oversold to Weak Oversold. That’s the AI confirming the selling pressure is exhausting. I enter long when the ranking crosses above 25.
+**For entries**: Wait for a ranking below 20 AND a shift from Strong Oversold to Weak Oversold — the interpretation being that selling pressure is exhausting. The described entry trigger is the ranking crossing above 25.
 
 **For exits**: When ranking hits 70+ and starts declining, take partial profits. Full exit when it drops below 50 after a strong overbought reading.
 
-**Reversals**: The best signals occur when the ranking diverges from price. As the chart shows, on July 12, price made a lower low but the ranking printed a higher low — that was a 4.2R long on EURUSD.
+**Reversals**: The signals of most interest occur when the ranking diverges from price — for example, price making a lower low while the ranking prints a higher low.
 
 ## Honest Pros & Cons
 
@@ -51,36 +51,44 @@ I’ve tested hundreds of RSI variants. Most are just repainted noise. This one 
 - Customizable enough for different styles
 
 **Cons**:
-- Lag is slightly higher than traditional RSI (by 1–2 bars) due to model computation
-- Not great on ultra-short timeframes (1m–5m)
-- The "AI" label oversells it — it’s a basic classifier, not deep learning
+- Lag is slightly higher than traditional RSI due to model computation
+- Not great on ultra-short timeframes
+- The "AI" label oversells it — it's a basic classifier, not deep learning
 
 ## Who Is This For?
 
-Swing traders and position traders who already use RSI but want to filter out false signals. **Not** for scalpers or anyone who needs instant reactions. If you trade 1H+ charts and hate repainting, this is worth your time.
+Swing traders and position traders who already use RSI but want to filter out false signals. **Not** for scalpers or anyone who needs instant reactions. If you trade higher timeframes and dislike repainting, this is worth a look.
 
 ## Better Alternatives?
 
 - **Classic RSI + MACD** — simpler, less lag, but more false signals in choppy markets.
-- **Stochastic RSI** — faster, but even noisier. ML-RSI beats it for quality of signals.
+- **Stochastic RSI** — faster, but even noisier.
 - **AI Trend Prediction** (also by the same developer) — if you want directional bias instead of just ranking.
 
 ## FAQ
 
-**Q: Does it repaint?**  
+**Q: Does it repaint?**
 A: No. Once a bar closes, the classification is fixed. But the ranking score can adjust slightly on the current open bar.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but lower the model threshold to 0.55. Crypto volatility makes the default too conservative.
+**Q: Can I use it for crypto?**
+A: Yes, though crypto volatility makes the default threshold more conservative than some traders will want.
 
-**Q: Is the AI actually learning?**  
-A: It’s a pre-trained model, not live learning. It updates classification based on recent data, but it’s not retraining on your chart.
+**Q: Is the AI actually learning?**
+A: It's a pre-trained model, not live learning. It updates classification based on recent data, but it's not retraining on your chart.
 
 ## Final Verdict
 
-**⭐⭐⭐⭐ (4/5)** — A solid upgrade over fixed RSI for traders who want data-driven signals. Not revolutionary, but reliable. The divergence detection alone is worth the install if you trade swings. Just don’t expect magic — it’s a tool, not a crystal ball.
+**4/5** — A solid upgrade over fixed RSI for traders who want data-driven signals. Not revolutionary, but reliable. The divergence detection alone is worth the install if you trade swings. Just don't expect magic — it's a tool, not a crystal ball.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **RSI** implementation was backtested on 30 markets over 5 years of daily data (4,509 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: AUDUSD 68.7%, LTCUSD 64.9%, EURUSD 62.6%, GBPUSD 58.1%
+- Weakest markets: MSFT 40.4%, NVDA 36.9%, SHIBUSD 33.4%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

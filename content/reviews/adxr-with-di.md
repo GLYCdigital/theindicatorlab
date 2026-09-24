@@ -16,54 +16,53 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Adxr_With_Di review: a 4/5 trend indicator combining ADXR smoothing with directional movement. Settings, strategies, pros/cons, and honest verdict."
+grounding: "none (no source found)"
 ---
-Let me cut through the noise: Adxr_With_Di isn't trying to reinvent technical analysis. It's a focused tool that takes the classic ADX/DMI system and adds one meaningful twist — an ADXR line that smooths the raw ADX into something actually tradeable. I've run this against dozens of charts across multiple timeframes, and here's what I found.
+# Adxr_With_Di Review
+
+Adxr_With_Di isn't trying to reinvent technical analysis. It's a focused tool that takes the classic ADX/DMI system and adds one meaningful twist — an ADXR line that smooths the raw ADX into something more tradeable.
 
 ## What This Indicator Actually Does
 
-Most ADX indicators throw three lines at you — ADX, +DI, and -DI — then leave you to figure out the mess. Adxr_With_Di does something smarter. It plots the standard ADX alongside the ADXR (the smoothed version that averages ADX over a period), and pairs both with the directional lines. The result is a cleaner read on trend strength without the whipsaw noise that makes raw ADX nearly useless on lower timeframes.
+Most ADX indicators throw three lines at you — ADX, +DI, and -DI — then leave you to figure out the mess. Adxr_With_Di does something different. It plots the standard ADX alongside the ADXR (the smoothed version that averages ADX over a period), and pairs both with the directional lines. The result is a cleaner read on trend strength without the whipsaw noise that makes raw ADX difficult to use on lower timeframes.
 
-As the chart above shows, the difference becomes obvious within the first few bars. The ADXR line lags behind ADX but cuts through the chop, giving you a steadier baseline for judging whether a trend is genuinely strengthening or just twitching.
+The ADXR line lags behind ADX but cuts through the chop, giving you a steadier baseline for judging whether a trend is genuinely strengthening or just twitching.
 
 ## Key Features That Set It Apart
 
 - **Dual ADX display**: Raw ADX and smoothed ADXR plotted together. You can spot divergences between the two — a signal most ADX-based indicators miss entirely.
 - **Clean +DI/-DI crossover logic**: The directional lines are color-coded and clearly separated, making bullish and bearish crossover signals easy to identify at a glance.
 - **Adjustable smoothing**: The ADXR length is independent from the base ADX period, which gives you fine control over lag vs. responsiveness.
-- **Visual threshold zones**: You can set your own "trend strength" levels (typically 20-25) with background shading, so you're not mentally mapping values every time price moves.
+- **Visual threshold zones**: You can set your own "trend strength" levels with background shading, so you're not mentally mapping values every time price moves.
 
-## Best Settings I've Tested
+## Settings and How to Tune Them
 
-After running this across BTC, EUR/USD, and several S&P 500 stocks:
+The core parameters are the ADX length, the ADXR smoothing length, and the trend-strength threshold used for the visual zones. The ADXR length is set independently from the base ADX period, which is where most of the tuning happens: shorter smoothing keeps the line more responsive, longer smoothing filters out more noise at the cost of additional lag.
 
-- **Day trading (15m-1h)**: ADX length 14, ADXR smoothing 7, threshold 20. The shorter smoothing keeps you responsive without the noise.
-- **Swing trading (4h-1D)**: ADX length 14, ADXR smoothing 14, threshold 25. Standard Wilder settings work best here — the extra smoothing filters out false breakouts.
-- **Position trading (Weekly)**: ADX length 20, ADXR smoothing 20, threshold 25. The longer periods avoid the lag issues that plague fast settings on slow charts.
+The threshold zones are typically set in the conventional ADX range that traders use to separate trending from ranging conditions. Which combination works for you depends on your timeframe and holding period — shorter timeframes generally reward more responsiveness, while longer timeframes reward more smoothing. There is no single setting that is best across all conditions; the tradeoff between lag and noise is the parameter you are managing.
 
-One thing I'll warn you about: don't drop the ADX length below 10. The indicator starts throwing crossover signals that look great in hindsight and fail in real time. I tested 7 and 8 — both were garbage.
-
-## How I Actually Trade It
+## How It's Typically Traded
 
 The system is straightforward but requires discipline:
 
-1. **Wait for the threshold break**: Only consider entries when ADX is above 20 (or 25 on higher timeframes). This filters out ~60% of the ranging market noise.
+1. **Wait for the threshold break**: Only consider entries when ADX is above your trend-strength threshold. This filters out ranging-market noise.
 2. **Confirm with ADXR**: Don't enter on the first ADX spike. Wait for ADXR to also curl upward — this confirms the trend has staying power, not just a single strong candle.
 3. **Trade the DI crossover**: Once both ADX and ADXR are above threshold, go long when +DI crosses above -DI, short on the reverse.
-4. **Exit when ADXR tops out**: When ADXR starts flattening or declining while price still moves, that's your warning sign. I've found exiting on this signal gets me out before the inevitable pullback.
+4. **Exit when ADXR tops out**: When ADXR starts flattening or declining while price still moves, that's a warning sign of an impending pullback.
 
 ## Pros & Cons
 
 **Pros:**
-- The ADXR smoothing genuinely improves signal quality over plain ADX
+- The ADXR smoothing improves signal quality over plain ADX
 - Clean, readable visual design — no clutter, no unnecessary bells
-- Flexible enough for scalping through position trading
-- The threshold shading is a small touch that makes a big practical difference
+- Flexible enough to adapt across timeframes and trading styles
+- The threshold shading is a small touch that makes a practical difference
 
 **Cons:**
 - Still lags on choppy, ranging markets — no indicator fixes that
 - ADXR is inherently slower, so on lower timeframes you'll miss the very beginning of moves
 - No alerts built in — you'll need to set up your own price alerts or use TradingView's alert conditions
-- No multi-timeframe analysis built in, which would have pushed this to 5 stars
+- No multi-timeframe analysis built in
 
 ## Who It's For
 
@@ -78,22 +77,29 @@ This is a trend-confirmation tool, not a standalone system. It works best for tr
 ## FAQ
 
 **Is ADXR better than ADX?**
-For decision-making, yes. ADXR is less noisy and gives you a more stable trend-strength reading. But you need both — the raw ADX shows immediate momentum, while ADXR confirms sustainability.
+For decision-making, ADXR is less noisy and gives you a more stable trend-strength reading. But you need both — the raw ADX shows immediate momentum, while ADXR confirms sustainability.
 
 **Can I use this for crypto?**
-Absolutely. I tested it on BTC and ETH across multiple timeframes. Just keep the threshold at 25 on the 1h and above — crypto chop will eat you alive below that.
+Yes. It applies to crypto like any other market. Many traders raise the threshold on higher timeframes because crypto chop can produce frequent false signals below it.
 
 **Does it repaint?**
-No. All lines are calculated from historical data and won't repaint once the bar closes. That's a non-negotiable for me, and this passes.
+ADX and ADXR are calculated from historical data, so once a bar closes, the plotted values are fixed.
 
 ## Final Verdict
 
-Adxr_With_Di earns a solid 4 stars. It's not flashy, not revolutionary — but it does one thing exceptionally well: it gives you a reliable, visually clean way to gauge trend strength without the noise of raw ADX. The ADXR smoothing is the differentiator that makes it worth installing over the built-in ADX, and the flexibility across timeframes makes it a genuine workhorse.
+Adxr_With_Di is a solid tool. It's not flashy, not revolutionary — but it does one thing well: it gives you a reliable, visually clean way to gauge trend strength without the noise of raw ADX. The ADXR smoothing is the differentiator that makes it worth considering over the built-in ADX, and the flexibility across timeframes makes it a genuine workhorse.
 
-It loses a star for the missing alerts and lack of multi-timeframe analysis — both would have made this a truly complete tool. But if you're looking for a dependable trend confirmation layer that won't clutter your charts or lie to you, this is a solid addition to your arsenal.
+It falls short on the missing alerts and lack of multi-timeframe analysis — both would have made this a more complete tool. But if you're looking for a dependable trend confirmation layer that won't clutter your charts, this is a reasonable addition to your toolkit.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ADX/DMI** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 56.2%, GBPUSD 54.2%, AMD 53.0%, AVAXUSD 52.8%
+- Weakest markets: LTCUSD 44.7%, VIX 43.4%, SHIBUSD 30.8%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

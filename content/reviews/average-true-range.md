@@ -16,93 +16,101 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest ATR review: how to set it, trade with it, and avoid common mistakes. Pros, cons, and better alternatives for volatility trading."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5)**  
-The Average True Range is a volatility workhorse—nothing flashy, but it gets the job done. If you want to know when to set wider stops or when a breakout has real legs, ATR is your friend.
+**Final Verdict: ⭐⭐⭐⭐ (4/5)**
+Average True Range is a volatility workhorse—nothing flashy, but it does a straightforward job. If you want a sense of when to set wider stops or whether a breakout has room to run, ATR is a reasonable place to start.
 
 ## What This Indicator Actually Does
 
-ATR measures market volatility by calculating the average range between high, low, and previous close over a set period. It doesn't tell you direction—it tells you *how much* price is likely to move. On the chart above, you can see how ATR spiked during the March 2020 selloff and then contracted during the summer consolidation. That's exactly what it's for.
+ATR measures market volatility by averaging the true range—which accounts for high, low, and the previous close—over a set period. It doesn't tell you direction; it tells you how much price is likely to move. ATR tends to expand during sharp selloffs and contract during quiet consolidation, which is exactly the behavior it's designed to capture.
 
 ## Key Features That Set It Apart
 
-- **Wilder's smoothing** – Uses a modified moving average that reacts faster to volatility changes than a simple average.
+- **Wilder's smoothing** – Uses a modified moving average that reacts to volatility changes faster than a simple average.
 - **True Range calculation** – Accounts for gaps, which SMA-based volatility measures miss.
-- **Universal application** – Works on any timeframe, any asset. I've used it on crypto, forex, and futures.
-- **No repainting** – Once the bar closes, the ATR value is fixed. That's a big deal for backtesting.
+- **Universal application** – Can be applied across timeframes and asset classes, including crypto, forex, and futures.
+- **Fixed values on closed bars** – Once a bar closes, the ATR value for that bar is settled, which matters for backtesting.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-**Default (14-period)** is fine for most swing traders. But here's what I've dialed in after testing:
+The default period is a common starting point for swing traders, but the right setting depends on your timeframe and holding period.
 
-- **Scalping (1-5 min):** Set to 7-period. It's more responsive. Pair with a 20 EMA for direction.
-- **Day trading (15 min-1H):** 14-period is ideal. Use 1.5x ATR for stop placement.
-- **Swing trading (4H-Daily):** 20-period smooths out noise. I use 2x ATR for take-profit targets.
+- **Short timeframes:** A shorter period makes the reading more responsive to recent volatility. Pair it with a trend filter for direction.
+- **Intraday:** The default period is a reasonable middle ground. Many traders scale stop placement to a multiple of ATR.
+- **Swing trading:** A longer period smooths out noise, which can suit wider stops and targets.
 
-Pro tip: Don't use ATR in isolation. On the chart above, I've overlaid it with a 50-period SMA to show how volatility cycles work—when ATR drops below the SMA, a breakout is brewing.
+ATR is best used alongside something else rather than in isolation. Overlaying a longer moving average of ATR itself can help visualize volatility cycles—when ATR drops below its own average, it often signals that a volatility expansion may be building.
 
 ## How to Use It for Entries and Exits
 
-**Entries:**  
-Only take a trade when ATR is expanding from a low reading. If ATR is flatlining and price is ranging, stay out. I wait for ATR to cross above its 10-period SMA before entering a trend trade.
+**Entries:**
+Traders often wait for ATR to expand from a low reading before taking a trade. When ATR is flat and price is ranging, there's little volatility to work with. Some use a crossover of ATR above its own moving average as a signal that a trend move may be starting.
 
-**Exits:**  
-Set your stop at 1.5x ATR below entry for longs (or above for shorts). For take-profit, I use 3x ATR. On the daily chart of AAPL I tested, this gave a 2:1 risk-reward ratio on 70% of breakout trades.
+**Exits:**
+A common approach is to set stops at a multiple of ATR below entry for longs (or above for shorts), and to scale take-profit targets to a larger ATR multiple. This keeps risk proportional to current volatility rather than to a fixed dollar amount.
 
-**Trailing stops:**  
-Chandelier Exit (which is ATR-based) is a cleaner way to trail than a moving average. Plot it at 3x ATR below the highest high since entry.
+**Trailing stops:**
+Chandelier Exit is an ATR-based trailing stop that plots below the highest high since entry (or above the lowest low for shorts). It's a cleaner trail than a moving average because it adapts to volatility.
 
 ## Honest Pros and Cons
 
-**Pros:**  
-- Simple, proven math. No black box.  
-- Works across all markets and timeframes.  
-- Helps you size positions rationally (volatility-adjusted).  
-- Free on TradingView (no premium needed).
+**Pros:**
+- Simple, transparent math. No black box.
+- Can be applied across markets and timeframes.
+- Helps size positions rationally on a volatility-adjusted basis.
+- Available on TradingView without a premium plan.
 
-**Cons:**  
-- Doesn't show direction. You need a separate trend filter.  
-- Can lag in fast markets. 14-period ATR on a 1-minute chart feels like an eternity.  
-- Useless in sideways markets—it just stays flat while you watch paint dry.  
-- Not a leading indicator. It tells you what *already happened*, not what's coming.
+**Cons:**
+- Doesn't show direction. You need a separate trend filter.
+- Can lag in fast markets, especially on very short timeframes.
+- Provides little value in sideways markets—it tends to stay flat.
+- Not a leading indicator. It describes what already happened, not what's coming.
 
 ## Who It's Actually For
 
-**Beginners** – ATR is one of the first volatility tools you should learn. It's forgiving and intuitive.  
-**Swing traders** – Perfect for setting stops on 4H and daily charts.  
-**Risk managers** – If you're managing a portfolio, ATR helps you normalize position sizes across different assets.
+**Beginners** – ATR is one of the first volatility tools worth learning. It's intuitive and forgiving.
+**Swing traders** – Useful for setting stops on higher timeframes.
+**Risk managers** – Helps normalize position sizes across different assets by accounting for volatility.
 
-**Not for** – Scalpers who need tick-by-tick volatility. Use ATR trailing stops instead of raw ATR for that.
+**Not for** – Traders who need tick-by-tick volatility readings. ATR-based trailing stops may be more useful than raw ATR in those cases.
 
 ## Better Alternatives If They Exist
 
-- **Keltner Channels** – ATR-based bands that actually show direction. Better for trend traders.  
-- **Chandelier Exit** – ATR-based trailing stop that's more visual.  
-- **SuperTrend** – Combines ATR with a moving average. It's ATR's smarter cousin.  
-- **Bollinger Bands** – Uses standard deviation instead of ATR. Better for mean reversion strategies.
+- **Keltner Channels** – ATR-based bands that also show direction. Better suited to trend traders.
+- **Chandelier Exit** – An ATR-based trailing stop that's more visual.
+- **SuperTrend** – Combines ATR with a moving average for a trend-following overlay.
+- **Bollinger Bands** – Uses standard deviation instead of ATR. Better suited to mean reversion.
 
-If you only have room for one volatility tool, I'd pick Keltner Channels over raw ATR—same math, more context.
+If you only have room for one volatility tool, Keltner Channels offer similar math with more directional context than raw ATR.
 
 ## FAQ: Real Trader Questions
 
-**Q: Should I use ATR on a 1-minute chart?**  
-Yes, but shorten the period to 7 or 10. Default 14 will be too slow.
+**Q: Should I use ATR on a 1-minute chart?**
+Yes, but consider a shorter period. The default will be slow relative to the pace of a 1-minute chart.
 
-**Q: Can I use ATR for take-profit?**  
-Yes. Multiply current ATR by 2-3x and add to entry price. On the chart above, that caught the EUR/USD breakout perfectly.
+**Q: Can I use ATR for take-profit?**
+Yes. A common method is to multiply current ATR by a multiple and add it to entry price.
 
-**Q: Does ATR work on options?**  
-Indirectly. ATR of the underlying helps estimate volatility, but IV and gamma complicate it. Stick to the stock/futures.
+**Q: Does ATR work on options?**
+Indirectly. ATR of the underlying can help estimate volatility, but implied volatility and gamma complicate the picture. It's more directly useful on the stock or futures themselves.
 
-**Q: Why does ATR spike on news?**  
-Because true range captures the gap between open and previous close. That's by design—news events create real volatility.
+**Q: Why does ATR spike on news?**
+Because true range captures the gap between the open and the previous close. News events create real volatility, and ATR reflects it by design.
 
 ## Final Thoughts
 
-ATR is a 4-star indicator because it's reliable, free, and easy to use, but it's not a complete system. Pair it with a trend filter (like the 50 EMA I showed on the chart) and you've got a solid framework. For pure volatility measurement, nothing beats it. Just don't expect it to tell you which way to trade.
+ATR earns a solid rating because it's reliable, free, and easy to use—but it isn't a complete system. Pair it with a trend filter and you have a workable framework. For pure volatility measurement, it's hard to beat. Just don't expect it to tell you which way to trade.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **ATR** implementation was backtested on 30 markets over 5 years of daily data (44,127 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.4%** (50% = coin flip)
+- Strongest markets: USDJPY 58.7%, SPY 55.3%, XAUUSD 54.7%, AMD 53.6%
+- Weakest markets: ADAUSD 45.5%, XRPUSD 43.5%, SHIBUSD 24.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

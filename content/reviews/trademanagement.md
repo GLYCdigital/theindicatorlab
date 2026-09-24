@@ -17,86 +17,88 @@ categories:
 rating: 4
 description: "Trademanagement review: a trend-following tool that simplifies entries and exits. Tested settings, strategy, and honest pros and cons for traders."
 tv_script_url: "https://www.tradingview.com/script/EMHm5fgY-TradeManagement/"
+sources: ["https://www.tradingview.com/script/EMHm5fgY-TradeManagement/"]
 ---
-Most "trade management" tools on TradingView are glorified stop-loss calculators. You drop them on a chart, they draw a line, and you're supposed to feel organized. **Trademanagement** tries to do something more useful: it reads trend direction and gives you a framework for both entering and exiting, rather than just babysitting an open position. I ran it across multiple timeframes and asset classes to see whether it earns a permanent spot on your chart or just adds clutter.
+Most "trade management" tools on TradingView are glorified stop-loss calculators. You drop them on a chart, they draw a line, and you're supposed to feel organized. **TradeManagement** is a different kind of thing entirely: it's a Pine Script® library, not a chart indicator, and it does the unglamorous math that sits underneath a strategy rather than drawing anything on your candles.
 
 ## What It Actually Does
 
-Strip away the name and this is a trend indicator with a management layer bolted on. It identifies the prevailing trend direction and plots reference levels you can use to structure a trade — where to get in, where to bail, and where the trend has likely flipped. As shown in the chart above, the signals are clean and don't repaint into a spaghetti mess the way some trend tools do when you change timeframes.
+Strip away the name and this is a collection of reusable functions for trade-management and position-sizing calculations inside TradingView strategies. It doesn't read trend direction and it doesn't plot signals. What it provides is a set of building blocks: take-profit prices, stop-loss prices, risk/reward-based targets, position size from monetary risk, position size from risk per unit, and the current strategy entry price.
 
-The key distinction from a plain moving average crossover: it's designed around *managing* a position over time, not just firing an alert when two lines cross. That framing matters, and it's why the indicator is more useful than the generic trend ribbon crowd.
+The key distinction from writing this logic yourself in every strategy: the functions are reusable, so the same trade-management code can be shared across multiple strategies without rewriting the arithmetic each time. That framing matters, and it's the reason a library like this exists at all.
 
 ## Key Features
 
-- **Trend direction readout** — the core signal, and it's surprisingly stable on higher timeframes.
-- **Reference levels for stops and targets** — this is the "management" part, and it's the reason to use it.
-- **Works across timeframes** — I tested it on the 5-minute, 1-hour, and daily. Behavior stays consistent, though it's noticeably cleaner above the 15-minute.
-- **Low visual noise** — you can actually see your candles underneath it, which shouldn't be a selling point but somehow is for half the indicators in this category.
+- **`tpPrice()`** — calculates a take-profit price using a percentage, with a long/short specification.
+- **`slPrice()`** — calculates a stop-loss price using a percentage, also long/short aware.
+- **`tpRiskReward()`** — calculates a take-profit price from the distance between entry and stop-loss, using a selected risk/reward multiplier. The documented example is a 2 multiplier for a 1:2 risk/reward target.
+- **`positionSize()`** — calculates position quantity from entry price, stop-loss price, and maximum monetary risk, using TradingView's symbol-specific `syminfo.pointvalue`.
+- **`positionSizeByRiskQuantity()`** — calculates position quantity from entry price, stop-loss price, and risk amount per unit/contract, for when you want to specify risk per contract rather than total monetary risk.
+- **`entryPrice()`** — returns the current strategy's average entry price when a position is open, so strategy code stays clean while sharing the same trade-management functions.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-I'll save you the trial-and-error. The default parameters are too twitchy on intraday charts — you'll get whipsawed in choppy conditions. Here's what worked:
+There are no chart settings here — the "settings" are the arguments you pass into each function, and the documentation describes them conceptually rather than prescribing values.
 
-- **Intraday (5m–15m):** Increase the sensitivity/lookback so it ignores noise. The stock settings flip too often during low-volume hours.
-- **Swing (1h–4h):** Defaults are close to usable, but tighten them slightly if you trade crypto, which trends harder than forex.
-- **Daily:** Leave it alone. The defaults behave well and the signals are worth respecting.
+- **Take-profit and stop-loss percentages** are inputs to `tpPrice()` and `slPrice()`. You choose the percentage; the library does the price arithmetic.
+- **The risk/reward multiplier** is an input to `tpRiskReward()`. The docs illustrate the concept with a 2 multiplier for a 1:2 target, which is an example of the mechanism, not a recommended value.
+- **Maximum monetary risk** is an input to `positionSize()`, alongside entry and stop-loss price.
+- **Risk per unit/contract** is the input to `positionSizeByRiskQuantity()`, used when per-contract risk is the natural unit rather than a total dollar figure.
 
-The general rule: the choppier the instrument, the more you should smooth it out. Don't fight this by lowering sensitivity to "catch moves early" — that's how you end up with a losing streak.
+The general rule: these are calculation tools, and the values you feed them come from your own strategy logic and risk model. The library doesn't decide them for you.
 
 ## How to Use It
 
 The logic is straightforward and that's a compliment:
 
-1. **Wait for the trend readout to align** with your higher-timeframe bias. Don't take a bullish signal on the 5-minute if the daily is screaming down.
-2. **Enter on the first pullback** after a trend confirmation, not on the signal bar itself. Chasing the signal gets you filled at the worst price.
-3. **Use the plotted reference levels** as your stop. If price closes beyond the management line against your position, the trend has likely flipped — take the loss and move on.
-4. **Scale out at logical targets**, not at the indicator's suggestion alone. It's a management framework, not a profit oracle.
+1. **Call `entryPrice()`** to retrieve the current strategy's average entry price while a position is open.
+2. **Feed entry and stop-loss into `positionSize()`** when you want to size from a maximum monetary risk figure, or into `positionSizeByRiskQuantity()` when you want to size from risk per contract.
+3. **Use `tpPrice()` or `slPrice()`** for percentage-based targets and stops, or `tpRiskReward()` when you'd rather define the target as a multiple of the entry-to-stop distance.
+4. **Verify the resulting risk** against the actual quantity rules of your market before going live.
 
-The one thing it does genuinely well: it keeps you in a trend longer than your gut wants to. That alone is worth the install for most discretionary traders.
+The one thing worth understanding clearly: `positionSize()` calculates quantity from the monetary risk you specify, but the final risk may not exactly match the risk amount entered. Some markets or environments only allow specific quantity increments — whole-number quantities, for instance. You might enter a maximum intended risk figure and end up with an actual risk that differs, because the required position size was fractional and the market only permits a whole quantity. The risk input is therefore the *maximum intended* risk; the actual risk depends on the quantity precision or increment the symbol and environment support.
 
 ## Pros & Cons
 
 **Pros:**
-- Clean, readable signals that don't repaint into chaos
-- The management-level concept is genuinely practical
-- Consistent behavior across timeframes
-- Doesn't drown your chart in labels
+- Removes repetitive trade-management arithmetic from strategy code
+- Reusable across multiple strategies
+- Handles both monetary-risk and per-contract-risk sizing
+- Uses TradingView's symbol-specific `syminfo.pointvalue` for position sizing
+- Includes a documented risk/reward-based take-profit helper
 
 **Cons:**
-- Defaults are too sensitive for intraday work — you must tune them
-- It's a trend tool, so it gets chopped up in ranging markets like everything else in this category
-- Not an automated system; it assumes you'll apply discretion
-- Documentation is thin, which is why this review exists
+- Not a chart indicator — it won't draw anything or generate signals on its own
+- Intended primarily for TradingView strategies; the position-sizing and entry-price functions rely on strategy information and symbol-specific properties
+- Actual risk can diverge from intended risk when quantity increments are constrained
+- It's a calculation library, so it assumes you already have a strategy framework to plug it into
 
 ## Who It's For
 
-Discretionary trend traders who want a structured way to manage positions without staring at six indicators. If you're a scalper hunting 5-pip moves, this isn't your tool. If you swing trade and struggle to hold winners, it's a solid fit. Beginners will find it approachable, though they should pair it with basic risk management rather than trusting the levels blindly.
+Pine Script developers building or maintaining TradingView strategies who are tired of rewriting the same take-profit, stop-loss, and position-sizing math in every script. If you want something to drop on a chart and trade off visually, this isn't that. If you're assembling a strategy and want consistent, reusable trade-management functions underneath it, it's a natural fit.
 
 ## Alternatives
 
-If you want pure trend following, a well-tuned **SuperTrend** or **Supertrend + EMA** combo does similar work for free. If you want full trade management with position sizing, look at dedicated journaling tools instead — this indicator manages the *chart*, not your account. Where Trademanagement wins is the middle ground: trend reading plus exit structure in one lightweight package.
+If you want a chart-level trend tool, a well-tuned **SuperTrend** or moving-average system does that job. If you want position sizing tied to an account rather than a single strategy, dedicated journaling or risk tools are the better comparison. Where TradeManagement wins is the middle ground: reusable trade-management and sizing functions that keep strategy code clean, in one lightweight library.
 
 ## FAQ
 
 **Does it repaint?**
-In my testing, closed-bar signals held. Intrabar it can shift, as nearly all trend tools do. Trade the close, not the wick.
+It doesn't plot anything, so repainting isn't the relevant question. It returns calculated values — prices and quantities — for your strategy to use.
 
 **Best timeframe?**
-1-hour and above. It's usable on lower timeframes but requires heavier tuning.
+Not applicable in the usual sense. It's a strategy library, so it operates wherever your strategy operates, driven by the inputs you pass in.
 
 **Can I automate it?**
-It's built for manual use. You could wire alerts, but the management logic assumes human judgment.
+It's built for strategies, so automation is the intended context rather than an add-on. The library supplies the calculations; your strategy supplies the logic.
 
-**Is it worth it over free alternatives?**
-If you already have a trend system you trust, no. If you want structure without building it yourself, yes.
+**Is it worth it over writing the math yourself?**
+If you already have clean, tested trade-management code you reuse, maybe not. If you're rewriting position sizing and target math in every strategy, the library centralizes it.
 
 ## Final Verdict
 
-Trademanagement isn't revolutionary — it's a competent trend tool with a practical management layer that most competitors lack. The intraday defaults need work and it won't save you in a range, but for swing and position traders who want cleaner entries and a reason to hold winners, it earns its place. A solid, honest tool that does what it claims without overselling.
+TradeManagement isn't a chart tool and shouldn't be judged like one. It's a competent Pine Script library that packages the trade-management and position-sizing math most strategies need, with a clear note that intended risk and actual risk can diverge when a market only accepts certain quantity increments. The documentation is honest about that limitation and about the library being strategy-oriented. For developers building strategies, it's a practical piece of infrastructure rather than a signal generator — and it doesn't oversell itself as anything more.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
-
-Knock off a star for the twitchy defaults and thin documentation. Everything else is a legitimate upgrade over the generic trend clutter.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

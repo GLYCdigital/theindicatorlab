@@ -16,42 +16,30 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Moving_Average_Envelope review: a classic volatility-based channel indicator. Settings, strategy, pros/cons, and how to use it for trend and mean reversion trades."
+grounding: "none (no source found)"
 ---
-
-**Moving_Average_Envelope** is one of those indicators that looks simple but actually forces you to think about context. I’ve tested it across multiple timeframes and assets, and it’s a solid 4/5 tool—not groundbreaking, but reliable when used correctly.
+**Moving_Average_Envelope** is one of those indicators that looks simple but actually forces you to think about context. It's a solid tool—not groundbreaking, but useful when applied correctly.
 
 ## What it actually does
 
-It plots two bands (upper and lower) at a fixed percentage distance around a moving average. Unlike Bollinger Bands, which expand and contract with volatility, these envelopes stay at a constant width. The chart above shows a 20-period SMA with a 5% envelope on daily Bitcoin. The bands act like static support/resistance zones.
+It plots two bands (upper and lower) at a fixed percentage distance around a moving average. Unlike Bollinger Bands, which expand and contract with volatility, these envelopes stay at a constant width. The bands act like static support/resistance zones.
 
 ## Key features that set it apart
 
-- **Constant width** – No false signals from volatility changes. This makes it better for assets with stable percentage moves.
-- **Customizable MA type** – SMA, EMA, WMA, or HMA. I found EMA works best for faster signals.
-- **Percentage-based** – Not standard deviation. This is crucial for crypto and forex where moves are in percentages, not points.
+- **Constant width** – No false signals from volatility changes. This makes it better suited to assets with stable percentage moves.
+- **Customizable MA type** – SMA, EMA, WMA, or HMA.
+- **Percentage-based** – Not standard deviation. This matters for crypto and forex where moves are measured in percentages, not points.
 - **Clear visual** – The bands are solid and easy to spot on the chart. No clutter.
 
-## Best settings with specific recommendations
+## Settings and How to Tune Them
 
-For **day trading on 1H–4H**:
-- MA length: **20**
-- MA type: **EMA**
-- Envelope percentage: **2%** (tight for range-bound markets)
+The indicator's core controls are the moving average length, the moving average type, and the envelope percentage. The MA type can be set to SMA, EMA, WMA, or HMA. The percentage sets the fixed distance of each band from the average.
 
-For **swing trading on daily**:
-- MA length: **50**
-- MA type: **SMA**
-- Envelope percentage: **5%** (captures bigger swings)
-
-For **volatile assets like altcoins**:
-- MA length: **14**
-- Envelope percentage: **8%** (adjust to historical volatility)
-
-Test these on your asset’s historical data. If the price constantly touches the bands, widen it. If it rarely reaches them, tighten it.
+Because the correct width depends entirely on the asset, the sensible approach is to calibrate it to observed behavior rather than to a universal number. If price constantly touches the bands, the envelope is too tight for that instrument. If price rarely reaches them, it is too wide. A reasonable starting point is to look at the asset's average true range as a percentage of price over a recent lookback window, and use that as the initial envelope width.
 
 ## How to use it for entries and exits
 
-**Trend continuation** (my preferred method):
+**Trend continuation**:
 - Wait for price to touch or break the upper band in a strong uptrend.
 - Do NOT short. Instead, wait for a pullback to the MA line and go long.
 - Exit when price reaches the opposite band or the MA slope flattens.
@@ -68,53 +56,59 @@ Test these on your asset’s historical data. If the price constantly touches th
 **Pros**:
 - Simple to set up and understand.
 - Works well with trend-following strategies.
-- No repainting (unlike some envelope variants).
-- Great for setting trailing stop-loss levels.
+- The MA and bands are fixed once the bar closes, so they do not repaint.
+- Useful for setting trailing stop-loss levels.
 
 **Cons**:
 - Fixed percentage means it fails in extreme volatility (crypto crashes, earnings gaps).
 - Lags badly if you use a long MA.
 - Useless in sideways markets without additional filters.
 
-## Who it’s actually for
+## Who it's actually for
 
 - **Trend traders** who need a clean dynamic support/resistance.
 - **Swing traders** on daily or 4H charts.
 - **Beginners** learning how to use bands without overcomplicating things.
 
-Not for scalpers or anyone trading choppy ranges. You’ll get whipsawed.
+Not for scalpers or anyone trading choppy ranges. You'll get whipsawed.
 
 ## Better alternatives if they exist
 
 - **Bollinger Bands** – Better for mean reversion because they adapt to volatility.
-- **Keltner Channels** – Uses ATR, so it’s more robust for volatile assets.
+- **Keltner Channels** – Uses ATR, so it's more robust for volatile assets.
 - **Donchian Channels** – Pure price-based, no MA lag. Better for breakouts.
 
-If you already use Bollinger Bands, you don’t need this. But if you want a simpler, more stable channel, this is your pick.
+If you already use Bollinger Bands, you don't need this. But if you want a simpler, more stable channel, this is your pick.
 
 ## FAQ addressing real trader questions
 
-**Q: Does this repaint?**  
+**Q: Does this repaint?**
 A: No. The MA and bands are fixed once the bar closes.
 
-**Q: Can I use it for crypto?**  
-A: Yes, but widen the percentage. 5-8% on daily works better than 2%.
+**Q: Can I use it for crypto?**
+A: Yes, but widen the percentage. Crypto needs a wider envelope than a low-volatility instrument to avoid constant band touches.
 
-**Q: What’s the best MA type?**  
+**Q: What's the best MA type?**
 A: EMA for speed, SMA for reliability. HMA is overkill.
 
-**Q: How do I set the percentage?**  
-A: Look at the asset’s average true range as a percentage of price over the last 100 bars. Use that as your starting point.
+**Q: How do I set the percentage?**
+A: Look at the asset's average true range as a percentage of price over a recent lookback window, and use that as your starting point.
 
-## Final verdict with star rating
+## Final verdict
 
-**⭐⭐⭐⭐ (4/5)**
+Moving_Average_Envelope isn't flashy, but it's a workhorse. It gives you clean, constant bands that work well with trend-following systems. The fixed percentage is both its strength and weakness. If you know how to set the width and pair it with volume or RSI for confirmation, you'll get more usable signals. If you just slap it on and hope, you'll be disappointed.
 
-Moving_Average_Envelope isn’t flashy, but it’s a workhorse. It gives you clean, constant bands that work well with trend-following systems. The fixed percentage is both its strength and weakness. If you know how to set the width and pair it with volume or RSI for confirmation, you’ll get consistent signals. If you just slap it on and hope, you’ll be disappointed.
+**Bottom line**: Install it, tune the percentage for your asset, and use it as a trailing stop or entry filter. It won't make you rich alone, but it's a solid part of a toolkit.
 
-**Bottom line**: Install it, tweak the percentage for your asset, and use it as a trailing stop or entry filter. It won’t make you rich alone, but it’s a solid part of a toolkit.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **SMA/MA Cross** implementation was backtested on 30 markets over 5 years of daily data (43,215 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 48.7%** (50% = coin flip)
+- Strongest markets: XAUUSD 54.5%, META 54.4%, USDJPY 53.4%, SPY 53.3%
+- Weakest markets: VIX 43.7%, AUDUSD 43.4%, SHIBUSD 30.0%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

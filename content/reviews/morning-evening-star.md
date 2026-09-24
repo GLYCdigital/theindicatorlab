@@ -16,100 +16,98 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of the Morning_Evening_Star indicator after real testing. See best settings, entry rules, and whether it actually works for swing trading."
+grounding: "none (no source found)"
 ---
-
 # Morning_Evening_Star Review: Settings, Strategy & How to Use It
-
-I’ve spent the last two weeks running this indicator on EUR/USD, BTC/USD, and TSLA daily charts. Here’s what I found.
 
 ## What This Indicator Actually Does
 
 The Morning_Evening_Star indicator automates detection of the classic three-candle reversal patterns: the bullish morning star and the bearish evening star. It plots arrows directly on the chart when the pattern completes, with optional alerts.
 
-No machine learning. No repainting gimmicks. It’s a clean, rules-based implementation of candlestick pattern recognition that’s been around since the 1700s.
+It is a rules-based implementation of candlestick pattern recognition rather than a predictive or machine-learning model.
 
 ## Key Features That Set It Apart
 
-1. **Pattern validation filter** – Not all three-candle patterns are equal. This indicator checks that the middle candle’s body is *at least* 50% smaller than the first and third candles. That weeds out weak formations.
-2. **Customizable body size thresholds** – You can tweak the minimum body percentage for the middle doji-like candle. I set it to 40% for tighter setups on 1H charts.
-3. **Alert system** – Push notifications and email alerts when a new pattern appears. Works across multiple timeframes without lag.
-4. **No clutter** – Unlike some indicators that vomit arrows everywhere, this one only marks confirmed patterns. You won’t get false signals from single candle wicks.
+1. **Pattern validation filter** – The indicator checks the relationship between the middle candle's body and the bodies of the first and third candles, so that weak formations are filtered out rather than plotted.
+2. **Customizable body size thresholds** – The minimum body percentage for the middle doji-like candle is adjustable, letting you tighten or loosen how strict the pattern detection is.
+3. **Alert system** – Alerts fire when a new pattern appears, so you don't have to watch the chart continuously.
+4. **No clutter** – Only confirmed patterns are marked, rather than every candle that resembles a reversal.
 
-## Best Settings (After 50+ Trades)
+## Settings and How to Tune Them
 
-| Setting | Default | My Recommendation |
-|---------|---------|-------------------|
-| Middle Candle Body % | 30% | **40% on 1H/4H, 25% on Daily** |
-| Pattern Lookback | 3 candles | Keep default |
-| Show Alerts | On | On – use email for swing trades |
-| Arrow Position | Above/Below candle | Above for morning star, below for evening star |
+The indicator exposes a small set of inputs:
 
-**Why the difference by timeframe?** On lower timeframes (1H, 4H), price noise is higher. A 40% body filter ensures the middle candle is genuinely indecisive. On daily charts, 25% is fine because the pattern is naturally more significant.
+| Setting | Purpose |
+|---------|---------|
+| Middle Candle Body % | Controls how small the middle candle's body must be relative to the surrounding candles. Raising it makes detection stricter; lowering it makes it looser. |
+| Pattern Lookback | Defines the number of candles used to evaluate the formation. |
+| Show Alerts | Toggles alert delivery on new patterns. |
+| Arrow Position | Controls where the marker is drawn relative to the pattern candle. |
+
+The main tuning decision is the body size threshold. A stricter threshold reduces the number of signals and filters out marginal formations; a looser threshold produces more signals but includes weaker setups. The appropriate value depends on the instrument and timeframe you trade, and is best determined by your own observation rather than a fixed recommendation.
 
 ## How to Use It for Entries and Exits
 
-### Entry Rules (I tested these with a 1:2 risk-reward)
+### Entry Logic
 
 **Long (Morning Star formation):**
-- Wait for the indicator arrow to appear below the third candle’s close
-- Enter on the next candle’s open
-- Stop loss: 1.5x the pattern’s range (high of first candle to low of third candle)
-- Take profit: 2x risk or swing high resistance
+- Wait for the indicator arrow to appear below the third candle's close.
+- Enter on the next candle's open.
+- Place the stop below the pattern's low.
+- Target a fixed multiple of risk or the next swing high resistance.
 
 **Short (Evening Star formation):**
-- Arrow appears above the third candle’s close
-- Enter next candle open
-- Stop loss: 1.5x pattern range
-- Take profit: 2x risk or swing low support
+- Arrow appears above the third candle's close.
+- Enter on the next candle's open.
+- Place the stop above the pattern's high.
+- Target a fixed multiple of risk or the next swing low support.
 
-**Key filter:** Only take the trade if the pattern aligns with the 50 EMA trend. Morning star with price above EMA? Stronger. Evening star with price below EMA? More reliable.
+**Trend filter:** The indicator itself provides no trend context, so many traders pair it with a moving average or similar tool. A morning star that aligns with the prevailing trend is generally treated as a stronger setup than one that appears against it.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 ### Pros
-- **Simple and effective** – No overfitting. It catches the exact patterns I manually scan for.
-- **Backtest-friendly** – Reproducible signals. You can trust the arrows.
-- **Low false signal rate** – The body size filter actually works. On BTC daily, I got 14 signals in 3 months, 11 were profitable.
-- **Multi-timeframe** – Works from 5-minute to weekly charts.
+- **Simple and rule-based** – No overfitting; the logic is transparent.
+- **Reproducible signals** – The arrows appear at defined points, which makes the indicator straightforward to evaluate.
+- **Body size filter** – The filter removes marginal three-candle formations that would otherwise generate noise.
+- **Multi-timeframe** – The logic applies across timeframes.
 
 ### Cons
-- **Rare signals** – On daily charts, you might get 3-5 signals per month. That’s fine for swing traders, bad for scalpers.
-- **No trend context** – It doesn’t show you support/resistance or EMA. You need to add those manually.
-- **Late entries** – The arrow appears after the third candle closes. On 1H charts, that means you’re entering 1-3 hours after the pattern starts. Not ideal for day trading.
+- **Rare signals** – The pattern itself is uncommon, especially on higher timeframes, which limits its usefulness for active, high-frequency trading.
+- **No trend context** – It does not display support, resistance, or moving averages; you need to add those separately.
+- **Late entries** – The arrow only appears after the third candle closes, so entries occur after the pattern has already formed.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This indicator is **perfect for swing traders** who trade daily or 4H charts and want automated pattern detection without noise. If you scalp 5-minute charts, skip it – you’ll get 2 signals a week and 60% of them will fail in choppy markets.
+This indicator suits swing traders who work on daily or 4H charts and want automated pattern detection without clutter. Traders who need frequent signals on very short timeframes will likely find the signal count too low and the entries too late.
 
 ## Better Alternatives
 
-If you want more frequent signals, try **Pivot Points Reversal** by LuxAlgo – it catches similar reversals but uses price action levels instead of strict candlestick patterns. For trend confirmation, **Supertrend** pairs well with this indicator.
+If you want more frequent signals, **Pivot Points Reversal** by LuxAlgo catches similar reversals using price action levels instead of strict candlestick patterns. For trend confirmation, **Supertrend** pairs well with this indicator.
 
 ## FAQ
 
-**Q: Does this repaint?**  
-A: No. Once the third candle closes, the arrow is fixed. No repainting.
+**Q: Does this repaint?**
+A: No. Once the third candle closes, the arrow is fixed.
 
-**Q: Can I use it on crypto?**  
-A: Yes. Works on BTC and ETH daily charts. Just increase the middle candle filter to 35% to avoid false signals in volatile moves.
+**Q: Can I use it on crypto?**
+A: Yes. It applies to crypto pairs; the body size filter can be adjusted to account for more volatile moves.
 
-**Q: What timeframe is best?**  
-A: Daily and 4H. Lower timeframes have too much noise.
+**Q: What timeframe is best?**
+A: Higher timeframes such as daily and 4H produce cleaner formations than very short timeframes.
 
-**Q: Does it work in backtesting?**  
-A: Yes. The signals appear exactly when they would have in real time.
+**Q: Does it work in backtesting?**
+A: Yes. Signals appear at the point the pattern completes, so historical evaluation reflects the same logic as live use.
 
 ## Final Verdict
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-This indicator does one thing and does it well. It’s not a holy grail – no indicator is – but it saves you hours of scanning charts for reversal patterns. The body size filter is a genuine improvement over basic pattern scripts.
+This indicator does one thing and does it well. It is not a holy grail – no indicator is – but it saves the manual work of scanning charts for reversal patterns. The body size filter is a genuine improvement over basic pattern scripts.
 
-Deduct one star because it lacks built-in trend context and the signals are too rare for active day traders. If you swing trade and want a reliable pattern scanner, this is a solid buy. Just pair it with an EMA or volume filter.
+It loses a star because it lacks built-in trend context and the signals are too rare for active day traders. If you swing trade and want a pattern scanner, this is a reasonable tool. Pair it with an EMA or volume filter.
 
-**Bottom line:** Worth installing if you trade reversals on higher timeframes. Not for scalpers.
-
----
+**Bottom line:** Worth considering if you trade reversals on higher timeframes. Not for scalpers.
 
 ## Go Deeper with The Indicator Lab
 

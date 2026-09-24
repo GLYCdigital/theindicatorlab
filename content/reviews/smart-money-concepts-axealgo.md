@@ -17,81 +17,86 @@ categories:
 rating: 4
 description: "Smart_Money_Concepts_Axealgo review: how this SMC trend indicator maps market structure, its best settings, entry logic, and honest pros and cons."
 tv_script_url: "https://www.tradingview.com/script/T6uyHqAb-Smart-Money-Concepts-AxeAlgo/"
+sources: ["https://www.tradingview.com/script/T6uyHqAb-Smart-Money-Concepts-AxeAlgo/"]
 ---
-Smart_Money_Concepts_Axealgo is one of the many TradingView scripts trying to translate "smart money concepts" into something mechanical. Most of them fail because they either repaint aggressively or flood the chart with so many boxes and labels that you can't see price. This one sits in a better spot than most: it plots market structure, tracks order blocks and liquidity, and — critically — behaves predictably on a MACD-chart workflow. I ran it across several instruments and timeframes before writing this.
+Smart Money Concepts [AxeAlgo] is one of the many TradingView scripts trying to translate "smart money concepts" into something mechanical. Most of them fail because they either repaint aggressively or flood the chart with so many boxes and labels that price becomes unreadable. This one aims at a cleaner middle ground: it plots market structure, order blocks, fair value gaps, liquidity pools, and premium/discount ranges, and the developer states it does not repaint.
 
 ## What it actually does
 
-Strip away the branding and the indicator is doing four things on the chart:
+Strip away the branding and the indicator is doing five things on the chart:
 
-1. **Market structure mapping** — it labels swing highs and lows and flips them between "BOS" (break of structure) and "CHoCH" (change of character). This is the core signal engine.
-2. **Order block detection** — it highlights the last opposing candle before an impulsive move, then draws a zone from it.
-3. **Liquidity/sweep marking** — equal highs and lows get tagged, and when price wicks through them, the script flags it.
-4. **Trend bias** — an internal state that stays bullish until a confirmed CHoCH, then flips.
+1. **Market structure mapping** — it identifies swing highs and lows and distinguishes a Change of Character (CHoCH, a direction change) from a Break of Structure (BOS, a break of prior structure in the current direction). This is the core signal engine.
+2. **Order block detection** — it highlights the price zones where the last aggressive institutional movement originated, which the developer frames as areas where smart money entered and which often act as support or resistance on pullbacks.
+3. **Fair value gap detection** — it marks imbalances between candles (gaps not filled by wicks) using standard three-candle imbalance logic, on the premise that price often returns to fill them.
+4. **Liquidity pools** — it clusters equal highs and equal lows, the levels where retail stops typically sit, and marks when price breaks through them (sweeps).
+5. **Premium/discount** — it shows whether price is trading above (premium) or below (discount) the 50% equilibrium level between the most recent swing high and low.
 
-Notice in the chart above how the structure labels cluster at real pivots rather than every minor wiggle. That's the sign of a sane swing-length input rather than a repainting mess.
+Per the developer, structure signals confirm only after a specified number of bars, which is the mechanism behind the non-repainting claim. Zones themselves never repaint, but they can shrink or change state as price action develops.
 
-## Best settings I tested
+## Settings and How to Tune Them
 
-Defaults are usable, but they're tuned too tight for anything below the 15m.
+The developer documents the following parameters:
 
-- **Swing length:** 10–12 on 1H–4H, 20+ on daily. Below 8 you get noise; above 25 the labels lag badly.
-- **Order block lookback:** keep it at 5–8. Higher values draw zones from stale impulses that price has already ignored.
-- **Show liquidity sweeps:** on for intraday, off for swing trading — equal-high tags clutter a daily chart fast.
-- **Alert on CHoCH only:** leave BOS alerts off unless you want your phone buzzing every hour.
+- **Confirmation Bars:** how many bars confirm a pivot before a structure signal fires. Higher values filter out false signals but add lag. Default is 2.
+- **Min Displacement:** the minimum price movement, in ATR multiples, required for a structure signal to register. Default is 1.0 ATR.
+- **Zone Sizing:** controls the minimum and maximum height of order blocks and FVGs. Adjust to filter noise or capture smaller opportunities.
+- **P/D Lookback:** how many bars back to scan for the swing high and low that define the premium/discount range.
+- **Dashboard Position and Size:** where the info table appears and how large it is.
+- **Colors:** bullish, bearish, and gap colors.
 
-## How I'd trade it
+Two toggles matter as much as any numeric input. **Auto-Tune** automatically scales all sensitivity parameters based on your chart timeframe; turn it off if you prefer manual tuning. **Simple Mode** displays only swing structure without internal noise for a cleaner chart. Individual components are switched on and off through dashboard toggles (Show Structure, Show Order Blocks, Show Fair Value Gaps, Show Liquidity Pools, Show Premium/Discount).
 
-The logic that holds up is boring and repeatable:
+## How to use it
 
-- Wait for a **CHoCH** to flip the bias.
-- Drop to one timeframe lower and wait for price to return to the **order block** the indicator drew.
-- Enter on the reaction, stop below the block, target the previous swing high/low.
+The developer's own framing is that this is a context tool, not a trigger. The workflow implied by the components:
 
-The indicator is a **context tool, not a trigger**. If you're entering the second a BOS label prints, you're buying the top of the impulse. The edge comes from waiting for the retracement into the zone.
+- Let a CHoCH signal a potential change of direction, or a BOS confirm continued directional commitment.
+- Watch for price to return to an order block or fair value gap the indicator has drawn.
+- Use premium/discount positioning to judge whether price is overextended — the developer notes that extreme premium or discount often precedes reversals.
+- Treat liquidity pool breaks as evidence of institutional sweeps rather than as standalone entries.
 
-On the MACD-chart view specifically, the structure labels are easy to read against momentum divergence, which is a genuinely useful combination — CHoCH printing while MACD loses steam is a decent warning that the flip is real.
+The dashboard surfaces current swing bias, internal structure direction, and range position at a glance, so the state of the chart can be read without parsing every label.
 
 ## Pros and cons
 
 **Pros**
-- Structure labels are stable — no obvious repainting on confirmed bars.
-- Order block zones are drawn from logical candles, not arbitrary ones.
-- Clean, uncluttered by default; you can actually see price.
-- Decent alert coverage on CHoCH and sweeps.
-- Works across forex, indices, and crypto without retuning much.
+- The developer states structure signals confirm only on closed bars and that zones never repaint.
+- Order blocks are drawn from the origin of the last aggressive move, not arbitrary candles.
+- Component toggles and Simple Mode let you cut clutter down to swing structure alone.
+- Auto-Tune scales sensitivity to the chart timeframe, removing one manual step.
+- Covers structure, zones, gaps, liquidity, and premium/discount in one script.
 
 **Cons**
-- It's a repackaging of concepts you can find free elsewhere — nothing here is proprietary.
-- Order blocks don't auto-invalidate when price trades through them cleanly; you have to manage that yourself.
-- No multi-timeframe overlay, so HTF bias requires a second chart.
-- The naming is heavy on jargon for what is essentially swing structure + zones.
+- It is a repackaging of concepts available in free scripts elsewhere; nothing here is proprietary.
+- The developer notes it displays only 5 active zones at a time, so older structures age out when multiple are forming.
+- There is no multi-timeframe overlay, so higher-timeframe bias requires a second chart.
+- The naming leans heavily on jargon for what is essentially swing structure plus zones.
+- Order blocks and FVGs are, in the developer's own words, "useful but not infallible" — price may skip through them or reverse before reaching them.
 
 ## Who it's for
 
-Discretionary intraday and swing traders who already think in terms of structure and liquidity, and want the drawing done automatically. If you're brand new to price action, the CHoCH/BOS labels will confuse more than help — learn the concepts first, then use this to speed up your charting.
+Discretionary intraday and swing traders who already think in terms of structure and liquidity and want the drawing automated. The developer targets traders who want to visually identify institutional order flow patterns. If you're brand new to price action, the CHoCH/BOS labels will likely confuse more than help — learn the concepts first, then use this to speed up charting.
 
 ## Alternatives
 
-- **LuxAlgo (free tier):** similar structure tooling, broader feature set, more clutter.
-- **SMC by LuxAlgo / MTF structure scripts:** better if you need higher-timeframe bias on one chart.
-- **Plain pivot + manual zones:** free, more work, zero dependency.
+- **LuxAlgo:** similar structure tooling with a broader feature set and typically more on-chart clutter.
+- **Multi-timeframe structure scripts:** better if you need higher-timeframe bias on a single chart, which this indicator does not provide.
+- **Plain pivots plus manual zones:** free, more work, zero dependency.
 
 ## FAQ
 
-**Does it repaint?** Confirmed structure labels hold. The live, unconfirmed swing can shift until the bar closes — standard for any pivot-based tool.
+**Does it repaint?** The developer states signals confirm only on closed bars and that zones never repaint, though zones can shrink or change state as price develops.
 
-**Is it worth it over free SMC scripts?** Only if you value the cleaner defaults and stable labels. Functionally, the free options cover most of the same ground.
+**Is it worth it over free SMC scripts?** Only if you value the component toggles, Auto-Tune, and Simple Mode. Functionally, free options cover much of the same ground.
 
-**Best timeframe?** 1H and 4H. It degrades on 1m–5m where noise dominates.
-
-**Can I use it alone?** No. Treat it as structure context and pair it with a momentum or volume trigger.
+**Can I use it alone?** The developer explicitly says no — it identifies structural levels and patterns but does not predict direction or guarantee support/resistance, and should be one component of a complete trading plan.
 
 ## Verdict
 
-Smart_Money_Concepts_Axealgo does the job cleanly and without the repainting games that plague this category. It's not original, and it won't hand you a strategy — but as a charting accelerator for traders who already know what they're looking at, it earns its place.
+Smart Money Concepts [AxeAlgo] packages structure, order blocks, fair value gaps, liquidity pools, and premium/discount into one non-repainting chart layer, with toggles and an auto-tuning option to keep the chart readable. It isn't original, and it won't hand you a strategy — the developer is explicit that it does not predict direction — but as a charting accelerator for traders who already know what they're looking at, it covers the ground it claims to.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — solid, stable, and usable; a point off for offering nothing you can't assemble free with a bit of effort.
+**Rating: 4/5** — solid and usable; a point off for offering nothing you can't assemble free with a bit of effort.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

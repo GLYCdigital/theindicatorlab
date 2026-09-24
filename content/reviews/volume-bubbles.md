@@ -16,83 +16,83 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Volume Bubbles review: hands-on test of TradingView's volume visualization. Best settings, entry/exit strategies, and honest pros/cons for day traders."
+grounding: "none (no source found)"
 ---
-
 **What This Indicator Actually Does**
 
-Volume Bubbles replaces the standard volume histogram with floating circles that change size and color based on volume activity. Every time a new bar closes, a bubble appears at the bar's midpoint. The bigger the bubble, the higher the volume. Red bubbles mean bearish volume, green means bullish. It's that simple—no repainting, no lag, no hidden math.
+Volume Bubbles replaces the standard volume histogram with floating circles that change size and color based on volume activity. A bubble appears at each bar's midpoint. The bigger the bubble, the higher the volume. Red bubbles indicate bearish volume, green indicates bullish. The presentation is visual rather than numerical.
 
-**Key Features That Set It Apart**
+**Key Features**
 
-- **Size scaling by relative volume**: Bubbles aren't static. They automatically adjust to the current chart's volume range. A "big" bubble on a quiet Sunday looks proportional to a "big" one on a busy Friday.
-- **Color logic tied to close vs. open**: Green if close > open, red if close < open. You can also toggle to use the previous bar's color for better trend context.
-- **Transparency options**: You can fade out low-volume bubbles so only significant bars stand out. This cuts visual noise dramatically.
-- **No extra indicators needed**: It works on any timeframe, any asset. No moving averages, no VWAP overlay required.
+- **Size scaling by relative volume**: Bubbles adjust to the chart's current volume range rather than displaying fixed sizes.
+- **Color logic tied to close versus open**: Green when close is above open, red when close is below open, with an option to inherit the previous bar's color for trend context.
+- **Transparency options**: Low-volume bubbles can be faded so only higher-activity bars stand out, reducing visual noise.
+- **No companion indicators required**: It overlays on its own, without needing moving averages or a VWAP overlay.
 
-**Best Settings with Specific Recommendations**
+**Settings and How to Tune Them**
 
-For a 5-minute ES or NQ chart:
-- **Bubble size multiplier**: 1.5 (default is 1.0—this makes big volume days pop without overwhelming the chart)
-- **Maximum bubble size**: 50 pixels (prevents bubbles from overlapping price action)
-- **Transparency threshold**: 40 (hides bubbles below 40% of the current session's average volume)
-- **Color mode**: "Close vs. Open" (standard)
+The indicator exposes a small set of visual controls. Exact values are a matter of chart conditions and personal preference, not fixed recommendations:
 
-For daily swing trading:
-- **Bubble size multiplier**: 2.0
-- **Maximum bubble size**: 70 pixels
-- **Transparency threshold**: 20 (shows almost everything)
+- **Bubble size multiplier**: Scales overall bubble size up or down.
+- **Maximum bubble size**: Caps how large a bubble can grow, which matters on charts where large bubbles would otherwise overlap price action.
+- **Transparency threshold**: Sets the volume level below which bubbles fade out.
+- **Color mode**: Chooses between close-versus-open coloring and previous-bar color inheritance.
+- **Scale to chart**: Toggles whether bubble sizing adapts to the visible volume range. If bubbles all render at the same size, this is the first setting to check.
 
-**How to Use It for Entries and Exits**
+**How to Use It**
 
-I tested this on a 15-min BTCUSDT chart and found two reliable setups:
+The indicator is a visual filter rather than a signal generator. Its practical use is scanning for unusually large volume bars without reading a histogram. Typical approaches include watching for outlier bubbles near support or resistance, and noting clusters of small, faded bubbles as low-activity periods. As with any volume tool, the first bars of a session tend to reflect opening activity rather than directional conviction.
 
-1. **Volume climax exits**: When you see a bubble at least 2x larger than the previous 20 bars, and it's red at a resistance level, take profit. The chart above shows this clearly at the July 14 top.
-2. **Low-volume pullback entries**: After a green volume spike, wait for 3-5 bars with small, faded bubbles. That's exhaustion. Enter on the next green bubble expansion.
-
-Don't trade the first bubble of the day—it's often just market open noise.
-
-**Honest Pros and Cons**
+**Pros and Cons**
 
 Pros:
-- Instantly highlights volume anomalies that standard histograms bury
-- Works on all timeframes without recalibration
-- Cleaner than a histogram—no vertical bars competing with price action
+- Highlights volume anomalies that a standard histogram can bury
+- Works across timeframes without recalibration
+- Visually cleaner than vertical histogram bars competing with price action
 
 Cons:
-- Can't show exact volume numbers (you still need the Volume indicator for that)
-- On timeframes below 1-minute, bubbles overlap and become useless
-- No volume-weighted average price (VWAP) or delta—it's just raw volume with a visual twist
+- Cannot display exact volume values; a separate volume indicator is still needed for that
+- On very short timeframes, bubbles can overlap and lose clarity
+- No VWAP or delta — it is raw volume with a visual treatment
 
-**Who It's Actually For**
+**Who It's For**
 
-Day traders and scalpers who scan multiple charts quickly. If you need to identify "is this bar important?" in half a second, Volume Bubbles earns its place. Swing traders will find it helpful for spotting climax volume on daily charts. Position traders can skip it—volume context matters less on weekly bars.
+Traders who scan multiple charts quickly and need a fast read on whether a bar is significant. Swing traders may find it useful for spotting climactic volume on daily charts. Traders working primarily from weekly bars will get less from it, since volume context matters less at that scale.
 
-**Better Alternatives If They Exist**
+**Alternatives**
 
-- **Volume Profile (Fixed Range)**: Better if you need to see where volume traded, not just how much.
-- **CVD (Cumulative Volume Delta)**: If you trade order flow, CVD gives more actionable divergence signals.
-- **Standard Volume + VWAP**: For most traders, this combo is more useful than bubbles alone.
+- **Volume Profile (Fixed Range)**: Better for seeing *where* volume traded, not just how much.
+- **CVD (Cumulative Volume Delta)**: More useful for order-flow and divergence work.
+- **Standard Volume plus VWAP**: For many traders, a more complete combination than bubbles alone.
 
-Volume Bubbles is a *supplement*, not a replacement. Don't ditch your volume profile for it.
+Volume Bubbles is a supplement, not a replacement for those tools.
 
 **FAQ**
 
-*Q: Does it repaint?*  
-No. Each bubble locks in when the bar closes.
+*Q: Does it repaint?*
+Each bubble is drawn from the closed bar's data.
 
-*Q: Can I use it on crypto?*  
-Yes. Works on any market with volume data.
+*Q: Can I use it on crypto?*
+It works on any market that provides volume data.
 
-*Q: Why are my bubbles all the same size?*  
-You probably have "Scale to chart" unchecked. Enable it in settings. Or your volume is flat—rare, but possible on illiquid pairs.
+*Q: Why are my bubbles all the same size?*
+Check whether scale-to-chart is enabled, or whether the instrument simply has flat volume.
 
 **Final Verdict**
 
-Volume Bubbles is a top-tier visual filter. It won't make you a better trader, but it will help you *see* volume faster. For the price (free if you have TradingView Premium, otherwise $5/month), it's a solid 4-star tool. The missing star is because it doesn't add any new *information*—it just presents existing data more clearly. That's still valuable, but don't expect magic.
+Volume Bubbles is a clean visual filter. It does not generate new information — it presents existing volume data more legibly. That is a real convenience for active chart scanning, and the tool is priced accordingly. Expect clarity, not edge.
 
-**⭐ 4/5 – Recommended for active traders who value speed over depth.**
+**4/5 – Recommended for active traders who value speed of reading over depth of data.**
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

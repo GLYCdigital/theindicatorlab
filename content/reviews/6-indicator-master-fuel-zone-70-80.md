@@ -17,90 +17,76 @@ categories:
 rating: 4
 description: "Honest 4/5 review of 6_Indicator_Master_Fuel_Zone_70_80: settings, entry logic, pros/cons, and who should use this trend indicator."
 tv_script_url: "https://www.tradingview.com/script/Ww3y4Ps8-6-Indicator-Master-V5-Fuel-Zone-70-80/"
+sources: ["https://www.tradingview.com/script/Ww3y4Ps8-6-Indicator-Master-V5-Fuel-Zone-70-80/"]
 ---
-I'll be straight with you: the name "6_Indicator_Master_Fuel_Zone_70_80" sounds like something a spam bot generated. But after three weeks of backtesting and live charting on BTC, EURUSD, and a few US equities, I can tell you there's actually a coherent system buried under that clunky label. It's not revolutionary, but it does one thing well — and that's more than most multi-indicator mashups can claim.
+# Get started Review
+
+The name alone invites skepticism, and the script's own documentation is refreshingly candid about the limits of what any indicator can do. What follows is a review of what the source material actually supports — and it supports less than the label suggests.
 
 **What it actually does**
 
-This is a trend-following composite that combines six separate calculations into a single visual output. The "70_80" in the name refers to the default threshold zones — think of them as overbought/oversold bands, but they're applied to a composite score rather than a single oscillator. The core idea: when the composite crosses above the 70 zone, momentum is shifting bullish; below 80, it's shifting bearish. The indicator plots a colored histogram, a signal line, and optional alert levels.
+This is a study-type script built around a composite signal. According to the official description, the author's own framing is that the goal is to find a balance between early and reliable signals rather than to promise accurate early entries. The description explicitly states that no indicator can guarantee accurate early entries, and that making a signal faster inevitably means accepting more false signals.
 
-Look at the chart above — you'll notice the histogram switches between three states: green (composite rising above 70), red (falling below 80), and gray (the 70–80 neutral zone). That neutral band is the secret sauce. Most trend indicators give you binary signals; this one forces you to wait for a decisive breakout of that 10-point range, which filters out a surprising amount of chop.
+The description also references a "V5 dashboard" and a proposed "V6 Fast Entry" variant that would give signals earlier instead of waiting for all six indicators to fully align. That implies the underlying logic is a six-indicator alignment model, where a signal fires only once all components agree. A faster version would relax that requirement.
 
-**Key features that set it apart**
+That is the full extent of what the documentation establishes. It does not specify which indicators are used, how they are weighted, what the thresholds are, or how the composite is calculated.
 
-The standout is the composite scoring. Instead of making you juggle six separate windows, it normalizes RSI, MACD momentum, ADX, and three proprietary calculations into one line. That's genuinely useful for screen real estate and decision fatigue.
+**Key features**
 
-Second, the alert system is actually implemented well. You can set alerts for zone crossovers, histogram color changes, and signal line crosses — and they trigger reliably. That's rarer than it should be on TradingView.
+Based on the source material, the notable characteristics are:
 
-Third, the default settings are sane. I rarely say that. Most indicators ship with hyper-sensitive defaults that generate 50 signals a day. This one defaults to a 14-period lookback with a smoothing factor of 3, which produces maybe 2–4 quality signals per week on daily charts.
+- **Composite alignment logic.** The script waits for six indicators to align before producing a signal. This is the core design tradeoff the author acknowledges: alignment produces fewer, slower signals, but the alternative — firing earlier — brings more false positives.
+- **A dashboard component.** The description refers to a "V5 dashboard," implying an on-chart summary panel rather than a bare plot.
+- **A stated design philosophy.** The author's position is that the correct approach is to find the best balance between early and reliable signals, then backtest it. That is an honest framing and worth taking at face value.
 
-**Best settings I tested**
+**Settings and How to Tune Them**
 
-After running it against 200+ trades across different markets, here's what worked:
+The source material does not document any specific parameter values, defaults, or ranges. There is no published information on lookback periods, smoothing factors, zone widths, or threshold levels. Any numbers cited elsewhere would be invented, so this review will not cite any.
 
-- **Timeframe:** 1H and 4H give the best signal-to-noise ratio. On 5M, it's noise. On Daily, it's too slow for most traders.
-- **Lookback:** 21 instead of the default 14. This smooths out false breakouts on crypto and indices.
-- **Smoothing:** Leave at 3. Higher values lag too much.
-- **Zone width:** If you're trading ranging markets, widen to 65/85. For trend days, tighten to 75/85 — but expect more whipsaws.
+Conceptually, the tunable dimension the author identifies is signal timing: how strictly the six components must align before a signal is produced. Tightening alignment requirements delays signals but reduces false positives; loosening them does the reverse. The author frames this as a balance to be found and verified through backtesting, not as a setting with one correct value.
 
-**How to actually trade it**
+**How to approach it**
 
-The entry logic that made the most sense in my testing: wait for the histogram to flip from gray to green *and* for the signal line to cross above the composite line. That double confirmation cut my false entries by about 40% compared to using the histogram alone.
+The description's own guidance is the most useful thing here: find the balance between early and reliable, then backtest it. That means treating the indicator as a starting framework rather than a finished system, and validating any configuration on your own data before relying on it.
 
-For exits, the indicator gives you a natural stop: when the histogram enters the gray zone, the trend is weakening. Take partial profits there. Full exit when the color flips completely. Combined with a trailing stop at 1.5x ATR, this produced a positive expectancy on 76% of the trades I tracked.
+No entry logic, exit logic, stop methodology, or confirmation rule is described in the source material, so none can be attributed to the script.
 
-If you're a swing trader, pair it with a volume-based filter. I found that signals on days with below-average volume were significantly less reliable. That's not in the indicator itself, but it's an easy overlay.
-
-**Pros & cons**
+**Pros and cons**
 
 Pros:
-- The neutral zone filter genuinely reduces overtrading
-- Clean visual output — no cluttered panes
-- Reliable alerts that fire correctly
-- Works across asset classes without heavy re-tuning
+- The author is upfront that no indicator guarantees accurate early entries — an unusually honest disclaimer
+- The design explicitly acknowledges the speed-versus-reliability tradeoff rather than hiding it
+- A dashboard component suggests the output is organized for at-a-glance reading
 
 Cons:
-- The name is terrible and makes it hard to search for
-- It's not a standalone system — you need a trend filter to avoid ranging markets
-- No built-in backtesting metrics (you'll need to track manually)
-- The proprietary calculations are opaque — you can't see exactly what's being computed
+- The documentation does not name the six indicators, their weights, or the calculation method
+- No default settings, thresholds, or parameter ranges are published
+- No backtesting results or performance data are provided
+- The name is unwieldy and hard to search for
 
 **Who it's for**
 
-This is for traders who understand that trend-following is about patience, not frequency. If you're a scalper looking for 50 signals a day, skip it. If you're a swing trader or position trader who wants one clean composite to base decisions on, this is genuinely worth a look. It's also great for people who currently use three or four separate indicators and want to consolidate.
+Traders who want a multi-indicator alignment framework and are willing to tune and backtest it themselves. It is not presented as a ready-made system, and the source material gives no basis for claiming it suits any particular market, timeframe, or trading style.
 
-**Alternatives worth considering**
+**Alternatives**
 
-If you want something more aggressive, look at the SuperTrend with a momentum filter — faster signals but more whipsaws. For a more comprehensive suite, the All-In-One Indicator by LonesomeTheBlue is arguably more polished, though it's harder to read at a glance. If you want pure simplicity, just use MACD with a 21 EMA filter — you'll get 80% of the same information with zero indicator clutter.
+The source material does not name or compare any alternative indicators, so no alternatives are recommended here.
 
 **FAQ**
 
 *Does it repaint?*
-No. The histogram colors are based on closed-bar data, so signals don't disappear after the fact. This was the first thing I checked.
+The source material does not address repainting. No claim can be made either way.
 
-*Can I use it for crypto?*
-Yes, but widen the zones to 65/85. Crypto's volatility will trigger the default 70/80 bands too frequently.
+*What indicators does it combine?*
+The description refers to six indicators aligning, but does not name them.
 
-*Does it work for options trading?*
-It's decent for directional plays, but don't use it for volatility strategies. It has no IV component.
+*Does it work on any particular timeframe or market?*
+The source material makes no claims about timeframes or asset classes.
 
 **Final verdict**
 
-The 6_Indicator_Master_Fuel_Zone_70_80 is a solid, workmanlike trend indicator that does exactly what it promises — no more, no less. The 70/80 neutral zone concept is clever and genuinely reduces noise. It won't make you a better trader overnight, but if you're looking for a clean composite to base your swing trades on, it's a reliable tool that earns its place in your toolkit.
+There is very little verifiable information here. The script is a study built on a six-indicator alignment model with a dashboard, and its author is honest about the tradeoff between early and reliable signals. Everything beyond that — the specific indicators, the settings, the performance — is undocumented in the source material. Treat it as a framework to backtest, not a finished tool, and expect to do the validation work yourself.
 
-It's not exceptional, but it's honest, functional, and — once you get past that ridiculous name — surprisingly effective.
-
-⭐⭐⭐⭐ — Recommended for swing and position traders who want a single, reliable trend composite.
-
-## Frequently Asked Questions
-
-### Is 6_Indicator_Master_Fuel_Zone_70_80 worth it?
-
-Based on testing across multiple timeframes, 6_Indicator_Master_Fuel_Zone_70_80 delivers solid value for traders who need trend analysis.
-
-### Does this indicator repaint?
-
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

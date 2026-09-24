@@ -16,88 +16,85 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Hull_Ma_Cross_Signal gives clean, low-lag cross signals with Hull Moving Averages. Fast on entries, few false triggers. Best on 1H–4H. Read our full review."
+grounding: "none (no source found)"
 ---
-
-**Hull_Ma_Cross_Signal** is one of those indicators that sounds simple but actually delivers. It uses Hull Moving Averages—not your standard SMA or EMA—to generate cross signals. If you've ever been frustrated by laggy moving averages that confirm a move after it's already over, this one might click.
-
-I tested it on BTC/USD 1H, EUR/USD 4H, and some swing trades on daily. Here's what I found.
+**Hull_Ma_Cross_Signal** is a crossover indicator built on Hull Moving Averages rather than standard SMA or EMA lines. The premise is straightforward: reduce the lag that makes conventional moving-average crosses confirm a move after most of it has already happened. Whether it succeeds is largely a question of how you use it, since the script itself does very little beyond plotting two lines and marking where they cross.
 
 ## What This Indicator Actually Does
 
-It plots two Hull Moving Averages (fast and slow) and marks buy/sell arrows when they cross. The Hull MA is known for reducing lag while keeping smoothness—Alan Hull designed it to solve the exact problem of traditional MAs being slow to react. So when you see a cross here, it's often several bars ahead of an EMA cross of similar length.
+It plots two Hull Moving Averages — a fast one and a slow one — and marks buy and sell arrows at the points where they cross. The Hull MA was designed by Alan Hull specifically to reduce lag while preserving smoothness, which is the same problem traditional moving averages struggle with. On that basis, a Hull cross should register earlier than an EMA or SMA cross of comparable length.
 
-The arrows appear on the chart with optional alert triggers. No repainting in my testing (I checked by reloading historical data). That's a big plus.
+The arrows plot directly on the chart, and the indicator exposes alert triggers for cross events. Beyond that, the feature set is minimal by design.
 
-## Key Features That Set It Apart
+## Key Features
 
-- **Hull MA instead of SMA/EMA** – less lag, smoother curves, fewer whipsaws around ranging markets.
-- **Customizable lengths** – you can tweak fast and slow periods independently.
-- **Visual clarity** – arrows are clean, not cluttered. No extra lines or boxes.
-- **Alert functionality** – set alerts for cross events directly from the indicator settings.
-- **No repaint** – critical for trust. Verified across multiple timeframes.
+- **Hull MA instead of SMA/EMA** – the stated purpose is less lag and smoother curves.
+- **Customizable lengths** – fast and slow periods can be adjusted independently.
+- **Visual clarity** – arrows only; no extra lines, boxes, or shading.
+- **Alert functionality** – cross events can be wired to alerts from the indicator settings.
+- **No trend filter** – there is nothing built in to keep you out of counter-trend crosses.
 
-## Best Settings (What Actually Worked)
+## Settings and How to Tune Them
 
-I tested several combinations. Here's what I'd recommend:
+The indicator exposes two parameters: a fast Hull length and a slow Hull length. Both are adjustable, and the relationship between them determines how frequently the lines cross. Shorter lengths produce more crosses; longer lengths produce fewer.
 
-- **Fast Hull Length:** 9 (default often 7–9, but 9 smoothed noise on 1H)
-- **Slow Hull Length:** 21 (standard golden cross feel, but reacts faster than EMA 50)
-- **Timeframe:** 1H to 4H. Lower than 15m gets noisy. Daily works but signals are rare.
-- **Optional filter:** pair with 200 EMA on higher timeframe to avoid trading against trend. The indicator alone doesn't have trend filter built-in.
+The script does not include a trend filter, a higher-timeframe reference, or an alternate moving-average type. If you want any of those, they have to come from elsewhere on your chart. There is also no built-in option to restyle the lines or change the arrow appearance.
 
-If you scalp 5m, use fast=5, slow=13 and accept more false signals. Not ideal, but manageable.
+Because the source material for this indicator does not document specific recommended values, treat the length settings as something to reason about rather than copy: the fast length should be short enough to react, the slow length long enough to represent the prevailing direction, and the gap between them wide enough that you are not trading every minor wiggle.
 
 ## How to Use It for Entries and Exits
 
-**Long entry:** Wait for fast Hull MA to cross above slow Hull MA. Arrow appears. Enter on next candle open if price is above both MAs.
+**Long entry:** the fast Hull MA crosses above the slow Hull MA and an arrow appears.
 
-**Exit:** Either set a fixed risk/reward (1.5:1 or 2:1) or exit when the fast Hull MA crosses back below slow. That second cross is your exit signal.
+**Short entry:** the opposite cross — fast below slow.
 
-**Short entry:** Opposite cross. Fast below slow.
+**Exit:** either a fixed risk/reward target, or the opposite cross, where the fast line crosses back through the slow one.
 
-**Pro tip:** Don't trade every cross. In a sideways market, you'll get chopped. Use a volume indicator or RSI divergence to confirm momentum. The cross alone is clean, but confirmation reduces drawdowns.
+The main practical caution is that a cross is a cross, and any moving-average crossover will generate signals in a sideways market that go nowhere. A volume reading or a momentum oscillator can serve as a confirmation filter, and a higher-timeframe trend reference can keep you from taking crosses that fight the larger direction. None of that is part of the indicator; it is work you do around it.
 
-## Honest Pros and Cons
+## Pros and Cons
 
 **Pros:**
-- Low lag is real. You'll enter earlier than with EMA/SMA cross systems.
-- Clean chart. No clutter.
-- Alerts work reliably.
-- Free to use (public script on TradingView).
+- Lower lag than comparable SMA/EMA cross systems, by construction of the Hull MA.
+- Clean chart — arrows only, no clutter.
+- Alerts available for cross events.
+- Free to use as a public TradingView script.
 
 **Cons:**
-- No trend filter built-in. You need to add your own.
-- False signals in ranging markets (same as any MA cross system).
-- Limited customization beyond lengths—no option for different MA types or color changes on the lines themselves.
-- Arrow style is basic; some traders prefer more visual feedback.
+- No trend filter built in; you supply your own.
+- False signals in ranging markets, as with any MA cross system.
+- Limited customization — lengths only, no alternate MA types or line styling.
+- Basic arrow visuals.
 
-## Who It's Actually For
+## Who It's For
 
-- **Swing traders** on 1H–4H who want earlier entries than EMA crosses.
-- **Day traders** who pair it with a trend filter (like higher timeframe SMA).
-- **Traders tired of repainting indicators** – this one doesn't repaint.
+Traders on intraday and swing timeframes who want earlier cross signals than an EMA system provides, and who are willing to pair the indicator with their own trend or momentum filter. It is not aimed at anyone trading very short timeframes, where the noise-to-signal ratio on any crossover system becomes the dominant problem.
 
-Not for scalpers on 1m charts. Noise kills it.
+## Alternatives
 
-## Better Alternatives
-
-If you need a trend filter included, look at **Hull Suite** (combines Hull MA with ATR bands). If you want a full system, **Kaufman's Adaptive Moving Average (KAMA) Cross** handles noise better in ranging markets. But for pure, low-lag cross signals, this is one of the best free options.
+If you want the trend filter included in the same script, look at **Hull Suite**, which combines a Hull MA with ATR bands. If noise in ranging conditions is your main complaint, **Kaufman's Adaptive Moving Average (KAMA) Cross** is built to adapt its smoothing to market conditions. For a bare, low-lag crossover with nothing else attached, this one is a reasonable free option.
 
 ## FAQ
 
-**Does it repaint?** No. I reloaded historical data and arrows stayed in place.
+**Does it repaint?** The source material does not address repainting, so no claim is made either way here. Verify it yourself on your own chart before relying on the arrows.
 
-**Can I use it on crypto?** Yes. Works fine on BTC, ETH, altcoins. Same settings apply.
+**What timeframe is best?** The source material does not specify one. Crossover behavior changes with timeframe, so test on the timeframe you actually trade.
 
-**What timeframe is best?** 1H to 4H. Daily is okay but signals are infrequent.
-
-**Does it work for forex?** Yes. I tested on EUR/USD and GBP/JPY. Clean signals.
+**Does it work on crypto or forex?** Nothing in the source material restricts it to particular markets. It is a moving-average crossover, so it will plot on any instrument your data feed supports.
 
 ## Final Verdict
 
-**4/5 stars.** Hull_Ma_Cross_Signal does exactly what it promises—clean, low-lag MA cross signals without repainting. It's not a holy grail (nothing is), but it's a solid tool for traders who want to get in a little earlier. Pair it with a trend filter and you've got a reliable edge. The missing trend filter and basic visuals keep it from a perfect score, but for a free indicator, it's excellent.
+Hull_Ma_Cross_Signal does one thing: it plots two Hull moving averages and marks their crosses. The Hull construction is a genuine argument for earlier signals than a comparable EMA cross, and the script stays out of the way otherwise. What it does not do is filter anything — no trend context, no volatility awareness, no confirmation. That is the trade-off, and it is why the indicator is best treated as one component of a setup rather than a complete system. For a free script, the scope is honest and the limitations are predictable.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Hull MA** implementation was backtested on 30 markets over 5 years of daily data (43,820 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: AMD 56.0%, AAPL 54.5%, PLTR 53.4%, USDJPY 52.9%
+- Weakest markets: WTI 46.2%, VIX 44.5%, SHIBUSD 26.6%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

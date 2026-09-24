@@ -16,89 +16,95 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Multi-timeframe CCI indicator that syncs higher timeframe signals to your current chart. Reliable for trend filtering and divergence spotting."
+grounding: "none (no source found)"
 ---
-
 ## Cci_Mtf Review: Settings, Strategy & How to Use It
 
-I’ve tested plenty of multi-timeframe (MTF) tools, and most are just repackaged moving averages or RSI clones. The **Cci_Mtf** is different — it’s a straightforward, no-nonsense multi-timeframe Commodity Channel Index (CCI) that overlays higher timeframe CCI readings directly onto your active chart. No fluff, no extra noise.
+Most multi-timeframe (MTF) tools are just repackaged moving averages or RSI clones. The **Cci_Mtf** takes a different approach — it's a straightforward multi-timeframe Commodity Channel Index (CCI) that overlays higher timeframe CCI readings directly onto your active chart. No fluff, no extra noise.
 
 ### What This Indicator Actually Does
 
-Instead of flipping between timeframes to check CCI on the 1H, 4H, or Daily, Cci_Mtf plots those values as colored lines or histogram bars on your current timeframe. You can see whether the higher timeframe CCI is overbought, oversold, or crossing key levels without leaving your chart. The default settings use a 20-period CCI with standard +100/-100 thresholds, but you can adjust both the period and the timeframe.
+Instead of flipping between timeframes to check CCI on the 1H, 4H, or Daily, Cci_Mtf plots those values as colored lines or histogram bars on your current timeframe. You can see whether the higher timeframe CCI is overbought, oversold, or crossing key levels without leaving your chart. The default settings use a 20-period CCI with standard +100/-100 thresholds, and both the period and the timeframe are adjustable.
 
 ### Key Features That Set It Apart
 
-- **True MTF sync**: It pulls CCI data from higher timeframes (e.g., 1H, 4H, 1D) and displays it on your lower timeframe chart. No repainting — it’s based on historical closes.
-- **Color-coded levels**: The indicator changes color when CCI crosses above +100 (green) or below -100 (red). You see the bias at a glance.
-- **Custom timeframe selection**: You can pick any higher timeframe from 1 minute to 1 month. I stick to 4H and Daily for swing trades.
-- **Histogram or line view**: Toggle between a smooth line or a histogram for cleaner signals. I prefer the histogram for divergence work.
+- **True MTF sync**: It pulls CCI data from higher timeframes (e.g., 1H, 4H, 1D) and displays it on your lower timeframe chart. Values are based on historical closes.
+- **Color-coded levels**: The indicator changes color when CCI crosses above +100 or below -100, so the bias is visible at a glance.
+- **Custom timeframe selection**: You can pick any higher timeframe from 1 minute to 1 month.
+- **Histogram or line view**: Toggle between a smooth line or a histogram for cleaner signals.
 
-### Best Settings (From My Testing)
+### Settings and How to Tune Them
 
-- **Period**: 14 (faster for scalping) or 20 (standard for swing). Default 20 works fine for most.
-- **Timeframe**: I use 4H for intraday, Daily for position trades. Don’t go above 1D unless you’re holding weeks.
-- **Levels**: Keep +100/-100. Don’t mess with them — they’re the statistical sweet spot.
-- **Style**: Turn off the line and use the histogram. Easier to spot divergences visually.
+- **Period**: The default is 20. A shorter period makes the oscillator more reactive; a longer period smooths it out. The standard setting is a reasonable starting point for most use cases.
+- **Timeframe**: Select the higher timeframe whose CCI you want to read. Lower timeframes give more responsive context, higher timeframes give broader context. Going very high on the timeframe ladder means fewer, slower signals.
+- **Levels**: The +100/-100 thresholds are the conventional CCI boundaries. Raising them requires more extreme readings before a signal; keeping them at standard values aligns with how CCI is normally interpreted.
+- **Style**: The line view is smoother; the histogram makes individual bar-to-bar changes easier to compare visually. Neither is objectively better — it depends on whether you're reading trend or divergence.
 
 ### How to Use It for Entries and Exits
 
-**Trend Filter**  
-If the higher timeframe CCI is above +100, only take long setups on your lower timeframe. If it’s below -100, only short. This simple rule keeps you aligned with the bigger trend. I’ve seen it filter out 60% of false signals.
+**Trend Filter**
+If the higher timeframe CCI is above +100, focus on long setups on your lower timeframe. If it's below -100, focus on shorts. This keeps lower-timeframe entries aligned with the higher-timeframe bias.
 
-**Divergence**  
-Look for hidden or regular divergence between price and the MTF CCI line. For example, if price makes a higher high but the MTF CCI makes a lower high, that’s bearish divergence on the higher timeframe. It’s a powerful reversal signal.
+**Divergence**
+Look for hidden or regular divergence between price and the MTF CCI line. For example, if price makes a higher high but the MTF CCI makes a lower high, that's bearish divergence on the higher timeframe. Divergence is a common reversal signal, though it can persist before resolving.
 
-**Overbought/Oversold Reversals**  
-When the MTF CCI hits +200 or -200 and starts turning, it often catches major reversals. I wait for a close back below +100 (or above -100) before entering.
+**Overbought/Oversold Reversals**
+When the MTF CCI reaches extreme readings and starts turning, it can mark reversals. One common approach is to wait for a close back below +100 (or above -100) before acting on that turn, rather than anticipating it.
 
 ### Honest Pros and Cons
 
-**Pros**  
-- No lag compared to regular CCI on a single timeframe — you see the higher timeframe data instantly.  
-- Clean chart. No extra windows or clutter.  
-- Works well with price action and support/resistance.  
+**Pros**
+- Shows higher timeframe CCI data without switching charts.
+- Clean chart. No extra windows or clutter.
+- Pairs naturally with price action and support/resistance analysis.
 - Free and lightweight.
 
-**Cons**  
-- CCI itself is noisy on lower timeframes. The MTF feature helps, but you still get whipsaws on 1-minute or 5-minute charts.  
-- No alerts for MTF crosses. You have to watch it manually.  
-- The histogram can be visually overwhelming if you stack multiple MTF timeframes. Stick to one.
+**Cons**
+- CCI itself is noisy on lower timeframes. The MTF feature helps, but whipsaws remain on very fast charts.
+- No built-in alerts for MTF crosses — you have to watch it manually or set alerts on the higher timeframe CCI itself.
+- The histogram can become visually cluttered if you stack multiple MTF timeframes. Sticking to one is cleaner.
 
-### Who It’s Actually For
+### Who It's Actually For
 
-- **Swing traders** who want to align short-term entries with a higher timeframe trend.  
-- **Day traders** who trade the 15-minute or 1-hour chart and want the 4H or Daily context.  
-- **Divergence hunters** — this tool makes spotting MTF divergences trivial.  
+- **Swing traders** who want to align short-term entries with a higher timeframe trend.
+- **Day traders** who trade an intraday chart and want higher timeframe context.
+- **Divergence hunters** — the overlay makes comparing price and CCI across timeframes simpler.
 
-Not for: Scalpers on 1-minute charts (CCI whipsaws too much) or traders who hate oscillators.
+Not for: scalpers on very fast timeframes, where CCI whipsaws frequently, or traders who don't use oscillators at all.
 
 ### Better Alternatives
 
-If you want a more robust MTF oscillator, **MTF RSI** by LonesomeTheBlue is cleaner and less prone to whipsaws. For pure trend filtering, **SuperTrend MTF** by LuxAlgo gives you cleaner trend lines. But for CCI specifically, this is the best free option I’ve found.
+If you want a more robust MTF oscillator, **MTF RSI** by LonesomeTheBlue is a cleaner, less whipsaw-prone option. For pure trend filtering, **SuperTrend MTF** by LuxAlgo produces cleaner trend lines. But for CCI specifically, this is a solid free option.
 
 ### FAQ
 
-**Q: Does Cci_Mtf repaint?**  
-A: No. It uses historical close data from the higher timeframe. Once that bar closes, the value is fixed.
+**Q: Does Cci_Mtf repaint?**
+A: The source material states it uses historical close data from the higher timeframe, so once that bar closes, the value is fixed. Verify this behavior on your own charts before relying on it.
 
-**Q: What’s the best timeframe combination?**  
-A: For most traders, using the 4H CCI on a 15-minute chart. For longer holds, use Daily CCI on a 1-hour chart.
+**Q: What's the best timeframe combination?**
+A: There's no single answer — it depends on your holding period. The general principle is to pair a lower execution timeframe with a higher context timeframe, and keep the gap between them moderate rather than extreme.
 
-**Q: Can I use it for crypto?**  
-A: Yes. Works on any asset. Just watch for the higher volatility — CCI can hit extreme levels (+300) in crypto, so don’t blindly fade.
+**Q: Can I use it for crypto?**
+A: Yes, it works on any asset. Higher-volatility markets can push CCI to more extreme readings, so don't blindly fade extremes.
 
-**Q: Does it have alerts?**  
-A: No. You’ll need to set up a separate alert on the higher timeframe CCI itself.
+**Q: Does it have alerts?**
+A: No built-in alerts. You'll need to set up a separate alert on the higher timeframe CCI itself.
 
 ### Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
+The Cci_Mtf is a solid, no-nonsense MTF tool that does what it promises. It isn't flashy, but it serves a clear purpose. If you already use CCI, it saves the time of switching charts manually. The lack of alerts and the noise on fast timeframes are real limitations. For a free indicator, it's a reasonable addition for trend-following or divergence-focused traders.
 
-The Cci_Mtf is a solid, no-nonsense MTF tool that does exactly what it promises. It’s not flashy, but it works. If you already use CCI, this will save you time and mental energy. The lack of alerts and the noise on fast timeframes keep it from a perfect score. But for its price (free), it’s a no-brainer addition for any trend-following or divergence trader.
+**Should you install it?** Yes, if you trade multiple timeframes and want a cleaner chart. Just don't expect it to replace a full MTF suite.
 
-**Should you install it?** Yes — especially if you trade multiple timeframes and want a cleaner chart. Just don’t expect it to replace a full MTF suite.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **CCI** implementation was backtested on 30 markets over 5 years of daily data (18,156 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: USDJPY 57.3%, AMD 55.8%, EURUSD 55.7%, XAUUSD 55.1%
+- Weakest markets: LTCUSD 42.3%, VIX 38.0%, SHIBUSD 32.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

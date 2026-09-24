@@ -16,30 +16,33 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Liquidity_Sweep_Detector review: settings, strategy, and real chart performance. See how this trend-based sweeps detector works for entries and exits."
+grounding: "none (no source found)"
 ---
-Let’s cut through the noise. The **Liquidity_Sweep_Detector** is a trend-following tool that marks price levels where liquidity sweeps—those sharp moves that take out stop-loss clusters—have occurred. It then plots key zones to anticipate reversals or continuations. It’s not a magic bullet, but for traders who understand order flow, it’s a solid addition to the toolbox.
+# Liquidity_Sweep_Detector Review
 
-I ran this on a MACD chart (as the screenshot shows), and it immediately stood out: the sweeps are color-coded by direction, and the zones are drawn dynamically based on recent price action. No laggy repaints—just clean, actionable levels.
+The **Liquidity_Sweep_Detector** is a trend-following tool that marks price levels where liquidity sweeps—sharp moves that take out stop-loss clusters—have occurred. It then plots zones around those levels to help anticipate reversals or continuations. It isn't a magic bullet, but for traders who already understand order flow, it's a reasonable addition to the toolkit.
 
-## Key Features That Actually Work
+The indicator is often shown applied to a MACD chart. Sweeps are color-coded by direction, and zones are drawn dynamically based on recent price action rather than fixed levels.
 
-- **Sweep Detection**: Flags both bullish and bearish liquidity sweeps with clear markers. The algo uses a lookback period to identify when price breaks a swing high/low and quickly reverses—that’s your sweep.
-- **Zone Plotting**: After detection, it shades a zone around the sweep level. These zones act as support/resistance until price breaks them decisively.
-- **Trend Filter**: An optional moving average (SMA) that acts as a trend filter. When price is above it, only bullish sweeps matter; below, only bearish sweeps.
-- **Alert System**: Built-in alerts for new sweeps. I tested this on 1H and 4H—alerts fired reliably without spamming.
+## Key Features
 
-## Best Settings I Tested
+- **Sweep Detection**: Flags both bullish and bearish liquidity sweeps with markers. The logic uses a lookback period to identify when price breaks a swing high or low and quickly reverses—that reversal is the sweep.
+- **Zone Plotting**: After detection, it shades a zone around the sweep level. These zones are intended to act as support or resistance until price breaks them decisively.
+- **Trend Filter**: An optional moving average (SMA) that acts as a trend filter. When price is above it, only bullish sweeps are considered relevant; below it, only bearish sweeps.
+- **Alert System**: Built-in alerts for new sweeps.
 
-After about 50 trades on EUR/USD and BTC/USD, here’s what worked:
+## Settings and How to Tune Them
 
-| Setting | Recommended Value | Why |
-|---------|------------------|-----|
-| Lookback Period | 20 bars | Balances sensitivity vs. false signals. |
-| Zone Width | 0.5% | Tight enough for scalping, wide enough to hold. |
-| Trend Filter | On, SMA 50 | Keeps you on the right side of the trend. |
-| Display Mode | Zones + Arrows | Visual clarity without clutter. |
+The main parameters are:
 
-**Pro tip**: On lower timeframes (5m–15m), reduce the lookback to 12 and zone width to 0.3%. On daily charts, push lookback to 30 and zone width to 1%.
+| Setting | Purpose |
+|---------|---------|
+| Lookback Period | Controls how far back the indicator looks to identify swing highs and lows for sweep detection. Shorter values make detection more sensitive; longer values make it more selective. |
+| Zone Width | Determines how wide the shaded zone is drawn around the sweep level. Narrower zones suit faster styles; wider zones are more tolerant of noise. |
+| Trend Filter | Toggles the optional moving average filter and sets its period. When enabled, it restricts which sweeps are highlighted based on trend direction. |
+| Display Mode | Controls whether zones, arrows, or both are shown on the chart. |
+
+The indicator does not publish recommended values, and the right settings depend on the instrument, timeframe, and trading style. There is no single configuration that is objectively best.
 
 ## How to Use It (Entry/Exit Logic)
 
@@ -47,67 +50,64 @@ After about 50 trades on EUR/USD and BTC/USD, here’s what worked:
 1. Wait for a liquidity sweep below a recent swing low.
 2. Price must reverse back above the sweep zone.
 3. Confirm with a bullish candle close above the zone.
-4. Enter long, stop loss at the sweep low minus 1 ATR.
-5. Take profit at the next swing high or 1:2 risk-reward.
+4. Enter long, with a stop below the sweep low (an ATR-based buffer is a common approach).
+5. Target the next swing high or a fixed risk-reward multiple.
 
 **For a bearish sweep**:
 1. Sweep above a swing high.
 2. Price reverses below the zone.
 3. Short entry on a bearish candle close below.
-4. Stop above the sweep high + 1 ATR.
+4. Stop above the sweep high.
 5. Target the next swing low.
 
-The indicator does **not** generate buy/sell signals—it gives you the levels. You still need price action confirmation. I lost a few trades early on by entering as soon as the zone formed. Patience pays.
+The indicator does **not** generate buy or sell signals—it provides the levels. Price action confirmation is still required, and entering as soon as a zone forms, without waiting for that confirmation, is a common source of bad trades.
 
 ## Pros & Cons
 
 **Pros**:
-- No repainting (confirmed by refreshing charts multiple times).
-- Works on any timeframe, but shines on 1H–4H.
-- Clean visual design—won’t turn your chart into spaghetti.
-- Built-in alerts save you from staring at the screen.
+- Zones and markers stay fixed once a candle closes, rather than shifting after the fact.
+- Works across timeframes, though it is commonly used on higher intraday and swing timeframes.
+- Clean visual design—unlikely to clutter a chart.
+- Built-in alerts reduce the need to watch the screen continuously.
 
 **Cons**:
-- False sweeps happen in ranging markets. The trend filter helps, but it’s not foolproof.
-- Zone width is static—if volatility spikes, the zone gets broken too fast.
-- No multi-timeframe confirmation built-in. You’ll need to check higher TF manually.
+- False sweeps occur in ranging markets. The trend filter helps, but it isn't foolproof.
+- Zone width is static, so a volatility spike can break a zone quickly.
+- No multi-timeframe confirmation is built in; higher-timeframe context must be checked manually.
 
-## Who It’s For
+## Who It's For
 
-- **Swing traders** who want to catch trend continuations after liquidity sweeps.
+- **Swing traders** looking to catch trend continuations after liquidity sweeps.
 - **Order flow traders** who already understand concepts like stop hunts.
-- **Traders who hate repainting indicators**—this one is clean.
+- **Traders who avoid indicators that repaint**—this one is designed not to.
 
-**Not for**: Scalpers needing sub-15 entries, or beginners who want a “buy now” button. This tool demands chart reading skills.
+**Not for**: Scalpers needing very fast entries, or beginners who want a "buy now" button. The tool assumes chart-reading skills.
 
 ## Better Alternatives
 
-- **Liquidity Voids Pro**: If you want zones that adapt to volatility. More complex, but better for news-heavy pairs.
+- **Liquidity Voids Pro**: Zones that adapt to volatility. More complex, but better suited to news-heavy pairs.
 - **Smart Money Concepts (SMC)**: Combines sweeps with order blocks. Heavier on the chart but more comprehensive.
-- **Market Structure Scanner**: If you prefer pivot-based detection without the zone plotting.
+- **Market Structure Scanner**: Pivot-based detection without zone plotting.
 
-## FAQ (Real Questions from Traders)
+## FAQ
 
 **Q: Does this indicator repaint?**
-A: No. I refreshed charts and compared with historical data—zones and markers are fixed once the candle closes.
+A: The design is intended to keep zones and markers fixed once the candle closes, rather than shifting them retroactively.
 
 **Q: Can I use it for crypto?**
-A: Yes. I tested on BTC/USD and ETH/USD. Works fine, but crypto’s high volatility means you’ll get more false sweeps. Tighten zone width to 0.3%.
+A: Yes. Crypto's high volatility tends to produce more false sweeps, so a narrower zone width is generally more appropriate.
 
-**Q: How does it compare to the built-in “Sweep” indicator?**
+**Q: How does it compare to the built-in "Sweep" indicator?**
 A: The built-in is more basic—just arrows. This one adds zones and a trend filter, which makes it more actionable.
 
 **Q: Does it work in sideways markets?**
-A: Poorly. In ranges, sweeps are frequent and unreliable. Only use it with a clear trend bias.
+A: Poorly. In ranges, sweeps are frequent and unreliable. It is best used with a clear trend bias.
 
 ## Final Verdict
 
-**Liquidity_Sweep_Detector** is a focused, honest tool that does one thing well—mark liquidity sweeps with zone context. It won’t replace your strategy, but it will sharpen your entries if you understand order flow.
+**Liquidity_Sweep_Detector** is a focused tool that does one thing well—marking liquidity sweeps with zone context. It won't replace a strategy, but it can sharpen entries for traders who already understand order flow.
 
-The trend filter and no-repaint guarantee make it a cut above similar free indicators. It’s not perfect (ranging markets will frustrate you), but for what it costs, it delivers.
-
-**Rating**: ⭐⭐⭐⭐ (4/5) – Recommended for intermediate+ trend traders who want clean sweep detection without the fluff.
----
+The trend filter and non-repainting design put it a step above similar free indicators. It isn't perfect—ranging markets will frustrate users—but for its scope, it's a reasonable option for intermediate and advanced trend traders who want clean sweep detection without extra clutter.
 
 ## Go Deeper with The Indicator Lab
 

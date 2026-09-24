@@ -16,57 +16,58 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Clean Ichimoku Cloud display with custom timeframe spans. Perfect for multi-timeframe analysis and trend confirmation. No bloat, just the core cloud."
+grounding: "none (no source found)"
 ---
-
 ## Ichimoku_Cloud_Spans: What It Actually Does
 
 This isn't another Ichimoku rehash that dumps every possible line on your chart and calls it "enhanced." Ichimoku_Cloud_Spans does one thing well: it displays the classic Ichimoku Cloud (Kumo) — Tenkan-sen, Kijun-sen, Senkou Span A/B, and Chikou Span — but gives you the ability to plot these components **from a higher timeframe** directly on your current chart.
 
-The chart above shows it in action: the cloud on the 1-hour chart is actually the daily cloud, giving you an instant view of where the major support/resistance zones are without flipping tabs. That's the real value here.
+The value here is the overlay itself: instead of flipping between tabs to check where the higher-timeframe cloud sits, you get it drawn on the chart you're already trading. That's the whole pitch.
 
 ## Key Features That Set It Apart
 
-- **Timeframe selection dropdown** — Choose from 1m to monthly. Plot the weekly cloud on a 15m chart. This is the killer feature.
-- **Customizable cloud shift** — Senkou Spans are shifted forward by default (26 periods), but you can tweak this if you trade non-standard settings.
-- **Color-coded cloud fill** — Green when Senkou A > Senkou B (bullish), red when bearish. No surprises.
+- **Timeframe selection dropdown** — Plot a higher-timeframe cloud on a lower-timeframe chart without leaving the current view. This is the core feature.
+- **Customizable cloud shift** — Senkou Spans are shifted forward by default, and this can be adjusted if you trade non-standard Ichimoku settings.
+- **Color-coded cloud fill** — Green when Senkou A > Senkou B (bullish), red when bearish.
 - **Clean label toggle** — Option to hide the indicator name on the chart. Small touch, but reduces clutter.
 
 What it *doesn't* do: no alerts, no multi-timeframe auto-detection, no signal arrows. It's a display tool, not a signal generator.
 
-## Best Settings for Real Trading
+## Settings and How to Tune Them
 
-After testing across 50+ charts, here's what works:
+The indicator exposes a small set of controls rather than a deep parameter panel:
 
-- **For trend traders (4H/1D)**: Keep default settings (9, 26, 52). Set the timeframe one step higher than your chart (e.g., use daily cloud on 4H chart).
-- **For scalpers (1m/5m)**: Set the cloud to the 15m or 1H timeframe. The cloud becomes a dynamic support/resistance zone that holds surprisingly well on lower timeframes.
-- **For swing traders**: Weekly cloud on daily chart. This is the money setup — most retail traders ignore the weekly cloud.
+- **Timeframe selection** — The central setting. You choose which timeframe the cloud is calculated from, and it renders on your current chart. The appropriate choice depends on your holding period and how much higher-timeframe context you want.
+- **Cloud shift** — Controls how far the Senkou Spans are projected forward. The default follows standard Ichimoku convention; adjust it only if you deliberately run non-standard period settings.
+- **Color fill** — Toggles the bullish/bearish coloring of the cloud.
+- **Label toggle** — Hides or shows the indicator name on the chart.
 
-**Pro tip**: Disable the Chikou Span if you don't use it. It adds lag and confusion. The cloud and Kijun-sen are all you need for 90% of decisions.
+There's no single "best" configuration here. The timeframe setting is a function of your trading horizon, and the shift setting should match whatever Ichimoku parameters you already use. If you don't have a reason to change the shift, leave it at the default.
 
 ## How to Use It for Entries and Exits
 
 **Entry criteria** (long example):
-1. Price is above the cloud (daily or weekly timeframe)
+1. Price is above the cloud (on whichever timeframe you've chosen to plot)
 2. Tenkan-sen crosses above Kijun-sen inside the cloud or above it
 3. Cloud is green (bullish) and expanding
 
 **Exit criteria**:
 - Close below Kijun-sen on the same timeframe as the cloud you're using
-- Cloud turns red (Senkou A < Senkou B) — this is your hard stop zone
+- Cloud turns red (Senkou A < Senkou B) — a hard stop zone
 
-The multi-timeframe cloud is especially powerful for support/resistance. As the chart shows, the flat areas of the cloud (where Senkou A and B converge) act like magnets — price tends to bounce or stall there.
+The multi-timeframe cloud is most useful for support/resistance. The flat areas of the cloud, where Senkou A and B converge, tend to act like magnets — price often bounces or stalls there.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- The multi-timeframe cloud is genuinely useful — saves time vs. jumping between chart tabs
-- Zero lag compared to other Ichimoku variants that add moving averages
+- The multi-timeframe cloud is genuinely useful — it saves time versus jumping between chart tabs
+- No added moving averages or extra smoothing layered on top of standard Ichimoku
 - Clean, non-intrusive visual design
-- Free (no paid version nonsense)
+- Free
 
 **Cons:**
-- No alerts — you'll need to manually monitor for TK crosses
-- The cloud shift setting can confuse new users (it's not broken, but the default 26 shift is hidden in the settings)
+- No alerts — you'll need to monitor for TK crosses manually
+- The cloud shift setting can confuse new users, since the default shift is buried in the settings
 - No built-in divergence detection or volume confirmation
 - If you trade purely on signal arrows, this isn't for you
 
@@ -74,38 +75,46 @@ The multi-timeframe cloud is especially powerful for support/resistance. As the 
 
 - **Multi-timeframe analysts** who already use Ichimoku and want to overlay a higher timeframe cloud
 - **Trend followers** who need clear visual support/resistance zones
-- **Traders who hate clutter** — this is the minimalist Ichimoku experience
+- **Traders who hate clutter** — this is a minimalist Ichimoku implementation
 
-**Not for**: Beginners who want automatic buy/sell signals. Or anyone expecting a complete trading system out of the box.
+**Not for**: Beginners who want automatic buy/sell signals, or anyone expecting a complete trading system out of the box.
 
 ## Better Alternatives (if this doesn't fit)
 
-- **"Ichimoku Kinko Hyo" by LuxAlgo** — adds alerts and volume-weighted cloud. More features, more complexity.
-- **"Kumo Breakout" by QuantNomad** — focuses specifically on cloud breakouts with entry/exit signals. Better for aggressive traders.
-- **"Multi-Timeframe Ichimoku" by TradeSmart** — similar concept but with auto-detection of higher timeframes. Costs $20/month.
+- **"Ichimoku Kinko Hyo" by LuxAlgo** — adds alerts and a volume-weighted cloud. More features, more complexity.
+- **"Kumo Breakout" by QuantNomad** — focuses on cloud breakouts with entry/exit signals. Better for aggressive traders.
+- **"Multi-Timeframe Ichimoku" by TradeSmart** — similar concept but with auto-detection of higher timeframes. Paid.
 
-Honestly? If you just want the cloud without the bloat, Ichimoku_Cloud_Spans is your best free option.
+If you just want the cloud without the bloat, Ichimoku_Cloud_Spans is a reasonable free option.
 
-## FAQ: Real Questions from Traders
+## FAQ
 
 **Q: Can I use this on crypto?**  
-A: Yes. Works on any market. I tested on BTC/USD and ETH/USD — the cloud zones held well during the 2025 consolidation.
+A: It's a chart overlay, so it works on any market your platform supports.
 
-**Q: Why does the cloud look weird on low timeframes?**  
-A: Ichimoku was designed for daily charts. On 1m, the 26-period Kijun-sen is only 26 minutes of data. Use a higher timeframe cloud (15m or 1H) to smooth it out.
+**Q: Why does the cloud look compressed on low timeframes?**  
+A: Ichimoku was designed around daily charts. On very short timeframes, the Kijun-sen period covers only minutes of data, which makes the cloud tight and noisy. Plotting a higher-timeframe cloud on a low-timeframe chart is the usual way to smooth this out.
 
 **Q: Does it repaint?**  
-A: No. The cloud is calculated from past data. Senkou Spans shift forward, but that's standard Ichimoku behavior, not repainting.
+A: The cloud is calculated from past data. The Senkou Spans are shifted forward, which is standard Ichimoku behavior rather than repainting.
 
 ## Final Verdict
 
-Ichimoku_Cloud_Spans does exactly what it promises: gives you a clean, multi-timeframe Ichimoku cloud without the noise. It's not a trading robot, but it's a damn good visual tool for trend analysis and support/resistance identification.
+Ichimoku_Cloud_Spans does exactly what it promises: a clean, multi-timeframe Ichimoku cloud without extra noise. It's not a trading system, but it's a solid visual tool for trend analysis and support/resistance identification.
 
-The lack of alerts and auto-detection keeps it from being a 5-star tool, but for free, this is solid. If you already know how to trade Ichimoku, install it. If you're learning, pair it with a basic trendline indicator and you'll be fine.
+The lack of alerts and auto-detection keeps it from being a complete package, but as a free display tool it holds up. If you already trade Ichimoku, it's worth installing. If you're learning, pair it with a basic trendline tool and you'll be fine.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Does one thing, does it well, and the multi-timeframe feature is actually useful. No regrets installing it.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Does one thing, does it well, and the multi-timeframe overlay is the reason to use it.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Ichimoku** implementation was backtested on 30 markets over 5 years of daily data (43,167 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.8%** (50% = coin flip)
+- Strongest markets: QQQ 55.5%, SPY 54.8%, USDJPY 54.8%, XAUUSD 53.4%
+- Weakest markets: WTI 46.3%, LTCUSD 45.8%, SHIBUSD 28.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

@@ -16,17 +16,17 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Coppock Curve review: how it works, best settings for monthly/daily charts, entry signals, pros/cons, and who it actually helps."
+grounding: "none (no source found)"
 ---
+# Coppock Curve Review
 
-The Coppock Curve is a momentum oscillator originally designed by economist Edwin Coppock for long-term market timing. On TradingView, you'll find several versions, but the core logic is the same: it calculates a smoothed rate-of-change over long lookback periods to identify major buying opportunities after deep downturns. Think of it as a "bottom-fishing" tool for weekly or monthly charts.
-
-I've tested this on everything from the S&P 500 to Bitcoin and altcoins. Here's the unfiltered breakdown.
+The Coppock Curve is a momentum oscillator originally designed by economist Edwin Coppock for long-term market timing. On TradingView, several versions exist, but the core logic is consistent: it calculates a smoothed rate-of-change over long lookback periods to identify major buying opportunities after deep downturns. Think of it as a "bottom-fishing" tool built for weekly or monthly charts.
 
 ### What This Indicator Actually Does
 
 The standard Coppock Curve applies a 14-period and 11-period rate-of-change (ROC) to price, sums them, and then smooths the result with a 10-period weighted moving average. The final line oscillates above and below zero. When the curve crosses above zero from below, it's a classic buy signal. When it's above zero and starts turning down, it warns of potential exhaustion.
 
-Don't confuse it with an RSI or MACD. It's slower, more deliberate, and designed to catch multi-month bottoms—not scalp the 5-minute chart.
+Don't confuse it with RSI or MACD. It's slower, more deliberate, and designed to catch multi-month bottoms—not scalp the 5-minute chart.
 
 ### Key Features That Set It Apart
 
@@ -34,27 +34,19 @@ Don't confuse it with an RSI or MACD. It's slower, more deliberate, and designed
 - **Zero-line cross signals:** These are the primary triggers. A cross above zero after a deep negative reading is historically reliable in equity indices.
 - **Divergence potential:** In strong trends, the curve can diverge from price (e.g., price makes a lower low, curve makes a higher low). This works best on monthly charts.
 
-### Best Settings with Specific Recommendations
+### Settings and How to Tune Them
 
-For **monthly charts** (ideal for indices like SPX or BTC), use:
-- ROC Fast Length: 14
-- ROC Slow Length: 11  
-- WMA Smoothing: 10
+The standard configuration applies a faster ROC, a slower ROC, and a WMA smoothing length. All three parameters are adjustable in the indicator's inputs.
 
-For **weekly charts** (works on liquid altcoins or large caps), tighten to:
-- ROC Fast Length: 10
-- ROC Slow Length: 8
-- WMA Smoothing: 7
+For monthly charts, the default set is the long-lookback configuration—a faster ROC around the mid-teens, a slower ROC slightly below it, and a smoothing length near ten. For weekly charts, the parameters are tightened across all three inputs to make the curve more responsive.
 
-Do not use this on daily charts below the 6-month timeframe—you'll get whipsawed by false zero-line crosses.
+Shorter timeframes below the multi-month horizon tend to produce whipsaws from false zero-line crosses, so the tool is best kept to higher timeframes.
 
 ### How to Use It for Entries and Exits
 
-**Entry:** Wait for the curve to dip deeply negative (say below -100 on monthly SPX) and then cross back above zero. That's your trigger. Don't buy the first cross—confirm with price closing above its 20-month moving average.
+**Entry:** Wait for the curve to dip deeply negative and then cross back above zero. That's the trigger. Rather than buying the first cross, confirm with price closing above its long-term moving average.
 
-**Exit:** The curve itself doesn't give sell signals well. Use it as a warning: if the curve peaks and turns down while price is still rising, start tightening stops. A cross below zero from above is a late signal, but it's historically reliable for closing long-term positions.
-
-On the chart above, you can see how the Coppock Curve caught the 2020 COVID bottom and the 2022 bear market low on Bitcoin—both times with a zero-line cross after deep negative readings.
+**Exit:** The curve itself doesn't give sell signals well. Use it as a warning: if the curve peaks and turns down while price is still rising, start tightening stops. A cross below zero from above is a late signal, but it has historically been useful for closing long-term positions.
 
 ### Honest Pros and Cons
 
@@ -64,8 +56,8 @@ On the chart above, you can see how the Coppock Curve caught the 2020 COVID bott
 - Divergence signals on monthly charts are rare but powerful.
 
 **Cons:**
-- Useless for short-term trading (under 1-month horizon).
-- False signals in strong bull markets (e.g., 2020-2021 crypto run).
+- Useless for short-term trading (under a 1-month horizon).
+- False signals in strong bull markets.
 - Not reliable for individual stocks with low liquidity or erratic price action.
 
 ### Who It's Actually For
@@ -74,9 +66,9 @@ This is a **long-term investor's tool**, not a day trader's. If you manage a por
 
 ### Better Alternatives If They Exist
 
-- **MACD (12,26,9) on weekly charts:** Faster, gives earlier signals, but more false positives.
-- **RSI (14) on monthly charts:** Simpler, but less effective at catching deep bottoms.
-- **Ichimoku Cloud (weekly):** Better for trend direction and support/resistance, but not a pure bottom-finding tool.
+- **MACD on weekly charts:** Faster, gives earlier signals, but more false positives.
+- **RSI on monthly charts:** Simpler, but less effective at catching deep bottoms.
+- **Ichimoku Cloud on weekly charts:** Better for trend direction and support/resistance, but not a pure bottom-finding tool.
 
 If you need a pure momentum oscillator for long-term bottoms, the Coppock Curve is still the best in its class. But pair it with a volume indicator or price action confirmation.
 
@@ -92,7 +84,7 @@ A: Not directly. It's a buy-side tool. Use a trailing stop or a separate trend-f
 A: That means momentum is still positive. Don't short just because it's high—wait for it to cross below zero first.
 
 **Q: Should I change settings for different markets?**
-A: Yes. For faster-moving markets like crypto, shorten all three parameters by 20-30%. For slow blue-chip stocks, keep the defaults.
+A: Yes. For faster-moving markets like crypto, shorten the parameters. For slow blue-chip stocks, keep the defaults.
 
 ### Final Verdict
 
@@ -100,7 +92,15 @@ The Coppock Curve is a niche tool that does one thing well: identify long-term b
 
 **Rating: ⭐⭐⭐⭐ (4/5)** — Reliable for what it does, but not a one-size-fits-all solution.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Coppock** implementation was backtested on 30 markets over 5 years of daily data (44,277 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.4%** (50% = coin flip)
+- Strongest markets: SPY 53.8%, AVAXUSD 53.5%, DOGEUSD 53.4%, DOTUSD 53.2%
+- Weakest markets: LTCUSD 46.3%, VIX 44.7%, SHIBUSD 30.1%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

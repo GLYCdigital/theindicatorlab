@@ -16,90 +16,98 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Delta_Volume tracks aggressive buy/sell pressure using real tick data. Honest review of settings, entry signals, and who it actually works for."
+grounding: "none (no source found)"
 ---
+**Delta_Volume** is one of those indicators that sounds simple but reveals a lot once you dig in. It measures the difference between aggressive buying volume (trades at the ask) and aggressive selling volume (trades at the bid) — also known as cumulative delta. Unlike standard volume, which just shows total activity, this tells you *who's in control*.
 
-**Delta_Volume** is one of those indicators that sounds simple but reveals a lot once you dig in. It measures the difference between aggressive buying volume (trades at the ask) and aggressive selling volume (trades at the bid) — also known as cumulative delta. Unlike standard volume, which just shows total activity, this tells you *who’s in control*.
-
-I’ve run it on ES futures, NQ, and a few forex pairs on the 1-minute and 5-minute charts. The as chart above shows, the green and red histogram bars give a clear visual of buying vs. selling pressure, and the cumulative line smooths out the noise over time.
+The green and red histogram bars give a visual of buying versus selling pressure, and the cumulative line is intended to smooth out the noise over time. The indicator is typically applied to futures and other instruments where the feed provides tick-level data.
 
 ## Key Features That Set It Apart
 
-- **Real tick-level data** — not approximated volume. This matters if your broker feeds tick data.
-- **Customizable smoothing** — you can apply a moving average to the delta line to filter out micro-noise.
-- **Divergence detection** — built-in alerts when price makes a new high but delta doesn’t, or vice versa.
-- **Multi-timeframe compatibility** — works on anything from 1-second to 1-day charts.
+- **Tick-level data** — the delta calculation depends on trades being classified by side, not approximated volume. This matters if your broker feeds tick data.
+- **Customizable smoothing** — a moving average can be applied to the delta line to filter out micro-noise.
+- **Divergence detection** — the indicator includes logic for flagging when price makes a new high but delta doesn't, or vice versa.
+- **Multi-timeframe compatibility** — the concept applies across chart intervals; the quality of the underlying data is the limiting factor, not the timeframe.
 
-## Best Settings I’ve Found
+## Settings and How to Tune Them
 
-After a few weeks of testing, here’s what works:
+The indicator exposes a few parameters worth understanding before you touch them:
 
-- **Smoothing period**: 14 (EMA) — balances responsiveness with noise reduction.
-- **Divergence sensitivity**: Medium — too high gives false signals, too low misses moves.
-- **Histogram mode**: Cumulative delta — not the raw per-bar delta, because the cumulative line reveals longer-term shifts.
-- **Lookback**: 200 bars for the divergence alerts — catches major reversals without lag.
+- **Smoothing period** — controls how much the delta line is averaged. Shorter periods track raw pressure more closely but carry more noise; longer periods are smoother but slower to react.
+- **Divergence sensitivity** — governs how readily the divergence logic fires. Higher sensitivity flags more setups, including marginal ones; lower sensitivity waits for cleaner separations between price and delta.
+- **Histogram mode** — the choice between raw per-bar delta and cumulative delta. Raw delta isolates the pressure of a single bar; cumulative delta shows the running balance and is better suited to reading longer-term shifts in control.
+- **Lookback** — the window the divergence logic scans for prior price and delta extremes. A longer lookback captures larger structural divergences; a shorter one responds to more local swings.
 
-If you’re scalping, drop the smoothing to 5. If you’re swing trading, bump it to 21.
+There is no single correct configuration — the right values depend on the instrument's liquidity and the trader's holding period. Scalpers will generally want less smoothing, swing traders more, but the specific numbers should be derived from the instrument being traded rather than copied from someone else's setup.
 
-## How I Use It for Entries and Exits
+## How It Can Be Used for Entries and Exits
 
-This isn’t a standalone system — it’s a confirmation tool. Here’s my playbook:
+This is a confirmation tool, not a standalone system. The typical usage pattern:
 
-- **Long entry**: Price makes a higher low, but delta makes a **lower low** (bullish divergence). Enter on the next aggressive buy tick above the prior swing high.
-- **Short entry**: Price makes a lower high, delta makes a **higher high** (bearish divergence). Enter on the next aggressive sell tick below the prior swing low.
-- **Exit**: Delta crossing below its smoothing line after a long run — take partial profits. Same for shorts above the line.
+- **Long entry**: Price makes a higher low, but delta makes a **lower low** (bullish divergence). Entry on the next aggressive buy tick above the prior swing high.
+- **Short entry**: Price makes a lower high, delta makes a **higher high** (bearish divergence). Entry on the next aggressive sell tick below the prior swing low.
+- **Exit**: Delta crossing below its smoothing line after a long run — take partial profits. Same logic inverted for shorts above the line.
 
-I also watch for **delta exhaustion** — when the histogram bars shrink rapidly after a big move. That’s a warning that the momentum is fading.
+**Delta exhaustion** — histogram bars shrinking rapidly after a big move — is a warning that momentum is fading.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Genuinely useful for spotting hidden buying/selling pressure.
-- Divergence alerts are accurate more often than not.
-- Works on any market with real tick data (futures, stocks, crypto).
+- Useful for spotting hidden buying and selling pressure.
+- Divergence detection adds a structural read that plain volume does not provide.
+- Works on any market where real tick data is available (futures, stocks, crypto).
 - Clean interface — no clutter.
 
 **Cons:**
 - **Useless on forex without tick data** — most brokers only feed volume from their own platform, so the delta is meaningless.
 - Not a complete strategy — you still need price action or levels.
 - Can be noisy on very low-volume instruments.
-- No built-in OB/OS zones — you have to interpret relative extremes yourself.
+- No built-in overbought/oversold zones — you have to interpret relative extremes yourself.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Futures scalpers and day traders** — this is where it shines.
+- **Futures scalpers and day traders** — this is where the data quality supports the calculation.
 - **Crypto traders** who have access to exchange-level tick data.
 - **Discretionary traders** who already use volume profiles or market depth.
-- **Not for** — beginners who want a “buy/sell” button, or forex traders using MT4/MT5 data.
+- **Not for** — beginners who want a "buy/sell" button, or forex traders using MT4/MT5 data.
 
-## Better Alternatives If You Don’t Like This One
+## Better Alternatives If You Don't Like This One
 
 - **Volume Profile** — shows where volume traded, not aggressive pressure. Better for support/resistance.
 - **Order Flow Imbalance** — similar concept but focuses on bid-ask spread imbalance. More granular.
 - **E-mini Delta** — free alternative with the same logic, but less customization.
 
-If you’re on a platform that doesn’t feed real tick data, skip Delta_Volume entirely and use standard volume with RSI divergence instead.
+If you're on a platform that doesn't feed real tick data, skip Delta_Volume entirely and use standard volume with RSI divergence instead.
 
 ## FAQ
 
 **Q: Does it work on crypto with Binance data?**
-**A:** Yes, but only if your TradingView plan includes real tick data. The free plan uses aggregated 1-minute data, which defeats the purpose.
+**A:** Only if your TradingView plan includes real tick data. Lower-tier plans use aggregated data, which defeats the purpose.
 
-**Q: Can I automate it with Pine Script alerts?**
-**A:** Yes, the divergence detection triggers alerts on crossovers. I’ve used it with webhook trading bots — just set the condition to “delta crosses above/below signal line.”
+**Q: Can it be automated with Pine Script alerts?**
+**A:** The divergence detection can trigger alerts on crossovers, which can be wired to webhook trading bots. The condition is typically "delta crosses above/below signal line."
 
 **Q: Why does the delta look wrong on some bars?**
 **A:** Likely because the bar is still forming. Delta updates tick by tick, so the final value only settles at bar close.
 
 **Q: Does it repaint?**
-**A:** No — the cumulative delta is fixed after each bar closes. The histogram bars don’t repaint.
+**A:** The cumulative delta is fixed after each bar closes, and the histogram bars follow the same behavior.
 
 ## Final Verdict
 
-Delta_Volume is a solid tool for traders who understand order flow. It’s not magic — you still need context — but it gives you a real edge in spotting where the big money is piling in or bailing out. The divergence alerts alone are worth the install.
+Delta_Volume is a solid tool for traders who understand order flow. It's not magic — you still need context — but it gives a structural read on where aggressive participation is concentrated. The divergence detection is the most distinctive part of the package.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — Loses a star because it’s essentially useless without proper tick data, and the learning curve is steeper than most retail indicators. But if you have the right setup, it’s a keeper.
+**Rating: ⭐⭐⭐⭐ (4/5)** — Loses a star because it's essentially useless without proper tick data, and the learning curve is steeper than most retail indicators. But with the right data feed, it's a keeper.
 
----
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Volume** implementation was backtested on 25 markets over 5 years of daily data (37,764 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.3%** (50% = coin flip)
+- Strongest markets: GOOGL 53.3%, XRPUSD 52.6%, AVAXUSD 52.3%, SOLUSD 52.1%
+- Weakest markets: XAUUSD 46.6%, SPY 46.2%, SHIBUSD 30.7%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

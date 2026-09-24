@@ -16,37 +16,33 @@ categories:
   - Technical Analysis
 rating: 4
 description: "A clean, lagging Ichimoku Chikou Span indicator for TradingView. No clutter—just the lagging line for clear confirmation. Best settings, entry/exit tips, and honest pros/cons."
+grounding: "none (no source found)"
 ---
-
-I’ve tested hundreds of Ichimoku indicators. Most are bloated with clouds, Senkou Spans, and lines that make the chart look like a Jackson Pollock painting. This one strips it down to the **Chikou Span** (lagging line) only. That’s it. And honestly, that’s exactly what some traders need.
-
----
-
 ## What This Indicator Actually Does
 
-The **Ichimoku_Chikou_Span** plots just the lagging line (current close shifted 26 periods back) on your chart. No Kijun-sen, no Tenkan-sen, no cloud. This is the simplest way to use Chikou for price action confirmation without the noise.
+The **Ichimoku_Chikou_Span** plots just the lagging line — the current close shifted back by the standard Ichimoku displacement — on your chart. No Kijun-sen, no Tenkan-sen, no cloud. This is the simplest way to use Chikou for price action confirmation without the noise.
 
-If you’re already trading Ichimoku with the full system, you can overlay this on a separate pane or hide the other elements. For those who use Chikou as a standalone filter (common in price action strategies like “lagging line cross above price = bullish”), this is your tool.
+If you already trade Ichimoku with the full system, you can overlay this on a separate pane or hide the other elements. For those who use Chikou as a standalone filter — the common price action read being a lagging line cross above price as bullish — this is a dedicated tool for that.
 
 ---
 
 ## Key Features That Set It Apart
 
-- **Zero clutter.** One line. That’s it.
-- **Customizable displacement.** Default is 26 periods (standard Ichimoku), but you can adjust it in the settings.
-- **Color-coded by trend.** I set mine to green when the line is above price (bullish bias) and red when below (bearish bias). The indicator does this out of the box.
-- **Simple alerts.** You can set alerts when the Chikou Span crosses above/below the price bars. Clean and fast.
+- **Zero clutter.** One line, nothing else.
+- **Customizable displacement.** The default follows the standard Ichimoku setting, but it can be adjusted in the settings.
+- **Color-coded by trend.** The indicator colors the line based on whether it sits above or below price, distinguishing bullish and bearish bias out of the box.
+- **Simple alerts.** Alerts can be set for the Chikou Span crossing above or below the price bars.
 
 ---
 
-## Best Settings (What I Actually Use)
+## Settings and How to Tune Them
 
-- **Displacement:** 26 (standard). For lower timeframes like 15m or 5m, try 13 to reduce lag.
-- **Color Mode:** “Above/Below Price” — makes it instantly readable.
-- **Line Width:** 2 (thicker is better for fast scanning).
-- **Show Labels:** Off. They’re just noise.
+- **Displacement:** Defaults to the standard Ichimoku value. Some traders shorten it on lower timeframes to reduce lag, but this changes the meaning of the line.
+- **Color Mode:** An above/below price mode makes the bullish or bearish bias readable at a glance.
+- **Line Width:** Adjustable; a thicker line is easier to scan on a busy chart.
+- **Show Labels:** Can be toggled off if the on-chart text is unwanted.
 
-If you scalp on 1m charts, reduce displacement to 8. But honestly, Ichimoku works best on 1h+.
+Ichimoku as a system is generally applied on higher timeframes; behavior on very short timeframes is a separate question and not what this line was designed around.
 
 ---
 
@@ -58,34 +54,34 @@ If you scalp on 1m charts, reduce displacement to 8. But honestly, Ichimoku work
 - Wait for a retest or a candle close above the crossing bar.
 
 **Exit (Long):**
-- Chikou Span crosses **below** the price bars. That’s your warning.
-- If price also breaks below Kijun-sen (if you’re using the full system), close.
+- Chikou Span crosses **below** the price bars.
+- If price also breaks below Kijun-sen (if you're using the full system), close.
 
-**My personal rule:** I only take the trade if the Chikou Span is *above the price bars for at least 3 consecutive candles* after the cross. This filters out whipsaws.
+A common way to filter whipsaws is to require the Chikou Span to hold above the price bars for several consecutive candles after the cross before acting.
 
 ---
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Clean, lagging-only view — perfect for traders who already understand Ichimoku and don’t need the full suite.
-- Works great as a confirmation filter for trend-following strategies.
-- Alerts are simple and effective.
+- Clean, lagging-only view — useful for traders who already understand Ichimoku and don't need the full suite.
+- Works as a confirmation filter for trend-following strategies.
+- Alerts are simple and to the point.
 
 **Cons:**
-- **Lagging by nature.** The Chikou Span is always 26 bars behind. You’ll miss the very start of a move. That’s fine for swing trading, but deadly for scalping.
-- **No cloud or Kijun-sen.** If you’re a beginner, you’ll miss the context. This is an *add-on* tool, not a standalone system.
-- **No volume overlay.** Some advanced traders want to see volume at the crossing point.
+- **Lagging by nature.** The Chikou Span is always displaced back by the standard period. You'll miss the very start of a move. That's acceptable for swing trading, but not suited to scalping.
+- **No cloud or Kijun-sen.** Without the surrounding lines, there's no context. This is an *add-on* tool, not a standalone system.
+- **No volume overlay.** Some traders want to see volume at the crossing point.
 
 ---
 
-## Who It’s Actually For
+## Who It's Actually For
 
-- **Swing traders** on 1h–daily timeframes who already use the full Ichimoku system and want a dedicated Chikou line.
-- **Price action traders** who use the lagging line as a trend filter (e.g., “only buy when Chikou > price”).
+- **Swing traders** on higher timeframes who already use the full Ichimoku system and want a dedicated Chikou line.
+- **Price action traders** who use the lagging line as a trend filter — for example, only buying when Chikou is above price.
 - **Traders who hate clutter** and want one line instead of five.
 
-**Not for:** Beginners or anyone who hasn’t studied Ichimoku. This will confuse you if you don’t know what the line represents.
+**Not for:** Beginners or anyone who hasn't studied Ichimoku. Without knowing what the line represents, it will be confusing.
 
 ---
 
@@ -99,29 +95,35 @@ If you scalp on 1m charts, reduce displacement to 8. But honestly, Ichimoku work
 
 ## FAQ
 
-**Q: Can I use this on 5-minute charts?**  
-Yes, but adjust displacement to 13–20. The standard 26 is too slow.
+**Q: Can I use this on 5-minute charts?**
+Yes, though the standard displacement may feel slow. Shortening it is a choice, not a requirement.
 
-**Q: Does it repaint?**  
-No. The Chikou Span is a fixed lagging line. It does not repaint.
+**Q: Does it repaint?**
+No. The Chikou Span is a fixed lagging line; it does not repaint.
 
-**Q: Can I set alerts for Chikou crossing price?**  
-Yes. Right-click the indicator → Add Alert → Condition: “Chikou Span crosses above price” or “crosses below price.”
+**Q: Can I set alerts for Chikou crossing price?**
+Yes. Right-click the indicator → Add Alert → set the condition for the Chikou Span crossing above or below price.
 
-**Q: Is this better than the built-in Ichimoku?**  
-For a dedicated Chikou view, yes. The built-in one forces you to see all lines. This is cleaner.
+**Q: Is this better than the built-in Ichimoku?**
+For a dedicated Chikou view, it's cleaner. The built-in one forces you to see all lines.
 
 ---
 
 ## Final Verdict
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
+The **Ichimoku_Chikou_Span** does exactly what it says — no more, no less. It's a niche tool for traders who already understand Ichimoku and want a clean lagging line for confirmation. Its limitations are that it isn't beginner-friendly and offers no cloud context. But for someone who knows what the line represents, it's a solid addition to the toolbox.
 
-The **Ichimoku_Chikou_Span** does exactly what it says — no more, no less. It’s a niche tool for traders who already understand Ichimoku and want a clean lagging line for confirmation. It loses one star because it’s not beginner-friendly and has no cloud context. But if you know what you’re doing, this is a solid addition to your toolbox.
+**Should you install it?** If you're a swing trader who uses Chikou as a filter, it fits. If you're new to Ichimoku, start with the full cloud first.
 
-**Should you install it?** If you’re a swing trader who uses Chikou as a filter, yes. If you’re new to Ichimoku, start with the full cloud first.
+## What This Class of Signal Has Actually Done
 
----
+*Not this script. A canonical **Ichimoku** implementation was backtested on 30 markets over 5 years of daily data (43,167 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.8%** (50% = coin flip)
+- Strongest markets: QQQ 55.5%, SPY 54.8%, USDJPY 54.8%, XAUUSD 53.4%
+- Weakest markets: WTI 46.3%, LTCUSD 45.8%, SHIBUSD 28.3%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

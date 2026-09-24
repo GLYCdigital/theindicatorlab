@@ -17,81 +17,87 @@ categories:
 rating: 4
 description: "Honest review of the US Yield Curve 3D Term Structure indicator by MantisAlgo: what it plots, best settings, how to trade it, and its real limits."
 tv_script_url: "https://www.tradingview.com/script/h9n4BEA7-US-Yield-Curve-3D-Term-Structure-MantisAlgo/"
+sources: ["https://www.tradingview.com/script/h9n4BEA7-US-Yield-Curve-3D-Term-Structure-MantisAlgo/"]
 ---
-Most "yield curve" indicators on TradingView are lazy. They plot a single spread — usually 10Y minus 2Y — as a line, slap a recession label on it, and call it a day. The **Us_Yield_Curve_3D_Term_Structure_Mantisalgo** is not that. It's a genuine attempt to compress the entire US Treasury term structure into something a chart trader can actually read in real time. That ambition is why it earns four stars, and also why it has rough edges worth understanding before you install it.
+Most "yield curve" indicators on TradingView are lazy. They plot a single spread — usually 10Y minus 2Y — as a line, slap a recession label on it, and call it a day. The **US Yield Curve 3D Term Structure** indicator is not that. It maps official US Treasury benchmark yields across five core tenors and renders the shape of the curve as a visual structure rather than a single number. That ambition is why it's worth understanding, and also why it has quirks worth knowing before you install it.
 
 ## What It Actually Does
 
-Strip away the name and here's the mechanic: the indicator pulls yields across multiple US Treasury maturities — bills, notes, and bonds — and renders the shape of the curve as a visual structure rather than a single number. Instead of asking "is the spread positive or negative," you're looking at the *slope and curvature* of the whole curve at once. Steepening, flattening, inversion, and the less-discussed "belly" moves all become visible states rather than arithmetic you do in your head.
+Strip away the name and here's the mechanic: the indicator pulls yields across US Treasury maturities — 3M, 2Y, 5Y, 10Y, and 30Y, with optional extended tenors — and plots them as a 3D surface. Instead of asking "is the spread positive or negative," you're looking at the slope and curvature of the whole curve at once. Steepening, flattening, inversion, and humped shapes all become visible states rather than arithmetic you do in your head.
 
-The "3D" in the name is doing some marketing work. It's not a rotatable 3D surface like you'd see in a Bloomberg terminal — it's a multi-layered visual that encodes the term structure across time. But the *term structure* framing is honest, and that's the part that matters.
+The 3D surface itself is a lower pane showing the current Treasury curve with historical depth. By default it covers ten months — the current month plus nine prior monthly closes — and there's a 10 Sessions option for the current daily close plus nine prior sessions. Surface colors compare each tenor against its own selected daily average, with cooler colors below that average and warmer colors above it.
+
+The "3D" framing is real in the sense that the pane is a surface across term and time, though it's not a rotatable Bloomberg-style terminal. Camera rotation changes only the viewing angle, and steepness settings change only how tall the mesh looks.
 
 ## Why It Stands Out
 
-The category is Trend, which is a loose fit — this is really a macro regime tool that produces trend signals as a byproduct. Three things separate it from the dozen spread indicators you've already ignored:
+Three things separate it from the typical spread indicator:
 
-- **It captures the belly.** The 5Y and 7Y points are where most curve action actually happens, and most retail indicators ignore them entirely.
-- **It updates live with Treasury data**, not a static snapshot you have to manually refresh.
-- **The visual state changes are legible.** You can glance at it and know whether the curve steepened or flattened since the last session without reading a single number.
+- **It captures the full term structure.** The core five tenors are all represented, and extended tenors can add 6M, 1Y, 3Y, 7Y, and 20Y between the core anchors.
+- **It updates with Treasury data** rather than a static snapshot.
+- **The visual state changes are legible.** The dashboard classifies the curve shape and the recent shift, so you can glance at it and know whether the curve steepened or flattened without reading a single number.
 
-As shown in the chart above, the indicator layers cleanly over a MACD pane without fighting it for screen space — which matters more than it sounds, because macro overlays usually wreck your layout.
+The dashboard reports the 3M, 2Y, 5Y, 10Y, and 30Y yields, along with a Curve State classification (upward sloping, humped, flat, downward sloping, or mixed) and a Curve Shift classification based on how the 10Y−2Y spread moved versus the previous trading day.
 
-## Best Settings (Tested)
+## Settings and How to Tune Them
 
-Defaults are reasonable, but two adjustments materially improved it for me:
+**Surface history** sets the 3D time axis. Options are 10 Months (default) and 10 Sessions.
 
-1. **Set the lookback to 60–90 sessions for swing trading.** The default is too twitchy on daily charts; you'll get regime flips that reverse within a week.
-2. **Turn off the noise-smoothing if you're trading rates directly.** Smoothing hides the inversion/re-steepening transitions that are the whole point. Keep it on if you're using this as a background filter for equities.
+**Extended tenors** is off by default. Turning it on adds 6M, 1Y, 3Y, 7Y, and 20Y between the core anchors. This changes only what is drawn.
 
-If you're on an intraday chart, honestly — don't. This indicator's signal lives on the daily and weekly. Forcing it onto a 5-minute chart produces garbage.
+**Heat average length** controls the historical baseline used for surface colors and Rate Level. It uses daily data even when Surface history is monthly. Options are 21 trading days (one month, most responsive), 63 trading days (one quarter, the default), 126 trading days (six months), and 252 trading days (one year). Changing it does not change the live tenor values or Curve State — only how current yields sit versus their historical baseline.
 
-## How to Trade It
+**Surface steepness** changes only how tall the 3D mesh looks. Soft is the default, Normal sits between Soft and Sharp, and Sharp makes the same curve look steeper.
 
-The logic that actually works here is regime-filtering, not signal-generation. Two usable approaches:
+**Surface labels** are flags on the live 3D curve. Options are Tenor (names only, default), Tenor + % (names and yield), and Off. Exact yields are on the dashboard.
 
-**Equities/beta filter:** When the curve is steepening (bull steepener), risk assets tend to get a tailwind. When it's flattening hard or inverting, reduce size and tighten stops. Use the indicator as a permission slip, not an entry trigger.
+**View** rotates the 3D surface. Default is Back-left. Other options include Near-right, Straight-up, Side-right, Side-left, Top-down, Top-reverse, and Custom. Custom angle is used only when View is Custom, with a range of −90° to +90° in 5° steps (default −60°).
 
-**Rates/curve trades:** The transition from flattening to steepening at the long end is the actionable event. Wait for the visual state to *confirm* over 2–3 sessions before acting — the indicator will whipsaw you if you front-run it.
+**Panel** selects the dashboard corner on the price chart, defaulting to top_right. Other options are top_left, bottom_right, and bottom_left.
 
-Do not use this for entries on its own. There's no price level here. It tells you about the environment, not the trade.
+## How to Use It
+
+Use Curve State to read the slope of the Treasury curve and Curve Shift to read how 10Y−2Y moved versus the previous trading day. Use the surface to track how each tenor has changed over the latest ten months (or ten sessions).
+
+Colors show whether each tenor is above or below its selected historical average. The surface provides rates context rather than a directional price target. The indicator can be used on any chart symbol as a U.S. rates context tool.
+
+There's also a history ribbon: the Treasury tenors are plotted as 2D history on the active chart timeframe, with 2Y and 10Y as the thicker traces. Each line's color reflects that tenor's relative level versus its selected daily average.
 
 ## Pros & Cons
 
 **Pros:**
 - Real multi-maturity term structure, not a single spread
-- Genuinely useful as a macro regime filter
-- Clean visual integration with standard chart setups
-- Free of the usual indicator clutter
+- Useful as a macro regime context tool
+- Live dashboard classifications for curve shape and shifts
+- Can overlay on any chart symbol
 
 **Cons:**
-- "3D" oversells the visual; it's a layered 2D representation
-- Data lag on yields means it's not for intraday
-- No built-in alerts for regime changes — a real miss
+- "3D" oversells the visual; it's a surface pane rather than a full terminal
 - Learning curve if you don't already understand curve mechanics
+- Extended tenors are off by default, so the full picture takes a step to enable
 
 ## Who It's For
 
-Swing traders and macro-leaning position traders who want a top-down regime read without a Bloomberg subscription. If you trade equities, FX, or rates on a daily-plus timeframe and you've ever wished you could see the curve's *shape* instead of just a spread number, this is built for you. Scalpers and pure price-action traders can skip it — it will just add noise to your screen.
+Traders who want a top-down read of the US Treasury curve without a dedicated macro platform. If you trade equities, FX, or rates and you've ever wished you could see the curve's shape instead of just a spread number, this is built for that. Traders who only want a single spread line will find it heavier than they need.
 
 ## Alternatives
 
-If you want a single clean spread line with recession shading, the standard **US 10Y-2Y spread** scripts are simpler and lighter. If you want deep curve analytics with full historical surface data, you're better off with a dedicated macro platform. This indicator sits in a useful middle ground — more than a spread line, less than a terminal.
+If you want a single clean spread line with recession shading, the standard US 10Y-2Y spread scripts are simpler and lighter. If you want deep curve analytics with full historical surface data, a dedicated macro platform is the better fit. This indicator sits in a useful middle ground — more than a spread line, less than a terminal.
 
 ## FAQ
 
-**Does it repaint?** No, but it does lag — Treasury data settles after the fact. Treat recent readings as provisional.
+**Does it repaint?** The source material doesn't address repainting.
 
-**Can I use it on crypto?** You can, and it's a reasonable macro filter for BTC, but the relationship is looser than with equities. Use it as background context only.
+**Can I use it on any symbol?** Yes — the indicator can be used on any chart symbol as a U.S. rates context tool.
 
-**Why is it in the Trend category?** Because regime shifts produce directional bias. It's a stretch, but the tagging is defensible.
+**Why is it in the Trend category?** The script type is study. The source material doesn't specify a Trend category.
 
-**Does it work on lower timeframes?** Technically yes, practically no. Daily and above.
+**Does it work on lower timeframes?** The source material doesn't make claims about timeframe suitability.
 
 ## Final Verdict
 
-The Us_Yield_Curve_3D_Term_Structure_Mantisalgo does one job well: it turns the US yield curve into something you can read at a glance and use as a regime filter. The "3D" branding is inflated and the lack of alerts is a genuine gap, but the underlying concept is sound and the execution is competent. For macro-aware swing traders, it earns a place on the chart. For everyone else, it's a curiosity.
+The US Yield Curve 3D Term Structure does one job well: it turns the US yield curve into something you can read at a glance and use as a rates context tool. The "3D" branding is somewhat inflated, but the underlying concept is sound and the execution is competent. For macro-aware traders, it's a reasonable addition to the chart. For everyone else, it's a curiosity.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

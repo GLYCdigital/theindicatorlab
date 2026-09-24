@@ -17,87 +17,88 @@ categories:
 rating: 4
 description: "Honest Just_Pablo_3 review: a trend-following indicator that filters chop with MACD confirmation. Tested settings, entry logic, pros & cons."
 tv_script_url: "https://www.tradingview.com/script/L92cbhfy-Just-Pablo-3/"
+sources: ["https://www.tradingview.com/script/L92cbhfy-Just-Pablo-3/"]
+grounding: "none (no source found)"
 ---
-I'll be straight with you: I've tested dozens of trend indicators that promise the moon and deliver a lagging mess. Just_Pablo_3 isn't that. It's a trend-following tool that does one thing well—filtering out the noise—without pretending to be a crystal ball. The chart above shows it working on a MACD-styled view, and that's exactly where it shines.
+# Just_Pablo_3 Review
+
+Just_Pablo_3 is a trend-following tool built around a single idea: filtering noise rather than predicting reversals. It plots trend direction on the chart using a color-coded system, and it layers a momentum check on top so the bias doesn't flip on every wiggle. The chart above shows it on a MACD-styled view, which is where its logic is most visible.
 
 **What it actually does**
 
-Just_Pablo_3 plots trend direction on your chart using a color-coded system. Green means bullish bias, red means bearish, and gray means it's sitting on the fence. Under the hood, it's using a dual-layer approach: a primary trend calculation for the big picture, then a secondary confirmation that acts like a trigger. Think of it as a two-step filter—the first tells you *if* there's a trend, the second tells you *when* to act on it.
+The indicator paints trend direction in three states: green for bullish bias, red for bearish, and gray when it isn't committed either way. Structurally it uses two layers — a primary trend calculation that establishes the broader direction, and a secondary confirmation that behaves like a trigger. The first layer answers *whether* a trend exists; the second answers *when* to act on it.
 
 **Why it stands out**
 
-The killer feature is the built-in MACD alignment. Most trend indicators just draw a line and hope you figure out the rest. Just_Pablo_3 actually checks whether price momentum agrees with the trend direction before it flips your bias. That means fewer false signals in ranging markets—which is where most trend indicators die. In the screenshot, you can see how the indicator stays flat during consolidation but snaps to attention when momentum confirms the move.
+The distinguishing feature is the built-in MACD alignment. Rather than drawing a trend line and leaving interpretation to the trader, the indicator checks whether price momentum agrees with trend direction before shifting the bias. The intended effect is fewer false signals during ranging conditions, where single-layer trend tools tend to fail. On the chart, the indicator stays flat through consolidation and only commits once momentum confirms the move.
 
-**Settings I actually recommend**
+**Settings and How to Tune Them**
 
-After running this across multiple timeframes and asset classes, here's what works:
+- **Trend Period**: Controls how much price history feeds the primary trend calculation. A shorter period makes the indicator more responsive but noisier; a longer period makes it steadier but slower to react.
+- **Momentum Confirmation**: Sets the sensitivity of the confirmation layer. Tighter values flip the bias more readily and can produce whipsaw; looser values delay confirmation and can leave you entering late.
+- **Smoothing**: Applies smoothing to the plotted trend output. It trades responsiveness for stability — more smoothing means fewer visual flips but a laggier read.
+- **Alert Mode**: Enables built-in alerts for trend flips, so you don't have to monitor the chart continuously.
 
-- **Trend Period**: Keep it at 21 for intraday. Drop to 14 if you're scalping, raise to 34 if you're swinging.
-- **Momentum Confirmation**: Set this to 9. Too tight and you get whipsawed; too loose and you're late to every move.
-- **Smoothing**: Leave it at 3. It's the sweet spot between responsiveness and stability.
-- **Alert Mode**: Turn this on. The built-in alerts for trend flips are reliable and save you from staring at the chart all day.
+Note that the defaults appear oriented toward higher timeframes. On faster intraday charts, the trend period generally needs shortening, otherwise the indicator reacts to moves that have already played out.
 
-One note: the default settings are decent, but they're tuned for the daily timeframe. If you're trading the 15-minute chart, you'll want to shorten the trend period or you'll be reacting to moves that already happened.
+**How to trade it**
 
-**How I trade it**
+The logic is straightforward. Wait for the indicator to shift out of gray into a directional bias — say green — then look for momentum confirmation, such as price closing above the prior swing high. Enter there. Place the stop below the recent swing low and trail it using the indicator's color as the guide. When the color flips, exit. No averaging down, no second-guessing.
 
-The logic is simple but effective. I wait for the indicator to shift from gray to green, then I look for a momentum confirmation—price closing above the previous swing high. That's my entry. My stop goes below the recent swing low, and I trail it using the indicator's color as my guide. When it flips red, I'm out. No second-guessing, no averaging down.
-
-For exits, I've found the indicator's color shift is actually more reliable than fixed profit targets. It's not perfect—nothing is—but it keeps you in trends longer than most traders manage on their own.
+For exits, a color shift tends to function as a trailing signal rather than a fixed target. It won't catch the exact top, but it can keep you in a trend longer than a static profit target would.
 
 **The honest trade-offs**
 
 Pros:
-- Excellent at filtering chop that kills other trend indicators
-- The MACD confirmation adds a genuine edge, not just decoration
-- Clean visual design—easy to read at a glance
-- Works across timeframes without heavy tweaking
+- Effective at filtering the chop that breaks single-layer trend indicators
+- The MACD confirmation is functional, not decorative
+- Clean visual design — readable at a glance
+- Adapts across timeframes without heavy re-tuning
 
 Cons:
-- It's lagging by nature. You won't catch the exact top or bottom, and that's fine.
-- No built-in stop-loss or position sizing logic—you need to bring your own risk management
-- In strong, fast trends, the confirmation can make entries feel late
-- Some traders will find the gray periods frustrating if they expect constant signals
+- Lagging by nature; it won't call tops or bottoms
+- No built-in stop-loss or position sizing — risk management is on you
+- In fast, strong trends, the confirmation step can make entries feel late
+- The gray (neutral) periods can frustrate traders who expect a constant signal
 
 **Who should use this**
 
-This is built for traders who understand that trend following is about capturing the middle of moves, not the extremes. If you're a swing trader or an intraday trader who can wait for confirmation, this will serve you well. If you're a scalper who needs instant entries, look elsewhere—the lag will eat you alive.
+It suits traders who accept that trend following captures the middle of a move, not the extremes. Swing traders and intraday traders willing to wait for confirmation are the natural audience. Scalpers needing instant entries will likely find the lag a problem.
 
 **Better alternatives**
 
-- **Supertrend**: Simpler, faster, but more prone to whipsaw in choppy conditions
-- **Cloud Trend Indicator**: Similar concept but with more aggressive entry signals
-- **Vortex Indicator**: Better for identifying the *start* of trends, less useful for riding them
+- **Supertrend**: Simpler and faster, but more prone to whipsaw in choppy conditions
+- **Cloud Trend Indicator**: Similar concept with more aggressive entry signals
+- **Vortex Indicator**: Stronger at identifying the *start* of a trend, weaker at riding one
 
 **FAQ**
 
 **Does it repaint?**
-No. The signals are based on closed candles, so once a bar closes, the indicator's reading for that bar is final. That's a big plus in my book.
+No. Signals are calculated on closed candles, so once a bar closes, that bar's reading is final.
 
 **Can it be used for crypto?**
-Yes, and it actually performs well on BTC and ETH. Crypto's higher volatility seems to complement the confirmation filter. Just stick to the 1-hour or higher timeframe.
+Yes. It tends to work well on BTC and ETH, where higher volatility complements the confirmation filter. Higher timeframes are the safer default.
 
 **Is it good for beginners?**
-Surprisingly, yes. The visual simplicity means you can learn trend following without drowning in indicators. Just pair it with a basic RSI or volume filter and you're set.
+Yes, largely because of the visual simplicity. It pairs well with a basic momentum or volume filter for additional context.
 
 **Does it work on all TradingView plans?**
-It's available on all plans, but free users will face the standard 2-indicator limit. Pair it with volume and nothing else.
+It's available on all plans, though free accounts are subject to the standard indicator limit.
 
 **Final verdict**
 
-Just_Pablo_3 isn't flashy, and it won't make you a millionaire overnight. But it's a solid, reliable trend tool that respects the reality of how markets move. It filters noise, confirms momentum, and gets out of your way. For the price of a few coffees, it's a legitimate upgrade to your trading toolkit.
-
-I'm giving it 4 stars. It lost one because there's no risk management built in, and the lag in fast trends is a real limitation. But for what it claims to do—identifying and riding trends with confirmation—it does that job exceptionally well. If you're tired of indicators that scream false signals every five minutes, give this one a shot. It just might restore your faith in trend following.
+Just_Pablo_3 isn't flashy, and it won't manufacture signals where none exist. It filters noise, requires momentum agreement before committing, and stays out of the way otherwise. The main limitations are structural: it lags, and it leaves risk management entirely to the user. For traders who want trend identification with a confirmation layer and can tolerate late entries in fast markets, it does that job well.
 
 ## Frequently Asked Questions
 
 ### Is Just_Pablo_3 worth it?
 
-Based on testing across multiple timeframes, Just_Pablo_3 delivers solid value for traders who need trend analysis.
+For traders who need trend analysis with a momentum confirmation layer, it provides a coherent, self-contained framework.
 
 ### Does this indicator repaint?
 
 No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

@@ -16,76 +16,93 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest Sma_Ribbon review. See how multiple SMAs stacked as a ribbon reveal trend strength and reversals. Best settings, entry rules, and real pros/cons."
+grounding: "none (no source found)"
 ---
-
 ## What This Indicator Actually Does
 
-Sma_Ribbon takes a handful of simple moving averages and plots them all on one pane, creating a visual "ribbon" that shows you the trend's health at a glance. It’s not reinventing the wheel—it’s just stacking SMAs with different periods (e.g., 10, 20, 30, 50, 100, 200) in a single color-coded bundle. The ribbon expands when momentum is strong, contracts when the market is undecided, and flips direction when a trend change is brewing. If you’ve ever wanted to see whether short-term, medium-term, and long-term traders are all aligned, this is your cheat sheet.
+Sma_Ribbon plots a set of simple moving averages on a single pane, forming a visual "ribbon" that shows trend structure at a glance. It doesn't introduce a new calculation—it stacks SMAs of different lengths in one color-coded bundle. The ribbon widens when the averages separate, narrows when they converge, and shifts orientation when the shorter averages cross the longer ones. If you want to see whether short-, medium-, and long-term averages are aligned, this is a straightforward way to view that.
 
 ## Key Features That Set It Apart
 
-- **Color coding by distance:** The indicator shades each SMA line based on how far it is from the others. When they’re all green and stacked tightly, it’s a strong uptrend. Red and spread out? Bearish signal. This visual cue beats squinting at numeric values.
-- **Customizable periods:** You can tweak the SMA lengths however you like. The default set (10, 20, 30, 50, 100, 200) works out of the box, but I’ve had success swapping in 8, 13, 21, 34, 55 for a Fibonacci twist.
-- **No repainting:** Like any standard SMA, values are fixed once the bar closes. No second-guessing your entry.
+- **Color coding by spacing:** The indicator shades the SMA lines according to how far apart they sit. Tightly grouped lines read as one condition; widely spread lines read as another. This is a visual shortcut rather than a numeric readout.
+- **Customizable periods:** The SMA lengths are user inputs, so the ribbon can be rebuilt around any set of periods you prefer.
+- **Fixed values after close:** Like any standard SMA, each value is final once the bar closes. There is no recalculation of past bars.
 
-## Best Settings with Specific Recommendations
+## Settings and How to Tune Them
 
-For **daily charts**, the default periods are fine—they capture the major trend layers without clutter. For **4H or lower**, drop the longest SMA to 100 instead of 200 to reduce lag. I personally use: 8, 13, 21, 34, 55, 89 on 1H for scalping. The ribbon tightens fast on pullbacks, which gives you early reversal clues.
+The SMA periods are the core input, and the indicator is built to accept whatever set you choose. A common starting point is a spread of short, medium, and long lengths so the ribbon reflects multiple trend layers at once.
 
-**Pro tip:** Turn off the line labels in the settings. They add visual noise, and the ribbon’s width tells you everything you need.
+Two practical adjustments:
+
+- **Trim the longest average on faster timeframes.** Longer SMAs carry more lag, so shortening the top end of the set reduces how far behind price the ribbon sits.
+- **Turn off line labels.** They add clutter, and the ribbon's width already conveys the relationship between the averages.
+
+There is no single correct period set. Match the lengths to the timeframe you trade and how much smoothing you want.
 
 ## How to Use It for Entries and Exits
 
-**Entry:** Wait for the ribbon to compress (all lines close together) after a clear uptrend. That’s the “coil.” When the ribbon starts expanding upward again, go long. The compression means indecision; the expansion means the trend resumed. For shorts, same logic but flipped.
+**Entry:** Watch for the ribbon to compress—lines pulled close together—after a directional move. That compression reflects indecision. When the ribbon begins to expand in the direction of the prior trend, that expansion is the signal to enter in that direction. For shorts, the logic mirrors: compression after a downtrend, then downward expansion.
 
-**Exit:** Take profits when the ribbon starts to fan out and the shortest SMA (e.g., 8) crosses below the second shortest. That’s early warning of a trend stall. Full exit when the ribbon goes flat or starts to compress.
+**Exit:** Consider taking profits when the ribbon fans out and the shortest SMA crosses below the next shortest (or above, for shorts). A flat or re-compressing ribbon is a sign the move is losing structure.
 
-**Avoid:** Don’t trade during a wide, parallel ribbon—it’s just noise. The ribbon needs to be either compressed (coiling) or clearly expanding in your direction.
+**Avoid:** A wide, parallel ribbon is not a tradeable condition—it's noise. The ribbon is most useful when it's either compressed or clearly expanding in your direction.
 
 ## Honest Pros and Cons
 
 **Pros:**
-- Instantly shows trend alignment across timeframes.
-- No lag beyond the SMAs themselves.
-- Simple to interpret—no math degree needed.
+- Shows trend alignment across multiple average lengths in one view.
+- No lag beyond what the underlying SMAs inherently carry.
+- Simple to read without additional calculation.
 
 **Cons:**
-- Can be laggy on fast moves (it’s SMAs, not EMAs). On a 5-minute chart, you’ll miss the first 2–3 bars of a breakout.
-- Not standalone—you still need volume or RSI to confirm. The ribbon alone will give false signals during range-bound markets.
-- The color coding is helpful but can be distracting if you use too many periods.
+- It's built on SMAs, not EMAs, so it responds slowly to fast moves.
+- Not a standalone system—confirmation from volume or a momentum oscillator is still needed. In range-bound conditions the ribbon alone produces false signals.
+- Color coding helps, but too many periods make the pane busy and harder to read.
 
-## Who It’s Actually For
+## Who It's Actually For
 
-This is for **swing traders** and **position traders** who hold trades for days to weeks. Day traders on lower timeframes will find it too slow. Beginners will love it because it makes trend direction obvious without complex calculations. Advanced traders might find it too basic—but sometimes simple is better.
+Swing and position traders who hold for days to weeks are the natural audience. On lower timeframes the ribbon will feel too slow for day trading. Beginners benefit because it makes trend direction visually obvious. Advanced traders may find it basic—but basic tools still have a place.
 
 ## Better Alternatives If They Exist
 
-- **Better Trend Visualizer:** Supertrend. It’s faster and gives clear buy/sell signals without the ribbon’s lag. But it’s binary—no nuance.
-- **Better for Day Trading:** EMA Ribbon (same concept but with exponential MAs). Less lag, better for 1H and below.
-- **Better for Multi-Timeframe:** Cloud indicators like Ichimoku give more info (support/resistance, future projections) but are harder to learn.
+- **For a faster trend read:** Supertrend. It reacts quicker and gives discrete buy/sell signals, though it offers no nuance about trend strength.
+- **For day trading:** EMA Ribbon, the same concept built on exponential averages. Less lag on intraday timeframes.
+- **For multi-timeframe context:** Cloud indicators such as Ichimoku carry more information (support/resistance, forward projection) at the cost of a steeper learning curve.
 
 ## FAQ
 
-**Q: Does it repaint?**  
-A: No. SMAs are fixed after the bar closes.
+**Q: Does it repaint?**
+A: No. SMAs are fixed once the bar closes.
 
-**Q: Can I use it on crypto?**  
-A: Yes, works fine. But crypto is noisy—use at least a 1H timeframe to avoid whipsaws.
+**Q: Can I use it on crypto?**
+A: Yes. Crypto is noisy, so a higher timeframe helps filter whipsaws.
 
-**Q: What’s the best pair?**  
-A: Forex majors (EUR/USD, GBP/USD) during London/NY sessions. Indices (SPY, NASDAQ) also behave well.
+**Q: What's the best pair?**
+A: No pair is inherently "best." Liquid instruments with consistent trending behavior suit a ribbon tool better than choppy ones.
 
-**Q: Should I use the default periods?**  
-A: Yes, to start. Then adjust based on your timeframe and asset volatility.
+**Q: Should I use the default periods?**
+A: Defaults are a reasonable starting point. Adjust from there based on your timeframe and the volatility of what you trade.
 
 ## Final Verdict
 
-Sma_Ribbon is a solid, no-nonsense trend tool. It won’t make you a millionaire, but it will stop you from buying into a weak trend. It’s honest, transparent, and works exactly as advertised. If you already use SMAs, this just packages them better. If you don’t, it’s a great introduction to trend analysis.
+Sma_Ribbon is a plain, functional trend tool. It won't generate signals on its own, but it will keep you from trading against a clearly aligned trend. If you already use SMAs, this packages them more legibly. If you don't, it's an accessible entry point to trend reading.
 
-**Rating: ⭐⭐⭐⭐ (4/5)**  
-Docked one star because it’s still just SMAs—lag is inherent, and you need other tools to filter false signals. But for what it does, it does it well.
+**Rating: ⭐⭐⭐⭐ (4/5)**
+Docked one star because it's still just SMAs—lag is inherent, and other tools are needed to filter false signals. Within that scope, it does what it claims.
 
 ---
+
+*Note: no source material was provided for this rewrite, so all specific parameter values, timeframe claims, and performance statements from the original draft have been removed or generalized. Add them back only if you can point to documentation that supports them.*
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **MA Ribbon/GMMA** implementation was backtested on 30 markets over 5 years of daily data (44,666 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.5%** (50% = coin flip)
+- Strongest markets: USDJPY 57.3%, XAUUSD 55.8%, SPY 54.4%, AVAXUSD 53.9%
+- Weakest markets: XRPUSD 46.2%, VIX 42.5%, SHIBUSD 28.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 

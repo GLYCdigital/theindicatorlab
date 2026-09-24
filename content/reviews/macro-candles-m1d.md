@@ -17,79 +17,79 @@ categories:
 rating: 4
 description: "Macro_Candles_M1D review: how this higher-timeframe trend overlay works, the settings that matter, entry logic, and where it falls short."
 tv_script_url: "https://www.tradingview.com/script/G0Y5c2yI-Macro-Candles-M1D/"
+sources: ["https://www.tradingview.com/script/G0Y5c2yI-Macro-Candles-M1D/"]
 ---
-Most "macro" indicators are just an EMA with a fancy name. Macro_Candles_M1D isn't that — but it isn't the magic trend oracle its name might suggest either. Here's what I found after running it across FX, indices, and crypto for a few weeks.
+Most "macro" indicators are just an EMA with a fancy name. Macro_Candles_M1D isn't that — but it isn't the trend oracle its name might suggest either. Here's what the script actually does, per its own documentation.
 
 ## What it actually does
 
-Macro_Candles_M1D overlays higher-timeframe candle structure onto your working chart. The "M1D" in the name refers to the macro/major daily framing — the indicator pulls the dominant directional candles from that higher timeframe and projects them as a trend reference on top of whatever you're trading. You're not looking at a moving average crossing; you're looking at where the macro body closed and whether price is holding above or below it.
+Macro_Candles_M1D colours the candles that print inside each ICT macro window and grades every macro against the one before it. A macro runs from ten minutes before the hour to ten minutes after it, New York time. Inside the window the candles take the macro's colour; outside it the chart's own candles show untouched.
 
-On the MACD-style chart I tested it against, the effect is immediate: the macro candles sit as a banded backdrop, and your intraday price action reads against them. When price is riding the upper macro body, you're in macro-bullish territory. When it slips below the macro midpoint, the tone shifts. That's the whole idea, and it's a clean one.
+It draws nothing else: one dotted line at each macro's open and one dot carrying the reading. There's no banded backdrop, no higher-timeframe body projection, no daily framing. The "macro" here is a twenty-minute session window, not a daily candle.
 
 ## Key features that actually matter
 
-The thing that separates this from the hundred trend-filter scripts on TradingView is the **candle-based logic instead of line-based logic**. A 200 EMA tells you the average price over a period. A macro candle tells you where buyers and sellers actually closed the higher-timeframe bar — which is a more honest read of intent.
+The core mechanic is the **grade**. Each macro opens against the previous macro's high and low. Opening above that high grades it bullish, opening below that low grades it bearish, and opening inside the range grades it consolidation. The grade is set on the opening candle and held.
 
-Second, it's a **filter, not a signal generator**. It doesn't fire buy/sell arrows at you. That's a feature, not a bug. It forces you to bring your own entry method (breakout, pullback, MACD trigger) and simply align it with macro direction. Traders who want one-click signals will be disappointed; traders who already have an entry model will immediately see where it cleans up their trades.
+Then there's the **re-grade**. A macro can change its grade once. One that opened above the previous high turns bearish on the first candle that closes back below that high, and one that opened below the previous low turns bullish on the first close back above it. A consolidation macro turns bearish on the first close below the previous low and bullish on the first close above its high. Candles already printed keep the colour they had, so the candle where the grade changed stays visible. One change per macro, then it holds to the close.
 
-Third, the macro bodies update as the higher-timeframe candle builds, so you get a live sense of whether the daily is strengthening or fading — not just a static level from yesterday.
+On the **method**: the opening grade is read from the opening candle's open and never revised. A re-grade evaluates on confirmed candles only, so a colour change is never undone by a later tick. The previous macro's high and low are its full range, wick to wick, and the first macro on a loaded chart has no previous range to read against, so it stays uncoloured.
 
-## Best settings I landed on
+One practical limitation worth knowing up front: on one-hour and higher charts a twenty-minute window has no candle to colour. The script draws nothing and says so in a small corner note. This is a sub-hourly tool.
 
-After some fiddling, these are what I'd recommend starting with:
+## Settings and How to Tune Them
 
-- **Macro timeframe: Daily** for intraday charts (1m–1h). Don't stack it on a 4h chart with daily macro unless you're swing trading — it gets noisy.
-- **Show macro body only** — turn off wicks. The wicks add visual clutter and rarely change the read.
-- **Opacity around 20–30%** so the macro band doesn't bury your price candles.
-- **Color by direction** (bull green / bear red) rather than a single color — it makes the flip obvious at a glance.
+The settings cover colour mode, the bullish, bearish and consolidation colours, the re-grade switch, candle colouring on or off, and wick colour. The wick can be set to its own colour instead of inheriting the body's. Two other colour modes are available: each candle in its own up or down colour, or every macro candle in one colour.
 
-If you're scalping, keep the macro overlay on but reduce it to a background reference. If you're swing trading, you can afford to let it dominate the chart.
+The open line has its own colour and width settings — by default a neutral grey dotted line of width one.
 
-## How I'd actually trade it
+The bias dot has a cushion from price and a size setting. The dot sits above price for a bearish or consolidation macro, below price for a bullish one, at a set distance clear of the surrounding candles, and it steps away from any candle that later reaches it. Hovering the dot shows the reading in words; a re-grade recolours the dot, moves it to the other side of price and rewrites the reading.
 
-The logic is simple and that's the point. As the chart above shows, when price is holding above the macro body and your MACD trigger fires long, you take it. When price is below the macro body and your trigger fires short, you take it. When price is chopping *through* the macro body, you stand down.
+Which macros print is controlled by spacing and hour switches. Every hour is on by default. Spacing shows a macro every two, three or up to twelve hours, counted from midnight New York, and each of the twenty-four opening hours has its own switch on top of that. History in days is also configurable.
 
-That last rule is where this indicator earns its keep. The single biggest killer of intraday accounts is taking trend trades against the macro direction. Macro_Candles_M1D makes that mistake visually obvious — you can't pretend you didn't see the macro body sitting overhead.
+The script's own visual grammar: bullish is blue, bearish is red, consolidation is a dark grey — all three adjustable. Nothing carries a background or a text label; the dot is the only marker, and its reading lives in the hover.
 
-For exits, I used the macro midpoint as a trailing reference. Not a hard stop, but a "start tightening" zone. It's not precise, but it keeps you from giving back trend profits.
+## How the pieces fit together
+
+The logic is narrow and that's the point. A macro's grade gives you the directional read for that twenty-minute window; the re-grade flags the single moment it flips; the coloured candles show you exactly which candles belonged to the window and which didn't; the dot carries the current reading so you don't have to infer it from colour alone.
+
+The script is explicit that a macro exists only if its opening candle printed. Around a session close the last candles of one hour can run straight into the first candles of a later one with nothing between them; those candles belong to a window that never opened and are left alone. So gaps in colouring are meaningful, not glitches.
 
 ## Pros and cons
 
 **Pros:**
-- Clean, honest higher-timeframe context without repainting the way many MTF scripts do
-- Candle-based logic beats line-based trend filters for reading intent
-- Works as a filter across any entry model — breakout, pullback, momentum
-- Visually light once you tune opacity
+- The opening grade is read once and never revised, and re-grades evaluate on confirmed candles only — so a printed colour isn't undone by a later tick
+- The previous macro's full wick-to-wick range is the reference, not a smoothed average
+- One re-grade per macro, with the change candle left visible — you can see where the flip happened rather than just its end state
+- The dot carries the reading in words on hover, including after a re-grade
+- Per-hour switches plus spacing give fine control over which windows are active
 
 **Cons:**
-- No built-in alerts on macro flips, which is a genuine miss for a trend tool
-- On low-timeframe charts with fast markets, the macro body can lag a reversal by a bar or two
-- Documentation is thin — you're figuring out the settings by feel
-- Not a standalone system; if you don't have an entry method, this won't give you one
+- Draws nothing on one-hour and higher charts — the window has no candle to colour at those resolutions
+- The first macro on a loaded chart stays uncoloured, since it has no previous range to read against
+- Only the dot carries a reading; no text labels or backgrounds anywhere
+- Documentation is limited to the description itself
 
 ## Who it's for
 
-Discretionary intraday and swing traders who already have an entry trigger and want a macro bias filter. If you trade breakouts, pullbacks, or MACD/RSI triggers, this slots in cleanly. If you want signals handed to you, look elsewhere — this is context, not a strategy.
-
-## Alternatives worth knowing
-
-If you want alerts and a more mechanical bias filter, a **higher-timeframe EMA ribbon** does a similar job with less visual weight. If you want macro structure with more precision, TradingView's built-in **HTF candles** feature overlaps heavily with what this does — and it's free. Macro_Candles_M1D's edge is the packaging and the candle-body focus, but it's not doing anything the platform can't approximate natively.
+Traders working sub-hourly charts who want the ICT macro windows marked and graded without drawing them by hand. If your chart is one hour or higher, this script has nothing to show you. If you want signals handed to you, look elsewhere — this is window colouring and a grade, not a strategy.
 
 ## FAQ
 
-**Does it repaint?** The macro body updates as the higher-timeframe candle builds, which is expected behavior — not repainting in the misleading sense. Closed macro candles stay put.
+**Does it repaint?** The opening grade is read from the opening candle's open and never revised. A re-grade evaluates on confirmed candles only, so a colour change is never undone by a later tick. Candles already printed keep the colour they had.
 
-**Can I use it on crypto?** Yes, works fine on BTC/ETH. The daily macro read is arguably more useful there than in FX given crypto's trend persistence.
+**Which markets?** The window is resolved through the exchange-independent time zone so it stays true across daylight saving on any symbol.
 
-**What timeframe should my chart be?** 1m to 1h with a daily macro is the sweet spot. Below 1m it gets too noisy.
+**What chart timeframe do I need?** Sub-hourly. On one-hour and higher charts the twenty-minute window has no candle to colour, and the script draws nothing and notes this in a corner.
 
-**Is it worth the install over free HTF candles?** Only if you value the candle-body framing and the visual simplicity. It's a convenience upgrade, not a capability upgrade.
+**Can I turn off the re-grade?** Yes — there's a re-grade switch in the settings.
 
 ## Verdict
 
-Macro_Candles_M1D does one job well: it keeps you honest about higher-timeframe direction. It's not revolutionary, and the missing alerts and thin docs hold it back from five stars. But as a bias filter that cleans up trend trades, it earns its place on the chart.
+Macro_Candles_M1D does one job: it colours the candles inside each ICT macro window and grades each macro against the previous one, with a single permitted re-grade per window. It's a narrow, well-defined tool rather than a broad trend filter, and its usefulness depends entirely on whether you trade the sub-hourly windows it's built around.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — solid, useful, and worth installing if you already have an entry model. Skip it if you're looking for a signal generator.
+Built by M1D. For education and study of price delivery — not financial advice.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

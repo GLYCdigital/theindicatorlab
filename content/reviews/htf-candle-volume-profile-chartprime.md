@@ -16,15 +16,13 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Higher-timeframe volume profile built into a single candle. Review of Chartprime's HTF volume tool, with settings, entry tactics, and honest pros & cons."
+grounding: "none (no source found)"
+---
+**Final Verdict: ⭐⭐⭐⭐ (4/5)** – A niche but focused tool for traders who want higher-timeframe volume context without switching charts. Not a complete system, but useful for what it does.
+
 ---
 
-**Final Verdict: ⭐⭐⭐⭐ (4/5)** – A niche but powerful tool for traders who need higher-timeframe volume context without switching charts. Not perfect, but genuinely useful.
-
----
-
-I’ve tested dozens of volume profile indicators on TradingView. Most are over-engineered or laggy. This one from Chartprime is different—it does one thing well: it lets you see the volume profile of a higher timeframe (e.g., 1H or 4H) directly on your current candle chart without flipping tabs.
-
-Let me walk you through what I found after running it on BTC/USDT and ES futures.
+Most volume profile indicators on TradingView either try to do too much or get sluggish. This one from Chartprime takes a narrower approach: it shows the volume profile of a higher timeframe directly on your current candle chart, so you don't have to flip between tabs to see where volume clustered.
 
 ## What This Indicator Actually Does
 
@@ -32,82 +30,74 @@ Unlike standard volume profile tools that plot a histogram for the *current char
 
 For example, on a 1-minute chart, you can set the HTF to 1H. The indicator then shows the volume profile of the last 1-hour candle, right on your 1-min chart. The POC (Point of Control) and value area high/low (VAH/VAL) update as the HTF candle develops.
 
-**Key settings I used:**
-- **HTF Timeframe:** 1H (works well for intraday; 4H for swing)
+**Key settings:**
+- **HTF Timeframe:** Determines which higher timeframe's volume is profiled
 - **Profile Type:** "Candle" mode (shows profile per HTF candle) or "Range" mode (fixed lookback)
-- **Value Area:** Set to 70% (standard; you can tighten to 50% for scalping)
-- **Extend Lines:** Turned on for VAH/VAL and POC lines so they project forward
+- **Value Area:** The percentage of volume used to define the value area
+- **Extend Lines:** Projects VAH/VAL and POC lines forward
 
-## Best Settings & How to Dial It In
+## Settings and How to Tune Them
 
-After a week of testing, here’s my recommended setup for futures or crypto scalping:
+The indicator is configured around a handful of choices, and the right combination depends on your trading style rather than any single "best" setup:
 
-1. **Chart timeframe:** 1-min or 5-min (lower TF for precision)
-2. **HTF Timeframe:** 1H (balances detail with noise)
-3. **Value Area Percentage:** 70%
-4. **POC & VAH/VAL Lines:** Enable extension to see where price reacted previously
-5. **Profile Width:** 100% (so it fills the candle)
+1. **Chart timeframe:** Lower timeframes give more precision on entries relative to the HTF profile.
+2. **HTF Timeframe:** A shorter HTF balances detail against noise; a longer HTF gives a broader context.
+3. **Value Area Percentage:** A wider value area captures more of the distribution; a narrower one tightens the zone around the POC.
+4. **POC & VAH/VAL Lines:** Enable extension if you want to see where price previously reacted.
+5. **Profile Width:** Controls how much of the candle the profile fills.
 
-**Pro tip:** I found that setting the profile width to 50% and aligning it to the right edge of the HTF candle helps avoid clutter. The indicator will show you where the big volume cluster is, and you can watch price react to that zone in real time.
+A narrower profile width aligned to the edge of the HTF candle can reduce clutter. The indicator shows where the volume cluster sits, and you watch how price reacts to that zone in real time.
 
 ## How to Use It for Entries and Exits
 
-This isn’t a standalone signal generator. It’s a *context tool*. Here’s how I traded with it:
+This isn't a standalone signal generator. It's a *context tool*. The general approach:
 
-- **Entry:** Wait for price to pull back to the POC or value area low (VAL) on the HTF profile. If price holds that level on the lower timeframe (e.g., a bullish engulfing or rejection candle), I go long.
-- **Exit:** Take partial profits at the value area high (VAH). If price breaks above VAH with volume, I hold for a measured move.
-- **Stop Loss:** Place a few ticks below the VAL (or above VAH for shorts). The profile acts as a natural support/resistance zone.
-
-**Example from the chart above:** On BTC/USDT, the 1H profile showed a heavy POC at $29,400. Price tested it three times in 15 minutes, each time bouncing. I entered long at $29,420 with a stop at $29,340 (just below VAL). Exited at $29,650 (VAH). Clean trade.
+- **Entry:** Wait for price to pull back to the POC or value area low (VAL) on the HTF profile. If price holds that level on the lower timeframe (e.g., a bullish engulfing or rejection candle), that's a long context.
+- **Exit:** Take partial profits at the value area high (VAH). If price breaks above VAH with volume, a measured move may follow.
+- **Stop Loss:** Place stops beyond the VAL (or above VAH for shorts). The profile acts as a natural support/resistance zone.
 
 ## Honest Pros and Cons
 
-**What I liked:**
-- No need to switch timeframes – huge for scalpers
-- Real-time updates as HTF candle builds
-- Clean, non-laggy code (no repainting)
-- POC and value area lines extend forward, so you see key zones before price gets there
+**Pros:**
+- No need to switch timeframes
+- Real-time updates as the HTF candle builds
+- POC and value area lines extend forward, so key zones are visible before price reaches them
 
-**What I didn’t like:**
-- Can get visually noisy on lower TFs if you have many profiles open
+**Cons:**
+- Can get visually noisy on lower timeframes if many profiles are open
 - The HTF selection is limited to standard TradingView timeframes (no custom minutes)
-- No auto-rotation of profile (some competitors offer angled profiles for trend analysis)
+- No auto-rotation of the profile (some competitors offer angled profiles for trend analysis)
 
 ## Who Is This Actually For?
 
-- **Intraday scalpers** who trade 1-min/5-min charts but need volume context from 1H or 4H
+- **Intraday scalpers** who trade lower-timeframe charts but need volume context from a higher timeframe
 - **Futures traders** who rely on volume profile for support/resistance
-- **Crypto traders** who want to see where the big players are accumulating
+- **Crypto traders** who want to see where large positions are being built
 
-**Not for:** Long-term investors, pure price action traders who don’t use volume, or anyone who hates extra lines on their chart.
+**Not for:** Long-term investors, pure price action traders who don't use volume, or anyone who dislikes extra lines on their chart.
 
 ## Better Alternatives?
 
-If you want more advanced volume profile features (like anchored profiles, composite profiles, or session-based profiles), check out **Volume Profile Visible Range** (free, built into TradingView) or **LuxAlgo’s Volume Profile** (paid, more customization).
+If you want more advanced volume profile features (like anchored profiles, composite profiles, or session-based profiles), look at **Volume Profile Visible Range** (free, built into TradingView) or **LuxAlgo's Volume Profile** (paid, more customization).
 
-But for a quick, HTF-specific volume read *without switching charts*, this is the best I’ve found.
+But for a quick, HTF-specific volume read *without switching charts*, this one is worth a look.
 
-## FAQ (Real Questions from Traders)
+## FAQ
 
-**Q: Does it repaint?**  
-A: No. The profile updates as the HTF candle closes, but it doesn’t change past data.
+**Q: Does it repaint?**
+A: The profile updates as the HTF candle develops; past data is not revised.
 
-**Q: Can I use it on stocks?**  
-A: Yes, works on any market with volume data. I tested it on SPY and ES.
+**Q: Can I use it on stocks?**
+A: It works on any market that has volume data.
 
-**Q: Is the 30-day trial enough to test it?**  
-A: Yes. You’ll know within a week if it fits your style.
-
-**Q: Does it work on crypto with low volume?**  
-A: Less reliable. The profile gets choppy. Stick to high-volume pairs (BTC, ETH).
+**Q: Does it work on crypto with low volume?**
+A: Less reliably — the profile gets choppy. It's better suited to high-volume pairs.
 
 ---
 
-**Bottom line:** Htf_Candle_Volume_Profile_Chartprime earns 4 stars because it solves a real problem—seeing higher timeframe volume without leaving your chart. It’s not a magic system, but it’s a solid tool for traders who value volume context. If you scalp or day trade, it’s worth the download.
+**Bottom line:** Htf_Candle_Volume_Profile_Chartprime earns 4 stars because it solves a specific problem—seeing higher timeframe volume without leaving your chart. It's not a magic system, but it's a solid tool for traders who value volume context.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
-
----
 
 ## Go Deeper with The Indicator Lab
 

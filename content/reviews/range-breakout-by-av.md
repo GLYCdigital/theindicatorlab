@@ -17,97 +17,95 @@ categories:
 rating: 4
 description: "Honest Range_Breakout_By_Av review: how this TradingView range breakout indicator plots levels, its best settings, entry logic, pros, cons and rating."
 tv_script_url: "https://www.tradingview.com/script/169CP9sj-Range-Breakout-by-AV/"
+sources: ["https://www.tradingview.com/script/169CP9sj-Range-Breakout-by-AV/"]
 ---
-Range_Breakout_By_Av does one job and does it without ceremony: it draws a horizontal range from a defined lookback window, then flags the moment price closes through either edge. No repainting boxes that stretch to fit the last candle, no repainting arrows that appear three bars late. You get a box, a ceiling, a floor, and a signal when one gives way.
+Range Compression Breakout does one job and does it without ceremony: it detects periods of low-volatility consolidation, draws and maintains the range in real time, and signals when price transitions into expansion. No fixed price distance, no assumptions about which market you're trading.
 
-That sounds modest. It is also exactly the kind of boring infrastructure most breakout traders actually need, because the hard part of range trading has never been spotting the range — it's being disciplined about *which* range and *when* it's broken.
+That sounds modest. It is also the kind of infrastructure range traders actually need, because the hard part of range trading has never been spotting the range — it's being disciplined about *which* range counts and *when* it's broken.
 
 ## What the indicator actually plots
 
-On the MACD-panel screenshot above, the breakout signals sit below price action in the indicator's own window, which keeps your main chart clean if you already run three or four overlays. The range itself is drawn on price as a bounded box: a top line, a bottom line, and typically a midline or shaded interior.
+The range is drawn on price as a dynamic box: a top boundary, a bottom boundary, and a midline. Once a range is detected, the box expands to absorb new highs and lows while price stays contained, capturing the full churn of the consolidation instead of resetting on every probe.
 
-The logic is straightforward. The script samples the highest high and lowest low across your chosen lookback, holds those levels static for the duration of the range, and fires when a candle closes outside them. Breakout confirmation is close-based by default, which matters — wick-only breaks are the single biggest source of false signals in range systems, and this indicator doesn't fall for them.
+Compression is measured relative to the market's own recent behavior rather than a fixed price distance. In Adaptive Percentile mode, a range qualifies when its high-low span sits among the quietest percentile of its recent history — so the same settings work across futures, FX, crypto, and equities without retuning. ATR Multiple mode is also available for a fixed volatility-based threshold.
 
 **The features that earn their keep:**
 
-- Static, non-repainting range boundaries once formed
-- Close-confirmed breakout triggers (not wick triggers)
-- Adjustable lookback so you can tune range sensitivity to your timeframe
-- Optional midline for mean-reversion entries inside the range
-- Works on the indicator pane, so it stacks cleanly with your existing setup
+- Dynamic range box that expands to absorb new highs and lows during consolidation
+- Two compression modes: Adaptive Percentile (relative to recent history) and ATR Multiple (fixed volatility threshold)
+- Break signals with an optional buffer beyond the boundary, optional multi-bar confirmation, and an optional volume-spike filter
+- Wick Long / Wick Short signals for failed probes that close back inside the range
+- A cooldown period after each break that prevents the box from immediately reforming on the expansion move
+- Diagnostic values including the range-to-ATR ratio and compression state available in the Data Window for calibration
 
-## Settings I'd actually use
+## Settings and How to Tune Them
 
-The default lookback is the first thing to touch. Too short and you're drawing ranges around noise; too long and the levels are so wide that by the time price breaks out, the move is half over.
+Four preset profiles configure lookback, tightness, minimum bars, confirmation, and cooldown together:
 
-My tested starting points:
+- **Tight Ranges** — for low-timeframe scalping
+- **Normal Ranges** — for intraday
+- **Swing Trading** — for multi-day consolidations
+- **Options Selling** — for extended sideways chop
 
-- **Lookback:** 20–30 bars on 1H and 4H. Below 15 it's twitchy, above 50 it lags badly on intraday charts.
-- **Close confirmation:** Keep it on. Turning it off to get earlier entries is how you collect fakeouts.
-- **Midline:** Enable it if you scalp inside the range, disable it if you only trade breaks — it's visual clutter otherwise.
-- **Alert on break:** Set it. Manually watching a box for six hours is a waste of your attention.
+Custom mode exposes all parameters individually. Box fill, borders, midline, and signal colors are fully adjustable, and each signal type toggles independently.
 
-If you trade lower timeframes like 5m or 15m, drop the lookback to roughly 15–20 and expect more signals, more noise, and a lower hit rate. The edge on this indicator lives on higher timeframes.
+Two settings deserve particular attention. The volume-spike filter should be left off on spot FX and other symbols reporting tick-based volume — the filter assumes real volume data. And the compression mode choice matters: Adaptive Percentile is the mode that travels across instruments without retuning, while ATR Multiple gives you a fixed volatility threshold if you prefer to define compression in absolute terms.
 
-## How I'd trade it
+## How to trade it
 
-The clean play is a two-step:
+The Break signal fires when price closes decisively beyond the boundary plus a buffer, with optional multi-bar confirmation and an optional volume-spike filter. The Wick Long / Wick Short signals are a different play entirely: a failed probe outside the range that closes back inside on a long wick, confirmed by the following bar, indicating mean reversion toward the midline.
 
-1. Wait for a candle to **close** beyond the range boundary.
-2. Enter on the retest of the broken level, or on the close itself if momentum is strong.
-
-Stop goes just inside the range — below the ceiling for longs, above the floor for shorts. Target the range's own height projected from the breakout point, which is the classic measured move and gives you a defined risk-to-reward before you click anything.
-
-The trap to avoid: taking every signal. Ranges that form after a long, extended trend often break in the *wrong* direction, because the trend is exhausted, not continuing. Check the higher-timeframe context before you trust a breakout.
+The two signal types point in opposite directions. Break trades the expansion; Wick signals trade the rejection. Treating them as the same setup is a mistake.
 
 ## Pros and cons
 
 **Pros**
 
-- Genuinely non-repainting levels — verified against historical bars
-- Close-confirmed signals cut a large chunk of fakeouts
-- Simple enough to read in two seconds, no interpretation required
-- Sits on the indicator pane, plays well with other tools
-- Alerts work reliably
+- Range detection is relative to the market's own recent behavior, so settings carry across futures, FX, crypto, and equities
+- The box expands to absorb new highs and lows rather than resetting on every probe, so the consolidation is captured in full
+- Multiple confirmation layers available: buffer, multi-bar confirmation, volume-spike filter
+- Cooldown after each break prevents the box from immediately reforming on the expansion move
+- Four preset profiles cover scalping through extended sideways chop without manual configuration
+- Diagnostic values in the Data Window let you calibrate compression state directly
 
 **Cons**
 
-- No volatility filter — it will signal breakouts in dead, low-volume ranges that go nowhere
-- No built-in volume or momentum confirmation, so you're adding that yourself
-- Signal quality degrades noticeably on sub-15m timeframes
-- Documentation is thin; you're reverse-engineering the logic from behavior
+- Volume-spike filter is unusable on spot FX and other tick-volume symbols
+- Four preset profiles and a Custom mode mean there are a lot of parameters to understand before the tool behaves as you expect
+- No built-in guidance on which compression mode suits which market — that's on you to calibrate via the Data Window
 
 ## Who it's for
 
-Discretionary breakout traders on 1H to daily charts who want a mechanical range definition without paying for a full suite. If you already understand market structure and just need clean levels plus a trigger, this fits. If you want a fully automated, filter-heavy system that tells you *whether* to take the trade, look elsewhere.
+Discretionary traders who want a mechanical, self-calibrating definition of compression and expansion rather than a fixed lookback range. The preset profiles map to distinct trading styles — scalping, intraday, swing, and options selling — so the tool is aimed at traders who already know which of those they are. If you want a range tool that requires no calibration, the Adaptive Percentile mode gets you closest, but the Data Window diagnostics exist because calibration is expected.
 
 ## Alternatives
 
+- **Donchian Channel** — simpler, built-in, and covers fixed-lookback breakout ground
 - **Opening Range Breakout scripts** — better if you trade the first hour of a session specifically
-- **Donchian Channel** — simpler, built-in, and covers most of the same ground for pure breakout traders
-- **Support/Resistance zone indicators** — better if you want dynamic zones rather than fixed boxes
+- **Support/Resistance zone indicators** — better if you want dynamic zones rather than a compression-defined box
 
-Range_Breakout_By_Av isn't trying to beat Donchian on sophistication. It's trying to be clearer, and for a lot of traders that's the whole point.
+Range Compression Breakout isn't trying to beat Donchian on simplicity. It's trying to distinguish quiet consolidation from ordinary price movement, and for traders who care about that distinction, that's the whole point.
 
 ## FAQ
 
 **Does it repaint?**
-No. Once the range is set and a close is confirmed, the level and signal stay put.
+The source material describes the box as dynamic — it expands to absorb new highs and lows while price stays contained. It does not make any claim about repainting either way.
 
 **What timeframe is best?**
-1H and 4H gave the cleanest signals in testing. Higher timeframes work too; lower ones get noisy fast.
+The preset profiles are organized by trading style rather than timeframe: Tight Ranges for low-timeframe scalping, Normal Ranges for intraday, Swing Trading for multi-day consolidations, and Options Selling for extended sideways chop.
 
 **Can I use it for mean reversion?**
-Yes, if you enable the midline and fade edges inside the range — but that's a different strategy with different risk.
+Yes. The Wick Long / Wick Short signals are designed for exactly that — a failed probe outside the range that closes back inside, indicating mean reversion toward the midline.
 
 **Does it work on crypto and forex?**
-It's timeframe and instrument agnostic. It behaves the same on any liquid market.
+Adaptive Percentile mode is designed so the same settings work across futures, FX, crypto, and equities without retuning. On spot FX and other symbols reporting tick-based volume, leave the volume-spike filter off.
 
 ## Verdict
 
-A focused, honest range breakout tool that does one thing well and doesn't pretend otherwise. It won't filter bad trades for you, and it's not built for scalpers, but for swing and intraday breakout traders who want clean, non-repainting levels with close-confirmed triggers, it earns its place on the chart.
+A focused compression and expansion tool that does one thing and does it without requiring you to retune per instrument. The Adaptive Percentile mode is the reason it travels; the preset profiles are the reason it's usable out of the box; the Data Window diagnostics are the reason you can calibrate it when the presets don't fit. The main caveat is the volume-spike filter, which is unusable on tick-volume symbols, and the sheer number of parameters once you leave the presets.
 
-**Rating: ⭐⭐⭐⭐ (4/5)** — solid and reliable, docked one star for the missing volatility/volume filter that would separate its good signals from its dead ones.
+**Rating: ⭐⭐⭐⭐ (4/5)** — well-built and instrument-agnostic, docked one star for the volume filter's limited applicability and the calibration burden the presets only partly remove.
+
 ## Go Deeper with The Indicator Lab
 
 🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.

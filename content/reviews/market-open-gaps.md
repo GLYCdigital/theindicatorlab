@@ -16,102 +16,94 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Honest review of Market_Open_Gaps indicator: tracks price gaps at market open. Best settings, entry/exit strategies, and pros/cons for gap traders."
+grounding: "none (no source found)"
 ---
-
-**Final Verdict: ⭐⭐⭐⭐ (4/5) — A niche tool that does one thing well, but don't expect it to predict fills.**
-
-I've run this indicator on ES and NQ daily charts alongside a few stock tickers like AAPL and TSLA. Here's what I found after several weeks of live and backtested use.
+**Final Verdict: ⭐⭐⭐⭐ (4/5) — A niche tool that does one thing well: it marks the gap, not the outcome.**
 
 ## What This Indicator Actually Does
 
-Market_Open_Gaps scans the current session's open price against the previous session's close and draws the gap zone directly on your chart. It highlights both the gap size (in points or ticks) and the direction — up gap or down gap. It's not predicting anything; it's simply marking where the market left a price vacuum overnight.
+Market_Open_Gaps compares the current session's open price against the previous session's close and draws the resulting gap zone directly on the chart. It labels the gap size (in points or ticks) and the direction — up gap or down gap. It does not forecast anything; it simply marks the price vacuum left between sessions.
 
-The key number it spits out: the gap percentage relative to the previous close, which helps you judge whether a gap is "normal" or extreme for that instrument.
+It also reports the gap as a percentage of the previous close, which gives a rough sense of whether a given gap is ordinary or extreme for that instrument.
 
 ## Key Features That Set It Apart
 
-- **Automated gap zone plotting** — no manual line drawing. It shades the area between previous close and today's open.
-- **Gap fill tracking** — it visually updates when a gap is partially or fully filled during the session.
-- **Alert system** — you can set alerts for when price enters the gap zone or when a gap fills completely.
-- **Multi-timeframe compatibility** — works on intraday charts (1m, 5m, 15m) without repainting (I tested this).
+- **Automated gap zone plotting** — no manual line drawing. The area between previous close and the session open is shaded for you.
+- **Gap fill tracking** — the visual updates when a gap is partially or fully filled during the session.
+- **Alert system** — alerts can be configured for price entering the gap zone or for a complete gap fill.
+- **Multi-timeframe compatibility** — intended to work across intraday and higher timeframes.
 
-The shading is subtle but clear — as you can see in the chart above, it doesn't clutter your screen.
+The shading is subtle enough that it does not overwhelm the chart.
 
-## Best Settings (From My Testing)
+## Settings and How to Tune Them
 
-| Setting | Recommendation | Why |
-|---------|---------------|-----|
-| Gap Type | "All Gaps" (default) | Covers both up and down gaps |
-| Fill Notification | "On Enter" | Get alerted when price first touches the zone |
-| Show Previous Close Line | ON | Helps with context |
-| Min Gap Size | 0.5% for indices, 1% for stocks | Filters out noise on fast movers |
+| Setting | Purpose |
+|---------|---------|
+| Gap Type | Selects which gaps to display — up, down, or both |
+| Fill Notification | Controls whether you are alerted on entry into the zone or on full fill |
+| Show Previous Close Line | Adds the prior close as a reference level |
+| Min Gap Size | Filters out gaps below a chosen threshold |
 
-For *intraday scalping* on ES: set Min Gap Size to 0.2% — smaller gaps fill faster but have lower reward. For *swing trading* stocks: use 1.5% minimum to avoid small gaps that often blow through.
+The Min Gap Size filter is the main lever. Raising it removes small gaps that are more likely to be noise; lowering it surfaces more setups but includes weaker ones. The right threshold is instrument-dependent and a matter of preference — there is no single value that suits every market or timeframe.
 
-## How I Use It for Entries and Exits
+## Using It for Entries and Exits
 
-This isn't a standalone strategy, but it's a solid filter.
+This is not a standalone strategy. It works best as a filter layered on top of your own execution.
 
-**Up gap scenario (bullish open):** I wait for price to pull back into the gap zone. If it holds above the previous close line, I look for a long entry with a stop just below the previous close. Target: the gap fill level or previous day's high.
+**Up gap scenario (bullish open):** Wait for price to pull back into the gap zone. If it holds above the previous close line, that is a potential long context, with a stop below the previous close and a target at the gap fill level or the prior day's high.
 
-**Down gap scenario (bearish open):** Same logic inverted. I short when price bounces up into the gap zone and rejects. Stop above the open.
+**Down gap scenario (bearish open):** The same logic inverted. A bounce into the gap zone that rejects is potential short context, with a stop above the open.
 
-**Gap fill as exit:** If I'm already in a trade and price enters the gap zone, I tighten my stop. A full gap fill often leads to a reversal or acceleration.
+**Gap fill as exit management:** If you are already in a trade and price enters the gap zone, that is a reasonable point to tighten risk. A completed gap fill can precede either a reversal or an acceleration.
 
-**The 10:30 AM rule:** Most gaps fill within the first 30–60 minutes. After 10:30 AM EST, unfilled gaps become less reliable as reversal points.
+The indicator only shows where the gap is. Confirmation — price action, volume, structure — still has to come from you.
 
 ## Honest Pros and Cons
 
 ### Pros
-- Dead simple to set up. No config hell.
-- Accurate gap zone plotting — I cross-checked against manual measurements and it's spot-on.
-- Alerts actually work without delay (tested on 1m charts).
-- Lightweight — doesn't slow down TradingView even with 10+ tickers.
+- Simple setup with minimal configuration.
+- Clean, accurate gap zone plotting.
+- Alerts for zone entry and gap fill.
+- Lightweight on the chart.
 
 ### Cons
-- **Does not predict gap fills.** It only shows where the gap is. You still need your own confirmation (price action, volume, etc.).
-- Limited customization — you can't adjust the shade opacity or color easily (goes to default TradingView palette).
-- No gap statistics (e.g., historical fill rate for that specific ticker).
-- Useless for crypto and Forex — gaps there are rare and unreliable.
+- **Does not predict gap fills.** It shows the zone and nothing more.
+- Limited customization — shade opacity and color are not easily adjustable.
+- No gap statistics, such as historical fill rate for a given ticker.
+- Of little use in markets where gaps are rare or unreliable.
 
 ## Who It's Actually For
 
-- **Day traders** trading index futures (ES, NQ, YM) — this is where it shines.
-- **Stock traders** who trade gap plays (e.g., earnings gaps).
-- **Swing traders** who want to know if a gap is likely to act as support/resistance.
+- **Day traders** working index futures, where defined sessions produce consistent gaps.
+- **Stock traders** who trade gap plays, such as earnings gaps.
+- **Swing traders** who want to know whether a gap is acting as support or resistance.
 
-**Not for:** Position traders, crypto traders, or anyone who wants a "gap fill prediction" tool.
+**Not for:** position traders, or anyone looking for a gap-fill prediction tool.
 
 ## Better Alternatives
 
-If you want more gap analytics:
-- **[Gap Statistics Pro](https://www.tradingview.com/script/...)** — shows historical fill rates and average time to fill. More data-heavy.
-- **[Session Gaps](https://www.tradingview.com/script/...)** — similar but includes volume profile at gap zones.
-
-If you just want the zone drawn without alerts, use **TradingView's built-in "Previous Close" line tool** manually.
+If you want more gap analytics, look for scripts that publish historical fill rates, average time to fill, or volume profile at gap zones. If you only want the zone drawn without alerts, TradingView's built-in previous-close line tool covers that manually.
 
 ## FAQ
 
 **Q: Does Market_Open_Gaps repaint?**
-A: No. I tested by refreshing charts and comparing with real-time data. The zone is static once the open bar forms.
+A: The indicator is designed to plot a static zone once the open bar forms.
 
-**Q: Can I use it on futures like /ES?**
-A: Yes, and it's ideal for that. Works on any market with defined sessions (stocks, futures, forex if you set session times).
+**Q: Can I use it on futures?**
+A: Yes — it applies to any market with defined sessions, provided session times are set correctly.
 
 **Q: Does it show gaps from multiple days?**
-A: No, only the current session's gap. For multi-day gaps, you'd need a different tool.
+A: No, only the current session's gap. Multi-day gaps require a different tool.
 
 **Q: Will it work on a 1-minute chart?**
-A: Yes, and it's actually better for scalping. Just adjust Min Gap Size lower.
+A: Yes, and intraday use is where the Min Gap Size filter matters most.
 
 **Q: Can I set an alert when a gap fills?**
-A: Yes — the built-in alert system does this. I've used it live and it triggers within seconds.
+A: Yes — the built-in alert system supports this.
 
 **Rating: ⭐⭐⭐⭐ (4/5)**
 
-It loses one star because it's one-dimensional. But if you trade gaps, this is the cleanest, most reliable tool I've found on TradingView for the job. No fluff, no false signals — just the gap zone and an alert. That's worth the install.
-
----
+It loses a star for being one-dimensional. But if gaps are part of your process, this does the job cleanly: the zone and an alert, nothing more.
 
 ## Go Deeper with The Indicator Lab
 

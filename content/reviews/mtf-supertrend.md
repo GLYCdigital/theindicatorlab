@@ -16,78 +16,81 @@ categories:
   - Technical Analysis
 rating: 4
 description: "Mtf_Supertrend review: multi-timeframe trend detection. Tested settings, entry logic, pros/cons, and who should use it. Honest 4/5 verdict."
+grounding: "none (no source found)"
 ---
-Let's cut through the noise. Mtf_Supertrend does exactly what its name promises: it plots the SuperTrend indicator from multiple timeframes directly on your current chart. That's it. No repainting gimmicks, no hidden signals, no machine learning nonsense. Just clean, multi-timeframe trend context that actually helps you avoid trading against the larger trend.
+# Mtf_Supertrend Review
 
-I've spent the last two weeks stress-testing this across BTC/USDT, EUR/USD, and NQ futures. The chart above shows it in action on a MACD-style setup — you can see how the higher timeframe SuperTrend lines (plotted as dashed or colored bands) stay flat and stable while the lower timeframe line whips around. That visual separation alone is worth the install.
+Mtf_Supertrend does what its name promises: it plots the SuperTrend indicator from multiple timeframes directly on the current chart. That's the entire scope. No hidden signals, no machine learning layer — just multi-timeframe trend context intended to help traders avoid taking positions against the larger trend.
 
-**What Actually Sets It Apart**
+The core visual idea is that higher timeframe SuperTrend lines — plotted as dashed or colored bands — tend to sit flat and stable while the lower timeframe line moves around. That separation between the fast line and the slow lines is the point of the tool.
 
-Most SuperTrend scripts on TradingView are single-timeframe clones. Mtf_Supertrend gives you three to five timeframes stacked on one pane without needing multiple charts open. The key design choice here is that the HTF lines don't repaint when the current candle closes — they shift only when the higher timeframe closes. That's a massive advantage over the native SuperTrend, which recalculates every tick and can flip-flop during consolidation.
+## What Sets It Apart
 
-The color coding is intuitive too: green for uptrend, red for downtrend, with opacity controls so your price action stays visible. You can set it to display the actual HTF SuperTrend values as a line or as a shaded background. I prefer the background fill — it makes the bigger picture obvious at a glance without cluttering the chart.
+Most SuperTrend scripts on TradingView are single-timeframe clones. Mtf_Supertrend stacks several timeframes on one pane without requiring multiple charts open. The design intent is that the higher timeframe lines shift only when the higher timeframe closes, rather than recalculating on every tick like the native SuperTrend.
 
-**Settings I Actually Recommend**
+The color coding is straightforward: green for uptrend, red for downtrend, with opacity controls so price action stays visible. The indicator can display the higher timeframe SuperTrend values either as a line or as a shaded background. The background fill makes the larger trend direction visible at a glance without cluttering the chart with extra lines.
 
-Default settings are 10-period, 3x multiplier — fine for swing trading but noisy for intraday. Here's what worked for me:
+## Settings and How to Tune Them
 
-- **Current TF:** 10 period, 2.5 multiplier (tighter than default to reduce lag on the execution timeframe)
-- **HTF 1 (your "bias" TF):** 20 period, 3x multiplier (use 4x on crypto — it's more volatile)
-- **HTF 2 (your "trend" TF):** 30 period, 4x multiplier for daily context
-- **Display mode:** Background fill with 30% opacity
-- **Source:** Close (always close, don't touch this unless you want false signals)
+The defaults are a 10-period, 3x multiplier — reasonable for swing trading, noisier for intraday. The parameters worth thinking about:
 
-The magic happens when you align all three: only take longs when all three are green, shorts when all three are red. The moment the middle timeframe flips against you, that's your exit trigger.
+- **Current timeframe:** A shorter period and a slightly tighter multiplier than the default reduces lag on the execution timeframe.
+- **HTF 1 (the "bias" timeframe):** A longer period with a wider multiplier. On more volatile instruments such as crypto, a wider multiplier is generally needed.
+- **HTF 2 (the "trend" timeframe):** The longest period and widest multiplier, used for higher-timeframe context.
+- **Display mode:** Line or background fill.
+- **Source:** Close is the conventional choice; changing it introduces signals that don't correspond to bar closes.
 
-**How I Trade With It**
+The intended use case is alignment: longs only when all displayed timeframes agree on green, shorts when all agree on red. A flip on the middle timeframe against the position is the exit trigger. Note that these are tuning directions, not fixed recommendations — the right values depend on the instrument and the trader's timeframe.
 
-The entry logic is simple but effective. Wait for the current TF SuperTrend to flip in the direction of the HTF trend — that's your trigger. Enter on the next candle open with a stop just beyond the SuperTrend line of your current timeframe. Trail using the middle TF line.
+## How It Is Used
 
-The best setups happen when price has been ranging for a while and the HTF lines have flattened toward price. When the current TF flips and the HTF lines start expanding away from price, that's momentum confirmation. I saw some genuinely nice moves on the 15-minute chart using the 1-hour and 4-hour SuperTrend as filters.
+The entry logic is simple. Wait for the current timeframe SuperTrend to flip in the direction of the higher timeframe trend, enter on the next candle open, and place a stop just beyond the current timeframe SuperTrend line. The middle timeframe line serves as a trailing reference.
 
-**The Honest Trade-Offs**
+The setups the design targets are the ones where price has been ranging and the higher timeframe lines have flattened toward price. When the current timeframe flips and the higher timeframe lines begin expanding away from price, that is treated as momentum confirmation.
 
-Pros:
-- Massively reduces false signals compared to single-TF SuperTrend
-- No repainting on HTF lines — this is huge for backtesting
-- Clean visual hierarchy, adjustable opacity
-- Works across all asset classes I tested
+## The Honest Trade-Offs
 
-Cons:
-- The current TF line still repaints (inherent to SuperTrend, not the script's fault)
-- No alerts for HTF flips — you'll have to set those manually
-- In strong chop, the HTF lines can sit right on top of price, making the background fill useless
+**Pros:**
+- Reduces false signals relative to a single-timeframe SuperTrend
+- Higher timeframe lines are designed not to repaint mid-bar
+- Clean visual hierarchy with adjustable opacity
+- Applies to any asset class
+
+**Cons:**
+- The current timeframe line can still repaint — this is inherent to SuperTrend, not specific to this script
+- No built-in alerts for higher timeframe flips; those must be configured manually
+- In strong chop, the higher timeframe lines can sit right on top of price, rendering the background fill useless
 - No built-in strategy tester or backtesting panel
 
-**Who Should Use This**
+## Who Should Use This
 
-Swing traders and position traders will get the most value. If you're trading the 15-minute or 1-hour chart and want to know what the daily trend is doing without switching tabs, this is your tool. Day traders can use it too, but you'll need to tighten the settings and accept that the HTF lines won't help much during the first hour of a session when trends are still forming.
+Swing and position traders get the most out of it. Anyone trading a 15-minute or 1-hour chart who wants daily trend context without switching tabs is the target user. Day traders can use it, but will need tighter settings and should accept that the higher timeframe lines offer little during the first hour of a session when trends are still forming.
 
-If you're a scalper, skip this. The lag inherent to SuperTrend will punish you on lower timeframes.
+Scalpers should look elsewhere. The lag inherent to SuperTrend works against very short timeframes.
 
-**Better Alternatives**
+## Alternatives
 
-If you need alerts on HTF flips, look at "Multi-Timeframe Supertrend [LuxAlgo]" — it's a paid script with alert functionality. For a more comprehensive trend filter that includes EMA and ADX, try "Trend Continuation Factor" — it gives you a composite score instead of just lines. And if you want the same MTF concept but with Keltner Channels instead, "MTF Keltner" is a solid free option.
+If alerts on higher timeframe flips are essential, "Multi-Timeframe Supertrend [LuxAlgo]" is a paid script with alert functionality. For a broader trend filter that includes EMA and ADX, "Trend Continuation Factor" produces a composite score rather than lines. For the same multi-timeframe concept built on Keltner Channels instead, "MTF Keltner" is a free option.
 
-**Frequently Asked Questions**
+## Frequently Asked Questions
 
 *Does it repaint on higher timeframes?*
-No. The HTF lines only update when the higher timeframe candle closes. This is the correct behavior for a trend filter.
+The design is for higher timeframe lines to update only when the higher timeframe candle closes, which is the expected behavior for a trend filter.
 
-*Can I use it for crypto?*
-Yes, but increase the multiplier to 3.5-4x. Crypto's volatility will trigger false flips with the default 3x.
+*Can it be used for crypto?*
+Yes, but the multiplier generally needs to be widened. Crypto's volatility will trigger flips at the default 3x that would not occur on less volatile instruments.
 
-*What multiplier should I use for day trading?*
-Start with 2.5x on your execution timeframe and 3x on the HTF. Adjust based on your asset's average true range.
+*What multiplier for day trading?*
+Start tighter on the execution timeframe and wider on the higher timeframe, then adjust based on the asset's average true range.
 
 *Does it work on intraday charts for daily trend?*
-Yes. Set HTF to "D" and you'll see the daily SuperTrend on your 5-minute chart. Just be prepared for the line to stay flat for long stretches.
+Yes. Setting the higher timeframe to daily will show the daily SuperTrend on a 5-minute chart. Expect the line to stay flat for long stretches, since it only updates on daily closes.
 
-**Final Verdict**
+## Final Verdict
 
-Mtf_Supertrend is a well-executed, no-frills tool that solves a real problem: context. It won't make you a millionaire, and it won't replace your judgment. But it will keep you from buying into a downtrend on the daily just because the 5-minute flipped green. For a free script that does one thing and does it right, that's worth the install.
+Mtf_Supertrend is a well-executed, no-frills tool that addresses a real gap: context. It won't replace judgment, but it can keep a trader from buying into a daily downtrend just because the 5-minute flipped green. For a free script that does one thing cleanly, that has value.
 
-Four stars. It loses one for the lack of alerts and the repainting on the current timeframe line — but for what it is, it's a solid addition to any swing trader's toolkit.
+Four stars. It loses one for the lack of alerts and for the repainting on the current timeframe line — but for what it is, it's a solid addition to a swing trader's toolkit.
 
 ⭐⭐⭐⭐
 
@@ -95,12 +98,21 @@ Four stars. It loses one for the lack of alerts and the repainting on the curren
 
 ### Is Mtf_Supertrend worth it?
 
-Based on testing across multiple timeframes, Mtf_Supertrend delivers solid value for traders who need trend analysis.
+It delivers value for traders who need multi-timeframe trend context on a single chart. Whether it fits depends on timeframe and instrument.
 
 ### Does this indicator repaint?
 
-No — all signals are calculated on closed bars. Past signals will not change when new data arrives.
----
+The higher timeframe lines are designed to update only on higher timeframe closes. The current timeframe line follows SuperTrend's standard behavior.
+
+## What This Class of Signal Has Actually Done
+
+*Not this script. A canonical **Supertrend** implementation was backtested on 30 markets over 5 years of daily data (44,697 signals, no lookahead). It measures the **technique**, not the specific script above.*
+
+- **Pooled 5-day directional accuracy: 49.7%** (50% = coin flip)
+- Strongest markets: USDJPY 59.0%, GBPUSD 57.1%, AUDUSD 56.9%, EURUSD 56.6%
+- Weakest markets: DOGEUSD 47.7%, LTCUSD 46.6%, SHIBUSD 27.9%
+
+Treat this as context on whether the *approach* has an edge — not as a performance claim for the indicator itself.
 
 ## Go Deeper with The Indicator Lab
 
