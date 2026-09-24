@@ -83,7 +83,7 @@ Twiggs Money Flow (TMF) was developed by Colin Twiggs as an improvement on CMF. 
 
 ---
 
-**Volume is only half the story.** The [Lab Report](/the-lab-report/) runs 93 indicators across 20 markets every 15 minutes — so you see the full consensus, not just one volume read. [Try it free →](https://theindicatorlab.com/the-lab-report/)
+**Volume is only half the story.** The [Lab Report](/the-lab-report/) runs 123 indicators across 20 markets every 15 minutes — so you see the full consensus, not just one volume read. [Try it free →](https://theindicatorlab.com/the-lab-report/)
 
 ---
 

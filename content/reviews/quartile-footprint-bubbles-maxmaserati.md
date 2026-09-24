@@ -112,7 +112,7 @@ The learning curve is real, and the lack of alerts is a limitation. But once you
 
 ## Go Deeper with The Indicator Lab
 
-🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+🔬 **The Lab Report** — 123 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
 [Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 

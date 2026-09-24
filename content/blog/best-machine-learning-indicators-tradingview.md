@@ -22,7 +22,7 @@ From our archive of 558 TradingView indicator reviews, we selected the highest-r
 
 <div class="blog-affiliate-inline" style="margin: 1.75rem 0; padding: 1.25rem 1.5rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(59,130,246,0.06) 100%); border: 2px solid #3b82f6; border-radius: var(--radius-lg);">
 <p style="margin:0 0 .5rem;font-weight:700;font-size:1.2rem;">🔬 Which AI indicator is actually firing today?</p>
-<p style="margin:0 0 1rem;color:var(--text-secondary);line-height:1.6;">An ML model is only useful if it's right <em>now</em>. The Lab Report reads <strong>93 indicators across 20 markets every 15 minutes</strong> and sends one consensus verdict — so you stop guessing which model to trust today.</p>
+<p style="margin:0 0 1rem;color:var(--text-secondary);line-height:1.6;">An ML model is only useful if it's right <em>now</em>. The Lab Report reads <strong>123 indicators across 20 markets every 15 minutes</strong> and sends one consensus verdict — so you stop guessing which model to trust today.</p>
 <p style="margin:0;display:flex;gap:.6rem;flex-wrap:wrap;">
 <a href="/the-lab-report/"
    onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-machine-learning-indicators-tradingview',placement:'blog-above-fold'});"
@@ -58,7 +58,7 @@ Ai_Source_Switching_Moving_Average filters out noise effectively, giving you a c
 
 ---
 
-**Short on time?** The three indicators above are the ones we'd actually install. Test them side-by-side on TradingView's free plan, then grab a real-time read on all 93 indicators across 20 markets with the Lab Report — every 15 minutes, straight to your phone.
+**Short on time?** The three indicators above are the ones we'd actually install. Test them side-by-side on TradingView's free plan, then grab a real-time read on all 123 indicators across 20 markets with the Lab Report — every 15 minutes, straight to your phone.
 
 [🔬 Lab Report · $149/mo →](https://theindicatorlab.com/the-lab-report/)
 [📈 Lab Edge · $249/mo →](https://theindicatorlab.com/lab-edge/)

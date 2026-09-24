@@ -40,7 +40,7 @@ description: "Partner with The Indicator Lab. Earn recurring commission promotin
 
 <div class="aff-hero">
   <h1>Partner with <span>The Indicator Lab</span></h1>
-  <p>We review and rank TradingView indicators at scale — the only site doing it systematically. Our subscribers use our consensus engine to cut through conflicting signals across 88 indicators and 20 markets.</p>
+  <p>We review and rank TradingView indicators at scale — the only site doing it systematically. Our subscribers use our consensus engine to cut through conflicting signals across 123 indicators and 20 markets.</p>
   <a href="https://t.me/TheLabReport_bot" class="aff-cta">Apply to join →</a>
 </div>
 
@@ -92,7 +92,7 @@ description: "Partner with The Indicator Lab. Earn recurring commission promotin
 
 ## About the program
 
-We built The Lab Report because we saw the same problem every trader faces: too many indicators, too many conflicting signals, not enough time. The product aggregates 88 indicators across four categories — momentum, volume, trend, volatility — and delivers a consensus verdict every 15 minutes via Telegram.
+We built The Lab Report because we saw the same problem every trader faces: too many indicators, too many conflicting signals, not enough time. The product aggregates 123 indicators across four categories — momentum, volume, trend, volatility — and delivers a consensus verdict every 15 minutes via Telegram.
 
 We publish 9 indicator reviews a day and maintain 750+ published reviews. Our site receives organic search traffic from traders actively looking for tools. Affiliates who create content about TradingView indicators — reviews, tutorials, strategy breakdowns — will find a natural fit.
 
@@ -124,7 +124,7 @@ We publish 9 indicator reviews a day and maintain 750+ published reviews. Our si
 </div>
 
 <div class="aff-cta-bottom">
-  <p>Know traders who'd benefit from 88 indicators analyzed every 15 minutes? We'd like to work with you.</p>
+  <p>Know traders who'd benefit from 123 indicators analyzed every 15 minutes? We'd like to work with you.</p>
   <a href="https://t.me/TheLabReport_bot" class="aff-cta">Apply on Telegram →</a>
   <p style="font-size: 1.2rem; color: var(--text-muted); margin-top: 1rem;">Send /apply to @TheLabReport_bot</p>
 </div>

@@ -86,7 +86,7 @@ Pivot_Points_Camarilla is a workhorse for intraday mean-reversion. It's not flas
 
 ## Go Deeper with The Indicator Lab
 
-🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+🔬 **The Lab Report** — 123 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
 [Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 

@@ -103,7 +103,7 @@ It loses a star for the missing divergence alert and the lag at higher smoothing
 
 ## Go Deeper with The Indicator Lab
 
-🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+🔬 **The Lab Report** — 123 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
 [Subscribe $149/mo →](https://theindicatorlab.com/the-lab-report/)
 

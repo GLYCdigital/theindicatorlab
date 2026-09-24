@@ -58,7 +58,7 @@ You'd be forgiven for thinking Ehlers Fisher Transform was a premium script. The
 
 ---
 
-**Reading half a list and already overwhelmed?** You don't need to stack 10 indicators — you need one consensus. The [Lab Report](/the-lab-report/) runs 93 indicators across 20 markets, tallies the signal, and pings your phone every 15 minutes. One verdict, no chart clutter. [Try it free →](https://theindicatorlab.com/the-lab-report/)
+**Reading half a list and already overwhelmed?** You don't need to stack 10 indicators — you need one consensus. The [Lab Report](/the-lab-report/) runs 123 indicators across 20 markets, tallies the signal, and pings your phone every 15 minutes. One verdict, no chart clutter. [Try it free →](https://theindicatorlab.com/the-lab-report/)
 
 ---
 

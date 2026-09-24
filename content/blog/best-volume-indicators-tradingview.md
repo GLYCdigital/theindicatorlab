@@ -102,7 +102,7 @@ Our selection spans 7 trend indicators, 3 free indicators. The average rating ac
 
 **Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
 
-Want volume analysis across 20 markets at once — not just one chart? The [Lab Report](/the-lab-report/) tracks 93 indicators on 20 markets every 15 minutes, so you always know when volume is confirming (or rejecting) a move.
+Want volume analysis across 20 markets at once — not just one chart? The [Lab Report](/the-lab-report/) tracks 123 indicators on 20 markets every 15 minutes, so you always know when volume is confirming (or rejecting) a move.
 
 ## Test These on TradingView
 

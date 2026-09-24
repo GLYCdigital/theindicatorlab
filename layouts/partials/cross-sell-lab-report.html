@@ -8,15 +8,15 @@
 
 {{ if eq $variant 0 }}
   {{ $headline = "Chart full of indicators. Still not sure which one to trust." }}
-  {{ $body = printf "You just read about %s. Add 10 more to your chart and you're drowning in conflicting signals. The Lab Report runs 93 indicators on 20 markets, tallies the consensus, and pings your phone every 15 minutes. Less clutter. One verdict." $indicatorName }}
+  {{ $body = printf "You just read about %s. Add 10 more to your chart and you're drowning in conflicting signals. The Lab Report runs 123 indicators on 20 markets, tallies the consensus, and pings your phone every 15 minutes. Less clutter. One verdict." $indicatorName }}
   {{ $edgeHeadline = "Got your entries? Now what?" }}
 {{ else if eq $variant 1 }}
-  {{ $headline = "93 indicators is too many to watch. One is too few to trust." }}
-  {{ $body = printf "%s is one opinion. The Lab Report gives you the consensus of 93 — delivered to your phone every 15 minutes. No chart clutter required." $indicatorName }}
+  {{ $headline = "123 indicators is too many to watch. One is too few to trust." }}
+  {{ $body = printf "%s is one opinion. The Lab Report gives you the consensus of 123 — delivered to your phone every 15 minutes. No chart clutter required." $indicatorName }}
   {{ $edgeHeadline = "Know WHAT to buy. Now know WHEN." }}
 {{ else }}
   {{ $headline = "Are you about to add another indicator to an already cluttered chart?" }}
-  {{ $body = "Instead of stacking 10+ indicators and trying to decode conflicting signals, let the Lab Report do the math. 93 indicators. 20 markets. One consensus verdict. Every 15 minutes." }}
+  {{ $body = "Instead of stacking 10+ indicators and trying to decode conflicting signals, let the Lab Report do the math. 123 indicators. 20 markets. One consensus verdict. Every 15 minutes." }}
   {{ $edgeHeadline = "Consensus tells you what. Momentum tells you when." }}
 {{ end }}
 

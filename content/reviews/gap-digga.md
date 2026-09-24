@@ -98,7 +98,7 @@ Gap_Digga does one thing well: it defines trend by structure instead of averages
 **Rating: ⭐⭐⭐⭐ (4/5)** — a solid, honest trend tool for traders who already know how to execute.
 ## Go Deeper with The Indicator Lab
 
-🔬 **The Lab Report** — 93 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
+🔬 **The Lab Report** — 123 indicators. 20 markets. One consensus verdict every 15 minutes. Stop guessing which indicator to trust.
 
 [Subscribe $49/mo →](https://theindicatorlab.com/the-lab-report/)
 
