@@ -3,3 +3,6 @@
 /go/okx          https://my.okx.com/join/89285202          301
 /go/moomoo       https://j.moomoo.com/0BpZwx             301
 /go/coinbase     https://coinbase.com/join/442UEXQ?src=referral-link 301
+
+# NeuraLib correction (2026-09-24): framework explainer replaces retired review
+/reviews/neuralib-a-native-ai-and-deep-learning-runtime/  /blog/neuralib-pine-script-machine-learning-framework/  301
