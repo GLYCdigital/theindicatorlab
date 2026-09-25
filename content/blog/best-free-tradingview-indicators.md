@@ -58,7 +58,14 @@ You'd be forgiven for thinking Ehlers Fisher Transform was a premium script. The
 
 ---
 
-**Reading half a list and already overwhelmed?** You don't need to stack 10 indicators — you need one consensus. The [Lab Report](/the-lab-report/) runs 123 indicators across 20 markets, tallies the signal, and pings your phone every 15 minutes. One verdict, no chart clutter. [Try it free →](https://theindicatorlab.com/the-lab-report/)
+<div class="blog-labreport-cta" style="margin:1.75rem 0;padding:1.4rem 1.5rem;background:linear-gradient(135deg,var(--card-bg) 0%,rgba(59,130,246,0.06) 100%);border:2px solid #3b82f6;border-radius:var(--radius-lg);">
+<p style="margin:0 0 .5rem;font-weight:700;font-size:1.25rem;">🔬 Reading half a list and already overwhelmed?</p>
+<p style="margin:0 0 1rem;color:var(--text-secondary);line-height:1.6;">You don't need to stack 10 indicators — you need one consensus. The Lab Report runs <strong>123 indicators across 20 markets</strong>, tallies the signal every 15 minutes and pings your phone with one verdict. No chart clutter. <strong>7-day free trial</strong>, cancel anytime.</p>
+<p style="margin:0;display:flex;gap:.6rem;flex-wrap:wrap;">
+<a href="https://buy.stripe.com/9B64grdGmeWggu2fLbaAw0m" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$149/mo" data-umami-event-placement="blog-inline" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-free-tradingview-indicators',placement:'blog-inline'});" style="display:inline-block;background:#3b82f6;color:#fff;font-weight:700;padding:11px 24px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">Start 7-day free trial → $149/mo</a>
+<a href="/the-lab-report/" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('lab_report_learn_more',{review:'best-free-tradingview-indicators',placement:'blog-inline'});" style="display:inline-block;border:1px solid var(--card-border);color:var(--text);font-weight:600;padding:10px 22px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">What is the Lab Report? →</a>
+</p>
+</div>
 
 ---
 
