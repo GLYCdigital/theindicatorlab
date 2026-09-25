@@ -1,5 +1,6 @@
 ---
 title: "Automatic_Support_Resistance Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/HOx9WOnJ-Automatic-Support-Resistance-getmohsin-py/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Parabolic_Sar_Macd_Combo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MddD4giy-Parabolic-SAR-everget/"
 date: 2026-07-26
 draft: false
 type: reviews

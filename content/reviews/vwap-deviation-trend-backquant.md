@@ -1,5 +1,6 @@
 ---
 title: "Vwap_Deviation_Trend_Backquant Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/aP7Yf1gT-VWAP-Deviation-Trend-BackQuant/"
 date: 2026-07-30
 draft: false
 type: reviews

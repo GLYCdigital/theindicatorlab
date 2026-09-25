@@ -1,5 +1,6 @@
 ---
 title: "Order_Block_Engine Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/YVAh9IZb-Order-Block-Engine-JOAT-officialjackofalltrades/"
 date: 2026-08-03
 draft: false
 type: reviews

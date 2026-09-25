@@ -1,5 +1,6 @@
 ---
 title: "Phase_Exhaustion_Reversal_Bullbyte Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/XMXlfzMW-Phase-Exhaustion-Reversal-BullByte/"
 date: 2026-07-16
 draft: false
 type: reviews

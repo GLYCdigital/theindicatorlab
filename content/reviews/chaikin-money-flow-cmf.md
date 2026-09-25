@@ -1,5 +1,6 @@
 ---
 title: "Chaikin_Money_Flow_Cmf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/m0rkgsPh-Chaikin-Money-Flow-sbtnc/"
 date: 2026-08-07
 draft: false
 type: reviews

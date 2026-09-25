@@ -1,5 +1,6 @@
 ---
 title: "Strong_Sd_Magnet Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/BjtTAo5b-Strong-SD-Magnet-ProjectSyndicate/"
 date: 2026-07-16
 draft: false
 type: reviews

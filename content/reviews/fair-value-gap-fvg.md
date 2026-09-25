@@ -1,5 +1,6 @@
 ---
 title: "Fair_Value_Gap_Fvg Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MXoSibAB-FVG-algomaxx-pro/"
 date: 2026-07-16
 draft: false
 type: reviews

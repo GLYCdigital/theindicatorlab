@@ -1,5 +1,6 @@
 ---
 title: "Order_Flow_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/QjIcu4P9-Order-Flow-Indicator-FriendOfTheTrend/"
 date: 2026-07-16
 draft: false
 type: reviews

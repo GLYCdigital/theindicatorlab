@@ -1,5 +1,6 @@
 ---
 title: "Volume_Spread_Analysis Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/uPXAQIp1-Volume-Spread-analysis-HariprasathGopal/"
 date: 2026-08-17
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Institutional_Order_Flow Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/DjdDDJhx-Institutional-Order-Flow-FriendOfTheTrend/"
 date: 2026-08-12
 draft: false
 type: reviews

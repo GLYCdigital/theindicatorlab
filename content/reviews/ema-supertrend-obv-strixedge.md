@@ -1,5 +1,6 @@
 ---
 title: "Ema_Supertrend_Obv_Strixedge Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/KNZ20lcY-EMA-Supertrend-OBV-StrixEDGE/"
 date: 2026-07-19
 draft: false
 type: reviews

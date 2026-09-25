@@ -1,5 +1,6 @@
 ---
 title: "Three_White_Soldiers Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/7jQSLD7t-Three-White-Soldiers-HPotter/"
 date: 2026-07-31
 draft: false
 type: reviews

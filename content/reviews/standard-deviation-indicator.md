@@ -1,5 +1,6 @@
 ---
 title: "Standard_Deviation_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/LZaJz7uB-WISE-TRADER-STANDARD-DEVIATIONS-SETUP-thisiskanisk/"
 date: 2026-07-16
 draft: false
 type: reviews

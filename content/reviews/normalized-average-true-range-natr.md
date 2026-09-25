@@ -1,5 +1,6 @@
 ---
 title: "Normalized_Average_True_Range_Natr Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/lZhoybZZ-Normalized-Average-True-Range-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

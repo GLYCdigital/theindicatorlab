@@ -1,5 +1,6 @@
 ---
 title: "Negative_Volume_Index_Nvi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3Xs25FQc-Negative-Volume-Index-HPotter/"
 date: 2026-08-10
 draft: false
 type: reviews

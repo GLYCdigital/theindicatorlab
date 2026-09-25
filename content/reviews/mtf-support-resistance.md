@@ -1,5 +1,6 @@
 ---
 title: "Mtf_Support_Resistance Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/RMXGtvXL-MTF-Support-Resistance-JDTJDTTradingCo/"
 date: 2026-08-14
 draft: false
 type: reviews

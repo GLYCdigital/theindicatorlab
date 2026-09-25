@@ -1,5 +1,6 @@
 ---
 title: "Macro_Trend_Split_Profile Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3iIKktis-Macro-Trend-Split-Profile-ChartPrime/"
 date: 2026-08-07
 draft: false
 type: reviews

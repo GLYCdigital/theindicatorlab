@@ -1,5 +1,6 @@
 ---
 title: "8020_System_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/2ApM2DO5-8020-System-Indicator-lucymatos/"
 date: 2026-08-07
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Ehlers_Instantaneous_Trendline Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/wwbe7v9s-Ehlers-Instantaneous-Trendline-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

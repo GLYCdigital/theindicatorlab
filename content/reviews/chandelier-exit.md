@@ -1,5 +1,6 @@
 ---
 title: "Chandelier Exit Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/AqXxNS7j-Chandelier-Exit-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

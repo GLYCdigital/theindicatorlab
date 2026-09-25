@@ -1,5 +1,6 @@
 ---
 title: "Quantum_Imbalance_Trap Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/S5g4gaIm-Quantum-Imbalance-Trap-MarkitTick/"
 date: 2026-07-16
 draft: false
 type: reviews

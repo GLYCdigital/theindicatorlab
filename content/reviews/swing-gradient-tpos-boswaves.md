@@ -1,5 +1,6 @@
 ---
 title: "Swing_Gradient_Tpos_Boswaves Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ZTNPXC20-Swing-Gradient-TPOs-BOSWaves/"
 date: 2026-07-16
 draft: false
 type: reviews

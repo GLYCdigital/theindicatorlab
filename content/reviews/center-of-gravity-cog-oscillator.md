@@ -1,5 +1,6 @@
 ---
 title: "Center_Of_Gravity_Cog_Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3dvAyM38-Center-Of-Gravity-HPotter/"
 date: 2026-07-16
 draft: false
 type: reviews

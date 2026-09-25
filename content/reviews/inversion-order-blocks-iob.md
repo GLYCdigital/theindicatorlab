@@ -1,5 +1,6 @@
 ---
 title: "Inversion_Order_Blocks_Iob Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Jc18f95u-Inversion-Order-Blocks-iOB-Zeiierman/"
 date: 2026-08-10
 draft: false
 type: reviews

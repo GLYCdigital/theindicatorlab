@@ -1,5 +1,6 @@
 ---
 title: "Machine_Learning_Smart_Money_Concepts Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/uGCtOz0Y-Machine-Learning-Smart-Money-Concepts-GainzAlgo/"
 date: 2026-07-16
 draft: false
 type: reviews

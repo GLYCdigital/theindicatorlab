@@ -1,5 +1,6 @@
 ---
 title: "Chandelier_Exit_Long_Short Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ZdyJGYHL-Chandelier-Exit-earnSmartAlgorithm/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Bollinger_Bands_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/f5Hj13Mx-BB-MTF-KivancOzbilgic/"
 date: 2026-07-16
 draft: false
 type: reviews

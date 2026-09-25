@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Grab_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/WXHqMJOg-Liquidity-Grab-Detector-Stop-Hunt-Sniper-v2-2-artemka3091/"
 date: 2026-07-27
 draft: false
 type: reviews

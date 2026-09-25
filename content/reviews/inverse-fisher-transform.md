@@ -1,5 +1,6 @@
 ---
 title: "Inverse_Fisher_Transform Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/WikDwOZC-Inverse-Fisher-Transform-on-STOCHASTIC-KivancOzbilgic/"
 date: 2026-07-16
 draft: false
 type: reviews

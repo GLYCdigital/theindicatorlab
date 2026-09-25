@@ -1,5 +1,6 @@
 ---
 title: "Equal_Highs_Lows_Liquidity_Pool_Engine_Algo_Aakash Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/S4ASdOE9-Equal-Lows-and-Highs-v2-basement-ogre/"
 date: 2026-07-16
 draft: false
 type: reviews

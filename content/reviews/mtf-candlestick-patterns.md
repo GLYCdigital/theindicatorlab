@@ -1,5 +1,6 @@
 ---
 title: "Mtf_Candlestick_Patterns Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/uvZiRkSh-MTF-Candlestick-Patterns-Screening-tanayroy/"
 date: 2026-07-16
 draft: false
 type: reviews

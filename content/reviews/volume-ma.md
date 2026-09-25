@@ -1,5 +1,6 @@
 ---
 title: "Volume_Ma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/WWqoUu7e-Volume-Market-Profile-SamRecio/"
 date: 2026-08-15
 draft: false
 type: reviews

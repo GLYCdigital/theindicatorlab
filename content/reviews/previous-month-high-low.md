@@ -1,5 +1,6 @@
 ---
 title: "Previous_Month_High_Low Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/NLzdh8Pn-Previous-Month-High-Low-LocalLucky553/"
 date: 2026-07-16
 draft: false
 type: reviews

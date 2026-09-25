@@ -1,5 +1,6 @@
 ---
 title: "1_Trendline_Strategy Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/uOlzLqTw-1-Trendline-Strategy-egoigor1976/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Smart_Money_Concepts Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/VpqHOSip-Smart-Money-Concepts-WeloTrades/"
 date: 2026-07-28
 draft: false
 type: reviews

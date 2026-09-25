@@ -1,5 +1,6 @@
 ---
 title: "Pivot_Points_Woodie Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-juanmirocks/"
 date: 2026-08-08
 draft: false
 type: reviews

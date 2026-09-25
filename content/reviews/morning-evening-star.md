@@ -1,5 +1,6 @@
 ---
 title: "Morning_Evening_Star Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/z75nkFle-Morning-Evening-Star-AllanDecker/"
 date: 2026-07-16
 draft: false
 type: reviews

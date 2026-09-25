@@ -1,5 +1,6 @@
 ---
 title: "Murrey_Math_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/9vVJZZlz-Murrey-Math-AlgoriZate/"
 date: 2026-08-15
 draft: false
 type: reviews

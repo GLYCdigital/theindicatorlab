@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Divergence_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/7oBjf3IU-RSI-Divergence-MTF-Panel-DV780/"
 date: 2026-08-14
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "T3 Moving Average Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/jTf7ZhOC-T3-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

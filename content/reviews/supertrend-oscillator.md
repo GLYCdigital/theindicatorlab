@@ -1,5 +1,6 @@
 ---
 title: "Supertrend_Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/jd0Pv9y5-SuperTrend-Oscillator-j1O9SB/"
 date: 2026-08-04
 draft: false
 type: reviews

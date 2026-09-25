@@ -1,5 +1,6 @@
 ---
 title: "Gap_Fill_Tracker Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/vSVfMiwy-Gap-Fill-Tracker-BullBearSR/"
 date: 2026-07-16
 draft: false
 type: reviews

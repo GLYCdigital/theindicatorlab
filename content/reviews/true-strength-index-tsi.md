@@ -1,5 +1,6 @@
 ---
 title: "True_Strength_Index_Tsi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/2GdqewLx-True-Strength-Index-everget/"
 date: 2026-07-29
 draft: false
 type: reviews

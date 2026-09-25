@@ -1,5 +1,6 @@
 ---
 title: "Bollinger_Bands_B Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/IFFT3SV2-Bollinger-Bands-B-ClassicScott/"
 date: 2026-07-16
 draft: false
 type: reviews

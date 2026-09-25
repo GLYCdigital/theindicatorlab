@@ -1,5 +1,6 @@
 ---
 title: "Previous_Day_High_Low Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/bURJlUiB-Previous-Day-High-Low-mikescott10205/"
 date: 2026-07-16
 draft: false
 type: reviews

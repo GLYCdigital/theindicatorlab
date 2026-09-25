@@ -1,5 +1,6 @@
 ---
 title: "Macd_Colored_Histogram Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/7YQ1C3FS-MACD-Colored-Histogram-MarceloTorres/"
 date: 2026-07-16
 draft: false
 type: reviews

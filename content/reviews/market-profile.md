@@ -1,5 +1,6 @@
 ---
 title: "Market_Profile Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/y914yEGg-Market-Profile-LonesomeTheBlue/"
 date: 2026-07-16
 draft: false
 type: reviews

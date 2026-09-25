@@ -1,5 +1,6 @@
 ---
 title: "Strong_Mtf_Liquidity_Matrix Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/NQlGkZOs-Strong-MTF-Liquidity-Matrix-ProjectSyndicate/"
 date: 2026-08-11
 draft: false
 type: reviews

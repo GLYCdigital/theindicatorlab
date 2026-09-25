@@ -1,5 +1,6 @@
 ---
 title: "Implied_Volatility_Rank Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/wDOFoxeX-Implied-Volatility-Rank-Model-Free-IVR-SegaRKO/"
 date: 2026-07-16
 draft: false
 type: reviews

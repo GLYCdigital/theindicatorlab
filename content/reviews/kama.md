@@ -1,5 +1,6 @@
 ---
 title: "Kaufman Adaptive Moving Average (KAMA) Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/WMySm5L4-Kaufman-Adaptive-Moving-Average-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

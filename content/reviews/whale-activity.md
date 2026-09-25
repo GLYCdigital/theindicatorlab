@@ -1,5 +1,6 @@
 ---
 title: "Whale_Activity Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Xa5njbFc-Whale-Activity-Indicator-DinoTradez/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Keltner_Channels_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/9QbO1BEn-Keltner-Channels-MTF-AlchimistOfCrypto/"
 date: 2026-08-06
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Htf_Candle_Volume_Profile_Chartprime Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/yMqxwltF-HTF-Candle-Volume-Profile-ChartPrime/"
 date: 2026-07-16
 draft: false
 type: reviews

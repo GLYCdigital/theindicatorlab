@@ -1,5 +1,6 @@
 ---
 title: "Market_Structure_Scatter_Dashboard Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/17J0iPWK-Market-Structure-Scatter-Dashboard-LuxAlgo/"
 date: 2026-08-08
 draft: false
 type: reviews

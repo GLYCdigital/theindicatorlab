@@ -1,5 +1,6 @@
 ---
 title: "Average_True_Range_Atr Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/5i3AVykf-Average-True-Range-timwest/"
 date: 2026-07-16
 draft: false
 type: reviews

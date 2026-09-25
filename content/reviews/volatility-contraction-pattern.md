@@ -1,5 +1,6 @@
 ---
 title: "Volatility_Contraction_Pattern Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/J1tqSCqR-Volatility-Contraction-Pattern-Amphibiantrading/"
 date: 2026-08-01
 draft: false
 type: reviews

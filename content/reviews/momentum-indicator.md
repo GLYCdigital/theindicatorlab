@@ -1,5 +1,6 @@
 ---
 title: "Momentum_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/BrV5xYVR-Momentum-Candles-Wayne-o/"
 date: 2026-07-28
 draft: false
 type: reviews

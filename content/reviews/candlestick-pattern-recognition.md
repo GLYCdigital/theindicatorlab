@@ -1,5 +1,6 @@
 ---
 title: "Candlestick_Pattern_Recognition Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/whcY7Y7k-Candles-UnknownUnicorn3006803/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Hull_Ma_Ribbon Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Rudsc45h-Hull-MA-Ribbon-Bar-MCFX2/"
 date: 2026-07-16
 draft: false
 type: reviews

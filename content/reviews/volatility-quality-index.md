@@ -1,5 +1,6 @@
 ---
 title: "Volatility_Quality_Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MbAO4zo0-Volatility-Quality-Index-LazyBear/"
 date: 2026-08-14
 draft: false
 type: reviews

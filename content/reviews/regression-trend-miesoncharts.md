@@ -1,5 +1,6 @@
 ---
 title: "Regression_Trend_Miesoncharts Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/yvTpCe0f-Regression-Trend-Mies-MiesOnCharts/"
 date: 2026-08-13
 draft: false
 type: reviews

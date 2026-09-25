@@ -1,5 +1,6 @@
 ---
 title: "Volume_Cluster_Analysis Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/iezSBsTE-Volume-Cluster-rebasega/"
 date: 2026-08-26
 draft: false
 type: reviews

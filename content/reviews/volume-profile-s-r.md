@@ -1,5 +1,6 @@
 ---
 title: "Volume_Profile_S_R Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/tAe3ZF6Z-Volume-Profile-Chip-Distribution-S-R-Zones-Peaks-Modified-MPRManagement/"
 date: 2026-08-04
 draft: false
 type: reviews

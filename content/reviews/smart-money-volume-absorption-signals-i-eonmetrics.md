@@ -1,5 +1,6 @@
 ---
 title: "Smart_Money_Volume_Absorption_Signals_I_Eonmetrics Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/4ggEjmgG-Smart-Money-Volume-Absorption-Signals-EonMetrics/"
 date: 2026-08-06
 draft: false
 type: reviews

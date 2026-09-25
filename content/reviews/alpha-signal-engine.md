@@ -1,5 +1,6 @@
 ---
 title: "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/sOLjMlYy-Alpha-Signal-Engine-Pro-MarkitTick/"
 date: 2026-07-16
 draft: false
 type: reviews

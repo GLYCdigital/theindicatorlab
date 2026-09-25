@@ -1,5 +1,6 @@
 ---
 title: "Dynamic_Pivot_Fibo_Analytics Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/op8KJCFg-Dynamic-Pivot-Fibo-Analytics-MarkitTick/"
 date: 2026-07-16
 draft: false
 type: reviews

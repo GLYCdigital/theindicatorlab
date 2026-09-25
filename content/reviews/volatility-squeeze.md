@@ -1,5 +1,6 @@
 ---
 title: "Volatility_Squeeze Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/J80nlOas-Volatility-Squeeze-Zone-DasanC/"
 date: 2026-09-01
 draft: false
 type: reviews

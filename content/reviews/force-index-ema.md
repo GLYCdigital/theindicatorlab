@@ -1,5 +1,6 @@
 ---
 title: "Force_Index_Ema Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/9dtFGDnv-Force-Index-HPotter/"
 date: 2026-09-03
 draft: false
 type: reviews

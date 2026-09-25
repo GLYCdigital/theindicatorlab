@@ -1,5 +1,6 @@
 ---
 title: "Volume_Weighted_Momentum Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/1JfIwdZ6-VWMomentum-Grumlop/"
 date: 2026-08-17
 draft: false
 type: reviews

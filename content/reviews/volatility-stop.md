@@ -1,5 +1,6 @@
 ---
 title: "Volatility Stop Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/v9YZoIw1-Volatility-Stop-TradingView/"
 date: 2026-07-16
 draft: false
 type: reviews

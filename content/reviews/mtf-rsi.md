@@ -1,5 +1,6 @@
 ---
 title: "Mtf_Rsi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/cy4hzE51-MTF-RSI-lonelygrass/"
 date: 2026-07-16
 draft: false
 type: reviews

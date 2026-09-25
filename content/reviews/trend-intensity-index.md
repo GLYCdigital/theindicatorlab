@@ -1,5 +1,6 @@
 ---
 title: "Trend_Intensity_Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/KYZOCAsk-Trend-Intensity-Index-everget/"
 date: 2026-07-21
 draft: false
 type: reviews

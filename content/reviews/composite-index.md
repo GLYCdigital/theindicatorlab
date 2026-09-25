@@ -1,5 +1,6 @@
 ---
 title: "Composite_Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/XsPjxdT8-Composite-Index-zikkushah/"
 date: 2026-07-16
 draft: false
 type: reviews

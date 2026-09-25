@@ -1,5 +1,6 @@
 ---
 title: "Multi_Timeframe_Confluence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MisgW0WB-Multi-Timeframe-Confluence-Indicator-TradeTechanalysis/"
 date: 2026-07-29
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/EwYuNAx2-Liq-Sweep-CHoCH-OB-Instant-CodaPro/"
 date: 2026-07-20
 draft: false
 type: reviews

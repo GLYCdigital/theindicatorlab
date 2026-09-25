@@ -1,5 +1,6 @@
 ---
 title: "Tomukas_Scale_In Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/14l4u5gJ-Tomukas-Scale-In-V2-Tomukasss/"
 date: 2026-07-16
 draft: false
 type: reviews

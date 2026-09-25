@@ -1,5 +1,6 @@
 ---
 title: "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/8ngdBVpM-Weighted-Moving-Average-WMA-mihakralj/"
 date: 2026-07-20
 draft: false
 type: reviews

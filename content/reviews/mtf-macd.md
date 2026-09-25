@@ -1,5 +1,6 @@
 ---
 title: "Mtf Macd Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/6NkIM8r5-MTF-MACD-QuantXOR/"
 date: 2026-07-16
 draft: false
 type: reviews

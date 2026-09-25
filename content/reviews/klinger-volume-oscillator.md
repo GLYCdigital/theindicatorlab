@@ -1,5 +1,6 @@
 ---
 title: "Klinger_Volume_Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Qnn7ymRK-Klinger-Volume-Oscillator-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

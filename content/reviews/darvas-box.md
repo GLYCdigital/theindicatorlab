@@ -1,5 +1,6 @@
 ---
 title: "Darvas_Box Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/cRqNbBLU-DARVAS-BOX-KivancOzbilgic/"
 date: 2026-07-16
 draft: false
 type: reviews

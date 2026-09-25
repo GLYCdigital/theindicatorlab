@@ -1,5 +1,6 @@
 ---
 title: "Macd_Rewired_Probalist_Essentials Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xmkOkCxN-MACD-Rewired-Probalist-Essentials-Probalist/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/hnrtyc7O-Adaptive-Trend-Ensemble-BackQuant/"
 date: 2026-08-12
 draft: false
 type: reviews

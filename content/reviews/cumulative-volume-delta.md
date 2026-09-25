@@ -1,5 +1,6 @@
 ---
 title: "Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/lsDHdn0H-Cumulative-Volume-Delta-Ankit-1618/"
 date: 2026-07-16
 draft: false
 type: reviews

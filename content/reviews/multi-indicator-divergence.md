@@ -1,5 +1,6 @@
 ---
 title: "Multi_Indicator_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/FC5rlutE-Multi-Indicator-Divergence-francxisz/"
 date: 2026-08-14
 draft: false
 type: reviews

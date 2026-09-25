@@ -1,5 +1,6 @@
 ---
 title: "Gator Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/jltye2iO-Gator-Oscillator-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

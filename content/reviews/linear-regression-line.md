@@ -1,5 +1,6 @@
 ---
 title: "Linear_Regression_Line Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/LpbWEcA3-Linear-Regression-Line-alexgrover/"
 date: 2026-07-27
 draft: false
 type: reviews

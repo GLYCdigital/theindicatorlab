@@ -1,5 +1,6 @@
 ---
 title: "Machine_Learning_Rsi_Ai_Classification_Ranking Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/VrTL3VwF-Machine-Learning-RSI-Zeiierman/"
 date: 2026-07-16
 draft: false
 type: reviews

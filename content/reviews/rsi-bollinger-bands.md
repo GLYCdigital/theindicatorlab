@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Bollinger_Bands Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/C3qd5Svp-RSI-Bollinger-Bands-sndwav/"
 date: 2026-08-10
 draft: false
 type: reviews

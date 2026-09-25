@@ -1,5 +1,6 @@
 ---
 title: "Quant_Confluence_Engine Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/dOIRiuX0-Quant-Confluence-Engine-JOAT-officialjackofalltrades/"
 date: 2026-07-21
 draft: false
 type: reviews

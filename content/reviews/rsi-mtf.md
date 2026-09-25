@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/htJrFmxr-RSI-MTF-DiZer/"
 date: 2026-08-26
 draft: false
 type: reviews

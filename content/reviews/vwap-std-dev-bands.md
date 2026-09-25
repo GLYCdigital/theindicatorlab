@@ -1,5 +1,6 @@
 ---
 title: "Vwap_Std_Dev_Bands Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/9au6finF-VWAP-StdDev-Bands-Pro-v2-kaiserfx/"
 date: 2026-09-01
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Ema_Cross_Signal Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/CKRt0Pmp-EMA-cross-DevLucem/"
 date: 2026-07-16
 draft: false
 type: reviews

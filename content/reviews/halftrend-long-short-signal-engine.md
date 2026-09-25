@@ -1,5 +1,6 @@
 ---
 title: "Halftrend_Long_Short_Signal_Engine Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ZHGPnlAz-HalfTrend-Long-Short-Signal-Engine-BigBeluga/"
 date: 2026-07-20
 draft: false
 type: reviews

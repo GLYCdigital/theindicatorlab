@@ -1,5 +1,6 @@
 ---
 title: "Three_Black_Crows Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/11J7JmqZ-Three-Black-Crows-HPotter/"
 date: 2026-07-24
 draft: false
 type: reviews

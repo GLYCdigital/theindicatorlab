@@ -1,5 +1,6 @@
 ---
 title: "Trend_Reset_Cumulative_Delta Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/KoXIqM5l-Trend-Reset-Cumulative-Delta-ChartPrime/"
 date: 2026-07-21
 draft: false
 type: reviews

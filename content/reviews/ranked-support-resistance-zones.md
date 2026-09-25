@@ -1,5 +1,6 @@
 ---
 title: "Ranked_Support_Resistance Zones Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/jTQU8WBS-Ranked-Support-Resistance-Zones-Zeiierman/"
 date: 2026-07-16
 draft: false
 type: reviews

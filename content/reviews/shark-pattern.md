@@ -1,5 +1,6 @@
 ---
 title: "Shark_Pattern Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/G6CUmLgi-SharkPattern-ULTRA-V6-NXT2017/"
 date: 2026-07-16
 draft: false
 type: reviews

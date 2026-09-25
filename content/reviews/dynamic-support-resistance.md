@@ -1,5 +1,6 @@
 ---
 title: "Dynamic_Support_Resistance Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/B24CB2ca-Dynamic-Support-Resistance-ZenAndTheArtOfTrading/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Monte_Carlo_Simulator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/HLpRcHqT-Monte-Carlo-The-Peaceful-Lizard/"
 date: 2026-07-16
 draft: false
 type: reviews

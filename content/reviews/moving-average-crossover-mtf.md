@@ -1,5 +1,6 @@
 ---
 title: "Moving_Average_Crossover_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/FvLjTuQB-Moving-Average-Crossover-everget/"
 date: 2026-08-07
 draft: false
 type: reviews

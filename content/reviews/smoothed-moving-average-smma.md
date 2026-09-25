@@ -1,5 +1,6 @@
 ---
 title: "Smoothed_Moving_Average_Smma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ej9CIfi4-Smoothed-Moving-Average-muzzdang/"
 date: 2026-07-16
 draft: false
 type: reviews

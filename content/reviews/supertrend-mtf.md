@@ -1,5 +1,6 @@
 ---
 title: "Supertrend_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/aT1OvmPJ-Supertrend-MTF-Heikin-Ashi-LonesomeTheBlue/"
 date: 2026-08-03
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Jurik_Composite_Fractal Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/7QJg35wB-Jurik-Composite-Fractal-Behavior-CFB-on-EMA-Loxx/"
 date: 2026-07-16
 draft: false
 type: reviews

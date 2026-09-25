@@ -1,5 +1,6 @@
 ---
 title: "Moving_Average_Cross Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PcWAuplI-Moving-Average-Cross-EvoSti/"
 date: 2026-08-01
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Macd_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/sQaOUs2c-MTF-MACD-2-RockBaron/"
 date: 2026-09-09
 draft: false
 type: reviews

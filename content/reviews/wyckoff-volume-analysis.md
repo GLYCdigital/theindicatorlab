@@ -1,5 +1,6 @@
 ---
 title: "Wyckoff_Volume_Analysis Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/7i7tk9F5-Wyckoff-Volume-VolumeDayTrader/"
 date: 2026-07-19
 draft: false
 type: reviews

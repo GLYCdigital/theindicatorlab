@@ -1,5 +1,6 @@
 ---
 title: "Williams Percent R Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Ii3Zqag9-Williams-Percent-Range-with-Trendlines-and-Breakouts-Nostalgic-92/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Elder_Ray_Index_Bull_Bear_Power Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/X7m7urvC-Elder-ray-Index-DDDiving1993/"
 date: 2026-07-16
 draft: false
 type: reviews

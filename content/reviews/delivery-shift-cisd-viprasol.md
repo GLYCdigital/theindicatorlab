@@ -1,5 +1,6 @@
 ---
 title: "Delivery_Shift_Cisd_Viprasol Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/wZ91pyJr-Viprasol-CISD-Delivery-Shift-viprasol/"
 date: 2026-07-16
 draft: false
 type: reviews

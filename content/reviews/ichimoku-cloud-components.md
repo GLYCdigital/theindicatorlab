@@ -1,5 +1,6 @@
 ---
 title: "Ichimoku_Cloud_Components Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/h1Rgqj34-Ichimoku-Cloud-Tracha/"
 date: 2026-07-28
 draft: false
 type: reviews

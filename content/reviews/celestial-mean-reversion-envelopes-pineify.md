@@ -1,5 +1,6 @@
 ---
 title: "Celestial_Mean_Reversion_Envelopes_Pineify Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PylV78eC-Celestial-Mean-Reversion-Envelopes-Pineify/"
 date: 2026-07-16
 draft: false
 type: reviews

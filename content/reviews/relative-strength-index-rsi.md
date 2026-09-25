@@ -1,5 +1,6 @@
 ---
 title: "Relative Strength Index Rsi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/b8oS0gtH-Relative-Strength-Index-RSI-sandeepgoyal194/"
 date: 2026-07-16
 draft: false
 type: reviews

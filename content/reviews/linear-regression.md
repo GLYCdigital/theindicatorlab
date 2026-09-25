@@ -1,5 +1,6 @@
 ---
 title: "Linear Regression Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/HaVyhZnP-Linear-Regression-Dev-Lucem-DevLucem/"
 date: 2026-07-16
 draft: false
 type: reviews

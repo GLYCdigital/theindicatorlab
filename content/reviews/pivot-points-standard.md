@@ -1,5 +1,6 @@
 ---
 title: "Pivot Points Standard Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/GWJZpZ2m-Pivot-Points-Standard-Vignesh-Vajiravel/"
 date: 2026-07-16
 draft: false
 type: reviews

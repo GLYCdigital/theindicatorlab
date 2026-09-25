@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Sweep_Pro Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/jksy8E6M-Liquidity-Sweep-pro-hashem-trader/"
 date: 2026-07-16
 draft: false
 type: reviews

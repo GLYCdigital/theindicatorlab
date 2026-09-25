@@ -1,5 +1,6 @@
 ---
 title: "Ict_Killzones Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ehwcUFM8-ICT-Killzones-enricoamato997/"
 date: 2026-07-16
 draft: false
 type: reviews

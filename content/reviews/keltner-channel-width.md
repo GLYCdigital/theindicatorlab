@@ -1,5 +1,6 @@
 ---
 title: "Keltner_Channel_Width Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/0L9E54zp-Kelt-Width-KingThies/"
 date: 2026-07-16
 draft: false
 type: reviews

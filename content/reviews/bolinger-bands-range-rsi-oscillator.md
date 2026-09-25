@@ -1,5 +1,6 @@
 ---
 title: "Bolinger_Bands_Range_Rsi_Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PjtZwuhe-Bolinger-Bands-Range-RSI-Oscillator-ChartPrime/"
 date: 2026-08-11
 draft: false
 type: reviews

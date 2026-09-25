@@ -1,5 +1,6 @@
 ---
 title: "Machine_Learning_Knn Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/GpcT4M6T-Machine-Learning-kNN-based-Strategy-capissimo/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Hurst_Exponent Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/QibYVT4J-Hurst-Exponent-QuantNomad/"
 date: 2026-07-16
 draft: false
 type: reviews

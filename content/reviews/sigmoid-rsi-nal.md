@@ -1,5 +1,6 @@
 ---
 title: "Sigmoid_Rsi_Nal Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ONhiTlru-Sigmoid-RSI-NordicAlphaLab/"
 date: 2026-08-09
 draft: false
 type: reviews

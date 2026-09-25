@@ -1,5 +1,6 @@
 ---
 title: "SuperTrend EMA Combo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/jumQaLiP-Supertrend-EMA-crossresearch/"
 date: 2026-07-16
 draft: false
 type: reviews

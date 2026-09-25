@@ -1,5 +1,6 @@
 ---
 title: "Take_Profit_Stop_Loss_Levels Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/liuZhpsR-Take-Profit-Stop-Loss-Levels-abu-faisal-86/"
 date: 2026-07-18
 draft: false
 type: reviews

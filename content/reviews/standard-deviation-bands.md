@@ -1,5 +1,6 @@
 ---
 title: "Standard_Deviation_Bands Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/qzClv3k0-Standard-Deviation-Bands-softfn/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Wyckoff_Pattern_Indicator_Almostperfect Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/RJ8HShmD-Wyckoff-Pattern-Indicator-Dr-AtulGoswami/"
 date: 2026-07-16
 draft: false
 type: reviews

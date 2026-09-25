@@ -1,5 +1,6 @@
 ---
 title: "Volume_Weighted_S_R Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/H0DfZXtR-Volume-Weighted-S-R-Zones-WillyAlgoTrader/"
 date: 2026-07-20
 draft: false
 type: reviews

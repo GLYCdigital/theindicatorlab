@@ -1,5 +1,6 @@
 ---
 title: "Higher_Timeframe_Levels Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Zw16oWYX-Higher-TimeFrame-levels-melodicfish/"
 date: 2026-07-16
 draft: false
 type: reviews

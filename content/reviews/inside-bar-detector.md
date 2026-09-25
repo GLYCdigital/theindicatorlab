@@ -1,5 +1,6 @@
 ---
 title: "Inside_Bar_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/nCAvVauh-Inside-Bar-Detector-ma16888/"
 date: 2026-07-16
 draft: false
 type: reviews

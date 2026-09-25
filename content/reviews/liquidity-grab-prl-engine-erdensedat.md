@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Grab_Prl_Engine_Erdensedat Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/QFngAmkx-Liquidity-Grab-PRL-Engine-erdensedat/"
 date: 2026-07-16
 draft: false
 type: reviews

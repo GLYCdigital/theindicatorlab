@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Shift_Detection Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/gdVgCcCT-Liquidity-Shift-Detection-LSD-Zeiierman/"
 date: 2026-09-03
 draft: false
 type: reviews

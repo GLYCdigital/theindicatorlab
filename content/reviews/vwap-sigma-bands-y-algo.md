@@ -1,5 +1,6 @@
 ---
 title: "Vwap_Sigma_Bands_Y_Algo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/XZf5ir4C-VWAP-Sigma-Bands-YAlgo/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Interest_Rate_Sensitivity Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/NUbpGm4t-Interest-Rates-Realmix-mit-Soda/"
 date: 2026-07-16
 draft: false
 type: reviews

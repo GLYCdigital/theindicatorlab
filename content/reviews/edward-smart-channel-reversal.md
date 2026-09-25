@@ -1,5 +1,6 @@
 ---
 title: "Edward_Smart_Channel_Reversal Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xPPGVYC8-Edward-Smart-Channel-Reversal-Jos-ProTrader/"
 date: 2026-07-16
 draft: false
 type: reviews

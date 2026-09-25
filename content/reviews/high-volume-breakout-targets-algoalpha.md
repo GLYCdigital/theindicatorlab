@@ -1,5 +1,6 @@
 ---
 title: "High_Volume_Breakout_Targets_Algoalpha Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/C7P8RWwU-High-Volume-Breakout-Targets-AlgoAlpha/"
 date: 2026-08-09
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Thermal_Map Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/G30eUYdH-Liquidity-Thermal-Map-BigBeluga/"
 date: 2026-07-16
 draft: false
 type: reviews

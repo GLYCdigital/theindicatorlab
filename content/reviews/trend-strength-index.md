@@ -1,5 +1,6 @@
 ---
 title: "Trend Strength Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/zZPD6Ngp-Trend-Strength-Index-That-Tradingene/"
 date: 2026-07-16
 draft: false
 type: reviews

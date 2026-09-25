@@ -1,5 +1,6 @@
 ---
 title: "Squeeze_Pro Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/RvhxmdDB-Squeeze-Pro-mythyyt748/"
 date: 2026-07-24
 draft: false
 type: reviews

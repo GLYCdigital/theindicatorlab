@@ -1,5 +1,6 @@
 ---
 title: "Pressure_Transfer_Zone Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/AlDi5hYd-Pressure-Transfer-Zone-Finntech1/"
 date: 2026-08-08
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Trend_Strength_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/n8BD6Aa3-Trend-Strength-Indicator-ZenAndTheArtOfTrading/"
 date: 2026-07-19
 draft: false
 type: reviews

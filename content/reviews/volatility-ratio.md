@@ -1,5 +1,6 @@
 ---
 title: "Volatility_Ratio Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Xu6dEeWK-Volatility-Ratio-everget/"
 date: 2026-08-04
 draft: false
 type: reviews

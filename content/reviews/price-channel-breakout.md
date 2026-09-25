@@ -1,5 +1,6 @@
 ---
 title: "Price_Channel_Breakout Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/bQ2sg8b7-Price-Channel-koryu/"
 date: 2026-08-07
 draft: false
 type: reviews

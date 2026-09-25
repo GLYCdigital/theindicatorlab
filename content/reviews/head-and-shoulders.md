@@ -1,5 +1,6 @@
 ---
 title: "Head_And_Shoulders Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PZ9Bq6BU-Head-and-Shoulders-mattex/"
 date: 2026-07-16
 draft: false
 type: reviews

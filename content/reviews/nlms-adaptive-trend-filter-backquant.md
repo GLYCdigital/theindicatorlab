@@ -1,5 +1,6 @@
 ---
 title: "Nlms_Adaptive_Trend_Filter_Backquant Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/C92phkXx-NLMS-Adaptive-Trend-Filter-BackQuant/"
 date: 2026-07-16
 draft: false
 type: reviews

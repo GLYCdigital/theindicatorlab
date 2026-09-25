@@ -1,5 +1,6 @@
 ---
 title: "Support_Resistance_Zones Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/VBtAxOUz-Support-Resistance-Zones-sourcey/"
 date: 2026-07-31
 draft: false
 type: reviews

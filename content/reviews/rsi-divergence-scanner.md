@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Divergence_Scanner Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/6DYxwhtZ-RSI-Divergence-Scanner-zdmre/"
 date: 2026-08-06
 draft: false
 type: reviews

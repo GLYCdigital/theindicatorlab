@@ -1,5 +1,6 @@
 ---
 title: "Bollinger_Bands_Standard Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Dk7Fj3bz-Bollinger-Bands-Standard-Deviation-ADX-strategy-matsu-bitmex/"
 date: 2026-07-16
 draft: false
 type: reviews

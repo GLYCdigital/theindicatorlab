@@ -1,5 +1,6 @@
 ---
 title: "Auto_Atr_Volatility_Spike_Trend_Tracker Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/KTsZMbtk-Auto-ATR-Volatility-Spike-Trend-Tracker-BigBeluga/"
 date: 2026-07-28
 draft: false
 type: reviews

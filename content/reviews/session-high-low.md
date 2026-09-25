@@ -1,5 +1,6 @@
 ---
 title: "Session_High_Low Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xuVwuxaB-Session-High-Low-Munkhtur/"
 date: 2026-08-02
 draft: false
 type: reviews

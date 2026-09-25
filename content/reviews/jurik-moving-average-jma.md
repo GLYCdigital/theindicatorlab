@@ -1,5 +1,6 @@
 ---
 title: "Jurik_Moving_Average_Jma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/W1DjDb8h-Jurik-Moving-Average-mihakralj/"
 date: 2026-08-06
 draft: false
 type: reviews

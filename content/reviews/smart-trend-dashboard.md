@@ -1,5 +1,6 @@
 ---
 title: "Smart_Trend_Dashboard Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/UyPWCjYD-VWAP-RSI-MTF-siddurn2025/"
 date: 2026-07-20
 draft: false
 type: reviews

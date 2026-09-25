@@ -1,5 +1,6 @@
 ---
 title: "Order_Flow_Imbalance_S_R Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow-prokopchuksv21/"
 date: 2026-09-03
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Iq_Trend_Beams Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/SG7Vk6uH-IQ-Trend-Beams-TradingIQ-Trading-IQ/"
 date: 2026-08-13
 draft: false
 type: reviews

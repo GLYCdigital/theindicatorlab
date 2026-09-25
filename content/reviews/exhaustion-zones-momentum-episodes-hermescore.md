@@ -1,5 +1,6 @@
 ---
 title: "Exhaustion_Zones_Momentum_Episodes_Hermescore Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ZJzJTK3n-Exhaustion-Zones-Momentum-Episodes-HermesCore/"
 date: 2026-07-16
 draft: false
 type: reviews

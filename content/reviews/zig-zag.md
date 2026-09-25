@@ -1,5 +1,6 @@
 ---
 title: "Zig Zag Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/VXMf7uwJ-Zig-Zag-ZkGoldTrader/"
 date: 2026-07-16
 draft: false
 type: reviews

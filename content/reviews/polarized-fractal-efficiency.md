@@ -1,5 +1,6 @@
 ---
 title: "Polarized_Fractal_Efficiency Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/OESOW4zd-Polarized-Fractal-Efficiency-capissimo/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Elliott_Wave_Corrective_Patterns Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/gMpxcJkW-Elliott-Wave-rules-based-compile-safe-STEELCITYCREATORS/"
 date: 2026-07-16
 draft: false
 type: reviews

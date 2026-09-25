@@ -1,5 +1,6 @@
 ---
 title: "Vwap_Standard Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/p1Cc05xX-djt-vwap-bands-stoicscalper/"
 date: 2026-08-25
 draft: false
 type: reviews

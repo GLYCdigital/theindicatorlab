@@ -1,5 +1,6 @@
 ---
 title: "Directional_Volume_Shapes Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3XE8qqfr-Directional-Volume-Shapes-Zeiierman/"
 date: 2026-08-13
 draft: false
 type: reviews

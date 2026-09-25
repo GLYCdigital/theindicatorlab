@@ -1,5 +1,6 @@
 ---
 title: "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/shy8kACw-Market-Structure-Volume-Profiles-Kioseff-Trading-KioseffTrading/"
 date: 2026-07-16
 draft: false
 type: reviews

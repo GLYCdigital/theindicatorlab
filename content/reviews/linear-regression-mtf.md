@@ -1,5 +1,6 @@
 ---
 title: "Linear_Regression_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Pr9hEmWf-Linear-Regression-MTF-Bands-GoodGains/"
 date: 2026-08-06
 draft: false
 type: reviews

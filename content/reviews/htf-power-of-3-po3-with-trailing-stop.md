@@ -1,5 +1,6 @@
 ---
 title: "Htf_Power_Of_3_Po3_With_Trailing_Stop Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/w9HSYhzg-HTF-Power-of-3-PO3-with-Trailing-Stop-BigBeluga/"
 date: 2026-08-03
 draft: false
 type: reviews

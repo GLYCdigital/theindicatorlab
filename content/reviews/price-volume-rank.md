@@ -1,5 +1,6 @@
 ---
 title: "Price_Volume_Rank Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/vho8gnBR-Price-Volume-Rank-LazyBear/"
 date: 2026-08-12
 draft: false
 type: reviews

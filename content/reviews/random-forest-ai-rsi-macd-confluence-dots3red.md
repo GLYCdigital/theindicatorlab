@@ -1,5 +1,6 @@
 ---
 title: "Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/kd0k2tJS-Random-Forest-AI-RSI-MACD-Confluence-Dots3Red/"
 date: 2026-08-09
 draft: false
 type: reviews

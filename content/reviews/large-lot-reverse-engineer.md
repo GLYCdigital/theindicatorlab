@@ -1,5 +1,6 @@
 ---
 title: "Large_Lot_Reverse_Engineer Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Bd6e8Ffj-Large-Lot-Reverse-Engineer-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false
 type: reviews

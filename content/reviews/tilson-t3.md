@@ -1,5 +1,6 @@
 ---
 title: "Tilson T3 Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/UeUnR8of-Tilson-T3-StalexBot/"
 date: 2026-07-16
 draft: false
 type: reviews

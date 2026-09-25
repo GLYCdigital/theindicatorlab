@@ -1,5 +1,6 @@
 ---
 title: "TASC 2026 05 The AutoTune Filter Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/GqKlw3yv-TASC-2026-05-The-AutoTune-Filter-PineCodersTASC/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Regular_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/v2nb51HR-RSI-Regular-Divergence-tharinduruwan1996/"
 date: 2026-08-15
 draft: false
 type: reviews

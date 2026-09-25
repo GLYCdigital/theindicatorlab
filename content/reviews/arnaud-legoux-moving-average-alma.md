@@ -1,5 +1,6 @@
 ---
 title: "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/VmBBSTGn-Arnaud-Legoux-Moving-Average-ALMA-with-buy-sell-signals-tartigradia/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Weekly_High_Low Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/BvFpZ23g-Weekly-High-Low-XAUUSD-godkuby/"
 date: 2026-07-18
 draft: false
 type: reviews

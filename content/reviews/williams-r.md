@@ -1,5 +1,6 @@
 ---
 title: "Williams_R Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Jo1NjRPF-Williams-R-violetmoon/"
 date: 2026-07-16
 draft: false
 type: reviews

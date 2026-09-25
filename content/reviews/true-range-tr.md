@@ -1,5 +1,6 @@
 ---
 title: "True_Range_Tr Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ibrfKRKW-True-Range-sbr77727/"
 date: 2026-07-19
 draft: false
 type: reviews

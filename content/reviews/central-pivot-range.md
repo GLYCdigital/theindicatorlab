@@ -1,5 +1,6 @@
 ---
 title: "Central Pivot Range Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/R6lRetr0-Central-Pivot-Range-ajithcpas/"
 date: 2026-07-16
 draft: false
 type: reviews

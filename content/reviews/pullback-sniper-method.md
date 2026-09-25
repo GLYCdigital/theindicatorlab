@@ -1,5 +1,6 @@
 ---
 title: "Pullback Sniper Method Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/IqyiZbCh-Pullback-Sniper-Method-trade-w-samet-tradewsamet/"
 date: 2026-07-16
 draft: false
 type: reviews

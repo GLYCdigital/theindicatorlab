@@ -1,5 +1,6 @@
 ---
 title: "Simple_Moving_Average_Sma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/LXeOH1vm-Simple-Moving-Average-SMA-mihakralj/"
 date: 2026-07-16
 draft: false
 type: reviews

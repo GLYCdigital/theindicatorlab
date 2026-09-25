@@ -1,5 +1,6 @@
 ---
 title: "Htf_Scalp_System Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Fp2r5a1e-HTF-Scalp-System-erdensedat/"
 date: 2026-08-07
 draft: false
 type: reviews

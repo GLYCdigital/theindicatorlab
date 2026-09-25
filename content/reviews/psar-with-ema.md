@@ -1,5 +1,6 @@
 ---
 title: "Psar With EMA Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Chvmom2C-PSAR-with-EMA-Filter-way2algotrade/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Fractional Ema Kalman Filter Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/c75aF3t1-Kalman-D7-et20tradeview/"
 date: 2026-07-16
 draft: false
 type: reviews

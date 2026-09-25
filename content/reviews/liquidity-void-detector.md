@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Void_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/q1hXS0v6-Liquidity-Void-Detector-Zeiierman/"
 date: 2026-09-01
 draft: false
 type: reviews

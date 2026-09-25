@@ -1,5 +1,6 @@
 ---
 title: "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Tc21dsVG-Daily-Moving-Averages-scarf/"
 date: 2026-07-22
 draft: false
 type: reviews

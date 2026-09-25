@@ -1,5 +1,6 @@
 ---
 title: "Smoothed_Heikin_Ashi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xAIVWFsY-Smoothed-Heikin-Ashi-Trend-on-Chart-TraderHalai/"
 date: 2026-07-16
 draft: false
 type: reviews

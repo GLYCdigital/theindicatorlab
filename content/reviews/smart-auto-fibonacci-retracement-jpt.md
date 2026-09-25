@@ -1,5 +1,6 @@
 ---
 title: "Smart_Auto_Fibonacci_Retracement_Jpt Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/z9vYT8Y7-Smart-Auto-Fibonacci-Retracement-JPT-Jos-ProTrader/"
 date: 2026-08-11
 draft: false
 type: reviews

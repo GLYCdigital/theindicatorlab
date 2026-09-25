@@ -1,5 +1,6 @@
 ---
 title: "Market_Structure_Bos_Choch_Hh_Hl_Lh_Ll_Trend_Health_Lunqfx Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Y2cRp5yG-Market-Structure-BOS-CHoCH-HH-HL-LH-LL-Trend-Health-LunqFX/"
 date: 2026-08-04
 draft: false
 type: reviews

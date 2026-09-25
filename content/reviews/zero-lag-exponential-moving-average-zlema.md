@@ -1,5 +1,6 @@
 ---
 title: "Zero_Lag_Exponential_Moving_Average_Zlema Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/hcS0as7m-Zero-Lag-Exponential-Moving-Average-ZLEMA-HPotter/"
 date: 2026-08-12
 draft: false
 type: reviews

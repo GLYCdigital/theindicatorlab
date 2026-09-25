@@ -1,5 +1,6 @@
 ---
 title: "Gk_Xauusd_Diamond_Sniper Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ETabdhXm-GK-XAUUSD-Diamond-Sniper-GOLDKINGspecialist/"
 date: 2026-07-16
 draft: false
 type: reviews

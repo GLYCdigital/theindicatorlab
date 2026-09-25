@@ -1,5 +1,6 @@
 ---
 title: "Deep_Crab Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xBAlqeYd-Deep-Crab-Harmonic-Pattern-TradingFinder-Reversal-Zones-TradingFinder/"
 date: 2026-07-16
 draft: false
 type: reviews

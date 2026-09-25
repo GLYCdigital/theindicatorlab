@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Hidden_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/thQD0F8z-RSI-Hidden-Divergence-Stochastic-200-EMA-DaviddTech/"
 date: 2026-08-04
 draft: false
 type: reviews

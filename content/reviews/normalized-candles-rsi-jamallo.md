@@ -1,5 +1,6 @@
 ---
 title: "Normalized_Candles_Rsi_Jamallo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/0CpayaVA-Normalized-Candles-RSI-Jamallo22/"
 date: 2026-07-16
 draft: false
 type: reviews

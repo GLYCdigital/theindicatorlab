@@ -1,5 +1,6 @@
 ---
 title: "A_L_P_H_A_X_Surge Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/9mjcGrdT-A-L-P-H-A-X-SURGE-AlphaX-Trade/"
 date: 2026-07-16
 draft: false
 type: reviews

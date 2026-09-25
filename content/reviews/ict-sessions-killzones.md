@@ -1,5 +1,6 @@
 ---
 title: "Ict_Sessions_Killzones Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PMWhL0t7-ICT-Killzone-leonsholo/"
 date: 2026-07-23
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Obv_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/W145MYvr-OBV-Divergence-Lij-MC/"
 date: 2026-09-02
 draft: false
 type: reviews

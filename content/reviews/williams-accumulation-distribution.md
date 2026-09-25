@@ -1,5 +1,6 @@
 ---
 title: "Williams_Accumulation Distribution Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/1tZnztAB-Williams-Accumulation-Distribution-FractalTrade/"
 date: 2026-08-28
 draft: false
 type: reviews

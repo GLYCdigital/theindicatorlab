@@ -1,5 +1,6 @@
 ---
 title: "Multi_Timeframe_Multi_Indicator_Dashboard Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/W6KxkZen-Multi-TF-Multi-Indicator-Dashboard-IntradayScalper/"
 date: 2026-07-16
 draft: false
 type: reviews

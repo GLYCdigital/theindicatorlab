@@ -1,5 +1,6 @@
 ---
 title: "Heikin_Ashi_Trend Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/OULfXjkq-Heikin-Ashi-Trend-Indicator-dman103/"
 date: 2026-07-16
 draft: false
 type: reviews

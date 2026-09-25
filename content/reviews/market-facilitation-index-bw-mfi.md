@@ -1,5 +1,6 @@
 ---
 title: "Market_Facilitation_Index_Bw_Mfi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MBXprclx-Market-Facilitation-Index-BW-MFI-vegaeze/"
 date: 2026-08-07
 draft: false
 type: reviews

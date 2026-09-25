@@ -1,5 +1,6 @@
 ---
 title: "Macd_Zero_Lag Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/GcbLcwG7-MACD-0-Lag-yassotreyo/"
 date: 2026-08-06
 draft: false
 type: reviews

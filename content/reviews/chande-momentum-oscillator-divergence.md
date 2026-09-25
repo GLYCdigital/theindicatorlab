@@ -1,5 +1,6 @@
 ---
 title: "Chande_Momentum_Oscillator_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ogmWth5h-Chande-Momentum-Oscillator-everget/"
 date: 2026-07-16
 draft: false
 type: reviews

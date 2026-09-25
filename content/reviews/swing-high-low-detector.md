@@ -1,5 +1,6 @@
 ---
 title: "Swing_High_Low_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ISEmCiIc-Swing-High-Low-Detector-R-V5/"
 date: 2026-08-23
 draft: false
 type: reviews

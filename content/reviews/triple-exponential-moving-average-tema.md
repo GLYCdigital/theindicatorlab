@@ -1,5 +1,6 @@
 ---
 title: "Triple_Exponential_Moving_Average_Tema Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PtNJYZZR-Triple-Exponential-Moving-Average-TEMA-mihakralj/"
 date: 2026-07-18
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Session_Volume_Profile Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/niaUzHtv-Session-Volume-Profile-AUMBaumgartner/"
 date: 2026-08-02
 draft: false
 type: reviews

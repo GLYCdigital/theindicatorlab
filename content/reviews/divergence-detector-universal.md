@@ -1,5 +1,6 @@
 ---
 title: "Divergence_Detector_Universal Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/aGVsqaph-Divergence-Detector-reees/"
 date: 2026-07-16
 draft: false
 type: reviews

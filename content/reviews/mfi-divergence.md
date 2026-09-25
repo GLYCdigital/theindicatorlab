@@ -1,5 +1,6 @@
 ---
 title: "Mfi_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/A9IDiwN2-MFI-Divergence-trader-mb/"
 date: 2026-08-21
 draft: false
 type: reviews

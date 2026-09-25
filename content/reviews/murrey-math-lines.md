@@ -1,5 +1,6 @@
 ---
 title: "Murrey Math Lines Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Pr1XQhCm-Murrey-Math-Lines-Nanda86/"
 date: 2026-07-16
 draft: false
 type: reviews

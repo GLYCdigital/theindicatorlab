@@ -1,5 +1,6 @@
 ---
 title: "Fair Value Gap Profile Rolling Poc Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/axtmVrUD-Fair-Value-Gap-Profile-Rolling-POC-BigBeluga/"
 date: 2026-07-16
 draft: false
 type: reviews

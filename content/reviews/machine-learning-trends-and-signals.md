@@ -1,5 +1,6 @@
 ---
 title: "Machine_Learning_Trends_And_Signals Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/bOblGfmR-Machine-Learning-bitwardex/"
 date: 2026-07-21
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Ichimoku_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/TEojRG83-ICHIMOKU-MTF-KivancOzbilgic/"
 date: 2026-07-26
 draft: false
 type: reviews

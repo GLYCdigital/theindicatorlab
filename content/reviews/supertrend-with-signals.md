@@ -1,5 +1,6 @@
 ---
 title: "Supertrend_With_Signals Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/A4JM6ruY-Supertrend-akghuf19ag24/"
 date: 2026-08-06
 draft: false
 type: reviews

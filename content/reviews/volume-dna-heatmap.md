@@ -1,5 +1,6 @@
 ---
 title: "Volume_Dna_Heatmap Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/FUJeu41r-Volume-DNA-Heatmap-BigBeluga/"
 date: 2026-08-13
 draft: false
 type: reviews

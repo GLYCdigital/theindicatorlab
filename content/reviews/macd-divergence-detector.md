@@ -1,5 +1,6 @@
 ---
 title: "Macd_Divergence_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/TR2c3Jw5-MACD-Divergence-Lij-MC/"
 date: 2026-09-06
 draft: false
 type: reviews

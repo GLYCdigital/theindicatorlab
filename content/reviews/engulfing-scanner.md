@@ -1,5 +1,6 @@
 ---
 title: "Engulfing_Scanner Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/AnrIQ45g-Engulfing-Scanner-v1-Coingrats-nl/"
 date: 2026-07-16
 draft: false
 type: reviews

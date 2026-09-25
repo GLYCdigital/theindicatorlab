@@ -1,5 +1,6 @@
 ---
 title: "Adx_With_Di_Di Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/KtAsW5Dw-ADX-with-DI-VentusAurelius/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Percentage_Price_Oscillator_Navigator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/atlgwpfT-Percentage-Price-Oscillator-Navigator-MarkitTick/"
 date: 2026-08-02
 draft: false
 type: reviews

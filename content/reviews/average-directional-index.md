@@ -1,5 +1,6 @@
 ---
 title: "Average Directional Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/80gwqsgF-Average-Directional-Index-ahmad-naquib/"
 date: 2026-07-16
 draft: false
 type: reviews

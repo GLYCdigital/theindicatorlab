@@ -1,5 +1,6 @@
 ---
 title: "Marubozu_Detection Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/gfZEmKUh-Marubozu-Detection-InvestiShare/"
 date: 2026-07-16
 draft: false
 type: reviews

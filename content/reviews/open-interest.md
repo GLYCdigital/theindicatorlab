@@ -1,5 +1,6 @@
 ---
 title: "Open_Interest Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MYIdL3DL-Local-Open-Interest-ByzantiumScripts/"
 date: 2026-07-16
 draft: false
 type: reviews

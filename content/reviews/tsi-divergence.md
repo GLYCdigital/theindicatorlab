@@ -1,5 +1,6 @@
 ---
 title: "Tsi_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/8e67aeZY-TSI-Divergences-PHVNTOM-TRADER/"
 date: 2026-08-14
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Volume_Bars Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/8KIOuhj7-Volume-Bars-rafaelfernandesadvogado/"
 date: 2026-08-23
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Orb_Session_Liquidity_Model Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/1WebemDv-ORB-Session-Liquidity-Model-JOAT-officialjackofalltrades/"
 date: 2026-07-21
 draft: false
 type: reviews

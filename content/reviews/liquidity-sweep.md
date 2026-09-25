@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Sweep Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/TsbZREVm-Liquidity-Sweep-neerurani1307/"
 date: 2026-07-30
 draft: false
 type: reviews

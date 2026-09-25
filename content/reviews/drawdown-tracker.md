@@ -1,5 +1,6 @@
 ---
 title: "Drawdown_Tracker Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/HZGyHfDX-Drawdown-Tracker-SpokoStocks/"
 date: 2026-07-16
 draft: false
 type: reviews

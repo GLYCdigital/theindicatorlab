@@ -1,5 +1,6 @@
 ---
 title: "Obv_Ma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/tMkZ9PvU-OBV-MA-Cocotrader67/"
 date: 2026-08-21
 draft: false
 type: reviews

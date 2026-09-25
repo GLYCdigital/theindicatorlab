@@ -1,5 +1,6 @@
 ---
 title: "Money_Flow_Index_Mfi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/hYmRLirx-Money-Flow-Index-everget/"
 date: 2026-08-09
 draft: false
 type: reviews

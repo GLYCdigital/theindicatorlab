@@ -1,5 +1,6 @@
 ---
 title: "Session_Vp Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/KdoXRLvN-Session-VP-Signal-Manual-VAH-VAL-POC-AngryVet81/"
 date: 2026-08-09
 draft: false
 type: reviews

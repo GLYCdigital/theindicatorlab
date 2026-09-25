@@ -1,5 +1,6 @@
 ---
 title: "Kalman_Auction_Ribbon Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/nj6iZq59-Kalman-Auction-Ribbon-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false
 type: reviews

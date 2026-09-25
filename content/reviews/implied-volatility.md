@@ -1,5 +1,6 @@
 ---
 title: "Implied_Volatility Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/E8zeTYik-Implied-Volatility-Suite-SegaRKO/"
 date: 2026-07-16
 draft: false
 type: reviews

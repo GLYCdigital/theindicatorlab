@@ -1,5 +1,6 @@
 ---
 title: "Price_Volume_Trend_Pvt Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3Ah2ALck-Price-Volume-Trend-everget/"
 date: 2026-08-11
 draft: false
 type: reviews

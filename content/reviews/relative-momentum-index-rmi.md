@@ -1,5 +1,6 @@
 ---
 title: "Relative_Momentum_Index_Rmi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/kwIt9OgQ-Relative-Momentum-Index-everget/"
 date: 2026-07-18
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Know Sure Thing Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Av6dMCJw-Know-Sure-Thing-JourneyToWealth/"
 date: 2026-07-16
 draft: false
 type: reviews

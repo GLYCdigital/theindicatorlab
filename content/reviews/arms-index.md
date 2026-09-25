@@ -1,5 +1,6 @@
 ---
 title: "Arms Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/n9OtKzo8-Arms-Index-TRIN-HPotter/"
 date: 2026-07-16
 draft: false
 type: reviews

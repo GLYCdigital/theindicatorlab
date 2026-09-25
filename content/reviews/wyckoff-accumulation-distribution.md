@@ -1,5 +1,6 @@
 ---
 title: "Wyckoff_Accumulation_Distribution Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/eKXiwaeS-Wyckoff-Accumulation-Distribution-faytterro/"
 date: 2026-09-02
 draft: false
 type: reviews

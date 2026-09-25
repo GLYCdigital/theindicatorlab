@@ -1,5 +1,6 @@
 ---
 title: "Supertrend_Multi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/LonOB4YA-Supertrend-Multi-Time-Frame-Auto-HTF-LonesomeTheBlue/"
 date: 2026-08-03
 draft: false
 type: reviews

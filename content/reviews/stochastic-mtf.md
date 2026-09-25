@@ -1,5 +1,6 @@
 ---
 title: "Stochastic_Mtf Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/EdoyUiHg-Stochastic-MTF-john-everist/"
 date: 2026-08-19
 draft: false
 type: reviews

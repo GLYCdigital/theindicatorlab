@@ -1,5 +1,6 @@
 ---
 title: "Polarized_Fractal_Efficiency_Pfe Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/T0OxPew6-PFE-scaler-danny-tor/"
 date: 2026-09-03
 draft: false
 type: reviews

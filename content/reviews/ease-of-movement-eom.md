@@ -1,5 +1,6 @@
 ---
 title: "Ease_Of_Movement_Eom Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Y9Eykm1v-Ease-of-Movement-EOM-HPotter/"
 date: 2026-09-03
 draft: false
 type: reviews

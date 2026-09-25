@@ -1,5 +1,6 @@
 ---
 title: "Double_Exponential_Smoothing Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/TWCE62ty-Double-Exponential-Smoothing-alexgrover/"
 date: 2026-07-16
 draft: false
 type: reviews

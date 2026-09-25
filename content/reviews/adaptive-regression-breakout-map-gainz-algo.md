@@ -1,5 +1,6 @@
 ---
 title: "Adaptive_Regression_Breakout_Map_Gainz_Algo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/PEVRpvOj-Adaptive-Regression-Breakout-Map-GainzAlgo/"
 date: 2026-07-22
 draft: false
 type: reviews

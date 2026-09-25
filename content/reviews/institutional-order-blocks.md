@@ -1,5 +1,6 @@
 ---
 title: "Institutional_Order_Blocks Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3SNcILB5-Prosty-Order-Block-Adriaan-Obi/"
 date: 2026-08-04
 draft: false
 type: reviews

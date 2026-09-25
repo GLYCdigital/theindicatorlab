@@ -1,5 +1,6 @@
 ---
 title: "Gravity_Trend_Adx_Strength_Meter_Quality_Scored_Dmi_System Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/EcEYc8ap-DMI-ADX-Trend-Dashboard-v3-Pullback-Decay-blitz-locked/"
 date: 2026-08-10
 draft: false
 type: reviews

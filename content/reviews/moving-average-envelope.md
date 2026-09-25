@@ -1,5 +1,6 @@
 ---
 title: "Moving_Average_Envelope Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/692wWA8a-Moving-Average-Envelopes-HPotter/"
 date: 2026-07-16
 draft: false
 type: reviews

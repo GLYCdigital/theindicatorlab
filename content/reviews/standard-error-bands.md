@@ -1,5 +1,6 @@
 ---
 title: "Standard Error Bands Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ucpkF9p8-Standard-Error-Bands-xel-arjona/"
 date: 2026-07-16
 draft: false
 type: reviews

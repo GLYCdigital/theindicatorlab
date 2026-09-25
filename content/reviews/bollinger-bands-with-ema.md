@@ -1,5 +1,6 @@
 ---
 title: "Bollinger_Bands_With_Ema Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/EDkrAtH3-Low-and-High-Sniper-ismail-pehlevan/"
 date: 2026-07-16
 draft: false
 type: reviews

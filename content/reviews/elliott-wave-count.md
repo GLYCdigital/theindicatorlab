@@ -1,5 +1,6 @@
 ---
 title: "Elliott_Wave_Count Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/dniI1EKm-Elliott-Wave-Counter-MASK-MAN-pirukuru/"
 date: 2026-07-16
 draft: false
 type: reviews

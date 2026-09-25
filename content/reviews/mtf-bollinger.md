@@ -1,5 +1,6 @@
 ---
 title: "Mtf_Bollinger Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/h0rEB1fd-MultiTimeFrame-MTF-Bollinger-Bands-BB-Reverse-Engineering-RSI-RERSI-Hidden-Supports-Resistances-informanerd/"
 date: 2026-07-16
 draft: false
 type: reviews

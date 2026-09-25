@@ -1,5 +1,6 @@
 ---
 title: "Mtf_Supertrend Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MTTcT4K5-MTF-Supertrend-CryptoSea-CryptoSeaTV/"
 date: 2026-08-02
 draft: false
 type: reviews

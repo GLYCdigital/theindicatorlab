@@ -1,5 +1,6 @@
 ---
 title: "Trend_Predictor_Ribbon Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/XtGU6toW-Trend-Predictor-Ribbon-Clone-Fixed-ronitjain18/"
 date: 2026-08-26
 draft: false
 type: reviews

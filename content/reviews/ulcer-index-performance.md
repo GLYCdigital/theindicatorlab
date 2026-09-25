@@ -1,5 +1,6 @@
 ---
 title: "Ulcer_Index_Performance Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xWxIok6S-Ulcer-Index-everget/"
 date: 2026-07-31
 draft: false
 type: reviews

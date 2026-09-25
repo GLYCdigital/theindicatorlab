@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Gravity_Map_Phenlabs Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/vZQxS815-Liquidity-Gravity-Map-PhenLabs/"
 date: 2026-07-16
 draft: false
 type: reviews

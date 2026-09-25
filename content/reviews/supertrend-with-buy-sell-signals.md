@@ -1,5 +1,6 @@
 ---
 title: "Supertrend_With_Buy_Sell_Signals Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/WfPEtpVi-Supertrend-with-Customizable-Buy-Sell-Text-Colors-Imakesound/"
 date: 2026-08-13
 draft: false
 type: reviews

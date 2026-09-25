@@ -1,5 +1,6 @@
 ---
 title: "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/tq9f0qwr-Innovation-Gated-Hull-Supertrend-BackQuant/"
 date: 2026-08-03
 draft: false
 type: reviews

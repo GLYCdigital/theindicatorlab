@@ -1,5 +1,6 @@
 ---
 title: "Volume_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/oOODs8xN-Volume-Divergence-baymucuk/"
 date: 2026-07-26
 draft: false
 type: reviews

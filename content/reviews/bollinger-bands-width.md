@@ -1,5 +1,6 @@
 ---
 title: "Bollinger_Bands_Width Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/M2VlTCjs-Bollinger-Bands-Width-ClassicScott/"
 date: 2026-07-16
 draft: false
 type: reviews

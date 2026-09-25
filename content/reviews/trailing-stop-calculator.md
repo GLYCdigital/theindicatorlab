@@ -1,5 +1,6 @@
 ---
 title: "Trailing_Stop_Calculator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/UnZ6ba0I-Trailing-Stop-KivancOzbilgic/"
 date: 2026-07-18
 draft: false
 type: reviews

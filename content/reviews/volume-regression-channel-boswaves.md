@@ -1,5 +1,6 @@
 ---
 title: "Volume_Regression_Channel_Boswaves Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ZUhXviyz-Volume-Regression-Channel-BOSWaves/"
 date: 2026-08-13
 draft: false
 type: reviews

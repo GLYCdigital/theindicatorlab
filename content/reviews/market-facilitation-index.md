@@ -1,5 +1,6 @@
 ---
 title: "Market Facilitation Index Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/V0GYOOg5-Market-Facilitation-Index-Bruce-JSH/"
 date: 2026-07-16
 draft: false
 type: reviews

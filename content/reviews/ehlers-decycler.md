@@ -1,5 +1,6 @@
 ---
 title: "Ehlers_Decycler Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/nPiIeTv0-Ehlers-Decycler-Spinn29/"
 date: 2026-07-16
 draft: false
 type: reviews

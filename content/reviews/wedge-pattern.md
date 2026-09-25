@@ -1,5 +1,6 @@
 ---
 title: "Wedge_Pattern Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/EB0zjqkK-Wedge-Patterns-theEccentricTrader/"
 date: 2026-08-08
 draft: false
 type: reviews

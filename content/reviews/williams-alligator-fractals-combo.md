@@ -1,5 +1,6 @@
 ---
 title: "Williams_Alligator_Fractals_Combo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/1npqNTlB-Williams-Alligator-FloatingApexCharts/"
 date: 2026-08-03
 draft: false
 type: reviews

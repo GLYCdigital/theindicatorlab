@@ -1,5 +1,6 @@
 ---
 title: "Multi Timeframe Volume Profiles TradingIQ Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/qnX9nxw0-Multi-Timeframe-Volume-Profiles-TradingIQ-Trading-IQ/"
 date: 2026-07-16
 draft: false
 type: reviews

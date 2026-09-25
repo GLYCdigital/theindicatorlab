@@ -1,5 +1,6 @@
 ---
 title: "Market_Structure_Shift Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/uoHHpr29-Market-Structure-Shift-MSS-w-Multi-Time-Frame-Tables-Sword-Shield-swordNshield/"
 date: 2026-08-03
 draft: false
 type: reviews

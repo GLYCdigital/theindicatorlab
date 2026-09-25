@@ -1,5 +1,6 @@
 ---
 title: "Chop_Zone_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/wHTi3AjI-Chop-Zone-pathways/"
 date: 2026-07-16
 draft: false
 type: reviews

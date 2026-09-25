@@ -1,5 +1,6 @@
 ---
 title: "Macd_With_Htf_Panels_Theultimator5 Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/pUwmpOyc-MACD-with-HTF-Panels-theUltimator5/"
 date: 2026-08-11
 draft: false
 type: reviews

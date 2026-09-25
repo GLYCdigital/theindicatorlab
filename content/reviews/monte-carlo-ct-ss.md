@@ -1,5 +1,6 @@
 ---
 title: "Monte Carlo CT SS Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/9q1VcIPG-Monte-Carlo-CT-SS-Steversteves/"
 date: 2026-07-16
 draft: false
 type: reviews

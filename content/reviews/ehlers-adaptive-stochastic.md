@@ -1,5 +1,6 @@
 ---
 title: "Ehlers_Adaptive_Stochastic Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/NhB1HRnP-Ehlers-Adaptive-Stochastic-Indicator-V1-CC-cheatcountry/"
 date: 2026-07-16
 draft: false
 type: reviews

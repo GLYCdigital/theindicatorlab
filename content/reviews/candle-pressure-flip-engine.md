@@ -1,5 +1,6 @@
 ---
 title: "Candle_Pressure_Flip_Engine Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ZMDvdXhP-Candle-Pressure-Flip-Engine-trade-w-samet-tradewsamet/"
 date: 2026-07-16
 draft: false
 type: reviews

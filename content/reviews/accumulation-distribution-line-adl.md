@@ -1,5 +1,6 @@
 ---
 title: "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/vx0hBK7V-Accumulation-Distribution-Line-AustrianTradingMachine/"
 date: 2026-09-03
 draft: false
 type: reviews

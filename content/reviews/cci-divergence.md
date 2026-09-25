@@ -1,5 +1,6 @@
 ---
 title: "Cci_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/TACKJpyu-CCI-plumany/"
 date: 2026-07-16
 draft: false
 type: reviews

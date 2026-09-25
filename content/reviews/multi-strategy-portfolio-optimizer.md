@@ -1,5 +1,6 @@
 ---
 title: "Multi_Strategy_Portfolio_Optimizer Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/6sV4xMMp-Multi-Strategy-Portfolio-Optimizer-LuxAlgo/"
 date: 2026-07-16
 draft: false
 type: reviews

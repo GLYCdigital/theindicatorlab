@@ -1,5 +1,6 @@
 ---
 title: "Fisher_Transform_Divergence Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/aE04vxPy-Fisher-transform-Fjvdb/"
 date: 2026-07-16
 draft: false
 type: reviews

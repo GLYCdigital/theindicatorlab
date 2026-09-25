@@ -1,5 +1,6 @@
 ---
 title: "Momentum_Leader_Scanner_Ashish Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/OnK7L1PJ-Momentum-Leader-Scanner-ashishpearce23/"
 date: 2026-07-16
 draft: false
 type: reviews

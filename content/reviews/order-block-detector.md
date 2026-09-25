@@ -1,5 +1,6 @@
 ---
 title: "Order_Block_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/d3BqQO61-Order-Block-Detector-veegee82/"
 date: 2026-07-16
 draft: false
 type: reviews

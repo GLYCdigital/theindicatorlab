@@ -1,5 +1,6 @@
 ---
 title: "Volume_Price_Trend_Vpt Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/ztwtWx1Y-Volume-Price-Trend-VPT-BiggWigg/"
 date: 2026-08-17
 draft: false
 type: reviews

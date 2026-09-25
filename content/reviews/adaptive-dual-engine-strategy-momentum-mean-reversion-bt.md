@@ -1,5 +1,6 @@
 ---
 title: "Adaptive_Dual_Engine_Strategy_Momentum_Mean_Reversion_Bt Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/f9xLZqpF-EMA-MACD-Forecast-Predictor-Dual-Engine-Backtest-Forecast-patelanishp/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Neural_Kernel_Bands Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3eZa98FS-Ace-Algo-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Zones Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Ge5aiJoT-Liquidity-Zones-MarketStructureLab/"
 date: 2026-07-23
 draft: false
 type: reviews

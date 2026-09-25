@@ -1,5 +1,6 @@
 ---
 title: "Qqe_Mod Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/TpUW4muw-QQE-MOD-Mihkel00/"
 date: 2026-07-16
 draft: false
 type: reviews

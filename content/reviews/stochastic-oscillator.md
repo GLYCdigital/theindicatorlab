@@ -1,5 +1,6 @@
 ---
 title: "Stochastic_Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/rxQe55S2-Stochastic-Oscillator-cojwatson/"
 date: 2026-07-16
 draft: false
 type: reviews

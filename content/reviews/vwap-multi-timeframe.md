@@ -1,5 +1,6 @@
 ---
 title: "Vwap_Multi_Timeframe Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/BB5W07az-VWAP-Multi-Timeframe-FriendOfTheTrend/"
 date: 2026-08-23
 draft: false
 type: reviews

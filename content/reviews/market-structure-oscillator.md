@@ -1,5 +1,6 @@
 ---
 title: "Market_Structure Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/K47z5Kmf-Market-Structure-Oscillator-LuxAlgo/"
 date: 2026-07-16
 draft: false
 type: reviews

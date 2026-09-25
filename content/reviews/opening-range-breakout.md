@@ -1,5 +1,6 @@
 ---
 title: "Opening_Range_Breakout Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/iVglS0oT-Opening-Range-Breakout-TradeSeekers/"
 date: 2026-07-16
 draft: false
 type: reviews

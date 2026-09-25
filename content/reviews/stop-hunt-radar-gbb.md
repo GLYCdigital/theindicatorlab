@@ -1,5 +1,6 @@
 ---
 title: "Stop_Hunt_Radar_Gbb Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/k7wRHBia-Stop-Hunt-Radar-GBB-GoodBadBitcoin/"
 date: 2026-07-16
 draft: false
 type: reviews

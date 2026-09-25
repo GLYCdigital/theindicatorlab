@@ -1,5 +1,6 @@
 ---
 title: "Gold_Toolkit_22_Matsukazealgo Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/VspAn3Gf-Gold-Toolkit-22-MatsukazeAlgo/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,6 @@
 ---
 title: "Market_Structure_Trend Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/F3b5dGLx-Market-Structure-Trend-Targets-ChartPrime/"
 date: 2026-08-10
 draft: false
 type: reviews

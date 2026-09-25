@@ -1,5 +1,6 @@
 ---
 title: "Market_Structure_Engine_0 Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-LeviathanCapital/"
 date: 2026-07-22
 draft: false
 type: reviews

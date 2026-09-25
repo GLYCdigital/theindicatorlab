@@ -1,5 +1,6 @@
 ---
 title: "Volume Weighted Moving Average Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/kV3T4d5F-Volume-Weighted-Moving-Average-TechnoBlooms/"
 date: 2026-07-16
 draft: false
 type: reviews

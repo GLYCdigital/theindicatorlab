@@ -1,5 +1,6 @@
 ---
 title: "Rate_Of_Change_Roc Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/WHFUVDg8-Rate-of-Change-ROC-Tiagorocha1989/"
 date: 2026-08-02
 draft: false
 type: reviews

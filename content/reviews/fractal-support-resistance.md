@@ -1,5 +1,6 @@
 ---
 title: "Fractal_Support_Resistance Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/3AdtJwlD-Fractal-Support-Resistance-ceyhun/"
 date: 2026-07-16
 draft: false
 type: reviews

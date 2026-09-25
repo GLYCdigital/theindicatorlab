@@ -1,5 +1,6 @@
 ---
 title: "Iceberg_Detector Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Y4HHvjwz-Iceberg-Detector-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false
 type: reviews

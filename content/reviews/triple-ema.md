@@ -1,5 +1,6 @@
 ---
 title: "Triple Ema Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/SU2n1hwO-Triple-EMA-jwilcharts/"
 date: 2026-07-16
 draft: false
 type: reviews

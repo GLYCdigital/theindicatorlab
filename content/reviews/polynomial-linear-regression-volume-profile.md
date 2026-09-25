@@ -1,5 +1,6 @@
 ---
 title: "Polynomial_Linear_Regression_Volume_Profile Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/4rlNNL5e-Polynomial-Linear-Regression-Volume-Profile-BigBeluga/"
 date: 2026-07-22
 draft: false
 type: reviews

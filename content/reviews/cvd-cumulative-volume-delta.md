@@ -1,5 +1,6 @@
 ---
 title: "Cvd_Cumulative_Volume_Delta Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/Iqx7ENE2-CVD-Cumulative-Volume-Delta-RUpward/"
 date: 2026-09-02
 draft: false
 type: reviews

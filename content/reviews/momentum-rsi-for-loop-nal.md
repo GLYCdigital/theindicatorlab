@@ -1,5 +1,6 @@
 ---
 title: "Momentum_Rsi_For_Loop_Nal Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/xBz0tYCg-Momentum-RSI-For-Loop-NordicAlphaLab/"
 date: 2026-07-16
 draft: false
 type: reviews

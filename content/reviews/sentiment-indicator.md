@@ -1,5 +1,6 @@
 ---
 title: "Sentiment_Indicator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/MF5HS6Qv-Sentiment-Indicator-Intraday-V11-Kirk-M/"
 date: 2026-07-16
 draft: false
 type: reviews

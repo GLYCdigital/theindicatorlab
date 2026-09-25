@@ -1,5 +1,6 @@
 ---
 title: "Liquidity_Sweep_Target Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/vZLLZwi1-Liquidity-Sweep-Target-ReubenMiles/"
 date: 2026-07-20
 draft: false
 type: reviews

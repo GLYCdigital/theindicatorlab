@@ -1,5 +1,6 @@
 ---
 title: "Candelacharts_Order_Blocks Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/GSEzHIcI-CandelaCharts-Order-Blocks-CandelaCharts/"
 date: 2026-07-16
 draft: false
 type: reviews

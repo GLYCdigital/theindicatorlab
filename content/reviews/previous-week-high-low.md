@@ -1,5 +1,6 @@
 ---
 title: "Previous_Week_High_Low Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/E2jifRhi-previous-Week-high-low-Juros/"
 date: 2026-07-16
 draft: false
 type: reviews

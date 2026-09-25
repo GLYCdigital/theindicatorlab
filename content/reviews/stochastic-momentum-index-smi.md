@@ -1,5 +1,6 @@
 ---
 title: "Stochastic_Momentum_Index_Smi Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/HLbqdCku-Stochastics-Momentum-Index-surjithctly/"
 date: 2026-09-09
 draft: false
 type: reviews

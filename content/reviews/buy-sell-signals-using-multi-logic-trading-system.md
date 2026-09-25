@@ -1,5 +1,6 @@
 ---
 title: "Buy_Sell_Signals_Using_Multi_Logic_Trading_System Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/hYNO4UJ3-Buy-Sell-Signals-using-Multi-Logic-Trend-Momentum-Breakout-System-InvestyourAsset/"
 date: 2026-08-02
 draft: false
 type: reviews

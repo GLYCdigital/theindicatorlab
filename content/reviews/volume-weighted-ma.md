@@ -1,5 +1,6 @@
 ---
 title: "Volume_Weighted_Ma Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/fhPYhWYA-Volume-Weighted-MACD-LazyBear/"
 date: 2026-07-16
 draft: false
 type: reviews

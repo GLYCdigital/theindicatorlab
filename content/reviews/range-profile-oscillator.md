@@ -1,5 +1,6 @@
 ---
 title: "Range_Profile_Oscillator Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/atvJpWjW-Range-Profile-Oscillator-Uncle-the-shooter/"
 date: 2026-08-01
 draft: false
 type: reviews

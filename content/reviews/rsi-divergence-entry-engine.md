@@ -1,5 +1,6 @@
 ---
 title: "Rsi_Divergence_Entry_Engine Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/HzULZgpR-RSI-Divergence-Entry-Engine-trade-w-samet-tradewsamet/"
 date: 2026-07-22
 draft: false
 type: reviews

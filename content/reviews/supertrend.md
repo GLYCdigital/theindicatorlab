@@ -1,5 +1,6 @@
 ---
 title: "Supertrend Review: Settings, Strategy & How to Use It"
+tv_script_url: "https://www.tradingview.com/script/r6dAP7yi-Supertrend-KivancOzbilgic/"
 date: 2026-08-01
 draft: false
 type: reviews
