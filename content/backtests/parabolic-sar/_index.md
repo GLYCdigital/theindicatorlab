@@ -1,6 +1,6 @@
 ---
 title: "SAR Backtest Results"
-date: 2026-09-19
+date: 2026-09-26
 draft: false
 type: backtests
 description: "All 6 asset backtests for the SAR indicator. Sorted by Sharpe ratio."
@@ -25,11 +25,11 @@ description: "All 6 asset backtests for the SAR indicator. Sorted by Sharpe rati
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/parabolic-sar-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+29.2%</td><td>5.3%</td><td>0.22</td><td>32.1%</td><td>47.4%</td><td>1.20</td><td>57</td></tr>
-<tr><td>🟡 <a href="/backtests/parabolic-sar-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>-17.5%</td><td>-3.8%</td><td>0.02</td><td>61.7%</td><td>33.3%</td><td>0.92</td><td>75</td></tr>
-<tr><td>🔴 <a href="/backtests/parabolic-sar-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+0.4%</td><td>0.1%</td><td>0.00</td><td>37.9%</td><td>42.6%</td><td>1.00</td><td>61</td></tr>
-<tr><td>🔴 <a href="/backtests/parabolic-sar-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+4.1%</td><td>0.8%</td><td>-0.05</td><td>25.5%</td><td>42.6%</td><td>1.06</td><td>61</td></tr>
-<tr><td>🔴 <a href="/backtests/parabolic-sar-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-60.2%</td><td>-16.8%</td><td>-0.35</td><td>76.5%</td><td>33.8%</td><td>0.74</td><td>74</td></tr>
+<tr><td>🟡 <a href="/backtests/parabolic-sar-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+30.1%</td><td>5.4%</td><td>0.22</td><td>32.1%</td><td>47.4%</td><td>1.20</td><td>57</td></tr>
+<tr><td>🟡 <a href="/backtests/parabolic-sar-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>-14.8%</td><td>-3.2%</td><td>0.04</td><td>61.7%</td><td>32.9%</td><td>0.92</td><td>76</td></tr>
+<tr><td>🟡 <a href="/backtests/parabolic-sar-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+0.8%</td><td>0.2%</td><td>0.01</td><td>37.9%</td><td>41.9%</td><td>1.00</td><td>62</td></tr>
+<tr><td>🔴 <a href="/backtests/parabolic-sar-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+4.9%</td><td>1.0%</td><td>-0.03</td><td>25.5%</td><td>42.6%</td><td>1.08</td><td>61</td></tr>
+<tr><td>🔴 <a href="/backtests/parabolic-sar-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-59.4%</td><td>-16.5%</td><td>-0.34</td><td>76.5%</td><td>33.3%</td><td>0.74</td><td>75</td></tr>
 <tr><td>🔴 <a href="/backtests/parabolic-sar-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>-6.3%</td><td>-1.3%</td><td>-0.99</td><td>12.4%</td><td>36.2%</td><td>0.80</td><td>58</td></tr>
 </tbody>
 </table>
@@ -37,7 +37,7 @@ description: "All 6 asset backtests for the SAR indicator. Sorted by Sharpe rati
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 19, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 26, 2026</p>
 
   </div>
 </article>

@@ -1,10 +1,10 @@
 ---
 {
   "title": "SAR \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-3.5%",
+      "return_pct": "-3.4%",
       "trades": "3",
       "win_rate_pct": "36.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-2.3%",
+      "return_pct": "-3.0%",
       "trades": "7",
       "win_rate_pct": "36.2%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/parabolic-sar-eurusd-equity.png",
   "crosslinks": [
     {
-      "title": "ichimoku_cloud_components review: settings, strategy & how to use it",
-      "url": "/reviews/ichimoku-cloud-components/"
+      "title": "machine_learning_knn review: settings, strategy & how to use it",
+      "url": "/reviews/machine-learning-knn/"
     },
     {
-      "title": "confirmed_structure_transition_map_pineify review: settings, strategy & how to use it",
-      "url": "/reviews/confirmed-structure-transition-map-pineify/"
+      "title": "ease of movement review: settings, strategy & how to use it",
+      "url": "/reviews/ease-of-movement/"
     },
     {
-      "title": "standard_error_channel review: settings, strategy & how to use it",
-      "url": "/reviews/standard-error-channel/"
+      "title": "ema_cross_signal review: settings, strategy & how to use it",
+      "url": "/reviews/ema-cross-signal/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On EURUSD, the SAR acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-09-20 → 2026-09-18), the Parabolic SAR delivered a **-6.3% total return** on EURUSD=X, compounding at **-1.3% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the Parabolic SAR delivered a **-6.3% total return** on EURUSD=X, compounding at **-1.3% annually**. 
 
 At **-0.99**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on EURUSD=X](/backtests/parabolic-sar-eurusd-trades.png)

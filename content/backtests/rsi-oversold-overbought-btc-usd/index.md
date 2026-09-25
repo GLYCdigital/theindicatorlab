@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+29.1%"
+      "value": "+33.3%"
     },
     {
       "label": "CAGR",
-      "value": "5.2%"
+      "value": "5.9%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+8.1%",
+      "return_pct": "+9.6%",
       "trades": "1",
       "win_rate_pct": "22.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.7%",
+      "return_pct": "-5.6%",
       "trades": "4",
       "win_rate_pct": "22.7%"
     }
@@ -109,7 +109,7 @@ On BTC, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-20 → 2026-09-18), the RSI Oversold/Overbought delivered a **+29.1% total return** on BTC-USD, compounding at **5.2% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the RSI Oversold/Overbought delivered a **+33.3% total return** on BTC-USD, compounding at **5.9% annually**. 
 
 At **0.34**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on BTC-USD](/backtests/rsi-oversold-overbought-btc-usd-trades.png)

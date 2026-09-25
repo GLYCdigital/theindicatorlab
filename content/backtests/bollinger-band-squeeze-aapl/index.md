@@ -1,18 +1,18 @@
 ---
 {
   "title": "BollingerBands \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+61.8%"
+      "value": "+63.7%"
     },
     {
       "label": "CAGR",
-      "value": "10.1%"
+      "value": "10.4%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.4%",
+      "return_pct": "+22.3%",
       "trades": "1",
       "win_rate_pct": "42.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+24.2%",
+      "return_pct": "+25.8%",
       "trades": "7",
       "win_rate_pct": "42.0%"
     }
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "deepflow_absorption_proxy_fibonacciflux review: settings, strategy & how to use it",
-      "url": "/reviews/deepflow-absorption-proxy-fibonacciflux/"
-    },
-    {
       "title": "vwap bands review: settings, strategy & how to use it",
       "url": "/reviews/vwap-bands/"
+    },
+    {
+      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On AAPL, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-20 → 2026-09-18), the Bollinger Band Squeeze delivered a **+61.8% total return** on AAPL, compounding at **10.1% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the Bollinger Band Squeeze delivered a **+63.7% total return** on AAPL, compounding at **10.4% annually**. 
 
 At **0.44**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on AAPL](/backtests/bollinger-band-squeeze-aapl-trades.png)

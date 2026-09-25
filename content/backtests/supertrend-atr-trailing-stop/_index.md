@@ -1,6 +1,6 @@
 ---
 title: "SuperTrend Backtest Results"
-date: 2026-09-19
+date: 2026-09-26
 draft: false
 type: backtests
 description: "All 6 asset backtests for the SuperTrend indicator. Sorted by Sharpe ratio."
@@ -25,19 +25,19 @@ description: "All 6 asset backtests for the SuperTrend indicator. Sorted by Shar
 </tr>
 </thead>
 <tbody>
-<tr><td>🟢 <a href="/backtests/supertrend-atr-trailing-stop-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+60.5%</td><td>9.9%</td><td>0.51</td><td>29.0%</td><td>45.0%</td><td>1.24</td><td>291</td></tr>
-<tr><td>🟡 <a href="/backtests/supertrend-atr-trailing-stop-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+17.7%</td><td>3.3%</td><td>0.17</td><td>54.1%</td><td>38.1%</td><td>1.02</td><td>307</td></tr>
-<tr><td>🟡 <a href="/backtests/supertrend-atr-trailing-stop-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+11.0%</td><td>2.1%</td><td>0.13</td><td>45.1%</td><td>35.3%</td><td>1.02</td><td>464</td></tr>
-<tr><td>🔴 <a href="/backtests/supertrend-atr-trailing-stop-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-23.0%</td><td>-5.1%</td><td>-0.29</td><td>35.9%</td><td>44.0%</td><td>0.88</td><td>300</td></tr>
-<tr><td>🔴 <a href="/backtests/supertrend-atr-trailing-stop-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-44.5%</td><td>-11.1%</td><td>-0.40</td><td>75.0%</td><td>36.5%</td><td>0.93</td><td>466</td></tr>
-<tr><td>🔴 <a href="/backtests/supertrend-atr-trailing-stop-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-17.8%</td><td>-3.8%</td><td>-0.41</td><td>30.6%</td><td>42.6%</td><td>0.89</td><td>298</td></tr>
+<tr><td>🟡 <a href="/backtests/supertrend-atr-trailing-stop-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+58.3%</td><td>9.6%</td><td>0.48</td><td>29.0%</td><td>45.2%</td><td>1.23</td><td>290</td></tr>
+<tr><td>🟡 <a href="/backtests/supertrend-atr-trailing-stop-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+15.6%</td><td>3.0%</td><td>0.16</td><td>54.1%</td><td>37.8%</td><td>1.02</td><td>307</td></tr>
+<tr><td>🟡 <a href="/backtests/supertrend-atr-trailing-stop-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>-4.6%</td><td>-0.9%</td><td>0.04</td><td>45.1%</td><td>35.3%</td><td>0.99</td><td>465</td></tr>
+<tr><td>🔴 <a href="/backtests/supertrend-atr-trailing-stop-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-22.9%</td><td>-5.1%</td><td>-0.29</td><td>35.9%</td><td>44.0%</td><td>0.88</td><td>300</td></tr>
+<tr><td>🔴 <a href="/backtests/supertrend-atr-trailing-stop-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-18.0%</td><td>-3.9%</td><td>-0.43</td><td>30.6%</td><td>42.6%</td><td>0.88</td><td>298</td></tr>
+<tr><td>🔴 <a href="/backtests/supertrend-atr-trailing-stop-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>-51.6%</td><td>-13.5%</td><td>-0.54</td><td>75.0%</td><td>36.5%</td><td>0.91</td><td>466</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 19, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 26, 2026</p>
 
   </div>
 </article>

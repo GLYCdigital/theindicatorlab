@@ -1,22 +1,22 @@
 ---
 {
   "title": "EMA \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+29.4%"
+      "value": "+31.0%"
     },
     {
       "label": "CAGR",
-      "value": "5.3%"
+      "value": "5.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.27"
+      "value": "0.29"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.4%",
+      "return_pct": "+22.3%",
       "trades": "0",
       "win_rate_pct": "30.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+24.2%",
+      "return_pct": "+25.8%",
       "trades": "5",
       "win_rate_pct": "30.4%"
     }
@@ -109,9 +109,9 @@ On AAPL, the EMA acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-20 → 2026-09-18), the EMA Ribbon delivered a **+29.4% total return** on AAPL, compounding at **5.3% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the EMA Ribbon delivered a **+31.0% total return** on AAPL, compounding at **5.5% annually**. 
 
-At **0.27**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.29**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **22.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 22% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **22.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.27 | ❌ Weak |
+| Sharpe Ratio | 0.29 | ❌ Weak |
 | Max Drawdown | 22.3% | ⚠️ Moderate |
 | Win Rate | 30.4% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.45 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.45** tells the real story: when the EMA fires, the winn
 
 ## Does the EMA Ribbon Work on AAPL?
 
-The ema ribbon struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.27 Sharpe ratio** and **1.45 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ema ribbon struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.29 Sharpe ratio** and **1.45 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the EMA is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on AAPL](/backtests/ema-ribbon-aapl-trades.png)

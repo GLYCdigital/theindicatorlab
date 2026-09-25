@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+16.5%"
+      "value": "+19.5%"
     },
     {
       "label": "CAGR",
-      "value": "3.1%"
+      "value": "3.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.13"
+      "value": "0.15"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "22.9%"
+      "value": "22.7%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "96"
+      "value": "97"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.5%",
+      "return_pct": "+25.5%",
       "trades": "4",
-      "win_rate_pct": "22.9%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "16",
-      "win_rate_pct": "22.9%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "20",
-      "win_rate_pct": "22.9%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "17",
-      "win_rate_pct": "22.9%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "21",
-      "win_rate_pct": "22.9%"
+      "win_rate_pct": "22.7%"
     },
     {
       "year": "2026",
-      "return_pct": "-13.1%",
-      "trades": "18",
-      "win_rate_pct": "22.9%"
+      "return_pct": "-10.5%",
+      "trades": "19",
+      "win_rate_pct": "22.7%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On ETH, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-20 → 2026-09-18), the Donchian Channel Breakout delivered a **+16.5% total return** on ETH-USD, compounding at **3.1% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the Donchian Channel Breakout delivered a **+19.5% total return** on ETH-USD, compounding at **3.6% annually**. 
 
-At **0.13**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.15**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.13 | ❌ Weak |
+| Sharpe Ratio | 0.15 | ❌ Weak |
 | Max Drawdown | 49.8% | ⚠️ Significant |
-| Win Rate | 22.9% | ❌ Low — relies on outsized wins |
+| Win Rate | 22.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.05 | ⚠️ Marginal |
-| Trades/Year | ~96 total | Active |
+| Trades/Year | ~97 total | Active |
 
-The **profit factor of 1.05** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 22.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.05** tells the real story: when the Donchian fires, the winning signals are larger than the losing ones. Combined with a 22.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Donchian Channel Breakout Work on ETH?
 
-The donchian channel breakout struggled to generate meaningful edge on ETH over this 5-year period. With a **0.13 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on ETH over this 5-year period. With a **0.15 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on ETH-USD](/backtests/donchian-channel-breakout-eth-usd-trades.png)

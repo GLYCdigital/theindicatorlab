@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+82.9%"
+      "value": "+88.0%"
     },
     {
       "label": "CAGR",
-      "value": "12.8%"
+      "value": "13.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.43"
+      "value": "0.44"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.5%",
+      "return_pct": "+25.5%",
       "trades": "6",
       "win_rate_pct": "21.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-13.1%",
+      "return_pct": "-10.5%",
       "trades": "15",
       "win_rate_pct": "21.6%"
     }
@@ -109,9 +109,9 @@ On ETH, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-20 → 2026-09-18), the Volume Profile Pro delivered a **+82.9% total return** on ETH-USD, compounding at **12.8% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the Volume Profile Pro delivered a **+88.0% total return** on ETH-USD, compounding at **13.5% annually**. 
 
-At **0.43**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.44**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **39.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 39% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **39.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.43 | ❌ Weak |
+| Sharpe Ratio | 0.44 | ❌ Weak |
 | Max Drawdown | 39.1% | ⚠️ Significant |
 | Win Rate | 21.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.31 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.31** tells the real story: when the VWAP fires, the win
 
 ## Does the Volume Profile Pro Work on ETH?
 
-The volume profile pro shows moderate edge on ETH — **0.43 Sharpe, 1.31 profit factor** over 102 trades. It's not a home run, but it's also not random.
+The volume profile pro shows moderate edge on ETH — **0.44 Sharpe, 1.31 profit factor** over 102 trades. It's not a home run, but it's also not random.
 
 The 21.6% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on ETH-USD](/backtests/volume-profile-pro-eth-usd-trades.png)

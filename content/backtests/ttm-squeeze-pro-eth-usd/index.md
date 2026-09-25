@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+11.5%"
+      "value": "+14.4%"
     },
     {
       "label": "CAGR",
-      "value": "2.2%"
+      "value": "2.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.08"
+      "value": "0.10"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "20.9%"
+      "value": "20.7%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "91"
+      "value": "92"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.5%",
+      "return_pct": "+25.5%",
       "trades": "3",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "20.7%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "17",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "20.7%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "21",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "20.7%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "15",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "20.7%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "19",
-      "win_rate_pct": "20.9%"
+      "win_rate_pct": "20.7%"
     },
     {
       "year": "2026",
-      "return_pct": "-13.1%",
-      "trades": "16",
-      "win_rate_pct": "20.9%"
+      "return_pct": "-10.5%",
+      "trades": "17",
+      "win_rate_pct": "20.7%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -88,12 +88,12 @@
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "deepflow_absorption_proxy_fibonacciflux review: settings, strategy & how to use it",
-      "url": "/reviews/deepflow-absorption-proxy-fibonacciflux/"
-    },
-    {
       "title": "vwap bands review: settings, strategy & how to use it",
       "url": "/reviews/vwap-bands/"
+    },
+    {
+      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On ETH, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-20 → 2026-09-18), the TTM Squeeze Pro delivered a **+11.5% total return** on ETH-USD, compounding at **2.2% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the TTM Squeeze Pro delivered a **+14.4% total return** on ETH-USD, compounding at **2.7% annually**. 
 
-At **0.08**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.10**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.08 | ❌ Weak |
+| Sharpe Ratio | 0.10 | ❌ Weak |
 | Max Drawdown | 44.0% | ⚠️ Significant |
-| Win Rate | 20.9% | ❌ Low — relies on outsized wins |
+| Win Rate | 20.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.04 | ⚠️ Marginal |
-| Trades/Year | ~91 total | Active |
+| Trades/Year | ~92 total | Active |
 
-The **profit factor of 1.04** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 20.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.04** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 20.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the TTM Squeeze Pro Work on ETH?
 
-The ttm squeeze pro struggled to generate meaningful edge on ETH over this 5-year period. With a **0.08 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ttm squeeze pro struggled to generate meaningful edge on ETH over this 5-year period. With a **0.10 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on ETH-USD](/backtests/ttm-squeeze-pro-eth-usd-trades.png)

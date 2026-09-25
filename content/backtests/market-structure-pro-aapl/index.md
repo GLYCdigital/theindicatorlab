@@ -1,22 +1,22 @@
 ---
 {
   "title": "Swing \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+10.0%"
+      "value": "+11.4%"
     },
     {
       "label": "CAGR",
-      "value": "1.9%"
+      "value": "2.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.07"
+      "value": "0.08"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+24.4%",
+      "return_pct": "+22.3%",
       "trades": "1",
       "win_rate_pct": "32.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+24.2%",
+      "return_pct": "+25.8%",
       "trades": "8",
       "win_rate_pct": "32.7%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/market-structure-pro-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
-      "url": "/reviews/halftrend-long-short-signal-engine/"
-    },
-    {
       "title": "volume_ma review: settings, strategy & how to use it",
       "url": "/reviews/volume-ma/"
     },
     {
       "title": "ttm squeeze review: settings, strategy & how to use it",
       "url": "/reviews/ttm-squeeze/"
+    },
+    {
+      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On AAPL, the Swing acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-20 → 2026-09-18), the Market Structure Pro delivered a **+10.0% total return** on AAPL, compounding at **1.9% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the Market Structure Pro delivered a **+11.4% total return** on AAPL, compounding at **2.2% annually**. 
 
-At **0.07**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.08**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **34.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 34% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **34.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.07 | ❌ Weak |
+| Sharpe Ratio | 0.08 | ❌ Weak |
 | Max Drawdown | 34.4% | ⚠️ Significant |
 | Win Rate | 32.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.08 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.08** tells the real story: when the Swing fires, the wi
 
 ## Does the Market Structure Pro Work on AAPL?
 
-The market structure pro struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.07 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.08 Sharpe ratio** and **1.08 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on AAPL](/backtests/market-structure-pro-aapl-trades.png)

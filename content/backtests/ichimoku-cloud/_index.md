@@ -1,6 +1,6 @@
 ---
 title: "Ichimoku Backtest Results"
-date: 2026-09-19
+date: 2026-09-26
 draft: false
 type: backtests
 description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe ratio."
@@ -27,8 +27,8 @@ description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe
 <tbody>
 <tr><td>🟢 <a href="/backtests/ichimoku-cloud-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+60.9%</td><td>10.0%</td><td>0.55</td><td>18.0%</td><td>42.1%</td><td>2.45</td><td>19</td></tr>
 <tr><td>🟢 <a href="/backtests/ichimoku-cloud-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+52.1%</td><td>8.8%</td><td>0.53</td><td>19.0%</td><td>57.9%</td><td>2.99</td><td>19</td></tr>
-<tr><td>🟡 <a href="/backtests/ichimoku-cloud-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+35.9%</td><td>6.3%</td><td>0.26</td><td>45.1%</td><td>26.3%</td><td>1.20</td><td>38</td></tr>
-<tr><td>🟡 <a href="/backtests/ichimoku-cloud-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+16.3%</td><td>3.1%</td><td>0.14</td><td>53.0%</td><td>32.4%</td><td>1.01</td><td>37</td></tr>
+<tr><td>🟡 <a href="/backtests/ichimoku-cloud-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+34.9%</td><td>6.2%</td><td>0.26</td><td>45.1%</td><td>25.6%</td><td>1.20</td><td>39</td></tr>
+<tr><td>🟡 <a href="/backtests/ichimoku-cloud-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+13.9%</td><td>2.6%</td><td>0.12</td><td>53.0%</td><td>34.2%</td><td>1.09</td><td>38</td></tr>
 <tr><td>🔴 <a href="/backtests/ichimoku-cloud-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>+1.3%</td><td>0.3%</td><td>-0.38</td><td>12.8%</td><td>40.0%</td><td>1.07</td><td>25</td></tr>
 </tbody>
 </table>
@@ -36,7 +36,7 @@ description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 19, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 26, 2026</p>
 
   </div>
 </article>

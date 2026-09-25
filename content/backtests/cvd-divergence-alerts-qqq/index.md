@@ -1,22 +1,22 @@
 ---
 {
   "title": "CVD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+31.2%"
+      "value": "+36.1%"
     },
     {
       "label": "CAGR",
-      "value": "5.6%"
+      "value": "6.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.24"
+      "value": "0.28"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+8.9%",
+      "return_pct": "+7.6%",
       "trades": "5",
       "win_rate_pct": "29.6%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+17.3%",
+      "return_pct": "+21.9%",
       "trades": "16",
       "win_rate_pct": "29.6%"
     }
@@ -92,8 +92,8 @@
       "url": "/reviews/open-interest-tracker/"
     },
     {
-      "title": "order_flow_cumulative_delta review: settings, strategy & how to use it",
-      "url": "/reviews/order-flow-cumulative-delta/"
+      "title": "order_block_detector review: settings, strategy & how to use it",
+      "url": "/reviews/order-block-detector/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On QQQ, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-09-20 → 2026-09-18), the CVD Divergence Alerts delivered a **+31.2% total return** on QQQ, compounding at **5.6% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the CVD Divergence Alerts delivered a **+36.1% total return** on QQQ, compounding at **6.4% annually**. 
 
-At **0.24**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.28**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **18.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **18.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.24 | ❌ Weak |
+| Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 18.5% | ⚠️ Moderate |
 | Win Rate | 29.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.34 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.34** tells the real story: when the CVD fires, the winn
 
 ## Does the CVD Divergence Alerts Work on QQQ?
 
-The cvd divergence alerts struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.24 Sharpe ratio** and **1.34 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The cvd divergence alerts struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.28 Sharpe ratio** and **1.34 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the CVD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on QQQ](/backtests/cvd-divergence-alerts-qqq-trades.png)

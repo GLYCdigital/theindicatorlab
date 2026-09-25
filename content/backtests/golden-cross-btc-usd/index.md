@@ -1,22 +1,22 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+87.2%"
+      "value": "+93.3%"
     },
     {
       "label": "CAGR",
-      "value": "13.4%"
+      "value": "14.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.39"
+      "value": "0.40"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+8.1%",
+      "return_pct": "+9.6%",
       "trades": "0",
       "win_rate_pct": "60.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.7%",
+      "return_pct": "-5.6%",
       "trades": "1",
       "win_rate_pct": "60.0%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/golden-cross-btc-usd-equity.png",
   "crosslinks": [
     {
+      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "url": "/reviews/halftrend-long-short-signal-engine/"
+    },
+    {
       "title": "volume_ma review: settings, strategy & how to use it",
       "url": "/reviews/volume-ma/"
     },
     {
       "title": "rsi macd combo signal review: settings, strategy & how to use it",
       "url": "/reviews/rsi-macd-combo-signal/"
-    },
-    {
-      "title": "triple exponential ma review: settings, strategy & how to use it",
-      "url": "/reviews/triple-exponential-ma/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-20 → 2026-09-18), the Golden Cross delivered a **+87.2% total return** on BTC-USD, compounding at **13.4% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the Golden Cross delivered a **+93.3% total return** on BTC-USD, compounding at **14.1% annually**. 
 
-At **0.39**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.40**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **38.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 38% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **38.2% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.39 | ❌ Weak |
+| Sharpe Ratio | 0.40 | ❌ Weak |
 | Max Drawdown | 38.2% | ⚠️ Significant |
 | Win Rate | 60.0% | ✅ Strong |
 | Profit Factor | 3.54 | ✅ Excellent |
@@ -129,7 +129,7 @@ The **profit factor of 3.54** tells the real story: when the SMA fires, the winn
 
 ## Does the Golden Cross Work on BTC?
 
-The golden cross shows moderate edge on BTC — **0.39 Sharpe, 3.54 profit factor** over 5 trades. It's not a home run, but it's also not random.
+The golden cross shows moderate edge on BTC — **0.40 Sharpe, 3.54 profit factor** over 5 trades. It's not a home run, but it's also not random.
 
 The 60.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

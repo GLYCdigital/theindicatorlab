@@ -1,22 +1,22 @@
 ---
 {
   "title": "EMA \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-09-19",
+  "date": "2026-09-26",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-20 \u2192 2026-09-18",
+  "period": "2021-09-27 \u2192 2026-09-25",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+32.2%"
+      "value": "+34.4%"
     },
     {
       "label": "CAGR",
-      "value": "5.7%"
+      "value": "6.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.42"
+      "value": "0.45"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.8%",
+      "return_pct": "+7.7%",
       "trades": "0",
       "win_rate_pct": "31.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+11.8%",
+      "return_pct": "+13.8%",
       "trades": "5",
       "win_rate_pct": "31.8%"
     }
@@ -109,9 +109,9 @@ On SPY, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-09-20 → 2026-09-18), the EMA Ribbon delivered a **+32.2% total return** on SPY, compounding at **5.7% annually**. 
+Over five years (2021-09-27 → 2026-09-25), the EMA Ribbon delivered a **+34.4% total return** on SPY, compounding at **6.1% annually**. 
 
-At **0.42**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.45**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **15.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 15% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **15.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.42 | ❌ Weak |
+| Sharpe Ratio | 0.45 | ❌ Weak |
 | Max Drawdown | 15.1% | ⚠️ Moderate |
 | Win Rate | 31.8% | ❌ Low — relies on outsized wins |
 | Profit Factor | 2.18 | ✅ Excellent |
@@ -129,7 +129,7 @@ The **profit factor of 2.18** tells the real story: when the EMA fires, the winn
 
 ## Does the EMA Ribbon Work on SPY?
 
-The ema ribbon shows moderate edge on SPY — **0.42 Sharpe, 2.18 profit factor** over 22 trades. It's not a home run, but it's also not random.
+The ema ribbon shows moderate edge on SPY — **0.45 Sharpe, 2.18 profit factor** over 22 trades. It's not a home run, but it's also not random.
 
 The 31.8% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 19, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on SPY](/backtests/ema-ribbon-spy-trades.png)
