@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 123 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 128 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** September 13, 2026 · **123 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** September 27, 2026 · **128 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (38)
+## Momentum (39)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -56,8 +56,9 @@ Indicators that measure the speed and strength of price movement.
 | Market Cipher B 🆕 | [→ Full review](/reviews/market-cipher-b/) |
 | Kinetic Slippage Index 🆕 | [→ Full review](/reviews/kinetic-slippage-index-ksi/) |
 | Ehlers Cyber Cycle 🆕 | [→ Full review](/reviews/ehlers-cyber-cycle/) |
+| Candlestick Reversal 🆕 | [→ Full review](/reviews/candlestick-patterns/) |
 
-## Trend (39)
+## Trend (42)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -102,8 +103,11 @@ Indicators that identify direction and strength of the prevailing trend.
 | Kalman Filter Trend 🆕 | [→ Full review](/reviews/kalman-filter-trend/) |
 | Wyckoff Spring Detection 🆕 | [→ Full review](/reviews/wyckoff-spring-detection/) |
 | Previous Day High/Low 🆕 | [→ Full review](/reviews/previous-day-high-low/) |
+| Fair Value Gap 🆕 | [→ Full review](/reviews/fair-value-gap/) |
+| Opening Range Breakout 🆕 | [→ Full review](/reviews/opening-range-breakout/) |
+| Order Blocks 🆕 | [→ Full review](/reviews/order-blocks/) |
 
-## Volume (21)
+## Volume (22)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -130,6 +134,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Wyckoff Accum/Distribution 🆕 | [→ Full review](/reviews/wyckoff-accumulation-distribution/) |
 | Negative Volume Index 🆕 | [→ Full review](/reviews/negative-volume-index-nvi/) |
 | Williams Accum/Distribution 🆕 | [→ Full review](/reviews/williams-accumulation-distribution/) |
+| HTF Volume Spike Imbalance 🆕 | [→ Full review](/reviews/htf-volume-spike-imbalance-projection/) |
 
 ## Volatility (25)
 
