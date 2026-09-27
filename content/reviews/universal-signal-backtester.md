@@ -15,7 +15,7 @@ categories:
   - "Trend"
   - Technical Analysis
 rating: 4
-description: "Universal_Signal_Backtester review: hands-on testing of its multi-signal backtesting engine, optimal settings, entry logic, and honest pros & cons for trend traders."
+description: "Universal_Signal_Backtester review: a closer look at its multi-signal backtesting engine, features, and honest pros & cons for trend traders."
 tv_script_url: "https://www.tradingview.com/script/Y5CIZ9CB-Universal-Signal-Backtester-LuxAlgo/"
 sources: ["https://www.tradingview.com/script/Y5CIZ9CB-Universal-Signal-Backtester-LuxAlgo/"]
 ---
@@ -121,4 +121,4 @@ If you're tired of coding full strategies just to test a hunch, it's worth the i
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and the official TradingView script documentation. Always test indicators in a demo environment before live trading.*

@@ -118,4 +118,4 @@ If you are new to pivots and want to learn, it is a reasonable starting point. I
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and the official TradingView script documentation. Always test indicators in a demo environment before live trading.*

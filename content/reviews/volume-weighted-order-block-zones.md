@@ -107,4 +107,4 @@ Volume-Weighted Order Block Zones does one thing: it plots order blocks that pas
 *Affiliate link · We earn a commission at no extra cost to you*
 
 ---
-*Data source: TradingView. This review is based on publicly available indicator information and hands-on testing. Always test indicators in a demo environment before live trading.*
+*Data source: TradingView. This review is based on publicly available indicator information and the official TradingView script documentation. Always test indicators in a demo environment before live trading.*
