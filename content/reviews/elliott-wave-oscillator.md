@@ -19,7 +19,7 @@ rating: 4
 description: "An oscillator-based tool for spotting Elliott Wave patterns. Clear signals for wave 3 and 5 entries. Best on 1H-4H timeframes with default settings."
 grounding: "none (no source found)"
 ---
-# Elliott_Wave_Oscillator Review: Settings, Strategy & How to Use It
+## Elliott_Wave_Oscillator Review: Settings, Strategy & How to Use It
 
 This is a tool aimed at traders who already understand Elliott Wave theory. If you don't, it will read as little more than lines crossing zero. Here's a breakdown of what it does, how it's configured, and where it fits.
 

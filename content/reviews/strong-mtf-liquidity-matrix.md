@@ -1,5 +1,5 @@
 ---
-title: "Strong MTF Liquidity Matrix Review — Market Structure Indicator"
+title: "Strong MTF Liquidity Matrix Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/NQlGkZOs-Strong-MTF-Liquidity-Matrix-ProjectSyndicate/"
 date: 2026-08-11
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Strong_Mtf_Liquidity_Matrix review: multi-timeframe liquidity mapping, best settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Strong MTF Liquidity Matrix Review
 Liquidity-mapping indicators have a reputation problem: many promise institutional-grade insight and deliver a repainted mess. Strong_MTF_Liquidity_Matrix is a multi-timeframe tool worth evaluating on its own terms, provided you understand what it does and doesn't do. Here's a breakdown of its design, intended use, and limitations.
 
 ## What This Indicator Does

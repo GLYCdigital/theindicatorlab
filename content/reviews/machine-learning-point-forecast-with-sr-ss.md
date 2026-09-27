@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Point Forecast With Sr Ss Review — Trend Indicator"
+title: "Machine Learning Point Forecast With Sr Ss Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/7sYk5x9j-Machine-Learning-Point-Forecast-with-SR-SS-Steversteves/"
 date: 2026-07-16
 draft: false

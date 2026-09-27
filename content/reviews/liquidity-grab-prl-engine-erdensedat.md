@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Grab Prl Engine Erdensedat Review — Market Structure Indicator"
+title: "Liquidity Grab Prl Engine Erdensedat Review"
 tv_script_url: "https://www.tradingview.com/script/QFngAmkx-Liquidity-Grab-PRL-Engine-erdensedat/"
 date: 2026-07-16
 draft: false

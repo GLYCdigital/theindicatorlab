@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Sweep Profiler Flux Charts Review — Market Structure Indicator"
+title: "Liquidity Sweep Profiler Flux Charts Review"
 tv_script_url: "https://www.tradingview.com/script/LM4xxgfj-Liquidity-Sweep-Profiler-fluxchart/"
 date: 2026-07-16
 draft: false

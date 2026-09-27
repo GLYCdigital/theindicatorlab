@@ -1,5 +1,5 @@
 ---
-title: "Gold Session Map Sweep Signals Review — Market Structure Indicator"
+title: "Gold Session Map Sweep Signals Review — Market Structure"
 date: 2026-08-22
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Honest Gold_Session_Map_Sweep_Signals review: session-based sweep 
 tv_script_url: "https://www.tradingview.com/script/bo1WdFiL-Gold-Session-Map-Sweep-Signals/"
 sources: ["https://www.tradingview.com/script/bo1WdFiL-Gold-Session-Map-Sweep-Signals/", "https://www.mql5.com/en/blogs/post/772224", "https://www.mql5.com/en/blogs/post/772224[/url", "https://tiomarkets.com/en/article/best-time-to-trade-gold-xauusd"]
 ---
-# Gold Session Map Sweep Signals Review
 Most "session map" indicators are glorified rectangles with a timezone dropdown. This one tries to do something with those session boundaries. Once you strip away the marketing, here's what it actually is.
 
 **What it does**

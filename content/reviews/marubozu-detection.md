@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Marubozu_Detection review: settings, backtest results, entry rules, and why it’s a solid candlestick pattern tool for trend traders."
 grounding: "none (no source found)"
 ---
-# Marubozu Detection Review
 Marubozu candles are among the more dependable single-candle patterns in price action trading. They signal strong momentum with no wick on one side, meaning buyers or sellers were in control from open to close.
 
 Marubozu_Detection automates the spotting of these candles on your TradingView chart. Does it do the job? Largely, yes. Here's a breakdown.

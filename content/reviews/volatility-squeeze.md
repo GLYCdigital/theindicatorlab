@@ -19,7 +19,6 @@ rating: 4
 description: "Volatility_Squeeze review: honest test of this momentum/trend hybrid. Settings, entry logic, pros/cons, and who should actually use it. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Volatility Squeeze Review
 There are hundreds of "squeeze" indicators on TradingView, and most of them are just Bollinger Bands with a fresh coat of paint. The Volatility_Squeeze takes a different approach — it pairs classic squeeze detection with a momentum filter intended to help catch trend continuations rather than just range breakouts.
 
 ## What It Actually Does

@@ -19,7 +19,6 @@ rating: 3
 description: "Pullback Sniper Method review: a trend-following pullback entry tool. Find out if it delivers sniper accuracy or just noise. Settings & strategy tips inside."
 grounding: "none (no source found)"
 ---
-# Pullback Sniper Method Review
 The name "Pullback Sniper Method" sets a high expectation — surgical entries, minimal noise. The reality is more modest. It's not a magic bullet, but it's a workable tool if you understand its limits.
 
 ## What This Indicator Actually Does

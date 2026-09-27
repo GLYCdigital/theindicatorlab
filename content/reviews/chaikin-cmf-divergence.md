@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Chaikin CMF Divergence review: settings, hidden divergences, entry logic, pros/cons, and who should use this trend indicator."
 grounding: "none (no source found)"
 ---
-# Chaikin CMF Divergence Review
 This isn't a magic signal. Chaikin_Cmf_Divergence takes the standard Chaikin Money Flow and does one thing well — it flags when price and money flow stop agreeing. Whether that's useful depends entirely on how you trade and whether you respect its limits.
 
 **What it actually does**

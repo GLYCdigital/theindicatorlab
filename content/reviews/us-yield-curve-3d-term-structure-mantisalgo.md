@@ -1,5 +1,5 @@
 ---
-title: "Us Yield Curve 3d Term Structure Mantisalgo Review — Market Structure Indicator"
+title: "Us Yield Curve 3d Term Structure Mantisalgo Review"
 date: 2026-09-15
 draft: false
 type: reviews

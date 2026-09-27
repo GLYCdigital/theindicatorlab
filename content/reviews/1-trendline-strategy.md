@@ -19,7 +19,6 @@ rating: 4
 description: "A clean, single-trendline breakout system that auto-draws support/resistance. Honest review with settings, entry rules, and where it falls short."
 grounding: "none (no source found)"
 ---
-# 1 Trendline Strategy Review
 **1_Trendline_Strategy** is a straightforward, auto-drawn trendline breakout tool. It does one job and does it without an embedded oscillator or hidden secondary logic.
 
 ## What It Actually Does

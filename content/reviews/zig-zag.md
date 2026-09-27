@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Zig Zag review: how it filters noise, best settings for swings, entry/exit rules, and why it's not a standalone strategy. 4/5 ⭐"
 grounding: "none (no source found)"
 ---
-# Zig Zag Review
 Let's be blunt: Zig Zag isn't a "set and forget" signal generator. It isn't predicting the next move. What it does, and does well, is strip away noise so you can see the swing structure. On TradingView, the built-in Zig Zag is simple, fast, and useful once you stop expecting it to trade for you.
 
 Zig Zag draws straight lines between pivot highs and lows, ignoring small wiggles. The result is clean, readable swing points. Here's how to actually use it.

@@ -1,5 +1,5 @@
 ---
-title: "Ehlers Deviation Scaled Oscillator Review — Momentum Indicator"
+title: "Ehlers Deviation Scaled Oscillator Review — Momentum"
 date: 2026-07-16
 draft: false
 type: reviews

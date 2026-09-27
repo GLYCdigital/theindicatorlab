@@ -1,5 +1,5 @@
 ---
-title: "Thestrat Suite Open Source Entries Targets And Stop Loss Review — Trend Indicator"
+title: "Thestrat Suite Open Source Entries Targets And Stop Loss Review"
 tv_script_url: "https://www.tradingview.com/script/dnJOzGmk-TheStrat-Suite-v3-1-1-SpinTrades/"
 date: 2026-08-10
 draft: false
@@ -19,7 +19,7 @@ rating: 4
 description: "Honest Thestrat Suite review: backtested entries, targets, and stop-loss logic. Settings, pros/cons, and whether it beats manual Strat analysis."
 grounding: "none (no source found)"
 ---
-# Thestrat_Suite Review: A Full Implementation of The Strat
+## Thestrat_Suite Review: A Full Implementation of The Strat
 
 This is not another repackaged MACD crossover with a fancy name. Thestrat_Suite is a full implementation of Rob Smith's "The Strat" methodology — the 2/9 EMA ribbon, the 1-2-3-4-5-6 candlestick sequences, and the CDL patterns that Strat traders focus on. As an open-source tool on TradingView, it is one of the more complete Strat implementations available.
 

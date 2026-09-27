@@ -1,5 +1,5 @@
 ---
-title: "Fractal Support Resistance Review — Support & Resistance Indicator"
+title: "Fractal Support Resistance Review — Support & Resistance"
 tv_script_url: "https://www.tradingview.com/script/3AdtJwlD-Fractal-Support-Resistance-ceyhun/"
 date: 2026-07-16
 draft: false

@@ -19,7 +19,6 @@ rating: 4
 description: "A no-nonsense ORB indicator for intraday momentum. Clean signals, custom timeframes, and solid backtesting. Best for ES, NQ, and forex scalpers."
 grounding: "none (no source found)"
 ---
-# Opening Range Breakout Review
 Opening range breakout (ORB) tools tend to fall into two camps: over-engineered, or simply wrong on the first bar. The value of a good one is that it respects the core concept without adding noise.
 
 **What this indicator does:** It plots the high and low of a user-defined opening period, then draws breakout lines above and below that range. When price closes outside the range, the indicator produces a signal with an arrow and an optional alert. The concept is straightforward: the raw range plus a trigger.

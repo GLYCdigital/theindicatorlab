@@ -18,7 +18,6 @@ rating: 4
 description: "Tested Regular_Divergence_Detector on TradingView: honest review of settings, entry logic, pros/cons, and who should use this MACD divergence scanner."
 grounding: "none (no source found)"
 ---
-# Regular Divergence Detector Review
 This indicator does one thing: it plots regular bullish and bearish divergences on MACD and marks them directly on the chart. No machine learning, no multi-timeframe layers, no hidden logic. If you've spent hours squinting at MACD crossovers trying to spot where price made a higher high but momentum made a lower high, this tool is designed to do that scanning for you.
 
 ## What Sets It Apart

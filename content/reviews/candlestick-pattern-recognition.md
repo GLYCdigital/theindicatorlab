@@ -1,5 +1,5 @@
 ---
-title: "Candlestick Pattern Recognition Review — Chart Pattern Indicator"
+title: "Candlestick Pattern Recognition Review — Chart Patterns"
 tv_script_url: "https://www.tradingview.com/script/whcY7Y7k-Candles-UnknownUnicorn3006803/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of TradingView's Candlestick_Pattern_Recognition. See how it scans 50+ patterns, best settings, and whether it's worth installing."
 grounding: "none (no source found)"
 ---
-# Candlestick Pattern Recognition Review
 You've seen those "perfect" candlestick pattern setups on YouTube. Then you try them live, and half the signals are fake.
 
 **Candlestick_Pattern_Recognition** takes a different approach. It's a pattern scanner that labels candles on your chart — no guessing, no manual flipping through textbooks.

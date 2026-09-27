@@ -18,7 +18,6 @@ rating: 4
 description: "Sma_Flip_Strategy review: test SMA crossover signals on TradingView. See best settings, entry rules, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# SMA Flip Strategy Review
 Most moving average crossover systems are disposable — a fast line, a slow line, and a signal that fires too often to be useful. The Sma_Flip_Strategy doesn't reinvent that structure. It's a two-SMA crossover packaged with a few practical additions that address the most common complaints about the format.
 
 ## What This Indicator Actually Does

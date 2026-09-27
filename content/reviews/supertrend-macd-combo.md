@@ -18,7 +18,6 @@ rating: 4
 description: "Supertrend_Macd_Combo combines two proven trend-following tools into one clean signal. Read our test results, best settings, and entry rules."
 grounding: "none (no source found)"
 ---
-# Supertrend MACD Combo Review
 The **Supertrend_Macd_Combo** isn't a black-box "AI" indicator. It's exactly what the name says: a Supertrend overlay married to an MACD-style confirmation line, all on one chart.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Dealing And Displacement Range Trade Entries Review — Trend Indicator"
+title: "Dealing And Displacement Range Trade Entries Review — Trend"
 date: 2026-07-23
 draft: false
 type: reviews
@@ -18,7 +18,6 @@ rating: 4
 description: "A 4/5 review of Dealing_And_Displacement_Range_Trade_Entries: a trend-based entry tool that flags breakouts beyond tight ranges for clean entries. Settings, pros/cons, and best use cases included."
 grounding: "none (no source found)"
 ---
-# Dealing And Displacement Range Trade Entries Review
 The **Dealing_And_Displacement_Range_Trade_Entries** indicator (DDRTE for short) does exactly one thing: it identifies price action that breaks out of a defined range and signals a potential entry. It's not a crystal ball—it's a rangefinder. For trend traders who hate second-guessing entries, it's a focused tool worth understanding.
 
 ## What This Indicator Actually Does

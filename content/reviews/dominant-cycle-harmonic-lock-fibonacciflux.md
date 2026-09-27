@@ -1,5 +1,5 @@
 ---
-title: "Dominant Cycle Harmonic Lock Fibonacciflux Review — Momentum Indicator"
+title: "Dominant Cycle Harmonic Lock Fibonacciflux Review — Momentum"
 date: 2026-08-30
 draft: false
 type: reviews

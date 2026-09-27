@@ -1,5 +1,5 @@
 ---
-title: "Agreement Streak Analyzer Fibonacciflux Review — Momentum Indicator"
+title: "Agreement Streak Analyzer Fibonacciflux Review — Momentum"
 date: 2026-08-29
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Honest Agreement_Streak_Analyzer_Fibonacciflux review: how this tr
 tv_script_url: "https://www.tradingview.com/script/eowbBWy9-Agreement-Streak-Analyzer-FibonacciFlux/"
 sources: ["https://www.tradingview.com/script/eowbBWy9-Agreement-Streak-Analyzer-FibonacciFlux/"]
 ---
-# Agreement Streak Analyzer Fibonacciflux Review
 The name is a mouthful, and it doesn't do the script any favors — three buzzwords stacked on top of each other. But the underlying concept is more interesting than the name suggests. This is a trend-strength meter that counts how many consecutive bars agree on direction across multiple timeframes, then scores that run against its own history. It's not a signal generator, and the author is upfront about that: the published result is a negative one.
 
 ## What It Actually Does

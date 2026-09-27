@@ -18,7 +18,6 @@ rating: 4
 description: "Accum_Dist_Divergence review: How to spot accumulation/distribution divergences for trend reversals. Tested settings, entry logic, pros, cons."
 grounding: "none (no source found)"
 ---
-# Accum Dist Divergence Review
 Most "smart money" indicators promise to reveal what the big players are doing, and most turn out to be repackaged RSI with extra lines. The Accum_Dist_Divergence is a different proposition — it does what its name suggests, and it does it cleanly.
 
 ## What This Indicator Actually Does

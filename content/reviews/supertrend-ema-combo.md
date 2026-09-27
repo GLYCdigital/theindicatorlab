@@ -19,7 +19,6 @@ rating: 4
 description: "Honest SuperTrend EMA Combo review: tested settings, entry/exit rules, and who it’s actually for. No fluff, just what works."
 grounding: "none (no source found)"
 ---
-# Supertrend EMA Combo Review
 The SuperTrend EMA Combo from LuxAlgo is what the name suggests: a SuperTrend indicator with an EMA filter layered on top to cut down false signals. It's popular on TradingView, but it isn't a magic bullet. Here's a breakdown of what it does and where it fits.
 
 **What it actually does**

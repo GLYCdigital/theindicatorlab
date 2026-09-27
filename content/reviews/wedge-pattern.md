@@ -19,7 +19,6 @@ rating: 4
 description: "Wedge_Pattern auto-detects rising and falling wedges with trend context. Tested settings, entry logic, pros/cons, and honest verdict for TradingView."
 grounding: "none (no source found)"
 ---
-# Wedge Pattern Review
 Wedge pattern indicators are common on TradingView, and many are essentially drawing tools rather than objective detectors. Wedge_Pattern is worth evaluating on that basis: does it identify wedge structures objectively, or does it require the trader to squint at price action and decide whether a formation is a converging wedge or just noise?
 
 ## What This Indicator Actually Does

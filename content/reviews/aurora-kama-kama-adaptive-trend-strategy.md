@@ -1,5 +1,5 @@
 ---
-title: "Aurora KAMA KAMA Adaptive Trend Strategy Review — Trend Indicator"
+title: "Aurora KAMA KAMA Adaptive Trend Strategy Review — Trend"
 date: 2026-09-16
 draft: false
 type: reviews

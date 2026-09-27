@@ -1,5 +1,5 @@
 ---
-title: "Volume Weighted Order Block Zones Review — Market Structure Indicator"
+title: "Volume Weighted Order Block Zones Review — Market Structure"
 date: 2026-08-28
 draft: false
 type: reviews

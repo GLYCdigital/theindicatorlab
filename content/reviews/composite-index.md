@@ -19,7 +19,6 @@ rating: 4
 description: "Composite_Index is a multi-timeframe momentum indicator that combines RSI, MACD, and volume into one clean line. Here's my honest review with settings and strategy."
 grounding: "none (no source found)"
 ---
-# Composite Index Review
 Multi-indicator composites have a bad reputation, and much of it is earned. Stacking three oscillators into one line often produces something that looks clean on a chart but gives you no way to understand why it moved. Composite_Index is worth examining on its own terms, with the caveat that most of what follows describes how the tool is designed to work rather than verified performance.
 
 ## What This Indicator Actually Does

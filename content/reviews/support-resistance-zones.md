@@ -1,5 +1,5 @@
 ---
-title: "Support Resistance Zones Review — Support & Resistance Indicator"
+title: "Support Resistance Zones Review — Support & Resistance"
 tv_script_url: "https://www.tradingview.com/script/VBtAxOUz-Support-Resistance-Zones-sourcey/"
 date: 2026-07-31
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Support_Resistance_Zones review: tested settings, entry/exit logic, pros & cons. A solid 4/5 zone indicator for trend traders."
 grounding: "none (no source found)"
 ---
-# Support Resistance Zones Review
 There are roughly 47,000 support/resistance indicators on TradingView, and most of them are just moving averages dressed up with a fancy histogram. Support_Resistance_Zones is not one of those — but it isn't quite the revolutionary tool either.
 
 **What it actually does**

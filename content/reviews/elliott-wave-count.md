@@ -19,7 +19,6 @@ rating: 4
 description: "A solid Elliott Wave auto-labeler for TradingView. Handles zigzags, flats, and extensions with decent accuracy. Not perfect, but saves hours of manual counting."
 grounding: "none (no source found)"
 ---
-# Elliott Wave Count Review
 Manual Elliott Wave counting is tedious, and it is easy to second-guess your own counts. Automated wave counters have a poor reputation—many simply label every minor swing as a wave 3. Elliott_Wave_Count is an attempt to do better, and it is worth understanding what it does, where it helps, and where it falls short.
 
 ## What This Indicator Actually Does

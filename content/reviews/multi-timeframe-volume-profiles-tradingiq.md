@@ -1,5 +1,5 @@
 ---
-title: "Multi Timeframe Volume Profiles Tradingiq Review — Volume Indicator"
+title: "Multi Timeframe Volume Profiles Tradingiq Review — Volume"
 tv_script_url: "https://www.tradingview.com/script/qnX9nxw0-Multi-Timeframe-Volume-Profiles-TradingIQ-Trading-IQ/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Multi Timeframe Volume Profiles TradingIQ review: aggregate volume profiles across 3 timeframes. Honest pros, cons, best settings, and how to trade with it."
 grounding: "none (no source found)"
 ---
-# Multi Timeframe Volume Profiles Tradingiq Review
 If you've ever stared at a single-timeframe volume profile and wondered whether a high-volume node is meaningful or just an artifact of a recent session, this indicator is aimed at that question. **Multi Timeframe Volume Profiles TradingIQ** stacks volume data from several timeframes onto one chart so the clustering across short, medium, and long-term activity can be viewed together.
 
 ## What This Indicator Actually Does

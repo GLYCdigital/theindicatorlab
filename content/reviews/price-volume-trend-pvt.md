@@ -19,7 +19,6 @@ rating: 4
 description: "Price_Volume_Trend_Pvt review: Settings, strategy, and how to trade PVT divergences and trend shifts. Honest pros, cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# Price Volume Trend Pvt Review
 Most volume-based indicators fall into one of two camps: lagging, or unreliable. The Price_Volume_Trend_Pvt indicator on TradingView is neither. It's a faithful implementation of the classic PVT (Price Volume Trend) oscillator that's been around since the 1970s, and that's precisely what makes it worth a look.
 
 If you haven't used PVT before, here's the core idea: it accumulates volume on up days and subtracts it on down days, weighted by the percentage price change. The result is a single line showing whether money is flowing in or out of an asset over time. It's like OBV's smarter cousin — it doesn't treat every tick of volume equally, so it reacts to big moves proportionally.

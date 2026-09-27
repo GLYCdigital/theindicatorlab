@@ -19,7 +19,6 @@ rating: 4
 description: "Liquidity_Void_Detector review: How to spot unfilled imbalances, best settings, and a practical strategy for trend continuation trades."
 grounding: "none (no source found)"
 ---
-# Liquidity Void Detector Review
 **What it actually does**
 
 Most "liquidity" indicators are repackaged volume profiles or half-baked order flow theories. This one is different. It identifies price ranges that were skipped over — voids where price moved too fast to leave any meaningful trading activity behind. Think of it as a visual map of inefficiency. When price later returns to these zones, the idea is that it treats them as magnets, either filling them completely or bouncing off them with conviction.

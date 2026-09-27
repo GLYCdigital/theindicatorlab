@@ -19,7 +19,6 @@ rating: 4
 description: "Hands-on Volume_Weighted_Momentum review: settings, pros/cons, and entry logic. See if this trend indicator deserves a spot on your chart."
 grounding: "none (no source found)"
 ---
-# Volume Weighted Momentum Review
 Momentum oscillators that claim to "filter out noise" by adding volume are common, and many are essentially a MACD with extra steps. Volume_Weighted_Momentum is a momentum oscillator that factors volume into both signal generation and confirmation, which changes the character of its signals in ways a standard momentum tool does not.
 
 ## What It Does

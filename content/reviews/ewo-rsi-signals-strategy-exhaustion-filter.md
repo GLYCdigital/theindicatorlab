@@ -1,5 +1,5 @@
 ---
-title: "Ewo RSI Signals Strategy Exhaustion Filter Review — Momentum Indicator"
+title: "Ewo RSI Signals Strategy Exhaustion Filter Review — Momentum"
 date: 2026-07-16
 draft: false
 type: reviews

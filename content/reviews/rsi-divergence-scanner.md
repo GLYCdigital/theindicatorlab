@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Rsi_Divergence_Scanner review: tested settings, entry/exit logic, pros/cons, and whether this free divergence scanner is worth adding to your TradingView toolkit."
 grounding: "none (no source found)"
 ---
-# RSI Divergence Scanner Review
 Most divergence scanners sit at one of two extremes: too noisy to read, or too conservative to be useful. The Rsi_Divergence_Scanner lands somewhere in the middle. It isn't perfect, but it does what it promises without burying the chart in false alerts.
 
 **What It Actually Does**

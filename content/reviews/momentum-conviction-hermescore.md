@@ -1,5 +1,5 @@
 ---
-title: "Momentum Conviction Hermescore Review — Market Structure Indicator"
+title: "Momentum Conviction Hermescore Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/u0tKPpfk-Momentum-Conviction-HermesCore/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Momentum_Conviction_Hermescore review: combines momentum strength with conviction scoring. Best settings, entry/exit strategies, and who should use it."
 grounding: "none (no source found)"
 ---
-# Momentum Conviction Hermescore Review
 **Momentum_Conviction_Hermescore** is a momentum indicator that layers a conviction score on top of raw momentum, and it earns its complexity if you understand what each component is doing. Here's an honest breakdown.
 
 ## What This Indicator Actually Does

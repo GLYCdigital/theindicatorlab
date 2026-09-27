@@ -19,7 +19,6 @@ rating: 4
 description: "Rsi_Mtf review: multi-timeframe RSI with trend filters. Tested settings, entry/exit logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# RSI MTF Review
 When "RSI" and "MTF" appear in the same indicator name, the reasonable expectation is another wrapper that plots the same oscillator on several timeframes and calls it done. Rsi_Mtf is aimed at something different: a multi-timeframe trend filter built around RSI divergence and momentum shifts, intended to give a cleaner read on where price is heading rather than where it has already bounced.
 
 ## What Rsi_Mtf Actually Does

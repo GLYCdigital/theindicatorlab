@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/yiBe8gPR-Adaptive-Trend-Pulse
 sources: ["https://www.tradingview.com/script/yiBe8gPR-Adaptive-Trend-Pulse-Pro-JPT/"]
 grounding: "none (no source found)"
 ---
-# Adaptive Trend Pulse Jpt Review
 Adaptive trend indicators are a crowded category, and many amount to little more than a moving average with a new name. Adaptive_Trend_Pulse_Jpt is worth examining on its own terms: it adjusts its sensitivity according to market volatility, which is the behavior that separates it from static trend tools.
 
 **What it actually does**

@@ -19,7 +19,6 @@ rating: 4
 description: "Automatically spots hidden and regular divergences on the Stochastic oscillator. Saves hours of manual charting. Best with 14,3,3 settings on 1H-4H."
 grounding: "none (no source found)"
 ---
-# Stochastic Divergence Review
 Divergence setups are a staple of oscillator-based trading, and the tedious part has always been the manual scanning—matching swing highs and lows on price against the corresponding swings on the Stochastic. The Stochastic_Divergence indicator automates that identification step, drawing hidden and regular divergences directly on the chart.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Renko Pulseflow Elite By Sam George Adaptive Trade Map Review — Volume Indicator"
+title: "Renko Pulseflow Elite By Sam George Adaptive Trade Map Review"
 date: 2026-07-16
 draft: false
 type: reviews

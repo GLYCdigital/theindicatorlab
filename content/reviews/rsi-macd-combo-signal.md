@@ -18,7 +18,6 @@ rating: 4
 description: "RSI MACD Combo Signal combines two classic oscillators into a single trend-following tool. Our review tests the settings, strategy, and whether it beats using them separately."
 grounding: "none (no source found)"
 ---
-# RSI MACD Combo Signal Review
 Most combo indicators are a mess. They throw five different tools on one chart, flash arrows everywhere, and leave you more confused than when you started. The *RSI MACD Combo Signal* avoids that trap by pairing two of the most widely used oscillators—RSI and MACD—into a single signal line. No clutter, no nonsense.
 
 ## What This Indicator Does (No Fluff)

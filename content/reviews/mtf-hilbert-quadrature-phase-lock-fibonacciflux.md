@@ -1,5 +1,5 @@
 ---
-title: "MTF Hilbert Quadrature Phase Lock Fibonacciflux Review — Momentum Indicator"
+title: "MTF Hilbert Quadrature Phase Lock Fibonacciflux Review"
 date: 2026-08-31
 draft: false
 type: reviews
@@ -19,7 +19,7 @@ description: "Honest Mtf_Hilbert_Quadrature_Phase_Lock_Fibonacciflux review: set
 tv_script_url: "https://www.tradingview.com/script/LnE2tzl4-MTF-Hilbert-Quadrature-Phase-Lock-FibonacciFlux/"
 sources: ["https://www.tradingview.com/script/LnE2tzl4-MTF-Hilbert-Quadrature-Phase-Lock-FibonacciFlux/"]
 ---
-# Get started — An Honest Look at a Phase-Locking Experiment
+## Get started — An Honest Look at a Phase-Locking Experiment
 
 Let's be clear about what this indicator actually is before anything else. Despite the name, this is not a trading system, not a signal service, and by its own documentation not a claim of profitability. It's an experiment: a test of whether four timeframes' cycles line up, and the answer the author reports is that they do not — and, more interestingly, that the statistic used could not have detected the structure that is actually there.
 

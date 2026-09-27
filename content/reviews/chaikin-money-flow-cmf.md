@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Chaikin_Money_Flow_Cmf review: tested settings, entry/exit strategy, pros/cons, and who should use this TradingView trend indicator."
 grounding: "none (no source found)"
 ---
-# Chaikin Money Flow CMF Review
 The Chaikin Money Flow isn't new — Marc Chaikin designed it decades ago. This TradingView implementation of CMF is clean and does what it promises: it measures buying and selling pressure over a set period. It's a volume-weighted oscillator that tells you whether money is flowing into or out of an asset.
 
 Here's what you're getting. The indicator plots a single line that oscillates around zero. Positive values mean accumulation (buyers are in control), negative values mean distribution (sellers are winning). The default lookback is the classic 20 periods, and the oscillator is typically read alongside price.

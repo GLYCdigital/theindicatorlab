@@ -1,5 +1,5 @@
 ---
-title: "MACD Rewired Probalist Essentials Review — Momentum Indicator"
+title: "MACD Rewired Probalist Essentials Review — Momentum"
 tv_script_url: "https://www.tradingview.com/script/xmkOkCxN-MACD-Rewired-Probalist-Essentials-Probalist/"
 date: 2026-07-16
 draft: false

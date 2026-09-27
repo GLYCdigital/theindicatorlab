@@ -18,7 +18,6 @@ rating: 4
 description: "Price_Rate_Of_Change_Proc adds percentage-based ROC with signal smoothing. Tested settings, entry logic, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Price Rate Of Change Proc Review
 Price_Rate_Of_Change_Proc is a percentage-based Rate of Change indicator that adds smoothing and cleaner presentation to the stock TradingView version. It isn't a trend predictor, just a more readable momentum tool.
 
 ## What It Really Does

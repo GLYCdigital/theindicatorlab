@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Supertrend_Rsi_Combo review: combines trend direction with RSI momentum to filter false signals. Tested settings, entry logic, pros & cons."
 grounding: "none (no source found)"
 ---
-# Supertrend RSI Combo Review
 "Combo" indicators usually promise to solve every problem with your strategy and deliver two existing tools stacked together with a paint job. The Supertrend_Rsi_Combo is exactly that — a Supertrend with an RSI-driven color layer — but the execution is clean enough to be worth a look.
 
 Here's what it does: it plots the classic Supertrend ATR bands, then colors the trendline based on RSI momentum. The line turns green when RSI is above your threshold and price is above the band, and red when RSI is weak and price is below. That's the whole feature set. No arrows, no signals, no alerts baked in. The value comes from how you read the color shifts.

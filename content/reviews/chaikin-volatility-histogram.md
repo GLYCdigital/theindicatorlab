@@ -9,7 +9,7 @@ rating: 4
 description: "** Chaikin Volatility Histogram review: settings, strategy, and how to use it for spotting volatility breakouts and reversals. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Chaikin_Volatility_Histogram Review: Settings, Strategy & How to Use It
+## Chaikin_Volatility_Histogram Review: Settings, Strategy & How to Use It
 
 The **Chaikin_Volatility_Histogram** is a histogram-based take on Marc Chaikin's original Volatility indicator. If the standard line version reads as too noisy, the histogram format is intended to present the same core idea more cleanly. This review covers what the indicator does, how its settings are structured, and where it fits in a trading workflow.
 

@@ -19,7 +19,6 @@ rating: 4
 description: "Smt_Divergence review: A practical look at Smart Money Technique divergence signals, best settings, and real trading strategies for trend traders."
 grounding: "none (no source found)"
 ---
-# Smt Divergence Review
 "SMT Divergence" is a term that gets used loosely in trading circles. The concept comes from Smart Money Concepts (SMC) — the idea that price can diverge from an index or correlated asset, signaling that institutional flow may be positioned against the current trend. This TradingView indicator packages that concept into something chartable, rather than purely theoretical.
 
 Here's what it does: it scans for divergence between the asset on your chart and a reference symbol you define — typically an index like the S&P 500, Nasdaq, or DXY. When price makes a higher high but the reference makes a lower high, you get a bearish SMT signal. The reverse gives a bullish one. The indicator plots these directly on your chart with labels, so you don't need to manually compare two windows side by side.

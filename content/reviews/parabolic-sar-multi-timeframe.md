@@ -19,7 +19,6 @@ rating: 4
 description: "Parabolic_Sar_Multi_Timeframe review: tested settings, entry/exit logic, pros & cons. Honest verdict on whether this multi-TF SAR tool is worth using."
 grounding: "none (no source found)"
 ---
-# Parabolic Sar Multi Timeframe Review
 Cutting to the chase: this is the Parabolic SAR, plotted across multiple timeframes at once. No AI, no hidden volume wizardry—just a cleaner, more practical take on a classic trend-following tool.
 
 **What it actually does:**

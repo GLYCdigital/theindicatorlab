@@ -19,7 +19,6 @@ rating: 4
 description: "Jurik Moving Average JMA review: tested settings, entry/exit strategy, pros and cons. Is this lag-reducing trend filter worth adding?"
 grounding: "none (no source found)"
 ---
-# Jurik Moving Average Jma Review
 The Jurik Moving Average (JMA) is one of those indicators that sounds too good to be true on paper: a moving average that cuts lag dramatically while staying smooth. That pitch deserves scrutiny. JMA is not magic, but it is a meaningfully different construction from the standard moving averages most traders keep on their charts.
 
 ## What This Indicator Actually Does

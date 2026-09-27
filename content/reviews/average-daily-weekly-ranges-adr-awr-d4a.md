@@ -1,5 +1,5 @@
 ---
-title: "Average Daily Weekly Ranges Adr Awr D4a Review — Trend Indicator"
+title: "Average Daily Weekly Ranges Adr Awr D4a Review — Trend"
 date: 2026-08-22
 draft: false
 type: reviews

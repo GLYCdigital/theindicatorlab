@@ -19,7 +19,6 @@ rating: 4
 description: "Combines Bill Williams’ fractals with a momentum oscillator to spot exhaustion moves. Best for trend-following entries on 1H-4H, but noisy in ranging markets. 4/5."
 grounding: "none (no source found)"
 ---
-# Fractal Chaos Oscillator Review
 The **Fractal_Chaos_Oscillator** is not a standard oscillator. It combines Bill Williams' fractal logic with a momentum-based signal line, and that combination is what defines both its strengths and its limits.
 
 ## What This Indicator Actually Does

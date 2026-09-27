@@ -19,7 +19,7 @@ rating: 4
 description: "Multi-timeframe fusion of volume, momentum, and volatility. Decent for catching trend shifts, but not a holy grail. See settings and use cases."
 grounding: "none (no source found)"
 ---
-# Rajiv Alpha Fusion Review: Settings, Strategy & How to Use It
+## Rajiv Alpha Fusion Review: Settings, Strategy & How to Use It
 
 Rajiv Alpha Fusion isn't trying to reinvent the wheel. It's a multi-timeframe fusion indicator that blends volume, momentum, and volatility into a single pane. Here's a breakdown of what it does and how to approach it.
 

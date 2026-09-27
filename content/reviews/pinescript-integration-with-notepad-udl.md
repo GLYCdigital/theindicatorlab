@@ -1,5 +1,5 @@
 ---
-title: "Pinescript Integration With Notepad Udl Review — Trend Indicator"
+title: "Pinescript Integration With Notepad Udl Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/w5tYwibf-PineScript-integration-with-Notepad-XPEHOPE3/"
 date: 2026-07-16
 draft: false

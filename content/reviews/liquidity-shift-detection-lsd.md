@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Shift Detection Lsd Review — Market Structure Indicator"
+title: "Liquidity Shift Detection Lsd Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/gdVgCcCT-Liquidity-Shift-Detection-LSD-Zeiierman/"
 date: 2026-07-16
 draft: false

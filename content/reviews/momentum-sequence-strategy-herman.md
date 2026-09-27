@@ -1,5 +1,5 @@
 ---
-title: "Momentum Sequence Strategy Herman Review — Momentum Indicator"
+title: "Momentum Sequence Strategy Herman Review — Momentum"
 date: 2026-09-09
 draft: false
 type: reviews

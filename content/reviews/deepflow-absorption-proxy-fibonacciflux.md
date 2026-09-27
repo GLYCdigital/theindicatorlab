@@ -1,5 +1,5 @@
 ---
-title: "Deepflow Absorption Proxy Fibonacciflux Review — Volume Indicator"
+title: "Deepflow Absorption Proxy Fibonacciflux Review — Volume"
 date: 2026-08-28
 draft: false
 type: reviews

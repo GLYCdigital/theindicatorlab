@@ -1,5 +1,5 @@
 ---
-title: "Coil Breaker RSI Range Compression Review — Market Structure Indicator"
+title: "Coil Breaker RSI Range Compression Review — Market Structure"
 date: 2026-08-30
 draft: false
 type: reviews

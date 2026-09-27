@@ -1,5 +1,5 @@
 ---
-title: "Rolling Z Score Reversion Map Pineify Review — Momentum Indicator"
+title: "Rolling Z Score Reversion Map Pineify Review — Momentum"
 date: 2026-09-15
 draft: false
 type: reviews

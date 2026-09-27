@@ -19,7 +19,7 @@ description: "Honest Std_Time review: tested settings, entry/exit logic, pros & 
 tv_script_url: "https://www.tradingview.com/script/ezlWRUv8-std-time/"
 sources: ["https://www.tradingview.com/script/ezlWRUv8-std-time/", "https://github.com/hikari112/std_time/wiki"]
 ---
-# Std_Time Review: What This Library Actually Does
+## Std_Time Review: What This Library Actually Does
 
 Let's cut through the noise. Std_Time is not a trend indicator, and anyone reviewing it as one has misread the listing. It is a Pine Script v6 **library** — infrastructure for time, not a signal generator. The description is blunt about it: "A calendar, not a bag of helpers."
 

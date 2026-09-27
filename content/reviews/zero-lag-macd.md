@@ -13,7 +13,7 @@ grounding: "none (no source found)"
 
 ---
 
-# Zero Lag MACD Review: Settings, Strategy & How to Use It
+## Zero Lag MACD Review: Settings, Strategy & How to Use It
 
 Lag is the standard complaint about MACD. By the time the histogram flips, much of the move has already happened. The **Zero Lag MACD** is a variant built to address exactly that complaint — the name promises faster signals without the noise. The question is whether the construction delivers a meaningful difference, and where the trade-offs sit.
 

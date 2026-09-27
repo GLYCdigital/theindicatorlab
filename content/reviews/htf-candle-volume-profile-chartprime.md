@@ -1,5 +1,5 @@
 ---
-title: "HTF Candle Volume Profile Chartprime Review — Volume Indicator"
+title: "HTF Candle Volume Profile Chartprime Review — Volume"
 tv_script_url: "https://www.tradingview.com/script/yMqxwltF-HTF-Candle-Volume-Profile-ChartPrime/"
 date: 2026-07-16
 draft: false

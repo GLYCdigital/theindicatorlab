@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Elliott_Wave indicator review: automatic wave labeling, Fibonacci targets, and how to trade with it. Pros, cons, and better alternatives."
 grounding: "none (no source found)"
 ---
-# Elliott Wave Review
 Manually labeling Elliott Waves is a known pain point: the process is subjective, slow, and often produces a tangle of lines that don't match your read of the market. The **Elliott_Wave** indicator attempts to automate that labeling directly on the chart.
 
 ## What This Indicator Actually Does

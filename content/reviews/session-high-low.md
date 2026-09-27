@@ -19,7 +19,6 @@ rating: 4
 description: "Session_High_Low review: tested settings, entry/exit logic, and honest pros/cons. See if this simple session range tool fits your trading style."
 grounding: "none (no source found)"
 ---
-# Session High Low Review
 Session indicators tend to promise a lot and deliver a tangle of confusing lines. Session_High_Low isn't that. It's exactly what the name says — and that's both its strength and its limitation. Here's what you're actually getting before you hit "Add to Chart."
 
 **What This Indicator Actually Does**

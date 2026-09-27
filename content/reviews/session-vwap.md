@@ -19,7 +19,6 @@ rating: 4
 description: "Session_Vwap review: How session-based VWAP anchors improve trend entries. Tested settings, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Session VWAP Review
 Most VWAP indicators on TradingView are the same formula wrapped in different colors. Session_Vwap attempts something different — it anchors VWAP to a chosen session rather than just the daily open. That single change is what separates it from the default TradingView VWAP for intraday trend work.
 
 **What it actually does**

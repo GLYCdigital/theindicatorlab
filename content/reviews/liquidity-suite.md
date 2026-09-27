@@ -19,7 +19,6 @@ description: "Tested Liquidity_Suite on TradingView: honest review of its liquid
 tv_script_url: "https://www.tradingview.com/script/2cn0x1mX-Liquidity-Suite/"
 sources: ["https://www.tradingview.com/script/2cn0x1mX-Liquidity-Suite/"]
 ---
-# Liquidity Suite Review
 The name "Liquidity Suite" promises a lot. What it actually delivers is a market-structure and liquidity-mapping study that consolidates the standard liquidity references into one workspace and tries to keep the chart readable instead of drowning it in lines. Whether that's useful depends entirely on whether you already trade liquidity concepts. Here's the breakdown.
 
 ## What It Actually Does

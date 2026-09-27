@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Deviation Channels RSI Trigger Review — Momentum Indicator"
+title: "Dynamic Deviation Channels RSI Trigger Review — Momentum"
 date: 2026-09-06
 draft: false
 type: reviews

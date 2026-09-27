@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Demarker_Divergence review: tested on real charts. Covers settings, divergence signals, and how to avoid false ones. No fluff."
 grounding: "none (no source found)"
 ---
-# Demarker Divergence Review
 Divergence indicators have a reputation problem: they flash signals constantly and leave you guessing which ones matter. **Demarker_Divergence** is worth a closer look, but it comes with caveats that matter as much as its strengths.
 
 Below is a breakdown of what the indicator does, where it falls short, and how to think about using it.

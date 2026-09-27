@@ -19,7 +19,6 @@ rating: 4
 description: "Regression_Trend_Miesoncharts review: tested settings, entry/exit logic, pros & cons. A solid 4-star trend indicator for swing traders."
 grounding: "none (no source found)"
 ---
-# Regression Trend Miesoncharts Review
 "Revolutionary" trend indicators are a dime a dozen, so a new one landing on the watchlist doesn't inspire much confidence upfront. Regression_Trend_Miesoncharts sounds like another repackaged moving average crossover. It isn't that — but it isn't magic either. Here's the honest breakdown.
 
 **What it actually does**

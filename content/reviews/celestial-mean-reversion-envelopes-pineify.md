@@ -1,5 +1,5 @@
 ---
-title: "Celestial Mean Reversion Envelopes Pineify Review — Momentum Indicator"
+title: "Celestial Mean Reversion Envelopes Pineify Review — Momentum"
 tv_script_url: "https://www.tradingview.com/script/PylV78eC-Celestial-Mean-Reversion-Envelopes-Pineify/"
 date: 2026-07-16
 draft: false

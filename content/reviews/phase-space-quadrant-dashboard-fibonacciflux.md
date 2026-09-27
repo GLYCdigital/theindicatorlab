@@ -1,5 +1,5 @@
 ---
-title: "Phase Space Quadrant Dashboard Fibonacciflux Review — Momentum Indicator"
+title: "Phase Space Quadrant Dashboard Fibonacciflux Review"
 date: 2026-08-29
 draft: false
 type: reviews

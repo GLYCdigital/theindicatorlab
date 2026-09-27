@@ -1,5 +1,5 @@
 ---
-title: "FVG Displacement Fill Scoring Slatinatrades Review — Market Structure Indicator"
+title: "FVG Displacement Fill Scoring Slatinatrades Review"
 date: 2026-08-09
 draft: false
 type: reviews

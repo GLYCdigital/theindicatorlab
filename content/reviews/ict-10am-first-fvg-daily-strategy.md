@@ -1,5 +1,5 @@
 ---
-title: "ICT 10am First FVG Daily Strategy Review — Market Structure Indicator"
+title: "ICT 10am First FVG Daily Strategy Review — Market Structure"
 date: 2026-09-24
 draft: false
 type: reviews

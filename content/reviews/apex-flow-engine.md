@@ -18,7 +18,6 @@ rating: 4
 description: "Apex_Flow_Engine is a trend strength indicator that filters noise with a dual-line system. Read our settings, strategy, and honest verdict."
 grounding: "none (no source found)"
 ---
-# Apex Flow Engine Review
 Too many "revolutionary" trend indicators turn out to be repackaged moving averages with extra paint. Apex_Flow_Engine invites that suspicion immediately — but on inspection it is not simply another MA clone, even if it is not the holy grail its name suggests.
 
 **What it actually does:** Apex_Flow_Engine measures trend momentum using a blend of volume-weighted price action and volatility normalization. The output is two lines — a fast "Flow" line and a slow "Confirm" line — plus a histogram that shifts color based on the gap between them. Unlike most trend indicators that lag heavily, this one is built to react to shifts in order flow, which can show up as a lead before traditional moving average crossovers.

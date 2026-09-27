@@ -18,7 +18,6 @@ rating: 4
 description: "Rsi_With_Signals review: tested settings, buy/sell signals, and how to combine this RSI trend indicator with your strategy for reliable entries."
 grounding: "none (no source found)"
 ---
-# RSI With Signals Review
 RSI is everywhere on TradingView, and most "RSI with signals" indicators are repackaged oscillator crossings with extra noise. This one is worth a look because it frames RSI through a trend lens rather than pure overbought/oversold territory.
 
 **What It Does Differently**

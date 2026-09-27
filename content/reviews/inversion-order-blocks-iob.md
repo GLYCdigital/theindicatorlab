@@ -1,5 +1,5 @@
 ---
-title: "Inversion Order Blocks Iob Review — Market Structure Indicator"
+title: "Inversion Order Blocks Iob Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/Jc18f95u-Inversion-Order-Blocks-iOB-Zeiierman/"
 date: 2026-08-10
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Inversion_Order_Blocks_Iob review: how to spot trend reversals early with this TradingView indicator, plus tested settings and entry rules."
 grounding: "none (no source found)"
 ---
-# Inversion Order Blocks Iob Review
 IOB is not another repainted oscillator or a lagging moving average dressed up with fancy colors. It's a structural tool built around a specific idea: identifying when a traditional order block fails and flips into a reversal zone.
 
 **What it does differently**

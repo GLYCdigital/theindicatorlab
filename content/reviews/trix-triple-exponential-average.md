@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Trix_Triple_Exponential_Average review: a smoothed momentum oscillator for trend strength and divergence. Settings, strategy, pros/cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Trix Triple Exponential Average Review
 The Trix_Triple_Exponential_Average isn't the flashy new kid on the block. It's a refined version of a classic—the Triple Exponential Average (TRIX)—and it does exactly what it says: measure the rate of change of a triple-smoothed moving average. If you want a clean, lag-reduced momentum oscillator that filters out a lot of market noise, this is a solid tool.
 
 ## What This Indicator Actually Does

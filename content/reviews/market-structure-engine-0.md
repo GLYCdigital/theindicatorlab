@@ -1,5 +1,5 @@
 ---
-title: "Market Structure Engine 0 Review — Market Structure Indicator"
+title: "Market Structure Engine 0 Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-LeviathanCapital/"
 date: 2026-07-22
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Market_Structure_Engine_0: a trend-following tool that auto-draws swing highs/lows and momentum shifts. Settings, strategy, pros/cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Market Structure Engine 0 Review
 Market_Structure_Engine_0 (MSE0) is a trend-following indicator that identifies swing highs, swing lows, and momentum shifts in price. It takes market structure—the thing most traders mark manually with trendlines or horizontal levels—and turns it into a systematic, real-time readout. If you've ever stared at a chart wondering whether a new high is meaningful or just noise, this indicator is built to answer that question.
 
 ## Key Features

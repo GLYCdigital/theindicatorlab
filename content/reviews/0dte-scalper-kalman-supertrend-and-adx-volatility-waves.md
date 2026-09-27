@@ -1,5 +1,5 @@
 ---
-title: "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review — Volatility Indicator"
+title: "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review"
 date: 2026-08-08
 draft: false
 type: reviews

@@ -18,7 +18,6 @@ rating: 4
 description: "Ppo_With_Signals adds clean buy/sell arrows to the classic PPO oscillator. Tested settings, entry logic, and honest pros/cons in this review."
 grounding: "none (no source found)"
 ---
-# PPO With Signals Review
 The PPO (Percentage Price Oscillator) is the MACD's less popular cousin — same signal lines, same histogram, but expressed as a percentage rather than an absolute price difference. Ppo_With_Signals doesn't reinvent that wheel. What it adds is something the standard TradingView PPO lacks: buy and sell arrows plotted directly on the price chart.
 
 ## What this indicator actually does

@@ -1,5 +1,5 @@
 ---
-title: "SMC Institutional White Theme Review — Market Structure Indicator"
+title: "SMC Institutional White Theme Review — Market Structure"
 date: 2026-08-18
 draft: false
 type: reviews

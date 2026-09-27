@@ -1,5 +1,5 @@
 ---
-title: "Williams Alligator Fractals Combo Review — Momentum Indicator"
+title: "Williams Alligator Fractals Combo Review — Momentum"
 tv_script_url: "https://www.tradingview.com/script/1npqNTlB-Williams-Alligator-FloatingApexCharts/"
 date: 2026-08-03
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Williams_Alligator_Fractals_Combo review: tested settings, entry/exit logic, pros & cons. Does this trend combo beat the classic Alligator? Find out."
 grounding: "none (no source found)"
 ---
-# Williams Alligator Fractals Combo Review
 This indicator is a repackaging of Bill Williams' classic concepts rather than a departure from them. It combines three core elements into a single script, and the value it adds depends entirely on whether you want your fractal signals filtered through Alligator structure.
 
 ## What This Indicator Actually Does

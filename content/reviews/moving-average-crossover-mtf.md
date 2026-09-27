@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Moving_Average_Crossover_Mtf review: multi-timeframe MA crossover signals, best settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Moving Average Crossover MTF Review
 Moving_Average_Crossover_Mtf is a multi-timeframe take on the oldest trick in technical analysis. Instead of showing a single MA crossover on the chart in front of you, it pulls trend direction from multiple higher timeframes and plots them as colored signals or background states. The core idea is straightforward, and the value depends entirely on how you use it.
 
 ## The Real Function

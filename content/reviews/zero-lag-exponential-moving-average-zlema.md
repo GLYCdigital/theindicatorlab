@@ -1,5 +1,5 @@
 ---
-title: "Zero Lag Exponential Moving Average ZLEMA Review — Trend Indicator"
+title: "Zero Lag Exponential Moving Average ZLEMA Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/hcS0as7m-Zero-Lag-Exponential-Moving-Average-ZLEMA-HPotter/"
 date: 2026-08-12
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Zero_Lag_Exponential_Moving_Average_Zlema review — tested settings, strategy tips, pros & cons. A solid trend filter that cuts EMA lag without the noise."
 grounding: "none (no source found)"
 ---
-# Zero Lag Exponential Moving Average ZLEMA Review
 Most "zero lag" moving averages are marketing fluff wrapped around a basic smoothing calculation. The Zero_Lag_Exponential_Moving_Average_Zlema isn't that. It's a legitimate attempt to address the EMA's biggest weakness — lag — and it largely succeeds.
 
 **What It Actually Does**

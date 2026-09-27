@@ -19,7 +19,6 @@ rating: 4
 description: "Volume_Divergence detects hidden and regular divergences between price and volume. Tested on MACD chart. 4/5 stars. Settings and strategy inside."
 grounding: "none (no source found)"
 ---
-# Volume Divergence Review
 Most divergence indicators are either too noisy to trust or so laggy they print signals after the move is over. Volume_Divergence takes a narrower approach: it compares price action to volume and plots divergence signals when the two disagree. Whether that narrowness is a feature or a limitation depends on how you trade.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Qqe Quantitative Qualitative Estimation Review — Trend Indicator"
+title: "Qqe Quantitative Qualitative Estimation Review — Trend"
 date: 2026-07-16
 draft: false
 type: reviews

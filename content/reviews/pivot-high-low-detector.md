@@ -1,5 +1,5 @@
 ---
-title: "Pivot High Low Detector Review — Support & Resistance Indicator"
+title: "Pivot High Low Detector Review — Support & Resistance"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Pivot_High_Low_Detector review. Tested pivot detection, best settings, entry rules, and why it's a solid 4-star tool for swing traders."
 grounding: "none (no source found)"
 ---
-# Pivot High Low Detector Review
 Spotting swing highs and lows by hand on a busy chart is tedious and inconsistent. The *Pivot_High_Low_Detector* is built to automate that job. Here's an assessment of what it does and where it fits.
 
 ## What This Indicator Actually Does

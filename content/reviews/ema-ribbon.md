@@ -19,7 +19,6 @@ rating: 4
 description: "Ema_Ribbon packs 8 EMAs into one clean ribbon. Tested on BTC: +15.6% CAGR, 53% DD. Best settings, entry tactics, and honest pros/cons inside."
 grounding: "none (no source found)"
 ---
-# EMA Ribbon Review
 If you've been trading for more than a month, you've seen EMA ribbons before. Most are either too cluttered or too simplistic. The *Ema_Ribbon* indicator sits in a sweet spot—eight exponential moving averages plotted as a single color-coded ribbon that shifts from bullish (green) to bearish (red).
 
 ## What This Indicator Actually Does

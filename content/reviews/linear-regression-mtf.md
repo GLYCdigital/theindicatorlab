@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Linear_Regression_Mtf review: multi-timeframe trend filter with adjustable regression length. Settings, entry logic, pros/cons, and verdict."
 grounding: "none (no source found)"
 ---
-# Linear Regression MTF Review
 Most multi-timeframe indicators are just a MACD from a higher timeframe pasted onto your chart with a color change. Linear_Regression_Mtf does that, but the regression math underneath gives you something most MTF tools lack: a statistically meaningful trend line instead of a lagging average.
 
 ## What It Actually Does

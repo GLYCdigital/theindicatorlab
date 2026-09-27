@@ -1,5 +1,5 @@
 ---
-title: "The Oloid Owma Oloid Weighted Moving Average Review — Trend Indicator"
+title: "The Oloid Owma Oloid Weighted Moving Average Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/1AnDnjsz-The-Oloid-OWMA-Oloid-Weighted-Moving-Average-Sesilya/"
 date: 2026-08-11
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of The_Oloid_OWMA — a weighted moving average with unique curve smoothing. Tested settings, entry logic, pros/cons, and verdict."
 grounding: "none (no source found)"
 ---
-# The Oloid Owma Oloid Weighted Moving Average Review
 Most moving average variants on TradingView are repackaged EMA crosses with a fresh coat of paint. The_Oloid_OWMA is a different take on how price data gets weighted — built around an "oloid" geometry concept that sounds like marketing fluff until you see how it behaves on a choppy MACD histogram.
 
 ## What This Indicator Actually Does

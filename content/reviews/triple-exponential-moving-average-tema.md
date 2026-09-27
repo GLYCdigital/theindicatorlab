@@ -1,5 +1,5 @@
 ---
-title: "Triple Exponential Moving Average TEMA Review — Trend Indicator"
+title: "Triple Exponential Moving Average TEMA Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/PtNJYZZR-Triple-Exponential-Moving-Average-TEMA-mihakralj/"
 date: 2026-07-18
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Triple Exponential Moving Average (TEMA) reduces lag vs. standard EMAs. Tested on MACD chart: fastest trend signal, but whipsaws in choppy markets. Settings, strategy, and honest verdict."
 grounding: "none (no source found)"
 ---
-# Triple Exponential Moving Average TEMA Review
 If a standard EMA feels a step behind price action, TEMA is the indicator to examine. It is a modified moving average that applies triple exponential smoothing to reduce lag. The construction layers three EMAs and combines them, producing a line that tracks price more tightly than a single EMA of the same period.
 
 The trade-off is straightforward: less lag, more sensitivity. That sensitivity is the entire point of the indicator, and it is also the source of its main weakness.

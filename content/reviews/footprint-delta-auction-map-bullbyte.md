@@ -1,5 +1,5 @@
 ---
-title: "Footprint Delta Auction Map Bullbyte Review — Volume Indicator"
+title: "Footprint Delta Auction Map Bullbyte Review — Volume"
 date: 2026-08-30
 draft: false
 type: reviews

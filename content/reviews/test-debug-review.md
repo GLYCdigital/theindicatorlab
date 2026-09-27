@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Test Review Debug review: a solid trend-following tool that works best on MACD-based charts. Settings, strategy, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Test Debug Review Review
 **Test Review Debug** is a trend indicator that does exactly what its name suggests—no magic, no secret sauce. It's built for traders who want a clean, no-nonsense way to spot direction and filter out noise.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Gs Volcano RSI Liquidity Thermal Map Bit2billions Review — Market Structure Indicator"
+title: "Gs Volcano RSI Liquidity Thermal Map Bit2billions Review"
 date: 2026-07-16
 draft: false
 type: reviews

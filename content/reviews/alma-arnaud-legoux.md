@@ -18,7 +18,6 @@ rating: 4
 description: "ALMA (Arnaud Legoux Moving Average) review: settings, strategy, and real testing results. See how this noise-reducing moving average improves trend detection."
 grounding: "none (no source found)"
 ---
-# Alma Arnaud Legoux Review
 ALMA sits in the crowded field of moving averages alongside the SMA, EMA, WMA, and HMA. Its pitch is a cleaner, more responsive curve that filters noise without the whipsaw typical of an EMA. That's the theory—here's what the indicator does, how to configure it, and where it fits in a toolkit.
 
 ## What This Indicator Actually Does

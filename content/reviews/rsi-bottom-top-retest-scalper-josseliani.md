@@ -1,5 +1,5 @@
 ---
-title: "RSI Bottom Top Retest Scalper Josseliani Review — Momentum Indicator"
+title: "RSI Bottom Top Retest Scalper Josseliani Review — Momentum"
 date: 2026-08-28
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Rsi_Bottom_Top_Retest_Scalper_Josseliani review: tested settings, 
 tv_script_url: "https://www.tradingview.com/script/qvMFG6Ea-RSI-Bottom-Top-Retest-Scalper-josseliani/"
 sources: ["https://www.tradingview.com/script/qvMFG6Ea-RSI-Bottom-Top-Retest-Scalper-josseliani/", "https://www.ifta.org/assets/docs/Journal26_IFTA.pdf"]
 ---
-# RSI Bottom Top Retest Scalper Josseliani Review
 The name is clumsy, but the logic underneath it is more coherent than the branding suggests. This is a short-term reversal tool built around RSI extremes and a retest process, with price confirmation layered on top before any entry is marked. It is not a standalone system, and it is not a scalping button. Read it as an oscillator setup plus a price entry confirmation, and the design makes sense.
 
 ## What This Indicator Actually Does

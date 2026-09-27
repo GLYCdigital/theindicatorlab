@@ -19,7 +19,7 @@ rating: 3
 description: "Order Flow Imbalance tracks aggressive buying vs selling pressure. Decent for spotting reversals, but laggy and noisy on lower timeframes."
 grounding: "none (no source found)"
 ---
-# Order Flow Imbalance Review: A Confirmatory Volume Tool With Real Limits
+## Order Flow Imbalance Review: A Confirmatory Volume Tool With Real Limits
 
 Order Flow Imbalance (OFI) is one of those volume-based indicators that sounds better in theory than it behaves in practice. It isn't useless, but it isn't the game-changer some presentations make it out to be. The honest summary: a decent divergence tool for higher-timeframe swing traders, held back by its data source and its lag.
 

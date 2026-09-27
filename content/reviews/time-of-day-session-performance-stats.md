@@ -1,5 +1,5 @@
 ---
-title: "Time Of Day Session Performance Stats Review — Trend Indicator"
+title: "Time Of Day Session Performance Stats Review — Trend"
 date: 2026-08-19
 draft: false
 type: reviews

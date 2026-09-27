@@ -19,7 +19,6 @@ rating: 4
 description: "Hands-on Order_Block_Engine review: settings, entry/exit logic, pros/cons, and honest verdict on this trend-based order block indicator."
 grounding: "none (no source found)"
 ---
-# Order Block Engine Review
 Order block indicators are a crowded category, and many amount to little more than rectangles drawn over prior candles with a technical-sounding name. Order_Block_Engine is aimed at doing something more specific with the underlying data — filtering which zones are worth marking in the first place.
 
 **What it actually does**

@@ -18,7 +18,6 @@ rating: 4
 description: "Honest review of Credit_Stress_Composite: a market stress gauge that flags trend exhaustion. Best settings, entry/exit logic, pros, cons, and who it actually works for."
 grounding: "none (no source found)"
 ---
-# Credit Stress Composite Review
 Most "stress" indicators are repackaged volatility bands that look impressive on a chart but add little in the way of decision-making value. Credit_Stress_Composite is positioned differently, and the distinction is worth examining on its own terms.
 
 It does not measure volatility. It measures *credit stress* as expressed through price action — a sentiment gauge that flags when the market is panicking or complacent, and when that stress lines up with trend exhaustion. The output is a single line with a threshold, plus color-coded zones. Green indicates low stress — trend is healthy. Red indicates high stress — trend is likely to reverse or stall.

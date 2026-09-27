@@ -18,7 +18,6 @@ rating: 4
 description: "A clean, multi-timeframe MA ribbon that identifies trend direction and momentum shifts. Best for swing traders on H1–D1. 4/5."
 grounding: "none (no source found)"
 ---
-# Trinity Magic Ma Ribbon Review
 Most MA ribbons are either cluttered or laggy. Trinity_Magic_Ma_Ribbon aims for a middle ground: a clear visual read on trend structure without excessive noise.
 
 ## What This Indicator Actually Does

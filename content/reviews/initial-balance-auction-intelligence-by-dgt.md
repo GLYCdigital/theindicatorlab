@@ -1,5 +1,5 @@
 ---
-title: "Initial Balance Auction Intelligence By Dgt Review — Trend Indicator"
+title: "Initial Balance Auction Intelligence By Dgt Review — Trend"
 date: 2026-08-31
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Honest Initial_Balance_Auction_Intelligence_By_Dgt review. Tested 
 tv_script_url: "https://www.tradingview.com/script/ks2QGulb-Initial-Balance-Auction-Intelligence-by-DGT/"
 sources: ["https://www.tradingview.com/script/ks2QGulb-Initial-Balance-Auction-Intelligence-by-DGT/"]
 ---
-# Initial Balance Auction Intelligence By Dgt Review
 Initial_Balance_Auction_Intelligence_By_Dgt is an Auction Market Theory framework built around the Initial Balance (IB) — the range established during a selected opening session. Rather than treating the IB as static support or resistance, it tracks how price develops after the IB completes, using configurable post-IB auction windows to classify market states.
 
 ## What This Indicator Actually Does

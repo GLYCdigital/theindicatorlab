@@ -19,7 +19,7 @@ description: "Ema_Cloud_Phantomcipher review: an honest look at this EMA cloud t
 tv_script_url: "https://www.tradingview.com/script/C4qHyn8A-EMA-Cloud-PhantomCipher/"
 sources: ["https://www.tradingview.com/script/C4qHyn8A-EMA-Cloud-PhantomCipher/"]
 ---
-# EMA Cloud Review: A Three-EMA Trend Framework
+## EMA Cloud Review: A Three-EMA Trend Framework
 
 Most "cloud" indicators on TradingView are Ichimoku derivatives with a new name. EMA Cloud is not that. It's a straightforward trend tool built from three exponential moving averages: a fast EMA, a slow EMA, and a longer-term reference line. The filled band between the two shorter EMAs is the cloud, and its color reflects which of the two is on top. That's the entire mechanism.
 

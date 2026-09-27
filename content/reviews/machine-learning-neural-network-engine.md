@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Neural Network Engine Review — Trend Indicator"
+title: "Machine Learning Neural Network Engine Review — Trend"
 date: 2026-08-14
 draft: false
 type: reviews

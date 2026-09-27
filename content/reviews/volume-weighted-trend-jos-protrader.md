@@ -1,5 +1,5 @@
 ---
-title: "Volume Weighted Trend Jos Protrader Review — Volume Indicator"
+title: "Volume Weighted Trend Jos Protrader Review — Volume"
 date: 2026-07-16
 draft: false
 type: reviews

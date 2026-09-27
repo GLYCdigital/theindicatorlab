@@ -19,7 +19,6 @@ description: "Honest My_Custom_No_Trading_Shield review: trend filter that block
 tv_script_url: "https://www.tradingview.com/script/X3aUCCPw-My-Custom-No-Trading-Shield/"
 sources: ["https://www.tradingview.com/script/X3aUCCPw-My-Custom-No-Trading-Shield/"]
 ---
-# My Custom No Trading Shield Review
 The script's own description says it plainly: it blocks out Friday 4pm to Tuesday 11am so the author doesn't trade. That's the entire documented premise. It's a calendar-based blackout window, not a trend filter, momentum model, or signal engine — and any review that frames it as a market-analysis tool is describing something the source material doesn't support.
 
 **What It Actually Is**

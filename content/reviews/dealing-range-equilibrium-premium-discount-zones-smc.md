@@ -1,5 +1,5 @@
 ---
-title: "Dealing Range Equilibrium Premium Discount Zones SMC Review — Market Structure Indicator"
+title: "Dealing Range Equilibrium Premium Discount Zones SMC Review"
 tv_script_url: "https://www.tradingview.com/script/w2VZp1fR-Trader-039-s-Multiverse-Dealing-Range-Equilibrium-Original-Garvitgarg/"
 date: 2026-07-16
 draft: false

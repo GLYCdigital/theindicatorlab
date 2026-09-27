@@ -1,5 +1,5 @@
 ---
-title: "Cycle Counter With Phase And Next Low Projection Review — Trend Indicator"
+title: "Cycle Counter With Phase And Next Low Projection Review"
 date: 2026-08-30
 draft: false
 type: reviews

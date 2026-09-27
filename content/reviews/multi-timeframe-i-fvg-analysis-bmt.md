@@ -1,5 +1,5 @@
 ---
-title: "Multi Timeframe I FVG Analysis Bmt Review — Market Structure Indicator"
+title: "Multi Timeframe I FVG Analysis Bmt Review — Market Structure"
 date: 2026-09-17
 draft: false
 type: reviews

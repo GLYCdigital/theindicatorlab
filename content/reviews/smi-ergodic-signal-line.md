@@ -18,7 +18,6 @@ rating: 4
 description: "Smi_Ergodic_Signal_Line tested: oscillator-style trend momentum with smoothed signal crossovers. Settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Smi Ergodic Signal Line Review
 Let's cut through the name. The Smi_Ergodic_Signal_Line is not some mystical new invention — it's a momentum oscillator built on the Stochastic Momentum Index (SMI) with an additional smoothed signal line layered on top. If you've used the classic SMI by William Blau, you'll recognize the DNA immediately. What this version adds is a second, slower line that acts as a trigger, giving you crossover signals beyond what the raw SMI histogram alone provides.
 
 **What Actually Sets It Apart**

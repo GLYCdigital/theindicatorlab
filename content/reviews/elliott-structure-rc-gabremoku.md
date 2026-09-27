@@ -1,5 +1,5 @@
 ---
-title: "Elliott Structure Rc Gabremoku Review — Market Structure Indicator"
+title: "Elliott Structure Rc Gabremoku Review — Market Structure"
 date: 2026-07-16
 draft: false
 type: reviews

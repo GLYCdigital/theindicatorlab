@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Gmma indicator review: 4/5 stars. A multi-timeframe moving average ribbon that filters trends and spots reversals. Settings, backtest results, and real trade examples included."
 grounding: "none (no source found)"
 ---
-# Gmma Review
 Gmma stands for "Guppy Multiple Moving Average" — it plots a ribbon of 12 exponential moving averages (EMAs). Short-term EMAs represent fast traders; long-term EMAs represent slow traders. When the ribbon compresses and expands, you get trend signals.
 
 This isn't a magic bullet. It's a visual filter that helps you see when momentum shifts from short-term to long-term traders.

@@ -19,7 +19,6 @@ rating: 3
 description: "Volatility Stop review: a trend-trailing stop based on ATR. Decent for swing trades, but easily faked on low timeframe noise. Settings and strategy inside."
 grounding: "none (no source found)"
 ---
-# Volatility Stop Review
 The Volatility Stop is one of those tools that sounds great on paper—dynamic stops based on market volatility—but in practice, it tends to land closer to "nice to have" than game-changer. It creates a wavy line that hugs price action, flipping colors when momentum shifts. Here's a closer look at what it offers and where it falls short.
 
 ## What It Actually Does

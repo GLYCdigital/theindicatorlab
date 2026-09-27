@@ -18,7 +18,6 @@ rating: 4
 description: "Smoothed_Heikin_Ashi_Candles review: settings, trend signals, and honest pros/cons. See if this MACD-friendly twist on HA candles beats the original."
 grounding: "none (no source found)"
 ---
-# Smoothed Heikin Ashi Candles Review
 Heikin Ashi candles are a love-hate thing for most traders. They clean up noise but distort actual price. Smoothed_Heikin_Ashi_Candles tries to address that by adding an extra smoothing layer on top of the already-smoothed HA formula. Here's a breakdown of what it does and where it fits.
 
 ## What This Indicator Actually Does

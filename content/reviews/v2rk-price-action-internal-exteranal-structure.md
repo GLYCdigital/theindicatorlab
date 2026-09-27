@@ -1,5 +1,5 @@
 ---
-title: "V2rk Price Action Internal Exteranal Structure Review — Market Structure Indicator"
+title: "V2rk Price Action Internal Exteranal Structure Review"
 date: 2026-07-16
 draft: false
 type: reviews

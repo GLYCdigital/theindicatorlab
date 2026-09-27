@@ -1,5 +1,5 @@
 ---
-title: "Market Structure Scatter Dashboard Review — Market Structure Indicator"
+title: "Market Structure Scatter Dashboard Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/17J0iPWK-Market-Structure-Scatter-Dashboard-LuxAlgo/"
 date: 2026-08-08
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Market_Structure_Scatter_Dashboard review: how swing highs/lows, breakouts & multi-timeframe signals work. Tested settings, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Market Structure Scatter Dashboard Review
 Most "market structure" indicators on TradingView are repackaged zigzag lines with extra steps. The Market_Structure_Scatter_Dashboard takes a different approach: instead of drawing another line on your chart, it plots scatter points marking confirmed swing highs and lows, then builds a dashboard showing whether each timeframe is bullish or bearish based on those breaks. No clouds, no mystical "smart money" signals — just structure, quantified.
 
 ## What Sets It Apart

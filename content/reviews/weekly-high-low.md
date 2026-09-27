@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of TradingView's Weekly_High_Low indicator: how to set it up, when it works, and when it fails. Spoiler: it's a reliable support/resistance tool, not a crystal ball."
 grounding: "none (no source found)"
 ---
-# Weekly High Low Review
 If you've ever stared at a chart wondering where the big money is likely to step in this week, *Weekly_High_Low* offers a clean answer. This free, lightweight indicator plots the previous week's high, low, and close as horizontal lines that extend into the current week. No moving averages, no layered calculations. Just three levels that can act as natural magnets for price.
 
 The chart above shows it applied to a MACD chart, with price interacting with the weekly low. Let's break down what the indicator offers, and where it falls short.

@@ -1,5 +1,5 @@
 ---
-title: "Order Block Intelligence Mitigation Probability AI Dots3red Review — Market Structure Indicator"
+title: "Order Block Intelligence Mitigation Probability AI Dots3red Review"
 date: 2026-09-18
 draft: false
 type: reviews

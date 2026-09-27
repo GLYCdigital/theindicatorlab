@@ -1,5 +1,5 @@
 ---
-title: "Smart Money Stop Hunt Detector Algo Aakash Review — Volume Indicator"
+title: "Smart Money Stop Hunt Detector Algo Aakash Review — Volume"
 date: 2026-07-16
 draft: false
 type: reviews

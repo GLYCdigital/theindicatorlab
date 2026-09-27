@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Chaikin_Volatility_Oscillator: how to read volatility expansions, best settings for breakouts, and when this oscillator actually helps your trades."
 grounding: "none (no source found)"
 ---
-# Chaikin Volatility Oscillator Review
 ## What this indicator actually does
 
 First, let's clear up the name: this is **not** Marc Chaikin's original Volatility indicator. That one uses the difference between two exponential moving averages of the high-low range. This version takes the concept and turns it into a clean oscillator format—so it's normalized and easier to read.

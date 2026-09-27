@@ -1,5 +1,5 @@
 ---
-title: "Trendfollower With Momentum Pullback Engine For Gold 8 Review — Momentum Indicator"
+title: "Trendfollower With Momentum Pullback Engine For Gold 8 Review"
 date: 2026-09-19
 draft: false
 type: reviews

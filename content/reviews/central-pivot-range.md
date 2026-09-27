@@ -19,7 +19,7 @@ rating: 4
 description: "Honest Central Pivot Range review: tested on ES, NQ, and forex. Best settings, entry strategies, and when this indicator actually works."
 grounding: "none (no source found)"
 ---
-# Central Pivot Range Review: Settings, Strategy & How to Use It
+## Central Pivot Range Review: Settings, Strategy & How to Use It
 
 Central Pivot Range (CPR) is one of those indicators that looks simple but has surprising depth once you dig into how markets actually behave around those levels.
 

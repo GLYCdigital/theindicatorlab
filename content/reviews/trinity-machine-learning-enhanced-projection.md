@@ -1,5 +1,5 @@
 ---
-title: "Trinity Machine Learning Enhanced Projection Review — Trend Indicator"
+title: "Trinity Machine Learning Enhanced Projection Review — Trend"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,7 +18,6 @@ rating: 4
 description: "A solid ML overlay that projects future price zones with decent accuracy. Not magic, but a useful edge when combined with price action."
 grounding: "none (no source found)"
 ---
-# Trinity Machine Learning Enhanced Projection Review
 Machine learning indicators on TradingView have a poor reputation, and much of it is deserved. Many are overfitted constructs that look impressive in a backtest and fall apart in live conditions. The Trinity_Machine_Learning_Enhanced_Projection (TMLP) is marketed as one of the exceptions. This breakdown focuses on what the indicator claims to do, how its settings are structured, and where the concept holds up or breaks down.
 
 ## What This Indicator Actually Does

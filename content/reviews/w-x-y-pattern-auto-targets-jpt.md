@@ -1,5 +1,5 @@
 ---
-title: "Wxy Pattern Auto Targets Jpt Review — Chart Pattern Indicator"
+title: "Wxy Pattern Auto Targets Jpt Review — Chart Patterns"
 date: 2026-07-22
 draft: false
 type: reviews

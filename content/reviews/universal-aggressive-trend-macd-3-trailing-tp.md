@@ -1,5 +1,5 @@
 ---
-title: "Universal Aggressive Trend MACD 3 Trailing Tp Review — Momentum Indicator"
+title: "Universal Aggressive Trend MACD 3 Trailing Tp Review"
 date: 2026-09-14
 draft: false
 type: reviews

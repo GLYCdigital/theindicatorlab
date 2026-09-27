@@ -1,5 +1,5 @@
 ---
-title: "Post Absorption VWAP Reversal Engine 6 Review — Volume Indicator"
+title: "Post Absorption VWAP Reversal Engine 6 Review — Volume"
 date: 2026-07-16
 draft: false
 type: reviews

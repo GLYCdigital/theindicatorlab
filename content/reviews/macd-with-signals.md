@@ -18,7 +18,6 @@ rating: 4
 description: "Macd_With_Signals review: A clean MACD trend indicator with built-in entry signals. We test settings, strategies, and whether it beats the default."
 grounding: "none (no source found)"
 ---
-# MACD With Signals Review
 Most MACD variants are the default oscillator with a fresh coat of paint. Macd_With_Signals takes a different angle: it tries to address the signal timing problem rather than repackaging the same histogram.
 
 ## What It Does

@@ -1,5 +1,5 @@
 ---
-title: "Breaker Block Detector Algotim Review — Market Structure Indicator"
+title: "Breaker Block Detector Algotim Review — Market Structure"
 date: 2026-09-10
 draft: false
 type: reviews

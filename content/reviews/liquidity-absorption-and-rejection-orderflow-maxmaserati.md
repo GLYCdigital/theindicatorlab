@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Absorption And Rejection Orderflow Maxmaserati Review — Market Structure Indicator"
+title: "Liquidity Absorption And Rejection Orderflow Maxmaserati Review"
 tv_script_url: "https://www.tradingview.com/script/Qt40jcF2-Liquidity-Absorption-and-Rejection-Orderflow-MaxMaserati/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Advanced orderflow tool that detects liquidity sweeps, absorptions, and rejections. Helps identify reversals and continuation patterns with real-time market structure analysis."
 grounding: "none (no source found)"
 ---
-# Liquidity Absorption And Rejection Orderflow Maxmaserati Review
 If you trade orderflow and market structure, this indicator is worth a look — but it is not a set-and-forget magic bullet. Here is a straight assessment of what it does and where it falls short.
 
 ## What This Indicator Actually Does

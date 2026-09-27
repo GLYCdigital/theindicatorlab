@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Rsi_Bollinger_Bands review: combines RSI with Bollinger Bands for trend confirmation. Tested settings, entry/exit logic, pros, cons, and who it suits best."
 grounding: "none (no source found)"
 ---
-# RSI Bollinger Bands Review
 "Confluence" indicators usually just stack two oscillators on top of each other and call it a strategy. Rsi_Bollinger_Bands takes a different approach: it forces you to think about *when* RSI matters relative to volatility, and that distinction is what makes it worth a look.
 
 ## What It Does

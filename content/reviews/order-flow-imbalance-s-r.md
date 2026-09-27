@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Order_Flow_Imbalance_S_R review: how it reads delta, best settings, real trade setups, and who should skip it."
 grounding: "none (no source found)"
 ---
-# Order Flow Imbalance Sr Review
 Most "order flow" indicators on TradingView are repackaged volume oscillators with fancy names. Order_Flow_Imbalance_S_R isn't that. It attempts to quantify the aggressor-side pressure behind every tick and translate that into a momentum signal. The core logic holds up — but it's not plug-and-play.
 
 **What it actually does**

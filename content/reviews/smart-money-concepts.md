@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Smart_Money_Concepts review: tested on MACD chart. Covers best settings, entry/exit logic, pros/cons, and who it's actually for. No hype, just results."
 grounding: "none (no source found)"
 ---
-# Smart Money Concepts Review
 **Smart_Money_Concepts** is a trend-following indicator that attempts to automate what many traders call "institutional order flow" — identifying supply/demand zones, market structure breaks, and liquidity grabs. It is typically run on a MACD chart.
 
 ## What This Indicator Actually Does

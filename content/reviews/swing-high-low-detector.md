@@ -19,7 +19,6 @@ rating: 4
 description: "Swing_High_Low_Detector review: tested settings, entry strategy, pros/cons. A solid 4-star tool for marking swing points cleanly on TradingView."
 grounding: "none (no source found)"
 ---
-# Swing High Low Detector Review
 Swing_High_Low_Detector does exactly what its name promises — it plots swing highs and swing lows on your chart. No hidden signals, no AI nonsense. It's a price structure tool that marks the pivots you'd normally trace by hand. Here's what actually matters.
 
 ## What It Actually Does

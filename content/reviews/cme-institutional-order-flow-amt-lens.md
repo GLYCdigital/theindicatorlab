@@ -1,5 +1,5 @@
 ---
-title: "Cme Institutional Order Flow Amt Lens Review — Volume Indicator"
+title: "Cme Institutional Order Flow Amt Lens Review — Volume"
 date: 2026-09-18
 draft: false
 type: reviews

@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Williams %R review. Covers settings, divergence setups, oversold/overbought levels, and how to avoid false signals. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Williams R Review
 Williams %R is a momentum oscillator that's been around since the 1970s, created by Larry Williams. It's not flashy, but it's a workhorse—if you know how to use it right. It works across Forex, crypto, and equities.
 
 ## What This Indicator Actually Does

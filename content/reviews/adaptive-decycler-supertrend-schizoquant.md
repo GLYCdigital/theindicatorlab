@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Decycler Supertrend Schizoquant Review — Trend Indicator"
+title: "Adaptive Decycler Supertrend Schizoquant Review — Trend"
 date: 2026-09-25
 draft: false
 type: reviews

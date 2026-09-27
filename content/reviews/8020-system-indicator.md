@@ -19,7 +19,6 @@ rating: 4
 description: "Honest 8020_System_Indicator review. Tested settings, entry/exit logic, pros/cons. A solid 4/5 trend tool — but not a holy grail. Read before installing."
 grounding: "none (no source found)"
 ---
-# 8020 System Indicator Review
 The "8020" in the name isn't about Pareto or some magic win-rate ratio — it's a reference to the 8- and 20-period moving averages that form its backbone. What makes this one worth a second look is how it packages those two MAs into a complete trend system with confirmation signals, rather than just a couple of squiggly lines on your chart.
 
 ## What It Actually Does

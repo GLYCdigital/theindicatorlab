@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Single_Candlestick_Patterns review: tests 12+ candlestick signals, best settings for trend trading, pros/cons, and who should install it."
 grounding: "none (no source found)"
 ---
-# Single Candlestick Patterns Review
 Most candlestick pattern indicators on TradingView are noisy — they paint dozens of arrows per bar and call it analysis. Single_Candlestick_Patterns takes a different approach. It does one thing: identifies single-candle reversal and continuation signals, and presents them cleanly.
 
 The premise is simple. Instead of flooding your chart with every doji, hammer, and spinning top ever printed, this indicator is designed around single-candle patterns evaluated in the context of trend. It marks bullish and bearish setups with distinct arrows and color-coded candle backgrounds. The stated design intent is clean pattern recognition on the closed candle, without lagging line overlays.

@@ -19,7 +19,6 @@ rating: 4
 description: "Iq_Trend_Beams tested on MACD chart: settings, entry logic, pros/cons. A solid trend filter that earns 4 stars for clarity, but has lag issues."
 grounding: "none (no source found)"
 ---
-# Iq Trend Beams Review
 Iq_Trend_Beams is not a magic arrow system, and it doesn't pretend to be. It's a trend direction filter that paints beams — colored histogram-like bars — to indicate which side of the market you should be leaning on. That's it. No repainting gimmicks, no promises of unrealistic win rates. For what it actually does, it does it well.
 
 ## What This Indicator Actually Does

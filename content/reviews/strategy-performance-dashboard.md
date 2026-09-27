@@ -18,7 +18,6 @@ rating: 4
 description: "A no-nonsense dashboard that tracks win rate, profit factor, and drawdown in real time. Best for backtesting & live strategy monitoring."
 grounding: "none (no source found)"
 ---
-# Strategy Performance Dashboard Review
 If you're tired of flipping tabs to check your strategy's health, **Strategy_Performance_Dashboard** aims to solve that by keeping the numbers on the chart itself.
 
 **What this indicator actually does**  

@@ -1,5 +1,5 @@
 ---
-title: "Sessions Opening Levels And Day Separators Review — Trend Indicator"
+title: "Sessions Opening Levels And Day Separators Review — Trend"
 date: 2026-09-18
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Dynamic ICT 2022 Model Adaptive Structure Review — Market Structure Indicator"
+title: "Dynamic ICT 2022 Model Adaptive Structure Review"
 date: 2026-08-16
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Honest review of Dynamic_ICT_2022_Model_Adaptive_Structure on Trad
 tv_script_url: "https://www.tradingview.com/script/XwWnZWG1-Dynamic-ICT-2022-Model-Adaptive-Structure-PRO/"
 sources: ["https://www.tradingview.com/script/XwWnZWG1-Dynamic-ICT-2022-Model-Adaptive-Structure-PRO/", "https://mozilla.org/MPL/2.0/"]
 ---
-# Dynamic ICT 2022 Model Adaptive Structure Review
 Most ICT-based indicators on TradingView fall into one of two camps: repackaged moving averages with new labels, or overcomplicated scripts that try to do too much. The Dynamic ICT 2022 Model & Adaptive Structure PRO sits somewhere in between, but leans toward the more useful end of the spectrum.
 
 The script is an overlay study that automates several pieces of the 2022 ICT market structure model — major swing points, break of structure and change of character detection, and a trend wave. It's built for white/light chart backgrounds, which the color palette makes clear.

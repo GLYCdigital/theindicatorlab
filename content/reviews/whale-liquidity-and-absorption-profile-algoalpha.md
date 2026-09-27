@@ -1,5 +1,5 @@
 ---
-title: "Whale Liquidity And Absorption Profile Algoalpha Review — Market Structure Indicator"
+title: "Whale Liquidity And Absorption Profile Algoalpha Review"
 tv_script_url: "https://www.tradingview.com/script/cWm8UcfQ-Whale-Liquidity-and-Absorption-Profile-AlgoAlpha/"
 date: 2026-08-03
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Whale_Liquidity_And_Absorption_Profile_Algoalpha — a trend indicator that tracks big-money absorption zones. Settings, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Whale Liquidity And Absorption Profile Algoalpha Review
 This indicator isn't a crystal ball, but it does something genuinely useful: it shows where liquidity sits on the chart.
 
 ## What It Actually Does

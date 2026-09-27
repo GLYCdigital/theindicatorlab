@@ -19,7 +19,6 @@ description: "Qqe_Trend_Confluence combines QQE signals with trend filters. Test
 tv_script_url: "https://www.tradingview.com/script/Yg0CNk0R-QQE-Trend-Confluence-MarkitTick/"
 sources: ["https://www.tradingview.com/script/Yg0CNk0R-QQE-Trend-Confluence-MarkitTick/"]
 ---
-# Qqe Trend Confluence Review
 Most QQE variations on TradingView are repackaged versions of the same oscillator with a fresh coat of paint. The question with any new one is whether it adds something structural or just re-skins the same math. Qqe_Trend_Confluence is a dual-engine QQE confluence oscillator, and its architecture is worth understanding before you load it.
 
 ## What This Indicator Actually Does

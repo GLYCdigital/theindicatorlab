@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Algo_Price_Action_Signals review. Tested settings, entry/exit logic, pros & cons. See if this trend indicator fits your strategy."
 grounding: "none (no source found)"
 ---
-# Algo Price Action Signals Review
 If you've been browsing TradingView's indicator catalog, you've probably seen *Algo_Price_Action_Signals* pop up under the "Trend" category. It promises clean signals without the noise. Here's a breakdown of what it offers and where it falls short.
 
 This isn't a magical AI crystal ball. It's a structured price-action scanner that filters trends using a combination of moving averages, momentum thresholds, and volatility bands. The output is a series of labeled arrows and background highlights indicating potential entries and exits. It's designed to keep you out of chop and in the flow of the trend.

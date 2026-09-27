@@ -19,7 +19,6 @@ rating: 4
 description: "Obv_Ma review: a simple volume-confirmed trend filter that combines OBV with moving averages. Tested settings, entry logic, pros, cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# OBV Ma Review
 Most volume indicators generate a lot of noise. They flash signals that look clean on a historical chart but become ambiguous in live conditions. The Obv_Ma isn't revolutionary, but it addresses a real problem: making On-Balance Volume usable as a trend filter without overcomplicating the chart.
 
 ## What Obv_Ma Actually Does

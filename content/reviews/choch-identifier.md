@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/jjDJ98zA-Choch-identifier/"
 sources: ["https://www.tradingview.com/script/jjDJ98zA-Choch-identifier/"]
 grounding: "none (no source found)"
 ---
-# CHOCH Identifier Review
 Choch_Identifier does one thing: it plots Change of Character (CHoCH) signals on your chart. No repainting gimmicks, no "AI-powered" marketing — just a marker when price breaks the last swing high or low after a pullback. If you trade Smart Money Concepts (SMC) or price action trends, you already know the concept. This indicator automates the visual part.
 
 The signals tend to align with momentum shifts, but only when you understand what the tool is *not* telling you.

@@ -18,7 +18,6 @@ rating: 4
 description: "Zig_Zag_Retracement review: tested settings, pullback entry strategy, pros/cons. See if this trend indicator deserves a spot on your chart."
 grounding: "none (no source found)"
 ---
-# Zig Zag Retracement Review
 The Zig_Zag_Retracement is not a magic arrow that tells you exactly where to click buy. It's a trend-filtering tool that overlays classic zig-zag pivot points with retracement levels, and it does that job better than most of what fills TradingView's catalog.
 
 ## What This Indicator Actually Does

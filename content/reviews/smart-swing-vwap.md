@@ -19,7 +19,6 @@ rating: 4
 description: "Smart_Swing_Vwap review: tested settings, entry/exit logic, pros & cons. Is this dynamic VWAP trend indicator worth installing? Find out."
 grounding: "none (no source found)"
 ---
-# Smart Swing VWAP Review
 Smart_Swing_Vwap is a trend-following indicator that blends a dynamic VWAP calculation with swing point detection. Instead of the static, session-based VWAP most traders know, it recalculates the volume-weighted average price based on swing highs and lows. The result is a line that adapts to market structure rather than resetting at arbitrary time boundaries.
 
 ## What Sets It Apart

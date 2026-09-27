@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Ema_Cross_Signal review. Tested settings, pros/cons, and entry rules. A 4/5 star EMA crossover tool—fast, clear, but lacks volume confirmation."
 grounding: "none (no source found)"
 ---
-# EMA Cross Signal Review
 **Ema_Cross_Signal** is a straightforward EMA crossover indicator that does exactly what its name suggests, without unnecessary extras. Here's a breakdown of what it offers.
 
 ## What This Indicator Actually Does

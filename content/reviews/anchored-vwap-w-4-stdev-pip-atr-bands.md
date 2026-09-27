@@ -1,5 +1,5 @@
 ---
-title: "Anchored VWAP W 4 Stdev Pip ATR Bands Review — Volume Indicator"
+title: "Anchored VWAP W 4 Stdev Pip ATR Bands Review — Volume"
 date: 2026-09-12
 draft: false
 type: reviews

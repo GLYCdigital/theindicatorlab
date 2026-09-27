@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Volatility_Quality_Index review: settings, filters, and entry strategy. See if this trend-quality filter beats a plain ADX or RSI."
 grounding: "none (no source found)"
 ---
-# Volatility Quality Index Review
 The Volatility_Quality_Index isn't a magic signal generator — it's a trend-quality filter that asks one question: *Is this move worth chasing?* Most trend indicators tell you *when* a trend starts. This one is designed to tell you whether the trend has enough structural integrity to survive your entry.
 
 Here's the honest breakdown.

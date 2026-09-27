@@ -1,5 +1,5 @@
 ---
-title: "SMC Institutional Clean Wave Structure Review — Market Structure Indicator"
+title: "SMC Institutional Clean Wave Structure Review"
 date: 2026-08-18
 draft: false
 type: reviews

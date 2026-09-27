@@ -19,7 +19,6 @@ rating: 4
 description: "KAMA adapts to market noise — reducing lag in trends and smoothing whipsaws in ranges. A moving average that thinks for itself. Full review inside."
 grounding: "none (no source found)"
 ---
-# KAMA Review
 KAMA is not another fixed-length moving average. It adjusts its own smoothing based on how noisy the market is at any given moment. When price moves directionally, it speeds up and behaves closer to a short EMA. When price chops sideways, it slows down and behaves more like a longer SMA. The result is a curve that hugs trends and sits still in ranges, without you having to switch periods by hand.
 
 ## What this indicator actually does

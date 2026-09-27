@@ -1,5 +1,5 @@
 ---
-title: "Trinity Reversal Pattern Algoalpha Review — Chart Pattern Indicator"
+title: "Trinity Reversal Pattern Algoalpha Review — Chart Patterns"
 date: 2026-09-19
 draft: false
 type: reviews

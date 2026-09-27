@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Label Above Bar Review — Market Structure Indicator"
+title: "Liquidity Label Above Bar Review — Market Structure"
 date: 2026-09-10
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Honest Liquidity_Label_Above_Bar review: how it marks liquidity zo
 tv_script_url: "https://www.tradingview.com/script/3C7bqZb3-Liquidity-Label-above-Bar/"
 sources: ["https://www.tradingview.com/script/3C7bqZb3-Liquidity-Label-above-Bar/"]
 ---
-# Liquidity Label Above Bar Review
 The name undersells it. "Liquidity Label" sounds like decoration — a floating text element pinned above your chart. But the official description is more specific than the title suggests: it shows a single label above the latest candle displaying the stock's average traded value, so you can judge at a glance whether a stock is liquid enough to trade without opening a screener.
 
 That's the entire premise. This is not a signal indicator, a pattern detector, or a directional bias tool. It is a liquidity readout — a single number that answers one question: is there enough traded value here to bother?

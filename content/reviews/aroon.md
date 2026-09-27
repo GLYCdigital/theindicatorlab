@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Aroon indicator review: settings, entry/exit strategy, pros & cons. Tests show it excels in trending markets but lags in choppy conditions. See if it fits your system."
 grounding: "none (no source found)"
 ---
-# Aroon Review
 Aroon is a trend-following oscillator that answers one question: how recently did the extreme high or low occur? It isn't flashy, but it addresses a real gap in most traders' toolkits—quantifying trend age rather than guessing at it. Here's what it does, how it's typically configured, and where it breaks down.
 
 ## What Aroon Actually Does

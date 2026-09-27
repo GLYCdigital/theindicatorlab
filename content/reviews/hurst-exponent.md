@@ -19,7 +19,6 @@ rating: 4
 description: "TradingView Hurst_Exponent indicator review. See how it detects trend strength, mean reversion, and optimal settings for intraday & swing trading."
 grounding: "none (no source found)"
 ---
-# Hurst Exponent Review
 ## What This Indicator Actually Does
 
 The Hurst Exponent measures long-term memory in price data. In plain English: it indicates whether a market is trending (persistent), mean-reverting (anti-persistent), or behaving as random noise. Values above 0.5 suggest a trend is likely to continue; below 0.5 signals mean reversion; exactly 0.5 implies a random walk.

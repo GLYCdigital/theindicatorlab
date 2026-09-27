@@ -1,5 +1,5 @@
 ---
-title: "Pk William Analytics Clean Monthly Ist Review — Trend Indicator"
+title: "Pk William Analytics Clean Monthly Ist Review — Trend"
 date: 2026-07-16
 draft: false
 type: reviews

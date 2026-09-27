@@ -19,7 +19,6 @@ description: "Hands-on Black_Litterman_Allocator_Backquant review: settings, ent
 tv_script_url: "https://www.tradingview.com/script/B3pSI5nH-Black-Litterman-Allocator-BackQuant/"
 sources: ["https://www.tradingview.com/script/B3pSI5nH-Black-Litterman-Allocator-BackQuant/"]
 ---
-# Black Litterman Allocator Backquant Review
 The name promises institutional portfolio theory inside a TradingView pane. The official description is unusually candid about what it actually is: a concept and educational implementation of the Black-Litterman framework, not an institutional-grade optimizer, not an automated investment product, and not a portfolio recommendation. That framing matters, because this indicator belongs to a different category than the trend tools most traders spend their
 
 ## Go Deeper with The Indicator Lab

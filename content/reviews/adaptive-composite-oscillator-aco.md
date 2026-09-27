@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Composite Oscillator Aco Review — Momentum Indicator"
+title: "Adaptive Composite Oscillator Aco Review — Momentum"
 date: 2026-08-21
 draft: false
 type: reviews

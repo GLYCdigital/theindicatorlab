@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Kinetic_Slippage_Index_Ksi: a trend indicator that tracks momentum slippage. Settings, entry/exit logic, pros, cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Kinetic Slippage Index Ksi Review
 The Kinetic_Slippage_Index_Ksi (KSI) is not a typical trend-following oscillator. It is built around the idea that momentum doesn't just move—it *slips*. The indicator measures the rate of change in slippage between price and a smoothed momentum line, then renders that as a histogram with a signal line. Conceptually it sits somewhere between an MACD and a momentum divergence tool, with a sharper focus on exhaustion points.
 
 ## Key Features

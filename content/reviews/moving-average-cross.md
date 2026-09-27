@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Moving_Average_Cross review: tested settings, entry/exit logic, pros & cons. Is this simple MA crossover indicator worth your chart space? Find out."
 grounding: "none (no source found)"
 ---
-# Moving Average Cross Review
 Moving average crossover indicators are a crowded category, and most of them are either over-engineered messes or a lazy repackaging of the built-in MA tool. Moving_Average_Cross sits somewhere in between — a familiar concept dressed up with a few genuinely useful additions. Here's the honest breakdown.
 
 ## What This Indicator Actually Does

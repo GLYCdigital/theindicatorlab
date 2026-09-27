@@ -19,7 +19,6 @@ rating: 4
 description: "Smartbreak_Fibo_Traderhook combines Fibonacci retracement with breakout detection for precise entries. An honest take on settings and signals."
 grounding: "none (no source found)"
 ---
-# Smartbreak Fibo Traderhook Review
 Indicators that claim to "predict" the market rarely deliver. This one is more modest in its ambition: it merges two established concepts—Fibonacci retracement levels and structure breaks—into a single overlay. What follows is an assessment of what the tool does, how it's meant to be configured, and where it tends to fall short.
 
 ## What This Indicator Actually Does

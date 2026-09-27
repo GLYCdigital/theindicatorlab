@@ -1,5 +1,5 @@
 ---
-title: "Normalized Average True Range NATR Review — Volatility Indicator"
+title: "Normalized Average True Range NATR Review — Volatility"
 tv_script_url: "https://www.tradingview.com/script/lZhoybZZ-Normalized-Average-True-Range-everget/"
 date: 2026-07-16
 draft: false

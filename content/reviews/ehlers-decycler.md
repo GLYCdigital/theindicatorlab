@@ -19,7 +19,6 @@ rating: 4
 description: "Ehlers_Decycler review: decycler oscillator filters noise, reveals cycles. Best settings, entry/exit rules, and honest pros/cons for active traders."
 grounding: "none (no source found)"
 ---
-# Ehlers Decycler Review
 Ehlers_Decycler is one of those indicators that looks unremarkable at first glance but does something most oscillators cannot: filter out market noise without introducing heavy lag.
 
 ## What This Indicator Actually Does

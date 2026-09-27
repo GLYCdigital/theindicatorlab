@@ -1,5 +1,5 @@
 ---
-title: "Chande Momentum Oscillator Divergence Review — Momentum Indicator"
+title: "Chande Momentum Oscillator Divergence Review — Momentum"
 tv_script_url: "https://www.tradingview.com/script/ogmWth5h-Chande-Momentum-Oscillator-everget/"
 date: 2026-07-16
 draft: false

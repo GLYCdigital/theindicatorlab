@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/L92cbhfy-Just-Pablo-3/"
 sources: ["https://www.tradingview.com/script/L92cbhfy-Just-Pablo-3/"]
 grounding: "none (no source found)"
 ---
-# Just Pablo 3 Review
 Just_Pablo_3 is a trend-following tool built around a single idea: filtering noise rather than predicting reversals. It plots trend direction on the chart using a color-coded system, and it layers a momentum check on top so the bias doesn't flip on every wiggle. The chart above shows it on a MACD-styled view, which is where its logic is most visible.
 
 **What it actually does**

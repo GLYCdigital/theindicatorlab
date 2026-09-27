@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/SGjdTzTm-Icon-Bot/"
 sources: ["https://www.tradingview.com/script/SGjdTzTm-Icon-Bot/"]
 grounding: "none (no source found)"
 ---
-# Icon Bot Review
 "AI-powered" trend indicators deserve skepticism, and Icon_Bot is no exception. The honest breakdown follows.
 
 ## What Icon_Bot Actually Does

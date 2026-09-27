@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Multi_Timeframe_Confluence: a trend alignment tool that confirms direction across timeframes. Settings, strategy, pros/cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# Multi Timeframe Confluence Review
 Multi-timeframe indicators tend to fall into two camps: too noisy to be useful, or so laggy they arrive after the move is over. Multi_Timeframe_Confluence sits somewhere in the middle—and for many traders, that's exactly where you want to be.
 
 To cut through the marketing fluff: this indicator doesn't predict the future. What it does is give you a clear, color-coded read on whether the trend on higher timeframes (HTF) is aligned with your current chart's direction. That's it. But it's executed well.

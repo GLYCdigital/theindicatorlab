@@ -19,7 +19,6 @@ rating: 4
 description: "Vwap_Multi_Timeframe overlays multiple VWAPs from higher timeframes onto your chart. Honest test results, best settings, and entry logic."
 grounding: "none (no source found)"
 ---
-# VWAP Multi Timeframe Review
 VWAP is one of those concepts every trader *thinks* they understand until they actually try to trade it. Most single-timeframe VWAP indicators are fine for intraday scalping but fall apart when you're trying to gauge institutional positioning across sessions. That's where Vwap_Multi_Timeframe earns its keep.
 
 **What this thing actually does**

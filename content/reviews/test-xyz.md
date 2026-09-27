@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/abc123-Test-XYZ/"
 sources: ["https://www.tradingview.com/script/abc123-Test-XYZ/"]
 grounding: "none (no source found)"
 ---
-# Test Xyz Review
 Most indicators that promise "clear trend signals" turn out to be MACD clones with extra paint. Test XYZ is a trend filter built around a proprietary smoothing calculation, and its main selling point is that it does not repaint — a claim worth treating with more scrutiny than marketing copy usually gets.
 
 **What Test XYZ Actually Does**

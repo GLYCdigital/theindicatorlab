@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Pivot Fibo Analytics Review — Support & Resistance Indicator"
+title: "Dynamic Pivot Fibo Analytics Review — Support & Resistance"
 tv_script_url: "https://www.tradingview.com/script/op8KJCFg-Dynamic-Pivot-Fibo-Analytics-MarkitTick/"
 date: 2026-07-16
 draft: false

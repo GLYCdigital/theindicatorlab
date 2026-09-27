@@ -19,7 +19,7 @@ rating: 4
 description: "Honest review of the Morning_Evening_Star indicator after real testing. See best settings, entry rules, and whether it actually works for swing trading."
 grounding: "none (no source found)"
 ---
-# Morning_Evening_Star Review: Settings, Strategy & How to Use It
+## Morning_Evening_Star Review: Settings, Strategy & How to Use It
 
 ## What This Indicator Actually Does
 

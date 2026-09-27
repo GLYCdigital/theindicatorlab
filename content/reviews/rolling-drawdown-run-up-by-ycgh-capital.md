@@ -1,5 +1,5 @@
 ---
-title: "Rolling Drawdown Run Up By Ycgh Capital Review — Trend Indicator"
+title: "Rolling Drawdown Run Up By Ycgh Capital Review — Trend"
 date: 2026-09-05
 draft: false
 type: reviews

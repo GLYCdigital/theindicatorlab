@@ -1,5 +1,5 @@
 ---
-title: "Moya Sessions Volume Profile Realsebastianmoya Review — Volume Indicator"
+title: "Moya Sessions Volume Profile Realsebastianmoya Review"
 date: 2026-09-16
 draft: false
 type: reviews

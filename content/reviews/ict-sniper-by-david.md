@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Ict_Sniper_By_David review: tested settings, entry logic, pros/cons, and who should use this ICT-based trend indicator on TradingView."
 grounding: "none (no source found)"
 ---
-# ICT Sniper By David Review
 The name "Sniper" invites skepticism — it reads like another ICT-branded tool that promises precision entries and delivers repainting noise. That reputation is earned often enough that any indicator using ICT language should be approached with caution. Here's a breakdown of what Ict_Sniper_By_David actually is, based on its stated design.
 
 ## What This Indicator Actually Does

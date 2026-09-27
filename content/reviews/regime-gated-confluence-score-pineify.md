@@ -1,5 +1,5 @@
 ---
-title: "Regime Gated Confluence Score Pineify Review — Trend Indicator"
+title: "Regime Gated Confluence Score Pineify Review — Trend"
 date: 2026-09-05
 draft: false
 type: reviews

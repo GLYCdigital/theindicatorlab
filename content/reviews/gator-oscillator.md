@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Bill Williams' Gator Oscillator: settings, best timeframe, and how to use it for trend-following without the hype."
 grounding: "none (no source found)"
 ---
-# Gator Oscillator Review
 You've seen the Gator Oscillator in the Alligator pack, but does it actually help you trade better? Here's the straight assessment.
 
 **What this indicator actually does**

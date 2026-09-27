@@ -1,5 +1,5 @@
 ---
-title: "Percentage Price Oscillator Navigator Review — Momentum Indicator"
+title: "Percentage Price Oscillator Navigator Review — Momentum"
 tv_script_url: "https://www.tradingview.com/script/atlgwpfT-Percentage-Price-Oscillator-Navigator-MarkitTick/"
 date: 2026-08-02
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "PPO Navigator review: settings, strategy, pros/cons. Is this trend-following oscillator worth adding to your TradingView toolkit? Honest 4-star take."
 grounding: "none (no source found)"
 ---
-# Percentage Price Oscillator Navigator Review
 The Percentage_Price_Oscillator_Navigator is a trend oscillator built on the familiar percentage price oscillator concept, but with an added "navigator" layer that distinguishes it from the default TradingView PPO. It is not a reinvention of the indicator class, but it does offer features that most standard PPO implementations lack. Here is a breakdown of what it does and who it suits.
 
 ## What It Actually Does

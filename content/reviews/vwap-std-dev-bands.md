@@ -19,7 +19,6 @@ rating: 4
 description: "Vwap_Std_Dev_Bands review: How to use these volatility bands for mean reversion and trend entries. Tested settings, pros, cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# VWAP Std Dev Bands Review
 Vwap_Std_Dev_Bands isn't a magic system — it's a volatility envelope wrapped around the volume-weighted average price. If you've used Bollinger Bands, you already understand the logic: price stretches away from a mean, then snaps back. The difference here is that the mean is anchored to VWAP, which institutional traders watch, making the reversion zones potentially more meaningful than a simple moving average.
 
 ## What This Indicator Actually Does

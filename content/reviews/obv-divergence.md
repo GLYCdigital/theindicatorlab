@@ -19,7 +19,6 @@ rating: 4
 description: "Hands-on Obv_Divergence review: settings, entry logic, and honest pros/cons. See if this divergence detector fits your trend trading style."
 grounding: "none (no source found)"
 ---
-# OBV Divergence Review
 Most divergence indicators are repackaged MACD crossovers with extra lines. Obv_Divergence is different—it does what its name promises, and it does it cleanly.
 
 **What It Actually Does**

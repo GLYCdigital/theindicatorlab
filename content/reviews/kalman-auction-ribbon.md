@@ -19,7 +19,6 @@ rating: 4
 description: "Kalman Auction Ribbon review: A unique trend-following tool using Kalman filters and auction theory. Find settings, entry rules, and honest pros/cons."
 grounding: "none (no source found)"
 ---
-# Kalman Auction Ribbon Review
 Most "ribbon" indicators are just moving averages stacked prettily. The Kalman_Auction_Ribbon attempts something different by blending Kalman filter smoothing with auction market theory. Here's a closer look at what it offers.
 
 **What This Indicator Actually Does**

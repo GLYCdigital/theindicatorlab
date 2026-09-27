@@ -1,5 +1,5 @@
 ---
-title: "Hourly Alpha Profile Terminal The Quant Science Review — Volume Indicator"
+title: "Hourly Alpha Profile Terminal The Quant Science Review"
 date: 2026-09-10
 draft: false
 type: reviews

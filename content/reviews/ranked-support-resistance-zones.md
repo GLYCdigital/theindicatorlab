@@ -1,5 +1,5 @@
 ---
-title: "Ranked Support Resistance Zones Review — Support & Resistance Indicator"
+title: "Ranked Support Resistance Zones Review"
 tv_script_url: "https://www.tradingview.com/script/jTQU8WBS-Ranked-Support-Resistance-Zones-Zeiierman/"
 date: 2026-07-16
 draft: false

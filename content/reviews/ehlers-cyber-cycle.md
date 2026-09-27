@@ -19,7 +19,7 @@ rating: 4
 description: "Ehlers_Cyber_Cycle review: a lag-free cycle oscillator for timing reversals. Best settings, entry/exit rules, and honest pros vs. alternatives."
 grounding: "none (no source found)"
 ---
-# Ehlers_Cyber_Cycle Review: Timing the Market's Rhythms Without the Lag
+## Ehlers_Cyber_Cycle Review: Timing the Market's Rhythms Without the Lag
 
 Cycle-based indicators tend to fall into one of two camps: too laggy to trade or too noisy to trust. The **Ehlers_Cyber_Cycle** is built on John Ehlers' digital signal processing concepts—specifically the "Cyber Cycle" algorithm—to extract a smooth, zero-lag oscillator that tracks price cycles.
 

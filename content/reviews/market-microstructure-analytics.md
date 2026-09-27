@@ -1,5 +1,5 @@
 ---
-title: "Market Microstructure Analytics Review — Market Structure Indicator"
+title: "Market Microstructure Analytics Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/34R4Mh5W-Market-Microstructure-Analytics-EdgeTools/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Market_Microstructure_Analytics reveals hidden order flow, liquidity gaps, and trade imbalance. A solid 4/5 for serious price action traders."
 grounding: "none (no source found)"
 ---
-# Market Microstructure Analytics Review
 If you've ever stared at a clean chart and wondered *where the real money is hiding*, this indicator is aimed at you. **Market_Microstructure_Analytics** doesn't paint pretty lines—it attempts to dig into the bones of the market: order flow, liquidity pockets, and aggressive vs. passive trade behavior.
 
 The sections below break down what the tool claims to do, how it's meant to be configured, and who it's likely to suit.

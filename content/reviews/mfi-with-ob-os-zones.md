@@ -18,7 +18,6 @@ rating: 4
 description: "Mfi_With_Ob_Os_Zones review: tested settings, entry/exit logic, pros & cons. Find out if this Money Flow Index variant deserves a spot on your chart."
 grounding: "none (no source found)"
 ---
-# MFI With Ob Os Zones Review
 A Money Flow Index variant that adds adaptive overbought/oversold zones and a trend-context filter. It doesn't reinvent the wheel—it makes the wheel easier to read.
 
 ## What This Indicator Actually Does

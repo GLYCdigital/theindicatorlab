@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Zig_Zag_Indicator review: settings, swing trading strategy, pros & cons. Is this classic pivot detector worth adding to your chart?"
 grounding: "none (no source found)"
 ---
-# Zig Zag Indicator Review
 The Zig Zag indicator is one of the oldest tools in technical analysis, and this TradingView version does what you'd expect—no more, no less. It filters out noise and draws clean pivot lines between significant highs and lows. As with any Zig Zag, it's not predictive, it repaints, and its usefulness depends heavily on how you configure it.
 
 ## What This Indicator Actually Does

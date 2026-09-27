@@ -1,5 +1,5 @@
 ---
-title: "High Volume Breakout Targets Algoalpha Review — Volume Indicator"
+title: "High Volume Breakout Targets Algoalpha Review — Volume"
 tv_script_url: "https://www.tradingview.com/script/C7P8RWwU-High-Volume-Breakout-Targets-AlgoAlpha/"
 date: 2026-08-09
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest High_Volume_Breakout_Targets_Algoalpha review — tested settings, entry/exit logic, pros/cons, and who should actually use this trend breakout indicator."
 grounding: "none (no source found)"
 ---
-# High Volume Breakout Targets Algoalpha Review
 High_Volume_Breakout_Targets_Algoalpha is not another repainted moving average crossover dressed up with a fancy name. It identifies high-volume breakouts and projects potential target zones based on the volume profile of that breakout move. The idea is that target levels are plotted ahead of price rather than lagging behind it.
 
 The core logic is straightforward: when volume spikes beyond a rolling threshold AND price breaks a structural level (swing high/low), the indicator marks that as a breakout event. From there, it calculates targets using the range of the breakout candle and the volume-weighted average price (VWAP) of that move. You get a horizontal line at the first target, a second at 1.5x the initial range, and a third at 2x. Once triggered, the zones stay plotted until price either hits them or the trend structure invalidates the breakout.

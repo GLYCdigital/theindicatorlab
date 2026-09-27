@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Footprint_Imbalance_Detector review: tested settings, entry/exit logic, pros & cons. See if this order-flow trend tool fits your trading style."
 grounding: "none (no source found)"
 ---
-# Footprint Imbalance Detector Review
 Most footprint indicators on TradingView fall into two camps: overpriced repaints, or glorified volume bars with extra steps. The Footprint_Imbalance_Detector isn't obviously either. It sets out to measure aggressive buying versus selling pressure in real time — but there are a few things worth understanding before you commit to it.
 
 ## What This Indicator Actually Does

@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Sentiment_Indicator review: tests settings, entries/exits, pros & cons. See if this crowd-sentiment tool fits your strategy."
 grounding: "none (no source found)"
 ---
-# Sentiment Indicator Review
 ## What This Indicator Is Meant to Do
 
 Sentiment_Indicator aims to quantify market mood by analyzing order flow data and price action patterns. It plots a single line that oscillates between 0 and 100. Readings above 70 suggest extreme bullish sentiment (potential top), while readings below 30 signal extreme bearish sentiment (potential bottom).

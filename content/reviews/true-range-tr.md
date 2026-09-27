@@ -19,7 +19,6 @@ rating: 4
 description: "True_Range_Tr is a trend-following oscillator that smooths ATR-based signals. Tested on MACD chart, it works best for swing traders. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# True Range Tr Review
 True_Range_Tr isn't a flashy AI bot or a holy grail — it's a trend oscillator built on the Average True Range (ATR) concept, with a twist. Instead of raw volatility, it transforms ATR into a smoothed, oscillating line intended to help read trend direction and momentum shifts.
 
 ## What It Actually Does

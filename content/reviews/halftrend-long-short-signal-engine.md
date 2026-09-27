@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Halftrend_Long_Short_Signal_Engine: a trend-following indicator with clear entry/exit signals. Tested settings, pros/cons, and who it suits."
 grounding: "none (no source found)"
 ---
-# Halftrend Long Short Signal Engine Review
 The **Halftrend_Long_Short_Signal_Engine** is a trend-following indicator built around a dynamic channel—a half-trend line—that generates long and short signals when price breaks above or below that channel. The "engine" half of the name refers to its alert system and the option to display signal arrows directly on the chart.
 
 It's aimed at traders who find moving averages too laggy and oscillators too noisy. It is not a holy grail, and it has a clear failure mode. Here's an honest breakdown of what it does and where it falls short.

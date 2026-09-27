@@ -19,7 +19,6 @@ rating: 4
 description: "A robust momentum oscillator that normalizes price extremes. Our review covers settings, entry signals, and why it’s a solid 4/5 tool for swing traders."
 grounding: "none (no source found)"
 ---
-# Inverse Fisher Transform Review
 Most oscillators that claim to "tame noise" or "find the perfect entry" are repackaged RSI or MACD with a new coat of paint. The Inverse_Fisher_Transform takes a different approach: it smooths price data into a clean, bounded oscillator that highlights overbought and oversold conditions without the lag typical of moving-average-based tools.
 
 ## What This Indicator Actually Does

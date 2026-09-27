@@ -19,7 +19,6 @@ rating: 4
 description: "Gann_Square draws Gann's Square of Nine on your chart. We test its key levels, best settings, and whether it’s worth the learning curve."
 grounding: "none (no source found)"
 ---
-# Gann Square Review
 If you've heard of W.D. Gann but never actually used his Square of Nine, this indicator is the closest you'll get without a geometry degree. Gann_Square plots those famous 45°, 90°, 180°, and 360° price levels directly on your chart, anchored to a swing high or low of your choice. It's a niche tool, but for traders who understand the underlying concept, it's surprisingly practical.
 
 ## What This Indicator Actually Does

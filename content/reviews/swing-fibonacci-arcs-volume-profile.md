@@ -1,5 +1,5 @@
 ---
-title: "Swing Fibonacci Arcs Volume Profile Review — Volume Indicator"
+title: "Swing Fibonacci Arcs Volume Profile Review — Volume"
 date: 2026-09-16
 draft: false
 type: reviews

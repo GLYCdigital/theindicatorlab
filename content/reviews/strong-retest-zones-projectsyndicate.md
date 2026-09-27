@@ -1,5 +1,5 @@
 ---
-title: "Strong Retest Zones Projectsyndicate Review — Trend Indicator"
+title: "Strong Retest Zones Projectsyndicate Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/azhOm7fF-Strong-Retest-Zones-ProjectSyndicate/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of Strong_Retest_Zones_Projectsyndicate: how it marks liquidity zones, best settings for entries, and whether it’s worth your time."
 grounding: "none (no source found)"
 ---
-# Strong Retest Zones Projectsyndicate Review
 If you've been burned by fake breakouts, you know the pain of watching price rip past a level, only to reverse and hit your stop. **Strong_Retest_Zones_Projectsyndicate** attempts to solve that by highlighting price zones where retests have historically held.
 
 ## What This Indicator Actually Does

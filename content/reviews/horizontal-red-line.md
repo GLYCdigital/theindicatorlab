@@ -18,7 +18,6 @@ rating: 4
 description: "A clear visual trend line indicator for TradingView. This review covers settings, strategy, and how to use Horizontal_Red_Line for breakout and support/resistance trading."
 grounding: "none (no source found)"
 ---
-# Horizontal Red Line Review
 You're scrolling through TradingView's indicator list and you see "Horizontal_Red_Line." The name is so literal it's almost funny. But before you write it off as a joke, it's worth understanding what this thing actually does, because it may be more useful than it sounds for a narrow set of use cases.
 
 **What it actually does:** Horizontal_Red_Line plots a single, fixed horizontal line at a user-defined price level. That's it. No dynamic calculations, no signals generated from candle closes. It's a manual reference line you can set to any price. Think of it as a permanent horizontal ray that stays put until you change the input.

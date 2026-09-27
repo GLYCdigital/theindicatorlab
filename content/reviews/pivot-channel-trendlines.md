@@ -1,5 +1,5 @@
 ---
-title: "Pivot Channel Trendlines Review — Support & Resistance Indicator"
+title: "Pivot Channel Trendlines Review — Support & Resistance"
 date: 2026-09-11
 draft: false
 type: reviews

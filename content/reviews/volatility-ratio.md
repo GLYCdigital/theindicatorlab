@@ -19,7 +19,6 @@ rating: 4
 description: "Volatility_Ratio review: a trend-strength gauge that filters noise. Tested settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Volatility Ratio Review
 Volatility_Ratio isn't another lagging moving average crossover dressed up with a fancy name. It's a trend-strength filter that measures the relationship between price movement and its own volatility. The core idea: when price moves faster than its average volatility, you have a real trend. When it doesn't, you're looking at chop. Pairing it with a classic momentum oscillator like MACD is a common way to see whether it adds anything to a setup you already run.
 
 ## What It Actually Does

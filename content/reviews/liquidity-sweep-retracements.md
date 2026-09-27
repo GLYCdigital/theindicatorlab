@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Sweep Retracements Review — Market Structure Indicator"
+title: "Liquidity Sweep Retracements Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/BsiAPuMJ-Liquidity-Sweep-Retracements-MarkitTick/"
 date: 2026-07-16
 draft: false

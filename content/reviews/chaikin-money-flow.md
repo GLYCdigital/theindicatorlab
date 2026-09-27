@@ -19,7 +19,6 @@ rating: 3
 description: "Chaikin Money Flow measures buying vs selling pressure over a lookback period. Decent for confirmation, but laggy and noisy as a standalone signal."
 grounding: "none (no source found)"
 ---
-# Chaikin Money Flow Review
 Chaikin Money Flow is one of those indicators many traders try, but relatively few end up keeping. Here's an unfiltered look at what it does and where it fits.
 
 **What it actually does**

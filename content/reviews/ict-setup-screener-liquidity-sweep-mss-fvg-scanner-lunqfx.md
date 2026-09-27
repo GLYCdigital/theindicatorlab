@@ -1,5 +1,5 @@
 ---
-title: "ICT Setup Screener Liquidity Sweep Mss FVG Scanner Lunqfx Review — Market Structure Indicator"
+title: "ICT Setup Screener Liquidity Sweep Mss FVG Scanner Lunqfx Review"
 date: 2026-09-25
 draft: false
 type: reviews

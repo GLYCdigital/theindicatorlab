@@ -19,7 +19,6 @@ rating: 4
 description: "Trend_Predictor_Ribbon review: tested settings, entry/exit logic, pros & cons. Is this multi-color trend ribbon worth adding to your chart?"
 grounding: "none (no source found)"
 ---
-# Trend Predictor Ribbon Review
 Most trend ribbon indicators are repackaged moving averages with extra paint. Trend_Predictor_Ribbon attempts something more ambitious: predicting trend direction before price confirms it.
 
 ## What It Actually Does

@@ -19,7 +19,6 @@ rating: 3
 description: "A practical ATR Trailing Stop review. We test its settings, entry/exit logic, and compare it to better alternatives. 3/5 stars."
 grounding: "none (no source found)"
 ---
-# ATR Trailing Stop Review
 Most trailing stop indicators are overcomplicated, repaint, or just look pretty. The ATR Trailing Stop from the "07" category is a different beast — it's simple, functional, and doesn't promise miracles.
 
 ## What This Indicator Actually Does

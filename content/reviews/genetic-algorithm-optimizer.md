@@ -18,7 +18,7 @@ rating: 4
 description: "Honest review of Genetic_Algorithm_Optimizer. Learn how to use its settings for backtesting, avoid overfitting, and when it actually works."
 grounding: "none (no source found)"
 ---
-# Honest Review of Genetic_Algorithm_Optimizer
+## Honest Review of Genetic_Algorithm_Optimizer
 
 Optimization tools on TradingView tend to fall into two camps: too simple to be useful, or too complex to set up without a computer science background. The Genetic_Algorithm_Optimizer sits somewhere in between—it automates parameter optimization without requiring you to write code, but it will punish careless use.
 

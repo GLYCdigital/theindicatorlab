@@ -19,7 +19,6 @@ rating: 4
 description: "Price_Channel_Breakout review: honest look at settings, breakout strategy, and whether this simple channel indicator earns its place on your chart."
 grounding: "none (no source found)"
 ---
-# Price Channel Breakout Review
 Price_Channel_Breakout is a channel-based breakout indicator that sits a notch above the usual Donchian clone. It isn't flashy, but it does one thing well — it defines the channel cleanly and flags breakouts without overselling them.
 
 ## What You're Actually Getting

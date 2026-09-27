@@ -1,5 +1,5 @@
 ---
-title: "Signal Follow Through Ledger Mqlsoftware Review — Trend Indicator"
+title: "Signal Follow Through Ledger Mqlsoftware Review — Trend"
 date: 2026-09-12
 draft: false
 type: reviews

@@ -19,7 +19,6 @@ rating: 4
 description: "Honest CCI Divergence indicator review. See how this tool spots hidden and regular divergences, best settings for 1H–4H, and how to trade it without false signals."
 grounding: "none (no source found)"
 ---
-# CCI Divergence Review
 Divergence detectors are a crowded category, and most of them amount to little more than an arrow printed on a chart. The **Cci_Divergence** indicator for TradingView is a leaner proposition: it plots divergence lines between CCI extremes and price extremes rather than cluttering the screen with signals.
 
 ### What It Actually Does

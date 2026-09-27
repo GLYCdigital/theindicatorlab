@@ -19,7 +19,6 @@ rating: 4
 description: "Session_Volume_Profile review: tested settings, entry/exit logic, pros/cons. Is this volume-based trend indicator worth adding to your arsenal?"
 grounding: "none (no source found)"
 ---
-# Session Volume Profile Review
 Session volume profile tools on TradingView tend to fall into two camps: over-engineered suites that bury the core function under layers of options, or lightweight scripts that quietly repaint. Session_Volume_Profile sits closer to the middle, and that positioning is part of its appeal. It does one thing — visualizing where volume clustered during specific trading sessions — and it does that thing without much decoration.
 
 ## What It Actually Does

@@ -19,7 +19,6 @@ rating: 4
 description: "Ema_Supertrend_Obv_Strixedge combines three core tools for trend traders. Honest review with settings, entry rules, and real performance."
 grounding: "none (no source found)"
 ---
-# EMA Supertrend OBV Strixedge Review
 This indicator is not revolutionary, but it's a clean mashup of three established concepts—EMA, SuperTrend, and OBV—combined into one pane. If you already use any of these tools separately, the layout will feel familiar. If you're new to trend trading, it offers a structured starting point.
 
 ## What It Actually Does

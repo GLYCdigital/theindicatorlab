@@ -19,7 +19,6 @@ description: "Order_Flow_Profiler review: test results, optimal settings, and ho
 tv_script_url: "https://www.tradingview.com/script/ymFdt7LE-Order-Flow-Profiler-Zeiierman/"
 sources: ["https://www.tradingview.com/script/ymFdt7LE-Order-Flow-Profiler-Zeiierman/"]
 ---
-# Order Flow Profiler Review
 The name invites confusion. "Order Flow Profiler" is not a footprint chart and it does not read a live order book. It's a price-based volume profiling indicator that estimates how buying and selling activity is distributed across price levels within a selected chart window. Once you drop the expectation of a true bid/ask visualization, the tool has a coherent job to do.
 
 ## What It Actually Does

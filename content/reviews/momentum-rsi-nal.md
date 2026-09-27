@@ -19,7 +19,6 @@ rating: 4
 description: "Momentum_Rsi_Nal combines RSI and momentum to spot trend shifts. See tested settings, entry rules, and how it fits real trading."
 grounding: "none (no source found)"
 ---
-# Momentum RSI Nal Review
 **Momentum_Rsi_Nal** is a trend-following indicator that attempts to address a familiar problem: RSI alone gets noisy in choppy markets, and plain momentum lags. This script fuses both into a single oscillator line with color-coded bars, and adds a divergence-detection layer on top.
 
 ## What It Does

@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Wyckoff_Accumulation_Distribution review: settings, entry/exit logic, pros/cons, and who should use this trend indicator. Tested on real charts."
 grounding: "none (no source found)"
 ---
-# Wyckoff Accumulation Distribution Review
 The Wyckoff_Accumulation_Distribution indicator is a trend tool that filters noise and attempts to show where larger participants may be positioning. It does not reinvent the wheel, but it targets a specific job: reading accumulation and distribution pressure rather than raw price alone.
 
 ## What This Indicator Actually Does

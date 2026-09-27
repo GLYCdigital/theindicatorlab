@@ -19,7 +19,7 @@ description: "Hands-on Sweep_Ifvg_M1D review: how liquidity sweeps + IFVG conflu
 tv_script_url: "https://www.tradingview.com/script/XXWVc6m3-Sweep-IFVG-M1D/"
 sources: ["https://www.tradingview.com/script/XXWVc6m3-Sweep-IFVG-M1D/"]
 ---
-# Sweep IFVG Review: A Sequence-Based Liquidity and Imbalance Tool
+## Sweep IFVG Review: A Sequence-Based Liquidity and Imbalance Tool
 
 Most gap indicators draw every imbalance on the chart and let you sort out which ones matter. Sweep IFVG takes the opposite approach: it starts from the liquidity event and works forward, so a gap that opened without a raid in front of it is not a candidate and never appears. What survives to the chart is a small number of zones with a reason behind each one.
 

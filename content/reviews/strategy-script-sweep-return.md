@@ -1,5 +1,5 @@
 ---
-title: "Strategy Script Sweep Return Review — Market Structure Indicator"
+title: "Strategy Script Sweep Return Review — Market Structure"
 date: 2026-09-17
 draft: false
 type: reviews

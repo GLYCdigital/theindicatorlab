@@ -1,5 +1,5 @@
 ---
-title: "RSI Quadrature Phase Fusion Fibonacciflux Review — Momentum Indicator"
+title: "RSI Quadrature Phase Fusion Fibonacciflux Review — Momentum"
 date: 2026-08-31
 draft: false
 type: reviews

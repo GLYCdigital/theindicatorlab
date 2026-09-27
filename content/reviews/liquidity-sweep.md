@@ -19,7 +19,6 @@ rating: 4
 description: "Liquidity_Sweep identifies stop hunts and liquidity grabs in trending markets. Review covers settings, entry logic, pros & cons, and who it actually works for."
 grounding: "none (no source found)"
 ---
-# Liquidity Sweep Review
 Let's be honest: most "liquidity" indicators are just repackaged support/resistance lines with a fancy name. **Liquidity_Sweep** takes a different approach—it labels specific price moves where stops were likely triggered above recent highs or below recent lows, then shows whether momentum followed through.
 
 ## What This Indicator Actually Does

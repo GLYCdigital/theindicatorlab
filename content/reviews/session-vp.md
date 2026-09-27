@@ -19,7 +19,6 @@ rating: 4
 description: "Session_Vp review: a session-based volume profile for TradingView. Tested settings, pros/cons, and how to trade trend continuations with it."
 grounding: "none (no source found)"
 ---
-# Session Vp Review
 Session_Vp is a session-specific volume profile. Rather than a single cumulative profile spanning weeks, it builds a separate profile for each trading session (Asian, London, New York, etc.) and displays the price levels where the most volume traded in each. The distinction matters: liquidity pools shift depending on which session is active, and a per-session view reflects that in a way a single aggregate profile does not.
 
 ## Key Features That Matter

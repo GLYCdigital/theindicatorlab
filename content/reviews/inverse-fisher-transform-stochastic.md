@@ -1,5 +1,5 @@
 ---
-title: "Inverse Fisher Transform Stochastic Review — Momentum Indicator"
+title: "Inverse Fisher Transform Stochastic Review — Momentum"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Absorption Detection Review — Market Structure Indicator"
+title: "Liquidity Absorption Detection Review — Market Structure"
 date: 2026-08-08
 draft: false
 type: reviews
@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Liquidity_Absorption_Detection review: how it spots absorption zones, best settings, entry strategies, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Liquidity Absorption Detection Review
 Most "liquidity" indicators on TradingView just paint boxes around old highs and lows and call it a day. This one attempts something more specific: detecting *absorption* — the moment when passive orders at a level get consumed by aggressive flow, which is a more nuanced signal than a simple support/resistance flip.
 
 ## What This Indicator Actually Does

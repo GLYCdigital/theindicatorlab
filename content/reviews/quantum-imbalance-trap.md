@@ -19,7 +19,7 @@ rating: 4
 description: "Quantum_Imbalance_Trap spots order-flow traps and imbalance zones. Read our honest review with settings, entry tactics, and where it falls short."
 grounding: "none (no source found)"
 ---
-# Quantum_Imbalance_Trap Review: Settings, Strategy & How to Use It
+## Quantum_Imbalance_Trap Review: Settings, Strategy & How to Use It
 
 **Rating:** ⭐⭐⭐⭐ (4/5)
 

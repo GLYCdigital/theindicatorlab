@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/ehex5HU2-Sattam-Harmonic-Lab/
 sources: ["https://www.tradingview.com/script/ehex5HU2-Sattam-Harmonic-Lab/"]
 grounding: "none (no source found)"
 ---
-# Sattam Harmonic Lab Review
 Sattam_Harmonic_Lab is not the harmonic pattern scanner its name suggests. There are no XABCD legs, no Fibonacci ratio table, no zigzag overlay hunting for crab and butterfly formations. What you get instead is a trend-following overlay built for the MACD pane — the chart type it's designed around — that reads momentum shifts and plots directional bias as price develops. Once you accept that framing, it becomes a coherent tool.
 
 ## What it actually does

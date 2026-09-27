@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Stochastic Momentum Index (SMI) review: settings, pros/cons, and how to trade trend pullbacks without the noise."
 grounding: "none (no source found)"
 ---
-# Stochastic Momentum Index Smi Review
 The Stochastic Momentum Index is essentially a refined take on the standard stochastic oscillator. Rather than using a single smoothing pass on raw stochastic values, the SMI smooths twice — once for the %K line and again for the signal line. The intent is to produce a momentum oscillator that respects the prevailing trend instead of reacting to every minor price fluctuation. Traders who have used the classic stochastic and found themselves chopped up in ranging conditions may find this double-smoothing approach worth a closer look.
 
 The distinction from a standard stochastic shows up in the character of the signal: fewer crossovers, cleaner overbought/oversold readings, and a signal line that doesn't flip back and forth as readily.

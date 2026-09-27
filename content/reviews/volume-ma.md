@@ -19,7 +19,6 @@ rating: 4
 description: "Volume_Ma review: a simple volume-weighted trend filter. Tested settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Volume Ma Review
 Volume_Ma is a volume-weighted take on the classic moving average. It plots a trend line where each bar's contribution to the average is scaled by how much volume traded during that bar. Instead of treating every candle equally the way a simple moving average does, it gives more influence to high-activity bars and less to quiet ones. The intended result is a smoother line that responds more to genuine participation and less to low-volume noise.
 
 That's the entire premise. There's no histogram, no crossover arrows, no signal logic. It's one line you overlay on price or drop into its own pane.

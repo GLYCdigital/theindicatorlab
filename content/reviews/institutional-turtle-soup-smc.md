@@ -1,5 +1,5 @@
 ---
-title: "Institutional Turtle Soup SMC Review — Market Structure Indicator"
+title: "Institutional Turtle Soup SMC Review — Market Structure"
 date: 2026-07-16
 draft: false
 type: reviews

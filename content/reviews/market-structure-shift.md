@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Market_Structure_Shift indicator review: settings, pros/cons, and how to trade breakouts without getting chopped up."
 grounding: "none (no source found)"
 ---
-# Market Structure Shift Review
 Most "market structure" indicators on TradingView are repackaged pivot point detectors with extra lines. Market_Structure_Shift does something narrower: it identifies the candle where price breaks a swing high or low and marks it as a potential shift in trend direction. The output is binary — structure either broke or it didn't.
 
 ## What You're Actually Looking At

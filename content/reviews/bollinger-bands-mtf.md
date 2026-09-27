@@ -19,7 +19,6 @@ rating: 4
 description: "Multi-timeframe Bollinger Bands with automatic higher timeframe signals. A smart twist on a classic tool for trend and volatility analysis."
 grounding: "none (no source found)"
 ---
-# Bollinger Bands MTF Review
 The concept of multi-timeframe Bollinger Bands isn't new, but this indicator executes it cleanly. It's aimed at traders who want higher-timeframe context without cluttering their chart.
 
 **What it actually does:** This indicator plots Bollinger Bands from a higher timeframe onto your current chart. For example, you can see the daily bands while trading the 4-hour chart. It also color-codes the bands based on whether price is above or below the higher timeframe middle line (SMA), and optionally highlights squeeze and expansion zones.

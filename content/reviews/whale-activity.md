@@ -19,7 +19,7 @@ rating: 4
 description: "Tracks large-volume transactions in real time to spot whale accumulation or distribution. Honest review of settings, signals, and who it actually works for."
 grounding: "none (no source found)"
 ---
-# Whale_Activity Review: Tracking Large-Volume Transactions in Real Time
+## Whale_Activity Review: Tracking Large-Volume Transactions in Real Time
 
 Tracks large-volume transactions in real time to spot whale accumulation or distribution. Honest review of settings, signals, and who it actually works for.
 

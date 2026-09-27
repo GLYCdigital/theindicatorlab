@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Three_White_Soldiers indicator review: settings, entry logic, pros/cons. See if this classic candlestick pattern scanner earns a spot on your chart."
 grounding: "none (no source found)"
 ---
-# Three White Soldiers Review
 Let's get one thing straight right away: the Three White Soldiers pattern is one of the oldest and most respected bullish reversal signals in technical analysis. The TradingView indicator that goes by this name automates the detection of that pattern — three consecutive long bullish candlesticks that close at or near their highs, each opening within the previous candle's body.
 
 But here's what separates this version from a simple pattern scanner: it layers in trend context. The indicator doesn't just flash "BUY" every time it sees three green candles in a row. It checks whether the pattern emerges after a downtrend or during a pullback within an uptrend — which is exactly when the Three White Soldiers signal actually matters. That's the difference between a useful tool and a noise generator.

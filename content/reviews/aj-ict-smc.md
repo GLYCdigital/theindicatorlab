@@ -18,7 +18,6 @@ rating: 4
 description: "Aj_Ict_Smc auto-draws ICT concepts like FVG, order blocks, and liquidity. Clean but not perfect. Read my honest review."
 grounding: "none (no source found)"
 ---
-# Aj ICT SMC Review
 Aj_Ict_Smc is a script that auto-detects and plots ICT (Inner Circle Trader) and Smart Money Concepts (SMC) patterns directly on the chart. It's functional and reasonably clean, but it isn't a holy grail. Here's an honest breakdown.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Reversal Probability Profile Algoalpha Review — Volume Indicator"
+title: "Reversal Probability Profile Algoalpha Review — Volume"
 date: 2026-09-10
 draft: false
 type: reviews

@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Parabolic_Sar_Macd_Combo review. Tests PSAR and MACD combo for trend entries, exits, and false signal filters. Settings included."
 grounding: "none (no source found)"
 ---
-# Parabolic Sar MACD Combo Review
 Trend-following indicators tend to fall into two camps: too noisy or too laggy. The Parabolic_Sar_Macd_Combo attempts to address that by combining two classics—Parabolic SAR and MACD—into a single confirmation system. Here's what it does and where it fits.
 
 ### What It Actually Does

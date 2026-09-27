@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Supertrend review: tested settings, ATR multiplier tricks, entry/exit logic, pros vs cons, and who should actually use it."
 grounding: "none (no source found)"
 ---
-# Supertrend Review
 Supertrend isn't clever. It's not a secret formula. It's a trend-following workhorse that's been around for two decades, and if you've traded for more than a month, you've probably seen it painted across someone's chart. But it still works, and it works better than most of the over-engineered indicators on TradingView.
 
 **What it really does**

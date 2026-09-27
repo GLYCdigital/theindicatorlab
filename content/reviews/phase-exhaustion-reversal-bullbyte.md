@@ -19,7 +19,6 @@ rating: 4
 description: "Phase_Exhaustion_Reversal_Bullbyte catches trend exhaustion and reversal signals using phase analysis. Honest review with settings, strategy, and who it's for."
 grounding: "none (no source found)"
 ---
-# Phase Exhaustion Reversal Bullbyte Review
 The name is a mouthful, but the concept behind it — phase exhaustion — is worth understanding before you decide whether it belongs on your chart.
 
 ## What This Indicator Actually Does

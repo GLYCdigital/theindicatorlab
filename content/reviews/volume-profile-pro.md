@@ -19,7 +19,6 @@ rating: 4
 description: "Volume_Profile_Pro delivers institutional-grade volume profile analysis. See settings, strategy, and honest performance data from my backtests."
 grounding: "none (no source found)"
 ---
-# Volume Profile Pro Review
 Volume Profile Pro is not a magic bullet, but it's a clean implementation of volume profile on TradingView. Here's a breakdown of what it does and where it fits.
 
 ## What This Indicator Actually Does

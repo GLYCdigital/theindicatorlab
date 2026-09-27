@@ -1,5 +1,5 @@
 ---
-title: "Market Structure Oscillator Review — Market Structure Indicator"
+title: "Market Structure Oscillator Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/K47z5Kmf-Market-Structure-Oscillator-LuxAlgo/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Market_Structure_Oscillator review: combines swing analysis with oscillator logic for cleaner trend entries. Settings, pros/cons, and strategy inside."
 grounding: "none (no source found)"
 ---
-# Market Structure Oscillator Review
 The **Market_Structure_Oscillator** is not another lagging momentum line painted on top of price. It's a hybrid tool that maps market structure — higher highs, lower lows, break of structure (BOS), change of character (CHoCH) — into a clean oscillator format. For traders who already read structure on the chart, that framing is the main appeal: it compresses discrete swing events into a single continuous line.
 
 ## What This Indicator Actually Does

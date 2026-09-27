@@ -1,5 +1,5 @@
 ---
-title: "Liquidity Gravity Map Phenlabs Review — Market Structure Indicator"
+title: "Liquidity Gravity Map Phenlabs Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/vZQxS815-Liquidity-Gravity-Map-PhenLabs/"
 date: 2026-07-16
 draft: false

@@ -19,7 +19,6 @@ rating: 4
 description: "Macro_Trend_Split_Profile review: practical settings, honest pros/cons, and entry/exit strategy for this trend-splitting TradingView indicator."
 grounding: "none (no source found)"
 ---
-# Macro Trend Split Profile Review
 Many "revolutionary" trend indicators turn out to be repackaged moving averages with extra paint. Macro_Trend_Split_Profile is worth examining on its own terms rather than dismissing it on sight — but it comes with significant caveats you should understand before installing it.
 
 **What it actually does**

@@ -18,7 +18,6 @@ rating: 4
 description: "Ichimoku_Kumo_Breakout automates cloud break signals. Its settings, best pairs, and entry/exit rules — an honest 4/5 review."
 grounding: "none (no source found)"
 ---
-# Ichimoku Kumo Breakout Review
 Most Ichimoku-based indicators are lagging, repainting clutter. Ichimoku_Kumo_Breakout takes the classic Kumo (cloud) breakout concept and packages it cleanly—no fluff, just plotted signals.
 
 ## What This Indicator Actually Does

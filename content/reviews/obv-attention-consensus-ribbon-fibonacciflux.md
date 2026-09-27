@@ -1,5 +1,5 @@
 ---
-title: "OBV Attention Consensus Ribbon Fibonacciflux Review — Volume Indicator"
+title: "OBV Attention Consensus Ribbon Fibonacciflux Review — Volume"
 date: 2026-08-29
 draft: false
 type: reviews

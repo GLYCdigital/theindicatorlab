@@ -1,5 +1,5 @@
 ---
-title: "Nadaraya Watson Regression Liquidity Sweeps Algoalpha Review — Market Structure Indicator"
+title: "Nadaraya Watson Regression Liquidity Sweeps Algoalpha Review"
 tv_script_url: "https://www.tradingview.com/script/IdfeKkUv-Nadaraya-Watson-Regression-Liquidity-Sweeps-AlgoAlpha/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,7 @@ rating: 4
 description: "Combines Nadaraya-Watson smoothing with liquidity sweep detection. Great for spotting fakeouts and key levels, but needs tweaking."
 grounding: "none (no source found)"
 ---
-# Review: Liquidity Sweeps with Nadaraya-Watson Regression
+## Review: Liquidity Sweeps with Nadaraya-Watson Regression
 
 ## What This Indicator Actually Does
 

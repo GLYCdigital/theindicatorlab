@@ -19,7 +19,6 @@ rating: 4
 description: "An honest review of Trend_Strength_Indicator. Find out its best settings, entry/exit rules, pros/cons, and whether it’s worth your time."
 grounding: "none (no source found)"
 ---
-# Trend Strength Indicator Review
 If you've browsed TradingView for long, you know the pattern: dozens of trend indicators that all promise to catch the next big move, but many just repackage RSI or a moving average with a new coat of paint. Trend_Strength_Indicator takes a different angle—it attempts to measure the *conviction* behind a trend rather than just its direction. Here's a closer look at what it offers and where it falls short.
 
 ## What It Actually Does

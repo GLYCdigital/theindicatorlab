@@ -19,7 +19,6 @@ rating: 4
 description: "A_L_P_H_A_X_Surge identifies explosive momentum shifts using volume and volatility. Honest review with settings, strategy, and real trade logic."
 grounding: "none (no source found)"
 ---
-# Alphax Surge Review
 Most momentum indicators look excellent in hindsight and fall apart in live conditions. The question with any of them is whether the signal you see on a closed bar is the signal you would have acted on. This review covers what A_L_P_H_A_X_Surge claims to do, how it is structured, and where its limitations sit.
 
 ### What This Indicator Actually Does

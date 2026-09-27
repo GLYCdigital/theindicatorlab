@@ -1,5 +1,5 @@
 ---
-title: "Equal Highs Lows Liquidity Pool Engine Algo Aakash Review — Market Structure Indicator"
+title: "Equal Highs Lows Liquidity Pool Engine Algo Aakash Review"
 tv_script_url: "https://www.tradingview.com/script/S4ASdOE9-Equal-Lows-and-Highs-v2-basement-ogre/"
 date: 2026-07-16
 draft: false

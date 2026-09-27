@@ -19,7 +19,6 @@ rating: 4
 description: "A no-nonsense review of Bollinger_Bands_Standard. See what makes this classic volatility tool tick, best settings, entry/exit tactics, and who should skip it."
 grounding: "none (no source found)"
 ---
-# Bollinger Bands Standard Review
 There's no shortage of Bollinger Bands on TradingView, but Bollinger_Bands_Standard by John Bollinger himself is the benchmark. Most Bollinger Band scripts are clones of the same underlying formula; this one is the original, with no added bloat. Whether that makes it the right choice depends on what you need from a band indicator.
 
 ## What This Indicator Actually Does

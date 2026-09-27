@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Market_Meanness_Index review: how to set it up, what it measures, and how to trade mean reversion without overcomplicating your charts."
 grounding: "none (no source found)"
 ---
-# Market Meanness Index Review
 Most "mean reversion" indicators are glorified moving averages that either repaint or lag too much to be useful. The **Market_Meanness_Index** aims to be something different. Here's a closer look at what it claims to do and where it fits in a mean reversion toolkit.
 
 ---

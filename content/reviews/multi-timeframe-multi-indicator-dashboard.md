@@ -1,5 +1,5 @@
 ---
-title: "Multi Timeframe Multi Indicator Dashboard Review — Trend Indicator"
+title: "Multi Timeframe Multi Indicator Dashboard Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/W6KxkZen-Multi-TF-Multi-Indicator-Dashboard-IntradayScalper/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Multi_Timeframe_Multi_Indicator_Dashboard review: Combines RSI, MACD, MA, Bollinger Bands across 5 timeframes. Best settings, entry/exit rules, pros/cons, and who it suits."
 grounding: "none (no source found)"
 ---
-# Multi Timeframe Multi Indicator Dashboard Review
 A multi-timeframe dashboard that consolidates RSI, MACD, moving average crossovers, and Bollinger Band width into a single color-coded table. The premise is simple: stop flipping between charts to check whether the 1H is diverging while the 4H is still trending. Whether that trade-off is worth the chart real estate is the real question.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Liquidity Reclaim Map Phenlabs Review — Market Structure Indicator"
+title: "Adaptive Liquidity Reclaim Map Phenlabs Review"
 date: 2026-08-29
 draft: false
 type: reviews

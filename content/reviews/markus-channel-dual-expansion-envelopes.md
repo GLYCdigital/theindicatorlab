@@ -1,5 +1,5 @@
 ---
-title: "Markus Channel Dual Expansion Envelopes Review — Volatility Indicator"
+title: "Markus Channel Dual Expansion Envelopes Review — Volatility"
 date: 2026-09-09
 draft: false
 type: reviews

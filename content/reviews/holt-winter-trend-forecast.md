@@ -18,7 +18,6 @@ rating: 4
 description: "Holt-Winter Trend Forecast: a triple exponential smoothing tool that predicts price direction and cycles. Read our honest review, settings, and strategy."
 grounding: "none (no source found)"
 ---
-# Holt Winter Trend Forecast Review
 Holt_Winter_Trend_Forecast applies triple exponential smoothing to price, decomposing it into level, trend, and seasonal components and projecting that structure forward. It is a forecasting model rather than a lagging average: instead of only smoothing price, it estimates where the trend should go based on historical patterns.
 
 ## What This Indicator Actually Does

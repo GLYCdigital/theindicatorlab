@@ -1,5 +1,5 @@
 ---
-title: "Optipine High Performance Caching And Data Pipelines Review — Trend Indicator"
+title: "Optipine High Performance Caching And Data Pipelines Review"
 date: 2026-08-22
 draft: false
 type: reviews
@@ -19,7 +19,7 @@ description: "Optipine High Performance Caching review: a trend indicator that s
 tv_script_url: "https://www.tradingview.com/script/UiiesMWO-OptiPine-High-Performance-Caching-and-Data-Pipelines/"
 sources: ["https://www.tradingview.com/script/UiiesMWO-OptiPine-High-Performance-Caching-and-Data-Pipelines/", "https://creativecommons.org/licenses/by-nc-sa/4.0/"]
 ---
-# OptiPine Review: A Performance Library, Not a Signal Generator
+## OptiPine Review: A Performance Library, Not a Signal Generator
 
 Let's be clear about what this is before anything else. OptiPine is not a trend indicator, an arrow system, or a signal generator. It is a **Pine Script library** — a high-performance architecture layer for algorithms that need to do more work than a standard indicator can afford. If you are looking for entries and exits on a chart, this is not that. If you are building something heavy in Pine — a rendering engine, a simulation, a dashboard, a model runtime — this is the toolkit that decides whether your feature runs at all.
 

@@ -18,7 +18,6 @@ rating: 4
 description: "A practical backtesting dashboard for TradingView that tracks win rate, profit factor, and trade stats in real time. No fluff."
 grounding: "none (no source found)"
 ---
-# Backtesting Dashboard Review
 Most backtesting tools on TradingView tend toward one of two extremes: bloated with toggles you'll never touch, or so basic they tell you nothing useful. Backtesting_Dashboard aims at the middle—a live trade log that surfaces core performance metrics directly on your chart without demanding a Pine Script strategy.
 
 ### What This Indicator Actually Does

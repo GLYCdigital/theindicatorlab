@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Supertrend_With_Buy_Sell_Signals review: settings, entry logic, pros/cons, and how it compares to raw Supertrend on TradingView."
 grounding: "none (no source found)"
 ---
-# Supertrend With Buy Sell Signals Review
 A Supertrend with arrows is nothing new. Plenty of indicators on TradingView slap buy/sell labels on a basic Supertrend and call it a day. **Supertrend_With_Buy_Sell_Signals** is a variant on that familiar format, and the question worth asking is whether the added signal logic changes anything meaningful.
 
 ## What This Actually Does

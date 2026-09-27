@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Coppock Curve review: how it works, best settings for monthly/daily charts, entry signals, pros/cons, and who it actually helps."
 grounding: "none (no source found)"
 ---
-# Coppock Curve Review
 The Coppock Curve is a momentum oscillator originally designed by economist Edwin Coppock for long-term market timing. On TradingView, several versions exist, but the core logic is consistent: it calculates a smoothed rate-of-change over long lookback periods to identify major buying opportunities after deep downturns. Think of it as a "bottom-fishing" tool built for weekly or monthly charts.
 
 ### What This Indicator Actually Does

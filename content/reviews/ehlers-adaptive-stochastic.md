@@ -19,7 +19,6 @@ rating: 4
 description: "Ehlers Adaptive Stochastic review: adaptive stochastic oscillator with dynamic periods. How to set it up, strategy tips, and who it's actually for."
 grounding: "none (no source found)"
 ---
-# Ehlers Adaptive Stochastic Review
 The standard stochastic oscillator is a well-known lagging tool in choppy markets. John Ehlers' Adaptive Stochastic attempts to address that by dynamically adjusting its lookback period based on market cycles. Here's a breakdown of what it does and who it's for.
 
 ## What This Indicator Actually Does

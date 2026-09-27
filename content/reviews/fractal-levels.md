@@ -19,7 +19,6 @@ rating: 4
 description: "Fractal_Levels auto-draws key support/resistance from Bill Williams fractals. See settings, entry tactics, and honest pros/cons for scalpers and swing traders."
 grounding: "none (no source found)"
 ---
-# Fractal Levels Review
 Fractal-based indicators on TradingView tend to fall into two camps: too noisy to be useful, or prone to repainting. Fractal_Levels takes the classic Bill Williams fractal concept and turns it into a support/resistance tool, with some design choices that address both problems.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Mynd Risk Based Position Size Calculator 5 Review — Trend Indicator"
+title: "Mynd Risk Based Position Size Calculator 5 Review — Trend"
 date: 2026-09-02
 draft: false
 type: reviews

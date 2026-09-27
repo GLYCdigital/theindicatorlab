@@ -19,7 +19,6 @@ rating: 4
 description: "Multi_Timeframe_Volume_Profiles overlays volume profiles from higher timeframes onto your current chart, revealing hidden support/resistance. Tested and reviewed."
 grounding: "none (no source found)"
 ---
-# Multi Timeframe Volume Profiles Review
 Most volume profile indicators show you one timeframe—usually the one you're trading. That's fine for scalping, but limited if you're trying to see where larger participants have been active on the daily or weekly chart. **Multi_Timeframe_Volume_Profiles** addresses that by overlaying volume profiles from higher timeframes directly onto your lower timeframe chart—a macro lens and a microscope at the same time.
 
 ### What It Actually Does

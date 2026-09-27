@@ -18,7 +18,6 @@ rating: 4
 description: "Honest ADX indicator review by a trader who tested it. Best settings, entry/exit signals, pros, cons, and alternatives. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# ADX Average Directional Index Review
 Let's be real: most traders slap the default ADX on their chart and call it a day. They watch the line cross 25, buy, and wonder why they're underwater.
 
 ## What This Indicator Actually Does

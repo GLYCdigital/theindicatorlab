@@ -1,5 +1,5 @@
 ---
-title: "Automatic Support Resistance Review — Support & Resistance Indicator"
+title: "Automatic Support Resistance Review — Support & Resistance"
 tv_script_url: "https://www.tradingview.com/script/HOx9WOnJ-Automatic-Support-Resistance-getmohsin-py/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Automatic_Support_Resistance draws clean S/R levels using pivot points. Settings, backtest results, entry/exit tips, and honest pros vs cons."
 grounding: "none (no source found)"
 ---
-# Automatic Support Resistance Review
 If you've ever drawn support and resistance lines by hand and watched price blow through them shortly after, an automated level plotter is worth a look. Here's a breakdown of what **Automatic_Support_Resistance** offers.
 
 ## What This Indicator Actually Does

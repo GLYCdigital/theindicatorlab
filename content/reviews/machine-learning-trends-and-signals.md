@@ -19,7 +19,6 @@ rating: 4
 description: "An honest review of the Machine_Learning_Trends_And_Signals indicator. Tested settings, pros/cons, and whether this ML-driven trend tool is worth your time."
 grounding: "none (no source found)"
 ---
-# Machine Learning Trends And Signals Review
 The name sounds like a buzzword generator, but the underlying tool is more modest than it suggests. Here's an honest look at what it does and where it fits.
 
 ## What It Actually Does

@@ -19,7 +19,6 @@ rating: 4
 description: "Hands-on Rsi_Divergence_Mtf review: multi-timeframe RSI divergence scanner with clean signals. Tested settings, entry strategy, pros, cons, and verdict."
 grounding: "none (no source found)"
 ---
-# RSI Divergence MTF Review
 Divergence indicators are a crowded category. Many are repackaged momentum crossovers, and many flood the chart with so many arrows that the signals stop being actionable. Rsi_Divergence_Mtf is notable for a different reason: it applies multi-timeframe logic to divergence detection rather than treating the current chart's RSI in isolation. It is a useful tool with real caveats.
 
 **What it actually does**

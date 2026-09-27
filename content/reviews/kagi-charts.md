@@ -18,7 +18,6 @@ rating: 4
 description: "Kagi_Charts eliminates noise by focusing on price reversals. A clean, classic tool for trend and swing traders. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Kagi Charts Review
 Kagi charts remove time from the equation entirely, plotting price as a series of vertical lines whose direction flips only when price reverses by a defined amount. That structural difference is the whole point: no time axis, no candle wicks, no session gaps to interpret. Whether that's an improvement depends on what you're trying to do.
 
 ## What This Indicator Actually Does

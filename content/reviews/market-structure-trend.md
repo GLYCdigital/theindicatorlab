@@ -19,7 +19,6 @@ rating: 4
 description: "Market_Structure_Trend review: tested settings, entry/exit logic, pros & cons. A solid 4/5 trend indicator for swing traders who respect structure."
 grounding: "none (no source found)"
 ---
-# Market Structure Trend Review
 Market_Structure_Trend is not another repainted moving average crossover dressed up with a fancy name. It's a swing-point detector that plots higher highs and higher lows (or the bearish equivalents) directly on your chart, then uses that structure to define trend direction with a clean color-coded line.
 
 The premise is straightforward: identify market structure the way a price action trader would, and do it mechanically. Whether it delivers on that premise depends on what you expect from a trend tool.

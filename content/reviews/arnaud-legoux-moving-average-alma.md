@@ -19,7 +19,6 @@ rating: 4
 description: "ALMA eliminates lag better than SMA/EMA while staying smoother than WMA. Best settings, pros/cons, and how to use it for entries and exits."
 grounding: "none (no source found)"
 ---
-# Arnaud Legoux Moving Average Alma Review
 If you've ever watched a moving average drag behind price like a dead weight, you know the frustration. The Arnaud Legoux Moving Average (ALMA) was designed to address exactly that—less lag than an EMA, but smoother than a WMA. Here's a breakdown of what it does and how to think about using it.
 
 **What this indicator actually does**

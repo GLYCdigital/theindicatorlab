@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Andrews Pitchfork review: how to set it up, trade with it, and whether it actually works. Includes best settings, entry rules, and who it’s for."
 grounding: "none (no source found)"
 ---
-# Andrews Pitchfork Review
 Andrews Pitchfork is one of the older tools in the technical analysis toolbox, and it gets overlooked by traders who prefer oscillators and signal-based indicators. But it has survived for decades for a reason: when the structure lines up, it frames price action cleanly. Here's a straightforward look at what it does and where it fits.
 
 ## What This Indicator Actually Does

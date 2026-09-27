@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of TradingView's Linear_Regression_Line indicator. How to set it up, best strategies, pros/cons, and who it actually works for."
 grounding: "none (no source found)"
 ---
-# Linear Regression Line Review
 The Linear_Regression_Line is not a magic bullet. It's a statistical trend line that calculates the best-fit straight line through price data over a chosen lookback period. What it does is show the underlying direction and slope of price action, smoothing out random noise. Traders who find moving averages too laggy often treat it as a cleaner, more responsive alternative.
 
 ## What Sets It Apart

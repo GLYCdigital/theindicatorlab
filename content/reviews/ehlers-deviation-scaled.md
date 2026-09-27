@@ -19,7 +19,7 @@ rating: 4
 description: "Ehlers_Deviation_Scaled shows normalized price deviation with clear overbought/oversold levels. 4/5 rating. Best settings, strategy, and how to trade it."
 grounding: "none (no source found)"
 ---
-# Ehlers_Deviation_Scaled Review: Settings, Strategy & How to Use It
+## Ehlers_Deviation_Scaled Review: Settings, Strategy & How to Use It
 
 John Ehlers has a knack for turning DSP concepts into practical trading tools. This one—**Ehlers_Deviation_Scaled**—is a normalized measure of how far price has strayed from its moving average, adjusted for recent volatility.
 

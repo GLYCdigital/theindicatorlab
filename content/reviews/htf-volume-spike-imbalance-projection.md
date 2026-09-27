@@ -1,5 +1,5 @@
 ---
-title: "HTF Volume Spike Imbalance Projection Review — Volume Indicator"
+title: "HTF Volume Spike Imbalance Projection Review — Volume"
 tv_script_url: "https://www.tradingview.com/script/MXn4pESD-HTF-Volume-Spike-Imbalance-Projection-LuxAlgo/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,7 @@ rating: 4
 description: "Tracks higher timeframe volume spikes to project directional bias and imbalance zones. Best for swing traders who want liquidity-based entry triggers."
 grounding: "none (no source found)"
 ---
-# Review: HTF Volume Imbalance Projection Indicator
+## Review: HTF Volume Imbalance Projection Indicator
 
 The concept is straightforward: identify where large participants stepped in on a higher timeframe, then use that imbalance to project where price is likely to rotate toward. It is not a magic bullet, but it adds context if you already understand volume.
 

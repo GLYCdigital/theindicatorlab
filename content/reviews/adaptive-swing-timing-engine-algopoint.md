@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Swing Timing Engine Algopoint Review — Trend Indicator"
+title: "Adaptive Swing Timing Engine Algopoint Review — Trend"
 date: 2026-07-16
 draft: false
 type: reviews

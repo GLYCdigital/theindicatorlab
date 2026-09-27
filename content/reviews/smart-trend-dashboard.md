@@ -19,7 +19,6 @@ rating: 4
 description: "Smart_Trend_Dashboard consolidates multiple trend signals into a single panel. Our review breaks down settings, entry rules, and which traders benefit most."
 grounding: "none (no source found)"
 ---
-# Smart Trend Dashboard Review
 The **Smart_Trend_Dashboard** isn't trying to predict the future with some secret sauce. It's a multi-timeframe trend aggregator that takes common indicators—moving averages, MACD, RSI, and a few proprietary trend filters—and reduces them to a single color-coded signal for each asset or timeframe you choose. Think of it as a command center for trend bias, not a crystal ball.
 
 The dashboard sits in a separate pane, showing a grid of timeframes. Each cell turns green, red, or yellow. Green means bullish bias across most of the underlying tools; red means bearish; yellow means mixed or neutral. That's the core mechanic.

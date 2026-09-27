@@ -1,5 +1,5 @@
 ---
-title: "Neural Network Trend Predictor Review — Market Structure Indicator"
+title: "Neural Network Trend Predictor Review — Market Structure"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -19,7 +19,6 @@ rating: 4
 description: "Money_Flow_Index_Mfi review: settings, overbought/oversold signals, trend filtering, and honest pros/cons for TradingView traders."
 grounding: "none (no source found)"
 ---
-# Money Flow Index MFI Review
 Most MFI indicators on TradingView are a thin wrapper around the built-in one. This one is still a standard Money Flow Index oscillator at heart — but the implementation adds a few things the clones usually skip. Here's what you're getting and how to get value out of it.
 
 ## What This Indicator Actually Does

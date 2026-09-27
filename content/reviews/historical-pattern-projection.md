@@ -1,5 +1,5 @@
 ---
-title: "Historical Pattern Projection Review — Chart Pattern Indicator"
+title: "Historical Pattern Projection Review — Chart Patterns"
 tv_script_url: "https://www.tradingview.com/script/vuTQkJff-Historical-Pattern-Projection-MarkitTick/"
 date: 2026-07-16
 draft: false

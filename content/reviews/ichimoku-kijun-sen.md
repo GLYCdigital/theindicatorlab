@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Ichimoku_Kijun_Sen review: the Kijun Sen line as a standalone trend filter. We test settings, entry/exit rules, and whether it beats the full Ichimoku system."
 grounding: "none (no source found)"
 ---
-# Ichimoku Kijun Sen Review
 A standalone indicator that plots only the Kijun Sen — the baseline of the Ichimoku system. It's a stripped-down version of a classic, and it's worth being clear about what that does and doesn't give you.
 
 If you're a full Ichimoku trader, you don't need this. If you've found the standard Ichimoku cloud too noisy or confusing, a single-line approach has a specific use case.

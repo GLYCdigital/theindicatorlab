@@ -18,7 +18,6 @@ rating: 4
 description: "Automatically identify high-probability pin bars with customizable wick-to-body ratios and trend filters. A solid tool for price action traders."
 grounding: "none (no source found)"
 ---
-# Pin Bar Scanner Review
 Pin bar indicators on TradingView tend to fall into one of two camps: the ones that mark every candle with a long wick, and the ones that try to filter for patterns that actually matter. Pin_Bar_Scanner aims at the second camp.
 
 Here's a breakdown of what it does, how to configure it, and where it falls short.

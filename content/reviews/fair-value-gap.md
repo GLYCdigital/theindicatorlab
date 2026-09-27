@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of TradingView's Fair Value Gap indicator. Covers settings, how to trade FVG gaps, pros/cons, and if it's worth adding to your toolkit."
 grounding: "none (no source found)"
 ---
-# Fair Value Gap Review
 When the market gaps, most traders just shrug. The **Fair Value Gap** indicator turns those gaps into marked zones on the chart. This review covers what it does, how it is configured, and where it falls short.
 
 ## What This Indicator Actually Does

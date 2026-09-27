@@ -1,5 +1,5 @@
 ---
-title: "Elliott Wave Corrective Patterns Review — Chart Pattern Indicator"
+title: "Elliott Wave Corrective Patterns Review — Chart Patterns"
 tv_script_url: "https://www.tradingview.com/script/gMpxcJkW-Elliott-Wave-rules-based-compile-safe-STEELCITYCREATORS/"
 date: 2026-07-16
 draft: false

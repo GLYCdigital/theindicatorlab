@@ -1,5 +1,5 @@
 ---
-title: "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review — Trend Indicator"
+title: "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review"
 date: 2026-09-14
 draft: false
 type: reviews

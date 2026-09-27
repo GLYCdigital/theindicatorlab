@@ -1,5 +1,5 @@
 ---
-title: "Pivot Points Standard Floor Review — Support & Resistance Indicator"
+title: "Pivot Points Standard Floor Review — Support & Resistance"
 tv_script_url: "https://www.tradingview.com/script/GWJZpZ2m-Pivot-Points-Standard-Vignesh-Vajiravel/"
 date: 2026-07-30
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Pivot_Points_Standard_Floor review. See how this classic support/resistance tool works, best settings tested, and exact entry logic. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Pivot Points Standard Floor Review
 If you've traded Forex or futures, you already know the Floor method: it's the standard pivot calculation used on most broker terminals. The **Pivot_Points_Standard_Floor** indicator simply plots those levels on your chart. But it does more than draw lines—it creates a framework for the trading day.
 
 ## What This Indicator Actually Does

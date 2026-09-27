@@ -19,7 +19,6 @@ rating: 4
 description: "Fisher_Transform_Divergence review: how to use it for hidden & regular divergences, best settings, entry signals, and who it actually works for."
 grounding: "none (no source found)"
 ---
-# Fisher Transform Divergence Review
 Most divergence tools are repackaged RSI or MACD crossovers with a fresh coat of paint. The Fisher Transform Divergence indicator takes a different route: it applies the Fisher Transform to normalize price into a Gaussian-like distribution, which is the basis for its divergence detection. Here's a breakdown of what it does and where it falls short.
 
 ## What It Actually Does

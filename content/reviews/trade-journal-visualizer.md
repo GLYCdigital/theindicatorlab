@@ -18,7 +18,6 @@ rating: 4
 description: "Honest Trade_Journal_Visualizer review: how it tracks your trades on chart, best settings for trend traders, and why it’s not a predictive tool."
 grounding: "none (no source found)"
 ---
-# Trade Journal Visualizer Review
 Let's cut through the name first. Trade_Journal_Visualizer isn't a signal generator. It doesn't predict price, scan for patterns, or fire alerts. What it does is overlay your past trades directly on the chart—entry, exit, P&L, and duration—so you can see where your decisions worked and where they didn't. For anyone serious about reviewing their performance, that's the point.
 
 The setup is straightforward: you feed it a CSV or manual entries via TradingView's strategy tester, and the indicator plots each trade as a horizontal line or shaded zone. Green blocks for winners, red for losers, with net profit labeled at each point.

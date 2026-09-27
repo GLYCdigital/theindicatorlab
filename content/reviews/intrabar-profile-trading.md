@@ -18,7 +18,6 @@ rating: 4
 description: "Intrabar_Profile_Trading dissects each bar into micro-moves to reveal hidden trend structure. Tested on MACD chart—here's my honest review, settings, and strategy."
 grounding: "none (no source found)"
 ---
-# Intrabar Profile Trading Review
 If you've ever stared at a chart and felt like you're missing the *micro* moves happening *inside* a single candlestick, Intrabar_Profile_Trading is built for exactly that. It's a trend-following tool that profiles price action at the tick level and condenses that into signals, rather than another lagging moving average.
 
 **What it actually does:** Instead of waiting for a candle to close, this indicator looks at intrabar price distribution—where volume and price concentrated during the bar's lifetime. It draws a "profile" (think: a mini market profile inside each bar) and highlights the dominant trend direction based on where the profile's value area sits relative to the previous bar. The intent is to surface trend shifts before the candle finishes painting.

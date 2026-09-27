@@ -1,5 +1,5 @@
 ---
-title: "Tertiary Pivot Structural Zones Review — Support & Resistance Indicator"
+title: "Tertiary Pivot Structural Zones Review"
 tv_script_url: "https://www.tradingview.com/script/GnkERUKj-Tertiary-Pivot-Zones-logicalSuccess18070/"
 date: 2026-07-16
 draft: false

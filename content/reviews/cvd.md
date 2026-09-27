@@ -18,7 +18,6 @@ rating: 3
 description: "CVD tracks cumulative volume delta to reveal hidden buying/selling pressure. Works best on lower timeframes with volume confirmation. 3/5."
 grounding: "none (no source found)"
 ---
-# CVD Review
 Let's cut through the noise. CVD—Cumulative Volume Delta—isn't a magic bullet. It's a tool that sums the difference between buy-initiated and sell-initiated volume bar by bar. The premise is straightforward: if buyers are more aggressive, delta accumulates positively; if sellers are, it goes negative. In theory, this reveals "smart money" flow. In practice, it can be a lagging, noisy read if you don't know how to filter it.
 
 **What It Does (Not What the Marketing Says)**

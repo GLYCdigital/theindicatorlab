@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Smart Money Concepts Review — Volume Indicator"
+title: "Machine Learning Smart Money Concepts Review — Volume"
 tv_script_url: "https://www.tradingview.com/script/uGCtOz0Y-Machine-Learning-Smart-Money-Concepts-GainzAlgo/"
 date: 2026-07-16
 draft: false

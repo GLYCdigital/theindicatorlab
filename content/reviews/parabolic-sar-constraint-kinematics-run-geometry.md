@@ -1,5 +1,5 @@
 ---
-title: "Parabolic Sar Constraint Kinematics Run Geometry Review — Trend Indicator"
+title: "Parabolic Sar Constraint Kinematics Run Geometry Review"
 date: 2026-09-14
 draft: false
 type: reviews

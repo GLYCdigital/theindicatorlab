@@ -1,5 +1,5 @@
 ---
-title: "Volatility Storm Tracker Quantum Algo Review — Volatility Indicator"
+title: "Volatility Storm Tracker Quantum Algo Review — Volatility"
 date: 2026-08-28
 draft: false
 type: reviews

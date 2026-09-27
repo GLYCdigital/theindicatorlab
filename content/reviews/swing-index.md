@@ -19,7 +19,6 @@ rating: 4
 description: "Swing_Index measures intra-bar price pressure to spot reversals. Settings, pros, cons, and a better alternative included."
 grounding: "none (no source found)"
 ---
-# Swing Index Review
 Swing_Index isn't another lagging oscillator. It's a mathematical model that quantifies the internal strength of each bar by comparing the current close to the prior open, high, and low. Here's the breakdown.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Swing Gradient Tpos Boswaves Review — Market Structure Indicator"
+title: "Swing Gradient Tpos Boswaves Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/ZTNPXC20-Swing-Gradient-TPOs-BOSWaves/"
 date: 2026-07-16
 draft: false

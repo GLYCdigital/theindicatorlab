@@ -19,7 +19,7 @@ rating: 4
 description: "Liquidity_Magnet identifies key liquidity zones and stop hunts in real time. Honest review with settings, entry strategy, and who should use it."
 grounding: "none (no source found)"
 ---
-# Honest review: Liquidity_Magnet
+## Honest review: Liquidity_Magnet
 
 Stop hunts are a real market phenomenon, and the pitch behind Liquidity_Magnet is that it helps traders spot them. That's a plausible premise, but a review has to be built on verifiable specifics about the tool itself — and on that front the available material is thin.
 

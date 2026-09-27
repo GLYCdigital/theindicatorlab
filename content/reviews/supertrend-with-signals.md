@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Supertrend_With_Signals review: tested settings, entry/exit logic, pros/cons, and who should use this TradingView trend indicator."
 grounding: "none (no source found)"
 ---
-# Supertrend With Signals Review
 The Supertrend is the trading equivalent of a reliable pickup truck — nothing fancy, but it gets the job done. Supertrend_With_Signals takes that workhorse and bolts on a clean signal system that respects your screen space. This review covers what the indicator does, how its settings are structured, and where its limitations lie.
 
 **What it actually does**

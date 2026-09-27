@@ -1,5 +1,5 @@
 ---
-title: "Auto Trendline Intelligence BOS CHOCH FVG Rehan Khanani Review — Market Structure Indicator"
+title: "Auto Trendline Intelligence BOS CHOCH FVG Rehan Khanani Review"
 tv_script_url: "https://www.tradingview.com/script/7RglctYp-Auto-Trendline-AndresVasconez/"
 date: 2026-07-16
 draft: false

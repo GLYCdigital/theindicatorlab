@@ -19,7 +19,6 @@ rating: 4
 description: "Bat_Pattern auto-detects harmonic Bat formations with precise Fibonacci ratios. Reliable for reversals but needs confirmation. 4/5."
 grounding: "none (no source found)"
 ---
-# Bat Pattern Review
 **Bat_Pattern** is a single-pattern harmonic tool built specifically for the Bat setup. It does one job rather than bundling multiple harmonic structures into one package. Whether that focus is a feature or a limitation depends on how you trade.
 
 ## What This Indicator Actually Does

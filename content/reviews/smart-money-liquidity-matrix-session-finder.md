@@ -1,5 +1,5 @@
 ---
-title: "Smart Money Liquidity Matrix Session Finder Review — Market Structure Indicator"
+title: "Smart Money Liquidity Matrix Session Finder Review"
 date: 2026-08-03
 draft: false
 type: reviews
@@ -18,7 +18,6 @@ rating: 4
 description: "Smart_Money_Liquidity_Matrix_Session_Finder delivers session-based liquidity zones and trend bias. Tested settings, entry logic, pros, cons, and verdict inside."
 grounding: "none (no source found)"
 ---
-# Smart Money Liquidity Matrix Session Finder Review
 "Smart money" indicators are a crowded category, and most of them are repackaged moving averages dressed up with institutional language. The Smart_Money_Liquidity_Matrix_Session_Finder is a different kind of tool: a session-aware trend indicator built around the idea that liquidity pools form at predictable times across the London, New York, and Asian sessions.
 
 The core concept is straightforward. Rather than plotting generic support and resistance, the indicator identifies price levels where stop losses are likely to cluster — the liquidity zones that larger participants tend to target. The session filter is what distinguishes it: it doesn't just mark where liquidity sits, it contextualizes *when* that liquidity is most likely to be swept based on which session is active.

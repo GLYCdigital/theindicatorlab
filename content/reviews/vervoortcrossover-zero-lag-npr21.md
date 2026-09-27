@@ -19,7 +19,6 @@ rating: 4
 description: "An honest review of VervoortCrossover Zero Lag NPR21. Covers settings, pros/cons, entry rules, and who should use this zero-lag momentum crossover."
 grounding: "none (no source found)"
 ---
-# Vervoortcrossover Zero Lag Npr21 Review
 A zero-lag momentum crossover built on Sylvain Vervoort's NPR21 concept. It applies a zero-lag EMA (ZLEMA) to a standard 21-period RSI, then plots two lines—the fast line (ZLEMA of RSI) and a slow signal line (a second ZLEMA of that)—with crossovers generating signals.
 
 ## What This Indicator Actually Does

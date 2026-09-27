@@ -19,7 +19,6 @@ rating: 4
 description: "Honest review of TradingView's Momentum_Indicator. Tested settings, entry logic, and who it's for. A solid 4-star trend tool with real trade-offs."
 grounding: "none (no source found)"
 ---
-# Momentum Indicator Review
 The **Momentum_Indicator** on TradingView is a trend-confirmation tool that measures the rate of price change, not the direction itself. It's a classic momentum oscillator — think RSI's faster, less forgiving cousin — with a cleaner interface and a few smart defaults.
 
 **What it does:** The indicator plots a single line that oscillates above and below a zero centerline. When the line is above zero, momentum is bullish (price is accelerating upward). Below zero, it's bearish. The real signal is in the slope of that line — not just its position. A rising line above zero suggests bulls are in control. A falling line above zero is a warning, not a confirmation.

@@ -19,7 +19,6 @@ rating: 4
 description: "A stop-hunt detector for GBP pairs that flags liquidity grabs before reversals. Reliable on M15-H1 but not magic. 4/5."
 grounding: "none (no source found)"
 ---
-# Stop Hunt Radar Gbb Review
 Stop_Hunt_Radar_Gbb is an indicator built specifically for GBP pairs (GBPUSD, GBPJPY, and similar) that does one thing: highlight where large players may be hunting stops before a move. It doesn't predict the future. What it does is scan for price patterns that resemble liquidity sweeps—sudden spikes above recent highs or below recent lows that get rejected quickly. The indicator marks these zones with colored dots and lines. The premise is that once stops are taken out, price reverses into a trend.
 
 ## What This Indicator Actually Does

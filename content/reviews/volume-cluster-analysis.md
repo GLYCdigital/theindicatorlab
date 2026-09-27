@@ -19,7 +19,6 @@ rating: 4
 description: "Volume_Cluster_Analysis reveals high-volume price zones to confirm trend direction. Tested settings, entry logic, and honest pros & cons in this 4-star review."
 grounding: "none (no source found)"
 ---
-# Volume Cluster Analysis Review
 Volume_Cluster_Analysis doesn't predict the future. What it does — and does well — is show you where large transactions have already occurred. That's not nothing. For trend traders it can bridge the gap between "price is moving" and "price is moving *because*."
 
 The chart above shows it running on a MACD-style pane, which is fitting. Just like MACD reveals momentum shifts, this tool reveals volume footprints. The difference is that MACD tells you *when* a trend is changing; Volume_Cluster_Analysis tells you *where* it has support or resistance to keep moving.

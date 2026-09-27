@@ -19,7 +19,6 @@ rating: 4
 description: "See how the Klinger Oscillator combines volume and price to spot trend reversals earlier than RSI or MACD. Settings, strategy, and honest limits."
 grounding: "none (no source found)"
 ---
-# Klinger Oscillator Review
 The Klinger Oscillator isn't flashy, but it's a workhorse for volume-based divergence trading. Let's cut through the noise.
 
 ## What This Indicator Actually Does

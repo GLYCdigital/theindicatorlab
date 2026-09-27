@@ -1,5 +1,5 @@
 ---
-title: "Gravity Trend ADX Strength Meter Quality Scored DMI System Review — Trend Indicator"
+title: "Gravity Trend ADX Strength Meter Quality Scored DMI System Review"
 tv_script_url: "https://www.tradingview.com/script/EcEYc8ap-DMI-ADX-Trend-Dashboard-v3-Pullback-Decay-blitz-locked/"
 date: 2026-08-10
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Gravity_Trend_ADX_Strength_Meter_Quality_Scored_DMI_System review: combines ADX, DMI, and quality scoring for trend filtering. Tested settings and strategy."
 grounding: "none (no source found)"
 ---
-# Gravity Trend ADX Strength Meter Quality Scored DMI System Review
 At its core, this indicator is a DMI/ADX system wrapped in a quality-scoring framework, with a trend direction filter layered on top. The name is a mouthful, but the logic underneath is reasonably coherent. Here's an honest breakdown of what it does and where it falls short.
 
 ## What This Thing Actually Does

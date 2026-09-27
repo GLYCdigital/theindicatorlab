@@ -19,7 +19,7 @@ rating: 4
 description: "Honest review of the Double Exponential MA indicator on TradingView. Covers settings, strategy, pros/cons, and who it's actually for."
 grounding: "none (no source found)"
 ---
-# Double Exponential MA Review: Settings, Strategy & How to Use It
+## Double Exponential MA Review: Settings, Strategy & How to Use It
 
 The Double Exponential MA (DEMA) is often filed alongside the many "smooth MA" indicators, but its construction is genuinely different. It is a lag-reducing moving average rather than a simple smoothed line. This review covers what the indicator does, how it is typically configured, and where it fits in a trading workflow.
 

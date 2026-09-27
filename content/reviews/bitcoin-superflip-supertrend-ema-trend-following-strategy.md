@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin Superflip Supertrend EMA Trend Following Strategy Review — Trend Indicator"
+title: "Bitcoin Superflip Supertrend EMA Trend Following Strategy Review"
 date: 2026-09-12
 draft: false
 type: reviews

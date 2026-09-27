@@ -19,7 +19,6 @@ rating: 3
 description: "Carrier Volatility Pumori review: A momentum-based volatility indicator. Settings, strategy, pros/cons, and better alternatives. Not for beginners."
 grounding: "none (no source found)"
 ---
-# Carrier Volatility Pumori Review
 Carrier Volatility Pumori is one of those indicators that *looks* like it should work — colorful bands, smooth lines, and a catchy name. The question is whether the substance matches the presentation. Here's the breakdown.
 
 **What it actually does:** It measures volatility using a proprietary formula that combines ATR (Average True Range) with a smoothed momentum oscillator. The result is a single line that oscillates above and below a zero baseline, with colored bands that expand and contract based on volatility spikes. The premise is simple: when the line crosses above a threshold, volatility is high; below it, markets are quiet.

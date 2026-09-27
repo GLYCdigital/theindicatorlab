@@ -13,7 +13,7 @@ grounding: "none (no source found)"
 
 ---
 
-# Variable Moving Average Review: Settings, Strategy & How to Use It
+## Variable Moving Average Review: Settings, Strategy & How to Use It
 
 The **Variable Moving Average (VMA)** is a trend-following overlay built on Tushar Chande's original adaptive-average concept, adapted for TradingView. The pitch is straightforward: standard moving averages use a fixed period, so they're either too slow in fast markets or too noisy in quiet ones. The VMA tries to solve that by changing its own smoothing bar-to-bar. Here's what that means in practice, how to set it up, and where it falls short.
 

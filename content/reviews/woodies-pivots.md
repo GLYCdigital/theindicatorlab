@@ -18,7 +18,6 @@ rating: 4
 description: "Woodies_Pivots plots pivot highs/lows with dynamic zones and alerts. Great for scalping and intraday reversals, but not for trend-following. 4/5."
 grounding: "none (no source found)"
 ---
-# Woodies Pivots Review
 A direct port of the classic Woodies pivot system—no extra baggage, just pivot levels and alerts.
 
 **What this actually does:** Woodies_Pivots calculates pivot highs and lows based on user-defined left/right bars. It draws horizontal lines at those pivot points, plus optional "pivot zones" (a small buffer above/below the level). The alert system lets you fire when price breaks a pivot or returns to a zone. It's not a magic bullet, but it's a useful tool for scalping.

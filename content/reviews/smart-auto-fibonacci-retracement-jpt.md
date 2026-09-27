@@ -1,5 +1,5 @@
 ---
-title: "Smart Auto Fibonacci Retracement Jpt Review — Momentum Indicator"
+title: "Smart Auto Fibonacci Retracement Jpt Review — Momentum"
 tv_script_url: "https://www.tradingview.com/script/z9vYT8Y7-Smart-Auto-Fibonacci-Retracement-JPT-Jos-ProTrader/"
 date: 2026-08-11
 draft: false

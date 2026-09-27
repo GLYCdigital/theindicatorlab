@@ -19,7 +19,6 @@ rating: 4
 description: "Volume_Dna_Heatmap review: honest test of this volume-based trend tool. Best settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Volume Dna Heatmap Review
 A hybrid volume-profile and trend tool that maps volume by price level into a heatmap overlay, then layers directional bias on top. Here's an honest breakdown.
 
 **What it actually does**

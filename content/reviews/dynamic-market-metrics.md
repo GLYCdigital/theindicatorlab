@@ -19,7 +19,6 @@ rating: 4
 description: "Dynamic_Market_Metrics review: A multi-factor trend strength gauge. Tested settings, entry rules, pros/cons, and who should use this 4/5 star indicator."
 grounding: "none (no source found)"
 ---
-# Dynamic Market Metrics Review
 Dynamic_Market_Metrics is a composite indicator rather than a single-line trend follower. It blends multiple market dimensions — momentum, volatility, volume (where available), and price action structure — into a single reading. The output is a colored histogram or line (user's choice) that oscillates between oversold and overbought zones, but with a twist: the thresholds are dynamic, not fixed. They adjust based on recent market volatility and trend strength.
 
 In plain English: it aims to tell you *how strong* the current trend is, not just *which direction*. Most trend indicators give you a binary signal: up or down. This one grades the conviction behind the move. When the histogram spikes above the upper dynamic band, the trend is extending. When it's flat or hugging zero, the market is indecisive.

@@ -1,5 +1,5 @@
 ---
-title: "Pivot Points Standard Review — Support & Resistance Indicator"
+title: "Pivot Points Standard Review — Support & Resistance"
 tv_script_url: "https://www.tradingview.com/script/GWJZpZ2m-Pivot-Points-Standard-Vignesh-Vajiravel/"
 date: 2026-07-16
 draft: false

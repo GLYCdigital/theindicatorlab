@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Quant_Confluence_Engine review. Tests its multi-indicator trend alignment system. Best settings, entry rules, and whether it beats simpler tools."
 grounding: "none (no source found)"
 ---
-# Quant Confluence Engine Review
 Plenty of "confluence" indicators simply stack RSI, MACD, and moving averages on a single pane and call it a day. The Quant_Confluence_Engine is a different kind of tool: an attempt to quantify trend alignment across multiple timeframes using a weighted scoring system. It's a serious design, but it comes with real trade-offs that matter depending on how you trade.
 
 ## What It Actually Does

@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Vwap_Deviation_Trend_Backquant review: a trend-following tool using VWAP deviations. Tested settings, entry rules, pros, cons, and who it’s for."
 grounding: "none (no source found)"
 ---
-# VWAP Deviation Trend Backquant Review
 Most VWAP-based indicators are repackaged moving averages with a volume twist. **Vwap_Deviation_Trend_Backquant** is different in concept: rather than plotting a single VWAP line, it builds a trend framework around deviation bands.
 
 ## What It Actually Does

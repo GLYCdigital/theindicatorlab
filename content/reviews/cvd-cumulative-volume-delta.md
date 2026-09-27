@@ -19,7 +19,7 @@ rating: 4
 description: "Honest CVD Cumulative Volume Delta review: settings, divergence signals, and how to avoid false breakouts. Still worth installing in 2026."
 grounding: "none (no source found)"
 ---
-# CVD Cumulative Volume Delta: A Divergence Tool for Reading Order Flow
+## CVD Cumulative Volume Delta: A Divergence Tool for Reading Order Flow
 
 The **CVD (Cumulative Volume Delta)** indicator isn't new, and it isn't fancy. It's a running total of buying versus selling pressure — every tick's volume gets assigned to the aggressor side, and the result accumulates into a line. No magic, no AI, no prediction engines. But when used correctly, this simple line can say more about order flow than many paid indicators.
 

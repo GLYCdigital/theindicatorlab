@@ -1,5 +1,5 @@
 ---
-title: "Square Bar Calendar Count Verticals Gann Review — Trend Indicator"
+title: "Square Bar Calendar Count Verticals Gann Review — Trend"
 date: 2026-08-25
 draft: false
 type: reviews

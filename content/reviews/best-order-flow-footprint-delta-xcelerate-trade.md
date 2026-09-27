@@ -1,5 +1,5 @@
 ---
-title: "Best Order Flow Footprint Delta Xcelerate Trade Review — Volume Indicator"
+title: "Best Order Flow Footprint Delta Xcelerate Trade Review"
 date: 2026-08-14
 draft: false
 type: reviews
@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/a7QJeFNj-Best-Order-Flow-Foot
 sources: ["https://www.tradingview.com/script/a7QJeFNj-Best-Order-Flow-Footprint-Delta-Xcelerate-Trade/"]
 grounding: "none (no source found)"
 ---
-# Best Order Flow Footprint Delta Xcelerate Trade Review
 The name is a mouthful, but the indicator itself is more focused than the branding suggests. Here's a breakdown of what it does and who it's built for.
 
 **What this thing does**

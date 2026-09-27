@@ -1,5 +1,5 @@
 ---
-title: "Robust Regression Residual Bands Pineify Review — Volatility Indicator"
+title: "Robust Regression Residual Bands Pineify Review — Volatility"
 date: 2026-08-25
 draft: false
 type: reviews

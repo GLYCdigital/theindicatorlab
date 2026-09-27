@@ -1,5 +1,5 @@
 ---
-title: "Wave Radar Oabc Pattern Equal Leg Detection Review — Chart Pattern Indicator"
+title: "Wave Radar Oabc Pattern Equal Leg Detection Review"
 date: 2026-08-07
 draft: false
 type: reviews
@@ -18,7 +18,6 @@ rating: 4
 description: "Tested Wave_Radar_Oabc_Pattern_Equal_Leg_Detection on TradingView. Honest review of settings, OABC pattern logic, entry signals, and who should use it."
 grounding: "none (no source found)"
 ---
-# Wave Radar Oabc Pattern Equal Leg Detection Review
 Most pattern detection indicators are either glorified drawing tools or they repaint badly enough to be useless. Wave_Radar_Oabc_Pattern_Equal_Leg_Detection aims at the middle ground — an automated scanner for one specific structure, with no claims beyond that.
 
 ## What This Indicator Actually Does

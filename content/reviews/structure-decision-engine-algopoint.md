@@ -1,5 +1,5 @@
 ---
-title: "Structure Decision Engine Algopoint Review — Market Structure Indicator"
+title: "Structure Decision Engine Algopoint Review"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,7 +18,7 @@ rating: 4
 description: "Algopoint's Structure Decision Engine auto-detects market structure shifts, break of structure (BOS), and change of character (CHoCH). A solid 4/5 tool for ICT/SMC traders."
 grounding: "none (no source found)"
 ---
-# Structure Decision Engine (Algopoint) Review: Settings, Strategy & How to Use It
+## Structure Decision Engine (Algopoint) Review: Settings, Strategy & How to Use It
 
 **Star Rating: ⭐⭐⭐⭐ (4/5)**
 **Category:** 07 – Chart Patterns / Market Structure

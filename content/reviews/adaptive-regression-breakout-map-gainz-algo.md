@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Regression Breakout Map Gainz Algo Review — Trend Indicator"
+title: "Adaptive Regression Breakout Map Gainz Algo Review — Trend"
 tv_script_url: "https://www.tradingview.com/script/PEVRpvOj-Adaptive-Regression-Breakout-Map-GainzAlgo/"
 date: 2026-07-22
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "A unique trend-following indicator combining adaptive linear regression with breakout mapping. Tested settings, strategy, pros & cons for intraday and swing trading."
 grounding: "none (no source found)"
 ---
-# Adaptive Regression Breakout Map Gainz Algo Review
 The **Adaptive_Regression_Breakout_Map_Gainz_Algo** combines two functions: a dynamic regression line that adapts to volatility, and a visual breakout map intended to highlight when price is pushing away from that line. The premise is straightforward — instead of a fixed-lookback moving average, the regression window adjusts to recent volatility, and deviations from the line are shaded to give a visual read on momentum. It is not marketed as a repainting crossover indicator.
 
 ## What It Actually Does

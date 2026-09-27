@@ -1,5 +1,5 @@
 ---
-title: "Swing Structure Forecast Boswaves Review — Market Structure Indicator"
+title: "Swing Structure Forecast Boswaves Review — Market Structure"
 tv_script_url: "https://www.tradingview.com/script/Ft4zyO1F-Swing-Structure-Forecast-BOSWaves/"
 date: 2026-07-16
 draft: false

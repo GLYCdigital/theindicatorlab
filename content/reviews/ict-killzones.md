@@ -19,7 +19,6 @@ rating: 4
 description: "ICT Killzones marks key intraday sessions for forex and indices. Works best on 5-15 min charts. Clean visuals, no repaint. 4/5."
 grounding: "none (no source found)"
 ---
-# ICT Killzones Review
 ICT-style session trading lives and dies by time. The Killzones indicator handles the mechanical part—drawing the session boxes—so attention can stay on price action inside them. Here is an honest look at what it does and where it falls short.
 
 ## What This Indicator Actually Does

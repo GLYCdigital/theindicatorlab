@@ -19,7 +19,6 @@ rating: 4
 description: "Honest Abcd_Pattern review: identifies harmonic ABCD zones automatically. Learn settings, entry rules, and why it's a solid 4/5 tool for trend traders."
 grounding: "none (no source found)"
 ---
-# Abcd Pattern Review
 The **Abcd_Pattern** indicator is a harmonic pattern scanner that automatically detects the classic ABCD (also called AB=CD) structure. For traders who manually draw Fibonacci retracements and extensions hoping for a clean pattern, this tool aims to do the heavy lifting.
 
 ---

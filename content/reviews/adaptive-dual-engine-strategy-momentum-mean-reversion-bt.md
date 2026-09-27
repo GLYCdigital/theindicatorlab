@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review — Momentum Indicator"
+title: "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review"
 tv_script_url: "https://www.tradingview.com/script/f9xLZqpF-EMA-MACD-Forecast-Predictor-Dual-Engine-Backtest-Forecast-patelanishp/"
 date: 2026-07-16
 draft: false
@@ -19,7 +19,6 @@ rating: 4
 description: "Adaptive Dual Engine Strategy combines momentum and mean reversion without conflicting signals. See settings, entry rules, and honest pros and cons."
 grounding: "none (no source found)"
 ---
-# Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review
 This indicator claims to merge momentum and mean reversion in one engine. Many "dual strategy" tools simply overlay two conflicting indicators and call it a day. The premise here is at least different: rather than summing signals, it attempts to select a dominant regime.
 
 ## What This Indicator Actually Does
