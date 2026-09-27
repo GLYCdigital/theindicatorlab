@@ -44,6 +44,8 @@ Avoid extremely short lengths — the line becomes noise rather than signal. Ver
 
 Source selection is secondary but not irrelevant. HL2 is a common choice on volatile instruments because it dampens the effect of long wicks. Close is the default and works fine as a starting point.
 
+**Put the HMA on a live chart.** [Open a free TradingView chart](https://www.tradingview.com/?aff_id=166324) and overlay the Hull Moving Average — the reduced lag is obvious the moment you switch between SMA, EMA, and HMA on the same instrument.
+
 ## How to Use It for Entries and Exits
 
 **Entry approaches:**

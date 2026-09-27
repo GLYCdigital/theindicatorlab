@@ -27,6 +27,8 @@ Bollinger Bands plots three lines on your chart: a moving average in the middle,
 
 The core idea: price tends to stay within the bands most of the time when using 2 standard deviations. When it breaks out, something statistically notable is happening.
 
+**Want to see how the bands behave on your own charts?** [Open a free TradingView chart](https://www.tradingview.com/?aff_id=166324) and add Bollinger Bands — the contraction-and-expansion cycle is far easier to read live than in a screenshot.
+
 ## Settings and How to Tune Them
 
 The default (20, 2) is the standard starting point. Traders adjust it depending on the asset and timeframe:

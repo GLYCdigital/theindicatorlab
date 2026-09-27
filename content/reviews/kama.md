@@ -27,6 +27,8 @@ Kaufman's Adaptive Moving Average is built around an efficiency ratio: it compar
 
 On TradingView, the built-in version exposes three inputs: `n` (the lookback period), `fast` (the fastest smoothing constant), and `slow` (the slowest smoothing constant). The noise filter is baked into the formula itself — it is not a separate toggle you turn on or off.
 
+**See KAMA adapt in real time.** [Pull it up on a free TradingView chart](https://www.tradingview.com/?aff_id=166324) and nudge the fast/slow inputs yourself — the efficiency-ratio response is the entire point of this average, and it clicks in seconds when you watch it live.
+
 ## Settings and How to Tune Them
 
 The three inputs are the whole control panel:

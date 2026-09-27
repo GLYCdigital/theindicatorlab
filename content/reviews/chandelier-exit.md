@@ -23,6 +23,8 @@ grounding: "none (no source found)"
 
 The Chandelier Exit isn't a buy signal generator—it's a trailing stop-loss system. Developed by Chuck LeBeau, it places a stop based on the market's highest high (or lowest low) over a lookback period, minus a multiple of ATR. On the chart, you'll see two lines: one for long exits (red, below price) and one for short exits (green, above price). The logic is simple: if price closes below the long exit line, you exit your long. If it closes above the short exit line, you cover your short.
 
+**Want to see the Chandelier Exit levels on a live chart?** [Open it on a free TradingView chart](https://www.tradingview.com/?aff_id=166324) and watch how the stop line trails ATR-based volatility in real time.
+
 **Key Features That Set It Apart**
 
 - **Volatility-adjusted stops** – Unlike a fixed percentage stop, the Chandelier Exit widens during volatile markets and tightens in quiet ones. This is its core advantage.

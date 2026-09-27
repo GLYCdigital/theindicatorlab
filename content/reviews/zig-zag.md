@@ -46,6 +46,8 @@ Zig Zag identifies price reversals based on a minimum percentage or point change
 
 Don't use a single setting across every asset. Adjust per asset — a deviation that's reasonable on a volatile instrument can represent an outsized move on a quiet one.
 
+**Want to map the swings on your own market?** [Open Zig Zag on a free TradingView chart](https://www.tradingview.com/?aff_id=166324) — watching it redraw as structure confirms builds the muscle memory faster than reading about it.
+
 ## How to Use It for Entries and Exits
 
 This is where most traders get it wrong. Zig Zag is a *structural tool*, not a trigger.
