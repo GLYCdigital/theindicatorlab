@@ -1,5 +1,5 @@
 ---
-title: "Volume_Weighted_Ma Review: Settings, Strategy & How to Use It"
+title: "Volume Weighted Ma Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/fhPYhWYA-Volume-Weighted-MACD-LazyBear/"
 date: 2026-07-16
 draft: false

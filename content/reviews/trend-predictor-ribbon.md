@@ -1,5 +1,5 @@
 ---
-title: "Trend_Predictor_Ribbon Review: Settings, Strategy & How to Use It"
+title: "Trend Predictor Ribbon Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/XtGU6toW-Trend-Predictor-Ribbon-Clone-Fixed-ronitjain18/"
 date: 2026-08-26
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Trend_Predictor_Ribbon review: tested settings, entry/exit logic, pros & cons. Is this multi-color trend ribbon worth adding to your chart?"
 grounding: "none (no source found)"
 ---
-# Trend_Predictor_Ribbon Review
-
+# Trend Predictor Ribbon Review
 Most trend ribbon indicators are repackaged moving averages with extra paint. Trend_Predictor_Ribbon attempts something more ambitious: predicting trend direction before price confirms it.
 
 ## What It Actually Does

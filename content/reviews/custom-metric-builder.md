@@ -1,5 +1,5 @@
 ---
-title: "Custom_Metric_Builder Review: Settings, Strategy & How to Use It"
+title: "Custom Metric Builder Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

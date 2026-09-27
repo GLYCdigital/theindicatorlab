@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Absorption_And_Rejection_Orderflow Review: Settings, Strategy & How to Use It"
+title: "Liquidity Absorption And Rejection Orderflow Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/Qt40jcF2-Liquidity-Absorption-and-Rejection-Orderflow-MaxMaserati/"
 date: 2026-07-16
 draft: false

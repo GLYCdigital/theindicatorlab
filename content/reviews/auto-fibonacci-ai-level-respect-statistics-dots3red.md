@@ -1,5 +1,5 @@
 ---
-title: "Auto_Fibonacci_Ai_Level_Respect_Statistics_Dots3Red Review: Settings, Strategy & How to Use It"
+title: "Auto Fibonacci AI Level Respect Statistics Dots3red Review — Momentum Indicator"
 date: 2026-08-29
 draft: false
 type: reviews

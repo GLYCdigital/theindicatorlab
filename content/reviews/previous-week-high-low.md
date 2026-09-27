@@ -1,5 +1,5 @@
 ---
-title: "Previous_Week_High_Low Review: Settings, Strategy & How to Use It"
+title: "Previous Week High Low Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/E2jifRhi-previous-Week-high-low-Juros/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Clean weekly S/R levels with auto-update. No bloat, no repaint. Best for swing traders who want clear structural targets and stops."
 grounding: "none (no source found)"
 ---
-# Previous_Week_High_Low — Indicator Review
-
+# Previous Week High Low Review
 If you've traded for more than a month, you know that **old weekly highs and lows** can act like magnets for price. The *Previous_Week_High_Low* indicator does exactly one thing well: it draws horizontal lines for last week's high, low, and midpoint, then updates when a new week starts. Clean, objective, and uncluttered.
 
 Weekly-level indicators are a crowded category. Many repaint, crowd the chart with zones, or require manual adjustment. This one is refreshingly simple. Here's what you're actually getting.

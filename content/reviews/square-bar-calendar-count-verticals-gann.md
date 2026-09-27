@@ -1,5 +1,5 @@
 ---
-title: "Square_Bar_Calendar_Count_Verticals_Gann Review: Settings, Strategy & How to Use It"
+title: "Square Bar Calendar Count Verticals Gann Review — Trend Indicator"
 date: 2026-08-25
 draft: false
 type: reviews

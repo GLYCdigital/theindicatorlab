@@ -1,5 +1,5 @@
 ---
-title: "Alt_Bat_Pattern Review: Settings, Strategy & How to Use It"
+title: "Alt Bat Pattern Review — Chart Pattern Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

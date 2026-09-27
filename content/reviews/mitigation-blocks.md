@@ -1,5 +1,5 @@
 ---
-title: "Mitigation_Blocks Review: Settings, Strategy & How to Use It"
+title: "Mitigation Blocks Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/SgJBOP5n-Mitigation-Blocks-HuntsPip-HuntsPipDevs/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Mitigation_Blocks auto-draws key order blocks and fair value gaps. Honest review of settings, pros/cons, and how to trade them without the fluff."
 grounding: "none (no source found)"
 ---
-# Mitigation_Blocks Review
-
+# Mitigation Blocks Review
 Another indicator promising to automate order blocks. Most in this category are either too noisy or too laggy. Mitigation_Blocks is notable for attempting to address the biggest pain point in the category: **mitigation**—the moment price returns to an order block and invalidates it. That focus is relatively rare among order block tools.
 
 ## What This Indicator Actually Does

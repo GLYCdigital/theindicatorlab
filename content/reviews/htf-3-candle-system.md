@@ -1,5 +1,5 @@
 ---
-title: "Htf_3_Candle_System Review: Settings, Strategy & How to Use It"
+title: "HTF 3 Candle System Review — Trend Indicator"
 date: 2026-09-19
 draft: false
 type: reviews

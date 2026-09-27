@@ -1,5 +1,5 @@
 ---
-title: "Camarilla Pivots Review: Settings, Strategy & How to Use It"
+title: "Camarilla Pivots Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/Cn8uI66B-Camarilla-Pivots-Optional-CPR-chipmonk/"
 date: 2026-07-16
 draft: false

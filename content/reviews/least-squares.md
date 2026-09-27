@@ -1,5 +1,5 @@
 ---
-title: "Least Squares Review: Settings, Strategy & How to Use It"
+title: "Least Squares Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/V67YaGcm-Least-Squares-Moving-Average-Crossover-veryfid/"
 date: 2026-07-16
 draft: false

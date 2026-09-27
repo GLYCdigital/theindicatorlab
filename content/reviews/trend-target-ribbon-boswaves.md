@@ -1,5 +1,5 @@
 ---
-title: "Trend_Target_Ribbon_Boswaves Review: Settings, Strategy & How to Use It"
+title: "Trend Target Ribbon Boswaves Review — Market Structure Indicator"
 date: 2026-09-26
 draft: false
 type: reviews

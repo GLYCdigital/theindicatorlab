@@ -1,5 +1,5 @@
 ---
-title: "Standard_Error_Channel Review: Settings, Strategy & How to Use It"
+title: "Standard Error Channel Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

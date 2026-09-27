@@ -1,5 +1,5 @@
 ---
-title: "Auto_Trend_Channels_Afd Review: Settings, Strategy & How to Use It"
+title: "Auto Trend Channels Afd Review — Trend Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

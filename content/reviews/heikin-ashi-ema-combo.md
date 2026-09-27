@@ -1,5 +1,5 @@
 ---
-title: "Heikin_Ashi_Ema_Combo Review: Settings, Strategy & How to Use It"
+title: "Heikin Ashi EMA Combo Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/NbYBiQdn-Heikin-Ashi-CaptainCoinFlip/"
 date: 2026-07-16
 draft: false

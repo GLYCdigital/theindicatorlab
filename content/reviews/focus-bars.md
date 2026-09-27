@@ -1,5 +1,5 @@
 ---
-title: "Focus_Bars Review: Settings, Strategy & How to Use It"
+title: "Focus Bars Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/I0MhUmSK-Focus-Bars-Kioseff-Trading-KioseffTrading/"
 date: 2026-07-16
 draft: false

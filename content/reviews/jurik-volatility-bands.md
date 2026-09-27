@@ -1,5 +1,5 @@
 ---
-title: "Jurik_Volatility_Bands Review: Settings, Strategy & How to Use It"
+title: "Jurik Volatility Bands Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/GJJNy7G5-Jurik-Volatility-Bands-ProValueTrader/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Ema Crossover Review: Settings, Strategy & How to Use It"
+title: "EMA Crossover Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/ltF59daw-EMA-Crossover-jordan-fan-basket/"
 date: 2026-07-16
 draft: false

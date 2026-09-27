@@ -1,5 +1,5 @@
 ---
-title: "Market Structure Volume Profiles Kioseff Trading Review: Settings, Strategy & How to Use It"
+title: "Market Structure Volume Profiles Kioseff Trading Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/shy8kACw-Market-Structure-Volume-Profiles-Kioseff-Trading-KioseffTrading/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Market Structure Volume Profiles by Kioseff Trading. Combines market structure with volume profile for high-conviction entries. Settings, strategy, pros/cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# Kioseff Trading Market Structure Volume Profiles Review
-
+# Market Structure Volume Profiles Kioseff Trading Review
 Market structure and volume profile tools tend to fall into two camps: either overloaded with features that clutter the chart, or stripped down to the point of being unhelpful. Kioseff Trading's *Market Structure Volume Profiles* attempts to combine both concepts into a single overlay.
 
 ## What this indicator does

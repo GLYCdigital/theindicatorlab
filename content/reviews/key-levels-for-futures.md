@@ -1,5 +1,5 @@
 ---
-title: "Key_Levels_For_Futures Review: Settings, Strategy & How to Use It"
+title: "Key Levels For Futures Review — Trend Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

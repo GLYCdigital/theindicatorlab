@@ -1,5 +1,5 @@
 ---
-title: "Market_Open_Gaps Review: Settings, Strategy & How to Use It"
+title: "Market Open Gaps Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Force Index Review: Settings, Strategy & How to Use It"
+title: "Force Index Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/9dtFGDnv-Force-Index-HPotter/"
 date: 2026-07-16
 draft: false

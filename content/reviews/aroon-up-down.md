@@ -1,5 +1,5 @@
 ---
-title: "Aroon_Up_Down Review: Settings, Strategy & How to Use It"
+title: "Aroon Up Down Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

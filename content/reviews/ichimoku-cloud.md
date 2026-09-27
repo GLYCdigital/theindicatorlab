@@ -1,5 +1,5 @@
 ---
-title: "Ichimoku Cloud Review: Settings, Strategy & How to Use It"
+title: "Ichimoku Cloud Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/h1Rgqj34-Ichimoku-Cloud-Tracha/"
 date: 2026-07-16
 draft: false

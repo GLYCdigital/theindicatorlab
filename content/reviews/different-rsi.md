@@ -1,5 +1,5 @@
 ---
-title: "Different_Rsi Review: Settings, Strategy & How to Use It"
+title: "Different RSI Review — Momentum Indicator"
 date: 2026-09-26
 draft: false
 type: reviews

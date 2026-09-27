@@ -1,5 +1,5 @@
 ---
-title: "Ajay_Strong_Smart_Money_Scalper Review: Settings, Strategy & How to Use It"
+title: "Ajay Strong Smart Money Scalper Review — Volume Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

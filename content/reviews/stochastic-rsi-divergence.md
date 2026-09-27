@@ -1,5 +1,5 @@
 ---
-title: "Stochastic_Rsi_Divergence Review: Settings, Strategy & How to Use It"
+title: "Stochastic RSI Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/rXjMwWe6-Stochastic-RSI-Divergence-Indicator-DigiDavesData/"
 date: 2026-08-04
 draft: false

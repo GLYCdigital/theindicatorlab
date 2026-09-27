@@ -1,5 +1,5 @@
 ---
-title: "Keltner_Channel_Trend_Smc_Liquidity_Sweep Review: Settings, Strategy & How to Use It"
+title: "Keltner Channel Trend SMC Liquidity Sweep Review — Market Structure Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

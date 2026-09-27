@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Volume Review: Settings, Strategy & How to Use It"
+title: "MTF Volume Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/Vgq41bDV-MTF-Volume-Profile-Signal-Scanner-v5-zackzackzackw/"
 date: 2026-07-16
 draft: false

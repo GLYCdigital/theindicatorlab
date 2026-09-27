@@ -1,5 +1,5 @@
 ---
-title: "Gold_Fibonacci_Multiple_Grid Review: Settings, Strategy & How to Use It"
+title: "Gold Fibonacci Multiple Grid Review — Momentum Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

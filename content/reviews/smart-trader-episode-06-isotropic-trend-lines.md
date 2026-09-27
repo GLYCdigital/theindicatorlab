@@ -1,5 +1,5 @@
 ---
-title: "Smart_Trader_Episode_06_Isotropic_Trend_Lines Review: Settings, Strategy & How to Use It"
+title: "Smart Trader Episode 06 Isotropic Trend Lines Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/ZSgx4eSy-Smart-Trader-Episode-06-Isotropic-Trend-Lines-ata-sabanci/"
 date: 2026-07-16
 draft: false

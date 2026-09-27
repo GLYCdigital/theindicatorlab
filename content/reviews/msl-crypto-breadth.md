@@ -1,5 +1,5 @@
 ---
-title: "Msl_Crypto_Breadth Review: Settings, Strategy & How to Use It"
+title: "Msl Crypto Breadth Review — Trend Indicator"
 date: 2026-08-31
 draft: false
 type: reviews

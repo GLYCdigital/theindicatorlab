@@ -1,5 +1,5 @@
 ---
-title: "Price Channel Review: Settings, Strategy & How to Use It"
+title: "Price Channel Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/bQ2sg8b7-Price-Channel-koryu/"
 date: 2026-07-16
 draft: false

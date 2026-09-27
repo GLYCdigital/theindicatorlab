@@ -1,5 +1,5 @@
 ---
-title: "On Balance Volume Review: Settings, Strategy & How to Use It"
+title: "On Balance Volume Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/Gb7B8oS6-On-Balance-Volume-everget/"
 date: 2026-07-16
 draft: false

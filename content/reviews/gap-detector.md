@@ -1,5 +1,5 @@
 ---
-title: "Gap_Detector Review: Settings, Strategy & How to Use It"
+title: "Gap Detector Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/fds6Q4aj-GAP-DETECTOR-Asch/"
 date: 2026-07-16
 draft: false

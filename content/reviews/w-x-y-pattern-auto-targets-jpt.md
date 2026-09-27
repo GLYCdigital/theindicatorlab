@@ -1,5 +1,5 @@
 ---
-title: "W_X_Y_Pattern_Auto_Targets_Jpt Review: Settings, Strategy & How to Use It"
+title: "Wxy Pattern Auto Targets Jpt Review — Chart Pattern Indicator"
 date: 2026-07-22
 draft: false
 type: reviews

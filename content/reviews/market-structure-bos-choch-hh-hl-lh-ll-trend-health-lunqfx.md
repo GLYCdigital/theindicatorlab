@@ -1,5 +1,5 @@
 ---
-title: "Market_Structure_Bos_Choch_Hh_Hl_Lh_Ll_Trend_Health_Lunqfx Review: Settings, Strategy & How to Use It"
+title: "Market Structure BOS CHOCH Hh Hl Lh Ll Trend Health Lunqfx Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/Y2cRp5yG-Market-Structure-BOS-CHoCH-HH-HL-LH-LL-Trend-Health-LunqFX/"
 date: 2026-08-04
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Hands-on review of the Market_Structure_Bos_Choch_Hh_Hl_Lh_Ll_Trend_Health Lunqfx indicator. Settings, entry logic, pros/cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Market_Structure_Bos_Choch_Hh_Hl_Lh_Ll_Trend_Health_Lunqfx Review
-
+# Market Structure BOS CHOCH Hh Hl Lh Ll Trend Health Lunqfx Review
 The name is a mouthful, but underneath that clunky title sits a thorough market structure tool. It automates the structural analysis that price action traders typically do by hand, and the "Trend Health" component is what separates it from the pack of basic swing-labeling scripts.
 
 **What It Does**

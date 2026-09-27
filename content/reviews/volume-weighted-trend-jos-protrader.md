@@ -1,5 +1,5 @@
 ---
-title: "Volume_Weighted_Trend_Jos_Protrader Review: Settings, Strategy & How to Use It"
+title: "Volume Weighted Trend Jos Protrader Review — Volume Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

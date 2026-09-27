@@ -1,5 +1,5 @@
 ---
-title: "Rolling_Z_Score_Reversion_Map_Pineify Review: Settings, Strategy & How to Use It"
+title: "Rolling Z Score Reversion Map Pineify Review — Momentum Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

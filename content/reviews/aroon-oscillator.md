@@ -1,5 +1,5 @@
 ---
-title: "Aroon_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Aroon Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/9VbZxX7T-Aroon-Oscillator-jcrewolinski/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Macd_Histogram_Divergence Review: Settings, Strategy & How to Use It"
+title: "MACD Histogram Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/MubZkT39-MACD-histogram-divergence-Rexio/"
 date: 2026-07-31
 draft: false

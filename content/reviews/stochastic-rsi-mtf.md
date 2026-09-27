@@ -1,5 +1,5 @@
 ---
-title: "Stochastic_Rsi_Mtf Review: Settings, Strategy & How to Use It"
+title: "Stochastic RSI MTF Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/n0o5chKD-Stochastic-RSI-MTF-veryfid/"
 date: 2026-08-14
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Stochastic_Rsi_Mtf review: multi-timeframe Stoch RSI for trend bias. Tested settings, entry/exit logic, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Stochastic_Rsi_Mtf Review
-
+# Stochastic RSI MTF Review
 Multi-timeframe indicators are a dime a dozen on TradingView. Most are just repackaged moving averages with extra lines bolted on. Stochastic_Rsi_Mtf takes a different approach: it layers higher timeframe momentum directly onto the current chart, which makes it a genuinely useful tool for traders who want to align their entries with the broader trend without juggling multiple tabs.
 
 It isn't a magic bullet — but it's a coherent, focused tool. Here's what it does and how to think about using it.

@@ -1,5 +1,5 @@
 ---
-title: "Trend_Reset_Cumulative_Delta Review: Settings, Strategy & How to Use It"
+title: "Trend Reset Cumulative Delta Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/KoXIqM5l-Trend-Reset-Cumulative-Delta-ChartPrime/"
 date: 2026-07-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Trend_Reset_Cumulative_Delta review by a TradingView expert. Tested settings, entry/exit logic, pros/cons, and who should use it. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Trend_Reset_Cumulative_Delta Review
-
+# Trend Reset Cumulative Delta Review
 Trend-following indicators tend to fall into two camps: the ones that lag so badly they confirm a move after it's over, and the ones that fire on every wiggle and whip you out during noise. Trend_Reset_Cumulative_Delta is worth a look because it tries to sidestep both problems with a single structural choice — a periodic reset.
 
 Here's what it does, how it's meant to be used, and where it falls short.

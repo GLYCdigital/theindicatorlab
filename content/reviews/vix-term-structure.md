@@ -1,5 +1,5 @@
 ---
-title: "Vix_Term_Structure Review: Settings, Strategy & How to Use It"
+title: "Vix Term Structure Review — Market Structure Indicator"
 date: 2026-09-09
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Vix_Term_Structure review: how to read VIX futures contango/backwa
 tv_script_url: "https://www.tradingview.com/script/3BQ5rtnq-VIX-Term-Structure/"
 sources: ["https://www.tradingview.com/script/3BQ5rtnq-VIX-Term-Structure/"]
 ---
-# Vix_Term_Structure Review
-
+# Vix Term Structure Review
 A single VIX print is one number on one horizon. What actually tells you something is the shape across horizons — whether the market is asking more for protection next week than for protection in three months, or less. That shape is where the information is, and it is free public data that almost nobody puts on a chart. This indicator is built around that idea.
 
 ## What it actually does

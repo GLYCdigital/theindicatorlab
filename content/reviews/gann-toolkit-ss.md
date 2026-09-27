@@ -1,5 +1,5 @@
 ---
-title: "Gann_Toolkit_Ss Review: Settings, Strategy & How to Use It"
+title: "Gann Toolkit Ss Review — Trend Indicator"
 date: 2026-08-18
 draft: false
 type: reviews

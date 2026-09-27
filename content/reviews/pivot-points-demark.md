@@ -1,5 +1,5 @@
 ---
-title: "Pivot_Points_Demark Review: Settings, Strategy & How to Use It"
+title: "Pivot Points Demark Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-juanmirocks/"
 date: 2026-07-16
 draft: false

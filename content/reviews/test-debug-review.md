@@ -1,5 +1,5 @@
 ---
-title: "Test Review Debug Review: Settings, Strategy & How to Use It"
+title: "Test Debug Review Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/FhQ5b8Mv-test-RicardoSantos/"
 date: 2026-07-24
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Test Review Debug review: a solid trend-following tool that works best on MACD-based charts. Settings, strategy, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Test Review Debug Review
-
+# Test Debug Review Review
 **Test Review Debug** is a trend indicator that does exactly what its name suggests—no magic, no secret sauce. It's built for traders who want a clean, no-nonsense way to spot direction and filter out noise.
 
 ## What It Actually Does

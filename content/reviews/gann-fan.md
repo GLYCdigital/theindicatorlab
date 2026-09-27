@@ -1,5 +1,5 @@
 ---
-title: "Gann_Fan Review: Settings, Strategy & How to Use It"
+title: "Gann Fan Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Bara2GrN-Gann-Fan-LonesomeTheBlue/"
 date: 2026-07-16
 draft: false

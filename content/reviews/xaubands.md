@@ -1,5 +1,5 @@
 ---
-title: "Xaubands Review: Settings, Strategy & How to Use It"
+title: "Xaubands Review — Volatility Indicator"
 date: 2026-07-21
 draft: false
 type: reviews

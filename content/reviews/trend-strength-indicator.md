@@ -1,5 +1,5 @@
 ---
-title: "Trend_Strength_Indicator Review: Settings, Strategy & How to Use It"
+title: "Trend Strength Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/n8BD6Aa3-Trend-Strength-Indicator-ZenAndTheArtOfTrading/"
 date: 2026-07-19
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "An honest review of Trend_Strength_Indicator. Find out its best settings, entry/exit rules, pros/cons, and whether it’s worth your time."
 grounding: "none (no source found)"
 ---
-# Trend_Strength_Indicator Review
-
+# Trend Strength Indicator Review
 If you've browsed TradingView for long, you know the pattern: dozens of trend indicators that all promise to catch the next big move, but many just repackage RSI or a moving average with a new coat of paint. Trend_Strength_Indicator takes a different angle—it attempts to measure the *conviction* behind a trend rather than just its direction. Here's a closer look at what it offers and where it falls short.
 
 ## What It Actually Does

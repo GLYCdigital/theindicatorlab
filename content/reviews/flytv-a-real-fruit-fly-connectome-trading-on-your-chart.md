@@ -1,5 +1,5 @@
 ---
-title: "Flytv_A_Real_Fruit_Fly_Connectome_Trading_On_Your_Chart Review: Settings, Strategy & How to Use It"
+title: "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review — Trend Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

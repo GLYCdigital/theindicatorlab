@@ -1,5 +1,5 @@
 ---
-title: "Jurik_Trend_Ribbon Review: Settings, Strategy & How to Use It"
+title: "Jurik Trend Ribbon Review — Trend Indicator"
 date: 2026-08-30
 draft: false
 type: reviews

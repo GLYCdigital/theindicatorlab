@@ -1,5 +1,5 @@
 ---
-title: "Byo_Pattern_Trendoscope Review: Settings, Strategy & How to Use It"
+title: "Byo Pattern Trendoscope Review — Chart Pattern Indicator"
 date: 2026-08-30
 draft: false
 type: reviews

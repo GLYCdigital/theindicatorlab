@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Adx Review: Settings, Strategy & How to Use It"
+title: "MTF ADX Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Gqf2FqR2-MTF-ADX-xinolia/"
 date: 2026-07-16
 draft: false

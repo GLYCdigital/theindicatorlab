@@ -1,5 +1,5 @@
 ---
-title: "Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review: Settings, Strategy & How to Use It"
+title: "Random Forest AI RSI MACD Confluence Dots3red Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/kd0k2tJS-Random-Forest-AI-RSI-MACD-Confluence-Dots3Red/"
 date: 2026-08-09
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red. Tested settings, entry logic, pros/cons, and who should use this ML-powered trend dots indicator."
 grounding: "none (no source found)"
 ---
-# Random_Forest_Ai_Rsi_Macd_Confluence_Dots3Red Review
-
+# Random Forest AI RSI MACD Confluence Dots3red Review
 The name reads like someone smashed a dictionary against a keyboard. But underneath it sits a trend indicator that pairs a machine-learning model with two classic momentum tools — RSI and MACD — and asks all three to agree before it prints anything.
 
 **What it does**

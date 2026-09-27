@@ -1,5 +1,5 @@
 ---
-title: "Delta_Profile Review: Settings, Strategy & How to Use It"
+title: "Delta Profile Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/qbiNqMqR-Delta-Profile-JuniorQTrader/"
 date: 2026-07-16
 draft: false

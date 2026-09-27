@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Moving Average Review: Settings, Strategy & How to Use It"
+title: "Adaptive Moving Average Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/urJFGIcv-Adaptive-Moving-Average-everget/"
 date: 2026-07-16
 draft: false

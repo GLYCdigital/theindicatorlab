@@ -1,5 +1,5 @@
 ---
-title: "Sma_Ribbon Review: Settings, Strategy & How to Use It"
+title: "SMA Ribbon Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/dhFDqY4Q-SMA-RIBBON-MIkeNan/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Stochastic_Full Review: Settings, Strategy & How to Use It"
+title: "Stochastic Full Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

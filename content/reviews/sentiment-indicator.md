@@ -1,5 +1,5 @@
 ---
-title: "Sentiment_Indicator Review: Settings, Strategy & How to Use It"
+title: "Sentiment Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/MF5HS6Qv-Sentiment-Indicator-Intraday-V11-Kirk-M/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Sentiment_Indicator review: tests settings, entries/exits, pros & cons. See if this crowd-sentiment tool fits your strategy."
 grounding: "none (no source found)"
 ---
-# Sentiment_Indicator Review
-
+# Sentiment Indicator Review
 ## What This Indicator Is Meant to Do
 
 Sentiment_Indicator aims to quantify market mood by analyzing order flow data and price action patterns. It plots a single line that oscillates between 0 and 100. Readings above 70 suggest extreme bullish sentiment (potential top), while readings below 30 signal extreme bearish sentiment (potential bottom).

@@ -1,5 +1,5 @@
 ---
-title: "Scalping_Master_Buy_And_Sell Review: Settings, Strategy & How to Use It"
+title: "Scalping Master Buy And Sell Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/VU1AcxDI-Scalping-Master-TradeSnipers/"
 date: 2026-07-23
 draft: false

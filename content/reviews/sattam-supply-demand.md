@@ -1,5 +1,5 @@
 ---
-title: "Sattam_Supply_Demand Review: Settings, Strategy & How to Use It"
+title: "Sattam Supply Demand Review — Trend Indicator"
 date: 2026-08-16
 draft: false
 type: reviews
@@ -20,8 +20,7 @@ tv_script_url: "https://www.tradingview.com/script/V7qt246z-Sattam-Supply-Demand
 sources: ["https://www.tradingview.com/script/V7qt246z-Sattam-Supply-Demand/"]
 grounding: "none (no source found)"
 ---
-# Sattam_Supply_Demand Review
-
+# Sattam Supply Demand Review
 Most supply/demand indicators on TradingView amount to rectangles drawn over the last pivot high or low with a different color scheme. Sattam_Supply_Demand is built around a different idea: it attempts to identify *where* price is coming from rather than only where it stopped.
 
 The pitch is a zone-detection tool with a multi-timeframe zone hierarchy and base-formation logic. Whether that translates into a usable chart depends on how you trade and on which timeframe.

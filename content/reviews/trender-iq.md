@@ -1,5 +1,5 @@
 ---
-title: "Trender_Iq Review: Settings, Strategy & How to Use It"
+title: "Trender Iq Review — Trend Indicator"
 date: 2026-08-15
 draft: false
 type: reviews

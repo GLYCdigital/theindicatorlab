@@ -1,5 +1,5 @@
 ---
-title: "Macd_Colored_Histogram Review: Settings, Strategy & How to Use It"
+title: "MACD Colored Histogram Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/7YQ1C3FS-MACD-Colored-Histogram-MarceloTorres/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "An honest review of the Macd_Colored_Histogram indicator. Discover color-coded MACD signals, best settings, and practical trade strategies."
 grounding: "none (no source found)"
 ---
-# Macd_Colored_Histogram Review
-
+# MACD Colored Histogram Review
 MACD variations are a crowded category, and many of them add visual noise without adding information. This one is a straightforward take on the classic histogram with a color layer on top.
 
 **What this indicator actually does**

@@ -1,5 +1,5 @@
 ---
-title: "Bollinger_Bands_Standard Review: Settings, Strategy & How to Use It"
+title: "Bollinger Bands Standard Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/Dk7Fj3bz-Bollinger-Bands-Standard-Deviation-ADX-strategy-matsu-bitmex/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "A no-nonsense review of Bollinger_Bands_Standard. See what makes this classic volatility tool tick, best settings, entry/exit tactics, and who should skip it."
 grounding: "none (no source found)"
 ---
-# Bollinger_Bands_Standard Review
-
+# Bollinger Bands Standard Review
 There's no shortage of Bollinger Bands on TradingView, but Bollinger_Bands_Standard by John Bollinger himself is the benchmark. Most Bollinger Band scripts are clones of the same underlying formula; this one is the original, with no added bloat. Whether that makes it the right choice depends on what you need from a band indicator.
 
 ## What This Indicator Actually Does

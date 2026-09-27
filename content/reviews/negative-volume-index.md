@@ -1,5 +1,5 @@
 ---
-title: "Negative Volume Index Review: Settings, Strategy & How to Use It"
+title: "Negative Volume Index Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/3Xs25FQc-Negative-Volume-Index-HPotter/"
 date: 2026-07-16
 draft: false

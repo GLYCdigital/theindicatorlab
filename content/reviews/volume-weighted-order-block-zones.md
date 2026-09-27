@@ -1,5 +1,5 @@
 ---
-title: "Volume_Weighted_Order_Block_Zones Review: Settings, Strategy & How to Use It"
+title: "Volume Weighted Order Block Zones Review — Market Structure Indicator"
 date: 2026-08-28
 draft: false
 type: reviews

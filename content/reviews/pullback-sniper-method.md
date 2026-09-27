@@ -1,5 +1,5 @@
 ---
-title: "Pullback Sniper Method Review: Settings, Strategy & How to Use It"
+title: "Pullback Sniper Method Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/IqyiZbCh-Pullback-Sniper-Method-trade-w-samet-tradewsamet/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Pullback Sniper Method review: a trend-following pullback entry to
 grounding: "none (no source found)"
 ---
 # Pullback Sniper Method Review
-
 The name "Pullback Sniper Method" sets a high expectation — surgical entries, minimal noise. The reality is more modest. It's not a magic bullet, but it's a workable tool if you understand its limits.
 
 ## What This Indicator Actually Does

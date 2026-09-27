@@ -1,5 +1,5 @@
 ---
-title: "Test Indicator Review: Settings, Strategy & How to Use It"
+title: "Test Slug 999 Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/iwCuA44Q-Test-Indicator-xnadam/"
 date: 2026-07-24
 draft: false

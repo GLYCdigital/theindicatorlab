@@ -1,5 +1,5 @@
 ---
-title: "Margin_Debt_Expansion_Vs_Contraction_Indicator Review: Settings, Strategy & How to Use It"
+title: "Margin Debt Expansion Vs Contraction Indicator Review — Trend Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

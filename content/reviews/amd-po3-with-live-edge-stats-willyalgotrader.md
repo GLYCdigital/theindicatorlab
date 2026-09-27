@@ -1,5 +1,5 @@
 ---
-title: "Amd_Po3_With_Live_Edge_Stats_Willyalgotrader Review: Settings, Strategy & How to Use It"
+title: "Amd PO3 With Live Edge Stats Willyalgotrader Review — Trend Indicator"
 date: 2026-08-23
 draft: false
 type: reviews

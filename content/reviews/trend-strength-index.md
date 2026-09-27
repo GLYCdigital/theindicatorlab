@@ -1,5 +1,5 @@
 ---
-title: "Trend Strength Index Review: Settings, Strategy & How to Use It"
+title: "Trend Strength Index Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/zZPD6Ngp-Trend-Strength-Index-That-Tradingene/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "The Trend Strength Index (TSI) measures trend momentum and direction. A 4-star alternative to ADX. Settings, strategy, and honest pros and cons inside."
 grounding: "none (no source found)"
 ---
-# Trend Strength Index (TSI) Review
-
+# Trend Strength Index Review
 The Trend Strength Index (TSI) is an indicator that tries to do what ADX does, but with a directional component built in. The premise is appealing: a single oscillator that tells you both where the trend is pointing and how strong it is. Whether it delivers depends on how you use it and what you expect from it.
 
 ## What This Indicator Actually Does

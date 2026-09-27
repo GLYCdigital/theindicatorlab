@@ -1,5 +1,5 @@
 ---
-title: "Bollinger_Fibonacci_Trend_Extension Review: Settings, Strategy & How to Use It"
+title: "Bollinger Fibonacci Trend Extension Review — Momentum Indicator"
 date: 2026-08-15
 draft: false
 type: reviews

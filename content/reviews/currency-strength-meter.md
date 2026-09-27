@@ -1,5 +1,5 @@
 ---
-title: "Currency_Strength_Meter Review: Settings, Strategy & How to Use It"
+title: "Currency Strength Meter Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/hSVgFkEj-Currency-Strength-Meter-ValentinH-5/"
 date: 2026-07-16
 draft: false

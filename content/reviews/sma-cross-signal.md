@@ -1,5 +1,5 @@
 ---
-title: "Sma_Cross_Signal Review: Settings, Strategy & How to Use It"
+title: "SMA Cross Signal Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/zFZfjjAD-SMA-Cross-SIlentSingh/"
 date: 2026-09-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Sma_Cross_Signal review: tests the classic MA crossover indicator on TradingView. Settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Sma_Cross_Signal Review
-
+# SMA Cross Signal Review
 If you've traded for more than a week, you've seen a hundred SMA crossover indicators. Most are repackaged Pine scripts with extra arrows and a dream. Sma_Cross_Signal does not pretend to reinvent the wheel — it just executes the basics cleanly.
 
 **What This Indicator Actually Does**

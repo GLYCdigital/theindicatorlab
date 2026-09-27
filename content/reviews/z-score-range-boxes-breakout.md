@@ -1,5 +1,5 @@
 ---
-title: "Z_Score_Range_Boxes_Breakout Review: Settings, Strategy & How to Use It"
+title: "Z Score Range Boxes Breakout Review — Trend Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

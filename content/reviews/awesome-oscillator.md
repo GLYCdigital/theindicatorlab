@@ -1,5 +1,5 @@
 ---
-title: "Awesome Oscillator Review: Settings, Strategy & How to Use It"
+title: "Awesome Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/DN0o74FQ-Awesome-Oscillator-everget/"
 date: 2026-07-16
 draft: false

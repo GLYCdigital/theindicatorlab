@@ -1,5 +1,5 @@
 ---
-title: "Tradleware_Gaussian_Channel_Stochrsi_Eth Review: Settings, Strategy & How to Use It"
+title: "Tradleware Gaussian Channel Stochrsi Eth Review — Momentum Indicator"
 date: 2026-08-15
 draft: false
 type: reviews

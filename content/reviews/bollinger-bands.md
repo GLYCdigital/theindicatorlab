@@ -1,5 +1,5 @@
 ---
-title: "Bollinger Bands Review: Settings, Strategy & How to Use It"
+title: "Bollinger Bands Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/ViWAOiIc-Bollinger-Bands-Madrid/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Bollinger Bands review: tested settings, volatility strategies, en
 grounding: "none (no source found)"
 ---
 # Bollinger Bands Review
-
 Let's cut the fluff. Bollinger Bands isn't some secret weapon. It's a volatility-based tool that's been around since the 1980s, and John Bollinger himself would probably roll his eyes at half the YouTube strategies claiming to "trade the bands." Here's what the indicator actually is and how traders use it.
 
 ## What This Indicator Actually Does

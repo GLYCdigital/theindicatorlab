@@ -1,5 +1,5 @@
 ---
-title: "Abcd_Pattern Review: Settings, Strategy & How to Use It"
+title: "Abcd Pattern Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/PJ5nb0eE-ABCD-Pattern-deSultanTM/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Abcd_Pattern review: identifies harmonic ABCD zones automatically. Learn settings, entry rules, and why it's a solid 4/5 tool for trend traders."
 grounding: "none (no source found)"
 ---
-# Abcd_Pattern Indicator Review
-
+# Abcd Pattern Review
 The **Abcd_Pattern** indicator is a harmonic pattern scanner that automatically detects the classic ABCD (also called AB=CD) structure. For traders who manually draw Fibonacci retracements and extensions hoping for a clean pattern, this tool aims to do the heavy lifting.
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Adxr_With_Di Review: Settings, Strategy & How to Use It"
+title: "ADXR With Di Review — Trend Indicator"
 date: 2026-07-31
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Adxr_With_Di review: a 4/5 trend indicator combining ADXR smoothing with directional movement. Settings, strategies, pros/cons, and honest verdict."
 grounding: "none (no source found)"
 ---
-# Adxr_With_Di Review
-
+# ADXR With Di Review
 Adxr_With_Di isn't trying to reinvent technical analysis. It's a focused tool that takes the classic ADX/DMI system and adds one meaningful twist — an ADXR line that smooths the raw ADX into something more tradeable.
 
 ## What This Indicator Actually Does

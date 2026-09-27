@@ -1,5 +1,5 @@
 ---
-title: "Atr_Trailing_Stop_Mtf Review: Settings, Strategy & How to Use It"
+title: "ATR Trailing Stop MTF Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/3h4LO8zH-ATR-Trailing-Stop-ceyhun/"
 date: 2026-07-16
 draft: false

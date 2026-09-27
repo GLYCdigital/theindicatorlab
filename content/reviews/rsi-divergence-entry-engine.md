@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Divergence_Entry_Engine Review: Settings, Strategy & How to Use It"
+title: "RSI Divergence Entry Engine Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/HzULZgpR-RSI-Divergence-Entry-Engine-trade-w-samet-tradewsamet/"
 date: 2026-07-22
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Rsi_Divergence_Entry_Engine on TradingView. Covers settings, pros/cons, entry logic, and who should use it. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Rsi_Divergence_Entry_Engine Review
-
+# RSI Divergence Entry Engine Review
 Most RSI divergence indicators are repainted noise that look great in hindsight but fail in real time. The *Rsi_Divergence_Entry_Engine* positions itself differently—as a clean, actionable tool for spotting hidden and regular divergences without the fluff. Here's a breakdown of what it offers and where it falls short.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Mynd_Risk_Based_Position_Size_Calculator_5 Review: Settings, Strategy & How to Use It"
+title: "Mynd Risk Based Position Size Calculator 5 Review — Trend Indicator"
 date: 2026-09-02
 draft: false
 type: reviews

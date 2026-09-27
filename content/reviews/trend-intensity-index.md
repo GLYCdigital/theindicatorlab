@@ -1,5 +1,5 @@
 ---
-title: "Trend_Intensity_Index Review: Settings, Strategy & How to Use It"
+title: "Trend Intensity Index Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/KYZOCAsk-Trend-Intensity-Index-everget/"
 date: 2026-07-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Trend_Intensity_Index on TradingView. Tests settings, entry/exit logic, and compares it to ADX. See if it's worth adding to your toolkit."
 grounding: "none (no source found)"
 ---
-# Trend_Intensity_Index (TII) Review
-
+# Trend Intensity Index Review
 Trend-following indicators are a crowded field, and most of them are moving averages with a fresh coat of paint. The **Trend_Intensity_Index** (TII) positions itself differently: rather than telling you *that* a trend exists, it attempts to measure *how strong* it is. The natural comparison is the ADX, though the TII is presented as a cleaner, faster-responding alternative.
 
 The indicator plots a single line that oscillates between 0 and 100. Values above 50 suggest a trending market, with strength increasing toward 100; values below 50 suggest a weak or ranging market. That is the entire output — one line, no directional components.

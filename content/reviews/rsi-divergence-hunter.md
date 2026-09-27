@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Divergence_Hunter Review: Settings, Strategy & How to Use It"
+title: "RSI Divergence Hunter Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/nsbmwZiK-RSI-Divergence-Hunter-JOAT-officialjackofalltrades/"
 date: 2026-07-18
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Polynomial_Linear_Regression_Volume_Profile Review: Settings, Strategy & How to Use It"
+title: "Polynomial Linear Regression Volume Profile Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/4rlNNL5e-Polynomial-Linear-Regression-Volume-Profile-BigBeluga/"
 date: 2026-07-22
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "An honest review of Polynomial_Linear_Regression_Volume_Profile: a trend indicator that blends regression and volume. Find settings, strategy, pros/cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Polynomial_Linear_Regression_Volume_Profile Review
-
+# Polynomial Linear Regression Volume Profile Review
 **Polynomial_Linear_Regression_Volume_Profile** is not a moving average or VPVR clone. It's a hybrid: it fits a polynomial regression curve to price, then overlays a volume profile histogram to show where the most traded prices sit within the regression's window. The concept is straightforward—trend direction from the polynomial slope, plus volume-weighted support and resistance from the profile. Execution is what determines whether it's useful.
 
 ## What It Actually Does

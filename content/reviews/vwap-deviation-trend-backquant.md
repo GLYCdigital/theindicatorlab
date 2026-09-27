@@ -1,5 +1,5 @@
 ---
-title: "Vwap_Deviation_Trend_Backquant Review: Settings, Strategy & How to Use It"
+title: "VWAP Deviation Trend Backquant Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/aP7Yf1gT-VWAP-Deviation-Trend-BackQuant/"
 date: 2026-07-30
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Vwap_Deviation_Trend_Backquant review: a trend-following tool using VWAP deviations. Tested settings, entry rules, pros, cons, and who it’s for."
 grounding: "none (no source found)"
 ---
-# Vwap_Deviation_Trend_Backquant Review
-
+# VWAP Deviation Trend Backquant Review
 Most VWAP-based indicators are repackaged moving averages with a volume twist. **Vwap_Deviation_Trend_Backquant** is different in concept: rather than plotting a single VWAP line, it builds a trend framework around deviation bands.
 
 ## What It Actually Does

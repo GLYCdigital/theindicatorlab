@@ -1,5 +1,5 @@
 ---
-title: "Institutional_Order_Blocks Review: Settings, Strategy & How to Use It"
+title: "Institutional Order Blocks Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/3SNcILB5-Prosty-Order-Block-Adriaan-Obi/"
 date: 2026-08-04
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Institutional_Order_Blocks review: tested settings, entry logic, pros/cons, and who should use this 4-star trend indicator."
 grounding: "none (no source found)"
 ---
-# Institutional_Order_Blocks Review
-
+# Institutional Order Blocks Review
 The pitch is familiar: every other "institutional" indicator on TradingView is just a repainted moving average with a fancy name. Institutional_Order_Blocks positions itself as something different — it identifies the last opposing candle before a strong impulse move, the classic smart money concept, and plots those zones on your chart. The intent is a clean, non-repainting map of where large orders may have been placed, rather than a signal generator.
 
 **Key Features That Matter**

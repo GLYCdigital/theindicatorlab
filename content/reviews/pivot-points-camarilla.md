@@ -1,5 +1,5 @@
 ---
-title: "Pivot_Points_Camarilla Review: Settings, Strategy & How to Use It"
+title: "Pivot Points Camarilla Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/FjUVM2Ee-Pivot-Points-Camarilla-MrWiggins/"
 date: 2026-07-16
 draft: false

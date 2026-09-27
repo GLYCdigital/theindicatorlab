@@ -1,5 +1,5 @@
 ---
-title: "Ict_Silver_Bullet Review: Settings, Strategy & How to Use It"
+title: "ICT Silver Bullet Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/1kwkYj40-ICT-Silver-Bullet-fluxchart/"
 date: 2026-07-16
 draft: false

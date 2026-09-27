@@ -1,5 +1,5 @@
 ---
-title: "3D_Market_Profile_Boswaves Review: Settings, Strategy & How to Use It"
+title: "3d Market Profile Boswaves Review — Market Structure Indicator"
 date: 2026-08-25
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "3D_Market_Profile_Boswaves review: honest take on settings, entry 
 tv_script_url: "https://www.tradingview.com/script/QdfnWDjO-3D-Market-Profile-BOSWaves/"
 sources: ["https://www.tradingview.com/script/QdfnWDjO-3D-Market-Profile-BOSWaves/"]
 ---
-# 3D Market Profile [BOSWaves] Review
-
+# 3d Market Profile Boswaves Review
 The 3D Market Profile [BOSWaves] is a TPO (Time Price Opportunity) market profile system that aggregates chart bars into complete TPO periods, builds a per-row distribution of letters and print counts, and renders the result as a three-dimensional extruded structure using polyline geometry. As the name suggests, the "3D" element is not a gimmick — it refers to extruded top faces and side caps that follow the profile contour row by row, plus a rear glass plane and wireframe bounding box. If you've used traditional market profile tools, the analytical framework (POC, Value Area, Initial Balance) will feel familiar, but the spatial rendering is a different approach to the same underlying data.
 
 It's worth being clear about what this indicator is and isn't. It is a structural visualization and reference tool, not a signal generator. It builds a distribution from recent chart history, derives standard market profile levels from that distribution, and renders them as extending reference lines. It does not produce discrete entry or exit signals.

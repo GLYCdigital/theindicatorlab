@@ -1,5 +1,5 @@
 ---
-title: "Macd_Adaptive Review: Settings, Strategy & How to Use It"
+title: "MACD Adaptive Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

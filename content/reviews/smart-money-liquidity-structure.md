@@ -1,5 +1,5 @@
 ---
-title: "Smart_Money_Liquidity_Structure Review: Settings, Strategy & How to Use It"
+title: "Smart Money Liquidity Structure Review — Market Structure Indicator"
 date: 2026-07-20
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Smart_Money_Liquidity_Structure review. See how it maps liquidity zones and market structure for trend trading. Settings, pros, cons, and who it fits."
 grounding: "none (no source found)"
 ---
-# Smart_Money_Liquidity_Structure Review
-
+# Smart Money Liquidity Structure Review
 The *Smart_Money_Liquidity_Structure* indicator sets out to map where "smart money" activity may be concentrated—liquidity zones, structural breaks, and order blocks. It is aimed at traders who already work with these concepts and want them drawn automatically rather than by hand. Here is a breakdown of what the tool does and how it is typically used.
 
 ## What This Indicator Actually Does

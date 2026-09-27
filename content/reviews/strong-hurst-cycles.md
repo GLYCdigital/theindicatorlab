@@ -1,5 +1,5 @@
 ---
-title: "Strong_Hurst_Cycles Review: Settings, Strategy & How to Use It"
+title: "Strong Hurst Cycles Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/ZRfNMldA-Strong-Hurst-Cycles-ProjectSyndicate/"
 date: 2026-07-16
 draft: false

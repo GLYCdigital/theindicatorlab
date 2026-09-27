@@ -1,5 +1,5 @@
 ---
-title: "Hero_Dashboard_Information_Table Review: Settings, Strategy & How to Use It"
+title: "Hero Dashboard Information Table Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/guGet1wg-Hero-Dashboard-Information-Table-kolliparasiva/"
 date: 2026-07-16
 draft: false

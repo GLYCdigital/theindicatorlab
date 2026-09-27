@@ -1,5 +1,5 @@
 ---
-title: "Indicator_Agreement_Scanner Review: Settings, Strategy & How to Use It"
+title: "Indicator Agreement Scanner Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

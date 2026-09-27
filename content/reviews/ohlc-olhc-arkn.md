@@ -1,5 +1,5 @@
 ---
-title: "Ohlc_Olhc_Arkn Review: Settings, Strategy & How to Use It"
+title: "Ohlc Olhc Arkn Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/q3JrJN1N-OHLC-OLHC-ARKN-AtomicPips/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Normalize_Rsi_Tr Review: Settings, Strategy & How to Use It"
+title: "Normalize RSI Tr Review — Momentum Indicator"
 date: 2026-09-06
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Opening_Range_Breakout_Session_Strategy Review: Settings, Strategy & How to Use It"
+title: "Opening Range Breakout Session Strategy Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/JCDja5a6-Opening-Range-Breakout-Session-Strategy-JOAT-officialjackofalltrades/"
 date: 2026-07-28
 draft: false
@@ -20,7 +20,6 @@ description: "Honest review of the Opening_Range_Breakout_Session_Strategy indic
 grounding: "none (no source found)"
 ---
 # Opening Range Breakout Session Strategy Review
-
 Let's cut the fluff. This is a straightforward session-based breakout tool—no AI, no magic, just clean logic built around a defined opening range. Here's a breakdown of what it offers.
 
 **What It Actually Does**

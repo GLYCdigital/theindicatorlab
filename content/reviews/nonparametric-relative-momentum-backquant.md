@@ -1,5 +1,5 @@
 ---
-title: "Nonparametric_Relative_Momentum_Backquant Review: Settings, Strategy & How to Use It"
+title: "Nonparametric Relative Momentum Backquant Review — Momentum Indicator"
 date: 2026-08-17
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Ichimoku_Signals Review: Settings, Strategy & How to Use It"
+title: "Ichimoku Signals Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/2WBBRxKi-Ichimoku-signals-salarkamjoo/"
 date: 2026-07-16
 draft: false

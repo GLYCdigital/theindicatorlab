@@ -1,5 +1,5 @@
 ---
-title: "Variable Moving Average Review: Settings, Strategy & How to Use It"
+title: "Variable Moving Average Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/gUxS0xJE-Variable-Moving-Average-jasondhadley/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci Extension Auto Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Extension Auto Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

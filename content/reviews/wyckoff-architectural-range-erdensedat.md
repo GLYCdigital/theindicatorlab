@@ -1,5 +1,5 @@
 ---
-title: "Wyckoff_Architectural_Range_Erdensedat Review: Settings, Strategy & How to Use It"
+title: "Wyckoff Architectural Range Erdensedat Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/qyZm2O45-Wyckoff-Architectural-Range-erdensedat/"
 date: 2026-07-23
 draft: false

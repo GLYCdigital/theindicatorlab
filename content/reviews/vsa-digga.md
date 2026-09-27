@@ -1,5 +1,5 @@
 ---
-title: "Vsa_Digga Review: Settings, Strategy & How to Use It"
+title: "Vsa Digga Review — Trend Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

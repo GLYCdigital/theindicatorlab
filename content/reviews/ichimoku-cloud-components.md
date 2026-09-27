@@ -1,5 +1,5 @@
 ---
-title: "Ichimoku_Cloud_Components Review: Settings, Strategy & How to Use It"
+title: "Ichimoku Cloud Components Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/h1Rgqj34-Ichimoku-Cloud-Tracha/"
 date: 2026-07-28
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Ichimoku_Cloud_Components. Breaks down Senkou, Kijun, Tenkan, Chikou Spans. Best settings, entry logic, and who should skip it."
 grounding: "none (no source found)"
 ---
-# Ichimoku_Cloud_Components Review
-
+# Ichimoku Cloud Components Review
 Most Ichimoku variants on TradingView either clutter the chart with unnecessary lines or strip out essential components. **Ichimoku_Cloud_Components** sits somewhere in the middle—it's not revolutionary, but it does one thing well: it gives you clean, individual control over each Ichimoku element without the visual noise of a full cloud.
 
 ## What It Does

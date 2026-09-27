@@ -1,5 +1,5 @@
 ---
-title: "Price_Volume_Rank Review: Settings, Strategy & How to Use It"
+title: "Price Volume Rank Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/vho8gnBR-Price-Volume-Rank-LazyBear/"
 date: 2026-08-12
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Price_Volume_Rank review: Tested settings, entry/exit logic, and honest pros/cons. A solid 4/5 trend-strength tool for swing traders."
 grounding: "none (no source found)"
 ---
-# Price_Volume_Rank Review
-
+# Price Volume Rank Review
 Price_Volume_Rank is a trend-strength meter that combines price momentum with volume confirmation into a single normalized score. The concept is straightforward: a stock moving up on rising volume ranks higher than one drifting on thin participation. No black box, no "smart money" mysticism — just a quantitative way to gauge whether a trend has participation behind it.
 
 The indicator plots a single line oscillating between 0 and 100, with color-coded zones. There's also a built-in signal line crossover: when the rank line crosses above its moving average, it suggests buying pressure is building, and the color shift from red to green happens at that crossover.

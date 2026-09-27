@@ -1,5 +1,5 @@
 ---
-title: "Smartfit_Trend_Channels Review: Settings, Strategy & How to Use It"
+title: "Smartfit Trend Channels Review — Trend Indicator"
 date: 2026-08-29
 draft: false
 type: reviews

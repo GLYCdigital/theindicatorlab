@@ -1,5 +1,5 @@
 ---
-title: "Rsi Divergence Detector Review: Settings, Strategy & How to Use It"
+title: "RSI Divergence Detector Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/zR6IkGDL-RSI-Divergence-Detector-DragonFly-Trading/"
 date: 2026-07-16
 draft: false

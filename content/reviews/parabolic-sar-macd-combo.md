@@ -1,5 +1,5 @@
 ---
-title: "Parabolic_Sar_Macd_Combo Review: Settings, Strategy & How to Use It"
+title: "Parabolic Sar MACD Combo Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/MddD4giy-Parabolic-SAR-everget/"
 date: 2026-07-26
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Parabolic_Sar_Macd_Combo review. Tests PSAR and MACD combo for trend entries, exits, and false signal filters. Settings included."
 grounding: "none (no source found)"
 ---
-# Parabolic_Sar_Macd_Combo Review
-
+# Parabolic Sar MACD Combo Review
 Trend-following indicators tend to fall into two camps: too noisy or too laggy. The Parabolic_Sar_Macd_Combo attempts to address that by combining two classics—Parabolic SAR and MACD—into a single confirmation system. Here's what it does and where it fits.
 
 ### What It Actually Does

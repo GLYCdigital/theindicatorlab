@@ -1,5 +1,5 @@
 ---
-title: "Sltp_Levels Review: Settings, Strategy & How to Use It"
+title: "Sltp Levels Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

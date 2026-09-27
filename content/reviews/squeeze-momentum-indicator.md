@@ -1,5 +1,5 @@
 ---
-title: "Squeeze Momentum Indicator Review: Settings, Strategy & How to Use It"
+title: "Squeeze Momentum Indicator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/0s3c0LOv-Squeeze-Momentum-Indicator-accypriyesh/"
 date: 2026-07-16
 draft: false

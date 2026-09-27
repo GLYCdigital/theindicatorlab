@@ -1,5 +1,5 @@
 ---
-title: "Envelopes_Fixed_Percentage Review: Settings, Strategy & How to Use It"
+title: "Envelopes Fixed Percentage Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

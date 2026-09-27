@@ -1,5 +1,5 @@
 ---
-title: "Minawesome_S_Best Review: Settings, Strategy & How to Use It"
+title: "Minawesome S Best Review — Trend Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Uptrick_Band_Flow Review: Settings, Strategy & How to Use It"
+title: "Uptrick Band Flow Review — Volume Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

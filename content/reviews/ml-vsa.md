@@ -1,5 +1,5 @@
 ---
-title: "Ml_Vsa Review: Settings, Strategy & How to Use It"
+title: "Ml Vsa Review — Trend Indicator"
 date: 2026-08-31
 draft: false
 type: reviews

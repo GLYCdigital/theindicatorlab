@@ -1,5 +1,5 @@
 ---
-title: "Fisher Transform Review: Settings, Strategy & How to Use It"
+title: "Fisher Transform Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/ULUdZIUq-Fisher-Transform-InSilico/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Fisher Transform Review: A powerful reversal indicator that turns price into a Gaussian normal distribution. Settings, strategy, pros/cons, and honest verdict."
 grounding: "none (no source found)"
 ---
-# Fisher Transform Indicator Review
-
+# Fisher Transform Review
 If standard RSI or Stochastic leave you chasing moves instead of catching them early, the Fisher Transform is worth understanding. It's an indicator that either clicks or frustrates, and it pays to know where it shines and where it falls short before you commit to it.
 
 ## What This Indicator Actually Does

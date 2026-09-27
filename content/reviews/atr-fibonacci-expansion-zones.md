@@ -1,5 +1,5 @@
 ---
-title: "Atr Fibonacci Expansion Zones Review: Settings, Strategy & How to Use It"
+title: "ATR Fibonacci Expansion Zones Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/ELqDY75G-ATR-Fibonacci-Expansion-Zones-MYNAMEISBRANDON/"
 date: 2026-07-16
 draft: false

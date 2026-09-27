@@ -1,5 +1,5 @@
 ---
-title: "Supertrend_Fibonacci_Ote_Grid_Bands Review: Settings, Strategy & How to Use It"
+title: "Supertrend Fibonacci Ote Grid Bands Review — Momentum Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

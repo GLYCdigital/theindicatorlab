@@ -1,5 +1,5 @@
 ---
-title: "Variable_Index_Dynamic_Average_Vidya Review: Settings, Strategy & How to Use It"
+title: "Variable Index Dynamic Average Vidya Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/64ynXU2e-VIDYA-KivancOzbilgic/"
 date: 2026-09-02
 draft: false

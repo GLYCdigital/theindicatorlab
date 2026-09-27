@@ -1,5 +1,5 @@
 ---
-title: "Volume_Price_Trend_Vpt Review: Settings, Strategy & How to Use It"
+title: "Volume Price Trend VPT Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/ztwtWx1Y-Volume-Price-Trend-VPT-BiggWigg/"
 date: 2026-08-17
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Volume Price Trend VPT indicator review: settings, entry/exit logic, pros/cons. Is this volume-weighted momentum tool worth adding to your chart?"
 grounding: "none (no source found)"
 ---
-# Volume_Price_Trend_Vpt Review
-
+# Volume Price Trend VPT Review
 Volume-weighted momentum indicators tend to fall into one of two categories: redundant restatements of OBV, or overcomplicated constructs that obscure more than they reveal. Volume_Price_Trend_Vpt sits in a narrower middle ground. It does one thing and does it without much decoration — measuring the relationship between price movement and volume flow. What follows is a breakdown of what the script actually does and where it fits in a charting setup.
 
 ## Core Logic

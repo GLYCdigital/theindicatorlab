@@ -1,5 +1,5 @@
 ---
-title: "Smart_Money_Breakout_Channels_Jos_Protrader Review: Settings, Strategy & How to Use It"
+title: "Smart Money Breakout Channels Jos Protrader Review — Volume Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

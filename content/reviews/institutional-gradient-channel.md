@@ -1,5 +1,5 @@
 ---
-title: "Institutional_Gradient_Channel Review: Settings, Strategy & How to Use It"
+title: "Institutional Gradient Channel Review — Trend Indicator"
 date: 2026-07-23
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest review of Institutional_Gradient_Channel: a multi-timeframe trend indicator. Settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Institutional_Gradient_Channel Review
-
+# Institutional Gradient Channel Review
 The **Institutional_Gradient_Channel** is a trend-following indicator built around gradient-based support and resistance zones drawn from multiple timeframes. It aims to approximate what "smart money" positioning looks like by blending higher-timeframe price action into a single dynamic band. It is not a standalone system, and it is not a magic bullet.
 
 ## What It Actually Does

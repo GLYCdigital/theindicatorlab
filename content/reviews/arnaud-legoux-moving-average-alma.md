@@ -1,5 +1,5 @@
 ---
-title: "Arnaud_Legoux_Moving_Average_Alma Review: Settings, Strategy & How to Use It"
+title: "Arnaud Legoux Moving Average Alma Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/VmBBSTGn-Arnaud-Legoux-Moving-Average-ALMA-with-buy-sell-signals-tartigradia/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "ALMA eliminates lag better than SMA/EMA while staying smoother than WMA. Best settings, pros/cons, and how to use it for entries and exits."
 grounding: "none (no source found)"
 ---
-# Arnaud Legoux Moving Average (ALMA) Review
-
+# Arnaud Legoux Moving Average Alma Review
 If you've ever watched a moving average drag behind price like a dead weight, you know the frustration. The Arnaud Legoux Moving Average (ALMA) was designed to address exactly that—less lag than an EMA, but smoother than a WMA. Here's a breakdown of what it does and how to think about using it.
 
 **What this indicator actually does**

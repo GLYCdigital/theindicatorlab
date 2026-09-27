@@ -1,5 +1,5 @@
 ---
-title: "Alpha_Signal_Engine Review: Settings, Strategy & How to Use It"
+title: "Alpha Signal Engine Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/sOLjMlYy-Alpha-Signal-Engine-Pro-MarkitTick/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Multi-timeframe momentum and volume confluence system. Solid for trend confirmation but noisy in choppy markets. 4/5."
 grounding: "none (no source found)"
 ---
-# Alpha_Signal_Engine Review
-
+# Alpha Signal Engine Review
 Alpha_Signal_Engine is a multi-timeframe momentum and volume confluence engine. Rather than flashing isolated buy/sell arrows, it layers three components and requires them to agree before printing a signal. The premise is straightforward: a signal only counts when the momentum, trend, and volatility readings align across more than one timeframe. No single component overrides the others.
 
 ## What This Indicator Actually Does

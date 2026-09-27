@@ -1,5 +1,5 @@
 ---
-title: "Sattam_Volume_Edge Review: Settings, Strategy & How to Use It"
+title: "Sattam Volume Edge Review — Volume Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

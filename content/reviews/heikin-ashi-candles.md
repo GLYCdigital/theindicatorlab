@@ -1,5 +1,5 @@
 ---
-title: "Heikin_Ashi_Candles Review: Settings, Strategy & How to Use It"
+title: "Heikin Ashi Candles Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/KJTMYGkW-Smoothed-Heiken-Ashi-Candles-ColinML/"
 date: 2026-07-16
 draft: false

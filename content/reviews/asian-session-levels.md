@@ -1,5 +1,5 @@
 ---
-title: "Asian_Session_Levels Review: Settings, Strategy & How to Use It"
+title: "Asian Session Levels Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Asian_Session_Levels draws key support/resistance zones from Tokyo/Asian session. Clean, automatic, but lacks volume confirmation. Honest 4/5 review."
 grounding: "none (no source found)"
 ---
-# Asian_Session_Levels Review
-
+# Asian Session Levels Review
 Asian_Session_Levels does one thing: it draws the Asian session's high, low, and open on your chart. It is not a complete system, and it is not a magic bullet. What follows is a breakdown of what it offers and where it falls short.
 
 ## What This Indicator Actually Does

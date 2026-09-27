@@ -1,5 +1,5 @@
 ---
-title: "Ezpz_Rsi_Scalper Review: Settings, Strategy & How to Use It"
+title: "Ezpz RSI Scalper Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Ezpz_Rsi_Scalper review: a simple RSI-based scalping tool with clear overbought/oversold signals. Settings, strategy, pros/cons, and better alternatives."
 grounding: "none (no source found)"
 ---
-# Ezpz_Rsi_Scalper Review
-
+# Ezpz RSI Scalper Review
 Let's cut the fluff: **Ezpz_Rsi_Scalper** is a no-nonsense RSI scalper that strips away everything you don't need. No volume profiles, no cloud patterns, no machine learning—just raw RSI with a clean trigger system. If you've ever stared at a standard RSI and wished it would just *tell you* when to pull the trigger, this might be your thing.
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Least_Squares_Moving_Average_Lsma Review: Settings, Strategy & How to Use It"
+title: "Least Squares Moving Average LSMA Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/aMYbWgIf-Least-Squares-Moving-Average-Scalpalytics/"
 date: 2026-07-29
 draft: false

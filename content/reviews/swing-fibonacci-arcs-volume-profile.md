@@ -1,5 +1,5 @@
 ---
-title: "Swing_Fibonacci_Arcs_Volume_Profile Review: Settings, Strategy & How to Use It"
+title: "Swing Fibonacci Arcs Volume Profile Review — Volume Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

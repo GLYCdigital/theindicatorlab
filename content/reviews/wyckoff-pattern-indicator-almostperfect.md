@@ -1,5 +1,5 @@
 ---
-title: "Wyckoff_Pattern_Indicator_Almostperfect Review: Settings, Strategy & How to Use It"
+title: "Wyckoff Pattern Indicator Almostperfect Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/RJ8HShmD-Wyckoff-Pattern-Indicator-Dr-AtulGoswami/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Wyckoff_Pattern_Indicator_Almostperfect review: detects accumulation/distribution phases and SOS/SOW signals. Settings, backtest results, and honest pros/cons for traders."
 grounding: "none (no source found)"
 ---
-# Almostperfect Wyckoff Indicator Review
-
+# Wyckoff Pattern Indicator Almostperfect Review
 This script is built around Wyckoff's classic market phases: accumulation, mark-up, distribution, and mark-down. It also flags specific Wyckoff events such as Spring, Upthrust After Distribution (UTAD), and Last Point of Support (LPS). Signals come in the form of colored phase zones plotted on the chart and arrows marking potential entry points.
 
 **What it does**

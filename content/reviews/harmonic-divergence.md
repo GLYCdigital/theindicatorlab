@@ -1,5 +1,5 @@
 ---
-title: "Harmonic_Divergence Review: Settings, Strategy & How to Use It"
+title: "Harmonic Divergence Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Harmonic_Divergence spots hidden and regular divergences on harmonic patterns. A solid 4/5 tool for pattern traders who want confluence."
 grounding: "none (no source found)"
 ---
-# Harmonic_Divergence Review
-
+# Harmonic Divergence Review
 Most divergence indicators are noisy, laggy, or repaint. *Harmonic_Divergence* takes a narrower approach: it plots divergence signals only where they align with harmonic pattern structures. If you trade Gartleys, Bats, or Crab setups, that focus is the whole point.
 
 ## What This Indicator Actually Does

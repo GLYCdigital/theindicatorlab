@@ -1,5 +1,5 @@
 ---
-title: "Swing_Index Review: Settings, Strategy & How to Use It"
+title: "Swing Index Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/BkYmDwYf-Swing-Index-System-Heiken-Ashi-Pivot-Breakout-Strategy-SparkyFlary/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Swing_Index measures intra-bar price pressure to spot reversals. Settings, pros, cons, and a better alternative included."
 grounding: "none (no source found)"
 ---
-# Swing_Index Review
-
+# Swing Index Review
 Swing_Index isn't another lagging oscillator. It's a mathematical model that quantifies the internal strength of each bar by comparing the current close to the prior open, high, and low. Here's the breakdown.
 
 ## What It Actually Does

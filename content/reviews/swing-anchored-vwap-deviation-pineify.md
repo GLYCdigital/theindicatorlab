@@ -1,5 +1,5 @@
 ---
-title: "Swing_Anchored_Vwap_Deviation_Pineify Review: Settings, Strategy & How to Use It"
+title: "Swing Anchored VWAP Deviation Pineify Review — Volume Indicator"
 date: 2026-08-25
 draft: false
 type: reviews

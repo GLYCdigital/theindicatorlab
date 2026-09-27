@@ -1,5 +1,5 @@
 ---
-title: "Genetic_Algorithm_Optimizer Review: Settings, Strategy & How to Use It"
+title: "Genetic Algorithm Optimizer Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

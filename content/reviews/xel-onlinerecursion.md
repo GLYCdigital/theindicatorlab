@@ -1,5 +1,5 @@
 ---
-title: "Xel_Onlinerecursion Review: Settings, Strategy & How to Use It"
+title: "Xel Onlinerecursion Review — Momentum Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

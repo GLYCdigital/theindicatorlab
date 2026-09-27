@@ -1,5 +1,5 @@
 ---
-title: "Contested_Volume_Bubbles Review: Settings, Strategy & How to Use It"
+title: "Contested Volume Bubbles Review — Volume Indicator"
 date: 2026-09-06
 draft: false
 type: reviews

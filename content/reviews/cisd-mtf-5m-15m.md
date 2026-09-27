@@ -1,5 +1,5 @@
 ---
-title: "Cisd_Mtf_5M_15M Review: Settings, Strategy & How to Use It"
+title: "Cisd MTF 5m 15m Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

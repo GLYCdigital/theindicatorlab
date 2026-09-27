@@ -1,5 +1,5 @@
 ---
-title: "Ema_Supertrend_Obv_Strixedge Review: Settings, Strategy & How to Use It"
+title: "EMA Supertrend OBV Strixedge Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/KNZ20lcY-EMA-Supertrend-OBV-StrixEDGE/"
 date: 2026-07-19
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Ema_Supertrend_Obv_Strixedge combines three core tools for trend traders. Honest review with settings, entry rules, and real performance."
 grounding: "none (no source found)"
 ---
-# Ema_Supertrend_Obv_Strixedge Review
-
+# EMA Supertrend OBV Strixedge Review
 This indicator is not revolutionary, but it's a clean mashup of three established concepts—EMA, SuperTrend, and OBV—combined into one pane. If you already use any of these tools separately, the layout will feel familiar. If you're new to trend trading, it offers a structured starting point.
 
 ## What It Actually Does

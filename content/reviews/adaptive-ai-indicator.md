@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Ai_Indicator Review: Settings, Strategy & How to Use It"
+title: "Adaptive AI Indicator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Buy_Sell_Indicator Review: Settings, Strategy & How to Use It"
+title: "Buy Sell Indicator Review — Trend Indicator"
 date: 2026-08-18
 draft: false
 type: reviews
@@ -20,8 +20,7 @@ tv_script_url: "https://www.tradingview.com/script/2xpqff5s-BUY-SELL-Indicator/"
 sources: ["https://www.tradingview.com/script/2xpqff5s-BUY-SELL-Indicator/"]
 grounding: "none (no source found)"
 ---
-# Buy_Sell_Indicator Review
-
+# Buy Sell Indicator Review
 There's no shortage of buy/sell indicators on TradingView, and most of them are repackaged moving average crossovers with arrows slapped on top. The Buy_Sell_Indicator is a trend-following tool that plots buy and sell signals directly on the chart, and it does so with a cleaner output than most of its competitors.
 
 ## What This Indicator Actually Does

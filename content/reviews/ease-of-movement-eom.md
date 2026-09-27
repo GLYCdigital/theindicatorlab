@@ -1,5 +1,5 @@
 ---
-title: "Ease_Of_Movement_Eom Review: Settings, Strategy & How to Use It"
+title: "Ease Of Movement Eom Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Y9Eykm1v-Ease-of-Movement-EOM-HPotter/"
 date: 2026-09-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Ease of Movement EOM review: honest look at settings, signals, and real-world use. Learn how to trade it effectively without the hype."
 grounding: "none (no source found)"
 ---
-# Ease of Movement (EOM) Review
-
+# Ease Of Movement Eom Review
 Ease of Movement is one of those indicators that sounds compelling in theory—measuring whether price is moving on strong volume or just drifting—but it is also easy to misapply. This review focuses on what the TradingView implementation actually does and where it fits in a workflow.
 
 **What it does (without the fluff)**

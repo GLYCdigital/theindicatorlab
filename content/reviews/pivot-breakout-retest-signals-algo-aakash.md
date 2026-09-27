@@ -1,5 +1,5 @@
 ---
-title: "Pivot_Breakout_Retest_Signals_Algo_Aakash Review: Settings, Strategy & How to Use It"
+title: "Pivot Breakout Retest Signals Algo Aakash Review — Support & Resistance Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "A robust pivot breakout & retest system with Aakash’s algo logic. Reduces noise, but requires confirmation. Best on 1H–4H for trend reversals."
 grounding: "none (no source found)"
 ---
-# Pivot_Breakout_Retest_Signals_Algo_Aakash Review
-
+# Pivot Breakout Retest Signals Algo Aakash Review
 ## What This Indicator Does
 
 This is not a generic pivot high/low scanner. It detects significant swing levels, waits for a breakout above or below them, then flags a retest of that level as a potential entry trigger. A configurable length parameter filters out micro-pivots so the tool is not reacting to every minor swing. Events are marked directly on the chart with arrows and labels.

@@ -1,5 +1,5 @@
 ---
-title: "Spinning_Top Review: Settings, Strategy & How to Use It"
+title: "Spinning Top Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/LyNzdJVX-Spinning-Tops-repo32/"
 date: 2026-07-16
 draft: false

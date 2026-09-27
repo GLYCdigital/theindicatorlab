@@ -1,5 +1,5 @@
 ---
-title: "Chaikin Volatility Histogram Review: Settings, Strategy & How to Use It"
+title: "Chaikin Volatility Histogram Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/QAjxTT0J-Chaikin-Volatility-HPotter/"
 date: 2026-07-16
 draft: false

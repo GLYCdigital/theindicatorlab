@@ -1,5 +1,5 @@
 ---
-title: "Chaikin_Cmf_Signals Review: Settings, Strategy & How to Use It"
+title: "Chaikin CMF Signals Review — Trend Indicator"
 date: 2026-09-01
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Chaikin_Cmf_Signals review: tested settings, entry/exit logic, pros/cons. A solid 4/5 trend confirmation tool for swing traders. See how it performs."
 grounding: "none (no source found)"
 ---
-# Chaikin_Cmf_Signals Review
-
+# Chaikin CMF Signals Review
 Chaikin_Cmf_Signals is not just another CMF clone with a moving average bolted on. It's a trend-focused wrapper that turns raw Chaikin Money Flow readings into signals you can act on without squinting at histogram bars all day.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Macro_Candles_M1D Review: Settings, Strategy & How to Use It"
+title: "Macro Candles M1d Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

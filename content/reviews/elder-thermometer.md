@@ -1,5 +1,5 @@
 ---
-title: "Elder_Thermometer Review: Settings, Strategy & How to Use It"
+title: "Elder Thermometer Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Elder_Thermometer review: measures market temperature from 0-100. How to set it, trade extremes, and avoid false signals. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Elder_Thermometer Review
-
+# Elder Thermometer Review
 The **Elder_Thermometer** is a momentum oscillator, and it is worth being clear about what it is before deciding whether it earns a place in your setup.
 
 ### What This Indicator Actually Does

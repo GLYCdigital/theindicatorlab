@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Composite_Oscillator_Aco Review: Settings, Strategy & How to Use It"
+title: "Adaptive Composite Oscillator Aco Review — Momentum Indicator"
 date: 2026-08-21
 draft: false
 type: reviews

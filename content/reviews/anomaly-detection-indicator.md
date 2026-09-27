@@ -1,5 +1,5 @@
 ---
-title: "Anomaly_Detection_Indicator Review: Settings, Strategy & How to Use It"
+title: "Anomaly Detection Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/ZkIzGxSg-Anomaly-Detection-Indicator-Fournier-Eaton-etothepii/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Candlestick_Pattern_Strength Review: Settings, Strategy & How to Use It"
+title: "Candlestick Pattern Strength Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/zkDImCJc-Candlestick-Patterns-Dipak-Patil/"
 date: 2026-07-16
 draft: false

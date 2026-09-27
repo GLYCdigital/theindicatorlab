@@ -1,5 +1,5 @@
 ---
-title: "Vwap_Deviation Review: Settings, Strategy & How to Use It"
+title: "VWAP Deviation Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/aP7Yf1gT-VWAP-Deviation-Trend-BackQuant/"
 date: 2026-08-23
 draft: false

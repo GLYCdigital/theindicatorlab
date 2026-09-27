@@ -1,5 +1,5 @@
 ---
-title: "Ctz_Bitcoin_Cycle_Master Review: Settings, Strategy & How to Use It"
+title: "Ctz Bitcoin Cycle Master Review — Trend Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

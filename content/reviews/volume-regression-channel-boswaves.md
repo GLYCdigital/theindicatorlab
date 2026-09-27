@@ -1,5 +1,5 @@
 ---
-title: "Volume_Regression_Channel_Boswaves Review: Settings, Strategy & How to Use It"
+title: "Volume Regression Channel Boswaves Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/ZUhXviyz-Volume-Regression-Channel-BOSWaves/"
 date: 2026-08-13
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Volume_Regression_Channel_Boswaves review: tested settings, entry/exit logic, pros/cons. A solid volume-confirmed trend tool, but not a standalone system."
 grounding: "none (no source found)"
 ---
-# Volume_Regression_Channel_Boswaves Review
-
+# Volume Regression Channel Boswaves Review
 Let's be blunt: most "regression channel" indicators on TradingView are just a line with a fancy name. This one attempts something different. Volume_Regression_Channel_Boswaves takes the standard regression channel concept and layers volume-weighted confirmation on top, which changes how the swings read. The question is whether those additions hold up.
 
 **What it actually does**

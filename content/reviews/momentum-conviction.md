@@ -1,5 +1,5 @@
 ---
-title: "Momentum_Conviction Review: Settings, Strategy & How to Use It"
+title: "Momentum Conviction Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/u0tKPpfk-Momentum-Conviction-HermesCore/"
 date: 2026-07-16
 draft: false

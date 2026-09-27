@@ -1,5 +1,5 @@
 ---
-title: "Rob_Hoffman_Irb_Ma_Trend Review: Settings, Strategy & How to Use It"
+title: "Rob Hoffman Irb Ma Trend Review — Trend Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

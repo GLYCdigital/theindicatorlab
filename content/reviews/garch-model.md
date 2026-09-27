@@ -1,5 +1,5 @@
 ---
-title: "Garch_Model Review: Settings, Strategy & How to Use It"
+title: "Garch Model Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Garch_Model brings GARCH(1,1) volatility forecasting to TradingView. Here's how to use it effectively."
 grounding: "none (no source found)"
 ---
-# Garch_Model Review
-
+# Garch Model Review
 Volatility indicators are plentiful on TradingView, but *Garch_Model* stands apart as a rare tool that implements a proper GARCH(1,1) estimation directly on the chart. No moving average wrapper, no RSI hybrid—just conditional volatility modeling. This review covers what it does, how to configure it, and where it fits in a trader's workflow.
 
 ## What This Indicator Actually Does

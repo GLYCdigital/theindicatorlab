@@ -1,5 +1,5 @@
 ---
-title: "Ha_Macd_Nemesis Review: Settings, Strategy & How to Use It"
+title: "Ha MACD Nemesis Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/jHlCAeUv-HA-macd-nemesis-Alpha-Wizard/"
 date: 2026-07-16
 draft: false

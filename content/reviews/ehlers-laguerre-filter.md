@@ -1,5 +1,5 @@
 ---
-title: "Ehlers_Laguerre Filter Review: Settings, Strategy & How to Use It"
+title: "Ehlers Laguerre Filter Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/6aMJzwII-Ehlers-Laguerre-Filter-CC-cheatcountry/"
 date: 2026-07-16
 draft: false

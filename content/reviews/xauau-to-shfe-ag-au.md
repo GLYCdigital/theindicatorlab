@@ -1,5 +1,5 @@
 ---
-title: "Xauau_To_Shfe_Ag_Au Review: Settings, Strategy & How to Use It"
+title: "Xauau To Shfe Ag Au Review — Trend Indicator"
 date: 2026-08-23
 draft: false
 type: reviews

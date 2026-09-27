@@ -1,5 +1,5 @@
 ---
-title: "Hourly_Alpha_Profile_Terminal_The_Quant_Science Review: Settings, Strategy & How to Use It"
+title: "Hourly Alpha Profile Terminal The Quant Science Review — Volume Indicator"
 date: 2026-09-10
 draft: false
 type: reviews

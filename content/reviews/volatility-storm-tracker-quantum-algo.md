@@ -1,5 +1,5 @@
 ---
-title: "Volatility_Storm_Tracker_Quantum_Algo Review: Settings, Strategy & How to Use It"
+title: "Volatility Storm Tracker Quantum Algo Review — Volatility Indicator"
 date: 2026-08-28
 draft: false
 type: reviews

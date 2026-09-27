@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Macd_Combo Review: Settings, Strategy & How to Use It"
+title: "RSI MACD Combo Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/wHFB5gYK-RSI-MACD-Combo-Persian-sajadbagheri/"
 date: 2026-07-16
 draft: false

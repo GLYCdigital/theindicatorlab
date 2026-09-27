@@ -1,5 +1,5 @@
 ---
-title: "Gap_Digga Review: Settings, Strategy & How to Use It"
+title: "Gap Digga Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

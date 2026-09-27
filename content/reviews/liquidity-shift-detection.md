@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Shift_Detection Review: Settings, Strategy & How to Use It"
+title: "Liquidity Shift Detection Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/gdVgCcCT-Liquidity-Shift-Detection-LSD-Zeiierman/"
 date: 2026-09-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Liquidity_Shift_Detection review: settings, pros/cons, and how to trade liquidity sweeps & BOS signals on TradingView."
 grounding: "none (no source found)"
 ---
-# Liquidity_Shift_Detection Review
-
+# Liquidity Shift Detection Review
 Liquidity_Shift_Detection is a trend indicator that flags moments when price takes out a recent swing high or low — what institutional traders call a liquidity sweep — and then confirms whether the move actually holds. It's not a crystal ball; it's a structural tool that tells you when a key level has been broken and whether momentum agrees with the breakout.
 
 **What Sets It Apart**

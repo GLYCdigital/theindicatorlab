@@ -1,5 +1,5 @@
 ---
-title: "Volatility_Contraction_Pattern Review: Settings, Strategy & How to Use It"
+title: "Volatility Contraction Pattern Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/J1tqSCqR-Volatility-Contraction-Pattern-Amphibiantrading/"
 date: 2026-08-01
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Volatility_Contraction_Pattern review: settings, entry/exit logic, pros/cons, and who should use this squeeze-and-breakout trend indicator."
 grounding: "none (no source found)"
 ---
-# Volatility_Contraction_Pattern Review
-
+# Volatility Contraction Pattern Review
 The Volatility_Contraction_Pattern indicator isn't trying to reinvent trading. It's a squeeze detector that identifies periods where price action tightens into a coil, then flags the eventual breakout. If you've traded Bollinger Band squeezes or Keltner Channel compressions, you already understand the concept. This indicator just packages it more cleanly than most.
 
 It pairs naturally with momentum oscillators rather than pure price action. The contraction periods show up as the indicator flattens its volatility bands, and the breakout signals are marked with color changes and arrows. It's not flashy, but the concept is sound.

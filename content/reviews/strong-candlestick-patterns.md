@@ -1,5 +1,5 @@
 ---
-title: "Strong_Candlestick_Patterns Review: Settings, Strategy & How to Use It"
+title: "Strong Candlestick Patterns Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/UJvedU2W-Strong-Candlestick-Patterns-ProjectSyndicate/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Strong_Candlestick_Patterns review. Tests real setups, settings, and win rates. See if it beats free alternatives before you install."
 grounding: "none (no source found)"
 ---
-# Strong_Candlestick_Patterns Review
-
+# Strong Candlestick Patterns Review
 If you've ever stared at a dozen hammer dojis and wondered which one actually matters, this indicator aims to filter the noise down to a smaller set of reversal patterns — fewer labels, fewer weak wicks and low-conviction formations cluttering the chart.
 
 ---

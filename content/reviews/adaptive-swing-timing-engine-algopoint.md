@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Swing_Timing_Engine_Algopoint Review: Settings, Strategy & How to Use It"
+title: "Adaptive Swing Timing Engine Algopoint Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

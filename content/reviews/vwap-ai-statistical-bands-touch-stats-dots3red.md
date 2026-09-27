@@ -1,5 +1,5 @@
 ---
-title: "Vwap_Ai_Statistical_Bands_Touch_Stats_Dots3Red Review: Settings, Strategy & How to Use It"
+title: "VWAP AI Statistical Bands Touch Stats Dots3red Review — Volume Indicator"
 date: 2026-09-09
 draft: false
 type: reviews

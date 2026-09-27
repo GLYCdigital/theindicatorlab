@@ -1,5 +1,5 @@
 ---
-title: "Horizontal_Ray_From_Specified_Date Review: Settings, Strategy & How to Use It"
+title: "Horizontal Ray From Specified Date Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

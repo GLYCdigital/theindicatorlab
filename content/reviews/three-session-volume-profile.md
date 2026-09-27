@@ -1,5 +1,5 @@
 ---
-title: "Three_Session_Volume_Profile Review: Settings, Strategy & How to Use It"
+title: "Three Session Volume Profile Review — Volume Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

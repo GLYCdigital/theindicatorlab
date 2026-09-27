@@ -1,5 +1,5 @@
 ---
-title: "Range_Profile_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Range Profile Oscillator Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/atvJpWjW-Range-Profile-Oscillator-Uncle-the-shooter/"
 date: 2026-08-01
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Range_Profile_Oscillator review: settings, strategy, pros/cons. Does this volume-based trend tool actually work? Tested on real charts."
 grounding: "none (no source found)"
 ---
-# Range_Profile_Oscillator Review
-
+# Range Profile Oscillator Review
 Most oscillators are MACD variants with a different label. The Range_Profile_Oscillator takes a different route: it measures where price sits within a volume-based value area, then converts that into a momentum line. That distinction is the whole point of the tool, and it's worth understanding before you decide whether it belongs on your chart.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Atr_Bands Review: Settings, Strategy & How to Use It"
+title: "ATR Bands Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/ziTzsSfo-ATR-Bands-TheTrdFloor/"
 date: 2026-07-16
 draft: false

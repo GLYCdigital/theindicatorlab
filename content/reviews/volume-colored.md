@@ -1,5 +1,5 @@
 ---
-title: "Volume_Colored Review: Settings, Strategy & How to Use It"
+title: "Volume Colored Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/FlnH1VYA-Volume-EliorJairS/"
 date: 2026-08-23
 draft: false

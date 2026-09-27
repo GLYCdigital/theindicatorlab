@@ -1,5 +1,5 @@
 ---
-title: "Ichimoku_Macd_Combo Review: Settings, Strategy & How to Use It"
+title: "Ichimoku MACD Combo Review — Momentum Indicator"
 date: 2026-08-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Ichimoku_Macd_Combo review: settings, entry signals, pros/cons. Is this trend combo worth your watchlist space? Tested on real charts."
 grounding: "none (no source found)"
 ---
-# Ichimoku + MACD Combo Review
-
+# Ichimoku MACD Combo Review
 Combining Ichimoku with MACD pairs two lagging indicators. When the confluence lines up, the setup can look clean; when it doesn't, you're simply waiting on two slow tools to agree. Here's a breakdown of what the indicator does and where it fits.
 
 **What It Actually Does**

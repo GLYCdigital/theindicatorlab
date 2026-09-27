@@ -1,5 +1,5 @@
 ---
-title: "Daily_Moving_Averages_Any_Tf Review: Settings, Strategy & How to Use It"
+title: "Daily Moving Averages Any Tf Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Tc21dsVG-Daily-Moving-Averages-scarf/"
 date: 2026-07-22
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Daily_Moving_Averages_Any_Tf overlays daily MAs on any timeframe. A practical tool for multi-timeframe trend alignment. Tested settings and strategy inside."
 grounding: "none (no source found)"
 ---
-# Daily_Moving_Averages_Any_Tf Review
-
+# Daily Moving Averages Any Tf Review
 You know the frustration: you're trading on a lower timeframe chart, but you want to see where the daily moving averages sit without flipping to the daily timeframe. That's exactly what **Daily_Moving_Averages_Any_Tf** addresses. It plots daily-level moving averages directly onto your current chart, regardless of the timeframe you're on. Simple concept, but the execution matters.
 
 ## What It Actually Does

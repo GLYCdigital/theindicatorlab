@@ -1,5 +1,5 @@
 ---
-title: "Atr Review: Settings, Strategy & How to Use It"
+title: "ATR Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

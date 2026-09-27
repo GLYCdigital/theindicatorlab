@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Trend_Ensemble_Backquant Review: Settings, Strategy & How to Use It"
+title: "Adaptive Trend Ensemble Backquant Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/hnrtyc7O-Adaptive-Trend-Ensemble-BackQuant/"
 date: 2026-08-12
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Adaptive_Trend_Ensemble_Backquant review: tested settings, entry/exit logic, pros, cons, and who should use this multi-model trend indicator."
 grounding: "none (no source found)"
 ---
-# Adaptive_Trend_Ensemble_Backquant Review
-
+# Adaptive Trend Ensemble Backquant Review
 The name invites skepticism. "Ensemble" is often marketing shorthand for stacking a couple of moving averages and calling it intelligent. Whether the label is earned depends entirely on whether the underlying models actually change behavior across market conditions — and that is the first thing worth checking in any indicator that makes this claim.
 
 ## What It Does

@@ -1,5 +1,5 @@
 ---
-title: "Moya_Sessions_Volume_Profile_Realsebastianmoya Review: Settings, Strategy & How to Use It"
+title: "Moya Sessions Volume Profile Realsebastianmoya Review — Volume Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Structure_Decision_Engine_Algopoint Review: Settings, Strategy & How to Use It"
+title: "Structure Decision Engine Algopoint Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

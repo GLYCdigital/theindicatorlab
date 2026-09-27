@@ -1,5 +1,5 @@
 ---
-title: "Strat_Sniper Review: Settings, Strategy & How to Use It"
+title: "Strat Sniper Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/xSnfNQBc-Strat-Execution-Assistant-Pro-v6-StickTalkDunny/"
 date: 2026-07-16
 draft: false

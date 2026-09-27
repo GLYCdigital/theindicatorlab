@@ -1,5 +1,5 @@
 ---
-title: "Smart_Money_Concepts_Axealgo Review: Settings, Strategy & How to Use It"
+title: "Smart Money Concepts Axealgo Review — Volume Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

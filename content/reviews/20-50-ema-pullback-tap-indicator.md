@@ -1,5 +1,5 @@
 ---
-title: "20_50_Ema_Pullback_Tap_Indicator Review: Settings, Strategy & How to Use It"
+title: "20 50 EMA Pullback Tap Indicator Review — Trend Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

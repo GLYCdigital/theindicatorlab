@@ -1,5 +1,5 @@
 ---
-title: "Session_Vwap Review: Settings, Strategy & How to Use It"
+title: "Session VWAP Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/MNsrD1HA-Session-VWAP-Koalafied-3/"
 date: 2026-08-25
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Session_Vwap review: How session-based VWAP anchors improve trend entries. Tested settings, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Session_Vwap Review
-
+# Session VWAP Review
 Most VWAP indicators on TradingView are the same formula wrapped in different colors. Session_Vwap attempts something different — it anchors VWAP to a chosen session rather than just the daily open. That single change is what separates it from the default TradingView VWAP for intraday trend work.
 
 **What it actually does**

@@ -1,5 +1,5 @@
 ---
-title: "Multi_Timeframe_State_Dashboard_Pineify Review: Settings, Strategy & How to Use It"
+title: "Multi Timeframe State Dashboard Pineify Review — Trend Indicator"
 date: 2026-09-06
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Honest Multi_Timeframe_State_Dashboard_Pineify review: tested sett
 tv_script_url: "https://www.tradingview.com/script/80NCX0Vm-Multi-Timeframe-State-Dashboard-Pineify/"
 sources: ["https://www.tradingview.com/script/80NCX0Vm-Multi-Timeframe-State-Dashboard-Pineify/"]
 ---
-# Multi Timeframe State Dashboard [Pineify] Review
-
+# Multi Timeframe State Dashboard Pineify Review
 Multi-timeframe dashboards tend to sit at one of two extremes: cluttered enough that you stop reading them, or simple enough that they don't tell you much. This one is designed around a specific problem — whether a higher-timeframe reading has actually closed — and builds its whole display around making that distinction visible. It isn't a signal generator. It's a state tracker for context.
 
 **What It Actually Does**

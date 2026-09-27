@@ -1,5 +1,5 @@
 ---
-title: "Funding_Rate_Indicator Review: Settings, Strategy & How to Use It"
+title: "Funding Rate Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/TNQpBuBn-Nuclear-F-Tr0sT/"
 date: 2026-07-16
 draft: false

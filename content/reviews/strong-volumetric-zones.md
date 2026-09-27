@@ -1,5 +1,5 @@
 ---
-title: "Strong_Volumetric_Zones Review: Settings, Strategy & How to Use It"
+title: "Strong Volumetric Zones Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/lzTmi5wU-Strong-Volumetric-Zones-ProjectSyndicate/"
 date: 2026-07-21
 draft: false

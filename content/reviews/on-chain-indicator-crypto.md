@@ -1,5 +1,5 @@
 ---
-title: "On_Chain_Indicator_Crypto Review: Settings, Strategy & How to Use It"
+title: "On Chain Indicator Crypto Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "On_Chain_Indicator_Crypto brings exchange inflow/outflow, MVRV, and NUPL into TradingView. Honest review with settings, strategy, and pros/cons for crypto traders."
 grounding: "none (no source found)"
 ---
-# On_Chain_Indicator_Crypto Review
-
+# On Chain Indicator Crypto Review
 Most on-chain data lives on dashboards like Glassnode or CryptoQuant—useful, but annoying to cross-reference with price action. This indicator pulls key metrics directly onto your chart, offering a consolidated view of accumulation versus distribution behavior without leaving TradingView.
 
 ## What This Indicator Actually Does

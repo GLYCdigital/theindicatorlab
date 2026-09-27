@@ -1,5 +1,5 @@
 ---
-title: "Bfg_Profil3D Review: Settings, Strategy & How to Use It"
+title: "Bfg Profil3d Review — Trend Indicator"
 date: 2026-09-10
 draft: false
 type: reviews

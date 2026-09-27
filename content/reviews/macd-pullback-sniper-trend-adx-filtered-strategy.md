@@ -1,5 +1,5 @@
 ---
-title: "Macd_Pullback_Sniper_Trend_Adx_Filtered_Strategy Review: Settings, Strategy & How to Use It"
+title: "MACD Pullback Sniper Trend ADX Filtered Strategy Review — Momentum Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

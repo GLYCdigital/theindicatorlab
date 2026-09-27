@@ -1,5 +1,5 @@
 ---
-title: "Supply Demand Zones Review: Settings, Strategy & How to Use It"
+title: "Supply Demand Zones Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/QlbvivX4-Supply-Demand-Zones-The-Forex-Steward/"
 date: 2026-07-16
 draft: false

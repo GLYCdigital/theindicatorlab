@@ -1,5 +1,5 @@
 ---
-title: "Center_Of_Gravity Review: Settings, Strategy & How to Use It"
+title: "Center Of Gravity Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/3dvAyM38-Center-Of-Gravity-HPotter/"
 date: 2026-07-16
 draft: false

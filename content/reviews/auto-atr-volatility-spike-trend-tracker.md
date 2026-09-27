@@ -1,5 +1,5 @@
 ---
-title: "Auto_Atr_Volatility_Spike_Trend_Tracker Review: Settings, Strategy & How to Use It"
+title: "Auto ATR Volatility Spike Trend Tracker Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/KTsZMbtk-Auto-ATR-Volatility-Spike-Trend-Tracker-BigBeluga/"
 date: 2026-07-28
 draft: false
@@ -20,7 +20,6 @@ description: "Honest review of the Auto ATR Volatility Spike Trend Tracker. Test
 grounding: "none (no source found)"
 ---
 # Auto ATR Volatility Spike Trend Tracker Review
-
 The **Auto ATR Volatility Spike Trend Tracker** is not a prediction tool. It is a trend-following filter built around ATR (Average True Range) that looks for volatility expansions and uses them to confirm directional bias. The premise: instead of flipping on every minor retracement the way many trend indicators do, it only acts when volatility spikes.
 
 ## What It Actually Does

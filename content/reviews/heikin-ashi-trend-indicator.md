@@ -1,5 +1,5 @@
 ---
-title: "Heikin_Ashi_Trend_Indicator Review: Settings, Strategy & How to Use It"
+title: "Heikin Ashi Trend Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/OULfXjkq-Heikin-Ashi-Trend-Indicator-dman103/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Heikin_Ashi_Trend_Indicator simplifies trend detection with smoothed candles. Here's how to set it up and trade it."
 grounding: "none (no source found)"
 ---
-# Heikin_Ashi_Trend_Indicator Review
-
+# Heikin Ashi Trend Indicator Review
 Most Heikin Ashi indicators on TradingView are just repackaged candle calculations with noise. This one attempts something different: it layers a smoothing mechanism on top of the standard Heikin Ashi formula to produce a cleaner trend signal.
 
 ## What this indicator does

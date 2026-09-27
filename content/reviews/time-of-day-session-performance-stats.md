@@ -1,5 +1,5 @@
 ---
-title: "Time_Of_Day_Session_Performance_Stats Review: Settings, Strategy & How to Use It"
+title: "Time Of Day Session Performance Stats Review — Trend Indicator"
 date: 2026-08-19
 draft: false
 type: reviews

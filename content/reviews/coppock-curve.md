@@ -1,5 +1,5 @@
 ---
-title: "Coppock Curve Review: Settings, Strategy & How to Use It"
+title: "Coppock Curve Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/UjV3LHsh-Coppock-Curve-everget/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Honest Coppock Curve review: how it works, best settings for month
 grounding: "none (no source found)"
 ---
 # Coppock Curve Review
-
 The Coppock Curve is a momentum oscillator originally designed by economist Edwin Coppock for long-term market timing. On TradingView, several versions exist, but the core logic is consistent: it calculates a smoothed rate-of-change over long lookback periods to identify major buying opportunities after deep downturns. Think of it as a "bottom-fishing" tool built for weekly or monthly charts.
 
 ### What This Indicator Actually Does

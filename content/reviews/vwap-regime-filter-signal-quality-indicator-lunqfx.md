@@ -1,5 +1,5 @@
 ---
-title: "Vwap Regime Filter Signal Quality Indicator Lunqfx Review: Settings, Strategy & How to Use It"
+title: "VWAP Regime Filter Signal Quality Indicator Lunqfx Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/djIr43Xx-VWAP-Regime-Filter-Signal-Quality-Indicator-LunqFX/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 3
 description: "VWAP Regime Filter + signal quality scoring. Decent for trend context, but the entry signals lag. 3/5 review."
 grounding: "none (no source found)"
 ---
-# Vwap Regime Filter Signal Quality Indicator Review
-
+# VWAP Regime Filter Signal Quality Indicator Lunqfx Review
 The **Vwap Regime Filter Signal Quality Indicator** by Lunqfx attempts to combine a VWAP regime filter with a signal quality metric. The concept is reasonable, but the execution has tradeoffs worth understanding before you add it to a chart. Here's a breakdown of what it does, how to approach it, and where it fits.
 
 ## What This Indicator Actually Does

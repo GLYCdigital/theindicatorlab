@@ -1,5 +1,5 @@
 ---
-title: "Parabolic_Sar_Multi Review: Settings, Strategy & How to Use It"
+title: "Parabolic Sar Multi Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/61iMsgMN-Parabolic-SAR-Multiple-Timeframe-levels-TechnoBlooms/"
 date: 2026-07-16
 draft: false

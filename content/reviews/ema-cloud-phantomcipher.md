@@ -1,5 +1,5 @@
 ---
-title: "Ema_Cloud_Phantomcipher Review: Settings, Strategy & How to Use It"
+title: "EMA Cloud Phantomcipher Review — Trend Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

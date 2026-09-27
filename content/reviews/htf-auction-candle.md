@@ -1,5 +1,5 @@
 ---
-title: "Htf_Auction_Candle Review: Settings, Strategy & How to Use It"
+title: "HTF Auction Candle Review — Trend Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

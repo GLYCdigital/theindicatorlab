@@ -1,5 +1,5 @@
 ---
-title: "Dual_Phase_Reversal_By_Dgt Review: Settings, Strategy & How to Use It"
+title: "Dual Phase Reversal By Dgt Review — Trend Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

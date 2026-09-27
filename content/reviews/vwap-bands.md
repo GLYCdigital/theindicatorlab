@@ -1,5 +1,5 @@
 ---
-title: "Vwap Bands Review: Settings, Strategy & How to Use It"
+title: "VWAP Bands Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/t6IABTub-VWAP-Bands-Mihkel00/"
 date: 2026-07-16
 draft: false

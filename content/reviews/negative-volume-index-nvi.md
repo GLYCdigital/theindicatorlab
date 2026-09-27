@@ -1,5 +1,5 @@
 ---
-title: "Negative_Volume_Index_Nvi Review: Settings, Strategy & How to Use It"
+title: "Negative Volume Index NVI Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/3Xs25FQc-Negative-Volume-Index-HPotter/"
 date: 2026-08-10
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Negative_Volume_Index_Nvi review: settings, strategy, pros/cons. Is this hidden trend gauge worth your watchlist? Tested on TradingView."
 grounding: "none (no source found)"
 ---
-# Negative_Volume_Index_Nvi Review
-
+# Negative Volume Index NVI Review
 The Negative Volume Index is one of those indicators that sounds like a relic from the 1970s — because it is. Paul Dysart introduced it in 1975, and most traders passed it by because it's quiet. It doesn't flash signals or paint pretty clouds. But that quietness is exactly its strength. The Negative_Volume_Index_Nvi for TradingView takes this classic concept and wraps it in a clean, practical package. The indicator catalog description — "Trend" — barely scratches the surface.
 
 The core idea is elegant: on days when volume decreases versus the prior day, the NVI advances by the percentage price change. On up-volume days, it stays flat. The result is a cumulative line that tracks what "smart money" is doing during quiet, low-volume sessions — when institutional traders typically hide their moves. The NVI's 255-day EMA is the traditional trigger line, and that's where this indicator shines.

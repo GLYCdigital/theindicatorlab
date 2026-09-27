@@ -1,5 +1,5 @@
 ---
-title: "Ema_Pinch_Ladder_Algonorth Review: Settings, Strategy & How to Use It"
+title: "EMA Pinch Ladder Algonorth Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

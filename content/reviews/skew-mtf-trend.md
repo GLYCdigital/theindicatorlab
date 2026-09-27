@@ -1,5 +1,5 @@
 ---
-title: "Skew_Mtf_Trend Review: Settings, Strategy & How to Use It"
+title: "Skew MTF Trend Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/27QCHz8d-Skew-MTF-Trend-SkewTrades/"
 date: 2026-07-16
 draft: false

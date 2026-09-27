@@ -1,5 +1,5 @@
 ---
-title: "Macd_Mtf Review: Settings, Strategy & How to Use It"
+title: "MACD MTF Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/sQaOUs2c-MTF-MACD-2-RockBaron/"
 date: 2026-09-09
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Macd_Mtf review: multi-timeframe MACD with color-coded trend states. Tested settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Macd_Mtf Review
-
+# MACD MTF Review
 Macd_Mtf does not try to reinvent technical analysis. It takes the classic MACD and applies it across multiple timeframes at once. No neural networks, no AI predictions, no volume-weighted embellishment — just a structured way to track momentum across more than one horizon.
 
 ## What Macd_Mtf Actually Does

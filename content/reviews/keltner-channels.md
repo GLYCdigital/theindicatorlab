@@ -1,5 +1,5 @@
 ---
-title: "Keltner Channels Review: Settings, Strategy & How to Use It"
+title: "Keltner Channels Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/HlcyhYMx-Keltner-Channels-RakoQuant/"
 date: 2026-07-16
 draft: false

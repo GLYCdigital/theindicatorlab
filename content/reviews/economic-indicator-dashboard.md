@@ -1,5 +1,5 @@
 ---
-title: "Economic_Indicator_Dashboard Review: Settings, Strategy & How to Use It"
+title: "Economic Indicator Dashboard Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "A TradingView dashboard that streams real-time economic data (GDP, CPI, unemployment) directly on your chart. Honest review, settings, and strategy."
 grounding: "none (no source found)"
 ---
-# Economic_Indicator_Dashboard Review
-
+# Economic Indicator Dashboard Review
 Most economic indicators on TradingView tend to be lagging, bloated with meaningless data, or simply broken. The **Economic_Indicator_Dashboard** aims to be different—but it's not perfect. Here's an honest look at what it offers.
 
 ## What This Indicator Actually Does

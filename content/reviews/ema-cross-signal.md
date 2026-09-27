@@ -1,5 +1,5 @@
 ---
-title: "Ema_Cross_Signal Review: Settings, Strategy & How to Use It"
+title: "EMA Cross Signal Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/CKRt0Pmp-EMA-cross-DevLucem/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Ema_Cross_Signal review. Tested settings, pros/cons, and entry rules. A 4/5 star EMA crossover tool—fast, clear, but lacks volume confirmation."
 grounding: "none (no source found)"
 ---
-# Ema_Cross_Signal Review
-
+# EMA Cross Signal Review
 **Ema_Cross_Signal** is a straightforward EMA crossover indicator that does exactly what its name suggests, without unnecessary extras. Here's a breakdown of what it offers.
 
 ## What This Indicator Actually Does

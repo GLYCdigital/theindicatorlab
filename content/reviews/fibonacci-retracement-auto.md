@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci_Retracement_Auto Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Retracement Auto Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/uSLNIN9O-Fibonacci-IamtheOctopuS/"
 date: 2026-07-16
 draft: false

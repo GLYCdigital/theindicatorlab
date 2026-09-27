@@ -1,5 +1,5 @@
 ---
-title: "Market_Structure_Shift Review: Settings, Strategy & How to Use It"
+title: "Market Structure Shift Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/uoHHpr29-Market-Structure-Shift-MSS-w-Multi-Time-Frame-Tables-Sword-Shield-swordNshield/"
 date: 2026-08-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Market_Structure_Shift indicator review: settings, pros/cons, and how to trade breakouts without getting chopped up."
 grounding: "none (no source found)"
 ---
-# Market_Structure_Shift Review
-
+# Market Structure Shift Review
 Most "market structure" indicators on TradingView are repackaged pivot point detectors with extra lines. Market_Structure_Shift does something narrower: it identifies the candle where price breaks a swing high or low and marks it as a potential shift in trend direction. The output is binary — structure either broke or it didn't.
 
 ## What You're Actually Looking At

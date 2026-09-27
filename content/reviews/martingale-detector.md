@@ -1,5 +1,5 @@
 ---
-title: "Martingale_Detector Review: Settings, Strategy & How to Use It"
+title: "Martingale Detector Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

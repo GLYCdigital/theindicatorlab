@@ -1,5 +1,5 @@
 ---
-title: "Order Flow Imbalance Review: Settings, Strategy & How to Use It"
+title: "Order Flow Imbalance Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/kEPvBsWe-Order-Flow-Imbalance-Finder-turk-shariq/"
 date: 2026-07-16
 draft: false

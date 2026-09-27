@@ -1,5 +1,5 @@
 ---
-title: "Amd_Structure_Map_Axealgo Review: Settings, Strategy & How to Use It"
+title: "Amd Structure Map Axealgo Review — Market Structure Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

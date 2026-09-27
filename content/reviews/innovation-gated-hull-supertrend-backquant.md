@@ -1,5 +1,5 @@
 ---
-title: "Innovation_Gated_Hull_Supertrend_Backquant Review: Settings, Strategy & How to Use It"
+title: "Innovation Gated Hull Supertrend Backquant Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/tq9f0qwr-Innovation-Gated-Hull-Supertrend-BackQuant/"
 date: 2026-08-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Innovation_Gated_Hull_Supertrend_Backquant: a trend-following hybrid that combines Hull MA speed with Supertrend gating. Tested settings, entry logic, pros & cons."
 grounding: "none (no source found)"
 ---
-# Innovation_Gated_Hull_Supertrend_Backquant Review
-
+# Innovation Gated Hull Supertrend Backquant Review
 Let's be blunt about what this indicator actually is: it's a trend filter with a fancy name. The "Innovation" part isn't marketing fluff — it's the gating mechanism that separates this from the dozens of other Hull/Supertrend hybrids on TradingView.
 
 ## What It Actually Does

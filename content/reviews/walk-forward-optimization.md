@@ -1,5 +1,5 @@
 ---
-title: "Walk_Forward_Optimization Review: Settings, Strategy & How to Use It"
+title: "Walk Forward Optimization Review — Trend Indicator"
 date: 2026-08-06
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Walk_Forward_Optimization indicator review: settings, strategy, pros/cons, and who should use it. Tested on TradingView with MACD."
 grounding: "none (no source found)"
 ---
-# Walk_Forward_Optimization Review
-
+# Walk Forward Optimization Review
 Let's cut through the name. "Walk_Forward_Optimization" sounds like a quant research tool, but on TradingView it's a trend-following indicator that packages a MACD-based signal engine with built-in parameter optimization. The real pitch: instead of manually tweaking MACD inputs until your backtest looks pretty, it applies walk-forward logic intended to adapt settings to recent market conditions.
 
 The visual output is cleaner than most trend indicators. You get a baseline line, a signal line, and colored background zones that mark long/short bias. No clutter, no stacked study overlays.

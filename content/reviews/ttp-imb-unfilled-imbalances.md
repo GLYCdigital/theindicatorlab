@@ -1,5 +1,5 @@
 ---
-title: "Ttp_Imb_Unfilled_Imbalances Review: Settings, Strategy & How to Use It"
+title: "Ttp Imb Unfilled Imbalances Review — Trend Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Orb_Session_Liquidity_Model Review: Settings, Strategy & How to Use It"
+title: "Orb Session Liquidity Model Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/1WebemDv-ORB-Session-Liquidity-Model-JOAT-officialjackofalltrades/"
 date: 2026-07-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of the Orb_Session_Liquidity_Model indicator. See tested settings, entry logic, pros/cons, and who should use it for session-based liquidity sweeps."
 grounding: "none (no source found)"
 ---
-# Orb_Session_Liquidity_Model Review
-
+# Orb Session Liquidity Model Review
 The Orb_Session_Liquidity_Model is a trend-following tool that maps liquidity zones around a session's opening range break (ORB). Where many ORB indicators stop at drawing a box, this one layers a liquidity model on top—highlighting areas where price may sweep resting liquidity before continuing in the direction of the trend. It is aimed at intraday breakout traders.
 
 ## What It Actually Does

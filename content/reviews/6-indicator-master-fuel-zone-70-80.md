@@ -1,5 +1,5 @@
 ---
-title: "6_Indicator_Master_Fuel_Zone_70_80 Review: Settings, Strategy & How to Use It"
+title: "6 Indicator Master Fuel Zone 70 80 Review — Trend Indicator"
 date: 2026-08-21
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Honest 4/5 review of 6_Indicator_Master_Fuel_Zone_70_80: settings,
 tv_script_url: "https://www.tradingview.com/script/Ww3y4Ps8-6-Indicator-Master-V5-Fuel-Zone-70-80/"
 sources: ["https://www.tradingview.com/script/Ww3y4Ps8-6-Indicator-Master-V5-Fuel-Zone-70-80/"]
 ---
-# Get started Review
-
+# 6 Indicator Master Fuel Zone 70 80 Review
 The name alone invites skepticism, and the script's own documentation is refreshingly candid about the limits of what any indicator can do. What follows is a review of what the source material actually supports — and it supports less than the label suggests.
 
 **What it actually does**

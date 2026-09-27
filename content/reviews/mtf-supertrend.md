@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Supertrend Review: Settings, Strategy & How to Use It"
+title: "MTF Supertrend Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/MTTcT4K5-MTF-Supertrend-CryptoSea-CryptoSeaTV/"
 date: 2026-08-02
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Mtf_Supertrend review: multi-timeframe trend detection. Tested settings, entry logic, pros/cons, and who should use it. Honest 4/5 verdict."
 grounding: "none (no source found)"
 ---
-# Mtf_Supertrend Review
-
+# MTF Supertrend Review
 Mtf_Supertrend does what its name promises: it plots the SuperTrend indicator from multiple timeframes directly on the current chart. That's the entire scope. No hidden signals, no machine learning layer — just multi-timeframe trend context intended to help traders avoid taking positions against the larger trend.
 
 The core visual idea is that higher timeframe SuperTrend lines — plotted as dashed or colored bands — tend to sit flat and stable while the lower timeframe line moves around. That separation between the fast line and the slow lines is the point of the tool.

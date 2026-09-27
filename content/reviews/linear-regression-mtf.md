@@ -1,5 +1,5 @@
 ---
-title: "Linear_Regression_Mtf Review: Settings, Strategy & How to Use It"
+title: "Linear Regression MTF Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Pr9hEmWf-Linear-Regression-MTF-Bands-GoodGains/"
 date: 2026-08-06
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Linear_Regression_Mtf review: multi-timeframe trend filter with adjustable regression length. Settings, entry logic, pros/cons, and verdict."
 grounding: "none (no source found)"
 ---
-# Linear_Regression_Mtf Review
-
+# Linear Regression MTF Review
 Most multi-timeframe indicators are just a MACD from a higher timeframe pasted onto your chart with a color change. Linear_Regression_Mtf does that, but the regression math underneath gives you something most MTF tools lack: a statistically meaningful trend line instead of a lagging average.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Split_Vwap Review: Settings, Strategy & How to Use It"
+title: "Split VWAP Review — Volume Indicator"
 date: 2026-09-09
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Volumetric_Trend_Ribbon Review: Settings, Strategy & How to Use It"
+title: "Volumetric Trend Ribbon Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/sXyMhOCc-Volumetric-Trend-Ribbon-Pro-ChartPrime/"
 date: 2026-07-16
 draft: false

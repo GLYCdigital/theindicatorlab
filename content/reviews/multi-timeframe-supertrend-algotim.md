@@ -1,5 +1,5 @@
 ---
-title: "Multi_Timeframe_Supertrend_Algotim Review: Settings, Strategy & How to Use It"
+title: "Multi Timeframe Supertrend Algotim Review — Trend Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Adx_Divergence Review: Settings, Strategy & How to Use It"
+title: "ADX Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/VasRj4YR-ADX-Divergence-Indicator-maybethatguy/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Reversal_Probability_Profile_Algoalpha Review: Settings, Strategy & How to Use It"
+title: "Reversal Probability Profile Algoalpha Review — Volume Indicator"
 date: 2026-09-10
 draft: false
 type: reviews

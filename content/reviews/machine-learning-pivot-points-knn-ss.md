@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Pivot Points KNN SS Review: Settings, Strategy & How to Use It"
+title: "Machine Learning Pivot Points Knn Ss Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/PwVoxMSo-Machine-Learning-Pivot-Points-KNN-SS-Steversteves/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Machine Learning Pivot Points KNN SS. Tested on real charts. Best settings, entry strategy, pros/cons, and better alternatives."
 grounding: "none (no source found)"
 ---
-# Machine Learning Pivot Points KNN SS Review
-
+# Machine Learning Pivot Points Knn Ss Review
 This indicator sounds more complex than it is, but the underlying idea is worth understanding. It applies a K-Nearest Neighbors (KNN) algorithm — a basic machine learning model — to the problem of identifying pivot highs and lows from historical price patterns. The "SS" in the name likely refers to smoothing or signal strength, which is what filters out noise. The core output is a set of support and resistance levels that adapt to recent price action rather than relying on fixed lookback periods, making them dynamic rather than static.
 
 ## What This Indicator Actually Does

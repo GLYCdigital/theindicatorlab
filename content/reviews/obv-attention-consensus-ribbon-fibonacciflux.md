@@ -1,5 +1,5 @@
 ---
-title: "Obv_Attention_Consensus_Ribbon_Fibonacciflux Review: Settings, Strategy & How to Use It"
+title: "OBV Attention Consensus Ribbon Fibonacciflux Review — Volume Indicator"
 date: 2026-08-29
 draft: false
 type: reviews

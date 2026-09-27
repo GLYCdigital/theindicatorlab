@@ -1,5 +1,5 @@
 ---
-title: "Ehlers_Supersmoother Review: Settings, Strategy & How to Use It"
+title: "Ehlers Supersmoother Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/h8AjgZD7-Ehlers-SuperSmoother-Spinn29/"
 date: 2026-07-16
 draft: false

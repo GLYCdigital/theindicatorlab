@@ -1,5 +1,5 @@
 ---
-title: "Session_Edge_Profiler_Flux_Charts Review: Settings, Strategy & How to Use It"
+title: "Session Edge Profiler Flux Charts Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/T1V41Bl5-Session-Edge-Profiler-fluxchart/"
 date: 2026-07-16
 draft: false

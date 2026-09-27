@@ -1,5 +1,5 @@
 ---
-title: "SSL Hybrid Review: Settings, Strategy & How to Use It"
+title: "Ssl Hybrid Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/C3MlAWCw-SSL-Hybrid-Mihkel00/"
 date: 2026-07-16
 draft: false

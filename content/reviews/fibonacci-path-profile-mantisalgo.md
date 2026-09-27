@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci_Path_Profile_Mantisalgo Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Path Profile Mantisalgo Review — Volume Indicator"
 date: 2026-08-29
 draft: false
 type: reviews

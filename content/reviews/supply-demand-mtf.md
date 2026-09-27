@@ -1,5 +1,5 @@
 ---
-title: "Supply_Demand_Mtf Review: Settings, Strategy & How to Use It"
+title: "Supply Demand MTF Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/yq3DJDMc-Supply-Demand-MTF-fluxchart/"
 date: 2026-08-08
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Vwap_Ema_Combo Review: Settings, Strategy & How to Use It"
+title: "VWAP EMA Combo Review — Volume Indicator"
 date: 2026-08-23
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Vwap_Ema_Combo combines volume-weighted price with exponential moving averages for trend detection. Tested settings, entry rules, pros, cons, and verdict."
 grounding: "none (no source found)"
 ---
-# Vwap_Ema_Combo Review
-
+# VWAP EMA Combo Review
 Vwap_Ema_Combo is exactly what the name promises — a VWAP line married to two EMAs. The way it's stitched together makes it more useful than the sum of its parts.
 
 **What it does (the real mechanics)**

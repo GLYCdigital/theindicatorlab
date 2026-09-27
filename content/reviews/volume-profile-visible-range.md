@@ -1,5 +1,5 @@
 ---
-title: "Volume_Profile_Visible_Range Review: Settings, Strategy & How to Use It"
+title: "Volume Profile Visible Range Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/yLEjeo0J-Volume-Profile-Visible-Range-For-All-Accounts-Investor-R/"
 date: 2026-08-17
 draft: false

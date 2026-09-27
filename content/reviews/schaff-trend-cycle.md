@@ -1,5 +1,5 @@
 ---
-title: "Schaff Trend Cycle Review: Settings, Strategy & How to Use It"
+title: "Schaff Trend Cycle Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/UkWZRgLG-Schaff-Trend-Cycle-everget/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Schaff Trend Cycle review: a smoothed cycle oscillator that filter
 grounding: "none (no source found)"
 ---
 # Schaff Trend Cycle Review
-
 If you've ever stared at a MACD histogram and wished it would stop whipping you around in choppy markets, the Schaff Trend Cycle (STC) is worth a look. It isn't new—it's been around since the late 90s—but on TradingView it remains underused compared to RSI or Stochastics. Here's an honest breakdown.
 
 ## What This Indicator Actually Does

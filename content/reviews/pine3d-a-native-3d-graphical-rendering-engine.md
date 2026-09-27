@@ -1,5 +1,5 @@
 ---
-title: "Pine3D A Native 3D Graphical Rendering Engine Review: Settings, Strategy & How to Use It"
+title: "Pine3d A Native 3d Graphical Rendering Engine Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/I2K4hIdP-Pine3D-Alien-Algorithms/"
 date: 2026-07-16
 draft: false

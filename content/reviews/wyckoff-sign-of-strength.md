@@ -1,5 +1,5 @@
 ---
-title: "Wyckoff_Sign_Of_Strength Review: Settings, Strategy & How to Use It"
+title: "Wyckoff Sign Of Strength Review — Trend Indicator"
 date: 2026-08-17
 draft: false
 type: reviews

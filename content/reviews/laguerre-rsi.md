@@ -1,5 +1,5 @@
 ---
-title: "Laguerre RSI Review: Settings, Strategy & How to Use It"
+title: "Laguerre RSI Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/B094baNp-Laguerre-RSI-KivancOzbilgic/"
 date: 2026-07-16
 draft: false

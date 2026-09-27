@@ -1,5 +1,5 @@
 ---
-title: "Three_Black_Crows Review: Settings, Strategy & How to Use It"
+title: "Three Black Crows Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/11J7JmqZ-Three-Black-Crows-HPotter/"
 date: 2026-07-24
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of TradingView's Three_Black_Crows indicator. Real settings, entry rules, pros/cons, and who should use it. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Three_Black_Crows Indicator Review
-
+# Three Black Crows Review
 The Three_Black_Crows indicator on TradingView is not a magic bullet—it's a classic candlestick pattern detector that identifies exactly what it says: three consecutive long-bodied bearish candles, each closing near its low and opening within the previous candle's body. If you've ever manually scanned charts for this pattern, you know the pain. This tool automates the search, and that's where its real value lives.
 
 ## What It Actually Does

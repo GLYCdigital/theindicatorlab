@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Grab_Detector Review: Settings, Strategy & How to Use It"
+title: "Liquidity Grab Detector Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/WXHqMJOg-Liquidity-Grab-Detector-Stop-Hunt-Sniper-v2-2-artemka3091/"
 date: 2026-07-27
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Liquidity_Grab_Detector review: An honest look at this trend-based tool that spots liquidity grabs on TradingView. Settings, strategy, pros, cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Liquidity_Grab_Detector Review
-
+# Liquidity Grab Detector Review
 Every trader has been faked out by a sudden spike that reverses violently. That's the liquidity grab—the idea that market makers hunt stop-losses before a real move. The Liquidity_Grab_Detector claims to spot these traps in real time. The concept is sound; whether the tool delivers depends on how you use it.
 
 The indicator is classified under **Trend** concepts. It doesn't claim to predict price direction; it highlights zones where price may have swept liquidity before continuing the trend. On the MACD template, green arrows mark grab zones where price swept below a swing low then reversed.

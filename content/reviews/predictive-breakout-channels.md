@@ -1,5 +1,5 @@
 ---
-title: "Predictive Breakout Channels Review: Settings, Strategy & How to Use It"
+title: "Predictive Breakout Channels Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/zZWIEFzu-Predictive-Breakout-Channels-GainzAlgo/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Predictive Breakout Channels flags potential breakouts before pric
 grounding: "none (no source found)"
 ---
 # Predictive Breakout Channels Review
-
 Breakout indicators typically confirm a move only after price has already extended. Predictive Breakout Channels attempts to address that by projecting channel boundaries forward. The concept is straightforward, though the execution has real limits.
 
 ## What This Indicator Actually Does

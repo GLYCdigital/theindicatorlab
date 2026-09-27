@@ -1,5 +1,5 @@
 ---
-title: "Atr Trailing Stop Review: Settings, Strategy & How to Use It"
+title: "ATR Trailing Stop Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/3h4LO8zH-ATR-Trailing-Stop-ceyhun/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 3
 description: "A practical ATR Trailing Stop review. We test its settings, entry/exit logic, and compare it to better alternatives. 3/5 stars."
 grounding: "none (no source found)"
 ---
-# ATR Trailing Stop (07 Category) — Review
-
+# ATR Trailing Stop Review
 Most trailing stop indicators are overcomplicated, repaint, or just look pretty. The ATR Trailing Stop from the "07" category is a different beast — it's simple, functional, and doesn't promise miracles.
 
 ## What This Indicator Actually Does

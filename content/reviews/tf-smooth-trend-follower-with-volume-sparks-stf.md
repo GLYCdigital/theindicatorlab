@@ -1,5 +1,5 @@
 ---
-title: "Tf_Smooth_Trend_Follower_With_Volume_Sparks_Stf Review: Settings, Strategy & How to Use It"
+title: "Tf Smooth Trend Follower With Volume Sparks Stf Review — Volume Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

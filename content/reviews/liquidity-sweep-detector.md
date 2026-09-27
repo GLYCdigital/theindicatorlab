@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Sweep_Detector Review: Settings, Strategy & How to Use It"
+title: "Liquidity Sweep Detector Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/b9oLRMRb-Liquidity-Sweep-Detector-DefinedEdge/"
 date: 2026-07-27
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Liquidity_Sweep_Detector review: settings, strategy, and real chart performance. See how this trend-based sweeps detector works for entries and exits."
 grounding: "none (no source found)"
 ---
-# Liquidity_Sweep_Detector Review
-
+# Liquidity Sweep Detector Review
 The **Liquidity_Sweep_Detector** is a trend-following tool that marks price levels where liquidity sweeps—sharp moves that take out stop-loss clusters—have occurred. It then plots zones around those levels to help anticipate reversals or continuations. It isn't a magic bullet, but for traders who already understand order flow, it's a reasonable addition to the toolkit.
 
 The indicator is often shown applied to a MACD chart. Sweeps are color-coded by direction, and zones are drawn dynamically based on recent price action rather than fixed levels.

@@ -1,5 +1,5 @@
 ---
-title: "Parabolic Sar Review: Settings, Strategy & How to Use It"
+title: "Parabolic Sar Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/MddD4giy-Parabolic-SAR-everget/"
 date: 2026-07-16
 draft: false

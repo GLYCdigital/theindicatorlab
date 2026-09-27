@@ -1,5 +1,5 @@
 ---
-title: "Macd_Divergence_Mtf Review: Settings, Strategy & How to Use It"
+title: "MACD Divergence MTF Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/mFSouWh2-MACD-Divergence-MTF-Indicator-daviddtech/"
 date: 2026-09-06
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Tested Macd_Divergence_Mtf with real settings and trades. Find out if this multi-timeframe divergence scanner is worth installing."
 grounding: "none (no source found)"
 ---
-# Macd_Divergence_Mtf Review
-
+# MACD Divergence MTF Review
 Macd_Divergence_Mtf is a divergence scanner that checks multiple timeframes simultaneously and plots the results on your current chart. The concept is straightforward; the execution is what determines whether it's useful.
 
 ## What This Indicator Actually Does

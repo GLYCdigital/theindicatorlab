@@ -1,5 +1,5 @@
 ---
-title: "Triangle Pattern Review: Settings, Strategy & How to Use It"
+title: "Triangle Pattern Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/k1uUbyXz-Triangle-Pattern-Breakout-Indicator-Dots3Red/"
 date: 2026-07-16
 draft: false

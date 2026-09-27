@@ -1,5 +1,5 @@
 ---
-title: "Directional Flow Signals Review: Settings, Strategy & How to Use It"
+title: "Directional Flow Signals Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/PhizyR7N-Directional-Flow-Signals-Ty-yanse/"
 date: 2026-07-16
 draft: false

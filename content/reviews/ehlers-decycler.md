@@ -1,5 +1,5 @@
 ---
-title: "Ehlers_Decycler Review: Settings, Strategy & How to Use It"
+title: "Ehlers Decycler Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/nPiIeTv0-Ehlers-Decycler-Spinn29/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Ehlers_Decycler review: decycler oscillator filters noise, reveals cycles. Best settings, entry/exit rules, and honest pros/cons for active traders."
 grounding: "none (no source found)"
 ---
-# Ehlers_Decycler Review
-
+# Ehlers Decycler Review
 Ehlers_Decycler is one of those indicators that looks unremarkable at first glance but does something most oscillators cannot: filter out market noise without introducing heavy lag.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Fractals (Bill Williams) Review: Settings, Strategy & How to Use It"
+title: "Fractals Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/F2vLpcxJ-Fractals-Custom-Periods-DonkeyEmporium/"
 date: 2026-07-16
 draft: false

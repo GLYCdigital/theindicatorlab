@@ -1,5 +1,5 @@
 ---
-title: "Risk_Per_Trade_Calculator Review: Settings, Strategy & How to Use It"
+title: "Risk Per Trade Calculator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest review of Risk_Per_Trade_Calculator: a simple tool that calculates position size based on stop loss and account risk. Settings, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Risk_Per_Trade_Calculator Review
-
+# Risk Per Trade Calculator Review
 Position-sizing tools on TradingView tend to fall into two camps: over-engineered dashboards that bury the core function, or bare-bones scripts that barely work. The Risk_Per_Trade_Calculator sits in the middle—it does one thing and doesn't pretend to be more than that.
 
 **What this indicator actually does**

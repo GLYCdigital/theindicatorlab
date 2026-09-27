@@ -1,5 +1,5 @@
 ---
-title: "Floor_Pivots Review: Settings, Strategy & How to Use It"
+title: "Floor Pivots Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/cgO05Ghr-Floor-Pivots-With-CPR-TheReformedTrader/"
 date: 2026-07-16
 draft: false

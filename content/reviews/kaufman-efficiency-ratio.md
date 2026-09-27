@@ -1,5 +1,5 @@
 ---
-title: "Kaufman_Efficiency_Ratio Review: Settings, Strategy & How to Use It"
+title: "Kaufman Efficiency Ratio Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/7imltc5K-Kaufman-Efficiency-Ratio-KER-Zorba-the-Buddha/"
 date: 2026-07-16
 draft: false

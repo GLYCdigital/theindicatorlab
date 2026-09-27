@@ -1,5 +1,5 @@
 ---
-title: "Trademanagement Review: Settings, Strategy & How to Use It"
+title: "Trademanagement Review — Trend Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

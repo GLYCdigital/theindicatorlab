@@ -1,5 +1,5 @@
 ---
-title: "Kalman_Filter_Trend Review: Settings, Strategy & How to Use It"
+title: "Kalman Filter Trend Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/U9v04j39-Kalman-Filter-Trend-Breakers-v1-1-kypexin/"
 date: 2026-09-02
 draft: false

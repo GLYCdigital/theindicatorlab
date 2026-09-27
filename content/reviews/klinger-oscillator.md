@@ -1,5 +1,5 @@
 ---
-title: "Klinger Oscillator Review: Settings, Strategy & How to Use It"
+title: "Klinger Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/41E5Ocgx-Klinger-Oscillator-ClassicScott/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "See how the Klinger Oscillator combines volume and price to spot t
 grounding: "none (no source found)"
 ---
 # Klinger Oscillator Review
-
 The Klinger Oscillator isn't flashy, but it's a workhorse for volume-based divergence trading. Let's cut through the noise.
 
 ## What This Indicator Actually Does

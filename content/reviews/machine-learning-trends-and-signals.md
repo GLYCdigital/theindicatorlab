@@ -1,5 +1,5 @@
 ---
-title: "Machine_Learning_Trends_And_Signals Review: Settings, Strategy & How to Use It"
+title: "Machine Learning Trends And Signals Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/bOblGfmR-Machine-Learning-bitwardex/"
 date: 2026-07-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "An honest review of the Machine_Learning_Trends_And_Signals indicator. Tested settings, pros/cons, and whether this ML-driven trend tool is worth your time."
 grounding: "none (no source found)"
 ---
-# Machine_Learning_Trends_And_Signals Review
-
+# Machine Learning Trends And Signals Review
 The name sounds like a buzzword generator, but the underlying tool is more modest than it suggests. Here's an honest look at what it does and where it fits.
 
 ## What It Actually Does

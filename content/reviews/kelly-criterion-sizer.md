@@ -1,5 +1,5 @@
 ---
-title: "Kelly_Criterion_Sizer Review: Settings, Strategy & How to Use It"
+title: "Kelly Criterion Sizer Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

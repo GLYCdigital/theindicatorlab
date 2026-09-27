@@ -1,5 +1,5 @@
 ---
-title: "Alligator (Bill Williams) Review: Settings, Strategy & How to Use It"
+title: "Alligator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Bill Williams' Alligator indicator review: how to spot trends, entries, exits, and optimal settings for day trading and swing trading."
 grounding: "none (no source found)"
 ---
-# Bill Williams' Alligator Review
-
+# Alligator Review
 Bill Williams' Alligator looks strange at first—three colored moving averages that weave like a reptile's jaw. It's not a gimmick, though. It's a trend-following tool with a specific logic, and it works best when you understand what it's actually telling you. Here's a breakdown of what it does, how to set it up, and where traders tend to misread it.
 
 ## What This Indicator Actually Does

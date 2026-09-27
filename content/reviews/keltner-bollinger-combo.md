@@ -1,5 +1,5 @@
 ---
-title: "Keltner_Bollinger_Combo Review: Settings, Strategy & How to Use It"
+title: "Keltner Bollinger Combo Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

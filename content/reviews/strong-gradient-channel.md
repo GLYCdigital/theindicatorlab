@@ -1,5 +1,5 @@
 ---
-title: "Strong_Gradient_Channel Review: Settings, Strategy & How to Use It"
+title: "Strong Gradient Channel Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/wPlXWYlj-Strong-Gradient-Channel-ProjectSyndicate/"
 date: 2026-07-24
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Strong_Gradient_Channel review: a multi-timeframe trend indicator that plots dynamic support/resistance zones. Tested settings, entry rules, pros, cons, and real trader feedback."
 grounding: "none (no source found)"
 ---
-# Strong_Gradient_Channel Review
-
+# Strong Gradient Channel Review
 *Strong_Gradient_Channel* is a color-coded trend channel that does one thing: visually define momentum shifts without lagging as badly as a simple moving average. It is not a magic bullet. Here is what you are actually getting.
 
 ## What This Indicator Actually Does

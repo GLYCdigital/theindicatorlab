@@ -1,5 +1,5 @@
 ---
-title: "Cardwell_Rsi_Trade_Navigator Review: Settings, Strategy & How to Use It"
+title: "Cardwell RSI Trade Navigator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/OQENj0Tv-Cardwell-RSI-Trade-Navigator-MarkitTick/"
 date: 2026-07-16
 draft: false

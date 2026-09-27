@@ -1,5 +1,5 @@
 ---
-title: "Momentum_Reversal_Indicator Review: Settings, Strategy & How to Use It"
+title: "Momentum Reversal Indicator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/6KEbT39S-Momentum-Reversal-Indicator-ToneVays/"
 date: 2026-07-16
 draft: false

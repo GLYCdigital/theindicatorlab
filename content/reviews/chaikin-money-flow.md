@@ -1,5 +1,5 @@
 ---
-title: "Chaikin Money Flow Review: Settings, Strategy & How to Use It"
+title: "Chaikin Money Flow Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/tIRG7iDH-Chaikin-Money-Flow-nj-guy72/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 3
 description: "Chaikin Money Flow measures buying vs selling pressure over a lookback period. Decent for confirmation, but laggy and noisy as a standalone signal."
 grounding: "none (no source found)"
 ---
-# Chaikin Money Flow (CMF) Review
-
+# Chaikin Money Flow Review
 Chaikin Money Flow is one of those indicators many traders try, but relatively few end up keeping. Here's an unfiltered look at what it does and where it fits.
 
 **What it actually does**

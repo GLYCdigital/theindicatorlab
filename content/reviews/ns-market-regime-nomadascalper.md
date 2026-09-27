@@ -1,5 +1,5 @@
 ---
-title: "Ns_Market_Regime_Nomadascalper Review: Settings, Strategy & How to Use It"
+title: "Ns Market Regime Nomadascalper Review — Trend Indicator"
 date: 2026-08-18
 draft: false
 type: reviews

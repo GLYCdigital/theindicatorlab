@@ -1,5 +1,5 @@
 ---
-title: "Parabolic_Sar_Multi_Timeframe Review: Settings, Strategy & How to Use It"
+title: "Parabolic Sar Multi Timeframe Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/MddD4giy-Parabolic-SAR-everget/"
 date: 2026-07-29
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Parabolic_Sar_Multi_Timeframe review: tested settings, entry/exit logic, pros & cons. Honest verdict on whether this multi-TF SAR tool is worth using."
 grounding: "none (no source found)"
 ---
-# Parabolic SAR Multi-Timeframe Review
-
+# Parabolic Sar Multi Timeframe Review
 Cutting to the chase: this is the Parabolic SAR, plotted across multiple timeframes at once. No AI, no hidden volume wizardry—just a cleaner, more practical take on a classic trend-following tool.
 
 **What it actually does:**

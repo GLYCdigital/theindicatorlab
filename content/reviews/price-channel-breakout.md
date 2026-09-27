@@ -1,5 +1,5 @@
 ---
-title: "Price_Channel_Breakout Review: Settings, Strategy & How to Use It"
+title: "Price Channel Breakout Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/bQ2sg8b7-Price-Channel-koryu/"
 date: 2026-08-07
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Price_Channel_Breakout review: honest look at settings, breakout strategy, and whether this simple channel indicator earns its place on your chart."
 grounding: "none (no source found)"
 ---
-# Price_Channel_Breakout Review
-
+# Price Channel Breakout Review
 Price_Channel_Breakout is a channel-based breakout indicator that sits a notch above the usual Donchian clone. It isn't flashy, but it does one thing well — it defines the channel cleanly and flags breakouts without overselling them.
 
 ## What You're Actually Getting

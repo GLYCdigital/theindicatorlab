@@ -1,5 +1,5 @@
 ---
-title: "Exhaustion_Zones_Momentum_Episodes_Hermescore Review: Settings, Strategy & How to Use It"
+title: "Exhaustion Zones Momentum Episodes Hermescore Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/ZJzJTK3n-Exhaustion-Zones-Momentum-Episodes-HermesCore/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "A multi-layered momentum exhaustion tool that flags trend reversals and episode shifts. Works best on 1H-4H swings. Not for scalpers."
 grounding: "none (no source found)"
 ---
-# Exhaustion_Zones_Momentum_Episodes_Hermescore Review
-
+# Exhaustion Zones Momentum Episodes Hermescore Review
 **Exhaustion_Zones_Momentum_Episodes_Hermescore** is a reversal-style indicator built around a specific premise: momentum doesn't die suddenly, it exhausts in structured episodes. Rather than behaving as a simple overbought/oversold oscillator, it attempts to combine momentum analysis with sequence logic to highlight where a directional run may be losing steam.
 
 ## What This Indicator Actually Does

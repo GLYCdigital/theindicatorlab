@@ -1,5 +1,5 @@
 ---
-title: "Rate Of Change Review: Settings, Strategy & How to Use It"
+title: "Rate Of Change Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Yi4z4Pe1-Rate-of-Change-ClassicScott/"
 date: 2026-07-16
 draft: false

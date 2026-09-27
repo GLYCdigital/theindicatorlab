@@ -1,5 +1,5 @@
 ---
-title: "Fvg_Retest_Entry_Engine Review: Settings, Strategy & How to Use It"
+title: "FVG Retest Entry Engine Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/nGEVkLPG-FVG-Retest-Entry-Engine-trade-w-samet-tradewsamet/"
 date: 2026-07-16
 draft: false

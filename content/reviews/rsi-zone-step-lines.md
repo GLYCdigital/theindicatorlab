@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Zone_Step_Lines Review: Settings, Strategy & How to Use It"
+title: "RSI Zone Step Lines Review — Momentum Indicator"
 date: 2026-08-31
 draft: false
 type: reviews

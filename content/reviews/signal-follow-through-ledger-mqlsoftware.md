@@ -1,5 +1,5 @@
 ---
-title: "Signal_Follow_Through_Ledger_Mqlsoftware Review: Settings, Strategy & How to Use It"
+title: "Signal Follow Through Ledger Mqlsoftware Review — Trend Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

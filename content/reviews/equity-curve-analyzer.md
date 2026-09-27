@@ -1,5 +1,5 @@
 ---
-title: "Equity_Curve_Analyzer Review: Settings, Strategy & How to Use It"
+title: "Equity Curve Analyzer Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/W02vlPAT-Equity-Curve-Amphibiantrading/"
 date: 2026-07-16
 draft: false

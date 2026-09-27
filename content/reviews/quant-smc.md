@@ -1,5 +1,5 @@
 ---
-title: "Quant_Smc Review: Settings, Strategy & How to Use It"
+title: "Quant SMC Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/ugOBLSa3-Quant-SMC-Pro-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Twiggs Money Flow Review: Settings, Strategy & How to Use It"
+title: "Twiggs Money Flow Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/81mNibdq-Twiggs-Money-Flow-optictropic/"
 date: 2026-07-16
 draft: false

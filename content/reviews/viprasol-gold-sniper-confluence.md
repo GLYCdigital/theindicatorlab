@@ -1,5 +1,5 @@
 ---
-title: "Viprasol_Gold_Sniper_Confluence Review: Settings, Strategy & How to Use It"
+title: "Viprasol Gold Sniper Confluence Review — Trend Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

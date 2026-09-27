@@ -1,5 +1,5 @@
 ---
-title: "Accumulation_Distribution_Line_Adl Review: Settings, Strategy & How to Use It"
+title: "Accumulation Distribution Line ADL Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/vx0hBK7V-Accumulation-Distribution-Line-AustrianTradingMachine/"
 date: 2026-09-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Accumulation_Distribution_Line_Adl review: settings, entry/exit logic, and real trade-offs. Is this classic volume indicator worth your chart space?"
 grounding: "none (no source found)"
 ---
-# Accumulation/Distribution Line (ADL) Review
-
+# Accumulation Distribution Line ADL Review
 The Accumulation/Distribution Line is one of those indicators that has been around so long most traders dismiss it as old news. That dismissal is worth questioning. This is not a flashy tool with AI-powered signals or machine learning predictions. It is a volume-weighted momentum gauge that addresses something a price chart alone cannot: whether volume behavior suggests accumulation or distribution.
 
 ## What This Indicator Actually Does

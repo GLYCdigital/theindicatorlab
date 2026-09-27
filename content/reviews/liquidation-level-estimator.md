@@ -1,5 +1,5 @@
 ---
-title: "Liquidation_Level_Estimator Review: Settings, Strategy & How to Use It"
+title: "Liquidation Level Estimator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

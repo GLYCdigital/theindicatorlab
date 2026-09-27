@@ -1,5 +1,5 @@
 ---
-title: "Breakeven Stop Calculator Review: Settings, Strategy & How to Use It"
+title: "Breakeven Stop Calculator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

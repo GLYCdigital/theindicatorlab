@@ -1,5 +1,5 @@
 ---
-title: "Cycle_Counter_With_Phase_And_Next_Low_Projection Review: Settings, Strategy & How to Use It"
+title: "Cycle Counter With Phase And Next Low Projection Review — Trend Indicator"
 date: 2026-08-30
 draft: false
 type: reviews

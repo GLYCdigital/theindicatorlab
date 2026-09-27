@@ -1,5 +1,5 @@
 ---
-title: "Uptrick_Adaptive_Trend_Trail Review: Settings, Strategy & How to Use It"
+title: "Uptrick Adaptive Trend Trail Review — Trend Indicator"
 date: 2026-08-22
 draft: false
 type: reviews

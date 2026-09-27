@@ -1,5 +1,5 @@
 ---
-title: "Gartley Pattern Review: Settings, Strategy & How to Use It"
+title: "Gartley Pattern Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/j4Ebxapj-GartleyPattern-ULTRA-V2-NXT2017/"
 date: 2026-07-16
 draft: false

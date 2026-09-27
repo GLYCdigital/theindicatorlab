@@ -1,5 +1,5 @@
 ---
-title: "Volume_Dna_Heatmap Review: Settings, Strategy & How to Use It"
+title: "Volume Dna Heatmap Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/FUJeu41r-Volume-DNA-Heatmap-BigBeluga/"
 date: 2026-08-13
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Volume_Dna_Heatmap review: honest test of this volume-based trend tool. Best settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Volume_Dna_Heatmap Review
-
+# Volume Dna Heatmap Review
 A hybrid volume-profile and trend tool that maps volume by price level into a heatmap overlay, then layers directional bias on top. Here's an honest breakdown.
 
 **What it actually does**

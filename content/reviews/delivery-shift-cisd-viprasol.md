@@ -1,5 +1,5 @@
 ---
-title: "Delivery_Shift_Cisd_Viprasol Review: Settings, Strategy & How to Use It"
+title: "Delivery Shift Cisd Viprasol Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/wZ91pyJr-Viprasol-CISD-Delivery-Shift-viprasol/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "A volume-weighted momentum shift indicator for intraday and swing trading. Offers clear shift detection but needs tweaking for range-bound markets."
 grounding: "none (no source found)"
 ---
-# Indicator Review
-
+# Delivery Shift Cisd Viprasol Review
 **What This Indicator Actually Does**
 It's a custom momentum oscillator that plots two lines—a fast and a slow version of a "delivery shift" calculation. The core idea is to detect when buying or selling pressure *delivery* changes direction (the "shift"). The VIPRASOL suffix suggests it's a personal tweak of the original Cisd concept, likely adding a volatility filter.
 

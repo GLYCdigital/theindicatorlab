@@ -1,5 +1,5 @@
 ---
-title: "Risk_Reward_Calculator Review: Settings, Strategy & How to Use It"
+title: "Risk Reward Calculator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/GbgkGI2h-Risk-Reward-Calculator-projeadam/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Real-time risk-reward ratio calculator for TradingView. Automatically plots entry, stop loss, and take profit levels. No more mental math."
 grounding: "none (no source found)"
 ---
-# Risk_Reward_Calculator Review
-
+# Risk Reward Calculator Review
 The gap between the risk-reward ratio a trader *thinks* they've taken and the one they actually got is a common source of account damage. Slippage and spread eat into the planned ratio, and by the time the position is closed, the math no longer resembles the plan. The Risk_Reward_Calculator is aimed squarely at that problem. It does one thing: it displays the risk-to-reward ratio on the chart as you draw your trade levels.
 
 ## What This Indicator Actually Does

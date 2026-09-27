@@ -1,5 +1,5 @@
 ---
-title: "Breakout Scanner Review: Settings, Strategy & How to Use It"
+title: "Breakout Scanner Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/6Y6abda7-Breakout-Scanner-FriendOfTheTrend/"
 date: 2026-07-16
 draft: false

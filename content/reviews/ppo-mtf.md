@@ -1,5 +1,5 @@
 ---
-title: "Ppo_Mtf Review: Settings, Strategy & How to Use It"
+title: "PPO MTF Review — Trend Indicator"
 date: 2026-07-31
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Ppo_Mtf review: multi-timeframe PPO for trend confirmation. Tested settings, entry/exit logic, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Ppo_Mtf Review
-
+# PPO MTF Review
 The PPO (Percentage Price Oscillator) is often treated as the overlooked member of the MACD family. It uses the same underlying math, just normalized as a percentage, which in principle makes it more comparable across instruments. Most TradingView implementations, however, are single-timeframe clones that add little. "Multi-timeframe" scripts in particular have a reputation for either repainting or lagging badly enough to be unusable, so the value of any MTF tool depends entirely on how cleanly it handles that problem.
 
 **What This Indicator Actually Does**

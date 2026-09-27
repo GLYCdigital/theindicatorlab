@@ -1,5 +1,5 @@
 ---
-title: "Strategy_Performance_Dashboard Review: Settings, Strategy & How to Use It"
+title: "Strategy Performance Dashboard Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "A no-nonsense dashboard that tracks win rate, profit factor, and drawdown in real time. Best for backtesting & live strategy monitoring."
 grounding: "none (no source found)"
 ---
-# Strategy_Performance_Dashboard Review
-
+# Strategy Performance Dashboard Review
 If you're tired of flipping tabs to check your strategy's health, **Strategy_Performance_Dashboard** aims to solve that by keeping the numbers on the chart itself.
 
 **What this indicator actually does**  

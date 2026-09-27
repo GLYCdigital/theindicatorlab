@@ -1,5 +1,5 @@
 ---
-title: "Delta Divergence Review: Settings, Strategy & How to Use It"
+title: "Delta Divergence Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/GDPKdX06-Delta-Divergence-IndexAce/"
 date: 2026-07-16
 draft: false

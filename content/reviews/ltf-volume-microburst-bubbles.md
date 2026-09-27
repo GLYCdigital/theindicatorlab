@@ -1,5 +1,5 @@
 ---
-title: "Ltf_Volume_Microburst_Bubbles Review: Settings, Strategy & How to Use It"
+title: "LTF Volume Microburst Bubbles Review — Volume Indicator"
 date: 2026-08-18
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Ltf_Volume_Microburst_Bubbles review: volume spike detection on lo
 tv_script_url: "https://www.tradingview.com/script/Hdskv6Q5-LTF-Volume-Microburst-Bubbles-Zeiierman/"
 sources: ["https://www.tradingview.com/script/Hdskv6Q5-LTF-Volume-Microburst-Bubbles-Zeiierman/"]
 ---
-# LTf Volume Microburst Bubbles (Zeiierman) Review
-
+# LTF Volume Microburst Bubbles Review
 ## What This Indicator Actually Does
 
 This is not another lagging trend-line painter. LTf Volume Microburst Bubbles is a lower-timeframe volume indicator that looks inside each chart candle and searches for short bursts of unusually strong buying or selling activity. Rather than analyzing only the total volume of the chart candle, it uses lower-timeframe data to find individual volume spikes occurring within the candle.

@@ -1,5 +1,5 @@
 ---
-title: "Volume_Weighted_S_R Review: Settings, Strategy & How to Use It"
+title: "Volume Weighted Sr Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/H0DfZXtR-Volume-Weighted-S-R-Zones-WillyAlgoTrader/"
 date: 2026-07-20
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Volume_Weighted_S_R uses volume to identify dynamic support/resistance zones. Review covers settings, strategy, and honest pros/cons for trend traders."
 grounding: "none (no source found)"
 ---
-# Volume_Weighted_S_R Review
-
+# Volume Weighted Sr Review
 Most support and resistance indicators either repaint, lag, or simply draw horizontal lines that carry little meaning. Volume_Weighted_S_R (VW_S_R) takes a different approach: it weights price levels by trading volume to identify zones where large transactions cluster.
 
 ## What It Actually Does

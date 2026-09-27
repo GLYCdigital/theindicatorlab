@@ -1,5 +1,5 @@
 ---
-title: "Heikin_Ashi_Smoothed Review: Settings, Strategy & How to Use It"
+title: "Heikin Ashi Smoothed Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/d6QlCCpf-Heikin-Ashi-Smoothed-KivancOzbilgic/"
 date: 2026-07-16
 draft: false

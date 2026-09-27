@@ -1,5 +1,5 @@
 ---
-title: "Butterworth_Spectral_Trend Review: Settings, Strategy & How to Use It"
+title: "Butterworth Spectral Trend Review — Trend Indicator"
 date: 2026-08-15
 draft: false
 type: reviews

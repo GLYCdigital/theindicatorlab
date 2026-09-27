@@ -1,5 +1,5 @@
 ---
-title: "Range_Commander_Orb Review: Settings, Strategy & How to Use It"
+title: "Range Commander Orb Review — Trend Indicator"
 date: 2026-08-18
 draft: false
 type: reviews

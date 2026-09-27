@@ -1,5 +1,5 @@
 ---
-title: "Positioning_Flow_Index_By_Dgt Review: Settings, Strategy & How to Use It"
+title: "Positioning Flow Index By Dgt Review — Volume Indicator"
 date: 2026-08-16
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Positioning_Flow_Index_By_Dgt review: a trend-following momentum g
 tv_script_url: "https://www.tradingview.com/script/L63e3kLK-Positioning-Flow-Index-by-DGT/"
 sources: ["https://www.tradingview.com/script/L63e3kLK-Positioning-Flow-Index-by-DGT/"]
 ---
-# Positioning Flow Index (PFI) Review
-
+# Positioning Flow Index By Dgt Review
 Let's be upfront: plenty of "flow" indicators repackage an oscillator and call it a day. This one isn't that. The **Positioning Flow Index (PFI)** is a positioning-analysis framework built around the interaction between **Price** and **Open Interest** — not price momentum in isolation. It doesn't try to produce a simple buy or sell signal. Instead, it classifies the relationship between price movement and participation into four defined regimes, and grades how strong that evidence is.
 
 That's a narrower and more specific tool than the name might suggest, and it's worth understanding exactly what it does before deciding whether it belongs on your chart.

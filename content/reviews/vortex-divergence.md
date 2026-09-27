@@ -1,5 +1,5 @@
 ---
-title: "Vortex_Divergence Review: Settings, Strategy & How to Use It"
+title: "Vortex Divergence Review — Momentum Indicator"
 date: 2026-08-28
 draft: false
 type: reviews

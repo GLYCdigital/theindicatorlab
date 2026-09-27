@@ -1,5 +1,5 @@
 ---
-title: "Market_Structure_Smc Review: Settings, Strategy & How to Use It"
+title: "Market Structure SMC Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-LeviathanCapital/"
 date: 2026-08-07
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Market_Structure_Smc review: tested settings, entry logic, pros/cons. Is this SMC trend indicator worth your watchlist? Find out."
 grounding: "none (no source found)"
 ---
-# Market_Structure_Smc Review
-
+# Market Structure SMC Review
 "Smart Money Concept" indicators are a crowded category, and many are little more than repackaged pivot points with fashionable branding. Market_Structure_Smc is aimed at traders who already think in SMC terms and want the structural work handled for them. What follows is a feature-level look at what the tool claims to do and where its limitations sit.
 
 ## What It Actually Does

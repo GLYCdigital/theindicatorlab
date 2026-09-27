@@ -1,5 +1,5 @@
 ---
-title: "Chandelier_Exit_Mtf Review: Settings, Strategy & How to Use It"
+title: "Chandelier Exit MTF Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/AqXxNS7j-Chandelier-Exit-everget/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Multi-timeframe Chandelier Exit for trailing stops. Tests well on trends, but laggy in choppy markets. Best on 1H-4H with ATR multiplier 3."
 grounding: "none (no source found)"
 ---
-# Chandelier_Exit_Mtf Review
-
+# Chandelier Exit MTF Review
 The Chandelier Exit is a well-known volatility-based trailing stop, and the "Mtf" variant adds a multi-timeframe twist: it lets you select a higher timeframe for the ATR calculation while still plotting on your current chart. That's the core differentiator from the standard version, and it's worth understanding before adopting it.
 
 ## What This Indicator Actually Does

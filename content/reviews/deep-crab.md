@@ -1,5 +1,5 @@
 ---
-title: "Deep_Crab Review: Settings, Strategy & How to Use It"
+title: "Deep Crab Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/xBAlqeYd-Deep-Crab-Harmonic-Pattern-TradingFinder-Reversal-Zones-TradingFinder/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Deep_Crab identifies harmonic crab patterns with precision. A solid tool for reversal traders—clean signals, but not a holy grail. 4/5."
 grounding: "none (no source found)"
 ---
-# Deep_Crab Review
-
+# Deep Crab Review
 Harmonic pattern indicators have a poor reputation, and much of it is earned. Many repaint after the fact, and many flood the chart with signals that carry no edge. *Deep_Crab* is a single-pattern tool in the 07 category, and the case for it rests on doing one job cleanly rather than doing everything.
 
 ## What Deep_Crab Actually Does

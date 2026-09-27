@@ -1,5 +1,5 @@
 ---
-title: "Bollinger_Bands_Squeeze Review: Settings, Strategy & How to Use It"
+title: "Bollinger Bands Squeeze Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/QW4daVnx-Bollinger-Bands-Squeeze-AlexeyFirsov/"
 date: 2026-07-16
 draft: false

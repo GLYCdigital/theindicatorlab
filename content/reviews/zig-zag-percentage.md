@@ -1,5 +1,5 @@
 ---
-title: "Zig_Zag_Percentage Review: Settings, Strategy & How to Use It"
+title: "Zig Zag Percentage Review — Trend Indicator"
 date: 2026-08-09
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Zig_Zag_Percentage review: tested settings, swing trading strategy, pros & cons. See how this classic trend filter compares to alternatives."
 grounding: "none (no source found)"
 ---
-# Zig_Zag_Percentage Review
-
+# Zig Zag Percentage Review
 The Zig Zag indicator gets a bad rap. Many traders dismiss it as a lagging relic that redraws history — and the standard version has real limitations. The Zig_Zag_Percentage variant on TradingView addresses one of the core criticisms: instead of using fixed point swings, it filters swings by percentage change. That adjustment makes it more useful for swing trading and market structure analysis.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Polarized_Fractal_Efficiency_Pfe Review: Settings, Strategy & How to Use It"
+title: "Polarized Fractal Efficiency Pfe Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/T0OxPew6-PFE-scaler-danny-tor/"
 date: 2026-09-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Polarized Fractal Efficiency PFE review: tested settings, entry/exit logic, pros & cons. Is this momentum-trend hybrid worth adding to your toolkit?"
 grounding: "none (no source found)"
 ---
-# Polarized_Fractal_Efficiency_Pfe Review
-
+# Polarized Fractal Efficiency Pfe Review
 Most trend indicators are just moving averages wearing a disguise. The Polarized_Fractal_Efficiency_Pfe (PFE) isn't that. It's a measure of price efficiency — how much actual distance price traveled versus the straight-line distance over a given period. When price moves in a clean, directional path, the PFE rises. When it chops sideways, the PFE flattens or reverses. That's the core concept.
 
 ## What Sets It Apart

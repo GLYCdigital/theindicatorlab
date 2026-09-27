@@ -1,5 +1,5 @@
 ---
-title: "Smart_Money_Concepts Review: Settings, Strategy & How to Use It"
+title: "Smart Money Concepts Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/VpqHOSip-Smart-Money-Concepts-WeloTrades/"
 date: 2026-07-28
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Smart_Money_Concepts review: tested on MACD chart. Covers best settings, entry/exit logic, pros/cons, and who it's actually for. No hype, just results."
 grounding: "none (no source found)"
 ---
-# Smart_Money_Concepts Review
-
+# Smart Money Concepts Review
 **Smart_Money_Concepts** is a trend-following indicator that attempts to automate what many traders call "institutional order flow" — identifying supply/demand zones, market structure breaks, and liquidity grabs. It is typically run on a MACD chart.
 
 ## What This Indicator Actually Does

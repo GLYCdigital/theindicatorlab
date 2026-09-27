@@ -1,5 +1,5 @@
 ---
-title: "Hull_Ma_Cross_Signal Review: Settings, Strategy & How to Use It"
+title: "Hull Ma Cross Signal Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

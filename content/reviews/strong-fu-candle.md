@@ -1,5 +1,5 @@
 ---
-title: "Strong_Fu_Candle Review: Settings, Strategy & How to Use It"
+title: "Strong Fu Candle Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/rg1geVPD-Strong-FU-Candle-ProjectSyndicate/"
 date: 2026-07-16
 draft: false

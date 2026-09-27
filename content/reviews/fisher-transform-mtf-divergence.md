@@ -1,5 +1,5 @@
 ---
-title: "Fisher Transform Mtf Divergence Review: Settings, Strategy & How to Use It"
+title: "Fisher Transform MTF Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/aLipeVfd-Fisher-Transform-MTF-QuantitativeExhaustion/"
 date: 2026-07-16
 draft: false

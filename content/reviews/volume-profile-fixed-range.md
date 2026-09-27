@@ -1,5 +1,5 @@
 ---
-title: "Volume_Profile_Fixed_Range Review: Settings, Strategy & How to Use It"
+title: "Volume Profile Fixed Range Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/kIY0znXs-Volume-Profile-Fixed-Range-LonesomeTheBlue/"
 date: 2026-07-16
 draft: false

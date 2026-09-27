@@ -1,5 +1,5 @@
 ---
-title: "Optipine_High_Performance_Caching_And_Data_Pipelines Review: Settings, Strategy & How to Use It"
+title: "Optipine High Performance Caching And Data Pipelines Review — Trend Indicator"
 date: 2026-08-22
 draft: false
 type: reviews

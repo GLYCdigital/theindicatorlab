@@ -1,5 +1,5 @@
 ---
-title: "Pivot_Channel_Trendlines Review: Settings, Strategy & How to Use It"
+title: "Pivot Channel Trendlines Review — Support & Resistance Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

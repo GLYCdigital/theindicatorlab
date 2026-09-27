@@ -1,5 +1,5 @@
 ---
-title: "Ema_Rsi_Vwap_Targets Review: Settings, Strategy & How to Use It"
+title: "EMA RSI VWAP Targets Review — Volume Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

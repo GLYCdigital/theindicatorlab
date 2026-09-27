@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci_Cloud_Multi_Timeframe_Fibonacci_Scanner Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Cloud Multi Timeframe Fibonacci Scanner Review — Momentum Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Mean_Reversion_Ml Review: Settings, Strategy & How to Use It"
+title: "Mean Reversion Ml Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/1ZqSxD8W-Mean-Reversion-mephistomevo/"
 date: 2026-07-16
 draft: false

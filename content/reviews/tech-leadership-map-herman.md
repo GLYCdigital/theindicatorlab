@@ -1,5 +1,5 @@
 ---
-title: "Tech_Leadership_Map_Herman Review: Settings, Strategy & How to Use It"
+title: "Tech Leadership Map Herman Review — Trend Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

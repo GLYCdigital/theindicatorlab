@@ -1,5 +1,5 @@
 ---
-title: "Divergence_Detector_Universal Review: Settings, Strategy & How to Use It"
+title: "Divergence Detector Universal Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/aGVsqaph-Divergence-Detector-reees/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Divergence_Detector_Universal. See how it spots hidden and regular divergences across multiple assets, plus the best settings and entry tactics."
 grounding: "none (no source found)"
 ---
-# Divergence_Detector_Universal Review
-
+# Divergence Detector Universal Review
 Divergence indicators tend to fall into two camps: noisy tools that flag every minor wiggle, or slow ones that miss real moves. Divergence_Detector_Universal aims for the middle ground—not perfect, but a reasonable option for a free tool.
 
 ## What This Indicator Actually Does

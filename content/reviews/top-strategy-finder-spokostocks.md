@@ -1,5 +1,5 @@
 ---
-title: "Top_Strategy_Finder_Spokostocks Review: Settings, Strategy & How to Use It"
+title: "Top Strategy Finder Spokostocks Review — Trend Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

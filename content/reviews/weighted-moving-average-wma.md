@@ -1,5 +1,5 @@
 ---
-title: "Weighted_Moving_Average_Wma Review: Settings, Strategy & How to Use It"
+title: "Weighted Moving Average WMA Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/8ngdBVpM-Weighted-Moving-Average-WMA-mihakralj/"
 date: 2026-07-20
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of TradingView's WMA indicator. How it differs from SMA/EMA, best settings, entry/exit logic, and who should use it."
 grounding: "none (no source found)"
 ---
-# Weighted Moving Average (WMA) Review
-
+# Weighted Moving Average WMA Review
 The Weighted Moving Average on TradingView is a trend-following tool that assigns more weight to recent price data than older data, but in a linear fashion—not the exponential weighting of an EMA. That distinction is the whole point of the indicator, and it drives both its strengths and its limitations.
 
 **What this indicator does:** It plots a smoothed line that reacts faster to price changes than a Simple Moving Average (SMA) but slightly slower than an Exponential Moving Average (EMA). The "weighted" part means the most recent candle gets the highest multiplier, the previous candle gets one less, and so on. This makes it more responsive without the jitteriness of a short-term EMA.

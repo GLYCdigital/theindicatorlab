@@ -1,5 +1,5 @@
 ---
-title: "Mfi_Divergence Review: Settings, Strategy & How to Use It"
+title: "MFI Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/A9IDiwN2-MFI-Divergence-trader-mb/"
 date: 2026-08-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Mfi_Divergence review: tests the MFI divergence scanner, best settings, entry logic, pros/cons, and who should use it. 4/5 rating."
 grounding: "none (no source found)"
 ---
-# Mfi_Divergence Review
-
+# MFI Divergence Review
 Most divergence indicators on TradingView are repackaged garbage. They draw lines after the fact, repaint constantly, and produce signals that only look good in hindsight. Mfi_Divergence is not that. It's a clean, functional scanner that does what it says—no more, no less.
 
 ## What it actually does

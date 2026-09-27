@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Magnet Review: Settings, Strategy & How to Use It"
+title: "Liquidity Magnet Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/dtCtEIPC-Liquidity-Magnet-FEELS-FeelsStrategy/"
 date: 2026-07-16
 draft: false

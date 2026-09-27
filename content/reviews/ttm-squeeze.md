@@ -1,5 +1,5 @@
 ---
-title: "Ttm Squeeze Review: Settings, Strategy & How to Use It"
+title: "TTM Squeeze Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/eFs5kf8F-TTM-Squeeze-Greeny/"
 date: 2026-07-16
 draft: false

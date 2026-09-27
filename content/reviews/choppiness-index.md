@@ -1,5 +1,5 @@
 ---
-title: "Choppiness_Index Review: Settings, Strategy & How to Use It"
+title: "Choppiness Index Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/jlwuHMOd-Choppiness-Index-alxnegrila/"
 date: 2026-07-16
 draft: false

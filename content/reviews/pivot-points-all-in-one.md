@@ -1,5 +1,5 @@
 ---
-title: "Pivot_Points_All_In_One Review: Settings, Strategy & How to Use It"
+title: "Pivot Points All In One Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-juanmirocks/"
 date: 2026-07-30
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Pivot_Points_All_In_One review. Tested settings, entry/exit logic, and who it's for. A solid 4-star tool for multi-timeframe pivot traders."
 grounding: "none (no source found)"
 ---
-# Pivot_Points_All_In_One Review
-
+# Pivot Points All In One Review
 Pivot point indicators are a dime a dozen on TradingView, and many are little more than the classic floor formula dropped onto a daily chart. *Pivot_Points_All_In_One* claims to be more than that. Here's a breakdown of what it offers and where it falls short.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Zen_Abr_Scalping_Ladder Review: Settings, Strategy & How to Use It"
+title: "Zen Abr Scalping Ladder Review — Trend Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

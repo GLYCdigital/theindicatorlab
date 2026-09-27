@@ -1,5 +1,5 @@
 ---
-title: "Gator Oscillator Review: Settings, Strategy & How to Use It"
+title: "Gator Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/jltye2iO-Gator-Oscillator-everget/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Honest review of Bill Williams' Gator Oscillator: settings, best t
 grounding: "none (no source found)"
 ---
 # Gator Oscillator Review
-
 You've seen the Gator Oscillator in the Alligator pack, but does it actually help you trade better? Here's the straight assessment.
 
 **What this indicator actually does**

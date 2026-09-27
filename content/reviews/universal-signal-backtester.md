@@ -1,5 +1,5 @@
 ---
-title: "Universal_Signal_Backtester Review: Settings, Strategy & How to Use It"
+title: "Universal Signal Backtester Review — Trend Indicator"
 date: 2026-08-19
 draft: false
 type: reviews

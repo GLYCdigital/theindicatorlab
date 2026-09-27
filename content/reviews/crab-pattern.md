@@ -1,5 +1,5 @@
 ---
-title: "Crab_Pattern Review: Settings, Strategy & How to Use It"
+title: "Crab Pattern Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/jt8RIEAa-CrabPattern-ULTRA-V6-NXT2017/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Supply And Demand Zones Review: Settings, Strategy & How to Use It"
+title: "Supply And Demand Zones Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/eAO9uAu5-Supply-and-Demand-Zones-asfasf24/"
 date: 2026-07-24
 draft: false

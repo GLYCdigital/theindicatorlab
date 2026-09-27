@@ -1,5 +1,5 @@
 ---
-title: "Supertrend_Multi Review: Settings, Strategy & How to Use It"
+title: "Supertrend Multi Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/LonOB4YA-Supertrend-Multi-Time-Frame-Auto-HTF-LonesomeTheBlue/"
 date: 2026-08-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Supertrend_Multi review: multi-timeframe trend indicator with ATR-based signals. Tested settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Supertrend_Multi Review
-
+# Supertrend Multi Review
 The standard Supertrend is fine, but it has one well-known flaw — it's a lagging single-frame indicator that gets chopped to pieces in ranging markets. Supertrend_Multi tries to fix that by plotting multiple Supertrend lines across different timeframes on a single chart. Here's what matters.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Ehlers Fisher Transform Review: Settings, Strategy & How to Use It"
+title: "Ehlers Fisher Transform Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/lbCrnfnp-Ehlers-Fisher-Transform-Indicator-CC-cheatcountry/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Ehlers Fisher Transform review: tested settings, entry/exit signal
 grounding: "none (no source found)"
 ---
 # Ehlers Fisher Transform Review
-
 The Ehlers Fisher Transform presents itself on the chart as a squashed sine wave punctuated by extreme spikes. That visual character reflects its design: it applies a mathematical transform to price data in an attempt to produce a near-normal distribution, which in turn makes turning points stand out more clearly than they might on the raw price series.
 
 It is not a set-and-forget indicator. It is a momentum oscillator with a specific bias, and its usefulness depends heavily on how it is tuned and where it is applied.

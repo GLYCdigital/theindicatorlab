@@ -1,5 +1,5 @@
 ---
-title: "Dmi_Directional_Movement_Index Review: Settings, Strategy & How to Use It"
+title: "DMI Directional Movement Index Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

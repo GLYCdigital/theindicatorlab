@@ -1,5 +1,5 @@
 ---
-title: "Supertrend_Macd_Combo Review: Settings, Strategy & How to Use It"
+title: "Supertrend MACD Combo Review — Momentum Indicator"
 date: 2026-07-19
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Supertrend_Macd_Combo combines two proven trend-following tools into one clean signal. Read our test results, best settings, and entry rules."
 grounding: "none (no source found)"
 ---
-# Supertrend_Macd_Combo Review
-
+# Supertrend MACD Combo Review
 The **Supertrend_Macd_Combo** isn't a black-box "AI" indicator. It's exactly what the name says: a Supertrend overlay married to an MACD-style confirmation line, all on one chart.
 
 ## What It Actually Does

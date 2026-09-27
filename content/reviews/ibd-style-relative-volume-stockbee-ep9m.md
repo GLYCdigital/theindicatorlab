@@ -1,5 +1,5 @@
 ---
-title: "Ibd_Style_Relative_Volume_Stockbee_Ep9M Review: Settings, Strategy & How to Use It"
+title: "Ibd Style Relative Volume Stockbee Ep9m Review — Volume Indicator"
 date: 2026-08-18
 draft: false
 type: reviews

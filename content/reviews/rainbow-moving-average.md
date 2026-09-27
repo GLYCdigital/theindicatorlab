@@ -1,5 +1,5 @@
 ---
-title: "Rainbow Moving Average Review: Settings, Strategy & How to Use It"
+title: "Rainbow Moving Average Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/TXLL6uIM-Rainbow-Moving-Average-jocull/"
 date: 2026-07-16
 draft: false

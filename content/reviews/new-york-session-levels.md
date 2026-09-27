@@ -1,5 +1,5 @@
 ---
-title: "New_York_Session_Levels Review: Settings, Strategy & How to Use It"
+title: "New York Session Levels Review — Trend Indicator"
 date: 2026-07-21
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest review of New_York_Session_Levels: a no-nonsense indicator that draws key NY open levels. Covers settings, strategy, and who should use it."
 grounding: "none (no source found)"
 ---
-# New_York_Session_Levels Review
-
+# New York Session Levels Review
 Session-based indicators are a crowded category, and many are cosmetic—lines that look tidy on a chart but carry little information. New_York_Session_Levels takes a narrower approach: it marks the open, high, low, and close of the New York session and projects those levels forward.
 
 ## What It Actually Does

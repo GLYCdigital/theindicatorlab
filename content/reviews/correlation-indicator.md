@@ -1,5 +1,5 @@
 ---
-title: "Correlation_Indicator Review: Settings, Strategy & How to Use It"
+title: "Correlation Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/CidARBPN-Correlation-indicator-SimoneMicucci00/"
 date: 2026-07-16
 draft: false

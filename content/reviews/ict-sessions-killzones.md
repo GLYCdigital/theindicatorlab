@@ -1,5 +1,5 @@
 ---
-title: "Ict_Sessions_Killzones Review: Settings, Strategy & How to Use It"
+title: "ICT Sessions Killzones Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/PMWhL0t7-ICT-Killzone-leonsholo/"
 date: 2026-07-23
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of ICT Sessions Killzones: a free indicator that maps Asian, London, and NY session highs/lows. Tested settings, entry logic, and who it’s actually for."
 grounding: "none (no source found)"
 ---
-# Ict_Sessions_Killzones Review
-
+# ICT Sessions Killzones Review
 Let's cut through the hype. The **Ict_Sessions_Killzones** indicator is not a magic bullet. It's a clean, free tool that plots the high and low of each major trading session (Asian, London, New York) directly on your chart, plus highlights the "killzones" — the windows where ICT traders expect liquidity grabs or reversals. If you've ever manually drawn session boxes and missed the close, this saves you the headache.
 
 ### What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Machine_Learning_Neural_Network_Engine Review: Settings, Strategy & How to Use It"
+title: "Machine Learning Neural Network Engine Review — Trend Indicator"
 date: 2026-08-14
 draft: false
 type: reviews

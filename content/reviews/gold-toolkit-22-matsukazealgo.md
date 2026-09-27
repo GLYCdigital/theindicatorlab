@@ -1,5 +1,5 @@
 ---
-title: "Gold_Toolkit_22_Matsukazealgo Review: Settings, Strategy & How to Use It"
+title: "Gold Toolkit 22 Matsukazealgo Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/VspAn3Gf-Gold-Toolkit-22-MatsukazeAlgo/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Gold_Toolkit_22_Matsukazealgo review: real settings, entry rules, and backtest results for XAUUSD. Not hype, just what works."
 grounding: "none (no source found)"
 ---
-# Gold_Toolkit_22_Matsukazealgo Review
-
+# Gold Toolkit 22 Matsukazealgo Review
 You know the feeling: you see a gold-specific indicator, you get excited, and then it's just a repainted moving average with a gold icon. Whether **Gold_Toolkit_22_Matsukazealgo** avoids that trap depends on what you actually need from a confirmation tool. Here's a breakdown of what the indicator claims to offer.
 
 ---

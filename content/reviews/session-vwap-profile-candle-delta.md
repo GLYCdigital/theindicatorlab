@@ -1,5 +1,5 @@
 ---
-title: "Session_Vwap_Profile_Candle_Delta Review: Settings, Strategy & How to Use It"
+title: "Session VWAP Profile Candle Delta Review — Volume Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Moving_Average_Cross Review: Settings, Strategy & How to Use It"
+title: "Moving Average Cross Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/PcWAuplI-Moving-Average-Cross-EvoSti/"
 date: 2026-08-01
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Moving_Average_Cross review: tested settings, entry/exit logic, pros & cons. Is this simple MA crossover indicator worth your chart space? Find out."
 grounding: "none (no source found)"
 ---
-# Moving_Average_Cross Review
-
+# Moving Average Cross Review
 Moving average crossover indicators are a crowded category, and most of them are either over-engineered messes or a lazy repackaging of the built-in MA tool. Moving_Average_Cross sits somewhere in between — a familiar concept dressed up with a few genuinely useful additions. Here's the honest breakdown.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Structure_Participation_Matrix_Mqlsoftware Review: Settings, Strategy & How to Use It"
+title: "Structure Participation Matrix Mqlsoftware Review — Market Structure Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Obv_Mtf Review: Settings, Strategy & How to Use It"
+title: "OBV MTF Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/e9kKVcyv-OBV-MTF-RafaelZioni/"
 date: 2026-08-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Obv_Mtf review: Multi-timeframe OBV divergence tool. Tested settings, entry logic, pros/cons. Solid trend filter, but not a standalone signal."
 grounding: "none (no source found)"
 ---
-# Obv_Mtf Review
-
+# OBV MTF Review
 There are countless OBV indicators on TradingView, and most are the same volume line with a moving average layered on top. Obv_Mtf takes a different approach: it applies the classic On-Balance Volume concept across three timeframes at once. The premise is straightforward, but execution is what separates it from the pack.
 
 **What It Really Does**

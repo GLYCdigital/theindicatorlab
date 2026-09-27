@@ -1,5 +1,5 @@
 ---
-title: "Zipced40_Chart_Pattern_Mapper Review: Settings, Strategy & How to Use It"
+title: "Zipced40 Chart Pattern Mapper Review — Chart Pattern Indicator"
 date: 2026-08-11
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Zipced40_Chart_Pattern_Mapper review: how it auto-detects chart patterns on TradingView, best settings, entry logic, pros, cons & who should use it."
 grounding: "none (no source found)"
 ---
-# Zipced40_Chart_Pattern_Mapper Review
-
+# Zipced40 Chart Pattern Mapper Review
 Most pattern-mapping indicators fall into one of two camps: lagging badly, or so noisy the underlying price action disappears. Zipced40_Chart_Pattern_Mapper avoids both. It's a solid tool that does what it claims — detecting structural chart patterns — but it has quirks worth understanding before you rely on it.
 
 ## What It Actually Does

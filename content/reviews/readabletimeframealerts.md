@@ -1,5 +1,5 @@
 ---
-title: "Readabletimeframealerts Review: Settings, Strategy & How to Use It"
+title: "Readabletimeframealerts Review — Trend Indicator"
 date: 2026-08-30
 draft: false
 type: reviews

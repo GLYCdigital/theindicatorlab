@@ -1,5 +1,5 @@
 ---
-title: "Machine_Learning_Svm Review: Settings, Strategy & How to Use It"
+title: "Machine Learning Svm Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/bOblGfmR-Machine-Learning-bitwardex/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Machine_Learning_Svm uses Support Vector Machines to classify price direction. A solid ML tool for trend confirmation. Settings, pros/cons, and real usage inside."
 grounding: "none (no source found)"
 ---
-# Machine_Learning_Svm Review
-
+# Machine Learning Svm Review
 **Machine_Learning_Svm** is a Support Vector Machine (SVM) based indicator — a supervised learning model applied to price classification. Rather than predicting the future, it classifies whether the next candle is more likely bullish or bearish, based on a rolling window of historical price and volume data. The output is a signal line (typically blue/red) plus a confidence zone.
 
 The core idea is that it adapts to changing market structure. Where a moving average or oscillator is static, an SVM retrains as new bars form, so a shift from mean-reverting to trending conditions is reflected in the model rather than ignored.

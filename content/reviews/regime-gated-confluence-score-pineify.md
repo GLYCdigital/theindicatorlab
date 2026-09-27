@@ -1,5 +1,5 @@
 ---
-title: "Regime_Gated_Confluence_Score_Pineify Review: Settings, Strategy & How to Use It"
+title: "Regime Gated Confluence Score Pineify Review — Trend Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Std_Time Review: Settings, Strategy & How to Use It"
+title: "Std Time Review — Trend Indicator"
 date: 2026-09-01
 draft: false
 type: reviews

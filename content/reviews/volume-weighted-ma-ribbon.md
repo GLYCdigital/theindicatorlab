@@ -1,5 +1,5 @@
 ---
-title: "Volume_Weighted_Ma_Ribbon Review: Settings, Strategy & How to Use It"
+title: "Volume Weighted Ma Ribbon Review — Volume Indicator"
 date: 2026-07-29
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Volume_Weighted_Ma_Ribbon review: A unique twist on moving average ribbons using volume weighting. Tested settings, entry logic, and who should use it."
 grounding: "none (no source found)"
 ---
-# Volume_Weighted_Ma_Ribbon Review
-
+# Volume Weighted Ma Ribbon Review
 A moving average ribbon that weights each MA by volume rather than treating price alone as the input. Most MA ribbons show the same data in different colors; this one attempts to say something about conviction by folding volume into the line calculation. Whether that distinction matters to you depends on how much weight you already give volume in your process.
 
 ## What This Indicator Actually Does

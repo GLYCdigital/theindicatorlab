@@ -1,5 +1,5 @@
 ---
-title: "Coasyn_Directional_Order_Blocks Review: Settings, Strategy & How to Use It"
+title: "Coasyn Directional Order Blocks Review — Market Structure Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

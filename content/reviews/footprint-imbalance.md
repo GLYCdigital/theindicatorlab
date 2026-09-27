@@ -1,5 +1,5 @@
 ---
-title: "Footprint_Imbalance Review: Settings, Strategy & How to Use It"
+title: "Footprint Imbalance Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/q6qYB7ZB-Footprint-Imbalance-Bubbles-Bookmap-drop-trades/"
 date: 2026-07-16
 draft: false

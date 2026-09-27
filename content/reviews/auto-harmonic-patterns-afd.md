@@ -1,5 +1,5 @@
 ---
-title: "Auto_Harmonic_Patterns_Afd Review: Settings, Strategy & How to Use It"
+title: "Auto Harmonic Patterns Afd Review — Chart Pattern Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Regression_Toolkit Review: Settings, Strategy & How to Use It"
+title: "Regression Toolkit Review — Trend Indicator"
 date: 2026-08-18
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Regression_Toolkit review: honest look at this trend indicator's s
 tv_script_url: "https://www.tradingview.com/script/gSLL5PC1-Regression-Toolkit/"
 sources: ["https://www.tradingview.com/script/gSLL5PC1-Regression-Toolkit/"]
 ---
-# Regression_Toolkit Review
-
+# Regression Toolkit Review
 Regression_Toolkit isn't a magic black box that predicts the future. It's a Pine Script library that bridges advanced regression approaches not natively supported in Pine Script to Pine Script. That framing matters, because how you use it depends entirely on what you're building.
 
 ## What This Thing Actually Does

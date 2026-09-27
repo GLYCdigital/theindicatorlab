@@ -1,5 +1,5 @@
 ---
-title: "Volatility_Quality_Index Review: Settings, Strategy & How to Use It"
+title: "Volatility Quality Index Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/MbAO4zo0-Volatility-Quality-Index-LazyBear/"
 date: 2026-08-14
 draft: false
@@ -20,7 +20,6 @@ description: "Honest Volatility_Quality_Index review: settings, filters, and ent
 grounding: "none (no source found)"
 ---
 # Volatility Quality Index Review
-
 The Volatility_Quality_Index isn't a magic signal generator — it's a trend-quality filter that asks one question: *Is this move worth chasing?* Most trend indicators tell you *when* a trend starts. This one is designed to tell you whether the trend has enough structural integrity to survive your entry.
 
 Here's the honest breakdown.

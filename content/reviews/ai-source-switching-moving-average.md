@@ -1,5 +1,5 @@
 ---
-title: "Ai_Source_Switching_Moving_Average Review: Settings, Strategy & How to Use It"
+title: "AI Source Switching Moving Average Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/bj0WBYSf-AI-Source-Switching-Moving-Average-Zeiierman/"
 date: 2026-07-16
 draft: false

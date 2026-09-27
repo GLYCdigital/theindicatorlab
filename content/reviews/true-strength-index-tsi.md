@@ -1,5 +1,5 @@
 ---
-title: "True_Strength_Index_Tsi Review: Settings, Strategy & How to Use It"
+title: "True Strength Index TSI Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/2GdqewLx-True-Strength-Index-everget/"
 date: 2026-07-29
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest True Strength Index TSI review: tested settings, entry/exit rules, pros/cons, and who this momentum oscillator really works for. No fluff."
 grounding: "none (no source found)"
 ---
-# True Strength Index (TSI) Review
-
+# True Strength Index TSI Review
 The True Strength Index is one of those oscillators that flies under the radar, often overshadowed by the RSI and MACD. It is, however, a legitimate workhorse for momentum-based trend trading. This review covers what the indicator does, how to set it up, and where it fits in a trader's toolkit.
 
 ## What the TSI Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Pattern_Atlas_Geometric_Indicator_Axealgo Review: Settings, Strategy & How to Use It"
+title: "Pattern Atlas Geometric Indicator Axealgo Review — Chart Pattern Indicator"
 date: 2026-09-06
 draft: false
 type: reviews

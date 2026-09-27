@@ -1,5 +1,5 @@
 ---
-title: "Bolinger_Bands_Range_Rsi_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Bolinger Bands Range RSI Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/PjtZwuhe-Bolinger-Bands-Range-RSI-Oscillator-ChartPrime/"
 date: 2026-08-11
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of the Bolinger_Bands_Range_Rsi_Oscillator: tested settings, entry/exit logic, pros/cons, and who should actually use it."
 grounding: "none (no source found)"
 ---
-# Bolinger_Bands_Range_Rsi_Oscillator Review
-
+# Bolinger Bands Range RSI Oscillator Review
 The name "Bolinger_Bands_Range_Rsi_Oscillator" is a mouthful, and it reads like three indicator names dropped into a blender. The underlying construction, however, is coherent: it layers Bollinger Bands, RSI, and a range oscillator, then compresses them into a single trend gauge rather than three separate panels.
 
 **What it actually does**

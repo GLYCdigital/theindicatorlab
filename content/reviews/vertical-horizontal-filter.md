@@ -1,5 +1,5 @@
 ---
-title: "Vertical Horizontal Filter Review: Settings, Strategy & How to Use It"
+title: "Vertical Horizontal Filter Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/f8PIBdha-Vertical-Horizontal-Filter-KivancOzbilgic/"
 date: 2026-07-16
 draft: false

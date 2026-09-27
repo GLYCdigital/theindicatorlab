@@ -1,5 +1,5 @@
 ---
-title: "Markus_Channel_Dual_Expansion_Envelopes Review: Settings, Strategy & How to Use It"
+title: "Markus Channel Dual Expansion Envelopes Review — Volatility Indicator"
 date: 2026-09-09
 draft: false
 type: reviews

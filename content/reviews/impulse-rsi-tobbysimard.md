@@ -1,5 +1,5 @@
 ---
-title: "Impulse_Rsi_Tobbysimard Review: Settings, Strategy & How to Use It"
+title: "Impulse RSI Tobbysimard Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/XqSAnnui-Impulse-RSI-TobbySimard/"
 date: 2026-07-16
 draft: false

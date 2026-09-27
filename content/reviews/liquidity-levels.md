@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Levels Review: Settings, Strategy & How to Use It"
+title: "Liquidity Levels Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/6XU3E51s-LiqLevels-Fixed-larsomidicus/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Liquidity_Levels review. How to set it up, trade liquidity sweeps, and avoid false signals."
 grounding: "none (no source found)"
 ---
-# Liquidity_Levels Review
-
+# Liquidity Levels Review
 **Liquidity_Levels** is an indicator built around one specific job: automatically detecting and drawing the zones where price is likely to sweep liquidity—swing highs, swing lows, and the areas where stop hunts tend to cluster. It doesn't attempt to predict direction. It highlights where resting liquidity sits and lets the trader interpret what happens next. On the chart, sell-side liquidity is marked in red above price, buy-side liquidity in green below.
 
 ## What It Actually Does

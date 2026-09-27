@@ -1,5 +1,5 @@
 ---
-title: "Focus_Bars_Trading Review: Settings, Strategy & How to Use It"
+title: "Focus Bars Trading Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

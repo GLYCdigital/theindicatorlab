@@ -1,5 +1,5 @@
 ---
-title: "Anchored Vwap Review: Settings, Strategy & How to Use It"
+title: "Anchored VWAP Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/AqvAwrfM-Anchored-VWAP-jamiespips/"
 date: 2026-07-16
 draft: false

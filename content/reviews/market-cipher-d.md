@@ -1,5 +1,5 @@
 ---
-title: "Market_Cipher_D Review: Settings, Strategy & How to Use It"
+title: "Market Cipher D Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

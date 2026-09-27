@@ -1,5 +1,5 @@
 ---
-title: "Elliott_Wave_Impulse_Detector Review: Settings, Strategy & How to Use It"
+title: "Elliott Wave Impulse Detector Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/gMpxcJkW-Elliott-Wave-rules-based-compile-safe-STEELCITYCREATORS/"
 date: 2026-07-16
 draft: false

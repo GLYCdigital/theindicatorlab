@@ -1,5 +1,5 @@
 ---
-title: "Fvg_Retest_Detector Review: Settings, Strategy & How to Use It"
+title: "FVG Retest Detector Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

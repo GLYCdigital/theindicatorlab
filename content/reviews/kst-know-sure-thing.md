@@ -1,5 +1,5 @@
 ---
-title: "Kst_Know_Sure_Thing Review: Settings, Strategy & How to Use It"
+title: "KST Know Sure Thing Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

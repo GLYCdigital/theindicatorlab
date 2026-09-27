@@ -1,5 +1,5 @@
 ---
-title: "Market_Momentum_Energy_Zurvaneg Review: Settings, Strategy & How to Use It"
+title: "Market Momentum Energy Zurvaneg Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/3iFkhPYU-arket-omentum-nergy-urv-n-ZurvanEG/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Market_Momentum_Energy_Zurvaneg: a momentum-energy hybrid indicator for spotting trend exhaustion and reversals. Settings, signals, and who it's for."
 grounding: "none (no source found)"
 ---
-# Market_Momentum_Energy_Zurvaneg Review
-
+# Market Momentum Energy Zurvaneg Review
 The name is a mouthful, and that alone is enough to make a lot of traders scroll past. Whether that's fair depends on what the indicator is actually doing under the hood.
 
 This is a momentum-energy hybrid that attempts something few indicators bother with: separating raw price momentum from the *energy* behind it. The pitch is essentially RSI meets volume-weighted drift, with a cleaner visual language.

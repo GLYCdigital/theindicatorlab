@@ -1,5 +1,5 @@
 ---
-title: "Trend_Classification_Ml Review: Settings, Strategy & How to Use It"
+title: "Trend Classification Ml Review — Trend Indicator"
 date: 2026-07-31
 draft: false
 type: reviews

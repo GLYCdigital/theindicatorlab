@@ -1,5 +1,5 @@
 ---
-title: "Sector_Rotation_Leadership_Persistence_Dots3Red Review: Settings, Strategy & How to Use It"
+title: "Sector Rotation Leadership Persistence Dots3red Review — Momentum Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

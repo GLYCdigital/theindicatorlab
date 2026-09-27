@@ -1,5 +1,5 @@
 ---
-title: "Average_Daily_Weekly_Ranges_Adr_Awr_D4A Review: Settings, Strategy & How to Use It"
+title: "Average Daily Weekly Ranges Adr Awr D4a Review — Trend Indicator"
 date: 2026-08-22
 draft: false
 type: reviews

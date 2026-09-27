@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Suite Review: Settings, Strategy & How to Use It"
+title: "RSI Suite Review — Momentum Indicator"
 date: 2026-09-26
 draft: false
 type: reviews

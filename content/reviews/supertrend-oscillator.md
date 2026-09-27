@@ -1,5 +1,5 @@
 ---
-title: "Supertrend_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Supertrend Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/jd0Pv9y5-SuperTrend-Oscillator-j1O9SB/"
 date: 2026-08-04
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Supertrend_Oscillator review: settings, entry/exit logic, pros & cons. Is this trend indicator worth adding to your TradingView toolkit?"
 grounding: "none (no source found)"
 ---
-# Supertrend_Oscillator Review
-
+# Supertrend Oscillator Review
 Supertrend variants are plentiful, and most are the same ATR-based line redrawn with a different color scheme. Supertrend_Oscillator takes a different approach — it converts the Supertrend logic into an oscillator format, which changes how the tool can be used.
 
 ## What This Indicator Actually Does

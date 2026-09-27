@@ -1,5 +1,5 @@
 ---
-title: "Hull Moving Average Review: Settings, Strategy & How to Use It"
+title: "Hull Moving Average Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/kChCRRZI-Hull-Moving-Average-MichelT/"
 date: 2026-07-16
 draft: false

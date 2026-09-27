@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci_Trend_Continuation_Signals_Algoalpha Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Trend Continuation Signals Algoalpha Review — Momentum Indicator"
 date: 2026-08-23
 draft: false
 type: reviews

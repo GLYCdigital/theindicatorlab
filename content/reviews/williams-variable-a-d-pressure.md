@@ -1,5 +1,5 @@
 ---
-title: "Williams_Variable_A_D_Pressure Review: Settings, Strategy & How to Use It"
+title: "Williams Variable Ad Pressure Review — Momentum Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

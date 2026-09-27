@@ -1,5 +1,5 @@
 ---
-title: "Harmonic_Pattern_Scanner Review: Settings, Strategy & How to Use It"
+title: "Harmonic Pattern Scanner Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/NFqBejRX-Harmonic-Pattern-Scanner-Morning-Starr/"
 date: 2026-07-16
 draft: false

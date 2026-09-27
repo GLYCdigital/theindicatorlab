@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Hidden_Divergence Review: Settings, Strategy & How to Use It"
+title: "RSI Hidden Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/thQD0F8z-RSI-Hidden-Divergence-Stochastic-200-EMA-DaviddTech/"
 date: 2026-08-04
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Rsi_Hidden_Divergence review: how to spot trend-continuation signals, best settings, entry/exit logic, pros, cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# Rsi_Hidden_Divergence Review
-
+# RSI Hidden Divergence Review
 Most divergence indicators on TradingView share the same problems: they repaint, fire false signals on every wiggle, and get you chopped up in ranging markets. The `Rsi_Hidden_Divergence` tool is built to avoid that. It does exactly one thing — and does it well.
 
 The indicator scans for **hidden bullish and bearish divergences** on the RSI. Hidden divergence is a trend-continuation signal. In an uptrend, price makes higher lows while RSI makes lower lows — momentum coiling for another push up. This tool detects those patterns automatically and plots arrows on your chart, with no manual line-drawing required.

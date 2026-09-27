@@ -1,5 +1,5 @@
 ---
-title: "Icon_Bot Review: Settings, Strategy & How to Use It"
+title: "Icon Bot Review — Trend Indicator"
 date: 2026-08-17
 draft: false
 type: reviews
@@ -20,8 +20,7 @@ tv_script_url: "https://www.tradingview.com/script/SGjdTzTm-Icon-Bot/"
 sources: ["https://www.tradingview.com/script/SGjdTzTm-Icon-Bot/"]
 grounding: "none (no source found)"
 ---
-# Icon_Bot Review
-
+# Icon Bot Review
 "AI-powered" trend indicators deserve skepticism, and Icon_Bot is no exception. The honest breakdown follows.
 
 ## What Icon_Bot Actually Does

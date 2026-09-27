@@ -1,5 +1,5 @@
 ---
-title: "Cup And Handle Review: Settings, Strategy & How to Use It"
+title: "Cup And Handle Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/lFyrdEQt-Cup-and-Handle-Pattern-ceyhun/"
 date: 2026-07-16
 draft: false

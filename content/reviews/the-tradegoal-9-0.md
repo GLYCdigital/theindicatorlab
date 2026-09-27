@@ -1,5 +1,5 @@
 ---
-title: "The_Tradegoal_9_0 Review: Settings, Strategy & How to Use It"
+title: "The Tradegoal 9 0 Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

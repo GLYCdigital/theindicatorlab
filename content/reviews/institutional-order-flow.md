@@ -1,5 +1,5 @@
 ---
-title: "Institutional_Order_Flow Review: Settings, Strategy & How to Use It"
+title: "Institutional Order Flow Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/DjdDDJhx-Institutional-Order-Flow-FriendOfTheTrend/"
 date: 2026-08-12
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Institutional_Order_Flow review: Does this trend indicator actually track smart money? Tested settings, entry logic, and honest pros/cons."
 grounding: "none (no source found)"
 ---
-# Institutional_Order_Flow Review
-
+# Institutional Order Flow Review
 Most "institutional" indicators are repackaged moving averages with a fancy name. On the surface, Institutional_Order_Flow invites the same suspicion. But it does attempt something structurally different from the standard oscillator template — though not without quirks.
 
 **What it actually does**

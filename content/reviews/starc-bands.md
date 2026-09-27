@@ -1,5 +1,5 @@
 ---
-title: "Starc_Bands Review: Settings, Strategy & How to Use It"
+title: "Starc Bands Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/tiyOwklQ-STARC-Bands-HPotter/"
 date: 2026-07-16
 draft: false

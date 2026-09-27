@@ -1,5 +1,5 @@
 ---
-title: "Detrended Price Oscillator Review: Settings, Strategy & How to Use It"
+title: "Detrended Price Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/j7Y7chM6-Detrended-Price-Oscillator-ClassicScott/"
 date: 2026-07-16
 draft: false

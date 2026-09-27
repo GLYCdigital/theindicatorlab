@@ -1,5 +1,5 @@
 ---
-title: "Mirage_Liquidity_Sweep_Jos_Protrader Review: Settings, Strategy & How to Use It"
+title: "Mirage Liquidity Sweep Jos Protrader Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

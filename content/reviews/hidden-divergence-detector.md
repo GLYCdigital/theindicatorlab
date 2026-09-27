@@ -1,5 +1,5 @@
 ---
-title: "Hidden_Divergence_Detector Review: Settings, Strategy & How to Use It"
+title: "Hidden Divergence Detector Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Hidden_Divergence_Detector catches hidden divergences others miss. Tested on crypto, forex, stocks. Honest review with settings, pros, cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# Hidden_Divergence_Detector Review
-
+# Hidden Divergence Detector Review
 Most divergence indicators are repackaged oscillators with arrows bolted on. The Hidden_Divergence_Detector takes a narrower brief: it looks specifically for *hidden* divergences, the pattern most traders skip past. Here's what it does and where it falls short.
 
 **What This Indicator Actually Does**

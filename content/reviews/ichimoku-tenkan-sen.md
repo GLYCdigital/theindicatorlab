@@ -1,5 +1,5 @@
 ---
-title: "Ichimoku_Tenkan_Sen Review: Settings, Strategy & How to Use It"
+title: "Ichimoku Tenkan Sen Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Relative_Volume_Breakout_Context_Pineify Review: Settings, Strategy & How to Use It"
+title: "Relative Volume Breakout Context Pineify Review — Volume Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

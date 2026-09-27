@@ -1,5 +1,5 @@
 ---
-title: "Tail_Range_Percentile_Radar_Pineify Review: Settings, Strategy & How to Use It"
+title: "Tail Range Percentile Radar Pineify Review — Trend Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

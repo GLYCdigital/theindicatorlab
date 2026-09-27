@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci_Arc Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Arc Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/6BxAQ0jS-Fibonacci-Archer-Box-ChartPrime/"
 date: 2026-07-16
 draft: false

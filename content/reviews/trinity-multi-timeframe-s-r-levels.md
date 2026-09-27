@@ -1,5 +1,5 @@
 ---
-title: "Trinity_Multi_Timeframe_S_R_Levels Review: Settings, Strategy & How to Use It"
+title: "Trinity Multi Timeframe Sr Levels Review — Trend Indicator"
 date: 2026-08-13
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Trinity_Multi_Timeframe_S_R_Levels review: settings, entry logic, pros/cons. See if this multi-TF support/resistance indicator fits your trading style."
 grounding: "none (no source found)"
 ---
-# Trinity_Multi_Timeframe_S_R_Levels Review
-
+# Trinity Multi Timeframe Sr Levels Review
 Most multi-timeframe support and resistance indicators on TradingView are just moving averages with extra steps. Trinity_Multi_Timeframe_S_R_Levels isn't that. It's a legitimate attempt to solve the "which timeframe actually matters" problem — and for the most part, it works.
 
 The visual layout is clean: distinct zones for three different timeframes, color-coded so you can instantly tell whether you're looking at the daily, 4-hour, or 1-hour levels. No clutter, no overlapping rainbow mess. That alone puts it ahead of half the indicators in this category.

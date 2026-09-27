@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Cci Review: Settings, Strategy & How to Use It"
+title: "MTF CCI Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

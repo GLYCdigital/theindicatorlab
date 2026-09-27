@@ -1,5 +1,5 @@
 ---
-title: "Sweep_Reversal_Map_Herman Review: Settings, Strategy & How to Use It"
+title: "Sweep Reversal Map Herman Review — Market Structure Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

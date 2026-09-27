@@ -1,5 +1,5 @@
 ---
-title: "Squeeze_Indicator Review: Settings, Strategy & How to Use It"
+title: "Squeeze Indicator Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/lEzWekre-Squeeze-Indicator-racer8/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Bollinger_Bands Review: Settings, Strategy & How to Use It"
+title: "Adaptive Bollinger Bands Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/XPhs0RlD-Adaptive-Bollinger-Bands-MarketAlgoBot/"
 date: 2026-07-16
 draft: false

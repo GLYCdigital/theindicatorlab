@@ -1,5 +1,5 @@
 ---
-title: "Sigmoid_Rsi_Nal Review: Settings, Strategy & How to Use It"
+title: "Sigmoid RSI Nal Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/ONhiTlru-Sigmoid-RSI-NordicAlphaLab/"
 date: 2026-08-09
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Sigmoid_Rsi_Nal review: A trend-smoothed RSI hybrid. Tested settings, entry logic, pros/cons, and who should use it. Honest 4/5 verdict."
 grounding: "none (no source found)"
 ---
-# Sigmoid_Rsi_Nal Review
-
+# Sigmoid RSI Nal Review
 Most RSI variations amount to the same oscillator with a different paint job — repainted, laggy, or smoothed to the point of uselessness for entries. Sigmoid_Rsi_Nal takes a different route. Rather than wrapping RSI in a moving average, it applies a sigmoid transformation to the raw RSI value and then passes that through a trend filter. The result is a cleaner signal line that behaves more like a trend indicator than a traditional momentum oscillator.
 
 On the MACD chart above, the indicator plots a single line that oscillates in a bounded range, with color shifts marking trend direction. The sigmoid compression dampens noise around the 50 midline while amplifying moves at the extremes. The practical effect is fewer false whipsaws in ranging markets than raw RSI, but a faster snap to the boundary when a real push occurs.

@@ -1,5 +1,5 @@
 ---
-title: "Gaussian_Filter_Trend Review: Settings, Strategy & How to Use It"
+title: "Gaussian Filter Trend Review — Trend Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Macd_Standard Review: Settings, Strategy & How to Use It"
+title: "MACD Standard Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/sb60762j-MACD-Standard-Deviation-MisinkoMaster/"
 date: 2026-07-30
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Macd_Standard review by a trader who tested it. Settings, entry/exit logic, pros/cons, and who should use this classic trend indicator."
 grounding: "none (no source found)"
 ---
-# Macd_Standard Review
-
+# MACD Standard Review
 Let's get one thing straight: this is the MACD. You already know what it does. Macd_Standard on TradingView is the default MACD implementation—no frills, no hidden logic, no proprietary extras. It's the same classic tool, drawn fresh. Whether it earns a place on your chart depends entirely on how you use it.
 
 ## What It Actually Does

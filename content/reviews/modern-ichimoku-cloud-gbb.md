@@ -1,5 +1,5 @@
 ---
-title: "Modern_Ichimoku_Cloud_Gbb Review: Settings, Strategy & How to Use It"
+title: "Modern Ichimoku Cloud Gbb Review — Trend Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

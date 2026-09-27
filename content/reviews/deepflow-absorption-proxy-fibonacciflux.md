@@ -1,5 +1,5 @@
 ---
-title: "Deepflow_Absorption_Proxy_Fibonacciflux Review: Settings, Strategy & How to Use It"
+title: "Deepflow Absorption Proxy Fibonacciflux Review — Volume Indicator"
 date: 2026-08-28
 draft: false
 type: reviews

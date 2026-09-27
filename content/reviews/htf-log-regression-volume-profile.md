@@ -1,5 +1,5 @@
 ---
-title: "Htf_Log_Regression_Volume_Profile Review: Settings, Strategy & How to Use It"
+title: "HTF Log Regression Volume Profile Review — Volume Indicator"
 date: 2026-08-25
 draft: false
 type: reviews

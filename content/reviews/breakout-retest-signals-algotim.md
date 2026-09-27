@@ -1,5 +1,5 @@
 ---
-title: "Breakout_Retest_Signals_Algotim Review: Settings, Strategy & How to Use It"
+title: "Breakout Retest Signals Algotim Review — Trend Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

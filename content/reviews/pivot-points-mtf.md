@@ -1,5 +1,5 @@
 ---
-title: "Pivot_Points_Mtf Review: Settings, Strategy & How to Use It"
+title: "Pivot Points MTF Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/kxsmQSz2-Pivot-Points-MTF-ihancioglu/"
 date: 2026-07-30
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Multi-timeframe pivot points that don't repaint. Clean levels for trend trading. Tested on MACD chart. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Pivot_Points_Mtf Review
-
+# Pivot Points MTF Review
 Pivot point indicators tend to fall into two camps: repainting scripts whose levels shift after the fact, or static levels that lag badly enough that manual drawing would serve you just as well. Pivot_Points_Mtf aims at the space between those extremes. It isn't flashy and it doesn't claim to predict anything. The pitch is straightforward: clean, multi-timeframe pivot levels plotted on your current chart.
 
 Here's what it does, how it's meant to be used, and where it falls short.

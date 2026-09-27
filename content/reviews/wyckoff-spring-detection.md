@@ -1,5 +1,5 @@
 ---
-title: "Wyckoff_Spring_Detection Review: Settings, Strategy & How to Use It"
+title: "Wyckoff Spring Detection Review — Trend Indicator"
 date: 2026-09-01
 draft: false
 type: reviews

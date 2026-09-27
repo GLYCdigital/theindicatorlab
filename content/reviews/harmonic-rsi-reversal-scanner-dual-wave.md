@@ -1,5 +1,5 @@
 ---
-title: "Harmonic_Rsi_Reversal_Scanner_Dual_Wave Review: Settings, Strategy & How to Use It"
+title: "Harmonic RSI Reversal Scanner Dual Wave Review — Momentum Indicator"
 date: 2026-09-10
 draft: false
 type: reviews

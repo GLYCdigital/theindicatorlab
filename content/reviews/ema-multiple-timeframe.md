@@ -1,5 +1,5 @@
 ---
-title: "Ema_Multiple_Timeframe Review: Settings, Strategy & How to Use It"
+title: "EMA Multiple Timeframe Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/1iSxmAdg-EMA-Multiple-Timeframes-Archstro/"
 date: 2026-07-16
 draft: false

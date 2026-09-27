@@ -1,5 +1,5 @@
 ---
-title: "Tasc_2026_08_An_Ag_Selling_Model Review: Settings, Strategy & How to Use It"
+title: "Tasc 2026 08 An Ag Selling Model Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/VFzCk3HX-TASC-2026-08-An-Ag-Selling-Model-PineCodersTASC/"
 date: 2026-08-08
 draft: false

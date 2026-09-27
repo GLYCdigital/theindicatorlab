@@ -1,5 +1,5 @@
 ---
-title: "Order_Flow_Fvg Review: Settings, Strategy & How to Use It"
+title: "Order Flow FVG Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow-prokopchuksv21/"
 date: 2026-07-27
 draft: false

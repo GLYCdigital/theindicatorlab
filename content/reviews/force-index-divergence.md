@@ -1,5 +1,5 @@
 ---
-title: "Force_Index_Divergence Review: Settings, Strategy & How to Use It"
+title: "Force Index Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/9dtFGDnv-Force-Index-HPotter/"
 date: 2026-09-02
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Force_Index_Divergence review: how this trend indicator spots hidden momentum shifts, best settings, entry logic, and who should use it."
 grounding: "none (no source found)"
 ---
-# Force_Index_Divergence Review
-
+# Force Index Divergence Review
 Most divergence indicators on TradingView are repackaged RSI or MACD scripts with extra lines that mean nothing. Force_Index_Divergence isn't that. It's built on the Force Index — Alexander Elder's momentum oscillator that combines price direction, range, and volume into a single reading. The divergence detection here earns its keep.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Composite_Valuation_Standard_Score Review: Settings, Strategy & How to Use It"
+title: "Composite Valuation Standard Score Review — Trend Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Trix_Divergence Review: Settings, Strategy & How to Use It"
+title: "Trix Divergence Review — Momentum Indicator"
 date: 2026-08-28
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Trix_Divergence review: honest testing of this trend indicator. Settings, divergence signals, pros/cons, and who should actually use it."
 grounding: "none (no source found)"
 ---
-# Trix_Divergence Indicator Review
-
+# Trix Divergence Review
 The name promises something specific — divergence signals on the TRIX oscillator — and that is what the indicator delivers. It is a focused tool: no excessive sub-panels, no extraneous features. What follows is a structural review of what it does, how its detection logic works, and where its limitations sit.
 
 ## What This Indicator Actually Does

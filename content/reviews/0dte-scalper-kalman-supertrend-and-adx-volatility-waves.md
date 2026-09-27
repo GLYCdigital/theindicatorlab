@@ -1,5 +1,5 @@
 ---
-title: "0Dte_Scalper_Kalman_Supertrend_And_Adx_Volatility_Waves Review: Settings, Strategy & How to Use It"
+title: "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review — Volatility Indicator"
 date: 2026-08-08
 draft: false
 type: reviews

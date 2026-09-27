@@ -1,5 +1,5 @@
 ---
-title: "Volume_Profile_Pro Review: Settings, Strategy & How to Use It"
+title: "Volume Profile Pro Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/r3VrWAO4-Volume-Profile-kv4coins/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Volume_Profile_Pro delivers institutional-grade volume profile ana
 grounding: "none (no source found)"
 ---
 # Volume Profile Pro Review
-
 Volume Profile Pro is not a magic bullet, but it's a clean implementation of volume profile on TradingView. Here's a breakdown of what it does and where it fits.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Elliott_Structure_Rc_Gabremoku Review: Settings, Strategy & How to Use It"
+title: "Elliott Structure Rc Gabremoku Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

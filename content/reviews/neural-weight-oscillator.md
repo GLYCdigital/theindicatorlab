@@ -1,5 +1,5 @@
 ---
-title: "Neural Weight Oscillator Review: Settings, Strategy & How to Use It"
+title: "Neural Weight Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/bfu1hmkS-Neural-Weight-Oscillator-Zeiierman/"
 date: 2026-07-16
 draft: false

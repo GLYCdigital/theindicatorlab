@@ -1,5 +1,5 @@
 ---
-title: "Smart_Money_Stop_Hunt_Detection Review: Settings, Strategy & How to Use It"
+title: "Smart Money Stop Hunt Detection Review — Volume Indicator"
 date: 2026-08-19
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest review of Smart_Money_Stop_Hunt_Detection: how it spots liquidity sweeps, best settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Smart_Money_Stop_Hunt_Detection Review
-
+# Smart Money Stop Hunt Detection Review
 Smart_Money_Stop_Hunt_Detection is a trend-based tool that attempts to flag moments when price aggressively sweeps through obvious liquidity zones—usually resting stops above highs or below lows—before reversing. The concept isn't new, but the execution here is cleaner than most.
 
 ## What It Actually Does

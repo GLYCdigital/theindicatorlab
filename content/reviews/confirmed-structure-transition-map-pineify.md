@@ -1,5 +1,5 @@
 ---
-title: "Confirmed_Structure_Transition_Map_Pineify Review: Settings, Strategy & How to Use It"
+title: "Confirmed Structure Transition Map Pineify Review — Market Structure Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

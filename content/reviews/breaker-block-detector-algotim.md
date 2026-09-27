@@ -1,5 +1,5 @@
 ---
-title: "Breaker_Block_Detector_Algotim Review: Settings, Strategy & How to Use It"
+title: "Breaker Block Detector Algotim Review — Market Structure Indicator"
 date: 2026-09-10
 draft: false
 type: reviews

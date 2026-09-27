@@ -1,5 +1,5 @@
 ---
-title: "Pine_Script_Utility_Library_1Cg Review: Settings, Strategy & How to Use It"
+title: "Pine Script Utility Library 1cg Review — Trend Indicator"
 date: 2026-09-10
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Pine_Script_Utility_Library_1Cg review: A trend tool that's more d
 tv_script_url: "https://www.tradingview.com/script/5zVjeGfI-Pine-Script-Utility-Library-1CG/"
 sources: ["https://www.tradingview.com/script/5zVjeGfI-Pine-Script-Utility-Library-1CG/"]
 ---
-# Pine_Script_Utility_Library_1Cg Review
-
+# Pine Script Utility Library 1cg Review
 Let's be clear up front: this isn't a trend indicator. Despite the way it may be listed, Pine_Script_Utility_Library_1Cg is a utility library for Pine Script v6. It won't paint arrows or flash alerts on its own, and adding it to a chart produces no display. What it does is bundle a set of everyday helper functions that script authors otherwise rebuild from scratch — timezone handling, price conversions, drawing maintenance, and session tracking — into one reusable toolbox.
 
 That distinction matters for how you evaluate it. This is a building block, not a finished product.

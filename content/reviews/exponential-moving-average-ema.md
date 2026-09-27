@@ -1,5 +1,5 @@
 ---
-title: "Exponential_Moving_Average_Ema Review: Settings, Strategy & How to Use It"
+title: "Exponential Moving Average EMA Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Mello Review: Settings, Strategy & How to Use It"
+title: "Mello Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/aWhvlCxN-MELLO-XT-mellotradeX/"
 date: 2026-07-16
 draft: false

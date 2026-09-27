@@ -1,5 +1,5 @@
 ---
-title: "Portfolio_Performance_Tracker Review: Settings, Strategy & How to Use It"
+title: "Portfolio Performance Tracker Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/umloMtiA-Portfolio-Performance-QuantNomad/"
 date: 2026-07-16
 draft: false

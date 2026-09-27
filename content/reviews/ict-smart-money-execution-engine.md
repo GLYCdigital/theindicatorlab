@@ -1,5 +1,5 @@
 ---
-title: "Ict_Smart_Money_Execution_Engine Review: Settings, Strategy & How to Use It"
+title: "ICT Smart Money Execution Engine Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/w1u4mq8m-ICT-Smart-Money-Execution-Engine-PRO-Dark-Ace-Master/"
 date: 2026-08-11
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of the ICT Smart Money Execution Engine: settings, entry logic, pros/cons, and who should actually use this trend indicator."
 grounding: "none (no source found)"
 ---
-# Ict_Smart_Money_Execution_Engine Review
-
+# ICT Smart Money Execution Engine Review
 Most "Smart Money" indicators are repackaged moving averages with a fresh coat of paint. The Ict_Smart_Money_Execution_Engine is a genuine attempt to codify the ICT (Inner Circle Trader) methodology into a single, usable panel, and for the most part it works.
 
 **What it does (the real thing, not the pitch)**

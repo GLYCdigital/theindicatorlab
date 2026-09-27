@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Zones Review: Settings, Strategy & How to Use It"
+title: "Liquidity Zones Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/Ge5aiJoT-Liquidity-Zones-MarketStructureLab/"
 date: 2026-07-23
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Liquidity_Zones review: how it marks key support/resistance areas, optimal settings, and proven entry/exit strategies. 4/5 rating."
 grounding: "none (no source found)"
 ---
-# Liquidity_Zones Review
-
+# Liquidity Zones Review
 Most "liquidity" indicators on TradingView are repackaged volume-weighted moving averages with a fancy name. Liquidity_Zones takes a different approach — it marks price levels where liquidity clusters, based on where the market has previously reversed or consolidated with high volume. Here's a breakdown of what it does and where it fits.
 
 ## What This Indicator Actually Does

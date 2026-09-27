@@ -1,5 +1,5 @@
 ---
-title: "Ergodic_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Ergodic Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/LSZh2CCW-Ergodic-Oscillator-everget/"
 date: 2026-07-16
 draft: false

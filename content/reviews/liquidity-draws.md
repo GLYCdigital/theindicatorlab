@@ -1,5 +1,5 @@
 ---
-title: "Liquidity_Draws Review: Settings, Strategy & How to Use It"
+title: "Liquidity Draws Review — Market Structure Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

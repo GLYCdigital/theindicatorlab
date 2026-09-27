@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Envelopes Review: Settings, Strategy & How to Use It"
+title: "Adaptive Envelopes Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Adaptive_Envelopes dynamically adjusts volatility bands. Tested for trend and mean reversion. Settings, pros/cons, and a better alternative inside."
 grounding: "none (no source found)"
 ---
-# Adaptive_Envelopes Review
-
+# Adaptive Envelopes Review
 Most envelope indicators are just moving averages with static percentage bands, and they break when volatility changes. **Adaptive_Envelopes** attempts to address this by making its bands adjust to market conditions rather than staying fixed. The concept is sound; whether the implementation holds up depends on how you configure and use it.
 
 ---

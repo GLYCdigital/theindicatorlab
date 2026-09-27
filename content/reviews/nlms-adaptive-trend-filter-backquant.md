@@ -1,5 +1,5 @@
 ---
-title: "Nlms_Adaptive_Trend_Filter_Backquant Review: Settings, Strategy & How to Use It"
+title: "Nlms Adaptive Trend Filter Backquant Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/C92phkXx-NLMS-Adaptive-Trend-Filter-BackQuant/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Adaptive trend filter using NLMS algorithm with backquant smoothing. Good for choppy markets but has a learning curve. Tested on BTC, ES, and FX."
 grounding: "none (no source found)"
 ---
-# Nlms_Adaptive_Trend_Filter_Backquant Review
-
+# Nlms Adaptive Trend Filter Backquant Review
 You've seen a dozen trend filters. Many repaint, lag heavily, or just look pretty. The **Nlms_Adaptive_Trend_Filter_Backquant** is built around a different idea: instead of a fixed period, it adapts its sensitivity to recent price action. Here's a straight assessment of what it does and where it fits.
 
 ---

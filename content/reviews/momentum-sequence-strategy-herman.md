@@ -1,5 +1,5 @@
 ---
-title: "Momentum_Sequence_Strategy_Herman Review: Settings, Strategy & How to Use It"
+title: "Momentum Sequence Strategy Herman Review — Momentum Indicator"
 date: 2026-09-09
 draft: false
 type: reviews

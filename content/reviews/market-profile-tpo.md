@@ -1,5 +1,5 @@
 ---
-title: "Market_Profile_Tpo Review: Settings, Strategy & How to Use It"
+title: "Market Profile TPO Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/y914yEGg-Market-Profile-LonesomeTheBlue/"
 date: 2026-08-08
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Market_Profile_Tpo review: settings, pros/cons, and how to trade TPO value areas. Tested on TradingView with real entry logic."
 grounding: "none (no source found)"
 ---
-# Market_Profile_Tpo Review
-
+# Market Profile TPO Review
 Most "Market Profile" indicators on TradingView are glorified histogram overlays that look pretty but tell you little that's actionable. *Market_Profile_Tpo* is different — but it's not perfect either.
 
 **What it does:** This indicator builds a Time Price Opportunity (TPO) profile — the same structure CME traders use — directly on your chart. It plots letters (A, B, C...) representing 30-minute price brackets, then calculates the **Value Area** (the range where ~70% of volume traded) and the **Point of Control** (the single price where the most time was spent). The visual output is a horizontal histogram on the right edge, with the value area shaded and the POC marked as a distinct line. It also draws the initial balance (first two hours of the session) as a box.

@@ -1,5 +1,5 @@
 ---
-title: "Fixed_Fractional_Position_Sizing Review: Settings, Strategy & How to Use It"
+title: "Fixed Fractional Position Sizing Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Fractal_Levels Review: Settings, Strategy & How to Use It"
+title: "Fractal Levels Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/3zbBUYsg-Fractal-Levels-RicardoSantos/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Fractal_Levels auto-draws key support/resistance from Bill Williams fractals. See settings, entry tactics, and honest pros/cons for scalpers and swing traders."
 grounding: "none (no source found)"
 ---
-# Fractal_Levels Review
-
+# Fractal Levels Review
 Fractal-based indicators on TradingView tend to fall into two camps: too noisy to be useful, or prone to repainting. Fractal_Levels takes the classic Bill Williams fractal concept and turns it into a support/resistance tool, with some design choices that address both problems.
 
 ## What This Indicator Actually Does

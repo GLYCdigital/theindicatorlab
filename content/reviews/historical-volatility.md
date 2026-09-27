@@ -1,5 +1,5 @@
 ---
-title: "Historical_Volatility Review: Settings, Strategy & How to Use It"
+title: "Historical Volatility Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/BDE27CuM-Historical-Volatility-HPotter/"
 date: 2026-07-16
 draft: false

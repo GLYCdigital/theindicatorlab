@@ -1,5 +1,5 @@
 ---
-title: "Crt_Range_Indicator_Dynamic_Period_Grid Review: Settings, Strategy & How to Use It"
+title: "Crt Range Indicator Dynamic Period Grid Review — Trend Indicator"
 date: 2026-08-16
 draft: false
 type: reviews

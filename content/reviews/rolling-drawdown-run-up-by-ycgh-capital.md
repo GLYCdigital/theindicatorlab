@@ -1,5 +1,5 @@
 ---
-title: "Rolling_Drawdown_Run_Up_By_Ycgh_Capital Review: Settings, Strategy & How to Use It"
+title: "Rolling Drawdown Run Up By Ycgh Capital Review — Trend Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

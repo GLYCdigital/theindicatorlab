@@ -1,5 +1,5 @@
 ---
-title: "Heiken Ashi Review: Settings, Strategy & How to Use It"
+title: "Heiken Ashi Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/2wybQ0vo-Heikin-Ashi-VerticalTraders-io-Vertical-X/"
 date: 2026-07-16
 draft: false

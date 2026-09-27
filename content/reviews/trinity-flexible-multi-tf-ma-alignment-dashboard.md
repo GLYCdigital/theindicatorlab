@@ -1,5 +1,5 @@
 ---
-title: "Trinity_Flexible_Multi_Tf_Ma_Alignment_Dashboard Review: Settings, Strategy & How to Use It"
+title: "Trinity Flexible Multi Tf Ma Alignment Dashboard Review — Trend Indicator"
 date: 2026-07-29
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "TradingView multi-timeframe MA alignment dashboard. Honest review of settings, strategy, pros/cons. 4/5 stars. Tested on MACD chart."
 grounding: "none (no source found)"
 ---
-# Trinity_Flexible_Multi_Tf_Ma_Alignment_Dashboard Review
-
+# Trinity Flexible Multi Tf Ma Alignment Dashboard Review
 Multi-timeframe moving average alignment tools tend to fall into two camps: too rigid (locked into one MA type) or too noisy (flagging every crossover on every timeframe). The Trinity_Flexible_Multi_Tf_Ma_Alignment_Dashboard aims for the middle ground. It's a dashboard that lets you assign up to three moving averages across multiple timeframes, then color-codes whether price sits above or below each MA. The result is a compact table that answers one question: are the timeframes actually aligned?
 
 **Key Features That Matter**

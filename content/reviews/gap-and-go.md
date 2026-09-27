@@ -1,5 +1,5 @@
 ---
-title: "Gap_And_Go Review: Settings, Strategy & How to Use It"
+title: "Gap And Go Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Gap_And_Go catches pre-market momentum gaps and rides the first 30-min trend. Works best on 1-5 min charts. Not for overnight holds."
 grounding: "none (no source found)"
 ---
-# Gap_And_Go Review
-
+# Gap And Go Review
 **Gap_And_Go** is a gap-detection indicator that flags the gap from the prior close to the current open and then waits for a confirmation candle to signal direction. It's not a prediction tool — it reacts to what has already happened. The core concept is straightforward, and the value proposition is mostly about saving time and cleaning up the visual process.
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Andrews Pitchfork Review: Settings, Strategy & How to Use It"
+title: "Andrews Pitchfork Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -19,7 +19,6 @@ description: "Honest Andrews Pitchfork review: how to set it up, trade with it, 
 grounding: "none (no source found)"
 ---
 # Andrews Pitchfork Review
-
 Andrews Pitchfork is one of the older tools in the technical analysis toolbox, and it gets overlooked by traders who prefer oscillators and signal-based indicators. But it has survived for decades for a reason: when the structure lines up, it frames price action cleanly. Here's a straightforward look at what it does and where it fits.
 
 ## What This Indicator Actually Does

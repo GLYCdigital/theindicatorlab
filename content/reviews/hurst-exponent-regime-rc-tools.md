@@ -1,5 +1,5 @@
 ---
-title: "Hurst_Exponent_Regime_Rc_Tools Review: Settings, Strategy & How to Use It"
+title: "Hurst Exponent Regime Rc Tools Review — Trend Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

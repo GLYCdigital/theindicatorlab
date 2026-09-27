@@ -1,5 +1,5 @@
 ---
-title: "Entry_Terminal Review: Settings, Strategy & How to Use It"
+title: "Entry Terminal Review — Trend Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

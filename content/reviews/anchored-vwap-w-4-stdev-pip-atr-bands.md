@@ -1,5 +1,5 @@
 ---
-title: "Anchored_Vwap_W_4_Stdev_Pip_Atr_Bands Review: Settings, Strategy & How to Use It"
+title: "Anchored VWAP W 4 Stdev Pip ATR Bands Review — Volume Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

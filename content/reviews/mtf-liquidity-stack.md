@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Liquidity_Stack Review: Settings, Strategy & How to Use It"
+title: "MTF Liquidity Stack Review — Market Structure Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

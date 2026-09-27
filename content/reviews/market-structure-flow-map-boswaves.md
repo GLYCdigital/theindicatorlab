@@ -1,5 +1,5 @@
 ---
-title: "Market_Structure_Flow_Map_Boswaves Review: Settings, Strategy & How to Use It"
+title: "Market Structure Flow Map Boswaves Review — Market Structure Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

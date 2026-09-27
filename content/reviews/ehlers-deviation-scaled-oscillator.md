@@ -1,5 +1,5 @@
 ---
-title: "Ehlers_Deviation_Scaled_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Ehlers Deviation Scaled Oscillator Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

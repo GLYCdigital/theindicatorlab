@@ -1,5 +1,5 @@
 ---
-title: "Elliott_Wave_Structure Review: Settings, Strategy & How to Use It"
+title: "Elliott Wave Structure Review — Market Structure Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Trend_Predictor_Ribbon_Clone_Roj_Karo_Moj_Karo Review: Settings, Strategy & How to Use It"
+title: "Trend Predictor Ribbon Clone Roj Karo Moj Karo Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

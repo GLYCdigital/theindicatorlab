@@ -1,5 +1,5 @@
 ---
-title: "Tension Flow Trend Review: Settings, Strategy & How to Use It"
+title: "Tension Flow Trend Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/Fgcv55DC-Tension-Flow-Trend-BigBeluga-Historical-RR-BigBeluga/"
 date: 2026-07-16
 draft: false

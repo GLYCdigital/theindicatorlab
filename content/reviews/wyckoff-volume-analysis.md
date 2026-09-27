@@ -1,5 +1,5 @@
 ---
-title: "Wyckoff_Volume_Analysis Review: Settings, Strategy & How to Use It"
+title: "Wyckoff Volume Analysis Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/7i7tk9F5-Wyckoff-Volume-VolumeDayTrader/"
 date: 2026-07-19
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Wyckoff_Volume_Analysis review: tests volume-based Wyckoff signals, best settings, entry rules, and whether it beats pure price action."
 grounding: "none (no source found)"
 ---
-# Wyckoff_Volume_Analysis Review
-
+# Wyckoff Volume Analysis Review
 **Wyckoff_Volume_Analysis** is a trend-following indicator that applies Wyckoff's accumulation/distribution theory directly to volume bars. It's not a rehash of VSA (Volume Spread Analysis) — it's a cleaner, more rigid implementation of the classic Wyckoff phases. Here's what it gives you.
 
 ## What This Indicator Does

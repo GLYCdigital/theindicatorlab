@@ -1,5 +1,5 @@
 ---
-title: "Loss_Recovery_Calculator Review: Settings, Strategy & How to Use It"
+title: "Loss Recovery Calculator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

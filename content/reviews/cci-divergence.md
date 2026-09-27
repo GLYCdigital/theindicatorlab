@@ -1,5 +1,5 @@
 ---
-title: "Cci_Divergence Review: Settings, Strategy & How to Use It"
+title: "CCI Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/TACKJpyu-CCI-plumany/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest CCI Divergence indicator review. See how this tool spots hidden and regular divergences, best settings for 1H–4H, and how to trade it without false signals."
 grounding: "none (no source found)"
 ---
-# Cci_Divergence Indicator Review
-
+# CCI Divergence Review
 Divergence detectors are a crowded category, and most of them amount to little more than an arrow printed on a chart. The **Cci_Divergence** indicator for TradingView is a leaner proposition: it plots divergence lines between CCI extremes and price extremes rather than cluttering the screen with signals.
 
 ### What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Equalhigh_Fair_Value_Upside Review: Settings, Strategy & How to Use It"
+title: "Equalhigh Fair Value Upside Review — Trend Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

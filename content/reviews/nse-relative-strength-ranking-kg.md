@@ -1,5 +1,5 @@
 ---
-title: "Nse_Relative_Strength_Ranking_Kg Review: Settings, Strategy & How to Use It"
+title: "Nse Relative Strength Ranking Kg Review — Trend Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

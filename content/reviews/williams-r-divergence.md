@@ -1,5 +1,5 @@
 ---
-title: "Williams_R_Divergence Review: Settings, Strategy & How to Use It"
+title: "Williams R Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/Jo1NjRPF-Williams-R-violetmoon/"
 date: 2026-08-26
 draft: false

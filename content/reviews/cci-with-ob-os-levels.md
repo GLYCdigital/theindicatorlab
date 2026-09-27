@@ -1,5 +1,5 @@
 ---
-title: "Cci_With_Ob_Os_Levels Review: Settings, Strategy & How to Use It"
+title: "CCI With Ob Os Levels Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

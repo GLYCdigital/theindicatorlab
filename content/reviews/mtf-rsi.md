@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Rsi Review: Settings, Strategy & How to Use It"
+title: "MTF RSI Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/cy4hzE51-MTF-RSI-lonelygrass/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Mtf_Rsi review: multi-timeframe RSI for trend confirmation. Tested settings, entry rules, pros/cons, and better alternatives. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Mtf_Rsi Review
-
+# MTF RSI Review
 Multi-timeframe RSI indicators tend to fall into two camps: overpriced, or prone to repainting. **Mtf_Rsi** avoids both. It's a straightforward tool that pulls RSI from a higher timeframe and plots it directly on your current chart.
 
 ## What This Indicator Actually Does

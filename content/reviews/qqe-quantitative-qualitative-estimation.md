@@ -1,5 +1,5 @@
 ---
-title: "Qqe_Quantitative_Qualitative_Estimation Review: Settings, Strategy & How to Use It"
+title: "Qqe Quantitative Qualitative Estimation Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

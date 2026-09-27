@@ -1,5 +1,5 @@
 ---
-title: "Lr_Angle_Julzalgo Review: Settings, Strategy & How to Use It"
+title: "Lr Angle Julzalgo Review — Trend Indicator"
 date: 2026-09-26
 draft: false
 type: reviews

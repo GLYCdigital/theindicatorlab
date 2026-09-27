@@ -1,5 +1,5 @@
 ---
-title: "Nadaraya_Watson_Regression_Liquidity_Sweeps_Algoalpha Review: Settings, Strategy & How to Use It"
+title: "Nadaraya Watson Regression Liquidity Sweeps Algoalpha Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/IdfeKkUv-Nadaraya-Watson-Regression-Liquidity-Sweeps-AlgoAlpha/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Kitty s Law theUltimator5 Review: Settings, Strategy & How to Use It"
+title: "Kitty S Law Theultimator5 Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/EhbdwurQ-Kitty-039-s-Law-theUltimator5/"
 date: 2026-07-16
 draft: false

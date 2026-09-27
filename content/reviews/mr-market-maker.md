@@ -1,5 +1,5 @@
 ---
-title: "Mr_Market_Maker Review: Settings, Strategy & How to Use It"
+title: "Mr Market Maker Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/gPHaIxWa-Mr-Market-Maker-erdensedat/"
 date: 2026-07-16
 draft: false

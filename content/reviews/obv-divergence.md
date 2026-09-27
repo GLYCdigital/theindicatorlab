@@ -1,5 +1,5 @@
 ---
-title: "Obv_Divergence Review: Settings, Strategy & How to Use It"
+title: "OBV Divergence Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/W145MYvr-OBV-Divergence-Lij-MC/"
 date: 2026-09-02
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Hands-on Obv_Divergence review: settings, entry logic, and honest pros/cons. See if this divergence detector fits your trend trading style."
 grounding: "none (no source found)"
 ---
-# Obv_Divergence Review
-
+# OBV Divergence Review
 Most divergence indicators are repackaged MACD crossovers with extra lines. Obv_Divergence is different—it does what its name promises, and it does it cleanly.
 
 **What It Actually Does**

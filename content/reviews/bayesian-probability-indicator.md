@@ -1,5 +1,5 @@
 ---
-title: "Bayesian_Probability_Indicator Review: Settings, Strategy & How to Use It"
+title: "Bayesian Probability Indicator Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

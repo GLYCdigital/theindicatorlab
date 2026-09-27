@@ -1,5 +1,5 @@
 ---
-title: "Monthly_High_Low Review: Settings, Strategy & How to Use It"
+title: "Monthly High Low Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Q1L4QN68-Monthly-High-Low-Marks-everget/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Accelerator_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Accelerator Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/ZFdelW44-Accelerator-Oscillator-everget/"
 date: 2026-07-16
 draft: false

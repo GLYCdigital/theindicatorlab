@@ -1,5 +1,5 @@
 ---
-title: "Tasc_2026_09_Adaptive_Supersmoother Review: Settings, Strategy & How to Use It"
+title: "Tasc 2026 09 Adaptive Supersmoother Review — Trend Indicator"
 date: 2026-08-31
 draft: false
 type: reviews

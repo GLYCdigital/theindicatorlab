@@ -1,5 +1,5 @@
 ---
-title: "Sma_Cross Review: Settings, Strategy & How to Use It"
+title: "SMA Cross Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/zFZfjjAD-SMA-Cross-SIlentSingh/"
 date: 2026-07-16
 draft: false

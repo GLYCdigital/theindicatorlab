@@ -1,5 +1,5 @@
 ---
-title: "Macd_Divergence_Detector Review: Settings, Strategy & How to Use It"
+title: "MACD Divergence Detector Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/TR2c3Jw5-MACD-Divergence-Lij-MC/"
 date: 2026-09-06
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Tested Macd_Divergence_Detector on TradingView. Honest review of settings, divergence signals, pros/cons, and who should actually use it."
 grounding: "none (no source found)"
 ---
-# Macd_Divergence_Detector Review
-
+# MACD Divergence Detector Review
 Macd_Divergence_Detector does what its name promises: it scans the MACD histogram and line for regular and hidden divergences against price, then plots them directly on the chart. No machine learning, no proprietary black-box math — just visual divergence detection built on an indicator most traders already understand.
 
 ## What Sets It Apart

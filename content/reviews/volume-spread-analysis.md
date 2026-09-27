@@ -1,5 +1,5 @@
 ---
-title: "Volume_Spread_Analysis Review: Settings, Strategy & How to Use It"
+title: "Volume Spread Analysis Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/uPXAQIp1-Volume-Spread-analysis-HariprasathGopal/"
 date: 2026-08-17
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Volume_Spread_Analysis review: tested settings, entry/exit logic, pros & cons. See if this VSA tool fits your trend trading style."
 grounding: "none (no source found)"
 ---
-# Volume_Spread_Analysis Review
-
+# Volume Spread Analysis Review
 The TradingView catalog is full of automated VSA tools that amount to little more than a green dot on a high-volume candle. Volume_Spread_Analysis is not one of them. It approaches the problem the way a Wyckoff practitioner would, and that distinction matters.
 
 ## What the indicator actually does

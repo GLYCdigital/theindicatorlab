@@ -1,5 +1,5 @@
 ---
-title: "Prop_Firm_Artillery Review: Settings, Strategy & How to Use It"
+title: "Prop Firm Artillery Review — Trend Indicator"
 date: 2026-08-17
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Standard Deviation Channels Review: Settings, Strategy & How to Use It"
+title: "Standard Deviation Channels Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Mvyufvyg-StandardDevChannel-SUNNY29081975/"
 date: 2026-07-16
 draft: false

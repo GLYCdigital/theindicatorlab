@@ -1,5 +1,5 @@
 ---
-title: "Volume_Delta_Footprint_Map Review: Settings, Strategy & How to Use It"
+title: "Volume Delta Footprint Map Review — Volume Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

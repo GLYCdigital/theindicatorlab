@@ -1,5 +1,5 @@
 ---
-title: "Moving Average Exp Envelope Review: Settings, Strategy & How to Use It"
+title: "Moving Average Exp Envelope Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

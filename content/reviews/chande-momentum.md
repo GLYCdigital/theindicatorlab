@@ -1,5 +1,5 @@
 ---
-title: "Chande Momentum Review: Settings, Strategy & How to Use It"
+title: "Chande Momentum Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/MNBZqC72-Chande-Momentum-Oscillator-CMO-Buy-Sell-Strategy-TradeDots/"
 date: 2026-07-16
 draft: false

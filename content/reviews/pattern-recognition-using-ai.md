@@ -1,5 +1,5 @@
 ---
-title: "Pattern_Recognition_Using_Ai Review: Settings, Strategy & How to Use It"
+title: "Pattern Recognition Using AI Review — Chart Pattern Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

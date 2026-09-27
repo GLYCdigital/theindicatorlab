@@ -1,5 +1,5 @@
 ---
-title: "Green_Red_Sweep_Candle Review: Settings, Strategy & How to Use It"
+title: "Green Red Sweep Candle Review — Market Structure Indicator"
 date: 2026-08-31
 draft: false
 type: reviews

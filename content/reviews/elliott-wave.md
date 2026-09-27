@@ -1,5 +1,5 @@
 ---
-title: "Elliott_Wave Review: Settings, Strategy & How to Use It"
+title: "Elliott Wave Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/gMpxcJkW-Elliott-Wave-rules-based-compile-safe-STEELCITYCREATORS/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Elliott_Wave indicator review: automatic wave labeling, Fibonacci targets, and how to trade with it. Pros, cons, and better alternatives."
 grounding: "none (no source found)"
 ---
-# Elliott_Wave Indicator Review
-
+# Elliott Wave Review
 Manually labeling Elliott Waves is a known pain point: the process is subjective, slow, and often produces a tangle of lines that don't match your read of the market. The **Elliott_Wave** indicator attempts to automate that labeling directly on the chart.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Liquidation_Levels Review: Settings, Strategy & How to Use It"
+title: "Liquidation Levels Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/jL6TUXvo-Liquidation-Levels-LeviathanCapital/"
 date: 2026-07-16
 draft: false

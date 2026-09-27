@@ -1,5 +1,5 @@
 ---
-title: "Obv_Ma Review: Settings, Strategy & How to Use It"
+title: "OBV Ma Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/tMkZ9PvU-OBV-MA-Cocotrader67/"
 date: 2026-08-21
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Obv_Ma review: a simple volume-confirmed trend filter that combines OBV with moving averages. Tested settings, entry logic, pros, cons, and alternatives."
 grounding: "none (no source found)"
 ---
-# Obv_Ma Review
-
+# OBV Ma Review
 Most volume indicators generate a lot of noise. They flash signals that look clean on a historical chart but become ambiguous in live conditions. The Obv_Ma isn't revolutionary, but it addresses a real problem: making On-Balance Volume usable as a trend filter without overcomplicating the chart.
 
 ## What Obv_Ma Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Macd_Zero_Lag Review: Settings, Strategy & How to Use It"
+title: "MACD Zero Lag Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/GcbLcwG7-MACD-0-Lag-yassotreyo/"
 date: 2026-08-06
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Macd_Zero_Lag review: a smoothed MACD variant that cuts lag. Tested settings, entry signals, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Macd_Zero_Lag Review
-
+# MACD Zero Lag Review
 The standard MACD is a lagging indicator, and that is well understood. The Macd_Zero_Lag attempts to address this by applying a smoothing technique intended to reduce the delay between price action and the signal line. Whether it fully succeeds is debatable, but the attempt is the reason it stands apart from a plain MACD.
 
 ## What This Indicator Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Smc_Institutional_Clean_Wave_Structure Review: Settings, Strategy & How to Use It"
+title: "SMC Institutional Clean Wave Structure Review — Market Structure Indicator"
 date: 2026-08-18
 draft: false
 type: reviews

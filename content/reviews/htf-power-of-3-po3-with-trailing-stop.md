@@ -1,5 +1,5 @@
 ---
-title: "Htf_Power_Of_3_Po3_With_Trailing_Stop Review: Settings, Strategy & How to Use It"
+title: "HTF Power Of 3 PO3 With Trailing Stop Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/w9HSYhzg-HTF-Power-of-3-PO3-with-Trailing-Stop-BigBeluga/"
 date: 2026-08-03
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of HTF Power of 3 PO3 with Trailing Stop — settings, strategy, pros/cons, and whether it fits your intraday trading style."
 grounding: "none (no source found)"
 ---
-# HTF Power of 3 (PO3) With Trailing Stop — Review
-
+# HTF Power Of 3 PO3 With Trailing Stop Review
 "Power of 3" is ICT (Inner Circle Trader) jargon for the three phases of an institutional trading day: accumulation, manipulation, and distribution. This indicator takes that concept, applies it to a higher timeframe (HTF), and layers a trailing stop on top. It's a trend-following tool with a bias-generation engine — not a magic signal box.
 
 **What it actually does**

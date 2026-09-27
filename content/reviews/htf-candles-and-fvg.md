@@ -1,5 +1,5 @@
 ---
-title: "Htf_Candles_And_Fvg Review: Settings, Strategy & How to Use It"
+title: "HTF Candles And FVG Review — Market Structure Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

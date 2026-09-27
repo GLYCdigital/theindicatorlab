@@ -1,5 +1,5 @@
 ---
-title: "Relative Strength Index Rsi Review: Settings, Strategy & How to Use It"
+title: "Relative Strength Index RSI Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/b8oS0gtH-Relative-Strength-Index-RSI-sandeepgoyal194/"
 date: 2026-07-16
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Gm_Institutional_Levels Review: Settings, Strategy & How to Use It"
+title: "Gm Institutional Levels Review — Trend Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

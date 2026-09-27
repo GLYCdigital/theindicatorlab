@@ -1,5 +1,5 @@
 ---
-title: "Multi_Timeframe_Trend_Strength Review: Settings, Strategy & How to Use It"
+title: "Multi Timeframe Trend Strength Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/USQyysE8-Multi-TimeFrame-Trend-Strength-Hampeh/"
 date: 2026-07-16
 draft: false

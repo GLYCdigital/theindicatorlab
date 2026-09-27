@@ -1,5 +1,5 @@
 ---
-title: "Guppy_Multiple_Moving_Average_Gmma Review: Settings, Strategy & How to Use It"
+title: "Guppy Multiple Moving Average Gmma Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/IucqmN3a-Guppy-Multiple-Moving-Average-GMMA-thrilledFalcon14/"
 date: 2026-07-16
 draft: false

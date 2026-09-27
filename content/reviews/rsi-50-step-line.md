@@ -1,5 +1,5 @@
 ---
-title: "Rsi_50_Step_Line Review: Settings, Strategy & How to Use It"
+title: "RSI 50 Step Line Review — Momentum Indicator"
 date: 2026-08-30
 draft: false
 type: reviews

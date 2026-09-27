@@ -1,5 +1,5 @@
 ---
-title: "Sessions_Opening_Levels_And_Day_Separators Review: Settings, Strategy & How to Use It"
+title: "Sessions Opening Levels And Day Separators Review — Trend Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Ehlers_Adaptive_Stochastic Review: Settings, Strategy & How to Use It"
+title: "Ehlers Adaptive Stochastic Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/NhB1HRnP-Ehlers-Adaptive-Stochastic-Indicator-V1-CC-cheatcountry/"
 date: 2026-07-16
 draft: false
@@ -20,7 +20,6 @@ description: "Ehlers Adaptive Stochastic review: adaptive stochastic oscillator 
 grounding: "none (no source found)"
 ---
 # Ehlers Adaptive Stochastic Review
-
 The standard stochastic oscillator is a well-known lagging tool in choppy markets. John Ehlers' Adaptive Stochastic attempts to address that by dynamically adjusting its lookback period based on market cycles. Here's a breakdown of what it does and who it's for.
 
 ## What This Indicator Actually Does

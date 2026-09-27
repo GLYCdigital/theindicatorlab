@@ -1,5 +1,5 @@
 ---
-title: "Smart_Market_Structure_Johnson Review: Settings, Strategy & How to Use It"
+title: "Smart Market Structure Johnson Review — Market Structure Indicator"
 date: 2026-08-10
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Smart_Market_Structure_Johnson review: tested settings, entry logic, pros/cons. A solid 4-star trend indicator for swing traders."
 grounding: "none (no source found)"
 ---
-# Smart_Market_Structure_Johnson Review
-
+# Smart Market Structure Johnson Review
 Smart_Market_Structure_Johnson is a market structure mapping tool. It identifies swing highs and swing lows and connects them into a trend narrative. It is not a signal generator and not a forecasting tool — it is a structure visualizer.
 
 The indicator is price-action driven. It does not depend on oscillators or other lagging studies, which keeps its output focused on where price has actually turned rather than on secondary confirmation.

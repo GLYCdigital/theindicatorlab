@@ -1,5 +1,5 @@
 ---
-title: "Elliott_Wave_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Elliott Wave Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/VNJP71tP-Elliott-Wave-Oscillator-koryu/"
 date: 2026-07-16
 draft: false

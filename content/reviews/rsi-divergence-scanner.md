@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Divergence_Scanner Review: Settings, Strategy & How to Use It"
+title: "RSI Divergence Scanner Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/6DYxwhtZ-RSI-Divergence-Scanner-zdmre/"
 date: 2026-08-06
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Rsi_Divergence_Scanner review: tested settings, entry/exit logic, pros/cons, and whether this free divergence scanner is worth adding to your TradingView toolkit."
 grounding: "none (no source found)"
 ---
-# Rsi_Divergence_Scanner Review
-
+# RSI Divergence Scanner Review
 Most divergence scanners sit at one of two extremes: too noisy to read, or too conservative to be useful. The Rsi_Divergence_Scanner lands somewhere in the middle. It isn't perfect, but it does what it promises without burying the chart in false alerts.
 
 **What It Actually Does**

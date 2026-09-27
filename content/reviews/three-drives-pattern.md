@@ -1,5 +1,5 @@
 ---
-title: "Three_Drives_Pattern Review: Settings, Strategy & How to Use It"
+title: "Three Drives Pattern Review — Chart Pattern Indicator"
 date: 2026-08-19
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Three_Drives_Pattern review: How to spot the 3-drive harmonic setup, best settings, entry/exit rules, pros and cons for trend traders."
 grounding: "none (no source found)"
 ---
-# Three Drives Pattern Indicator Review
-
+# Three Drives Pattern Review
 The Three Drives pattern is a harmonic reversal formation — a cousin to the ABCD pattern, but built from three impulse legs (drives) separated by two corrective pulls. The premise is that after the third drive completes, price reverses. This indicator scans for those setups automatically, plots the drives as trend lines, and marks potential reversal zones.
 
 Its main pitch is that it removes the manual legwork. There's no need to measure Fibonacci ratios on every swing — the indicator identifies the structure and draws it directly on the chart, complete with labeled points and a projection zone for where the third drive might exhaust.

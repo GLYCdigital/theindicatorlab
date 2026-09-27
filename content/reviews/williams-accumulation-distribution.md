@@ -1,5 +1,5 @@
 ---
-title: "Williams_Accumulation Distribution Review: Settings, Strategy & How to Use It"
+title: "Williams Accumulation Distribution Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/1tZnztAB-Williams-Accumulation-Distribution-FractalTrade/"
 date: 2026-08-28
 draft: false
@@ -20,7 +20,6 @@ description: "Honest Williams Accumulation Distribution review: settings, diverg
 grounding: "none (no source found)"
 ---
 # Williams Accumulation Distribution Review
-
 The Williams Accumulation Distribution (WAD) doesn't get the attention that RSI or MACD get, but it has been sitting in the "Volume" section of TradingView's catalog for years. Here's a walkthrough of what it does and where it fits.
 
 **What It Does (The Real Version)**

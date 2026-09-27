@@ -1,5 +1,5 @@
 ---
-title: "Rainbow_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Rainbow Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/vWEFMXGf-Rainbow-Oscillator-businessduck/"
 date: 2026-07-16
 draft: false

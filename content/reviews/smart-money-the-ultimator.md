@@ -1,5 +1,5 @@
 ---
-title: "Smart_Money_The_Ultimator Review: Settings, Strategy & How to Use It"
+title: "Smart Money The Ultimator Review — Volume Indicator"
 date: 2026-09-26
 draft: false
 type: reviews

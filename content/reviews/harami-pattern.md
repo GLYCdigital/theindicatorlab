@@ -1,5 +1,5 @@
 ---
-title: "Harami_Pattern Review: Settings, Strategy & How to Use It"
+title: "Harami Pattern Review — Chart Pattern Indicator"
 tv_script_url: "https://www.tradingview.com/script/gsa6FBYE-Harami-Pattern-Detector-SSFX-SimplySafeFx/"
 date: 2026-07-16
 draft: false

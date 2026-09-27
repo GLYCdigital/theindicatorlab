@@ -1,5 +1,5 @@
 ---
-title: "Footprint_Delta_Auction_Map_Bullbyte Review: Settings, Strategy & How to Use It"
+title: "Footprint Delta Auction Map Bullbyte Review — Volume Indicator"
 date: 2026-08-30
 draft: false
 type: reviews

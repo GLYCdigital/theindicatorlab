@@ -1,5 +1,5 @@
 ---
-title: "Volume_Liquidity_Trend Review: Settings, Strategy & How to Use It"
+title: "Volume Liquidity Trend Review — Market Structure Indicator"
 date: 2026-08-16
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Volume_Liquidity_Trend review: How this volume-weighted trend filt
 tv_script_url: "https://www.tradingview.com/script/1y4j6KFj-Volume-Liquidity-Trend-ChartPrime/"
 sources: ["https://www.tradingview.com/script/1y4j6KFj-Volume-Liquidity-Trend-ChartPrime/"]
 ---
-# Volume Liquidity Trend [ChartPrime] Review
-
+# Volume Liquidity Trend Review
 Most volume-based trend indicators on TradingView are repackaged moving averages with a histogram slapped on. Volume Liquidity Trend [ChartPrime] approaches the problem differently: it attempts to measure whether volume is *confirming* a trend rather than simply coloring bars green or red, and it does so by isolating volume nodes to the lifetime of the current trend.
 
 ## What This Indicator Actually Does

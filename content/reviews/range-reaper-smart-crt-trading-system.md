@@ -1,5 +1,5 @@
 ---
-title: "Range_Reaper_Smart_Crt_Trading_System Review: Settings, Strategy & How to Use It"
+title: "Range Reaper Smart Crt Trading System Review — Trend Indicator"
 date: 2026-07-19
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest review of Range_Reaper_Smart_Crt_Trading_System: a trend-based indicator that combines range detection and CRT logic. Settings, pros/cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Range_Reaper_Smart_Crt_Trading_System Review
-
+# Range Reaper Smart Crt Trading System Review
 The name reads like someone spilled alphabet soup on a keyboard, but underneath it is a trend indicator with a specific goal: identify price ranges, then time entries when those ranges break, with a CRT (Candle Range Theory) filter layered on top.
 
 **What It Actually Does**

@@ -1,5 +1,5 @@
 ---
-title: "Order Blocks Review: Settings, Strategy & How to Use It"
+title: "Order Blocks Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/bLdpFVuq-Volumized-Order-Blocks-fluxchart/"
 date: 2026-07-16
 draft: false

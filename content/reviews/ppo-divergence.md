@@ -1,5 +1,5 @@
 ---
-title: "Ppo_Divergence Review: Settings, Strategy & How to Use It"
+title: "PPO Divergence Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/cwuXC9xQ-PPO-Divergence-Alerts-scarf/"
 date: 2026-09-09
 draft: false

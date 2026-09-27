@@ -1,5 +1,5 @@
 ---
-title: "Volume Flow Review: Settings, Strategy & How to Use It"
+title: "Volume Flow Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/TjovkFpE-Volume-Flow-openresty/"
 date: 2026-07-16
 draft: false

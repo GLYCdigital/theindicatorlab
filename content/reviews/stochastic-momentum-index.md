@@ -1,5 +1,5 @@
 ---
-title: "Stochastic_Momentum_Index Review: Settings, Strategy & How to Use It"
+title: "Stochastic Momentum Index Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/NULg8CIG-Stochastic-Momentum-Index-everget/"
 date: 2026-07-16
 draft: false

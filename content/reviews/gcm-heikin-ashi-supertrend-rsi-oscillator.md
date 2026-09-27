@@ -1,5 +1,5 @@
 ---
-title: "Gcm_Heikin_Ashi_Supertrend_Rsi_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Gcm Heikin Ashi Supertrend RSI Oscillator Review — Momentum Indicator"
 date: 2026-08-11
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Auto_Trend_Lines_Signals_Supertrend Review: Settings, Strategy & How to Use It"
+title: "Auto Trend Lines Signals Supertrend Review — Trend Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

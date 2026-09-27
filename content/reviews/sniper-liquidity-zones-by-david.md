@@ -1,5 +1,5 @@
 ---
-title: "Sniper_Liquidity_Zones_By_David Review: Settings, Strategy & How to Use It"
+title: "Sniper Liquidity Zones By David Review — Market Structure Indicator"
 date: 2026-08-13
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Sniper_Liquidity_Zones_By_David review: How to read liquidity zones, optimal settings, entry strategy, and honest pros/cons for trend traders."
 grounding: "none (no source found)"
 ---
-# Sniper_Liquidity_Zones_By_David Review
-
+# Sniper Liquidity Zones By David Review
 Liquidity indicators tend to overpromise. Many simply draw boxes around recent highs and lows and call it a day. Sniper_Liquidity_Zones_By_David aims higher than that, and in some respects it delivers — with caveats worth understanding before you commit screen time to it.
 
 **What This Indicator Actually Does**

@@ -1,5 +1,5 @@
 ---
-title: "Heat_Map_Multi_Asset Review: Settings, Strategy & How to Use It"
+title: "Heat Map Multi Asset Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

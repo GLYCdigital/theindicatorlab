@@ -1,5 +1,5 @@
 ---
-title: "Bollinger_Bands_Rsi_Combo Review: Settings, Strategy & How to Use It"
+title: "Bollinger Bands RSI Combo Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/wZoUMpQG-Bollinger-Bands-ZenMode/"
 date: 2026-07-16
 draft: false

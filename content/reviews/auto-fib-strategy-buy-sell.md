@@ -1,5 +1,5 @@
 ---
-title: "Auto_Fib_Strategy_Buy_Sell Review: Settings, Strategy & How to Use It"
+title: "Auto Fib Strategy Buy Sell Review — Trend Indicator"
 date: 2026-08-22
 draft: false
 type: reviews

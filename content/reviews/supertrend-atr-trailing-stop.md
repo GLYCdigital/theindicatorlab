@@ -1,5 +1,5 @@
 ---
-title: "Supertrend Atr Trailing Stop Review: Settings, Strategy & How to Use It"
+title: "Supertrend ATR Trailing Stop Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Volume_Rate_Of_Change Review: Settings, Strategy & How to Use It"
+title: "Volume Rate Of Change Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/N8EsCt8E-Volume-Rate-of-Change-warrior504th/"
 date: 2026-07-16
 draft: false

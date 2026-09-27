@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Moving_Average Review: Settings, Strategy & How to Use It"
+title: "MTF Moving Average Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/TYi41Ki8-Assassin-MTF-Moving-Average-secwang/"
 date: 2026-07-16
 draft: false

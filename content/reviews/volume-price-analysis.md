@@ -1,5 +1,5 @@
 ---
-title: "Volume Price Analysis Review: Settings, Strategy & How to Use It"
+title: "Volume Price Analysis Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/yOjHMrOS-VPA-VuTienTurtleTrader/"
 date: 2026-07-16
 draft: false

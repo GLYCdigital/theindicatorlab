@@ -1,5 +1,5 @@
 ---
-title: "Triangle_Pattern_Ascending_Descending_Symmetrical Review: Settings, Strategy & How to Use It"
+title: "Triangle Pattern Ascending Descending Symmetrical Review — Chart Pattern Indicator"
 date: 2026-08-28
 draft: false
 type: reviews

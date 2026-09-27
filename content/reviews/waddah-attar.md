@@ -1,5 +1,5 @@
 ---
-title: "Waddah Attar Review: Settings, Strategy & How to Use It"
+title: "Waddah Attar Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/d9IjcYyS-Waddah-Attar-Explosion-V2-SHK-shayankm/"
 date: 2026-07-16
 draft: false

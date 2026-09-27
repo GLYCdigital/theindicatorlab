@@ -1,5 +1,5 @@
 ---
-title: "Volume Weighted Macd Review: Settings, Strategy & How to Use It"
+title: "Volume Weighted MACD Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/kRrkKVfu-Volume-Weighted-MACD-LazyBear-stokedstocks/"
 date: 2026-07-16
 draft: false

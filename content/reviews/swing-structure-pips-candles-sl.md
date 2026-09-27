@@ -1,5 +1,5 @@
 ---
-title: "Swing_Structure_Pips_Candles_Sl Review: Settings, Strategy & How to Use It"
+title: "Swing Structure Pips Candles Sl Review — Market Structure Indicator"
 date: 2026-08-22
 draft: false
 type: reviews

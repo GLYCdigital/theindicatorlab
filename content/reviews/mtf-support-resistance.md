@@ -1,5 +1,5 @@
 ---
-title: "Mtf_Support_Resistance Review: Settings, Strategy & How to Use It"
+title: "MTF Support Resistance Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/RMXGtvXL-MTF-Support-Resistance-JDTJDTTradingCo/"
 date: 2026-08-14
 draft: false
@@ -21,8 +21,7 @@ rating: 4
 description: "Mtf_Support_Resistance review: tested settings, multi-timeframe levels, entry/exit strategy, pros/cons, and who should use this TradingView trend indicator."
 grounding: "none (no source found)"
 ---
-# Mtf_Support_Resistance Review
-
+# MTF Support Resistance Review
 Multi-timeframe support and resistance is one of those ideas that sounds simple until you try to code it. Most attempts end up as a cluttered mess of lines that contradict each other. The Mtf_Support_Resistance indicator aims to handle this cleanly — it pulls swing highs and lows from a higher timeframe and projects them onto your current chart.
 
 ## What This Indicator Actually Does

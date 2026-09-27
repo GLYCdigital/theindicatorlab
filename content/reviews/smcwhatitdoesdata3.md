@@ -1,5 +1,5 @@
 ---
-title: "Smcwhatitdoesdata3 Review: Settings, Strategy & How to Use It"
+title: "Smcwhatitdoesdata3 Review — Market Structure Indicator"
 date: 2026-09-13
 draft: false
 type: reviews
@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/dzM26hVH-SMCWhatItDoesData3/"
 sources: ["https://www.tradingview.com/script/dzM26hVH-SMCWhatItDoesData3/"]
 ---
 # Smcwhatitdoesdata3 Review
-
 The name is the first thing to address, because it works against the script. "Smcwhatitdoesdata3" reads like an exported filename. The "SMC" prefix sets an expectation of Smart Money Concepts — order blocks, liquidity sweeps, fair value gaps. That expectation does not match what the script delivers.
 
 What is actually provided is a **trend-following overlay** that plots directional bias and signal markers on the chart. The name is noise. The tool is more useful than the branding suggests, and that gap is the main reason it falls short of a top rating.

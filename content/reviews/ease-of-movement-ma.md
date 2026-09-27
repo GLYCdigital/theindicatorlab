@@ -1,5 +1,5 @@
 ---
-title: "Ease_Of_Movement_Ma Review: Settings, Strategy & How to Use It"
+title: "Ease Of Movement Ma Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/fk8mIolr-EOM-efficiency-z411392/"
 date: 2026-09-03
 draft: false
@@ -21,8 +21,7 @@ rating: 4
 description: "Ease_Of_Movement_Ma review: honest take on this trend indicator's settings, entry signals, pros/cons, and who should actually use it."
 grounding: "none (no source found)"
 ---
-# Ease_Of_Movement_Ma Review
-
+# Ease Of Movement Ma Review
 Let's cut through the name. Ease_Of_Movement_Ma isn't a fancy new oscillator or a magic signal generator. It's a smoothed version of Richard Arms' classic Ease of Movement (EMV) indicator, wrapped in a moving average ribbon to help you spot trend direction without the noise.
 
 **What It Does Differently**

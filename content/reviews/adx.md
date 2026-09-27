@@ -1,5 +1,5 @@
 ---
-title: "Adx Review: Settings, Strategy & How to Use It"
+title: "ADX Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/i2IYS9TW-ADX-and-DI-binary-trader66/"
 date: 2026-07-16
 draft: false

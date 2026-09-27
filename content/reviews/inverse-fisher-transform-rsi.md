@@ -1,5 +1,5 @@
 ---
-title: "Inverse_Fisher_Transform_Rsi Review: Settings, Strategy & How to Use It"
+title: "Inverse Fisher Transform RSI Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/8OxW1SF4-Inverse-Fisher-Transform-RSI-LazyBear/"
 date: 2026-07-16
 draft: false

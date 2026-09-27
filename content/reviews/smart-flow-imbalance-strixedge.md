@@ -1,5 +1,5 @@
 ---
-title: "Smart_Flow_Imbalance_Strixedge Review: Settings, Strategy & How to Use It"
+title: "Smart Flow Imbalance Strixedge Review — Volume Indicator"
 date: 2026-09-16
 draft: false
 type: reviews

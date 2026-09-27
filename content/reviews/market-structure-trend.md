@@ -1,5 +1,5 @@
 ---
-title: "Market_Structure_Trend Review: Settings, Strategy & How to Use It"
+title: "Market Structure Trend Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/F3b5dGLx-Market-Structure-Trend-Targets-ChartPrime/"
 date: 2026-08-10
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Market_Structure_Trend review: tested settings, entry/exit logic, pros & cons. A solid 4/5 trend indicator for swing traders who respect structure."
 grounding: "none (no source found)"
 ---
-# Market_Structure_Trend Review
-
+# Market Structure Trend Review
 Market_Structure_Trend is not another repainted moving average crossover dressed up with a fancy name. It's a swing-point detector that plots higher highs and higher lows (or the bearish equivalents) directly on your chart, then uses that structure to define trend direction with a clean color-coded line.
 
 The premise is straightforward: identify market structure the way a price action trader would, and do it mechanically. Whether it delivers on that premise depends on what you expect from a trend tool.

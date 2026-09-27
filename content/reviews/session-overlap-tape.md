@@ -1,5 +1,5 @@
 ---
-title: "Session_Overlap_Tape Review: Settings, Strategy & How to Use It"
+title: "Session Overlap Tape Review — Trend Indicator"
 date: 2026-08-22
 draft: false
 type: reviews
@@ -20,7 +20,6 @@ tv_script_url: "https://www.tradingview.com/script/d5gPOa1Y-Session-Overlap-Tape
 sources: ["https://www.tradingview.com/script/d5gPOa1Y-Session-Overlap-Tape/"]
 ---
 # Session Overlap Tape Review
-
 The official description of Session Overlap Tape is narrow: it is a tool for currency overlap timings, intended to help a trader decide when to trade and when to simply watch. The script is classified as a study. Anything beyond that framing is interpretation, so this review stays close to what the tool is documented to do.
 
 ## What This Indicator Actually Does

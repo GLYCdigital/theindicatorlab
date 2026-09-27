@@ -1,5 +1,5 @@
 ---
-title: "Orderblock_Footprints_Algoalpha Review: Settings, Strategy & How to Use It"
+title: "Orderblock Footprints Algoalpha Review — Market Structure Indicator"
 date: 2026-08-21
 draft: false
 type: reviews
@@ -20,8 +20,7 @@ tv_script_url: "https://www.tradingview.com/script/WktjDtMk-Orderblock-Footprint
 sources: ["https://www.tradingview.com/script/WktjDtMk-Orderblock-Footprints-AlgoAlpha/"]
 grounding: "none (no source found)"
 ---
-# Orderblock_Footprints_Algoalpha Review
-
+# Orderblock Footprints Algoalpha Review
 "Order block" indicators are a crowded category, and most of them do the same thing: paint boxes on recent swings and call it a day. Orderblock_Footprints_Algoalpha attempts something more ambitious — tracking the footprint of large-order activity, the kind of volume profile shifts that leave structural gaps in the chart.
 
 **What it actually does**

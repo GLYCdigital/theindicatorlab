@@ -1,5 +1,5 @@
 ---
-title: "Efficiency_Ratio_Bands Review: Settings, Strategy & How to Use It"
+title: "Efficiency Ratio Bands Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/dneYi7kK-Efficiency-Ratio-nemozny/"
 date: 2026-07-16
 draft: false

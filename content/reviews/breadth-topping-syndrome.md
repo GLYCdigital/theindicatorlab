@@ -1,5 +1,5 @@
 ---
-title: "Breadth_Topping_Syndrome Review: Settings, Strategy & How to Use It"
+title: "Breadth Topping Syndrome Review — Trend Indicator"
 date: 2026-08-24
 draft: false
 type: reviews

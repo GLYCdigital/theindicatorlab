@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Bollinger_Bands Review: Settings, Strategy & How to Use It"
+title: "RSI Bollinger Bands Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/C3qd5Svp-RSI-Bollinger-Bands-sndwav/"
 date: 2026-08-10
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Rsi_Bollinger_Bands review: combines RSI with Bollinger Bands for trend confirmation. Tested settings, entry/exit logic, pros, cons, and who it suits best."
 grounding: "none (no source found)"
 ---
-# Rsi_Bollinger_Bands Review
-
+# RSI Bollinger Bands Review
 "Confluence" indicators usually just stack two oscillators on top of each other and call it a strategy. Rsi_Bollinger_Bands takes a different approach: it forces you to think about *when* RSI matters relative to volatility, and that distinction is what makes it worth a look.
 
 ## What It Does

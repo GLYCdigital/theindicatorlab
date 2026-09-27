@@ -1,5 +1,5 @@
 ---
-title: "8020_System_Indicator Review: Settings, Strategy & How to Use It"
+title: "8020 System Indicator Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/2ApM2DO5-8020-System-Indicator-lucymatos/"
 date: 2026-08-07
 draft: false
@@ -20,7 +20,6 @@ description: "Honest 8020_System_Indicator review. Tested settings, entry/exit l
 grounding: "none (no source found)"
 ---
 # 8020 System Indicator Review
-
 The "8020" in the name isn't about Pareto or some magic win-rate ratio — it's a reference to the 8- and 20-period moving averages that form its backbone. What makes this one worth a second look is how it packages those two MAs into a complete trend system with confirmation signals, rather than just a couple of squiggly lines on your chart.
 
 ## What It Actually Does

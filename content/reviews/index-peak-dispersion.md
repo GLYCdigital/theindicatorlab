@@ -1,5 +1,5 @@
 ---
-title: "Index_Peak_Dispersion Review: Settings, Strategy & How to Use It"
+title: "Index Peak Dispersion Review — Momentum Indicator"
 date: 2026-08-23
 draft: false
 type: reviews

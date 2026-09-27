@@ -1,5 +1,5 @@
 ---
-title: "Post Absorption Vwap Reversal Engine 6 Review: Settings, Strategy & How to Use It"
+title: "Post Absorption VWAP Reversal Engine 6 Review — Volume Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

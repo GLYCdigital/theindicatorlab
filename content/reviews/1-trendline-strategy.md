@@ -1,5 +1,5 @@
 ---
-title: "1_Trendline_Strategy Review: Settings, Strategy & How to Use It"
+title: "1 Trendline Strategy Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/uOlzLqTw-1-Trendline-Strategy-egoigor1976/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "A clean, single-trendline breakout system that auto-draws support/resistance. Honest review with settings, entry rules, and where it falls short."
 grounding: "none (no source found)"
 ---
-# 1_Trendline_Strategy Review
-
+# 1 Trendline Strategy Review
 **1_Trendline_Strategy** is a straightforward, auto-drawn trendline breakout tool. It does one job and does it without an embedded oscillator or hidden secondary logic.
 
 ## What It Actually Does

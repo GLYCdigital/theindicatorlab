@@ -1,5 +1,5 @@
 ---
-title: "Trend_Pressure Review: Settings, Strategy & How to Use It"
+title: "Trend Pressure Review — Trend Indicator"
 date: 2026-09-14
 draft: false
 type: reviews

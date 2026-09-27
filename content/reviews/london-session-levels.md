@@ -1,5 +1,5 @@
 ---
-title: "London_Session_Levels Review: Settings, Strategy & How to Use It"
+title: "London Session Levels Review — Trend Indicator"
 date: 2026-07-27
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "London_Session_Levels marks key high/low/close levels from the London open. See how to trade breakouts and reversals with this clean, no-nonsense session tool."
 grounding: "none (no source found)"
 ---
-# London_Session_Levels Review
-
+# London Session Levels Review
 Most session-based indicators are noise. They dump a dozen lines on your chart and call it analysis. *London_Session_Levels* is not that. It does one thing—marks the high, low, and close of the London session—and does it cleanly. No clutter, no marketing fluff. Here's the breakdown.
 
 **What This Indicator Actually Does**

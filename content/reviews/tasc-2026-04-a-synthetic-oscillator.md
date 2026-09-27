@@ -1,5 +1,5 @@
 ---
-title: "Tasc_2026_04_A_Synthetic_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Tasc 2026 04 A Synthetic Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/we9AMcvE-TASC-2026-04-A-Synthetic-Oscillator-PineCodersTASC/"
 date: 2026-07-16
 draft: false

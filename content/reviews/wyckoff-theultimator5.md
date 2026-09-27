@@ -1,5 +1,5 @@
 ---
-title: "Wyckoff_Theultimator5 Review: Settings, Strategy & How to Use It"
+title: "Wyckoff Theultimator5 Review — Trend Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

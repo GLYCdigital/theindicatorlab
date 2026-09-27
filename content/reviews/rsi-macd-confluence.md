@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Macd_Confluence Review: Settings, Strategy & How to Use It"
+title: "RSI MACD Confluence Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

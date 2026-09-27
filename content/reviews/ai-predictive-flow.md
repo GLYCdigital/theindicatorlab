@@ -1,5 +1,5 @@
 ---
-title: "Ai_Predictive_Flow Review: Settings, Strategy & How to Use It"
+title: "AI Predictive Flow Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/qaaxkW1P-AI-Predictive-Flow-Zeiierman/"
 date: 2026-07-16
 draft: false

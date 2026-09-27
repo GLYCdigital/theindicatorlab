@@ -1,5 +1,5 @@
 ---
-title: "Directional_Kernel_Filter_Backquant Review: Settings, Strategy & How to Use It"
+title: "Directional Kernel Filter Backquant Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

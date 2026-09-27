@@ -1,5 +1,5 @@
 ---
-title: "Implied_Market_Structure Review: Settings, Strategy & How to Use It"
+title: "Implied Market Structure Review — Market Structure Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

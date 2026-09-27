@@ -1,5 +1,5 @@
 ---
-title: "Put_Call_Ratio Review: Settings, Strategy & How to Use It"
+title: "Put Call Ratio Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/FVVxMlOw-Put-Call-Ratio-Capriole-Investments-capriole-charles/"
 date: 2026-07-16
 draft: false

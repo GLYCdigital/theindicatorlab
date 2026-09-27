@@ -1,5 +1,5 @@
 ---
-title: "Trix_Signal_Line Review: Settings, Strategy & How to Use It"
+title: "Trix Signal Line Review — Momentum Indicator"
 date: 2026-08-25
 draft: false
 type: reviews

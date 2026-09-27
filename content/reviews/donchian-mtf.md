@@ -1,5 +1,5 @@
 ---
-title: "Donchian_Mtf Review: Settings, Strategy & How to Use It"
+title: "Donchian MTF Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

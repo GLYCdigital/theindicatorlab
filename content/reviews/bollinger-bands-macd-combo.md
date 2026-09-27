@@ -1,5 +1,5 @@
 ---
-title: "Bollinger_Bands_Macd_Combo Review: Settings, Strategy & How to Use It"
+title: "Bollinger Bands MACD Combo Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/1fquZ4N6-Bollinger-Bands-Marcelgmelo29/"
 date: 2026-07-16
 draft: false

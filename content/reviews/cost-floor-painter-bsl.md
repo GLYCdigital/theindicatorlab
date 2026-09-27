@@ -1,5 +1,5 @@
 ---
-title: "Cost_Floor_Painter_Bsl Review: Settings, Strategy & How to Use It"
+title: "Cost Floor Painter Bsl Review — Trend Indicator"
 date: 2026-09-11
 draft: false
 type: reviews
@@ -19,8 +19,7 @@ description: "Cost_Floor_Painter_Bsl review: a cost-basis trend tool that paints
 tv_script_url: "https://www.tradingview.com/script/BeKPSzwY-Cost-Floor-Painter-BSL/"
 sources: ["https://www.tradingview.com/script/BeKPSzwY-Cost-Floor-Painter-BSL/"]
 ---
-# Cost Floor Painter [BSL] Review
-
+# Cost Floor Painter Bsl Review
 Most "trend" indicators on TradingView are the same three moving averages wearing different hats. Cost Floor Painter [BSL] is not that. It is a bar-size filter dressed as a painter: you declare a round-trip cost once, and the script tells you, bar by bar, whether that bar was big enough to pay for its own round trip. That is the whole function, and it is a narrower and more honest claim than most overlays make.
 
 ## What it actually plots

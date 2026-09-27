@@ -1,5 +1,5 @@
 ---
-title: "Dual_Log_Regression_Channels Review: Settings, Strategy & How to Use It"
+title: "Dual Log Regression Channels Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Xp4URelH-Dual-Log-Regression-Channels-BigBeluga/"
 date: 2026-07-16
 draft: false

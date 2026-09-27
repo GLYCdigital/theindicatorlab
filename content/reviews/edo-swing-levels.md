@@ -1,5 +1,5 @@
 ---
-title: "Edo_Swing_Levels Review: Settings, Strategy & How to Use It"
+title: "Edo Swing Levels Review — Trend Indicator"
 date: 2026-09-15
 draft: false
 type: reviews

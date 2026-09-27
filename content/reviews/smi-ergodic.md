@@ -1,5 +1,5 @@
 ---
-title: "Smi_Ergodic Review: Settings, Strategy & How to Use It"
+title: "Smi Ergodic Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/cwrgy4fw-SMI-Ergodic-Indicator-Oscillator-elpokor/"
 date: 2026-07-16
 draft: false

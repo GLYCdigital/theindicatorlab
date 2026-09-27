@@ -1,5 +1,5 @@
 ---
-title: "Machine_Learning_Random_Forest_Strategy Review: Settings, Strategy & How to Use It"
+title: "Machine Learning Random Forest Strategy Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/AYYLVFTb-Machine-Learning-Random-Forest-Strategy-GainzAlgo/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Machine_Learning_Random_Forest_Strategy — a TradingView indicator that uses random forest ML to generate buy/sell signals with configurable features."
 grounding: "none (no source found)"
 ---
-# Machine_Learning_Random_Forest_Strategy Review
-
+# Machine Learning Random Forest Strategy Review
 If you've been burned by overfitted "AI" indicators that repaint constantly, skepticism is reasonable. This one claims to do something more substantive than the typical smoke and mirrors — a random forest classifier rather than a repainted moving average crossover.
 
 Here's a breakdown of what it actually offers.

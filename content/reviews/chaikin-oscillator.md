@@ -1,5 +1,5 @@
 ---
-title: "Chaikin_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Chaikin Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/lDzr3s3c-Chaikin-Oscillator-sbtnc/"
 date: 2026-07-16
 draft: false

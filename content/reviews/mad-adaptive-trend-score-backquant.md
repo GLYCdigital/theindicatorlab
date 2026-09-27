@@ -1,5 +1,5 @@
 ---
-title: "Mad_Adaptive_Trend_Score_Backquant Review: Settings, Strategy & How to Use It"
+title: "Mad Adaptive Trend Score Backquant Review — Trend Indicator"
 date: 2026-09-13
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Ema_Trend_Signals Review: Settings, Strategy & How to Use It"
+title: "EMA Trend Signals Review — Trend Indicator"
 date: 2026-09-12
 draft: false
 type: reviews

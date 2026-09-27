@@ -1,5 +1,5 @@
 ---
-title: "Stochastic Rsi Review: Settings, Strategy & How to Use It"
+title: "Stochastic RSI Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/drhpwAv6-Stochastic-RSI-Maxim-Chechel/"
 date: 2026-07-16
 draft: false

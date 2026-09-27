@@ -1,5 +1,5 @@
 ---
-title: "Iceberg_Detector Review: Settings, Strategy & How to Use It"
+title: "Iceberg Detector Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/Y4HHvjwz-Iceberg-Detector-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false

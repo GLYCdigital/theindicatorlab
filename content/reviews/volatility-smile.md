@@ -1,5 +1,5 @@
 ---
-title: "Volatility_Smile Review: Settings, Strategy & How to Use It"
+title: "Volatility Smile Review — Volatility Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Elder's Thermometer Review: Settings, Strategy & How to Use It"
+title: "Elders Thermometer Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/aBEEE6Y5-Elder-039-s-Thermometer-mihakralj/"
 date: 2026-07-16
 draft: false

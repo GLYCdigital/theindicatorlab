@@ -1,5 +1,5 @@
 ---
-title: "Murrey_Math_Mtf Review: Settings, Strategy & How to Use It"
+title: "Murrey Math MTF Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/9vVJZZlz-Murrey-Math-AlgoriZate/"
 date: 2026-08-15
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Murrey_Math_Mtf review: multi-timeframe Murrey Math lines, best settings, entry logic, pros/cons. Is it worth installing? Tested verdict inside."
 grounding: "none (no source found)"
 ---
-# Murrey_Math_Mtf Review
-
+# Murrey Math MTF Review
 Murrey Math. Either you've heard the name and dismissed it as another Gann-adjacent relic, or you've spent hours staring at those colored horizontal lines wondering why price respects them so often. The Murrey_Math_Mtf indicator takes that classic framework and does something genuinely useful with it — it plots Murrey Math lines across multiple timeframes on a single chart. That's it. That's the whole pitch. And honestly, that's enough.
 
 Let's cut through the mystery first. Murrey Math divides price into octaves based on square roots and historical price ranges. The result is a grid of horizontal levels — think support/resistance on steroids — that tend to attract price action. This indicator doesn't reinvent that math. What it does is overlay the Murrey Math lines from higher timeframes onto your current chart, so you're not constantly flipping between timeframes to see where the big levels sit.

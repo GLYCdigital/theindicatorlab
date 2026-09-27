@@ -1,5 +1,5 @@
 ---
-title: "Pressure_Transfer_Zone Review: Settings, Strategy & How to Use It"
+title: "Pressure Transfer Zone Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/AlDi5hYd-Pressure-Transfer-Zone-Finntech1/"
 date: 2026-08-08
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Pressure_Transfer_Zone identifies key supply/demand shifts on TradingView. Tested settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Pressure_Transfer_Zone Review
-
+# Pressure Transfer Zone Review
 Zone indicators tend to invite skepticism, and for good reason: many of them simply draw rectangles around a prior range and label it institutional supply. Pressure_Transfer_Zone is worth examining on its own terms rather than dismissing it alongside that category.
 
 ## What the Indicator Does

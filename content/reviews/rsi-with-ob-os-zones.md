@@ -1,5 +1,5 @@
 ---
-title: "Rsi_With_Ob_Os_Zones Review: Settings, Strategy & How to Use It"
+title: "RSI With Ob Os Zones Review — Momentum Indicator"
 date: 2026-07-16
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Clean RSI with customizable overbought/overshoot zones. No lag, no fluff. Best for scalping pullbacks. 4/5 stars."
 grounding: "none (no source found)"
 ---
-# Rsi_With_Ob_Os_Zones Review
-
+# RSI With Ob Os Zones Review
 The RSI variants on TradingView tend to fall into two camps: cosmetic tweaks that add little, and feature-heavy scripts that bury a simple oscillator under layers of signal logic. Rsi_With_Ob_Os_Zones sits in neither. It does one thing—display a clean, customizable RSI with clearly marked overbought and oversold zones—and leaves it at that.
 
 ## What This Indicator Actually Does

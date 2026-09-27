@@ -1,5 +1,5 @@
 ---
-title: "Ict_Setup_Screener_Liquidity_Sweep_Mss_Fvg_Scanner_Lunqfx Review: Settings, Strategy & How to Use It"
+title: "ICT Setup Screener Liquidity Sweep Mss FVG Scanner Lunqfx Review — Market Structure Indicator"
 date: 2026-09-25
 draft: false
 type: reviews

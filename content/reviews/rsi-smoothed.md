@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Smoothed Review: Settings, Strategy & How to Use It"
+title: "RSI Smoothed Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/xX0fQdmY-RSI-Smoothed-imsharper/"
 date: 2026-07-16
 draft: false

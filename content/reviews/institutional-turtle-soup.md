@@ -1,5 +1,5 @@
 ---
-title: "Institutional_Turtle_Soup Review: Settings, Strategy & How to Use It"
+title: "Institutional Turtle Soup Review — Trend Indicator"
 date: 2026-09-03
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Institutional_Turtle_Soup review: Tested breakout strategy with Donchian channels, false-break filters and momentum confirmation. Settings and honest pros/cons."
 grounding: "none (no source found)"
 ---
-# Institutional_Turtle_Soup Review
-
+# Institutional Turtle Soup Review
 Plenty of indicators marketed as "institutional" turn out to be a moving average crossover with a rebrand. Institutional_Turtle_Soup is a more serious attempt: it codifies the turtle soup entry, a concept that has circulated in trading discussions for decades, in which you fade an initial breakout and position for a reversal back through the range.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Gann_Reversal_Confluence Review: Settings, Strategy & How to Use It"
+title: "Gann Reversal Confluence Review — Trend Indicator"
 date: 2026-08-16
 draft: false
 type: reviews

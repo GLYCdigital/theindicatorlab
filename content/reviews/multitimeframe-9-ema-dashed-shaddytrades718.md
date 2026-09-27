@@ -1,5 +1,5 @@
 ---
-title: "Multitimeframe_9_Ema_Dashed_Shaddytrades718 Review: Settings, Strategy & How to Use It"
+title: "Multitimeframe 9 EMA Dashed Shaddytrades718 Review — Trend Indicator"
 date: 2026-07-20
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Review of the Multitimeframe_9_Ema_Dashed indicator: settings, strategy, pros/cons, and whether it's worth adding to your charts."
 grounding: "none (no source found)"
 ---
-# Multitimeframe_9_Ema_Dashed_Shaddytrades718 Review
-
+# Multitimeframe 9 EMA Dashed Shaddytrades718 Review
 There are countless EMA-based indicators on TradingView, and a large share of them add little beyond clutter. The **Multitimeframe_9_Ema_Dashed_Shaddytrades718** takes a different approach: it plots the classic 9 EMA across three separate timeframes on a single chart, all rendered as dashed lines. The concept is narrow, and that narrowness is the point.
 
 ## What It Actually Does

@@ -1,5 +1,5 @@
 ---
-title: "Supertrend_Regime_Confluence Review: Settings, Strategy & How to Use It"
+title: "Supertrend Regime Confluence Review — Trend Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

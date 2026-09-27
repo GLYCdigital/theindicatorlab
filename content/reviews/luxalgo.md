@@ -1,5 +1,5 @@
 ---
-title: "LuxAlgo Indicator Suite Review: Settings, Strategy & How to Use It"
+title: "Luxalgo Review — Trend Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

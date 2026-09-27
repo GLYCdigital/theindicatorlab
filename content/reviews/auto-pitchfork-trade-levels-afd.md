@@ -1,5 +1,5 @@
 ---
-title: "Auto_Pitchfork Trade Levels AFD Review: Settings, Strategy & How to Use It"
+title: "Auto Pitchfork Trade Levels Afd Review — Trend Indicator"
 date: 2026-09-24
 draft: false
 type: reviews

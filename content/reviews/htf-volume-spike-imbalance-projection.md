@@ -1,5 +1,5 @@
 ---
-title: "HTF Volume Spike Imbalance Projection Review: Settings, Strategy & How to Use It"
+title: "HTF Volume Spike Imbalance Projection Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/MXn4pESD-HTF-Volume-Spike-Imbalance-Projection-LuxAlgo/"
 date: 2026-07-16
 draft: false

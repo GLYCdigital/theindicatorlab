@@ -1,5 +1,5 @@
 ---
-title: "Cme_Institutional_Order_Flow_Amt_Lens Review: Settings, Strategy & How to Use It"
+title: "Cme Institutional Order Flow Amt Lens Review — Volume Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

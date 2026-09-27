@@ -1,5 +1,5 @@
 ---
-title: "Regression_Trend_Miesoncharts Review: Settings, Strategy & How to Use It"
+title: "Regression Trend Miesoncharts Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/yvTpCe0f-Regression-Trend-Mies-MiesOnCharts/"
 date: 2026-08-13
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Regression_Trend_Miesoncharts review: tested settings, entry/exit logic, pros & cons. A solid 4-star trend indicator for swing traders."
 grounding: "none (no source found)"
 ---
-# Regression_Trend_Miesoncharts Review
-
+# Regression Trend Miesoncharts Review
 "Revolutionary" trend indicators are a dime a dozen, so a new one landing on the watchlist doesn't inspire much confidence upfront. Regression_Trend_Miesoncharts sounds like another repackaged moving average crossover. It isn't that — but it isn't magic either. Here's the honest breakdown.
 
 **What it actually does**

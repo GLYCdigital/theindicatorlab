@@ -1,5 +1,5 @@
 ---
-title: "Adaptive_Trend_Line Review: Settings, Strategy & How to Use It"
+title: "Adaptive Trend Line Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/cKHoLE1s-Adaptive-Trend-Lines-Zeiierman/"
 date: 2026-07-16
 draft: false

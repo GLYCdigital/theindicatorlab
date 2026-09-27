@@ -1,5 +1,5 @@
 ---
-title: "Timeframe_Divergence_Scanner Review: Settings, Strategy & How to Use It"
+title: "Timeframe Divergence Scanner Review — Momentum Indicator"
 date: 2026-07-21
 draft: false
 type: reviews

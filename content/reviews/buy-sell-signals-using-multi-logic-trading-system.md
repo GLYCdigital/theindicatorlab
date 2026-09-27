@@ -1,5 +1,5 @@
 ---
-title: "Buy_Sell_Signals_Using_Multi_Logic_Trading_System Review: Settings, Strategy & How to Use It"
+title: "Buy Sell Signals Using Multi Logic Trading System Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/hYNO4UJ3-Buy-Sell-Signals-using-Multi-Logic-Trend-Momentum-Breakout-System-InvestyourAsset/"
 date: 2026-08-02
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of the Multi Logic Trading System indicator for TradingView. Tested settings, entry/exit logic, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Buy_Sell_Signals_Using_Multi_Logic_Trading_System Review
-
+# Buy Sell Signals Using Multi Logic Trading System Review
 The title reads like something a script generated, but the concept underneath is a straightforward trend-following tool. Here's an honest look at what it does and where it falls short.
 
 ## What It Actually Does

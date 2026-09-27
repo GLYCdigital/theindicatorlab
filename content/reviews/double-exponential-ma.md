@@ -1,5 +1,5 @@
 ---
-title: "Double Exponential MA Review: Settings, Strategy & How to Use It"
+title: "Double Exponential Ma Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/CZCP0nAr-Double-Exponential-MACD-pieslappa/"
 date: 2026-07-16
 draft: false

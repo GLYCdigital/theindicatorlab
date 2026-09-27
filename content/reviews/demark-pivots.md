@@ -1,5 +1,5 @@
 ---
-title: "Demark Pivots Review: Settings, Strategy & How to Use It"
+title: "Demark Pivots Review — Support & Resistance Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

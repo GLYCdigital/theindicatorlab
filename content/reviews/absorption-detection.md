@@ -1,5 +1,5 @@
 ---
-title: "Absorption_Detection Review: Settings, Strategy & How to Use It"
+title: "Absorption Detection Review — Volume Indicator"
 date: 2026-08-25
 draft: false
 type: reviews

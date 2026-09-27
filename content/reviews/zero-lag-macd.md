@@ -1,5 +1,5 @@
 ---
-title: "Zero Lag Macd Review: Settings, Strategy & How to Use It"
+title: "Zero Lag MACD Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/YVhfzkMg-Zero-Lag-MACD-eedzo/"
 date: 2026-07-16
 draft: false

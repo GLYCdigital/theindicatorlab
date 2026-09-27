@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci_Extension Review: Settings, Strategy & How to Use It"
+title: "Fibonacci Extension Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/FWYQ4vTk-Fibonacci-Extention-Retracment-Pivot-Points-dgtrd/"
 date: 2026-07-16
 draft: false

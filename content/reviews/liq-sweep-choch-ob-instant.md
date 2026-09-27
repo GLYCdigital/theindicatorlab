@@ -1,5 +1,5 @@
 ---
-title: "Liq_Sweep_Choch_Ob_Instant Review: Settings, Strategy & How to Use It"
+title: "Liq Sweep CHOCH Ob Instant Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/EwYuNAx2-Liq-Sweep-CHoCH-OB-Instant-CodaPro/"
 date: 2026-07-20
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Liq_Sweep_Choch_Ob_Instant: a trend-following tool that flags liquidity sweeps, change of character, and order blocks. Settings, strategy, pros, cons, and who it's for."
 grounding: "none (no source found)"
 ---
-# Liq_Sweep_Choch_Ob_Instant Review
-
+# Liq Sweep CHOCH Ob Instant Review
 **Liq_Sweep_Choch_Ob_Instant** is a multi-concept trend indicator that bundles three popular trading ideas—liquidity sweeps (Liq Sweep), change of character (Choch), and order blocks (OB)—into one chart overlay. It's not a magic bullet, but for traders who already use these concepts, it consolidates pattern recognition into a single tool.
 
 ## What It Actually Does

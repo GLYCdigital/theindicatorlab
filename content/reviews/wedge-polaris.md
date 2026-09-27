@@ -1,5 +1,5 @@
 ---
-title: "Wedge_Polaris Review: Settings, Strategy & How to Use It"
+title: "Wedge Polaris Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/QwCkHqOr-Wedge-Polaris-JOAT-officialjackofalltrades/"
 date: 2026-07-16
 draft: false

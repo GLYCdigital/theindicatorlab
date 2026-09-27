@@ -1,5 +1,5 @@
 ---
-title: "Zero Lag EMA Review: Settings, Strategy & How to Use It"
+title: "Zero Lag EMA Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/LRCcdU3M-Zero-Lag-EMA-Pawan-tradv/"
 date: 2026-07-16
 draft: false

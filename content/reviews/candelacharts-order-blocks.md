@@ -1,5 +1,5 @@
 ---
-title: "Candelacharts_Order_Blocks Review: Settings, Strategy & How to Use It"
+title: "Candelacharts Order Blocks Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/GSEzHIcI-CandelaCharts-Order-Blocks-CandelaCharts/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest review of Candelacharts_Order_Blocks: a solid order-block detector with Mitigation, Breaker, and Reversal zones. Settings, strategy, pros/cons, and better alternatives."
 grounding: "none (no source found)"
 ---
-# Candelacharts_Order_Blocks Review
-
+# Candelacharts Order Blocks Review
 Most order-block indicators fall into one of two camps: too noisy to read, or so slow to update that the zone is stale by the time it prints. Candelacharts_Order_Blocks aims at the middle ground — visual, configurable, and built around the logic of institutional supply and demand zones. It is not perfect, but it is a reasonable addition to a discretionary trader's chart.
 
 ## What This Indicator Actually Does

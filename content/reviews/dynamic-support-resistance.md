@@ -1,5 +1,5 @@
 ---
-title: "Dynamic_Support_Resistance Review: Settings, Strategy & How to Use It"
+title: "Dynamic Support Resistance Review — Support & Resistance Indicator"
 tv_script_url: "https://www.tradingview.com/script/B24CB2ca-Dynamic-Support-Resistance-ZenAndTheArtOfTrading/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "A practical dynamic S/R tool that adapts to volatility. Not perfect but avoids the lag of traditional pivot levels. Best for intraday scalping."
 grounding: "none (no source found)"
 ---
-# Dynamic_Support_Resistance Review
-
+# Dynamic Support Resistance Review
 Support and resistance tools tend to fall into one of two traps: they're either too laggy (static pivots) or too noisy (overfitted to every wiggle). Dynamic_Support_Resistance aims for the middle ground, and for many traders, that's exactly where you want to be.
 
 ## What This Indicator Actually Does

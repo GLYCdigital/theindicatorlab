@@ -1,5 +1,5 @@
 ---
-title: "Sweep_Ifvg_M1D Review: Settings, Strategy & How to Use It"
+title: "Sweep Ifvg M1d Review — Market Structure Indicator"
 date: 2026-09-05
 draft: false
 type: reviews

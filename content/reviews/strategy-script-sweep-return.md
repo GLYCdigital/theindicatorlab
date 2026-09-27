@@ -1,5 +1,5 @@
 ---
-title: "Strategy_Script_Sweep_Return Review: Settings, Strategy & How to Use It"
+title: "Strategy Script Sweep Return Review — Market Structure Indicator"
 date: 2026-09-17
 draft: false
 type: reviews

@@ -1,5 +1,5 @@
 ---
-title: "Bid_Ask_Volume_Ratio Review: Settings, Strategy & How to Use It"
+title: "Bid Ask Volume Ratio Review — Volume Indicator"
 date: 2026-08-09
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Honest Bid_Ask_Volume_Ratio review. Tested settings, entry/exit logic, pros & cons. Is this order-flow trend tool worth adding to your charts?"
 grounding: "none (no source found)"
 ---
-# Bid_Ask_Volume_Ratio Review
-
+# Bid Ask Volume Ratio Review
 Bid_Ask_Volume_Ratio isn't a magical order-flow crystal ball, but it does something most trend indicators get wrong — it attempts to measure *who's actually in control* rather than just drawing lines based on price history.
 
 ## What It Actually Does

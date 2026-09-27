@@ -1,5 +1,5 @@
 ---
-title: "Trend_Market_By_Erdensedat Review: Settings, Strategy & How to Use It"
+title: "Trend Market By Erdensedat Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/yUJcLvkP-Trend-Market-erdensedat/"
 date: 2026-07-16
 draft: false

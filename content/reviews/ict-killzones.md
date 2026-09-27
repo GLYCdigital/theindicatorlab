@@ -1,5 +1,5 @@
 ---
-title: "Ict_Killzones Review: Settings, Strategy & How to Use It"
+title: "ICT Killzones Review — Market Structure Indicator"
 tv_script_url: "https://www.tradingview.com/script/ehwcUFM8-ICT-Killzones-enricoamato997/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "ICT Killzones marks key intraday sessions for forex and indices. Works best on 5-15 min charts. Clean visuals, no repaint. 4/5."
 grounding: "none (no source found)"
 ---
-# Killzones Indicator Review
-
+# ICT Killzones Review
 ICT-style session trading lives and dies by time. The Killzones indicator handles the mechanical part—drawing the session boxes—so attention can stay on price action inside them. Here is an honest look at what it does and where it falls short.
 
 ## What This Indicator Actually Does

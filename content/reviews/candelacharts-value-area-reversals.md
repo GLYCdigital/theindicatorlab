@@ -1,5 +1,5 @@
 ---
-title: "Candelacharts_Value_Area_Reversals Review: Settings, Strategy & How to Use It"
+title: "Candelacharts Value Area Reversals Review — Trend Indicator"
 date: 2026-08-29
 draft: false
 type: reviews

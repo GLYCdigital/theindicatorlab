@@ -1,5 +1,5 @@
 ---
-title: "Market_Facilitation_Index_Bw_Mfi Review: Settings, Strategy & How to Use It"
+title: "Market Facilitation Index Bw MFI Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/MBXprclx-Market-Facilitation-Index-BW-MFI-vegaeze/"
 date: 2026-08-07
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Market_Facilitation_Index_Bw_Mfi review: tested settings, entry logic, pros/cons, and who should actually trade with this MFI variant."
 grounding: "none (no source found)"
 ---
-# Market Facilitation Index (MFI) Bw — Review
-
+# Market Facilitation Index Bw MFI Review
 Let's skip the preamble. This is Bill Williams' Market Facilitation Index (MFI) with a black-and-white twist — the "Bw" in the name references the original Bill Williams approach, and the indicator plots the raw MFI value alongside color-coded bars that classify each candle into one of four states: Green (up volume/up MFI), Fade (down volume/down MFI), Squat (down volume/up MFI), and Fake (up volume/down MFI).
 
 If you've seen the classic MFI, you know the drill. What sets this version apart is how cleanly it renders the four states on a single pane, making it more readable than the default TradingView implementation. The bar coloring alone tells you most of what you need before you even glance at price action.

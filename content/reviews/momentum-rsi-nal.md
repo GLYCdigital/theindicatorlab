@@ -1,5 +1,5 @@
 ---
-title: "Momentum_Rsi_Nal Review: Settings, Strategy & How to Use It"
+title: "Momentum RSI Nal Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/5JdkQLNg-Momentum-RSI-NordicAlphaLab/"
 date: 2026-07-16
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Momentum_Rsi_Nal combines RSI and momentum to spot trend shifts. See tested settings, entry rules, and how it fits real trading."
 grounding: "none (no source found)"
 ---
-# Momentum_Rsi_Nal Review
-
+# Momentum RSI Nal Review
 **Momentum_Rsi_Nal** is a trend-following indicator that attempts to address a familiar problem: RSI alone gets noisy in choppy markets, and plain momentum lags. This script fuses both into a single oscillator line with color-coded bars, and adds a divergence-detection layer on top.
 
 ## What It Does

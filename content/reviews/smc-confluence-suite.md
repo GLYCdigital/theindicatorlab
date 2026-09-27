@@ -1,5 +1,5 @@
 ---
-title: "Smc_Confluence_Suite Review: Settings, Strategy & How to Use It"
+title: "SMC Confluence Suite Review — Market Structure Indicator"
 date: 2026-09-10
 draft: false
 type: reviews

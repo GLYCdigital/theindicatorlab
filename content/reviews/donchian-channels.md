@@ -1,5 +1,5 @@
 ---
-title: "Donchian Channels Review: Settings, Strategy & How to Use It"
+title: "Donchian Channels Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/QE0LMwzk-Donchian-Channels-ClassicScott/"
 date: 2026-07-16
 draft: false

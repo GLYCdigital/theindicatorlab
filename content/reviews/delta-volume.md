@@ -1,5 +1,5 @@
 ---
-title: "Delta_Volume Review: Settings, Strategy & How to Use It"
+title: "Delta Volume Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/rzQwAedk-Delta-Volume-SiddWolf/"
 date: 2026-07-16
 draft: false

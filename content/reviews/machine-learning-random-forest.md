@@ -1,5 +1,5 @@
 ---
-title: "Machine_Learning_Random_Forest Review: Settings, Strategy & How to Use It"
+title: "Machine Learning Random Forest Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/AYYLVFTb-Machine-Learning-Random-Forest-Strategy-GainzAlgo/"
 date: 2026-07-16
 draft: false

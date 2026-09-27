@@ -1,5 +1,5 @@
 ---
-title: "Rsi_Probability_Matrix Review: Settings, Strategy & How to Use It"
+title: "RSI Probability Matrix Review — Momentum Indicator"
 date: 2026-08-25
 draft: false
 type: reviews

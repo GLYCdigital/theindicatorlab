@@ -1,5 +1,5 @@
 ---
-title: "Envelopes Review: Settings, Strategy & How to Use It"
+title: "Envelopes Review — Volatility Indicator"
 tv_script_url: "https://www.tradingview.com/script/tdFmtqlQ-USS-Enterprise-Alpachino97/"
 date: 2026-07-16
 draft: false

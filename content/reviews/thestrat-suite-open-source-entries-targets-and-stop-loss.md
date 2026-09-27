@@ -1,5 +1,5 @@
 ---
-title: "Thestrat_Suite_Open_Source_Entries_Targets_And_Stop_Loss Review: Settings, Strategy & How to Use It"
+title: "Thestrat Suite Open Source Entries Targets And Stop Loss Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/dnJOzGmk-TheStrat-Suite-v3-1-1-SpinTrades/"
 date: 2026-08-10
 draft: false

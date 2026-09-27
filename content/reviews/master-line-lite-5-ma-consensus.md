@@ -1,5 +1,5 @@
 ---
-title: "Master_Line_Lite_5_Ma_Consensus Review: Settings, Strategy & How to Use It"
+title: "Master Line Lite 5 Ma Consensus Review — Trend Indicator"
 date: 2026-09-11
 draft: false
 type: reviews

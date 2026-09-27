@@ -1,5 +1,5 @@
 ---
-title: "Tranquila_Smc_Free_01 Review: Settings, Strategy & How to Use It"
+title: "Tranquila SMC Free 01 Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

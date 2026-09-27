@@ -1,5 +1,5 @@
 ---
-title: "Supertrend Review: Settings, Strategy & How to Use It"
+title: "Supertrend Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/r6dAP7yi-Supertrend-KivancOzbilgic/"
 date: 2026-08-01
 draft: false
@@ -20,7 +20,6 @@ description: "Honest Supertrend review: tested settings, ATR multiplier tricks, 
 grounding: "none (no source found)"
 ---
 # Supertrend Review
-
 Supertrend isn't clever. It's not a secret formula. It's a trend-following workhorse that's been around for two decades, and if you've traded for more than a month, you've probably seen it painted across someone's chart. But it still works, and it works better than most of the over-engineered indicators on TradingView.
 
 **What it really does**

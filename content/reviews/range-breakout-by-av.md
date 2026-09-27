@@ -1,5 +1,5 @@
 ---
-title: "Range_Breakout_By_Av Review: Settings, Strategy & How to Use It"
+title: "Range Breakout By Av Review — Trend Indicator"
 date: 2026-09-18
 draft: false
 type: reviews

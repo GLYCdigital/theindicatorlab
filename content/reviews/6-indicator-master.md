@@ -1,5 +1,5 @@
 ---
-title: "6_Indicator_Master Review: Settings, Strategy & How to Use It"
+title: "6 Indicator Master Review — Trend Indicator"
 date: 2026-08-22
 draft: false
 type: reviews

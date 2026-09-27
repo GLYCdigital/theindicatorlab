@@ -1,5 +1,5 @@
 ---
-title: "Money_Flow_Index_Mfi Review: Settings, Strategy & How to Use It"
+title: "Money Flow Index MFI Review — Volume Indicator"
 tv_script_url: "https://www.tradingview.com/script/hYmRLirx-Money-Flow-Index-everget/"
 date: 2026-08-09
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Money_Flow_Index_Mfi review: settings, overbought/oversold signals, trend filtering, and honest pros/cons for TradingView traders."
 grounding: "none (no source found)"
 ---
-# Money_Flow_Index_Mfi Review
-
+# Money Flow Index MFI Review
 Most MFI indicators on TradingView are a thin wrapper around the built-in one. This one is still a standard Money Flow Index oscillator at heart — but the implementation adds a few things the clones usually skip. Here's what you're getting and how to get value out of it.
 
 ## What This Indicator Actually Does

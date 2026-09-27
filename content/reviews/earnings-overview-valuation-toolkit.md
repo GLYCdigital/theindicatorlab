@@ -1,5 +1,5 @@
 ---
-title: "Earnings_Overview_Valuation_Toolkit Review: Settings, Strategy & How to Use It"
+title: "Earnings Overview Valuation Toolkit Review — Trend Indicator"
 date: 2026-08-29
 draft: false
 type: reviews

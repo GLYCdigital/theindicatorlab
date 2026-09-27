@@ -1,5 +1,5 @@
 ---
-title: "Signal_Fusion_Engine Review: Settings, Strategy & How to Use It"
+title: "Signal Fusion Engine Review — Trend Indicator"
 date: 2026-07-29
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Signal_Fusion_Engine combines multiple trend filters into one clean signal line. A solid 4/5 tool for trend traders who want fewer false entries."
 grounding: "none (no source found)"
 ---
-# Signal_Fusion_Engine Review
-
+# Signal Fusion Engine Review
 You know that feeling when you're staring at five different trend indicators—EMA crossovers, ADX, MACD, SuperTrend—and they're all saying slightly different things? That's the problem Signal_Fusion_Engine tries to solve. It's not a magic bullet, but it does one thing well: it merges multiple trend signals into a single, cleaner line.
 
 ## What It Actually Does

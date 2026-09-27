@@ -1,5 +1,5 @@
 ---
-title: "Chess Review: Settings, Strategy & How to Use It"
+title: "Chess Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/HmMDG0mr-Chess-SimpleCryptoLife/"
 date: 2026-08-01
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Chess indicator review: settings, entry/exit logic, pros & cons. See how this trend tool compares to MACD and moving averages."
 grounding: "none (no source found)"
 ---
-# Chess Trend Indicator Review
-
+# Chess Review
 Chess is a trend-direction indicator that plots a colored histogram and a signal line directly on your chart. The name refers to how it "moves" between states — pawn to queen, not actual board analysis. It measures momentum shifts and trend strength through a proprietary blend of price position and volatility normalization.
 
 What you see on the chart is simple: green bars when bullish momentum is building, red when bearish, and gray during consolidation. There's also a crossover line that acts as a trigger. It's not a lagging moving average — it reacts faster than a standard EMA but slower than pure price action, which puts it in a middle ground suited to swing traders.

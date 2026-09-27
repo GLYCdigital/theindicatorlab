@@ -1,5 +1,5 @@
 ---
-title: "Acceleration_Deceleration_Ac_Oscillator Review: Settings, Strategy & How to Use It"
+title: "Acceleration Deceleration Ac Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/km02OY6p-Acceleration-Deceleration-ALEX-Z/"
 date: 2026-07-16
 draft: false

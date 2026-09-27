@@ -1,5 +1,5 @@
 ---
-title: "Open_Interest_Tracker Review: Settings, Strategy & How to Use It"
+title: "Open Interest Tracker Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/MYIdL3DL-Local-Open-Interest-ByzantiumScripts/"
 date: 2026-07-31
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "V2Rk_Price_Action_Internal_Exteranal_Structure Review: Settings, Strategy & How to Use It"
+title: "V2rk Price Action Internal Exteranal Structure Review — Market Structure Indicator"
 date: 2026-07-16
 draft: false
 type: reviews

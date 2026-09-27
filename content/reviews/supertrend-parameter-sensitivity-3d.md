@@ -1,5 +1,5 @@
 ---
-title: "Supertrend_Parameter_Sensitivity_3D Review: Settings, Strategy & How to Use It"
+title: "Supertrend Parameter Sensitivity 3d Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/kSMLs0Hh-Supertrend-Parameter-Sensitivity-3D-LuxAlgo/"
 date: 2026-07-16
 draft: false

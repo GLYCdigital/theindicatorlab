@@ -1,5 +1,5 @@
 ---
-title: "Rounding_Bottom_Top Review: Settings, Strategy & How to Use It"
+title: "Rounding Bottom Top Review — Trend Indicator"
 date: 2026-07-24
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Rounding_Bottom_Top detects classic reversal patterns automatically. Tested on MACD chart. Honest review of settings, pros, cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Rounding_Bottom_Top Review
-
+# Rounding Bottom Top Review
 Most pattern recognition indicators are junk. They repaint, fire false signals on noise, and make you feel clever until you check the P&L. So when you load up **Rounding_Bottom_Top** on a MACD chart, it's reasonable to expect more of the same. This one is not perfect, but it's a relatively clean implementation.
 
 ## What This Indicator Actually Does

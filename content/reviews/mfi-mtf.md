@@ -1,5 +1,5 @@
 ---
-title: "Mfi_Mtf Review: Settings, Strategy & How to Use It"
+title: "MFI MTF Review — Trend Indicator"
 date: 2026-08-21
 draft: false
 type: reviews
@@ -18,8 +18,7 @@ rating: 4
 description: "Mfi_Mtf review: multi-timeframe Money Flow Index divergence tool. Tested settings, entry logic, pros/cons, and who should use it."
 grounding: "none (no source found)"
 ---
-# Mfi_Mtf Review
-
+# MFI MTF Review
 Most multi-timeframe indicators are repackaged moving averages with extra steps. Mfi_Mtf is a Money Flow Index that pulls higher timeframe readings directly onto your current chart — and that single feature changes how you use it.
 
 ## What This Actually Does

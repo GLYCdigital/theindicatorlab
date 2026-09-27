@@ -1,5 +1,5 @@
 ---
-title: "Parabolic_Sar_With_Signals Review: Settings, Strategy & How to Use It"
+title: "Parabolic Sar With Signals Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/idpMOtsh-Parabolic-SAR-LonesomeTheBlue/"
 date: 2026-08-10
 draft: false
@@ -19,8 +19,7 @@ rating: 4
 description: "Honest Parabolic_Sar_With_Signals review: tested settings, entry/exit logic, pros/cons. See if this trend indicator beats the default SAR."
 grounding: "none (no source found)"
 ---
-# Parabolic_Sar_With_Signals Review
-
+# Parabolic Sar With Signals Review
 Most "enhanced" Parabolic SAR versions on TradingView repaint the dots and call it a day. Parabolic_Sar_With_Signals takes a different approach: it keeps the classic PSAR and layers on labeled buy/sell arrows that remove the guesswork from dot flips.
 
 ## What It Does
