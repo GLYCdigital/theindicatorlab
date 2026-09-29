@@ -1041,6 +1041,12 @@
   ],
   "adxr": [
     {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
@@ -1055,12 +1061,6 @@
     {
       "slug": "adx-average-directional-index",
       "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-divergence",
-      "title": "ADX Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -4491,8 +4491,8 @@
       "score": 8.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -4927,14 +4927,14 @@
       "score": 8.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -5227,12 +5227,6 @@
   ],
   "cup-and-handle": [
     {
-      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
-      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
       "rating": 4,
@@ -5247,6 +5241,12 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -7195,8 +7195,8 @@
       "score": 8.0
     },
     {
-      "slug": "ai-predictive-flow",
-      "title": "AI Predictive Flow Review \u2014 Market Structure Indicator",
+      "slug": "adx-with-di-di",
+      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -8189,6 +8189,32 @@
       "score": 12.0
     }
   ],
+  "f-o-market-trend-sector-stock-ranking": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-with-di-di",
+      "title": "ADX With Di Di Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "fair-value-gap-fvg": [
     {
       "slug": "1-trendline-strategy",
@@ -8668,7 +8694,7 @@
       "slug": "schaff-trend-cycle",
       "title": "Schaff Trend Cycle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 13.2
+      "score": 13.3
     },
     {
       "slug": "artemis-adaptive-rsi",
@@ -9249,8 +9275,8 @@
       "score": 8.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
+      "slug": "adx-with-di-di",
+      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -9933,6 +9959,12 @@
   ],
   "gold-session-map-sweep-signals": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -9947,12 +9979,6 @@
     {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -12681,8 +12707,8 @@
       "score": 8.0
     },
     {
-      "slug": "alligator-bill-williams",
-      "title": "Alligator Bill Williams Review \u2014 Momentum Indicator",
+      "slug": "adx-with-di-di",
+      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -18145,6 +18171,32 @@
       "title": "Asian Session Levels Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "onr-silver-bullet-m1d": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "open-interest-tracker": [
@@ -24892,13 +24944,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 14.4
+      "score": 14.5
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 14.4
+      "score": 14.5
     },
     {
       "slug": "center-of-gravity-cog-oscillator",
@@ -25236,7 +25288,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.3
+      "score": 11.4
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
@@ -25583,6 +25635,32 @@
       "score": 5.0
     }
   ],
+  "supply-demand-zone-detector": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "supply-demand-zones": [
     {
       "slug": "abcd-pattern",
@@ -25607,6 +25685,32 @@
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "support-map": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "agreement-streak-analyzer-fibonacciflux",
+      "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alligator-bill-williams",
+      "title": "Alligator Bill Williams Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "support-resistance-zones": [
@@ -28543,6 +28647,32 @@
     {
       "slug": "cumulative-volume-delta",
       "title": "Cumulative Volume Delta Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "volume-divergence-bayesian-projection": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
