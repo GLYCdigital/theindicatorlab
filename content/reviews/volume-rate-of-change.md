@@ -1,6 +1,6 @@
 ---
 title: "Volume Rate Of Change Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/N8EsCt8E-Volume-Rate-of-Change-warrior504th/"
+tv_script_url: "https://www.tradingview.com/script/N8EsCt8E-Volume-Rate-of-Change-Histogram-Layering/"
 date: 2026-07-16
 draft: false
 type: reviews

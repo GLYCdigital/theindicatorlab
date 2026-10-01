@@ -1,6 +1,6 @@
 ---
 title: "Divergence Detector Universal Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/aGVsqaph-Divergence-Detector-reees/"
+tv_script_url: "https://www.tradingview.com/script/aGVsqaph-Divergence-Detector/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Variable Index Dynamic Average Vidya Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/64ynXU2e-VIDYA-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/64ynXU2e/"
 date: 2026-09-02
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Force Index Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/9dtFGDnv-Force-Index-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/9dtFGDnv-Force-Index/"
 date: 2026-09-02
 draft: false
 type: reviews

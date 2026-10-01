@@ -1,6 +1,6 @@
 ---
 title: "Weighted Moving Average WMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/8ngdBVpM-Weighted-Moving-Average-WMA-mihakralj/"
+tv_script_url: "https://www.tradingview.com/script/8ngdBVpM-Weighted-Moving-Average-WMA/"
 date: 2026-07-20
 draft: false
 type: reviews

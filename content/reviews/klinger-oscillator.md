@@ -1,6 +1,6 @@
 ---
 title: "Klinger Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/41E5Ocgx-Klinger-Oscillator-ClassicScott/"
+tv_script_url: "https://www.tradingview.com/script/41E5Ocgx-Klinger-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Zones Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/Ge5aiJoT-Liquidity-Zones-MarketStructureLab/"
+tv_script_url: "https://www.tradingview.com/script/Ge5aiJoT-Liquidity-Zones/"
 date: 2026-07-23
 draft: false
 type: reviews

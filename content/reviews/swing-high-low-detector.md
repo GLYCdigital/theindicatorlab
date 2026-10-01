@@ -1,6 +1,6 @@
 ---
 title: "Swing High Low Detector Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ISEmCiIc-Swing-High-Low-Detector-R-V5/"
+tv_script_url: "https://www.tradingview.com/script/ISEmCiIc-Swing-High-Low-Detector-by-RV5/"
 date: 2026-08-23
 draft: false
 type: reviews

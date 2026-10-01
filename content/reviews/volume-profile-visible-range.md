@@ -1,6 +1,6 @@
 ---
 title: "Volume Profile Visible Range Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/yLEjeo0J-Volume-Profile-Visible-Range-For-All-Accounts-Investor-R/"
+tv_script_url: "https://www.tradingview.com/script/yLEjeo0J-Volume-Profile-Visible-Range-For-All-Accounts/"
 date: 2026-08-17
 draft: false
 type: reviews

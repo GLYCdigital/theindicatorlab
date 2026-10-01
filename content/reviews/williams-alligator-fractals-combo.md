@@ -1,6 +1,6 @@
 ---
 title: "Williams Alligator Fractals Combo Review — Momentum"
-tv_script_url: "https://www.tradingview.com/script/1npqNTlB-Williams-Alligator-FloatingApexCharts/"
+tv_script_url: "https://www.tradingview.com/script/1npqNTlB-Williams-Alligator-DM/"
 date: 2026-08-03
 draft: false
 type: reviews

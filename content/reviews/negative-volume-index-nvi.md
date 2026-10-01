@@ -1,6 +1,6 @@
 ---
 title: "Negative Volume Index NVI Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/3Xs25FQc-Negative-Volume-Index-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/3Xs25FQc-Negative-Volume-Index-NVI/"
 date: 2026-08-10
 draft: false
 type: reviews

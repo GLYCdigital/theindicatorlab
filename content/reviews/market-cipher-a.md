@@ -1,6 +1,6 @@
 ---
 title: "Market Cipher A Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/cAw5GEAB-Market-Cipher-A-falconCoin/"
+tv_script_url: "https://www.tradingview.com/script/cAw5GEAB-Market-Cipher-A-free-version-1-1/"
 date: 2026-07-16
 draft: false
 type: reviews

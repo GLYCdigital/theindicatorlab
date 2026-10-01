@@ -1,6 +1,6 @@
 ---
 title: "Murrey Math Lines Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/Pr1XQhCm-Murrey-Math-Lines-Nanda86/"
+tv_script_url: "https://www.tradingview.com/script/Pr1XQhCm-Murrey-Math-Lines-with-labels/"
 date: 2026-07-16
 draft: false
 type: reviews

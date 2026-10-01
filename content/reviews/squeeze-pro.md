@@ -1,6 +1,6 @@
 ---
 title: "Squeeze Pro Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/RvhxmdDB-Squeeze-Pro-mythyyt748/"
+tv_script_url: "https://www.tradingview.com/script/RvhxmdDB/"
 date: 2026-07-24
 draft: false
 type: reviews

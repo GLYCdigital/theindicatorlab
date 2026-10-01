@@ -1,6 +1,6 @@
 ---
 title: "Regression Trend Miesoncharts Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/yvTpCe0f-Regression-Trend-Mies-MiesOnCharts/"
+tv_script_url: "https://www.tradingview.com/script/yvTpCe0f-Regression-Trend-MiesOnCharts/"
 date: 2026-08-13
 draft: false
 type: reviews

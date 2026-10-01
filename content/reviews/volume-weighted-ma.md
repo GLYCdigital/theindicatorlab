@@ -1,6 +1,6 @@
 ---
 title: "Volume Weighted Ma Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/fhPYhWYA-Volume-Weighted-MACD-LazyBear/"
+tv_script_url: "https://www.tradingview.com/script/fhPYhWYA-Indicators-Volume-Weighted-MACD-Histogram-Sentiment-Zone-Osc/"
 date: 2026-07-16
 draft: false
 type: reviews

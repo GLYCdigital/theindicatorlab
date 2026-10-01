@@ -1,6 +1,6 @@
 ---
 title: "Interest Rate Sensitivity Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/NUbpGm4t-Interest-Rates-Realmix-mit-Soda/"
+tv_script_url: "https://www.tradingview.com/script/NUbpGm4t/"
 date: 2026-07-16
 draft: false
 type: reviews

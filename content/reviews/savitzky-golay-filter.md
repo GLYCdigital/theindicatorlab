@@ -1,6 +1,6 @@
 ---
 title: "Savitzky Golay Filter Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ZQ4fiJfH-Savitzky-Golay-Filtered-Chande-Momentum-Oscillator-profitprotrading/"
+tv_script_url: "https://www.tradingview.com/script/ZQ4fiJfH-Savitzky-Golay-Filtered-Chande-Momentum-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Trailing Stop Calculator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/UnZ6ba0I-Trailing-Stop-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/UnZ6ba0I/"
 date: 2026-07-18
 draft: false
 type: reviews

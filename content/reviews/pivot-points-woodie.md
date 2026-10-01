@@ -1,6 +1,6 @@
 ---
 title: "Pivot Points Woodie Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-juanmirocks/"
+tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-by-juanmirocks/"
 date: 2026-08-08
 draft: false
 type: reviews

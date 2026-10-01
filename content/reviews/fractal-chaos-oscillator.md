@@ -1,6 +1,6 @@
 ---
 title: "Fractal Chaos Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/KkwxKmnl-Fractal-Chaos-Oscillator-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/KkwxKmnl-Fractal-Chaos-Oscillator-Backtest/"
 date: 2026-07-16
 draft: false
 type: reviews

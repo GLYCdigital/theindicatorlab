@@ -1,6 +1,6 @@
 ---
 title: "Strategy Forecast Engine Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/MfCTj4bT-Strategy-Forecast-Engine-QuantitativeAlpha/"
+tv_script_url: "https://www.tradingview.com/script/MfCTj4bT-Strategy-Forecast-Engine/"
 date: 2026-07-16
 draft: false
 type: reviews

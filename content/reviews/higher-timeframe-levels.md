@@ -1,6 +1,6 @@
 ---
 title: "Higher Timeframe Levels Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Zw16oWYX-Higher-TimeFrame-levels-melodicfish/"
+tv_script_url: "https://www.tradingview.com/script/Zw16oWYX-Higher-Time-Frame-levels/"
 date: 2026-07-16
 draft: false
 type: reviews

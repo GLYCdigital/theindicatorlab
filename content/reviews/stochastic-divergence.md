@@ -1,6 +1,6 @@
 ---
 title: "Stochastic Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/aMMDHRY0-Stochastic-Divergence-DiZer/"
+tv_script_url: "https://www.tradingview.com/script/aMMDHRY0-stochastic-divergence/"
 date: 2026-07-16
 draft: false
 type: reviews

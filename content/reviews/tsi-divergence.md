@@ -1,6 +1,6 @@
 ---
 title: "TSI Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/8e67aeZY-TSI-Divergences-PHVNTOM-TRADER/"
+tv_script_url: "https://www.tradingview.com/script/8e67aeZY-TSI-Divergences/"
 date: 2026-08-14
 draft: false
 type: reviews

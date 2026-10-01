@@ -1,6 +1,6 @@
 ---
 title: "The Oloid Owma Oloid Weighted Moving Average Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/1AnDnjsz-The-Oloid-OWMA-Oloid-Weighted-Moving-Average-Sesilya/"
+tv_script_url: "https://www.tradingview.com/script/1AnDnjsz-The-Oloid-OWMA-Oloid-Weighted-Moving-Average/"
 date: 2026-08-11
 draft: false
 type: reviews

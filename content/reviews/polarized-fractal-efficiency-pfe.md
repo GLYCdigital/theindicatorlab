@@ -1,6 +1,6 @@
 ---
 title: "Polarized Fractal Efficiency Pfe Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/T0OxPew6-PFE-scaler-danny-tor/"
+tv_script_url: "https://www.tradingview.com/script/T0OxPew6/"
 date: 2026-09-03
 draft: false
 type: reviews

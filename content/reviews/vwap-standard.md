@@ -1,6 +1,6 @@
 ---
 title: "VWAP Standard Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/p1Cc05xX-djt-vwap-bands-stoicscalper/"
+tv_script_url: "https://www.tradingview.com/script/p1Cc05xX-VWAP-Standard-Deviation-Bands-w-History-Labels/"
 date: 2026-08-25
 draft: false
 type: reviews

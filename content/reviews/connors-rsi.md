@@ -1,6 +1,6 @@
 ---
 title: "Connors RSI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/582ZiBQK-Connors-RSI-Mlnklkm/"
+tv_script_url: "https://www.tradingview.com/script/582ZiBQK-Connors-RSI-with-alert/"
 date: 2026-07-16
 draft: false
 type: reviews

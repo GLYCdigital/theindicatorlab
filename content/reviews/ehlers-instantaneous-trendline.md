@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Instantaneous Trendline Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/wwbe7v9s-Ehlers-Instantaneous-Trendline-everget/"
+tv_script_url: "https://www.tradingview.com/script/wwbe7v9s-Ehlers-Instantaneous-Trendline/"
 date: 2026-07-16
 draft: false
 type: reviews

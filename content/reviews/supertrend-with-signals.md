@@ -1,6 +1,6 @@
 ---
 title: "Supertrend With Signals Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/A4JM6ruY-Supertrend-akghuf19ag24/"
+tv_script_url: "https://www.tradingview.com/script/A4JM6ruY-Supertrend-With-SMA-Death-Cross/"
 date: 2026-08-06
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Pullback Sniper Method Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/IqyiZbCh-Pullback-Sniper-Method-trade-w-samet-tradewsamet/"
+tv_script_url: "https://www.tradingview.com/script/IqyiZbCh-Pullback-Sniper-Method-trade-w-samet/"
 date: 2026-07-16
 draft: false
 type: reviews

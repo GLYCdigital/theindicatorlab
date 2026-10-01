@@ -1,6 +1,6 @@
 ---
 title: "VWAP Multi Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/BB5W07az-VWAP-Multi-Timeframe-FriendOfTheTrend/"
+tv_script_url: "https://www.tradingview.com/script/BB5W07az-VWAP-Multi-Timeframe/"
 date: 2026-07-16
 draft: false
 type: reviews

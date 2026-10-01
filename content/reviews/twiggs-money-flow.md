@@ -1,6 +1,6 @@
 ---
 title: "Twiggs Money Flow Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/81mNibdq-Twiggs-Money-Flow-optictropic/"
+tv_script_url: "https://www.tradingview.com/script/81mNibdq-Twiggs-Money-Flow/"
 date: 2026-07-16
 draft: false
 type: reviews

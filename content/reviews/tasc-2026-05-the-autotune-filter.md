@@ -1,6 +1,6 @@
 ---
 title: "Tasc 2026 05 The Autotune Filter Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/GqKlw3yv-TASC-2026-05-The-AutoTune-Filter-PineCodersTASC/"
+tv_script_url: "https://www.tradingview.com/script/GqKlw3yv-TASC-2026-05-The-AutoTune-Filter/"
 date: 2026-07-16
 draft: false
 type: reviews

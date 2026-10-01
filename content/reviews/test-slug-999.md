@@ -1,6 +1,6 @@
 ---
 title: "Test Slug 999 Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/iwCuA44Q-Test-Indicator-xnadam/"
+tv_script_url: "https://www.tradingview.com/script/iwCuA44Q-Junk-Indicator/"
 date: 2026-07-24
 draft: false
 type: reviews

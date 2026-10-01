@@ -1,6 +1,6 @@
 ---
 title: "Standard Deviation Channels Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Mvyufvyg-StandardDevChannel-SUNNY29081975/"
+tv_script_url: "https://www.tradingview.com/script/Mvyufvyg-Standard-Deviation-Channels-ThinkorSwim-identical/"
 date: 2026-07-16
 draft: false
 type: reviews

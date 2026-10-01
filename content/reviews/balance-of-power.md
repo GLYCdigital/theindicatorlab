@@ -1,6 +1,6 @@
 ---
 title: "Balance Of Power Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/mgRvWhOb-Balance-of-Power-ClassicScott/"
+tv_script_url: "https://www.tradingview.com/script/mgRvWhOb-Balance-of-Power/"
 date: 2026-07-16
 draft: false
 type: reviews

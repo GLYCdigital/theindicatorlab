@@ -1,6 +1,6 @@
 ---
 title: "Breaker Blocks Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/zO0geJ5O-Volumized-Breaker-Blocks-fluxchart/"
+tv_script_url: "https://www.tradingview.com/script/zO0geJ5O-Breaker-Blocks-Flux-Charts/"
 date: 2026-07-16
 draft: false
 type: reviews

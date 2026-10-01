@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Knn Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/GpcT4M6T-Machine-Learning-kNN-based-Strategy-capissimo/"
+tv_script_url: "https://www.tradingview.com/script/GpcT4M6T-Machine-Learning-kNN-based-Strategy/"
 date: 2026-07-16
 draft: false
 type: reviews

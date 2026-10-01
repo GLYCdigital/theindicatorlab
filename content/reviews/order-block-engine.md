@@ -1,6 +1,6 @@
 ---
 title: "Order Block Engine Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/YVAh9IZb-Order-Block-Engine-JOAT-officialjackofalltrades/"
+tv_script_url: "https://www.tradingview.com/script/YVAh9IZb-Order-Block-Engine-JOAT/"
 date: 2026-08-03
 draft: false
 type: reviews

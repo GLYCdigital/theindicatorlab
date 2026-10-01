@@ -1,6 +1,6 @@
 ---
 title: "Session Volume Profile Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/niaUzHtv-Session-Volume-Profile-AUMBaumgartner/"
+tv_script_url: "https://www.tradingview.com/script/niaUzHtv/"
 date: 2026-08-02
 draft: false
 type: reviews

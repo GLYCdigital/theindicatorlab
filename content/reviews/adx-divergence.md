@@ -1,6 +1,6 @@
 ---
 title: "ADX Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/VasRj4YR-ADX-Divergence-Indicator-maybethatguy/"
+tv_script_url: "https://www.tradingview.com/script/VasRj4YR-ADX-Divergence-Indicator/"
 date: 2026-07-16
 draft: false
 type: reviews

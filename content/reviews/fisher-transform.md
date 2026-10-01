@@ -1,6 +1,6 @@
 ---
 title: "Fisher Transform Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/ULUdZIUq-Fisher-Transform-InSilico/"
+tv_script_url: "https://www.tradingview.com/script/ULUdZIUq-Adaptive-Fisher/"
 date: 2026-07-16
 draft: false
 type: reviews

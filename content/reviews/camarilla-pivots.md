@@ -1,6 +1,6 @@
 ---
 title: "Camarilla Pivots Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/Cn8uI66B-Camarilla-Pivots-Optional-CPR-chipmonk/"
+tv_script_url: "https://www.tradingview.com/script/Cn8uI66B-Camarilla-Pivots/"
 date: 2026-07-16
 draft: false
 type: reviews

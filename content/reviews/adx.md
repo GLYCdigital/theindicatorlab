@@ -1,6 +1,6 @@
 ---
 title: "ADX Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/i2IYS9TW-ADX-and-DI-binary-trader66/"
+tv_script_url: "https://www.tradingview.com/script/i2IYS9TW-ADX-by-cobra/"
 date: 2026-07-16
 draft: false
 type: reviews

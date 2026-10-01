@@ -1,6 +1,6 @@
 ---
 title: "RSI MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/htJrFmxr-RSI-MTF-DiZer/"
+tv_script_url: "https://www.tradingview.com/script/htJrFmxr-RSI-MTF-Impulse-Filter/"
 date: 2026-08-26
 draft: false
 type: reviews

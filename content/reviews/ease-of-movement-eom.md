@@ -1,6 +1,6 @@
 ---
 title: "Ease Of Movement Eom Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Y9Eykm1v-Ease-of-Movement-EOM-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/Y9Eykm1v-Ease-of-Movement-EOM/"
 date: 2026-09-03
 draft: false
 type: reviews

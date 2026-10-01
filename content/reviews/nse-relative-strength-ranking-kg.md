@@ -2,6 +2,7 @@
 title: "Nse Relative Strength Ranking Kg Review — Trend Indicator"
 date: 2026-09-11
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/nse-relative-strength-ranking-kg.png"
 tags:

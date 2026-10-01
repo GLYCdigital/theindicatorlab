@@ -1,6 +1,6 @@
 ---
 title: "Session Vp Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/KdoXRLvN-Session-VP-Signal-Manual-VAH-VAL-POC-AngryVet81/"
+tv_script_url: "https://www.tradingview.com/script/KdoXRLvN-VEGA-PRIME-2026/"
 date: 2026-08-09
 draft: false
 type: reviews

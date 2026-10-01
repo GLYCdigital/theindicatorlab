@@ -1,6 +1,6 @@
 ---
 title: "Alphax Surge Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/9mjcGrdT-A-L-P-H-A-X-SURGE-AlphaX-Trade/"
+tv_script_url: "https://www.tradingview.com/script/9mjcGrdT-A-L-P-H-A-X-SURGE/"
 date: 2026-07-16
 draft: false
 type: reviews

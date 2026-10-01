@@ -1,6 +1,6 @@
 ---
 title: "Volume Profile Pro Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/r3VrWAO4-Volume-Profile-kv4coins/"
+tv_script_url: "https://www.tradingview.com/script/r3VrWAO4-Volume-Profile/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Wyckoff Schematic Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/gQynUonZ-Wyckoff-Schematic-kingshukghosh71/"
+tv_script_url: "https://www.tradingview.com/script/gQynUonZ-Wyckoff-Schematic-by-Kingshuk-Ghosh/"
 date: 2026-08-19
 draft: false
 type: reviews

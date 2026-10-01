@@ -1,6 +1,6 @@
 ---
 title: "Standard Deviation Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/LZaJz7uB-WISE-TRADER-STANDARD-DEVIATIONS-SETUP-thisiskanisk/"
+tv_script_url: "https://www.tradingview.com/script/LZaJz7uB-STANDARD-DEVIATION-INDICATOR-BY-WISE-TRADER/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -3,6 +3,7 @@ title: "Candlestick Pattern Recognition Review — Chart Patterns"
 tv_script_url: "https://www.tradingview.com/script/whcY7Y7k-Candles-UnknownUnicorn3006803/"
 date: 2026-07-16
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/candlestick-pattern-recognition.png"
 tags:

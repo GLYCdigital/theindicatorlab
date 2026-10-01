@@ -1,6 +1,6 @@
 ---
 title: "On Balance Volume OBV Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/Gb7B8oS6-On-Balance-Volume-everget/"
+tv_script_url: "https://www.tradingview.com/script/Gb7B8oS6-On-Balance-Volume/"
 date: 2026-08-12
 draft: false
 type: reviews

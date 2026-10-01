@@ -1,6 +1,6 @@
 ---
 title: "Price Channel Breakout Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/bQ2sg8b7-Price-Channel-koryu/"
+tv_script_url: "https://www.tradingview.com/script/bQ2sg8b7-Price-Channel/"
 date: 2026-08-07
 draft: false
 type: reviews

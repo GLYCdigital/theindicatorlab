@@ -1,6 +1,6 @@
 ---
 title: "Smt Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/PH9fxHqo-SMT-Divergence-ClayeWeight/"
+tv_script_url: "https://www.tradingview.com/script/PH9fxHqo-SMT-Divergence/"
 date: 2026-08-14
 draft: false
 type: reviews

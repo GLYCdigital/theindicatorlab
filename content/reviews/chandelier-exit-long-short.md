@@ -1,6 +1,6 @@
 ---
 title: "Chandelier Exit Long Short Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/ZdyJGYHL-Chandelier-Exit-earnSmartAlgorithm/"
+tv_script_url: "https://www.tradingview.com/script/ZdyJGYHL-Chandelier-Exit-SAR-Long-Only-4CUP/"
 date: 2026-07-16
 draft: false
 type: reviews

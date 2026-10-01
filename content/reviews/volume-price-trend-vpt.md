@@ -1,6 +1,6 @@
 ---
 title: "Volume Price Trend VPT Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/ztwtWx1Y-Volume-Price-Trend-VPT-BiggWigg/"
+tv_script_url: "https://www.tradingview.com/script/ztwtWx1Y-Volume-Price-Trend-VPT/"
 date: 2026-08-17
 draft: false
 type: reviews

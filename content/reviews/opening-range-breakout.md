@@ -1,6 +1,6 @@
 ---
 title: "Opening Range Breakout Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/iVglS0oT-Opening-Range-Breakout-TradeSeekers/"
+tv_script_url: "https://www.tradingview.com/script/iVglS0oT-Opening-Range-Breakout-with-Price-Targets/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands Standard Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/Dk7Fj3bz-Bollinger-Bands-Standard-Deviation-ADX-strategy-matsu-bitmex/"
+tv_script_url: "https://www.tradingview.com/script/Dk7Fj3bz/"
 date: 2026-07-16
 draft: false
 type: reviews

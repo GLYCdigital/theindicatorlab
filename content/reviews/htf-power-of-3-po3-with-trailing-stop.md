@@ -1,6 +1,6 @@
 ---
 title: "HTF Power Of 3 PO3 With Trailing Stop Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/w9HSYhzg-HTF-Power-of-3-PO3-with-Trailing-Stop-BigBeluga/"
+tv_script_url: "https://www.tradingview.com/script/w9HSYhzg-HTF-Power-of-3-PO3-with-Trailing-Stop/"
 date: 2026-08-03
 draft: false
 type: reviews

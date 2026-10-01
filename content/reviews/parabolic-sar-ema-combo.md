@@ -1,6 +1,6 @@
 ---
 title: "Parabolic Sar EMA Combo Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/N7N7dvuc-Parabolic-SAR-kanungo-paresh29/"
+tv_script_url: "https://www.tradingview.com/script/N7N7dvuc-Parabolic-SAR-along-with-Heiken-ashi-Open-strategy-and-EMA-move/"
 date: 2026-07-24
 draft: false
 type: reviews

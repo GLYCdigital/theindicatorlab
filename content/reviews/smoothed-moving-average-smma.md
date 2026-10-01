@@ -1,6 +1,6 @@
 ---
 title: "Smoothed Moving Average Smma Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ej9CIfi4-Smoothed-Moving-Average-muzzdang/"
+tv_script_url: "https://www.tradingview.com/script/ej9CIfi4-Smoothed-Moving-Average-Zip-Charlie/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Order Flow Imbalance Sr Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow-prokopchuksv21/"
+tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow/"
 date: 2026-09-03
 draft: false
 type: reviews

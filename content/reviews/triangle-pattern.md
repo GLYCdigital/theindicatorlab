@@ -1,6 +1,6 @@
 ---
 title: "Triangle Pattern Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/k1uUbyXz-Triangle-Pattern-Breakout-Indicator-Dots3Red/"
+tv_script_url: "https://www.tradingview.com/script/k1uUbyXz-Triangle-Pattern-Detection-Dots3Red/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "VWAP Sigma Bands Y Algo Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/XZf5ir4C-VWAP-Sigma-Bands-YAlgo/"
+tv_script_url: "https://www.tradingview.com/script/XZf5ir4C-VWAP-Sigma-Bands-Y-Algo/"
 date: 2026-07-16
 draft: false
 type: reviews

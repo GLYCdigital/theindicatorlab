@@ -1,6 +1,6 @@
 ---
 title: "EMA Ribbon Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/2YTnp9BJ-EMA-Ribbon-rknkr/"
+tv_script_url: "https://www.tradingview.com/script/2YTnp9BJ-EMA-Ribbon/"
 date: 2026-07-16
 draft: false
 type: reviews

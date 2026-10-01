@@ -1,6 +1,6 @@
 ---
 title: "Qqe Mod Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/TpUW4muw-QQE-MOD-Mihkel00/"
+tv_script_url: "https://www.tradingview.com/script/TpUW4muw-QQE-MOD/"
 date: 2026-07-16
 draft: false
 type: reviews

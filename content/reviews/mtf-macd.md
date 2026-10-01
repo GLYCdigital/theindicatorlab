@@ -1,6 +1,6 @@
 ---
 title: "MTF MACD Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/6NkIM8r5-MTF-MACD-QuantXOR/"
+tv_script_url: "https://www.tradingview.com/script/6NkIM8r5-MTF-MACD/"
 date: 2026-07-16
 draft: false
 type: reviews

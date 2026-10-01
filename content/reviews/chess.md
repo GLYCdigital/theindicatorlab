@@ -1,6 +1,6 @@
 ---
 title: "Chess Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/HmMDG0mr-Chess-SimpleCryptoLife/"
+tv_script_url: "https://www.tradingview.com/script/HmMDG0mr-Chess/"
 date: 2026-08-01
 draft: false
 type: reviews

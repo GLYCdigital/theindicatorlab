@@ -1,6 +1,6 @@
 ---
 title: "Pivot Points Camarilla Review — Support & Resistance"
-tv_script_url: "https://www.tradingview.com/script/FjUVM2Ee-Pivot-Points-Camarilla-MrWiggins/"
+tv_script_url: "https://www.tradingview.com/script/FjUVM2Ee-20-Camarilla-Pivot-Points/"
 date: 2026-07-16
 draft: false
 type: reviews

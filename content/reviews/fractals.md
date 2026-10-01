@@ -1,6 +1,6 @@
 ---
 title: "Fractals Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/F2vLpcxJ-Fractals-Custom-Periods-DonkeyEmporium/"
+tv_script_url: "https://www.tradingview.com/script/F2vLpcxJ-Fractals-Swing-Points-Highs-Lows-Custom-Periods/"
 date: 2026-07-16
 draft: false
 type: reviews

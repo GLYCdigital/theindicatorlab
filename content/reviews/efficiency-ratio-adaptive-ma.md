@@ -1,6 +1,6 @@
 ---
 title: "Efficiency Ratio Adaptive Ma Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/dneYi7kK-Efficiency-Ratio-nemozny/"
+tv_script_url: "https://www.tradingview.com/script/dneYi7kK-Efficiency-Ratio-Kaufman/"
 date: 2026-07-16
 draft: false
 type: reviews

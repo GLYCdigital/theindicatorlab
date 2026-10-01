@@ -2,6 +2,7 @@
 title: "Icon Bot Review — Trend Indicator"
 date: 2026-08-17
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/icon-bot.png"
 tags:

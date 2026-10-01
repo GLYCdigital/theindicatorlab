@@ -1,6 +1,6 @@
 ---
 title: "Previous Day High Low Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/bURJlUiB-Previous-Day-High-Low-mikescott10205/"
+tv_script_url: "https://www.tradingview.com/script/bURJlUiB-Previous-Day-High-Low/"
 date: 2026-07-16
 draft: false
 type: reviews

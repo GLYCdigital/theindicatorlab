@@ -1,6 +1,6 @@
 ---
 title: "Kalman Auction Ribbon Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/nj6iZq59-Kalman-Auction-Ribbon-JOAT-officialjackofalltrades/"
+tv_script_url: "https://www.tradingview.com/script/nj6iZq59-Kalman-Auction-Ribbon-JOAT/"
 date: 2026-07-16
 draft: false
 type: reviews

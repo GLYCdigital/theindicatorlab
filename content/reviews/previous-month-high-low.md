@@ -1,6 +1,6 @@
 ---
 title: "Previous Month High Low Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/NLzdh8Pn-Previous-Month-High-Low-LocalLucky553/"
+tv_script_url: "https://www.tradingview.com/script/NLzdh8Pn-Previous-Month-High-Low/"
 date: 2026-07-16
 draft: false
 type: reviews

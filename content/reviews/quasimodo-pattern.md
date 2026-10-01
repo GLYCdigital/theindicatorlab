@@ -1,6 +1,6 @@
 ---
 title: "Quasimodo Pattern Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/SQRSlcup-Quasimodo-Pattern-EmreKb/"
+tv_script_url: "https://www.tradingview.com/script/SQRSlcup/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Session VWAP Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/MNsrD1HA-Session-VWAP-Koalafied-3/"
+tv_script_url: "https://www.tradingview.com/script/MNsrD1HA-Session-Day-VWAP-Std-Dev-Bands/"
 date: 2026-08-25
 draft: false
 type: reviews

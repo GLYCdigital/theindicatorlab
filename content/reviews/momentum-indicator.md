@@ -1,6 +1,6 @@
 ---
 title: "Momentum Indicator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/BrV5xYVR-Momentum-Candles-Wayne-o/"
+tv_script_url: "https://www.tradingview.com/script/BrV5xYVR-Momentum-Indicator/"
 date: 2026-07-28
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Know Sure Thing Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Av6dMCJw-Know-Sure-Thing-JourneyToWealth/"
+tv_script_url: "https://www.tradingview.com/script/Av6dMCJw-Know-Sure-Thing-with-Alerts/"
 date: 2026-07-16
 draft: false
 type: reviews

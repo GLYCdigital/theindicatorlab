@@ -2,6 +2,7 @@
 title: "CHOCH Identifier Review — Market Structure Indicator"
 date: 2026-08-16
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/choch-identifier.png"
 tags:

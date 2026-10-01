@@ -1,6 +1,6 @@
 ---
 title: "Edward Smart Channel Reversal Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/xPPGVYC8-Edward-Smart-Channel-Reversal-Jos-ProTrader/"
+tv_script_url: "https://www.tradingview.com/script/xPPGVYC8-Edward-Smart-Channel-Reversal/"
 date: 2026-07-16
 draft: false
 type: reviews

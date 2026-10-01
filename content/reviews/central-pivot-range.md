@@ -1,6 +1,6 @@
 ---
 title: "Central Pivot Range Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/R6lRetr0-Central-Pivot-Range-ajithcpas/"
+tv_script_url: "https://www.tradingview.com/script/R6lRetr0-CPR-Central-Pivot-Range/"
 date: 2026-07-16
 draft: false
 type: reviews

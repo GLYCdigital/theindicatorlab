@@ -1,6 +1,6 @@
 ---
 title: "Adaptive Moving Average Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/urJFGIcv-Adaptive-Moving-Average-everget/"
+tv_script_url: "https://www.tradingview.com/script/urJFGIcv-Adaptive-Moving-Average/"
 date: 2026-07-16
 draft: false
 type: reviews

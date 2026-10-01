@@ -1,6 +1,6 @@
 ---
 title: "Market Structure SMC Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-LeviathanCapital/"
+tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-By-Leviathan/"
 date: 2026-08-07
 draft: false
 type: reviews

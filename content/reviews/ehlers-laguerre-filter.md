@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Laguerre Filter Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/6aMJzwII-Ehlers-Laguerre-Filter-CC-cheatcountry/"
+tv_script_url: "https://www.tradingview.com/script/6aMJzwII-Ehlers-Laguerre-Filter-CC/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Supertrend With Buy Sell Signals Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/WfPEtpVi-Supertrend-with-Customizable-Buy-Sell-Text-Colors-Imakesound/"
+tv_script_url: "https://www.tradingview.com/script/WfPEtpVi-Supertrend-with-Buy-Sell-Signals/"
 date: 2026-08-13
 draft: false
 type: reviews

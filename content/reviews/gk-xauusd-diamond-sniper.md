@@ -1,6 +1,6 @@
 ---
 title: "Gk Xauusd Diamond Sniper Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ETabdhXm-GK-XAUUSD-Diamond-Sniper-GOLDKINGspecialist/"
+tv_script_url: "https://www.tradingview.com/script/ETabdhXm-GK-XAUUSD-Diamond-Sniper/"
 date: 2026-07-16
 draft: false
 type: reviews

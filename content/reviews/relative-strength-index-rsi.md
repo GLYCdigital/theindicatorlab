@@ -1,6 +1,6 @@
 ---
 title: "Relative Strength Index RSI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/b8oS0gtH-Relative-Strength-Index-RSI-sandeepgoyal194/"
+tv_script_url: "https://www.tradingview.com/script/b8oS0gtH-Relative-Strength-Index-RSI-Range-60-40/"
 date: 2026-07-16
 draft: false
 type: reviews

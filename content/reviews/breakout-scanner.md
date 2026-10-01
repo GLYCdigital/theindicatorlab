@@ -1,6 +1,6 @@
 ---
 title: "Breakout Scanner Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/6Y6abda7-Breakout-Scanner-FriendOfTheTrend/"
+tv_script_url: "https://www.tradingview.com/script/6Y6abda7-Breakout-Scanner/"
 date: 2026-07-16
 draft: false
 type: reviews

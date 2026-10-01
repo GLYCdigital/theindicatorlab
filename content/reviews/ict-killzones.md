@@ -1,6 +1,6 @@
 ---
 title: "ICT Killzones Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/ehwcUFM8-ICT-Killzones-enricoamato997/"
+tv_script_url: "https://www.tradingview.com/script/ehwcUFM8-ICT-Killzones/"
 date: 2026-07-16
 draft: false
 type: reviews

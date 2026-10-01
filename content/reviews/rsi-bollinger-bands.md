@@ -1,6 +1,6 @@
 ---
 title: "RSI Bollinger Bands Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/C3qd5Svp-RSI-Bollinger-Bands-sndwav/"
+tv_script_url: "https://www.tradingview.com/script/C3qd5Svp-RSI-Bollinger-Bands/"
 date: 2026-08-10
 draft: false
 type: reviews

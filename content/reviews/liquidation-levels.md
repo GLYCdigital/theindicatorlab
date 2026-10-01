@@ -1,6 +1,6 @@
 ---
 title: "Liquidation Levels Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/jL6TUXvo-Liquidation-Levels-LeviathanCapital/"
+tv_script_url: "https://www.tradingview.com/script/jL6TUXvo-Liquidation-Levels-By-Leviathan/"
 date: 2026-07-16
 draft: false
 type: reviews

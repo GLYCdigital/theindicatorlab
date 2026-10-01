@@ -1,6 +1,6 @@
 ---
 title: "Multi Indicator Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/FC5rlutE-Multi-Indicator-Divergence-francxisz/"
+tv_script_url: "https://www.tradingview.com/script/FC5rlutE-Multi-Indicator-Divergence/"
 date: 2026-08-14
 draft: false
 type: reviews

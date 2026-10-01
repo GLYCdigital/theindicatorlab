@@ -1,6 +1,6 @@
 ---
 title: "Super Trend Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/UHiDD7Fs-Super-Trend-ceyhun/"
+tv_script_url: "https://www.tradingview.com/script/UHiDD7Fs/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Least Squares Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/V67YaGcm-Least-Squares-Moving-Average-Crossover-veryfid/"
+tv_script_url: "https://www.tradingview.com/script/V67YaGcm-LSMA-Crossover/"
 date: 2026-07-16
 draft: false
 type: reviews

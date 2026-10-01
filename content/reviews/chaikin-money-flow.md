@@ -1,6 +1,6 @@
 ---
 title: "Chaikin Money Flow Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/tIRG7iDH-Chaikin-Money-Flow-nj-guy72/"
+tv_script_url: "https://www.tradingview.com/script/tIRG7iDH-Chaikin-Money-Flow/"
 date: 2026-07-16
 draft: false
 type: reviews

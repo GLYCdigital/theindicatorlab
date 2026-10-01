@@ -1,6 +1,6 @@
 ---
 title: "Keltner Channels Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/HlcyhYMx-Keltner-Channels-RakoQuant/"
+tv_script_url: "https://www.tradingview.com/script/HlcyhYMx-Keltner-Channels-For-Loop-RakoQuant/"
 date: 2026-07-16
 draft: false
 type: reviews

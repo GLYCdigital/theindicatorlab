@@ -1,6 +1,6 @@
 ---
 title: "Fair Value Gap FVG Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/MXoSibAB-FVG-algomaxx-pro/"
+tv_script_url: "https://www.tradingview.com/script/MXoSibAB-Fair-Value-Gap-FVG-by-AlgoMaxx/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Supply Demand Zones Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/QlbvivX4-Supply-Demand-Zones-The-Forex-Steward/"
+tv_script_url: "https://www.tradingview.com/script/QlbvivX4-Supply-and-Demand-Zones/"
 date: 2026-07-16
 draft: false
 type: reviews

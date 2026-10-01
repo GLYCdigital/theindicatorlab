@@ -1,6 +1,6 @@
 ---
 title: "Multi Timeframe Multi Indicator Dashboard Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/W6KxkZen-Multi-TF-Multi-Indicator-Dashboard-IntradayScalper/"
+tv_script_url: "https://www.tradingview.com/script/W6KxkZen-Multi-TimeFrame-Multi-Indicator-Dashboard/"
 date: 2026-07-16
 draft: false
 type: reviews

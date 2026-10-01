@@ -1,6 +1,6 @@
 ---
 title: "ICT Smart Money Execution Engine Review — Market Structure"
-tv_script_url: "https://www.tradingview.com/script/w1u4mq8m-ICT-Smart-Money-Execution-Engine-PRO-Dark-Ace-Master/"
+tv_script_url: "https://www.tradingview.com/script/w1u4mq8m-ICT-Smart-Money-Execution-Engine-PRO/"
 date: 2026-08-11
 draft: false
 type: reviews

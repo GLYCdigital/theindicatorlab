@@ -1,6 +1,6 @@
 ---
 title: "MTF RSI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/cy4hzE51-MTF-RSI-lonelygrass/"
+tv_script_url: "https://www.tradingview.com/script/cy4hzE51-MTF-RSI/"
 date: 2026-07-16
 draft: false
 type: reviews

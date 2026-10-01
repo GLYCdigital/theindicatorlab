@@ -1,6 +1,6 @@
 ---
 title: "Volume Price Analysis Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/yOjHMrOS-VPA-VuTienTurtleTrader/"
+tv_script_url: "https://www.tradingview.com/script/yOjHMrOS-Volume-Price-Analysis/"
 date: 2026-07-16
 draft: false
 type: reviews

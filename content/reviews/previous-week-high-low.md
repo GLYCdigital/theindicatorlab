@@ -1,6 +1,6 @@
 ---
 title: "Previous Week High Low Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/E2jifRhi-previous-Week-high-low-Juros/"
+tv_script_url: "https://www.tradingview.com/script/E2jifRhi-Previous-Week-high-low/"
 date: 2026-07-16
 draft: false
 type: reviews

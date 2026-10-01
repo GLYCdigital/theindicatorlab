@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Support Resistance Review — Support & Resistance"
-tv_script_url: "https://www.tradingview.com/script/B24CB2ca-Dynamic-Support-Resistance-ZenAndTheArtOfTrading/"
+tv_script_url: "https://www.tradingview.com/script/B24CB2ca-Dynamic-Support-Resistance/"
 date: 2026-07-16
 draft: false
 type: reviews

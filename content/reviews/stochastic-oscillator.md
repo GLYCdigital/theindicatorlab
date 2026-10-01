@@ -1,6 +1,6 @@
 ---
 title: "Stochastic Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/rxQe55S2-Stochastic-Oscillator-cojwatson/"
+tv_script_url: "https://www.tradingview.com/script/rxQe55S2-Stochastic-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

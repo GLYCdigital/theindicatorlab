@@ -1,6 +1,6 @@
 ---
 title: "Smartbreak Fibo Traderhook Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/scSKTD7q-SmartBreak-Fibo-TraderHook-thebolgar/"
+tv_script_url: "https://www.tradingview.com/script/scSKTD7q-SmartBreak-Fibo-TraderHook/"
 date: 2026-07-16
 draft: false
 type: reviews

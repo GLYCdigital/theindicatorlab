@@ -1,6 +1,6 @@
 ---
 title: "MTF Support Resistance Review — Support & Resistance"
-tv_script_url: "https://www.tradingview.com/script/RMXGtvXL-MTF-Support-Resistance-JDTJDTTradingCo/"
+tv_script_url: "https://www.tradingview.com/script/RMXGtvXL-MTF-Support-Resistance/"
 date: 2026-08-14
 draft: false
 type: reviews

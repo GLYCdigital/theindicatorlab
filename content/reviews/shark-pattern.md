@@ -1,6 +1,6 @@
 ---
 title: "Shark Pattern Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/G6CUmLgi-SharkPattern-ULTRA-V6-NXT2017/"
+tv_script_url: "https://www.tradingview.com/script/G6CUmLgi-SharkPattern-ULTRA-V1-draws-Shark-Pattern-inclusive-alerts/"
 date: 2026-07-16
 draft: false
 type: reviews

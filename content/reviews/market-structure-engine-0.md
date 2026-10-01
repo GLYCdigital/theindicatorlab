@@ -1,6 +1,6 @@
 ---
 title: "Market Structure Engine 0 Review — Market Structure"
-tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-LeviathanCapital/"
+tv_script_url: "https://www.tradingview.com/script/bXic0E3l-Market-Structure-By-Leviathan/"
 date: 2026-07-22
 draft: false
 type: reviews

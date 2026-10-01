@@ -1,6 +1,6 @@
 ---
 title: "Moving Average Cross Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/PcWAuplI-Moving-Average-Cross-EvoSti/"
+tv_script_url: "https://www.tradingview.com/script/PcWAuplI-Moving-Average-Cross/"
 date: 2026-08-01
 draft: false
 type: reviews

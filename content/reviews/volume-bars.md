@@ -1,6 +1,6 @@
 ---
 title: "Volume Bars Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/8KIOuhj7-Volume-Bars-rafaelfernandesadvogado/"
+tv_script_url: "https://www.tradingview.com/script/8KIOuhj7/"
 date: 2026-08-23
 draft: false
 type: reviews

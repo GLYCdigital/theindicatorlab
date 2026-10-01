@@ -1,6 +1,6 @@
 ---
 title: "CVD Cumulative Volume Delta Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/Iqx7ENE2-CVD-Cumulative-Volume-Delta-RUpward/"
+tv_script_url: "https://www.tradingview.com/script/Iqx7ENE2/"
 date: 2026-09-02
 draft: false
 type: reviews

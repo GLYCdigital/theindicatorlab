@@ -1,6 +1,6 @@
 ---
 title: "Volume Weighted Momentum Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/1JfIwdZ6-VWMomentum-Grumlop/"
+tv_script_url: "https://www.tradingview.com/script/1JfIwdZ6-Volume-Weighted-Momentum/"
 date: 2026-08-17
 draft: false
 type: reviews

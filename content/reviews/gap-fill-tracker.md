@@ -1,6 +1,6 @@
 ---
 title: "Gap Fill Tracker Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/vSVfMiwy-Gap-Fill-Tracker-BullBearSR/"
+tv_script_url: "https://www.tradingview.com/script/vSVfMiwy/"
 date: 2026-07-16
 draft: false
 type: reviews

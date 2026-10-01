@@ -1,6 +1,6 @@
 ---
 title: "Moving Average Crossover MTF Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/FvLjTuQB-Moving-Average-Crossover-everget/"
+tv_script_url: "https://www.tradingview.com/script/FvLjTuQB-Moving-Average-Crossover/"
 date: 2026-08-07
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "ROC Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/ites1uZK-ROC-Divergence-jaggedsoft/"
+tv_script_url: "https://www.tradingview.com/script/ites1uZK-ROC-Divergence-SharkCIA/"
 date: 2026-07-16
 draft: false
 type: reviews

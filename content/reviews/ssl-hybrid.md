@@ -1,6 +1,6 @@
 ---
 title: "Ssl Hybrid Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/C3MlAWCw-SSL-Hybrid-Mihkel00/"
+tv_script_url: "https://www.tradingview.com/script/C3MlAWCw-SSL-Hybrid/"
 date: 2026-07-16
 draft: false
 type: reviews

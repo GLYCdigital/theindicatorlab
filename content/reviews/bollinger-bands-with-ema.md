@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands With EMA Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/EDkrAtH3-Low-and-High-Sniper-ismail-pehlevan/"
+tv_script_url: "https://www.tradingview.com/script/EDkrAtH3/"
 date: 2026-07-16
 draft: false
 type: reviews

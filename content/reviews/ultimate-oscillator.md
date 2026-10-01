@@ -3,6 +3,7 @@ title: "Ultimate Oscillator Review — Momentum Indicator"
 tv_script_url: "https://www.tradingview.com/script/SPHXzGsT-Ultimate-Oscillator-Azazel666/"
 date: 2026-07-16
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/ultimate-oscillator.png"
 tags:

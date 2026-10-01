@@ -1,6 +1,6 @@
 ---
 title: "Relative Vigor Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/7HLw5xXI-Relative-Vigor-Index-ProfitProgrammers/"
+tv_script_url: "https://www.tradingview.com/script/7HLw5xXI-Relative-Vigor-Index/"
 date: 2026-07-16
 draft: false
 type: reviews

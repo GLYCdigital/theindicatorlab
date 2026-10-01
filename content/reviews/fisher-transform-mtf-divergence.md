@@ -1,6 +1,6 @@
 ---
 title: "Fisher Transform MTF Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/aLipeVfd-Fisher-Transform-MTF-QuantitativeExhaustion/"
+tv_script_url: "https://www.tradingview.com/script/aLipeVfd-Multi-Functional-Fisher-Transform-MTF-with-MACDL-TRIGGER/"
 date: 2026-07-16
 draft: false
 type: reviews

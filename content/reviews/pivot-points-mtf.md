@@ -1,6 +1,6 @@
 ---
 title: "Pivot Points MTF Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/kxsmQSz2-Pivot-Points-MTF-ihancioglu/"
+tv_script_url: "https://www.tradingview.com/script/kxsmQSz2-Pivot-Points-MTF/"
 date: 2026-07-30
 draft: false
 type: reviews

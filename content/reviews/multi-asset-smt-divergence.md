@@ -1,6 +1,6 @@
 ---
 title: "Multi Asset Smt Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/212QKb6k-Multi-Asset-SMT-Divergence-jbkey2012/"
+tv_script_url: "https://www.tradingview.com/script/212QKb6k-Multi-Asset-SMT-Divergence/"
 date: 2026-07-16
 draft: false
 type: reviews

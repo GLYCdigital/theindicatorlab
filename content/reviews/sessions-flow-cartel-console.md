@@ -1,6 +1,6 @@
 ---
 title: "Sessions Flow Cartel Console Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/GSmLdCby-Sessions-Flow-Cartel-Console-CartelConsole/"
+tv_script_url: "https://www.tradingview.com/script/GSmLdCby-Sessions-Flow-Cartel-Console/"
 date: 2026-07-16
 draft: false
 type: reviews

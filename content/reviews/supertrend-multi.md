@@ -1,6 +1,6 @@
 ---
 title: "Supertrend Multi Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/LonOB4YA-Supertrend-Multi-Time-Frame-Auto-HTF-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/LonOB4YA/"
 date: 2026-08-03
 draft: false
 type: reviews

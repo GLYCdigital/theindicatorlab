@@ -1,6 +1,6 @@
 ---
 title: "Hull Moving Average HMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/kChCRRZI-Hull-Moving-Average-MichelT/"
+tv_script_url: "https://www.tradingview.com/script/kChCRRZI-Hull-Moving-Average/"
 date: 2026-07-28
 draft: false
 type: reviews

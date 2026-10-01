@@ -1,6 +1,6 @@
 ---
 title: "Sca Weekend Gap Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Uljb539Y-SCA-Weekend-Gap-Indicator-SwallowAcademy/"
+tv_script_url: "https://www.tradingview.com/script/Uljb539Y-SCA-Weekend-Gap-Indicator/"
 date: 2026-07-16
 draft: false
 type: reviews

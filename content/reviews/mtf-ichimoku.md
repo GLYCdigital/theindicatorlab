@@ -1,6 +1,6 @@
 ---
 title: "MTF Ichimoku Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Pw9cBFma-MTF-Ichimoku-anthonyf50/"
+tv_script_url: "https://www.tradingview.com/script/Pw9cBFma/"
 date: 2026-07-16
 draft: false
 type: reviews

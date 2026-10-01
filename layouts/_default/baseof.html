@@ -8,9 +8,9 @@
   {{- $opts := dict "targetPath" "css/custom.css" "enableSourceMap" true -}}
   {{- $css := resources.Get "scss/custom.scss" | toCSS $opts | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-  {{- /* Noindex paginated pages and taxonomy pages (thin content for SEO) */ -}}
+  {{- /* Noindex paginated/taxonomy pages (thin content) and any page flagged via front matter `noindex: true` */ -}}
   {{- $url := .RelPermalink -}}
-  {{- if or (in $url "/page/") (in $url "/tags/") (in $url "/categories/") (in $url "/backtests/") -}}
+  {{- if or (in $url "/page/") (in $url "/tags/") (in $url "/categories/") (in $url "/backtests/") (.Params.noindex) -}}
   <meta name="robots" content="noindex, follow">
   {{- end -}}
   <link rel="canonical" href="{{ .Permalink }}">

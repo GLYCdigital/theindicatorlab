@@ -1,6 +1,6 @@
 ---
 title: "Sentiment Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/MF5HS6Qv-Sentiment-Indicator-Intraday-V11-Kirk-M/"
+tv_script_url: "https://www.tradingview.com/script/MF5HS6Qv-Sentiment-Indicator-Intraday-V11/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Sigmoid RSI Nal Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/ONhiTlru-Sigmoid-RSI-NordicAlphaLab/"
+tv_script_url: "https://www.tradingview.com/script/ONhiTlru-Sigmoid-RSI-NAL/"
 date: 2026-08-09
 draft: false
 type: reviews

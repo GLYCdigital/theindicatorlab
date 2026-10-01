@@ -1,6 +1,6 @@
 ---
 title: "Fair Value Gap Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/erbzoVY8-Fair-Value-Gap-spacemanbtc/"
+tv_script_url: "https://www.tradingview.com/script/erbzoVY8-Fair-Value-Gap/"
 date: 2026-07-16
 draft: false
 type: reviews

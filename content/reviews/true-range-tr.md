@@ -1,6 +1,6 @@
 ---
 title: "True Range Tr Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ibrfKRKW-True-Range-sbr77727/"
+tv_script_url: "https://www.tradingview.com/script/ibrfKRKW-True-Range/"
 date: 2026-07-19
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Starc Bands Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/tiyOwklQ-STARC-Bands-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/tiyOwklQ-STARC-Bands/"
 date: 2026-07-16
 draft: false
 type: reviews

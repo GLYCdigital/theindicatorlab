@@ -1,6 +1,6 @@
 ---
 title: "Vortex Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/nZSKWrcb-VorteX-vsov/"
+tv_script_url: "https://www.tradingview.com/script/nZSKWrcb-VorteX/"
 date: 2026-07-16
 draft: false
 type: reviews

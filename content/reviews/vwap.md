@@ -1,6 +1,6 @@
 ---
 title: "VWAP Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/rSTNnV6B-VWAP-Mazinger-X/"
+tv_script_url: "https://www.tradingview.com/script/rSTNnV6B-VWAP-with-period/"
 date: 2026-07-16
 draft: false
 type: reviews

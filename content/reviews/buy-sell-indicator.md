@@ -2,6 +2,7 @@
 title: "Buy Sell Indicator Review — Trend Indicator"
 date: 2026-08-18
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/buy-sell-indicator.png"
 tags:

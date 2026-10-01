@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/HaVyhZnP-Linear-Regression-Dev-Lucem-DevLucem/"
+tv_script_url: "https://www.tradingview.com/script/HaVyhZnP-Linear-Regression/"
 date: 2026-07-16
 draft: false
 type: reviews

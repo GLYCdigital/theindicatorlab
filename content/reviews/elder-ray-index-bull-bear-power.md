@@ -1,6 +1,6 @@
 ---
 title: "Elder Ray Index Bull Bear Power Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/X7m7urvC-Elder-ray-Index-DDDiving1993/"
+tv_script_url: "https://www.tradingview.com/script/X7m7urvC/"
 date: 2026-07-16
 draft: false
 type: reviews

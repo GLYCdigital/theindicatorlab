@@ -1,6 +1,6 @@
 ---
 title: "MFI Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/A9IDiwN2-MFI-Divergence-trader-mb/"
+tv_script_url: "https://www.tradingview.com/script/A9IDiwN2-MFI-Divergence-v2/"
 date: 2026-08-21
 draft: false
 type: reviews

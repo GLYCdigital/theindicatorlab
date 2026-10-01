@@ -1,6 +1,6 @@
 ---
 title: "Rate Of Change Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Yi4z4Pe1-Rate-of-Change-ClassicScott/"
+tv_script_url: "https://www.tradingview.com/script/Yi4z4Pe1-Rate-of-Change-and-OBV/"
 date: 2026-07-16
 draft: false
 type: reviews

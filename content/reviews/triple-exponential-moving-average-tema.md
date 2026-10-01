@@ -1,6 +1,6 @@
 ---
 title: "Triple Exponential Moving Average TEMA Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/PtNJYZZR-Triple-Exponential-Moving-Average-TEMA-mihakralj/"
+tv_script_url: "https://www.tradingview.com/script/PtNJYZZR-Triple-Exponential-Moving-Average-TEMA/"
 date: 2026-07-18
 draft: false
 type: reviews

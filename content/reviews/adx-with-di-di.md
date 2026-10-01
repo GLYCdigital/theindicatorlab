@@ -1,6 +1,6 @@
 ---
 title: "ADX With Di Di Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/KtAsW5Dw-ADX-with-DI-VentusAurelius/"
+tv_script_url: "https://www.tradingview.com/script/KtAsW5Dw-Colored-ADX-with-DI-and-thresholds/"
 date: 2026-07-16
 draft: false
 type: reviews

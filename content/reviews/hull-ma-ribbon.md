@@ -1,6 +1,6 @@
 ---
 title: "Hull Ma Ribbon Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Rudsc45h-Hull-MA-Ribbon-Bar-MCFX2/"
+tv_script_url: "https://www.tradingview.com/script/Rudsc45h-High-Sensitivity-MMARB-Public/"
 date: 2026-07-16
 draft: false
 type: reviews

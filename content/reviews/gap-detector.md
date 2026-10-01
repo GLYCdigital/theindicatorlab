@@ -1,6 +1,6 @@
 ---
 title: "Gap Detector Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/fds6Q4aj-GAP-DETECTOR-Asch/"
+tv_script_url: "https://www.tradingview.com/script/fds6Q4aj/"
 date: 2026-07-16
 draft: false
 type: reviews

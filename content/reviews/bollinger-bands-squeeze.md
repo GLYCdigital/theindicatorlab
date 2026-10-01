@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands Squeeze Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/QW4daVnx-Bollinger-Bands-Squeeze-AlexeyFirsov/"
+tv_script_url: "https://www.tradingview.com/script/QW4daVnx-Bollinger-Bands-Squeeze/"
 date: 2026-07-16
 draft: false
 type: reviews

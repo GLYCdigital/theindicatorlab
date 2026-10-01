@@ -1,6 +1,6 @@
 ---
 title: "Wyckoff Volume Analysis Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/7i7tk9F5-Wyckoff-Volume-VolumeDayTrader/"
+tv_script_url: "https://www.tradingview.com/script/7i7tk9F5-Wyckoff-Wave-Volume/"
 date: 2026-07-19
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Footprint Chart Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/FLXtErDz-Footprint-Chart-V2-0-Th16rry/"
+tv_script_url: "https://www.tradingview.com/script/FLXtErDz/"
 date: 2026-07-16
 draft: false
 type: reviews

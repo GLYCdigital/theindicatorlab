@@ -1,6 +1,6 @@
 ---
 title: "Order Flow FVG Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow-prokopchuksv21/"
+tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow/"
 date: 2026-07-27
 draft: false
 type: reviews

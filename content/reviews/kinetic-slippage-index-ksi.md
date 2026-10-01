@@ -1,6 +1,6 @@
 ---
 title: "Kinetic Slippage Index Ksi Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/CUjAnbtS-Kinetic-Slippage-Index-KSI-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/CUjAnbtS-Kinetic-Slippage-Index-KSI/"
 date: 2026-07-23
 draft: false
 type: reviews

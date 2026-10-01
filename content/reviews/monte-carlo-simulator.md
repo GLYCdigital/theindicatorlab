@@ -1,6 +1,6 @@
 ---
 title: "Monte Carlo Simulator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/HLpRcHqT-Monte-Carlo-The-Peaceful-Lizard/"
+tv_script_url: "https://www.tradingview.com/script/HLpRcHqT-Monte-Carlo-Price-Probabilities/"
 date: 2026-07-16
 draft: false
 type: reviews

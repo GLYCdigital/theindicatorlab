@@ -1,6 +1,6 @@
 ---
 title: "Btc Asymmetric Quantile Model Cowen 2026 Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/vWN8hnCJ-BTC-Asymmetric-Quantile-Model-Cowen-2026-AdamHyperbolic/"
+tv_script_url: "https://www.tradingview.com/script/vWN8hnCJ-BTC-Asymmetric-Quantile-Model-Cowen-2026/"
 date: 2026-07-16
 draft: false
 type: reviews

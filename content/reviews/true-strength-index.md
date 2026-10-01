@@ -1,6 +1,6 @@
 ---
 title: "True Strength Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/2GdqewLx-True-Strength-Index-everget/"
+tv_script_url: "https://www.tradingview.com/script/2GdqewLx-True-Strength-Index-TSI/"
 date: 2026-07-16
 draft: false
 type: reviews

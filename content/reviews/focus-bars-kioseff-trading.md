@@ -1,6 +1,6 @@
 ---
 title: "Focus Bars Kioseff Trading Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/I0MhUmSK-Focus-Bars-Kioseff-Trading-KioseffTrading/"
+tv_script_url: "https://www.tradingview.com/script/I0MhUmSK-Focus-Bars-Kioseff-Trading/"
 date: 2026-07-16
 draft: false
 type: reviews

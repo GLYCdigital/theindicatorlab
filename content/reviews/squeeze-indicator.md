@@ -1,6 +1,6 @@
 ---
 title: "Squeeze Indicator Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/lEzWekre-Squeeze-Indicator-racer8/"
+tv_script_url: "https://www.tradingview.com/script/lEzWekre-Squeeze-Indicator/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Volatility Ratio Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/Xu6dEeWK-Volatility-Ratio-everget/"
+tv_script_url: "https://www.tradingview.com/script/Xu6dEeWK-Volatility-Ratio/"
 date: 2026-08-04
 draft: false
 type: reviews

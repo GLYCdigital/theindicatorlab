@@ -1,6 +1,6 @@
 ---
 title: "Wolfe Waves Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/g6TweYfG-Wolfe-Waves-Signals-NXT2017/"
+tv_script_url: "https://www.tradingview.com/script/g6TweYfG-Wolfe-Waves-Signals-NXT2017-by-the-rules-of-Bill-Wolfe/"
 date: 2026-07-16
 draft: false
 type: reviews

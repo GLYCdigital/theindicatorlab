@@ -1,6 +1,6 @@
 ---
 title: "MTF Bollinger Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/h0rEB1fd-MultiTimeFrame-MTF-Bollinger-Bands-BB-Reverse-Engineering-RSI-RERSI-Hidden-Supports-Resistances-informanerd/"
+tv_script_url: "https://www.tradingview.com/script/h0rEB1fd-MTF-Bollinger-Bands-RE-RSIs-Hidden-Supports-Resistances/"
 date: 2026-07-16
 draft: false
 type: reviews

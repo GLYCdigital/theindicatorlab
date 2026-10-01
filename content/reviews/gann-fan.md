@@ -1,6 +1,6 @@
 ---
 title: "Gann Fan Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Bara2GrN-Gann-Fan-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/Bara2GrN-Gann-Fan/"
 date: 2026-07-16
 draft: false
 type: reviews

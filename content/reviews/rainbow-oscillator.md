@@ -1,6 +1,6 @@
 ---
 title: "Rainbow Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/vWEFMXGf-Rainbow-Oscillator-businessduck/"
+tv_script_url: "https://www.tradingview.com/script/vWEFMXGf-Rainbow-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

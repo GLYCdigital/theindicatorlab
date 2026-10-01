@@ -2,6 +2,7 @@
 title: "Test Xyz Review — Trend Indicator"
 date: 2026-08-09
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/test-xyz.png"
 tags:

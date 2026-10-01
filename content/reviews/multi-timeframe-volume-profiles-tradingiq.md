@@ -1,6 +1,6 @@
 ---
 title: "Multi Timeframe Volume Profiles Tradingiq Review — Volume"
-tv_script_url: "https://www.tradingview.com/script/qnX9nxw0-Multi-Timeframe-Volume-Profiles-TradingIQ-Trading-IQ/"
+tv_script_url: "https://www.tradingview.com/script/qnX9nxw0-Multi-Timeframe-Volume-Profiles-TradingIQ/"
 date: 2026-07-16
 draft: false
 type: reviews

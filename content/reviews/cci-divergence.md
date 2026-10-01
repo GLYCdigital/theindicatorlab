@@ -1,6 +1,6 @@
 ---
 title: "CCI Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/TACKJpyu-CCI-plumany/"
+tv_script_url: "https://www.tradingview.com/script/TACKJpyu/"
 date: 2026-07-16
 draft: false
 type: reviews

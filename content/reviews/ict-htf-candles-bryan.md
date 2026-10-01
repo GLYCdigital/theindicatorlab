@@ -1,6 +1,6 @@
 ---
 title: "ICT HTF Candles Bryan Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/50YEgDzS-ICT-HTF-Candles-Bryan-stocktradingpw22f/"
+tv_script_url: "https://www.tradingview.com/script/50YEgDzS-ICT-HTF-Candles-Bryan/"
 date: 2026-07-16
 draft: false
 type: reviews

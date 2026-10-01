@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands MACD Combo Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/1fquZ4N6-Bollinger-Bands-Marcelgmelo29/"
+tv_script_url: "https://www.tradingview.com/script/1fquZ4N6/"
 date: 2026-07-16
 draft: false
 type: reviews

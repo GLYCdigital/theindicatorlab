@@ -1,6 +1,6 @@
 ---
 title: "Market Cipher B Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/HkvEuAmY-Market-Cipher-B-WeloTrades/"
+tv_script_url: "https://www.tradingview.com/script/HkvEuAmY-Market-Cipher-B-by-WeloTrades/"
 date: 2026-07-16
 draft: false
 type: reviews

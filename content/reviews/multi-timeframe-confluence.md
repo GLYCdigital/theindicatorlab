@@ -1,6 +1,6 @@
 ---
 title: "Multi Timeframe Confluence Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/MisgW0WB-Multi-Timeframe-Confluence-Indicator-TradeTechanalysis/"
+tv_script_url: "https://www.tradingview.com/script/MisgW0WB-Multi-Timeframe-Confluence-Indicator/"
 date: 2026-07-29
 draft: false
 type: reviews

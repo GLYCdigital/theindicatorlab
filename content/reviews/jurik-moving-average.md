@@ -1,6 +1,6 @@
 ---
 title: "Jurik Moving Average Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/W1DjDb8h-Jurik-Moving-Average-mihakralj/"
+tv_script_url: "https://www.tradingview.com/script/W1DjDb8h-Jurik-Moving-Average-JMA/"
 date: 2026-07-16
 draft: false
 type: reviews

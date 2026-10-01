@@ -1,6 +1,6 @@
 ---
 title: "Smart Money Concepts Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/VpqHOSip-Smart-Money-Concepts-WeloTrades/"
+tv_script_url: "https://www.tradingview.com/script/VpqHOSip-Smart-Money-Concepts-by-WeloTrades/"
 date: 2026-07-28
 draft: false
 type: reviews

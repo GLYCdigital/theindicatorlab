@@ -1,6 +1,6 @@
 ---
 title: "Three White Soldiers Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/7jQSLD7t-Three-White-Soldiers-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/7jQSLD7t-Three-White-Soldiers-automatic-finding-script/"
 date: 2026-07-31
 draft: false
 type: reviews

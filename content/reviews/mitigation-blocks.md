@@ -1,6 +1,6 @@
 ---
 title: "Mitigation Blocks Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/SgJBOP5n-Mitigation-Blocks-HuntsPip-HuntsPipDevs/"
+tv_script_url: "https://www.tradingview.com/script/SgJBOP5n-Mitigation-Blocks-HuntsPip/"
 date: 2026-07-16
 draft: false
 type: reviews

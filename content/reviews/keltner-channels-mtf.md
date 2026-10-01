@@ -1,6 +1,6 @@
 ---
 title: "Keltner Channels MTF Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/9QbO1BEn-Keltner-Channels-MTF-AlchimistOfCrypto/"
+tv_script_url: "https://www.tradingview.com/script/9QbO1BEn/"
 date: 2026-08-06
 draft: false
 type: reviews

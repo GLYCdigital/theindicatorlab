@@ -1,6 +1,6 @@
 ---
 title: "Hurst Exponent Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/QibYVT4J-Hurst-Exponent-QuantNomad/"
+tv_script_url: "https://www.tradingview.com/script/QibYVT4J-Hurst-Exponent/"
 date: 2026-07-16
 draft: false
 type: reviews

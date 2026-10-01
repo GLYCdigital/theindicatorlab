@@ -1,6 +1,6 @@
 ---
 title: "ATR Fibonacci Expansion Zones Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/ELqDY75G-ATR-Fibonacci-Expansion-Zones-MYNAMEISBRANDON/"
+tv_script_url: "https://www.tradingview.com/script/ELqDY75G-ATR-Fibonacci-Expansion-Zones/"
 date: 2026-07-16
 draft: false
 type: reviews

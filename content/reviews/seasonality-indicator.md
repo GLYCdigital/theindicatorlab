@@ -1,6 +1,6 @@
 ---
 title: "Seasonality Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/LcWBDOVZ-Seasonality-Indicator-TradersPod/"
+tv_script_url: "https://www.tradingview.com/script/LcWBDOVZ-Multi-Seasonality-Indicator-TP/"
 date: 2026-07-16
 draft: false
 type: reviews

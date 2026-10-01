@@ -1,6 +1,6 @@
 ---
 title: "Gann Square Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/kxaEl2i9-Gann-Square-AlphaNodal/"
+tv_script_url: "https://www.tradingview.com/script/kxaEl2i9-Gann-Square/"
 date: 2026-07-16
 draft: false
 type: reviews

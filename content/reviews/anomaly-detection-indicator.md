@@ -1,6 +1,6 @@
 ---
 title: "Anomaly Detection Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ZkIzGxSg-Anomaly-Detection-Indicator-Fournier-Eaton-etothepii/"
+tv_script_url: "https://www.tradingview.com/script/ZkIzGxSg-Anomaly-Detection-Indicator-Fournier-Eaton/"
 date: 2026-07-16
 draft: false
 type: reviews

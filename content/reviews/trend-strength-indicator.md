@@ -1,6 +1,6 @@
 ---
 title: "Trend Strength Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/n8BD6Aa3-Trend-Strength-Indicator-ZenAndTheArtOfTrading/"
+tv_script_url: "https://www.tradingview.com/script/n8BD6Aa3-Trend-Strength-Indicator/"
 date: 2026-07-19
 draft: false
 type: reviews

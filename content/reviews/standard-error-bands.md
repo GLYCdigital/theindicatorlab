@@ -1,6 +1,6 @@
 ---
 title: "Standard Error Bands Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/ucpkF9p8-Standard-Error-Bands-xel-arjona/"
+tv_script_url: "https://www.tradingview.com/script/ucpkF9p8-Standard-Error-Bands-by-XeL-arjona/"
 date: 2026-07-16
 draft: false
 type: reviews

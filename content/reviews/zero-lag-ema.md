@@ -1,6 +1,6 @@
 ---
 title: "Zero Lag EMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/LRCcdU3M-Zero-Lag-EMA-Pawan-tradv/"
+tv_script_url: "https://www.tradingview.com/script/LRCcdU3M-Zero-Lag-EMA-Bhavat/"
 date: 2026-07-16
 draft: false
 type: reviews

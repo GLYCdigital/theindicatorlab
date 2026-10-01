@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning RSI AI Classification Ranking Review"
-tv_script_url: "https://www.tradingview.com/script/VrTL3VwF-Machine-Learning-RSI-Zeiierman/"
+tv_script_url: "https://www.tradingview.com/script/VrTL3VwF-Machine-Learning-RSI-AI-Classification-Ranking-Zeiierman/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "EMA Cross Signal Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/CKRt0Pmp-EMA-cross-DevLucem/"
+tv_script_url: "https://www.tradingview.com/script/CKRt0Pmp-Custom-EMA-Cross-Signal/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Positive Volume Index PVI Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/Qx6AyhxH-Positive-Volume-Index-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/Qx6AyhxH-Positive-Volume-Index-PVI/"
 date: 2026-08-12
 draft: false
 type: reviews

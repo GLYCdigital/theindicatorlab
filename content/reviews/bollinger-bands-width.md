@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands Width Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/M2VlTCjs-Bollinger-Bands-Width-ClassicScott/"
+tv_script_url: "https://www.tradingview.com/script/M2VlTCjs-Bollinger-Bands-Width/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Parabolic Sar With Signals Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/idpMOtsh-Parabolic-SAR-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/idpMOtsh-Parabolic-SAR-with-Algorithm-and-Alerts/"
 date: 2026-08-10
 draft: false
 type: reviews

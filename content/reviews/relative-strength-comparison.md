@@ -1,6 +1,6 @@
 ---
 title: "Relative Strength Comparison Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/IpfLF3Oj-Relative-Strength-Comparison-chuckination/"
+tv_script_url: "https://www.tradingview.com/script/IpfLF3Oj-Relative-Strength-Comparison-RSC-Indicator-Signals/"
 date: 2026-07-16
 draft: false
 type: reviews

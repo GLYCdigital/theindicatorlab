@@ -1,6 +1,6 @@
 ---
 title: "Tasc 2026 08 An Ag Selling Model Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/VFzCk3HX-TASC-2026-08-An-Ag-Selling-Model-PineCodersTASC/"
+tv_script_url: "https://www.tradingview.com/script/VFzCk3HX-TASC-2026-08-An-Ag-Selling-Model/"
 date: 2026-08-08
 draft: false
 type: reviews

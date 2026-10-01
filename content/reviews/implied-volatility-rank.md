@@ -1,6 +1,6 @@
 ---
 title: "Implied Volatility Rank Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/wDOFoxeX-Implied-Volatility-Rank-Model-Free-IVR-SegaRKO/"
+tv_script_url: "https://www.tradingview.com/script/wDOFoxeX-Implied-Volatility-Rank-Model-Free-IVR/"
 date: 2026-07-16
 draft: false
 type: reviews

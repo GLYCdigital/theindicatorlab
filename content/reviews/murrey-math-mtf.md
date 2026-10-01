@@ -1,6 +1,6 @@
 ---
 title: "Murrey Math MTF Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/9vVJZZlz-Murrey-Math-AlgoriZate/"
+tv_script_url: "https://www.tradingview.com/script/9vVJZZlz/"
 date: 2026-08-15
 draft: false
 type: reviews

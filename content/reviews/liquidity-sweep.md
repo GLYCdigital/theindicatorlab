@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Sweep Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/TsbZREVm-Liquidity-Sweep-neerurani1307/"
+tv_script_url: "https://www.tradingview.com/script/TsbZREVm-Liquidity-Sweep-and-BOS-RitishFX/"
 date: 2026-07-30
 draft: false
 type: reviews

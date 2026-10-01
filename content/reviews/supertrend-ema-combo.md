@@ -1,6 +1,6 @@
 ---
 title: "Supertrend EMA Combo Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/jumQaLiP-Supertrend-EMA-crossresearch/"
+tv_script_url: "https://www.tradingview.com/script/jumQaLiP-Supertrend-EMA-KNN/"
 date: 2026-07-16
 draft: false
 type: reviews

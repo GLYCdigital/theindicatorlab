@@ -1,6 +1,6 @@
 ---
 title: "Delivery Shift Cisd Viprasol Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/wZ91pyJr-Viprasol-CISD-Delivery-Shift-viprasol/"
+tv_script_url: "https://www.tradingview.com/script/wZ91pyJr-Delivery-Shift-CISD-Viprasol/"
 date: 2026-07-16
 draft: false
 type: reviews

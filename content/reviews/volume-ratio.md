@@ -1,6 +1,6 @@
 ---
 title: "Volume Ratio Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/Olntkkuw-Volume-Ratio-Mizuki32/"
+tv_script_url: "https://www.tradingview.com/script/Olntkkuw-Volume-Ratio/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Point And Figure Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/wcl6LYEE-Point-and-Figure-PnF-Chart-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/wcl6LYEE-Point-and-Figure-PnF-Chart/"
 date: 2026-07-16
 draft: false
 type: reviews

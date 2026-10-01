@@ -1,6 +1,6 @@
 ---
 title: "Anchored VWAP Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/AqvAwrfM-Anchored-VWAP-jamiespips/"
+tv_script_url: "https://www.tradingview.com/script/AqvAwrfM-Anchored-VWAP/"
 date: 2026-07-16
 draft: false
 type: reviews

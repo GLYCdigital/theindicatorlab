@@ -1,6 +1,6 @@
 ---
 title: "MACD Divergence Detector Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/TR2c3Jw5-MACD-Divergence-Lij-MC/"
+tv_script_url: "https://www.tradingview.com/script/TR2c3Jw5-MACD-Divergence/"
 date: 2026-09-06
 draft: false
 type: reviews

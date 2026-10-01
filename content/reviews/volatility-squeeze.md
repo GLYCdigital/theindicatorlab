@@ -1,6 +1,6 @@
 ---
 title: "Volatility Squeeze Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/J80nlOas-Volatility-Squeeze-Zone-DasanC/"
+tv_script_url: "https://www.tradingview.com/script/J80nlOas-Squeeze-Zone/"
 date: 2026-09-01
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "RSI Smoothed Trend Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/xX0fQdmY-RSI-Smoothed-imsharper/"
+tv_script_url: "https://www.tradingview.com/script/xX0fQdmY-Multi-RSI-Smoothed/"
 date: 2026-07-16
 draft: false
 type: reviews

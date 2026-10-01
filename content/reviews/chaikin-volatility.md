@@ -1,6 +1,6 @@
 ---
 title: "Chaikin Volatility Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/QAjxTT0J-Chaikin-Volatility-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/QAjxTT0J-Chaikin-Volatility/"
 date: 2026-07-16
 draft: false
 type: reviews

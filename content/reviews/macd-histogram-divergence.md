@@ -1,6 +1,6 @@
 ---
 title: "MACD Histogram Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/MubZkT39-MACD-histogram-divergence-Rexio/"
+tv_script_url: "https://www.tradingview.com/script/MubZkT39-MACD-histogram-divergence-by-Rexio-v1/"
 date: 2026-07-31
 draft: false
 type: reviews

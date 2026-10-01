@@ -1,6 +1,6 @@
 ---
 title: "MACD Zero Lag Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/GcbLcwG7-MACD-0-Lag-yassotreyo/"
+tv_script_url: "https://www.tradingview.com/script/GcbLcwG7-MACD-Zero-Lag/"
 date: 2026-08-06
 draft: false
 type: reviews

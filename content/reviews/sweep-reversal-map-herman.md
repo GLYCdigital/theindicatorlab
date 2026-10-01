@@ -2,6 +2,7 @@
 title: "Sweep Reversal Map Herman Review — Market Structure"
 date: 2026-09-05
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/sweep-reversal-map-herman.png"
 tags:

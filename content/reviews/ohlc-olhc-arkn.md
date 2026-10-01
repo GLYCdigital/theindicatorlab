@@ -1,6 +1,6 @@
 ---
 title: "Ohlc Olhc Arkn Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/q3JrJN1N-OHLC-OLHC-ARKN-AtomicPips/"
+tv_script_url: "https://www.tradingview.com/script/q3JrJN1N-OHLC-OLHC-ARKN/"
 date: 2026-07-16
 draft: false
 type: reviews

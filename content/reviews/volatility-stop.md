@@ -1,6 +1,6 @@
 ---
 title: "Volatility Stop Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/v9YZoIw1-Volatility-Stop-TradingView/"
+tv_script_url: "https://www.tradingview.com/script/v9YZoIw1-Volatility-Stop/"
 date: 2026-07-16
 draft: false
 type: reviews

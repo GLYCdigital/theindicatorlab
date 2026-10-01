@@ -1,6 +1,6 @@
 ---
 title: "Zero Lag Exponential Moving Average ZLEMA Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/hcS0as7m-Zero-Lag-Exponential-Moving-Average-ZLEMA-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/hcS0as7m-Zero-Lag-Exponential-Moving-Average-ZLEMA/"
 date: 2026-08-12
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Mcginley Dynamic Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/AKsKg1ih-McGinley-Dynamic-Improved-John-R-McGinley-Jr-ImmortalFreedom/"
+tv_script_url: "https://www.tradingview.com/script/AKsKg1ih-McGinley-Dynamic-Improved-John-R-McGinley-Jr/"
 date: 2026-07-16
 draft: false
 type: reviews

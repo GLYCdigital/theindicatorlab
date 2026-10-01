@@ -1,6 +1,6 @@
 ---
 title: "Supply Demand MTF Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/yq3DJDMc-Supply-Demand-MTF-fluxchart/"
+tv_script_url: "https://www.tradingview.com/script/yq3DJDMc-Supply-Demand-MTF-Flux-Charts/"
 date: 2026-08-08
 draft: false
 type: reviews

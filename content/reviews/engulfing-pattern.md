@@ -1,6 +1,6 @@
 ---
 title: "Engulfing Pattern Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/356KgjRL-Candles-sdmsunil/"
+tv_script_url: "https://www.tradingview.com/script/356KgjRL-Engulfing-Pattern/"
 date: 2026-07-16
 draft: false
 type: reviews

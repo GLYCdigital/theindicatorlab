@@ -1,6 +1,6 @@
 ---
 title: "Inside Bar Detector Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/nCAvVauh-Inside-Bar-Detector-ma16888/"
+tv_script_url: "https://www.tradingview.com/script/nCAvVauh/"
 date: 2026-07-16
 draft: false
 type: reviews

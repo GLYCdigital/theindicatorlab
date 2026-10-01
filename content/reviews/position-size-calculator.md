@@ -1,6 +1,6 @@
 ---
 title: "Position Size Calculator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/rFxYFTrU-Position-Size-Calculator-zzzcrypto123/"
+tv_script_url: "https://www.tradingview.com/script/rFxYFTrU-Position-Size-Calculator/"
 date: 2026-07-16
 draft: false
 type: reviews

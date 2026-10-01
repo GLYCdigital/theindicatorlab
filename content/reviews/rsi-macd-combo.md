@@ -1,6 +1,6 @@
 ---
 title: "RSI MACD Combo Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/wHFB5gYK-RSI-MACD-Combo-Persian-sajadbagheri/"
+tv_script_url: "https://www.tradingview.com/script/wHFB5gYK-RSI-MACD-Combo-sajadbagheri/"
 date: 2026-07-16
 draft: false
 type: reviews

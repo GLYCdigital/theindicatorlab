@@ -1,6 +1,6 @@
 ---
 title: "Market Microstructure Analytics Review — Market Structure"
-tv_script_url: "https://www.tradingview.com/script/34R4Mh5W-Market-Microstructure-Analytics-EdgeTools/"
+tv_script_url: "https://www.tradingview.com/script/34R4Mh5W-Market-Microstructure-Analytics/"
 date: 2026-07-16
 draft: false
 type: reviews

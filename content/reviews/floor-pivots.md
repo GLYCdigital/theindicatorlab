@@ -1,6 +1,6 @@
 ---
 title: "Floor Pivots Review — Support & Resistance Indicator"
-tv_script_url: "https://www.tradingview.com/script/cgO05Ghr-Floor-Pivots-With-CPR-TheReformedTrader/"
+tv_script_url: "https://www.tradingview.com/script/cgO05Ghr-Floor-Pivots-With-CPR-Pivot-Boss/"
 date: 2026-07-16
 draft: false
 type: reviews

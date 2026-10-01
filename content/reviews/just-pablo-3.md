@@ -2,6 +2,7 @@
 title: "Just Pablo 3 Review — Trend Indicator"
 date: 2026-08-16
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/just-pablo-3.png"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Trend Intensity Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/KYZOCAsk-Trend-Intensity-Index-everget/"
+tv_script_url: "https://www.tradingview.com/script/KYZOCAsk-Trend-Intensity-Index/"
 date: 2026-07-21
 draft: false
 type: reviews

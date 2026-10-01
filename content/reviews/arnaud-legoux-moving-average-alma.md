@@ -1,6 +1,6 @@
 ---
 title: "Arnaud Legoux Moving Average Alma Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/VmBBSTGn-Arnaud-Legoux-Moving-Average-ALMA-with-buy-sell-signals-tartigradia/"
+tv_script_url: "https://www.tradingview.com/script/VmBBSTGn-Arnaud-Legoux-Moving-Average-ALMA-with-buy-sell-signals/"
 date: 2026-07-16
 draft: false
 type: reviews

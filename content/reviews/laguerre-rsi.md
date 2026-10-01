@@ -1,6 +1,6 @@
 ---
 title: "Laguerre RSI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/B094baNp-Laguerre-RSI-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/B094baNp-Laguerre-RSI/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Volatility Contraction Pattern Review — Chart Patterns"
-tv_script_url: "https://www.tradingview.com/script/J1tqSCqR-Volatility-Contraction-Pattern-Amphibiantrading/"
+tv_script_url: "https://www.tradingview.com/script/J1tqSCqR-Volatility-Contraction-Pattern/"
 date: 2026-08-01
 draft: false
 type: reviews

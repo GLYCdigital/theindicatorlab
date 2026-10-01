@@ -1,6 +1,6 @@
 ---
 title: "Moving Average Envelope Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/692wWA8a-Moving-Average-Envelopes-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/692wWA8a-Moving-Average-Envelopes/"
 date: 2026-07-16
 draft: false
 type: reviews

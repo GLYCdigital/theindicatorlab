@@ -1,6 +1,6 @@
 ---
 title: "Quartile Footprint Bubbles Maxmaserati Review — Volume"
-tv_script_url: "https://www.tradingview.com/script/6VJZIZLv-Quartile-Levels-Volume-Acceptance-Rejection-MaxMaserati/"
+tv_script_url: "https://www.tradingview.com/script/6VJZIZLv-Quartile-Footprint-Bubbles-MaxMaserati/"
 date: 2026-07-16
 draft: false
 type: reviews

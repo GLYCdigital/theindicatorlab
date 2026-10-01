@@ -1,6 +1,6 @@
 ---
 title: "Arms Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/n9OtKzo8-Arms-Index-TRIN-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/n9OtKzo8-Arms-Index-TRIN/"
 date: 2026-07-16
 draft: false
 type: reviews

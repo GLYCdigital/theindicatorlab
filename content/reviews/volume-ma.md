@@ -1,6 +1,6 @@
 ---
 title: "Volume Ma Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/WWqoUu7e-Volume-Market-Profile-SamRecio/"
+tv_script_url: "https://www.tradingview.com/script/WWqoUu7e-Volume-Market-Profile/"
 date: 2026-08-15
 draft: false
 type: reviews

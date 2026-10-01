@@ -1,6 +1,6 @@
 ---
 title: "Risk Reward Calculator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/GbgkGI2h-Risk-Reward-Calculator-projeadam/"
+tv_script_url: "https://www.tradingview.com/script/GbgkGI2h-Risk-Reward-Calculator-lovealgotrading/"
 date: 2026-07-16
 draft: false
 type: reviews

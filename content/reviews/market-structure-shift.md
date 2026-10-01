@@ -1,6 +1,6 @@
 ---
 title: "Market Structure Shift Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/uoHHpr29-Market-Structure-Shift-MSS-w-Multi-Time-Frame-Tables-Sword-Shield-swordNshield/"
+tv_script_url: "https://www.tradingview.com/script/uoHHpr29-Market-Structure-Shift-MSS-Sword-Shield/"
 date: 2026-08-03
 draft: false
 type: reviews

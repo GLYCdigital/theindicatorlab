@@ -1,6 +1,6 @@
 ---
 title: "Fisher Transform Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/aE04vxPy-Fisher-transform-Fjvdb/"
+tv_script_url: "https://www.tradingview.com/script/aE04vxPy-Fisher-Transform-Divergence/"
 date: 2026-07-16
 draft: false
 type: reviews

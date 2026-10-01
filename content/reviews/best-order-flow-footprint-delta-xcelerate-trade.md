@@ -2,6 +2,7 @@
 title: "Best Order Flow Footprint Delta Xcelerate Trade Review"
 date: 2026-08-14
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/best-order-flow-footprint-delta-xcelerate-trade.png"
 tags:

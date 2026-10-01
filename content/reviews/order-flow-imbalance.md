@@ -1,6 +1,6 @@
 ---
 title: "Order Flow Imbalance Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/kEPvBsWe-Order-Flow-Imbalance-Finder-turk-shariq/"
+tv_script_url: "https://www.tradingview.com/script/kEPvBsWe-Order-Flow-Imbalance-Finder-By-Turk/"
 date: 2026-07-16
 draft: false
 type: reviews

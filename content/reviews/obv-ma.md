@@ -1,6 +1,6 @@
 ---
 title: "OBV Ma Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/tMkZ9PvU-OBV-MA-Cocotrader67/"
+tv_script_url: "https://www.tradingview.com/script/tMkZ9PvU-OBV-MA/"
 date: 2026-08-21
 draft: false
 type: reviews

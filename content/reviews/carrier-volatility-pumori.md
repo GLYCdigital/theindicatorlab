@@ -1,6 +1,6 @@
 ---
 title: "Carrier Volatility Pumori Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/yHpgAu7A-Pumori-et20tradeview/"
+tv_script_url: "https://www.tradingview.com/script/yHpgAu7A-Carrier-Volatility-Pumori/"
 date: 2026-07-16
 draft: false
 type: reviews

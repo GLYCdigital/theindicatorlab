@@ -1,6 +1,6 @@
 ---
 title: "Open Interest Tracker Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/MYIdL3DL-Local-Open-Interest-ByzantiumScripts/"
+tv_script_url: "https://www.tradingview.com/script/MYIdL3DL-Open-Interest/"
 date: 2026-07-31
 draft: false
 type: reviews

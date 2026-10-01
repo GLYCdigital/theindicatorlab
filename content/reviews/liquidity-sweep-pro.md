@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Sweep Pro Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/jksy8E6M-Liquidity-Sweep-pro-hashem-trader/"
+tv_script_url: "https://www.tradingview.com/script/jksy8E6M-Liquidity-Sweep-pro/"
 date: 2026-07-16
 draft: false
 type: reviews

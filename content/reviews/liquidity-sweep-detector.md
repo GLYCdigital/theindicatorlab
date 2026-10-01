@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Sweep Detector Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/b9oLRMRb-Liquidity-Sweep-Detector-DefinedEdge/"
+tv_script_url: "https://www.tradingview.com/script/b9oLRMRb-Liquidity-Sweep-Detector/"
 date: 2026-07-27
 draft: false
 type: reviews

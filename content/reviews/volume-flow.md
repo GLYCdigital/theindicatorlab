@@ -1,6 +1,6 @@
 ---
 title: "Volume Flow Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/TjovkFpE-Volume-Flow-openresty/"
+tv_script_url: "https://www.tradingview.com/script/TjovkFpE/"
 date: 2026-07-16
 draft: false
 type: reviews

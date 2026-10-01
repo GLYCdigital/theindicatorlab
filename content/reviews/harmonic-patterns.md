@@ -1,6 +1,6 @@
 ---
 title: "Harmonic Patterns Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/8wDll1Hk-Harmonic-Patterns-Live-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/8wDll1Hk-Harmonic-Patterns/"
 date: 2026-07-16
 draft: false
 type: reviews

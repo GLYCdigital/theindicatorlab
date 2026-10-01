@@ -1,6 +1,6 @@
 ---
 title: "Tilson T3 Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/UeUnR8of-Tilson-T3-StalexBot/"
+tv_script_url: "https://www.tradingview.com/script/UeUnR8of-Tilson-T3/"
 date: 2026-07-16
 draft: false
 type: reviews

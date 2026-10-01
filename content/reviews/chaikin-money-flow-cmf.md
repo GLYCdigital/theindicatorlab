@@ -1,6 +1,6 @@
 ---
 title: "Chaikin Money Flow CMF Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/m0rkgsPh-Chaikin-Money-Flow-sbtnc/"
+tv_script_url: "https://www.tradingview.com/script/m0rkgsPh-Chaikin-Money-Flow/"
 date: 2026-08-07
 draft: false
 type: reviews

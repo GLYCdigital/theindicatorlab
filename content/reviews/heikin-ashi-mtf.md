@@ -1,6 +1,6 @@
 ---
 title: "Heikin Ashi MTF Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/B8zoO7ll-Heikin-Ashi-MTF-PpSignal01/"
+tv_script_url: "https://www.tradingview.com/script/B8zoO7ll-Heikin-Ashi-MTF/"
 date: 2026-07-16
 draft: false
 type: reviews

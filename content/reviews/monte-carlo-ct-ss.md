@@ -1,6 +1,6 @@
 ---
 title: "Monte Carlo Ct Ss Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/9q1VcIPG-Monte-Carlo-CT-SS-Steversteves/"
+tv_script_url: "https://www.tradingview.com/script/9q1VcIPG-Monte-Carlo-CT-SS/"
 date: 2026-07-16
 draft: false
 type: reviews

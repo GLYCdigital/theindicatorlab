@@ -1,6 +1,6 @@
 ---
 title: "Stop Hunt Radar Gbb Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/k7wRHBia-Stop-Hunt-Radar-GBB-GoodBadBitcoin/"
+tv_script_url: "https://www.tradingview.com/script/k7wRHBia-Stop-Hunt-Radar-GBB/"
 date: 2026-07-16
 draft: false
 type: reviews

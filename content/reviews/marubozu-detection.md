@@ -1,6 +1,6 @@
 ---
 title: "Marubozu Detection Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/gfZEmKUh-Marubozu-Detection-InvestiShare/"
+tv_script_url: "https://www.tradingview.com/script/gfZEmKUh-Shaven-Identifier/"
 date: 2026-07-16
 draft: false
 type: reviews

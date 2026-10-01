@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands Percent B Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/yxr6jElc-Bollinger-Bands-Percent-AlgoAlpha/"
+tv_script_url: "https://www.tradingview.com/script/yxr6jElc-Bollinger-Bands-Percentile-Stdev-Channels-BBPct-AlgoAlpha/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Three Black Crows Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/11J7JmqZ-Three-Black-Crows-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/11J7JmqZ-Three-Black-Crows-automatic-finding-script/"
 date: 2026-07-24
 draft: false
 type: reviews

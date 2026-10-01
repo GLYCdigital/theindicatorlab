@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Sweep Target Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/vZLLZwi1-Liquidity-Sweep-Target-ReubenMiles/"
+tv_script_url: "https://www.tradingview.com/script/vZLLZwi1-Liquidity-Sweep-Target/"
 date: 2026-07-20
 draft: false
 type: reviews

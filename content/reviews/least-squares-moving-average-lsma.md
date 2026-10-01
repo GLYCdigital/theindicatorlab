@@ -1,6 +1,6 @@
 ---
 title: "Least Squares Moving Average LSMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/aMYbWgIf-Least-Squares-Moving-Average-Scalpalytics/"
+tv_script_url: "https://www.tradingview.com/script/aMYbWgIf-Regression-Fit-Bollinger-Bands-Spiritualhealer117/"
 date: 2026-07-29
 draft: false
 type: reviews

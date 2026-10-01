@@ -1,6 +1,6 @@
 ---
 title: "T3 Moving Average Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/jTf7ZhOC-T3-everget/"
+tv_script_url: "https://www.tradingview.com/script/jTf7ZhOC-T3-Moving-Average/"
 date: 2026-07-16
 draft: false
 type: reviews

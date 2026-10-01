@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression MTF Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Pr9hEmWf-Linear-Regression-MTF-Bands-GoodGains/"
+tv_script_url: "https://www.tradingview.com/script/Pr9hEmWf-Linear-Regression-MTF-Bands/"
 date: 2026-08-06
 draft: false
 type: reviews

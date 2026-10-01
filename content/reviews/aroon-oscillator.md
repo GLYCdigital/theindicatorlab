@@ -1,6 +1,6 @@
 ---
 title: "Aroon Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/9VbZxX7T-Aroon-Oscillator-jcrewolinski/"
+tv_script_url: "https://www.tradingview.com/script/9VbZxX7T-Aroon-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

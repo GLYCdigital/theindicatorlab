@@ -1,6 +1,6 @@
 ---
 title: "Schaff Trend Cycle Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/UkWZRgLG-Schaff-Trend-Cycle-everget/"
+tv_script_url: "https://www.tradingview.com/script/UkWZRgLG-Schaff-Trend-Cycle/"
 date: 2026-07-16
 draft: false
 type: reviews

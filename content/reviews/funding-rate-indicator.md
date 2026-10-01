@@ -1,6 +1,6 @@
 ---
 title: "Funding Rate Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/TNQpBuBn-Nuclear-F-Tr0sT/"
+tv_script_url: "https://www.tradingview.com/script/TNQpBuBn-Funding-rate/"
 date: 2026-07-16
 draft: false
 type: reviews

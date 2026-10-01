@@ -1,6 +1,6 @@
 ---
 title: "Volatility Quality Index Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/MbAO4zo0-Volatility-Quality-Index-LazyBear/"
+tv_script_url: "https://www.tradingview.com/script/MbAO4zo0-Indicator-Volatility-Quality-Index-VQI/"
 date: 2026-08-14
 draft: false
 type: reviews

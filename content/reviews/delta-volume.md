@@ -1,6 +1,6 @@
 ---
 title: "Delta Volume Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/rzQwAedk-Delta-Volume-SiddWolf/"
+tv_script_url: "https://www.tradingview.com/script/rzQwAedk-Delta-Volume-by-SiddWolf/"
 date: 2026-07-16
 draft: false
 type: reviews

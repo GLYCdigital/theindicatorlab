@@ -1,6 +1,6 @@
 ---
 title: "Double Exponential Moving Average DEMA Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/9mG662Au-Double-Exponential-Moving-Average-nikeita/"
+tv_script_url: "https://www.tradingview.com/script/9mG662Au/"
 date: 2026-07-16
 draft: false
 type: reviews

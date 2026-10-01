@@ -1,6 +1,6 @@
 ---
 title: "Monthly High Low Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Q1L4QN68-Monthly-High-Low-Marks-everget/"
+tv_script_url: "https://www.tradingview.com/script/Q1L4QN68-Monthly-High-Low-Marks/"
 date: 2026-07-16
 draft: false
 type: reviews

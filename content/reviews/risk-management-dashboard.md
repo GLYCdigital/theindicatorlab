@@ -1,6 +1,6 @@
 ---
 title: "Risk Management Dashboard Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/I3s01712-Risk-Management-Dashboard-Stop-Loss-Position-Size-Target-go8686/"
+tv_script_url: "https://www.tradingview.com/script/I3s01712-Risk-Management-GO8686-Stop-Loss-Position-Size-Target/"
 date: 2026-07-16
 draft: false
 type: reviews

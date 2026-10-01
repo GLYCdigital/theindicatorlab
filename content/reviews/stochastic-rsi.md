@@ -1,6 +1,6 @@
 ---
 title: "Stochastic RSI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/drhpwAv6-Stochastic-RSI-Maxim-Chechel/"
+tv_script_url: "https://www.tradingview.com/script/drhpwAv6-binary-option-1-minute/"
 date: 2026-07-16
 draft: false
 type: reviews

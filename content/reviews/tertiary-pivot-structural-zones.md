@@ -1,6 +1,6 @@
 ---
 title: "Tertiary Pivot Structural Zones Review"
-tv_script_url: "https://www.tradingview.com/script/GnkERUKj-Tertiary-Pivot-Zones-logicalSuccess18070/"
+tv_script_url: "https://www.tradingview.com/script/GnkERUKj-Tertiary-Pivot-Structural-Zones/"
 date: 2026-07-16
 draft: false
 type: reviews

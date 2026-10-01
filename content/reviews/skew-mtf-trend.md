@@ -1,6 +1,6 @@
 ---
 title: "Skew MTF Trend Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/27QCHz8d-Skew-MTF-Trend-SkewTrades/"
+tv_script_url: "https://www.tradingview.com/script/27QCHz8d-Skew-MTF-Trend/"
 date: 2026-07-16
 draft: false
 type: reviews

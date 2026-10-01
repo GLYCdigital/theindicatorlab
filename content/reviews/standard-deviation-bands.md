@@ -1,6 +1,6 @@
 ---
 title: "Standard Deviation Bands Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/qzClv3k0-Standard-Deviation-Bands-softfn/"
+tv_script_url: "https://www.tradingview.com/script/qzClv3k0/"
 date: 2026-07-16
 draft: false
 type: reviews

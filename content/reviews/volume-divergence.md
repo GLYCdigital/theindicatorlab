@@ -1,6 +1,6 @@
 ---
 title: "Volume Divergence Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/oOODs8xN-Volume-Divergence-baymucuk/"
+tv_script_url: "https://www.tradingview.com/script/oOODs8xN-Volume-Divergence-by-MM/"
 date: 2026-07-26
 draft: false
 type: reviews

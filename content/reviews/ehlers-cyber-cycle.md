@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Cyber Cycle Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Rol6rD2Y-Ehlers-Cyber-Cycle-everget/"
+tv_script_url: "https://www.tradingview.com/script/Rol6rD2Y-Ehlers-Cyber-Cycle/"
 date: 2026-07-16
 draft: false
 type: reviews

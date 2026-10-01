@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Grab Detector Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/WXHqMJOg-Liquidity-Grab-Detector-Stop-Hunt-Sniper-v2-2-artemka3091/"
+tv_script_url: "https://www.tradingview.com/script/WXHqMJOg-liquidity-grab-detector-stop-hunt-sniper-v2-2/"
 date: 2026-07-27
 draft: false
 type: reviews

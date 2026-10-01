@@ -1,6 +1,6 @@
 ---
 title: "Institutional Order Blocks Review — Market Structure"
-tv_script_url: "https://www.tradingview.com/script/3SNcILB5-Prosty-Order-Block-Adriaan-Obi/"
+tv_script_url: "https://www.tradingview.com/script/3SNcILB5/"
 date: 2026-08-04
 draft: false
 type: reviews

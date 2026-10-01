@@ -1,6 +1,6 @@
 ---
 title: "MACD Divergence MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/mFSouWh2-MACD-Divergence-MTF-Indicator-daviddtech/"
+tv_script_url: "https://www.tradingview.com/script/mFSouWh2-MACD-Divergence-MTF-EMA-Reversal-by-DaviddTech/"
 date: 2026-09-06
 draft: false
 type: reviews

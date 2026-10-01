@@ -1,6 +1,6 @@
 ---
 title: "Vortex MTF Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/lMirygPG-Vortex-MTF-melihtuna/"
+tv_script_url: "https://www.tradingview.com/script/lMirygPG-Vortex-MTF/"
 date: 2026-08-28
 draft: false
 type: reviews

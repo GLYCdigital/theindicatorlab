@@ -1,6 +1,6 @@
 ---
 title: "MTF Stochastic Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/1StZCcFd-MTF-Stochastic-A3Sh/"
+tv_script_url: "https://www.tradingview.com/script/1StZCcFd-MTF-Stochastic-A-version/"
 date: 2026-07-16
 draft: false
 type: reviews

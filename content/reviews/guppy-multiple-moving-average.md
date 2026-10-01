@@ -1,6 +1,6 @@
 ---
 title: "Guppy Multiple Moving Average Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/ObPn76U9-Guppy-Multiple-Moving-Average-optictropic/"
+tv_script_url: "https://www.tradingview.com/script/ObPn76U9-Guppy-Multiple-Moving-Average/"
 date: 2026-07-16
 draft: false
 type: reviews

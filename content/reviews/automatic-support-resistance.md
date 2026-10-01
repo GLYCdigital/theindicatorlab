@@ -1,6 +1,6 @@
 ---
 title: "Automatic Support Resistance Review — Support & Resistance"
-tv_script_url: "https://www.tradingview.com/script/HOx9WOnJ-Automatic-Support-Resistance-getmohsin-py/"
+tv_script_url: "https://www.tradingview.com/script/HOx9WOnJ-Automatic-Support-Resistance/"
 date: 2026-07-16
 draft: false
 type: reviews

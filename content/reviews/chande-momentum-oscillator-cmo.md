@@ -1,6 +1,6 @@
 ---
 title: "Chande Momentum Oscillator Cmo Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/GUvfTza1-Chande-Momentum-Oscillator-CMO-Tiagorocha1989/"
+tv_script_url: "https://www.tradingview.com/script/GUvfTza1-Chande-Momentum-Oscillator-CMO-TR/"
 date: 2026-07-16
 draft: false
 type: reviews

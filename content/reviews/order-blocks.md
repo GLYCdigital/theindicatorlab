@@ -1,6 +1,6 @@
 ---
 title: "Order Blocks Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/bLdpFVuq-Volumized-Order-Blocks-fluxchart/"
+tv_script_url: "https://www.tradingview.com/script/bLdpFVuq-Order-Blocks-Flux-Charts/"
 date: 2026-07-16
 draft: false
 type: reviews

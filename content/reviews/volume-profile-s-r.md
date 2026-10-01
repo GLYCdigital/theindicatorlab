@@ -1,6 +1,6 @@
 ---
 title: "Volume Profile Sr Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/tAe3ZF6Z-Volume-Profile-Chip-Distribution-S-R-Zones-Peaks-Modified-MPRManagement/"
+tv_script_url: "https://www.tradingview.com/script/tAe3ZF6Z-Volume-Profile-S-R-Zones-Peaks/"
 date: 2026-08-04
 draft: false
 type: reviews

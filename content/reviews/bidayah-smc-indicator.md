@@ -1,6 +1,6 @@
 ---
 title: "Bidayah SMC Indicator Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/PIOFIf9I-Bidayah-SMART-MONEY-CONCEPT-SMC-MohammedAlDali98/"
+tv_script_url: "https://www.tradingview.com/script/PIOFIf9I-Bidayah-SMC-Indicator/"
 date: 2026-07-16
 draft: false
 type: reviews

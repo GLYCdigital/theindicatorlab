@@ -1,6 +1,6 @@
 ---
 title: "Cup And Handle Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/lFyrdEQt-Cup-and-Handle-Pattern-ceyhun/"
+tv_script_url: "https://www.tradingview.com/script/lFyrdEQt/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -3,6 +3,7 @@ title: "Dark Cloud Cover Review — Trend Indicator"
 tv_script_url: "https://www.tradingview.com/script/1G56s1nJ-eha-Candlestick-Pattern-Dark-Cloud-Cover-UnknownUnicorn3443602/"
 date: 2026-07-16
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/dark-cloud-cover.png"
 tags:

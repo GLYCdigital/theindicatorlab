@@ -1,6 +1,6 @@
 ---
 title: "Coppock Curve Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/UjV3LHsh-Coppock-Curve-everget/"
+tv_script_url: "https://www.tradingview.com/script/UjV3LHsh-Coppock-Curve/"
 date: 2026-07-16
 draft: false
 type: reviews

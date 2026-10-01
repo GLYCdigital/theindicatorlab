@@ -1,6 +1,6 @@
 ---
 title: "Variable Moving Average Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/gUxS0xJE-Variable-Moving-Average-jasondhadley/"
+tv_script_url: "https://www.tradingview.com/script/gUxS0xJE-Variable-Moving-Average/"
 date: 2026-07-16
 draft: false
 type: reviews

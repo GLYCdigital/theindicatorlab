@@ -1,6 +1,6 @@
 ---
 title: "Exprlib Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/QNGQtaZJ-ExprLib-A1trdX/"
+tv_script_url: "https://www.tradingview.com/script/QNGQtaZJ-ExprLib/"
 date: 2026-07-16
 draft: false
 type: reviews

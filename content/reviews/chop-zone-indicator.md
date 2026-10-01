@@ -1,6 +1,6 @@
 ---
 title: "Chop Zone Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/wHTi3AjI-Chop-Zone-pathways/"
+tv_script_url: "https://www.tradingview.com/script/wHTi3AjI/"
 date: 2026-07-16
 draft: false
 type: reviews

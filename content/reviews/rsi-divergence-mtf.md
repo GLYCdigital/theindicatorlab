@@ -1,6 +1,6 @@
 ---
 title: "RSI Divergence MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/7oBjf3IU-RSI-Divergence-MTF-Panel-DV780/"
+tv_script_url: "https://www.tradingview.com/script/7oBjf3IU-rsi-divergence-mtf-panel/"
 date: 2026-08-14
 draft: false
 type: reviews

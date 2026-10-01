@@ -1,6 +1,6 @@
 ---
 title: "Momentum Reversal Indicator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/6KEbT39S-Momentum-Reversal-Indicator-ToneVays/"
+tv_script_url: "https://www.tradingview.com/script/6KEbT39S-Momentum-Reversal-Indicator-MRI/"
 date: 2026-07-16
 draft: false
 type: reviews

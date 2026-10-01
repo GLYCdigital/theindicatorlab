@@ -1,6 +1,6 @@
 ---
 title: "Volume Profile Fixed Range Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/kIY0znXs-Volume-Profile-Fixed-Range-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/kIY0znXs-Volume-Profile-Fixed-Range/"
 date: 2026-07-16
 draft: false
 type: reviews

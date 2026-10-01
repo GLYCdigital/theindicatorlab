@@ -1,6 +1,6 @@
 ---
 title: "1 Trendline Strategy Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/uOlzLqTw-1-Trendline-Strategy-egoigor1976/"
+tv_script_url: "https://www.tradingview.com/script/uOlzLqTw-1-Trendline-Strategy/"
 date: 2026-07-16
 draft: false
 type: reviews

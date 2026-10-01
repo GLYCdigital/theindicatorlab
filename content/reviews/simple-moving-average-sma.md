@@ -1,6 +1,6 @@
 ---
 title: "Simple Moving Average SMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/LXeOH1vm-Simple-Moving-Average-SMA-mihakralj/"
+tv_script_url: "https://www.tradingview.com/script/LXeOH1vm-Simple-Moving-Average-SMA/"
 date: 2026-07-16
 draft: false
 type: reviews

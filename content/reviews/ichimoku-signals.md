@@ -1,6 +1,6 @@
 ---
 title: "Ichimoku Signals Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/2WBBRxKi-Ichimoku-signals-salarkamjoo/"
+tv_script_url: "https://www.tradingview.com/script/2WBBRxKi-Ichimoku-all-signals/"
 date: 2026-07-16
 draft: false
 type: reviews

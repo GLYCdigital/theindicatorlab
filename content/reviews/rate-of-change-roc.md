@@ -1,6 +1,6 @@
 ---
 title: "Rate Of Change ROC Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/WHFUVDg8-Rate-of-Change-ROC-Tiagorocha1989/"
+tv_script_url: "https://www.tradingview.com/script/WHFUVDg8-Rate-of-Change-ROC-TR/"
 date: 2026-08-02
 draft: false
 type: reviews

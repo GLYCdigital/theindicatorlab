@@ -1,6 +1,6 @@
 ---
 title: "Market Facilitation Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/V0GYOOg5-Market-Facilitation-Index-Bruce-JSH/"
+tv_script_url: "https://www.tradingview.com/script/V0GYOOg5-MFI-Market-Facilitation-Index/"
 date: 2026-07-16
 draft: false
 type: reviews

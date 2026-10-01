@@ -1,6 +1,6 @@
 ---
 title: "Mean Reversion Ml Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/1ZqSxD8W-Mean-Reversion-mephistomevo/"
+tv_script_url: "https://www.tradingview.com/script/1ZqSxD8W/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "OBV Simple Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/9nvr44ce-OBV-Simple-serger007/"
+tv_script_url: "https://www.tradingview.com/script/9nvr44ce/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "RSI Divergence Hunter Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/nsbmwZiK-RSI-Divergence-Hunter-JOAT-officialjackofalltrades/"
+tv_script_url: "https://www.tradingview.com/script/nsbmwZiK-RSI-Divergence-Hunter-JOAT/"
 date: 2026-07-18
 draft: false
 type: reviews

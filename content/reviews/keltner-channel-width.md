@@ -1,6 +1,6 @@
 ---
 title: "Keltner Channel Width Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/0L9E54zp-Kelt-Width-KingThies/"
+tv_script_url: "https://www.tradingview.com/script/0L9E54zp-Keltner-Channel-Width-Oscillator-KingThies/"
 date: 2026-07-16
 draft: false
 type: reviews

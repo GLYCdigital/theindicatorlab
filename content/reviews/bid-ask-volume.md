@@ -1,6 +1,6 @@
 ---
 title: "Bid Ask Volume Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/ibEYj1eF-Bid-Ask-Volume-Cross-s3raphic333/"
+tv_script_url: "https://www.tradingview.com/script/ibEYj1eF-Bid-Ask-Volume-Cross/"
 date: 2026-07-16
 draft: false
 type: reviews

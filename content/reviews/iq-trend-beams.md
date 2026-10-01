@@ -1,6 +1,6 @@
 ---
 title: "Iq Trend Beams Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/SG7Vk6uH-IQ-Trend-Beams-TradingIQ-Trading-IQ/"
+tv_script_url: "https://www.tradingview.com/script/SG7Vk6uH-IQ-Trend-Beams-TradingIQ/"
 date: 2026-08-13
 draft: false
 type: reviews

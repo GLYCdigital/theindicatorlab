@@ -1,6 +1,6 @@
 ---
 title: "Zig Zag Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/VXMf7uwJ-Zig-Zag-ZkGoldTrader/"
+tv_script_url: "https://www.tradingview.com/script/VXMf7uwJ-Zig-Zag/"
 date: 2026-07-16
 draft: false
 type: reviews

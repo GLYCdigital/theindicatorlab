@@ -1,6 +1,6 @@
 ---
 title: "SMA Cross Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/zFZfjjAD-SMA-Cross-SIlentSingh/"
+tv_script_url: "https://www.tradingview.com/script/zFZfjjAD-SMA-Cross/"
 date: 2026-07-16
 draft: false
 type: reviews

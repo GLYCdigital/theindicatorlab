@@ -1,6 +1,6 @@
 ---
 title: "Fractal Breakout Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/3pCkqpbL-Fractal-Breakout-ceyhun/"
+tv_script_url: "https://www.tradingview.com/script/3pCkqpbL/"
 date: 2026-07-16
 draft: false
 type: reviews

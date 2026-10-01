@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Supersmoother Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/h8AjgZD7-Ehlers-SuperSmoother-Spinn29/"
+tv_script_url: "https://www.tradingview.com/script/h8AjgZD7-ehlers-supersmoother/"
 date: 2026-07-16
 draft: false
 type: reviews

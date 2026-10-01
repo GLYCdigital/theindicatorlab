@@ -1,6 +1,6 @@
 ---
 title: "Engulfing Scanner Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/AnrIQ45g-Engulfing-Scanner-v1-Coingrats-nl/"
+tv_script_url: "https://www.tradingview.com/script/AnrIQ45g-Engulfing-Plotter/"
 date: 2026-07-16
 draft: false
 type: reviews

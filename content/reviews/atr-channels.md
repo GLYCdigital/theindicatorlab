@@ -1,6 +1,6 @@
 ---
 title: "ATR Channels Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/RTWSC7RM-ATR-Channels-zephurr/"
+tv_script_url: "https://www.tradingview.com/script/RTWSC7RM-ATR-Channels/"
 date: 2026-07-16
 draft: false
 type: reviews

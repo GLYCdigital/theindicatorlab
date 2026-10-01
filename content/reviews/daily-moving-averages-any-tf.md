@@ -1,6 +1,6 @@
 ---
 title: "Daily Moving Averages Any Tf Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Tc21dsVG-Daily-Moving-Averages-scarf/"
+tv_script_url: "https://www.tradingview.com/script/Tc21dsVG-Daily-Moving-Averages/"
 date: 2026-07-22
 draft: false
 type: reviews

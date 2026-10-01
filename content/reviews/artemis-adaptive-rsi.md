@@ -1,6 +1,6 @@
 ---
 title: "Artemis Adaptive RSI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/QJzSNz0S-Artemis-Adaptive-RSI-a-jabbaroff/"
+tv_script_url: "https://www.tradingview.com/script/QJzSNz0S-Artemis-Adaptive-RSI/"
 date: 2026-07-16
 draft: false
 type: reviews

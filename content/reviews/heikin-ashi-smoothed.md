@@ -1,6 +1,6 @@
 ---
 title: "Heikin Ashi Smoothed Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/d6QlCCpf-Heikin-Ashi-Smoothed-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/d6QlCCpf/"
 date: 2026-07-16
 draft: false
 type: reviews

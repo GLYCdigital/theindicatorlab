@@ -1,6 +1,6 @@
 ---
 title: "Smart Trader Episode 06 Isotropic Trend Lines Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/ZSgx4eSy-Smart-Trader-Episode-06-Isotropic-Trend-Lines-ata-sabanci/"
+tv_script_url: "https://www.tradingview.com/script/ZSgx4eSy-Smart-Trader-Episode-06-Isotropic-Trend-Lines/"
 date: 2026-07-16
 draft: false
 type: reviews

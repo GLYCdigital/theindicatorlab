@@ -1,6 +1,6 @@
 ---
 title: "Ulcer Index Performance Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/xWxIok6S-Ulcer-Index-everget/"
+tv_script_url: "https://www.tradingview.com/script/xWxIok6S-Ulcer-Index/"
 date: 2026-07-31
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Liq Sweep CHOCH Ob Instant Review — Market Structure"
-tv_script_url: "https://www.tradingview.com/script/EwYuNAx2-Liq-Sweep-CHoCH-OB-Instant-CodaPro/"
+tv_script_url: "https://www.tradingview.com/script/EwYuNAx2-Liq-Sweep-CHoCH-OB-Instant/"
 date: 2026-07-20
 draft: false
 type: reviews

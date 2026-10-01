@@ -1,6 +1,6 @@
 ---
 title: "Money Flow Index MFI Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/hYmRLirx-Money-Flow-Index-everget/"
+tv_script_url: "https://www.tradingview.com/script/hYmRLirx-Money-Flow-Index-MFI/"
 date: 2026-08-09
 draft: false
 type: reviews

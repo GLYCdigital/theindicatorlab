@@ -1,6 +1,6 @@
 ---
 title: "Rajiv Alpha Fusion Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/wZygl5Pr-Rajiv-Alpha-Fusion-Pro-sharemarketmbi/"
+tv_script_url: "https://www.tradingview.com/script/wZygl5Pr-Rajiv-Alpha-Fusion-Pro/"
 date: 2026-07-16
 draft: false
 type: reviews

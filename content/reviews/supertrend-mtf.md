@@ -1,6 +1,6 @@
 ---
 title: "Supertrend MTF Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/aT1OvmPJ-Supertrend-MTF-Heikin-Ashi-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/aT1OvmPJ-Supertrend-MTF-Heikin-Ashi/"
 date: 2026-08-03
 draft: false
 type: reviews

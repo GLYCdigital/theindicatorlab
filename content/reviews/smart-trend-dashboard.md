@@ -1,6 +1,6 @@
 ---
 title: "Smart Trend Dashboard Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/UyPWCjYD-VWAP-RSI-MTF-siddurn2025/"
+tv_script_url: "https://www.tradingview.com/script/UyPWCjYD-Smart-Trend-Dashboard-VWAP-RSI-MTF-EMA-Alignment/"
 date: 2026-07-20
 draft: false
 type: reviews

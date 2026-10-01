@@ -1,6 +1,6 @@
 ---
 title: "RSI Divergence Entry Engine Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/HzULZgpR-RSI-Divergence-Entry-Engine-trade-w-samet-tradewsamet/"
+tv_script_url: "https://www.tradingview.com/script/HzULZgpR-RSI-Divergence-Entry-Engine-trade-w-samet/"
 date: 2026-07-22
 draft: false
 type: reviews

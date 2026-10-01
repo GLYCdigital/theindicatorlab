@@ -1,6 +1,6 @@
 ---
 title: "Commodity Channel Index CCI Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/BQ3WE0OG-Commodity-Channel-Index-CCI-Katana-Fox/"
+tv_script_url: "https://www.tradingview.com/script/BQ3WE0OG-commodity-channel-index-cci/"
 date: 2026-07-16
 draft: false
 type: reviews

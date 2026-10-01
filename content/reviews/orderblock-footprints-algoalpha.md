@@ -2,6 +2,7 @@
 title: "Orderblock Footprints Algoalpha Review — Market Structure"
 date: 2026-08-21
 draft: false
+noindex: true
 type: reviews
 image: "/screenshots/orderblock-footprints-algoalpha.png"
 tags:

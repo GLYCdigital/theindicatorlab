@@ -1,6 +1,6 @@
 ---
 title: "CCI MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/xSc037zG-CCI-MTF-IvanLabrie/"
+tv_script_url: "https://www.tradingview.com/script/xSc037zG-CCI-MTF-Multi-timeframe-CCI/"
 date: 2026-07-16
 draft: false
 type: reviews

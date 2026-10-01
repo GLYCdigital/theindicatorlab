@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression Channel Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/efXI515C-Linear-Regression-Channel-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/efXI515C-Linear-Regression-Channel/"
 date: 2026-07-16
 draft: false
 type: reviews

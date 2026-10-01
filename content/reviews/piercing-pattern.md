@@ -1,6 +1,6 @@
 ---
 title: "Piercing Pattern Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/CZVT7iWz-Piercing-Pattern-ridvansozen1/"
+tv_script_url: "https://www.tradingview.com/script/CZVT7iWz-Piercing-Pattern/"
 date: 2026-07-16
 draft: false
 type: reviews

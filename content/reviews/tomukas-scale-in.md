@@ -1,6 +1,6 @@
 ---
 title: "Tomukas Scale In Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/14l4u5gJ-Tomukas-Scale-In-V2-Tomukasss/"
+tv_script_url: "https://www.tradingview.com/script/14l4u5gJ-Tomukas-Scale-In-V2/"
 date: 2026-07-16
 draft: false
 type: reviews

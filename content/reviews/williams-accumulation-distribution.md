@@ -1,6 +1,6 @@
 ---
 title: "Williams Accumulation Distribution Review — Momentum"
-tv_script_url: "https://www.tradingview.com/script/1tZnztAB-Williams-Accumulation-Distribution-FractalTrade/"
+tv_script_url: "https://www.tradingview.com/script/1tZnztAB-Williams-Accumulation-Distribution/"
 date: 2026-08-28
 draft: false
 type: reviews

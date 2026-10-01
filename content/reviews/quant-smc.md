@@ -1,6 +1,6 @@
 ---
 title: "Quant SMC Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/ugOBLSa3-Quant-SMC-Pro-JOAT-officialjackofalltrades/"
+tv_script_url: "https://www.tradingview.com/script/ugOBLSa3-Quant-SMC-Pro-JOAT/"
 date: 2026-07-16
 draft: false
 type: reviews

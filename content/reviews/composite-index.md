@@ -1,6 +1,6 @@
 ---
 title: "Composite Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/XsPjxdT8-Composite-Index-zikkushah/"
+tv_script_url: "https://www.tradingview.com/script/XsPjxdT8-Constance-Brown-Composite-Index/"
 date: 2026-07-16
 draft: false
 type: reviews

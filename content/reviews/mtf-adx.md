@@ -1,6 +1,6 @@
 ---
 title: "MTF ADX Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Gqf2FqR2-MTF-ADX-xinolia/"
+tv_script_url: "https://www.tradingview.com/script/Gqf2FqR2/"
 date: 2026-07-16
 draft: false
 type: reviews

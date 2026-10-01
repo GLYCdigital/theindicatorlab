@@ -1,6 +1,6 @@
 ---
 title: "Momentum Leader Scanner Ashish Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/OnK7L1PJ-Momentum-Leader-Scanner-ashishpearce23/"
+tv_script_url: "https://www.tradingview.com/script/OnK7L1PJ-Momentum-Leader-Scanner-Ashish/"
 date: 2026-07-16
 draft: false
 type: reviews

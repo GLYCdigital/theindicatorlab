@@ -1,6 +1,6 @@
 ---
 title: "Heiken Ashi Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/2wybQ0vo-Heikin-Ashi-VerticalTraders-io-Vertical-X/"
+tv_script_url: "https://www.tradingview.com/script/2wybQ0vo-Heiken-Ashi/"
 date: 2026-07-16
 draft: false
 type: reviews

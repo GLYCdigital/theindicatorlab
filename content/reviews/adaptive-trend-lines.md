@@ -1,6 +1,6 @@
 ---
 title: "Adaptive Trend Lines Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/cKHoLE1s-Adaptive-Trend-Lines-Zeiierman/"
+tv_script_url: "https://www.tradingview.com/script/cKHoLE1s-Adaptive-Trend-Lines-Expo/"
 date: 2026-07-16
 draft: false
 type: reviews

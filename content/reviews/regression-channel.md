@@ -1,6 +1,6 @@
 ---
 title: "Regression Channel Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Kr4HNxg2-Regression-Channel-ZenithClown/"
+tv_script_url: "https://www.tradingview.com/script/Kr4HNxg2-Regression-Channel/"
 date: 2026-07-16
 draft: false
 type: reviews

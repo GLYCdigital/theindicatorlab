@@ -1,6 +1,6 @@
 ---
 title: "Dealing Range Equilibrium Premium Discount Zones SMC Review"
-tv_script_url: "https://www.tradingview.com/script/w2VZp1fR-Trader-039-s-Multiverse-Dealing-Range-Equilibrium-Original-Garvitgarg/"
+tv_script_url: "https://www.tradingview.com/script/w2VZp1fR-Dealing-Range-Equilibrium-Premium-Discount-Zones-SMC/"
 date: 2026-07-16
 draft: false
 type: reviews

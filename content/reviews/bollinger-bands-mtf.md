@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands MTF Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/f5Hj13Mx-BB-MTF-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/f5Hj13Mx/"
 date: 2026-07-16
 draft: false
 type: reviews

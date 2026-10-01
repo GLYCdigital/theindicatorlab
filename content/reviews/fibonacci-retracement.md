@@ -1,6 +1,6 @@
 ---
 title: "Fibonacci Retracement Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/yFIioDwi-Fibonacci-retracement-mickes/"
+tv_script_url: "https://www.tradingview.com/script/yFIioDwi-Fibonacci-retracement/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Stochastic RSI MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/n0o5chKD-Stochastic-RSI-MTF-veryfid/"
+tv_script_url: "https://www.tradingview.com/script/n0o5chKD-Stochastic-RSI-MTF-6-Timeframes/"
 date: 2026-08-14
 draft: false
 type: reviews

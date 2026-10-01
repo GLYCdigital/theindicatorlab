@@ -1,6 +1,6 @@
 ---
 title: "Volume Spread Analysis Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/uPXAQIp1-Volume-Spread-analysis-HariprasathGopal/"
+tv_script_url: "https://www.tradingview.com/script/uPXAQIp1-FIG-Volume-Spread-analysis/"
 date: 2026-08-17
 draft: false
 type: reviews

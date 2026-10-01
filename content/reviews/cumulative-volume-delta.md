@@ -1,6 +1,6 @@
 ---
 title: "Cumulative Volume Delta Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/lsDHdn0H-Cumulative-Volume-Delta-Ankit-1618/"
+tv_script_url: "https://www.tradingview.com/script/lsDHdn0H-Cumulative-Volume-Delta/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Pivot Points Fibonacci Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-juanmirocks/"
+tv_script_url: "https://www.tradingview.com/script/o1mxoL8J-Pivot-Points-by-juanmirocks/"
 date: 2026-07-16
 draft: false
 type: reviews

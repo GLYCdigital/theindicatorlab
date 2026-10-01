@@ -1,6 +1,6 @@
 ---
 title: "Commodity Channel Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/MmHhHKTx-Commodity-Channel-Index-CooperHoang/"
+tv_script_url: "https://www.tradingview.com/script/MmHhHKTx-CCI-Extreme-and-OBV-Divergence/"
 date: 2026-07-16
 draft: false
 type: reviews

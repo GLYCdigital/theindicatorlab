@@ -1,6 +1,6 @@
 ---
 title: "Weekly High Low Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/BvFpZ23g-Weekly-High-Low-XAUUSD-godkuby/"
+tv_script_url: "https://www.tradingview.com/script/BvFpZ23g-Weekly-High-Low-XAUUSD-by-Rizal/"
 date: 2026-07-18
 draft: false
 type: reviews

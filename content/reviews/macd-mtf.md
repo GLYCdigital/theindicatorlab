@@ -1,6 +1,6 @@
 ---
 title: "MACD MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/sQaOUs2c-MTF-MACD-2-RockBaron/"
+tv_script_url: "https://www.tradingview.com/script/sQaOUs2c-macd-mtf/"
 date: 2026-09-09
 draft: false
 type: reviews

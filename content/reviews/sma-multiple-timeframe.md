@@ -1,6 +1,6 @@
 ---
 title: "SMA Multiple Timeframe Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/yRKFRRaV-SMA-Multiple-Timeframes-SKELER/"
+tv_script_url: "https://www.tradingview.com/script/yRKFRRaV-SMA-Multiple-Timeframes/"
 date: 2026-07-27
 draft: false
 type: reviews

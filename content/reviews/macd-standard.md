@@ -1,6 +1,6 @@
 ---
 title: "MACD Standard Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/sb60762j-MACD-Standard-Deviation-MisinkoMaster/"
+tv_script_url: "https://www.tradingview.com/script/sb60762j-MACD-Standard-Deviation/"
 date: 2026-07-30
 draft: false
 type: reviews

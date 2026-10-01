@@ -1,6 +1,6 @@
 ---
 title: "Trend Predictor Ribbon Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/XtGU6toW-Trend-Predictor-Ribbon-Clone-Fixed-ronitjain18/"
+tv_script_url: "https://www.tradingview.com/script/XtGU6toW-Trend-Predictor-Ribbon-Clone-Fixed-roj-karo-moj-karo/"
 date: 2026-08-26
 draft: false
 type: reviews

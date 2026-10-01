@@ -1,6 +1,6 @@
 ---
 title: "Relative Momentum Index Rmi Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/kwIt9OgQ-Relative-Momentum-Index-everget/"
+tv_script_url: "https://www.tradingview.com/script/kwIt9OgQ-Relative-Momentum-Index/"
 date: 2026-07-18
 draft: false
 type: reviews

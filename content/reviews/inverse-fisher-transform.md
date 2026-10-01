@@ -1,6 +1,6 @@
 ---
 title: "Inverse Fisher Transform Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/WikDwOZC-Inverse-Fisher-Transform-on-STOCHASTIC-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/WikDwOZC/"
 date: 2026-07-16
 draft: false
 type: reviews

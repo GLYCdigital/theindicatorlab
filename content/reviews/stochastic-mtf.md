@@ -1,6 +1,6 @@
 ---
 title: "Stochastic MTF Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/EdoyUiHg-Stochastic-MTF-john-everist/"
+tv_script_url: "https://www.tradingview.com/script/EdoyUiHg-MTF-Stochastic-with-automatic-divergence/"
 date: 2026-08-19
 draft: false
 type: reviews

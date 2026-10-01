@@ -1,6 +1,6 @@
 ---
 title: "Vertical Horizontal Filter Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/f8PIBdha-Vertical-Horizontal-Filter-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/f8PIBdha/"
 date: 2026-07-16
 draft: false
 type: reviews

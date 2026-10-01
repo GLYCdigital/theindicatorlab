@@ -1,6 +1,6 @@
 ---
 title: "Fibonacci Extension Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/FWYQ4vTk-Fibonacci-Extention-Retracment-Pivot-Points-dgtrd/"
+tv_script_url: "https://www.tradingview.com/script/FWYQ4vTk-Fibonacci-Extension-Retracement-Pivot-Points-by-DGT/"
 date: 2026-07-16
 draft: false
 type: reviews

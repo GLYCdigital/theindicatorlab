@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Decycler Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/nPiIeTv0-Ehlers-Decycler-Spinn29/"
+tv_script_url: "https://www.tradingview.com/script/nPiIeTv0-ehlers-decycler/"
 date: 2026-07-16
 draft: false
 type: reviews

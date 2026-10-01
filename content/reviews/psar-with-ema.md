@@ -1,6 +1,6 @@
 ---
 title: "PSAR With EMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/Chvmom2C-PSAR-with-EMA-Filter-way2algotrade/"
+tv_script_url: "https://www.tradingview.com/script/Chvmom2C-PSAR-with-EMA-Filter/"
 date: 2026-07-16
 draft: false
 type: reviews

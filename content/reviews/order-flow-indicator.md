@@ -1,6 +1,6 @@
 ---
 title: "Order Flow Indicator Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/QjIcu4P9-Order-Flow-Indicator-FriendOfTheTrend/"
+tv_script_url: "https://www.tradingview.com/script/QjIcu4P9-Order-Flow-Indicator/"
 date: 2026-07-16
 draft: false
 type: reviews

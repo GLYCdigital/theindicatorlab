@@ -1,6 +1,6 @@
 ---
 title: "Envelopes Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/tdFmtqlQ-USS-Enterprise-Alpachino97/"
+tv_script_url: "https://www.tradingview.com/script/tdFmtqlQ-Envelopes-USS-Enterprise/"
 date: 2026-07-16
 draft: false
 type: reviews

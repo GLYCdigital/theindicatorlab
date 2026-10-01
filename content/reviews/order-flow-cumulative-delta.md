@@ -1,6 +1,6 @@
 ---
 title: "Order Flow Cumulative Delta Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow-prokopchuksv21/"
+tv_script_url: "https://www.tradingview.com/script/yoWXiD1U-Order-Flow/"
 date: 2026-07-16
 draft: false
 type: reviews

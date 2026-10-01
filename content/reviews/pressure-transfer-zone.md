@@ -1,6 +1,6 @@
 ---
 title: "Pressure Transfer Zone Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/AlDi5hYd-Pressure-Transfer-Zone-Finntech1/"
+tv_script_url: "https://www.tradingview.com/script/AlDi5hYd-Pressure-Transfer-Zone/"
 date: 2026-08-08
 draft: false
 type: reviews

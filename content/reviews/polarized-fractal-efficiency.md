@@ -1,6 +1,6 @@
 ---
 title: "Polarized Fractal Efficiency Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/OESOW4zd-Polarized-Fractal-Efficiency-capissimo/"
+tv_script_url: "https://www.tradingview.com/script/OESOW4zd-Polarized-Fractal-Efficiency/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Delta Divergence Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/GDPKdX06-Delta-Divergence-IndexAce/"
+tv_script_url: "https://www.tradingview.com/script/GDPKdX06-Volume-Delta-Divergence/"
 date: 2026-07-16
 draft: false
 type: reviews

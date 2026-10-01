@@ -1,6 +1,6 @@
 ---
 title: "Smi Ergodic Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/cwrgy4fw-SMI-Ergodic-Indicator-Oscillator-elpokor/"
+tv_script_url: "https://www.tradingview.com/script/cwrgy4fw-SMIIO/"
 date: 2026-07-16
 draft: false
 type: reviews

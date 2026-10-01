@@ -1,6 +1,6 @@
 ---
 title: "Take Profit Stop Loss Levels Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/liuZhpsR-Take-Profit-Stop-Loss-Levels-abu-faisal-86/"
+tv_script_url: "https://www.tradingview.com/script/liuZhpsR-Take-Profit-Stop-Loss-Levels/"
 date: 2026-07-18
 draft: false
 type: reviews

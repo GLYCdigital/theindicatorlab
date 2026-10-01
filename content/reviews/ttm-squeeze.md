@@ -1,6 +1,6 @@
 ---
 title: "TTM Squeeze Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/eFs5kf8F-TTM-Squeeze-Greeny/"
+tv_script_url: "https://www.tradingview.com/script/eFs5kf8F-TTM-Squeeze/"
 date: 2026-07-16
 draft: false
 type: reviews

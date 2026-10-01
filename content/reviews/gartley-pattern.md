@@ -1,6 +1,6 @@
 ---
 title: "Gartley Pattern Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/j4Ebxapj-GartleyPattern-ULTRA-V2-NXT2017/"
+tv_script_url: "https://www.tradingview.com/script/j4Ebxapj-GartleyPattern-ULTRA-V1-NXT2017-Autodrawing-Harmonic-Pattern/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Darvas Box Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/cRqNbBLU-DARVAS-BOX-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/cRqNbBLU-DARVAS-BOX-by-KIVAN%C3%87-fr3762/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "KAMA Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/WMySm5L4-Kaufman-Adaptive-Moving-Average-everget/"
+tv_script_url: "https://www.tradingview.com/script/WMySm5L4-Kaufman-Adaptive-Moving-Average/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Wyckoff Accumulation Distribution Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/eKXiwaeS-Wyckoff-Accumulation-Distribution-faytterro/"
+tv_script_url: "https://www.tradingview.com/script/eKXiwaeS/"
 date: 2026-09-02
 draft: false
 type: reviews

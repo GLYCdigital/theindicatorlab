@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Fisher Transform Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/lbCrnfnp-Ehlers-Fisher-Transform-Indicator-CC-cheatcountry/"
+tv_script_url: "https://www.tradingview.com/script/lbCrnfnp-Ehlers-Fisher-Transform-Indicator-CC/"
 date: 2026-07-16
 draft: false
 type: reviews

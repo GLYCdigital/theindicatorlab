@@ -1,6 +1,6 @@
 ---
 title: "EMA Multiple Timeframe Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/1iSxmAdg-EMA-Multiple-Timeframes-Archstro/"
+tv_script_url: "https://www.tradingview.com/script/1iSxmAdg-EMA-Multiple-Timeframes/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "RSI Regular Divergence Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/v2nb51HR-RSI-Regular-Divergence-tharinduruwan1996/"
+tv_script_url: "https://www.tradingview.com/script/v2nb51HR-Trade-1-Statergy/"
 date: 2026-08-15
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression Line Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/LpbWEcA3-Linear-Regression-Line-alexgrover/"
+tv_script_url: "https://www.tradingview.com/script/LpbWEcA3-Regression-Line-Formula/"
 date: 2026-07-27
 draft: false
 type: reviews

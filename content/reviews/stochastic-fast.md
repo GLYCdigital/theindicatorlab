@@ -1,6 +1,6 @@
 ---
 title: "Stochastic Fast Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/UFxeVJIC-Stochastic-SoftKill21/"
+tv_script_url: "https://www.tradingview.com/script/UFxeVJIC-Doble-stochastic-oscillator-fast-and-slow/"
 date: 2026-07-16
 draft: false
 type: reviews

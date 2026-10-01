@@ -1,6 +1,6 @@
 ---
 title: "Session High Low Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/xuVwuxaB-Session-High-Low-Munkhtur/"
+tv_script_url: "https://www.tradingview.com/script/xuVwuxaB-Session-High-Low/"
 date: 2026-08-02
 draft: false
 type: reviews

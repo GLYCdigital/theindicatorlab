@@ -1,6 +1,6 @@
 ---
 title: "Market Momentum Energy Zurvaneg Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/3iFkhPYU-arket-omentum-nergy-urv-n-ZurvanEG/"
+tv_script_url: "https://www.tradingview.com/script/3iFkhPYU-Market-Momentum-Energy-ZurvanEG/"
 date: 2026-07-16
 draft: false
 type: reviews

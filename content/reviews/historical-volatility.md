@@ -1,6 +1,6 @@
 ---
 title: "Historical Volatility Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/BDE27CuM-Historical-Volatility-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/BDE27CuM-Historical-Volatility-Strategy/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Morning Evening Star Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/z75nkFle-Morning-Evening-Star-AllanDecker/"
+tv_script_url: "https://www.tradingview.com/script/z75nkFle-Morning-Evening-Star/"
 date: 2026-07-16
 draft: false
 type: reviews

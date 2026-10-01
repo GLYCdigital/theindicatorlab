@@ -1,6 +1,6 @@
 ---
 title: "Trix Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/NTAdUxle-TRIX-everget/"
+tv_script_url: "https://www.tradingview.com/script/NTAdUxle-TRIX/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Choppiness Index Wave Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/jlwuHMOd-Choppiness-Index-alxnegrila/"
+tv_script_url: "https://www.tradingview.com/script/jlwuHMOd-Choppiness-Index/"
 date: 2026-07-16
 draft: false
 type: reviews

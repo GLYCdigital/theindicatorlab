@@ -1,6 +1,6 @@
 ---
 title: "OBV MTF Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/e9kKVcyv-OBV-MTF-RafaelZioni/"
+tv_script_url: "https://www.tradingview.com/script/e9kKVcyv-OBV-MTF/"
 date: 2026-08-21
 draft: false
 type: reviews

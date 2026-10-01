@@ -1,6 +1,6 @@
 ---
 title: "Kalman Filter Trend Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/U9v04j39-Kalman-Filter-Trend-Breakers-v1-1-kypexin/"
+tv_script_url: "https://www.tradingview.com/script/U9v04j39-Kalman-Filter-Trend-Breakers/"
 date: 2026-09-02
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Accumulation Swing Index Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/PBWY9s8m-Accumulation-Swing-Index-ASI-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/PBWY9s8m-Accumulation-Swing-Index/"
 date: 2026-07-16
 draft: false
 type: reviews

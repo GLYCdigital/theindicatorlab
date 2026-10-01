@@ -1,6 +1,6 @@
 ---
 title: "Smi Ergodic Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/Xh5Q0une-SMI-Ergodic-Oscillator-HPotter/"
+tv_script_url: "https://www.tradingview.com/script/Xh5Q0une-SMI-Ergodic-Oscillator/"
 date: 2026-09-05
 draft: false
 type: reviews

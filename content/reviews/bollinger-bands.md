@@ -1,6 +1,6 @@
 ---
 title: "Bollinger Bands Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/ViWAOiIc-Bollinger-Bands-Madrid/"
+tv_script_url: "https://www.tradingview.com/script/ViWAOiIc-Bollinger-Bands/"
 date: 2026-07-16
 draft: false
 type: reviews

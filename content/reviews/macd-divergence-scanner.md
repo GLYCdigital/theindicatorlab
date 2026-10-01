@@ -1,6 +1,6 @@
 ---
 title: "MACD Divergence Scanner Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/soSwR4mX-MACD-Divergences-daviddtech/"
+tv_script_url: "https://www.tradingview.com/script/soSwR4mX-MACD-Divergences-by-DaviddTech/"
 date: 2026-07-16
 draft: false
 type: reviews

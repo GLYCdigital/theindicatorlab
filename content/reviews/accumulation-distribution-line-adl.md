@@ -1,6 +1,6 @@
 ---
 title: "Accumulation Distribution Line ADL Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/vx0hBK7V-Accumulation-Distribution-Line-AustrianTradingMachine/"
+tv_script_url: "https://www.tradingview.com/script/vx0hBK7V-Accumulation-Distribution-Line/"
 date: 2026-09-03
 draft: false
 type: reviews

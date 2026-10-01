@@ -1,6 +1,6 @@
 ---
 title: "CVD Divergence Alerts Pro Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/rySqwsjc-CVD-Divergence-YUHUNGTsai/"
+tv_script_url: "https://www.tradingview.com/script/rySqwsjc-CVD-Divergence/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Pivot Points Knn Ss Review"
-tv_script_url: "https://www.tradingview.com/script/PwVoxMSo-Machine-Learning-Pivot-Points-KNN-SS-Steversteves/"
+tv_script_url: "https://www.tradingview.com/script/PwVoxMSo-Machine-Learning-Pivot-Points-KNN-SS/"
 date: 2026-07-16
 draft: false
 type: reviews

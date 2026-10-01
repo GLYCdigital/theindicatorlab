@@ -1,6 +1,6 @@
 ---
 title: "Opening Range Breakout Session Strategy Review — Trend"
-tv_script_url: "https://www.tradingview.com/script/JCDja5a6-Opening-Range-Breakout-Session-Strategy-JOAT-officialjackofalltrades/"
+tv_script_url: "https://www.tradingview.com/script/JCDja5a6-Opening-Range-Breakout-Session-Strategy-JOAT/"
 date: 2026-07-28
 draft: false
 type: reviews

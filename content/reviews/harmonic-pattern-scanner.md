@@ -1,6 +1,6 @@
 ---
 title: "Harmonic Pattern Scanner Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/NFqBejRX-Harmonic-Pattern-Scanner-Morning-Starr/"
+tv_script_url: "https://www.tradingview.com/script/NFqBejRX-Harmonic-Pattern-Scanner/"
 date: 2026-07-16
 draft: false
 type: reviews

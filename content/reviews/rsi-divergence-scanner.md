@@ -1,6 +1,6 @@
 ---
 title: "RSI Divergence Scanner Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/6DYxwhtZ-RSI-Divergence-Scanner-zdmre/"
+tv_script_url: "https://www.tradingview.com/script/6DYxwhtZ-RSI-Divergence-Scanner-by-zdmre/"
 date: 2026-08-06
 draft: false
 type: reviews

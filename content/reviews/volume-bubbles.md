@@ -1,6 +1,6 @@
 ---
 title: "Volume Bubbles Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/eHFxSlVl-Volume-Bubbles-Pro-v6-0-R2D2-4Life/"
+tv_script_url: "https://www.tradingview.com/script/eHFxSlVl-Volume-Bubbles/"
 date: 2026-07-16
 draft: false
 type: reviews

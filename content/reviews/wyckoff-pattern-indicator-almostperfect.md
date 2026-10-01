@@ -1,6 +1,6 @@
 ---
 title: "Wyckoff Pattern Indicator Almostperfect Review"
-tv_script_url: "https://www.tradingview.com/script/RJ8HShmD-Wyckoff-Pattern-Indicator-Dr-AtulGoswami/"
+tv_script_url: "https://www.tradingview.com/script/RJ8HShmD-Wyckoff-Pattern-Indicator-AlmostPerfect/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Waddah Attar Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/d9IjcYyS-Waddah-Attar-Explosion-V2-SHK-shayankm/"
+tv_script_url: "https://www.tradingview.com/script/d9IjcYyS-Waddah-Attar-Explosion-V2-SHK/"
 date: 2026-07-16
 draft: false
 type: reviews

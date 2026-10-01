@@ -1,6 +1,6 @@
 ---
 title: "Aroon Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/XMMJNLQ5-Aroon-seiglerj/"
+tv_script_url: "https://www.tradingview.com/script/XMMJNLQ5-Aroon-w-crossovers-highlighted/"
 date: 2026-07-16
 draft: false
 type: reviews

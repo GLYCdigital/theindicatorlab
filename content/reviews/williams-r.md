@@ -1,6 +1,6 @@
 ---
 title: "Williams R Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/Jo1NjRPF-Williams-R-violetmoon/"
+tv_script_url: "https://www.tradingview.com/script/Jo1NjRPF-Williams-R/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Elliott Wave Count Review — Chart Pattern Indicator"
-tv_script_url: "https://www.tradingview.com/script/dniI1EKm-Elliott-Wave-Counter-MASK-MAN-pirukuru/"
+tv_script_url: "https://www.tradingview.com/script/dniI1EKm/"
 date: 2026-07-16
 draft: false
 type: reviews

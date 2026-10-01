@@ -1,6 +1,6 @@
 ---
 title: "Accumulation Distribution Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/2SoEv1vf-Accumulation-Distribution-Skipper86/"
+tv_script_url: "https://www.tradingview.com/script/2SoEv1vf-Accumulation-Distribution/"
 date: 2026-07-16
 draft: false
 type: reviews

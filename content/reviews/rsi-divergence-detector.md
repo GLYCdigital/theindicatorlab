@@ -1,6 +1,6 @@
 ---
 title: "RSI Divergence Detector Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/zR6IkGDL-RSI-Divergence-Detector-DragonFly-Trading/"
+tv_script_url: "https://www.tradingview.com/script/zR6IkGDL-RSI-Divergence-Detector/"
 date: 2026-07-16
 draft: false
 type: reviews

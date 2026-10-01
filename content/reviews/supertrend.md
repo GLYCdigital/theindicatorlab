@@ -1,6 +1,6 @@
 ---
 title: "Supertrend Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/r6dAP7yi-Supertrend-KivancOzbilgic/"
+tv_script_url: "https://www.tradingview.com/script/r6dAP7yi/"
 date: 2026-08-01
 draft: false
 type: reviews

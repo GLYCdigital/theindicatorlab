@@ -1,6 +1,6 @@
 ---
 title: "Ehlers Adaptive Stochastic Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/NhB1HRnP-Ehlers-Adaptive-Stochastic-Indicator-V1-CC-cheatcountry/"
+tv_script_url: "https://www.tradingview.com/script/NhB1HRnP-Ehlers-Adaptive-Stochastic-Indicator-V1-CC/"
 date: 2026-07-16
 draft: false
 type: reviews

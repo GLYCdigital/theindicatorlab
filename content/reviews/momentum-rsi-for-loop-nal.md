@@ -1,6 +1,6 @@
 ---
 title: "Momentum RSI For Loop Nal Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/xBz0tYCg-Momentum-RSI-For-Loop-NordicAlphaLab/"
+tv_script_url: "https://www.tradingview.com/script/xBz0tYCg-Momentum-RSI-For-Loop-NAL/"
 date: 2026-07-16
 draft: false
 type: reviews

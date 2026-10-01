@@ -1,6 +1,6 @@
 ---
 title: "ATR Bands Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/ziTzsSfo-ATR-Bands-TheTrdFloor/"
+tv_script_url: "https://www.tradingview.com/script/ziTzsSfo-ATR-Bands/"
 date: 2026-07-16
 draft: false
 type: reviews

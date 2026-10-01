@@ -1,6 +1,6 @@
 ---
 title: "OBV Divergence Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/W145MYvr-OBV-Divergence-Lij-MC/"
+tv_script_url: "https://www.tradingview.com/script/W145MYvr-OBV-Divergence/"
 date: 2026-09-02
 draft: false
 type: reviews

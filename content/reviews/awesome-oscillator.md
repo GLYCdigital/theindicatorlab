@@ -1,6 +1,6 @@
 ---
 title: "Awesome Oscillator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/DN0o74FQ-Awesome-Oscillator-everget/"
+tv_script_url: "https://www.tradingview.com/script/DN0o74FQ-Awesome-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

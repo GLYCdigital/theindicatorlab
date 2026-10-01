@@ -1,6 +1,6 @@
 ---
 title: "Gator Oscillator Bill Williams Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/jltye2iO-Gator-Oscillator-everget/"
+tv_script_url: "https://www.tradingview.com/script/jltye2iO-Gator-Oscillator/"
 date: 2026-07-16
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Tension Flow Trend Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/Fgcv55DC-Tension-Flow-Trend-BigBeluga-Historical-RR-BigBeluga/"
+tv_script_url: "https://www.tradingview.com/script/Fgcv55DC-Tension-Flow-Trend-BigBeluga-Historical-RR/"
 date: 2026-07-16
 draft: false
 type: reviews

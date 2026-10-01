@@ -1,6 +1,6 @@
 ---
 title: "Donchian Channels Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/QE0LMwzk-Donchian-Channels-ClassicScott/"
+tv_script_url: "https://www.tradingview.com/script/QE0LMwzk-Donchian-Channels/"
 date: 2026-07-16
 draft: false
 type: reviews

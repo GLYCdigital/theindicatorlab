@@ -1,6 +1,6 @@
 ---
 title: "Squeeze Momentum Indicator Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/0s3c0LOv-Squeeze-Momentum-Indicator-accypriyesh/"
+tv_script_url: "https://www.tradingview.com/script/0s3c0LOv-Squeeze-Momentum-Indicator/"
 date: 2026-07-16
 draft: false
 type: reviews

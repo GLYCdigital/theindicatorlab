@@ -1,6 +1,6 @@
 ---
 title: "Thestrat Suite Open Source Entries Targets And Stop Loss Review"
-tv_script_url: "https://www.tradingview.com/script/dnJOzGmk-TheStrat-Suite-v3-1-1-SpinTrades/"
+tv_script_url: "https://www.tradingview.com/script/dnJOzGmk-TheStrat-Suite-Open-Source-Entries-Targets-and-Stop-Loss/"
 date: 2026-08-10
 draft: false
 type: reviews

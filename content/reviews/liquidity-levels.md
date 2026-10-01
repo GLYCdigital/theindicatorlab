@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Levels Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/6XU3E51s-LiqLevels-Fixed-larsomidicus/"
+tv_script_url: "https://www.tradingview.com/script/6XU3E51s-Liquidity-Levels/"
 date: 2026-07-16
 draft: false
 type: reviews

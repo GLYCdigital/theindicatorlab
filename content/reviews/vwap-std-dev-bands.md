@@ -1,6 +1,6 @@
 ---
 title: "VWAP Std Dev Bands Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/9au6finF-VWAP-StdDev-Bands-Pro-v2-kaiserfx/"
+tv_script_url: "https://www.tradingview.com/script/9au6finF-VWAP-StdDev-Bands-Pro/"
 date: 2026-09-01
 draft: false
 type: reviews

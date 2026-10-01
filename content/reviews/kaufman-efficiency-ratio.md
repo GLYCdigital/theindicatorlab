@@ -1,6 +1,6 @@
 ---
 title: "Kaufman Efficiency Ratio Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/7imltc5K-Kaufman-Efficiency-Ratio-KER-Zorba-the-Buddha/"
+tv_script_url: "https://www.tradingview.com/script/7imltc5K-Kaufman-Efficiency-Ratio-KER/"
 date: 2026-07-16
 draft: false
 type: reviews

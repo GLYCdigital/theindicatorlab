@@ -1,6 +1,6 @@
 ---
 title: "Candelacharts Order Blocks Review — Market Structure"
-tv_script_url: "https://www.tradingview.com/script/GSEzHIcI-CandelaCharts-Order-Blocks-CandelaCharts/"
+tv_script_url: "https://www.tradingview.com/script/GSEzHIcI-CandelaCharts-Order-Blocks/"
 date: 2026-07-16
 draft: false
 type: reviews

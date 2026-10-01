@@ -1,6 +1,6 @@
 ---
 title: "Whale Activity Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/Xa5njbFc-Whale-Activity-Indicator-DinoTradez/"
+tv_script_url: "https://www.tradingview.com/script/Xa5njbFc-Whale-Activity/"
 date: 2026-07-16
 draft: false
 type: reviews

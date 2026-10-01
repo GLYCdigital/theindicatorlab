@@ -1,6 +1,6 @@
 ---
 title: "ATR Trailing Stop Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/3h4LO8zH-ATR-Trailing-Stop-ceyhun/"
+tv_script_url: "https://www.tradingview.com/script/3h4LO8zH/"
 date: 2026-07-16
 draft: false
 type: reviews

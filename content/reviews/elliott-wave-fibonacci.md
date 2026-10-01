@@ -1,6 +1,6 @@
 ---
 title: "Elliott Wave Fibonacci Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/gMpxcJkW-Elliott-Wave-rules-based-compile-safe-STEELCITYCREATORS/"
+tv_script_url: "https://www.tradingview.com/script/gMpxcJkW-Elliott-Wave-%F0%9D%90%92%F0%9D%90%93%F0%9D%90%84%F0%9D%90%84%F0%9D%90%8B-%F0%9D%90%82%F0%9D%90%88%F0%9D%90%93%F0%9D%90%98-%F0%9D%90%82%F0%9D%90%91%F0%9D%90%84%F0%9D%90%80%F0%9D%90%93%F0%9D%90%8E%F0%9D%90%91%F0%9D%90%92/"
 date: 2026-07-16
 draft: false
 type: reviews

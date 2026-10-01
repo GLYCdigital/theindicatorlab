@@ -1,6 +1,6 @@
 ---
 title: "8020 System Indicator Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/2ApM2DO5-8020-System-Indicator-lucymatos/"
+tv_script_url: "https://www.tradingview.com/script/2ApM2DO5-8020-System-Indicator/"
 date: 2026-08-07
 draft: false
 type: reviews

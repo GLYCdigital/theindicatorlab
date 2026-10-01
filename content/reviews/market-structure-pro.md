@@ -1,6 +1,6 @@
 ---
 title: "Market Structure Pro Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/NHPwpLYG-Market-Structure-Pro-Jos-ProTrader/"
+tv_script_url: "https://www.tradingview.com/script/NHPwpLYG-Market-Structure-Pro/"
 date: 2026-07-16
 draft: false
 type: reviews

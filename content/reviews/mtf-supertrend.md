@@ -1,6 +1,6 @@
 ---
 title: "MTF Supertrend Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/MTTcT4K5-MTF-Supertrend-CryptoSea-CryptoSeaTV/"
+tv_script_url: "https://www.tradingview.com/script/MTTcT4K5-MTF-Supertrend-CryptoSea/"
 date: 2026-08-02
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Market Profile TPO Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/y914yEGg-Market-Profile-LonesomeTheBlue/"
+tv_script_url: "https://www.tradingview.com/script/y914yEGg-Market-Profile/"
 date: 2026-08-08
 draft: false
 type: reviews

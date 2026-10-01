@@ -1,6 +1,6 @@
 ---
 title: "Uptrick Flow Expansion Trend Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/11yLU9vb-Uptrick-Flow-Expansion-Trend-Uptrick/"
+tv_script_url: "https://www.tradingview.com/script/11yLU9vb-Uptrick-Flow-Expansion-Trend/"
 date: 2026-07-29
 draft: false
 type: reviews

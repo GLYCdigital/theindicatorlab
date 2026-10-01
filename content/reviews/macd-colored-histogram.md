@@ -1,6 +1,6 @@
 ---
 title: "MACD Colored Histogram Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/7YQ1C3FS-MACD-Colored-Histogram-MarceloTorres/"
+tv_script_url: "https://www.tradingview.com/script/7YQ1C3FS-MACDH-MACD-Colored-Histogram/"
 date: 2026-07-16
 draft: false
 type: reviews

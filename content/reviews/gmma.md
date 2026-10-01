@@ -1,6 +1,6 @@
 ---
 title: "Gmma Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/bIEW7Sm9-GMMA-daisuke-gewinn/"
+tv_script_url: "https://www.tradingview.com/script/bIEW7Sm9/"
 date: 2026-07-16
 draft: false
 type: reviews

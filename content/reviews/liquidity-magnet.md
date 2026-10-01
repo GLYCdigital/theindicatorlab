@@ -1,6 +1,6 @@
 ---
 title: "Liquidity Magnet Review — Market Structure Indicator"
-tv_script_url: "https://www.tradingview.com/script/dtCtEIPC-Liquidity-Magnet-FEELS-FeelsStrategy/"
+tv_script_url: "https://www.tradingview.com/script/dtCtEIPC-Liquidity-Magnet-FEELS/"
 date: 2026-07-16
 draft: false
 type: reviews

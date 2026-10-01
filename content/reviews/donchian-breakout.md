@@ -1,6 +1,6 @@
 ---
 title: "Donchian Breakout Review — Volatility Indicator"
-tv_script_url: "https://www.tradingview.com/script/hyYvFjux-Donchian-Breakout-millerrh/"
+tv_script_url: "https://www.tradingview.com/script/hyYvFjux-Donchian-Breakout-Strategy/"
 date: 2026-07-16
 draft: false
 type: reviews

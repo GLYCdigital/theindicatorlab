@@ -1,6 +1,6 @@
 ---
 title: "Multi Timeframe Trend Strength Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/USQyysE8-Multi-TimeFrame-Trend-Strength-Hampeh/"
+tv_script_url: "https://www.tradingview.com/script/USQyysE8-Multi-TimeFrame-MTF-Trend-Strength/"
 date: 2026-07-16
 draft: false
 type: reviews

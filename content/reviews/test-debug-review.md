@@ -1,6 +1,6 @@
 ---
 title: "Test Debug Review Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/FhQ5b8Mv-test-RicardoSantos/"
+tv_script_url: "https://www.tradingview.com/script/FhQ5b8Mv-strategy-direction-all-bug-work-around/"
 date: 2026-07-24
 draft: false
 type: reviews

@@ -1,6 +1,6 @@
 ---
 title: "Fractal Levels Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/3zbBUYsg-Fractal-Levels-RicardoSantos/"
+tv_script_url: "https://www.tradingview.com/script/3zbBUYsg-RS-Fractal-Levels-V1/"
 date: 2026-07-16
 draft: false
 type: reviews

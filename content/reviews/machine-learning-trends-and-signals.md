@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Trends And Signals Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/bOblGfmR-Machine-Learning-bitwardex/"
+tv_script_url: "https://www.tradingview.com/script/bOblGfmR-machine-learning-adaptive-trend-signals-bitwardex/"
 date: 2026-07-21
 draft: false
 type: reviews

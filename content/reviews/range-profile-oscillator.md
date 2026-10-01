@@ -1,6 +1,6 @@
 ---
 title: "Range Profile Oscillator Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/atvJpWjW-Range-Profile-Oscillator-Uncle-the-shooter/"
+tv_script_url: "https://www.tradingview.com/script/atvJpWjW-Range-Profile-Oscillator/"
 date: 2026-08-01
 draft: false
 type: reviews

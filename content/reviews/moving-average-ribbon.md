@@ -1,6 +1,6 @@
 ---
 title: "Moving Average Ribbon Review — Trend Indicator"
-tv_script_url: "https://www.tradingview.com/script/79wPF2EE-Moving-Average-Ribbon-Violent/"
+tv_script_url: "https://www.tradingview.com/script/79wPF2EE-Moving-Average-Ribbon/"
 date: 2026-07-16
 draft: false
 type: reviews

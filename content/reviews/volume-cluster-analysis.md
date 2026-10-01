@@ -1,6 +1,6 @@
 ---
 title: "Volume Cluster Analysis Review — Volume Indicator"
-tv_script_url: "https://www.tradingview.com/script/iezSBsTE-Volume-Cluster-rebasega/"
+tv_script_url: "https://www.tradingview.com/script/iezSBsTE/"
 date: 2026-08-26
 draft: false
 type: reviews

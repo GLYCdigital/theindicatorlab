@@ -1,6 +1,6 @@
 ---
 title: "Fibonacci Retracement Auto Review — Momentum Indicator"
-tv_script_url: "https://www.tradingview.com/script/uSLNIN9O-Fibonacci-IamtheOctopuS/"
+tv_script_url: "https://www.tradingview.com/script/uSLNIN9O-Automatic-Fibonacci-Retracement-Golden-Ratio-by-Octopu/"
 date: 2026-07-16
 draft: false
 type: reviews
