@@ -26597,32 +26597,6 @@
       "score": 5.0
     }
   ],
-  "test-xyz": [
-    {
-      "slug": "bollinger-bands-macd-combo",
-      "title": "Bollinger Bands MACD Combo Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "byo-pattern-trendoscope",
-      "title": "Byo Pattern Trendoscope Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
-      "rating": 4,
-      "score": 9.0
-    }
-  ],
   "tf-smooth-trend-follower-with-volume-sparks-stf": [
     {
       "slug": "1-trendline-strategy",
