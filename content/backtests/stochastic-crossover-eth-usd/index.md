@@ -1,22 +1,22 @@
 ---
 {
   "title": "Stochastic \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-45.7%"
+      "value": "-43.2%"
     },
     {
       "label": "CAGR",
-      "value": "-11.5%"
+      "value": "-10.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.32"
+      "value": "-0.30"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.89"
+      "value": "0.90"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+25.5%",
-      "trades": "10",
+      "return_pct": "+9.0%",
+      "trades": "9",
       "win_rate_pct": "32.4%"
     },
     {
@@ -73,7 +73,7 @@
     {
       "year": "2026",
       "return_pct": "-10.5%",
-      "trades": "34",
+      "trades": "35",
       "win_rate_pct": "32.4%"
     }
   ],
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/stochastic-crossover-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "stochastic_rsi_mtf review: settings, strategy & how to use it",
+      "title": "stochastic rsi mtf review \u2014 momentum indicator",
       "url": "/reviews/stochastic-rsi-mtf/"
     },
     {
-      "title": "relative strength index rsi review: settings, strategy & how to use it",
+      "title": "relative strength index rsi review \u2014 momentum indicator",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "title": "adaptive dual engine strategy momentum mean reversion bt review",
       "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
@@ -109,9 +109,9 @@ On ETH, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-27 → 2026-09-25), the Stochastic Crossover delivered a **-45.7% total return** on ETH-USD, compounding at **-11.5% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the Stochastic Crossover delivered a **-43.2% total return** on ETH-USD, compounding at **-10.7% annually**. 
 
-At **-0.32**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.30**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **63.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 64% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **63.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.32 | ❌ Weak |
+| Sharpe Ratio | -0.30 | ❌ Weak |
 | Max Drawdown | 63.6% | ⚠️ Significant |
 | Win Rate | 32.4% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.89 | ❌ Unprofitable |
+| Profit Factor | 0.90 | ❌ Unprofitable |
 | Trades/Year | ~225 total | Active |
 
-The **profit factor of 0.89** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 32.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.90** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 32.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on ETH?
 
-The stochastic crossover struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.32 Sharpe ratio** and **0.89 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.30 Sharpe ratio** and **0.90 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on ETH-USD](/backtests/stochastic-crossover-eth-usd-trades.png)

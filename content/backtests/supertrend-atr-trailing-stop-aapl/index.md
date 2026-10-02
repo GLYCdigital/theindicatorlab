@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+58.3%"
+      "value": "+50.1%"
     },
     {
       "label": "CAGR",
-      "value": "9.6%"
+      "value": "8.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.48"
+      "value": "0.42"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "45.2%"
+      "value": "44.7%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.23"
+      "value": "1.21"
     },
     {
       "label": "Total Trades",
-      "value": "290"
+      "value": "291"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+22.3%",
-      "trades": "15",
-      "win_rate_pct": "45.2%"
+      "return_pct": "+27.8%",
+      "trades": "14",
+      "win_rate_pct": "44.7%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "58",
-      "win_rate_pct": "45.2%"
+      "win_rate_pct": "44.7%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "59",
-      "win_rate_pct": "45.2%"
+      "win_rate_pct": "44.7%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "58",
-      "win_rate_pct": "45.2%"
+      "win_rate_pct": "44.7%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "59",
-      "win_rate_pct": "45.2%"
+      "win_rate_pct": "44.7%"
     },
     {
       "year": "2026",
-      "return_pct": "+25.8%",
-      "trades": "41",
-      "win_rate_pct": "45.2%"
+      "return_pct": "+23.3%",
+      "trades": "43",
+      "win_rate_pct": "44.7%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "title": "halftrend long short signal engine review \u2014 trend indicator",
       "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "title": "ttm squeeze review \u2014 volatility indicator",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "title": "rsi macd combo signal review \u2014 momentum indicator",
       "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
@@ -109,9 +109,9 @@ On AAPL, the SuperTrend acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-27 → 2026-09-25), the SuperTrend + ATR Trailing Stop delivered a **+58.3% total return** on AAPL, compounding at **9.6% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the SuperTrend + ATR Trailing Stop delivered a **+50.1% total return** on AAPL, compounding at **8.5% annually**. 
 
-At **0.48**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.42**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **29.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 29% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,19 +119,19 @@ The catch? A **29.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.48 | ❌ Weak |
+| Sharpe Ratio | 0.42 | ❌ Weak |
 | Max Drawdown | 29.0% | ⚠️ Moderate |
-| Win Rate | 45.2% | ⚠️ Below average |
-| Profit Factor | 1.23 | ⚠️ Marginal |
-| Trades/Year | ~290 total | Active |
+| Win Rate | 44.7% | ⚠️ Below average |
+| Profit Factor | 1.21 | ⚠️ Marginal |
+| Trades/Year | ~291 total | Active |
 
-The **profit factor of 1.23** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 45.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.21** tells the real story: when the SuperTrend fires, the winning signals are larger than the losing ones. Combined with a 44.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on AAPL?
 
-The supertrend + atr trailing stop shows moderate edge on AAPL — **0.48 Sharpe, 1.23 profit factor** over 290 trades. It's not a home run, but it's also not random.
+The supertrend + atr trailing stop shows moderate edge on AAPL — **0.42 Sharpe, 1.21 profit factor** over 291 trades. It's not a home run, but it's also not random.
 
-The 45.2% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 44.7% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on AAPL. Combine with trend filters or volume confirmation for better results.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on AAPL](/backtests/supertrend-atr-trailing-stop-aapl-trades.png)

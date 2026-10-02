@@ -1,6 +1,6 @@
 ---
 title: "Volume Backtest Results"
-date: 2026-09-26
+date: 2026-10-03
 draft: false
 type: backtests
 description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe ratio."
@@ -27,7 +27,7 @@ description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe r
 <tbody>
 <tr><td>🟢 <a href="/backtests/volume-spike-breakout-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+61.9%</td><td>10.1%</td><td>0.74</td><td>20.5%</td><td>56.7%</td><td>2.43</td><td>30</td></tr>
 <tr><td>🔴 <a href="/backtests/volume-spike-breakout-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+9.0%</td><td>1.7%</td><td>-0.02</td><td>17.1%</td><td>40.0%</td><td>1.25</td><td>30</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-spike-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+6.2%</td><td>1.2%</td><td>-0.21</td><td>6.8%</td><td>57.1%</td><td>1.59</td><td>7</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-spike-breakout-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+2.2%</td><td>0.4%</td><td>-0.39</td><td>6.8%</td><td>50.0%</td><td>1.22</td><td>6</td></tr>
 <tr><td>🔴 <a href="/backtests/volume-spike-breakout-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-0.5%</td><td>-0.1%</td><td>-1.18</td><td>4.5%</td><td>50.0%</td><td>0.93</td><td>10</td></tr>
 <tr><td>🔴 <a href="/backtests/volume-spike-breakout-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>-16.6%</td><td>-3.6%</td><td>-1.83</td><td>16.6%</td><td>41.7%</td><td>0.31</td><td>24</td></tr>
 <tr><td>🔴 <a href="/backtests/volume-spike-breakout-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-1.1%</td><td>-0.2%</td><td>-2.09</td><td>4.5%</td><td>50.0%</td><td>0.80</td><td>8</td></tr>
@@ -37,7 +37,7 @@ description: "All 6 asset backtests for the Volume indicator. Sorted by Sharpe r
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: September 26, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: October 03, 2026</p>
 
   </div>
 </article>

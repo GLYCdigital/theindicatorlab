@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-59.4%"
+      "value": "-64.4%"
     },
     {
       "label": "CAGR",
-      "value": "-16.5%"
+      "value": "-18.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.34"
+      "value": "-0.43"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.74"
+      "value": "0.68"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+25.5%",
+      "return_pct": "+9.0%",
       "trades": "3",
       "win_rate_pct": "33.3%"
     },
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/parabolic-sar-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "machine_learning_knn review: settings, strategy & how to use it",
+      "title": "machine learning knn review \u2014 trend indicator",
       "url": "/reviews/machine-learning-knn/"
     },
     {
-      "title": "ease of movement review: settings, strategy & how to use it",
+      "title": "ease of movement review \u2014 trend indicator",
       "url": "/reviews/ease-of-movement/"
     },
     {
-      "title": "ema_cross_signal review: settings, strategy & how to use it",
+      "title": "ema cross signal review \u2014 trend indicator",
       "url": "/reviews/ema-cross-signal/"
     }
   ]
@@ -109,9 +109,9 @@ On ETH, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-27 → 2026-09-25), the Parabolic SAR delivered a **-59.4% total return** on ETH-USD, compounding at **-16.5% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the Parabolic SAR delivered a **-64.4% total return** on ETH-USD, compounding at **-18.7% annually**. 
 
-At **-0.34**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.43**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **76.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 76% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **76.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.34 | ❌ Weak |
+| Sharpe Ratio | -0.43 | ❌ Weak |
 | Max Drawdown | 76.5% | ⚠️ Significant |
 | Win Rate | 33.3% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.74 | ❌ Unprofitable |
+| Profit Factor | 0.68 | ❌ Unprofitable |
 | Trades/Year | ~75 total | Active |
 
-The **profit factor of 0.74** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.68** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on ETH?
 
-The parabolic sar struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.34 Sharpe ratio** and **0.74 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.43 Sharpe ratio** and **0.68 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on ETH-USD](/backtests/parabolic-sar-eth-usd-trades.png)

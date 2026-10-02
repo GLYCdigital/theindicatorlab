@@ -1,22 +1,22 @@
 ---
 {
   "title": "VWAP \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+15.1%"
+      "value": "+12.8%"
     },
     {
       "label": "CAGR",
-      "value": "2.8%"
+      "value": "2.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.12"
+      "value": "0.10"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "34.9%"
+      "value": "37.5%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.10"
+      "value": "1.12"
     },
     {
       "label": "Total Trades",
-      "value": "63"
+      "value": "64"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+22.3%",
+      "return_pct": "+27.8%",
       "trades": "1",
-      "win_rate_pct": "34.9%"
+      "win_rate_pct": "37.5%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "16",
-      "win_rate_pct": "34.9%"
+      "win_rate_pct": "37.5%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "8",
-      "win_rate_pct": "34.9%"
+      "win_rate_pct": "37.5%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "13",
-      "win_rate_pct": "34.9%"
+      "win_rate_pct": "37.5%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "16",
-      "win_rate_pct": "34.9%"
+      "win_rate_pct": "37.5%"
     },
     {
       "year": "2026",
-      "return_pct": "+25.8%",
-      "trades": "9",
-      "win_rate_pct": "34.9%"
+      "return_pct": "+23.3%",
+      "trades": "10",
+      "win_rate_pct": "37.5%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/volume-profile-pro-aapl-equity.png",
   "crosslinks": [
     {
-      "title": "volume_ma review: settings, strategy & how to use it",
+      "title": "volume ma review \u2014 volume indicator",
       "url": "/reviews/volume-ma/"
     },
     {
-      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "title": "ttm squeeze review \u2014 volatility indicator",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy & how to use it",
+      "title": "triple exponential ma review \u2014 trend indicator",
       "url": "/reviews/triple-exponential-ma/"
     }
   ]
@@ -109,9 +109,9 @@ On AAPL, the VWAP acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-09-27 → 2026-09-25), the Volume Profile Pro delivered a **+15.1% total return** on AAPL, compounding at **2.8% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the Volume Profile Pro delivered a **+12.8% total return** on AAPL, compounding at **2.4% annually**. 
 
-At **0.12**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.10**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **35.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 36% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **35.7% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.12 | ❌ Weak |
+| Sharpe Ratio | 0.10 | ❌ Weak |
 | Max Drawdown | 35.7% | ⚠️ Significant |
-| Win Rate | 34.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.10 | ⚠️ Marginal |
-| Trades/Year | ~63 total | Active |
+| Win Rate | 37.5% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.12 | ⚠️ Marginal |
+| Trades/Year | ~64 total | Active |
 
-The **profit factor of 1.10** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 34.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.12** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 37.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Volume Profile Pro Work on AAPL?
 
-The volume profile pro struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.12 Sharpe ratio** and **1.10 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The volume profile pro struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.10 Sharpe ratio** and **1.12 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the VWAP is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on AAPL](/backtests/volume-profile-pro-aapl-trades.png)

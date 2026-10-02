@@ -1,18 +1,18 @@
 ---
 {
   "title": "SMA \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+118.5%"
+      "value": "+119.7%"
     },
     {
       "label": "CAGR",
-      "value": "16.9%"
+      "value": "17.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+7.6%",
+      "return_pct": "+13.0%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+21.9%",
+      "return_pct": "+22.6%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     }
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/golden-cross-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "title": "halftrend long short signal engine review \u2014 trend indicator",
       "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "volume_ma review: settings, strategy & how to use it",
+      "title": "volume ma review \u2014 volume indicator",
       "url": "/reviews/volume-ma/"
     },
     {
-      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "title": "rsi macd combo signal review \u2014 momentum indicator",
       "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
@@ -109,7 +109,7 @@ On QQQ, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-09-27 → 2026-09-25), the Golden Cross delivered a **+118.5% total return** on QQQ, compounding at **16.9% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the Golden Cross delivered a **+119.7% total return** on QQQ, compounding at **17.1% annually**. 
 
 At **0.84**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on QQQ](/backtests/golden-cross-qqq-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-15.4%"
+      "value": "-19.4%"
     },
     {
       "label": "CAGR",
-      "value": "-3.3%"
+      "value": "-4.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.00"
+      "value": "-0.02"
     },
     {
       "label": "Max Drawdown",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "29.9%"
+      "value": "31.3%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.94"
+      "value": "0.93"
     },
     {
       "label": "Total Trades",
@@ -36,45 +36,45 @@
     },
     {
       "label": "Avg Trade",
-      "value": "14 days"
+      "value": "13 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+25.5%",
+      "return_pct": "+9.0%",
       "trades": "4",
-      "win_rate_pct": "29.9%"
+      "win_rate_pct": "31.3%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "12",
-      "win_rate_pct": "29.9%"
+      "win_rate_pct": "31.3%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "12",
-      "win_rate_pct": "29.9%"
+      "win_rate_pct": "31.3%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "15",
-      "win_rate_pct": "29.9%"
+      "win_rate_pct": "31.3%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "18",
-      "win_rate_pct": "29.9%"
+      "win_rate_pct": "31.3%"
     },
     {
       "year": "2026",
       "return_pct": "-10.5%",
       "trades": "6",
-      "win_rate_pct": "29.9%"
+      "win_rate_pct": "31.3%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/macd-crossover-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "title": "rsi macd combo signal review \u2014 momentum indicator",
       "url": "/reviews/rsi-macd-combo-signal/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy & how to use it",
+      "title": "triple exponential ma review \u2014 trend indicator",
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "luxalgo indicator suite review: settings, strategy & how to use it",
+      "title": "luxalgo review \u2014 trend indicator",
       "url": "/reviews/luxalgo/"
     }
   ]
@@ -109,9 +109,9 @@ On ETH, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-27 → 2026-09-25), the MACD Crossover delivered a **-15.4% total return** on ETH-USD, compounding at **-3.3% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the MACD Crossover delivered a **-19.4% total return** on ETH-USD, compounding at **-4.2% annually**. 
 
-At **-0.00**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.02**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **57.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 57% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **57.3% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.00 | ❌ Weak |
+| Sharpe Ratio | -0.02 | ❌ Weak |
 | Max Drawdown | 57.3% | ⚠️ Significant |
-| Win Rate | 29.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.94 | ❌ Unprofitable |
+| Win Rate | 31.3% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.93 | ❌ Unprofitable |
 | Trades/Year | ~67 total | Active |
 
-The **profit factor of 0.94** tells the real story: when the MACD fires, the winning signals don't outweigh the losers. Combined with a 29.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.93** tells the real story: when the MACD fires, the winning signals don't outweigh the losers. Combined with a 31.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on ETH?
 
-The macd crossover struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.00 Sharpe ratio** and **0.94 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on ETH over this 5-year period. With a **-0.02 Sharpe ratio** and **0.93 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on ETH-USD](/backtests/macd-crossover-eth-usd-trades.png)

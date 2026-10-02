@@ -1,10 +1,10 @@
 ---
 {
   "title": "Stochastic \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+7.7%",
+      "return_pct": "+11.2%",
       "trades": "6",
       "win_rate_pct": "43.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+13.8%",
+      "return_pct": "+13.5%",
       "trades": "23",
       "win_rate_pct": "43.7%"
     }
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/stochastic-crossover-spy-equity.png",
   "crosslinks": [
     {
-      "title": "stochastic_rsi_mtf review: settings, strategy & how to use it",
+      "title": "stochastic rsi mtf review \u2014 momentum indicator",
       "url": "/reviews/stochastic-rsi-mtf/"
     },
     {
-      "title": "relative strength index rsi review: settings, strategy & how to use it",
+      "title": "relative strength index rsi review \u2014 momentum indicator",
       "url": "/reviews/relative-strength-index-rsi/"
     },
     {
-      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "title": "adaptive dual engine strategy momentum mean reversion bt review",
       "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
@@ -109,7 +109,7 @@ On SPY, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-09-27 → 2026-09-25), the Stochastic Crossover delivered a **-20.9% total return** on SPY, compounding at **-4.6% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the Stochastic Crossover delivered a **-20.9% total return** on SPY, compounding at **-4.6% annually**. 
 
 At **-0.41**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on SPY](/backtests/stochastic-crossover-spy-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+3.1%"
+      "value": "+3.7%"
     },
     {
       "label": "CAGR",
-      "value": "0.6%"
+      "value": "0.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.03"
+      "value": "-0.02"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+7.6%",
+      "return_pct": "+13.0%",
       "trades": "1",
       "win_rate_pct": "38.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+21.9%",
+      "return_pct": "+22.6%",
       "trades": "7",
       "win_rate_pct": "38.3%"
     }
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/macd-crossover-qqq-equity.png",
   "crosslinks": [
     {
-      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "title": "rsi macd combo signal review \u2014 momentum indicator",
       "url": "/reviews/rsi-macd-combo-signal/"
     },
     {
-      "title": "triple exponential ma review: settings, strategy & how to use it",
+      "title": "triple exponential ma review \u2014 trend indicator",
       "url": "/reviews/triple-exponential-ma/"
     },
     {
-      "title": "luxalgo indicator suite review: settings, strategy & how to use it",
+      "title": "luxalgo review \u2014 trend indicator",
       "url": "/reviews/luxalgo/"
     }
   ]
@@ -109,9 +109,9 @@ On QQQ, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-09-27 → 2026-09-25), the MACD Crossover delivered a **+3.1% total return** on QQQ, compounding at **0.6% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the MACD Crossover delivered a **+3.7% total return** on QQQ, compounding at **0.7% annually**. 
 
-At **-0.03**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.02**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **22.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 23% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **22.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.03 | ❌ Weak |
+| Sharpe Ratio | -0.02 | ❌ Weak |
 | Max Drawdown | 22.8% | ⚠️ Moderate |
 | Win Rate | 38.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.01 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.01** tells the real story: when the MACD fires, the win
 
 ## Does the MACD Crossover Work on QQQ?
 
-The macd crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.03 Sharpe ratio** and **1.01 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.02 Sharpe ratio** and **1.01 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on QQQ](/backtests/macd-crossover-qqq-trades.png)

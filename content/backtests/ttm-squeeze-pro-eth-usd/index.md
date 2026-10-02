@@ -1,14 +1,14 @@
 ---
 {
   "title": "BollingerBands \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.4%"
+      "value": "+14.3%"
     },
     {
       "label": "CAGR",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+25.5%",
+      "return_pct": "+9.0%",
       "trades": "3",
       "win_rate_pct": "20.7%"
     },
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/ttm-squeeze-pro-eth-usd-equity.png",
   "crosslinks": [
     {
-      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "title": "ttm squeeze review \u2014 volatility indicator",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "vwap bands review: settings, strategy & how to use it",
+      "title": "vwap bands review \u2014 volume indicator",
       "url": "/reviews/vwap-bands/"
     },
     {
-      "title": "adaptive_dual_engine_strategy_momentum_mean_reversion_bt review: settings, strategy & how to use it",
+      "title": "adaptive dual engine strategy momentum mean reversion bt review",
       "url": "/reviews/adaptive-dual-engine-strategy-momentum-mean-reversion-bt/"
     }
   ]
@@ -109,7 +109,7 @@ On ETH, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-09-27 → 2026-09-25), the TTM Squeeze Pro delivered a **+14.4% total return** on ETH-USD, compounding at **2.7% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the TTM Squeeze Pro delivered a **+14.3% total return** on ETH-USD, compounding at **2.7% annually**. 
 
 At **0.10**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on ETH-USD](/backtests/ttm-squeeze-pro-eth-usd-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-09-26",
+  "date": "2026-10-03",
   "draft": false,
   "type": "backtests",
-  "period": "2021-09-27 \u2192 2026-09-25",
+  "period": "2021-10-04 \u2192 2026-10-02",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-4.6%"
+      "value": "-1.3%"
     },
     {
       "label": "CAGR",
-      "value": "-0.9%"
+      "value": "-0.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.04"
+      "value": "0.06"
     },
     {
       "label": "Max Drawdown",
@@ -28,11 +28,11 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.99"
+      "value": "1.00"
     },
     {
       "label": "Total Trades",
-      "value": "465"
+      "value": "464"
     },
     {
       "label": "Avg Trade",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+9.6%",
-      "trades": "23",
+      "return_pct": "-5.7%",
+      "trades": "20",
       "win_rate_pct": "35.3%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-5.6%",
-      "trades": "68",
+      "return_pct": "-4.5%",
+      "trades": "70",
       "win_rate_pct": "35.3%"
     }
   ],
@@ -84,15 +84,15 @@
   "equity_curve_url": "/backtests/supertrend-atr-trailing-stop-btc-usd-equity.png",
   "crosslinks": [
     {
-      "title": "halftrend_long_short_signal_engine review: settings, strategy & how to use it",
+      "title": "halftrend long short signal engine review \u2014 trend indicator",
       "url": "/reviews/halftrend-long-short-signal-engine/"
     },
     {
-      "title": "ttm squeeze review: settings, strategy & how to use it",
+      "title": "ttm squeeze review \u2014 volatility indicator",
       "url": "/reviews/ttm-squeeze/"
     },
     {
-      "title": "rsi macd combo signal review: settings, strategy & how to use it",
+      "title": "rsi macd combo signal review \u2014 momentum indicator",
       "url": "/reviews/rsi-macd-combo-signal/"
     }
   ]
@@ -109,9 +109,9 @@ On BTC, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-09-27 → 2026-09-25), the SuperTrend + ATR Trailing Stop delivered a **-4.6% total return** on BTC-USD, compounding at **-0.9% annually**. 
+Over five years (2021-10-04 → 2026-10-02), the SuperTrend + ATR Trailing Stop delivered a **-1.3% total return** on BTC-USD, compounding at **-0.3% annually**. 
 
-At **0.04**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.06**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **45.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 45% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **45.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.04 | ❌ Weak |
+| Sharpe Ratio | 0.06 | ❌ Weak |
 | Max Drawdown | 45.1% | ⚠️ Significant |
 | Win Rate | 35.3% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.99 | ❌ Unprofitable |
-| Trades/Year | ~465 total | Active |
+| Profit Factor | 1.00 | ❌ Unprofitable |
+| Trades/Year | ~464 total | Active |
 
-The **profit factor of 0.99** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 35.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.00** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 35.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on BTC?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on BTC over this 5-year period. With a **0.04 Sharpe ratio** and **0.99 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on BTC over this 5-year period. With a **0.06 Sharpe ratio** and **1.00 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: September 26, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on BTC-USD](/backtests/supertrend-atr-trailing-stop-btc-usd-trades.png)
