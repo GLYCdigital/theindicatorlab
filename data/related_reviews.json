@@ -3575,14 +3575,14 @@
       "score": 5.0
     },
     {
-      "slug": "accum-dist-divergence",
-      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-ai-indicator",
-      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -4473,6 +4473,12 @@
   ],
   "chart-pattern-recognition": [
     {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -4487,12 +4493,6 @@
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "alpha-signal-engine",
-      "title": "Alpha Signal Engine Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -7900,7 +7900,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.2
+      "score": 10.3
     }
   ],
   "ema-trend-signals": [
@@ -8707,6 +8707,32 @@
       "title": "ADX Smoothed Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "fibonacci-sequence-swing": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-with-di-di",
+      "title": "ADX With Di Di Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "fibonacci-time-zones": [
@@ -15723,8 +15749,8 @@
       "score": 9.0
     },
     {
-      "slug": "tertiary-pivot-structural-zones",
-      "title": "Tertiary Pivot Structural Zones Review",
+      "slug": "macro-candles-m1d",
+      "title": "Macro Candles M1d Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -18152,7 +18178,7 @@
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.7
+      "score": 7.8
     },
     {
       "slug": "accumulation-distribution-line-adl",
@@ -20199,6 +20225,32 @@
       "title": "AI Predictive Flow Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "premium-discount-matrix-boswaves": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "pressure-transfer-zone": [
@@ -23904,7 +23956,7 @@
       "slug": "quant-confluence-engine",
       "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.3
+      "score": 12.4
     },
     {
       "slug": "strong-fu-candle",
@@ -25219,6 +25271,32 @@
       "score": 8.0
     }
   ],
+  "strong-fibo-clusters": [
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-pulse-jpt",
+      "title": "Adaptive Trend Pulse Jpt Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "strong-fu-candle": [
     {
       "slug": "multi-timeframe-multi-indicator-dashboard",
@@ -25242,7 +25320,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.1
+      "score": 13.2
     }
   ],
   "strong-gold-signals": [
@@ -25574,13 +25652,13 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.4
+      "score": 11.5
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.1
+      "score": 10.2
     }
   ],
   "supertrend-fibonacci-ote-grid-bands": [
@@ -25620,13 +25698,13 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.1
+      "score": 12.2
     },
     {
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.2
+      "score": 10.3
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -28131,6 +28209,32 @@
       "score": 5.0
     }
   ],
+  "turtle-soup-failed-breakout": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "twiggs-money-flow": [
     {
       "slug": "chaikin-volatility-oscillator",
@@ -29301,6 +29405,32 @@
       "score": 9.0
     }
   ],
+  "volume-profile-delta-heatmap-kg": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bfg-profil3d",
+      "title": "Bfg Profil3d Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "buyers-sellers-profile-dynamic-s-r",
+      "title": "Buyers Sellers Profile Dynamic Sr Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "volume-profile-fixed-range": [
     {
       "slug": "htf-candle-volume-profile-chartprime",
@@ -30274,7 +30404,7 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 15.1
+      "score": 15.2
     },
     {
       "slug": "momentum-flow-oscillator",
@@ -30283,8 +30413,8 @@
       "score": 13.0
     },
     {
-      "slug": "viprasol-gold-sniper-confluence",
-      "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
+      "slug": "rsi-macd-combo",
+      "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
