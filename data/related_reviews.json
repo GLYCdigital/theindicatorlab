@@ -77,10 +77,42 @@
       "score": 9.0
     }
   ],
+  "3-candle-sweep-maximopartners": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ajay-strong-smart-money-scalper",
+      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "3-way-bollinger-trend-zynalgo": [
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     },
@@ -93,12 +125,6 @@
     {
       "slug": "bollinger-bands-mtf",
       "title": "Bollinger Bands MTF Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "bollinger-bands-percent-b",
-      "title": "Bollinger Bands Percent B Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -273,14 +299,14 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -651,6 +677,12 @@
   ],
   "adaptive-liquidity-reclaim-map-phenlabs": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -665,12 +697,6 @@
     {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
       "rating": 4,
       "score": 9.0
     }
@@ -751,6 +777,32 @@
       "title": "Pivot Points Standard Review \u2014 Support & Resistance",
       "rating": 3,
       "score": 16.0
+    }
+  ],
+  "adaptive-trend-bands": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "adaptive-trend-ensemble-backquant": [
@@ -885,12 +937,6 @@
   ],
   "adx-average-directional-index": [
     {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "accelerator-oscillator",
       "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -905,6 +951,12 @@
     {
       "slug": "adx-divergence",
       "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adx-smoothed",
+      "title": "ADX Smoothed Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -943,6 +995,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
@@ -951,12 +1009,6 @@
     {
       "slug": "adaptive-trend-ensemble-backquant",
       "title": "Adaptive Trend Ensemble Backquant Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -1047,6 +1099,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
       "rating": 4,
@@ -1055,12 +1113,6 @@
     {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -1093,26 +1145,26 @@
   ],
   "agreement-streak-analyzer-fibonacciflux": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adx-mtf",
       "title": "ADX MTF Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "alligator-bill-williams",
-      "title": "Alligator Bill Williams Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "alligator",
-      "title": "Alligator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -1437,6 +1489,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -1447,15 +1505,15 @@
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "amd-structure-map-axealgo": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
@@ -1471,12 +1529,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accum-dist-divergence",
-      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -1619,6 +1671,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -1627,12 +1685,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -1749,20 +1801,20 @@
       "score": 8.0
     },
     {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "accumulation-distribution",
       "title": "Accumulation Distribution Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -2373,6 +2425,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -2383,15 +2441,15 @@
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "average-daily-weekly-ranges-adr-awr-d4a": [
+    {
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
@@ -2407,12 +2465,6 @@
     {
       "slug": "atr-raw",
       "title": "ATR Raw Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "atr-volatility-indicator",
-      "title": "ATR Volatility Indicator Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -2763,6 +2815,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -2771,12 +2829,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -3329,6 +3381,12 @@
   ],
   "breaker-block-detector-algotim": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -3343,12 +3401,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
       "rating": 4,
       "score": 9.0
     }
@@ -3419,14 +3471,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -4719,14 +4771,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -4791,6 +4843,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -4799,12 +4857,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-decycler-supertrend-schizoquant",
-      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -4869,6 +4921,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -4877,12 +4935,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration",
-      "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -4915,6 +4967,12 @@
   ],
   "composite-valuation-standard-score": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
@@ -4929,12 +4987,6 @@
     {
       "slug": "agreement-streak-analyzer-fibonacciflux",
       "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "atr-percentile",
-      "title": "ATR Percentile Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -5201,6 +5253,12 @@
   ],
   "crt-range-indicator-dynamic-period-grid": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -5217,18 +5275,18 @@
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "ctz-bitcoin-cycle-master": [
     {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -5241,12 +5299,6 @@
     {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -5291,14 +5343,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -6071,14 +6123,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -6236,7 +6288,7 @@
       "slug": "sattam-harmonic-lab",
       "title": "Sattam Harmonic Lab Review \u2014 Chart Pattern Indicator",
       "rating": 4,
-      "score": 8.7
+      "score": 8.8
     }
   ],
   "donchian-breakout": [
@@ -6571,8 +6623,8 @@
       "score": 9.0
     },
     {
-      "slug": "fibonacci-trend-continuation-signals-algoalpha",
-      "title": "Fibonacci Trend Continuation Signals Algoalpha Review",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -6605,6 +6657,12 @@
   ],
   "dynamic-market-structure-liquidity-engine-dmsl": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -6619,12 +6677,6 @@
     {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -6657,6 +6709,12 @@
   ],
   "dynamic-smc-market-structure": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -6671,12 +6729,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -6845,6 +6897,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -6853,12 +6911,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -7848,7 +7900,7 @@
       "slug": "bitcoin-superflip-supertrend-ema-trend-following-strategy",
       "title": "Bitcoin Superflip Supertrend EMA Trend Following Strategy Review",
       "rating": 4,
-      "score": 7.7
+      "score": 7.6
     }
   ],
   "ema-ribbon": [
@@ -7900,7 +7952,7 @@
       "slug": "vervoortcrossover-zero-lag-npr21",
       "title": "Vervoortcrossover Zero Lag Npr21 Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 9.3
+      "score": 9.4
     }
   ],
   "ema-supertrend-obv-strixedge": [
@@ -7926,7 +7978,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.3
+      "score": 10.4
     }
   ],
   "ema-trend-signals": [
@@ -8113,6 +8165,12 @@
   ],
   "equalhigh-fair-value-upside": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -8127,12 +8185,6 @@
     {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -8451,6 +8503,12 @@
   ],
   "false-breakout-trap-scanner-algochief": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -8465,12 +8523,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8541,14 +8593,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -8755,8 +8807,8 @@
       "score": 5.0
     },
     {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -8902,7 +8954,7 @@
       "slug": "schaff-trend-cycle",
       "title": "Schaff Trend Cycle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 13.3
+      "score": 13.4
     },
     {
       "slug": "artemis-adaptive-rsi",
@@ -8915,6 +8967,32 @@
       "title": "Bollinger Bands RSI Combo Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "fisherrsi": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "demarker-indicator",
+      "title": "Demarker Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "different-rsi",
+      "title": "Different RSI Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "fixed-fractional-position-sizing": [
@@ -9165,14 +9243,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -9569,6 +9647,12 @@
   ],
   "funding-rate-indicator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -9583,12 +9667,6 @@
     {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -10219,6 +10297,12 @@
   ],
   "gold-session-map-sweep-signals": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -10233,12 +10317,6 @@
     {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -10277,6 +10355,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
@@ -10285,12 +10369,6 @@
     {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -10309,14 +10387,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -10367,8 +10445,8 @@
       "score": 8.0
     },
     {
-      "slug": "chaikin-volatility-oscillator",
-      "title": "Chaikin Volatility Oscillator Review \u2014 Momentum Indicator",
+      "slug": "average-true-range",
+      "title": "Average True Range Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -11069,8 +11147,8 @@
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master-fuel-zone-70-80",
-      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -11129,6 +11207,12 @@
   ],
   "horizontal-red-line": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -11143,12 +11227,6 @@
     {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-smoothed",
-      "title": "ADX Smoothed Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -11187,6 +11265,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -11195,12 +11279,6 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -11219,14 +11297,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -11271,14 +11349,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -11415,6 +11493,12 @@
   ],
   "hull-ma-ribbon": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
@@ -11429,12 +11513,6 @@
     {
       "slug": "adx-smoothed",
       "title": "ADX Smoothed Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -11883,6 +11961,12 @@
   ],
   "icon-bot": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -11899,15 +11983,15 @@
       "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "ict-10am-first-fvg-daily-strategy": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
@@ -11923,12 +12007,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cme-institutional-order-flow-amt-lens",
-      "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -12091,6 +12169,12 @@
   ],
   "ict-smart-money-execution-engine": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -12107,18 +12191,18 @@
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "ict-sniper-by-david": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -12131,12 +12215,6 @@
     {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -12571,14 +12649,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -12663,6 +12741,12 @@
   ],
   "inversion-order-blocks-iob": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -12677,12 +12761,6 @@
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -13677,6 +13755,12 @@
   ],
   "liq-sweep-choch-ob-instant": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -13691,12 +13775,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -13807,6 +13885,12 @@
   ],
   "liquidity-absorption-detection": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -13823,15 +13907,15 @@
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "liquidity-draws": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
@@ -13849,15 +13933,15 @@
       "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "liquidity-grab-detector": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
@@ -13873,12 +13957,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14041,6 +14119,12 @@
   ],
   "liquidity-shift-detection": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -14055,12 +14139,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14197,6 +14275,12 @@
   ],
   "liquidity-sweep-session-tradingfinder-ict-killzone-times": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -14211,18 +14295,18 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
   ],
   "liquidity-sweep-target": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -14237,18 +14321,18 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
   ],
   "liquidity-sweep": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -14263,12 +14347,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14327,6 +14405,12 @@
   ],
   "liquidity-zones": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -14343,18 +14427,18 @@
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "london-session-levels": [
     {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -14367,12 +14451,6 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -14469,14 +14547,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -15261,10 +15339,42 @@
       "score": 9.0
     }
   ],
+  "main-ma-offset-entry-delayed-ma-cross-back-6-tp-updated": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "margin-debt-expansion-vs-contraction-indicator": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -15277,12 +15387,6 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -15613,19 +15717,25 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master-fuel-zone-70-80",
-      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
   ],
   "market-structure-bos-choch-hh-hl-lh-ll-trend-health-lunqfx": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
     {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
@@ -15641,12 +15751,6 @@
     {
       "slug": "adx-with-di-di",
       "title": "ADX With Di Di Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -15789,6 +15893,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
@@ -15797,12 +15907,6 @@
     {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -15899,14 +16003,14 @@
       "score": 13.0
     },
     {
-      "slug": "bollinger-bands-b",
-      "title": "Bollinger Bands B Review \u2014 Volatility Indicator",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "bollinger-bands-mtf",
-      "title": "Bollinger Bands MTF Review \u2014 Volatility Indicator",
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger Bands B Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -15991,6 +16095,12 @@
   ],
   "master-line-lite-5-ma-consensus": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -16005,12 +16115,6 @@
     {
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -16257,6 +16361,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -16265,12 +16375,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-trend-ensemble-backquant",
-      "title": "Adaptive Trend Ensemble Backquant Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -16379,6 +16483,32 @@
       "score": 9.0
     }
   ],
+  "modern-rth-gaps-rrr": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 5.0
+    }
+  ],
   "mom-levels": [
     {
       "slug": "1-trendline-strategy",
@@ -16393,14 +16523,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -16627,14 +16757,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -16979,6 +17109,12 @@
   ],
   "msl-crypto-breadth": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -16993,12 +17129,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration",
-      "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -17343,6 +17473,12 @@
   ],
   "mtf-support-resistance": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -17357,12 +17493,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -17525,6 +17655,12 @@
   ],
   "multi-timeframe-confluence": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -17539,12 +17675,6 @@
     {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
       "rating": 4,
       "score": 5.0
     }
@@ -17563,14 +17693,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -18285,6 +18415,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -18293,12 +18429,6 @@
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -18457,6 +18587,32 @@
       "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "omega-effort-omegatools": [
+    {
+      "slug": "smart-money-the-ultimator",
+      "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "volume-spread-analysis",
+      "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "wyckoff-architectural-range-erdensedat",
+      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "wyckoff-schematic",
+      "title": "Wyckoff Schematic Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "on-balance-volume-obv": [
@@ -18675,6 +18831,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -18683,12 +18845,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
       "rating": 4,
       "score": 5.0
     }
@@ -18747,6 +18903,12 @@
   ],
   "orb-session-liquidity-model": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -18761,12 +18923,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -18805,6 +18961,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -18815,15 +18977,15 @@
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "order-block-intelligence-mitigation-probability-ai-dots3red": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
@@ -18839,12 +19001,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -19273,6 +19429,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -19281,12 +19443,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -19423,6 +19579,12 @@
   ],
   "phase-space-quadrant-dashboard-fibonacciflux": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -19437,12 +19599,6 @@
     {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -19501,6 +19657,12 @@
   ],
   "pine-script-utility-library-1cg": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -19515,12 +19677,6 @@
     {
       "slug": "asian-session-levels",
       "title": "Asian Session Levels Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani",
-      "title": "Auto Trendline Intelligence BOS CHOCH FVG Rehan Khanani Review",
       "rating": 4,
       "score": 5.0
     }
@@ -19787,6 +19943,12 @@
   ],
   "pivot-points-mtf": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
@@ -19801,12 +19963,6 @@
     {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -20105,6 +20261,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
       "rating": 4,
@@ -20113,12 +20275,6 @@
     {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -20351,8 +20507,8 @@
       "score": 8.0
     },
     {
-      "slug": "ai-predictive-flow",
-      "title": "AI Predictive Flow Review \u2014 Market Structure Indicator",
+      "slug": "adxr",
+      "title": "ADXR Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -20385,6 +20541,12 @@
   ],
   "premium-discount-matrix-boswaves": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -20401,18 +20563,18 @@
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "pressure-transfer-zone": [
     {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -20425,12 +20587,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -20527,14 +20683,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -20703,6 +20859,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -20711,12 +20873,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -20761,14 +20917,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -21021,14 +21177,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -21217,6 +21373,12 @@
   ],
   "raid-clock-m1d": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -21231,12 +21393,6 @@
     {
       "slug": "crt-range-indicator-dynamic-period-grid",
       "title": "Crt Range Indicator Dynamic Period Grid Review \u2014 Trend",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "equal-highs-lows-liquidity-pool-engine-algo-aakash",
-      "title": "Equal Highs Lows Liquidity Pool Engine Algo Aakash Review",
       "rating": 4,
       "score": 9.0
     }
@@ -21495,8 +21651,8 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -21587,6 +21743,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -21595,12 +21757,6 @@
     {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-divergence",
-      "title": "ADX Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -21997,6 +22153,12 @@
   ],
   "reversal-probability-profile-algoalpha": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -22011,12 +22173,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -22113,14 +22269,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -22353,8 +22509,8 @@
       "score": 13.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -22907,6 +23063,12 @@
   ],
   "sattam-supply-demand": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -22923,18 +23085,18 @@
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "sattam-volume-edge": [
     {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -22947,12 +23109,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -23023,14 +23179,14 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -23543,14 +23699,14 @@
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -23583,6 +23739,12 @@
   ],
   "sltp-levels": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -23599,18 +23761,18 @@
       "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "asian-session-levels",
-      "title": "Asian Session Levels Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "sma-cross-signal": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
       "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -23623,12 +23785,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -23693,6 +23849,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
@@ -23701,12 +23863,6 @@
     {
       "slug": "adaptive-trend-ensemble-backquant",
       "title": "Adaptive Trend Ensemble Backquant Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-mtf",
-      "title": "ADX MTF Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -23921,6 +24077,12 @@
   ],
   "smart-money-liquidation-exploits-algoalpha": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -23935,18 +24097,18 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
       "rating": 4,
       "score": 9.0
     }
   ],
   "smart-money-liquidity-matrix-session-finder": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -23961,12 +24123,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23999,6 +24155,12 @@
   ],
   "smart-money-stop-hunt-detection": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -24013,12 +24175,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
       "rating": 4,
       "score": 9.0
     }
@@ -24051,6 +24207,12 @@
   ],
   "smart-money-the-ultimator": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -24065,12 +24227,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "choch-identifier",
-      "title": "CHOCH Identifier Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24164,7 +24320,7 @@
       "slug": "quant-confluence-engine",
       "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.4
+      "score": 12.5
     },
     {
       "slug": "strong-fu-candle",
@@ -24176,7 +24332,7 @@
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.6
+      "score": 10.7
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -24233,6 +24389,12 @@
   ],
   "smc-confluence-suite": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -24249,18 +24411,18 @@
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "smc-institutional-clean-wave-structure": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
       "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -24273,12 +24435,6 @@
     {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -24499,6 +24655,12 @@
       "score": 13.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adx-divergence",
       "title": "ADX Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -24509,15 +24671,15 @@
       "title": "Aroon Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "bollinger-bands-divergence",
-      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "sniper-liquidity-zones-by-david": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
@@ -24533,12 +24695,6 @@
     {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -24719,8 +24875,8 @@
       "score": 13.0
     },
     {
-      "slug": "ais-supertrend",
-      "title": "Ais Supertrend Review \u2014 Trend Indicator",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -25441,14 +25597,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -25481,6 +25637,12 @@
   ],
   "strong-fibo-clusters": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
       "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
       "rating": 4,
@@ -25495,12 +25657,6 @@
     {
       "slug": "adaptive-trend-pulse-jpt",
       "title": "Adaptive Trend Pulse Jpt Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-average-directional-index",
-      "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -25611,6 +25767,12 @@
   ],
   "strong-mtf-liquidity-matrix": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -25625,12 +25787,6 @@
     {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -25695,6 +25851,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -25703,12 +25865,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -25860,7 +26016,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.5
+      "score": 11.6
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
@@ -25912,7 +26068,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.3
+      "score": 10.4
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -26163,6 +26319,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -26171,12 +26333,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -26189,6 +26345,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -26197,12 +26359,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -26221,14 +26377,14 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -26261,6 +26417,12 @@
   ],
   "support-map": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -26273,14 +26435,8 @@
       "score": 5.0
     },
     {
-      "slug": "agreement-streak-analyzer-fibonacciflux",
-      "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "alligator-bill-williams",
-      "title": "Alligator Bill Williams Review \u2014 Momentum Indicator",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -26289,6 +26445,12 @@
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -26303,15 +26465,15 @@
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "sweep-ifvg-m1d": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
@@ -26329,15 +26491,15 @@
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "sweep-reversal-map-herman": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
     {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
@@ -26353,12 +26515,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-decycler-supertrend-schizoquant",
-      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -26521,6 +26677,12 @@
   ],
   "swing-structure-pips-candles-sl": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -26537,18 +26699,18 @@
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
-      "score": 5.0
     }
   ],
   "t3-moving-average": [
     {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     },
@@ -26561,12 +26723,6 @@
     {
       "slug": "adaptive-swing-timing-engine-algopoint",
       "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -26591,8 +26747,8 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -26753,6 +26909,32 @@
       "score": 5.0
     }
   ],
+  "taught-to-trade-sample-size-panel": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-ensemble-backquant",
+      "title": "Adaptive Trend Ensemble Backquant Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "tech-leadership-map-herman": [
     {
       "slug": "1-trendline-strategy",
@@ -26859,6 +27041,12 @@
   ],
   "test-slug-999": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -26873,12 +27061,6 @@
     {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration",
-      "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -26995,6 +27177,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
@@ -27003,12 +27191,6 @@
     {
       "slug": "amd-po3-with-live-edge-stats-willyalgotrader",
       "title": "Amd PO3 With Live Edge Stats Willyalgotrader Review \u2014 Trend",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "anomaly-detection-indicator",
-      "title": "Anomaly Detection Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -27027,14 +27209,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -27099,6 +27281,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -27107,12 +27295,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -27437,6 +27619,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
       "rating": 4,
@@ -27447,18 +27635,18 @@
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "trend-intensity-index": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -27472,12 +27660,6 @@
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
       "score": 5.0
     }
   ],
@@ -27547,14 +27729,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -27587,6 +27769,12 @@
   ],
   "trend-predictor-ribbon": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -27603,15 +27791,15 @@
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "accum-dist-divergence",
-      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "trend-pressure": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
     {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
@@ -27627,12 +27815,6 @@
     {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -27781,14 +27963,14 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -27827,6 +28009,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -27835,12 +28023,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -27865,8 +28047,8 @@
       "score": 5.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -27931,6 +28113,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -27939,12 +28127,6 @@
     {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -28003,6 +28185,12 @@
   ],
   "trinity-multi-timeframe-s-r-levels": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -28019,18 +28207,18 @@
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "trinity-reversal-pattern-algoalpha": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
       "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -28043,12 +28231,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -28399,6 +28581,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -28407,12 +28595,6 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -28477,6 +28659,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -28485,12 +28673,6 @@
     {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-ai-indicator",
-      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -28581,6 +28763,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -28589,12 +28777,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -28896,7 +29078,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 12.3
+      "score": 12.4
     },
     {
       "slug": "artemis-adaptive-rsi",
@@ -29139,8 +29321,8 @@
       "score": 13.0
     },
     {
-      "slug": "bollinger-bands-b",
-      "title": "Bollinger Bands B Review \u2014 Volatility Indicator",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -29211,14 +29393,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -29231,6 +29413,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -29239,12 +29427,6 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -29485,6 +29667,12 @@
   ],
   "volume-liquidity-trend": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -29499,12 +29687,6 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -29849,6 +30031,12 @@
   ],
   "volume-spread-analysis": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -29863,12 +30051,6 @@
     {
       "slug": "wyckoff-architectural-range-erdensedat",
       "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-pattern-indicator-almostperfect",
-      "title": "Wyckoff Pattern Indicator Almostperfect Review",
       "rating": 4,
       "score": 9.0
     }
@@ -30031,6 +30213,12 @@
   ],
   "volume-weighted-order-block-zones": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -30045,12 +30233,6 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -30167,6 +30349,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -30177,21 +30365,9 @@
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "vortex": [
-    {
-      "slug": "acceleration-deceleration-ac-oscillator",
-      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
-      "rating": 4,
-      "score": 8.0
-    },
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
@@ -30209,12 +30385,24 @@
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
     }
   ],
   "vsa-digga": [
     {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
@@ -30227,12 +30415,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30543,8 +30725,8 @@
       "score": 13.0
     },
     {
-      "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
-      "title": "Anchored VWAP W 4 Stdev Pip ATR Bands Review \u2014 Volume",
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -30661,6 +30843,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -30669,12 +30857,6 @@
     {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30687,6 +30869,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -30695,12 +30883,6 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30745,14 +30927,14 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-composite-oscillator-aco",
-      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30837,6 +31019,12 @@
   ],
   "whale-liquidity-and-absorption-profile-algoalpha": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
@@ -30851,12 +31039,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -31149,6 +31331,12 @@
   ],
   "wyckoff-architectural-range-erdensedat": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -31163,12 +31351,6 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-pattern-indicator-almostperfect",
-      "title": "Wyckoff Pattern Indicator Almostperfect Review",
       "rating": 4,
       "score": 9.0
     }
@@ -31201,6 +31383,12 @@
   ],
   "wyckoff-schematic": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -31215,18 +31403,18 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
   ],
   "wyckoff-sign-of-strength": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -31241,18 +31429,18 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
   ],
   "wyckoff-spring-detection": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -31267,18 +31455,18 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
   ],
   "wyckoff-theultimator5": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -31293,18 +31481,18 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
   ],
   "wyckoff-volume-analysis": [
     {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -31319,12 +31507,6 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -31467,6 +31649,12 @@
       "score": 5.0
     },
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
@@ -31475,12 +31663,6 @@
     {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -31695,6 +31877,12 @@
   ],
   "zipced40-chart-pattern-mapper": [
     {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -31709,12 +31897,6 @@
     {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adx-mtf",
-      "title": "ADX MTF Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
