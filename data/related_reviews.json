@@ -85,6 +85,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -93,12 +99,6 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -677,6 +677,12 @@
   ],
   "adaptive-liquidity-reclaim-map-phenlabs": [
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "3-candle-sweep-maximopartners",
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
@@ -691,12 +697,6 @@
     {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-decycler-supertrend-schizoquant",
-      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -751,6 +751,32 @@
       "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
+    }
+  ],
+  "adaptive-smart-money-liquidity-sweep-levels-algoalpha": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "adaptive-swing-timing-engine-algopoint": [
@@ -3445,14 +3471,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -4551,6 +4577,12 @@
   ],
   "change-of-character-choch-alert-system-algo-aakash": [
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -4565,12 +4597,6 @@
     {
       "slug": "dynamic-market-structure-liquidity-engine-dmsl",
       "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-smc-market-structure",
-      "title": "Dynamic SMC Market Structure Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -5343,14 +5369,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -6701,8 +6727,8 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -6753,8 +6779,8 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -6799,14 +6825,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8593,14 +8619,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8879,14 +8905,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -12193,6 +12219,32 @@
       "score": 9.0
     }
   ],
+  "ict-setup-05-tradingfinder-liquidity-sweep-ob-retest": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "ict-setup-screener-liquidity-sweep-mss-fvg-scanner-lunqfx": [
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
@@ -12259,14 +12311,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -12815,6 +12867,32 @@
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 16.0
+    }
+  ],
+  "inversion-fair-value-gap-ifvg-takingprophets": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "inversion-order-blocks-iob": [
@@ -13845,14 +13923,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -13975,14 +14053,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14001,14 +14079,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14027,14 +14105,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14099,6 +14177,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -14107,12 +14191,6 @@
     {
       "slug": "crt-range-indicator-dynamic-period-grid",
       "title": "Crt Range Indicator Dynamic Period Grid Review \u2014 Trend",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
       "rating": 4,
       "score": 9.0
     }
@@ -14209,14 +14287,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14225,6 +14303,12 @@
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
@@ -14239,10 +14323,30 @@
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "liquidity-sweep-confirmation-zones-pineify": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "crt-range-indicator-dynamic-period-grid",
-      "title": "Crt Range Indicator Dynamic Period Grid Review \u2014 Trend",
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -14365,14 +14469,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14391,14 +14495,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14417,14 +14521,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14501,8 +14605,8 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -15437,8 +15541,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-line",
-      "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -15827,8 +15931,8 @@
       "score": 5.0
     },
     {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -15945,6 +16049,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -15953,12 +16063,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "choch-identifier",
-      "title": "CHOCH Identifier Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15991,6 +16095,12 @@
   ],
   "market-structure-smc": [
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -16005,12 +16115,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "choch-identifier",
-      "title": "CHOCH Identifier Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -17401,6 +17505,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -17409,12 +17519,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
       "rating": 4,
       "score": 9.0
     }
@@ -18993,14 +19097,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23595,14 +23699,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24187,6 +24291,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -24195,12 +24305,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24245,14 +24349,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24271,14 +24375,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24291,6 +24395,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -24299,12 +24409,6 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24323,14 +24427,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24476,7 +24580,7 @@
       "slug": "quant-confluence-engine",
       "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.5
+      "score": 12.6
     },
     {
       "slug": "strong-fu-candle",
@@ -24488,7 +24592,7 @@
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.8
+      "score": 10.7
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -24557,14 +24661,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24615,8 +24719,8 @@
       "score": 5.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -24843,14 +24947,14 @@
       "score": 9.0
     },
     {
-      "slug": "adx-divergence",
-      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "aroon-divergence",
-      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24875,8 +24979,8 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -25837,8 +25941,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-pulse-jpt",
-      "title": "Adaptive Trend Pulse Jpt Review \u2014 Trend Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -25967,8 +26071,8 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -26049,6 +26153,32 @@
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "structure-anchored-vwap-willyalgotrader": [
+    {
+      "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
+      "title": "Anchored VWAP W 4 Stdev Pip ATR Bands Review \u2014 Volume",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "anchored-vwap",
+      "title": "Anchored VWAP Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-rsi-vwap-targets",
+      "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "post-absorption-vwap-reversal-engine-6",
+      "title": "Post Absorption VWAP Reversal Engine 6 Review \u2014 Volume",
+      "rating": 3,
+      "score": 9.0
     }
   ],
   "structure-decision-engine-algopoint": [
@@ -26663,14 +26793,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -29127,6 +29257,12 @@
       "score": 5.0
     },
     {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "alma-arnaud-legoux",
       "title": "Alma Arnaud Legoux Review \u2014 Trend Indicator",
       "rating": 4,
@@ -29135,12 +29271,6 @@
     {
       "slug": "alma-moving-average",
       "title": "Alma Moving Average Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "alt-bat-pattern",
-      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -29861,14 +29991,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ajay-strong-smart-money-scalper",
-      "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -31213,14 +31343,14 @@
       "score": 9.0
     },
     {
-      "slug": "aj-ict-smc",
-      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
