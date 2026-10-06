@@ -59,6 +59,12 @@
       "score": 9.0
     },
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "crossover-optimizer-heatmap-quantum-algo",
       "title": "Crossover Optimizer Heatmap Quantum Algo Review \u2014 Trend",
       "rating": 4,
@@ -67,12 +73,6 @@
     {
       "slug": "double-exponential-moving-average-dema",
       "title": "Double Exponential Moving Average DEMA Review \u2014 Trend",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-crossover",
-      "title": "EMA Crossover Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -3667,6 +3667,12 @@
   ],
   "buy-sell-indicator": [
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-crossover",
       "title": "EMA Crossover Review \u2014 Trend Indicator",
       "rating": 4,
@@ -3681,12 +3687,6 @@
     {
       "slug": "entry-terminal",
       "title": "Entry Terminal Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "htf-scalp-system",
-      "title": "HTF Scalp System Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -4731,6 +4731,32 @@
       "score": 9.0
     }
   ],
+  "chop-stopper-ema-px": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bitcoin-superflip-supertrend-ema-trend-following-strategy",
+      "title": "Bitcoin Superflip Supertrend EMA Trend Following Strategy Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger Bands With EMA Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "buy-sell-indicator",
+      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "chop-zone-indicator": [
     {
       "slug": "1-trendline-strategy",
@@ -5017,6 +5043,32 @@
       "score": 5.0
     }
   ],
+  "comparative-relative-strength-sj": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "composite-index": [
     {
       "slug": "1-trendline-strategy",
@@ -5074,13 +5126,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 7.9
+      "score": 8.0
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 7.9
+      "score": 8.0
     },
     {
       "slug": "8020-system-indicator",
@@ -6631,6 +6683,12 @@
   ],
   "dual-phase-reversal-by-dgt": [
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ease-of-movement-ma",
       "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
       "rating": 4,
@@ -6645,12 +6703,6 @@
     {
       "slug": "entry-terminal",
       "title": "Entry Terminal Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "force-index-ema",
-      "title": "Force Index EMA Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8171,6 +8223,12 @@
       "score": 9.0
     },
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "dual-phase-reversal-by-dgt",
       "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
       "rating": 4,
@@ -8179,12 +8237,6 @@
     {
       "slug": "ema-momentum-trade-planner-auto-target",
       "title": "EMA Momentum Trade Planner Auto Target Review \u2014 Momentum",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "jurik-composite-fractal",
-      "title": "Jurik Composite Fractal Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8523,6 +8575,32 @@
     {
       "slug": "agreement-streak-analyzer-fibonacciflux",
       "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "fair-value-gap-fvg-supply-demand-zones-jpt": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -11537,8 +11615,8 @@
       "score": 9.0
     },
     {
-      "slug": "ehlers-laguerre-filter",
-      "title": "Ehlers Laguerre Filter Review \u2014 Trend Indicator",
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -16127,6 +16205,12 @@
       "score": 9.0
     },
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-momentum-trade-planner-auto-target",
       "title": "EMA Momentum Trade Planner Auto Target Review \u2014 Momentum",
       "rating": 4,
@@ -16135,12 +16219,6 @@
     {
       "slug": "entry-terminal",
       "title": "Entry Terminal Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "macro-candles-m1d",
-      "title": "Macro Candles M1d Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -17141,6 +17219,12 @@
       "score": 9.0
     },
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "crossover-optimizer-heatmap-quantum-algo",
       "title": "Crossover Optimizer Heatmap Quantum Algo Review \u2014 Trend",
       "rating": 4,
@@ -17149,12 +17233,6 @@
     {
       "slug": "ease-of-movement-ma",
       "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cloud-phantomcipher",
-      "title": "EMA Cloud Phantomcipher Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -17681,6 +17759,12 @@
   ],
   "mtf-trend-dashboard": [
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ease-of-movement-ma",
       "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
       "rating": 4,
@@ -17695,12 +17779,6 @@
     {
       "slug": "ema-cross-signal",
       "title": "EMA Cross Signal Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cross",
-      "title": "EMA Cross Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -19507,6 +19585,12 @@
       "score": 13.0
     },
     {
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ease-of-movement-ma",
       "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
       "rating": 4,
@@ -19515,12 +19599,6 @@
     {
       "slug": "ehlers-laguerre-filter",
       "title": "Ehlers Laguerre Filter Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cloud-phantomcipher",
-      "title": "EMA Cloud Phantomcipher Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24167,14 +24245,14 @@
       "score": 9.0
     },
     {
-      "slug": "dual-phase-reversal-by-dgt",
-      "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ease-of-movement-ma",
-      "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
+      "slug": "dual-phase-reversal-by-dgt",
+      "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -29041,6 +29119,32 @@
       "score": 12.0
     }
   ],
+  "ultimate-momentum-oscillator": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "cci-divergence",
+      "title": "CCI Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chande-momentum-oscillator-divergence",
+      "title": "Chande Momentum Oscillator Divergence Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "delta-divergence",
+      "title": "Delta Divergence Review \u2014 Volume Indicator",
+      "rating": 3,
+      "score": 9.0
+    }
+  ],
   "ultimate-oscillator": [
     {
       "slug": "1-trendline-strategy",
@@ -30651,6 +30755,32 @@
       "title": "MACD Divergence Detector Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
+    }
+  ],
+  "vortex-indicator": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "vortex-mtf": [
