@@ -10347,6 +10347,32 @@
       "score": 8.0
     }
   ],
+  "ghost-zones-gti-adaptive-demand-supply-zones": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "gideons-gold-adx-watchman": [
     {
       "slug": "acceleration-deceleration-ac-oscillator",
@@ -18698,7 +18724,7 @@
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.8
+      "score": 7.7
     },
     {
       "slug": "accumulation-distribution-line-adl",
