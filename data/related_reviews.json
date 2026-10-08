@@ -2795,15 +2795,15 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
+      "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-ai-indicator",
-      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
       "score": 8.0
     }
   ],
@@ -5135,14 +5135,14 @@
       "score": 8.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -8579,6 +8579,32 @@
       "score": 5.0
     }
   ],
+  "fair-value-gap-fill-probability-pickmytrade": [
+    {
+      "slug": "adx-mtf",
+      "title": "ADX MTF Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "auto-trendline-intelligence-bos-choch-fvg-rehan-khanani",
+      "title": "Auto Trendline Intelligence BOS CHOCH FVG Rehan Khanani Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "bayesian-probability-indicator",
+      "title": "Bayesian Probability Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "bidayah-smc-indicator",
+      "title": "Bidayah SMC Indicator Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "fair-value-gap-fvg-supply-demand-zones-jpt": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
@@ -8970,6 +8996,32 @@
     }
   ],
   "fibonacci-sequence-swing": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "fibonacci-swing-trading-bot": [
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
@@ -10505,6 +10557,12 @@
   ],
   "gold-session-map-sweep-signals": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-candle-sweep-maximopartners",
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
@@ -10519,12 +10577,6 @@
     {
       "slug": "6-indicator-master-fuel-zone-70-80",
       "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "6-indicator-master",
-      "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -15671,8 +15723,8 @@
       "score": 5.0
     },
     {
-      "slug": "3d-market-profile-boswaves",
-      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -16405,6 +16457,32 @@
       "score": 5.0
     }
   ],
+  "maulers-raid-to-delivery": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "mcginley-dynamic": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -16771,6 +16849,12 @@
   ],
   "modern-rth-gaps-rrr": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-candle-sweep-maximopartners",
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
@@ -16786,12 +16870,6 @@
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
       "score": 5.0
     }
   ],
@@ -20380,7 +20458,7 @@
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
-      "score": 15.8
+      "score": 15.9
     }
   ],
   "pivot-points-woodie": [
@@ -21243,6 +21321,18 @@
   ],
   "projection-oscillator": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
       "rating": 4,
@@ -21251,18 +21341,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -24696,7 +24774,7 @@
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.7
+      "score": 10.8
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -24719,9 +24797,9 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
+      "rating": 4,
       "score": 8.0
     }
   ],
@@ -26478,7 +26556,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.2
+      "score": 12.3
     },
     {
       "slug": "signal-fusion-engine",
@@ -26865,6 +26943,12 @@
       "score": 5.0
     },
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "3-candle-sweep-maximopartners",
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
@@ -26873,12 +26957,6 @@
     {
       "slug": "8020-system-indicator",
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30159,6 +30237,32 @@
       "score": 5.0
     }
   ],
+  "volume-momentum-index-smrt-algo": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "volume-oscillator": [
     {
       "slug": "1-trendline-strategy",
@@ -31262,7 +31366,7 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 15.2
+      "score": 15.3
     },
     {
       "slug": "rsi-macd-combo",
