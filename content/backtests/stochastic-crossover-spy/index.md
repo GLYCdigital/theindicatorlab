@@ -1,14 +1,14 @@
 ---
 {
   "title": "Stochastic \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-20.9%"
+      "value": "-21.1%"
     },
     {
       "label": "CAGR",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.2%",
-      "trades": "6",
+      "return_pct": "+9.6%",
+      "trades": "5",
       "win_rate_pct": "43.7%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+13.5%",
-      "trades": "23",
+      "return_pct": "+14.8%",
+      "trades": "24",
       "win_rate_pct": "43.7%"
     }
   ],
@@ -109,7 +109,7 @@ On SPY, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-10-04 → 2026-10-02), the Stochastic Crossover delivered a **-20.9% total return** on SPY, compounding at **-4.6% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Stochastic Crossover delivered a **-21.1% total return** on SPY, compounding at **-4.6% annually**. 
 
 At **-0.41**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on SPY](/backtests/stochastic-crossover-spy-trades.png)

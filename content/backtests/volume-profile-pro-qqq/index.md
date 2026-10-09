@@ -1,18 +1,18 @@
 ---
 {
   "title": "VWAP \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+33.9%"
+      "value": "+34.2%"
     },
     {
       "label": "CAGR",
-      "value": "6.0%"
+      "value": "6.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.0%",
+      "return_pct": "+11.2%",
       "trades": "4",
       "win_rate_pct": "36.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+22.6%",
+      "return_pct": "+22.9%",
       "trades": "17",
       "win_rate_pct": "36.5%"
     }
@@ -109,7 +109,7 @@ On QQQ, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-04 → 2026-10-02), the Volume Profile Pro delivered a **+33.9% total return** on QQQ, compounding at **6.0% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Volume Profile Pro delivered a **+34.2% total return** on QQQ, compounding at **6.1% annually**. 
 
 At **0.25**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on QQQ](/backtests/volume-profile-pro-qqq-trades.png)

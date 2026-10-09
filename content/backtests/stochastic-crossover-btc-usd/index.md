@@ -1,18 +1,18 @@
 ---
 {
   "title": "Stochastic \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-0.0%"
+      "value": "+0.1%"
     },
     {
       "label": "CAGR",
-      "value": "-0.0%"
+      "value": "0.0%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "56.9%"
+      "value": "55.7%"
     },
     {
       "label": "Win Rate",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-5.7%",
-      "trades": "11",
+      "return_pct": "-19.4%",
+      "trades": "10",
       "win_rate_pct": "37.6%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-4.5%",
-      "trades": "37",
+      "return_pct": "-6.9%",
+      "trades": "38",
       "win_rate_pct": "37.6%"
     }
   ],
@@ -109,18 +109,18 @@ On BTC, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-04 → 2026-10-02), the Stochastic Crossover delivered a **-0.0% total return** on BTC-USD, compounding at **-0.0% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Stochastic Crossover delivered a **+0.1% total return** on BTC-USD, compounding at **0.0% annually**. 
 
 At **0.16**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **56.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 57% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **55.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 56% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | 0.16 | ❌ Weak |
-| Max Drawdown | 56.9% | ⚠️ Significant |
+| Max Drawdown | 55.7% | ⚠️ Significant |
 | Win Rate | 37.6% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.00 | ❌ Unprofitable |
 | Trades/Year | ~237 total | Active |
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on BTC-USD](/backtests/stochastic-crossover-btc-usd-trades.png)

@@ -1,6 +1,6 @@
 ---
 title: "EMA Backtest Results"
-date: 2026-10-03
+date: 2026-10-10
 draft: false
 type: backtests
 description: "All 5 asset backtests for the EMA indicator. Sorted by Sharpe ratio."
@@ -25,18 +25,18 @@ description: "All 5 asset backtests for the EMA indicator. Sorted by Sharpe rati
 </tr>
 </thead>
 <tbody>
-<tr><td>🟢 <a href="/backtests/ema-ribbon-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+87.1%</td><td>13.4%</td><td>0.75</td><td>15.2%</td><td>37.5%</td><td>3.86</td><td>16</td></tr>
-<tr><td>🟡 <a href="/backtests/ema-ribbon-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+34.1%</td><td>6.0%</td><td>0.45</td><td>15.1%</td><td>31.8%</td><td>2.18</td><td>22</td></tr>
-<tr><td>🟡 <a href="/backtests/ema-ribbon-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+104.3%</td><td>15.4%</td><td>0.44</td><td>44.0%</td><td>29.4%</td><td>1.51</td><td>34</td></tr>
-<tr><td>🟡 <a href="/backtests/ema-ribbon-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+28.6%</td><td>5.2%</td><td>0.26</td><td>22.3%</td><td>30.4%</td><td>1.45</td><td>23</td></tr>
-<tr><td>🟡 <a href="/backtests/ema-ribbon-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+17.9%</td><td>3.3%</td><td>0.16</td><td>52.6%</td><td>33.3%</td><td>0.88</td><td>27</td></tr>
+<tr><td>🟢 <a href="/backtests/ema-ribbon-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+80.8%</td><td>12.6%</td><td>0.65</td><td>17.8%</td><td>35.3%</td><td>3.41</td><td>17</td></tr>
+<tr><td>🟡 <a href="/backtests/ema-ribbon-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+35.6%</td><td>6.3%</td><td>0.47</td><td>15.1%</td><td>31.8%</td><td>2.18</td><td>22</td></tr>
+<tr><td>🟡 <a href="/backtests/ema-ribbon-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+99.5%</td><td>14.8%</td><td>0.43</td><td>44.0%</td><td>29.4%</td><td>1.51</td><td>34</td></tr>
+<tr><td>🟡 <a href="/backtests/ema-ribbon-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+29.1%</td><td>5.2%</td><td>0.26</td><td>22.3%</td><td>30.4%</td><td>1.45</td><td>23</td></tr>
+<tr><td>🟡 <a href="/backtests/ema-ribbon-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+9.5%</td><td>1.8%</td><td>0.11</td><td>52.6%</td><td>33.3%</td><td>0.88</td><td>27</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: October 03, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: October 10, 2026</p>
 
   </div>
 </article>

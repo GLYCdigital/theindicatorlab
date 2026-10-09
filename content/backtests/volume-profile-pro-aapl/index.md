@@ -1,18 +1,18 @@
 ---
 {
   "title": "VWAP \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+12.8%"
+      "value": "+13.4%"
     },
     {
       "label": "CAGR",
-      "value": "2.4%"
+      "value": "2.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "37.5%"
+      "value": "36.9%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "64"
+      "value": "65"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+27.8%",
+      "return_pct": "+24.5%",
       "trades": "1",
-      "win_rate_pct": "37.5%"
+      "win_rate_pct": "36.9%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "16",
-      "win_rate_pct": "37.5%"
+      "win_rate_pct": "36.9%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "8",
-      "win_rate_pct": "37.5%"
+      "win_rate_pct": "36.9%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "13",
-      "win_rate_pct": "37.5%"
+      "win_rate_pct": "36.9%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "16",
-      "win_rate_pct": "37.5%"
+      "win_rate_pct": "36.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+23.3%",
-      "trades": "10",
-      "win_rate_pct": "37.5%"
+      "return_pct": "+23.9%",
+      "trades": "11",
+      "win_rate_pct": "36.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On AAPL, the VWAP acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-04 → 2026-10-02), the Volume Profile Pro delivered a **+12.8% total return** on AAPL, compounding at **2.4% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Volume Profile Pro delivered a **+13.4% total return** on AAPL, compounding at **2.5% annually**. 
 
 At **0.10**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **35.7% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.10 | ❌ Weak |
 | Max Drawdown | 35.7% | ⚠️ Significant |
-| Win Rate | 37.5% | ❌ Low — relies on outsized wins |
+| Win Rate | 36.9% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.12 | ⚠️ Marginal |
-| Trades/Year | ~64 total | Active |
+| Trades/Year | ~65 total | Active |
 
-The **profit factor of 1.12** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 37.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.12** tells the real story: when the VWAP fires, the winning signals are larger than the losing ones. Combined with a 36.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Volume Profile Pro Work on AAPL?
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on AAPL](/backtests/volume-profile-pro-aapl-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "Sweep \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+1.0%"
+      "value": "+1.3%"
     },
     {
       "label": "CAGR",
-      "value": "0.2%"
+      "value": "0.3%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.00"
+      "value": "0.01"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+13.0%",
+      "return_pct": "+11.2%",
       "trades": "5",
       "win_rate_pct": "36.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+22.6%",
+      "return_pct": "+22.9%",
       "trades": "18",
       "win_rate_pct": "36.5%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/liquidity-sweep-pro-qqq-equity.png",
   "crosslinks": [
     {
+      "title": "liquidity sweep session tradingfinder ict killzone times review",
+      "url": "/reviews/liquidity-sweep-session-tradingfinder-ict-killzone-times/"
+    },
+    {
       "title": "ict sniper by david review \u2014 market structure indicator",
       "url": "/reviews/ict-sniper-by-david/"
     },
     {
       "title": "quant smc review \u2014 market structure indicator",
       "url": "/reviews/quant-smc/"
-    },
-    {
-      "title": "sltp levels review \u2014 trend indicator",
-      "url": "/reviews/sltp-levels/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On QQQ, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-04 → 2026-10-02), the Liquidity Sweep Pro delivered a **+1.0% total return** on QQQ, compounding at **0.2% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Liquidity Sweep Pro delivered a **+1.3% total return** on QQQ, compounding at **0.3% annually**. 
 
-At **0.00**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.01**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **36.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 36% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **36.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.00 | ❌ Weak |
+| Sharpe Ratio | 0.01 | ❌ Weak |
 | Max Drawdown | 36.4% | ⚠️ Significant |
 | Win Rate | 36.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.97 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.97** tells the real story: when the Sweep fires, the wi
 
 ## Does the Liquidity Sweep Pro Work on QQQ?
 
-The liquidity sweep pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.00 Sharpe ratio** and **0.97 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The liquidity sweep pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.01 Sharpe ratio** and **0.97 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Sweep is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on QQQ](/backtests/liquidity-sweep-pro-qqq-trades.png)

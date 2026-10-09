@@ -1,22 +1,22 @@
 ---
 {
   "title": "SAR \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+31.4%"
+      "value": "+32.4%"
     },
     {
       "label": "CAGR",
-      "value": "5.6%"
+      "value": "5.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.23"
+      "value": "0.24"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "50.0%"
+      "value": "49.1%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "56"
+      "value": "57"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+27.8%",
+      "return_pct": "+24.5%",
       "trades": "3",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "49.1%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "10",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "49.1%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "11",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "49.1%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "10",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "49.1%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "12",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "49.1%"
     },
     {
       "year": "2026",
-      "return_pct": "+23.3%",
-      "trades": "10",
-      "win_rate_pct": "50.0%"
+      "return_pct": "+23.9%",
+      "trades": "11",
+      "win_rate_pct": "49.1%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On AAPL, the SAR acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-04 → 2026-10-02), the Parabolic SAR delivered a **+31.4% total return** on AAPL, compounding at **5.6% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Parabolic SAR delivered a **+32.4% total return** on AAPL, compounding at **5.8% annually**. 
 
-At **0.23**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.24**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **31.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 32% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **31.5% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.23 | ❌ Weak |
+| Sharpe Ratio | 0.24 | ❌ Weak |
 | Max Drawdown | 31.5% | ⚠️ Significant |
-| Win Rate | 50.0% | ⚠️ Below average |
+| Win Rate | 49.1% | ⚠️ Below average |
 | Profit Factor | 1.24 | ⚠️ Marginal |
-| Trades/Year | ~56 total | Active |
+| Trades/Year | ~57 total | Active |
 
-The **profit factor of 1.24** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 50.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.24** tells the real story: when the SAR fires, the winning signals are larger than the losing ones. Combined with a 49.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on AAPL?
 
-The parabolic sar struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.23 Sharpe ratio** and **1.24 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.24 Sharpe ratio** and **1.24 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on AAPL](/backtests/parabolic-sar-aapl-trades.png)

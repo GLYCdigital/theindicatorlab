@@ -1,22 +1,22 @@
 ---
 {
   "title": "Swing \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+15.4%"
+      "value": "+16.7%"
     },
     {
       "label": "CAGR",
-      "value": "2.9%"
+      "value": "3.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.09"
+      "value": "0.11"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.2%",
+      "return_pct": "+9.6%",
       "trades": "2",
       "win_rate_pct": "29.2%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+13.5%",
+      "return_pct": "+14.8%",
       "trades": "12",
       "win_rate_pct": "29.2%"
     }
@@ -109,9 +109,9 @@ On SPY, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-10-04 → 2026-10-02), the Market Structure Pro delivered a **+15.4% total return** on SPY, compounding at **2.9% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Market Structure Pro delivered a **+16.7% total return** on SPY, compounding at **3.1% annually**. 
 
-At **0.09**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.11**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **22.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 22% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **22.2% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.09 | ❌ Weak |
+| Sharpe Ratio | 0.11 | ❌ Weak |
 | Max Drawdown | 22.2% | ⚠️ Moderate |
 | Win Rate | 29.2% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.21 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.21** tells the real story: when the Swing fires, the wi
 
 ## Does the Market Structure Pro Work on SPY?
 
-The market structure pro struggled to generate meaningful edge on SPY over this 5-year period. With a **0.09 Sharpe ratio** and **1.21 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on SPY over this 5-year period. With a **0.11 Sharpe ratio** and **1.21 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on SPY with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on SPY](/backtests/market-structure-pro-spy-trades.png)

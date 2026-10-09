@@ -1,18 +1,18 @@
 ---
 {
   "title": "MACD \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+45.6%"
+      "value": "+45.1%"
     },
     {
       "label": "CAGR",
-      "value": "7.8%"
+      "value": "7.7%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "42.0%"
+      "value": "44.8%"
     },
     {
       "label": "Win Rate",
-      "value": "33.3%"
+      "value": "33.8%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "69"
+      "value": "68"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-5.7%",
-      "trades": "2",
-      "win_rate_pct": "33.3%"
+      "return_pct": "-19.4%",
+      "trades": "1",
+      "win_rate_pct": "33.8%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "14",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "33.8%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "12",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "33.8%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "13",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "33.8%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "17",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "33.8%"
     },
     {
       "year": "2026",
-      "return_pct": "-4.5%",
+      "return_pct": "-6.9%",
       "trades": "11",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "33.8%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,23 +109,23 @@ On BTC, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-04 → 2026-10-02), the MACD Crossover delivered a **+45.6% total return** on BTC-USD, compounding at **7.8% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the MACD Crossover delivered a **+45.1% total return** on BTC-USD, compounding at **7.7% annually**. 
 
 At **0.29**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **42.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 42% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **44.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 45% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | 0.29 | ❌ Weak |
-| Max Drawdown | 42.0% | ⚠️ Significant |
-| Win Rate | 33.3% | ❌ Low — relies on outsized wins |
+| Max Drawdown | 44.8% | ⚠️ Significant |
+| Win Rate | 33.8% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.21 | ⚠️ Marginal |
-| Trades/Year | ~69 total | Active |
+| Trades/Year | ~68 total | Active |
 
-The **profit factor of 1.21** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.21** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 33.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on BTC?
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on BTC-USD](/backtests/macd-crossover-btc-usd-trades.png)

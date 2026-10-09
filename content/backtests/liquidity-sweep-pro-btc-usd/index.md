@@ -1,22 +1,22 @@
 ---
 {
   "title": "Sweep \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-03",
+  "date": "2026-10-10",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-04 \u2192 2026-10-02",
+  "period": "2021-10-11 \u2192 2026-10-09",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-17.1%"
+      "value": "-18.6%"
     },
     {
       "label": "CAGR",
-      "value": "-3.7%"
+      "value": "-4.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.05"
+      "value": "0.04"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-5.7%",
+      "return_pct": "-19.4%",
       "trades": "8",
       "win_rate_pct": "25.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-4.5%",
+      "return_pct": "-6.9%",
       "trades": "26",
       "win_rate_pct": "25.7%"
     }
@@ -84,16 +84,16 @@
   "equity_curve_url": "/backtests/liquidity-sweep-pro-btc-usd-equity.png",
   "crosslinks": [
     {
+      "title": "liquidity sweep session tradingfinder ict killzone times review",
+      "url": "/reviews/liquidity-sweep-session-tradingfinder-ict-killzone-times/"
+    },
+    {
       "title": "ict sniper by david review \u2014 market structure indicator",
       "url": "/reviews/ict-sniper-by-david/"
     },
     {
       "title": "quant smc review \u2014 market structure indicator",
       "url": "/reviews/quant-smc/"
-    },
-    {
-      "title": "sltp levels review \u2014 trend indicator",
-      "url": "/reviews/sltp-levels/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On BTC, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-04 → 2026-10-02), the Liquidity Sweep Pro delivered a **-17.1% total return** on BTC-USD, compounding at **-3.7% annually**. 
+Over five years (2021-10-11 → 2026-10-09), the Liquidity Sweep Pro delivered a **-18.6% total return** on BTC-USD, compounding at **-4.0% annually**. 
 
-At **0.05**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.04**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **60.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 60% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **60.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.05 | ❌ Weak |
+| Sharpe Ratio | 0.04 | ❌ Weak |
 | Max Drawdown | 60.1% | ⚠️ Significant |
 | Win Rate | 25.7% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.92 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.92** tells the real story: when the Sweep fires, the wi
 
 ## Does the Liquidity Sweep Pro Work on BTC?
 
-The liquidity sweep pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.05 Sharpe ratio** and **0.92 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The liquidity sweep pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.04 Sharpe ratio** and **0.92 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Sweep is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 03, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on BTC-USD](/backtests/liquidity-sweep-pro-btc-usd-trades.png)
