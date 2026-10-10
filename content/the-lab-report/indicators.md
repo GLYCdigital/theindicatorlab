@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 133 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 138 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** October 4, 2026 · **133 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** October 11, 2026 · **138 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (40)
+## Momentum (42)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -58,8 +58,10 @@ Indicators that measure the speed and strength of price movement.
 | Ehlers Cyber Cycle 🆕 | [→ Full review](/reviews/ehlers-cyber-cycle/) |
 | Candlestick Reversal 🆕 | [→ Full review](/reviews/candlestick-patterns/) |
 | Zero Lag MACD 🆕 | [→ Full review](/reviews/zero-lag-macd/) |
+| QQE 🆕 | [→ Full review](/reviews/qqe-quantitative-qualitative-estimation/) |
+| MESA Sine Wave 🆕 | [→ Full review](/reviews/ehlers-mesa-sine-wave/) |
 
-## Trend (45)
+## Trend (48)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -110,6 +112,9 @@ Indicators that identify direction and strength of the prevailing trend.
 | AMD Power of Three (PO3) 🆕 | [→ Full review](/reviews/amd-po3-with-live-edge-stats-willyalgotrader/) |
 | Gaussian Filter Trend 🆕 | [→ Full review](/reviews/gaussian-filter-trend/) |
 | Darvas Box 🆕 | [→ Full review](/reviews/darvas-box/) |
+| VIDYA 🆕 | [→ Full review](/reviews/vidya/) |
+| ADXR 🆕 | [→ Full review](/reviews/adxr/) |
+| Half Trend 🆕 | [→ Full review](/reviews/half-trend/) |
 
 ## Volume (23)
 
