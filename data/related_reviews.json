@@ -3457,6 +3457,32 @@
       "score": 9.0
     }
   ],
+  "bollinger-squeeze-breakout-volume": [
+    {
+      "slug": "bollinger-band-scalping",
+      "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger Bands Squeeze Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger Bands Width Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "keltner-bollinger-combo",
+      "title": "Keltner Bollinger Combo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "breadth-topping-syndrome": [
     {
       "slug": "accum-dist-divergence",
@@ -8154,7 +8180,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 9.7
+      "score": 9.8
     },
     {
       "slug": "vervoortcrossover-zero-lag-npr21",
@@ -8186,7 +8212,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.4
+      "score": 10.5
     }
   ],
   "ema-trend-signals": [
@@ -18898,7 +18924,7 @@
       "slug": "mfi-mtf",
       "title": "MFI MTF Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 7.0
+      "score": 7.1
     }
   ],
   "obv-divergence": [
@@ -25395,8 +25421,8 @@
       "score": 9.0
     },
     {
-      "slug": "coil-breaker-rsi-range-compression",
-      "title": "Coil Breaker RSI Range Compression Review \u2014 Market Structure",
+      "slug": "bollinger-squeeze-breakout-volume",
+      "title": "Bollinger Squeeze Breakout Volume Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -25675,14 +25701,14 @@
       "score": 5.0
     },
     {
-      "slug": "cycle-counter-with-phase-and-next-low-projection",
-      "title": "Cycle Counter With Phase And Next Low Projection Review",
+      "slug": "bollinger-squeeze-breakout-volume",
+      "title": "Bollinger Squeeze Breakout Volume Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "dynamic-support-resistance",
-      "title": "Dynamic Support Resistance Review \u2014 Support & Resistance",
+      "slug": "cycle-counter-with-phase-and-next-low-projection",
+      "title": "Cycle Counter With Phase And Next Low Projection Review",
       "rating": 4,
       "score": 5.0
     }
@@ -26666,7 +26692,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.4
+      "score": 10.5
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -27689,6 +27715,32 @@
       "score": 5.0
     }
   ],
+  "the-magnet-model": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "the-oloid-owma-oloid-weighted-moving-average": [
     {
       "slug": "multi-timeframe-multi-indicator-dashboard",
@@ -28153,6 +28205,58 @@
     {
       "slug": "mtf-stochastic",
       "title": "MTF Stochastic Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "trailing-reversal-trading-system-markittick": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "trailing-reversal-trading-system": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "atr-based-position-sizing",
+      "title": "ATR Based Position Sizing Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "chandelier-exit-mtf",
+      "title": "Chandelier Exit MTF Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -30859,6 +30963,32 @@
       "title": "EMA Cross Signal Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "volume-weighted-order-block-zones-bigbeluga": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "volume-weighted-order-block-zones": [
