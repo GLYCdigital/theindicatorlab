@@ -3587,6 +3587,32 @@
       "score": 5.0
     }
   ],
+  "breakout-pulse-volume-confirmed-support-resistance-strategy": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "breakout-retest-signals-algotim": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -4131,6 +4157,32 @@
       "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "cci-with-divergence-auto-tf-settings-capsule-academy": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "cci-with-ob-os-levels": [
@@ -6367,6 +6419,32 @@
       "title": "CCI Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "divergence-scanner-multi-oscillator-confirmation-dots3red": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "dmi-adx-combo": [
@@ -10124,7 +10202,7 @@
       "slug": "perfect-squares",
       "title": "Perfect Squares Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 6.2
+      "score": 6.1
     },
     {
       "slug": "gann-fan",
@@ -22437,6 +22515,32 @@
       "score": 5.0
     }
   ],
+  "regression-slope-oscillator-quantalgo": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration",
+      "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "regression-toolkit": [
     {
       "slug": "adaptive-composite-oscillator-aco",
@@ -24898,7 +25002,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong Fu Candle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.0
+      "score": 12.1
     },
     {
       "slug": "true-strength-index",
@@ -26264,7 +26368,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 15.0
+      "score": 15.1
     },
     {
       "slug": "rsi-macd-combo",
@@ -29445,15 +29549,15 @@
       "score": 9.0
     },
     {
-      "slug": "chande-momentum-oscillator-divergence",
-      "title": "Chande Momentum Oscillator Divergence Review \u2014 Momentum",
+      "slug": "cci-with-divergence-auto-tf-settings-capsule-academy",
+      "title": "CCI With Divergence Auto Tf Settings Capsule Academy Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "delta-divergence",
-      "title": "Delta Divergence Review \u2014 Volume Indicator",
-      "rating": 3,
+      "slug": "chande-momentum-oscillator-divergence",
+      "title": "Chande Momentum Oscillator Divergence Review \u2014 Momentum",
+      "rating": 4,
       "score": 9.0
     }
   ],
