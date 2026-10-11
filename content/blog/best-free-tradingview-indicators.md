@@ -22,6 +22,21 @@ We went through our full archive of 558 reviews and selected the top performers 
 
 > **Want to test these on live charts right now?** TradingView's free plan covers everything below. For multi-chart setups, unlimited indicators, and no ads, [upgrade to Pro](https://www.tradingview.com/?aff_id=166324) — $15 off your first month with our link.
 
+<div class="blog-affiliate-inline" style="margin: 1.75rem 0; padding: 1.25rem 1.5rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(59,130,246,0.06) 100%); border: 2px solid #3b82f6; border-radius: var(--radius-lg);">
+<p style="margin:0 0 .5rem;font-weight:700;font-size:1.2rem;">🔬 Free is a great start — but which one is firing today?</p>
+<p style="margin:0 0 1rem;color:var(--text-secondary);line-height:1.6;">Free indicators give you the toolkit. The harder question is which of them actually agree <em>right now</em>. The Lab Report reads <strong>123 indicators across 20 markets every 15 minutes</strong> and sends one consensus verdict — so you stop guessing which free script to trust today.</p>
+<p style="margin:0;display:flex;gap:.6rem;flex-wrap:wrap;">
+<a href="https://buy.stripe.com/9B64grdGmeWggu2fLbaAw0m"
+   data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$149/mo" data-umami-event-placement="blog-above-fold"
+   onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-free-tradingview-indicators',placement:'blog-above-fold'});"
+   style="display:inline-block;background:#3b82f6;color:#fff;font-weight:700;padding:11px 22px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">Start 7-day free trial →</a>
+<a href="https://www.tradingview.com/?aff_id=166324"
+   onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_tradingview',{target:'tradingview',review:'best-free-tradingview-indicators',placement:'blog-above-fold'});"
+   target="_blank" rel="noopener"
+   style="display:inline-block;border:1px solid var(--card-border);color:var(--text);font-weight:600;padding:10px 22px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">Try TradingView Free →</a>
+</p>
+</div>
+
 ---
 
 ## The List
