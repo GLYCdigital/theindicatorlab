@@ -4323,6 +4323,12 @@
       "score": 13.0
     },
     {
+      "slug": "obv-pivot-divergence-nephilis",
+      "title": "OBV Pivot Divergence Nephilis Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -4331,12 +4337,6 @@
     {
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -19135,6 +19135,32 @@
       "score": 9.0
     }
   ],
+  "obv-pivot-divergence-nephilis": [
+    {
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "obv-divergence",
+      "title": "OBV Divergence Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "obv-simple": [
     {
       "slug": "accumulation-distribution",
@@ -21031,6 +21057,32 @@
       "title": "VWAP Sigma Bands Y Algo Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "power-surge-bb-momentum-squeeze-release": [
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-band-scalping",
+      "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-b",
+      "title": "Bollinger Bands B Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "ppo-divergence": [
