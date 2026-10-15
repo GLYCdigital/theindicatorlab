@@ -1579,8 +1579,8 @@
       "score": 13.0
     },
     {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
       "rating": 4,
       "score": 9.0
     }
@@ -3029,14 +3029,14 @@
       "score": 5.0
     },
     {
-      "slug": "institutional-order-flow",
-      "title": "Institutional Order Flow Review \u2014 Volume Indicator",
+      "slug": "ichimoku-cloud-axealgo",
+      "title": "Ichimoku Cloud Axealgo Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "kalman-auction-ribbon",
-      "title": "Kalman Auction Ribbon Review \u2014 Trend Indicator",
+      "slug": "institutional-order-flow",
+      "title": "Institutional Order Flow Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -6675,8 +6675,8 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -8209,10 +8209,10 @@
       "score": 9.0
     },
     {
-      "slug": "bitcoin-superflip-supertrend-ema-trend-following-strategy",
-      "title": "Bitcoin Superflip Supertrend EMA Trend Following Strategy Review",
+      "slug": "wiselywealth-ema-rsi-smart-money-zone-tracker",
+      "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
       "rating": 4,
-      "score": 7.5
+      "score": 9.0
     }
   ],
   "ema-ribbon": [
@@ -8255,16 +8255,16 @@
       "score": 13.0
     },
     {
+      "slug": "wiselywealth-ema-rsi-smart-money-zone-tracker",
+      "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
       "score": 9.8
-    },
-    {
-      "slug": "vervoortcrossover-zero-lag-npr21",
-      "title": "Vervoortcrossover Zero Lag Npr21 Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.4
     }
   ],
   "ema-supertrend-obv-strixedge": [
@@ -8577,6 +8577,32 @@
       "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "ew-bottom-signals-indicator-version": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "ewo-rsi-signals-strategy-exhaustion-filter": [
@@ -8905,14 +8931,14 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
     }
@@ -10583,6 +10609,12 @@
   ],
   "gideons-gold-adx-watchman": [
     {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
       "rating": 4,
@@ -10597,12 +10629,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -10823,6 +10849,12 @@
       "score": 13.0
     },
     {
+      "slug": "wiselywealth-ema-rsi-smart-money-zone-tracker",
+      "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "aj-ict-smc",
       "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -10831,12 +10863,6 @@
     {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "bollinger-bands-rsi-combo",
-      "title": "Bollinger Bands RSI Combo Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -12141,10 +12167,16 @@
       "score": 12.0
     }
   ],
-  "ichimoku-cloud-components": [
+  "ichimoku-cloud-axealgo": [
     {
       "slug": "ichimoku-chikou-span",
       "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-components",
+      "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     },
@@ -12159,11 +12191,31 @@
       "title": "Ichimoku Cloud Review \u2014 Trend Indicator",
       "rating": 3,
       "score": 9.0
+    }
+  ],
+  "ichimoku-cloud-components": [
+    {
+      "slug": "ichimoku-chikou-span",
+      "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     },
     {
-      "slug": "ichimoku-kijun-sen",
-      "title": "Ichimoku Kijun Sen Review \u2014 Trend Indicator",
+      "slug": "ichimoku-cloud-axealgo",
+      "title": "Ichimoku Cloud Axealgo Review \u2014 Trend Indicator",
       "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-spans",
+      "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud",
+      "title": "Ichimoku Cloud Review \u2014 Trend Indicator",
+      "rating": 3,
       "score": 9.0
     }
   ],
@@ -12305,6 +12357,12 @@
       "score": 9.0
     },
     {
+      "slug": "ichimoku-cloud-axealgo",
+      "title": "Ichimoku Cloud Axealgo Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ichimoku-cloud-components",
       "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
       "rating": 4,
@@ -12314,12 +12372,6 @@
       "slug": "ichimoku-cloud-spans",
       "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-cloud",
-      "title": "Ichimoku Cloud Review \u2014 Trend Indicator",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -13377,14 +13429,14 @@
       "score": 12.0
     },
     {
-      "slug": "ehlers-laguerre-filter",
-      "title": "Ehlers Laguerre Filter Review \u2014 Trend Indicator",
+      "slug": "bollinger-bands-with-ema",
+      "title": "Bollinger Bands With EMA Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 12.0
     },
     {
-      "slug": "exponential-moving-average-ema",
-      "title": "Exponential Moving Average EMA Review \u2014 Trend Indicator",
+      "slug": "ehlers-laguerre-filter",
+      "title": "Ehlers Laguerre Filter Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -17011,6 +17063,12 @@
       "score": 9.0
     },
     {
+      "slug": "ichimoku-cloud-axealgo",
+      "title": "Ichimoku Cloud Axealgo Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ichimoku-cloud-components",
       "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
       "rating": 4,
@@ -17020,12 +17078,6 @@
       "slug": "ichimoku-cloud-spans",
       "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-cloud",
-      "title": "Ichimoku Cloud Review \u2014 Trend Indicator",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -19042,13 +19094,13 @@
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 7.4
+      "score": 7.5
     },
     {
       "slug": "obv-mtf",
       "title": "OBV MTF Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.4
+      "score": 7.5
     },
     {
       "slug": "mfi-mtf",
@@ -20599,20 +20651,20 @@
       "score": 8.0
     },
     {
-      "slug": "ai-source-switching-moving-average",
-      "title": "AI Source Switching Moving Average Review \u2014 Trend Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "anchored-vwap",
-      "title": "Anchored VWAP Review \u2014 Volume Indicator",
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "andrews-pitchfork",
-      "title": "Andrews Pitchfork Review \u2014 Trend Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
     }
@@ -20697,6 +20749,12 @@
   ],
   "pivot-points-standard": [
     {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 16.0
+    },
+    {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -20713,12 +20771,6 @@
       "title": "Fractal Chaos Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 16.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 15.9
     }
   ],
   "pivot-points-woodie": [
@@ -21235,8 +21287,8 @@
       "score": 8.0
     },
     {
-      "slug": "adxr",
-      "title": "ADXR Review \u2014 Trend Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
     }
@@ -23063,6 +23115,12 @@
   ],
   "robust-regression-residual-bands-pineify": [
     {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -23077,12 +23135,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23222,7 +23274,7 @@
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
       "rating": 4,
-      "score": 9.8
+      "score": 9.7
     },
     {
       "slug": "bolinger-bands-range-rsi-oscillator",
@@ -23679,8 +23731,8 @@
       "score": 9.0
     },
     {
-      "slug": "center-of-gravity-cog-oscillator",
-      "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
+      "slug": "cardwell-rsi-trade-navigator",
+      "title": "Cardwell RSI Trade Navigator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24043,8 +24095,8 @@
       "score": 8.0
     },
     {
-      "slug": "alma-moving-average",
-      "title": "Alma Moving Average Review \u2014 Trend Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
     }
@@ -25126,7 +25178,7 @@
       "slug": "quant-confluence-engine",
       "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.6
+      "score": 12.7
     },
     {
       "slug": "strong-fu-candle",
@@ -31077,6 +31129,12 @@
       "score": 9.0
     },
     {
+      "slug": "double-exponential-moving-average-dema",
+      "title": "Double Exponential Moving Average DEMA Review \u2014 Trend",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "dual-phase-reversal-by-dgt",
       "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
       "rating": 4,
@@ -31085,12 +31143,6 @@
     {
       "slug": "ease-of-movement-ma",
       "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ehlers-laguerre-filter",
-      "title": "Ehlers Laguerre Filter Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -32289,6 +32341,32 @@
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "wiselywealth-ema-rsi-smart-money-zone-tracker": [
+    {
+      "slug": "ema-rsi-vwap-targets",
+      "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs Volcano RSI Liquidity Thermal Map Bit2billions Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "wolfe-waves": [
