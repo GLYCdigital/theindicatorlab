@@ -1,6 +1,6 @@
 ---
 title: "CVD Backtest Results"
-date: 2026-10-10
+date: 2026-10-17
 draft: false
 type: backtests
 description: "All 5 asset backtests for the CVD indicator. Sorted by Sharpe ratio."
@@ -25,18 +25,18 @@ description: "All 5 asset backtests for the CVD indicator. Sorted by Sharpe rati
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+61.4%</td><td>10.1%</td><td>0.43</td><td>26.4%</td><td>44.2%</td><td>1.65</td><td>52</td></tr>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+37.1%</td><td>6.5%</td><td>0.29</td><td>18.5%</td><td>29.6%</td><td>1.34</td><td>71</td></tr>
-<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+23.6%</td><td>4.3%</td><td>0.22</td><td>49.9%</td><td>23.8%</td><td>1.12</td><td>101</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>+44.8%</td><td>7.7%</td><td>0.32</td><td>26.4%</td><td>43.1%</td><td>1.50</td><td>51</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+31.3%</td><td>5.6%</td><td>0.24</td><td>18.5%</td><td>29.6%</td><td>1.33</td><td>71</td></tr>
+<tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+27.3%</td><td>4.9%</td><td>0.23</td><td>49.9%</td><td>24.0%</td><td>1.13</td><td>100</td></tr>
 <tr><td>🟡 <a href="/backtests/cvd-divergence-alerts-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+9.8%</td><td>1.9%</td><td>0.07</td><td>44.0%</td><td>20.7%</td><td>1.04</td><td>92</td></tr>
-<tr><td>🔴 <a href="/backtests/cvd-divergence-alerts-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+8.5%</td><td>1.7%</td><td>-0.00</td><td>21.0%</td><td>37.7%</td><td>1.11</td><td>69</td></tr>
+<tr><td>🔴 <a href="/backtests/cvd-divergence-alerts-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+5.4%</td><td>1.1%</td><td>-0.05</td><td>21.0%</td><td>37.1%</td><td>1.10</td><td>70</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: October 10, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: October 17, 2026</p>
 
   </div>
 </article>

@@ -1,10 +1,10 @@
 ---
 {
   "title": "Stochastic \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.2%",
+      "return_pct": "+6.9%",
       "trades": "4",
       "win_rate_pct": "41.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+22.9%",
+      "return_pct": "+16.5%",
       "trades": "27",
       "win_rate_pct": "41.8%"
     }
@@ -109,7 +109,7 @@ On QQQ, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-11 → 2026-10-09), the Stochastic Crossover delivered a **-41.0% total return** on QQQ, compounding at **-10.0% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the Stochastic Crossover delivered a **-41.0% total return** on QQQ, compounding at **-10.0% annually**. 
 
 At **-0.57**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on QQQ](/backtests/stochastic-crossover-qqq-trades.png)

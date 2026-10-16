@@ -1,10 +1,10 @@
 ---
 {
   "title": "Volume \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+33.4%",
+      "return_pct": "+21.5%",
       "trades": "0",
       "win_rate_pct": "40.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-12.5%",
+      "return_pct": "-19.3%",
       "trades": "1",
       "win_rate_pct": "40.0%"
     }
@@ -109,7 +109,7 @@ On TSLA, the Volume acts as a trend filter. It won't catch every exact bottom, b
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-10-11 → 2026-10-09), the Volume Spike Breakout delivered a **+1.0% total return** on TSLA, compounding at **0.2% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the Volume Spike Breakout delivered a **+1.0% total return** on TSLA, compounding at **0.2% annually**. 
 
 At **-0.44**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on TSLA](/backtests/volume-spike-breakout-tsla-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+27.7%"
+      "value": "+22.3%"
     },
     {
       "label": "CAGR",
-      "value": "5.0%"
+      "value": "4.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.21"
+      "value": "0.16"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.2%",
+      "return_pct": "+6.9%",
       "trades": "5",
       "win_rate_pct": "27.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+22.9%",
+      "return_pct": "+16.5%",
       "trades": "13",
       "win_rate_pct": "27.1%"
     }
@@ -109,9 +109,9 @@ On QQQ, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-11 → 2026-10-09), the Donchian Channel Breakout delivered a **+27.7% total return** on QQQ, compounding at **5.0% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the Donchian Channel Breakout delivered a **+22.3% total return** on QQQ, compounding at **4.1% annually**. 
 
-At **0.21**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.16**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **28.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 29% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **28.9% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.21 | ❌ Weak |
+| Sharpe Ratio | 0.16 | ❌ Weak |
 | Max Drawdown | 28.9% | ⚠️ Moderate |
 | Win Rate | 27.1% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.25 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.25** tells the real story: when the Donchian fires, the
 
 ## Does the Donchian Channel Breakout Work on QQQ?
 
-The donchian channel breakout struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.21 Sharpe ratio** and **1.25 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.16 Sharpe ratio** and **1.25 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on QQQ](/backtests/donchian-channel-breakout-qqq-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "SuperTrend \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-26.6%"
+      "value": "-33.4%"
     },
     {
       "label": "CAGR",
-      "value": "-6.0%"
+      "value": "-7.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.35"
+      "value": "-0.46"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "43.5%"
+      "value": "43.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.86"
+      "value": "0.83"
     },
     {
       "label": "Total Trades",
-      "value": "301"
+      "value": "302"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+11.2%",
-      "trades": "12",
-      "win_rate_pct": "43.5%"
+      "return_pct": "+6.9%",
+      "trades": "10",
+      "win_rate_pct": "43.0%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "58",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "43.0%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "63",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "43.0%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "58",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "43.0%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "65",
-      "win_rate_pct": "43.5%"
+      "win_rate_pct": "43.0%"
     },
     {
       "year": "2026",
-      "return_pct": "+22.9%",
-      "trades": "45",
-      "win_rate_pct": "43.5%"
+      "return_pct": "+16.5%",
+      "trades": "48",
+      "win_rate_pct": "43.0%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On QQQ, the SuperTrend acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-11 → 2026-10-09), the SuperTrend + ATR Trailing Stop delivered a **-26.6% total return** on QQQ, compounding at **-6.0% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the SuperTrend + ATR Trailing Stop delivered a **-33.4% total return** on QQQ, compounding at **-7.8% annually**. 
 
-At **-0.35**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.46**, the SuperTrend earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **35.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 36% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **35.9% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.35 | ❌ Weak |
+| Sharpe Ratio | -0.46 | ❌ Weak |
 | Max Drawdown | 35.9% | ⚠️ Significant |
-| Win Rate | 43.5% | ⚠️ Below average |
-| Profit Factor | 0.86 | ❌ Unprofitable |
-| Trades/Year | ~301 total | Active |
+| Win Rate | 43.0% | ⚠️ Below average |
+| Profit Factor | 0.83 | ❌ Unprofitable |
+| Trades/Year | ~302 total | Active |
 
-The **profit factor of 0.86** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 43.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.83** tells the real story: when the SuperTrend fires, the winning signals don't outweigh the losers. Combined with a 43.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the SuperTrend + ATR Trailing Stop Work on QQQ?
 
-The supertrend + atr trailing stop struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.35 Sharpe ratio** and **0.86 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The supertrend + atr trailing stop struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.46 Sharpe ratio** and **0.83 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SuperTrend is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![SuperTrend + ATR Trailing Stop — Trade Signals on QQQ](/backtests/supertrend-atr-trailing-stop-qqq-trades.png)

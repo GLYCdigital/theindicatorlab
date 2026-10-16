@@ -1,38 +1,38 @@
 ---
 {
   "title": "SAR \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-35.1%"
+      "value": "-32.1%"
     },
     {
       "label": "CAGR",
-      "value": "-8.3%"
+      "value": "-7.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.08"
+      "value": "-0.07"
     },
     {
       "label": "Max Drawdown",
-      "value": "65.3%"
+      "value": "60.9%"
     },
     {
       "label": "Win Rate",
-      "value": "34.2%"
+      "value": "33.3%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.79"
+      "value": "0.81"
     },
     {
       "label": "Total Trades",
-      "value": "76"
+      "value": "75"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-19.4%",
-      "trades": "4",
-      "win_rate_pct": "34.2%"
+      "return_pct": "-25.3%",
+      "trades": "3",
+      "win_rate_pct": "33.3%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "14",
-      "win_rate_pct": "34.2%"
+      "win_rate_pct": "33.3%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "16",
-      "win_rate_pct": "34.2%"
+      "win_rate_pct": "33.3%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "16",
-      "win_rate_pct": "34.2%"
+      "win_rate_pct": "33.3%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "14",
-      "win_rate_pct": "34.2%"
+      "win_rate_pct": "33.3%"
     },
     {
       "year": "2026",
-      "return_pct": "-6.9%",
+      "return_pct": "-8.6%",
       "trades": "12",
-      "win_rate_pct": "34.2%"
+      "win_rate_pct": "33.3%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,27 +109,27 @@ On BTC, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-11 → 2026-10-09), the Parabolic SAR delivered a **-35.1% total return** on BTC-USD, compounding at **-8.3% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the Parabolic SAR delivered a **-32.1% total return** on BTC-USD, compounding at **-7.4% annually**. 
 
-At **-0.08**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.07**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **65.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 65% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **60.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 61% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.08 | ❌ Weak |
-| Max Drawdown | 65.3% | ⚠️ Significant |
-| Win Rate | 34.2% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.79 | ❌ Unprofitable |
-| Trades/Year | ~76 total | Active |
+| Sharpe Ratio | -0.07 | ❌ Weak |
+| Max Drawdown | 60.9% | ⚠️ Significant |
+| Win Rate | 33.3% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.81 | ❌ Unprofitable |
+| Trades/Year | ~75 total | Active |
 
-The **profit factor of 0.79** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 34.2% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.81** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on BTC?
 
-The parabolic sar struggled to generate meaningful edge on BTC over this 5-year period. With a **-0.08 Sharpe ratio** and **0.79 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on BTC over this 5-year period. With a **-0.07 Sharpe ratio** and **0.81 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on BTC-USD](/backtests/parabolic-sar-btc-usd-trades.png)

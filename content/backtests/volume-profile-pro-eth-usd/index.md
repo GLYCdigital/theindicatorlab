@@ -1,10 +1,10 @@
 ---
 {
   "title": "VWAP \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+3.9%",
+      "return_pct": "-1.8%",
       "trades": "6",
       "win_rate_pct": "22.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-17.1%",
+      "return_pct": "-19.7%",
       "trades": "15",
       "win_rate_pct": "22.5%"
     }
@@ -109,7 +109,7 @@ On ETH, the VWAP acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-10-11 → 2026-10-09), the Volume Profile Pro delivered a **+80.4% total return** on ETH-USD, compounding at **12.5% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the Volume Profile Pro delivered a **+80.4% total return** on ETH-USD, compounding at **12.5% annually**. 
 
 At **0.42**, the VWAP earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Profile Pro — Trade Signals on ETH-USD](/backtests/volume-profile-pro-eth-usd-trades.png)

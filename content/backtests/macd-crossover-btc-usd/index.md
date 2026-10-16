@@ -1,10 +1,10 @@
 ---
 {
   "title": "MACD \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-11 \u2192 2026-10-09",
+  "period": "2021-10-18 \u2192 2026-10-16",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-19.4%",
+      "return_pct": "-25.3%",
       "trades": "1",
       "win_rate_pct": "33.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-6.9%",
+      "return_pct": "-8.6%",
       "trades": "11",
       "win_rate_pct": "33.8%"
     }
@@ -109,7 +109,7 @@ On BTC, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-11 → 2026-10-09), the MACD Crossover delivered a **+45.1% total return** on BTC-USD, compounding at **7.7% annually**. 
+Over five years (2021-10-18 → 2026-10-16), the MACD Crossover delivered a **+45.1% total return** on BTC-USD, compounding at **7.7% annually**. 
 
 At **0.29**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 10, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on BTC-USD](/backtests/macd-crossover-btc-usd-trades.png)
