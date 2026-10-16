@@ -4829,8 +4829,8 @@
       "score": 9.0
     },
     {
-      "slug": "ict-smart-money-execution-engine",
-      "title": "ICT Smart Money Execution Engine Review \u2014 Market Structure",
+      "slug": "ict-market-structure-breaks-ob-retest-jpt",
+      "title": "ICT Market Structure Breaks Ob Retest Jpt Review",
       "rating": 4,
       "score": 9.0
     }
@@ -5230,13 +5230,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 8.0
+      "score": 8.1
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 8.0
+      "score": 8.1
     },
     {
       "slug": "1-trendline-strategy",
@@ -8191,6 +8191,12 @@
   ],
   "ema-pinch-ladder-algonorth": [
     {
+      "slug": "ict-market-structure-breaks-ob-retest-jpt",
+      "title": "ICT Market Structure Breaks Ob Retest Jpt Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "moving-average-envelope",
       "title": "Moving Average Envelope Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -8205,12 +8211,6 @@
     {
       "slug": "tertiary-pivot-structural-zones",
       "title": "Tertiary Pivot Structural Zones Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wiselywealth-ema-rsi-smart-money-zone-tracker",
-      "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
       "rating": 4,
       "score": 9.0
     }
@@ -11959,6 +11959,32 @@
       "score": 8.0
     }
   ],
+  "hull-market-structure-boswaves": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "hull-moving-average-hma": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
@@ -12555,6 +12581,32 @@
       "title": "Asian Session Levels Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "ict-market-structure-breaks-ob-retest-jpt": [
+    {
+      "slug": "wiselywealth-ema-rsi-smart-money-zone-tracker",
+      "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "ict-sessions-killzones": [
@@ -16297,6 +16349,32 @@
     {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "market-structure-accurate-cantolab": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alt-bat-pattern",
+      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "amd-structure-map-axealgo",
+      "title": "Amd Structure Map Axealgo Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -26556,13 +26634,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 14.8
+      "score": 14.9
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 14.8
+      "score": 14.9
     },
     {
       "slug": "center-of-gravity-cog-oscillator",
@@ -31121,6 +31199,32 @@
       "score": 9.0
     }
   ],
+  "volume-vault-volume-order-block-retest-strategy": [
+    {
+      "slug": "atr-fibonacci-expansion-zones",
+      "title": "ATR Fibonacci Expansion Zones Review \u2014 Momentum Indicator",
+      "rating": 3,
+      "score": 9.0
+    },
+    {
+      "slug": "bitcoin-superflip-supertrend-ema-trend-following-strategy",
+      "title": "Bitcoin Superflip Supertrend EMA Trend Following Strategy Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "keltner-channel-trend-smc-liquidity-sweep",
+      "title": "Keltner Channel Trend SMC Liquidity Sweep Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "squeeze-pro",
+      "title": "Squeeze Pro Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "volume-weighted-ma-ribbon": [
     {
       "slug": "bollinger-bands-with-ema",
@@ -32357,14 +32461,14 @@
       "score": 13.0
     },
     {
-      "slug": "3-candle-sweep-maximopartners",
-      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "slug": "ict-market-structure-breaks-ob-retest-jpt",
+      "title": "ICT Market Structure Breaks Ob Retest Jpt Review",
       "rating": 4,
-      "score": 9.0
+      "score": 13.0
     },
     {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
