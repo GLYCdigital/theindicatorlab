@@ -16405,6 +16405,32 @@
       "score": 5.0
     }
   ],
+  "market-structure-coach-hh-hl-lh-ll-bos-and-choch-explained": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "market-structure-engine-0": [
     {
       "slug": "absorption-detection",
@@ -21841,6 +21867,12 @@
   ],
   "pullback-sniper-method": [
     {
+      "slug": "bollinger-bands",
+      "title": "Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 5,
+      "score": 8.0
+    },
+    {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
@@ -21855,12 +21887,6 @@
     {
       "slug": "candle-pressure-flip-engine",
       "title": "Candle Pressure Flip Engine Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "candlestick-patterns",
-      "title": "Candlestick Patterns Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 8.0
     }
