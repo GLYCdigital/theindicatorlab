@@ -1,5 +1,11 @@
 baseURL = "https://theindicatorlab.com"
 locale = "en-US"
+# Reviews are published overnight and stamped with the SGT calendar date.
+# Without an explicit timezone Hugo interprets "2026-10-18" as 00:00 UTC, which
+# is still in the FUTURE when the GitHub Action builds at 18:00 UTC the evening
+# before -> buildFuture=false silently drops the page and the review 404s until
+# the next day's deploy. (10 reviews were invisible on 2026-10-18 because of this.)
+timeZone = "Asia/Singapore"
 title = "The Indicator Lab"
 theme = "stack"
 

@@ -1,6 +1,6 @@
 ---
 title: "Apex Algo Engine Algochief Review — Trend Indicator"
-date: 2026-10-18
+date: 2026-10-18T00:00:00+08:00
 draft: false
 type: reviews
 image: "/screenshots/apex-algo-engine-algochief.png"

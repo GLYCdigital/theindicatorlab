@@ -1,6 +1,6 @@
 ---
 title: "Probability Staircase Trend Engine Phenlabs Review — Trend"
-date: 2026-10-18
+date: 2026-10-18T00:00:00+08:00
 draft: false
 type: reviews
 image: "/screenshots/probability-staircase-trend-engine-phenlabs.png"

@@ -1,6 +1,6 @@
 ---
 title: "Market Structure Coach Hh Hl Lh Ll BOS And CHOCH Explained Review"
-date: 2026-10-18
+date: 2026-10-18T00:00:00+08:00
 draft: false
 type: reviews
 image: "/screenshots/market-structure-coach-hh-hl-lh-ll-bos-and-choch-explained.png"

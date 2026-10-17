@@ -1,6 +1,6 @@
 ---
 title: "FVG Order Block Toolkit Forexcracked Review"
-date: 2026-10-18
+date: 2026-10-18T00:00:00+08:00
 draft: false
 type: reviews
 image: "/screenshots/fvg-order-block-toolkit-forexcracked.png"
