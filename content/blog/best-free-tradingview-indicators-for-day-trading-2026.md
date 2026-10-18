@@ -78,6 +78,15 @@ You don't need paid scripts to day trade well. You need one indicator per role, 
 
 Related reads: [VWAP review](/reviews/vwap/) · [Volume Profile review](/reviews/volume-profile/) · [ATR review](/reviews/atr/) · [RSI review](/reviews/relative-strength-index-rsi/) · [Opening Range Breakout review](/reviews/opening-range-breakout/)
 
+<div class="blog-labreport-cta" style="margin:1.75rem 0;padding:1.4rem 1.5rem;background:linear-gradient(135deg,var(--card-bg) 0%,rgba(59,130,246,0.06) 100%);border:2px solid #3b82f6;border-radius:var(--radius-lg);">
+<p style="margin:0 0 .5rem;font-weight:700;font-size:1.25rem;">🔬 Five indicators, five jobs — checked across 20 markets.</p>
+<p style="margin:0 0 1rem;color:var(--text-secondary);line-height:1.6;">You just built the right five-slot layout. The hard part is the sixth question: do those five still agree tomorrow morning? The Lab Report runs <strong>123 indicators across 20 markets</strong>, tallies the consensus every 15 minutes and sends one verdict to your phone. Prefer weekly position signals? <strong>The Lab Edge</strong> covers time-series momentum across 166 markets. <strong>7-day free trial</strong> on the Lab Report, cancel anytime.</p>
+<p style="margin:0;display:flex;gap:.6rem;flex-wrap:wrap;">
+<a href="https://buy.stripe.com/9B64grdGmeWggu2fLbaAw0m" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$149/mo" data-umami-event-placement="blog-inline" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-free-tradingview-indicators-for-day-trading-2026',placement:'blog-inline'});" style="display:inline-block;background:#3b82f6;color:#fff;font-weight:700;padding:11px 24px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">Start 7-day free trial → $149/mo</a>
+<a href="/lab-edge/" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-edge',{target:'lab-edge',review:'best-free-tradingview-indicators-for-day-trading-2026',placement:'blog-inline'});" style="display:inline-block;border:1px solid var(--card-border);color:var(--text);font-weight:600;padding:10px 22px;border-radius:var(--radius);text-decoration:none;font-size:1.05rem;">The Lab Edge →</a>
+</p>
+</div>
+
 ---
 
 *All indicators reviewed on live TradingView charts. Running several indicators on one intraday layout works best on a plan that supports multiple indicators per chart — [compare TradingView plans here](https://www.tradingview.com/?aff_id=166324).*
