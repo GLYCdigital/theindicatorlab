@@ -513,8 +513,8 @@
       "score": 12.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -885,6 +885,12 @@
   ],
   "adaptive-trend-lines": [
     {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -899,12 +905,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -5563,6 +5563,32 @@
       "score": 9.0
     }
   ],
+  "crt-turtle-soup-with-htf-candles-cisd-and-mss": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "ctz-bitcoin-cycle-master": [
     {
       "slug": "1-trendline-strategy",
@@ -6585,6 +6611,12 @@
       "score": 9.0
     },
     {
+      "slug": "harmonic-pulse-xabcd-fibonacci-pattern-strategy",
+      "title": "Harmonic Pulse Xabcd Fibonacci Pattern Strategy Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "harmonic-rsi-reversal-scanner-dual-wave",
       "title": "Harmonic RSI Reversal Scanner Dual Wave Review \u2014 Momentum",
       "rating": 4,
@@ -6595,12 +6627,6 @@
       "title": "Three Drives Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "sattam-harmonic-lab",
-      "title": "Sattam Harmonic Lab Review \u2014 Chart Pattern Indicator",
-      "rating": 4,
-      "score": 8.8
     }
   ],
   "donchian-breakout": [
@@ -6819,6 +6845,12 @@
       "score": 8.0
     },
     {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
       "rating": 4,
@@ -6827,12 +6859,6 @@
     {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -7475,14 +7501,14 @@
       "score": 8.0
     },
     {
-      "slug": "aroon-oscillator",
-      "title": "Aroon Oscillator Review \u2014 Momentum Indicator",
+      "slug": "anomaly-detection-indicator",
+      "title": "Anomaly Detection Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "aroon-oscillator",
+      "title": "Aroon Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -11179,6 +11205,32 @@
       "score": 12.0
     }
   ],
+  "harmonic-pulse-xabcd-fibonacci-pattern-strategy": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "alt-bat-pattern",
+      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "auto-harmonic-patterns-afd",
+      "title": "Auto Harmonic Patterns Afd Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bat-pattern",
+      "title": "Bat Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "harmonic-rsi-reversal-scanner-dual-wave": [
     {
       "slug": "abcd-pattern",
@@ -12141,6 +12193,32 @@
       "score": 8.0
     }
   ],
+  "hvn-fade-break-volume-profile-fade-breakout-strategy": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bfg-profil3d",
+      "title": "Bfg Profil3d Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "buyers-sellers-profile-dynamic-s-r",
+      "title": "Buyers Sellers Profile Dynamic Sr Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "candelacharts-value-area-reversals",
+      "title": "Candelacharts Value Area Reversals Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "ib-orb-live-stats": [
     {
       "slug": "1-trendline-strategy",
@@ -12657,6 +12735,32 @@
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "ict-pd-arrays-lunqfx-fvg-displacement-smart-money-zones": [
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-blocks",
+      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14281,6 +14385,12 @@
       "score": 8.0
     },
     {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -14289,12 +14399,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -19314,7 +19418,7 @@
       "slug": "mfi-mtf",
       "title": "MFI MTF Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 7.2
+      "score": 7.1
     }
   ],
   "obv-divergence": [
@@ -21655,6 +21759,32 @@
       "title": "Alligator Bill Williams Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "price-action-bands-trend-volatility-radixalgo": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "price-action-structure": [
@@ -24101,6 +24231,32 @@
       "score": 9.0
     }
   ],
+  "rsi-trendlines-and-divergences-with-alerts": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bolinger-bands-range-rsi-oscillator",
+      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "rsi-with-ob-os-zones": [
     {
       "slug": "artemis-adaptive-rsi",
@@ -25167,6 +25323,32 @@
       "score": 12.0
     }
   ],
+  "smart-money-concept-ml-pickmytrade": [
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-pd-arrays-lunqfx-fvg-displacement-smart-money-zones",
+      "title": "ICT Pd Arrays Lunqfx FVG Displacement Smart Money Zones Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-smart-money-execution-engine",
+      "title": "ICT Smart Money Execution Engine Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-shift-detection-lsd",
+      "title": "Liquidity Shift Detection Lsd Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "smart-money-concepts-axealgo": [
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
@@ -25496,13 +25678,13 @@
       "slug": "strong-fu-candle",
       "title": "Strong Fu Candle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.2
+      "score": 12.1
     },
     {
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.9
+      "score": 10.8
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -26862,7 +27044,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 15.2
+      "score": 15.1
     },
     {
       "slug": "rsi-macd-combo",
@@ -29743,6 +29925,32 @@
       "score": 12.0
     }
   ],
+  "true-low-high-swing-day-trading-scalping-structure": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 5.0
+    }
+  ],
   "true-range-tr": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -30053,6 +30261,32 @@
       "title": "ATR Raw Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "ultimate-market-structure-auto-entry-system": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "ultimate-momentum-oscillator": [
