@@ -961,6 +961,32 @@
       "score": 5.0
     }
   ],
+  "advanced-swing-volume-frequency-profile-bigbeluga": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "adx-average-directional-index": [
     {
       "slug": "acceleration-deceleration-ac-oscillator",
@@ -981,8 +1007,8 @@
       "score": 8.0
     },
     {
-      "slug": "adx-divergence",
-      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -3861,14 +3887,14 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "gap-digga",
-      "title": "Gap Digga Review \u2014 Trend Indicator",
+      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
+      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
       "rating": 4,
       "score": 9.0
     }
@@ -4953,14 +4979,14 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -5015,6 +5041,32 @@
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "cloud-pro-ichimoku-confluence": [
+    {
+      "slug": "ichimoku-chikou-span",
+      "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-axealgo",
+      "title": "Ichimoku Cloud Axealgo Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-components",
+      "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-spans",
+      "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "cluster-analysis": [
@@ -5256,13 +5308,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 8.1
+      "score": 8.2
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 8.1
+      "score": 8.2
     },
     {
       "slug": "1-trendline-strategy",
@@ -5519,6 +5571,12 @@
       "score": 9.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-cloud-phantomcipher",
       "title": "EMA Cloud Phantomcipher Review \u2014 Trend Indicator",
       "rating": 4,
@@ -5527,12 +5585,6 @@
     {
       "slug": "ema-cross-signal",
       "title": "EMA Cross Signal Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cross",
-      "title": "EMA Cross Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8059,6 +8111,32 @@
       "score": 12.0
     }
   ],
+  "ema-21-macd-rsi-alma": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "multi-timeframe-multi-indicator-dashboard",
+      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "quant-confluence-engine",
+      "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "random-forest-ai-rsi-macd-confluence-dots3red",
+      "title": "Random Forest AI RSI MACD Confluence Dots3red Review",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "ema-cloud-phantomcipher": [
     {
       "slug": "alma-arnaud-legoux",
@@ -8171,6 +8249,12 @@
       "score": 9.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-cross-signal",
       "title": "EMA Cross Signal Review \u2014 Trend Indicator",
       "rating": 4,
@@ -8179,12 +8263,6 @@
     {
       "slug": "ema-cross",
       "title": "EMA Cross Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "jurik-moving-average-jma",
-      "title": "Jurik Moving Average Jma Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8287,8 +8365,8 @@
       "score": 12.0
     },
     {
-      "slug": "ema-crossover",
-      "title": "EMA Crossover Review \u2014 Trend Indicator",
+      "slug": "ema-cross",
+      "title": "EMA Cross Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -9561,8 +9639,8 @@
       "score": 9.0
     },
     {
-      "slug": "ha-macd-nemesis",
-      "title": "Ha MACD Nemesis Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -10306,7 +10384,7 @@
       "slug": "perfect-squares",
       "title": "Perfect Squares Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 6.2
+      "score": 6.1
     },
     {
       "slug": "gann-fan",
@@ -12325,6 +12403,12 @@
   ],
   "ichimoku-cloud-axealgo": [
     {
+      "slug": "cloud-pro-ichimoku-confluence",
+      "title": "Cloud Pro Ichimoku Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ichimoku-chikou-span",
       "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
       "rating": 4,
@@ -12341,15 +12425,15 @@
       "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "ichimoku-cloud",
-      "title": "Ichimoku Cloud Review \u2014 Trend Indicator",
-      "rating": 3,
-      "score": 9.0
     }
   ],
   "ichimoku-cloud-components": [
+    {
+      "slug": "cloud-pro-ichimoku-confluence",
+      "title": "Cloud Pro Ichimoku Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "ichimoku-chikou-span",
       "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
@@ -12366,12 +12450,6 @@
       "slug": "ichimoku-cloud-spans",
       "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-cloud",
-      "title": "Ichimoku Cloud Review \u2014 Trend Indicator",
-      "rating": 3,
       "score": 9.0
     }
   ],
@@ -12507,6 +12585,12 @@
   ],
   "ichimoku-mtf": [
     {
+      "slug": "cloud-pro-ichimoku-confluence",
+      "title": "Cloud Pro Ichimoku Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ichimoku-chikou-span",
       "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
       "rating": 4,
@@ -12521,12 +12605,6 @@
     {
       "slug": "ichimoku-cloud-components",
       "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-cloud-spans",
-      "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -13721,8 +13799,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14375,6 +14453,32 @@
       "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "leviathan-protocol-institutional-liquidity-sweep-sniper": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "linear-regression-channel": [
@@ -15567,8 +15671,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15593,8 +15697,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15645,8 +15749,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15671,8 +15775,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15697,8 +15801,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15723,8 +15827,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -16549,14 +16653,14 @@
       "score": 5.0
     },
     {
-      "slug": "alt-bat-pattern",
-      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "amd-structure-map-axealgo",
-      "title": "Amd Structure Map Axealgo Review \u2014 Market Structure",
+      "slug": "alt-bat-pattern",
+      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -17369,6 +17473,12 @@
   ],
   "modern-ichimoku-cloud-gbb": [
     {
+      "slug": "cloud-pro-ichimoku-confluence",
+      "title": "Cloud Pro Ichimoku Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ichimoku-chikou-span",
       "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
       "rating": 4,
@@ -17383,12 +17493,6 @@
     {
       "slug": "ichimoku-cloud-components",
       "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ichimoku-cloud-spans",
-      "title": "Ichimoku Cloud Spans Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -17679,6 +17783,32 @@
       "score": 5.0
     }
   ],
+  "momentum-trade-planner-ema9-rsi-ob-fvg": [
+    {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ewo-rsi-signals-strategy-exhaustion-filter",
+      "title": "Ewo RSI Signals Strategy Exhaustion Filter Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
+      "title": "Gs Volcano RSI Liquidity Thermal Map Bit2billions Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "perfect-squares",
+      "title": "Perfect Squares Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "money-flow-index-mfi": [
     {
       "slug": "accumulation-distribution-line-adl",
@@ -17829,8 +17959,8 @@
       "score": 8.0
     },
     {
-      "slug": "adx-average-directional-index",
-      "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -18271,8 +18401,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -18609,9 +18739,9 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-ai-indicator",
-      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
       "score": 5.0
     }
   ],
@@ -19418,7 +19548,7 @@
       "slug": "mfi-mtf",
       "title": "MFI MTF Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 7.1
+      "score": 7.2
     }
   ],
   "obv-divergence": [
@@ -20539,6 +20669,32 @@
       "score": 8.0
     }
   ],
+  "patterns-strategy-v1": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "pennant-pattern": [
     {
       "slug": "1-trendline-strategy",
@@ -21495,8 +21651,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -21521,8 +21677,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -21547,8 +21703,8 @@
       "score": 9.0
     },
     {
-      "slug": "force-index-divergence",
-      "title": "Force Index Divergence Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -21807,8 +21963,8 @@
       "score": 5.0
     },
     {
-      "slug": "alt-bat-pattern",
-      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
       "rating": 4,
       "score": 5.0
     }
@@ -22171,8 +22327,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -22445,6 +22601,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -22453,12 +22615,6 @@
     {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -22705,6 +22861,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -22713,12 +22875,6 @@
     {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "quant-confluence-engine",
-      "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -23679,8 +23835,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23953,6 +24109,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -23961,12 +24123,6 @@
     {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "multi-timeframe-multi-indicator-dashboard",
-      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
     }
@@ -24083,6 +24239,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "quant-confluence-engine",
       "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
       "rating": 4,
@@ -24093,12 +24255,6 @@
       "title": "Stochastic RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "multi-timeframe-multi-indicator-dashboard",
-      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
-      "rating": 4,
-      "score": 10.9
     }
   ],
   "rsi-regular-divergence": [
@@ -24941,6 +25097,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -24949,12 +25111,6 @@
     {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "the-oloid-owma-oloid-weighted-moving-average",
-      "title": "The Oloid Owma Oloid Weighted Moving Average Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
     }
@@ -25057,8 +25213,8 @@
       "score": 5.0
     },
     {
-      "slug": "agreement-streak-analyzer-fibonacciflux",
-      "title": "Agreement Streak Analyzer Fibonacciflux Review \u2014 Momentum",
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
       "rating": 4,
       "score": 5.0
     }
@@ -25169,6 +25325,12 @@
   ],
   "sma-ribbon": [
     {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
@@ -25183,12 +25345,6 @@
     {
       "slug": "adx-smoothed",
       "title": "ADX Smoothed Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -25343,8 +25499,8 @@
       "score": 9.0
     },
     {
-      "slug": "liquidity-shift-detection-lsd",
-      "title": "Liquidity Shift Detection Lsd Review \u2014 Market Structure",
+      "slug": "leviathan-protocol-institutional-liquidity-sweep-sniper",
+      "title": "Leviathan Protocol Institutional Liquidity Sweep Sniper Review",
       "rating": 4,
       "score": 9.0
     }
@@ -25399,6 +25555,32 @@
       "title": "Liquidity Sweep Detector Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 13.0
+    }
+  ],
+  "smart-money-confluence-panel-jayadev-rana": [
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic SMC Market Structure Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-pd-arrays-lunqfx-fvg-displacement-smart-money-zones",
+      "title": "ICT Pd Arrays Lunqfx FVG Displacement Smart Money Zones Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ict-smart-money-execution-engine",
+      "title": "ICT Smart Money Execution Engine Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "smart-money-liquidation-exploits-algoalpha": [
@@ -25678,13 +25860,13 @@
       "slug": "strong-fu-candle",
       "title": "Strong Fu Candle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.1
+      "score": 12.2
     },
     {
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.8
+      "score": 10.9
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -25863,8 +26045,8 @@
       "score": 9.0
     },
     {
-      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
-      "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
+      "slug": "leviathan-protocol-institutional-liquidity-sweep-sniper",
+      "title": "Leviathan Protocol Institutional Liquidity Sweep Sniper Review",
       "rating": 4,
       "score": 9.0
     }
@@ -26475,6 +26657,12 @@
       "score": 5.0
     },
     {
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "backtesting-dashboard",
       "title": "Backtesting Dashboard Review \u2014 Trend Indicator",
       "rating": 4,
@@ -26483,12 +26671,6 @@
     {
       "slug": "bollinger-squeeze-breakout-volume",
       "title": "Bollinger Squeeze Breakout Volume Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "cycle-counter-with-phase-and-next-low-projection",
-      "title": "Cycle Counter With Phase And Next Low Projection Review",
       "rating": 4,
       "score": 5.0
     }
@@ -27044,7 +27226,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 15.1
+      "score": 15.2
     },
     {
       "slug": "rsi-macd-combo",
@@ -27420,7 +27602,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.6
+      "score": 11.7
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
@@ -27628,7 +27810,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.4
+      "score": 12.5
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -27923,6 +28105,32 @@
       "score": 5.0
     }
   ],
+  "sweep-reverse-liquidity-sweep-reversal-strategy": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "swing-anchored-vwap-deviation-pineify": [
     {
       "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
@@ -28103,6 +28311,32 @@
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "swing-volume-frequency-profile": [
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bfg-profil3d",
+      "title": "Bfg Profil3d Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "buyers-sellers-profile-dynamic-s-r",
+      "title": "Buyers Sellers Profile Dynamic Sr Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "candelacharts-value-area-reversals",
+      "title": "Candelacharts Value Area Reversals Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "t3-moving-average": [
@@ -28523,6 +28757,12 @@
   ],
   "the-oloid-owma-oloid-weighted-moving-average": [
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
@@ -28539,12 +28779,6 @@
       "title": "Volatility Ratio Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "alma-arnaud-legoux",
-      "title": "Alma Arnaud Legoux Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "the-tradegoal-9-0": [
@@ -29257,6 +29491,12 @@
       "score": 8.0
     },
     {
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
       "rating": 4,
@@ -29265,12 +29505,6 @@
     {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -29445,14 +29679,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -29985,6 +30219,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -29993,12 +30233,6 @@
     {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -30537,14 +30771,14 @@
       "score": 5.0
     },
     {
-      "slug": "alma-arnaud-legoux",
-      "title": "Alma Arnaud Legoux Review \u2014 Trend Indicator",
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "alma-moving-average",
-      "title": "Alma Moving Average Review \u2014 Trend Indicator",
+      "slug": "alma-arnaud-legoux",
+      "title": "Alma Arnaud Legoux Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30739,6 +30973,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-rsi-vwap-targets",
       "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
       "rating": 4,
@@ -30747,12 +30987,6 @@
     {
       "slug": "ema-supertrend-obv-strixedge",
       "title": "EMA Supertrend OBV Strixedge Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -30875,14 +31109,14 @@
       "score": 13.0
     },
     {
-      "slug": "jurik-trend-ribbon",
-      "title": "Jurik Trend Ribbon Review \u2014 Trend Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik Volatility Bands Review \u2014 Volatility Indicator",
+      "slug": "jurik-trend-ribbon",
+      "title": "Jurik Trend Ribbon Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -31817,8 +32051,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -31993,15 +32227,15 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-distribution",
-      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
+      "slug": "accumulation-distribution",
+      "title": "Accumulation Distribution Review \u2014 Trend Indicator",
+      "rating": 4,
       "score": 8.0
     }
   ],
@@ -32516,13 +32750,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.1
+      "score": 13.2
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.1
+      "score": 13.2
     }
   ],
   "walk-forward-optimization": [
@@ -32545,8 +32779,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -32767,6 +33001,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -32775,12 +33015,6 @@
     {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "multi-timeframe-multi-indicator-dashboard",
-      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
     }
@@ -33481,8 +33715,8 @@
       "score": 9.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
