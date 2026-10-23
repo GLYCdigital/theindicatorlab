@@ -5461,6 +5461,12 @@
   ],
   "confirmed-structure-transition-map-pineify": [
     {
+      "slug": "ict-fractal-model-htf-candles-cisd-c2-targets-lunqfx",
+      "title": "ICT Fractal Model HTF Candles Cisd C2 Targets Lunqfx Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
@@ -5475,12 +5481,6 @@
     {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "1h-4h-swing-high-low-zones-icc",
-      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -12921,6 +12921,32 @@
       "score": 12.0
     }
   ],
+  "ict-fractal-model-htf-candles-cisd-c2-targets-lunqfx": [
+    {
+      "slug": "confirmed-structure-transition-map-pineify",
+      "title": "Confirmed Structure Transition Map Pineify Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "awesome-oscillator",
+      "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
+      "rating": 3,
+      "score": 8.3
+    },
+    {
+      "slug": "fractal-breakout",
+      "title": "Fractal Breakout Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.3
+    },
+    {
+      "slug": "fractal-levels",
+      "title": "Fractal Levels Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.8
+    }
+  ],
   "ict-htf-candles-bryan": [
     {
       "slug": "a-l-p-h-a-x-surge",
@@ -13775,6 +13801,32 @@
     {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "investments-swing-trading-strategy-for-different-assets": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "ADX MTF Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -17363,6 +17415,32 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "mbedaiwi-market-structure-and-price-action": [
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "change-of-character-choch-alert-system-algo-aakash",
+      "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
+      "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
       "rating": 4,
       "score": 9.0
     }
@@ -21007,6 +21085,32 @@
       "score": 8.0
     }
   ],
+  "pattern-structure-pro": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "patterns-strategy-v1": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -23321,6 +23425,32 @@
       "score": 5.0
     }
   ],
+  "range-breakout-verdict-engine-phenlabs": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-breakout-oscillator-schizoquant",
+      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
+      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "range-commander-orb": [
     {
       "slug": "1-trendline-strategy",
@@ -24413,6 +24543,32 @@
       "score": 13.0
     }
   ],
+  "rsi-divergence-follow-through-statistics-dots3red": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "force-index-divergence",
+      "title": "Force Index Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "machine-learning-rsi-ai-classification-ranking",
+      "title": "Machine Learning RSI AI Classification Ranking Review",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "rsi-divergence-hunter": [
     {
       "slug": "accum-dist-divergence",
@@ -25035,6 +25191,32 @@
       "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
       "rating": 3,
       "score": 8.0
+    }
+  ],
+  "scaled-moving-average": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "scalping-master-buy-and-sell": [
@@ -25997,6 +26179,32 @@
       "title": "ICT Smart Money Execution Engine Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "smart-money-fibonacci-ote-engine-chartprime": [
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity Absorption And Rejection Orderflow Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-sweep-detector",
+      "title": "Liquidity Sweep Detector Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "market-microstructure-analytics",
+      "title": "Market Microstructure Analytics Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "smart-money-liquidation-exploits-algoalpha": [
@@ -32031,6 +32239,32 @@
       "score": 9.0
     }
   ],
+  "volume-delta-oscillator-with-divergence-signals-bigbeluga": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "volume-divergence-bayesian-projection": [
     {
       "slug": "accum-dist-divergence",
@@ -33426,13 +33660,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.1
+      "score": 13.2
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.1
+      "score": 13.2
     }
   ],
   "walk-forward-optimization": [
