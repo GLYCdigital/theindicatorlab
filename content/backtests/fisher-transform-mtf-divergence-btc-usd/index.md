@@ -1,14 +1,14 @@
 ---
 {
   "title": "Fisher \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+7.0%"
+      "value": "+7.1%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "32.4%"
+      "value": "32.3%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "340"
+      "value": "341"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-25.3%",
+      "return_pct": "-26.5%",
       "trades": "12",
-      "win_rate_pct": "32.4%"
+      "win_rate_pct": "32.3%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "63",
-      "win_rate_pct": "32.4%"
+      "win_rate_pct": "32.3%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "76",
-      "win_rate_pct": "32.4%"
+      "win_rate_pct": "32.3%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "68",
-      "win_rate_pct": "32.4%"
+      "win_rate_pct": "32.3%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "70",
-      "win_rate_pct": "32.4%"
+      "win_rate_pct": "32.3%"
     },
     {
       "year": "2026",
-      "return_pct": "-8.6%",
-      "trades": "51",
-      "win_rate_pct": "32.4%"
+      "return_pct": "-8.1%",
+      "trades": "52",
+      "win_rate_pct": "32.3%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -88,12 +88,12 @@
       "url": "/reviews/acceleration-deceleration-ac-oscillator/"
     },
     {
-      "title": "cci smoothed review \u2014 momentum indicator",
-      "url": "/reviews/cci-smoothed/"
+      "title": "chaikin fisher transform divergence early reversal review",
+      "url": "/reviews/chaikin-fisher-transform-divergence-early-reversal/"
     },
     {
-      "title": "price rate of change proc review \u2014 trend indicator",
-      "url": "/reviews/price-rate-of-change-proc/"
+      "title": "cci smoothed review \u2014 momentum indicator",
+      "url": "/reviews/cci-smoothed/"
     }
   ]
 }
@@ -109,7 +109,7 @@ On BTC, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-18 → 2026-10-16), the Fisher Transform MTF Divergence delivered a **+7.0% total return** on BTC-USD, compounding at **1.4% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the Fisher Transform MTF Divergence delivered a **+7.1% total return** on BTC-USD, compounding at **1.4% annually**. 
 
 At **0.14**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **49.5% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.14 | ❌ Weak |
 | Max Drawdown | 49.5% | ⚠️ Significant |
-| Win Rate | 32.4% | ❌ Low — relies on outsized wins |
+| Win Rate | 32.3% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.02 | ⚠️ Marginal |
-| Trades/Year | ~340 total | Active |
+| Trades/Year | ~341 total | Active |
 
-The **profit factor of 1.02** tells the real story: when the Fisher fires, the winning signals are larger than the losing ones. Combined with a 32.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.02** tells the real story: when the Fisher fires, the winning signals are larger than the losing ones. Combined with a 32.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on BTC?
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on BTC-USD](/backtests/fisher-transform-mtf-divergence-btc-usd-trades.png)

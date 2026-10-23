@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+44.8%"
+      "value": "+46.3%"
     },
     {
       "label": "CAGR",
-      "value": "7.7%"
+      "value": "7.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.32"
+      "value": "0.33"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+21.3%",
+      "return_pct": "+19.6%",
       "trades": "0",
       "win_rate_pct": "43.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+26.8%",
+      "return_pct": "+28.2%",
       "trades": "9",
       "win_rate_pct": "43.1%"
     }
@@ -109,9 +109,9 @@ On AAPL, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-18 → 2026-10-16), the TTM Squeeze Pro delivered a **+44.8% total return** on AAPL, compounding at **7.7% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the TTM Squeeze Pro delivered a **+46.3% total return** on AAPL, compounding at **7.9% annually**. 
 
-At **0.32**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.33**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.32 | ❌ Weak |
+| Sharpe Ratio | 0.33 | ❌ Weak |
 | Max Drawdown | 26.4% | ⚠️ Moderate |
 | Win Rate | 43.1% | ⚠️ Below average |
 | Profit Factor | 1.50 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.50** tells the real story: when the BollingerBands fire
 
 ## Does the TTM Squeeze Pro Work on AAPL?
 
-The ttm squeeze pro shows moderate edge on AAPL — **0.32 Sharpe, 1.50 profit factor** over 51 trades. It's not a home run, but it's also not random.
+The ttm squeeze pro shows moderate edge on AAPL — **0.33 Sharpe, 1.50 profit factor** over 51 trades. It's not a home run, but it's also not random.
 
 The 43.1% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![TTM Squeeze Pro — Trade Signals on AAPL](/backtests/ttm-squeeze-pro-aapl-trades.png)

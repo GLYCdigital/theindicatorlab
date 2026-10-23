@@ -1,22 +1,22 @@
 ---
 {
   "title": "Donchian \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-1.4%"
+      "value": "-0.4%"
     },
     {
       "label": "CAGR",
-      "value": "-0.3%"
+      "value": "-0.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.05"
+      "value": "-0.04"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+21.3%",
+      "return_pct": "+19.6%",
       "trades": "0",
       "win_rate_pct": "31.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+26.8%",
+      "return_pct": "+28.2%",
       "trades": "8",
       "win_rate_pct": "31.5%"
     }
@@ -109,9 +109,9 @@ On AAPL, the Donchian acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-18 → 2026-10-16), the Donchian Channel Breakout delivered a **-1.4% total return** on AAPL, compounding at **-0.3% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the Donchian Channel Breakout delivered a **-0.4% total return** on AAPL, compounding at **-0.1% annually**. 
 
-At **-0.05**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.04**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **34.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 34% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **34.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.05 | ❌ Weak |
+| Sharpe Ratio | -0.04 | ❌ Weak |
 | Max Drawdown | 34.4% | ⚠️ Significant |
 | Win Rate | 31.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.93 | ❌ Unprofitable |
@@ -129,7 +129,7 @@ The **profit factor of 0.93** tells the real story: when the Donchian fires, the
 
 ## Does the Donchian Channel Breakout Work on AAPL?
 
-The donchian channel breakout struggled to generate meaningful edge on AAPL over this 5-year period. With a **-0.05 Sharpe ratio** and **0.93 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The donchian channel breakout struggled to generate meaningful edge on AAPL over this 5-year period. With a **-0.04 Sharpe ratio** and **0.93 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Donchian is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on AAPL](/backtests/donchian-channel-breakout-aapl-trades.png)

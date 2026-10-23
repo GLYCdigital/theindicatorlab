@@ -1,22 +1,22 @@
 ---
 {
   "title": "Fisher \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+2.9%"
+      "value": "+3.7%"
     },
     {
       "label": "CAGR",
-      "value": "0.6%"
+      "value": "0.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.01"
+      "value": "0.02"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "43.1%"
+      "value": "42.9%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "218"
+      "value": "219"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+21.3%",
-      "trades": "7",
-      "win_rate_pct": "43.1%"
+      "return_pct": "+19.6%",
+      "trades": "6",
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "49",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "44",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "47",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "33",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+26.8%",
-      "trades": "38",
-      "win_rate_pct": "43.1%"
+      "return_pct": "+28.2%",
+      "trades": "40",
+      "win_rate_pct": "42.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -88,12 +88,12 @@
       "url": "/reviews/acceleration-deceleration-ac-oscillator/"
     },
     {
-      "title": "cci smoothed review \u2014 momentum indicator",
-      "url": "/reviews/cci-smoothed/"
+      "title": "chaikin fisher transform divergence early reversal review",
+      "url": "/reviews/chaikin-fisher-transform-divergence-early-reversal/"
     },
     {
-      "title": "price rate of change proc review \u2014 trend indicator",
-      "url": "/reviews/price-rate-of-change-proc/"
+      "title": "cci smoothed review \u2014 momentum indicator",
+      "url": "/reviews/cci-smoothed/"
     }
   ]
 }
@@ -109,9 +109,9 @@ On AAPL, the Fisher acts as a trend filter. It won't catch every exact bottom, b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-18 → 2026-10-16), the Fisher Transform MTF Divergence delivered a **+2.9% total return** on AAPL, compounding at **0.6% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the Fisher Transform MTF Divergence delivered a **+3.7% total return** on AAPL, compounding at **0.7% annually**. 
 
-At **0.01**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.02**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **38.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 39% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **38.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.01 | ❌ Weak |
+| Sharpe Ratio | 0.02 | ❌ Weak |
 | Max Drawdown | 38.6% | ⚠️ Significant |
-| Win Rate | 43.1% | ⚠️ Below average |
+| Win Rate | 42.9% | ⚠️ Below average |
 | Profit Factor | 1.02 | ⚠️ Marginal |
-| Trades/Year | ~218 total | Active |
+| Trades/Year | ~219 total | Active |
 
-The **profit factor of 1.02** tells the real story: when the Fisher fires, the winning signals are larger than the losing ones. Combined with a 43.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.02** tells the real story: when the Fisher fires, the winning signals are larger than the losing ones. Combined with a 42.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on AAPL?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.01 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.02 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on AAPL](/backtests/fisher-transform-mtf-divergence-aapl-trades.png)

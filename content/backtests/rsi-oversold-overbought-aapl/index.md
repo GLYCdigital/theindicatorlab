@@ -1,18 +1,18 @@
 ---
 {
   "title": "RSI \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+94.4%"
+      "value": "+96.5%"
     },
     {
       "label": "CAGR",
-      "value": "14.2%"
+      "value": "14.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+21.3%",
+      "return_pct": "+19.6%",
       "trades": "0",
       "win_rate_pct": "33.3%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+26.8%",
+      "return_pct": "+28.2%",
       "trades": "2",
       "win_rate_pct": "33.3%"
     }
@@ -109,7 +109,7 @@ On AAPL, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-18 → 2026-10-16), the RSI Oversold/Overbought delivered a **+94.4% total return** on AAPL, compounding at **14.2% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the RSI Oversold/Overbought delivered a **+96.5% total return** on AAPL, compounding at **14.5% annually**. 
 
 At **0.61**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on AAPL](/backtests/rsi-oversold-overbought-aapl-trades.png)

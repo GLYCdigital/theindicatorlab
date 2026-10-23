@@ -1,26 +1,26 @@
 ---
 {
   "title": "Swing \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+7.7%"
+      "value": "+9.7%"
     },
     {
       "label": "CAGR",
-      "value": "1.5%"
+      "value": "1.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.16"
+      "value": "0.17"
     },
     {
       "label": "Max Drawdown",
-      "value": "52.2%"
+      "value": "46.5%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.04"
+      "value": "1.05"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-25.3%",
-      "trades": "2",
+      "return_pct": "-26.5%",
+      "trades": "1",
       "win_rate_pct": "27.7%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.6%",
-      "trades": "16",
+      "return_pct": "-8.1%",
+      "trades": "17",
       "win_rate_pct": "27.7%"
     }
   ],
@@ -109,27 +109,27 @@ On BTC, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-18 → 2026-10-16), the Market Structure Pro delivered a **+7.7% total return** on BTC-USD, compounding at **1.5% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the Market Structure Pro delivered a **+9.7% total return** on BTC-USD, compounding at **1.9% annually**. 
 
-At **0.16**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.17**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **52.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 52% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **46.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 46% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.16 | ❌ Weak |
-| Max Drawdown | 52.2% | ⚠️ Significant |
+| Sharpe Ratio | 0.17 | ❌ Weak |
+| Max Drawdown | 46.5% | ⚠️ Significant |
 | Win Rate | 27.7% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.04 | ⚠️ Marginal |
+| Profit Factor | 1.05 | ⚠️ Marginal |
 | Trades/Year | ~94 total | Active |
 
-The **profit factor of 1.04** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 27.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.05** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 27.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Market Structure Pro Work on BTC?
 
-The market structure pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.16 Sharpe ratio** and **1.04 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on BTC over this 5-year period. With a **0.17 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on BTC-USD](/backtests/market-structure-pro-btc-usd-trades.png)

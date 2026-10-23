@@ -1,18 +1,18 @@
 ---
 {
   "title": "Ichimoku \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+54.8%"
+      "value": "+55.1%"
     },
     {
       "label": "CAGR",
-      "value": "9.1%"
+      "value": "9.2%"
     },
     {
       "label": "Sharpe Ratio",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "2.45"
+      "value": "2.15"
     },
     {
       "label": "Total Trades",
@@ -36,13 +36,13 @@
     },
     {
       "label": "Avg Trade",
-      "value": "59 days"
+      "value": "57 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+6.9%",
+      "return_pct": "+5.4%",
       "trades": "0",
       "win_rate_pct": "40.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.5%",
+      "return_pct": "+15.6%",
       "trades": "4",
       "win_rate_pct": "40.0%"
     }
@@ -109,7 +109,7 @@ On QQQ, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-18 → 2026-10-16), the Ichimoku Cloud delivered a **+54.8% total return** on QQQ, compounding at **9.1% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the Ichimoku Cloud delivered a **+55.1% total return** on QQQ, compounding at **9.2% annually**. 
 
 At **0.50**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -122,14 +122,14 @@ The catch? A **18.0% max drawdown**. At some point during this 5-year run, you'd
 | Sharpe Ratio | 0.50 | ❌ Weak |
 | Max Drawdown | 18.0% | ⚠️ Moderate |
 | Win Rate | 40.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 2.45 | ✅ Excellent |
+| Profit Factor | 2.15 | ✅ Excellent |
 | Trades/Year | ~20 total | Selective — not overtrading |
 
-The **profit factor of 2.45** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 2.15** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on QQQ?
 
-The ichimoku cloud shows moderate edge on QQQ — **0.50 Sharpe, 2.45 profit factor** over 20 trades. It's not a home run, but it's also not random.
+The ichimoku cloud shows moderate edge on QQQ — **0.50 Sharpe, 2.15 profit factor** over 20 trades. It's not a home run, but it's also not random.
 
 The 40.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on QQQ](/backtests/ichimoku-cloud-qqq-trades.png)

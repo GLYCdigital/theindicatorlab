@@ -1,10 +1,10 @@
 ---
 {
   "title": "Swing \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-17",
+  "date": "2026-10-24",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-18 \u2192 2026-10-16",
+  "period": "2021-10-25 \u2192 2026-10-23",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+6.9%",
+      "return_pct": "+5.4%",
       "trades": "5",
       "win_rate_pct": "27.1%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+16.5%",
+      "return_pct": "+15.6%",
       "trades": "13",
       "win_rate_pct": "27.1%"
     }
@@ -109,7 +109,7 @@ On QQQ, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-18 → 2026-10-16), the Market Structure Pro delivered a **+22.3% total return** on QQQ, compounding at **4.1% annually**. 
+Over five years (2021-10-25 → 2026-10-23), the Market Structure Pro delivered a **+22.3% total return** on QQQ, compounding at **4.1% annually**. 
 
 At **0.16**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 17, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on QQQ](/backtests/market-structure-pro-qqq-trades.png)
