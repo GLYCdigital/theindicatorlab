@@ -1,6 +1,12 @@
 {
   "0dte-scalper-kalman-supertrend-and-adx-volatility-waves": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -15,12 +21,6 @@
     {
       "slug": "atr-channels",
       "title": "ATR Channels Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-percentile",
-      "title": "ATR Percentile Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -131,6 +131,12 @@
   ],
   "3-way-bollinger-trend-zynalgo": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -145,12 +151,6 @@
     {
       "slug": "bollinger-band-scalping",
       "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "bollinger-bands-b",
-      "title": "Bollinger Bands B Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -241,6 +241,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -251,12 +257,32 @@
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 13.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
-      "score": 5.0
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "a-l-p-h-a-x-surge": [
@@ -599,6 +625,12 @@
   ],
   "adaptive-composite-oscillator-aco": [
     {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -613,12 +645,6 @@
     {
       "slug": "ehlers-adaptive-stochastic",
       "title": "Ehlers Adaptive Stochastic Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-adaptive-ehlers",
-      "title": "RSI Adaptive Ehlers Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -703,6 +729,12 @@
   ],
   "adaptive-flow-channel": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -717,12 +749,6 @@
     {
       "slug": "adaptive-regression-breakout-map-gainz-algo",
       "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
     }
@@ -805,6 +831,32 @@
       "score": 13.0
     }
   ],
+  "adaptive-rsi-momentum-engine-algochief": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-adaptive-ehlers",
+      "title": "RSI Adaptive Ehlers Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-50-step-line",
+      "title": "RSI 50 Step Line Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.9
+    }
+  ],
   "adaptive-smart-money-liquidity-sweep-levels-algoalpha": [
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
@@ -865,6 +917,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -873,12 +931,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -1423,8 +1475,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -1691,6 +1743,12 @@
   ],
   "anchored-vwap-w-4-stdev-pip-atr-bands": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "squeeze-pro",
       "title": "Squeeze Pro Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -1707,12 +1765,6 @@
       "title": "VWAP Std Dev Bands Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
-      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "anchored-vwap": [
@@ -1813,8 +1865,8 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     }
@@ -2035,6 +2087,12 @@
       "score": 13.0
     },
     {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "rsi-adaptive-ehlers",
       "title": "RSI Adaptive Ehlers Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -2043,12 +2101,6 @@
     {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -2321,6 +2373,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -2329,12 +2387,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-based-position-sizing",
-      "title": "ATR Based Position Sizing Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -2399,6 +2451,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -2407,12 +2465,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-based-position-sizing",
-      "title": "ATR Based Position Sizing Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -2541,8 +2593,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -3257,6 +3309,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -3265,12 +3323,6 @@
     {
       "slug": "adaptive-flow-channel",
       "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -3595,6 +3647,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -3603,12 +3661,6 @@
     {
       "slug": "bolinger-bands-range-rsi-oscillator",
       "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "bollinger-band-scalping",
-      "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -3653,14 +3705,14 @@
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bollinger-bands-rsi-combo",
-      "title": "Bollinger Bands RSI Combo Review \u2014 Momentum Indicator",
+      "slug": "bolinger-bands-range-rsi-oscillator",
+      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     }
@@ -3783,14 +3835,14 @@
       "score": 5.0
     },
     {
-      "slug": "accum-dist-divergence",
-      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-breakout-oscillator-schizoquant",
-      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -3965,14 +4017,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "accum-dist-divergence",
-      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -4999,6 +5051,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -5007,12 +5065,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -5470,13 +5522,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 8.3
+      "score": 8.4
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 8.3
+      "score": 8.4
     },
     {
       "slug": "1-trendline-strategy",
@@ -5701,6 +5753,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -5709,12 +5767,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -6565,14 +6617,14 @@
       "score": 9.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -7131,6 +7183,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -7139,12 +7197,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "ATR Channels Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -7169,8 +7221,8 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     }
@@ -7189,14 +7241,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -7313,6 +7365,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -7321,12 +7379,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -9049,6 +9101,12 @@
   ],
   "fair-value-gap-fill-probability-pickmytrade": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adx-mtf",
       "title": "ADX MTF Review \u2014 Trend Indicator",
       "rating": 4,
@@ -9063,12 +9121,6 @@
     {
       "slug": "bayesian-probability-indicator",
       "title": "Bayesian Probability Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "bidayah-smc-indicator",
-      "title": "Bidayah SMC Indicator Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -9483,8 +9535,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -9509,8 +9561,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -9919,14 +9971,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -10835,8 +10887,8 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -10849,6 +10901,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -10857,12 +10915,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "ATR Channels Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -10891,6 +10943,32 @@
       "title": "Efficiency Ratio Adaptive Ma Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "geometric-pattern-algochief": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "ghost-zones-gti-adaptive-demand-supply-zones": [
@@ -11303,8 +11381,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -11855,6 +11933,32 @@
       "score": 8.0
     }
   ],
+  "higher-timeframe-peak-session-volume": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "historical-pattern-projection": [
     {
       "slug": "1-trendline-strategy",
@@ -12031,8 +12135,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -12207,14 +12311,14 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-ai-indicator",
-      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -12331,6 +12435,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -12339,12 +12449,6 @@
     {
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -12932,13 +13036,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 8.3
+      "score": 8.4
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 8.3
+      "score": 8.4
     },
     {
       "slug": "fractal-levels",
@@ -13449,6 +13553,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
@@ -13457,12 +13567,6 @@
     {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
-      "title": "Anchored VWAP W 4 Stdev Pip ATR Bands Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -13819,14 +13923,14 @@
       "score": 5.0
     },
     {
-      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
-      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adx-mtf",
-      "title": "ADX MTF Review \u2014 Trend Indicator",
+      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
+      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
       "rating": 4,
       "score": 5.0
     }
@@ -14307,6 +14411,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -14315,12 +14425,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "ATR Channels Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -14353,6 +14457,12 @@
   ],
   "keltner-channels-mtf": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -14367,12 +14477,6 @@
     {
       "slug": "atr-based-position-sizing",
       "title": "ATR Based Position Sizing Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "ATR Channels Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -14385,6 +14489,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -14393,12 +14503,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-based-position-sizing",
-      "title": "ATR Based Position Sizing Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -16445,14 +16549,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "acceleration-deceleration",
-      "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -16965,14 +17069,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
-      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -17265,6 +17369,12 @@
   ],
   "markus-channel-dual-expansion-envelopes": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -17279,12 +17389,6 @@
     {
       "slug": "adaptive-trend-bands",
       "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "bollinger-band-scalping",
-      "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -17387,8 +17491,8 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -17947,6 +18051,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -17955,12 +18065,6 @@
     {
       "slug": "apex-algo-engine-algochief",
       "title": "Apex Algo Engine Algochief Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-bands",
-      "title": "ATR Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -17979,14 +18083,14 @@
       "score": 9.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -18395,14 +18499,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -18505,8 +18609,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -19461,14 +19565,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -19721,14 +19825,14 @@
       "score": 9.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -19819,6 +19923,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -19827,12 +19937,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -20047,6 +20151,12 @@
   ],
   "omega-effort-omegatools": [
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -20061,12 +20171,6 @@
     {
       "slug": "wyckoff-architectural-range-erdensedat",
       "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-schematic",
-      "title": "Wyckoff Schematic Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -20495,6 +20599,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
@@ -20503,12 +20613,6 @@
     {
       "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
       "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -21085,6 +21189,32 @@
       "score": 8.0
     }
   ],
+  "pattern-structure-direction": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "pattern-structure-pro": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -21633,6 +21763,12 @@
   ],
   "pivot-points-standard-floor": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "1h-4h-swing-high-low-zones-icc",
       "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
       "rating": 4,
@@ -21647,12 +21783,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 5.0
     }
@@ -21755,8 +21885,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -22049,6 +22179,12 @@
   ],
   "power-surge-bb-momentum-squeeze-release": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -22063,12 +22199,6 @@
     {
       "slug": "bollinger-band-scalping",
       "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "bollinger-bands-b",
-      "title": "Bollinger Bands B Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -22301,8 +22431,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -22399,14 +22529,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -22425,14 +22555,14 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "accum-dist-divergence",
-      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -22445,20 +22575,20 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "accumulation-swing-index",
       "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
       "rating": 3,
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -22503,14 +22633,14 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -22691,8 +22821,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-ensemble-backquant",
-      "title": "Adaptive Trend Ensemble Backquant Review \u2014 Trend Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -23387,14 +23517,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23439,14 +23569,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-breakout-oscillator-schizoquant",
-      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-dual-engine-strategy-momentum-mean-reversion-bt",
-      "title": "Adaptive Dual Engine Strategy Momentum Mean Reversion Bt Review",
+      "slug": "adaptive-breakout-oscillator-schizoquant",
+      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -23553,6 +23683,32 @@
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "range-sweep-breakout-wyckoff-inspired": [
+    {
+      "slug": "omega-effort-omegatools",
+      "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "smart-money-the-ultimator",
+      "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "volume-spread-analysis",
+      "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "wyckoff-accumulation-distribution",
+      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "ranked-support-resistance-zones": [
@@ -23765,6 +23921,12 @@
   ],
   "regression-oscillator": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -23779,12 +23941,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -23907,14 +24063,14 @@
       "score": 9.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24245,14 +24401,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24337,6 +24493,12 @@
   ],
   "rolling-z-score-reversion-map-pineify": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
       "rating": 4,
@@ -24351,12 +24513,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -24389,6 +24545,12 @@
   ],
   "rsi-50-step-line": [
     {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.9
+    },
+    {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
       "rating": 4,
@@ -24405,18 +24567,18 @@
       "title": "Mad Adaptive Trend Score Backquant Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "momentum-indicator",
-      "title": "Momentum Indicator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "rsi-adaptive-ehlers": [
     {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 13.0
     },
@@ -24431,18 +24593,18 @@
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
     }
   ],
   "rsi-bollinger-bands": [
     {
       "slug": "3-way-bollinger-trend-zynalgo",
       "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 13.0
     },
@@ -24455,12 +24617,6 @@
     {
       "slug": "adaptive-flow-channel",
       "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -24479,14 +24635,14 @@
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
+      "slug": "bolinger-bands-range-rsi-oscillator",
+      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     }
@@ -24947,14 +25103,14 @@
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "cardwell-rsi-trade-navigator",
-      "title": "Cardwell RSI Trade Navigator Review \u2014 Momentum Indicator",
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24973,14 +25129,14 @@
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
+      "slug": "bolinger-bands-range-rsi-oscillator",
+      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     }
@@ -25019,6 +25175,12 @@
       "score": 9.0
     },
     {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -25027,12 +25189,6 @@
     {
       "slug": "bollinger-bands-rsi-combo",
       "title": "Bollinger Bands RSI Combo Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "breadth-topping-syndrome",
-      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -25207,14 +25363,14 @@
       "score": 5.0
     },
     {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -25649,14 +25805,14 @@
       "score": 9.0
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "bolinger-bands-range-rsi-oscillator",
-      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -26013,14 +26169,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -26125,6 +26281,32 @@
     {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "smart-money-concepts-liquidity-sweep-order-block-fvg": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -27047,6 +27229,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -27055,12 +27243,6 @@
     {
       "slug": "adaptive-flow-channel",
       "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -27865,8 +28047,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -27931,6 +28113,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
       "rating": 4,
@@ -27939,12 +28127,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -28252,7 +28434,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.7
+      "score": 11.8
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
@@ -28275,14 +28457,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-decycler-supertrend-schizoquant",
-      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ais-supertrend",
-      "title": "Ais Supertrend Review \u2014 Trend Indicator",
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -28425,6 +28607,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
@@ -28433,12 +28621,6 @@
     {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
-      "title": "Anchored VWAP W 4 Stdev Pip ATR Bands Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -28477,6 +28659,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
@@ -28485,12 +28673,6 @@
     {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "atr-bands",
-      "title": "ATR Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -28529,6 +28711,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
@@ -28537,12 +28725,6 @@
     {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "atr-bands",
-      "title": "ATR Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -28913,6 +29095,12 @@
   ],
   "swing-index": [
     {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -28927,12 +29115,6 @@
     {
       "slug": "acceleration-deceleration",
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -29075,6 +29257,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -29083,12 +29271,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -29269,8 +29451,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -29373,8 +29555,8 @@
       "score": 5.0
     },
     {
-      "slug": "abcd-pattern",
-      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -29413,6 +29595,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -29421,12 +29609,6 @@
     {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30433,14 +30615,14 @@
       "score": 5.0
     },
     {
-      "slug": "accelerator-oscillator",
-      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "accelerator-oscillator",
+      "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -30491,8 +30673,8 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -30603,6 +30785,12 @@
   ],
   "trimmed-mean-atr-bands-nj": [
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -30617,12 +30805,6 @@
     {
       "slug": "atr-volatility-indicator",
       "title": "ATR Volatility Indicator Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "average-true-range-atr",
-      "title": "Average True Range ATR Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -30973,6 +31155,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ais-supertrend",
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
@@ -30981,12 +31169,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "ATR Channels Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -31233,6 +31415,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -31241,12 +31429,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -31467,6 +31649,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -31475,12 +31663,6 @@
     {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -31493,6 +31675,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -31503,15 +31691,15 @@
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
     }
   ],
   "uptrick-band-flow": [
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
     {
       "slug": "adaptive-decycler-supertrend-schizoquant",
       "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
@@ -31527,12 +31715,6 @@
     {
       "slug": "atr-bands",
       "title": "ATR Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "atr-channels",
-      "title": "ATR Channels Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -31551,14 +31733,14 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -31577,14 +31759,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "advanced-swing-volume-frequency-profile-bigbeluga",
-      "title": "Advanced Swing Volume Frequency Profile Bigbeluga Review",
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 5.0
     }
@@ -31843,8 +32025,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -31863,14 +32045,14 @@
       "score": 13.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "adaptive-flow-channel",
-      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -31883,6 +32065,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -31891,12 +32079,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -31909,6 +32091,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -31917,12 +32105,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -31987,6 +32169,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -31995,12 +32183,6 @@
     {
       "slug": "adaptive-flow-channel",
       "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -32039,6 +32221,12 @@
       "score": 9.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -32047,12 +32235,6 @@
     {
       "slug": "adaptive-envelopes",
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-regression-breakout-map-gainz-algo",
-      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -32767,6 +32949,12 @@
       "score": 5.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -32777,18 +32965,18 @@
       "title": "Absorption Detection Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 5.0
-    },
-    {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "volume-spread-analysis": [
     {
       "slug": "omega-effort-omegatools",
       "title": "Omega Effort Omegatools Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
       "rating": 4,
       "score": 9.0
     },
@@ -32803,12 +32991,32 @@
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "volume-strata-profile": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     },
     {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 9.0
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "volume-supply-and-demand-tradingiq": [
@@ -32831,8 +33039,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -33091,8 +33299,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -33189,14 +33397,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-decycler-supertrend-schizoquant",
-      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
+      "slug": "adaptive-decycler-supertrend-schizoquant",
+      "title": "Adaptive Decycler Supertrend Schizoquant Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -33573,6 +33781,12 @@
       "score": 13.0
     },
     {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "adaptive-bollinger-bands",
       "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -33581,12 +33795,6 @@
     {
       "slug": "adaptive-flow-channel",
       "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "adaptive-trend-bands",
-      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -34111,6 +34319,32 @@
       "score": 13.0
     }
   ],
+  "wiselywealth-tri-momentum-divergence-risk-suite": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "wolfe-waves": [
     {
       "slug": "1-trendline-strategy",
@@ -34223,6 +34457,12 @@
       "score": 9.0
     },
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34231,18 +34471,18 @@
     {
       "slug": "volume-spread-analysis",
       "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-accumulation-distribution",
-      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
   ],
   "wyckoff-pattern-indicator-almostperfect": [
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34257,12 +34497,6 @@
     {
       "slug": "wyckoff-accumulation-distribution",
       "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-architectural-range-erdensedat",
-      "title": "Wyckoff Architectural Range Erdensedat Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -34275,6 +34509,12 @@
       "score": 9.0
     },
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34283,12 +34523,6 @@
     {
       "slug": "volume-spread-analysis",
       "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-accumulation-distribution",
-      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -34301,6 +34535,12 @@
       "score": 9.0
     },
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34309,12 +34549,6 @@
     {
       "slug": "volume-spread-analysis",
       "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-accumulation-distribution",
-      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -34327,6 +34561,12 @@
       "score": 9.0
     },
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34335,12 +34575,6 @@
     {
       "slug": "volume-spread-analysis",
       "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-accumulation-distribution",
-      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -34353,6 +34587,12 @@
       "score": 9.0
     },
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34361,12 +34601,6 @@
     {
       "slug": "volume-spread-analysis",
       "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-accumulation-distribution",
-      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -34379,6 +34613,12 @@
       "score": 9.0
     },
     {
+      "slug": "range-sweep-breakout-wyckoff-inspired",
+      "title": "Range Sweep Breakout Wyckoff Inspired Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "smart-money-the-ultimator",
       "title": "Smart Money The Ultimator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -34387,12 +34627,6 @@
     {
       "slug": "volume-spread-analysis",
       "title": "Volume Spread Analysis Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "wyckoff-accumulation-distribution",
-      "title": "Wyckoff Accumulation Distribution Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -34463,14 +34697,14 @@
       "score": 9.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "adaptive-envelopes",
-      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
