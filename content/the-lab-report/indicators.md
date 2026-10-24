@@ -3,16 +3,16 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 143 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 148 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** October 18, 2026 · **143 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** October 25, 2026 · **148 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
-## Momentum (43)
+## Momentum (44)
 
 Indicators that measure the speed and strength of price movement.
 
@@ -61,8 +61,9 @@ Indicators that measure the speed and strength of price movement.
 | QQE 🆕 | [→ Full review](/reviews/qqe-quantitative-qualitative-estimation/) |
 | MESA Sine Wave 🆕 | [→ Full review](/reviews/ehlers-mesa-sine-wave/) |
 | ML RSI Classification 🆕 | [→ Full review](/reviews/machine-learning-rsi-ai-classification-ranking/) |
+| Cardwell RSI 🆕 | [→ Full review](/reviews/cardwell-rsi-trade-navigator/) |
 
-## Trend (50)
+## Trend (52)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -118,8 +119,10 @@ Indicators that identify direction and strength of the prevailing trend.
 | Half Trend 🆕 | [→ Full review](/reviews/half-trend/) |
 | EW Bottom Signals 🆕 | [→ Full review](/reviews/ew-bottom-signals-indicator-version/) |
 | Harmonic Patterns 🆕 | [→ Full review](/reviews/harmonic-patterns/) |
+| Point & Figure 🆕 | [→ Full review](/reviews/point-and-figure/) |
+| Trend Pressure 🆕 | [→ Full review](/reviews/trend-pressure/) |
 
-## Volume (24)
+## Volume (25)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -149,8 +152,9 @@ Indicators that analyze trading volume to confirm or refute price action.
 | HTF Volume Spike Imbalance 🆕 | [→ Full review](/reviews/htf-volume-spike-imbalance-projection/) |
 | Footprint Chart 🆕 | [→ Full review](/reviews/footprint-chart/) |
 | Order Flow Imbalance 🆕 | [→ Full review](/reviews/order-flow-imbalance/) |
+| Buyers & Sellers Profile 🆕 | [→ Full review](/reviews/buyers-sellers-profile-dynamic-s-r/) |
 
-## Volatility (26)
+## Volatility (27)
 
 Indicators that measure the magnitude of price fluctuations.
 
@@ -182,6 +186,7 @@ Indicators that measure the magnitude of price fluctuations.
 | Adaptive Bollinger Bands 🆕 | [→ Full review](/reviews/adaptive-bollinger-bands/) |
 | GARCH Model 🆕 | [→ Full review](/reviews/garch-model/) |
 | ATR Percentile 🆕 | [→ Full review](/reviews/atr-percentile/) |
+| STARC Bands 🆕 | [→ Full review](/reviews/starc-bands/) |
 
 ---
 
