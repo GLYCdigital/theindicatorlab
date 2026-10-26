@@ -71,8 +71,8 @@
       "score": 9.0
     },
     {
-      "slug": "mtf-supertrend",
-      "title": "MTF Supertrend Review \u2014 Trend Indicator",
+      "slug": "keltner-hull-suite-quantalgo",
+      "title": "Keltner Hull Suite Quantalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -4127,8 +4127,8 @@
       "score": 9.0
     },
     {
-      "slug": "flytv-a-real-fruit-fly-connectome-trading-on-your-chart",
-      "title": "Flytv A Real Fruit Fly Connectome Trading On Your Chart Review",
+      "slug": "exponential-hull-momentum-backquant",
+      "title": "Exponential Hull Momentum Backquant Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     }
@@ -5626,13 +5626,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 8.4
+      "score": 8.5
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 8.4
+      "score": 8.5
     },
     {
       "slug": "1-trendline-strategy",
@@ -6499,6 +6499,32 @@
       "score": 12.0
     }
   ],
+  "delta-pressure-clock-algonorth": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "delta-profile": [
     {
       "slug": "1-trendline-strategy",
@@ -6809,6 +6835,32 @@
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "divergence-confirmation-oscillator-pineify": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bollinger-bands-divergence",
+      "title": "Bollinger Bands Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "divergence-detector-universal": [
@@ -9099,6 +9151,32 @@
       "score": 8.0
     }
   ],
+  "exponential-hull-momentum-backquant": [
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger Bands MACD Combo Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "byo-pattern-trendoscope",
+      "title": "Byo Pattern Trendoscope Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "exponential-moving-average-ema": [
     {
       "slug": "alma-arnaud-legoux",
@@ -9563,6 +9641,58 @@
     {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "fibonacci-master-simplealgo": [
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "alt-bat-pattern",
+      "title": "Alt Bat Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "fibonacci-memory-quantum-algo": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -13129,6 +13259,32 @@
       "score": 12.0
     }
   ],
+  "ichimoku-trend-oscillator-gabremoku": [
+    {
+      "slug": "cloud-pro-ichimoku-confluence",
+      "title": "Cloud Pro Ichimoku Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-chikou-span",
+      "title": "Ichimoku Chikou Span Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-axealgo",
+      "title": "Ichimoku Cloud Axealgo Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ichimoku-cloud-components",
+      "title": "Ichimoku Cloud Components Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "icon-bot": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -13218,13 +13374,13 @@
       "slug": "awesome-oscillator",
       "title": "Awesome Oscillator Review \u2014 Momentum Indicator",
       "rating": 3,
-      "score": 8.4
+      "score": 8.5
     },
     {
       "slug": "fractal-breakout",
       "title": "Fractal Breakout Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 8.4
+      "score": 8.5
     },
     {
       "slug": "fractal-levels",
@@ -14690,6 +14846,32 @@
     }
   ],
   "keltner-channels": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais Supertrend Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "atr-bands",
+      "title": "ATR Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
+  "keltner-hull-suite-quantalgo": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
       "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
@@ -18433,6 +18615,32 @@
       "score": 5.0
     }
   ],
+  "momentum-stream-checklist": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-breakout-oscillator-schizoquant",
+      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "momentum-trade-planner-ema9-rsi-ob-fvg": [
     {
       "slug": "ema-21-macd-rsi-alma",
@@ -20177,14 +20385,14 @@
   ],
   "obv-attention-consensus-ribbon-fibonacciflux": [
     {
-      "slug": "obv-ma",
-      "title": "OBV Ma Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 7.7
-    },
-    {
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 7.6
+    },
+    {
+      "slug": "obv-ma",
+      "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 7.6
     },
@@ -24762,7 +24970,7 @@
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
       "rating": 4,
-      "score": 9.7
+      "score": 9.6
     },
     {
       "slug": "bolinger-bands-range-rsi-oscillator",
@@ -28298,13 +28506,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 14.9
+      "score": 14.8
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 14.9
+      "score": 14.8
     },
     {
       "slug": "center-of-gravity-cog-oscillator",
