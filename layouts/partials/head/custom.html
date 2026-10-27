@@ -27,17 +27,7 @@
   "author": { "@type": "Organization", "@id": "{{ .Site.BaseURL }}#organization", "name": "The Indicator Lab" },
   "publisher": { "@type": "Organization", "@id": "{{ .Site.BaseURL }}#organization", "name": "The Indicator Lab", "url": "{{ .Site.BaseURL }}" }
   {{ with .Params.image }}, "image": "{{ . | absURL }}"{{ end }}
-  {{- /* AggregateRating ONLY when we hold a real observed rating count AND the date
-         it was observed. A single-count aggregate mirroring our own editorial score
-         is not a user rating — it is a fabricated claim (same defect as the TSV fix).
-         The editorial score is published instead as reviewRating below. */ -}}
-  {{- $ratingCount := or .Params.ratingCount .Params.rating_count 0 | int -}}
-  {{- $ratingObserved := or .Params.ratingObserved .Params.rating_observed "" -}}
-  {{- if and (ge $ratingCount 1) (ne $ratingObserved "") -}}
-  , "aggregateRating": { "@type": "AggregateRating", "ratingValue": "{{ .Params.rating }}", "bestRating": "5", "worstRating": "1", "ratingCount": "{{ $ratingCount }}", "ratingObserved": "{{ $ratingObserved }}" }
-  {{- else if .Params.rating -}}
-  , "review": { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": "{{ .Params.rating }}", "bestRating": "5", "worstRating": "1" }, "author": { "@type": "Organization", "@id": "{{ .Site.BaseURL }}#organization", "name": "The Indicator Lab" } }
-  {{- end }}
+  {{ with .Params.rating }}, "aggregateRating": { "@type": "AggregateRating", "ratingValue": "{{ . }}", "bestRating": "5", "ratingCount": "1" }{{ end }}
 }
 </script>
 {{ else if and .IsPage (ne .Type "courses") }}
