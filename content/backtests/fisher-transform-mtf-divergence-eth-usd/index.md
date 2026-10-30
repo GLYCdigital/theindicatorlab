@@ -1,22 +1,22 @@
 ---
 {
   "title": "Fisher \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-73.8%"
+      "value": "-75.5%"
     },
     {
       "label": "CAGR",
-      "value": "-23.5%"
+      "value": "-24.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-1.13"
+      "value": "-1.17"
     },
     {
       "label": "Max Drawdown",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Win Rate",
-      "value": "33.4%"
+      "value": "33.1%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.81"
+      "value": "0.80"
     },
     {
       "label": "Total Trades",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-12.7%",
-      "trades": "8",
-      "win_rate_pct": "33.4%"
+      "return_pct": "-14.8%",
+      "trades": "7",
+      "win_rate_pct": "33.1%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "67",
-      "win_rate_pct": "33.4%"
+      "win_rate_pct": "33.1%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "71",
-      "win_rate_pct": "33.4%"
+      "win_rate_pct": "33.1%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "75",
-      "win_rate_pct": "33.4%"
+      "win_rate_pct": "33.1%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "61",
-      "win_rate_pct": "33.4%"
+      "win_rate_pct": "33.1%"
     },
     {
       "year": "2026",
-      "return_pct": "-19.8%",
-      "trades": "56",
-      "win_rate_pct": "33.4%"
+      "return_pct": "-25.3%",
+      "trades": "57",
+      "win_rate_pct": "33.1%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On ETH, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-10-25 → 2026-10-23), the Fisher Transform MTF Divergence delivered a **-73.8% total return** on ETH-USD, compounding at **-23.5% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the Fisher Transform MTF Divergence delivered a **-75.5% total return** on ETH-USD, compounding at **-24.5% annually**. 
 
-At **-1.13**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-1.17**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **79.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 80% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **79.7% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -1.13 | ❌ Weak |
+| Sharpe Ratio | -1.17 | ❌ Weak |
 | Max Drawdown | 79.7% | ⚠️ Significant |
-| Win Rate | 33.4% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.81 | ❌ Unprofitable |
+| Win Rate | 33.1% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.80 | ❌ Unprofitable |
 | Trades/Year | ~338 total | Active |
 
-The **profit factor of 0.81** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 33.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.80** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 33.1% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on ETH?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on ETH over this 5-year period. With a **-1.13 Sharpe ratio** and **0.81 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on ETH over this 5-year period. With a **-1.17 Sharpe ratio** and **0.80 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on ETH-USD](/backtests/fisher-transform-mtf-divergence-eth-usd-trades.png)

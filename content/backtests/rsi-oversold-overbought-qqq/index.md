@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+64.8%"
+      "value": "+60.5%"
     },
     {
       "label": "CAGR",
-      "value": "10.5%"
+      "value": "9.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.39"
+      "value": "0.37"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+5.4%",
+      "return_pct": "+2.8%",
       "trades": "0",
       "win_rate_pct": "37.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+15.6%",
+      "return_pct": "+12.5%",
       "trades": "1",
       "win_rate_pct": "37.5%"
     }
@@ -109,9 +109,9 @@ On QQQ, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-10-25 → 2026-10-23), the RSI Oversold/Overbought delivered a **+64.8% total return** on QQQ, compounding at **10.5% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the RSI Oversold/Overbought delivered a **+60.5% total return** on QQQ, compounding at **9.9% annually**. 
 
-At **0.39**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.37**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **30.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 31% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **30.6% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.39 | ❌ Weak |
+| Sharpe Ratio | 0.37 | ❌ Weak |
 | Max Drawdown | 30.6% | ⚠️ Significant |
 | Win Rate | 37.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 1.88 | ✅ Good |
@@ -129,7 +129,7 @@ The **profit factor of 1.88** tells the real story: when the RSI fires, the winn
 
 ## Does the RSI Oversold/Overbought Work on QQQ?
 
-The rsi oversold/overbought shows moderate edge on QQQ — **0.39 Sharpe, 1.88 profit factor** over 8 trades. It's not a home run, but it's also not random.
+The rsi oversold/overbought shows moderate edge on QQQ — **0.37 Sharpe, 1.88 profit factor** over 8 trades. It's not a home run, but it's also not random.
 
 The 37.5% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on QQQ](/backtests/rsi-oversold-overbought-qqq-trades.png)

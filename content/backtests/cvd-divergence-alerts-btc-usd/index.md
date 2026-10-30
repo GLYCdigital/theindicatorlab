@@ -1,10 +1,10 @@
 ---
 {
   "title": "CVD \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-26.5%",
+      "return_pct": "-24.1%",
       "trades": "1",
       "win_rate_pct": "24.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-8.1%",
+      "return_pct": "-13.2%",
       "trades": "16",
       "win_rate_pct": "24.0%"
     }
@@ -109,7 +109,7 @@ On BTC, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-10-25 → 2026-10-23), the CVD Divergence Alerts delivered a **+29.6% total return** on BTC-USD, compounding at **5.3% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the CVD Divergence Alerts delivered a **+29.6% total return** on BTC-USD, compounding at **5.3% annually**. 
 
 At **0.24**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on BTC-USD](/backtests/cvd-divergence-alerts-btc-usd-trades.png)

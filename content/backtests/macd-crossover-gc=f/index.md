@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+29.2%"
+      "value": "+31.4%"
     },
     {
       "label": "CAGR",
-      "value": "5.3%"
+      "value": "5.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.29"
+      "value": "0.33"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "38.5%"
+      "value": "40.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.50"
+      "value": "1.54"
     },
     {
       "label": "Total Trades",
-      "value": "52"
+      "value": "50"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.2%",
-      "trades": "1",
-      "win_rate_pct": "38.5%"
+      "return_pct": "+1.8%",
+      "trades": "0",
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2022",
       "return_pct": "+1.4%",
-      "trades": "10",
-      "win_rate_pct": "38.5%"
+      "trades": "9",
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2023",
       "return_pct": "+12.2%",
       "trades": "13",
-      "win_rate_pct": "38.5%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2024",
       "return_pct": "+27.4%",
       "trades": "11",
-      "win_rate_pct": "38.5%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2025",
       "return_pct": "+62.6%",
       "trades": "10",
-      "win_rate_pct": "38.5%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-7.4%",
+      "return_pct": "-10.1%",
       "trades": "7",
-      "win_rate_pct": "38.5%"
+      "win_rate_pct": "40.0%"
     }
   ],
   "cta_headline": "Trade Commodities with TradingView Pro",
@@ -109,9 +109,9 @@ On GC=F, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-10-25 → 2026-10-23), the MACD Crossover delivered a **+29.2% total return** on GC=F, compounding at **5.3% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the MACD Crossover delivered a **+31.4% total return** on GC=F, compounding at **5.6% annually**. 
 
-At **0.29**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.33**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **20.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 21% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,21 +119,21 @@ The catch? A **20.9% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.29 | ❌ Weak |
+| Sharpe Ratio | 0.33 | ❌ Weak |
 | Max Drawdown | 20.9% | ⚠️ Moderate |
-| Win Rate | 38.5% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.50 | ⚠️ Marginal |
-| Trades/Year | ~52 total | Active |
+| Win Rate | 40.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.54 | ✅ Good |
+| Trades/Year | ~50 total | Active |
 
-The **profit factor of 1.50** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 38.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.54** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on GC=F?
 
-The macd crossover struggled to generate meaningful edge on GC=F over this 5-year period. With a **0.29 Sharpe ratio** and **1.50 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover shows moderate edge on GC=F — **0.33 Sharpe, 1.54 profit factor** over 50 trades. It's not a home run, but it's also not random.
 
-This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on GC=F with default parameters over 5 years, it didn't produce a compelling standalone edge.
+The 40.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
-Our take: skip it on GC=F unless you're combining it with other confirmations or using it on different timeframes.
+Our take: usable as a confirmation tool, but not as a standalone system on GC=F. Combine with trend filters or volume confirmation for better results.
 
 
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on GC=F](/backtests/macd-crossover-gc=f-trades.png)

@@ -1,14 +1,14 @@
 ---
 {
   "title": "RSI \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-11.2%"
+      "value": "-11.5%"
     },
     {
       "label": "CAGR",
@@ -36,14 +36,14 @@
     },
     {
       "label": "Avg Trade",
-      "value": "89 days"
+      "value": "90 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-2.7%",
-      "trades": "2",
+      "return_pct": "-2.0%",
+      "trades": "1",
       "win_rate_pct": "20.0%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "-4.7%",
-      "trades": "4",
+      "return_pct": "-5.1%",
+      "trades": "5",
       "win_rate_pct": "20.0%"
     }
   ],
@@ -109,7 +109,7 @@ On EURUSD, the RSI acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-10-25 → 2026-10-23), the RSI Oversold/Overbought delivered a **-11.2% total return** on EURUSD=X, compounding at **-2.4% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the RSI Oversold/Overbought delivered a **-11.5% total return** on EURUSD=X, compounding at **-2.4% annually**. 
 
 At **-0.52**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on EURUSD=X](/backtests/rsi-oversold-overbought-eurusd-trades.png)

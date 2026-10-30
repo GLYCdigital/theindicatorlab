@@ -1,10 +1,10 @@
 ---
 {
   "title": "SMA \u2014 GC=F Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.2%",
+      "return_pct": "+1.8%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-7.4%",
+      "return_pct": "-10.1%",
       "trades": "0",
       "win_rate_pct": "50.0%"
     }
@@ -109,7 +109,7 @@ On GC=F, the SMA acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on GC=F
 
-Over five years (2021-10-25 → 2026-10-23), the Golden Cross delivered a **+79.9% total return** on GC=F, compounding at **12.5% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the Golden Cross delivered a **+79.9% total return** on GC=F, compounding at **12.5% annually**. 
 
 At **0.43**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Professional charting with integrated broker connections for futures and commodi
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on GC=F](/backtests/golden-cross-gc=f-trades.png)

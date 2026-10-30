@@ -1,14 +1,14 @@
 ---
 {
   "title": "MACD \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-24",
+  "date": "2026-10-31",
   "draft": false,
   "type": "backtests",
-  "period": "2021-10-25 \u2192 2026-10-23",
+  "period": "2021-11-01 \u2192 2026-10-30",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+34.3%"
+      "value": "+34.7%"
     },
     {
       "label": "CAGR",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.39"
+      "value": "1.38"
     },
     {
       "label": "Total Trades",
@@ -36,13 +36,13 @@
     },
     {
       "label": "Avg Trade",
-      "value": "19 days"
+      "value": "18 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.6%",
+      "return_pct": "+19.4%",
       "trades": "0",
       "win_rate_pct": "41.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+28.2%",
+      "return_pct": "+27.5%",
       "trades": "7",
       "win_rate_pct": "41.7%"
     }
@@ -109,7 +109,7 @@ On AAPL, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-10-25 → 2026-10-23), the MACD Crossover delivered a **+34.3% total return** on AAPL, compounding at **6.1% annually**. 
+Over five years (2021-11-01 → 2026-10-30), the MACD Crossover delivered a **+34.7% total return** on AAPL, compounding at **6.1% annually**. 
 
 At **0.28**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -122,14 +122,14 @@ The catch? A **25.3% max drawdown**. At some point during this 5-year run, you'd
 | Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 25.3% | ⚠️ Moderate |
 | Win Rate | 41.7% | ⚠️ Below average |
-| Profit Factor | 1.39 | ⚠️ Marginal |
+| Profit Factor | 1.38 | ⚠️ Marginal |
 | Trades/Year | ~48 total | Active |
 
-The **profit factor of 1.39** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 41.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.38** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 41.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on AAPL?
 
-The macd crossover struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.28 Sharpe ratio** and **1.39 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.28 Sharpe ratio** and **1.38 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 24, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on AAPL](/backtests/macd-crossover-aapl-trades.png)
