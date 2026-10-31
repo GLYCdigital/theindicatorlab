@@ -2001,6 +2001,32 @@
       "score": 5.0
     }
   ],
+  "apex-order-block-liquidity-engine-aoble": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "arms-index": [
     {
       "slug": "1-trendline-strategy",
@@ -5103,6 +5129,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -5111,12 +5143,6 @@
     {
       "slug": "choch-identifier",
       "title": "CHOCH Identifier Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
       "rating": 4,
       "score": 9.0
     }
@@ -8940,7 +8966,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.5
+      "score": 10.6
     }
   ],
   "ema-trend-signals": [
@@ -9951,8 +9977,8 @@
       "score": 9.0
     },
     {
-      "slug": "harmonic-rsi-reversal-scanner-dual-wave",
-      "title": "Harmonic RSI Reversal Scanner Dual Wave Review \u2014 Momentum",
+      "slug": "golden-momentum-spectrum-nal",
+      "title": "Golden Momentum Spectrum Nal Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -11453,14 +11479,14 @@
       "score": 5.0
     },
     {
-      "slug": "adaptive-rsi-momentum-engine-algochief",
-      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
       "rating": 4,
       "score": 5.0
     }
@@ -11595,6 +11621,32 @@
       "score": 12.0
     }
   ],
+  "gold-breakout-15m-strategy-willyalgotrader": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "gold-fibonacci-multiple-grid": [
     {
       "slug": "abcd-pattern",
@@ -11671,6 +11723,32 @@
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "golden-momentum-spectrum-nal": [
+    {
+      "slug": "momentum-flow-oscillator",
+      "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 12.3
+    },
+    {
+      "slug": "viprasol-gold-sniper-confluence",
+      "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 12.3
+    },
+    {
+      "slug": "waddah-attar",
+      "title": "Waddah Attar Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 12.3
     }
   ],
   "gravity-trend-adx-strength-meter-quality-scored-dmi-system": [
@@ -13507,14 +13585,14 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -13663,16 +13741,42 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "ict-pullback-setup-smart-ote-fibonacci-levels-radixalgo": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "ict-sessions-killzones": [
@@ -13735,6 +13839,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -13743,12 +13853,6 @@
     {
       "slug": "ict-10am-first-fvg-daily-strategy",
       "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ict-sessions-killzones",
-      "title": "ICT Sessions Killzones Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -14209,14 +14313,14 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -15541,8 +15645,8 @@
       "score": 9.0
     },
     {
-      "slug": "just-pablo-3",
-      "title": "Just Pablo 3 Review \u2014 Trend Indicator",
+      "slug": "golden-momentum-spectrum-nal",
+      "title": "Golden Momentum Spectrum Nal Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15729,6 +15833,32 @@
       "score": 9.0
     }
   ],
+  "liquidity-contour-map-algonorth": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "liquidity-draws": [
     {
       "slug": "3-candle-sweep-maximopartners",
@@ -15853,8 +15983,8 @@
       "score": 9.0
     },
     {
-      "slug": "crt-range-indicator-dynamic-period-grid",
-      "title": "Crt Range Indicator Dynamic Period Grid Review \u2014 Trend",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -15909,6 +16039,32 @@
       "title": "Gs Volcano RSI Liquidity Thermal Map Bit2billions Review",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "liquidity-master-simplealgo": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "liquidity-shift-detection-lsd": [
@@ -15983,8 +16139,8 @@
       "score": 9.0
     },
     {
-      "slug": "cme-institutional-order-flow-amt-lens",
-      "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -16321,8 +16477,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -17881,8 +18037,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -17927,14 +18083,14 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "change-of-character-choch-alert-system-algo-aakash",
-      "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -18135,14 +18291,14 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -18155,6 +18311,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -18163,12 +18325,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
       "rating": 4,
       "score": 9.0
     }
@@ -19519,8 +19675,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -21417,8 +21573,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -24213,6 +24369,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -24221,12 +24383,6 @@
     {
       "slug": "breaker-blocks",
       "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "crt-range-indicator-dynamic-period-grid",
-      "title": "Crt Range Indicator Dynamic Period Grid Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -24491,6 +24647,32 @@
       "score": 9.0
     }
   ],
+  "range-profile-structure-boswaves": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "range-reaper-smart-crt-trading-system": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -24571,6 +24753,12 @@
   ],
   "rate-of-change-roc": [
     {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "acceleration-deceleration-ac-oscillator",
       "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
       "rating": 4,
@@ -24585,12 +24773,6 @@
     {
       "slug": "accelerator-oscillator",
       "title": "Accelerator Oscillator Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -27345,8 +27527,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -27527,8 +27709,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -27593,6 +27775,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -27601,12 +27789,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
       "rating": 4,
       "score": 9.0
     }
@@ -27813,8 +27995,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -27911,14 +28093,14 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "breaker-blocks",
-      "title": "Breaker Blocks Review \u2014 Market Structure Indicator",
+      "slug": "breaker-block-detector-algotim",
+      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -27957,6 +28139,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ict-10am-first-fvg-daily-strategy",
       "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
       "rating": 4,
@@ -27965,12 +28153,6 @@
     {
       "slug": "ict-smart-money-execution-engine",
       "title": "ICT Smart Money Execution Engine Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ict-smc-h4-fvg-retest-m15-scalping-killzones",
-      "title": "ICT SMC H4 FVG Retest M15 Scalping Killzones Review",
       "rating": 4,
       "score": 9.0
     }
@@ -29246,7 +29428,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.3
+      "score": 13.4
     }
   ],
   "strong-gold-signals": [
@@ -29610,7 +29792,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.3
+      "score": 10.4
     }
   ],
   "supertrend-fibonacci-ote-grid-bands": [
@@ -29656,7 +29838,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.5
+      "score": 10.6
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -30915,6 +31097,12 @@
   ],
   "three-black-crows": [
     {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "1-trendline-strategy",
       "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
       "rating": 4,
@@ -30929,12 +31117,6 @@
     {
       "slug": "3-candle-sweep-maximopartners",
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "3-way-bollinger-trend-zynalgo",
-      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -31193,8 +31375,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
       "rating": 4,
       "score": 9.0
     }
@@ -32345,6 +32527,12 @@
   ],
   "trix": [
     {
+      "slug": "ema-ribbon",
+      "title": "EMA Ribbon Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
       "slug": "hull-ma-cross-signal",
       "title": "Hull Ma Cross Signal Review \u2014 Trend Indicator",
       "rating": 4,
@@ -32359,12 +32547,6 @@
     {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "triple-ema",
-      "title": "Triple EMA Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -32793,6 +32975,12 @@
       "score": 9.0
     },
     {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "breaker-block-detector-algotim",
       "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
       "rating": 4,
@@ -32801,12 +32989,6 @@
     {
       "slug": "change-of-character-choch-alert-system-algo-aakash",
       "title": "Change Of Character CHOCH Alert System Algo Aakash Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "dynamic-market-structure-liquidity-engine-dmsl",
-      "title": "Dynamic Market Structure Liquidity Engine Dmsl Review",
       "rating": 4,
       "score": 9.0
     }
@@ -32887,6 +33069,32 @@
       "title": "HTF Scalp System Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "uptrend-and-oversold-index-swing-trading-system-8h": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "uptrick-adaptive-trend-trail": [
@@ -36137,6 +36345,32 @@
       "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "zenith-rsi-volume-pro": [
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bolinger-bands-range-rsi-oscillator",
+      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "breadth-topping-syndrome",
+      "title": "Breadth Topping Syndrome Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "connors-rsi",
+      "title": "Connors RSI Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "zenith-rsi-volume": [
