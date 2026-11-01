@@ -117,6 +117,20 @@ Gator Oscillator is one of those rare free tools that makes you question why any
 
 ---
 
+## If you trade volume, start here
+
+Free scripts are only half the job — the other half is reading participation behind the move. These three are the volume/CVD reviews our readers actually click through to most:
+
+- **[CVD Divergence Alerts Pro](/reviews/cvd-divergence-alerts-pro/)** — spot aggressive buying/selling drying up before price turns
+- **[CVD Profiles TradingIQ](/reviews/cvd-profiles-tradingiq/)** — cumulative delta by price level, not just by time
+- **[Best Volume Indicators on TradingView](/blog/best-volume-indicators-tradingview/)** — the shortlist we keep coming back to
+
+> **Stop guessing which script agrees today.** The Lab Report reads **123 indicators across 20 markets every 15 minutes** and sends one consensus verdict — including volume and CVD confirmation. <a href="https://buy.stripe.com/9B64grdGmeWggu2fLbaAw0m" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$149/mo" data-umami-event-placement="blog-volume-cluster" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-free-tradingview-indicators',placement:'blog-volume-cluster'});">Start a 7-day trial → $149/mo</a> — or [see what it tracks first](/the-lab-report/).
+
+Prefer to test these on a live chart before committing? <a href="https://www.tradingview.com/?aff_id=166324" target="_blank" rel="noopener" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_tradingview',{target:'tradingview',review:'best-free-tradingview-indicators',placement:'blog-volume-cluster'});">Open TradingView free</a> — free plan covers every indicator on this page.
+
+---
+
 ## Bottom Line
 
 If you're setting up a TradingView chart and wondering where to start, this list covers the ground. Each indicator here earned its spot through actual testing — not marketing copy.
