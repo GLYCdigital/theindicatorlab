@@ -1,38 +1,38 @@
 ---
 {
   "title": "Volume \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-16.6%"
+      "value": "-12.0%"
     },
     {
       "label": "CAGR",
-      "value": "-3.6%"
+      "value": "-2.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-1.83"
+      "value": "-1.52"
     },
     {
       "label": "Max Drawdown",
-      "value": "16.6%"
+      "value": "12.0%"
     },
     {
       "label": "Win Rate",
-      "value": "41.7%"
+      "value": "43.5%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.31"
+      "value": "0.39"
     },
     {
       "label": "Total Trades",
-      "value": "24"
+      "value": "23"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.4%",
-      "trades": "1",
-      "win_rate_pct": "41.7%"
+      "return_pct": "+18.0%",
+      "trades": "0",
+      "win_rate_pct": "43.5%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "1",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "43.5%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "6",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "43.5%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "7",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "43.5%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "5",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "43.5%"
     },
     {
       "year": "2026",
-      "return_pct": "+27.5%",
+      "return_pct": "+27.3%",
       "trades": "4",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "43.5%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,27 +109,27 @@ On AAPL, the Volume acts as a trend filter. It won't catch every exact bottom, b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-11-01 → 2026-10-30), the Volume Spike Breakout delivered a **-16.6% total return** on AAPL, compounding at **-3.6% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the Volume Spike Breakout delivered a **-12.0% total return** on AAPL, compounding at **-2.5% annually**. 
 
-At **-1.83**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-1.52**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **16.6% max drawdown**. At some point during this 5-year run, you'd have been down nearly 17% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **12.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 12% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -1.83 | ❌ Weak |
-| Max Drawdown | 16.6% | ⚠️ Moderate |
-| Win Rate | 41.7% | ⚠️ Below average |
-| Profit Factor | 0.31 | ❌ Unprofitable |
-| Trades/Year | ~24 total | Selective — not overtrading |
+| Sharpe Ratio | -1.52 | ❌ Weak |
+| Max Drawdown | 12.0% | ✅ Low |
+| Win Rate | 43.5% | ⚠️ Below average |
+| Profit Factor | 0.39 | ❌ Unprofitable |
+| Trades/Year | ~23 total | Selective — not overtrading |
 
-The **profit factor of 0.31** tells the real story: when the Volume fires, the winning signals don't outweigh the losers. Combined with a 41.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.39** tells the real story: when the Volume fires, the winning signals don't outweigh the losers. Combined with a 43.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Volume Spike Breakout Work on AAPL?
 
-The volume spike breakout struggled to generate meaningful edge on AAPL over this 5-year period. With a **-1.83 Sharpe ratio** and **0.31 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The volume spike breakout struggled to generate meaningful edge on AAPL over this 5-year period. With a **-1.52 Sharpe ratio** and **0.39 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Volume is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Volume Spike Breakout — Trade Signals on AAPL](/backtests/volume-spike-breakout-aapl-trades.png)

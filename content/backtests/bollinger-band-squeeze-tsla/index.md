@@ -1,26 +1,26 @@
 ---
 {
   "title": "BollingerBands \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+62.5%"
+      "value": "+43.9%"
     },
     {
       "label": "CAGR",
-      "value": "10.2%"
+      "value": "7.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.32"
+      "value": "0.26"
     },
     {
       "label": "Max Drawdown",
-      "value": "39.9%"
+      "value": "42.2%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.22"
+      "value": "1.16"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-12.6%",
+      "return_pct": "-9.1%",
       "trades": "1",
       "win_rate_pct": "27.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-9.8%",
+      "return_pct": "-18.1%",
       "trades": "12",
       "win_rate_pct": "27.7%"
     }
@@ -109,31 +109,31 @@ On TSLA, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-11-01 → 2026-10-30), the Bollinger Band Squeeze delivered a **+62.5% total return** on TSLA, compounding at **10.2% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the Bollinger Band Squeeze delivered a **+43.9% total return** on TSLA, compounding at **7.5% annually**. 
 
-At **0.32**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.26**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **39.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 40% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **42.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 42% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.32 | ❌ Weak |
-| Max Drawdown | 39.9% | ⚠️ Significant |
+| Sharpe Ratio | 0.26 | ❌ Weak |
+| Max Drawdown | 42.2% | ⚠️ Significant |
 | Win Rate | 27.7% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.22 | ⚠️ Marginal |
+| Profit Factor | 1.16 | ⚠️ Marginal |
 | Trades/Year | ~65 total | Active |
 
-The **profit factor of 1.22** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 27.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.16** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 27.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Bollinger Band Squeeze Work on TSLA?
 
-The bollinger band squeeze shows moderate edge on TSLA — **0.32 Sharpe, 1.22 profit factor** over 65 trades. It's not a home run, but it's also not random.
+The bollinger band squeeze struggled to generate meaningful edge on TSLA over this 5-year period. With a **0.26 Sharpe ratio** and **1.16 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
-The 27.7% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on TSLA with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
-Our take: usable as a confirmation tool, but not as a standalone system on TSLA. Combine with trend filters or volume confirmation for better results.
+Our take: skip it on TSLA unless you're combining it with other confirmations or using it on different timeframes.
 
 
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on TSLA](/backtests/bollinger-band-squeeze-tsla-trades.png)

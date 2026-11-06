@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-31.3%"
+      "value": "-32.2%"
     },
     {
       "label": "CAGR",
-      "value": "-7.2%"
+      "value": "-7.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "56.3%"
+      "value": "56.9%"
     },
     {
       "label": "Win Rate",
-      "value": "33.3%"
+      "value": "32.9%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "75"
+      "value": "76"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-24.1%",
-      "trades": "2",
-      "win_rate_pct": "33.3%"
+      "return_pct": "-31.5%",
+      "trades": "3",
+      "win_rate_pct": "32.9%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
       "trades": "14",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.9%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "16",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.9%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "16",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.9%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "14",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.9%"
     },
     {
       "year": "2026",
-      "return_pct": "-13.2%",
+      "return_pct": "-14.7%",
       "trades": "13",
-      "win_rate_pct": "33.3%"
+      "win_rate_pct": "32.9%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,23 +109,23 @@ On BTC, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-01 → 2026-10-30), the Parabolic SAR delivered a **-31.3% total return** on BTC-USD, compounding at **-7.2% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the Parabolic SAR delivered a **-32.2% total return** on BTC-USD, compounding at **-7.5% annually**. 
 
 At **-0.07**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **56.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 56% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **56.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 57% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | -0.07 | ❌ Weak |
-| Max Drawdown | 56.3% | ⚠️ Significant |
-| Win Rate | 33.3% | ❌ Low — relies on outsized wins |
+| Max Drawdown | 56.9% | ⚠️ Significant |
+| Win Rate | 32.9% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.82 | ❌ Unprofitable |
-| Trades/Year | ~75 total | Active |
+| Trades/Year | ~76 total | Active |
 
-The **profit factor of 0.82** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 33.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.82** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 32.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on BTC?
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on BTC-USD](/backtests/parabolic-sar-btc-usd-trades.png)

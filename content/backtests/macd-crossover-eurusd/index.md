@@ -1,14 +1,14 @@
 ---
 {
   "title": "MACD \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-10.2%"
+      "value": "-10.3%"
     },
     {
       "label": "CAGR",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-2.0%",
+      "return_pct": "-2.1%",
       "trades": "0",
       "win_rate_pct": "38.6%"
     },
@@ -109,7 +109,7 @@ On EURUSD, the MACD acts as a trend filter. It won't catch every exact bottom, b
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-11-01 → 2026-10-30), the MACD Crossover delivered a **-10.2% total return** on EURUSD=X, compounding at **-2.1% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the MACD Crossover delivered a **-10.3% total return** on EURUSD=X, compounding at **-2.1% annually**. 
 
 At **-0.91**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on EURUSD=X](/backtests/macd-crossover-eurusd-trades.png)

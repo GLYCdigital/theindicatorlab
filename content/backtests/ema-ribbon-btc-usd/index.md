@@ -1,10 +1,10 @@
 ---
 {
   "title": "EMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "1.62"
+      "value": "1.61"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-24.1%",
+      "return_pct": "-31.5%",
       "trades": "0",
       "win_rate_pct": "31.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-13.2%",
+      "return_pct": "-14.7%",
       "trades": "8",
       "win_rate_pct": "31.4%"
     }
@@ -109,7 +109,7 @@ On BTC, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-01 → 2026-10-30), the EMA Ribbon delivered a **+88.8% total return** on BTC-USD, compounding at **13.6% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the EMA Ribbon delivered a **+88.8% total return** on BTC-USD, compounding at **13.6% annually**. 
 
 At **0.40**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -122,14 +122,14 @@ The catch? A **42.8% max drawdown**. At some point during this 5-year run, you'd
 | Sharpe Ratio | 0.40 | ❌ Weak |
 | Max Drawdown | 42.8% | ⚠️ Significant |
 | Win Rate | 31.4% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.62 | ✅ Good |
+| Profit Factor | 1.61 | ✅ Good |
 | Trades/Year | ~35 total | Active |
 
-The **profit factor of 1.62** tells the real story: when the EMA fires, the winning signals are larger than the losing ones. Combined with a 31.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.61** tells the real story: when the EMA fires, the winning signals are larger than the losing ones. Combined with a 31.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the EMA Ribbon Work on BTC?
 
-The ema ribbon shows moderate edge on BTC — **0.40 Sharpe, 1.62 profit factor** over 35 trades. It's not a home run, but it's also not random.
+The ema ribbon shows moderate edge on BTC — **0.40 Sharpe, 1.61 profit factor** over 35 trades. It's not a home run, but it's also not random.
 
 The 31.4% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on BTC-USD](/backtests/ema-ribbon-btc-usd-trades.png)

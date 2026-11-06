@@ -1,22 +1,22 @@
 ---
 {
   "title": "Swing \u2014 ETH Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+14.7%"
+      "value": "+6.0%"
     },
     {
       "label": "CAGR",
-      "value": "2.8%"
+      "value": "1.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.13"
+      "value": "0.08"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "22.7%"
+      "value": "22.4%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.05"
+      "value": "1.02"
     },
     {
       "label": "Total Trades",
-      "value": "97"
+      "value": "98"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-14.8%",
+      "return_pct": "-23.5%",
       "trades": "4",
-      "win_rate_pct": "22.7%"
+      "win_rate_pct": "22.4%"
     },
     {
       "year": "2022",
       "return_pct": "-68.3%",
       "trades": "16",
-      "win_rate_pct": "22.7%"
+      "win_rate_pct": "22.4%"
     },
     {
       "year": "2023",
       "return_pct": "+90.0%",
       "trades": "20",
-      "win_rate_pct": "22.7%"
+      "win_rate_pct": "22.4%"
     },
     {
       "year": "2024",
       "return_pct": "+41.7%",
       "trades": "17",
-      "win_rate_pct": "22.7%"
+      "win_rate_pct": "22.4%"
     },
     {
       "year": "2025",
       "return_pct": "-11.5%",
       "trades": "21",
-      "win_rate_pct": "22.7%"
+      "win_rate_pct": "22.4%"
     },
     {
       "year": "2026",
-      "return_pct": "-25.3%",
-      "trades": "19",
-      "win_rate_pct": "22.7%"
+      "return_pct": "-25.9%",
+      "trades": "20",
+      "win_rate_pct": "22.4%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,9 +109,9 @@ On ETH, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on ETH
 
-Over five years (2021-11-01 → 2026-10-30), the Market Structure Pro delivered a **+14.7% total return** on ETH-USD, compounding at **2.8% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the Market Structure Pro delivered a **+6.0% total return** on ETH-USD, compounding at **1.2% annually**. 
 
-At **0.13**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.08**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 50% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **49.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.13 | ❌ Weak |
+| Sharpe Ratio | 0.08 | ❌ Weak |
 | Max Drawdown | 49.8% | ⚠️ Significant |
-| Win Rate | 22.7% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.05 | ⚠️ Marginal |
-| Trades/Year | ~97 total | Active |
+| Win Rate | 22.4% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.02 | ⚠️ Marginal |
+| Trades/Year | ~98 total | Active |
 
-The **profit factor of 1.05** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 22.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.02** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 22.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Market Structure Pro Work on ETH?
 
-The market structure pro struggled to generate meaningful edge on ETH over this 5-year period. With a **0.13 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on ETH over this 5-year period. With a **0.08 Sharpe ratio** and **1.02 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on ETH with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on ETH-USD](/backtests/market-structure-pro-eth-usd-trades.png)

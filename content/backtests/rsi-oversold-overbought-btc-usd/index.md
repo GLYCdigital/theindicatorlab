@@ -1,80 +1,80 @@
 ---
 {
   "title": "RSI \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+45.0%"
+      "value": "-2.9%"
     },
     {
       "label": "CAGR",
-      "value": "7.7%"
+      "value": "-0.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.35"
+      "value": "0.27"
     },
     {
       "label": "Max Drawdown",
-      "value": "69.4%"
+      "value": "77.1%"
     },
     {
       "label": "Win Rate",
-      "value": "23.8%"
+      "value": "20.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.11"
+      "value": "0.81"
     },
     {
       "label": "Total Trades",
-      "value": "21"
+      "value": "25"
     },
     {
       "label": "Avg Trade",
-      "value": "78 days"
+      "value": "66 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-24.1%",
-      "trades": "0",
-      "win_rate_pct": "23.8%"
+      "return_pct": "-31.5%",
+      "trades": "3",
+      "win_rate_pct": "20.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
-      "trades": "8",
-      "win_rate_pct": "23.8%"
+      "trades": "9",
+      "win_rate_pct": "20.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "2",
-      "win_rate_pct": "23.8%"
+      "win_rate_pct": "20.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "3",
-      "win_rate_pct": "23.8%"
+      "win_rate_pct": "20.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "4",
-      "win_rate_pct": "23.8%"
+      "win_rate_pct": "20.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-13.2%",
+      "return_pct": "-14.7%",
       "trades": "4",
-      "win_rate_pct": "23.8%"
+      "win_rate_pct": "20.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,31 +109,31 @@ On BTC, the RSI acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-01 → 2026-10-30), the RSI Oversold/Overbought delivered a **+45.0% total return** on BTC-USD, compounding at **7.7% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the RSI Oversold/Overbought delivered a **-2.9% total return** on BTC-USD, compounding at **-0.6% annually**. 
 
-At **0.35**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.27**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **69.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 69% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **77.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 77% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.35 | ❌ Weak |
-| Max Drawdown | 69.4% | ⚠️ Significant |
-| Win Rate | 23.8% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.11 | ⚠️ Marginal |
-| Trades/Year | ~21 total | Selective — not overtrading |
+| Sharpe Ratio | 0.27 | ❌ Weak |
+| Max Drawdown | 77.1% | ⚠️ Significant |
+| Win Rate | 20.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.81 | ❌ Unprofitable |
+| Trades/Year | ~25 total | Selective — not overtrading |
 
-The **profit factor of 1.11** tells the real story: when the RSI fires, the winning signals are larger than the losing ones. Combined with a 23.8% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.81** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 20.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the RSI Oversold/Overbought Work on BTC?
 
-The rsi oversold/overbought shows moderate edge on BTC — **0.35 Sharpe, 1.11 profit factor** over 21 trades. It's not a home run, but it's also not random.
+The rsi oversold/overbought struggled to generate meaningful edge on BTC over this 5-year period. With a **0.27 Sharpe ratio** and **0.81 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
-The 23.8% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
-Our take: usable as a confirmation tool, but not as a standalone system on BTC. Combine with trend filters or volume confirmation for better results.
+Our take: skip it on BTC unless you're combining it with other confirmations or using it on different timeframes.
 
 
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on BTC-USD](/backtests/rsi-oversold-overbought-btc-usd-trades.png)

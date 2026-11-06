@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+45.6%"
+      "value": "+34.0%"
     },
     {
       "label": "CAGR",
-      "value": "7.8%"
+      "value": "6.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.33"
+      "value": "0.25"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "43.1%"
+      "value": "42.3%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.50"
+      "value": "1.45"
     },
     {
       "label": "Total Trades",
-      "value": "51"
+      "value": "52"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+19.4%",
+      "return_pct": "+18.0%",
       "trades": "0",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.3%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "11",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.3%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "8",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.3%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "11",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.3%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "12",
-      "win_rate_pct": "43.1%"
+      "win_rate_pct": "42.3%"
     },
     {
       "year": "2026",
-      "return_pct": "+27.5%",
-      "trades": "9",
-      "win_rate_pct": "43.1%"
+      "return_pct": "+27.3%",
+      "trades": "10",
+      "win_rate_pct": "42.3%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On AAPL, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-11-01 → 2026-10-30), the Bollinger Band Squeeze delivered a **+45.6% total return** on AAPL, compounding at **7.8% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the Bollinger Band Squeeze delivered a **+34.0% total return** on AAPL, compounding at **6.0% annually**. 
 
-At **0.33**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.25**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,21 +119,21 @@ The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.33 | ❌ Weak |
+| Sharpe Ratio | 0.25 | ❌ Weak |
 | Max Drawdown | 26.4% | ⚠️ Moderate |
-| Win Rate | 43.1% | ⚠️ Below average |
-| Profit Factor | 1.50 | ⚠️ Marginal |
-| Trades/Year | ~51 total | Active |
+| Win Rate | 42.3% | ⚠️ Below average |
+| Profit Factor | 1.45 | ⚠️ Marginal |
+| Trades/Year | ~52 total | Active |
 
-The **profit factor of 1.50** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 43.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.45** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 42.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Bollinger Band Squeeze Work on AAPL?
 
-The bollinger band squeeze shows moderate edge on AAPL — **0.33 Sharpe, 1.50 profit factor** over 51 trades. It's not a home run, but it's also not random.
+The bollinger band squeeze struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.25 Sharpe ratio** and **1.45 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
-The 43.1% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
-Our take: usable as a confirmation tool, but not as a standalone system on AAPL. Combine with trend filters or volume confirmation for better results.
+Our take: skip it on AAPL unless you're combining it with other confirmations or using it on different timeframes.
 
 
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on AAPL](/backtests/bollinger-band-squeeze-aapl-trades.png)

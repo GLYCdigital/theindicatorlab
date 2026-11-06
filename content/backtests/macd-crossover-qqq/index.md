@@ -1,22 +1,22 @@
 ---
 {
   "title": "MACD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+3.6%"
+      "value": "+7.9%"
     },
     {
       "label": "CAGR",
-      "value": "0.7%"
+      "value": "1.5%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.02"
+      "value": "0.02"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "40.4%"
+      "value": "41.3%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.05"
+      "value": "1.11"
     },
     {
       "label": "Total Trades",
-      "value": "47"
+      "value": "46"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+2.8%",
-      "trades": "1",
-      "win_rate_pct": "40.4%"
+      "return_pct": "+0.1%",
+      "trades": "0",
+      "win_rate_pct": "41.3%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "8",
-      "win_rate_pct": "40.4%"
+      "win_rate_pct": "41.3%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "8",
-      "win_rate_pct": "40.4%"
+      "win_rate_pct": "41.3%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "13",
-      "win_rate_pct": "40.4%"
+      "win_rate_pct": "41.3%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "10",
-      "win_rate_pct": "40.4%"
+      "win_rate_pct": "41.3%"
     },
     {
       "year": "2026",
-      "return_pct": "+12.5%",
+      "return_pct": "+7.4%",
       "trades": "7",
-      "win_rate_pct": "40.4%"
+      "win_rate_pct": "41.3%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On QQQ, the MACD acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-01 → 2026-10-30), the MACD Crossover delivered a **+3.6% total return** on QQQ, compounding at **0.7% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the MACD Crossover delivered a **+7.9% total return** on QQQ, compounding at **1.5% annually**. 
 
-At **-0.02**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.02**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **22.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 23% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **22.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.02 | ❌ Weak |
+| Sharpe Ratio | 0.02 | ❌ Weak |
 | Max Drawdown | 22.8% | ⚠️ Moderate |
-| Win Rate | 40.4% | ⚠️ Below average |
-| Profit Factor | 1.05 | ⚠️ Marginal |
-| Trades/Year | ~47 total | Active |
+| Win Rate | 41.3% | ⚠️ Below average |
+| Profit Factor | 1.11 | ⚠️ Marginal |
+| Trades/Year | ~46 total | Active |
 
-The **profit factor of 1.05** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 40.4% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.11** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 41.3% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on QQQ?
 
-The macd crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.02 Sharpe ratio** and **1.05 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.02 Sharpe ratio** and **1.11 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on QQQ](/backtests/macd-crossover-qqq-trades.png)

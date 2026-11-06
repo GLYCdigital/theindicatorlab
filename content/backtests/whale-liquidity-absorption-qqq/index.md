@@ -1,38 +1,38 @@
 ---
 {
   "title": "Volume \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-10-31",
+  "date": "2026-11-07",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-01 \u2192 2026-10-30",
+  "period": "2021-11-08 \u2192 2026-11-06",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-1.1%"
+      "value": "-3.1%"
     },
     {
       "label": "CAGR",
-      "value": "-0.2%"
+      "value": "-0.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-2.09"
+      "value": "-2.02"
     },
     {
       "label": "Max Drawdown",
-      "value": "4.5%"
+      "value": "5.8%"
     },
     {
       "label": "Win Rate",
-      "value": "50.0%"
+      "value": "40.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.80"
+      "value": "0.61"
     },
     {
       "label": "Total Trades",
-      "value": "8"
+      "value": "10"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+2.8%",
+      "return_pct": "+0.1%",
       "trades": "0",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "1",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "0",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "2",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "3",
-      "win_rate_pct": "50.0%"
+      "win_rate_pct": "40.0%"
     },
     {
       "year": "2026",
-      "return_pct": "+12.5%",
-      "trades": "2",
-      "win_rate_pct": "50.0%"
+      "return_pct": "+7.4%",
+      "trades": "4",
+      "win_rate_pct": "40.0%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,27 +109,27 @@ On QQQ, the Volume acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-01 → 2026-10-30), the Whale Liquidity / Absorption Profile delivered a **-1.1% total return** on QQQ, compounding at **-0.2% annually**. 
+Over five years (2021-11-08 → 2026-11-06), the Whale Liquidity / Absorption Profile delivered a **-3.1% total return** on QQQ, compounding at **-0.6% annually**. 
 
-At **-2.09**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-2.02**, the Volume earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **4.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 4% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **5.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 6% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -2.09 | ❌ Weak |
-| Max Drawdown | 4.5% | ✅ Low |
-| Win Rate | 50.0% | ⚠️ Below average |
-| Profit Factor | 0.80 | ❌ Unprofitable |
-| Trades/Year | ~8 total | Selective — not overtrading |
+| Sharpe Ratio | -2.02 | ❌ Weak |
+| Max Drawdown | 5.8% | ✅ Low |
+| Win Rate | 40.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.61 | ❌ Unprofitable |
+| Trades/Year | ~10 total | Selective — not overtrading |
 
-The **profit factor of 0.80** tells the real story: when the Volume fires, the winning signals don't outweigh the losers. Combined with a 50.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.61** tells the real story: when the Volume fires, the winning signals don't outweigh the losers. Combined with a 40.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Whale Liquidity / Absorption Profile Work on QQQ?
 
-The whale liquidity / absorption profile struggled to generate meaningful edge on QQQ over this 5-year period. With a **-2.09 Sharpe ratio** and **0.80 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The whale liquidity / absorption profile struggled to generate meaningful edge on QQQ over this 5-year period. With a **-2.02 Sharpe ratio** and **0.61 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Volume is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: October 31, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Whale Liquidity / Absorption Profile — Trade Signals on QQQ](/backtests/whale-liquidity-absorption-qqq-trades.png)
