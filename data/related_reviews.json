@@ -12334,19 +12334,19 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 12.4
+      "score": 12.5
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.4
+      "score": 12.5
     },
     {
       "slug": "waddah-attar",
       "title": "Waddah Attar Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.4
+      "score": 12.5
     }
   ],
   "gravity-trend-adx-strength-meter-quality-scored-dmi-system": [
@@ -15439,6 +15439,32 @@
     {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
+  "kabir-auto-multi-tf-closes-pivots-mlma-poc-liquidity": [
+    {
+      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
+      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "session-vp",
+      "title": "Session Vp Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -20671,6 +20697,12 @@
   ],
   "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat": [
     {
+      "slug": "kabir-auto-multi-tf-closes-pivots-mlma-poc-liquidity",
+      "title": "Kabir Auto Multi Tf Closes Pivots Mlma POC Liquidity Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "session-vp",
       "title": "Session Vp Review \u2014 Trend Indicator",
       "rating": 4,
@@ -20685,12 +20717,6 @@
     {
       "slug": "3d-market-profile-boswaves",
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
-      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
       "rating": 4,
       "score": 9.0
     }
@@ -21570,7 +21596,7 @@
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.6
+      "score": 7.5
     },
     {
       "slug": "mfi-mtf",
@@ -27821,6 +27847,12 @@
   ],
   "session-vp": [
     {
+      "slug": "kabir-auto-multi-tf-closes-pivots-mlma-poc-liquidity",
+      "title": "Kabir Auto Multi Tf Closes Pivots Mlma POC Liquidity Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
       "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
       "rating": 4,
@@ -27835,12 +27867,6 @@
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
       "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
-      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
       "rating": 4,
       "score": 9.0
     }
@@ -28443,6 +28469,32 @@
       "score": 5.0
     }
   ],
+  "smart-money-absorption-radar-thomas": [
+    {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "institutional-order-flow",
+      "title": "Institutional Order Flow Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow",
+      "title": "Liquidity Absorption And Rejection Orderflow Review",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "smart-money-breakout-channels-jos-protrader": [
     {
       "slug": "aj-ict-smc",
@@ -28467,6 +28519,32 @@
       "title": "CVD Review \u2014 Volume Indicator",
       "rating": 3,
       "score": 12.0
+    }
+  ],
+  "smart-money-concept-martineye15": [
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "almazov-trade-smt-monitor",
+      "title": "Almazov Trade Smt Monitor Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "smart-money-concept-ml-pickmytrade": [
@@ -28515,10 +28593,10 @@
       "score": 13.0
     },
     {
-      "slug": "liquidity-sweep-detector",
-      "title": "Liquidity Sweep Detector Review \u2014 Market Structure Indicator",
+      "slug": "smart-money-absorption-radar-thomas",
+      "title": "Smart Money Absorption Radar Thomas Review \u2014 Volume",
       "rating": 4,
-      "score": 9.7
+      "score": 11.6
     }
   ],
   "smart-money-concepts-axealgo": [
@@ -30950,7 +31028,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.4
+      "score": 12.5
     },
     {
       "slug": "signal-fusion-engine",
@@ -36644,7 +36722,7 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 15.4
+      "score": 15.5
     },
     {
       "slug": "rsi-macd-combo",
@@ -36785,6 +36863,32 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "weighted-extreme": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
