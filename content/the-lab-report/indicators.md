@@ -3,12 +3,12 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 153 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 158 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** November 1, 2026 · **153 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** November 8, 2026 · **158 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
@@ -64,7 +64,7 @@ Indicators that measure the speed and strength of price movement.
 | Cardwell RSI 🆕 | [→ Full review](/reviews/cardwell-rsi-trade-navigator/) |
 | DeMarker 🆕 | [→ Full review](/reviews/demarker-indicator/) |
 
-## Trend (54)
+## Trend (57)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -124,8 +124,11 @@ Indicators that identify direction and strength of the prevailing trend.
 | Trend Pressure 🆕 | [→ Full review](/reviews/trend-pressure/) |
 | Fibonacci Retracement 🆕 | [→ Full review](/reviews/fibonacci-retracement/) |
 | Camarilla Pivots 🆕 | [→ Full review](/reviews/pivot-points-camarilla/) |
+| Head and Shoulders 🆕 | [→ Full review](/reviews/head-and-shoulders/) |
+| Gann Fan 🆕 | [→ Full review](/reviews/gann-fan/) |
+| Andrews Pitchfork 🆕 | [→ Full review](/reviews/andrews-pitchfork/) |
 
-## Volume (26)
+## Volume (28)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -157,6 +160,8 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Order Flow Imbalance 🆕 | [→ Full review](/reviews/order-flow-imbalance/) |
 | Buyers & Sellers Profile 🆕 | [→ Full review](/reviews/buyers-sellers-profile-dynamic-s-r/) |
 | Volume Rate of Change 🆕 | [→ Full review](/reviews/volume-rate-of-change/) |
+| Williams Variable A/D Pressure 🆕 | [→ Full review](/reviews/williams-variable-a-d-pressure/) |
+| Positive Volume Index 🆕 | [→ Full review](/reviews/positive-volume-index/) |
 
 ## Volatility (28)
 
