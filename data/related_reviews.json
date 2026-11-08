@@ -8631,6 +8631,32 @@
       "score": 5.0
     }
   ],
+  "edo-range-state": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "edo-swing-levels": [
     {
       "slug": "1-trendline-strategy",
@@ -8733,6 +8759,32 @@
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "efficiency-weighted-hull-backquant": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "ehlers-adaptive-stochastic": [
@@ -9697,6 +9749,32 @@
       "score": 12.0
     }
   ],
+  "ema-rmsd-bands-nj": [
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "ema-rsi-vwap-targets": [
     {
       "slug": "viprasol-gold-sniper-confluence",
@@ -9746,7 +9824,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.6
+      "score": 10.7
     }
   ],
   "ema-trend-signals": [
@@ -9783,6 +9861,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-rmsd-bands-nj",
+      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "jurik-volatility-bands",
       "title": "Jurik Volatility Bands Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -9791,12 +9875,6 @@
     {
       "slug": "mesa-phase-adaptive-band-trend-schizoquant",
       "title": "Mesa Phase Adaptive Band Trend Schizoquant Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "moving-average-envelope",
-      "title": "Moving Average Envelope Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -10451,6 +10529,32 @@
       "score": 8.0
     }
   ],
+  "fakeout-swing-high-low-signals-jpt": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "false-breakout-trap-scanner-algochief": [
     {
       "slug": "3-candle-sweep-maximopartners",
@@ -10681,6 +10785,32 @@
     {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "fibonacci-gravity-clusters-gbb": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     }
@@ -11976,7 +12106,7 @@
       "slug": "gann-fan",
       "title": "Gann Fan Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 5.6
+      "score": 5.7
     },
     {
       "slug": "1-trendline-strategy",
@@ -15639,14 +15769,14 @@
       "score": 13.0
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik Volatility Bands Review \u2014 Volatility Indicator",
+      "slug": "ema-rmsd-bands-nj",
+      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "mesa-phase-adaptive-band-trend-schizoquant",
-      "title": "Mesa Phase Adaptive Band Trend Schizoquant Review",
+      "slug": "jurik-volatility-bands",
+      "title": "Jurik Volatility Bands Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -15671,8 +15801,8 @@
       "score": 13.0
     },
     {
-      "slug": "ema30-band-breakout-by-el-cober",
-      "title": "Ema30 Band Breakout By El Cober Review \u2014 Volatility",
+      "slug": "ema-rmsd-bands-nj",
+      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -18967,14 +19097,14 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
       "score": 8.0
     },
     {
-      "slug": "adaptive-trend-line",
-      "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
     }
@@ -20299,8 +20429,8 @@
       "score": 13.0
     },
     {
-      "slug": "ema30-band-breakout-by-el-cober",
-      "title": "Ema30 Band Breakout By El Cober Review \u2014 Volatility",
+      "slug": "ema-rmsd-bands-nj",
+      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -21882,7 +22012,7 @@
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.5
+      "score": 7.6
     },
     {
       "slug": "mfi-mtf",
@@ -31346,7 +31476,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.6
+      "score": 10.7
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -31502,7 +31632,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.9
+      "score": 12.8
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -37066,13 +37196,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.2
+      "score": 13.3
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.2
+      "score": 13.3
     }
   ],
   "walk-forward-optimization": [
