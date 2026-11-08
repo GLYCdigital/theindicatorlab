@@ -18,7 +18,7 @@ A 5-star rating from The Indicator Lab means an indicator delivers on its promis
 
 Our selection spans 9 trend indicators.
 
-We went through our full archive of 558 reviews and selected the top performers by rating, reliability, and practical utility. Every indicator listed here has been tested on live TradingView charts and evaluated for signal quality, repainting behaviour, and ease of use.
+We went through our full archive of 1,477 reviews and selected the top performers by rating, reliability, and practical utility. Every indicator listed here has been tested on live TradingView charts and evaluated for signal quality, repainting behaviour, and ease of use.
 
 ---
 
@@ -87,7 +87,7 @@ If you're setting up a TradingView chart and wondering where to start, this list
 
 Our selection spans 9 trend indicators. The average rating across this group is **5.0/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
-**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 1,477 reviews across every category on TradingView.
 
 ## Test These on TradingView
 

@@ -115,7 +115,7 @@ If you're setting up a TradingView chart and wondering where to start, this list
 
 Our selection spans 7 trend indicators, 3 free indicators. The average rating across this group is **4.1/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
-**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 1,477 reviews across every category on TradingView.
 
 <div class="blog-labreport-cta" style="margin:1.75rem 0;padding:1.4rem 1.5rem;background:linear-gradient(135deg,var(--card-bg) 0%,rgba(59,130,246,0.06) 100%);border:2px solid #3b82f6;border-radius:var(--radius-lg);">
 <p style="margin:0 0 .5rem;font-weight:700;font-size:1.25rem;">🔬 123 indicators is too many to watch. One is too few to trust.</p>

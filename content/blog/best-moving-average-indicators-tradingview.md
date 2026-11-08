@@ -93,7 +93,7 @@ If you're setting up a TradingView chart and wondering where to start, this list
 
 Our selection spans 7 trend indicators, 3 momentum indicators. The average rating across this group is **4.0/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
-**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 1,477 reviews across every category on TradingView.
 
 ---
 

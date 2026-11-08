@@ -18,7 +18,7 @@ You don't need a paid subscription on TradingView to build a solid toolkit. The 
 
 All indicators on this list are free — no paywalls, no limited trials, just genuinely useful community scripts.
 
-We went through our full archive of 558 reviews and selected the top performers by rating, reliability, and practical utility. Every indicator listed here has been tested on live TradingView charts and evaluated for signal quality, repainting behaviour, and ease of use.
+We went through our full archive of 1,477 reviews and selected the top performers by rating, reliability, and practical utility. Every indicator listed here has been tested on live TradingView charts and evaluated for signal quality, repainting behaviour, and ease of use.
 
 > **Want to test these on live charts right now?** TradingView's free plan covers everything below. For multi-chart setups, unlimited indicators, and no ads, [upgrade to Pro](https://www.tradingview.com/?aff_id=166324) — $15 off your first month with our link.
 
@@ -137,7 +137,7 @@ If you're setting up a TradingView chart and wondering where to start, this list
 
 All indicators on this list are free — no paywalls, no limited trials, just genuinely useful community scripts. The average rating across this group is **4.0/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
-**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 1,477 reviews across every category on TradingView.
 
 ---
 

@@ -126,9 +126,17 @@ If you're setting up a TradingView chart and wondering where to start, this list
 
 Our selection spans 9 trend indicators, 1 free indicators. The average rating across this group is **4.0/5**, which reflects consistent quality rather than a few standouts pulling the average up.
 
-**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 558 reviews across every category on TradingView.
+**Not seeing what you're looking for?** Browse our full [indicator review archive](/reviews/) with 1,477 reviews across every category on TradingView.
 
 **Also popular this week:** [Volume Profile review](/reviews/volume-profile/) · [Cumulative Volume Delta](/reviews/cumulative-volume-delta/) · [Best volume indicators](/blog/best-volume-indicators-tradingview/).
+
+## Every ML Script Still Needs a Verdict
+
+Nine of these ten scripts disagree with each other on any given day — that's the whole problem with ML indicators. You can stack three of them on one chart and get three different probabilities.
+
+🔬 **The Lab Report** runs **123 indicators across 20 markets every 15 minutes** and delivers one consensus verdict to your phone. If you're using ML indicators to rank setups, this is the scoring layer underneath them. <a href="https://buy.stripe.com/9B64grdGmeWggu2fLbaAw0m" data-umami-event="stripe_click" data-umami-event-product="lab-report" data-umami-event-name="Lab Report" data-umami-event-price="$149/mo" data-umami-event-placement="blog-ml-cluster" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-report',{target:'lab-report',review:'best-machine-learning-indicators-tradingview',placement:'blog-ml-cluster'});">Start a 7-day trial → $149/mo</a> — or [see exactly what it tracks](/the-lab-report/).
+
+📈 **The Lab Edge** takes the same framework to **166 markets** as weekly time-series momentum signals — useful when you want the ML read without babysitting a chart. <a href="/lab-edge/" onclick="if(typeof umami!=='undefined'&&umami.track)umami.track('affiliate_click_lab-edge',{target:'lab-edge',review:'best-machine-learning-indicators-tradingview',placement:'blog-ml-cluster'});">See The Lab Edge →</a>
 
 ## Test These on TradingView
 
