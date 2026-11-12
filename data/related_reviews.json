@@ -1989,15 +1989,15 @@
       "score": 9.0
     },
     {
-      "slug": "cvd",
-      "title": "CVD Review \u2014 Volume Indicator",
-      "rating": 3,
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "dynamic-liquidity-clouds-bigbeluga",
-      "title": "Dynamic Liquidity Clouds Bigbeluga Review \u2014 Market Structure",
-      "rating": 4,
+      "slug": "cvd",
+      "title": "CVD Review \u2014 Volume Indicator",
+      "rating": 3,
       "score": 9.0
     }
   ],
@@ -3067,6 +3067,32 @@
       "score": 9.0
     }
   ],
+  "auto-levels-trendlines-breakout-check": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-breakout-oscillator-schizoquant",
+      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "auto-pitchfork-trade-levels-afd": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -3587,6 +3613,32 @@
       "score": 8.0
     }
   ],
+  "banker-hot-money-flow-tracker": [
+    {
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "institutional-order-flow",
+      "title": "Institutional Order Flow Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "market-microstructure-analytics",
+      "title": "Market Microstructure Analytics Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "obv-with-kalman-filter-improv-technicalzen",
+      "title": "OBV With Kalman Filter Improv Technicalzen Review \u2014 Volume",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "bat-pattern": [
     {
       "slug": "abcd-pattern",
@@ -3641,6 +3693,12 @@
   ],
   "best-order-flow-footprint-delta-xcelerate-trade": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "bid-ask-volume",
       "title": "Bid Ask Volume Review \u2014 Volume Indicator",
       "rating": 4,
@@ -3655,12 +3713,6 @@
     {
       "slug": "cumulative-volume-delta",
       "title": "Cumulative Volume Delta Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cvd-cumulative-volume-delta",
-      "title": "CVD Cumulative Volume Delta Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -3793,6 +3845,32 @@
       "title": "Anomaly Detection Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "bilateral-filter-trend-quantalgo": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "bilateral-filter-trend": [
@@ -5369,14 +5447,14 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-cmf-divergence",
-      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-money-flow-cmf",
-      "title": "Chaikin Money Flow CMF Review \u2014 Volume Indicator",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -6189,6 +6267,12 @@
   ],
   "cme-institutional-order-flow-amt-lens": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "institutional-order-flow",
       "title": "Institutional Order Flow Review \u2014 Volume Indicator",
       "rating": 4,
@@ -6203,12 +6287,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow",
       "title": "Liquidity Absorption And Rejection Orderflow Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "liquidity-sweep-detector",
-      "title": "Liquidity Sweep Detector Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -7585,8 +7663,8 @@
       "score": 13.0
     },
     {
-      "slug": "stochastic-rsi-divergence",
-      "title": "Stochastic RSI Divergence Review \u2014 Momentum Indicator",
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
       "rating": 4,
       "score": 13.0
     }
@@ -10399,6 +10477,32 @@
       "score": 5.0
     }
   ],
+  "eye-pattern-failure-trap-eyealgo": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "eye-rsi-thermometer-eyealgo": [
     {
       "slug": "accum-dist-divergence",
@@ -11297,14 +11401,14 @@
       "score": 13.9
     },
     {
-      "slug": "artemis-adaptive-rsi",
-      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
       "rating": 4,
-      "score": 12.0
+      "score": 13.0
     },
     {
-      "slug": "bollinger-bands-rsi-combo",
-      "title": "Bollinger Bands RSI Combo Review \u2014 Momentum Indicator",
+      "slug": "artemis-adaptive-rsi",
+      "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -12236,7 +12340,7 @@
       "slug": "gann-fan",
       "title": "Gann Fan Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 5.6
+      "score": 5.7
     },
     {
       "slug": "1-trendline-strategy",
@@ -13729,6 +13833,12 @@
   ],
   "hl-day-stochrsi-fvg-eye-zofesu": [
     {
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ssl-hybrid",
       "title": "Ssl Hybrid Review \u2014 Trend Indicator",
       "rating": 4,
@@ -13743,12 +13853,6 @@
     {
       "slug": "20-50-ema-pullback-tap-indicator",
       "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "3-candle-sweep-maximopartners",
-      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     }
@@ -14151,6 +14255,12 @@
       "score": 8.0
     },
     {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-moving-average",
       "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
@@ -14159,12 +14269,6 @@
     {
       "slug": "adaptive-trend-line",
       "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-trend-lines",
-      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -15139,6 +15243,12 @@
       "score": 9.0
     },
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
@@ -15147,12 +15257,6 @@
     {
       "slug": "dynamic-liquidity-clouds-bigbeluga",
       "title": "Dynamic Liquidity Clouds Bigbeluga Review \u2014 Market Structure",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ict-10am-first-fvg-daily-strategy",
-      "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -15549,6 +15653,12 @@
   ],
   "institutional-order-flow": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
@@ -15563,12 +15673,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow",
       "title": "Liquidity Absorption And Rejection Orderflow Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "market-microstructure-analytics",
-      "title": "Market Microstructure Analytics Review \u2014 Market Structure",
       "rating": 4,
       "score": 13.0
     }
@@ -16881,6 +16985,12 @@
       "score": 5.0
     },
     {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
       "slug": "a-l-p-h-a-x-surge",
       "title": "Alphax Surge Review \u2014 Trend Indicator",
       "rating": 4,
@@ -16889,12 +16999,6 @@
     {
       "slug": "absorption-detection",
       "title": "Absorption Detection Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
-      "slug": "accumulation-distribution-line-adl",
-      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -19227,14 +19331,14 @@
       "score": 16.0
     },
     {
-      "slug": "cme-institutional-order-flow-amt-lens",
-      "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "institutional-order-flow",
-      "title": "Institutional Order Flow Review \u2014 Volume Indicator",
+      "slug": "cme-institutional-order-flow-amt-lens",
+      "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
       "score": 13.0
     }
@@ -19591,14 +19695,14 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
       "score": 8.0
     },
     {
-      "slug": "adaptive-trend-line",
-      "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
       "rating": 4,
       "score": 8.0
     }
@@ -19909,8 +20013,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -20761,14 +20865,14 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-cmf-divergence",
-      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-cmf-signals",
-      "title": "Chaikin CMF Signals Review \u2014 Trend Indicator",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -20859,6 +20963,12 @@
       "score": 8.0
     },
     {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
@@ -20867,12 +20977,6 @@
     {
       "slug": "adx-smoothed",
       "title": "ADX Smoothed Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-with-di-di",
-      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -22581,14 +22685,14 @@
       "score": 7.9
     },
     {
-      "slug": "mfi-mtf",
-      "title": "MFI MTF Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 7.5
-    },
-    {
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 7.6
+    },
+    {
+      "slug": "mfi-mtf",
+      "title": "MFI MTF Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 7.5
     }
@@ -22659,14 +22763,14 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-cmf-divergence",
-      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-cmf-signals",
-      "title": "Chaikin CMF Signals Review \u2014 Trend Indicator",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -22725,6 +22829,12 @@
   ],
   "obv-with-kalman-filter-improv-technicalzen": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
@@ -22739,12 +22849,6 @@
     {
       "slug": "ajay-strong-smart-money-scalper",
       "title": "Ajay Strong Smart Money Scalper Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chaikin-cmf-divergence",
-      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23427,6 +23531,12 @@
   ],
   "order-flow-fvg": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "best-order-flow-footprint-delta-xcelerate-trade",
       "title": "Best Order Flow Footprint Delta Xcelerate Trade Review",
       "rating": 4,
@@ -23441,18 +23551,18 @@
     {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative Volume Delta Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
   ],
   "order-flow-imbalance-s-r": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "best-order-flow-footprint-delta-xcelerate-trade",
       "title": "Best Order Flow Footprint Delta Xcelerate Trade Review",
       "rating": 4,
@@ -23467,12 +23577,6 @@
     {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative Volume Delta Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23531,6 +23635,12 @@
   ],
   "order-flow-profiler": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "best-order-flow-footprint-delta-xcelerate-trade",
       "title": "Best Order Flow Footprint Delta Xcelerate Trade Review",
       "rating": 4,
@@ -23545,12 +23655,6 @@
     {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative Volume Delta Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -27325,6 +27429,32 @@
       "score": 5.0
     }
   ],
+  "reversal-pressure-harmony-algo": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "reversal-probability-profile-algoalpha": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -28151,8 +28281,8 @@
       "score": 13.0
     },
     {
-      "slug": "stochastic-rsi",
-      "title": "Stochastic RSI Review \u2014 Momentum Indicator",
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
       "rating": 4,
       "score": 13.0
     }
@@ -29067,6 +29197,58 @@
       "score": 8.0
     }
   ],
+  "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "demarker-indicator",
+      "title": "Demarker Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
+  "sight-of-market-structure-setup-jpt": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-breakout-oscillator-schizoquant",
+      "title": "Adaptive Breakout Oscillator Schizoquant Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "sigmoid-rsi-nal": [
     {
       "slug": "accum-dist-divergence",
@@ -29537,6 +29719,12 @@
   ],
   "smart-money-absorption-radar-thomas": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
@@ -29551,12 +29739,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "liquidity-absorption-and-rejection-orderflow",
-      "title": "Liquidity Absorption And Rejection Orderflow Review",
       "rating": 4,
       "score": 13.0
     }
@@ -29627,19 +29809,25 @@
       "score": 9.0
     },
     {
-      "slug": "dynamic-liquidity-clouds-bigbeluga",
-      "title": "Dynamic Liquidity Clouds Bigbeluga Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ict-pd-arrays-lunqfx-fvg-displacement-smart-money-zones",
-      "title": "ICT Pd Arrays Lunqfx FVG Displacement Smart Money Zones Review",
+      "slug": "dynamic-liquidity-clouds-bigbeluga",
+      "title": "Dynamic Liquidity Clouds Bigbeluga Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
   ],
   "smart-money-concept-pro-smc-pine-script-indicator": [
+    {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
     {
       "slug": "smart-money-concepts",
       "title": "Smart Money Concepts Review \u2014 Volume Indicator",
@@ -29657,12 +29845,6 @@
       "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
       "rating": 4,
       "score": 12.8
-    },
-    {
-      "slug": "smart-money-absorption-radar-thomas",
-      "title": "Smart Money Absorption Radar Thomas Review \u2014 Volume",
-      "rating": 4,
-      "score": 11.5
     }
   ],
   "smart-money-concepts-axealgo": [
@@ -29719,6 +29901,12 @@
   ],
   "smart-money-concepts": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
@@ -29733,12 +29921,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow",
       "title": "Liquidity Absorption And Rejection Orderflow Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "liquidity-sweep-detector",
-      "title": "Liquidity Sweep Detector Review \u2014 Market Structure Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -29757,19 +29939,25 @@
       "score": 9.0
     },
     {
-      "slug": "dynamic-smc-market-structure",
-      "title": "Dynamic SMC Market Structure Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ict-pd-arrays-lunqfx-fvg-displacement-smart-money-zones",
-      "title": "ICT Pd Arrays Lunqfx FVG Displacement Smart Money Zones Review",
+      "slug": "dynamic-smc-market-structure",
+      "title": "Dynamic SMC Market Structure Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
   ],
   "smart-money-fibonacci-ote-engine-chartprime": [
+    {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
     {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
@@ -29785,12 +29973,6 @@
     {
       "slug": "liquidity-sweep-detector",
       "title": "Liquidity Sweep Detector Review \u2014 Market Structure Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "market-microstructure-analytics",
-      "title": "Market Microstructure Analytics Review \u2014 Market Structure",
       "rating": 4,
       "score": 13.0
     }
@@ -29945,8 +30127,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -30005,6 +30187,12 @@
   ],
   "smart-money-volume-absorption-signals-i-eonmetrics": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
       "rating": 4,
@@ -30019,12 +30207,6 @@
     {
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "liquidity-absorption-and-rejection-orderflow",
-      "title": "Liquidity Absorption And Rejection Orderflow Review",
       "rating": 4,
       "score": 13.0
     }
@@ -30355,14 +30537,14 @@
       "score": 9.0
     },
     {
-      "slug": "ict-10am-first-fvg-daily-strategy",
-      "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ict-smart-money-execution-engine",
-      "title": "ICT Smart Money Execution Engine Review \u2014 Market Structure",
+      "slug": "ict-10am-first-fvg-daily-strategy",
+      "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -31077,6 +31259,12 @@
       "score": 16.0
     },
     {
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "stochastic-rsi-divergence",
       "title": "Stochastic RSI Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -31085,12 +31273,6 @@
     {
       "slug": "adx-divergence",
       "title": "ADX Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "aroon-divergence",
-      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -31233,6 +31415,12 @@
       "score": 16.0
     },
     {
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "stochastic-rsi-divergence",
       "title": "Stochastic RSI Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -31241,12 +31429,6 @@
     {
       "slug": "adx-divergence",
       "title": "ADX Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "aroon-divergence",
-      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -31323,8 +31505,8 @@
       "score": 13.0
     },
     {
-      "slug": "stochastic-rsi-divergence",
-      "title": "Stochastic RSI Divergence Review \u2014 Momentum Indicator",
+      "slug": "shk-cci-rsi-stochrsi-fisher-blended-oscillator-divergence",
+      "title": "Shk CCI RSI Stochrsi Fisher Blended Oscillator Divergence Review",
       "rating": 4,
       "score": 13.0
     }
@@ -33735,14 +33917,14 @@
       "score": 9.0
     },
     {
-      "slug": "ict-10am-first-fvg-daily-strategy",
-      "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ict-market-structure-breaks-ob-retest-jpt",
-      "title": "ICT Market Structure Breaks Ob Retest Jpt Review",
+      "slug": "ict-10am-first-fvg-daily-strategy",
+      "title": "ICT 10am First FVG Daily Strategy Review \u2014 Market Structure",
       "rating": 4,
       "score": 9.0
     }
@@ -35431,8 +35613,8 @@
       "score": 9.0
     },
     {
-      "slug": "breaker-block-detector-algotim",
-      "title": "Breaker Block Detector Algotim Review \u2014 Market Structure",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -35838,7 +36020,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 12.5
+      "score": 12.6
     },
     {
       "slug": "artemis-adaptive-rsi",
@@ -36185,8 +36367,8 @@
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-surge",
-      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -36323,6 +36505,12 @@
   ],
   "volume-delta-footprint-map": [
     {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "best-order-flow-footprint-delta-xcelerate-trade",
       "title": "Best Order Flow Footprint Delta Xcelerate Trade Review",
       "rating": 4,
@@ -36337,12 +36525,6 @@
     {
       "slug": "cme-institutional-order-flow-amt-lens",
       "title": "Cme Institutional Order Flow Amt Lens Review \u2014 Volume",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "cumulative-volume-delta",
-      "title": "Cumulative Volume Delta Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -36657,6 +36839,32 @@
       "title": "Acceleration Deceleration Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "volume-pressure-atlas-mqlsoftware": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "volume-price-analysis": [
@@ -37881,6 +38089,32 @@
       "score": 13.3
     }
   ],
+  "wake-up-master": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "walk-forward-optimization": [
     {
       "slug": "bollinger-bands-macd-combo",
@@ -38545,14 +38779,14 @@
       "score": 9.0
     },
     {
-      "slug": "chaikin-cmf-divergence",
-      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chaikin-fisher-transform-divergence-early-reversal",
-      "title": "Chaikin Fisher Transform Divergence Early Reversal Review",
+      "slug": "chaikin-cmf-divergence",
+      "title": "Chaikin CMF Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
