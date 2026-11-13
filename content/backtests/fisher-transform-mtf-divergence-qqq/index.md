@@ -1,38 +1,38 @@
 ---
 {
   "title": "Fisher \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-33.4%"
+      "value": "-30.5%"
     },
     {
       "label": "CAGR",
-      "value": "-7.8%"
+      "value": "-7.0%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.31"
+      "value": "-0.28"
     },
     {
       "label": "Max Drawdown",
-      "value": "41.2%"
+      "value": "40.7%"
     },
     {
       "label": "Win Rate",
-      "value": "42.7%"
+      "value": "42.9%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.80"
+      "value": "0.81"
     },
     {
       "label": "Total Trades",
-      "value": "241"
+      "value": "240"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.1%",
-      "trades": "6",
-      "win_rate_pct": "42.7%"
+      "return_pct": "+0.9%",
+      "trades": "4",
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "52",
-      "win_rate_pct": "42.7%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "47",
-      "win_rate_pct": "42.7%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "47",
-      "win_rate_pct": "42.7%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "48",
-      "win_rate_pct": "42.7%"
+      "win_rate_pct": "42.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+7.4%",
-      "trades": "41",
-      "win_rate_pct": "42.7%"
+      "return_pct": "+10.7%",
+      "trades": "42",
+      "win_rate_pct": "42.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,27 +109,27 @@ On QQQ, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-08 → 2026-11-06), the Fisher Transform MTF Divergence delivered a **-33.4% total return** on QQQ, compounding at **-7.8% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the Fisher Transform MTF Divergence delivered a **-30.5% total return** on QQQ, compounding at **-7.0% annually**. 
 
-At **-0.31**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.28**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **41.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 41% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **40.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 41% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.31 | ❌ Weak |
-| Max Drawdown | 41.2% | ⚠️ Significant |
-| Win Rate | 42.7% | ⚠️ Below average |
-| Profit Factor | 0.80 | ❌ Unprofitable |
-| Trades/Year | ~241 total | Active |
+| Sharpe Ratio | -0.28 | ❌ Weak |
+| Max Drawdown | 40.7% | ⚠️ Significant |
+| Win Rate | 42.9% | ⚠️ Below average |
+| Profit Factor | 0.81 | ❌ Unprofitable |
+| Trades/Year | ~240 total | Active |
 
-The **profit factor of 0.80** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 42.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.81** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 42.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on QQQ?
 
-The fisher transform mtf divergence struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.31 Sharpe ratio** and **0.80 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The fisher transform mtf divergence struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.28 Sharpe ratio** and **0.81 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Fisher is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on QQQ](/backtests/fisher-transform-mtf-divergence-qqq-trades.png)

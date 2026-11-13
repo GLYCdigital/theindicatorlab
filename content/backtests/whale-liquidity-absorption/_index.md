@@ -1,6 +1,6 @@
 ---
 title: "Volume Backtest Results"
-date: 2026-11-07
+date: 2026-11-14
 draft: false
 type: backtests
 description: "All 4 asset backtests for the Volume indicator. Sorted by Sharpe ratio."
@@ -27,15 +27,15 @@ description: "All 4 asset backtests for the Volume indicator. Sorted by Sharpe r
 <tbody>
 <tr><td>🟢 <a href="/backtests/whale-liquidity-absorption-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+61.9%</td><td>10.1%</td><td>0.74</td><td>20.5%</td><td>56.7%</td><td>2.43</td><td>30</td></tr>
 <tr><td>🔴 <a href="/backtests/whale-liquidity-absorption-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+9.0%</td><td>1.7%</td><td>-0.02</td><td>17.1%</td><td>40.0%</td><td>1.25</td><td>30</td></tr>
-<tr><td>🔴 <a href="/backtests/whale-liquidity-absorption-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+2.2%</td><td>0.4%</td><td>-1.18</td><td>4.5%</td><td>50.0%</td><td>1.46</td><td>10</td></tr>
-<tr><td>🔴 <a href="/backtests/whale-liquidity-absorption-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-3.1%</td><td>-0.6%</td><td>-2.02</td><td>5.8%</td><td>40.0%</td><td>0.61</td><td>10</td></tr>
+<tr><td>🔴 <a href="/backtests/whale-liquidity-absorption-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+2.8%</td><td>0.6%</td><td>-1.11</td><td>4.5%</td><td>60.0%</td><td>1.63</td><td>10</td></tr>
+<tr><td>🔴 <a href="/backtests/whale-liquidity-absorption-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>-2.3%</td><td>-0.5%</td><td>-2.15</td><td>5.9%</td><td>50.0%</td><td>0.67</td><td>10</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: November 07, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: November 14, 2026</p>
 
   </div>
 </article>

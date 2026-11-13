@@ -1,10 +1,10 @@
 ---
 {
   "title": "EMA \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.6%",
+      "return_pct": "+2.0%",
       "trades": "0",
       "win_rate_pct": "36.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+8.7%",
+      "return_pct": "+10.8%",
       "trades": "5",
       "win_rate_pct": "36.4%"
     }
@@ -109,7 +109,7 @@ On SPY, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-11-08 → 2026-11-06), the EMA Ribbon delivered a **+32.3% total return** on SPY, compounding at **5.8% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the EMA Ribbon delivered a **+32.3% total return** on SPY, compounding at **5.8% annually**. 
 
 At **0.42**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on SPY](/backtests/ema-ribbon-spy-trades.png)

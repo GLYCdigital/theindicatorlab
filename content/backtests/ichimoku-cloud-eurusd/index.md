@@ -1,10 +1,10 @@
 ---
 {
   "title": "Ichimoku \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-2.1%",
+      "return_pct": "-1.0%",
       "trades": "0",
       "win_rate_pct": "41.7%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-5.1%",
+      "return_pct": "-6.1%",
       "trades": "3",
       "win_rate_pct": "41.7%"
     }
@@ -109,7 +109,7 @@ On EURUSD, the Ichimoku acts as a trend filter. It won't catch every exact botto
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-11-08 → 2026-11-06), the Ichimoku Cloud delivered a **+3.4% total return** on EURUSD=X, compounding at **0.7% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the Ichimoku Cloud delivered a **+3.4% total return** on EURUSD=X, compounding at **0.7% annually**. 
 
 At **-0.33**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on EURUSD=X](/backtests/ichimoku-cloud-eurusd-trades.png)

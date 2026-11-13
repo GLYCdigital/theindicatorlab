@@ -1,18 +1,18 @@
 ---
 {
   "title": "SAR \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-9.3%"
+      "value": "-8.8%"
     },
     {
       "label": "CAGR",
-      "value": "-1.9%"
+      "value": "-1.8%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "37.5%"
+      "value": "36.4%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.89"
+      "value": "0.91"
     },
     {
       "label": "Total Trades",
@@ -42,8 +42,8 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.1%",
-      "trades": "3",
+      "return_pct": "+0.9%",
+      "trades": "2",
       "win_rate_pct": "41.0%"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "year": "2026",
-      "return_pct": "+7.4%",
-      "trades": "8",
+      "return_pct": "+10.7%",
+      "trades": "9",
       "win_rate_pct": "41.0%"
     }
   ],
@@ -109,27 +109,27 @@ On QQQ, the SAR acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-08 → 2026-11-06), the Parabolic SAR delivered a **-9.3% total return** on QQQ, compounding at **-1.9% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the Parabolic SAR delivered a **-8.8% total return** on QQQ, compounding at **-1.8% annually**. 
 
 At **-0.08**, the SAR earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **37.5% max drawdown**. At some point during this 5-year run, you'd have been down nearly 38% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **36.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 36% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | -0.08 | ❌ Weak |
-| Max Drawdown | 37.5% | ⚠️ Significant |
+| Max Drawdown | 36.4% | ⚠️ Significant |
 | Win Rate | 41.0% | ⚠️ Below average |
-| Profit Factor | 0.89 | ❌ Unprofitable |
+| Profit Factor | 0.91 | ❌ Unprofitable |
 | Trades/Year | ~61 total | Active |
 
-The **profit factor of 0.89** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 41.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.91** tells the real story: when the SAR fires, the winning signals don't outweigh the losers. Combined with a 41.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Parabolic SAR Work on QQQ?
 
-The parabolic sar struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.08 Sharpe ratio** and **0.89 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The parabolic sar struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.08 Sharpe ratio** and **0.91 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the SAR is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Parabolic SAR — Trade Signals on QQQ](/backtests/parabolic-sar-qqq-trades.png)

@@ -1,18 +1,18 @@
 ---
 {
   "title": "CVD \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+22.6%"
+      "value": "+22.5%"
     },
     {
       "label": "CAGR",
-      "value": "4.2%"
+      "value": "4.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-31.5%",
+      "return_pct": "-27.1%",
       "trades": "1",
       "win_rate_pct": "23.8%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-14.7%",
+      "return_pct": "-22.4%",
       "trades": "17",
       "win_rate_pct": "23.8%"
     }
@@ -109,7 +109,7 @@ On BTC, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-08 → 2026-11-06), the CVD Divergence Alerts delivered a **+22.6% total return** on BTC-USD, compounding at **4.2% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the CVD Divergence Alerts delivered a **+22.5% total return** on BTC-USD, compounding at **4.1% annually**. 
 
 At **0.21**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on BTC-USD](/backtests/cvd-divergence-alerts-btc-usd-trades.png)

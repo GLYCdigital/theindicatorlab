@@ -1,26 +1,26 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+75.5%"
+      "value": "+60.6%"
     },
     {
       "label": "CAGR",
-      "value": "11.9%"
+      "value": "9.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.35"
+      "value": "0.31"
     },
     {
       "label": "Max Drawdown",
-      "value": "38.2%"
+      "value": "43.4%"
     },
     {
       "label": "Win Rate",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-31.5%",
+      "return_pct": "-27.1%",
       "trades": "0",
       "win_rate_pct": "60.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-14.7%",
+      "return_pct": "-22.4%",
       "trades": "1",
       "win_rate_pct": "60.0%"
     }
@@ -109,18 +109,18 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-08 → 2026-11-06), the Golden Cross delivered a **+75.5% total return** on BTC-USD, compounding at **11.9% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the Golden Cross delivered a **+60.6% total return** on BTC-USD, compounding at **9.9% annually**. 
 
-At **0.35**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.31**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **38.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 38% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **43.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 43% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.35 | ❌ Weak |
-| Max Drawdown | 38.2% | ⚠️ Significant |
+| Sharpe Ratio | 0.31 | ❌ Weak |
+| Max Drawdown | 43.4% | ⚠️ Significant |
 | Win Rate | 60.0% | ✅ Strong |
 | Profit Factor | 3.54 | ✅ Excellent |
 | Trades/Year | ~5 total | Selective — not overtrading |
@@ -129,7 +129,7 @@ The **profit factor of 3.54** tells the real story: when the SMA fires, the winn
 
 ## Does the Golden Cross Work on BTC?
 
-The golden cross shows moderate edge on BTC — **0.35 Sharpe, 3.54 profit factor** over 5 trades. It's not a home run, but it's also not random.
+The golden cross shows moderate edge on BTC — **0.31 Sharpe, 3.54 profit factor** over 5 trades. It's not a home run, but it's also not random.
 
 The 60.0% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

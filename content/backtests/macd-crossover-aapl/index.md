@@ -1,14 +1,14 @@
 ---
 {
   "title": "MACD \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+34.7%"
+      "value": "+34.6%"
     },
     {
       "label": "CAGR",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "41.7%"
+      "value": "40.8%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "48"
+      "value": "49"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+18.0%",
+      "return_pct": "+18.4%",
       "trades": "0",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "40.8%"
     },
     {
       "year": "2022",
       "return_pct": "-28.2%",
       "trades": "6",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "40.8%"
     },
     {
       "year": "2023",
       "return_pct": "+54.8%",
       "trades": "13",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "40.8%"
     },
     {
       "year": "2024",
       "return_pct": "+35.6%",
       "trades": "11",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "40.8%"
     },
     {
       "year": "2025",
       "return_pct": "+12.0%",
       "trades": "11",
-      "win_rate_pct": "41.7%"
+      "win_rate_pct": "40.8%"
     },
     {
       "year": "2026",
-      "return_pct": "+27.3%",
-      "trades": "7",
-      "win_rate_pct": "41.7%"
+      "return_pct": "+32.5%",
+      "trades": "8",
+      "win_rate_pct": "40.8%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On AAPL, the MACD acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-11-08 → 2026-11-06), the MACD Crossover delivered a **+34.7% total return** on AAPL, compounding at **6.1% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the MACD Crossover delivered a **+34.6% total return** on AAPL, compounding at **6.1% annually**. 
 
 At **0.28**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **25.3% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | 0.28 | ❌ Weak |
 | Max Drawdown | 25.3% | ⚠️ Moderate |
-| Win Rate | 41.7% | ⚠️ Below average |
+| Win Rate | 40.8% | ⚠️ Below average |
 | Profit Factor | 1.38 | ⚠️ Marginal |
-| Trades/Year | ~48 total | Active |
+| Trades/Year | ~49 total | Active |
 
-The **profit factor of 1.38** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 41.7% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.38** tells the real story: when the MACD fires, the winning signals are larger than the losing ones. Combined with a 40.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on AAPL?
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on AAPL](/backtests/macd-crossover-aapl-trades.png)

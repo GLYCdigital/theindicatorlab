@@ -1,38 +1,38 @@
 ---
 {
   "title": "BollingerBands \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+31.8%"
+      "value": "+36.2%"
     },
     {
       "label": "CAGR",
-      "value": "5.7%"
+      "value": "6.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.24"
+      "value": "0.28"
     },
     {
       "label": "Max Drawdown",
-      "value": "18.4%"
+      "value": "18.1%"
     },
     {
       "label": "Win Rate",
-      "value": "30.0%"
+      "value": "30.9%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.34"
+      "value": "1.39"
     },
     {
       "label": "Total Trades",
-      "value": "70"
+      "value": "68"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.1%",
-      "trades": "4",
-      "win_rate_pct": "30.0%"
+      "return_pct": "+0.9%",
+      "trades": "2",
+      "win_rate_pct": "30.9%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "10",
-      "win_rate_pct": "30.0%"
+      "win_rate_pct": "30.9%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "10",
-      "win_rate_pct": "30.0%"
+      "win_rate_pct": "30.9%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "14",
-      "win_rate_pct": "30.0%"
+      "win_rate_pct": "30.9%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "16",
-      "win_rate_pct": "30.0%"
+      "win_rate_pct": "30.9%"
     },
     {
       "year": "2026",
-      "return_pct": "+7.4%",
+      "return_pct": "+10.7%",
       "trades": "16",
-      "win_rate_pct": "30.0%"
+      "win_rate_pct": "30.9%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,27 +109,27 @@ On QQQ, the BollingerBands acts as a trend filter. It won't catch every exact bo
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-08 → 2026-11-06), the Bollinger Band Squeeze delivered a **+31.8% total return** on QQQ, compounding at **5.7% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the Bollinger Band Squeeze delivered a **+36.2% total return** on QQQ, compounding at **6.4% annually**. 
 
-At **0.24**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.28**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **18.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **18.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.24 | ❌ Weak |
-| Max Drawdown | 18.4% | ⚠️ Moderate |
-| Win Rate | 30.0% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.34 | ⚠️ Marginal |
-| Trades/Year | ~70 total | Active |
+| Sharpe Ratio | 0.28 | ❌ Weak |
+| Max Drawdown | 18.1% | ⚠️ Moderate |
+| Win Rate | 30.9% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.39 | ⚠️ Marginal |
+| Trades/Year | ~68 total | Active |
 
-The **profit factor of 1.34** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 30.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.39** tells the real story: when the BollingerBands fires, the winning signals are larger than the losing ones. Combined with a 30.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Bollinger Band Squeeze Work on QQQ?
 
-The bollinger band squeeze struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.24 Sharpe ratio** and **1.34 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The bollinger band squeeze struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.28 Sharpe ratio** and **1.39 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on QQQ](/backtests/bollinger-band-squeeze-qqq-trades.png)

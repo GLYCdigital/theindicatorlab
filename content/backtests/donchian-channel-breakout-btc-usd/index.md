@@ -1,10 +1,10 @@
 ---
 {
   "title": "Donchian \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-11-07",
+  "date": "2026-11-14",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-08 \u2192 2026-11-06",
+  "period": "2021-11-15 \u2192 2026-11-13",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-31.5%",
+      "return_pct": "-27.1%",
       "trades": "1",
       "win_rate_pct": "27.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-14.7%",
+      "return_pct": "-22.4%",
       "trades": "18",
       "win_rate_pct": "27.4%"
     }
@@ -109,7 +109,7 @@ On BTC, the Donchian acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-08 → 2026-11-06), the Donchian Channel Breakout delivered a **+3.7% total return** on BTC-USD, compounding at **0.7% annually**. 
+Over five years (2021-11-15 → 2026-11-13), the Donchian Channel Breakout delivered a **+3.7% total return** on BTC-USD, compounding at **0.7% annually**. 
 
 At **0.14**, the Donchian earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 07, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Donchian Channel Breakout — Trade Signals on BTC-USD](/backtests/donchian-channel-breakout-btc-usd-trades.png)
