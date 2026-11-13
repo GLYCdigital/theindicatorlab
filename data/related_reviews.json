@@ -4705,6 +4705,32 @@
       "score": 8.0
     }
   ],
+  "bressert-cycle-signals": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "acceleration-deceleration-ac-oscillator",
+      "title": "Acceleration Deceleration Ac Oscillator Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "btc-asymmetric-quantile-model-cowen-2026": [
     {
       "slug": "abcd-pattern",
@@ -4729,6 +4755,32 @@
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "bull-wolf-nifty-indicator": [
+    {
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-average-directional-index",
+      "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "ADX MTF Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "butterfly-pattern": [
@@ -4859,6 +4911,32 @@
       "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "buy-sell-signals-xl": [
+    {
+      "slug": "smart-money-concept-pro-smc-pine-script-indicator",
+      "title": "Smart Money Concept Pro SMC Pine Script Indicator Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
+      "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
+      "rating": 4,
+      "score": 8.8
+    },
+    {
+      "slug": "order-flow-profiler",
+      "title": "Order Flow Profiler Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 8.8
+    },
+    {
+      "slug": "smart-money-concepts",
+      "title": "Smart Money Concepts Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 8.8
     }
   ],
   "buyers-sellers-profile-dynamic-s-r": [
@@ -6861,6 +6939,32 @@
       "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "ct-donchian-histogram-w-candle-colors": [
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-flow-channel",
+      "title": "Adaptive Flow Channel Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-trend-bands",
+      "title": "Adaptive Trend Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais Supertrend Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "ctz-bitcoin-cycle-master": [
@@ -9954,7 +10058,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 9.9
+      "score": 10.0
     }
   ],
   "ema-supertrend-obv-strixedge": [
@@ -9980,7 +10084,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.7
+      "score": 10.8
     }
   ],
   "ema-trend-signals": [
@@ -12317,8 +12421,8 @@
       "score": 9.0
     },
     {
-      "slug": "murrey-math-mtf",
-      "title": "Murrey Math MTF Review \u2014 Support & Resistance Indicator",
+      "slug": "geometric-price-time-square-projection-ver-1-0",
+      "title": "Geometric Price Time Square Projection Ver 1 0 Review",
       "rating": 4,
       "score": 9.0
     }
@@ -12331,6 +12435,12 @@
       "score": 9.0
     },
     {
+      "slug": "geometric-price-time-square-projection-ver-1-0",
+      "title": "Geometric Price Time Square Projection Ver 1 0 Review",
+      "rating": 4,
+      "score": 6.1
+    },
+    {
       "slug": "perfect-squares",
       "title": "Perfect Squares Review \u2014 Trend Indicator",
       "rating": 4,
@@ -12341,12 +12451,6 @@
       "title": "Gann Fan Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.7
-    },
-    {
-      "slug": "1-trendline-strategy",
-      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
     }
   ],
   "gann-square": [
@@ -12369,8 +12473,8 @@
       "score": 9.0
     },
     {
-      "slug": "murrey-math-mtf",
-      "title": "Murrey Math MTF Review \u2014 Support & Resistance Indicator",
+      "slug": "geometric-price-time-square-projection-ver-1-0",
+      "title": "Geometric Price Time Square Projection Ver 1 0 Review",
       "rating": 4,
       "score": 9.0
     }
@@ -12395,8 +12499,8 @@
       "score": 9.0
     },
     {
-      "slug": "murrey-math-mtf",
-      "title": "Murrey Math MTF Review \u2014 Support & Resistance Indicator",
+      "slug": "geometric-price-time-square-projection-ver-1-0",
+      "title": "Geometric Price Time Square Projection Ver 1 0 Review",
       "rating": 4,
       "score": 9.0
     }
@@ -12713,6 +12817,32 @@
       "score": 5.0
     }
   ],
+  "geometric-price-time-square-projection-ver-1-0": [
+    {
+      "slug": "gann-fan",
+      "title": "Gann Fan Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gann-square",
+      "title": "Gann Square Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "gann-toolkit-ss",
+      "title": "Gann Toolkit Ss Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "perfect-squares",
+      "title": "Perfect Squares Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "ghost-zones-gti-adaptive-demand-supply-zones": [
     {
       "slug": "adaptive-alma-20",
@@ -12958,19 +13088,19 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 12.5
+      "score": 12.6
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.5
+      "score": 12.6
     },
     {
       "slug": "waddah-attar",
       "title": "Waddah Attar Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.5
+      "score": 12.6
     }
   ],
   "gravity-trend-adx-strength-meter-quality-scored-dmi-system": [
@@ -14946,7 +15076,7 @@
       "slug": "fractal-levels",
       "title": "Fractal Levels Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 5.9
+      "score": 6.0
     }
   ],
   "ict-htf-candles-bryan": [
@@ -20617,6 +20747,32 @@
       "score": 13.0
     }
   ],
+  "momentum-impulse-follow-through-map-pineify": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "momentum-indicator": [
     {
       "slug": "accum-dist-divergence",
@@ -20927,6 +21083,32 @@
       "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "monte-carlo-probability-forecaster": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "monte-carlo-simulator": [
@@ -22676,25 +22858,25 @@
       "slug": "accumulation-distribution-line-adl",
       "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 7.9
+      "score": 8.0
     },
     {
       "slug": "obv-mtf",
       "title": "OBV MTF Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.9
+      "score": 8.0
+    },
+    {
+      "slug": "mfi-mtf",
+      "title": "MFI MTF Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 7.6
     },
     {
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 7.6
-    },
-    {
-      "slug": "mfi-mtf",
-      "title": "MFI MTF Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 7.5
     }
   ],
   "obv-divergence": [
@@ -24265,6 +24447,12 @@
       "score": 8.0
     },
     {
+      "slug": "a-l-p-h-a-x-surge",
+      "title": "Alphax Surge Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "abcd-pattern",
       "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
       "rating": 4,
@@ -24273,12 +24461,6 @@
     {
       "slug": "adaptive-swing-timing-engine-algopoint",
       "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "ai-source-switching-moving-average",
-      "title": "AI Source Switching Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -25903,6 +26085,12 @@
       "score": 13.0
     },
     {
+      "slug": "ema-cross",
+      "title": "EMA Cross Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 12.0
+    },
+    {
       "slug": "parabolic-sar-multi",
       "title": "Parabolic Sar Multi Review \u2014 Trend Indicator",
       "rating": 4,
@@ -25912,12 +26100,6 @@
       "slug": "parabolic-sar",
       "title": "Parabolic Sar Review \u2014 Trend Indicator",
       "rating": 3,
-      "score": 12.0
-    },
-    {
-      "slug": "triple-exponential-ma",
-      "title": "Triple Exponential Ma Review \u2014 Trend Indicator",
-      "rating": 4,
       "score": 12.0
     }
   ],
@@ -30280,13 +30462,13 @@
       "slug": "strong-fu-candle",
       "title": "Strong Fu Candle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.6
+      "score": 12.7
     },
     {
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.1
+      "score": 11.2
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -30829,8 +31011,8 @@
       "score": 9.0
     },
     {
-      "slug": "perfect-squares",
-      "title": "Perfect Squares Review \u2014 Trend Indicator",
+      "slug": "geometric-price-time-square-projection-ver-1-0",
+      "title": "Geometric Price Time Square Projection Ver 1 0 Review",
       "rating": 4,
       "score": 9.0
     }
@@ -31828,7 +32010,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 15.6
+      "score": 15.7
     },
     {
       "slug": "rsi-macd-combo",
@@ -31846,7 +32028,7 @@
       "slug": "center-of-gravity-cog-oscillator",
       "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.4
+      "score": 13.5
     }
   ],
   "strong-gold-signals": [
@@ -32288,7 +32470,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.4
+      "score": 10.5
     }
   ],
   "supertrend-fibonacci-ote-grid-bands": [
@@ -32328,13 +32510,13 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.5
+      "score": 12.6
     },
     {
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.7
+      "score": 10.8
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -32757,6 +32939,32 @@
       "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "sweep-fvg-reversal-strategy": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "almazov-trade-smt-monitor",
+      "title": "Almazov Trade Smt Monitor Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "sweep-ifvg-m1d": [
@@ -38074,19 +38282,19 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 15.5
+      "score": 15.6
     },
     {
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.3
+      "score": 13.4
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.3
+      "score": 13.4
     }
   ],
   "wake-up-master": [
@@ -38625,6 +38833,32 @@
     {
       "slug": "6-indicator-master",
       "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "wisely-wealth-smart-triangle-breakouts-performance-simulator": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
       "rating": 4,
       "score": 5.0
     },
