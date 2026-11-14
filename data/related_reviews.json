@@ -6603,6 +6603,32 @@
       "score": 5.0
     }
   ],
+  "confluence-dual-oscillator": [
+    {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "force-index-divergence",
+      "title": "Force Index Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "golden-momentum-spectrum-nal",
+      "title": "Golden Momentum Spectrum Nal Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "quant-confluence-engine",
+      "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "connors-rsi": [
     {
       "slug": "artemis-adaptive-rsi",
@@ -9757,6 +9783,12 @@
       "score": 13.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
@@ -9765,12 +9797,6 @@
     {
       "slug": "quant-confluence-engine",
       "title": "Quant Confluence Engine Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "random-forest-ai-rsi-macd-confluence-dots3red",
-      "title": "Random Forest AI RSI MACD Confluence Dots3red Review",
       "rating": 4,
       "score": 13.0
     }
@@ -11271,14 +11297,14 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "golden-momentum-spectrum-nal",
-      "title": "Golden Momentum Spectrum Nal Review \u2014 Momentum Indicator",
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -11869,14 +11895,14 @@
       "score": 13.0
     },
     {
-      "slug": "fisher-transform-divergence",
-      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
+      "slug": "fisher-transform-divergence",
+      "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -13079,6 +13105,12 @@
   ],
   "golden-momentum-spectrum-nal": [
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
       "rating": 4,
@@ -13088,19 +13120,13 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 12.6
+      "score": 12.5
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.6
-    },
-    {
-      "slug": "waddah-attar",
-      "title": "Waddah Attar Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 12.6
+      "score": 12.5
     }
   ],
   "gravity-trend-adx-strength-meter-quality-scored-dmi-system": [
@@ -16329,6 +16355,12 @@
   ],
   "kagi-charts": [
     {
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
@@ -16343,12 +16375,6 @@
     {
       "slug": "adx-with-di-di",
       "title": "ADX With Di Di Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "ais-supertrend",
-      "title": "Ais Supertrend Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -18635,8 +18661,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -20983,6 +21009,12 @@
   ],
   "momentum-trade-planner-ema9-rsi-ob-fvg": [
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -20997,12 +21029,6 @@
     {
       "slug": "fibonacci-rsi-aligned-analysis",
       "title": "Fibonacci RSI Aligned Analysis Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "gs-volcano-rsi-liquidity-thermal-map-bit2billions",
-      "title": "Gs Volcano RSI Liquidity Thermal Map Bit2billions Review",
       "rating": 4,
       "score": 9.0
     }
@@ -21651,8 +21677,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -24335,6 +24361,32 @@
       "score": 5.0
     }
   ],
+  "percentile-momentum-nal": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3d-market-profile-boswaves",
+      "title": "3d Market Profile Boswaves Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "8020-system-indicator",
+      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "perfect-squares": [
     {
       "slug": "ewo-rsi-signals-strategy-exhaustion-filter",
@@ -26423,6 +26475,12 @@
       "score": 13.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -26431,12 +26489,6 @@
     {
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "force-index-divergence",
-      "title": "Force Index Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -26735,6 +26787,12 @@
       "score": 13.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -26743,12 +26801,6 @@
     {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "multi-timeframe-multi-indicator-dashboard",
-      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
     }
@@ -26891,6 +26943,12 @@
       "score": 9.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -26899,12 +26957,6 @@
     {
       "slug": "inverse-fisher-transform",
       "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "macd-adaptive",
-      "title": "MACD Adaptive Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -27995,8 +28047,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -28295,6 +28347,12 @@
       "score": 13.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -28303,12 +28361,6 @@
     {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "momentum-flow-oscillator",
-      "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -29101,6 +29153,12 @@
       "score": 9.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "ema-rsi-vwap-targets",
       "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
       "rating": 4,
@@ -29109,12 +29167,6 @@
     {
       "slug": "ewo-rsi-signals-strategy-exhaustion-filter",
       "title": "Ewo RSI Signals Strategy Exhaustion Filter Review \u2014 Momentum",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "fibonacci-rsi-aligned-analysis",
-      "title": "Fibonacci RSI Aligned Analysis Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -29817,6 +29869,32 @@
     {
       "slug": "adaptive-composite-oscillator-aco",
       "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "smart-candlestick-pattern-filter-markittick": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -31015,6 +31093,58 @@
       "title": "Geometric Price Time Square Projection Ver 1 0 Review",
       "rating": 4,
       "score": 9.0
+    }
+  ],
+  "squeeze-breakout-retest-targets-phenlabs": [
+    {
+      "slug": "blackcat-l3-squeeze-dynamics",
+      "title": "Blackcat L3 Squeeze Dynamics Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-band-scalping",
+      "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger Bands Squeeze Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger Bands Width Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
+  "squeeze-breakout-signals-bitpunk": [
+    {
+      "slug": "blackcat-l3-squeeze-dynamics",
+      "title": "Blackcat L3 Squeeze Dynamics Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-band-scalping",
+      "title": "Bollinger Band Scalping Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-squeeze",
+      "title": "Bollinger Bands Squeeze Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "bollinger-bands-width",
+      "title": "Bollinger Bands Width Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "squeeze-indicator": [
@@ -32464,7 +32594,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.0
+      "score": 12.1
     },
     {
       "slug": "viprasol-gold-sniper-confluence",
@@ -32510,7 +32640,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.6
+      "score": 12.5
     },
     {
       "slug": "signal-fusion-engine",
@@ -34449,6 +34579,32 @@
       "score": 5.0
     }
   ],
+  "trend-continuations-algoalpha": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "trend-engine-scored-trend-strategy-with-squeeze-breakout": [
     {
       "slug": "blackcat-l3-squeeze-dynamics",
@@ -36277,6 +36433,12 @@
       "score": 13.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -36285,12 +36447,6 @@
     {
       "slug": "ema-rsi-vwap-targets",
       "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "ema-supertrend-obv-strixedge",
-      "title": "EMA Supertrend OBV Strixedge Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -37563,8 +37719,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -38022,7 +38178,7 @@
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 9.6
+      "score": 9.7
     },
     {
       "slug": "20-50-ema-pullback-tap-indicator",
@@ -38282,7 +38438,7 @@
       "slug": "fisher-transform-divergence",
       "title": "Fisher Transform Divergence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 15.6
+      "score": 15.5
     },
     {
       "slug": "rsi-macd-combo",
@@ -38591,6 +38747,12 @@
       "score": 13.0
     },
     {
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -38599,12 +38761,6 @@
     {
       "slug": "force-index-divergence",
       "title": "Force Index Divergence Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "momentum-flow-oscillator",
-      "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -39409,8 +39565,8 @@
       "score": 9.0
     },
     {
-      "slug": "different-rsi",
-      "title": "Different RSI Review \u2014 Momentum Indicator",
+      "slug": "confluence-dual-oscillator",
+      "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
