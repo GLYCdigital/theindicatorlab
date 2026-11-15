@@ -124,5 +124,11 @@ Open_Interest_Tracker is a straightforward, free indicator that does one thing w
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*
 
+🪙 **Trading this on crypto?** OKX is where a lot of the order flow behind these signals actually clears — deep books on BTC, ETH and majors, plus perpetuals if you want to trade both directions.
+
+[Open an OKX Account →](https://my.okx.com/join/89285202)
+*Affiliate link · We earn a commission at no extra cost to you*
+<!-- okx-cta -->
+
 ---
 *Data source: TradingView. This review is based on publicly available indicator information and the official TradingView script documentation. Always test indicators in a demo environment before live trading.*
