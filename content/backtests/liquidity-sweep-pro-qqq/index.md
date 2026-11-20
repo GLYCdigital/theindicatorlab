@@ -1,22 +1,22 @@
 ---
 {
   "title": "Sweep \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-4.1%"
+      "value": "-6.0%"
     },
     {
       "label": "CAGR",
-      "value": "-0.8%"
+      "value": "-1.2%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.05"
+      "value": "-0.07"
     },
     {
       "label": "Max Drawdown",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.97"
+      "value": "0.94"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.9%",
+      "return_pct": "-0.2%",
       "trades": "3",
       "win_rate_pct": "37.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+10.7%",
+      "return_pct": "+1.6%",
       "trades": "20",
       "win_rate_pct": "37.5%"
     }
@@ -109,9 +109,9 @@ On QQQ, the Sweep acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-15 → 2026-11-13), the Liquidity Sweep Pro delivered a **-4.1% total return** on QQQ, compounding at **-0.8% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the Liquidity Sweep Pro delivered a **-6.0% total return** on QQQ, compounding at **-1.2% annually**. 
 
-At **-0.05**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.07**, the Sweep earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **35.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 35% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **35.0% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.05 | ❌ Weak |
+| Sharpe Ratio | -0.07 | ❌ Weak |
 | Max Drawdown | 35.0% | ⚠️ Significant |
 | Win Rate | 37.5% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.97 | ❌ Unprofitable |
+| Profit Factor | 0.94 | ❌ Unprofitable |
 | Trades/Year | ~104 total | Active |
 
-The **profit factor of 0.97** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 37.5% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.94** tells the real story: when the Sweep fires, the winning signals don't outweigh the losers. Combined with a 37.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Liquidity Sweep Pro Work on QQQ?
 
-The liquidity sweep pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.05 Sharpe ratio** and **0.97 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The liquidity sweep pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.07 Sharpe ratio** and **0.94 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Sweep is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Liquidity Sweep Pro — Trade Signals on QQQ](/backtests/liquidity-sweep-pro-qqq-trades.png)

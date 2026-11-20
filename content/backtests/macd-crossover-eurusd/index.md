@@ -1,26 +1,26 @@
 ---
 {
   "title": "MACD \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-11.3%"
+      "value": "-12.4%"
     },
     {
       "label": "CAGR",
-      "value": "-2.4%"
+      "value": "-2.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.94"
+      "value": "-0.93"
     },
     {
       "label": "Max Drawdown",
-      "value": "12.9%"
+      "value": "13.1%"
     },
     {
       "label": "Win Rate",
@@ -28,7 +28,7 @@
     },
     {
       "label": "Profit Factor",
-      "value": "0.68"
+      "value": "0.63"
     },
     {
       "label": "Total Trades",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-1.0%",
+      "return_pct": "+0.4%",
       "trades": "0",
       "win_rate_pct": "37.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-6.1%",
+      "return_pct": "-6.6%",
       "trades": "7",
       "win_rate_pct": "37.9%"
     }
@@ -109,27 +109,27 @@ On EURUSD, the MACD acts as a trend filter. It won't catch every exact bottom, b
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-11-15 → 2026-11-13), the MACD Crossover delivered a **-11.3% total return** on EURUSD=X, compounding at **-2.4% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the MACD Crossover delivered a **-12.4% total return** on EURUSD=X, compounding at **-2.6% annually**. 
 
-At **-0.94**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.93**, the MACD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **12.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 13% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **13.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 13% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.94 | ❌ Weak |
-| Max Drawdown | 12.9% | ✅ Low |
+| Sharpe Ratio | -0.93 | ❌ Weak |
+| Max Drawdown | 13.1% | ✅ Low |
 | Win Rate | 37.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.68 | ❌ Unprofitable |
+| Profit Factor | 0.63 | ❌ Unprofitable |
 | Trades/Year | ~58 total | Active |
 
-The **profit factor of 0.68** tells the real story: when the MACD fires, the winning signals don't outweigh the losers. Combined with a 37.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.63** tells the real story: when the MACD fires, the winning signals don't outweigh the losers. Combined with a 37.9% win rate, this requires careful position sizing to be profitable.
 
 ## Does the MACD Crossover Work on EURUSD?
 
-The macd crossover struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.94 Sharpe ratio** and **0.68 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The macd crossover struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-0.93 Sharpe ratio** and **0.63 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the MACD is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![MACD Crossover — Trade Signals on EURUSD=X](/backtests/macd-crossover-eurusd-trades.png)

@@ -1,38 +1,38 @@
 ---
 {
   "title": "Ichimoku \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+40.0%"
+      "value": "+51.2%"
     },
     {
       "label": "CAGR",
-      "value": "7.0%"
+      "value": "8.6%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.27"
+      "value": "0.30"
     },
     {
       "label": "Max Drawdown",
-      "value": "44.0%"
+      "value": "43.7%"
     },
     {
       "label": "Win Rate",
-      "value": "26.3%"
+      "value": "27.0%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.21"
+      "value": "1.26"
     },
     {
       "label": "Total Trades",
-      "value": "38"
+      "value": "37"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-27.1%",
+      "return_pct": "-17.7%",
       "trades": "0",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "27.0%"
     },
     {
       "year": "2022",
       "return_pct": "-65.3%",
-      "trades": "10",
-      "win_rate_pct": "26.3%"
+      "trades": "9",
+      "win_rate_pct": "27.0%"
     },
     {
       "year": "2023",
       "return_pct": "+154.2%",
       "trades": "6",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "27.0%"
     },
     {
       "year": "2024",
       "return_pct": "+111.5%",
       "trades": "7",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "27.0%"
     },
     {
       "year": "2025",
       "return_pct": "-7.3%",
       "trades": "9",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "27.0%"
     },
     {
       "year": "2026",
-      "return_pct": "-22.4%",
+      "return_pct": "-33.4%",
       "trades": "6",
-      "win_rate_pct": "26.3%"
+      "win_rate_pct": "27.0%"
     }
   ],
   "cta_headline": "Trade Crypto on OKX \u2014 0.08% Spot Fees",
@@ -109,27 +109,27 @@ On BTC, the Ichimoku acts as a trend filter. It won't catch every exact bottom, 
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-15 → 2026-11-13), the Ichimoku Cloud delivered a **+40.0% total return** on BTC-USD, compounding at **7.0% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the Ichimoku Cloud delivered a **+51.2% total return** on BTC-USD, compounding at **8.6% annually**. 
 
-At **0.27**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.30**, the Ichimoku earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **44.0% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **43.7% max drawdown**. At some point during this 5-year run, you'd have been down nearly 44% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.27 | ❌ Weak |
-| Max Drawdown | 44.0% | ⚠️ Significant |
-| Win Rate | 26.3% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.21 | ⚠️ Marginal |
-| Trades/Year | ~38 total | Active |
+| Sharpe Ratio | 0.30 | ❌ Weak |
+| Max Drawdown | 43.7% | ⚠️ Significant |
+| Win Rate | 27.0% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.26 | ⚠️ Marginal |
+| Trades/Year | ~37 total | Active |
 
-The **profit factor of 1.21** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 26.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.26** tells the real story: when the Ichimoku fires, the winning signals are larger than the losing ones. Combined with a 27.0% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Ichimoku Cloud Work on BTC?
 
-The ichimoku cloud struggled to generate meaningful edge on BTC over this 5-year period. With a **0.27 Sharpe ratio** and **1.21 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The ichimoku cloud struggled to generate meaningful edge on BTC over this 5-year period. With a **0.30 Sharpe ratio** and **1.26 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Ichimoku is useless — it may work better on different assets, timeframes, or when combined with other filters. But on BTC with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Ichimoku Cloud — Trade Signals on BTC-USD](/backtests/ichimoku-cloud-btc-usd-trades.png)

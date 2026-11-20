@@ -1,38 +1,38 @@
 ---
 {
   "title": "Stochastic \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-44.5%"
+      "value": "-43.5%"
     },
     {
       "label": "CAGR",
-      "value": "-11.1%"
+      "value": "-10.8%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.64"
+      "value": "-0.61"
     },
     {
       "label": "Max Drawdown",
-      "value": "47.9%"
+      "value": "47.1%"
     },
     {
       "label": "Win Rate",
-      "value": "41.0%"
+      "value": "41.2%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.67"
+      "value": "0.68"
     },
     {
       "label": "Total Trades",
-      "value": "166"
+      "value": "165"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.9%",
-      "trades": "2",
-      "win_rate_pct": "41.0%"
+      "return_pct": "-0.2%",
+      "trades": "1",
+      "win_rate_pct": "41.2%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "32",
-      "win_rate_pct": "41.0%"
+      "win_rate_pct": "41.2%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "32",
-      "win_rate_pct": "41.0%"
+      "win_rate_pct": "41.2%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "35",
-      "win_rate_pct": "41.0%"
+      "win_rate_pct": "41.2%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "35",
-      "win_rate_pct": "41.0%"
+      "win_rate_pct": "41.2%"
     },
     {
       "year": "2026",
-      "return_pct": "+10.7%",
+      "return_pct": "+1.6%",
       "trades": "30",
-      "win_rate_pct": "41.0%"
+      "win_rate_pct": "41.2%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,27 +109,27 @@ On QQQ, the Stochastic acts as a trend filter. It won't catch every exact bottom
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-15 → 2026-11-13), the Stochastic Crossover delivered a **-44.5% total return** on QQQ, compounding at **-11.1% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the Stochastic Crossover delivered a **-43.5% total return** on QQQ, compounding at **-10.8% annually**. 
 
-At **-0.64**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.61**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **47.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 48% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **47.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 47% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.64 | ❌ Weak |
-| Max Drawdown | 47.9% | ⚠️ Significant |
-| Win Rate | 41.0% | ⚠️ Below average |
-| Profit Factor | 0.67 | ❌ Unprofitable |
-| Trades/Year | ~166 total | Active |
+| Sharpe Ratio | -0.61 | ❌ Weak |
+| Max Drawdown | 47.1% | ⚠️ Significant |
+| Win Rate | 41.2% | ⚠️ Below average |
+| Profit Factor | 0.68 | ❌ Unprofitable |
+| Trades/Year | ~165 total | Active |
 
-The **profit factor of 0.67** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 41.0% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.68** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 41.2% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on QQQ?
 
-The stochastic crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.64 Sharpe ratio** and **0.67 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on QQQ over this 5-year period. With a **-0.61 Sharpe ratio** and **0.68 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on QQQ](/backtests/stochastic-crossover-qqq-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "BollingerBands \u2014 AAPL Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+36.5%"
+      "value": "+32.2%"
     },
     {
       "label": "CAGR",
-      "value": "6.4%"
+      "value": "5.7%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.27"
+      "value": "0.24"
     },
     {
       "label": "Max Drawdown",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+18.4%",
+      "return_pct": "+10.3%",
       "trades": "0",
       "win_rate_pct": "41.5%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "+32.5%",
+      "return_pct": "+28.1%",
       "trades": "11",
       "win_rate_pct": "41.5%"
     }
@@ -109,9 +109,9 @@ On AAPL, the BollingerBands acts as a trend filter. It won't catch every exact b
 
 ## 5-Year Performance on AAPL
 
-Over five years (2021-11-15 → 2026-11-13), the Bollinger Band Squeeze delivered a **+36.5% total return** on AAPL, compounding at **6.4% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the Bollinger Band Squeeze delivered a **+32.2% total return** on AAPL, compounding at **5.7% annually**. 
 
-At **0.27**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.24**, the BollingerBands earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,7 +119,7 @@ The catch? A **26.4% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.27 | ❌ Weak |
+| Sharpe Ratio | 0.24 | ❌ Weak |
 | Max Drawdown | 26.4% | ⚠️ Moderate |
 | Win Rate | 41.5% | ⚠️ Below average |
 | Profit Factor | 1.39 | ⚠️ Marginal |
@@ -129,7 +129,7 @@ The **profit factor of 1.39** tells the real story: when the BollingerBands fire
 
 ## Does the Bollinger Band Squeeze Work on AAPL?
 
-The bollinger band squeeze struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.27 Sharpe ratio** and **1.39 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The bollinger band squeeze struggled to generate meaningful edge on AAPL over this 5-year period. With a **0.24 Sharpe ratio** and **1.39 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the BollingerBands is useless — it may work better on different assets, timeframes, or when combined with other filters. But on AAPL with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Bollinger Band Squeeze — Trade Signals on AAPL](/backtests/bollinger-band-squeeze-aapl-trades.png)

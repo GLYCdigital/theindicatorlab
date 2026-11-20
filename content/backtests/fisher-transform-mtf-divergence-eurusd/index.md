@@ -1,10 +1,10 @@
 ---
 {
   "title": "Fisher \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-1.0%",
+      "return_pct": "+0.4%",
       "trades": "5",
       "win_rate_pct": "33.9%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-6.1%",
+      "return_pct": "-6.6%",
       "trades": "43",
       "win_rate_pct": "33.9%"
     }
@@ -109,7 +109,7 @@ On EURUSD, the Fisher acts as a trend filter. It won't catch every exact bottom,
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-11-15 → 2026-11-13), the Fisher Transform MTF Divergence delivered a **-44.0% total return** on EURUSD=X, compounding at **-11.0% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the Fisher Transform MTF Divergence delivered a **-44.0% total return** on EURUSD=X, compounding at **-11.0% annually**. 
 
 At **-2.02**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -158,6 +158,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on EURUSD=X](/backtests/fisher-transform-mtf-divergence-eurusd-trades.png)

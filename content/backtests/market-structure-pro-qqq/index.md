@@ -1,38 +1,38 @@
 ---
 {
   "title": "Swing \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-14",
+  "date": "2026-11-21",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-15 \u2192 2026-11-13",
+  "period": "2021-11-22 \u2192 2026-11-20",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+26.1%"
+      "value": "+29.8%"
     },
     {
       "label": "CAGR",
-      "value": "4.7%"
+      "value": "5.4%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.20"
+      "value": "0.23"
     },
     {
       "label": "Max Drawdown",
-      "value": "26.2%"
+      "value": "25.9%"
     },
     {
       "label": "Win Rate",
-      "value": "27.9%"
+      "value": "28.4%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.30"
+      "value": "1.32"
     },
     {
       "label": "Total Trades",
-      "value": "68"
+      "value": "67"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.9%",
-      "trades": "2",
-      "win_rate_pct": "27.9%"
+      "return_pct": "-0.2%",
+      "trades": "1",
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "15",
-      "win_rate_pct": "27.9%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "8",
-      "win_rate_pct": "27.9%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "12",
-      "win_rate_pct": "27.9%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "17",
-      "win_rate_pct": "27.9%"
+      "win_rate_pct": "28.4%"
     },
     {
       "year": "2026",
-      "return_pct": "+10.7%",
+      "return_pct": "+1.6%",
       "trades": "14",
-      "win_rate_pct": "27.9%"
+      "win_rate_pct": "28.4%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,27 +109,27 @@ On QQQ, the Swing acts as a trend filter. It won't catch every exact bottom, but
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-15 → 2026-11-13), the Market Structure Pro delivered a **+26.1% total return** on QQQ, compounding at **4.7% annually**. 
+Over five years (2021-11-22 → 2026-11-20), the Market Structure Pro delivered a **+29.8% total return** on QQQ, compounding at **5.4% annually**. 
 
-At **0.20**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.23**, the Swing earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **26.2% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **25.9% max drawdown**. At some point during this 5-year run, you'd have been down nearly 26% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.20 | ❌ Weak |
-| Max Drawdown | 26.2% | ⚠️ Moderate |
-| Win Rate | 27.9% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.30 | ⚠️ Marginal |
-| Trades/Year | ~68 total | Active |
+| Sharpe Ratio | 0.23 | ❌ Weak |
+| Max Drawdown | 25.9% | ⚠️ Moderate |
+| Win Rate | 28.4% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.32 | ⚠️ Marginal |
+| Trades/Year | ~67 total | Active |
 
-The **profit factor of 1.30** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 27.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.32** tells the real story: when the Swing fires, the winning signals are larger than the losing ones. Combined with a 28.4% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Market Structure Pro Work on QQQ?
 
-The market structure pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.20 Sharpe ratio** and **1.30 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The market structure pro struggled to generate meaningful edge on QQQ over this 5-year period. With a **0.23 Sharpe ratio** and **1.32 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Swing is useless — it may work better on different assets, timeframes, or when combined with other filters. But on QQQ with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 14, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Market Structure Pro — Trade Signals on QQQ](/backtests/market-structure-pro-qqq-trades.png)
