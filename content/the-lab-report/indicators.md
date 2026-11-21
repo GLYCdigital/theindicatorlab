@@ -3,12 +3,12 @@ title: "All Indicators — The Lab Report"
 date: 2026-07-19
 draft: false
 type: page
-description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 163 indicators across 20 markets, updated weekly."
+description: "Every indicator tracked by The Lab Report consensus engine, organized by category. 168 indicators across 20 markets, updated weekly."
 ---
 
 Every indicator in The Lab Report has been **independently reviewed by The Indicator Lab** before being added to the consensus engine. We don't blindly dump TA-Lib functions — every signal function is hand-tested against 20 markets.
 
-**Last updated:** November 15, 2026 · **163 indicators** across momentum, volume, trend, and volatility.
+**Last updated:** November 22, 2026 · **168 indicators** across momentum, volume, trend, and volatility.
 
 ---
 
@@ -67,7 +67,7 @@ Indicators that measure the speed and strength of price movement.
 | Ehlers Adaptive Stochastic 🆕 | [→ Full review](/reviews/ehlers-adaptive-stochastic/) |
 | Ehlers Decycler 🆕 | [→ Full review](/reviews/ehlers-decycler/) |
 
-## Trend (58)
+## Trend (62)
 
 Indicators that identify direction and strength of the prevailing trend.
 
@@ -131,8 +131,12 @@ Indicators that identify direction and strength of the prevailing trend.
 | Gann Fan 🆕 | [→ Full review](/reviews/gann-fan/) |
 | Andrews Pitchfork 🆕 | [→ Full review](/reviews/andrews-pitchfork/) |
 | Ehlers Supersmoother 🆕 | [→ Full review](/reviews/ehlers-supersmoother/) |
+| DMI (Directional Movement) 🆕 | [→ Full review](/reviews/dmi-directional-movement-index/) |
+| Kagi Charts 🆕 | [→ Full review](/reviews/kagi-charts/) |
+| Holt-Winters Forecast 🆕 | [→ Full review](/reviews/holt-winter-trend-forecast/) |
+| Butterworth Spectral Trend 🆕 | [→ Full review](/reviews/butterworth-spectral-trend/) |
 
-## Volume (29)
+## Volume (30)
 
 Indicators that analyze trading volume to confirm or refute price action.
 
@@ -167,6 +171,7 @@ Indicators that analyze trading volume to confirm or refute price action.
 | Williams Variable A/D Pressure 🆕 | [→ Full review](/reviews/williams-variable-a-d-pressure/) |
 | Positive Volume Index 🆕 | [→ Full review](/reviews/positive-volume-index/) |
 | VWMA 🆕 | [→ Full review](/reviews/volume-weighted-moving-average-vwma/) |
+| Anchored VWAP 🆕 | [→ Full review](/reviews/anchored-vwap/) |
 
 ## Volatility (28)
 
