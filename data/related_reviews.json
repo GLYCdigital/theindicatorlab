@@ -71,8 +71,8 @@
       "score": 9.0
     },
     {
-      "slug": "keltner-channel-structure",
-      "title": "Keltner Channel Structure Review \u2014 Market Structure",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -2191,6 +2191,12 @@
       "score": 13.0
     },
     {
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "squeeze-pro",
       "title": "Squeeze Pro Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -2199,12 +2205,6 @@
     {
       "slug": "volatility-contraction-pattern",
       "title": "Volatility Contraction Pattern Review \u2014 Chart Patterns",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "vwap-std-dev-bands",
-      "title": "VWAP Std Dev Bands Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -3613,6 +3613,32 @@
       "score": 12.0
     }
   ],
+  "ayano-full-system": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "backtesting-dashboard": [
     {
       "slug": "adaptive-ai-indicator",
@@ -4031,6 +4057,12 @@
   ],
   "bitcoin-superflip-supertrend-ema-trend-following-strategy": [
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-supertrend-obv-strixedge",
       "title": "EMA Supertrend OBV Strixedge Review \u2014 Volume Indicator",
       "rating": 4,
@@ -4047,12 +4079,6 @@
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "signal-fusion-engine",
-      "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 11.1
     }
   ],
   "black-litterman-allocator-backquant": [
@@ -4835,6 +4861,32 @@
       "score": 8.0
     }
   ],
+  "breakout-signals-donchian-200-ema-volume-atr-easierstoc": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais Supertrend Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "atr-bands",
+      "title": "ATR Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "bressert-cycle-signals": [
     {
       "slug": "20-50-ema-pullback-tap-indicator",
@@ -5201,18 +5253,6 @@
   ],
   "candle-pressure-flip-engine": [
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "adaptive-trend-lines",
       "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
@@ -5221,6 +5261,18 @@
     {
       "slug": "adx-average-directional-index",
       "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adx-smoothed",
+      "title": "ADX Smoothed Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adx-with-di-di",
+      "title": "ADX With Di Di Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -7053,6 +7105,12 @@
       "score": 9.0
     },
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "buy-sell-hull-crossover-signals-fast-slow",
       "title": "Buy Sell Hull Crossover Signals Fast Slow Review \u2014 Trend",
       "rating": 4,
@@ -7061,12 +7119,6 @@
     {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cloud-phantomcipher",
-      "title": "EMA Cloud Phantomcipher Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8613,6 +8665,12 @@
       "score": 9.0
     },
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "chop-stopper-ema-px",
       "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
       "rating": 4,
@@ -8621,12 +8679,6 @@
     {
       "slug": "ease-of-movement-ma",
       "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "ema-cross-signal",
-      "title": "EMA Cross Signal Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -8837,6 +8889,32 @@
       "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
+    }
+  ],
+  "dynamic-rsi-trend-nj": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-rsi-momentum-engine-algochief",
+      "title": "Adaptive RSI Momentum Engine Algochief Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "bolinger-bands-range-rsi-oscillator",
+      "title": "Bolinger Bands Range RSI Oscillator Review \u2014 Momentum",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "dynamic-smc-market-structure": [
@@ -10263,10 +10341,10 @@
       "score": 13.0
     },
     {
-      "slug": "signal-fusion-engine",
-      "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
-      "score": 10.9
+      "score": 11.6
     }
   ],
   "ema-trend-signals": [
@@ -10303,6 +10381,12 @@
       "score": 13.0
     },
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-rmsd-bands-nj",
       "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
       "rating": 4,
@@ -10311,12 +10395,6 @@
     {
       "slug": "jurik-volatility-bands",
       "title": "Jurik Volatility Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "mesa-phase-adaptive-band-trend-schizoquant",
-      "title": "Mesa Phase Adaptive Band Trend Schizoquant Review",
       "rating": 4,
       "score": 13.0
     }
@@ -11459,8 +11537,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "dynamic-rsi-trend-nj",
+      "title": "Dynamic RSI Trend Nj Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -12083,8 +12161,8 @@
       "score": 9.0
     },
     {
-      "slug": "dual-phase-reversal-by-dgt",
-      "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     }
@@ -12487,20 +12565,20 @@
       "score": 5.0
     },
     {
-      "slug": "absorption-detection",
-      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "slug": "adaptive-ai-indicator",
+      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
+      "slug": "adaptive-composite-oscillator-aco",
+      "title": "Adaptive Composite Oscillator Aco Review \u2014 Momentum",
+      "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "adaptive-ai-indicator",
-      "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
+      "slug": "adaptive-regression-breakout-map-gainz-algo",
+      "title": "Adaptive Regression Breakout Map Gainz Algo Review \u2014 Trend",
       "rating": 4,
       "score": 5.0
     }
@@ -12632,7 +12710,7 @@
       "slug": "gann-fan",
       "title": "Gann Fan Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 5.7
+      "score": 5.6
     }
   ],
   "gann-square": [
@@ -13169,14 +13247,14 @@
       "score": 12.0
     },
     {
-      "slug": "ema-cross",
-      "title": "EMA Cross Review \u2014 Trend Indicator",
+      "slug": "ema-crossover",
+      "title": "EMA Crossover Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     },
     {
-      "slug": "ema-crossover",
-      "title": "EMA Crossover Review \u2014 Trend Indicator",
+      "slug": "ema-ribbon",
+      "title": "EMA Ribbon Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -13961,6 +14039,32 @@
       "score": 12.0
     }
   ],
+  "helios-multi-session-orb-ib-vwap-atr": [
+    {
+      "slug": "anchored-vwap-w-4-stdev-pip-atr-bands",
+      "title": "Anchored VWAP W 4 Stdev Pip ATR Bands Review \u2014 Volume",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "viprasol-gold-sniper-confluence",
+      "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "hero-dashboard-information-table": [
     {
       "slug": "demarker-indicator",
@@ -14547,14 +14651,14 @@
       "score": 9.0
     },
     {
-      "slug": "buy-sell-indicator",
-      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "chop-stopper-ema-px",
-      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "slug": "buy-sell-indicator",
+      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -15388,7 +15492,7 @@
       "slug": "fractal-levels",
       "title": "Fractal Levels Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 6.0
+      "score": 6.1
     }
   ],
   "ict-htf-candles-bryan": [
@@ -16165,8 +16269,8 @@
       "score": 9.0
     },
     {
-      "slug": "dual-phase-reversal-by-dgt",
-      "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     }
@@ -16549,14 +16653,14 @@
       "score": 13.0
     },
     {
-      "slug": "ema-rmsd-bands-nj",
-      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 13.0
     },
     {
-      "slug": "jurik-volatility-bands",
-      "title": "Jurik Volatility Bands Review \u2014 Volatility Indicator",
+      "slug": "ema-rmsd-bands-nj",
+      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -16581,8 +16685,8 @@
       "score": 13.0
     },
     {
-      "slug": "ema-rmsd-bands-nj",
-      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 13.0
     }
@@ -18017,6 +18121,32 @@
       "score": 9.0
     }
   ],
+  "liquidity-heatmap": [
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aj-ict-smc",
+      "title": "Aj ICT SMC Review \u2014 Market Structure Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "almazov-trade-smt-monitor",
+      "title": "Almazov Trade Smt Monitor Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "liquidity-hunt-pro-viprasol": [
     {
       "slug": "adaptive-liquidity-reclaim-map-phenlabs",
@@ -18977,6 +19107,32 @@
       "title": "MACD Divergence Detector Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
+    }
+  ],
+  "macd-impulse-macd-normalized-momentum-scale": [
+    {
+      "slug": "bollinger-bands-macd-combo",
+      "title": "Bollinger Bands MACD Combo Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "byo-pattern-trendoscope",
+      "title": "Byo Pattern Trendoscope Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ema-21-macd-rsi-alma",
+      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
     }
   ],
   "macd-mtf": [
@@ -20293,14 +20449,14 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
+      "slug": "adaptive-swing-timing-engine-algopoint",
+      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-swing-timing-engine-algopoint",
-      "title": "Adaptive Swing Timing Engine Algopoint Review \u2014 Trend",
+      "slug": "adaptive-trend-line",
+      "title": "Adaptive Trend Line Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -21691,6 +21847,12 @@
       "score": 9.0
     },
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
       "slug": "buy-sell-hull-crossover-signals-fast-slow",
       "title": "Buy Sell Hull Crossover Signals Fast Slow Review \u2014 Trend",
       "rating": 4,
@@ -21699,12 +21861,6 @@
     {
       "slug": "buy-sell-indicator",
       "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 9.0
-    },
-    {
-      "slug": "chop-stopper-ema-px",
-      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -21729,8 +21885,8 @@
       "score": 13.0
     },
     {
-      "slug": "ema-rmsd-bands-nj",
-      "title": "EMA Rmsd Bands Nj Review \u2014 Volatility Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 13.0
     }
@@ -22471,20 +22627,20 @@
       "score": 8.0
     },
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
-      "score": 8.0
-    },
-    {
       "slug": "adaptive-ai-indicator",
       "title": "Adaptive AI Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -23344,7 +23500,7 @@
       "slug": "obv-ma",
       "title": "OBV Ma Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 7.6
+      "score": 7.5
     }
   ],
   "obv-divergence": [
@@ -24479,14 +24635,14 @@
       "score": 13.0
     },
     {
-      "slug": "chop-stopper-ema-px",
-      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ease-of-movement-ma",
-      "title": "Ease Of Movement Ma Review \u2014 Trend Indicator",
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -25363,14 +25519,14 @@
       "score": 8.0
     },
     {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "slug": "adaptive-moving-average",
+      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     },
     {
-      "slug": "adaptive-moving-average",
-      "title": "Adaptive Moving Average Review \u2014 Trend Indicator",
+      "slug": "adaptive-trend-lines",
+      "title": "Adaptive Trend Lines Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 8.0
     }
@@ -26807,26 +26963,26 @@
   ],
   "qarar-unified-egx-market-map": [
     {
-      "slug": "accumulation-swing-index",
-      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
-      "rating": 3,
-      "score": 8.0
-    },
-    {
-      "slug": "adaptive-bollinger-bands",
-      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
-      "slug": "adx-average-directional-index",
-      "title": "ADX Average Directional Index Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 8.0
-    },
-    {
       "slug": "beta-indicator",
       "title": "Beta Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "bollinger-bands-reversion",
+      "title": "Bollinger Bands Reversion Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "candle-pressure-flip-engine",
+      "title": "Candle Pressure Flip Engine Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 8.0
+    },
+    {
+      "slug": "candlestick-pattern-strength",
+      "title": "Candlestick Pattern Strength Review \u2014 Chart Patterns",
       "rating": 4,
       "score": 8.0
     }
@@ -27995,8 +28151,8 @@
       "score": 9.0
     },
     {
-      "slug": "buy-sell-indicator",
-      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     }
@@ -30127,8 +30283,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -30323,6 +30479,12 @@
       "score": 13.0
     },
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -30331,12 +30493,6 @@
     {
       "slug": "momentum-flow-oscillator",
       "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "multi-timeframe-multi-indicator-dashboard",
-      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
       "score": 13.0
     }
@@ -30615,14 +30771,14 @@
       "score": 9.0
     },
     {
-      "slug": "chop-stopper-ema-px",
-      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "dual-phase-reversal-by-dgt",
-      "title": "Dual Phase Reversal By Dgt Review \u2014 Trend Indicator",
+      "slug": "chop-stopper-ema-px",
+      "title": "Chop Stopper EMA Px Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -31173,6 +31329,32 @@
       "score": 9.0
     }
   ],
+  "smart-money-pro": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "almazov-trade-smt-monitor",
+      "title": "Almazov Trade Smt Monitor Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "apex-order-block-liquidity-engine-aoble",
+      "title": "Apex Order Block Liquidity Engine Aoble Review",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "smart-money-stop-hunt-detection": [
     {
       "slug": "3-candle-sweep-maximopartners",
@@ -31349,8 +31531,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -31404,7 +31586,7 @@
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.3
+      "score": 11.2
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -31947,8 +32129,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -33299,8 +33481,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -33481,8 +33663,8 @@
       "score": 12.1
     },
     {
-      "slug": "viprasol-gold-sniper-confluence",
-      "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 10.5
     }
@@ -33530,7 +33712,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.9
+      "score": 10.8
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -34105,8 +34287,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -36061,6 +36243,32 @@
       "score": 5.0
     }
   ],
+  "triangular-hull-moving-average-volatility-bigbeluga": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-bollinger-bands",
+      "title": "Adaptive Bollinger Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adaptive-envelopes",
+      "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "trident-swing-projector": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -37343,6 +37551,12 @@
       "score": 13.0
     },
     {
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "confluence-dual-oscillator",
       "title": "Confluence Dual Oscillator Review \u2014 Momentum Indicator",
       "rating": 4,
@@ -37351,12 +37565,6 @@
     {
       "slug": "ema-21-macd-rsi-alma",
       "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "ema-rsi-vwap-targets",
-      "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -37511,8 +37719,8 @@
       "score": 13.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 13.0
     }
@@ -38551,8 +38759,8 @@
       "score": 9.0
     },
     {
-      "slug": "keltner-channel-trend-smc-liquidity-sweep",
-      "title": "Keltner Channel Trend SMC Liquidity Sweep Review",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     }
@@ -38571,14 +38779,14 @@
       "score": 9.0
     },
     {
-      "slug": "buy-sell-indicator",
-      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
+      "slug": "breakout-signals-donchian-200-ema-volume-atr-easierstoc",
+      "title": "Breakout Signals Donchian 200 EMA Volume ATR Easierstoc Review",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "double-exponential-moving-average-dema",
-      "title": "Double Exponential Moving Average DEMA Review \u2014 Trend",
+      "slug": "buy-sell-indicator",
+      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -39019,8 +39227,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -39045,8 +39253,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -39071,8 +39279,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -39097,8 +39305,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -39149,8 +39357,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -39279,8 +39487,8 @@
       "score": 9.0
     },
     {
-      "slug": "multi-setup-intraday-signals-sess-vp-orb-vwap-liqstrat",
-      "title": "Multi Setup Intraday Signals Sess Vp Orb VWAP Liqstrat Review",
+      "slug": "helios-multi-session-orb-ib-vwap-atr",
+      "title": "Helios Multi Session Orb Ib VWAP ATR Review \u2014 Volume",
       "rating": 4,
       "score": 9.0
     }
@@ -39380,13 +39588,13 @@
       "slug": "rsi-macd-combo",
       "title": "RSI MACD Combo Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.5
+      "score": 13.4
     },
     {
       "slug": "rsi-macd-confluence",
       "title": "RSI MACD Confluence Review \u2014 Momentum Indicator",
       "rating": 4,
-      "score": 13.5
+      "score": 13.4
     }
   ],
   "wake-up-master": [
