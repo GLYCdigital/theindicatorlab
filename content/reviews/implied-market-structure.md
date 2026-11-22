@@ -128,5 +128,11 @@ Implied_Market_Structure is a narrow, honestly-scoped tool. It reads the listed 
 [Try TradingView Free →](https://www.tradingview.com/?aff_id=166324)
 *Affiliate link · We earn a commission at no extra cost to you*
 
+📈 **Trading this on stocks?** Moomoo gives you US, HK and SG equities with commission-free US trades and the same charts these signals are built for.
+
+[Open a Moomoo Account →](https://j.moomoo.com/0BpZwx)
+*Affiliate link · We earn a commission at no extra cost to you*
+<!-- moomoo-cta -->
+
 ---
 *Data source: TradingView. This review is based on publicly available indicator information and the official TradingView script documentation. Always test indicators in a demo environment before live trading.*
