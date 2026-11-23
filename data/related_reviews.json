@@ -8241,6 +8241,32 @@
       "score": 12.0
     }
   ],
+  "divergence-long-short-signals": [
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "adx-divergence",
+      "title": "ADX Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "ag-pro-obv-pressure-divergence-agpro-series",
+      "title": "Ag Pro OBV Pressure Divergence Agpro Series Review \u2014 Volume",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "aroon-divergence",
+      "title": "Aroon Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "divergence-scanner-multi-oscillator-confirmation-dots3red": [
     {
       "slug": "accum-dist-divergence",
@@ -14657,8 +14683,8 @@
       "score": 9.0
     },
     {
-      "slug": "buy-sell-indicator",
-      "title": "Buy Sell Indicator Review \u2014 Trend Indicator",
+      "slug": "buy-sell-hull-crossover-signals-fast-slow",
+      "title": "Buy Sell Hull Crossover Signals Fast Slow Review \u2014 Trend",
       "rating": 4,
       "score": 9.0
     }
@@ -24309,6 +24335,32 @@
       "score": 5.0
     }
   ],
+  "order-block-holding-power-algonorth": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "abcd-pattern",
+      "title": "Abcd Pattern Review \u2014 Chart Pattern Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adaptive-liquidity-reclaim-map-phenlabs",
+      "title": "Adaptive Liquidity Reclaim Map Phenlabs Review",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "order-block-intelligence-mitigation-probability-ai-dots3red": [
     {
       "slug": "3-candle-sweep-maximopartners",
@@ -31586,7 +31638,7 @@
       "slug": "true-strength-index",
       "title": "True Strength Index Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 11.2
+      "score": 11.3
     }
   ],
   "smartbreak-fibo-traderhook": [
