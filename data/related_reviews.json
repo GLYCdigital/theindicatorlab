@@ -17341,6 +17341,32 @@
       "score": 13.0
     }
   ],
+  "keltner-rings-quantum-algo": [
+    {
+      "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
+      "title": "0DTE Scalper Kalman Supertrend And ADX Volatility Waves Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "ais-supertrend",
+      "title": "Ais Supertrend Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "atr-bands",
+      "title": "ATR Bands Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 13.0
+    }
+  ],
   "key-levels-for-futures": [
     {
       "slug": "1h-4h-swing-high-low-zones-icc",
@@ -23423,6 +23449,32 @@
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "nonlinear-price-geometry-system-npgs": [
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "ag-pro-obv-pressure-divergence-agpro-series",
+      "title": "Ag Pro OBV Pressure Divergence Agpro Series Review \u2014 Volume",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algoz-pro-price-action",
+      "title": "Algoz Pro Price Action Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
     }
   ],
   "nonparametric-relative-momentum-backquant": [
