@@ -1,6 +1,6 @@
 ---
 title: "Ichimoku Backtest Results"
-date: 2026-11-21
+date: 2026-11-28
 draft: false
 type: backtests
 description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe ratio."
@@ -28,7 +28,7 @@ description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe
 <tr><td>🟡 <a href="/backtests/ichimoku-cloud-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+55.1%</td><td>9.2%</td><td>0.50</td><td>18.0%</td><td>40.0%</td><td>2.15</td><td>20</td></tr>
 <tr><td>🟡 <a href="/backtests/ichimoku-cloud-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+50.1%</td><td>8.5%</td><td>0.50</td><td>19.0%</td><td>52.6%</td><td>2.85</td><td>19</td></tr>
 <tr><td>🟡 <a href="/backtests/ichimoku-cloud-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+51.2%</td><td>8.6%</td><td>0.30</td><td>43.7%</td><td>27.0%</td><td>1.26</td><td>37</td></tr>
-<tr><td>🟡 <a href="/backtests/ichimoku-cloud-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+7.8%</td><td>1.5%</td><td>0.08</td><td>53.0%</td><td>34.2%</td><td>1.04</td><td>38</td></tr>
+<tr><td>🟡 <a href="/backtests/ichimoku-cloud-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+29.7%</td><td>5.3%</td><td>0.21</td><td>53.0%</td><td>35.1%</td><td>1.13</td><td>37</td></tr>
 <tr><td>🔴 <a href="/backtests/ichimoku-cloud-eurusd/" style="color:var(--accent);text-decoration:none;font-weight:600">EURUSD</a></td><td>+3.4%</td><td>0.7%</td><td>-0.33</td><td>11.0%</td><td>41.7%</td><td>1.19</td><td>24</td></tr>
 </tbody>
 </table>
@@ -36,7 +36,7 @@ description: "All 5 asset backtests for the Ichimoku indicator. Sorted by Sharpe
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: November 21, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: November 28, 2026</p>
 
   </div>
 </article>

@@ -1,18 +1,18 @@
 ---
 {
   "title": "Fisher \u2014 SPY Backtest Results (5-Year)",
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-22 \u2192 2026-11-20",
+  "period": "2021-11-29 \u2192 2026-11-27",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-36.9%"
+      "value": "-35.9%"
     },
     {
       "label": "CAGR",
-      "value": "-8.8%"
+      "value": "-8.5%"
     },
     {
       "label": "Sharpe Ratio",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "41.9%"
+      "value": "41.7%"
     },
     {
       "label": "Profit Factor",
@@ -32,7 +32,7 @@
     },
     {
       "label": "Total Trades",
-      "value": "241"
+      "value": "242"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+1.9%",
+      "return_pct": "+2.6%",
       "trades": "2",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "41.7%"
     },
     {
       "year": "2022",
       "return_pct": "-18.6%",
       "trades": "49",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "41.7%"
     },
     {
       "year": "2023",
       "return_pct": "+26.7%",
       "trades": "50",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "41.7%"
     },
     {
       "year": "2024",
       "return_pct": "+25.6%",
       "trades": "50",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "41.7%"
     },
     {
       "year": "2025",
       "return_pct": "+18.0%",
       "trades": "45",
-      "win_rate_pct": "41.9%"
+      "win_rate_pct": "41.7%"
     },
     {
       "year": "2026",
-      "return_pct": "+3.3%",
-      "trades": "45",
-      "win_rate_pct": "41.9%"
+      "return_pct": "+7.4%",
+      "trades": "46",
+      "win_rate_pct": "41.7%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,7 +109,7 @@ On SPY, the Fisher acts as a trend filter. It won't catch every exact bottom, bu
 
 ## 5-Year Performance on SPY
 
-Over five years (2021-11-22 → 2026-11-20), the Fisher Transform MTF Divergence delivered a **-36.9% total return** on SPY, compounding at **-8.8% annually**. 
+Over five years (2021-11-29 → 2026-11-27), the Fisher Transform MTF Divergence delivered a **-35.9% total return** on SPY, compounding at **-8.5% annually**. 
 
 At **-0.81**, the Fisher earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -121,11 +121,11 @@ The catch? A **38.1% max drawdown**. At some point during this 5-year run, you'd
 |--------|-------|---------|
 | Sharpe Ratio | -0.81 | ❌ Weak |
 | Max Drawdown | 38.1% | ⚠️ Significant |
-| Win Rate | 41.9% | ⚠️ Below average |
+| Win Rate | 41.7% | ⚠️ Below average |
 | Profit Factor | 0.71 | ❌ Unprofitable |
-| Trades/Year | ~241 total | Active |
+| Trades/Year | ~242 total | Active |
 
-The **profit factor of 0.71** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 41.9% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.71** tells the real story: when the Fisher fires, the winning signals don't outweigh the losers. Combined with a 41.7% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Fisher Transform MTF Divergence Work on SPY?
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Fisher Transform MTF Divergence — Trade Signals on SPY](/backtests/fisher-transform-mtf-divergence-spy-trades.png)

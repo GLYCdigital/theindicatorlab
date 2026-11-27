@@ -1,22 +1,22 @@
 ---
 {
   "title": "RSI \u2014 TSLA Backtest Results (5-Year)",
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-22 \u2192 2026-11-20",
+  "period": "2021-11-29 \u2192 2026-11-27",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "-59.6%"
+      "value": "-50.4%"
     },
     {
       "label": "CAGR",
-      "value": "-16.6%"
+      "value": "-13.1%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-0.17"
+      "value": "-0.09"
     },
     {
       "label": "Max Drawdown",
@@ -24,57 +24,57 @@
     },
     {
       "label": "Win Rate",
-      "value": "17.6%"
+      "value": "18.8%"
     },
     {
       "label": "Profit Factor",
-      "value": "0.26"
+      "value": "0.28"
     },
     {
       "label": "Total Trades",
-      "value": "17"
+      "value": "16"
     },
     {
       "label": "Avg Trade",
-      "value": "73 days"
+      "value": "78 days"
     }
   ],
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-8.7%",
-      "trades": "2",
-      "win_rate_pct": "17.6%"
+      "return_pct": "-7.1%",
+      "trades": "1",
+      "win_rate_pct": "18.8%"
     },
     {
       "year": "2022",
       "return_pct": "-69.2%",
       "trades": "5",
-      "win_rate_pct": "17.6%"
+      "win_rate_pct": "18.8%"
     },
     {
       "year": "2023",
       "return_pct": "+129.9%",
       "trades": "4",
-      "win_rate_pct": "17.6%"
+      "win_rate_pct": "18.8%"
     },
     {
       "year": "2024",
       "return_pct": "+62.6%",
       "trades": "2",
-      "win_rate_pct": "17.6%"
+      "win_rate_pct": "18.8%"
     },
     {
       "year": "2025",
       "return_pct": "+18.6%",
       "trades": "3",
-      "win_rate_pct": "17.6%"
+      "win_rate_pct": "18.8%"
     },
     {
       "year": "2026",
-      "return_pct": "-19.6%",
+      "return_pct": "-8.7%",
       "trades": "1",
-      "win_rate_pct": "17.6%"
+      "win_rate_pct": "18.8%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On TSLA, the RSI acts as a trend filter. It won't catch every exact bottom, but 
 
 ## 5-Year Performance on TSLA
 
-Over five years (2021-11-22 → 2026-11-20), the RSI Oversold/Overbought delivered a **-59.6% total return** on TSLA, compounding at **-16.6% annually**. 
+Over five years (2021-11-29 → 2026-11-27), the RSI Oversold/Overbought delivered a **-50.4% total return** on TSLA, compounding at **-13.1% annually**. 
 
-At **-0.17**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-0.09**, the RSI earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **77.8% max drawdown**. At some point during this 5-year run, you'd have been down nearly 78% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **77.8% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -0.17 | ❌ Weak |
+| Sharpe Ratio | -0.09 | ❌ Weak |
 | Max Drawdown | 77.8% | ⚠️ Significant |
-| Win Rate | 17.6% | ❌ Low — relies on outsized wins |
-| Profit Factor | 0.26 | ❌ Unprofitable |
-| Trades/Year | ~17 total | Selective — not overtrading |
+| Win Rate | 18.8% | ❌ Low — relies on outsized wins |
+| Profit Factor | 0.28 | ❌ Unprofitable |
+| Trades/Year | ~16 total | Selective — not overtrading |
 
-The **profit factor of 0.26** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 17.6% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.28** tells the real story: when the RSI fires, the winning signals don't outweigh the losers. Combined with a 18.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the RSI Oversold/Overbought Work on TSLA?
 
-The rsi oversold/overbought struggled to generate meaningful edge on TSLA over this 5-year period. With a **-0.17 Sharpe ratio** and **0.26 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The rsi oversold/overbought struggled to generate meaningful edge on TSLA over this 5-year period. With a **-0.09 Sharpe ratio** and **0.28 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the RSI is useless — it may work better on different assets, timeframes, or when combined with other filters. But on TSLA with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![RSI Oversold/Overbought — Trade Signals on TSLA](/backtests/rsi-oversold-overbought-tsla-trades.png)

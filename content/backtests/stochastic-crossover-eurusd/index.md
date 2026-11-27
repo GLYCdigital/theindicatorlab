@@ -1,10 +1,10 @@
 ---
 {
   "title": "Stochastic \u2014 EURUSD Backtest Results (5-Year)",
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-22 \u2192 2026-11-20",
+  "period": "2021-11-29 \u2192 2026-11-27",
   "metrics": [
     {
       "label": "Total Return",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Sharpe Ratio",
-      "value": "-2.25"
+      "value": "-2.27"
     },
     {
       "label": "Max Drawdown",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Win Rate",
-      "value": "33.1%"
+      "value": "32.5%"
     },
     {
       "label": "Profit Factor",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "+0.4%",
-      "trades": "3",
-      "win_rate_pct": "33.1%"
+      "return_pct": "+0.3%",
+      "trades": "2",
+      "win_rate_pct": "32.5%"
     },
     {
       "year": "2022",
       "return_pct": "-6.3%",
       "trades": "38",
-      "win_rate_pct": "33.1%"
+      "win_rate_pct": "32.5%"
     },
     {
       "year": "2023",
       "return_pct": "+3.3%",
       "trades": "35",
-      "win_rate_pct": "33.1%"
+      "win_rate_pct": "32.5%"
     },
     {
       "year": "2024",
       "return_pct": "-5.9%",
       "trades": "30",
-      "win_rate_pct": "33.1%"
+      "win_rate_pct": "32.5%"
     },
     {
       "year": "2025",
       "return_pct": "+13.5%",
       "trades": "32",
-      "win_rate_pct": "33.1%"
+      "win_rate_pct": "32.5%"
     },
     {
       "year": "2026",
-      "return_pct": "-6.6%",
-      "trades": "31",
-      "win_rate_pct": "33.1%"
+      "return_pct": "-6.9%",
+      "trades": "32",
+      "win_rate_pct": "32.5%"
     }
   ],
   "cta_headline": "Trade Forex with TradingView Pro",
@@ -109,9 +109,9 @@ On EURUSD, the Stochastic acts as a trend filter. It won't catch every exact bot
 
 ## 5-Year Performance on EURUSD
 
-Over five years (2021-11-22 → 2026-11-20), the Stochastic Crossover delivered a **-31.2% total return** on EURUSD=X, compounding at **-7.2% annually**. 
+Over five years (2021-11-29 → 2026-11-27), the Stochastic Crossover delivered a **-31.2% total return** on EURUSD=X, compounding at **-7.2% annually**. 
 
-At **-2.25**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **-2.27**, the Stochastic earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 32% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,17 +119,17 @@ The catch? A **32.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | -2.25 | ❌ Weak |
+| Sharpe Ratio | -2.27 | ❌ Weak |
 | Max Drawdown | 32.1% | ⚠️ Significant |
-| Win Rate | 33.1% | ❌ Low — relies on outsized wins |
+| Win Rate | 32.5% | ❌ Low — relies on outsized wins |
 | Profit Factor | 0.47 | ❌ Unprofitable |
 | Trades/Year | ~169 total | Active |
 
-The **profit factor of 0.47** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 33.1% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 0.47** tells the real story: when the Stochastic fires, the winning signals don't outweigh the losers. Combined with a 32.5% win rate, this requires careful position sizing to be profitable.
 
 ## Does the Stochastic Crossover Work on EURUSD?
 
-The stochastic crossover struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-2.25 Sharpe ratio** and **0.47 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
+The stochastic crossover struggled to generate meaningful edge on EURUSD over this 5-year period. With a **-2.27 Sharpe ratio** and **0.47 profit factor**, the risk-adjusted returns are below what most systematic traders would consider acceptable.
 
 This doesn't mean the Stochastic is useless — it may work better on different assets, timeframes, or when combined with other filters. But on EURUSD with default parameters over 5 years, it didn't produce a compelling standalone edge.
 
@@ -149,6 +149,6 @@ Execute directly from charts with integrated broker connections and real-time da
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Stochastic Crossover — Trade Signals on EURUSD=X](/backtests/stochastic-crossover-eurusd-trades.png)

@@ -1,22 +1,22 @@
 ---
 {
   "title": "CVD \u2014 QQQ Backtest Results (5-Year)",
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-22 \u2192 2026-11-20",
+  "period": "2021-11-29 \u2192 2026-11-27",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+41.5%"
+      "value": "+45.9%"
     },
     {
       "label": "CAGR",
-      "value": "7.2%"
+      "value": "7.9%"
     },
     {
       "label": "Sharpe Ratio",
-      "value": "0.33"
+      "value": "0.37"
     },
     {
       "label": "Max Drawdown",
@@ -24,15 +24,15 @@
     },
     {
       "label": "Win Rate",
-      "value": "31.3%"
+      "value": "31.8%"
     },
     {
       "label": "Profit Factor",
-      "value": "1.45"
+      "value": "1.49"
     },
     {
       "label": "Total Trades",
-      "value": "67"
+      "value": "66"
     },
     {
       "label": "Avg Trade",
@@ -42,39 +42,39 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-0.2%",
-      "trades": "1",
-      "win_rate_pct": "31.3%"
+      "return_pct": "-0.3%",
+      "trades": "0",
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2022",
       "return_pct": "-33.2%",
       "trades": "10",
-      "win_rate_pct": "31.3%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2023",
       "return_pct": "+55.9%",
       "trades": "10",
-      "win_rate_pct": "31.3%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2024",
       "return_pct": "+27.7%",
       "trades": "14",
-      "win_rate_pct": "31.3%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2025",
       "return_pct": "+21.0%",
       "trades": "16",
-      "win_rate_pct": "31.3%"
+      "win_rate_pct": "31.8%"
     },
     {
       "year": "2026",
-      "return_pct": "+1.6%",
+      "return_pct": "+6.5%",
       "trades": "16",
-      "win_rate_pct": "31.3%"
+      "win_rate_pct": "31.8%"
     }
   ],
   "cta_headline": "Trade Stocks on Moomoo \u2014 Commission-Free",
@@ -109,9 +109,9 @@ On QQQ, the CVD acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on QQQ
 
-Over five years (2021-11-22 → 2026-11-20), the CVD Divergence Alerts delivered a **+41.5% total return** on QQQ, compounding at **7.2% annually**. 
+Over five years (2021-11-29 → 2026-11-27), the CVD Divergence Alerts delivered a **+45.9% total return** on QQQ, compounding at **7.9% annually**. 
 
-At **0.33**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
+At **0.37**, the CVD earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
 The catch? A **18.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 18% from peak equity. That's significant territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
@@ -119,19 +119,19 @@ The catch? A **18.1% max drawdown**. At some point during this 5-year run, you'd
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
-| Sharpe Ratio | 0.33 | ❌ Weak |
+| Sharpe Ratio | 0.37 | ❌ Weak |
 | Max Drawdown | 18.1% | ⚠️ Moderate |
-| Win Rate | 31.3% | ❌ Low — relies on outsized wins |
-| Profit Factor | 1.45 | ⚠️ Marginal |
-| Trades/Year | ~67 total | Active |
+| Win Rate | 31.8% | ❌ Low — relies on outsized wins |
+| Profit Factor | 1.49 | ⚠️ Marginal |
+| Trades/Year | ~66 total | Active |
 
-The **profit factor of 1.45** tells the real story: when the CVD fires, the winning signals are larger than the losing ones. Combined with a 31.3% win rate, this requires careful position sizing to be profitable.
+The **profit factor of 1.49** tells the real story: when the CVD fires, the winning signals are larger than the losing ones. Combined with a 31.8% win rate, this requires careful position sizing to be profitable.
 
 ## Does the CVD Divergence Alerts Work on QQQ?
 
-The cvd divergence alerts shows moderate edge on QQQ — **0.33 Sharpe, 1.45 profit factor** over 67 trades. It's not a home run, but it's also not random.
+The cvd divergence alerts shows moderate edge on QQQ — **0.37 Sharpe, 1.49 profit factor** over 66 trades. It's not a home run, but it's also not random.
 
-The 31.3% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
+The 31.8% win rate means you'll be wrong more than half the time. The profit factor above 1.0 means your wins are bigger than your losses, which is what keeps you profitable.
 
 Our take: usable as a confirmation tool, but not as a standalone system on QQQ. Combine with trend filters or volume confirmation for better results.
 
@@ -158,6 +158,6 @@ Access US markets with zero commissions and professional-grade charting tools.
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![CVD Divergence Alerts — Trade Signals on QQQ](/backtests/cvd-divergence-alerts-qqq-trades.png)

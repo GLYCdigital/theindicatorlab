@@ -1,10 +1,10 @@
 ---
 {
   "title": "EMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-22 \u2192 2026-11-20",
+  "period": "2021-11-29 \u2192 2026-11-27",
   "metrics": [
     {
       "label": "Total Return",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-17.7%",
+      "return_pct": "-19.9%",
       "trades": "0",
       "win_rate_pct": "31.4%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-33.4%",
+      "return_pct": "-32.5%",
       "trades": "8",
       "win_rate_pct": "31.4%"
     }
@@ -109,7 +109,7 @@ On BTC, the EMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-22 → 2026-11-20), the EMA Ribbon delivered a **+84.9% total return** on BTC-USD, compounding at **13.1% annually**. 
+Over five years (2021-11-29 → 2026-11-27), the EMA Ribbon delivered a **+84.9% total return** on BTC-USD, compounding at **13.1% annually**. 
 
 At **0.39**, the EMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![EMA Ribbon — Trade Signals on BTC-USD](/backtests/ema-ribbon-btc-usd-trades.png)

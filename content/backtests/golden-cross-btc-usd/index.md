@@ -1,18 +1,18 @@
 ---
 {
   "title": "SMA \u2014 BTC Backtest Results (5-Year)",
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "draft": false,
   "type": "backtests",
-  "period": "2021-11-22 \u2192 2026-11-20",
+  "period": "2021-11-29 \u2192 2026-11-27",
   "metrics": [
     {
       "label": "Total Return",
-      "value": "+39.0%"
+      "value": "+40.7%"
     },
     {
       "label": "CAGR",
-      "value": "6.8%"
+      "value": "7.1%"
     },
     {
       "label": "Sharpe Ratio",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Max Drawdown",
-      "value": "51.1%"
+      "value": "51.3%"
     },
     {
       "label": "Win Rate",
@@ -42,7 +42,7 @@
   "yearly": [
     {
       "year": "2021",
-      "return_pct": "-17.7%",
+      "return_pct": "-19.9%",
       "trades": "0",
       "win_rate_pct": "60.0%"
     },
@@ -72,7 +72,7 @@
     },
     {
       "year": "2026",
-      "return_pct": "-33.4%",
+      "return_pct": "-32.5%",
       "trades": "1",
       "win_rate_pct": "60.0%"
     }
@@ -109,18 +109,18 @@ On BTC, the SMA acts as a trend filter. It won't catch every exact bottom, but i
 
 ## 5-Year Performance on BTC
 
-Over five years (2021-11-22 → 2026-11-20), the Golden Cross delivered a **+39.0% total return** on BTC-USD, compounding at **6.8% annually**. 
+Over five years (2021-11-29 → 2026-11-27), the Golden Cross delivered a **+40.7% total return** on BTC-USD, compounding at **7.1% annually**. 
 
 At **0.25**, the SMA earned less than one units of return for every unit of risk taken. For context, anything above 1.0 is considered good; above 1.5 is excellent.
 
-The catch? A **51.1% max drawdown**. At some point during this 5-year run, you'd have been down nearly 51% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
+The catch? A **51.3% max drawdown**. At some point during this 5-year run, you'd have been down nearly 51% from peak equity. That's stomach-churning territory for most traders. If you can't handle that kind of drawdown, this isn't for you — or you need to size down.
 
 ## Risk Assessment
 
 | Metric | Value | Verdict |
 |--------|-------|---------|
 | Sharpe Ratio | 0.25 | ❌ Weak |
-| Max Drawdown | 51.1% | ⚠️ Significant |
+| Max Drawdown | 51.3% | ⚠️ Significant |
 | Win Rate | 60.0% | ✅ Strong |
 | Profit Factor | 3.54 | ✅ Excellent |
 | Trades/Year | ~5 total | Selective — not overtrading |
@@ -149,6 +149,6 @@ Execute these signals with institutional-grade liquidity and the lowest fees in 
 *The Indicator Lab is supported by readers. Some links are affiliate links — we earn a commission at no extra cost to you.*
 
 
-<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 21, 2026. Not financial advice. Past performance does not guarantee future results.</small>
+<small>Data source: Yahoo Finance (yfinance). Backtest engine: backtrader. 95% position sizing. 0.1% commission per trade. Last refreshed: November 28, 2026. Not financial advice. Past performance does not guarantee future results.</small>
 
 ![Golden Cross — Trade Signals on BTC-USD](/backtests/golden-cross-btc-usd-trades.png)

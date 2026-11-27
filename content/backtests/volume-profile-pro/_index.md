@@ -1,6 +1,6 @@
 ---
 title: "VWAP Backtest Results"
-date: 2026-11-21
+date: 2026-11-28
 draft: false
 type: backtests
 description: "All 6 asset backtests for the VWAP indicator. Sorted by Sharpe ratio."
@@ -25,19 +25,19 @@ description: "All 6 asset backtests for the VWAP indicator. Sorted by Sharpe rat
 </tr>
 </thead>
 <tbody>
-<tr><td>🟡 <a href="/backtests/volume-profile-pro-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+91.1%</td><td>13.8%</td><td>0.47</td><td>36.4%</td><td>23.2%</td><td>1.33</td><td>99</td></tr>
-<tr><td>🟡 <a href="/backtests/volume-profile-pro-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+38.1%</td><td>6.7%</td><td>0.28</td><td>26.8%</td><td>37.5%</td><td>1.41</td><td>72</td></tr>
+<tr><td>🟡 <a href="/backtests/volume-profile-pro-eth-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">ETH</a></td><td>+94.0%</td><td>14.2%</td><td>0.49</td><td>36.4%</td><td>23.5%</td><td>1.34</td><td>98</td></tr>
+<tr><td>🟡 <a href="/backtests/volume-profile-pro-qqq/" style="color:var(--accent);text-decoration:none;font-weight:600">QQQ</a></td><td>+42.5%</td><td>7.3%</td><td>0.32</td><td>26.8%</td><td>38.0%</td><td>1.45</td><td>71</td></tr>
 <tr><td>🟡 <a href="/backtests/volume-profile-pro-btc-usd/" style="color:var(--accent);text-decoration:none;font-weight:600">BTC</a></td><td>+10.2%</td><td>2.0%</td><td>0.17</td><td>50.8%</td><td>19.6%</td><td>1.05</td><td>102</td></tr>
-<tr><td>🟡 <a href="/backtests/volume-profile-pro-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+8.8%</td><td>1.7%</td><td>0.10</td><td>49.7%</td><td>28.6%</td><td>1.03</td><td>84</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-profile-pro-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>-5.4%</td><td>-1.1%</td><td>-0.09</td><td>35.7%</td><td>35.4%</td><td>0.97</td><td>65</td></tr>
-<tr><td>🔴 <a href="/backtests/volume-profile-pro-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>+0.0%</td><td>0.0%</td><td>-0.11</td><td>25.6%</td><td>34.1%</td><td>1.00</td><td>85</td></tr>
+<tr><td>🟡 <a href="/backtests/volume-profile-pro-tsla/" style="color:var(--accent);text-decoration:none;font-weight:600">TSLA</a></td><td>+15.6%</td><td>2.9%</td><td>0.13</td><td>49.7%</td><td>27.4%</td><td>1.04</td><td>84</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-profile-pro-aapl/" style="color:var(--accent);text-decoration:none;font-weight:600">AAPL</a></td><td>-2.5%</td><td>-0.5%</td><td>-0.05</td><td>35.7%</td><td>34.8%</td><td>0.95</td><td>66</td></tr>
+<tr><td>🔴 <a href="/backtests/volume-profile-pro-spy/" style="color:var(--accent);text-decoration:none;font-weight:600">SPY</a></td><td>-0.8%</td><td>-0.2%</td><td>-0.13</td><td>24.2%</td><td>33.3%</td><td>0.99</td><td>84</td></tr>
 </tbody>
 </table>
 
 <p style="margin-top:1.5rem;font-size:1.1rem;color:var(--text-secondary)">🟢 Sharpe > 0.5 · 🟡 0–0.5 · 🔴 Negative</p>
 
 <p style="margin-top:3rem;text-align:center;font-size:1.3rem"><a href="/backtests/">← Back to all indicator backtests</a></p>
-<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: November 21, 2026</p>
+<p style="text-align:center;font-size:1.0rem;color:var(--text-muted);margin-top:1rem">Last refreshed: November 28, 2026</p>
 
   </div>
 </article>
