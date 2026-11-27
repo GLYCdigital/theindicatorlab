@@ -5184,19 +5184,19 @@
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
       "rating": 4,
-      "score": 8.6
+      "score": 8.5
     },
     {
       "slug": "order-flow-profiler",
       "title": "Order Flow Profiler Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 8.6
+      "score": 8.5
     },
     {
       "slug": "smart-money-concepts",
       "title": "Smart Money Concepts Review \u2014 Volume Indicator",
       "rating": 4,
-      "score": 8.6
+      "score": 8.5
     }
   ],
   "buyers-sellers-profile-dynamic-s-r": [
@@ -7195,8 +7195,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -9905,6 +9905,32 @@
       "score": 8.0
     }
   ],
+  "elder-ray-reach-balance": [
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accum-dist-divergence",
+      "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "elder-thermometer": [
     {
       "slug": "1-trendline-strategy",
@@ -10189,6 +10215,32 @@
       "title": "Elliott Wave Impulse Detector Review \u2014 Chart Patterns",
       "rating": 4,
       "score": 12.0
+    }
+  ],
+  "ema-20-ema-50-rsi-14-signals": [
+    {
+      "slug": "ema-rsi-vwap-targets",
+      "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "vervoortcrossover-zero-lag-npr21",
+      "title": "Vervoortcrossover Zero Lag Npr21 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "viprasol-gold-sniper-confluence",
+      "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "wiselywealth-ema-rsi-smart-money-zone-tracker",
+      "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "ema-21-macd-rsi-alma": [
@@ -10479,6 +10531,12 @@
   ],
   "ema-rsi-vwap-targets": [
     {
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
@@ -10495,12 +10553,6 @@
       "title": "Wiselywealth EMA RSI Smart Money Zone Tracker Review",
       "rating": 4,
       "score": 13.0
-    },
-    {
-      "slug": "multi-timeframe-multi-indicator-dashboard",
-      "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
-      "rating": 4,
-      "score": 10.0
     }
   ],
   "ema-supertrend-obv-strixedge": [
@@ -11123,6 +11175,32 @@
     {
       "slug": "ag-pro-cci-reversion-quality-agpro-series",
       "title": "Ag Pro CCI Reversion Quality Agpro Series Review \u2014 Momentum",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "failed-breakout-retest-harmony-algo": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -15009,12 +15087,6 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 5.0
-    },
-    {
       "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
       "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
@@ -15023,6 +15095,12 @@
     {
       "slug": "accum-dist-divergence",
       "title": "Accum Dist Divergence Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "accumulation-distribution-line-adl",
+      "title": "Accumulation Distribution Line ADL Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -15103,6 +15181,32 @@
       "title": "Adaptive Envelopes Review \u2014 Volatility Indicator",
       "rating": 4,
       "score": 5.0
+    }
+  ],
+  "hullinger-percentile-oscillator-algoalpha": [
+    {
+      "slug": "center-of-gravity-cog-oscillator",
+      "title": "Center Of Gravity Cog Oscillator Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "inverse-fisher-transform",
+      "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "momentum-flow-oscillator",
+      "title": "Momentum Flow Oscillator Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
+      "slug": "rsi-macd-combo-signal",
+      "title": "RSI MACD Combo Signal Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
     }
   ],
   "hurst-exponent-regime-rc-tools": [
@@ -22619,6 +22723,32 @@
       "score": 12.0
     }
   ],
+  "mtf-structure-trend-sachinthakare": [
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master",
+      "title": "6 Indicator Master Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "mtf-supertrend": [
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -23061,6 +23191,32 @@
       "score": 9.0
     }
   ],
+  "multi-timeframe-trend-ribbon-pullback-signals-phenlabs": [
+    {
+      "slug": "20-50-ema-pullback-tap-indicator",
+      "title": "20 50 EMA Pullback Tap Indicator Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "adx-mtf",
+      "title": "ADX MTF Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "algo-price-action-signals",
+      "title": "Algo Price Action Signals Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "multi-timeframe-trend-strength": [
     {
       "slug": "1-trendline-strategy",
@@ -23159,8 +23315,8 @@
       "score": 9.0
     },
     {
-      "slug": "ema-cloud-phantomcipher",
-      "title": "EMA Cloud Phantomcipher Review \u2014 Trend Indicator",
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -23525,6 +23681,32 @@
     {
       "slug": "adx-smoothed",
       "title": "ADX Smoothed Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
+  "nifty50-swing-trading-super-indicator": [
+    {
+      "slug": "1-trendline-strategy",
+      "title": "1 Trendline Strategy Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "1h-4h-swing-high-low-zones-icc",
+      "title": "1h 4h Swing High Low Zones Icc Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "4h-15m-alignment-trend-candles",
+      "title": "4h 15m Alignment Trend Candles Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
       "rating": 4,
       "score": 5.0
     }
@@ -26389,6 +26571,32 @@
       "score": 12.0
     }
   ],
+  "power-of-three-entry-engine-tradewsamet": [
+    {
+      "slug": "3-candle-sweep-maximopartners",
+      "title": "3 Candle Sweep Maximopartners Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "3-way-bollinger-trend-zynalgo",
+      "title": "3 Way Bollinger Trend Zynalgo Review \u2014 Volatility Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "6-indicator-master-fuel-zone-70-80",
+      "title": "6 Indicator Master Fuel Zone 70 80 Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 5.0
+    },
+    {
+      "slug": "absorption-detection",
+      "title": "Absorption Detection Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 5.0
+    }
+  ],
   "power-of-three-map": [
     {
       "slug": "3-candle-sweep-maximopartners",
@@ -26923,15 +27131,15 @@
       "score": 5.0
     },
     {
-      "slug": "8020-system-indicator",
-      "title": "8020 System Indicator Review \u2014 Trend Indicator",
+      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
+      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
       "rating": 4,
       "score": 5.0
     },
     {
-      "slug": "a-l-p-h-a-x-bollinger-keltner-volatility-pressure-system",
-      "title": "Alphax Bollinger Keltner Volatility Pressure System Review",
-      "rating": 4,
+      "slug": "accumulation-swing-index",
+      "title": "Accumulation Swing Index Review \u2014 Trend Indicator",
+      "rating": 3,
       "score": 5.0
     }
   ],
@@ -28125,8 +28333,8 @@
       "score": 9.0
     },
     {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
+      "slug": "hullinger-percentile-oscillator-algoalpha",
+      "title": "Hullinger Percentile Oscillator Algoalpha Review \u2014 Momentum",
       "rating": 4,
       "score": 9.0
     }
@@ -29711,8 +29919,8 @@
       "score": 13.0
     },
     {
-      "slug": "inverse-fisher-transform",
-      "title": "Inverse Fisher Transform Review \u2014 Momentum Indicator",
+      "slug": "hullinger-percentile-oscillator-algoalpha",
+      "title": "Hullinger Percentile Oscillator Algoalpha Review \u2014 Momentum",
       "rating": 4,
       "score": 13.0
     }
@@ -30511,14 +30719,14 @@
       "score": 9.0
     },
     {
-      "slug": "ema-rsi-vwap-targets",
-      "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 9.0
     },
     {
-      "slug": "ewo-rsi-signals-strategy-exhaustion-filter",
-      "title": "Ewo RSI Signals Strategy Exhaustion Filter Review \u2014 Momentum",
+      "slug": "ema-rsi-vwap-targets",
+      "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
       "rating": 4,
       "score": 9.0
     }
@@ -31664,7 +31872,7 @@
       "slug": "liquidity-absorption-and-rejection-orderflow-maxmaserati",
       "title": "Liquidity Absorption And Rejection Orderflow Maxmaserati Review",
       "rating": 4,
-      "score": 12.6
+      "score": 12.5
     }
   ],
   "smart-money-concepts-axealgo": [
@@ -31901,6 +32109,32 @@
       "score": 9.0
     }
   ],
+  "smart-money-sniper-x-thomas": [
+    {
+      "slug": "adaptive-smart-money-liquidity-sweep-levels-algoalpha",
+      "title": "Adaptive Smart Money Liquidity Sweep Levels Algoalpha Review",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "almazov-trade-smt-monitor",
+      "title": "Almazov Trade Smt Monitor Review \u2014 Trend Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "banker-hot-money-flow-tracker",
+      "title": "Banker Hot Money Flow Tracker Review \u2014 Volume Indicator",
+      "rating": 4,
+      "score": 9.0
+    },
+    {
+      "slug": "dynamic-liquidity-clouds-bigbeluga",
+      "title": "Dynamic Liquidity Clouds Bigbeluga Review \u2014 Market Structure",
+      "rating": 4,
+      "score": 9.0
+    }
+  ],
   "smart-money-stop-hunt-detection": [
     {
       "slug": "3-candle-sweep-maximopartners",
@@ -32111,6 +32345,12 @@
   ],
   "smart-trend-dashboard": [
     {
+      "slug": "hullinger-percentile-oscillator-algoalpha",
+      "title": "Hullinger Percentile Oscillator Algoalpha Review \u2014 Momentum",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
@@ -32126,13 +32366,7 @@
       "slug": "strong-fu-candle",
       "title": "Strong Fu Candle Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 12.9
-    },
-    {
-      "slug": "true-strength-index",
-      "title": "True Strength Index Review \u2014 Trend Indicator",
-      "rating": 4,
-      "score": 11.3
+      "score": 12.8
     }
   ],
   "smartbreak-fibo-traderhook": [
@@ -33830,7 +34064,7 @@
       "slug": "multi-timeframe-multi-indicator-dashboard",
       "title": "Multi Timeframe Multi Indicator Dashboard Review \u2014 Trend",
       "rating": 4,
-      "score": 15.9
+      "score": 15.8
     },
     {
       "slug": "rsi-macd-combo",
@@ -34362,7 +34596,7 @@
       "slug": "signal-fusion-engine",
       "title": "Signal Fusion Engine Review \u2014 Trend Indicator",
       "rating": 4,
-      "score": 10.9
+      "score": 10.8
     },
     {
       "slug": "0dte-scalper-kalman-supertrend-and-adx-volatility-waves",
@@ -38351,6 +38585,12 @@
   ],
   "vervoortcrossover-zero-lag-npr21": [
     {
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "viprasol-gold-sniper-confluence",
       "title": "Viprasol Gold Sniper Confluence Review \u2014 Trend Indicator",
       "rating": 4,
@@ -38365,12 +38605,6 @@
     {
       "slug": "artemis-adaptive-rsi",
       "title": "Artemis Adaptive RSI Review \u2014 Momentum Indicator",
-      "rating": 4,
-      "score": 12.0
-    },
-    {
-      "slug": "bollinger-bands-rsi-combo",
-      "title": "Bollinger Bands RSI Combo Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 12.0
     }
@@ -38421,8 +38655,8 @@
       "score": 13.0
     },
     {
-      "slug": "ema-21-macd-rsi-alma",
-      "title": "EMA 21 MACD RSI Alma Review \u2014 Momentum Indicator",
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
@@ -41107,6 +41341,12 @@
   ],
   "wiselywealth-ema-rsi-smart-money-zone-tracker": [
     {
+      "slug": "ema-20-ema-50-rsi-14-signals",
+      "title": "EMA 20 EMA 50 RSI 14 Signals Review \u2014 Momentum Indicator",
+      "rating": 4,
+      "score": 13.0
+    },
+    {
       "slug": "ema-rsi-vwap-targets",
       "title": "EMA RSI VWAP Targets Review \u2014 Volume Indicator",
       "rating": 4,
@@ -41121,12 +41361,6 @@
     {
       "slug": "ict-market-structure-breaks-ob-retest-jpt",
       "title": "ICT Market Structure Breaks Ob Retest Jpt Review",
-      "rating": 4,
-      "score": 13.0
-    },
-    {
-      "slug": "rsi-signals-with-sessions",
-      "title": "RSI Signals With Sessions Review \u2014 Momentum Indicator",
       "rating": 4,
       "score": 13.0
     }
